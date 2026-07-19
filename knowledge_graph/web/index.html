@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lupus Knowledge Graph</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.28.1/cytoscape.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Header -->
+        <header id="header">
+            <div class="header-left">
+                <h1>🕸️ <span class="gradient-text">Lupus</span> Knowledge Graph</h1>
+                <span class="subtitle">Genes · Drugs · Pathways · Disease</span>
+            </div>
+            <div class="header-right">
+                <div class="legend-compact" id="legend">
+                    <span class="legend-item"><span class="dot gene"></span>Genes</span>
+                    <span class="legend-item"><span class="dot drug"></span>Drugs</span>
+                    <span class="legend-item"><span class="dot pathway"></span>Pathways</span>
+                    <span class="legend-item"><span class="dot disease"></span>SLE</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div id="main">
+            <!-- Sidebar -->
+            <aside id="sidebar">
+                <div class="sidebar-section">
+                    <h3>🔍 Search</h3>
+                    <input type="text" id="search-input" placeholder="Gene, drug, or pathway..." autocomplete="off">
+                    <div id="search-results"></div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>📊 Filters</h3>
+                    <label class="filter-chip active" data-filter="gene">
+                        <input type="checkbox" checked> 🧬 Genes
+                    </label>
+                    <label class="filter-chip active" data-filter="drug">
+                        <input type="checkbox" checked> 💊 Drugs
+                    </label>
+                    <label class="filter-chip active" data-filter="pathway">
+                        <input type="checkbox" checked> 🛤️ Pathways
+                    </label>
+                    <label class="filter-chip active" data-filter="disease">
+                        <input type="checkbox" checked> 🎯 Disease
+                    </label>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>🔗 Edge Filters</h3>
+                    <label class="filter-chip active" data-edge="TARGETS">
+                        <input type="checkbox" checked> 🎯 Targets
+                    </label>
+                    <label class="filter-chip active" data-edge="TREATS">
+                        <input type="checkbox" checked> 💚 Treats
+                    </label>
+                    <label class="filter-chip active" data-edge="PARTICIPATES_IN">
+                        <input type="checkbox" checked> 🔄 Participates In
+                    </label>
+                    <label class="filter-chip active" data-edge="DRIVES">
+                        <input type="checkbox" checked> ⚡ Drives
+                    </label>
+                    <label class="filter-chip active" data-edge="MODULATES">
+                        <input type="checkbox" checked> 🎛️ Modulates
+                    </label>
+                    <label class="filter-chip active" data-edge="ASSOCIATED_WITH">
+                        <input type="checkbox" checked> 🔬 Associated With
+                    </label>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>📋 Details</h3>
+                    <div id="detail-panel">
+                        <p class="muted">Click a node to see details</p>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>📈 Stats</h3>
+                    <div id="stats-panel">
+                        <div class="stat-row">
+                            <span class="stat-label">Nodes</span>
+                            <span class="stat-value" id="stat-nodes">0</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">Edges</span>
+                            <span class="stat-value" id="stat-edges">0</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">Genes</span>
+                            <span class="stat-value" id="stat-genes">0</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">Drugs</span>
+                            <span class="stat-value" id="stat-drugs">0</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">Pathways</span>
+                            <span class="stat-value" id="stat-pathways">0</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Graph Canvas -->
+            <div id="canvas-container">
+                <div id="cy"></div>
+                <div id="canvas-controls">
+                    <button id="btn-fit" title="Fit graph to screen">⊞</button>
+                    <button id="btn-zoom-in" title="Zoom in">+</button>
+                    <button id="btn-zoom-out" title="Zoom out">−</button>
+                    <button id="btn-reset" title="Reset view">⟳</button>
+                </div>
+                <div id="tooltip"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

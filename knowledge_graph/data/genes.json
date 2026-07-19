@@ -1,0 +1,224 @@
+{
+  "genes": [
+    {
+      "id": "HLA-DRB1",
+      "name": "HLA Class II DR Beta 1",
+      "chromosome": "6p21.32",
+      "function": "Antigen presentation to CD4+ T cells",
+      "lupus_evidence": "Strongest genetic association with SLE. DRB1*03:01 and *15:01 alleles confer 2-3x increased risk.",
+      "odds_ratio": 2.5,
+      "references": ["PMID:26502338", "PMID:28714469"],
+      "category": "MHC / Antigen Presentation"
+    },
+    {
+      "id": "IRF5",
+      "name": "Interferon Regulatory Factor 5",
+      "chromosome": "7q32.1",
+      "function": "Transcription factor driving type I IFN and proinflammatory cytokine expression",
+      "lupus_evidence": "Key regulator of the type I interferon signature. Risk haplotype associated with high serum IFN-α activity.",
+      "odds_ratio": 1.8,
+      "references": ["PMID:18204098", "PMID:20694012"],
+      "category": "Type I Interferon Pathway"
+    },
+    {
+      "id": "STAT4",
+      "name": "Signal Transducer and Activator of Transcription 4",
+      "chromosome": "2q32.2",
+      "function": "Mediates IL-12 and type I IFN signaling; promotes Th1 and Th17 differentiation",
+      "lupus_evidence": "Risk variant rs7574865 associated with increased STAT4 expression and SLE susceptibility.",
+      "odds_ratio": 1.5,
+      "references": ["PMID:19109131", "PMID:26039978"],
+      "category": "JAK-STAT Signaling"
+    },
+    {
+      "id": "BLK",
+      "name": "B Lymphoid Tyrosine Kinase",
+      "chromosome": "8p23.1",
+      "function": "Src family kinase involved in B cell receptor signaling",
+      "lupus_evidence": "Reduced BLK expression in B cells impairs tolerance checkpoints and promotes autoantibody production.",
+      "odds_ratio": 1.4,
+      "references": ["PMID:19838195", "PMID:25865496"],
+      "category": "B Cell Signaling"
+    },
+    {
+      "id": "TNFAIP3",
+      "name": "TNF Alpha Induced Protein 3 (A20)",
+      "chromosome": "6q23.3",
+      "function": "Ubiquitin-editing enzyme that negatively regulates NF-κB signaling",
+      "lupus_evidence": "Loss-of-function variants reduce negative regulation of NF-κB, promoting chronic inflammation.",
+      "odds_ratio": 1.7,
+      "references": ["PMID:19165926", "PMID:24714567"],
+      "category": "NF-κB Pathway"
+    },
+    {
+      "id": "ITGAM",
+      "name": "Integrin Subunit Alpha M (CD11b)",
+      "chromosome": "16p11.2",
+      "function": "Complement receptor 3 (CR3) component; mediates phagocytosis and immune complex clearance",
+      "lupus_evidence": "Missense variants (R77H) impair phagocytosis of apoptotic cells and immune complexes.",
+      "odds_ratio": 1.6,
+      "references": ["PMID:21075732", "PMID:24474779"],
+      "category": "Complement / Phagocytosis"
+    },
+    {
+      "id": "BANK1",
+      "name": "B Cell Scaffold Protein with Ankyrin Repeats 1",
+      "chromosome": "4q24",
+      "function": "Scaffold protein modulating B cell receptor-induced calcium mobilization",
+      "lupus_evidence": "Associated with SLE through variants affecting B cell hyperresponsiveness.",
+      "odds_ratio": 1.3,
+      "references": ["PMID:18204446", "PMID:22032889"],
+      "category": "B Cell Signaling"
+    },
+    {
+      "id": "PTPN22",
+      "name": "Protein Tyrosine Phosphatase Non-Receptor Type 22",
+      "chromosome": "1p13.2",
+      "function": "Lymphoid tyrosine phosphatase (LYP) that negatively regulates T cell receptor signaling",
+      "lupus_evidence": "R620W gain-of-function variant alters T cell selection thresholds and promotes autoimmunity.",
+      "odds_ratio": 1.4,
+      "references": ["PMID:15208781", "PMID:25534597"],
+      "category": "T Cell Signaling"
+    },
+    {
+      "id": "TNFSF4",
+      "name": "TNF Superfamily Member 4 (OX40 Ligand)",
+      "chromosome": "1q25.1",
+      "function": "Costimulatory molecule enhancing T cell activation and survival",
+      "lupus_evidence": "Upregulated in SLE; promotes T follicular helper responses and autoantibody production.",
+      "odds_ratio": 1.3,
+      "references": ["PMID:18340363", "PMID:25974202"],
+      "category": "T Cell Costimulation"
+    },
+    {
+      "id": "FCGR2A",
+      "name": "Fc Gamma Receptor IIa (CD32a)",
+      "chromosome": "1q23.3",
+      "function": "Low-affinity receptor for IgG immune complexes on phagocytes",
+      "lupus_evidence": "H131R polymorphism alters IgG binding affinity and immune complex clearance, increasing lupus nephritis risk.",
+      "odds_ratio": 1.5,
+      "references": ["PMID:14979578", "PMID:27075454"],
+      "category": "Immune Complex Clearance"
+    },
+    {
+      "id": "FCGR3A",
+      "name": "Fc Gamma Receptor IIIa (CD16a)",
+      "chromosome": "1q23.3",
+      "function": "Low-affinity receptor for IgG; mediates ADCC and immune complex clearance",
+      "lupus_evidence": "V158F polymorphism affects IgG binding and is associated with SLE susceptibility.",
+      "odds_ratio": 1.3,
+      "references": ["PMID:11096117", "PMID:16481347"],
+      "category": "Immune Complex Clearance"
+    },
+    {
+      "id": "TLR7",
+      "name": "Toll-Like Receptor 7",
+      "chromosome": "Xp22.2",
+      "function": "Endosomal sensor of single-stranded RNA; drives type I IFN production in plasmacytoid DCs",
+      "lupus_evidence": "Gene duplication and gain-of-function mutations cause lupus in mice and humans. Key driver of the IFN signature.",
+      "odds_ratio": 2.0,
+      "references": ["PMID:35477763", "PMID:32094663"],
+      "category": "Innate Immune Sensing"
+    },
+    {
+      "id": "TLR9",
+      "name": "Toll-Like Receptor 9",
+      "chromosome": "3p21.2",
+      "function": "Endosomal sensor of unmethylated CpG DNA; activates B cells and pDCs",
+      "lupus_evidence": "Recognizes DNA-containing immune complexes; contributes to anti-dsDNA antibody production.",
+      "odds_ratio": 1.4,
+      "references": ["PMID:16973197", "PMID:24692637"],
+      "category": "Innate Immune Sensing"
+    },
+    {
+      "id": "BAFF",
+      "name": "B Cell Activating Factor (TNFSF13B / BLyS)",
+      "chromosome": "13q33.3",
+      "function": "Critical B cell survival and maturation factor",
+      "lupus_evidence": "Elevated serum BAFF levels in SLE patients. Direct therapeutic target of belimumab. Overexpression drives autoantibody production.",
+      "odds_ratio": null,
+      "references": ["PMID:11323081", "PMID:21989456"],
+      "category": "B Cell Survival"
+    },
+    {
+      "id": "IFNAR1",
+      "name": "Interferon Alpha and Beta Receptor Subunit 1",
+      "chromosome": "21q22.11",
+      "function": "Receptor subunit for type I interferons (IFN-α/β)",
+      "lupus_evidence": "Key mediator of the interferon signature. Therapeutic target of anifrolumab.",
+      "odds_ratio": null,
+      "references": ["PMID:23111185", "PMID:31851711"],
+      "category": "Type I Interferon Pathway"
+    },
+    {
+      "id": "JAK1",
+      "name": "Janus Kinase 1",
+      "chromosome": "1p31.3",
+      "function": "Tyrosine kinase mediating signaling for type I/II cytokine receptors",
+      "lupus_evidence": "Required for IFN-α/β, IL-6, and other proinflammatory cytokine signaling. Target of baricitinib and tofacitinib in SLE trials.",
+      "odds_ratio": null,
+      "references": ["PMID:31851711", "PMID:33174738"],
+      "category": "JAK-STAT Signaling"
+    },
+    {
+      "id": "TYK2",
+      "name": "Tyrosine Kinase 2",
+      "chromosome": "19p13.2",
+      "function": "Janus kinase mediating type I IFN and IL-12/IL-23 signaling",
+      "lupus_evidence": "Protective loss-of-function variants associated with reduced SLE risk. Selective TYK2 inhibitors in development.",
+      "odds_ratio": 0.6,
+      "references": ["PMID:23455606", "PMID:33846604"],
+      "category": "JAK-STAT Signaling"
+    },
+    {
+      "id": "BTK",
+      "name": "Bruton Tyrosine Kinase",
+      "chromosome": "Xq22.1",
+      "function": "Essential kinase for B cell receptor and Fc receptor signaling",
+      "lupus_evidence": "BTK inhibition reduces B cell activation, autoantibody production, and kidney damage in lupus models.",
+      "odds_ratio": null,
+      "references": ["PMID:26297082", "PMID:30282952"],
+      "category": "B Cell Signaling"
+    },
+    {
+      "id": "CD20",
+      "name": "CD20 (MS4A1 / B-lymphocyte antigen CD20)",
+      "chromosome": "11q12.2",
+      "function": "B cell surface protein involved in B cell activation, proliferation, and calcium signaling",
+      "lupus_evidence": "Target of B cell depletion therapies (rituximab, obinutuzumab) used clinically in refractory SLE.",
+      "odds_ratio": null,
+      "references": ["PMID:20662064", "PMID:23054334"],
+      "category": "B Cell Signaling"
+    },
+    {
+      "id": "IMPDH",
+      "name": "IMPDH (Inosine Monophosphate Dehydrogenase)",
+      "chromosome": "7q32.1 / 3p21.31",
+      "function": "Rate-limiting enzyme in de novo guanine nucleotide synthesis; essential for lymphocyte proliferation",
+      "lupus_evidence": "Target of mycophenolate mofetil, a first-line therapy for lupus nephritis.",
+      "odds_ratio": null,
+      "references": ["PMID:16112015", "PMID:21561366"],
+      "category": "Nucleotide Metabolism"
+    },
+    {
+      "id": "Calcineurin",
+      "name": "Calcineurin (PPP3CA / Protein Phosphatase 3)",
+      "chromosome": "4q24",
+      "function": "Calcium/calmodulin-dependent serine/threonine phosphatase; dephosphorylates NFAT enabling T cell activation",
+      "lupus_evidence": "Target of voclosporin and tacrolimus for lupus nephritis; also stabilizes podocyte actin cytoskeleton in kidney.",
+      "odds_ratio": null,
+      "references": ["PMID:33911854", "PMID:25607700"],
+      "category": "T Cell Signaling"
+    },
+    {
+      "id": "Glucocorticoid Receptor",
+      "name": "Glucocorticoid Receptor (NR3C1)",
+      "chromosome": "5q31.3",
+      "function": "Nuclear receptor that mediates anti-inflammatory effects via transrepression of NF-κB and AP-1, and induction of anti-inflammatory genes",
+      "lupus_evidence": "Target of prednisone and all corticosteroids, the mainstay of acute SLE management. Goal is to minimize exposure due to toxicity.",
+      "odds_ratio": null,
+      "references": ["PMID:30875411", "PMID:33174738"],
+      "category": "Nuclear Receptor Signaling"
+    }
+  ]
+}

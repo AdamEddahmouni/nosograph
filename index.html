@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lupus Research Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0a0f;
+            --surface: #13131a;
+            --surface2: #1a1a24;
+            --border: #252535;
+            --text: #e0e0e8;
+            --text-muted: #787890;
+            --gene: #4ade80;
+            --drug: #60a5fa;
+            --pathway: #f59e0b;
+            --disease: #f43f5e;
+            --accent: #818cf8;
+            --purple: #c084fc;
+            --pink: #f472b6;
+            --cyan: #22d3ee;
+            --radius: 12px;
+            --radius-sm: 8px;
+            --transition: 0.2s ease;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 32px 24px; }
+
+        /* ── Hero ────────────────────────────────────────────────────────── */
+        .hero {
+            background: linear-gradient(135deg, #0f1729 0%, #1a1025 40%, #0f1729 100%);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 56px 40px;
+            margin-bottom: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background:
+                radial-gradient(circle at 30% 40%, rgba(129,140,248,0.06) 0%, transparent 40%),
+                radial-gradient(circle at 70% 60%, rgba(192,132,252,0.06) 0%, transparent 40%),
+                radial-gradient(circle at 50% 20%, rgba(74,222,128,0.04) 0%, transparent 30%);
+            animation: heroGlow 12s ease-in-out infinite alternate;
+            pointer-events: none;
+        }
+        @keyframes heroGlow {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(2%, 1%); }
+        }
+        .hero-content { position: relative; z-index: 1; }
+        .hero h1 {
+            font-size: 2.6rem; font-weight: 900; letter-spacing: -0.03em;
+            background: linear-gradient(135deg, #4ade80, #22d3ee, #818cf8, #c084fc, #f472b6);
+            -webkit-background-clip: text; background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 12px;
+        }
+        .hero .subtitle {
+            font-size: 1.1rem; color: var(--text-muted);
+            max-width: 640px; margin: 0 auto 20px;
+        }
+        .hero .badges {
+            display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;
+        }
+        .hero-badge {
+            padding: 6px 14px; border-radius: 20px;
+            font-size: 0.75rem; font-weight: 600;
+            border: 1px solid;
+        }
+        .hero-badge.open { background: rgba(74,222,128,0.08); color: #4ade80; border-color: rgba(74,222,128,0.2); }
+        .hero-badge.research { background: rgba(129,140,248,0.08); color: #818cf8; border-color: rgba(129,140,248,0.2); }
+        .hero-badge.python { background: rgba(245,158,11,0.08); color: #f59e0b; border-color: rgba(245,158,11,0.2); }
+
+        /* ── Stats ───────────────────────────────────────────────────────── */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 14px;
+            margin-bottom: 40px;
+        }
+        .stat-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 22px 18px;
+            text-align: center;
+            transition: border-color var(--transition), transform var(--transition);
+        }
+        .stat-card:hover {
+            border-color: #4b5563;
+            transform: translateY(-2px);
+        }
+        .stat-icon { font-size: 1.5rem; margin-bottom: 8px; }
+        .stat-card .stat-value {
+            font-size: 1.9rem; font-weight: 800;
+            margin-bottom: 2px;
+        }
+        .stat-card .stat-label {
+            color: var(--text-muted);
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        /* ── Section titles ──────────────────────────────────────────────── */
+        .section-title {
+            font-size: 1.15rem; font-weight: 700;
+            margin: 40px 0 16px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border);
+            display: flex; align-items: center; gap: 10px;
+        }
+
+        /* ── Module cards ────────────────────────────────────────────────── */
+        .modules-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 18px;
+            margin-bottom: 32px;
+        }
+        .module-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 24px;
+            transition: border-color var(--transition), transform var(--transition);
+            display: flex; flex-direction: column;
+            position: relative; overflow: hidden;
+        }
+        .module-card:hover {
+            border-color: #4b5563;
+            transform: translateY(-2px);
+        }
+        .module-card::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 3px;
+        }
+        .module-card.kg::after { background: linear-gradient(90deg, #4ade80, #22d3ee); }
+        .module-card.dr::after { background: linear-gradient(90deg, #818cf8, #c084fc); }
+        .module-card.bio::after { background: linear-gradient(90deg, #22d3ee, #4ade80); }
+        .module-card.lit::after { background: linear-gradient(90deg, #f472b6, #fbbf24); }
+
+        .module-card-header {
+            display: flex; align-items: center; gap: 12px;
+            margin-bottom: 12px;
+        }
+        .module-icon {
+            width: 44px; height: 44px; border-radius: 10px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.3rem; flex-shrink: 0;
+        }
+        .module-icon.kg { background: rgba(74,222,128,0.12); }
+        .module-icon.dr { background: rgba(129,140,248,0.12); }
+        .module-icon.bio { background: rgba(34,211,238,0.12); }
+        .module-icon.lit { background: rgba(244,114,182,0.12); }
+
+        .module-card h3 {
+            font-size: 1.05rem; font-weight: 700;
+        }
+        .module-card .desc {
+            color: var(--text-muted); font-size: 0.82rem;
+            margin-bottom: 14px; flex: 1;
+        }
+        .module-card .tags {
+            display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 14px;
+        }
+        .tag {
+            padding: 3px 8px; border-radius: 10px;
+            font-size: 0.68rem; font-weight: 600;
+            letter-spacing: 0.02em;
+        }
+        .tag.green { background: rgba(74,222,128,0.12); color: #4ade80; }
+        .tag.blue { background: rgba(129,140,248,0.12); color: #818cf8; }
+        .tag.purple { background: rgba(192,132,252,0.12); color: #c084fc; }
+        .tag.pink { background: rgba(244,114,182,0.12); color: #f472b6; }
+        .tag.yellow { background: rgba(245,158,11,0.12); color: #f59e0b; }
+
+        .module-card .actions {
+            display: flex; gap: 10px; flex-wrap: wrap;
+        }
+        .btn {
+            padding: 8px 16px; border-radius: 8px;
+            font-size: 0.8rem; font-weight: 600;
+            text-decoration: none;
+            transition: all var(--transition);
+            display: inline-flex; align-items: center; gap: 6px;
+            border: 1px solid transparent;
+        }
+        .btn-primary {
+            background: var(--accent); color: #fff;
+            border-color: var(--accent);
+        }
+        .btn-primary:hover { background: #7178e0; border-color: #7178e0; }
+        .btn-secondary {
+            background: transparent; color: var(--text);
+            border-color: var(--border);
+        }
+        .btn-secondary:hover { border-color: var(--accent); background: rgba(129,140,248,0.06); }
+        .btn-disabled {
+            background: transparent; color: var(--text-muted);
+            border-color: var(--border); cursor: not-allowed; opacity: 0.4;
+            pointer-events: none;
+        }
+
+        /* ── Quick start ─────────────────────────────────────────────────── */
+        .quickstart {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 28px;
+            margin-bottom: 32px;
+        }
+        .quickstart h3 {
+            font-size: 0.95rem; font-weight: 600; margin-bottom: 16px;
+            display: flex; align-items: center; gap: 8px;
+        }
+        .code-block {
+            background: #06060a;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 16px 20px;
+            font-family: 'SF Mono', 'Cascadia Code', 'Fira Code', monospace;
+            font-size: 0.8rem; line-height: 1.7;
+            overflow-x: auto;
+            color: var(--text);
+        }
+        .code-block .cmd { color: #4ade80; }
+        .code-block .comment { color: var(--text-muted); }
+
+        /* ── Footer ──────────────────────────────────────────────────────── */
+        footer {
+            text-align: center; padding: 32px 20px;
+            color: var(--text-muted); font-size: 0.75rem;
+            border-top: 1px solid var(--border);
+            margin-top: 20px;
+        }
+        footer a { color: var(--accent); text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+        footer .links { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 10px; }
+
+        /* ── Responsive ──────────────────────────────────────────────────── */
+        @media (max-width: 768px) {
+            .hero { padding: 36px 20px; }
+            .hero h1 { font-size: 1.7rem; }
+            .modules-grid { grid-template-columns: 1fr; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .container { padding: 16px; }
+        }
+
+        .module-card.planned {
+            opacity: 0.85;
+            background: rgba(19,19,26,0.6);
+            border-color: rgba(37,37,53,0.5);
+        }
+        .status-dot {
+            display: inline-block; width: 8px; height: 8px;
+            border-radius: 50%; margin-right: 6px;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        .status-dot.complete { background: #4ade80; }
+        .status-dot.planned { background: #787890; animation: none; }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- ── Hero ──────────────────────────────────────────────────── -->
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Lupus Research Platform</h1>
+                <p class="subtitle">
+                    An open computational platform accelerating drug discovery for Systemic Lupus Erythematosus.
+                    Integrating a curated knowledge graph, drug repurposing engine, bioinformatics pipeline,
+                    and literature mining — all in one place.
+                </p>
+                <div class="badges">
+                    <span class="hero-badge open">🧬 Open Science</span>
+                    <span class="hero-badge research">🔬 Research Tool</span>
+                    <span class="hero-badge python">🐍 Python 3.10+</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ── Stats ─────────────────────────────────────────────────── -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon">🕸️</div>
+                <div class="stat-value" style="color:#4ade80;">50</div>
+                <div class="stat-label">Knowledge Graph Nodes</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🧬</div>
+                <div class="stat-value" style="color:#818cf8;">22</div>
+                <div class="stat-label">Lupus-Associated Genes</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">💊</div>
+                <div class="stat-value" style="color:#c084fc;">39</div>
+                <div class="stat-label">Repurposing Candidates</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🧪</div>
+                <div class="stat-value" style="color:#22d3ee;">4</div>
+                <div class="stat-label">Analysis Modules</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">📚</div>
+                <div class="stat-value" style="color:#f472b6;">~150</div>
+                <div class="stat-label">PubMed Articles</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">✅</div>
+                <div class="stat-value" style="color:#fbbf24;">137</div>
+                <div class="stat-label">Tests Passing</div>
+            </div>
+        </div>
+
+        <!-- ── Modules ───────────────────────────────────────────────── -->
+        <h2 class="section-title">
+            <span style="font-size:1.3rem;">🧰</span> Analysis Modules
+        </h2>
+
+        <div class="modules-grid">
+
+            <!-- Knowledge Graph -->
+            <div class="module-card kg">
+                <div class="module-card-header">
+                    <div class="module-icon kg">🕸️</div>
+                    <div>
+                        <h3>Knowledge Graph</h3>
+                        <span style="font-size:0.72rem;color:var(--text-muted);">
+                            <span class="status-dot complete"></span>Phase 1 — Complete
+                        </span>
+                    </div>
+                </div>
+                <p class="desc">
+                    Interactive heterogeneous graph connecting 22 genes, 20 drugs, and 7 pathways
+                    to the central SLE disease node through 63+ curated relationships across
+                    6 biological edge types.
+                </p>
+                <div class="tags">
+                    <span class="tag green">Cytoscape.js</span>
+                    <span class="tag blue">NetworkX</span>
+                    <span class="tag purple">Interactive</span>
+                </div>
+                <div class="actions">
+                    <a href="knowledge_graph/web/index.html" class="btn btn-primary">🔍 Explore Graph</a>
+                    <a href="knowledge_graph/data/" class="btn btn-secondary">📂 Data</a>
+                </div>
+            </div>
+
+            <!-- Drug Repurposing -->
+            <div class="module-card dr">
+                <div class="module-card-header">
+                    <div class="module-icon dr">💊</div>
+                    <div>
+                        <h3>Drug Repurposing Engine</h3>
+                        <span style="font-size:0.72rem;color:var(--text-muted);">
+                            <span class="status-dot complete"></span>Phase 3 — Complete
+                        </span>
+                    </div>
+                </div>
+                <p class="desc">
+                    Multi-modal scoring system evaluating 39 candidates across 13 untargeted
+                    lupus genes using a 6-dimensional weighted model (target similarity,
+                    pathway proximity, mechanistic rationale, clinical evidence, safety, novelty).
+                </p>
+                <div class="tags">
+                    <span class="tag blue">Scoring Engine</span>
+                    <span class="tag purple">39 Candidates</span>
+                    <span class="tag green">13 Genes</span>
+                </div>
+                <div class="actions">
+                    <a href="drug_repurposing/report.html" class="btn btn-primary">📊 View Report</a>
+                    <a href="drug_repurposing/data/candidates.json" class="btn btn-secondary">📂 Candidates</a>
+                </div>
+            </div>
+
+            <!-- Bioinformatics -->
+            <div class="module-card bio">
+                <div class="module-card-header">
+                    <div class="module-icon bio">🧬</div>
+                    <div>
+                        <h3>Bioinformatics Platform</h3>
+                        <span style="font-size:0.72rem;color:var(--text-muted);">
+                            <span class="status-dot complete"></span>Phase 2 — Complete
+                        </span>
+                    </div>
+                </div>
+                <p class="desc">
+                    Integrated analysis suite: GWAS Catalog annotation with Manhattan plots,
+                    pathway enrichment via GSEApy (GO, KEGG, Reactome, WikiPathways),
+                    and protein-protein interaction networks from STRING with hub scoring.
+                </p>
+                <div class="tags">
+                    <span class="tag green">GWAS</span>
+                    <span class="tag yellow">Enrichment</span>
+                    <span class="tag purple">PPI Networks</span>
+                    <span class="tag blue">STRING</span>
+                </div>
+                <div class="actions">
+                    <a href="bioinformatics/bioinformatics_report.html" class="btn btn-primary">📊 View Report</a>
+                    <a href="bioinformatics/data/ppi_interactive.html" class="btn btn-secondary">🔗 PPI Network</a>
+                </div>
+            </div>
+
+            <!-- Literature Mining -->
+            <div class="module-card lit">
+                <div class="module-card-header">
+                    <div class="module-icon lit">📚</div>
+                    <div>
+                        <h3>Literature Mining Engine</h3>
+                        <span style="font-size:0.72rem;color:var(--text-muted);">
+                            <span class="status-dot complete"></span>Phase 4 — Complete
+                        </span>
+                    </div>
+                </div>
+                <p class="desc">
+                    Automated PubMed search with 5 broad + 39 per-drug targeted queries.
+                    Hybrid biomedical NER (regex + optional spaCy/scispacy) extracts genes,
+                    drugs, and pathways. Cross-references findings against repurposing candidates.
+                </p>
+                <div class="tags">
+                    <span class="tag pink">PubMed</span>
+                    <span class="tag yellow">NER</span>
+                    <span class="tag blue">BioPython</span>
+                </div>
+                <div class="actions">
+                    <a href="literature_mining/literature_report.html" class="btn btn-primary">📊 View Report</a>
+                    <a href="literature_mining/data/pubmed_cache.json" class="btn btn-secondary">📂 Cache</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ── Quick Start ───────────────────────────────────────────── -->
+        <h2 class="section-title">
+            <span style="font-size:1.3rem;">🚀</span> Quick Start
+        </h2>
+
+        <div class="quickstart">
+            <h3>🖥️ Run the full pipeline</h3>
+            <div class="code-block">
+<span class="comment"># 1. Install dependencies</span>
+<span class="cmd">pip</span> install -r requirements.txt
+
+<span class="comment"># 2. Run everything (one command)</span>
+<span class="cmd">python</span> main.py run-all --export-html
+
+<span class="comment"># 3. Or run individual modules</span>
+<span class="cmd">python</span> main.py kg --analyze
+<span class="cmd">python</span> main.py repurpose --top 15 --export-html
+<span class="cmd">python</span> main.py bioinformatics --export-html
+<span class="cmd">python</span> main.py literature --export-html
+
+<span class="comment"># 4. Run tests</span>
+<span class="cmd">python</span> main.py test
+            </div>
+        </div>
+
+        <div class="quickstart">
+            <h3>🐳 Run with Docker</h3>
+            <div class="code-block">
+<span class="comment"># Build the image</span>
+<span class="cmd">docker</span> compose build
+
+<span class="comment"># Run the pipeline</span>
+<span class="cmd">docker</span> compose run --rm pipeline run-all --export-html
+
+<span class="comment"># Serve the knowledge graph (visit http://localhost:8080)</span>
+<span class="cmd">docker</span> compose up kg-web
+            </div>
+        </div>
+
+        <!-- ── Roadmap ───────────────────────────────────────────────── -->
+        <h2 class="section-title">
+            <span style="font-size:1.3rem;">🗺️</span> Roadmap
+        </h2>
+
+        <div class="modules-grid">
+            <div class="module-card planned">
+                <div class="module-card-header">
+                    <div class="module-icon" style="background:rgba(245,158,11,0.12);">🔬</div>
+                    <div>
+                        <h3>Virtual Drug Screening</h3>
+                        <span style="font-size:0.72rem;color:var(--text-muted);">
+                            <span class="status-dot planned"></span>Phase 6 — Planned
+                        </span>
+                    </div>
+                </div>
+                <p class="desc">
+                    Molecular docking against lupus protein targets using AutoDock Vina.
+                    Pharmacophore modeling and AI-based virtual screening with DeepChem.
+                </p>
+                <div class="tags">
+                    <span class="tag yellow">AutoDock Vina</span>
+                    <span class="tag blue">RDKit</span>
+                    <span class="tag purple">DeepChem</span>
+                </div>
+                <div class="actions">
+                    <span class="btn btn-disabled">Coming Soon</span>
+                </div>
+            </div>
+
+            <div class="module-card planned">
+                <div class="module-card-header">
+                    <div class="module-icon" style="background:rgba(129,140,248,0.12);">🧠</div>
+                    <div>
+                        <h3>ML Target Predictor</h3>
+                        <span style="font-size:0.72rem;color:var(--text-muted);">
+                            <span class="status-dot planned"></span>Phase 7 — Planned
+                        </span>
+                    </div>
+                </div>
+                <p class="desc">
+                    Machine learning models (XGBoost, PyTorch) for predicting novel druggable
+                    targets from genomic and transcriptomic features. SHAP interpretability.
+                </p>
+                <div class="tags">
+                    <span class="tag blue">XGBoost</span>
+                    <span class="tag purple">PyTorch</span>
+                    <span class="tag green">SHAP</span>
+                </div>
+                <div class="actions">
+                    <span class="btn btn-disabled">Coming Soon</span>
+                </div>
+            </div>
+
+            <div class="module-card planned">
+                <div class="module-card-header">
+                    <div class="module-icon" style="background:rgba(244,114,182,0.12);">📋</div>
+                    <div>
+                        <h3>Clinical Trial Tracker</h3>
+                        <span style="font-size:0.72rem;color:var(--text-muted);">
+                            <span class="status-dot planned"></span>Phase 8 — Planned
+                        </span>
+                    </div>
+                </div>
+                <p class="desc">
+                    Live aggregation from ClinicalTrials.gov. Phase analysis, mechanism-of-action
+                    categorization, and timeline visualization of the lupus drug pipeline.
+                </p>
+                <div class="tags">
+                    <span class="tag pink">ClinicalTrials.gov</span>
+                    <span class="tag yellow">Plotly</span>
+                    <span class="tag blue">pandas</span>
+                </div>
+                <div class="actions">
+                    <span class="btn btn-disabled">Coming Soon</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ── Footer ────────────────────────────────────────────────── -->
+        <footer>
+            <div class="links">
+                <a href="knowledge_graph/web/index.html">Knowledge Graph</a>
+                <a href="drug_repurposing/report.html">Drug Repurposing</a>
+                <a href="bioinformatics/bioinformatics_report.html">Bioinformatics</a>
+                <a href="literature_mining/literature_report.html">Literature Mining</a>
+            </div>
+            <p style="margin-bottom:6px;">
+                Lupus Research Platform · An open science project
+            </p>
+            <p style="color:#6b7280;">
+                ⚠️ Disclaimer: This is a research tool. All findings are computational predictions
+                requiring experimental and clinical validation. Not medical advice.
+            </p>
+        </footer>
+
+    </div>
+</body>
+</html>

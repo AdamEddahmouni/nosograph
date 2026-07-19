@@ -1,0 +1,394 @@
+{
+  "relationships": [
+    {
+      "source": "belimumab",
+      "target": "BAFF",
+      "type": "TARGETS",
+      "description": "Belimumab directly binds and neutralizes soluble BAFF (BLyS), preventing B cell survival signaling"
+    },
+    {
+      "source": "anifrolumab",
+      "target": "IFNAR1",
+      "type": "TARGETS",
+      "description": "Anifrolumab blocks the type I interferon receptor IFNAR1, suppressing the IFN gene signature"
+    },
+    {
+      "source": "voclosporin",
+      "target": "Calcineurin",
+      "type": "TARGETS",
+      "description": "Voclosporin inhibits calcineurin, blocking NFAT-mediated T cell activation"
+    },
+    {
+      "source": "tacrolimus",
+      "target": "Calcineurin",
+      "type": "TARGETS",
+      "description": "Tacrolimus binds FKBP12 and inhibits calcineurin, blocking T cell activation"
+    },
+    {
+      "source": "hydroxychloroquine",
+      "target": "TLR7",
+      "type": "TARGETS",
+      "description": "Hydroxychloroquine inhibits endosomal TLR7 activation by preventing endosome acidification"
+    },
+    {
+      "source": "hydroxychloroquine",
+      "target": "TLR9",
+      "type": "TARGETS",
+      "description": "Hydroxychloroquine inhibits endosomal TLR9 activation by preventing endosome acidification"
+    },
+    {
+      "source": "rituximab",
+      "target": "CD20",
+      "type": "TARGETS",
+      "description": "Rituximab depletes CD20+ B cells through ADCC, CDC, and apoptosis"
+    },
+    {
+      "source": "obinutuzumab",
+      "target": "CD20",
+      "type": "TARGETS",
+      "description": "Obinutuzumab is a type II anti-CD20 antibody with enhanced direct cell death and reduced CDC vs rituximab"
+    },
+    {
+      "source": "mycophenolate",
+      "target": "IMPDH",
+      "type": "TARGETS",
+      "description": "Mycophenolate mofetil inhibits IMPDH, blocking de novo purine synthesis in lymphocytes"
+    },
+    {
+      "source": "baricitinib",
+      "target": "JAK1",
+      "type": "TARGETS",
+      "description": "Baricitinib inhibits JAK1, blocking type I IFN, IL-6, and other cytokine signaling"
+    },
+    {
+      "source": "prednisone",
+      "target": "Glucocorticoid Receptor",
+      "type": "TARGETS",
+      "description": "Prednisone binds glucocorticoid receptor (NR3C1), broadly suppressing NF-κB and inflammatory gene transcription"
+    },
+    {
+      "source": "BAFF",
+      "target": "bcell-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BAFF is a critical survival factor in B cell receptor signaling and B cell homeostasis"
+    },
+    {
+      "source": "BLK",
+      "target": "bcell-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BLK is a Src-family kinase essential for B cell receptor signal transduction"
+    },
+    {
+      "source": "BANK1",
+      "target": "bcell-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BANK1 is a scaffold protein that modulates BCR-induced calcium mobilization"
+    },
+    {
+      "source": "BTK",
+      "target": "bcell-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BTK is an essential kinase for BCR and Fc receptor signaling in B cells and myeloid cells"
+    },
+    {
+      "source": "IRF5",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF5 is a master transcription factor driving type I IFN production downstream of TLR7/TLR9"
+    },
+    {
+      "source": "IFNAR1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNAR1 is the receptor subunit for type I interferons, mediating all IFN-α/β signaling"
+    },
+    {
+      "source": "TLR7",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR7 senses ssRNA in endosomes and triggers IRF5/IRF7-mediated IFN-α production"
+    },
+    {
+      "source": "TLR9",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR9 senses CpG DNA in endosomes and triggers IRF5/IRF7-mediated IFN-α production"
+    },
+    {
+      "source": "JAK1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK1 mediates signaling for type I IFNs, IL-6, and other γ-chain cytokines"
+    },
+    {
+      "source": "TYK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "TYK2 mediates type I IFN and IL-12/IL-23 signaling through JAK-STAT pathways"
+    },
+    {
+      "source": "STAT4",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT4 mediates IL-12 and type I IFN-induced transcription, promoting Th1/Th17 differentiation"
+    },
+    {
+      "source": "TNFAIP3",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFAIP3 (A20) negatively regulates NF-κB signaling through ubiquitin editing; loss of function drives inflammation"
+    },
+    {
+      "source": "ITGAM",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM encodes CD11b, a component of complement receptor 3 (CR3) critical for immune complex clearance"
+    },
+    {
+      "source": "FCGR2A",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "FCGR2A mediates IgG immune complex binding and clearance by phagocytes"
+    },
+    {
+      "source": "FCGR3A",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "FCGR3A mediates ADCC and immune complex clearance"
+    },
+    {
+      "source": "TNFSF4",
+      "target": "tcell-costim",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF4 (OX40L) provides costimulatory signals that enhance T cell activation and Tfh function"
+    },
+    {
+      "source": "PTPN22",
+      "target": "tcell-costim",
+      "type": "PARTICIPATES_IN",
+      "description": "PTPN22 (LYP) negatively regulates T cell receptor signaling; R620W variant alters T cell selection thresholds"
+    },
+    {
+      "source": "TLR7",
+      "target": "tlr-sensing",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR7 is a key endosomal sensor of ssRNA that drives the lupus IFN signature"
+    },
+    {
+      "source": "TLR9",
+      "target": "tlr-sensing",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR9 is a key endosomal sensor of CpG DNA that drives B cell activation in lupus"
+    },
+    {
+      "source": "IRF5",
+      "target": "tlr-sensing",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF5 is activated downstream of TLR7/TLR9-MyD88 signaling to drive IFN-α production"
+    },
+    {
+      "source": "belimumab",
+      "target": "bcell-signaling",
+      "type": "MODULATES",
+      "description": "Belimumab modulates B cell signaling by reducing BAFF-dependent B cell survival"
+    },
+    {
+      "source": "anifrolumab",
+      "target": "type1-ifn",
+      "type": "MODULATES",
+      "description": "Anifrolumab blocks type I interferon signaling by binding IFNAR1"
+    },
+    {
+      "source": "hydroxychloroquine",
+      "target": "tlr-sensing",
+      "type": "MODULATES",
+      "description": "Hydroxychloroquine inhibits endosomal TLR7 and TLR9 activation"
+    },
+    {
+      "source": "baricitinib",
+      "target": "jak-stat",
+      "type": "MODULATES",
+      "description": "Baricitinib inhibits JAK1/JAK2, broadly suppressing cytokine-driven JAK-STAT signaling"
+    },
+    {
+      "source": "type1-ifn",
+      "target": "Lupus (SLE)",
+      "type": "DRIVES",
+      "description": "The type I interferon pathway is a central driver of SLE pathogenesis, with ~60-80% of patients showing an IFN gene signature"
+    },
+    {
+      "source": "bcell-signaling",
+      "target": "Lupus (SLE)",
+      "type": "DRIVES",
+      "description": "Dysregulated B cell signaling drives autoantibody production and immune complex formation in SLE"
+    },
+    {
+      "source": "jak-stat",
+      "target": "Lupus (SLE)",
+      "type": "DRIVES",
+      "description": "Aberrant JAK-STAT signaling downstream of multiple cytokines contributes to lupus inflammation"
+    },
+    {
+      "source": "tlr-sensing",
+      "target": "Lupus (SLE)",
+      "type": "DRIVES",
+      "description": "Endosomal TLR sensing of self-nucleic acids is a key initiating event in the lupus autoimmune response"
+    },
+    {
+      "source": "nfkb",
+      "target": "Lupus (SLE)",
+      "type": "DRIVES",
+      "description": "Chronic NF-κB activation drives sustained inflammation and tissue damage in SLE"
+    },
+    {
+      "source": "complement",
+      "target": "Lupus (SLE)",
+      "type": "DRIVES",
+      "description": "Defective complement-mediated clearance of apoptotic debris leads to autoantigen exposure and immune activation"
+    },
+    {
+      "source": "tcell-costim",
+      "target": "Lupus (SLE)",
+      "type": "DRIVES",
+      "description": "Enhanced T cell costimulation drives Tfh expansion and autoreactive B cell help in SLE"
+    },
+    {
+      "source": "HLA-DRB1",
+      "target": "Lupus (SLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DRB1 is the strongest genetic risk factor for SLE, with specific alleles conferring 2-3x increased risk"
+    },
+    {
+      "source": "IRF5",
+      "target": "Lupus (SLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF5 risk haplotypes are associated with high serum IFN-α activity and increased SLE susceptibility"
+    },
+    {
+      "source": "STAT4",
+      "target": "Lupus (SLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT4 rs7574865 risk variant is associated with increased SLE susceptibility and severity"
+    },
+    {
+      "source": "ITGAM",
+      "target": "Lupus (SLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGAM missense variants impair phagocytosis and are associated with increased SLE risk"
+    },
+    {
+      "source": "TNFAIP3",
+      "target": "Lupus (SLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFAIP3 loss-of-function variants reduce NF-κB regulation and increase SLE risk"
+    },
+    {
+      "source": "belimumab",
+      "target": "Lupus (SLE)",
+      "type": "TREATS",
+      "description": "Belimumab is FDA-approved for SLE and lupus nephritis; reduces disease activity and flare risk"
+    },
+    {
+      "source": "anifrolumab",
+      "target": "Lupus (SLE)",
+      "type": "TREATS",
+      "description": "Anifrolumab is FDA-approved for moderate to severe SLE; reduces disease activity and corticosteroid use"
+    },
+    {
+      "source": "hydroxychloroquine",
+      "target": "Lupus (SLE)",
+      "type": "TREATS",
+      "description": "Hydroxychloroquine is the standard-of-care for all SLE patients; reduces flares and improves survival"
+    },
+    {
+      "source": "voclosporin",
+      "target": "Lupus (SLE)",
+      "type": "TREATS",
+      "description": "Voclosporin is FDA-approved for lupus nephritis in combination with MMF and corticosteroids"
+    },
+    {
+      "source": "rituximab",
+      "target": "Lupus (SLE)",
+      "type": "TREATS",
+      "description": "Rituximab is used off-label for refractory SLE; depletes CD20+ B cells"
+    },
+    {
+      "source": "tacrolimus",
+      "target": "Lupus (SLE)",
+      "type": "TREATS",
+      "description": "Tacrolimus is used off-label for lupus nephritis, especially in Asian populations"
+    },
+    {
+      "source": "azathioprine",
+      "target": "Lupus (SLE)",
+      "type": "TREATS",
+      "description": "Azathioprine is a steroid-sparing maintenance therapy for lupus nephritis and SLE"
+    },
+    {
+      "source": "cyclophosphamide",
+      "target": "Lupus (SLE)",
+      "type": "TREATS",
+      "description": "Cyclophosphamide is reserved for severe organ-threatening lupus including nephritis, CNS, and pulmonary involvement"
+    },
+    {
+      "source": "mycophenolate",
+      "target": "Lupus (SLE)",
+      "type": "TREATS",
+      "description": "Mycophenolate is a first-line induction and maintenance therapy for lupus nephritis"
+    },
+    {
+      "source": "acalabrutinib",
+      "target": "bcell-signaling",
+      "type": "MODULATES",
+      "description": "Acalabrutinib is a highly selective BTK inhibitor that suppresses BCR signaling, reducing B cell activation and autoantibody production"
+    },
+    {
+      "source": "avacopan",
+      "target": "complement",
+      "type": "MODULATES",
+      "description": "Avacopan blocks C5aR, intercepting C5a-mediated neutrophil recruitment and inflammation downstream of complement activation"
+    },
+    {
+      "source": "cyclosporine",
+      "target": "Calcineurin",
+      "type": "TARGETS",
+      "description": "Cyclosporine binds cyclophilin and inhibits calcineurin, blocking NFAT-mediated T cell activation"
+    },
+    {
+      "source": "dimethyl_fumarate",
+      "target": "nfkb",
+      "type": "MODULATES",
+      "description": "Dimethyl fumarate activates Nrf2 and inhibits NF-κB nuclear translocation, reducing proinflammatory gene expression"
+    },
+    {
+      "source": "iscalimab",
+      "target": "tcell-costim",
+      "type": "MODULATES",
+      "description": "Iscalimab blocks CD40-CD40L costimulation, preventing T cell-dependent B cell help and germinal center formation"
+    },
+    {
+      "source": "ravulizumab",
+      "target": "complement",
+      "type": "MODULATES",
+      "description": "Ravulizumab binds C5 and blocks terminal complement activation, preventing C5a and MAC-mediated tissue damage"
+    },
+    {
+      "source": "rozanolixizumab",
+      "target": "complement",
+      "type": "MODULATES",
+      "description": "Rozanolixizumab blocks FcRn, reducing pathogenic IgG levels and decreasing immune complex substrate for complement activation"
+    },
+    {
+      "source": "tofacitinib",
+      "target": "JAK1",
+      "type": "TARGETS",
+      "description": "Tofacitinib inhibits JAK1, broadly blocking type I IFN, IL-6, IL-12/IL-23, and other cytokine signaling"
+    },
+    {
+      "source": "tofacitinib",
+      "target": "jak-stat",
+      "type": "MODULATES",
+      "description": "Tofacitinib broadly suppresses JAK-STAT signaling downstream of multiple proinflammatory cytokine receptors"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+# ── Lupus Research Platform — Docker Compose ──────────────────────────────
+#
+# Usage:
+#   docker compose build                          Build the image
+#   docker compose run --rm pipeline run-all      Run the full pipeline
+#   docker compose up kg-web                       Serve the knowledge graph
+#   docker compose run --rm pipeline test          Run tests
+#
+# ─────────────────────────────────────────────────────────────────────────────
+
+services:
+
+  # ── CLI pipeline ──────────────────────────────────────────────────────
+  pipeline:
+    build: .
+    image: lupus-platform:latest
+    volumes:
+      - ./knowledge_graph/data:/app/knowledge_graph/data:ro
+      - ./drug_repurposing/data:/app/drug_repurposing/data:ro
+      - ./bioinformatics/data:/app/bioinformatics/data
+      - ./literature_mining/data:/app/literature_mining/data
+    command: run-all --export-html
+    profiles:
+      - cli
+
+  # ── Knowledge Graph web viewer ─────────────────────────────────────────
+  kg-web:
+    build: .
+    image: lupus-platform:latest
+    ports:
+      - "8080:8080"
+    # graph_data.json is pre-built into the image (Dockerfile runs build_graph.py --export)
+    command: >
+      python -c "import http.server; import os;
+      os.chdir('knowledge_graph/web');
+      http.server.test(HandlerClass=http.server.SimpleHTTPRequestHandler, port=8080)"

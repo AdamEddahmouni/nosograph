@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lupus Literature Mining Report</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background: #0a0a0f; color: #e0e0e8; line-height: 1.6;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 24px; }
+
+        .hero {
+            background: linear-gradient(135deg, #0f1729, #1a1025, #0f1729);
+            border: 1px solid #252535; border-radius: 16px;
+            padding: 40px; margin-bottom: 32px; text-align: center;
+        }
+        .hero h1 {
+            font-size: 2rem; font-weight: 800;
+            background: linear-gradient(135deg, #818cf8, #c084fc, #f472b6);
+            -webkit-background-clip: text; background-clip: text;
+            -webkit-text-fill-color: transparent; margin-bottom: 8px;
+        }
+        .hero .subtitle { color: #787890; font-size: 0.95rem; }
+
+        .stats-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 14px; margin-bottom: 32px;
+        }
+        .stat-card {
+            background: #13131a; border: 1px solid #252535;
+            border-radius: 12px; padding: 20px; text-align: center;
+        }
+        .stat-card .stat-value { font-size: 1.8rem; font-weight: 800; }
+        .stat-card .stat-label { color: #787890; font-size: 0.78rem; margin-top: 4px; }
+
+        .section-title {
+            font-size: 1.2rem; font-weight: 700; margin: 32px 0 14px;
+            padding-bottom: 8px; border-bottom: 1px solid #252535;
+        }
+
+        /* Tables */
+        .table-container {
+            overflow-x: auto; background: #13131a;
+            border: 1px solid #252535; border-radius: 12px; margin-bottom: 28px;
+        }
+        table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+        th {
+            text-align: left; padding: 12px 14px; background: #1a1a24;
+            color: #787890; font-weight: 600; font-size: 0.72rem;
+            text-transform: uppercase; letter-spacing: 0.04em;
+            border-bottom: 1px solid #252535;
+        }
+        td { padding: 10px 14px; border-bottom: 1px solid #1a1a24; }
+        tr:hover td { background: rgba(129,140,248,0.03); }
+        .muted { color: #787890; font-size: 0.78rem; }
+
+        /* Bars */
+        .bar-container {
+            display: flex; align-items: center; gap: 8px; min-width: 120px;
+        }
+        .bar-fill {
+            height: 8px; background: linear-gradient(90deg, #4ade80, #22c55e);
+            border-radius: 4px; min-width: 4px; transition: width 0.3s;
+        }
+        .bar-label { font-size: 0.78rem; font-weight: 600; color: #a0a0b0; }
+
+        /* Article cards */
+        .article-card {
+            background: #13131a; border: 1px solid #252535;
+            border-radius: 10px; padding: 18px; margin-bottom: 12px;
+            transition: border-color 0.2s;
+        }
+        .article-card:hover { border-color: #4b5563; }
+        .article-header {
+            display: flex; justify-content: space-between; align-items: center;
+            margin-bottom: 6px;
+        }
+        .article-score {
+            background: #818cf8; color: #fff; font-weight: 700;
+            padding: 2px 10px; border-radius: 12px; font-size: 0.75rem;
+        }
+        .article-pmid { color: #787890; font-size: 0.72rem; }
+        .article-pmid a { color: #818cf8; text-decoration: none; }
+        .article-card h4 { font-size: 0.9rem; margin-bottom: 8px; color: #e0e0e8; }
+        .article-abstract { font-size: 0.78rem; color: #787890; margin-bottom: 10px; }
+        .article-entities { display: flex; gap: 8px; flex-wrap: wrap; }
+        .entity-tag {
+            padding: 2px 8px; border-radius: 10px; font-size: 0.7rem;
+            font-weight: 500;
+        }
+        .entity-tag.gene { background: rgba(192,132,252,0.15); color: #c084fc; }
+        .entity-tag.drug { background: rgba(74,222,128,0.15); color: #4ade80; }
+        .entity-tag.novel { background: rgba(52,211,153,0.15); color: #34d399; }
+
+        /* Novel entities section */
+        .novel-category { margin-bottom: 20px; }
+        .novel-category h4 {
+            font-size: 0.85rem; color: #a0a0b0; margin-bottom: 10px;
+            font-weight: 600;
+        }
+        .novel-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+
+        .pmids { font-size: 0.75rem; }
+        .pmid-link {
+            color: #818cf8; text-decoration: none; margin-right: 6px;
+            font-size: 0.72rem;
+        }
+
+        footer {
+            text-align: center; padding: 40px; color: #787890; font-size: 0.75rem;
+        }
+        footer a { color: #818cf8; }
+
+        @media (max-width: 768px) {
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .hero { padding: 24px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>📚 Lupus Literature Mining Report</h1>
+            <p class="subtitle">
+                PubMed Analysis of 70 Articles · 
+                Cross-Referenced Against 22 Genes & 20 Drugs
+            </p>
+            <p class="subtitle" style="font-size:0.78rem;margin-top:8px;">
+                Generated: July 19, 2026 at 00:16
+            </p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value" style="color:#818cf8">70</div>
+                <div class="stat-label">Articles Analyzed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" style="color:#4ade80">70</div>
+                <div class="stat-label">With KG Matches</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" style="color:#c084fc">18</div>
+                <div class="stat-label">Unique Genes Found</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" style="color:#fbbf24">20</div>
+                <div class="stat-label">Unique Drugs Found</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" style="color:#f472b6">8</div>
+                <div class="stat-label">Candidates with Lit Support</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" style="color:#34d399">400</div>
+                <div class="stat-label">Novel Entities (spaCy)</div>
+            </div>
+        </div>
+
+        <h2 class="section-title">📋 Candidates with Literature Support</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Drug</th><th>Target Gene</th><th>Score</th>
+                        <th>Articles</th><th>PubMed Links</th>
+                    </tr>
+                </thead>
+                <tbody>
+        <tr>
+            <td><strong>Anifrolumab (Saphnelo)</strong></td>
+            <td>Tyrosine Kinase 2</td>
+            <td><span style="color:#f87171;font-weight:700">0.0</span></td>
+            <td>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width:45px"></div>
+                    <span class="bar-label">3</span>
+                </div>
+            </td>
+            <td class="pmids"><a class="pmid-link" href="https://pubmed.ncbi.nlm.nih.gov/38491743" target="_blank" title="An update on clinical trials for cutaneous lupus erythematosus.">PMID:38491743 (2024)</a> <a class="pmid-link" href="https://pubmed.ncbi.nlm.nih.gov/38299618" target="_blank" title="Emerging biologic therapies for systemic lupus erythematosus.">PMID:38299618 (2024)</a> <a class="pmid-link" href="https://pubmed.ncbi.nlm.nih.gov/37140884" target="_blank" title="Cutaneous Lupus Erythematosus: An Update on Pathogenesis and Future Therapeutic Directions.">PMID:37140884 (2023)</a> </td>
+        </tr>
+        <tr>
+            <td><strong>Acalabrutinib (Calquence)</strong></td>
+            <td>B Lymphoid Tyrosine Kinase</td>
+            <td><span style="color:#f87171;font-weight:700">0.0</span></td>
+            <td>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width:30px"></div>
+                    <span class="bar-label">2</span>
+                </div>
+            </td>
+            <td class="pmids"><a class="pmid-link" href="https://pubmed.ncbi.nlm.nih.gov/33777941" target="_blank" title="Comparative Analysis of BTK Inhibitors and Mechanisms Underlying Adverse Effects.">PMID:33777941 (2021)</a> <a class="pmid-link" href="https://pubmed.ncbi.nlm.nih.gov/33806595" target="_blank" title="Bleeding by Bruton Tyrosine Kinase-Inhibitors: Dependency on Drug Type and Disease.">PMID:33806595 (2021)</a> </td>
+        </tr>
+        <tr>
+            <td><strong>Rozanolixizumab (Rystiggo)</strong></td>
+            <td>Fc Gamma Receptor IIa (CD32a)</td>
+            <td><span style="color:#f87171;font-weight:700">0.0</span></td>
+            <td>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width:30px"></div>
+                    <span class="bar-label">2</span>
+                </div>
+            </td>
+            <td class="pmids"><a class="pmid-link" href="https://pubmed.ncbi.nlm.nih.gov/41112287" target="_blank" title="From promise to practice: evaluating the clinical impact of FcRn inhibition in IgG-mediated autoimmune rheumatic diseases.">PMID:41112287 (2025)</a> <a class="pmid-link" href="https://pubmed.ncbi.nlm.nih.gov/41111019" target="_blank" title="Blocking the neonatal Fc receptor as a novel approach to prevent cardiac neonatal lupus: a proof-of-concept study.">PMID:41111019 (2026)</a> </td>
+        </tr>
+        <tr>
+            <td><strong>Avacopan (Tavneos)</strong></td>
+            <td>Integrin Subunit Alpha M (CD11b)</td>
+            <td><span style="color:#f87171;font-weight:700">0.0</span></td>
+            <td>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width:30px"></div>
+                    <span class="bar-label">2</span>
+                </div>
+            </td>
+            <td class="pmids"><a class="pmid-link" href="https://pubmed.ncbi.nlm.nih.gov/34826105" target="_blank" title="Avacopan: First Approval.">PMID:34826105 (2022)</a> <a class="pmid-link" href="https://pubmed.ncbi.nlm.nih.gov/41961736" target="_blank" title="New Anticomplement Drugs in Nephrology: Mechanism and Indication.">PMID:41961736 (2026)</a> </td>
+        </tr>
+        <tr>
+            <td><strong>Cyclosporine (Neoral / Sandimmune)</strong></td>
+            <td>Protein Tyrosine Phosphatase Non-Receptor Type 22</td>
+            <td><span style="color:#f87171;font-weight:700">0.0</span></td>
+            <td>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width:15px"></div>
+                    <span class="bar-label">1</span>
+                </div>
+            </td>
+            <td class="pmids"><a class="pmid-link" href="https://pubmed.ncbi.nlm.nih.gov/36030136" target="_blank" title="Systemic lupus erythematosus-complicating immune thrombocytopenia: From pathogenesis to treatment.">PMID:36030136 (2022)</a> </td>
+        </tr>
+        <tr>
+            <td><strong>Acalabrutinib (Calquence)</strong></td>
+            <td>B Cell Scaffold Protein with Ankyrin Repeats 1</td>
+            <td><span style="color:#f87171;font-weight:700">0.0</span></td>
+            <td>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width:15px"></div>
+                    <span class="bar-label">1</span>
+                </div>
+            </td>
+            <td class="pmids"><a class="pmid-link" href="https://pubmed.ncbi.nlm.nih.gov/33777941" target="_blank" title="Comparative Analysis of BTK Inhibitors and Mechanisms Underlying Adverse Effects.">PMID:33777941 (2021)</a> </td>
+        </tr>
+        <tr>
+            <td><strong>Baricitinib (Olumiant)</strong></td>
+            <td>Tyrosine Kinase 2</td>
+            <td><span style="color:#f87171;font-weight:700">0.0</span></td>
+            <td>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width:15px"></div>
+                    <span class="bar-label">1</span>
+                </div>
+            </td>
+            <td class="pmids"><a class="pmid-link" href="https://pubmed.ncbi.nlm.nih.gov/38299618" target="_blank" title="Emerging biologic therapies for systemic lupus erythematosus.">PMID:38299618 (2024)</a> </td>
+        </tr>
+        <tr>
+            <td><strong>Ravulizumab (Ultomiris)</strong></td>
+            <td>Fc Gamma Receptor IIIa (CD16a)</td>
+            <td><span style="color:#f87171;font-weight:700">0.0</span></td>
+            <td>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width:15px"></div>
+                    <span class="bar-label">1</span>
+                </div>
+            </td>
+            <td class="pmids"><a class="pmid-link" href="https://pubmed.ncbi.nlm.nih.gov/41961736" target="_blank" title="New Anticomplement Drugs in Nephrology: Mechanism and Indication.">PMID:41961736 (2026)</a> </td>
+        </tr></tbody>
+            </table>
+        </div>
+
+        <h2 class="section-title">🧬 Gene Literature Coverage</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr><th>Gene</th><th>Category</th><th>Articles</th></tr>
+                </thead>
+                <tbody>
+        <tr>
+            <td><strong>B Lymphoid Tyrosine Kinase</strong></td>
+            <td><span class="muted">B Cell Signaling</span></td>
+            <td>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width:120px;background:linear-gradient(90deg,#818cf8,#c084fc)"></div>
+                    <span class="bar-label">35</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Janus Kinase 1</strong></td>
+            <td><span class="muted">JAK-STAT Signaling</span></td>
+            <td>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width:120px;background:linear-gradient(90deg,#818cf8,#c084fc)"></div>
+                    <span class="bar-label">35</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Bruton Tyrosine Kinase</strong></td>
+            <td><span class="muted">B Cell Signaling</span></td>
+            <td>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width:120px;background:linear-gradient(90deg,#818cf8,#c084fc)"></div>
+                    <span class="bar-label">35</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Integrin Subunit Alpha M (CD11b)</strong></td>
+            <td><span class="muted">Complement / Phagocytosis</span></td>
+            <td>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width:120px;background:linear-gradient(90deg,#818cf8,#c084fc)"></div>
+                    <span class="bar-label">25</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>B Cell Scaffold Protein with Ankyrin Repeats 1</strong></td>
+            <td><span class="muted">B Cell Signaling</span></td>
+            <td>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width:120px;background:linear-gradient(90deg,#818cf8,#c084fc)"></div>
+                    <span class="bar-label">25</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Protein Tyrosine Phosphatase Non-Receptor Type 22</strong></td>
+            <td><span class="muted">T Cell Signaling</span></td>
+            <td>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width:120px;background:linear-gradient(90deg,#818cf8,#c084fc)"></div>
+                    <span class="bar-label">25</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Fc Gamma Receptor IIa (CD32a)</strong></td>
+            <td><span class="muted">Immune Complex Clearance</span></td>
+            <td>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width:120px;background:linear-gradient(90deg,#818cf8,#c084fc)"></div>
+                    <span class="bar-label">25</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Fc Gamma Receptor IIIa (CD16a)</strong></td>
+            <td><span class="muted">Immune Complex Clearance</span></td>
+            <td>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width:120px;background:linear-gradient(90deg,#818cf8,#c084fc)"></div>
+                    <span class="bar-label">25</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Interferon Alpha and Beta Receptor Subunit 1</strong></td>
+            <td><span class="muted">Type I Interferon Pathway</span></td>
+            <td>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width:120px;background:linear-gradient(90deg,#818cf8,#c084fc)"></div>
+                    <span class="bar-label">25</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Glucocorticoid Receptor (NR3C1)</strong></td>
+            <td><span class="muted">Nuclear Receptor Signaling</span></td>
+            <td>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width:120px;background:linear-gradient(90deg,#818cf8,#c084fc)"></div>
+                    <span class="bar-label">25</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Tyrosine Kinase 2</strong></td>
+            <td><span class="muted">JAK-STAT Signaling</span></td>
+            <td>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width:120px;background:linear-gradient(90deg,#818cf8,#c084fc)"></div>
+                    <span class="bar-label">20</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>CD20 (MS4A1 / B-lymphocyte antigen CD20)</strong></td>
+            <td><span class="muted">B Cell Signaling</span></td>
+            <td>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width:60px;background:linear-gradient(90deg,#818cf8,#c084fc)"></div>
+                    <span class="bar-label">5</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Toll-Like Receptor 7</strong></td>
+            <td><span class="muted">Innate Immune Sensing</span></td>
+            <td>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width:48px;background:linear-gradient(90deg,#818cf8,#c084fc)"></div>
+                    <span class="bar-label">4</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Calcineurin (PPP3CA / Protein Phosphatase 3)</strong></td>
+            <td><span class="muted">T Cell Signaling</span></td>
+            <td>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width:48px;background:linear-gradient(90deg,#818cf8,#c084fc)"></div>
+                    <span class="bar-label">4</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Interferon Regulatory Factor 5</strong></td>
+            <td><span class="muted">Type I Interferon Pathway</span></td>
+            <td>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width:24px;background:linear-gradient(90deg,#818cf8,#c084fc)"></div>
+                    <span class="bar-label">2</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Toll-Like Receptor 9</strong></td>
+            <td><span class="muted">Innate Immune Sensing</span></td>
+            <td>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width:24px;background:linear-gradient(90deg,#818cf8,#c084fc)"></div>
+                    <span class="bar-label">2</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Signal Transducer and Activator of Transcription 4</strong></td>
+            <td><span class="muted">JAK-STAT Signaling</span></td>
+            <td>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width:12px;background:linear-gradient(90deg,#818cf8,#c084fc)"></div>
+                    <span class="bar-label">1</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>TNF Superfamily Member 4 (OX40 Ligand)</strong></td>
+            <td><span class="muted">T Cell Costimulation</span></td>
+            <td>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width:12px;background:linear-gradient(90deg,#818cf8,#c084fc)"></div>
+                    <span class="bar-label">1</span>
+                </div>
+            </td>
+        </tr></tbody>
+            </table>
+        </div>
+
+        <h2 class="section-title">📄 Top Articles by KG Relevance</h2>
+        
+        <div class="article-card">
+            <div class="article-header">
+                <span class="article-score">42.0</span>
+                <span class="article-pmid">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/31831255" target="_blank">
+                        PMID:31831255
+                    </a>
+                    · 2020 · Journal of autoimmunity
+                </span>
+            </div>
+            <h4>Sjogren's syndrome: Old and new therapeutic targets.</h4>
+            <p class="article-abstract">Sjogren's syndrome (SS) is a prototype autoimmune disease characterized by oral and ocular mucosal dryness following chronic inflammation of salivary and lachrymal glands, respectively. Profound B cell hyperactivity along with systemic manifestations including fatigue, musculoskeletal complaints, features related to hepatic, pulmonary, renal and nervous system involvement, as well as lymphoma deve...</p>
+            <div class="article-entities">
+                <span class="entity-tag gene">🧬 B Lymphoid Tyrosine Kinas, Integrin Subunit Alpha M , B Cell Scaffold Protein w, Protein Tyrosine Phosphat</span>
+                <span class="entity-tag drug">💊 Belimumab (Benlysta), Rituximab (Rituxan), Iscalimab (CFZ533 / anti-CD40)</span>
+            </div>
+        </div>
+        <div class="article-card">
+            <div class="article-header">
+                <span class="article-score">39.5</span>
+                <span class="article-pmid">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/38777375" target="_blank">
+                        PMID:38777375
+                    </a>
+                    · 2024 · Annals of the rheumatic diseases
+                </span>
+            </div>
+            <h4>Management of systemic lupus erythematosus: a systematic literature review informing the 2023 update of the EULAR recommendations.</h4>
+            <p class="article-abstract">OBJECTIVES: To analyse the new evidence (2018-2022) for the management of systemic lupus erythematosus (SLE) to inform the 2023 update of the European League Against Rheumatism (EULAR) recommendations. METHODS: Systematic literature reviews were performed in the Medline and the Cochrane Library databases capturing publications from 1 January 2018 through 31 December 2022, according to the EULAR st...</p>
+            <div class="article-entities">
+                <span class="entity-tag gene">🧬 B Lymphoid Tyrosine Kinas, Integrin Subunit Alpha M , B Cell Scaffold Protein w, Protein Tyrosine Phosphat</span>
+                <span class="entity-tag drug">💊 Belimumab (Benlysta), Anifrolumab (Saphnelo), Voclosporin (Lupkynis)</span>
+            </div>
+        </div>
+        <div class="article-card">
+            <div class="article-header">
+                <span class="article-score">39.0</span>
+                <span class="article-pmid">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/36252553" target="_blank">
+                        PMID:36252553
+                    </a>
+                    · 2022 · Molecular cancer therapeutics
+                </span>
+            </div>
+            <h4>JAK: Not Just Another Kinase.</h4>
+            <p class="article-abstract">The JAK/STAT axis is implicated in cancer, inflammation, and immunity. Numerous cytokines/growth factors affect JAK/STAT signaling. JAKs (JAK1, JAK2, JAK3, and TYK2) noncovalently associate with cytokine receptors, mediate receptor tyrosine phosphorylation, and recruit &gt;/=1 STAT proteins (STAT1, STAT2, STAT3, STAT4, STAT5a, STAT5b, and STAT6). Tyrosine-phosphorylated STATs dimerize and are then tr...</p>
+            <div class="article-entities">
+                <span class="entity-tag gene">🧬 Interferon Regulatory Fac, Signal Transducer and Act, B Lymphoid Tyrosine Kinas, Integrin Subunit Alpha M </span>
+                
+            </div>
+        </div>
+        <div class="article-card">
+            <div class="article-header">
+                <span class="article-score">38.5</span>
+                <span class="article-pmid">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/36030136" target="_blank">
+                        PMID:36030136
+                    </a>
+                    · 2022 · Journal of autoimmunity
+                </span>
+            </div>
+            <h4>Systemic lupus erythematosus-complicating immune thrombocytopenia: From pathogenesis to treatment.</h4>
+            <p class="article-abstract">Immune thrombocytopenia (ITP) is a common hematological manifestation of systemic lupus erythematosus (SLE). The heterogeneity of its clinical characteristics and therapeutic responses reflects a complex pathogenesis. A better understanding of its pathophysiological mechanisms and employing an optimal treatment regimen is therefore important to improve the response rate and prognosis, and avoid un...</p>
+            <div class="article-entities">
+                <span class="entity-tag gene">🧬 B Lymphoid Tyrosine Kinas, Integrin Subunit Alpha M , B Cell Scaffold Protein w, Protein Tyrosine Phosphat</span>
+                <span class="entity-tag drug">💊 Belimumab (Benlysta), Mycophenolate Mofetil (CellCep, Rituximab (Rituxan), Cyclosporine (Neoral / Sandimm</span>
+            </div>
+        </div>
+        <div class="article-card">
+            <div class="article-header">
+                <span class="article-score">38.0</span>
+                <span class="article-pmid">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/37827694" target="_blank">
+                        PMID:37827694
+                    </a>
+                    · 2024 · Annals of the rheumatic diseases
+                </span>
+            </div>
+            <h4>EULAR recommendations for the management of systemic lupus erythematosus: 2023 update.</h4>
+            <p class="article-abstract">OBJECTIVES: To update the EULAR recommendations for the management of systemic lupus erythematosus (SLE) based on emerging new evidence. METHODS: An international Task Force formed the questions for the systematic literature reviews (January 2018-December 2022), followed by formulation and finalisation of the statements after a series of meetings. A predefined voting process was applied to each ov...</p>
+            <div class="article-entities">
+                <span class="entity-tag gene">🧬 Calcineurin (PPP3CA / Pro</span>
+                <span class="entity-tag drug">💊 Belimumab (Benlysta), Anifrolumab (Saphnelo), Voclosporin (Lupkynis), Hydroxychloroquine (Plaquenil)</span>
+            </div>
+        </div>
+        <div class="article-card">
+            <div class="article-header">
+                <span class="article-score">38.0</span>
+                <span class="article-pmid">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/41961736" target="_blank">
+                        PMID:41961736
+                    </a>
+                    · 2026 · Kidney &amp; blood pressure research
+                </span>
+            </div>
+            <h4>New Anticomplement Drugs in Nephrology: Mechanism and Indication.</h4>
+            <p class="article-abstract">BACKGROUND: The complement system is a key component of innate immunity, critical for pathogen defense, inflammation, and immune regulation. Dysregulation or overactivation of complement pathways contributes to the pathogenesis of numerous kidney diseases, including atypical hemolytic uremic syndrome, C3 glomerulopathy, membranous nephropathy, systemic lupus erythematosus, antiphospholipid antibod...</p>
+            <div class="article-entities">
+                <span class="entity-tag gene">🧬 B Lymphoid Tyrosine Kinas, Integrin Subunit Alpha M , B Cell Scaffold Protein w, Protein Tyrosine Phosphat</span>
+                <span class="entity-tag drug">💊 Avacopan (Tavneos), Ravulizumab (Ultomiris)</span>
+            </div>
+        </div>
+        <div class="article-card">
+            <div class="article-header">
+                <span class="article-score">35.0</span>
+                <span class="article-pmid">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/40931063" target="_blank">
+                        PMID:40931063
+                    </a>
+                    · 2025 · Nature
+                </span>
+            </div>
+            <h4>Loss-of-function mutations in PLD4 lead to systemic lupus erythematosus.</h4>
+            <p class="article-abstract">Monogenic lupus offers valuable insights into the underlying mechanisms and therapeutic approaches for systemic lupus erythematosus (SLE)(1-3). Here we report on five patients with SLE carrying recessive mutations in phospholipase D family member 4 (PLD4). Deleterious variants in PLD4 resulted in impaired single-stranded nucleic acid exonuclease activity in in vitro and ex vivo assays. PLD4 loss-o...</p>
+            <div class="article-entities">
+                <span class="entity-tag gene">🧬 B Lymphoid Tyrosine Kinas, Integrin Subunit Alpha M , B Cell Scaffold Protein w, Protein Tyrosine Phosphat</span>
+                <span class="entity-tag drug">💊 Baricitinib (Olumiant)</span>
+            </div>
+        </div>
+        <div class="article-card">
+            <div class="article-header">
+                <span class="article-score">34.5</span>
+                <span class="article-pmid">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/38642912" target="_blank">
+                        PMID:38642912
+                    </a>
+                    · 2024 · Clinical and experimental immunology
+                </span>
+            </div>
+            <h4>Disrupting B and T-cell collaboration in autoimmune disease: T-cell engagers versus CAR T-cell therapy?</h4>
+            <p class="article-abstract">B and T cells collaborate to drive autoimmune disease (AID). Historically, B- and T-cell (B-T cell) co-interaction was targeted through different pathways such as alemtuzumab, abatacept, and dapirolizumab with variable impact on B-cell depletion (BCD), whereas the majority of patients with AID including rheumatoid arthritis, systemic lupus erythematosus, multiple sclerosis, and organ transplantati...</p>
+            <div class="article-entities">
+                <span class="entity-tag gene">🧬 B Lymphoid Tyrosine Kinas, Integrin Subunit Alpha M , B Cell Scaffold Protein w, Protein Tyrosine Phosphat</span>
+                <span class="entity-tag drug">💊 Rituximab (Rituxan)</span>
+            </div>
+        </div>
+        <div class="article-card">
+            <div class="article-header">
+                <span class="article-score">34.0</span>
+                <span class="article-pmid">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/33777941" target="_blank">
+                        PMID:33777941
+                    </a>
+                    · 2021 · Frontiers in cell and developmental biol
+                </span>
+            </div>
+            <h4>Comparative Analysis of BTK Inhibitors and Mechanisms Underlying Adverse Effects.</h4>
+            <p class="article-abstract">The cytoplasmic protein-tyrosine kinase BTK plays an essential role for differentiation and survival of B-lineage cells and, hence, represents a suitable drug target. The number of BTK inhibitors (BTKis) in the clinic has increased considerably and currently amounts to at least 22. First-in-class was ibrutinib, an irreversible binder forming a covalent bond to a cysteine in the catalytic region of...</p>
+            <div class="article-entities">
+                <span class="entity-tag gene">🧬 B Lymphoid Tyrosine Kinas, Integrin Subunit Alpha M , B Cell Scaffold Protein w, Protein Tyrosine Phosphat</span>
+                <span class="entity-tag drug">💊 Acalabrutinib (Calquence)</span>
+            </div>
+        </div>
+        <div class="article-card">
+            <div class="article-header">
+                <span class="article-score">34.0</span>
+                <span class="article-pmid">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/34826105" target="_blank">
+                        PMID:34826105
+                    </a>
+                    · 2022 · Drugs
+                </span>
+            </div>
+            <h4>Avacopan: First Approval.</h4>
+            <p class="article-abstract">Avacopan (TAVNEOS) is a complement 5a receptor (C5aR) antagonist developed by ChemoCentryx for the treatment of autoimmune diseases including anti-neutrophil cytoplasmic autoantibody (ANCA)-associated vasculitis. The therapeutic effects of avacopan are attributed to the inhibition of C5aR activity on neutrophils, however, the exact mechanism of therapeutic efficacy in patients with ANCA-associated...</p>
+            <div class="article-entities">
+                <span class="entity-tag gene">🧬 B Lymphoid Tyrosine Kinas, Integrin Subunit Alpha M , B Cell Scaffold Protein w, Protein Tyrosine Phosphat</span>
+                <span class="entity-tag drug">💊 Avacopan (Tavneos)</span>
+            </div>
+        </div>
+        <div class="article-card">
+            <div class="article-header">
+                <span class="article-score">33.0</span>
+                <span class="article-pmid">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/22374444" target="_blank">
+                        PMID:22374444
+                    </a>
+                    · 2012 · Nihon Rinsho Men'eki Gakkai kaishi = Jap
+                </span>
+            </div>
+            <h4>[Involvement of Syk in pathology of systemic autoimmune disease].</h4>
+            <p class="article-abstract">Biological products have proven its high efficacy on autoimmune disease such as rheumatoid arthritis (RA) and systemic lupus erythematosus (SLE). Meanwhile, small molecular drugs have attracted attention over the years because of its availability of oral administration and cost effectiveness. Spleen tyrosine kinase (Syk) is a 72 kDa protein tyrosine kinase widely expressed on cells that are involv...</p>
+            <div class="article-entities">
+                <span class="entity-tag gene">🧬 B Lymphoid Tyrosine Kinas, Integrin Subunit Alpha M , B Cell Scaffold Protein w, Protein Tyrosine Phosphat</span>
+                
+            </div>
+        </div>
+        <div class="article-card">
+            <div class="article-header">
+                <span class="article-score">32.5</span>
+                <span class="article-pmid">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/41111019" target="_blank">
+                        PMID:41111019
+                    </a>
+                    · 2026 · Annals of the rheumatic diseases
+                </span>
+            </div>
+            <h4>Blocking the neonatal Fc receptor as a novel approach to prevent cardiac neonatal lupus: a proof-of-concept study.</h4>
+            <p class="article-abstract">OBJECTIVES: Novel biologic agents targeting the neonatal Fc receptor (FcRn) offer a promising strategy to prevent cardiac neonatal lupus (cardiac-NL) in pregnant patients with high-titre anti-SSA/Ro52 kD or 60 kD autoantibodies via dual effects: reducing serum immunoglobin G (IgG) levels and inhibiting placental transfer. This study was initiated to assess the feasibility of FcRn blockade as proph...</p>
+            <div class="article-entities">
+                <span class="entity-tag gene">🧬 B Lymphoid Tyrosine Kinas, Integrin Subunit Alpha M , B Cell Scaffold Protein w, Protein Tyrosine Phosphat</span>
+                <span class="entity-tag drug">💊 Hydroxychloroquine (Plaquenil), Rozanolixizumab (Rystiggo)</span>
+            </div>
+        </div>
+        <div class="article-card">
+            <div class="article-header">
+                <span class="article-score">31.0</span>
+                <span class="article-pmid">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/34423919" target="_blank">
+                        PMID:34423919
+                    </a>
+                    · 2021 · Arthritis &amp; rheumatology (Hoboken, N.J.)
+                </span>
+            </div>
+            <h4>The Interleukin-1 Receptor-Associated Kinase 4 Inhibitor PF-06650833 Blocks Inflammation in Preclinical Models of Rheumatic Disease and in Humans Enrolled in a Randomized Clinical Trial.</h4>
+            <p class="article-abstract">OBJECTIVE: To investigate the role of PF-06650833, a highly potent and selective small-molecule inhibitor of interleukin-1-associated kinase 4 (IRAK4), in autoimmune pathophysiology in vitro, in vivo, and in the clinical setting. METHODS: Rheumatoid arthritis (RA) inflammatory pathophysiology was modeled in vitro through 1) stimulation of primary human macrophages with anti-citrullinated protein a...</p>
+            <div class="article-entities">
+                <span class="entity-tag gene">🧬 B Lymphoid Tyrosine Kinas, Integrin Subunit Alpha M , B Cell Scaffold Protein w, Protein Tyrosine Phosphat</span>
+                
+            </div>
+        </div>
+        <div class="article-card">
+            <div class="article-header">
+                <span class="article-score">30.5</span>
+                <span class="article-pmid">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/41112287" target="_blank">
+                        PMID:41112287
+                    </a>
+                    · 2025 · Frontiers in immunology
+                </span>
+            </div>
+            <h4>From promise to practice: evaluating the clinical impact of FcRn inhibition in IgG-mediated autoimmune rheumatic diseases.</h4>
+            <p class="article-abstract">The neonatal Fragment Crystallizable receptor (FcRn) plays a central role in maintaining immunoglobulin (Ig) G homeostasis by protecting IgG from lysosomal degradation and regulating its transcytosis. In recent years, pharmacological inhibition of FcRn has emerged as a promising therapeutic strategy for IgG-mediated aumhctoimmune diseases, including systemic lupus erythematosus, rheumatoid arthrit...</p>
+            <div class="article-entities">
+                <span class="entity-tag gene">🧬 B Lymphoid Tyrosine Kinas, Integrin Subunit Alpha M , B Cell Scaffold Protein w, Protein Tyrosine Phosphat</span>
+                <span class="entity-tag drug">💊 Rozanolixizumab (Rystiggo)</span>
+            </div>
+        </div>
+        <div class="article-card">
+            <div class="article-header">
+                <span class="article-score">29.0</span>
+                <span class="article-pmid">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/38798163" target="_blank">
+                        PMID:38798163
+                    </a>
+                    · 2024 · European journal of immunology
+                </span>
+            </div>
+            <h4>Blockade of OX40/OX40L signaling using anti-OX40L alleviates murine lupus nephritis.</h4>
+            <p class="article-abstract">Genetic variants of the OX40 ligand (OX40L) locus are associated with the risk of systemic lupus erythematosus (SLE), it is unclear how the OX40L blockade delays the lupus phenotype. Therefore, we examined the effects of an anti-OX40L antibody in MRL/Lpr mice. Next, we investigated the effect of anti-OX40L on immunosuppression in keyhole limpet hemocyanin-immunized C57BL/6J mice. In vitro treatmen...</p>
+            <div class="article-entities">
+                <span class="entity-tag gene">🧬 B Lymphoid Tyrosine Kinas, Integrin Subunit Alpha M , B Cell Scaffold Protein w, Protein Tyrosine Phosphat</span>
+                
+            </div>
+        </div>
+        <div class="article-card">
+            <div class="article-header">
+                <span class="article-score">28.5</span>
+                <span class="article-pmid">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/20615965" target="_blank">
+                        PMID:20615965
+                    </a>
+                    · 2010 · Proceedings of the National Academy of S
+                </span>
+            </div>
+            <h4>The Bruton tyrosine kinase inhibitor PCI-32765 blocks B-cell activation and is efficacious in models of autoimmune disease and B-cell malignancy.</h4>
+            <p class="article-abstract">Activation of the B-cell antigen receptor (BCR) signaling pathway contributes to the initiation and maintenance of B-cell malignancies and autoimmune diseases. The Bruton tyrosine kinase (Btk) is specifically required for BCR signaling as demonstrated by human and mouse mutations that disrupt Btk function and prevent B-cell maturation at steps that require a functional BCR pathway. Herein we descr...</p>
+            <div class="article-entities">
+                <span class="entity-tag gene">🧬 B Lymphoid Tyrosine Kinas, Integrin Subunit Alpha M , B Cell Scaffold Protein w, Protein Tyrosine Phosphat</span>
+                
+            </div>
+        </div>
+        <div class="article-card">
+            <div class="article-header">
+                <span class="article-score">28.5</span>
+                <span class="article-pmid">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/42257855" target="_blank">
+                        PMID:42257855
+                    </a>
+                    · 2026 · Inflammation research : official journal
+                </span>
+            </div>
+            <h4>Targeting FcRn for immunomodulation: a promising therapy in autoimmune inflammatory rheumatic diseases.</h4>
+            <p class="article-abstract">BACKGROUND: Autoimmune inflammatory rheumatic diseases (AIIRD) are systemic disorders characterized by breakdown of immune tolerance and production of pathogenic IgG autoantibodies, leading to chronic inflammation and tissue damage. The rapid and selective lowering of pathogenic IgG therefore has therapeutic appeal. The neonatal Fc receptor (FcRn) is a key regulator of IgG homeostasis, which media...</p>
+            <div class="article-entities">
+                <span class="entity-tag gene">🧬 B Lymphoid Tyrosine Kinas, Integrin Subunit Alpha M , B Cell Scaffold Protein w, Protein Tyrosine Phosphat</span>
+                
+            </div>
+        </div>
+        <div class="article-card">
+            <div class="article-header">
+                <span class="article-score">28.0</span>
+                <span class="article-pmid">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/39169436" target="_blank">
+                        PMID:39169436
+                    </a>
+                    · 2024 · Advances in rheumatology (London, Englan
+                </span>
+            </div>
+            <h4>Targeting Bruton's tyrosine kinase (BTK) as a signaling pathway in immune-mediated diseases: from molecular mechanisms to leading treatments.</h4>
+            <p class="article-abstract">Bruton's tyrosine kinase (BTK), a nonreceptor tyrosine kinase, plays a remarkable role in the transmission and amplification of extracellular signals to intracellular signaling pathways. Various types of cells use the BTK pathway to communicate, including hematopoietic cells particularly B cells and T cells. The BTK pathway plays a role in controlling the proliferation, survival, and functions of ...</p>
+            <div class="article-entities">
+                <span class="entity-tag gene">🧬 B Lymphoid Tyrosine Kinas, Integrin Subunit Alpha M , B Cell Scaffold Protein w, Protein Tyrosine Phosphat</span>
+                
+            </div>
+        </div>
+        <div class="article-card">
+            <div class="article-header">
+                <span class="article-score">26.5</span>
+                <span class="article-pmid">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/37140884" target="_blank">
+                        PMID:37140884
+                    </a>
+                    · 2023 · American journal of clinical dermatology
+                </span>
+            </div>
+            <h4>Cutaneous Lupus Erythematosus: An Update on Pathogenesis and Future Therapeutic Directions.</h4>
+            <p class="article-abstract">Lupus erythematosus comprises a spectrum of autoimmune diseases that may affect various organs (systemic lupus erythematosus [SLE]) or the skin only (cutaneous lupus erythematosus [CLE]). Typical combinations of clinical, histological and serological findings define clinical subtypes of CLE, yet there is high interindividual variation. Skin lesions arise in the course of triggers such as ultraviol...</p>
+            <div class="article-entities">
+                <span class="entity-tag gene">🧬 B Lymphoid Tyrosine Kinas, Janus Kinase 1, Tyrosine Kinase 2, Bruton Tyrosine Kinase</span>
+                <span class="entity-tag drug">💊 Belimumab (Benlysta), Anifrolumab (Saphnelo), Prednisone (Corticosteroids)</span>
+            </div>
+        </div>
+        <div class="article-card">
+            <div class="article-header">
+                <span class="article-score">26.0</span>
+                <span class="article-pmid">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/39749335" target="_blank">
+                        PMID:39749335
+                    </a>
+                    · 2024 · Frontiers in immunology
+                </span>
+            </div>
+            <h4>CAR T-cell therapy for systemic lupus erythematosus: current status and future perspectives.</h4>
+            <p class="article-abstract">Systemic lupus erythematosus (SLE) and lupus nephritis (LN) are debilitating autoimmune disorders characterized by pathological autoantibodies production and immune dysfunction, causing chronic inflammation and multi-organ damage. Despite current treatments with antimalarial drugs, glucocorticoids, immunosuppressants, and monoclonal antibodies, a definitive cure remains elusive, highlighting an ur...</p>
+            <div class="article-entities">
+                <span class="entity-tag gene">🧬 B Lymphoid Tyrosine Kinas, Integrin Subunit Alpha M , B Cell Scaffold Protein w, Protein Tyrosine Phosphat</span>
+                
+            </div>
+        </div>
+
+        <h2 class="section-title">🔬 Novel Entities Discovered (spaCy NER: regex-based (generic spaCy loaded))</h2>
+        
+            <div class="novel-category">
+                <h4>⚗️ Chemicals (33 found)</h4>
+                <div class="novel-tags"><span class="entity-tag novel">Abatacept</span><span class="entity-tag novel">Biogen</span><span class="entity-tag novel">Btk inhibitor</span><span class="entity-tag novel">Chloroquine</span><span class="entity-tag novel">Dapirolizumab</span><span class="entity-tag novel">Daratumumab</span><span class="entity-tag novel">Database</span><span class="entity-tag novel">Deucravacitinib</span><span class="entity-tag novel">Disease</span><span class="entity-tag novel">Disodium</span><span class="entity-tag novel">Eculizumab</span><span class="entity-tag novel">Embase</span><span class="entity-tag novel">Fenebrutinib</span><span class="entity-tag novel">Fostamatinib</span><span class="entity-tag novel">Fumarate</span><span class="entity-tag novel">Granulocyte inhibitor</span><span class="entity-tag novel">Ianalumab</span><span class="entity-tag novel">Jakinib</span><span class="entity-tag novel">Kinase</span><span class="entity-tag novel">Medline</span><span class="entity-tag novel">Methotrexate</span><span class="entity-tag novel">Nipocalimab</span><span class="entity-tag novel">Online</span><span class="entity-tag novel">Phase</span><span class="entity-tag novel">Remibrutinib</span><span class="entity-tag novel">Secukinumab</span><span class="entity-tag novel">Slone</span><span class="entity-tag novel">State</span><span class="entity-tag novel">Syk inhibitor</span><span class="entity-tag novel">Telitacicept</span></div>
+            </div>
+            <div class="novel-category">
+                <h4>🦠 Diseases (163 found)</h4>
+                <div class="novel-tags"><span class="entity-tag novel">Antiphospholipid syndrome</span><span class="entity-tag novel">Autoimmune diseases</span><span class="entity-tag novel">Autoimmune inflammatory</span><span class="entity-tag novel">Barre syndrome</span><span class="entity-tag novel">Cutaneous disease</span><span class="entity-tag novel">Diagnosis</span><span class="entity-tag novel">Erythematosus Disease</span><span class="entity-tag novel">Evans syndrome</span><span class="entity-tag novel">Goutieres syndrome</span><span class="entity-tag novel">Kawasaki disease</span><span class="entity-tag novel">Low Disease</span><span class="entity-tag novel">Lupus</span><span class="entity-tag novel">Lupus Nephritis</span><span class="entity-tag novel">Refractory AID</span><span class="entity-tag novel">Rheumatic Disease</span><span class="entity-tag novel">SS disease</span><span class="entity-tag novel">Severe manifestations</span><span class="entity-tag novel">Sjogren syndrome</span><span class="entity-tag novel">Systemic Lupus</span><span class="entity-tag novel">Systemic lupus</span><span class="entity-tag novel">The disease</span><span class="entity-tag novel">achieve disease</span><span class="entity-tag novel">activation syndrome</span><span class="entity-tag novel">active disease</span><span class="entity-tag novel">agglutinin disease</span><span class="entity-tag novel">and Disease</span><span class="entity-tag novel">antibody syndrome</span><span class="entity-tag novel">antiphospholipid syndrome</span><span class="entity-tag novel">arthritis</span><span class="entity-tag novel">autoimmune and</span></div>
+            </div>
+            <div class="novel-category">
+                <h4>🧬 Genes (204 found)</h4>
+                <div class="novel-tags"><span class="entity-tag novel">AAV</span><span class="entity-tag novel">AGA</span><span class="entity-tag novel">AID</span><span class="entity-tag novel">AIDS</span><span class="entity-tag novel">AIIRD</span><span class="entity-tag novel">ALLEGORY</span><span class="entity-tag novel">ANALYSIS</span><span class="entity-tag novel">ANCA</span><span class="entity-tag novel">AND</span><span class="entity-tag novel">APS</span><span class="entity-tag novel">AQP4</span><span class="entity-tag novel">AREAS</span><span class="entity-tag novel">AURORA</span><span class="entity-tag novel">AUTHORS</span><span class="entity-tag novel">BACKGROUND</span><span class="entity-tag novel">BCD</span><span class="entity-tag novel">BCMA</span><span class="entity-tag novel">BCR</span><span class="entity-tag novel">BICLA</span><span class="entity-tag novel">BILAG</span><span class="entity-tag novel">BLIMP1</span><span class="entity-tag novel">BLK</span><span class="entity-tag novel">BMS</span><span class="entity-tag novel">BTK</span><span class="entity-tag novel">CAPS</span><span class="entity-tag novel">CAR</span><span class="entity-tag novel">CD19</span><span class="entity-tag novel">CD252</span><span class="entity-tag novel">CD27</span><span class="entity-tag novel">CD38</span></div>
+            </div>
+
+        <footer>
+            <p>Lupus Literature Mining Engine · PubMed search via BioPython Entrez</p>
+            <p>Entity matching against the <a href="../knowledge_graph/web/index.html">Lupus Knowledge Graph</a></p>
+            <p style="margin-top:8px;color:#6b7280;">
+                Disclaimer: This is a computational research tool. Literature matches require manual verification.
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

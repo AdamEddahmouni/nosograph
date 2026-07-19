@@ -1,0 +1,1007 @@
+{
+  "elements": [
+    {
+      "data": {
+        "id": "Lupus (SLE)",
+        "label": "Systemic Lupus Erythematosus",
+        "type": "disease",
+        "description": "Chronic autoimmune disease characterized by autoantibody production, immune complex deposition, and multi-organ inflammation affecting ~5 million people worldwide.",
+        "prevalence": "~5 million worldwide",
+        "female_to_male_ratio": "9:1",
+        "peak_onset": "15-45 years"
+      }
+    },
+    {
+      "data": {
+        "id": "HLA-DRB1",
+        "label": "HLA Class II DR Beta 1",
+        "type": "gene",
+        "description": "Antigen presentation to CD4+ T cells",
+        "chromosome": "6p21.32",
+        "lupus_evidence": "Strongest genetic association with SLE. DRB1*03:01 and *15:01 alleles confer 2-3x increased risk.",
+        "odds_ratio": 2.5,
+        "category": "MHC / Antigen Presentation"
+      }
+    },
+    {
+      "data": {
+        "id": "IRF5",
+        "label": "Interferon Regulatory Factor 5",
+        "type": "gene",
+        "description": "Transcription factor driving type I IFN and proinflammatory cytokine expression",
+        "chromosome": "7q32.1",
+        "lupus_evidence": "Key regulator of the type I interferon signature. Risk haplotype associated with high serum IFN-\u03b1 activity.",
+        "odds_ratio": 1.8,
+        "category": "Type I Interferon Pathway"
+      }
+    },
+    {
+      "data": {
+        "id": "STAT4",
+        "label": "Signal Transducer and Activator of Transcription 4",
+        "type": "gene",
+        "description": "Mediates IL-12 and type I IFN signaling; promotes Th1 and Th17 differentiation",
+        "chromosome": "2q32.2",
+        "lupus_evidence": "Risk variant rs7574865 associated with increased STAT4 expression and SLE susceptibility.",
+        "odds_ratio": 1.5,
+        "category": "JAK-STAT Signaling"
+      }
+    },
+    {
+      "data": {
+        "id": "BLK",
+        "label": "B Lymphoid Tyrosine Kinase",
+        "type": "gene",
+        "description": "Src family kinase involved in B cell receptor signaling",
+        "chromosome": "8p23.1",
+        "lupus_evidence": "Reduced BLK expression in B cells impairs tolerance checkpoints and promotes autoantibody production.",
+        "odds_ratio": 1.4,
+        "category": "B Cell Signaling"
+      }
+    },
+    {
+      "data": {
+        "id": "TNFAIP3",
+        "label": "TNF Alpha Induced Protein 3 (A20)",
+        "type": "gene",
+        "description": "Ubiquitin-editing enzyme that negatively regulates NF-\u03baB signaling",
+        "chromosome": "6q23.3",
+        "lupus_evidence": "Loss-of-function variants reduce negative regulation of NF-\u03baB, promoting chronic inflammation.",
+        "odds_ratio": 1.7,
+        "category": "NF-\u03baB Pathway"
+      }
+    },
+    {
+      "data": {
+        "id": "ITGAM",
+        "label": "Integrin Subunit Alpha M (CD11b)",
+        "type": "gene",
+        "description": "Complement receptor 3 (CR3) component; mediates phagocytosis and immune complex clearance",
+        "chromosome": "16p11.2",
+        "lupus_evidence": "Missense variants (R77H) impair phagocytosis of apoptotic cells and immune complexes.",
+        "odds_ratio": 1.6,
+        "category": "Complement / Phagocytosis"
+      }
+    },
+    {
+      "data": {
+        "id": "BANK1",
+        "label": "B Cell Scaffold Protein with Ankyrin Repeats 1",
+        "type": "gene",
+        "description": "Scaffold protein modulating B cell receptor-induced calcium mobilization",
+        "chromosome": "4q24",
+        "lupus_evidence": "Associated with SLE through variants affecting B cell hyperresponsiveness.",
+        "odds_ratio": 1.3,
+        "category": "B Cell Signaling"
+      }
+    },
+    {
+      "data": {
+        "id": "PTPN22",
+        "label": "Protein Tyrosine Phosphatase Non-Receptor Type 22",
+        "type": "gene",
+        "description": "Lymphoid tyrosine phosphatase (LYP) that negatively regulates T cell receptor signaling",
+        "chromosome": "1p13.2",
+        "lupus_evidence": "R620W gain-of-function variant alters T cell selection thresholds and promotes autoimmunity.",
+        "odds_ratio": 1.4,
+        "category": "T Cell Signaling"
+      }
+    },
+    {
+      "data": {
+        "id": "TNFSF4",
+        "label": "TNF Superfamily Member 4 (OX40 Ligand)",
+        "type": "gene",
+        "description": "Costimulatory molecule enhancing T cell activation and survival",
+        "chromosome": "1q25.1",
+        "lupus_evidence": "Upregulated in SLE; promotes T follicular helper responses and autoantibody production.",
+        "odds_ratio": 1.3,
+        "category": "T Cell Costimulation"
+      }
+    },
+    {
+      "data": {
+        "id": "FCGR2A",
+        "label": "Fc Gamma Receptor IIa (CD32a)",
+        "type": "gene",
+        "description": "Low-affinity receptor for IgG immune complexes on phagocytes",
+        "chromosome": "1q23.3",
+        "lupus_evidence": "H131R polymorphism alters IgG binding affinity and immune complex clearance, increasing lupus nephritis risk.",
+        "odds_ratio": 1.5,
+        "category": "Immune Complex Clearance"
+      }
+    },
+    {
+      "data": {
+        "id": "FCGR3A",
+        "label": "Fc Gamma Receptor IIIa (CD16a)",
+        "type": "gene",
+        "description": "Low-affinity receptor for IgG; mediates ADCC and immune complex clearance",
+        "chromosome": "1q23.3",
+        "lupus_evidence": "V158F polymorphism affects IgG binding and is associated with SLE susceptibility.",
+        "odds_ratio": 1.3,
+        "category": "Immune Complex Clearance"
+      }
+    },
+    {
+      "data": {
+        "id": "TLR7",
+        "label": "Toll-Like Receptor 7",
+        "type": "gene",
+        "description": "Endosomal sensor of single-stranded RNA; drives type I IFN production in plasmacytoid DCs",
+        "chromosome": "Xp22.2",
+        "lupus_evidence": "Gene duplication and gain-of-function mutations cause lupus in mice and humans. Key driver of the IFN signature.",
+        "odds_ratio": 2.0,
+        "category": "Innate Immune Sensing"
+      }
+    },
+    {
+      "data": {
+        "id": "TLR9",
+        "label": "Toll-Like Receptor 9",
+        "type": "gene",
+        "description": "Endosomal sensor of unmethylated CpG DNA; activates B cells and pDCs",
+        "chromosome": "3p21.2",
+        "lupus_evidence": "Recognizes DNA-containing immune complexes; contributes to anti-dsDNA antibody production.",
+        "odds_ratio": 1.4,
+        "category": "Innate Immune Sensing"
+      }
+    },
+    {
+      "data": {
+        "id": "BAFF",
+        "label": "B Cell Activating Factor (TNFSF13B / BLyS)",
+        "type": "gene",
+        "description": "Critical B cell survival and maturation factor",
+        "chromosome": "13q33.3",
+        "lupus_evidence": "Elevated serum BAFF levels in SLE patients. Direct therapeutic target of belimumab. Overexpression drives autoantibody production.",
+        "odds_ratio": null,
+        "category": "B Cell Survival"
+      }
+    },
+    {
+      "data": {
+        "id": "IFNAR1",
+        "label": "Interferon Alpha and Beta Receptor Subunit 1",
+        "type": "gene",
+        "description": "Receptor subunit for type I interferons (IFN-\u03b1/\u03b2)",
+        "chromosome": "21q22.11",
+        "lupus_evidence": "Key mediator of the interferon signature. Therapeutic target of anifrolumab.",
+        "odds_ratio": null,
+        "category": "Type I Interferon Pathway"
+      }
+    },
+    {
+      "data": {
+        "id": "JAK1",
+        "label": "Janus Kinase 1",
+        "type": "gene",
+        "description": "Tyrosine kinase mediating signaling for type I/II cytokine receptors",
+        "chromosome": "1p31.3",
+        "lupus_evidence": "Required for IFN-\u03b1/\u03b2, IL-6, and other proinflammatory cytokine signaling. Target of baricitinib and tofacitinib in SLE trials.",
+        "odds_ratio": null,
+        "category": "JAK-STAT Signaling"
+      }
+    },
+    {
+      "data": {
+        "id": "TYK2",
+        "label": "Tyrosine Kinase 2",
+        "type": "gene",
+        "description": "Janus kinase mediating type I IFN and IL-12/IL-23 signaling",
+        "chromosome": "19p13.2",
+        "lupus_evidence": "Protective loss-of-function variants associated with reduced SLE risk. Selective TYK2 inhibitors in development.",
+        "odds_ratio": 0.6,
+        "category": "JAK-STAT Signaling"
+      }
+    },
+    {
+      "data": {
+        "id": "BTK",
+        "label": "Bruton Tyrosine Kinase",
+        "type": "gene",
+        "description": "Essential kinase for B cell receptor and Fc receptor signaling",
+        "chromosome": "Xq22.1",
+        "lupus_evidence": "BTK inhibition reduces B cell activation, autoantibody production, and kidney damage in lupus models.",
+        "odds_ratio": null,
+        "category": "B Cell Signaling"
+      }
+    },
+    {
+      "data": {
+        "id": "CD20",
+        "label": "CD20 (MS4A1 / B-lymphocyte antigen CD20)",
+        "type": "gene",
+        "description": "B cell surface protein involved in B cell activation, proliferation, and calcium signaling",
+        "chromosome": "11q12.2",
+        "lupus_evidence": "Target of B cell depletion therapies (rituximab, obinutuzumab) used clinically in refractory SLE.",
+        "odds_ratio": null,
+        "category": "B Cell Signaling"
+      }
+    },
+    {
+      "data": {
+        "id": "IMPDH",
+        "label": "IMPDH (Inosine Monophosphate Dehydrogenase)",
+        "type": "gene",
+        "description": "Rate-limiting enzyme in de novo guanine nucleotide synthesis; essential for lymphocyte proliferation",
+        "chromosome": "7q32.1 / 3p21.31",
+        "lupus_evidence": "Target of mycophenolate mofetil, a first-line therapy for lupus nephritis.",
+        "odds_ratio": null,
+        "category": "Nucleotide Metabolism"
+      }
+    },
+    {
+      "data": {
+        "id": "Calcineurin",
+        "label": "Calcineurin (PPP3CA / Protein Phosphatase 3)",
+        "type": "gene",
+        "description": "Calcium/calmodulin-dependent serine/threonine phosphatase; dephosphorylates NFAT enabling T cell activation",
+        "chromosome": "4q24",
+        "lupus_evidence": "Target of voclosporin and tacrolimus for lupus nephritis; also stabilizes podocyte actin cytoskeleton in kidney.",
+        "odds_ratio": null,
+        "category": "T Cell Signaling"
+      }
+    },
+    {
+      "data": {
+        "id": "Glucocorticoid Receptor",
+        "label": "Glucocorticoid Receptor (NR3C1)",
+        "type": "gene",
+        "description": "Nuclear receptor that mediates anti-inflammatory effects via transrepression of NF-\u03baB and AP-1, and induction of anti-inflammatory genes",
+        "chromosome": "5q31.3",
+        "lupus_evidence": "Target of prednisone and all corticosteroids, the mainstay of acute SLE management. Goal is to minimize exposure due to toxicity.",
+        "odds_ratio": null,
+        "category": "Nuclear Receptor Signaling"
+      }
+    },
+    {
+      "data": {
+        "id": "belimumab",
+        "label": "Belimumab (Benlysta)",
+        "type": "drug",
+        "description": "Binds and neutralizes soluble BAFF, reducing B cell survival and autoantibody production",
+        "drug_type": "Monoclonal Antibody",
+        "target": "BAFF (BLyS)",
+        "approval": "FDA approved 2011 (SLE), 2020 (lupus nephritis)",
+        "route": "IV infusion or subcutaneous injection",
+        "efficacy": "SRI-4 response rate ~43-58% at 52 weeks",
+        "category": "Biologic - B Cell Modulation"
+      }
+    },
+    {
+      "data": {
+        "id": "anifrolumab",
+        "label": "Anifrolumab (Saphnelo)",
+        "type": "drug",
+        "description": "Blocks type I interferon receptor, suppressing the IFN gene signature",
+        "drug_type": "Monoclonal Antibody",
+        "target": "IFNAR1",
+        "approval": "FDA approved 2021 (moderate to severe SLE)",
+        "route": "IV infusion every 4 weeks",
+        "efficacy": "BICLA response rate ~47% vs 30% placebo at 52 weeks (TULIP-2)",
+        "category": "Biologic - IFN Pathway"
+      }
+    },
+    {
+      "data": {
+        "id": "voclosporin",
+        "label": "Voclosporin (Lupkynis)",
+        "type": "drug",
+        "description": "Calcineurin inhibitor; blocks T cell activation and podocyte stabilization in the kidney",
+        "drug_type": "Small Molecule",
+        "target": "Calcineurin",
+        "approval": "FDA approved 2021 (lupus nephritis)",
+        "route": "Oral, twice daily",
+        "efficacy": "Complete renal response ~41% vs 23% placebo at 52 weeks (AURORA-1)",
+        "category": "Immunosuppressant - Calcineurin Inhibitor"
+      }
+    },
+    {
+      "data": {
+        "id": "hydroxychloroquine",
+        "label": "Hydroxychloroquine (Plaquenil)",
+        "type": "drug",
+        "description": "Inhibits endosomal acidification, blocking TLR7/9 activation and reducing type I IFN production",
+        "drug_type": "Small Molecule",
+        "target": "TLR7/TLR9 endosomal signaling",
+        "approval": "Standard of care for all SLE patients",
+        "route": "Oral, daily",
+        "efficacy": "Reduces flares by ~50%, improves survival, reduces thrombosis and organ damage",
+        "category": "Immunomodulator - Antimalarial"
+      }
+    },
+    {
+      "data": {
+        "id": "mycophenolate",
+        "label": "Mycophenolate Mofetil (CellCept)",
+        "type": "drug",
+        "description": "Inhibits de novo purine synthesis, selectively suppressing lymphocyte proliferation",
+        "drug_type": "Small Molecule",
+        "target": "IMPDH (Inosine Monophosphate Dehydrogenase)",
+        "approval": "Widely used off-label for lupus nephritis; standard of care",
+        "route": "Oral, twice daily",
+        "efficacy": "Comparable to cyclophosphamide for lupus nephritis induction (ALMS trial)",
+        "category": "Immunosuppressant - Antimetabolite"
+      }
+    },
+    {
+      "data": {
+        "id": "cyclophosphamide",
+        "label": "Cyclophosphamide (Cytoxan)",
+        "type": "drug",
+        "description": "Alkylates DNA, causing cell death in rapidly dividing cells including lymphocytes",
+        "drug_type": "Small Molecule",
+        "target": "DNA crosslinking (alkylating agent)",
+        "approval": "Reserved for severe organ-threatening lupus (nephritis, CNS, pulmonary)",
+        "route": "IV pulse or oral",
+        "efficacy": "Gold standard for severe lupus nephritis; limited by toxicity",
+        "category": "Immunosuppressant - Alkylating Agent"
+      }
+    },
+    {
+      "data": {
+        "id": "rituximab",
+        "label": "Rituximab (Rituxan)",
+        "type": "drug",
+        "description": "Depletes CD20+ B cells via ADCC, complement-dependent cytotoxicity, and apoptosis",
+        "drug_type": "Monoclonal Antibody",
+        "target": "CD20",
+        "approval": "Off-label for refractory SLE (failed RCTs LUNAR and EXPLORER but widely used clinically)",
+        "route": "IV infusion",
+        "efficacy": "Used in refractory disease; registry data supports efficacy despite negative RCTs",
+        "category": "Biologic - B Cell Depletion"
+      }
+    },
+    {
+      "data": {
+        "id": "prednisone",
+        "label": "Prednisone (Corticosteroids)",
+        "type": "drug",
+        "description": "Broad immunosuppression via NF-\u03baB inhibition, reduced cytokine production, and induction of apoptosis in immune cells",
+        "drug_type": "Small Molecule",
+        "target": "Glucocorticoid Receptor (NR3C1)",
+        "approval": "Mainstay of acute SLE management",
+        "route": "Oral, daily",
+        "efficacy": "Rapid disease control but significant long-term toxicity; goal is \u22647.5mg/day maintenance",
+        "category": "Corticosteroid"
+      }
+    },
+    {
+      "data": {
+        "id": "tacrolimus",
+        "label": "Tacrolimus (Prograf)",
+        "type": "drug",
+        "description": "Calcineurin inhibitor; blocks T cell activation via NFAT inhibition",
+        "drug_type": "Small Molecule",
+        "target": "Calcineurin (FKBP12)",
+        "approval": "Off-label for lupus nephritis (especially in Asian populations)",
+        "route": "Oral, twice daily",
+        "efficacy": "Non-inferior to mycophenolate in some Asian lupus nephritis trials",
+        "category": "Immunosuppressant - Calcineurin Inhibitor"
+      }
+    },
+    {
+      "data": {
+        "id": "azathioprine",
+        "label": "Azathioprine (Imuran)",
+        "type": "drug",
+        "description": "Inhibits purine synthesis, reducing lymphocyte proliferation",
+        "drug_type": "Small Molecule",
+        "target": "Purine synthesis (prodrug of 6-mercaptopurine)",
+        "approval": "Maintenance therapy for lupus nephritis; steroid-sparing agent",
+        "route": "Oral, daily",
+        "efficacy": "Effective for maintenance after induction; reduces relapse rates",
+        "category": "Immunosuppressant - Antimetabolite"
+      }
+    },
+    {
+      "data": {
+        "id": "baricitinib",
+        "label": "Baricitinib (Olumiant)",
+        "type": "drug",
+        "description": "JAK1/2 inhibitor blocking type I IFN, IL-6, and other cytokine signaling",
+        "drug_type": "Small Molecule",
+        "target": "JAK1/JAK2",
+        "approval": "Phase 3 trials in SLE (SLE-BRAVE I & II); mixed results",
+        "route": "Oral, daily",
+        "efficacy": "Phase 2 positive; Phase 3 SLE-BRAVE-I met primary endpoint, SLE-BRAVE-II did not",
+        "category": "Targeted Synthetic - JAK Inhibitor"
+      }
+    },
+    {
+      "data": {
+        "id": "obinutuzumab",
+        "label": "Obinutuzumab (Gazyva)",
+        "type": "drug",
+        "description": "Type II anti-CD20 antibody with enhanced B cell depletion vs rituximab",
+        "drug_type": "Monoclonal Antibody",
+        "target": "CD20",
+        "approval": "Phase 3 in lupus nephritis (REGENCY trial, positive results 2024)",
+        "route": "IV infusion",
+        "efficacy": "Superior to placebo for lupus nephritis in REGENCY trial (presented ACR 2024)",
+        "category": "Biologic - B Cell Depletion (Next-Gen)"
+      }
+    },
+    {
+      "data": {
+        "id": "type1-ifn",
+        "label": "Type I Interferon Pathway",
+        "type": "pathway",
+        "description": "Central pathogenic pathway in SLE. TLR7/TLR9 activation by nucleic acid-containing immune complexes triggers plasmacytoid DCs to produce IFN-\u03b1, which signals through IFNAR1/IFNAR2 to activate JAK1/TYK2 \u2192 STAT1/STAT2 \u2192 IRF9 \u2192 ISG transcription."
+      }
+    },
+    {
+      "data": {
+        "id": "bcell-signaling",
+        "label": "B Cell Receptor Signaling & Survival",
+        "type": "pathway",
+        "description": "B cells are central to SLE pathogenesis. Autoreactive B cells escape tolerance checkpoints due to defective receptor editing and enhanced survival signals. BAFF/BLyS overexpression drives B cell survival. BCR signaling through BTK, BLK, and BANK1 promotes activation."
+      }
+    },
+    {
+      "data": {
+        "id": "jak-stat",
+        "label": "JAK-STAT Signaling",
+        "type": "pathway",
+        "description": "Multiple cytokines implicated in SLE signal through JAK-STAT pathways: type I IFNs (JAK1/TYK2 \u2192 STAT1/2), IL-6 (JAK1/JAK2 \u2192 STAT3), IL-12/IL-23 (JAK2/TYK2 \u2192 STAT4), IL-21 (JAK1/JAK3 \u2192 STAT3). STAT4 risk variants enhance IL-12/IFN-\u03b1 signaling."
+      }
+    },
+    {
+      "data": {
+        "id": "nfkb",
+        "label": "NF-\u03baB Inflammatory Pathway",
+        "type": "pathway",
+        "description": "NF-\u03baB is a master transcriptional regulator of inflammation. TNFAIP3 (A20) normally limits NF-\u03baB activation through deubiquitination. Loss-of-function TNFAIP3 variants in SLE result in unchecked NF-\u03baB activity, driving proinflammatory cytokine production."
+      }
+    },
+    {
+      "data": {
+        "id": "complement",
+        "label": "Complement System & Immune Complex Clearance",
+        "type": "pathway",
+        "description": "Defective clearance of apoptotic debris and immune complexes is a hallmark of SLE. Complement C1q deficiency is a strong monogenic cause of SLE. FCGR2A and FCGR3A variants impair IgG-mediated clearance. ITGAM (CD11b/CD18) mutations reduce phagocytosis."
+      }
+    },
+    {
+      "data": {
+        "id": "tcell-costim",
+        "label": "T Cell Costimulation & Follicular Help",
+        "type": "pathway",
+        "description": "T cells provide help to autoreactive B cells through costimulatory interactions (CD40L-CD40, OX40-OX40L, ICOS-ICOSL). TNFSF4 (OX40L) is upregulated in SLE. T follicular helper (Tfh) cells are expanded in SLE and correlate with autoantibody levels."
+      }
+    },
+    {
+      "data": {
+        "id": "tlr-sensing",
+        "label": "Endosomal TLR Sensing of Nucleic Acids",
+        "type": "pathway",
+        "description": "TLR7 (ssRNA) and TLR9 (CpG DNA) in endosomes recognize self-nucleic acids in immune complexes. This activates IRF5/IRF7-driven IFN-\u03b1 production in pDCs and drives B cell activation. TLR7 gene duplication causes human lupus; hydroxychloroquine blocks endosomal TLR activation."
+      }
+    },
+    {
+      "data": {
+        "id": "HLA-DRB1--ASSOCIATED_WITH--Lupus (SLE)",
+        "source": "HLA-DRB1",
+        "target": "Lupus (SLE)",
+        "type": "ASSOCIATED_WITH",
+        "description": "HLA-DRB1 is the strongest genetic risk factor for SLE, with specific alleles conferring 2-3x increased risk"
+      }
+    },
+    {
+      "data": {
+        "id": "IRF5--PARTICIPATES_IN--type1-ifn",
+        "source": "IRF5",
+        "target": "type1-ifn",
+        "type": "PARTICIPATES_IN",
+        "description": "IRF5 is a master transcription factor driving type I IFN production downstream of TLR7/TLR9"
+      }
+    },
+    {
+      "data": {
+        "id": "IRF5--PARTICIPATES_IN--tlr-sensing",
+        "source": "IRF5",
+        "target": "tlr-sensing",
+        "type": "PARTICIPATES_IN",
+        "description": "IRF5 is activated downstream of TLR7/TLR9-MyD88 signaling to drive IFN-\u03b1 production"
+      }
+    },
+    {
+      "data": {
+        "id": "IRF5--ASSOCIATED_WITH--Lupus (SLE)",
+        "source": "IRF5",
+        "target": "Lupus (SLE)",
+        "type": "ASSOCIATED_WITH",
+        "description": "IRF5 risk haplotypes are associated with high serum IFN-\u03b1 activity and increased SLE susceptibility"
+      }
+    },
+    {
+      "data": {
+        "id": "STAT4--PARTICIPATES_IN--jak-stat",
+        "source": "STAT4",
+        "target": "jak-stat",
+        "type": "PARTICIPATES_IN",
+        "description": "STAT4 mediates IL-12 and type I IFN-induced transcription, promoting Th1/Th17 differentiation"
+      }
+    },
+    {
+      "data": {
+        "id": "STAT4--ASSOCIATED_WITH--Lupus (SLE)",
+        "source": "STAT4",
+        "target": "Lupus (SLE)",
+        "type": "ASSOCIATED_WITH",
+        "description": "STAT4 rs7574865 risk variant is associated with increased SLE susceptibility and severity"
+      }
+    },
+    {
+      "data": {
+        "id": "BLK--PARTICIPATES_IN--bcell-signaling",
+        "source": "BLK",
+        "target": "bcell-signaling",
+        "type": "PARTICIPATES_IN",
+        "description": "BLK is a Src-family kinase essential for B cell receptor signal transduction"
+      }
+    },
+    {
+      "data": {
+        "id": "TNFAIP3--PARTICIPATES_IN--nfkb",
+        "source": "TNFAIP3",
+        "target": "nfkb",
+        "type": "PARTICIPATES_IN",
+        "description": "TNFAIP3 (A20) negatively regulates NF-\u03baB signaling through ubiquitin editing; loss of function drives inflammation"
+      }
+    },
+    {
+      "data": {
+        "id": "TNFAIP3--ASSOCIATED_WITH--Lupus (SLE)",
+        "source": "TNFAIP3",
+        "target": "Lupus (SLE)",
+        "type": "ASSOCIATED_WITH",
+        "description": "TNFAIP3 loss-of-function variants reduce NF-\u03baB regulation and increase SLE risk"
+      }
+    },
+    {
+      "data": {
+        "id": "ITGAM--PARTICIPATES_IN--complement",
+        "source": "ITGAM",
+        "target": "complement",
+        "type": "PARTICIPATES_IN",
+        "description": "ITGAM encodes CD11b, a component of complement receptor 3 (CR3) critical for immune complex clearance"
+      }
+    },
+    {
+      "data": {
+        "id": "ITGAM--ASSOCIATED_WITH--Lupus (SLE)",
+        "source": "ITGAM",
+        "target": "Lupus (SLE)",
+        "type": "ASSOCIATED_WITH",
+        "description": "ITGAM missense variants impair phagocytosis and are associated with increased SLE risk"
+      }
+    },
+    {
+      "data": {
+        "id": "BANK1--PARTICIPATES_IN--bcell-signaling",
+        "source": "BANK1",
+        "target": "bcell-signaling",
+        "type": "PARTICIPATES_IN",
+        "description": "BANK1 is a scaffold protein that modulates BCR-induced calcium mobilization"
+      }
+    },
+    {
+      "data": {
+        "id": "PTPN22--PARTICIPATES_IN--tcell-costim",
+        "source": "PTPN22",
+        "target": "tcell-costim",
+        "type": "PARTICIPATES_IN",
+        "description": "PTPN22 (LYP) negatively regulates T cell receptor signaling; R620W variant alters T cell selection thresholds"
+      }
+    },
+    {
+      "data": {
+        "id": "TNFSF4--PARTICIPATES_IN--tcell-costim",
+        "source": "TNFSF4",
+        "target": "tcell-costim",
+        "type": "PARTICIPATES_IN",
+        "description": "TNFSF4 (OX40L) provides costimulatory signals that enhance T cell activation and Tfh function"
+      }
+    },
+    {
+      "data": {
+        "id": "FCGR2A--PARTICIPATES_IN--complement",
+        "source": "FCGR2A",
+        "target": "complement",
+        "type": "PARTICIPATES_IN",
+        "description": "FCGR2A mediates IgG immune complex binding and clearance by phagocytes"
+      }
+    },
+    {
+      "data": {
+        "id": "FCGR3A--PARTICIPATES_IN--complement",
+        "source": "FCGR3A",
+        "target": "complement",
+        "type": "PARTICIPATES_IN",
+        "description": "FCGR3A mediates ADCC and immune complex clearance"
+      }
+    },
+    {
+      "data": {
+        "id": "TLR7--PARTICIPATES_IN--type1-ifn",
+        "source": "TLR7",
+        "target": "type1-ifn",
+        "type": "PARTICIPATES_IN",
+        "description": "TLR7 senses ssRNA in endosomes and triggers IRF5/IRF7-mediated IFN-\u03b1 production"
+      }
+    },
+    {
+      "data": {
+        "id": "TLR7--PARTICIPATES_IN--tlr-sensing",
+        "source": "TLR7",
+        "target": "tlr-sensing",
+        "type": "PARTICIPATES_IN",
+        "description": "TLR7 is a key endosomal sensor of ssRNA that drives the lupus IFN signature"
+      }
+    },
+    {
+      "data": {
+        "id": "TLR9--PARTICIPATES_IN--type1-ifn",
+        "source": "TLR9",
+        "target": "type1-ifn",
+        "type": "PARTICIPATES_IN",
+        "description": "TLR9 senses CpG DNA in endosomes and triggers IRF5/IRF7-mediated IFN-\u03b1 production"
+      }
+    },
+    {
+      "data": {
+        "id": "TLR9--PARTICIPATES_IN--tlr-sensing",
+        "source": "TLR9",
+        "target": "tlr-sensing",
+        "type": "PARTICIPATES_IN",
+        "description": "TLR9 is a key endosomal sensor of CpG DNA that drives B cell activation in lupus"
+      }
+    },
+    {
+      "data": {
+        "id": "BAFF--PARTICIPATES_IN--bcell-signaling",
+        "source": "BAFF",
+        "target": "bcell-signaling",
+        "type": "PARTICIPATES_IN",
+        "description": "BAFF is a critical survival factor in B cell receptor signaling and B cell homeostasis"
+      }
+    },
+    {
+      "data": {
+        "id": "IFNAR1--PARTICIPATES_IN--type1-ifn",
+        "source": "IFNAR1",
+        "target": "type1-ifn",
+        "type": "PARTICIPATES_IN",
+        "description": "IFNAR1 is the receptor subunit for type I interferons, mediating all IFN-\u03b1/\u03b2 signaling"
+      }
+    },
+    {
+      "data": {
+        "id": "JAK1--PARTICIPATES_IN--jak-stat",
+        "source": "JAK1",
+        "target": "jak-stat",
+        "type": "PARTICIPATES_IN",
+        "description": "JAK1 mediates signaling for type I IFNs, IL-6, and other \u03b3-chain cytokines"
+      }
+    },
+    {
+      "data": {
+        "id": "TYK2--PARTICIPATES_IN--jak-stat",
+        "source": "TYK2",
+        "target": "jak-stat",
+        "type": "PARTICIPATES_IN",
+        "description": "TYK2 mediates type I IFN and IL-12/IL-23 signaling through JAK-STAT pathways"
+      }
+    },
+    {
+      "data": {
+        "id": "BTK--PARTICIPATES_IN--bcell-signaling",
+        "source": "BTK",
+        "target": "bcell-signaling",
+        "type": "PARTICIPATES_IN",
+        "description": "BTK is an essential kinase for BCR and Fc receptor signaling in B cells and myeloid cells"
+      }
+    },
+    {
+      "data": {
+        "id": "belimumab--TARGETS--BAFF",
+        "source": "belimumab",
+        "target": "BAFF",
+        "type": "TARGETS",
+        "description": "Belimumab directly binds and neutralizes soluble BAFF (BLyS), preventing B cell survival signaling"
+      }
+    },
+    {
+      "data": {
+        "id": "belimumab--MODULATES--bcell-signaling",
+        "source": "belimumab",
+        "target": "bcell-signaling",
+        "type": "MODULATES",
+        "description": "Belimumab modulates B cell signaling by reducing BAFF-dependent B cell survival"
+      }
+    },
+    {
+      "data": {
+        "id": "belimumab--TREATS--Lupus (SLE)",
+        "source": "belimumab",
+        "target": "Lupus (SLE)",
+        "type": "TREATS",
+        "description": "Belimumab is FDA-approved for SLE and lupus nephritis; reduces disease activity and flare risk"
+      }
+    },
+    {
+      "data": {
+        "id": "anifrolumab--TARGETS--IFNAR1",
+        "source": "anifrolumab",
+        "target": "IFNAR1",
+        "type": "TARGETS",
+        "description": "Anifrolumab blocks the type I interferon receptor IFNAR1, suppressing the IFN gene signature"
+      }
+    },
+    {
+      "data": {
+        "id": "anifrolumab--MODULATES--type1-ifn",
+        "source": "anifrolumab",
+        "target": "type1-ifn",
+        "type": "MODULATES",
+        "description": "Anifrolumab blocks type I interferon signaling by binding IFNAR1"
+      }
+    },
+    {
+      "data": {
+        "id": "anifrolumab--TREATS--Lupus (SLE)",
+        "source": "anifrolumab",
+        "target": "Lupus (SLE)",
+        "type": "TREATS",
+        "description": "Anifrolumab is FDA-approved for moderate to severe SLE; reduces disease activity and corticosteroid use"
+      }
+    },
+    {
+      "data": {
+        "id": "voclosporin--TARGETS--Calcineurin",
+        "source": "voclosporin",
+        "target": "Calcineurin",
+        "type": "TARGETS",
+        "description": "Voclosporin inhibits calcineurin, blocking NFAT-mediated T cell activation"
+      }
+    },
+    {
+      "data": {
+        "id": "voclosporin--TREATS--Lupus (SLE)",
+        "source": "voclosporin",
+        "target": "Lupus (SLE)",
+        "type": "TREATS",
+        "description": "Voclosporin is FDA-approved for lupus nephritis in combination with MMF and corticosteroids"
+      }
+    },
+    {
+      "data": {
+        "id": "hydroxychloroquine--TARGETS--TLR7",
+        "source": "hydroxychloroquine",
+        "target": "TLR7",
+        "type": "TARGETS",
+        "description": "Hydroxychloroquine inhibits endosomal TLR7 activation by preventing endosome acidification"
+      }
+    },
+    {
+      "data": {
+        "id": "hydroxychloroquine--TARGETS--TLR9",
+        "source": "hydroxychloroquine",
+        "target": "TLR9",
+        "type": "TARGETS",
+        "description": "Hydroxychloroquine inhibits endosomal TLR9 activation by preventing endosome acidification"
+      }
+    },
+    {
+      "data": {
+        "id": "hydroxychloroquine--MODULATES--tlr-sensing",
+        "source": "hydroxychloroquine",
+        "target": "tlr-sensing",
+        "type": "MODULATES",
+        "description": "Hydroxychloroquine inhibits endosomal TLR7 and TLR9 activation"
+      }
+    },
+    {
+      "data": {
+        "id": "hydroxychloroquine--TREATS--Lupus (SLE)",
+        "source": "hydroxychloroquine",
+        "target": "Lupus (SLE)",
+        "type": "TREATS",
+        "description": "Hydroxychloroquine is the standard-of-care for all SLE patients; reduces flares and improves survival"
+      }
+    },
+    {
+      "data": {
+        "id": "mycophenolate--TARGETS--IMPDH",
+        "source": "mycophenolate",
+        "target": "IMPDH",
+        "type": "TARGETS",
+        "description": "Mycophenolate mofetil inhibits IMPDH, blocking de novo purine synthesis in lymphocytes"
+      }
+    },
+    {
+      "data": {
+        "id": "mycophenolate--TREATS--Lupus (SLE)",
+        "source": "mycophenolate",
+        "target": "Lupus (SLE)",
+        "type": "TREATS",
+        "description": "Mycophenolate is a first-line induction and maintenance therapy for lupus nephritis"
+      }
+    },
+    {
+      "data": {
+        "id": "cyclophosphamide--TREATS--Lupus (SLE)",
+        "source": "cyclophosphamide",
+        "target": "Lupus (SLE)",
+        "type": "TREATS",
+        "description": "Cyclophosphamide is reserved for severe organ-threatening lupus including nephritis, CNS, and pulmonary involvement"
+      }
+    },
+    {
+      "data": {
+        "id": "rituximab--TARGETS--CD20",
+        "source": "rituximab",
+        "target": "CD20",
+        "type": "TARGETS",
+        "description": "Rituximab depletes CD20+ B cells through ADCC, CDC, and apoptosis"
+      }
+    },
+    {
+      "data": {
+        "id": "rituximab--TREATS--Lupus (SLE)",
+        "source": "rituximab",
+        "target": "Lupus (SLE)",
+        "type": "TREATS",
+        "description": "Rituximab is used off-label for refractory SLE; depletes CD20+ B cells"
+      }
+    },
+    {
+      "data": {
+        "id": "prednisone--TARGETS--Glucocorticoid Receptor",
+        "source": "prednisone",
+        "target": "Glucocorticoid Receptor",
+        "type": "TARGETS",
+        "description": "Prednisone binds glucocorticoid receptor (NR3C1), broadly suppressing NF-\u03baB and inflammatory gene transcription"
+      }
+    },
+    {
+      "data": {
+        "id": "tacrolimus--TARGETS--Calcineurin",
+        "source": "tacrolimus",
+        "target": "Calcineurin",
+        "type": "TARGETS",
+        "description": "Tacrolimus binds FKBP12 and inhibits calcineurin, blocking T cell activation"
+      }
+    },
+    {
+      "data": {
+        "id": "tacrolimus--TREATS--Lupus (SLE)",
+        "source": "tacrolimus",
+        "target": "Lupus (SLE)",
+        "type": "TREATS",
+        "description": "Tacrolimus is used off-label for lupus nephritis, especially in Asian populations"
+      }
+    },
+    {
+      "data": {
+        "id": "azathioprine--TREATS--Lupus (SLE)",
+        "source": "azathioprine",
+        "target": "Lupus (SLE)",
+        "type": "TREATS",
+        "description": "Azathioprine is a steroid-sparing maintenance therapy for lupus nephritis and SLE"
+      }
+    },
+    {
+      "data": {
+        "id": "baricitinib--TARGETS--JAK1",
+        "source": "baricitinib",
+        "target": "JAK1",
+        "type": "TARGETS",
+        "description": "Baricitinib inhibits JAK1, blocking type I IFN, IL-6, and other cytokine signaling"
+      }
+    },
+    {
+      "data": {
+        "id": "baricitinib--MODULATES--jak-stat",
+        "source": "baricitinib",
+        "target": "jak-stat",
+        "type": "MODULATES",
+        "description": "Baricitinib inhibits JAK1/JAK2, broadly suppressing cytokine-driven JAK-STAT signaling"
+      }
+    },
+    {
+      "data": {
+        "id": "obinutuzumab--TARGETS--CD20",
+        "source": "obinutuzumab",
+        "target": "CD20",
+        "type": "TARGETS",
+        "description": "Obinutuzumab is a type II anti-CD20 antibody with enhanced direct cell death and reduced CDC vs rituximab"
+      }
+    },
+    {
+      "data": {
+        "id": "type1-ifn--DRIVES--Lupus (SLE)",
+        "source": "type1-ifn",
+        "target": "Lupus (SLE)",
+        "type": "DRIVES",
+        "description": "The type I interferon pathway is a central driver of SLE pathogenesis, with ~60-80% of patients showing an IFN gene signature"
+      }
+    },
+    {
+      "data": {
+        "id": "bcell-signaling--DRIVES--Lupus (SLE)",
+        "source": "bcell-signaling",
+        "target": "Lupus (SLE)",
+        "type": "DRIVES",
+        "description": "Dysregulated B cell signaling drives autoantibody production and immune complex formation in SLE"
+      }
+    },
+    {
+      "data": {
+        "id": "jak-stat--DRIVES--Lupus (SLE)",
+        "source": "jak-stat",
+        "target": "Lupus (SLE)",
+        "type": "DRIVES",
+        "description": "Aberrant JAK-STAT signaling downstream of multiple cytokines contributes to lupus inflammation"
+      }
+    },
+    {
+      "data": {
+        "id": "nfkb--DRIVES--Lupus (SLE)",
+        "source": "nfkb",
+        "target": "Lupus (SLE)",
+        "type": "DRIVES",
+        "description": "Chronic NF-\u03baB activation drives sustained inflammation and tissue damage in SLE"
+      }
+    },
+    {
+      "data": {
+        "id": "complement--DRIVES--Lupus (SLE)",
+        "source": "complement",
+        "target": "Lupus (SLE)",
+        "type": "DRIVES",
+        "description": "Defective complement-mediated clearance of apoptotic debris leads to autoantigen exposure and immune activation"
+      }
+    },
+    {
+      "data": {
+        "id": "tcell-costim--DRIVES--Lupus (SLE)",
+        "source": "tcell-costim",
+        "target": "Lupus (SLE)",
+        "type": "DRIVES",
+        "description": "Enhanced T cell costimulation drives Tfh expansion and autoreactive B cell help in SLE"
+      }
+    },
+    {
+      "data": {
+        "id": "tlr-sensing--DRIVES--Lupus (SLE)",
+        "source": "tlr-sensing",
+        "target": "Lupus (SLE)",
+        "type": "DRIVES",
+        "description": "Endosomal TLR sensing of self-nucleic acids is a key initiating event in the lupus autoimmune response"
+      }
+    }
+  ]
+}
