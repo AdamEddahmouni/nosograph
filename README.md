@@ -35,7 +35,7 @@ lupus-platform/
 │   ├── ner.py            #   Hybrid NER (regex patterns + optional scispacy)
 │   └── report.py         #   HTML report with coverage bars & candidate support
 │
-├── virtual_screening/    # Phase 6 🟡 — Property-based virtual drug screening
+├── virtual_screening/    # Phase 6 ✅ — Property-based virtual drug screening
 │   ├── screening.py      #   5-dimensional scoring (binding, drug-likeness, etc.)
 │   ├── report.py         #   HTML report with per-target compound tables
 │   └── data/             #   Screening results JSON
@@ -161,7 +161,7 @@ python literature_mining/miner.py --max 50 --export-html --targeted
 
 ---
 
-### 5. 🔬 Virtual Drug Screening 🟡
+### 5. 🔬 Virtual Drug Screening ✅
 
 Computationally screens the 20-drug compound library against lupus protein targets using a 5-dimensional weighted scoring model.
 
@@ -297,7 +297,7 @@ python -m pytest tests/ -v
 | **Phase 3** | Drug Repurposing Engine (39 candidates scored) | ✅ Complete |
 | **Phase 4** | Literature Mining (PubMed + Biomedical NER) | ✅ Complete |
 | **Phase 5** | Integration & Polish (CLI, Docker, Dashboard) | ✅ Complete |
-| **Phase 6** | Virtual Drug Screening (Molecular Docking) | 🟡 In Progress |
+| **Phase 6** | Virtual Drug Screening (Molecular Docking) | ✅ Complete |
 | **Phase 7** | ML Target Predictor | ⬜ Planned |
 | **Phase 8** | Clinical Trial Tracker | ⬜ Planned |
 
