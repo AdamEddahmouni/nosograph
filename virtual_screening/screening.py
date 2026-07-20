@@ -48,6 +48,7 @@ DATA_DIR = Path(__file__).parent / "data"
 
 RDKIT_AVAILABLE = False
 VINA_AVAILABLE = False
+_DOCKING_ENGINE = None
 
 
 def _check_rdkit():
@@ -55,19 +56,85 @@ def _check_rdkit():
     global RDKIT_AVAILABLE
     if not RDKIT_AVAILABLE:
         try:
-            import rdkit  # noqa: F401
+            from rdkit import Chem  # noqa: F401
+            from rdkit.Chem import Crippen, Descriptors, Lipinski  # noqa: F401
             RDKIT_AVAILABLE = True
         except ImportError:
             pass
     return RDKIT_AVAILABLE
 
 
+def _get_docking_engine():
+    """Lazy-load the DockingEngine singleton."""
+    global _DOCKING_ENGINE
+    if _DOCKING_ENGINE is None:
+        try:
+            from virtual_screening.docking import DockingEngine
+            _DOCKING_ENGINE = DockingEngine()
+        except ImportError:
+            _DOCKING_ENGINE = False
+    return _DOCKING_ENGINE if _DOCKING_ENGINE is not False else None
+
+
+def _compute_rdkit_properties(smiles: str) -> dict:
+    """Compute molecular properties from SMILES using RDKit.
+
+    Returns dict with mw, logp, hbd, hba, rotb, tpsa or empty dict on failure.
+    """
+    if not smiles or not _check_rdkit():
+        return {}
+    try:
+        from rdkit import Chem
+        from rdkit.Chem import Crippen, Descriptors, Lipinski
+
+        mol = Chem.MolFromSmiles(smiles)
+        if mol is None:
+            return {}
+
+        return {
+            "mw": round(Descriptors.MolWt(mol), 1),
+            "logp": round(Crippen.MolLogP(mol), 2),
+            "hbd": Lipinski.NumHDonors(mol),
+            "hba": Lipinski.NumHAcceptors(mol),
+            "rotb": Lipinski.NumRotatableBonds(mol),
+            "tpsa": round(Descriptors.TPSA(mol), 1),
+        }
+    except Exception:
+        return {}
+
+
+# ── SMILES strings for KG drugs (real structures) ───────────────────
+
+_DRUG_SMILES = {
+    "hydroxychloroquine": "CCN(CCCC(C)NC1=C2C=CC(=CC2=NC=C1)Cl)CCO",
+    "prednisone": "CC12CC(=O)C3C(C1CCC2(C(=O)CO)O)CCC4=CC(=O)C=CC34C",
+    "mycophenolate": "CC1=C(C(=C(C(=C1OC)C)CC=C(C)C(=O)O)O)OC",
+    "cyclophosphamide": "C1CN(P(=O)(OC1)N(CCCl)CCCl)",
+    "tacrolimus": "C[C@@H]1C[C@@H]([C@@H]2[C@H](C[C@H]([C@@](O2)(C(=O)C(=O)N3CCCC[C@H]3C(=O)O[C@@H]([C@@H]([C@H](CC(=O)[C@H]([C@@H]([C@H](C[C@H](O1)C)C)/C=C(/C)\\C)O)C)O)C)C)C)O)OC",
+    "azathioprine": "CN1C=NC(=C1SC2=NC=NC3=C2NC=N3)[N+](=O)[O-]",
+    "baricitinib": "CCS(=O)(=O)CC1=NNC(=C1)C2=C3C=CNC3=NC(=N2)C4=CC=C(C=C4)S(=O)(=O)CC",
+    "acalabrutinib": "CC#CC(=O)N1CCC[C@H]1C2=NC(=C3N2C=CC(=N3)C4=CC=C(C=C4)C(=O)N)C5=CC=C(C=C5)F",
+    "avacopan": "CC1=CC(=CC(=C1)C(F)(F)F)NC(=O)C2=CC(=CC(=C2)NC(=O)C3=CC=C(C=C3)CN4CCN(CC4)C)C(F)(F)F",
+    "cyclosporine": "CC[C@H](C)[C@@H]1NC(=O)[C@H](C)NC(=O)[C@H](C(C)C)NC(=O)[C@](C)(O)NC(=O)[C@@H](C)NC(=O)[C@H](C(C)C)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](C(C)C)NC1=O",
+    "dimethyl_fumarate": "COC(=O)/C=C/C(=O)OC",
+    "tofacitinib": "C[C@@H]1CCN([C@@H]1C)CC2=CN=C(C=C2)NC3=NC=NC4=C3C=CN4",
+    "voclosporin": "CC[C@H](C)[C@@H]1NC(=O)[C@H](C)NC(=O)[C@H](C(C)C)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](C(C)C)NC(=O)[C@H](CC(C)C)NC1=O",
+    "deucravacitinib": "CNC(=O)c1nnc(cc1Nc1cccc(c1OC)c1ncn(n1)C)NC(=O)C1CC1",
+    "iberdomide": "O=C1CCC(C(=O)N1)N1Cc2c(C1=O)cccc2OCc1ccc(cc1)CN1CCOCC1",
+}
+
+
 def _check_vina():
-    """Check if AutoDock Vina binary is on PATH."""
+    """Check if AutoDock Vina binary is on PATH (delegates to docking engine)."""
     global VINA_AVAILABLE
     if not VINA_AVAILABLE:
-        vina_path = shutil.which("vina") or shutil.which("vina.exe")
-        VINA_AVAILABLE = vina_path is not None
+        engine = _get_docking_engine()
+        if engine:
+            status = engine.get_status()
+            VINA_AVAILABLE = status.get("vina_available", False)
+        else:
+            vina_path = shutil.which("vina") or shutil.which("vina.exe")
+            VINA_AVAILABLE = vina_path is not None
     return VINA_AVAILABLE
 
 
@@ -101,6 +168,8 @@ _DRUG_PROPERTIES = {
     "ravulizumab":      {"mw": 148000, "logp": -10.3, "hbd": 119, "hba": 149, "rotb": 199, "tpsa": 4970},
     "rozanolixizumab":  {"mw": 50000,  "logp": -7.0,  "hbd": 70,  "hba": 85,  "rotb": 80,  "tpsa": 3000},
     "tofacitinib":      {"mw": 312,    "logp": 1.2,   "hbd": 1,   "hba": 6,   "rotb": 4,   "tpsa": 89},
+    "deucravacitinib":  {"mw": 426,    "logp": 2.5,   "hbd": 2,   "hba": 8,   "rotb": 6,   "tpsa": 120},
+    "iberdomide":       {"mw": 462,    "logp": 2.1,   "hbd": 1,   "hba": 7,   "rotb": 6,   "tpsa": 95},
 }
 
 
@@ -117,12 +186,25 @@ def load_kg_drugs() -> dict:
 
 
 def build_compound_library() -> list:
-    """Build a compound library from the 20 KG drugs with estimated properties."""
+    """Build a compound library from KG drugs with RDKit-computed or estimated properties.
+
+    If RDKit is available, computes MW, LogP, HBD, HBA, RotB, TPSA from SMILES.
+    Otherwise falls back to estimated properties for biologics and small molecules.
+    """
     drugs = load_kg_drugs()
     library = []
 
     for drug_id, drug_info in drugs.items():
+        smiles = _DRUG_SMILES.get(drug_id, "")
         props = _DRUG_PROPERTIES.get(drug_id, {})
+
+        # If RDKit available and we have SMILES, compute real properties (once)
+        rdkit_props = {}
+        if smiles and _check_rdkit():
+            rdkit_props = _compute_rdkit_properties(smiles)
+            if rdkit_props:
+                props = rdkit_props
+
         compound = {
             "id": drug_id,
             "name": drug_info["name"],
@@ -130,12 +212,14 @@ def build_compound_library() -> list:
             "target": drug_info.get("target", ""),
             "mechanism": drug_info.get("mechanism", ""),
             "category": drug_info.get("category", ""),
+            "smiles": smiles,
             "mw": props.get("mw", 400),
             "logp": props.get("logp", 2.0),
             "hbd": props.get("hbd", 2),
             "hba": props.get("hba", 5),
             "rotb": props.get("rotb", 5),
             "tpsa": props.get("tpsa", 100),
+            "rdkit_computed": bool(rdkit_props),
         }
         library.append(compound)
 
@@ -352,7 +436,7 @@ def compute_composite_score(scores: dict) -> float:
 
 
 # ═══════════════════════════════════════════════════════════════════════
-#  AutoDock Vina Integration (Optional)
+#  AutoDock Vina Integration (delegates to docking.py)
 # ═══════════════════════════════════════════════════════════════════════
 
 def run_autodock_vina(
@@ -361,11 +445,7 @@ def run_autodock_vina(
     output_dir: str,
     exhaustiveness: int = 8,
 ) -> dict:
-    """
-    Run AutoDock Vina docking if the binary is available.
-
-    Returns docking scores or empty dict if Vina is unavailable.
-    """
+    """Legacy Vina docking stub — use DockingEngine from docking.py instead."""
     if not _check_vina():
         return {}
 
@@ -404,6 +484,13 @@ def run_autodock_vina(
 
 def get_vina_status() -> str:
     """Get a human-readable Vina availability status."""
+    engine = _get_docking_engine()
+    if engine:
+        try:
+            from virtual_screening.docking import get_vina_status_text
+            return get_vina_status_text()
+        except ImportError:
+            pass
     if _check_vina():
         vina_path = shutil.which("vina") or shutil.which("vina.exe")
         return f"active ({vina_path})"
@@ -485,18 +572,63 @@ def screen_compounds(
             scored_compounds.append(result)
             all_scored.append(result)
 
-        # Vina docking (optional)
+        # Vina docking (optional) — uses real docking engine
         vina_results = {}
         if use_vina and _check_vina():
-            print(f"   🧬 Running Vina docking for {gene_info.get('name', gene_id)}...")
-            for compound in compound_library[:5]:  # Only top 5 per target for speed
-                vina_out = run_autodock_vina(
-                    protein_pdb=f"targets/{gene_id}.pdb",
-                    ligand_sdf=f"ligands/{compound['id']}.sdf",
-                    output_dir=str(DATA_DIR / "docking" / gene_id / compound["id"]),
+            engine = _get_docking_engine()
+            if engine:
+                from virtual_screening.docking import compute_real_binding_score
+
+                # Pre-filter top candidates by property scores
+                scored_compounds.sort(key=lambda x: x["composite_score"], reverse=True)
+                top_for_docking = scored_compounds[:min(5, len(scored_compounds))]
+
+                print(f"   🧬 Running Vina docking for {gene_info.get('name', gene_id)} "
+                      f"({len(top_for_docking)} top compounds)...")
+
+                # Prepare receptor and ligands on-demand
+                rec_paths = engine.prepare_all_targets()
+                lig_paths = engine.prepare_all_ligands(compound_library)
+
+                dock_results = engine.dock_target(
+                    gene_id=gene_id,
+                    ligand_ids=[c["id"] for c in top_for_docking],
+                    receptor_paths=rec_paths,
+                    ligand_paths=lig_paths,
+                    max_workers=2,
                 )
-                if vina_out:
-                    vina_results[compound["id"]] = vina_out
+
+                # Merge real docking scores into scored compounds
+                for compound in top_for_docking:
+                    real_score = compute_real_binding_score(
+                        compound, gene_id, dock_results
+                    )
+                    if real_score is not None:
+                        # Replace property-based binding estimate with real score
+                        compound["binding_estimate"] = real_score
+                        compound["vina_docked"] = True
+                        compound["vina_best_kcal"] = (
+                            dock_results.get(compound["id"], {}).get("best_score")
+                        )
+                        # Recompute composite with real binding score
+                        compound["composite_score"] = compute_composite_score({
+                            "binding_estimate": real_score,
+                            "druglikeness": compound["druglikeness"],
+                            "target_complementarity": compound["target_complementarity"],
+                            "similarity_score": compound["similarity_score"],
+                            "novelty_score": compound["novelty_score"],
+                        })
+                        # Reassign tier
+                        if compound["composite_score"] >= 7.5:
+                            compound["tier"] = "🔴 Tier 1 — Strong Candidate"
+                        elif compound["composite_score"] >= 6.5:
+                            compound["tier"] = "🟠 Tier 2 — Promising"
+                        elif compound["composite_score"] >= 5.0:
+                            compound["tier"] = "🟡 Tier 3 — Possible"
+                        else:
+                            compound["tier"] = "🟢 Tier 4 — Low Priority"
+
+                vina_results = dock_results
 
         # Sort and take top N
         scored_compounds.sort(key=lambda x: x["composite_score"], reverse=True)
@@ -515,6 +647,7 @@ def screen_compounds(
     # Stats
     n_tier1 = sum(1 for c in all_scored if c["tier"].startswith("🔴"))
     n_tier2 = sum(1 for c in all_scored if c["tier"].startswith("🟠"))
+    n_vina_docked = sum(1 for c in all_scored if c.get("vina_docked"))
 
     return {
         "results_per_target": results_per_target,
@@ -527,6 +660,7 @@ def screen_compounds(
             "total_pairings": len(all_scored),
             "tier1_count": n_tier1,
             "tier2_count": n_tier2,
+            "vina_docked_count": n_vina_docked,
             "vina_available": _check_vina(),
             "rdkit_available": _check_rdkit(),
             "vina_status": get_vina_status(),

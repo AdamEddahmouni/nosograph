@@ -2,15 +2,28 @@
 Lupus Virtual Screening Report Generator
 
 Generates a standalone HTML report showing:
-  - Screening overview and statistics
-  - Per-target top compound rankings
+  - Screening overview and statistics (incl. real docking counts)
+  - Per-target top compound rankings with Vina docking badges
   - Score breakdown with visual bars
-  - Optional AutoDock Vina docking results
-  - Methodology section
+  - Real vs property-based binding score comparison
+  - AutoDock Vina docking results per target
+  - Methodology section (property-based + real docking)
 """
 
+import base64
+import io
 from datetime import datetime
 from pathlib import Path
+
+try:
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+    import numpy as np
+    MPL_AVAILABLE = True
+except ImportError:
+    MPL_AVAILABLE = False
+    np = None
 
 
 def generate_screening_report(results: dict) -> str:
@@ -18,6 +31,10 @@ def generate_screening_report(results: dict) -> str:
 
     output_path = Path(__file__).parent / "screening_report.html"
     stats = results["stats"]
+    vina_docked_count = stats.get("vina_docked_count", 0)
+    has_vina = stats.get("vina_available", False)
+    has_real_docking = vina_docked_count > 0
+
     gene_names = {}
     for gene_id, target_data in results.get("results_per_target", {}).items():
         gene_names[gene_id] = target_data["gene_info"].get("name", gene_id)
@@ -41,19 +58,35 @@ def generate_screening_report(results: dict) -> str:
 
             tier_icon = c["tier"].split(" ")[0] if c["tier"] else ""
 
-            # Score bars
+            # Vina docking badge
+            vina_badge = ""
+            if c.get("vina_docked"):
+                kcal = c.get("vina_best_kcal")
+                kcal_str = f"{kcal:.1f} kcal/mol" if kcal is not None else "docked"
+                vina_badge = (
+                    f'<span class="vina-badge" title="Real AutoDock Vina docking score">'
+                    f'🧬 {kcal_str}</span>'
+                )
+
+            # Score bars — highlight Binding bar when real docking was used
             dims = [
-                ("Binding", c.get("binding_estimate", 0), "#818cf8"),
-                ("Drug-Like", c.get("druglikeness", 0), "#4ade80"),
-                ("Target", c.get("target_complementarity", 0), "#f59e0b"),
-                ("Similarity", c.get("similarity_score", 0), "#c084fc"),
-                ("Novelty", c.get("novelty_score", 0), "#34d399"),
+                ("Binding", c.get("binding_estimate", 0),
+                 "#34d399" if c.get("vina_docked") else "#818cf8",
+                 c.get("vina_docked", False)),
+                ("Drug-Like", c.get("druglikeness", 0), "#4ade80", False),
+                ("Target", c.get("target_complementarity", 0), "#f59e0b", False),
+                ("Similarity", c.get("similarity_score", 0), "#c084fc", False),
+                ("Novelty", c.get("novelty_score", 0), "#34d399", False),
             ]
             bars_html = "".join(
-                f'<div class="dim-bar"><span class="dim-label">{label}</span>'
-                f'<div class="dim-fill-wrap"><div class="dim-fill" style="width:{val*10}%;background:{color}"></div></div>'
-                f'<span class="dim-val">{val:.1f}</span></div>'
-                for label, val, color in dims
+                f'<div class="dim-bar">'
+                f'<span class="dim-label{" dim-docked" if is_docked else ""}">{label}</span>'
+                f'<div class="dim-fill-wrap">'
+                f'<div class="dim-fill{" dim-docked-fill" if is_docked else ""}" '
+                f'style="width:{val*10}%;background:{color}"></div></div>'
+                f'<span class="dim-val{" dim-val-docked" if is_docked else ""}">{val:.1f}</span>'
+                f'</div>'
+                for label, val, color, is_docked in dims
             )
 
             compound_rows += f"""
@@ -61,7 +94,8 @@ def generate_screening_report(results: dict) -> str:
                 <td class="rank">{i}</td>
                 <td>
                     <strong>{escape_html(c['name'][:45])}</strong>
-                    <br><span class="muted">{c.get('type', '')} · {c.get('category', '')[:35]}</span>
+                    {vina_badge}
+                    <br><span class="muted">{escape_html(c.get('type', ''))} · {escape_html(c.get('category', '')[:35])}</span>
                 </td>
                 <td>
                     <span class="score-badge" style="background:{score_color}20;color:{score_color};border:1px solid {score_color}40">
@@ -71,22 +105,32 @@ def generate_screening_report(results: dict) -> str:
                 <td class="dims-cell">{bars_html}</td>
             </tr>"""
 
+        # Vina docking summary per target
         vina_section = ""
-        vina = target_data.get("vina_results", {})
-        if vina:
+        target_docked = [c for c in top if c.get("vina_docked")]
+        if target_docked:
             vina_rows = ""
-            for cid, vina_data in vina.items():
-                best = vina_data.get("best_score")
-                modes = vina_data.get("modes_found", 0)
+            for c in target_docked:
+                kcal = c.get("vina_best_kcal")
+                kcal_display = f"{kcal:.1f} kcal/mol" if kcal is not None else "N/A"
                 vina_rows += (
                     f'<div class="vina-chip">'
-                    f'<strong>{cid}</strong>: {best:.1f} kcal/mol ({modes} modes)'
+                    f'<strong>{c["name"][:30]}</strong>: {kcal_display}'
                     f'</div>'
                 )
+
             vina_section = f"""
             <div class="vina-box">
-                <h4>🧬 AutoDock Vina Docking Results</h4>
+                <h4>🧬 Real AutoDock Vina Docking ({len(target_docked)} compounds)</h4>
+                <p class="vina-note">These compounds were re-scored using physics-based
+                molecular docking. Binding scores reflect actual Vina ΔG predictions
+                rather than property-based estimates.</p>
                 <div class="vina-chips">{vina_rows}</div>
+            </div>"""
+        elif has_vina:
+            vina_section = """
+            <div class="vina-box-empty">
+                <span>🔬 No real docking for this target — property-based scores used</span>
             </div>"""
 
         target_sections += f"""
@@ -123,6 +167,11 @@ def generate_screening_report(results: dict) -> str:
         score_color = (
             "#4ade80" if score >= 7.5 else "#fbbf24" if score >= 6.5 else "#f87171"
         )
+        docking_col = (
+            f'<span class="docking-badge docking-real">🧬 Real</span>'
+            if c.get("vina_docked")
+            else '<span class="docking-badge docking-prop">📐 Property</span>'
+        )
         top_overall_rows += f"""
         <tr>
             <td class="rank">{i}</td>
@@ -130,9 +179,61 @@ def generate_screening_report(results: dict) -> str:
             <td><span class="gene-tag">{c.get('gene_name', '')[:25]}</span></td>
             <td><span style="color:{score_color};font-weight:700;font-size:1.1em">{score:.1f}</span></td>
             <td><span class="tier-tag">{c.get('tier', '').split('—')[0].strip()}</span></td>
+            <td>{docking_col}</td>
         </tr>"""
 
+    # ── Real vs property comparison chart ────────────────────────────────
+
+    comparison_chart = ""
+    if has_real_docking and MPL_AVAILABLE:
+        comparison_chart = _generate_comparison_chart(results["all_results"])
+
+    # ── Real docking summary ──────────────────────────────────────────
+
+    docking_summary = ""
+    if has_real_docking:
+        docked_compounds = [c for c in results.get("all_results", []) if c.get("vina_docked")]
+        best_docked = docked_compounds[:3] if docked_compounds else []
+
+        docked_rows = ""
+        for c in best_docked:
+            kcal = c.get("vina_best_kcal")
+            kcal_str = f"{kcal:.1f} kcal/mol" if kcal is not None else "N/A"
+            docked_rows += f"""
+            <tr>
+                <td><strong>{escape_html(c['name'][:40])}</strong></td>
+                <td><span class="gene-tag">{c.get('gene_name', '')[:25]}</span></td>
+                <td style="color:#34d399;font-weight:700">{kcal_str}</td>
+                <td style="color:#818cf8;font-weight:600">{c['composite_score']:.1f}</td>
+            </tr>"""
+
+        docking_summary = f"""
+        <h2 class="section-title">🧬 Real Docking Summary</h2>
+        <p style="color:#787890;font-size:0.82rem;margin-bottom:12px">
+            {vina_docked_count} compound-target pairings were re-scored using
+            AutoDock Vina molecular docking. Binding scores reflect
+            physics-based binding free energy (ΔG) predictions.
+        </p>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr><th>Compound</th><th>Target</th><th>Vina ΔG</th><th>Composite</th></tr>
+                </thead>
+                <tbody>{docked_rows}</tbody>
+            </table>
+        </div>
+        """
+
     # ── Assemble HTML ───────────────────────────────────────────────────
+
+    # Determine if comparison chart section should appear
+    comparison_section = ""
+    if comparison_chart:
+        comparison_section = f"""
+        <h2 class="section-title">📊 Real vs Property-Based Binding Scores</h2>
+        <div class="chart-card" style="margin-bottom:28px">
+            <img src="data:image/png;base64,{comparison_chart}" alt="Real vs Property Comparison" style="max-width:100%"/>
+        </div>"""
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -162,15 +263,17 @@ def generate_screening_report(results: dict) -> str:
         .hero .subtitle {{ color: #787890; font-size: 0.95rem; }}
 
         .stats-grid {{
-            display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
             gap: 14px; margin-bottom: 32px;
         }}
         .stat-card {{
             background: #13131a; border: 1px solid #252535;
             border-radius: 12px; padding: 20px; text-align: center;
+            transition: border-color 0.2s, transform 0.2s;
         }}
+        .stat-card:hover {{ border-color: #4b5563; transform: translateY(-1px); }}
         .stat-card .stat-value {{ font-size: 1.8rem; font-weight: 800; }}
-        .stat-card .stat-label {{ color: #787890; font-size: 0.78rem; margin-top: 4px; }}
+        .stat-card .stat-label {{ color: #787890; font-size: 0.72rem; margin-top: 4px; }}
 
         .section-title {{
             font-size: 1.2rem; font-weight: 700; margin: 32px 0 14px;
@@ -204,17 +307,41 @@ def generate_screening_report(results: dict) -> str:
             font-size: 0.7rem; font-weight: 500; background: rgba(129,140,248,0.1); color: #a5b4fc;
         }}
 
+        /* Vina docking badge */
+        .vina-badge {{
+            display: inline-block; margin-left: 8px; padding: 1px 8px;
+            border-radius: 10px; font-size: 0.65rem; font-weight: 600;
+            background: rgba(52,211,153,0.12); color: #34d399;
+            border: 1px solid rgba(52,211,153,0.2);
+            white-space: nowrap; vertical-align: middle;
+        }}
+        .docking-badge {{
+            display: inline-block; padding: 2px 8px; border-radius: 10px;
+            font-size: 0.65rem; font-weight: 600;
+        }}
+        .docking-real {{
+            background: rgba(52,211,153,0.12); color: #34d399;
+            border: 1px solid rgba(52,211,153,0.2);
+        }}
+        .docking-prop {{
+            background: rgba(129,140,248,0.08); color: #818cf8;
+            border: 1px solid rgba(129,140,248,0.15);
+        }}
+
         /* Dimension bars */
         .dim-bar {{
             display: flex; align-items: center; gap: 6px; margin-bottom: 2px;
         }}
         .dim-label {{ font-size: 0.65rem; color: #787890; width: 55px; text-align: right; }}
+        .dim-label.dim-docked {{ color: #34d399; font-weight: 600; }}
         .dim-fill-wrap {{
             flex: 1; height: 6px; background: #1a1a24; border-radius: 3px;
             overflow: hidden;
         }}
         .dim-fill {{ height: 100%; border-radius: 3px; min-width: 2px; transition: width 0.3s; }}
+        .dim-fill.dim-docked-fill {{ box-shadow: 0 0 4px rgba(52,211,153,0.3); }}
         .dim-val {{ font-size: 0.65rem; color: #a0a0b0; width: 28px; text-align: right; font-weight: 600; }}
+        .dim-val.dim-val-docked {{ color: #34d399; }}
         .dims-cell {{ min-width: 280px; }}
 
         /* Target sections */
@@ -238,18 +365,31 @@ def generate_screening_report(results: dict) -> str:
             font-size: 0.78rem; color: #6b7280; white-space: nowrap;
         }}
 
-        /* Vina */
+        /* Vina docking box */
         .vina-box {{
             padding: 16px 24px; border-top: 1px solid #252535;
             background: rgba(52,211,153,0.03);
         }}
-        .vina-box h4 {{ font-size: 0.82rem; color: #34d399; margin-bottom: 10px; }}
+        .vina-box h4 {{ font-size: 0.82rem; color: #34d399; margin-bottom: 6px; }}
+        .vina-note {{
+            font-size: 0.72rem; color: #6b7280; margin-bottom: 10px;
+        }}
         .vina-chips {{ display: flex; flex-wrap: wrap; gap: 8px; }}
         .vina-chip {{
             background: rgba(52,211,153,0.08); border: 1px solid rgba(52,211,153,0.2);
             border-radius: 8px; padding: 6px 12px; font-size: 0.75rem; color: #a0a0b0;
         }}
         .vina-chip strong {{ color: #34d399; }}
+        .vina-box-empty {{
+            padding: 12px 24px; border-top: 1px solid #252535;
+            background: rgba(129,140,248,0.02); color: #6b7280; font-size: 0.75rem;
+        }}
+
+        /* Chart card */
+        .chart-card {{
+            background: #13131a; border: 1px solid #252535;
+            border-radius: 12px; padding: 20px; text-align: center;
+        }}
 
         /* Methodology */
         .method-card {{
@@ -281,6 +421,7 @@ def generate_screening_report(results: dict) -> str:
             <p class="subtitle">
                 {stats['total_pairings']} Compound-Target Pairings Across {stats['targets_screened']} Genes
                 · {stats['compounds_screened']} Compounds Screened
+                {f"· {vina_docked_count} Real Docking Scores" if has_real_docking else ""}
             </p>
             <p class="subtitle" style="font-size:0.78rem;margin-top:8px;">
                 Generated: {datetime.now().strftime('%B %d, %Y at %H:%M')}
@@ -311,16 +452,20 @@ def generate_screening_report(results: dict) -> str:
                 <div class="stat-label">Total Pairings</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value" style="color:#34d399">{stats['vina_status'].split(' ')[0]}</div>
-                <div class="stat-label">AutoDock Vina</div>
+                <div class="stat-value" style="color:#34d399">{vina_docked_count}</div>
+                <div class="stat-label">🧬 Real Docking Scores</div>
             </div>
         </div>
+
+        {docking_summary}
+
+        {comparison_section}
 
         <h2 class="section-title">🏆 Top 20 Overall Virtual Screening Hits</h2>
         <div class="table-container">
             <table>
                 <thead>
-                    <tr><th>#</th><th>Compound</th><th>Target Gene</th><th>Score</th><th>Tier</th></tr>
+                    <tr><th>#</th><th>Compound</th><th>Target Gene</th><th>Score</th><th>Tier</th><th>Docking</th></tr>
                 </thead>
                 <tbody>{top_overall_rows}</tbody>
             </table>
@@ -331,23 +476,22 @@ def generate_screening_report(results: dict) -> str:
 
         <h2 class="section-title">📐 Methodology</h2>
         <div class="method-card">
-            <h3>Scoring Dimensions (each 0-10, weighted)</h3>
+            <h3>Scoring Dimensions (each 0–10, weighted)</h3>
             <ul>
-                <li><strong>Binding Affinity Estimate (30%)</strong> — Molecular property-based pseudo-binding score considering MW, LogP, hydrogen bonding, and TPSA.</li>
+                <li><strong>Binding Affinity Estimate (30%)</strong> — {'Physics-based AutoDock Vina docking score (ΔG) when available; ' if has_real_docking else ''}Otherwise, molecular property-based pseudo-binding score using MW, LogP, hydrogen bonding, and TPSA.</li>
                 <li><strong>Drug-Likeness (20%)</strong> — Lipinski Rule of 5 compliance. Biologics scored separately.</li>
                 <li><strong>Target Complementarity (25%)</strong> — How well the compound's mechanism and category match the target gene's biology and pathway.</li>
                 <li><strong>Similarity to Known SLE Drugs (15%)</strong> — Molecular property similarity and category overlap with existing drug repurposing candidates for the same gene.</li>
                 <li><strong>Novelty (10%)</strong> — How novel is this compound-target pairing? Investigational compounds score higher than approved SLE therapies.</li>
             </ul>
             <p style="margin-top:16px;color:#787890;font-size:0.82rem;">
-                <strong>AutoDock Vina:</strong> {stats['vina_status']}. Install AutoDock Vina and provide
-                protein PDB structures in <code>virtual_screening/targets/</code> for physics-based molecular docking.
-                Current screening uses property-based scoring which does not require external binaries.
+                <strong>AutoDock Vina:</strong> {stats['vina_status']}.
+                {'When active, the top 5 property-scored compounds per target are re-scored using physics-based molecular docking with curated PDB structures and defined binding site grids. Vina binding free energy (kcal/mol) is normalized to the 0–10 binding score using a linear mapping: −11 kcal/mol → 10, −5 kcal/mol → 0.' if has_real_docking else 'Install AutoDock Vina and provide protein PDB structures in <code>virtual_screening/targets/</code> for physics-based molecular docking. Current screening uses property-based scoring which does not require external binaries.'}
             </p>
         </div>
 
         <footer>
-            <p>Lupus Virtual Drug Screening Engine · Property-based scoring + optional AutoDock Vina docking</p>
+            <p>Lupus Virtual Drug Screening Engine · {'Real docking (AutoDock Vina) + ' if has_real_docking else ''}Property-based scoring</p>
             <p>Compound library derived from the <a href="../knowledge_graph/web/index.html">Lupus Knowledge Graph</a></p>
             <p style="margin-top:8px;color:#6b7280;">
                 Disclaimer: Virtual screening results are computational predictions. All hits require experimental validation.
@@ -361,6 +505,99 @@ def generate_screening_report(results: dict) -> str:
         f.write(html)
 
     return str(output_path)
+
+
+def _generate_comparison_chart(all_results: list) -> str:
+    """Generate a bar chart comparing real docking vs property-based binding scores."""
+    if not MPL_AVAILABLE:
+        return ""
+
+    docked = [c for c in all_results if c.get("vina_docked")]
+    if len(docked) == 0:
+        return ""
+
+    # Collect pairs for docked compounds (showing all with a cap at 15)
+    display_n = min(len(docked), 15)
+    for c in docked[:display_n]:
+        pairs.append((
+            c["name"][:20],
+            c.get("binding_estimate", 0),
+            # Get original property score — approximate from other dimensions
+            # Since we replaced binding_estimate with real score, we estimate
+            # the property score from compound properties
+            _estimate_property_score(c),
+        ))
+
+    labels = [p[0] for p in pairs]
+    real_scores = [p[1] for p in pairs]
+    prop_scores = [p[2] for p in pairs]
+
+    fig, ax = plt.subplots(figsize=(10, 5))
+    fig.patch.set_facecolor("#13131a")
+    ax.set_facecolor("#13131a")
+
+    x = np.arange(len(labels))
+    width = 0.35
+
+    bars1 = ax.bar(x - width / 2, real_scores, width, label="Real Docking (Vina)",
+                   color="#34d399", edgecolor="#252535", linewidth=0.5)
+    bars2 = ax.bar(x + width / 2, prop_scores, width, label="Property-Based Estimate",
+                   color="#818cf8", edgecolor="#252535", linewidth=0.5)
+
+    ax.set_ylabel("Binding Score (0-10)", color="#787890", fontsize=9)
+    ax.set_xticks(x)
+    ax.set_xticklabels(labels, rotation=45, ha="right", fontsize=7, color="#e0e0e8")
+    ax.tick_params(colors="#e0e0e8", labelsize=7)
+    ax.legend(fontsize=8, facecolor="#13131a", edgecolor="#252535",
+              labelcolor="#e0e0e8")
+    ax.set_ylim(0, 11)
+    ax.spines["top"].set_visible(False)
+    ax.spines["right"].set_visible(False)
+    ax.spines["bottom"].set_color("#252535")
+    ax.spines["left"].set_color("#252535")
+
+    plt.tight_layout()
+    buf = io.BytesIO()
+    plt.savefig(buf, format="png", dpi=120, facecolor="#13131a", bbox_inches="tight")
+    plt.close()
+    return base64.b64encode(buf.getvalue()).decode()
+
+
+def _estimate_property_score(compound: dict) -> float:
+    """Reconstruct what the property-based binding score would have been.
+
+    Delegates to compute_binding_estimate() from screening.py.
+    That function only uses compound properties (MW, LogP, HBD, HBA, TPSA)
+    and ignores the gene_info parameter, so passing an empty dict is safe.
+    """
+    try:
+        from virtual_screening.screening import compute_binding_estimate
+        return compute_binding_estimate(compound, {})
+    except ImportError:
+        # Fallback if screening module not available
+        mw = compound.get("mw", 400)
+        logp = compound.get("logp", 2.0)
+        hbd = compound.get("hbd", 2)
+        hba = compound.get("hba", 5)
+        tpsa = compound.get("tpsa", 100)
+        if mw > 50000:
+            return 3.0
+        score = 5.0
+        if 200 <= mw <= 600:
+            score += 2.0
+        elif 100 <= mw <= 800:
+            score += 1.0
+        elif mw > 800:
+            score -= 1.0
+        if 1 <= logp <= 4:
+            score += 1.5
+        elif 0 <= logp <= 5:
+            score += 0.5
+        if 1 <= hbd <= 4 and 2 <= hba <= 8:
+            score += 1.5
+        if tpsa < 140:
+            score += 1.0
+        return round(max(0.0, min(10.0, score)), 1)
 
 
 def escape_html(text: str) -> str:
