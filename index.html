@@ -160,6 +160,7 @@
         .module-card.dr::after { background: linear-gradient(90deg, #818cf8, #c084fc); }
         .module-card.bio::after { background: linear-gradient(90deg, #22d3ee, #4ade80); }
         .module-card.lit::after { background: linear-gradient(90deg, #f472b6, #fbbf24); }
+        .module-card.vs::after { background: linear-gradient(90deg, #f59e0b, #f472b6); }
 
         .module-card-header {
             display: flex; align-items: center; gap: 12px;
@@ -295,8 +296,7 @@
                 <h1>Lupus Research Platform</h1>
                 <p class="subtitle">
                     An open computational platform accelerating drug discovery for Systemic Lupus Erythematosus.
-                    Integrating a curated knowledge graph, drug repurposing engine, bioinformatics pipeline,
-                    and literature mining — all in one place.
+                    Integrating a 72-node knowledge graph (35 genes, 26 drugs, 10 pathways), drug repurposing engine, bioinformatics pipeline, literature mining, and virtual drug screening — all in one place.
                 </p>
                 <div class="badges">
                     <span class="hero-badge open">🧬 Open Science</span>
@@ -310,12 +310,12 @@
         <div class="stats-grid">
             <div class="stat-card">
                 <div class="stat-icon">🕸️</div>
-                <div class="stat-value" style="color:#4ade80;">50</div>
+                <div class="stat-value" style="color:#4ade80;">72</div>
                 <div class="stat-label">Knowledge Graph Nodes</div>
             </div>
             <div class="stat-card">
                 <div class="stat-icon">🧬</div>
-                <div class="stat-value" style="color:#818cf8;">22</div>
+                <div class="stat-value" style="color:#818cf8;">35</div>
                 <div class="stat-label">Lupus-Associated Genes</div>
             </div>
             <div class="stat-card">
@@ -325,8 +325,13 @@
             </div>
             <div class="stat-card">
                 <div class="stat-icon">🧪</div>
-                <div class="stat-value" style="color:#22d3ee;">4</div>
+                <div class="stat-value" style="color:#22d3ee;">7</div>
                 <div class="stat-label">Analysis Modules</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🧠</div>
+                <div class="stat-value" style="color:#818cf8;">35</div>
+                <div class="stat-label">Genes Scored (ML)</div>
             </div>
             <div class="stat-card">
                 <div class="stat-icon">📚</div>
@@ -335,7 +340,7 @@
             </div>
             <div class="stat-card">
                 <div class="stat-icon">✅</div>
-                <div class="stat-value" style="color:#fbbf24;">137</div>
+                <div class="stat-value" style="color:#fbbf24;">297</div>
                 <div class="stat-label">Tests Passing</div>
             </div>
         </div>
@@ -456,6 +461,87 @@
                 </div>
             </div>
 
+            <!-- Virtual Screening -->
+            <div class="module-card vs">
+                <div class="module-card-header">
+                    <div class="module-icon" style="background:rgba(245,158,11,0.12);">🔬</div>
+                    <div>
+                        <h3>Virtual Drug Screening</h3>
+                        <span style="font-size:0.72rem;color:var(--text-muted);">
+                            <span class="status-dot complete"></span>Phase 6 — Complete
+                        </span>
+                    </div>
+                </div>
+                <p class="desc">
+                    Property-based virtual screening of the 20-drug compound library against
+                    13 untargeted lupus protein targets using a 5-dimensional weighted scoring
+                    model. Optional AutoDock Vina molecular docking integration.
+                </p>
+                <div class="tags">
+                    <span class="tag yellow">AutoDock Vina</span>
+                    <span class="tag blue">RDKit</span>
+                    <span class="tag green">20 Compounds</span>
+                </div>
+                <div class="actions">
+                    <a href="virtual_screening/screening_report.html" class="btn btn-primary">🔬 View Report</a>
+                    <a href="virtual_screening/data/screening_results.json" class="btn btn-secondary">📂 Results</a>
+                </div>
+            </div>
+
+            <!-- ML Target Predictor -->
+            <div class="module-card" style="--card-accent:#818cf8;">
+                <div class="module-card-header">
+                    <div class="module-icon" style="background:rgba(129,140,248,0.12);">🧠</div>
+                    <div>
+                        <h3>ML Target Predictor</h3>
+                        <span style="font-size:0.72rem;color:var(--text-muted);">
+                            <span class="status-dot complete"></span>Phase 7 — Complete
+                        </span>
+                    </div>
+                </div>
+                <p class="desc">
+                    XGBoost classifier trained on knowledge graph features to predict
+                    novel druggable targets for lupus. SHAP interpretability reveals
+                    which features drive druggability predictions.
+                </p>
+                <div class="tags">
+                    <span class="tag blue">XGBoost</span>
+                    <span class="tag purple">SHAP</span>
+                    <span class="tag green">Feature Engineering</span>
+                </div>
+                <div class="actions">
+                    <a href="ml_predictor/ml_report.html" class="btn btn-primary">🧠 View Report</a>
+                    <a href="ml_predictor/data/ml_predictions.json" class="btn btn-secondary">📂 Predictions</a>
+                </div>
+            </div>
+
+            <!-- Clinical Trials -->
+            <div class="module-card" style="--card-accent:#60a5fa;">
+                <div class="module-card-header">
+                    <div class="module-icon" style="background:rgba(96,165,250,0.12);">📋</div>
+                    <div>
+                        <h3>Clinical Trial Tracker</h3>
+                        <span style="font-size:0.72rem;color:var(--text-muted);">
+                            <span class="status-dot complete"></span>Phase 8 — Complete
+                        </span>
+                    </div>
+                </div>
+                <p class="desc">
+                    Tracks interventional lupus clinical trials from ClinicalTrials.gov.
+                    Categorizes by phase, mechanism of action, and sponsor. Cross-references
+                    trial drugs against the knowledge graph for pipeline insights.
+                </p>
+                <div class="tags">
+                    <span class="tag blue">ClinicalTrials.gov</span>
+                    <span class="tag yellow">Phase Analysis</span>
+                    <span class="tag pink">MoA Categorization</span>
+                </div>
+                <div class="actions">
+                    <a href="clinical_trials/ct_report.html" class="btn btn-primary">📋 View Report</a>
+                    <a href="clinical_trials/data/ct_cache.json" class="btn btn-secondary">📂 Data</a>
+                </div>
+            </div>
+
         </div>
 
         <!-- ── Quick Start ───────────────────────────────────────────── -->
@@ -477,6 +563,9 @@
 <span class="cmd">python</span> main.py repurpose --top 15 --export-html
 <span class="cmd">python</span> main.py bioinformatics --export-html
 <span class="cmd">python</span> main.py literature --export-html
+<span class="cmd">python</span> main.py screening --export-html
+<span class="cmd">python</span> main.py trials --export-html
+<span class="cmd">python</span> main.py ml --export-html
 
 <span class="comment"># 4. Run tests</span>
 <span class="cmd">python</span> main.py test
@@ -503,77 +592,6 @@
         </h2>
 
         <div class="modules-grid">
-            <div class="module-card planned">
-                <div class="module-card-header">
-                    <div class="module-icon" style="background:rgba(245,158,11,0.12);">🔬</div>
-                    <div>
-                        <h3>Virtual Drug Screening</h3>
-                        <span style="font-size:0.72rem;color:var(--text-muted);">
-                            <span class="status-dot planned"></span>Phase 6 — Planned
-                        </span>
-                    </div>
-                </div>
-                <p class="desc">
-                    Molecular docking against lupus protein targets using AutoDock Vina.
-                    Pharmacophore modeling and AI-based virtual screening with DeepChem.
-                </p>
-                <div class="tags">
-                    <span class="tag yellow">AutoDock Vina</span>
-                    <span class="tag blue">RDKit</span>
-                    <span class="tag purple">DeepChem</span>
-                </div>
-                <div class="actions">
-                    <span class="btn btn-disabled">Coming Soon</span>
-                </div>
-            </div>
-
-            <div class="module-card planned">
-                <div class="module-card-header">
-                    <div class="module-icon" style="background:rgba(129,140,248,0.12);">🧠</div>
-                    <div>
-                        <h3>ML Target Predictor</h3>
-                        <span style="font-size:0.72rem;color:var(--text-muted);">
-                            <span class="status-dot planned"></span>Phase 7 — Planned
-                        </span>
-                    </div>
-                </div>
-                <p class="desc">
-                    Machine learning models (XGBoost, PyTorch) for predicting novel druggable
-                    targets from genomic and transcriptomic features. SHAP interpretability.
-                </p>
-                <div class="tags">
-                    <span class="tag blue">XGBoost</span>
-                    <span class="tag purple">PyTorch</span>
-                    <span class="tag green">SHAP</span>
-                </div>
-                <div class="actions">
-                    <span class="btn btn-disabled">Coming Soon</span>
-                </div>
-            </div>
-
-            <div class="module-card planned">
-                <div class="module-card-header">
-                    <div class="module-icon" style="background:rgba(244,114,182,0.12);">📋</div>
-                    <div>
-                        <h3>Clinical Trial Tracker</h3>
-                        <span style="font-size:0.72rem;color:var(--text-muted);">
-                            <span class="status-dot planned"></span>Phase 8 — Planned
-                        </span>
-                    </div>
-                </div>
-                <p class="desc">
-                    Live aggregation from ClinicalTrials.gov. Phase analysis, mechanism-of-action
-                    categorization, and timeline visualization of the lupus drug pipeline.
-                </p>
-                <div class="tags">
-                    <span class="tag pink">ClinicalTrials.gov</span>
-                    <span class="tag yellow">Plotly</span>
-                    <span class="tag blue">pandas</span>
-                </div>
-                <div class="actions">
-                    <span class="btn btn-disabled">Coming Soon</span>
-                </div>
-            </div>
         </div>
 
         <!-- ── Footer ────────────────────────────────────────────────── -->
@@ -583,6 +601,9 @@
                 <a href="drug_repurposing/report.html">Drug Repurposing</a>
                 <a href="bioinformatics/bioinformatics_report.html">Bioinformatics</a>
                 <a href="literature_mining/literature_report.html">Literature Mining</a>
+                <a href="virtual_screening/screening_report.html">Virtual Screening</a>
+                <a href="clinical_trials/ct_report.html">Clinical Trials</a>
+                <a href="ml_predictor/ml_report.html">ML Predictor</a>
             </div>
             <p style="margin-bottom:6px;">
                 Lupus Research Platform · An open science project

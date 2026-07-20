@@ -40,7 +40,17 @@ lupus-platform/
 │   ├── report.py         #   HTML report with per-target compound tables
 │   └── data/             #   Screening results JSON
 │
-├── tests/                # 228 tests, all passing
+├── clinical_trials/      # Phase 8 ✅ — Clinical trial tracker & analysis
+│   ├── tracker.py        #   ClinicalTrials.gov API v2 queries & KG cross-ref
+│   ├── report.py         #   HTML report with phase/MoA charts
+│   └── data/             #   Cached trial data
+│
+├── ml_predictor/         # Phase 7 ✅ — ML-driven target druggability prediction
+│   ├── predictor.py      #   XGBoost classifier with KG features & SHAP interpretability
+│   ├── report.py         #   HTML report with SHAP plots & feature importance
+│   └── data/             #   ML predictions JSON
+│
+├── tests/                # 297 tests, all passing
 │   ├── test_engine.py              # Drug repurposing scoring & tiering
 │   ├── test_knowledge_graph.py     # Graph construction & web export
 │   ├── test_report.py              # Report generation & escaping
@@ -48,7 +58,9 @@ lupus-platform/
 │   ├── test_bioinformatics_gwas.py
 │   ├── test_bioinformatics_ppi.py
 │   ├── test_literature_mining.py
-│   └── test_virtual_screening.py
+│   ├── test_virtual_screening.py
+│   ├── test_clinical_trials.py
+│   └── test_ml_predictor.py
 │
 └── .github/workflows/    # CI: Python 3.10–3.12, pytest across all modules
 ```
@@ -59,7 +71,7 @@ lupus-platform/
 
 ### 1. 🕸️ Lupus Knowledge Graph ✅
 
-An interactive graph connecting **22 genes**, **20 drugs**, **7 pathways**, and the central SLE disease node through **63+ curated relationships** across 6 edge types (TARGETS, TREATS, DRIVES, PARTICIPATES_IN, MODULATES, ASSOCIATED_WITH).
+An interactive graph connecting **35 genes**, **26 drugs**, **10 pathways**, and the central SLE disease node through **115 curated relationships** across 6 edge types (TARGETS, TREATS, DRIVES, PARTICIPATES_IN, MODULATES, ASSOCIATED_WITH).
 
 **Capabilities:**
 - Explore known gene-disease associations mined from GWAS literature
@@ -184,19 +196,49 @@ python virtual_screening/screening.py --top 15 --export-html
 
 ---
 
-### 6. 🧠 ML Target Predictor *(Planned)*
+### 6. 🧠 ML Target Predictor ✅
 
-Train machine learning models to predict novel therapeutic targets for lupus.
+Trains an XGBoost classifier on knowledge graph features to predict which currently untargeted lupus genes are most druggable, with SHAP interpretability revealing which features drive predictions.
 
-**Approach:** Feature engineering from genomic/transcriptomic data, classification for druggability, SHAP interpretability
+**Capabilities:**
+- Feature engineering from graph topology (degree, betweenness, pathway count, odds ratio)
+- One-hot encoded gene categories across 16 biological pathways
+- Stratified K-fold cross-validation with ROC-AUC scoring
+- SHAP value analysis for model interpretability
+- Ranked druggability scores for all untargeted genes
+- Feature importance bar chart + SHAP impact visualization
+
+**Run it:**
+```bash
+python ml_predictor/predictor.py --top 10 --export-html
+# Open ml_predictor/ml_report.html in a browser
+```
+
+**Tech Stack:** Python, XGBoost, SHAP, scikit-learn, matplotlib
 
 ---
 
-### 7. 📋 Clinical Trial Tracker *(Planned)*
+### 7. 📋 Clinical Trial Tracker ✅
 
-Aggregate and analyze lupus clinical trials from ClinicalTrials.gov.
+Queries ClinicalTrials.gov API v2 for lupus/SLE interventional trials, categorizes by phase and mechanism of action, and cross-references trial drugs against the knowledge graph.
 
-**Features:** Phase analysis, mechanism-of-action categorization, timeline visualization
+**Capabilities:**
+- Live ClinicalTrials.gov API v2 queries with pagination
+- Phase distribution analysis (Early Phase 1 through Phase 4)
+- 9-category mechanism of action classification (B Cell, JAK-STAT, Complement, Cell Therapy, etc.)
+- Cross-referencing against all 35 KG genes and 26 KG drugs
+- Top sponsor analysis and enrollment statistics
+- Matplotlib phase distribution + MoA bar charts
+
+**Run it:**
+```bash
+python clinical_trials/tracker.py --max 50 --export-html
+# Open clinical_trials/ct_report.html in a browser
+```
+
+**Tech Stack:** Python, requests, matplotlib, ClinicalTrials.gov API v2
+
+---
 
 ---
 
@@ -255,12 +297,24 @@ python bioinformatics/ppi.py --export-html
 # Step 4: Mine the literature
 python literature_mining/miner.py --export-html
 
-# Step 5: View results
+# Step 5: Run virtual screening
+python virtual_screening/screening.py --top 15 --export-html
+
+# Step 6: Track clinical trials
+python clinical_trials/tracker.py --export-html
+
+# Step 7: Run ML target prediction
+python ml_predictor/predictor.py --top 10 --export-html
+
+# Step 8: View results
 # Open in browser:
-#   knowledge_graph/web/index.html        — Interactive knowledge graph
-#   drug_repurposing/report.html           — Drug repurposing candidates
-#   bioinformatics/bioinformatics_report.html — Combined bioinformatics
-#   literature_mining/literature_report.html  — Literature mining
+#   knowledge_graph/web/index.html              — Interactive knowledge graph
+#   drug_repurposing/report.html                 — Drug repurposing candidates
+#   bioinformatics/bioinformatics_report.html     — Combined bioinformatics
+#   literature_mining/literature_report.html      — Literature mining
+#   virtual_screening/screening_report.html       — Virtual drug screening
+#   clinical_trials/ct_report.html               — Clinical trial tracker
+#   ml_predictor/ml_report.html                  — ML target predictor
 ```
 
 ### Docker (Alternative)
@@ -283,7 +337,7 @@ docker compose run --rm pipeline test
 
 ```bash
 python -m pytest tests/ -v
-# 228 tests, all passing
+# 297 tests, all passing
 ```
 
 ---
@@ -298,8 +352,8 @@ python -m pytest tests/ -v
 | **Phase 4** | Literature Mining (PubMed + Biomedical NER) | ✅ Complete |
 | **Phase 5** | Integration & Polish (CLI, Docker, Dashboard) | ✅ Complete |
 | **Phase 6** | Virtual Drug Screening (Molecular Docking) | ✅ Complete |
-| **Phase 7** | ML Target Predictor | ⬜ Planned |
-| **Phase 8** | Clinical Trial Tracker | ⬜ Planned |
+| **Phase 7** | ML Target Predictor | ✅ Complete |
+| **Phase 8** | Clinical Trial Tracker | ✅ Complete |
 
 ---
 
@@ -307,14 +361,16 @@ python -m pytest tests/ -v
 
 | Metric | Value |
 |---|---|
-| Knowledge Graph Nodes | 50 (22 genes, 20 drugs, 7 pathways, 1 disease) |
-| Knowledge Graph Edges | 63+ curated relationships |
+| Knowledge Graph Nodes | 72 (35 genes, 26 drugs, 10 pathways, 1 disease) |
+| Knowledge Graph Edges | 115 curated relationships |
 | Repurposing Candidates | 39 across 13 untargeted genes |
 | GWAS Studies Analyzed | ~30 SLE/lupus studies |
 | Enrichment Libraries | 4 (GO BP, KEGG, Reactome, WikiPathways) |
 | Literature Articles | ~150 PubMed abstracts |
 | Virtual Drug Screening | 20 compounds screened against 13 untargeted genes |
-| Tests | 228 passing, 0 failures |
+| Clinical Trials Tracked | 50 interventional lupus trials from ClinicalTrials.gov |
+| ML Predicted Targets | 35 genes analyzed, XGBoost + SHAP druggability scoring |
+| Tests | 297 passing, 0 failures |
 | Python Support | 3.10, 3.11, 3.12 |
 
 ---
@@ -330,8 +386,8 @@ This platform is a **research tool** intended to assist in computational drug di
 This is an open science project. Contributions in computational biology, immunology, rheumatology, data science, and software engineering are welcome.
 
 **Areas where help is especially needed:**
-- Virtual drug screening (molecular docking with AutoDock Vina)
-- ML models for target druggability prediction
-- Clinical trial data aggregation
+- Real molecular docking with AutoDock Vina and PDB structures
 - Additional data curation for genes, drugs, and pathways
-- Docker containerization
+- scispacy integration for advanced biomedical NER
+- Multi-omics data integration (GEO expression datasets)
+- Web application / REST API layer

@@ -11,6 +11,9 @@ Usage:
     python main.py repurpose        Score drug repurposing candidates
     python main.py bioinformatics   Run GWAS + enrichment + PPI
     python main.py literature       Mine PubMed for SLE articles
+    python main.py screening        Run virtual drug screening
+    python main.py trials           Track lupus clinical trials
+    python main.py ml               Train ML target predictor
     python main.py test             Run the test suite
 """
 
@@ -32,6 +35,8 @@ SCRIPTS = {
     "ppi": "bioinformatics/ppi.py",
     "literature": "literature_mining/miner.py",
     "screening": "virtual_screening/screening.py",
+    "trials": "clinical_trials/tracker.py",
+    "ml": "ml_predictor/predictor.py",
 }
 
 
@@ -49,9 +54,9 @@ def run_module(script: str, extra_args: list = None) -> int:
     if extra_args:
         cmd.extend(extra_args)
 
-    print(f"\n{'─' * 70}")
-    print(f"▶  Running: {script}")
-    print(f"{'─' * 70}")
+    print(f"\n{'=' * 70}")
+    print(f">> Running: {script}")
+    print(f"{'=' * 70}")
 
     result = subprocess.run(cmd, cwd=str(PROJECT_ROOT))
     return result.returncode
@@ -94,10 +99,10 @@ def cmd_bioinformatics(args):
         rc = run_module(SCRIPTS["gwas"], extra)
         if rc != 0:
             errors += 1
-            print("⚠️  GWAS module had errors, continuing...")
+            print("WARNING: GWAS module had errors, continuing...")
         time.sleep(0.5)
     else:
-        print("\n⏭️  Skipping GWAS analysis")
+        print("\nSKIP: Skipping GWAS analysis")
 
     # Enrichment
     if not args.skip_enrichment:
@@ -109,10 +114,10 @@ def cmd_bioinformatics(args):
         rc = run_module(SCRIPTS["enrichment"], extra)
         if rc != 0:
             errors += 1
-            print("⚠️  Enrichment module had errors, continuing...")
+            print("WARNING: Enrichment module had errors, continuing...")
         time.sleep(0.5)
     else:
-        print("\n⏭️  Skipping enrichment analysis")
+        print("\nSKIP: Skipping enrichment analysis")
 
     # PPI
     if not args.skip_ppi:
@@ -126,9 +131,9 @@ def cmd_bioinformatics(args):
         rc = run_module(SCRIPTS["ppi"], extra)
         if rc != 0:
             errors += 1
-            print("⚠️  PPI module had errors, continuing...")
+            print("WARNING: PPI module had errors, continuing...")
     else:
-        print("\n⏭️  Skipping PPI analysis")
+        print("\nSKIP: Skipping PPI analysis")
 
     return 0 if errors == 0 else 1
 
@@ -148,36 +153,37 @@ def cmd_literature(args):
 
 
 def cmd_run_all(args):
-    """Run the complete pipeline in dependency order (5 steps)."""
+    """Run the complete pipeline in dependency order (7 steps)."""
     import json
     start_time = time.time()
     errors = 0
 
     print("=" * 70)
-    print("🚀 LUPUS RESEARCH PLATFORM — FULL PIPELINE")
+    print("LUPUS RESEARCH PLATFORM -- FULL PIPELINE")
     print("=" * 70)
+    print("\n7 Steps: KG → Repurpose → Bioinformatics → Literature → Screening → Trials → ML")
 
     # Step 1: Knowledge Graph (prerequisite for all other modules)
-    print("\n📦 STEP 1/5: Knowledge Graph")
+    print("\n[STEP 1/7] Knowledge Graph")
     rc = run_module(SCRIPTS["kg"], ["--analyze", "--export"])
     if rc != 0:
-        print("❌ Knowledge graph build failed. Cannot continue.")
+        print("ERROR: Knowledge graph build failed. Cannot continue.")
         return 1
     time.sleep(0.5)
 
     # Step 2: Drug Repurposing (depends on KG)
-    print("\n📦 STEP 2/5: Drug Repurposing")
+    print("\n[STEP 2/7] Drug Repurposing")
     extra = ["--top", "15"]
     if args.export_html:
         extra.append("--export-html")
     rc = run_module(SCRIPTS["repurpose"], extra)
     if rc != 0:
         errors += 1
-        print("⚠️  Drug repurposing had errors, continuing...")
+        print("WARNING: Drug repurposing had errors, continuing...")
     time.sleep(0.5)
 
     # Step 3: Bioinformatics (depends on KG + drug candidates)
-    print("\n📦 STEP 3/5: Bioinformatics")
+    print("\n[STEP 3/7] Bioinformatics")
     bio_extra = []
     if args.no_cache:
         bio_extra.append("--no-cache")
@@ -186,11 +192,11 @@ def cmd_run_all(args):
         rc = run_module(SCRIPTS[bio_module], bio_extra)
         if rc != 0:
             errors += 1
-            print(f"⚠️  {bio_module} module had errors, continuing...")
+            print(f"WARNING: {bio_module} module had errors, continuing...")
         time.sleep(0.5)
 
     if args.export_html:
-        print("\n📋 Generating consolidated bioinformatics report...")
+        print("\n[INFO] Generating consolidated bioinformatics report...")
         try:
             from bioinformatics.report import generate_bioinformatics_report
             bio_data = PROJECT_ROOT / "bioinformatics" / "data"
@@ -224,13 +230,13 @@ def cmd_run_all(args):
                 hub_scores, ppi_crossref_data, ppi_graph,
                 gwas_results, gwas_crossref,
             )
-            print(f"   ✅ Consolidated bioinformatics report: {report_path}")
+            print(f"   OK: Consolidated bioinformatics report: {report_path}")
         except Exception as e:
-            print(f"   ⚠️  Could not generate consolidated report: {e}")
+            print(f"   WARNING: Could not generate consolidated report: {e}")
             errors += 1
 
     # Step 4: Literature Mining (depends on KG + candidates)
-    print("\n📦 STEP 4/5: Literature Mining")
+    print("\n[STEP 4/7] Literature Mining")
     lit_extra = []
     if args.no_cache:
         lit_extra.append("--no-cache")
@@ -239,26 +245,49 @@ def cmd_run_all(args):
     rc = run_module(SCRIPTS["literature"], lit_extra)
     if rc != 0:
         errors += 1
-        print("⚠️  Literature mining had errors, continuing...")
+        print("WARNING: Literature mining had errors, continuing...")
 
     # Step 5: Virtual Screening (depends on KG + drug candidates)
-    print("\n📦 STEP 5/5: Virtual Drug Screening")
+    print("\n[STEP 5/7] Virtual Drug Screening")
     screen_extra = []
     if args.export_html:
         screen_extra.append("--export-html")
     rc = run_module(SCRIPTS["screening"], screen_extra)
     if rc != 0:
         errors += 1
-        print("⚠️  Virtual screening had errors, continuing...")
+        print("WARNING: Virtual screening had errors, continuing...")
+
+    # Step 6: Clinical Trials (depends on KG)
+    print("\n[STEP 6/7] Clinical Trial Tracker")
+    ct_extra = []
+    if args.no_cache:
+        ct_extra.append("--no-cache")
+    if args.export_html:
+        ct_extra.append("--export-html")
+    rc = run_module(SCRIPTS["trials"], ct_extra)
+    if rc != 0:
+        errors += 1
+        print("WARNING: Clinical trial tracker had errors, continuing...")
+    time.sleep(0.5)
+
+    # Step 7: ML Target Predictor (depends on KG)
+    print("\n[STEP 7/7] ML Target Predictor")
+    ml_extra = []
+    if args.export_html:
+        ml_extra.append("--export-html")
+    rc = run_module(SCRIPTS["ml"], ml_extra)
+    if rc != 0:
+        errors += 1
+        print("WARNING: ML predictor had errors, continuing...")
 
     elapsed = time.time() - start_time
     print("\n" + "=" * 70)
     if errors == 0:
-        print(f"✅ Pipeline complete! ({elapsed:.0f}s elapsed, 0 errors)")
+        print(f"Pipeline complete! ({elapsed:.0f}s elapsed, 0 errors)")
     else:
-        print(f"⚠️  Pipeline finished with {errors} error(s) ({elapsed:.0f}s elapsed)")
+        print(f"WARNING: Pipeline finished with {errors} error(s) ({elapsed:.0f}s elapsed)")
     print("=" * 70)
-    print("\n📂 Generated files:")
+    print("\nGenerated files:")
     if args.export_html:
         print("   knowledge_graph/web/graph_data.json     — Interactive KG data")
         print("   knowledge_graph/web/index.html           — Interactive KG viewer")
@@ -266,9 +295,11 @@ def cmd_run_all(args):
         print("   bioinformatics/bioinformatics_report.html — Combined bioinformatics")
         print("   literature_mining/literature_report.html     — Literature mining")
         print("   virtual_screening/screening_report.html      — Virtual screening")
+        print("   clinical_trials/ct_report.html               — Clinical trial tracker")
+        print("   ml_predictor/ml_report.html                  — ML target predictor")
     else:
-        print("   knowledge_graph/web/graph_data.json       — Interactive KG data")
-        print("   knowledge_graph/web/index.html            — Interactive KG viewer")
+        print("   knowledge_graph/web/graph_data.json          — Interactive KG data")
+        print("   knowledge_graph/web/index.html               — Interactive KG viewer")
     print("\n   Run with --export-html to generate all HTML reports.")
     print("=" * 70)
 
@@ -287,6 +318,32 @@ def cmd_screening(args):
     if getattr(args, 'use_vina', False):
         extra.append("--use-vina")
     return run_module(SCRIPTS["screening"], extra)
+
+
+def cmd_trials(args):
+    """Run clinical trial tracker."""
+    extra = []
+    if args.max:
+        extra.extend(["--max", str(args.max)])
+    if args.query:
+        extra.extend(["--query", args.query])
+    if args.no_cache:
+        extra.append("--no-cache")
+    if args.export_html:
+        extra.append("--export-html")
+    return run_module(SCRIPTS["trials"], extra)
+
+
+def cmd_ml(args):
+    """Run ML target predictor."""
+    extra = []
+    if args.top:
+        extra.extend(["--top", str(args.top)])
+    if args.export_html:
+        extra.append("--export-html")
+    if getattr(args, 'no_shap', False):
+        extra.append("--no-shap")
+    return run_module(SCRIPTS["ml"], extra)
 
 
 def cmd_test(args):
@@ -321,7 +378,7 @@ Examples:
     # ── run-all ─────────────────────────────────────────────────────────
     run_all_parser = subparsers.add_parser(
         "run-all",
-        help="Run the complete pipeline (KG > repurpose > bioinformatics > literature > screening)",
+        help="Run the complete pipeline (KG > repurpose > bioinformatics > literature > screening > trials > ml)",
     )
     run_all_parser.add_argument(
         "--export-html", action="store_true",
@@ -422,6 +479,44 @@ Examples:
         help="Quiet mode (less output)",
     )
 
+    # ── trials ────────────────────────────────────────────────────────
+    ct_parser = subparsers.add_parser(
+        "trials", help="Track lupus clinical trials from ClinicalTrials.gov",
+    )
+    ct_parser.add_argument(
+        "--max", type=int, default=100,
+        help="Max trials to fetch (default: 100)",
+    )
+    ct_parser.add_argument(
+        "--query", type=str, default="lupus OR SLE",
+        help="ClinicalTrials.gov query (default: 'lupus OR SLE')",
+    )
+    ct_parser.add_argument(
+        "--no-cache", action="store_true",
+        help="Skip cache, re-fetch from ClinicalTrials.gov",
+    )
+    ct_parser.add_argument(
+        "--export-html", action="store_true",
+        help="Generate HTML report",
+    )
+
+    # ── ml ────────────────────────────────────────────────────
+    ml_parser = subparsers.add_parser(
+        "ml", help="Train ML model to predict novel druggable targets",
+    )
+    ml_parser.add_argument(
+        "--top", type=int, default=15,
+        help="Number of top predicted targets (default: 15)",
+    )
+    ml_parser.add_argument(
+        "--export-html", action="store_true",
+        help="Generate HTML report with SHAP charts",
+    )
+    ml_parser.add_argument(
+        "--no-shap", action="store_true",
+        help="Skip SHAP analysis (faster)",
+    )
+
     # ── screening ───────────────────────────────────────────────────────
     screen_parser = subparsers.add_parser(
         "screening", help="Run virtual drug screening against lupus targets",
@@ -457,6 +552,8 @@ Examples:
         "bioinformatics": cmd_bioinformatics,
         "literature": cmd_literature,
         "screening": cmd_screening,
+        "trials": cmd_trials,
+        "ml": cmd_ml,
         "test": cmd_test,
     }
 
