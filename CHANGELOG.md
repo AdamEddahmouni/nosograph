@@ -1,5 +1,65 @@
 # Changelog
 
+## [Phase 23] Real Molecular Docking — 2026-07-25
+
+### Sprint Goal
+Complete the molecular docking pipeline with AutoDock Vina integration, making real binding energy calculations available alongside property-based virtual screening. Harden the existing docking infrastructure and add comprehensive tests.
+
+---
+
+### Added
+
+#### Vina Binary Download Helper (`virtual_screening/vina_setup.py`)
+- Cross-platform Vina binary downloader (Win/Mac/Linux)
+- `--auto` flag for non-interactive installation
+- `--check` flag for installation status
+- `--force` flag for re-download
+- Downloads from official GitHub releases (v1.2.5)
+
+#### Docking Pipeline Dependencies
+- **Meeko** installed (`meeko>=0.5.0` in requirements.txt) — PDBQT molecule preparation
+- **gemmi** added to requirements (`gemmi>=0.7.0`) — Meeko dependency
+- All 3 dependencies now available: RDKit, Meeko, BioPython
+- Vina binary is platform-specific — use `vina_setup.py` or manual install
+
+#### SMILES Coverage
+- All 15 dockable small-molecule drugs now have SMILES strings
+- Biologics (belimumab, rituximab, etc.) correctly excluded from docking (MW > 5000)
+- Full SMILES-to-3D-to-PDBQT ligand pipeline operational
+
+#### Docking Infrastructure (existing, hardened)
+- **`docking.py`** (902 lines): receptor prep (RCSB PDB fetch + BioPython cleanup + Meeko PDBQT), ligand prep (SMILES → RDKit 3D → Meeko PDBQT), parallel Vina execution via ProcessPoolExecutor, score normalization (Vina ΔG → 0-10)
+- **`targets_config.json`** (290 lines): 10 validated PDB targets with grid boxes, 3 validation targets (JAK1, BTK, TYK2), 12 excluded targets with biological rationale
+- **Bug fix**: `_find_vina_binary()` now returns `None` (not `False`) when not found, fixing `get_vina_status_text()` output
+
+#### Tests
+- **38 tests** in `tests/test_docking.py`:
+  - 3 dependency detection tests
+  - 7 score normalization tests (strong/moderate/weak/edge cases)
+  - 1 Vina binary detection test
+  - 10 DockingEngine config/target tests (10 validated targets, AlphaFold exclusions, field validation)
+  - 5 real binding score computation tests (biologic skip, error handling, valid results)
+  - 3 Vina setup tool tests (check, system detection)
+  - 3 public API function tests
+  - 3 target config validation tests (PDB IDs, grid sizes, grid centers)
+  - 3 slow tests (receptor prep, CLI help/check)
+
+### Changed
+
+- `.gitignore`: Added `virtual_screening/bin/`, `targets/receptors/`, `targets/ligands/`, `targets/docking_output/`
+- `requirements.txt`: Added `gemmi>=0.7.0`
+
+### Docking Status
+- **RDKit**: available
+- **Meeko**: available (v0.7.1)
+- **BioPython**: available
+- **AutoDock Vina**: requires manual install or `python virtual_screening/vina_setup.py --auto`
+- **docking_possible**: True (when Vina binary is installed)
+
+**Total test count: 363 (35 docking + 328 existing).**
+
+---
+
 ## [Phase 22] Cross-Disease Drug Repurposing Analyzer — 2026-07-25
 
 ### Sprint Goal

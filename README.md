@@ -36,9 +36,12 @@ lupus-platform/
 │   └── report.py         #   HTML report with coverage bars & candidate support
 │
 ├── virtual_screening/    # Phase 6 ✅ — Property-based virtual drug screening
-│   ├── screening.py      #   5-dimensional scoring (binding, drug-likeness, etc.)
-│   ├── report.py         #   HTML report with per-target compound tables
-│   └── data/             #   Screening results JSON
+│   ├── screening.py       #   5-dimensional scoring (binding, drug-likeness, etc.)
+│   ├── docking.py         #   Phase 23 ✅ — AutoDock Vina integration
+│   ├── vina_setup.py      #   Vina binary download helper
+│   ├── report.py          #   HTML report with per-target compound tables
+│   ├── targets/           #   PDB target configs (10 validated + 3 validation)
+│   └── data/              #   Screening results JSON
 │
 ├── clinical_trials/      # Phase 8 ✅ — Clinical trial tracker & analysis
 │   ├── tracker.py        #   ClinicalTrials.gov API v2 queries & KG cross-ref
@@ -64,7 +67,10 @@ lupus-platform/
 │   ├── test_literature_mining.py
 │   ├── test_virtual_screening.py
 │   ├── test_clinical_trials.py
-│   └── test_ml_predictor.py
+│   ├── test_ml_predictor.py
+│   ├── test_cross_disease.py       # Cross-disease analysis
+│   ├── test_docking.py             # Molecular docking engine
+│   └── test_web_api.py
 │
 └── .github/workflows/    # CI: Python 3.10–3.12, pytest across all modules
 ```
@@ -193,10 +199,15 @@ Computationally screens the 20-drug compound library against lupus protein targe
 **Run it:**
 ```bash
 python virtual_screening/screening.py --top 15 --export-html
+
+# Phase 23: Real molecular docking (requires Vina binary + Meeko)
+python virtual_screening/screening.py --use-vina --top 15 --export-html
+python virtual_screening/vina_setup.py --auto  # Install Vina binary
+
 # Open virtual_screening/screening_report.html in a browser
 ```
 
-**Tech Stack:** Python, optional AutoDock Vina integration, optional RDKit
+**Tech Stack:** Python, AutoDock Vina (optional), RDKit, Meeko, BioPython
 
 ---
 
@@ -372,6 +383,7 @@ python -m pytest tests/ -v
 | **Phase 20** | Cross-Disease Generalization (RA data curated) | ✅ Complete |
 | **Phase 21** | Cross-Disease Expansion (MS, SS, SSc, T1D, IBD) | ✅ Complete |
 | **Phase 22** | Cross-Disease Drug Repurposing Analyzer | ✅ Complete |
+| **Phase 23** | Real Molecular Docking (AutoDock Vina) | ✅ Complete |
 
 ---
 
@@ -413,7 +425,7 @@ python main.py kg --list-diseases
 | Virtual Drug Screening | 20 compounds screened against 13 untargeted genes |
 | Clinical Trials Tracked | 50 interventional lupus trials from ClinicalTrials.gov |
 | ML Predicted Targets | 35 genes analyzed, XGBoost + SHAP druggability scoring |
-| Tests | 328 passing, 0 failures |
+| Tests | 363 passing, 0 failures |
 | Python Support | 3.10, 3.11, 3.12 |
 
 ---

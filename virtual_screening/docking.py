@@ -121,7 +121,7 @@ def _find_vina_binary() -> str | None:
                 _VINA_PATH = str(p)
                 return _VINA_PATH
 
-    _VINA_PATH = False  # Tried, not found
+    _VINA_PATH = None  # Tried, not found
     return None
 
 
