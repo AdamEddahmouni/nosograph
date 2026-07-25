@@ -24,7 +24,7 @@ import networkx as nx
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from knowledge_graph.config import load_genes
+from knowledge_graph.config import load_genes as load_kg_genes
 
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -47,7 +47,7 @@ DEFAULT_CONFIDENCE = 0.4  # Medium confidence
 
 def load_genes() -> dict:
     """Load lupus genes from the knowledge graph."""
-    data = load_genes()
+    data = load_kg_genes()
     return {g["id"]: g for g in data["genes"]}
 
 

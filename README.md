@@ -50,7 +50,11 @@ lupus-platform/
 │   ├── report.py         #   HTML report with SHAP plots & feature importance
 │   └── data/             #   ML predictions JSON
 │
-├── tests/                # 297 tests, all passing
+├── cross_disease/        # Phase 22 ✅ — Cross-disease analyzer across 7 autoimmune diseases
+│   ├── analyzer.py        #   Shared genes/drugs/pathways, disease similarity, multi-disease scoring
+│   └── report.py          #   HTML report with radar chart, similarity matrix, drug rankings
+│
+├── tests/                # 328 tests, all passing
 │   ├── test_engine.py              # Drug repurposing scoring & tiering
 │   ├── test_knowledge_graph.py     # Graph construction & web export
 │   ├── test_report.py              # Report generation & escaping
@@ -366,7 +370,8 @@ python -m pytest tests/ -v
 | **Phase 18** | LLM-Powered Evidence Extraction | ✅ Complete |
 | **Phase 19** | Continuous Evidence Monitor | ✅ Complete |
 | **Phase 20** | Cross-Disease Generalization (RA data curated) | ✅ Complete |
-| **Phase 21+** | MS, Sjögren's, SSc, T1D, IBD data curation | 🔜 Planned |
+| **Phase 21** | Cross-Disease Expansion (MS, SS, SSc, T1D, IBD) | ✅ Complete |
+| **Phase 22** | Cross-Disease Drug Repurposing Analyzer | ✅ Complete |
 
 ---
 
@@ -378,7 +383,11 @@ The platform supports multiple autoimmune diseases through per-disease data dire
 knowledge_graph/data/
 ├── sle/                       # Systemic Lupus Erythematosus
 ├── ra/                        # Rheumatoid Arthritis (Phase 20)
-└── (ms, ss, ssc, t1d, ibd planned)
+├── ms/                        # Multiple Sclerosis (Phase 21)
+├── ss/                        # Sjögren's Syndrome (Phase 21)
+├── ssc/                       # Systemic Sclerosis (Phase 21)
+├── t1d/                       # Type 1 Diabetes (Phase 21)
+└── ibd/                       # Inflammatory Bowel Disease (Phase 21)
 ```
 
 **CLI Usage:**
@@ -394,8 +403,9 @@ python main.py kg --list-diseases
 
 | Metric | Value |
 |---|---|
-| Knowledge Graph Nodes | 72 (35 genes, 26 drugs, 10 pathways, 1 disease) |
-| Knowledge Graph Edges | 115 curated relationships |
+| Knowledge Graph Nodes (SLE) | 72 (35 genes, 26 drugs, 10 pathways, 1 disease) |
+| Knowledge Graph Edges (SLE) | 115 curated relationships |
+| Cross-Disease Support | 7 diseases: SLE, RA, MS, SS, SSc, T1D, IBD |
 | Repurposing Candidates | 39 across 13 untargeted genes |
 | GWAS Studies Analyzed | ~30 SLE/lupus studies |
 | Enrichment Libraries | 4 (GO BP, KEGG, Reactome, WikiPathways) |
@@ -403,7 +413,7 @@ python main.py kg --list-diseases
 | Virtual Drug Screening | 20 compounds screened against 13 untargeted genes |
 | Clinical Trials Tracked | 50 interventional lupus trials from ClinicalTrials.gov |
 | ML Predicted Targets | 35 genes analyzed, XGBoost + SHAP druggability scoring |
-| Tests | 297 passing, 0 failures |
+| Tests | 328 passing, 0 failures |
 | Python Support | 3.10, 3.11, 3.12 |
 
 ---

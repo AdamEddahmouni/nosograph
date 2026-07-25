@@ -1,5 +1,110 @@
 # Changelog
 
+## [Phase 22] Cross-Disease Drug Repurposing Analyzer — 2026-07-25
+
+### Sprint Goal
+Load all 7 autoimmune disease knowledge graphs and compute cross-disease shared biology, disease similarity, multi-disease drug scoring, and cross-disease repurposing recommendations.
+
+---
+
+### Added
+
+#### Cross-Disease Module (`cross_disease/`)
+- **`analyzer.py`** — Core analysis engine:
+  - Loads all 7 disease KGs (SLE, RA, MS, SS, SSc, T1D, IBD) via `knowledge_graph.config`
+  - Computes shared genes (PTPN22 in 6 diseases, TYK2 in 4, etc.) with per-disease details
+  - Computes shared drugs (rituximab in 5 diseases, prednisone in 4, etc.)
+  - Computes shared pathways across diseases via Jaccard similarity
+  - Disease similarity matrix: pairwise Jaccard similarity on genes (40%), drugs (35%), pathways (25%)
+  - 5-dimensional multi-disease drug scoring (97 drugs across all 7 diseases):
+    - Disease Coverage (30%), Target Centrality (25%), Pathway Breadth (20%), Mechanistic Transferability (15%), Novelty (10%)
+  - Cross-disease repurposing: finds drugs from one disease's KG that target genes in another disease's KG
+  - 4-tier classification: Tier 1 (≥7.5) to Tier 4 (<4.5)
+- **`report.py`** — Standalone HTML report with:
+  - Disease profile overview cards for all 7 diseases with gene/drug/pathway counts
+  - Disease similarity matrix (21 pairwise comparisons)
+  - Interactive Chart.js radar chart (top 5 multi-disease drugs across 5 dimensions)
+  - Ranked multi-disease drug candidates table
+  - Shared genes/drugs/pathways tables
+  - Cross-disease repurposing opportunity table
+  - Methodology section with all scoring weights
+
+#### CLI & Dashboard
+- CLI: `python main.py cross-disease --top 20 --export-html`
+- Subcommand `cross-disease` already integrated into `main.py`
+- Output saved to `cross_disease/data/cross_disease_analysis.json`
+
+#### Tests
+- **31 tests** in `tests/test_cross_disease.py`:
+  - 3 data loading tests (7 diseases, correct keys, SLE gene count)
+  - 7 normalization/Jaccard unit tests
+  - 9 shared gene/drug/pathway unit tests
+  - 3 disease similarity tests (matrix size=21 pairs, SLE↔RA highest)
+  - 3 multi-disease drug scoring tests (97 drugs, sorted, tiering)
+  - 3 CLI print function tests (analyze, top drugs, repurposing)
+  - 3 slow tests (HTML report, CLI help, CLI run)
+
+### Technical Improvements
+
+- Fixed PPI recursion bug in `bioinformatics/ppi.py` where `load_genes()` called itself instead of the KG config loader
+
+### Results
+
+- **26 shared genes** across 2+ diseases (PTPN22 in 6, TYK2/HLA-DRB1 in 4)
+- **24 shared drugs** across 2+ diseases (rituximab in 5, prednisone/mycophenolate in 4)
+- **5 shared pathways** (IL-6/JAK-STAT, T cell costim, complement, NF-κB, Type I IFN)
+- **SLE ↔ RA** is the most similar disease pair (0.2013 Jaccard)
+- **97 multi-disease drugs scored**, top candidate: Rituximab (5.68/10, 5 diseases)
+- **3-dimensional similarity scoring**: gene (40%), drug (35%), pathway (25%)
+
+**All 31 cross-disease tests pass. Platform now spans 22 phases. Total test count: 328.**
+
+---
+
+## [Phase 21] Cross-Disease Expansion — 2026-07-25
+
+### Sprint Goal
+Curate knowledge graph data for all 5 remaining autoimmune diseases to complete Phase 21 and enable cross-disease analysis across 7 diseases.
+
+---
+
+### Added
+
+#### Multiple Sclerosis (MS) — `knowledge_graph/data/ms/`
+- **22 curated risk genes**: HLA-DRB1 (OR 3.1), IL7R, IL2RA, CD40, CD58, TNFRSF1A, IRF8, CYP27B1, STAT3, TYK2, CLEC16A, EVI5, CD6, CD86, CBLB, RGS1, CXCR5, TNFSF14, CD226, MAPK1, TNFRSF13B, IL22RA2
+- **20 approved/investigational drugs**: ocrelizumab, ofatumumab, ublituximab, rituximab, natalizumab, fingolimod, siponimod, ozanimod, ponesimod, dimethyl fumarate, diroximel fumarate, teriflunomide, cladribine, alemtuzumab, glatiramer acetate, interferon beta, evobrutinib, tolebrutinib, mitoxantrone, methylprednisolone
+- **7 pathways**: B Cell Depletion, S1P Modulation, Integrin/Adhesion Blockade, Th17/IL-17 Axis, NF-κB/NRF2, Type I IFN/JAK-STAT, BTK Signaling
+- **Graph**: 50 nodes, 61 edges across 4 edge types
+
+#### Sjögren's Syndrome (SS) — `knowledge_graph/data/ss/`
+- **16 curated risk genes**: HLA-DRB1 (OR 2.5), STAT4, IRF5, TNFAIP3, BLK, BANK1, TNIP1, IL12A, BAFF, PTPN22, FCGR2A, ETS1, IKZF1, CXCR5, TNFSF4, CHRM3
+- **12 approved/investigational drugs**: hydroxychloroquine, rituximab, belimumab, ianalumab, iscalimab, abatacept, leflunomide, mycophenolate, prednisone, pilocarpine, cevimeline, cyclosporine ophthalmic
+- **5 pathways**: Type I IFN Signature, B Cell Hyperactivity/BAFF, Tfh-Germinal Center Axis, TLR7/9 Innate Sensing, JAK-STAT Signaling
+
+#### Systemic Sclerosis (SSc) — `knowledge_graph/data/ssc/`
+- **18 curated risk genes**: HLA-DPB1, STAT4, IRF5, TNFAIP3, BANK1, BLK, CD247, TNIP1, DNASE1L3, PTPN22, IRF8, IL12A, TLR2, TNFSF4, IL21, PPARG, FCGR2B, TGFB1
+- **18 approved/investigational drugs**: nintedanib, tocilizumab, mycophenolate, cyclophosphamide, rituximab, bosentan, ambrisentan, macitentan, sildenafil, tadalafil, treprostinil, selexipag, prednisone, methotrexate, lenabasum, fresolimumab, riociguat, belimumab
+- **6 pathways**: TGF-β/Fibrosis, Endothelin/Vasculopathy, IL-6/JAK-STAT, B Cell Dysregulation, Innate Immune/TLR4
+
+#### Type 1 Diabetes (T1D) — `knowledge_graph/data/t1d/`
+- **18 curated risk genes**: HLA-DQA1, HLA-DQB1, PTPN22, INS, CTLA4, IL2RA, IFIH1, PTPN2, CTSH, CLEC16A, IL10, GLIS3, SH2B3, ERBB3, C1QTNF6, UBASH3A, BACH2
+- **15 approved/investigational drugs**: insulin (glargine/lispro/aspart/degludec), teplizumab, otelixizumab, golimumab, abatacept, rituximab, alefacept, anti-thymocyte globulin (ATG), low-dose IL-2, verapamil, GAD-alum, ustekinumab
+- **6 pathways**: T Cell Autoimmunity/Insulitis, β Cell ER Stress/Apoptosis, IL-2/Treg Dysfunction, Type I Interferon, Costimulation/Immune Checkpoint, Antigen Presentation (HLA Class II)
+
+#### Inflammatory Bowel Disease (IBD) — `knowledge_graph/data/ibd/`
+- **22 curated risk genes**: NOD2, ATG16L1, IL23R, IRGM, LRRK2, TNFSF15, IL10, IL10RA, PTPN22, STAT3, JAK2, IL12B, CARD9, NKX2-3, MST1, FUT2, HNF4A, CCR6, SMAD3, SLC22A5, TYK2, ICOSLG
+- **24 approved drugs**: infliximab, adalimumab, certolizumab pegol, golimumab, vedolizumab, ustekinumab, risankizumab, mirikizumab, tofacitinib, upadacitinib, ozanimod, etrasimod, natalizumab, azathioprine, 6-mercaptopurine, methotrexate, mesalamine, budesonide, prednisone, cyclosporine, tacrolimus
+- **7 pathways**: IL-23/Th17 Axis, JAK-STAT, Leukocyte Trafficking/Integrins, TNF-alpha, Epithelial Barrier/Autophagy, IL-10 Anti-inflammatory, S1P Modulation
+
+#### Documentation
+- README: Phase 21 marked ✅ Complete, cross-disease section lists all 7 diseases
+- Stats table updated with cross-disease support count
+- All 7 diseases auto-discovered by `build_graph.py --list-diseases`
+
+**All 5 disease datasets build successfully as knowledge graphs. Platform now spans 7 autoimmune diseases across 21 phases.**
+
+---
+
 ## [Phase 5] Integration & Polish — 2026-07-19
 
 ### Sprint Goal
