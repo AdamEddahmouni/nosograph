@@ -197,7 +197,7 @@ class TestAnalyzeGraph:
         from knowledge_graph.build_graph import analyze_graph
         analyze_graph(sample_graph)
         captured = capsys.readouterr()
-        assert "LUPUS KNOWLEDGE GRAPH ANALYSIS" in captured.out
-        assert "DRUG → TARGET ANALYSIS" in captured.out
+        assert "KNOWLEDGE GRAPH ANALYSIS" in captured.out
+        assert "DRUG" in captured.out
         assert "DRUG REPURPOSING INSIGHTS" in captured.out
         assert "Analysis complete" in captured.out

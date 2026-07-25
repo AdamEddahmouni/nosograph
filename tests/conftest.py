@@ -8,13 +8,15 @@ from pathlib import Path
 import pytest
 
 PROJECT_ROOT = Path(__file__).parent.parent
-KG_DATA_DIR = PROJECT_ROOT / "knowledge_graph" / "data"
 DR_DATA_DIR = PROJECT_ROOT / "drug_repurposing" / "data"
+
+from knowledge_graph.config import load_genes
 
 
 @pytest.fixture(scope="session")
 def kg_data_dir():
-    return KG_DATA_DIR
+    from knowledge_graph.config import DATA_ROOT
+    return DATA_ROOT / "sle"
 
 
 @pytest.fixture(scope="session")
@@ -32,7 +34,7 @@ def sample_graph():
 @pytest.fixture(scope="session")
 def sample_genes():
     """Load gene data indexed by gene ID."""
-    data = json.loads((KG_DATA_DIR / "genes.json").read_text(encoding="utf-8"))
+    data = load_genes()
     return {g["id"]: g for g in data["genes"]}
 
 

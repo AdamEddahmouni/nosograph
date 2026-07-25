@@ -1095,3 +1095,290 @@ class TestGenerateLiteratureReport:
 
         # When no spaCy and no novel entities, it should show a hint paragraph
         assert "spaCy biomedical NER is not active" in html_content
+
+
+# ═══════════════════════════════════════════════════════════════════════
+#  content_extractor.py — Content extraction tests
+# ═══════════════════════════════════════════════════════════════════════
+
+class TestSplitSentences:
+    """Tests for _split_sentences()."""
+
+    def test_splits_basic_sentences(self):
+        from literature_mining.content_extractor import _split_sentences
+
+        text = "First sentence about lupus. Second sentence about kidneys. Third sentence."
+        sentences = _split_sentences(text)
+        assert len(sentences) == 3
+        assert sentences[0] == "First sentence about lupus."
+        assert sentences[1] == "Second sentence about kidneys."
+
+    def test_preserves_abbreviations(self):
+        """Should not split on 'et al.', 'e.g.', etc."""
+        from literature_mining.content_extractor import _split_sentences
+
+        text = "Smith et al. found that ibrutinib works. The results were significant."
+        sentences = _split_sentences(text)
+        assert len(sentences) == 2
+        assert "et al." in sentences[0]
+
+    def test_preserves_decimal_numbers(self):
+        """Should not split on decimal points."""
+        from literature_mining.content_extractor import _split_sentences
+
+        text = "The dose was 5.3 mg. Patients tolerated it well."
+        sentences = _split_sentences(text)
+        assert len(sentences) == 2
+        # 5.3 followed by space+lowercase mg should not trigger split
+        assert sentences[0].startswith("The dose was")
+
+    def test_handles_question_marks(self):
+        from literature_mining.content_extractor import _split_sentences
+
+        text = "What is the mechanism? Ibrutinib blocks BTK. This is important."
+        sentences = _split_sentences(text)
+        assert len(sentences) == 3
+
+    def test_empty_string(self):
+        from literature_mining.content_extractor import _split_sentences
+
+        assert _split_sentences("") == []
+
+    def test_single_sentence(self):
+        from literature_mining.content_extractor import _split_sentences
+
+        text = "Only one sentence here."
+        sentences = _split_sentences(text)
+        assert len(sentences) == 1
+        assert sentences[0] == "Only one sentence here."
+
+    def test_handles_Dr_abbreviation(self):
+        from literature_mining.content_extractor import _split_sentences
+
+        text = "Dr. Smith treated the patient. Ibrutinib was effective."
+        sentences = _split_sentences(text)
+        assert len(sentences) == 2
+        assert "Dr. Smith" in sentences[0]
+
+    def test_handles_e_g_abbreviation(self):
+        from literature_mining.content_extractor import _split_sentences
+
+        text = "Several kinases, e.g. BTK and TYK2, are targets. Trials are ongoing."
+        sentences = _split_sentences(text)
+        assert len(sentences) == 2
+        assert "e.g. BTK" in sentences[0]
+
+
+class TestContentExtractor:
+    """Tests for ContentExtractor class."""
+
+    @pytest.fixture
+    def known_terms(self):
+        return {"btk", "ibrutinib", "interferon", "nephritis", "b cell receptor"}
+
+    @pytest.fixture
+    def extractor(self, known_terms):
+        from literature_mining.content_extractor import ContentExtractor
+        return ContentExtractor(known_terms=known_terms)
+
+    def test_filters_to_relevant_sentences(self, extractor):
+        """Only sentences containing known entity terms should be kept."""
+        abstract = (
+            "This study examined the role of BTK in lupus pathogenesis. "
+            "We measured autoantibody levels. "
+            "Ibrutinib treatment significantly reduced proteinuria."
+        )
+        filtered = extractor.filter_abstract(abstract)
+        assert "BTK" in filtered
+        assert "Ibrutinib treatment" in filtered
+        assert "measured autoantibody levels" not in filtered
+
+    def test_falls_back_to_full_abstract_when_no_matches(self, extractor):
+        """When no sentences match any term, return the full abstract."""
+        abstract = (
+            "Plants use photosynthesis to convert sunlight into energy. "
+            "Chlorophyll is the primary pigment involved. "
+            "Carbon dioxide is absorbed through stomata."
+        )
+        filtered = extractor.filter_abstract(abstract)
+        assert filtered == abstract
+        assert extractor.stats["fully_filtered"] == 1
+
+    def test_empty_abstract(self, extractor):
+        assert extractor.filter_abstract("") == ""
+        assert extractor.filter_abstract(None) is None
+
+    def test_empty_known_terms(self):
+        """With no known terms, all content should pass through."""
+        from literature_mining.content_extractor import ContentExtractor
+
+        extractor = ContentExtractor(known_terms=set())
+        abstract = "Ibrutinib is a BTK inhibitor."
+        filtered = extractor.filter_abstract(abstract)
+        assert filtered == abstract
+
+    def test_short_term_filtered(self, extractor):
+        """Terms < 4 chars should not match (avoids false positives on 'BTK' as substring)."""
+        e = extractor
+        e.known_terms = {"btk", "il"}  # "il" is 2 chars, should be ignored
+        abstract = "The IL-6 pathway is important. BTK is a kinase."
+        filtered = e.filter_abstract(abstract)
+        # "il" is too short (len < 4), so only BTK sentence should match
+        assert "BTK" in filtered
+
+    def test_tracks_statistics(self, extractor):
+        abstract = (
+            "BTK inhibition reduces B cell activation. "
+            "This is an irrelevant methods sentence. "
+            "Ibrutinib was well tolerated in patients."
+        )
+        extractor.filter_abstract(abstract)
+        stats = extractor.stats
+        assert stats["abstracts_processed"] == 1
+        assert stats["total_sentences"] == 3
+        assert stats["kept_sentences"] == 2
+        assert stats["total_tokens"] > stats["kept_tokens"]
+        assert stats["kept_tokens"] > 0
+
+    def test_filter_articles_batch(self, extractor):
+        articles = [
+            {
+                "pmid": "123",
+                "title": "BTK study",
+                "abstract": "BTK is a target in B cell malignancies. Methods used ELISA.",
+            },
+            {
+                "pmid": "456",
+                "title": "Plant biology",
+                "abstract": "Photosynthesis occurs in chloroplasts. Light is essential.",
+            },
+        ]
+        filtered, stats = extractor.filter_articles(articles)
+        assert len(filtered) == 2
+        assert stats["abstracts_processed"] == 2
+        # First article: only "BTK..." sentence kept
+        assert "BTK" in filtered[0]["abstract"]
+        assert "Methods used ELISA" not in filtered[0]["abstract"]
+        # Second article: no matches, full abstract returned
+        assert filtered[1]["abstract"] == articles[1]["abstract"]
+        assert stats["fully_filtered"] == 1
+
+    def test_build_terms_from_entities(self):
+        from literature_mining.content_extractor import ContentExtractor
+
+        entities = {
+            "genes": {
+                "BTK": {
+                    "name": "Bruton Tyrosine Kinase",
+                    "id": "BTK",
+                    "synonyms": ["btk", "bruton tyrosine kinase"],
+                },
+            },
+            "drugs": {
+                "ibrutinib": {
+                    "name": "Ibrutinib (Imbruvica)",
+                    "id": "ibrutinib",
+                    "synonyms": ["ibrutinib", "imbruvica"],
+                },
+            },
+            "pathways": {
+                "bcell": {
+                    "name": "B Cell Receptor Signaling",
+                    "id": "bcell",
+                    "description": "BCR and co-receptor signaling in B cells",
+                },
+            },
+        }
+
+        extractor = ContentExtractor()
+        terms = extractor.build_terms_from_entities(entities)
+
+        assert "bruton tyrosine kinase" in terms
+        assert "btk" in terms
+        assert "ibrutinib" in terms
+        assert "imbruvica" in terms
+        assert "b cell receptor signaling" in terms
+        assert "bcell" in terms
+        # Drug name splitting extracts brand/generic from "Ibrutinib (Imbruvica)"
+        assert "ibrutinib" in terms
+        assert "imbruvica" in terms
+
+    def test_case_insensitive_matching(self, extractor):
+        abstract = "a BTK inhibitor called ibrutinib works via B cell receptor"
+        filtered = extractor.filter_abstract(abstract)
+        # Our terms use lowercase, matching is case-insensitive via lower()
+        assert "BTK inhibitor" in filtered
+        assert "ibrutinib" in filtered
+
+    def test_preserves_original_articles_in_filter_articles(self, extractor):
+        """Original article dicts should not be modified in place."""
+        articles = [
+            {
+                "pmid": "123",
+                "title": "BTK study",
+                "abstract": "BTK is a kinase. Background information here.",
+            }
+        ]
+        original_abstract = articles[0]["abstract"]
+        extractor.filter_articles(articles)
+        # Original should not be mutated
+        assert articles[0]["abstract"] == original_abstract
+
+    def test_multi_sentence_with_terms_spread(self, extractor):
+        """Terms may appear in different sentences."""
+        abstract = (
+            "The BTK pathway is critical in B cell signaling. "
+            "Unrelated methods were used. "
+            "Ibrutinib showed excellent results in phase 2 trials."
+        )
+        filtered = extractor.filter_abstract(abstract)
+        assert "BTK pathway" in filtered
+        assert "Ibrutinib showed" in filtered
+        assert "Unrelated methods" not in filtered
+
+    def test_report_includes_extraction_section(self, tmp_path, sample_entities, sample_candidates):
+        from literature_mining.report import generate_literature_report
+
+        report_path = tmp_path / "extract_report.html"
+
+        results = {
+            "stats": {
+                "total_articles": 10,
+                "articles_with_matches": 5,
+                "genes_found": 3,
+                "drugs_found": 2,
+                "candidates_supported": 2,
+                "spacy_ner": "regex-based (no spaCy)",
+                "novel_entities_found": 0,
+            },
+            "candidate_support": {},
+            "gene_coverage": {},
+            "drug_coverage": {},
+            "novel_entities": {},
+            "article_matches": [],
+            "extraction_stats": {
+                "abstracts_processed": 10,
+                "total_sentences": 85,
+                "kept_sentences": 34,
+                "total_tokens": 2500,
+                "kept_tokens": 980,
+                "fully_filtered": 1,
+            },
+        }
+
+        with patch("literature_mining.report.Path") as mock_path_class:
+            mock_path = MagicMock()
+            mock_path.parent = tmp_path
+            mock_path.__truediv__.return_value = report_path
+            mock_path_class.return_value = mock_path
+
+            file_handle = mock_open()
+            with patch("builtins.open", file_handle):
+                generate_literature_report(results, sample_entities, sample_candidates)
+
+        html_content = file_handle().write.call_args[0][0]
+        assert "AI Content Extraction" in html_content
+        assert "Abstracts Filtered" in html_content
+        assert "10" in html_content
+        assert "2,500" in html_content
+        assert "Relevant Sentences Kept" in html_content

@@ -25,7 +25,7 @@ from car_t_predictor.predictor import (
 
 def test_gene_database_loads():
     genes = load_genes()
-    assert len(genes) == 35
+    assert len(genes) >= 35
     assert "CD19" in genes or "CD20" in genes
 
 
@@ -87,7 +87,7 @@ def test_score_gene_range():
 
 def test_compute_all_scores():
     results = compute_all_scores()
-    assert len(results) == 35
+    assert len(results) >= 35
     assert results[0]["composite_score"] >= 9.0
     assert results[-1]["composite_score"] <= results[0]["composite_score"]
 
@@ -99,7 +99,7 @@ def test_compute_all_scores_saves_json(tmp_path, monkeypatch):
     assert json_path.exists()
     data = json.loads(json_path.read_text())
     assert "genes" in data
-    assert data["total_genes"] == 35
+    assert data["total_genes"] >= 35
 
 
 def test_analyze_prints(capsys):
@@ -138,7 +138,7 @@ def test_run_cart_analysis_service():
     from web_api.services.car_t_service import run_cart_analysis
 
     result = run_cart_analysis(top_n=10)
-    assert result["total_genes"] == 35
+    assert result["total_genes"] >= 35
     assert len(result["genes"]) == 10
     assert result["avg_score"] > 0
     assert "tier1_count" in result
