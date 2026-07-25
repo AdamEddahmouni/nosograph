@@ -47,6 +47,7 @@ SCRIPTS = {
     "evidence": "evidence_gatherer/gatherer.py",
     "extractor": "llm_extractor/extractor.py",
     "monitor": "evidence_monitor/monitor.py",
+    "cross-disease": "cross_disease/analyzer.py",
 }
 
 
@@ -503,6 +504,16 @@ def cmd_monitor(args):
     return run_module(SCRIPTS["monitor"], extra)
 
 
+def cmd_cross_disease(args):
+    """Run cross-disease drug repurposing analysis."""
+    extra = []
+    if args.top:
+        extra.extend(["--top", str(args.top)])
+    if args.export_html:
+        extra.append("--export-html")
+    return run_module(SCRIPTS["cross-disease"], extra)
+
+
 def cmd_test(args):
     """Run the test suite."""
     cmd = [sys.executable, "-m", "pytest", "tests/", "-v", "--tb=short"]
@@ -884,6 +895,19 @@ Examples:
         help="Generate HTML diff report",
     )
 
+    # ── cross-disease ───────────────────────────────────────────────
+    cd_parser = subparsers.add_parser(
+        "cross-disease", help="Cross-disease drug repurposing analysis across all autoimmune diseases",
+    )
+    cd_parser.add_argument(
+        "--top", type=int, default=20,
+        help="Number of top results to display (default: 20)",
+    )
+    cd_parser.add_argument(
+        "--export-html", action="store_true",
+        help="Generate HTML report",
+    )
+
     # ── screening ──────────────────────────────────────────────────
     screen_parser = subparsers.add_parser(
         "screening", help="Run virtual drug screening against lupus targets",
@@ -931,6 +955,7 @@ Examples:
         "evidence": cmd_evidence,
         "extractor": cmd_extractor,
         "monitor": cmd_monitor,
+        "cross-disease": cmd_cross_disease,
         "test": cmd_test,
     }
 

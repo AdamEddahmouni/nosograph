@@ -1,0 +1,60 @@
+{
+  "pathways": [
+    {
+      "id": "il23-th17-axis",
+      "name": "IL-23 / Th17 Axis",
+      "description": "The dominant inflammatory pathway in IBD. IL-23 produced by intestinal dendritic cells and macrophages in response to microbial stimuli drives expansion and maintenance of pathogenic Th17 cells. IL-23 signals through IL-23R/IL-12Rβ1 → JAK2/TYK2 → STAT3, inducing IL-17A, IL-17F, IL-22, and GM-CSF production. IL-23 also activates ILC3s in the lamina propria. Genetic variants in IL23R, IL12B, TYK2, STAT3, and CCR6 all converge on this pathway. Therapeutic blockade at p40 (ustekinumab) or p19 (risankizumab, mirikizumab) is highly effective.",
+      "key_components": ["IL23A", "IL12B", "IL23R", "IL12RB1", "JAK2", "TYK2", "STAT3", "RORC", "IL17A", "IL17F", "IL22", "CCR6", "CCL20"],
+      "therapeutic_targets": ["ustekinumab (anti-IL-12/23 p40)", "risankizumab (anti-IL-23 p19, CD)", "mirikizumab (anti-IL-23 p19, UC)", "upadacitinib (JAK1)"],
+      "references": ["PMID:17068223", "PMID:27738255"]
+    },
+    {
+      "id": "jak-stat-cytokine",
+      "name": "JAK-STAT Cytokine Signaling",
+      "description": "Multiple IBD-relevant cytokines signal through JAK-STAT pathways: IL-6 (JAK1/JAK2 → STAT3), IL-12 (JAK2/TYK2 → STAT4), IL-23 (JAK2/TYK2 → STAT3), IL-10 (JAK1/TYK2 → STAT3), IL-22 (JAK1/TYK2 → STAT3), and type I IFN (JAK1/TYK2 → STAT1/STAT2). JAK2 and STAT3 are genetic risk loci for both CD and UC. JAK inhibitors provide oral therapeutic option by simultaneously blocking multiple pathogenic cytokine signals.",
+      "key_components": ["JAK1", "JAK2", "TYK2", "STAT3", "STAT4", "STAT1", "SOCS3", "IL6", "IL6R", "IL10", "IL12B", "IL23A", "IFNG"],
+      "therapeutic_targets": ["tofacitinib (JAK1/JAK3, UC)", "upadacitinib (JAK1, CD and UC)"],
+      "references": ["PMID:19122664", "PMID:24793845"]
+    },
+    {
+      "id": "leukocyte-trafficking",
+      "name": "Leukocyte Trafficking & Integrin-Mediated Homing",
+      "description": "Pathogenic T cells are imprinted with gut-homing receptors (α4β7 integrin, CCR9) in GALT (Peyer's patches, mesenteric lymph nodes) via retinoic acid from dendritic cells. α4β7 integrin binds MAdCAM-1 on intestinal high endothelial venules, mediating selective lymphocyte extravasation into the lamina propria. NKX2-3 regulates MAdCAM-1 expression. Vedolizumab selectively blocks α4β7-MAdCAM-1 interaction, inhibiting gut-homing without systemic immunosuppression.",
+      "key_components": ["ITGA4", "ITGB7", "MADCAM1", "NKX2-3", "CCR9", "CCL25", "VCAM1", "ICAM1", "SELL"],
+      "therapeutic_targets": ["vedolizumab (anti-α4β7 integrin)", "natalizumab (anti-α4 integrin, CD only, restricted)"],
+      "references": ["PMID:23974998", "PMID:12558027"]
+    },
+    {
+      "id": "tnf-alpha-signaling",
+      "name": "TNF-alpha Signaling in the Gut",
+      "description": "TNF-alpha is a central pro-inflammatory cytokine in IBD, produced by macrophages, T cells, and Paneth cells in the inflamed mucosa. TNF binds TNFR1 (pro-inflammatory, apoptosis, NF-κB) and TNFR2 (cell survival, proliferation) on intestinal epithelial cells and immune cells. TNF signaling increases intestinal permeability, induces MMP production, and amplifies inflammatory cascades. TNFSF15 (TL1A), a TNF superfamily member, provides a co-stimulatory signal enhancing Th1/Th17 responses. Anti-TNF biologics revolutionized IBD therapy.",
+      "key_components": ["TNF", "TNFR1", "TNFR2", "TNFSF15", "TNFRSF25", "TRADD", "TRAF2", "RIPK1", "NFKB1", "RELA", "CASP8"],
+      "therapeutic_targets": ["infliximab (anti-TNF)", "adalimumab (anti-TNF)", "certolizumab pegol (anti-TNF, CD)", "golimumab (anti-TNF, UC)"],
+      "references": ["PMID:10643798", "PMID:15789056"]
+    },
+    {
+      "id": "epithelial-barrier-autophagy",
+      "name": "Epithelial Barrier Integrity & Autophagy",
+      "description": "Intestinal epithelial barrier dysfunction is a primary pathogenic mechanism in IBD, especially Crohn's disease. NOD2 senses bacterial muramyl dipeptide and activates NF-κB and autophagy via ATG16L1 recruitment. The NOD2-ATG16L1-IRGM-LRRK2 autophagy axis controls bacterial clearance, Paneth cell granule secretion (defensins), and antigen presentation. HNF4A maintains tight junction integrity (claudins, occludin). FUT2 determines mucosal glycosylation affecting the gut microbiome. Impaired autophagy leads to intracellular bacterial persistence (AIEC) and chronic inflammation.",
+      "key_components": ["NOD2", "ATG16L1", "IRGM", "LRRK2", "HNF4A", "FUT2", "MDP", "NFKB1", "BECN1", "ATG5", "ATG7", "CLDN1", "OCLN", "DEFB4"],
+      "therapeutic_targets": ["Potential: autophagy enhancers (experimental)", "NOD2 pathway modulators (preclinical)"],
+      "references": ["PMID:11385576", "PMID:17200669"]
+    },
+    {
+      "id": "il10-anti-inflammatory",
+      "name": "IL-10 Anti-inflammatory Pathway",
+      "description": "IL-10 is the master anti-inflammatory cytokine in the gut, produced by Tregs, macrophages, and B cells. IL-10 binds IL-10RA/IL-10RB heterodimers, activating JAK1/TYK2 → STAT3 to induce SOCS3 and anti-inflammatory gene programs. IL-10 suppresses IL-12/IL-23 production by dendritic cells, inhibits TNF and IL-1β, and maintains FoxP3+ Treg stability. Loss-of-function mutations in IL10, IL10RA, or IL10RB cause severe very-early-onset IBD (VEO-IBD) in infancy. TGF-β signaling through SMAD3 cooperates with IL-10 in Treg induction.",
+      "key_components": ["IL10", "IL10RA", "IL10RB", "JAK1", "TYK2", "STAT3", "SOCS3", "FOXP3", "TGFB1", "SMAD3"],
+      "therapeutic_targets": ["Potential: recombinant IL-10 (failed trials — systemic delivery ineffective)", "engineered IL-10R agonists (investigational)", "gut-targeted IL-10 delivery (preclinical)"],
+      "references": ["PMID:19890111", "PMID:11001876"]
+    },
+    {
+      "id": "s1p-receptor-modulation",
+      "name": "S1P Receptor Modulation & Lymphocyte Egress",
+      "description": "Sphingosine-1-phosphate (S1P) is a bioactive lipid mediator regulating lymphocyte trafficking. S1P gradients (high in blood/lymph, low in lymphoid tissue) direct lymphocyte egress from lymph nodes and Peyer's patches via S1PR1. S1P receptor modulators (ozanimod, etrasimod) induce S1PR1 internalization and degradation, sequestering pathogenic lymphocytes in lymphoid organs and preventing their recruitment to the gut mucosa. S1PR1 selectivity (ozanimod) and S1PR3 sparing (etrasimod) reduce bradycardia risk. Unlike integrin blockers, S1P modulators are oral small molecules.",
+      "key_components": ["S1PR1", "S1PR3", "S1PR4", "S1PR5", "SPHK1", "SPHK2", "SGPL1", "S1P"],
+      "therapeutic_targets": ["ozanimod (S1PR1/S1PR5, UC)", "etrasimod (S1PR1/S1PR4/S1PR5, UC)"],
+      "references": ["PMID:34538070", "PMID:36805301"]
+    }
+  ]
+}

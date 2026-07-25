@@ -1,0 +1,148 @@
+{
+  "drugs": [
+    {
+      "id": "hydroxychloroquine",
+      "name": "Hydroxychloroquine (Plaquenil)",
+      "type": "Small Molecule",
+      "target": "TLR7 / TLR9",
+      "mechanism": "Inhibits endosomal acidification, blocking TLR7/9-mediated pDC activation and IFN-α production. Reduces immune complex-mediated inflammation.",
+      "approval": "Off-label first-line for SS (not FDA-approved for SS). Standard of care in clinical practice. Guidelines recommend for inflammatory musculoskeletal symptoms.",
+      "route": "Oral, daily",
+      "efficacy": "Modest benefit for arthralgias, myalgias, and fatigue. No significant improvement in sicca symptoms (glandular dryness). Reduces ESR, IgG, and RF.",
+      "references": ["PMID:29969085", "PMID:31187282"],
+      "category": "Immunomodulator - Antimalarial"
+    },
+    {
+      "id": "rituximab_ss",
+      "name": "Rituximab (Rituxan)",
+      "type": "Chimeric Monoclonal Antibody",
+      "target": "CD20",
+      "mechanism": "Depletes CD20+ B cells via ADCC, CDC, and apoptosis. Reduces B cell-driven inflammation, germinal center formation, and autoantibody production in salivary glands.",
+      "approval": "Off-label for severe SS (not FDA-approved for SS). RCTs show mixed results for primary endpoints but consistent benefit in secondary outcomes and systemic disease.",
+      "route": "IV infusion, 2 doses 2 weeks apart, repeated every 6 months",
+      "efficacy": "TRACTISS (largest RCT): missed primary endpoint (fatigue VAS at 24 weeks) but significant improvement in salivary flow, lacrimal function, and systemic disease activity (ESSDAI).",
+      "references": ["PMID:28621820", "PMID:31427105"],
+      "category": "Biologic - B Cell Depletion (Anti-CD20)"
+    },
+    {
+      "id": "belimumab",
+      "name": "Belimumab (Benlysta)",
+      "type": "Monoclonal Antibody",
+      "target": "BAFF (BLyS / TNFSF13B)",
+      "mechanism": "Fully human anti-BAFF monoclonal antibody; neutralizes soluble BAFF, reducing survival of autoreactive B cells and plasma cells",
+      "approval": "FDA approved for SLE; Phase 3 in SLE. Phase 2 BELISS trial in SS showed positive results. Not yet approved for SS.",
+      "route": "IV infusion every 4 weeks or subcutaneous weekly",
+      "efficacy": "BELISS Phase 2: significant reduction in ESSDAI, improvement in salivary flow and Schirmer test at 28 weeks. BAFF is central to SS B cell hyperactivity.",
+      "references": ["PMID:28385353", "PMID:33574446"],
+      "category": "Biologic - Anti-BAFF"
+    },
+    {
+      "id": "ianalumab",
+      "name": "Ianalumab (VAY736)",
+      "type": "Monoclonal Antibody",
+      "target": "BAFF Receptor (BAFF-R / TNFRSF13C)",
+      "mechanism": "Fully human anti-BAFF-R monoclonal antibody with dual mechanism: blocks BAFF-mediated B cell survival signaling AND depletes BAFF-R+ B cells via ADCC",
+      "approval": "Phase 2b in SS (completed positive); Phase 3 planned. FDA Breakthrough Therapy designation not yet granted.",
+      "route": "IV infusion monthly",
+      "efficacy": "Phase 2b: significant dose-dependent reduction in ESSDAI. Superior B cell depletion to anti-BAFF alone due to ADCC mechanism.",
+      "references": ["PMID:33958576"],
+      "category": "Investigational - Anti-BAFF-R (Dual Mechanism)"
+    },
+    {
+      "id": "iscalimab",
+      "name": "Iscalimab (CFZ533)",
+      "type": "Monoclonal Antibody",
+      "target": "CD40",
+      "mechanism": "Fully human anti-CD40 monoclonal antibody; blocks CD40-CD40L interaction, inhibiting Tfh-B cell costimulation and germinal center formation without depleting B cells",
+      "approval": "Phase 2 in SS (TWINSS trial). Phase 2 in SLE and kidney transplantation.",
+      "route": "IV infusion or subcutaneous",
+      "efficacy": "TWINSS Phase 2: significant reduction in ESSDAI at 24 weeks. CD40-CD40L blockade directly targets the Tfh-germinal center axis driving SS pathology.",
+      "references": ["PMID:35145352"],
+      "category": "Investigational - Anti-CD40 / T-B Costimulation Blocker"
+    },
+    {
+      "id": "abatacept",
+      "name": "Abatacept (Orencia)",
+      "type": "Fusion Protein",
+      "target": "CD80 / CD86 (B7.1/B7.2)",
+      "mechanism": "CTLA4-Ig fusion protein blocking CD28-mediated T cell costimulation; reduces Tfh cell help to B cells",
+      "approval": "FDA approved for RA. Phase 3 in SS (ASAP-III) showed mixed results but ongoing investigation.",
+      "route": "IV infusion monthly or subcutaneous weekly",
+      "efficacy": "ASAP-III: mixed results; some improvement in systemic disease (ESSDAI) and salivary gland histology. T cell-B cell costimulation is a rational target for SS.",
+      "references": ["PMID:30007025"],
+      "category": "Biologic - T Cell Costimulation Blocker"
+    },
+    {
+      "id": "leflunomide",
+      "name": "Leflunomide (Arava)",
+      "type": "Small Molecule",
+      "target": "DHODH (Dihydroorotate Dehydrogenase)",
+      "mechanism": "Inhibits DHODH, blocking de novo pyrimidine synthesis → selectively reduces activated lymphocyte proliferation",
+      "approval": "Off-label for SS inflammatory arthritis. Used as alternative to hydroxychloroquine or MTX for articular symptoms.",
+      "route": "Oral, daily",
+      "efficacy": "Modest benefit for inflammatory arthritis in SS; limited data from small open-label studies.",
+      "references": ["PMID:29969085"],
+      "category": "DMARD - Pyrimidine Synthesis Inhibitor"
+    },
+    {
+      "id": "mycophenolate",
+      "name": "Mycophenolate Mofetil (CellCept)",
+      "type": "Small Molecule",
+      "target": "IMPDH (Inosine Monophosphate Dehydrogenase)",
+      "mechanism": "Inhibits IMPDH, blocking de novo purine synthesis → suppresses T and B lymphocyte proliferation",
+      "approval": "Off-label for severe systemic SS (interstitial lung disease, nephritis, CNS). Used as steroid-sparing agent.",
+      "route": "Oral, twice daily",
+      "efficacy": "Modest evidence for systemic SS organ involvement; limited RCT data. Commonly used for SS-ILD and SS nephritis.",
+      "references": ["PMID:29969085", "PMID:31427105"],
+      "category": "Immunosuppressant - Antimetabolite"
+    },
+    {
+      "id": "prednisone_ss",
+      "name": "Prednisone",
+      "type": "Small Molecule",
+      "target": "Glucocorticoid Receptor (NR3C1)",
+      "mechanism": "Broad anti-inflammatory via GR-mediated transrepression of NF-κB and AP-1",
+      "approval": "Standard of care for acute systemic SS flares. Bridge therapy while DMARDs take effect.",
+      "route": "Oral, daily (tapered to lowest effective dose)",
+      "efficacy": "Rapid symptomatic relief for inflammatory arthritis, severe parotitis, and systemic organ involvement. Does not improve sicca symptoms.",
+      "references": ["PMID:29969085"],
+      "category": "Corticosteroid"
+    },
+    {
+      "id": "pilocarpine",
+      "name": "Pilocarpine (Salagen)",
+      "type": "Small Molecule",
+      "target": "Muscarinic Acetylcholine Receptors (M3R)",
+      "mechanism": "Muscarinic cholinergic agonist stimulating M3 receptors on residual salivary and lacrimal gland acinar cells to promote secretion",
+      "approval": "FDA approved 1994 for radiation-induced xerostomia; used off-label for SS sicca. Symptomatic therapy only.",
+      "route": "Oral, 3-4 times daily",
+      "efficacy": "Increases salivary flow rate and reduces subjective oral dryness. Common side effects: sweating, flushing, urinary frequency (cholinergic).",
+      "references": ["PMID:10189670", "PMID:29969085"],
+      "category": "Symptomatic - Sialogogue (M3R Agonist)"
+    },
+    {
+      "id": "cevimeline",
+      "name": "Cevimeline (Evoxac)",
+      "type": "Small Molecule",
+      "target": "Muscarinic Acetylcholine Receptors (M1R / M3R)",
+      "mechanism": "Selective M1/M3 muscarinic agonist with longer half-life and potentially fewer side effects than pilocarpine",
+      "approval": "FDA approved 2000 for SS dry mouth. Indicated specifically for Sjögren's syndrome sicca.",
+      "route": "Oral, 3 times daily",
+      "efficacy": "Increases salivary flow rate. Longer duration of action than pilocarpine. Side effect profile may be more favorable.",
+      "references": ["PMID:11683451", "PMID:29969085"],
+      "category": "Symptomatic - Sialogogue (M1/M3 Agonist)"
+    },
+    {
+      "id": "cyclosporine_eye",
+      "name": "Cyclosporine Ophthalmic (Restasis)",
+      "type": "Small Molecule",
+      "target": "Calcineurin / NFAT (Topical)",
+      "mechanism": "Topical calcineurin inhibitor reducing T cell activation and inflammation on the ocular surface; increases tear production",
+      "approval": "FDA approved 2003 for dry eye disease. Used for keratoconjunctivitis sicca in SS.",
+      "route": "Ophthalmic emulsion, twice daily",
+      "efficacy": "Increases tear production and reduces corneal staining in dry eye disease, including SS-associated dry eye. Onset delayed (4-6 weeks).",
+      "references": ["PMID:12627599", "PMID:29969085"],
+      "category": "Symptomatic - Topical Immunomodulator (Ocular)"
+    }
+  ]
+}
