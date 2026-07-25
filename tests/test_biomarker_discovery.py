@@ -10,7 +10,7 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).parent.parent))  # noqa: I001
 
-from biomarker_discovery.discover import (
+from med_research.pipeline.biomarker_discovery.discover import (
     analyze,
     compute_biomarker_matrix,
     map_gene_to_modules,
@@ -21,7 +21,7 @@ from biomarker_discovery.discover import (
 
 
 def test_map_gene_to_modules_returns_list():
-    from knowledge_graph.build_graph import build_graph
+    from med_research.pipeline.knowledge_graph.builder import build_graph
     G = build_graph()
     genes = {n: d for n, d in G.nodes(data=True) if d.get("type") == "gene"}
     matrix = map_gene_to_modules(genes, {})
@@ -66,7 +66,7 @@ def test_compute_biomarker_matrix():
 
 
 def test_compute_biomarker_matrix_saves_json(tmp_path, monkeypatch):
-    monkeypatch.setattr("biomarker_discovery.discover.DATA_DIR", tmp_path)
+    monkeypatch.setattr("med_research.pipeline.biomarker_discovery.discover.DATA_DIR", tmp_path)
     compute_biomarker_matrix()
     json_path = tmp_path / "biomarker_matrix.json"
     assert json_path.exists()
@@ -92,14 +92,14 @@ def test_analyze_prints(capsys):
 
 
 def test_escape_html_biomarker():
-    from biomarker_discovery.report import escape_html
+    from med_research.pipeline.biomarker_discovery.report import escape_html
     assert escape_html("<script>") == "&lt;script&gt;"
     assert escape_html(None) == ""
 
 
 @pytest.mark.slow
 def test_generate_html_report():
-    from biomarker_discovery.report import generate_html_report
+    from med_research.pipeline.biomarker_discovery.report import generate_html_report
 
     results = compute_biomarker_matrix()
     path = generate_html_report(results)
@@ -113,7 +113,7 @@ def test_generate_html_report():
 
 @pytest.mark.slow
 def test_run_biomarker_analysis_service():
-    from web_api.services.biomarker_service import run_biomarker_analysis
+    from med_research.web.services.biomarker_service import run_biomarker_analysis
 
     result = run_biomarker_analysis(top_n=10)
     assert result["total_genes"] > 20

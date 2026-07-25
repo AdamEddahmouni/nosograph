@@ -10,7 +10,7 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from car_t_predictor.predictor import (
+from med_research.pipeline.car_t_predictor.predictor import (
     B_CELL_DEPENDENCY,
     CAR_T_EVIDENCE,
     CD19_TARGETING,
@@ -93,7 +93,7 @@ def test_compute_all_scores():
 
 
 def test_compute_all_scores_saves_json(tmp_path, monkeypatch):
-    monkeypatch.setattr("car_t_predictor.predictor.DATA_DIR", tmp_path)
+    monkeypatch.setattr("med_research.pipeline.car_t_predictor.predictor.DATA_DIR", tmp_path)
     compute_all_scores()
     json_path = tmp_path / "car_t_scores.json"
     assert json_path.exists()
@@ -114,14 +114,14 @@ def test_analyze_prints(capsys):
 
 
 def test_escape_html_cart():
-    from car_t_predictor.report import escape_html
+    from med_research.pipeline.car_t_predictor.report import escape_html
     assert escape_html("<script>") == "&lt;script&gt;"
     assert escape_html(None) == ""
 
 
 @pytest.mark.slow
 def test_generate_html_report():
-    from car_t_predictor.report import generate_html_report
+    from med_research.pipeline.car_t_predictor.report import generate_html_report
 
     results = compute_all_scores()
     path = generate_html_report(results)
@@ -135,7 +135,7 @@ def test_generate_html_report():
 
 @pytest.mark.slow
 def test_run_cart_analysis_service():
-    from web_api.services.car_t_service import run_cart_analysis
+    from med_research.web.services.car_t_service import run_cart_analysis
 
     result = run_cart_analysis(top_n=10)
     assert result["total_genes"] >= 35

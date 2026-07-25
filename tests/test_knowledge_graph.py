@@ -151,7 +151,7 @@ class TestExportForWeb:
 
     @pytest.fixture
     def web_export(self, sample_graph, tmp_path):
-        from knowledge_graph.build_graph import export_for_web
+        from med_research.pipeline.knowledge_graph.builder import export_for_web
         out_path = tmp_path / "graph_data.json"
         export_for_web(sample_graph, str(out_path))
         return json.loads(out_path.read_text(encoding="utf-8"))
@@ -194,7 +194,7 @@ class TestAnalyzeGraph:
     """Smoke test for analyze_graph() — just ensure no exceptions."""
 
     def test_analyze_does_not_crash(self, sample_graph, capsys):
-        from knowledge_graph.build_graph import analyze_graph
+        from med_research.pipeline.knowledge_graph.builder import analyze_graph
         analyze_graph(sample_graph)
         captured = capsys.readouterr()
         assert "KNOWLEDGE GRAPH ANALYSIS" in captured.out

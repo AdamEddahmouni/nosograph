@@ -9,7 +9,11 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).parent.parent))  # noqa: I001
 
-from semantic_search.engine import CHROMADB_AVAILABLE, ST_AVAILABLE, SemanticSearchEngine
+from med_research.pipeline.semantic_search.engine import (
+    CHROMADB_AVAILABLE,
+    ST_AVAILABLE,
+    SemanticSearchEngine,
+)
 
 # ---- Dependency checks ----
 
@@ -35,7 +39,7 @@ def test_engine_initialization():
 def test_load_articles_uses_cache(tmp_path, monkeypatch):
     import json
 
-    monkeypatch.setattr("semantic_search.engine.PUBMED_CACHE", tmp_path / "pubmed_cache.json")
+    monkeypatch.setattr("med_research.pipeline.semantic_search.engine.PUBMED_CACHE", tmp_path / "pubmed_cache.json")
     test_articles = [
         {"pmid": "123", "title": "Test Article", "abstract": "Test abstract text", "year": "2024", "journal": "Test J"},
     ]
@@ -79,8 +83,8 @@ def test_index_and_search(tmp_path, monkeypatch):
 
     cache_path = tmp_path / "pubmed_cache.json"
     cache_path.write_text(json.dumps(test_articles))
-    monkeypatch.setattr("semantic_search.engine.PUBMED_CACHE", cache_path)
-    monkeypatch.setattr("semantic_search.engine.CHROMA_DIR", tmp_path / "chroma")
+    monkeypatch.setattr("med_research.pipeline.semantic_search.engine.PUBMED_CACHE", cache_path)
+    monkeypatch.setattr("med_research.pipeline.semantic_search.engine.CHROMA_DIR", tmp_path / "chroma")
 
     engine = SemanticSearchEngine()
     articles = engine.load_articles()
@@ -107,14 +111,14 @@ def test_index_and_search(tmp_path, monkeypatch):
 # ---- Report ----
 
 def test_escape_html_semantic():
-    from semantic_search.report import escape_html
+    from med_research.pipeline.semantic_search.report import escape_html
     assert escape_html("<script>") == "&lt;script&gt;"
     assert escape_html(None) == ""
 
 
 @pytest.mark.slow
 def test_generate_semantic_report():
-    from semantic_search.report import generate_semantic_report
+    from med_research.pipeline.semantic_search.report import generate_semantic_report
 
     results = [
         {"rank": 1, "pmid": "123", "title": "JAK inhibition in SLE", "year": "2024",
@@ -135,7 +139,7 @@ def test_run_semantic_search_empty_collection():
     original = e.CHROMA_DIR
     e.CHROMA_DIR = Path("/nonexistent/semantic_chroma_test")
     try:
-        from web_api.services.semantic_service import run_semantic_search
+        from med_research.web.services.semantic_service import run_semantic_search
         result = run_semantic_search("lupus treatment", top_k=5)
         assert result["query"] == "lupus treatment"
         assert result["total_results"] == 0

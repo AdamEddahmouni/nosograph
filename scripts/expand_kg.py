@@ -6,7 +6,7 @@ Expands genes, drugs, pathways, and relationships for 5 autoimmune diseases
 import json
 import os
 
-DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "knowledge_graph", "data")
+DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "src", "med_research", "diseases")
 
 DISEASE_NAMES = {
     "ss": "Sjögren's Syndrome (SS)",

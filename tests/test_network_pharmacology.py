@@ -10,7 +10,7 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from network_pharmacology.analyzer import (
+from med_research.pipeline.network_pharmacology.analyzer import (
     compute_all_metrics,
     compute_bridge_nodes,
     compute_centrality,
@@ -18,7 +18,7 @@ from network_pharmacology.analyzer import (
     compute_graph_metrics,
     load_graph,
 )
-from network_pharmacology.report import escape_html, generate_html_report
+from med_research.pipeline.network_pharmacology.report import escape_html, generate_html_report
 
 # ── Fixtures ──────────────────────────────────────────────────────────────
 
@@ -162,7 +162,7 @@ def test_generate_html_report():
 
 @pytest.mark.slow
 def test_run_centrality_analysis():
-    from web_api.services.kg_service import run_centrality_analysis
+    from med_research.web.services.kg_service import run_centrality_analysis
 
     result = run_centrality_analysis(metric="betweenness", top_n=10)
     assert result["metric"] == "betweenness"
@@ -172,7 +172,7 @@ def test_run_centrality_analysis():
 
 @pytest.mark.slow
 def test_run_community_detection():
-    from web_api.services.kg_service import run_community_detection
+    from med_research.web.services.kg_service import run_community_detection
 
     result = run_community_detection()
     assert result["n_communities"] >= 2

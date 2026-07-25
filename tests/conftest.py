@@ -8,15 +8,15 @@ from pathlib import Path
 import pytest
 
 PROJECT_ROOT = Path(__file__).parent.parent
-DR_DATA_DIR = PROJECT_ROOT / "drug_repurposing" / "data"
+DR_DATA_DIR = PROJECT_ROOT / "src" / "med_research" / "pipeline" / "drug_repurposing" / "data"
 
-from knowledge_graph.config import load_genes
+from med_research.pipeline.knowledge_graph.config import load_genes
 
 
 @pytest.fixture(scope="session")
 def kg_data_dir():
-    from knowledge_graph.config import DATA_ROOT
-    return DATA_ROOT / "sle"
+    from med_research.pipeline.knowledge_graph.config import _resolve
+    return _resolve("sle")
 
 
 @pytest.fixture(scope="session")
@@ -27,7 +27,7 @@ def dr_data_dir():
 @pytest.fixture(scope="session")
 def sample_graph():
     """Build a fresh knowledge graph for testing."""
-    from knowledge_graph.build_graph import build_graph
+    from med_research.pipeline.knowledge_graph.builder import build_graph
     return build_graph()
 
 

@@ -17,14 +17,14 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 # ── Imports ───────────────────────────────────────────────────────────────
 
 
-from llm_extractor.extractor import (
+from med_research.pipeline.evidence.extractor import (
     _cache_key,
     _clean_json_response,
     _compute_extraction_stats,
     extract_all,
     extract_evidence,
 )
-from llm_extractor.report import generate_html_report
+from med_research.pipeline.evidence.extractor_report import generate_html_report
 
 # ── Helpers ───────────────────────────────────────────────────────────────
 

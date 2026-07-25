@@ -17,11 +17,11 @@ class TestGetGeneSymbols:
 
     @pytest.fixture
     def sample_genes(self):
-        from bioinformatics.ppi import load_genes
+        from med_research.pipeline.bioinformatics.ppi import load_genes
         return load_genes()
 
     def test_excludes_drug_target_genes(self, sample_genes):
-        from bioinformatics.ppi import get_gene_symbols
+        from med_research.pipeline.bioinformatics.ppi import get_gene_symbols
 
         symbols = get_gene_symbols(sample_genes)
         symbol_set = {s for _, s in symbols}
@@ -30,7 +30,7 @@ class TestGetGeneSymbols:
             assert ex not in symbol_set
 
     def test_returns_tuples(self, sample_genes):
-        from bioinformatics.ppi import get_gene_symbols
+        from med_research.pipeline.bioinformatics.ppi import get_gene_symbols
 
         symbols = get_gene_symbols(sample_genes)
         assert isinstance(symbols, list)
@@ -41,14 +41,14 @@ class TestGetGeneSymbols:
             assert isinstance(item[1], str)  # symbol
 
     def test_count(self, sample_genes):
-        from bioinformatics.ppi import get_gene_symbols
+        from med_research.pipeline.bioinformatics.ppi import get_gene_symbols
 
         symbols = get_gene_symbols(sample_genes)
         # 22 total - 4 drug target genes = 18
         assert len(symbols) >= 18
 
     def test_has_expected_genes(self, sample_genes):
-        from bioinformatics.ppi import get_gene_symbols
+        from med_research.pipeline.bioinformatics.ppi import get_gene_symbols
 
         symbols = get_gene_symbols(sample_genes)
         gene_ids = {gid for gid, _ in symbols}
@@ -63,14 +63,14 @@ class TestComputeHubScores:
     """Tests for compute_hub_scores()."""
 
     def test_empty_graph(self):
-        from bioinformatics.ppi import compute_hub_scores
+        from med_research.pipeline.bioinformatics.ppi import compute_hub_scores
 
         G = nx.Graph()
         scores = compute_hub_scores(G)
         assert scores == []
 
     def test_single_node(self):
-        from bioinformatics.ppi import compute_hub_scores
+        from med_research.pipeline.bioinformatics.ppi import compute_hub_scores
 
         G = nx.Graph()
         G.add_node("BTK", symbol="BTK", gene_id="BTK", is_seed=True, is_lupus_gene=True)
@@ -85,7 +85,7 @@ class TestComputeHubScores:
         assert scores[0]["hub_score"] == 0.5
 
     def test_star_graph(self):
-        from bioinformatics.ppi import compute_hub_scores
+        from med_research.pipeline.bioinformatics.ppi import compute_hub_scores
 
         G = nx.Graph()
         G.add_node("hub", symbol="HUB", gene_id="HUB", is_seed=True, is_lupus_gene=True)
@@ -108,7 +108,7 @@ class TestComputeHubScores:
             assert hub["hub_score"] >= s["hub_score"]
 
     def test_hub_scores_sorted_descending(self):
-        from bioinformatics.ppi import compute_hub_scores
+        from med_research.pipeline.bioinformatics.ppi import compute_hub_scores
 
         G = nx.Graph()
         G.add_node("A", symbol="A", gene_id="A", is_seed=True, is_lupus_gene=True)
@@ -122,7 +122,7 @@ class TestComputeHubScores:
             assert scores[i]["hub_score"] >= scores[i + 1]["hub_score"]
 
     def test_result_structure(self):
-        from bioinformatics.ppi import compute_hub_scores
+        from med_research.pipeline.bioinformatics.ppi import compute_hub_scores
 
         G = nx.Graph()
         G.add_node("A", symbol="A", gene_id="A", is_seed=True, is_lupus_gene=True)
@@ -136,7 +136,7 @@ class TestComputeHubScores:
                 assert key in s, f"Missing key: {key}"
 
     def test_disconnected_nodes(self):
-        from bioinformatics.ppi import compute_hub_scores
+        from med_research.pipeline.bioinformatics.ppi import compute_hub_scores
 
         G = nx.Graph()
         for name in ["A", "B", "C"]:
@@ -202,7 +202,7 @@ class TestCrossReferenceWithCandidates:
 
     @pytest.fixture
     def sample_kg_genes(self):
-        from bioinformatics.ppi import load_genes
+        from med_research.pipeline.bioinformatics.ppi import load_genes
         return load_genes()
 
     @pytest.fixture
@@ -247,7 +247,7 @@ class TestCrossReferenceWithCandidates:
     def test_matches_btk_to_candidates(
         self, sample_hub_scores, sample_ppi_graph, sample_kg_genes, sample_candidates
     ):
-        from bioinformatics.ppi import cross_reference_with_candidates
+        from med_research.pipeline.bioinformatics.ppi import cross_reference_with_candidates
 
         crossref = cross_reference_with_candidates(
             sample_hub_scores, sample_ppi_graph, sample_kg_genes, sample_candidates
@@ -262,7 +262,7 @@ class TestCrossReferenceWithCandidates:
     def test_novel_is_untargeted(
         self, sample_hub_scores, sample_ppi_graph, sample_kg_genes, sample_candidates
     ):
-        from bioinformatics.ppi import cross_reference_with_candidates
+        from med_research.pipeline.bioinformatics.ppi import cross_reference_with_candidates
 
         crossref = cross_reference_with_candidates(
             sample_hub_scores, sample_ppi_graph, sample_kg_genes, sample_candidates
@@ -275,7 +275,7 @@ class TestCrossReferenceWithCandidates:
     def test_returns_expected_keys(
         self, sample_hub_scores, sample_ppi_graph, sample_kg_genes, sample_candidates
     ):
-        from bioinformatics.ppi import cross_reference_with_candidates
+        from med_research.pipeline.bioinformatics.ppi import cross_reference_with_candidates
 
         crossref = cross_reference_with_candidates(
             sample_hub_scores, sample_ppi_graph, sample_kg_genes, sample_candidates
@@ -290,7 +290,7 @@ class TestCrossReferenceWithCandidates:
     def test_separates_lupus_from_nonlupus(
         self, sample_hub_scores, sample_ppi_graph, sample_kg_genes, sample_candidates
     ):
-        from bioinformatics.ppi import cross_reference_with_candidates
+        from med_research.pipeline.bioinformatics.ppi import cross_reference_with_candidates
 
         crossref = cross_reference_with_candidates(
             sample_hub_scores, sample_ppi_graph, sample_kg_genes, sample_candidates
@@ -312,7 +312,7 @@ class TestLoadFunctions:
     """Tests for PPI data loading."""
 
     def test_load_genes(self):
-        from bioinformatics.ppi import load_genes
+        from med_research.pipeline.bioinformatics.ppi import load_genes
 
         genes = load_genes()
         assert isinstance(genes, dict)

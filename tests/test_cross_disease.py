@@ -10,7 +10,7 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from cross_disease.analyzer import (
+from med_research.pipeline.cross_disease.analyzer import (
     _assign_tier,
     _jaccard,
     _normalize_drug_id,
@@ -222,7 +222,7 @@ def test_compute_cross_disease_analysis_7_diseases(analysis_results):
 
 
 def test_compute_cross_disease_analysis_saves_json(tmp_path, monkeypatch):
-    monkeypatch.setattr("cross_disease.analyzer.DATA_DIR", tmp_path)
+    monkeypatch.setattr("med_research.pipeline.cross_disease.analyzer.DATA_DIR", tmp_path)
     compute_cross_disease_analysis()
     json_path = tmp_path / "cross_disease_analysis.json"
     assert json_path.exists()
@@ -257,7 +257,7 @@ def test_print_repurposing_prints(capsys, analysis_results):
 
 
 def test_escape_html_cross_disease():
-    from cross_disease.report import escape_html
+    from med_research.pipeline.cross_disease.report import escape_html
     assert escape_html("<script>") == "&lt;script&gt;"
     assert escape_html(None) == ""
     assert escape_html("AT&T") == "AT&amp;T"
@@ -265,7 +265,7 @@ def test_escape_html_cross_disease():
 
 @pytest.mark.slow
 def test_generate_html_report(analysis_results):
-    from cross_disease.report import generate_html_report
+    from med_research.pipeline.cross_disease.report import generate_html_report
 
     path = generate_html_report(analysis_results)
     assert "report.html" in path

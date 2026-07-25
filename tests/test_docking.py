@@ -7,7 +7,6 @@ Tests cover:
   - vina_setup.py: Vina binary check/download helper
 """
 
-import json
 import sys
 from pathlib import Path
 
@@ -15,19 +14,17 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from virtual_screening.docking import (
+from med_research.pipeline.virtual_screening.docking import (
     DockingEngine,
     _detect_biopython,
     _detect_meeko,
     _detect_rdkit,
-    _dock_one_ligand,
     _find_vina_binary,
     _normalize_vina_score,
     compute_real_binding_score,
     get_docking_status,
     get_vina_status_text,
 )
-
 
 # ── Unit: Dependency Detection ────────────────────────────────────────────
 
@@ -207,13 +204,13 @@ def test_compute_real_binding_score_missing_drug():
 
 
 def test_vina_setup_check(monkeypatch):
-    from virtual_screening.vina_setup import check_vina
+    from med_research.pipeline.virtual_screening.vina_setup import check_vina
     result = check_vina()
     assert result is None or isinstance(result, str)
 
 
 def test_vina_setup_system(monkeypatch):
-    from virtual_screening.vina_setup import _system
+    from med_research.pipeline.virtual_screening.vina_setup import _system
     sysname = _system()
     assert sysname in ("win32", "darwin", "linux")
 

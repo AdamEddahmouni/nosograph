@@ -17,7 +17,7 @@ import pytest
 @pytest.fixture(autouse=True)
 def _mock_spacy_load(monkeypatch):
     """Prevent spaCy from being imported/loaded in all literature mining tests."""
-    monkeypatch.setattr("literature_mining.ner._try_load_spacy", lambda: False)
+    monkeypatch.setattr("med_research.pipeline.literature_mining.ner._try_load_spacy", lambda: False)
 
 
 # ═══════════════════════════════════════════════════════════════════════
@@ -180,7 +180,7 @@ class TestBiomedicalNER:
 
     @pytest.fixture(autouse=True)
     def _setup_ner(self):
-        from literature_mining.ner import BiomedicalNER
+        from med_research.pipeline.literature_mining.ner import BiomedicalNER
         self.ner = BiomedicalNER()
         # spaCy should be disabled by the autouse fixture
         assert self.ner.spacy_available is False
@@ -359,7 +359,7 @@ class TestGenerateSynonyms:
     """Tests for _generate_gene_synonyms() and _generate_drug_synonyms()."""
 
     def test_gene_synonyms_includes_name_and_id(self):
-        from literature_mining.crossref import _generate_gene_synonyms
+        from med_research.pipeline.literature_mining.crossref import _generate_gene_synonyms
 
         gene = {
             "name": "Bruton Tyrosine Kinase",
@@ -372,7 +372,7 @@ class TestGenerateSynonyms:
         assert "kinase" in synonyms  # extracted from function
 
     def test_gene_synonyms_function_term_extraction(self):
-        from literature_mining.crossref import _generate_gene_synonyms
+        from med_research.pipeline.literature_mining.crossref import _generate_gene_synonyms
 
         gene = {
             "name": "Some Receptor Protein",
@@ -383,7 +383,7 @@ class TestGenerateSynonyms:
         assert "receptor" in synonyms
 
     def test_gene_synonyms_no_function(self):
-        from literature_mining.crossref import _generate_gene_synonyms
+        from med_research.pipeline.literature_mining.crossref import _generate_gene_synonyms
 
         gene = {"name": "Unknown Gene", "id": "UG1"}
         synonyms = _generate_gene_synonyms(gene)
@@ -391,7 +391,7 @@ class TestGenerateSynonyms:
         assert "ug1" in synonyms
 
     def test_drug_synonyms_splits_generic_brand(self):
-        from literature_mining.crossref import _generate_drug_synonyms
+        from med_research.pipeline.literature_mining.crossref import _generate_drug_synonyms
 
         drug = {
             "name": "Ibrutinib (Imbruvica)",
@@ -403,7 +403,7 @@ class TestGenerateSynonyms:
         assert "ibrutinib" in synonyms
 
     def test_drug_synonyms_no_parens(self):
-        from literature_mining.crossref import _generate_drug_synonyms
+        from med_research.pipeline.literature_mining.crossref import _generate_drug_synonyms
 
         drug = {"name": "Prednisone", "id": "prednisone"}
         synonyms = _generate_drug_synonyms(drug)
@@ -416,7 +416,7 @@ class TestMatchArticleEntities:
     """Tests for _match_article_entities()."""
 
     def test_matches_gene_by_synonym(self, sample_entities):
-        from literature_mining.crossref import _match_article_entities
+        from med_research.pipeline.literature_mining.crossref import _match_article_entities
 
         article = {
             "title": "BTK study",
@@ -427,7 +427,7 @@ class TestMatchArticleEntities:
         assert matches["gene_count"] >= 1
 
     def test_matches_drug_by_synonym(self, sample_entities):
-        from literature_mining.crossref import _match_article_entities
+        from med_research.pipeline.literature_mining.crossref import _match_article_entities
 
         article = {
             "title": "New treatment",
@@ -438,7 +438,7 @@ class TestMatchArticleEntities:
         assert matches["drug_count"] >= 1
 
     def test_matches_drug_by_brand_name(self, sample_entities):
-        from literature_mining.crossref import _match_article_entities
+        from med_research.pipeline.literature_mining.crossref import _match_article_entities
 
         article = {
             "title": "Imbruvica trial",
@@ -448,7 +448,7 @@ class TestMatchArticleEntities:
         assert "ibrutinib" in matches["drugs_found"]
 
     def test_matches_pathway_by_keywords(self, sample_entities):
-        from literature_mining.crossref import _match_article_entities
+        from med_research.pipeline.literature_mining.crossref import _match_article_entities
 
         article = {
             "title": "Signaling study",
@@ -459,7 +459,7 @@ class TestMatchArticleEntities:
         assert matches["pathway_count"] >= 1
 
     def test_no_matches_on_unrelated_text(self, sample_entities):
-        from literature_mining.crossref import _match_article_entities
+        from med_research.pipeline.literature_mining.crossref import _match_article_entities
 
         article = {
             "title": "Plant study",
@@ -472,7 +472,7 @@ class TestMatchArticleEntities:
         assert matches["total_matches"] == 0
 
     def test_total_matches_is_sum_of_components(self, sample_entities):
-        from literature_mining.crossref import _match_article_entities
+        from med_research.pipeline.literature_mining.crossref import _match_article_entities
 
         article = {
             "title": "Combined study",
@@ -484,7 +484,7 @@ class TestMatchArticleEntities:
 
     def test_short_synonym_filtered(self, sample_entities):
         """Synonyms <= 3 characters (e.g., raw gene ID) should be filtered by the >3 check."""
-        from literature_mining.crossref import _match_article_entities
+        from med_research.pipeline.literature_mining.crossref import _match_article_entities
 
         article = {
             "title": "Short match",
@@ -502,7 +502,7 @@ class TestComputeRelevance:
     """Tests for _compute_relevance()."""
 
     def test_gene_and_drug_co_mention_bonus(self):
-        from literature_mining.crossref import _compute_relevance
+        from med_research.pipeline.literature_mining.crossref import _compute_relevance
 
         matches = {
             "gene_count": 1,
@@ -515,7 +515,7 @@ class TestComputeRelevance:
         assert score == 9.0
 
     def test_only_genes_no_bonus(self):
-        from literature_mining.crossref import _compute_relevance
+        from med_research.pipeline.literature_mining.crossref import _compute_relevance
 
         matches = {
             "gene_count": 3,
@@ -528,7 +528,7 @@ class TestComputeRelevance:
         assert score == 6.0
 
     def test_pathways_weighted_lower(self):
-        from literature_mining.crossref import _compute_relevance
+        from med_research.pipeline.literature_mining.crossref import _compute_relevance
 
         matches = {
             "gene_count": 0,
@@ -541,7 +541,7 @@ class TestComputeRelevance:
         assert score == 3.0
 
     def test_novel_entity_bonus(self):
-        from literature_mining.crossref import _compute_relevance
+        from med_research.pipeline.literature_mining.crossref import _compute_relevance
 
         matches = {
             "gene_count": 1,
@@ -555,7 +555,7 @@ class TestComputeRelevance:
         assert score == 4.0
 
     def test_zero_matches(self):
-        from literature_mining.crossref import _compute_relevance
+        from med_research.pipeline.literature_mining.crossref import _compute_relevance
 
         matches = {
             "gene_count": 0,
@@ -567,7 +567,7 @@ class TestComputeRelevance:
         assert score == 0.0
 
     def test_returns_float(self):
-        from literature_mining.crossref import _compute_relevance
+        from med_research.pipeline.literature_mining.crossref import _compute_relevance
 
         matches = {
             "gene_count": 2,
@@ -585,7 +585,7 @@ class TestCrossReferenceArticles:
     """Tests for cross_reference_articles() integration."""
 
     def test_stats_computed_correctly(self, sample_articles, sample_entities, sample_candidates):
-        from literature_mining.crossref import cross_reference_articles
+        from med_research.pipeline.literature_mining.crossref import cross_reference_articles
 
         results = cross_reference_articles(sample_articles, sample_entities, sample_candidates)
         stats = results["stats"]
@@ -596,7 +596,7 @@ class TestCrossReferenceArticles:
         assert stats["drugs_found"] >= 1
 
     def test_candidate_support_populated(self, sample_articles, sample_entities, sample_candidates):
-        from literature_mining.crossref import cross_reference_articles
+        from med_research.pipeline.literature_mining.crossref import cross_reference_articles
 
         results = cross_reference_articles(sample_articles, sample_entities, sample_candidates)
         candidate_support = results["candidate_support"]
@@ -607,7 +607,7 @@ class TestCrossReferenceArticles:
         assert len(candidate_support["c001"]) >= 1
 
     def test_articles_sorted_by_relevance_descending(self, sample_articles, sample_entities, sample_candidates):
-        from literature_mining.crossref import cross_reference_articles
+        from med_research.pipeline.literature_mining.crossref import cross_reference_articles
 
         results = cross_reference_articles(sample_articles, sample_entities, sample_candidates)
         article_matches = results["article_matches"]
@@ -616,7 +616,7 @@ class TestCrossReferenceArticles:
             assert article_matches[i]["relevance_score"] >= article_matches[i + 1]["relevance_score"]
 
     def test_gene_coverage_tracks_mentions(self, sample_articles, sample_entities, sample_candidates):
-        from literature_mining.crossref import cross_reference_articles
+        from med_research.pipeline.literature_mining.crossref import cross_reference_articles
 
         results = cross_reference_articles(sample_articles, sample_entities, sample_candidates)
         gene_coverage = results["gene_coverage"]
@@ -626,7 +626,7 @@ class TestCrossReferenceArticles:
         assert gene_coverage["BTK"]["articles"] >= 1
 
     def test_unrelated_article_scores_zero(self, sample_articles, sample_entities, sample_candidates):
-        from literature_mining.crossref import cross_reference_articles
+        from med_research.pipeline.literature_mining.crossref import cross_reference_articles
 
         results = cross_reference_articles(sample_articles, sample_entities, sample_candidates)
         # Article 3 (plant biology) should have relevance_score == 0
@@ -634,7 +634,7 @@ class TestCrossReferenceArticles:
         assert plant_article["relevance_score"] == 0.0
 
     def test_each_article_has_kg_matches(self, sample_articles, sample_entities, sample_candidates):
-        from literature_mining.crossref import cross_reference_articles
+        from med_research.pipeline.literature_mining.crossref import cross_reference_articles
 
         results = cross_reference_articles(sample_articles, sample_entities, sample_candidates)
         for article in results["article_matches"]:
@@ -653,7 +653,7 @@ class TestGenerateCandidateQueries:
     """Tests for generate_candidate_queries()."""
 
     def test_generates_correct_query_format(self):
-        from literature_mining.miner import generate_candidate_queries
+        from med_research.pipeline.literature_mining.miner import generate_candidate_queries
 
         candidates = [
             {"id": "c001", "drug_name": "Ibrutinib (Imbruvica)"},
@@ -667,7 +667,7 @@ class TestGenerateCandidateQueries:
         assert '"Imbruvica"' in query
 
     def test_generate_multiple_candidates(self):
-        from literature_mining.miner import generate_candidate_queries
+        from med_research.pipeline.literature_mining.miner import generate_candidate_queries
 
         candidates = [
             {"id": "c001", "drug_name": "Fenebrutinib (GDC-0853)"},
@@ -677,7 +677,7 @@ class TestGenerateCandidateQueries:
         assert len(queries) == 2
 
     def test_skips_empty_drug_names(self):
-        from literature_mining.miner import generate_candidate_queries
+        from med_research.pipeline.literature_mining.miner import generate_candidate_queries
 
         candidates = [
             {"id": "c001", "drug_name": ""},
@@ -687,7 +687,7 @@ class TestGenerateCandidateQueries:
         assert len(queries) == 0
 
     def test_drug_without_brand_name(self):
-        from literature_mining.miner import generate_candidate_queries
+        from med_research.pipeline.literature_mining.miner import generate_candidate_queries
 
         candidates = [
             {"id": "c001", "drug_name": "Prednisone"},
@@ -699,7 +699,7 @@ class TestGenerateCandidateQueries:
         assert query.count('"') == 2  # exactly one quoted term
 
     def test_all_fields_are_strings(self):
-        from literature_mining.miner import generate_candidate_queries
+        from med_research.pipeline.literature_mining.miner import generate_candidate_queries
 
         candidates = [
             {"id": "c001", "drug_name": "Test Drug (Brand)"},
@@ -713,7 +713,7 @@ class TestGenerateCandidateQueries:
 
     def test_brand_equals_generic_no_duplicate(self):
         """When generic and brand are the same, don't duplicate."""
-        from literature_mining.miner import generate_candidate_queries
+        from med_research.pipeline.literature_mining.miner import generate_candidate_queries
 
         candidates = [
             {"id": "c001", "drug_name": "Prednisone (Prednisone)"},
@@ -729,20 +729,20 @@ class TestSearchPubmed:
 
     def test_returns_empty_when_biopython_unavailable(self, monkeypatch):
         """search_pubmed should return [] when BioPython is not installed."""
-        monkeypatch.setattr("literature_mining.miner.BIOPYTHON_AVAILABLE", False)
-        from literature_mining.miner import search_pubmed
+        monkeypatch.setattr("med_research.pipeline.literature_mining.miner.BIOPYTHON_AVAILABLE", False)
+        from med_research.pipeline.literature_mining.miner import search_pubmed
 
         articles = search_pubmed("lupus treatment", max_results=10)
         assert articles == []
 
-    @patch("literature_mining.miner.Medline")
-    @patch("literature_mining.miner.Entrez")
+    @patch("med_research.pipeline.literature_mining.Medline")
+    @patch("med_research.pipeline.literature_mining.Entrez")
     def test_returns_articles_with_abstracts(self, mock_entrez, mock_medline, monkeypatch):
         """search_pubmed should return parsed articles when BioPython is available."""
-        from literature_mining.miner import search_pubmed
+        from med_research.pipeline.literature_mining.miner import search_pubmed
 
         # Ensure BIOPYTHON_AVAILABLE is True using monkeypatch for clean teardown
-        monkeypatch.setattr("literature_mining.miner.BIOPYTHON_AVAILABLE", True)
+        monkeypatch.setattr("med_research.pipeline.literature_mining.miner.BIOPYTHON_AVAILABLE", True)
 
         # Mock Entrez.esearch → Entrez.read → return IdList
         mock_search_handle = MagicMock()
@@ -784,26 +784,26 @@ class TestSearchPubmed:
         assert articles[0]["authors"] == ["Author A", "Author B"]
         assert "Journal Article" in articles[0]["publication_types"]
 
-    @patch("literature_mining.miner.Medline")
-    @patch("literature_mining.miner.Entrez")
+    @patch("med_research.pipeline.literature_mining.Medline")
+    @patch("med_research.pipeline.literature_mining.Entrez")
     def test_handles_entrez_error_gracefully(self, mock_entrez, mock_medline, monkeypatch):
         """search_pubmed should return [] on Entrez exception, not crash."""
-        from literature_mining.miner import search_pubmed
+        from med_research.pipeline.literature_mining.miner import search_pubmed
 
-        monkeypatch.setattr("literature_mining.miner.BIOPYTHON_AVAILABLE", True)
+        monkeypatch.setattr("med_research.pipeline.literature_mining.miner.BIOPYTHON_AVAILABLE", True)
 
         mock_entrez.esearch.side_effect = Exception("Network error")
 
         articles = search_pubmed("lupus", max_results=10)
         assert articles == []
 
-    @patch("literature_mining.miner.Medline")
-    @patch("literature_mining.miner.Entrez")
+    @patch("med_research.pipeline.literature_mining.Medline")
+    @patch("med_research.pipeline.literature_mining.Entrez")
     def test_returns_empty_on_no_ids(self, mock_entrez, mock_medline, monkeypatch):
         """search_pubmed should return [] when PubMed returns no matching IDs."""
-        from literature_mining.miner import search_pubmed
+        from med_research.pipeline.literature_mining.miner import search_pubmed
 
-        monkeypatch.setattr("literature_mining.miner.BIOPYTHON_AVAILABLE", True)
+        monkeypatch.setattr("med_research.pipeline.literature_mining.miner.BIOPYTHON_AVAILABLE", True)
 
         mock_search_handle = MagicMock()
         mock_entrez.esearch.return_value = mock_search_handle
@@ -817,7 +817,7 @@ class TestPrintSummary:
     """Smoke tests for print_summary()."""
 
     def test_produces_output(self, sample_candidates, sample_entities, capsys):
-        from literature_mining.miner import print_summary
+        from med_research.pipeline.literature_mining.miner import print_summary
 
         results = {
             "stats": {
@@ -843,7 +843,7 @@ class TestPrintSummary:
         }
 
         # Set up entities_hack global since print_summary uses it
-        import literature_mining.miner as miner_mod
+        import med_research.pipeline.literature_mining.miner as miner_mod
         miner_mod.entities_hack = {
             "BTK": {"name": "Bruton Tyrosine Kinase"},
             "STAT4": {"name": "Signal Transducer and Activator of Transcription 4"},
@@ -865,7 +865,7 @@ class TestEscapeHtml:
     """Tests for escape_html()."""
 
     def test_escapes_special_characters(self):
-        from literature_mining.report import escape_html
+        from med_research.pipeline.literature_mining.report import escape_html
 
         text = '<script>alert("XSS & more")</script>'
         escaped = escape_html(text)
@@ -876,24 +876,24 @@ class TestEscapeHtml:
         assert "<script>" not in escaped
 
     def test_empty_string(self):
-        from literature_mining.report import escape_html
+        from med_research.pipeline.literature_mining.report import escape_html
 
         assert escape_html("") == ""
 
     def test_none_returns_empty(self):
-        from literature_mining.report import escape_html
+        from med_research.pipeline.literature_mining.report import escape_html
 
         assert escape_html(None) == ""
 
     def test_plain_text_unchanged(self):
-        from literature_mining.report import escape_html
+        from med_research.pipeline.literature_mining.report import escape_html
 
         text = "Normal text without any special characters."
         assert escape_html(text) == text
 
     def test_already_escaped_not_double_escaped(self):
         """Ensures that already-escaped entities don't get mangled."""
-        from literature_mining.report import escape_html
+        from med_research.pipeline.literature_mining.report import escape_html
 
         text = "&amp;"
         escaped = escape_html(text)
@@ -905,7 +905,7 @@ class TestGenerateLiteratureReport:
     """Tests for generate_literature_report()."""
 
     def test_creates_html_file(self, tmp_path, sample_entities, sample_candidates):
-        from literature_mining.report import generate_literature_report
+        from med_research.pipeline.literature_mining.report import generate_literature_report
 
         # Patch the output path to use tmp_path
         report_path = tmp_path / "literature_report.html"
@@ -974,7 +974,7 @@ class TestGenerateLiteratureReport:
         assert "10" in html_content
 
     def test_report_contains_expected_sections(self, tmp_path, sample_entities, sample_candidates):
-        from literature_mining.report import generate_literature_report
+        from med_research.pipeline.literature_mining.report import generate_literature_report
 
         report_path = tmp_path / "test_report.html"
 
@@ -1016,7 +1016,7 @@ class TestGenerateLiteratureReport:
         assert "5" in html_content  # total_articles stat
 
     def test_report_with_novel_entities(self, tmp_path, sample_entities, sample_candidates):
-        from literature_mining.report import generate_literature_report
+        from med_research.pipeline.literature_mining.report import generate_literature_report
 
         report_path = tmp_path / "novel_report.html"
 
@@ -1060,7 +1060,7 @@ class TestGenerateLiteratureReport:
         assert "5" in html_content
 
     def test_report_without_novel_entities_shows_hint(self, tmp_path, sample_entities, sample_candidates):
-        from literature_mining.report import generate_literature_report
+        from med_research.pipeline.literature_mining.report import generate_literature_report
 
         report_path = tmp_path / "no_spacy_report.html"
 
@@ -1105,7 +1105,7 @@ class TestSplitSentences:
     """Tests for _split_sentences()."""
 
     def test_splits_basic_sentences(self):
-        from literature_mining.content_extractor import _split_sentences
+        from med_research.pipeline.literature_mining.content_extractor import _split_sentences
 
         text = "First sentence about lupus. Second sentence about kidneys. Third sentence."
         sentences = _split_sentences(text)
@@ -1115,7 +1115,7 @@ class TestSplitSentences:
 
     def test_preserves_abbreviations(self):
         """Should not split on 'et al.', 'e.g.', etc."""
-        from literature_mining.content_extractor import _split_sentences
+        from med_research.pipeline.literature_mining.content_extractor import _split_sentences
 
         text = "Smith et al. found that ibrutinib works. The results were significant."
         sentences = _split_sentences(text)
@@ -1124,7 +1124,7 @@ class TestSplitSentences:
 
     def test_preserves_decimal_numbers(self):
         """Should not split on decimal points."""
-        from literature_mining.content_extractor import _split_sentences
+        from med_research.pipeline.literature_mining.content_extractor import _split_sentences
 
         text = "The dose was 5.3 mg. Patients tolerated it well."
         sentences = _split_sentences(text)
@@ -1133,19 +1133,19 @@ class TestSplitSentences:
         assert sentences[0].startswith("The dose was")
 
     def test_handles_question_marks(self):
-        from literature_mining.content_extractor import _split_sentences
+        from med_research.pipeline.literature_mining.content_extractor import _split_sentences
 
         text = "What is the mechanism? Ibrutinib blocks BTK. This is important."
         sentences = _split_sentences(text)
         assert len(sentences) == 3
 
     def test_empty_string(self):
-        from literature_mining.content_extractor import _split_sentences
+        from med_research.pipeline.literature_mining.content_extractor import _split_sentences
 
         assert _split_sentences("") == []
 
     def test_single_sentence(self):
-        from literature_mining.content_extractor import _split_sentences
+        from med_research.pipeline.literature_mining.content_extractor import _split_sentences
 
         text = "Only one sentence here."
         sentences = _split_sentences(text)
@@ -1153,7 +1153,7 @@ class TestSplitSentences:
         assert sentences[0] == "Only one sentence here."
 
     def test_handles_Dr_abbreviation(self):
-        from literature_mining.content_extractor import _split_sentences
+        from med_research.pipeline.literature_mining.content_extractor import _split_sentences
 
         text = "Dr. Smith treated the patient. Ibrutinib was effective."
         sentences = _split_sentences(text)
@@ -1161,7 +1161,7 @@ class TestSplitSentences:
         assert "Dr. Smith" in sentences[0]
 
     def test_handles_e_g_abbreviation(self):
-        from literature_mining.content_extractor import _split_sentences
+        from med_research.pipeline.literature_mining.content_extractor import _split_sentences
 
         text = "Several kinases, e.g. BTK and TYK2, are targets. Trials are ongoing."
         sentences = _split_sentences(text)
@@ -1178,7 +1178,7 @@ class TestContentExtractor:
 
     @pytest.fixture
     def extractor(self, known_terms):
-        from literature_mining.content_extractor import ContentExtractor
+        from med_research.pipeline.literature_mining.content_extractor import ContentExtractor
         return ContentExtractor(known_terms=known_terms)
 
     def test_filters_to_relevant_sentences(self, extractor):
@@ -1210,7 +1210,7 @@ class TestContentExtractor:
 
     def test_empty_known_terms(self):
         """With no known terms, all content should pass through."""
-        from literature_mining.content_extractor import ContentExtractor
+        from med_research.pipeline.literature_mining.content_extractor import ContentExtractor
 
         extractor = ContentExtractor(known_terms=set())
         abstract = "Ibrutinib is a BTK inhibitor."
@@ -1264,7 +1264,7 @@ class TestContentExtractor:
         assert stats["fully_filtered"] == 1
 
     def test_build_terms_from_entities(self):
-        from literature_mining.content_extractor import ContentExtractor
+        from med_research.pipeline.literature_mining.content_extractor import ContentExtractor
 
         entities = {
             "genes": {
@@ -1337,7 +1337,7 @@ class TestContentExtractor:
         assert "Unrelated methods" not in filtered
 
     def test_report_includes_extraction_section(self, tmp_path, sample_entities, sample_candidates):
-        from literature_mining.report import generate_literature_report
+        from med_research.pipeline.literature_mining.report import generate_literature_report
 
         report_path = tmp_path / "extract_report.html"
 
@@ -1382,3 +1382,5 @@ class TestContentExtractor:
         assert "10" in html_content
         assert "2,500" in html_content
         assert "Relevant Sentences Kept" in html_content
+
+

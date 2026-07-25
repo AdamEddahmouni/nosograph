@@ -17,7 +17,7 @@ class TestComputeCompositeScore:
     """Tests for compute_composite_score()."""
 
     def test_perfect_score(self):
-        from drug_repurposing.engine import compute_composite_score
+        from med_research.pipeline.drug_repurposing.engine import compute_composite_score
 
         candidate = {
             "target_similarity_score": 10,
@@ -32,7 +32,7 @@ class TestComputeCompositeScore:
         assert score == 10.00
 
     def test_minimum_score(self):
-        from drug_repurposing.engine import compute_composite_score
+        from med_research.pipeline.drug_repurposing.engine import compute_composite_score
 
         candidate = {
             "target_similarity_score": 0,
@@ -46,7 +46,7 @@ class TestComputeCompositeScore:
         assert score == 0.00
 
     def test_mid_range_score(self):
-        from drug_repurposing.engine import compute_composite_score
+        from med_research.pipeline.drug_repurposing.engine import compute_composite_score
 
         candidate = {
             "target_similarity_score": 5,
@@ -61,7 +61,7 @@ class TestComputeCompositeScore:
         assert score == 5.00
 
     def test_weighted_calculation(self):
-        from drug_repurposing.engine import compute_composite_score
+        from med_research.pipeline.drug_repurposing.engine import compute_composite_score
 
         candidate = {
             "target_similarity_score": 10,
@@ -77,7 +77,7 @@ class TestComputeCompositeScore:
         assert score == round(expected, 2)
 
     def test_result_is_float(self):
-        from drug_repurposing.engine import compute_composite_score
+        from med_research.pipeline.drug_repurposing.engine import compute_composite_score
 
         candidate = {
             "target_similarity_score": 7.5,
@@ -92,7 +92,7 @@ class TestComputeCompositeScore:
 
     def test_missing_keys_default_to_five(self):
         """Missing keys default to 5 (from candidate.get(key, 5)), not 0."""
-        from drug_repurposing.engine import compute_composite_score
+        from med_research.pipeline.drug_repurposing.engine import compute_composite_score
 
         candidate = {
             "target_similarity_score": 10,
@@ -107,13 +107,13 @@ class TestIdentifyUntargetedGenes:
     """Tests for identify_untargeted_genes()."""
 
     def test_returns_list(self, sample_graph):
-        from drug_repurposing.engine import identify_untargeted_genes
+        from med_research.pipeline.drug_repurposing.engine import identify_untargeted_genes
 
         result = identify_untargeted_genes(sample_graph)
         assert isinstance(result, list)
 
     def test_all_returned_have_dict_structure(self, sample_graph):
-        from drug_repurposing.engine import identify_untargeted_genes
+        from med_research.pipeline.drug_repurposing.engine import identify_untargeted_genes
 
         result = identify_untargeted_genes(sample_graph)
         for gene in result:
@@ -121,14 +121,14 @@ class TestIdentifyUntargetedGenes:
             assert "name" in gene
 
     def test_untargeted_genes_count(self, sample_graph):
-        from drug_repurposing.engine import identify_untargeted_genes
+        from med_research.pipeline.drug_repurposing.engine import identify_untargeted_genes
 
         result = identify_untargeted_genes(sample_graph)
         # Use >= to avoid fragile exact-count assertions
         assert len(result) >= 10
 
     def test_targeted_genes_not_in_result(self, sample_graph):
-        from drug_repurposing.engine import identify_untargeted_genes
+        from med_research.pipeline.drug_repurposing.engine import identify_untargeted_genes
 
         result = identify_untargeted_genes(sample_graph)
         result_ids = {g["id"] for g in result}
@@ -138,7 +138,7 @@ class TestIdentifyUntargetedGenes:
 
     def test_drug_target_genes_excluded(self, sample_graph):
         """CD20, IMPDH, Calcineurin, Glucocorticoid Receptor are not lupus risk genes."""
-        from drug_repurposing.engine import identify_untargeted_genes
+        from med_research.pipeline.drug_repurposing.engine import identify_untargeted_genes
 
         result = identify_untargeted_genes(sample_graph)
         result_ids = {g["id"] for g in result}
@@ -146,7 +146,7 @@ class TestIdentifyUntargetedGenes:
         assert result_ids.isdisjoint(excluded)
 
     def test_known_untargeted_gene_present(self, sample_graph):
-        from drug_repurposing.engine import identify_untargeted_genes
+        from med_research.pipeline.drug_repurposing.engine import identify_untargeted_genes
 
         result = identify_untargeted_genes(sample_graph)
         result_ids = {g["id"] for g in result}
@@ -160,13 +160,13 @@ class TestScoreCandidates:
     """Tests for score_candidates()."""
 
     def test_returns_list(self, sample_graph, sample_genes, sample_candidates):
-        from drug_repurposing.engine import score_candidates
+        from med_research.pipeline.drug_repurposing.engine import score_candidates
 
         scored = score_candidates(sample_graph, sample_candidates, sample_genes)
         assert isinstance(scored, list)
 
     def test_all_have_composite_score(self, sample_graph, sample_genes, sample_candidates):
-        from drug_repurposing.engine import score_candidates
+        from med_research.pipeline.drug_repurposing.engine import score_candidates
 
         scored = score_candidates(sample_graph, sample_candidates, sample_genes)
         for c in scored:
@@ -175,7 +175,7 @@ class TestScoreCandidates:
             assert 0 <= c["composite_score"] <= 10
 
     def test_all_have_tier(self, sample_graph, sample_genes, sample_candidates):
-        from drug_repurposing.engine import score_candidates
+        from med_research.pipeline.drug_repurposing.engine import score_candidates
 
         scored = score_candidates(sample_graph, sample_candidates, sample_genes)
         tier_names = {
@@ -189,14 +189,14 @@ class TestScoreCandidates:
             assert c["tier"] in tier_names
 
     def test_sorted_descending_by_score(self, sample_graph, sample_genes, sample_candidates):
-        from drug_repurposing.engine import score_candidates
+        from med_research.pipeline.drug_repurposing.engine import score_candidates
 
         scored = score_candidates(sample_graph, sample_candidates, sample_genes)
         for i in range(len(scored) - 1):
             assert scored[i]["composite_score"] >= scored[i + 1]["composite_score"]
 
     def test_gene_name_is_populated(self, sample_graph, sample_genes, sample_candidates):
-        from drug_repurposing.engine import score_candidates
+        from med_research.pipeline.drug_repurposing.engine import score_candidates
 
         scored = score_candidates(sample_graph, sample_candidates, sample_genes)
         for c in scored:
@@ -204,7 +204,7 @@ class TestScoreCandidates:
             assert len(c["gene_name"]) > 0
 
     def test_all_have_final_proximity(self, sample_graph, sample_genes, sample_candidates):
-        from drug_repurposing.engine import score_candidates
+        from med_research.pipeline.drug_repurposing.engine import score_candidates
 
         scored = score_candidates(sample_graph, sample_candidates, sample_genes)
         for c in scored:
@@ -213,7 +213,7 @@ class TestScoreCandidates:
 
     def test_tier_boundaries(self, sample_graph, sample_genes, sample_candidates):
         """Verify tier assignment matches composite score thresholds."""
-        from drug_repurposing.engine import score_candidates
+        from med_research.pipeline.drug_repurposing.engine import score_candidates
 
         scored = score_candidates(sample_graph, sample_candidates, sample_genes)
         for c in scored:
@@ -230,7 +230,7 @@ class TestScoreCandidates:
 
     def test_scored_count_ge_input(self, sample_graph, sample_genes, sample_candidates):
         """Score all candidates — output count should match input count."""
-        from drug_repurposing.engine import score_candidates
+        from med_research.pipeline.drug_repurposing.engine import score_candidates
 
         scored = score_candidates(sample_graph, sample_candidates, sample_genes)
         assert len(scored) >= len(sample_candidates)
@@ -240,7 +240,11 @@ class TestAnalyzeFunction:
     """Smoke tests for analyze()."""
 
     def test_analyze_produces_output(self, sample_graph, sample_genes, sample_candidates, capsys):
-        from drug_repurposing.engine import analyze, identify_untargeted_genes, score_candidates
+        from med_research.pipeline.drug_repurposing.engine import (
+            analyze,
+            identify_untargeted_genes,
+            score_candidates,
+        )
 
         untargeted = identify_untargeted_genes(sample_graph)
         untargeted_ids = {g["id"] for g in untargeted}
@@ -258,7 +262,7 @@ class TestPathwayProximityHelper:
     """Tests for compute_pathway_proximity()."""
 
     def test_fallback_when_drug_not_in_graph(self, sample_graph):
-        from drug_repurposing.engine import compute_pathway_proximity
+        from med_research.pipeline.drug_repurposing.engine import compute_pathway_proximity
 
         candidate = {
             "drug_name": "NonexistentDrug (XYZ-001)",
@@ -268,7 +272,7 @@ class TestPathwayProximityHelper:
         assert score == 6.5
 
     def test_fallback_without_curated_score(self, sample_graph):
-        from drug_repurposing.engine import compute_pathway_proximity
+        from med_research.pipeline.drug_repurposing.engine import compute_pathway_proximity
 
         candidate = {
             "drug_name": "NonexistentDrug (XYZ-001)",
@@ -277,7 +281,7 @@ class TestPathwayProximityHelper:
         assert score == 5.0  # default from candidate.get("pathway_proximity_score", 5.0)
 
     def test_returns_float(self, sample_graph):
-        from drug_repurposing.engine import compute_pathway_proximity
+        from med_research.pipeline.drug_repurposing.engine import compute_pathway_proximity
 
         candidate = {
             "drug_name": "Fenebrutinib (GDC-0853)",
@@ -289,7 +293,7 @@ class TestPathwayProximityHelper:
     def test_nonexistent_gene_raises_keyerror(self, sample_graph):
         """compute_pathway_proximity does G.nodes[gene_id] before any try/except,
         so a nonexistent gene raises KeyError (caught upstream by score_candidates)."""
-        from drug_repurposing.engine import compute_pathway_proximity
+        from med_research.pipeline.drug_repurposing.engine import compute_pathway_proximity
 
         candidate = {
             "drug_name": "Fenebrutinib (GDC-0853)",
@@ -300,7 +304,7 @@ class TestPathwayProximityHelper:
 
     def test_nonexistent_gene_handled_by_score_candidates(self, sample_graph, sample_genes):
         """score_candidates catches KeyError from compute_pathway_proximity gracefully."""
-        from drug_repurposing.engine import score_candidates
+        from med_research.pipeline.drug_repurposing.engine import score_candidates
 
         candidates = [{
             "id": "test001",
@@ -326,7 +330,7 @@ class TestPathwayProximityHelper:
 
     def test_drug_in_graph_proximity(self, sample_graph):
         """Test proximity when drug IS in the graph — exercises nx.shortest_path_length."""
-        from drug_repurposing.engine import compute_pathway_proximity
+        from med_research.pipeline.drug_repurposing.engine import compute_pathway_proximity
 
         # Hydroxychloroquine targets TLR7 directly (TARGETS edge), distance to TLR7 = 1
         candidate = {
@@ -339,7 +343,7 @@ class TestPathwayProximityHelper:
 
     def test_drug_in_graph_indirect_proximity(self, sample_graph):
         """Test proximity with indirect path through the graph."""
-        from drug_repurposing.engine import compute_pathway_proximity
+        from med_research.pipeline.drug_repurposing.engine import compute_pathway_proximity
 
         # Belimumab targets BAFF → bcell-signaling → BTK participates in bcell-signaling
         # Distance from belimumab to BTK should be > 1
@@ -357,7 +361,10 @@ class TestPrintTopCandidates:
     """Smoke tests for print_top_candidates()."""
 
     def test_produces_output(self, sample_graph, sample_genes, sample_candidates, capsys):
-        from drug_repurposing.engine import print_top_candidates, score_candidates
+        from med_research.pipeline.drug_repurposing.engine import (
+            print_top_candidates,
+            score_candidates,
+        )
 
         scored = score_candidates(sample_graph, sample_candidates, sample_genes)
         print_top_candidates(scored, top_n=5)
@@ -371,7 +378,10 @@ class TestPrintGeneAnalysis:
     """Smoke tests for print_gene_analysis()."""
 
     def test_gene_with_candidates(self, sample_graph, sample_genes, sample_candidates, capsys):
-        from drug_repurposing.engine import print_gene_analysis, score_candidates
+        from med_research.pipeline.drug_repurposing.engine import (
+            print_gene_analysis,
+            score_candidates,
+        )
 
         scored = score_candidates(sample_graph, sample_candidates, sample_genes)
         print_gene_analysis(scored, sample_genes, "BTK")
@@ -379,7 +389,10 @@ class TestPrintGeneAnalysis:
         assert "BTK" in captured.out
 
     def test_gene_without_candidates(self, sample_graph, sample_genes, sample_candidates, capsys):
-        from drug_repurposing.engine import print_gene_analysis, score_candidates
+        from med_research.pipeline.drug_repurposing.engine import (
+            print_gene_analysis,
+            score_candidates,
+        )
 
         scored = score_candidates(sample_graph, sample_candidates, sample_genes)
         print_gene_analysis(scored, sample_genes, "NONEXISTENT")

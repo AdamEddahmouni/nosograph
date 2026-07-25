@@ -1,10 +1,13 @@
-.PHONY: help test test-quiet test-cov lint lint-fix run-all run-all-html kg repurpose bio literature docker-build docker-run docker-up docker-test clean
-
-# ── Lupus Research Platform Makefile ──────────────────────────────────────
+.PHONY: help test test-quiet test-cov lint lint-fix run-all kg repurpose bio literature docker-build docker-up docker-test clean install
 
 help:  ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | \
 		awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-20s\033[0m %s\n", $$1, $$2}'
+
+# ── Setup ─────────────────────────────────────────────────────────────────
+
+install:  ## Install the package in development mode
+	pip install -e ".[all]"
 
 # ── Testing ──────────────────────────────────────────────────────────────
 
@@ -14,47 +17,53 @@ test:  ## Run all tests (verbose)
 test-quiet:  ## Run all tests (quiet)
 	python -m pytest tests/ -q --tb=line
 
-test-cov:  ## Run tests with coverage report
-	python -m pytest tests/ --cov=. --cov-report=term-missing --cov-report=html
+test-cov:  ## Run tests with coverage
+	python -m pytest tests/ --cov=src/med_research --cov-report=term-missing
 
 # ── Linting ──────────────────────────────────────────────────────────────
 
 lint:  ## Run ruff linter
-	python -m ruff check .
+	python -m ruff check src/ tests/
 
 lint-fix:  ## Auto-fix ruff lint issues
-	python -m ruff check . --fix
+	python -m ruff check src/ tests/ --fix
 
 # ── Pipeline ─────────────────────────────────────────────────────────────
 
-run-all:  ## Run the full pipeline
-	python main.py run-all
+run-all:  ## Run the full pipeline for SLE
+	python -m med_research.cli run-all --disease sle
 
-run-all-html:  ## Run full pipeline + generate all HTML reports
-	python main.py run-all --export-html
+run-all-html:  ## Run full pipeline + generate HTML reports
+	python -m med_research.cli run-all --disease sle --export-html
 
-kg:  ## Build and analyze the knowledge graph
-	python main.py kg --analyze
+kg:  ## Build the knowledge graph for SLE
+	python -m med_research.cli kg --disease sle --analyze
 
-repurpose:  ## Score drug repurposing candidates (top 15)
-	python main.py repurpose --top 15
+repurpose:  ## Score drug repurposing candidates
+	python -m med_research.cli repurpose --disease sle --top 15
 
 bio:  ## Run all bioinformatics analyses
-	python main.py bioinformatics --export-html
+	python -m med_research.cli bioinformatics --disease sle --export-html
 
-literature:  ## Mine PubMed for SLE articles
-	python main.py literature --export-html
+literature:  ## Mine disease-related articles
+	python -m med_research.cli literature --disease sle --export-html
+
+diseases:  ## List all available diseases
+	python -m med_research.cli diseases
+
+modules:  ## List all available pipeline modules
+	python -m med_research.cli modules
+
+serve:  ## Start the web API server
+	python -m med_research.cli serve --reload
 
 # ── Docker ───────────────────────────────────────────────────────────────
 
 docker-build:  ## Build the Docker image
 	docker compose build
 
-docker-run:  ## Run full pipeline in Docker
-	docker compose run --rm pipeline run-all --export-html
-
-docker-up:  ## Start the knowledge graph web server
-	docker compose up kg-web
+docker-up:  ## Start the web API server in Docker
+	docker compose up
 
 docker-test:  ## Run tests inside Docker
 	docker compose run --rm pipeline test
@@ -63,17 +72,11 @@ docker-test:  ## Run tests inside Docker
 
 clean:  ## Remove caches, build artifacts, and generated reports
 	@echo "Cleaning cache files..."
-	@rm -rf bioinformatics/data/*_cache.json
-	@rm -rf literature_mining/data/*_cache.json
+	@rm -rf src/med_research/pipeline/*/data/*_cache.json 2>/dev/null || true
 	@echo "Cleaning generated reports..."
-	@rm -f drug_repurposing/report.html
-	@rm -f bioinformatics/bioinformatics_report.html
-	@rm -f bioinformatics/data/ppi_interactive.html
-	@rm -f literature_mining/literature_report.html
+	@find src/med_research/pipeline -name "report*.html" -delete 2>/dev/null || true
 	@echo "Cleaning Python artifacts..."
 	@find . -type d -name "__pycache__" -exec rm -rf {} + 2>/dev/null || true
 	@find . -type d -name ".pytest_cache" -exec rm -rf {} + 2>/dev/null || true
 	@find . -type d -name "*.egg-info" -exec rm -rf {} + 2>/dev/null || true
-	@echo "Cleaning coverage..."
-	@rm -rf htmlcov .coverage
 	@echo "Done."

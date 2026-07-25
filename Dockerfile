@@ -11,20 +11,22 @@ WORKDIR /app
 # ── Dependencies ────────────────────────────────────────────────────────────
 FROM base AS deps
 
-COPY requirements.txt .
+COPY requirements.txt pyproject.toml ./
 RUN pip install --upgrade pip && \
-    pip install -r requirements.txt
+    pip install -e ".[all]"
 
 # ── Runtime ─────────────────────────────────────────────────────────────────
 FROM deps AS runtime
 
 COPY . .
 
-# Build the knowledge graph (pre-compute graph_data.json for the web app)
-RUN python knowledge_graph/build_graph.py --export
+# Pre-build the SLE knowledge graph
+RUN python -m med_research.cli kg --disease sle --export
 
-EXPOSE 8000 8080
+RUN useradd -m appuser && chown -R appuser:appuser /app
+USER appuser
 
-# Default: start the web API server
-ENTRYPOINT ["python", "-m", "uvicorn", "web_api.main:app"]
-CMD ["--host", "0.0.0.0", "--port", "8000"]
+EXPOSE 8000
+
+ENTRYPOINT ["python", "-m", "med_research.cli"]
+CMD ["serve", "--host", "0.0.0.0"]

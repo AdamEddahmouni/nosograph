@@ -10,7 +10,7 @@ import pytest
 # Ensure project root is importable
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from drug_synergy.engine import (
+from med_research.pipeline.drug_synergy.engine import (
     compute_synergy,
     get_mechanism_group,
     score_combined_evidence,
@@ -21,7 +21,7 @@ from drug_synergy.engine import (
     score_safety_non_overlap,
     score_target_complementarity,
 )
-from drug_synergy.report import escape_html, generate_html_report
+from med_research.pipeline.drug_synergy.report import escape_html, generate_html_report
 
 # ── Fixtures ──────────────────────────────────────────────────────────────
 
@@ -401,7 +401,7 @@ def test_generate_html_report_with_empty_pairs():
 
 @pytest.mark.slow
 def test_run_synergy_service():
-    from web_api.services.synergy_service import run_synergy
+    from med_research.web.services.synergy_service import run_synergy
 
     result = run_synergy(top_n=10)
     assert result["total_pairs"] == 325

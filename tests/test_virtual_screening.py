@@ -103,19 +103,19 @@ class TestDruglikeness:
     """Tests for compute_druglikeness()."""
 
     def test_perfect_small_molecule(self, sample_compound):
-        from virtual_screening.screening import compute_druglikeness
+        from med_research.pipeline.virtual_screening.screening import compute_druglikeness
         score = compute_druglikeness(sample_compound)
         # baricitinib: MW 371, LogP 1.7, HBD 2, HBA 7 — all within Lipinski
         assert score == 10.0
 
     def test_biologic_gets_neutral_score(self, sample_biologic):
-        from virtual_screening.screening import compute_druglikeness
+        from med_research.pipeline.virtual_screening.screening import compute_druglikeness
         score = compute_druglikeness(sample_biologic)
         # Biologics (MW > 50000) get neutral 5.0
         assert score == 5.0
 
     def test_high_mw_penalty(self):
-        from virtual_screening.screening import compute_druglikeness
+        from med_research.pipeline.virtual_screening.screening import compute_druglikeness
         compound = {
             "mw": 800,
             "logp": 2.0,
@@ -127,7 +127,7 @@ class TestDruglikeness:
         assert score == 8.8
 
     def test_multiple_violations(self):
-        from virtual_screening.screening import compute_druglikeness
+        from med_research.pipeline.virtual_screening.screening import compute_druglikeness
         compound = {
             "mw": 550,
             "logp": 6.0,
@@ -140,12 +140,12 @@ class TestDruglikeness:
         assert score == 1.2
 
     def test_returns_float(self, sample_compound):
-        from virtual_screening.screening import compute_druglikeness
+        from med_research.pipeline.virtual_screening.screening import compute_druglikeness
         score = compute_druglikeness(sample_compound)
         assert isinstance(score, float)
 
     def test_score_bounded_zero_to_ten(self):
-        from virtual_screening.screening import compute_druglikeness
+        from med_research.pipeline.virtual_screening.screening import compute_druglikeness
         # Extreme worst case
         compound = {"mw": 900, "logp": 10.0, "hbd": 10, "hba": 20}
         score = compute_druglikeness(compound)
@@ -156,7 +156,7 @@ class TestTargetComplementarity:
     """Tests for compute_target_complementarity()."""
 
     def test_btk_inhibitor_matches_b_cell_signaling(self, sample_compound, sample_gene_info):
-        from virtual_screening.screening import compute_target_complementarity
+        from med_research.pipeline.virtual_screening.screening import compute_target_complementarity
         score = compute_target_complementarity(sample_compound, sample_gene_info)
         # BTK is B Cell Signaling; baricitinib mentions "JAK" but not B cell keywords
         # Should get baseline + some function overlap
@@ -164,7 +164,7 @@ class TestTargetComplementarity:
         assert score <= 10.0
 
     def test_direct_target_match(self):
-        from virtual_screening.screening import compute_target_complementarity
+        from med_research.pipeline.virtual_screening.screening import compute_target_complementarity
         compound = {
             "mechanism": "BTK inhibitor blocking B cell receptor signaling",
             "target": "BTK",
@@ -181,7 +181,7 @@ class TestTargetComplementarity:
         assert score >= 4.0
 
     def test_no_category_match(self):
-        from virtual_screening.screening import compute_target_complementarity
+        from med_research.pipeline.virtual_screening.screening import compute_target_complementarity
         compound = {
             "mechanism": "Unknown mechanism of action",
             "target": "Unknown",
@@ -198,7 +198,7 @@ class TestTargetComplementarity:
         assert score >= 2.0
 
     def test_returns_float(self, sample_compound, sample_gene_info):
-        from virtual_screening.screening import compute_target_complementarity
+        from med_research.pipeline.virtual_screening.screening import compute_target_complementarity
         score = compute_target_complementarity(sample_compound, sample_gene_info)
         assert isinstance(score, float)
 
@@ -207,20 +207,20 @@ class TestBindingEstimate:
     """Tests for compute_binding_estimate()."""
 
     def test_ideal_small_molecule(self, sample_compound):
-        from virtual_screening.screening import compute_binding_estimate
+        from med_research.pipeline.virtual_screening.screening import compute_binding_estimate
         score = compute_binding_estimate(sample_compound, {})
         # baricitinib: MW 371 (200-600 ✓), LogP 1.7 (1-4 ✓), HBD 2/HBA 7 (balanced ✓), TPSA 112 (<140 ✓)
         # 5 + 2 + 1.5 + 1.5 + 1 = 11 → capped at 10
         assert score == 10.0
 
     def test_biologic_penalty(self, sample_biologic):
-        from virtual_screening.screening import compute_binding_estimate
+        from med_research.pipeline.virtual_screening.screening import compute_binding_estimate
         score = compute_binding_estimate(sample_biologic, {})
         # Biologics (MW > 50000) get a flat 3.0
         assert score == 3.0
 
     def test_poor_molecule(self):
-        from virtual_screening.screening import compute_binding_estimate
+        from med_research.pipeline.virtual_screening.screening import compute_binding_estimate
         compound = {
             "mw": 1200,
             "logp": -2.0,
@@ -234,7 +234,7 @@ class TestBindingEstimate:
         assert score <= 5.0
 
     def test_returns_float(self, sample_compound):
-        from virtual_screening.screening import compute_binding_estimate
+        from med_research.pipeline.virtual_screening.screening import compute_binding_estimate
         score = compute_binding_estimate(sample_compound, {})
         assert isinstance(score, float)
 
@@ -243,7 +243,7 @@ class TestCompositeScore:
     """Tests for compute_composite_score()."""
 
     def test_balanced_scores(self):
-        from virtual_screening.screening import compute_composite_score
+        from med_research.pipeline.virtual_screening.screening import compute_composite_score
         scores = {
             "binding_estimate": 8.0,
             "druglikeness": 7.0,
@@ -257,7 +257,7 @@ class TestCompositeScore:
         assert result == 6.45
 
     def test_maximum_score(self):
-        from virtual_screening.screening import compute_composite_score
+        from med_research.pipeline.virtual_screening.screening import compute_composite_score
         scores = {
             "binding_estimate": 10.0,
             "druglikeness": 10.0,
@@ -269,7 +269,7 @@ class TestCompositeScore:
         assert result == 10.0
 
     def test_minimum_score(self):
-        from virtual_screening.screening import compute_composite_score
+        from med_research.pipeline.virtual_screening.screening import compute_composite_score
         scores = {
             "binding_estimate": 0.0,
             "druglikeness": 0.0,
@@ -281,7 +281,7 @@ class TestCompositeScore:
         assert result == 0.0
 
     def test_returns_float(self):
-        from virtual_screening.screening import compute_composite_score
+        from med_research.pipeline.virtual_screening.screening import compute_composite_score
         scores = {
             "binding_estimate": 5.0,
             "druglikeness": 5.0,
@@ -301,7 +301,7 @@ class TestBuildCompoundLibrary:
     """Tests for build_compound_library()."""
 
     def test_returns_list_of_dicts(self):
-        from virtual_screening.screening import build_compound_library
+        from med_research.pipeline.virtual_screening.screening import build_compound_library
         library = build_compound_library()
         assert isinstance(library, list)
         assert len(library) >= 15
@@ -313,7 +313,7 @@ class TestBuildCompoundLibrary:
             assert "logp" in compound
 
     def test_each_compound_has_required_fields(self):
-        from virtual_screening.screening import build_compound_library
+        from med_research.pipeline.virtual_screening.screening import build_compound_library
         library = build_compound_library()
         required = {"id", "name", "type", "target", "mechanism", "category",
                      "mw", "logp", "hbd", "hba", "rotb", "tpsa"}
@@ -322,7 +322,7 @@ class TestBuildCompoundLibrary:
             assert not missing, f"Missing fields in {compound['id']}: {missing}"
 
     def test_known_drug_included(self):
-        from virtual_screening.screening import build_compound_library
+        from med_research.pipeline.virtual_screening.screening import build_compound_library
         library = build_compound_library()
         ids = {c["id"] for c in library}
         assert "baricitinib" in ids
@@ -338,7 +338,7 @@ class TestScreenCompounds:
     """Integration tests for screen_compounds()."""
 
     def test_returns_complete_structure(self, sample_library):
-        from virtual_screening.screening import screen_compounds
+        from med_research.pipeline.virtual_screening.screening import screen_compounds
         results = screen_compounds(
             target_genes=["BTK"],
             compound_library=sample_library,
@@ -350,7 +350,7 @@ class TestScreenCompounds:
         assert "compound_library" in results
 
     def test_target_results_have_top_compounds(self, sample_library):
-        from virtual_screening.screening import screen_compounds
+        from med_research.pipeline.virtual_screening.screening import screen_compounds
         results = screen_compounds(
             target_genes=["BTK"],
             compound_library=sample_library,
@@ -361,7 +361,7 @@ class TestScreenCompounds:
         assert len(target_data["top_compounds"]) >= 1
 
     def test_results_sorted_descending(self, sample_library):
-        from virtual_screening.screening import screen_compounds
+        from med_research.pipeline.virtual_screening.screening import screen_compounds
         results = screen_compounds(
             target_genes=["BTK"],
             compound_library=sample_library,
@@ -372,7 +372,7 @@ class TestScreenCompounds:
             assert top[i]["composite_score"] >= top[i + 1]["composite_score"]
 
     def test_each_result_has_tier(self, sample_library):
-        from virtual_screening.screening import screen_compounds
+        from med_research.pipeline.virtual_screening.screening import screen_compounds
         results = screen_compounds(
             target_genes=["BTK"],
             compound_library=sample_library,
@@ -387,7 +387,7 @@ class TestScreenCompounds:
             ]
 
     def test_stats_are_accurate(self, sample_library):
-        from virtual_screening.screening import screen_compounds
+        from med_research.pipeline.virtual_screening.screening import screen_compounds
         results = screen_compounds(
             target_genes=["BTK", "STAT4"],
             compound_library=sample_library,
@@ -398,7 +398,7 @@ class TestScreenCompounds:
         assert stats["total_pairings"] == len(sample_library) * 2
 
     def test_single_gene_filtering(self, sample_library):
-        from virtual_screening.screening import screen_compounds
+        from med_research.pipeline.virtual_screening.screening import screen_compounds
         results = screen_compounds(
             target_genes=["STAT4"],
             compound_library=sample_library,
@@ -407,7 +407,7 @@ class TestScreenCompounds:
         assert "BTK" not in results["results_per_target"]
 
     def test_composite_score_bounds(self, sample_library):
-        from virtual_screening.screening import screen_compounds
+        from med_research.pipeline.virtual_screening.screening import screen_compounds
         results = screen_compounds(
             target_genes=["BTK"],
             compound_library=sample_library,
@@ -424,19 +424,19 @@ class TestNoveltyScore:
     """Tests for compute_novelty_score()."""
 
     def test_approved_sle_drug_low_novelty(self):
-        from virtual_screening.screening import compute_novelty_score
+        from med_research.pipeline.virtual_screening.screening import compute_novelty_score
         compound = {"category": "Biologic - approved for SLE"}
         score = compute_novelty_score(compound, {})
         assert score <= 4.0
 
     def test_investigational_high_novelty(self):
-        from virtual_screening.screening import compute_novelty_score
+        from med_research.pipeline.virtual_screening.screening import compute_novelty_score
         compound = {"category": "Investigational - Phase 2"}
         score = compute_novelty_score(compound, {})
         assert score >= 7.0
 
     def test_default_novelty(self):
-        from virtual_screening.screening import compute_novelty_score
+        from med_research.pipeline.virtual_screening.screening import compute_novelty_score
         compound = {"category": "Unknown Category"}
         score = compute_novelty_score(compound, {})
         assert score == 5.0
@@ -446,7 +446,7 @@ class TestSimilarityScore:
     """Tests for compute_similarity_score()."""
 
     def test_known_candidate_returns_high_score(self, sample_gene_info):
-        from virtual_screening.screening import compute_similarity_score
+        from med_research.pipeline.virtual_screening.screening import compute_similarity_score
         # Ibrutinib is a known BTK repurposing candidate
         compound = {
             "name": "Ibrutinib (Imbruvica)",
@@ -457,7 +457,7 @@ class TestSimilarityScore:
         assert score >= 7.0
 
     def test_unrelated_compound_returns_neutral(self, sample_gene_info):
-        from virtual_screening.screening import compute_similarity_score
+        from med_research.pipeline.virtual_screening.screening import compute_similarity_score
         compound = {
             "name": "Completely Unknown Drug",
             "category": "Unknown",
@@ -467,7 +467,7 @@ class TestSimilarityScore:
         assert score == 3.0
 
     def test_category_overlap_returns_moderate(self, sample_gene_info):
-        from virtual_screening.screening import compute_similarity_score
+        from med_research.pipeline.virtual_screening.screening import compute_similarity_score
         # Acetinib is a BTK inhibitor (same category as BTK candidates)
         compound = {
             "name": "Acalabrutinib (Calquence)",
@@ -478,7 +478,7 @@ class TestSimilarityScore:
         assert score >= 4.0
 
     def test_returns_float(self, sample_gene_info):
-        from virtual_screening.screening import compute_similarity_score
+        from med_research.pipeline.virtual_screening.screening import compute_similarity_score
         compound = {"name": "Test Drug", "category": "Test"}
         score = compute_similarity_score(compound, sample_gene_info)
         assert isinstance(score, float)
@@ -488,7 +488,7 @@ class TestVinaStatus:
     """Tests for get_vina_status()."""
 
     def test_returns_string(self):
-        from virtual_screening.screening import get_vina_status
+        from med_research.pipeline.virtual_screening.screening import get_vina_status
         status = get_vina_status()
         assert isinstance(status, str)
         assert "available" in status.lower() or "not available" in status.lower()

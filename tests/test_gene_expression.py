@@ -10,7 +10,7 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from gene_expression.correlator import (
+from med_research.pipeline.gene_expression.correlator import (
     DRUG_CELL_TYPES,
     DRUG_PATHWAY_REVERSAL,
     DRUG_TARGET_GENES,
@@ -26,7 +26,7 @@ from gene_expression.correlator import (
     score_signature_reversal,
     score_target_disease_overlap,
 )
-from gene_expression.report import escape_html, generate_html_report
+from med_research.pipeline.gene_expression.report import escape_html, generate_html_report
 
 # ── Unit: Data Integrity ─────────────────────────────────────────────────
 
@@ -137,7 +137,7 @@ def test_compute_all_correlations():
 
 def test_compute_all_correlations_saves_json(tmp_path, monkeypatch):
     monkeypatch.setattr(
-        "gene_expression.correlator.DATA_DIR",
+        "med_research.pipeline.gene_expression.correlator.DATA_DIR",
         tmp_path,
     )
     compute_all_correlations()
@@ -188,7 +188,7 @@ def test_generate_html_report():
 
 @pytest.mark.slow
 def test_run_correlation_analysis_service():
-    from web_api.services.expression_service import run_correlation_analysis
+    from med_research.web.services.expression_service import run_correlation_analysis
 
     result = run_correlation_analysis(top_n=10)
     assert result["total_drugs"] == 26
@@ -288,8 +288,8 @@ def _mock_requests_get(url, params, timeout=15):
 
 
 def test_geo_search_broad(monkeypatch):
-    monkeypatch.setattr("gene_expression.geo.requests.get", _mock_requests_get)
-    from gene_expression.geo import search_geo_datasets
+    monkeypatch.setattr("med_research.pipeline.gene_expression.geo.requests.get", _mock_requests_get)
+    from med_research.pipeline.gene_expression.geo import search_geo_datasets
 
     studies = search_geo_datasets(disease="sle", category="broad", no_cache=True)
     assert len(studies) >= 2
@@ -298,9 +298,9 @@ def test_geo_search_broad(monkeypatch):
 
 
 def test_geo_search_cache(monkeypatch, tmp_path):
-    from gene_expression import geo
+    from med_research.pipeline.gene_expression import geo
     monkeypatch.setattr(geo, "CACHE_DIR", tmp_path)
-    monkeypatch.setattr("gene_expression.geo.requests.get", _mock_requests_get)
+    monkeypatch.setattr("med_research.pipeline.gene_expression.geo.requests.get", _mock_requests_get)
 
     studies1 = geo.search_geo_datasets(disease="sle", category="broad", no_cache=True)
     assert len(studies1) >= 2
@@ -310,7 +310,7 @@ def test_geo_search_cache(monkeypatch, tmp_path):
         nonlocal hit_count
         hit_count += 1
         return _mock_requests_get(url, params, timeout)
-    monkeypatch.setattr("gene_expression.geo.requests.get", counting_mock)
+    monkeypatch.setattr("med_research.pipeline.gene_expression.geo.requests.get", counting_mock)
 
     studies2 = geo.search_geo_datasets(disease="sle", category="broad", no_cache=False)
     assert hit_count == 0
@@ -318,7 +318,7 @@ def test_geo_search_cache(monkeypatch, tmp_path):
 
 
 def test_build_consensus_signature():
-    from gene_expression.geo import build_consensus_signature
+    from med_research.pipeline.gene_expression.geo import build_consensus_signature
 
     studies = [{"accession": "GSE100001"}, {"accession": "GSE100002"}]
     sig = build_consensus_signature(studies, disease="sle", min_occurrence=2)
@@ -333,7 +333,7 @@ def test_build_consensus_signature():
 
 
 def test_build_consensus_with_tissue():
-    from gene_expression.geo import build_consensus_signature
+    from med_research.pipeline.gene_expression.geo import build_consensus_signature
 
     studies = [{"accession": "GSE100003"}]
     sig = build_consensus_signature(studies, disease="sle",
@@ -345,7 +345,7 @@ def test_build_consensus_with_tissue():
 
 
 def test_build_consensus_empty_studies():
-    from gene_expression.geo import build_consensus_signature
+    from med_research.pipeline.gene_expression.geo import build_consensus_signature
     sig = build_consensus_signature([], disease="sle", min_occurrence=2)
     assert sig["num_studies_used"] == 0
     assert sig["upregulated"] == {}
@@ -353,7 +353,7 @@ def test_build_consensus_empty_studies():
 
 
 def test_signature_manager_curated():
-    from gene_expression.signature import get_signature
+    from med_research.pipeline.gene_expression.signature import get_signature
 
     sig = get_signature(disease="sle", source="curated")
     assert sig["source"] == "curated_literature"
@@ -367,9 +367,9 @@ def test_get_signature_fallback(monkeypatch):
     def mock_get_expression_sig(disease=None, tissue=None, min_studies=2):
         return {"num_studies_used": 0, "upregulated": {}, "downregulated": {}}
 
-    monkeypatch.setattr("gene_expression.geo.get_expression_signature",
+    monkeypatch.setattr("med_research.pipeline.gene_expression.geo.get_expression_signature",
                         mock_get_expression_sig)
-    from gene_expression.signature import get_signature
+    from med_research.pipeline.gene_expression.signature import get_signature
 
     sig = get_signature(disease="sle", source="auto")
     assert sig["source"] == "curated_literature"
@@ -377,8 +377,8 @@ def test_get_signature_fallback(monkeypatch):
 
 
 def test_correlate_with_geo_signature():
-    from gene_expression.correlator import correlate_drug, load_drugs
-    from gene_expression.signature import get_signature
+    from med_research.pipeline.gene_expression.correlator import correlate_drug, load_drugs
+    from med_research.pipeline.gene_expression.signature import get_signature
 
     sig = get_signature(disease="sle", source="curated")
     drugs = load_drugs()
@@ -388,10 +388,10 @@ def test_correlate_with_geo_signature():
 
 
 def test_cli_geo_flag(monkeypatch):
-    from gene_expression.signature import get_signature
+    from med_research.pipeline.gene_expression.signature import get_signature
 
     sig = get_signature(disease="sle", source="curated")
-    from gene_expression.correlator import _normalize_signature
+    from med_research.pipeline.gene_expression.correlator import _normalize_signature
 
     up_genes, down_genes, sig_source, num_studies = _normalize_signature(sig)
     assert sig_source in ("curated_literature", "geo_consensus", "geo_fallback")
@@ -400,8 +400,8 @@ def test_cli_geo_flag(monkeypatch):
 
 
 def test_expression_report_with_signature_source():
-    from gene_expression.correlator import compute_all_correlations
-    from gene_expression.report import generate_html_report
+    from med_research.pipeline.gene_expression.correlator import compute_all_correlations
+    from med_research.pipeline.gene_expression.report import generate_html_report
 
     results = compute_all_correlations()
     path = generate_html_report(results, signature_source="curated_literature",

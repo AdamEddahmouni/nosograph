@@ -9,7 +9,7 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from adverse_events.profiler import (
+from med_research.pipeline.adverse_events.profiler import (
     LUPUS_SYMPTOMS,
     compute_adverse_event_score,
     count_lupus_symptom_overlap,
@@ -22,7 +22,7 @@ from adverse_events.profiler import (
     score_lupus_overlap,
     score_severity_burden,
 )
-from adverse_events.report import escape_html, generate_html_report
+from med_research.pipeline.adverse_events.report import escape_html, generate_html_report
 
 # ── Fixtures ──────────────────────────────────────────────────────────────
 
@@ -214,7 +214,7 @@ def test_generate_html_report():
 
 @pytest.mark.slow
 def test_run_safety_profiling():
-    from web_api.services.adverse_events_service import run_safety_profiling
+    from med_research.web.services.adverse_events_service import run_safety_profiling
 
     result = run_safety_profiling()
     assert result["total_drugs"] == 26
@@ -224,7 +224,7 @@ def test_run_safety_profiling():
 
 @pytest.mark.slow
 def test_run_safety_profiling_single_drug():
-    from web_api.services.adverse_events_service import run_safety_profiling
+    from med_research.web.services.adverse_events_service import run_safety_profiling
 
     result = run_safety_profiling(drug_id="belimumab")
     assert "composite_safety_score" in result

@@ -12,7 +12,7 @@ class TestCacheFunctions:
     """Tests for cache loading and saving."""
 
     def test_cache_key_generation(self):
-        from evidence_gatherer.gatherer import _cache_key
+        from med_research.pipeline.evidence.gatherer import _cache_key
 
         key = _cache_key("lupus", "pubmed", 20)
         assert "lupus" in key
@@ -20,7 +20,7 @@ class TestCacheFunctions:
         assert "20" in key
 
     def test_cache_key_is_unique_per_source(self):
-        from evidence_gatherer.gatherer import _cache_key
+        from med_research.pipeline.evidence.gatherer import _cache_key
 
         k1 = _cache_key("lupus", "pubmed", 20)
         k2 = _cache_key("lupus", "preprints", 20)
@@ -31,7 +31,7 @@ class TestGatherEvidence:
     """Tests for the main gather_evidence pipeline."""
 
     def test_returns_dict_with_expected_keys(self):
-        from evidence_gatherer.gatherer import gather_evidence
+        from med_research.pipeline.evidence.gatherer import gather_evidence
 
         result = gather_evidence("lupus", sources=["pubmed"], max_per_source=3)
         assert isinstance(result, dict)
@@ -39,7 +39,7 @@ class TestGatherEvidence:
             assert key in result, f"Missing key: {key}"
 
     def test_results_have_required_fields(self):
-        from evidence_gatherer.gatherer import gather_evidence
+        from med_research.pipeline.evidence.gatherer import gather_evidence
 
         result = gather_evidence("lupus treatment", sources=["pubmed"], max_per_source=3)
         for r in result["all_results"]:
@@ -47,46 +47,46 @@ class TestGatherEvidence:
                 assert field in r, f"Missing field: {field}"
 
     def test_sources_searched_respected(self):
-        from evidence_gatherer.gatherer import gather_evidence
+        from med_research.pipeline.evidence.gatherer import gather_evidence
 
         result = gather_evidence("lupus", sources=["pubmed"], max_per_source=3)
         assert set(result["results_by_source"].keys()) <= {"pubmed"}
 
     def test_total_matches_sum_of_sources(self):
-        from evidence_gatherer.gatherer import gather_evidence
+        from med_research.pipeline.evidence.gatherer import gather_evidence
 
         result = gather_evidence("lupus treatment", sources=["pubmed", "preprints"], max_per_source=5)
         source_total = sum(result["results_by_source"].values())
         assert source_total == result["total_results"]
 
     def test_max_per_source_respected(self):
-        from evidence_gatherer.gatherer import gather_evidence
+        from med_research.pipeline.evidence.gatherer import gather_evidence
 
         result = gather_evidence("lupus", sources=["pubmed"], max_per_source=5)
         pubmed_count = result["results_by_source"].get("pubmed", 0)
         assert pubmed_count <= 5
 
     def test_empty_query_returns_empty(self):
-        from evidence_gatherer.gatherer import gather_evidence
+        from med_research.pipeline.evidence.gatherer import gather_evidence
 
         result = gather_evidence("xyznonexistent999zzz", sources=["pubmed"], max_per_source=3)
         assert isinstance(result["all_results"], list)
 
     def test_crossref_produced_for_multiple_sources(self):
-        from evidence_gatherer.gatherer import gather_evidence
+        from med_research.pipeline.evidence.gatherer import gather_evidence
 
         result = gather_evidence("lupus", sources=["pubmed", "preprints"], max_per_source=5)
         assert "crossref" in result
         assert "pairs" in result["crossref"]
 
     def test_clinical_trials_fallback_graceful(self):
-        from evidence_gatherer.gatherer import search_clinical_trials
+        from med_research.pipeline.evidence.gatherer import search_clinical_trials
 
         results = search_clinical_trials("lupus nephritis", max_results=3)
         assert isinstance(results, list)
 
     def test_results_sorted_by_recency(self):
-        from evidence_gatherer.gatherer import gather_evidence
+        from med_research.pipeline.evidence.gatherer import gather_evidence
 
         result = gather_evidence("lupus", sources=["pubmed"], max_per_source=10)
         years = [int(r.get("year", 0) or 0) for r in result["all_results"] if r.get("year")]
@@ -99,7 +99,7 @@ class TestEuropePMC:
     """Tests for Europe PMC search functions."""
 
     def test_pubmed_search_returns_results(self):
-        from evidence_gatherer.gatherer import search_europe_pmc
+        from med_research.pipeline.evidence.gatherer import search_europe_pmc
 
         results = search_europe_pmc("lupus", "pubmed", max_results=3, use_cache=False)
         assert isinstance(results, list)
@@ -108,13 +108,13 @@ class TestEuropePMC:
             assert results[0]["source_type"] == "pubmed"
 
     def test_preprints_search_returns_results(self):
-        from evidence_gatherer.gatherer import search_europe_pmc
+        from med_research.pipeline.evidence.gatherer import search_europe_pmc
 
         results = search_europe_pmc("lupus", "preprints", max_results=3, use_cache=False)
         assert isinstance(results, list)
 
     def test_patents_search_returns_results(self):
-        from evidence_gatherer.gatherer import search_europe_pmc
+        from med_research.pipeline.evidence.gatherer import search_europe_pmc
 
         results = search_europe_pmc("lupus", "patents", max_results=3, use_cache=False)
         assert isinstance(results, list)
@@ -124,7 +124,7 @@ class TestFDA:
     """Tests for FDA label search."""
 
     def test_fda_search_returns_results(self):
-        from evidence_gatherer.gatherer import search_fda_labels
+        from med_research.pipeline.evidence.gatherer import search_fda_labels
 
         results = search_fda_labels("belimumab", max_results=3, use_cache=False)
         assert isinstance(results, list)
@@ -134,12 +134,12 @@ class TestCLIIntegration:
     """Smoke tests for CLI entry point."""
 
     def test_main_imports(self):
-        from evidence_gatherer.gatherer import main
+        from med_research.pipeline.evidence.gatherer import main
         assert callable(main)
 
     def test_report_generation(self, tmp_path):
-        from evidence_gatherer.gatherer import gather_evidence
-        from evidence_gatherer.report import generate_html_report
+        from med_research.pipeline.evidence.gatherer import gather_evidence
+        from med_research.pipeline.evidence.gatherer_report import generate_html_report
 
         result = gather_evidence("lupus", sources=["pubmed"], max_per_source=3)
         path = generate_html_report(result)
@@ -150,7 +150,7 @@ class TestServiceLayer:
     """Tests for the web API service layer."""
 
     def test_run_evidence_gather_returns_dict(self):
-        from web_api.services.evidence_service import run_evidence_gather
+        from med_research.web.services.evidence_service import run_evidence_gather
 
         result = run_evidence_gather("lupus", sources=["pubmed"], max_per_source=3)
         assert isinstance(result, dict)
@@ -162,7 +162,7 @@ class TestEvidenceGatherSlow:
     """Slow tests that hit live APIs across all sources."""
 
     def test_all_sources_gather(self):
-        from evidence_gatherer.gatherer import gather_evidence
+        from med_research.pipeline.evidence.gatherer import gather_evidence
 
         result = gather_evidence("lupus nephritis", max_per_source=5, use_cache=False)
         assert result["total_results"] >= 0

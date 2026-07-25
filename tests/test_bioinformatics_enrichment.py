@@ -16,11 +16,11 @@ class TestGetLupusGeneList:
 
     @pytest.fixture
     def sample_kg_genes(self):
-        from bioinformatics.enrichment import load_kg_genes
+        from med_research.pipeline.bioinformatics.enrichment import load_kg_genes
         return load_kg_genes()
 
     def test_excludes_drug_target_genes(self, sample_kg_genes):
-        from bioinformatics.enrichment import get_lupus_gene_list
+        from med_research.pipeline.bioinformatics.enrichment import get_lupus_gene_list
 
         gene_list = get_lupus_gene_list(sample_kg_genes, G=None, untargeted_only=False)
         symbols = {g["gene_id"] for g in gene_list}
@@ -28,7 +28,7 @@ class TestGetLupusGeneList:
         assert symbols.isdisjoint(excluded)
 
     def test_includes_lupus_risk_genes(self, sample_kg_genes):
-        from bioinformatics.enrichment import get_lupus_gene_list
+        from med_research.pipeline.bioinformatics.enrichment import get_lupus_gene_list
 
         gene_list = get_lupus_gene_list(sample_kg_genes, G=None, untargeted_only=False)
         symbols = {g["gene_id"] for g in gene_list}
@@ -41,7 +41,7 @@ class TestGetLupusGeneList:
         assert expected.issubset(symbols)
 
     def test_returns_list_of_dicts(self, sample_kg_genes):
-        from bioinformatics.enrichment import get_lupus_gene_list
+        from med_research.pipeline.bioinformatics.enrichment import get_lupus_gene_list
 
         gene_list = get_lupus_gene_list(sample_kg_genes, G=None, untargeted_only=False)
         assert isinstance(gene_list, list)
@@ -51,7 +51,7 @@ class TestGetLupusGeneList:
             assert "category" in g
 
     def test_untargeted_only_mode(self, sample_kg_genes, sample_graph):
-        from bioinformatics.enrichment import get_lupus_gene_list
+        from med_research.pipeline.bioinformatics.enrichment import get_lupus_gene_list
 
         untargeted = get_lupus_gene_list(sample_kg_genes, G=sample_graph, untargeted_only=True)
         all_genes = get_lupus_gene_list(sample_kg_genes, G=sample_graph, untargeted_only=False)
@@ -63,7 +63,7 @@ class TestGetLupusGeneList:
         assert len(untargeted_ids) < len(all_ids)
 
     def test_untargeted_excludes_targeted(self, sample_kg_genes, sample_graph):
-        from bioinformatics.enrichment import get_lupus_gene_list
+        from med_research.pipeline.bioinformatics.enrichment import get_lupus_gene_list
 
         untargeted = get_lupus_gene_list(sample_kg_genes, G=sample_graph, untargeted_only=True)
         ids = {g["gene_id"] for g in untargeted}
@@ -72,14 +72,14 @@ class TestGetLupusGeneList:
         assert ids.isdisjoint(targeted)
 
     def test_has_correct_count(self, sample_kg_genes):
-        from bioinformatics.enrichment import get_lupus_gene_list
+        from med_research.pipeline.bioinformatics.enrichment import get_lupus_gene_list
 
         gene_list = get_lupus_gene_list(sample_kg_genes, G=None, untargeted_only=False)
         # 22 total - 4 drug target genes = 18 lupus genes
         assert len(gene_list) >= 18
 
     def test_symbols_are_clean(self, sample_kg_genes):
-        from bioinformatics.enrichment import get_lupus_gene_list
+        from med_research.pipeline.bioinformatics.enrichment import get_lupus_gene_list
 
         gene_list = get_lupus_gene_list(sample_kg_genes, G=None, untargeted_only=False)
         for g in gene_list:
@@ -152,7 +152,7 @@ class TestCrossReferenceWithKG:
         }
 
     def test_matches_interferon_pathway(self, sample_enrichment, sample_kg_pathways):
-        from bioinformatics.enrichment import cross_reference_with_kg_pathways
+        from med_research.pipeline.bioinformatics.enrichment import cross_reference_with_kg_pathways
 
         matches = cross_reference_with_kg_pathways(sample_enrichment, sample_kg_pathways)
         assert len(matches) > 0
@@ -161,14 +161,14 @@ class TestCrossReferenceWithKG:
         assert any("type1-ifn" in k for k in match_keys)
 
     def test_matches_bcell_pathway(self, sample_enrichment, sample_kg_pathways):
-        from bioinformatics.enrichment import cross_reference_with_kg_pathways
+        from med_research.pipeline.bioinformatics.enrichment import cross_reference_with_kg_pathways
 
         matches = cross_reference_with_kg_pathways(sample_enrichment, sample_kg_pathways)
         match_keys = list(matches.keys())
         assert any("bcell-signaling" in k for k in match_keys)
 
     def test_does_not_match_nucleotide(self, sample_enrichment, sample_kg_pathways):
-        from bioinformatics.enrichment import cross_reference_with_kg_pathways
+        from med_research.pipeline.bioinformatics.enrichment import cross_reference_with_kg_pathways
 
         matches = cross_reference_with_kg_pathways(sample_enrichment, sample_kg_pathways)
         # Nucleotide metabolism should not match any lupus pathway
@@ -177,19 +177,19 @@ class TestCrossReferenceWithKG:
             assert "nucleotide" not in m["enrichment_term"].lower()
 
     def test_returns_dict(self, sample_enrichment, sample_kg_pathways):
-        from bioinformatics.enrichment import cross_reference_with_kg_pathways
+        from med_research.pipeline.bioinformatics.enrichment import cross_reference_with_kg_pathways
 
         matches = cross_reference_with_kg_pathways(sample_enrichment, sample_kg_pathways)
         assert isinstance(matches, dict)
 
     def test_empty_enrichment(self, sample_kg_pathways):
-        from bioinformatics.enrichment import cross_reference_with_kg_pathways
+        from med_research.pipeline.bioinformatics.enrichment import cross_reference_with_kg_pathways
 
         matches = cross_reference_with_kg_pathways({}, sample_kg_pathways)
         assert matches == {}
 
     def test_empty_pathways(self, sample_enrichment):
-        from bioinformatics.enrichment import cross_reference_with_kg_pathways
+        from med_research.pipeline.bioinformatics.enrichment import cross_reference_with_kg_pathways
 
         matches = cross_reference_with_kg_pathways(
             sample_enrichment, {"pathways": []}
@@ -201,7 +201,7 @@ class TestLoadFunctions:
     """Tests for data loading in enrichment module."""
 
     def test_load_kg_genes(self):
-        from bioinformatics.enrichment import load_kg_genes
+        from med_research.pipeline.bioinformatics.enrichment import load_kg_genes
 
         genes = load_kg_genes()
         assert isinstance(genes, dict)
@@ -210,7 +210,7 @@ class TestLoadFunctions:
         assert "IRF5" in genes
 
     def test_load_kg_graph(self):
-        from bioinformatics.enrichment import load_kg_graph
+        from med_research.pipeline.bioinformatics.enrichment import load_kg_graph
 
         G = load_kg_graph()
         assert G.number_of_nodes() >= 40

@@ -16,7 +16,7 @@ class TestEnrichmentDotPlot:
     """Tests for _generate_enrichment_dotplot()."""
 
     def test_returns_base64_png(self):
-        from bioinformatics.report import _generate_enrichment_dotplot
+        from med_research.pipeline.bioinformatics.report import _generate_enrichment_dotplot
 
         enrichment = {
             "GO_Biological_Process_2023": {
@@ -62,13 +62,13 @@ class TestEnrichmentDotPlot:
         assert len(decoded) > 0
 
     def test_returns_empty_for_empty_results(self):
-        from bioinformatics.report import _generate_enrichment_dotplot
+        from med_research.pipeline.bioinformatics.report import _generate_enrichment_dotplot
 
         result = _generate_enrichment_dotplot({})
         assert result == ""
 
     def test_returns_empty_for_no_terms(self):
-        from bioinformatics.report import _generate_enrichment_dotplot
+        from med_research.pipeline.bioinformatics.report import _generate_enrichment_dotplot
 
         enrichment = {
             "GO_Biological_Process_2023": {
@@ -83,7 +83,7 @@ class TestEnrichmentDotPlot:
 
     def test_handles_zero_p_value(self):
         """Zero adj_p_value should be clamped to avoid math domain error."""
-        from bioinformatics.report import _generate_enrichment_dotplot
+        from med_research.pipeline.bioinformatics.report import _generate_enrichment_dotplot
 
         enrichment = {
             "GO_Biological_Process_2023": {
@@ -112,36 +112,36 @@ class TestEscapeHtml:
     """Tests for escape_html()."""
 
     def test_ampersand(self):
-        from bioinformatics.report import escape_html
+        from med_research.pipeline.bioinformatics.report import escape_html
         assert escape_html("A & B") == "A &amp; B"
 
     def test_less_than(self):
-        from bioinformatics.report import escape_html
+        from med_research.pipeline.bioinformatics.report import escape_html
         assert escape_html("x < 5") == "x &lt; 5"
 
     def test_greater_than(self):
-        from bioinformatics.report import escape_html
+        from med_research.pipeline.bioinformatics.report import escape_html
         assert escape_html("x > 5") == "x &gt; 5"
 
     def test_double_quote(self):
-        from bioinformatics.report import escape_html
+        from med_research.pipeline.bioinformatics.report import escape_html
         assert escape_html('He said "hello"') == "He said &quot;hello&quot;"
 
     def test_combined(self):
-        from bioinformatics.report import escape_html
+        from med_research.pipeline.bioinformatics.report import escape_html
         assert escape_html('<a href="x&y">') == "&lt;a href=&quot;x&amp;y&quot;&gt;"
 
     def test_no_special_chars(self):
-        from bioinformatics.report import escape_html
+        from med_research.pipeline.bioinformatics.report import escape_html
         text = "Hello, world 2026!"
         assert escape_html(text) == text
 
     def test_none_input(self):
-        from bioinformatics.report import escape_html
+        from med_research.pipeline.bioinformatics.report import escape_html
         assert escape_html(None) == ""
 
     def test_empty_string(self):
-        from bioinformatics.report import escape_html
+        from med_research.pipeline.bioinformatics.report import escape_html
         assert escape_html("") == ""
 
 
@@ -256,7 +256,7 @@ class TestGenerateBioinformaticsReport:
         }
 
     def test_creates_output_file_enrichment_only(self, sample_enrichment, sample_gene_list, tmp_path, monkeypatch):
-        import bioinformatics.report as report_module
+        import med_research.pipeline.bioinformatics.report as report_module
 
         out_path = tmp_path / "bioinformatics_report.html"
 
@@ -275,7 +275,7 @@ class TestGenerateBioinformaticsReport:
         assert "<!DOCTYPE html>" in content
 
     def test_report_is_valid_html(self, sample_enrichment, sample_gene_list, tmp_path, monkeypatch):
-        import bioinformatics.report as report_module
+        import med_research.pipeline.bioinformatics.report as report_module
 
         out_path = tmp_path / "bioinformatics_report.html"
 
@@ -300,7 +300,7 @@ class TestGenerateBioinformaticsReport:
         self, sample_enrichment, sample_gene_list, sample_kg_matches,
         sample_hub_scores, sample_ppi_crossref, tmp_path, monkeypatch
     ):
-        import bioinformatics.report as report_module
+        import med_research.pipeline.bioinformatics.report as report_module
 
         out_path = tmp_path / "bioinformatics_report.html"
 
@@ -324,7 +324,7 @@ class TestGenerateBioinformaticsReport:
         assert "Fenebrutinib" in content
 
     def test_report_with_enrichment_section(self, sample_enrichment, sample_gene_list, tmp_path, monkeypatch):
-        import bioinformatics.report as report_module
+        import med_research.pipeline.bioinformatics.report as report_module
 
         out_path = tmp_path / "bioinformatics_report.html"
 
@@ -347,7 +347,7 @@ class TestGenerateBioinformaticsReport:
         assert "Lupus Genes Analyzed" in content
 
     def test_report_with_ppi_section(self, sample_hub_scores, sample_ppi_crossref, tmp_path, monkeypatch):
-        import bioinformatics.report as report_module
+        import med_research.pipeline.bioinformatics.report as report_module
 
         out_path = tmp_path / "bioinformatics_report.html"
 
@@ -368,7 +368,7 @@ class TestGenerateBioinformaticsReport:
         assert "Top Hub Proteins" in content
 
     def test_report_with_gwas_section(self, tmp_path, monkeypatch):
-        import bioinformatics.report as report_module
+        import med_research.pipeline.bioinformatics.report as report_module
 
         gwas_results = {
             "gene_associations": {
@@ -421,7 +421,7 @@ class TestGenerateBioinformaticsReport:
 
     def test_report_empty_produces_output(self, tmp_path, monkeypatch):
         """Report should still generate even with no data."""
-        import bioinformatics.report as report_module
+        import med_research.pipeline.bioinformatics.report as report_module
 
         out_path = tmp_path / "bioinformatics_report.html"
 
@@ -439,7 +439,7 @@ class TestGenerateBioinformaticsReport:
         assert "No data available" in content
 
     def test_report_contains_disclaimer(self, tmp_path, monkeypatch):
-        import bioinformatics.report as report_module
+        import med_research.pipeline.bioinformatics.report as report_module
 
         out_path = tmp_path / "bioinformatics_report.html"
 
@@ -457,7 +457,7 @@ class TestGenerateBioinformaticsReport:
 
     def test_report_contains_plot(self, sample_enrichment, sample_gene_list, tmp_path, monkeypatch):
         """Report with enrichment data should contain the dot plot image."""
-        import bioinformatics.report as report_module
+        import med_research.pipeline.bioinformatics.report as report_module
 
         out_path = tmp_path / "bioinformatics_report.html"
 
@@ -477,7 +477,7 @@ class TestGenerateBioinformaticsReport:
         assert "data:image/png;base64," in content
 
     def test_report_contains_nav_links(self, tmp_path, monkeypatch):
-        import bioinformatics.report as report_module
+        import med_research.pipeline.bioinformatics.report as report_module
 
         out_path = tmp_path / "bioinformatics_report.html"
 
@@ -493,3 +493,5 @@ class TestGenerateBioinformaticsReport:
         assert "Knowledge Graph" in content
         assert "Drug Repurposing Report" in content
         assert "Literature Mining Report" in content
+
+

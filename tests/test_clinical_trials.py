@@ -143,51 +143,51 @@ class TestParseTrial:
     """Tests for parse_trial()."""
 
     def test_parses_nct_id(self, sample_raw_trial):
-        from clinical_trials.tracker import parse_trial
+        from med_research.pipeline.clinical_trials.tracker import parse_trial
         result = parse_trial(sample_raw_trial)
         assert result["nct_id"] == "NCT00000001"
 
     def test_parses_title(self, sample_raw_trial):
-        from clinical_trials.tracker import parse_trial
+        from med_research.pipeline.clinical_trials.tracker import parse_trial
         result = parse_trial(sample_raw_trial)
         assert "Belimumab" in result["title"]
 
     def test_parses_status(self, sample_raw_trial):
-        from clinical_trials.tracker import parse_trial
+        from med_research.pipeline.clinical_trials.tracker import parse_trial
         result = parse_trial(sample_raw_trial)
         assert result["status"] == "RECRUITING"
 
     def test_parses_phases(self, sample_raw_trial):
-        from clinical_trials.tracker import parse_trial
+        from med_research.pipeline.clinical_trials.tracker import parse_trial
         result = parse_trial(sample_raw_trial)
         assert "PHASE3" in result["phases"]
         assert result["primary_phase"] == "PHASE3"
         assert result["phase_label"] == "Phase 3"
 
     def test_parses_interventions(self, sample_raw_trial):
-        from clinical_trials.tracker import parse_trial
+        from med_research.pipeline.clinical_trials.tracker import parse_trial
         result = parse_trial(sample_raw_trial)
         assert "Belimumab" in result["interventions"]
         assert "DRUG" in result["intervention_types"]
 
     def test_parses_sponsor(self, sample_raw_trial):
-        from clinical_trials.tracker import parse_trial
+        from med_research.pipeline.clinical_trials.tracker import parse_trial
         result = parse_trial(sample_raw_trial)
         assert result["sponsor_name"] == "GSK"
         assert result["sponsor_class"] == "INDUSTRY"
 
     def test_parses_enrollment(self, sample_raw_trial):
-        from clinical_trials.tracker import parse_trial
+        from med_research.pipeline.clinical_trials.tracker import parse_trial
         result = parse_trial(sample_raw_trial)
         assert result["enrollment"] == 500
 
     def test_parses_conditions(self, sample_raw_trial):
-        from clinical_trials.tracker import parse_trial
+        from med_research.pipeline.clinical_trials.tracker import parse_trial
         result = parse_trial(sample_raw_trial)
         assert "Systemic Lupus Erythematosus" in result["conditions"]
 
     def test_summary_truncated_to_500_chars(self):
-        from clinical_trials.tracker import parse_trial
+        from med_research.pipeline.clinical_trials.tracker import parse_trial
         long_summary = {"protocolSection": {
             "identificationModule": {"nctId": "NCT"},
             "statusModule": {"overallStatus": "COMPLETED"},
@@ -204,7 +204,7 @@ class TestParseTrial:
         assert len(result["summary"]) <= 500
 
     def test_empty_phases_handled(self):
-        from clinical_trials.tracker import parse_trial
+        from med_research.pipeline.clinical_trials.tracker import parse_trial
         trial = {"protocolSection": {
             "identificationModule": {"nctId": "NCT"},
             "statusModule": {"overallStatus": "COMPLETED"},
@@ -227,47 +227,47 @@ class TestCategorizeMoa:
     """Tests for categorize_moa()."""
 
     def test_b_cell_targeting(self):
-        from clinical_trials.tracker import categorize_moa
+        from med_research.pipeline.clinical_trials.tracker import categorize_moa
         trial = {"title": "Anti-CD20 B cell depletion study", "interventions": ["Rituximab"], "summary": ""}
         assert categorize_moa(trial) == "B Cell Targeting"
 
     def test_jak_stat_inhibitor(self):
-        from clinical_trials.tracker import categorize_moa
+        from med_research.pipeline.clinical_trials.tracker import categorize_moa
         trial = {"title": "JAK inhibitor trial for SLE", "interventions": ["Tofacitinib"], "summary": ""}
         assert categorize_moa(trial) == "Type I IFN / JAK-STAT"
 
     def test_interferon_targeting(self):
-        from clinical_trials.tracker import categorize_moa
+        from med_research.pipeline.clinical_trials.tracker import categorize_moa
         trial = {"title": "Anti-IFNAR therapy", "interventions": ["Anifrolumab"], "summary": ""}
         assert categorize_moa(trial) == "Type I IFN / JAK-STAT"
 
     def test_complement_inhibitor(self):
-        from clinical_trials.tracker import categorize_moa
+        from med_research.pipeline.clinical_trials.tracker import categorize_moa
         trial = {"title": "Complement C5 inhibition", "interventions": ["Eculizumab"], "summary": ""}
         assert categorize_moa(trial) == "Complement"
 
     def test_car_t_cell_therapy(self):
-        from clinical_trials.tracker import categorize_moa
+        from med_research.pipeline.clinical_trials.tracker import categorize_moa
         trial = {"title": "CAR-T cell therapy for refractory lupus", "interventions": ["Anti-CD19 CAR-T"], "summary": ""}
         assert categorize_moa(trial) == "Cell Therapy"
 
     def test_cytokine_targeting(self):
-        from clinical_trials.tracker import categorize_moa
+        from med_research.pipeline.clinical_trials.tracker import categorize_moa
         trial = {"title": "IL-6 receptor blockade in SLE", "interventions": ["Tocilizumab"], "summary": ""}
         assert categorize_moa(trial) == "Cytokine / Chemokine"
 
     def test_t_cell_costimulation(self):
-        from clinical_trials.tracker import categorize_moa
+        from med_research.pipeline.clinical_trials.tracker import categorize_moa
         trial = {"title": "CD40 blockade in lupus", "interventions": ["Dapirolizumab"], "summary": ""}
         assert categorize_moa(trial) == "T Cell / Costimulation"
 
     def test_falls_back_to_other(self):
-        from clinical_trials.tracker import categorize_moa
+        from med_research.pipeline.clinical_trials.tracker import categorize_moa
         trial = {"title": "Unknown novel therapy", "interventions": ["Mystery Drug"], "summary": ""}
         assert categorize_moa(trial) == "Other Targeted"
 
     def test_matches_on_summary_when_title_empty(self):
-        from clinical_trials.tracker import categorize_moa
+        from med_research.pipeline.clinical_trials.tracker import categorize_moa
         trial = {"title": "Unknown therapy", "interventions": [], "summary": "Inhibiting complement C5a receptor reduces inflammation"}
         assert categorize_moa(trial) == "Complement"
 
@@ -280,23 +280,23 @@ class TestPrimaryPhase:
     """Tests for _primary_phase()."""
 
     def test_picks_highest_phase(self):
-        from clinical_trials.tracker import _primary_phase
+        from med_research.pipeline.clinical_trials.tracker import _primary_phase
         assert _primary_phase(["PHASE1", "PHASE2", "PHASE3"]) == "PHASE3"
 
     def test_handles_empty_list(self):
-        from clinical_trials.tracker import _primary_phase
+        from med_research.pipeline.clinical_trials.tracker import _primary_phase
         assert _primary_phase([]) == ""
 
     def test_single_phase(self):
-        from clinical_trials.tracker import _primary_phase
+        from med_research.pipeline.clinical_trials.tracker import _primary_phase
         assert _primary_phase(["PHASE2"]) == "PHASE2"
 
     def test_early_phase1_lower_than_phase1(self):
-        from clinical_trials.tracker import _primary_phase
+        from med_research.pipeline.clinical_trials.tracker import _primary_phase
         assert _primary_phase(["EARLY_PHASE1", "PHASE1"]) == "PHASE1"
 
     def test_phase4_highest(self):
-        from clinical_trials.tracker import _primary_phase
+        from med_research.pipeline.clinical_trials.tracker import _primary_phase
         assert _primary_phase(["PHASE1", "PHASE4", "PHASE2"]) == "PHASE4"
 
 
@@ -308,7 +308,7 @@ class TestCrossReference:
     """Tests for cross_reference_trials()."""
 
     def test_matches_gene_by_id(self, sample_kg_entities):
-        from clinical_trials.tracker import cross_reference_trials
+        from med_research.pipeline.clinical_trials.tracker import cross_reference_trials
         trials = [{
             "title": "BTK inhibitor study",
             "interventions": ["Ibrutinib"],
@@ -320,7 +320,7 @@ class TestCrossReference:
         assert "BTK" in matched_genes
 
     def test_matches_drug_by_name(self, sample_kg_entities):
-        from clinical_trials.tracker import cross_reference_trials
+        from med_research.pipeline.clinical_trials.tracker import cross_reference_trials
         trials = [{
             "title": "Belimumab trial",
             "interventions": ["Belimumab"],
@@ -332,7 +332,7 @@ class TestCrossReference:
         assert "belimumab" in matched_drugs
 
     def test_no_match_returns_empty(self, sample_kg_entities):
-        from clinical_trials.tracker import cross_reference_trials
+        from med_research.pipeline.clinical_trials.tracker import cross_reference_trials
         trials = [{
             "title": "Completely unrelated study",
             "interventions": ["Sugar pill"],
@@ -344,7 +344,7 @@ class TestCrossReference:
         assert results[0]["kg_matches"]["drug_count"] == 0
 
     def test_has_match_flag(self, sample_kg_entities):
-        from clinical_trials.tracker import cross_reference_trials
+        from med_research.pipeline.clinical_trials.tracker import cross_reference_trials
         trials = [
             {"title": "BTK study", "interventions": ["Ibrutinib"], "summary": ""},
             {"title": "No match", "interventions": [], "summary": ""},
@@ -362,7 +362,7 @@ class TestComputeStats:
     """Tests for _compute_stats()."""
 
     def test_counts_total_trials(self):
-        from clinical_trials.tracker import _compute_stats
+        from med_research.pipeline.clinical_trials.tracker import _compute_stats
         trials = [
             {"nct_id": "NCT1", "status": "RECRUITING", "phases": ["PHASE2"],
              "moa_category": "B Cell Targeting", "sponsor_name": "Sponsor A",
@@ -375,7 +375,7 @@ class TestComputeStats:
         assert stats["total_trials"] == 2
 
     def test_counts_statuses(self):
-        from clinical_trials.tracker import _compute_stats
+        from med_research.pipeline.clinical_trials.tracker import _compute_stats
         trials = [
             {"nct_id": "NCT1", "status": "RECRUITING", "phases": [], "moa_category": "X",
              "sponsor_name": "A", "enrollment": 0, "kg_matches": {"has_match": False}},
@@ -389,7 +389,7 @@ class TestComputeStats:
         assert stats["statuses"]["COMPLETED"] == 1
 
     def test_counts_moas(self):
-        from clinical_trials.tracker import _compute_stats
+        from med_research.pipeline.clinical_trials.tracker import _compute_stats
         trials = [
             {"nct_id": "NCT1", "status": "RECRUITING", "phases": [], "moa_category": "B Cell Targeting",
              "sponsor_name": "A", "enrollment": 0, "kg_matches": {"has_match": False}},
@@ -400,7 +400,7 @@ class TestComputeStats:
         assert stats["moas"]["B Cell Targeting"] == 2
 
     def test_computes_enrollment_stats(self):
-        from clinical_trials.tracker import _compute_stats
+        from med_research.pipeline.clinical_trials.tracker import _compute_stats
         trials = [
             {"nct_id": "NCT1", "status": "R", "phases": [], "moa_category": "X",
              "sponsor_name": "A", "enrollment": 100, "kg_matches": {"has_match": False}},
@@ -412,7 +412,7 @@ class TestComputeStats:
         assert stats["avg_enrollment"] == 150
 
     def test_counts_kg_matched(self):
-        from clinical_trials.tracker import _compute_stats
+        from med_research.pipeline.clinical_trials.tracker import _compute_stats
         trials = [
             {"nct_id": "NCT1", "status": "R", "phases": [], "moa_category": "X",
              "sponsor_name": "A", "enrollment": 0, "kg_matches": {"has_match": True}},
@@ -431,7 +431,7 @@ class TestLoadKgEntities:
     """Tests for load_kg_entities()."""
 
     def test_loads_from_real_kg_files(self):
-        from clinical_trials.tracker import load_kg_entities
+        from med_research.pipeline.clinical_trials.tracker import load_kg_entities
         entities = load_kg_entities()
         assert isinstance(entities, dict)
         assert "genes" in entities
@@ -440,14 +440,14 @@ class TestLoadKgEntities:
         assert len(entities["drugs"]) > 0
 
     def test_genes_have_expected_keys(self):
-        from clinical_trials.tracker import load_kg_entities
+        from med_research.pipeline.clinical_trials.tracker import load_kg_entities
         entities = load_kg_entities()
         for gene_id, gene in entities["genes"].items():
             assert "name" in gene
             assert "category" in gene
 
     def test_drugs_have_expected_keys(self):
-        from clinical_trials.tracker import load_kg_entities
+        from med_research.pipeline.clinical_trials.tracker import load_kg_entities
         entities = load_kg_entities()
         for drug_id, drug in entities["drugs"].items():
             assert "name" in drug
@@ -462,7 +462,7 @@ class TestBuildCrossrefSummary:
     """Tests for _build_crossref_summary()."""
 
     def test_counts_gene_hits(self):
-        from clinical_trials.tracker import _build_crossref_summary
+        from med_research.pipeline.clinical_trials.tracker import _build_crossref_summary
         trials = [
             {"nct_id": "NCT1", "title": "BTK study", "phase_label": "Phase 2",
              "status": "R", "kg_matches": {"has_match": True, "gene_count": 1, "drug_count": 0,
@@ -476,7 +476,7 @@ class TestBuildCrossrefSummary:
         assert result["gene_hits"]["JAK1"] == 1
 
     def test_counts_matched_trials(self):
-        from clinical_trials.tracker import _build_crossref_summary
+        from med_research.pipeline.clinical_trials.tracker import _build_crossref_summary
         trials = [
             {"nct_id": "NCT1", "title": "Match", "phase_label": "Phase 2",
              "status": "R", "kg_matches": {"has_match": True, "gene_count": 1, "drug_count": 0,
@@ -498,7 +498,7 @@ class TestGenerateReport:
     """Tests for generate_ct_report()."""
 
     def test_generates_html_file(self, tmp_path):
-        from clinical_trials.report import generate_ct_report
+        from med_research.pipeline.clinical_trials.report import generate_ct_report
 
         results = {
             "trials": [{
@@ -556,13 +556,13 @@ class TestGenerateReport:
         }
 
         # Monkey-patch output path
-        import clinical_trials.report as ct_report
+        import med_research.pipeline.clinical_trials.report as ct_report
         original_path = ct_report.Path(__file__).parent if hasattr(ct_report.Path, '__call__') else ct_report.Path
         report_path = generate_ct_report(results)
         assert report_path.endswith("ct_report.html")
 
     def test_report_contains_expected_sections(self, tmp_path):
-        from clinical_trials.report import generate_ct_report
+        from med_research.pipeline.clinical_trials.report import generate_ct_report
 
         results = {
             "trials": [{
@@ -622,19 +622,19 @@ class TestEscapeHtml:
     """Tests for _escape_html in report.py."""
 
     def test_escapes_angle_brackets(self):
-        from clinical_trials.report import _escape_html
+        from med_research.pipeline.clinical_trials.report import _escape_html
         assert "&lt;script&gt;" in _escape_html("<script>")
 
     def test_escapes_ampersand(self):
-        from clinical_trials.report import _escape_html
+        from med_research.pipeline.clinical_trials.report import _escape_html
         assert "&amp;" in _escape_html("A & B")
 
     def test_empty_string_returns_empty(self):
-        from clinical_trials.report import _escape_html
+        from med_research.pipeline.clinical_trials.report import _escape_html
         assert _escape_html("") == ""
 
     def test_none_returns_empty(self):
-        from clinical_trials.report import _escape_html
+        from med_research.pipeline.clinical_trials.report import _escape_html
         assert _escape_html(None) == ""
 
 
@@ -646,15 +646,17 @@ class TestHexToRgba:
     """Tests for _hex_to_rgba in report.py."""
 
     def test_converts_color(self):
-        from clinical_trials.report import _hex_to_rgba
+        from med_research.pipeline.clinical_trials.report import _hex_to_rgba
         assert _hex_to_rgba("#4ade80") == "74,222,128,0.15"
 
     def test_returns_default_for_short(self):
-        from clinical_trials.report import _hex_to_rgba
+        from med_research.pipeline.clinical_trials.report import _hex_to_rgba
         result = _hex_to_rgba("#fff")
         assert "120,120,144" in result
 
     def test_returns_default_for_empty(self):
-        from clinical_trials.report import _hex_to_rgba
+        from med_research.pipeline.clinical_trials.report import _hex_to_rgba
         result = _hex_to_rgba("")
         assert "120,120,144" in result
+
+

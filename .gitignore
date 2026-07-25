@@ -72,3 +72,17 @@ drug_repurposing/data/
 
 # Drug synergy data
 drug_synergy/data/
+
+# Missing legacy data dirs
+adverse_events/data/
+car_t_predictor/data/
+biomarker_discovery/data/
+network_pharmacology/data/
+semantic_search/data/
+
+# Environment files
+.env
+.env.*
+
+# Legacy v1 archive
+_archive_v1/

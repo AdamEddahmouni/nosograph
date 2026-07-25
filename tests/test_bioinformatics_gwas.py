@@ -79,7 +79,7 @@ class TestCrossReferenceWithKG:
         }
 
     def test_validates_known_genes(self, sample_gwas_results, sample_kg_genes):
-        from bioinformatics.gwas import cross_reference_with_kg
+        from med_research.pipeline.bioinformatics.gwas import cross_reference_with_kg
 
         crossref = cross_reference_with_kg(sample_gwas_results, sample_kg_genes)
 
@@ -88,7 +88,7 @@ class TestCrossReferenceWithKG:
         assert crossref["n_validated"] >= 2
 
     def test_novel_genes_identified(self, sample_gwas_results, sample_kg_genes):
-        from bioinformatics.gwas import cross_reference_with_kg
+        from med_research.pipeline.bioinformatics.gwas import cross_reference_with_kg
 
         crossref = cross_reference_with_kg(sample_gwas_results, sample_kg_genes)
 
@@ -96,7 +96,7 @@ class TestCrossReferenceWithKG:
         assert crossref["n_novel"] >= 1
 
     def test_missing_kg_genes(self, sample_gwas_results, sample_kg_genes):
-        from bioinformatics.gwas import cross_reference_with_kg
+        from med_research.pipeline.bioinformatics.gwas import cross_reference_with_kg
 
         crossref = cross_reference_with_kg(sample_gwas_results, sample_kg_genes)
 
@@ -104,7 +104,7 @@ class TestCrossReferenceWithKG:
         assert "BANK1" in crossref["missing"]
 
     def test_drug_target_genes_excluded_from_missing(self, sample_gwas_results, sample_kg_genes):
-        from bioinformatics.gwas import cross_reference_with_kg
+        from med_research.pipeline.bioinformatics.gwas import cross_reference_with_kg
 
         crossref = cross_reference_with_kg(sample_gwas_results, sample_kg_genes)
 
@@ -113,7 +113,7 @@ class TestCrossReferenceWithKG:
         assert "CD20" not in missing_ids
 
     def test_validated_has_extra_fields(self, sample_gwas_results, sample_kg_genes):
-        from bioinformatics.gwas import cross_reference_with_kg
+        from med_research.pipeline.bioinformatics.gwas import cross_reference_with_kg
 
         crossref = cross_reference_with_kg(sample_gwas_results, sample_kg_genes)
         validated = crossref["validated"]
@@ -125,7 +125,7 @@ class TestCrossReferenceWithKG:
             assert "gene_id" in info
 
     def test_counts_are_correct(self, sample_gwas_results, sample_kg_genes):
-        from bioinformatics.gwas import cross_reference_with_kg
+        from med_research.pipeline.bioinformatics.gwas import cross_reference_with_kg
 
         crossref = cross_reference_with_kg(sample_gwas_results, sample_kg_genes)
 
@@ -134,7 +134,7 @@ class TestCrossReferenceWithKG:
         assert crossref["n_missing"] == len(crossref["missing"])
 
     def test_empty_gwas(self, sample_kg_genes):
-        from bioinformatics.gwas import cross_reference_with_kg
+        from med_research.pipeline.bioinformatics.gwas import cross_reference_with_kg
 
         empty_gwas = {"gene_associations": {}, "total_studies_analyzed": 0, "total_associations": 0, "study_details": []}
         crossref = cross_reference_with_kg(empty_gwas, sample_kg_genes)
@@ -144,7 +144,7 @@ class TestCrossReferenceWithKG:
         assert crossref["n_missing"] >= 1  # BANK1 is in KG but not GWAS
 
     def test_case_insensitive_matching(self, sample_kg_genes):
-        from bioinformatics.gwas import cross_reference_with_kg
+        from med_research.pipeline.bioinformatics.gwas import cross_reference_with_kg
 
         # GWAS uses lowercase gene names
         gwas = {
@@ -170,7 +170,7 @@ class TestExtractGeneAssociations:
     """Tests for extract_gene_associations()."""
 
     def test_empty_studies(self):
-        from bioinformatics.gwas import extract_gene_associations
+        from med_research.pipeline.bioinformatics.gwas import extract_gene_associations
 
         result = extract_gene_associations([])
         assert result["total_studies_analyzed"] == 0
@@ -178,7 +178,7 @@ class TestExtractGeneAssociations:
         assert result["gene_associations"] == {}
 
     def test_result_structure(self):
-        from bioinformatics.gwas import extract_gene_associations
+        from med_research.pipeline.bioinformatics.gwas import extract_gene_associations
 
         result = extract_gene_associations([])
         for key in ["gene_associations", "total_studies_analyzed", "total_associations", "study_details"]:

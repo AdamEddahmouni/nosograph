@@ -1,10 +1,9 @@
-# ── Lupus Research Platform — Docker Compose ──────────────────────────────
+# ── Medical Research Platform — Docker Compose ───────────────────────────
 #
 # Usage:
 #   docker compose build                          Build the image
 #   docker compose up web                          Start the web API + dashboard
 #   docker compose run --rm pipeline run-all      Run the full pipeline
-#   docker compose up kg-web                       Serve the knowledge graph
 #   docker compose run --rm pipeline test          Run tests
 #
 # ─────────────────────────────────────────────────────────────────────────────
@@ -27,8 +26,8 @@ services:
   # ── Celery Worker ─────────────────────────────────────────────────────
   worker:
     build: .
-    image: lupus-platform:latest
-    command: celery -A web_api.tasks.analysis_tasks worker --loglevel=info --concurrency=2
+    image: med-research:latest
+    command: celery -A med_research.web.tasks.analysis_tasks worker --loglevel=info --concurrency=2
     environment:
       - CELERY_BROKER_URL=redis://redis:6379/0
       - CELERY_RESULT_BACKEND=redis://redis:6379/0
@@ -36,20 +35,15 @@ services:
       redis:
         condition: service_healthy
     volumes:
-      - ./knowledge_graph/data:/app/knowledge_graph/data:ro
-      - ./drug_repurposing/data:/app/drug_repurposing/data:ro
-      - ./bioinformatics/data:/app/bioinformatics/data
-      - ./literature_mining/data:/app/literature_mining/data
-      - ./virtual_screening/data:/app/virtual_screening/data
-      - ./clinical_trials/data:/app/clinical_trials/data
-      - ./ml_predictor/data:/app/ml_predictor/data
+      - disease-data:/app/src/med_research/diseases:ro
+      - pipeline-data:/app/src/med_research/pipeline
     profiles:
       - full
 
   # ── Web API + Dashboard ───────────────────────────────────────────────
   web:
     build: .
-    image: lupus-platform:latest
+    image: med-research:latest
     ports:
       - "8000:8000"
     environment:
@@ -60,40 +54,23 @@ services:
       redis:
         condition: service_healthy
     volumes:
-      - ./knowledge_graph/data:/app/knowledge_graph/data:ro
-      - ./drug_repurposing/data:/app/drug_repurposing/data:ro
-      - ./bioinformatics/data:/app/bioinformatics/data
-      - ./literature_mining/data:/app/literature_mining/data
-      - ./virtual_screening/data:/app/virtual_screening/data
-      - ./clinical_trials/data:/app/clinical_trials/data
-      - ./ml_predictor/data:/app/ml_predictor/data
+      - disease-data:/app/src/med_research/diseases:ro
+      - pipeline-data:/app/src/med_research/pipeline
     profiles:
       - full
 
   # ── CLI pipeline ──────────────────────────────────────────────────────
   pipeline:
     build: .
-    image: lupus-platform:latest
-    entrypoint: ["python", "main.py"]
+    image: med-research:latest
+    entrypoint: ["python", "-m", "med_research.cli"]
     volumes:
-      - ./knowledge_graph/data:/app/knowledge_graph/data:ro
-      - ./drug_repurposing/data:/app/drug_repurposing/data:ro
-      - ./bioinformatics/data:/app/bioinformatics/data
-      - ./literature_mining/data:/app/literature_mining/data
-      - ./virtual_screening/data:/app/virtual_screening/data
-      - ./clinical_trials/data:/app/clinical_trials/data
-      - ./ml_predictor/data:/app/ml_predictor/data
-    command: run-all --export-html
+      - disease-data:/app/src/med_research/diseases:ro
+      - pipeline-data:/app/src/med_research/pipeline
     profiles:
       - cli
 
-  # ── Knowledge Graph web viewer ─────────────────────────────────────────
-  kg-web:
-    build: .
-    image: lupus-platform:latest
-    ports:
-      - "8080:8080"
-    entrypoint: ["python", "-c", "import http.server; import os; os.chdir('knowledge_graph/web'); http.server.test(HandlerClass=http.server.SimpleHTTPRequestHandler, port=8080)"]
-
 volumes:
   redis-data:
+  disease-data:
+  pipeline-data:

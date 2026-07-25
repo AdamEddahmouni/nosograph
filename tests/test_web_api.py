@@ -17,8 +17,7 @@ import socket
 import pytest
 from fastapi.testclient import TestClient
 
-from web_api.main import app
-
+from med_research.web.main import app
 
 # ── Redis availability check ────────────────────────────────────────────────
 
@@ -786,7 +785,7 @@ class TestStaticServing:
     def test_dashboard_served(self, client):
         resp = client.get("/")
         assert resp.status_code == 200
-        assert "Lupus Research Platform" in resp.text
+        assert "Medical Research Platform" in resp.text
 
     def test_knowledge_graph_web_served(self, client):
         resp = client.get("/knowledge_graph/web/index.html")

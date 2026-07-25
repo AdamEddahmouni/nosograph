@@ -13,7 +13,7 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from evidence_monitor.monitor import (
+from med_research.pipeline.evidence.monitor import (
     _find_new_items,
     _hash_results,
     compare_snapshots,
@@ -22,7 +22,7 @@ from evidence_monitor.monitor import (
     load_latest_snapshots,
     save_json,
 )
-from evidence_monitor.report import generate_html_report
+from med_research.pipeline.evidence.monitor_report import generate_html_report
 
 # ── Sample data ───────────────────────────────────────────────────────────
 
@@ -243,7 +243,7 @@ class TestReportGeneration:
 class TestMonitorIntegration:
     def test_snapshot_and_diff_workflow(self):
         """Full snapshot + diff workflow runs end to end."""
-        from evidence_monitor.monitor import run_diff
+        from med_research.pipeline.evidence.monitor import run_diff
 
         result = run_diff()
         assert "snapshot_id" in result or "prev_snapshot" in result
