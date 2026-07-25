@@ -75,6 +75,8 @@ def run_module(script: str, extra_args: list = None) -> int:
 def cmd_kg(args):
     """Build and export the knowledge graph."""
     extra = []
+    if args.disease:
+        extra.extend(["--disease", args.disease])
     if args.analyze:
         extra.append("--analyze")
     extra.append("--export")
@@ -83,7 +85,7 @@ def cmd_kg(args):
 
 def cmd_repurpose(args):
     """Run drug repurposing analysis."""
-    extra = []
+    extra = ["--disease", args.disease]
     if args.top:
         extra.extend(["--top", str(args.top)])
     if args.gene:
@@ -159,6 +161,8 @@ def cmd_literature(args):
         extra.append("--export-html")
     if args.targeted:
         extra.append("--targeted")
+    if args.extract:
+        extra.append("--extract")
     return run_module(SCRIPTS["literature"], extra)
 
 
@@ -175,7 +179,7 @@ def cmd_run_all(args):
 
     # Step 1: Knowledge Graph (prerequisite for all other modules)
     print("\n[STEP 1/8] Knowledge Graph")
-    rc = run_module(SCRIPTS["kg"], ["--analyze", "--export"])
+    rc = run_module(SCRIPTS["kg"], ["--disease", args.disease, "--analyze", "--export"])
     if rc != 0:
         print("ERROR: Knowledge graph build failed. Cannot continue.")
         return 1
@@ -534,6 +538,10 @@ Examples:
         help="Run the complete pipeline (KG > repurpose > bioinformatics > literature > screening > trials > ml)",
     )
     run_all_parser.add_argument(
+        "--disease", type=str, default="sle",
+        help="Disease ID to run pipeline for (default: sle)",
+    )
+    run_all_parser.add_argument(
         "--export-html", action="store_true",
         help="Generate HTML reports for all modules",
     )
@@ -547,6 +555,10 @@ Examples:
         "kg", help="Build and export the knowledge graph",
     )
     kg_parser.add_argument(
+        "--disease", type=str, default="sle",
+        help="Disease ID to build graph for (default: sle)",
+    )
+    kg_parser.add_argument(
         "--analyze", action="store_true",
         help="Run full graph analysis after building",
     )
@@ -554,6 +566,10 @@ Examples:
     # ── repurpose ───────────────────────────────────────────────────────
     rp_parser = subparsers.add_parser(
         "repurpose", help="Score drug repurposing candidates",
+    )
+    rp_parser.add_argument(
+        "--disease", type=str, default="sle",
+        help="Disease ID (default: sle)",
     )
     rp_parser.add_argument(
         "--top", type=int, default=15,
@@ -621,6 +637,10 @@ Examples:
     lit_parser.add_argument(
         "--targeted", action="store_true",
         help="Also run per-candidate targeted PubMed queries (+39 queries)",
+    )
+    lit_parser.add_argument(
+        "--extract", action="store_true",
+        help="Pre-filter abstracts to KG-relevant sentences (reduces NER tokens ~60%%)",
     )
 
     # ── test ────────────────────────────────────────────────────────────
