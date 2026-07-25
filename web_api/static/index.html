@@ -18,6 +18,10 @@
                 <span class="nav-title">Lupus Research Platform</span>
             </div>
             <div class="nav-links">
+                <select id="disease-selector" class="nav-select" onchange="onDiseaseChange(this.value)">
+                    <option value="sle">SLE (Lupus)</option>
+                    <option value="ra">RA (Rheumatoid Arthritis)</option>
+                </select>
                 <a href="#modules" class="nav-link">Modules</a>
                 <a href="#jobs" class="nav-link" id="jobs-tab">Jobs <span id="job-count" class="job-badge hidden">0</span></a>
                 <a href="/api/docs" class="nav-link" target="_blank">API Docs</a>

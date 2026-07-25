@@ -585,7 +585,20 @@ async function loadPlatformStats() {
 
 // ── Bootstrap ────────────────────────────────────────────────────────────
 
+function onDiseaseChange(diseaseId) {
+    window.localStorage.setItem('active-disease', diseaseId);
+    window.location.reload();
+}
+
+function getActiveDisease() {
+    return window.localStorage.getItem('active-disease') || 'sle';
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+    const selector = document.getElementById('disease-selector');
+    if (selector) {
+        selector.value = getActiveDisease();
+    }
     checkAPIStatus();
     loadPlatformStats();
 

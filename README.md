@@ -354,6 +354,39 @@ python -m pytest tests/ -v
 | **Phase 6** | Virtual Drug Screening (Molecular Docking) | ✅ Complete |
 | **Phase 7** | ML Target Predictor | ✅ Complete |
 | **Phase 8** | Clinical Trial Tracker | ✅ Complete |
+| **Phase 9** | Drug Combination Synergy (325 pairs) | ✅ Complete |
+| **Phase 10** | Adverse Event Profiling (26 drugs) | ✅ Complete |
+| **Phase 11** | Network Pharmacology Hub | ✅ Complete |
+| **Phase 12** | Gene Expression Correlation | ✅ Complete |
+| **Phase 13** | Interactive Radar Charts | ✅ Complete |
+| **Phase 14** | CAR-T Response Predictor | ✅ Complete |
+| **Phase 15** | Biomarker Discovery (cross-module) | ✅ Complete |
+| **Phase 16** | Semantic Literature Search | ✅ Complete |
+| **Phase 17** | Web-Scale Evidence Gatherer | ✅ Complete |
+| **Phase 18** | LLM-Powered Evidence Extraction | ✅ Complete |
+| **Phase 19** | Continuous Evidence Monitor | ✅ Complete |
+| **Phase 20** | Cross-Disease Generalization (RA data curated) | ✅ Complete |
+| **Phase 21+** | MS, Sjögren's, SSc, T1D, IBD data curation | 🔜 Planned |
+
+---
+
+## 🌐 Cross-Disease Support
+
+The platform supports multiple autoimmune diseases through per-disease data directories:
+
+```
+knowledge_graph/data/
+├── sle/                       # Systemic Lupus Erythematosus
+├── ra/                        # Rheumatoid Arthritis (Phase 20)
+└── (ms, ss, ssc, t1d, ibd planned)
+```
+
+**CLI Usage:**
+```bash
+python main.py kg --disease ra --analyze
+python main.py run-all --disease ra --export-html
+python main.py kg --list-diseases
+```
 
 ---
 

@@ -67,6 +67,18 @@ body {
     font-weight: 700;
 }
 .job-badge.hidden { display: none; }
+.nav-select {
+    background: var(--surface2);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 0.8rem;
+    font-family: inherit;
+    cursor: pointer;
+    outline: none;
+}
+.nav-select:focus { border-color: var(--accent); }
 
 .container { max-width: 1240px; margin: 0 auto; padding: 28px 24px; }
 
