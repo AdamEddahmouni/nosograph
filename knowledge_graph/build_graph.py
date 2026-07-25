@@ -1,13 +1,14 @@
-"""
-Lupus Knowledge Graph Builder & Analyzer
+"""Knowledge Graph Builder & Analyzer
 
-Builds a heterogeneous knowledge graph connecting genes, drugs, pathways,
-and Systemic Lupus Erythematosus (SLE) using NetworkX.
+Builds a heterogeneous graph connecting genes, drugs, pathways,
+and a disease node using NetworkX. Supports multiple diseases via --disease flag.
 
 Usage:
-    python build_graph.py              # Build and export graph as JSON
-    python build_graph.py --analyze    # Build, analyze, and print insights
-    python build_graph.py --export     # Export to web-compatible JSON
+    python build_graph.py                          # Build SLE graph (default)
+    python build_graph.py --disease ra             # Build RA graph
+    python build_graph.py --disease ra --analyze   # Build + analyze
+    python build_graph.py --disease sle --export   # Build + export for web
+    python build_graph.py --list-diseases          # List available diseases
 """
 
 import argparse
@@ -19,50 +20,54 @@ from pathlib import Path
 
 import networkx as nx
 
-# Fix Windows encoding for emoji output
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from knowledge_graph.config import (
+    load_genes,
+    load_drugs,
+    load_pathways,
+    load_relationships,
+    get_disease_profile,
+    list_diseases,
+)
+
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
-DATA_DIR = Path(__file__).parent / "data"
 
-
-def load_json(filename: str) -> dict:
-    with open(DATA_DIR / filename, "r", encoding="utf-8") as f:
-        return json.load(f)
-
-
-def build_graph() -> nx.MultiDiGraph:
-    """Build the full heterogeneous lupus knowledge graph."""
+def build_graph(disease_id: str = "sle") -> nx.MultiDiGraph:
+    """Build a disease-specific heterogeneous knowledge graph."""
     G = nx.MultiDiGraph()
+    profile = get_disease_profile(disease_id)
 
-    # Add the central disease node
+    disease_node_id = profile.get("kg_node_id", f"{profile['name']} ({profile['id'].upper()})")
     G.add_node(
-        "Lupus (SLE)",
+        disease_node_id,
         type="disease",
-        label="Systemic Lupus Erythematosus",
-        description="Chronic autoimmune disease characterized by autoantibody production, "
-        "immune complex deposition, and multi-organ inflammation affecting ~5 million people worldwide.",
-        prevalence="~5 million worldwide",
-        female_to_male_ratio="9:1",
-        peak_onset="15-45 years",
+        label=profile["name"],
+        description=profile.get("description", ""),
+        prevalence=profile.get("prevalence", ""),
+        female_to_male_ratio=profile.get("female_to_male_ratio", ""),
+        peak_onset=profile.get("peak_onset", ""),
+        disease_id=disease_id,
     )
 
-    # --- Add Genes ---
-    genes_data = load_json("genes.json")
+    genes_data = load_genes(disease_id)
     for gene in genes_data["genes"]:
+        evidence_key = f"{disease_id}_evidence"
+        evidence = gene.get(evidence_key) or gene.get("lupus_evidence") or gene.get("disease_evidence", "")
         G.add_node(
             gene["id"],
             type="gene",
             label=gene["name"],
             description=gene["function"],
             chromosome=gene.get("chromosome", ""),
-            lupus_evidence=gene.get("lupus_evidence", ""),
+            disease_evidence=evidence,
+            lupus_evidence=evidence,
             odds_ratio=gene.get("odds_ratio"),
             category=gene.get("category", ""),
         )
 
-    # --- Add Drugs ---
-    drugs_data = load_json("drugs.json")
+    drugs_data = load_drugs(disease_id)
     for drug in drugs_data["drugs"]:
         G.add_node(
             drug["id"],
@@ -77,8 +82,7 @@ def build_graph() -> nx.MultiDiGraph:
             category=drug.get("category", ""),
         )
 
-    # --- Add Pathways ---
-    pathways_data = load_json("pathways.json")
+    pathways_data = load_pathways(disease_id)
     for pathway in pathways_data["pathways"]:
         G.add_node(
             pathway["id"],
@@ -87,37 +91,39 @@ def build_graph() -> nx.MultiDiGraph:
             description=pathway["description"],
         )
 
-    # --- Add Relationships (Edges) ---
-    rels_data = load_json("relationships.json")
+    rels_data = load_relationships(disease_id)
     for rel in rels_data["relationships"]:
-        G.add_edge(
-            rel["source"],
-            rel["target"],
-            key=rel["type"],
-            type=rel["type"],
-            description=rel.get("description", ""),
-        )
+        if rel["source"] in G and rel["target"] in G:
+            G.add_edge(
+                rel["source"],
+                rel["target"],
+                key=rel["type"],
+                type=rel["type"],
+                description=rel.get("description", ""),
+            )
 
     return G
 
 
 def analyze_graph(G: nx.MultiDiGraph):
     """Run comprehensive graph analysis and print findings."""
+    disease_node = next((n for n, d in G.nodes(data=True) if d.get("type") == "disease"), None)
+    disease_name = G.nodes[disease_node]["label"] if disease_node else "Disease"
+
     print("=" * 70)
-    print("🕸️  LUPUS KNOWLEDGE GRAPH ANALYSIS")
+    print(f"KNOWLEDGE GRAPH ANALYSIS: {disease_name}")
     print("=" * 70)
 
-    # Node counts by type
     node_types = defaultdict(int)
     for _, data in G.nodes(data=True):
         node_types[data.get("type", "unknown")] += 1
 
-    print("\n📊 Graph Overview:")
+    print("\n  Graph Overview:")
     print(f"   Total nodes: {G.number_of_nodes():,}")
     print(f"   Total edges: {G.number_of_edges():,}")
     print("\n   Node types:")
     for ntype, count in sorted(node_types.items()):
-        print(f"     • {ntype}: {count}")
+        print(f"     \u2022 {ntype}: {count}")
 
     edge_types = defaultdict(int)
     for _, _, data in G.edges(data=True):
@@ -125,12 +131,10 @@ def analyze_graph(G: nx.MultiDiGraph):
 
     print("\n   Edge types:")
     for etype, count in sorted(edge_types.items()):
-        print(f"     • {etype}: {count}")
-
-    # --- Key Analyses ---
+        print(f"     \u2022 {etype}: {count}")
 
     print("\n" + "=" * 70)
-    print("🎯 DRUG → TARGET ANALYSIS")
+    print("DRUG -> TARGET ANALYSIS")
     print("=" * 70)
     for node, data in G.nodes(data=True):
         if data.get("type") == "drug":
@@ -143,14 +147,13 @@ def analyze_graph(G: nx.MultiDiGraph):
                 for t in targets:
                     tdata = G.nodes[t]
                     target_info.append(f"{tdata.get('label', t)} ({G.nodes[t].get('type')})")
-                print(f"\n  💊 {data['label']}")
+                print(f"\n  {data['label']}")
                 print(f"     Mechanism: {data.get('description', 'N/A')[:120]}...")
                 print(f"     Targets: {', '.join(target_info)}")
 
     print("\n" + "=" * 70)
-    print("🧬 TOP GENE → DISEASE HUB ANALYSIS")
+    print("TOP GENE HUB ANALYSIS")
     print("=" * 70)
-    # Find genes with the highest degree (most connected)
     gene_degrees = [
         (node, G.degree(node), G.nodes[node].get("label", node))
         for node, data in G.nodes(data=True)
@@ -158,14 +161,14 @@ def analyze_graph(G: nx.MultiDiGraph):
     ]
     gene_degrees.sort(key=lambda x: x[1], reverse=True)
 
-    print("\n  Genes most connected in the lupus network:")
+    print(f"\n  Genes most connected in the {disease_name.lower()} network:")
     for node, deg, label in gene_degrees[:10]:
         categories = [G.nodes[n].get("type", "?") for n in G.neighbors(node)]
         neighbor_summary = ", ".join(f"{categories.count(c)} {c}" for c in set(categories))
-        print(f"  • {label} (degree={deg}) — connected to: {neighbor_summary}")
+        print(f"  \u2022 {label} (degree={deg}) \u2014 connected to: {neighbor_summary}")
 
     print("\n" + "=" * 70)
-    print("🛤️  PATHWAY CONNECTIVITY")
+    print("PATHWAY CONNECTIVITY")
     print("=" * 70)
     for node, data in G.nodes(data=True):
         if data.get("type") == "pathway":
@@ -180,17 +183,16 @@ def analyze_graph(G: nx.MultiDiGraph):
                 for u, v, d in in_edges
                 if G.nodes[u].get("type") in ("gene",)
             ]
-            print(f"\n  📍 {data['label']}")
+            print(f"\n  {data['label']}")
             print(f"     Description: {data.get('description', 'N/A')[:150]}...")
             if drugs_targeting:
                 print(f"     Drugs targeting this pathway: {', '.join(drugs_targeting)}")
             if genes_in:
-                print(f"     Lupus-associated genes: {', '.join(genes_in)}")
+                print(f"     Associated genes: {', '.join(genes_in)}")
 
     print("\n" + "=" * 70)
-    print("💡 DRUG REPURPOSING INSIGHTS (Shortest Path Analysis)")
+    print("DRUG REPURPOSING INSIGHTS (Shortest Path Analysis)")
     print("=" * 70)
-    # Find genes NOT directly targeted by any drug
     targeted_genes = set()
     for u, v, d in G.edges(data=True):
         if d.get("type") == "TARGETS" and G.nodes[v].get("type") == "gene":
@@ -201,24 +203,23 @@ def analyze_graph(G: nx.MultiDiGraph):
         if data.get("type") == "gene" and n not in targeted_genes
     ]
 
-    print(f"\n  🔬 {len(untargeted_genes)} lupus-associated genes with NO direct therapeutic agent:")
+    print(f"\n  {len(untargeted_genes)} associated genes with NO direct therapeutic agent:")
     for gene in untargeted_genes:
         gdata = G.nodes[gene]
-        print(f"     • {gdata['label']} — {gdata.get('lupus_evidence', '')[:120]}...")
+        print(f"     \u2022 {gdata['label']} \u2014 {gdata.get('disease_evidence', '')[:120]}...")
 
     print("\n" + "=" * 70)
-    print("✅ Analysis complete.")
+    print("Analysis complete.")
     print("=" * 70)
 
 
-def export_for_web(G: nx.MultiDiGraph, output_path: str = None) -> dict:
+def export_for_web(G: nx.MultiDiGraph, output_path: str = None, disease_id: str = "sle") -> dict:
     """Export the graph in a format suitable for Cytoscape.js visualization."""
     if output_path is None:
-        output_path = Path(__file__).parent / "web" / "graph_data.json"
+        output_path = Path(__file__).parent / "web" / f"graph_data_{disease_id}.json"
 
     elements = []
 
-    # Export nodes
     for node_id, data in G.nodes(data=True):
         node_data = {
             "data": {
@@ -230,7 +231,6 @@ def export_for_web(G: nx.MultiDiGraph, output_path: str = None) -> dict:
         }
         elements.append(node_data)
 
-    # Export edges
     for u, v, key, data in G.edges(data=True, keys=True):
         edge_data = {
             "data": {
@@ -243,12 +243,12 @@ def export_for_web(G: nx.MultiDiGraph, output_path: str = None) -> dict:
         }
         elements.append(edge_data)
 
-    output = {"elements": elements}
+    output = {"elements": elements, "disease_id": disease_id}
     os.makedirs(Path(output_path).parent, exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2)
 
-    print(f"✅ Graph exported to {output_path}")
+    print(f"Graph exported to {output_path}")
     print(f"   Nodes: {sum(1 for e in elements if 'source' not in e['data'])}")
     print(f"   Edges: {sum(1 for e in elements if 'source' in e['data'])}")
 
@@ -256,26 +256,34 @@ def export_for_web(G: nx.MultiDiGraph, output_path: str = None) -> dict:
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="Lupus Knowledge Graph Builder & Analyzer"
-    )
-    parser.add_argument(
-        "--analyze", action="store_true", help="Run graph analysis after building"
-    )
-    parser.add_argument(
-        "--export", action="store_true", help="Export graph for web visualization"
-    )
+    parser = argparse.ArgumentParser(description="Knowledge Graph Builder & Analyzer")
+    parser.add_argument("--disease", type=str, default="sle",
+                        help="Disease ID to build graph for (default: sle)")
+    parser.add_argument("--analyze", action="store_true",
+                        help="Run graph analysis after building")
+    parser.add_argument("--export", action="store_true",
+                        help="Export graph for web visualization")
+    parser.add_argument("--list-diseases", action="store_true",
+                        help="List available diseases and exit")
     args = parser.parse_args()
 
-    print("🔄 Building Lupus Knowledge Graph...")
-    G = build_graph()
-    print(f"✅ Graph built: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
+    if args.list_diseases:
+        diseases = list_diseases()
+        print("Available diseases:")
+        for did, info in sorted(diseases.items()):
+            print(f"  {did:6s} \u2014 {info['name']}")
+        return None
+
+    profile = get_disease_profile(args.disease)
+    print(f"Building {profile['name']} Knowledge Graph...")
+    G = build_graph(args.disease)
+    print(f"Graph built: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
 
     if args.analyze:
         analyze_graph(G)
 
     if args.export or not args.analyze:
-        export_for_web(G)
+        export_for_web(G, disease_id=args.disease)
 
     return G
 
