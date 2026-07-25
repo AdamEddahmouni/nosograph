@@ -76,6 +76,12 @@ API_TAGS = [
          "Embedding-based semantic literature search using sentence-transformers "
          "and ChromaDB to find PubMed articles by meaning, not keywords."
      )},
+    {"name": "Evidence Gathering",
+     "description": (
+         "Multi-source biomedical evidence aggregation — search PubMed, "
+         "preprints (bioRxiv/medRxiv), ClinicalTrials.gov, FDA labels "
+         "(DailyMed), and patents simultaneously."
+     )},
     {"name": "Jobs",
      "description": (
          "Submit and track async analysis jobs with real-time WebSocket "

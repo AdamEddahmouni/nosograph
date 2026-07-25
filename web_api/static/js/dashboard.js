@@ -68,6 +68,10 @@ async function runModule(module) {
                 data = await apiFetch('/api/semantic/search?q=lupus+treatment+drug+repurposing&top_k=10');
                 renderSemanticResult(resultEl, data);
                 break;
+            case 'evidence':
+                data = await apiFetch('/api/evidence/gather?q=lupus+treatment+drug+repurposing&max_per_source=5&sources=pubmed,preprints,clinical_trials,fda_labels,patents');
+                renderEvidenceResult(resultEl, data);
+                break;
             case 'repurpose':
                 data = await apiFetch('/api/repurpose/candidates?top_n=10');
                 renderRepurposeResult(resultEl, data);
@@ -439,6 +443,17 @@ function renderSemanticResult(el, data) {
         ['Results Found', data.total_results],
         ['Top Match', top ? top.title?.slice(0, 50) + '...' : '—'],
         ['Similarity', top?.similarity?.toFixed(1) || '—'],
+    ]);
+}
+
+function renderEvidenceResult(el, data) {
+    const top = data.results?.[0];
+    el.className = 'module-result visible success';
+    el.innerHTML = renderModuleResult([
+        ['Total Results', data.total_results],
+        ['Sources Searched', data.sources_searched?.length || 0],
+        ['Top Source', top ? top.source_type?.replace('_',' ').toUpperCase() : '—'],
+        ['Top Match', top ? top.title?.slice(0, 50) + '...' : '—'],
     ]);
 }
 

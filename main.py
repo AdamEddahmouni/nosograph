@@ -44,6 +44,7 @@ SCRIPTS = {
     "cart": "car_t_predictor/predictor.py",
     "biomarker": "biomarker_discovery/discover.py",
     "semantic": "semantic_search/engine.py",
+    "evidence": "evidence_gatherer/gatherer.py",
 }
 
 
@@ -440,6 +441,24 @@ def cmd_semantic(args):
     return run_module(SCRIPTS["semantic"], extra)
 
 
+def cmd_evidence(args):
+    """Run web-scale evidence gathering."""
+    extra = []
+    if args.query:
+        extra.extend(["--query", args.query])
+    if args.sources:
+        extra.extend(["--sources", args.sources])
+    if args.max:
+        extra.extend(["--max", str(args.max)])
+    if args.no_cache:
+        extra.append("--no-cache")
+    if args.top:
+        extra.extend(["--top", str(args.top)])
+    if args.export_html:
+        extra.append("--export-html")
+    return run_module(SCRIPTS["evidence"], extra)
+
+
 def cmd_test(args):
     """Run the test suite."""
     cmd = [sys.executable, "-m", "pytest", "tests/", "-v", "--tb=short"]
@@ -714,6 +733,35 @@ Examples:
         help="Generate HTML report",
     )
 
+    # ── evidence ───────────────────────────────────────────────────
+    evidence_parser = subparsers.add_parser(
+        "evidence", help="Gather evidence from multiple biomedical sources",
+    )
+    evidence_parser.add_argument(
+        "--query", "-q", type=str, default="B cell depletion therapy lupus",
+        help="Search query (natural language)",
+    )
+    evidence_parser.add_argument(
+        "--sources", type=str, default="all",
+        help="Comma-separated sources: pubmed,preprints,clinical_trials,fda_labels,patents or 'all'",
+    )
+    evidence_parser.add_argument(
+        "--max", type=int, default=20,
+        help="Max results per source (default: 20)",
+    )
+    evidence_parser.add_argument(
+        "--no-cache", action="store_true",
+        help="Skip cache, re-fetch from APIs",
+    )
+    evidence_parser.add_argument(
+        "--top", type=int, default=15,
+        help="Number of top results to display (default: 15)",
+    )
+    evidence_parser.add_argument(
+        "--export-html", action="store_true",
+        help="Generate HTML report",
+    )
+
     # ── screening ──────────────────────────────────────────────────
     screen_parser = subparsers.add_parser(
         "screening", help="Run virtual drug screening against lupus targets",
@@ -758,6 +806,7 @@ Examples:
         "cart": cmd_cart,
         "biomarker": cmd_biomarker,
         "semantic": cmd_semantic,
+        "evidence": cmd_evidence,
         "test": cmd_test,
     }
 

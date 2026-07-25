@@ -64,7 +64,7 @@
                 </div>
                 <div class="stat-card">
                     <div class="stat-icon">🧪</div>
-                    <div class="stat-value" style="color:#22d3ee;">15</div>
+                    <div class="stat-value" style="color:#22d3ee;">16</div>
                     <div class="stat-label">Analysis Modules</div>
                 </div>
                 <div class="stat-card">
@@ -166,6 +166,31 @@
                         <button class="btn btn-secondary" onclick="runModule('ppi')">🔗 PPI</button>
                     </div>
                     <div class="module-result" id="result-bioinformatics"></div>
+                </div>
+
+                <!-- Evidence Gatherer -->
+                <div class="module-card" style="--card-accent:#f59e0b;">
+                    <div class="module-card-header">
+                        <div class="module-icon" style="background:rgba(245,158,11,0.12);">🌐</div>
+                        <div>
+                            <h3>Evidence Gatherer</h3>
+                            <span class="module-phase"><span class="status-dot complete"></span>Phase 17</span>
+                        </div>
+                    </div>
+                    <p class="desc">
+                        Multi-source biomedical evidence aggregation. Searches PubMed, preprints (bioRxiv/medRxiv),
+                        ClinicalTrials.gov, FDA labels, and patents — all with a single query.
+                    </p>
+                    <div class="tags">
+                        <span class="tag yellow">Europe PMC</span>
+                        <span class="tag blue">DailyMed</span>
+                        <span class="tag green">5 Sources</span>
+                    </div>
+                    <div class="actions">
+                        <button class="btn btn-primary" onclick="runModule('evidence')">🌐 Gather Evidence</button>
+                        <a href="/evidence_gatherer/report.html" class="btn btn-secondary">📊 Report</a>
+                    </div>
+                    <div class="module-result" id="result-evidence"></div>
                 </div>
 
                 <!-- Semantic Search -->
