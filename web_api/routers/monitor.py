@@ -25,3 +25,11 @@ async def monitor_diff():
 async def monitor_status():
     """Get current monitoring status and snapshot info."""
     return run_status()
+
+
+@router.post("/api/monitor/snapshot")
+def create_monitor_snapshot():
+    """Manually trigger an evidence monitor snapshot."""
+    from web_api.services.monitor_service import run_snapshot
+    result = run_snapshot()
+    return {"status": "snapshot_complete", "result": result}

@@ -94,6 +94,11 @@ API_TAGS = [
          "over time, and receive alerts for new publications, clinical trial "
          "updates, and trackable changes across all platform entities."
      )},
+    {"name": "Cross-Disease Analysis",
+     "description": (
+         "Cross-disease shared biology, similarity, and multi-disease "
+         "drug scoring across 7 autoimmune diseases."
+     )},
     {"name": "Jobs",
      "description": (
          "Submit and track async analysis jobs with real-time WebSocket "

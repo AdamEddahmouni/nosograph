@@ -384,6 +384,10 @@ python -m pytest tests/ -v
 | **Phase 21** | Cross-Disease Expansion (MS, SS, SSc, T1D, IBD) | ✅ Complete |
 | **Phase 22** | Cross-Disease Drug Repurposing Analyzer | ✅ Complete |
 | **Phase 23** | Real Molecular Docking (AutoDock Vina) | ✅ Complete |
+| **Phase 24** | Data Curation — Expanded KG for SS, T1D, SSc, MS, IBD + MODULATES edges | ✅ Complete |
+| **Phase 25** | Advanced NER — Variant/mutation, clinical trial, statistical extraction + scispacy validation | ✅ Complete |
+| **Phase 26** | GEO Multi-omics — GEO data fetcher, dynamic expression signatures | ✅ Complete |
+| **Phase 27** | Web Dashboard — Cross-disease API, static mounts, dashboard enhancements | ✅ Complete |
 
 ---
 
@@ -425,7 +429,7 @@ python main.py kg --list-diseases
 | Virtual Drug Screening | 20 compounds screened against 13 untargeted genes |
 | Clinical Trials Tracked | 50 interventional lupus trials from ClinicalTrials.gov |
 | ML Predicted Targets | 35 genes analyzed, XGBoost + SHAP druggability scoring |
-| Tests | 363 passing, 0 failures |
+| Tests | ~465 passing, 0 failures |
 | Python Support | 3.10, 3.11, 3.12 |
 
 ---

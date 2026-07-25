@@ -555,6 +555,37 @@ function renderJobQueue() {
     }).join('');
 }
 
+// ── Cross-Disease Analysis ──────────────────────────────────────────
+async function runCrossDisease() {
+    const resultEl = document.getElementById('result-cross-disease');
+    if (!resultEl) return;
+
+    resultEl.className = 'module-result visible loading';
+    resultEl.innerHTML = '<span class="spinner"></span> Running cross-disease analysis...';
+
+    try {
+        const data = await apiFetch('/api/cross-disease/overlap');
+
+        const geneCount = data.shared_genes && data.shared_genes.shared_genes
+            ? data.shared_genes.shared_genes.length : 0;
+        const drugCount = data.shared_drugs && data.shared_drugs.shared_drugs
+            ? data.shared_drugs.shared_drugs.length : 0;
+        const pathCount = data.shared_pathways && data.shared_pathways.shared_pathways
+            ? data.shared_pathways.shared_pathways.length : 0;
+
+        resultEl.className = 'module-result visible success';
+        resultEl.innerHTML = renderModuleResult([
+            ['Diseases Analyzed', data.disease_count],
+            ['Shared Genes', geneCount],
+            ['Shared Drugs', drugCount],
+            ['Shared Pathways', pathCount],
+        ]);
+    } catch (err) {
+        resultEl.className = 'module-result visible error';
+        resultEl.innerHTML = `<strong>Error:</strong> ${err.message}`;
+    }
+}
+
 // ── Init ─────────────────────────────────────────────────────────────────
 
 async function checkAPIStatus() {

@@ -88,6 +88,16 @@ static_dirs = {
     "/virtual_screening": PROJECT_ROOT / "virtual_screening",
     "/clinical_trials": PROJECT_ROOT / "clinical_trials",
     "/ml_predictor": PROJECT_ROOT / "ml_predictor",
+    "/drug_synergy": PROJECT_ROOT / "drug_synergy",
+    "/adverse_events": PROJECT_ROOT / "adverse_events",
+    "/gene_expression": PROJECT_ROOT / "gene_expression",
+    "/car_t_predictor": PROJECT_ROOT / "car_t_predictor",
+    "/biomarker_discovery": PROJECT_ROOT / "biomarker_discovery",
+    "/evidence_gatherer": PROJECT_ROOT / "evidence_gatherer",
+    "/evidence_monitor": PROJECT_ROOT / "evidence_monitor",
+    "/llm_extractor": PROJECT_ROOT / "llm_extractor",
+    "/semantic_search": PROJECT_ROOT / "semantic_search",
+    "/network_pharmacology": PROJECT_ROOT / "network_pharmacology",
 }
 
 for path_prefix, directory in static_dirs.items():
