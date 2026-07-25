@@ -1,0 +1,652 @@
+{
+  "relationships": [
+    {
+      "source": "hydroxychloroquine",
+      "target": "TLR7",
+      "type": "TARGETS",
+      "description": "Hydroxychloroquine inhibits endosomal TLR7 activation by preventing endosome acidification in pDCs and B cells"
+    },
+    {
+      "source": "hydroxychloroquine",
+      "target": "TLR9",
+      "type": "TARGETS",
+      "description": "Hydroxychloroquine inhibits endosomal TLR9 activation, reducing immune complex-mediated IFN-α production"
+    },
+    {
+      "source": "rituximab_ss",
+      "target": "CD20",
+      "type": "TARGETS",
+      "description": "Rituximab depletes CD20+ B cells, reducing germinal center formation and autoantibody production in salivary glands"
+    },
+    {
+      "source": "belimumab",
+      "target": "BAFF",
+      "type": "TARGETS",
+      "description": "Belimumab neutralizes soluble BAFF (BLyS), reducing survival of autoreactive B cells and plasma cells in SS"
+    },
+    {
+      "source": "ianalumab",
+      "target": "BAFF-R",
+      "type": "TARGETS",
+      "description": "Ianalumab blocks BAFF-R survival signaling AND depletes BAFF-R+ B cells via ADCC — dual mechanism"
+    },
+    {
+      "source": "iscalimab",
+      "target": "CD40",
+      "type": "TARGETS",
+      "description": "Iscalimab blocks CD40 on B cells, inhibiting Tfh-B cell costimulation and germinal center formation without B cell depletion"
+    },
+    {
+      "source": "abatacept",
+      "target": "CD80",
+      "type": "TARGETS",
+      "description": "Abatacept (CTLA4-Ig) binds CD80/CD86 on APCs, blocking CD28-mediated T cell costimulation and reducing Tfh help to B cells"
+    },
+    {
+      "source": "abatacept",
+      "target": "CD86",
+      "type": "TARGETS",
+      "description": "Abatacept (CTLA4-Ig) binds CD86, blocking the CD28-B7 costimulatory pathway"
+    },
+    {
+      "source": "leflunomide",
+      "target": "DHODH",
+      "type": "TARGETS",
+      "description": "Leflunomide inhibits DHODH, blocking de novo pyrimidine synthesis and reducing activated lymphocyte proliferation"
+    },
+    {
+      "source": "mycophenolate",
+      "target": "IMPDH",
+      "type": "TARGETS",
+      "description": "Mycophenolate inhibits IMPDH, suppressing T and B lymphocyte proliferation for systemic SS"
+    },
+    {
+      "source": "prednisone_ss",
+      "target": "Glucocorticoid Receptor",
+      "type": "TARGETS",
+      "description": "Prednisone activates GR for broad anti-inflammatory effects; used for systemic SS flares"
+    },
+    {
+      "source": "pilocarpine",
+      "target": "CHRM3",
+      "type": "TARGETS",
+      "description": "Pilocarpine stimulates M3 muscarinic receptors on residual salivary and lacrimal gland acinar cells to promote secretion"
+    },
+    {
+      "source": "cevimeline",
+      "target": "CHRM3",
+      "type": "TARGETS",
+      "description": "Cevimeline is a selective M1/M3 muscarinic agonist promoting salivary secretion with potentially fewer cholinergic side effects"
+    },
+    {
+      "source": "cyclosporine_eye",
+      "target": "Calcineurin",
+      "type": "TARGETS",
+      "description": "Topical cyclosporine inhibits calcineurin/NFAT in ocular surface T cells, reducing inflammation and increasing tear production"
+    },
+    {
+      "source": "HLA-DRB1",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DRB1*03:01 (OR 2.5) strongest SS genetic risk; DR3-DQ2 haplotype confers highest risk for anti-Ro/SSA+ disease"
+    },
+    {
+      "source": "STAT4",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT4 rs7574865 strongly associated with SS (OR 1.5); drives Th1/Th17 in salivary gland infiltrates"
+    },
+    {
+      "source": "IRF5",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF5 rs2004640 associated with SS (OR 1.5); drives IFN-α in salivary gland pDCs; shared across SLE/SS/RA/SSc"
+    },
+    {
+      "source": "TNFAIP3",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFAIP3/A20 polymorphisms (OR 1.4); reduced A20 in salivary gland epithelium → uncontrolled NF-κB activation"
+    },
+    {
+      "source": "BLK",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLK rs13277113 (OR 1.3); reduced BLK impairs B cell tolerance; shared SLE/SS/RA/SSc risk"
+    },
+    {
+      "source": "BANK1",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BANK1 risk variants (OR 1.3) → B cell hyperresponsiveness; shared SLE/SS/SSc risk locus"
+    },
+    {
+      "source": "TNIP1",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNIP1 (ABIN-1) cooperates with A20 to restrict NF-κB; SS-associated variants (OR 1.3)"
+    },
+    {
+      "source": "IL12A",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL12A drives Th1 responses in salivary glands; rs485497 associated with SS (OR 1.3)"
+    },
+    {
+      "source": "BAFF",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAFF markedly elevated in SS serum/saliva/glands; transgenic BAFF causes SS-like disease + lymphoma"
+    },
+    {
+      "source": "PTPN22",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN22 R620W gain-of-function variant alters TCR/BCR signaling thresholds (OR 1.3); shared T1D/RA/SLE risk"
+    },
+    {
+      "source": "FCGR2A",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2A H131R polymorphism alters IgG binding and immune complex clearance in salivary glands (OR 1.2)"
+    },
+    {
+      "source": "ETS1",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETS1 regulates plasma cell differentiation; rs1128334 associated with SS (OR 1.3); shared SLE/SS risk"
+    },
+    {
+      "source": "IKZF1",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 (IKAROS) essential for B cell development; polymorphisms associated with SS (OR 1.2)"
+    },
+    {
+      "source": "CXCR5",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR5+ Tfh cells enriched in SS salivary glands; CXCL13 correlates with GC formation and lymphoma risk"
+    },
+    {
+      "source": "TNFSF4",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OX40L costimulation promotes Tfh responses driving B cell activation; associated with SS (OR 1.2)"
+    },
+    {
+      "source": "IRF5",
+      "target": "type1-ifn-signature-ss",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF5 is a key transcription factor driving IFN-α production downstream of TLR7/9 in salivary gland pDCs"
+    },
+    {
+      "source": "STAT4",
+      "target": "type1-ifn-signature-ss",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT4 mediates type I IFN and IL-12 signaling; SS risk variant increases STAT4 expression"
+    },
+    {
+      "source": "BAFF",
+      "target": "bcell-baff-ss",
+      "type": "PARTICIPATES_IN",
+      "description": "BAFF is the central B cell survival factor in SS; drives autoreactive B cell survival, GC formation, and lymphoma risk"
+    },
+    {
+      "source": "BLK",
+      "target": "bcell-baff-ss",
+      "type": "PARTICIPATES_IN",
+      "description": "BLK is a Src kinase in BCR signaling; reduced expression impairs B cell tolerance downstream of BAFF"
+    },
+    {
+      "source": "BANK1",
+      "target": "bcell-baff-ss",
+      "type": "PARTICIPATES_IN",
+      "description": "BANK1 modulates BCR calcium mobilization; risk variants → B cell hyperresponsiveness to BAFF-mediated survival signals"
+    },
+    {
+      "source": "ETS1",
+      "target": "bcell-baff-ss",
+      "type": "PARTICIPATES_IN",
+      "description": "ETS1 drives plasma cell differentiation; reduced expression in SS may impair B cell differentiation control"
+    },
+    {
+      "source": "IKZF1",
+      "target": "bcell-baff-ss",
+      "type": "PARTICIPATES_IN",
+      "description": "IKAROS (IKZF1) is master regulator of B cell development; SS variants may alter lineage commitment"
+    },
+    {
+      "source": "CXCR5",
+      "target": "tfh-germinal-ss",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR5 directs B cells and Tfh cells to CXCL13-rich germinal centers in salivary glands"
+    },
+    {
+      "source": "CD40",
+      "target": "tfh-germinal-ss",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40 on B cells engages CD40L on Tfh cells, driving germinal center reactions in SS salivary glands"
+    },
+    {
+      "source": "TNFSF4",
+      "target": "tfh-germinal-ss",
+      "type": "PARTICIPATES_IN",
+      "description": "OX40L (TNFSF4) on APCs engages OX40 on Tfh cells, enhancing GC responses and autoantibody production"
+    },
+    {
+      "source": "FCGR2A",
+      "target": "tlr-innate-ss",
+      "type": "PARTICIPATES_IN",
+      "description": "FcγRIIa mediates endocytosis of Ro/SSA-antibody immune complexes, delivering RNA cargo to TLR7 endosomes"
+    },
+    {
+      "source": "STAT4",
+      "target": "jak-stat-ss",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT4 is activated by JAK2/TYK2 downstream of IL-12 and type I IFN receptors; major SS genetic risk factor"
+    },
+    {
+      "source": "IRF5",
+      "target": "jak-stat-ss",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF5 is induced downstream of type I IFN/JAK-STAT signaling; creates positive feedback loop amplifying IFN signature"
+    },
+    {
+      "source": "hydroxychloroquine",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "TREATS",
+      "description": "First-line off-label immunomodulator for SS; reduces arthralgias, fatigue, and inflammatory markers"
+    },
+    {
+      "source": "rituximab_ss",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "TREATS",
+      "description": "Anti-CD20 B cell depletion; benefits salivary flow and systemic disease despite mixed RCT primary endpoints"
+    },
+    {
+      "source": "belimumab",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "TREATS",
+      "description": "Anti-BAFF directly targets central B cell survival pathway; Phase 2 BELISS positive for systemic disease and sicca"
+    },
+    {
+      "source": "ianalumab",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "TREATS",
+      "description": "Dual-mechanism anti-BAFF-R; Phase 2b positive with dose-dependent ESSDAI improvement"
+    },
+    {
+      "source": "iscalimab",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "TREATS",
+      "description": "Anti-CD40 blocks Tfh-B cell costimulation; Phase 2 TWINSS positive for systemic disease activity"
+    },
+    {
+      "source": "abatacept",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "TREATS",
+      "description": "CTLA4-Ig blocks T cell costimulation; Phase 3 showed mixed results with improvement in systemic features"
+    },
+    {
+      "source": "leflunomide",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "TREATS",
+      "description": "Off-label DHODH inhibitor for SS inflammatory arthritis; alternative to hydroxychloroquine/MTX"
+    },
+    {
+      "source": "mycophenolate",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "TREATS",
+      "description": "IMPDH inhibitor used for severe systemic SS (ILD, nephritis); limited RCT evidence"
+    },
+    {
+      "source": "prednisone_ss",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "TREATS",
+      "description": "Corticosteroid for acute systemic SS flares; rapid symptomatic relief; no effect on sicca"
+    },
+    {
+      "source": "pilocarpine",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "TREATS",
+      "description": "Muscarinic agonist stimulating salivary and lacrimal secretion; symptomatic therapy for sicca"
+    },
+    {
+      "source": "cevimeline",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "TREATS",
+      "description": "Selective M1/M3 agonist for SS dry mouth; longer half-life than pilocarpine; FDA-approved specifically for SS"
+    },
+    {
+      "source": "cyclosporine_eye",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "TREATS",
+      "description": "Topical calcineurin inhibitor for keratoconjunctivitis sicca; increases tear production over time"
+    },
+    {
+      "source": "type1-ifn-signature-ss",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "DRIVES",
+      "description": "IFN signature in ~60-70% of SS patients drives pDC activation, B cell hyperactivation, and correlates with disease activity and lymphoma risk"
+    },
+    {
+      "source": "bcell-baff-ss",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "DRIVES",
+      "description": "BAFF-driven B cell hyperactivity is the immunologic hallmark of SS; transgenic BAFF causes SS-like disease and lymphoma"
+    },
+    {
+      "source": "tfh-germinal-ss",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "DRIVES",
+      "description": "Ectopic germinal centers in salivary glands drive local autoantibody production, glandular destruction, and lymphoma risk"
+    },
+    {
+      "source": "tlr-innate-ss",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "DRIVES",
+      "description": "TLR7/9 sensing of Ro/SSA-RNA immune complexes sustains pDC IFN-α production and B cell activation loop"
+    },
+    {
+      "source": "jak-stat-ss",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "DRIVES",
+      "description": "JAK-STAT signaling integrates type I IFN, IL-6, IL-12/23, and IL-21 signals driving SS immune dysregulation"
+    },
+    {
+      "source": "deucravacitinib",
+      "target": "TYK2",
+      "type": "TARGETS",
+      "description": "Deucravacitinib is a highly selective allosteric TYK2 inhibitor, blocking type I IFN, IL-12, and IL-23 signaling"
+    },
+    {
+      "source": "dazodalibep",
+      "target": "CD40LG",
+      "type": "TARGETS",
+      "description": "Dazodalibep blocks CD40L, inhibiting T-B cell costimulation"
+    },
+    {
+      "source": "hydroxychloroquine",
+      "target": "MYD88",
+      "type": "TARGETS",
+      "description": "Hydroxychloroquine indirectly inhibits TLR7/TLR9-MyD88 signaling by preventing endosome acidification"
+    },
+    {
+      "source": "baricitinib",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "TREATS",
+      "description": "Baricitinib is investigational for Sjögren's syndrome"
+    },
+    {
+      "source": "tofacitinib",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "TREATS",
+      "description": "Tofacitinib is investigational for Sjögren's syndrome"
+    },
+    {
+      "source": "deucravacitinib",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "TREATS",
+      "description": "Deucravacitinib is investigational for Sjögren's syndrome"
+    },
+    {
+      "source": "efgartigimod",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "TREATS",
+      "description": "Efgartigimod is investigational for Sjögren's syndrome"
+    },
+    {
+      "source": "dazodalibep",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "TREATS",
+      "description": "Dazodalibep is investigational for Sjögren's syndrome"
+    },
+    {
+      "source": "secukinumab",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "TREATS",
+      "description": "Secukinumab is investigational for Sjögren's syndrome"
+    },
+    {
+      "source": "TYK2",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "Tyrosine Kinase 2 (19p13.2): TYK2 mediates type I IFN signaling. TYK2 inhibition being explored for SS."
+    },
+    {
+      "source": "TLR7",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "Toll-Like Receptor 7 (Xp22.2): TLR7 is directly targeted by HCQ in SS. TLR7 sensing of Ro/SSA-RNA in pDCs drives IFN-α."
+    },
+    {
+      "source": "TLR9",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "Toll-Like Receptor 9 (3p21.2): TLR9 senses CpG DNA; HCQ inhibits TLR9 activation reducing autoantibody production."
+    },
+    {
+      "source": "MYD88",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "Myeloid Differentiation Primary Response 88 (3p22.2): Universal TLR adaptor driving IFN-α in salivary gland pDCs."
+    },
+    {
+      "source": "IFNAR1",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFN Alpha/Beta Receptor 1 (21q22.11): Anifrolumab target. Mediates type I IFN signaling in SS salivary glands."
+    },
+    {
+      "source": "IFNA1",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "Interferon Alpha 1 (9p21.3): IFN-α massively produced by pDCs in SS. Correlates with disease activity."
+    },
+    {
+      "source": "IL6",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "Interleukin-6 (7p15.3): Elevated in SS serum/saliva. Promotes Th17/Tfh differentiation."
+    },
+    {
+      "source": "CD40LG",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40 Ligand (Xq26.3): CD40L overexpressed on SS T cells. Drives germinal center B cell responses."
+    },
+    {
+      "source": "FOXP3",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "Forkhead Box P3 (Xp11.23): Treg dysfunction documented in SS. Low-dose IL-2 therapy being explored."
+    },
+    {
+      "source": "CD19",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD19 Molecule (16p11.2): Pan-B cell marker targeted by CAR-T. Being explored for severe SS."
+    },
+    {
+      "source": "AICDA",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "Activation-Induced Cytidine Deaminase (12p13.31): AID highly expressed in SS GC B cells. Links to lymphoma risk."
+    },
+    {
+      "source": "TYK2",
+      "target": "type1-ifn-signature-ss",
+      "type": "PARTICIPATES_IN",
+      "description": "TYK2 mediates type I IFN and IL-12/IL-23 JAK-STAT signaling in SS"
+    },
+    {
+      "source": "TYK2",
+      "target": "jak-stat-ss",
+      "type": "PARTICIPATES_IN",
+      "description": "TYK2 is a JAK family kinase mediating type I IFN and IL-12/IL-23 signaling in SS"
+    },
+    {
+      "source": "TLR7",
+      "target": "tlr-innate-ss",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR7 senses Ro/SSA-RNA immune complexes in endosomes, triggering pDC IFN-α production"
+    },
+    {
+      "source": "TLR7",
+      "target": "type1-ifn-signature-ss",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR7 activation in pDCs drives the type I IFN signature in SS"
+    },
+    {
+      "source": "TLR9",
+      "target": "tlr-innate-ss",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR9 senses CpG DNA immune complexes, driving B cell activation and autoantibody production"
+    },
+    {
+      "source": "MYD88",
+      "target": "tlr-innate-ss",
+      "type": "PARTICIPATES_IN",
+      "description": "MyD88 is the universal TLR7/TLR9 adaptor driving IFN-α in salivary gland pDCs"
+    },
+    {
+      "source": "MYD88",
+      "target": "type1-ifn-signature-ss",
+      "type": "PARTICIPATES_IN",
+      "description": "MyD88 transduces TLR7/TLR9 signals driving the IFN signature"
+    },
+    {
+      "source": "IFNAR1",
+      "target": "type1-ifn-signature-ss",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNAR1 is the receptor for type I IFNs targeted by anifrolumab"
+    },
+    {
+      "source": "IFNA1",
+      "target": "type1-ifn-signature-ss",
+      "type": "PARTICIPATES_IN",
+      "description": "IFN-α is massively produced by pDCs in SS salivary glands"
+    },
+    {
+      "source": "IL6",
+      "target": "nfkb-inflammatory-ss",
+      "type": "PARTICIPATES_IN",
+      "description": "IL-6 is a key NF-κB target gene driving Th17/Tfh differentiation in SS"
+    },
+    {
+      "source": "CD40LG",
+      "target": "tfh-germinal-ss",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40L on Tfh cells engages CD40 on B cells, driving germinal center responses in SS"
+    },
+    {
+      "source": "FOXP3",
+      "target": "tfh-germinal-ss",
+      "type": "PARTICIPATES_IN",
+      "description": "FOXP3+ Treg dysfunction contributes to uncontrolled Tfh-B cell responses in SS"
+    },
+    {
+      "source": "CD19",
+      "target": "bcell-baff-ss",
+      "type": "PARTICIPATES_IN",
+      "description": "CD19 is a pan-B-cell co-receptor that amplifies BCR signaling; target of CAR-T"
+    },
+    {
+      "source": "AICDA",
+      "target": "fibrosis-lymphoma-ss",
+      "type": "PARTICIPATES_IN",
+      "description": "AID is highly expressed in SS germinal center B cells, linking to lymphoma risk"
+    },
+    {
+      "source": "AICDA",
+      "target": "bcell-baff-ss",
+      "type": "PARTICIPATES_IN",
+      "description": "AID mediates somatic hypermutation in autoreactive B cells driven by BAFF"
+    },
+    {
+      "source": "nfkb-inflammatory-ss",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "DRIVES",
+      "description": "Chronic NF-κB activation drives IL-6, TNF-α, and BAFF production in SS salivary glands"
+    },
+    {
+      "source": "fibrosis-lymphoma-ss",
+      "target": "Sjögren's Syndrome (SS)",
+      "type": "DRIVES",
+      "description": "Chronic inflammation leads to gland destruction, fibrosis, and 15-20x lymphoma risk in SS"
+    },
+    {
+      "source": "hydroxychloroquine",
+      "target": "tlr-innate-ss",
+      "type": "MODULATES",
+      "description": "Hydroxychloroquine inhibits endosomal TLR7 and TLR9 activation"
+    },
+    {
+      "source": "belimumab",
+      "target": "bcell-baff-ss",
+      "type": "MODULATES",
+      "description": "Belimumab neutralizes BAFF, reducing B cell survival signals in SS"
+    },
+    {
+      "source": "ianalumab",
+      "target": "bcell-baff-ss",
+      "type": "MODULATES",
+      "description": "Ianalumab blocks BAFF-R and depletes BAFF-R+ B cells via ADCC"
+    },
+    {
+      "source": "iscalimab",
+      "target": "tfh-germinal-ss",
+      "type": "MODULATES",
+      "description": "Iscalimab blocks CD40, inhibiting Tfh-B cell costimulation and GC formation"
+    },
+    {
+      "source": "abatacept",
+      "target": "tfh-germinal-ss",
+      "type": "MODULATES",
+      "description": "Abatacept (CTLA4-Ig) blocks CD28-mediated T cell costimulation, indirectly reducing Tfh help"
+    },
+    {
+      "source": "rituximab_ss",
+      "target": "bcell-baff-ss",
+      "type": "MODULATES",
+      "description": "Rituximab depletes CD20+ B cells, reducing B cell-driven autoantibody production"
+    },
+    {
+      "source": "baricitinib",
+      "target": "jak-stat-ss",
+      "type": "MODULATES",
+      "description": "Baricitinib inhibits JAK1/JAK2, suppressing cytokine-driven JAK-STAT signaling in SS"
+    },
+    {
+      "source": "tofacitinib",
+      "target": "jak-stat-ss",
+      "type": "MODULATES",
+      "description": "Tofacitinib broadly suppresses JAK-STAT signaling downstream of multiple proinflammatory cytokine receptors"
+    },
+    {
+      "source": "deucravacitinib",
+      "target": "type1-ifn-signature-ss",
+      "type": "MODULATES",
+      "description": "Deucravacitinib blocks TYK2-dependent type I IFN signaling, reducing the IFN signature"
+    },
+    {
+      "source": "deucravacitinib",
+      "target": "jak-stat-ss",
+      "type": "MODULATES",
+      "description": "Deucravacitinib selectively inhibits TYK2-mediated JAK-STAT signaling"
+    },
+    {
+      "source": "prednisone_ss",
+      "target": "nfkb-inflammatory-ss",
+      "type": "MODULATES",
+      "description": "Prednisone activates glucocorticoid receptor, broadly suppressing NF-κB-mediated inflammatory gene transcription"
+    },
+    {
+      "source": "mycophenolate",
+      "target": "bcell-baff-ss",
+      "type": "MODULATES",
+      "description": "Mycophenolate inhibits IMPDH, suppressing T and B lymphocyte proliferation"
+    }
+  ]
+}

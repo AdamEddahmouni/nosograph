@@ -1,0 +1,178 @@
+{
+  "pathways": [
+    {
+      "id": "tcell-insulitis",
+      "name": "T Cell Autoimmunity & Insulitis",
+      "description": "The central pathogenic pathway in T1D. Autoreactive CD4+ and CD8+ T cells escape thymic negative selection and infiltrate pancreatic islets (insulitis). CD8+ cytotoxic T cells directly kill β cells via perforin/granzyme B and Fas/FasL, while CD4+ T cells provide help and secrete IFN-γ and TNF-α. PTPN22, UBASH3A, and BACH2 variants lower T cell activation thresholds, while INS VNTR and HLA-DQ variants impair central tolerance, enabling islet-reactive T cell responses.",
+      "key_components": [
+        "HLA-DQA1",
+        "HLA-DQB1",
+        "PTPN22",
+        "INS",
+        "BACH2",
+        "UBASH3A",
+        "CTLA4",
+        "TNF"
+      ],
+      "therapeutic_targets": [
+        "teplizumab (anti-CD3)",
+        "otelixizumab (anti-CD3)",
+        "alefacept (anti-CD2)",
+        "anti-thymocyte globulin (polyclonal T cell depletion)"
+      ],
+      "references": [
+        "PMID:20301527",
+        "PMID:31468801",
+        "PMID:24066056"
+      ]
+    },
+    {
+      "id": "beta-cell-er-stress",
+      "name": "β Cell ER Stress & Apoptosis",
+      "description": "Pancreatic β cells are highly secretory and exceptionally sensitive to ER stress. In T1D, inflammatory cytokines (TNF-α, IL-1β, IFN-γ) from infiltrating immune cells induce ER stress and the unfolded protein response (UPR) in β cells. TXNIP (thioredoxin-interacting protein) is induced by hyperglycemia and ER stress and activates the NLRP3 inflammasome, triggering β cell pyroptosis. PTPN2 deficiency sensitizes β cells to cytokine-induced STAT1-mediated apoptosis. GLIS3 and ERBB3 regulate β cell survival and functional mass.",
+      "key_components": [
+        "PTPN2",
+        "GLIS3",
+        "ERBB3",
+        "TNF",
+        "SH2B3"
+      ],
+      "therapeutic_targets": [
+        "verapamil (TXNIP inhibitor via Ca channel blockade)",
+        "golimumab (anti-TNF)"
+      ],
+      "references": [
+        "PMID:29875334",
+        "PMID:33143441",
+        "PMID:19430480"
+      ]
+    },
+    {
+      "id": "il2-treg",
+      "name": "IL-2 / Treg Dysfunction Pathway",
+      "description": "Regulatory T cells (Tregs) expressing FOXP3 and high CD25 are essential for suppressing islet-reactive T cells and maintaining peripheral tolerance. Tregs require IL-2 for their development, survival, and suppressive function. IL2RA (CD25) polymorphisms reduce high-affinity IL-2 signaling, impairing Treg fitness. Low-dose IL-2 therapy aims to selectively boost Tregs by exploiting their higher IL-2R affinity. CTLA4 expressed by Tregs mediates contact-dependent suppression. SH2B3 (LNK) regulates JAK-STAT signaling downstream of IL-2R.",
+      "key_components": [
+        "IL2RA",
+        "CTLA4",
+        "SH2B3",
+        "IL10",
+        "BACH2"
+      ],
+      "therapeutic_targets": [
+        "low-dose IL-2 (Treg expansion)",
+        "abatacept (CTLA4-Ig costimulation blockade)"
+      ],
+      "references": [
+        "PMID:17676041",
+        "PMID:24152931",
+        "PMID:21834006"
+      ]
+    },
+    {
+      "id": "type1-ifn",
+      "name": "Type I Interferon Pathway (IFIH1/MDA5)",
+      "description": "Type I interferons (IFN-α/β) are implicated in early T1D initiation. IFIH1 (MDA5) is a cytoplasmic sensor of viral dsRNA; gain-of-function IFIH1 variants (rs1990760) enhance type I IFN production through MAVS-IRF3/IRF7 signaling. IFIH1 risk variants may link enteroviral infections (particularly coxsackievirus B) to islet autoimmunity. Elevated IFN-stimulated gene (ISG) signatures are detectable in islets and peripheral blood of T1D patients preceding autoantibody seroconversion. Type I IFN upregulates MHC class I on β cells, making them targets for CD8+ T cell recognition.",
+      "key_components": [
+        "IFIH1",
+        "HLA-DQA1",
+        "HLA-DQB1",
+        "PTPN2",
+        "TYK2"
+      ],
+      "therapeutic_targets": [
+        "Potential: JAK inhibitors (baricitinib/tofacitinib)",
+        "Potential: Anti-IFNAR antibodies (anifrolumab)"
+      ],
+      "references": [
+        "PMID:16699517",
+        "PMID:19430480",
+        "PMID:31468801"
+      ]
+    },
+    {
+      "id": "costim-checkpoint",
+      "name": "Costimulation & Immune Checkpoint Pathway",
+      "description": "T cell activation requires two signals: TCR-MHC/peptide (Signal 1) and costimulatory CD28-B7.1/B7.2 (CD80/CD86) interaction (Signal 2). CTLA4 is an inhibitory checkpoint receptor that competes with CD28 for B7 binding and is essential for Treg suppressive function. PTPN22 and UBASH3A modulate TCR signaling thresholds. CTSH affects MHC class II antigen processing and presentation in the thymus, influencing the autoreactive T cell repertoire. Abatacept (CTLA4-Ig) blocks CD28 costimulation. Checkpoint inhibitor-induced T1D demonstrates the importance of this pathway in maintaining islet tolerance.",
+      "key_components": [
+        "CTLA4",
+        "PTPN22",
+        "UBASH3A",
+        "CTSH",
+        "CLEC16A",
+        "CD28"
+      ],
+      "therapeutic_targets": [
+        "abatacept (CTLA4-Ig)",
+        "Potential: anti-CD40L (investigational)"
+      ],
+      "references": [
+        "PMID:8817351",
+        "PMID:21834006",
+        "PMID:21647738"
+      ]
+    },
+    {
+      "id": "hla-antigen-presentation",
+      "name": "Antigen Presentation (HLA Class II) Pathway",
+      "description": "HLA-DQ (encoded by HLA-DQA1 and HLA-DQB1) is the dominant genetic determinant of T1D risk. HLA-DQ2 (DQA1*0501/DQB1*0201) and DQ8 (DQA1*0301/DQB1*0302) heterodimers present islet autoantigen peptides (insulin, GAD65, IA-2, ZnT8) to autoreactive CD4+ T cells. The Asp57-negative polymorphism in DQB1 creates a positively charged P9 peptide-binding pocket that favors presentation of self-peptides. CTSH protease activity in thymic epithelial cells processes proinsulin for MHC class II loading. CLEC16A regulates endosomal MHC class II trafficking. The quality of thymic antigen presentation determines T cell selection fidelity.",
+      "key_components": [
+        "HLA-DQA1",
+        "HLA-DQB1",
+        "CTSH",
+        "CLEC16A",
+        "INS"
+      ],
+      "therapeutic_targets": [
+        "GAD-alum (antigen-specific immunotherapy targeting GAD65-specific T cells)",
+        "Potential: peptide-based tolerance induction (proinsulin peptide)"
+      ],
+      "references": [
+        "PMID:20301527",
+        "PMID:17463246",
+        "PMID:31803246"
+      ]
+    },
+    {
+      "id": "beta-cell-er-stress-t1d",
+      "name": "β Cell ER Stress & Apoptosis",
+      "description": "β cells sensitive to ER stress from high proinsulin synthesis. Cytokines induce ER stress → CHOP apoptosis.",
+      "key_components": [
+        "INS",
+        "GLIS3",
+        "PTPN2",
+        "ERBB3",
+        "TNF",
+        "IL1B",
+        "IFNG"
+      ],
+      "therapeutic_targets": [
+        "Potential: Anti-TNF, GLP-1 RAs"
+      ],
+      "references": [
+        "PMID:19430480"
+      ]
+    },
+    {
+      "id": "treg-il2-t1d",
+      "name": "Treg / IL-2 Immune Regulation",
+      "description": "Impaired IL-2/Treg axis in T1D. Restoring Tregs is major therapeutic strategy.",
+      "key_components": [
+        "FOXP3",
+        "IL2",
+        "IL2RA",
+        "CTLA4",
+        "IL10",
+        "BACH2",
+        "PTPN22"
+      ],
+      "therapeutic_targets": [
+        "Low-dose IL-2",
+        "Teplizumab",
+        "Abatacept"
+      ],
+      "references": [
+        "PMID:24152931"
+      ]
+    }
+  ]
+}

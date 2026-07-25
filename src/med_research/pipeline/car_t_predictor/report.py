@@ -1,0 +1,237 @@
+"""CAR-T Response Predictor HTML Report Generator."""
+
+import json
+from datetime import datetime
+from pathlib import Path
+
+
+def escape_html(value):
+    """Escape HTML special characters."""
+    if value is None:
+        return ""
+    return str(value).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
+
+
+def generate_html_report(results: list) -> str:
+    """Generate an HTML report for CAR-T response prediction results."""
+    now = datetime.now().strftime("%B %d, %Y at %H:%M")
+    scored = sorted(results, key=lambda x: x["composite_score"], reverse=True)
+    n = len(scored)
+
+    scores = [r["composite_score"] for r in scored]
+    avg_score = sum(scores) / len(scores) if scores else 0
+    tier1 = sum(1 for r in scored if r["composite_score"] >= 8.0)
+    tier2 = sum(1 for r in scored if 7.0 <= r["composite_score"] < 8.0)
+    tier3 = sum(1 for r in scored if 5.0 <= r["composite_score"] < 7.0)
+
+    # Build top-5 JSON for radar chart
+    top5_items = []
+    for r in scored[:5]:
+        name = r['gene_name'].split('(')[0].strip()[:25]
+        top5_items.append({
+            "name": name,
+            "scores": [
+                r.get('b_cell_dependency', 0),
+                r.get('autoantibody_association', 0),
+                r.get('plasma_cell_relevance', 0),
+                r.get('cd19_targeting', 0),
+                r.get('clinical_evidence', 0),
+            ],
+        })
+    top5_json = json.dumps(top5_items)
+
+    # Build highlights
+    highlights_rows = ""
+    for i, r in enumerate(scored[:8], 1):
+        highlights_rows += f"""
+            <div class="highlight-card">
+                <div class="highlight-rank">#{i}</div>
+                <div class="highlight-drug">{escape_html(r['gene_name'])}</div>
+                <div class="highlight-score" style="color: #f87171;">{r['composite_score']:.1f}</div>
+                <div class="highlight-meta">{escape_html(r.get('category', ''))}</div>
+            </div>"""
+
+    # Build ranked table
+    table_rows = ""
+    for i, r in enumerate(scored, 1):
+        tier_icon = r["tier"].split("—")[0].strip()
+        tier_color = {"🔴": "#f87171", "🟠": "#fb923c", "🟡": "#fbbf24", "🟢": "#4ade80"}.get(
+            tier_icon[0] if tier_icon else "", "#9ca3af")
+        table_rows += f"""
+            <tr>
+                <td class="col-rank">{i}</td>
+                <td class="col-drug">{escape_html(r['gene_name'])}</td>
+                <td class="col-score" style="color:{tier_color}">{r['composite_score']:.2f}</td>
+                <td class="col-sign">{r.get('b_cell_dependency', '-')}</td>
+                <td class="col-overlap">{r.get('autoantibody_association', '-')}</td>
+                <td class="col-cell">{r.get('plasma_cell_relevance', '-')}</td>
+                <td class="col-evid">{r.get('cd19_targeting', '-')}</td>
+                <td class="col-dir">{r.get('clinical_evidence', '-')}</td>
+                <td class="col-tier" style="color:{tier_color}">{r['tier']}</td>
+            </tr>"""
+
+    html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAR-T Response Predictor Report</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+    <style>
+        *, *::before, *::after {{ box-sizing: border-box; margin: 0; padding: 0; }}
+        body {{
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #0a0a1a; color: #e2e8f0; line-height: 1.6; min-height: 100vh;
+        }}
+        .container {{ max-width: 1200px; margin: 0 auto; padding: 24px; }}
+        .hero {{
+            text-align: center; padding: 48px 24px 32px;
+            background: linear-gradient(135deg, rgba(220,38,38,0.12), rgba(147,51,234,0.1));
+            border-radius: 16px; margin-bottom: 32px;
+        }}
+        .hero h1 {{ font-size: 2.2rem; font-weight: 800; margin-bottom: 8px; }}
+        .hero .subtitle {{ color: #94a3b8; font-size: 1rem; }}
+        .hero .date {{ color: #64748b; font-size: 0.82rem; margin-top: 8px; }}
+        .stats-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-bottom: 32px; }}
+        .stat-card {{ background: rgba(30,30,50,0.8); border: 1px solid rgba(100,100,150,0.2); border-radius: 12px; padding: 20px; text-align: center; }}
+        .stat-value {{ font-size: 2rem; font-weight: 800; }}
+        .stat-label {{ color: #94a3b8; font-size: 0.8rem; margin-top: 4px; }}
+        .section-title {{ font-size: 1.4rem; font-weight: 700; margin: 32px 0 16px; padding-bottom: 8px; border-bottom: 1px solid rgba(100,100,150,0.2); }}
+        .highlights-grid {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; margin-bottom: 32px; }}
+        .highlight-card {{ background: rgba(30,30,50,0.8); border: 1px solid rgba(100,100,150,0.2); border-radius: 10px; padding: 16px; text-align: center; transition: border-color 0.2s; }}
+        .highlight-card:hover {{ border-color: rgba(220,38,38,0.4); }}
+        .highlight-rank {{ font-size: 0.8rem; color: #64748b; }}
+        .highlight-drug {{ font-size: 0.9rem; font-weight: 600; margin: 4px 0; }}
+        .highlight-score {{ font-size: 1.4rem; font-weight: 700; }}
+        .highlight-meta {{ font-size: 0.75rem; color: #64748b; }}
+        table {{ width: 100%; border-collapse: collapse; font-size: 0.85rem; background: rgba(30,30,50,0.6); border-radius: 12px; overflow: hidden; }}
+        th {{ background: rgba(50,50,70,0.8); padding: 12px 10px; text-align: left; font-weight: 600; color: #94a3b8; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; }}
+        td {{ padding: 10px; border-bottom: 1px solid rgba(100,100,150,0.1); }}
+        tr:hover {{ background: rgba(100,100,150,0.08); }}
+        .col-rank {{ width: 40px; color: #64748b; text-align: center; }}
+        .col-drug {{ font-weight: 600; }}
+        .col-score {{ font-weight: 700; font-size: 1rem; text-align: center; }}
+        .col-sign, .col-overlap, .col-cell, .col-evid, .col-dir {{ text-align: center; }}
+        .methodology {{ background: rgba(30,30,50,0.6); border: 1px solid rgba(100,100,150,0.2); border-radius: 12px; padding: 24px; margin: 32px 0; }}
+        .methodology h3 {{ margin-bottom: 12px; }}
+        .methodology ul {{ padding-left: 20px; color: #94a3b8; }}
+        .methodology li {{ margin-bottom: 6px; }}
+        footer {{ text-align: center; padding: 32px 0; color: #64748b; font-size: 0.8rem; border-top: 1px solid rgba(100,100,150,0.1); margin-top: 32px; }}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>🔬 CAR-T Response Predictor Report</h1>
+            <p class="subtitle">
+                Gene-Level CD19 CAR-T Cell Therapy Suitability Scoring Across 35 Lupus-Associated Genes
+            </p>
+            <p class="date">Generated: {now}</p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value" style="color:#a78bfa;">{n}</div>
+                <div class="stat-label">Genes Scored</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" style="color:#4ade80;">{avg_score:.2f}</div>
+                <div class="stat-label">Average Score</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" style="color:#f87171;">{tier1}</div>
+                <div class="stat-label">Tier 1 (Strong Candidates)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" style="color:#fb923c;">{tier2}</div>
+                <div class="stat-label">Tier 2 (Good Candidates)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" style="color:#fbbf24;">{tier3}</div>
+                <div class="stat-label">Tier 3 (Possible Benefit)</div>
+            </div>
+        </div>
+
+        <h2 class="section-title">🎯 Score Dimension Radar — Top 5 Genes</h2>
+        <div class="radar-container" style="max-width:700px;margin:0 auto 28px;">
+            <canvas id="radarChart" style="max-height:500px;"></canvas>
+        </div>
+
+        <h2 class="section-title">🌟 Top CAR-T Response Candidates</h2>
+        <div class="highlights-grid">
+            {highlights_rows}
+        </div>
+
+        <h2 class="section-title">📋 Complete Gene Rankings</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Gene</th>
+                    <th>Score</th>
+                    <th>B Cell</th>
+                    <th>Auto Ab</th>
+                    <th>Plasma</th>
+                    <th>CD19</th>
+                    <th>Evidence</th>
+                    <th>Tier</th>
+                </tr>
+            </thead>
+            <tbody>
+                {table_rows}
+            </tbody>
+        </table>
+
+        <div class="methodology">
+            <h3>🔬 Methodology</h3>
+            <p style="color:#94a3b8; margin-bottom:12px;">
+                The CAR-T Response Predictor scores each lupus-associated gene for CD19 CAR-T therapy suitability across 5 weighted dimensions:
+            </p>
+            <ul>
+                <li><strong style="color:#f87171;">B Cell Dependency (35%)</strong> — How central is the gene to B cell biology? B cell-intrinsic genes (CD19, CD20, BLK, BTK, BANK1, PRDM1) score highest.</li>
+                <li><strong style="color:#fb923c;">Autoantibody Association (25%)</strong> — How strongly linked to pathogenic autoantibodies (anti-dsDNA, ANA)? BAFF, PRDM1, CD40L top this dimension.</li>
+                <li><strong style="color:#fbbf24;">Plasma Cell Relevance (20%)</strong> — Is the gene critical for long-lived plasma cell survival? PRDM1 (BLIMP-1), IKZF1/3, UBE2L3 are key.</li>
+                <li><strong style="color:#a78bfa;">CD19 Targeting (15%)</strong> — Does CD19 CAR-T directly impact this pathway? CD19 itself, CD20, and BCR signaling genes score highest.</li>
+                <li><strong style="color:#4ade80;">Clinical Evidence (5%)</strong> — Existing published CAR-T or deep B cell depletion data involving this pathway.</li>
+            </ul>
+            <p style="color:#94a3b8; margin-top:12px; font-size:0.82rem;">
+                <strong>Clinical Context:</strong> CD19 CAR-T cell therapy (Erlangen protocol) achieved drug-free remission in severe refractory SLE by deep-depleting the entire CD19+ B lineage. Genes scoring ≥8.0 are in B-cell-intrinsic pathways likely to respond best. Genes <5.0 are in non-B-cell pathways where CAR-T alone may be insufficient.
+            </p>
+        </div>
+
+        <footer>
+            <p>Lupus Research Platform · CAR-T Response Predictor Module</p>
+            <p>⚠️ Computational predictions requiring clinical validation. Not medical advice.</p>
+        </footer>
+    </div>
+    <script>
+(function() {{
+    const top5 = {top5_json};
+    const labels = ['B Cell Dependency', 'Autoantibody Assoc', 'Plasma Cell Relevance', 'CD19 Targeting', 'Clinical Evidence'];
+    const colors = ['#f87171', '#fb923c', '#fbbf24', '#a78bfa', '#4ade80'];
+    const datasets = top5.map((c, i) => ({{
+        label: c.name,
+        data: c.scores,
+        borderColor: colors[i],
+        backgroundColor: colors[i] + '18',
+        borderWidth: 2,
+        pointBackgroundColor: colors[i],
+        pointRadius: 4,
+    }}));
+    new Chart(document.getElementById('radarChart'), {{
+        type: 'radar',
+        data: {{ labels, datasets }},
+        options: {{
+            responsive: true, maintainAspectRatio: true,
+            scales: {{ r: {{ beginAtZero: true, max: 10, ticks: {{ backdropColor: 'transparent', color: '#787890', font: {{ size: 10 }} }}, grid: {{ color: 'rgba(100,100,150,0.2)' }}, pointLabels: {{ color: '#c0c0d0', font: {{ size: 10 }} }}, angleLines: {{ color: 'rgba(100,100,150,0.2)' }} }} }},
+            plugins: {{ legend: {{ position: 'bottom', labels: {{ color: '#c0c0d0', font: {{ size: 11 }}, padding: 14, usePointStyle: true }} }} }}
+        }}
+    }});
+}})();
+</script>
+</body>
+</html>"""
+
+    report_path = Path(__file__).parent / "report.html"
+    report_path.write_text(html, encoding="utf-8")
+    return str(report_path)

@@ -1,0 +1,86 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "med-research"
+version = "2.0.0"
+description = "Multi-disease computational drug discovery and research platform"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "Medical Research Platform"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = [
+    "biopython>=1.83",
+    "celery>=5.3",
+    "fastapi>=0.109",
+    "gseapy>=1.1",
+    "matplotlib>=3.8",
+    "networkx>=3.2",
+    "numpy>=1.26",
+    "pydantic>=2.5",
+    "redis>=5.0",
+    "requests>=2.31",
+    "scikit-learn>=1.4",
+    "uvicorn>=0.27",
+    "websockets>=12.0",
+]
+
+[project.optional-dependencies]
+ml = ["xgboost>=2.0", "shap>=0.44"]
+cheminformatics = ["rdkit>=2023.09", "meeko>=0.5", "gemmi>=0.6"]
+nlp = ["spacy>=3.7", "scispacy>=0.5"]
+semantic = ["chromadb>=0.4", "sentence-transformers>=2.2"]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=4.1",
+    "ruff>=0.3",
+]
+all = [
+    "med-research[ml,cheminformatics,nlp,semantic,dev]",
+]
+
+[project.scripts]
+med-research = "med_research.cli:main"
+
+[project.urls]
+Repository = "https://github.com/medical-research"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+med_research = [
+    "diseases/*/data/*.json",
+    "pipeline/*/data/*.json",
+    "pipeline/knowledge_graph/data/**/*.json",
+    "web/static/**/*",
+]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "SIM", "W"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["med_research"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "unit: marks tests as unit tests",
+]

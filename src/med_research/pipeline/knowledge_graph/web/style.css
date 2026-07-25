@@ -1,0 +1,461 @@
+/* ============================================
+   Lupus Knowledge Graph — Styles
+   ============================================ */
+
+:root {
+    --bg: #0a0a0f;
+    --surface: #13131a;
+    --surface2: #1a1a24;
+    --border: #252535;
+    --text: #e0e0e8;
+    --text-muted: #787890;
+    --gene: #4ade80;
+    --gene-glow: rgba(74, 222, 128, 0.3);
+    --drug: #60a5fa;
+    --drug-glow: rgba(96, 165, 250, 0.3);
+    --pathway: #f59e0b;
+    --pathway-glow: rgba(245, 158, 11, 0.3);
+    --disease: #f43f5e;
+    --disease-glow: rgba(244, 63, 94, 0.4);
+    --edge-targets: #60a5fa;
+    --edge-treats: #4ade80;
+    --edge-participates: #a78bfa;
+    --edge-drives: #f43f5e;
+    --edge-modulates: #f59e0b;
+    --edge-associated: #94a3b8;
+    --accent: #818cf8;
+    --radius: 10px;
+    --radius-sm: 6px;
+    --transition: 0.2s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    overflow: hidden;
+    height: 100vh;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* ============================================
+   Header
+   ============================================ */
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    z-index: 10;
+    flex-shrink: 0;
+}
+
+.header-left {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+}
+
+#header h1 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #818cf8, #c084fc, #f472b6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    letter-spacing: 0.03em;
+}
+
+/* Legend */
+.legend-compact {
+    display: flex;
+    gap: 18px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 0 6px currentColor;
+}
+
+.dot.gene {
+    background: var(--gene);
+    box-shadow: 0 0 8px var(--gene-glow);
+}
+
+.dot.drug {
+    background: var(--drug);
+    box-shadow: 0 0 8px var(--drug-glow);
+}
+
+.dot.pathway {
+    background: var(--pathway);
+    box-shadow: 0 0 8px var(--pathway-glow);
+}
+
+.dot.disease {
+    background: var(--disease);
+    box-shadow: 0 0 8px var(--disease-glow);
+}
+
+/* ============================================
+   Main Layout
+   ============================================ */
+
+#main {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* ============================================
+   Sidebar
+   ============================================ */
+
+#sidebar {
+    width: 300px;
+    min-width: 300px;
+    background: var(--surface);
+    border-right: 1px solid var(--border);
+    overflow-y: auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    z-index: 5;
+}
+
+.sidebar-section {
+    background: var(--surface2);
+    border-radius: var(--radius);
+    padding: 14px;
+    border: 1px solid var(--border);
+}
+
+.sidebar-section h3 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+}
+
+/* Search */
+#search-input {
+    width: 100%;
+    padding: 10px 14px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    color: var(--text);
+    font-size: 0.88rem;
+    outline: none;
+    transition: border var(--transition);
+}
+
+#search-input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(129, 140, 248, 0.15);
+}
+
+#search-results {
+    margin-top: 8px;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.search-result-item {
+    padding: 8px 10px;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-size: 0.82rem;
+    transition: background var(--transition);
+    border: 1px solid transparent;
+}
+
+.search-result-item:hover {
+    background: rgba(129, 140, 248, 0.1);
+    border-color: rgba(129, 140, 248, 0.2);
+}
+
+/* Filter chips */
+.filter-chip {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.78rem;
+    font-weight: 500;
+    border: 1px solid var(--border);
+    transition: all var(--transition);
+    margin-bottom: 4px;
+}
+
+.filter-chip.active {
+    border-color: var(--accent);
+    background: rgba(129, 140, 248, 0.08);
+}
+
+.filter-chip input {
+    display: none;
+}
+
+/* Detail panel */
+#detail-panel {
+    font-size: 0.82rem;
+    line-height: 1.5;
+}
+
+#detail-panel .muted {
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+.detail-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.detail-type {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+}
+
+.detail-type.gene { background: rgba(74, 222, 128, 0.15); color: var(--gene); }
+.detail-type.drug { background: rgba(96, 165, 250, 0.15); color: var(--drug); }
+.detail-type.pathway { background: rgba(245, 158, 11, 0.15); color: var(--pathway); }
+.detail-type.disease { background: rgba(244, 63, 94, 0.15); color: var(--disease); }
+
+.detail-desc {
+    color: var(--text-muted);
+    margin-bottom: 8px;
+    font-size: 0.8rem;
+}
+
+.detail-meta {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.detail-meta span {
+    display: flex;
+    gap: 4px;
+}
+
+.detail-meta .meta-key {
+    color: var(--text-muted);
+    opacity: 0.7;
+}
+
+.detail-meta .meta-val {
+    color: var(--text);
+}
+
+/* Stats */
+#stats-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.stat-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 0;
+    border-bottom: 1px solid rgba(37, 37, 53, 0.5);
+}
+
+.stat-row:last-child { border-bottom: none; }
+
+.stat-label {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+}
+
+.stat-value {
+    font-size: 0.88rem;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+}
+
+/* ============================================
+   Canvas
+   ============================================ */
+
+#canvas-container {
+    flex: 1;
+    position: relative;
+    background: var(--bg);
+    background-image:
+        radial-gradient(circle at 30% 40%, rgba(129, 140, 248, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 70% 60%, rgba(244, 63, 94, 0.03) 0%, transparent 50%);
+}
+
+#cy {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Canvas controls */
+#canvas-controls {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    z-index: 10;
+}
+
+#canvas-controls button {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    background: var(--surface2);
+    color: var(--text);
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition);
+    backdrop-filter: blur(8px);
+}
+
+#canvas-controls button:hover {
+    background: var(--surface);
+    border-color: var(--accent);
+    transform: scale(1.05);
+}
+
+/* Tooltip */
+#tooltip {
+    position: absolute;
+    pointer-events: none;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 10px 14px;
+    font-size: 0.8rem;
+    max-width: 320px;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+    z-index: 20;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    line-height: 1.4;
+}
+
+#tooltip.visible {
+    opacity: 1;
+}
+
+#tooltip .tt-title {
+    font-weight: 600;
+    font-size: 0.88rem;
+    margin-bottom: 4px;
+}
+
+#tooltip .tt-type {
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    opacity: 0.7;
+}
+
+/* Cytoscape customization */
+.cy-panzoom { display: none !important; }
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3a3a50;
+}
+
+/* Loading state */
+.loading-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid var(--border);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin: 0 auto 12px;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}

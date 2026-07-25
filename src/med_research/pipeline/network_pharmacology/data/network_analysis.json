@@ -1,0 +1,1014 @@
+{
+  "graph_metrics": {
+    "n_nodes": 75,
+    "n_edges": 122,
+    "density": 0.044,
+    "n_components": 2,
+    "diameter": 6,
+    "avg_shortest_path": 2.7,
+    "avg_clustering": 0.4903,
+    "assortativity": -0.2899
+  },
+  "centrality": {
+    "degree": [
+      {
+        "node_id": "Lupus (SLE)",
+        "score": 0.5811,
+        "label": "Systemic Lupus Erythematosus",
+        "type": "disease"
+      },
+      {
+        "node_id": "bcell-signaling",
+        "score": 0.2027,
+        "label": "B Cell Receptor Signaling & Survival",
+        "type": "pathway"
+      },
+      {
+        "node_id": "tlr-sensing",
+        "score": 0.1351,
+        "label": "Endosomal TLR Sensing of Nucleic Acids",
+        "type": "pathway"
+      },
+      {
+        "node_id": "type1-ifn",
+        "score": 0.1216,
+        "label": "Type I Interferon Pathway",
+        "type": "pathway"
+      },
+      {
+        "node_id": "complement",
+        "score": 0.1081,
+        "label": "Complement System & Immune Complex Clearance",
+        "type": "pathway"
+      },
+      {
+        "node_id": "jak-stat",
+        "score": 0.0946,
+        "label": "JAK-STAT Signaling",
+        "type": "pathway"
+      },
+      {
+        "node_id": "complement-cascade",
+        "score": 0.0811,
+        "label": "Complement Cascade (Classical & Terminal)",
+        "type": "pathway"
+      },
+      {
+        "node_id": "nfkb",
+        "score": 0.0676,
+        "label": "NF-\u03baB Inflammatory Pathway",
+        "type": "pathway"
+      },
+      {
+        "node_id": "tcell-costim",
+        "score": 0.0676,
+        "label": "T Cell Costimulation & Follicular Help",
+        "type": "pathway"
+      },
+      {
+        "node_id": "hydroxychloroquine",
+        "score": 0.0541,
+        "label": "Hydroxychloroquine (Plaquenil)",
+        "type": "drug"
+      },
+      {
+        "node_id": "deucravacitinib",
+        "score": 0.0541,
+        "label": "Deucravacitinib (Sotyktu)",
+        "type": "drug"
+      },
+      {
+        "node_id": "litifilimab",
+        "score": 0.0541,
+        "label": "Litifilimab (Anti-BDCA2 / BIIB059)",
+        "type": "drug"
+      },
+      {
+        "node_id": "iberdomide",
+        "score": 0.0541,
+        "label": "Iberdomide (CC-220 / Cereblon Modulator)",
+        "type": "drug"
+      },
+      {
+        "node_id": "IRF5",
+        "score": 0.0405,
+        "label": "Interferon Regulatory Factor 5",
+        "type": "gene"
+      },
+      {
+        "node_id": "TLR7",
+        "score": 0.0405,
+        "label": "Toll-Like Receptor 7",
+        "type": "gene"
+      },
+      {
+        "node_id": "TLR9",
+        "score": 0.0405,
+        "label": "Toll-Like Receptor 9",
+        "type": "gene"
+      },
+      {
+        "node_id": "JAK1",
+        "score": 0.0405,
+        "label": "Janus Kinase 1",
+        "type": "gene"
+      },
+      {
+        "node_id": "C1QA",
+        "score": 0.0405,
+        "label": "Complement C1q A Chain",
+        "type": "gene"
+      },
+      {
+        "node_id": "IRF7",
+        "score": 0.0405,
+        "label": "Interferon Regulatory Factor 7",
+        "type": "gene"
+      },
+      {
+        "node_id": "IKZF1",
+        "score": 0.0405,
+        "label": "IKAROS Family Zinc Finger 1 (IKAROS)",
+        "type": "gene"
+      }
+    ],
+    "betweenness": [
+      {
+        "node_id": "Lupus (SLE)",
+        "score": 0.8476,
+        "label": "Systemic Lupus Erythematosus",
+        "type": "disease"
+      },
+      {
+        "node_id": "bcell-signaling",
+        "score": 0.146,
+        "label": "B Cell Receptor Signaling & Survival",
+        "type": "pathway"
+      },
+      {
+        "node_id": "complement",
+        "score": 0.1021,
+        "label": "Complement System & Immune Complex Clearance",
+        "type": "pathway"
+      },
+      {
+        "node_id": "jak-stat",
+        "score": 0.0886,
+        "label": "JAK-STAT Signaling",
+        "type": "pathway"
+      },
+      {
+        "node_id": "tcell-costim",
+        "score": 0.0777,
+        "label": "T Cell Costimulation & Follicular Help",
+        "type": "pathway"
+      },
+      {
+        "node_id": "rituximab",
+        "score": 0.0518,
+        "label": "Rituximab (Rituxan)",
+        "type": "drug"
+      },
+      {
+        "node_id": "type1-ifn",
+        "score": 0.0357,
+        "label": "Type I Interferon Pathway",
+        "type": "pathway"
+      },
+      {
+        "node_id": "tlr-sensing",
+        "score": 0.0331,
+        "label": "Endosomal TLR Sensing of Nucleic Acids",
+        "type": "pathway"
+      },
+      {
+        "node_id": "nfkb",
+        "score": 0.0268,
+        "label": "NF-\u03baB Inflammatory Pathway",
+        "type": "pathway"
+      },
+      {
+        "node_id": "Calcineurin",
+        "score": 0.0265,
+        "label": "Calcineurin (PPP3CA / Protein Phosphatase 3)",
+        "type": "gene"
+      },
+      {
+        "node_id": "mycophenolate",
+        "score": 0.0263,
+        "label": "Mycophenolate Mofetil (CellCept)",
+        "type": "drug"
+      },
+      {
+        "node_id": "CD20",
+        "score": 0.0263,
+        "label": "CD20 (MS4A1 / B-lymphocyte antigen CD20)",
+        "type": "gene"
+      },
+      {
+        "node_id": "complement-cascade",
+        "score": 0.0257,
+        "label": "Complement Cascade (Classical & Terminal)",
+        "type": "pathway"
+      },
+      {
+        "node_id": "voclosporin",
+        "score": 0.0255,
+        "label": "Voclosporin (Lupkynis)",
+        "type": "drug"
+      },
+      {
+        "node_id": "tacrolimus",
+        "score": 0.0255,
+        "label": "Tacrolimus (Prograf)",
+        "type": "drug"
+      },
+      {
+        "node_id": "deucravacitinib",
+        "score": 0.0152,
+        "label": "Deucravacitinib (Sotyktu)",
+        "type": "drug"
+      },
+      {
+        "node_id": "hydroxychloroquine",
+        "score": 0.0142,
+        "label": "Hydroxychloroquine (Plaquenil)",
+        "type": "drug"
+      },
+      {
+        "node_id": "litifilimab",
+        "score": 0.0123,
+        "label": "Litifilimab (Anti-BDCA2 / BIIB059)",
+        "type": "drug"
+      },
+      {
+        "node_id": "anifrolumab",
+        "score": 0.011,
+        "label": "Anifrolumab (Saphnelo)",
+        "type": "drug"
+      },
+      {
+        "node_id": "belimumab",
+        "score": 0.0107,
+        "label": "Belimumab (Benlysta)",
+        "type": "drug"
+      }
+    ],
+    "eigenvector": [
+      {
+        "node_id": "Lupus (SLE)",
+        "score": 0.6246,
+        "label": "Systemic Lupus Erythematosus",
+        "type": "disease"
+      },
+      {
+        "node_id": "bcell-signaling",
+        "score": 0.224,
+        "label": "B Cell Receptor Signaling & Survival",
+        "type": "pathway"
+      },
+      {
+        "node_id": "tlr-sensing",
+        "score": 0.1974,
+        "label": "Endosomal TLR Sensing of Nucleic Acids",
+        "type": "pathway"
+      },
+      {
+        "node_id": "type1-ifn",
+        "score": 0.1835,
+        "label": "Type I Interferon Pathway",
+        "type": "pathway"
+      },
+      {
+        "node_id": "iberdomide",
+        "score": 0.1427,
+        "label": "Iberdomide (CC-220 / Cereblon Modulator)",
+        "type": "drug"
+      },
+      {
+        "node_id": "litifilimab",
+        "score": 0.1354,
+        "label": "Litifilimab (Anti-BDCA2 / BIIB059)",
+        "type": "drug"
+      },
+      {
+        "node_id": "IRF5",
+        "score": 0.1299,
+        "label": "Interferon Regulatory Factor 5",
+        "type": "gene"
+      },
+      {
+        "node_id": "IRF7",
+        "score": 0.1299,
+        "label": "Interferon Regulatory Factor 7",
+        "type": "gene"
+      },
+      {
+        "node_id": "complement-cascade",
+        "score": 0.1282,
+        "label": "Complement Cascade (Classical & Terminal)",
+        "type": "pathway"
+      },
+      {
+        "node_id": "IKZF1",
+        "score": 0.128,
+        "label": "IKAROS Family Zinc Finger 1 (IKAROS)",
+        "type": "gene"
+      },
+      {
+        "node_id": "IKZF3",
+        "score": 0.128,
+        "label": "IKAROS Family Zinc Finger 3 (AIOLOS)",
+        "type": "gene"
+      },
+      {
+        "node_id": "deucravacitinib",
+        "score": 0.124,
+        "label": "Deucravacitinib (Sotyktu)",
+        "type": "drug"
+      },
+      {
+        "node_id": "hydroxychloroquine",
+        "score": 0.123,
+        "label": "Hydroxychloroquine (Plaquenil)",
+        "type": "drug"
+      },
+      {
+        "node_id": "jak-stat",
+        "score": 0.1205,
+        "label": "JAK-STAT Signaling",
+        "type": "pathway"
+      },
+      {
+        "node_id": "nfkb",
+        "score": 0.1199,
+        "label": "NF-\u03baB Inflammatory Pathway",
+        "type": "pathway"
+      },
+      {
+        "node_id": "complement",
+        "score": 0.1198,
+        "label": "Complement System & Immune Complex Clearance",
+        "type": "pathway"
+      },
+      {
+        "node_id": "belimumab",
+        "score": 0.1153,
+        "label": "Belimumab (Benlysta)",
+        "type": "drug"
+      },
+      {
+        "node_id": "anti_cd19_cart",
+        "score": 0.1153,
+        "label": "Anti-CD19 CAR-T Cell Therapy",
+        "type": "drug"
+      },
+      {
+        "node_id": "teclistamab",
+        "score": 0.1153,
+        "label": "Teclistamab (Tecvayli / BCMAxCD3 Bispecific)",
+        "type": "drug"
+      },
+      {
+        "node_id": "PRDM1",
+        "score": 0.1096,
+        "label": "PR/SET Domain 1 (BLIMP-1)",
+        "type": "gene"
+      }
+    ],
+    "closeness": [
+      {
+        "node_id": "Lupus (SLE)",
+        "score": 0.6801,
+        "label": "Systemic Lupus Erythematosus",
+        "type": "disease"
+      },
+      {
+        "node_id": "bcell-signaling",
+        "score": 0.4579,
+        "label": "B Cell Receptor Signaling & Survival",
+        "type": "pathway"
+      },
+      {
+        "node_id": "type1-ifn",
+        "score": 0.4351,
+        "label": "Type I Interferon Pathway",
+        "type": "pathway"
+      },
+      {
+        "node_id": "tlr-sensing",
+        "score": 0.4324,
+        "label": "Endosomal TLR Sensing of Nucleic Acids",
+        "type": "pathway"
+      },
+      {
+        "node_id": "complement",
+        "score": 0.4324,
+        "label": "Complement System & Immune Complex Clearance",
+        "type": "pathway"
+      },
+      {
+        "node_id": "jak-stat",
+        "score": 0.4272,
+        "label": "JAK-STAT Signaling",
+        "type": "pathway"
+      },
+      {
+        "node_id": "deucravacitinib",
+        "score": 0.4272,
+        "label": "Deucravacitinib (Sotyktu)",
+        "type": "drug"
+      },
+      {
+        "node_id": "iberdomide",
+        "score": 0.4272,
+        "label": "Iberdomide (CC-220 / Cereblon Modulator)",
+        "type": "drug"
+      },
+      {
+        "node_id": "IKZF1",
+        "score": 0.4246,
+        "label": "IKAROS Family Zinc Finger 1 (IKAROS)",
+        "type": "gene"
+      },
+      {
+        "node_id": "IKZF3",
+        "score": 0.4246,
+        "label": "IKAROS Family Zinc Finger 3 (AIOLOS)",
+        "type": "gene"
+      },
+      {
+        "node_id": "belimumab",
+        "score": 0.4246,
+        "label": "Belimumab (Benlysta)",
+        "type": "drug"
+      },
+      {
+        "node_id": "teclistamab",
+        "score": 0.4246,
+        "label": "Teclistamab (Tecvayli / BCMAxCD3 Bispecific)",
+        "type": "drug"
+      },
+      {
+        "node_id": "anti_cd19_cart",
+        "score": 0.4246,
+        "label": "Anti-CD19 CAR-T Cell Therapy",
+        "type": "drug"
+      },
+      {
+        "node_id": "PRDM1",
+        "score": 0.422,
+        "label": "PR/SET Domain 1 (BLIMP-1)",
+        "type": "gene"
+      },
+      {
+        "node_id": "tcell-costim",
+        "score": 0.4195,
+        "label": "T Cell Costimulation & Follicular Help",
+        "type": "pathway"
+      },
+      {
+        "node_id": "complement-cascade",
+        "score": 0.4195,
+        "label": "Complement Cascade (Classical & Terminal)",
+        "type": "pathway"
+      },
+      {
+        "node_id": "litifilimab",
+        "score": 0.4195,
+        "label": "Litifilimab (Anti-BDCA2 / BIIB059)",
+        "type": "drug"
+      },
+      {
+        "node_id": "IRF5",
+        "score": 0.417,
+        "label": "Interferon Regulatory Factor 5",
+        "type": "gene"
+      },
+      {
+        "node_id": "ITGAM",
+        "score": 0.417,
+        "label": "Integrin Subunit Alpha M (CD11b)",
+        "type": "gene"
+      },
+      {
+        "node_id": "IRF7",
+        "score": 0.417,
+        "label": "Interferon Regulatory Factor 7",
+        "type": "gene"
+      }
+    ],
+    "pagerank": [
+      {
+        "node_id": "Lupus (SLE)",
+        "score": 0.1527,
+        "label": "Systemic Lupus Erythematosus",
+        "type": "disease"
+      },
+      {
+        "node_id": "bcell-signaling",
+        "score": 0.0548,
+        "label": "B Cell Receptor Signaling & Survival",
+        "type": "pathway"
+      },
+      {
+        "node_id": "complement",
+        "score": 0.0344,
+        "label": "Complement System & Immune Complex Clearance",
+        "type": "pathway"
+      },
+      {
+        "node_id": "tlr-sensing",
+        "score": 0.0328,
+        "label": "Endosomal TLR Sensing of Nucleic Acids",
+        "type": "pathway"
+      },
+      {
+        "node_id": "type1-ifn",
+        "score": 0.0295,
+        "label": "Type I Interferon Pathway",
+        "type": "pathway"
+      },
+      {
+        "node_id": "jak-stat",
+        "score": 0.0261,
+        "label": "JAK-STAT Signaling",
+        "type": "pathway"
+      },
+      {
+        "node_id": "tcell-costim",
+        "score": 0.0248,
+        "label": "T Cell Costimulation & Follicular Help",
+        "type": "pathway"
+      },
+      {
+        "node_id": "complement-cascade",
+        "score": 0.023,
+        "label": "Complement Cascade (Classical & Terminal)",
+        "type": "pathway"
+      },
+      {
+        "node_id": "nfkb",
+        "score": 0.0205,
+        "label": "NF-\u03baB Inflammatory Pathway",
+        "type": "pathway"
+      },
+      {
+        "node_id": "Calcineurin",
+        "score": 0.0154,
+        "label": "Calcineurin (PPP3CA / Protein Phosphatase 3)",
+        "type": "gene"
+      },
+      {
+        "node_id": "deucravacitinib",
+        "score": 0.0145,
+        "label": "Deucravacitinib (Sotyktu)",
+        "type": "drug"
+      },
+      {
+        "node_id": "iberdomide",
+        "score": 0.0145,
+        "label": "Iberdomide (CC-220 / Cereblon Modulator)",
+        "type": "drug"
+      },
+      {
+        "node_id": "litifilimab",
+        "score": 0.0139,
+        "label": "Litifilimab (Anti-BDCA2 / BIIB059)",
+        "type": "drug"
+      },
+      {
+        "node_id": "hydroxychloroquine",
+        "score": 0.0138,
+        "label": "Hydroxychloroquine (Plaquenil)",
+        "type": "drug"
+      },
+      {
+        "node_id": "prednisone",
+        "score": 0.0133,
+        "label": "Prednisone (Corticosteroids)",
+        "type": "drug"
+      },
+      {
+        "node_id": "Glucocorticoid Receptor",
+        "score": 0.0133,
+        "label": "Glucocorticoid Receptor (NR3C1)",
+        "type": "gene"
+      },
+      {
+        "node_id": "CD20",
+        "score": 0.0127,
+        "label": "CD20 (MS4A1 / B-lymphocyte antigen CD20)",
+        "type": "gene"
+      },
+      {
+        "node_id": "JAK1",
+        "score": 0.0126,
+        "label": "Janus Kinase 1",
+        "type": "gene"
+      },
+      {
+        "node_id": "C1QA",
+        "score": 0.0118,
+        "label": "Complement C1q A Chain",
+        "type": "gene"
+      },
+      {
+        "node_id": "belimumab",
+        "score": 0.0117,
+        "label": "Belimumab (Benlysta)",
+        "type": "drug"
+      }
+    ]
+  },
+  "bridge_nodes": [
+    {
+      "node_id": "Lupus (SLE)",
+      "betweenness": 0.8476,
+      "type": "disease",
+      "label": "Systemic Lupus Erythematosus"
+    },
+    {
+      "node_id": "bcell-signaling",
+      "betweenness": 0.146,
+      "type": "pathway",
+      "label": "B Cell Receptor Signaling & Survival"
+    },
+    {
+      "node_id": "complement",
+      "betweenness": 0.1021,
+      "type": "pathway",
+      "label": "Complement System & Immune Complex Clearance"
+    },
+    {
+      "node_id": "jak-stat",
+      "betweenness": 0.0886,
+      "type": "pathway",
+      "label": "JAK-STAT Signaling"
+    },
+    {
+      "node_id": "tcell-costim",
+      "betweenness": 0.0777,
+      "type": "pathway",
+      "label": "T Cell Costimulation & Follicular Help"
+    },
+    {
+      "node_id": "rituximab",
+      "betweenness": 0.0518,
+      "type": "drug",
+      "label": "Rituximab (Rituxan)"
+    },
+    {
+      "node_id": "type1-ifn",
+      "betweenness": 0.0357,
+      "type": "pathway",
+      "label": "Type I Interferon Pathway"
+    },
+    {
+      "node_id": "tlr-sensing",
+      "betweenness": 0.0331,
+      "type": "pathway",
+      "label": "Endosomal TLR Sensing of Nucleic Acids"
+    },
+    {
+      "node_id": "nfkb",
+      "betweenness": 0.0268,
+      "type": "pathway",
+      "label": "NF-\u03baB Inflammatory Pathway"
+    },
+    {
+      "node_id": "Calcineurin",
+      "betweenness": 0.0265,
+      "type": "gene",
+      "label": "Calcineurin (PPP3CA / Protein Phosphatase 3)"
+    },
+    {
+      "node_id": "mycophenolate",
+      "betweenness": 0.0263,
+      "type": "drug",
+      "label": "Mycophenolate Mofetil (CellCept)"
+    },
+    {
+      "node_id": "CD20",
+      "betweenness": 0.0263,
+      "type": "gene",
+      "label": "CD20 (MS4A1 / B-lymphocyte antigen CD20)"
+    },
+    {
+      "node_id": "complement-cascade",
+      "betweenness": 0.0257,
+      "type": "pathway",
+      "label": "Complement Cascade (Classical & Terminal)"
+    },
+    {
+      "node_id": "voclosporin",
+      "betweenness": 0.0255,
+      "type": "drug",
+      "label": "Voclosporin (Lupkynis)"
+    },
+    {
+      "node_id": "tacrolimus",
+      "betweenness": 0.0255,
+      "type": "drug",
+      "label": "Tacrolimus (Prograf)"
+    },
+    {
+      "node_id": "deucravacitinib",
+      "betweenness": 0.0152,
+      "type": "drug",
+      "label": "Deucravacitinib (Sotyktu)"
+    },
+    {
+      "node_id": "hydroxychloroquine",
+      "betweenness": 0.0142,
+      "type": "drug",
+      "label": "Hydroxychloroquine (Plaquenil)"
+    },
+    {
+      "node_id": "litifilimab",
+      "betweenness": 0.0123,
+      "type": "drug",
+      "label": "Litifilimab (Anti-BDCA2 / BIIB059)"
+    },
+    {
+      "node_id": "anifrolumab",
+      "betweenness": 0.011,
+      "type": "drug",
+      "label": "Anifrolumab (Saphnelo)"
+    },
+    {
+      "node_id": "belimumab",
+      "betweenness": 0.0107,
+      "type": "drug",
+      "label": "Belimumab (Benlysta)"
+    }
+  ],
+  "communities": {
+    "communities": [
+      {
+        "id": 1,
+        "size": 19,
+        "dominant_type": "gene",
+        "node_ids": [
+          "ATG5",
+          "C1QA",
+          "Calcineurin",
+          "HLA-DRB1",
+          "IMPDH",
+          "Lupus (SLE)",
+          "TNFAIP3",
+          "TNIP1",
+          "UBE2L3",
+          "autophagy",
+          "azathioprine",
+          "cyclophosphamide",
+          "cyclosporine",
+          "dimethyl_fumarate",
+          "mycophenolate",
+          "netosis",
+          "nfkb",
+          "tacrolimus",
+          "voclosporin"
+        ],
+        "node_labels": [
+          "Autophagy Related 5",
+          "Complement C1q A Chain",
+          "Calcineurin (PPP3CA / Protein Phosphatase 3)",
+          "HLA Class II DR Beta 1",
+          "IMPDH (Inosine Monophosphate Dehydrogenase)",
+          "Systemic Lupus Erythematosus",
+          "TNF Alpha Induced Protein 3 (A20)",
+          "TNFAIP3-Interacting Protein 1 (ABIN-1)",
+          "Ubiquitin-Conjugating Enzyme E2 L3 (UBCH7)",
+          "Autophagy & Cellular Homeostasis",
+          "Azathioprine (Imuran)",
+          "Cyclophosphamide (Cytoxan)",
+          "Cyclosporine (Neoral / Sandimmune)",
+          "Dimethyl Fumarate (Tecfidera)",
+          "Mycophenolate Mofetil (CellCept)",
+          "NETosis & Neutrophil Extracellular Traps",
+          "NF-\u03baB Inflammatory Pathway",
+          "Tacrolimus (Prograf)",
+          "Voclosporin (Lupkynis)"
+        ],
+        "type_distribution": {
+          "gene": 8,
+          "disease": 1,
+          "pathway": 3,
+          "drug": 7
+        }
+      },
+      {
+        "id": 2,
+        "size": 15,
+        "dominant_type": "gene",
+        "node_ids": [
+          "BAFF",
+          "BANK1",
+          "BCMA",
+          "BLK",
+          "BTK",
+          "CD19",
+          "IKZF1",
+          "IKZF3",
+          "PRDM1",
+          "acalabrutinib",
+          "anti_cd19_cart",
+          "bcell-signaling",
+          "belimumab",
+          "iberdomide",
+          "teclistamab"
+        ],
+        "node_labels": [
+          "B Cell Activating Factor (TNFSF13B / BLyS)",
+          "B Cell Scaffold Protein with Ankyrin Repeats 1",
+          "B Cell Maturation Antigen (TNFRSF17)",
+          "B Lymphoid Tyrosine Kinase",
+          "Bruton Tyrosine Kinase",
+          "CD19 (B-lymphocyte surface antigen)",
+          "IKAROS Family Zinc Finger 1 (IKAROS)",
+          "IKAROS Family Zinc Finger 3 (AIOLOS)",
+          "PR/SET Domain 1 (BLIMP-1)",
+          "Acalabrutinib (Calquence)",
+          "Anti-CD19 CAR-T Cell Therapy",
+          "B Cell Receptor Signaling & Survival",
+          "Belimumab (Benlysta)",
+          "Iberdomide (CC-220 / Cereblon Modulator)",
+          "Teclistamab (Tecvayli / BCMAxCD3 Bispecific)"
+        ],
+        "type_distribution": {
+          "gene": 9,
+          "drug": 5,
+          "pathway": 1
+        }
+      },
+      {
+        "id": 3,
+        "size": 5,
+        "dominant_type": "gene",
+        "node_ids": [
+          "PTPN22",
+          "TNFSF4",
+          "dapirolizumab_pegol",
+          "iscalimab",
+          "tcell-costim"
+        ],
+        "node_labels": [
+          "Protein Tyrosine Phosphatase Non-Receptor Type 22",
+          "TNF Superfamily Member 4 (OX40 Ligand)",
+          "Dapirolizumab Pegol (Anti-CD40L Fab-PEG)",
+          "Iscalimab (CFZ533 / anti-CD40)",
+          "T Cell Costimulation & Follicular Help"
+        ],
+        "type_distribution": {
+          "gene": 2,
+          "drug": 2,
+          "pathway": 1
+        }
+      },
+      {
+        "id": 4,
+        "size": 13,
+        "dominant_type": "gene",
+        "node_ids": [
+          "BDCA2",
+          "IFNAR1",
+          "IRAK4",
+          "IRF5",
+          "IRF7",
+          "MYD88",
+          "TLR7",
+          "TLR9",
+          "anifrolumab",
+          "hydroxychloroquine",
+          "litifilimab",
+          "tlr-sensing",
+          "type1-ifn"
+        ],
+        "node_labels": [
+          "Blood Dendritic Cell Antigen 2 (CLEC4C)",
+          "Interferon Alpha and Beta Receptor Subunit 1",
+          "Interleukin-1 Receptor-Associated Kinase 4",
+          "Interferon Regulatory Factor 5",
+          "Interferon Regulatory Factor 7",
+          "Myeloid Differentiation Primary Response 88",
+          "Toll-Like Receptor 7",
+          "Toll-Like Receptor 9",
+          "Anifrolumab (Saphnelo)",
+          "Hydroxychloroquine (Plaquenil)",
+          "Litifilimab (Anti-BDCA2 / BIIB059)",
+          "Endosomal TLR Sensing of Nucleic Acids",
+          "Type I Interferon Pathway"
+        ],
+        "type_distribution": {
+          "gene": 8,
+          "drug": 3,
+          "pathway": 2
+        }
+      },
+      {
+        "id": 5,
+        "size": 7,
+        "dominant_type": "gene",
+        "node_ids": [
+          "JAK1",
+          "STAT4",
+          "TYK2",
+          "baricitinib",
+          "deucravacitinib",
+          "jak-stat",
+          "tofacitinib"
+        ],
+        "node_labels": [
+          "Janus Kinase 1",
+          "Signal Transducer and Activator of Transcription 4",
+          "Tyrosine Kinase 2",
+          "Baricitinib (Olumiant)",
+          "Deucravacitinib (Sotyktu)",
+          "JAK-STAT Signaling",
+          "Tofacitinib (Xeljanz)"
+        ],
+        "type_distribution": {
+          "gene": 3,
+          "drug": 3,
+          "pathway": 1
+        }
+      },
+      {
+        "id": 6,
+        "size": 11,
+        "dominant_type": "gene",
+        "node_ids": [
+          "C2",
+          "C4A",
+          "ELMO1",
+          "FCGR2A",
+          "FCGR3A",
+          "ITGAM",
+          "avacopan",
+          "complement",
+          "complement-cascade",
+          "ravulizumab",
+          "rozanolixizumab"
+        ],
+        "node_labels": [
+          "Complement C2",
+          "Complement C4A",
+          "Engulfment and Cell Motility 1",
+          "Fc Gamma Receptor IIa (CD32a)",
+          "Fc Gamma Receptor IIIa (CD16a)",
+          "Integrin Subunit Alpha M (CD11b)",
+          "Avacopan (Tavneos)",
+          "Complement System & Immune Complex Clearance",
+          "Complement Cascade (Classical & Terminal)",
+          "Ravulizumab (Ultomiris)",
+          "Rozanolixizumab (Rystiggo)"
+        ],
+        "type_distribution": {
+          "gene": 6,
+          "drug": 3,
+          "pathway": 2
+        }
+      },
+      {
+        "id": 7,
+        "size": 3,
+        "dominant_type": "drug",
+        "node_ids": [
+          "CD20",
+          "obinutuzumab",
+          "rituximab"
+        ],
+        "node_labels": [
+          "CD20 (MS4A1 / B-lymphocyte antigen CD20)",
+          "Obinutuzumab (Gazyva)",
+          "Rituximab (Rituxan)"
+        ],
+        "type_distribution": {
+          "gene": 1,
+          "drug": 2
+        }
+      },
+      {
+        "id": 8,
+        "size": 2,
+        "dominant_type": "gene",
+        "node_ids": [
+          "Glucocorticoid Receptor",
+          "prednisone"
+        ],
+        "node_labels": [
+          "Glucocorticoid Receptor (NR3C1)",
+          "Prednisone (Corticosteroids)"
+        ],
+        "type_distribution": {
+          "gene": 1,
+          "drug": 1
+        }
+      }
+    ],
+    "modularity": 0.5386,
+    "n_communities": 8,
+    "algorithm": "louvain"
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "pathways": [
+    {
+      "id": "tgfbeta-fibrosis",
+      "name": "TGF-β / Fibrosis Pathway",
+      "description": "The central profibrotic pathway in SSc. TGF-β1 produced by macrophages, fibroblasts, and endothelial cells binds TGFBR1/TGFBR2, activating SMAD2/3 phosphorylation. pSMAD2/3 complexes with SMAD4 to drive transcription of collagen (COL1A1, COL1A2), fibronectin, CTGF, and α-SMA (myofibroblast marker). Sustained TGF-β signaling drives the hallmark fibrosis of skin and internal organs in SSc. PPARγ normally antagonizes TGF-β/SMAD but is downregulated in SSc.",
+      "key_components": [
+        "TGFB1",
+        "TGFBR1",
+        "TGFBR2",
+        "SMAD2",
+        "SMAD3",
+        "SMAD4",
+        "CTGF",
+        "COL1A1",
+        "ACTA2",
+        "PPARG"
+      ],
+      "therapeutic_targets": [
+        "fresolimumab (pan-TGF-β antibody)",
+        "nintedanib (TKI, indirect via PDGFR/FGFR)",
+        "Potential: anti-CTGF, PPARγ agonists"
+      ],
+      "references": [
+        "PMID:14514736",
+        "PMID:25132399"
+      ]
+    },
+    {
+      "id": "endothelin-vasculopathy",
+      "name": "Endothelin / Vasculopathy Pathway",
+      "description": "Endothelin-1 (EDN1) is a potent vasoconstrictor and profibrotic peptide overproduced by dysfunctional SSc endothelial cells. EDN1 binds ETA (vasoconstriction, smooth muscle proliferation) and ETB (vasodilation, ET-1 clearance) receptors on vascular smooth muscle. PDE5 degrades cGMP, limiting NO-mediated vasodilation. Prostacyclin (PGI2) via IP receptor promotes vasodilation. sGC stimulators enhance cGMP production. This pathway drives PAH, digital ulcers, Raynaud's, and scleroderma renal crisis in SSc.",
+      "key_components": [
+        "EDN1",
+        "EDNRA",
+        "EDNRB",
+        "PDE5A",
+        "PTGIR",
+        "GUCY1A1",
+        "GUCY1B1",
+        "NOS3",
+        "VEGFA"
+      ],
+      "therapeutic_targets": [
+        "bosentan (dual ERA)",
+        "ambrisentan (selective ETA antagonist)",
+        "macitentan (dual ERA)",
+        "sildenafil (PDE5i)",
+        "tadalafil (PDE5i)",
+        "treprostinil (IP agonist)",
+        "selexipag (IP agonist)",
+        "riociguat (sGC stimulator)"
+      ],
+      "references": [
+        "PMID:16741160",
+        "PMID:19622764"
+      ]
+    },
+    {
+      "id": "il6-jak-stat",
+      "name": "IL-6 / JAK-STAT Signaling",
+      "description": "IL-6 is a central cytokine in SSc driving both inflammation and fibrosis. Elevated in SSc serum, skin, and BAL fluid, IL-6 signals through the IL-6R/gp130 complex activating JAK1/JAK2 → STAT3. Phosphorylated STAT3 directly induces collagen and TIMP-1 expression in fibroblasts. STAT4 (risk gene) mediates IL-12/IL-23 → Th1/Th17 polarization. The IL-6/STAT3 axis drives the Th17/Treg imbalance and myofibroblast persistence characteristic of SSc.",
+      "key_components": [
+        "IL6",
+        "IL6R",
+        "IL6ST",
+        "JAK1",
+        "JAK2",
+        "STAT3",
+        "STAT4",
+        "SOCS3"
+      ],
+      "therapeutic_targets": [
+        "tocilizumab (anti-IL-6R)",
+        "Potential: JAK inhibitors (tofacitinib, baricitinib under investigation for SSc)"
+      ],
+      "references": [
+        "PMID:27112103",
+        "PMID:32860633"
+      ]
+    },
+    {
+      "id": "bcell-dysregulation",
+      "name": "B Cell Dysregulation & Autoantibody Production",
+      "description": "B cell dysregulation is a hallmark of SSc, with polyclonal B cell activation, memory B cell expansion, and production of disease-defining autoantibodies (anti-Scl-70, anti-centromere, anti-RNA pol III). BAFF promotes B cell survival and autoreactive B cell escape. BLK, BANK1, and FCGR2B regulate BCR signaling thresholds. IL-21 from Tfh cells drives B cell differentiation. CD20+ B cell infiltration in SSc skin correlates with fibrosis severity, and B cells produce profibrotic IL-6.",
+      "key_components": [
+        "CD20",
+        "BAFF",
+        "BLK",
+        "BANK1",
+        "FCGR2B",
+        "IL21",
+        "PRDM1",
+        "CD19",
+        "CD40"
+      ],
+      "therapeutic_targets": [
+        "rituximab (anti-CD20, B cell depletion)",
+        "belimumab (anti-BAFF)"
+      ],
+      "references": [
+        "PMID:25865497",
+        "PMID:30760435"
+      ]
+    },
+    {
+      "id": "innate-immune-tlr",
+      "name": "Innate Immune / TLR4 Signaling",
+      "description": "Innate immune activation through TLRs is a key upstream driver of SSc. TLR2 and TLR4 recognize endogenous DAMPs released from damaged endothelial cells and apoptotic debris. TLR activation in plasmacytoid dendritic cells and macrophages drives IRF5/IRF8-mediated type I IFN production. In fibroblasts, TLR4 ligation directly induces TGF-β, IL-6, and collagen. TNFAIP3 (A20) and TNIP1 normally limit TLR/NF-κB signaling; their genetic variants impair this negative regulation. DNASE1L3 deficiency leads to accumulation of TLR9-stimulatory DNA.",
+      "key_components": [
+        "TLR2",
+        "TLR4",
+        "TLR9",
+        "IRF5",
+        "IRF8",
+        "TNFAIP3",
+        "TNIP1",
+        "DNASE1L3",
+        "MYD88",
+        "NFKB1"
+      ],
+      "therapeutic_targets": [
+        "Potential: TLR4 antagonists (experimental)",
+        "hydroxychloroquine (TLR7/9, limited SSc data)"
+      ],
+      "references": [
+        "PMID:19888210",
+        "PMID:29293537"
+      ]
+    },
+    {
+      "id": "tcell-autoimmunity",
+      "name": "T Cell Autoimmunity & Costimulation",
+      "description": "T cell dysregulation in SSc includes Th2/Th17 skewing, Treg dysfunction, and Tfh expansion. CD247 (CD3ζ) variants impair TCR signaling. TNFSF4 (OX40L) enhances T cell costimulation and survival. STAT4 drives Th1/Th17 polarization. IL-12A promotes Th1 responses. PTPN22 regulates TCR/BCR signaling thresholds. Activated T cells infiltrate SSc skin and produce IL-4, IL-13 (Th2), and IL-17 (Th17), which directly stimulate fibroblast collagen production and promote the Th2-fibrosis axis.",
+      "key_components": [
+        "CD247",
+        "PTPN22",
+        "STAT4",
+        "IL12A",
+        "TNFSF4",
+        "CD40LG",
+        "IL4",
+        "IL13",
+        "IL17A",
+        "FOXP3"
+      ],
+      "therapeutic_targets": [
+        "Potential: anti-IL-4Rα (dupilumab, preclinical SSc)",
+        "T cell costimulation blockers (abatacept, off-label use in SSc)"
+      ],
+      "references": [
+        "PMID:21750681",
+        "PMID:25865496"
+      ]
+    },
+    {
+      "id": "tgfb-fibrosis-ssc",
+      "name": "TGF-β / Myofibroblast Fibrosis Cascade",
+      "description": "Master profibrotic pathway. Autocrine TGF-β loops maintain fibrosis.",
+      "key_components": [
+        "TGFB1",
+        "SMAD3",
+        "COL1A1",
+        "CTGF",
+        "SERPINE1",
+        "ACTA2",
+        "PPARG"
+      ],
+      "therapeutic_targets": [
+        "Nintedanib",
+        "Tocilizumab"
+      ],
+      "references": [
+        "PMID:14514736"
+      ]
+    },
+    {
+      "id": "vascular-endothelin-ssc",
+      "name": "Vascular Remodeling & Endothelin Pathway",
+      "description": "SSc vasculopathy: endothelial injury, obliterative vasculopathy, PAH.",
+      "key_components": [
+        "EDN1",
+        "EDNRA",
+        "EDNRB",
+        "NOS3",
+        "VEGFA",
+        "PDGFRB"
+      ],
+      "therapeutic_targets": [
+        "Bosentan",
+        "Riociguat"
+      ],
+      "references": [
+        "PMID:31534227"
+      ]
+    }
+  ]
+}

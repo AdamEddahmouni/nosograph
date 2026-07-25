@@ -1,0 +1,302 @@
+{
+  "drugs": [
+    {
+      "id": "ocrelizumab",
+      "name": "Ocrelizumab (Ocrevus)",
+      "type": "Humanized Monoclonal Antibody",
+      "target": "CD20",
+      "mechanism": "Humanized anti-CD20 monoclonal antibody; depletes CD20+ B cells via ADCC and CDC. B cell depletion reduces antigen presentation to T cells, pro-inflammatory cytokine production, and autoantibody secretion",
+      "approval": "FDA approved 2017 (RMS and PPMS). First and only therapy approved for primary progressive MS.",
+      "route": "IV infusion every 6 months",
+      "efficacy": "Reduces annualized relapse rate (ARR) by 46% vs IFNβ-1a in RMS; reduces confirmed disability progression by 24% in PPMS (ORATORIO). NEDA-3 achieved in ~48% at 2 years.",
+      "references": [
+        "PMID:27997040",
+        "PMID:29290269"
+      ],
+      "category": "DMT - B Cell Depletion (Anti-CD20)"
+    },
+    {
+      "id": "ofatumumab",
+      "name": "Ofatumumab (Kesimpta)",
+      "type": "Fully Human Monoclonal Antibody",
+      "target": "CD20",
+      "mechanism": "Fully human anti-CD20 monoclonal antibody binding a distinct epitope from rituximab/ocrelizumab; depletes B cells via CDC and ADCC. Subcutaneous self-administration at home.",
+      "approval": "FDA approved 2020 (RMS). First self-administered B cell therapy for MS.",
+      "route": "Subcutaneous injection, monthly",
+      "efficacy": "Reduces ARR by 50-59% vs teriflunomide (ASCLEPIOS I/II). Superior to teriflunomide in reducing Gd+ lesions and disability progression.",
+      "references": [
+        "PMID:32757534",
+        "PMID:33429371"
+      ],
+      "category": "DMT - B Cell Depletion (Anti-CD20)"
+    },
+    {
+      "id": "ublituximab",
+      "name": "Ublituximab (Briumvi)",
+      "type": "Chimeric Monoclonal Antibody (Glycoengineered)",
+      "target": "CD20",
+      "mechanism": "Glycoengineered chimeric anti-CD20 monoclonal antibody with enhanced ADCC; designed for rapid B cell depletion with shorter infusion times than rituximab",
+      "approval": "FDA approved 2022 (RMS). First glycoengineered anti-CD20 for MS.",
+      "route": "IV infusion: 1 hour (after first dose), every 6 months",
+      "efficacy": "Reduces ARR by 49-59% vs teriflunomide (ULTIMATE I/II). Rapid B cell depletion within 24 hours. NEDA-3 achieved in ~44% at 96 weeks.",
+      "references": [
+        "PMID:35938061"
+      ],
+      "category": "DMT - B Cell Depletion (Anti-CD20)"
+    },
+    {
+      "id": "rituximab",
+      "name": "Rituximab (Rituxan)",
+      "type": "Chimeric Monoclonal Antibody",
+      "target": "CD20",
+      "mechanism": "Chimeric anti-CD20 monoclonal antibody depleting B cells via ADCC, CDC, and apoptosis. Widely used off-label for MS in many countries.",
+      "approval": "Used off-label for MS (not FDA-approved for MS). Strong real-world evidence from Swedish MS Registry.",
+      "route": "IV infusion every 6-12 months",
+      "efficacy": "Observational studies show ARR reduction comparable to ocrelizumab. Superior to injectable DMTs in real-world Swedish data.",
+      "references": [
+        "PMID:32176734",
+        "PMID:34871647"
+      ],
+      "category": "DMT - B Cell Depletion (Anti-CD20)"
+    },
+    {
+      "id": "natalizumab",
+      "name": "Natalizumab (Tysabri)",
+      "type": "Humanized Monoclonal Antibody",
+      "target": "α4-Integrin (VLA-4/CD49d)",
+      "mechanism": "Blocks α4β1 (VLA-4) and α4β7 integrins on lymphocytes, preventing their adhesion to VCAM-1 on blood-brain barrier endothelium → blocks lymphocyte migration into CNS",
+      "approval": "FDA approved 2004 (RMS). Most effective non-B-cell-depleting DMT.",
+      "route": "IV infusion every 4 weeks",
+      "efficacy": "Reduces ARR by 68% vs placebo (AFFIRM). PML risk: ~0.2-4.5 per 1,000 depending on JCV index, prior immunosuppressant use, and treatment duration.",
+      "references": [
+        "PMID:16448177",
+        "PMID:27038796"
+      ],
+      "category": "DMT - Integrin Blocker (Anti-VLA-4)"
+    },
+    {
+      "id": "fingolimod",
+      "name": "Fingolimod (Gilenya)",
+      "type": "Small Molecule",
+      "target": "S1PR1 / S1PR3 / S1PR4 / S1PR5",
+      "mechanism": "Sphingosine-1-phosphate receptor modulator; phosphorylated form binds S1PR1 on lymphocytes, causing receptor internalization → sequesters lymphocytes in lymph nodes, preventing egress into blood and CNS",
+      "approval": "FDA approved 2010 (RMS). First oral DMT for MS.",
+      "route": "Oral, once daily",
+      "efficacy": "Reduces ARR by 54% vs placebo (FREEDOMS); 52% vs IFNβ-1a IM (TRANSFORMS). Reduces brain volume loss by ~35%.",
+      "references": [
+        "PMID:20089952",
+        "PMID:22336668"
+      ],
+      "category": "DMT - S1P Receptor Modulator"
+    },
+    {
+      "id": "siponimod",
+      "name": "Siponimod (Mayzent)",
+      "type": "Small Molecule",
+      "target": "S1PR1 / S1PR5",
+      "mechanism": "Selective S1P1/S1P5 receptor modulator; S1P1 internalization sequesters lymphocytes in lymph nodes. S1P5 modulation on oligodendrocytes may promote remyelination. CNS-penetrant.",
+      "approval": "FDA approved 2019 (active SPMS, RMS). First oral therapy proven effective for active SPMS.",
+      "route": "Oral, once daily (genotype-guided dosing for CYP2C9)",
+      "efficacy": "Reduces 3-month confirmed disability progression by 21% in SPMS (EXPAND). Reduces ARR by 55% in RMS.",
+      "references": [
+        "PMID:29534104",
+        "PMID:32217708"
+      ],
+      "category": "DMT - S1P Receptor Modulator"
+    },
+    {
+      "id": "ozanimod",
+      "name": "Ozanimod (Zeposia)",
+      "type": "Small Molecule",
+      "target": "S1PR1 / S1PR5",
+      "mechanism": "Selective S1P1/S1P5 receptor modulator with no S1P3 activity (low cardiac risk: no first-dose bradycardia requiring monitoring). CNS-penetrant with potential remyelination effects via S1P5.",
+      "approval": "FDA approved 2020 (RMS). Also approved for ulcerative colitis (cross-disease S1P modulator).",
+      "route": "Oral, once daily (7-day dose titration)",
+      "efficacy": "Reduces ARR by 48% vs IFNβ-1a (SUNBEAM); 38% vs IFNβ-1a (RADIANCE). Lower ARR and fewer Gd+ lesions than IFNβ-1a.",
+      "references": [
+        "PMID:31491508",
+        "PMID:32409277"
+      ],
+      "category": "DMT - S1P Receptor Modulator"
+    },
+    {
+      "id": "ponesimod",
+      "name": "Ponesimod (Ponvory)",
+      "type": "Small Molecule",
+      "target": "S1PR1",
+      "mechanism": "Highly selective S1P1 receptor modulator with rapid receptor internalization kinetics. Short half-life (33 hours) allows rapid lymphocyte recovery within 1 week of discontinuation.",
+      "approval": "FDA approved 2021 (RMS). Superiority trial winner vs teriflunomide.",
+      "route": "Oral, once daily (14-day dose titration)",
+      "efficacy": "Reduces ARR by 30.5% vs teriflunomide (OPTIMUM). Reduced fatigue symptoms vs teriflunomide. Rapid lymphocyte recovery upon discontinuation.",
+      "references": [
+        "PMID:33785142",
+        "PMID:34427747"
+      ],
+      "category": "DMT - S1P Receptor Modulator"
+    },
+    {
+      "id": "dimethyl_fumarate",
+      "name": "Dimethyl Fumarate (Tecfidera)",
+      "type": "Small Molecule",
+      "target": "NRF2 (NFE2L2) / GPR109A",
+      "mechanism": "Activates NRF2 antioxidant response pathway → anti-inflammatory and cytoprotective effects. Also agonizes HCAR2 (GPR109A) on immune cells. Metabolized to monomethyl fumarate.",
+      "approval": "FDA approved 2013 (RMS). Most prescribed oral DMT globally at its peak.",
+      "route": "Oral, twice daily",
+      "efficacy": "Reduces ARR by 44-53% vs placebo (DEFINE/CONFIRM). Reduces disability progression by 38% vs placebo.",
+      "references": [
+        "PMID:22992052",
+        "PMID:23021051"
+      ],
+      "category": "DMT - NRF2 Activator"
+    },
+    {
+      "id": "diroximel_fumarate",
+      "name": "Diroximel Fumarate (Vumerity)",
+      "type": "Small Molecule",
+      "target": "NRF2 (NFE2L2)",
+      "mechanism": "Next-generation oral fumarate with improved GI tolerability. Prodrug converted to monomethyl fumarate (same active metabolite as dimethyl fumarate) with lower GI irritation.",
+      "approval": "FDA approved 2019 (RMS). Designed for better GI tolerability than dimethyl fumarate.",
+      "route": "Oral, twice daily",
+      "efficacy": "Bioequivalent to dimethyl fumarate. EVOLVE-MS-2: significantly fewer days with GI side effects vs dimethyl fumarate (P < 0.0001).",
+      "references": [
+        "PMID:31709540",
+        "PMID:33589451"
+      ],
+      "category": "DMT - NRF2 Activator"
+    },
+    {
+      "id": "teriflunomide",
+      "name": "Teriflunomide (Aubagio)",
+      "type": "Small Molecule",
+      "target": "DHODH (Dihydroorotate Dehydrogenase)",
+      "mechanism": "Inhibits DHODH, blocking de novo pyrimidine synthesis → selectively reduces proliferation of activated T and B lymphocytes without killing resting cells",
+      "approval": "FDA approved 2012 (RMS). First-line oral DMT.",
+      "route": "Oral, once daily",
+      "efficacy": "Reduces ARR by 31% vs placebo (TEMSO). Reduces disability progression by 30%. Often used as comparator arm in superiority trials of newer DMTs.",
+      "references": [
+        "PMID:21946602",
+        "PMID:24787905"
+      ],
+      "category": "DMT - Pyrimidine Synthesis Inhibitor"
+    },
+    {
+      "id": "cladribine",
+      "name": "Cladribine (Mavenclad)",
+      "type": "Small Molecule",
+      "target": "DNA Synthesis / Adenosine Deaminase",
+      "mechanism": "Purine nucleoside analogue resistant to adenosine deaminase; accumulates in lymphocytes → DNA strand breaks → selective lymphocyte depletion (especially CD4+ and CD8+ T cells, B cells). Immune reconstitution therapy.",
+      "approval": "FDA approved 2019 (RMS, active SPMS). Short-course oral IRT.",
+      "route": "Oral: 2 short courses (Year 1: 2 cycles; Year 2: 2 cycles), then possibly no further treatment for years",
+      "efficacy": "Reduces ARR by 58% vs placebo (CLARITY). NEDA-3 achieved in 47% at 2 years. Durable effect: ~50% remain relapse-free at 4 years after last dose.",
+      "references": [
+        "PMID:20089953",
+        "PMID:29739173"
+      ],
+      "category": "DMT - Immune Reconstitution Therapy"
+    },
+    {
+      "id": "alemtuzumab",
+      "name": "Alemtuzumab (Lemtrada)",
+      "type": "Humanized Monoclonal Antibody",
+      "target": "CD52",
+      "mechanism": "Depletes CD52+ T and B lymphocytes, monocytes, and NK cells via ADCC and CDC. Profound lymphocyte depletion followed by homeostatic reconstitution with altered immune repertoire (immune reset).",
+      "approval": "FDA approved 2014 (RMS). Restricted use due to serious safety concerns (secondary autoimmunity ~30-40%, ITP, nephropathies, thyroid).",
+      "route": "IV infusion: 5 days (Year 1), 3 days (Year 2)",
+      "efficacy": "Reduces ARR by 55% vs IFNβ-1a SC (CARE-MS I); 49% (CARE-MS II). 5-year follow-up: ~60% remain free of 6-month confirmed disability worsening.",
+      "references": [
+        "PMID:23122653",
+        "PMID:27838030"
+      ],
+      "category": "DMT - Immune Reconstitution Therapy (Anti-CD52)"
+    },
+    {
+      "id": "glatiramer_acetate",
+      "name": "Glatiramer Acetate (Copaxone)",
+      "type": "Synthetic Polypeptide",
+      "target": "MHC Class II / T Cell Repertoire",
+      "mechanism": "Random copolymer of L-alanine, L-lysine, L-glutamic acid, L-tyrosine mimicking myelin basic protein (MBP). Competes for MHC class II binding; drives Th2 shift from Th1 in myelin-reactive T cells; promotes BDNF-producing neuroprotective T cells.",
+      "approval": "FDA approved 1996 (RMS). Longest safety record among MS therapies.",
+      "route": "Subcutaneous injection: daily (20 mg) or 3× weekly (40 mg)",
+      "efficacy": "Reduces ARR by 29% vs placebo. Modest efficacy compared to modern DMTs but excellent safety profile.",
+      "references": [
+        "PMID:7760673",
+        "PMID:15824404"
+      ],
+      "category": "DMT - Immunomodulator (Antigen Mimic)"
+    },
+    {
+      "id": "interferon_beta",
+      "name": "Interferon Beta-1a / Beta-1b (Avonex, Rebif, Betaseron, Plegridy)",
+      "type": "Recombinant Cytokine",
+      "target": "IFNAR1 / IFNAR2",
+      "mechanism": "Binds type I IFN receptor (IFNAR1/IFNAR2), activating JAK1/TYK2-STAT1/2 signaling. Reduces pro-inflammatory cytokines, inhibits T cell activation, reduces MMPs, and restores blood-brain barrier integrity",
+      "approval": "FDA approved 1993-2014 (RMS, CIS). First DMT class for MS. Multiple formulations with different dosing frequencies.",
+      "route": "Intramuscular (weekly) or subcutaneous (3× weekly, every 2 weeks PEGylated)",
+      "efficacy": "Reduces ARR by 18-34% vs placebo. PEGylated IFN β-1a (Plegridy): ARR reduction 36% vs placebo. Modest efficacy but extensive long-term safety data.",
+      "references": [
+        "PMID:8487664",
+        "PMID:16828339"
+      ],
+      "category": "DMT - Type I Interferon"
+    },
+    {
+      "id": "evobrutinib",
+      "name": "Evobrutinib (Investigational)",
+      "type": "Small Molecule",
+      "target": "BTK (Bruton's Tyrosine Kinase)",
+      "mechanism": "Highly selective, covalent BTK inhibitor. Inhibits BCR signaling in B cells and FcεR/FcγR signaling in myeloid cells (microglia, macrophages). CNS-penetrant — targets both peripheral and CNS-compartmentalized inflammation.",
+      "approval": "Phase 3 (EVOLUTION RMS-1/2). Phase 2 met primary endpoint.",
+      "route": "Oral, twice daily",
+      "efficacy": "Phase 2: reduced cumulative Gd+ lesions by 70-80% at 24 weeks. BTK inhibition addresses both peripheral B cells AND CNS-resident microglia — a unique dual mechanism.",
+      "references": [
+        "PMID:31168337",
+        "PMID:34863304"
+      ],
+      "category": "Investigational - BTK Inhibitor"
+    },
+    {
+      "id": "tolebrutinib",
+      "name": "Tolebrutinib (Investigational)",
+      "type": "Small Molecule",
+      "target": "BTK (Bruton's Tyrosine Kinase)",
+      "mechanism": "CNS-penetrant, covalent BTK inhibitor with high CNS exposure. Designed to target smoldering MS pathology: inhibits microglial activation and B cell signaling within the CNS.",
+      "approval": "Phase 3 (GEMINI-1/2 in RMS, HERCULES in progressive MS). FDA placed partial clinical hold (2022) due to liver injury cases; resumed with enhanced monitoring.",
+      "route": "Oral, once daily",
+      "efficacy": "Phase 2b: reduced Gd+ lesions by 85% at 12 weeks at 60 mg dose. Designed to address both relapsing biology and smoldering progression.",
+      "references": [
+        "PMID:35145351"
+      ],
+      "category": "Investigational - BTK Inhibitor"
+    },
+    {
+      "id": "mitoxantrone",
+      "name": "Mitoxantrone (Novantrone)",
+      "type": "Small Molecule",
+      "target": "Topoisomerase II / DNA Intercalation",
+      "mechanism": "Chemotherapeutic agent that intercalates DNA and inhibits topoisomerase II, causing DNA strand breaks and cell death. Broad immunosuppression including B cells, T cells, and macrophages.",
+      "approval": "FDA approved 2000 (worsening RMS, SPMS). Last-line therapy due to cardiotoxicity and leukemia risk. Strict 140 mg/m² lifetime cumulative dose limit.",
+      "route": "IV infusion every 3 months",
+      "efficacy": "Reduces ARR by 60-70% and disability progression in active SPMS. Limited to 2-3 years of treatment due to cumulative cardiotoxicity.",
+      "references": [
+        "PMID:12600332",
+        "PMID:12235319"
+      ],
+      "category": "DMT - Cytotoxic Agent (Last Line)"
+    },
+    {
+      "id": "methylprednisolone",
+      "name": "Methylprednisolone (Solu-Medrol)",
+      "type": "Small Molecule",
+      "target": "Glucocorticoid Receptor (NR3C1)",
+      "mechanism": "High-dose IV corticosteroid for acute MS relapses. Rapidly reduces inflammation, restores BBB integrity, accelerates relapse recovery. No effect on long-term disease course or disability progression.",
+      "approval": "Standard of care for acute MS relapses. Not a disease-modifying therapy.",
+      "route": "IV: 1000 mg/day for 3-5 days (with or without oral taper)",
+      "efficacy": "Accelerates recovery from acute relapses by ~3 weeks. Does not reduce long-term disability accumulation.",
+      "references": [
+        "PMID:10885666",
+        "PMID:26939397"
+      ],
+      "category": "Corticosteroid (Relapse Management)"
+    }
+  ]
+}

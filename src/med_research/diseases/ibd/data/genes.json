@@ -1,0 +1,302 @@
+{
+  "genes": [
+    {
+      "id": "NOD2",
+      "name": "Nucleotide-Binding Oligomerization Domain Containing 2 (CARD15)",
+      "chromosome": "16q12.1",
+      "function": "Intracellular pattern recognition receptor sensing muramyl dipeptide (MDP); activates NF-κB and autophagy pathways critical for Paneth cell function and antimicrobial peptide secretion",
+      "ibd_evidence": "Three common variants (R702W, G908R, L1007fsinsC) confer the strongest genetic risk for Crohn's disease. Homozygosity or compound heterozygosity increases CD risk 20-40 fold. L1007fsinsC frameshift abolishes MDP sensing and NF-κB activation. Not associated with UC.",
+      "odds_ratio": 3.5,
+      "references": [
+        "PMID:11385576",
+        "PMID:11385577"
+      ],
+      "category": "Pattern Recognition / Epithelial Barrier"
+    },
+    {
+      "id": "ATG16L1",
+      "name": "Autophagy Related 16 Like 1",
+      "chromosome": "2q37.1",
+      "function": "Essential component of the autophagy machinery; regulates autophagosome formation, Paneth cell granule exocytosis, and clearance of intracellular bacteria",
+      "ibd_evidence": "T300A (rs2241880) coding variant is a major CD risk allele (OR 1.3-1.5). The T300A variant is cleaved by caspase-3, impairing autophagy and bacterial clearance in the gut epithelium. Also associated with defective Paneth cell morphology.",
+      "odds_ratio": 1.4,
+      "references": [
+        "PMID:17200669",
+        "PMID:17200668"
+      ],
+      "category": "Autophagy / Epithelial Barrier"
+    },
+    {
+      "id": "IL23R",
+      "name": "Interleukin-23 Receptor",
+      "chromosome": "1p31.3",
+      "function": "Receptor subunit for IL-23; pairs with IL12RB1 to drive Th17 cell expansion, IL-17/IL-22 production, and intestinal inflammation",
+      "ibd_evidence": "R381Q (rs11209026) is a protective variant reducing IL-23R signaling (OR 0.3-0.6 for both CD and UC). Multiple other variants confer modest risk. IL-23R is a key therapeutic target validated by ustekinumab, risankizumab, and mirikizumab efficacy.",
+      "odds_ratio": 0.6,
+      "references": [
+        "PMID:17068223",
+        "PMID:19174780"
+      ],
+      "category": "IL-23 / Th17 Axis"
+    },
+    {
+      "id": "IRGM",
+      "name": "Immunity Related GTPase M",
+      "chromosome": "5q33.1",
+      "function": "GTPase regulating autophagy-mediated clearance of intracellular pathogens including adherent-invasive E. coli (AIEC) frequently isolated from CD ileal mucosa",
+      "ibd_evidence": "rs13361189 and rs10065172 upstream deletion polymorphisms alter IRGM expression. Associated specifically with Crohn's disease. IRGM-dependent autophagy controls AIEC replication in macrophages.",
+      "odds_ratio": 1.3,
+      "references": [
+        "PMID:17554261",
+        "PMID:20228795"
+      ],
+      "category": "Autophagy / Epithelial Barrier"
+    },
+    {
+      "id": "LRRK2",
+      "name": "Leucine-Rich Repeat Kinase 2",
+      "chromosome": "12q12",
+      "function": "Multi-domain kinase and GTPase regulating autophagy, lysosomal function, and inflammatory cytokine production in myeloid cells and Paneth cells",
+      "ibd_evidence": "rs11564258 (M2397T) and other coding variants associated with CD risk. LRRK2 is highly expressed in immune cells and intestinal epithelium. LRRK2 kinase activity promotes NF-κB signaling.",
+      "odds_ratio": 1.5,
+      "references": [
+        "PMID:20018961",
+        "PMID:29217213"
+      ],
+      "category": "Autophagy / Innate Immunity"
+    },
+    {
+      "id": "TNFSF15",
+      "name": "TNF Superfamily Member 15 (TL1A)",
+      "chromosome": "9q32",
+      "function": "Cytokine ligand for DR3 (TNFRSF25); co-stimulates Th1 and Th17 effector cells and promotes mucosal inflammation and fibrosis",
+      "ibd_evidence": "TNFSF15 polymorphisms strongly associated with CD in multiple populations. TL1A is elevated in inflamed CD mucosa and drives IFN-gamma and IL-17 production. Associated with stricturing and penetrating CD phenotypes. Also linked to UC.",
+      "odds_ratio": 1.4,
+      "references": [
+        "PMID:15789056",
+        "PMID:19615398"
+      ],
+      "category": "TNF Superfamily / Mucosal Inflammation"
+    },
+    {
+      "id": "IL10",
+      "name": "Interleukin-10",
+      "chromosome": "1q32.1",
+      "function": "Key anti-inflammatory cytokine produced by Tregs, macrophages, and B cells; suppresses IL-12, IL-23, and TNF production; essential for intestinal immune homeostasis",
+      "ibd_evidence": "IL10 polymorphisms and promoter haplotypes associated with both CD and UC. IL-10-deficient mice develop spontaneous colitis. IL-10 prevents excessive inflammation to gut microbiota.",
+      "odds_ratio": 1.2,
+      "references": [
+        "PMID:11001876",
+        "PMID:29617536"
+      ],
+      "category": "Anti-inflammatory / Regulatory Cytokine"
+    },
+    {
+      "id": "IL10RA",
+      "name": "Interleukin-10 Receptor Alpha",
+      "chromosome": "11q23.3",
+      "function": "Ligand-binding subunit of the IL-10 receptor; signals through STAT3 to mediate IL-10 anti-inflammatory effects in intestinal myeloid cells and epithelium",
+      "ibd_evidence": "Loss-of-function mutations in IL10RA cause very-early-onset IBD (VEO-IBD) in infants. Common polymorphisms associated with adult-onset UC and CD. IL10RA/IL10RB deficiencies cause severe, treatment-refractory enterocolitis.",
+      "odds_ratio": 1.2,
+      "references": [
+        "PMID:19890111",
+        "PMID:22549091"
+      ],
+      "category": "Anti-inflammatory / Regulatory Cytokine"
+    },
+    {
+      "id": "PTPN22",
+      "name": "Protein Tyrosine Phosphatase N22 (LYP)",
+      "chromosome": "1p13.2",
+      "function": "Negative regulator of T cell receptor and B cell receptor signaling; alters immune tolerance thresholds",
+      "ibd_evidence": "R620W (rs2476601) gain-of-function variant associated with Crohn's disease (OR 1.3). Same allele also linked to RA, T1D, and SLE. Alters TCR signaling and Treg function in intestinal mucosa.",
+      "odds_ratio": 1.3,
+      "references": [
+        "PMID:15208781",
+        "PMID:21882219"
+      ],
+      "category": "T Cell Signaling / Autoimmunity"
+    },
+    {
+      "id": "STAT3",
+      "name": "Signal Transducer and Activator of Transcription 3",
+      "chromosome": "17q21.2",
+      "function": "Transcription factor mediating IL-6, IL-10, IL-22, and IL-23 signaling; critical for Th17 differentiation and epithelial barrier repair",
+      "ibd_evidence": "STAT3 polymorphisms associated with both CD and UC. Gain-of-function STAT3 mutations cause early-onset lymphoproliferation and IBD. STAT3 integrates pro-inflammatory (IL-6/IL-23) and anti-inflammatory (IL-10) signals in the gut.",
+      "odds_ratio": 1.3,
+      "references": [
+        "PMID:19122664",
+        "PMID:25349174"
+      ],
+      "category": "JAK-STAT Signaling"
+    },
+    {
+      "id": "JAK2",
+      "name": "Janus Kinase 2",
+      "chromosome": "9p24.1",
+      "function": "Non-receptor tyrosine kinase coupling cytokine receptors (IL-6R, IL-12R, IL-23R, GM-CSFR) to STAT3/STAT4 activation; drives intestinal inflammatory gene programs",
+      "ibd_evidence": "JAK2 polymorphisms associated with both CD and UC. JAK2 is a critical signaling hub for multiple IBD-relevant cytokines. Therapeutic JAK inhibitors (tofacitinib, upadacitinib) block JAK2-dependent signaling.",
+      "odds_ratio": 1.2,
+      "references": [
+        "PMID:21102463",
+        "PMID:29996614"
+      ],
+      "category": "JAK-STAT Signaling"
+    },
+    {
+      "id": "IL12B",
+      "name": "Interleukin-12 Subunit Beta (p40)",
+      "chromosome": "5q33.3",
+      "function": "Shared p40 subunit of IL-12 (p35/p40) and IL-23 (p19/p40); essential for Th1 and Th17 differentiation; bridges innate and adaptive immunity",
+      "ibd_evidence": "IL12B polymorphisms associated with both CD and UC. The p40 subunit is the therapeutic target of ustekinumab. IL12B variants alter IL-12/IL-23 cytokine production and Th1/Th17 balance.",
+      "odds_ratio": 1.2,
+      "references": [
+        "PMID:17068223",
+        "PMID:27738255"
+      ],
+      "category": "IL-23 / Th17 Axis"
+    },
+    {
+      "id": "CARD9",
+      "name": "Caspase Recruitment Domain Family Member 9",
+      "chromosome": "9q34.3",
+      "function": "Adaptor protein downstream of dectin-1 and other C-type lectin receptors; activates NF-κB and MAPK pathways in response to fungal and bacterial recognition",
+      "ibd_evidence": "CARD9 polymorphisms strongly associated with both CD and UC. CARD9 mediates innate immune responses to gut fungi (mycobiome). CARD9-deficient mice show altered gut microbiota and increased susceptibility to colitis.",
+      "odds_ratio": 1.2,
+      "references": [
+        "PMID:17900399",
+        "PMID:23929950"
+      ],
+      "category": "Pattern Recognition / Innate Immunity"
+    },
+    {
+      "id": "NKX2-3",
+      "name": "NK2 Homeobox 3",
+      "chromosome": "10q24.2",
+      "function": "Transcription factor regulating lymphocyte trafficking, spleen development, and MAdCAM-1 expression in gut endothelial cells",
+      "ibd_evidence": "NKX2-3 polymorphisms associated with both CD and UC across multiple GWAS. Regulates expression of MAdCAM-1, the ligand for α4β7 integrin targeted by vedolizumab. Links lymphocyte homing to IBD pathogenesis.",
+      "odds_ratio": 1.2,
+      "references": [
+        "PMID:17068223",
+        "PMID:23850715"
+      ],
+      "category": "Lymphocyte Trafficking / Homing"
+    },
+    {
+      "id": "MST1",
+      "name": "Macrophage Stimulating 1 (MSP/HGFL)",
+      "chromosome": "3p21.31",
+      "function": "Hepatocyte growth factor-like protein; binds RON receptor tyrosine kinase to regulate macrophage function, epithelial repair, and intestinal wound healing",
+      "ibd_evidence": "MST1 polymorphisms associated with both CD and UC. MSP-RON signaling promotes intestinal epithelial wound healing and anti-inflammatory macrophage polarization. Impaired signaling may delay mucosal recovery.",
+      "odds_ratio": 1.2,
+      "references": [
+        "PMID:19122664",
+        "PMID:26651056"
+      ],
+      "category": "Epithelial Barrier / Wound Healing"
+    },
+    {
+      "id": "FUT2",
+      "name": "Fucosyltransferase 2 (Secretor Status)",
+      "chromosome": "19q13.33",
+      "function": "Determines ABO(H) blood group antigen expression on intestinal mucosa; controls composition of gut microbiota through mucosal glycan modification",
+      "ibd_evidence": "Non-secretor status (FUT2 G428A nonsense variant) is protective against Crohn's disease (OR 0.7-0.8). FUT2 genotype influences intestinal microbial composition, particularly Bacteroides and Firmicutes abundance.",
+      "odds_ratio": 0.75,
+      "references": [
+        "PMID:17068223",
+        "PMID:21983784"
+      ],
+      "category": "Epithelial Barrier / Microbiome"
+    },
+    {
+      "id": "HNF4A",
+      "name": "Hepatocyte Nuclear Factor 4 Alpha",
+      "chromosome": "20q13.12",
+      "function": "Nuclear receptor transcription factor regulating intestinal epithelial cell differentiation, tight junction integrity, and mucosal barrier function",
+      "ibd_evidence": "HNF4A polymorphisms associated with UC. HNF4A maintains expression of claudins, occludin, and other tight junction proteins. Loss of HNF4A in mice causes increased intestinal permeability and spontaneous colitis.",
+      "odds_ratio": 1.2,
+      "references": [
+        "PMID:22965129",
+        "PMID:26775118"
+      ],
+      "category": "Epithelial Barrier / Tight Junctions"
+    },
+    {
+      "id": "CCR6",
+      "name": "C-C Chemokine Receptor 6",
+      "chromosome": "6q27",
+      "function": "Chemokine receptor for CCL20; directs Th17 cells, Tregs, and dendritic cells to intestinal Peyer's patches and inflamed mucosa",
+      "ibd_evidence": "CCR6 polymorphisms associated with CD. CCL20 is upregulated in inflamed IBD mucosa, recruiting CCR6+ Th17 cells that produce IL-17 and IL-22. CCR6-CCL20 axis is a potential therapeutic target.",
+      "odds_ratio": 1.2,
+      "references": [
+        "PMID:20453842",
+        "PMID:25788897"
+      ],
+      "category": "IL-23 / Th17 Axis"
+    },
+    {
+      "id": "SMAD3",
+      "name": "SMAD Family Member 3",
+      "chromosome": "15q22.33",
+      "function": "Intracellular mediator of TGF-beta signaling; regulates Treg induction, Th17/Treg balance, and intestinal fibrosis",
+      "ibd_evidence": "SMAD3 polymorphisms associated with both CD and UC. SMAD3 mediates TGF-beta-driven Treg differentiation while opposing Th17 polarization. Impaired SMAD3 signaling may promote intestinal fibrosis in CD stricturing disease.",
+      "odds_ratio": 1.2,
+      "references": [
+        "PMID:21102463",
+        "PMID:31194930"
+      ],
+      "category": "TGF-beta Signaling / Fibrosis"
+    },
+    {
+      "id": "SLC22A5",
+      "name": "Solute Carrier Family 22 Member 5 (OCTN2)",
+      "chromosome": "5q31.1",
+      "function": "High-affinity carnitine transporter essential for fatty acid oxidation and mitochondrial function in intestinal epithelial cells",
+      "ibd_evidence": "SLC22A5 variants in the IBD5 risk haplotype (with IRF1, IL5, IL13) associated with Crohn's disease (OR 1.3). OCTN2 polymorphisms may impair butyrate and carnitine metabolism in colonic epithelium.",
+      "odds_ratio": 1.3,
+      "references": [
+        "PMID:15107849",
+        "PMID:14747869"
+      ],
+      "category": "Epithelial Metabolism / IBD5 Locus"
+    },
+    {
+      "id": "TYK2",
+      "name": "Tyrosine Kinase 2",
+      "chromosome": "19p13.2",
+      "function": "JAK family kinase mediating type I IFN, IL-12, and IL-23 receptor signaling; essential for Th1 and Th17 responses",
+      "ibd_evidence": "TYK2 polymorphisms associated with both CD and UC. Protective loss-of-function variant (P1104A) reduces IL-12/IL-23 signaling and is associated with decreased IBD risk. TYK2 shares genetic risk with psoriasis and SLE.",
+      "odds_ratio": 1.2,
+      "references": [
+        "PMID:17068223",
+        "PMID:27892473"
+      ],
+      "category": "JAK-STAT Signaling"
+    },
+    {
+      "id": "ICOSLG",
+      "name": "Inducible T Cell Costimulator Ligand (B7-H2)",
+      "chromosome": "21q22.3",
+      "function": "Costimulatory ligand on antigen-presenting cells and intestinal epithelium; binds ICOS on T cells to regulate Tfh and Th17 responses",
+      "ibd_evidence": "ICOSLG polymorphisms associated with both CD and UC. ICOS-ICOSLG interaction drives T follicular helper responses and germinal center formation in gut-associated lymphoid tissue. Elevated ICOSLG expression in inflamed IBD mucosa.",
+      "odds_ratio": 1.2,
+      "references": [
+        "PMID:19122664",
+        "PMID:30224779"
+      ],
+      "category": "T Cell Costimulation / GALT"
+    },
+    {
+      "id": "IL17A",
+      "name": "Interleukin-17A",
+      "chromosome": "6p12.2",
+      "function": "Signature Th17 cytokine; drives mucosal inflammation",
+      "ibd_evidence": "Elevated in IBD mucosa. Complex protective/pathogenic roles.",
+      "odds_ratio": 1.15,
+      "references": [
+        "PMID:22936677"
+      ],
+      "category": "Th17 / IL-23 Pathway"
+    }
+  ]
+}

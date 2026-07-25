@@ -1,0 +1,712 @@
+{
+  "relationships": [
+    {
+      "source": "insulin_glargine",
+      "target": "Insulin Receptor (INSR)",
+      "type": "TARGETS",
+      "description": "Insulin glargine is a long-acting insulin analog that binds and activates the insulin receptor, providing 24-hour basal insulin replacement"
+    },
+    {
+      "source": "insulin_lispro",
+      "target": "Insulin Receptor (INSR)",
+      "type": "TARGETS",
+      "description": "Insulin lispro is a rapid-acting insulin analog binding the insulin receptor with fast absorption kinetics for prandial glucose control"
+    },
+    {
+      "source": "insulin_aspart",
+      "target": "Insulin Receptor (INSR)",
+      "type": "TARGETS",
+      "description": "Insulin aspart is a rapid-acting insulin analog; Fiasp formulation achieves ultra-fast insulin receptor activation for postprandial coverage"
+    },
+    {
+      "source": "insulin_degludec",
+      "target": "Insulin Receptor (INSR)",
+      "type": "TARGETS",
+      "description": "Insulin degludec is an ultra-long-acting insulin analog providing stable insulin receptor activation over >42 hours"
+    },
+    {
+      "source": "teplizumab",
+      "target": "CD3 (TCR/CD3 Complex)",
+      "type": "TARGETS",
+      "description": "Teplizumab is a humanized anti-CD3 monoclonal antibody that modulates the TCR/CD3 complex, inducing T cell anergy and expanding regulatory T cells"
+    },
+    {
+      "source": "otelixizumab",
+      "target": "CD3 (TCR/CD3 Complex)",
+      "type": "TARGETS",
+      "description": "Otelixizumab is an anti-CD3 monoclonal antibody with reduced FcR binding, inducing TCR downregulation and T cell tolerance"
+    },
+    {
+      "source": "golimumab",
+      "target": "TNF",
+      "type": "TARGETS",
+      "description": "Golimumab is a fully human anti-TNF monoclonal antibody that neutralizes both soluble and transmembrane TNF-alpha, blocking TNFR1/TNFR2 signaling"
+    },
+    {
+      "source": "abatacept",
+      "target": "CD80",
+      "type": "TARGETS",
+      "description": "Abatacept (CTLA4-Ig) binds CD80 (B7.1) on APCs, blocking CD28-mediated T cell costimulation and reducing islet-reactive T cell activation"
+    },
+    {
+      "source": "abatacept",
+      "target": "CD86",
+      "type": "TARGETS",
+      "description": "Abatacept (CTLA4-Ig) binds CD86 (B7.2) on APCs, blocking CD28-mediated T cell costimulation and reducing islet-reactive T cell activation"
+    },
+    {
+      "source": "rituximab",
+      "target": "CD20",
+      "type": "TARGETS",
+      "description": "Rituximab depletes CD20+ B cells via ADCC, CDC, and apoptosis; removes B cells involved in autoantigen presentation to islet-reactive T cells"
+    },
+    {
+      "source": "alefacept",
+      "target": "CD2",
+      "type": "TARGETS",
+      "description": "Alefacept (LFA-3-Ig) binds CD2 on effector memory T cells, blocking CD2-CD58 costimulation and depleting pathogenic memory T cells via NK cell-mediated ADCC"
+    },
+    {
+      "source": "anti_thymocyte_globulin",
+      "target": "CD3 (TCR/CD3 Complex)",
+      "type": "TARGETS",
+      "description": "Anti-thymocyte globulin is a polyclonal antibody targeting multiple T cell surface antigens including CD3, depleting effector T cells via complement-mediated lysis"
+    },
+    {
+      "source": "low_dose_il2",
+      "target": "IL2RA",
+      "type": "TARGETS",
+      "description": "Low-dose IL-2 selectively activates IL-2 receptor alpha (CD25) on regulatory T cells, exploiting Tregs' higher IL-2R affinity to expand and activate FOXP3+ Tregs"
+    },
+    {
+      "source": "verapamil",
+      "target": "L-type Calcium Channel (CACNA1C)",
+      "type": "TARGETS",
+      "description": "Verapamil blocks L-type calcium channels in β cells, paradoxically reducing TXNIP expression and protecting β cells from ER stress and NLRP3 inflammasome-induced apoptosis"
+    },
+    {
+      "source": "gad_alum",
+      "target": "Glutamic Acid Decarboxylase 65 (GAD65)",
+      "type": "TARGETS",
+      "description": "GAD-alum delivers recombinant GAD65 autoantigen with alum adjuvant, inducing GAD65-specific immune tolerance via Treg induction and Th2 deviation"
+    },
+    {
+      "source": "ustekinumab",
+      "target": "IL12B",
+      "type": "TARGETS",
+      "description": "Ustekinumab targets the shared p40 subunit of IL-12, blocking the IL-12/IFN-γ Th1 differentiation pathway implicated in islet autoimmunity"
+    },
+    {
+      "source": "ustekinumab",
+      "target": "IL23A",
+      "type": "TARGETS",
+      "description": "Ustekinumab targets the shared p40 subunit of IL-23, blocking the IL-23/IL-17 Th17 differentiation pathway implicated in islet autoimmunity"
+    },
+    {
+      "source": "HLA-DQA1",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DQA1*0501 on the DQ2 haplotype confers the strongest genetic risk for T1D; heterozygous DQ2/DQ8 carries OR > 10"
+    },
+    {
+      "source": "HLA-DQB1",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DQB1*0302 (DQ8) and *0201 (DQ2) alleles are primary T1D determinants; Asp57-negative polymorphism alters peptide presentation (OR 3.5)"
+    },
+    {
+      "source": "PTPN22",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "ASSOCIATED_WITH",
+      "description": "R620W (rs2476601) gain-of-function variant is the strongest non-HLA T1D risk (OR 1.9); impairs thymic negative selection"
+    },
+    {
+      "source": "INS",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS VNTR class I alleles reduce thymic insulin expression, impairing central tolerance to insulin as a primary T1D autoantigen (OR 1.5)"
+    },
+    {
+      "source": "CTLA4",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTLA4 variants associated with T1D (OR 1.25); reduced soluble CTLA-4 impairs peripheral T cell tolerance; therapeutic target of abatacept"
+    },
+    {
+      "source": "IL2RA",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RA (CD25) polymorphisms impair Treg fitness through altered IL-2 signaling; shared risk across autoimmune diseases (OR 1.2)"
+    },
+    {
+      "source": "IFIH1",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFIH1 (MDA5) gain-of-function variants enhance type I IFN; rare protective IFIH1 loss-of-function variants link viral sensing to T1D initiation (OR 1.15)"
+    },
+    {
+      "source": "PTPN2",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN2 variants sensitize β cells to cytokine-induced apoptosis via enhanced STAT1 signaling; shared risk with Crohn's disease (OR 1.3)"
+    },
+    {
+      "source": "CTSH",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSH polymorphisms alter proinsulin processing and MHC class II loading in thymus, affecting T cell repertoire selection (OR 1.2)"
+    },
+    {
+      "source": "CLEC16A",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC16A SNPs associated with T1D across GWAS; regulates autophagy and MHC class II antigen presentation in APCs (OR 1.15)"
+    },
+    {
+      "source": "IL10",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 promoter polymorphisms associated with T1D susceptibility; reduced IL-10 impairs counter-regulation of islet-destructive Th1 responses (OR 1.2)"
+    },
+    {
+      "source": "GLIS3",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLIS3 variants reduce β cell insulin gene expression and development; lowers β cell functional reserve against autoimmune attack (OR 1.15)"
+    },
+    {
+      "source": "SH2B3",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2B3 R262W missense variant alters LNK-mediated negative regulation of JAK-STAT signaling; shared with celiac disease (OR 1.2)"
+    },
+    {
+      "source": "ERBB3",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB3 variants may impair compensatory β cell proliferation and survival via PI3K-AKT signaling during autoimmune stress (OR 1.2)"
+    },
+    {
+      "source": "C1QTNF6",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C1QTNF6 polymorphisms associated with T1D; CTRP6 regulates alternative complement pathway and inflammatory cytokine production (OR 1.15)"
+    },
+    {
+      "source": "UBASH3A",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBASH3A variants reduce suppression of TCR-induced NF-κB signaling, lowering T cell activation thresholds for islet-reactive clones (OR 1.15)"
+    },
+    {
+      "source": "BACH2",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BACH2 is a key guardian of immune homeostasis; variants impair Treg development and B cell tolerance checkpoints in T1D (OR 1.2)"
+    },
+    {
+      "source": "TNF",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF promoter polymorphisms associated with T1D; TNF-α synergizes with IL-1β and IFN-γ to induce β cell apoptosis (OR 1.2)"
+    },
+    {
+      "source": "HLA-DQA1",
+      "target": "hla-antigen-presentation",
+      "type": "PARTICIPATES_IN",
+      "description": "HLA-DQA1 encodes the alpha chain of HLA-DQ; the DQ2/DQ8 heterodimers present islet autoantigens to autoreactive CD4+ T cells"
+    },
+    {
+      "source": "HLA-DQB1",
+      "target": "hla-antigen-presentation",
+      "type": "PARTICIPATES_IN",
+      "description": "HLA-DQB1 encodes the beta chain of HLA-DQ; Asp57-negative polymorphism in DQB1 alters peptide-binding specificity, favoring autoantigen presentation"
+    },
+    {
+      "source": "HLA-DQA1",
+      "target": "tcell-insulitis",
+      "type": "PARTICIPATES_IN",
+      "description": "HLA-DQ molecules on APCs present islet peptides to autoreactive CD4+ T cells that initiate and sustain insulitis"
+    },
+    {
+      "source": "HLA-DQB1",
+      "target": "tcell-insulitis",
+      "type": "PARTICIPATES_IN",
+      "description": "HLA-DQ variants determine which islet peptides are presented, shaping the autoreactive T cell repertoire driving insulitis"
+    },
+    {
+      "source": "PTPN22",
+      "target": "tcell-insulitis",
+      "type": "PARTICIPATES_IN",
+      "description": "PTPN22 R620W variant raises TCR signaling thresholds, impairing thymic deletion of islet-reactive T cells that mediate insulitis"
+    },
+    {
+      "source": "INS",
+      "target": "tcell-insulitis",
+      "type": "PARTICIPATES_IN",
+      "description": "INS VNTR regulates thymic insulin expression; low thymic insulin impairs negative selection of insulin-specific T cells, a primary driver of insulitis"
+    },
+    {
+      "source": "BACH2",
+      "target": "tcell-insulitis",
+      "type": "PARTICIPATES_IN",
+      "description": "BACH2 represses effector T cell differentiation; reduced BACH2 function allows islet-reactive T cells to escape tolerance checkpoints"
+    },
+    {
+      "source": "UBASH3A",
+      "target": "tcell-insulitis",
+      "type": "PARTICIPATES_IN",
+      "description": "UBASH3A suppresses TCR-induced NF-κB signaling; reduced expression lowers activation thresholds of islet-reactive T cells infiltrating islets"
+    },
+    {
+      "source": "CTLA4",
+      "target": "tcell-insulitis",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a critical T cell checkpoint; reduced CTLA-4 function fails to dampen pathogenic T cell responses driving insulitis"
+    },
+    {
+      "source": "TNF",
+      "target": "tcell-insulitis",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF-α produced by infiltrating T cells and macrophages directly contributes to β cell cytotoxicity and amplifies islet inflammation"
+    },
+    {
+      "source": "PTPN2",
+      "target": "beta-cell-er-stress",
+      "type": "PARTICIPATES_IN",
+      "description": "PTPN2 dephosphorylates STAT1; PTPN2 deficiency in β cells sensitizes them to TNF/IFN-γ-induced ER stress and apoptosis via unchecked STAT1 signaling"
+    },
+    {
+      "source": "GLIS3",
+      "target": "beta-cell-er-stress",
+      "type": "PARTICIPATES_IN",
+      "description": "GLIS3 is a transcription factor essential for insulin gene expression and β cell survival; reduced GLIS3 function lowers β cell resilience to ER stress"
+    },
+    {
+      "source": "ERBB3",
+      "target": "beta-cell-er-stress",
+      "type": "PARTICIPATES_IN",
+      "description": "ERBB3 signaling through PI3K-AKT promotes β cell survival; loss of ERBB3 signaling impairs compensatory β cell maintenance during cytokine-induced stress"
+    },
+    {
+      "source": "TNF",
+      "target": "beta-cell-er-stress",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF-α synergizes with IL-1β and IFN-γ to induce β cell ER stress, UPR activation, and apoptosis via JNK and caspase pathways"
+    },
+    {
+      "source": "SH2B3",
+      "target": "beta-cell-er-stress",
+      "type": "PARTICIPATES_IN",
+      "description": "SH2B3 (LNK) negatively regulates JAK2 signaling; R262W variant alters cytokine signaling responses in β cells under inflammatory stress"
+    },
+    {
+      "source": "IL2RA",
+      "target": "il2-treg",
+      "type": "PARTICIPATES_IN",
+      "description": "IL2RA (CD25) is the high-affinity IL-2 receptor subunit essential for Treg development, survival, and suppressive function"
+    },
+    {
+      "source": "CTLA4",
+      "target": "il2-treg",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is constitutively expressed on Tregs and mediates contact-dependent suppression; essential for Treg-mediated islet tolerance"
+    },
+    {
+      "source": "IL10",
+      "target": "il2-treg",
+      "type": "PARTICIPATES_IN",
+      "description": "IL-10 is a key anti-inflammatory cytokine produced by Tregs and Tr1 cells; suppresses Th1/Th17 responses against islet autoantigens"
+    },
+    {
+      "source": "BACH2",
+      "target": "il2-treg",
+      "type": "PARTICIPATES_IN",
+      "description": "BACH2 promotes Treg development and represses effector programs; BACH2 variants impair Treg-mediated suppression of islet autoimmunity"
+    },
+    {
+      "source": "IFIH1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFIH1 (MDA5) is a cytosolic viral RNA sensor; gain-of-function variants enhance IFN-β production via MAVS-IRF3/IRF7, potentially triggering islet autoimmunity"
+    },
+    {
+      "source": "HLA-DQA1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "Type I IFN upregulates HLA class I and II on β cells; HLA-DQ presents β cell peptides under IFN-α-driven conditions promoting CD8+ T cell recognition"
+    },
+    {
+      "source": "PTPN2",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "PTPN2 is a negative regulator of type I IFN signaling; PTPN2 deficiency enhances STAT1/STAT2 activation downstream of IFNAR, amplifying IFN-driven islet inflammation"
+    },
+    {
+      "source": "CTLA4",
+      "target": "costim-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is the key inhibitory immune checkpoint competing with CD28 for B7 binding; essential for maintaining islet-specific T cell tolerance"
+    },
+    {
+      "source": "PTPN22",
+      "target": "costim-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PTPN22 (LYP) regulates TCR and CD28 signaling thresholds; R620W variant alters the balance of T cell activation and tolerance to islet antigens"
+    },
+    {
+      "source": "UBASH3A",
+      "target": "costim-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "UBASH3A (STS-2) negatively regulates TCR-induced NF-κB and suppresses T cell activation; variants alter costimulation dependency of islet-reactive T cells"
+    },
+    {
+      "source": "CTSH",
+      "target": "costim-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CTSH processes proinsulin for MHC class II loading; reduced CTSH expression alters the peptide repertoire presented to T cells, shaping autoreactive repertoire"
+    },
+    {
+      "source": "CTSH",
+      "target": "hla-antigen-presentation",
+      "type": "PARTICIPATES_IN",
+      "description": "CTSH is a lysosomal protease in thymic epithelial cells processing proinsulin for HLA class II loading; variants affect T cell selection fidelity"
+    },
+    {
+      "source": "CLEC16A",
+      "target": "hla-antigen-presentation",
+      "type": "PARTICIPATES_IN",
+      "description": "CLEC16A regulates endosomal MHC class II trafficking; reduced CLEC16A expression alters antigen presentation efficiency in APCs"
+    },
+    {
+      "source": "INS",
+      "target": "hla-antigen-presentation",
+      "type": "PARTICIPATES_IN",
+      "description": "Proinsulin/insulin is a primary T1D autoantigen; thymic insulin peptide-MHC class II complexes determine the insulin-specific T cell repertoire"
+    },
+    {
+      "source": "insulin_glargine",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "TREATS",
+      "description": "Long-acting basal insulin analog for 24-hour glucose control in T1D; standard-of-care replacement therapy"
+    },
+    {
+      "source": "insulin_lispro",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "TREATS",
+      "description": "Rapid-acting insulin analog for prandial glucose control; first rapid-acting insulin approved for T1D"
+    },
+    {
+      "source": "insulin_aspart",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "TREATS",
+      "description": "Rapid-acting prandial insulin analog; Fiasp formulation provides ultra-fast absorption for improved postprandial glucose control in T1D"
+    },
+    {
+      "source": "insulin_degludec",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "TREATS",
+      "description": "Ultra-long-acting basal insulin with >42h duration; 40% lower nocturnal hypoglycemia vs glargine in T1D"
+    },
+    {
+      "source": "teplizumab",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "TREATS",
+      "description": "First FDA-approved disease-modifying therapy for T1D; delays onset of Stage 3 T1D by median 2 years in Stage 2 individuals (TN-10 trial)"
+    },
+    {
+      "source": "otelixizumab",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "TREATS",
+      "description": "Investigational anti-CD3 monoclonal antibody; preserved β cell function for 18-24 months in Phase 2 trials at higher dose"
+    },
+    {
+      "source": "golimumab",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "TREATS",
+      "description": "Investigational anti-TNF therapy for new-onset T1D; T1GER Phase 2 trial showed 36% higher C-peptide at 52 weeks vs placebo"
+    },
+    {
+      "source": "abatacept",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "TREATS",
+      "description": "Investigational CTLA4-Ig costimulation blocker; delayed C-peptide decline by 9.6 months in new-onset T1D (TrialNet Phase 2)"
+    },
+    {
+      "source": "rituximab",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "TREATS",
+      "description": "Investigational anti-CD20 B cell depletion; preserved C-peptide at 1 year (20% higher vs placebo) in new-onset T1D (TrialNet)"
+    },
+    {
+      "source": "alefacept",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "TREATS",
+      "description": "Investigational LFA-3-Ig fusion protein; T1DAL trial showed preserved C-peptide at 1 year in new-onset T1D with reduced memory T cells"
+    },
+    {
+      "source": "anti_thymocyte_globulin",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "TREATS",
+      "description": "Investigational polyclonal T cell depletion; low-dose ATG + G-CSF combination preserved C-peptide at 1 year in TrialNet study"
+    },
+    {
+      "source": "low_dose_il2",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "TREATS",
+      "description": "Investigational Treg expansion therapy; Phase 1/2 trials showed dose-dependent Treg expansion with preserved C-peptide in recent-onset T1D"
+    },
+    {
+      "source": "verapamil",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "TREATS",
+      "description": "Investigational β cell preservation therapy; CLVer Phase 2 trial showed 30% higher C-peptide at 52 weeks in new-onset T1D"
+    },
+    {
+      "source": "gad_alum",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "TREATS",
+      "description": "Investigational antigen-specific immunotherapy; intralymphatic GAD-alum preserved C-peptide by 58% at 15 months in HLA-DR3-DQ2 positive patients"
+    },
+    {
+      "source": "ustekinumab",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "TREATS",
+      "description": "Investigational IL-12/23 inhibitor; Phase 2 UST1D trial evaluating C-peptide preservation in new-onset T1D"
+    },
+    {
+      "source": "tcell-insulitis",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "DRIVES",
+      "description": "T cell-mediated islet infiltration drives β cell destruction; CD8+ T cells directly kill β cells via perforin/granzyme and Fas/FasL"
+    },
+    {
+      "source": "beta-cell-er-stress",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "DRIVES",
+      "description": "Cytokine-induced β cell ER stress and TXNIP/NLRP3 inflammasome activation trigger β cell apoptosis and pyroptosis, amplifying immune-mediated destruction"
+    },
+    {
+      "source": "il2-treg",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "DRIVES",
+      "description": "IL-2/Treg axis dysfunction impairs suppression of islet-reactive T cells; Treg deficiency or dysfunction allows unchecked autoimmune attack on β cells"
+    },
+    {
+      "source": "type1-ifn",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "DRIVES",
+      "description": "Type I interferon signature (IFIH1/MDA5-mediated) is detectable before autoantibody seroconversion; IFN upregulates MHC class I on β cells, promoting CD8+ T cell recognition"
+    },
+    {
+      "source": "costim-checkpoint",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "DRIVES",
+      "description": "Dysregulated T cell costimulation and checkpoint pathways (CTLA4, PTPN22, UBASH3A) allow islet-reactive T cells to escape peripheral tolerance checkpoints"
+    },
+    {
+      "source": "hla-antigen-presentation",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "DRIVES",
+      "description": "HLA-DQ2/DQ8-mediated presentation of islet autoantigens (insulin, GAD65, IA-2, ZnT8) to autoreactive CD4+ T cells is the primary genetic driver of T1D autoimmunity"
+    },
+    {
+      "source": "TYK2",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "ASSOCIATED_WITH",
+      "description": "Tyrosine Kinase 2 (19p13.2): TYK2 mediates type I IFN and IL-12 in islet-infiltrating cells."
+    },
+    {
+      "source": "JAK1",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "ASSOCIATED_WITH",
+      "description": "Janus Kinase 1 (1p31.3): JAK1 transduces IFN-γ/IL-6 signals cytotoxic to β cells."
+    },
+    {
+      "source": "FOXP3",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "ASSOCIATED_WITH",
+      "description": "Forkhead Box P3 (Xp11.23): FOXP3+ Tregs deficient in T1D. Major therapeutic strategy."
+    },
+    {
+      "source": "GAD2",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "ASSOCIATED_WITH",
+      "description": "Glutamic Acid Decarboxylase 2 (GAD65) (10p12.1): Primary T1D autoantigen. Anti-GAD65 antibodies in ~80% of patients."
+    },
+    {
+      "source": "PTPRN",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IA-2 / ICA512 (2q35): Key T1D autoantigen biomarker. Predicts progression with >90% specificity."
+    },
+    {
+      "source": "IL2",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "ASSOCIATED_WITH",
+      "description": "Interleukin-2 (4q27): IL-2 signaling impaired in T1D. Low-dose IL-2 therapy in Phase 2 trials."
+    },
+    {
+      "source": "TYK2",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "TYK2 mediates type I IFN and IL-12 signaling in islet-infiltrating immune cells"
+    },
+    {
+      "source": "TYK2",
+      "target": "tcell-insulitis",
+      "type": "PARTICIPATES_IN",
+      "description": "TYK2 transduces IL-12 signals driving Th1 responses in insulitis"
+    },
+    {
+      "source": "JAK1",
+      "target": "beta-cell-er-stress",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK1 transduces IFN-γ/IL-6 signals that are directly cytotoxic to β cells"
+    },
+    {
+      "source": "JAK1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK1 partners with TYK2 to mediate type I IFN signaling in islet cells"
+    },
+    {
+      "source": "FOXP3",
+      "target": "il2-treg",
+      "type": "PARTICIPATES_IN",
+      "description": "FOXP3 is the master transcription factor for Tregs; Tregs are deficient in T1D"
+    },
+    {
+      "source": "FOXP3",
+      "target": "treg-il2-t1d",
+      "type": "PARTICIPATES_IN",
+      "description": "FOXP3+ Tregs are deficient in T1D; restoring Tregs is major therapeutic strategy"
+    },
+    {
+      "source": "CTLA4",
+      "target": "treg-il2-t1d",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 mediates Treg contact-dependent suppression of islet-reactive T cells"
+    },
+    {
+      "source": "GAD2",
+      "target": "hla-antigen-presentation",
+      "type": "PARTICIPATES_IN",
+      "description": "GAD65 is a primary T1D autoantigen presented by HLA-DQ2/DQ8"
+    },
+    {
+      "source": "GAD2",
+      "target": "tcell-insulitis",
+      "type": "PARTICIPATES_IN",
+      "description": "GAD65 is a primary autoantigen targeted by autoreactive T cells in insulitis"
+    },
+    {
+      "source": "PTPRN",
+      "target": "hla-antigen-presentation",
+      "type": "PARTICIPATES_IN",
+      "description": "IA-2 is a key T1D autoantigen biomarker predicting progression with >90% specificity"
+    },
+    {
+      "source": "PTPRN",
+      "target": "tcell-insulitis",
+      "type": "PARTICIPATES_IN",
+      "description": "IA-2 autoantibodies predict progression to clinical T1D"
+    },
+    {
+      "source": "IL2",
+      "target": "il2-treg",
+      "type": "PARTICIPATES_IN",
+      "description": "IL-2 is essential for Treg survival and function; IL-2 signaling impaired in T1D"
+    },
+    {
+      "source": "IL2",
+      "target": "treg-il2-t1d",
+      "type": "PARTICIPATES_IN",
+      "description": "IL-2 is the critical cytokine for Treg survival; low-dose IL-2 therapy in trials"
+    },
+    {
+      "source": "beta-cell-er-stress-t1d",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "DRIVES",
+      "description": "Cytokine-induced β cell ER stress triggers β cell apoptosis via CHOP and TXNIP/NLRP3 pathways"
+    },
+    {
+      "source": "treg-il2-t1d",
+      "target": "Type 1 Diabetes (T1D)",
+      "type": "DRIVES",
+      "description": "Impaired IL-2/Treg axis fails to suppress islet-reactive T cells, allowing unchecked autoimmune β cell destruction"
+    },
+    {
+      "source": "teplizumab",
+      "target": "tcell-insulitis",
+      "type": "MODULATES",
+      "description": "Teplizumab modulates CD3/TCR complex, inducing anergy in effector T cells and expanding Tregs"
+    },
+    {
+      "source": "golimumab",
+      "target": "beta-cell-er-stress",
+      "type": "MODULATES",
+      "description": "Golimumab neutralizes TNF-α, reducing β cell ER stress and apoptosis"
+    },
+    {
+      "source": "golimumab",
+      "target": "tcell-insulitis",
+      "type": "MODULATES",
+      "description": "Golimumab blocks TNF-α, reducing T cell-mediated β cell cytotoxicity"
+    },
+    {
+      "source": "abatacept",
+      "target": "costim-checkpoint",
+      "type": "MODULATES",
+      "description": "Abatacept (CTLA4-Ig) blocks CD28 costimulation, reducing islet-reactive T cell activation"
+    },
+    {
+      "source": "rituximab",
+      "target": "tcell-insulitis",
+      "type": "MODULATES",
+      "description": "Rituximab depletes CD20+ B cells involved in autoantigen presentation to islet-reactive T cells"
+    },
+    {
+      "source": "low_dose_il2",
+      "target": "il2-treg",
+      "type": "MODULATES",
+      "description": "Low-dose IL-2 selectively expands FOXP3+ Tregs, restoring immune regulation"
+    },
+    {
+      "source": "low_dose_il2",
+      "target": "treg-il2-t1d",
+      "type": "MODULATES",
+      "description": "Low-dose IL-2 directly targets the impaired IL-2/Treg axis in T1D"
+    },
+    {
+      "source": "verapamil",
+      "target": "beta-cell-er-stress",
+      "type": "MODULATES",
+      "description": "Verapamil reduces TXNIP expression, protecting β cells from ER stress and inflammasome activation"
+    },
+    {
+      "source": "verapamil",
+      "target": "beta-cell-er-stress-t1d",
+      "type": "MODULATES",
+      "description": "Verapamil reduces TXNIP, protecting β cells from ER stress and apoptosis"
+    },
+    {
+      "source": "ustekinumab",
+      "target": "tcell-insulitis",
+      "type": "MODULATES",
+      "description": "Ustekinumab blocks IL-12/IL-23 p40, inhibiting Th1 and Th17 pathogenic responses"
+    },
+    {
+      "source": "gad_alum",
+      "target": "hla-antigen-presentation",
+      "type": "MODULATES",
+      "description": "GAD-alum induces GAD65-specific immune tolerance by modulating antigen presentation"
+    },
+    {
+      "source": "anti_thymocyte_globulin",
+      "target": "tcell-insulitis",
+      "type": "MODULATES",
+      "description": "ATG depletes effector T cells with relative Treg sparing, altering the Teff/Treg balance"
+    }
+  ]
+}

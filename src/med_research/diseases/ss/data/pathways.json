@@ -1,0 +1,168 @@
+{
+  "pathways": [
+    {
+      "id": "type1-ifn-signature-ss",
+      "name": "Type I Interferon Signature",
+      "description": "The IFN signature is the dominant molecular hallmark of SS — present in ~60-70% of patients. Salivary gland plasmacytoid dendritic cells (pDCs) produce IFN-α in response to immune complexes containing anti-Ro/SSA autoantibodies and RNA, engaging TLR7. The IFN signature score correlates with disease activity, anti-Ro/SSA titers, hypergammaglobulinemia, and lymphoma risk. IRF5 and STAT4 are key genetic drivers of this pathway in SS.",
+      "key_components": [
+        "IRF5",
+        "IRF7",
+        "STAT4",
+        "IFNA1",
+        "IFNAR1",
+        "IFNAR2",
+        "JAK1",
+        "TYK2",
+        "TLR7",
+        "TLR9",
+        "MYD88"
+      ],
+      "therapeutic_targets": [
+        "hydroxychloroquine (TLR7/9 inhibition)",
+        "Potential: anti-IFNAR1 (anifrolumab)",
+        "Potential: JAK inhibitors"
+      ],
+      "references": [
+        "PMID:18204098",
+        "PMID:24076602"
+      ]
+    },
+    {
+      "id": "bcell-baff-ss",
+      "name": "B Cell Hyperactivity & BAFF/APRIL Signaling",
+      "description": "B cell hyperactivity is the hallmark immunologic feature of SS. BAFF (BLyS/TNFSF13B) is markedly elevated in serum, saliva, and salivary glands, driving survival and differentiation of autoreactive B cells. BAFF-R, TACI, and BCMA are the three BAFF/APRIL receptors on B cells. Transgenic BAFF overexpression in mice recapitulates SS-like disease including salivary gland destruction and lymphoma. The BAFF pathway directly links B cell hyperactivity to the ~15-20× increased risk of marginal zone B cell lymphoma in SS.",
+      "key_components": [
+        "BAFF",
+        "APRIL",
+        "BAFF-R",
+        "TACI",
+        "BCMA",
+        "BLK",
+        "BANK1",
+        "ETS1",
+        "IKZF1"
+      ],
+      "therapeutic_targets": [
+        "belimumab (anti-BAFF)",
+        "ianalumab (anti-BAFF-R with ADCC)",
+        "Potential: anti-APRIL"
+      ],
+      "references": [
+        "PMID:12634936",
+        "PMID:25482404"
+      ]
+    },
+    {
+      "id": "tfh-germinal-ss",
+      "name": "Tfh-Germinal Center Axis & Lymphoid Neogenesis",
+      "description": "SS salivary glands are a site of active germinal center (GC) formation — ectopic lymphoid structures with B cell follicles, Tfh cells, and follicular dendritic cell networks. GC+ salivary gland biopsies are associated with higher disease activity, more severe glandular destruction, and increased lymphoma risk. The CXCL13-CXCR5 axis directs Tfh and B cells to these follicles. CD40-CD40L costimulation drives GC reactions. This GC biology is directly targetable via CD40 blockade (iscalimab) and BAFF inhibition.",
+      "key_components": [
+        "CXCR5",
+        "CXCL13",
+        "CD40",
+        "CD40LG",
+        "ICOS",
+        "BCL6",
+        "TNFSF4",
+        "IL21"
+      ],
+      "therapeutic_targets": [
+        "iscalimab (anti-CD40)",
+        "abatacept (CTLA4-Ig — indirect T cell costimulation block)",
+        "Potential: anti-ICOSL"
+      ],
+      "references": [
+        "PMID:27630099",
+        "PMID:35145352"
+      ]
+    },
+    {
+      "id": "tlr-innate-ss",
+      "name": "TLR7/9 Innate Immune Sensing",
+      "description": "TLR7 (ssRNA sensor) and TLR9 (unmethylated CpG DNA sensor) in endosomes of pDCs and B cells drive IFN-α production and B cell activation in SS. Anti-Ro/SSA antibodies form immune complexes with RNA-containing autoantigens, which are endocytosed via FcγRIIa (FCGR2A) and delivered to TLR7-containing endosomes. This creates a self-amplifying loop: immune complexes → pDC activation → IFN-α → B cell activation → more autoantibodies → more immune complexes. Hydroxychloroquine inhibits this pathway by preventing endosomal acidification required for TLR activation.",
+      "key_components": [
+        "TLR7",
+        "TLR9",
+        "MYD88",
+        "IRAK4",
+        "IRF5",
+        "IRF7",
+        "FCGR2A"
+      ],
+      "therapeutic_targets": [
+        "hydroxychloroquine (TLR7/9)",
+        "Potential: TLR7/9 antagonists"
+      ],
+      "references": [
+        "PMID:29969085",
+        "PMID:31187282"
+      ]
+    },
+    {
+      "id": "jak-stat-ss",
+      "name": "JAK-STAT Signaling in SS",
+      "description": "Multiple cytokines driving SS pathology signal through JAK-STAT pathways: type I IFN (JAK1/TYK2 → STAT1/2), IL-6 (JAK1/JAK2 → STAT3), IL-12/23 (TYK2/JAK2 → STAT4), and IL-21 (JAK1/JAK3 → STAT3). STAT4 is a major SS genetic risk factor. JAK inhibitors (tofacitinib, baricitinib) are being investigated in SS, with early case series showing improvement in systemic disease and glandular function.",
+      "key_components": [
+        "JAK1",
+        "JAK2",
+        "JAK3",
+        "TYK2",
+        "STAT1",
+        "STAT2",
+        "STAT3",
+        "STAT4",
+        "IRF5"
+      ],
+      "therapeutic_targets": [
+        "Potential: tofacitinib (JAK1/3)",
+        "Potential: baricitinib (JAK1/2)",
+        "Potential: deucravacitinib (TYK2)"
+      ],
+      "references": [
+        "PMID:19109131",
+        "PMID:24076602"
+      ]
+    },
+    {
+      "id": "nfkb-inflammatory-ss",
+      "name": "NF-κB / Inflammatory Cytokine Axis",
+      "description": "Chronic NF-κB activation drives IL-6, TNF-α, and BAFF production. TNFAIP3/TNIP1 dysfunction leads to persistent NF-κB in salivary glands.",
+      "key_components": [
+        "TNFAIP3",
+        "TNIP1",
+        "NFKB1",
+        "RELA",
+        "IL6",
+        "TNF",
+        "IL1B",
+        "BAFF"
+      ],
+      "therapeutic_targets": [
+        "Potential: JAK inhibitors"
+      ],
+      "references": [
+        "PMID:19165926"
+      ]
+    },
+    {
+      "id": "fibrosis-lymphoma-ss",
+      "name": "Tissue Remodeling, Fibrosis & Lymphoma",
+      "description": "Chronic inflammation leads to gland destruction, fibrosis, and 15-20x lymphoma risk.",
+      "key_components": [
+        "TGFB1",
+        "AICDA",
+        "BCL2",
+        "MYC",
+        "BAFF",
+        "CXCR5",
+        "CXCL13"
+      ],
+      "therapeutic_targets": [
+        "Potential: Anti-BAFF, BTK inhibitors"
+      ],
+      "references": [
+        "PMID:27630099"
+      ]
+    }
+  ]
+}

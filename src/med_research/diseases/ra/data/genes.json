@@ -1,0 +1,329 @@
+{
+  "genes": [
+    {
+      "id": "HLA-DRB1",
+      "name": "HLA Class II DR Beta 1",
+      "chromosome": "6p21.32",
+      "function": "Antigen presentation to CD4+ T cells via MHC class II",
+      "ra_evidence": "Shared epitope alleles (QKRAA/QRRAA/RRRAA at positions 70-74) are the strongest genetic risk factor for RA, especially ACPA+ disease. *0401, *0404, *0101 alleles confer 3-5x increased risk.",
+      "odds_ratio": 4.0,
+      "references": [
+        "PMID:17804836",
+        "PMID:20453840"
+      ],
+      "category": "MHC / Antigen Presentation"
+    },
+    {
+      "id": "PTPN22",
+      "name": "Protein Tyrosine Phosphatase N22 (LYP)",
+      "chromosome": "1p13.2",
+      "function": "Negative regulator of T cell receptor and B cell receptor signaling",
+      "ra_evidence": "R620W (rs2476601) gain-of-function variant is the strongest non-HLA risk factor for RA (OR 1.8). Alters TCR signaling thresholds and Treg function.",
+      "odds_ratio": 1.8,
+      "references": [
+        "PMID:15208781",
+        "PMID:17554300"
+      ],
+      "category": "T Cell Signaling"
+    },
+    {
+      "id": "STAT4",
+      "name": "Signal Transducer and Activator of Transcription 4",
+      "chromosome": "2q32.2",
+      "function": "Mediates IL-12 and type I IFN signaling; promotes Th1 and Th17 differentiation",
+      "ra_evidence": "rs7574865 risk allele associated with RA susceptibility (OR 1.3). Shared risk with SLE and Sjögren's syndrome.",
+      "odds_ratio": 1.3,
+      "references": [
+        "PMID:17804842",
+        "PMID:19109131"
+      ],
+      "category": "JAK-STAT Signaling"
+    },
+    {
+      "id": "TNFAIP3",
+      "name": "TNF Alpha Induced Protein 3 (A20)",
+      "chromosome": "6q23.3",
+      "function": "Ubiquitin-editing enzyme that negatively regulates NF-κB signaling",
+      "ra_evidence": "Polymorphisms in TNFAIP3 region associated with RA. A20 limits TNF-induced NF-κB activation in synovial fibroblasts.",
+      "odds_ratio": 1.4,
+      "references": [
+        "PMID:19165926",
+        "PMID:17982455"
+      ],
+      "category": "NF-κB Pathway"
+    },
+    {
+      "id": "CTLA4",
+      "name": "Cytotoxic T-Lymphocyte Associated Protein 4",
+      "chromosome": "2q33.2",
+      "function": "Inhibitory receptor on T cells that competes with CD28 for B7 binding, dampening T cell activation",
+      "ra_evidence": "CTLA4 polymorphisms associated with RA. The therapeutic CTLA4-Ig fusion (abatacept) is an approved RA biologic.",
+      "odds_ratio": 1.3,
+      "references": [
+        "PMID:15897976",
+        "PMID:17172642"
+      ],
+      "category": "T Cell Costimulation"
+    },
+    {
+      "id": "TRAF1_C5",
+      "name": "TRAF1 / Complement C5 Locus",
+      "chromosome": "9q33.2",
+      "function": "TRAF1: TNF receptor-associated factor regulating NF-κB. C5: Complement component C5.",
+      "ra_evidence": "rs10818488 at TRAF1/C5 locus associated with RA risk (OR 1.2). Links TNF signaling and complement activation.",
+      "odds_ratio": 1.2,
+      "references": [
+        "PMID:17804836",
+        "PMID:18794853"
+      ],
+      "category": "TNF-alpha Signaling"
+    },
+    {
+      "id": "IL6R",
+      "name": "Interleukin-6 Receptor",
+      "chromosome": "1q21.3",
+      "function": "Receptor for IL-6; mediates pro-inflammatory signaling via JAK1/JAK2-STAT3 and soluble gp130 trans-signaling",
+      "ra_evidence": "IL6R polymorphisms associated with RA. IL-6 is a central pathogenic cytokine; tocilizumab (anti-IL-6R) is a highly effective RA therapy.",
+      "odds_ratio": 1.2,
+      "references": [
+        "PMID:19033141",
+        "PMID:18823379"
+      ],
+      "category": "IL-6 / JAK-STAT"
+    },
+    {
+      "id": "CCR6",
+      "name": "C-C Chemokine Receptor 6",
+      "chromosome": "6q27",
+      "function": "Chemokine receptor directing Th17 cell migration to inflamed tissues",
+      "ra_evidence": "CCR6 variant rs3093024 associated with RA risk. CCR6+ Th17 cells infiltrate the rheumatoid synovium.",
+      "odds_ratio": 1.2,
+      "references": [
+        "PMID:20453842",
+        "PMID:17804836"
+      ],
+      "category": "Th17 / IL-17 Pathway"
+    },
+    {
+      "id": "PADI4",
+      "name": "Peptidyl Arginine Deiminase 4",
+      "chromosome": "1p36.13",
+      "function": "Catalyzes citrullination of arginine residues; generates autoantigens recognized by anti-CCP antibodies",
+      "ra_evidence": "PADI4 haplotypes associated with RA, especially in Asian populations. PADI4 is a key enzyme generating citrullinated autoantigens in the rheumatoid joint.",
+      "odds_ratio": 1.3,
+      "references": [
+        "PMID:12833157",
+        "PMID:16418742"
+      ],
+      "category": "Citrullination / Autoantigen Generation"
+    },
+    {
+      "id": "FCGR2A",
+      "name": "Fc Gamma Receptor IIA (CD32)",
+      "chromosome": "1q23.3",
+      "function": "Low-affinity IgG Fc receptor mediating immune complex clearance and phagocytosis",
+      "ra_evidence": "FCGR2A H131R polymorphism associated with RA. Altered IgG binding affects immune complex clearance in the joint.",
+      "odds_ratio": 1.2,
+      "references": [
+        "PMID:11035103",
+        "PMID:14698269"
+      ],
+      "category": "Immune Complex Clearance"
+    },
+    {
+      "id": "IRF5",
+      "name": "Interferon Regulatory Factor 5",
+      "chromosome": "7q32.1",
+      "function": "Transcription factor driving type I IFN and proinflammatory cytokine expression",
+      "ra_evidence": "IRF5 polymorphisms associated with RA and other autoimmune diseases. Drives IFN signature that overlaps with SLE.",
+      "odds_ratio": 1.2,
+      "references": [
+        "PMID:18204098",
+        "PMID:20694012"
+      ],
+      "category": "Type I Interferon Pathway"
+    },
+    {
+      "id": "CD40",
+      "name": "CD40 (TNFRSF5)",
+      "chromosome": "20q13.12",
+      "function": "Costimulatory receptor on B cells and APCs; binds CD40L (CD154) on T cells to drive germinal center responses",
+      "ra_evidence": "CD40 polymorphisms associated with RA. The CD40-CD40L axis drives B cell activation and autoantibody production in RA synovium.",
+      "odds_ratio": 1.2,
+      "references": [
+        "PMID:19169254",
+        "PMID:20383147"
+      ],
+      "category": "T Cell Costimulation"
+    },
+    {
+      "id": "IL2RA",
+      "name": "Interleukin-2 Receptor Alpha Chain (CD25)",
+      "chromosome": "10p15.1",
+      "function": "High-affinity IL-2 receptor subunit; critical for Treg development and maintenance",
+      "ra_evidence": "IL2RA polymorphisms associated with RA and other autoimmune diseases. Altered IL-2 signaling impairs Treg function.",
+      "odds_ratio": 1.2,
+      "references": [
+        "PMID:17804836",
+        "PMID:17172642"
+      ],
+      "category": "T Cell Signaling"
+    },
+    {
+      "id": "IL2RB",
+      "name": "Interleukin-2 Receptor Beta Chain (CD122)",
+      "chromosome": "22q12.3",
+      "function": "Shared receptor subunit for IL-2 and IL-15 signaling in T cells and NK cells",
+      "ra_evidence": "IL2RB locus associated with RA. IL-15 is elevated in RA synovial fluid and drives T cell and NK cell activation.",
+      "odds_ratio": 1.2,
+      "references": [
+        "PMID:20453842",
+        "PMID:17804836"
+      ],
+      "category": "T Cell Signaling"
+    },
+    {
+      "id": "PRDM1",
+      "name": "PR Domain Zinc Finger Protein 1 (BLIMP-1)",
+      "chromosome": "6q21",
+      "function": "Master transcriptional regulator of plasma cell differentiation",
+      "ra_evidence": "PRDM1 polymorphisms associated with RA. BLIMP-1 drives B cell differentiation into antibody-secreting plasma cells in RA synovium.",
+      "odds_ratio": 1.2,
+      "references": [
+        "PMID:20453842",
+        "PMID:17804836"
+      ],
+      "category": "B Cell Differentiation"
+    },
+    {
+      "id": "IKZF3",
+      "name": "IKAROS Family Zinc Finger 3 (AIOLOS)",
+      "chromosome": "17q12",
+      "function": "Transcription factor regulating B cell differentiation and plasma cell function",
+      "ra_evidence": "IKZF3 polymorphisms associated with RA. AIOLOS is required for long-lived plasma cell maintenance.",
+      "odds_ratio": 1.2,
+      "references": [
+        "PMID:20453840",
+        "PMID:27892473"
+      ],
+      "category": "B Cell Differentiation"
+    },
+    {
+      "id": "REL",
+      "name": "c-Rel Proto-Oncogene",
+      "chromosome": "2p16.1",
+      "function": "NF-κB family transcription factor; critical for Treg development, B cell survival, and inflammatory cytokine production",
+      "ra_evidence": "c-Rel polymorphisms associated with RA. c-Rel regulates multiple inflammatory genes in RA synovial fibroblasts.",
+      "odds_ratio": 1.2,
+      "references": [
+        "PMID:17804836",
+        "PMID:20453840"
+      ],
+      "category": "NF-κB Pathway"
+    },
+    {
+      "id": "TYK2",
+      "name": "Tyrosine Kinase 2",
+      "chromosome": "19p13.2",
+      "function": "JAK family kinase mediating type I IFN, IL-12, and IL-23 signaling",
+      "ra_evidence": "TYK2 polymorphisms associated with RA, SLE, and psoriasis. Mediates pathogenic IL-12/23-driven Th1/Th17 responses.",
+      "odds_ratio": 1.2,
+      "references": [
+        "PMID:27892473",
+        "PMID:33846604"
+      ],
+      "category": "JAK-STAT Signaling"
+    },
+    {
+      "id": "ANKRD55",
+      "name": "Ankyrin Repeat Domain 55",
+      "chromosome": "5q11.2",
+      "function": "Regulates T cell activation and IL-2 production via NF-κB pathway modulation",
+      "ra_evidence": "ANKRD55 polymorphisms associated with RA and MS. Functions in CD4+ T cell activation.",
+      "odds_ratio": 1.2,
+      "references": [
+        "PMID:20453842",
+        "PMID:27892473"
+      ],
+      "category": "T Cell Signaling"
+    },
+    {
+      "id": "MMP9",
+      "name": "Matrix Metalloproteinase 9 (Gelatinase B)",
+      "chromosome": "20q13.12",
+      "function": "Degrades extracellular matrix components; key mediator of joint destruction and angiogenesis in RA",
+      "ra_evidence": "MMP9 is highly expressed in RA synovium and synovial fluid. Correlates with radiographic progression and joint erosion.",
+      "odds_ratio": 1.1,
+      "references": [
+        "PMID:10850875",
+        "PMID:17549729"
+      ],
+      "category": "Joint Destruction / ECM Remodeling"
+    },
+    {
+      "id": "TNF",
+      "name": "Tumor Necrosis Factor Alpha",
+      "chromosome": "6p21.33",
+      "function": "Master pro-inflammatory cytokine driving synovial inflammation, osteoclast activation, and cartilage degradation",
+      "ra_evidence": "TNF promoter polymorphisms associated with RA severity. TNF is the dominant cytokine in RA synovium. Anti-TNF biologics transformed RA treatment.",
+      "odds_ratio": 1.2,
+      "references": [
+        "PMID:10643798",
+        "PMID:17469101"
+      ],
+      "category": "TNF-alpha Signaling"
+    },
+    {
+      "id": "CD28",
+      "name": "CD28 Costimulatory Receptor",
+      "chromosome": "2q33.2",
+      "function": "Primary T cell costimulatory receptor binding B7.1/B7.2 (CD80/CD86) on APCs",
+      "ra_evidence": "CD28 expression is dysregulated in RA T cells. CD28null T cells accumulate in RA and produce proinflammatory cytokines.",
+      "odds_ratio": 1.2,
+      "references": [
+        "PMID:15897976",
+        "PMID:24121846"
+      ],
+      "category": "T Cell Costimulation"
+    },
+    {
+      "id": "BLK",
+      "name": "B Lymphoid Tyrosine Kinase",
+      "chromosome": "8p23.1",
+      "function": "Src family kinase involved in B cell receptor signaling and tolerance",
+      "ra_evidence": "BLK polymorphisms shared across multiple autoimmune diseases including RA. Reduced BLK expression alters BCR signaling.",
+      "odds_ratio": 1.2,
+      "references": [
+        "PMID:19838195",
+        "PMID:25865496"
+      ],
+      "category": "B Cell Signaling"
+    },
+    {
+      "id": "BANK1",
+      "name": "B Cell Scaffold Protein with Ankyrin Repeats 1",
+      "chromosome": "4q24",
+      "function": "Scaffold protein modulating BCR-induced calcium mobilization and signaling",
+      "ra_evidence": "BANK1 polymorphisms associated with RA, SLE, and systemic sclerosis. Regulates B cell hyperresponsiveness.",
+      "odds_ratio": 1.2,
+      "references": [
+        "PMID:20453840",
+        "PMID:27892473"
+      ],
+      "category": "B Cell Signaling"
+    },
+    {
+      "id": "RANKL",
+      "name": "Receptor Activator of NF-κB Ligand (TNFSF11)",
+      "chromosome": "13q14.11",
+      "function": "Essential cytokine for osteoclast differentiation and activation; drives bone erosion in inflammatory arthritis",
+      "ra_evidence": "RANKL is highly expressed in RA synovium by T cells and synovial fibroblasts. Denosumab (anti-RANKL) reduces bone erosion in RA.",
+      "odds_ratio": 1.2,
+      "references": [
+        "PMID:11518714",
+        "PMID:18215943"
+      ],
+      "category": "Bone Erosion / Osteoclast Activation"
+    }
+  ]
+}
