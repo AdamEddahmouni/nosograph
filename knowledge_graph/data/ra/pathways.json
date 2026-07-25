@@ -1,0 +1,68 @@
+{
+  "pathways": [
+    {
+      "id": "tnf-signaling",
+      "name": "TNF-alpha Signaling",
+      "description": "The dominant inflammatory pathway in RA. TNF-alpha produced by synovial macrophages and fibroblasts binds TNFR1/TNFR2, activating NF-κB and MAP kinase cascades. This drives production of IL-6, IL-1, MMPs, and RANKL, creating a self-amplifying inflammatory loop in the synovium.",
+      "key_components": ["TNF", "TNFR1", "TNFR2", "TRADD", "TRAF2", "RIPK1", "NFKB1", "RELA", "MAP3K", "MAPK14"],
+      "therapeutic_targets": ["adalimumab (anti-TNF)", "etanercept (TNFR2-Fc)", "infliximab (anti-TNF)", "certolizumab pegol (anti-TNF)", "golimumab (anti-TNF)"],
+      "references": ["PMID:10643798", "PMID:17469101"]
+    },
+    {
+      "id": "il6-jak-stat",
+      "name": "IL-6 / JAK-STAT Signaling",
+      "description": "IL-6 is the second dominant cytokine in RA, driving systemic inflammation (CRP, hepcidin, thrombocytosis), synovial pannus formation, and Th17 polarization. IL-6 signals through gp130-IL-6R complexes activating JAK1/JAK2/TYK2 -> STAT3. JAK inhibitors block multiple cytokine signals simultaneously.",
+      "key_components": ["IL6", "IL6R", "IL6ST", "JAK1", "JAK2", "TYK2", "STAT3", "SOCS3"],
+      "therapeutic_targets": ["tocilizumab (anti-IL-6R)", "sarilumab (anti-IL-6R)", "baricitinib (JAK1/2)", "tofacitinib (JAK1/3)", "upadacitinib (JAK1)"],
+      "references": ["PMID:23487426", "PMID:24793845"]
+    },
+    {
+      "id": "tcell-costim",
+      "name": "T Cell Costimulation & Activation",
+      "description": "CD4+ T cells are abundant in RA synovium and provide help to B cells and macrophages. CD28 costimulation (B7.1/B7.2 binding) is required for full T cell activation. CTLA4 competitively inhibits this interaction. Abatacept (CTLA4-Ig) blocks T cell costimulation. T cell-derived RANKL drives osteoclastogenesis.",
+      "key_components": ["CD28", "CTLA4", "CD80", "CD86", "CD40LG", "CD40", "ICOS", "ICOSLG", "PTPN22"],
+      "therapeutic_targets": ["abatacept (CTLA4-Ig)"],
+      "references": ["PMID:14604836", "PMID:21532035"]
+    },
+    {
+      "id": "bcell-autoantibody",
+      "name": "B Cell Signaling & Autoantibody Production",
+      "description": "B cells in RA synovium form ectopic germinal centers producing anti-CCP and RF autoantibodies. BAFF promotes B cell survival. CD20+ B cells present antigen to T cells. Rituximab depletes CD20+ B cells. BLK and BANK1 regulate BCR signaling thresholds.",
+      "key_components": ["CD19", "CD20", "BLK", "BANK1", "BAFF", "PRDM1", "IKZF3", "FCGR2A"],
+      "therapeutic_targets": ["rituximab (anti-CD20)"],
+      "references": ["PMID:16941250", "PMID:20131263"]
+    },
+    {
+      "id": "complement",
+      "name": "Complement System & Immune Complex Deposition",
+      "description": "Immune complexes (RF-IgG and anti-CCP-citrullinated antigen) activate classical complement in RA synovium. C5a is a potent chemoattractant recruiting neutrophils to the joint. TRAF1/C5 locus links complement to RA genetic risk.",
+      "key_components": ["C1Q", "C3", "C5", "C5AR1", "FCGR2A", "FCGR3A", "CR1", "TRAF1"],
+      "therapeutic_targets": ["Potential: C5aR antagonists (avacopan)"],
+      "references": ["PMID:18794853", "PMID:29180258"]
+    },
+    {
+      "id": "nfkb",
+      "name": "NF-κB Inflammatory Pathway",
+      "description": "NF-κB is the central transcriptional hub integrating TNF, IL-1, TLR, and RANKL signals in RA. REL and RELA subunits drive expression of TNF, IL-6, IL-1β, MMPs, and COX-2. TNFAIP3 (A20) normally limits NF-κB activation; A20 variants impair this negative regulation.",
+      "key_components": ["REL", "RELA", "NFKB1", "NFKB2", "TNFAIP3", "IKBKG", "TNF", "IL6", "IL1B"],
+      "therapeutic_targets": ["Potential: IKK inhibitors (experimental)", "proteasome inhibitors (bortezomib)"],
+      "references": ["PMID:19165926", "PMID:17982455"]
+    },
+    {
+      "id": "citrullination",
+      "name": "Citrullination & Autoantigen Generation",
+      "description": "PADI4 (peptidyl arginine deiminase 4) catalyzes conversion of arginine to citrulline in proteins. In RA, PADI4 is activated in the inflamed synovium, generating citrullinated autoantigens (vimentin, fibrinogen, α-enolase). HLA-DRB1 shared epitope alleles preferentially present citrullinated peptides to T cells, breaking tolerance and driving anti-CCP antibody production.",
+      "key_components": ["PADI4", "HLA-DRB1", "CASP8", "PTPN22"],
+      "therapeutic_targets": ["Potential: PAD inhibitors (experimental, preclinical stage)"],
+      "references": ["PMID:12833157", "PMID:16418742"]
+    },
+    {
+      "id": "bone-erosion",
+      "name": "Bone Erosion & Osteoclast Activation",
+      "description": "Bone erosion is the hallmark of destructive RA. Synovial fibroblasts and activated T cells express RANKL, which binds RANK on osteoclast precursors, driving their differentiation into mature bone-resorbing osteoclasts. TNF, IL-6, and IL-1 synergistically enhance RANKL-mediated osteoclastogenesis.",
+      "key_components": ["RANKL", "RANK", "TNFRSF11A", "TNF", "IL6", "IL1B", "MMP9", "CTSK"],
+      "therapeutic_targets": ["denosumab (anti-RANKL)", "bisphosphonates", "Potential: cathepsin K inhibitors"],
+      "references": ["PMID:11518714", "PMID:18215943"]
+    }
+  ]
+}
