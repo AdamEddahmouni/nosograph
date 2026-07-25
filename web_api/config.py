@@ -61,6 +61,11 @@ API_TAGS = [
          "Gene expression correlation — Connectivity Map approach scoring "
          "drug mechanisms against curated SLE transcriptomic signatures."
      )},
+    {"name": "CAR-T",
+     "description": (
+         "CAR-T Response Predictor — gene-level CD19 CAR-T therapy "
+         "suitability scoring for all 35 lupus-associated genes."
+     )},
     {"name": "Jobs",
      "description": (
          "Submit and track async analysis jobs with real-time WebSocket "

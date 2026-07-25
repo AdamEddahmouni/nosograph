@@ -295,6 +295,46 @@ Add interactive Chart.js radar (spider) charts to the three core scoring reports
 
 ---
 
+## [Phase 14] CAR-T Response Predictor — 2026-07-25
+
+### Sprint Goal
+Gene-level CD19 CAR-T cell therapy suitability scoring across all 35 lupus-associated genes, identifying which pathways are most B-cell-dependent and likely to respond to CAR-T immune reset.
+
+---
+
+### Added
+
+#### CAR-T Predictor Module (`car_t_predictor/`)
+- **`predictor.py`** — Core scoring engine with curated gene-level profiling:
+  - B Cell Dependency (35%) — centrality to B cell biology (CD20, BLK, BTK, BANK1, PRDM1)
+  - Autoantibody Association (25%) — link to pathogenic anti-dsDNA/ANA
+  - Plasma Cell Relevance (20%) — critical for long-lived plasma cell survival
+  - CD19 Targeting (15%) — direct impact of CD19 CAR-T on pathway
+  - Clinical Evidence (5%) — published CAR-T/deep B cell depletion data
+- **`report.py`** — HTML report with radar chart, highlights grid, ranked table, methodology
+- Curated scoring dictionaries for all 35 genes with biological rationale
+
+#### Results
+- **Top Gene**: PRDM1 (BLIMP-1) — **9.28/10** — plasma cell master transcription factor
+- **#2**: BAFF/TNFSF13B — **9.07/10** — B cell survival factor (belimumab target)
+- **Bottom**: C4A — **1.65/10** — complement deficiency, not B-cell-driven
+- 3 Tier 1 genes (≥8.0), 6 Tier 2 (7.0-8.0), 7 Tier 3 (5.0-7.0)
+
+#### Web API Integration
+- **`GET /api/cart/suitability?top_n=10`** — Ranked gene-level CAR-T suitability scores
+- "CAR-T" OpenAPI tag in config
+
+#### Dashboard & CLI
+- CAR-T Predictor card in the web dashboard (Phase 14)
+- CLI: `python main.py cart --top 15 --export-html`
+
+#### Tests
+- **11 non-slow + 3 slow tests** in `tests/test_car_t_predictor.py`
+
+**All CAR-T predictor tests pass. Platform now spans 14 phases.**
+
+---
+
 ## [Future] Planned Features — Roadmap
 The following features are documented for future implementation:
 

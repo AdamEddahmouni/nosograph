@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAR-T Response Predictor Report</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #0a0a1a; color: #e2e8f0; line-height: 1.6; min-height: 100vh;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 24px; }
+        .hero {
+            text-align: center; padding: 48px 24px 32px;
+            background: linear-gradient(135deg, rgba(220,38,38,0.12), rgba(147,51,234,0.1));
+            border-radius: 16px; margin-bottom: 32px;
+        }
+        .hero h1 { font-size: 2.2rem; font-weight: 800; margin-bottom: 8px; }
+        .hero .subtitle { color: #94a3b8; font-size: 1rem; }
+        .hero .date { color: #64748b; font-size: 0.82rem; margin-top: 8px; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-bottom: 32px; }
+        .stat-card { background: rgba(30,30,50,0.8); border: 1px solid rgba(100,100,150,0.2); border-radius: 12px; padding: 20px; text-align: center; }
+        .stat-value { font-size: 2rem; font-weight: 800; }
+        .stat-label { color: #94a3b8; font-size: 0.8rem; margin-top: 4px; }
+        .section-title { font-size: 1.4rem; font-weight: 700; margin: 32px 0 16px; padding-bottom: 8px; border-bottom: 1px solid rgba(100,100,150,0.2); }
+        .highlights-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; margin-bottom: 32px; }
+        .highlight-card { background: rgba(30,30,50,0.8); border: 1px solid rgba(100,100,150,0.2); border-radius: 10px; padding: 16px; text-align: center; transition: border-color 0.2s; }
+        .highlight-card:hover { border-color: rgba(220,38,38,0.4); }
+        .highlight-rank { font-size: 0.8rem; color: #64748b; }
+        .highlight-drug { font-size: 0.9rem; font-weight: 600; margin: 4px 0; }
+        .highlight-score { font-size: 1.4rem; font-weight: 700; }
+        .highlight-meta { font-size: 0.75rem; color: #64748b; }
+        table { width: 100%; border-collapse: collapse; font-size: 0.85rem; background: rgba(30,30,50,0.6); border-radius: 12px; overflow: hidden; }
+        th { background: rgba(50,50,70,0.8); padding: 12px 10px; text-align: left; font-weight: 600; color: #94a3b8; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; }
+        td { padding: 10px; border-bottom: 1px solid rgba(100,100,150,0.1); }
+        tr:hover { background: rgba(100,100,150,0.08); }
+        .col-rank { width: 40px; color: #64748b; text-align: center; }
+        .col-drug { font-weight: 600; }
+        .col-score { font-weight: 700; font-size: 1rem; text-align: center; }
+        .col-sign, .col-overlap, .col-cell, .col-evid, .col-dir { text-align: center; }
+        .methodology { background: rgba(30,30,50,0.6); border: 1px solid rgba(100,100,150,0.2); border-radius: 12px; padding: 24px; margin: 32px 0; }
+        .methodology h3 { margin-bottom: 12px; }
+        .methodology ul { padding-left: 20px; color: #94a3b8; }
+        .methodology li { margin-bottom: 6px; }
+        footer { text-align: center; padding: 32px 0; color: #64748b; font-size: 0.8rem; border-top: 1px solid rgba(100,100,150,0.1); margin-top: 32px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>🔬 CAR-T Response Predictor Report</h1>
+            <p class="subtitle">
+                Gene-Level CD19 CAR-T Cell Therapy Suitability Scoring Across 35 Lupus-Associated Genes
+            </p>
+            <p class="date">Generated: July 25, 2026 at 01:12</p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value" style="color:#a78bfa;">35</div>
+                <div class="stat-label">Genes Scored</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" style="color:#4ade80;">5.40</div>
+                <div class="stat-label">Average Score</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" style="color:#f87171;">9</div>
+                <div class="stat-label">Tier 1 (Strong Candidates)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" style="color:#fb923c;">1</div>
+                <div class="stat-label">Tier 2 (Good Candidates)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" style="color:#fbbf24;">9</div>
+                <div class="stat-label">Tier 3 (Possible Benefit)</div>
+            </div>
+        </div>
+
+        <h2 class="section-title">🎯 Score Dimension Radar — Top 5 Genes</h2>
+        <div class="radar-container" style="max-width:700px;margin:0 auto 28px;">
+            <canvas id="radarChart" style="max-height:500px;"></canvas>
+        </div>
+
+        <h2 class="section-title">🌟 Top CAR-T Response Candidates</h2>
+        <div class="highlights-grid">
+            
+            <div class="highlight-card">
+                <div class="highlight-rank">#1</div>
+                <div class="highlight-drug">PR/SET Domain 1 (BLIMP-1)</div>
+                <div class="highlight-score" style="color: #f87171;">9.3</div>
+                <div class="highlight-meta">Lymphocyte Development</div>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-rank">#2</div>
+                <div class="highlight-drug">B Cell Activating Factor (TNFSF13B / BLyS)</div>
+                <div class="highlight-score" style="color: #f87171;">9.1</div>
+                <div class="highlight-meta">B Cell Survival</div>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-rank">#3</div>
+                <div class="highlight-drug">IKAROS Family Zinc Finger 3 (AIOLOS)</div>
+                <div class="highlight-score" style="color: #f87171;">8.8</div>
+                <div class="highlight-meta">Lymphocyte Development</div>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-rank">#4</div>
+                <div class="highlight-drug">CD20 (MS4A1 / B-lymphocyte antigen CD20)</div>
+                <div class="highlight-score" style="color: #f87171;">8.8</div>
+                <div class="highlight-meta">B Cell Signaling</div>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-rank">#5</div>
+                <div class="highlight-drug">Bruton Tyrosine Kinase</div>
+                <div class="highlight-score" style="color: #f87171;">8.6</div>
+                <div class="highlight-meta">B Cell Signaling</div>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-rank">#6</div>
+                <div class="highlight-drug">IKAROS Family Zinc Finger 1 (IKAROS)</div>
+                <div class="highlight-score" style="color: #f87171;">8.5</div>
+                <div class="highlight-meta">Lymphocyte Development</div>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-rank">#7</div>
+                <div class="highlight-drug">B Lymphoid Tyrosine Kinase</div>
+                <div class="highlight-score" style="color: #f87171;">8.4</div>
+                <div class="highlight-meta">B Cell Signaling</div>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-rank">#8</div>
+                <div class="highlight-drug">B Cell Scaffold Protein with Ankyrin Repeats 1</div>
+                <div class="highlight-score" style="color: #f87171;">8.0</div>
+                <div class="highlight-meta">B Cell Signaling</div>
+            </div>
+        </div>
+
+        <h2 class="section-title">📋 Complete Gene Rankings</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Gene</th>
+                    <th>Score</th>
+                    <th>B Cell</th>
+                    <th>Auto Ab</th>
+                    <th>Plasma</th>
+                    <th>CD19</th>
+                    <th>Evidence</th>
+                    <th>Tier</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            <tr>
+                <td class="col-rank">1</td>
+                <td class="col-drug">PR/SET Domain 1 (BLIMP-1)</td>
+                <td class="col-score" style="color:#f87171">9.28</td>
+                <td class="col-sign">9.0</td>
+                <td class="col-overlap">9.5</td>
+                <td class="col-cell">10.0</td>
+                <td class="col-evid">9.0</td>
+                <td class="col-dir">8.0</td>
+                <td class="col-tier" style="color:#f87171">🔴 Tier 1 — Strong CAR-T Candidate</td>
+            </tr>
+            <tr>
+                <td class="col-rank">2</td>
+                <td class="col-drug">B Cell Activating Factor (TNFSF13B / BLyS)</td>
+                <td class="col-score" style="color:#f87171">9.07</td>
+                <td class="col-sign">9.0</td>
+                <td class="col-overlap">10.0</td>
+                <td class="col-cell">9.0</td>
+                <td class="col-evid">8.5</td>
+                <td class="col-dir">7.0</td>
+                <td class="col-tier" style="color:#f87171">🔴 Tier 1 — Strong CAR-T Candidate</td>
+            </tr>
+            <tr>
+                <td class="col-rank">3</td>
+                <td class="col-drug">IKAROS Family Zinc Finger 3 (AIOLOS)</td>
+                <td class="col-score" style="color:#f87171">8.85</td>
+                <td class="col-sign">8.5</td>
+                <td class="col-overlap">9.0</td>
+                <td class="col-cell">10.0</td>
+                <td class="col-evid">8.5</td>
+                <td class="col-dir">7.0</td>
+                <td class="col-tier" style="color:#f87171">🔴 Tier 1 — Strong CAR-T Candidate</td>
+            </tr>
+            <tr>
+                <td class="col-rank">4</td>
+                <td class="col-drug">CD20 (MS4A1 / B-lymphocyte antigen CD20)</td>
+                <td class="col-score" style="color:#f87171">8.75</td>
+                <td class="col-sign">10.0</td>
+                <td class="col-overlap">7.0</td>
+                <td class="col-cell">8.0</td>
+                <td class="col-evid">9.5</td>
+                <td class="col-dir">9.5</td>
+                <td class="col-tier" style="color:#f87171">🔴 Tier 1 — Strong CAR-T Candidate</td>
+            </tr>
+            <tr>
+                <td class="col-rank">5</td>
+                <td class="col-drug">Bruton Tyrosine Kinase</td>
+                <td class="col-score" style="color:#f87171">8.55</td>
+                <td class="col-sign">9.5</td>
+                <td class="col-overlap">8.0</td>
+                <td class="col-cell">7.5</td>
+                <td class="col-evid">9.0</td>
+                <td class="col-dir">7.5</td>
+                <td class="col-tier" style="color:#f87171">🔴 Tier 1 — Strong CAR-T Candidate</td>
+            </tr>
+            <tr>
+                <td class="col-rank">6</td>
+                <td class="col-drug">IKAROS Family Zinc Finger 1 (IKAROS)</td>
+                <td class="col-score" style="color:#f87171">8.47</td>
+                <td class="col-sign">8.5</td>
+                <td class="col-overlap">8.0</td>
+                <td class="col-cell">9.5</td>
+                <td class="col-evid">8.5</td>
+                <td class="col-dir">6.5</td>
+                <td class="col-tier" style="color:#f87171">🔴 Tier 1 — Strong CAR-T Candidate</td>
+            </tr>
+            <tr>
+                <td class="col-rank">7</td>
+                <td class="col-drug">B Lymphoid Tyrosine Kinase</td>
+                <td class="col-score" style="color:#f87171">8.45</td>
+                <td class="col-sign">9.5</td>
+                <td class="col-overlap">8.0</td>
+                <td class="col-cell">7.0</td>
+                <td class="col-evid">9.0</td>
+                <td class="col-dir">7.5</td>
+                <td class="col-tier" style="color:#f87171">🔴 Tier 1 — Strong CAR-T Candidate</td>
+            </tr>
+            <tr>
+                <td class="col-rank">8</td>
+                <td class="col-drug">B Cell Scaffold Protein with Ankyrin Repeats 1</td>
+                <td class="col-score" style="color:#f87171">8.03</td>
+                <td class="col-sign">9.0</td>
+                <td class="col-overlap">8.0</td>
+                <td class="col-cell">6.5</td>
+                <td class="col-evid">8.5</td>
+                <td class="col-dir">6.0</td>
+                <td class="col-tier" style="color:#f87171">🔴 Tier 1 — Strong CAR-T Candidate</td>
+            </tr>
+            <tr>
+                <td class="col-rank">9</td>
+                <td class="col-drug">Ubiquitin-Conjugating Enzyme E2 L3 (UBCH7)</td>
+                <td class="col-score" style="color:#f87171">8.03</td>
+                <td class="col-sign">7.5</td>
+                <td class="col-overlap">8.5</td>
+                <td class="col-cell">9.0</td>
+                <td class="col-evid">8.0</td>
+                <td class="col-dir">5.5</td>
+                <td class="col-tier" style="color:#f87171">🔴 Tier 1 — Strong CAR-T Candidate</td>
+            </tr>
+            <tr>
+                <td class="col-rank">10</td>
+                <td class="col-drug">Protein Tyrosine Phosphatase Non-Receptor Type 22</td>
+                <td class="col-score" style="color:#fb923c">7.03</td>
+                <td class="col-sign">8.0</td>
+                <td class="col-overlap">6.5</td>
+                <td class="col-cell">5.5</td>
+                <td class="col-evid">8.0</td>
+                <td class="col-dir">6.0</td>
+                <td class="col-tier" style="color:#fb923c">🟠 Tier 2 — Good CAR-T Candidate</td>
+            </tr>
+            <tr>
+                <td class="col-rank">11</td>
+                <td class="col-drug">TNF Superfamily Member 4 (OX40 Ligand)</td>
+                <td class="col-score" style="color:#fbbf24">6.42</td>
+                <td class="col-sign">6.5</td>
+                <td class="col-overlap">7.0</td>
+                <td class="col-cell">6.0</td>
+                <td class="col-evid">6.5</td>
+                <td class="col-dir">4.5</td>
+                <td class="col-tier" style="color:#fbbf24">🟡 Tier 3 — Possible CAR-T Benefit</td>
+            </tr>
+            <tr>
+                <td class="col-rank">12</td>
+                <td class="col-drug">HLA Class II DR Beta 1</td>
+                <td class="col-score" style="color:#fbbf24">6.22</td>
+                <td class="col-sign">6.0</td>
+                <td class="col-overlap">7.5</td>
+                <td class="col-cell">5.5</td>
+                <td class="col-evid">6.0</td>
+                <td class="col-dir">5.0</td>
+                <td class="col-tier" style="color:#fbbf24">🟡 Tier 3 — Possible CAR-T Benefit</td>
+            </tr>
+            <tr>
+                <td class="col-rank">13</td>
+                <td class="col-drug">Toll-Like Receptor 7</td>
+                <td class="col-score" style="color:#fbbf24">5.83</td>
+                <td class="col-sign">5.0</td>
+                <td class="col-overlap">8.5</td>
+                <td class="col-cell">5.0</td>
+                <td class="col-evid">5.0</td>
+                <td class="col-dir">4.0</td>
+                <td class="col-tier" style="color:#fbbf24">🟡 Tier 3 — Possible CAR-T Benefit</td>
+            </tr>
+            <tr>
+                <td class="col-rank">14</td>
+                <td class="col-drug">Toll-Like Receptor 9</td>
+                <td class="col-score" style="color:#fbbf24">5.70</td>
+                <td class="col-sign">5.0</td>
+                <td class="col-overlap">8.0</td>
+                <td class="col-cell">5.0</td>
+                <td class="col-evid">5.0</td>
+                <td class="col-dir">4.0</td>
+                <td class="col-tier" style="color:#fbbf24">🟡 Tier 3 — Possible CAR-T Benefit</td>
+            </tr>
+            <tr>
+                <td class="col-rank">15</td>
+                <td class="col-drug">IMPDH (Inosine Monophosphate Dehydrogenase)</td>
+                <td class="col-score" style="color:#fbbf24">5.62</td>
+                <td class="col-sign">6.0</td>
+                <td class="col-overlap">5.5</td>
+                <td class="col-cell">5.0</td>
+                <td class="col-evid">6.0</td>
+                <td class="col-dir">5.0</td>
+                <td class="col-tier" style="color:#fbbf24">🟡 Tier 3 — Possible CAR-T Benefit</td>
+            </tr>
+            <tr>
+                <td class="col-rank">16</td>
+                <td class="col-drug">Interferon Regulatory Factor 5</td>
+                <td class="col-score" style="color:#fbbf24">5.60</td>
+                <td class="col-sign">5.5</td>
+                <td class="col-overlap">7.5</td>
+                <td class="col-cell">4.0</td>
+                <td class="col-evid">5.5</td>
+                <td class="col-dir">3.5</td>
+                <td class="col-tier" style="color:#fbbf24">🟡 Tier 3 — Possible CAR-T Benefit</td>
+            </tr>
+            <tr>
+                <td class="col-rank">17</td>
+                <td class="col-drug">TNF Alpha Induced Protein 3 (A20)</td>
+                <td class="col-score" style="color:#fbbf24">5.33</td>
+                <td class="col-sign">5.5</td>
+                <td class="col-overlap">6.0</td>
+                <td class="col-cell">4.5</td>
+                <td class="col-evid">5.5</td>
+                <td class="col-dir">3.5</td>
+                <td class="col-tier" style="color:#fbbf24">🟡 Tier 3 — Possible CAR-T Benefit</td>
+            </tr>
+            <tr>
+                <td class="col-rank">18</td>
+                <td class="col-drug">Signal Transducer and Activator of Transcription 4</td>
+                <td class="col-score" style="color:#fbbf24">5.25</td>
+                <td class="col-sign">5.5</td>
+                <td class="col-overlap">6.0</td>
+                <td class="col-cell">4.5</td>
+                <td class="col-evid">5.0</td>
+                <td class="col-dir">3.5</td>
+                <td class="col-tier" style="color:#fbbf24">🟡 Tier 3 — Possible CAR-T Benefit</td>
+            </tr>
+            <tr>
+                <td class="col-rank">19</td>
+                <td class="col-drug">Myeloid Differentiation Primary Response 88</td>
+                <td class="col-score" style="color:#fbbf24">5.05</td>
+                <td class="col-sign">4.5</td>
+                <td class="col-overlap">7.0</td>
+                <td class="col-cell">4.5</td>
+                <td class="col-evid">4.5</td>
+                <td class="col-dir">3.0</td>
+                <td class="col-tier" style="color:#fbbf24">🟡 Tier 3 — Possible CAR-T Benefit</td>
+            </tr>
+            <tr>
+                <td class="col-rank">20</td>
+                <td class="col-drug">TNFAIP3-Interacting Protein 1 (ABIN-1)</td>
+                <td class="col-score" style="color:#4ade80">4.83</td>
+                <td class="col-sign">5.0</td>
+                <td class="col-overlap">5.5</td>
+                <td class="col-cell">4.0</td>
+                <td class="col-evid">5.0</td>
+                <td class="col-dir">3.0</td>
+                <td class="col-tier" style="color:#4ade80">🟢 Tier 4 — Limited CAR-T Benefit</td>
+            </tr>
+            <tr>
+                <td class="col-rank">21</td>
+                <td class="col-drug">Interleukin-1 Receptor-Associated Kinase 4</td>
+                <td class="col-score" style="color:#4ade80">4.72</td>
+                <td class="col-sign">4.5</td>
+                <td class="col-overlap">6.5</td>
+                <td class="col-cell">4.0</td>
+                <td class="col-evid">4.0</td>
+                <td class="col-dir">2.5</td>
+                <td class="col-tier" style="color:#4ade80">🟢 Tier 4 — Limited CAR-T Benefit</td>
+            </tr>
+            <tr>
+                <td class="col-rank">22</td>
+                <td class="col-drug">Interferon Alpha and Beta Receptor Subunit 1</td>
+                <td class="col-score" style="color:#4ade80">4.58</td>
+                <td class="col-sign">4.5</td>
+                <td class="col-overlap">5.0</td>
+                <td class="col-cell">3.5</td>
+                <td class="col-evid">5.5</td>
+                <td class="col-dir">4.5</td>
+                <td class="col-tier" style="color:#4ade80">🟢 Tier 4 — Limited CAR-T Benefit</td>
+            </tr>
+            <tr>
+                <td class="col-rank">23</td>
+                <td class="col-drug">Glucocorticoid Receptor (NR3C1)</td>
+                <td class="col-score" style="color:#4ade80">4.50</td>
+                <td class="col-sign">5.0</td>
+                <td class="col-overlap">4.0</td>
+                <td class="col-cell">4.0</td>
+                <td class="col-evid">5.0</td>
+                <td class="col-dir">4.0</td>
+                <td class="col-tier" style="color:#4ade80">🟢 Tier 4 — Limited CAR-T Benefit</td>
+            </tr>
+            <tr>
+                <td class="col-rank">24</td>
+                <td class="col-drug">Tyrosine Kinase 2</td>
+                <td class="col-score" style="color:#4ade80">4.12</td>
+                <td class="col-sign">4.0</td>
+                <td class="col-overlap">5.5</td>
+                <td class="col-cell">3.0</td>
+                <td class="col-evid">4.0</td>
+                <td class="col-dir">3.0</td>
+                <td class="col-tier" style="color:#4ade80">🟢 Tier 4 — Limited CAR-T Benefit</td>
+            </tr>
+            <tr>
+                <td class="col-rank">25</td>
+                <td class="col-drug">Interferon Regulatory Factor 7</td>
+                <td class="col-score" style="color:#4ade80">4.10</td>
+                <td class="col-sign">4.0</td>
+                <td class="col-overlap">5.0</td>
+                <td class="col-cell">3.5</td>
+                <td class="col-evid">4.0</td>
+                <td class="col-dir">3.0</td>
+                <td class="col-tier" style="color:#4ade80">🟢 Tier 4 — Limited CAR-T Benefit</td>
+            </tr>
+            <tr>
+                <td class="col-rank">26</td>
+                <td class="col-drug">Janus Kinase 1</td>
+                <td class="col-score" style="color:#4ade80">4.00</td>
+                <td class="col-sign">4.0</td>
+                <td class="col-overlap">5.0</td>
+                <td class="col-cell">3.0</td>
+                <td class="col-evid">4.0</td>
+                <td class="col-dir">3.0</td>
+                <td class="col-tier" style="color:#4ade80">🟢 Tier 4 — Limited CAR-T Benefit</td>
+            </tr>
+            <tr>
+                <td class="col-rank">27</td>
+                <td class="col-drug">Calcineurin (PPP3CA / Protein Phosphatase 3)</td>
+                <td class="col-score" style="color:#4ade80">3.85</td>
+                <td class="col-sign">4.0</td>
+                <td class="col-overlap">4.0</td>
+                <td class="col-cell">3.5</td>
+                <td class="col-evid">4.0</td>
+                <td class="col-dir">3.0</td>
+                <td class="col-tier" style="color:#4ade80">🟢 Tier 4 — Limited CAR-T Benefit</td>
+            </tr>
+            <tr>
+                <td class="col-rank">28</td>
+                <td class="col-drug">Autophagy Related 5</td>
+                <td class="col-score" style="color:#4ade80">3.05</td>
+                <td class="col-sign">3.0</td>
+                <td class="col-overlap">3.5</td>
+                <td class="col-cell">2.5</td>
+                <td class="col-evid">3.5</td>
+                <td class="col-dir">2.0</td>
+                <td class="col-tier" style="color:#4ade80">🟢 Tier 4 — Limited CAR-T Benefit</td>
+            </tr>
+            <tr>
+                <td class="col-rank">29</td>
+                <td class="col-drug">Fc Gamma Receptor IIa (CD32a)</td>
+                <td class="col-score" style="color:#4ade80">3.00</td>
+                <td class="col-sign">3.0</td>
+                <td class="col-overlap">4.0</td>
+                <td class="col-cell">2.0</td>
+                <td class="col-evid">3.0</td>
+                <td class="col-dir">2.0</td>
+                <td class="col-tier" style="color:#4ade80">🟢 Tier 4 — Limited CAR-T Benefit</td>
+            </tr>
+            <tr>
+                <td class="col-rank">30</td>
+                <td class="col-drug">Fc Gamma Receptor IIIa (CD16a)</td>
+                <td class="col-score" style="color:#4ade80">3.00</td>
+                <td class="col-sign">3.0</td>
+                <td class="col-overlap">4.0</td>
+                <td class="col-cell">2.0</td>
+                <td class="col-evid">3.0</td>
+                <td class="col-dir">2.0</td>
+                <td class="col-tier" style="color:#4ade80">🟢 Tier 4 — Limited CAR-T Benefit</td>
+            </tr>
+            <tr>
+                <td class="col-rank">31</td>
+                <td class="col-drug">Integrin Subunit Alpha M (CD11b)</td>
+                <td class="col-score" style="color:#4ade80">2.87</td>
+                <td class="col-sign">3.0</td>
+                <td class="col-overlap">3.5</td>
+                <td class="col-cell">2.0</td>
+                <td class="col-evid">3.0</td>
+                <td class="col-dir">2.0</td>
+                <td class="col-tier" style="color:#4ade80">🟢 Tier 4 — Limited CAR-T Benefit</td>
+            </tr>
+            <tr>
+                <td class="col-rank">32</td>
+                <td class="col-drug">Engulfment and Cell Motility 1</td>
+                <td class="col-score" style="color:#4ade80">1.75</td>
+                <td class="col-sign">2.0</td>
+                <td class="col-overlap">2.0</td>
+                <td class="col-cell">1.0</td>
+                <td class="col-evid">2.0</td>
+                <td class="col-dir">1.0</td>
+                <td class="col-tier" style="color:#4ade80">🟢 Tier 4 — Limited CAR-T Benefit</td>
+            </tr>
+            <tr>
+                <td class="col-rank">33</td>
+                <td class="col-drug">Complement C1q A Chain</td>
+                <td class="col-score" style="color:#4ade80">1.65</td>
+                <td class="col-sign">1.0</td>
+                <td class="col-overlap">3.0</td>
+                <td class="col-cell">1.0</td>
+                <td class="col-evid">2.0</td>
+                <td class="col-dir">1.0</td>
+                <td class="col-tier" style="color:#4ade80">🟢 Tier 4 — Limited CAR-T Benefit</td>
+            </tr>
+            <tr>
+                <td class="col-rank">34</td>
+                <td class="col-drug">Complement C2</td>
+                <td class="col-score" style="color:#4ade80">1.65</td>
+                <td class="col-sign">1.0</td>
+                <td class="col-overlap">3.0</td>
+                <td class="col-cell">1.0</td>
+                <td class="col-evid">2.0</td>
+                <td class="col-dir">1.0</td>
+                <td class="col-tier" style="color:#4ade80">🟢 Tier 4 — Limited CAR-T Benefit</td>
+            </tr>
+            <tr>
+                <td class="col-rank">35</td>
+                <td class="col-drug">Complement C4A</td>
+                <td class="col-score" style="color:#4ade80">1.65</td>
+                <td class="col-sign">1.0</td>
+                <td class="col-overlap">3.0</td>
+                <td class="col-cell">1.0</td>
+                <td class="col-evid">2.0</td>
+                <td class="col-dir">1.0</td>
+                <td class="col-tier" style="color:#4ade80">🟢 Tier 4 — Limited CAR-T Benefit</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <div class="methodology">
+            <h3>🔬 Methodology</h3>
+            <p style="color:#94a3b8; margin-bottom:12px;">
+                The CAR-T Response Predictor scores each lupus-associated gene for CD19 CAR-T therapy suitability across 5 weighted dimensions:
+            </p>
+            <ul>
+                <li><strong style="color:#f87171;">B Cell Dependency (35%)</strong> — How central is the gene to B cell biology? B cell-intrinsic genes (CD19, CD20, BLK, BTK, BANK1, PRDM1) score highest.</li>
+                <li><strong style="color:#fb923c;">Autoantibody Association (25%)</strong> — How strongly linked to pathogenic autoantibodies (anti-dsDNA, ANA)? BAFF, PRDM1, CD40L top this dimension.</li>
+                <li><strong style="color:#fbbf24;">Plasma Cell Relevance (20%)</strong> — Is the gene critical for long-lived plasma cell survival? PRDM1 (BLIMP-1), IKZF1/3, UBE2L3 are key.</li>
+                <li><strong style="color:#a78bfa;">CD19 Targeting (15%)</strong> — Does CD19 CAR-T directly impact this pathway? CD19 itself, CD20, and BCR signaling genes score highest.</li>
+                <li><strong style="color:#4ade80;">Clinical Evidence (5%)</strong> — Existing published CAR-T or deep B cell depletion data involving this pathway.</li>
+            </ul>
+            <p style="color:#94a3b8; margin-top:12px; font-size:0.82rem;">
+                <strong>Clinical Context:</strong> CD19 CAR-T cell therapy (Erlangen protocol) achieved drug-free remission in severe refractory SLE by deep-depleting the entire CD19+ B lineage. Genes scoring ≥8.0 are in B-cell-intrinsic pathways likely to respond best. Genes <5.0 are in non-B-cell pathways where CAR-T alone may be insufficient.
+            </p>
+        </div>
+
+        <footer>
+            <p>Lupus Research Platform · CAR-T Response Predictor Module</p>
+            <p>⚠️ Computational predictions requiring clinical validation. Not medical advice.</p>
+        </footer>
+    </div>
+    <script>
+(function() {
+    const top5 = [{"name": "PR/SET Domain 1", "scores": [9.0, 9.5, 10.0, 9.0, 8.0]}, {"name": "B Cell Activating Factor", "scores": [9.0, 10.0, 9.0, 8.5, 7.0]}, {"name": "IKAROS Family Zinc Finger", "scores": [8.5, 9.0, 10.0, 8.5, 7.0]}, {"name": "CD20", "scores": [10.0, 7.0, 8.0, 9.5, 9.5]}, {"name": "Bruton Tyrosine Kinase", "scores": [9.5, 8.0, 7.5, 9.0, 7.5]}];
+    const labels = ['B Cell Dependency', 'Autoantibody Assoc', 'Plasma Cell Relevance', 'CD19 Targeting', 'Clinical Evidence'];
+    const colors = ['#f87171', '#fb923c', '#fbbf24', '#a78bfa', '#4ade80'];
+    const datasets = top5.map((c, i) => ({
+        label: c.name,
+        data: c.scores,
+        borderColor: colors[i],
+        backgroundColor: colors[i] + '18',
+        borderWidth: 2,
+        pointBackgroundColor: colors[i],
+        pointRadius: 4,
+    }));
+    new Chart(document.getElementById('radarChart'), {
+        type: 'radar',
+        data: { labels, datasets },
+        options: {
+            responsive: true, maintainAspectRatio: true,
+            scales: { r: { beginAtZero: true, max: 10, ticks: { backdropColor: 'transparent', color: '#787890', font: { size: 10 } }, grid: { color: 'rgba(100,100,150,0.2)' }, pointLabels: { color: '#c0c0d0', font: { size: 10 } }, angleLines: { color: 'rgba(100,100,150,0.2)' } } },
+            plugins: { legend: { position: 'bottom', labels: { color: '#c0c0d0', font: { size: 11 }, padding: 14, usePointStyle: true } } }
+        }
+    });
+})();
+</script>
+</body>
+</html>

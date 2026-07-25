@@ -41,6 +41,7 @@ SCRIPTS = {
     "safety": "adverse_events/profiler.py",
     "network": "network_pharmacology/analyzer.py",
     "expression": "gene_expression/correlator.py",
+    "cart": "car_t_predictor/predictor.py",
 }
 
 
@@ -403,6 +404,16 @@ def cmd_expression(args):
     return run_module(SCRIPTS["expression"], extra)
 
 
+def cmd_cart(args):
+    """Run CAR-T response prediction."""
+    extra = []
+    if args.top:
+        extra.extend(["--top", str(args.top)])
+    if args.export_html:
+        extra.append("--export-html")
+    return run_module(SCRIPTS["cart"], extra)
+
+
 def cmd_test(args):
     """Run the test suite."""
     cmd = [sys.executable, "-m", "pytest", "tests/", "-v", "--tb=short"]
@@ -630,6 +641,19 @@ Examples:
         help="Generate HTML report",
     )
 
+    # ── cart ───────────────────────────────────────────────────────────
+    cart_parser = subparsers.add_parser(
+        "cart", help="Predict CAR-T therapy suitability for lupus genes",
+    )
+    cart_parser.add_argument(
+        "--top", type=int, default=15,
+        help="Number of top genes to display (default: 15)",
+    )
+    cart_parser.add_argument(
+        "--export-html", action="store_true",
+        help="Generate HTML report",
+    )
+
     # ── screening ───────────────────────────────────────────────────────
     screen_parser = subparsers.add_parser(
         "screening", help="Run virtual drug screening against lupus targets",
@@ -671,6 +695,7 @@ Examples:
         "safety": cmd_safety,
         "network": cmd_network,
         "expression": cmd_expression,
+        "cart": cmd_cart,
         "test": cmd_test,
     }
 

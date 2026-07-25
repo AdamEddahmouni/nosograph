@@ -56,6 +56,10 @@ async function runModule(module) {
                 data = await apiFetch('/api/expression/correlate?top_n=10');
                 renderExpressionResult(resultEl, data);
                 break;
+            case 'cart':
+                data = await apiFetch('/api/cart/suitability?top_n=10');
+                renderCartResult(resultEl, data);
+                break;
             case 'repurpose':
                 data = await apiFetch('/api/repurpose/candidates?top_n=10');
                 renderRepurposeResult(resultEl, data);
@@ -380,6 +384,18 @@ function renderRepurposeResult(el, data) {
         ['Avg Score', data.avg_score?.toFixed(2)],
         ['Tier 1 (≥8.0)', data.tier1_count],
         ['Top Drug', data.candidates?.[0]?.drug_name || '—'],
+    ]);
+}
+
+function renderCartResult(el, data) {
+    const top = data.genes?.[0];
+    el.className = 'module-result visible success';
+    el.innerHTML = renderModuleResult([
+        ['Genes Scored', data.total_genes],
+        ['Avg Score', data.avg_score?.toFixed(2)],
+        ['Tier 1 (Strong)', data.tier1_count],
+        ['Top Gene', top ? top.gene_name : '—'],
+        ['Top Score', top?.composite_score?.toFixed(2) || '—'],
     ]);
 }
 

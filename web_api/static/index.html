@@ -243,6 +243,31 @@
                     <div class="module-result" id="result-ml"></div>
                 </div>
 
+                <!-- CAR-T Predictor -->
+                <div class="module-card" style="--card-accent:#dc2626;">
+                    <div class="module-card-header">
+                        <div class="module-icon" style="background:rgba(220,38,38,0.12);">🔬</div>
+                        <div>
+                            <h3>CAR-T Predictor</h3>
+                            <span class="module-phase"><span class="status-dot complete"></span>Phase 14</span>
+                        </div>
+                    </div>
+                    <p class="desc">
+                        Gene-level CD19 CAR-T therapy suitability scoring. Identifies which lupus genes/pathways
+                        are most B-cell-dependent and likely to respond to CAR-T immune reset.
+                    </p>
+                    <div class="tags">
+                        <span class="tag pink">CAR-T</span>
+                        <span class="tag purple">35 Genes</span>
+                        <span class="tag blue">Immune Reset</span>
+                    </div>
+                    <div class="actions">
+                        <button class="btn btn-primary" onclick="runModule('cart')">🔬 Score Genes</button>
+                        <a href="/car_t_predictor/report.html" class="btn btn-secondary">📊 Report</a>
+                    </div>
+                    <div class="module-result" id="result-cart"></div>
+                </div>
+
                 <!-- Gene Expression Correlation -->
                 <div class="module-card" style="--card-accent:#a78bfa;">
                     <div class="module-card-header">
