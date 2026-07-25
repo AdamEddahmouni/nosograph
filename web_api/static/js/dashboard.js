@@ -72,6 +72,10 @@ async function runModule(module) {
                 data = await apiFetch('/api/evidence/gather?q=lupus+treatment+drug+repurposing&max_per_source=5&sources=pubmed,preprints,clinical_trials,fda_labels,patents');
                 renderEvidenceResult(resultEl, data);
                 break;
+            case 'extractor':
+                data = await apiFetch('/api/llm/extract?q=lupus+treatment+drug+repurposing&max_articles=10&sources=pubmed,preprints');
+                renderExtractorResult(resultEl, data);
+                break;
             case 'repurpose':
                 data = await apiFetch('/api/repurpose/candidates?top_n=10');
                 renderRepurposeResult(resultEl, data);
@@ -454,6 +458,18 @@ function renderEvidenceResult(el, data) {
         ['Sources Searched', data.sources_searched?.length || 0],
         ['Top Source', top ? top.source_type?.replace('_',' ').toUpperCase() : '—'],
         ['Top Match', top ? top.title?.slice(0, 50) + '...' : '—'],
+    ]);
+}
+
+function renderExtractorResult(el, data) {
+    const stats = data.stats || {};
+    el.className = 'module-result visible success';
+    el.innerHTML = renderModuleResult([
+        ['Articles Extracted', data.total_extracted],
+        ['Successful', data.successful_extractions],
+        ['LLM Model', data.model],
+        ['Avg Confidence', (stats.avg_confidence || 0) + '%'],
+        ['Drugs Found', stats.n_unique_drugs || 0],
     ]);
 }
 

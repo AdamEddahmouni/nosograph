@@ -82,6 +82,12 @@ API_TAGS = [
          "preprints (bioRxiv/medRxiv), ClinicalTrials.gov, FDA labels "
          "(DailyMed), and patents simultaneously."
      )},
+    {"name": "LLM Extraction",
+     "description": (
+         "LLM-powered structured data extraction from biomedical abstracts. "
+         "Extracts evidence levels, model systems, key findings, drug mentions, "
+         "sample sizes, and confidence scores using GPT-4o-mini or compatible models."
+     )},
     {"name": "Jobs",
      "description": (
          "Submit and track async analysis jobs with real-time WebSocket "

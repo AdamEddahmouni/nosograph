@@ -64,7 +64,7 @@
                 </div>
                 <div class="stat-card">
                     <div class="stat-icon">🧪</div>
-                    <div class="stat-value" style="color:#22d3ee;">16</div>
+                    <div class="stat-value" style="color:#22d3ee;">17</div>
                     <div class="stat-label">Analysis Modules</div>
                 </div>
                 <div class="stat-card">
@@ -166,6 +166,31 @@
                         <button class="btn btn-secondary" onclick="runModule('ppi')">🔗 PPI</button>
                     </div>
                     <div class="module-result" id="result-bioinformatics"></div>
+                </div>
+
+                <!-- LLM Extractor -->
+                <div class="module-card" style="--card-accent:#8b5cf6;">
+                    <div class="module-card-header">
+                        <div class="module-icon" style="background:rgba(139,92,246,0.12);">🤖</div>
+                        <div>
+                            <h3>LLM Extractor</h3>
+                            <span class="module-phase"><span class="status-dot complete"></span>Phase 18</span>
+                        </div>
+                    </div>
+                    <p class="desc">
+                        LLM-powered structured data extraction from evidence abstracts. Extracts evidence levels,
+                        model systems, key findings, drug mentions, sample sizes, and confidence scores.
+                    </p>
+                    <div class="tags">
+                        <span class="tag purple">GPT-4o-mini</span>
+                        <span class="tag blue">Structured Extraction</span>
+                        <span class="tag green">Evidence Levels</span>
+                    </div>
+                    <div class="actions">
+                        <button class="btn btn-primary" onclick="runModule('extractor')">🤖 Extract Evidence</button>
+                        <a href="/llm_extractor/report.html" class="btn btn-secondary">📊 Report</a>
+                    </div>
+                    <div class="module-result" id="result-extractor"></div>
                 </div>
 
                 <!-- Evidence Gatherer -->

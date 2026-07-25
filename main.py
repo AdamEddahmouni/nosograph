@@ -45,6 +45,7 @@ SCRIPTS = {
     "biomarker": "biomarker_discovery/discover.py",
     "semantic": "semantic_search/engine.py",
     "evidence": "evidence_gatherer/gatherer.py",
+    "extractor": "llm_extractor/extractor.py",
 }
 
 
@@ -459,6 +460,26 @@ def cmd_evidence(args):
     return run_module(SCRIPTS["evidence"], extra)
 
 
+def cmd_extractor(args):
+    """Run LLM-powered evidence extraction."""
+    extra = []
+    if args.query:
+        extra.extend(["--query", args.query])
+    if args.sources:
+        extra.extend(["--sources", args.sources])
+    if args.model:
+        extra.extend(["--model", args.model])
+    if args.max:
+        extra.extend(["--max", str(args.max)])
+    if args.no_cache:
+        extra.append("--no-cache")
+    if args.top:
+        extra.extend(["--top", str(args.top)])
+    if args.export_html:
+        extra.append("--export-html")
+    return run_module(SCRIPTS["extractor"], extra)
+
+
 def cmd_test(args):
     """Run the test suite."""
     cmd = [sys.executable, "-m", "pytest", "tests/", "-v", "--tb=short"]
@@ -733,6 +754,39 @@ Examples:
         help="Generate HTML report",
     )
 
+    # ── extractor ──────────────────────────────────────────────────
+    extractor_parser = subparsers.add_parser(
+        "extractor", help="Extract structured data from evidence using LLM",
+    )
+    extractor_parser.add_argument(
+        "--query", "-q", type=str, default="B cell depletion therapy lupus",
+        help="Search query (natural language)",
+    )
+    extractor_parser.add_argument(
+        "--sources", type=str, default="pubmed,preprints,clinical_trials",
+        help="Comma-separated evidence sources",
+    )
+    extractor_parser.add_argument(
+        "--model", "-m", type=str, default="",
+        help="LLM model name (default: gpt-4o-mini)",
+    )
+    extractor_parser.add_argument(
+        "--max", type=int, default=20,
+        help="Max articles to extract from (default: 20)",
+    )
+    extractor_parser.add_argument(
+        "--no-cache", action="store_true",
+        help="Skip cache, re-extract everything",
+    )
+    extractor_parser.add_argument(
+        "--top", type=int, default=15,
+        help="Number of top results to display (default: 15)",
+    )
+    extractor_parser.add_argument(
+        "--export-html", action="store_true",
+        help="Generate HTML report",
+    )
+
     # ── evidence ───────────────────────────────────────────────────
     evidence_parser = subparsers.add_parser(
         "evidence", help="Gather evidence from multiple biomedical sources",
@@ -807,6 +861,7 @@ Examples:
         "biomarker": cmd_biomarker,
         "semantic": cmd_semantic,
         "evidence": cmd_evidence,
+        "extractor": cmd_extractor,
         "test": cmd_test,
     }
 
