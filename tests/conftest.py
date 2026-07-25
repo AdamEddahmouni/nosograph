@@ -2,9 +2,10 @@
 Shared test fixtures for the Lupus Research Platform test suite.
 """
 
-import pytest
 import json
 from pathlib import Path
+
+import pytest
 
 PROJECT_ROOT = Path(__file__).parent.parent
 KG_DATA_DIR = PROJECT_ROOT / "knowledge_graph" / "data"

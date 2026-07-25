@@ -8,8 +8,8 @@ Tests cover:
   - Data loading functions
 """
 
-import pytest
 import networkx as nx
+import pytest
 
 
 class TestGetGeneSymbols:

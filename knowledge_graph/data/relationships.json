@@ -67,6 +67,36 @@
       "description": "Prednisone binds glucocorticoid receptor (NR3C1), broadly suppressing NF-κB and inflammatory gene transcription"
     },
     {
+      "source": "cyclosporine",
+      "target": "Calcineurin",
+      "type": "TARGETS",
+      "description": "Cyclosporine binds cyclophilin and inhibits calcineurin, blocking NFAT-mediated T cell activation"
+    },
+    {
+      "source": "tofacitinib",
+      "target": "JAK1",
+      "type": "TARGETS",
+      "description": "Tofacitinib inhibits JAK1, broadly blocking type I IFN, IL-6, IL-12/IL-23, and other cytokine signaling"
+    },
+    {
+      "source": "deucravacitinib",
+      "target": "TYK2",
+      "type": "TARGETS",
+      "description": "Deucravacitinib is a highly selective allosteric TYK2 inhibitor that binds the JH2 pseudokinase domain, blocking type I IFN, IL-12, and IL-23 signaling"
+    },
+    {
+      "source": "iberdomide",
+      "target": "IKZF1",
+      "type": "TARGETS",
+      "description": "Iberdomide promotes cereblon-mediated ubiquitination and proteasomal degradation of IKZF1 (Ikaros)"
+    },
+    {
+      "source": "iberdomide",
+      "target": "IKZF3",
+      "type": "TARGETS",
+      "description": "Iberdomide promotes cereblon-mediated ubiquitination and proteasomal degradation of IKZF3 (Aiolos)"
+    },
+    {
       "source": "BAFF",
       "target": "bcell-signaling",
       "type": "PARTICIPATES_IN",
@@ -89,6 +119,24 @@
       "target": "bcell-signaling",
       "type": "PARTICIPATES_IN",
       "description": "BTK is an essential kinase for BCR and Fc receptor signaling in B cells and myeloid cells"
+    },
+    {
+      "source": "IKZF1",
+      "target": "bcell-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IKZF1 (Ikaros) is a lineage-determining transcription factor essential for B cell development and differentiation"
+    },
+    {
+      "source": "IKZF3",
+      "target": "bcell-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IKZF3 (Aiolos) regulates B cell differentiation, plasma cell development, and autoantibody production"
+    },
+    {
+      "source": "PRDM1",
+      "target": "bcell-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PRDM1 (Blimp-1) is the master transcription factor driving terminal B cell differentiation into plasma cells"
     },
     {
       "source": "IRF5",
@@ -115,6 +163,12 @@
       "description": "TLR9 senses CpG DNA in endosomes and triggers IRF5/IRF7-mediated IFN-α production"
     },
     {
+      "source": "IRF7",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF7 is the master transcription factor for IFN-α production in plasmacytoid DCs downstream of TLR7/TLR9"
+    },
+    {
       "source": "JAK1",
       "target": "jak-stat",
       "type": "PARTICIPATES_IN",
@@ -139,6 +193,18 @@
       "description": "TNFAIP3 (A20) negatively regulates NF-κB signaling through ubiquitin editing; loss of function drives inflammation"
     },
     {
+      "source": "TNIP1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "TNIP1 (ABIN-1) cooperates with A20 to negatively regulate NF-κB through ubiquitin-binding"
+    },
+    {
+      "source": "UBE2L3",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "UBE2L3 (UBCH7) promotes linear ubiquitination and NF-κB activation; enhances B cell and plasma cell function"
+    },
+    {
       "source": "ITGAM",
       "target": "complement",
       "type": "PARTICIPATES_IN",
@@ -155,6 +221,30 @@
       "target": "complement",
       "type": "PARTICIPATES_IN",
       "description": "FCGR3A mediates ADCC and immune complex clearance"
+    },
+    {
+      "source": "ELMO1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "ELMO1 is involved in cytoskeletal rearrangement and macrophage-mediated clearance of apoptotic cells in the kidney"
+    },
+    {
+      "source": "C1QA",
+      "target": "complement-cascade",
+      "type": "PARTICIPATES_IN",
+      "description": "C1q initiates the classical complement cascade by binding immune complexes and opsonizing apoptotic cells for clearance"
+    },
+    {
+      "source": "C2",
+      "target": "complement-cascade",
+      "type": "PARTICIPATES_IN",
+      "description": "C2 is a key component of the classical and lectin complement pathways, forming the C3 convertase with C4"
+    },
+    {
+      "source": "C4A",
+      "target": "complement-cascade",
+      "type": "PARTICIPATES_IN",
+      "description": "C4A is the most efficient C4 isoform for opsonizing immune complexes; essential for classical complement activation"
     },
     {
       "source": "TNFSF4",
@@ -187,6 +277,36 @@
       "description": "IRF5 is activated downstream of TLR7/TLR9-MyD88 signaling to drive IFN-α production"
     },
     {
+      "source": "MYD88",
+      "target": "tlr-sensing",
+      "type": "PARTICIPATES_IN",
+      "description": "MyD88 is the universal adaptor for TLR7/TLR9 signaling, recruiting IRAK4 and activating IRF5/IRF7"
+    },
+    {
+      "source": "IRAK4",
+      "target": "tlr-sensing",
+      "type": "PARTICIPATES_IN",
+      "description": "IRAK4 is an essential kinase downstream of MyD88 that phosphorylates IRF5 and IRF7 to drive IFN-α production"
+    },
+    {
+      "source": "IRF7",
+      "target": "tlr-sensing",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF7 is activated downstream of TLR7/TLR9-MyD88-IRAK4 signaling and is essential for IFN-α production"
+    },
+    {
+      "source": "C1QA",
+      "target": "netosis",
+      "type": "PARTICIPATES_IN",
+      "description": "C1q opsonizes NETs and facilitates their clearance; C1q deficiency leads to NET persistence and autoantigen exposure"
+    },
+    {
+      "source": "ATG5",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "ATG5 is a core autophagy protein essential for autophagosome formation and lymphocyte homeostasis"
+    },
+    {
       "source": "belimumab",
       "target": "bcell-signaling",
       "type": "MODULATES",
@@ -209,6 +329,108 @@
       "target": "jak-stat",
       "type": "MODULATES",
       "description": "Baricitinib inhibits JAK1/JAK2, broadly suppressing cytokine-driven JAK-STAT signaling"
+    },
+    {
+      "source": "acalabrutinib",
+      "target": "bcell-signaling",
+      "type": "MODULATES",
+      "description": "Acalabrutinib is a highly selective BTK inhibitor that suppresses BCR signaling, reducing B cell activation and autoantibody production"
+    },
+    {
+      "source": "avacopan",
+      "target": "complement",
+      "type": "MODULATES",
+      "description": "Avacopan blocks C5aR, intercepting C5a-mediated neutrophil recruitment and inflammation downstream of complement activation"
+    },
+    {
+      "source": "dimethyl_fumarate",
+      "target": "nfkb",
+      "type": "MODULATES",
+      "description": "Dimethyl fumarate activates Nrf2 and inhibits NF-κB nuclear translocation, reducing proinflammatory gene expression"
+    },
+    {
+      "source": "iscalimab",
+      "target": "tcell-costim",
+      "type": "MODULATES",
+      "description": "Iscalimab blocks CD40-CD40L costimulation, preventing T cell-dependent B cell help and germinal center formation"
+    },
+    {
+      "source": "ravulizumab",
+      "target": "complement",
+      "type": "MODULATES",
+      "description": "Ravulizumab binds C5 and blocks terminal complement activation, preventing C5a and MAC-mediated tissue damage"
+    },
+    {
+      "source": "rozanolixizumab",
+      "target": "complement",
+      "type": "MODULATES",
+      "description": "Rozanolixizumab blocks FcRn, reducing pathogenic IgG levels and decreasing immune complex substrate for complement activation"
+    },
+    {
+      "source": "tofacitinib",
+      "target": "jak-stat",
+      "type": "MODULATES",
+      "description": "Tofacitinib broadly suppresses JAK-STAT signaling downstream of multiple proinflammatory cytokine receptors"
+    },
+    {
+      "source": "deucravacitinib",
+      "target": "jak-stat",
+      "type": "MODULATES",
+      "description": "Deucravacitinib selectively inhibits TYK2-mediated JAK-STAT signaling for type I IFN, IL-12, and IL-23"
+    },
+    {
+      "source": "deucravacitinib",
+      "target": "type1-ifn",
+      "type": "MODULATES",
+      "description": "Deucravacitinib blocks TYK2-dependent type I IFN signaling, reducing the interferon gene signature"
+    },
+    {
+      "source": "dapirolizumab_pegol",
+      "target": "tcell-costim",
+      "type": "MODULATES",
+      "description": "Dapirolizumab pegol blocks CD40-CD40L costimulation, inhibiting T cell-dependent B cell activation and germinal center formation"
+    },
+    {
+      "source": "litifilimab",
+      "target": "type1-ifn",
+      "type": "MODULATES",
+      "description": "Litifilimab binds BDCA2 on pDCs, inhibiting TLR7/TLR9-induced IFN-α production at its cellular source"
+    },
+    {
+      "source": "litifilimab",
+      "target": "tlr-sensing",
+      "type": "MODULATES",
+      "description": "Litifilimab targets BDCA2 (CLEC4C) on plasmacytoid DCs, suppressing TLR7/TLR9-mediated IFN-α production"
+    },
+    {
+      "source": "iberdomide",
+      "target": "bcell-signaling",
+      "type": "MODULATES",
+      "description": "Iberdomide degrades IKZF1/IKZF3, suppressing B cell differentiation, plasma cell development, and autoantibody production"
+    },
+    {
+      "source": "teclistamab",
+      "target": "bcell-signaling",
+      "type": "MODULATES",
+      "description": "Teclistamab redirects T cells to deplete BCMA+ plasma cells, reducing autoantibody-producing long-lived plasma cells"
+    },
+    {
+      "source": "anti_cd19_cart",
+      "target": "bcell-signaling",
+      "type": "MODULATES",
+      "description": "Anti-CD19 CAR-T cells deplete CD19+ B cells including autoreactive clones, enabling drug-free immune reset"
+    },
+    {
+      "source": "avacopan",
+      "target": "complement-cascade",
+      "type": "MODULATES",
+      "description": "Avacopan blocks C5a receptor, intercepting C5a-mediated inflammation in the terminal complement cascade"
+    },
+    {
+      "source": "ravulizumab",
+      "target": "complement-cascade",
+      "type": "MODULATES",
+      "description": "Ravulizumab binds C5, blocking terminal complement cascade activation and preventing C5a/MAC-mediated damage"
     },
     {
       "source": "type1-ifn",
@@ -253,6 +475,24 @@
       "description": "Enhanced T cell costimulation drives Tfh expansion and autoreactive B cell help in SLE"
     },
     {
+      "source": "netosis",
+      "target": "Lupus (SLE)",
+      "type": "DRIVES",
+      "description": "Dysregulated NETosis releases immunogenic NETs containing dsDNA and LL-37, serving as autoantigens and activating pDCs via TLR7/TLR9"
+    },
+    {
+      "source": "complement-cascade",
+      "target": "Lupus (SLE)",
+      "type": "DRIVES",
+      "description": "Early complement component deficiencies (C1q, C2, C4) are the strongest monogenic SLE risk factors; terminal pathway activation drives tissue injury"
+    },
+    {
+      "source": "autophagy",
+      "target": "Lupus (SLE)",
+      "type": "DRIVES",
+      "description": "Impaired autophagy leads to mitochondrial DNA accumulation activating cGAS-STING, driving IFN production and lymphocyte dysregulation"
+    },
+    {
       "source": "HLA-DRB1",
       "target": "Lupus (SLE)",
       "type": "ASSOCIATED_WITH",
@@ -281,6 +521,84 @@
       "target": "Lupus (SLE)",
       "type": "ASSOCIATED_WITH",
       "description": "TNFAIP3 loss-of-function variants reduce NF-κB regulation and increase SLE risk"
+    },
+    {
+      "source": "C1QA",
+      "target": "Lupus (SLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "Homozygous C1q deficiency is the strongest monogenic cause of SLE (>90% penetrance) due to impaired apoptotic cell clearance"
+    },
+    {
+      "source": "C2",
+      "target": "Lupus (SLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C2 deficiency is one of the most common complement deficiencies in SLE (~10-20% penetrance), associated with anti-Ro antibodies"
+    },
+    {
+      "source": "C4A",
+      "target": "Lupus (SLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "Low C4A gene copy number is strongly associated with SLE (3-6x risk), impairing immune complex clearance"
+    },
+    {
+      "source": "IRF7",
+      "target": "Lupus (SLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF7 risk variants associated with increased IFN-α production and SLE susceptibility; gain-of-function mutations in familial SLE"
+    },
+    {
+      "source": "IKZF1",
+      "target": "Lupus (SLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 (Ikaros) GWAS-implicated in SLE across multiple ancestries; variants alter lymphocyte development and promote autoimmunity"
+    },
+    {
+      "source": "IKZF3",
+      "target": "Lupus (SLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF3 (Aiolos) GWAS-implicated in SLE; regulates plasma cell differentiation and humoral autoimmunity"
+    },
+    {
+      "source": "TNIP1",
+      "target": "Lupus (SLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNIP1 GWAS-implicated in SLE; risk variants impair A20-mediated NF-κB suppression"
+    },
+    {
+      "source": "UBE2L3",
+      "target": "Lupus (SLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBE2L3 GWAS-implicated in SLE; risk allele increases expression, enhancing NF-κB and plasma cell differentiation"
+    },
+    {
+      "source": "IRAK4",
+      "target": "Lupus (SLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRAK4 is critical for TLR7/TLR9-driven IFN-α and autoantibody production; pharmacological inhibition reduces disease in murine lupus models"
+    },
+    {
+      "source": "MYD88",
+      "target": "Lupus (SLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MyD88 is essential for TLR7/TLR9-mediated B cell activation and autoantibody production; MyD88-deficient lupus-prone mice are protected from disease"
+    },
+    {
+      "source": "ELMO1",
+      "target": "Lupus (SLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELMO1 GWAS-implicated specifically in lupus nephritis; variants increase risk of renal involvement"
+    },
+    {
+      "source": "PRDM1",
+      "target": "Lupus (SLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM1 (Blimp-1) GWAS-implicated in SLE; variants alter plasma cell differentiation and autoantibody production"
+    },
+    {
+      "source": "ATG5",
+      "target": "Lupus (SLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATG5 GWAS-implicated in SLE; autophagy dysregulation impairs lymphocyte homeostasis and promotes type I IFN"
     },
     {
       "source": "belimumab",
@@ -337,58 +655,40 @@
       "description": "Mycophenolate is a first-line induction and maintenance therapy for lupus nephritis"
     },
     {
-      "source": "acalabrutinib",
-      "target": "bcell-signaling",
-      "type": "MODULATES",
-      "description": "Acalabrutinib is a highly selective BTK inhibitor that suppresses BCR signaling, reducing B cell activation and autoantibody production"
+      "source": "deucravacitinib",
+      "target": "Lupus (SLE)",
+      "type": "TREATS",
+      "description": "Deucravacitinib is in Phase 3 development for SLE; Phase 2 PAISLEY trial showed significant SRI-4 improvement"
     },
     {
-      "source": "avacopan",
-      "target": "complement",
-      "type": "MODULATES",
-      "description": "Avacopan blocks C5aR, intercepting C5a-mediated neutrophil recruitment and inflammation downstream of complement activation"
+      "source": "dapirolizumab_pegol",
+      "target": "Lupus (SLE)",
+      "type": "TREATS",
+      "description": "Dapirolizumab pegol is in Phase 3 (PHOENYCS GO) for SLE; blocks CD40-CD40L costimulation"
     },
     {
-      "source": "cyclosporine",
-      "target": "Calcineurin",
-      "type": "TARGETS",
-      "description": "Cyclosporine binds cyclophilin and inhibits calcineurin, blocking NFAT-mediated T cell activation"
+      "source": "litifilimab",
+      "target": "Lupus (SLE)",
+      "type": "TREATS",
+      "description": "Litifilimab is in Phase 3 (TOPAZ) for SLE; targets BDCA2 on pDCs to suppress IFN-α at its source"
     },
     {
-      "source": "dimethyl_fumarate",
-      "target": "nfkb",
-      "type": "MODULATES",
-      "description": "Dimethyl fumarate activates Nrf2 and inhibits NF-κB nuclear translocation, reducing proinflammatory gene expression"
+      "source": "iberdomide",
+      "target": "Lupus (SLE)",
+      "type": "TREATS",
+      "description": "Iberdomide is in Phase 2/3 for SLE; cereblon modulator that degrades IKZF1/IKZF3, reducing autoantibody production"
     },
     {
-      "source": "iscalimab",
-      "target": "tcell-costim",
-      "type": "MODULATES",
-      "description": "Iscalimab blocks CD40-CD40L costimulation, preventing T cell-dependent B cell help and germinal center formation"
+      "source": "teclistamab",
+      "target": "Lupus (SLE)",
+      "type": "TREATS",
+      "description": "Teclistamab (BCMAxCD3 bispecific) is exploratory for autoimmune disease; depletes autoantibody-producing plasma cells"
     },
     {
-      "source": "ravulizumab",
-      "target": "complement",
-      "type": "MODULATES",
-      "description": "Ravulizumab binds C5 and blocks terminal complement activation, preventing C5a and MAC-mediated tissue damage"
-    },
-    {
-      "source": "rozanolixizumab",
-      "target": "complement",
-      "type": "MODULATES",
-      "description": "Rozanolixizumab blocks FcRn, reducing pathogenic IgG levels and decreasing immune complex substrate for complement activation"
-    },
-    {
-      "source": "tofacitinib",
-      "target": "JAK1",
-      "type": "TARGETS",
-      "description": "Tofacitinib inhibits JAK1, broadly blocking type I IFN, IL-6, IL-12/IL-23, and other cytokine signaling"
-    },
-    {
-      "source": "tofacitinib",
-      "target": "jak-stat",
-      "type": "MODULATES",
-      "description": "Tofacitinib broadly suppresses JAK-STAT signaling downstream of multiple proinflammatory cytokine receptors"
+      "source": "anti_cd19_cart",
+      "target": "Lupus (SLE)",
+      "type": "TREATS",
+      "description": "Anti-CD19 CAR-T cell therapy achieved drug-free remission in case series of severe refractory SLE (Nature Medicine 2022)"
     }
   ]
 }

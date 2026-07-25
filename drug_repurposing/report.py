@@ -9,9 +9,8 @@ Generates a beautiful standalone HTML report with:
   - Interactive score breakdowns
 """
 
-import json
-from pathlib import Path
 from datetime import datetime
+from pathlib import Path
 
 
 def generate_html_report(
@@ -34,6 +33,24 @@ def generate_html_report(
         best = max(c["composite_score"] for c in cands) if cands else 0
         gene_rankings.append({"gene": gene, "candidates": cands, "best_score": best, "count": len(cands)})
     gene_rankings.sort(key=lambda x: x["best_score"], reverse=True)
+
+    # Build top-5 JSON for radar chart
+    import json
+    top5_items = []
+    for c in scored_candidates[:5]:
+        name = c['drug_name'].split('(')[0].strip()[:25]
+        top5_items.append({
+            "name": name,
+            "scores": [
+                c.get('target_similarity_score', 5),
+                c.get('final_proximity', 5),
+                c.get('mechanistic_rationale_score', 5),
+                c.get('clinical_evidence_score', 5),
+                c.get('adverse_event_score', c.get('safety_score', 5)),
+                c.get('novelty_score', 5) * 2,  # Scale 0-5 to 0-10 for chart
+            ],
+        })
+    top5_json = json.dumps(top5_items)
 
     # Build candidate rows
     rows_html = ""
@@ -66,7 +83,7 @@ def generate_html_report(
                 <span title="Pathway Proximity">🛤️{c['final_proximity']:.0f}</span>
                 <span title="Mechanistic Rationale">🧬{c['mechanistic_rationale_score']}</span>
                 <span title="Clinical Evidence">📋{c['clinical_evidence_score']}</span>
-                <span title="Safety Profile">🛡️{c['safety_score']}</span>
+                <span title="Adverse Event Profile">🛡️{c.get('adverse_event_score', c.get('safety_score', 'N/A'))}</span>
             </td>
             <td>{c['evidence_level']}</td>
             <td><span class="status-tag">{c['status']}</span></td>
@@ -132,6 +149,7 @@ def generate_html_report(
     <title>Lupus Drug Repurposing Report</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
     <style>
         * {{ margin: 0; padding: 0; box-sizing: border-box; }}
         body {{
@@ -288,6 +306,12 @@ def generate_html_report(
             </div>
         </div>
 
+        <!-- Radar Chart -->
+        <h2 class="section-title">🎯 Score Dimension Radar — Top 5 Candidates</h2>
+        <div class="radar-container" style="max-width:700px;margin:0 auto 32px;">
+            <canvas id="radarChart" style="max-height:500px;"></canvas>
+        </div>
+
         <!-- Top Candidates Table -->
         <h2 class="section-title">🏆 Top Repurposing Candidates</h2>
         <div class="table-container">
@@ -341,6 +365,32 @@ def generate_html_report(
             <p><a href="../knowledge_graph/web/index.html">View Knowledge Graph</a></p>
         </footer>
     </div>
+    <script>
+(function() {{
+    const top5 = {top5_json};
+    const labels = ['Target Similarity', 'Pathway Proximity', 'Mechanistic Rationale', 'Clinical Evidence', 'Adverse Event Profile', 'Novelty'];
+    const colors = ['#818cf8', '#4ade80', '#f59e0b', '#f472b6', '#34d399', '#c084fc'];
+    const datasets = top5.map((c, i) => ({{
+        label: c.name,
+        data: c.scores,
+        borderColor: colors[i],
+        backgroundColor: colors[i] + '18',
+        borderWidth: 2,
+        pointBackgroundColor: colors[i],
+        pointRadius: 4,
+    }}));
+    new Chart(document.getElementById('radarChart'), {{
+        type: 'radar',
+        data: {{ labels, datasets }},
+        options: {{
+            responsive: true,
+            maintainAspectRatio: true,
+            scales: {{ r: {{ beginAtZero: true, max: 10, ticks: {{ backdropColor: 'transparent', color: '#787890', font: {{ size: 10 }} }}, grid: {{ color: '#252535' }}, pointLabels: {{ color: '#c0c0d0', font: {{ size: 11 }} }}, angleLines: {{ color: '#252535' }} }} }},
+            plugins: {{ legend: {{ position: 'bottom', labels: {{ color: '#c0c0d0', font: {{ size: 12 }}, padding: 16, usePointStyle: true }} }} }}
+        }}
+    }});
+}})();
+</script>
 </body>
 </html>"""
 

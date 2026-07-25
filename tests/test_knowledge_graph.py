@@ -8,9 +8,9 @@ Tests cover:
 """
 
 import json
-import pytest
+
 import networkx as nx
-from pathlib import Path
+import pytest
 
 
 class TestBuildGraph:

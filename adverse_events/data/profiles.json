@@ -1,0 +1,802 @@
+{
+  "profiles": [
+    {
+      "drug_id": "belimumab",
+      "drug_name": "Belimumab (Benlysta)",
+      "common_ae": [
+        "nausea",
+        "diarrhea",
+        "pyrexia",
+        "nasopharyngitis",
+        "bronchitis",
+        "insomnia",
+        "depression",
+        "migraine",
+        "infusion reactions",
+        "hypersensitivity"
+      ],
+      "severe_ae": [
+        "serious infections",
+        "progressive multifocal leukoencephalopathy (rare)",
+        "hypersensitivity reactions",
+        "infusion reactions"
+      ],
+      "lupus_overlap_ae": [
+        "depression",
+        "pyrexia"
+      ],
+      "severity_burden": 3,
+      "chronic_use_safety": 8,
+      "dil_risk": 0,
+      "black_box_warnings": [],
+      "monitoring_required": "Infection monitoring; no routine lab monitoring required"
+    },
+    {
+      "drug_id": "anifrolumab",
+      "drug_name": "Anifrolumab (Saphnelo)",
+      "common_ae": [
+        "nasopharyngitis",
+        "upper respiratory tract infection",
+        "bronchitis",
+        "infusion reactions",
+        "herpes zoster",
+        "cough"
+      ],
+      "severe_ae": [
+        "serious infections",
+        "herpes zoster (disseminated)",
+        "hypersensitivity reactions"
+      ],
+      "lupus_overlap_ae": [
+        "cough"
+      ],
+      "severity_burden": 3,
+      "chronic_use_safety": 8,
+      "dil_risk": 0,
+      "black_box_warnings": [],
+      "monitoring_required": "Infection monitoring; herpes zoster risk counseling"
+    },
+    {
+      "drug_id": "voclosporin",
+      "drug_name": "Voclosporin (Lupkynis)",
+      "common_ae": [
+        "glomerular filtration rate decreased",
+        "hypertension",
+        "diarrhea",
+        "headache",
+        "anemia",
+        "cough",
+        "urinary tract infection",
+        "upper abdominal pain"
+      ],
+      "severe_ae": [
+        "nephrotoxicity",
+        "hypertension",
+        "neurotoxicity",
+        "serious infections",
+        "lymphoma (rare)",
+        "skin cancer (rare)"
+      ],
+      "lupus_overlap_ae": [
+        "anemia",
+        "headache"
+      ],
+      "severity_burden": 5,
+      "chronic_use_safety": 5,
+      "dil_risk": 0,
+      "black_box_warnings": [
+        "Increased risk of serious infections",
+        "Increased risk of malignancy (lymphoma, skin cancer)"
+      ],
+      "monitoring_required": "Renal function (eGFR), blood pressure, drug levels, CBC"
+    },
+    {
+      "drug_id": "hydroxychloroquine",
+      "drug_name": "Hydroxychloroquine (Plaquenil)",
+      "common_ae": [
+        "nausea",
+        "abdominal pain",
+        "diarrhea",
+        "headache",
+        "rash",
+        "pruritus"
+      ],
+      "severe_ae": [
+        "retinopathy (with long-term use)",
+        "cardiomyopathy (rare)",
+        "severe hypoglycemia",
+        "neuropsychiatric effects (rare)"
+      ],
+      "lupus_overlap_ae": [
+        "rash"
+      ],
+      "severity_burden": 2,
+      "chronic_use_safety": 9,
+      "dil_risk": 0,
+      "black_box_warnings": [],
+      "monitoring_required": "Annual retinal screening after 5 years; baseline ophthalmologic exam"
+    },
+    {
+      "drug_id": "mycophenolate",
+      "drug_name": "Mycophenolate Mofetil (CellCept)",
+      "common_ae": [
+        "diarrhea",
+        "nausea",
+        "vomiting",
+        "abdominal pain",
+        "leukopenia",
+        "anemia",
+        "thrombocytopenia"
+      ],
+      "severe_ae": [
+        "serious infections",
+        "lymphoma (rare)",
+        "skin cancer (rare)",
+        "progressive multifocal leukoencephalopathy (rare)",
+        "pure red cell aplasia (rare)",
+        "gastrointestinal bleeding"
+      ],
+      "lupus_overlap_ae": [
+        "leukopenia",
+        "anemia",
+        "thrombocytopenia"
+      ],
+      "severity_burden": 5,
+      "chronic_use_safety": 6,
+      "dil_risk": 0,
+      "black_box_warnings": [
+        "Increased risk of congenital malformations (pregnancy Category D)",
+        "Increased risk of serious infections",
+        "Increased risk of lymphoma"
+      ],
+      "monitoring_required": "CBC, pregnancy testing, infection monitoring"
+    },
+    {
+      "drug_id": "cyclophosphamide",
+      "drug_name": "Cyclophosphamide (Cytoxan)",
+      "common_ae": [
+        "nausea",
+        "vomiting",
+        "alopecia",
+        "bone marrow suppression",
+        "leukopenia",
+        "hemorrhagic cystitis",
+        "infertility"
+      ],
+      "severe_ae": [
+        "bone marrow failure",
+        "hemorrhagic cystitis",
+        "bladder cancer",
+        "secondary malignancies (leukemia, lymphoma)",
+        "severe infections",
+        "cardiotoxicity (high dose)",
+        "pulmonary fibrosis",
+        "infertility (permanent)"
+      ],
+      "lupus_overlap_ae": [
+        "alopecia",
+        "leukopenia"
+      ],
+      "severity_burden": 9,
+      "chronic_use_safety": 1,
+      "dil_risk": 1,
+      "black_box_warnings": [
+        "Myelosuppression",
+        "Hemorrhagic cystitis",
+        "Secondary malignancies",
+        "Fetal harm"
+      ],
+      "monitoring_required": "CBC, urinalysis, renal/hepatic function, fertility counseling"
+    },
+    {
+      "drug_id": "rituximab",
+      "drug_name": "Rituximab (Rituxan)",
+      "common_ae": [
+        "infusion reactions",
+        "pyrexia",
+        "chills",
+        "asthenia",
+        "nausea",
+        "headache",
+        "pruritus",
+        "rash"
+      ],
+      "severe_ae": [
+        "serious infusion reactions",
+        "hepatitis B reactivation",
+        "progressive multifocal leukoencephalopathy (rare)",
+        "serious infections",
+        "cardiac arrhythmias",
+        "tumor lysis syndrome"
+      ],
+      "lupus_overlap_ae": [
+        "pyrexia",
+        "rash",
+        "headache"
+      ],
+      "severity_burden": 5,
+      "chronic_use_safety": 6,
+      "dil_risk": 1,
+      "black_box_warnings": [
+        "Fatal infusion reactions",
+        "Severe mucocutaneous reactions",
+        "Hepatitis B reactivation",
+        "Progressive multifocal leukoencephalopathy"
+      ],
+      "monitoring_required": "Hepatitis B/C screening, CBC, cardiac monitoring during infusion"
+    },
+    {
+      "drug_id": "prednisone",
+      "drug_name": "Prednisone (Corticosteroids)",
+      "common_ae": [
+        "weight gain",
+        "insomnia",
+        "mood changes",
+        "hyperglycemia",
+        "hypertension",
+        "osteoporosis",
+        "cataracts",
+        "glaucoma",
+        "skin thinning",
+        "increased appetite",
+        "fluid retention",
+        "avascular necrosis"
+      ],
+      "severe_ae": [
+        "avascular necrosis of femoral head",
+        "osteoporosis with fracture",
+        "adrenal suppression",
+        "severe infections",
+        "Cushing syndrome",
+        "peptic ulcer",
+        "pancreatitis",
+        "psychosis (rare)"
+      ],
+      "lupus_overlap_ae": [
+        "mood changes",
+        "psychosis"
+      ],
+      "severity_burden": 7,
+      "chronic_use_safety": 2,
+      "dil_risk": 0,
+      "black_box_warnings": [],
+      "monitoring_required": "Blood pressure, glucose, bone density, ophthalmologic exam"
+    },
+    {
+      "drug_id": "tacrolimus",
+      "drug_name": "Tacrolimus (Prograf)",
+      "common_ae": [
+        "tremor",
+        "headache",
+        "hypertension",
+        "nausea",
+        "diarrhea",
+        "renal dysfunction",
+        "hyperglycemia",
+        "hypomagnesemia",
+        "hyperkalemia"
+      ],
+      "severe_ae": [
+        "nephrotoxicity",
+        "neurotoxicity",
+        "hypertension",
+        "hyperglycemia/diabetes",
+        "serious infections",
+        "lymphoma (rare)",
+        "skin cancer (rare)"
+      ],
+      "lupus_overlap_ae": [
+        "headache",
+        "renal dysfunction"
+      ],
+      "severity_burden": 5,
+      "chronic_use_safety": 5,
+      "dil_risk": 0,
+      "black_box_warnings": [
+        "Increased risk of malignancy (lymphoma, skin cancer)",
+        "Increased risk of serious infections"
+      ],
+      "monitoring_required": "Renal function, drug levels, blood pressure, glucose, CBC"
+    },
+    {
+      "drug_id": "azathioprine",
+      "drug_name": "Azathioprine (Imuran)",
+      "common_ae": [
+        "leukopenia",
+        "nausea",
+        "vomiting",
+        "hepatotoxicity",
+        "pancreatitis (rare)",
+        "infection risk"
+      ],
+      "severe_ae": [
+        "bone marrow suppression",
+        "hepatotoxicity",
+        "pancreatitis",
+        "severe infections",
+        "lymphoma (rare)",
+        "skin cancer (rare)"
+      ],
+      "lupus_overlap_ae": [
+        "leukopenia"
+      ],
+      "severity_burden": 5,
+      "chronic_use_safety": 5,
+      "dil_risk": 1,
+      "black_box_warnings": [
+        "Increased risk of malignancy",
+        "TPMT deficiency can cause severe myelotoxicity"
+      ],
+      "monitoring_required": "TPMT testing pre-initiation, CBC, LFTs, pregnancy testing"
+    },
+    {
+      "drug_id": "baricitinib",
+      "drug_name": "Baricitinib (Olumiant)",
+      "common_ae": [
+        "upper respiratory tract infection",
+        "nausea",
+        "herpes zoster",
+        "herpes simplex",
+        "hyperlipidemia",
+        "increased creatine phosphokinase"
+      ],
+      "severe_ae": [
+        "serious infections",
+        "herpes zoster (disseminated)",
+        "thrombosis (venous thromboembolism)",
+        "major adverse cardiovascular events",
+        "malignancy",
+        "gastrointestinal perforation (rare)"
+      ],
+      "lupus_overlap_ae": [],
+      "severity_burden": 5,
+      "chronic_use_safety": 6,
+      "dil_risk": 0,
+      "black_box_warnings": [
+        "Risk of serious infections",
+        "Increased mortality in RA patients >50 with CV risk factors"
+      ],
+      "monitoring_required": "CBC, LFTs, lipids, TB screening, viral hepatitis screening"
+    },
+    {
+      "drug_id": "obinutuzumab",
+      "drug_name": "Obinutuzumab (Gazyva)",
+      "common_ae": [
+        "infusion reactions",
+        "neutropenia",
+        "thrombocytopenia",
+        "pyrexia",
+        "cough",
+        "nausea"
+      ],
+      "severe_ae": [
+        "serious infusion reactions",
+        "hepatitis B reactivation",
+        "progressive multifocal leukoencephalopathy (rare)",
+        "neutropenia (severe)",
+        "thrombocytopenia (severe)",
+        "serious infections"
+      ],
+      "lupus_overlap_ae": [
+        "neutropenia",
+        "thrombocytopenia",
+        "pyrexia"
+      ],
+      "severity_burden": 6,
+      "chronic_use_safety": 6,
+      "dil_risk": 0,
+      "black_box_warnings": [
+        "Hepatitis B reactivation",
+        "Progressive multifocal leukoencephalopathy"
+      ],
+      "monitoring_required": "CBC, hepatitis B/C screening, infection monitoring"
+    },
+    {
+      "drug_id": "acalabrutinib",
+      "drug_name": "Acalabrutinib (Calquence)",
+      "common_ae": [
+        "headache",
+        "diarrhea",
+        "fatigue",
+        "myalgia",
+        "bruising",
+        "nausea",
+        "rash"
+      ],
+      "severe_ae": [
+        "hemorrhage",
+        "atrial fibrillation/flutter",
+        "serious infections",
+        "second primary malignancies",
+        "cytopenias"
+      ],
+      "lupus_overlap_ae": [
+        "fatigue",
+        "rash",
+        "headache",
+        "myalgia"
+      ],
+      "severity_burden": 5,
+      "chronic_use_safety": 6,
+      "dil_risk": 0,
+      "black_box_warnings": [],
+      "monitoring_required": "CBC, cardiac monitoring (atrial fibrillation), bleeding risk assessment"
+    },
+    {
+      "drug_id": "avacopan",
+      "drug_name": "Avacopan (Tavneos)",
+      "common_ae": [
+        "nausea",
+        "headache",
+        "hypertension",
+        "diarrhea",
+        "vomiting",
+        "rash",
+        "paresthesia"
+      ],
+      "severe_ae": [
+        "hepatotoxicity",
+        "serious infections",
+        "angioedema",
+        "hypersensitivity reactions"
+      ],
+      "lupus_overlap_ae": [
+        "headache",
+        "rash"
+      ],
+      "severity_burden": 4,
+      "chronic_use_safety": 6,
+      "dil_risk": 0,
+      "black_box_warnings": [],
+      "monitoring_required": "LFTs (hepatotoxicity monitoring), infection monitoring"
+    },
+    {
+      "drug_id": "cyclosporine",
+      "drug_name": "Cyclosporine (Neoral / Sandimmune)",
+      "common_ae": [
+        "renal dysfunction",
+        "hypertension",
+        "tremor",
+        "hirsutism",
+        "gingival hyperplasia",
+        "hyperlipidemia",
+        "nausea"
+      ],
+      "severe_ae": [
+        "nephrotoxicity",
+        "hypertension",
+        "neurotoxicity",
+        "serious infections",
+        "lymphoma (rare)",
+        "skin cancer (rare)",
+        "hepatotoxicity"
+      ],
+      "lupus_overlap_ae": [
+        "renal dysfunction"
+      ],
+      "severity_burden": 6,
+      "chronic_use_safety": 5,
+      "dil_risk": 0,
+      "black_box_warnings": [
+        "Nephrotoxicity",
+        "Hypertension",
+        "Increased risk of malignancy",
+        "Increased risk of serious infections"
+      ],
+      "monitoring_required": "Renal function, blood pressure, drug levels, lipids, CBC"
+    },
+    {
+      "drug_id": "dimethyl_fumarate",
+      "drug_name": "Dimethyl Fumarate (Tecfidera)",
+      "common_ae": [
+        "flushing",
+        "abdominal pain",
+        "diarrhea",
+        "nausea",
+        "vomiting",
+        "pruritus",
+        "rash"
+      ],
+      "severe_ae": [
+        "progressive multifocal leukoencephalopathy (rare)",
+        "lymphopenia (severe)",
+        "hepatic injury",
+        "anaphylaxis"
+      ],
+      "lupus_overlap_ae": [
+        "rash"
+      ],
+      "severity_burden": 4,
+      "chronic_use_safety": 7,
+      "dil_risk": 0,
+      "black_box_warnings": [],
+      "monitoring_required": "CBC (lymphocyte counts), LFTs"
+    },
+    {
+      "drug_id": "iscalimab",
+      "drug_name": "Iscalimab (CFZ533 / anti-CD40)",
+      "common_ae": [
+        "upper respiratory tract infection",
+        "headache",
+        "nasopharyngitis",
+        "nausea"
+      ],
+      "severe_ae": [
+        "serious infections",
+        "thromboembolic events (theoretical)",
+        "hypersensitivity reactions"
+      ],
+      "lupus_overlap_ae": [
+        "headache"
+      ],
+      "severity_burden": 3,
+      "chronic_use_safety": 7,
+      "dil_risk": 0,
+      "black_box_warnings": [],
+      "monitoring_required": "Infection monitoring; investigational safety profile evolving"
+    },
+    {
+      "drug_id": "ravulizumab",
+      "drug_name": "Ravulizumab (Ultomiris)",
+      "common_ae": [
+        "upper respiratory tract infection",
+        "headache",
+        "diarrhea",
+        "nausea",
+        "pyrexia"
+      ],
+      "severe_ae": [
+        "meningococcal infection (life-threatening)",
+        "other encapsulated bacterial infections",
+        "infusion reactions"
+      ],
+      "lupus_overlap_ae": [
+        "headache",
+        "pyrexia"
+      ],
+      "severity_burden": 5,
+      "chronic_use_safety": 8,
+      "dil_risk": 0,
+      "black_box_warnings": [
+        "Risk of serious and life-threatening meningococcal infections"
+      ],
+      "monitoring_required": "Meningococcal vaccination required pre-treatment; infection monitoring"
+    },
+    {
+      "drug_id": "rozanolixizumab",
+      "drug_name": "Rozanolixizumab (Rystiggo)",
+      "common_ae": [
+        "headache",
+        "infections",
+        "diarrhea",
+        "pyrexia",
+        "injection site reactions"
+      ],
+      "severe_ae": [
+        "serious infections",
+        "hypersensitivity reactions",
+        "immunogenicity"
+      ],
+      "lupus_overlap_ae": [
+        "headache",
+        "pyrexia"
+      ],
+      "severity_burden": 3,
+      "chronic_use_safety": 7,
+      "dil_risk": 0,
+      "black_box_warnings": [],
+      "monitoring_required": "Infection monitoring; IgG levels"
+    },
+    {
+      "drug_id": "tofacitinib",
+      "drug_name": "Tofacitinib (Xeljanz)",
+      "common_ae": [
+        "upper respiratory tract infection",
+        "headache",
+        "diarrhea",
+        "nasopharyngitis",
+        "hypertension",
+        "hyperlipidemia",
+        "herpes zoster"
+      ],
+      "severe_ae": [
+        "serious infections",
+        "herpes zoster (disseminated)",
+        "thrombosis (venous thromboembolism)",
+        "major adverse cardiovascular events",
+        "malignancy",
+        "gastrointestinal perforation (rare)",
+        "hepatic injury"
+      ],
+      "lupus_overlap_ae": [
+        "headache"
+      ],
+      "severity_burden": 6,
+      "chronic_use_safety": 5,
+      "dil_risk": 0,
+      "black_box_warnings": [
+        "Risk of serious infections",
+        "Increased risk of mortality, thrombosis, and malignancy (RA patients)"
+      ],
+      "monitoring_required": "CBC, LFTs, lipids, TB screening, viral hepatitis screening"
+    },
+    {
+      "drug_id": "deucravacitinib",
+      "drug_name": "Deucravacitinib (Sotyktu)",
+      "common_ae": [
+        "upper respiratory tract infection",
+        "nasopharyngitis",
+        "headache",
+        "diarrhea",
+        "nausea",
+        "herpes simplex"
+      ],
+      "severe_ae": [
+        "serious infections",
+        "malignancy (potential)",
+        "herpes simplex (disseminated, rare)",
+        "increased creatine phosphokinase"
+      ],
+      "lupus_overlap_ae": [
+        "headache"
+      ],
+      "severity_burden": 3,
+      "chronic_use_safety": 7,
+      "dil_risk": 0,
+      "black_box_warnings": [],
+      "monitoring_required": "Infection monitoring, TB screening, viral hepatitis screening"
+    },
+    {
+      "drug_id": "dapirolizumab_pegol",
+      "drug_name": "Dapirolizumab Pegol (Anti-CD40L Fab-PEG)",
+      "common_ae": [
+        "injection site reactions",
+        "upper respiratory tract infection",
+        "headache",
+        "nausea"
+      ],
+      "severe_ae": [
+        "serious infections",
+        "thromboembolic events (theoretical risk mitigated by PEGylated Fab design)",
+        "hypersensitivity reactions"
+      ],
+      "lupus_overlap_ae": [
+        "headache"
+      ],
+      "severity_burden": 3,
+      "chronic_use_safety": 7,
+      "dil_risk": 0,
+      "black_box_warnings": [],
+      "monitoring_required": "Infection monitoring; investigational safety profile evolving"
+    },
+    {
+      "drug_id": "litifilimab",
+      "drug_name": "Litifilimab (Anti-BDCA2 / BIIB059)",
+      "common_ae": [
+        "injection site reactions",
+        "upper respiratory tract infection",
+        "headache",
+        "nasopharyngitis"
+      ],
+      "severe_ae": [
+        "serious infections",
+        "hypersensitivity reactions"
+      ],
+      "lupus_overlap_ae": [
+        "headache"
+      ],
+      "severity_burden": 2,
+      "chronic_use_safety": 7,
+      "dil_risk": 0,
+      "black_box_warnings": [],
+      "monitoring_required": "Infection monitoring; investigational safety profile evolving"
+    },
+    {
+      "drug_id": "iberdomide",
+      "drug_name": "Iberdomide (CC-220 / Cereblon Modulator)",
+      "common_ae": [
+        "neutropenia",
+        "thrombocytopenia",
+        "anemia",
+        "infections",
+        "fatigue",
+        "diarrhea",
+        "nausea"
+      ],
+      "severe_ae": [
+        "neutropenia (severe)",
+        "thrombocytopenia (severe)",
+        "serious infections",
+        "thromboembolic events",
+        "second primary malignancies (potential, class effect)"
+      ],
+      "lupus_overlap_ae": [
+        "neutropenia",
+        "thrombocytopenia",
+        "anemia",
+        "fatigue"
+      ],
+      "severity_burden": 6,
+      "chronic_use_safety": 5,
+      "dil_risk": 0,
+      "black_box_warnings": [
+        "Fetal harm (contraindicated in pregnancy)",
+        "Venous/arterial thromboembolism risk"
+      ],
+      "monitoring_required": "CBC, pregnancy testing, thrombosis risk assessment"
+    },
+    {
+      "drug_id": "teclistamab",
+      "drug_name": "Teclistamab (Tecvayli / BCMAxCD3 Bispecific)",
+      "common_ae": [
+        "cytokine release syndrome",
+        "neutropenia",
+        "anemia",
+        "thrombocytopenia",
+        "infections",
+        "fatigue",
+        "injection site reactions",
+        "pyrexia"
+      ],
+      "severe_ae": [
+        "cytokine release syndrome (Grade 3-4)",
+        "immune effector cell-associated neurotoxicity syndrome (ICANS)",
+        "severe infections",
+        "cytopenias (prolonged)",
+        "hypogammaglobulinemia"
+      ],
+      "lupus_overlap_ae": [
+        "neutropenia",
+        "anemia",
+        "thrombocytopenia",
+        "fatigue",
+        "pyrexia"
+      ],
+      "severity_burden": 8,
+      "chronic_use_safety": 3,
+      "dil_risk": 0,
+      "black_box_warnings": [
+        "Cytokine release syndrome",
+        "Neurologic toxicity including ICANS"
+      ],
+      "monitoring_required": "Hospitalization for initial doses; CBC; infection monitoring; immunoglobulin levels"
+    },
+    {
+      "drug_id": "anti_cd19_cart",
+      "drug_name": "Anti-CD19 CAR-T Cell Therapy",
+      "common_ae": [
+        "cytokine release syndrome",
+        "neurotoxicity",
+        "B cell aplasia",
+        "hypogammaglobulinemia",
+        "infections",
+        "pyrexia",
+        "fatigue",
+        "cytopenias"
+      ],
+      "severe_ae": [
+        "cytokine release syndrome (Grade 3-4)",
+        "immune effector cell-associated neurotoxicity syndrome (ICANS)",
+        "prolonged B cell aplasia (requiring immunoglobulin replacement)",
+        "serious infections",
+        "secondary malignancies",
+        "cytopenias (prolonged)",
+        "hemophagocytic lymphohistiocytosis (rare)"
+      ],
+      "lupus_overlap_ae": [
+        "neurotoxicity",
+        "fatigue",
+        "pyrexia"
+      ],
+      "severity_burden": 9,
+      "chronic_use_safety": 2,
+      "dil_risk": 0,
+      "black_box_warnings": [
+        "Cytokine release syndrome",
+        "Neurologic toxicities",
+        "Secondary malignancies"
+      ],
+      "monitoring_required": "Hospitalization required; CBC; infection monitoring; immunoglobulin replacement"
+    }
+  ]
+}

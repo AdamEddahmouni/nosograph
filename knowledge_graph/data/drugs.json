@@ -239,6 +239,78 @@
       "efficacy": "Effective across multiple autoimmune diseases; SLE-specific trials not conducted",
       "references": ["PMID:33174738", "PMID:33846604"],
       "category": "Targeted Synthetic - JAK Inhibitor"
+    },
+    {
+      "id": "deucravacitinib",
+      "name": "Deucravacitinib (Sotyktu)",
+      "type": "Small Molecule",
+      "target": "TYK2",
+      "mechanism": "Highly selective allosteric TYK2 inhibitor that binds the pseudokinase (JH2) domain, blocking type I IFN, IL-12, and IL-23 signaling without inhibiting JAK1/2/3",
+      "approval": "FDA approved 2022 (plaque psoriasis); Phase 2 in SLE (PAISLEY trial)",
+      "route": "Oral, once daily",
+      "efficacy": "Phase 2 PAISLEY trial in SLE met primary endpoint (SRI-4 response ~58% vs 34% placebo at 32 weeks)",
+      "references": ["PMID:33846604", "PMID:37494006"],
+      "category": "Targeted Synthetic - TYK2 Inhibitor"
+    },
+    {
+      "id": "dapirolizumab_pegol",
+      "name": "Dapirolizumab Pegol (Anti-CD40L Fab-PEG)",
+      "type": "Monoclonal Antibody Fragment (PEGylated Fab)",
+      "target": "CD40L (CD154)",
+      "mechanism": "PEGylated anti-CD40L Fab fragment that blocks CD40-CD40L interaction, inhibiting T cell-dependent B cell activation without platelet-related thromboembolic events seen with earlier anti-CD40L mAbs",
+      "approval": "Phase 3 in SLE (PHOENYCS GO trial, ongoing)",
+      "route": "Subcutaneous injection, every 2-4 weeks",
+      "efficacy": "Phase 2 showed significant reduction in disease activity; Phase 3 PHOENYCS GO enrolling",
+      "references": ["PMID:25974202", "PMID:35531068"],
+      "category": "Biologic - T Cell Costimulation Blocker"
+    },
+    {
+      "id": "litifilimab",
+      "name": "Litifilimab (Anti-BDCA2 / BIIB059)",
+      "type": "Monoclonal Antibody",
+      "target": "BDCA2 (CLEC4C) on plasmacytoid dendritic cells",
+      "mechanism": "Anti-BDCA2 antibody that binds CLEC4C on pDCs, inhibiting TLR7/TLR9-induced IFN-α production and reducing the type I interferon signature at its source",
+      "approval": "Phase 3 in SLE (TOPAZ-1 and TOPAZ-2 trials, ongoing)",
+      "route": "Subcutaneous injection, every 4 weeks",
+      "efficacy": "Phase 2 LILAC trial: significant reduction in total active joint count vs placebo in SLE patients with active joint and skin disease",
+      "references": ["PMID:35477763", "PMID:37494006"],
+      "category": "Biologic - pDC / IFN Pathway"
+    },
+    {
+      "id": "iberdomide",
+      "name": "Iberdomide (CC-220 / Cereblon Modulator)",
+      "type": "Small Molecule",
+      "target": "Cereblon (CRBN) E3 Ubiquitin Ligase Complex",
+      "mechanism": "Novel cereblon E3 ligase modulator (CELMoD) that promotes ubiquitination and proteasomal degradation of Ikaros (IKZF1) and Aiolos (IKZF3), transcription factors essential for plasma cell development and autoantibody production",
+      "approval": "Phase 2 in SLE (positive results); Phase 3 planned",
+      "route": "Oral, once daily",
+      "efficacy": "Phase 2 trial in SLE: significantly higher SRI-4 response rate vs placebo at 24 weeks; reduced anti-dsDNA and increased C3/C4",
+      "references": ["PMID:37494006", "PMID:35531068"],
+      "category": "Targeted Synthetic - Cereblon Modulator (CELMoD)"
+    },
+    {
+      "id": "teclistamab",
+      "name": "Teclistamab (Tecvayli / BCMAxCD3 Bispecific)",
+      "type": "Bispecific Antibody",
+      "target": "BCMA (TNFRSF17) on plasma cells / CD3 on T cells",
+      "mechanism": "Bispecific antibody that simultaneously binds BCMA on plasma cells and CD3 on T cells, redirecting T cell cytotoxicity to deplete autoantibody-producing plasma cells",
+      "approval": "FDA approved 2022 (multiple myeloma); exploratory for autoimmune disease including SLE",
+      "route": "Subcutaneous injection, weekly",
+      "efficacy": "Deep and durable responses in multiple myeloma; case reports of drug-free remission in refractory SLE using anti-CD19 CAR-T suggest plasma cell depletion approach is promising",
+      "references": ["PMID:37494006", "PMID:36108951"],
+      "category": "Biologic - Bispecific T Cell Engager (BiTE)"
+    },
+    {
+      "id": "anti_cd19_cart",
+      "name": "Anti-CD19 CAR-T Cell Therapy",
+      "type": "Cellular Therapy (Autologous CAR-T)",
+      "target": "CD19 on B lineage cells",
+      "mechanism": "Autologous T cells engineered with anti-CD19 chimeric antigen receptor (CAR) that deplete CD19+ B cells including autoreactive clones and plasmablasts. Potential for deep B cell reset and drug-free remission.",
+      "approval": "Investigational for SLE; compassionate use cases reported (Erlangen protocol)",
+      "route": "Single IV infusion after lymphodepleting chemotherapy",
+      "efficacy": "Case series (n=5-8) showed drug-free remission in severe refractory SLE after anti-CD19 CAR-T with B cell reconstitution of naïve phenotype; groundbreaking early results published in Nature Medicine 2022",
+      "references": ["PMID:36108951", "PMID:37494006"],
+      "category": "Cellular Therapy - CAR-T Cell"
     }
   ]
 }

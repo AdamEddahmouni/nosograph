@@ -159,6 +159,74 @@ def generate_screening_report(results: dict) -> str:
             {vina_section}
         </div>"""
 
+    # ── Top overall hits radar chart JSON ───────────────────────────────
+    import json
+    top5 = results.get("all_results", [])[:5]
+    top5_items = []
+    for c in top5:
+        top5_items.append({
+            "name": c.get('name', '')[:22],
+            "scores": [
+                round(c.get('binding_estimate', 0), 1),
+                round(c.get('druglikeness', 0), 1),
+                round(c.get('target_complementarity', 0), 1),
+                round(c.get('similarity_score', 0), 1),
+                round(c.get('novelty_score', 0), 1),
+            ],
+        })
+    top5_json = json.dumps(top5_items)
+
+    # ── Per-target radar charts ────────────────────────────────────────
+    target_radars = ""
+    for gene_id, target_data in sorted(results.get("results_per_target", {}).items()):
+        top = target_data["top_compounds"][:5]
+        if not top:
+            continue
+        gene_name = gene_names.get(gene_id, gene_id)
+        target_items = []
+        for c in top:
+            target_items.append({
+                "name": c.get('name', '')[:22],
+                "scores": [
+                    round(c.get('binding_estimate', 0), 1),
+                    round(c.get('druglikeness', 0), 1),
+                    round(c.get('target_complementarity', 0), 1),
+                    round(c.get('similarity_score', 0), 1),
+                    round(c.get('novelty_score', 0), 1),
+                ],
+            })
+        target_json = json.dumps(target_items)
+        chart_id = f"radar_{gene_id}"
+        target_radars += f"""
+        <h3 style="color:#c0c0d0;font-size:0.95rem;margin:20px 0 8px;">🧬 {escape_html(gene_name)}</h3>
+        <div class="radar-container" style="max-width:600px;margin:0 auto 24px;">
+            <canvas id="{chart_id}" style="max-height:400px;"></canvas>
+        </div>
+        <script>
+        (function() {{
+            const data = {target_json};
+            const labels = ['Binding', 'Drug-Like', 'Target', 'Similarity', 'Novelty'];
+            const colors = ['#818cf8', '#4ade80', '#f59e0b', '#f472b6', '#34d399'];
+            const datasets = data.map((c, i) => ({{
+                label: c.name,
+                data: c.scores,
+                borderColor: colors[i % colors.length],
+                backgroundColor: colors[i % colors.length] + '12',
+                borderWidth: 2,
+                pointRadius: 3,
+            }}));
+            new Chart(document.getElementById('{chart_id}'), {{
+                type: 'radar',
+                data: {{ labels, datasets }},
+                options: {{
+                    responsive: true, maintainAspectRatio: true,
+                    scales: {{ r: {{ beginAtZero: true, max: 10, ticks: {{ backdropColor: 'transparent', color: '#787890', font: {{ size: 9 }} }}, grid: {{ color: '#252535' }}, pointLabels: {{ color: '#c0c0d0', font: {{ size: 10 }} }}, angleLines: {{ color: '#252535' }} }} }},
+                    plugins: {{ legend: {{ position: 'bottom', labels: {{ color: '#c0c0d0', font: {{ size: 10 }}, padding: 10, usePointStyle: true }} }} }}
+                }}
+            }});
+        }})();
+        </script>"""
+
     # ── Top overall hits ────────────────────────────────────────────────
 
     top_overall_rows = ""
@@ -241,6 +309,7 @@ def generate_screening_report(results: dict) -> str:
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lupus Virtual Drug Screening Report</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
     <style>
         * {{ margin: 0; padding: 0; box-sizing: border-box; }}
         body {{
@@ -457,6 +526,11 @@ def generate_screening_report(results: dict) -> str:
             </div>
         </div>
 
+        <h2 class="section-title">🎯 Score Dimension Radar — Top 5 Overall Hits</h2>
+        <div class="radar-container" style="max-width:700px;margin:0 auto 28px;">
+            <canvas id="radarChart" style="max-height:500px;"></canvas>
+        </div>
+
         {docking_summary}
 
         {comparison_section}
@@ -473,6 +547,9 @@ def generate_screening_report(results: dict) -> str:
 
         <h2 class="section-title">🧬 Per-Target Screening Results</h2>
         {target_sections}
+
+        <h2 class="section-title">🎯 Per-Target Radar Charts</h2>
+        {target_radars}
 
         <h2 class="section-title">📐 Methodology</h2>
         <div class="method-card">
@@ -498,6 +575,31 @@ def generate_screening_report(results: dict) -> str:
             </p>
         </footer>
     </div>
+    <script>
+(function() {{
+    const top5 = {top5_json};
+    const labels = ['Binding', 'Drug-Like', 'Target', 'Similarity', 'Novelty'];
+    const colors = ['#818cf8', '#4ade80', '#f59e0b', '#f472b6', '#34d399'];
+    const datasets = top5.map((c, i) => ({{
+        label: c.name,
+        data: c.scores,
+        borderColor: colors[i % colors.length],
+        backgroundColor: colors[i % colors.length] + '15',
+        borderWidth: 2,
+        pointBackgroundColor: colors[i % colors.length],
+        pointRadius: 3,
+    }}));
+    new Chart(document.getElementById('radarChart'), {{
+        type: 'radar',
+        data: {{ labels, datasets }},
+        options: {{
+            responsive: true, maintainAspectRatio: true,
+            scales: {{ r: {{ beginAtZero: true, max: 10, ticks: {{ backdropColor: 'transparent', color: '#787890', font: {{ size: 10 }} }}, grid: {{ color: '#252535' }}, pointLabels: {{ color: '#c0c0d0', font: {{ size: 11 }} }}, angleLines: {{ color: '#252535' }} }} }},
+            plugins: {{ legend: {{ position: 'bottom', labels: {{ color: '#c0c0d0', font: {{ size: 11 }}, padding: 14, usePointStyle: true }} }} }}
+        }}
+    }});
+}})();
+</script>
 </body>
 </html>"""
 

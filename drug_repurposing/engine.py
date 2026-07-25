@@ -5,12 +5,12 @@ Multi-modal scoring system that evaluates drug repurposing candidates
 for the 13 untargeted lupus genes identified by the knowledge graph.
 
 Scoring Dimensions (each 0-10, weighted):
-  1. Target Similarity: How closely related is the drug's known target to the gene?
-  2. Pathway Proximity: Network distance in the knowledge graph.
-  3. Mechanistic Rationale: Does the drug's mechanism make biological sense?
-  4. Clinical Evidence: Literature/trial support level.
-  5. Safety Profile: Known safety from approved indications.
-  6. Novelty Bonus: How novel is this repurposing application? (0-5)
+  1. Target Similarity (20%): How closely related is the drug's known target to the gene?
+  2. Pathway Proximity (15%): Network distance in the knowledge graph.
+  3. Mechanistic Rationale (20%): Does the drug's mechanism make biological sense?
+  4. Clinical Evidence (15%): Literature/trial support level.
+  5. Adverse Event Profile (20%): Lupus-specific safety scoring from curated profiles.
+  6. Novelty Bonus (10%): How novel is this repurposing application? (0-5)
 
 Usage:
     python engine.py              # Full analysis
@@ -18,13 +18,13 @@ Usage:
     python engine.py --gene BTK   # Candidates for a specific gene
 """
 
+import argparse
 import json
 import sys
-import os
-import argparse
-import networkx as nx
-from pathlib import Path
 from collections import defaultdict
+from pathlib import Path
+
+import networkx as nx
 
 # Add parent to path for knowledge_graph import
 sys.path.insert(0, str(Path(__file__).parent.parent))
@@ -143,26 +143,34 @@ def compute_composite_score(candidate: dict) -> float:
     """
     Compute weighted composite score from all dimensions.
 
-    Weights:
-        Target Similarity: 25%
+    Weights (updated: safety replaced by adverse event profile at 20%):
+        Target Similarity: 20%
         Pathway Proximity: 15%
-        Mechanistic Rationale: 25%
-        Clinical Evidence: 20%
-        Safety Profile: 10%
-        Novelty Bonus: 5%
+        Mechanistic Rationale: 20%
+        Clinical Evidence: 15%
+        Adverse Event Profile: 20%
+        Novelty Bonus: 10%
     """
     weights = {
-        "target_similarity_score": 0.25,
+        "target_similarity_score": 0.20,
         "pathway_proximity_score": 0.15,
-        "mechanistic_rationale_score": 0.25,
-        "clinical_evidence_score": 0.20,
-        "safety_score": 0.10,
-        "novelty_score": 0.05,
+        "mechanistic_rationale_score": 0.20,
+        "clinical_evidence_score": 0.15,
+        "adverse_event_score": 0.20,
+        "novelty_score": 0.10,
     }
+
+    # Fall back to legacy safety_score if adverse_event_score not set
+    ae_score = candidate.get("adverse_event_score")
+    if ae_score is None:
+        ae_score = candidate.get("safety_score", 5)
 
     composite = 0.0
     for key, weight in weights.items():
-        score = candidate.get(key, 5)
+        if key == "adverse_event_score":
+            score = ae_score
+        else:
+            score = candidate.get(key, 5)
         composite += score * weight
 
     return round(composite, 2)
@@ -171,6 +179,7 @@ def compute_composite_score(candidate: dict) -> float:
 def score_candidates(G, candidates: list, genes: dict) -> list:
     """Score all repurposing candidates and compute composite scores."""
     scored = []
+    drugs = load_drugs()  # Load KG drugs for AE score matching
 
     for candidate in candidates:
         gene_id = candidate["gene_id"]
@@ -185,6 +194,24 @@ def score_candidates(G, candidates: list, genes: dict) -> list:
         # Use the higher of curated score and computed proximity
         curated_proximity = candidate.get("pathway_proximity_score", 5.0)
         final_proximity = max(kg_proximity, curated_proximity)
+
+        # Compute adverse event score from profiler if available
+        adverse_score = candidate.get("safety_score", 5)
+        try:
+            from adverse_events.profiler import get_drug_profile
+            # Match by drug ID from the KG drugs dict (same IDs as profiles)
+            for drug_id, drug_data in drugs.items():
+                if drug_data.get("name", "").lower() in candidate["drug_name"].lower() or \
+                   candidate["drug_name"].lower().split("(")[0].strip() in drug_data.get("name", "").lower():
+                    profile_result = get_drug_profile(drug_id)
+                    if profile_result and "composite_safety_score" in profile_result:
+                        adverse_score = profile_result["composite_safety_score"]
+                    break
+        except ImportError:
+            pass
+        except KeyError:
+            pass
+        candidate["adverse_event_score"] = adverse_score
 
         composite = compute_composite_score(candidate)
 
@@ -232,7 +259,7 @@ def analyze(scored_candidates: list):
 
     print(f"\n  Total candidates evaluated: {len(scored_candidates)}")
     print(f"  Score range: {min(c['composite_score'] for c in scored_candidates):.2f} - {max(c['composite_score'] for c in scored_candidates):.2f}")
-    print(f"\n  Distribution by priority tier:")
+    print("\n  Distribution by priority tier:")
     for tier in ["🔴 Tier 1 — Highest Priority", "🟠 Tier 2 — High Priority", "🟡 Tier 3 — Medium Priority", "🟢 Tier 4 — Lower Priority"]:
         count = tier_counts[tier]
         if count > 0:
@@ -245,7 +272,7 @@ def analyze(scored_candidates: list):
         gene_counts[c["gene_name"]] += 1
         gene_scores[c["gene_name"]].append(c["composite_score"])
 
-    print(f"\n  Genes with most repurposing candidates:")
+    print("\n  Genes with most repurposing candidates:")
     for gene_name, count in sorted(gene_counts.items(), key=lambda x: x[1], reverse=True):
         avg = sum(gene_scores[gene_name]) / len(gene_scores[gene_name])
         print(f"    {gene_name}: {count} candidates (avg score: {avg:.2f})")
@@ -255,7 +282,7 @@ def analyze(scored_candidates: list):
     for c in scored_candidates:
         drug_scores[c["drug_name"]].append(c["composite_score"])
 
-    print(f"\n  Most promising drugs (across multiple genes):")
+    print("\n  Most promising drugs (across multiple genes):")
     multi_gene_drugs = [
         (drug, scores)
         for drug, scores in drug_scores.items()
@@ -274,7 +301,7 @@ def print_top_candidates(scored_candidates: list, top_n: int = 10):
 
     for i, c in enumerate(scored_candidates[:top_n], 1):
         print(f"\n  #{i} | {c['tier']}")
-        print(f"  ─────────────────────────────────────────────")
+        print("  ─────────────────────────────────────────────")
         print(f"  💊 Drug:      {c['drug_name']}")
         print(f"  🧬 Gene:      {c['gene_name']} ({c['gene_id']})")
         print(f"  📂 Category:  {c['gene_category']}")
@@ -283,7 +310,7 @@ def print_top_candidates(scored_candidates: list, top_n: int = 10):
         print(f"     ├─ Pathway Proximity:     {c['final_proximity']:.1f}/10")
         print(f"     ├─ Mechanistic Rationale: {c['mechanistic_rationale_score']}/10")
         print(f"     ├─ Clinical Evidence:     {c['clinical_evidence_score']}/10")
-        print(f"     ├─ Safety Profile:        {c['safety_score']}/10")
+        print(f"     ├─ Adverse Event Profile:  {c.get('adverse_event_score', c.get('safety_score', 'N/A'))}/10")
         print(f"     └─ Novelty Bonus:         {c['novelty_score']}/5")
         print(f"  📋 Evidence:   {c['evidence_level']}")
         print(f"  🔬 Mechanism:  {c['mechanism'][:150]}...")
@@ -306,7 +333,7 @@ def print_gene_analysis(scored_candidates: list, genes: dict, gene_id: str):
     print(f"  Lupus Evidence:  {gene.get('lupus_evidence', 'N/A')[:200]}")
 
     if not gene_candidates:
-        print(f"\n  ⚠️  No repurposing candidates found for this gene.")
+        print("\n  ⚠️  No repurposing candidates found for this gene.")
         return
 
     print(f"\n  📋 {len(gene_candidates)} repurposing candidates:")

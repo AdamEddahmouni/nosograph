@@ -37,11 +37,13 @@ def _try_load_spacy():
     try:
         import spacy
 
-        # Try biomedical models first
+        # Try biomedical models first (scispacy)
         for model_name in [
-            "en_ner_bc5cdr_md",
-            "en_core_sci_sm",
-            "en_core_sci_md",
+            "en_ner_bc5cdr_md",      # BioCreative V CDR model
+            "en_core_sci_sm",          # scispacy small
+            "en_core_sci_md",          # scispacy medium
+            "en_ner_craft_md",         # CRAFT model
+            "en_ner_jnlpba_md",        # JNLPBA model
         ]:
             try:
                 _spacy_nlp = spacy.load(model_name)
@@ -284,14 +286,17 @@ class BiomedicalNER:
     def get_installation_hint(self) -> str:
         """Return installation instructions for spaCy biomedical NER."""
         if self.spacy_available and _spacy_is_biomedical:
-            return "✅ spaCy biomedical NER is active (scispacy/BC5CDR)."
+            return "[scispacy] Biomedical NER is active (BC5CDR/scispacy model loaded)."
         elif self.spacy_available:
-            return "⚠️  spaCy loaded (generic model) — regex NER provides biomedical coverage."
+            return "[spacy] Generic model loaded -- regex NER provides biomedical coverage."
 
         return (
-            "🔬 Regex-based biomedical NER is active (no model downloads needed).\n"
-            "💡 Install spaCy + scispacy for enhanced precision:\n"
-            "   pip install spacy scispacy\n"
-            "   pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/"
-            "releases/v0.5.4/en_core_sci_sm-0.5.4.tar.gz"
+            "[regex] Regex-based biomedical NER is active (no model downloads needed).\n"
+            "  Install spaCy + scispacy for enhanced precision:\n"
+            "    pip install spacy scispacy\n"
+            "    pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/"
+            "releases/v0.5.4/en_core_sci_sm-0.5.4.tar.gz\n"
+            "  Or use a BioCreative model:\n"
+            "    pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/"
+            "releases/v0.5.4/en_ner_bc5cdr_md-0.5.4.tar.gz"
         )

@@ -219,6 +219,136 @@
       "odds_ratio": null,
       "references": ["PMID:30875411", "PMID:33174738"],
       "category": "Nuclear Receptor Signaling"
+    },
+    {
+      "id": "C1QA",
+      "name": "Complement C1q A Chain",
+      "chromosome": "1p36.12",
+      "function": "Initiates classical complement pathway; opsonizes apoptotic cells for clearance by macrophages",
+      "lupus_evidence": "Homozygous C1q deficiency is the strongest monogenic cause of SLE (>90% penetrance). C1q opsonizes apoptotic debris; deficiency leads to accumulation of self-antigen and loss of tolerance.",
+      "odds_ratio": 10.0,
+      "references": ["PMID:9590289", "PMID:29180258"],
+      "category": "Complement Cascade"
+    },
+    {
+      "id": "C2",
+      "name": "Complement C2",
+      "chromosome": "6p21.33",
+      "function": "Component of classical and lectin complement pathways; forms C3 convertase with C4",
+      "lupus_evidence": "C2 deficiency is one of the most common complement deficiencies associated with SLE (~10-20% of homozygous deficient develop SLE). Associated with anti-Ro/SSA antibodies and photosensitivity.",
+      "odds_ratio": 5.0,
+      "references": ["PMID:11920357", "PMID:26048913"],
+      "category": "Complement Cascade"
+    },
+    {
+      "id": "C4A",
+      "name": "Complement C4A",
+      "chromosome": "6p21.33",
+      "function": "Key component of classical complement pathway; C4A is more efficient at opsonizing immune complexes than C4B",
+      "lupus_evidence": "C4A copy number variation (low gene copy number) is strongly associated with SLE. Low C4A levels impair immune complex clearance and waste disposal. Gene copy number <2 confers ~3-6x risk.",
+      "odds_ratio": 3.5,
+      "references": ["PMID:17679002", "PMID:27399968"],
+      "category": "Complement Cascade"
+    },
+    {
+      "id": "IRF7",
+      "name": "Interferon Regulatory Factor 7",
+      "chromosome": "11p15.5",
+      "function": "Master transcription factor for type I IFN production; activated downstream of TLR7/TLR9-MyD88 signaling in plasmacytoid DCs",
+      "lupus_evidence": "IRF7 risk variants associated with increased IFN-α production and SLE susceptibility. IRF7 is essential for the TLR7/TLR9 → IFN-α axis in pDCs. Gain-of-function variants identified in familial SLE.",
+      "odds_ratio": 1.5,
+      "references": ["PMID:27129255", "PMID:32094663"],
+      "category": "Type I Interferon Pathway"
+    },
+    {
+      "id": "IRAK4",
+      "name": "Interleukin-1 Receptor-Associated Kinase 4",
+      "chromosome": "12q12",
+      "function": "Essential kinase downstream of MyD88 in TLR7/TLR9 and IL-1R signaling; phosphorylates IRF5 and IRF7",
+      "lupus_evidence": "IRAK4 is critical for TLR7/TLR9-driven IFN-α and autoantibody production in lupus models. Pharmacological IRAK4 inhibition reduces disease severity in murine lupus.",
+      "odds_ratio": null,
+      "references": ["PMID:28368009", "PMID:34099641"],
+      "category": "Innate Immune Sensing"
+    },
+    {
+      "id": "MYD88",
+      "name": "Myeloid Differentiation Primary Response 88",
+      "chromosome": "3p22.2",
+      "function": "Universal adaptor protein for TLR7, TLR9, and IL-1 receptor family signaling; recruits IRAK4 and activates IRF5/IRF7",
+      "lupus_evidence": "MyD88 is essential for TLR7/TLR9-mediated B cell activation and autoantibody production. MyD88-deficient lupus-prone mice are protected from disease. A central signaling hub in the lupus IFN pathway.",
+      "odds_ratio": null,
+      "references": ["PMID:16973197", "PMID:24692637"],
+      "category": "Innate Immune Sensing"
+    },
+    {
+      "id": "IKZF1",
+      "name": "IKAROS Family Zinc Finger 1 (IKAROS)",
+      "chromosome": "7p12.2",
+      "function": "Lineage-determining transcription factor essential for lymphocyte development; regulates B and T cell differentiation",
+      "lupus_evidence": "GWAS-implicated in SLE across multiple ancestries. IKZF1 variants alter lymphocyte development and promote autoimmunity through dysregulated B and T cell differentiation.",
+      "odds_ratio": 1.4,
+      "references": ["PMID:26502338", "PMID:33979324"],
+      "category": "Lymphocyte Development"
+    },
+    {
+      "id": "IKZF3",
+      "name": "IKAROS Family Zinc Finger 3 (AIOLOS)",
+      "chromosome": "17q12",
+      "function": "Transcription factor regulating B cell differentiation, plasma cell development, and autoantibody production",
+      "lupus_evidence": "GWAS-implicated in SLE. AIOLOS deficiency in mice leads to lupus-like disease with anti-dsDNA antibodies. Key regulator of plasma cell differentiation and humoral autoimmunity.",
+      "odds_ratio": 1.3,
+      "references": ["PMID:26502338", "PMID:34707286"],
+      "category": "Lymphocyte Development"
+    },
+    {
+      "id": "TNIP1",
+      "name": "TNFAIP3-Interacting Protein 1 (ABIN-1)",
+      "chromosome": "5q33.1",
+      "function": "Ubiquitin-binding protein that cooperates with TNFAIP3 (A20) to negatively regulate NF-κB signaling",
+      "lupus_evidence": "GWAS-implicated in SLE. TNIP1 risk variants reduce expression and impair A20-mediated NF-κB suppression. TNIP1-deficient mice develop lupus-like autoimmunity.",
+      "odds_ratio": 1.5,
+      "references": ["PMID:22032889", "PMID:27399968"],
+      "category": "NF-κB Pathway"
+    },
+    {
+      "id": "UBE2L3",
+      "name": "Ubiquitin-Conjugating Enzyme E2 L3 (UBCH7)",
+      "chromosome": "22q11.21",
+      "function": "E2 ubiquitin-conjugating enzyme that promotes linear ubiquitination and NF-κB activation; regulates B cell and plasma cell function",
+      "lupus_evidence": "GWAS-implicated in SLE and multiple autoimmune diseases. Risk allele increases UBE2L3 expression in B cells, enhancing NF-κB activation, plasma cell differentiation, and autoantibody production.",
+      "odds_ratio": 1.4,
+      "references": ["PMID:23273568", "PMID:28714469"],
+      "category": "NF-κB Pathway"
+    },
+    {
+      "id": "ELMO1",
+      "name": "Engulfment and Cell Motility 1",
+      "chromosome": "7p14.1",
+      "function": "Involved in cytoskeletal rearrangement, cell migration, and apoptotic cell clearance",
+      "lupus_evidence": "GWAS-implicated specifically in lupus nephritis. ELMO1 variants associated with increased risk of renal involvement in SLE. Promotes macrophage-mediated clearance of apoptotic cells in the kidney.",
+      "odds_ratio": 1.4,
+      "references": ["PMID:29848360", "PMID:35732962"],
+      "category": "Complement / Phagocytosis"
+    },
+    {
+      "id": "PRDM1",
+      "name": "PR/SET Domain 1 (BLIMP-1)",
+      "chromosome": "6q21",
+      "function": "Master transcription factor driving B cell terminal differentiation into plasma cells and antibody-secreting cells",
+      "lupus_evidence": "GWAS-implicated in SLE. PRDM1 risk variants alter Blimp-1 expression in B cells, dysregulating plasma cell differentiation and autoantibody production. Elevated Blimp-1+ plasma cells in SLE.",
+      "odds_ratio": 1.3,
+      "references": ["PMID:26502338", "PMID:33979324"],
+      "category": "Lymphocyte Development"
+    },
+    {
+      "id": "ATG5",
+      "name": "Autophagy Related 5",
+      "chromosome": "6q21",
+      "function": "Core autophagy protein essential for autophagosome formation; also involved in lymphocyte development and immune regulation",
+      "lupus_evidence": "GWAS-implicated in SLE. ATG5 polymorphisms associated with SLE susceptibility. Autophagy dysregulation impairs T and B cell homeostasis, mitochondrial clearance, and promotes type I IFN production.",
+      "odds_ratio": 1.3,
+      "references": ["PMID:20694012", "PMID:31187282"],
+      "category": "Autophagy"
     }
   ]
 }

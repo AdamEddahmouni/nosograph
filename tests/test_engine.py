@@ -9,8 +9,8 @@ Tests cover:
   - analyze(): summary output
 """
 
+
 import pytest
-from unittest.mock import patch, MagicMock
 
 
 class TestComputeCompositeScore:
@@ -72,7 +72,8 @@ class TestComputeCompositeScore:
             "novelty_score": 0,
         }
         score = compute_composite_score(candidate)
-        expected = 10*0.25 + 2*0.15 + 8*0.25 + 4*0.20 + 6*0.10 + 0*0.05
+        # New weights: 20/15/20/15/20/10. Legacy safety_score used as fallback.
+        expected = 10*0.20 + 2*0.15 + 8*0.20 + 4*0.15 + 6*0.20 + 0*0.10
         assert score == round(expected, 2)
 
     def test_result_is_float(self):
@@ -98,8 +99,8 @@ class TestComputeCompositeScore:
         }
         score = compute_composite_score(candidate)
         # Only target_similarity=10 is set; others all default to 5
-        # 10*0.25 + 5*0.15 + 5*0.25 + 5*0.20 + 5*0.10 + 5*0.05 = 6.25
-        assert score == 6.25
+        # New weights: 10*0.20 + 5*0.15 + 5*0.20 + 5*0.15 + 5*0.20 + 5*0.10 = 6.0
+        assert score == 6.0
 
 
 class TestIdentifyUntargetedGenes:
@@ -240,8 +241,7 @@ class TestAnalyzeFunction:
     """Smoke tests for analyze()."""
 
     def test_analyze_produces_output(self, sample_graph, sample_genes, sample_candidates, capsys):
-        from drug_repurposing.engine import score_candidates, analyze
-        from drug_repurposing.engine import identify_untargeted_genes
+        from drug_repurposing.engine import analyze, identify_untargeted_genes, score_candidates
 
         untargeted = identify_untargeted_genes(sample_graph)
         untargeted_ids = {g["id"] for g in untargeted}
@@ -358,7 +358,7 @@ class TestPrintTopCandidates:
     """Smoke tests for print_top_candidates()."""
 
     def test_produces_output(self, sample_graph, sample_genes, sample_candidates, capsys):
-        from drug_repurposing.engine import score_candidates, print_top_candidates
+        from drug_repurposing.engine import print_top_candidates, score_candidates
 
         scored = score_candidates(sample_graph, sample_candidates, sample_genes)
         print_top_candidates(scored, top_n=5)
@@ -372,7 +372,7 @@ class TestPrintGeneAnalysis:
     """Smoke tests for print_gene_analysis()."""
 
     def test_gene_with_candidates(self, sample_graph, sample_genes, sample_candidates, capsys):
-        from drug_repurposing.engine import score_candidates, print_gene_analysis
+        from drug_repurposing.engine import print_gene_analysis, score_candidates
 
         scored = score_candidates(sample_graph, sample_candidates, sample_genes)
         print_gene_analysis(scored, sample_genes, "BTK")
@@ -380,7 +380,7 @@ class TestPrintGeneAnalysis:
         assert "BTK" in captured.out
 
     def test_gene_without_candidates(self, sample_graph, sample_genes, sample_candidates, capsys):
-        from drug_repurposing.engine import score_candidates, print_gene_analysis
+        from drug_repurposing.engine import print_gene_analysis, score_candidates
 
         scored = score_candidates(sample_graph, sample_candidates, sample_genes)
         print_gene_analysis(scored, sample_genes, "NONEXISTENT")

@@ -23,8 +23,8 @@ COPY . .
 # Build the knowledge graph (pre-compute graph_data.json for the web app)
 RUN python knowledge_graph/build_graph.py --export
 
-EXPOSE 8080
+EXPOSE 8000 8080
 
-# Default: show help for the unified CLI
-ENTRYPOINT ["python", "main.py"]
-CMD ["--help"]
+# Default: start the web API server
+ENTRYPOINT ["python", "-m", "uvicorn", "web_api.main:app"]
+CMD ["--host", "0.0.0.0", "--port", "8000"]

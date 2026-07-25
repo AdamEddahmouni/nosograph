@@ -11,13 +11,12 @@ The report can be generated from individual module results or
 as a combined report when all modules have been run.
 """
 
-import json
-import io
-import os
 import base64
+import io
 import math
-from pathlib import Path
+import os
 from datetime import datetime
+from pathlib import Path
 
 try:
     import matplotlib
@@ -890,7 +889,7 @@ def _generate_ppi_network_plot(ppi_graph: dict, hub_scores: list) -> str:
     )
 
     ax.set_title(
-        f"PPI Network — Lupus Seed Genes & Interactors"
+        "PPI Network — Lupus Seed Genes & Interactors"
         + (f" ({n_communities} communities)" if n_communities > 1 else ""),
         fontsize=13, fontweight="700", color="#e0e0e8", pad=12,
     )
@@ -926,8 +925,8 @@ def _generate_ppi_interactive(ppi_graph: dict, hub_scores: list) -> str:
         return ""
 
     try:
-        from pyvis.network import Network
         import networkx as nx
+        from pyvis.network import Network
     except ImportError:
         return ""
 
@@ -1114,7 +1113,7 @@ def _build_ppi_section(hub_scores: list, ppi_crossref: dict, ppi_graph: dict = N
     if ppi_graph:
         interactive_path = _generate_ppi_interactive(ppi_graph, hub_scores)
         if interactive_path:
-            interactive_link = f"""
+            interactive_link = """
         <div class="enrichment-plot" style="padding:12px 20px;text-align:left;">
             <span style="font-weight:600;margin-right:12px;">🔍 Interactive Network:</span>
             <a href="data/ppi_interactive.html" target="_blank"

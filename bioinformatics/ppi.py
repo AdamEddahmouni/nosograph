@@ -13,14 +13,12 @@ Usage:
     python ppi.py --max-neighbors 20   # Max first neighbors to add
 """
 
-import json
-import sys
-import os
-import time
 import argparse
-from pathlib import Path
+import json
+import os
+import sys
 from collections import defaultdict
-import hashlib
+from pathlib import Path
 
 import networkx as nx
 
@@ -410,7 +408,7 @@ def analyze(hub_scores: list, crossref: dict, G: nx.Graph):
           f"{G.number_of_edges()} interactions")
 
     # Top hubs
-    print(f"\n  🏆 Top 10 Hub Proteins:")
+    print("\n  🏆 Top 10 Hub Proteins:")
     for i, h in enumerate(hub_scores[:10], 1):
         marker = "🧬" if h["is_lupus_gene"] else "🔹"
         print(
@@ -423,7 +421,7 @@ def analyze(hub_scores: list, crossref: dict, G: nx.Graph):
     # Hub candidates
     matches = crossref.get("hub_candidate_matches", [])
     if matches:
-        print(f"\n  🎯 Hub proteins with repurposing candidates:")
+        print("\n  🎯 Hub proteins with repurposing candidates:")
         for m in matches[:8]:
             top_cand = m["candidates"][0]
             print(
@@ -436,7 +434,7 @@ def analyze(hub_scores: list, crossref: dict, G: nx.Graph):
     # Untargeted hubs
     untargeted = crossref.get("hub_untargeted", [])
     if untargeted:
-        print(f"\n  💡 Hub proteins with NO repurposing candidates (new opportunities):")
+        print("\n  💡 Hub proteins with NO repurposing candidates (new opportunities):")
         for u in untargeted[:8]:
             print(
                 f"     • {u['symbol']} (hub={u['hub_score']:.3f}, "
@@ -446,7 +444,7 @@ def analyze(hub_scores: list, crossref: dict, G: nx.Graph):
     # Non-lupus hubs
     non_lupus = crossref.get("non_lupus_hubs", [])[:8]
     if non_lupus:
-        print(f"\n  🔬 Top non-lupus hub proteins (potential indirect targets):")
+        print("\n  🔬 Top non-lupus hub proteins (potential indirect targets):")
         for n in non_lupus:
             print(
                 f"     • {n['symbol']} (hub={n['hub_score']:.3f}, "

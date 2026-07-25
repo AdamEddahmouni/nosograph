@@ -12,14 +12,12 @@ Usage:
     python miner.py --export-html         # Generate HTML report
 """
 
-import json
-import sys
-import os
-import time
 import argparse
+import json
+import os
+import sys
+import time
 from pathlib import Path
-from datetime import datetime
-from collections import defaultdict
 
 # Add parent to path
 sys.path.insert(0, str(Path(__file__).parent.parent))
@@ -38,9 +36,9 @@ except ImportError:
     )
 
 from literature_mining.crossref import (
+    cross_reference_articles,
     load_kg_entities,
     load_repurposing_candidates,
-    cross_reference_articles,
 )
 
 DATA_DIR = Path(__file__).parent / "data"
@@ -300,7 +298,7 @@ def print_summary(results: dict, candidates: list, entities: dict):
 
     # Candidates with literature support
     if candidate_support:
-        print(f"\n  📋 Candidates with literature support:")
+        print("\n  📋 Candidates with literature support:")
         for cid, articles in sorted(
             candidate_support.items(), key=lambda x: len(x[1]), reverse=True
         )[:15]:
@@ -315,7 +313,7 @@ def print_summary(results: dict, candidates: list, entities: dict):
 
     # Gene coverage
     if gene_coverage:
-        print(f"\n  🧬 Gene literature coverage:")
+        print("\n  🧬 Gene literature coverage:")
         for gid, info in sorted(
             gene_coverage.items(), key=lambda x: x[1]["articles"], reverse=True
         ):
@@ -328,7 +326,7 @@ def print_summary(results: dict, candidates: list, entities: dict):
         a for a in results["article_matches"] if a["relevance_score"] > 0
     ][:5]
     if top_articles:
-        print(f"\n  📄 Top articles by relevance:")
+        print("\n  📄 Top articles by relevance:")
         for i, a in enumerate(top_articles, 1):
             print(
                 f"    {i}. [{a['year']}] {a['title'][:90]}..."

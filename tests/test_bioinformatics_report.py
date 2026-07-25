@@ -7,8 +7,9 @@ Tests cover:
   - Section builders with various input combinations
 """
 
-import pytest
 from pathlib import Path
+
+import pytest
 
 
 class TestEnrichmentDotPlot:

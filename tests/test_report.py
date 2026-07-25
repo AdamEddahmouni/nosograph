@@ -6,8 +6,9 @@ Tests cover:
   - generate_html_report(): output file creation, content validation
 """
 
-import pytest
 from pathlib import Path
+
+import pytest
 
 
 class TestEscapeHtml:
@@ -52,7 +53,7 @@ class TestGenerateHtmlReport:
 
     @pytest.fixture
     def scored(self, sample_graph, sample_genes, sample_candidates):
-        from drug_repurposing.engine import score_candidates, identify_untargeted_genes
+        from drug_repurposing.engine import identify_untargeted_genes, score_candidates
 
         untargeted = identify_untargeted_genes(sample_graph)
         untargeted_ids = {g["id"] for g in untargeted}
@@ -177,8 +178,9 @@ class TestGenerateHtmlReport:
 
     def test_report_escapes_special_chars(self, scored, untargeted, sample_genes, sample_graph, tmp_path, monkeypatch):
         """Verify the HTML doesn't contain unescaped raw special characters in data values."""
-        import drug_repurposing.report as report_module
         import re
+
+        import drug_repurposing.report as report_module
 
         out_path = tmp_path / "report.html"
 

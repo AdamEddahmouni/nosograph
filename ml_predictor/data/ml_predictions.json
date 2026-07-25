@@ -1,0 +1,667 @@
+{
+  "predictions": [
+    {
+      "gene_id": "Calcineurin",
+      "gene_name": "Calcineurin (PPP3CA / Protein Phosphatase 3)",
+      "category": "T Cell Signaling",
+      "druggability_score": 0.982,
+      "is_targeted": true,
+      "targeted_by": [
+        "voclosporin",
+        "tacrolimus",
+        "cyclosporine"
+      ],
+      "odds_ratio": null,
+      "degree": 3,
+      "pathway_count": 0
+    },
+    {
+      "gene_id": "CD20",
+      "gene_name": "CD20 (MS4A1 / B-lymphocyte antigen CD20)",
+      "category": "B Cell Signaling",
+      "druggability_score": 0.899,
+      "is_targeted": true,
+      "targeted_by": [
+        "rituximab",
+        "obinutuzumab"
+      ],
+      "odds_ratio": null,
+      "degree": 2,
+      "pathway_count": 0
+    },
+    {
+      "gene_id": "IMPDH",
+      "gene_name": "IMPDH (Inosine Monophosphate Dehydrogenase)",
+      "category": "Nucleotide Metabolism",
+      "druggability_score": 0.89,
+      "is_targeted": true,
+      "targeted_by": [
+        "mycophenolate"
+      ],
+      "odds_ratio": null,
+      "degree": 1,
+      "pathway_count": 0
+    },
+    {
+      "gene_id": "BAFF",
+      "gene_name": "B Cell Activating Factor (TNFSF13B / BLyS)",
+      "category": "B Cell Survival",
+      "druggability_score": 0.888,
+      "is_targeted": true,
+      "targeted_by": [
+        "belimumab"
+      ],
+      "odds_ratio": null,
+      "degree": 2,
+      "pathway_count": 1
+    },
+    {
+      "gene_id": "JAK1",
+      "gene_name": "Janus Kinase 1",
+      "category": "JAK-STAT Signaling",
+      "druggability_score": 0.886,
+      "is_targeted": true,
+      "targeted_by": [
+        "baricitinib",
+        "tofacitinib"
+      ],
+      "odds_ratio": null,
+      "degree": 3,
+      "pathway_count": 1
+    },
+    {
+      "gene_id": "TLR9",
+      "gene_name": "Toll-Like Receptor 9",
+      "category": "Innate Immune Sensing",
+      "druggability_score": 0.772,
+      "is_targeted": true,
+      "targeted_by": [
+        "hydroxychloroquine"
+      ],
+      "odds_ratio": 1.4,
+      "degree": 3,
+      "pathway_count": 2
+    },
+    {
+      "gene_id": "IKZF3",
+      "gene_name": "IKAROS Family Zinc Finger 3 (AIOLOS)",
+      "category": "Lymphocyte Development",
+      "druggability_score": 0.763,
+      "is_targeted": true,
+      "targeted_by": [
+        "iberdomide"
+      ],
+      "odds_ratio": 1.3,
+      "degree": 3,
+      "pathway_count": 1
+    },
+    {
+      "gene_id": "TYK2",
+      "gene_name": "Tyrosine Kinase 2",
+      "category": "JAK-STAT Signaling",
+      "druggability_score": 0.713,
+      "is_targeted": true,
+      "targeted_by": [
+        "deucravacitinib"
+      ],
+      "odds_ratio": 0.6,
+      "degree": 2,
+      "pathway_count": 1
+    },
+    {
+      "gene_id": "IKZF1",
+      "gene_name": "IKAROS Family Zinc Finger 1 (IKAROS)",
+      "category": "Lymphocyte Development",
+      "druggability_score": 0.677,
+      "is_targeted": true,
+      "targeted_by": [
+        "iberdomide"
+      ],
+      "odds_ratio": 1.4,
+      "degree": 3,
+      "pathway_count": 1
+    },
+    {
+      "gene_id": "Glucocorticoid Receptor",
+      "gene_name": "Glucocorticoid Receptor (NR3C1)",
+      "category": "Nuclear Receptor Signaling",
+      "druggability_score": 0.58,
+      "is_targeted": true,
+      "targeted_by": [
+        "prednisone"
+      ],
+      "odds_ratio": null,
+      "degree": 1,
+      "pathway_count": 0
+    },
+    {
+      "gene_id": "IFNAR1",
+      "gene_name": "Interferon Alpha and Beta Receptor Subunit 1",
+      "category": "Type I Interferon Pathway",
+      "druggability_score": 0.575,
+      "is_targeted": true,
+      "targeted_by": [
+        "anifrolumab"
+      ],
+      "odds_ratio": null,
+      "degree": 2,
+      "pathway_count": 1
+    },
+    {
+      "gene_id": "BTK",
+      "gene_name": "Bruton Tyrosine Kinase",
+      "category": "B Cell Signaling",
+      "druggability_score": 0.551,
+      "is_targeted": false,
+      "targeted_by": [],
+      "odds_ratio": null,
+      "degree": 1,
+      "pathway_count": 1
+    },
+    {
+      "gene_id": "TLR7",
+      "gene_name": "Toll-Like Receptor 7",
+      "category": "Innate Immune Sensing",
+      "druggability_score": 0.419,
+      "is_targeted": true,
+      "targeted_by": [
+        "hydroxychloroquine"
+      ],
+      "odds_ratio": 2.0,
+      "degree": 3,
+      "pathway_count": 2
+    },
+    {
+      "gene_id": "C1QA",
+      "gene_name": "Complement C1q A Chain",
+      "category": "Complement Cascade",
+      "druggability_score": 0.419,
+      "is_targeted": false,
+      "targeted_by": [],
+      "odds_ratio": 10.0,
+      "degree": 3,
+      "pathway_count": 2
+    },
+    {
+      "gene_id": "IRF5",
+      "gene_name": "Interferon Regulatory Factor 5",
+      "category": "Type I Interferon Pathway",
+      "druggability_score": 0.314,
+      "is_targeted": false,
+      "targeted_by": [],
+      "odds_ratio": 1.8,
+      "degree": 3,
+      "pathway_count": 2
+    },
+    {
+      "gene_id": "IRAK4",
+      "gene_name": "Interleukin-1 Receptor-Associated Kinase 4",
+      "category": "Innate Immune Sensing",
+      "druggability_score": 0.289,
+      "is_targeted": false,
+      "targeted_by": [],
+      "odds_ratio": null,
+      "degree": 2,
+      "pathway_count": 1
+    },
+    {
+      "gene_id": "MYD88",
+      "gene_name": "Myeloid Differentiation Primary Response 88",
+      "category": "Innate Immune Sensing",
+      "druggability_score": 0.289,
+      "is_targeted": false,
+      "targeted_by": [],
+      "odds_ratio": null,
+      "degree": 2,
+      "pathway_count": 1
+    },
+    {
+      "gene_id": "IRF7",
+      "gene_name": "Interferon Regulatory Factor 7",
+      "category": "Type I Interferon Pathway",
+      "druggability_score": 0.138,
+      "is_targeted": false,
+      "targeted_by": [],
+      "odds_ratio": 1.5,
+      "degree": 3,
+      "pathway_count": 2
+    },
+    {
+      "gene_id": "ATG5",
+      "gene_name": "Autophagy Related 5",
+      "category": "Autophagy",
+      "druggability_score": 0.107,
+      "is_targeted": false,
+      "targeted_by": [],
+      "odds_ratio": 1.3,
+      "degree": 2,
+      "pathway_count": 1
+    },
+    {
+      "gene_id": "TNFSF4",
+      "gene_name": "TNF Superfamily Member 4 (OX40 Ligand)",
+      "category": "T Cell Costimulation",
+      "druggability_score": 0.098,
+      "is_targeted": false,
+      "targeted_by": [],
+      "odds_ratio": 1.3,
+      "degree": 1,
+      "pathway_count": 1
+    },
+    {
+      "gene_id": "UBE2L3",
+      "gene_name": "Ubiquitin-Conjugating Enzyme E2 L3 (UBCH7)",
+      "category": "NF-κB Pathway",
+      "druggability_score": 0.072,
+      "is_targeted": false,
+      "targeted_by": [],
+      "odds_ratio": 1.4,
+      "degree": 2,
+      "pathway_count": 1
+    },
+    {
+      "gene_id": "ELMO1",
+      "gene_name": "Engulfment and Cell Motility 1",
+      "category": "Complement / Phagocytosis",
+      "druggability_score": 0.072,
+      "is_targeted": false,
+      "targeted_by": [],
+      "odds_ratio": 1.4,
+      "degree": 2,
+      "pathway_count": 1
+    },
+    {
+      "gene_id": "PRDM1",
+      "gene_name": "PR/SET Domain 1 (BLIMP-1)",
+      "category": "Lymphocyte Development",
+      "druggability_score": 0.071,
+      "is_targeted": false,
+      "targeted_by": [],
+      "odds_ratio": 1.3,
+      "degree": 2,
+      "pathway_count": 1
+    },
+    {
+      "gene_id": "HLA-DRB1",
+      "gene_name": "HLA Class II DR Beta 1",
+      "category": "MHC / Antigen Presentation",
+      "druggability_score": 0.026,
+      "is_targeted": false,
+      "targeted_by": [],
+      "odds_ratio": 2.5,
+      "degree": 1,
+      "pathway_count": 0
+    },
+    {
+      "gene_id": "BANK1",
+      "gene_name": "B Cell Scaffold Protein with Ankyrin Repeats 1",
+      "category": "B Cell Signaling",
+      "druggability_score": 0.026,
+      "is_targeted": false,
+      "targeted_by": [],
+      "odds_ratio": 1.3,
+      "degree": 1,
+      "pathway_count": 1
+    },
+    {
+      "gene_id": "FCGR3A",
+      "gene_name": "Fc Gamma Receptor IIIa (CD16a)",
+      "category": "Immune Complex Clearance",
+      "druggability_score": 0.026,
+      "is_targeted": false,
+      "targeted_by": [],
+      "odds_ratio": 1.3,
+      "degree": 1,
+      "pathway_count": 1
+    },
+    {
+      "gene_id": "STAT4",
+      "gene_name": "Signal Transducer and Activator of Transcription 4",
+      "category": "JAK-STAT Signaling",
+      "druggability_score": 0.025,
+      "is_targeted": false,
+      "targeted_by": [],
+      "odds_ratio": 1.5,
+      "degree": 2,
+      "pathway_count": 1
+    },
+    {
+      "gene_id": "TNFAIP3",
+      "gene_name": "TNF Alpha Induced Protein 3 (A20)",
+      "category": "NF-κB Pathway",
+      "druggability_score": 0.025,
+      "is_targeted": false,
+      "targeted_by": [],
+      "odds_ratio": 1.7,
+      "degree": 2,
+      "pathway_count": 1
+    },
+    {
+      "gene_id": "C2",
+      "gene_name": "Complement C2",
+      "category": "Complement Cascade",
+      "druggability_score": 0.025,
+      "is_targeted": false,
+      "targeted_by": [],
+      "odds_ratio": 5.0,
+      "degree": 2,
+      "pathway_count": 1
+    },
+    {
+      "gene_id": "C4A",
+      "gene_name": "Complement C4A",
+      "category": "Complement Cascade",
+      "druggability_score": 0.025,
+      "is_targeted": false,
+      "targeted_by": [],
+      "odds_ratio": 3.5,
+      "degree": 2,
+      "pathway_count": 1
+    },
+    {
+      "gene_id": "TNIP1",
+      "gene_name": "TNFAIP3-Interacting Protein 1 (ABIN-1)",
+      "category": "NF-κB Pathway",
+      "druggability_score": 0.025,
+      "is_targeted": false,
+      "targeted_by": [],
+      "odds_ratio": 1.5,
+      "degree": 2,
+      "pathway_count": 1
+    },
+    {
+      "gene_id": "BLK",
+      "gene_name": "B Lymphoid Tyrosine Kinase",
+      "category": "B Cell Signaling",
+      "druggability_score": 0.021,
+      "is_targeted": false,
+      "targeted_by": [],
+      "odds_ratio": 1.4,
+      "degree": 1,
+      "pathway_count": 1
+    },
+    {
+      "gene_id": "PTPN22",
+      "gene_name": "Protein Tyrosine Phosphatase Non-Receptor Type 22",
+      "category": "T Cell Signaling",
+      "druggability_score": 0.021,
+      "is_targeted": false,
+      "targeted_by": [],
+      "odds_ratio": 1.4,
+      "degree": 1,
+      "pathway_count": 1
+    },
+    {
+      "gene_id": "ITGAM",
+      "gene_name": "Integrin Subunit Alpha M (CD11b)",
+      "category": "Complement / Phagocytosis",
+      "druggability_score": 0.01,
+      "is_targeted": false,
+      "targeted_by": [],
+      "odds_ratio": 1.6,
+      "degree": 2,
+      "pathway_count": 1
+    },
+    {
+      "gene_id": "FCGR2A",
+      "gene_name": "Fc Gamma Receptor IIa (CD32a)",
+      "category": "Immune Complex Clearance",
+      "druggability_score": 0.01,
+      "is_targeted": false,
+      "targeted_by": [],
+      "odds_ratio": 1.5,
+      "degree": 1,
+      "pathway_count": 1
+    }
+  ],
+  "top_untargeted": [
+    {
+      "gene_id": "BTK",
+      "gene_name": "Bruton Tyrosine Kinase",
+      "category": "B Cell Signaling",
+      "druggability_score": 0.551,
+      "is_targeted": false,
+      "targeted_by": [],
+      "odds_ratio": null,
+      "degree": 1,
+      "pathway_count": 1
+    },
+    {
+      "gene_id": "C1QA",
+      "gene_name": "Complement C1q A Chain",
+      "category": "Complement Cascade",
+      "druggability_score": 0.419,
+      "is_targeted": false,
+      "targeted_by": [],
+      "odds_ratio": 10.0,
+      "degree": 3,
+      "pathway_count": 2
+    },
+    {
+      "gene_id": "IRF5",
+      "gene_name": "Interferon Regulatory Factor 5",
+      "category": "Type I Interferon Pathway",
+      "druggability_score": 0.314,
+      "is_targeted": false,
+      "targeted_by": [],
+      "odds_ratio": 1.8,
+      "degree": 3,
+      "pathway_count": 2
+    },
+    {
+      "gene_id": "IRAK4",
+      "gene_name": "Interleukin-1 Receptor-Associated Kinase 4",
+      "category": "Innate Immune Sensing",
+      "druggability_score": 0.289,
+      "is_targeted": false,
+      "targeted_by": [],
+      "odds_ratio": null,
+      "degree": 2,
+      "pathway_count": 1
+    },
+    {
+      "gene_id": "MYD88",
+      "gene_name": "Myeloid Differentiation Primary Response 88",
+      "category": "Innate Immune Sensing",
+      "druggability_score": 0.289,
+      "is_targeted": false,
+      "targeted_by": [],
+      "odds_ratio": null,
+      "degree": 2,
+      "pathway_count": 1
+    },
+    {
+      "gene_id": "IRF7",
+      "gene_name": "Interferon Regulatory Factor 7",
+      "category": "Type I Interferon Pathway",
+      "druggability_score": 0.138,
+      "is_targeted": false,
+      "targeted_by": [],
+      "odds_ratio": 1.5,
+      "degree": 3,
+      "pathway_count": 2
+    },
+    {
+      "gene_id": "ATG5",
+      "gene_name": "Autophagy Related 5",
+      "category": "Autophagy",
+      "druggability_score": 0.107,
+      "is_targeted": false,
+      "targeted_by": [],
+      "odds_ratio": 1.3,
+      "degree": 2,
+      "pathway_count": 1
+    },
+    {
+      "gene_id": "TNFSF4",
+      "gene_name": "TNF Superfamily Member 4 (OX40 Ligand)",
+      "category": "T Cell Costimulation",
+      "druggability_score": 0.098,
+      "is_targeted": false,
+      "targeted_by": [],
+      "odds_ratio": 1.3,
+      "degree": 1,
+      "pathway_count": 1
+    },
+    {
+      "gene_id": "UBE2L3",
+      "gene_name": "Ubiquitin-Conjugating Enzyme E2 L3 (UBCH7)",
+      "category": "NF-κB Pathway",
+      "druggability_score": 0.072,
+      "is_targeted": false,
+      "targeted_by": [],
+      "odds_ratio": 1.4,
+      "degree": 2,
+      "pathway_count": 1
+    },
+    {
+      "gene_id": "ELMO1",
+      "gene_name": "Engulfment and Cell Motility 1",
+      "category": "Complement / Phagocytosis",
+      "druggability_score": 0.072,
+      "is_targeted": false,
+      "targeted_by": [],
+      "odds_ratio": 1.4,
+      "degree": 2,
+      "pathway_count": 1
+    }
+  ],
+  "feature_importance": {
+    "has_odds_ratio": "0.27657363",
+    "odds_ratio": "0.20255598",
+    "degree": "0.18492697",
+    "is_receptor": "0.12422786",
+    "is_tf": "0.12117407",
+    "pathway_count": "0.09054148",
+    "betweenness": "0.0",
+    "has_chromosome": "0.0",
+    "is_kinase": "0.0",
+    "cat_MHC___Antigen_Presentation": "0.0",
+    "cat_Type_I_Interferon_Pathway": "0.0",
+    "cat_JAK-STAT_Signaling": "0.0",
+    "cat_B_Cell_Signaling": "0.0",
+    "cat_NF-κB_Pathway": "0.0",
+    "cat_Complement___Phagocytosis": "0.0",
+    "cat_Complement_Cascade": "0.0",
+    "cat_T_Cell_Signaling": "0.0",
+    "cat_T_Cell_Costimulation": "0.0",
+    "cat_Immune_Complex_Clearance": "0.0",
+    "cat_Innate_Immune_Sensing": "0.0",
+    "cat_B_Cell_Survival": "0.0",
+    "cat_Nuclear_Receptor_Signaling": "0.0",
+    "cat_Lymphocyte_Development": "0.0",
+    "cat_Nucleotide_Metabolism": "0.0",
+    "cat_Autophagy": "0.0"
+  },
+  "shap_summary": [
+    {
+      "feature": "odds_ratio",
+      "mean_abs_shap": 1.6843
+    },
+    {
+      "feature": "degree",
+      "mean_abs_shap": 1.2896
+    },
+    {
+      "feature": "is_receptor",
+      "mean_abs_shap": 0.6651
+    },
+    {
+      "feature": "is_tf",
+      "mean_abs_shap": 0.2883
+    },
+    {
+      "feature": "has_odds_ratio",
+      "mean_abs_shap": 0.2178
+    },
+    {
+      "feature": "pathway_count",
+      "mean_abs_shap": 0.0275
+    },
+    {
+      "feature": "betweenness",
+      "mean_abs_shap": 0.0
+    },
+    {
+      "feature": "has_chromosome",
+      "mean_abs_shap": 0.0
+    },
+    {
+      "feature": "is_kinase",
+      "mean_abs_shap": 0.0
+    },
+    {
+      "feature": "cat_MHC___Antigen_Presentation",
+      "mean_abs_shap": 0.0
+    },
+    {
+      "feature": "cat_Type_I_Interferon_Pathway",
+      "mean_abs_shap": 0.0
+    },
+    {
+      "feature": "cat_JAK-STAT_Signaling",
+      "mean_abs_shap": 0.0
+    },
+    {
+      "feature": "cat_B_Cell_Signaling",
+      "mean_abs_shap": 0.0
+    },
+    {
+      "feature": "cat_NF-κB_Pathway",
+      "mean_abs_shap": 0.0
+    },
+    {
+      "feature": "cat_Complement___Phagocytosis",
+      "mean_abs_shap": 0.0
+    },
+    {
+      "feature": "cat_Complement_Cascade",
+      "mean_abs_shap": 0.0
+    },
+    {
+      "feature": "cat_T_Cell_Signaling",
+      "mean_abs_shap": 0.0
+    },
+    {
+      "feature": "cat_T_Cell_Costimulation",
+      "mean_abs_shap": 0.0
+    },
+    {
+      "feature": "cat_Immune_Complex_Clearance",
+      "mean_abs_shap": 0.0
+    },
+    {
+      "feature": "cat_Innate_Immune_Sensing",
+      "mean_abs_shap": 0.0
+    },
+    {
+      "feature": "cat_B_Cell_Survival",
+      "mean_abs_shap": 0.0
+    },
+    {
+      "feature": "cat_Nuclear_Receptor_Signaling",
+      "mean_abs_shap": 0.0
+    },
+    {
+      "feature": "cat_Lymphocyte_Development",
+      "mean_abs_shap": 0.0
+    },
+    {
+      "feature": "cat_Nucleotide_Metabolism",
+      "mean_abs_shap": 0.0
+    },
+    {
+      "feature": "cat_Autophagy",
+      "mean_abs_shap": 0.0
+    }
+  ],
+  "model_metrics": {
+    "cv_roc_auc_mean": 0.8958333333333334,
+    "cv_roc_auc_std": 0.10311973892303819,
+    "n_genes": 35,
+    "n_targeted": 12,
+    "n_untargeted": 23,
+    "xgboost_available": true,
+    "shap_available": true
+  }
+}

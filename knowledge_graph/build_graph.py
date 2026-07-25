@@ -10,13 +10,14 @@ Usage:
     python build_graph.py --export     # Export to web-compatible JSON
 """
 
+import argparse
 import json
 import os
 import sys
-import argparse
-import networkx as nx
-from pathlib import Path
 from collections import defaultdict
+from pathlib import Path
+
+import networkx as nx
 
 # Fix Windows encoding for emoji output
 if sys.platform == "win32":
@@ -111,10 +112,10 @@ def analyze_graph(G: nx.MultiDiGraph):
     for _, data in G.nodes(data=True):
         node_types[data.get("type", "unknown")] += 1
 
-    print(f"\n📊 Graph Overview:")
+    print("\n📊 Graph Overview:")
     print(f"   Total nodes: {G.number_of_nodes():,}")
     print(f"   Total edges: {G.number_of_edges():,}")
-    print(f"\n   Node types:")
+    print("\n   Node types:")
     for ntype, count in sorted(node_types.items()):
         print(f"     • {ntype}: {count}")
 
@@ -122,7 +123,7 @@ def analyze_graph(G: nx.MultiDiGraph):
     for _, _, data in G.edges(data=True):
         edge_types[data.get("type", "unknown")] += 1
 
-    print(f"\n   Edge types:")
+    print("\n   Edge types:")
     for etype, count in sorted(edge_types.items()):
         print(f"     • {etype}: {count}")
 

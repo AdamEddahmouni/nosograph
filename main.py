@@ -37,6 +37,10 @@ SCRIPTS = {
     "screening": "virtual_screening/screening.py",
     "trials": "clinical_trials/tracker.py",
     "ml": "ml_predictor/predictor.py",
+    "synergy": "drug_synergy/engine.py",
+    "safety": "adverse_events/profiler.py",
+    "network": "network_pharmacology/analyzer.py",
+    "expression": "gene_expression/correlator.py",
 }
 
 
@@ -164,7 +168,7 @@ def cmd_run_all(args):
     print("\n7 Steps: KG → Repurpose → Bioinformatics → Literature → Screening → Trials → ML")
 
     # Step 1: Knowledge Graph (prerequisite for all other modules)
-    print("\n[STEP 1/7] Knowledge Graph")
+    print("\n[STEP 1/8] Knowledge Graph")
     rc = run_module(SCRIPTS["kg"], ["--analyze", "--export"])
     if rc != 0:
         print("ERROR: Knowledge graph build failed. Cannot continue.")
@@ -172,7 +176,7 @@ def cmd_run_all(args):
     time.sleep(0.5)
 
     # Step 2: Drug Repurposing (depends on KG)
-    print("\n[STEP 2/7] Drug Repurposing")
+    print("\n[STEP 2/8] Drug Repurposing")
     extra = ["--top", "15"]
     if args.export_html:
         extra.append("--export-html")
@@ -183,7 +187,7 @@ def cmd_run_all(args):
     time.sleep(0.5)
 
     # Step 3: Bioinformatics (depends on KG + drug candidates)
-    print("\n[STEP 3/7] Bioinformatics")
+    print("\n[STEP 3/8] Bioinformatics")
     bio_extra = []
     if args.no_cache:
         bio_extra.append("--no-cache")
@@ -236,7 +240,7 @@ def cmd_run_all(args):
             errors += 1
 
     # Step 4: Literature Mining (depends on KG + candidates)
-    print("\n[STEP 4/7] Literature Mining")
+    print("\n[STEP 4/8] Literature Mining")
     lit_extra = []
     if args.no_cache:
         lit_extra.append("--no-cache")
@@ -248,7 +252,7 @@ def cmd_run_all(args):
         print("WARNING: Literature mining had errors, continuing...")
 
     # Step 5: Virtual Screening (depends on KG + drug candidates)
-    print("\n[STEP 5/7] Virtual Drug Screening")
+    print("\n[STEP 5/8] Virtual Drug Screening")
     screen_extra = []
     if args.export_html:
         screen_extra.append("--export-html")
@@ -258,7 +262,7 @@ def cmd_run_all(args):
         print("WARNING: Virtual screening had errors, continuing...")
 
     # Step 6: Clinical Trials (depends on KG)
-    print("\n[STEP 6/7] Clinical Trial Tracker")
+    print("\n[STEP 6/8] Clinical Trial Tracker")
     ct_extra = []
     if args.no_cache:
         ct_extra.append("--no-cache")
@@ -271,7 +275,7 @@ def cmd_run_all(args):
     time.sleep(0.5)
 
     # Step 7: ML Target Predictor (depends on KG)
-    print("\n[STEP 7/7] ML Target Predictor")
+    print("\n[STEP 7/8] ML Target Predictor")
     ml_extra = []
     if args.export_html:
         ml_extra.append("--export-html")
@@ -279,6 +283,16 @@ def cmd_run_all(args):
     if rc != 0:
         errors += 1
         print("WARNING: ML predictor had errors, continuing...")
+
+    # Step 8: Drug Synergy (depends on KG)
+    print("\n[STEP 8/8] Drug Combination Synergy")
+    synergy_extra = []
+    if args.export_html:
+        synergy_extra.append("--export-html")
+    rc = run_module(SCRIPTS["synergy"], synergy_extra)
+    if rc != 0:
+        errors += 1
+        print("WARNING: Drug synergy prediction had errors, continuing...")
 
     elapsed = time.time() - start_time
     print("\n" + "=" * 70)
@@ -297,6 +311,7 @@ def cmd_run_all(args):
         print("   virtual_screening/screening_report.html      — Virtual screening")
         print("   clinical_trials/ct_report.html               — Clinical trial tracker")
         print("   ml_predictor/ml_report.html                  — ML target predictor")
+        print("   drug_synergy/report.html                     — Drug synergy report")
     else:
         print("   knowledge_graph/web/graph_data.json          — Interactive KG data")
         print("   knowledge_graph/web/index.html               — Interactive KG viewer")
@@ -344,6 +359,48 @@ def cmd_ml(args):
     if getattr(args, 'no_shap', False):
         extra.append("--no-shap")
     return run_module(SCRIPTS["ml"], extra)
+
+
+def cmd_synergy(args):
+    """Run drug combination synergy prediction."""
+    extra = []
+    if args.top:
+        extra.extend(["--top", str(args.top)])
+    if args.export_html:
+        extra.append("--export-html")
+    return run_module(SCRIPTS["synergy"], extra)
+
+
+def cmd_safety(args):
+    """Run adverse event safety profiling."""
+    extra = []
+    if args.drug:
+        extra.extend(["--drug", args.drug])
+    if args.export_html:
+        extra.append("--export-html")
+    return run_module(SCRIPTS["safety"], extra)
+
+
+def cmd_network(args):
+    """Run network pharmacology analysis."""
+    extra = []
+    if args.centrality:
+        extra.append("--centrality")
+    if args.communities:
+        extra.append("--communities")
+    if args.export_html:
+        extra.append("--export-html")
+    return run_module(SCRIPTS["network"], extra)
+
+
+def cmd_expression(args):
+    """Run gene expression correlation analysis."""
+    extra = []
+    if args.top:
+        extra.extend(["--top", str(args.top)])
+    if args.export_html:
+        extra.append("--export-html")
+    return run_module(SCRIPTS["expression"], extra)
 
 
 def cmd_test(args):
@@ -517,6 +574,62 @@ Examples:
         help="Skip SHAP analysis (faster)",
     )
 
+    # ── network ────────────────────────────────────────────────────────
+    network_parser = subparsers.add_parser(
+        "network", help="Run network pharmacology analysis (centrality, communities)",
+    )
+    network_parser.add_argument(
+        "--centrality", action="store_true",
+        help="Show centrality metrics only",
+    )
+    network_parser.add_argument(
+        "--communities", action="store_true",
+        help="Show community detection only",
+    )
+    network_parser.add_argument(
+        "--export-html", action="store_true",
+        help="Generate HTML report",
+    )
+
+    # ── synergy ────────────────────────────────────────────────────────
+    synergy_parser = subparsers.add_parser(
+        "synergy", help="Predict synergistic drug combinations",
+    )
+    synergy_parser.add_argument(
+        "--top", type=int, default=15,
+        help="Number of top pairs to display (default: 15)",
+    )
+    synergy_parser.add_argument(
+        "--export-html", action="store_true",
+        help="Generate HTML report",
+    )
+
+    # ── safety ─────────────────────────────────────────────────────────
+    safety_parser = subparsers.add_parser(
+        "safety", help="Profile adverse events and drug safety",
+    )
+    safety_parser.add_argument(
+        "--drug", type=str,
+        help="Show safety profile for a specific drug ID",
+    )
+    safety_parser.add_argument(
+        "--export-html", action="store_true",
+        help="Generate HTML report",
+    )
+
+    # ── expression ─────────────────────────────────────────────────────
+    expression_parser = subparsers.add_parser(
+        "expression", help="Correlate drug mechanisms against SLE gene expression signatures",
+    )
+    expression_parser.add_argument(
+        "--top", type=int, default=15,
+        help="Number of top drugs to display (default: 15)",
+    )
+    expression_parser.add_argument(
+        "--export-html", action="store_true",
+        help="Generate HTML report",
+    )
+
     # ── screening ───────────────────────────────────────────────────────
     screen_parser = subparsers.add_parser(
         "screening", help="Run virtual drug screening against lupus targets",
@@ -554,6 +667,10 @@ Examples:
         "screening": cmd_screening,
         "trials": cmd_trials,
         "ml": cmd_ml,
+        "synergy": cmd_synergy,
+        "safety": cmd_safety,
+        "network": cmd_network,
+        "expression": cmd_expression,
         "test": cmd_test,
     }
 

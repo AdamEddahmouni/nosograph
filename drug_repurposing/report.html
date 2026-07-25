@@ -6,6 +6,7 @@
     <title>Lupus Drug Repurposing Report</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -138,28 +139,34 @@
         <!-- Hero -->
         <div class="hero">
             <h1>🧬 Lupus Drug Repurposing Report</h1>
-            <p class="subtitle">AI-Driven Analysis of 39 Repurposing Candidates Across 13 Untargeted Lupus Genes</p>
-            <p class="date">Generated: July 18, 2026 at 23:39 | Knowledge Graph: 50 nodes · 65 edges</p>
+            <p class="subtitle">AI-Driven Analysis of 36 Repurposing Candidates Across 23 Untargeted Lupus Genes</p>
+            <p class="date">Generated: July 25, 2026 at 00:53 | Knowledge Graph: 72 nodes · 115 edges</p>
         </div>
 
         <!-- Stats -->
         <div class="stats-grid">
             <div class="stat-card">
-                <div class="stat-value" style="color:#4ade80;">4</div>
+                <div class="stat-value" style="color:#4ade80;">1</div>
                 <div class="stat-label">Tier 1 Candidates (≥8.0)</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value" style="color:#fbbf24;">6</div>
+                <div class="stat-value" style="color:#fbbf24;">7</div>
                 <div class="stat-label">Tier 2 Candidates (7.0–7.9)</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value" style="color:#818cf8;">6.3</div>
+                <div class="stat-value" style="color:#818cf8;">6.2</div>
                 <div class="stat-label">Average Composite Score</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value" style="color:#c084fc;">13</div>
+                <div class="stat-value" style="color:#c084fc;">23</div>
                 <div class="stat-label">Untargeted Lupus Genes</div>
             </div>
+        </div>
+
+        <!-- Radar Chart -->
+        <h2 class="section-title">🎯 Score Dimension Radar — Top 5 Candidates</h2>
+        <div class="radar-container" style="max-width:700px;margin:0 auto 32px;">
+            <canvas id="radarChart" style="max-height:500px;"></canvas>
         </div>
 
         <!-- Top Candidates Table -->
@@ -189,13 +196,13 @@
             </td>
             <td><strong>Fenebrutinib (GDC-0853)</strong><br><span class="muted">BTK Inhibitor (non-covalent)</span></td>
             <td><span class="gene-tag">Bruton Tyrosine Kinase</span><br><span class="muted">B Cell Signaling</span></td>
-            <td><span class="score" style="color:#4ade80;font-weight:700;font-size:1.2em;">9.1</span></td>
+            <td><span class="score" style="color:#4ade80;font-weight:700;font-size:1.2em;">8.4</span></td>
             <td class="score-breakdown">
                 <span title="Target Similarity">🎯10</span>
                 <span title="Pathway Proximity">🛤️10</span>
                 <span title="Mechanistic Rationale">🧬10</span>
                 <span title="Clinical Evidence">📋9</span>
-                <span title="Safety Profile">🛡️7</span>
+                <span title="Adverse Event Profile">🛡️7</span>
             </td>
             <td>Phase 2 completed in SLE</td>
             <td><span class="status-tag">Investigational for SLE</span></td>
@@ -203,61 +210,61 @@
         <tr>
             <td class="rank">2</td>
             <td>
-                <span class="tier-badge" style="background:#dc262620;color:#dc2626;border:1px solid #dc262640">
-                    🔴 Tier 1
-                </span>
-            </td>
-            <td><strong>Deucravacitinib (Sotyktu)</strong><br><span class="muted">TYK2 Inhibitor (allosteric)</span></td>
-            <td><span class="gene-tag">Tyrosine Kinase 2</span><br><span class="muted">JAK-STAT Signaling</span></td>
-            <td><span class="score" style="color:#4ade80;font-weight:700;font-size:1.2em;">8.9</span></td>
-            <td class="score-breakdown">
-                <span title="Target Similarity">🎯10</span>
-                <span title="Pathway Proximity">🛤️10</span>
-                <span title="Mechanistic Rationale">🧬10</span>
-                <span title="Clinical Evidence">📋8</span>
-                <span title="Safety Profile">🛡️8</span>
-            </td>
-            <td>Phase 2 completed in SLE</td>
-            <td><span class="status-tag">Investigational for SLE</span></td>
-        </tr>
-        <tr>
-            <td class="rank">3</td>
-            <td>
-                <span class="tier-badge" style="background:#dc262620;color:#dc2626;border:1px solid #dc262640">
-                    🔴 Tier 1
+                <span class="tier-badge" style="background:#ea580c20;color:#ea580c;border:1px solid #ea580c40">
+                    🟠 Tier 2
                 </span>
             </td>
             <td><strong>Ustekinumab (Stelara)</strong><br><span class="muted">Anti-IL-12/IL-23p40 Monoclonal Antibody</span></td>
             <td><span class="gene-tag">Signal Transducer and Activator of Transcription 4</span><br><span class="muted">JAK-STAT Signaling</span></td>
-            <td><span class="score" style="color:#4ade80;font-weight:700;font-size:1.2em;">8.1</span></td>
+            <td><span class="score" style="color:#fbbf24;font-weight:700;font-size:1.2em;">7.8</span></td>
             <td class="score-breakdown">
                 <span title="Target Similarity">🎯8</span>
                 <span title="Pathway Proximity">🛤️9</span>
                 <span title="Mechanistic Rationale">🧬9</span>
                 <span title="Clinical Evidence">📋8</span>
-                <span title="Safety Profile">🛡️8</span>
+                <span title="Adverse Event Profile">🛡️8</span>
             </td>
             <td>Phase 2 positive in SLE</td>
             <td><span class="status-tag">Phase 2 (positive) in SLE</span></td>
         </tr>
         <tr>
-            <td class="rank">4</td>
+            <td class="rank">3</td>
             <td>
-                <span class="tier-badge" style="background:#dc262620;color:#dc2626;border:1px solid #dc262640">
-                    🔴 Tier 1
+                <span class="tier-badge" style="background:#ea580c20;color:#ea580c;border:1px solid #ea580c40">
+                    🟠 Tier 2
                 </span>
             </td>
             <td><strong>Oxelumab (R4930 / anti-OX40L)</strong><br><span class="muted">Anti-OX40L Monoclonal Antibody</span></td>
             <td><span class="gene-tag">TNF Superfamily Member 4 (OX40 Ligand)</span><br><span class="muted">T Cell Costimulation</span></td>
-            <td><span class="score" style="color:#4ade80;font-weight:700;font-size:1.2em;">8.1</span></td>
+            <td><span class="score" style="color:#fbbf24;font-weight:700;font-size:1.2em;">7.7</span></td>
             <td class="score-breakdown">
                 <span title="Target Similarity">🎯10</span>
                 <span title="Pathway Proximity">🛤️10</span>
                 <span title="Mechanistic Rationale">🧬10</span>
                 <span title="Clinical Evidence">📋4</span>
-                <span title="Safety Profile">🛡️6</span>
+                <span title="Adverse Event Profile">🛡️6</span>
             </td>
             <td>Phase 2 in SLE (limited data)</td>
+            <td><span class="status-tag">Investigational for SLE</span></td>
+        </tr>
+        <tr>
+            <td class="rank">4</td>
+            <td>
+                <span class="tier-badge" style="background:#ea580c20;color:#ea580c;border:1px solid #ea580c40">
+                    🟠 Tier 2
+                </span>
+            </td>
+            <td><strong>Deucravacitinib (Sotyktu)</strong><br><span class="muted">TYK2 Inhibitor (allosteric)</span></td>
+            <td><span class="gene-tag">Signal Transducer and Activator of Transcription 4</span><br><span class="muted">JAK-STAT Signaling</span></td>
+            <td><span class="score" style="color:#fbbf24;font-weight:700;font-size:1.2em;">7.4</span></td>
+            <td class="score-breakdown">
+                <span title="Target Similarity">🎯7</span>
+                <span title="Pathway Proximity">🛤️9</span>
+                <span title="Mechanistic Rationale">🧬9</span>
+                <span title="Clinical Evidence">📋6</span>
+                <span title="Adverse Event Profile">🛡️8.35</span>
+            </td>
+            <td>Phase 2 in SLE; pathway validated</td>
             <td><span class="status-tag">Investigational for SLE</span></td>
         </tr>
         <tr>
@@ -269,99 +276,19 @@
             </td>
             <td><strong>Evobrutinib (M2951)</strong><br><span class="muted">BTK Inhibitor (covalent)</span></td>
             <td><span class="gene-tag">Bruton Tyrosine Kinase</span><br><span class="muted">B Cell Signaling</span></td>
-            <td><span class="score" style="color:#fbbf24;font-weight:700;font-size:1.2em;">7.7</span></td>
+            <td><span class="score" style="color:#fbbf24;font-weight:700;font-size:1.2em;">7.3</span></td>
             <td class="score-breakdown">
                 <span title="Target Similarity">🎯10</span>
                 <span title="Pathway Proximity">🛤️10</span>
                 <span title="Mechanistic Rationale">🧬9</span>
                 <span title="Clinical Evidence">📋3</span>
-                <span title="Safety Profile">🛡️6</span>
+                <span title="Adverse Event Profile">🛡️6</span>
             </td>
             <td>Phase 2 in other autoimmune diseases</td>
             <td><span class="status-tag">Investigational (other autoimmune)</span></td>
         </tr>
         <tr>
             <td class="rank">6</td>
-            <td>
-                <span class="tier-badge" style="background:#ea580c20;color:#ea580c;border:1px solid #ea580c40">
-                    🟠 Tier 2
-                </span>
-            </td>
-            <td><strong>Anifrolumab (Saphnelo)</strong><br><span class="muted">Anti-IFNAR1 Monoclonal Antibody</span></td>
-            <td><span class="gene-tag">Tyrosine Kinase 2</span><br><span class="muted">JAK-STAT Signaling</span></td>
-            <td><span class="score" style="color:#fbbf24;font-weight:700;font-size:1.2em;">7.5</span></td>
-            <td class="score-breakdown">
-                <span title="Target Similarity">🎯6</span>
-                <span title="Pathway Proximity">🛤️8</span>
-                <span title="Mechanistic Rationale">🧬8</span>
-                <span title="Clinical Evidence">📋10</span>
-                <span title="Safety Profile">🛡️8</span>
-            </td>
-            <td>FDA approved for SLE</td>
-            <td><span class="status-tag">Approved for SLE</span></td>
-        </tr>
-        <tr>
-            <td class="rank">7</td>
-            <td>
-                <span class="tier-badge" style="background:#ea580c20;color:#ea580c;border:1px solid #ea580c40">
-                    🟠 Tier 2
-                </span>
-            </td>
-            <td><strong>Ibrutinib (Imbruvica)</strong><br><span class="muted">BTK Inhibitor (covalent)</span></td>
-            <td><span class="gene-tag">Bruton Tyrosine Kinase</span><br><span class="muted">B Cell Signaling</span></td>
-            <td><span class="score" style="color:#fbbf24;font-weight:700;font-size:1.2em;">7.5</span></td>
-            <td class="score-breakdown">
-                <span title="Target Similarity">🎯10</span>
-                <span title="Pathway Proximity">🛤️10</span>
-                <span title="Mechanistic Rationale">🧬9</span>
-                <span title="Clinical Evidence">📋3</span>
-                <span title="Safety Profile">🛡️5</span>
-            </td>
-            <td>Preclinical only (lupus models)</td>
-            <td><span class="status-tag">Approved (other indications)</span></td>
-        </tr>
-        <tr>
-            <td class="rank">8</td>
-            <td>
-                <span class="tier-badge" style="background:#ea580c20;color:#ea580c;border:1px solid #ea580c40">
-                    🟠 Tier 2
-                </span>
-            </td>
-            <td><strong>Deucravacitinib (Sotyktu)</strong><br><span class="muted">TYK2 Inhibitor (allosteric)</span></td>
-            <td><span class="gene-tag">Signal Transducer and Activator of Transcription 4</span><br><span class="muted">JAK-STAT Signaling</span></td>
-            <td><span class="score" style="color:#fbbf24;font-weight:700;font-size:1.2em;">7.5</span></td>
-            <td class="score-breakdown">
-                <span title="Target Similarity">🎯7</span>
-                <span title="Pathway Proximity">🛤️9</span>
-                <span title="Mechanistic Rationale">🧬9</span>
-                <span title="Clinical Evidence">📋6</span>
-                <span title="Safety Profile">🛡️8</span>
-            </td>
-            <td>Phase 2 in SLE; pathway validated</td>
-            <td><span class="status-tag">Investigational for SLE</span></td>
-        </tr>
-        <tr>
-            <td class="rank">9</td>
-            <td>
-                <span class="tier-badge" style="background:#ea580c20;color:#ea580c;border:1px solid #ea580c40">
-                    🟠 Tier 2
-                </span>
-            </td>
-            <td><strong>Abatacept (Orencia)</strong><br><span class="muted">CTLA4-Ig Fusion Protein</span></td>
-            <td><span class="gene-tag">HLA Class II DR Beta 1</span><br><span class="muted">MHC / Antigen Presentation</span></td>
-            <td><span class="score" style="color:#fbbf24;font-weight:700;font-size:1.2em;">7.3</span></td>
-            <td class="score-breakdown">
-                <span title="Target Similarity">🎯7</span>
-                <span title="Pathway Proximity">🛤️8</span>
-                <span title="Mechanistic Rationale">🧬9</span>
-                <span title="Clinical Evidence">📋6</span>
-                <span title="Safety Profile">🛡️8</span>
-            </td>
-            <td>Phase 3 in SLE/lupus nephritis (mixed)</td>
-            <td><span class="status-tag">Phase 3 in SLE/lupus nephritis</span></td>
-        </tr>
-        <tr>
-            <td class="rank">10</td>
             <td>
                 <span class="tier-badge" style="background:#ea580c20;color:#ea580c;border:1px solid #ea580c40">
                     🟠 Tier 2
@@ -375,10 +302,90 @@
                 <span title="Pathway Proximity">🛤️9</span>
                 <span title="Mechanistic Rationale">🧬8</span>
                 <span title="Clinical Evidence">📋6</span>
-                <span title="Safety Profile">🛡️8</span>
+                <span title="Adverse Event Profile">🛡️8.35</span>
             </td>
             <td>Phase 2 in SLE; target pathway overlap</td>
             <td><span class="status-tag">Investigational for SLE</span></td>
+        </tr>
+        <tr>
+            <td class="rank">7</td>
+            <td>
+                <span class="tier-badge" style="background:#ea580c20;color:#ea580c;border:1px solid #ea580c40">
+                    🟠 Tier 2
+                </span>
+            </td>
+            <td><strong>Abatacept (Orencia)</strong><br><span class="muted">CTLA4-Ig Fusion Protein</span></td>
+            <td><span class="gene-tag">HLA Class II DR Beta 1</span><br><span class="muted">MHC / Antigen Presentation</span></td>
+            <td><span class="score" style="color:#fbbf24;font-weight:700;font-size:1.2em;">7.1</span></td>
+            <td class="score-breakdown">
+                <span title="Target Similarity">🎯7</span>
+                <span title="Pathway Proximity">🛤️8</span>
+                <span title="Mechanistic Rationale">🧬9</span>
+                <span title="Clinical Evidence">📋6</span>
+                <span title="Adverse Event Profile">🛡️8</span>
+            </td>
+            <td>Phase 3 in SLE/lupus nephritis (mixed)</td>
+            <td><span class="status-tag">Phase 3 in SLE/lupus nephritis</span></td>
+        </tr>
+        <tr>
+            <td class="rank">8</td>
+            <td>
+                <span class="tier-badge" style="background:#ea580c20;color:#ea580c;border:1px solid #ea580c40">
+                    🟠 Tier 2
+                </span>
+            </td>
+            <td><strong>Ibrutinib (Imbruvica)</strong><br><span class="muted">BTK Inhibitor (covalent)</span></td>
+            <td><span class="gene-tag">Bruton Tyrosine Kinase</span><br><span class="muted">B Cell Signaling</span></td>
+            <td><span class="score" style="color:#fbbf24;font-weight:700;font-size:1.2em;">7.0</span></td>
+            <td class="score-breakdown">
+                <span title="Target Similarity">🎯10</span>
+                <span title="Pathway Proximity">🛤️10</span>
+                <span title="Mechanistic Rationale">🧬9</span>
+                <span title="Clinical Evidence">📋3</span>
+                <span title="Adverse Event Profile">🛡️5</span>
+            </td>
+            <td>Preclinical only (lupus models)</td>
+            <td><span class="status-tag">Approved (other indications)</span></td>
+        </tr>
+        <tr>
+            <td class="rank">9</td>
+            <td>
+                <span class="tier-badge" style="background:#ca8a0420;color:#ca8a04;border:1px solid #ca8a0440">
+                    🟡 Tier 3
+                </span>
+            </td>
+            <td><strong>Baricitinib (Olumiant)</strong><br><span class="muted">JAK1/2 Inhibitor</span></td>
+            <td><span class="gene-tag">Interferon Regulatory Factor 5</span><br><span class="muted">Type I Interferon Pathway</span></td>
+            <td><span class="score" style="color:#fb923c;font-weight:700;font-size:1.2em;">6.5</span></td>
+            <td class="score-breakdown">
+                <span title="Target Similarity">🎯5</span>
+                <span title="Pathway Proximity">🛤️8</span>
+                <span title="Mechanistic Rationale">🧬7</span>
+                <span title="Clinical Evidence">📋8</span>
+                <span title="Adverse Event Profile">🛡️7.5</span>
+            </td>
+            <td>Phase 3 in SLE (mixed results)</td>
+            <td><span class="status-tag">Phase 3 in SLE (SLE-BRAVE)</span></td>
+        </tr>
+        <tr>
+            <td class="rank">10</td>
+            <td>
+                <span class="tier-badge" style="background:#ca8a0420;color:#ca8a04;border:1px solid #ca8a0440">
+                    🟡 Tier 3
+                </span>
+            </td>
+            <td><strong>Anifrolumab (Saphnelo)</strong><br><span class="muted">Anti-IFNAR1 Monoclonal Antibody</span></td>
+            <td><span class="gene-tag">Interferon Regulatory Factor 5</span><br><span class="muted">Type I Interferon Pathway</span></td>
+            <td><span class="score" style="color:#fb923c;font-weight:700;font-size:1.2em;">6.5</span></td>
+            <td class="score-breakdown">
+                <span title="Target Similarity">🎯4</span>
+                <span title="Pathway Proximity">🛤️7</span>
+                <span title="Mechanistic Rationale">🧬7</span>
+                <span title="Clinical Evidence">📋10</span>
+                <span title="Adverse Event Profile">🛡️8.6</span>
+            </td>
+            <td>FDA approved for SLE</td>
+            <td><span class="status-tag">Approved for SLE</span></td>
         </tr>
         <tr>
             <td class="rank">11</td>
@@ -387,18 +394,18 @@
                     🟡 Tier 3
                 </span>
             </td>
-            <td><strong>Baricitinib (Olumiant)</strong><br><span class="muted">JAK1/2 Inhibitor</span></td>
-            <td><span class="gene-tag">Tyrosine Kinase 2</span><br><span class="muted">JAK-STAT Signaling</span></td>
-            <td><span class="score" style="color:#fb923c;font-weight:700;font-size:1.2em;">6.7</span></td>
+            <td><strong>Nipocalimab (M281)</strong><br><span class="muted">Anti-FcRn Monoclonal Antibody</span></td>
+            <td><span class="gene-tag">Fc Gamma Receptor IIa (CD32a)</span><br><span class="muted">Immune Complex Clearance</span></td>
+            <td><span class="score" style="color:#fb923c;font-weight:700;font-size:1.2em;">6.4</span></td>
             <td class="score-breakdown">
-                <span title="Target Similarity">🎯5</span>
+                <span title="Target Similarity">🎯6</span>
                 <span title="Pathway Proximity">🛤️7</span>
-                <span title="Mechanistic Rationale">🧬7</span>
-                <span title="Clinical Evidence">📋9</span>
-                <span title="Safety Profile">🛡️7</span>
+                <span title="Mechanistic Rationale">🧬8</span>
+                <span title="Clinical Evidence">📋5</span>
+                <span title="Adverse Event Profile">🛡️7</span>
             </td>
-            <td>Phase 3 in SLE (positive SLE-BRAVE-I)</td>
-            <td><span class="status-tag">Phase 3 in SLE</span></td>
+            <td>Phase 2 in SLE/lupus nephritis</td>
+            <td><span class="status-tag">Phase 2 in SLE</span></td>
         </tr>
         <tr>
             <td class="rank">12</td>
@@ -407,18 +414,18 @@
                     🟡 Tier 3
                 </span>
             </td>
-            <td><strong>Baricitinib (Olumiant)</strong><br><span class="muted">JAK1/2 Inhibitor</span></td>
-            <td><span class="gene-tag">Interferon Regulatory Factor 5</span><br><span class="muted">Type I Interferon Pathway</span></td>
-            <td><span class="score" style="color:#fb923c;font-weight:700;font-size:1.2em;">6.6</span></td>
+            <td><strong>Nipocalimab (M281)</strong><br><span class="muted">Anti-FcRn Monoclonal Antibody</span></td>
+            <td><span class="gene-tag">Fc Gamma Receptor IIIa (CD16a)</span><br><span class="muted">Immune Complex Clearance</span></td>
+            <td><span class="score" style="color:#fb923c;font-weight:700;font-size:1.2em;">6.4</span></td>
             <td class="score-breakdown">
-                <span title="Target Similarity">🎯5</span>
-                <span title="Pathway Proximity">🛤️8</span>
-                <span title="Mechanistic Rationale">🧬7</span>
-                <span title="Clinical Evidence">📋8</span>
-                <span title="Safety Profile">🛡️7</span>
+                <span title="Target Similarity">🎯6</span>
+                <span title="Pathway Proximity">🛤️7</span>
+                <span title="Mechanistic Rationale">🧬8</span>
+                <span title="Clinical Evidence">📋5</span>
+                <span title="Adverse Event Profile">🛡️7</span>
             </td>
-            <td>Phase 3 in SLE (mixed results)</td>
-            <td><span class="status-tag">Phase 3 in SLE (SLE-BRAVE)</span></td>
+            <td>Phase 2 in SLE/lupus nephritis</td>
+            <td><span class="status-tag">Phase 2 in SLE</span></td>
         </tr>
         <tr>
             <td class="rank">13</td>
@@ -427,18 +434,18 @@
                     🟡 Tier 3
                 </span>
             </td>
-            <td><strong>Anifrolumab (Saphnelo)</strong><br><span class="muted">Anti-IFNAR1 Monoclonal Antibody</span></td>
-            <td><span class="gene-tag">Interferon Regulatory Factor 5</span><br><span class="muted">Type I Interferon Pathway</span></td>
-            <td><span class="score" style="color:#fb923c;font-weight:700;font-size:1.2em;">6.6</span></td>
+            <td><strong>Rozanolixizumab (Rystiggo)</strong><br><span class="muted">Anti-FcRn Monoclonal Antibody</span></td>
+            <td><span class="gene-tag">Fc Gamma Receptor IIa (CD32a)</span><br><span class="muted">Immune Complex Clearance</span></td>
+            <td><span class="score" style="color:#fb923c;font-weight:700;font-size:1.2em;">6.3</span></td>
             <td class="score-breakdown">
-                <span title="Target Similarity">🎯4</span>
+                <span title="Target Similarity">🎯6</span>
                 <span title="Pathway Proximity">🛤️7</span>
                 <span title="Mechanistic Rationale">🧬7</span>
-                <span title="Clinical Evidence">📋10</span>
-                <span title="Safety Profile">🛡️8</span>
+                <span title="Clinical Evidence">📋3</span>
+                <span title="Adverse Event Profile">🛡️8.35</span>
             </td>
-            <td>FDA approved for SLE</td>
-            <td><span class="status-tag">Approved for SLE</span></td>
+            <td>Approved for other autoimmune disease</td>
+            <td><span class="status-tag">Approved (other indication)</span></td>
         </tr>
         <tr>
             <td class="rank">14</td>
@@ -447,18 +454,18 @@
                     🟡 Tier 3
                 </span>
             </td>
-            <td><strong>Nipocalimab (M281)</strong><br><span class="muted">Anti-FcRn Monoclonal Antibody</span></td>
-            <td><span class="gene-tag">Fc Gamma Receptor IIa (CD32a)</span><br><span class="muted">Immune Complex Clearance</span></td>
-            <td><span class="score" style="color:#fb923c;font-weight:700;font-size:1.2em;">6.5</span></td>
+            <td><strong>Efgartigimod (Vyvgart)</strong><br><span class="muted">FcRn Antagonist (Fc fragment)</span></td>
+            <td><span class="gene-tag">Fc Gamma Receptor IIIa (CD16a)</span><br><span class="muted">Immune Complex Clearance</span></td>
+            <td><span class="score" style="color:#fb923c;font-weight:700;font-size:1.2em;">6.2</span></td>
             <td class="score-breakdown">
                 <span title="Target Similarity">🎯6</span>
                 <span title="Pathway Proximity">🛤️7</span>
-                <span title="Mechanistic Rationale">🧬8</span>
-                <span title="Clinical Evidence">📋5</span>
-                <span title="Safety Profile">🛡️7</span>
+                <span title="Mechanistic Rationale">🧬7</span>
+                <span title="Clinical Evidence">📋3</span>
+                <span title="Adverse Event Profile">🛡️8</span>
             </td>
-            <td>Phase 2 in SLE/lupus nephritis</td>
-            <td><span class="status-tag">Phase 2 in SLE</span></td>
+            <td>Approved for other autoimmune disease</td>
+            <td><span class="status-tag">Approved (other indication)</span></td>
         </tr>
         <tr>
             <td class="rank">15</td>
@@ -467,18 +474,18 @@
                     🟡 Tier 3
                 </span>
             </td>
-            <td><strong>Nipocalimab (M281)</strong><br><span class="muted">Anti-FcRn Monoclonal Antibody</span></td>
-            <td><span class="gene-tag">Fc Gamma Receptor IIIa (CD16a)</span><br><span class="muted">Immune Complex Clearance</span></td>
-            <td><span class="score" style="color:#fb923c;font-weight:700;font-size:1.2em;">6.5</span></td>
+            <td><strong>Efgartigimod (Vyvgart)</strong><br><span class="muted">FcRn Antagonist</span></td>
+            <td><span class="gene-tag">Fc Gamma Receptor IIa (CD32a)</span><br><span class="muted">Immune Complex Clearance</span></td>
+            <td><span class="score" style="color:#fb923c;font-weight:700;font-size:1.2em;">6.2</span></td>
             <td class="score-breakdown">
                 <span title="Target Similarity">🎯6</span>
                 <span title="Pathway Proximity">🛤️7</span>
-                <span title="Mechanistic Rationale">🧬8</span>
-                <span title="Clinical Evidence">📋5</span>
-                <span title="Safety Profile">🛡️7</span>
+                <span title="Mechanistic Rationale">🧬7</span>
+                <span title="Clinical Evidence">📋3</span>
+                <span title="Adverse Event Profile">🛡️8</span>
             </td>
-            <td>Phase 2 in SLE/lupus nephritis</td>
-            <td><span class="status-tag">Phase 2 in SLE</span></td>
+            <td>Approved for other autoimmune disease</td>
+            <td><span class="status-tag">Approved (other indication)</span></td>
         </tr>
         <tr>
             <td class="rank">16</td>
@@ -487,21 +494,41 @@
                     🟡 Tier 3
                 </span>
             </td>
-            <td><strong>Bortezomib (Velcade)</strong><br><span class="muted">Proteasome Inhibitor</span></td>
-            <td><span class="gene-tag">TNF Alpha Induced Protein 3 (A20)</span><br><span class="muted">NF-κB Pathway</span></td>
-            <td><span class="score" style="color:#fb923c;font-weight:700;font-size:1.2em;">6.2</span></td>
+            <td><strong>Dapirolizumab Pegol (anti-CD40L)</strong><br><span class="muted">Anti-CD40L Pegylated Fab Fragment</span></td>
+            <td><span class="gene-tag">TNF Superfamily Member 4 (OX40 Ligand)</span><br><span class="muted">T Cell Costimulation</span></td>
+            <td><span class="score" style="color:#fb923c;font-weight:700;font-size:1.2em;">6.1</span></td>
             <td class="score-breakdown">
-                <span title="Target Similarity">🎯6</span>
-                <span title="Pathway Proximity">🛤️8</span>
-                <span title="Mechanistic Rationale">🧬8</span>
-                <span title="Clinical Evidence">📋4</span>
-                <span title="Safety Profile">🛡️4</span>
+                <span title="Target Similarity">🎯4</span>
+                <span title="Pathway Proximity">🛤️7</span>
+                <span title="Mechanistic Rationale">🧬6</span>
+                <span title="Clinical Evidence">📋7</span>
+                <span title="Adverse Event Profile">🛡️8.35</span>
             </td>
-            <td>Case series in refractory SLE</td>
-            <td><span class="status-tag">Off-label use in refractory SLE</span></td>
+            <td>Phase 2b positive in SLE</td>
+            <td><span class="status-tag">Phase 2b (positive) in SLE</span></td>
         </tr>
         <tr>
             <td class="rank">17</td>
+            <td>
+                <span class="tier-badge" style="background:#ca8a0420;color:#ca8a04;border:1px solid #ca8a0440">
+                    🟡 Tier 3
+                </span>
+            </td>
+            <td><strong>Avacopan (Tavneos)</strong><br><span class="muted">C5a Receptor (C5aR) Antagonist</span></td>
+            <td><span class="gene-tag">Integrin Subunit Alpha M (CD11b)</span><br><span class="muted">Complement / Phagocytosis</span></td>
+            <td><span class="score" style="color:#fb923c;font-weight:700;font-size:1.2em;">6.0</span></td>
+            <td class="score-breakdown">
+                <span title="Target Similarity">🎯5</span>
+                <span title="Pathway Proximity">🛤️7</span>
+                <span title="Mechanistic Rationale">🧬8</span>
+                <span title="Clinical Evidence">📋3</span>
+                <span title="Adverse Event Profile">🛡️7.1</span>
+            </td>
+            <td>Approved for complement-driven autoimmune disease</td>
+            <td><span class="status-tag">Approved (other indication)</span></td>
+        </tr>
+        <tr>
+            <td class="rank">18</td>
             <td>
                 <span class="tier-badge" style="background:#ca8a0420;color:#ca8a04;border:1px solid #ca8a0440">
                     🟡 Tier 3
@@ -515,49 +542,29 @@
                 <span title="Pathway Proximity">🛤️6</span>
                 <span title="Mechanistic Rationale">🧬7</span>
                 <span title="Clinical Evidence">📋8</span>
-                <span title="Safety Profile">🛡️7</span>
+                <span title="Adverse Event Profile">🛡️7.5</span>
             </td>
             <td>Phase 3 in SLE</td>
             <td><span class="status-tag">Phase 3 in SLE</span></td>
         </tr>
         <tr>
-            <td class="rank">18</td>
+            <td class="rank">19</td>
             <td>
                 <span class="tier-badge" style="background:#ca8a0420;color:#ca8a04;border:1px solid #ca8a0440">
                     🟡 Tier 3
                 </span>
             </td>
-            <td><strong>Cyclosporine (Neoral / Sandimmune)</strong><br><span class="muted">Calcineurin Inhibitor</span></td>
-            <td><span class="gene-tag">HLA Class II DR Beta 1</span><br><span class="muted">MHC / Antigen Presentation</span></td>
+            <td><strong>Ravulizumab (Ultomiris)</strong><br><span class="muted">Complement C5 Inhibitor (Long-Acting)</span></td>
+            <td><span class="gene-tag">Fc Gamma Receptor IIIa (CD16a)</span><br><span class="muted">Immune Complex Clearance</span></td>
             <td><span class="score" style="color:#fb923c;font-weight:700;font-size:1.2em;">6.0</span></td>
             <td class="score-breakdown">
                 <span title="Target Similarity">🎯5</span>
-                <span title="Pathway Proximity">🛤️6</span>
-                <span title="Mechanistic Rationale">🧬8</span>
-                <span title="Clinical Evidence">📋5</span>
-                <span title="Safety Profile">🛡️7</span>
-            </td>
-            <td>Off-label use in lupus nephritis</td>
-            <td><span class="status-tag">Off-label for lupus nephritis</span></td>
-        </tr>
-        <tr>
-            <td class="rank">19</td>
-            <td>
-                <span class="tier-badge" style="background:#16a34a20;color:#16a34a;border:1px solid #16a34a40">
-                    🟢 Tier 4
-                </span>
-            </td>
-            <td><strong>Efgartigimod (Vyvgart)</strong><br><span class="muted">FcRn Antagonist (Fc fragment)</span></td>
-            <td><span class="gene-tag">Fc Gamma Receptor IIIa (CD16a)</span><br><span class="muted">Immune Complex Clearance</span></td>
-            <td><span class="score" style="color:#f87171;font-weight:700;font-size:1.2em;">6.0</span></td>
-            <td class="score-breakdown">
-                <span title="Target Similarity">🎯6</span>
                 <span title="Pathway Proximity">🛤️7</span>
                 <span title="Mechanistic Rationale">🧬7</span>
                 <span title="Clinical Evidence">📋3</span>
-                <span title="Safety Profile">🛡️8</span>
+                <span title="Adverse Event Profile">🛡️8.0</span>
             </td>
-            <td>Approved for other autoimmune disease</td>
+            <td>Approved for complement-mediated diseases</td>
             <td><span class="status-tag">Approved (other indication)</span></td>
         </tr>
         <tr>
@@ -567,17 +574,17 @@
                     🟢 Tier 4
                 </span>
             </td>
-            <td><strong>Efgartigimod (Vyvgart)</strong><br><span class="muted">FcRn Antagonist</span></td>
-            <td><span class="gene-tag">Fc Gamma Receptor IIa (CD32a)</span><br><span class="muted">Immune Complex Clearance</span></td>
+            <td><strong>Fostamatinib (Tavalisse)</strong><br><span class="muted">SYK Inhibitor</span></td>
+            <td><span class="gene-tag">B Lymphoid Tyrosine Kinase</span><br><span class="muted">B Cell Signaling</span></td>
             <td><span class="score" style="color:#f87171;font-weight:700;font-size:1.2em;">6.0</span></td>
             <td class="score-breakdown">
-                <span title="Target Similarity">🎯6</span>
-                <span title="Pathway Proximity">🛤️7</span>
+                <span title="Target Similarity">🎯5</span>
+                <span title="Pathway Proximity">🛤️8</span>
                 <span title="Mechanistic Rationale">🧬7</span>
                 <span title="Clinical Evidence">📋3</span>
-                <span title="Safety Profile">🛡️8</span>
+                <span title="Adverse Event Profile">🛡️7</span>
             </td>
-            <td>Approved for other autoimmune disease</td>
+            <td>Preclinical (lupus models)</td>
             <td><span class="status-tag">Approved (other indication)</span></td>
         </tr>
         <tr>
@@ -587,18 +594,18 @@
                     🟢 Tier 4
                 </span>
             </td>
-            <td><strong>Avacopan (Tavneos)</strong><br><span class="muted">C5a Receptor (C5aR) Antagonist</span></td>
-            <td><span class="gene-tag">Integrin Subunit Alpha M (CD11b)</span><br><span class="muted">Complement / Phagocytosis</span></td>
-            <td><span class="score" style="color:#f87171;font-weight:700;font-size:1.2em;">5.8</span></td>
+            <td><strong>Cyclosporine (Neoral / Sandimmune)</strong><br><span class="muted">Calcineurin Inhibitor</span></td>
+            <td><span class="gene-tag">HLA Class II DR Beta 1</span><br><span class="muted">MHC / Antigen Presentation</span></td>
+            <td><span class="score" style="color:#f87171;font-weight:700;font-size:1.2em;">5.9</span></td>
             <td class="score-breakdown">
                 <span title="Target Similarity">🎯5</span>
-                <span title="Pathway Proximity">🛤️7</span>
+                <span title="Pathway Proximity">🛤️6</span>
                 <span title="Mechanistic Rationale">🧬8</span>
-                <span title="Clinical Evidence">📋3</span>
-                <span title="Safety Profile">🛡️7</span>
+                <span title="Clinical Evidence">📋5</span>
+                <span title="Adverse Event Profile">🛡️6.95</span>
             </td>
-            <td>Approved for complement-driven autoimmune disease</td>
-            <td><span class="status-tag">Approved (other indication)</span></td>
+            <td>Off-label use in lupus nephritis</td>
+            <td><span class="status-tag">Off-label for lupus nephritis</span></td>
         </tr>
         <tr>
             <td class="rank">22</td>
@@ -607,18 +614,18 @@
                     🟢 Tier 4
                 </span>
             </td>
-            <td><strong>Rozanolixizumab (Rystiggo)</strong><br><span class="muted">Anti-FcRn Monoclonal Antibody</span></td>
-            <td><span class="gene-tag">Fc Gamma Receptor IIa (CD32a)</span><br><span class="muted">Immune Complex Clearance</span></td>
-            <td><span class="score" style="color:#f87171;font-weight:700;font-size:1.2em;">5.8</span></td>
+            <td><strong>Bortezomib (Velcade)</strong><br><span class="muted">Proteasome Inhibitor</span></td>
+            <td><span class="gene-tag">TNF Alpha Induced Protein 3 (A20)</span><br><span class="muted">NF-κB Pathway</span></td>
+            <td><span class="score" style="color:#f87171;font-weight:700;font-size:1.2em;">5.9</span></td>
             <td class="score-breakdown">
                 <span title="Target Similarity">🎯6</span>
-                <span title="Pathway Proximity">🛤️7</span>
-                <span title="Mechanistic Rationale">🧬7</span>
-                <span title="Clinical Evidence">📋3</span>
-                <span title="Safety Profile">🛡️7</span>
+                <span title="Pathway Proximity">🛤️8</span>
+                <span title="Mechanistic Rationale">🧬8</span>
+                <span title="Clinical Evidence">📋4</span>
+                <span title="Adverse Event Profile">🛡️4</span>
             </td>
-            <td>Approved for other autoimmune disease</td>
-            <td><span class="status-tag">Approved (other indication)</span></td>
+            <td>Case series in refractory SLE</td>
+            <td><span class="status-tag">Off-label use in refractory SLE</span></td>
         </tr>
         <tr>
             <td class="rank">23</td>
@@ -627,18 +634,18 @@
                     🟢 Tier 4
                 </span>
             </td>
-            <td><strong>Dapirolizumab Pegol (anti-CD40L)</strong><br><span class="muted">Anti-CD40L Pegylated Fab Fragment</span></td>
+            <td><strong>Iscalimab (CFZ533 / anti-CD40)</strong><br><span class="muted">Anti-CD40 Monoclonal Antibody</span></td>
             <td><span class="gene-tag">TNF Superfamily Member 4 (OX40 Ligand)</span><br><span class="muted">T Cell Costimulation</span></td>
-            <td><span class="score" style="color:#f87171;font-weight:700;font-size:1.2em;">5.8</span></td>
+            <td><span class="score" style="color:#f87171;font-weight:700;font-size:1.2em;">5.9</span></td>
             <td class="score-breakdown">
                 <span title="Target Similarity">🎯4</span>
                 <span title="Pathway Proximity">🛤️7</span>
                 <span title="Mechanistic Rationale">🧬6</span>
-                <span title="Clinical Evidence">📋7</span>
-                <span title="Safety Profile">🛡️7</span>
+                <span title="Clinical Evidence">📋5</span>
+                <span title="Adverse Event Profile">🛡️8.35</span>
             </td>
-            <td>Phase 2b positive in SLE</td>
-            <td><span class="status-tag">Phase 2b (positive) in SLE</span></td>
+            <td>Phase 2 in other autoimmune diseases</td>
+            <td><span class="status-tag">Investigational (other autoimmune)</span></td>
         </tr>
         <tr>
             <td class="rank">24</td>
@@ -647,18 +654,18 @@
                     🟢 Tier 4
                 </span>
             </td>
-            <td><strong>Fostamatinib (Tavalisse)</strong><br><span class="muted">SYK Inhibitor</span></td>
-            <td><span class="gene-tag">B Lymphoid Tyrosine Kinase</span><br><span class="muted">B Cell Signaling</span></td>
+            <td><strong>Tofacitinib (Xeljanz)</strong><br><span class="muted">JAK1/3 Inhibitor</span></td>
+            <td><span class="gene-tag">Signal Transducer and Activator of Transcription 4</span><br><span class="muted">JAK-STAT Signaling</span></td>
             <td><span class="score" style="color:#f87171;font-weight:700;font-size:1.2em;">5.8</span></td>
             <td class="score-breakdown">
                 <span title="Target Similarity">🎯5</span>
-                <span title="Pathway Proximity">🛤️8</span>
+                <span title="Pathway Proximity">🛤️7</span>
                 <span title="Mechanistic Rationale">🧬7</span>
-                <span title="Clinical Evidence">📋3</span>
-                <span title="Safety Profile">🛡️7</span>
+                <span title="Clinical Evidence">📋4</span>
+                <span title="Adverse Event Profile">🛡️6.95</span>
             </td>
-            <td>Preclinical (lupus models)</td>
-            <td><span class="status-tag">Approved (other indication)</span></td>
+            <td>Approved for other autoimmune diseases</td>
+            <td><span class="status-tag">Approved (other indications)</span></td>
         </tr>
         <tr>
             <td class="rank">25</td>
@@ -667,18 +674,18 @@
                     🟢 Tier 4
                 </span>
             </td>
-            <td><strong>Baricitinib (Olumiant)</strong><br><span class="muted">JAK1/2 Inhibitor</span></td>
-            <td><span class="gene-tag">TNF Alpha Induced Protein 3 (A20)</span><br><span class="muted">NF-κB Pathway</span></td>
-            <td><span class="score" style="color:#f87171;font-weight:700;font-size:1.2em;">5.8</span></td>
+            <td><strong>Cyclosporine (Neoral / Sandimmune)</strong><br><span class="muted">Calcineurin Inhibitor</span></td>
+            <td><span class="gene-tag">Protein Tyrosine Phosphatase Non-Receptor Type 22</span><br><span class="muted">T Cell Signaling</span></td>
+            <td><span class="score" style="color:#f87171;font-weight:700;font-size:1.2em;">5.7</span></td>
             <td class="score-breakdown">
-                <span title="Target Similarity">🎯4</span>
+                <span title="Target Similarity">🎯5</span>
                 <span title="Pathway Proximity">🛤️6</span>
-                <span title="Mechanistic Rationale">🧬6</span>
-                <span title="Clinical Evidence">📋8</span>
-                <span title="Safety Profile">🛡️7</span>
+                <span title="Mechanistic Rationale">🧬7</span>
+                <span title="Clinical Evidence">📋5</span>
+                <span title="Adverse Event Profile">🛡️6.95</span>
             </td>
-            <td>Phase 3 in SLE</td>
-            <td><span class="status-tag">Phase 3 in SLE</span></td>
+            <td>Off-label use in lupus nephritis</td>
+            <td><span class="status-tag">Off-label for lupus nephritis</span></td>
         </tr>
                 </tbody>
             </table>
@@ -696,7 +703,7 @@
                 </div>
                 <div class="gene-card-score">
                     <span class="best-label">Best</span>
-                    <span class="best-value">9.1</span>
+                    <span class="best-value">8.4</span>
                 </div>
             </div>
             <div class="gene-card-body">
@@ -710,7 +717,7 @@
             <div class="gene-candidate">
                 <div class="gc-header">
                     <span class="gc-drug">Fenebrutinib (GDC-0853)</span>
-                    <span class="gc-score" style="color: #4ade80">9.1</span>
+                    <span class="gc-score" style="color: #4ade80">8.4</span>
                 </div>
                 <div class="gc-mechanism">Direct, highly selective BTK inhibitor. Non-covalent binding to Cys481 with IC50 ~2 nM.</div>
                 <div class="gc-rationale">BTK is an essential kinase for BCR and Fc receptor signaling. BTK inhibition reduces B cell activation, autoantibody production, and renal damage in lupus-prone mice. Fenebrutinib completed a Phase 2 trial in SLE (NCT02908100) showing reduction in CD</div>
@@ -722,7 +729,7 @@
             <div class="gene-candidate">
                 <div class="gc-header">
                     <span class="gc-drug">Evobrutinib (M2951)</span>
-                    <span class="gc-score" style="color: #fbbf24">7.7</span>
+                    <span class="gc-score" style="color: #fbbf24">7.3</span>
                 </div>
                 <div class="gc-mechanism">Highly selective covalent BTK inhibitor. In development for multiple sclerosis and rheumatoid arthritis.</div>
                 <div class="gc-rationale">Selective BTK inhibition blocks B cell and myeloid cell activation relevant to SLE. Phase 2 trials in RA showed efficacy. B cell and myeloid targeting is theoretically attractive for lupus.</div>
@@ -734,70 +741,13 @@
             <div class="gene-candidate">
                 <div class="gc-header">
                     <span class="gc-drug">Ibrutinib (Imbruvica)</span>
-                    <span class="gc-score" style="color: #fbbf24">7.5</span>
+                    <span class="gc-score" style="color: #fbbf24">7.0</span>
                 </div>
                 <div class="gc-mechanism">Irreversible covalent BTK inhibitor (Cys481). FDA-approved for B cell malignancies.</div>
                 <div class="gc-rationale">Ibrutinib potently inhibits BTK with IC50 ~0.5 nM. Preclinical lupus models show reduced autoantibodies, proteinuria, and improved survival. Approved safety profile may facilitate repurposing, though cardiovascular and bleeding risks need monitoring.</div>
                 <div class="gc-meta">
                     <span>📋 Preclinical only (lupus models)</span>
                     <span>🚦 Approved (other indications)</span>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div class="gene-card" id="gene-TYK2">
-            <div class="gene-card-header">
-                <div>
-                    <h3>Tyrosine Kinase 2 <code>TYK2</code></h3>
-                    <span class="gene-category">JAK-STAT Signaling</span>
-                </div>
-                <div class="gene-card-score">
-                    <span class="best-label">Best</span>
-                    <span class="best-value">8.9</span>
-                </div>
-            </div>
-            <div class="gene-card-body">
-                <p class="gene-function"><strong>Function:</strong> Janus kinase mediating type I IFN and IL-12/IL-23 signaling</p>
-                <p class="gene-evidence"><strong>Lupus Evidence:</strong> Protective loss-of-function variants associated with reduced SLE risk. Selective TYK2 inhibitors in development.</p>
-                <p class="gene-odds"><strong>Odds Ratio:</strong> 0.6 | <strong>Chr:</strong> 19p13.2</p>
-            </div>
-            <div class="gene-card-candidates">
-                <h4>3 Repurposing Candidates</h4>
-                
-            <div class="gene-candidate">
-                <div class="gc-header">
-                    <span class="gc-drug">Deucravacitinib (Sotyktu)</span>
-                    <span class="gc-score" style="color: #4ade80">8.9</span>
-                </div>
-                <div class="gc-mechanism">Selective allosteric TYK2 inhibitor binding to the pseudokinase (JH2) domain. FDA-approved for plaque psoriasis.</div>
-                <div class="gc-rationale">TYK2 mediates type I IFN, IL-12, and IL-23 signaling — all central to SLE pathogenesis. Protective TYK2 loss-of-function variants reduce SLE risk. Deucravacitinib completed a Phase 2 trial in SLE (NCT03252587) showing numerical improvement in SRI-4 r</div>
-                <div class="gc-meta">
-                    <span>📋 Phase 2 completed in SLE</span>
-                    <span>🚦 Investigational for SLE</span>
-                </div>
-            </div>
-            <div class="gene-candidate">
-                <div class="gc-header">
-                    <span class="gc-drug">Anifrolumab (Saphnelo)</span>
-                    <span class="gc-score" style="color: #fbbf24">7.5</span>
-                </div>
-                <div class="gc-mechanism">Blocks IFNAR1, the shared receptor for all type I interferons. FDA-approved for moderate to severe SLE.</div>
-                <div class="gc-rationale">TYK2 is required for IFNAR1 signaling — it is the kinase that transduces the type I IFN signal from the receptor to STAT1/STAT2. Blocking IFNAR1 with anifrolumab achieves functional TYK2 pathway inhibition at the receptor level. Anifrolumab is alread</div>
-                <div class="gc-meta">
-                    <span>📋 FDA approved for SLE</span>
-                    <span>🚦 Approved for SLE</span>
-                </div>
-            </div>
-            <div class="gene-candidate">
-                <div class="gc-header">
-                    <span class="gc-drug">Baricitinib (Olumiant)</span>
-                    <span class="gc-score" style="color: #f87171">6.7</span>
-                </div>
-                <div class="gc-mechanism">JAK1/2 inhibitor with partial activity against TYK2 at higher concentrations. FDA-approved for RA and alopecia areata.</div>
-                <div class="gc-rationale">TYK2 and JAK1 form heterodimers to mediate type I IFN signaling. Baricitinib inhibits JAK1 — the obligate partner of TYK2 in IFNAR signaling — thereby indirectly blocking the pathway TYK2 participates in. Phase 3 data in SLE (SLE-BRAVE-I) met its pri</div>
-                <div class="gc-meta">
-                    <span>📋 Phase 3 in SLE (positive SLE-BRAVE-I)</span>
-                    <span>🚦 Phase 3 in SLE</span>
                 </div>
             </div>
             </div>
@@ -810,7 +760,7 @@
                 </div>
                 <div class="gene-card-score">
                     <span class="best-label">Best</span>
-                    <span class="best-value">8.1</span>
+                    <span class="best-value">7.8</span>
                 </div>
             </div>
             <div class="gene-card-body">
@@ -824,7 +774,7 @@
             <div class="gene-candidate">
                 <div class="gc-header">
                     <span class="gc-drug">Ustekinumab (Stelara)</span>
-                    <span class="gc-score" style="color: #4ade80">8.1</span>
+                    <span class="gc-score" style="color: #fbbf24">7.8</span>
                 </div>
                 <div class="gc-mechanism">Binds the shared p40 subunit of IL-12 and IL-23, blocking STAT4-activating cytokines.</div>
                 <div class="gc-rationale">STAT4 is the primary transcription factor activated by IL-12 and IL-23. Ustekinumab blocks the upstream cytokines that drive STAT4 phosphorylation. A Phase 2 trial in SLE (NCT02349091) met its primary endpoint (SRI-4 at week 24: 62% vs 33% placebo). </div>
@@ -836,7 +786,7 @@
             <div class="gene-candidate">
                 <div class="gc-header">
                     <span class="gc-drug">Deucravacitinib (Sotyktu)</span>
-                    <span class="gc-score" style="color: #fbbf24">7.5</span>
+                    <span class="gc-score" style="color: #fbbf24">7.4</span>
                 </div>
                 <div class="gc-mechanism">Allosteric TYK2 inhibitor; TYK2 mediates IL-12/IL-23 → STAT4 signaling.</div>
                 <div class="gc-rationale">TYK2 is required for IL-12 and IL-23 receptor signaling. By inhibiting TYK2, deucravacitinib blocks STAT4 phosphorylation and downstream Th1/Th17 differentiation. Phase 2 in SLE showed encouraging signals.</div>
@@ -867,7 +817,7 @@
                 </div>
                 <div class="gene-card-score">
                     <span class="best-label">Best</span>
-                    <span class="best-value">8.1</span>
+                    <span class="best-value">7.7</span>
                 </div>
             </div>
             <div class="gene-card-body">
@@ -881,7 +831,7 @@
             <div class="gene-candidate">
                 <div class="gc-header">
                     <span class="gc-drug">Oxelumab (R4930 / anti-OX40L)</span>
-                    <span class="gc-score" style="color: #4ade80">8.1</span>
+                    <span class="gc-score" style="color: #fbbf24">7.7</span>
                 </div>
                 <div class="gc-mechanism">Directly binds and neutralizes OX40 ligand (TNFSF4), blocking T cell costimulation through OX40-OX40L axis.</div>
                 <div class="gc-rationale">TNFSF4 (OX40L) is upregulated in SLE and directly drives Tfh responses and autoantibody production. Oxelumab is a direct anti-OX40L antibody. Phase 2 trials in SLE were initiated. This is the most direct approach to targeting TNFSF4-driven pathology.</div>
@@ -893,7 +843,7 @@
             <div class="gene-candidate">
                 <div class="gc-header">
                     <span class="gc-drug">Dapirolizumab Pegol (anti-CD40L)</span>
-                    <span class="gc-score" style="color: #f87171">5.8</span>
+                    <span class="gc-score" style="color: #f87171">6.1</span>
                 </div>
                 <div class="gc-mechanism">Blocks CD40L-CD40 costimulation, an alternative T-B cell interaction axis to OX40-OX40L.</div>
                 <div class="gc-rationale">T cell costimulation in SLE occurs through multiple redundant pathways. Blocking CD40L-CD40 — another key T-B interaction — may partially compensate for OX40L overexpression. Dapirolizumab pegol showed positive Phase 2b results in SLE (2024). Pathway</div>
@@ -905,70 +855,13 @@
             <div class="gene-candidate">
                 <div class="gc-header">
                     <span class="gc-drug">Iscalimab (CFZ533 / anti-CD40)</span>
-                    <span class="gc-score" style="color: #f87171">5.5</span>
+                    <span class="gc-score" style="color: #f87171">5.9</span>
                 </div>
                 <div class="gc-mechanism">Blocks CD40-CD40L interaction, preventing T cell-dependent B cell activation and germinal center formation.</div>
                 <div class="gc-rationale">TNFSF4 (OX40L) promotes Tfh responses driving autoantibody production; CD40-CD40L is a parallel T-B costimulation axis. Blocking CD40 provides an alternative approach to controlling T cell help for autoreactive B cells when OX40-OX40L is overactive. </div>
                 <div class="gc-meta">
                     <span>📋 Phase 2 in other autoimmune diseases</span>
                     <span>🚦 Investigational (other autoimmune)</span>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div class="gene-card" id="gene-HLA-DRB1">
-            <div class="gene-card-header">
-                <div>
-                    <h3>HLA Class II DR Beta 1 <code>HLA-DRB1</code></h3>
-                    <span class="gene-category">MHC / Antigen Presentation</span>
-                </div>
-                <div class="gene-card-score">
-                    <span class="best-label">Best</span>
-                    <span class="best-value">7.3</span>
-                </div>
-            </div>
-            <div class="gene-card-body">
-                <p class="gene-function"><strong>Function:</strong> Antigen presentation to CD4+ T cells</p>
-                <p class="gene-evidence"><strong>Lupus Evidence:</strong> Strongest genetic association with SLE. DRB1*03:01 and *15:01 alleles confer 2-3x increased risk.</p>
-                <p class="gene-odds"><strong>Odds Ratio:</strong> 2.5 | <strong>Chr:</strong> 6p21.32</p>
-            </div>
-            <div class="gene-card-candidates">
-                <h4>3 Repurposing Candidates</h4>
-                
-            <div class="gene-candidate">
-                <div class="gc-header">
-                    <span class="gc-drug">Abatacept (Orencia)</span>
-                    <span class="gc-score" style="color: #fbbf24">7.3</span>
-                </div>
-                <div class="gc-mechanism">Blocks CD28-CD80/86 costimulation, the second signal required for T cell activation after MHC-TCR engagement.</div>
-                <div class="gc-rationale">HLA-DRB1 presents autoantigens to CD4+ T cells — the initiating event in lupus autoimmunity. Abatacept blocks the costimulatory signal that follows MHC-TCR engagement. Phase 2b in SLE showed benefit in arthritis; Phase 3 in lupus nephritis narrowly m</div>
-                <div class="gc-meta">
-                    <span>📋 Phase 3 in SLE/lupus nephritis (mixed)</span>
-                    <span>🚦 Phase 3 in SLE/lupus nephritis</span>
-                </div>
-            </div>
-            <div class="gene-candidate">
-                <div class="gc-header">
-                    <span class="gc-drug">Baricitinib (Olumiant)</span>
-                    <span class="gc-score" style="color: #f87171">6.0</span>
-                </div>
-                <div class="gc-mechanism">JAK1/2 inhibitor that blocks cytokine signaling downstream of T cell activation following MHC-TCR engagement.</div>
-                <div class="gc-rationale">HLA-DRB1 presents autoantigens to CD4+ T cells, which then produce cytokines that signal through JAK-STAT pathways. Baricitinib intercepts this cascade by blocking the cytokine signaling that follows T cell activation, effectively targeting the conse</div>
-                <div class="gc-meta">
-                    <span>📋 Phase 3 in SLE</span>
-                    <span>🚦 Phase 3 in SLE</span>
-                </div>
-            </div>
-            <div class="gene-candidate">
-                <div class="gc-header">
-                    <span class="gc-drug">Cyclosporine (Neoral / Sandimmune)</span>
-                    <span class="gc-score" style="color: #f87171">6.0</span>
-                </div>
-                <div class="gc-mechanism">Inhibits calcineurin, blocking NFAT dephosphorylation and preventing IL-2 transcription in T cells activated through MHC-TCR engagement.</div>
-                <div class="gc-rationale">HLA-DRB1 presents autoantigens that activate autoreactive CD4+ T cells. Cyclosporine blocks the calcineurin-NFAT pathway that is the primary signaling cascade triggered by TCR engagement following MHC-peptide recognition. This directly interrupts the</div>
-                <div class="gc-meta">
-                    <span>📋 Off-label use in lupus nephritis</span>
-                    <span>🚦 Off-label for lupus nephritis</span>
                 </div>
             </div>
             </div>
@@ -1007,7 +900,7 @@
             <div class="gene-candidate">
                 <div class="gc-header">
                     <span class="gc-drug">Baricitinib (Olumiant)</span>
-                    <span class="gc-score" style="color: #f87171">6.6</span>
+                    <span class="gc-score" style="color: #f87171">6.5</span>
                 </div>
                 <div class="gc-mechanism">JAK1/2 inhibitor that blocks type I IFN and IL-6 signaling downstream of IRF5-mediated transcription.</div>
                 <div class="gc-rationale">IRF5 drives IFN-α production; JAK1/2 inhibition blocks the signaling cascade downstream. Phase 3 SLE-BRAVE-I met primary endpoint (SRI-4). While not a direct IRF5 inhibitor, it blocks the consequences of IRF5 activation. Baricitinib is FDA-approved f</div>
@@ -1019,13 +912,70 @@
             <div class="gene-candidate">
                 <div class="gc-header">
                     <span class="gc-drug">Anifrolumab (Saphnelo)</span>
-                    <span class="gc-score" style="color: #f87171">6.6</span>
+                    <span class="gc-score" style="color: #f87171">6.5</span>
                 </div>
                 <div class="gc-mechanism">Blocks IFNAR1, the receptor for type I interferons. FDA-approved for moderate to severe SLE.</div>
                 <div class="gc-rationale">IRF5 is the master transcription factor for IFN-α. Blocking IFNAR1 intercepts IRF5's downstream effects. Anifrolumab is already SLE-approved, providing a de-risked pathway. The IFN gene signature — largely driven by IRF5 — predicts anifrolumab respon</div>
                 <div class="gc-meta">
                     <span>📋 FDA approved for SLE</span>
                     <span>🚦 Approved for SLE</span>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="gene-card" id="gene-HLA-DRB1">
+            <div class="gene-card-header">
+                <div>
+                    <h3>HLA Class II DR Beta 1 <code>HLA-DRB1</code></h3>
+                    <span class="gene-category">MHC / Antigen Presentation</span>
+                </div>
+                <div class="gene-card-score">
+                    <span class="best-label">Best</span>
+                    <span class="best-value">7.1</span>
+                </div>
+            </div>
+            <div class="gene-card-body">
+                <p class="gene-function"><strong>Function:</strong> Antigen presentation to CD4+ T cells</p>
+                <p class="gene-evidence"><strong>Lupus Evidence:</strong> Strongest genetic association with SLE. DRB1*03:01 and *15:01 alleles confer 2-3x increased risk.</p>
+                <p class="gene-odds"><strong>Odds Ratio:</strong> 2.5 | <strong>Chr:</strong> 6p21.32</p>
+            </div>
+            <div class="gene-card-candidates">
+                <h4>3 Repurposing Candidates</h4>
+                
+            <div class="gene-candidate">
+                <div class="gc-header">
+                    <span class="gc-drug">Abatacept (Orencia)</span>
+                    <span class="gc-score" style="color: #fbbf24">7.1</span>
+                </div>
+                <div class="gc-mechanism">Blocks CD28-CD80/86 costimulation, the second signal required for T cell activation after MHC-TCR engagement.</div>
+                <div class="gc-rationale">HLA-DRB1 presents autoantigens to CD4+ T cells — the initiating event in lupus autoimmunity. Abatacept blocks the costimulatory signal that follows MHC-TCR engagement. Phase 2b in SLE showed benefit in arthritis; Phase 3 in lupus nephritis narrowly m</div>
+                <div class="gc-meta">
+                    <span>📋 Phase 3 in SLE/lupus nephritis (mixed)</span>
+                    <span>🚦 Phase 3 in SLE/lupus nephritis</span>
+                </div>
+            </div>
+            <div class="gene-candidate">
+                <div class="gc-header">
+                    <span class="gc-drug">Baricitinib (Olumiant)</span>
+                    <span class="gc-score" style="color: #f87171">6.0</span>
+                </div>
+                <div class="gc-mechanism">JAK1/2 inhibitor that blocks cytokine signaling downstream of T cell activation following MHC-TCR engagement.</div>
+                <div class="gc-rationale">HLA-DRB1 presents autoantigens to CD4+ T cells, which then produce cytokines that signal through JAK-STAT pathways. Baricitinib intercepts this cascade by blocking the cytokine signaling that follows T cell activation, effectively targeting the conse</div>
+                <div class="gc-meta">
+                    <span>📋 Phase 3 in SLE</span>
+                    <span>🚦 Phase 3 in SLE</span>
+                </div>
+            </div>
+            <div class="gene-candidate">
+                <div class="gc-header">
+                    <span class="gc-drug">Cyclosporine (Neoral / Sandimmune)</span>
+                    <span class="gc-score" style="color: #f87171">5.9</span>
+                </div>
+                <div class="gc-mechanism">Inhibits calcineurin, blocking NFAT dephosphorylation and preventing IL-2 transcription in T cells activated through MHC-TCR engagement.</div>
+                <div class="gc-rationale">HLA-DRB1 presents autoantigens that activate autoreactive CD4+ T cells. Cyclosporine blocks the calcineurin-NFAT pathway that is the primary signaling cascade triggered by TCR engagement following MHC-peptide recognition. This directly interrupts the</div>
+                <div class="gc-meta">
+                    <span>📋 Off-label use in lupus nephritis</span>
+                    <span>🚦 Off-label for lupus nephritis</span>
                 </div>
             </div>
             </div>
@@ -1038,7 +988,7 @@
                 </div>
                 <div class="gene-card-score">
                     <span class="best-label">Best</span>
-                    <span class="best-value">6.5</span>
+                    <span class="best-value">6.4</span>
                 </div>
             </div>
             <div class="gene-card-body">
@@ -1052,7 +1002,7 @@
             <div class="gene-candidate">
                 <div class="gc-header">
                     <span class="gc-drug">Nipocalimab (M281)</span>
-                    <span class="gc-score" style="color: #f87171">6.5</span>
+                    <span class="gc-score" style="color: #f87171">6.4</span>
                 </div>
                 <div class="gc-mechanism">Blocks the neonatal Fc receptor (FcRn), reducing IgG recycling and lowering pathogenic autoantibody levels.</div>
                 <div class="gc-rationale">FCGR2A variants impair IgG immune complex clearance, leading to accumulation of pathogenic immune complexes. FcRn blockade reduces total IgG (including autoantibodies) by 60-80%, decreasing the substrate for immune complex formation. Phase 2 trials i</div>
@@ -1063,11 +1013,11 @@
             </div>
             <div class="gene-candidate">
                 <div class="gc-header">
-                    <span class="gc-drug">Efgartigimod (Vyvgart)</span>
-                    <span class="gc-score" style="color: #f87171">6.0</span>
+                    <span class="gc-drug">Rozanolixizumab (Rystiggo)</span>
+                    <span class="gc-score" style="color: #f87171">6.3</span>
                 </div>
-                <div class="gc-mechanism">FcRn antagonist reducing pathogenic IgG autoantibody levels.</div>
-                <div class="gc-rationale">Reducing total IgG autoantibodies decreases immune complex burden, compensating for impaired FCGR2A-mediated clearance. Efgartigimod is FDA-approved for gMG with a well-characterized safety profile.</div>
+                <div class="gc-mechanism">Blocks the neonatal Fc receptor (FcRn), reducing IgG recycling and accelerating pathogenic IgG degradation. FDA-approved for myasthenia gravis.</div>
+                <div class="gc-rationale">FCGR2A variants (H131R) reduce IgG2 binding affinity and impair immune complex clearance. Rozanolixizumab reduces total IgG by ~70%, decreasing the substrate for immune complex formation and the burden on FCGR2A-mediated clearance. This FcRn antagoni</div>
                 <div class="gc-meta">
                     <span>📋 Approved for other autoimmune disease</span>
                     <span>🚦 Approved (other indication)</span>
@@ -1075,11 +1025,11 @@
             </div>
             <div class="gene-candidate">
                 <div class="gc-header">
-                    <span class="gc-drug">Rozanolixizumab (Rystiggo)</span>
-                    <span class="gc-score" style="color: #f87171">5.8</span>
+                    <span class="gc-drug">Efgartigimod (Vyvgart)</span>
+                    <span class="gc-score" style="color: #f87171">6.2</span>
                 </div>
-                <div class="gc-mechanism">Blocks the neonatal Fc receptor (FcRn), reducing IgG recycling and accelerating pathogenic IgG degradation. FDA-approved for myasthenia gravis.</div>
-                <div class="gc-rationale">FCGR2A variants (H131R) reduce IgG2 binding affinity and impair immune complex clearance. Rozanolixizumab reduces total IgG by ~70%, decreasing the substrate for immune complex formation and the burden on FCGR2A-mediated clearance. This FcRn antagoni</div>
+                <div class="gc-mechanism">FcRn antagonist reducing pathogenic IgG autoantibody levels.</div>
+                <div class="gc-rationale">Reducing total IgG autoantibodies decreases immune complex burden, compensating for impaired FCGR2A-mediated clearance. Efgartigimod is FDA-approved for gMG with a well-characterized safety profile.</div>
                 <div class="gc-meta">
                     <span>📋 Approved for other autoimmune disease</span>
                     <span>🚦 Approved (other indication)</span>
@@ -1095,7 +1045,7 @@
                 </div>
                 <div class="gene-card-score">
                     <span class="best-label">Best</span>
-                    <span class="best-value">6.5</span>
+                    <span class="best-value">6.4</span>
                 </div>
             </div>
             <div class="gene-card-body">
@@ -1109,7 +1059,7 @@
             <div class="gene-candidate">
                 <div class="gc-header">
                     <span class="gc-drug">Nipocalimab (M281)</span>
-                    <span class="gc-score" style="color: #f87171">6.5</span>
+                    <span class="gc-score" style="color: #f87171">6.4</span>
                 </div>
                 <div class="gc-mechanism">FcRn inhibitor reducing pathogenic IgG levels, decreasing ADCC substrate and immune complexes.</div>
                 <div class="gc-rationale">FCGR3A (CD16a) mediates ADCC and immune complex clearance. Impaired FCGR3A function leads to immune complex accumulation. FcRn blockade reduces the IgG autoantibody pool, decreasing the burden on an already-impaired clearance system.</div>
@@ -1121,7 +1071,7 @@
             <div class="gene-candidate">
                 <div class="gc-header">
                     <span class="gc-drug">Efgartigimod (Vyvgart)</span>
-                    <span class="gc-score" style="color: #f87171">6.0</span>
+                    <span class="gc-score" style="color: #f87171">6.2</span>
                 </div>
                 <div class="gc-mechanism">Engineered Fc fragment that competes for FcRn binding, accelerating IgG degradation. FDA-approved for myasthenia gravis.</div>
                 <div class="gc-rationale">Same FcRn blockade rationale as nipocalimab. Reduces total IgG and autoantibodies, decreasing immune complex burden on FCGR3A-mediated clearance. Approved safety profile facilitates repurposing.</div>
@@ -1133,69 +1083,12 @@
             <div class="gene-candidate">
                 <div class="gc-header">
                     <span class="gc-drug">Ravulizumab (Ultomiris)</span>
-                    <span class="gc-score" style="color: #f87171">5.7</span>
+                    <span class="gc-score" style="color: #f87171">6.0</span>
                 </div>
                 <div class="gc-mechanism">Long-acting monoclonal antibody that binds C5 and blocks cleavage into C5a and C5b-9 (MAC), preventing terminal complement activation. FDA-approved for PNH and atypical HUS.</div>
                 <div class="gc-rationale">FCGR3A variants impair IgG-mediated immune complex clearance, leading to tissue deposition of immune complexes that activate complement. C5 cleavage generates C5a (driving neutrophil recruitment and inflammation) and C5b-9/MAC (causing direct tissue </div>
                 <div class="gc-meta">
                     <span>📋 Approved for complement-mediated diseases</span>
-                    <span>🚦 Approved (other indication)</span>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div class="gene-card" id="gene-TNFAIP3">
-            <div class="gene-card-header">
-                <div>
-                    <h3>TNF Alpha Induced Protein 3 (A20) <code>TNFAIP3</code></h3>
-                    <span class="gene-category">NF-κB Pathway</span>
-                </div>
-                <div class="gene-card-score">
-                    <span class="best-label">Best</span>
-                    <span class="best-value">6.2</span>
-                </div>
-            </div>
-            <div class="gene-card-body">
-                <p class="gene-function"><strong>Function:</strong> Ubiquitin-editing enzyme that negatively regulates NF-κB signaling</p>
-                <p class="gene-evidence"><strong>Lupus Evidence:</strong> Loss-of-function variants reduce negative regulation of NF-κB, promoting chronic inflammation.</p>
-                <p class="gene-odds"><strong>Odds Ratio:</strong> 1.7 | <strong>Chr:</strong> 6q23.3</p>
-            </div>
-            <div class="gene-card-candidates">
-                <h4>3 Repurposing Candidates</h4>
-                
-            <div class="gene-candidate">
-                <div class="gc-header">
-                    <span class="gc-drug">Bortezomib (Velcade)</span>
-                    <span class="gc-score" style="color: #f87171">6.2</span>
-                </div>
-                <div class="gc-mechanism">Proteasome inhibitor that blocks IκBα degradation, suppressing NF-κB activation. FDA-approved for multiple myeloma.</div>
-                <div class="gc-rationale">TNFAIP3 (A20) normally inhibits NF-κB by deubiquitinating key signaling intermediates. Loss-of-function TNFAIP3 variants in SLE result in unchecked NF-κB activity. Bortezomib inhibits NF-κB by preventing IκBα degradation, partially compensating for A</div>
-                <div class="gc-meta">
-                    <span>📋 Case series in refractory SLE</span>
-                    <span>🚦 Off-label use in refractory SLE</span>
-                </div>
-            </div>
-            <div class="gene-candidate">
-                <div class="gc-header">
-                    <span class="gc-drug">Baricitinib (Olumiant)</span>
-                    <span class="gc-score" style="color: #f87171">5.8</span>
-                </div>
-                <div class="gc-mechanism">JAK1/2 inhibitor with downstream effects on NF-κB through cytokine signaling suppression.</div>
-                <div class="gc-rationale">Multiple NF-κB-driven cytokines (IL-6, TNF) signal through JAK-STAT. JAK inhibition reduces NF-κB-mediated inflammation indirectly. Baricitinib's Phase 3 data in SLE provides clinical validation.</div>
-                <div class="gc-meta">
-                    <span>📋 Phase 3 in SLE</span>
-                    <span>🚦 Phase 3 in SLE</span>
-                </div>
-            </div>
-            <div class="gene-candidate">
-                <div class="gc-header">
-                    <span class="gc-drug">Dimethyl Fumarate (Tecfidera)</span>
-                    <span class="gc-score" style="color: #f87171">4.5</span>
-                </div>
-                <div class="gc-mechanism">Activates the Nrf2 antioxidant pathway and downregulates NF-κB through multiple mechanisms including inhibition of nuclear translocation. FDA-approved for multiple sclerosis.</div>
-                <div class="gc-rationale">TNFAIP3 (A20) normally suppresses NF-κB through ubiquitin editing. Loss-of-function TNFAIP3 variants in SLE result in chronic NF-κB activation. Dimethyl fumarate inhibits NF-κB through a complementary mechanism — Nrf2 activation and glutathione deple</div>
-                <div class="gc-meta">
-                    <span>📋 Approved for MS; NF-κB rationale</span>
                     <span>🚦 Approved (other indication)</span>
                 </div>
             </div>
@@ -1209,7 +1102,7 @@
                 </div>
                 <div class="gene-card-score">
                     <span class="best-label">Best</span>
-                    <span class="best-value">5.8</span>
+                    <span class="best-value">6.0</span>
                 </div>
             </div>
             <div class="gene-card-body">
@@ -1223,7 +1116,7 @@
             <div class="gene-candidate">
                 <div class="gc-header">
                     <span class="gc-drug">Avacopan (Tavneos)</span>
-                    <span class="gc-score" style="color: #f87171">5.8</span>
+                    <span class="gc-score" style="color: #f87171">6.0</span>
                 </div>
                 <div class="gc-mechanism">Selective C5a receptor antagonist that blocks C5a-mediated neutrophil activation, migration, and adhesion. FDA-approved for ANCA-associated vasculitis.</div>
                 <div class="gc-rationale">ITGAM encodes CD11b, a subunit of complement receptor 3 (CR3) that mediates phagocytosis and immune complex clearance. When CR3-mediated clearance is impaired, deposited immune complexes activate the complement cascade, generating C5a — a potent anap</div>
@@ -1235,7 +1128,7 @@
             <div class="gene-candidate">
                 <div class="gc-header">
                     <span class="gc-drug">Intravenous Immunoglobulin (IVIG)</span>
-                    <span class="gc-score" style="color: #f87171">5.2</span>
+                    <span class="gc-score" style="color: #f87171">5.3</span>
                 </div>
                 <div class="gc-mechanism">Polyclonal IgG that saturates FcRn, enhances immune complex clearance, and modulates FcγR expression.</div>
                 <div class="gc-rationale">ITGAM mutations impair phagocytosis via complement receptor 3 (CR3). IVIG enhances FcγR-mediated phagocytosis and immune complex clearance, potentially compensating for defective CR3 function. IVIG is used clinically in severe refractory SLE though e</div>
@@ -1247,7 +1140,7 @@
             <div class="gene-candidate">
                 <div class="gc-header">
                     <span class="gc-drug">Nipocalimab (M281)</span>
-                    <span class="gc-score" style="color: #f87171">5.0</span>
+                    <span class="gc-score" style="color: #f87171">5.2</span>
                 </div>
                 <div class="gc-mechanism">FcRn inhibitor reducing IgG immune complex levels.</div>
                 <div class="gc-rationale">ITGAM mutations impair CR3-mediated phagocytosis. Reducing immune complex load via FcRn blockade decreases the burden on defective clearance mechanisms. Complementary approach to IVIG.</div>
@@ -1266,7 +1159,7 @@
                 </div>
                 <div class="gene-card-score">
                     <span class="best-label">Best</span>
-                    <span class="best-value">5.8</span>
+                    <span class="best-value">6.0</span>
                 </div>
             </div>
             <div class="gene-card-body">
@@ -1280,7 +1173,7 @@
             <div class="gene-candidate">
                 <div class="gc-header">
                     <span class="gc-drug">Fostamatinib (Tavalisse)</span>
-                    <span class="gc-score" style="color: #f87171">5.8</span>
+                    <span class="gc-score" style="color: #f87171">6.0</span>
                 </div>
                 <div class="gc-mechanism">Spleen tyrosine kinase (SYK) inhibitor. FDA-approved for chronic immune thrombocytopenia.</div>
                 <div class="gc-rationale">SYK is a key downstream mediator of BCR signaling, the same pathway where BLK operates as an upstream Src-family kinase. SYK inhibition has shown efficacy in lupus-prone mice (reduced proteinuria, anti-dsDNA). Fostamatinib's B cell effects may partia</div>
@@ -1292,7 +1185,7 @@
             <div class="gene-candidate">
                 <div class="gc-header">
                     <span class="gc-drug">Fenebrutinib (GDC-0853)</span>
-                    <span class="gc-score" style="color: #f87171">5.5</span>
+                    <span class="gc-score" style="color: #f87171">5.6</span>
                 </div>
                 <div class="gc-mechanism">BTK inhibitor with potential cross-reactivity against BLK and other Tec family kinases.</div>
                 <div class="gc-rationale">BLK and BTK are related kinases in BCR signaling. BTK inhibitors may partially compensate for defective BLK function by reducing overall BCR signal strength. Fenebrutinib has been studied in SLE.</div>
@@ -1304,12 +1197,69 @@
             <div class="gene-candidate">
                 <div class="gc-header">
                     <span class="gc-drug">Acalabrutinib (Calquence)</span>
-                    <span class="gc-score" style="color: #f87171">4.9</span>
+                    <span class="gc-score" style="color: #f87171">5.2</span>
                 </div>
                 <div class="gc-mechanism">Highly selective irreversible BTK inhibitor. Blocks BCR signaling downstream of Src-family kinases including BLK.</div>
                 <div class="gc-rationale">BLK is a Src-family kinase that initiates BCR signaling by phosphorylating ITAM motifs on CD79a/CD79b. BTK is the kinase immediately downstream that propagates the signal. Inhibiting BTK with acalabrutinib intercepts the signaling cascade that BLK in</div>
                 <div class="gc-meta">
                     <span>📋 Theoretical; BCR kinase family overlap</span>
+                    <span>🚦 Approved (other indication)</span>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="gene-card" id="gene-TNFAIP3">
+            <div class="gene-card-header">
+                <div>
+                    <h3>TNF Alpha Induced Protein 3 (A20) <code>TNFAIP3</code></h3>
+                    <span class="gene-category">NF-κB Pathway</span>
+                </div>
+                <div class="gene-card-score">
+                    <span class="best-label">Best</span>
+                    <span class="best-value">5.9</span>
+                </div>
+            </div>
+            <div class="gene-card-body">
+                <p class="gene-function"><strong>Function:</strong> Ubiquitin-editing enzyme that negatively regulates NF-κB signaling</p>
+                <p class="gene-evidence"><strong>Lupus Evidence:</strong> Loss-of-function variants reduce negative regulation of NF-κB, promoting chronic inflammation.</p>
+                <p class="gene-odds"><strong>Odds Ratio:</strong> 1.7 | <strong>Chr:</strong> 6q23.3</p>
+            </div>
+            <div class="gene-card-candidates">
+                <h4>3 Repurposing Candidates</h4>
+                
+            <div class="gene-candidate">
+                <div class="gc-header">
+                    <span class="gc-drug">Bortezomib (Velcade)</span>
+                    <span class="gc-score" style="color: #f87171">5.9</span>
+                </div>
+                <div class="gc-mechanism">Proteasome inhibitor that blocks IκBα degradation, suppressing NF-κB activation. FDA-approved for multiple myeloma.</div>
+                <div class="gc-rationale">TNFAIP3 (A20) normally inhibits NF-κB by deubiquitinating key signaling intermediates. Loss-of-function TNFAIP3 variants in SLE result in unchecked NF-κB activity. Bortezomib inhibits NF-κB by preventing IκBα degradation, partially compensating for A</div>
+                <div class="gc-meta">
+                    <span>📋 Case series in refractory SLE</span>
+                    <span>🚦 Off-label use in refractory SLE</span>
+                </div>
+            </div>
+            <div class="gene-candidate">
+                <div class="gc-header">
+                    <span class="gc-drug">Baricitinib (Olumiant)</span>
+                    <span class="gc-score" style="color: #f87171">5.7</span>
+                </div>
+                <div class="gc-mechanism">JAK1/2 inhibitor with downstream effects on NF-κB through cytokine signaling suppression.</div>
+                <div class="gc-rationale">Multiple NF-κB-driven cytokines (IL-6, TNF) signal through JAK-STAT. JAK inhibition reduces NF-κB-mediated inflammation indirectly. Baricitinib's Phase 3 data in SLE provides clinical validation.</div>
+                <div class="gc-meta">
+                    <span>📋 Phase 3 in SLE</span>
+                    <span>🚦 Phase 3 in SLE</span>
+                </div>
+            </div>
+            <div class="gene-candidate">
+                <div class="gc-header">
+                    <span class="gc-drug">Dimethyl Fumarate (Tecfidera)</span>
+                    <span class="gc-score" style="color: #f87171">5.0</span>
+                </div>
+                <div class="gc-mechanism">Activates the Nrf2 antioxidant pathway and downregulates NF-κB through multiple mechanisms including inhibition of nuclear translocation. FDA-approved for multiple sclerosis.</div>
+                <div class="gc-rationale">TNFAIP3 (A20) normally suppresses NF-κB through ubiquitin editing. Loss-of-function TNFAIP3 variants in SLE result in chronic NF-κB activation. Dimethyl fumarate inhibits NF-κB through a complementary mechanism — Nrf2 activation and glutathione deple</div>
+                <div class="gc-meta">
+                    <span>📋 Approved for MS; NF-κB rationale</span>
                     <span>🚦 Approved (other indication)</span>
                 </div>
             </div>
@@ -1349,7 +1299,7 @@
             <div class="gene-candidate">
                 <div class="gc-header">
                     <span class="gc-drug">Abatacept (Orencia)</span>
-                    <span class="gc-score" style="color: #f87171">5.2</span>
+                    <span class="gc-score" style="color: #f87171">5.5</span>
                 </div>
                 <div class="gc-mechanism">Blocks CD28 costimulation, raising the threshold for T cell activation — compensating for PTPN22-mediated dysregulation.</div>
                 <div class="gc-rationale">PTPN22 (LYP) is a phosphatase that raises the TCR signaling threshold. The R620W gain-of-function variant further suppresses TCR signaling, paradoxically allowing autoreactive T cells to escape negative selection. Abatacept raises the activation thre</div>
@@ -1361,7 +1311,7 @@
             <div class="gene-candidate">
                 <div class="gc-header">
                     <span class="gc-drug">Tofacitinib (Xeljanz)</span>
-                    <span class="gc-score" style="color: #f87171">4.8</span>
+                    <span class="gc-score" style="color: #f87171">5.0</span>
                 </div>
                 <div class="gc-mechanism">Pan-JAK inhibitor (JAK1 &gt; JAK3 &gt; JAK2) that broadly suppresses cytokine signaling downstream of TCR engagement. FDA-approved for RA, PsA, and UC.</div>
                 <div class="gc-rationale">PTPN22 gain-of-function variants paradoxically promote autoimmunity by altering T cell selection thresholds. Tofacitinib raises the effective threshold for T cell activation by blocking the cytokine signals (IL-2, IL-4, IL-21) that amplify T cell res</div>
@@ -1406,7 +1356,7 @@
             <div class="gene-candidate">
                 <div class="gc-header">
                     <span class="gc-drug">Fostamatinib (Tavalisse)</span>
-                    <span class="gc-score" style="color: #f87171">4.9</span>
+                    <span class="gc-score" style="color: #f87171">5.2</span>
                 </div>
                 <div class="gc-mechanism">SYK inhibitor that blocks BCR signaling downstream of BANK1 scaffold protein.</div>
                 <div class="gc-rationale">BANK1 is a scaffold protein that modulates BCR-induced calcium mobilization. SYK is the immediate downstream kinase from BCR engagement. While not a direct BANK1 inhibitor (which doesn't exist), SYK inhibition reduces the BCR signal that BANK1 amplif</div>
@@ -1418,7 +1368,7 @@
             <div class="gene-candidate">
                 <div class="gc-header">
                     <span class="gc-drug">Acalabrutinib (Calquence)</span>
-                    <span class="gc-score" style="color: #f87171">4.9</span>
+                    <span class="gc-score" style="color: #f87171">5.2</span>
                 </div>
                 <div class="gc-mechanism">Highly selective, irreversible BTK inhibitor with improved safety profile vs ibrutinib. FDA-approved for CLL and MCL.</div>
                 <div class="gc-rationale">BANK1 amplifies BCR signaling by scaffolding downstream effectors including BTK. While BANK1 itself is not directly druggable, inhibiting BTK — the kinase immediately downstream in the BCR signalosome — reduces the signal that BANK1 amplifies. Acalab</div>
@@ -1427,6 +1377,237 @@
                     <span>🚦 Approved (other indication)</span>
                 </div>
             </div>
+            </div>
+        </div>
+        <div class="gene-card" id="gene-C1QA">
+            <div class="gene-card-header">
+                <div>
+                    <h3>Complement C1q A Chain <code>C1QA</code></h3>
+                    <span class="gene-category">Complement Cascade</span>
+                </div>
+                <div class="gene-card-score">
+                    <span class="best-label">Best</span>
+                    <span class="best-value">0.0</span>
+                </div>
+            </div>
+            <div class="gene-card-body">
+                <p class="gene-function"><strong>Function:</strong> Initiates classical complement pathway; opsonizes apoptotic cells for clearance by macrophages</p>
+                <p class="gene-evidence"><strong>Lupus Evidence:</strong> Homozygous C1q deficiency is the strongest monogenic cause of SLE (&gt;90% penetrance). C1q opsonizes apoptotic debris; deficiency leads to accumulation of self-antigen and loss of tolerance.</p>
+                <p class="gene-odds"><strong>Odds Ratio:</strong> 10.0 | <strong>Chr:</strong> 1p36.12</p>
+            </div>
+            <div class="gene-card-candidates">
+                <h4>0 Repurposing Candidates</h4>
+                
+            </div>
+        </div>
+        <div class="gene-card" id="gene-C2">
+            <div class="gene-card-header">
+                <div>
+                    <h3>Complement C2 <code>C2</code></h3>
+                    <span class="gene-category">Complement Cascade</span>
+                </div>
+                <div class="gene-card-score">
+                    <span class="best-label">Best</span>
+                    <span class="best-value">0.0</span>
+                </div>
+            </div>
+            <div class="gene-card-body">
+                <p class="gene-function"><strong>Function:</strong> Component of classical and lectin complement pathways; forms C3 convertase with C4</p>
+                <p class="gene-evidence"><strong>Lupus Evidence:</strong> C2 deficiency is one of the most common complement deficiencies associated with SLE (~10-20% of homozygous deficient develop SLE). Associated with anti-Ro/SSA antibodies and photosensitivity.</p>
+                <p class="gene-odds"><strong>Odds Ratio:</strong> 5.0 | <strong>Chr:</strong> 6p21.33</p>
+            </div>
+            <div class="gene-card-candidates">
+                <h4>0 Repurposing Candidates</h4>
+                
+            </div>
+        </div>
+        <div class="gene-card" id="gene-C4A">
+            <div class="gene-card-header">
+                <div>
+                    <h3>Complement C4A <code>C4A</code></h3>
+                    <span class="gene-category">Complement Cascade</span>
+                </div>
+                <div class="gene-card-score">
+                    <span class="best-label">Best</span>
+                    <span class="best-value">0.0</span>
+                </div>
+            </div>
+            <div class="gene-card-body">
+                <p class="gene-function"><strong>Function:</strong> Key component of classical complement pathway; C4A is more efficient at opsonizing immune complexes than C4B</p>
+                <p class="gene-evidence"><strong>Lupus Evidence:</strong> C4A copy number variation (low gene copy number) is strongly associated with SLE. Low C4A levels impair immune complex clearance and waste disposal. Gene copy number &lt;2 confers ~3-6x risk.</p>
+                <p class="gene-odds"><strong>Odds Ratio:</strong> 3.5 | <strong>Chr:</strong> 6p21.33</p>
+            </div>
+            <div class="gene-card-candidates">
+                <h4>0 Repurposing Candidates</h4>
+                
+            </div>
+        </div>
+        <div class="gene-card" id="gene-IRF7">
+            <div class="gene-card-header">
+                <div>
+                    <h3>Interferon Regulatory Factor 7 <code>IRF7</code></h3>
+                    <span class="gene-category">Type I Interferon Pathway</span>
+                </div>
+                <div class="gene-card-score">
+                    <span class="best-label">Best</span>
+                    <span class="best-value">0.0</span>
+                </div>
+            </div>
+            <div class="gene-card-body">
+                <p class="gene-function"><strong>Function:</strong> Master transcription factor for type I IFN production; activated downstream of TLR7/TLR9-MyD88 signaling in plasmacytoid DCs</p>
+                <p class="gene-evidence"><strong>Lupus Evidence:</strong> IRF7 risk variants associated with increased IFN-α production and SLE susceptibility. IRF7 is essential for the TLR7/TLR9 → IFN-α axis in pDCs. Gain-of-function variants identified in familial SLE.</p>
+                <p class="gene-odds"><strong>Odds Ratio:</strong> 1.5 | <strong>Chr:</strong> 11p15.5</p>
+            </div>
+            <div class="gene-card-candidates">
+                <h4>0 Repurposing Candidates</h4>
+                
+            </div>
+        </div>
+        <div class="gene-card" id="gene-IRAK4">
+            <div class="gene-card-header">
+                <div>
+                    <h3>Interleukin-1 Receptor-Associated Kinase 4 <code>IRAK4</code></h3>
+                    <span class="gene-category">Innate Immune Sensing</span>
+                </div>
+                <div class="gene-card-score">
+                    <span class="best-label">Best</span>
+                    <span class="best-value">0.0</span>
+                </div>
+            </div>
+            <div class="gene-card-body">
+                <p class="gene-function"><strong>Function:</strong> Essential kinase downstream of MyD88 in TLR7/TLR9 and IL-1R signaling; phosphorylates IRF5 and IRF7</p>
+                <p class="gene-evidence"><strong>Lupus Evidence:</strong> IRAK4 is critical for TLR7/TLR9-driven IFN-α and autoantibody production in lupus models. Pharmacological IRAK4 inhibition reduces disease severity in murine lupus.</p>
+                <p class="gene-odds"><strong>Odds Ratio:</strong> None | <strong>Chr:</strong> 12q12</p>
+            </div>
+            <div class="gene-card-candidates">
+                <h4>0 Repurposing Candidates</h4>
+                
+            </div>
+        </div>
+        <div class="gene-card" id="gene-MYD88">
+            <div class="gene-card-header">
+                <div>
+                    <h3>Myeloid Differentiation Primary Response 88 <code>MYD88</code></h3>
+                    <span class="gene-category">Innate Immune Sensing</span>
+                </div>
+                <div class="gene-card-score">
+                    <span class="best-label">Best</span>
+                    <span class="best-value">0.0</span>
+                </div>
+            </div>
+            <div class="gene-card-body">
+                <p class="gene-function"><strong>Function:</strong> Universal adaptor protein for TLR7, TLR9, and IL-1 receptor family signaling; recruits IRAK4 and activates IRF5/IRF7</p>
+                <p class="gene-evidence"><strong>Lupus Evidence:</strong> MyD88 is essential for TLR7/TLR9-mediated B cell activation and autoantibody production. MyD88-deficient lupus-prone mice are protected from disease. A central signaling hub in the lupus IFN pathway.</p>
+                <p class="gene-odds"><strong>Odds Ratio:</strong> None | <strong>Chr:</strong> 3p22.2</p>
+            </div>
+            <div class="gene-card-candidates">
+                <h4>0 Repurposing Candidates</h4>
+                
+            </div>
+        </div>
+        <div class="gene-card" id="gene-TNIP1">
+            <div class="gene-card-header">
+                <div>
+                    <h3>TNFAIP3-Interacting Protein 1 (ABIN-1) <code>TNIP1</code></h3>
+                    <span class="gene-category">NF-κB Pathway</span>
+                </div>
+                <div class="gene-card-score">
+                    <span class="best-label">Best</span>
+                    <span class="best-value">0.0</span>
+                </div>
+            </div>
+            <div class="gene-card-body">
+                <p class="gene-function"><strong>Function:</strong> Ubiquitin-binding protein that cooperates with TNFAIP3 (A20) to negatively regulate NF-κB signaling</p>
+                <p class="gene-evidence"><strong>Lupus Evidence:</strong> GWAS-implicated in SLE. TNIP1 risk variants reduce expression and impair A20-mediated NF-κB suppression. TNIP1-deficient mice develop lupus-like autoimmunity.</p>
+                <p class="gene-odds"><strong>Odds Ratio:</strong> 1.5 | <strong>Chr:</strong> 5q33.1</p>
+            </div>
+            <div class="gene-card-candidates">
+                <h4>0 Repurposing Candidates</h4>
+                
+            </div>
+        </div>
+        <div class="gene-card" id="gene-UBE2L3">
+            <div class="gene-card-header">
+                <div>
+                    <h3>Ubiquitin-Conjugating Enzyme E2 L3 (UBCH7) <code>UBE2L3</code></h3>
+                    <span class="gene-category">NF-κB Pathway</span>
+                </div>
+                <div class="gene-card-score">
+                    <span class="best-label">Best</span>
+                    <span class="best-value">0.0</span>
+                </div>
+            </div>
+            <div class="gene-card-body">
+                <p class="gene-function"><strong>Function:</strong> E2 ubiquitin-conjugating enzyme that promotes linear ubiquitination and NF-κB activation; regulates B cell and plasma cell function</p>
+                <p class="gene-evidence"><strong>Lupus Evidence:</strong> GWAS-implicated in SLE and multiple autoimmune diseases. Risk allele increases UBE2L3 expression in B cells, enhancing NF-κB activation, plasma cell differentiation, and autoantibody production.</p>
+                <p class="gene-odds"><strong>Odds Ratio:</strong> 1.4 | <strong>Chr:</strong> 22q11.21</p>
+            </div>
+            <div class="gene-card-candidates">
+                <h4>0 Repurposing Candidates</h4>
+                
+            </div>
+        </div>
+        <div class="gene-card" id="gene-ELMO1">
+            <div class="gene-card-header">
+                <div>
+                    <h3>Engulfment and Cell Motility 1 <code>ELMO1</code></h3>
+                    <span class="gene-category">Complement / Phagocytosis</span>
+                </div>
+                <div class="gene-card-score">
+                    <span class="best-label">Best</span>
+                    <span class="best-value">0.0</span>
+                </div>
+            </div>
+            <div class="gene-card-body">
+                <p class="gene-function"><strong>Function:</strong> Involved in cytoskeletal rearrangement, cell migration, and apoptotic cell clearance</p>
+                <p class="gene-evidence"><strong>Lupus Evidence:</strong> GWAS-implicated specifically in lupus nephritis. ELMO1 variants associated with increased risk of renal involvement in SLE. Promotes macrophage-mediated clearance of apoptotic cells in the kidney.</p>
+                <p class="gene-odds"><strong>Odds Ratio:</strong> 1.4 | <strong>Chr:</strong> 7p14.1</p>
+            </div>
+            <div class="gene-card-candidates">
+                <h4>0 Repurposing Candidates</h4>
+                
+            </div>
+        </div>
+        <div class="gene-card" id="gene-PRDM1">
+            <div class="gene-card-header">
+                <div>
+                    <h3>PR/SET Domain 1 (BLIMP-1) <code>PRDM1</code></h3>
+                    <span class="gene-category">Lymphocyte Development</span>
+                </div>
+                <div class="gene-card-score">
+                    <span class="best-label">Best</span>
+                    <span class="best-value">0.0</span>
+                </div>
+            </div>
+            <div class="gene-card-body">
+                <p class="gene-function"><strong>Function:</strong> Master transcription factor driving B cell terminal differentiation into plasma cells and antibody-secreting cells</p>
+                <p class="gene-evidence"><strong>Lupus Evidence:</strong> GWAS-implicated in SLE. PRDM1 risk variants alter Blimp-1 expression in B cells, dysregulating plasma cell differentiation and autoantibody production. Elevated Blimp-1+ plasma cells in SLE.</p>
+                <p class="gene-odds"><strong>Odds Ratio:</strong> 1.3 | <strong>Chr:</strong> 6q21</p>
+            </div>
+            <div class="gene-card-candidates">
+                <h4>0 Repurposing Candidates</h4>
+                
+            </div>
+        </div>
+        <div class="gene-card" id="gene-ATG5">
+            <div class="gene-card-header">
+                <div>
+                    <h3>Autophagy Related 5 <code>ATG5</code></h3>
+                    <span class="gene-category">Autophagy</span>
+                </div>
+                <div class="gene-card-score">
+                    <span class="best-label">Best</span>
+                    <span class="best-value">0.0</span>
+                </div>
+            </div>
+            <div class="gene-card-body">
+                <p class="gene-function"><strong>Function:</strong> Core autophagy protein essential for autophagosome formation; also involved in lymphocyte development and immune regulation</p>
+                <p class="gene-evidence"><strong>Lupus Evidence:</strong> GWAS-implicated in SLE. ATG5 polymorphisms associated with SLE susceptibility. Autophagy dysregulation impairs T and B cell homeostasis, mitochondrial clearance, and promotes type I IFN production.</p>
+                <p class="gene-odds"><strong>Odds Ratio:</strong> 1.3 | <strong>Chr:</strong> 6q21</p>
+            </div>
+            <div class="gene-card-candidates">
+                <h4>0 Repurposing Candidates</h4>
+                
             </div>
         </div>
         </div>
@@ -1456,5 +1637,31 @@
             <p><a href="../knowledge_graph/web/index.html">View Knowledge Graph</a></p>
         </footer>
     </div>
+    <script>
+(function() {
+    const top5 = [{"name": "Fenebrutinib", "scores": [10, 10, 10, 9, 7, 4]}, {"name": "Ustekinumab", "scores": [8, 9, 9, 8, 8, 4]}, {"name": "Oxelumab", "scores": [10, 10, 10, 4, 6, 8]}, {"name": "Deucravacitinib", "scores": [7, 9, 9, 6, 8.35, 6]}, {"name": "Evobrutinib", "scores": [10, 10, 9, 3, 6, 8]}];
+    const labels = ['Target Similarity', 'Pathway Proximity', 'Mechanistic Rationale', 'Clinical Evidence', 'Adverse Event Profile', 'Novelty'];
+    const colors = ['#818cf8', '#4ade80', '#f59e0b', '#f472b6', '#34d399', '#c084fc'];
+    const datasets = top5.map((c, i) => ({
+        label: c.name,
+        data: c.scores,
+        borderColor: colors[i],
+        backgroundColor: colors[i] + '18',
+        borderWidth: 2,
+        pointBackgroundColor: colors[i],
+        pointRadius: 4,
+    }));
+    new Chart(document.getElementById('radarChart'), {
+        type: 'radar',
+        data: { labels, datasets },
+        options: {
+            responsive: true,
+            maintainAspectRatio: true,
+            scales: { r: { beginAtZero: true, max: 10, ticks: { backdropColor: 'transparent', color: '#787890', font: { size: 10 } }, grid: { color: '#252535' }, pointLabels: { color: '#c0c0d0', font: { size: 11 } }, angleLines: { color: '#252535' } } },
+            plugins: { legend: { position: 'bottom', labels: { color: '#c0c0d0', font: { size: 12 }, padding: 16, usePointStyle: true } } }
+        }
+    });
+})();
+</script>
 </body>
 </html>

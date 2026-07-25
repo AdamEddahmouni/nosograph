@@ -2,6 +2,7 @@
 #
 # Usage:
 #   docker compose build                          Build the image
+#   docker compose up web                          Start the web API + dashboard
 #   docker compose run --rm pipeline run-all      Run the full pipeline
 #   docker compose up kg-web                       Serve the knowledge graph
 #   docker compose run --rm pipeline test          Run tests
@@ -10,15 +11,78 @@
 
 services:
 
-  # ── CLI pipeline ──────────────────────────────────────────────────────
-  pipeline:
+  # ── Redis (message broker + result backend for Celery) ────────────────
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  # ── Celery Worker ─────────────────────────────────────────────────────
+  worker:
     build: .
     image: lupus-platform:latest
+    command: celery -A web_api.tasks.analysis_tasks worker --loglevel=info --concurrency=2
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+    depends_on:
+      redis:
+        condition: service_healthy
     volumes:
       - ./knowledge_graph/data:/app/knowledge_graph/data:ro
       - ./drug_repurposing/data:/app/drug_repurposing/data:ro
       - ./bioinformatics/data:/app/bioinformatics/data
       - ./literature_mining/data:/app/literature_mining/data
+      - ./virtual_screening/data:/app/virtual_screening/data
+      - ./clinical_trials/data:/app/clinical_trials/data
+      - ./ml_predictor/data:/app/ml_predictor/data
+    profiles:
+      - full
+
+  # ── Web API + Dashboard ───────────────────────────────────────────────
+  web:
+    build: .
+    image: lupus-platform:latest
+    ports:
+      - "8000:8000"
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+      - USE_CACHE=true
+    depends_on:
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./knowledge_graph/data:/app/knowledge_graph/data:ro
+      - ./drug_repurposing/data:/app/drug_repurposing/data:ro
+      - ./bioinformatics/data:/app/bioinformatics/data
+      - ./literature_mining/data:/app/literature_mining/data
+      - ./virtual_screening/data:/app/virtual_screening/data
+      - ./clinical_trials/data:/app/clinical_trials/data
+      - ./ml_predictor/data:/app/ml_predictor/data
+    profiles:
+      - full
+
+  # ── CLI pipeline ──────────────────────────────────────────────────────
+  pipeline:
+    build: .
+    image: lupus-platform:latest
+    entrypoint: ["python", "main.py"]
+    volumes:
+      - ./knowledge_graph/data:/app/knowledge_graph/data:ro
+      - ./drug_repurposing/data:/app/drug_repurposing/data:ro
+      - ./bioinformatics/data:/app/bioinformatics/data
+      - ./literature_mining/data:/app/literature_mining/data
+      - ./virtual_screening/data:/app/virtual_screening/data
+      - ./clinical_trials/data:/app/clinical_trials/data
+      - ./ml_predictor/data:/app/ml_predictor/data
     command: run-all --export-html
     profiles:
       - cli
@@ -29,8 +93,7 @@ services:
     image: lupus-platform:latest
     ports:
       - "8080:8080"
-    # graph_data.json is pre-built into the image (Dockerfile runs build_graph.py --export)
-    command: >
-      python -c "import http.server; import os;
-      os.chdir('knowledge_graph/web');
-      http.server.test(HandlerClass=http.server.SimpleHTTPRequestHandler, port=8080)"
+    entrypoint: ["python", "-c", "import http.server; import os; os.chdir('knowledge_graph/web'); http.server.test(HandlerClass=http.server.SimpleHTTPRequestHandler, port=8080)"]
+
+volumes:
+  redis-data:

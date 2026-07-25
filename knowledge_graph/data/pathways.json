@@ -55,6 +55,30 @@
       "key_components": ["TLR7", "TLR9", "MYD88", "IRAK4", "IRF5", "IRF7", "UNC93B1"],
       "therapeutic_targets": ["hydroxychloroquine (TLR7/9 inhibitor)", "Potential: TLR7/9 antagonists", "IRAK4 inhibitors"],
       "references": ["PMID:35477763", "PMID:32094663"]
+    },
+    {
+      "id": "netosis",
+      "name": "NETosis & Neutrophil Extracellular Traps",
+      "description": "NETosis is a programmed neutrophil cell death that releases neutrophil extracellular traps (NETs) — webs of chromatin and antimicrobial proteins. In SLE, NETosis is dysregulated: NETs persist due to impaired DNase I degradation and serve as a source of autoantigens (dsDNA, histones, LL-37). NETs activate pDCs via TLR7/TLR9 to produce IFN-α and directly damage endothelial and renal tissue in lupus nephritis.",
+      "key_components": ["PADI4", "MPO", "NE", "DNASE1", "DNASE1L3", "C1QA", "TLR7", "TLR9"],
+      "therapeutic_targets": ["Potential: PAD4 inhibitors", "DNase I/IL-3 fusion proteins", "NET-targeted therapies"],
+      "references": ["PMID:29420259", "PMID:32094663"]
+    },
+    {
+      "id": "complement-cascade",
+      "name": "Complement Cascade (Classical & Terminal)",
+      "description": "The full complement system is central to SLE pathogenesis. C1q, C2, and C4 initiate the classical pathway via immune complex recognition and opsonize apoptotic cells. Their deficiencies (especially C1q and C4A) are the strongest monogenic SLE risk factors. Terminal pathway activation produces C3a/C5a (anaphylatoxins) and C5b-9 (MAC), causing tissue inflammation and damage. Paradoxically, early component deficiencies cause SLE while terminal pathway activation drives tissue injury — creating a therapeutic paradox.",
+      "key_components": ["C1QA", "C1QB", "C1QC", "C2", "C4A", "C4B", "C3", "C5", "C5AR1", "C5AR2"],
+      "therapeutic_targets": ["avacopan (C5aR antagonist)", "ravulizumab (anti-C5)", "eculizumab (anti-C5)", "Potential: C1q replacement", "Factor B/D inhibitors"],
+      "references": ["PMID:29180258", "PMID:27399968"]
+    },
+    {
+      "id": "autophagy",
+      "name": "Autophagy & Cellular Homeostasis",
+      "description": "Autophagy is a conserved cellular degradation pathway that maintains lymphocyte homeostasis, clears damaged mitochondria, and regulates type I IFN production. ATG5 polymorphisms are associated with SLE. Impaired autophagy leads to accumulation of damaged mitochondria and mitochondrial DNA, which activates the cGAS-STING pathway and TLR9, driving IFN production. Autophagy also regulates plasma cell survival and autoantibody secretion.",
+      "key_components": ["ATG5", "ATG7", "BECN1", "SQSTM1", "LAMP2", "CGAS", "STING1"],
+      "therapeutic_targets": ["Potential: autophagy inducers (rapamycin/sirolimus)", "cGAS-STING inhibitors"],
+      "references": ["PMID:20694012", "PMID:31187282"]
     }
   ]
 }

@@ -11,7 +11,6 @@ identifies literature-supported repurposing candidates.
 """
 
 import json
-import sys
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).parent.parent

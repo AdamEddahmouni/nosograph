@@ -12,12 +12,11 @@ Usage:
     python enrichment.py --export-html      # Generate HTML report
 """
 
-import json
-import sys
-import os
 import argparse
+import json
+import os
+import sys
 from pathlib import Path
-from collections import defaultdict
 
 import networkx as nx
 

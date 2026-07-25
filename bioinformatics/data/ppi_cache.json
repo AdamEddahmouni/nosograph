@@ -1,6 +1,6 @@
 {
-  "cache_key": "BAFF,BANK1,BLK,BTK,FCGR2A,FCGR3A,HLA-DRB1,IFNAR1,IRF5,ITGAM,JAK1,PTPN22,STAT4,TLR7,TLR9,TNFAIP3,TNFSF4,TYK2",
-  "confidence": 0.4,
+  "cache_key": "ATG5,BAFF,BANK1,BLK,BTK,C1QA,C2,C4A,ELMO1,FCGR2A,FCGR3A,HLA-DRB1,IFNAR1,IKZF1,IKZF3,IRAK4,IRF5,IRF7,ITGAM,JAK1,MYD88,PRDM1,PTPN22,STAT4,TLR7,TLR9,TNFAIP3,TNFSF4,TNIP1,TYK2,UBE2L3",
+  "confidence": 0.7,
   "id_map": {
     "HLA-DRB1": "9606.ENSP00000353099",
     "IRF5": "9606.ENSP00000418037",
@@ -19,58 +19,22 @@
     "IFNAR1": "9606.ENSP00000270139",
     "JAK1": "9606.ENSP00000499900",
     "TYK2": "9606.ENSP00000431885",
-    "BTK": "9606.ENSP00000483570"
+    "BTK": "9606.ENSP00000483570",
+    "C1QA": "9606.ENSP00000363773",
+    "C2": "9606.ENSP00000299367",
+    "C4A": "9606.ENSP00000396688",
+    "IRF7": "9606.ENSP00000380697",
+    "IRAK4": "9606.ENSP00000479889",
+    "MYD88": "9606.ENSP00000498321",
+    "IKZF1": "9606.ENSP00000331614",
+    "IKZF3": "9606.ENSP00000344544",
+    "TNIP1": "9606.ENSP00000317891",
+    "UBE2L3": "9606.ENSP00000400906",
+    "ELMO1": "9606.ENSP00000312185",
+    "PRDM1": "9606.ENSP00000358092",
+    "ATG5": "9606.ENSP00000358072"
   },
   "interactions": [
-    {
-      "stringId_A": "9606.ENSP00000259089",
-      "stringId_B": "9606.ENSP00000353874",
-      "preferredName_A": "BLK",
-      "preferredName_B": "TLR9",
-      "score": 0.422
-    },
-    {
-      "stringId_A": "9606.ENSP00000259089",
-      "stringId_B": "9606.ENSP00000281834",
-      "preferredName_A": "BLK",
-      "preferredName_B": "TNFSF4",
-      "score": 0.479
-    },
-    {
-      "stringId_A": "9606.ENSP00000259089",
-      "stringId_B": "9606.ENSP00000353099",
-      "preferredName_A": "BLK",
-      "preferredName_B": "HLA-DRB1",
-      "score": 0.501
-    },
-    {
-      "stringId_A": "9606.ENSP00000259089",
-      "stringId_B": "9606.ENSP00000271450",
-      "preferredName_A": "BLK",
-      "preferredName_B": "FCGR2A",
-      "score": 0.667
-    },
-    {
-      "stringId_A": "9606.ENSP00000259089",
-      "stringId_B": "9606.ENSP00000352833",
-      "preferredName_A": "BLK",
-      "preferredName_B": "PTPN22",
-      "score": 0.676
-    },
-    {
-      "stringId_A": "9606.ENSP00000259089",
-      "stringId_B": "9606.ENSP00000418037",
-      "preferredName_A": "BLK",
-      "preferredName_B": "IRF5",
-      "score": 0.681
-    },
-    {
-      "stringId_A": "9606.ENSP00000259089",
-      "stringId_B": "9606.ENSP00000351255",
-      "preferredName_A": "BLK",
-      "preferredName_B": "STAT4",
-      "score": 0.682
-    },
     {
       "stringId_A": "9606.ENSP00000259089",
       "stringId_B": "9606.ENSP00000481570",
@@ -87,41 +51,6 @@
     },
     {
       "stringId_A": "9606.ENSP00000270139",
-      "stringId_B": "9606.ENSP00000271450",
-      "preferredName_A": "IFNAR1",
-      "preferredName_B": "FCGR2A",
-      "score": 0.423
-    },
-    {
-      "stringId_A": "9606.ENSP00000270139",
-      "stringId_B": "9606.ENSP00000365048",
-      "preferredName_A": "IFNAR1",
-      "preferredName_B": "TNFSF13B",
-      "score": 0.436
-    },
-    {
-      "stringId_A": "9606.ENSP00000270139",
-      "stringId_B": "9606.ENSP00000356946",
-      "preferredName_A": "IFNAR1",
-      "preferredName_B": "FCGR3A",
-      "score": 0.494
-    },
-    {
-      "stringId_A": "9606.ENSP00000270139",
-      "stringId_B": "9606.ENSP00000353874",
-      "preferredName_A": "IFNAR1",
-      "preferredName_B": "TLR9",
-      "score": 0.667
-    },
-    {
-      "stringId_A": "9606.ENSP00000270139",
-      "stringId_B": "9606.ENSP00000418037",
-      "preferredName_A": "IFNAR1",
-      "preferredName_B": "IRF5",
-      "score": 0.692
-    },
-    {
-      "stringId_A": "9606.ENSP00000270139",
       "stringId_B": "9606.ENSP00000496959",
       "preferredName_A": "IFNAR1",
       "preferredName_B": "ITGAM",
@@ -133,6 +62,13 @@
       "preferredName_A": "IFNAR1",
       "preferredName_B": "TLR7",
       "score": 0.738
+    },
+    {
+      "stringId_A": "9606.ENSP00000270139",
+      "stringId_B": "9606.ENSP00000380697",
+      "preferredName_A": "IFNAR1",
+      "preferredName_B": "IRF7",
+      "score": 0.804
     },
     {
       "stringId_A": "9606.ENSP00000270139",
@@ -157,55 +93,6 @@
     },
     {
       "stringId_A": "9606.ENSP00000271450",
-      "stringId_B": "9606.ENSP00000352833",
-      "preferredName_A": "FCGR2A",
-      "preferredName_B": "PTPN22",
-      "score": 0.428
-    },
-    {
-      "stringId_A": "9606.ENSP00000271450",
-      "stringId_B": "9606.ENSP00000353099",
-      "preferredName_A": "FCGR2A",
-      "preferredName_B": "HLA-DRB1",
-      "score": 0.434
-    },
-    {
-      "stringId_A": "9606.ENSP00000271450",
-      "stringId_B": "9606.ENSP00000418037",
-      "preferredName_A": "FCGR2A",
-      "preferredName_B": "IRF5",
-      "score": 0.466
-    },
-    {
-      "stringId_A": "9606.ENSP00000271450",
-      "stringId_B": "9606.ENSP00000483570",
-      "preferredName_A": "FCGR2A",
-      "preferredName_B": "BTK",
-      "score": 0.508
-    },
-    {
-      "stringId_A": "9606.ENSP00000271450",
-      "stringId_B": "9606.ENSP00000320509",
-      "preferredName_A": "FCGR2A",
-      "preferredName_B": "BANK1",
-      "score": 0.516
-    },
-    {
-      "stringId_A": "9606.ENSP00000271450",
-      "stringId_B": "9606.ENSP00000365048",
-      "preferredName_A": "FCGR2A",
-      "preferredName_B": "TNFSF13B",
-      "score": 0.524
-    },
-    {
-      "stringId_A": "9606.ENSP00000271450",
-      "stringId_B": "9606.ENSP00000370034",
-      "preferredName_A": "FCGR2A",
-      "preferredName_B": "TLR7",
-      "score": 0.564
-    },
-    {
-      "stringId_A": "9606.ENSP00000271450",
       "stringId_B": "9606.ENSP00000353874",
       "preferredName_A": "FCGR2A",
       "preferredName_B": "TLR9",
@@ -227,87 +114,38 @@
     },
     {
       "stringId_A": "9606.ENSP00000281834",
-      "stringId_B": "9606.ENSP00000353874",
-      "preferredName_A": "TNFSF4",
-      "preferredName_B": "TLR9",
-      "score": 0.418
-    },
-    {
-      "stringId_A": "9606.ENSP00000281834",
-      "stringId_B": "9606.ENSP00000352833",
-      "preferredName_A": "TNFSF4",
-      "preferredName_B": "PTPN22",
-      "score": 0.439
-    },
-    {
-      "stringId_A": "9606.ENSP00000281834",
-      "stringId_B": "9606.ENSP00000370034",
-      "preferredName_A": "TNFSF4",
-      "preferredName_B": "TLR7",
-      "score": 0.452
-    },
-    {
-      "stringId_A": "9606.ENSP00000281834",
-      "stringId_B": "9606.ENSP00000365048",
-      "preferredName_A": "TNFSF4",
-      "preferredName_B": "TNFSF13B",
-      "score": 0.481
-    },
-    {
-      "stringId_A": "9606.ENSP00000281834",
-      "stringId_B": "9606.ENSP00000418037",
-      "preferredName_A": "TNFSF4",
-      "preferredName_B": "IRF5",
-      "score": 0.487
-    },
-    {
-      "stringId_A": "9606.ENSP00000281834",
-      "stringId_B": "9606.ENSP00000351255",
-      "preferredName_A": "TNFSF4",
-      "preferredName_B": "STAT4",
-      "score": 0.491
-    },
-    {
-      "stringId_A": "9606.ENSP00000281834",
-      "stringId_B": "9606.ENSP00000496959",
-      "preferredName_A": "TNFSF4",
-      "preferredName_B": "ITGAM",
-      "score": 0.51
-    },
-    {
-      "stringId_A": "9606.ENSP00000281834",
-      "stringId_B": "9606.ENSP00000481570",
-      "preferredName_A": "TNFSF4",
-      "preferredName_B": "TNFAIP3",
-      "score": 0.548
-    },
-    {
-      "stringId_A": "9606.ENSP00000281834",
-      "stringId_B": "9606.ENSP00000356946",
-      "preferredName_A": "TNFSF4",
-      "preferredName_B": "FCGR3A",
-      "score": 0.593
-    },
-    {
-      "stringId_A": "9606.ENSP00000281834",
       "stringId_B": "9606.ENSP00000320509",
       "preferredName_A": "TNFSF4",
       "preferredName_B": "BANK1",
       "score": 0.706
     },
     {
-      "stringId_A": "9606.ENSP00000320509",
-      "stringId_B": "9606.ENSP00000351255",
-      "preferredName_A": "BANK1",
-      "preferredName_B": "STAT4",
-      "score": 0.632
+      "stringId_A": "9606.ENSP00000299367",
+      "stringId_B": "9606.ENSP00000363773",
+      "preferredName_A": "C2",
+      "preferredName_B": "C1QA",
+      "score": 0.95
     },
     {
-      "stringId_A": "9606.ENSP00000320509",
+      "stringId_A": "9606.ENSP00000299367",
+      "stringId_B": "9606.ENSP00000396688",
+      "preferredName_A": "C2",
+      "preferredName_B": "C4A",
+      "score": 0.953
+    },
+    {
+      "stringId_A": "9606.ENSP00000317891",
+      "stringId_B": "9606.ENSP00000418037",
+      "preferredName_A": "TNIP1",
+      "preferredName_B": "IRF5",
+      "score": 0.77
+    },
+    {
+      "stringId_A": "9606.ENSP00000317891",
       "stringId_B": "9606.ENSP00000481570",
-      "preferredName_A": "BANK1",
+      "preferredName_A": "TNIP1",
       "preferredName_B": "TNFAIP3",
-      "score": 0.698
+      "score": 0.999
     },
     {
       "stringId_A": "9606.ENSP00000320509",
@@ -324,53 +162,11 @@
       "score": 0.769
     },
     {
-      "stringId_A": "9606.ENSP00000351255",
-      "stringId_B": "9606.ENSP00000356946",
-      "preferredName_A": "STAT4",
-      "preferredName_B": "FCGR3A",
-      "score": 0.407
-    },
-    {
-      "stringId_A": "9606.ENSP00000351255",
-      "stringId_B": "9606.ENSP00000365048",
-      "preferredName_A": "STAT4",
-      "preferredName_B": "TNFSF13B",
-      "score": 0.41
-    },
-    {
-      "stringId_A": "9606.ENSP00000351255",
-      "stringId_B": "9606.ENSP00000353874",
-      "preferredName_A": "STAT4",
-      "preferredName_B": "TLR9",
-      "score": 0.411
-    },
-    {
-      "stringId_A": "9606.ENSP00000351255",
-      "stringId_B": "9606.ENSP00000496959",
-      "preferredName_A": "STAT4",
-      "preferredName_B": "ITGAM",
-      "score": 0.465
-    },
-    {
-      "stringId_A": "9606.ENSP00000351255",
-      "stringId_B": "9606.ENSP00000370034",
-      "preferredName_A": "STAT4",
-      "preferredName_B": "TLR7",
-      "score": 0.471
-    },
-    {
-      "stringId_A": "9606.ENSP00000351255",
-      "stringId_B": "9606.ENSP00000353099",
-      "preferredName_A": "STAT4",
-      "preferredName_B": "HLA-DRB1",
-      "score": 0.616
-    },
-    {
-      "stringId_A": "9606.ENSP00000351255",
-      "stringId_B": "9606.ENSP00000481570",
-      "preferredName_A": "STAT4",
-      "preferredName_B": "TNFAIP3",
-      "score": 0.657
+      "stringId_A": "9606.ENSP00000331614",
+      "stringId_B": "9606.ENSP00000344544",
+      "preferredName_A": "IKZF1",
+      "preferredName_B": "IKZF3",
+      "score": 0.918
     },
     {
       "stringId_A": "9606.ENSP00000351255",
@@ -402,48 +198,6 @@
     },
     {
       "stringId_A": "9606.ENSP00000352833",
-      "stringId_B": "9606.ENSP00000496959",
-      "preferredName_A": "PTPN22",
-      "preferredName_B": "ITGAM",
-      "score": 0.409
-    },
-    {
-      "stringId_A": "9606.ENSP00000352833",
-      "stringId_B": "9606.ENSP00000353874",
-      "preferredName_A": "PTPN22",
-      "preferredName_B": "TLR9",
-      "score": 0.426
-    },
-    {
-      "stringId_A": "9606.ENSP00000352833",
-      "stringId_B": "9606.ENSP00000483570",
-      "preferredName_A": "PTPN22",
-      "preferredName_B": "BTK",
-      "score": 0.444
-    },
-    {
-      "stringId_A": "9606.ENSP00000352833",
-      "stringId_B": "9606.ENSP00000365048",
-      "preferredName_A": "PTPN22",
-      "preferredName_B": "TNFSF13B",
-      "score": 0.474
-    },
-    {
-      "stringId_A": "9606.ENSP00000352833",
-      "stringId_B": "9606.ENSP00000370034",
-      "preferredName_A": "PTPN22",
-      "preferredName_B": "TLR7",
-      "score": 0.483
-    },
-    {
-      "stringId_A": "9606.ENSP00000352833",
-      "stringId_B": "9606.ENSP00000431885",
-      "preferredName_A": "PTPN22",
-      "preferredName_B": "TYK2",
-      "score": 0.492
-    },
-    {
-      "stringId_A": "9606.ENSP00000352833",
       "stringId_B": "9606.ENSP00000418037",
       "preferredName_A": "PTPN22",
       "preferredName_B": "IRF5",
@@ -472,24 +226,10 @@
     },
     {
       "stringId_A": "9606.ENSP00000353099",
-      "stringId_B": "9606.ENSP00000356946",
+      "stringId_B": "9606.ENSP00000396688",
       "preferredName_A": "HLA-DRB1",
-      "preferredName_B": "FCGR3A",
-      "score": 0.5
-    },
-    {
-      "stringId_A": "9606.ENSP00000353099",
-      "stringId_B": "9606.ENSP00000496959",
-      "preferredName_A": "HLA-DRB1",
-      "preferredName_B": "ITGAM",
-      "score": 0.622
-    },
-    {
-      "stringId_A": "9606.ENSP00000353099",
-      "stringId_B": "9606.ENSP00000481570",
-      "preferredName_A": "HLA-DRB1",
-      "preferredName_B": "TNFAIP3",
-      "score": 0.664
+      "preferredName_B": "C4A",
+      "score": 0.761
     },
     {
       "stringId_A": "9606.ENSP00000353099",
@@ -497,41 +237,6 @@
       "preferredName_A": "HLA-DRB1",
       "preferredName_B": "IRF5",
       "score": 0.773
-    },
-    {
-      "stringId_A": "9606.ENSP00000353874",
-      "stringId_B": "9606.ENSP00000481570",
-      "preferredName_A": "TLR9",
-      "preferredName_B": "TNFAIP3",
-      "score": 0.446
-    },
-    {
-      "stringId_A": "9606.ENSP00000353874",
-      "stringId_B": "9606.ENSP00000499900",
-      "preferredName_A": "TLR9",
-      "preferredName_B": "JAK1",
-      "score": 0.466
-    },
-    {
-      "stringId_A": "9606.ENSP00000353874",
-      "stringId_B": "9606.ENSP00000431885",
-      "preferredName_A": "TLR9",
-      "preferredName_B": "TYK2",
-      "score": 0.477
-    },
-    {
-      "stringId_A": "9606.ENSP00000353874",
-      "stringId_B": "9606.ENSP00000365048",
-      "preferredName_A": "TLR9",
-      "preferredName_B": "TNFSF13B",
-      "score": 0.622
-    },
-    {
-      "stringId_A": "9606.ENSP00000353874",
-      "stringId_B": "9606.ENSP00000418037",
-      "preferredName_A": "TLR9",
-      "preferredName_B": "IRF5",
-      "score": 0.64
     },
     {
       "stringId_A": "9606.ENSP00000353874",
@@ -556,38 +261,38 @@
     },
     {
       "stringId_A": "9606.ENSP00000353874",
+      "stringId_B": "9606.ENSP00000479889",
+      "preferredName_A": "TLR9",
+      "preferredName_B": "IRAK4",
+      "score": 0.942
+    },
+    {
+      "stringId_A": "9606.ENSP00000353874",
+      "stringId_B": "9606.ENSP00000380697",
+      "preferredName_A": "TLR9",
+      "preferredName_B": "IRF7",
+      "score": 0.969
+    },
+    {
+      "stringId_A": "9606.ENSP00000353874",
       "stringId_B": "9606.ENSP00000370034",
       "preferredName_A": "TLR9",
       "preferredName_B": "TLR7",
       "score": 0.992
     },
     {
-      "stringId_A": "9606.ENSP00000356946",
-      "stringId_B": "9606.ENSP00000418037",
-      "preferredName_A": "FCGR3A",
-      "preferredName_B": "IRF5",
-      "score": 0.406
+      "stringId_A": "9606.ENSP00000353874",
+      "stringId_B": "9606.ENSP00000498321",
+      "preferredName_A": "TLR9",
+      "preferredName_B": "MYD88",
+      "score": 0.999
     },
     {
       "stringId_A": "9606.ENSP00000356946",
-      "stringId_B": "9606.ENSP00000483570",
+      "stringId_B": "9606.ENSP00000363773",
       "preferredName_A": "FCGR3A",
-      "preferredName_B": "BTK",
-      "score": 0.484
-    },
-    {
-      "stringId_A": "9606.ENSP00000356946",
-      "stringId_B": "9606.ENSP00000365048",
-      "preferredName_A": "FCGR3A",
-      "preferredName_B": "TNFSF13B",
-      "score": 0.607
-    },
-    {
-      "stringId_A": "9606.ENSP00000356946",
-      "stringId_B": "9606.ENSP00000370034",
-      "preferredName_A": "FCGR3A",
-      "preferredName_B": "TLR7",
-      "score": 0.653
+      "preferredName_B": "C1QA",
+      "score": 0.702
     },
     {
       "stringId_A": "9606.ENSP00000356946",
@@ -597,46 +302,25 @@
       "score": 0.948
     },
     {
-      "stringId_A": "9606.ENSP00000365048",
-      "stringId_B": "9606.ENSP00000431885",
-      "preferredName_A": "TNFSF13B",
-      "preferredName_B": "TYK2",
-      "score": 0.406
-    },
-    {
-      "stringId_A": "9606.ENSP00000365048",
-      "stringId_B": "9606.ENSP00000499900",
-      "preferredName_A": "TNFSF13B",
-      "preferredName_B": "JAK1",
-      "score": 0.46
-    },
-    {
-      "stringId_A": "9606.ENSP00000365048",
-      "stringId_B": "9606.ENSP00000481570",
-      "preferredName_A": "TNFSF13B",
-      "preferredName_B": "TNFAIP3",
-      "score": 0.463
-    },
-    {
-      "stringId_A": "9606.ENSP00000365048",
-      "stringId_B": "9606.ENSP00000418037",
-      "preferredName_A": "TNFSF13B",
-      "preferredName_B": "IRF5",
-      "score": 0.492
-    },
-    {
-      "stringId_A": "9606.ENSP00000365048",
-      "stringId_B": "9606.ENSP00000496959",
-      "preferredName_A": "TNFSF13B",
-      "preferredName_B": "ITGAM",
-      "score": 0.589
-    },
-    {
-      "stringId_A": "9606.ENSP00000365048",
+      "stringId_A": "9606.ENSP00000358072",
       "stringId_B": "9606.ENSP00000370034",
-      "preferredName_A": "TNFSF13B",
+      "preferredName_A": "ATG5",
       "preferredName_B": "TLR7",
-      "score": 0.692
+      "score": 0.774
+    },
+    {
+      "stringId_A": "9606.ENSP00000363773",
+      "stringId_B": "9606.ENSP00000496959",
+      "preferredName_A": "C1QA",
+      "preferredName_B": "ITGAM",
+      "score": 0.703
+    },
+    {
+      "stringId_A": "9606.ENSP00000363773",
+      "stringId_B": "9606.ENSP00000396688",
+      "preferredName_A": "C1QA",
+      "preferredName_B": "C4A",
+      "score": 0.983
     },
     {
       "stringId_A": "9606.ENSP00000365048",
@@ -644,27 +328,6 @@
       "preferredName_A": "TNFSF13B",
       "preferredName_B": "BTK",
       "score": 0.778
-    },
-    {
-      "stringId_A": "9606.ENSP00000370034",
-      "stringId_B": "9606.ENSP00000481570",
-      "preferredName_A": "TLR7",
-      "preferredName_B": "TNFAIP3",
-      "score": 0.448
-    },
-    {
-      "stringId_A": "9606.ENSP00000370034",
-      "stringId_B": "9606.ENSP00000431885",
-      "preferredName_A": "TLR7",
-      "preferredName_B": "TYK2",
-      "score": 0.545
-    },
-    {
-      "stringId_A": "9606.ENSP00000370034",
-      "stringId_B": "9606.ENSP00000499900",
-      "preferredName_A": "TLR7",
-      "preferredName_B": "JAK1",
-      "score": 0.681
     },
     {
       "stringId_A": "9606.ENSP00000370034",
@@ -688,18 +351,46 @@
       "score": 0.807
     },
     {
-      "stringId_A": "9606.ENSP00000418037",
-      "stringId_B": "9606.ENSP00000499900",
-      "preferredName_A": "IRF5",
-      "preferredName_B": "JAK1",
-      "score": 0.435
+      "stringId_A": "9606.ENSP00000370034",
+      "stringId_B": "9606.ENSP00000380697",
+      "preferredName_A": "TLR7",
+      "preferredName_B": "IRF7",
+      "score": 0.96
+    },
+    {
+      "stringId_A": "9606.ENSP00000370034",
+      "stringId_B": "9606.ENSP00000479889",
+      "preferredName_A": "TLR7",
+      "preferredName_B": "IRAK4",
+      "score": 0.963
+    },
+    {
+      "stringId_A": "9606.ENSP00000370034",
+      "stringId_B": "9606.ENSP00000498321",
+      "preferredName_A": "TLR7",
+      "preferredName_B": "MYD88",
+      "score": 0.999
+    },
+    {
+      "stringId_A": "9606.ENSP00000380697",
+      "stringId_B": "9606.ENSP00000479889",
+      "preferredName_A": "IRF7",
+      "preferredName_B": "IRAK4",
+      "score": 0.996
+    },
+    {
+      "stringId_A": "9606.ENSP00000380697",
+      "stringId_B": "9606.ENSP00000498321",
+      "preferredName_A": "IRF7",
+      "preferredName_B": "MYD88",
+      "score": 0.999
     },
     {
       "stringId_A": "9606.ENSP00000418037",
-      "stringId_B": "9606.ENSP00000496959",
+      "stringId_B": "9606.ENSP00000479889",
       "preferredName_A": "IRF5",
-      "preferredName_B": "ITGAM",
-      "score": 0.588
+      "preferredName_B": "IRAK4",
+      "score": 0.712
     },
     {
       "stringId_A": "9606.ENSP00000418037",
@@ -716,11 +407,11 @@
       "score": 0.834
     },
     {
-      "stringId_A": "9606.ENSP00000431885",
-      "stringId_B": "9606.ENSP00000481570",
-      "preferredName_A": "TYK2",
-      "preferredName_B": "TNFAIP3",
-      "score": 0.492
+      "stringId_A": "9606.ENSP00000418037",
+      "stringId_B": "9606.ENSP00000498321",
+      "preferredName_A": "IRF5",
+      "preferredName_B": "MYD88",
+      "score": 0.995
     },
     {
       "stringId_A": "9606.ENSP00000431885",
@@ -730,39 +421,39 @@
       "score": 0.998
     },
     {
-      "stringId_A": "9606.ENSP00000481570",
-      "stringId_B": "9606.ENSP00000496959",
-      "preferredName_A": "TNFAIP3",
-      "preferredName_B": "ITGAM",
-      "score": 0.417
-    },
-    {
-      "stringId_A": "9606.ENSP00000481570",
+      "stringId_A": "9606.ENSP00000479889",
       "stringId_B": "9606.ENSP00000483570",
-      "preferredName_A": "TNFAIP3",
+      "preferredName_A": "IRAK4",
       "preferredName_B": "BTK",
-      "score": 0.481
+      "score": 0.894
+    },
+    {
+      "stringId_A": "9606.ENSP00000479889",
+      "stringId_B": "9606.ENSP00000498321",
+      "preferredName_A": "IRAK4",
+      "preferredName_B": "MYD88",
+      "score": 0.999
     },
     {
       "stringId_A": "9606.ENSP00000483570",
-      "stringId_B": "9606.ENSP00000499900",
+      "stringId_B": "9606.ENSP00000498321",
       "preferredName_A": "BTK",
-      "preferredName_B": "JAK1",
-      "score": 0.457
-    },
-    {
-      "stringId_A": "9606.ENSP00000483570",
-      "stringId_B": "9606.ENSP00000496959",
-      "preferredName_A": "BTK",
-      "preferredName_B": "ITGAM",
-      "score": 0.521
+      "preferredName_B": "MYD88",
+      "score": 0.984
     },
     {
       "stringId_A": "9606.ENSP00000496959",
-      "stringId_B": "9606.ENSP00000499900",
+      "stringId_B": "9606.ENSP00000498321",
       "preferredName_A": "ITGAM",
+      "preferredName_B": "MYD88",
+      "score": 0.796
+    },
+    {
+      "stringId_A": "9606.ENSP00000498321",
+      "stringId_B": "9606.ENSP00000499900",
+      "preferredName_A": "MYD88",
       "preferredName_B": "JAK1",
-      "score": 0.415
+      "score": 0.76
     }
   ]
 }

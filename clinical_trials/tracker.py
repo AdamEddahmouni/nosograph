@@ -1,0 +1,552 @@
+"""
+Lupus Clinical Trial Tracker
+
+Queries ClinicalTrials.gov API v2 for lupus/SLE interventional trials,
+categorizes by phase, mechanism of action, and sponsor, and
+cross-references trial drugs against the Lupus Knowledge Graph.
+
+API: https://clinicaltrials.gov/api/v2
+No API key required.
+
+Usage:
+    python tracker.py                          # Full tracking
+    python tracker.py --max 100 --export-html  # 100 trials + HTML report
+"""
+
+import argparse
+import json
+import os
+import sys
+import time
+from collections import Counter
+from datetime import datetime
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
+if sys.platform == "win32":
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
+try:
+    import requests
+    REQUESTS_AVAILABLE = True
+except ImportError:
+    REQUESTS_AVAILABLE = False
+
+
+PROJECT_ROOT = Path(__file__).parent.parent
+DATA_DIR = Path(__file__).parent / "data"
+KG_DATA_DIR = PROJECT_ROOT / "knowledge_graph" / "data"
+
+# ClinicalTrials.gov API v2
+CT_API = "https://clinicaltrials.gov/api/v2"
+
+# Phase ordering for sorting
+PHASE_ORDER = {
+    "EARLY_PHASE1": 0,
+    "PHASE1": 1,
+    "PHASE2": 2,
+    "PHASE3": 3,
+    "PHASE4": 4,
+}
+
+PHASE_LABELS = {
+    "EARLY_PHASE1": "Early Phase 1",
+    "PHASE1": "Phase 1",
+    "PHASE2": "Phase 2",
+    "PHASE3": "Phase 3",
+    "PHASE4": "Phase 4",
+}
+
+# Mechanism of action keywords for categorization
+MOA_KEYWORDS = {
+    "Cell Therapy": ["car-t", "car t", "stem cell", "mesenchymal", "cellular therapy"],
+    "B Cell Targeting": ["b cell", "cd20", "cd19", "baff", "blys", "btk", "b-cell", "cd22"],
+    "T Cell / Costimulation": ["t cell", "cd40", "icos", "calcineurin", "t-cell", "cd28"],
+    "Type I IFN / JAK-STAT": ["interferon", "ifn", "jak", "tyk2", "ifnar", "stat"],
+    "Complement": ["complement", "c5", "c5a", "factor b", "factor d"],
+    "Cytokine / Chemokine": ["cytokine", "il-", "interleukin", "tnf", "chemokine", "il6", "il17"],
+    "Plasma Cell / Proteasome": ["plasma cell", "proteasome", "bcma", "bortezomib"],
+    "Immunomodulator": ["immunomodulator", "immunomodulatory", "hydroxychloroquine", "antimalarial"],
+    "Anti-inflammatory": ["anti-inflammatory", "corticosteroid", "steroid", "prednisone"],
+    "Other Targeted": [],
+}
+
+
+def search_clinical_trials(query: str = "lupus OR SLE", max_results: int = 100) -> list:
+    """Search ClinicalTrials.gov API v2 for trials matching the query.
+
+    Returns list of study dicts with protocolSection data.
+    """
+    if not REQUESTS_AVAILABLE:
+        print("❌ requests required. Install: pip install requests")
+        return []
+
+    all_studies = []
+    page_token = None
+
+    fields = (
+        "NCTId|BriefTitle|OfficialTitle|OverallStatus|Phase|"
+        "Condition|InterventionName|InterventionType|"
+        "LeadSponsorName|LeadSponsorClass|"
+        "EnrollmentCount|EnrollmentType|"
+        "StartDate|PrimaryCompletionDate|"
+        "WhyStopped|"
+        "BriefSummary|"
+        "StudyType"
+    )
+
+    print(f"\n🔍 Searching ClinicalTrials.gov for: {query}")
+
+    while len(all_studies) < max_results:
+        params = {
+            "query.cond": query,
+            "query.term": "AREA[StudyType]INTERVENTIONAL",
+            "pageSize": min(100, max_results - len(all_studies)),
+            "fields": fields,
+            "format": "json",
+        }
+
+        if page_token:
+            params["pageToken"] = page_token
+
+        try:
+            resp = requests.get(f"{CT_API}/studies", params=params, timeout=30)
+            resp.raise_for_status()
+            data = resp.json()
+        except Exception as e:
+            print(f"   ⚠️  API error: {e}")
+            break
+
+        studies = data.get("studies", [])
+        all_studies.extend(studies)
+
+        page_token = data.get("nextPageToken")
+        if not page_token or len(studies) == 0:
+            break
+
+        time.sleep(0.3)
+
+    print(f"   Found {len(all_studies)} interventional trials")
+    return all_studies
+
+
+def parse_trial(study: dict) -> dict:
+    """Parse a ClinicalTrials.gov study into a structured format."""
+    proto = study.get("protocolSection", {})
+
+    # Identification
+    ident = proto.get("identificationModule", {})
+    nct_id = ident.get("nctId", study.get("nctId", ""))
+
+    # Status
+    status_mod = proto.get("statusModule", {})
+    status = status_mod.get("overallStatus", "UNKNOWN")
+
+    # Brief info
+    brief = proto.get("descriptionModule", {})
+    title = brief.get("briefTitle", "Unknown")
+    summary = brief.get("briefSummary", "")
+
+    # Design
+    design = proto.get("designModule", {})
+    phases = design.get("phases", [])
+    enrollment = design.get("enrollmentInfo", {})
+    enrollment_count = enrollment.get("count", 0) if enrollment else 0
+
+    # Interventions
+    interventions_mod = proto.get("armsInterventionsModule", {})
+    interventions = interventions_mod.get("interventions", [])
+    intervention_names = []
+    intervention_types = []
+    for iv in interventions:
+        name = iv.get("name", "")
+        itype = iv.get("type", "")
+        if name:
+            intervention_names.append(name)
+        if itype:
+            intervention_types.append(itype)
+
+    # Sponsor
+    sponsor_mod = proto.get("sponsorCollaboratorsModule", {})
+    lead_sponsor = sponsor_mod.get("leadSponsor", {})
+    sponsor_name = lead_sponsor.get("name", "Unknown")
+    sponsor_class = lead_sponsor.get("class", "UNKNOWN")
+
+    # Dates
+    start_date = proto.get("startDateStruct", {}).get("date", "") if "startDateStruct" in proto else ""
+    completion_date = ""
+    if "primaryCompletionDateStruct" in proto:
+        completion_date = proto["primaryCompletionDateStruct"].get("date", "")
+
+    # Why stopped (for terminated/withdrawn trials)
+    why_stopped = status_mod.get("whyStopped", "")
+
+    # Conditions
+    conditions_mod = proto.get("conditionsModule", {})
+    conditions = conditions_mod.get("conditions", [])
+
+    return {
+        "nct_id": nct_id,
+        "title": title,
+        "summary": summary[:500] if summary else "",
+        "status": status,
+        "phases": phases,
+        "primary_phase": _primary_phase(phases),
+        "phase_label": PHASE_LABELS.get(_primary_phase(phases), "Unknown"),
+        "interventions": intervention_names,
+        "intervention_types": intervention_types,
+        "sponsor_name": sponsor_name,
+        "sponsor_class": sponsor_class,
+        "enrollment": enrollment_count,
+        "start_date": start_date,
+        "completion_date": completion_date,
+        "why_stopped": why_stopped,
+        "conditions": conditions,
+    }
+
+
+def _primary_phase(phases: list) -> str:
+    """Get the highest/latest phase from a list of phases."""
+    if not phases:
+        return ""
+    best = "PHASE1"
+    for p in phases:
+        if PHASE_ORDER.get(p, -1) > PHASE_ORDER.get(best, -1):
+            best = p
+    return best
+
+
+def categorize_moa(trial: dict) -> str:
+    """Categorize a trial's mechanism of action from its interventions and title."""
+    text = (trial.get("title", "") + " " +
+            " ".join(trial.get("interventions", []))).lower()
+
+    for category, keywords in MOA_KEYWORDS.items():
+        if category == "Other Targeted":
+            continue
+        for kw in keywords:
+            if kw in text:
+                return category
+
+    # Check if any keyword matches in summary
+    summary = trial.get("summary", "").lower()
+    for category, keywords in MOA_KEYWORDS.items():
+        if category == "Other Targeted":
+            continue
+        for kw in keywords:
+            if kw in summary:
+                return category
+
+    return "Other Targeted"
+
+
+def load_kg_entities() -> dict:
+    """Load all KG genes and drugs for cross-referencing."""
+    genes = {}
+    try:
+        genes_data = json.loads((KG_DATA_DIR / "genes.json").read_text(encoding="utf-8"))
+        for g in genes_data["genes"]:
+            genes[g["id"]] = g
+    except (FileNotFoundError, json.JSONDecodeError):
+        pass
+
+    drugs = {}
+    try:
+        drugs_data = json.loads((KG_DATA_DIR / "drugs.json").read_text(encoding="utf-8"))
+        for d in drugs_data["drugs"]:
+            drugs[d["id"]] = d
+    except (FileNotFoundError, json.JSONDecodeError):
+        pass
+
+    return {"genes": genes, "drugs": drugs}
+
+
+def cross_reference_trials(trials: list, kg_entities: dict) -> list:
+    """Cross-reference trial interventions against KG genes and drugs."""
+    results = []
+
+    for trial in trials:
+        matched_genes = []
+        matched_drugs = []
+
+        text = (trial.get("title", "") + " " +
+                " ".join(trial.get("interventions", [])) + " " +
+                trial.get("summary", "")).lower()
+
+        # Match against KG genes
+        for gene_id, gene in kg_entities["genes"].items():
+            gene_name = gene["name"].lower()
+            # Match by gene ID (e.g. "BTK", "JAK1") or partial name
+            if gene_id.lower() in text or any(
+                part.lower() in text for part in gene_name.split() if len(part) > 4
+            ):
+                if gene_id not in [g["gene_id"] for g in matched_genes]:
+                    matched_genes.append({
+                        "gene_id": gene_id,
+                        "gene_name": gene["name"],
+                        "category": gene.get("category", ""),
+                    })
+
+        # Match against KG drugs
+        for drug_id, drug in kg_entities["drugs"].items():
+            drug_name = drug["name"].lower().split("(")[0].strip()
+            if drug_name in text or drug_id in text:
+                if drug_id not in [d["drug_id"] for d in matched_drugs]:
+                    matched_drugs.append({
+                        "drug_id": drug_id,
+                        "drug_name": drug["name"],
+                        "target": drug.get("target", ""),
+                        "category": drug.get("category", ""),
+                    })
+
+        trial["kg_matches"] = {
+            "genes": matched_genes,
+            "drugs": matched_drugs,
+            "gene_count": len(matched_genes),
+            "drug_count": len(matched_drugs),
+            "has_match": len(matched_genes) > 0 or len(matched_drugs) > 0,
+        }
+        results.append(trial)
+
+    return results
+
+
+def track_trials(
+    query: str = "lupus OR SLE",
+    max_results: int = 100,
+    use_cache: bool = True,
+) -> dict:
+    """Run the full clinical trial tracking pipeline.
+
+    Returns:
+        dict with trials, stats, and kg_crossref data.
+    """
+    # Load KG
+    print("🔄 Loading knowledge graph entities...")
+    kg_entities = load_kg_entities()
+    print(f"   Loaded {len(kg_entities['genes'])} genes, {len(kg_entities['drugs'])} drugs")
+
+    # Check cache
+    cache_path = DATA_DIR / "ct_cache.json"
+    os.makedirs(DATA_DIR, exist_ok=True)
+
+    if use_cache and cache_path.exists():
+        try:
+            cached = json.loads(cache_path.read_text(encoding="utf-8"))
+            trials = cached.get("trials", [])
+            if len(trials) >= max_results:
+                print(f"📦 Loading {len(trials)} trials from cache...")
+                kg_entities_simple = {"genes": kg_entities["genes"], "drugs": kg_entities["drugs"]}
+                if "kg_crossref" in cached and cached.get("kg_crossref"):
+                    trials = [dict(t) for t in trials]
+                    for i, t in enumerate(trials):
+                        if "kg_matches" not in t:
+                            t["kg_matches"] = {"genes": [], "drugs": [], "gene_count": 0, "drug_count": 0, "has_match": False}
+                    return {
+                        "trials": trials,
+                        "stats": _compute_stats(trials),
+                        "kg_crossref": cached.get("kg_crossref", {}),
+                    }
+        except (json.JSONDecodeError, KeyError) as e:
+            print(f"   ⚠️  Cache error ({e}), re-fetching...")
+
+    # Search trials
+    raw_trials = search_clinical_trials(query, max_results)
+
+    # Parse trials
+    trials = [parse_trial(t) for t in raw_trials]
+
+    # Categorize MoA
+    for trial in trials:
+        trial["moa_category"] = categorize_moa(trial)
+
+    # Cross-reference with KG
+    print("🔄 Cross-referencing against knowledge graph...")
+    trials = cross_reference_trials(trials, kg_entities)
+
+    # Compute stats
+    stats = _compute_stats(trials)
+
+    # Build crossref summary
+    kg_crossref = _build_crossref_summary(trials)
+
+    # Cache
+    cache_data = {
+        "trials": trials,
+        "stats": stats,
+        "kg_crossref": kg_crossref,
+        "timestamp": datetime.now().isoformat(),
+    }
+    cache_path.write_text(
+        json.dumps(cache_data, indent=2, ensure_ascii=False, default=str),
+        encoding="utf-8",
+    )
+    print(f"💾 Cached {len(trials)} trials to {cache_path}")
+
+    return {"trials": trials, "stats": stats, "kg_crossref": kg_crossref}
+
+
+def _compute_stats(trials: list) -> dict:
+    """Compute summary statistics across all trials."""
+    statuses = Counter(t["status"] for t in trials)
+    phases = Counter()
+    moas = Counter()
+    sponsors = Counter()
+    matched_count = 0
+    total_enrollment = 0
+    enrollment_count = 0
+
+    for t in trials:
+        for p in t.get("phases", []):
+            phases[PHASE_LABELS.get(p, p)] += 1
+        moas[t.get("moa_category", "Other")] += 1
+        sponsors[t.get("sponsor_name", "Unknown")] += 1
+        if t.get("kg_matches", {}).get("has_match"):
+            matched_count += 1
+        if t.get("enrollment"):
+            total_enrollment += t["enrollment"]
+            enrollment_count += 1
+
+    return {
+        "total_trials": len(trials),
+        "statuses": dict(statuses.most_common()),
+        "phases": dict(phases.most_common()),
+        "moas": dict(moas.most_common()),
+        "top_sponsors": dict(sponsors.most_common(10)),
+        "kg_matched_trials": matched_count,
+        "total_enrollment": total_enrollment,
+        "avg_enrollment": round(total_enrollment / enrollment_count) if enrollment_count else 0,
+    }
+
+
+def _build_crossref_summary(trials: list) -> dict:
+    """Build a summary of KG cross-references across all trials."""
+    gene_hits = Counter()
+    drug_hits = Counter()
+    trials_with_matches = []
+
+    for t in trials:
+        kg = t.get("kg_matches", {})
+        if kg.get("has_match"):
+            trials_with_matches.append({
+                "nct_id": t["nct_id"],
+                "title": t["title"][:100],
+                "phase": t["phase_label"],
+                "status": t["status"],
+                "gene_count": kg["gene_count"],
+                "drug_count": kg["drug_count"],
+                "genes": [g["gene_id"] for g in kg.get("genes", [])],
+                "drugs": [d["drug_id"] for d in kg.get("drugs", [])],
+                "moa": t.get("moa_category", ""),
+            })
+        for g in kg.get("genes", []):
+            gene_hits[g["gene_id"]] += 1
+        for d in kg.get("drugs", []):
+            drug_hits[d["drug_id"]] += 1
+
+    return {
+        "gene_hits": dict(gene_hits.most_common(20)),
+        "drug_hits": dict(drug_hits.most_common(20)),
+        "trials_with_matches": trials_with_matches,
+        "total_matched": len(trials_with_matches),
+    }
+
+
+def print_summary(stats: dict, kg_crossref: dict):
+    """Print a summary of clinical trial tracking results."""
+    print("\n" + "=" * 70)
+    print("📋 CLINICAL TRIAL TRACKER RESULTS")
+    print("=" * 70)
+
+    print(f"\n  Total trials analyzed:      {stats['total_trials']}")
+    print(f"  KG-matched trials:          {stats['kg_matched_trials']}")
+    print(f"  Total enrollment:           {stats['total_enrollment']:,}")
+    print(f"  Avg enrollment:             {stats['avg_enrollment']:,}")
+
+    # Phases
+    print("\n  📊 Phase distribution:")
+    for phase, count in sorted(stats["phases"].items(),
+                                key=lambda x: PHASE_ORDER.get(
+                                    {v: k for k, v in PHASE_LABELS.items()}.get(x[0], ""), -1
+                                )):
+        bar_width = int(count / max(stats["phases"].values()) * 30) if stats["phases"] else 0
+        print(f"    {phase:<16} {'█' * bar_width} {count}")
+
+    # MoA
+    moas = stats.get("moas", {})
+    if moas:
+        print("\n  🔬 Mechanism of action categories:")
+        for moa, count in sorted(moas.items(), key=lambda x: x[1], reverse=True)[:8]:
+            print(f"    • {moa:<30} {count}")
+
+    # Top sponsors
+    sponsors = stats.get("top_sponsors", {})
+    if sponsors:
+        print("\n  🏢 Top sponsors:")
+        for sponsor, count in sorted(sponsors.items(), key=lambda x: x[1], reverse=True)[:5]:
+            print(f"    • {sponsor[:55]:<57} {count}")
+
+    # KG crossref
+    gene_hits = kg_crossref.get("gene_hits", {})
+    if gene_hits:
+        print("\n  🧬 Top genes in clinical trials:")
+        for gene_id, count in list(gene_hits.items())[:8]:
+            print(f"    • {gene_id:<30} {count} trial{'s' if count > 1 else ''}")
+
+    drug_hits = kg_crossref.get("drug_hits", {})
+    if drug_hits:
+        print("\n  💊 Top drugs in clinical trials:")
+        for drug_id, count in list(drug_hits.items())[:8]:
+            print(f"    • {drug_id:<30} {count} trial{'s' if count > 1 else ''}")
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="Lupus Clinical Trial Tracker — ClinicalTrials.gov analysis"
+    )
+    parser.add_argument(
+        "--max", type=int, default=100,
+        help="Max trials to fetch (default: 100)",
+    )
+    parser.add_argument(
+        "--query", type=str, default="lupus OR SLE",
+        help="Query for ClinicalTrials.gov (default: 'lupus OR SLE')",
+    )
+    parser.add_argument(
+        "--no-cache", action="store_true",
+        help="Skip cache, re-fetch from ClinicalTrials.gov",
+    )
+    parser.add_argument(
+        "--export-html", action="store_true",
+        help="Generate HTML report",
+    )
+    args = parser.parse_args()
+
+    print("🔄 Initializing Clinical Trial Tracker...")
+    results = track_trials(
+        query=args.query,
+        max_results=args.max,
+        use_cache=not args.no_cache,
+    )
+
+    print_summary(results["stats"], results["kg_crossref"])
+
+    # Save results
+    output_path = DATA_DIR / "ct_results.json"
+    output_path.write_text(
+        json.dumps(results, indent=2, ensure_ascii=False, default=str),
+        encoding="utf-8",
+    )
+    print(f"\n💾 Results saved to {output_path}")
+
+    if args.export_html:
+        from clinical_trials.report import generate_ct_report
+        report_path = generate_ct_report(results)
+        print(f"✅ HTML report generated: {report_path}")
+
+    return results
+
+
+if __name__ == "__main__":
+    results = main()

@@ -13,13 +13,13 @@ Usage:
     python gwas.py --max-studies 50     # Max studies to fetch
 """
 
-import json
-import sys
-import os
-import time
 import argparse
-from pathlib import Path
+import json
+import os
+import sys
+import time
 from collections import defaultdict
+from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
@@ -461,7 +461,7 @@ def analyze(gwas_results: dict, crossref: dict, kg_genes: dict):
         f"{len(gwas_results['gene_associations'])}"
     )
 
-    print(f"\n  📊 Cross-reference with Knowledge Graph:")
+    print("\n  📊 Cross-reference with Knowledge Graph:")
     print(f"     ✅ Validated (GWAS + KG): {crossref['n_validated']}")
     print(f"     🆕 Novel (GWAS only):    {crossref['n_novel']}")
     print(f"     ❓ Missing (KG only):    {crossref['n_missing']}")
@@ -469,7 +469,7 @@ def analyze(gwas_results: dict, crossref: dict, kg_genes: dict):
     # Validated genes
     validated = crossref.get("validated", {})
     if validated:
-        print(f"\n  🎯 KG genes validated by GWAS:")
+        print("\n  🎯 KG genes validated by GWAS:")
         for gene_name, info in sorted(
             validated.items(),
             key=lambda x: x[1]["n_gwas_studies"],
@@ -484,7 +484,7 @@ def analyze(gwas_results: dict, crossref: dict, kg_genes: dict):
     # Novel genes (top 10)
     novel = crossref.get("novel", {})
     if novel:
-        print(f"\n  🆕 Top GWAS genes NOT in knowledge graph:")
+        print("\n  🆕 Top GWAS genes NOT in knowledge graph:")
         for gene_name, info in sorted(
             novel.items(),
             key=lambda x: x[1]["n_studies"],
@@ -500,7 +500,7 @@ def analyze(gwas_results: dict, crossref: dict, kg_genes: dict):
     missing = crossref.get("missing", {})
     if missing:
         print(
-            f"\n  ❓ KG genes with NO GWAS hit (may need more investigation):"
+            "\n  ❓ KG genes with NO GWAS hit (may need more investigation):"
         )
         for gene_id, info in sorted(missing.items()):
             print(
