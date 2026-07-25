@@ -88,6 +88,12 @@ API_TAGS = [
          "Extracts evidence levels, model systems, key findings, drug mentions, "
          "sample sizes, and confidence scores using GPT-4o-mini or compatible models."
      )},
+    {"name": "Monitor",
+     "description": (
+         "Continuous evidence monitoring — take timestamped snapshots, compare "
+         "over time, and receive alerts for new publications, clinical trial "
+         "updates, and trackable changes across all platform entities."
+     )},
     {"name": "Jobs",
      "description": (
          "Submit and track async analysis jobs with real-time WebSocket "

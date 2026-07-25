@@ -64,7 +64,7 @@
                 </div>
                 <div class="stat-card">
                     <div class="stat-icon">🧪</div>
-                    <div class="stat-value" style="color:#22d3ee;">17</div>
+                    <div class="stat-value" style="color:#22d3ee;">18</div>
                     <div class="stat-label">Analysis Modules</div>
                 </div>
                 <div class="stat-card">
@@ -166,6 +166,31 @@
                         <button class="btn btn-secondary" onclick="runModule('ppi')">🔗 PPI</button>
                     </div>
                     <div class="module-result" id="result-bioinformatics"></div>
+                </div>
+
+                <!-- Evidence Monitor -->
+                <div class="module-card" style="--card-accent:#06b6d4;">
+                    <div class="module-card-header">
+                        <div class="module-icon" style="background:rgba(6,182,212,0.12);">📡</div>
+                        <div>
+                            <h3>Evidence Monitor</h3>
+                            <span class="module-phase"><span class="status-dot complete"></span>Phase 19</span>
+                        </div>
+                    </div>
+                    <p class="desc">
+                        Continuous monitoring for new publications &amp; trial updates. Takes timestamped snapshots,
+                        diffs against previous runs, and generates severity-graded alerts for changes.
+                    </p>
+                    <div class="tags">
+                        <span class="tag green">Snapshot Diff</span>
+                        <span class="tag yellow">Alert System</span>
+                        <span class="tag blue">Continuous</span>
+                    </div>
+                    <div class="actions">
+                        <button class="btn btn-primary" onclick="runModule('monitor')">📡 Check Alerts</button>
+                        <a href="/evidence_monitor/report.html" class="btn btn-secondary">📊 Report</a>
+                    </div>
+                    <div class="module-result" id="result-monitor"></div>
                 </div>
 
                 <!-- LLM Extractor -->

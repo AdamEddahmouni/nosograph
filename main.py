@@ -46,6 +46,7 @@ SCRIPTS = {
     "semantic": "semantic_search/engine.py",
     "evidence": "evidence_gatherer/gatherer.py",
     "extractor": "llm_extractor/extractor.py",
+    "monitor": "evidence_monitor/monitor.py",
 }
 
 
@@ -480,6 +481,24 @@ def cmd_extractor(args):
     return run_module(SCRIPTS["extractor"], extra)
 
 
+def cmd_monitor(args):
+    """Run continuous evidence monitoring."""
+    extra = []
+    if args.snapshot:
+        extra.append("--snapshot")
+    if args.diff:
+        extra.append("--diff")
+    if args.list_snapshots:
+        extra.append("--list")
+    if args.sources:
+        extra.extend(["--sources", args.sources])
+    if args.max:
+        extra.extend(["--max", str(args.max)])
+    if args.export_html:
+        extra.append("--export-html")
+    return run_module(SCRIPTS["monitor"], extra)
+
+
 def cmd_test(args):
     """Run the test suite."""
     cmd = [sys.executable, "-m", "pytest", "tests/", "-v", "--tb=short"]
@@ -816,6 +835,35 @@ Examples:
         help="Generate HTML report",
     )
 
+    # ── monitor ───────────────────────────────────────────────────
+    monitor_parser = subparsers.add_parser(
+        "monitor", help="Continuously monitor evidence for new publications & trials",
+    )
+    monitor_parser.add_argument(
+        "--snapshot", action="store_true",
+        help="Take a new evidence snapshot",
+    )
+    monitor_parser.add_argument(
+        "--diff", action="store_true",
+        help="Compare latest 2 snapshots",
+    )
+    monitor_parser.add_argument(
+        "--list", dest="list_snapshots", action="store_true",
+        help="List available snapshots",
+    )
+    monitor_parser.add_argument(
+        "--sources", type=str, default="pubmed,preprints,clinical_trials",
+        help="Comma-separated sources",
+    )
+    monitor_parser.add_argument(
+        "--max", type=int, default=10,
+        help="Max results per query (default: 10)",
+    )
+    monitor_parser.add_argument(
+        "--export-html", action="store_true",
+        help="Generate HTML diff report",
+    )
+
     # ── screening ──────────────────────────────────────────────────
     screen_parser = subparsers.add_parser(
         "screening", help="Run virtual drug screening against lupus targets",
@@ -862,6 +910,7 @@ Examples:
         "semantic": cmd_semantic,
         "evidence": cmd_evidence,
         "extractor": cmd_extractor,
+        "monitor": cmd_monitor,
         "test": cmd_test,
     }
 

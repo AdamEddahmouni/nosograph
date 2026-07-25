@@ -76,6 +76,10 @@ async function runModule(module) {
                 data = await apiFetch('/api/llm/extract?q=lupus+treatment+drug+repurposing&max_articles=10&sources=pubmed,preprints');
                 renderExtractorResult(resultEl, data);
                 break;
+            case 'monitor':
+                data = await apiFetch('/api/monitor/diff');
+                renderMonitorResult(resultEl, data);
+                break;
             case 'repurpose':
                 data = await apiFetch('/api/repurpose/candidates?top_n=10');
                 renderRepurposeResult(resultEl, data);
@@ -470,6 +474,21 @@ function renderExtractorResult(el, data) {
         ['LLM Model', data.model],
         ['Avg Confidence', (stats.avg_confidence || 0) + '%'],
         ['Drugs Found', stats.n_unique_drugs || 0],
+    ]);
+}
+
+function renderMonitorResult(el, data) {
+    const alerts = data.alerts || [];
+    const high = alerts.filter(a => a.severity === 'high').length;
+    const med = alerts.filter(a => a.severity === 'medium').length;
+    const low = alerts.filter(a => a.severity === 'low').length;
+    el.className = 'module-result visible success';
+    el.innerHTML = renderModuleResult([
+        ['Total Changes', data.total_changes],
+        ['🔴 High Alerts', high],
+        ['🟡 Medium Alerts', med],
+        ['🟢 Low Alerts', low],
+        ['Hours Elapsed', (data.hours_elapsed || 0).toFixed(1) + 'h'],
     ]);
 }
 
