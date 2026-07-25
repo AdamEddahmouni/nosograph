@@ -24,11 +24,13 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
+from knowledge_graph.config import load_drugs as config_load_drugs
+
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 DATA_DIR = Path(__file__).parent / "data"
-KG_DATA_DIR = Path(__file__).parent.parent / "knowledge_graph" / "data"
+
 
 
 def load_json(path: Path) -> dict:
@@ -38,7 +40,7 @@ def load_json(path: Path) -> dict:
 
 def load_drugs() -> dict:
     """Load drug data indexed by drug ID."""
-    data = load_json(KG_DATA_DIR / "drugs.json")
+    data = config_load_drugs()
     return {d["id"]: d for d in data["drugs"]}
 
 

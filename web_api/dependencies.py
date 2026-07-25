@@ -4,7 +4,7 @@ import json
 from functools import lru_cache
 from pathlib import Path
 
-from web_api.config import KG_DATA_DIR
+from knowledge_graph.config import load_genes, load_drugs, load_pathways
 
 
 @lru_cache(maxsize=1)
@@ -18,21 +18,21 @@ def get_knowledge_graph():
 @lru_cache(maxsize=1)
 def get_kg_genes() -> dict:
     """Load gene data indexed by gene ID."""
-    data = json.loads((KG_DATA_DIR / "genes.json").read_text(encoding="utf-8"))
+    data = load_genes()
     return {g["id"]: g for g in data["genes"]}
 
 
 @lru_cache(maxsize=1)
 def get_kg_drugs() -> dict:
     """Load drug data indexed by drug ID."""
-    data = json.loads((KG_DATA_DIR / "drugs.json").read_text(encoding="utf-8"))
+    data = load_drugs()
     return {d["id"]: d for d in data["drugs"]}
 
 
 @lru_cache(maxsize=1)
 def get_kg_pathways() -> dict:
     """Load pathway data indexed by pathway ID."""
-    data = json.loads((KG_DATA_DIR / "pathways.json").read_text(encoding="utf-8"))
+    data = load_pathways()
     return {p["id"]: p for p in data["pathways"]}
 
 

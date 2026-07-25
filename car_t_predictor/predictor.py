@@ -29,7 +29,8 @@ if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 DATA_DIR = Path(__file__).parent / "data"
-KG_DATA_DIR = Path(__file__).parent.parent / "knowledge_graph" / "data"
+
+from knowledge_graph.config import load_genes as config_load_genes
 
 
 def load_json(path: Path) -> dict:
@@ -39,7 +40,7 @@ def load_json(path: Path) -> dict:
 
 def load_genes() -> dict:
     """Load all genes indexed by gene ID."""
-    data = load_json(KG_DATA_DIR / "genes.json")
+    data = config_load_genes()
     return {g["id"]: g for g in data["genes"]}
 
 

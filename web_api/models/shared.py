@@ -29,7 +29,7 @@ class LiteratureResponse(BaseModel):
     queries_run: int
     articles: list[dict[str, Any]]
     gene_coverage: list[LiteratureCrossReference]
-    candidate_support: list[dict[str, Any]]
+    candidate_support: dict[str, Any] = {}
 
 
 class LiteratureRequest(BaseModel):

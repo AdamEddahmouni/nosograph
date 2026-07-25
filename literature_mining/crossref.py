@@ -14,8 +14,9 @@ import json
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).parent.parent
-KG_DATA_DIR = PROJECT_ROOT / "knowledge_graph" / "data"
 DR_DATA_DIR = PROJECT_ROOT / "drug_repurposing" / "data"
+
+from knowledge_graph.config import load_genes, load_drugs, load_pathways
 
 # ── Optional spaCy NER ──────────────────────────────────────────────────
 _biomedical_ner = None
@@ -38,7 +39,7 @@ def load_kg_entities():
     }
 
     # Load genes
-    genes_data = json.loads((KG_DATA_DIR / "genes.json").read_text(encoding="utf-8"))
+    genes_data = load_genes()
     for g in genes_data["genes"]:
         entities["genes"][g["id"]] = {
             "name": g["name"],
@@ -48,7 +49,7 @@ def load_kg_entities():
         }
 
     # Load drugs
-    drugs_data = json.loads((KG_DATA_DIR / "drugs.json").read_text(encoding="utf-8"))
+    drugs_data = load_drugs()
     for d in drugs_data["drugs"]:
         entities["drugs"][d["id"]] = {
             "name": d["name"],
@@ -59,9 +60,7 @@ def load_kg_entities():
         }
 
     # Load pathways
-    pathways_data = json.loads(
-        (KG_DATA_DIR / "pathways.json").read_text(encoding="utf-8")
-    )
+    pathways_data = load_pathways()
     for p in pathways_data["pathways"]:
         entities["pathways"][p["id"]] = {
             "name": p["name"],

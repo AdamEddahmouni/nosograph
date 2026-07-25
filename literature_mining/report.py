@@ -23,6 +23,57 @@ def generate_literature_report(results: dict, entities: dict, candidates: list) 
     novel_entities = results.get("novel_entities", {})
     spacy_status = stats.get("spacy_ner", "not available")
     novel_count = stats.get("novel_entities_found", 0)
+    extraction_stats = results.get("extraction_stats")
+
+    # ── Content extraction stat card ──────────────────────────────────
+    extraction_stat_card = ""
+    extraction_section = ""
+    if extraction_stats:
+        token_saved = extraction_stats.get("total_tokens", 0) - extraction_stats.get("kept_tokens", 0)
+        token_pct = round(token_saved / max(extraction_stats.get("total_tokens", 1), 1) * 100)
+        sent_kept = extraction_stats.get("kept_sentences", 0)
+        sent_total = extraction_stats.get("total_sentences", 0)
+        sent_pct = round(sent_kept / max(sent_total, 1) * 100)
+
+        extraction_stat_card = f"""
+            <div class="stat-card">
+                <div class="stat-value" style="color:#f97316">{token_pct}%</div>
+                <div class="stat-label">Tokens Filtered</div>
+            </div>"""
+
+        extraction_section = f"""
+        <h2 class="section-title">✂️ AI Content Extraction</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value" style="color:#818cf8">{extraction_stats.get("abstracts_processed", 0)}</div>
+                <div class="stat-label">Abstracts Filtered</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" style="color:#4ade80">{sent_total}</div>
+                <div class="stat-label">Total Sentences</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" style="color:#c084fc">{sent_kept} ({sent_pct}%)</div>
+                <div class="stat-label">Relevant Sentences Kept</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" style="color:#fbbf24">{extraction_stats.get("total_tokens", 0):,}</div>
+                <div class="stat-label">Total Tokens</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" style="color:#f97316">{token_saved:,}</div>
+                <div class="stat-label">Tokens Filtered Out</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" style="color:#f472b6">{extraction_stats.get("fully_filtered", 0)}</div>
+                <div class="stat-label">Fallbacks (no matches)</div>
+            </div>
+        </div>
+        <p class="muted" style="text-align:center;margin:0 0 20px;">
+            Content extraction filters abstracts to only sentences containing known KG entities
+            (genes, drugs, pathways). This reduces NER processing tokens by ~{token_pct}% while
+            preserving all literature evidence relevant to drug repurposing.
+        </p>"""
 
     # Build gene name lookup
     gene_names = {gid: info.get("name", gid) for gid, info in entities["genes"].items()}
@@ -311,8 +362,10 @@ def generate_literature_report(results: dict, entities: dict, candidates: list) 
                 <div class="stat-value" style="color:#34d399">{novel_count}</div>
                 <div class="stat-label">Novel Entities (spaCy)</div>
             </div>
+{extraction_stat_card}
         </div>
 
+{extraction_section}
         <h2 class="section-title">📋 Candidates with Literature Support</h2>
         <div class="table-container">
             <table>

@@ -41,8 +41,9 @@ if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 PROJECT_ROOT = Path(__file__).parent.parent
-KG_DATA_DIR = PROJECT_ROOT / "knowledge_graph" / "data"
 DATA_DIR = Path(__file__).parent / "data"
+
+from knowledge_graph.config import load_genes as config_load_genes, load_drugs as config_load_drugs
 
 # ── Optional RDKit / AutoDock Vina detection ────────────────────────────
 
@@ -175,13 +176,13 @@ _DRUG_PROPERTIES = {
 
 def load_kg_genes() -> dict:
     """Load gene data indexed by gene ID."""
-    data = json.loads((KG_DATA_DIR / "genes.json").read_text(encoding="utf-8"))
+    data = config_load_genes()
     return {g["id"]: g for g in data["genes"]}
 
 
 def load_kg_drugs() -> dict:
     """Load drug data indexed by drug ID."""
-    data = json.loads((KG_DATA_DIR / "drugs.json").read_text(encoding="utf-8"))
+    data = config_load_drugs()
     return {d["id"]: d for d in data["drugs"]}
 
 

@@ -32,8 +32,11 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
+from knowledge_graph.config import load_genes as config_load_genes
+from knowledge_graph.config import load_drugs as config_load_drugs
+from knowledge_graph.config import load_pathways as config_load_pathways
+
 DATA_DIR = Path(__file__).parent / "data"
-KG_DATA_DIR = Path(__file__).parent.parent / "knowledge_graph" / "data"
 
 
 def load_json(path: Path) -> dict:
@@ -41,27 +44,27 @@ def load_json(path: Path) -> dict:
         return json.load(f)
 
 
-def load_knowledge_graph():
+def load_knowledge_graph(disease_id: str = "sle"):
     """Load the knowledge graph using the existing build_graph module."""
     from knowledge_graph.build_graph import build_graph
-    return build_graph()
+    return build_graph(disease_id)
 
 
-def load_genes():
+def load_genes(disease_id: str = "sle"):
     """Load gene data indexed by gene ID."""
-    data = load_json(KG_DATA_DIR / "genes.json")
+    data = config_load_genes(disease_id)
     return {g["id"]: g for g in data["genes"]}
 
 
-def load_drugs():
+def load_drugs(disease_id: str = "sle"):
     """Load drug data indexed by drug ID."""
-    data = load_json(KG_DATA_DIR / "drugs.json")
+    data = config_load_drugs(disease_id)
     return {d["id"]: d for d in data["drugs"]}
 
 
-def load_pathways():
+def load_pathways(disease_id: str = "sle"):
     """Load pathway data indexed by pathway ID."""
-    data = load_json(KG_DATA_DIR / "pathways.json")
+    data = config_load_pathways(disease_id)
     return {p["id"]: p for p in data["pathways"]}
 
 
@@ -347,24 +350,26 @@ def print_gene_analysis(scored_candidates: list, genes: dict, gene_id: str):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Lupus Drug Repurposing Engine — Multi-modal scoring for untargeted genes"
+        description="Drug Repurposing Engine — Multi-modal scoring for untargeted genes"
     )
+    parser.add_argument("--disease", type=str, default="sle",
+                        help="Disease ID (default: sle)")
     parser.add_argument("--top", type=int, default=15, help="Number of top candidates to display")
     parser.add_argument("--gene", type=str, help="Focus analysis on a specific gene ID")
     parser.add_argument("--export-html", action="store_true", help="Export HTML report")
     args = parser.parse_args()
 
-    print("🔄 Loading knowledge graph...")
-    G = load_knowledge_graph()
+    print(f"🔄 Loading {args.disease.upper()} knowledge graph...")
+    G = load_knowledge_graph(args.disease)
     print(f"   Graph loaded: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
 
     print("🔄 Loading gene and candidate data...")
-    genes = load_genes()
+    genes = load_genes(args.disease)
     candidates_data = load_json(DATA_DIR / "candidates.json")
     candidates = candidates_data["repurposing_candidates"]
     print(f"   Loaded {len(genes)} genes, {len(candidates)} repurposing candidates")
 
-    print("🔄 Identifying untargeted lupus genes...")
+    print(f"🔄 Identifying untargeted {args.disease.upper()} genes...")
     untargeted = identify_untargeted_genes(G)
     untargeted_ids = {g["id"] for g in untargeted}
     print(f"   Found {len(untargeted)} untargeted lupus genes:")

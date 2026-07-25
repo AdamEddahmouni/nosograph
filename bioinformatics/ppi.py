@@ -24,6 +24,8 @@ import networkx as nx
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
+from knowledge_graph.config import load_genes
+
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
@@ -36,7 +38,6 @@ except ImportError:
     print("⚠️  requests not installed. Install with: pip install requests")
 
 DATA_DIR = Path(__file__).parent / "data"
-KG_DATA_DIR = Path(__file__).parent.parent / "knowledge_graph" / "data"
 DR_DATA_DIR = Path(__file__).parent.parent / "drug_repurposing" / "data"
 
 STRING_API = "https://string-db.org/api"
@@ -46,7 +47,7 @@ DEFAULT_CONFIDENCE = 0.4  # Medium confidence
 
 def load_genes() -> dict:
     """Load lupus genes from the knowledge graph."""
-    data = json.loads((KG_DATA_DIR / "genes.json").read_text(encoding="utf-8"))
+    data = load_genes()
     return {g["id"]: g for g in data["genes"]}
 
 

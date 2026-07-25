@@ -40,6 +40,7 @@ from literature_mining.crossref import (
     load_kg_entities,
     load_repurposing_candidates,
 )
+from literature_mining.content_extractor import ContentExtractor
 
 DATA_DIR = Path(__file__).parent / "data"
 DEFAULT_EMAIL = "lupus-research@example.com"
@@ -166,6 +167,7 @@ def mine_literature(
     email: str = DEFAULT_EMAIL,
     use_cache: bool = True,
     targeted_candidates: bool = False,
+    extract_content: bool = False,
 ) -> tuple:
     """
     Run the full literature mining pipeline.
@@ -176,9 +178,10 @@ def mine_literature(
         email: NCBI Entrez email (required)
         use_cache: Load from cache if available
         targeted_candidates: Also run per-candidate targeted queries
+        extract_content: Pre-filter abstracts to KG-relevant sentences
 
     Returns:
-        (crossref_results, entities, candidates)
+        (crossref_results, entities, candidates, extraction_stats)
     """
     if queries is None:
         queries = list(DEFAULT_QUERIES)
@@ -268,7 +271,26 @@ def mine_literature(
     print("\n🔄 Cross-referencing against knowledge graph...")
     results = cross_reference_articles(all_articles, entities, candidates)
 
-    return results, entities, candidates
+    # ── Content extraction stats ──────────────────────────────────────
+    extraction_stats = None
+    if extract_content:
+        print("\n✂️  Content extraction: filtering abstracts to KG-relevant sentences...")
+        extractor = ContentExtractor()
+        extractor.known_terms = extractor.build_terms_from_entities(entities)
+        _, extraction_stats = extractor.filter_articles(all_articles)
+
+        # Also filter the articles used for cross-referencing
+        all_articles_filtered = []
+        for article in all_articles:
+            fa = dict(article)
+            fa["abstract"] = extractor.filter_abstract(fa.get("abstract", ""))
+            all_articles_filtered.append(fa)
+
+        print("🔄 Re-cross-referencing with filtered abstracts...")
+        results = cross_reference_articles(all_articles_filtered, entities, candidates)
+        results["extraction_stats"] = extraction_stats
+
+    return results, entities, candidates, extraction_stats
 
 
 def print_summary(results: dict, candidates: list, entities: dict):
@@ -361,16 +383,21 @@ def main():
         "--targeted", action="store_true",
         help="Also run per-candidate targeted PubMed queries (39 extra queries)"
     )
+    parser.add_argument(
+        "--extract", action="store_true",
+        help="Pre-filter abstracts to only KG-relevant sentences (reduces NER tokens ~60%%)"
+    )
     args = parser.parse_args()
 
     queries = [args.query] if args.query else None
 
-    results, entities, candidates = mine_literature(
+    results, entities, candidates, extraction_stats = mine_literature(
         queries=queries,
         max_per_query=args.max,
         email=args.email,
         use_cache=not args.no_cache,
         targeted_candidates=args.targeted,
+        extract_content=args.extract,
     )
 
     # Store entities globally for print_summary access

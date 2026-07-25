@@ -24,6 +24,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
+from knowledge_graph.config import load_genes as config_load_genes, load_drugs as config_load_drugs
+
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
@@ -36,7 +38,6 @@ except ImportError:
 
 PROJECT_ROOT = Path(__file__).parent.parent
 DATA_DIR = Path(__file__).parent / "data"
-KG_DATA_DIR = PROJECT_ROOT / "knowledge_graph" / "data"
 
 # ClinicalTrials.gov API v2
 CT_API = "https://clinicaltrials.gov/api/v2"
@@ -245,7 +246,7 @@ def load_kg_entities() -> dict:
     """Load all KG genes and drugs for cross-referencing."""
     genes = {}
     try:
-        genes_data = json.loads((KG_DATA_DIR / "genes.json").read_text(encoding="utf-8"))
+        genes_data = config_load_genes()
         for g in genes_data["genes"]:
             genes[g["id"]] = g
     except (FileNotFoundError, json.JSONDecodeError):
@@ -253,7 +254,7 @@ def load_kg_entities() -> dict:
 
     drugs = {}
     try:
-        drugs_data = json.loads((KG_DATA_DIR / "drugs.json").read_text(encoding="utf-8"))
+        drugs_data = config_load_drugs()
         for d in drugs_data["drugs"]:
             drugs[d["id"]] = d
     except (FileNotFoundError, json.JSONDecodeError):

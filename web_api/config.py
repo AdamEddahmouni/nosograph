@@ -112,7 +112,6 @@ CORS_ORIGINS = os.environ.get("CORS_ORIGINS", "*").split(",")
 USE_CACHE = os.environ.get("USE_CACHE", "true").lower() == "true"
 
 # ── Module Data Paths ─────────────────────────────────────────────────────
-KG_DATA_DIR = PROJECT_ROOT / "knowledge_graph" / "data"
 DR_DATA_DIR = PROJECT_ROOT / "drug_repurposing" / "data"
 BIO_DATA_DIR = PROJECT_ROOT / "bioinformatics" / "data"
 LIT_DATA_DIR = PROJECT_ROOT / "literature_mining" / "data"

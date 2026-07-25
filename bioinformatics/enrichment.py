@@ -22,11 +22,12 @@ import networkx as nx
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
+from knowledge_graph.config import load_genes, load_pathways
+
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 DATA_DIR = Path(__file__).parent / "data"
-KG_DATA_DIR = Path(__file__).parent.parent / "knowledge_graph" / "data"
 DR_DATA_DIR = Path(__file__).parent.parent / "drug_repurposing" / "data"
 
 # ── GSEApy import ────────────────────────────────────────────────────────
@@ -51,7 +52,7 @@ GENE_SET_LIBRARIES = [
 
 def load_kg_genes() -> dict:
     """Load lupus-associated genes from the knowledge graph, indexed by gene ID."""
-    data = json.loads((KG_DATA_DIR / "genes.json").read_text(encoding="utf-8"))
+    data = load_genes()
     return {g["id"]: g for g in data["genes"]}
 
 
@@ -397,9 +398,7 @@ def main():
     )
 
     print("🔄 Cross-referencing with KG pathways...")
-    kg_pathways = json.loads(
-        (KG_DATA_DIR / "pathways.json").read_text(encoding="utf-8")
-    )
+    kg_pathways = load_pathways()
     kg_matches = cross_reference_with_kg_pathways(
         enrichment_results, kg_pathways
     )

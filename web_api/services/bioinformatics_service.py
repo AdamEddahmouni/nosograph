@@ -9,10 +9,10 @@ sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 from web_api.config import (
     BIO_DATA_DIR,
     DR_DATA_DIR,
-    KG_DATA_DIR,
     USE_CACHE,
 )
 from web_api.dependencies import get_kg_genes, get_knowledge_graph, load_json
+from knowledge_graph.config import load_pathways
 
 # ── GWAS ───────────────────────────────────────────────────────────────────
 
@@ -128,7 +128,7 @@ def run_enrichment(untargeted_only: bool = False, no_cache: bool = False, progre
 
     # Cross-reference with KG pathways
     cb(80, "Cross-referencing with knowledge graph pathways…")
-    kg_pathways = json.loads((KG_DATA_DIR / "pathways.json").read_text(encoding="utf-8"))
+    kg_pathways = load_pathways()
     kg_matches = cross_reference_with_kg_pathways(enrichment_results, kg_pathways)
 
     cb(100, "Enrichment analysis complete")

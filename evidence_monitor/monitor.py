@@ -27,6 +27,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from evidence_gatherer.gatherer import gather_evidence
+from knowledge_graph.config import load_genes as config_load_genes
 
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -67,12 +68,10 @@ def _load_tracked_entities() -> tuple:
         pass
 
     try:
-        genes_path = Path("knowledge_graph/data/genes.json")
-        if genes_path.exists():
-            gene_data = json.loads(genes_path.read_text(encoding="utf-8"))
-            for g in gene_data.get("genes", []):
-                if g.get("name"):
-                    genes.add(g["name"])
+        gene_data = config_load_genes()
+        for g in gene_data.get("genes", []):
+            if g.get("name"):
+                genes.add(g["name"])
     except (FileNotFoundError, json.JSONDecodeError, KeyError):
         pass
 

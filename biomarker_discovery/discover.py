@@ -25,6 +25,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
+from knowledge_graph.config import load_relationships
+
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
@@ -99,7 +101,7 @@ def _build_gene_drug_target_map() -> dict:
 
     gene_to_drugs: dict = {}
     try:
-        rel_data = load_json(Path("knowledge_graph/data/relationships.json"))
+        rel_data = load_relationships()
         for rel in rel_data.get("relationships", []):
             if rel.get("type") == "TARGETS":
                 gene_id = rel["target"]

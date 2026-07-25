@@ -21,7 +21,7 @@ import time
 from collections import defaultdict
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).parent.parent))
+from knowledge_graph.config import load_genes as config_load_genes
 
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -34,7 +34,6 @@ except ImportError:
     REQUESTS_AVAILABLE = False
 
 DATA_DIR = Path(__file__).parent / "data"
-KG_DATA_DIR = Path(__file__).parent.parent / "knowledge_graph" / "data"
 
 GWAS_API = "https://www.ebi.ac.uk/gwas/rest/api"
 
@@ -536,9 +535,7 @@ def main():
 
     print("🔄 Loading knowledge graph genes...")
     kg_genes = {}
-    genes_data = json.loads(
-        (KG_DATA_DIR / "genes.json").read_text(encoding="utf-8")
-    )
+    genes_data = config_load_genes()
     for g in genes_data["genes"]:
         kg_genes[g["id"]] = g
     print(f"   Loaded {len(kg_genes)} KG genes")

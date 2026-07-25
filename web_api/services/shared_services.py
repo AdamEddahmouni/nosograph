@@ -19,7 +19,6 @@ def run_literature(
     progress_callback=None,
 ) -> dict:
     """Run literature mining on PubMed using the mine_literature pipeline."""
-    from literature_mining.crossref import cross_reference_articles
     from literature_mining.miner import mine_literature
 
     genes = get_kg_genes()
@@ -29,13 +28,13 @@ def run_literature(
     cb(10, "Loading knowledge graph entities…")
 
     cb(20, "Mining PubMed for SLE-related articles…")
-    articles, entities, _ = mine_literature(
+    crossref, entities, _, _extraction_stats = mine_literature(
         max_per_query=max_articles,
         use_cache=not no_cache and USE_CACHE,
         targeted_candidates=targeted,
     )
 
-    if not articles:
+    if not crossref or not crossref.get("article_matches"):
         cb(100, "Literature mining complete — no articles found")
         return {
             "total_articles": 0,
@@ -45,11 +44,10 @@ def run_literature(
             "candidate_support": [],
         }
 
-    cb(50, f"Cross-referencing {len(articles)} articles with knowledge graph…")
-    crossref = cross_reference_articles(articles, entities, candidates)
+    article_matches = crossref["article_matches"]
+    cb(50, f"Mined {len(article_matches)} articles")
 
     cb(75, "Building gene coverage profiles…")
-    # gene_coverage from crossref is a dict keyed by gene_id
     raw_coverage = crossref.get("gene_coverage", {})
     gene_coverage = []
     for gene_id, cov_info in raw_coverage.items():
@@ -57,7 +55,7 @@ def run_literature(
             gene_coverage.append({
                 "gene_id": gene_id,
                 "gene_name": genes.get(gene_id, {}).get("name", gene_id),
-                "article_count": cov_info.get("article_count", 0),
+                "article_count": cov_info.get("articles", 0),
                 "supporting_count": cov_info.get("supporting_count", 0),
                 "coverage_score": cov_info.get("coverage_score", 0),
             })
@@ -67,14 +65,14 @@ def run_literature(
                 "gene_name": genes.get(gene_id, {}).get("name", gene_id),
                 "article_count": cov_info,
                 "supporting_count": cov_info,
-                "coverage_score": min(cov_info / max(len(articles), 1) * 100, 100),
+                "coverage_score": min(cov_info / max(len(article_matches), 1) * 100, 100),
             })
 
     cb(100, "Literature mining complete")
     return {
-        "total_articles": len(articles),
+        "total_articles": len(article_matches),
         "queries_run": 5 + (len(candidates) if targeted else 0),
-        "articles": articles[:max_articles],
+        "articles": article_matches[:max_articles],
         "gene_coverage": gene_coverage,
         "candidate_support": crossref.get("candidate_support", []),
     }
