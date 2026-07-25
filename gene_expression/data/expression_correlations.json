@@ -71,20 +71,6 @@
       "tier": "\ud83d\udfe0 Tier 2 \u2014 Moderate Reversal"
     },
     {
-      "drug_id": "iscalimab",
-      "drug_name": "Iscalimab (CFZ533 / anti-CD40)",
-      "category": "Biologic - T Cell Costimulation Blocker",
-      "type": "Monoclonal Antibody",
-      "mechanism": "Blocks CD40-CD40L interaction, preventing T cell-dependent B cell activation and germinal center formation",
-      "signature_reversal": 6.1,
-      "target_disease_overlap": 4.4,
-      "cell_type_specificity": 7.8,
-      "expression_evidence": 6.0,
-      "directionality": 7.0,
-      "composite_score": 6.04,
-      "tier": "\ud83d\udfe0 Tier 2 \u2014 Moderate Reversal"
-    },
-    {
       "drug_id": "iberdomide",
       "drug_name": "Iberdomide (CC-220 / Cereblon Modulator)",
       "category": "Targeted Synthetic - Cereblon Modulator (CELMoD)",
@@ -113,20 +99,6 @@
       "tier": "\ud83d\udfe1 Tier 3 \u2014 Weak Reversal"
     },
     {
-      "drug_id": "dapirolizumab_pegol",
-      "drug_name": "Dapirolizumab Pegol (Anti-CD40L Fab-PEG)",
-      "category": "Biologic - T Cell Costimulation Blocker",
-      "type": "Monoclonal Antibody Fragment (PEGylated Fab)",
-      "mechanism": "PEGylated anti-CD40L Fab fragment that blocks CD40-CD40L interaction, inhibiting T cell-dependent B cell activation without platelet-related thromboembolic events seen with earlier anti-CD40L mAbs",
-      "signature_reversal": 5.9,
-      "target_disease_overlap": 3.6,
-      "cell_type_specificity": 7.8,
-      "expression_evidence": 6.0,
-      "directionality": 7.0,
-      "composite_score": 5.78,
-      "tier": "\ud83d\udfe1 Tier 3 \u2014 Weak Reversal"
-    },
-    {
       "drug_id": "belimumab",
       "drug_name": "Belimumab (Benlysta)",
       "category": "Biologic - B Cell Modulation",
@@ -138,6 +110,34 @@
       "expression_evidence": 6.0,
       "directionality": 6.0,
       "composite_score": 5.75,
+      "tier": "\ud83d\udfe1 Tier 3 \u2014 Weak Reversal"
+    },
+    {
+      "drug_id": "iscalimab",
+      "drug_name": "Iscalimab (CFZ533 / anti-CD40)",
+      "category": "Biologic - T Cell Costimulation Blocker",
+      "type": "Monoclonal Antibody",
+      "mechanism": "Blocks CD40-CD40L interaction, preventing T cell-dependent B cell activation and germinal center formation",
+      "signature_reversal": 5.2,
+      "target_disease_overlap": 3.4,
+      "cell_type_specificity": 7.8,
+      "expression_evidence": 6.0,
+      "directionality": 7.0,
+      "composite_score": 5.48,
+      "tier": "\ud83d\udfe1 Tier 3 \u2014 Weak Reversal"
+    },
+    {
+      "drug_id": "dapirolizumab_pegol",
+      "drug_name": "Dapirolizumab Pegol (Anti-CD40L Fab-PEG)",
+      "category": "Biologic - T Cell Costimulation Blocker",
+      "type": "Monoclonal Antibody Fragment (PEGylated Fab)",
+      "mechanism": "PEGylated anti-CD40L Fab fragment that blocks CD40-CD40L interaction, inhibiting T cell-dependent B cell activation without platelet-related thromboembolic events seen with earlier anti-CD40L mAbs",
+      "signature_reversal": 3.8,
+      "target_disease_overlap": 2.7,
+      "cell_type_specificity": 7.8,
+      "expression_evidence": 6.0,
+      "directionality": 7.0,
+      "composite_score": 4.81,
       "tier": "\ud83d\udfe1 Tier 3 \u2014 Weak Reversal"
     },
     {
@@ -366,6 +366,8 @@
     }
   ],
   "total_drugs": 26,
-  "signature_upregulated": 44,
-  "signature_downregulated": 28
+  "signature_upregulated": 35,
+  "signature_downregulated": 22,
+  "signature_source": "geo_consensus",
+  "signature_studies": 3
 }
