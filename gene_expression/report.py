@@ -12,11 +12,15 @@ def escape_html(value):
     return str(value).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
 
 
-def generate_html_report(results: list) -> str:
+def generate_html_report(results: list, signature_source: str = "curated_literature",
+                        num_studies: int = 0, tissue: str = "") -> str:
     """Generate an HTML report for gene expression correlation results.
 
     Args:
         results: List of scored drug dicts from correlator.py.
+        signature_source: Source label of the expression signature used.
+        num_studies: Number of GEO studies used (0 for curated).
+        tissue: Tissue category filter used.
 
     Returns:
         Path to the generated HTML file.
@@ -188,6 +192,20 @@ def generate_html_report(results: list) -> str:
                 <div class="stat-value" style="color:#fbbf24;">{tier3}</div>
                 <div class="stat-label">Tier 3 (Weak)</div>
             </div>
+        </div>
+
+        <h2 class="section-title">📊 Expression Signature Source</h2>
+        <div class="methodology">
+            <p style="color:#e2e8f0; font-size:1rem;">
+                <strong>Source:</strong> {signature_source} &nbsp;|&nbsp;
+                <strong>Studies:</strong> {num_studies} &nbsp;|&nbsp;
+                <strong>Tissue:</strong> {tissue or 'broad / multi-tissue'}
+            </p>
+            <p style="color:#94a3b8; margin-top:6px; font-size:0.85rem;">
+                The signature defines which genes are considered dysregulated in SLE.
+                GEO-derived signatures are built by consensus across multiple independent
+                transcriptomic studies. Curated signatures are based on published SLE literature.
+            </p>
         </div>
 
         <h2 class="section-title">🎯 Score Dimension Radar — Top 5 Drugs</h2>

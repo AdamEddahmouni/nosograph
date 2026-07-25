@@ -15,6 +15,8 @@ Usage:
     python gene_expression/correlator.py              # Full analysis
     python gene_expression/correlator.py --top 15     # Top 15 drugs
     python gene_expression/correlator.py --export-html  # Generate report
+    python gene_expression/correlator.py --geo         # Use GEO consensus
+    python gene_expression/correlator.py --geo --tissue kidney  # Tissue-specific
 """
 
 import argparse
@@ -30,6 +32,44 @@ if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 DATA_DIR = Path(__file__).parent / "data"
+
+_DEFAULT_SIGNATURE = None
+
+def _get_default_signature():
+    global _DEFAULT_SIGNATURE
+    if _DEFAULT_SIGNATURE is None:
+        try:
+            from gene_expression.signature import get_signature
+            sig = get_signature(source="curated")
+            _up = {k: v["fold_change"] for k, v in sig.get("upregulated", {}).items()}
+            _down = {k: v["fold_change"] for k, v in sig.get("downregulated", {}).items()}
+            _DEFAULT_SIGNATURE = {"upregulated": _up, "downregulated": _down,
+                                  "source": sig.get("source", "curated"),
+                                  "num_studies_used": sig.get("num_studies_used", 0)}
+        except Exception:
+            _DEFAULT_SIGNATURE = {"upregulated": SLE_UPREGULATED,
+                                  "downregulated": SLE_DOWNREGULATED,
+                                  "source": "curated_literature",
+                                  "num_studies_used": 0}
+    return _DEFAULT_SIGNATURE
+
+
+def _normalize_signature(signature):
+    """Normalize a signature dict to {upregulated: {gene: fc}, downregulated: {gene: fc}}."""
+    if signature is None:
+        sig = _get_default_signature()
+        return sig["upregulated"], sig["downregulated"], sig.get("source", ""), sig.get("num_studies_used", 0)
+
+    if isinstance(next(iter(signature.get("upregulated", {}).values()), None), dict):
+        up = {k: v["fold_change"] for k, v in signature.get("upregulated", {}).items()}
+        down = {k: v["fold_change"] for k, v in signature.get("downregulated", {}).items()}
+    else:
+        up = signature.get("upregulated", {})
+        down = signature.get("downregulated", {})
+
+    source = signature.get("source", "")
+    num_studies = signature.get("num_studies_used", 0)
+    return up, down, source, num_studies
 
 
 
@@ -206,48 +246,58 @@ DRUG_CELL_TYPES = {
 
 # ── Scoring Functions ────────────────────────────────────────────────────
 
-def score_signature_reversal(drug_id: str) -> float:
+def score_signature_reversal(drug_id: str, signature=None) -> float:
     """Score how well the drug reverses the SLE expression signature.
 
     Higher score = drug mechanism directly counteracts more dysregulated genes.
+
+    Args:
+        drug_id: Drug identifier
+        signature: Optional signature dict with upregulated/downregulated gene maps
     """
+    up_genes, down_genes, _, _ = _normalize_signature(signature)
+
     if drug_id not in DRUG_PATHWAY_REVERSAL and drug_id not in DRUG_TARGET_GENES:
-        return 2.0  # No known expression reversal data
+        return 2.0
 
     score = 0.0
     downregulated_hits = 0
     upregulated_reversed = 0
 
-    # Check pathway-level reversal
     if drug_id in DRUG_PATHWAY_REVERSAL:
         reversal = DRUG_PATHWAY_REVERSAL[drug_id]
         for gene in reversal.get("downregulated_genes", []):
-            if gene in SLE_UPREGULATED:
+            if gene in up_genes:
                 downregulated_hits += 1
-                score += SLE_UPREGULATED[gene] * 0.8
+                score += up_genes[gene] * 0.8
 
-    # Check target gene overlap
     targets = DRUG_TARGET_GENES.get(drug_id, [])
     for gene in targets:
-        if gene in SLE_UPREGULATED:
+        if gene in up_genes:
             upregulated_reversed += 1
-            score += SLE_UPREGULATED[gene] * 0.5
+            score += up_genes[gene] * 0.5
 
     if downregulated_hits >= 5:
-        score += 3.0  # broad mechanism bonus
+        score += 3.0
     elif downregulated_hits >= 3:
         score += 2.0
     elif downregulated_hits >= 1:
         score += 1.0
 
-    # Normalize to 0-10 scale
     score = min(10.0, score * 0.6 + 1.0)
 
     return round(score, 1)
 
 
-def score_target_disease_overlap(drug_id: str) -> float:
-    """Score based on how many drug target genes overlap with SLE-dysregulated genes."""
+def score_target_disease_overlap(drug_id: str, signature=None) -> float:
+    """Score based on how many drug target genes overlap with SLE-dysregulated genes.
+
+    Args:
+        drug_id: Drug identifier
+        signature: Optional signature dict with upregulated/downregulated gene maps
+    """
+    up_genes, down_genes, _, _ = _normalize_signature(signature)
+
     targets = DRUG_TARGET_GENES.get(drug_id, [])
 
     pathway_genes = set()
@@ -255,11 +305,11 @@ def score_target_disease_overlap(drug_id: str) -> float:
         pathway_genes = set(DRUG_PATHWAY_REVERSAL[drug_id].get("downregulated_genes", []))
 
     all_affected = set(targets) | pathway_genes
-    upregulated_overlap = all_affected & set(SLE_UPREGULATED.keys())
-    downregulated_overlap = all_affected & set(SLE_DOWNREGULATED.keys())
+    upregulated_overlap = all_affected & set(up_genes.keys())
+    downregulated_overlap = all_affected & set(down_genes.keys())
 
-    up_score = sum(SLE_UPREGULATED.get(g, 0) for g in upregulated_overlap)
-    down_score = sum(SLE_DOWNREGULATED.get(g, 0) for g in downregulated_overlap)
+    up_score = sum(up_genes.get(g, 0) for g in upregulated_overlap)
+    down_score = sum(down_genes.get(g, 0) for g in downregulated_overlap)
 
     total = up_score * 0.7 + down_score * 0.3
     return round(min(10.0, total * 0.7 + 1.0), 1)
@@ -324,13 +374,20 @@ def score_directionality(drug_id: str) -> float:
     return 5.0
 
 
-def correlate_drug(drug_id: str, drug: dict, all_drugs: dict = None) -> dict:
+def correlate_drug(drug_id: str, drug: dict, all_drugs: dict = None,
+                   signature=None) -> dict:
     """Score a single drug for gene expression reversal potential.
 
     Returns dict with individual scores and composite score.
+
+    Args:
+        drug_id: Drug identifier
+        drug: Drug metadata dict
+        all_drugs: Full drug library for evidence scoring
+        signature: Optional signature dict with upregulated/downregulated gene maps
     """
-    sig_rev = score_signature_reversal(drug_id)
-    overlap = score_target_disease_overlap(drug_id)
+    sig_rev = score_signature_reversal(drug_id, signature)
+    overlap = score_target_disease_overlap(drug_id, signature)
     cell_type = score_cell_type_specificity(drug_id)
     evidence = score_expression_evidence(drug_id, all_drugs)
     direction = score_directionality(drug_id)
@@ -377,23 +434,44 @@ def _assign_tier(score: float) -> str:
     return "🟢 Tier 4 — Minimal Reversal"
 
 
-def compute_all_correlations(progress_callback=None) -> list:
+def compute_all_correlations(progress_callback=None, signature=None,
+                             signature_source="auto", tissue=None) -> list:
     """Correlate all 26 drugs against the SLE expression signature.
 
     Returns list of scored drugs sorted by composite score descending.
+
+    Args:
+        progress_callback: Optional fn(percent, message) for progress reporting
+        signature: Optional pre-loaded signature dict
+        signature_source: "auto", "geo", or "curated"
+        tissue: Tissue filter for GEO search
     """
     cb = progress_callback or (lambda p, m: None)
 
     cb(0, "Loading drug library...")
     drugs = load_drugs()
 
-    cb(10, f"Correlating {len(drugs)} drugs against SLE expression signature...")
+    if signature is None and signature_source != "curated":
+        try:
+            from gene_expression.signature import get_signature
+            sig = get_signature(source=signature_source, tissue=tissue)
+            if sig and sig.get("num_studies_used", 0) > 0:
+                signature = sig
+        except Exception:
+            pass
+
+    if signature is None:
+        signature = _get_default_signature()
+
+    _, _, sig_source, num_studies = _normalize_signature(signature)
+
+    cb(10, f"Correlating {len(drugs)} drugs against SLE expression signature ({sig_source})...")
     results = []
     for i, (drug_id, drug) in enumerate(drugs.items()):
         if i % 5 == 0:
             cb(10 + int(i / len(drugs) * 75), f"Scoring {drug_id}...")
         try:
-            results.append(correlate_drug(drug_id, drug, drugs))
+            results.append(correlate_drug(drug_id, drug, drugs, signature))
         except (KeyError, TypeError, AttributeError):
             results.append({
                 "drug_id": drug_id,
@@ -410,8 +488,10 @@ def compute_all_correlations(progress_callback=None) -> list:
     output_path.write_text(json.dumps({
         "drugs": results,
         "total_drugs": len(results),
-        "signature_upregulated": len(SLE_UPREGULATED),
-        "signature_downregulated": len(SLE_DOWNREGULATED),
+        "signature_upregulated": len(signature.get("upregulated", {})),
+        "signature_downregulated": len(signature.get("downregulated", {})),
+        "signature_source": sig_source,
+        "signature_studies": num_studies,
     }, indent=2), encoding="utf-8")
 
     cb(100, f"Results saved to {output_path}")
@@ -421,16 +501,19 @@ def compute_all_correlations(progress_callback=None) -> list:
 # ── CLI ──────────────────────────────────────────────────────────────────
 
 
-def analyze(results: list):
+def analyze(results: list, signature=None):
     """Print statistical summary."""
+    up_genes, down_genes, sig_source, num_studies = _normalize_signature(signature)
+
     print("\n" + "=" * 75)
     print("🧬 GENE EXPRESSION CORRELATION ANALYSIS")
     print("=" * 75)
 
-    # Signature info
     print("\n  SLE Expression Signature:")
-    print(f"    Upregulated genes:  {len(SLE_UPREGULATED)}")
-    print(f"    Downregulated genes: {len(SLE_DOWNREGULATED)}")
+    print(f"    Source:               {sig_source}")
+    print(f"    GEO Studies:          {num_studies}")
+    print(f"    Upregulated genes:    {len(up_genes)}")
+    print(f"    Downregulated genes:  {len(down_genes)}")
     print(f"    Drugs with known pathway effects: {len(DRUG_PATHWAY_REVERSAL)}")
     print(f"    Drugs with target gene mappings: {len(DRUG_TARGET_GENES)}")
 
@@ -476,15 +559,33 @@ def main():
     )
     parser.add_argument("--top", type=int, default=15, help="Number of top drugs to display")
     parser.add_argument("--export-html", action="store_true", help="Generate HTML report")
+    parser.add_argument("--geo", action="store_true",
+                        help="Use GEO-derived consensus signature (auto-fallback to curated)")
+    parser.add_argument("--tissue", type=str, default=None,
+                        help="Tissue to filter by (broad, pbmc_blood, kidney, skin)")
     args = parser.parse_args()
 
-    results = compute_all_correlations()
-    analyze(results)
+    signature_source = "geo" if args.geo else "curated"
+    signature = None
+    if args.geo:
+        try:
+            from gene_expression.signature import get_signature
+            signature = get_signature(source="auto", tissue=args.tissue)
+        except Exception:
+            pass
+
+    results = compute_all_correlations(signature=signature,
+                                       signature_source=signature_source,
+                                       tissue=args.tissue)
+    analyze(results, signature if signature else None)
     print_top_correlations(results, args.top)
 
     if args.export_html:
         from gene_expression.report import generate_html_report
-        generate_html_report(results)
+        _, _, sig_source, num_studies = _normalize_signature(signature)
+        generate_html_report(results, signature_source=sig_source,
+                            num_studies=num_studies,
+                            tissue=args.tissue or "broad")
         print("\n✅ HTML report generated: gene_expression/report.html")
 
     return results
