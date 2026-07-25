@@ -172,11 +172,27 @@ def cross_reference_articles(articles: list, entities: dict, candidates: list) -
 
     # Aggregate novel entities across all articles
     all_novel = {"chemicals": set(), "diseases": set(), "genes": set()}
+    all_variants = set()
+    all_clinical = set()
+    all_statistics = set()
+    all_dosage = set()
     for a in article_matches:
         for key in all_novel:
             for entity in a.get("kg_matches", {}).get("novel_entities", {}).get(key, []):
                 all_novel[key].add(entity)
+        for v in a.get("kg_matches", {}).get("variants", []):
+            all_variants.add(v)
+        for v in a.get("kg_matches", {}).get("clinical", []):
+            all_clinical.add(v)
+        for v in a.get("kg_matches", {}).get("statistics", []):
+            all_statistics.add(v)
+        for v in a.get("kg_matches", {}).get("dosage", []):
+            all_dosage.add(v)
     novel_summary = {k: sorted(list(v)) for k, v in all_novel.items() if v}
+    variant_summary = sorted(list(all_variants))
+    clinical_summary = sorted(list(all_clinical))
+    statistics_summary = sorted(list(all_statistics))
+    dosage_summary = sorted(list(all_dosage))
 
     ner = _get_ner()
     if ner.spacy_available:
@@ -200,6 +216,10 @@ def cross_reference_articles(articles: list, entities: dict, candidates: list) -
             for did, pmids in drug_article_counts.items()
         },
         "novel_entities": novel_summary,
+        "variant_entities": variant_summary,
+        "clinical_entities": clinical_summary,
+        "statistics_entities": statistics_summary,
+        "dosage_entities": dosage_summary,
         "stats": {
             "total_articles": len(article_matches),
             "articles_with_matches": sum(
@@ -213,6 +233,10 @@ def cross_reference_articles(articles: list, entities: dict, candidates: list) -
             ),
             "spacy_ner": spacy_status,
             "novel_entities_found": sum(len(v) for v in novel_summary.values()),
+            "variant_mentions": len(variant_summary),
+            "clinical_mentions": len(clinical_summary),
+            "statistics_mentions": len(statistics_summary),
+            "dosage_mentions": len(dosage_summary),
         },
     }
 
@@ -222,6 +246,7 @@ def _match_article_entities(article: dict, entities: dict) -> dict:
 
     First pass: dictionary matching against KG genes, drugs, pathways.
     Second pass (optional): spaCy biomedical NER for novel entities.
+    Third pass (optional): scispacy validation of KG dictionary matches.
     """
     text = article.get("abstract", "") + " " + article.get("title", "")
     text_lower = text.lower()
@@ -233,11 +258,19 @@ def _match_article_entities(article: dict, entities: dict) -> dict:
 
     # ── Pass 1: Dictionary matching ──────────────────────────────────
 
+    ner = _get_ner()
+
     # Match genes by synonyms
     for gene_id, gene_info in entities["genes"].items():
         for synonym in gene_info["synonyms"]:
             if len(synonym) > 3 and synonym in text_lower:
-                genes_found[gene_id] = gene_info
+                # Validate with scispacy if available
+                validation = ner.validate_kg_match(text, gene_info["name"], "gene")
+                genes_found[gene_id] = {
+                    **gene_info,
+                    "match_confidence": validation["confidence"],
+                    "match_validated": validation["validated"],
+                }
                 known_lower.add(gene_info["name"].lower())
                 known_lower.add(synonym)
                 break
@@ -246,7 +279,12 @@ def _match_article_entities(article: dict, entities: dict) -> dict:
     for drug_id, drug_info in entities["drugs"].items():
         for synonym in drug_info["synonyms"]:
             if len(synonym) > 3 and synonym in text_lower:
-                drugs_found[drug_id] = drug_info
+                validation = ner.validate_kg_match(text, drug_info["name"], "drug")
+                drugs_found[drug_id] = {
+                    **drug_info,
+                    "match_confidence": validation["confidence"],
+                    "match_validated": validation["validated"],
+                }
                 known_lower.add(drug_info["name"].lower())
                 known_lower.add(synonym)
                 break
@@ -261,9 +299,13 @@ def _match_article_entities(article: dict, entities: dict) -> dict:
     # ── Pass 2: Optional spaCy biomedical NER ────────────────────────
 
     novel_entities = {}
+    extended_entities = {}
     ner = _get_ner()
     if ner.spacy_available:
         novel_entities = ner.extract_novel_entities(text, known_lower)
+
+    # Always extract variants, clinical, statistics, dosage (regex-based)
+    extended_entities = ner.extract_all_entities(text, known_lower)
 
     return {
         "genes_found": genes_found,
@@ -275,6 +317,10 @@ def _match_article_entities(article: dict, entities: dict) -> dict:
         "total_matches": len(genes_found) + len(drugs_found) + len(pathways_found),
         "novel_entities": novel_entities,
         "novel_count": sum(len(v) for v in novel_entities.values()),
+        "variants": extended_entities.get("variants", []),
+        "clinical": extended_entities.get("clinical", []),
+        "statistics": extended_entities.get("statistics", []),
+        "dosage": extended_entities.get("dosage", []),
     }
 
 

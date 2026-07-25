@@ -135,6 +135,67 @@ _CHEMICAL_PATTERN = re.compile(
     r')\b'
 )
 
+# ── Genetic variant / mutation patterns ───────────────────────────────────
+
+_VARIANT_PATTERN = re.compile(
+    r'\b(?:'
+    r'rs[0-9]{4,}'
+    r'|[A-Z][a-z]{2,}[0-9]+[A-Za-z]?'
+    r'|[sp]\.[A-Z][a-z]{2,}[0-9]+[A-Za-z]{1,3}'
+    r'|c\.[0-9]+[A-Z]>[A-Z]'
+    r'|[A-Z][a-z]{3,}[0-9]+fs'
+    r'|(?:missense|nonsense|frameshift|splice[-\s]site|in[-\s]frame|copy[-\s]number|loss[-\s]of[-\s]function|gain[-\s]of[-\s]function)\s+(?:variant|mutation|SNP|polymorphism|alteration)'
+    r'|HLA-[A-Z0-9*:]+'
+    r'|CNV|indel|structural\s+variant'
+    r')\b',
+    re.IGNORECASE,
+)
+
+# ── Clinical trial / outcome patterns ─────────────────────────────────────
+
+_CLINICAL_PATTERN = re.compile(
+    r'\b(?:'
+    r'Phase\s+(?:I{1,3}[ab]?|[1-4][ab]?)'
+    r'|SRI-?4|BICLA|BILAG|SLEDAI|ESSDAI|ACR[-\s]?[0-9]{2}'
+    r'|primary\s+endpoint|secondary\s+endpoint'
+    r'|response\s+rate|remission\s+rate'
+    r'|placebo[-\s]controlled|randomi[sz]ed|double[-\s]blind'
+    r'|(?:met|missed|achieved)\s+(?:the\s+)?(?:primary|secondary)\s+endpoint'
+    r'|safety\s+profile|adverse\s+event|serious\s+adverse'
+    r'|enrollment|ITT|per[-\s]protocol'
+    r')\b',
+    re.IGNORECASE,
+)
+
+# ── Statistical measure patterns ──────────────────────────────────────────
+
+_STATISTICAL_PATTERN = re.compile(
+    r'\b(?:'
+    r'[pP]\s*[<≤=]\s*0?\.\d+'
+    r'|OR\s*[=:]\s*\d+\.?\d*'
+    r'|HR\s*[=:]\s*\d+\.?\d*'
+    r'|RR\s*[=:]\s*\d+\.?\d*'
+    r'|95%\s*CI\s*\d+\.?\d*[–-]\d+\.?\d*'
+    r'|[0-9]+(?:\.\d+)?%\s*(?:reduction|increase|improvement)'
+    r'|effect\s+size|Cohen\'?s\s+d'
+    r'|hazard\s+ratio|odds\s+ratio|relative\s+risk'
+    r'|confidence\s+interval'
+    r')\b',
+    re.IGNORECASE,
+)
+
+# ── Dosage / administration patterns ──────────────────────────────────────
+
+_DOSAGE_PATTERN = re.compile(
+    r'\b(?:'
+    r'\d+(?:\.\d+)?\s*(?:mg|g|μg|mcg|mg/kg|IU)(?:/[a-z]+)?'
+    r'|(?:oral|IV|intravenous|subcutaneous|intramuscular|topical|inhaled)'
+    r'|(?:daily|weekly|monthly|twice[-\s]daily|BID|TID|QD)'
+    r'|dose[-\s]dependent|dose[-\s]response'
+    r')\b',
+    re.IGNORECASE,
+)
+
 
 class BiomedicalNER:
     """
@@ -160,7 +221,7 @@ class BiomedicalNER:
         Always runs regex patterns first. If a biomedical spaCy model is
         available, merges its results on top.
 
-        Returns dict with keys: chemicals, diseases, genes
+        Returns dict with keys: chemicals, diseases, genes, variants, clinical, statistics, dosage
         """
         if known_entities is None:
             known_entities = set()
@@ -174,6 +235,97 @@ class BiomedicalNER:
             results = self._merge_results(results, spacy_results)
 
         return results
+
+    def extract_all_entities(
+        self, text: str, known_entities: set = None
+    ) -> dict:
+        """
+        Full-featured extraction including variants, clinical outcomes,
+        statistics, and dosage alongside biomedical entities.
+        """
+        results = self.extract_novel_entities(text, known_entities)
+
+        # Add variant/mutation mentions
+        variants = self._extract_variants(text)
+        if variants:
+            results["variants"] = variants
+
+        # Add clinical trial mentions
+        clinical = self._extract_clinical(text)
+        if clinical:
+            results["clinical"] = clinical
+
+        # Add statistical measures
+        stats = self._extract_statistics(text)
+        if stats:
+            results["statistics"] = stats
+
+        # Add dosage/administration mentions
+        dosage = self._extract_dosage(text)
+        if dosage:
+            results["dosage"] = dosage
+
+        return results
+
+    def validate_kg_match(
+        self, text: str, entity_name: str, entity_type: str
+    ) -> dict:
+        """
+        Validate a dictionary KG match using scispacy when available.
+
+        Returns a dict with: confidence (float 0-1), validated (bool),
+        spacy_label (str or None), context (str)
+        """
+        result = {"confidence": 1.0, "validated": False, "spacy_label": None, "context": ""}
+
+        # Extract surrounding context for the match
+        text_lower = text.lower()
+        name_lower = entity_name.lower()
+        idx = text_lower.find(name_lower)
+        if idx >= 0:
+            start = max(0, idx - 60)
+            end = min(len(text), idx + len(entity_name) + 60)
+            result["context"] = text[start:end]
+
+        # Validate with scispacy if available
+        if self.spacy_available and _spacy_is_biomedical and _spacy_nlp is not None:
+            try:
+                doc = _spacy_nlp(text[:10000])
+                name_lower = entity_name.lower()
+                for ent in doc.ents:
+                    if name_lower in ent.text.lower() or ent.text.lower() in name_lower:
+                        result["validated"] = True
+                        result["spacy_label"] = ent.label_
+                        # Higher confidence for exact label match
+                        if entity_type == "gene" and ent.label_ in ("GENE", "PROTEIN", "DNA", "RNA"):
+                            result["confidence"] = 0.95
+                        elif entity_type == "drug" and ent.label_ == "CHEMICAL":
+                            result["confidence"] = 0.95
+                        elif entity_type == "disease" and ent.label_ == "DISEASE":
+                            result["confidence"] = 0.95
+                        elif ent.label_ in ("GENE", "CHEMICAL", "DISEASE", "PROTEIN"):
+                            result["confidence"] = 0.7
+                        else:
+                            result["confidence"] = 0.5
+                        break
+
+                if not result["validated"]:
+                    # Lower confidence for unvalidated matches
+                    # Specificity bonus: longer names and multi-word names
+                    # are more likely to be real entities
+                    confidence = 0.6
+                    name_len = len(entity_name)
+                    if name_len > 10:
+                        confidence += 0.1
+                    if name_len > 15:
+                        confidence += 0.05
+                    if name_len < 4:
+                        confidence -= 0.2  # Short names are ambiguous
+                    result["confidence"] = min(confidence, 1.0)
+            except Exception:
+                pass
+
+        return result
 
     def _merge_results(self, base: dict, overlay: dict) -> dict:
         """Merge spaCy results into regex results, avoiding duplicates."""
@@ -267,6 +419,58 @@ class BiomedicalNER:
                 )
 
         return self._deduplicate_results(results)
+
+    def _extract_variants(self, text: str) -> list:
+        """Extract genetic variant mentions (rsIDs, missense, HLA alleles, etc.)."""
+        results = []
+        seen = set()
+        for match in _VARIANT_PATTERN.finditer(text):
+            entity = match.group().strip()
+            lower = entity.lower()
+            if lower not in seen:
+                seen.add(lower)
+                results.append({"text": entity, "start": match.start()})
+        results.sort(key=lambda x: x["start"])
+        return [r["text"] for r in results[:20]]
+
+    def _extract_clinical(self, text: str) -> list:
+        """Extract clinical trial outcome mentions."""
+        results = []
+        seen = set()
+        for match in _CLINICAL_PATTERN.finditer(text):
+            entity = match.group().strip()
+            lower = entity.lower()
+            if lower not in seen:
+                seen.add(lower)
+                results.append({"text": entity, "start": match.start()})
+        results.sort(key=lambda x: x["start"])
+        return [r["text"] for r in results[:15]]
+
+    def _extract_statistics(self, text: str) -> list:
+        """Extract statistical measure mentions (p-values, OR, HR, CI)."""
+        results = []
+        seen = set()
+        for match in _STATISTICAL_PATTERN.finditer(text):
+            entity = match.group().strip()
+            lower = entity.lower()
+            if lower not in seen:
+                seen.add(lower)
+                results.append({"text": entity, "start": match.start()})
+        results.sort(key=lambda x: x["start"])
+        return [r["text"] for r in results[:15]]
+
+    def _extract_dosage(self, text: str) -> list:
+        """Extract dosage and administration mentions."""
+        results = []
+        seen = set()
+        for match in _DOSAGE_PATTERN.finditer(text):
+            entity = match.group().strip()
+            lower = entity.lower()
+            if lower not in seen:
+                seen.add(lower)
+                results.append({"text": entity, "start": match.start()})
+        results.sort(key=lambda x: x["start"])
+        return [r["text"] for r in results[:15]]
 
     def _deduplicate_results(self, results: dict) -> dict:
         """Deduplicate and sort extracted entities by position."""

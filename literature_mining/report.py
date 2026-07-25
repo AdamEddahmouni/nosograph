@@ -24,6 +24,14 @@ def generate_literature_report(results: dict, entities: dict, candidates: list) 
     spacy_status = stats.get("spacy_ner", "not available")
     novel_count = stats.get("novel_entities_found", 0)
     extraction_stats = results.get("extraction_stats")
+    variant_entities = results.get("variant_entities", [])
+    clinical_entities = results.get("clinical_entities", [])
+    statistics_entities = results.get("statistics_entities", [])
+    dosage_entities = results.get("dosage_entities", [])
+    variant_count = stats.get("variant_mentions", len(variant_entities))
+    clinical_count = stats.get("clinical_mentions", len(clinical_entities))
+    stats_count = stats.get("statistics_mentions", len(statistics_entities))
+    dosage_count = stats.get("dosage_mentions", len(dosage_entities))
 
     # ── Content extraction stat card ──────────────────────────────────
     extraction_stat_card = ""
@@ -201,6 +209,51 @@ def generate_literature_report(results: dict, entities: dict, candidates: list) 
             'novel drugs, genes, and diseases from the literature.</p>'
         )
 
+    # ── Additional entity type sections ────────────────────────────────
+    variant_section = ""
+    if variant_entities:
+        tags = "".join(
+            f'<span class="entity-tag variant">{escape_html(v[:50])}</span>'
+            for v in variant_entities[:30]
+        )
+        variant_section = f"""
+        <h2 class="section-title">🧬 Genetic Variants & Mutations ({variant_count} mentions)</h2>
+        <div class="novel-tags">{tags}</div>
+        <br>"""
+
+    clinical_section = ""
+    if clinical_entities:
+        tags = "".join(
+            f'<span class="entity-tag clinical">{escape_html(c[:50])}</span>'
+            for c in clinical_entities[:25]
+        )
+        clinical_section = f"""
+        <h2 class="section-title">🏥 Clinical Trial Outcomes ({clinical_count} mentions)</h2>
+        <div class="novel-tags">{tags}</div>
+        <br>"""
+
+    statistics_section = ""
+    if statistics_entities:
+        tags = "".join(
+            f'<span class="entity-tag stats">{escape_html(s[:50])}</span>'
+            for s in statistics_entities[:25]
+        )
+        statistics_section = f"""
+        <h2 class="section-title">📊 Statistical Measures ({stats_count} mentions)</h2>
+        <div class="novel-tags">{tags}</div>
+        <br>"""
+
+    dosage_section = ""
+    if dosage_entities:
+        tags = "".join(
+            f'<span class="entity-tag dosage">{escape_html(d[:50])}</span>'
+            for d in dosage_entities[:25]
+        )
+        dosage_section = f"""
+        <h2 class="section-title">💉 Dosage & Administration ({dosage_count} mentions)</h2>
+        <div class="novel-tags">{tags}</div>
+        <br>"""
+
     # ── Assemble HTML ───────────────────────────────────────────────────
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -298,6 +351,10 @@ def generate_literature_report(results: dict, entities: dict, candidates: list) 
         .entity-tag.gene {{ background: rgba(192,132,252,0.15); color: #c084fc; }}
         .entity-tag.drug {{ background: rgba(74,222,128,0.15); color: #4ade80; }}
         .entity-tag.novel {{ background: rgba(52,211,153,0.15); color: #34d399; }}
+        .entity-tag.variant {{ background: rgba(249,115,22,0.15); color: #f97316; }}
+        .entity-tag.clinical {{ background: rgba(6,182,212,0.15); color: #06b6d4; }}
+        .entity-tag.stats {{ background: rgba(168,85,247,0.15); color: #a855f7; }}
+        .entity-tag.dosage {{ background: rgba(139,92,246,0.15); color: #8b5cf6; }}
 
         /* Novel entities section */
         .novel-category {{ margin-bottom: 20px; }}
@@ -362,6 +419,18 @@ def generate_literature_report(results: dict, entities: dict, candidates: list) 
                 <div class="stat-value" style="color:#34d399">{novel_count}</div>
                 <div class="stat-label">Novel Entities (spaCy)</div>
             </div>
+            <div class="stat-card">
+                <div class="stat-value" style="color:#f97316">{variant_count}</div>
+                <div class="stat-label">Variant Mentions</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" style="color:#06b6d4">{clinical_count}</div>
+                <div class="stat-label">Clinical Mentions</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" style="color:#8b5cf6">{dosage_count}</div>
+                <div class="stat-label">Dosage Mentions</div>
+            </div>
 {extraction_stat_card}
         </div>
 
@@ -394,6 +463,10 @@ def generate_literature_report(results: dict, entities: dict, candidates: list) 
 
         <h2 class="section-title">🔬 Novel Entities Discovered (spaCy NER: {spacy_status})</h2>
         {novel_section}
+        {variant_section}
+        {clinical_section}
+        {statistics_section}
+        {dosage_section}
 
         <footer>
             <p>Lupus Literature Mining Engine · PubMed search via BioPython Entrez</p>

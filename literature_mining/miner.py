@@ -387,7 +387,19 @@ def main():
         "--extract", action="store_true",
         help="Pre-filter abstracts to only KG-relevant sentences (reduces NER tokens ~60%%)"
     )
+    parser.add_argument(
+        "--install-scispacy", action="store_true",
+        help="Install scispacy biomedical NER model for enhanced entity extraction"
+    )
     args = parser.parse_args()
+
+    if args.install_scispacy:
+        import subprocess
+        print("Installing scispacy biomedical NER models...")
+        print("Run: pip install spacy scispacy")
+        print("Then: pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/"
+              "releases/v0.5.4/en_ner_bc5cdr_md-0.5.4.tar.gz")
+        sys.exit(0)
 
     queries = [args.query] if args.query else None
 
