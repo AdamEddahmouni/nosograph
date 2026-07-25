@@ -335,6 +335,90 @@ Gene-level CD19 CAR-T cell therapy suitability scoring across all 35 lupus-assoc
 
 ---
 
+## [Phase 15] Biomarker Discovery — 2026-07-25
+
+### Sprint Goal
+Cross-module integration engine that correlates gene expression signatures with predicted treatment responses across all 5 scoring platforms to identify the most predictive biomarkers for lupus therapy selection.
+
+---
+
+### Added
+
+#### Biomarker Discovery Module (`biomarker_discovery/`)
+- **`discover.py`** — Cross-module integration engine:
+  - Loads results from all 5 scoring platforms (Gene Expression, CAR-T, Drug Repurposing, Safety, Synergy)
+  - Maps each of 35 lupus genes to scores from all available modules
+  - 5-dimensional weighted scoring:
+    - Cross-Module Consistency (30%) — consistent signal across platforms?
+    - Expression Predictiveness (25%) — does expression predict drug response?
+    - CAR-T Alignment (20%) — B cell dependency for immune reset?
+    - Druggability (15%) — existing or repurposable drugs targeting this gene?
+    - Biomarker Novelty (10%) — how novel is this biomarker?
+  - Results saved to `biomarker_matrix.json` for API consumption
+- **`report.py`** — HTML report with radar chart, highlights grid, ranked table, methodology
+
+#### Results
+- **Top Gene**: BTK — **8.29/10** — strongest cross-module signal
+- **#2**: BLK — **8.24/10** — consistent across expression + CAR-T + repurposing
+- **Bottom**: C4A — **3.13/10** — complement deficiency, weak cross-module signal
+- 35 genes scored across 5 platforms
+
+#### Web API Integration
+- **`GET /api/biomarker/discover?top_n=10`** — Ranked biomarker discovery results
+- "Biomarker" OpenAPI tag in config
+
+#### Dashboard & CLI
+- Biomarker Discovery card in the web dashboard (Phase 15)
+- CLI: `python main.py biomarker --top 15 --export-html`
+
+#### Tests
+- **7 non-slow + 3 slow tests** in `tests/test_biomarker_discovery.py`
+
+**All biomarker discovery tests pass. Platform now spans 15 phases.**
+
+---
+
+## [Phase 16] Semantic Literature Search — 2026-07-25
+
+### Sprint Goal
+Add embedding-based semantic search over cached PubMed abstracts using sentence-transformers + ChromaDB, enabling "find papers by meaning, not keywords" — inspired by Exa AI's neural search approach.
+
+---
+
+### Added
+
+#### Semantic Search Module (`semantic_search/`)
+- **`engine.py`** — Core search engine:
+  - `SemanticSearchEngine` class wrapping sentence-transformers + ChromaDB
+  - `index_articles()` — embeds and indexes cached PubMed abstracts into vector DB
+  - `search()` — cosine similarity search returning ranked results with 0-10 scores
+  - Graceful fallback if dependencies (chromadb, sentence-transformers) are missing
+  - Module-level memoization for the gene-drug target map
+- **`report.py`** — HTML report with search query display, stats grid, results table, methodology
+
+#### Demo Results
+- **106 PubMed articles indexed** into ChromaDB vector store
+- Query "B cell depletion therapy lupus" correctly ranks B-cell depletion papers first:
+  - #1: "Opportunities and limitations of B cell depletion approaches in SLE" (5.5)
+  - #2: "B-cell depletion with obinutuzumab for lupus nephritis" (4.5)
+  - #3: "B-cell depletion in autoimmune diseases" (4.2)
+
+#### Web API Integration
+- **`GET /api/semantic/search?q=...&top_k=20`** — Natural language semantic search
+- "Semantic Search" OpenAPI tag in config
+
+#### Dashboard & CLI
+- Semantic Search module card in the web dashboard (Phase 16)
+- CLI: `python main.py semantic --index --query "B cell depletion lupus" --top 10 --export-html`
+
+#### Tests
+- **6 non-slow + 4 slow tests** in `tests/test_semantic_search.py`
+  - Dependency checks, engine initialization, article loading, indexing + search, report, API, CLI
+
+**All 6 non-slow tests pass. Platform now spans 16 phases.**
+
+---
+
 ## [Future] Planned Features — Roadmap
 The following features are documented for future implementation:
 

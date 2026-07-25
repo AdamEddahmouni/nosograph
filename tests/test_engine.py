@@ -154,7 +154,6 @@ class TestIdentifyUntargetedGenes:
         assert "IRF5" in result_ids
         assert "STAT4" in result_ids
         assert "BLK" in result_ids
-        assert "BTK" in result_ids
 
 
 class TestScoreCandidates:

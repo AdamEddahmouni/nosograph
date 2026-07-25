@@ -42,6 +42,8 @@ SCRIPTS = {
     "network": "network_pharmacology/analyzer.py",
     "expression": "gene_expression/correlator.py",
     "cart": "car_t_predictor/predictor.py",
+    "biomarker": "biomarker_discovery/discover.py",
+    "semantic": "semantic_search/engine.py",
 }
 
 
@@ -414,6 +416,30 @@ def cmd_cart(args):
     return run_module(SCRIPTS["cart"], extra)
 
 
+def cmd_biomarker(args):
+    """Run biomarker discovery analysis."""
+    extra = []
+    if args.top:
+        extra.extend(["--top", str(args.top)])
+    if args.export_html:
+        extra.append("--export-html")
+    return run_module(SCRIPTS["biomarker"], extra)
+
+
+def cmd_semantic(args):
+    """Run semantic literature search."""
+    extra = []
+    if args.index:
+        extra.append("--index")
+    if args.query:
+        extra.extend(["--query", args.query])
+    if args.top:
+        extra.extend(["--top", str(args.top)])
+    if args.export_html:
+        extra.append("--export-html")
+    return run_module(SCRIPTS["semantic"], extra)
+
+
 def cmd_test(args):
     """Run the test suite."""
     cmd = [sys.executable, "-m", "pytest", "tests/", "-v", "--tb=short"]
@@ -654,7 +680,41 @@ Examples:
         help="Generate HTML report",
     )
 
-    # ── screening ───────────────────────────────────────────────────────
+    # ── biomarker ──────────────────────────────────────────────────
+    biomarker_parser = subparsers.add_parser(
+        "biomarker", help="Cross-module biomarker discovery",
+    )
+    biomarker_parser.add_argument(
+        "--top", type=int, default=15,
+        help="Number of top biomarkers to display (default: 15)",
+    )
+    biomarker_parser.add_argument(
+        "--export-html", action="store_true",
+        help="Generate HTML report",
+    )
+
+    # ── semantic ───────────────────────────────────────────────────
+    semantic_parser = subparsers.add_parser(
+        "semantic", help="Semantic literature search using embeddings",
+    )
+    semantic_parser.add_argument(
+        "--index", action="store_true",
+        help="Index cached PubMed articles into vector DB",
+    )
+    semantic_parser.add_argument(
+        "--query", type=str,
+        help="Semantic search query (natural language)",
+    )
+    semantic_parser.add_argument(
+        "--top", type=int, default=20,
+        help="Number of results (default: 20)",
+    )
+    semantic_parser.add_argument(
+        "--export-html", action="store_true",
+        help="Generate HTML report",
+    )
+
+    # ── screening ──────────────────────────────────────────────────
     screen_parser = subparsers.add_parser(
         "screening", help="Run virtual drug screening against lupus targets",
     )
@@ -696,6 +756,8 @@ Examples:
         "network": cmd_network,
         "expression": cmd_expression,
         "cart": cmd_cart,
+        "biomarker": cmd_biomarker,
+        "semantic": cmd_semantic,
         "test": cmd_test,
     }
 

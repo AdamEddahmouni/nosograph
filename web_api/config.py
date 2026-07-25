@@ -66,6 +66,16 @@ API_TAGS = [
          "CAR-T Response Predictor — gene-level CD19 CAR-T therapy "
          "suitability scoring for all 35 lupus-associated genes."
      )},
+    {"name": "Biomarker",
+     "description": (
+         "Biomarker Discovery — cross-module integration correlating gene "
+         "signatures across all 5 scoring platforms for therapy selection."
+     )},
+    {"name": "Semantic Search",
+     "description": (
+         "Embedding-based semantic literature search using sentence-transformers "
+         "and ChromaDB to find PubMed articles by meaning, not keywords."
+     )},
     {"name": "Jobs",
      "description": (
          "Submit and track async analysis jobs with real-time WebSocket "

@@ -341,6 +341,36 @@
       "category": "Lymphocyte Development"
     },
     {
+      "id": "BDCA2",
+      "name": "Blood Dendritic Cell Antigen 2 (CLEC4C)",
+      "chromosome": "12p13.31",
+      "function": "C-type lectin receptor specifically expressed on plasmacytoid dendritic cells; negatively regulates TLR7/TLR9-induced IFN-α production",
+      "lupus_evidence": "BDCA2 is the target of litifilimab (anti-BDCA2 mAb, Phase 3). Binding BDCA2 on pDCs inhibits TLR7/TLR9-mediated IFN-α production, reducing the type I interferon signature at its cellular source.",
+      "odds_ratio": null,
+      "references": ["PMID:35477763", "PMID:37494006"],
+      "category": "Innate Immune Sensing"
+    },
+    {
+      "id": "BCMA",
+      "name": "B Cell Maturation Antigen (TNFRSF17)",
+      "chromosome": "16p13.13",
+      "function": "TNF receptor superfamily member expressed on plasma cells and plasmablasts; critical for long-lived plasma cell survival",
+      "lupus_evidence": "BCMA is the target of teclistamab (BCMAxCD3 bispecific antibody). Depleting BCMA+ long-lived plasma cells may eliminate pathogenic autoantibody-producing cells in lupus. Case reports of drug-free remission after plasma cell depletion in SLE.",
+      "odds_ratio": null,
+      "references": ["PMID:36108951", "PMID:37494006"],
+      "category": "B Cell Signaling"
+    },
+    {
+      "id": "CD19",
+      "name": "CD19 (B-lymphocyte surface antigen)",
+      "chromosome": "16p11.2",
+      "function": "Pan-B-cell surface protein expressed from pre-B through mature B cells and plasmablasts; co-receptor that enhances BCR signaling",
+      "lupus_evidence": "CD19 is the target of anti-CD19 CAR-T cell therapy. Case series (n=5-8) showed drug-free remission in severe refractory SLE after CD19 CAR-T, with B cell reconstitution of naïve phenotype (Nature Medicine 2022).",
+      "odds_ratio": null,
+      "references": ["PMID:36108951", "PMID:37494006"],
+      "category": "B Cell Signaling"
+    },
+    {
       "id": "ATG5",
       "name": "Autophagy Related 5",
       "chromosome": "6q21",

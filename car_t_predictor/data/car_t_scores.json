@@ -33,6 +33,22 @@
       "recommendation": "High likelihood of response to CD19 CAR-T. B-cell-dependent pathway with strong plasma cell involvement."
     },
     {
+      "gene_id": "CD19",
+      "gene_name": "CD19 (B-lymphocyte surface antigen)",
+      "category": "B Cell Signaling",
+      "function": "Pan-B-cell surface protein expressed from pre-B through mature B cells and plasmablasts; co-receptor that enhances BCR signaling",
+      "lupus_evidence": "CD19 is the target of anti-CD19 CAR-T cell therapy. Case series (n=5-8) showed drug-free remission in severe refractory SLE after CD19 CAR-T, with B cell reconstitution of na\u00efve phenotype (Nature Medi",
+      "odds_ratio": null,
+      "b_cell_dependency": 10.0,
+      "autoantibody_association": 7.0,
+      "plasma_cell_relevance": 8.5,
+      "cd19_targeting": 10.0,
+      "clinical_evidence": 10.0,
+      "composite_score": 8.95,
+      "tier": "\ud83d\udd34 Tier 1 \u2014 Strong CAR-T Candidate",
+      "recommendation": "High likelihood of response to CD19 CAR-T. B-cell-dependent pathway with strong plasma cell involvement."
+    },
+    {
       "gene_id": "IKZF3",
       "gene_name": "IKAROS Family Zinc Finger 3 (AIOLOS)",
       "category": "Lymphocyte Development",
@@ -481,6 +497,38 @@
       "recommendation": "Limited direct CAR-T benefit. Pathway not primarily B-cell-driven. Consider alternative therapies."
     },
     {
+      "gene_id": "BDCA2",
+      "gene_name": "Blood Dendritic Cell Antigen 2 (CLEC4C)",
+      "category": "Innate Immune Sensing",
+      "function": "C-type lectin receptor specifically expressed on plasmacytoid dendritic cells; negatively regulates TLR7/TLR9-induced IFN-\u03b1 production",
+      "lupus_evidence": "BDCA2 is the target of litifilimab (anti-BDCA2 mAb, Phase 3). Binding BDCA2 on pDCs inhibits TLR7/TLR9-mediated IFN-\u03b1 production, reducing the type I interferon signature at its cellular source.",
+      "odds_ratio": null,
+      "b_cell_dependency": 3.0,
+      "autoantibody_association": 3.0,
+      "plasma_cell_relevance": 3.0,
+      "cd19_targeting": 3.0,
+      "clinical_evidence": 2.0,
+      "composite_score": 2.95,
+      "tier": "\ud83d\udfe2 Tier 4 \u2014 Limited CAR-T Benefit",
+      "recommendation": "Limited direct CAR-T benefit. Pathway not primarily B-cell-driven. Consider alternative therapies."
+    },
+    {
+      "gene_id": "BCMA",
+      "gene_name": "B Cell Maturation Antigen (TNFRSF17)",
+      "category": "B Cell Signaling",
+      "function": "TNF receptor superfamily member expressed on plasma cells and plasmablasts; critical for long-lived plasma cell survival",
+      "lupus_evidence": "BCMA is the target of teclistamab (BCMAxCD3 bispecific antibody). Depleting BCMA+ long-lived plasma cells may eliminate pathogenic autoantibody-producing cells in lupus. Case reports of drug-free remi",
+      "odds_ratio": null,
+      "b_cell_dependency": 3.0,
+      "autoantibody_association": 3.0,
+      "plasma_cell_relevance": 3.0,
+      "cd19_targeting": 3.0,
+      "clinical_evidence": 2.0,
+      "composite_score": 2.95,
+      "tier": "\ud83d\udfe2 Tier 4 \u2014 Limited CAR-T Benefit",
+      "recommendation": "Limited direct CAR-T benefit. Pathway not primarily B-cell-driven. Consider alternative therapies."
+    },
+    {
       "gene_id": "ITGAM",
       "gene_name": "Integrin Subunit Alpha M (CD11b)",
       "category": "Complement / Phagocytosis",
@@ -561,5 +609,5 @@
       "recommendation": "Limited direct CAR-T benefit. Pathway not primarily B-cell-driven. Consider alternative therapies."
     }
   ],
-  "total_genes": 35
+  "total_genes": 38
 }

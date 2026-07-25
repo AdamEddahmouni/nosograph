@@ -64,7 +64,7 @@
                 </div>
                 <div class="stat-card">
                     <div class="stat-icon">🧪</div>
-                    <div class="stat-value" style="color:#22d3ee;">7</div>
+                    <div class="stat-value" style="color:#22d3ee;">15</div>
                     <div class="stat-label">Analysis Modules</div>
                 </div>
                 <div class="stat-card">
@@ -79,7 +79,7 @@
                 </div>
                 <div class="stat-card">
                     <div class="stat-icon">✅</div>
-                    <div class="stat-value" style="color:#fbbf24;">297</div>
+                    <div class="stat-value" style="color:#fbbf24;">~465</div>
                     <div class="stat-label">Tests Passing</div>
                 </div>
             </div>
@@ -166,6 +166,31 @@
                         <button class="btn btn-secondary" onclick="runModule('ppi')">🔗 PPI</button>
                     </div>
                     <div class="module-result" id="result-bioinformatics"></div>
+                </div>
+
+                <!-- Semantic Search -->
+                <div class="module-card" style="--card-accent:#818cf8;">
+                    <div class="module-card-header">
+                        <div class="module-icon" style="background:rgba(129,140,248,0.12);">🧠</div>
+                        <div>
+                            <h3>Semantic Search</h3>
+                            <span class="module-phase"><span class="status-dot complete"></span>Phase 16</span>
+                        </div>
+                    </div>
+                    <p class="desc">
+                        Embedding-based literature search. Finds papers by meaning, not keywords.
+                        Uses sentence-transformers + ChromaDB vector search on cached PubMed abstracts.
+                    </p>
+                    <div class="tags">
+                        <span class="tag purple">sentence-transformers</span>
+                        <span class="tag blue">ChromaDB</span>
+                        <span class="tag green">Semantic</span>
+                    </div>
+                    <div class="actions">
+                        <button class="btn btn-primary" onclick="runModule('semantic')">🧠 Semantic Search</button>
+                        <a href="/semantic_search/report.html" class="btn btn-secondary">📊 Report</a>
+                    </div>
+                    <div class="module-result" id="result-semantic"></div>
                 </div>
 
                 <!-- Literature Mining -->
@@ -266,6 +291,31 @@
                         <a href="/car_t_predictor/report.html" class="btn btn-secondary">📊 Report</a>
                     </div>
                     <div class="module-result" id="result-cart"></div>
+                </div>
+
+                <!-- Biomarker Discovery -->
+                <div class="module-card" style="--card-accent:#22d3ee;">
+                    <div class="module-card-header">
+                        <div class="module-icon" style="background:rgba(34,211,238,0.12);">🧬</div>
+                        <div>
+                            <h3>Biomarker Discovery</h3>
+                            <span class="module-phase"><span class="status-dot complete"></span>Phase 15</span>
+                        </div>
+                    </div>
+                    <p class="desc">
+                        Cross-module integration correlating gene signatures across 5 scoring platforms.
+                        Identifies biomarkers predictive of therapy response (repurposing, CAR-T, expression).
+                    </p>
+                    <div class="tags">
+                        <span class="tag purple">Cross-Module</span>
+                        <span class="tag blue">35 Genes</span>
+                        <span class="tag green">5 Platforms</span>
+                    </div>
+                    <div class="actions">
+                        <button class="btn btn-primary" onclick="runModule('biomarker')">🧬 Discover Biomarkers</button>
+                        <a href="/biomarker_discovery/report.html" class="btn btn-secondary">📊 Report</a>
+                    </div>
+                    <div class="module-result" id="result-biomarker"></div>
                 </div>
 
                 <!-- Gene Expression Correlation -->

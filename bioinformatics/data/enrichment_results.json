@@ -241,6 +241,30 @@
       "chromosome": "6q21"
     },
     {
+      "gene_id": "BDCA2",
+      "symbol": "BDCA2",
+      "name": "Blood Dendritic Cell Antigen 2 (CLEC4C)",
+      "category": "Innate Immune Sensing",
+      "odds_ratio": null,
+      "chromosome": "12p13.31"
+    },
+    {
+      "gene_id": "BCMA",
+      "symbol": "BCMA",
+      "name": "B Cell Maturation Antigen (TNFRSF17)",
+      "category": "B Cell Signaling",
+      "odds_ratio": null,
+      "chromosome": "16p13.13"
+    },
+    {
+      "gene_id": "CD19",
+      "symbol": "CD19",
+      "name": "CD19 (B-lymphocyte surface antigen)",
+      "category": "B Cell Signaling",
+      "odds_ratio": null,
+      "chromosome": "16p11.2"
+    },
+    {
       "gene_id": "ATG5",
       "symbol": "ATG5",
       "name": "Autophagy Related 5",
@@ -255,13 +279,14 @@
       "terms": [
         {
           "term": "Regulation Of B Cell Activation (GO:0050864)",
-          "overlap": "5/25",
-          "p_value": 3.3135426782914337e-10,
-          "adj_p_value": 1.737001523325761e-07,
-          "odds_ratio": 191.81730769230768,
-          "combined_score": 4186.956162145931,
+          "overlap": "6/25",
+          "p_value": 2.6201613877149975e-12,
+          "adj_p_value": 1.5851976395675732e-09,
+          "odds_ratio": 224.96616541353384,
+          "combined_score": 5999.349376895564,
           "genes": [
             "BANK1",
+            "CD19",
             "TNFSF4",
             "TLR9",
             "TNFAIP3",
@@ -271,10 +296,10 @@
         {
           "term": "Positive Regulation Of Type I Interferon Production (GO:0032481)",
           "overlap": "6/64",
-          "p_value": 5.8386605826076e-10,
-          "adj_p_value": 1.737001523325761e-07,
-          "odds_ratio": 82.3903448275862,
-          "combined_score": 1751.7299177686957,
+          "p_value": 1.0585787520851094e-09,
+          "adj_p_value": 3.202200725057457e-07,
+          "odds_ratio": 73.55172413793103,
+          "combined_score": 1520.0448377385155,
           "genes": [
             "TLR9",
             "IRF7",
@@ -287,10 +312,10 @@
         {
           "term": "Toll-Like Receptor Signaling Pathway (GO:0002224)",
           "overlap": "5/31",
-          "p_value": 1.0528305372378087e-09,
-          "adj_p_value": 2.088113898854988e-07,
-          "odds_ratio": 147.50739644970415,
-          "combined_score": 3049.240971438688,
+          "p_value": 1.7185913199798071e-09,
+          "adj_p_value": 3.4658258286259444e-07,
+          "odds_ratio": 132.22811671087533,
+          "combined_score": 2668.596233295947,
           "genes": [
             "TNIP1",
             "BTK",
@@ -302,10 +327,10 @@
         {
           "term": "Regulation Of Type II Interferon Production (GO:0032649)",
           "overlap": "6/87",
-          "p_value": 3.8367598945996474e-09,
-          "adj_p_value": 5.707180343216976e-07,
-          "odds_ratio": 58.92740740740741,
-          "combined_score": 1141.9328730899606,
+          "p_value": 6.935668824063904e-09,
+          "adj_p_value": 1.0490199096396657e-06,
+          "odds_ratio": 52.60582010582011,
+          "combined_score": 988.2838869319694,
           "genes": [
             "TNFSF4",
             "TLR9",
@@ -318,10 +343,10 @@
         {
           "term": "Regulation Of Interleukin-6 Production (GO:0032675)",
           "overlap": "6/114",
-          "p_value": 1.968401496875439e-08,
-          "adj_p_value": 1.989627827539129e-06,
-          "odds_ratio": 44.13555555555556,
-          "combined_score": 783.1174183894817,
+          "p_value": 3.545911239024661e-08,
+          "adj_p_value": 3.3440645599787044e-06,
+          "odds_ratio": 39.40079365079365,
+          "combined_score": 675.9161063641826,
           "genes": [
             "TNFSF4",
             "TLR9",
@@ -332,12 +357,56 @@
           ]
         },
         {
+          "term": "Positive Regulation Of Interferon-Alpha Production (GO:0032727)",
+          "overlap": "4/21",
+          "p_value": 4.079929808208122e-08,
+          "adj_p_value": 3.3440645599787044e-06,
+          "odds_ratio": 156.46274509803922,
+          "combined_score": 2662.1511728796827,
+          "genes": [
+            "IRF7",
+            "TLR9",
+            "IRF5",
+            "TLR7"
+          ]
+        },
+        {
+          "term": "Positive Regulation Of Type II Interferon Production (GO:0032729)",
+          "overlap": "5/58",
+          "p_value": 4.4859730074787046e-08,
+          "adj_p_value": 3.3440645599787044e-06,
+          "odds_ratio": 64.77878985035784,
+          "combined_score": 1096.0393311494342,
+          "genes": [
+            "TNFSF4",
+            "TLR9",
+            "PTPN22",
+            "TLR7",
+            "TYK2"
+          ]
+        },
+        {
+          "term": "Regulation Of Type I Interferon Production (GO:0032479)",
+          "overlap": "5/59",
+          "p_value": 4.8954212638856585e-08,
+          "adj_p_value": 3.3440645599787044e-06,
+          "odds_ratio": 63.57598978288633,
+          "combined_score": 1070.1352450717577,
+          "genes": [
+            "IRF7",
+            "PTPN22",
+            "IRF5",
+            "MYD88",
+            "ATG5"
+          ]
+        },
+        {
           "term": "Positive Regulation Of Cytokine Production (GO:0001819)",
           "overlap": "8/320",
-          "p_value": 2.2536090715151853e-08,
-          "adj_p_value": 1.989627827539129e-06,
-          "odds_ratio": 21.914158305462653,
-          "combined_score": 385.867737939614,
+          "p_value": 4.974641494183196e-08,
+          "adj_p_value": 3.3440645599787044e-06,
+          "odds_ratio": 19.382642998027613,
+          "combined_score": 325.9448712572366,
           "genes": [
             "TNFSF4",
             "TLR9",
@@ -350,27 +419,12 @@
           ]
         },
         {
-          "term": "Positive Regulation Of Type II Interferon Production (GO:0032729)",
-          "overlap": "5/58",
-          "p_value": 2.7574628046270453e-08,
-          "adj_p_value": 1.989627827539129e-06,
-          "odds_ratio": 72.26415094339623,
-          "combined_score": 1257.8565317638174,
-          "genes": [
-            "TNFSF4",
-            "TLR9",
-            "PTPN22",
-            "TLR7",
-            "TYK2"
-          ]
-        },
-        {
-          "term": "Positive Regulation Of Interferon-Alpha Production (GO:0032727)",
-          "overlap": "4/21",
-          "p_value": 2.7737746483807142e-08,
-          "adj_p_value": 1.989627827539129e-06,
-          "odds_ratio": 173.87363834422658,
-          "combined_score": 3025.483316851445,
+          "term": "Regulation Of Interferon-Alpha Production (GO:0032647)",
+          "overlap": "4/26",
+          "p_value": 1.0130444329375356e-07,
+          "adj_p_value": 5.971562768809079e-06,
+          "odds_ratio": 120.87272727272727,
+          "combined_score": 1946.6716587094008,
           "genes": [
             "IRF7",
             "TLR9",
@@ -379,27 +433,12 @@
           ]
         },
         {
-          "term": "Regulation Of Type I Interferon Production (GO:0032479)",
-          "overlap": "5/59",
-          "p_value": 3.009521083672632e-08,
-          "adj_p_value": 1.989627827539129e-06,
-          "odds_ratio": 70.92236467236468,
-          "combined_score": 1228.2973263656304,
-          "genes": [
-            "IRF7",
-            "PTPN22",
-            "IRF5",
-            "MYD88",
-            "ATG5"
-          ]
-        },
-        {
           "term": "Response To Molecule Of Bacterial Origin (GO:0002237)",
           "overlap": "5/69",
-          "p_value": 6.683064861164763e-08,
-          "adj_p_value": 3.727623733868315e-06,
-          "odds_ratio": 59.81069711538461,
-          "combined_score": 988.1387503507324,
+          "p_value": 1.0857386852380144e-07,
+          "adj_p_value": 5.971562768809079e-06,
+          "odds_ratio": 53.61530172413793,
+          "combined_score": 859.7661361981498,
           "genes": [
             "TLR9",
             "TNFAIP3",
@@ -409,26 +448,12 @@
           ]
         },
         {
-          "term": "Regulation Of Interferon-Alpha Production (GO:0032647)",
-          "overlap": "4/26",
-          "p_value": 6.891405222277559e-08,
-          "adj_p_value": 3.727623733868315e-06,
-          "odds_ratio": 134.32323232323233,
-          "combined_score": 2215.044599805675,
-          "genes": [
-            "IRF7",
-            "TLR9",
-            "IRF5",
-            "TLR7"
-          ]
-        },
-        {
           "term": "Regulation Of Immune Response (GO:0050776)",
           "overlap": "5/77",
-          "p_value": 1.164768555160654e-07,
-          "adj_p_value": 5.775310752671576e-06,
-          "odds_ratio": 53.14369658119658,
-          "combined_score": 848.4695804777851,
+          "p_value": 1.8904054190622274e-07,
+          "adj_p_value": 9.530793987772062e-06,
+          "odds_ratio": 47.638888888888886,
+          "combined_score": 737.5121371868479,
           "genes": [
             "FCGR3A",
             "TNFSF4",
@@ -438,12 +463,26 @@
           ]
         },
         {
+          "term": "Receptor Signaling Pathway Via STAT (GO:0097696)",
+          "overlap": "4/31",
+          "p_value": 2.119397882493801e-07,
+          "adj_p_value": 9.86335168391346e-06,
+          "odds_ratio": 98.4641975308642,
+          "combined_score": 1513.0957413594797,
+          "genes": [
+            "STAT4",
+            "TYK2",
+            "JAK1",
+            "IFNAR1"
+          ]
+        },
+        {
           "term": "Response To Lipopolysaccharide (GO:0032496)",
           "overlap": "6/159",
-          "p_value": 1.4345005418602798e-07,
-          "adj_p_value": 6.131142789769701e-06,
-          "odds_ratio": 31.08392156862745,
-          "combined_score": 489.7980219843166,
+          "p_value": 2.56921072559944e-07,
+          "adj_p_value": 1.1102660635626151e-05,
+          "odds_ratio": 27.749299719887954,
+          "combined_score": 421.08166285080216,
           "genes": [
             "TNIP1",
             "TNFSF4",
@@ -454,26 +493,12 @@
           ]
         },
         {
-          "term": "Receptor Signaling Pathway Via STAT (GO:0097696)",
-          "overlap": "4/31",
-          "p_value": 1.4426218328869885e-07,
-          "adj_p_value": 6.131142789769701e-06,
-          "odds_ratio": 109.42112482853224,
-          "combined_score": 1723.5614527852006,
-          "genes": [
-            "STAT4",
-            "TYK2",
-            "JAK1",
-            "IFNAR1"
-          ]
-        },
-        {
           "term": "Positive Regulation Of Interferon-Beta Production (GO:0032728)",
           "overlap": "4/36",
-          "p_value": 2.68617427543834e-07,
-          "adj_p_value": 9.783697747675248e-06,
-          "odds_ratio": 92.30092592592592,
-          "combined_score": 1396.5109483709823,
+          "p_value": 3.943969621388961e-07,
+          "adj_p_value": 1.4913135130877007e-05,
+          "odds_ratio": 83.05833333333334,
+          "combined_score": 1224.7705350508295,
           "genes": [
             "TLR9",
             "IRF7",
@@ -482,285 +507,24 @@
           ]
         }
       ],
-      "total_significant": 595
+      "total_significant": 605
     },
     "KEGG_2021_Human": {
       "library": "KEGG_2021_Human",
-      "terms": [
-        {
-          "term": "Measles",
-          "overlap": "9/139",
-          "p_value": 5.152897138200425e-13,
-          "adj_p_value": 4.379962567470361e-11,
-          "odds_ratio": 62.43041958041958,
-          "combined_score": 1766.4092321631017,
-          "genes": [
-            "TLR9",
-            "IRF7",
-            "TNFAIP3",
-            "TLR7",
-            "TYK2",
-            "IRAK4",
-            "MYD88",
-            "JAK1",
-            "IFNAR1"
-          ]
-        },
-        {
-          "term": "Coronavirus disease",
-          "overlap": "10/232",
-          "p_value": 1.3013555178852221e-12,
-          "adj_p_value": 5.530760951012194e-11,
-          "odds_ratio": 42.35735735735736,
-          "combined_score": 1159.2198353850122,
-          "genes": [
-            "C1QA",
-            "C4A",
-            "FCGR2A",
-            "TLR7",
-            "TYK2",
-            "IRAK4",
-            "MYD88",
-            "C2",
-            "JAK1",
-            "IFNAR1"
-          ]
-        },
-        {
-          "term": "Epstein-Barr virus infection",
-          "overlap": "9/202",
-          "p_value": 1.5212010529638045e-11,
-          "adj_p_value": 4.310069650064112e-10,
-          "odds_ratio": 41.918040508714085,
-          "combined_score": 1044.1337813047346,
-          "genes": [
-            "BTK",
-            "IRF7",
-            "TNFAIP3",
-            "TYK2",
-            "IRAK4",
-            "HLA-DRB1",
-            "MYD88",
-            "JAK1",
-            "IFNAR1"
-          ]
-        },
-        {
-          "term": "Leishmaniasis",
-          "overlap": "7/77",
-          "p_value": 2.3149343199245987e-11,
-          "adj_p_value": 4.919235429839772e-10,
-          "odds_ratio": 82.9125,
-          "combined_score": 2030.448748420805,
-          "genes": [
-            "FCGR3A",
-            "ITGAM",
-            "FCGR2A",
-            "IRAK4",
-            "HLA-DRB1",
-            "MYD88",
-            "JAK1"
-          ]
-        },
-        {
-          "term": "Staphylococcus aureus infection",
-          "overlap": "7/95",
-          "p_value": 1.0437712644270996e-10,
-          "adj_p_value": 1.774411149526069e-09,
-          "odds_ratio": 65.8934659090909,
-          "combined_score": 1514.4302228144936,
-          "genes": [
-            "C1QA",
-            "C4A",
-            "FCGR3A",
-            "ITGAM",
-            "FCGR2A",
-            "HLA-DRB1",
-            "C2"
-          ]
-        },
-        {
-          "term": "Influenza A",
-          "overlap": "8/172",
-          "p_value": 1.6930996172753743e-10,
-          "adj_p_value": 2.3985577911401133e-09,
-          "odds_ratio": 42.00424178154825,
-          "combined_score": 945.0656165623178,
-          "genes": [
-            "IRF7",
-            "TLR7",
-            "TYK2",
-            "IRAK4",
-            "HLA-DRB1",
-            "MYD88",
-            "JAK1",
-            "IFNAR1"
-          ]
-        },
-        {
-          "term": "Toll-like receptor signaling pathway",
-          "overlap": "7/104",
-          "p_value": 1.98769825649034e-10,
-          "adj_p_value": 2.402488370593111e-09,
-          "odds_ratio": 59.75257731958763,
-          "combined_score": 1334.8052729531598,
-          "genes": [
-            "TLR9",
-            "IRF7",
-            "IRF5",
-            "TLR7",
-            "IRAK4",
-            "MYD88",
-            "IFNAR1"
-          ]
-        },
-        {
-          "term": "Tuberculosis",
-          "overlap": "8/180",
-          "p_value": 2.4338780297258887e-10,
-          "adj_p_value": 2.402488370593111e-09,
-          "odds_ratio": 40.03437815975733,
-          "combined_score": 886.2156094009296,
-          "genes": [
-            "FCGR3A",
-            "ITGAM",
-            "FCGR2A",
-            "TLR9",
-            "IRAK4",
-            "HLA-DRB1",
-            "MYD88",
-            "JAK1"
-          ]
-        },
-        {
-          "term": "NOD-like receptor signaling pathway",
-          "overlap": "8/181",
-          "p_value": 2.5438112159221166e-10,
-          "adj_p_value": 2.402488370593111e-09,
-          "odds_ratio": 39.800955013822566,
-          "combined_score": 879.2901606372249,
-          "genes": [
-            "IRF7",
-            "TNFAIP3",
-            "TYK2",
-            "IRAK4",
-            "MYD88",
-            "JAK1",
-            "ATG5",
-            "IFNAR1"
-          ]
-        },
-        {
-          "term": "Pertussis",
-          "overlap": "6/76",
-          "p_value": 1.6807426656399072e-09,
-          "adj_p_value": 1.4286312657939213e-08,
-          "odds_ratio": 68.22514285714286,
-          "combined_score": 1378.422838384168,
-          "genes": [
-            "C1QA",
-            "C4A",
-            "ITGAM",
-            "IRAK4",
-            "MYD88",
-            "C2"
-          ]
-        },
-        {
-          "term": "Hepatitis B",
-          "overlap": "7/162",
-          "p_value": 4.484351993196724e-09,
-          "adj_p_value": 3.4651810856520144e-08,
-          "odds_ratio": 37.284408602150535,
-          "combined_score": 716.7059511210637,
-          "genes": [
-            "STAT4",
-            "IRF7",
-            "TYK2",
-            "IRAK4",
-            "MYD88",
-            "JAK1",
-            "IFNAR1"
-          ]
-        },
-        {
-          "term": "Osteoclast differentiation",
-          "overlap": "6/127",
-          "p_value": 3.7625045177069245e-08,
-          "adj_p_value": 2.665107366709072e-07,
-          "odds_ratio": 39.36793388429752,
-          "combined_score": 673.0182896218964,
-          "genes": [
-            "FCGR3A",
-            "FCGR2A",
-            "BTK",
-            "TYK2",
-            "JAK1",
-            "IFNAR1"
-          ]
-        },
-        {
-          "term": "Systemic lupus erythematosus",
-          "overlap": "6/135",
-          "p_value": 5.4206584044760864e-08,
-          "adj_p_value": 3.544276649080518e-07,
-          "odds_ratio": 36.91162790697675,
-          "combined_score": 617.5486419112788,
-          "genes": [
-            "C1QA",
-            "C4A",
-            "FCGR3A",
-            "FCGR2A",
-            "HLA-DRB1",
-            "C2"
-          ]
-        },
-        {
-          "term": "Herpes simplex virus 1 infection",
-          "overlap": "8/498",
-          "p_value": 6.65561681228714e-07,
-          "adj_p_value": 4.040910207460049e-06,
-          "odds_ratio": 13.82715173025732,
-          "combined_score": 196.65852550326912,
-          "genes": [
-            "TLR9",
-            "IRF7",
-            "TYK2",
-            "IRAK4",
-            "HLA-DRB1",
-            "MYD88",
-            "JAK1",
-            "IFNAR1"
-          ]
-        },
-        {
-          "term": "Toxoplasmosis",
-          "overlap": "5/112",
-          "p_value": 7.614092839449911e-07,
-          "adj_p_value": 4.314652609021616e-06,
-          "odds_ratio": 35.69734004313444,
-          "combined_score": 502.90751062896425,
-          "genes": [
-            "TYK2",
-            "IRAK4",
-            "HLA-DRB1",
-            "MYD88",
-            "JAK1"
-          ]
-        }
-      ],
-      "total_significant": 85
+      "terms": [],
+      "total_significant": 0,
+      "error": "Error sending gene list, status code: 429"
     },
     "Reactome_2022": {
       "library": "Reactome_2022",
       "terms": [
         {
           "term": "Immune System R-HSA-168256",
-          "overlap": "23/1943",
-          "p_value": 1.6636022958731126e-17,
-          "adj_p_value": 3.0443922014477958e-15,
-          "odds_ratio": 27.02649739583333,
-          "combined_score": 1044.1676802044765,
+          "overlap": "24/1943",
+          "p_value": 2.1882553143826757e-17,
+          "adj_p_value": 4.092037437895603e-15,
+          "odds_ratio": 22.57050547159979,
+          "combined_score": 865.8235945873272,
           "genes": [
             "BLK",
             "C1QA",
@@ -772,6 +536,7 @@
             "UBE2L3",
             "C4A",
             "FCGR2A",
+            "CD19",
             "TNFSF4",
             "STAT4",
             "TLR9",
@@ -790,10 +555,10 @@
         {
           "term": "TRAF6 Mediated IRF7 Activation In TLR7/8 Or 9 Signaling R-HSA-975110",
           "overlap": "5/9",
-          "p_value": 7.994590788609435e-13,
-          "adj_p_value": 7.315050571577633e-11,
-          "odds_ratio": 959.8557692307692,
-          "combined_score": 26736.629880314584,
+          "p_value": 1.3086016538762074e-12,
+          "adj_p_value": 1.223542546374254e-10,
+          "odds_ratio": 860.4310344827586,
+          "combined_score": 23543.167302453327,
           "genes": [
             "IRF7",
             "TLR9",
@@ -804,11 +569,11 @@
         },
         {
           "term": "Innate Immune System R-HSA-168249",
-          "overlap": "13/1035",
-          "p_value": 1.5290671645465316e-09,
-          "adj_p_value": 9.327309703733844e-08,
-          "odds_ratio": 13.389378125679496,
-          "combined_score": 271.7857377208021,
+          "overlap": "14/1035",
+          "p_value": 4.767867669654147e-10,
+          "adj_p_value": 2.9719708474177518e-08,
+          "odds_ratio": 12.98873653281097,
+          "combined_score": 278.7896142910006,
           "genes": [
             "C1QA",
             "ITGAM",
@@ -816,6 +581,7 @@
             "IRAK4",
             "C4A",
             "FCGR2A",
+            "CD19",
             "TLR9",
             "BTK",
             "IRF7",
@@ -826,12 +592,29 @@
           ]
         },
         {
+          "term": "Toll-like Receptor Cascades R-HSA-168898",
+          "overlap": "7/162",
+          "p_value": 8.989117135356703e-09,
+          "adj_p_value": 4.17942564521897e-07,
+          "odds_ratio": 33.13667861409797,
+          "combined_score": 613.9315685664837,
+          "genes": [
+            "ITGAM",
+            "TLR9",
+            "BTK",
+            "IRF7",
+            "TLR7",
+            "IRAK4",
+            "MYD88"
+          ]
+        },
+        {
           "term": "Cytokine Signaling In Immune System R-HSA-1280215",
           "overlap": "11/702",
-          "p_value": 4.1101028821446305e-09,
-          "adj_p_value": 1.6412728295100014e-07,
-          "odds_ratio": 15.344283646888568,
-          "combined_score": 296.29532113387523,
+          "p_value": 1.2614007677843733e-08,
+          "adj_p_value": 4.17942564521897e-07,
+          "odds_ratio": 13.340778959290253,
+          "combined_score": 242.64819672145595,
           "genes": [
             "ITGAM",
             "TNFSF4",
@@ -847,29 +630,12 @@
           ]
         },
         {
-          "term": "Toll-like Receptor Cascades R-HSA-168898",
-          "overlap": "7/162",
-          "p_value": 4.484351993196724e-09,
-          "adj_p_value": 1.6412728295100014e-07,
-          "odds_ratio": 37.284408602150535,
-          "combined_score": 716.7059511210637,
-          "genes": [
-            "ITGAM",
-            "TLR9",
-            "BTK",
-            "IRF7",
-            "TLR7",
-            "IRAK4",
-            "MYD88"
-          ]
-        },
-        {
           "term": "Potential Therapeutics For SARS R-HSA-9679191",
           "overlap": "6/97",
-          "p_value": 7.427824881728051e-09,
-          "adj_p_value": 2.2654865889270558e-07,
-          "odds_ratio": 52.425494505494505,
-          "combined_score": 981.30212409331,
+          "p_value": 1.3409921856317552e-08,
+          "adj_p_value": 4.17942564521897e-07,
+          "odds_ratio": 46.801412872841446,
+          "combined_score": 848.3818927815926,
           "genes": [
             "TLR9",
             "BTK",
@@ -882,10 +648,10 @@
         {
           "term": "Interferon Alpha/Beta Signaling R-HSA-909733",
           "overlap": "5/72",
-          "p_value": 8.293164570203492e-08,
-          "adj_p_value": 2.1680701662103416e-06,
-          "odds_ratio": 57.123995407577496,
-          "combined_score": 931.4209755194554,
+          "p_value": 1.3468121876973834e-07,
+          "adj_p_value": 3.59791255856301e-06,
+          "odds_ratio": 51.206896551724135,
+          "combined_score": 810.1112917958753,
           "genes": [
             "IRF7",
             "IRF5",
@@ -897,10 +663,10 @@
         {
           "term": "MyD88 Dependent Cascade Initiated On Endosome R-HSA-975155",
           "overlap": "5/102",
-          "p_value": 4.778904272322638e-07,
-          "adj_p_value": 9.631311060712246e-06,
-          "odds_ratio": 39.39730372720064,
-          "combined_score": 573.383802638559,
+          "p_value": 7.731914350652585e-07,
+          "adj_p_value": 1.539533050205087e-05,
+          "odds_ratio": 35.31638819765375,
+          "combined_score": 496.99831942363016,
           "genes": [
             "TLR9",
             "IRF7",
@@ -912,10 +678,10 @@
         {
           "term": "Toll Like Receptor 7/8 (TLR7/8) Cascade R-HSA-168181",
           "overlap": "5/103",
-          "p_value": 5.017280606191403e-07,
-          "adj_p_value": 9.631311060712246e-06,
-          "odds_ratio": 38.99332810047096,
-          "combined_score": 565.6063181743639,
+          "p_value": 8.116575815093361e-07,
+          "adj_p_value": 1.539533050205087e-05,
+          "odds_ratio": 34.954257565095006,
+          "combined_score": 490.20505444414255,
           "genes": [
             "TLR9",
             "IRF7",
@@ -925,28 +691,12 @@
           ]
         },
         {
-          "term": "Interferon Signaling R-HSA-913531",
-          "overlap": "6/200",
-          "p_value": 5.545240890163118e-07,
-          "adj_p_value": 9.631311060712246e-06,
-          "odds_ratio": 24.463917525773194,
-          "combined_score": 352.4065382588108,
-          "genes": [
-            "IRF7",
-            "IRF5",
-            "TYK2",
-            "HLA-DRB1",
-            "JAK1",
-            "IFNAR1"
-          ]
-        },
-        {
           "term": "Toll Like Receptor 9 (TLR9) Cascade R-HSA-168138",
           "overlap": "5/106",
-          "p_value": 5.789312659444519e-07,
-          "adj_p_value": 9.631311060712246e-06,
-          "odds_ratio": 37.82939832444783,
-          "combined_score": 543.3089237003975,
+          "p_value": 9.36200219876097e-07,
+          "adj_p_value": 1.539533050205087e-05,
+          "odds_ratio": 33.91089108910891,
+          "combined_score": 470.7318804037574,
           "genes": [
             "TLR9",
             "IRF7",
@@ -958,10 +708,10 @@
         {
           "term": "Interleukin-35 Signaling R-HSA-8984722",
           "overlap": "3/12",
-          "p_value": 7.347354101262715e-07,
-          "adj_p_value": 1.120471500442564e-05,
-          "odds_ratio": 237.6190476190476,
-          "combined_score": 3356.0733042831894,
+          "p_value": 9.77134651221229e-07,
+          "adj_p_value": 1.539533050205087e-05,
+          "odds_ratio": 214.5913978494624,
+          "combined_score": 2969.6533966324346,
           "genes": [
             "STAT4",
             "TYK2",
@@ -969,12 +719,28 @@
           ]
         },
         {
+          "term": "Interferon Signaling R-HSA-913531",
+          "overlap": "6/200",
+          "p_value": 9.879356471904303e-07,
+          "adj_p_value": 1.539533050205087e-05,
+          "odds_ratio": 21.83946980854197,
+          "combined_score": 301.98850704121634,
+          "genes": [
+            "IRF7",
+            "IRF5",
+            "TYK2",
+            "HLA-DRB1",
+            "JAK1",
+            "IFNAR1"
+          ]
+        },
+        {
           "term": "SARS-CoV-2 Activates/Modulates Innate And Adaptive Immune Responses R-HSA-9705671",
           "overlap": "5/121",
-          "p_value": 1.1173128779208655e-06,
-          "adj_p_value": 1.5728327435347573e-05,
-          "odds_ratio": 32.912798408488065,
-          "combined_score": 451.0562095271698,
+          "p_value": 1.803445906346326e-06,
+          "adj_p_value": 2.5941875729751e-05,
+          "odds_ratio": 29.50356718192628,
+          "combined_score": 390.20861313259945,
           "genes": [
             "IRF7",
             "TLR7",
@@ -986,10 +752,10 @@
         {
           "term": "SARS-CoV Infections R-HSA-9679506",
           "overlap": "7/369",
-          "p_value": 1.2341766759470535e-06,
-          "adj_p_value": 1.6132452264165057e-05,
-          "odds_ratio": 15.797536832412524,
-          "combined_score": 214.9271705584907,
+          "p_value": 2.4074395316101127e-06,
+          "adj_p_value": 3.215651374364936e-05,
+          "odds_ratio": 14.040106404747288,
+          "combined_score": 181.63610976864024,
           "genes": [
             "TLR9",
             "BTK",
@@ -1001,28 +767,256 @@
           ]
         },
         {
-          "term": "Toll Like Receptor 4 (TLR4) Cascade R-HSA-166016",
-          "overlap": "5/140",
-          "p_value": 2.295724651389782e-06,
-          "adj_p_value": 2.800784074695534e-05,
-          "odds_ratio": 28.25356125356125,
-          "combined_score": 366.8572928020351,
+          "term": "IRAK4 Deficiency (TLR2/4) R-HSA-5603041",
+          "overlap": "3/18",
+          "p_value": 3.599140895893345e-06,
+          "adj_p_value": 4.320558625383835e-05,
+          "odds_ratio": 128.71612903225807,
+          "combined_score": 1613.432913977732,
           "genes": [
-            "ITGAM",
             "BTK",
-            "IRF7",
             "IRAK4",
             "MYD88"
           ]
         }
       ],
-      "total_significant": 183
+      "total_significant": 187
     },
     "WikiPathway_2023_Human": {
       "library": "WikiPathway_2023_Human",
-      "terms": [],
-      "total_significant": 0,
-      "error": "Error sending gene list, status code: 429"
+      "terms": [
+        {
+          "term": "Type I Interferon Induction And Signaling During SARS CoV 2 Infection WP4868",
+          "overlap": "8/31",
+          "p_value": 2.1983316549506954e-16,
+          "adj_p_value": 2.9457644176339325e-14,
+          "odds_ratio": 266.7959866220736,
+          "combined_score": 9618.97252576184,
+          "genes": [
+            "IRF7",
+            "TLR9",
+            "TLR7",
+            "TYK2",
+            "IRAK4",
+            "MYD88",
+            "JAK1",
+            "IFNAR1"
+          ]
+        },
+        {
+          "term": "Measles Virus Infection WP4630",
+          "overlap": "9/136",
+          "p_value": 1.0796446066627909e-12,
+          "adj_p_value": 7.233618864640699e-11,
+          "odds_ratio": 56.23653543307086,
+          "combined_score": 1549.5633844053907,
+          "genes": [
+            "TLR9",
+            "IRF7",
+            "TNFAIP3",
+            "TLR7",
+            "TYK2",
+            "IRAK4",
+            "MYD88",
+            "JAK1",
+            "IFNAR1"
+          ]
+        },
+        {
+          "term": "Genes Associated With The Development Of Rheumatoid Arthritis WP5033",
+          "overlap": "5/18",
+          "p_value": 8.803046038484887e-11,
+          "adj_p_value": 3.9320272305232504e-09,
+          "odds_ratio": 264.6286472148541,
+          "combined_score": 6127.036571827024,
+          "genes": [
+            "BLK",
+            "STAT4",
+            "PTPN22",
+            "IRF5",
+            "HLA-DRB1"
+          ]
+        },
+        {
+          "term": "Toll Like Receptor Signaling Pathway WP75",
+          "overlap": "7/102",
+          "p_value": 3.4985146109385183e-10,
+          "adj_p_value": 1.1720023946644036e-08,
+          "odds_ratio": 54.22884990253412,
+          "combined_score": 1180.7525384153305,
+          "genes": [
+            "TLR9",
+            "IRF7",
+            "IRF5",
+            "TLR7",
+            "IRAK4",
+            "MYD88",
+            "IFNAR1"
+          ]
+        },
+        {
+          "term": "Toll Like Receptor Signaling Related To MyD88 WP3858",
+          "overlap": "5/30",
+          "p_value": 1.4431389164745711e-09,
+          "adj_p_value": 3.86761229615185e-08,
+          "odds_ratio": 137.5241379310345,
+          "combined_score": 2799.5025902016578,
+          "genes": [
+            "TLR9",
+            "IRF7",
+            "TLR7",
+            "IRAK4",
+            "MYD88"
+          ]
+        },
+        {
+          "term": "Host Pathogen Interaction Of Human Coronaviruses Interferon Induction WP4880",
+          "overlap": "5/32",
+          "p_value": 2.0343931819757053e-09,
+          "adj_p_value": 4.5434781064124096e-08,
+          "odds_ratio": 127.32439335887612,
+          "combined_score": 2548.151774587818,
+          "genes": [
+            "TLR7",
+            "TYK2",
+            "MYD88",
+            "JAK1",
+            "IFNAR1"
+          ]
+        },
+        {
+          "term": "miRNA Role In Immune Response In Sepsis WP4329",
+          "overlap": "5/37",
+          "p_value": 4.377140906694946e-09,
+          "adj_p_value": 8.379098307101755e-08,
+          "odds_ratio": 107.40301724137932,
+          "combined_score": 2067.171919767419,
+          "genes": [
+            "IRF7",
+            "IRF5",
+            "TLR7",
+            "IRAK4",
+            "MYD88"
+          ]
+        },
+        {
+          "term": "Hepatitis B Infection WP4666",
+          "overlap": "7/150",
+          "p_value": 5.2637909352232956e-09,
+          "adj_p_value": 8.81684981649902e-08,
+          "odds_ratio": 35.93913493913494,
+          "combined_score": 685.0866819377081,
+          "genes": [
+            "STAT4",
+            "IRF7",
+            "TYK2",
+            "IRAK4",
+            "MYD88",
+            "JAK1",
+            "IFNAR1"
+          ]
+        },
+        {
+          "term": "T Cell Activation SARS CoV 2 WP5098",
+          "overlap": "5/88",
+          "p_value": 3.698764112548014e-07,
+          "adj_p_value": 5.50704878979371e-06,
+          "odds_ratio": 41.30245118404653,
+          "combined_score": 611.6933046869253,
+          "genes": [
+            "STAT4",
+            "TYK2",
+            "HLA-DRB1",
+            "MYD88",
+            "IFNAR1"
+          ]
+        },
+        {
+          "term": "Vitamin D Receptor Pathway WP2877",
+          "overlap": "6/186",
+          "p_value": 6.463263195160753e-07,
+          "adj_p_value": 8.66077268151541e-06,
+          "odds_ratio": 23.554761904761904,
+          "combined_score": 335.701555618732,
+          "genes": [
+            "ITGAM",
+            "TNFSF4",
+            "TNFAIP3",
+            "IRF5",
+            "PRDM1",
+            "HLA-DRB1"
+          ]
+        },
+        {
+          "term": "Interferon Type I Signaling Pathways WP585",
+          "overlap": "4/54",
+          "p_value": 2.072229455747735e-06,
+          "adj_p_value": 2.524352246092695e-05,
+          "odds_ratio": 53.10933333333333,
+          "combined_score": 695.0357642353956,
+          "genes": [
+            "STAT4",
+            "TYK2",
+            "JAK1",
+            "IFNAR1"
+          ]
+        },
+        {
+          "term": "MYD88 Distinct Input Output Pathway WP3877",
+          "overlap": "3/18",
+          "p_value": 3.599140895893345e-06,
+          "adj_p_value": 4.019040667080902e-05,
+          "odds_ratio": 128.71612903225807,
+          "combined_score": 1613.432913977732,
+          "genes": [
+            "TLR9",
+            "TLR7",
+            "MYD88"
+          ]
+        },
+        {
+          "term": "SARS CoV 2 Innate Immunity Evasion And Cell Specific Immune Response WP5039",
+          "overlap": "4/66",
+          "p_value": 4.655013745625081e-06,
+          "adj_p_value": 4.798244937798161e-05,
+          "odds_ratio": 42.80430107526882,
+          "combined_score": 525.5326184530483,
+          "genes": [
+            "IRF7",
+            "TLR7",
+            "JAK1",
+            "IFNAR1"
+          ]
+        },
+        {
+          "term": "Immune Response To Tuberculosis WP4197",
+          "overlap": "3/22",
+          "p_value": 6.761030305692242e-06,
+          "adj_p_value": 6.471271864019717e-05,
+          "odds_ratio": 101.59762308998302,
+          "combined_score": 1209.4521676379877,
+          "genes": [
+            "TYK2",
+            "JAK1",
+            "IFNAR1"
+          ]
+        },
+        {
+          "term": "Extrafollicular And Follicular B Cell Activation By SARS CoV 2 WP5218",
+          "overlap": "4/74",
+          "p_value": 7.360727517334719e-06,
+          "adj_p_value": 6.50416181272176e-05,
+          "odds_ratio": 37.89714285714286,
+          "combined_score": 447.91966298570935,
+          "genes": [
+            "C4A",
+            "CD19",
+            "TLR7",
+            "PRDM1"
+          ]
+        }
+      ],
+      "total_significant": 134
     }
   },
   "kg_pathway_matches": {
@@ -1032,7 +1026,7 @@
         "kg_pathway_name": "B Cell Receptor Signaling & Survival",
         "enrichment_term": "Regulation Of B Cell Activation (GO:0050864)",
         "library": "GO_Biological_Process_2023",
-        "adj_p_value": 1.737001523325761e-07
+        "adj_p_value": 1.5851976395675732e-09
       }
     ],
     "tcell-costim ↔ Regulation Of B Cell Activation (GO:0050864)": [
@@ -1041,7 +1035,7 @@
         "kg_pathway_name": "T Cell Costimulation & Follicular Help",
         "enrichment_term": "Regulation Of B Cell Activation (GO:0050864)",
         "library": "GO_Biological_Process_2023",
-        "adj_p_value": 1.737001523325761e-07
+        "adj_p_value": 1.5851976395675732e-09
       }
     ],
     "tlr-sensing ↔ Regulation Of B Cell Activation (GO:0050864)": [
@@ -1050,7 +1044,7 @@
         "kg_pathway_name": "Endosomal TLR Sensing of Nucleic Acids",
         "enrichment_term": "Regulation Of B Cell Activation (GO:0050864)",
         "library": "GO_Biological_Process_2023",
-        "adj_p_value": 1.737001523325761e-07
+        "adj_p_value": 1.5851976395675732e-09
       }
     ],
     "type1-ifn ↔ Positive Regulation Of Type I Interferon Production (GO:0032": [
@@ -1059,7 +1053,7 @@
         "kg_pathway_name": "Type I Interferon Pathway",
         "enrichment_term": "Positive Regulation Of Type I Interferon Production (GO:0032481)",
         "library": "GO_Biological_Process_2023",
-        "adj_p_value": 1.737001523325761e-07
+        "adj_p_value": 3.202200725057457e-07
       }
     ],
     "tlr-sensing ↔ Positive Regulation Of Type I Interferon Production (GO:0032": [
@@ -1068,7 +1062,7 @@
         "kg_pathway_name": "Endosomal TLR Sensing of Nucleic Acids",
         "enrichment_term": "Positive Regulation Of Type I Interferon Production (GO:0032481)",
         "library": "GO_Biological_Process_2023",
-        "adj_p_value": 1.737001523325761e-07
+        "adj_p_value": 3.202200725057457e-07
       }
     ],
     "type1-ifn ↔ Toll-Like Receptor Signaling Pathway (GO:0002224)": [
@@ -1077,7 +1071,7 @@
         "kg_pathway_name": "Type I Interferon Pathway",
         "enrichment_term": "Toll-Like Receptor Signaling Pathway (GO:0002224)",
         "library": "GO_Biological_Process_2023",
-        "adj_p_value": 2.088113898854988e-07
+        "adj_p_value": 3.4658258286259444e-07
       }
     ],
     "bcell-signaling ↔ Toll-Like Receptor Signaling Pathway (GO:0002224)": [
@@ -1086,7 +1080,7 @@
         "kg_pathway_name": "B Cell Receptor Signaling & Survival",
         "enrichment_term": "Toll-Like Receptor Signaling Pathway (GO:0002224)",
         "library": "GO_Biological_Process_2023",
-        "adj_p_value": 2.088113898854988e-07
+        "adj_p_value": 3.4658258286259444e-07
       }
     ],
     "jak-stat ↔ Toll-Like Receptor Signaling Pathway (GO:0002224)": [
@@ -1095,7 +1089,7 @@
         "kg_pathway_name": "JAK-STAT Signaling",
         "enrichment_term": "Toll-Like Receptor Signaling Pathway (GO:0002224)",
         "library": "GO_Biological_Process_2023",
-        "adj_p_value": 2.088113898854988e-07
+        "adj_p_value": 3.4658258286259444e-07
       }
     ],
     "nfkb ↔ Toll-Like Receptor Signaling Pathway (GO:0002224)": [
@@ -1104,7 +1098,7 @@
         "kg_pathway_name": "NF-κB Inflammatory Pathway",
         "enrichment_term": "Toll-Like Receptor Signaling Pathway (GO:0002224)",
         "library": "GO_Biological_Process_2023",
-        "adj_p_value": 2.088113898854988e-07
+        "adj_p_value": 3.4658258286259444e-07
       }
     ],
     "type1-ifn ↔ Regulation Of Type II Interferon Production (GO:0032649)": [
@@ -1113,7 +1107,7 @@
         "kg_pathway_name": "Type I Interferon Pathway",
         "enrichment_term": "Regulation Of Type II Interferon Production (GO:0032649)",
         "library": "GO_Biological_Process_2023",
-        "adj_p_value": 5.707180343216976e-07
+        "adj_p_value": 1.0490199096396657e-06
       }
     ],
     "tlr-sensing ↔ Regulation Of Type II Interferon Production (GO:0032649)": [
@@ -1122,25 +1116,7 @@
         "kg_pathway_name": "Endosomal TLR Sensing of Nucleic Acids",
         "enrichment_term": "Regulation Of Type II Interferon Production (GO:0032649)",
         "library": "GO_Biological_Process_2023",
-        "adj_p_value": 5.707180343216976e-07
-      }
-    ],
-    "type1-ifn ↔ Positive Regulation Of Type II Interferon Production (GO:003": [
-      {
-        "kg_pathway_id": "type1-ifn",
-        "kg_pathway_name": "Type I Interferon Pathway",
-        "enrichment_term": "Positive Regulation Of Type II Interferon Production (GO:0032729)",
-        "library": "GO_Biological_Process_2023",
-        "adj_p_value": 1.989627827539129e-06
-      }
-    ],
-    "tlr-sensing ↔ Positive Regulation Of Type II Interferon Production (GO:003": [
-      {
-        "kg_pathway_id": "tlr-sensing",
-        "kg_pathway_name": "Endosomal TLR Sensing of Nucleic Acids",
-        "enrichment_term": "Positive Regulation Of Type II Interferon Production (GO:0032729)",
-        "library": "GO_Biological_Process_2023",
-        "adj_p_value": 1.989627827539129e-06
+        "adj_p_value": 1.0490199096396657e-06
       }
     ],
     "tlr-sensing ↔ Positive Regulation Of Interferon-Alpha Production (GO:00327": [
@@ -1149,7 +1125,25 @@
         "kg_pathway_name": "Endosomal TLR Sensing of Nucleic Acids",
         "enrichment_term": "Positive Regulation Of Interferon-Alpha Production (GO:0032727)",
         "library": "GO_Biological_Process_2023",
-        "adj_p_value": 1.989627827539129e-06
+        "adj_p_value": 3.3440645599787044e-06
+      }
+    ],
+    "type1-ifn ↔ Positive Regulation Of Type II Interferon Production (GO:003": [
+      {
+        "kg_pathway_id": "type1-ifn",
+        "kg_pathway_name": "Type I Interferon Pathway",
+        "enrichment_term": "Positive Regulation Of Type II Interferon Production (GO:0032729)",
+        "library": "GO_Biological_Process_2023",
+        "adj_p_value": 3.3440645599787044e-06
+      }
+    ],
+    "tlr-sensing ↔ Positive Regulation Of Type II Interferon Production (GO:003": [
+      {
+        "kg_pathway_id": "tlr-sensing",
+        "kg_pathway_name": "Endosomal TLR Sensing of Nucleic Acids",
+        "enrichment_term": "Positive Regulation Of Type II Interferon Production (GO:0032729)",
+        "library": "GO_Biological_Process_2023",
+        "adj_p_value": 3.3440645599787044e-06
       }
     ],
     "type1-ifn ↔ Regulation Of Type I Interferon Production (GO:0032479)": [
@@ -1158,7 +1152,7 @@
         "kg_pathway_name": "Type I Interferon Pathway",
         "enrichment_term": "Regulation Of Type I Interferon Production (GO:0032479)",
         "library": "GO_Biological_Process_2023",
-        "adj_p_value": 1.989627827539129e-06
+        "adj_p_value": 3.3440645599787044e-06
       }
     ],
     "tlr-sensing ↔ Regulation Of Type I Interferon Production (GO:0032479)": [
@@ -1167,7 +1161,7 @@
         "kg_pathway_name": "Endosomal TLR Sensing of Nucleic Acids",
         "enrichment_term": "Regulation Of Type I Interferon Production (GO:0032479)",
         "library": "GO_Biological_Process_2023",
-        "adj_p_value": 1.989627827539129e-06
+        "adj_p_value": 3.3440645599787044e-06
       }
     ],
     "tlr-sensing ↔ Regulation Of Interferon-Alpha Production (GO:0032647)": [
@@ -1176,7 +1170,7 @@
         "kg_pathway_name": "Endosomal TLR Sensing of Nucleic Acids",
         "enrichment_term": "Regulation Of Interferon-Alpha Production (GO:0032647)",
         "library": "GO_Biological_Process_2023",
-        "adj_p_value": 3.727623733868315e-06
+        "adj_p_value": 5.971562768809079e-06
       }
     ],
     "type1-ifn ↔ Receptor Signaling Pathway Via STAT (GO:0097696)": [
@@ -1185,7 +1179,7 @@
         "kg_pathway_name": "Type I Interferon Pathway",
         "enrichment_term": "Receptor Signaling Pathway Via STAT (GO:0097696)",
         "library": "GO_Biological_Process_2023",
-        "adj_p_value": 6.131142789769701e-06
+        "adj_p_value": 9.86335168391346e-06
       }
     ],
     "bcell-signaling ↔ Receptor Signaling Pathway Via STAT (GO:0097696)": [
@@ -1194,7 +1188,7 @@
         "kg_pathway_name": "B Cell Receptor Signaling & Survival",
         "enrichment_term": "Receptor Signaling Pathway Via STAT (GO:0097696)",
         "library": "GO_Biological_Process_2023",
-        "adj_p_value": 6.131142789769701e-06
+        "adj_p_value": 9.86335168391346e-06
       }
     ],
     "jak-stat ↔ Receptor Signaling Pathway Via STAT (GO:0097696)": [
@@ -1203,7 +1197,7 @@
         "kg_pathway_name": "JAK-STAT Signaling",
         "enrichment_term": "Receptor Signaling Pathway Via STAT (GO:0097696)",
         "library": "GO_Biological_Process_2023",
-        "adj_p_value": 6.131142789769701e-06
+        "adj_p_value": 9.86335168391346e-06
       }
     ],
     "nfkb ↔ Receptor Signaling Pathway Via STAT (GO:0097696)": [
@@ -1212,7 +1206,7 @@
         "kg_pathway_name": "NF-κB Inflammatory Pathway",
         "enrichment_term": "Receptor Signaling Pathway Via STAT (GO:0097696)",
         "library": "GO_Biological_Process_2023",
-        "adj_p_value": 6.131142789769701e-06
+        "adj_p_value": 9.86335168391346e-06
       }
     ],
     "tlr-sensing ↔ Positive Regulation Of Interferon-Beta Production (GO:003272": [
@@ -1221,52 +1215,7 @@
         "kg_pathway_name": "Endosomal TLR Sensing of Nucleic Acids",
         "enrichment_term": "Positive Regulation Of Interferon-Beta Production (GO:0032728)",
         "library": "GO_Biological_Process_2023",
-        "adj_p_value": 9.783697747675248e-06
-      }
-    ],
-    "type1-ifn ↔ Toll-like receptor signaling pathway": [
-      {
-        "kg_pathway_id": "type1-ifn",
-        "kg_pathway_name": "Type I Interferon Pathway",
-        "enrichment_term": "Toll-like receptor signaling pathway",
-        "library": "KEGG_2021_Human",
-        "adj_p_value": 2.402488370593111e-09
-      }
-    ],
-    "bcell-signaling ↔ Toll-like receptor signaling pathway": [
-      {
-        "kg_pathway_id": "bcell-signaling",
-        "kg_pathway_name": "B Cell Receptor Signaling & Survival",
-        "enrichment_term": "Toll-like receptor signaling pathway",
-        "library": "KEGG_2021_Human",
-        "adj_p_value": 2.402488370593111e-09
-      }
-    ],
-    "jak-stat ↔ Toll-like receptor signaling pathway": [
-      {
-        "kg_pathway_id": "jak-stat",
-        "kg_pathway_name": "JAK-STAT Signaling",
-        "enrichment_term": "Toll-like receptor signaling pathway",
-        "library": "KEGG_2021_Human",
-        "adj_p_value": 2.402488370593111e-09
-      }
-    ],
-    "nfkb ↔ Toll-like receptor signaling pathway": [
-      {
-        "kg_pathway_id": "nfkb",
-        "kg_pathway_name": "NF-κB Inflammatory Pathway",
-        "enrichment_term": "Toll-like receptor signaling pathway",
-        "library": "KEGG_2021_Human",
-        "adj_p_value": 2.402488370593111e-09
-      }
-    ],
-    "bcell-signaling ↔ NOD-like receptor signaling pathway": [
-      {
-        "kg_pathway_id": "bcell-signaling",
-        "kg_pathway_name": "B Cell Receptor Signaling & Survival",
-        "enrichment_term": "NOD-like receptor signaling pathway",
-        "library": "KEGG_2021_Human",
-        "adj_p_value": 2.402488370593111e-09
+        "adj_p_value": 1.4913135130877007e-05
       }
     ],
     "complement ↔ Immune System R-HSA-168256": [
@@ -1275,7 +1224,7 @@
         "kg_pathway_name": "Complement System & Immune Complex Clearance",
         "enrichment_term": "Immune System R-HSA-168256",
         "library": "Reactome_2022",
-        "adj_p_value": 3.0443922014477958e-15
+        "adj_p_value": 4.092037437895603e-15
       }
     ],
     "bcell-signaling ↔ TRAF6 Mediated IRF7 Activation In TLR7/8 Or 9 Signaling R-HS": [
@@ -1284,7 +1233,7 @@
         "kg_pathway_name": "B Cell Receptor Signaling & Survival",
         "enrichment_term": "TRAF6 Mediated IRF7 Activation In TLR7/8 Or 9 Signaling R-HSA-975110",
         "library": "Reactome_2022",
-        "adj_p_value": 7.315050571577633e-11
+        "adj_p_value": 1.223542546374254e-10
       }
     ],
     "jak-stat ↔ TRAF6 Mediated IRF7 Activation In TLR7/8 Or 9 Signaling R-HS": [
@@ -1293,7 +1242,7 @@
         "kg_pathway_name": "JAK-STAT Signaling",
         "enrichment_term": "TRAF6 Mediated IRF7 Activation In TLR7/8 Or 9 Signaling R-HSA-975110",
         "library": "Reactome_2022",
-        "adj_p_value": 7.315050571577633e-11
+        "adj_p_value": 1.223542546374254e-10
       }
     ],
     "complement ↔ Innate Immune System R-HSA-168249": [
@@ -1302,16 +1251,7 @@
         "kg_pathway_name": "Complement System & Immune Complex Clearance",
         "enrichment_term": "Innate Immune System R-HSA-168249",
         "library": "Reactome_2022",
-        "adj_p_value": 9.327309703733844e-08
-      }
-    ],
-    "complement ↔ Cytokine Signaling In Immune System R-HSA-1280215": [
-      {
-        "kg_pathway_id": "complement",
-        "kg_pathway_name": "Complement System & Immune Complex Clearance",
-        "enrichment_term": "Cytokine Signaling In Immune System R-HSA-1280215",
-        "library": "Reactome_2022",
-        "adj_p_value": 1.6412728295100014e-07
+        "adj_p_value": 2.9719708474177518e-08
       }
     ],
     "bcell-signaling ↔ Toll-like Receptor Cascades R-HSA-168898": [
@@ -1320,7 +1260,16 @@
         "kg_pathway_name": "B Cell Receptor Signaling & Survival",
         "enrichment_term": "Toll-like Receptor Cascades R-HSA-168898",
         "library": "Reactome_2022",
-        "adj_p_value": 1.6412728295100014e-07
+        "adj_p_value": 4.17942564521897e-07
+      }
+    ],
+    "complement ↔ Cytokine Signaling In Immune System R-HSA-1280215": [
+      {
+        "kg_pathway_id": "complement",
+        "kg_pathway_name": "Complement System & Immune Complex Clearance",
+        "enrichment_term": "Cytokine Signaling In Immune System R-HSA-1280215",
+        "library": "Reactome_2022",
+        "adj_p_value": 4.17942564521897e-07
       }
     ],
     "type1-ifn ↔ Interferon Alpha/Beta Signaling R-HSA-909733": [
@@ -1329,7 +1278,7 @@
         "kg_pathway_name": "Type I Interferon Pathway",
         "enrichment_term": "Interferon Alpha/Beta Signaling R-HSA-909733",
         "library": "Reactome_2022",
-        "adj_p_value": 2.1680701662103416e-06
+        "adj_p_value": 3.59791255856301e-06
       }
     ],
     "bcell-signaling ↔ Interferon Alpha/Beta Signaling R-HSA-909733": [
@@ -1338,7 +1287,7 @@
         "kg_pathway_name": "B Cell Receptor Signaling & Survival",
         "enrichment_term": "Interferon Alpha/Beta Signaling R-HSA-909733",
         "library": "Reactome_2022",
-        "adj_p_value": 2.1680701662103416e-06
+        "adj_p_value": 3.59791255856301e-06
       }
     ],
     "jak-stat ↔ Interferon Alpha/Beta Signaling R-HSA-909733": [
@@ -1347,7 +1296,7 @@
         "kg_pathway_name": "JAK-STAT Signaling",
         "enrichment_term": "Interferon Alpha/Beta Signaling R-HSA-909733",
         "library": "Reactome_2022",
-        "adj_p_value": 2.1680701662103416e-06
+        "adj_p_value": 3.59791255856301e-06
       }
     ],
     "bcell-signaling ↔ Toll Like Receptor 7/8 (TLR7/8) Cascade R-HSA-168181": [
@@ -1356,7 +1305,7 @@
         "kg_pathway_name": "B Cell Receptor Signaling & Survival",
         "enrichment_term": "Toll Like Receptor 7/8 (TLR7/8) Cascade R-HSA-168181",
         "library": "Reactome_2022",
-        "adj_p_value": 9.631311060712246e-06
+        "adj_p_value": 1.539533050205087e-05
       }
     ],
     "complement-cascade ↔ Toll Like Receptor 7/8 (TLR7/8) Cascade R-HSA-168181": [
@@ -1365,34 +1314,7 @@
         "kg_pathway_name": "Complement Cascade (Classical & Terminal)",
         "enrichment_term": "Toll Like Receptor 7/8 (TLR7/8) Cascade R-HSA-168181",
         "library": "Reactome_2022",
-        "adj_p_value": 9.631311060712246e-06
-      }
-    ],
-    "type1-ifn ↔ Interferon Signaling R-HSA-913531": [
-      {
-        "kg_pathway_id": "type1-ifn",
-        "kg_pathway_name": "Type I Interferon Pathway",
-        "enrichment_term": "Interferon Signaling R-HSA-913531",
-        "library": "Reactome_2022",
-        "adj_p_value": 9.631311060712246e-06
-      }
-    ],
-    "bcell-signaling ↔ Interferon Signaling R-HSA-913531": [
-      {
-        "kg_pathway_id": "bcell-signaling",
-        "kg_pathway_name": "B Cell Receptor Signaling & Survival",
-        "enrichment_term": "Interferon Signaling R-HSA-913531",
-        "library": "Reactome_2022",
-        "adj_p_value": 9.631311060712246e-06
-      }
-    ],
-    "jak-stat ↔ Interferon Signaling R-HSA-913531": [
-      {
-        "kg_pathway_id": "jak-stat",
-        "kg_pathway_name": "JAK-STAT Signaling",
-        "enrichment_term": "Interferon Signaling R-HSA-913531",
-        "library": "Reactome_2022",
-        "adj_p_value": 9.631311060712246e-06
+        "adj_p_value": 1.539533050205087e-05
       }
     ],
     "bcell-signaling ↔ Toll Like Receptor 9 (TLR9) Cascade R-HSA-168138": [
@@ -1401,7 +1323,7 @@
         "kg_pathway_name": "B Cell Receptor Signaling & Survival",
         "enrichment_term": "Toll Like Receptor 9 (TLR9) Cascade R-HSA-168138",
         "library": "Reactome_2022",
-        "adj_p_value": 9.631311060712246e-06
+        "adj_p_value": 1.539533050205087e-05
       }
     ],
     "complement-cascade ↔ Toll Like Receptor 9 (TLR9) Cascade R-HSA-168138": [
@@ -1410,25 +1332,196 @@
         "kg_pathway_name": "Complement Cascade (Classical & Terminal)",
         "enrichment_term": "Toll Like Receptor 9 (TLR9) Cascade R-HSA-168138",
         "library": "Reactome_2022",
-        "adj_p_value": 9.631311060712246e-06
+        "adj_p_value": 1.539533050205087e-05
       }
     ],
-    "bcell-signaling ↔ Toll Like Receptor 4 (TLR4) Cascade R-HSA-166016": [
+    "type1-ifn ↔ Interferon Signaling R-HSA-913531": [
+      {
+        "kg_pathway_id": "type1-ifn",
+        "kg_pathway_name": "Type I Interferon Pathway",
+        "enrichment_term": "Interferon Signaling R-HSA-913531",
+        "library": "Reactome_2022",
+        "adj_p_value": 1.539533050205087e-05
+      }
+    ],
+    "bcell-signaling ↔ Interferon Signaling R-HSA-913531": [
       {
         "kg_pathway_id": "bcell-signaling",
         "kg_pathway_name": "B Cell Receptor Signaling & Survival",
-        "enrichment_term": "Toll Like Receptor 4 (TLR4) Cascade R-HSA-166016",
+        "enrichment_term": "Interferon Signaling R-HSA-913531",
         "library": "Reactome_2022",
-        "adj_p_value": 2.800784074695534e-05
+        "adj_p_value": 1.539533050205087e-05
       }
     ],
-    "complement-cascade ↔ Toll Like Receptor 4 (TLR4) Cascade R-HSA-166016": [
+    "jak-stat ↔ Interferon Signaling R-HSA-913531": [
       {
-        "kg_pathway_id": "complement-cascade",
-        "kg_pathway_name": "Complement Cascade (Classical & Terminal)",
-        "enrichment_term": "Toll Like Receptor 4 (TLR4) Cascade R-HSA-166016",
+        "kg_pathway_id": "jak-stat",
+        "kg_pathway_name": "JAK-STAT Signaling",
+        "enrichment_term": "Interferon Signaling R-HSA-913531",
         "library": "Reactome_2022",
-        "adj_p_value": 2.800784074695534e-05
+        "adj_p_value": 1.539533050205087e-05
+      }
+    ],
+    "type1-ifn ↔ Type I Interferon Induction And Signaling During SARS CoV 2 ": [
+      {
+        "kg_pathway_id": "type1-ifn",
+        "kg_pathway_name": "Type I Interferon Pathway",
+        "enrichment_term": "Type I Interferon Induction And Signaling During SARS CoV 2 Infection WP4868",
+        "library": "WikiPathway_2023_Human",
+        "adj_p_value": 2.9457644176339325e-14
+      }
+    ],
+    "bcell-signaling ↔ Type I Interferon Induction And Signaling During SARS CoV 2 ": [
+      {
+        "kg_pathway_id": "bcell-signaling",
+        "kg_pathway_name": "B Cell Receptor Signaling & Survival",
+        "enrichment_term": "Type I Interferon Induction And Signaling During SARS CoV 2 Infection WP4868",
+        "library": "WikiPathway_2023_Human",
+        "adj_p_value": 2.9457644176339325e-14
+      }
+    ],
+    "jak-stat ↔ Type I Interferon Induction And Signaling During SARS CoV 2 ": [
+      {
+        "kg_pathway_id": "jak-stat",
+        "kg_pathway_name": "JAK-STAT Signaling",
+        "enrichment_term": "Type I Interferon Induction And Signaling During SARS CoV 2 Infection WP4868",
+        "library": "WikiPathway_2023_Human",
+        "adj_p_value": 2.9457644176339325e-14
+      }
+    ],
+    "type1-ifn ↔ Toll Like Receptor Signaling Pathway WP75": [
+      {
+        "kg_pathway_id": "type1-ifn",
+        "kg_pathway_name": "Type I Interferon Pathway",
+        "enrichment_term": "Toll Like Receptor Signaling Pathway WP75",
+        "library": "WikiPathway_2023_Human",
+        "adj_p_value": 1.1720023946644036e-08
+      }
+    ],
+    "bcell-signaling ↔ Toll Like Receptor Signaling Pathway WP75": [
+      {
+        "kg_pathway_id": "bcell-signaling",
+        "kg_pathway_name": "B Cell Receptor Signaling & Survival",
+        "enrichment_term": "Toll Like Receptor Signaling Pathway WP75",
+        "library": "WikiPathway_2023_Human",
+        "adj_p_value": 1.1720023946644036e-08
+      }
+    ],
+    "jak-stat ↔ Toll Like Receptor Signaling Pathway WP75": [
+      {
+        "kg_pathway_id": "jak-stat",
+        "kg_pathway_name": "JAK-STAT Signaling",
+        "enrichment_term": "Toll Like Receptor Signaling Pathway WP75",
+        "library": "WikiPathway_2023_Human",
+        "adj_p_value": 1.1720023946644036e-08
+      }
+    ],
+    "nfkb ↔ Toll Like Receptor Signaling Pathway WP75": [
+      {
+        "kg_pathway_id": "nfkb",
+        "kg_pathway_name": "NF-κB Inflammatory Pathway",
+        "enrichment_term": "Toll Like Receptor Signaling Pathway WP75",
+        "library": "WikiPathway_2023_Human",
+        "adj_p_value": 1.1720023946644036e-08
+      }
+    ],
+    "bcell-signaling ↔ Toll Like Receptor Signaling Related To MyD88 WP3858": [
+      {
+        "kg_pathway_id": "bcell-signaling",
+        "kg_pathway_name": "B Cell Receptor Signaling & Survival",
+        "enrichment_term": "Toll Like Receptor Signaling Related To MyD88 WP3858",
+        "library": "WikiPathway_2023_Human",
+        "adj_p_value": 3.86761229615185e-08
+      }
+    ],
+    "jak-stat ↔ Toll Like Receptor Signaling Related To MyD88 WP3858": [
+      {
+        "kg_pathway_id": "jak-stat",
+        "kg_pathway_name": "JAK-STAT Signaling",
+        "enrichment_term": "Toll Like Receptor Signaling Related To MyD88 WP3858",
+        "library": "WikiPathway_2023_Human",
+        "adj_p_value": 3.86761229615185e-08
+      }
+    ],
+    "type1-ifn ↔ Host Pathogen Interaction Of Human Coronaviruses Interferon ": [
+      {
+        "kg_pathway_id": "type1-ifn",
+        "kg_pathway_name": "Type I Interferon Pathway",
+        "enrichment_term": "Host Pathogen Interaction Of Human Coronaviruses Interferon Induction WP4880",
+        "library": "WikiPathway_2023_Human",
+        "adj_p_value": 4.5434781064124096e-08
+      }
+    ],
+    "tlr-sensing ↔ Host Pathogen Interaction Of Human Coronaviruses Interferon ": [
+      {
+        "kg_pathway_id": "tlr-sensing",
+        "kg_pathway_name": "Endosomal TLR Sensing of Nucleic Acids",
+        "enrichment_term": "Host Pathogen Interaction Of Human Coronaviruses Interferon Induction WP4880",
+        "library": "WikiPathway_2023_Human",
+        "adj_p_value": 4.5434781064124096e-08
+      }
+    ],
+    "bcell-signaling ↔ T Cell Activation SARS CoV 2 WP5098": [
+      {
+        "kg_pathway_id": "bcell-signaling",
+        "kg_pathway_name": "B Cell Receptor Signaling & Survival",
+        "enrichment_term": "T Cell Activation SARS CoV 2 WP5098",
+        "library": "WikiPathway_2023_Human",
+        "adj_p_value": 5.50704878979371e-06
+      }
+    ],
+    "tcell-costim ↔ T Cell Activation SARS CoV 2 WP5098": [
+      {
+        "kg_pathway_id": "tcell-costim",
+        "kg_pathway_name": "T Cell Costimulation & Follicular Help",
+        "enrichment_term": "T Cell Activation SARS CoV 2 WP5098",
+        "library": "WikiPathway_2023_Human",
+        "adj_p_value": 5.50704878979371e-06
+      }
+    ],
+    "type1-ifn ↔ Interferon Type I Signaling Pathways WP585": [
+      {
+        "kg_pathway_id": "type1-ifn",
+        "kg_pathway_name": "Type I Interferon Pathway",
+        "enrichment_term": "Interferon Type I Signaling Pathways WP585",
+        "library": "WikiPathway_2023_Human",
+        "adj_p_value": 2.524352246092695e-05
+      }
+    ],
+    "bcell-signaling ↔ Interferon Type I Signaling Pathways WP585": [
+      {
+        "kg_pathway_id": "bcell-signaling",
+        "kg_pathway_name": "B Cell Receptor Signaling & Survival",
+        "enrichment_term": "Interferon Type I Signaling Pathways WP585",
+        "library": "WikiPathway_2023_Human",
+        "adj_p_value": 2.524352246092695e-05
+      }
+    ],
+    "jak-stat ↔ Interferon Type I Signaling Pathways WP585": [
+      {
+        "kg_pathway_id": "jak-stat",
+        "kg_pathway_name": "JAK-STAT Signaling",
+        "enrichment_term": "Interferon Type I Signaling Pathways WP585",
+        "library": "WikiPathway_2023_Human",
+        "adj_p_value": 2.524352246092695e-05
+      }
+    ],
+    "bcell-signaling ↔ Extrafollicular And Follicular B Cell Activation By SARS CoV": [
+      {
+        "kg_pathway_id": "bcell-signaling",
+        "kg_pathway_name": "B Cell Receptor Signaling & Survival",
+        "enrichment_term": "Extrafollicular And Follicular B Cell Activation By SARS CoV 2 WP5218",
+        "library": "WikiPathway_2023_Human",
+        "adj_p_value": 6.50416181272176e-05
+      }
+    ],
+    "tcell-costim ↔ Extrafollicular And Follicular B Cell Activation By SARS CoV": [
+      {
+        "kg_pathway_id": "tcell-costim",
+        "kg_pathway_name": "T Cell Costimulation & Follicular Help",
+        "enrichment_term": "Extrafollicular And Follicular B Cell Activation By SARS CoV 2 WP5218",
+        "library": "WikiPathway_2023_Human",
+        "adj_p_value": 6.50416181272176e-05
       }
     ]
   }

@@ -14,9 +14,14 @@
       "safety_score": 7,
       "novelty_score": 2,
       "evidence_level": "Phase 2 completed in SLE",
-      "references": ["PMID:30282952", "PMID:26297082", "NCT02908100"],
+      "references": [
+        "PMID:30282952",
+        "PMID:26297082",
+        "NCT02908100"
+      ],
       "status": "Investigational for SLE",
-      "development_phase": "Phase 2"
+      "development_phase": "Phase 2",
+      "composite_score": 8.45
     },
     {
       "id": "c002",
@@ -32,9 +37,13 @@
       "safety_score": 5,
       "novelty_score": 3,
       "evidence_level": "Preclinical only (lupus models)",
-      "references": ["PMID:26297082", "PMID:30282952"],
+      "references": [
+        "PMID:26297082",
+        "PMID:30282952"
+      ],
       "status": "Approved (other indications)",
-      "development_phase": "Preclinical for SLE"
+      "development_phase": "Preclinical for SLE",
+      "composite_score": 7.05
     },
     {
       "id": "c003",
@@ -50,9 +59,13 @@
       "safety_score": 6,
       "novelty_score": 4,
       "evidence_level": "Phase 2 in other autoimmune diseases",
-      "references": ["PMID:30282952", "PMID:32285387"],
+      "references": [
+        "PMID:30282952",
+        "PMID:32285387"
+      ],
       "status": "Investigational (other autoimmune)",
-      "development_phase": "Phase 2"
+      "development_phase": "Phase 2",
+      "composite_score": 7.35
     },
     {
       "id": "c004",
@@ -60,7 +73,7 @@
       "drug_name": "Deucravacitinib (Sotyktu)",
       "drug_category": "TYK2 Inhibitor (allosteric)",
       "mechanism": "Selective allosteric TYK2 inhibitor binding to the pseudokinase (JH2) domain. FDA-approved for plaque psoriasis.",
-      "rationale": "TYK2 mediates type I IFN, IL-12, and IL-23 signaling — all central to SLE pathogenesis. Protective TYK2 loss-of-function variants reduce SLE risk. Deucravacitinib completed a Phase 2 trial in SLE (NCT03252587) showing numerical improvement in SRI-4 response. Direct target engagement is highly specific.",
+      "rationale": "TYK2 mediates type I IFN, IL-12, and IL-23 signaling \u00e2\u20ac\u201d all central to SLE pathogenesis. Protective TYK2 loss-of-function variants reduce SLE risk. Deucravacitinib completed a Phase 2 trial in SLE (NCT03252587) showing numerical improvement in SRI-4 response. Direct target engagement is highly specific.",
       "target_similarity_score": 10,
       "pathway_proximity_score": 10,
       "mechanistic_rationale_score": 10,
@@ -68,9 +81,14 @@
       "safety_score": 8,
       "novelty_score": 1,
       "evidence_level": "Phase 2 completed in SLE",
-      "references": ["PMID:33846604", "PMID:23455606", "NCT03252587"],
+      "references": [
+        "PMID:33846604",
+        "PMID:23455606",
+        "NCT03252587"
+      ],
       "status": "Investigational for SLE",
-      "development_phase": "Phase 2"
+      "development_phase": "Phase 2",
+      "composite_score": 8.4
     },
     {
       "id": "c005",
@@ -86,9 +104,13 @@
       "safety_score": 8,
       "novelty_score": 3,
       "evidence_level": "Phase 2 in SLE; target pathway overlap",
-      "references": ["PMID:33846604", "PMID:18204098"],
+      "references": [
+        "PMID:33846604",
+        "PMID:18204098"
+      ],
       "status": "Investigational for SLE",
-      "development_phase": "Phase 2"
+      "development_phase": "Phase 2",
+      "composite_score": 7.15
     },
     {
       "id": "c006",
@@ -96,7 +118,7 @@
       "drug_name": "Baricitinib (Olumiant)",
       "drug_category": "JAK1/2 Inhibitor",
       "mechanism": "JAK1/2 inhibitor that blocks type I IFN and IL-6 signaling downstream of IRF5-mediated transcription.",
-      "rationale": "IRF5 drives IFN-α production; JAK1/2 inhibition blocks the signaling cascade downstream. Phase 3 SLE-BRAVE-I met primary endpoint (SRI-4). While not a direct IRF5 inhibitor, it blocks the consequences of IRF5 activation. Baricitinib is FDA-approved for RA and alopecia areata.",
+      "rationale": "IRF5 drives IFN-\u00ce\u00b1 production; JAK1/2 inhibition blocks the signaling cascade downstream. Phase 3 SLE-BRAVE-I met primary endpoint (SRI-4). While not a direct IRF5 inhibitor, it blocks the consequences of IRF5 activation. Baricitinib is FDA-approved for RA and alopecia areata.",
       "target_similarity_score": 5,
       "pathway_proximity_score": 8,
       "mechanistic_rationale_score": 7,
@@ -104,9 +126,14 @@
       "safety_score": 7,
       "novelty_score": 2,
       "evidence_level": "Phase 3 in SLE (mixed results)",
-      "references": ["PMID:33174738", "PMID:37494006", "PMID:18204098"],
+      "references": [
+        "PMID:33174738",
+        "PMID:37494006",
+        "PMID:18204098"
+      ],
       "status": "Phase 3 in SLE (SLE-BRAVE)",
-      "development_phase": "Phase 3"
+      "development_phase": "Phase 3",
+      "composite_score": 6.4
     },
     {
       "id": "c007",
@@ -114,7 +141,7 @@
       "drug_name": "Anifrolumab (Saphnelo)",
       "drug_category": "Anti-IFNAR1 Monoclonal Antibody",
       "mechanism": "Blocks IFNAR1, the receptor for type I interferons. FDA-approved for moderate to severe SLE.",
-      "rationale": "IRF5 is the master transcription factor for IFN-α. Blocking IFNAR1 intercepts IRF5's downstream effects. Anifrolumab is already SLE-approved, providing a de-risked pathway. The IFN gene signature — largely driven by IRF5 — predicts anifrolumab response.",
+      "rationale": "IRF5 is the master transcription factor for IFN-\u00ce\u00b1. Blocking IFNAR1 intercepts IRF5's downstream effects. Anifrolumab is already SLE-approved, providing a de-risked pathway. The IFN gene signature \u00e2\u20ac\u201d largely driven by IRF5 \u00e2\u20ac\u201d predicts anifrolumab response.",
       "target_similarity_score": 4,
       "pathway_proximity_score": 7,
       "mechanistic_rationale_score": 7,
@@ -122,9 +149,13 @@
       "safety_score": 8,
       "novelty_score": 0,
       "evidence_level": "FDA approved for SLE",
-      "references": ["PMID:31851711", "PMID:18204098"],
+      "references": [
+        "PMID:31851711",
+        "PMID:18204098"
+      ],
       "status": "Approved for SLE",
-      "development_phase": "Approved"
+      "development_phase": "Approved",
+      "composite_score": 6.35
     },
     {
       "id": "c008",
@@ -140,16 +171,21 @@
       "safety_score": 8,
       "novelty_score": 2,
       "evidence_level": "Phase 2 positive in SLE",
-      "references": ["PMID:26039978", "PMID:35708430", "NCT02349091"],
+      "references": [
+        "PMID:26039978",
+        "PMID:35708430",
+        "NCT02349091"
+      ],
       "status": "Phase 2 (positive) in SLE",
-      "development_phase": "Phase 2"
+      "development_phase": "Phase 2",
+      "composite_score": 7.75
     },
     {
       "id": "c009",
       "gene_id": "STAT4",
       "drug_name": "Deucravacitinib (Sotyktu)",
       "drug_category": "TYK2 Inhibitor (allosteric)",
-      "mechanism": "Allosteric TYK2 inhibitor; TYK2 mediates IL-12/IL-23 → STAT4 signaling.",
+      "mechanism": "Allosteric TYK2 inhibitor; TYK2 mediates IL-12/IL-23 \u00e2\u2020\u2019 STAT4 signaling.",
       "rationale": "TYK2 is required for IL-12 and IL-23 receptor signaling. By inhibiting TYK2, deucravacitinib blocks STAT4 phosphorylation and downstream Th1/Th17 differentiation. Phase 2 in SLE showed encouraging signals.",
       "target_similarity_score": 7,
       "pathway_proximity_score": 9,
@@ -158,9 +194,13 @@
       "safety_score": 8,
       "novelty_score": 3,
       "evidence_level": "Phase 2 in SLE; pathway validated",
-      "references": ["PMID:33846604", "PMID:26039978"],
+      "references": [
+        "PMID:33846604",
+        "PMID:26039978"
+      ],
       "status": "Investigational for SLE",
-      "development_phase": "Phase 2"
+      "development_phase": "Phase 2",
+      "composite_score": 7.35
     },
     {
       "id": "c010",
@@ -176,9 +216,13 @@
       "safety_score": 7,
       "novelty_score": 5,
       "evidence_level": "Preclinical (lupus models)",
-      "references": ["PMID:25865496", "PMID:19838195"],
+      "references": [
+        "PMID:25865496",
+        "PMID:19838195"
+      ],
       "status": "Approved (other indication)",
-      "development_phase": "Preclinical for SLE"
+      "development_phase": "Preclinical for SLE",
+      "composite_score": 5.95
     },
     {
       "id": "c011",
@@ -194,17 +238,21 @@
       "safety_score": 7,
       "novelty_score": 4,
       "evidence_level": "Phase 2 in SLE; kinase family overlap",
-      "references": ["PMID:25865496", "PMID:30282952"],
+      "references": [
+        "PMID:25865496",
+        "PMID:30282952"
+      ],
       "status": "Investigational for SLE",
-      "development_phase": "Phase 2"
+      "development_phase": "Phase 2",
+      "composite_score": 5.6
     },
     {
       "id": "c012",
       "gene_id": "TNFAIP3",
       "drug_name": "Bortezomib (Velcade)",
       "drug_category": "Proteasome Inhibitor",
-      "mechanism": "Proteasome inhibitor that blocks IκBα degradation, suppressing NF-κB activation. FDA-approved for multiple myeloma.",
-      "rationale": "TNFAIP3 (A20) normally inhibits NF-κB by deubiquitinating key signaling intermediates. Loss-of-function TNFAIP3 variants in SLE result in unchecked NF-κB activity. Bortezomib inhibits NF-κB by preventing IκBα degradation, partially compensating for A20 deficiency. Shown to deplete plasma cells in refractory SLE case series.",
+      "mechanism": "Proteasome inhibitor that blocks I\u00ce\u00baB\u00ce\u00b1 degradation, suppressing NF-\u00ce\u00baB activation. FDA-approved for multiple myeloma.",
+      "rationale": "TNFAIP3 (A20) normally inhibits NF-\u00ce\u00baB by deubiquitinating key signaling intermediates. Loss-of-function TNFAIP3 variants in SLE result in unchecked NF-\u00ce\u00baB activity. Bortezomib inhibits NF-\u00ce\u00baB by preventing I\u00ce\u00baB\u00ce\u00b1 degradation, partially compensating for A20 deficiency. Shown to deplete plasma cells in refractory SLE case series.",
       "target_similarity_score": 6,
       "pathway_proximity_score": 8,
       "mechanistic_rationale_score": 8,
@@ -212,17 +260,22 @@
       "safety_score": 4,
       "novelty_score": 5,
       "evidence_level": "Case series in refractory SLE",
-      "references": ["PMID:24714567", "PMID:19165926", "PMID:23740238"],
+      "references": [
+        "PMID:24714567",
+        "PMID:19165926",
+        "PMID:23740238"
+      ],
       "status": "Off-label use in refractory SLE",
-      "development_phase": "Case series"
+      "development_phase": "Case series",
+      "composite_score": 5.9
     },
     {
       "id": "c013",
       "gene_id": "TNFAIP3",
       "drug_name": "Baricitinib (Olumiant)",
       "drug_category": "JAK1/2 Inhibitor",
-      "mechanism": "JAK1/2 inhibitor with downstream effects on NF-κB through cytokine signaling suppression.",
-      "rationale": "Multiple NF-κB-driven cytokines (IL-6, TNF) signal through JAK-STAT. JAK inhibition reduces NF-κB-mediated inflammation indirectly. Baricitinib's Phase 3 data in SLE provides clinical validation.",
+      "mechanism": "JAK1/2 inhibitor with downstream effects on NF-\u00ce\u00baB through cytokine signaling suppression.",
+      "rationale": "Multiple NF-\u00ce\u00baB-driven cytokines (IL-6, TNF) signal through JAK-STAT. JAK inhibition reduces NF-\u00ce\u00baB-mediated inflammation indirectly. Baricitinib's Phase 3 data in SLE provides clinical validation.",
       "target_similarity_score": 4,
       "pathway_proximity_score": 6,
       "mechanistic_rationale_score": 6,
@@ -230,9 +283,13 @@
       "safety_score": 7,
       "novelty_score": 1,
       "evidence_level": "Phase 3 in SLE",
-      "references": ["PMID:33174738", "PMID:24714567"],
+      "references": [
+        "PMID:33174738",
+        "PMID:24714567"
+      ],
       "status": "Phase 3 in SLE",
-      "development_phase": "Phase 3"
+      "development_phase": "Phase 3",
+      "composite_score": 5.6
     },
     {
       "id": "c014",
@@ -240,7 +297,7 @@
       "drug_name": "Abatacept (Orencia)",
       "drug_category": "CTLA4-Ig Fusion Protein",
       "mechanism": "Blocks CD28-CD80/86 costimulation, the second signal required for T cell activation after MHC-TCR engagement.",
-      "rationale": "HLA-DRB1 presents autoantigens to CD4+ T cells — the initiating event in lupus autoimmunity. Abatacept blocks the costimulatory signal that follows MHC-TCR engagement. Phase 2b in SLE showed benefit in arthritis; Phase 3 in lupus nephritis narrowly missed primary endpoint but showed improvement in serological markers. Strong mechanistic rationale.",
+      "rationale": "HLA-DRB1 presents autoantigens to CD4+ T cells \u00e2\u20ac\u201d the initiating event in lupus autoimmunity. Abatacept blocks the costimulatory signal that follows MHC-TCR engagement. Phase 2b in SLE showed benefit in arthritis; Phase 3 in lupus nephritis narrowly missed primary endpoint but showed improvement in serological markers. Strong mechanistic rationale.",
       "target_similarity_score": 7,
       "pathway_proximity_score": 8,
       "mechanistic_rationale_score": 9,
@@ -248,17 +305,22 @@
       "safety_score": 8,
       "novelty_score": 2,
       "evidence_level": "Phase 3 in SLE/lupus nephritis (mixed)",
-      "references": ["PMID:26502338", "PMID:28714469", "PMID:32171163"],
+      "references": [
+        "PMID:26502338",
+        "PMID:28714469",
+        "PMID:32171163"
+      ],
       "status": "Phase 3 in SLE/lupus nephritis",
-      "development_phase": "Phase 3"
+      "development_phase": "Phase 3",
+      "composite_score": 7.1
     },
     {
       "id": "c015",
       "gene_id": "ITGAM",
       "drug_name": "Intravenous Immunoglobulin (IVIG)",
       "drug_category": "Immunomodulatory Plasma Product",
-      "mechanism": "Polyclonal IgG that saturates FcRn, enhances immune complex clearance, and modulates FcγR expression.",
-      "rationale": "ITGAM mutations impair phagocytosis via complement receptor 3 (CR3). IVIG enhances FcγR-mediated phagocytosis and immune complex clearance, potentially compensating for defective CR3 function. IVIG is used clinically in severe refractory SLE though evidence is from case series.",
+      "mechanism": "Polyclonal IgG that saturates FcRn, enhances immune complex clearance, and modulates Fc\u00ce\u00b3R expression.",
+      "rationale": "ITGAM mutations impair phagocytosis via complement receptor 3 (CR3). IVIG enhances Fc\u00ce\u00b3R-mediated phagocytosis and immune complex clearance, potentially compensating for defective CR3 function. IVIG is used clinically in severe refractory SLE though evidence is from case series.",
       "target_similarity_score": 4,
       "pathway_proximity_score": 6,
       "mechanistic_rationale_score": 6,
@@ -266,9 +328,13 @@
       "safety_score": 7,
       "novelty_score": 3,
       "evidence_level": "Case series in refractory SLE",
-      "references": ["PMID:21075732", "PMID:24474779"],
+      "references": [
+        "PMID:21075732",
+        "PMID:24474779"
+      ],
       "status": "Off-label for refractory SLE",
-      "development_phase": "Case series"
+      "development_phase": "Case series",
+      "composite_score": 5.35
     },
     {
       "id": "c016",
@@ -284,9 +350,14 @@
       "safety_score": 7,
       "novelty_score": 4,
       "evidence_level": "Phase 2 in SLE/lupus nephritis",
-      "references": ["PMID:27075454", "NCT04882878", "NCT04968912"],
+      "references": [
+        "PMID:27075454",
+        "NCT04882878",
+        "NCT04968912"
+      ],
       "status": "Phase 2 in SLE",
-      "development_phase": "Phase 2"
+      "development_phase": "Phase 2",
+      "composite_score": 6.4
     },
     {
       "id": "c017",
@@ -302,9 +373,13 @@
       "safety_score": 7,
       "novelty_score": 4,
       "evidence_level": "Phase 2 in SLE/lupus nephritis",
-      "references": ["PMID:16481347", "NCT04882878"],
+      "references": [
+        "PMID:16481347",
+        "NCT04882878"
+      ],
       "status": "Phase 2 in SLE",
-      "development_phase": "Phase 2"
+      "development_phase": "Phase 2",
+      "composite_score": 6.4
     },
     {
       "id": "c018",
@@ -320,9 +395,13 @@
       "safety_score": 8,
       "novelty_score": 5,
       "evidence_level": "Approved for other autoimmune disease",
-      "references": ["PMID:16481347", "NCT05583617"],
+      "references": [
+        "PMID:16481347",
+        "NCT05583617"
+      ],
       "status": "Approved (other indication)",
-      "development_phase": "Preclinical/Phase 2 for SLE"
+      "development_phase": "Preclinical/Phase 2 for SLE",
+      "composite_score": 6.2
     },
     {
       "id": "c019",
@@ -338,16 +417,20 @@
       "safety_score": 7,
       "novelty_score": 5,
       "evidence_level": "Theoretical; BCR pathway overlap",
-      "references": ["PMID:18204446", "PMID:22032889"],
+      "references": [
+        "PMID:18204446",
+        "PMID:22032889"
+      ],
       "status": "Approved (other indication)",
-      "development_phase": "Preclinical (theoretical)"
+      "development_phase": "Preclinical (theoretical)",
+      "composite_score": 5.25
     },
     {
       "id": "c020",
       "gene_id": "PTPN22",
       "drug_name": "Abatacept (Orencia)",
       "drug_category": "CTLA4-Ig Fusion Protein",
-      "mechanism": "Blocks CD28 costimulation, raising the threshold for T cell activation — compensating for PTPN22-mediated dysregulation.",
+      "mechanism": "Blocks CD28 costimulation, raising the threshold for T cell activation \u00e2\u20ac\u201d compensating for PTPN22-mediated dysregulation.",
       "rationale": "PTPN22 (LYP) is a phosphatase that raises the TCR signaling threshold. The R620W gain-of-function variant further suppresses TCR signaling, paradoxically allowing autoreactive T cells to escape negative selection. Abatacept raises the activation threshold for all T cells, which may help normalize the altered selection. Indirect but mechanistically interesting.",
       "target_similarity_score": 4,
       "pathway_proximity_score": 6,
@@ -356,9 +439,14 @@
       "safety_score": 8,
       "novelty_score": 4,
       "evidence_level": "Phase 3 in SLE; mechanistic rationale",
-      "references": ["PMID:15208781", "PMID:25534597", "PMID:32171163"],
+      "references": [
+        "PMID:15208781",
+        "PMID:25534597",
+        "PMID:32171163"
+      ],
       "status": "Phase 3 in SLE",
-      "development_phase": "Phase 3"
+      "development_phase": "Phase 3",
+      "composite_score": 5.5
     },
     {
       "id": "c021",
@@ -374,9 +462,13 @@
       "safety_score": 6,
       "novelty_score": 4,
       "evidence_level": "Phase 2 in SLE (limited data)",
-      "references": ["PMID:18340363", "PMID:25974202"],
+      "references": [
+        "PMID:18340363",
+        "PMID:25974202"
+      ],
       "status": "Investigational for SLE",
-      "development_phase": "Phase 2"
+      "development_phase": "Phase 2",
+      "composite_score": 7.7
     },
     {
       "id": "c022",
@@ -384,7 +476,7 @@
       "drug_name": "Dapirolizumab Pegol (anti-CD40L)",
       "drug_category": "Anti-CD40L Pegylated Fab Fragment",
       "mechanism": "Blocks CD40L-CD40 costimulation, an alternative T-B cell interaction axis to OX40-OX40L.",
-      "rationale": "T cell costimulation in SLE occurs through multiple redundant pathways. Blocking CD40L-CD40 — another key T-B interaction — may partially compensate for OX40L overexpression. Dapirolizumab pegol showed positive Phase 2b results in SLE (2024). Pathway-level intervention.",
+      "rationale": "T cell costimulation in SLE occurs through multiple redundant pathways. Blocking CD40L-CD40 \u00e2\u20ac\u201d another key T-B interaction \u00e2\u20ac\u201d may partially compensate for OX40L overexpression. Dapirolizumab pegol showed positive Phase 2b results in SLE (2024). Pathway-level intervention.",
       "target_similarity_score": 4,
       "pathway_proximity_score": 7,
       "mechanistic_rationale_score": 6,
@@ -392,9 +484,13 @@
       "safety_score": 7,
       "novelty_score": 3,
       "evidence_level": "Phase 2b positive in SLE",
-      "references": ["PMID:25974202", "ACR 2024 Abstract"],
+      "references": [
+        "PMID:25974202",
+        "ACR 2024 Abstract"
+      ],
       "status": "Phase 2b (positive) in SLE",
-      "development_phase": "Phase 2b"
+      "development_phase": "Phase 2b",
+      "composite_score": 5.8
     },
     {
       "id": "c023",
@@ -410,9 +506,13 @@
       "safety_score": 8,
       "novelty_score": 5,
       "evidence_level": "Approved for other autoimmune disease",
-      "references": ["PMID:27075454", "NCT05583617"],
+      "references": [
+        "PMID:27075454",
+        "NCT05583617"
+      ],
       "status": "Approved (other indication)",
-      "development_phase": "Preclinical/Phase 2 for SLE"
+      "development_phase": "Preclinical/Phase 2 for SLE",
+      "composite_score": 6.2
     },
     {
       "id": "c024",
@@ -428,9 +528,13 @@
       "safety_score": 7,
       "novelty_score": 5,
       "evidence_level": "Phase 2 in SLE; mechanistic extrapolation",
-      "references": ["PMID:21075732", "NCT04882878"],
+      "references": [
+        "PMID:21075732",
+        "NCT04882878"
+      ],
       "status": "Phase 2 in SLE",
-      "development_phase": "Phase 2"
+      "development_phase": "Phase 2",
+      "composite_score": 5.25
     },
     {
       "id": "c025",
@@ -438,7 +542,7 @@
       "drug_name": "Anifrolumab (Saphnelo)",
       "drug_category": "Anti-IFNAR1 Monoclonal Antibody",
       "mechanism": "Blocks IFNAR1, the shared receptor for all type I interferons. FDA-approved for moderate to severe SLE.",
-      "rationale": "TYK2 is required for IFNAR1 signaling — it is the kinase that transduces the type I IFN signal from the receptor to STAT1/STAT2. Blocking IFNAR1 with anifrolumab achieves functional TYK2 pathway inhibition at the receptor level. Anifrolumab is already FDA-approved for SLE with demonstrated efficacy in reducing disease activity and corticosteroid use. The IFN gene signature, which is TYK2-dependent, predicts anifrolumab response.",
+      "rationale": "TYK2 is required for IFNAR1 signaling \u00e2\u20ac\u201d it is the kinase that transduces the type I IFN signal from the receptor to STAT1/STAT2. Blocking IFNAR1 with anifrolumab achieves functional TYK2 pathway inhibition at the receptor level. Anifrolumab is already FDA-approved for SLE with demonstrated efficacy in reducing disease activity and corticosteroid use. The IFN gene signature, which is TYK2-dependent, predicts anifrolumab response.",
       "target_similarity_score": 6,
       "pathway_proximity_score": 8,
       "mechanistic_rationale_score": 8,
@@ -446,9 +550,14 @@
       "safety_score": 8,
       "novelty_score": 1,
       "evidence_level": "FDA approved for SLE",
-      "references": ["PMID:31851711", "PMID:23455606", "PMID:33846604"],
+      "references": [
+        "PMID:31851711",
+        "PMID:23455606",
+        "PMID:33846604"
+      ],
       "status": "Approved for SLE",
-      "development_phase": "Approved"
+      "development_phase": "Approved",
+      "composite_score": 7.2
     },
     {
       "id": "c026",
@@ -456,7 +565,7 @@
       "drug_name": "Baricitinib (Olumiant)",
       "drug_category": "JAK1/2 Inhibitor",
       "mechanism": "JAK1/2 inhibitor with partial activity against TYK2 at higher concentrations. FDA-approved for RA and alopecia areata.",
-      "rationale": "TYK2 and JAK1 form heterodimers to mediate type I IFN signaling. Baricitinib inhibits JAK1 — the obligate partner of TYK2 in IFNAR signaling — thereby indirectly blocking the pathway TYK2 participates in. Phase 3 data in SLE (SLE-BRAVE-I) met its primary endpoint. While less selective than deucravacitinib, baricitinib has more extensive clinical data in SLE.",
+      "rationale": "TYK2 and JAK1 form heterodimers to mediate type I IFN signaling. Baricitinib inhibits JAK1 \u00e2\u20ac\u201d the obligate partner of TYK2 in IFNAR signaling \u00e2\u20ac\u201d thereby indirectly blocking the pathway TYK2 participates in. Phase 3 data in SLE (SLE-BRAVE-I) met its primary endpoint. While less selective than deucravacitinib, baricitinib has more extensive clinical data in SLE.",
       "target_similarity_score": 5,
       "pathway_proximity_score": 7,
       "mechanistic_rationale_score": 7,
@@ -464,9 +573,14 @@
       "safety_score": 7,
       "novelty_score": 2,
       "evidence_level": "Phase 3 in SLE (positive SLE-BRAVE-I)",
-      "references": ["PMID:33174738", "PMID:37494006", "PMID:33846604"],
+      "references": [
+        "PMID:33174738",
+        "PMID:37494006",
+        "PMID:33846604"
+      ],
       "status": "Phase 3 in SLE",
-      "development_phase": "Phase 3"
+      "development_phase": "Phase 3",
+      "composite_score": 6.4
     },
     {
       "id": "c027",
@@ -482,9 +596,14 @@
       "safety_score": 7,
       "novelty_score": 2,
       "evidence_level": "Phase 3 in SLE",
-      "references": ["PMID:33174738", "PMID:26502338", "PMID:28714469"],
+      "references": [
+        "PMID:33174738",
+        "PMID:26502338",
+        "PMID:28714469"
+      ],
       "status": "Phase 3 in SLE",
-      "development_phase": "Phase 3"
+      "development_phase": "Phase 3",
+      "composite_score": 5.9
     },
     {
       "id": "c028",
@@ -500,9 +619,13 @@
       "safety_score": 7,
       "novelty_score": 3,
       "evidence_level": "Off-label use in lupus nephritis",
-      "references": ["PMID:19109131", "PMID:32171163"],
+      "references": [
+        "PMID:19109131",
+        "PMID:32171163"
+      ],
       "status": "Off-label for lupus nephritis",
-      "development_phase": "Clinical use (other indications)"
+      "development_phase": "Clinical use (other indications)",
+      "composite_score": 5.95
     },
     {
       "id": "c029",
@@ -510,7 +633,7 @@
       "drug_name": "Acalabrutinib (Calquence)",
       "drug_category": "BTK Inhibitor (covalent, second-generation)",
       "mechanism": "Highly selective, irreversible BTK inhibitor with improved safety profile vs ibrutinib. FDA-approved for CLL and MCL.",
-      "rationale": "BANK1 amplifies BCR signaling by scaffolding downstream effectors including BTK. While BANK1 itself is not directly druggable, inhibiting BTK — the kinase immediately downstream in the BCR signalosome — reduces the signal that BANK1 amplifies. Acalabrutinib's improved selectivity reduces off-target kinase inhibition compared to ibrutinib, potentially offering a better safety profile for chronic autoimmune use.",
+      "rationale": "BANK1 amplifies BCR signaling by scaffolding downstream effectors including BTK. While BANK1 itself is not directly druggable, inhibiting BTK \u00e2\u20ac\u201d the kinase immediately downstream in the BCR signalosome \u00e2\u20ac\u201d reduces the signal that BANK1 amplifies. Acalabrutinib's improved selectivity reduces off-target kinase inhibition compared to ibrutinib, potentially offering a better safety profile for chronic autoimmune use.",
       "target_similarity_score": 4,
       "pathway_proximity_score": 7,
       "mechanistic_rationale_score": 6,
@@ -518,9 +641,14 @@
       "safety_score": 7,
       "novelty_score": 5,
       "evidence_level": "Theoretical; BCR pathway overlap",
-      "references": ["PMID:18204446", "PMID:30282952", "PMID:32285387"],
+      "references": [
+        "PMID:18204446",
+        "PMID:30282952",
+        "PMID:32285387"
+      ],
       "status": "Approved (other indication)",
-      "development_phase": "Preclinical (theoretical)"
+      "development_phase": "Preclinical (theoretical)",
+      "composite_score": 5.25
     },
     {
       "id": "c030",
@@ -528,7 +656,7 @@
       "drug_name": "Obinutuzumab (Gazyva)",
       "drug_category": "Type II Anti-CD20 Monoclonal Antibody",
       "mechanism": "Type II anti-CD20 antibody with enhanced direct cell death and antibody-dependent cellular cytotoxicity vs rituximab.",
-      "rationale": "BANK1 dysfunction promotes B cell hyperresponsiveness and autoantibody production. B cell depletion with obinutuzumab — which showed positive Phase 3 results in lupus nephritis (REGENCY trial, 2024) — eliminates the cellular substrate for BANK1-mediated pathology. This is an upstream approach that removes the B cells where BANK1 operates rather than targeting the pathway downstream. The REGENCY trial provides SLE-specific clinical validation.",
+      "rationale": "BANK1 dysfunction promotes B cell hyperresponsiveness and autoantibody production. B cell depletion with obinutuzumab \u00e2\u20ac\u201d which showed positive Phase 3 results in lupus nephritis (REGENCY trial, 2024) \u00e2\u20ac\u201d eliminates the cellular substrate for BANK1-mediated pathology. This is an upstream approach that removes the B cells where BANK1 operates rather than targeting the pathway downstream. The REGENCY trial provides SLE-specific clinical validation.",
       "target_similarity_score": 3,
       "pathway_proximity_score": 5,
       "mechanistic_rationale_score": 7,
@@ -536,9 +664,13 @@
       "safety_score": 7,
       "novelty_score": 4,
       "evidence_level": "Phase 3 positive in lupus nephritis (REGENCY)",
-      "references": ["PMID:18204446", "ACR 2024 Abstract; REGENCY Trial (NCT04252599)"],
+      "references": [
+        "PMID:18204446",
+        "ACR 2024 Abstract; REGENCY Trial (NCT04252599)"
+      ],
       "status": "Phase 3 (positive) in lupus nephritis",
-      "development_phase": "Phase 3"
+      "development_phase": "Phase 3",
+      "composite_score": 5.6
     },
     {
       "id": "c031",
@@ -554,9 +686,14 @@
       "safety_score": 7,
       "novelty_score": 4,
       "evidence_level": "Approved for other autoimmune diseases",
-      "references": ["PMID:15208781", "PMID:25534597", "PMID:33174738"],
+      "references": [
+        "PMID:15208781",
+        "PMID:25534597",
+        "PMID:33174738"
+      ],
       "status": "Approved (other indications)",
-      "development_phase": "Preclinical for SLE"
+      "development_phase": "Preclinical for SLE",
+      "composite_score": 5.0
     },
     {
       "id": "c032",
@@ -564,7 +701,7 @@
       "drug_name": "Cyclosporine (Neoral / Sandimmune)",
       "drug_category": "Calcineurin Inhibitor",
       "mechanism": "Inhibits calcineurin-NFAT pathway, blocking IL-2 production and raising the threshold for productive T cell activation.",
-      "rationale": "PTPN22 gain-of-function reduces TCR signal strength, paradoxically allowing autoreactive T cells to evade negative selection. Cyclosporine raises the threshold for TCR-mediated T cell activation by blocking calcineurin-NFAT signaling — the primary calcium-dependent pathway downstream of TCR engagement. This directly counteracts the consequence of PTPN22 dysfunction at the T cell activation level. Approved for decades with extensive clinical experience including off-label use in lupus nephritis.",
+      "rationale": "PTPN22 gain-of-function reduces TCR signal strength, paradoxically allowing autoreactive T cells to evade negative selection. Cyclosporine raises the threshold for TCR-mediated T cell activation by blocking calcineurin-NFAT signaling \u00e2\u20ac\u201d the primary calcium-dependent pathway downstream of TCR engagement. This directly counteracts the consequence of PTPN22 dysfunction at the T cell activation level. Approved for decades with extensive clinical experience including off-label use in lupus nephritis.",
       "target_similarity_score": 5,
       "pathway_proximity_score": 6,
       "mechanistic_rationale_score": 7,
@@ -572,9 +709,14 @@
       "safety_score": 6,
       "novelty_score": 3,
       "evidence_level": "Off-label use in lupus nephritis",
-      "references": ["PMID:15208781", "PMID:19109131", "PMID:25534597"],
+      "references": [
+        "PMID:15208781",
+        "PMID:19109131",
+        "PMID:25534597"
+      ],
       "status": "Off-label for lupus nephritis",
-      "development_phase": "Clinical use (other indications)"
+      "development_phase": "Clinical use (other indications)",
+      "composite_score": 5.55
     },
     {
       "id": "c033",
@@ -590,9 +732,13 @@
       "safety_score": 7,
       "novelty_score": 4,
       "evidence_level": "Approved for other autoimmune diseases",
-      "references": ["PMID:26039978", "PMID:33174738"],
+      "references": [
+        "PMID:26039978",
+        "PMID:33174738"
+      ],
       "status": "Approved (other indications)",
-      "development_phase": "Preclinical for SLE"
+      "development_phase": "Preclinical for SLE",
+      "composite_score": 5.85
     },
     {
       "id": "c034",
@@ -608,27 +754,37 @@
       "safety_score": 7,
       "novelty_score": 5,
       "evidence_level": "Theoretical; BCR kinase family overlap",
-      "references": ["PMID:19838195", "PMID:25865496", "PMID:30282952"],
+      "references": [
+        "PMID:19838195",
+        "PMID:25865496",
+        "PMID:30282952"
+      ],
       "status": "Approved (other indication)",
-      "development_phase": "Preclinical (theoretical)"
+      "development_phase": "Preclinical (theoretical)",
+      "composite_score": 5.25
     },
     {
       "id": "c035",
       "gene_id": "TNFAIP3",
       "drug_name": "Dimethyl Fumarate (Tecfidera)",
       "drug_category": "Nrf2 Activator / Immunomodulator",
-      "mechanism": "Activates the Nrf2 antioxidant pathway and downregulates NF-κB through multiple mechanisms including inhibition of nuclear translocation. FDA-approved for multiple sclerosis.",
-      "rationale": "TNFAIP3 (A20) normally suppresses NF-κB through ubiquitin editing. Loss-of-function TNFAIP3 variants in SLE result in chronic NF-κB activation. Dimethyl fumarate inhibits NF-κB through a complementary mechanism — Nrf2 activation and glutathione depletion reduce NF-κB nuclear translocation — effectively providing an orthogonal path to NF-κB suppression that doesn't depend on functional A20. Approved safety profile in MS with over a decade of post-marketing experience.",
+      "mechanism": "Activates the Nrf2 antioxidant pathway and downregulates NF-\u00ce\u00baB through multiple mechanisms including inhibition of nuclear translocation. FDA-approved for multiple sclerosis.",
+      "rationale": "TNFAIP3 (A20) normally suppresses NF-\u00ce\u00baB through ubiquitin editing. Loss-of-function TNFAIP3 variants in SLE result in chronic NF-\u00ce\u00baB activation. Dimethyl fumarate inhibits NF-\u00ce\u00baB through a complementary mechanism \u00e2\u20ac\u201d Nrf2 activation and glutathione depletion reduce NF-\u00ce\u00baB nuclear translocation \u00e2\u20ac\u201d effectively providing an orthogonal path to NF-\u00ce\u00baB suppression that doesn't depend on functional A20. Approved safety profile in MS with over a decade of post-marketing experience.",
       "target_similarity_score": 3,
       "pathway_proximity_score": 5,
       "mechanistic_rationale_score": 6,
       "clinical_evidence_score": 3,
       "safety_score": 7,
       "novelty_score": 5,
-      "evidence_level": "Approved for MS; NF-κB rationale",
-      "references": ["PMID:24714567", "PMID:19165926", "PMID:23740238"],
+      "evidence_level": "Approved for MS; NF-\u00ce\u00baB rationale",
+      "references": [
+        "PMID:24714567",
+        "PMID:19165926",
+        "PMID:23740238"
+      ],
       "status": "Approved (other indication)",
-      "development_phase": "Theoretical for SLE"
+      "development_phase": "Theoretical for SLE",
+      "composite_score": 4.9
     },
     {
       "id": "c036",
@@ -636,7 +792,7 @@
       "drug_name": "Avacopan (Tavneos)",
       "drug_category": "C5a Receptor (C5aR) Antagonist",
       "mechanism": "Selective C5a receptor antagonist that blocks C5a-mediated neutrophil activation, migration, and adhesion. FDA-approved for ANCA-associated vasculitis.",
-      "rationale": "ITGAM encodes CD11b, a subunit of complement receptor 3 (CR3) that mediates phagocytosis and immune complex clearance. When CR3-mediated clearance is impaired, deposited immune complexes activate the complement cascade, generating C5a — a potent anaphylatoxin that recruits neutrophils and drives tissue inflammation. Avacopan blocks C5aR on neutrophils, intercepting the inflammatory amplification loop that follows defective CR3-mediated clearance. Approved for complement-driven autoimmune vasculitis with a targeted safety profile.",
+      "rationale": "ITGAM encodes CD11b, a subunit of complement receptor 3 (CR3) that mediates phagocytosis and immune complex clearance. When CR3-mediated clearance is impaired, deposited immune complexes activate the complement cascade, generating C5a \u00e2\u20ac\u201d a potent anaphylatoxin that recruits neutrophils and drives tissue inflammation. Avacopan blocks C5aR on neutrophils, intercepting the inflammatory amplification loop that follows defective CR3-mediated clearance. Approved for complement-driven autoimmune vasculitis with a targeted safety profile.",
       "target_similarity_score": 5,
       "pathway_proximity_score": 7,
       "mechanistic_rationale_score": 8,
@@ -644,9 +800,14 @@
       "safety_score": 7,
       "novelty_score": 5,
       "evidence_level": "Approved for complement-driven autoimmune disease",
-      "references": ["PMID:21075732", "PMID:24474779", "PMID:32171163"],
+      "references": [
+        "PMID:21075732",
+        "PMID:24474779",
+        "PMID:32171163"
+      ],
       "status": "Approved (other indication)",
-      "development_phase": "Preclinical (theoretical)"
+      "development_phase": "Preclinical (theoretical)",
+      "composite_score": 6.0
     },
     {
       "id": "c037",
@@ -662,9 +823,13 @@
       "safety_score": 7,
       "novelty_score": 5,
       "evidence_level": "Approved for other autoimmune disease",
-      "references": ["PMID:27075454", "PMID:14979578"],
+      "references": [
+        "PMID:27075454",
+        "PMID:14979578"
+      ],
       "status": "Approved (other indication)",
-      "development_phase": "Preclinical for SLE"
+      "development_phase": "Preclinical for SLE",
+      "composite_score": 6.0
     },
     {
       "id": "c038",
@@ -672,7 +837,7 @@
       "drug_name": "Ravulizumab (Ultomiris)",
       "drug_category": "Complement C5 Inhibitor (Long-Acting)",
       "mechanism": "Long-acting monoclonal antibody that binds C5 and blocks cleavage into C5a and C5b-9 (MAC), preventing terminal complement activation. FDA-approved for PNH and atypical HUS.",
-      "rationale": "FCGR3A variants impair IgG-mediated immune complex clearance, leading to tissue deposition of immune complexes that activate complement. C5 cleavage generates C5a (driving neutrophil recruitment and inflammation) and C5b-9/MAC (causing direct tissue damage). Ravulizumab blocks terminal complement activation at C5, intercepting the downstream tissue damage that follows impaired FCGR3A-mediated clearance — without affecting the upstream clearance pathways that other approaches target. Approved with strong safety data in complement-mediated diseases.",
+      "rationale": "FCGR3A variants impair IgG-mediated immune complex clearance, leading to tissue deposition of immune complexes that activate complement. C5 cleavage generates C5a (driving neutrophil recruitment and inflammation) and C5b-9/MAC (causing direct tissue damage). Ravulizumab blocks terminal complement activation at C5, intercepting the downstream tissue damage that follows impaired FCGR3A-mediated clearance \u00e2\u20ac\u201d without affecting the upstream clearance pathways that other approaches target. Approved with strong safety data in complement-mediated diseases.",
       "target_similarity_score": 5,
       "pathway_proximity_score": 7,
       "mechanistic_rationale_score": 7,
@@ -680,9 +845,14 @@
       "safety_score": 8,
       "novelty_score": 5,
       "evidence_level": "Approved for complement-mediated diseases",
-      "references": ["PMID:16481347", "PMID:32171163", "PMID:11096117"],
+      "references": [
+        "PMID:16481347",
+        "PMID:32171163",
+        "PMID:11096117"
+      ],
       "status": "Approved (other indication)",
-      "development_phase": "Preclinical (theoretical)"
+      "development_phase": "Preclinical (theoretical)",
+      "composite_score": 6.0
     },
     {
       "id": "c039",
@@ -690,7 +860,7 @@
       "drug_name": "Iscalimab (CFZ533 / anti-CD40)",
       "drug_category": "Anti-CD40 Monoclonal Antibody",
       "mechanism": "Blocks CD40-CD40L interaction, preventing T cell-dependent B cell activation and germinal center formation.",
-      "rationale": "TNFSF4 (OX40L) promotes Tfh responses driving autoantibody production; CD40-CD40L is a parallel T-B costimulation axis. Blocking CD40 provides an alternative approach to controlling T cell help for autoreactive B cells when OX40-OX40L is overactive. Iscalimab has shown promising results in Sjögren's syndrome and renal transplantation, with Phase 2 data in autoimmune disease.",
+      "rationale": "TNFSF4 (OX40L) promotes Tfh responses driving autoantibody production; CD40-CD40L is a parallel T-B costimulation axis. Blocking CD40 provides an alternative approach to controlling T cell help for autoreactive B cells when OX40-OX40L is overactive. Iscalimab has shown promising results in Sj\u00c3\u00b6gren's syndrome and renal transplantation, with Phase 2 data in autoimmune disease.",
       "target_similarity_score": 4,
       "pathway_proximity_score": 7,
       "mechanistic_rationale_score": 6,
@@ -698,9 +868,38 @@
       "safety_score": 7,
       "novelty_score": 4,
       "evidence_level": "Phase 2 in other autoimmune diseases",
-      "references": ["PMID:18340363", "PMID:25974202", "ACR 2024 Abstract"],
+      "references": [
+        "PMID:18340363",
+        "PMID:25974202",
+        "ACR 2024 Abstract"
+      ],
       "status": "Investigational (other autoimmune)",
-      "development_phase": "Phase 2"
+      "development_phase": "Phase 2",
+      "composite_score": 5.6
+    },
+    {
+      "id": "c040",
+      "gene_id": "BDCA2",
+      "drug_name": "Litifilimab (anti-BDCA2 / BIIB059)",
+      "drug_category": "Anti-BDCA2 Monoclonal Antibody",
+      "mechanism": "Humanized IgG1 monoclonal antibody that binds BDCA2 (CLEC4C) on plasmacytoid dendritic cells, inhibiting TLR7/TLR9-induced IFN-\u00ce\u00b1 and proinflammatory cytokine production at its cellular source.",
+      "rationale": "BDCA2 is a C-type lectin receptor selectively expressed on plasmacytoid dendritic cells \u00e2\u20ac\u201d the primary producers of IFN-\u00ce\u00b1 in SLE. BDCA2 engagement triggers ITAM-BCR-like inhibitory signaling that suppresses TLR7/TLR9-mediated IFN-\u00ce\u00b1 production. Litifilimab directly targets this pathway, reducing the type I interferon gene signature that is present in ~60-80% of SLE patients. The Phase 2 LILAC trial (NCT02847598) demonstrated significant reduction in active joint count and skin disease (CLASI). Now in Phase 3 TOPAZ program. This is a direct gene-targeted therapy \u00e2\u20ac\u201d the strongest possible repurposing candidate for BDCA2.",
+      "target_similarity_score": 10,
+      "pathway_proximity_score": 10,
+      "mechanistic_rationale_score": 10,
+      "clinical_evidence_score": 8,
+      "safety_score": 8,
+      "novelty_score": 2,
+      "composite_score": 8.5,
+      "evidence_level": "Phase 2 completed in SLE (LILAC); Phase 3 ongoing (TOPAZ)",
+      "references": [
+        "PMID:32142626",
+        "PMID:31751641",
+        "NCT02847598",
+        "NCT05531565"
+      ],
+      "status": "Phase 3 in SLE",
+      "development_phase": "Phase 3"
     }
   ]
 }

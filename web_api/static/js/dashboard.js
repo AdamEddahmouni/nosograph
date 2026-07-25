@@ -60,6 +60,14 @@ async function runModule(module) {
                 data = await apiFetch('/api/cart/suitability?top_n=10');
                 renderCartResult(resultEl, data);
                 break;
+            case 'biomarker':
+                data = await apiFetch('/api/biomarker/discover?top_n=10');
+                renderBiomarkerResult(resultEl, data);
+                break;
+            case 'semantic':
+                data = await apiFetch('/api/semantic/search?q=lupus+treatment+drug+repurposing&top_k=10');
+                renderSemanticResult(resultEl, data);
+                break;
             case 'repurpose':
                 data = await apiFetch('/api/repurpose/candidates?top_n=10');
                 renderRepurposeResult(resultEl, data);
@@ -387,6 +395,18 @@ function renderRepurposeResult(el, data) {
     ]);
 }
 
+function renderBiomarkerResult(el, data) {
+    const top = data.biomarkers?.[0];
+    el.className = 'module-result visible success';
+    el.innerHTML = renderModuleResult([
+        ['Genes Analyzed', data.total_genes],
+        ['Avg Score', data.avg_score?.toFixed(2)],
+        ['Strong Biomarkers', data.tier1_count],
+        ['Top Gene', top ? top.gene_name : '—'],
+        ['Best Modality', top?.best_modality || '—'],
+    ]);
+}
+
 function renderCartResult(el, data) {
     const top = data.genes?.[0];
     el.className = 'module-result visible success';
@@ -408,6 +428,17 @@ function renderExpressionResult(el, data) {
         ['Tier 1 (Strong)', data.tier1_count],
         ['Top Drug', top ? top.drug_name?.split('(')[0].trim() : '—'],
         ['Top Score', top?.composite_score?.toFixed(2) || '—'],
+    ]);
+}
+
+function renderSemanticResult(el, data) {
+    const top = data.results?.[0];
+    el.className = 'module-result visible success';
+    el.innerHTML = renderModuleResult([
+        ['Indexed Articles', data.indexed_articles],
+        ['Results Found', data.total_results],
+        ['Top Match', top ? top.title?.slice(0, 50) + '...' : '—'],
+        ['Similarity', top?.similarity?.toFixed(1) || '—'],
     ]);
 }
 

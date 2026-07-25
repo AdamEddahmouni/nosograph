@@ -421,6 +421,42 @@
     },
     {
       "data": {
+        "id": "BDCA2",
+        "label": "Blood Dendritic Cell Antigen 2 (CLEC4C)",
+        "type": "gene",
+        "description": "C-type lectin receptor specifically expressed on plasmacytoid dendritic cells; negatively regulates TLR7/TLR9-induced IFN-\u03b1 production",
+        "chromosome": "12p13.31",
+        "lupus_evidence": "BDCA2 is the target of litifilimab (anti-BDCA2 mAb, Phase 3). Binding BDCA2 on pDCs inhibits TLR7/TLR9-mediated IFN-\u03b1 production, reducing the type I interferon signature at its cellular source.",
+        "odds_ratio": null,
+        "category": "Innate Immune Sensing"
+      }
+    },
+    {
+      "data": {
+        "id": "BCMA",
+        "label": "B Cell Maturation Antigen (TNFRSF17)",
+        "type": "gene",
+        "description": "TNF receptor superfamily member expressed on plasma cells and plasmablasts; critical for long-lived plasma cell survival",
+        "chromosome": "16p13.13",
+        "lupus_evidence": "BCMA is the target of teclistamab (BCMAxCD3 bispecific antibody). Depleting BCMA+ long-lived plasma cells may eliminate pathogenic autoantibody-producing cells in lupus. Case reports of drug-free remission after plasma cell depletion in SLE.",
+        "odds_ratio": null,
+        "category": "B Cell Signaling"
+      }
+    },
+    {
+      "data": {
+        "id": "CD19",
+        "label": "CD19 (B-lymphocyte surface antigen)",
+        "type": "gene",
+        "description": "Pan-B-cell surface protein expressed from pre-B through mature B cells and plasmablasts; co-receptor that enhances BCR signaling",
+        "chromosome": "16p11.2",
+        "lupus_evidence": "CD19 is the target of anti-CD19 CAR-T cell therapy. Case series (n=5-8) showed drug-free remission in severe refractory SLE after CD19 CAR-T, with B cell reconstitution of na\u00efve phenotype (Nature Medicine 2022).",
+        "odds_ratio": null,
+        "category": "B Cell Signaling"
+      }
+    },
+    {
+      "data": {
         "id": "ATG5",
         "label": "Autophagy Related 5",
         "type": "gene",
@@ -1336,6 +1372,33 @@
     },
     {
       "data": {
+        "id": "BDCA2--PARTICIPATES_IN--tlr-sensing",
+        "source": "BDCA2",
+        "target": "tlr-sensing",
+        "type": "PARTICIPATES_IN",
+        "description": "BDCA2 (CLEC4C) is a C-type lectin receptor on plasmacytoid DCs that suppresses TLR7/TLR9-induced IFN-\u03b1 production via ITAM-BCR-like signaling"
+      }
+    },
+    {
+      "data": {
+        "id": "BCMA--PARTICIPATES_IN--bcell-signaling",
+        "source": "BCMA",
+        "target": "bcell-signaling",
+        "type": "PARTICIPATES_IN",
+        "description": "BCMA (TNFRSF17) is a plasma cell-specific receptor that transduces BAFF/APRIL survival signals essential for long-lived plasma cell maintenance"
+      }
+    },
+    {
+      "data": {
+        "id": "CD19--PARTICIPATES_IN--bcell-signaling",
+        "source": "CD19",
+        "target": "bcell-signaling",
+        "type": "PARTICIPATES_IN",
+        "description": "CD19 is a pan-B-cell co-receptor that amplifies BCR signaling by 10-100x through PI3K/AKT pathway recruitment"
+      }
+    },
+    {
+      "data": {
         "id": "ATG5--PARTICIPATES_IN--autophagy",
         "source": "ATG5",
         "target": "autophagy",
@@ -1570,6 +1633,15 @@
     },
     {
       "data": {
+        "id": "acalabrutinib--TARGETS--BTK",
+        "source": "acalabrutinib",
+        "target": "BTK",
+        "type": "TARGETS",
+        "description": "Acalabrutinib is a highly selective, irreversible second-generation BTK inhibitor that covalently binds C481 in the BTK active site"
+      }
+    },
+    {
+      "data": {
         "id": "acalabrutinib--MODULATES--bcell-signaling",
         "source": "acalabrutinib",
         "target": "bcell-signaling",
@@ -1723,6 +1795,15 @@
     },
     {
       "data": {
+        "id": "litifilimab--TARGETS--BDCA2",
+        "source": "litifilimab",
+        "target": "BDCA2",
+        "type": "TARGETS",
+        "description": "Litifilimab (anti-BDCA2) binds CLEC4C on plasmacytoid dendritic cells, inhibiting TLR7/TLR9-induced IFN-\u03b1 production at its cellular source"
+      }
+    },
+    {
+      "data": {
         "id": "litifilimab--MODULATES--type1-ifn",
         "source": "litifilimab",
         "target": "type1-ifn",
@@ -1786,6 +1867,15 @@
     },
     {
       "data": {
+        "id": "teclistamab--TARGETS--BCMA",
+        "source": "teclistamab",
+        "target": "BCMA",
+        "type": "TARGETS",
+        "description": "Teclistamab is a BCMAxCD3 bispecific antibody that redirects T cells to deplete BCMA+ plasma cells and plasmablasts"
+      }
+    },
+    {
+      "data": {
         "id": "teclistamab--MODULATES--bcell-signaling",
         "source": "teclistamab",
         "target": "bcell-signaling",
@@ -1800,6 +1890,15 @@
         "target": "Lupus (SLE)",
         "type": "TREATS",
         "description": "Teclistamab (BCMAxCD3 bispecific) is exploratory for autoimmune disease; depletes autoantibody-producing plasma cells"
+      }
+    },
+    {
+      "data": {
+        "id": "anti_cd19_cart--TARGETS--CD19",
+        "source": "anti_cd19_cart",
+        "target": "CD19",
+        "type": "TARGETS",
+        "description": "Anti-CD19 CAR-T cells are engineered to recognize and deplete CD19+ B lineage cells including autoreactive clones and plasmablasts"
       }
     },
     {

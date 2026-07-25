@@ -97,6 +97,30 @@
       "description": "Iberdomide promotes cereblon-mediated ubiquitination and proteasomal degradation of IKZF3 (Aiolos)"
     },
     {
+      "source": "acalabrutinib",
+      "target": "BTK",
+      "type": "TARGETS",
+      "description": "Acalabrutinib is a highly selective, irreversible second-generation BTK inhibitor that covalently binds C481 in the BTK active site"
+    },
+    {
+      "source": "litifilimab",
+      "target": "BDCA2",
+      "type": "TARGETS",
+      "description": "Litifilimab (anti-BDCA2) binds CLEC4C on plasmacytoid dendritic cells, inhibiting TLR7/TLR9-induced IFN-α production at its cellular source"
+    },
+    {
+      "source": "teclistamab",
+      "target": "BCMA",
+      "type": "TARGETS",
+      "description": "Teclistamab is a BCMAxCD3 bispecific antibody that redirects T cells to deplete BCMA+ plasma cells and plasmablasts"
+    },
+    {
+      "source": "anti_cd19_cart",
+      "target": "CD19",
+      "type": "TARGETS",
+      "description": "Anti-CD19 CAR-T cells are engineered to recognize and deplete CD19+ B lineage cells including autoreactive clones and plasmablasts"
+    },
+    {
       "source": "BAFF",
       "target": "bcell-signaling",
       "type": "PARTICIPATES_IN",
@@ -305,6 +329,24 @@
       "target": "autophagy",
       "type": "PARTICIPATES_IN",
       "description": "ATG5 is a core autophagy protein essential for autophagosome formation and lymphocyte homeostasis"
+    },
+    {
+      "source": "BDCA2",
+      "target": "tlr-sensing",
+      "type": "PARTICIPATES_IN",
+      "description": "BDCA2 (CLEC4C) is a C-type lectin receptor on plasmacytoid DCs that suppresses TLR7/TLR9-induced IFN-α production via ITAM-BCR-like signaling"
+    },
+    {
+      "source": "BCMA",
+      "target": "bcell-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BCMA (TNFRSF17) is a plasma cell-specific receptor that transduces BAFF/APRIL survival signals essential for long-lived plasma cell maintenance"
+    },
+    {
+      "source": "CD19",
+      "target": "bcell-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD19 is a pan-B-cell co-receptor that amplifies BCR signaling by 10-100x through PI3K/AKT pathway recruitment"
     },
     {
       "source": "belimumab",
