@@ -20,6 +20,12 @@ test-quiet:  ## Run all tests (quiet)
 test-cov:  ## Run tests with coverage
 	python -m pytest tests/ --cov=src/med_research --cov-report=term-missing
 
+test-unit:  ## Run unit tests only
+	python -m pytest tests/ -v -m unit
+
+test-integration:  ## Run integration tests only
+	python -m pytest tests/ -v -m integration
+
 # ── Linting ──────────────────────────────────────────────────────────────
 
 lint:  ## Run ruff linter

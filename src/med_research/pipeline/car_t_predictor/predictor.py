@@ -20,17 +20,14 @@ Usage:
 
 import argparse
 import json
-import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).parent.parent))
+from med_research.logging_config import get_logger
+from med_research.pipeline.knowledge_graph.config import load_genes as config_load_genes
 
-if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+logger = get_logger(__name__)
 
 DATA_DIR = Path(__file__).parent / "data"
-
-from med_research.pipeline.knowledge_graph.config import load_genes as config_load_genes
 
 
 def load_json(path: Path) -> dict:
@@ -237,45 +234,45 @@ def compute_all_scores(progress_callback=None) -> list:
 
 
 def analyze(results: list):
-    """Print statistical summary."""
-    print("\n" + "=" * 75)
-    print("🔬 CAR-T RESPONSE PREDICTOR — Gene-Level Analysis")
-    print("=" * 75)
+    """Log statistical summary."""
+    logger.info("\n%s", "=" * 75)
+    logger.info("🔬 CAR-T RESPONSE PREDICTOR — Gene-Level Analysis")
+    logger.info("%s", "=" * 75)
 
     scores = [r["composite_score"] for r in results]
-    print(f"\n  {len(results)} genes scored for CD19 CAR-T suitability")
-    print(f"  Score range: {min(scores):.2f} - {max(scores):.2f}")
-    print(f"  Mean score: {sum(scores)/len(scores):.2f}")
+    logger.info("\n  %d genes scored for CD19 CAR-T suitability", len(results))
+    logger.info("  Score range: %.2f - %.2f", min(scores), max(scores))
+    logger.info("  Mean score: %.2f", sum(scores) / len(scores))
 
     tier_counts = {}
     for r in results:
         tier_counts[r["tier"]] = tier_counts.get(r["tier"], 0) + 1
-    print("\n  Distribution by tier:")
+    logger.info("\n  Distribution by tier:")
     for tier in ["🔴 Tier 1 — Strong CAR-T Candidate", "🟠 Tier 2 — Good CAR-T Candidate",
                   "🟡 Tier 3 — Possible CAR-T Benefit", "🟢 Tier 4 — Limited CAR-T Benefit"]:
         count = tier_counts.get(tier, 0)
         label = tier.split("—")[0].strip()
-        print(f"    {label}: {count} genes")
+        logger.info("    %s: %d genes", label, count)
 
 
 def print_top_genes(results: list, top_n: int = 15):
-    """Print the top N genes by CAR-T suitability."""
-    print("\n" + "=" * 75)
-    print(f"🎯 TOP {top_n} GENES FOR CD19 CAR-T SUITABILITY")
-    print("=" * 75)
+    """Log the top N genes by CAR-T suitability."""
+    logger.info("\n%s", "=" * 75)
+    logger.info("🎯 TOP %d GENES FOR CD19 CAR-T SUITABILITY", top_n)
+    logger.info("%s", "=" * 75)
 
     for i, r in enumerate(results[:top_n], 1):
-        print(f"\n  #{i} | {r['tier']}")
-        print("  " + "─" * 50)
-        print(f"  🧬 Gene:     {r['gene_name']}")
-        print(f"  📂 Category:  {r.get('category', '')}")
-        print(f"  ⭐ Score:     {r['composite_score']:.2f}/10")
-        print(f"     ├─ B Cell Dependency:     {r['b_cell_dependency']}/10")
-        print(f"     ├─ Autoantibody Assoc:    {r['autoantibody_association']}/10")
-        print(f"     ├─ Plasma Cell Relevance: {r['plasma_cell_relevance']}/10")
-        print(f"     ├─ CD19 Targeting:        {r['cd19_targeting']}/10")
-        print(f"     └─ Clinical Evidence:     {r['clinical_evidence']}/10")
-        print(f"  💡 {r['recommendation']}")
+        logger.info("\n  #%d | %s", i, r["tier"])
+        logger.info("  %s", "─" * 50)
+        logger.info("  🧬 Gene:     %s", r["gene_name"])
+        logger.info("  📂 Category:  %s", r.get("category", ""))
+        logger.info("  ⭐ Score:     %.2f/10", r["composite_score"])
+        logger.info("     ├─ B Cell Dependency:     %s/10", r["b_cell_dependency"])
+        logger.info("     ├─ Autoantibody Assoc:    %s/10", r["autoantibody_association"])
+        logger.info("     ├─ Plasma Cell Relevance: %s/10", r["plasma_cell_relevance"])
+        logger.info("     ├─ CD19 Targeting:        %s/10", r["cd19_targeting"])
+        logger.info("     └─ Clinical Evidence:     %s/10", r["clinical_evidence"])
+        logger.info("  💡 %s", r["recommendation"])
 
 
 def main():
@@ -293,7 +290,7 @@ def main():
     if args.export_html:
         from med_research.pipeline.car_t_predictor.report import generate_html_report
         generate_html_report(results)
-        print("\n✅ HTML report generated: car_t_predictor/report.html")
+        logger.info("\n✅ HTML report generated: car_t_predictor/report.html")
 
     return results
 

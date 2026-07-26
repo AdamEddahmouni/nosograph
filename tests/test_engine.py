@@ -12,6 +12,8 @@ Tests cover:
 
 import pytest
 
+pytestmark = pytest.mark.unit
+
 
 class TestComputeCompositeScore:
     """Tests for compute_composite_score()."""

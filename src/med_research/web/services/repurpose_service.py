@@ -1,7 +1,10 @@
 """Drug Repurposing service — wraps engine.py functions."""
 
+from __future__ import annotations
+
 import sys
 from pathlib import Path
+from typing import Any
 
 # Ensure the parent is importable
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
@@ -9,7 +12,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 from med_research.web.dependencies import get_candidates, get_kg_genes, get_knowledge_graph
 
 
-def run_repurposing(top_n: int = 15, gene_id: str | None = None) -> dict:
+def run_repurposing(top_n: int = 15, gene_id: str | None = None) -> dict[str, Any]:
     """Score drug repurposing candidates and return results."""
     from med_research.pipeline.drug_repurposing.engine import (
         identify_untargeted_genes,

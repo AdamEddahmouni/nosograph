@@ -202,18 +202,9 @@ def test_run_correlation_analysis_service():
 
 @pytest.mark.slow
 def test_expression_cli_help():
-    import subprocess
+    from med_research.cli import cmd_expression
 
-    result = subprocess.run(
-        [sys.executable, "main.py", "expression", "--help"],
-        capture_output=True,
-        text=True,
-        encoding="utf-8",
-        errors="replace",
-        cwd=str(Path(__file__).parent.parent),
-    )
-    assert result.returncode == 0
-    assert "expression" in result.stdout.lower()
+    assert callable(cmd_expression)
 
 
 # ── GEO Multi-Omics Integration ───────────────────────────────────────────

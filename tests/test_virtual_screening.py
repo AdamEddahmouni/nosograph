@@ -10,6 +10,8 @@ Tests cover:
 
 import pytest
 
+pytestmark = pytest.mark.unit
+
 # ── Sample fixture data ──────────────────────────────────────────────
 
 @pytest.fixture

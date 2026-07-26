@@ -18,13 +18,14 @@ Usage:
     python cross_disease/analyzer.py --export-html          # Generate report
 """
 
+from __future__ import annotations
+
 import argparse
 import json
-import sys
 from pathlib import Path
+from typing import Any
 
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
+from med_research.logging_config import get_logger
 from med_research.pipeline.knowledge_graph.config import (
     list_diseases,
     load_drugs,
@@ -33,8 +34,7 @@ from med_research.pipeline.knowledge_graph.config import (
     load_relationships,
 )
 
-if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+logger = get_logger(__name__)
 
 DATA_DIR = Path(__file__).parent / "data"
 
@@ -42,7 +42,7 @@ DATA_DIR = Path(__file__).parent / "data"
 # ── Data Loading ──────────────────────────────────────────────────────────
 
 
-def load_all_disease_data() -> dict:
+def load_all_disease_data() -> dict[str, Any]:
     """Load genes, drugs, pathways, and relationships for all diseases.
 
     Returns:
@@ -95,7 +95,7 @@ def _normalize_drug_id(drug_id: str) -> str:
     return drug_id.lower().strip()
 
 
-def compute_shared_genes(data: dict) -> dict:
+def compute_shared_genes(data: dict[str, Any]) -> dict[str, Any]:
     """Identify genes shared across diseases and their per-disease details.
 
     Returns:
@@ -135,7 +135,7 @@ def compute_shared_genes(data: dict) -> dict:
     }
 
 
-def compute_shared_drugs(data: dict) -> dict:
+def compute_shared_drugs(data: dict[str, Any]) -> dict[str, Any]:
     """Identify drugs shared across diseases and their per-disease details.
 
     Returns:
@@ -174,7 +174,7 @@ def compute_shared_drugs(data: dict) -> dict:
     }
 
 
-def compute_shared_pathways(data: dict) -> dict:
+def compute_shared_pathways(data: dict[str, Any]) -> dict[str, Any]:
     """Identify pathways shared across diseases."""
     pathway_disease_map: dict = {}
     pathway_details: dict = {}
@@ -217,7 +217,7 @@ def _jaccard(set_a: set, set_b: set) -> float:
     return len(set_a & set_b) / len(set_a | set_b)
 
 
-def compute_disease_similarity(data: dict) -> dict:
+def compute_disease_similarity(data: dict[str, Any]) -> dict[str, Any]:
     """Compute pairwise disease similarity based on shared genes, drugs, pathways.
 
     Returns:
@@ -473,7 +473,7 @@ def compute_cross_disease_repurposing(data: dict) -> list:
 # ── Full Pipeline ─────────────────────────────────────────────────────────
 
 
-def compute_cross_disease_analysis(progress_callback=None) -> dict:
+def compute_cross_disease_analysis(progress_callback=None) -> dict[str, Any]:
     """Run the full cross-disease analysis pipeline.
 
     Returns:
@@ -562,98 +562,96 @@ def compute_cross_disease_analysis(progress_callback=None) -> dict:
 # ── CLI ──────────────────────────────────────────────────────────────────
 
 
-def analyze(results: dict):
-    """Print analysis summary."""
+def analyze(results: dict[str, Any]) -> None:
+    """Log analysis summary."""
     d_summary = results["disease_summary"]
     n = results["total_diseases"]
 
-    print("\n" + "=" * 75)
-    print("🌐 CROSS-DISEASE DRUG REPURPOSING ANALYSIS")
-    print("=" * 75)
-    print(f"\n  Diseases analyzed: {n}")
+    logger.info("")
+    logger.info("=" * 75)
+    logger.info("CROSS-DISEASE DRUG REPURPOSING ANALYSIS")
+    logger.info("=" * 75)
+    logger.info("Diseases analyzed: %d", n)
     for did, info in sorted(d_summary.items()):
-        print(f"    {did:5s} — {info['name']:35s} "
-              f"({info['gene_count']} genes, {info['drug_count']} drugs, "
-              f"{info['pathway_count']} pathways)")
+        logger.info("    %-5s -- %-35s (%d genes, %d drugs, %d pathways)",
+                     did, info['name'], info['gene_count'], info['drug_count'],
+                     info['pathway_count'])
 
     sg = results["shared_genes"]
-    print(f"\n  Shared Genes (≥2 diseases): {len(sg['shared_genes'])}")
+    logger.info("Shared Genes (>=2 diseases): %d", len(sg['shared_genes']))
     for g in sg["shared_genes"][:10]:
-        print(f"    {g['gene_id']:8s} — {g['disease_count']} diseases: {', '.join(g['diseases'])}")
+        logger.info("    %-8s -- %d diseases: %s",
+                     g['gene_id'], g['disease_count'], ', '.join(g['diseases']))
 
     sd = results["shared_drugs"]
-    print(f"\n  Shared Drugs (≥2 diseases): {len(sd['shared_drugs'])}")
+    logger.info("Shared Drugs (>=2 diseases): %d", len(sd['shared_drugs']))
     for d in sd["shared_drugs"][:10]:
-        print(f"    {d['drug_id']:20s} — {d['disease_count']} diseases: {', '.join(d['diseases'])}")
+        logger.info("    %-20s -- %d diseases: %s",
+                     d['drug_id'], d['disease_count'], ', '.join(d['diseases']))
 
     sp = results["shared_pathways"]
-    print(f"\n  Shared Pathways (≥2 diseases): {len(sp['shared_pathways'])}")
+    logger.info("Shared Pathways (>=2 diseases): %d", len(sp['shared_pathways']))
     for p in sp["shared_pathways"][:10]:
-        print(f"    {p['pathway_id']:30s} — {p['disease_count']} diseases")
+        logger.info("    %-30s -- %d diseases",
+                     p['pathway_id'], p['disease_count'])
 
     ds = results["disease_similarity"]
-    print("\n  Most Similar Disease Pairs:")
+    logger.info("Most Similar Disease Pairs:")
     for pair in ds[:5]:
-        print(f"    {pair['disease_a']} ↔ {pair['disease_b']}: "
-              f"{pair['overall_similarity']:.4f} "
-              f"(genes:{pair['gene_similarity']:.3f}, "
-              f"drugs:{pair['drug_similarity']:.3f}, "
-              f"pathways:{pair['pathway_similarity']:.3f})")
+        logger.info("    %s <-> %s: %.4f (genes:%.3f, drugs:%.3f, pathways:%.3f)",
+                     pair['disease_a'], pair['disease_b'],
+                     pair['overall_similarity'], pair['gene_similarity'],
+                     pair['drug_similarity'], pair['pathway_similarity'])
 
     mdd = results["multi_disease_drugs"]
-    print(f"\n  Multi-Disease Drug Candidates: {len(mdd)}")
+    logger.info("Multi-Disease Drug Candidates: %d", len(mdd))
     tiers = {}
     for d in mdd:
         tiers[d["tier"]] = tiers.get(d["tier"], 0) + 1
     for tier, count in sorted(tiers.items()):
-        print(f"    {tier}: {count}")
+        logger.info("    %s: %d", tier, count)
 
 
 def print_top_drugs(results: dict, top_n: int = 20):
-    """Print top multi-disease drugs."""
+    """Log top multi-disease drugs."""
     mdd = results["multi_disease_drugs"][:top_n]
-    print("\n" + "=" * 75)
-    print(f"💊 TOP {top_n} MULTI-DISEASE DRUG CANDIDATES")
-    print("=" * 75)
+    logger.info("")
+    logger.info("=" * 75)
+    logger.info("TOP %d MULTI-DISEASE DRUG CANDIDATES", top_n)
+    logger.info("=" * 75)
 
     for i, d in enumerate(mdd, 1):
-        tier_emoji = {
-            "Tier 1 — Strong Multi-Disease Candidate": "🔴",
-            "Tier 2 — Promising Cross-Disease Candidate": "🟠",
-            "Tier 3 — Moderate Cross-Disease Potential": "🟡",
-            "Tier 4 — Disease-Specific": "🟢",
-        }.get(d["tier"], "")
-
-        print(f"\n  #{i} | {tier_emoji} {d['tier']}")
-        print("  " + "─" * 50)
-        print(f"  💊 Drug:      {d['drug_name'][:60]}")
-        print(f"  🌐 Diseases:  {d['disease_count']} ({', '.join(d['diseases'])})")
-        print(f"  🎯 Targets:   {', '.join(d['targets']) if d['targets'] else 'N/A'}")
-        print(f"  ⭐ Score:     {d['composite_score']:.2f}/10")
-        print(f"     ├─ Disease Coverage:           {d['disease_coverage']}/10")
-        print(f"     ├─ Target Centrality:          {d['target_centrality']}/10")
-        print(f"     ├─ Pathway Breadth:            {d['pathway_breadth']}/10")
-        print(f"     ├─ Mechanistic Transferability:{d['mechanistic_transferability']}/10")
-        print(f"     └─ Novelty:                    {d['novelty']}/10")
+        logger.info("  #%d | %s", i, d['tier'])
+        logger.info("  " + "-" * 50)
+        logger.info("  Drug:      %s", d['drug_name'][:60])
+        logger.info("  Diseases:  %d (%s)", d['disease_count'], ', '.join(d['diseases']))
+        logger.info("  Targets:   %s", ', '.join(d['targets']) if d['targets'] else 'N/A')
+        logger.info("  Score:     %.2f/10", d['composite_score'])
+        logger.info("     |-- Disease Coverage:           %.1f/10", d['disease_coverage'])
+        logger.info("     |-- Target Centrality:          %.1f/10", d['target_centrality'])
+        logger.info("     |-- Pathway Breadth:            %.1f/10", d['pathway_breadth'])
+        logger.info("     |-- Mechanistic Transferability:%.1f/10", d['mechanistic_transferability'])
+        logger.info("     |-- Novelty:                    %.1f/10", d['novelty'])
 
 
 def print_repurposing(results: dict, top_n: int = 15):
-    """Print cross-disease repurposing recommendations."""
+    """Log cross-disease repurposing recommendations."""
     recs = results["cross_disease_repurposing"]
     novel = [r for r in recs if not r["already_used_in_target"]][:top_n]
 
-    print("\n" + "=" * 75)
-    print(f"🔀 TOP {top_n} CROSS-DISEASE REPURPOSING OPPORTUNITIES")
-    print("=" * 75)
+    logger.info("")
+    logger.info("=" * 75)
+    logger.info("TOP %d CROSS-DISEASE REPURPOSING OPPORTUNITIES", top_n)
+    logger.info("=" * 75)
 
     for i, r in enumerate(novel[:top_n], 1):
-        print(f"\n  #{i}")
-        print("  " + "─" * 50)
-        print(f"  🔀 {r['source_disease_name']} → {r['target_disease_name']}")
-        print(f"  💊 {r['drug_name'][:60]}")
-        print(f"  🎯 Target: {r['drug_target']}")
-        print(f"  🧬 Matched Genes: {', '.join(r['matched_genes'])}")
-        print(f"  📊 Confidence: {r['confidence']}/10")
+        logger.info("  #%d", i)
+        logger.info("  " + "-" * 50)
+        logger.info("  %s -> %s", r['source_disease_name'], r['target_disease_name'])
+        logger.info("  %s", r['drug_name'][:60])
+        logger.info("  Target: %s", r['drug_target'])
+        logger.info("  Matched Genes: %s", ', '.join(r['matched_genes']))
+        logger.info("  Confidence: %.1f/10", r['confidence'])
 
 
 def main():
@@ -678,7 +676,7 @@ def main():
     if args.export_html:
         from med_research.pipeline.cross_disease.report import generate_html_report
         generate_html_report(results)
-        print("\n✅ HTML report generated: cross_disease/report.html")
+        logger.info("HTML report generated: cross_disease/report.html")
 
     return results
 

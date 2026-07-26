@@ -17,20 +17,21 @@ Usage:
     python evidence_gatherer/gatherer.py --query "CAR-T lupus" --export-html
 """
 
+from __future__ import annotations
+
 import argparse
 import json
-import sys
 import time
 import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import datetime
 from pathlib import Path
+from typing import Any
 
-sys.path.insert(0, str(Path(__file__).parent.parent))
+from med_research.logging_config import get_logger
 
-if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+logger = get_logger(__name__)
 
 DATA_DIR = Path(__file__).parent / "data"
 CACHE_PATH = DATA_DIR / "evidence_cache.json"
@@ -44,7 +45,7 @@ DEFAULT_SOURCES = ["pubmed", "preprints", "clinical_trials", "fda_labels", "pate
 # ── Helpers ──────────────────────────────────────────────────────────────
 
 
-def load_json(path: Path) -> dict:
+def load_json(path: Path) -> dict[str, Any]:
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
@@ -60,7 +61,7 @@ def api_get(url: str, timeout: int = 15) -> dict | None:
         with urllib.request.urlopen(req, timeout=timeout) as resp:
             return json.loads(resp.read().decode("utf-8"))
     except (urllib.error.URLError, urllib.error.HTTPError, json.JSONDecodeError) as e:
-        print(f"  ⚠️  API error ({url[:80]}...): {e}")
+        logger.warning("  ⚠️  API error (%s...): %s", url[:80], e)
         return None
 
 
@@ -71,7 +72,7 @@ def _cache_key(query: str, source: str, max_results: int) -> str:
     return f"{query}|||{source}|||{max_results}"
 
 
-def load_cache() -> dict:
+def load_cache() -> dict[str, Any]:
     if CACHE_PATH.exists():
         return load_json(CACHE_PATH)
     return {}
@@ -100,7 +101,7 @@ def search_europe_pmc(query: str, source: str, max_results: int = 20, use_cache:
     cache = load_cache()
     key = _cache_key(query, source, max_results)
     if use_cache and key in cache:
-        print(f"  📦 Using cached {source} results ({len(cache[key])} items)")
+        logger.info("  📦 Using cached %s results (%s items)", source, len(cache[key]))
         return cache[key]
 
     # Build query with source filter
@@ -120,7 +121,7 @@ def search_europe_pmc(query: str, source: str, max_results: int = 20, use_cache:
     })
     url = f"{EUROPE_PMC_URL}?{params}"
 
-    print(f"  🔎 Searching {source} via Europe PMC...")
+    logger.info("  🔎 Searching %s via Europe PMC...", source)
     data = api_get(url)
     if not data:
         return []
@@ -163,11 +164,11 @@ def search_clinical_trials(query: str, max_results: int = 20) -> list:
 
     Uses the existing clinical_trials/data/ct_results.json file.
     """
-    print("  🔎 Searching clinical trials...")
+    logger.info("  🔎 Searching clinical trials...")
     try:
         ct_data = load_json(Path("clinical_trials/data/ct_results.json"))
     except (FileNotFoundError, json.JSONDecodeError):
-        print("  ⚠️  No clinical trial cache found. Run 'python main.py trials' first.")
+        logger.warning("  ⚠️  No clinical trial cache found. Run 'python main.py trials' first.")
         return []
 
     trials = ct_data.get("studies", [])
@@ -219,10 +220,10 @@ def search_fda_labels(query: str, max_results: int = 20, use_cache: bool = True)
     cache = load_cache()
     key = _cache_key(query, "fda_labels", max_results)
     if use_cache and key in cache:
-        print(f"  📦 Using cached FDA label results ({len(cache[key])} items)")
+        logger.info("  📦 Using cached FDA label results (%s items)", len(cache[key]))
         return cache[key]
 
-    print("  🔎 Searching FDA labels via DailyMed...")
+    logger.info("  🔎 Searching FDA labels via DailyMed...")
     params = urllib.parse.urlencode({
         "searchterms": query,
         "pagesize": min(max_results, 50),
@@ -280,7 +281,7 @@ def gather_evidence(
     max_per_source: int = 20,
     use_cache: bool = True,
     cross_reference: bool = True,
-) -> dict:
+) -> dict[str, Any]:
     """Search all configured sources and aggregate results.
 
     Args:
@@ -303,17 +304,17 @@ def gather_evidence(
         if src in ("pubmed", "preprints", "patents"):
             results = search_europe_pmc(query, src, max_per_source, use_cache)
             all_results.extend(results)
-            print(f"     → {len(results)} {src} results")
+            logger.info("     → %s %s results", len(results), src)
 
         elif src == "clinical_trials":
             results = search_clinical_trials(query, max_per_source)
             all_results.extend(results)
-            print(f"     → {len(results)} clinical trial results")
+            logger.info("     → %s clinical trial results", len(results))
 
         elif src == "fda_labels":
             results = search_fda_labels(query, max_per_source, use_cache)
             all_results.extend(results)
-            print(f"     → {len(results)} FDA label results")
+            logger.info("     → %s FDA label results", len(results))
 
     # Sort all results: mix of recency + citation weight
     def _sort_key(r):
@@ -348,7 +349,7 @@ def gather_evidence(
     return output
 
 
-def _counts_by_source(results: list) -> dict:
+def _counts_by_source(results: list) -> dict[str, Any]:
     counts = {}
     for r in results:
         src = r.get("source_type", "unknown")
@@ -356,7 +357,7 @@ def _counts_by_source(results: list) -> dict:
     return counts
 
 
-def _compute_crossref(results: list, sources: list) -> dict:
+def _compute_crossref(results: list, sources: list) -> dict[str, Any]:
     """Compute simple cross-source overlap statistics."""
     crossref = {"pairs": []}
     source_sets = {}
@@ -388,32 +389,32 @@ def _compute_crossref(results: list, sources: list) -> dict:
 
 def print_summary(gathered: dict):
     """Print a formatted summary of gathered evidence."""
-    print("\n" + "=" * 75)
-    print("🌐 WEB-SCALE EVIDENCE GATHERER — Results")
-    print("=" * 75)
+    logger.info("\n" + "=" * 75)
+    logger.info("🌐 WEB-SCALE EVIDENCE GATHERER — Results")
+    logger.info("=" * 75)
 
-    print(f"\n  Query: \"{gathered['query']}\"")
-    print(f"  Sources searched: {', '.join(gathered['sources_searched'])}")
-    print(f"  Total results: {gathered['total_results']} ({gathered['elapsed_seconds']}s)")
+    logger.info("\n  Query: \"%s\"", gathered['query'])
+    logger.info("  Sources searched: %s", ', '.join(gathered['sources_searched']))
+    logger.info("  Total results: %s (%ss)", gathered['total_results'], gathered['elapsed_seconds'])
 
-    print("\n  📊 Results by source:")
+    logger.info("\n  📊 Results by source:")
     for src, count in gathered["results_by_source"].items():
         icon = {"pubmed": "📄", "preprints": "🧪", "patents": "💡",
                 "clinical_trials": "🏥", "fda_labels": "💊"}.get(src, "📌")
-        print(f"    {icon} {src}: {count}")
+        logger.info("    %s %s: %s", icon, src, count)
 
     if gathered.get("crossref", {}).get("pairs"):
-        print("\n  🔗 Cross-source overlaps:")
+        logger.info("\n  🔗 Cross-source overlaps:")
         for pair in gathered["crossref"]["pairs"]:
             if pair["overlap_count"] > 0:
-                print(f"    {pair['source_a']} ↔ {pair['source_b']}: {pair['overlap_count']} overlapping")
+                logger.info("    %s ↔ %s: %s overlapping", pair['source_a'], pair['source_b'], pair['overlap_count'])
 
-    print("\n  📋 Top results:")
+    logger.info("\n  📋 Top results:")
     for i, r in enumerate(gathered["all_results"][:10], 1):
         yr = r.get("year", "????")
         src = r.get("source_type", "?")
         title = r["title"][:90]
-        print(f"  {i:2d}. [{yr}] [{src:15s}] {title}")
+        logger.info("  %2d. [%s] [%-15s] %s", i, yr, src, title)
 
 
 def main():
@@ -434,9 +435,9 @@ def main():
 
     sources = DEFAULT_SOURCES if args.sources == "all" else [s.strip() for s in args.sources.split(",")]
 
-    print("🌐 Web-Scale Evidence Gatherer")
-    print(f"   Query: \"{args.query}\"")
-    print(f"   Sources: {', '.join(sources)}\n")
+    logger.info("🌐 Web-Scale Evidence Gatherer")
+    logger.info("   Query: \"%s\"", args.query)
+    logger.info("   Sources: %s\n", ', '.join(sources))
 
     results = gather_evidence(
         args.query,
@@ -450,7 +451,7 @@ def main():
     if args.export_html:
         from med_research.pipeline.evidence.report import generate_html_report
         generate_html_report(results)
-        print("\n✅ HTML report generated: evidence_gatherer/report.html")
+        logger.info("\n✅ HTML report generated: evidence_gatherer/report.html")
 
     return results
 

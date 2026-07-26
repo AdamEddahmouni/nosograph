@@ -17,14 +17,13 @@ from med_research.web.dependencies import get_kg_genes, get_knowledge_graph, loa
 
 def run_gwas(max_studies: int = 30, no_cache: bool = False, progress_callback=None) -> dict:
     """Run GWAS catalog annotation."""
-    from med_research.rate_limiter import rate_limited_sleep
-
     from med_research.pipeline.bioinformatics.gwas import (
         SLE_SEARCH_TERMS,
         cross_reference_with_kg,
         extract_gene_associations,
         search_gwas_studies,
     )
+    from med_research.rate_limiter import rate_limited_sleep
 
     genes = get_kg_genes()
     cb = progress_callback or (lambda p, m: None)

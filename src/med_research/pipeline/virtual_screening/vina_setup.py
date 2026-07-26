@@ -18,6 +18,10 @@ import sys
 import urllib.request
 from pathlib import Path
 
+from med_research.logging_config import get_logger
+
+logger = get_logger(__name__)
+
 VINA_VERSION = "1.2.5"
 VINA_DOWNLOADS = {
     "win32": {
@@ -78,38 +82,38 @@ def download_vina(auto: bool = False) -> str | None:
     """
     sys_name = _system()
     if sys_name not in VINA_DOWNLOADS:
-        print(f"❌ Unsupported platform: {sys.platform}")
+        logger.error("Unsupported platform: %s", sys.platform)
         return None
 
     info = VINA_DOWNLOADS[sys_name]
     dest = BIN_DIR / info["filename"]
 
     if dest.is_file():
-        print(f"✅ Vina binary already installed: {dest}")
+        logger.info("Vina binary already installed: %s", dest)
         return str(dest)
 
-    print(f"\n🔽 AutoDock Vina v{VINA_VERSION}")
-    print(f"   Platform: {platform.system()} ({platform.machine()})")
-    print(f"   Install to: {dest}")
-    print(f"   Download: {info['url']}")
+    logger.info("\nAutoDock Vina v%s", VINA_VERSION)
+    logger.info("   Platform: %s (%s)", platform.system(), platform.machine())
+    logger.info("   Install to: %s", dest)
+    logger.info("   Download: %s", info['url'])
 
     if not auto:
         answer = input("\nDownload and install? (y/n): ").strip().lower()
         if answer not in ("y", "yes"):
-            print("   Skipped.")
+            logger.info("   Skipped.")
             return None
 
     BIN_DIR.mkdir(parents=True, exist_ok=True)
 
     try:
-        print("   Downloading...")
+        logger.info("   Downloading...")
         req = urllib.request.Request(info["url"], headers={"User-Agent": "LupusPlatform/1.0"})
         with urllib.request.urlopen(req, timeout=120) as resp:
             data = resp.read()
     except (urllib.error.URLError, urllib.error.HTTPError) as e:
-        print(f"   ❌ Download failed: {e}")
-        print(f"   ➜ Please download manually from: {info['url']}")
-        print(f"   ➜ Save as: {dest}")
+        logger.error("   Download failed: %s", e)
+        logger.info("   Please download manually from: %s", info['url'])
+        logger.info("   Save as: %s", dest)
         return None
 
     dest.write_bytes(data)
@@ -118,10 +122,10 @@ def download_vina(auto: bool = False) -> str | None:
         os.chmod(dest, 0o755)
 
     if dest.is_file():
-        print(f"   ✅ Installed: {dest}")
+        logger.info("   Installed: %s", dest)
         return str(dest)
     else:
-        print("   ❌ Installation failed.")
+        logger.error("   Installation failed.")
         return None
 
 
@@ -131,15 +135,17 @@ def print_status():
     bin_dir_exists = BIN_DIR.is_dir()
     bin_contents = list(BIN_DIR.glob("vina*")) if bin_dir_exists else []
 
-    print("\nAutoDock Vina Status:")
-    print(f"   In PATH:           {'✅ ' + vina_path if vina_path else '❌ not found'}")
-    print(f"   Project bin/:      {'✅ ' + ', '.join(str(p.name) for p in bin_contents) if bin_contents else 'empty'}")
-    print(f"   Platform:          {platform.system()} {platform.machine()}")
+    pstatus = ('vina_path present: ' + vina_path) if vina_path else 'not found'
+    bstatus = ('present: ' + ', '.join(str(p.name) for p in bin_contents)) if bin_contents else 'empty'
+    logger.info("\nAutoDock Vina Status:")
+    logger.info("   In PATH:           %s", pstatus)
+    logger.info("   Project bin/:      %s", bstatus)
+    logger.info("   Platform:          %s %s", platform.system(), platform.machine())
 
     if not vina_path:
-        print("\n   To install: python virtual_screening/vina_setup.py --auto")
-        print("   Manual: download from https://github.com/ccsb-scripps/AutoDock-Vina/releases")
-        print(f"            save to {BIN_DIR / 'vina'} (or vina.exe on Windows)")
+        logger.info("\n   To install: python virtual_screening/vina_setup.py --auto")
+        logger.info("   Manual: download from https://github.com/ccsb-scripps/AutoDock-Vina/releases")
+        logger.info("            save to %s (or vina.exe on Windows)", BIN_DIR / 'vina')
 
 
 def main():
@@ -170,21 +176,21 @@ def main():
             if vina_path.startswith(str(BIN_DIR)):
                 Path(vina_path).unlink(missing_ok=True)
             else:
-                print(f"⚠️  Vina found at {vina_path} (outside project). Force only removes project-binary.")
+                logger.warning("Vina found at %s (outside project). Force only removes project-binary.", vina_path)
         else:
-            print("⚠️  No Vina binary found to remove.")
+            logger.warning("No Vina binary found to remove.")
 
     existing = check_vina()
     if existing and not args.force:
-        print(f"✅ Vina is already available: {existing}")
+        logger.info("Vina is already available: %s", existing)
         print_status()
         return
 
     result = download_vina(auto=args.auto)
     if result:
-        print(f"\n✅ Setup complete. Vina binary: {result}")
+        logger.info("\nSetup complete. Vina binary: %s", result)
     else:
-        print("\n⚠️  Vina binary not installed. Use --check for status.")
+        logger.warning("\nVina binary not installed. Use --check for status.")
 
 
 if __name__ == "__main__":

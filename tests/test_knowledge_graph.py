@@ -12,6 +12,8 @@ import json
 import networkx as nx
 import pytest
 
+pytestmark = pytest.mark.unit
+
 
 class TestBuildGraph:
     """Tests for build_graph()."""

@@ -11,15 +11,18 @@ Usage:
     python build_graph.py --list-diseases          # List available diseases
 """
 
+from __future__ import annotations
+
 import argparse
 import json
 import os
-import sys
 from collections import defaultdict
 from pathlib import Path
+from typing import Any
 
 import networkx as nx
 
+from med_research.logging_config import get_logger
 from med_research.pipeline.knowledge_graph.config import (
     get_disease_profile,
     list_diseases,
@@ -29,15 +32,23 @@ from med_research.pipeline.knowledge_graph.config import (
     load_relationships,
 )
 
-if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+logger = get_logger(__name__)
 
 
-def build_graph(disease_id: str = "sle") -> nx.MultiDiGraph:
-    """Build a disease-specific heterogeneous knowledge graph."""
+def build_graph(disease_id: str = "sle", progress_callback=None) -> nx.MultiDiGraph:
+    """Build a disease-specific heterogeneous knowledge graph.
+
+    Args:
+        disease_id: Disease identifier (e.g. "sle", "ra").
+        progress_callback: Optional callable(step_name, current, total) for progress.
+    """
+    cb = progress_callback or (lambda s, c, t: None)
+    total_steps = 5
+
     G = nx.MultiDiGraph()
     profile = get_disease_profile(disease_id)
 
+    cb("Loading disease profile", 1, total_steps)
     disease_node_id = profile.get("kg_node_id", f"{profile['name']} ({profile['id'].upper()})")
     G.add_node(
         disease_node_id,
@@ -50,6 +61,7 @@ def build_graph(disease_id: str = "sle") -> nx.MultiDiGraph:
         disease_id=disease_id,
     )
 
+    cb("Loading genes", 2, total_steps)
     genes_data = load_genes(disease_id)
     for gene in genes_data["genes"]:
         evidence_key = f"{disease_id}_evidence"
@@ -66,6 +78,7 @@ def build_graph(disease_id: str = "sle") -> nx.MultiDiGraph:
             category=gene.get("category", ""),
         )
 
+    cb("Loading drugs", 3, total_steps)
     drugs_data = load_drugs(disease_id)
     for drug in drugs_data["drugs"]:
         G.add_node(
@@ -81,6 +94,7 @@ def build_graph(disease_id: str = "sle") -> nx.MultiDiGraph:
             category=drug.get("category", ""),
         )
 
+    cb("Loading pathways", 4, total_steps)
     pathways_data = load_pathways(disease_id)
     for pathway in pathways_data["pathways"]:
         G.add_node(
@@ -90,6 +104,7 @@ def build_graph(disease_id: str = "sle") -> nx.MultiDiGraph:
             description=pathway["description"],
         )
 
+    cb("Loading relationships", 5, total_steps)
     rels_data = load_relationships(disease_id)
     for rel in rels_data["relationships"]:
         if rel["source"] in G and rel["target"] in G:
@@ -104,37 +119,37 @@ def build_graph(disease_id: str = "sle") -> nx.MultiDiGraph:
     return G
 
 
-def analyze_graph(G: nx.MultiDiGraph):
-    """Run comprehensive graph analysis and print findings."""
+def analyze_graph(G: nx.MultiDiGraph) -> None:
+    """Run comprehensive graph analysis and log findings."""
     disease_node = next((n for n, d in G.nodes(data=True) if d.get("type") == "disease"), None)
     disease_name = G.nodes[disease_node]["label"] if disease_node else "Disease"
 
-    print("=" * 70)
-    print(f"KNOWLEDGE GRAPH ANALYSIS: {disease_name}")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("KNOWLEDGE GRAPH ANALYSIS: %s", disease_name)
+    logger.info("=" * 70)
 
     node_types = defaultdict(int)
     for _, data in G.nodes(data=True):
         node_types[data.get("type", "unknown")] += 1
 
-    print("\n  Graph Overview:")
-    print(f"   Total nodes: {G.number_of_nodes():,}")
-    print(f"   Total edges: {G.number_of_edges():,}")
-    print("\n   Node types:")
+    logger.info("  Graph Overview:")
+    logger.info("   Total nodes: %s", f"{G.number_of_nodes():,}")
+    logger.info("   Total edges: %s", f"{G.number_of_edges():,}")
+    logger.info("   Node types:")
     for ntype, count in sorted(node_types.items()):
-        print(f"     \u2022 {ntype}: {count}")
+        logger.info("     - %s: %d", ntype, count)
 
     edge_types = defaultdict(int)
     for _, _, data in G.edges(data=True):
         edge_types[data.get("type", "unknown")] += 1
 
-    print("\n   Edge types:")
+    logger.info("   Edge types:")
     for etype, count in sorted(edge_types.items()):
-        print(f"     \u2022 {etype}: {count}")
+        logger.info("     - %s: %d", etype, count)
 
-    print("\n" + "=" * 70)
-    print("DRUG -> TARGET ANALYSIS")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("DRUG -> TARGET ANALYSIS")
+    logger.info("=" * 70)
     for node, data in G.nodes(data=True):
         if data.get("type") == "drug":
             targets = [
@@ -145,14 +160,14 @@ def analyze_graph(G: nx.MultiDiGraph):
                 target_info = []
                 for t in targets:
                     tdata = G.nodes[t]
-                    target_info.append(f"{tdata.get('label', t)} ({G.nodes[t].get('type')})")
-                print(f"\n  {data['label']}")
-                print(f"     Mechanism: {data.get('description', 'N/A')[:120]}...")
-                print(f"     Targets: {', '.join(target_info)}")
+                    target_info.append("%s (%s)" % (tdata.get('label', t), G.nodes[t].get('type')))
+                logger.info("  %s", data['label'])
+                logger.info("     Mechanism: %s...", data.get('description', 'N/A')[:120])
+                logger.info("     Targets: %s", ', '.join(target_info))
 
-    print("\n" + "=" * 70)
-    print("TOP GENE HUB ANALYSIS")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("TOP GENE HUB ANALYSIS")
+    logger.info("=" * 70)
     gene_degrees = [
         (node, G.degree(node), G.nodes[node].get("label", node))
         for node, data in G.nodes(data=True)
@@ -160,15 +175,15 @@ def analyze_graph(G: nx.MultiDiGraph):
     ]
     gene_degrees.sort(key=lambda x: x[1], reverse=True)
 
-    print(f"\n  Genes most connected in the {disease_name.lower()} network:")
+    logger.info("  Genes most connected in the %s network:", disease_name.lower())
     for node, deg, label in gene_degrees[:10]:
         categories = [G.nodes[n].get("type", "?") for n in G.neighbors(node)]
-        neighbor_summary = ", ".join(f"{categories.count(c)} {c}" for c in set(categories))
-        print(f"  \u2022 {label} (degree={deg}) \u2014 connected to: {neighbor_summary}")
+        neighbor_summary = ", ".join("%d %s" % (categories.count(c), c) for c in set(categories))
+        logger.info("  - %s (degree=%d) -- connected to: %s", label, deg, neighbor_summary)
 
-    print("\n" + "=" * 70)
-    print("PATHWAY CONNECTIVITY")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("PATHWAY CONNECTIVITY")
+    logger.info("=" * 70)
     for node, data in G.nodes(data=True):
         if data.get("type") == "pathway":
             in_edges = list(G.in_edges(node, data=True))
@@ -182,18 +197,18 @@ def analyze_graph(G: nx.MultiDiGraph):
                 for u, v, d in in_edges
                 if G.nodes[u].get("type") in ("gene",)
             ]
-            print(f"\n  {data['label']}")
-            print(f"     Description: {data.get('description', 'N/A')[:150]}...")
+            logger.info("  %s", data['label'])
+            logger.info("     Description: %s...", data.get('description', 'N/A')[:150])
             if drugs_targeting:
-                print(f"     Drugs targeting this pathway: {', '.join(drugs_targeting)}")
+                logger.info("     Drugs targeting this pathway: %s", ', '.join(drugs_targeting))
             if genes_in:
-                print(f"     Associated genes: {', '.join(genes_in)}")
+                logger.info("     Associated genes: %s", ', '.join(genes_in))
 
-    print("\n" + "=" * 70)
-    print("DRUG REPURPOSING INSIGHTS (Shortest Path Analysis)")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("DRUG REPURPOSING INSIGHTS (Shortest Path Analysis)")
+    logger.info("=" * 70)
     targeted_genes = set()
-    for u, v, d in G.edges(data=True):
+    for _u, v, d in G.edges(data=True):
         if d.get("type") == "TARGETS" and G.nodes[v].get("type") == "gene":
             targeted_genes.add(v)
 
@@ -202,17 +217,17 @@ def analyze_graph(G: nx.MultiDiGraph):
         if data.get("type") == "gene" and n not in targeted_genes
     ]
 
-    print(f"\n  {len(untargeted_genes)} associated genes with NO direct therapeutic agent:")
+    logger.info("  %d associated genes with NO direct therapeutic agent:", len(untargeted_genes))
     for gene in untargeted_genes:
         gdata = G.nodes[gene]
-        print(f"     \u2022 {gdata['label']} \u2014 {gdata.get('disease_evidence', '')[:120]}...")
+        logger.info("     - %s -- %s...", gdata['label'], gdata.get('disease_evidence', '')[:120])
 
-    print("\n" + "=" * 70)
-    print("Analysis complete.")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("Analysis complete.")
+    logger.info("=" * 70)
 
 
-def export_for_web(G: nx.MultiDiGraph, output_path: str = None, disease_id: str = "sle") -> dict:
+def export_for_web(G: nx.MultiDiGraph, output_path: str = None, disease_id: str = "sle") -> dict[str, Any]:
     """Export the graph in a format suitable for Cytoscape.js visualization."""
     if output_path is None:
         output_path = Path(__file__).parent / "web" / f"graph_data_{disease_id}.json"
@@ -247,9 +262,9 @@ def export_for_web(G: nx.MultiDiGraph, output_path: str = None, disease_id: str 
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2)
 
-    print(f"Graph exported to {output_path}")
-    print(f"   Nodes: {sum(1 for e in elements if 'source' not in e['data'])}")
-    print(f"   Edges: {sum(1 for e in elements if 'source' in e['data'])}")
+    logger.info("Graph exported to %s", output_path)
+    logger.info("   Nodes: %d", sum(1 for e in elements if 'source' not in e['data']))
+    logger.info("   Edges: %d", sum(1 for e in elements if 'source' in e['data']))
 
     return output
 
@@ -268,15 +283,15 @@ def main():
 
     if args.list_diseases:
         diseases = list_diseases()
-        print("Available diseases:")
+        logger.info("Available diseases:")
         for did, info in sorted(diseases.items()):
-            print(f"  {did:6s} \u2014 {info['name']}")
+            logger.info("  %-6s -- %s", did, info['name'])
         return None
 
     profile = get_disease_profile(args.disease)
-    print(f"Building {profile['name']} Knowledge Graph...")
+    logger.info("Building %s Knowledge Graph...", profile['name'])
     G = build_graph(args.disease)
-    print(f"Graph built: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
+    logger.info("Graph built: %d nodes, %d edges", G.number_of_nodes(), G.number_of_edges())
 
     if args.analyze:
         analyze_graph(G)

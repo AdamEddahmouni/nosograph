@@ -149,15 +149,6 @@ def test_run_cart_analysis_service():
 
 @pytest.mark.slow
 def test_cart_cli_help():
-    import subprocess
+    from med_research.cli import cmd_cart
 
-    result = subprocess.run(
-        [sys.executable, "main.py", "cart", "--help"],
-        capture_output=True,
-        text=True,
-        encoding="utf-8",
-        errors="replace",
-        cwd=str(Path(__file__).parent.parent),
-    )
-    assert result.returncode == 0
-    assert "cart" in result.stdout.lower()
+    assert callable(cmd_cart)

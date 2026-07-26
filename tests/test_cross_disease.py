@@ -278,27 +278,17 @@ def test_generate_html_report(analysis_results):
 
 @pytest.mark.slow
 def test_cross_disease_cli_help():
-    import subprocess
+    from med_research.cli import cmd_cross_disease
 
-    result = subprocess.run(
-        [sys.executable, "main.py", "cross-disease", "--help"],
-        capture_output=True,
-        text=True, encoding="utf-8", errors="replace",
-        cwd=str(Path(__file__).parent.parent),
-    )
-    assert result.returncode == 0
-    assert "cross-disease" in result.stdout.lower()
+    import argparse
+    result = cmd_cross_disease(argparse.Namespace(top=20, export_html=False))
+    assert result == 0
 
 
 @pytest.mark.slow
 def test_cross_disease_cli_run():
-    import subprocess
+    from med_research.cli import cmd_cross_disease
 
-    result = subprocess.run(
-        [sys.executable, "main.py", "cross-disease", "--top", "5"],
-        capture_output=True,
-        text=True, encoding="utf-8", errors="replace",
-        cwd=str(Path(__file__).parent.parent),
-    )
-    assert result.returncode == 0
-    assert "CROSS-DISEASE" in result.stdout
+    import argparse
+    result = cmd_cross_disease(argparse.Namespace(top=5, export_html=False))
+    assert result == 0

@@ -16,18 +16,18 @@ Usage:
 import argparse
 import json
 import os
-import sys
 from collections import defaultdict
 from pathlib import Path
 
 import networkx as nx
 
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
+from med_research.cache import CacheManager
+from med_research.exceptions import ExternalAPIError
+from med_research.logging_config import get_logger
 from med_research.pipeline.knowledge_graph.config import load_genes as load_kg_genes
 
-if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+logger = get_logger(__name__)
+cache = CacheManager()
 
 try:
     import requests
@@ -35,7 +35,7 @@ try:
     REQUESTS_AVAILABLE = True
 except ImportError:
     REQUESTS_AVAILABLE = False
-    print("⚠️  requests not installed. Install with: pip install requests")
+    logger.warning("requests not installed. Run: pip install requests")
 
 DATA_DIR = Path(__file__).parent / "data"
 DR_DATA_DIR = Path(__file__).parent.parent / "drug_repurposing" / "data"
@@ -65,7 +65,7 @@ def get_gene_symbols(genes: dict, exclude_drug_targets: bool = True) -> list:
     }
 
     symbols = []
-    for gene_id, gene_info in genes.items():
+    for gene_id, _gene_info in genes.items():
         if gene_id in exclusions:
             continue
         symbols.append((gene_id, gene_id))
@@ -75,30 +75,24 @@ def get_gene_symbols(genes: dict, exclude_drug_targets: bool = True) -> list:
 
 def _fetch_ppi(symbols: list, confidence: float) -> tuple:
     """Fetch ID map and interactions from STRING API."""
-    print(f"\n🔄 Mapping {len(symbols)} gene symbols to STRING IDs...")
+    logger.info("Mapping %d gene symbols to STRING IDs...", len(symbols))
     id_map = _string_id_map(symbols)
     string_ids = list(id_map.values())
-    print(f"   Mapped {len(string_ids)}/{len(symbols)} symbols to STRING IDs")
+    logger.info("Mapped %d/%d symbols to STRING IDs", len(string_ids), len(symbols))
 
     if not string_ids:
-        print("   ❌ No STRING IDs found. Check gene symbols.")
+        logger.warning("No STRING IDs found. Check gene symbols.")
         return {}, []
 
-    print(
-        f"\n🔄 Fetching PPI network (confidence ≥ {confidence})..."
-    )
+    logger.info("Fetching PPI network (confidence >= %s)...", confidence)
     interactions = _string_network(string_ids, confidence)
-    print(f"   Retrieved {len(interactions)} interactions")
+    logger.info("Retrieved %d interactions", len(interactions))
 
     return id_map, interactions
 
 
 def _string_id_map(symbols: list) -> dict:
-    """
-    Map gene symbols to STRING protein IDs.
-
-    STRING API endpoint: /api/tsv/get_string_ids
-    """
+    """Map gene symbols to STRING protein IDs."""
     params = {
         "identifiers": "\r".join(symbols),
         "species": DEFAULT_SPECIES,
@@ -112,7 +106,7 @@ def _string_id_map(symbols: list) -> dict:
         resp.raise_for_status()
 
         mapping = {}
-        for line in resp.text.strip().split("\n")[1:]:  # Skip header
+        for line in resp.text.strip().split("\n")[1:]:
             parts = line.split("\t")
             if len(parts) >= 3:
                 query = parts[0].strip()
@@ -121,17 +115,16 @@ def _string_id_map(symbols: list) -> dict:
                     mapping[query] = string_id
 
         return mapping
+    except ExternalAPIError as e:
+        logger.warning("STRING API error during ID mapping: %s", e)
+        return {}
     except Exception as e:
-        print(f"   ⚠️  STRING ID mapping error: {e}")
+        logger.warning("STRING ID mapping error: %s", e)
         return {}
 
 
 def _string_network(string_ids: list, confidence: float = 0.4) -> list:
-    """
-    Fetch PPI network from STRING for given protein IDs.
-
-    Returns list of interaction dicts: {stringId_A, stringId_B, score, ...}
-    """
+    """Fetch PPI network from STRING for given protein IDs."""
     params = {
         "identifiers": "%0d".join(string_ids),
         "species": DEFAULT_SPECIES,
@@ -146,7 +139,7 @@ def _string_network(string_ids: list, confidence: float = 0.4) -> list:
         resp = requests.get(url, params=params, timeout=60)
         resp.raise_for_status()
 
-        for line in resp.text.strip().split("\n")[1:]:  # Skip header
+        for line in resp.text.strip().split("\n")[1:]:
             parts = line.split("\t")
             if len(parts) >= 6:
                 interactions.append(
@@ -161,8 +154,10 @@ def _string_network(string_ids: list, confidence: float = 0.4) -> list:
                     }
                 )
 
+    except ExternalAPIError as e:
+        logger.warning("STRING API error during network fetch: %s", e)
     except Exception as e:
-        print(f"   ⚠️  STRING network error: {e}")
+        logger.warning("STRING network error: %s", e)
 
     return interactions
 
@@ -187,7 +182,7 @@ def build_ppi_network(
         NetworkX graph with node attributes: symbol, gene_id, is_seed
     """
     if not REQUESTS_AVAILABLE:
-        print("❌ requests required. Install: pip install requests")
+        logger.warning("requests not installed. Run: pip install requests")
         return nx.Graph()
 
     symbols = [s for _, s in gene_symbols]
@@ -196,27 +191,20 @@ def build_ppi_network(
 
     # Check cache
     freshly_fetched = False
-    cache_path = DATA_DIR / "ppi_cache.json"
-    if use_cache and cache_path.exists():
-        try:
-            cached = json.loads(cache_path.read_text(encoding="utf-8"))
-            if (
-                cached.get("cache_key") == cache_key
-                and cached.get("confidence") == confidence
-            ):
-                print("📦 Loading PPI network from cache...")
-                id_map = cached["id_map"]
-                interactions = cached["interactions"]
-                if not id_map:
-                    print("   ❌ Cached PPI network is empty. Re-fetching...")
-                    id_map, interactions = _fetch_ppi(symbols, confidence)
-                    freshly_fetched = True
-            else:
-                print("   ⚠️  Cache key mismatch, re-fetching PPI network...")
+
+    if use_cache:
+        cached = cache.get("ppi", cache_key)
+        if cached is not None and cached.get("confidence") == confidence:
+            logger.info("Loading PPI network from cache...")
+            id_map = cached["id_map"]
+            interactions = cached["interactions"]
+            if not id_map:
+                logger.warning("Cached PPI network is empty. Re-fetching...")
                 id_map, interactions = _fetch_ppi(symbols, confidence)
                 freshly_fetched = True
-        except (json.JSONDecodeError, KeyError):
-            print("   ⚠️  Corrupt cache, re-fetching PPI network...")
+        else:
+            if cached is not None:
+                logger.warning("Cache key mismatch, re-fetching PPI network...")
             id_map, interactions = _fetch_ppi(symbols, confidence)
             freshly_fetched = True
     else:
@@ -225,28 +213,14 @@ def build_ppi_network(
 
     # Save fresh data to cache (only when we fetched new data)
     if use_cache and freshly_fetched:
-        os.makedirs(DATA_DIR, exist_ok=True)
-        try:
-            cache_path.write_text(
-                json.dumps(
-                    {
-                        "cache_key": cache_key,
-                        "confidence": confidence,
-                        "id_map": id_map,
-                        "interactions": interactions,
-                    },
-                    indent=2,
-                    ensure_ascii=False,
-                    default=str,
-                ),
-                encoding="utf-8",
-            )
-            print(f"💾 Cached PPI network to {cache_path}")
-        except Exception as e:
-            print(f"   ⚠️  Cache write error: {e}")
+        cache.set("ppi", cache_key, {
+            "confidence": confidence,
+            "id_map": id_map,
+            "interactions": interactions,
+        })
 
     if not id_map:
-        print("   ❌ No STRING IDs found. Check gene symbols.")
+        logger.warning("No STRING IDs found. Check gene symbols.")
         return nx.Graph()
 
     # Build graph
@@ -293,11 +267,8 @@ def build_ppi_network(
             weight=inter["score"],
         )
 
-    print(
-        f"   Network: {G.number_of_nodes()} nodes, "
-        f"{G.number_of_edges()} edges "
-        f"({len(seed_string_ids)} seed genes)"
-    )
+    logger.info("Network: %d nodes, %d edges (%d seed genes)",
+                G.number_of_nodes(), G.number_of_edges(), len(seed_string_ids))
 
     return G
 
@@ -311,7 +282,7 @@ def compute_hub_scores(G: nx.Graph) -> list:
     if G.number_of_nodes() == 0:
         return []
 
-    print("\n🔄 Computing hub scores...")
+    logger.info("Computing hub scores...")
 
     # Degree centrality
     degree = nx.degree_centrality(G)
@@ -400,57 +371,41 @@ def cross_reference_with_candidates(
 
 
 def analyze(hub_scores: list, crossref: dict, G: nx.Graph):
-    """Print PPI network analysis summary."""
-    print("\n" + "=" * 70)
-    print("🔗 PROTEIN-PROTEIN INTERACTION NETWORK ANALYSIS")
-    print("=" * 70)
+    """Log PPI network analysis summary."""
+    logger.info("=" * 70)
+    logger.info("PROTEIN-PROTEIN INTERACTION NETWORK ANALYSIS")
+    logger.info("=" * 70)
 
-    print(f"\n  Network size: {G.number_of_nodes()} proteins, "
-          f"{G.number_of_edges()} interactions")
+    logger.info("  Network size: %d proteins, %d interactions",
+                G.number_of_nodes(), G.number_of_edges())
 
-    # Top hubs
-    print("\n  🏆 Top 10 Hub Proteins:")
+    logger.info("  Top 10 Hub Proteins:")
     for i, h in enumerate(hub_scores[:10], 1):
-        marker = "🧬" if h["is_lupus_gene"] else "🔹"
-        print(
-            f"     {i}. {marker} {h['symbol']:<18} "
-            f"Hub: {h['hub_score']:.3f} | "
-            f"Deg: {h['degree']} | "
-            f"Betw: {h['betweenness_centrality']:.3f}"
-        )
+        marker = "LUPUS" if h["is_lupus_gene"] else "OTHER"
+        logger.info("    %d. %s %-18s Hub: %.3f | Deg: %d | Betw: %.3f",
+                    i, marker, h['symbol'], h['hub_score'], h['degree'],
+                    h['betweenness_centrality'])
 
-    # Hub candidates
     matches = crossref.get("hub_candidate_matches", [])
     if matches:
-        print("\n  🎯 Hub proteins with repurposing candidates:")
+        logger.info("  Hub proteins with repurposing candidates:")
         for m in matches[:8]:
             top_cand = m["candidates"][0]
-            print(
-                f"     • {m['symbol']} (hub={m['hub_score']:.3f}) → "
-                f"{m['n_candidates']} candidate(s) "
-                f"(best: {top_cand['drug_name'][:50]}, "
-                f"score={top_cand.get('composite_score', '?')})"
-            )
+            logger.info("    %s (hub=%.3f) -> %d candidate(s) (best: %s, score=%s)",
+                        m['symbol'], m['hub_score'], m['n_candidates'],
+                        top_cand['drug_name'][:50], top_cand.get('composite_score', '?'))
 
-    # Untargeted hubs
     untargeted = crossref.get("hub_untargeted", [])
     if untargeted:
-        print("\n  💡 Hub proteins with NO repurposing candidates (new opportunities):")
+        logger.info("  Hub proteins with NO repurposing candidates (new opportunities):")
         for u in untargeted[:8]:
-            print(
-                f"     • {u['symbol']} (hub={u['hub_score']:.3f}, "
-                f"deg={u['degree']})"
-            )
+            logger.info("    %s (hub=%.3f, deg=%d)", u['symbol'], u['hub_score'], u['degree'])
 
-    # Non-lupus hubs
     non_lupus = crossref.get("non_lupus_hubs", [])[:8]
     if non_lupus:
-        print("\n  🔬 Top non-lupus hub proteins (potential indirect targets):")
+        logger.info("  Top non-lupus hub proteins (potential indirect targets):")
         for n in non_lupus:
-            print(
-                f"     • {n['symbol']} (hub={n['hub_score']:.3f}, "
-                f"deg={n['degree']})"
-            )
+            logger.info("    %s (hub=%.3f, deg=%d)", n['symbol'], n['hub_score'], n['degree'])
 
 
 def main():
@@ -479,19 +434,19 @@ def main():
     )
     args = parser.parse_args()
 
-    print("🔄 Loading gene and candidate data...")
+    logger.info("Loading gene and candidate data...")
     genes = load_genes()
     gene_symbols = get_gene_symbols(genes)
-    print(f"   Loaded {len(gene_symbols)} lupus gene symbols")
+    logger.info("Loaded %d gene symbols", len(gene_symbols))
 
-    print("🔄 Loading repurposing candidates...")
+    logger.info("Loading repurposing candidates...")
     candidates_data = json.loads(
         (DR_DATA_DIR / "candidates.json").read_text(encoding="utf-8")
     )
     candidates = candidates_data["repurposing_candidates"]
-    print(f"   Loaded {len(candidates)} candidates")
+    logger.info("Loaded %d candidates", len(candidates))
 
-    print("🔄 Building PPI network...")
+    logger.info("Building PPI network...")
     G = build_ppi_network(
         gene_symbols,
         confidence=args.confidence,
@@ -500,13 +455,13 @@ def main():
     )
 
     if G.number_of_nodes() == 0:
-        print("❌ Empty PPI network. Cannot proceed.")
+        logger.warning("Empty PPI network. Cannot proceed.")
         return None
 
-    print("🔄 Computing hub scores...")
+    logger.info("Computing hub scores...")
     hub_scores = compute_hub_scores(G)
 
-    print("🔄 Cross-referencing with repurposing candidates...")
+    logger.info("Cross-referencing with repurposing candidates...")
     crossref = cross_reference_with_candidates(
         hub_scores, G, genes, candidates
     )
@@ -549,7 +504,7 @@ def main():
         json.dumps(output, indent=2, ensure_ascii=False, default=str),
         encoding="utf-8",
     )
-    print(f"\n💾 Results saved to {out_path}")
+    logger.info("Results saved to %s", out_path)
 
     if args.export_html:
         from med_research.pipeline.bioinformatics.report import generate_bioinformatics_report
@@ -557,7 +512,7 @@ def main():
         report_path = generate_bioinformatics_report(
             None, None, None, hub_scores, crossref, graph_data
         )
-        print(f"\n✅ Report generated: {report_path}")
+        logger.info("Report generated: %s", report_path)
 
     return hub_scores
 

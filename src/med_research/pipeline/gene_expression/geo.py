@@ -17,7 +17,11 @@ from typing import Optional
 
 import requests
 
+from med_research.exceptions import ExternalAPIError
+from med_research.logging_config import get_logger
 from med_research.rate_limiter import rate_limited_sleep
+
+logger = get_logger(__name__)
 
 GEO_DATA_DIR = Path(__file__).parent / "data"
 CACHE_DIR = GEO_DATA_DIR / "geo_cache"
@@ -129,8 +133,11 @@ def search_geo_datasets(disease: str = "sle", category: str = "broad",
         resp = requests.get(f"{BASE_URL}/esearch.fcgi", params=params, timeout=15)
         resp.raise_for_status()
         id_list = resp.json().get("esearchresult", {}).get("idlist", [])
+    except ExternalAPIError as e:
+        logger.error("  [GEO] Search failed for %s: %s", category, e)
+        return []
     except Exception as e:
-        print(f"  [GEO] Search failed for {category}: {e}")
+        logger.error("  [GEO] Search failed for %s: %s", category, e)
         return []
 
     if not id_list:
@@ -172,8 +179,11 @@ def search_geo_datasets(disease: str = "sle", category: str = "broad",
                 "organism": organism,
                 "tissue_category": category,
             })
+    except ExternalAPIError as e:
+        logger.error("  [GEO] Summary request failed: %s", e)
+        return []
     except Exception as e:
-        print(f"  [GEO] Summary failed: {e}")
+        logger.error("  [GEO] Summary failed: %s", e)
         return []
 
     cache_file.write_text(json.dumps(studies, indent=2))
@@ -197,8 +207,11 @@ def get_study_metadata(accession: str) -> Optional[dict]:
         id_list = resp.json().get("esearchresult", {}).get("idlist", [])
         if not id_list:
             return None
+    except ExternalAPIError as e:
+        logger.error("  [GEO] Study search failed for %s: %s", accession, e)
+        return None
     except Exception as e:
-        print(f"  [GEO] Study search failed for {accession}: {e}")
+        logger.error("  [GEO] Study search failed for %s: %s", accession, e)
         return None
 
     rate_limited_sleep(0.4)
@@ -238,8 +251,11 @@ def get_study_metadata(accession: str) -> Optional[dict]:
 
         cache_file.write_text(json.dumps(metadata, indent=2))
         return metadata
+    except ExternalAPIError as e:
+        logger.error("  [GEO] Study summary fetch failed for %s: %s", accession, e)
+        return None
     except Exception as e:
-        print(f"  [GEO] Study summary failed for {accession}: {e}")
+        logger.error("  [GEO] Study summary failed for %s: %s", accession, e)
         return None
 
 

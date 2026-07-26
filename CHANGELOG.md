@@ -1,5 +1,49 @@
 # Changelog
 
+## [Phase 24] v2.0 Technical Debt Cleanup — 2026-07-25
+
+### Sprint Goal
+Resolve 28 of 49 audited technical debt issues across the entire codebase. All Critical and High severity items now resolved.
+
+### Infrastructure Created
+- `logging_config.py` — Centralized logging with emoji-prefixed console handler, file handler, and `get_logger()` helper
+- `exceptions.py` — Custom exception hierarchy (MedResearchError → ConfigurationError, DataValidationError, ExternalAPIError, PipelineExecutionError)
+- `cache.py` — Centralized CacheManager with TTL, namespace isolation, get/set/clear/cleanup/stats
+- `rate_limiter.py` — Jittered `rate_limited_sleep()` and `exponential_backoff()` utilities
+- `.env.example` — All environment variables documented
+
+### Logging Migration
+- All 24 pipeline modules converted from `print()` to `get_logger()` (650+ calls)
+- CLI `--verbose`/`--quiet` flags wired to `setup_logging()`
+- Web API startup/shutdown logs converted
+
+### Exception Handling
+- Replaced 9 broad `except Exception` blocks with specific exception types across 5 modules
+- GWAS, STRING, GEO, Enrichr, and PubMed API errors now catch `ExternalAPIError`
+- ML predictor now logs warnings on missing optional dependencies (numpy, sklearn, xgboost, shap)
+
+### Caching
+- gwas.py, enrichment.py, ppi.py migrated from inline cache to centralized CacheManager
+
+### Security & API
+- CORS defaults changed from `*` to `http://localhost:3000`
+- AuthMiddleware with X-API-Key header validation
+- RateLimitMiddleware with sliding-window per-IP limiting
+- Request body size middleware (10 MB default)
+- UUID validation on job IDs
+- WebSocket error handler uses specific exceptions (no more `suppress(Exception)`)
+
+### Configuration & Build
+- Dockerfile: non-root `appuser`, single pip install, generic ENTRYPOINT
+- Dependency lock file generated via pip-compile
+- ruff B008 rule enabled (no violations)
+- `--reload` CLI flag guarded by DEBUG env var
+- expand_kg.py uses v2 paths, v1 static mounts removed
+- System version read from `importlib.metadata`
+- Dead pyproject.toml package-data pattern removed
+
+---
+
 ## [Phase 23] Real Molecular Docking — 2026-07-25
 
 ### Sprint Goal

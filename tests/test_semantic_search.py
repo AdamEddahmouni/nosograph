@@ -151,13 +151,8 @@ def test_run_semantic_search_empty_collection():
 
 @pytest.mark.slow
 def test_semantic_cli_help():
-    import subprocess
+    from med_research.cli import cmd_semantic
 
-    result = subprocess.run(
-        [sys.executable, "main.py", "semantic", "--help"],
-        capture_output=True,
-        text=True, encoding="utf-8", errors="replace",
-        cwd=str(Path(__file__).parent.parent),
-    )
-    assert result.returncode == 0
-    assert "semantic" in result.stdout.lower()
+    import argparse
+    result = cmd_semantic(argparse.Namespace(query="treatment targets lupus", top=20, export_html=False))
+    assert result == 0

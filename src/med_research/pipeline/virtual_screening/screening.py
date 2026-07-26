@@ -25,8 +25,13 @@ import json
 import os
 import shutil
 import subprocess
-import sys
 from pathlib import Path
+
+from med_research.logging_config import get_logger
+from med_research.pipeline.knowledge_graph.config import load_drugs as config_load_drugs
+from med_research.pipeline.knowledge_graph.config import load_genes as config_load_genes
+
+logger = get_logger(__name__)
 
 try:
     import numpy as np  # noqa: F401
@@ -34,17 +39,8 @@ try:
 except ImportError:
     NUMPY_AVAILABLE = False
 
-# Add parent to path
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
-if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-
 PROJECT_ROOT = Path(__file__).parent.parent
 DATA_DIR = Path(__file__).parent / "data"
-
-from med_research.pipeline.knowledge_graph.config import load_drugs as config_load_drugs
-from med_research.pipeline.knowledge_graph.config import load_genes as config_load_genes
 
 # ── Optional RDKit / AutoDock Vina detection ────────────────────────────
 
@@ -480,7 +476,7 @@ def run_autodock_vina(
         }
 
     except (subprocess.TimeoutExpired, FileNotFoundError, Exception) as e:
-        print(f"   ⚠️  Vina docking error: {e}")
+        logger.warning("   Vina docking error: %s", e)
         return {}
 
 
@@ -587,8 +583,10 @@ def screen_compounds(
                 scored_compounds.sort(key=lambda x: x["composite_score"], reverse=True)
                 top_for_docking = scored_compounds[:min(5, len(scored_compounds))]
 
-                print(f"   🧬 Running Vina docking for {gene_info.get('name', gene_id)} "
-                      f"({len(top_for_docking)} top compounds)...")
+                logger.info(
+                    "   Running Vina docking for %s (%d top compounds)...",
+                    gene_info.get('name', gene_id), len(top_for_docking)
+                )
 
                 # Prepare receptor and ligands on-demand
                 rec_paths = engine.prepare_all_targets()
@@ -700,7 +698,7 @@ def get_untargeted_genes() -> list:
 
         return untargeted
     except Exception as e:
-        print(f"⚠️  Could not load KG for untargeted gene detection: {e}")
+        logger.warning("Could not load KG for untargeted gene detection: %s", e)
         return []
 
 
@@ -712,38 +710,38 @@ def print_summary(results: dict):
     """Print a summary of virtual screening results."""
     stats = results["stats"]
 
-    print("\n" + "=" * 70)
-    print("🔬 VIRTUAL DRUG SCREENING RESULTS")
-    print("=" * 70)
+    logger.info("\n" + "=" * 70)
+    logger.info("VIRTUAL DRUG SCREENING RESULTS")
+    logger.info("=" * 70)
 
-    print(f"\n  Targets screened:        {stats['targets_screened']}")
-    print(f"  Compounds screened:      {stats['compounds_screened']}")
-    print(f"  Total pairings scored:   {stats['total_pairings']}")
-    print(f"  Tier 1 candidates:       {stats['tier1_count']} (≥7.5)")
-    print(f"  Tier 2 candidates:       {stats['tier2_count']} (6.5-7.4)")
-    print(f"  AutoDock Vina:           {stats['vina_status']}")
-    print(f"  RDKit:                   {'available' if stats['rdkit_available'] else 'not available'}")
+    rdkit_status = 'available' if stats['rdkit_available'] else 'not available'
+    logger.info("\n  Targets screened:        %d", stats['targets_screened'])
+    logger.info("  Compounds screened:      %d", stats['compounds_screened'])
+    logger.info("  Total pairings scored:   %d", stats['total_pairings'])
+    logger.info("  Tier 1 candidates:       %d (>=7.5)", stats['tier1_count'])
+    logger.info("  Tier 2 candidates:       %d (6.5-7.4)", stats['tier2_count'])
+    logger.info("  AutoDock Vina:           %s", stats['vina_status'])
+    logger.info("  RDKit:                   %s", rdkit_status)
 
     # Top results per target
-    print("\n  📋 Top compound per target:")
+    logger.info("\n  Top compound per target:")
     for gene_id, target_data in sorted(results["results_per_target"].items()):
         gene_name = target_data["gene_info"].get("name", gene_id)
         top = target_data["top_compounds"]
         if top:
             best = top[0]
-            print(
-                f"    • {gene_name[:45]:<47} "
-                f"{best['name'][:30]:<32} "
-                f"Score: {best['composite_score']:.1f}"
+            logger.info(
+                "    * %-47s %-32s Score: %.1f",
+                gene_name[:45], best['name'][:30], best['composite_score']
             )
 
     # Top 10 overall
-    print("\n  🏆 Top 10 overall virtual screening hits:")
+    logger.info("\n  Top 10 overall virtual screening hits:")
     for i, c in enumerate(results["all_results"][:10], 1):
-        print(
-            f"    {i:2}. {c['name'][:40]:<42} "
-            f"→ {c['gene_name'][:25]:<27} "
-            f"{c['composite_score']:.1f} ({c['tier'].split('—')[0].strip()})"
+        logger.info(
+            "    %2d. %-42s -> %-27s %.1f (%s)",
+            i, c['name'][:40], c['gene_name'][:25],
+            c['composite_score'], c['tier'].split('—')[0].strip()
         )
 
 
@@ -769,20 +767,20 @@ def main():
     )
     args = parser.parse_args()
 
-    print("🔄 Building compound library...")
+    logger.info("Building compound library...")
     library = build_compound_library()
-    print(f"   {len(library)} compounds loaded")
+    logger.info("   %d compounds loaded", len(library))
 
-    print("🔄 Identifying untargeted lupus genes...")
+    logger.info("Identifying untargeted lupus genes...")
     untargeted = get_untargeted_genes()
     target_ids = [g["id"] for g in untargeted]
-    print(f"   {len(untargeted)} untargeted genes identified")
+    logger.info("   %d untargeted genes identified", len(untargeted))
 
     if args.gene:
         target_ids = [args.gene]
-        print(f"   🎯 Screening against: {args.gene}")
+        logger.info("   Screening against: %s", args.gene)
 
-    print("🔄 Running virtual screening...")
+    logger.info("Running virtual screening...")
     results = screen_compounds(
         target_genes=target_ids,
         compound_library=library,
@@ -799,12 +797,12 @@ def main():
         json.dumps(results, indent=2, ensure_ascii=False, default=str),
         encoding="utf-8",
     )
-    print(f"\n💾 Results saved to {output_path}")
+    logger.info("\nResults saved to %s", output_path)
 
     if args.export_html:
         from med_research.pipeline.virtual_screening.report import generate_screening_report
         report_path = generate_screening_report(results)
-        print(f"✅ HTML report generated: {report_path}")
+        logger.info("HTML report generated: %s", report_path)
 
     return results
 

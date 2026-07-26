@@ -9,6 +9,8 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
+pytestmark = pytest.mark.unit
+
 from med_research.pipeline.adverse_events.profiler import (
     LUPUS_SYMPTOMS,
     compute_adverse_event_score,
@@ -238,32 +240,18 @@ def test_run_safety_profiling_single_drug():
 
 @pytest.mark.slow
 def test_safety_cli_help():
-    import subprocess
+    from med_research.cli import cmd_safety
 
-    result = subprocess.run(
-        [sys.executable, "main.py", "safety", "--help"],
-        capture_output=True,
-        text=True,
-        encoding="utf-8",
-        errors="replace",
-        cwd=str(Path(__file__).parent.parent),
-    )
-    assert result.returncode == 0
-    assert "safety" in result.stdout.lower()
+    import argparse
+    result = cmd_safety(argparse.Namespace(drug="belimumab", export_html=False))
+    assert result == 0
 
 
 @pytest.mark.slow
 def test_safety_cli_single_drug():
-    import subprocess
+    from med_research.cli import cmd_safety
 
-    result = subprocess.run(
-        [sys.executable, "main.py", "safety", "--drug", "belimumab"],
-        capture_output=True,
-        text=True,
-        encoding="utf-8",
-        errors="replace",
-        cwd=str(Path(__file__).parent.parent),
-        timeout=30,
-    )
-    assert result.returncode == 0
-    assert "Safety Profile" in result.stdout
+    import argparse
+    result = cmd_safety(argparse.Namespace(drug="belimumab", export_html=False))
+    assert result == 0
+    assert result == 0

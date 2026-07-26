@@ -1,20 +1,30 @@
-"""Base disease class - defines the contract for all disease modules.
-
-Each disease module under diseases/{id}/ provides:
-  - data/                              JSON knowledge graph data
-  - config.py                          Disease-specific pipeline configuration  
-  - scores.py (optional)               Disease-specific scoring tables
-
-The pipeline reads a disease module and runs all computational modules
-against it, using the disease config to parameterize disease-specific logic.
-"""
+"""Base disease class - defines the contract for all disease modules."""
 
 from __future__ import annotations
 
 import json
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Optional
+from typing import Any, Optional
+
+from med_research.diseases.schemas import (
+    DiseaseProfile as DiseaseProfileSchema,
+    DrugsFile,
+    GenesFile,
+    PathwaysFile,
+    RelationshipsFile,
+    validate_and_load,
+)
+from med_research.logging_config import get_logger
+
+logger = get_logger(__name__)
+
+_SCHEMA_MAP = {
+    "genes.json": GenesFile,
+    "drugs.json": DrugsFile,
+    "pathways.json": PathwaysFile,
+    "relationships.json": RelationshipsFile,
+}
 
 
 @dataclass
@@ -47,8 +57,8 @@ class Disease:
         self.disease_id = disease_id
         self._root = self._resolve_root(disease_id)
         self._profile: Optional[DiseaseProfile] = None
-        self._config: Optional[dict] = None
-        self._scores: Optional[dict] = None
+        self._config: Optional[dict[str, Any]] = None
+        self._scores: Optional[dict[str, Any]] = None
 
     @staticmethod
     def _resolve_root(disease_id: str) -> Path:
@@ -69,8 +79,12 @@ class Disease:
     def profile(self) -> DiseaseProfile:
         if self._profile is None:
             path = self.data_dir / "profile.json"
-            with open(path, encoding="utf-8") as f:
-                data = json.load(f)
+            validated = validate_and_load(path, DiseaseProfileSchema)
+            if validated is not None:
+                data = validated.model_dump()
+            else:
+                with open(path, encoding="utf-8") as f:
+                    data = json.load(f)
             self._profile = DiseaseProfile(
                 id=data.get("id", self.disease_id),
                 name=data.get("name", self.disease_id),
@@ -85,26 +99,31 @@ class Disease:
             )
         return self._profile
 
-    def load_json(self, filename: str) -> dict:
+    def load_json(self, filename: str) -> dict[str, Any]:
         path = self.data_dir / filename
+        schema = _SCHEMA_MAP.get(filename)
+        if schema is not None:
+            validated = validate_and_load(path, schema)
+            if validated is not None:
+                return validated.model_dump()
         with open(path, encoding="utf-8") as f:
             return json.load(f)
 
-    def load_genes(self) -> dict:
+    def load_genes(self) -> dict[str, Any]:
         return self.load_json("genes.json")
 
-    def load_drugs(self) -> dict:
+    def load_drugs(self) -> dict[str, Any]:
         return self.load_json("drugs.json")
 
-    def load_pathways(self) -> dict:
+    def load_pathways(self) -> dict[str, Any]:
         return self.load_json("pathways.json")
 
-    def load_relationships(self) -> dict:
+    def load_relationships(self) -> dict[str, Any]:
         return self.load_json("relationships.json")
 
     # ── Disease-specific configuration ─────────────────────────────────
 
-    def _load_config(self) -> dict:
+    def _load_config(self) -> dict[str, Any]:
         """Load disease_config.py if it exists, else return empty defaults."""
         if self._config is None:
             config_path = self._root / "config.py"
@@ -127,22 +146,22 @@ class Disease:
         return self._config
 
     @property
-    def config(self) -> dict:
+    def config(self) -> dict[str, Any]:
         return self._load_config()
 
     def get_symptoms(self) -> list[str]:
         return self.config.get("SYMPTOMS", [])
 
-    def get_car_t_scores(self) -> dict:
+    def get_car_t_scores(self) -> dict[str, Any]:
         return self.config.get("CAR_T_SCORES", {})
 
-    def get_adverse_event_profile(self) -> dict:
+    def get_adverse_event_profile(self) -> dict[str, Any]:
         return self.config.get("ADVERSE_EVENT_PROFILE", {})
 
-    def get_drug_induced_lupus_risk(self) -> dict:
+    def get_drug_induced_lupus_risk(self) -> dict[str, Any]:
         return self.config.get("DRUG_INDUCED_LUPUS_RISK", {})
 
-    def get_mechanism_categories(self) -> dict:
+    def get_mechanism_categories(self) -> dict[str, Any]:
         return self.config.get("MECHANISM_CATEGORIES", {})
 
     # ── Static helpers ─────────────────────────────────────────────────

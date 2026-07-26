@@ -15,6 +15,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import os
 import sys
 import time
 from pathlib import Path
@@ -22,6 +23,8 @@ from pathlib import Path
 from med_research.diseases.base import Disease
 from med_research.logging_config import get_logger, setup_logging
 from med_research.rate_limiter import rate_limited_sleep
+
+logger = get_logger(__name__)
 
 
 def _build_parser() -> argparse.ArgumentParser:
@@ -228,11 +231,12 @@ def cmd_kg(args):
         export_for_web,
     )
 
+    logger = get_logger(__name__)
     disease = Disease(args.disease)
-    print(f"\nBuilding {disease.profile.name} Knowledge Graph...")
+    logger.info("Building %s Knowledge Graph...", disease.profile.name)
 
     G = build_graph(args.disease)
-    print(f"Graph: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
+    logger.info("Graph: %d nodes, %d edges", G.number_of_nodes(), G.number_of_edges())
 
     if args.analyze:
         analyze_graph(G)
@@ -265,17 +269,17 @@ def cmd_bioinformatics(args):
     data_dir.mkdir(parents=True, exist_ok=True)
 
     if not args.skip_gwas:
-        print("\n[GWAS] Running GWAS analysis...")
+        logger.info("[GWAS] Running GWAS analysis...")
         from med_research.pipeline.bioinformatics.gwas import run_gwas_analysis
         run_gwas_analysis()
 
     if not args.skip_enrichment:
-        print("\n[Enrichment] Running pathway enrichment...")
+        logger.info("[Enrichment] Running pathway enrichment...")
         from med_research.pipeline.bioinformatics.enrichment import run_enrichment_analysis
         run_enrichment_analysis()
 
     if not args.skip_ppi:
-        print("\n[PPI] Running PPI network analysis...")
+        logger.info("[PPI] Running PPI network analysis...")
         from med_research.pipeline.bioinformatics.ppi import run_ppi_analysis
         run_ppi_analysis()
 
@@ -386,8 +390,8 @@ def cmd_safety(args):
     else:
         results = score_all_drugs()
         summary = get_safety_summary()
-        print(f"Total drugs: {summary['total_drugs']}")
-        print(f"Avg safety score: {summary['avg_safety_score']:.1f}")
+        logger.info("Total drugs: %s", summary['total_drugs'])
+        logger.info("Avg safety score: %.1f", summary['avg_safety_score'])
         print_analysis(results[:15])
 
     if args.export_html:
@@ -448,7 +452,7 @@ def cmd_semantic(args):
     """Semantic search."""
     from med_research.pipeline.semantic_search.engine import SemanticSearchEngine
     engine = SemanticSearchEngine()
-    results = engine.search(args.query, top_n=args.top)
+    results = engine.search(args.query, top_k=args.top)
 
     if args.export_html:
         from med_research.pipeline.semantic_search.report import generate_html_report
@@ -614,11 +618,20 @@ def cmd_serve(args):
     import uvicorn
 
     from med_research.web.config import HOST, PORT
+
+    reload_enabled = bool(args.reload)
+    if reload_enabled and os.environ.get("DEBUG", "").strip().lower() != "true":
+        logger.warning(
+            "--reload is enabled but DEBUG env var is not set to 'true'. "
+            "Auto-reload should not be used in production. Disabling reload."
+        )
+        reload_enabled = False
+
     uvicorn.run(
         "med_research.web.main:app",
         host=args.host or HOST,
         port=args.port or PORT,
-        reload=args.reload,
+        reload=reload_enabled,
     )
     return 0
 
@@ -630,17 +643,17 @@ def cmd_cache(args):
 
     if args.cache_action == "stats":
         stats = cache.stats()
-        print(f"Total cached entries: {stats['total_entries']}")
+        logger.info("Total cached entries: %s", stats['total_entries'])
         for ns, info in stats["namespaces"].items():
-            print(f"  {ns}: {info['entries']} entries, {info['size_bytes']:,} bytes")
+            logger.info("  %s: %d entries, %s bytes", ns, info['entries'], f"{info['size_bytes']:,}")
     elif args.cache_action == "clear":
         n = cache.clear(namespace=getattr(args, "namespace", None))
-        print(f"Cleared {n} cache entries")
+        logger.info("Cleared %d cache entries", n)
     elif args.cache_action == "cleanup":
         n = cache.cleanup(ttl_seconds=getattr(args, "ttl", None))
-        print(f"Removed {n} expired entries")
+        logger.info("Removed %d expired entries", n)
     else:
-        print("Usage: med-research cache {stats|clear|cleanup}")
+        logger.info("Usage: med-research cache {stats|clear|cleanup}")
     return 0
 
 

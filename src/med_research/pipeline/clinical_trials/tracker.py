@@ -13,23 +13,22 @@ Usage:
     python tracker.py --max 100 --export-html  # 100 trials + HTML report
 """
 
+from __future__ import annotations
+
 import argparse
 import json
 import os
-import sys
 from collections import Counter
 from datetime import datetime
 from pathlib import Path
+from typing import Any
 
-from med_research.rate_limiter import rate_limited_sleep
-
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
+from med_research.logging_config import get_logger
 from med_research.pipeline.knowledge_graph.config import load_drugs as config_load_drugs
 from med_research.pipeline.knowledge_graph.config import load_genes as config_load_genes
+from med_research.rate_limiter import rate_limited_sleep
 
-if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+logger = get_logger(__name__)
 
 try:
     import requests
@@ -76,13 +75,13 @@ MOA_KEYWORDS = {
 }
 
 
-def search_clinical_trials(query: str = "lupus OR SLE", max_results: int = 100) -> list:
+def search_clinical_trials(query: str = "lupus OR SLE", max_results: int = 100) -> list[dict[str, Any]]:
     """Search ClinicalTrials.gov API v2 for trials matching the query.
 
     Returns list of study dicts with protocolSection data.
     """
     if not REQUESTS_AVAILABLE:
-        print("❌ requests required. Install: pip install requests")
+        logger.error("requests required. Install: pip install requests")
         return []
 
     all_studies = []
@@ -99,7 +98,7 @@ def search_clinical_trials(query: str = "lupus OR SLE", max_results: int = 100) 
         "StudyType"
     )
 
-    print(f"\n🔍 Searching ClinicalTrials.gov for: {query}")
+    logger.info("Searching ClinicalTrials.gov for: %s", query)
 
     while len(all_studies) < max_results:
         params = {
@@ -117,8 +116,8 @@ def search_clinical_trials(query: str = "lupus OR SLE", max_results: int = 100) 
             resp = requests.get(f"{CT_API}/studies", params=params, timeout=30)
             resp.raise_for_status()
             data = resp.json()
-        except Exception as e:
-            print(f"   ⚠️  API error: {e}")
+        except requests.RequestException as e:
+            logger.warning("API error: %s", e)
             break
 
         studies = data.get("studies", [])
@@ -130,11 +129,11 @@ def search_clinical_trials(query: str = "lupus OR SLE", max_results: int = 100) 
 
         rate_limited_sleep(0.3)
 
-    print(f"   Found {len(all_studies)} interventional trials")
+    logger.info("Found %d interventional trials", len(all_studies))
     return all_studies
 
 
-def parse_trial(study: dict) -> dict:
+def parse_trial(study: dict[str, Any]) -> dict[str, Any]:
     """Parse a ClinicalTrials.gov study into a structured format."""
     proto = study.get("protocolSection", {})
 
@@ -209,7 +208,7 @@ def parse_trial(study: dict) -> dict:
     }
 
 
-def _primary_phase(phases: list) -> str:
+def _primary_phase(phases: list[str]) -> str:
     """Get the highest/latest phase from a list of phases."""
     if not phases:
         return ""
@@ -220,7 +219,7 @@ def _primary_phase(phases: list) -> str:
     return best
 
 
-def categorize_moa(trial: dict) -> str:
+def categorize_moa(trial: dict[str, Any]) -> str:
     """Categorize a trial's mechanism of action from its interventions and title."""
     text = (trial.get("title", "") + " " +
             " ".join(trial.get("interventions", []))).lower()
@@ -244,7 +243,7 @@ def categorize_moa(trial: dict) -> str:
     return "Other Targeted"
 
 
-def load_kg_entities() -> dict:
+def load_kg_entities() -> dict[str, dict[str, Any]]:
     """Load all KG genes and drugs for cross-referencing."""
     genes = {}
     try:
@@ -265,7 +264,7 @@ def load_kg_entities() -> dict:
     return {"genes": genes, "drugs": drugs}
 
 
-def cross_reference_trials(trials: list, kg_entities: dict) -> list:
+def cross_reference_trials(trials: list[dict[str, Any]], kg_entities: dict[str, dict[str, Any]]) -> list[dict[str, Any]]:
     """Cross-reference trial interventions against KG genes and drugs."""
     results = []
 
@@ -281,27 +280,25 @@ def cross_reference_trials(trials: list, kg_entities: dict) -> list:
         for gene_id, gene in kg_entities["genes"].items():
             gene_name = gene["name"].lower()
             # Match by gene ID (e.g. "BTK", "JAK1") or partial name
-            if gene_id.lower() in text or any(
+            if (gene_id.lower() in text or any(
                 part.lower() in text for part in gene_name.split() if len(part) > 4
-            ):
-                if gene_id not in [g["gene_id"] for g in matched_genes]:
-                    matched_genes.append({
-                        "gene_id": gene_id,
-                        "gene_name": gene["name"],
-                        "category": gene.get("category", ""),
-                    })
+            )) and gene_id not in [g["gene_id"] for g in matched_genes]:
+                matched_genes.append({
+                    "gene_id": gene_id,
+                    "gene_name": gene["name"],
+                    "category": gene.get("category", ""),
+                })
 
         # Match against KG drugs
         for drug_id, drug in kg_entities["drugs"].items():
             drug_name = drug["name"].lower().split("(")[0].strip()
-            if drug_name in text or drug_id in text:
-                if drug_id not in [d["drug_id"] for d in matched_drugs]:
-                    matched_drugs.append({
-                        "drug_id": drug_id,
-                        "drug_name": drug["name"],
-                        "target": drug.get("target", ""),
-                        "category": drug.get("category", ""),
-                    })
+            if (drug_name in text or drug_id in text) and drug_id not in [d["drug_id"] for d in matched_drugs]:
+                matched_drugs.append({
+                    "drug_id": drug_id,
+                    "drug_name": drug["name"],
+                    "target": drug.get("target", ""),
+                    "category": drug.get("category", ""),
+                })
 
         trial["kg_matches"] = {
             "genes": matched_genes,
@@ -319,16 +316,26 @@ def track_trials(
     query: str = "lupus OR SLE",
     max_results: int = 100,
     use_cache: bool = True,
-) -> dict:
+    progress_callback=None,
+) -> dict[str, Any]:
     """Run the full clinical trial tracking pipeline.
+
+    Args:
+        query: ClinicalTrials.gov search query.
+        max_results: Max trials to fetch.
+        use_cache: Whether to use cached results.
+        progress_callback: Optional callable(step_name, current, total).
 
     Returns:
         dict with trials, stats, and kg_crossref data.
     """
+    cb = progress_callback or (lambda s, c, t: None)
+
     # Load KG
-    print("🔄 Loading knowledge graph entities...")
+    cb("Loading knowledge graph entities", 1, 7)
+    logger.info("Loading knowledge graph entities...")
     kg_entities = load_kg_entities()
-    print(f"   Loaded {len(kg_entities['genes'])} genes, {len(kg_entities['drugs'])} drugs")
+    logger.info("Loaded %d genes, %d drugs", len(kg_entities['genes']), len(kg_entities['drugs']))
 
     # Check cache
     cache_path = DATA_DIR / "ct_cache.json"
@@ -339,11 +346,10 @@ def track_trials(
             cached = json.loads(cache_path.read_text(encoding="utf-8"))
             trials = cached.get("trials", [])
             if len(trials) >= max_results:
-                print(f"📦 Loading {len(trials)} trials from cache...")
-                kg_entities_simple = {"genes": kg_entities["genes"], "drugs": kg_entities["drugs"]}
+                logger.info("Loading %d trials from cache...", len(trials))
                 if "kg_crossref" in cached and cached.get("kg_crossref"):
                     trials = [dict(t) for t in trials]
-                    for i, t in enumerate(trials):
+                    for _i, t in enumerate(trials):
                         if "kg_matches" not in t:
                             t["kg_matches"] = {"genes": [], "drugs": [], "gene_count": 0, "drug_count": 0, "has_match": False}
                     return {
@@ -352,23 +358,28 @@ def track_trials(
                         "kg_crossref": cached.get("kg_crossref", {}),
                     }
         except (json.JSONDecodeError, KeyError) as e:
-            print(f"   ⚠️  Cache error ({e}), re-fetching...")
+            logger.warning("Cache error (%s), re-fetching...", e)
 
     # Search trials
+    cb("Searching ClinicalTrials.gov", 2, 7)
     raw_trials = search_clinical_trials(query, max_results)
 
     # Parse trials
+    cb("Parsing trial data", 3, 7)
     trials = [parse_trial(t) for t in raw_trials]
 
     # Categorize MoA
+    cb("Categorizing mechanisms of action", 4, 7)
     for trial in trials:
         trial["moa_category"] = categorize_moa(trial)
 
     # Cross-reference with KG
-    print("🔄 Cross-referencing against knowledge graph...")
+    cb("Cross-referencing against knowledge graph", 5, 7)
+    logger.info("Cross-referencing against knowledge graph...")
     trials = cross_reference_trials(trials, kg_entities)
 
     # Compute stats
+    cb("Computing trial statistics", 6, 7)
     stats = _compute_stats(trials)
 
     # Build crossref summary
@@ -385,12 +396,13 @@ def track_trials(
         json.dumps(cache_data, indent=2, ensure_ascii=False, default=str),
         encoding="utf-8",
     )
-    print(f"💾 Cached {len(trials)} trials to {cache_path}")
+    logger.info("Cached %d trials to %s", len(trials), cache_path)
 
+    cb("Trial tracking complete", 7, 7)
     return {"trials": trials, "stats": stats, "kg_crossref": kg_crossref}
 
 
-def _compute_stats(trials: list) -> dict:
+def _compute_stats(trials: list[dict[str, Any]]) -> dict[str, Any]:
     """Compute summary statistics across all trials."""
     statuses = Counter(t["status"] for t in trials)
     phases = Counter()
@@ -423,7 +435,7 @@ def _compute_stats(trials: list) -> dict:
     }
 
 
-def _build_crossref_summary(trials: list) -> dict:
+def _build_crossref_summary(trials: list[dict[str, Any]]) -> dict[str, Any]:
     """Build a summary of KG cross-references across all trials."""
     gene_hits = Counter()
     drug_hits = Counter()
@@ -456,52 +468,52 @@ def _build_crossref_summary(trials: list) -> dict:
     }
 
 
-def print_summary(stats: dict, kg_crossref: dict):
+def print_summary(stats: dict[str, Any], kg_crossref: dict[str, Any]) -> None:
     """Print a summary of clinical trial tracking results."""
-    print("\n" + "=" * 70)
-    print("📋 CLINICAL TRIAL TRACKER RESULTS")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("CLINICAL TRIAL TRACKER RESULTS")
+    logger.info("=" * 70)
 
-    print(f"\n  Total trials analyzed:      {stats['total_trials']}")
-    print(f"  KG-matched trials:          {stats['kg_matched_trials']}")
-    print(f"  Total enrollment:           {stats['total_enrollment']:,}")
-    print(f"  Avg enrollment:             {stats['avg_enrollment']:,}")
+    logger.info("  Total trials analyzed:      %s", stats['total_trials'])
+    logger.info("  KG-matched trials:          %s", stats['kg_matched_trials'])
+    logger.info("  Total enrollment:           %s", f"{stats['total_enrollment']:,}")
+    logger.info("  Avg enrollment:             %s", f"{stats['avg_enrollment']:,}")
 
     # Phases
-    print("\n  📊 Phase distribution:")
+    logger.info("  Phase distribution:")
     for phase, count in sorted(stats["phases"].items(),
                                 key=lambda x: PHASE_ORDER.get(
                                     {v: k for k, v in PHASE_LABELS.items()}.get(x[0], ""), -1
                                 )):
         bar_width = int(count / max(stats["phases"].values()) * 30) if stats["phases"] else 0
-        print(f"    {phase:<16} {'█' * bar_width} {count}")
+        logger.info("    %-16s %s %s", phase, '█' * bar_width, count)
 
     # MoA
     moas = stats.get("moas", {})
     if moas:
-        print("\n  🔬 Mechanism of action categories:")
+        logger.info("  Mechanism of action categories:")
         for moa, count in sorted(moas.items(), key=lambda x: x[1], reverse=True)[:8]:
-            print(f"    • {moa:<30} {count}")
+            logger.info("    * %-30s %s", moa, count)
 
     # Top sponsors
     sponsors = stats.get("top_sponsors", {})
     if sponsors:
-        print("\n  🏢 Top sponsors:")
+        logger.info("  Top sponsors:")
         for sponsor, count in sorted(sponsors.items(), key=lambda x: x[1], reverse=True)[:5]:
-            print(f"    • {sponsor[:55]:<57} {count}")
+            logger.info("    * %-55s %s", sponsor[:55], count)
 
     # KG crossref
     gene_hits = kg_crossref.get("gene_hits", {})
     if gene_hits:
-        print("\n  🧬 Top genes in clinical trials:")
+        logger.info("  Top genes in clinical trials:")
         for gene_id, count in list(gene_hits.items())[:8]:
-            print(f"    • {gene_id:<30} {count} trial{'s' if count > 1 else ''}")
+            logger.info("    * %-30s %s trial%s", gene_id, count, 's' if count > 1 else '')
 
     drug_hits = kg_crossref.get("drug_hits", {})
     if drug_hits:
-        print("\n  💊 Top drugs in clinical trials:")
+        logger.info("  Top drugs in clinical trials:")
         for drug_id, count in list(drug_hits.items())[:8]:
-            print(f"    • {drug_id:<30} {count} trial{'s' if count > 1 else ''}")
+            logger.info("    * %-30s %s trial%s", drug_id, count, 's' if count > 1 else '')
 
 
 def main():
@@ -526,7 +538,7 @@ def main():
     )
     args = parser.parse_args()
 
-    print("🔄 Initializing Clinical Trial Tracker...")
+    logger.info("Initializing Clinical Trial Tracker...")
     results = track_trials(
         query=args.query,
         max_results=args.max,
@@ -541,12 +553,12 @@ def main():
         json.dumps(results, indent=2, ensure_ascii=False, default=str),
         encoding="utf-8",
     )
-    print(f"\n💾 Results saved to {output_path}")
+    logger.info("Results saved to %s", output_path)
 
     if args.export_html:
         from med_research.pipeline.clinical_trials.report import generate_ct_report
         report_path = generate_ct_report(results)
-        print(f"✅ HTML report generated: {report_path}")
+        logger.info("HTML report generated: %s", report_path)
 
     return results
 

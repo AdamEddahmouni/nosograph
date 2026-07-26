@@ -1,6 +1,8 @@
-# 🧬 Lupus Research & Drug Discovery Platform
+# Medical Research Platform
 
-An open computational platform to accelerate the discovery of treatments and, ultimately, a cure for **Systemic Lupus Erythematosus (SLE)**.
+A multi-disease computational drug discovery platform supporting 7 autoimmune diseases (SLE, RA, MS, SS, SSc, T1D, IBD).
+
+Originally focused on **Systemic Lupus Erythematosus (SLE)**, now expanded to cross-disease analysis.
 
 ---
 
@@ -13,67 +15,38 @@ Lupus is a chronic autoimmune disease affecting ~5 million people worldwide. It'
 ## 🏗️ Architecture
 
 ```
-lupus-platform/
-├── knowledge_graph/      # Phase 1 ✅ — Heterogeneous graph: genes, drugs, pathways, disease
-│   ├── build_graph.py    #   NetworkX graph builder & analyzer
-│   ├── data/             #   Curated JSON: 22 genes, 20 drugs, 7 pathways, 63+ relationships
-│   └── web/              #   Interactive Cytoscape.js visualization
+med-research/
+├── src/med_research/
+│   ├── pipeline/
+│   │   ├── knowledge_graph/    # Heterogeneous graph: genes, drugs, pathways, disease
+│   │   ├── drug_repurposing/   # Multi-modal drug repurposing scoring engine
+│   │   ├── bioinformatics/     # GWAS, pathway enrichment, PPI networks
+│   │   ├── literature_mining/  # PubMed mining & biomedical NER
+│   │   ├── virtual_screening/  # Property-based screening + AutoDock Vina
+│   │   ├── clinical_trials/    # Clinical trial tracker & analysis
+│   │   ├── ml_predictor/       # XGBoost + SHAP druggability prediction
+│   │   ├── cross_disease/      # Cross-disease analysis (7 diseases)
+│   │   ├── drug_synergy/       # Drug combination synergy scoring
+│   │   ├── adverse_events/     # Adverse event safety profiling
+│   │   ├── network_pharmacology/ # Network pharmacology analysis
+│   │   ├── gene_expression/    # Gene expression correlation
+│   │   ├── car_t_predictor/    # CAR-T response prediction
+│   │   ├── biomarker_discovery/ # Cross-module biomarker discovery
+│   │   ├── semantic_search/    # ChromaDB semantic search
+│   │   └── evidence/           # Multi-source evidence gathering + LLM extraction
+│   │
+│   ├── web/                    # FastAPI web application (17 routers)
+│   ├── diseases/               # 7 disease configs (sle, ra, ms, ss, ssc, t1d, ibd)
+│   ├── logging_config.py       # Centralized logging
+│   ├── exceptions.py           # Custom exception hierarchy
+│   ├── cache.py                # Centralized CacheManager
+│   └── rate_limiter.py         # Jittered rate limiting
 │
-├── drug_repurposing/     # Phase 3 ✅ — Multi-modal drug repurposing scoring engine
-│   ├── engine.py         #   6-dimensional weighted scoring across 13 untargeted genes
-│   └── data/             #   39 scored candidates with mechanistic evidence
-│
-├── bioinformatics/       # Phase 2 ✅ — GWAS, pathway enrichment, PPI networks
-│   ├── gwas.py           #   NHGRI-EBI GWAS Catalog annotation & SNP resolution
-│   ├── enrichment.py     #   GSEApy/Enrichr pathway enrichment (GO, KEGG, Reactome, WikiPathways)
-│   ├── ppi.py            #   STRING API protein-protein interaction networks
-│   └── report.py         #   Combined HTML report with dot plots, Manhattan plots, hub charts
-│
-├── literature_mining/    # Phase 4 ✅ — PubMed mining & biomedical NER
-│   ├── miner.py          #   BioPython Entrez PubMed search with targeted queries
-│   ├── crossref.py       #   Dictionary + regex + spaCy entity extraction
-│   ├── ner.py            #   Hybrid NER (regex patterns + optional scispacy)
-│   └── report.py         #   HTML report with coverage bars & candidate support
-│
-├── virtual_screening/    # Phase 6 ✅ — Property-based virtual drug screening
-│   ├── screening.py       #   5-dimensional scoring (binding, drug-likeness, etc.)
-│   ├── docking.py         #   Phase 23 ✅ — AutoDock Vina integration
-│   ├── vina_setup.py      #   Vina binary download helper
-│   ├── report.py          #   HTML report with per-target compound tables
-│   ├── targets/           #   PDB target configs (10 validated + 3 validation)
-│   └── data/              #   Screening results JSON
-│
-├── clinical_trials/      # Phase 8 ✅ — Clinical trial tracker & analysis
-│   ├── tracker.py        #   ClinicalTrials.gov API v2 queries & KG cross-ref
-│   ├── report.py         #   HTML report with phase/MoA charts
-│   └── data/             #   Cached trial data
-│
-├── ml_predictor/         # Phase 7 ✅ — ML-driven target druggability prediction
-│   ├── predictor.py      #   XGBoost classifier with KG features & SHAP interpretability
-│   ├── report.py         #   HTML report with SHAP plots & feature importance
-│   └── data/             #   ML predictions JSON
-│
-├── cross_disease/        # Phase 22 ✅ — Cross-disease analyzer across 7 autoimmune diseases
-│   ├── analyzer.py        #   Shared genes/drugs/pathways, disease similarity, multi-disease scoring
-│   └── report.py          #   HTML report with radar chart, similarity matrix, drug rankings
-│
-├── tests/                # 328 tests, all passing
-│   ├── test_engine.py              # Drug repurposing scoring & tiering
-│   ├── test_knowledge_graph.py     # Graph construction & web export
-│   ├── test_report.py              # Report generation & escaping
-│   ├── test_bioinformatics_enrichment.py
-│   ├── test_bioinformatics_gwas.py
-│   ├── test_bioinformatics_ppi.py
-│   ├── test_literature_mining.py
-│   ├── test_virtual_screening.py
-│   ├── test_clinical_trials.py
-│   ├── test_ml_predictor.py
-│   ├── test_cross_disease.py       # Cross-disease analysis
-│   ├── test_docking.py             # Molecular docking engine
-│   └── test_web_api.py
-│
-└── .github/workflows/    # CI: Python 3.10–3.12, pytest across all modules
-```
+├── tests/                      # ~718 tests, all passing
+├── Dockerfile                  # Multi-stage, non-root user
+├── docker-compose.yml
+├── pyproject.toml
+└── .github/workflows/          # CI: Python 3.10–3.12
 
 ---
 
@@ -92,7 +65,7 @@ An interactive graph connecting **35 genes**, **26 drugs**, **10 pathways**, and
 
 **Run it:**
 ```bash
-python knowledge_graph/build_graph.py --analyze --export
+python -m med_research.cli kg --analyze --export
 # Open knowledge_graph/web/index.html in a browser
 ```
 
@@ -116,8 +89,7 @@ Multi-modal scoring system evaluating **39 repurposing candidates** across **13 
 
 **Run it:**
 ```bash
-python drug_repurposing/engine.py --top 15 --export-html
-# Open drug_repurposing/report.html in a browser
+python -m med_research.cli repurpose --top 15 --disease sle --export-html
 ```
 
 **Tech Stack:** Python, NetworkX, custom weighted scoring model
@@ -132,30 +104,28 @@ Three integrated modules for computational genomics and systems biology:
 Queries the NHGRI-EBI GWAS Catalog REST API for SLE-associated variants, resolves SNP rsIDs to genes and genomic locations, and cross-references findings against the knowledge graph. Includes Manhattan plot visualization.
 
 ```bash
-python bioinformatics/gwas.py --max-studies 50 --export-html
+python -m med_research.cli bioinformatics --skip-enrichment
 ```
 
 #### 📈 Pathway Enrichment Analysis
 Runs gene set enrichment via GSEApy/Enrichr across GO Biological Process, KEGG, Reactome, and WikiPathways. Cross-references enriched terms against the 7 curated lupus pathways in the knowledge graph. Generates publication-quality dot plots.
 
 ```bash
-python bioinformatics/enrichment.py --export-html
+python -m med_research.cli bioinformatics --skip-gwas
 ```
 
 #### 🔗 PPI Network Analysis
 Builds protein-protein interaction networks from STRING, computes hub scores (degree + betweenness centrality), identifies hub proteins with repurposing candidates, and flags untargeted hubs as new opportunities. Includes interactive pyvis network visualization.
 
 ```bash
-python bioinformatics/ppi.py --confidence 0.4 --export-html
+python -m med_research.cli bioinformatics --skip-gwas --skip-enrichment
 ```
 
 #### 📋 Combined Bioinformatics Report
 Generates a single HTML report integrating all three analyses with dot plots, Manhattan plots, hub score charts, and PPI network visualization. The report is auto-generated when you pass `--export-html` to any bioinformatics module:
 
 ```bash
-python bioinformatics/gwas.py --export-html
-python bioinformatics/enrichment.py --export-html
-python bioinformatics/ppi.py --export-html
+python -m med_research.cli bioinformatics
 # Each generates bioinformatics/bioinformatics_report.html with the sections available
 ```
 
@@ -175,7 +145,7 @@ Automatically searches PubMed for SLE/lupus-related articles, extracts biomedica
 - Gene-level coverage tracking with visual bars
 
 ```bash
-python literature_mining/miner.py --max 50 --export-html --targeted
+python -m med_research.cli literature --max 50 --export-html --targeted
 # Open literature_mining/literature_report.html in a browser
 ```
 
@@ -198,10 +168,10 @@ Computationally screens the 20-drug compound library against lupus protein targe
 
 **Run it:**
 ```bash
-python virtual_screening/screening.py --top 15 --export-html
+python -m med_research.cli screening --top 15 --export-html
 
 # Phase 23: Real molecular docking (requires Vina binary + Meeko)
-python virtual_screening/screening.py --use-vina --top 15 --export-html
+python -m med_research.cli screening --use-vina --top 15 --export-html
 python virtual_screening/vina_setup.py --auto  # Install Vina binary
 
 # Open virtual_screening/screening_report.html in a browser
@@ -225,7 +195,7 @@ Trains an XGBoost classifier on knowledge graph features to predict which curren
 
 **Run it:**
 ```bash
-python ml_predictor/predictor.py --top 10 --export-html
+python -m med_research.cli ml --top 10 --export-html
 # Open ml_predictor/ml_report.html in a browser
 ```
 
@@ -247,7 +217,7 @@ Queries ClinicalTrials.gov API v2 for lupus/SLE interventional trials, categoriz
 
 **Run it:**
 ```bash
-python clinical_trials/tracker.py --max 50 --export-html
+python -m med_research.cli trials --max 50 --export-html
 # Open clinical_trials/ct_report.html in a browser
 ```
 
@@ -295,31 +265,29 @@ pytest tests/ -v --cov=. --cov-report=term-missing
 
 ```bash
 # Option 1: Unified CLI (one command)
-python main.py run-all --export-html
+python -m med_research.cli run-all --export-html
 
 # Option 2: Step-by-step
 # Step 1: Build the knowledge graph (required by all other modules)
-python knowledge_graph/build_graph.py --analyze --export
+python -m med_research.cli kg --analyze --export
 
 # Step 2: Run drug repurposing analysis
-python drug_repurposing/engine.py --top 15 --export-html
+python -m med_research.cli repurpose --top 15 --export-html
 
 # Step 3: Run bioinformatics analyses
-python bioinformatics/gwas.py --export-html
-python bioinformatics/enrichment.py --export-html
-python bioinformatics/ppi.py --export-html
+python -m med_research.cli bioinformatics
 
 # Step 4: Mine the literature
-python literature_mining/miner.py --export-html
+python -m med_research.cli literature --export-html
 
 # Step 5: Run virtual screening
-python virtual_screening/screening.py --top 15 --export-html
+python -m med_research.cli screening --top 15 --export-html
 
 # Step 6: Track clinical trials
-python clinical_trials/tracker.py --export-html
+python -m med_research.cli trials --export-html
 
 # Step 7: Run ML target prediction
-python ml_predictor/predictor.py --top 10 --export-html
+python -m med_research.cli ml --top 10 --export-html
 
 # Step 8: View results
 # Open in browser:
@@ -352,7 +320,7 @@ docker compose run --rm pipeline test
 
 ```bash
 python -m pytest tests/ -v
-# 297 tests, all passing
+# ~718 tests, all passing
 ```
 
 ---
@@ -408,8 +376,8 @@ knowledge_graph/data/
 
 **CLI Usage:**
 ```bash
-python main.py kg --disease ra --analyze
-python main.py run-all --disease ra --export-html
+python -m med_research.cli kg --disease ra --analyze
+python -m med_research.cli run-all --disease ra --export-html
 python main.py kg --list-diseases
 ```
 
@@ -445,8 +413,8 @@ This platform is a **research tool** intended to assist in computational drug di
 This is an open science project. Contributions in computational biology, immunology, rheumatology, data science, and software engineering are welcome.
 
 **Areas where help is especially needed:**
-- Real molecular docking with AutoDock Vina and PDB structures
-- Additional data curation for genes, drugs, and pathways
-- scispacy integration for advanced biomedical NER
-- Multi-omics data integration (GEO expression datasets)
-- Web application / REST API layer
+- Jinja2 template-based HTML report generation
+- Additional data curation for genes, drugs, and pathways (6 non-SLE diseases)
+- Disease config population (CAR-T scores, drug safety risk tiers for RA, MS, IBD, etc.)
+- Integration test suite organization
+- Type annotation improvements

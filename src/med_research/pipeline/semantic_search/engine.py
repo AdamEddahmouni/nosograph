@@ -13,13 +13,11 @@ Usage:
 
 import argparse
 import json
-import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).parent.parent))
+from med_research.logging_config import get_logger
 
-if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+logger = get_logger(__name__)
 
 DATA_DIR = Path(__file__).parent / "data"
 CHROMA_DIR = Path("data/chroma/semantic")
@@ -48,7 +46,7 @@ def _check_deps():
     if not ST_AVAILABLE:
         missing.append("sentence-transformers (pip install sentence-transformers)")
     if missing:
-        print(f"Missing dependencies: {', '.join(missing)}")
+        logger.error("Missing dependencies: %s", ', '.join(missing))
         return False
     return True
 
@@ -71,9 +69,9 @@ class SemanticSearchEngine:
 
     def _load_model(self):
         if self.model is None:
-            print(f"Loading embedding model: {self.model_name} ...")
+            logger.info("Loading embedding model: %s ...", self.model_name)
             self.model = SentenceTransformer(self.model_name)
-            print(f"   Model loaded ({self.model.get_sentence_embedding_dimension()}-dim embeddings)")
+            logger.info("   Model loaded (%s-dim embeddings)", self.model.get_sentence_embedding_dimension())
 
     def _ensure_collection(self):
         if self.collection is None:
@@ -92,12 +90,12 @@ class SemanticSearchEngine:
     def load_articles(self) -> list:
         """Load cached PubMed articles."""
         if not PUBMED_CACHE.exists():
-            print(f"No PubMed cache found at {PUBMED_CACHE}")
-            print("Run: python literature_mining/miner.py first")
+            logger.warning("No PubMed cache found at %s", PUBMED_CACHE)
+            logger.info("Run: python literature_mining/miner.py first")
             return []
 
         articles = json.loads(PUBMED_CACHE.read_text(encoding="utf-8"))
-        print(f"Loaded {len(articles)} cached articles")
+        logger.info("Loaded %d cached articles", len(articles))
         self._articles = articles
         return articles
 
@@ -115,7 +113,7 @@ class SemanticSearchEngine:
         if not articles:
             return 0
 
-        print(f"Indexing {len(articles)} articles in batches of {batch_size} ...")
+        logger.info("Indexing %d articles in batches of %d ...", len(articles), batch_size)
         total = 0
 
         for i in range(0, len(articles), batch_size):
@@ -141,9 +139,9 @@ class SemanticSearchEngine:
                 documents=texts,
             )
             total += len(batch)
-            print(f"   [{total}/{len(articles)}] indexed")
+            logger.info("   [%d/%d] indexed", total, len(articles))
 
-        print(f"Done — {total} articles indexed into {CHROMA_DIR}")
+        logger.info("Done — %d articles indexed into %s", total, CHROMA_DIR)
         return total
 
     def search(self, query: str, top_k: int = 20) -> list:
@@ -157,7 +155,7 @@ class SemanticSearchEngine:
             try:
                 self.collection = self.client.get_collection("pubmed_abstracts")
             except Exception:
-                print("No indexed collection found. Run --index first.")
+                logger.warning("No indexed collection found. Run --index first.")
                 return []
 
         query_embedding = self.model.encode(query).tolist()
@@ -217,15 +215,15 @@ def main():
     if args.query:
         results = engine.search(args.query, top_k=args.top)
         if results:
-            print(f"\n{'=' * 70}")
-            print(f"🔍 SEMANTIC SEARCH: \"{args.query}\"")
-            print(f"{'=' * 70}")
-            print(f"\n  Found {len(results)} results:\n")
+            logger.info("\n%s", '=' * 70)
+            logger.info("\U0001f50d SEMANTIC SEARCH: \"%s\"", args.query)
+            logger.info("%s", '=' * 70)
+            logger.info("\n  Found %d results:\n", len(results))
             for r in results:
-                print(f"  #{r['rank']:<3} [{r['similarity']:.1f}] [{r['year']}] {r['title'][:90]}")
-                print(f"       {r.get('journal', '')}")
+                logger.info("  #%-3s [%.1f] [%s] %s", str(r['rank']), r['similarity'], r['year'], r['title'][:90])
+                logger.info("       %s", r.get('journal', ''))
         else:
-            print("No results found. Try running --index first.")
+            logger.warning("No results found. Try running --index first.")
 
     if args.export_html:
         from med_research.pipeline.semantic_search.report import generate_semantic_report
@@ -233,7 +231,7 @@ def main():
         results = results if args.query else []
         indexed = engine.get_indexed_count()
         generate_semantic_report(results, query, indexed)
-        print("\n✅ HTML report generated: semantic_search/report.html")
+        logger.info("\n\N{WHITE HEAVY CHECK MARK} HTML report generated: semantic_search/report.html")
 
     return 0
 

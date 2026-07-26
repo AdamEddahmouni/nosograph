@@ -17,19 +17,18 @@ Usage:
     python drug_synergy/engine.py --export-html  # Generate HTML report
 """
 
+from __future__ import annotations
+
 import argparse
 import json
-import sys
 from itertools import combinations
 from pathlib import Path
+from typing import Any
 
-# Ensure project root is importable
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
+from med_research.logging_config import get_logger
 from med_research.pipeline.knowledge_graph.config import load_drugs as config_load_drugs
 
-if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+logger = get_logger(__name__)
 
 DATA_DIR = Path(__file__).parent / "data"
 
@@ -88,12 +87,12 @@ KNOWN_COMBINATIONS = {
 }
 
 
-def load_json(path: Path) -> dict:
+def load_json(path: Path) -> dict[str, Any]:
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
 
-def load_drugs() -> dict:
+def load_drugs() -> dict[str, Any]:
     """Load drug data indexed by drug ID."""
     data = config_load_drugs()
     return {d["id"]: d for d in data["drugs"]}
@@ -290,7 +289,7 @@ def score_combined_evidence(drug_a: dict, drug_b: dict) -> float:
     return 1.0  # No known evidence
 
 
-def score_drug_pair(drug_a: dict, drug_b: dict) -> dict:
+def score_drug_pair(drug_a: dict, drug_b: dict) -> dict[str, Any]:
     """Score a single drug pair across all 5 dimensions.
 
     Returns:
@@ -381,19 +380,19 @@ def score_drug_pairs(drugs: dict, progress_callback=None) -> list:
 
 def analyze(scored_pairs: list):
     """Print statistical summary of scored pairs."""
-    print("\n" + "=" * 75)
-    print("📊 DRUG SYNERGY ANALYSIS SUMMARY")
-    print("=" * 75)
+    logger.info("=" * 75)
+    logger.info("📊 DRUG SYNERGY ANALYSIS SUMMARY")
+    logger.info("=" * 75)
 
     tier_counts = {}
     for p in scored_pairs:
         tier_counts[p["tier"]] = tier_counts.get(p["tier"], 0) + 1
 
-    print(f"\n  Total drug pairs evaluated: {len(scored_pairs)}")
+    logger.info("Total drug pairs evaluated: %s", len(scored_pairs))
     scores = [p["composite_score"] for p in scored_pairs]
-    print(f"  Score range: {min(scores):.2f} - {max(scores):.2f}")
-    print(f"  Mean score: {sum(scores)/len(scores):.2f}")
-    print("\n  Distribution by tier:")
+    logger.info("  Score range: %.2f - %.2f", min(scores), max(scores))
+    logger.info("  Mean score: %.2f", sum(scores) / len(scores))
+    logger.info("  Distribution by tier:")
     for tier in [
         "🔴 Tier 1 — Strong Synergy Potential",
         "🟠 Tier 2 — Promising Synergy",
@@ -402,7 +401,7 @@ def analyze(scored_pairs: list):
     ]:
         count = tier_counts.get(tier, 0)
         label = tier.split("—")[0].strip()
-        print(f"    {label}: {count} pairs")
+        logger.info("    %s: %s pairs", label, count)
 
     # Top drugs appearing most in top pairs
     drug_mentions = {}
@@ -410,28 +409,28 @@ def analyze(scored_pairs: list):
         drug_mentions[p["drug_a_name"]] = drug_mentions.get(p["drug_a_name"], 0) + 1
         drug_mentions[p["drug_b_name"]] = drug_mentions.get(p["drug_b_name"], 0) + 1
 
-    print("\n  Most versatile drugs (appearing most in top-50 pairs):")
+    logger.info("  Most versatile drugs (appearing most in top-50 pairs):")
     for drug_name, count in sorted(drug_mentions.items(), key=lambda x: x[1], reverse=True)[:8]:
-        print(f"    {drug_name}: {count} synergistic pairings")
+        logger.info("    %s: %s synergistic pairings", drug_name, count)
 
 
 def print_top_pairs(scored_pairs: list, top_n: int = 15):
     """Print the top N synergistic drug pairs."""
-    print("\n" + "=" * 75)
-    print(f"🏆 TOP {top_n} SYNERGISTIC DRUG PAIRS")
-    print("=" * 75)
+    logger.info("=" * 75)
+    logger.info("🏆 TOP %s SYNERGISTIC DRUG PAIRS", top_n)
+    logger.info("=" * 75)
 
     for i, p in enumerate(scored_pairs[:top_n], 1):
-        print(f"\n  #{i} | {p['tier']}")
-        print("  " + "─" * 50)
-        print(f"  💊 Drug A:  {p['drug_a_name']}")
-        print(f"  💊 Drug B:  {p['drug_b_name']}")
-        print(f"  ⭐ Score:   {p['composite_score']:.2f}/10")
-        print(f"     ├─ Target Complementarity:   {p['target_complementarity']}/10")
-        print(f"     ├─ Pathway Diversity:        {p['pathway_diversity']}/10")
-        print(f"     ├─ Mechanism Orthogonality:  {p['mechanism_orthogonality']}/10")
-        print(f"     ├─ Safety Non-overlap:       {p['safety_non_overlap']}/10")
-        print(f"     └─ Combined Evidence:        {p['combined_evidence']}/10")
+        logger.info("  #%s | %s", i, p["tier"])
+        logger.info("  " + "─" * 50)
+        logger.info("  💊 Drug A:  %s", p["drug_a_name"])
+        logger.info("  💊 Drug B:  %s", p["drug_b_name"])
+        logger.info("  ⭐ Score:   %.2f/10", p["composite_score"])
+        logger.info("     ├─ Target Complementarity:   %s/10", p["target_complementarity"])
+        logger.info("     ├─ Pathway Diversity:        %s/10", p["pathway_diversity"])
+        logger.info("     ├─ Mechanism Orthogonality:  %s/10", p["mechanism_orthogonality"])
+        logger.info("     ├─ Safety Non-overlap:       %s/10", p["safety_non_overlap"])
+        logger.info("     └─ Combined Evidence:        %s/10", p["combined_evidence"])
 
 
 def compute_synergy(progress_callback=None) -> list:
@@ -470,7 +469,7 @@ def main():
     if args.export_html:
         from med_research.pipeline.drug_synergy.report import generate_html_report
         generate_html_report(pairs)
-        print("\n✅ HTML report generated: drug_synergy/report.html")
+        logger.info("✅ HTML report generated: drug_synergy/report.html")
 
     return pairs
 

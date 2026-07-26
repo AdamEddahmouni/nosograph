@@ -14,16 +14,16 @@ Usage:
     python adverse_events/profiler.py --export-html  # Generate report
 """
 
+from __future__ import annotations
+
 import argparse
 import json
-import sys
 from pathlib import Path
+from typing import Any
 
-# Ensure project root is importable
-sys.path.insert(0, str(Path(__file__).parent.parent))
+from med_research.logging_config import get_logger
 
-if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+logger = get_logger(__name__)
 
 DATA_DIR = Path(__file__).parent / "data"
 PROFILES_PATH = DATA_DIR / "profiles.json"
@@ -60,7 +60,7 @@ LUPUS_SYMPTOMS = [
 ]
 
 
-def load_profiles() -> dict:
+def load_profiles() -> dict[str, Any]:
     """Load adverse event profiles indexed by drug ID."""
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     if PROFILES_PATH.exists():
@@ -69,7 +69,7 @@ def load_profiles() -> dict:
     return _get_default_profiles()
 
 
-def _get_default_profiles() -> dict:
+def _get_default_profiles() -> dict[str, Any]:
     """Return curated default profiles for all 26 KG drugs."""
     profiles = {
         "belimumab": {
@@ -671,7 +671,7 @@ def score_dil_risk(profile: dict) -> float:
     return 2.0
 
 
-def compute_adverse_event_score(profile: dict) -> dict:
+def compute_adverse_event_score(profile: dict[str, Any]) -> dict[str, Any]:
     """Compute the adverse event safety score for a single drug.
 
     Returns dict with individual dimension scores and composite score.
@@ -752,7 +752,7 @@ def score_all_drugs(progress_callback=None) -> list:
     return results
 
 
-def get_drug_profile(drug_id: str) -> dict:
+def get_drug_profile(drug_id: str) -> dict[str, Any]:
     """Get the adverse event profile and score for a specific drug."""
     profiles = load_profiles()
     profile = profiles.get(drug_id)
@@ -762,7 +762,7 @@ def get_drug_profile(drug_id: str) -> dict:
     return {**profile, **score}
 
 
-def get_safety_summary() -> dict:
+def get_safety_summary() -> dict[str, Any]:
     """Get platform-wide safety summary statistics."""
     results = score_all_drugs()
     scores = [r["composite_safety_score"] for r in results]
@@ -779,29 +779,29 @@ def get_safety_summary() -> dict:
     }
 
 
-def print_analysis(results: list):
+def print_analysis(results: list[dict[str, Any]]) -> None:
     """Print summary analysis."""
-    print("\n" + "=" * 75)
-    print("🛡️  ADVERSE EVENT PROFILING SUMMARY")
-    print("=" * 75)
+    logger.info("=" * 75)
+    logger.info("🛡️  ADVERSE EVENT PROFILING SUMMARY")
+    logger.info("=" * 75)
 
     summary = get_safety_summary()
-    print(f"\n  Total drugs profiled: {summary['total_drugs']}")
-    print(f"  Average safety score: {summary['avg_safety_score']}")
-    print(f"  Safest drug: {summary['safest_drug']} ({summary['safest_score']:.1f})")
-    print(f"  Riskiest drug: {summary['riskiest_drug']} ({summary['riskiest_score']:.1f})")
-    print(f"  Drugs with black box warnings: {summary['drugs_with_bbw']}")
-    print(f"  Drugs with DIL risk: {summary['drugs_with_dil_risk']}")
+    logger.info("  Total drugs profiled: %s", summary['total_drugs'])
+    logger.info("  Average safety score: %s", summary['avg_safety_score'])
+    logger.info("  Safest drug: %s (%.1f)", summary['safest_drug'], summary['safest_score'])
+    logger.info("  Riskiest drug: %s (%.1f)", summary['riskiest_drug'], summary['riskiest_score'])
+    logger.info("  Drugs with black box warnings: %s", summary['drugs_with_bbw'])
+    logger.info("  Drugs with DIL risk: %s", summary['drugs_with_dil_risk'])
 
-    print("\n  Top 10 safest drugs:")
+    logger.info("  Top 10 safest drugs:")
     for i, r in enumerate(results[:10], 1):
         bbw = f" [BBW: {len(r['black_box_warnings'])}]" if r.get("black_box_warnings") else ""
-        print(f"    {i:2d}. {r['drug_name']} — {r['composite_safety_score']:.1f}{bbw}")
+        logger.info("    %2d. %s — %.1f%s", i, r['drug_name'], r['composite_safety_score'], bbw)
 
-    print("\n  Bottom 5 highest-risk drugs:")
+    logger.info("  Bottom 5 highest-risk drugs:")
     for i, r in enumerate(results[-5:], 1):
         bbw = f" [BBW: {len(r['black_box_warnings'])}]" if r.get("black_box_warnings") else ""
-        print(f"    {i:2d}. {r['drug_name']} — {r['composite_safety_score']:.1f}{bbw}")
+        logger.info("    %2d. %s — %.1f%s", i, r['drug_name'], r['composite_safety_score'], bbw)
 
 
 def main():
@@ -815,16 +815,16 @@ def main():
     if args.drug:
         profile = get_drug_profile(args.drug)
         if profile:
-            print(f"\n🛡️  Safety Profile: {profile['drug_name']}")
-            print(f"   Composite Safety Score: {profile.get('composite_safety_score', 'N/A')}")
-            print(f"   Lupus Overlap:          {profile.get('lupus_symptom_overlap_score', 'N/A')}/10")
-            print(f"   Severity Burden:        {profile.get('severity_burden_score', 'N/A')}/10")
-            print(f"   Chronic Use Safety:     {profile.get('chronic_use_safety_score', 'N/A')}/10")
-            print(f"   DIL Risk:               {profile.get('dil_risk_score', 'N/A')}/10")
-            print(f"   Black Box Warnings:     {profile.get('black_box_warnings', [])}")
-            print(f"   Lupus Overlap AEs:      {profile.get('lupus_overlap_ae', [])}")
+            logger.info("🛡️  Safety Profile: %s", profile['drug_name'])
+            logger.info("   Composite Safety Score: %s", profile.get('composite_safety_score', 'N/A'))
+            logger.info("   Lupus Overlap:          %s/10", profile.get('lupus_symptom_overlap_score', 'N/A'))
+            logger.info("   Severity Burden:        %s/10", profile.get('severity_burden_score', 'N/A'))
+            logger.info("   Chronic Use Safety:     %s/10", profile.get('chronic_use_safety_score', 'N/A'))
+            logger.info("   DIL Risk:               %s/10", profile.get('dil_risk_score', 'N/A'))
+            logger.info("   Black Box Warnings:     %s", profile.get('black_box_warnings', []))
+            logger.info("   Lupus Overlap AEs:      %s", profile.get('lupus_overlap_ae', []))
         else:
-            print(f"Drug '{args.drug}' not found in safety database.")
+            logger.warning("Drug '%s' not found in safety database.", args.drug)
         return
 
     results = score_all_drugs()
@@ -833,7 +833,7 @@ def main():
     if args.export_html:
         from med_research.pipeline.adverse_events.report import generate_html_report
         generate_html_report(results)
-        print("\n✅ HTML report generated: adverse_events/report.html")
+        logger.info("✅ HTML report generated: adverse_events/report.html")
 
     return results
 

@@ -1,6 +1,7 @@
 """Job management API router — submit and track Celery tasks."""
 
 import asyncio
+from uuid import UUID
 
 from celery.result import AsyncResult
 from fastapi import APIRouter, WebSocket, WebSocketDisconnect
@@ -92,12 +93,12 @@ async def submit_safety(drug_id: str | None = None):
 # ── Job status endpoint ─────────────────────────────────────────────────────
 
 @router.get("/{job_id}", response_model=JobStatus)
-async def get_job_status(job_id: str):
+async def get_job_status(job_id: UUID):
     """Get the status and result of a submitted job."""
-    result = AsyncResult(job_id, app=celery_app)
+    result = AsyncResult(str(job_id), app=celery_app)
 
     response = {
-        "job_id": job_id,
+        "job_id": str(job_id),
         "status": result.state,
     }
 
@@ -120,6 +121,12 @@ async def job_websocket(websocket: WebSocket, job_id: str):
     Connects to Celery's AsyncResult and pushes state changes
     every 500ms until the job reaches a terminal state.
     """
+    try:
+        UUID(job_id)
+    except ValueError:
+        await websocket.close(code=1008, reason="Invalid job_id: must be a UUID")
+        return
+
     await websocket.accept()
 
     result = AsyncResult(job_id, app=celery_app)
@@ -175,14 +182,15 @@ async def job_websocket(websocket: WebSocket, job_id: str):
 
     except WebSocketDisconnect:
         pass
-    except Exception as e:
-        from contextlib import suppress
-        with suppress(ConnectionError, RuntimeError):
+    except (ConnectionError, RuntimeError, asyncio.TimeoutError) as e:
+        try:
             await websocket.send_json({
                 "job_id": job_id,
                 "status": "ERROR",
                 "error": str(e),
             })
+        except Exception:
+            pass
 
 
 

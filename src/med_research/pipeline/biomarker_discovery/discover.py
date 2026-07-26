@@ -20,15 +20,12 @@ Usage:
 
 import argparse
 import json
-import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
+from med_research.logging_config import get_logger
 from med_research.pipeline.knowledge_graph.config import load_relationships
 
-if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+logger = get_logger(__name__)
 
 DATA_DIR = Path(__file__).parent / "data"
 
@@ -296,45 +293,45 @@ def compute_biomarker_matrix(progress_callback=None) -> list:
 
 
 def analyze(results: list):
-    """Print summary."""
-    print("\n" + "=" * 75)
-    print("🧬 BIOMARKER DISCOVERY — Cross-Module Integration")
-    print("=" * 75)
+    """Log summary."""
+    logger.info("\n%s", "=" * 75)
+    logger.info("🧬 BIOMARKER DISCOVERY — Cross-Module Integration")
+    logger.info("%s", "=" * 75)
 
     scores = [r["composite_score"] for r in results]
-    print(f"\n  {len(results)} genes analyzed across 5 platforms")
-    print(f"  Score range: {min(scores):.2f} - {max(scores):.2f}")
-    print(f"  Mean score: {sum(scores)/len(scores):.2f}")
+    logger.info("\n  %d genes analyzed across 5 platforms", len(results))
+    logger.info("  Score range: %.2f - %.2f", min(scores), max(scores))
+    logger.info("  Mean score: %.2f", sum(scores) / len(scores))
 
     tier_counts = {}
     for r in results:
         tier_counts[r["tier"]] = tier_counts.get(r["tier"], 0) + 1
-    print("\n  Distribution by tier:")
+    logger.info("\n  Distribution by tier:")
     for tier in ["🔴 Tier 1 — Strong Biomarker", "🟠 Tier 2 — Promising Biomarker",
                   "🟡 Tier 3 — Emergent Biomarker", "🟢 Tier 4 — Investigational"]:
         count = tier_counts.get(tier, 0)
         label = tier.split("—")[0].strip()
-        print(f"    {label}: {count} biomarkers")
+        logger.info("    %s: %d biomarkers", label, count)
 
 
 def print_top_biomarkers(results: list, top_n: int = 15):
-    """Print top biomarkers."""
-    print("\n" + "=" * 75)
-    print(f"🎯 TOP {top_n} BIOMARKER CANDIDATES")
-    print("=" * 75)
+    """Log top biomarkers."""
+    logger.info("\n%s", "=" * 75)
+    logger.info("🎯 TOP %d BIOMARKER CANDIDATES", top_n)
+    logger.info("%s", "=" * 75)
 
     for i, r in enumerate(results[:top_n], 1):
-        print(f"\n  #{i} | {r['tier']}")
-        print("  " + "─" * 50)
-        print(f"  🧬 Gene:      {r['gene_name']} ({r['gene_id']})")
-        print(f"  📂 Category:   {r.get('category', '')}")
-        print(f"  ⭐ Score:      {r['composite_score']:.2f}/10")
-        print(f"     ├─ Cross-Module Consistency: {r['cross_module_consistency']}/10")
-        print(f"     ├─ Expression Predictiveness: {r['expression_predictiveness']}/10")
-        print(f"     ├─ CAR-T Alignment:          {r['cart_alignment']}/10")
-        print(f"     ├─ Druggability:             {r['druggability']}/10")
-        print(f"     └─ Biomarker Novelty:        {r['biomarker_novelty']}/10")
-        print(f"  💊 Best Modality: {r['best_modality']} ({r['best_modality_score']})")
+        logger.info("\n  #%d | %s", i, r["tier"])
+        logger.info("  %s", "─" * 50)
+        logger.info("  🧬 Gene:      %s (%s)", r["gene_name"], r["gene_id"])
+        logger.info("  📂 Category:   %s", r.get("category", ""))
+        logger.info("  ⭐ Score:      %.2f/10", r["composite_score"])
+        logger.info("     ├─ Cross-Module Consistency: %s/10", r["cross_module_consistency"])
+        logger.info("     ├─ Expression Predictiveness: %s/10", r["expression_predictiveness"])
+        logger.info("     ├─ CAR-T Alignment:          %s/10", r["cart_alignment"])
+        logger.info("     ├─ Druggability:             %s/10", r["druggability"])
+        logger.info("     └─ Biomarker Novelty:        %s/10", r["biomarker_novelty"])
+        logger.info("  💊 Best Modality: %s (%s)", r["best_modality"], r["best_modality_score"])
 
 
 def main():
@@ -352,7 +349,7 @@ def main():
     if args.export_html:
         from med_research.pipeline.biomarker_discovery.report import generate_html_report
         generate_html_report(results)
-        print("\n✅ HTML report generated: biomarker_discovery/report.html")
+        logger.info("\n✅ HTML report generated: biomarker_discovery/report.html")
 
     return results
 

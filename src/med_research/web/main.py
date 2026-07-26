@@ -1,19 +1,13 @@
 """FastAPI application entry point for the Medical Research Platform API."""
 
-import sys
 from contextlib import asynccontextmanager
 from pathlib import Path
-
-if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-
-# Ensure project root is importable
-sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
+from med_research.logging_config import get_logger
 from med_research.web.config import (
     API_DESCRIPTION,
     API_TAGS,
@@ -24,9 +18,11 @@ from med_research.web.config import (
     HOST,
     PORT,
 )
-from med_research.web.middleware import AuthMiddleware, RateLimitMiddleware
+from med_research.web.middleware import AuthMiddleware, RateLimitMiddleware, RequestBodySizeMiddleware
 from med_research.web.routers import routers
 from med_research.web.routers.jobs import router as jobs_router
+
+logger = get_logger(__name__)
 
 REPO_ROOT = Path(__file__).parent.parent.parent.parent
 PIPELINE_DIR = Path(__file__).parent.parent / "pipeline"
@@ -37,16 +33,15 @@ PIPELINE_DIR = Path(__file__).parent.parent / "pipeline"
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Pre-load the knowledge graph on startup for faster first request."""
-    print("🔄 Pre-loading knowledge graph...")
+    logger.info("Pre-loading knowledge graph...")
     from med_research.web.dependencies import get_knowledge_graph
 
     G = get_knowledge_graph()
-    print(f"✅ Knowledge graph loaded: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
+    logger.info("Knowledge graph loaded: %d nodes, %d edges", G.number_of_nodes(), G.number_of_edges())
 
     yield
 
-    # Shutdown: nothing to clean up currently
-    print("🔄 Shutting down...")
+    logger.info("Shutting down...")
 
 
 # ── App Creation ────────────────────────────────────────────────────────────
@@ -76,6 +71,7 @@ app.add_middleware(
 
 app.add_middleware(AuthMiddleware)
 app.add_middleware(RateLimitMiddleware)
+app.add_middleware(RequestBodySizeMiddleware)
 
 # ── Register Routers ────────────────────────────────────────────────────────
 

@@ -13,18 +13,22 @@ Usage:
     python network_pharmacology/analyzer.py --export-html # Generate report
 """
 
+from __future__ import annotations
+
+from __future__ import annotations
+
 import argparse
 import json
-import sys
 from collections import defaultdict
 from pathlib import Path
+from typing import Any
 
 import networkx as nx
 
-sys.path.insert(0, str(Path(__file__).parent.parent))
+from med_research.exceptions import DataValidationError
+from med_research.logging_config import get_logger
 
-if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+logger = get_logger(__name__)
 
 DATA_DIR = Path(__file__).parent / "data"
 
@@ -52,7 +56,7 @@ def _to_undirected(G):
 # ── Centrality Metrics ───────────────────────────────────────────────────
 
 
-def compute_centrality(G=None, progress_callback=None) -> dict:
+def compute_centrality(G=None, progress_callback=None) -> dict[str, Any]:
     """Compute all centrality metrics for every node.
 
     Returns dict with keys: degree, betweenness, eigenvector, closeness, pagerank.
@@ -129,7 +133,7 @@ def compute_bridge_nodes(G=None, centrality=None) -> list:
 # ── Community Detection ──────────────────────────────────────────────────
 
 
-def compute_communities(G=None, progress_callback=None) -> dict:
+def compute_communities(G=None, progress_callback=None) -> dict[str, Any]:
     """Detect communities using Louvain (preferred) or greedy modularity.
 
     Returns dict with communities list and modularity score.
@@ -196,7 +200,7 @@ def compute_communities(G=None, progress_callback=None) -> dict:
 # ── Graph-Level Metrics ──────────────────────────────────────────────────
 
 
-def compute_graph_metrics(G=None) -> dict:
+def compute_graph_metrics(G=None) -> dict[str, Any]:
     """Compute graph-level topological metrics."""
     if G is None:
         G = load_graph()
@@ -231,6 +235,8 @@ def compute_graph_metrics(G=None) -> dict:
     # Degree assortativity
     try:
         assortativity = nx.degree_assortativity_coefficient(UG)
+    except DataValidationError:
+        assortativity = 0.0
     except Exception:
         assortativity = 0.0
 
@@ -249,7 +255,7 @@ def compute_graph_metrics(G=None) -> dict:
 # ── Combined ─────────────────────────────────────────────────────────────
 
 
-def compute_all_metrics(progress_callback=None) -> dict:
+def compute_all_metrics(progress_callback=None) -> dict[str, Any]:
     """Run all analyses and return combined results."""
     cb = progress_callback or (lambda p, m: None)
 
@@ -309,35 +315,35 @@ def compute_all_metrics(progress_callback=None) -> dict:
 def print_analysis(results: dict):
     """Print formatted analysis summary."""
     gm = results["graph_metrics"]
-    print("\n" + "=" * 75)
-    print("🌐 NETWORK PHARMACOLOGY ANALYSIS")
-    print("=" * 75)
+    logger.info("\n" + "=" * 75)
+    logger.info("🌐 NETWORK PHARMACOLOGY ANALYSIS")
+    logger.info("=" * 75)
 
-    print("\n📊 Graph-Level Metrics:")
-    print(f"   Nodes: {gm['n_nodes']}  |  Edges: {gm['n_edges']}")
-    print(f"   Density: {gm['density']}  |  Components: {gm['n_components']}")
-    print(f"   Diameter: {gm['diameter']}  |  Avg Path: {gm['avg_shortest_path']}")
-    print(f"   Avg Clustering: {gm['avg_clustering']}  |  Assortativity: {gm['assortativity']}")
+    logger.info("\n📊 Graph-Level Metrics:")
+    logger.info("   Nodes: %d  |  Edges: %d", gm['n_nodes'], gm['n_edges'])
+    logger.info("   Density: %s  |  Components: %d", gm['density'], gm['n_components'])
+    logger.info("   Diameter: %s  |  Avg Path: %.2f", gm['diameter'], gm['avg_shortest_path'])
+    logger.info("   Avg Clustering: %s  |  Assortativity: %s", gm['avg_clustering'], gm['assortativity'])
 
     com = results["communities"]
-    print(f"\n🔗 Community Detection ({com['algorithm']}, modularity={com['modularity']}):")
-    print(f"   {com['n_communities']} communities found")
+    logger.info("\n🔗 Community Detection (%s, modularity=%s):", com['algorithm'], com['modularity'])
+    logger.info("   %d communities found", com['n_communities'])
     for c in com["communities"]:
-        print(f"   Community {c['id']}: {c['size']} nodes (dominant: {c['dominant_type']})")
+        logger.info("   Community %d: %d nodes (dominant: %s)", c['id'], c['size'], c['dominant_type'])
 
-    print("\n🌉 Top 10 Bridge Nodes (betweenness centrality):")
+    logger.info("\n🌉 Top 10 Bridge Nodes (betweenness centrality):")
     for i, b in enumerate(results["bridge_nodes"][:10], 1):
-        print(f"   {i:2d}. {b['label']} ({b['type']}) — {b['betweenness']:.4f}")
+        logger.info("   %2d. %s (%s) — %.4f", i, b['label'], b['type'], b['betweenness'])
 
-    print("\n🎯 Top 5 by PageRank:")
+    logger.info("\n🎯 Top 5 by PageRank:")
     pr = results["centrality"].get("pagerank", [])
     for i, n in enumerate(pr[:5], 1):
-        print(f"   {i}. {n['label']} ({n['type']}) — {n['score']:.4f}")
+        logger.info("   %d. %s (%s) — %.4f", i, n['label'], n['type'], n['score'])
 
-    print("\n⭐ Top 5 by Eigenvector Centrality:")
+    logger.info("\n⭐ Top 5 by Eigenvector Centrality:")
     ec = results["centrality"].get("eigenvector", [])
     for i, n in enumerate(ec[:5], 1):
-        print(f"   {i}. {n['label']} ({n['type']}) — {n['score']:.4f}")
+        logger.info("   %d. %s (%s) — %.4f", i, n['label'], n['type'], n['score'])
 
 
 def main():
@@ -352,25 +358,25 @@ def main():
     if args.centrality:
         G = load_graph()
         centrality = compute_centrality(G)
-        print("\n🎯 CENTRALITY METRICS")
+        logger.info("\n🎯 CENTRALITY METRICS")
         for metric in ["degree", "betweenness", "eigenvector", "closeness", "pagerank"]:
             scores = centrality.get(metric, {})
             top5 = sorted(scores.items(), key=lambda x: x[1], reverse=True)[:5]
-            print(f"\n  {metric.upper()}:")
+            logger.info("\n  %s:", metric.upper())
             for node, score in top5:
                 label = G.nodes[node].get("label", node)
-                print(f"    {label} — {score:.4f}")
+                logger.info("    %s — %.4f", label, score)
         return
 
     if args.communities:
         communities = compute_communities()
-        print(f"\n🔗 Communities (modularity={communities['modularity']}, {communities['n_communities']} total):")
+        logger.info("\n🔗 Communities (modularity=%s, %d total):", communities['modularity'], communities['n_communities'])
         for c in communities["communities"]:
-            print(f"\n  Community {c['id']} ({c['size']} nodes, dominant: {c['dominant_type']}):")
+            logger.info("\n  Community %d (%d nodes, dominant: %s):", c['id'], c['size'], c['dominant_type'])
             for label in c["node_labels"][:8]:
-                print(f"    • {label}")
+                logger.info("    • %s", label)
             if len(c["node_labels"]) > 8:
-                print(f"    ... and {len(c['node_labels']) - 8} more")
+                logger.info("    ... and %d more", len(c['node_labels']) - 8)
         return
 
     results = compute_all_metrics()
@@ -379,7 +385,7 @@ def main():
     if args.export_html:
         from med_research.pipeline.network_pharmacology.report import generate_html_report
         generate_html_report(results)
-        print("\n✅ HTML report generated: network_pharmacology/report.html")
+        logger.info("\n✅ HTML report generated: network_pharmacology/report.html")
 
     return results
 

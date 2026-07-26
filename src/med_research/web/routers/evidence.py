@@ -10,7 +10,7 @@ router = APIRouter(tags=["Evidence Gathering"])
 
 @router.get("/api/evidence/gather", response_model=EvidenceGatherResponse)
 async def evidence_gather(
-    q: str = Query(..., min_length=2, max_length=500, description="Search query"),
+    q: str = Query(..., min_length=1, max_length=500, description="Search query"),
     sources: str = Query(default="pubmed,preprints,clinical_trials,fda_labels,patents",
                          min_length=1, max_length=500,
                          description="Comma-separated source types"),

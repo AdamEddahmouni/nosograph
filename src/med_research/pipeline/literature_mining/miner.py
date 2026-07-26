@@ -15,16 +15,19 @@ Usage:
 import argparse
 import json
 import os
-import sys
 from pathlib import Path
 
+from med_research.exceptions import ExternalAPIError
+from med_research.logging_config import get_logger
+from med_research.pipeline.literature_mining.content_extractor import ContentExtractor
+from med_research.pipeline.literature_mining.crossref import (
+    cross_reference_articles,
+    load_kg_entities,
+    load_repurposing_candidates,
+)
 from med_research.rate_limiter import rate_limited_sleep
 
-# Add parent to path
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
-if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+logger = get_logger(__name__)
 
 try:
     from Bio import Entrez, Medline
@@ -32,22 +35,13 @@ try:
     BIOPYTHON_AVAILABLE = True
 except ImportError:
     BIOPYTHON_AVAILABLE = False
-    print(
-        "⚠️  BioPython not installed. Install with: pip install biopython"
-    )
-
-from med_research.pipeline.literature_mining.content_extractor import ContentExtractor
-from med_research.pipeline.literature_mining.crossref import (
-    cross_reference_articles,
-    load_kg_entities,
-    load_repurposing_candidates,
-)
+    logger.warning("BioPython not installed. Run: pip install biopython")
 
 DATA_DIR = Path(__file__).parent / "data"
 DEFAULT_EMAIL = os.environ.get("ENTREZ_EMAIL")
 if DEFAULT_EMAIL is None:
     DEFAULT_EMAIL = "researcher@example.com"
-    print("⚠️  ENTREZ_EMAIL not set; using placeholder. NCBI requires a real email. Set ENTREZ_EMAIL env var.")
+    logger.warning("ENTREZ_EMAIL not set; using placeholder. NCBI requires a real email.")
 
 # ── PubMed queries for SLE/lupus ──────────────────────────────────────────
 
@@ -112,7 +106,7 @@ def search_pubmed(
     Handles rate limiting (3 req/sec without API key) automatically.
     """
     if not BIOPYTHON_AVAILABLE:
-        print("❌ BioPython required. Install: pip install biopython")
+        logger.warning("BioPython not installed. Run: pip install biopython")
         return []
 
     Entrez.email = email
@@ -129,7 +123,7 @@ def search_pubmed(
         if not id_list:
             return []
 
-        print(f"   Found {record['Count']} total, retrieving {len(id_list)}...")
+        logger.info("Found %s total, retrieving %d...", record['Count'], len(id_list))
 
         # Rate limiting
         rate_limited_sleep(0.4)
@@ -160,8 +154,11 @@ def search_pubmed(
 
         return articles
 
+    except ExternalAPIError as e:
+        logger.warning("PubMed API error: %s", e)
+        return []
     except Exception as e:
-        print(f"   ❌ PubMed query error: {e}")
+        logger.warning("PubMed query error: %s", e)
         return []
 
 
@@ -172,6 +169,7 @@ def mine_literature(
     use_cache: bool = True,
     targeted_candidates: bool = False,
     extract_content: bool = False,
+    progress_callback=None,
 ) -> tuple:
     """
     Run the full literature mining pipeline.
@@ -183,45 +181,47 @@ def mine_literature(
         use_cache: Load from cache if available
         targeted_candidates: Also run per-candidate targeted queries
         extract_content: Pre-filter abstracts to KG-relevant sentences
+        progress_callback: Optional callable(step_name, current, total)
 
     Returns:
         (crossref_results, entities, candidates, extraction_stats)
     """
+    cb = progress_callback or (lambda s, c, t: None)
     if queries is None:
         queries = list(DEFAULT_QUERIES)
 
     # Load KG entities and candidates
-    print("🔄 Loading knowledge graph entities...")
+    cb("Loading knowledge graph entities", 1, 7)
+    logger.info("Loading knowledge graph entities...")
     entities = load_kg_entities()
-    print(
-        f"   Loaded {len(entities['genes'])} genes, {len(entities['drugs'])} drugs, "
-        f"{len(entities['pathways'])} pathways"
-    )
+    logger.info("Loaded %d genes, %d drugs, %d pathways",
+                len(entities['genes']), len(entities['drugs']), len(entities['pathways']))
 
-    print("🔄 Loading repurposing candidates...")
+    cb("Loading repurposing candidates", 2, 7)
+    logger.info("Loading repurposing candidates...")
     candidates = load_repurposing_candidates()
-    print(f"   Loaded {len(candidates)} candidates")
+    logger.info("Loaded %d candidates", len(candidates))
 
     # Generate per-candidate queries if requested
     candidate_queries = []
     if targeted_candidates:
         candidate_queries = generate_candidate_queries(candidates)
-        print(f"   Generated {len(candidate_queries)} per-candidate queries")
+        logger.info("Generated %d per-candidate queries", len(candidate_queries))
 
-    # Check cache (skip if using targeted queries, since they're per-drug)
+    # Check cache
     cache_path = DATA_DIR / "pubmed_cache.json"
     if use_cache and cache_path.exists() and not targeted_candidates:
-        print("📦 Loading from PubMed cache...")
+        logger.info("Loading from PubMed cache...")
         all_articles = json.loads(cache_path.read_text(encoding="utf-8"))
-        print(f"   Loaded {len(all_articles)} cached articles")
+        logger.info("Loaded %d cached articles", len(all_articles))
     else:
-        # Search PubMed
         all_articles = []
         seen_pmids = set()
+        total_queries = len(queries) + (len(candidate_queries) if targeted_candidates else 0)
 
-        # ── Broad queries ────────────────────────────────────────────
         for i, query in enumerate(queries, 1):
-            print(f"\n🔍 Broad query {i}/{len(queries)}: {query[:100]}...")
+            cb(f"PubMed query {i}/{len(queries)}", 3 + int(i / max(total_queries, 1) * 3), 7)
+            logger.info("Broad query %d/%d: %s...", i, len(queries), query[:100])
             articles = search_pubmed(query, max_results=max_per_query, email=email)
 
             new_count = 0
@@ -231,14 +231,13 @@ def mine_literature(
                     all_articles.append(article)
                     new_count += 1
 
-            print(f"   ✅ {new_count} new unique articles")
+            logger.info("%d new unique articles", new_count)
             rate_limited_sleep(0.5)
 
-        # ── Per-candidate targeted queries ───────────────────────────
         if candidate_queries:
-            print(f"\n🎯 Running {len(candidate_queries)} per-candidate targeted queries...")
+            logger.info("Running %d per-candidate targeted queries...", len(candidate_queries))
             matches_found = 0
-            for i, (cid, query, drug_label) in enumerate(candidate_queries, 1):
+            for i, (_cid, query, drug_label) in enumerate(candidate_queries, 1):
                 articles = search_pubmed(query, max_results=3, email=email)
 
                 new_count = 0
@@ -250,47 +249,42 @@ def mine_literature(
 
                 if new_count > 0:
                     matches_found += 1
-                    print(f"      ✅ {drug_label[:55]} → {new_count} new articles")
+                    logger.debug("%s -> %d new articles", drug_label[:55], new_count)
 
                 if i % 15 == 0 or i == len(candidate_queries):
-                    print(
-                        f"   [{i}/{len(candidate_queries)}] "
-                        f"{matches_found} candidates with new articles so far"
-                    )
+                    logger.debug("[%d/%d] %d candidates with new articles so far",
+                                 i, len(candidate_queries), matches_found)
 
-                # Rate limiting — 3 req/sec max without API key
                 rate_limited_sleep(0.4)
 
-            print(f"   ✅ {matches_found}/{len(candidate_queries)} candidates returned articles")
+            logger.info("%d/%d candidates returned articles", matches_found, len(candidate_queries))
 
-        # Save to cache
         os.makedirs(DATA_DIR, exist_ok=True)
         cache_path.write_text(
             json.dumps(all_articles, indent=2, ensure_ascii=False),
             encoding="utf-8",
         )
-        print(f"\n💾 Cached {len(all_articles)} articles to {cache_path}")
+        logger.info("Cached %d articles to %s", len(all_articles), cache_path)
 
     # Cross-reference
-    print("\n🔄 Cross-referencing against knowledge graph...")
+    cb("Cross-referencing against knowledge graph", 6, 7)
+    logger.info("Cross-referencing against knowledge graph...")
     results = cross_reference_articles(all_articles, entities, candidates)
 
-    # ── Content extraction stats ──────────────────────────────────────
     extraction_stats = None
     if extract_content:
-        print("\n✂️  Content extraction: filtering abstracts to KG-relevant sentences...")
+        logger.info("Content extraction: filtering abstracts to KG-relevant sentences...")
         extractor = ContentExtractor()
         extractor.known_terms = extractor.build_terms_from_entities(entities)
         _, extraction_stats = extractor.filter_articles(all_articles)
 
-        # Also filter the articles used for cross-referencing
         all_articles_filtered = []
         for article in all_articles:
             fa = dict(article)
             fa["abstract"] = extractor.filter_abstract(fa.get("abstract", ""))
             all_articles_filtered.append(fa)
 
-        print("🔄 Re-cross-referencing with filtered abstracts...")
+        logger.info("Re-cross-referencing with filtered abstracts...")
         results = cross_reference_articles(all_articles_filtered, entities, candidates)
         results["extraction_stats"] = extraction_stats
 
@@ -298,33 +292,29 @@ def mine_literature(
 
 
 def print_summary(results: dict, candidates: list, entities: dict):
-    """Print a summary of literature mining results."""
+    """Log a summary of literature mining results."""
     stats = results["stats"]
     candidate_support = results["candidate_support"]
     gene_coverage = results["gene_coverage"]
 
-    print("\n" + "=" * 70)
-    print("📚 LITERATURE MINING RESULTS")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("LITERATURE MINING RESULTS")
+    logger.info("=" * 70)
 
-    print(f"\n  Articles analyzed:           {stats['total_articles']}")
-    print(f"  Articles with KG matches:    {stats['articles_with_matches']}")
-    print(f"  Unique genes found:          {stats['genes_found']}")
-    print(f"  Unique drugs found:          {stats['drugs_found']}")
-    print(f"  spaCy biomedical NER:        {stats.get('spacy_ner', 'not available')}")
+    logger.info("  Articles analyzed:           %s", stats['total_articles'])
+    logger.info("  Articles with KG matches:    %s", stats['articles_with_matches'])
+    logger.info("  Unique genes found:          %s", stats['genes_found'])
+    logger.info("  Unique drugs found:          %s", stats['drugs_found'])
+    logger.info("  spaCy biomedical NER:        %s", stats.get('spacy_ner', 'not available'))
     if stats.get('novel_entities_found', 0) > 0:
-        print(f"  Novel entities (spaCy):      {stats['novel_entities_found']}")
-    print(
-        f"  Repurposing candidates with\n"
-        f"  literature support:          {stats['candidates_supported']}/{len(candidates)}"
-    )
+        logger.info("  Novel entities (spaCy):      %s", stats['novel_entities_found'])
+    logger.info("  Repurposing candidates with literature support: %d/%d",
+                stats['candidates_supported'], len(candidates))
 
-    # Build gene name lookup from entities
     gene_names = {gid: info.get("name", gid) for gid, info in entities["genes"].items()}
 
-    # Candidates with literature support
     if candidate_support:
-        print("\n  📋 Candidates with literature support:")
+        logger.info("  Candidates with literature support:")
         for cid, articles in sorted(
             candidate_support.items(), key=lambda x: len(x[1]), reverse=True
         )[:15]:
@@ -332,36 +322,24 @@ def print_summary(results: dict, candidates: list, entities: dict):
             if cand:
                 gene = gene_names.get(cand.get("gene_id", ""), cand.get("gene_id", "?"))
                 drug = cand["drug_name"][:50]
-                print(
-                    f"    • {drug} → {gene} "
-                    f"({len(articles)} article{'s' if len(articles) > 1 else ''})"
-                )
+                logger.info("    %s -> %s (%d articles)", drug, gene, len(articles))
 
-    # Gene coverage
     if gene_coverage:
-        print("\n  🧬 Gene literature coverage:")
+        logger.info("  Gene literature coverage:")
         for gid, info in sorted(
             gene_coverage.items(), key=lambda x: x[1]["articles"], reverse=True
         ):
             gene_info = entities_hack.get(gid, {"name": gid})
-            bar = "█" * min(info["articles"], 10)
-            print(f"    {gene_info['name'][:40]:<42} {bar} {info['articles']}")
+            bar = "\u2588" * min(info["articles"], 10)
+            logger.info("    %-42s %s %s", gene_info['name'][:40], bar, info['articles'])
 
-    # Top articles
-    top_articles = [
-        a for a in results["article_matches"] if a["relevance_score"] > 0
-    ][:5]
+    top_articles = [a for a in results["article_matches"] if a["relevance_score"] > 0][:5]
     if top_articles:
-        print("\n  📄 Top articles by relevance:")
+        logger.info("  Top articles by relevance:")
         for i, a in enumerate(top_articles, 1):
-            print(
-                f"    {i}. [{a['year']}] {a['title'][:90]}..."
-            )
-            print(
-                f"       Score: {a['relevance_score']} | "
-                f"Genes: {a['kg_matches']['gene_count']} | "
-                f"Drugs: {a['kg_matches']['drug_count']}"
-            )
+            logger.info("    %d. [%s] %s...", i, a['year'], a['title'][:90])
+            logger.info("       Score: %s | Genes: %s | Drugs: %s",
+                        a['relevance_score'], a['kg_matches']['gene_count'], a['kg_matches']['drug_count'])
 
 
 def main():
@@ -398,11 +376,11 @@ def main():
     args = parser.parse_args()
 
     if args.install_scispacy:
-        print("Installing scispacy biomedical NER models...")
-        print("Run: pip install spacy scispacy")
-        print("Then: pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/"
-              "releases/v0.5.4/en_ner_bc5cdr_md-0.5.4.tar.gz")
-        sys.exit(0)
+        logger.info("Installing scispacy biomedical NER models...")
+        logger.info("Run: pip install spacy scispacy")
+        logger.info("Then: pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/"
+                     "releases/v0.5.4/en_ner_bc5cdr_md-0.5.4.tar.gz")
+        return
 
     queries = [args.query] if args.query else None
 
@@ -427,7 +405,7 @@ def main():
     if args.export_html:
         from med_research.pipeline.literature_mining.report import generate_literature_report
         report_path = generate_literature_report(results, entities, candidates)
-        print(f"\n✅ Literature report generated: {report_path}")
+        logger.info("Literature report generated: %s", report_path)
 
     return results
 

@@ -24,23 +24,23 @@ Usage:
     python llm_extractor/extractor.py --query "JAK inhibitor" --export-html
 """
 
+from __future__ import annotations
+
 import argparse
 import json
 import os
-import sys
 import time
 import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import datetime
 from pathlib import Path
+from typing import Any
 
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
+from med_research.logging_config import get_logger
 from med_research.pipeline.evidence.gatherer import gather_evidence
 
-if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+logger = get_logger(__name__)
 
 DATA_DIR = Path(__file__).parent / "data"
 CACHE_PATH = DATA_DIR / "extraction_cache.json"
@@ -84,7 +84,7 @@ JSON:"""
 # ── Helpers ──────────────────────────────────────────────────────────────
 
 
-def load_json(path: Path) -> dict:
+def load_json(path: Path) -> dict[str, Any]:
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
@@ -100,7 +100,7 @@ def _cache_key(article_id: str, model: str) -> str:
     return f"{article_id}|||{model}"
 
 
-def load_cache() -> dict:
+def load_cache() -> dict[str, Any]:
     if CACHE_PATH.exists():
         return load_json(CACHE_PATH)
     return {}
@@ -128,7 +128,7 @@ def call_llm(
     model = model or DEFAULT_MODEL
 
     if not API_KEY:
-        print("  ⚠️  No OPENAI_API_KEY set. Set it to use LLM extraction.")
+        logger.warning("  ⚠️  No OPENAI_API_KEY set. Set it to use LLM extraction.")
         return None
 
     url = f"{API_BASE.rstrip('/')}/chat/completions"
@@ -155,7 +155,7 @@ def call_llm(
             return body["choices"][0]["message"]["content"].strip()
     except (urllib.error.URLError, urllib.error.HTTPError, json.JSONDecodeError,
             KeyError, IndexError) as e:
-        print(f"  ⚠️  LLM API error: {e}")
+        logger.warning("  ⚠️  LLM API error: %s", e)
         return None
 
 
@@ -256,7 +256,7 @@ def extract_evidence(
             if field not in extracted or extracted[field] is None:
                 extracted[field] = default
     except (json.JSONDecodeError, ValueError) as e:
-        print(f"  ⚠️  JSON parse error from LLM: {e}")
+        logger.warning("  ⚠️  JSON parse error from LLM: %s", e)
         extracted = {
             "evidence_level": "unknown",
             "model_system": "unknown",
@@ -282,7 +282,7 @@ def extract_all(
     max_articles: int = 20,
     model: str = None,
     use_cache: bool = True,
-) -> dict:
+) -> dict[str, Any]:
     """Gather evidence then extract structured data from all results.
 
     Args:
@@ -300,8 +300,8 @@ def extract_all(
         sources = ["pubmed", "preprints", "clinical_trials"]
 
     if not API_KEY:
-        print("\n⚠️  No OPENAI_API_KEY environment variable set.")
-        print("   LLM extraction requires an API key.\n"
+        logger.warning("\n⚠️  No OPENAI_API_KEY environment variable set.")
+        logger.warning("   LLM extraction requires an API key.\n"
               "   Set it via: export OPENAI_API_KEY=sk-...\n"
               "   Or for local models (Ollama):\n"
               "     export OPENAI_API_KEY=ollama\n"
@@ -317,12 +317,12 @@ def extract_all(
             "generated_at": datetime.now().isoformat(),
         }
 
-    print(f"\n🤖 LLM Evidence Extractor — Model: {model}")
-    print(f"   Query: \"{query}\"")
-    print(f"   Sources: {', '.join(sources)}\n")
+    logger.info("\n🤖 LLM Evidence Extractor — Model: %s", model)
+    logger.info("   Query: \"%s\"", query)
+    logger.info("   Sources: %s\n", ', '.join(sources))
 
     # Step 1: Gather evidence
-    print("Step 1/2: Gathering evidence...")
+    logger.info("Step 1/2: Gathering evidence...")
     evidence = gather_evidence(
         query,
         sources=sources,
@@ -330,16 +330,16 @@ def extract_all(
         use_cache=use_cache,
     )
     articles = evidence["all_results"][:max_articles]
-    print(f"   → {len(articles)} articles to extract\n")
+    logger.info("   → %s articles to extract\n", len(articles))
 
     # Step 2: Extract structured data
-    print("Step 2/2: Extracting structured data via LLM...")
+    logger.info("Step 2/2: Extracting structured data via LLM...")
     start_time = time.time()
     extractions = []
     success_count = 0
 
     for i, article in enumerate(articles, 1):
-        print(f"  [{i}/{len(articles)}] {article['title'][:70]}...")
+        logger.info("  [%s/%s] %s...", i, len(articles), article['title'][:70])
         extracted = extract_evidence(article, query, model, use_cache)
         if extracted:
             # Merge article metadata with extracted data
@@ -388,7 +388,7 @@ def extract_all(
     return output
 
 
-def _compute_extraction_stats(extractions: list) -> dict:
+def _compute_extraction_stats(extractions: list) -> dict[str, Any]:
     """Compute summary statistics across all extractions."""
     if not extractions:
         return {}
@@ -451,44 +451,43 @@ def print_summary(results: dict):
     extractions = results.get("extractions", [])
     stats = results.get("stats", {})
 
-    print("\n" + "=" * 75)
-    print("🤖 LLM EVIDENCE EXTRACTION — Results")
-    print("=" * 75)
+    logger.info("\n" + "=" * 75)
+    logger.info("🤖 LLM EVIDENCE EXTRACTION — Results")
+    logger.info("=" * 75)
 
-    print(f"\n  Query: \"{results['query']}\"")
-    print(f"  Model: {results['model']}")
-    print(f"  Extracted: {results['total_extracted']} articles "
-          f"({results['successful_extractions']} successful) "
-          f"in {results['elapsed_seconds']}s")
+    logger.info("\n  Query: \"%s\"", results['query'])
+    logger.info("  Model: %s", results['model'])
+    logger.info("  Extracted: %s articles (%s successful) in %ss",
+                results['total_extracted'], results['successful_extractions'], results['elapsed_seconds'])
 
     if stats:
-        print("\n  📊 Evidence Level Distribution:")
+        logger.info("\n  📊 Evidence Level Distribution:")
         for level, count in stats.get("evidence_levels", {}).items():
             label = level.replace("_", " ").title()
-            print(f"    {label:30s} {count}")
+            logger.info("    %-30s %s", label, count)
 
-        print("\n  🧬 Model Systems:")
+        logger.info("\n  🧬 Model Systems:")
         for system, count in stats.get("model_systems", {}).items():
             label = system.replace("_", " ").title()
-            print(f"    {label:30s} {count}")
+            logger.info("    %-30s %s", label, count)
 
         avg_conf = stats.get("avg_confidence", 0)
         avg_rel = stats.get("avg_relevance", 0)
-        print(f"\n  📈 Avg Confidence: {avg_conf:.1f}%")
-        print(f"  📈 Avg Relevance: {avg_rel:.1f}%")
+        logger.info("\n  📈 Avg Confidence: %.1f%%", avg_conf)
+        logger.info("  📈 Avg Relevance: %.1f%%", avg_rel)
 
         if stats.get("n_unique_drugs", 0) > 0:
-            print(f"\n  💊 Drugs Mentioned ({stats['n_unique_drugs']}): "
-                  f"{', '.join(stats['unique_drugs_mentioned'][:12])}")
+            logger.info("\n  💊 Drugs Mentioned (%s): %s",
+                        stats['n_unique_drugs'], ', '.join(stats['unique_drugs_mentioned'][:12]))
 
-    print("\n  📋 Top Extractions:")
+    logger.info("\n  📋 Top Extractions:")
     # Sort by relevance * confidence
     scored = sorted(extractions, key=lambda x: x.get("relevance_to_query", 50) * x.get("confidence", 0) / 10000, reverse=True)
     for i, e in enumerate(scored[:10], 1):
         level = e.get("evidence_level", "?").replace("_", " ").title()
         system = e.get("model_system", "?").replace("_", " ").title()
         finding = e.get("key_findings", "")[:100]
-        print(f"  {i:2d}. [{level}] [{system}] {finding}")
+        logger.info("  %2d. [%s] [%s] %s", i, level, system, finding)
 
 
 def main():
@@ -528,7 +527,7 @@ def main():
     if args.export_html and "error" not in results:
         from med_research.pipeline.evidence.report import generate_html_report
         generate_html_report(results)
-        print("\n✅ HTML report generated: llm_extractor/report.html")
+        logger.info("\n✅ HTML report generated: llm_extractor/report.html")
 
     return results
 

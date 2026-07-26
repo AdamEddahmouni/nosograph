@@ -12,6 +12,8 @@ from unittest.mock import MagicMock, mock_open, patch
 
 import pytest
 
+pytestmark = pytest.mark.unit
+
 # ── Prevent spaCy from loading in all tests ──────────────────────────
 
 @pytest.fixture(autouse=True)

@@ -15,17 +15,17 @@ Usage:
 import argparse
 import json
 import os
-import sys
 from pathlib import Path
 
 import networkx as nx
 
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
+from med_research.cache import CacheManager
+from med_research.exceptions import ExternalAPIError
+from med_research.logging_config import get_logger
 from med_research.pipeline.knowledge_graph.config import load_genes, load_pathways
 
-if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+logger = get_logger(__name__)
+cache = CacheManager()
 
 DATA_DIR = Path(__file__).parent / "data"
 DR_DATA_DIR = Path(__file__).parent.parent / "drug_repurposing" / "data"
@@ -37,9 +37,7 @@ try:
     GSEAPY_AVAILABLE = True
 except ImportError:
     GSEAPY_AVAILABLE = False
-    print(
-        "⚠️  GSEApy not installed. Install with: pip install gseapy"
-    )
+    logger.warning("GSEApy not installed. Run: pip install gseapy")
 
 # Gene set libraries to query
 GENE_SET_LIBRARIES = [
@@ -93,7 +91,7 @@ def get_lupus_gene_list(
         # If untargeted_only, filter out genes targeted by drugs
         if untargeted_only and G is not None:
             targeted = False
-            for u, v, d in G.edges(data=True):
+            for _u, v, d in G.edges(data=True):
                 if d.get("type") == "TARGETS" and v == gene_id:
                     targeted = True
                     break
@@ -136,37 +134,27 @@ def run_enrichment(
         libraries = list(GENE_SET_LIBRARIES)
 
     if not GSEAPY_AVAILABLE:
-        print("❌ GSEApy required. Install: pip install gseapy")
+        logger.warning("GSEApy required. Run: pip install gseapy")
         return {}
 
     symbols = [g["symbol"] for g in gene_list if g["symbol"]]
     cache_key = ",".join(sorted(symbols))
 
-    # Check cache
-    cache_path = DATA_DIR / "enrichment_cache.json"
-    if use_cache and cache_path.exists():
-        try:
-            cached = json.loads(cache_path.read_text(encoding="utf-8"))
-            if (
-                cached.get("cache_key") == cache_key
-                and cached.get("libraries") == libraries
-                and cached.get("top_n") == top_n
-            ):
-                print("📦 Loading enrichment results from cache...")
-                print(f"   Genes: {', '.join(symbols)}")
-                return cached["results"]
-            else:
-                print("   ⚠️  Cache key mismatch, re-running enrichment...")
-        except (json.JSONDecodeError, KeyError):
-            print("   ⚠️  Corrupt cache, re-running enrichment...")
+    if use_cache:
+        cached = cache.get("enrichment", cache_key)
+        if cached is not None and cached.get("libraries") == libraries and cached.get("top_n") == top_n:
+            logger.info("Loading enrichment results from cache...")
+            logger.info("Genes: %s", ', '.join(symbols))
+            return cached["results"]
+        elif cached is not None:
+            logger.warning("Cache key mismatch, re-running enrichment...")
 
-    print(f"\n🔄 Running enrichment analysis on {len(symbols)} genes...")
-    print(f"   Genes: {', '.join(symbols)}")
+    logger.info("Running enrichment analysis on %d genes...", len(symbols))
+    logger.info("Genes: %s", ', '.join(symbols))
 
     results = {}
     for library in libraries:
-        lib_short = library.split("_")[0]
-        print(f"\n   📚 {library}...")
+        logger.info("  %s...", library)
 
         try:
             enr = gp.enrichr(
@@ -208,20 +196,26 @@ def run_enrichment(
                         if t["adj_p_value"] < 0.05
                     ]
                 )
-                print(
-                    f"      {sig_count} significant terms (adj p < 0.05) "
-                    f"out of {results[library]['total_significant']} total hits"
-                )
+                logger.info("      %d significant terms (adj p < 0.05) out of %d total hits",
+                            sig_count, results[library]['total_significant'])
             else:
                 results[library] = {
                     "library": library,
                     "terms": [],
                     "total_significant": 0,
                 }
-                print("      No results returned")
+                logger.info("      No results returned")
 
+        except ExternalAPIError as e:
+            logger.warning("      Enrichr API error: %s", e)
+            results[library] = {
+                "library": library,
+                "terms": [],
+                "total_significant": 0,
+                "error": str(e),
+            }
         except Exception as e:
-            print(f"      ❌ Error: {e}")
+            logger.warning("      Error: %s", e)
             results[library] = {
                 "library": library,
                 "terms": [],
@@ -229,26 +223,12 @@ def run_enrichment(
                 "error": str(e),
             }
 
-    # Save to cache
-    os.makedirs(DATA_DIR, exist_ok=True)
-    try:
-        cache_path.write_text(
-            json.dumps(
-                {
-                    "cache_key": cache_key,
-                    "libraries": libraries,
-                    "top_n": top_n,
-                    "results": results,
-                },
-                indent=2,
-                ensure_ascii=False,
-                default=str,
-            ),
-            encoding="utf-8",
-        )
-        print(f"\n💾 Cached enrichment results to {cache_path}")
-    except Exception as e:
-        print(f"   ⚠️  Cache write error: {e}")
+    cache.set("enrichment", cache_key, {
+        "libraries": libraries,
+        "top_n": top_n,
+        "results": results,
+    })
+    logger.info("Cached enrichment results")
 
     return results
 
@@ -315,13 +295,13 @@ def cross_reference_with_kg_pathways(
 
 
 def analyze(enrichment_results: dict, gene_list: list, kg_matches: dict):
-    """Print enrichment analysis summary."""
-    print("\n" + "=" * 70)
-    print("📊 PATHWAY ENRICHMENT ANALYSIS")
-    print("=" * 70)
+    """Log enrichment analysis summary."""
+    logger.info("=" * 70)
+    logger.info("PATHWAY ENRICHMENT ANALYSIS")
+    logger.info("=" * 70)
 
-    print(f"\n  Genes analyzed: {len(gene_list)}")
-    print(f"  Gene set libraries queried: {len(enrichment_results)}")
+    logger.info("  Genes analyzed: %d", len(gene_list))
+    logger.info("  Gene set libraries queried: %d", len(enrichment_results))
 
     for library, result in enrichment_results.items():
         lib_name = result.get("library", library)
@@ -329,35 +309,26 @@ def analyze(enrichment_results: dict, gene_list: list, kg_matches: dict):
         n_sig = len(
             [t for t in result.get("terms", []) if t["adj_p_value"] < 0.05]
         )
-        print(f"\n  📚 {lib_name}")
-        print(f"     {n_terms} top terms ({n_sig} significant at adj p < 0.05)")
+        logger.info("  %s", lib_name)
+        logger.info("    %d top terms (%d significant at adj p < 0.05)", n_terms, n_sig)
 
         for i, term in enumerate(result.get("terms", [])[:8], 1):
-            sig_marker = (
-                "✅" if term["adj_p_value"] < 0.05 else "  "
-            )
-            print(
-                f"     {sig_marker} {i}. {term['term'][:70]}"
-            )
-            print(
-                f"         P={term['p_value']:.2e} | "
-                f"adj P={term['adj_p_value']:.2e} | "
-                f"OR={term['odds_ratio']:.1f} | "
-                f"Genes: {', '.join(term['genes'][:5])}"
-            )
+            sig_marker = "SIG" if term["adj_p_value"] < 0.05 else "   "
+            logger.info("    %s %d. %s", sig_marker, i, term['term'][:70])
+            logger.info("        P=%.2e | adj P=%.2e | OR=%.1f | Genes: %s",
+                        term['p_value'], term['adj_p_value'], term['odds_ratio'],
+                        ', '.join(term['genes'][:5]))
 
     if kg_matches:
-        print(f"\n  🔗 Cross-reference with KG pathways ({len(kg_matches)} matches):")
-        for key, matches_list in sorted(
+        logger.info("  Cross-reference with KG pathways (%d matches):", len(kg_matches))
+        for _key, matches_list in sorted(
             kg_matches.items(),
             key=lambda x: min(m["adj_p_value"] for m in x[1]),
         ):
             best = min(matches_list, key=lambda m: m["adj_p_value"])
-            print(
-                f"     {best['kg_pathway_name'][:40]} ↔ "
-                f"{best['enrichment_term'][:50]} "
-                f"(P={best['adj_p_value']:.1e})"
-            )
+            logger.info("    %s <-> %s (P=%.1e)",
+                        best['kg_pathway_name'][:40], best['enrichment_term'][:50],
+                        best['adj_p_value'])
 
 
 def main():
@@ -379,25 +350,25 @@ def main():
     )
     args = parser.parse_args()
 
-    print("🔄 Loading knowledge graph and gene data...")
+    logger.info("Loading knowledge graph and gene data...")
     G = load_kg_graph()
     genes = load_kg_genes()
-    print(f"   Loaded {len(genes)} genes from knowledge graph")
+    logger.info("Loaded %d genes from knowledge graph", len(genes))
 
-    print("🔄 Preparing lupus gene list...")
+    logger.info("Preparing gene list...")
     gene_list = get_lupus_gene_list(
         genes, G, untargeted_only=args.untargeted_only
     )
-    print(f"   Using {len(gene_list)} genes for enrichment")
+    logger.info("Using %d genes for enrichment", len(gene_list))
     for g in gene_list:
-        print(f"     • {g['symbol']} ({g['gene_id']}) — {g['category']}")
+        logger.debug("  - %s (%s) -- %s", g['symbol'], g['gene_id'], g['category'])
 
-    print("🔄 Running enrichment analysis...")
+    logger.info("Running enrichment analysis...")
     enrichment_results = run_enrichment(
         gene_list, use_cache=not args.no_cache
     )
 
-    print("🔄 Cross-referencing with KG pathways...")
+    logger.info("Cross-referencing with KG pathways...")
     kg_pathways = load_pathways()
     kg_matches = cross_reference_with_kg_pathways(
         enrichment_results, kg_pathways
@@ -419,7 +390,7 @@ def main():
         json.dumps(output, indent=2, ensure_ascii=False, default=str),
         encoding="utf-8",
     )
-    print(f"\n💾 Results saved to {out_path}")
+    logger.info("Results saved to %s", out_path)
 
     if args.export_html:
         from med_research.pipeline.bioinformatics.report import generate_bioinformatics_report
@@ -427,7 +398,7 @@ def main():
         report_path = generate_bioinformatics_report(
             enrichment_results, gene_list, kg_matches, None, None
         )
-        print(f"\n✅ Report generated: {report_path}")
+        logger.info("Report generated: %s", report_path)
 
     return enrichment_results
 

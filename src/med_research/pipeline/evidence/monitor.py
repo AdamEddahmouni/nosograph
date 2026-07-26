@@ -16,22 +16,21 @@ Usage:
     python evidence_monitor/monitor.py --watch           # Auto-diff every hour
 """
 
+from __future__ import annotations
+
 import argparse
 import hashlib
 import json
-import sys
 from datetime import datetime
 from pathlib import Path
+from typing import Any
 
-from med_research.rate_limiter import rate_limited_sleep
-
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
+from med_research.logging_config import get_logger
 from med_research.pipeline.evidence.gatherer import gather_evidence
 from med_research.pipeline.knowledge_graph.config import load_genes as config_load_genes
+from med_research.rate_limiter import rate_limited_sleep
 
-if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+logger = get_logger(__name__)
 
 DATA_DIR = Path(__file__).parent / "data"
 SNAPSHOTS_DIR = DATA_DIR / "snapshots"
@@ -82,7 +81,7 @@ def _load_tracked_entities() -> tuple:
 # ── Helpers ──────────────────────────────────────────────────────────────
 
 
-def load_json(path: Path) -> dict:
+def load_json(path: Path) -> dict[str, Any]:
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
@@ -104,7 +103,7 @@ def _hash_results(results: list) -> str:
 # ── Snapshot Engine ──────────────────────────────────────────────────────
 
 
-def take_snapshot(sources: list = None, max_per_query: int = 10) -> dict:
+def take_snapshot(sources: list = None, max_per_query: int = 10) -> dict[str, Any]:
     """Take a new evidence snapshot for all tracked entities.
 
     Args:
@@ -121,16 +120,16 @@ def take_snapshot(sources: list = None, max_per_query: int = 10) -> dict:
     timestamp = datetime.now()
     snapshot_id = timestamp.strftime("%Y%m%d_%H%M%S")
 
-    print(f"\n📸 Taking snapshot: {snapshot_id}")
-    print(f"   Tracking: {len(TRACKED_QUERIES)} queries, "
-          f"{len(drugs)} drugs, {len(genes)} genes")
-    print(f"   Sources: {', '.join(sources)}\n")
+    logger.info("\n📸 Taking snapshot: %s", snapshot_id)
+    logger.info("   Tracking: %s queries, %s drugs, %s genes",
+                len(TRACKED_QUERIES), len(drugs), len(genes))
+    logger.info("   Sources: %s\n", ', '.join(sources))
 
     queries_data = {}
 
     # Snapshot tracked queries
     for i, query in enumerate(TRACKED_QUERIES, 1):
-        print(f"  [{i}/{len(TRACKED_QUERIES)}] Query: \"{query}\"")
+        logger.info("  [%s/%s] Query: \"%s\"", i, len(TRACKED_QUERIES), query)
         evidence = gather_evidence(
             query, sources=sources, max_per_source=max_per_query, use_cache=True,
         )
@@ -141,11 +140,11 @@ def take_snapshot(sources: list = None, max_per_query: int = 10) -> dict:
         }
 
     # Snapshot top drugs
-    print(f"\n  Snapshotting {len(drugs)} drugs...")
+    logger.info("\n  Snapshotting %s drugs...", len(drugs))
     drug_data = {}
     for drug in drugs[:25]:  # Cap at 25 to avoid excessive API calls
         query = f"{drug} lupus"
-        print(f"    💊 {drug}")
+        logger.info("    💊 %s", drug)
         evidence = gather_evidence(
             query, sources=["pubmed", "clinical_trials"],
             max_per_source=5, use_cache=True,
@@ -157,11 +156,11 @@ def take_snapshot(sources: list = None, max_per_query: int = 10) -> dict:
         }
 
     # Snapshot top genes
-    print(f"\n  Snapshotting {len(genes)} genes...")
+    logger.info("\n  Snapshotting %s genes...", len(genes))
     gene_data = {}
     for gene in genes[:25]:
         query = f"{gene} lupus"
-        print(f"    🧬 {gene}")
+        logger.info("    🧬 %s", gene)
         evidence = gather_evidence(
             query, sources=["pubmed", "clinical_trials"],
             max_per_source=5, use_cache=True,
@@ -188,8 +187,9 @@ def take_snapshot(sources: list = None, max_per_query: int = 10) -> dict:
     path = SNAPSHOTS_DIR / f"snapshot_{snapshot_id}.json"
     save_json(path, snapshot)
 
-    print(f"\n✅ Snapshot saved: {path.name}")
-    print(f"   Queries: {len(queries_data)} · Drugs: {len(drug_data)} · Genes: {len(gene_data)}")
+    logger.info("\n✅ Snapshot saved: %s", path.name)
+    logger.info("   Queries: %s · Drugs: %s · Genes: %s",
+                len(queries_data), len(drug_data), len(gene_data))
 
     return snapshot
 
@@ -197,7 +197,7 @@ def take_snapshot(sources: list = None, max_per_query: int = 10) -> dict:
 # ── Diff Engine ──────────────────────────────────────────────────────────
 
 
-def compare_snapshots(prev: dict, curr: dict) -> dict:
+def compare_snapshots(prev: dict, curr: dict[str, Any]) -> dict[str, Any]:
     """Compare two snapshots and generate a diff with alerts.
 
     Args:
@@ -345,22 +345,22 @@ def load_latest_snapshots(n: int = 2) -> list:
     return [load_json(p) for p in paths]
 
 
-def run_diff() -> dict:
+def run_diff() -> dict[str, Any]:
     """Run a full snapshot differencing workflow.
 
     Takes a new snapshot and compares against the most recent one.
     """
     snapshots = load_latest_snapshots(1)
     if not snapshots:
-        print("⚠️  No previous snapshots found. Taking first baseline snapshot.")
+        logger.warning("⚠️  No previous snapshots found. Taking first baseline snapshot.")
         prev = take_snapshot()
         return {"status": "baseline", "snapshot_id": prev["snapshot_id"]}
 
-    print(f"📸 Comparing against snapshot: {snapshots[0]['snapshot_id']}")
+    logger.info("📸 Comparing against snapshot: %s", snapshots[0]['snapshot_id'])
     prev = snapshots[0]
     curr = take_snapshot()
 
-    print("\n🔍 Computing diff...")
+    logger.info("\n🔍 Computing diff...")
     diff = compare_snapshots(prev, curr)
 
     # Save diff
@@ -373,46 +373,46 @@ def run_diff() -> dict:
 # ── CLI ──────────────────────────────────────────────────────────────────
 
 
-def print_diff_summary(diff: dict):
+def print_diff_summary(diff: dict[str, Any]):
     """Print a formatted diff summary."""
     if diff.get("status") == "baseline":
-        print("\n✅ Baseline snapshot created. No diff to show.")
+        logger.info("\n✅ Baseline snapshot created. No diff to show.")
         return
 
-    print("\n" + "=" * 75)
-    print("📡 CONTINUOUS EVIDENCE MONITOR — Diff Report")
-    print("=" * 75)
+    logger.info("\n" + "=" * 75)
+    logger.info("📡 CONTINUOUS EVIDENCE MONITOR — Diff Report")
+    logger.info("=" * 75)
 
-    print(f"\n  Previous: {diff['prev_snapshot']} ({diff['prev_timestamp'][:19]})")
-    print(f"  Current:  {diff['curr_snapshot']} ({diff['curr_timestamp'][:19]})")
-    print(f"  Elapsed:  {diff['hours_elapsed']:.1f} hours")
+    logger.info("\n  Previous: %s (%s)", diff['prev_snapshot'], diff['prev_timestamp'][:19])
+    logger.info("  Current:  %s (%s)", diff['curr_snapshot'], diff['curr_timestamp'][:19])
+    logger.info("  Elapsed:  %.1f hours", diff['hours_elapsed'])
 
     changes = diff["changes"]
-    print("\n  📊 Changes:")
+    logger.info("\n  📊 Changes:")
     if changes["changed_queries"]:
-        print(f"    Changed queries: {len(changes['changed_queries'])}")
+        logger.info("    Changed queries: %s", len(changes['changed_queries']))
     if changes["changed_drugs"]:
-        print(f"    Changed drugs:   {len(changes['changed_drugs'])}")
+        logger.info("    Changed drugs:   %s", len(changes['changed_drugs']))
         if changes["changed_drugs"]:
-            print(f"      → {', '.join(changes['changed_drugs'][:8])}")
+            logger.info("      → %s", ', '.join(changes['changed_drugs'][:8]))
     if changes["changed_genes"]:
-        print(f"    Changed genes:   {len(changes['changed_genes'])}")
+        logger.info("    Changed genes:   %s", len(changes['changed_genes']))
 
     alerts = diff.get("alerts", [])
-    print(f"\n  🚨 Alerts: {len(alerts)}")
+    logger.info("\n  🚨 Alerts: %s", len(alerts))
     high = [a for a in alerts if a["severity"] == "high"]
     med = [a for a in alerts if a["severity"] == "medium"]
     low = [a for a in alerts if a["severity"] == "low"]
-    print(f"    🔴 High:   {len(high)}")
-    print(f"    🟡 Medium: {len(med)}")
-    print(f"    🟢 Low:    {len(low)}")
+    logger.info("    🔴 High:   %s", len(high))
+    logger.info("    🟡 Medium: %s", len(med))
+    logger.info("    🟢 Low:    %s", len(low))
 
     if alerts:
-        print("\n  📋 Alert Details:")
+        logger.info("\n  📋 Alert Details:")
         for a in alerts[:10]:
             icon = {"high": "🔴", "medium": "🟡", "low": "🟢"}.get(a["severity"], "⚪")
-            print(f"  {icon} [{a['severity'].upper():7s}] {a['entity']:30s} "
-                  f"({a['new_count']} new {a['type']})")
+            logger.info("  %s [%-7s] %-30s (%s new %s)", icon, a['severity'].upper(),
+                        a['entity'], a['new_count'], a['type'])
 
 
 def main():
@@ -436,9 +436,9 @@ def main():
 
     if args.list:
         snapshots = list_snapshots()
-        print(f"\n📂 Available snapshots ({len(snapshots)}):")
+        logger.info("\n📂 Available snapshots (%s):", len(snapshots))
         for p in snapshots[:20]:
-            print(f"  {p.name}")
+            logger.info("  %s", p.name)
         return
 
     if args.diff or args.export_html:
@@ -446,8 +446,8 @@ def main():
         snapshots = load_latest_snapshots(2)
 
         if len(snapshots) < 2:
-            print("⚠️  Need at least 2 snapshots. Taking baseline + new snapshot.")
-            print("   This may take a few minutes...")
+            logger.warning("⚠️  Need at least 2 snapshots. Taking baseline + new snapshot.")
+            logger.warning("   This may take a few minutes...")
             prev = take_snapshot(sources=sources, max_per_query=args.max)
             rate_limited_sleep(2)
             curr = take_snapshot(sources=sources, max_per_query=args.max)
@@ -460,7 +460,7 @@ def main():
         if args.export_html:
             from med_research.pipeline.evidence.report import generate_html_report
             generate_html_report(diff, prev, curr)
-            print("\n✅ HTML report generated: evidence_monitor/report.html")
+            logger.info("\n✅ HTML report generated: evidence_monitor/report.html")
         return
 
     if args.snapshot:

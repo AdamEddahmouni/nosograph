@@ -19,18 +19,21 @@ Usage:
     python predictor.py --top 10 --export-html  # Top 10 + HTML report
 """
 
+from __future__ import annotations
+
 import argparse
 import json
 import os
 import sys
 from pathlib import Path
+from typing import Any
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-
+from med_research.logging_config import get_logger
 from med_research.pipeline.knowledge_graph.builder import build_graph
+
+logger = get_logger(__name__)
 
 DATA_DIR = Path(__file__).parent / "data"
 PROJECT_ROOT = Path(__file__).parent.parent
@@ -45,26 +48,29 @@ try:
     NP_AVAILABLE = True
 except ImportError:
     NP_AVAILABLE = False
+    logger.warning("numpy not installed — feature extraction will fail. Run: pip install numpy")
 
 try:
-    from sklearn.metrics import classification_report
     from sklearn.model_selection import StratifiedKFold, cross_val_score
     from sklearn.preprocessing import StandardScaler
     SKLEARN_AVAILABLE = True
 except ImportError:
     SKLEARN_AVAILABLE = False
+    logger.warning("scikit-learn not installed — ML model will not run. Run: pip install scikit-learn")
 
 try:
     import xgboost as xgb
     XGB_AVAILABLE = True
 except ImportError:
     XGB_AVAILABLE = False
+    logger.warning("xgboost not installed — ML model will not run. Run: pip install xgboost")
 
 try:
     import shap
     SHAP_AVAILABLE = True
 except ImportError:
     SHAP_AVAILABLE = False
+    logger.warning("shap not installed — SHAP analysis will be skipped. Run: pip install shap")
 
 
 # ── Feature Engineering ──────────────────────────────────────────────
@@ -101,12 +107,12 @@ def extract_features(G) -> tuple:
         and labels is list of (is_targeted, targeted_drugs) tuples.
     """
     if not NP_AVAILABLE:
-        print("❌ numpy required. Install: pip install numpy")
+        logger.warning("numpy not installed. Run: pip install numpy")
         return np.array([]), [], []
 
     # Find targeted genes (those with TARGETS edge from a drug)
     targeted_genes = set()
-    for u, v, d in G.edges(data=True):
+    for _u, v, d in G.edges(data=True):
         if d.get("type") == "TARGETS" and G.nodes[v].get("type") == "gene":
             targeted_genes.add(v)
 
@@ -131,9 +137,8 @@ def extract_features(G) -> tuple:
         # Which drugs target this gene
         targeting_drugs = []
         for u, v, d in G.edges(data=True):
-            if d.get("type") == "TARGETS" and v == gene_id:
-                if G.nodes[u].get("type") == "drug":
-                    targeting_drugs.append(u)
+            if d.get("type") == "TARGETS" and v == gene_id and G.nodes[u].get("type") == "drug":
+                targeting_drugs.append(u)
 
         labels.append((is_targeted, targeting_drugs))
 
@@ -188,28 +193,27 @@ def nx_betweenness(G):
 # ── ML Pipeline ──────────────────────────────────────────────────────
 
 
-def train_and_predict(G, top_n: int = 15) -> dict:
+def train_and_predict(G, top_n: int = 15) -> dict[str, Any]:
     """Train XGBoost and predict druggability scores for all genes.
 
     Returns:
         dict with predictions, feature_importance, model_metrics, gene_details
     """
     if not all([XGB_AVAILABLE, SKLEARN_AVAILABLE, NP_AVAILABLE]):
-        print("❌ xgboost, scikit-learn, and numpy required.")
-        print("   Install: pip install xgboost scikit-learn numpy")
+        logger.warning("xgboost, scikit-learn, and numpy required. Run: pip install xgboost scikit-learn numpy")
         return {"error": "Missing dependencies"}
 
-    print("🔄 Extracting features from knowledge graph...")
+    logger.info("Extracting features from knowledge graph...")
     X, gene_ids, labels = extract_features(G)
 
     if len(X) == 0:
         return {"error": "No gene features extracted"}
 
-    y = np.array([l[0] for l in labels])
+    y = np.array([label[0] for label in labels])
     targeted_count = int(np.sum(y))
     untargeted_count = int(len(y) - targeted_count)
 
-    print(f"   {len(gene_ids)} genes: {targeted_count} targeted, {untargeted_count} untargeted")
+    logger.info("%d genes: %d targeted, %d untargeted", len(gene_ids), targeted_count, untargeted_count)
 
     # Scale features
     scaler = StandardScaler()
@@ -224,7 +228,7 @@ def train_and_predict(G, top_n: int = 15) -> dict:
     feature_names = feature_names[:X.shape[1]]
 
     # Cross-validation
-    print("\n🔄 Training XGBoost with stratified 5-fold CV...")
+    logger.info("Training XGBoost with stratified 5-fold CV...")
     model = xgb.XGBClassifier(
         n_estimators=100,
         max_depth=3,
@@ -238,10 +242,10 @@ def train_and_predict(G, top_n: int = 15) -> dict:
     if targeted_count >= 2 and untargeted_count >= 2 and min(targeted_count, untargeted_count) >= 2:
         cv = StratifiedKFold(n_splits=min(3, targeted_count, untargeted_count), shuffle=True, random_state=42)
         cv_scores = cross_val_score(model, X_scaled, y, cv=cv, scoring="roc_auc")
-        print(f"   CV ROC-AUC: {cv_scores.mean():.3f} ± {cv_scores.std():.3f}")
+        logger.info("CV ROC-AUC: %.3f ± %.3f", cv_scores.mean(), cv_scores.std())
     else:
         cv_scores = np.array([0.5])
-        print("   ⚠️  Insufficient samples for CV")
+        logger.warning("Insufficient samples for CV")
 
     # Train on full data
     model.fit(X_scaled, y)
@@ -250,7 +254,7 @@ def train_and_predict(G, top_n: int = 15) -> dict:
     probas = model.predict_proba(X_scaled)[:, 1]
 
     # Feature importance
-    importance = dict(zip(feature_names, model.feature_importances_))
+    importance = dict(zip(feature_names, model.feature_importances_, strict=True))
     importance = dict(sorted(importance.items(), key=lambda x: x[1], reverse=True))
 
     # Build results
@@ -278,7 +282,7 @@ def train_and_predict(G, top_n: int = 15) -> dict:
     shap_values = None
     shap_summary = []
     if SHAP_AVAILABLE and hasattr(model, "get_booster"):
-        print("🔄 Computing SHAP values...")
+        logger.info("Computing SHAP values...")
         try:
             explainer = shap.TreeExplainer(model)
             shap_vals = explainer.shap_values(X_scaled)
@@ -291,7 +295,7 @@ def train_and_predict(G, top_n: int = 15) -> dict:
             shap_summary.sort(key=lambda x: x["mean_abs_shap"], reverse=True)
             shap_values = shap_vals
         except Exception as e:
-            print(f"   ⚠️  SHAP error: {e}")
+            logger.warning("SHAP error: %s", e)
 
     # Generate top N untargeted genes
     untargeted_predictions = [p for p in predictions if not p["is_targeted"]]
@@ -320,44 +324,40 @@ def train_and_predict(G, top_n: int = 15) -> dict:
 # ── Summary & CLI ────────────────────────────────────────────────────
 
 
-def print_summary(results: dict):
-    """Print ML target prediction results."""
+def print_summary(results: dict[str, Any]) -> None:
+    """Log ML target prediction results."""
     metrics = results.get("model_metrics", {})
 
-    print("\n" + "=" * 70)
-    print("🧠 ML TARGET PREDICTOR RESULTS")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("ML TARGET PREDICTOR RESULTS")
+    logger.info("=" * 70)
 
-    print(f"\n  Genes analyzed:             {metrics.get('n_genes', 0)}")
-    print(f"  Targeted (known drugs):     {metrics.get('n_targeted', 0)}")
-    print(f"  Untargeted (opportunity):   {metrics.get('n_untargeted', 0)}")
-    print(f"  CV ROC-AUC:                 {metrics.get('cv_roc_auc_mean', 0):.3f} ± {metrics.get('cv_roc_auc_std', 0):.3f}")
-    print(f"  XGBoost:                    {'✅ available' if metrics.get('xgboost_available') else '❌ not available'}")
-    print(f"  SHAP:                       {'✅ available' if metrics.get('shap_available') else '❌ not available'}")
+    logger.info("  Genes analyzed:             %s", metrics.get('n_genes', 0))
+    logger.info("  Targeted (known drugs):     %s", metrics.get('n_targeted', 0))
+    logger.info("  Untargeted (opportunity):   %s", metrics.get('n_untargeted', 0))
+    logger.info("  CV ROC-AUC:                 %.3f ± %.3f", metrics.get('cv_roc_auc_mean', 0), metrics.get('cv_roc_auc_std', 0))
+    logger.info("  XGBoost:                    %s", 'available' if metrics.get('xgboost_available') else 'NOT available')
+    logger.info("  SHAP:                       %s", 'available' if metrics.get('shap_available') else 'NOT available')
 
-    # Feature importance
     importance = results.get("feature_importance", {})
     if importance:
-        print("\n  📊 Top features by importance:")
+        logger.info("  Top features by importance:")
         for i, (feat, imp) in enumerate(list(importance.items())[:8]):
-            print(f"    {i+1}. {feat:<35} {imp:.4f}")
+            logger.info("    %d. %-35s %.4f", i + 1, feat, imp)
 
-    # Top predictions
     top = results.get("top_untargeted", [])
     if top:
-        print("\n  🎯 Top predicted novel druggable targets:")
+        logger.info("  Top predicted novel druggable targets:")
         for i, p in enumerate(top[:10]):
             drugs_note = f"  [targeted by: {', '.join(p['targeted_by'])}]" if p.get('targeted_by') else ""
-            print(f"    {i+1:2}. {p['gene_name'][:45]:<47} "
-                  f"Score: {p['druggability_score']:.3f}  "
-                  f"Cat: {p['category']}{drugs_note}")
+            logger.info("    %2d. %-47s Score: %.3f  Cat: %s%s",
+                        i + 1, p['gene_name'][:45], p['druggability_score'], p['category'], drugs_note)
 
-    # SHAP
     shap = results.get("shap_summary", [])
     if shap:
-        print("\n  🔍 Top SHAP features (mean |impact|):")
+        logger.info("  Top SHAP features (mean |impact|):")
         for s in shap[:5]:
-            print(f"    • {s['feature']:<35} {s['mean_abs_shap']:.4f}")
+            logger.info("    %-35s %.4f", s['feature'], s['mean_abs_shap'])
 
 
 def main():
@@ -379,17 +379,17 @@ def main():
     args = parser.parse_args()
 
     if not XGB_AVAILABLE:
-        print("⚠️  XGBoost not installed. Install with: pip install xgboost scikit-learn")
-        print("   Running in feature-engineering-only mode...")
+        logger.warning("XGBoost not installed. Install: pip install xgboost scikit-learn")
+        logger.info("Running in feature-engineering-only mode...")
 
-    print("🔄 Building knowledge graph...")
+    logger.info("Building knowledge graph...")
     G = build_graph()
-    print(f"   Graph: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
+    logger.info("Graph: %d nodes, %d edges", G.number_of_nodes(), G.number_of_edges())
 
     results = train_and_predict(G, top_n=args.top)
 
     if "error" in results:
-        print(f"❌ {results['error']}")
+        logger.error("%s", results['error'])
         return results
 
     print_summary(results)
@@ -408,12 +408,12 @@ def main():
         json.dumps(output, indent=2, ensure_ascii=False, default=str),
         encoding="utf-8",
     )
-    print(f"\n💾 Results saved to {out_path}")
+    logger.info("Results saved to %s", out_path)
 
     if args.export_html:
         from med_research.pipeline.ml_predictor.report import generate_ml_report
         report_path = generate_ml_report(results)
-        print(f"✅ HTML report generated: {report_path}")
+        logger.info("HTML report generated: %s", report_path)
 
     return results
 

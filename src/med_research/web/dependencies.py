@@ -1,8 +1,11 @@
 """Shared FastAPI dependencies — singleton-like access to heavy resources."""
 
+from __future__ import annotations
+
 import json
 from functools import lru_cache
 from pathlib import Path
+from typing import Any
 
 from med_research.pipeline.knowledge_graph.config import load_drugs, load_genes, load_pathways
 
@@ -16,28 +19,28 @@ def get_knowledge_graph():
 
 
 @lru_cache(maxsize=1)
-def get_kg_genes() -> dict:
+def get_kg_genes() -> dict[str, Any]:
     """Load gene data indexed by gene ID."""
     data = load_genes()
     return {g["id"]: g for g in data["genes"]}
 
 
 @lru_cache(maxsize=1)
-def get_kg_drugs() -> dict:
+def get_kg_drugs() -> dict[str, Any]:
     """Load drug data indexed by drug ID."""
     data = load_drugs()
     return {d["id"]: d for d in data["drugs"]}
 
 
 @lru_cache(maxsize=1)
-def get_kg_pathways() -> dict:
+def get_kg_pathways() -> dict[str, Any]:
     """Load pathway data indexed by pathway ID."""
     data = load_pathways()
     return {p["id"]: p for p in data["pathways"]}
 
 
 @lru_cache(maxsize=1)
-def get_candidates() -> list:
+def get_candidates() -> list[dict[str, Any]]:
     """Load repurposing candidates."""
     from med_research.web.config import DR_DATA_DIR
 
@@ -45,7 +48,7 @@ def get_candidates() -> list:
     return data["repurposing_candidates"]
 
 
-def load_json(path: Path) -> dict:
+def load_json(path: Path) -> dict[str, Any]:
     """Safely load a JSON file. Returns empty dict on failure."""
     try:
         return json.loads(path.read_text(encoding="utf-8"))

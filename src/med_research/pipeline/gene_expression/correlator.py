@@ -21,15 +21,12 @@ Usage:
 
 import argparse
 import json
-import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
+from med_research.logging_config import get_logger
 from med_research.pipeline.knowledge_graph.config import load_drugs as config_load_drugs
 
-if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+logger = get_logger(__name__)
 
 DATA_DIR = Path(__file__).parent / "data"
 
@@ -505,52 +502,52 @@ def analyze(results: list, signature=None):
     """Print statistical summary."""
     up_genes, down_genes, sig_source, num_studies = _normalize_signature(signature)
 
-    print("\n" + "=" * 75)
-    print("🧬 GENE EXPRESSION CORRELATION ANALYSIS")
-    print("=" * 75)
+    logger.info("\n" + "=" * 75)
+    logger.info("🧬 GENE EXPRESSION CORRELATION ANALYSIS")
+    logger.info("=" * 75)
 
-    print("\n  SLE Expression Signature:")
-    print(f"    Source:               {sig_source}")
-    print(f"    GEO Studies:          {num_studies}")
-    print(f"    Upregulated genes:    {len(up_genes)}")
-    print(f"    Downregulated genes:  {len(down_genes)}")
-    print(f"    Drugs with known pathway effects: {len(DRUG_PATHWAY_REVERSAL)}")
-    print(f"    Drugs with target gene mappings: {len(DRUG_TARGET_GENES)}")
+    logger.info("\n  SLE Expression Signature:")
+    logger.info("    Source:               %s", sig_source)
+    logger.info("    GEO Studies:          %s", num_studies)
+    logger.info("    Upregulated genes:    %s", len(up_genes))
+    logger.info("    Downregulated genes:  %s", len(down_genes))
+    logger.info("    Drugs with known pathway effects: %s", len(DRUG_PATHWAY_REVERSAL))
+    logger.info("    Drugs with target gene mappings: %s", len(DRUG_TARGET_GENES))
 
     # Score stats
     scores = [r["composite_score"] for r in results]
-    print(f"\n  {len(results)} drugs scored")
-    print(f"  Score range: {min(scores):.2f} - {max(scores):.2f}")
-    print(f"  Mean score: {sum(scores)/len(scores):.2f}")
+    logger.info("\n  %s drugs scored", len(results))
+    logger.info("  Score range: %.2f - %.2f", min(scores), max(scores))
+    logger.info("  Mean score: %.2f", sum(scores) / len(scores))
 
     tier_counts = {}
     for r in results:
         tier_counts[r["tier"]] = tier_counts.get(r["tier"], 0) + 1
-    print("\n  Distribution by tier:")
+    logger.info("\n  Distribution by tier:")
     for tier in ["🔴 Tier 1 — Strong Expression Reversal", "🟠 Tier 2 — Moderate Reversal",
                   "🟡 Tier 3 — Weak Reversal", "🟢 Tier 4 — Minimal Reversal"]:
         count = tier_counts.get(tier, 0)
         label = tier.split("—")[0].strip()
-        print(f"    {label}: {count} drugs")
+        logger.info("    %s: %s drugs", label, count)
 
 
 def print_top_correlations(results: list, top_n: int = 15):
     """Print the top N drugs by expression correlation."""
-    print("\n" + "=" * 75)
-    print(f"🏆 TOP {top_n} EXPRESSION-CORRELATED DRUGS")
-    print("=" * 75)
+    logger.info("\n" + "=" * 75)
+    logger.info("🏆 TOP %s EXPRESSION-CORRELATED DRUGS", top_n)
+    logger.info("=" * 75)
 
     for i, r in enumerate(results[:top_n], 1):
-        print(f"\n  #{i} | {r['tier']}")
-        print("  " + "─" * 50)
-        print(f"  💊 Drug:     {r['drug_name']}")
-        print(f"  📂 Category:  {r.get('category', '')}")
-        print(f"  ⭐ Score:     {r['composite_score']:.2f}/10")
-        print(f"     ├─ Signature Reversal:     {r['signature_reversal']}/10")
-        print(f"     ├─ Target-Disease Overlap: {r['target_disease_overlap']}/10")
-        print(f"     ├─ Cell Type Specificity:  {r['cell_type_specificity']}/10")
-        print(f"     ├─ Expression Evidence:    {r['expression_evidence']}/10")
-        print(f"     └─ Directionality:         {r['directionality']}/10")
+        logger.info("\n  #%s | %s", i, r['tier'])
+        logger.info("  " + "─" * 50)
+        logger.info("  💊 Drug:     %s", r['drug_name'])
+        logger.info("  📂 Category:  %s", r.get('category', ''))
+        logger.info("  ⭐ Score:     %.2f/10", r['composite_score'])
+        logger.info("     ├─ Signature Reversal:     %s/10", r['signature_reversal'])
+        logger.info("     ├─ Target-Disease Overlap: %s/10", r['target_disease_overlap'])
+        logger.info("     ├─ Cell Type Specificity:  %s/10", r['cell_type_specificity'])
+        logger.info("     ├─ Expression Evidence:    %s/10", r['expression_evidence'])
+        logger.info("     └─ Directionality:         %s/10", r['directionality'])
 
 
 def main():
@@ -586,7 +583,7 @@ def main():
         generate_html_report(results, signature_source=sig_source,
                             num_studies=num_studies,
                             tissue=args.tissue or "broad")
-        print("\n✅ HTML report generated: gene_expression/report.html")
+        logger.info("\n✅ HTML report generated: gene_expression/report.html")
 
     return results
 

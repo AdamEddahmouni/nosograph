@@ -93,3 +93,21 @@ class RateLimitMiddleware(BaseHTTPMiddleware):
         self._store[ip].append(now)
         self._cleanup(now)
         return await call_next(request)
+
+
+MAX_REQUEST_BODY_SIZE = int(os.environ.get("MAX_REQUEST_BODY_SIZE", str(10 * 1024 * 1024)))
+
+
+class RequestBodySizeMiddleware(BaseHTTPMiddleware):
+    """Reject requests with bodies exceeding the configured maximum size."""
+
+    async def dispatch(self, request: Request, call_next: Callable):
+        content_length = request.headers.get("content-length")
+        if content_length and int(content_length) > MAX_REQUEST_BODY_SIZE:
+            return JSONResponse(
+                status_code=413,
+                content={
+                    "detail": f"Request body too large. Maximum allowed: {MAX_REQUEST_BODY_SIZE} bytes",
+                },
+            )
+        return await call_next(request)
