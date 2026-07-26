@@ -20,9 +20,6 @@ FROM deps AS runtime
 
 COPY . .
 
-# Pre-build the SLE knowledge graph
-RUN python -m med_research.cli kg --disease sle --export
-
 RUN useradd -m appuser && chown -R appuser:appuser /app
 USER appuser
 

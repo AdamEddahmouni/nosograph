@@ -24,6 +24,7 @@ from med_research.web.config import (
     HOST,
     PORT,
 )
+from med_research.web.middleware import AuthMiddleware, RateLimitMiddleware
 from med_research.web.routers import routers
 from med_research.web.routers.jobs import router as jobs_router
 
@@ -70,6 +71,11 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# ── Auth & Rate Limiting ─────────────────────────────────────────────────────
+
+app.add_middleware(AuthMiddleware)
+app.add_middleware(RateLimitMiddleware)
 
 # ── Register Routers ────────────────────────────────────────────────────────
 

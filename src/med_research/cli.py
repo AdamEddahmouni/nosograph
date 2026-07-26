@@ -20,6 +20,8 @@ import time
 from pathlib import Path
 
 from med_research.diseases.base import Disease
+from med_research.logging_config import get_logger, setup_logging
+from med_research.rate_limiter import rate_limited_sleep
 
 
 def _build_parser() -> argparse.ArgumentParser:
@@ -27,6 +29,8 @@ def _build_parser() -> argparse.ArgumentParser:
         description="Medical Research Platform — Multi-disease drug discovery pipeline",
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
+    parser.add_argument("--verbose", "-v", action="store_true", help="Enable debug output")
+    parser.add_argument("--quiet", "-q", action="store_true", help="Suppress non-error output")
     sub = parser.add_subparsers(dest="command", title="commands")
 
     # ── Discovery ──────────────────────────────────────────────────────
@@ -165,6 +169,14 @@ def _build_parser() -> argparse.ArgumentParser:
     test = sub.add_parser("test", help="Run the test suite")
     test.add_argument("--path", "-p", default="tests/")
     test.add_argument("--verbose", "-v", action="store_true", default=True)
+
+    cache = sub.add_parser("cache", help="Manage pipeline caches")
+    cache_sub = cache.add_subparsers(dest="cache_action")
+    cache_sub.add_parser("stats", help="Show cache statistics")
+    clear_cmd = cache_sub.add_parser("clear", help="Clear all caches")
+    clear_cmd.add_argument("--namespace", "-n", help="Clear specific namespace")
+    cleanup_cmd = cache_sub.add_parser("cleanup", help="Remove expired entries")
+    cleanup_cmd.add_argument("--ttl", type=int, help="TTL in seconds")
 
     return parser
 
@@ -359,13 +371,28 @@ def cmd_synergy(args):
 
 def cmd_safety(args):
     """Adverse event safety profiling."""
-    from med_research.pipeline.adverse_events.profiler import AdverseEventProfiler
-    profiler = AdverseEventProfiler(args.disease)
-    profiler.run(drug_id=args.drug)
+    from med_research.pipeline.adverse_events.profiler import (
+        get_drug_profile,
+        get_safety_summary,
+        print_analysis,
+        score_all_drugs,
+    )
+
+    results = []
+    if args.drug:
+        profile = get_drug_profile(args.drug)
+        results = [profile]
+        print_analysis(results)
+    else:
+        results = score_all_drugs()
+        summary = get_safety_summary()
+        print(f"Total drugs: {summary['total_drugs']}")
+        print(f"Avg safety score: {summary['avg_safety_score']:.1f}")
+        print_analysis(results[:15])
 
     if args.export_html:
         from med_research.pipeline.adverse_events.report import generate_html_report
-        generate_html_report(profiler.results)
+        generate_html_report(results)
     return 0
 
 
@@ -492,28 +519,29 @@ def cmd_cross_disease(args):
 
 def cmd_run_all(args):
     """Run the complete research pipeline for a disease."""
+    logger = get_logger(__name__)
     disease = Disease(args.disease)
-    print("=" * 70)
-    print(f"MEDICAL RESEARCH PIPELINE — {disease.profile.name}")
-    print("=" * 70)
-    print(f"\n{len(PIPELINE_STEPS)} steps for {disease.profile.name}")
+    logger.info("=" * 70)
+    logger.info("MEDICAL RESEARCH PIPELINE — %s", disease.profile.name)
+    logger.info("=" * 70)
+    logger.info("%d steps for %s", len(PIPELINE_STEPS), disease.profile.name)
 
     start_time = time.time()
     errors = 0
 
     for i, (step_name, handler_fn) in enumerate(PIPELINE_STEPS, 1):
-        print(f"\n[STEP {i}/{len(PIPELINE_STEPS)}] {step_name}")
+        logger.info("[STEP %d/%d] %s", i, len(PIPELINE_STEPS), step_name)
         try:
             handler_fn(args)
         except Exception as e:
             errors += 1
-            print(f"  ERROR: {e}")
-        time.sleep(0.3)
+            logger.error("  %s", e)
+        rate_limited_sleep(0.3)
 
     elapsed = time.time() - start_time
-    print("\n" + "=" * 70)
-    print(f"Pipeline complete in {elapsed:.0f}s with {errors} error(s)")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("Pipeline complete in %.0fs with %d error(s)", elapsed, errors)
+    logger.info("=" * 70)
     return 1 if errors > 0 else 0
 
 
@@ -595,6 +623,27 @@ def cmd_serve(args):
     return 0
 
 
+def cmd_cache(args):
+    """Manage pipeline caches."""
+    from med_research.cache import CacheManager
+    cache = CacheManager()
+
+    if args.cache_action == "stats":
+        stats = cache.stats()
+        print(f"Total cached entries: {stats['total_entries']}")
+        for ns, info in stats["namespaces"].items():
+            print(f"  {ns}: {info['entries']} entries, {info['size_bytes']:,} bytes")
+    elif args.cache_action == "clear":
+        n = cache.clear(namespace=getattr(args, "namespace", None))
+        print(f"Cleared {n} cache entries")
+    elif args.cache_action == "cleanup":
+        n = cache.cleanup(ttl_seconds=getattr(args, "ttl", None))
+        print(f"Removed {n} expired entries")
+    else:
+        print("Usage: med-research cache {stats|clear|cleanup}")
+    return 0
+
+
 def cmd_test(args):
     """Run the test suite."""
     import subprocess
@@ -611,6 +660,13 @@ def main():
     if args.command is None:
         parser.print_help()
         return 0
+
+    if args.quiet:
+        setup_logging(level=40)  # ERROR only
+    elif args.verbose:
+        setup_logging(level=10)  # DEBUG
+    else:
+        setup_logging(level=20)  # INFO
 
     handlers = {
         "diseases": cmd_diseases,
@@ -636,6 +692,7 @@ def main():
         "run-all": cmd_run_all,
         "serve": cmd_serve,
         "test": cmd_test,
+        "cache": cmd_cache,
     }
 
     handler = handlers.get(args.command)

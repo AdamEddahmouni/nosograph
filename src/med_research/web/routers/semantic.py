@@ -10,7 +10,7 @@ router = APIRouter(tags=["Semantic Search"])
 
 @router.get("/api/semantic/search", response_model=SemanticSearchResponse)
 async def semantic_search(
-    q: str = Query(..., description="Natural language search query"),
+    q: str = Query(..., min_length=1, max_length=500, description="Natural language search query"),
     top_k: int = Query(20, ge=1, le=100, description="Number of results to return"),
 ):
     """Semantic search over indexed PubMed abstracts.

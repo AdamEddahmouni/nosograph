@@ -12,6 +12,7 @@ router = APIRouter(tags=["Evidence Gathering"])
 async def evidence_gather(
     q: str = Query(..., min_length=2, max_length=500, description="Search query"),
     sources: str = Query(default="pubmed,preprints,clinical_trials,fda_labels,patents",
+                         min_length=1, max_length=500,
                          description="Comma-separated source types"),
     max_per_source: int = Query(default=20, ge=1, le=100),
     use_cache: bool = Query(default=True),

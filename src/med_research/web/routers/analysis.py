@@ -47,7 +47,7 @@ async def virtual_screening(
 @router.get("/api/trials", response_model=TrialsResponse)
 async def clinical_trials(
     max_trials: int = Query(100, ge=1, le=200, description="Max trials"),
-    query: str = Query("lupus OR SLE", description="ClinicalTrials.gov search query"),
+    query: str = Query("lupus OR SLE", min_length=1, max_length=500, description="ClinicalTrials.gov search query"),
     no_cache: bool = Query(False, description="Skip cache"),
 ):
     """Track lupus clinical trials from ClinicalTrials.gov."""

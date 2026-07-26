@@ -177,7 +177,7 @@ async def job_websocket(websocket: WebSocket, job_id: str):
         pass
     except Exception as e:
         from contextlib import suppress
-        with suppress(Exception):
+        with suppress(ConnectionError, RuntimeError):
             await websocket.send_json({
                 "job_id": job_id,
                 "status": "ERROR",

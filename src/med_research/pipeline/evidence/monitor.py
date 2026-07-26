@@ -20,9 +20,10 @@ import argparse
 import hashlib
 import json
 import sys
-import time
 from datetime import datetime
 from pathlib import Path
+
+from med_research.rate_limiter import rate_limited_sleep
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
@@ -448,7 +449,7 @@ def main():
             print("⚠️  Need at least 2 snapshots. Taking baseline + new snapshot.")
             print("   This may take a few minutes...")
             prev = take_snapshot(sources=sources, max_per_query=args.max)
-            time.sleep(2)
+            rate_limited_sleep(2)
             curr = take_snapshot(sources=sources, max_per_query=args.max)
         else:
             prev, curr = snapshots

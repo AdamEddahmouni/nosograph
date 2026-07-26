@@ -39,7 +39,7 @@ async def kg_graph():
 
 
 @router.get("/search", response_model=SearchResponse)
-async def kg_search(q: str = Query(..., description="Search query for nodes")):
+async def kg_search(q: str = Query(..., min_length=1, max_length=500, description="Search query for nodes")):
     """Search nodes by label, ID, or description."""
     results = search_nodes(q)
     return {"query": q, "count": len(results), "results": results}
@@ -56,8 +56,8 @@ async def kg_node(node_id: str):
 
 @router.get("/path", response_model=ShortestPathResponse)
 async def kg_shortest_path(
-    source: str = Query(..., description="Source node ID"),
-    target: str = Query(..., description="Target node ID"),
+    source: str = Query(..., min_length=1, max_length=500, description="Source node ID"),
+    target: str = Query(..., min_length=1, max_length=500, description="Target node ID"),
 ):
     """Find the shortest path between two nodes."""
     result = get_shortest_path(source, target)
@@ -86,7 +86,7 @@ async def kg_neighbors(
 
 @router.get("/centrality", response_model=CentralityResponse)
 async def kg_centrality(
-    metric: str = Query("betweenness", description="Centrality metric: degree, betweenness, eigenvector, closeness, pagerank"),
+    metric: str = Query("betweenness", min_length=1, max_length=50, description="Centrality metric: degree, betweenness, eigenvector, closeness, pagerank"),
     top_n: int = Query(15, ge=1, le=50, description="Number of top nodes"),
 ):
     """Get centrality metrics for all nodes in the knowledge graph."""

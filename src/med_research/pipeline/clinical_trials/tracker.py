@@ -17,10 +17,11 @@ import argparse
 import json
 import os
 import sys
-import time
 from collections import Counter
 from datetime import datetime
 from pathlib import Path
+
+from med_research.rate_limiter import rate_limited_sleep
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
@@ -127,7 +128,7 @@ def search_clinical_trials(query: str = "lupus OR SLE", max_results: int = 100) 
         if not page_token or len(studies) == 0:
             break
 
-        time.sleep(0.3)
+        rate_limited_sleep(0.3)
 
     print(f"   Found {len(all_studies)} interventional trials")
     return all_studies

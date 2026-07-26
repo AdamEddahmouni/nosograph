@@ -16,8 +16,9 @@ import argparse
 import json
 import os
 import sys
-import time
 from pathlib import Path
+
+from med_research.rate_limiter import rate_limited_sleep
 
 # Add parent to path
 sys.path.insert(0, str(Path(__file__).parent.parent))
@@ -43,7 +44,10 @@ from med_research.pipeline.literature_mining.crossref import (
 )
 
 DATA_DIR = Path(__file__).parent / "data"
-DEFAULT_EMAIL = os.environ.get("ENTREZ_EMAIL", "researcher@example.com")
+DEFAULT_EMAIL = os.environ.get("ENTREZ_EMAIL")
+if DEFAULT_EMAIL is None:
+    DEFAULT_EMAIL = "researcher@example.com"
+    print("⚠️  ENTREZ_EMAIL not set; using placeholder. NCBI requires a real email. Set ENTREZ_EMAIL env var.")
 
 # ── PubMed queries for SLE/lupus ──────────────────────────────────────────
 
@@ -128,7 +132,7 @@ def search_pubmed(
         print(f"   Found {record['Count']} total, retrieving {len(id_list)}...")
 
         # Rate limiting
-        time.sleep(0.4)
+        rate_limited_sleep(0.4)
 
         # Step 2: Fetch article details
         handle = Entrez.efetch(
@@ -228,7 +232,7 @@ def mine_literature(
                     new_count += 1
 
             print(f"   ✅ {new_count} new unique articles")
-            time.sleep(0.5)
+            rate_limited_sleep(0.5)
 
         # ── Per-candidate targeted queries ───────────────────────────
         if candidate_queries:
@@ -255,7 +259,7 @@ def mine_literature(
                     )
 
                 # Rate limiting — 3 req/sec max without API key
-                time.sleep(0.4)
+                rate_limited_sleep(0.4)
 
             print(f"   ✅ {matches_found}/{len(candidate_queries)} candidates returned articles")
 

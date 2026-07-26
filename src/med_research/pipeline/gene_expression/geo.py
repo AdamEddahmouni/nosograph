@@ -12,11 +12,12 @@ Usage:
 """
 
 import json
-import time
 from pathlib import Path
 from typing import Optional
 
 import requests
+
+from med_research.rate_limiter import rate_limited_sleep
 
 GEO_DATA_DIR = Path(__file__).parent / "data"
 CACHE_DIR = GEO_DATA_DIR / "geo_cache"
@@ -135,7 +136,7 @@ def search_geo_datasets(disease: str = "sle", category: str = "broad",
     if not id_list:
         return []
 
-    time.sleep(0.4)
+    rate_limited_sleep(0.4)
     studies = []
     params = {"db": "gds", "id": ",".join(id_list), "retmode": "json"}
     try:
@@ -200,7 +201,7 @@ def get_study_metadata(accession: str) -> Optional[dict]:
         print(f"  [GEO] Study search failed for {accession}: {e}")
         return None
 
-    time.sleep(0.4)
+    rate_limited_sleep(0.4)
     params = {"db": "gds", "id": ",".join(id_list), "retmode": "json"}
     try:
         resp = requests.get(f"{BASE_URL}/esummary.fcgi", params=params, timeout=15)

@@ -17,7 +17,9 @@ import argparse
 import json
 import os
 import sys
-import time
+from pathlib import Path
+
+from med_research.rate_limiter import rate_limited_sleep
 from collections import defaultdict
 from pathlib import Path
 
@@ -94,7 +96,7 @@ def search_gwas_studies(
             page += 1
 
             # Rate limiting
-            time.sleep(0.5)
+            rate_limited_sleep(0.5)
 
         except Exception as e:
             print(f"   ⚠️  GWAS search error: {e}")
@@ -124,7 +126,7 @@ def fetch_study_associations(study_accession: str) -> list:
 
     except requests.exceptions.HTTPError as e:
         if e.response is not None and e.response.status_code == 404:
-            pass
+            print(f"   ⚠️  No associations found for study {study_accession} (404)")
         else:
             print(f"   ⚠️  HTTP error fetching associations for {study_accession}: {e}")
     except (requests.exceptions.ConnectionError, requests.exceptions.Timeout) as e:
@@ -132,7 +134,7 @@ def fetch_study_associations(study_accession: str) -> list:
     except Exception as e:
         print(f"   ⚠️  Unexpected error fetching associations for {study_accession}: {e}")
 
-    time.sleep(0.5)
+    rate_limited_sleep(0.5)
     return associations
 
 
@@ -193,7 +195,7 @@ def _resolve_snp_details(rsids: set) -> dict:
         if (i + 1) % 20 == 0 or i == len(unresolved) - 1:
             print(f"      [{i+1}/{len(unresolved)}] {resolved} SNPs mapped")
 
-        time.sleep(0.3)
+        rate_limited_sleep(0.3)
 
     print(f"   ✅ Resolved {resolved}/{len(unresolved)} SNPs")
     return {r: snp_cache.get(r, {"genes": [], "chromosome": "", "position": 0}) for r in rsids}
@@ -252,7 +254,7 @@ def extract_gene_associations(
                     try:
                         p_val = float(mantissa) * (10 ** int(exponent))
                     except (ValueError, TypeError):
-                        pass
+                        print(f"   ⚠️  Could not parse p-value for association: mantissa={mantissa}, exponent={exponent}")
 
                 # Collect rsIDs from all loci
                 rsids = []
@@ -293,7 +295,7 @@ def extract_gene_associations(
 
             study_details.append(study_detail)
             total_associations += len(raw_associations)
-            time.sleep(0.5)  # Rate limiting between studies
+            rate_limited_sleep(0.5)  # Rate limiting between studies
 
     # ── Resolve SNPs to genes + locations ────────────────────────────
     snp_details = {}
@@ -548,7 +550,7 @@ def main():
             term, max_results=args.max_studies // 2
         )
         all_studies.extend(studies)
-        time.sleep(0.5)
+        rate_limited_sleep(0.5)
 
     # Deduplicate by accession
     seen = set()

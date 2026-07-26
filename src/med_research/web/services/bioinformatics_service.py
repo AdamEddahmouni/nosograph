@@ -17,7 +17,7 @@ from med_research.web.dependencies import get_kg_genes, get_knowledge_graph, loa
 
 def run_gwas(max_studies: int = 30, no_cache: bool = False, progress_callback=None) -> dict:
     """Run GWAS catalog annotation."""
-    import time
+    from med_research.rate_limiter import rate_limited_sleep
 
     from med_research.pipeline.bioinformatics.gwas import (
         SLE_SEARCH_TERMS,
@@ -46,7 +46,7 @@ def run_gwas(max_studies: int = 30, no_cache: bool = False, progress_callback=No
         studies = search_gwas_studies(term, max_results=max_studies // 2)
         all_studies.extend(studies)
         cb(10 + (i + 1) * 15, f"Fetched {len(studies)} studies for '{term}'")
-        time.sleep(0.5)
+        rate_limited_sleep(0.5)
 
     # Deduplicate
     cb(45, "Deduplicating studies…")
