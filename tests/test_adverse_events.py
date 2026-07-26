@@ -166,7 +166,10 @@ def test_score_all_drugs():
 @pytest.mark.slow
 def test_score_all_drugs_persists():
     score_all_drugs()
-    profiles_path = Path(__file__).parent.parent / "adverse_events" / "data" / "profiles.json"
+    profiles_path = (
+        Path(__file__).parent.parent
+        / "src" / "med_research" / "pipeline" / "adverse_events" / "data" / "profiles.json"
+    )
     assert profiles_path.exists()
 
 
