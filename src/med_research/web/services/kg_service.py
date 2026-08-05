@@ -7,9 +7,9 @@ import networkx as nx
 from med_research.web.dependencies import get_knowledge_graph
 
 
-def get_graph_stats() -> dict:
+def get_graph_stats(disease_id: str = "sle") -> dict:
     """Return graph statistics including node/edge counts and untargeted genes."""
-    G = get_knowledge_graph()
+    G = get_knowledge_graph(disease_id)
 
     node_types = defaultdict(int)
     for _, data in G.nodes(data=True):
@@ -68,9 +68,9 @@ def get_graph_stats() -> dict:
     }
 
 
-def get_graph_data() -> dict:
+def get_graph_data(disease_id: str = "sle") -> dict:
     """Export graph data in Cytoscape.js format."""
-    G = get_knowledge_graph()
+    G = get_knowledge_graph(disease_id)
     elements = []
 
     for node_id, data in G.nodes(data=True):
@@ -99,9 +99,9 @@ def get_graph_data() -> dict:
     return {"elements": elements}
 
 
-def get_node_detail(node_id: str) -> dict | None:
+def get_node_detail(node_id: str, disease_id: str = "sle") -> dict | None:
     """Get detailed information about a specific node."""
-    G = get_knowledge_graph()
+    G = get_knowledge_graph(disease_id)
     if node_id not in G:
         return None
 
@@ -129,9 +129,9 @@ def get_node_detail(node_id: str) -> dict | None:
     return data
 
 
-def get_shortest_path(source: str, target: str) -> dict | None:
+def get_shortest_path(source: str, target: str, disease_id: str = "sle") -> dict | None:
     """Find the shortest path between two nodes."""
-    G = get_knowledge_graph()
+    G = get_knowledge_graph(disease_id)
     try:
         path = nx.shortest_path(G, source=source, target=target)
         edges = []
@@ -151,9 +151,9 @@ def get_shortest_path(source: str, target: str) -> dict | None:
         return None
 
 
-def get_neighbors(node_id: str, n_hops: int = 1) -> dict | None:
+def get_neighbors(node_id: str, n_hops: int = 1, disease_id: str = "sle") -> dict | None:
     """Get neighbors of a node up to n_hops away."""
-    G = get_knowledge_graph()
+    G = get_knowledge_graph(disease_id)
     if node_id not in G:
         return None
 
@@ -194,9 +194,9 @@ def get_neighbors(node_id: str, n_hops: int = 1) -> dict | None:
     return {"node_id": node_id, "neighbors": elements, "subgraph_size": len(nodes)}
 
 
-def search_nodes(query: str) -> list[dict]:
+def search_nodes(query: str, disease_id: str = "sle") -> list[dict]:
     """Search nodes by label, ID, or description."""
-    G = get_knowledge_graph()
+    G = get_knowledge_graph(disease_id)
     query_lower = query.lower()
     results = []
 

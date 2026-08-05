@@ -996,3 +996,105 @@ class TestWebSocketSuccessfulStream:
             data = ws.receive_json()
             assert data["job_id"] == job_id
             assert "status" in data
+
+
+class TestKGGraphDiseaseAware:
+    """Tests for GET /api/kg/graph with the disease param."""
+
+    def test_default_is_sle(self, client):
+        data = client.get("/api/kg/graph").json()
+        sle = client.get("/api/kg/graph?disease=sle").json()
+        assert data["elements"] == sle["elements"]
+
+    def test_ra_graph_differs_from_sle(self, client):
+        sle = client.get("/api/kg/graph?disease=sle").json()["elements"]
+        ra = client.get("/api/kg/graph?disease=ra").json()["elements"]
+        assert len(ra) > 0
+        assert ra != sle
+
+    def test_unknown_disease_returns_500(self):
+        # Unknown disease has no data dir -> build_graph raises FileNotFoundError
+        from fastapi.testclient import TestClient
+
+        from med_research.web.main import app as test_app
+        with TestClient(test_app, raise_server_exceptions=False) as c:
+            resp = c.get("/api/kg/graph?disease=nonexistent")
+            assert resp.status_code == 500
+
+    def test_stats_disease_param(self, client):
+        sle = client.get("/api/kg/stats?disease=sle").json()
+        ra = client.get("/api/kg/stats?disease=ra").json()
+        assert ra["total_nodes"] > 0
+        assert sle["total_nodes"] != ra["total_nodes"]
+
+    def test_node_detail_with_disease(self, client):
+        resp = client.get("/api/kg/node/TLR7?disease=sle")
+        assert resp.status_code == 200
+        data = resp.json()
+        assert data["id"] == "TLR7"
+        assert "incoming" in data
+        assert "outgoing" in data
+
+
+class TestExportEndpoints:
+    """Tests for /api/export/* endpoints."""
+
+    def test_list_modules(self, client):
+        resp = client.get("/api/export/modules")
+        assert resp.status_code == 200
+        data = resp.json()
+        assert "modules" in data
+        assert len(data["modules"]) >= 10
+
+    def test_json_export_available_module(self, client):
+        resp = client.get("/api/export/json/repurpose")
+        assert resp.status_code == 200
+        data = resp.json()
+        assert "repurposing_candidates" in data
+
+    def test_json_export_cross_disease(self, client):
+        resp = client.get("/api/export/json/cross-disease")
+        assert resp.status_code == 200
+        data = resp.json()
+        assert "disease_summary" in data
+
+    def test_json_export_unknown_module_404(self, client):
+        resp = client.get("/api/export/json/bogus_module")
+        assert resp.status_code == 404
+
+    def test_raw_export_returns_file(self, client):
+        resp = client.get("/api/export/raw/repurpose")
+        assert resp.status_code == 200
+        assert resp.headers["content-type"].startswith("application/json")
+
+    def test_print_stylesheet(self, client):
+        resp = client.get("/api/export/report/repurpose/print.css")
+        assert resp.status_code == 200
+        assert "@media print" in resp.text
+
+
+class TestCrossDiseaseApi:
+    """Tests for cross-disease endpoints feeding the comparison view."""
+
+    def test_overlap_returns_matrix(self, client):
+        resp = client.get("/api/cross-disease/overlap")
+        assert resp.status_code == 200
+        data = resp.json()
+        assert "shared_genes" in data
+        assert "matrix" in data["shared_genes"]
+        assert "disease_similarity" in data
+        assert "multi_disease_drugs" in data
+
+    def test_similarity_endpoint(self, client):
+        resp = client.get("/api/cross-disease/similarity")
+        assert resp.status_code == 200
+        data = resp.json()
+        assert "similarity" in data
+        assert "diseases" in data
+
+    def test_drugs_endpoint(self, client):
+        resp = client.get("/api/cross-disease/drugs?top=5")
+        assert resp.status_code == 200
+        data = resp.json()
+        assert "drugs" in data
+        assert len(data["drugs"]) <= 5

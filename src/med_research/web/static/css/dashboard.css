@@ -371,3 +371,163 @@ footer .links { display: flex; justify-content: center; gap: 16px; flex-wrap: wr
     cursor: pointer;
 }
 .speed-bar:hover { filter: brightness(1.3); }
+
+/* ── Knowledge Graph Explorer ────────────────────────────────────────── */
+.kg-explorer {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    margin-bottom: 32px;
+}
+.kg-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+    background: var(--surface2);
+}
+.kg-search {
+    flex: 1;
+    min-width: 220px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    color: var(--text);
+    padding: 8px 12px;
+    font-size: 0.82rem;
+    font-family: inherit;
+    outline: none;
+    transition: border-color var(--transition);
+}
+.kg-search:focus { border-color: var(--accent); }
+.kg-filters { display: flex; flex-wrap: wrap; gap: 10px; }
+.kg-filter {
+    display: inline-flex; align-items: center; gap: 5px;
+    font-size: 0.74rem; color: var(--text-muted);
+    cursor: pointer; user-select: none;
+}
+.kg-filter input { accent-color: var(--accent); }
+.kg-filter .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+.kg-body {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 300px;
+    min-height: 520px;
+}
+.kg-canvas { position: relative; min-height: 520px; background: #0d0d13; }
+.kg-canvas canvas { display: block; }
+.kg-loading {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column; gap: 10px;
+    align-items: center; justify-content: center;
+    color: var(--text-muted); font-size: 0.85rem;
+}
+.kg-detail {
+    border-left: 1px solid var(--border);
+    background: var(--bg);
+    overflow-y: auto;
+    max-height: 640px;
+    padding: 16px;
+}
+.kg-detail-placeholder {
+    height: 100%;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    text-align: center; color: var(--text-muted);
+    font-size: 0.8rem; padding: 20px;
+}
+.kg-detail h4 { margin-bottom: 4px; font-size: 0.95rem; }
+.kg-detail .kg-node-type {
+    display: inline-block; font-size: 0.65rem; font-weight: 600;
+    padding: 2px 8px; border-radius: 10px; margin-bottom: 10px;
+}
+.kg-detail .kg-field { margin-bottom: 8px; }
+.kg-detail .kg-field-label { font-size: 0.68rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.03em; }
+.kg-detail .kg-field-value { font-size: 0.8rem; }
+.kg-detail .kg-section { margin-top: 14px; padding-top: 10px; border-top: 1px solid var(--border); }
+.kg-detail .kg-section h5 { font-size: 0.78rem; color: var(--text-muted); margin-bottom: 6px; }
+.kg-rel {
+    font-size: 0.74rem; padding: 5px 8px; margin-bottom: 5px;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+}
+.kg-rel strong { color: var(--text); }
+.kg-rel .rel-type { color: var(--accent); font-size: 0.68rem; font-weight: 600; }
+.kg-rel .rel-desc { color: var(--text-muted); font-size: 0.7rem; }
+.kg-stats-bar {
+    display: flex; flex-wrap: wrap; gap: 18px;
+    padding: 10px 16px; border-top: 1px solid var(--border);
+    background: var(--surface2);
+    font-size: 0.74rem; color: var(--text-muted);
+}
+.kg-stats-bar b { color: var(--text); font-weight: 600; }
+.vis-network { outline: none; }
+
+@media (max-width: 900px) {
+    .kg-body { grid-template-columns: 1fr; }
+    .kg-detail { border-left: none; border-top: 1px solid var(--border); max-height: 260px; }
+}
+
+/* ── Cross-Disease Comparison ────────────────────────────────────────── */
+.cd-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+.cd-card h3 { font-size: 1rem; margin-bottom: 12px; }
+.cd-table { width: 100%; border-collapse: collapse; font-size: 0.78rem; min-width: 720px; }
+.cd-table th {
+    text-align: left; padding: 8px 10px; background: var(--surface2);
+    color: var(--text-muted); font-size: 0.68rem;
+    text-transform: uppercase; letter-spacing: 0.04em;
+    border-bottom: 1px solid var(--border); white-space: nowrap;
+}
+.cd-table td { padding: 7px 10px; border-bottom: 1px solid #1a1a24; }
+.cd-table tr:hover td { background: rgba(129,140,248,0.03); }
+.cd-table .gene-name { font-weight: 600; color: var(--text); white-space: nowrap; }
+.cd-table .gene-count { color: var(--accent); font-weight: 600; white-space: nowrap; }
+.cd-cell {
+    width: 44px; height: 26px; border-radius: 4px;
+    text-align: center; font-size: 0.68rem; font-weight: 600;
+    color: #0a0a0f;
+}
+.cd-legend { display: flex; gap: 14px; align-items: center; font-size: 0.7rem; color: var(--text-muted); margin-top: 10px; flex-wrap: wrap; }
+.cd-legend .swatch { width: 14px; height: 14px; border-radius: 3px; display: inline-block; vertical-align: middle; margin-right: 4px; }
+.cd-sim { display: inline-block; padding: 2px 8px; border-radius: 8px; font-size: 0.7rem; font-weight: 600; }
+.cd-drug-row { display: flex; justify-content: space-between; align-items: center; padding: 8px 4px; border-bottom: 1px solid #1a1a24; font-size: 0.8rem; }
+.cd-drug-row:last-child { border-bottom: none; }
+.cd-drug-name { font-weight: 600; }
+.cd-drug-diseases { color: var(--text-muted); font-size: 0.72rem; }
+.cd-score-badge { font-weight: 700; color: #4ade80; }
+.cd-disease-tag {
+    display: inline-block; font-size: 0.62rem; font-weight: 600;
+    padding: 1px 7px; border-radius: 8px; margin: 1px;
+    background: rgba(96,165,250,0.1); color: #60a5fa;
+}
+
+/* ── Data Export ─────────────────────────────────────────────────────── */
+.export-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 10px;
+}
+.export-item {
+    display: flex; justify-content: space-between; align-items: center;
+    gap: 8px; padding: 10px 12px;
+    background: var(--surface2); border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    transition: border-color var(--transition), transform var(--transition);
+}
+.export-item:hover { border-color: var(--accent); transform: translateY(-1px); }
+.export-item.unavailable { opacity: 0.45; }
+.export-label { font-size: 0.78rem; font-weight: 600; white-space: nowrap; }
+.export-actions { display: flex; gap: 6px; }
+.btn-sm { padding: 4px 9px; font-size: 0.68rem; border-radius: 6px; }
+@media (max-width: 900px) {
+    .export-grid { grid-template-columns: 1fr; }
+}

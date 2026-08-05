@@ -27,28 +27,38 @@ router = APIRouter(prefix="/api/kg", tags=["Knowledge Graph"])
 
 
 @router.get("/stats", response_model=GraphStats)
-async def kg_stats():
+async def kg_stats(
+    disease: str = Query("sle", description="Disease ID to build the graph for"),
+):
     """Get knowledge graph statistics (nodes, edges, untargeted genes, top hubs)."""
-    return get_graph_stats()
+    return get_graph_stats(disease_id=disease)
 
 
 @router.get("/graph", response_model=GraphData)
-async def kg_graph():
+async def kg_graph(
+    disease: str = Query("sle", description="Disease ID to build the graph for"),
+):
     """Get full graph data in Cytoscape.js format."""
-    return get_graph_data()
+    return get_graph_data(disease_id=disease)
 
 
 @router.get("/search", response_model=SearchResponse)
-async def kg_search(q: str = Query(..., min_length=1, max_length=500, description="Search query for nodes")):
+async def kg_search(
+    q: str = Query(..., min_length=1, max_length=500, description="Search query for nodes"),
+    disease: str = Query("sle", description="Disease ID to search within"),
+):
     """Search nodes by label, ID, or description."""
-    results = search_nodes(q)
+    results = search_nodes(q, disease_id=disease)
     return {"query": q, "count": len(results), "results": results}
 
 
 @router.get("/node/{node_id}", response_model=NodeDetailResponse)
-async def kg_node(node_id: str):
+async def kg_node(
+    node_id: str,
+    disease: str = Query("sle", description="Disease ID the graph was built for"),
+):
     """Get detailed information about a specific node."""
-    detail = get_node_detail(node_id)
+    detail = get_node_detail(node_id, disease_id=disease)
     if detail is None:
         raise HTTPException(status_code=404, detail=f"Node '{node_id}' not found")
     return detail
@@ -58,9 +68,10 @@ async def kg_node(node_id: str):
 async def kg_shortest_path(
     source: str = Query(..., min_length=1, max_length=500, description="Source node ID"),
     target: str = Query(..., min_length=1, max_length=500, description="Target node ID"),
+    disease: str = Query("sle", description="Disease ID the graph was built for"),
 ):
     """Find the shortest path between two nodes."""
-    result = get_shortest_path(source, target)
+    result = get_shortest_path(source, target, disease_id=disease)
     if result is None:
         raise HTTPException(
             status_code=404,
@@ -73,9 +84,10 @@ async def kg_shortest_path(
 async def kg_neighbors(
     node_id: str,
     hops: int = Query(1, ge=1, le=3, description="Number of hops (1-3)"),
+    disease: str = Query("sle", description="Disease ID the graph was built for"),
 ):
     """Get neighbors of a node."""
-    result = get_neighbors(node_id, n_hops=hops)
+    result = get_neighbors(node_id, n_hops=hops, disease_id=disease)
     if result is None:
         raise HTTPException(status_code=404, detail=f"Node '{node_id}' not found")
     return result

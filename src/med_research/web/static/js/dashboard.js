@@ -36,6 +36,15 @@ function formatNumber(n) {
     return n != null ? n.toLocaleString() : '…';
 }
 
+function escapeHtml(text) {
+    return String(text == null ? '' : text)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+}
+
 // ── Module Execution ─────────────────────────────────────────────────────
 
 async function runModule(module) {
@@ -580,10 +589,502 @@ async function runCrossDisease() {
             ['Shared Drugs', drugCount],
             ['Shared Pathways', pathCount],
         ]);
+
+        // Render the full comparison view below the card
+        renderCrossDiseaseComparison(data);
     } catch (err) {
         resultEl.className = 'module-result visible error';
         resultEl.innerHTML = `<strong>Error:</strong> ${err.message}`;
     }
+}
+
+// ── Cross-Disease Comparison View ───────────────────────────────────────
+
+const CD_DISEASE_ORDER = ['sle', 'ra', 'ibd', 'ms', 'ss', 'ssc', 't1d'];
+const CD_DISEASE_LABELS = {
+    sle: 'SLE', ra: 'RA', ibd: 'IBD', ms: 'MS', ss: 'SS', ssc: 'SSc', t1d: 'T1D',
+};
+
+function cdColorFor(value, max) {
+    // value 0..max -> color scale (green -> blue -> purple)
+    if (!value) return 'rgba(255,255,255,0.04)';
+    const t = Math.min(1, value / max);
+    if (t < 0.34) {
+        const r = Math.round(74 + (129 - 74) * (t / 0.34));
+        const g = Math.round(222 + (140 - 222) * (t / 0.34));
+        const b = Math.round(128 + (248 - 128) * (t / 0.34));
+        return `rgb(${r},${g},${b})`;
+    }
+    if (t < 0.67) {
+        const tt = (t - 0.34) / 0.33;
+        const r = Math.round(129 + (192 - 129) * tt);
+        const g = Math.round(140 + (132 - 140) * tt);
+        const b = Math.round(248 + (252 - 248) * tt);
+        return `rgb(${r},${g},${b})`;
+    }
+    const tt = (t - 0.67) / 0.33;
+    const r = Math.round(192 + (244 - 192) * tt);
+    const g = Math.round(132 + (114 - 132) * tt);
+    const b = Math.round(252 + (182 - 252) * tt);
+    return `rgb(${r},${g},${b})`;
+}
+
+function renderCrossDiseaseComparison(data) {
+    let section = document.getElementById('cross-disease-view');
+    if (!section) {
+        section = document.createElement('div');
+        section.id = 'cross-disease-view';
+        const container = document.getElementById('modules-grid');
+        container.parentElement.insertBefore(section, container.nextSibling);
+    }
+
+    const summary = data.disease_summary || {};
+    const sharedGenes = (data.shared_genes || {}).matrix || {};
+    const sharedDrugs = (data.shared_drugs || {}).matrix || {};
+    const similarity = data.disease_similarity || [];
+    const multiDrugs = data.multi_disease_drugs || [];
+
+    const diseaseNames = CD_DISEASE_ORDER
+        .filter(d => summary[d])
+        .map(d => ({ id: d, name: (summary[d].name || d).split('(')[0].trim() }));
+
+    // ── Gene × Disease heatmap ──────────────────────────────────────
+    const geneEntries = Object.entries(sharedGenes)
+        .map(([gid, g]) => ({
+            gid,
+            name: g.name || gid,
+            per: g.per_disease || {},
+            count: Object.keys(g.per_disease || {}).length,
+        }))
+        .sort((a, b) => b.count - a.count);
+
+    let maxOr = 0;
+    for (const g of geneEntries) {
+        for (const d of diseaseNames) {
+            const or = g.per[d.id] && g.per[d.id].odds_ratio;
+            if (or && or > maxOr) maxOr = or;
+        }
+    }
+
+    const geneRows = geneEntries.map(g => {
+        const cells = diseaseNames.map(d => {
+            const pd = g.per[d.id];
+            const or = pd && pd.odds_ratio;
+            const title = pd ? `${pd.category || ''}${or ? ` · OR ${or}` : ''}` : '';
+            const val = or != null ? or.toFixed(1) : '';
+            return `<td style="background:${cdColorFor(or || 0, maxOr || 1)};color:${or ? '#0a0a0f' : 'rgba(120,120,144,0.35)'};border-radius:4px;text-align:center;" title="${title}">${val}</td>`;
+        }).join('');
+        return `<tr>
+            <td class="gene-name">${g.gid}</td>
+            <td class="gene-count">${g.count}/${diseaseNames.length}</td>
+            ${cells}
+        </tr>`;
+    }).join('');
+
+    // ── Similarity matrix ───────────────────────────────────────────
+    const simMap = {};
+    for (const s of similarity) {
+        simMap[`${s.disease_a}|${s.disease_b}`] = s.similarity;
+        simMap[`${s.disease_b}|${s.disease_a}`] = s.similarity;
+    }
+    const simHeader = diseaseNames.map(d => `<th>${CD_DISEASE_LABELS[d.id] || d.id}</th>`).join('');
+    const simRows = diseaseNames.map(d => {
+        const cells = diseaseNames.map(d2 => {
+            if (d.id === d2.id) return `<td style="background:rgba(129,140,248,0.15);text-align:center;">—</td>`;
+            const v = simMap[`${d.id}|${d2.id}`] || 0;
+            return `<td style="background:${cdColorFor(v, 1)};text-align:center;color:#0a0a0f;">${v.toFixed(2)}</td>`;
+        }).join('');
+        return `<tr><td class="gene-name">${CD_DISEASE_LABELS[d.id] || d.id}</td>${cells}</tr>`;
+    }).join('');
+
+    // ── Multi-disease drugs ─────────────────────────────────────────
+    const drugRows = multiDrugs.slice(0, 12).map(drug => {
+        const diseases = (drug.diseases || drug.disease_ids || []);
+        const tags = diseases.slice(0, 7).map(d =>
+            `<span class="cd-disease-tag">${CD_DISEASE_LABELS[d] || d}</span>`).join('');
+        return `<div class="cd-drug-row">
+            <div>
+                <span class="cd-drug-name">${drug.drug_name || drug.drug_id || drug.name || ''}</span>
+                <div class="cd-drug-diseases">${tags}${diseases.length > 7 ? ` <span class="cd-disease-tag">+${diseases.length - 7}</span>` : ''}</div>
+            </div>
+            <span class="cd-score-badge">${drug.score != null ? drug.score.toFixed(2) : ''}</span>
+        </div>`;
+    }).join('');
+
+    section.innerHTML = `
+        <h2 class="section-title"><span>🌐</span> Cross-Disease Comparison</h2>
+
+        <div class="cd-card">
+            <h3>🧬 Gene × Disease Association Heatmap <span style="font-weight:400;color:var(--text-muted);font-size:0.78rem;">(odds ratio by presence)</span></h3>
+            <table class="cd-table">
+                <thead><tr>
+                    <th>Gene</th><th>Coverage</th>
+                    ${diseaseNames.map(d => `<th>${CD_DISEASE_LABELS[d.id] || d.id}</th>`).join('')}
+                </tr></thead>
+                <tbody>${geneRows}</tbody>
+            </table>
+            <div class="cd-legend">
+                <span><span class="swatch" style="background:${cdColorFor(1, 3)}"></span> OR 1.0</span>
+                <span><span class="swatch" style="background:${cdColorFor(2, 3)}"></span> OR 2.0</span>
+                <span><span class="swatch" style="background:${cdColorFor(3, 3)}"></span> OR 3.0+</span>
+                <span><span class="swatch" style="background:rgba(255,255,255,0.04);border:1px solid #252535;"></span> Not associated</span>
+            </div>
+        </div>
+
+        <div class="cd-card">
+            <h3>🔗 Disease Similarity Matrix <span style="font-weight:400;color:var(--text-muted);font-size:0.78rem;">(shared-biology Jaccard)</span></h3>
+            <table class="cd-table" style="min-width:360px;">
+                <thead><tr><th></th>${simHeader}</tr></thead>
+                <tbody>${simRows}</tbody>
+            </table>
+        </div>
+
+        <div class="cd-card">
+            <h3>💊 Multi-Disease Repurposing Candidates</h3>
+            ${drugRows || '<p style="color:var(--text-muted);font-size:0.8rem;">No multi-disease drug data.</p>'}
+        </div>
+    `;
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// ── Knowledge Graph Explorer ────────────────────────────────────────────
+
+const KG_TYPE_COLORS = {
+    gene: '#4ade80',
+    drug: '#60a5fa',
+    pathway: '#f59e0b',
+    disease: '#f43f5e',
+    unknown: '#787890',
+};
+const KG_EDGE_COLORS = {
+    TARGETS: '#60a5fa',
+    TREATS: '#4ade80',
+    PARTICIPATES_IN: '#a78bfa',
+    DRIVES: '#f43f5e',
+    MODULATES: '#f59e0b',
+    ASSOCIATED_WITH: '#94a3b8',
+    UNKNOWN: '#3a3a4a',
+};
+
+let kgNetwork = null;
+let kgNodes = null;
+let kgEdges = null;
+let kgRawElements = null;
+
+function scrollToExplorer() {
+    const el = document.getElementById('kg-explorer');
+    if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        initKGExplorer();
+    }
+}
+
+async function initKGExplorer() {
+    const canvas = document.getElementById('kg-canvas');
+    if (!canvas) return;
+
+    const disease = getActiveDisease();
+    const loading = document.querySelector('#kg-canvas .kg-loading');
+    if (loading) loading.style.display = 'flex';
+
+    try {
+        const data = await apiFetch(`/api/kg/graph?disease=${encodeURIComponent(disease)}`);
+        kgRawElements = data.elements || [];
+        buildKGNetwork();
+        updateKGStats();
+        setupKGControls();
+    } catch (e) {
+        canvas.innerHTML = `<div class="kg-loading"><strong style="color:#f87171;">⚠️ ${e.message}</strong></div>`;
+    }
+}
+
+function buildKGNetwork() {
+    const canvas = document.getElementById('kg-canvas');
+    if (!canvas || typeof vis === 'undefined') {
+        canvas.innerHTML = `<div class="kg-loading"><strong style="color:#f87171;">⚠️ vis-network library not loaded</strong></div>`;
+        return;
+    }
+
+    kgNodes = new vis.DataSet();
+    kgEdges = new vis.DataSet();
+
+    const nodeMap = {};
+    for (const el of kgRawElements) {
+        const d = el.data || {};
+        const hasSrc = d.from !== undefined || d.source !== undefined;
+        const hasDst = d.to !== undefined || d.target !== undefined;
+        if (d.id !== undefined && !(hasSrc && hasDst) && !(d.id in nodeMap)) {
+            const type = d.type || 'unknown';
+            const color = KG_TYPE_COLORS[type] || '#787890';
+            nodeMap[d.id] = {
+                id: d.id,
+                label: d.label || d.id,
+                type,
+                color: { background: color, border: color, highlight: { background: '#ffffff', border: '#ffffff' } },
+                font: { color: '#d0d0dc', size: 13 },
+                shape: type === 'drug' ? 'box' : type === 'pathway' ? 'diamond' : type === 'disease' ? 'star' : 'dot',
+                title: d.label || d.id,
+            };
+        }
+    }
+    for (const el of kgRawElements) {
+        const d = el.data || {};
+        const from = d.from ?? d.source;
+        const to = d.to ?? d.target;
+        if (from !== undefined && to !== undefined) {
+            const type = d.type || 'UNKNOWN';
+            kgEdges.add({
+                id: d.id || `${from}--${to}--${type}`,
+                from, to,
+                type,
+                color: { color: KG_EDGE_COLORS[type] || '#3a3a4a', opacity: 0.55 },
+                arrows: { to: { enabled: true, scaleFactor: 0.5 } },
+                width: 1,
+                title: type,
+            });
+        }
+    }
+
+    // Only add nodes that participate in the currently visible filter set
+    applyKGNodeFilters();
+
+    const options = {
+        nodes: { borderWidth: 1.5, shadow: { enabled: false }, chosen: true },
+        edges: { smooth: { type: 'continuous' }, selectionWidth: 1.5 },
+        physics: {
+            enabled: true,
+            solver: 'forceAtlas2Based',
+            forceAtlas2Based: { gravitationalConstant: -40, centralGravity: 0.012, springLength: 110, springConstant: 0.06, damping: 0.5 },
+            stabilization: { iterations: 180 },
+        },
+        interaction: { hover: true, tooltipDelay: 120, navigationButtons: false, keyboard: true },
+        layout: { improvedLayout: false },
+        height: '520px',
+    };
+
+    kgNetwork = new vis.Network(canvas, { nodes: kgNodes, edges: kgEdges }, options);
+
+    kgNetwork.on('click', async (params) => {
+        if (params.nodes && params.nodes.length > 0) {
+            const nodeId = params.nodes[0];
+            await showKGNodeDetail(nodeId);
+        }
+    });
+    kgNetwork.on('deselectNode', () => clearKGDetail());
+}
+
+function applyKGNodeFilters() {
+    if (!kgNodes || !kgRawElements) return;
+    const checks = document.querySelectorAll('.kg-filter input[data-type]');
+    const visible = {};
+    for (const c of checks) visible[c.dataset.type] = c.checked;
+
+    const nodeMap = {};
+    for (const el of kgRawElements) {
+        const d = el.data || {};
+        const hasSrc = d.from !== undefined || d.source !== undefined;
+        const hasDst = d.to !== undefined || d.target !== undefined;
+        if (d.id !== undefined && !(hasSrc && hasDst) && !(d.id in nodeMap)) {
+            const type = d.type || 'unknown';
+            nodeMap[d.id] = {
+                id: d.id,
+                label: d.label || d.id,
+                type,
+                color: { background: KG_TYPE_COLORS[type] || '#787890', border: KG_TYPE_COLORS[type] || '#787890', highlight: { background: '#ffffff', border: '#ffffff' } },
+                font: { color: '#d0d0dc', size: 13 },
+                shape: type === 'drug' ? 'box' : type === 'pathway' ? 'diamond' : type === 'disease' ? 'star' : 'dot',
+                title: d.label || d.id,
+            };
+        }
+    }
+
+    const visibleIds = new Set(Object.keys(nodeMap).filter(id => visible[nodeMap[id].type] !== false));
+    kgNodes.clear();
+    kgNodes.add([...visibleIds].map(id => nodeMap[id]));
+
+    // Edges between visible nodes only
+    const visEdges = [];
+    for (const el of kgRawElements) {
+        const d = el.data || {};
+        const from = d.from ?? d.source;
+        const to = d.to ?? d.target;
+        if (from !== undefined && to !== undefined) {
+            if (visibleIds.has(from) && visibleIds.has(to)) {
+                const type = d.type || 'UNKNOWN';
+                visEdges.push({
+                    id: d.id || `${from}--${to}--${type}`,
+                    from, to, type,
+                    color: { color: KG_EDGE_COLORS[type] || '#3a3a4a', opacity: 0.55 },
+                    arrows: { to: { enabled: true, scaleFactor: 0.5 } },
+                    width: 1,
+                    title: type,
+                });
+            }
+        }
+    }
+    kgEdges.clear();
+    kgEdges.add(visEdges);
+
+    if (kgNetwork) kgNetwork.fit({ animation: true });
+}
+
+function setupKGControls() {
+    const search = document.getElementById('kg-search');
+    const checks = document.querySelectorAll('.kg-filter input[data-type]');
+    if (search) {
+        search.addEventListener('input', () => {
+            const q = search.value.trim().toLowerCase();
+            if (!kgNetwork || !kgNodes) return;
+            if (!q) {
+                kgNodes.forEach(n => kgNodes.update({ id: n.id, color: { background: KG_TYPE_COLORS[n.type] || '#787890', border: KG_TYPE_COLORS[n.type] || '#787890', highlight: { background: '#ffffff', border: '#ffffff' } } }));
+                kgNetwork.unselectAll();
+                return;
+            }
+            const matches = new Set();
+            kgNodes.forEach(n => {
+                const hit = (n.label || '').toLowerCase().includes(q) || n.id.toLowerCase().includes(q);
+                const color = hit ? { background: '#fbbf24', border: '#fbbf24', highlight: { background: '#ffffff', border: '#ffffff' } } : { background: 'rgba(120,120,144,0.15)', border: 'rgba(120,120,144,0.4)', highlight: { background: '#ffffff', border: '#ffffff' } };
+                kgNodes.update({ id: n.id, color });
+                if (hit) matches.add(n.id);
+            });
+            if (matches.size > 0 && kgNetwork) {
+                kgNetwork.selectNodes([...matches]);
+            }
+        });
+    }
+    for (const c of checks) {
+        c.addEventListener('change', applyKGNodeFilters);
+    }
+}
+
+function resetKGExplorer() {
+    const search = document.getElementById('kg-search');
+    if (search) search.value = '';
+    // Restore node colors (search dims non-matches) and refit
+    if (kgNetwork && kgNodes) {
+        kgNodes.forEach(n => {
+            kgNodes.update({ id: n.id, color: { background: KG_TYPE_COLORS[n.type] || '#787890', border: KG_TYPE_COLORS[n.type] || '#787890', highlight: { background: '#ffffff', border: '#ffffff' } } });
+        });
+    }
+    if (kgNetwork) kgNetwork.fit({ animation: true });
+}
+
+async function showKGNodeDetail(nodeId) {
+    const panel = document.getElementById('kg-detail');
+    if (!panel) return;
+    const disease = getActiveDisease();
+    try {
+        const d = await apiFetch(`/api/kg/node/${encodeURIComponent(nodeId)}?disease=${encodeURIComponent(disease)}`);
+        renderKGDetail(panel, d);
+    } catch (e) {
+        panel.innerHTML = `<strong style="color:#f87171;font-size:0.8rem;">⚠️ ${e.message}</strong>`;
+    }
+}
+
+function renderKGDetail(panel, d) {
+    const type = d.type || 'unknown';
+    const color = KG_TYPE_COLORS[type] || '#787890';
+    const typeLabel = type.charAt(0).toUpperCase() + type.slice(1);
+
+    const fields = [];
+    for (const key of ['category', 'function', 'description', 'odds_ratio', 'mechanism', 'chromosome', 'prevalence', 'disease_id']) {
+        if (d[key] != null && d[key] !== '') {
+            fields.push(`<div class="kg-field"><div class="kg-field-label">${key.replace(/_/g, ' ')}</div><div class="kg-field-value">${escapeHtml(d[key])}</div></div>`);
+        }
+    }
+
+    const incoming = (d.incoming || []).slice(0, 12).map(e =>
+        `<div class="kg-rel"><span class="rel-type">${e.type || 'link'}</span> ← <strong>${escapeHtml(e.source)}</strong><div class="rel-desc">${escapeHtml(e.description || '')}</div></div>`).join('');
+    const outgoing = (d.outgoing || []).slice(0, 12).map(e =>
+        `<div class="kg-rel"><span class="rel-type">${e.type || 'link'}</span> → <strong>${escapeHtml(e.target)}</strong><div class="rel-desc">${escapeHtml(e.description || '')}</div></div>`).join('');
+
+    panel.innerHTML = `
+        <h4>${escapeHtml(d.label || d.id)}</h4>
+        <span class="kg-node-type" style="background:${color}22;color:${color};">${typeLabel}</span>
+        <div class="kg-field"><div class="kg-field-label">Node ID</div><div class="kg-field-value"><code style="font-size:0.72rem;">${escapeHtml(d.id)}</code></div></div>
+        ${fields.join('')}
+        ${incoming ? `<div class="kg-section"><h5>⬅ Incoming (${d.incoming.length})</h5>${incoming}</div>` : ''}
+        ${outgoing ? `<div class="kg-section"><h5>➡ Outgoing (${d.outgoing.length})</h5>${outgoing}</div>` : ''}
+    `;
+}
+
+function clearKGDetail() {
+    const panel = document.getElementById('kg-detail');
+    if (!panel) return;
+    panel.innerHTML = `
+        <div class="kg-detail-placeholder">
+            <div style="font-size:2rem;margin-bottom:8px;">🕸️</div>
+            <p>Select a node to inspect its drugs, pathways, and connections.</p>
+        </div>`;
+}
+
+function updateKGStats() {
+    const bar = document.getElementById('kg-stats-bar');
+    if (!bar || !kgRawElements) return;
+    const nodes = new Set();
+    const edges = [];
+    const types = {};
+    for (const el of kgRawElements) {
+        const d = el.data || {};
+        const hasSrc = d.from !== undefined || d.source !== undefined;
+        const hasDst = d.to !== undefined || d.target !== undefined;
+        if (hasSrc && hasDst) {
+            edges.push(d);
+        } else if (d.id !== undefined) {
+            nodes.add(d.id);
+            const t = d.type || 'unknown';
+            types[t] = (types[t] || 0) + 1;
+        }
+    }
+    bar.innerHTML = `
+        <span><b>${nodes.size}</b> nodes</span>
+        <span><b>${edges.length}</b> relationships</span>
+        <span><b>${types.gene || 0}</b> genes</span>
+        <span><b>${types.drug || 0}</b> drugs</span>
+        <span><b>${types.pathway || 0}</b> pathways</span>
+        <span style="margin-left:auto;">disease: <b style="text-transform:uppercase;">${escapeHtml(getActiveDisease())}</b></span>
+    `;
+}
+
+// ── Data Export ───────────────────────────────────────────────────────────
+
+const EXPORT_MODULES = [
+    ['repurpose', '💊 Drug Repurposing'],
+    ['cart', '🔬 CAR-T Scores'],
+    ['biomarker', '🧬 Biomarkers'],
+    ['trials', '📋 Clinical Trials'],
+    ['cross-disease', '🌐 Cross-Disease'],
+    ['synergy', '🔗 Drug Synergy'],
+    ['safety', '🛡️ Safety Scores'],
+    ['expression', '🧬 Expression'],
+    ['ml', '🧠 ML Predictions'],
+    ['screening', '🔬 Screening'],
+    ['network', '🌐 Network'],
+    ['literature', '📚 Literature'],
+];
+
+async function loadExportGrid() {
+    const grid = document.getElementById('export-grid');
+    if (!grid) return;
+    let items = EXPORT_MODULES;
+    try {
+        const info = await apiFetch('/api/export/modules');
+        if (info && info.modules) {
+            const avail = new Set(info.modules.filter(m => m.available).map(m => m.module));
+            items = items.map(([mod, label]) => [mod, label, avail.has(mod)]);
+        }
+    } catch {
+        items = items.map(([mod, label]) => [mod, label, true]);
+    }
+
+    grid.innerHTML = items.map(([mod, label, available]) => `
+        <div class="export-item ${available ? '' : 'unavailable'}" title="${available ? `Export ${label}` : 'Run this module first to generate results'}">
+            <span class="export-label">${label}</span>
+            <div class="export-actions">
+                <a href="/api/export/json/${mod}" class="btn btn-secondary btn-sm">⬇ JSON</a>
+                <a href="/api/export/report/${mod}" class="btn btn-secondary btn-sm" target="_blank">📄 HTML</a>
+            </div>
+        </div>`).join('');
 }
 
 // ── Init ─────────────────────────────────────────────────────────────────
@@ -632,6 +1133,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     checkAPIStatus();
     loadPlatformStats();
+    initKGExplorer();
+    loadExportGrid();
 
     setInterval(checkAPIStatus, 30000);
     setInterval(loadPlatformStats, 60000);

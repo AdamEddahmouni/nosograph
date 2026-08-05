@@ -21,6 +21,11 @@
                 <select id="disease-selector" class="nav-select" onchange="onDiseaseChange(this.value)">
                     <option value="sle">SLE (Lupus)</option>
                     <option value="ra">RA (Rheumatoid Arthritis)</option>
+                    <option value="ibd">IBD (Crohn's / Colitis)</option>
+                    <option value="ms">MS (Multiple Sclerosis)</option>
+                    <option value="ss">SS (Sjögren's)</option>
+                    <option value="ssc">SSc (Systemic Sclerosis)</option>
+                    <option value="t1d">T1D (Type 1 Diabetes)</option>
                 </select>
                 <a href="#modules" class="nav-link">Modules</a>
                 <a href="#jobs" class="nav-link" id="jobs-tab">Jobs <span id="job-count" class="job-badge hidden">0</span></a>
@@ -114,7 +119,7 @@
                     </div>
                     <div class="actions">
                         <button class="btn btn-primary" onclick="runModule('kg')">🔍 Query Graph</button>
-                        <a href="/knowledge_graph/web/index.html" class="btn btn-secondary">🕸️ Visualize</a>
+                        <button class="btn btn-secondary" onclick="scrollToExplorer()">🕸️ Explore Graph</button>
                     </div>
                     <div class="module-result" id="result-kg"></div>
                 </div>
@@ -548,11 +553,55 @@
                 </div>
             </div>
 
+            <!-- ── Knowledge Graph Explorer ─────────────────────────── -->
+            <h2 class="section-title" id="kg-explorer">
+                <span>🕸️</span> Knowledge Graph Explorer
+            </h2>
+
+            <div class="kg-explorer">
+                <div class="kg-toolbar">
+                    <input type="search" id="kg-search" class="kg-search" placeholder="Search nodes (e.g. TLR7, JAK1, belimumab)…" autocomplete="off">
+                    <div class="kg-filters">
+                        <label class="kg-filter"><input type="checkbox" data-type="gene" checked> <span class="dot" style="background:#4ade80;"></span> Genes</label>
+                        <label class="kg-filter"><input type="checkbox" data-type="drug" checked> <span class="dot" style="background:#60a5fa;"></span> Drugs</label>
+                        <label class="kg-filter"><input type="checkbox" data-type="pathway" checked> <span class="dot" style="background:#f59e0b;"></span> Pathways</label>
+                        <label class="kg-filter"><input type="checkbox" data-type="disease" checked> <span class="dot" style="background:#f43f5e;"></span> Diseases</label>
+                    </div>
+                    <button class="btn btn-secondary" id="kg-reset" onclick="resetKGExplorer()">🔄 Reset Layout</button>
+                </div>
+                <div class="kg-body">
+                    <div id="kg-canvas" class="kg-canvas">
+                        <div class="kg-loading">
+                            <span class="spinner"></span> Loading knowledge graph…
+                        </div>
+                    </div>
+                    <aside class="kg-detail" id="kg-detail">
+                        <div class="kg-detail-placeholder">
+                            <div style="font-size:2rem;margin-bottom:8px;">🕸️</div>
+                            <p>Select a node to inspect its drugs, pathways, and connections.</p>
+                        </div>
+                    </aside>
+                </div>
+                <div class="kg-stats-bar" id="kg-stats-bar"></div>
+            </div>
+
             <!-- ── Job Queue ─────────────────────────────────────────── -->
             <h2 class="section-title" id="jobs" style="display:none;">
                 <span>📋</span> Job Queue <span id="jobs-header-count" class="job-badge" style="margin-left:8px;">0</span>
             </h2>
             <div id="job-queue" class="job-queue" style="display:none;"></div>
+
+            <!-- ── Data Export ──────────────────────────────────────── -->
+            <h2 class="section-title" id="export">
+                <span>📦</span> Data & Report Export
+            </h2>
+            <div class="cd-card" id="export-card">
+                <p style="color:var(--text-muted);font-size:0.82rem;margin-bottom:14px;">
+                    Download the latest computed results as JSON (machine-readable) or grab the rendered
+                    HTML report. JSON exports work whenever a module has been run at least once.
+                </p>
+                <div class="export-grid" id="export-grid"></div>
+            </div>
 
             <!-- ── Quick Start ───────────────────────────────────────── -->
             <h2 class="section-title"><span>🚀</span> Quick Start</h2>
@@ -606,6 +655,7 @@
 
     </div>
 
+    <script src="/lib/vis-9.1.2/vis-network.min.js"></script>
     <script src="/js/dashboard.js"></script>
 </body>
 </html>

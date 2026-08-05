@@ -7,12 +7,12 @@ from pathlib import Path
 from med_research.pipeline.knowledge_graph.config import load_drugs, load_genes, load_pathways
 
 
-@lru_cache(maxsize=1)
-def get_knowledge_graph():
-    """Load the knowledge graph once and cache it in memory."""
+@lru_cache(maxsize=16)
+def get_knowledge_graph(disease_id: str = "sle"):
+    """Load a disease-specific knowledge graph and cache it in memory."""
     from med_research.pipeline.knowledge_graph.builder import build_graph
 
-    return build_graph()
+    return build_graph(disease_id)
 
 
 @lru_cache(maxsize=1)

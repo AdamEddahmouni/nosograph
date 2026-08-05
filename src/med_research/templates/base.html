@@ -118,6 +118,29 @@
         }
 
         {% block extra_css %}{% endblock %}
+
+        /* ── Print / PDF export ─────────────────────────────────── */
+        @media print {
+            * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            body { background: #ffffff !important; color: #111827 !important; }
+            .hero, .container, .table-container, .stat-card, .match-card,
+            .hit-card, .chart-card, .methodology, .method-card, .vina-box,
+            .target-section, .kg-explorer, .cd-card {
+                background: #ffffff !important; color: #111827 !important;
+                border-color: #d1d5db !important; box-shadow: none !important;
+            }
+            h1, h2, h3, h4, th { color: #111827 !important; }
+            .subtitle, .muted, footer, .stat-label, .hit-count, .target-category,
+            .target-mean, .vina-note, .rel-desc { color: #4b5563 !important; }
+            table { border-collapse: collapse; width: 100%; }
+            th { background: #f3f4f6 !important; }
+            td, th { border: 1px solid #d1d5db !important; }
+            a { color: #2563eb !important; text-decoration: none; }
+            .stat-card, .match-card, .hit-card { break-inside: avoid; }
+            .section-title { border-bottom-color: #d1d5db !important; }
+            footer { border-top-color: #d1d5db !important; }
+            @page { margin: 1.5cm; }
+        }
     </style>
 </head>
 <body>
