@@ -80,13 +80,13 @@
 {% endblock %}
 
 {% block content %}
-{{ stats_cards }}
+{{ stats_cards | safe }}
 
-{{ enrichment_html }}
+{{ enrichment_html | safe }}
 
-{{ ppi_html }}
+{{ ppi_html | safe }}
 
-{{ gwas_html }}
+{{ gwas_html | safe }}
 {% endblock %}
 
 {% block footer_text %}

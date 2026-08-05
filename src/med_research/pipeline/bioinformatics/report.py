@@ -18,6 +18,8 @@ import os
 from datetime import datetime
 from pathlib import Path
 
+from med_research.templates import env as template_env
+
 try:
     import matplotlib
 
@@ -72,189 +74,14 @@ def generate_bioinformatics_report(
         gwas_results, gwas_crossref,
     )
 
-    html = f"""<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lupus Bioinformatics Report</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        :root {{
-            --text-muted: #787890;
-        }}
-        * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-        body {{
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
-            background: #0a0a0f; color: #e0e0e8; line-height: 1.6;
-        }}
-        .container {{ max-width: 1300px; margin: 0 auto; padding: 24px; }}
-
-        .hero {{
-            background: linear-gradient(135deg, #0f1729, #1a1025, #0f1729);
-            border: 1px solid #252535; border-radius: 16px;
-            padding: 40px; margin-bottom: 32px; text-align: center;
-        }}
-        .hero h1 {{
-            font-size: 2rem; font-weight: 800;
-            background: linear-gradient(135deg, #34d399, #22d3ee, #818cf8);
-            -webkit-background-clip: text; background-clip: text;
-            -webkit-text-fill-color: transparent; margin-bottom: 8px;
-        }}
-        .hero .subtitle {{ color: #787890; font-size: 0.95rem; }}
-        .hero .date {{ color: #787890; font-size: 0.78rem; margin-top: 8px; }}
-
-        .stats-grid {{
-            display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-            gap: 14px; margin-bottom: 32px;
-        }}
-        .stat-card {{
-            background: #13131a; border: 1px solid #252535;
-            border-radius: 12px; padding: 20px; text-align: center;
-        }}
-        .stat-card .stat-value {{ font-size: 1.8rem; font-weight: 800; }}
-        .stat-card .stat-label {{ color: #787890; font-size: 0.75rem; margin-top: 4px; }}
-
-        .section-title {{
-            font-size: 1.25rem; font-weight: 700; margin: 32px 0 14px;
-            padding-bottom: 8px; border-bottom: 1px solid #252535;
-            display: flex; align-items: center; gap: 8px;
-        }}
-
-        /* Tables */
-        .table-container {{
-            overflow-x: auto; background: #13131a;
-            border: 1px solid #252535; border-radius: 12px; margin-bottom: 28px;
-        }}
-        table {{ width: 100%; border-collapse: collapse; font-size: 0.84rem; }}
-        th {{
-            text-align: left; padding: 12px 14px; background: #1a1a24;
-            color: #787890; font-weight: 600; font-size: 0.72rem;
-            text-transform: uppercase; letter-spacing: 0.04em;
-            border-bottom: 1px solid #252535;
-        }}
-        td {{ padding: 10px 14px; border-bottom: 1px solid #1a1a24; }}
-        tr:hover td {{ background: rgba(52, 211, 153, 0.03); }}
-        .muted {{ color: #787890; font-size: 0.78rem; }}
-
-        /* Badges */
-        .badge {{
-            display: inline-block; padding: 2px 8px; border-radius: 12px;
-            font-size: 0.7rem; font-weight: 600; letter-spacing: 0.02em;
-        }}
-        .badge-green {{ background: rgba(74,222,128,0.15); color: #4ade80; }}
-        .badge-yellow {{ background: rgba(251,191,36,0.15); color: #fbbf24; }}
-        .badge-blue {{ background: rgba(129,140,248,0.15); color: #818cf8; }}
-        .badge-purple {{ background: rgba(192,132,252,0.15); color: #c084fc; }}
-        .badge-red {{ background: rgba(248,113,113,0.15); color: #f87171; }}
-        .badge-cyan {{ background: rgba(34,211,238,0.15); color: #22d3ee; }}
-
-        /* Enrichment plot */
-        .enrichment-plot {{
-            background: #13131a; border: 1px solid #252535;
-            border-radius: 12px; padding: 20px; margin-bottom: 20px;
-            text-align: center;
-        }}
-
-        /* Enrichment cards */
-        .enrichment-libraries {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); gap: 16px; margin-bottom: 24px; }}
-        .enrichment-card {{
-            background: #13131a; border: 1px solid #252535;
-            border-radius: 10px; overflow: hidden;
-        }}
-        .enrichment-card-header {{
-            padding: 14px 18px; background: #1a1a24;
-            border-bottom: 1px solid #252535;
-            font-weight: 600; font-size: 0.88rem;
-            display: flex; justify-content: space-between; align-items: center;
-        }}
-        .enrichment-term {{
-            padding: 10px 18px; border-bottom: 1px solid #1a1a24;
-            font-size: 0.82rem; display: flex; justify-content: space-between;
-            align-items: center; gap: 12px;
-        }}
-        .enrichment-term:last-child {{ border-bottom: none; }}
-        .term-name {{ flex: 1; }}
-        .term-genes {{ color: var(--text-muted); font-size: 0.72rem; }}
-
-        /* KG matches */
-        .match-card {{
-            background: #13131a; border: 1px solid #252535;
-            border-radius: 8px; padding: 14px 18px; margin-bottom: 8px;
-            display: flex; gap: 16px; align-items: center;
-        }}
-        .match-arrow {{ color: #34d399; font-size: 1.2rem; }}
-
-        /* Hub cards */
-        .hub-grid {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 12px; margin-bottom: 24px; }}
-        .hub-card {{
-            background: #13131a; border: 1px solid #252535;
-            border-radius: 10px; padding: 16px; transition: border-color 0.2s;
-        }}
-        .hub-card:hover {{ border-color: #4b5563; }}
-        .hub-card.lupus {{ border-left: 3px solid #4ade80; }}
-        .hub-card.nonlupus {{ border-left: 3px solid #818cf8; }}
-        .hub-header {{ display: flex; justify-content: space-between; margin-bottom: 8px; }}
-        .hub-symbol {{ font-weight: 700; font-size: 0.95rem; }}
-        .hub-score {{ font-weight: 700; font-size: 0.9rem; }}
-        .hub-meta {{ font-size: 0.75rem; color: #787890; display: flex; gap: 16px; }}
-        .hub-candidates {{ margin-top: 8px; font-size: 0.76rem; }}
-
-        /* GWAS */
-        .gwas-grid {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 12px; margin-bottom: 24px; }}
-        .gwas-card {{
-            background: #13131a; border: 1px solid #252535;
-            border-radius: 10px; padding: 16px;
-        }}
-        .gwas-card.validated {{ border-left: 3px solid #4ade80; }}
-        .gwas-card.novel {{ border-left: 3px solid #fbbf24; }}
-        .gwas-card.missing {{ border-left: 3px solid #f87171; }}
-
-        footer {{ text-align: center; padding: 40px; color: #787890; font-size: 0.75rem; }}
-        footer a {{ color: #818cf8; }}
-
-        @media (max-width: 768px) {{
-            .stats-grid {{ grid-template-columns: repeat(2, 1fr); }}
-            .enrichment-libraries {{ grid-template-columns: 1fr; }}
-            .hero {{ padding: 24px; }}
-            .hero h1 {{ font-size: 1.4rem; }}
-        }}
-    </style>
-</head>
-<body>
-    <div class="container">
-
-        <div class="hero">
-            <h1>🔬 Lupus Bioinformatics Report</h1>
-            <p class="subtitle">
-                Integrative Analysis: Pathway Enrichment · Protein-Protein Interactions · GWAS Annotation
-            </p>
-            <p class="date">Generated: {datetime.now().strftime('%B %d, %Y at %H:%M')}</p>
-        </div>
-
-        {stats_cards}
-
-        {enrichment_html}
-
-        {ppi_html}
-
-        {gwas_html}
-
-        <footer>
-            <p>Lupus Bioinformatics Platform · Powered by GSEApy, STRING, and NHGRI-EBI GWAS Catalog</p>
-            <p>
-                <a href="../knowledge_graph/web/index.html">Knowledge Graph</a> ·
-                <a href="../drug_repurposing/report.html">Drug Repurposing Report</a> ·
-                <a href="../literature_mining/literature_report.html">Literature Mining Report</a>
-            </p>
-            <p style="margin-top:8px;color:#6b7280;">
-                Disclaimer: Computational predictions. All findings require experimental validation.
-            </p>
-        </footer>
-    </div>
-</body>
-</html>"""
+    # ── Assemble HTML via shared Jinja2 template ──────────────────────────
+    html = template_env.get_template("reports/bioinformatics.html").render(
+        stats_cards=stats_cards,
+        enrichment_html=enrichment_html,
+        ppi_html=ppi_html,
+        gwas_html=gwas_html,
+        generated_at=datetime.now().strftime("%B %d, %Y at %H:%M"),
+    )
 
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(html)

@@ -12,6 +12,7 @@ Usage:
 """
 
 import json
+import logging
 from pathlib import Path
 from typing import Optional
 
@@ -19,6 +20,7 @@ import requests
 
 from med_research.rate_limiter import rate_limited_sleep
 
+logger = logging.getLogger(__name__)
 GEO_DATA_DIR = Path(__file__).parent / "data"
 CACHE_DIR = GEO_DATA_DIR / "geo_cache"
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
@@ -130,7 +132,7 @@ def search_geo_datasets(disease: str = "sle", category: str = "broad",
         resp.raise_for_status()
         id_list = resp.json().get("esearchresult", {}).get("idlist", [])
     except Exception as e:
-        print(f"  [GEO] Search failed for {category}: {e}")
+        logger.info(f"  [GEO] Search failed for {category}: {e}")
         return []
 
     if not id_list:
@@ -173,7 +175,7 @@ def search_geo_datasets(disease: str = "sle", category: str = "broad",
                 "tissue_category": category,
             })
     except Exception as e:
-        print(f"  [GEO] Summary failed: {e}")
+        logger.info(f"  [GEO] Summary failed: {e}")
         return []
 
     cache_file.write_text(json.dumps(studies, indent=2))
@@ -198,7 +200,7 @@ def get_study_metadata(accession: str) -> Optional[dict]:
         if not id_list:
             return None
     except Exception as e:
-        print(f"  [GEO] Study search failed for {accession}: {e}")
+        logger.info(f"  [GEO] Study search failed for {accession}: {e}")
         return None
 
     rate_limited_sleep(0.4)
@@ -239,7 +241,7 @@ def get_study_metadata(accession: str) -> Optional[dict]:
         cache_file.write_text(json.dumps(metadata, indent=2))
         return metadata
     except Exception as e:
-        print(f"  [GEO] Study summary failed for {accession}: {e}")
+        logger.info(f"  [GEO] Study summary failed for {accession}: {e}")
         return None
 
 

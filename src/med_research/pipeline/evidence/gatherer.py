@@ -19,6 +19,7 @@ Usage:
 
 import argparse
 import json
+import logging
 import sys
 import time
 import urllib.error
@@ -27,6 +28,7 @@ import urllib.request
 from datetime import datetime
 from pathlib import Path
 
+logger = logging.getLogger(__name__)
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 if sys.platform == "win32":
@@ -60,7 +62,7 @@ def api_get(url: str, timeout: int = 15) -> dict | None:
         with urllib.request.urlopen(req, timeout=timeout) as resp:
             return json.loads(resp.read().decode("utf-8"))
     except (urllib.error.URLError, urllib.error.HTTPError, json.JSONDecodeError) as e:
-        print(f"  ⚠️  API error ({url[:80]}...): {e}")
+        logger.info(f"  ⚠️  API error ({url[:80]}...): {e}")
         return None
 
 
@@ -100,7 +102,7 @@ def search_europe_pmc(query: str, source: str, max_results: int = 20, use_cache:
     cache = load_cache()
     key = _cache_key(query, source, max_results)
     if use_cache and key in cache:
-        print(f"  📦 Using cached {source} results ({len(cache[key])} items)")
+        logger.info(f"  📦 Using cached {source} results ({len(cache[key])} items)")
         return cache[key]
 
     # Build query with source filter
@@ -120,7 +122,7 @@ def search_europe_pmc(query: str, source: str, max_results: int = 20, use_cache:
     })
     url = f"{EUROPE_PMC_URL}?{params}"
 
-    print(f"  🔎 Searching {source} via Europe PMC...")
+    logger.info(f"  🔎 Searching {source} via Europe PMC...")
     data = api_get(url)
     if not data:
         return []
@@ -163,11 +165,11 @@ def search_clinical_trials(query: str, max_results: int = 20) -> list:
 
     Uses the existing clinical_trials/data/ct_results.json file.
     """
-    print("  🔎 Searching clinical trials...")
+    logger.info("  🔎 Searching clinical trials...")
     try:
         ct_data = load_json(Path("clinical_trials/data/ct_results.json"))
     except (FileNotFoundError, json.JSONDecodeError):
-        print("  ⚠️  No clinical trial cache found. Run 'python main.py trials' first.")
+        logger.info("  ⚠️  No clinical trial cache found. Run 'python main.py trials' first.")
         return []
 
     trials = ct_data.get("studies", [])
@@ -219,10 +221,10 @@ def search_fda_labels(query: str, max_results: int = 20, use_cache: bool = True)
     cache = load_cache()
     key = _cache_key(query, "fda_labels", max_results)
     if use_cache and key in cache:
-        print(f"  📦 Using cached FDA label results ({len(cache[key])} items)")
+        logger.info(f"  📦 Using cached FDA label results ({len(cache[key])} items)")
         return cache[key]
 
-    print("  🔎 Searching FDA labels via DailyMed...")
+    logger.info("  🔎 Searching FDA labels via DailyMed...")
     params = urllib.parse.urlencode({
         "searchterms": query,
         "pagesize": min(max_results, 50),
@@ -303,17 +305,17 @@ def gather_evidence(
         if src in ("pubmed", "preprints", "patents"):
             results = search_europe_pmc(query, src, max_per_source, use_cache)
             all_results.extend(results)
-            print(f"     → {len(results)} {src} results")
+            logger.info(f"     → {len(results)} {src} results")
 
         elif src == "clinical_trials":
             results = search_clinical_trials(query, max_per_source)
             all_results.extend(results)
-            print(f"     → {len(results)} clinical trial results")
+            logger.info(f"     → {len(results)} clinical trial results")
 
         elif src == "fda_labels":
             results = search_fda_labels(query, max_per_source, use_cache)
             all_results.extend(results)
-            print(f"     → {len(results)} FDA label results")
+            logger.info(f"     → {len(results)} FDA label results")
 
     # Sort all results: mix of recency + citation weight
     def _sort_key(r):

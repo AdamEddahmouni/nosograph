@@ -15,16 +15,16 @@ Usage:
 
 import argparse
 import json
+import logging
 import os
 import sys
-from pathlib import Path
-
-from med_research.rate_limiter import rate_limited_sleep
 from collections import defaultdict
 from pathlib import Path
 
 from med_research.pipeline.knowledge_graph.config import load_genes as config_load_genes
+from med_research.rate_limiter import rate_limited_sleep
 
+logger = logging.getLogger(__name__)
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
@@ -64,13 +64,13 @@ def search_gwas_studies(
     Returns list of study dicts with: study_id, title, pubmed_id, etc.
     """
     if not REQUESTS_AVAILABLE:
-        print("❌ requests required. Install: pip install requests")
+        logger.info("❌ requests required. Install: pip install requests")
         return []
 
     studies = []
     page = 0
 
-    print(f"\n🔄 Searching GWAS Catalog for: {query}")
+    logger.info(f"\n🔄 Searching GWAS Catalog for: {query}")
 
     while len(studies) < max_results:
         params = {
@@ -99,10 +99,10 @@ def search_gwas_studies(
             rate_limited_sleep(0.5)
 
         except Exception as e:
-            print(f"   ⚠️  GWAS search error: {e}")
+            logger.info(f"   ⚠️  GWAS search error: {e}")
             break
 
-    print(f"   Found {len(studies)} studies")
+    logger.info(f"   Found {len(studies)} studies")
     return studies
 
 
@@ -126,13 +126,13 @@ def fetch_study_associations(study_accession: str) -> list:
 
     except requests.exceptions.HTTPError as e:
         if e.response is not None and e.response.status_code == 404:
-            print(f"   ⚠️  No associations found for study {study_accession} (404)")
+            logger.info(f"   ⚠️  No associations found for study {study_accession} (404)")
         else:
-            print(f"   ⚠️  HTTP error fetching associations for {study_accession}: {e}")
+            logger.info(f"   ⚠️  HTTP error fetching associations for {study_accession}: {e}")
     except (requests.exceptions.ConnectionError, requests.exceptions.Timeout) as e:
-        print(f"   ⚠️  Connection/timeout fetching associations for {study_accession}: {e}")
+        logger.info(f"   ⚠️  Connection/timeout fetching associations for {study_accession}: {e}")
     except Exception as e:
-        print(f"   ⚠️  Unexpected error fetching associations for {study_accession}: {e}")
+        logger.info(f"   ⚠️  Unexpected error fetching associations for {study_accession}: {e}")
 
     rate_limited_sleep(0.5)
     return associations
@@ -154,7 +154,7 @@ def _resolve_snp_details(rsids: set) -> dict:
     if not unresolved:
         return {r: snp_cache.get(r, {"genes": [], "chromosome": "", "position": 0}) for r in rsids}
 
-    print(f"   🔬 Resolving {len(unresolved)} unique SNPs to genes + locations...")
+    logger.info(f"   🔬 Resolving {len(unresolved)} unique SNPs to genes + locations...")
     resolved = 0
 
     for i, rsid in enumerate(unresolved):
@@ -189,15 +189,15 @@ def _resolve_snp_details(rsids: set) -> dict:
             else:
                 snp_cache[rsid] = {"genes": [], "chromosome": "", "position": 0}
         except Exception as e:
-            print(f"   ⚠️  Error resolving SNP {rsid}: {e}")
+            logger.info(f"   ⚠️  Error resolving SNP {rsid}: {e}")
             snp_cache[rsid] = {"genes": [], "chromosome": "", "position": 0}
 
         if (i + 1) % 20 == 0 or i == len(unresolved) - 1:
-            print(f"      [{i+1}/{len(unresolved)}] {resolved} SNPs mapped")
+            logger.info(f"      [{i+1}/{len(unresolved)}] {resolved} SNPs mapped")
 
         rate_limited_sleep(0.3)
 
-    print(f"   ✅ Resolved {resolved}/{len(unresolved)} SNPs")
+    logger.info(f"   ✅ Resolved {resolved}/{len(unresolved)} SNPs")
     return {r: snp_cache.get(r, {"genes": [], "chromosome": "", "position": 0}) for r in rsids}
 
 
@@ -233,7 +233,7 @@ def extract_gene_associations(
         title = study.get("title", "Unknown")
         pubmed_id = study.get("publicationInfo", {}).get("pubmedId", "")
 
-        print(f"   [{i+1}/{min(len(studies), max_studies)}] {title[:80]}...")
+        logger.info(f"   [{i+1}/{min(len(studies), max_studies)}] {title[:80]}...")
 
         raw_associations = fetch_study_associations(accession)
         if raw_associations:
@@ -254,7 +254,7 @@ def extract_gene_associations(
                     try:
                         p_val = float(mantissa) * (10 ** int(exponent))
                     except (ValueError, TypeError):
-                        print(f"   ⚠️  Could not parse p-value for association: mantissa={mantissa}, exponent={exponent}")
+                        logger.info(f"   ⚠️  Could not parse p-value for association: mantissa={mantissa}, exponent={exponent}")
 
                 # Collect rsIDs from all loci
                 rsids = []
@@ -300,7 +300,7 @@ def extract_gene_associations(
     # ── Resolve SNPs to genes + locations ────────────────────────────
     snp_details = {}
     if resolve_snps and all_rsids:
-        print(f"\n   🧬 Collected {len(all_rsids)} unique SNP rsIDs across all studies")
+        logger.info(f"\n   🧬 Collected {len(all_rsids)} unique SNP rsIDs across all studies")
         snp_details = _resolve_snp_details(all_rsids)
 
         # Map resolved genes back to study/gene tracking

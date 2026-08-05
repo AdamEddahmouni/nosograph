@@ -1,4 +1,4 @@
-.PHONY: help test test-quiet test-cov lint lint-fix check-imports run-all kg repurpose bio literature docker-build docker-up docker-test clean install
+.PHONY: help test test-quiet test-unit test-integration test-cov lint lint-fix check-imports run-all kg repurpose bio literature docker-build docker-up docker-test clean install
 
 help:  ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | \
@@ -16,6 +16,12 @@ test:  ## Run all tests (verbose)
 
 test-quiet:  ## Run all tests (quiet)
 	python -m pytest tests/ -q --tb=line
+
+test-unit:  ## Run unit tests only (fast, offline)
+	python -m pytest tests/ -m "unit" -q --tb=line
+
+test-integration:  ## Run integration/slow tests (may hit external APIs)
+	python -m pytest tests/ -m "integration or slow" -v --tb=short
 
 test-cov:  ## Run tests with coverage
 	python -m pytest tests/ --cov=src/med_research --cov-report=term-missing

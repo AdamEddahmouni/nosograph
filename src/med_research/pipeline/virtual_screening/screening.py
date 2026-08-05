@@ -43,9 +43,12 @@ if sys.platform == "win32":
 PROJECT_ROOT = Path(__file__).parent.parent
 DATA_DIR = Path(__file__).parent / "data"
 
+import logging
+
 from med_research.pipeline.knowledge_graph.config import load_drugs as config_load_drugs
 from med_research.pipeline.knowledge_graph.config import load_genes as config_load_genes
 
+logger = logging.getLogger(__name__)
 # ── Optional RDKit / AutoDock Vina detection ────────────────────────────
 
 RDKIT_AVAILABLE = False
@@ -480,7 +483,7 @@ def run_autodock_vina(
         }
 
     except (subprocess.TimeoutExpired, FileNotFoundError, Exception) as e:
-        print(f"   ⚠️  Vina docking error: {e}")
+        logger.info(f"   ⚠️  Vina docking error: {e}")
         return {}
 
 
@@ -587,7 +590,7 @@ def screen_compounds(
                 scored_compounds.sort(key=lambda x: x["composite_score"], reverse=True)
                 top_for_docking = scored_compounds[:min(5, len(scored_compounds))]
 
-                print(f"   🧬 Running Vina docking for {gene_info.get('name', gene_id)} "
+                logger.info(f"   🧬 Running Vina docking for {gene_info.get('name', gene_id)} "
                       f"({len(top_for_docking)} top compounds)...")
 
                 # Prepare receptor and ligands on-demand
@@ -700,7 +703,7 @@ def get_untargeted_genes() -> list:
 
         return untargeted
     except Exception as e:
-        print(f"⚠️  Could not load KG for untargeted gene detection: {e}")
+        logger.info(f"⚠️  Could not load KG for untargeted gene detection: {e}")
         return []
 
 

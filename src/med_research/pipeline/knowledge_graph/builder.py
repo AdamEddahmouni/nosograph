@@ -13,6 +13,7 @@ Usage:
 
 import argparse
 import json
+import logging
 import os
 import sys
 from collections import defaultdict
@@ -20,6 +21,7 @@ from pathlib import Path
 
 import networkx as nx
 
+logger = logging.getLogger(__name__)
 from med_research.pipeline.knowledge_graph.config import (
     get_disease_profile,
     list_diseases,
@@ -247,9 +249,9 @@ def export_for_web(G: nx.MultiDiGraph, output_path: str = None, disease_id: str 
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2)
 
-    print(f"Graph exported to {output_path}")
-    print(f"   Nodes: {sum(1 for e in elements if 'source' not in e['data'])}")
-    print(f"   Edges: {sum(1 for e in elements if 'source' in e['data'])}")
+    logger.info(f"Graph exported to {output_path}")
+    logger.info(f"   Nodes: {sum(1 for e in elements if 'source' not in e['data'])}")
+    logger.info(f"   Edges: {sum(1 for e in elements if 'source' in e['data'])}")
 
     return output
 

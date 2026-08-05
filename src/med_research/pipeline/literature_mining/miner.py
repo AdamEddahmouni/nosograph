@@ -26,13 +26,17 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
+import logging
+
+logger = logging.getLogger(__name__)
+
 try:
     from Bio import Entrez, Medline
 
     BIOPYTHON_AVAILABLE = True
 except ImportError:
     BIOPYTHON_AVAILABLE = False
-    print(
+    logger.info(
         "⚠️  BioPython not installed. Install with: pip install biopython"
     )
 
@@ -47,7 +51,7 @@ DATA_DIR = Path(__file__).parent / "data"
 DEFAULT_EMAIL = os.environ.get("ENTREZ_EMAIL")
 if DEFAULT_EMAIL is None:
     DEFAULT_EMAIL = "researcher@example.com"
-    print("⚠️  ENTREZ_EMAIL not set; using placeholder. NCBI requires a real email. Set ENTREZ_EMAIL env var.")
+    logger.info("⚠️  ENTREZ_EMAIL not set; using placeholder. NCBI requires a real email. Set ENTREZ_EMAIL env var.")
 
 # ── PubMed queries for SLE/lupus ──────────────────────────────────────────
 
@@ -112,7 +116,7 @@ def search_pubmed(
     Handles rate limiting (3 req/sec without API key) automatically.
     """
     if not BIOPYTHON_AVAILABLE:
-        print("❌ BioPython required. Install: pip install biopython")
+        logger.info("❌ BioPython required. Install: pip install biopython")
         return []
 
     Entrez.email = email
@@ -129,7 +133,7 @@ def search_pubmed(
         if not id_list:
             return []
 
-        print(f"   Found {record['Count']} total, retrieving {len(id_list)}...")
+        logger.info(f"   Found {record['Count']} total, retrieving {len(id_list)}...")
 
         # Rate limiting
         rate_limited_sleep(0.4)
@@ -161,7 +165,7 @@ def search_pubmed(
         return articles
 
     except Exception as e:
-        print(f"   ❌ PubMed query error: {e}")
+        logger.info(f"   ❌ PubMed query error: {e}")
         return []
 
 
@@ -191,29 +195,29 @@ def mine_literature(
         queries = list(DEFAULT_QUERIES)
 
     # Load KG entities and candidates
-    print("🔄 Loading knowledge graph entities...")
+    logger.info("🔄 Loading knowledge graph entities...")
     entities = load_kg_entities()
-    print(
+    logger.info(
         f"   Loaded {len(entities['genes'])} genes, {len(entities['drugs'])} drugs, "
         f"{len(entities['pathways'])} pathways"
     )
 
-    print("🔄 Loading repurposing candidates...")
+    logger.info("🔄 Loading repurposing candidates...")
     candidates = load_repurposing_candidates()
-    print(f"   Loaded {len(candidates)} candidates")
+    logger.info(f"   Loaded {len(candidates)} candidates")
 
     # Generate per-candidate queries if requested
     candidate_queries = []
     if targeted_candidates:
         candidate_queries = generate_candidate_queries(candidates)
-        print(f"   Generated {len(candidate_queries)} per-candidate queries")
+        logger.info(f"   Generated {len(candidate_queries)} per-candidate queries")
 
     # Check cache (skip if using targeted queries, since they're per-drug)
     cache_path = DATA_DIR / "pubmed_cache.json"
     if use_cache and cache_path.exists() and not targeted_candidates:
-        print("📦 Loading from PubMed cache...")
+        logger.info("📦 Loading from PubMed cache...")
         all_articles = json.loads(cache_path.read_text(encoding="utf-8"))
-        print(f"   Loaded {len(all_articles)} cached articles")
+        logger.info(f"   Loaded {len(all_articles)} cached articles")
     else:
         # Search PubMed
         all_articles = []
@@ -221,7 +225,7 @@ def mine_literature(
 
         # ── Broad queries ────────────────────────────────────────────
         for i, query in enumerate(queries, 1):
-            print(f"\n🔍 Broad query {i}/{len(queries)}: {query[:100]}...")
+            logger.info(f"\n🔍 Broad query {i}/{len(queries)}: {query[:100]}...")
             articles = search_pubmed(query, max_results=max_per_query, email=email)
 
             new_count = 0
@@ -231,12 +235,12 @@ def mine_literature(
                     all_articles.append(article)
                     new_count += 1
 
-            print(f"   ✅ {new_count} new unique articles")
+            logger.info(f"   ✅ {new_count} new unique articles")
             rate_limited_sleep(0.5)
 
         # ── Per-candidate targeted queries ───────────────────────────
         if candidate_queries:
-            print(f"\n🎯 Running {len(candidate_queries)} per-candidate targeted queries...")
+            logger.info(f"\n🎯 Running {len(candidate_queries)} per-candidate targeted queries...")
             matches_found = 0
             for i, (cid, query, drug_label) in enumerate(candidate_queries, 1):
                 articles = search_pubmed(query, max_results=3, email=email)
@@ -250,10 +254,10 @@ def mine_literature(
 
                 if new_count > 0:
                     matches_found += 1
-                    print(f"      ✅ {drug_label[:55]} → {new_count} new articles")
+                    logger.info(f"      ✅ {drug_label[:55]} → {new_count} new articles")
 
                 if i % 15 == 0 or i == len(candidate_queries):
-                    print(
+                    logger.info(
                         f"   [{i}/{len(candidate_queries)}] "
                         f"{matches_found} candidates with new articles so far"
                     )
@@ -261,7 +265,7 @@ def mine_literature(
                 # Rate limiting — 3 req/sec max without API key
                 rate_limited_sleep(0.4)
 
-            print(f"   ✅ {matches_found}/{len(candidate_queries)} candidates returned articles")
+            logger.info(f"   ✅ {matches_found}/{len(candidate_queries)} candidates returned articles")
 
         # Save to cache
         os.makedirs(DATA_DIR, exist_ok=True)
@@ -269,16 +273,16 @@ def mine_literature(
             json.dumps(all_articles, indent=2, ensure_ascii=False),
             encoding="utf-8",
         )
-        print(f"\n💾 Cached {len(all_articles)} articles to {cache_path}")
+        logger.info(f"\n💾 Cached {len(all_articles)} articles to {cache_path}")
 
     # Cross-reference
-    print("\n🔄 Cross-referencing against knowledge graph...")
+    logger.info("\n🔄 Cross-referencing against knowledge graph...")
     results = cross_reference_articles(all_articles, entities, candidates)
 
     # ── Content extraction stats ──────────────────────────────────────
     extraction_stats = None
     if extract_content:
-        print("\n✂️  Content extraction: filtering abstracts to KG-relevant sentences...")
+        logger.info("\n✂️  Content extraction: filtering abstracts to KG-relevant sentences...")
         extractor = ContentExtractor()
         extractor.known_terms = extractor.build_terms_from_entities(entities)
         _, extraction_stats = extractor.filter_articles(all_articles)
@@ -290,7 +294,7 @@ def mine_literature(
             fa["abstract"] = extractor.filter_abstract(fa.get("abstract", ""))
             all_articles_filtered.append(fa)
 
-        print("🔄 Re-cross-referencing with filtered abstracts...")
+        logger.info("🔄 Re-cross-referencing with filtered abstracts...")
         results = cross_reference_articles(all_articles_filtered, entities, candidates)
         results["extraction_stats"] = extraction_stats
 

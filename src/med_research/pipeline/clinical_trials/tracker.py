@@ -25,9 +25,12 @@ from med_research.rate_limiter import rate_limited_sleep
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
+import logging
+
 from med_research.pipeline.knowledge_graph.config import load_drugs as config_load_drugs
 from med_research.pipeline.knowledge_graph.config import load_genes as config_load_genes
 
+logger = logging.getLogger(__name__)
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
@@ -82,7 +85,7 @@ def search_clinical_trials(query: str = "lupus OR SLE", max_results: int = 100) 
     Returns list of study dicts with protocolSection data.
     """
     if not REQUESTS_AVAILABLE:
-        print("❌ requests required. Install: pip install requests")
+        logger.info("❌ requests required. Install: pip install requests")
         return []
 
     all_studies = []
@@ -99,7 +102,7 @@ def search_clinical_trials(query: str = "lupus OR SLE", max_results: int = 100) 
         "StudyType"
     )
 
-    print(f"\n🔍 Searching ClinicalTrials.gov for: {query}")
+    logger.info(f"\n🔍 Searching ClinicalTrials.gov for: {query}")
 
     while len(all_studies) < max_results:
         params = {
@@ -118,7 +121,7 @@ def search_clinical_trials(query: str = "lupus OR SLE", max_results: int = 100) 
             resp.raise_for_status()
             data = resp.json()
         except Exception as e:
-            print(f"   ⚠️  API error: {e}")
+            logger.info(f"   ⚠️  API error: {e}")
             break
 
         studies = data.get("studies", [])
@@ -130,7 +133,7 @@ def search_clinical_trials(query: str = "lupus OR SLE", max_results: int = 100) 
 
         rate_limited_sleep(0.3)
 
-    print(f"   Found {len(all_studies)} interventional trials")
+    logger.info(f"   Found {len(all_studies)} interventional trials")
     return all_studies
 
 
@@ -326,9 +329,9 @@ def track_trials(
         dict with trials, stats, and kg_crossref data.
     """
     # Load KG
-    print("🔄 Loading knowledge graph entities...")
+    logger.info("🔄 Loading knowledge graph entities...")
     kg_entities = load_kg_entities()
-    print(f"   Loaded {len(kg_entities['genes'])} genes, {len(kg_entities['drugs'])} drugs")
+    logger.info(f"   Loaded {len(kg_entities['genes'])} genes, {len(kg_entities['drugs'])} drugs")
 
     # Check cache
     cache_path = DATA_DIR / "ct_cache.json"
@@ -339,7 +342,7 @@ def track_trials(
             cached = json.loads(cache_path.read_text(encoding="utf-8"))
             trials = cached.get("trials", [])
             if len(trials) >= max_results:
-                print(f"📦 Loading {len(trials)} trials from cache...")
+                logger.info(f"📦 Loading {len(trials)} trials from cache...")
                 kg_entities_simple = {"genes": kg_entities["genes"], "drugs": kg_entities["drugs"]}
                 if "kg_crossref" in cached and cached.get("kg_crossref"):
                     trials = [dict(t) for t in trials]
@@ -352,7 +355,7 @@ def track_trials(
                         "kg_crossref": cached.get("kg_crossref", {}),
                     }
         except (json.JSONDecodeError, KeyError) as e:
-            print(f"   ⚠️  Cache error ({e}), re-fetching...")
+            logger.info(f"   ⚠️  Cache error ({e}), re-fetching...")
 
     # Search trials
     raw_trials = search_clinical_trials(query, max_results)
@@ -365,7 +368,7 @@ def track_trials(
         trial["moa_category"] = categorize_moa(trial)
 
     # Cross-reference with KG
-    print("🔄 Cross-referencing against knowledge graph...")
+    logger.info("🔄 Cross-referencing against knowledge graph...")
     trials = cross_reference_trials(trials, kg_entities)
 
     # Compute stats
@@ -385,7 +388,7 @@ def track_trials(
         json.dumps(cache_data, indent=2, ensure_ascii=False, default=str),
         encoding="utf-8",
     )
-    print(f"💾 Cached {len(trials)} trials to {cache_path}")
+    logger.info(f"💾 Cached {len(trials)} trials to {cache_path}")
 
     return {"trials": trials, "stats": stats, "kg_crossref": kg_crossref}
 

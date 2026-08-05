@@ -22,8 +22,11 @@ import networkx as nx
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
+import logging
+
 from med_research.pipeline.knowledge_graph.config import load_genes, load_pathways
 
+logger = logging.getLogger(__name__)
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
@@ -37,7 +40,7 @@ try:
     GSEAPY_AVAILABLE = True
 except ImportError:
     GSEAPY_AVAILABLE = False
-    print(
+    logger.info(
         "⚠️  GSEApy not installed. Install with: pip install gseapy"
     )
 
@@ -136,7 +139,7 @@ def run_enrichment(
         libraries = list(GENE_SET_LIBRARIES)
 
     if not GSEAPY_AVAILABLE:
-        print("❌ GSEApy required. Install: pip install gseapy")
+        logger.info("❌ GSEApy required. Install: pip install gseapy")
         return {}
 
     symbols = [g["symbol"] for g in gene_list if g["symbol"]]
@@ -152,21 +155,21 @@ def run_enrichment(
                 and cached.get("libraries") == libraries
                 and cached.get("top_n") == top_n
             ):
-                print("📦 Loading enrichment results from cache...")
-                print(f"   Genes: {', '.join(symbols)}")
+                logger.info("📦 Loading enrichment results from cache...")
+                logger.info(f"   Genes: {', '.join(symbols)}")
                 return cached["results"]
             else:
-                print("   ⚠️  Cache key mismatch, re-running enrichment...")
+                logger.info("   ⚠️  Cache key mismatch, re-running enrichment...")
         except (json.JSONDecodeError, KeyError):
-            print("   ⚠️  Corrupt cache, re-running enrichment...")
+            logger.info("   ⚠️  Corrupt cache, re-running enrichment...")
 
-    print(f"\n🔄 Running enrichment analysis on {len(symbols)} genes...")
-    print(f"   Genes: {', '.join(symbols)}")
+    logger.info(f"\n🔄 Running enrichment analysis on {len(symbols)} genes...")
+    logger.info(f"   Genes: {', '.join(symbols)}")
 
     results = {}
     for library in libraries:
         lib_short = library.split("_")[0]
-        print(f"\n   📚 {library}...")
+        logger.info(f"\n   📚 {library}...")
 
         try:
             enr = gp.enrichr(
@@ -208,7 +211,7 @@ def run_enrichment(
                         if t["adj_p_value"] < 0.05
                     ]
                 )
-                print(
+                logger.info(
                     f"      {sig_count} significant terms (adj p < 0.05) "
                     f"out of {results[library]['total_significant']} total hits"
                 )
@@ -218,10 +221,10 @@ def run_enrichment(
                     "terms": [],
                     "total_significant": 0,
                 }
-                print("      No results returned")
+                logger.info("      No results returned")
 
         except Exception as e:
-            print(f"      ❌ Error: {e}")
+            logger.info(f"      ❌ Error: {e}")
             results[library] = {
                 "library": library,
                 "terms": [],
@@ -246,9 +249,9 @@ def run_enrichment(
             ),
             encoding="utf-8",
         )
-        print(f"\n💾 Cached enrichment results to {cache_path}")
+        logger.info(f"\n💾 Cached enrichment results to {cache_path}")
     except Exception as e:
-        print(f"   ⚠️  Cache write error: {e}")
+        logger.info(f"   ⚠️  Cache write error: {e}")
 
     return results
 

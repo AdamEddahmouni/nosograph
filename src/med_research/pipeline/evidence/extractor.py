@@ -37,8 +37,11 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
+import logging
+
 from med_research.pipeline.evidence.gatherer import gather_evidence
 
+logger = logging.getLogger(__name__)
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
@@ -128,7 +131,7 @@ def call_llm(
     model = model or DEFAULT_MODEL
 
     if not API_KEY:
-        print("  ⚠️  No OPENAI_API_KEY set. Set it to use LLM extraction.")
+        logger.info("  ⚠️  No OPENAI_API_KEY set. Set it to use LLM extraction.")
         return None
 
     url = f"{API_BASE.rstrip('/')}/chat/completions"
@@ -155,7 +158,7 @@ def call_llm(
             return body["choices"][0]["message"]["content"].strip()
     except (urllib.error.URLError, urllib.error.HTTPError, json.JSONDecodeError,
             KeyError, IndexError) as e:
-        print(f"  ⚠️  LLM API error: {e}")
+        logger.info(f"  ⚠️  LLM API error: {e}")
         return None
 
 
@@ -256,7 +259,7 @@ def extract_evidence(
             if field not in extracted or extracted[field] is None:
                 extracted[field] = default
     except (json.JSONDecodeError, ValueError) as e:
-        print(f"  ⚠️  JSON parse error from LLM: {e}")
+        logger.info(f"  ⚠️  JSON parse error from LLM: {e}")
         extracted = {
             "evidence_level": "unknown",
             "model_system": "unknown",
@@ -300,8 +303,8 @@ def extract_all(
         sources = ["pubmed", "preprints", "clinical_trials"]
 
     if not API_KEY:
-        print("\n⚠️  No OPENAI_API_KEY environment variable set.")
-        print("   LLM extraction requires an API key.\n"
+        logger.info("\n⚠️  No OPENAI_API_KEY environment variable set.")
+        logger.info("   LLM extraction requires an API key.\n"
               "   Set it via: export OPENAI_API_KEY=sk-...\n"
               "   Or for local models (Ollama):\n"
               "     export OPENAI_API_KEY=ollama\n"
@@ -317,12 +320,12 @@ def extract_all(
             "generated_at": datetime.now().isoformat(),
         }
 
-    print(f"\n🤖 LLM Evidence Extractor — Model: {model}")
-    print(f"   Query: \"{query}\"")
-    print(f"   Sources: {', '.join(sources)}\n")
+    logger.info(f"\n🤖 LLM Evidence Extractor — Model: {model}")
+    logger.info(f"   Query: \"{query}\"")
+    logger.info(f"   Sources: {', '.join(sources)}\n")
 
     # Step 1: Gather evidence
-    print("Step 1/2: Gathering evidence...")
+    logger.info("Step 1/2: Gathering evidence...")
     evidence = gather_evidence(
         query,
         sources=sources,
@@ -330,16 +333,16 @@ def extract_all(
         use_cache=use_cache,
     )
     articles = evidence["all_results"][:max_articles]
-    print(f"   → {len(articles)} articles to extract\n")
+    logger.info(f"   → {len(articles)} articles to extract\n")
 
     # Step 2: Extract structured data
-    print("Step 2/2: Extracting structured data via LLM...")
+    logger.info("Step 2/2: Extracting structured data via LLM...")
     start_time = time.time()
     extractions = []
     success_count = 0
 
     for i, article in enumerate(articles, 1):
-        print(f"  [{i}/{len(articles)}] {article['title'][:70]}...")
+        logger.info(f"  [{i}/{len(articles)}] {article['title'][:70]}...")
         extracted = extract_evidence(article, query, model, use_cache)
         if extracted:
             # Merge article metadata with extracted data

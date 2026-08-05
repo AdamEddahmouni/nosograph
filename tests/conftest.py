@@ -21,6 +21,19 @@ PROJECT_ROOT = Path(__file__).parent.parent
 DR_DATA_DIR = PROJECT_ROOT / "src" / "med_research" / "pipeline" / "drug_repurposing" / "data"
 
 
+def pytest_collection_modifyitems(items):
+    """Auto-classify tests: every test that is not marked slow or integration
+    is a unit test. This keeps `make test-unit` / `make test-integration`
+    working without hand-tagging every test file.
+    """
+    for item in items:
+        markers = {m.name for m in item.iter_markers()}
+        if "slow" in markers or "integration" in markers:
+            continue
+        if "unit" not in markers:
+            item.add_marker(pytest.mark.unit)
+
+
 @pytest.fixture(scope="session")
 def kg_data_dir():
     from med_research.pipeline.knowledge_graph.config import _resolve

@@ -147,6 +147,31 @@ class Disease:
 
     # ── Static helpers ─────────────────────────────────────────────────
 
+    def validate(self) -> dict:
+        """Check that this disease's config is complete for pipeline use.
+
+        Returns a dict of ``{field: status}`` where status is ``"ok"`` or a
+        message describing what is missing/empty.
+        """
+        checks = {}
+        required = {
+            "SYMPTOMS": self.get_symptoms(),
+            "PUBMED_QUERIES": self.config.get("PUBMED_QUERIES", []),
+            "CAR_T_SCORES": self.get_car_t_scores(),
+            "DRUG_INDUCED_LUPUS_RISK": self.get_drug_induced_lupus_risk(),
+        }
+        for name, value in required.items():
+            if isinstance(value, dict):
+                if value and any(value.values()):
+                    checks[name] = "ok"
+                else:
+                    checks[name] = "empty"
+            elif isinstance(value, (list, tuple)):
+                checks[name] = "ok" if value else "empty"
+            else:
+                checks[name] = "ok" if value else "missing"
+        return checks
+
     @staticmethod
     def list_all() -> list[str]:
         import med_research.diseases as diseases_pkg

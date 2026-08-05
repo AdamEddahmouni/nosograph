@@ -25,12 +25,14 @@ Usage:
 """
 
 import json
+import logging
 import os
 import shutil
 import subprocess
 import sys
 from pathlib import Path
 
+logger = logging.getLogger(__name__)
 PROJECT_ROOT = Path(__file__).parent.parent
 TARGETS_DIR = Path(__file__).parent / "targets"
 CONFIG_PATH = TARGETS_DIR / "targets_config.json"
@@ -178,7 +180,7 @@ def _fetch_pdb(pdb_id: str, output_path: Path) -> bool:
             output_path.write_bytes(resp.read())
         return True
     except (urllib.error.HTTPError, urllib.error.URLError, OSError) as e:
-        print(f"   ⚠️  PDB download failed ({pdb_id}): {e}")
+        logger.info(f"   ⚠️  PDB download failed ({pdb_id}): {e}")
         return False
 
 
@@ -209,7 +211,7 @@ def _clean_receptor(pdb_path: Path, cleaned_path: Path, chain: str = "A") -> boo
         io.save(str(cleaned_path), _CleanSelect(chain))
         return True
     except Exception as e:
-        print(f"   ⚠️  Receptor cleaning failed: {e}")
+        logger.info(f"   ⚠️  Receptor cleaning failed: {e}")
         return False
 
 
@@ -235,7 +237,7 @@ def prepare_receptor(gene_id: str, config: dict, force: bool = False) -> str | N
 
     # Skip AlphaFold models — manual preparation required
     if method and "AlphaFold" in method:
-        print(f"   ⚠️  Skipping {gene_id}: AlphaFold model — manual preparation required")
+        logger.info(f"   ⚠️  Skipping {gene_id}: AlphaFold model — manual preparation required")
         return None
 
     receptors_dir = TARGETS_DIR / "receptors"
@@ -251,7 +253,7 @@ def prepare_receptor(gene_id: str, config: dict, force: bool = False) -> str | N
 
     # Step 1: Download PDB
     if not pdb_path.exists() or force:
-        print(f"   📥 Downloading {pdb_id} for {gene_id}...")
+        logger.info(f"   📥 Downloading {pdb_id} for {gene_id}...")
         if not _fetch_pdb(pdb_id, pdb_path):
             return None
 
@@ -274,14 +276,14 @@ def prepare_receptor(gene_id: str, config: dict, force: bool = False) -> str | N
                     str(cleaned_path), str(pdbqt_path)
                 )
                 if not success:
-                    print(f"   ⚠️  Meeko PDBQT conversion failed for {gene_id}")
+                    logger.info(f"   ⚠️  Meeko PDBQT conversion failed for {gene_id}")
                     return None
             except Exception as e:
-                print(f"   ⚠️  Meeko receptor prep error ({gene_id}): {e}")
+                logger.info(f"   ⚠️  Meeko receptor prep error ({gene_id}): {e}")
                 return None
         else:
             # Without Meeko, we can't produce PDBQT
-            print(f"   ⚠️  Meeko not available — cannot prepare receptor {gene_id}")
+            logger.info(f"   ⚠️  Meeko not available — cannot prepare receptor {gene_id}")
             return None
 
     return str(pdbqt_path)
@@ -358,12 +360,12 @@ def prepare_ligand(
     # Step 1: SMILES → 3D
     mol = _smiles_to_3d_mol(smiles)
     if mol is None:
-        print(f"   ⚠️  Could not generate 3D conformer for {drug_id}")
+        logger.info(f"   ⚠️  Could not generate 3D conformer for {drug_id}")
         return None
 
     # Step 2 & 3: Meeko prep → PDBQT
     if not _detect_meeko():
-        print(f"   ⚠️  Meeko not available — cannot prepare ligand {drug_id}")
+        logger.info(f"   ⚠️  Meeko not available — cannot prepare ligand {drug_id}")
         return None
 
     try:
@@ -381,7 +383,7 @@ def prepare_ligand(
         pdbqt_path.write_text(pdbqt_string, encoding="utf-8")
         return str(pdbqt_path)
     except Exception as e:
-        print(f"   ⚠️  Ligand prep error ({drug_id}): {e}")
+        logger.info(f"   ⚠️  Ligand prep error ({drug_id}): {e}")
         return None
 
 
@@ -547,7 +549,7 @@ class DockingEngine:
             return self._config
 
         if not self.config_path.exists():
-            print(f"⚠️  Config not found: {self.config_path}")
+            logger.info(f"⚠️  Config not found: {self.config_path}")
             self._loaded = True
             return {}
 
@@ -603,13 +605,13 @@ class DockingEngine:
         targets = self.get_dockable_targets()
         results = {}
 
-        print(f"\n🧬 Preparing receptors for {len(targets)} targets...")
+        logger.info(f"\n🧬 Preparing receptors for {len(targets)} targets...")
         for gene_id, tcfg in targets.items():
-            print(f"   🎯 {gene_id} (PDB: {tcfg.get('pdb_id', '?')})")
+            logger.info(f"   🎯 {gene_id} (PDB: {tcfg.get('pdb_id', '?')})")
             results[gene_id] = prepare_receptor(gene_id, tcfg, force=force)
 
         n_ok = sum(1 for v in results.values() if v)
-        print(f"   ✅ {n_ok}/{len(targets)} receptors prepared")
+        logger.info(f"   ✅ {n_ok}/{len(targets)} receptors prepared")
         return results
 
     def prepare_all_ligands(
@@ -631,7 +633,7 @@ class DockingEngine:
         results = {}
         skipped = 0
 
-        print(f"\n💊 Preparing ligands for {len(compound_library)} compounds...")
+        logger.info(f"\n💊 Preparing ligands for {len(compound_library)} compounds...")
         for compound in compound_library:
             drug_id = compound["id"]
             smiles = compound.get("smiles", "")
@@ -645,11 +647,11 @@ class DockingEngine:
             pdbqt_path = prepare_ligand(drug_id, smiles, force=force)
             results[drug_id] = pdbqt_path
             if pdbqt_path:
-                print(f"   ✅ {drug_id}")
+                logger.info(f"   ✅ {drug_id}")
             else:
-                print(f"   ⚠️  {drug_id} — prep failed")
+                logger.info(f"   ⚠️  {drug_id} — prep failed")
 
-        print(f"   ✅ {len([v for v in results.values() if v])} prepared, {skipped} skipped (biologics)")
+        logger.info(f"   ✅ {len([v for v in results.values() if v])} prepared, {skipped} skipped (biologics)")
         return results
 
     # ── Docking ─────────────────────────────────────────────────────
@@ -716,7 +718,7 @@ class DockingEngine:
             return {"error": "No ligand_paths provided"}
 
         eligible = [lid for lid in ligand_ids if ligand_paths.get(lid)]
-        print(f"   🧬 Docking {len(eligible)} ligands against {gene_id} "
+        logger.info(f"   🧬 Docking {len(eligible)} ligands against {gene_id} "
               f"(grid: {grid_center}, size: {grid_size})")
 
         if max_workers > 1 and len(eligible) > 1:
@@ -767,10 +769,10 @@ class DockingEngine:
         """
         status = self.get_status()
         if not status["docking_possible"]:
-            print("❌ Docking not possible. Missing dependencies:")
+            logger.info("❌ Docking not possible. Missing dependencies:")
             for key, val in status.items():
                 if not val and key not in ("config_loaded",):
-                    print(f"   - {key}")
+                    logger.info(f"   - {key}")
             return {"error": "Dependencies missing", "status": status}
 
         # Phase 1: Prepare receptors
@@ -806,12 +808,12 @@ class DockingEngine:
             scored.sort(key=lambda x: x[1], reverse=True)
             top = [lid for lid, _ in scored[:top_n_per_target]]
             top_ligands_per_target[gene_id] = top if top else ready_ligands[:top_n_per_target]
-            print(f"   📊 {gene_id}: selected top {len(top_ligands_per_target[gene_id])} ligands for docking")
+            logger.info(f"   📊 {gene_id}: selected top {len(top_ligands_per_target[gene_id])} ligands for docking")
 
         # Phase 4: Dock
         all_results = {}
         for gene_id in ready_targets:
-            print(f"\n🔬 Docking {gene_id}...")
+            logger.info(f"\n🔬 Docking {gene_id}...")
             results = self.dock_target(
                 gene_id=gene_id,
                 ligand_ids=top_ligands_per_target.get(gene_id, ready_ligands[:top_n_per_target]),

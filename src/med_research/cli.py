@@ -133,7 +133,8 @@ def _build_parser() -> argparse.ArgumentParser:
     extractor = sub.add_parser("extractor", help="LLM-powered evidence extraction")
     extractor.add_argument("--query", "-q", default="B cell depletion therapy lupus")
     extractor.add_argument("--sources", default="pubmed,preprints,clinical_trials")
-    extractor.add_argument("--model", "-m", default="")
+    extractor.add_argument("--model", "-m", default="gpt-4o-mini",
+                          help="LLM model (default: gpt-4o-mini)")
     extractor.add_argument("--max", type=int, default=20)
     extractor.add_argument("--no-cache", action="store_true")
     extractor.add_argument("--top", type=int, default=15)
@@ -192,14 +193,25 @@ def _run_module(module_path: str, func_name: str, *args, **kwargs):
 
 
 def cmd_diseases(_args):
-    """List all available diseases."""
+    """List all available diseases with config validation status."""
     print("\nAvailable Diseases:")
     print("-" * 60)
+    issues = []
     for did, disease in Disease.discover().items():
         p = disease.profile
         print(f"  {did:6s}  {p.name}")
         print(f"          {p.description[:80]}...")
+        for field, status in disease.validate().items():
+            if status != "ok":
+                issues.append(f"{did}.{field}: {status}")
         print()
+    if issues:
+        print("[WARN] Config gaps detected:")
+        for issue in issues:
+            print(f"  - {issue}")
+        print()
+    else:
+        print("[OK] All disease configs complete.")
     return 0
 
 
@@ -843,12 +855,18 @@ def cmd_serve(args):
     """Start the web API server."""
     import uvicorn
 
-    from med_research.web.config import HOST, PORT
+    from med_research.web.config import DEBUG, HOST, PORT
+    logger = get_logger(__name__)
+    # --reload is only honored when DEBUG=true (avoids leaking source/stack
+    # traces in production where the flag may be set accidentally).
+    reload_mode = bool(args.reload) and DEBUG
+    if args.reload and not DEBUG:
+        logger.warning("--reload ignored: set DEBUG=true to enable auto-reload")
     uvicorn.run(
         "med_research.web.main:app",
         host=args.host or HOST,
         port=args.port or PORT,
-        reload=args.reload,
+        reload=reload_mode,
     )
     return 0
 

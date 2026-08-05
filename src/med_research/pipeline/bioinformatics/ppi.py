@@ -24,8 +24,11 @@ import networkx as nx
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
+import logging
+
 from med_research.pipeline.knowledge_graph.config import load_genes as load_kg_genes
 
+logger = logging.getLogger(__name__)
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
@@ -35,7 +38,7 @@ try:
     REQUESTS_AVAILABLE = True
 except ImportError:
     REQUESTS_AVAILABLE = False
-    print("⚠️  requests not installed. Install with: pip install requests")
+    logger.info("⚠️  requests not installed. Install with: pip install requests")
 
 DATA_DIR = Path(__file__).parent / "data"
 DR_DATA_DIR = Path(__file__).parent.parent / "drug_repurposing" / "data"
@@ -75,20 +78,20 @@ def get_gene_symbols(genes: dict, exclude_drug_targets: bool = True) -> list:
 
 def _fetch_ppi(symbols: list, confidence: float) -> tuple:
     """Fetch ID map and interactions from STRING API."""
-    print(f"\n🔄 Mapping {len(symbols)} gene symbols to STRING IDs...")
+    logger.info(f"\n🔄 Mapping {len(symbols)} gene symbols to STRING IDs...")
     id_map = _string_id_map(symbols)
     string_ids = list(id_map.values())
-    print(f"   Mapped {len(string_ids)}/{len(symbols)} symbols to STRING IDs")
+    logger.info(f"   Mapped {len(string_ids)}/{len(symbols)} symbols to STRING IDs")
 
     if not string_ids:
-        print("   ❌ No STRING IDs found. Check gene symbols.")
+        logger.info("   ❌ No STRING IDs found. Check gene symbols.")
         return {}, []
 
-    print(
+    logger.info(
         f"\n🔄 Fetching PPI network (confidence ≥ {confidence})..."
     )
     interactions = _string_network(string_ids, confidence)
-    print(f"   Retrieved {len(interactions)} interactions")
+    logger.info(f"   Retrieved {len(interactions)} interactions")
 
     return id_map, interactions
 
@@ -122,7 +125,7 @@ def _string_id_map(symbols: list) -> dict:
 
         return mapping
     except Exception as e:
-        print(f"   ⚠️  STRING ID mapping error: {e}")
+        logger.info(f"   ⚠️  STRING ID mapping error: {e}")
         return {}
 
 
@@ -162,7 +165,7 @@ def _string_network(string_ids: list, confidence: float = 0.4) -> list:
                 )
 
     except Exception as e:
-        print(f"   ⚠️  STRING network error: {e}")
+        logger.info(f"   ⚠️  STRING network error: {e}")
 
     return interactions
 
@@ -187,7 +190,7 @@ def build_ppi_network(
         NetworkX graph with node attributes: symbol, gene_id, is_seed
     """
     if not REQUESTS_AVAILABLE:
-        print("❌ requests required. Install: pip install requests")
+        logger.info("❌ requests required. Install: pip install requests")
         return nx.Graph()
 
     symbols = [s for _, s in gene_symbols]
@@ -204,19 +207,19 @@ def build_ppi_network(
                 cached.get("cache_key") == cache_key
                 and cached.get("confidence") == confidence
             ):
-                print("📦 Loading PPI network from cache...")
+                logger.info("📦 Loading PPI network from cache...")
                 id_map = cached["id_map"]
                 interactions = cached["interactions"]
                 if not id_map:
-                    print("   ❌ Cached PPI network is empty. Re-fetching...")
+                    logger.info("   ❌ Cached PPI network is empty. Re-fetching...")
                     id_map, interactions = _fetch_ppi(symbols, confidence)
                     freshly_fetched = True
             else:
-                print("   ⚠️  Cache key mismatch, re-fetching PPI network...")
+                logger.info("   ⚠️  Cache key mismatch, re-fetching PPI network...")
                 id_map, interactions = _fetch_ppi(symbols, confidence)
                 freshly_fetched = True
         except (json.JSONDecodeError, KeyError):
-            print("   ⚠️  Corrupt cache, re-fetching PPI network...")
+            logger.info("   ⚠️  Corrupt cache, re-fetching PPI network...")
             id_map, interactions = _fetch_ppi(symbols, confidence)
             freshly_fetched = True
     else:
@@ -241,12 +244,12 @@ def build_ppi_network(
                 ),
                 encoding="utf-8",
             )
-            print(f"💾 Cached PPI network to {cache_path}")
+            logger.info(f"💾 Cached PPI network to {cache_path}")
         except Exception as e:
-            print(f"   ⚠️  Cache write error: {e}")
+            logger.info(f"   ⚠️  Cache write error: {e}")
 
     if not id_map:
-        print("   ❌ No STRING IDs found. Check gene symbols.")
+        logger.info("   ❌ No STRING IDs found. Check gene symbols.")
         return nx.Graph()
 
     # Build graph
@@ -293,7 +296,7 @@ def build_ppi_network(
             weight=inter["score"],
         )
 
-    print(
+    logger.info(
         f"   Network: {G.number_of_nodes()} nodes, "
         f"{G.number_of_edges()} edges "
         f"({len(seed_string_ids)} seed genes)"
@@ -311,7 +314,7 @@ def compute_hub_scores(G: nx.Graph) -> list:
     if G.number_of_nodes() == 0:
         return []
 
-    print("\n🔄 Computing hub scores...")
+    logger.info("\n🔄 Computing hub scores...")
 
     # Degree centrality
     degree = nx.degree_centrality(G)

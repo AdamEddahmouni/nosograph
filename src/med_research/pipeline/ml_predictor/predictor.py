@@ -30,8 +30,11 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
+import logging
+
 from med_research.pipeline.knowledge_graph.builder import build_graph
 
+logger = logging.getLogger(__name__)
 DATA_DIR = Path(__file__).parent / "data"
 PROJECT_ROOT = Path(__file__).parent.parent
 
@@ -101,7 +104,7 @@ def extract_features(G) -> tuple:
         and labels is list of (is_targeted, targeted_drugs) tuples.
     """
     if not NP_AVAILABLE:
-        print("❌ numpy required. Install: pip install numpy")
+        logger.info("❌ numpy required. Install: pip install numpy")
         return np.array([]), [], []
 
     # Find targeted genes (those with TARGETS edge from a drug)
@@ -195,11 +198,11 @@ def train_and_predict(G, top_n: int = 15) -> dict:
         dict with predictions, feature_importance, model_metrics, gene_details
     """
     if not all([XGB_AVAILABLE, SKLEARN_AVAILABLE, NP_AVAILABLE]):
-        print("❌ xgboost, scikit-learn, and numpy required.")
-        print("   Install: pip install xgboost scikit-learn numpy")
+        logger.info("❌ xgboost, scikit-learn, and numpy required.")
+        logger.info("   Install: pip install xgboost scikit-learn numpy")
         return {"error": "Missing dependencies"}
 
-    print("🔄 Extracting features from knowledge graph...")
+    logger.info("🔄 Extracting features from knowledge graph...")
     X, gene_ids, labels = extract_features(G)
 
     if len(X) == 0:
@@ -209,7 +212,7 @@ def train_and_predict(G, top_n: int = 15) -> dict:
     targeted_count = int(np.sum(y))
     untargeted_count = int(len(y) - targeted_count)
 
-    print(f"   {len(gene_ids)} genes: {targeted_count} targeted, {untargeted_count} untargeted")
+    logger.info(f"   {len(gene_ids)} genes: {targeted_count} targeted, {untargeted_count} untargeted")
 
     # Scale features
     scaler = StandardScaler()
@@ -224,7 +227,7 @@ def train_and_predict(G, top_n: int = 15) -> dict:
     feature_names = feature_names[:X.shape[1]]
 
     # Cross-validation
-    print("\n🔄 Training XGBoost with stratified 5-fold CV...")
+    logger.info("\n🔄 Training XGBoost with stratified 5-fold CV...")
     model = xgb.XGBClassifier(
         n_estimators=100,
         max_depth=3,
@@ -238,10 +241,10 @@ def train_and_predict(G, top_n: int = 15) -> dict:
     if targeted_count >= 2 and untargeted_count >= 2 and min(targeted_count, untargeted_count) >= 2:
         cv = StratifiedKFold(n_splits=min(3, targeted_count, untargeted_count), shuffle=True, random_state=42)
         cv_scores = cross_val_score(model, X_scaled, y, cv=cv, scoring="roc_auc")
-        print(f"   CV ROC-AUC: {cv_scores.mean():.3f} ± {cv_scores.std():.3f}")
+        logger.info(f"   CV ROC-AUC: {cv_scores.mean():.3f} ± {cv_scores.std():.3f}")
     else:
         cv_scores = np.array([0.5])
-        print("   ⚠️  Insufficient samples for CV")
+        logger.info("   ⚠️  Insufficient samples for CV")
 
     # Train on full data
     model.fit(X_scaled, y)
@@ -278,7 +281,7 @@ def train_and_predict(G, top_n: int = 15) -> dict:
     shap_values = None
     shap_summary = []
     if SHAP_AVAILABLE and hasattr(model, "get_booster"):
-        print("🔄 Computing SHAP values...")
+        logger.info("🔄 Computing SHAP values...")
         try:
             explainer = shap.TreeExplainer(model)
             shap_vals = explainer.shap_values(X_scaled)
@@ -291,7 +294,7 @@ def train_and_predict(G, top_n: int = 15) -> dict:
             shap_summary.sort(key=lambda x: x["mean_abs_shap"], reverse=True)
             shap_values = shap_vals
         except Exception as e:
-            print(f"   ⚠️  SHAP error: {e}")
+            logger.info(f"   ⚠️  SHAP error: {e}")
 
     # Generate top N untargeted genes
     untargeted_predictions = [p for p in predictions if not p["is_targeted"]]

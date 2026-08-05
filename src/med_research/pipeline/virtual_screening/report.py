@@ -620,6 +620,7 @@ def _generate_comparison_chart(all_results: list) -> str:
 
     # Collect pairs for docked compounds (showing all with a cap at 15)
     display_n = min(len(docked), 15)
+    pairs = []
     for c in docked[:display_n]:
         pairs.append((
             c["name"][:20],

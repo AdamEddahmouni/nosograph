@@ -339,3 +339,15 @@ body {{
     out_path = Path(__file__).parent / "report.html"
     out_path.write_text(html, encoding="utf-8")
     return str(out_path)
+
+
+def escape_html(text) -> str:
+    """Escape HTML special characters."""
+    if not text:
+        return ""
+    return (
+        str(text).replace("&", "&amp;")
+        .replace("<", "&lt;")
+        .replace(">", "&gt;")
+        .replace('"', "&quot;")
+    )

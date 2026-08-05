@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% block title %}Semantic Search Report{% endblock %}
+
+{% block hero_title %}🧠 Semantic Literature Search{% endblock %}
+{% block hero_subtitle %}
+    Embedding-Based PubMed Search — Find Papers by Meaning, Not Keywords
+{% endblock %}
+
+{% block extra_css %}
+/* Semantic-search-specific styles */
+.query-box {
+    background: rgba(30,30,50,0.8); border: 1px solid rgba(99,102,241,0.3);
+    border-radius: 12px; padding: 16px 20px; margin-bottom: 24px;
+    font-family: monospace; color: #818cf8; font-size: 1rem;
+}
+.col-rank { width: 50px; color: #64748b; text-align: center; }
+.col-title { font-weight: 600; }
+.col-score { font-weight: 700; text-align: center; width: 70px; }
+.col-year { text-align: center; width: 60px; }
+.col-journal { color: #94a3b8; font-size: 0.78rem; width: 140px; }
+.empty-state { text-align: center; padding: 48px 24px; color: #64748b; }
+.methodology {
+    background: #13131a; border: 1px solid #252535; border-radius: 12px;
+    padding: 24px; margin: 32px 0; color: #94a3b8; font-size: 0.86rem;
+}
+.methodology h3 { color: #e0e0e8; margin-bottom: 12px; }
+.methodology p { margin-bottom: 8px; }
+.methodology ul { padding-left: 20px; }
+.methodology li { margin-bottom: 6px; }
+{% endblock %}
+
+{% block content %}
+<div class="query-box">🔍 Query: {{ query if query else '(index only — no query executed)' }}</div>
+
+<div class="stats-grid">
+    <div class="stat-card"><div class="stat-value" style="color:#818cf8;">{{ indexed_count }}</div><div class="stat-label">Articles Indexed</div></div>
+    <div class="stat-card"><div class="stat-value" style="color:#4ade80;">{{ n_results }}</div><div class="stat-label">Search Results</div></div>
+    <div class="stat-card"><div class="stat-value" style="color:#a78bfa;">all-MiniLM</div><div class="stat-label">Embedding Model</div></div>
+    <div class="stat-card"><div class="stat-value" style="color:#22d3ee;">384</div><div class="stat-label">Embedding Dims</div></div>
+</div>
+
+<h2 class="section-title">📄 Search Results</h2>
+{% if results %}
+<div class="table-container">
+    <table>
+        <thead>
+            <tr><th>#</th><th>Title</th><th>Sim</th><th>Year</th><th>Journal</th></tr>
+        </thead>
+        <tbody>
+        {% for r in results %}
+            {% set sim = r.similarity %}
+            {% if sim >= 8.0 %}
+                {% set sim_color = "#4ade80" %}
+            {% elif sim >= 6.0 %}
+                {% set sim_color = "#fbbf24" %}
+            {% else %}
+                {% set sim_color = "#f87171" %}
+            {% endif %}
+            <tr>
+                <td class="col-rank">#{{ r.rank }}</td>
+                <td class="col-title">{{ (r.title or '')[:120] }}</td>
+                <td class="col-score" style="color:{{ sim_color }}">{{ "%.1f"|format(sim) }}</td>
+                <td class="col-year">{{ r.year or '-' }}</td>
+                <td class="col-journal">{{ (r.journal or '')[:50] }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% else %}
+<div class="empty-state"><p>No results yet. Run a search query or index articles first.</p></div>
+{% endif %}
+
+<div class="methodology">
+    <h3>🔬 How Semantic Search Works</h3>
+    <p>Traditional PubMed queries use <strong>keyword + MeSH terms</strong>. This means a query for "drugs that suppress type I interferon" would miss papers about "JAK-STAT inhibition" or "TLR7/9 blockade" unless those exact phrases appear.</p>
+    <p style="margin-top:12px;">Semantic search uses <strong>sentence-transformers embeddings</strong> to understand meaning:</p>
+    <ul>
+        <li><strong style="color:#818cf8;">all-MiniLM-L6-v2</strong> — 384-dimensional embeddings, 80MB model, runs locally</li>
+        <li><strong style="color:#22d3ee;">ChromaDB</strong> — vector database for fast similarity search</li>
+        <li><strong style="color:#4ade80;">Cosine Similarity</strong> — scores 0-10 based on semantic closeness</li>
+    </ul>
+    <p style="margin-top:12px;font-size:0.82rem;">Example: Searching "B cell depletion therapy lupus" finds papers about rituximab, obinutuzumab, CD19 CAR-T, and BAFF inhibition — even when those exact terms aren't in the paper title or abstract.</p>
+</div>
+{% endblock %}
+
+{% block footer_text %}
+Lupus Research Platform · Semantic Search Module (Phase 16)
+{% endblock %}
+
+{% block footer_links %}
+⚠️ Computational predictions requiring clinical validation. Not medical advice.
+{% endblock %}

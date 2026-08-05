@@ -27,9 +27,12 @@ from med_research.rate_limiter import rate_limited_sleep
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
+import logging
+
 from med_research.pipeline.evidence.gatherer import gather_evidence
 from med_research.pipeline.knowledge_graph.config import load_genes as config_load_genes
 
+logger = logging.getLogger(__name__)
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
@@ -121,16 +124,16 @@ def take_snapshot(sources: list = None, max_per_query: int = 10) -> dict:
     timestamp = datetime.now()
     snapshot_id = timestamp.strftime("%Y%m%d_%H%M%S")
 
-    print(f"\n📸 Taking snapshot: {snapshot_id}")
-    print(f"   Tracking: {len(TRACKED_QUERIES)} queries, "
+    logger.info(f"\n📸 Taking snapshot: {snapshot_id}")
+    logger.info(f"   Tracking: {len(TRACKED_QUERIES)} queries, "
           f"{len(drugs)} drugs, {len(genes)} genes")
-    print(f"   Sources: {', '.join(sources)}\n")
+    logger.info(f"   Sources: {', '.join(sources)}\n")
 
     queries_data = {}
 
     # Snapshot tracked queries
     for i, query in enumerate(TRACKED_QUERIES, 1):
-        print(f"  [{i}/{len(TRACKED_QUERIES)}] Query: \"{query}\"")
+        logger.info(f"  [{i}/{len(TRACKED_QUERIES)}] Query: \"{query}\"")
         evidence = gather_evidence(
             query, sources=sources, max_per_source=max_per_query, use_cache=True,
         )
@@ -141,11 +144,11 @@ def take_snapshot(sources: list = None, max_per_query: int = 10) -> dict:
         }
 
     # Snapshot top drugs
-    print(f"\n  Snapshotting {len(drugs)} drugs...")
+    logger.info(f"\n  Snapshotting {len(drugs)} drugs...")
     drug_data = {}
     for drug in drugs[:25]:  # Cap at 25 to avoid excessive API calls
         query = f"{drug} lupus"
-        print(f"    💊 {drug}")
+        logger.info(f"    💊 {drug}")
         evidence = gather_evidence(
             query, sources=["pubmed", "clinical_trials"],
             max_per_source=5, use_cache=True,
@@ -157,11 +160,11 @@ def take_snapshot(sources: list = None, max_per_query: int = 10) -> dict:
         }
 
     # Snapshot top genes
-    print(f"\n  Snapshotting {len(genes)} genes...")
+    logger.info(f"\n  Snapshotting {len(genes)} genes...")
     gene_data = {}
     for gene in genes[:25]:
         query = f"{gene} lupus"
-        print(f"    🧬 {gene}")
+        logger.info(f"    🧬 {gene}")
         evidence = gather_evidence(
             query, sources=["pubmed", "clinical_trials"],
             max_per_source=5, use_cache=True,
@@ -188,8 +191,8 @@ def take_snapshot(sources: list = None, max_per_query: int = 10) -> dict:
     path = SNAPSHOTS_DIR / f"snapshot_{snapshot_id}.json"
     save_json(path, snapshot)
 
-    print(f"\n✅ Snapshot saved: {path.name}")
-    print(f"   Queries: {len(queries_data)} · Drugs: {len(drug_data)} · Genes: {len(gene_data)}")
+    logger.info(f"\n✅ Snapshot saved: {path.name}")
+    logger.info(f"   Queries: {len(queries_data)} · Drugs: {len(drug_data)} · Genes: {len(gene_data)}")
 
     return snapshot
 
@@ -352,15 +355,15 @@ def run_diff() -> dict:
     """
     snapshots = load_latest_snapshots(1)
     if not snapshots:
-        print("⚠️  No previous snapshots found. Taking first baseline snapshot.")
+        logger.info("⚠️  No previous snapshots found. Taking first baseline snapshot.")
         prev = take_snapshot()
         return {"status": "baseline", "snapshot_id": prev["snapshot_id"]}
 
-    print(f"📸 Comparing against snapshot: {snapshots[0]['snapshot_id']}")
+    logger.info(f"📸 Comparing against snapshot: {snapshots[0]['snapshot_id']}")
     prev = snapshots[0]
     curr = take_snapshot()
 
-    print("\n🔍 Computing diff...")
+    logger.info("\n🔍 Computing diff...")
     diff = compare_snapshots(prev, curr)
 
     # Save diff

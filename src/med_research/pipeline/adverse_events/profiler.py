@@ -16,9 +16,11 @@ Usage:
 
 import argparse
 import json
+import logging
 import sys
 from pathlib import Path
 
+logger = logging.getLogger(__name__)
 # Ensure project root is importable
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
@@ -781,27 +783,27 @@ def get_safety_summary() -> dict:
 
 def print_analysis(results: list):
     """Print summary analysis."""
-    print("\n" + "=" * 75)
-    print("🛡️  ADVERSE EVENT PROFILING SUMMARY")
-    print("=" * 75)
+    logger.info("\n" + "=" * 75)
+    logger.info("🛡️  ADVERSE EVENT PROFILING SUMMARY")
+    logger.info("=" * 75)
 
     summary = get_safety_summary()
-    print(f"\n  Total drugs profiled: {summary['total_drugs']}")
-    print(f"  Average safety score: {summary['avg_safety_score']}")
-    print(f"  Safest drug: {summary['safest_drug']} ({summary['safest_score']:.1f})")
-    print(f"  Riskiest drug: {summary['riskiest_drug']} ({summary['riskiest_score']:.1f})")
-    print(f"  Drugs with black box warnings: {summary['drugs_with_bbw']}")
-    print(f"  Drugs with DIL risk: {summary['drugs_with_dil_risk']}")
+    logger.info(f"\n  Total drugs profiled: {summary['total_drugs']}")
+    logger.info(f"  Average safety score: {summary['avg_safety_score']}")
+    logger.info(f"  Safest drug: {summary['safest_drug']} ({summary['safest_score']:.1f})")
+    logger.info(f"  Riskiest drug: {summary['riskiest_drug']} ({summary['riskiest_score']:.1f})")
+    logger.info(f"  Drugs with black box warnings: {summary['drugs_with_bbw']}")
+    logger.info(f"  Drugs with DIL risk: {summary['drugs_with_dil_risk']}")
 
-    print("\n  Top 10 safest drugs:")
+    logger.info("\n  Top 10 safest drugs:")
     for i, r in enumerate(results[:10], 1):
         bbw = f" [BBW: {len(r['black_box_warnings'])}]" if r.get("black_box_warnings") else ""
-        print(f"    {i:2d}. {r['drug_name']} — {r['composite_safety_score']:.1f}{bbw}")
+        logger.info(f"    {i:2d}. {r['drug_name']} — {r['composite_safety_score']:.1f}{bbw}")
 
-    print("\n  Bottom 5 highest-risk drugs:")
+    logger.info("\n  Bottom 5 highest-risk drugs:")
     for i, r in enumerate(results[-5:], 1):
         bbw = f" [BBW: {len(r['black_box_warnings'])}]" if r.get("black_box_warnings") else ""
-        print(f"    {i:2d}. {r['drug_name']} — {r['composite_safety_score']:.1f}{bbw}")
+        logger.info(f"    {i:2d}. {r['drug_name']} — {r['composite_safety_score']:.1f}{bbw}")
 
 
 def main():

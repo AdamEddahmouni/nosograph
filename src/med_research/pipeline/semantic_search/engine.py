@@ -13,9 +13,11 @@ Usage:
 
 import argparse
 import json
+import logging
 import sys
 from pathlib import Path
 
+logger = logging.getLogger(__name__)
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 if sys.platform == "win32":
@@ -48,7 +50,7 @@ def _check_deps():
     if not ST_AVAILABLE:
         missing.append("sentence-transformers (pip install sentence-transformers)")
     if missing:
-        print(f"Missing dependencies: {', '.join(missing)}")
+        logger.info(f"Missing dependencies: {', '.join(missing)}")
         return False
     return True
 
@@ -71,9 +73,9 @@ class SemanticSearchEngine:
 
     def _load_model(self):
         if self.model is None:
-            print(f"Loading embedding model: {self.model_name} ...")
+            logger.info(f"Loading embedding model: {self.model_name} ...")
             self.model = SentenceTransformer(self.model_name)
-            print(f"   Model loaded ({self.model.get_sentence_embedding_dimension()}-dim embeddings)")
+            logger.info(f"   Model loaded ({self.model.get_sentence_embedding_dimension()}-dim embeddings)")
 
     def _ensure_collection(self):
         if self.collection is None:
@@ -92,12 +94,12 @@ class SemanticSearchEngine:
     def load_articles(self) -> list:
         """Load cached PubMed articles."""
         if not PUBMED_CACHE.exists():
-            print(f"No PubMed cache found at {PUBMED_CACHE}")
-            print("Run: python literature_mining/miner.py first")
+            logger.info(f"No PubMed cache found at {PUBMED_CACHE}")
+            logger.info("Run: python literature_mining/miner.py first")
             return []
 
         articles = json.loads(PUBMED_CACHE.read_text(encoding="utf-8"))
-        print(f"Loaded {len(articles)} cached articles")
+        logger.info(f"Loaded {len(articles)} cached articles")
         self._articles = articles
         return articles
 
@@ -115,7 +117,7 @@ class SemanticSearchEngine:
         if not articles:
             return 0
 
-        print(f"Indexing {len(articles)} articles in batches of {batch_size} ...")
+        logger.info(f"Indexing {len(articles)} articles in batches of {batch_size} ...")
         total = 0
 
         for i in range(0, len(articles), batch_size):
@@ -141,9 +143,9 @@ class SemanticSearchEngine:
                 documents=texts,
             )
             total += len(batch)
-            print(f"   [{total}/{len(articles)}] indexed")
+            logger.info(f"   [{total}/{len(articles)}] indexed")
 
-        print(f"Done — {total} articles indexed into {CHROMA_DIR}")
+        logger.info(f"Done — {total} articles indexed into {CHROMA_DIR}")
         return total
 
     def search(self, query: str, top_k: int = 20) -> list:
@@ -157,7 +159,7 @@ class SemanticSearchEngine:
             try:
                 self.collection = self.client.get_collection("pubmed_abstracts")
             except Exception:
-                print("No indexed collection found. Run --index first.")
+                logger.info("No indexed collection found. Run --index first.")
                 return []
 
         query_embedding = self.model.encode(query).tolist()
