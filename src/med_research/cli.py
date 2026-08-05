@@ -245,127 +245,280 @@ def cmd_kg(args):
 
 def cmd_repurpose(args):
     """Run drug repurposing analysis."""
-    from med_research.pipeline.drug_repurposing.engine import DrugRepurposingEngine
+    from med_research.pipeline.drug_repurposing.engine import (
+        DATA_DIR,
+        analyze,
+        identify_untargeted_genes,
+        load_genes,
+        load_json,
+        load_knowledge_graph,
+        print_top_candidates,
+        score_candidates,
+    )
 
-    disease = Disease(args.disease)
-    engine = DrugRepurposingEngine(disease.disease_id)
-    results = engine.run()
+    G = load_knowledge_graph(args.disease)
+    genes = load_genes(args.disease)
+    candidates = load_json(DATA_DIR / "candidates.json")["repurposing_candidates"]
+
+    untargeted = identify_untargeted_genes(G)
+    untargeted_ids = {g["id"] for g in untargeted}
+
+    scored = score_candidates(G, candidates, genes)
+    scored = [c for c in scored if c["gene_id"] in untargeted_ids]
+
+    analyze(scored)
+    print_top_candidates(scored, args.top)
 
     if args.export_html:
         from med_research.pipeline.drug_repurposing.report import generate_html_report
-        generate_html_report(results)
+        generate_html_report(scored, untargeted, genes, G)
 
     return 0
 
 
 def cmd_bioinformatics(args):
     """Run bioinformatics pipeline (GWAS + Enrichment + PPI)."""
-    import json
-    data_dir = Path(__file__).parent / "pipeline" / "bioinformatics" / "data"
-    data_dir.mkdir(parents=True, exist_ok=True)
-
     if not args.skip_gwas:
         print("\n[GWAS] Running GWAS analysis...")
-        from med_research.pipeline.bioinformatics.gwas import run_gwas_analysis
-        run_gwas_analysis()
+        _run_gwas(args)
 
     if not args.skip_enrichment:
         print("\n[Enrichment] Running pathway enrichment...")
-        from med_research.pipeline.bioinformatics.enrichment import run_enrichment_analysis
-        run_enrichment_analysis()
+        _run_enrichment(args)
 
     if not args.skip_ppi:
         print("\n[PPI] Running PPI network analysis...")
-        from med_research.pipeline.bioinformatics.ppi import run_ppi_analysis
-        run_ppi_analysis()
+        _run_ppi(args)
+
+    return 0
+
+
+def _run_gwas(args):
+    """GWAS Catalog analysis (mirrors gwas.main())."""
+    import json
+
+    from med_research.pipeline.bioinformatics.gwas import (
+        DATA_DIR,
+        SLE_SEARCH_TERMS,
+        analyze,
+        config_load_genes,
+        cross_reference_with_kg,
+        extract_gene_associations,
+        rate_limited_sleep,
+        search_gwas_studies,
+    )
+
+    kg_genes = {g["id"]: g for g in config_load_genes()["genes"]}
+    all_studies = []
+    for term in SLE_SEARCH_TERMS[:2]:
+        all_studies.extend(search_gwas_studies(term, max_results=15))
+        rate_limited_sleep(0.5)
+
+    seen, unique_studies = set(), []
+    for s in all_studies:
+        acc = s.get("accessionId")
+        if acc and acc not in seen:
+            seen.add(acc)
+            unique_studies.append(s)
+
+    cache_path = DATA_DIR / "gwas_cache.json"
+    cached = None
+    if not args.no_cache and cache_path.exists():
+        try:
+            cached = json.loads(cache_path.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, KeyError):
+            cached = None
+
+    if cached:
+        gwas_results, crossref = cached["gwas_results"], cached["crossref"]
+    else:
+        gwas_results = extract_gene_associations(unique_studies, max_studies=30)
+        crossref = cross_reference_with_kg(gwas_results, kg_genes)
+        cache_path.write_text(
+            json.dumps({"gwas_results": gwas_results, "crossref": crossref},
+                       indent=2, ensure_ascii=False, default=str),
+            encoding="utf-8",
+        )
+
+    analyze(gwas_results, crossref, kg_genes)
 
     if args.export_html:
         from med_research.pipeline.bioinformatics.report import generate_bioinformatics_report
-        gwas_path = data_dir / "gwas_results.json"
-        enrich_path = data_dir / "enrichment_results.json"
-        ppi_path = data_dir / "ppi_results.json"
+        generate_bioinformatics_report(gwas_results=gwas_results, gwas_crossref=crossref)
 
-        gwas = json.loads(gwas_path.read_text()) if gwas_path.exists() else {}
-        enrich = json.loads(enrich_path.read_text()) if enrich_path.exists() else {}
-        ppi = json.loads(ppi_path.read_text()) if ppi_path.exists() else {}
 
+def _run_enrichment(args):
+    """Pathway enrichment (mirrors enrichment.main())."""
+    from med_research.pipeline.bioinformatics.enrichment import (
+        analyze,
+        cross_reference_with_kg_pathways,
+        get_lupus_gene_list,
+        load_kg_genes,
+        load_kg_graph,
+        load_pathways,
+        run_enrichment,
+    )
+
+    G = load_kg_graph()
+    genes = load_kg_genes()
+    gene_list = get_lupus_gene_list(genes, G, untargeted_only=False)
+    enrichment_results = run_enrichment(gene_list, use_cache=not args.no_cache)
+    kg_pathways = load_pathways()
+    kg_matches = cross_reference_with_kg_pathways(enrichment_results, kg_pathways)
+    analyze(enrichment_results, gene_list, kg_matches)
+
+    if args.export_html:
+        from med_research.pipeline.bioinformatics.report import generate_bioinformatics_report
         generate_bioinformatics_report(
-            enrich.get("enrichment_results"),
-            enrich.get("gene_list"),
-            enrich.get("kg_pathway_matches"),
-            ppi.get("hub_scores"),
-            ppi.get("crossref"),
-            ppi.get("graph"),
-            gwas.get("gwas_results"),
-            gwas.get("crossref"),
+            enrichment_results=enrichment_results, gene_list=gene_list, kg_matches=kg_matches
         )
-    return 0
+
+
+def _run_ppi(args):
+    """PPI network analysis (mirrors ppi.main())."""
+    import json
+
+    from med_research.pipeline.bioinformatics.ppi import (
+        DEFAULT_CONFIDENCE,
+        analyze,
+        build_ppi_network,
+        compute_hub_scores,
+        cross_reference_with_candidates,
+        get_gene_symbols,
+        load_genes,
+    )
+
+    genes = load_genes()
+    gene_symbols = get_gene_symbols(genes)
+    candidates_data = json.loads(
+        (Path(__file__).parent / "pipeline" / "drug_repurposing" / "data" / "candidates.json")
+        .read_text(encoding="utf-8")
+    )
+    candidates = candidates_data["repurposing_candidates"]
+
+    G = build_ppi_network(gene_symbols, confidence=DEFAULT_CONFIDENCE, use_cache=not args.no_cache)
+    if G.number_of_nodes() == 0:
+        print("❌ Empty PPI network. Cannot proceed.")
+        return
+
+    hub_scores = compute_hub_scores(G)
+    crossref = cross_reference_with_candidates(hub_scores, G, genes, candidates)
+    analyze(hub_scores, crossref, G)
+
+    if args.export_html:
+        from med_research.pipeline.bioinformatics.report import generate_bioinformatics_report
+        graph_data = {
+            "nodes": [{"id": n, "symbol": G.nodes[n].get("symbol", n)} for n in G.nodes()],
+            "edges": [{"source": u, "target": v, "score": d["score"]} for u, v, d in G.edges(data=True)],
+        }
+        generate_bioinformatics_report(hub_scores=hub_scores, ppi_crossref=crossref, ppi_graph=graph_data)
 
 
 def cmd_literature(args):
     """Run literature mining."""
-    from med_research.pipeline.literature_mining.miner import LiteratureMiner
-
-    miner = LiteratureMiner()
-    results = miner.search(
-        max_articles=args.max_articles,
-        target_gene_queries=args.targeted,
-        extract_content=args.extract,
-        no_cache=args.no_cache,
+    import med_research.pipeline.literature_mining.miner as miner_mod
+    from med_research.pipeline.literature_mining.miner import (
+        mine_literature,
+        print_summary,
     )
 
+    results, entities, candidates, _ = mine_literature(
+        max_per_query=args.max_articles,
+        use_cache=not args.no_cache,
+        targeted_candidates=args.targeted,
+        extract_content=args.extract,
+    )
+
+    # print_summary reads the module-global entities_hack (set by miner.main())
+    miner_mod.entities_hack = {
+        gid: entities["genes"].get(gid, {"name": gid})
+        for gid in results.get("gene_coverage", {})
+    }
+    print_summary(results, candidates, entities)
+
     if args.export_html:
-        from med_research.pipeline.literature_mining.report import generate_html_report
-        generate_html_report(results)
+        from med_research.pipeline.literature_mining.report import generate_literature_report
+        generate_literature_report(results, entities, candidates)
 
     return 0
 
 
 def cmd_screening(args):
     """Run virtual drug screening."""
-    from med_research.pipeline.virtual_screening.screening import VirtualScreeningEngine
-    engine = VirtualScreeningEngine()
-    engine.run(gene_id=args.gene, top_n=args.top, use_vina=args.use_vina)
+    from med_research.pipeline.virtual_screening.screening import (
+        build_compound_library,
+        get_untargeted_genes,
+        print_summary,
+        screen_compounds,
+    )
+
+    library = build_compound_library()
+    untargeted = get_untargeted_genes()
+    target_ids = [args.gene] if args.gene else [g["id"] for g in untargeted]
+    results = screen_compounds(
+        target_genes=target_ids,
+        compound_library=library,
+        top_n=args.top,
+        use_vina=args.use_vina,
+    )
+    print_summary(results)
 
     if args.export_html:
-        from med_research.pipeline.virtual_screening.report import generate_html_report
-        generate_html_report(engine.results)
+        from med_research.pipeline.virtual_screening.report import generate_screening_report
+        generate_screening_report(results)
     return 0
 
 
 def cmd_trials(args):
     """Track clinical trials."""
-    from med_research.pipeline.clinical_trials.tracker import ClinicalTrialTracker
-    tracker = ClinicalTrialTracker(args.disease)
-    tracker.run(no_cache=args.no_cache)
+    from med_research.pipeline.clinical_trials.tracker import print_summary, track_trials
+
+    results = track_trials(
+        query="lupus OR SLE",
+        max_results=args.top,
+        use_cache=not args.no_cache,
+    )
+    print_summary(results["stats"], results["kg_crossref"])
 
     if args.export_html:
-        from med_research.pipeline.clinical_trials.report import generate_html_report
-        generate_html_report(tracker.results)
+        from med_research.pipeline.clinical_trials.report import generate_ct_report
+        generate_ct_report(results)
     return 0
 
 
 def cmd_ml(args):
     """Train ML predictor."""
-    from med_research.pipeline.ml_predictor.predictor import MLPredictor
-    pred = MLPredictor(args.disease)
-    pred.run()
+    from med_research.pipeline.knowledge_graph.builder import build_graph
+    from med_research.pipeline.ml_predictor.predictor import print_summary, train_and_predict
+
+    G = build_graph(args.disease)
+    results = train_and_predict(G, top_n=args.top)
+    if "error" in results:
+        print(f"❌ {results['error']}")
+        return 0
+    print_summary(results)
 
     if args.export_html:
-        from med_research.pipeline.ml_predictor.report import generate_html_report
-        generate_html_report(pred.results)
+        from med_research.pipeline.ml_predictor.report import generate_ml_report
+        generate_ml_report(results)
     return 0
 
 
 def cmd_synergy(args):
     """Drug combination synergy."""
-    from med_research.pipeline.drug_synergy.engine import DrugSynergyEngine
-    engine = DrugSynergyEngine(args.disease)
-    engine.run()
+    from med_research.pipeline.drug_synergy.engine import (
+        analyze,
+        compute_synergy,
+        print_top_pairs,
+    )
+
+    pairs = compute_synergy()
+    analyze(pairs)
+    print_top_pairs(pairs, args.top)
 
     if args.export_html:
         from med_research.pipeline.drug_synergy.report import generate_html_report
-        generate_html_report(engine.results)
+        generate_html_report(pairs)
     return 0
 
 
@@ -398,72 +551,97 @@ def cmd_safety(args):
 
 def cmd_network(args):
     """Network pharmacology analysis."""
-    from med_research.pipeline.network_pharmacology.analyzer import NetworkAnalyzer
-    ana = NetworkAnalyzer(args.disease)
-    ana.run()
+    from med_research.pipeline.network_pharmacology.analyzer import (
+        compute_all_metrics,
+        print_analysis,
+    )
+
+    results = compute_all_metrics()
+    print_analysis(results)
 
     if args.export_html:
         from med_research.pipeline.network_pharmacology.report import generate_html_report
-        generate_html_report(ana.results)
+        generate_html_report(results)
     return 0
 
 
 def cmd_expression(args):
     """Gene expression correlations."""
-    from med_research.pipeline.gene_expression.correlator import ExpressionCorrelator
-    corr = ExpressionCorrelator(args.disease)
-    corr.run()
+    from med_research.pipeline.gene_expression.correlator import (
+        analyze,
+        compute_all_correlations,
+        print_top_correlations,
+    )
+
+    results = compute_all_correlations()
+    analyze(results, None)
+    print_top_correlations(results, args.top)
 
     if args.export_html:
         from med_research.pipeline.gene_expression.report import generate_html_report
-        generate_html_report(corr.results)
+        generate_html_report(results)
     return 0
 
 
 def cmd_cart(args):
     """CAR-T response prediction."""
-    from med_research.pipeline.car_t_predictor.predictor import CARTPredictor
-    pred = CARTPredictor(args.disease)
-    pred.run()
+    from med_research.pipeline.car_t_predictor.predictor import (
+        analyze,
+        compute_all_scores,
+        print_top_genes,
+    )
+
+    results = compute_all_scores()
+    analyze(results)
+    print_top_genes(results, args.top)
 
     if args.export_html:
         from med_research.pipeline.car_t_predictor.report import generate_html_report
-        generate_html_report(pred.results)
+        generate_html_report(results)
     return 0
 
 
 def cmd_biomarker(args):
     """Biomarker discovery."""
-    from med_research.pipeline.biomarker_discovery.discover import BiomarkerDiscoverer
-    disc = BiomarkerDiscoverer(args.disease)
-    disc.run()
+    from med_research.pipeline.biomarker_discovery.discover import (
+        analyze,
+        compute_biomarker_matrix,
+        print_top_biomarkers,
+    )
+
+    results = compute_biomarker_matrix()
+    analyze(results)
+    print_top_biomarkers(results, args.top)
 
     if args.export_html:
         from med_research.pipeline.biomarker_discovery.report import generate_html_report
-        generate_html_report(disc.results)
+        generate_html_report(results)
     return 0
 
 
 def cmd_semantic(args):
     """Semantic search."""
     from med_research.pipeline.semantic_search.engine import SemanticSearchEngine
+
     engine = SemanticSearchEngine()
-    results = engine.search(args.query, top_n=args.top)
+    results = engine.search(args.query, top_k=args.top)
 
     if args.export_html:
-        from med_research.pipeline.semantic_search.report import generate_html_report
-        generate_html_report(results)
+        from med_research.pipeline.semantic_search.report import generate_semantic_report
+        generate_semantic_report(results, args.query, engine.get_indexed_count())
     return 0
 
 
 def cmd_evidence(args):
     """Multi-source evidence gathering."""
     from med_research.pipeline.evidence.gatherer import gather_evidence
+
+    sources = None if args.sources == "all" else [s.strip() for s in args.sources.split(",")]
     results = gather_evidence(
         query=args.query,
-        sources=args.sources,
-        max_results=args.max,
-        no_cache=args.no_cache,
+        sources=sources,
+        max_per_source=args.max,
+        use_cache=not args.no_cache,
     )
 
     if args.export_html:
@@ -474,13 +652,16 @@ def cmd_evidence(args):
 
 def cmd_extractor(args):
     """LLM-powered evidence extraction."""
-    from med_research.pipeline.evidence.extractor import EvidenceExtractor
-    extractor = EvidenceExtractor(
-        model=args.model or None,
+    from med_research.pipeline.evidence.extractor import extract_all
+
+    sources = [s.strip() for s in args.sources.split(",")]
+    results = extract_all(
+        query=args.query,
+        sources=sources,
         max_articles=args.max,
-        no_cache=args.no_cache,
+        model=args.model or None,
+        use_cache=not args.no_cache,
     )
-    results = extractor.extract(query=args.query, sources=args.sources)
 
     if args.export_html:
         from med_research.pipeline.evidence.extractor_report import generate_html_report
@@ -490,26 +671,56 @@ def cmd_extractor(args):
 
 def cmd_monitor(args):
     """Evidence monitoring."""
-    from med_research.pipeline.evidence.monitor import EvidenceMonitor
-    monitor = EvidenceMonitor()
+    from med_research.pipeline.evidence.monitor import (
+        compare_snapshots,
+        list_snapshots,
+        load_latest_snapshots,
+        print_diff_summary,
+        take_snapshot,
+    )
 
-    if args.snapshot:
-        monitor.take_snapshot(sources=args.sources)
-    elif args.list_snapshots:
-        monitor.list_snapshots()
-    else:
-        monitor.diff(sources=args.sources)
+    sources = [s.strip() for s in args.sources.split(",")]
 
-    if args.export_html:
-        from med_research.pipeline.evidence.monitor_report import generate_html_report
-        generate_html_report(monitor.last_diff)
+    if args.list_snapshots:
+        snapshots = list_snapshots()
+        print(f"\n📂 Available snapshots ({len(snapshots)}):")
+        for p in snapshots[:20]:
+            print(f"  {p.name}")
+        return 0
+
+    if args.diff or args.export_html:
+        snapshots = load_latest_snapshots(2)
+        if len(snapshots) < 2:
+            print("⚠️  Need at least 2 snapshots. Taking baseline + new snapshot...")
+            prev = take_snapshot(sources=sources, max_per_query=args.max)
+            rate_limited_sleep(2)
+            curr = take_snapshot(sources=sources, max_per_query=args.max)
+        else:
+            prev, curr = snapshots
+        diff = compare_snapshots(prev, curr)
+        print_diff_summary(diff)
+        if args.export_html:
+            from med_research.pipeline.evidence.monitor_report import generate_html_report
+            generate_html_report(diff, prev, curr)
+        return 0
+
+    take_snapshot(sources=sources, max_per_query=args.max)
     return 0
 
 
 def cmd_cross_disease(args):
     """Cross-disease analysis."""
-    from med_research.pipeline.cross_disease.analyzer import compute_cross_disease_analysis
+    from med_research.pipeline.cross_disease.analyzer import (
+        analyze,
+        compute_cross_disease_analysis,
+        print_repurposing,
+        print_top_drugs,
+    )
     results = compute_cross_disease_analysis()
+
+    analyze(results)
+    print_top_drugs(results, top_n=args.top)
+    print_repurposing(results, top_n=args.top)
 
     if args.export_html:
         from med_research.pipeline.cross_disease.report import generate_html_report
@@ -552,49 +763,68 @@ def _step_kg(args):
 
 
 def _step_repurpose(args):
-    from med_research.pipeline.drug_repurposing.engine import DrugRepurposingEngine
-    engine = DrugRepurposingEngine(args.disease)
-    engine.run()
+    from med_research.pipeline.drug_repurposing.engine import (
+        DATA_DIR,
+        analyze,
+        identify_untargeted_genes,
+        load_genes,
+        load_json,
+        load_knowledge_graph,
+        print_top_candidates,
+        score_candidates,
+    )
+
+    G = load_knowledge_graph(args.disease)
+    genes = load_genes(args.disease)
+    candidates = load_json(DATA_DIR / "candidates.json")["repurposing_candidates"]
+    untargeted = identify_untargeted_genes(G)
+    untargeted_ids = {g["id"] for g in untargeted}
+    scored = score_candidates(G, candidates, genes)
+    scored = [c for c in scored if c["gene_id"] in untargeted_ids]
+    analyze(scored)
+    print_top_candidates(scored, 10)
 
 
 def _step_bioinformatics(args):
     if not args.no_cache:
-        from med_research.pipeline.bioinformatics.enrichment import run_enrichment_analysis
-        from med_research.pipeline.bioinformatics.gwas import run_gwas_analysis
-        from med_research.pipeline.bioinformatics.ppi import run_ppi_analysis
-        run_gwas_analysis()
-        run_enrichment_analysis()
-        run_ppi_analysis()
+        _run_gwas(args)
+        _run_enrichment(args)
+        _run_ppi(args)
 
 
 def _step_literature(args):
-    from med_research.pipeline.literature_mining.miner import LiteratureMiner
-    miner = LiteratureMiner()
-    miner.search(max_articles=100, target_gene_queries=True)
+    from med_research.pipeline.literature_mining.miner import mine_literature
+    mine_literature(max_per_query=20, use_cache=True)
 
 
 def _step_screening(args):
-    from med_research.pipeline.virtual_screening.screening import VirtualScreeningEngine
-    engine = VirtualScreeningEngine()
-    engine.run(top_n=10)
+    from med_research.pipeline.virtual_screening.screening import (
+        build_compound_library,
+        get_untargeted_genes,
+        screen_compounds,
+    )
+
+    library = build_compound_library()
+    target_ids = [g["id"] for g in get_untargeted_genes()]
+    screen_compounds(target_genes=target_ids, compound_library=library, top_n=10)
 
 
 def _step_trials(args):
-    from med_research.pipeline.clinical_trials.tracker import ClinicalTrialTracker
-    tracker = ClinicalTrialTracker(args.disease)
-    tracker.run()
+    from med_research.pipeline.clinical_trials.tracker import track_trials
+    track_trials(max_results=20, use_cache=True)
 
 
 def _step_ml(args):
-    from med_research.pipeline.ml_predictor.predictor import MLPredictor
-    pred = MLPredictor(args.disease)
-    pred.run()
+    from med_research.pipeline.knowledge_graph.builder import build_graph
+    from med_research.pipeline.ml_predictor.predictor import train_and_predict
+
+    G = build_graph(args.disease)
+    train_and_predict(G, top_n=10)
 
 
 def _step_synergy(args):
-    from med_research.pipeline.drug_synergy.engine import DrugSynergyEngine
-    engine = DrugSynergyEngine(args.disease)
-    engine.run()
+    from med_research.pipeline.drug_synergy.engine import compute_synergy
+    compute_synergy()
 
 
 PIPELINE_STEPS = [

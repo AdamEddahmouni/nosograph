@@ -3,14 +3,22 @@ Shared test fixtures for the Lupus Research Platform test suite.
 """
 
 import json
+import os
 from pathlib import Path
 
 import pytest
 
+from med_research.pipeline.knowledge_graph.config import load_genes
+
+# Disable the in-memory API rate limiter during tests. The web API suite
+# issues 100+ requests per session and would otherwise be throttled with
+# 429 responses mid-run. This runs before any test module (including
+# test_web_api.py, which imports med_research.web.main) is loaded, so the
+# middleware picks it up at module import time.
+os.environ["RATE_LIMIT_REQUESTS"] = "0"
+
 PROJECT_ROOT = Path(__file__).parent.parent
 DR_DATA_DIR = PROJECT_ROOT / "src" / "med_research" / "pipeline" / "drug_repurposing" / "data"
-
-from med_research.pipeline.knowledge_graph.config import load_genes
 
 
 @pytest.fixture(scope="session")

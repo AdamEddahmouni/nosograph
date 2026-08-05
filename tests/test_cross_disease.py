@@ -155,12 +155,13 @@ def test_compute_disease_similarity_returns_matrix(all_data):
     assert len(result["ranked_pairs"]) == 21  # 7 choose 2
 
 
-def test_disease_similarity_sle_ra_highest(all_data):
+def test_disease_similarity_sle_ss_highest(all_data):
+    """SLE ↔ Sjögren's is now the most similar pair (0.22), ahead of SLE ↔ RA (0.20)."""
     result = compute_disease_similarity(all_data)
     top = result["ranked_pairs"][0]
-    assert top["disease_a"] == "ra"
-    assert top["disease_b"] == "sle"
-    assert top["overall_similarity"] > 0.1
+    assert top["disease_a"] == "sle"
+    assert top["disease_b"] == "ss"
+    assert top["overall_similarity"] > 0.15
 
 
 # ── Unit: Multi-Disease Drug Scoring ───────────────────────────────────────

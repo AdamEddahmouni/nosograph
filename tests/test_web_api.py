@@ -780,25 +780,25 @@ class TestErrorHandling:
 
 
 class TestStaticServing:
-    """Verify the dashboard and existing module HTML reports are served."""
+    """Verify the dashboard and existing module reports are served at v2 paths."""
 
     def test_dashboard_served(self, client):
         resp = client.get("/")
         assert resp.status_code == 200
         assert "Medical Research Platform" in resp.text
 
-    def test_knowledge_graph_web_served(self, client):
+    def test_legacy_kg_web_path_not_served(self, client):
+        """v2 dropped the v1 knowledge_graph/web/ UI — the legacy path must 404."""
         resp = client.get("/knowledge_graph/web/index.html")
-        assert resp.status_code == 200
-        assert "Knowledge Graph" in resp.text or "Cytoscape" in resp.text
+        assert resp.status_code == 404
 
-    def test_drug_repurposing_report_served(self, client):
-        resp = client.get("/drug_repurposing/report.html")
+    def test_drug_repurposing_data_served(self, client):
+        resp = client.get("/static/drug_repurposing/candidates.json")
         assert resp.status_code == 200
-        assert "repurposing" in resp.text.lower() or "Drug" in resp.text
+        assert "repurposing_candidates" in resp.text
 
     def test_bioinformatics_report_served(self, client):
-        resp = client.get("/bioinformatics/bioinformatics_report.html")
+        resp = client.get("/static/bioinformatics/ppi_interactive.html")
         assert resp.status_code == 200
 
 

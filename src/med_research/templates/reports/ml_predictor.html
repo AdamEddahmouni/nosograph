@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+{% block title %}ML Target Predictor Report{% endblock %}
+
+{% block hero_title %}ML Target Predictor Report{% endblock %}
+{% block hero_subtitle %}
+    XGBoost-Based Druggability Prediction · {{ n_genes }} Genes · CV ROC-AUC: {{ "%.3f"|format(cv_roc_auc) }}
+{% endblock %}
+
+{% block extra_head %}{% endblock %}
+{% block extra_css %}
+/* ML Predictor-specific styles */
+{% endblock %}
+
+{% block content %}
+<!-- Stats -->
+<div class="stats-grid">
+    <div class="stat-card">
+        <div class="stat-value" style="color:#60a5fa">{{ n_genes }}</div>
+        <div class="stat-label">Genes Analyzed</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-value" style="color:#4ade80">{{ n_targeted }}</div>
+        <div class="stat-label">Already Targeted</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-value" style="color:#c084fc">{{ n_untargeted }}</div>
+        <div class="stat-label">Untargeted (Opportunity)</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-value" style="color:#fbbf24">{{ "%.3f"|format(cv_roc_auc) }}</div>
+        <div class="stat-label">CV ROC-AUC</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-value" style="color:#f472b6">{{ top_predictions|length }}</div>
+        <div class="stat-label">Predicted Novel Targets</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-value" style="color:#34d399">{{ n_features }}</div>
+        <div class="stat-label">Features</div>
+    </div>
+</div>
+
+<h2 class="section-title">🎯 Top Predicted Novel Druggable Targets</h2>
+<p style="color:#787890;font-size:0.82rem;margin-bottom:12px">
+    Genes currently without direct therapeutic agents, ranked by XGBoost druggability score
+</p>
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>#</th><th>Gene</th><th>Category</th><th>Score</th>
+                <th>OR</th><th>Degree</th><th>Confidence</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for p in top_predictions %}
+            {% set score = p.druggability_score %}
+            {% if score >= 0.8 %}
+                {% set score_color = "#4ade80" %}
+            {% elif score >= 0.6 %}
+                {% set score_color = "#fbbf24" %}
+            {% else %}
+                {% set score_color = "#f87171" %}
+            {% endif %}
+            <tr>
+                <td style="color:#787890">{{ loop.index }}</td>
+                <td><strong>{{ p.gene_name[:50] }}</strong></td>
+                <td><span class="score-badge" style="background:rgba(96,165,250,0.1);color:#60a5fa">{{ p.category }}</span></td>
+                <td style="color:{{ score_color }};font-weight:700">{{ "%.3f"|format(score) }}</td>
+                <td>{{ p.odds_ratio_display }}</td>
+                <td>{{ p.degree }}</td>
+                <td>
+                    <div class="bar-container">
+                        <div class="bar-fill" style="width:{{ (score * 150)|int }}px;background:linear-gradient(90deg,{{ score_color }},#34d399)"></div>
+                    </div>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<h2 class="section-title">📊 Feature Importance &amp; SHAP</h2>
+<div class="charts-row">
+    {% if importance_chart %}
+    <div class="chart-card">
+        <h4>XGBoost Feature Importance</h4>
+        <img src="data:image/png;base64,{{ importance_chart }}" alt="Feature Importance"/>
+    </div>
+    {% endif %}
+    {% if shap_chart %}
+    <div class="chart-card">
+        <h4>SHAP Feature Impact</h4>
+        <img src="data:image/png;base64,{{ shap_chart }}" alt="SHAP"/>
+    </div>
+    {% endif %}
+</div>
+
+<h2 class="section-title">📋 Full Feature Importance</h2>
+<div class="table-container">
+    <table>
+        <thead><tr><th>#</th><th>Feature</th><th>Importance</th><th></th></tr></thead>
+        <tbody>
+        {% for feat in feature_importance %}
+            <tr>
+                <td>{{ loop.index }}</td>
+                <td><code>{{ feat.name }}</code></td>
+                <td style="font-weight:600;color:#fbbf24">{{ "%.4f"|format(feat.importance) }}</td>
+                <td>
+                    <div class="bar-fill" style="width:{{ (feat.importance * 300)|int }}px;background:linear-gradient(90deg,#818cf8,#c084fc)"></div>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
+
+{% block footer_text %}
+ML Target Predictor · XGBoost + SHAP · Lupus Research Platform
+{% endblock %}
+
+{% block footer_links %}
+Trained on <a href="../knowledge_graph/web/index.html">Lupus Knowledge Graph</a> gene features
+{% endblock %}

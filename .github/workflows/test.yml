@@ -5,6 +5,10 @@ on:
     branches: [main, master]
   pull_request:
     branches: [main, master]
+  schedule:
+    # Weekly slow-test run (live external API calls) — Mon 03:00 UTC
+    - cron: "0 3 * * 1"
+  workflow_dispatch:
 
 jobs:
   test:
@@ -28,19 +32,52 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install -r requirements-dev.txt
+          pip install -e .  # install the med_research package itself (src layout)
+
+      - name: Check for stale internal imports
+        run: |
+          python scripts/check_imports.py
 
       - name: Run tests
         run: |
-          python -m pytest tests/ -v --tb=short
+          python -m pytest tests/ -m "not slow" -v --tb=short
 
       - name: Verify unified CLI works
         run: |
-          python main.py --help
+          python -m med_research.cli --help
 
-      - name: Verify graph builds
+      - name: Verify knowledge graph builds
         run: |
-          python knowledge_graph/build_graph.py --export
+          python -m med_research.cli kg --disease sle --export
 
-      - name: Verify engine runs
+      - name: Verify repurposing engine runs
         run: |
-          python drug_repurposing/engine.py --top 5
+          python -m med_research.cli repurpose --disease sle --top 5
+
+  # Slow tests hit live external APIs (GWAS Catalog, STRING, Enrichr, PubMed,
+  # ClinicalTrials.gov, GEO, PDB/Vina). Run them on a schedule or manually so
+  # regressions are caught without blocking every PR.
+  slow-tests:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -r requirements-dev.txt
+          pip install -e .
+
+      - name: Run slow tests (live external API calls)
+        run: |
+          python -m pytest tests/ -m slow -v --tb=short

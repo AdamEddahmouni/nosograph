@@ -1,4 +1,4 @@
-.PHONY: help test test-quiet test-cov lint lint-fix run-all kg repurpose bio literature docker-build docker-up docker-test clean install
+.PHONY: help test test-quiet test-cov lint lint-fix check-imports run-all kg repurpose bio literature docker-build docker-up docker-test clean install
 
 help:  ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | \
@@ -27,6 +27,9 @@ lint:  ## Run ruff linter
 
 lint-fix:  ## Auto-fix ruff lint issues
 	python -m ruff check src/ tests/ --fix
+
+check-imports:  ## Audit for stale/dead internal med_research imports
+	python scripts/check_imports.py
 
 # ── Pipeline ─────────────────────────────────────────────────────────────
 

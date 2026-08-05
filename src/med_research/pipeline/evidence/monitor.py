@@ -458,7 +458,7 @@ def main():
         print_diff_summary(diff)
 
         if args.export_html:
-            from med_research.pipeline.evidence.report import generate_html_report
+            from med_research.pipeline.evidence.monitor_report import generate_html_report
             generate_html_report(diff, prev, curr)
             print("\n✅ HTML report generated: evidence_monitor/report.html")
         return

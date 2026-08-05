@@ -735,8 +735,8 @@ class TestSearchPubmed:
         articles = search_pubmed("lupus treatment", max_results=10)
         assert articles == []
 
-    @patch("med_research.pipeline.literature_mining.Medline")
-    @patch("med_research.pipeline.literature_mining.Entrez")
+    @patch("med_research.pipeline.literature_mining.miner.Medline")
+    @patch("med_research.pipeline.literature_mining.miner.Entrez")
     def test_returns_articles_with_abstracts(self, mock_entrez, mock_medline, monkeypatch):
         """search_pubmed should return parsed articles when BioPython is available."""
         from med_research.pipeline.literature_mining.miner import search_pubmed
@@ -784,8 +784,8 @@ class TestSearchPubmed:
         assert articles[0]["authors"] == ["Author A", "Author B"]
         assert "Journal Article" in articles[0]["publication_types"]
 
-    @patch("med_research.pipeline.literature_mining.Medline")
-    @patch("med_research.pipeline.literature_mining.Entrez")
+    @patch("med_research.pipeline.literature_mining.miner.Medline")
+    @patch("med_research.pipeline.literature_mining.miner.Entrez")
     def test_handles_entrez_error_gracefully(self, mock_entrez, mock_medline, monkeypatch):
         """search_pubmed should return [] on Entrez exception, not crash."""
         from med_research.pipeline.literature_mining.miner import search_pubmed
@@ -797,8 +797,8 @@ class TestSearchPubmed:
         articles = search_pubmed("lupus", max_results=10)
         assert articles == []
 
-    @patch("med_research.pipeline.literature_mining.Medline")
-    @patch("med_research.pipeline.literature_mining.Entrez")
+    @patch("med_research.pipeline.literature_mining.miner.Medline")
+    @patch("med_research.pipeline.literature_mining.miner.Entrez")
     def test_returns_empty_on_no_ids(self, mock_entrez, mock_medline, monkeypatch):
         """search_pubmed should return [] when PubMed returns no matching IDs."""
         from med_research.pipeline.literature_mining.miner import search_pubmed

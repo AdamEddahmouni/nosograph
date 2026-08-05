@@ -267,6 +267,15 @@ class TestReportGeneration:
 
 
 class TestExtractEvidenceNoAPI:
+    @pytest.fixture(autouse=True)
+    def _isolate_cache(self, tmp_path, monkeypatch):
+        """Write to a temp cache instead of the tracked pipeline data dir."""
+        monkeypatch.setattr("med_research.pipeline.evidence.extractor.DATA_DIR", tmp_path)
+        monkeypatch.setattr(
+            "med_research.pipeline.evidence.extractor.CACHE_PATH",
+            tmp_path / "extraction_cache.json",
+        )
+
     def test_extract_without_api_key(self):
         """Extraction without API key returns minimal dict."""
         article = {
@@ -278,7 +287,7 @@ class TestExtractEvidenceNoAPI:
             "id": "TEST001",
         }
         # Ensure no API key is set
-        with patch("llm_extractor.extractor.API_KEY", ""):
+        with patch("med_research.pipeline.evidence.extractor.API_KEY", ""):
             result = extract_evidence(article, "test query", use_cache=False)
             assert result is not None
             assert result["evidence_level"] == "unknown"
@@ -295,8 +304,8 @@ class TestExtractEvidenceNoAPI:
             "id": "TEST001",
         }
         with (
-            patch("llm_extractor.extractor.API_KEY", "fake-key"),
-            patch("llm_extractor.extractor.call_llm", return_value=None),
+            patch("med_research.pipeline.evidence.extractor.API_KEY", "fake-key"),
+            patch("med_research.pipeline.evidence.extractor.call_llm", return_value=None),
         ):
                 result = extract_evidence(article, "test query", use_cache=False)
                 assert result is not None
@@ -314,8 +323,8 @@ class TestExtractEvidenceNoAPI:
             "id": "TEST001",
         }
         with (
-            patch("llm_extractor.extractor.API_KEY", "fake-key"),
-            patch("llm_extractor.extractor.call_llm",
+            patch("med_research.pipeline.evidence.extractor.API_KEY", "fake-key"),
+            patch("med_research.pipeline.evidence.extractor.call_llm",
                   return_value="not valid json at all"),
         ):
                 result = extract_evidence(article, "test query", use_cache=False)
@@ -333,8 +342,8 @@ class TestExtractEvidenceNoAPI:
             "id": "TEST001",
         }
         with (
-            patch("llm_extractor.extractor.API_KEY", "fake-key"),
-            patch("llm_extractor.extractor.call_llm",
+            patch("med_research.pipeline.evidence.extractor.API_KEY", "fake-key"),
+            patch("med_research.pipeline.evidence.extractor.call_llm",
                   return_value='{"evidence_level": "rct", "model_system": "human"}'),
         ):
                 result = extract_evidence(article, "test query", use_cache=False)
@@ -350,9 +359,18 @@ class TestExtractEvidenceNoAPI:
 
 
 class TestExtractAllNoAPI:
+    @pytest.fixture(autouse=True)
+    def _isolate_cache(self, tmp_path, monkeypatch):
+        """Write to a temp cache instead of the tracked pipeline data dir."""
+        monkeypatch.setattr("med_research.pipeline.evidence.extractor.DATA_DIR", tmp_path)
+        monkeypatch.setattr(
+            "med_research.pipeline.evidence.extractor.CACHE_PATH",
+            tmp_path / "extraction_cache.json",
+        )
+
     def test_extract_all_without_api_key(self):
         """extract_all without API key returns error dict."""
-        with patch("llm_extractor.extractor.API_KEY", ""):
+        with patch("med_research.pipeline.evidence.extractor.API_KEY", ""):
             result = extract_all("lupus", sources=["pubmed"], max_articles=3,
                                  use_cache=True)
             assert result["total_extracted"] == 0

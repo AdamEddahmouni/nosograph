@@ -448,7 +448,7 @@ def main():
     print_summary(results)
 
     if args.export_html:
-        from med_research.pipeline.evidence.report import generate_html_report
+        from med_research.pipeline.evidence.gatherer_report import generate_html_report
         generate_html_report(results)
         print("\n✅ HTML report generated: evidence_gatherer/report.html")
 
