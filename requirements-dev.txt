@@ -1,3 +1,9 @@
 pytest>=7.0
 pytest-cov>=4.0
 ruff>=0.1.0
+playwright>=1.48,<2
+# Optional semantic-search integrations are exercised by the offline suite.
+chromadb>=1.5
+sentence-transformers>=5.0
+# Supports asyncio-aware pytest configuration used by async integration tests.
+pytest-asyncio>=0.24

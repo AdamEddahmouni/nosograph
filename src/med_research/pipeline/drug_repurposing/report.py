@@ -12,13 +12,20 @@ Generates a beautiful standalone HTML report with:
 from datetime import datetime
 from pathlib import Path
 
+from med_research.pipeline.reporting import apply_disease_labels, disease_context
+
 
 def generate_html_report(
-    scored_candidates: list, untargeted_genes: list, genes: dict, G
+    scored_candidates: list,
+    untargeted_genes: list,
+    genes: dict,
+    G,
+    disease_id: str = "sle",
 ) -> str:
-    """Generate a standalone HTML report and return the path."""
+    """Generate a standalone report for the requested disease."""
 
     output_path = Path(__file__).parent / "report.html"
+    context = disease_context(disease_id)
 
     # Build gene->candidates mapping
     gene_candidates = {}
@@ -127,7 +134,7 @@ def generate_html_report(
             </div>
             <div class="gene-card-body">
                 <p class="gene-function"><strong>Function:</strong> {escape_html(gene.get('function', ''))}</p>
-                <p class="gene-evidence"><strong>Lupus Evidence:</strong> {escape_html(gene.get('lupus_evidence', ''))}</p>
+                <p class="gene-evidence"><strong>{escape_html(context["name"])} Evidence:</strong> {escape_html(gene.get('disease_evidence') or gene.get('lupus_evidence', ''))}</p>
                 <p class="gene-odds"><strong>Odds Ratio:</strong> {gene.get('odds_ratio', 'N/A')} | <strong>Chr:</strong> {gene.get('chromosome', 'N/A')}</p>
             </div>
             <div class="gene-card-candidates">
@@ -169,6 +176,8 @@ def generate_html_report(
     ]
 
     html = template_env.get_template("reports/repurposing.html").render(
+        ctx_disease=context["name"],
+        ctx_disease_id=context["id"],
         n_candidates=len(scored_candidates),
         n_genes=len(untargeted_genes),
         n_tier1=n_tier1,
@@ -178,7 +187,9 @@ def generate_html_report(
         candidates=adapted_candidates,
         gene_rankings=adapted_gene_rankings,
         generated_at=datetime.now().strftime("%B %d, %Y at %H:%M"),
+        disease_id=context["name"],
     )
+    html = apply_disease_labels(html, disease_id)
 
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(html)

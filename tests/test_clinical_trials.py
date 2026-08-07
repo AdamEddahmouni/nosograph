@@ -660,3 +660,26 @@ class TestHexToRgba:
         assert "120,120,144" in result
 
 
+def test_cmd_trials_uses_disease_query(monkeypatch):
+    """The CLI trials command resolves the query from the disease config."""
+    from med_research.cli import _build_parser, cmd_trials
+    from med_research.pipeline.clinical_trials import tracker
+
+    captured = {}
+
+    def fake_track(**kwargs):
+        captured.update(kwargs)
+        return {"trials": [], "stats": {}, "kg_crossref": {}}
+
+    monkeypatch.setattr(tracker, "track_trials", fake_track)
+    monkeypatch.setattr(tracker, "print_summary", lambda *a, **k: None)
+
+    parser = _build_parser()
+    assert cmd_trials(parser.parse_args(["trials", "--disease", "ra"])) == 0
+    assert captured["query"] == "rheumatoid arthritis OR RA"
+
+    # Default disease keeps the SLE query
+    assert cmd_trials(parser.parse_args(["trials"])) == 0
+    assert captured["query"] == "lupus OR SLE"
+
+

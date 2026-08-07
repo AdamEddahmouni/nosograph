@@ -218,9 +218,11 @@ def search_nodes(query: str, disease_id: str = "sle") -> list[dict]:
 # ── Network Pharmacology ────────────────────────────────────────────────
 
 
-def run_centrality_analysis(metric: str = "betweenness", top_n: int = 15) -> dict:
-    """Compute centrality metrics for the knowledge graph."""
-    G = get_knowledge_graph()
+def run_centrality_analysis(
+    metric: str = "betweenness", top_n: int = 15, disease_id: str = "sle"
+) -> dict:
+    """Compute centrality metrics for the selected disease graph."""
+    G = get_knowledge_graph(disease_id)
     from med_research.pipeline.network_pharmacology.analyzer import compute_centrality
 
     all_centrality = compute_centrality(G)
@@ -240,8 +242,8 @@ def run_centrality_analysis(metric: str = "betweenness", top_n: int = 15) -> dic
     return {"metric": metric, "nodes": nodes, "total_nodes": G.number_of_nodes()}
 
 
-def run_community_detection() -> dict:
-    """Detect communities in the knowledge graph."""
+def run_community_detection(disease_id: str = "sle") -> dict:
+    """Detect communities in the selected disease knowledge graph."""
     from med_research.pipeline.network_pharmacology.analyzer import compute_communities
 
-    return compute_communities(get_knowledge_graph())
+    return compute_communities(get_knowledge_graph(disease_id))

@@ -1,7 +1,8 @@
 """LLM Evidence Extractor API router."""
 
-from fastapi import APIRouter, Query
+from fastapi import APIRouter, HTTPException, Query
 
+from med_research.diseases.base import Disease
 from med_research.web.models.extractor import ExtractionResponse
 from med_research.web.services.extractor_service import run_llm_extraction
 
@@ -17,6 +18,7 @@ async def llm_extract(
                               description="Max articles to extract from"),
     model: str = Query("", min_length=0, max_length=200, description="LLM model name (default: gpt-4o-mini)"),
     use_cache: bool = Query(True, description="Use cached extractions"),
+    disease_id: str = Query("sle", description="Disease ID"),
 ):
     """Extract structured data from biomedical evidence using an LLM.
 
@@ -26,8 +28,13 @@ async def llm_extract(
 
     Requires OPENAI_API_KEY environment variable to be set.
     """
+    try:
+        disease_name = Disease(disease_id).get_display_name()
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+    search_query = q if disease_name.lower() in q.lower() else f"{disease_name} {q}"
     return run_llm_extraction(
-        query=q,
+        query=search_query,
         sources=[s.strip() for s in sources.split(",")] if sources else None,
         max_articles=max_articles,
         model=model if model else None,

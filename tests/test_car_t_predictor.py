@@ -110,6 +110,38 @@ def test_analyze_prints(capsys):
     assert "1 genes scored" in captured.out
 
 
+# ── Disease-Aware Scoring ────────────────────────────────────────────────
+
+
+def test_disease_specific_gene_universe():
+    """Each disease scores its own gene set, not the SLE universe."""
+    sle = compute_all_scores(disease_id="sle")
+    t1d = compute_all_scores(disease_id="t1d")
+    assert len(t1d) != len(sle)
+    assert "INS" in {g["gene_id"] for g in t1d}
+
+
+def test_disease_specific_rubric_changes_scores():
+    """Category-keyed rubrics (non-SLE) must change scores vs the SLE default."""
+    sle = {g["gene_id"]: g["composite_score"] for g in compute_all_scores(disease_id="sle")}
+    ms = {g["gene_id"]: g["composite_score"] for g in compute_all_scores(disease_id="ms")}
+    common = set(sle) & set(ms)
+    assert common, "diseases share at least some genes"
+    assert any(sle[g] != ms[g] for g in common), "MS rubric should rescore shared genes"
+
+
+def test_ms_top_genes_are_ms_specific():
+    """MS should rank myelin/Tfh genes (MBP, MOG, CXCR5) above generic B-cell ones."""
+    ms = {g["gene_id"]: g["composite_score"] for g in compute_all_scores(disease_id="ms")}
+    sle = {g["gene_id"]: g["composite_score"] for g in compute_all_scores(disease_id="sle")}
+    # MS-specific genes present in the MS set must outrank CD19 (the generic
+    # B-cell benchmark) under the MS rubric — and the reverse must hold for SLE.
+    for gene in ("MBP", "MOG", "CXCR5"):
+        if gene in ms:
+            assert ms[gene] > ms.get("CD19", 0), f"{gene} should beat CD19 in MS"
+    assert sle.get("CD19", 0) >= sle.get("MBP", 0), "CD19 should lead the SLE rubric"
+
+
 # ── Report ────────────────────────────────────────────────────────────────
 
 

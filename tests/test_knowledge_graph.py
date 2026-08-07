@@ -145,6 +145,20 @@ class TestBuildGraph:
         out_edges = list(sample_graph.out_edges("Lupus (SLE)"))
         assert len(out_edges) == 0
 
+    def test_drug_without_mechanism_does_not_crash(self, monkeypatch):
+        """A drug missing the `mechanism` key (partially scaffolded module)
+        must not crash the KG build — every other drug field uses .get()."""
+        from med_research.pipeline.knowledge_graph import builder
+
+        def fake_load_drugs(_disease_id):
+            return {"drugs": [{"id": "testdrug", "name": "Test Drug"}]}
+
+        monkeypatch.setattr(builder, "load_drugs", fake_load_drugs)
+        G = builder.build_graph()
+        node = G.nodes["testdrug"]
+        assert node["type"] == "drug"
+        assert node["description"] == ""
+
 
 class TestExportForWeb:
     """Tests for export_for_web()."""

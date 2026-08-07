@@ -18,6 +18,7 @@ import os
 from datetime import datetime
 from pathlib import Path
 
+from med_research.pipeline.reporting import apply_disease_labels, disease_context
 from med_research.templates import env as template_env
 
 try:
@@ -41,6 +42,7 @@ def generate_bioinformatics_report(
     ppi_graph: dict = None,
     gwas_results: dict = None,
     gwas_crossref: dict = None,
+    disease_id: str = "sle",
 ) -> str:
     """
     Generate a standalone HTML bioinformatics report.
@@ -49,6 +51,7 @@ def generate_bioinformatics_report(
     only show sections for available data.
     """
     output_path = Path(__file__).parent / "bioinformatics_report.html"
+    context = disease_context(disease_id)
 
     # ── Enrichment section ───────────────────────────────────────────────
     enrichment_html = ""
@@ -81,7 +84,10 @@ def generate_bioinformatics_report(
         ppi_html=ppi_html,
         gwas_html=gwas_html,
         generated_at=datetime.now().strftime("%B %d, %Y at %H:%M"),
+        ctx_disease=context["name"],
+        ctx_disease_id=context["id"],
     )
+    html = apply_disease_labels(html, disease_id)
 
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(html)

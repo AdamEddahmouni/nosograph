@@ -33,31 +33,38 @@ if sys.platform == "win32":
 
 DATA_DIR = Path(__file__).parent / "data"
 
-_DEFAULT_SIGNATURE = None
+_DEFAULT_SIGNATURES: dict = {}
 
-def _get_default_signature():
-    global _DEFAULT_SIGNATURE
-    if _DEFAULT_SIGNATURE is None:
+def _get_default_signature(disease_id: str = "sle"):
+    """Return the curated fallback expression signature for a disease.
+
+    Curated signatures are only curated for SLE; other diseases fall back
+    to the SLE signature as a documented stand-in until GEO data exists.
+    """
+    global _DEFAULT_SIGNATURES
+    if disease_id not in _DEFAULT_SIGNATURES:
         try:
             from med_research.pipeline.gene_expression.signature import get_signature
-            sig = get_signature(source="curated")
+            sig = get_signature(disease=disease_id, source="curated")
             _up = {k: v["fold_change"] for k, v in sig.get("upregulated", {}).items()}
             _down = {k: v["fold_change"] for k, v in sig.get("downregulated", {}).items()}
-            _DEFAULT_SIGNATURE = {"upregulated": _up, "downregulated": _down,
+            _DEFAULT_SIGNATURES[disease_id] = {"upregulated": _up, "downregulated": _down,
                                   "source": sig.get("source", "curated"),
-                                  "num_studies_used": sig.get("num_studies_used", 0)}
+                                  "num_studies_used": sig.get("num_studies_used", 0),
+                                  "disease": disease_id}
         except Exception:
-            _DEFAULT_SIGNATURE = {"upregulated": SLE_UPREGULATED,
+            _DEFAULT_SIGNATURES[disease_id] = {"upregulated": SLE_UPREGULATED,
                                   "downregulated": SLE_DOWNREGULATED,
                                   "source": "curated_literature",
-                                  "num_studies_used": 0}
-    return _DEFAULT_SIGNATURE
+                                  "num_studies_used": 0,
+                                  "disease": disease_id}
+    return _DEFAULT_SIGNATURES[disease_id]
 
 
-def _normalize_signature(signature):
+def _normalize_signature(signature, disease_id: str = "sle"):
     """Normalize a signature dict to {upregulated: {gene: fc}, downregulated: {gene: fc}}."""
     if signature is None:
-        sig = _get_default_signature()
+        sig = _get_default_signature(disease_id)
         return sig["upregulated"], sig["downregulated"], sig.get("source", ""), sig.get("num_studies_used", 0)
 
     if isinstance(next(iter(signature.get("upregulated", {}).values()), None), dict):
@@ -78,9 +85,9 @@ def load_json(path: Path) -> dict:
         return json.load(f)
 
 
-def load_drugs() -> dict:
+def load_drugs(disease_id: str = "sle") -> dict:
     """Load drug data indexed by drug ID."""
-    data = config_load_drugs()
+    data = config_load_drugs(disease_id)
     return {d["id"]: d for d in data["drugs"]}
 
 
@@ -435,8 +442,9 @@ def _assign_tier(score: float) -> str:
 
 
 def compute_all_correlations(progress_callback=None, signature=None,
-                             signature_source="auto", tissue=None) -> list:
-    """Correlate all 26 drugs against the SLE expression signature.
+                             signature_source="auto", tissue=None,
+                             disease_id: str = "sle", save: bool = True) -> list:
+    """Correlate drugs against a disease's expression signature.
 
     Returns list of scored drugs sorted by composite score descending.
 
@@ -445,25 +453,29 @@ def compute_all_correlations(progress_callback=None, signature=None,
         signature: Optional pre-loaded signature dict
         signature_source: "auto", "geo", or "curated"
         tissue: Tissue filter for GEO search
+        disease_id: Disease whose drug library and signature are used.
+        save: When False, compute in memory without writing the shared
+            expression_correlations.json (used by the comparative cross-disease
+            run so per-disease scoring doesn't clobber the last-run results).
     """
     cb = progress_callback or (lambda p, m: None)
 
     cb(0, "Loading drug library...")
-    drugs = load_drugs()
+    drugs = load_drugs(disease_id)
 
     if signature is None and signature_source != "curated":
         try:
             from med_research.pipeline.gene_expression.signature import get_signature
-            sig = get_signature(source=signature_source, tissue=tissue)
+            sig = get_signature(disease=disease_id, source=signature_source, tissue=tissue)
             if sig and sig.get("num_studies_used", 0) > 0:
                 signature = sig
         except Exception:
             pass
 
     if signature is None:
-        signature = _get_default_signature()
+        signature = _get_default_signature(disease_id)
 
-    _, _, sig_source, num_studies = _normalize_signature(signature)
+    _, _, sig_source, num_studies = _normalize_signature(signature, disease_id)
 
     cb(10, f"Correlating {len(drugs)} drugs against SLE expression signature ({sig_source})...")
     results = []
@@ -482,19 +494,21 @@ def compute_all_correlations(progress_callback=None, signature=None,
 
     results.sort(key=lambda x: x["composite_score"], reverse=True)
 
-    cb(95, "Saving results...")
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
-    output_path = DATA_DIR / "expression_correlations.json"
-    output_path.write_text(json.dumps({
-        "drugs": results,
-        "total_drugs": len(results),
-        "signature_upregulated": len(signature.get("upregulated", {})),
-        "signature_downregulated": len(signature.get("downregulated", {})),
-        "signature_source": sig_source,
-        "signature_studies": num_studies,
-    }, indent=2), encoding="utf-8")
-
-    cb(100, f"Results saved to {output_path}")
+    if save:
+        cb(95, "Saving results...")
+        DATA_DIR.mkdir(parents=True, exist_ok=True)
+        output_path = DATA_DIR / "expression_correlations.json"
+        output_path.write_text(json.dumps({
+            "drugs": results,
+            "total_drugs": len(results),
+            "signature_upregulated": len(signature.get("upregulated", {})),
+            "signature_downregulated": len(signature.get("downregulated", {})),
+            "signature_source": sig_source,
+            "signature_studies": num_studies,
+        }, indent=2), encoding="utf-8")
+        cb(100, f"Results saved to {output_path}")
+    else:
+        cb(100, "Correlation complete (in-memory)")
     return results
 
 
@@ -558,6 +572,7 @@ def main():
         description="Gene Expression Correlation — Connectivity Map approach for lupus"
     )
     parser.add_argument("--top", type=int, default=15, help="Number of top drugs to display")
+    parser.add_argument("--disease", "-d", default="sle", help="Disease ID (default: sle)")
     parser.add_argument("--export-html", action="store_true", help="Generate HTML report")
     parser.add_argument("--geo", action="store_true",
                         help="Use GEO-derived consensus signature (auto-fallback to curated)")
@@ -570,13 +585,14 @@ def main():
     if args.geo:
         try:
             from med_research.pipeline.gene_expression.signature import get_signature
-            signature = get_signature(source="auto", tissue=args.tissue)
+            signature = get_signature(disease=args.disease, source="auto", tissue=args.tissue)
         except Exception:
             pass
 
     results = compute_all_correlations(signature=signature,
                                        signature_source=signature_source,
-                                       tissue=args.tissue)
+                                       tissue=args.tissue,
+                                       disease_id=args.disease)
     analyze(results, signature if signature else None)
     print_top_correlations(results, args.top)
 
@@ -585,7 +601,8 @@ def main():
         _, _, sig_source, num_studies = _normalize_signature(signature)
         generate_html_report(results, signature_source=sig_source,
                             num_studies=num_studies,
-                            tissue=args.tissue or "broad")
+                            tissue=args.tissue or "broad",
+                            disease_id=args.disease)
         print("\n✅ HTML report generated: gene_expression/report.html")
 
     return results

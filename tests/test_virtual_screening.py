@@ -492,3 +492,153 @@ class TestVinaStatus:
         status = get_vina_status()
         assert isinstance(status, str)
         assert "available" in status.lower() or "not available" in status.lower()
+
+
+# ═══════════════════════════════════════════════════════════════════════
+#  disease_id threading tests
+# ═══════════════════════════════════════════════════════════════════════
+
+class TestDiseaseThreading:
+    """Tests that disease_id flows through data loading and screening."""
+
+    def test_load_kg_genes_threads_disease(self, monkeypatch):
+        import med_research.pipeline.virtual_screening.screening as screening
+
+        captured = {}
+
+        def fake_config_load_genes(disease_id="sle"):
+            captured["disease_id"] = disease_id
+            return {"genes": [{"id": "BTK", "name": "Bruton"}]}
+
+        monkeypatch.setattr(screening, "config_load_genes", fake_config_load_genes)
+        genes = screening.load_kg_genes("ra")
+        assert captured["disease_id"] == "ra"
+        assert "BTK" in genes
+
+    def test_load_kg_drugs_threads_disease(self, monkeypatch):
+        import med_research.pipeline.virtual_screening.screening as screening
+
+        captured = {}
+
+        def fake_config_load_drugs(disease_id="sle"):
+            captured["disease_id"] = disease_id
+            return {"drugs": [{"id": "baricitinib", "name": "Baricitinib"}]}
+
+        monkeypatch.setattr(screening, "config_load_drugs", fake_config_load_drugs)
+        drugs = screening.load_kg_drugs("ms")
+        assert captured["disease_id"] == "ms"
+        assert "baricitinib" in drugs
+
+    def test_build_compound_library_threads_disease(self, monkeypatch):
+        import med_research.pipeline.virtual_screening.screening as screening
+
+        captured = {}
+
+        def fake_load_kg_drugs(disease_id="sle"):
+            captured["disease_id"] = disease_id
+            return {
+                "baricitinib": {"id": "baricitinib", "name": "Baricitinib",
+                                "type": "Small Molecule", "target": "JAK1",
+                                "mechanism": "JAK1/2 inhibitor", "category": "JAK Inhibitor"},
+            }
+
+        monkeypatch.setattr(screening, "load_kg_drugs", fake_load_kg_drugs)
+        library = screening.build_compound_library("ibd")
+        assert captured["disease_id"] == "ibd"
+        assert library[0]["id"] == "baricitinib"
+
+    def test_get_untargeted_genes_threads_disease(self, monkeypatch):
+        import med_research.pipeline.virtual_screening.screening as screening
+
+        captured = {}
+
+        def fake_build_graph(disease_id="sle"):
+            captured["graph_disease"] = disease_id
+            import networkx as nx
+            G = nx.MultiDiGraph()
+            G.add_node("d1", type="disease")
+            G.add_node("BTK", type="gene")
+            G.add_edge("d1", "BTK", type="TARGETS")
+            return G
+
+        def fake_load_kg_genes(disease_id="sle"):
+            captured["genes_disease"] = disease_id
+            return {
+                "BTK": {"id": "BTK", "name": "Bruton"},
+                "TYK2": {"id": "TYK2", "name": "TYK2"},
+            }
+
+        # build_graph is imported lazily inside get_untargeted_genes,
+        # so patch it at its source module.
+        import med_research.pipeline.knowledge_graph.builder as kg_builder
+        monkeypatch.setattr(kg_builder, "build_graph", fake_build_graph)
+        monkeypatch.setattr(screening, "load_kg_genes", fake_load_kg_genes)
+        untargeted = screening.get_untargeted_genes("ssc")
+        assert captured["graph_disease"] == "ssc"
+        assert captured["genes_disease"] == "ssc"
+        ids = {g["id"] for g in untargeted}
+        assert "BTK" not in ids  # BTK has a TARGETS edge in the fake graph
+        assert "TYK2" in ids
+
+    def test_sle_drug_target_filter_only_applies_to_sle(self, monkeypatch):
+        """The curated drug-target exclusion (CD20, IMPDH, ...) is SLE-only."""
+        import networkx as nx
+
+        import med_research.pipeline.knowledge_graph.builder as kg_builder
+        import med_research.pipeline.virtual_screening.screening as screening
+
+        def fake_build_graph(disease_id="sle"):
+            G = nx.MultiDiGraph()
+            G.add_node("d1", type="disease")
+            for gid in ("CD20", "TYK2", "STAT4"):
+                G.add_node(gid, type="gene")
+            return G
+
+        def fake_load_kg_genes(disease_id="sle"):
+            return {
+                g: {"id": g, "name": g, "category": "", "function": ""}
+                for g in ("CD20", "TYK2", "STAT4")
+            }
+
+        monkeypatch.setattr(kg_builder, "build_graph", fake_build_graph)
+        monkeypatch.setattr(screening, "load_kg_genes", fake_load_kg_genes)
+
+        sle_ids = {g["id"] for g in screening.get_untargeted_genes("sle")}
+        assert "CD20" not in sle_ids  # SLE excludes its curated drug targets
+        assert "TYK2" in sle_ids
+
+        ra_ids = {g["id"] for g in screening.get_untargeted_genes("ra")}
+        assert "CD20" in ra_ids  # other diseases may legitimately target CD20
+
+    def test_screen_compounds_threads_disease(self, monkeypatch):
+        import med_research.pipeline.virtual_screening.screening as screening
+
+        captured = {}
+
+        def fake_build_compound_library(disease_id="sle"):
+            captured["library_disease"] = disease_id
+            return [
+                {"id": "baricitinib", "name": "Baricitinib", "type": "Small Molecule",
+                 "target": "JAK1", "mechanism": "JAK1/2 inhibitor",
+                 "category": "JAK Inhibitor", "mw": 371, "logp": 1.7,
+                 "hbd": 2, "hba": 7, "rotb": 5, "tpsa": 112},
+            ]
+
+        def fake_get_untargeted_genes(disease_id="sle"):
+            captured["untargeted_disease"] = disease_id
+            return [{"id": "TYK2", "name": "TYK2"}]
+
+        def fake_load_kg_genes(disease_id="sle"):
+            captured["genes_disease"] = disease_id
+            return {"TYK2": {"id": "TYK2", "name": "TYK2", "category": "JAK-STAT", "function": "kinase"}}
+
+        monkeypatch.setattr(screening, "build_compound_library", fake_build_compound_library)
+        monkeypatch.setattr(screening, "get_untargeted_genes", fake_get_untargeted_genes)
+        monkeypatch.setattr(screening, "load_kg_genes", fake_load_kg_genes)
+
+        results = screening.screen_compounds(disease_id="ra", top_n=5)
+        assert captured["library_disease"] == "ra"
+        assert captured["untargeted_disease"] == "ra"
+        assert captured["genes_disease"] == "ra"
+        assert "TYK2" in results["target_genes"]
+        assert results["stats"]["targets_screened"] == 1

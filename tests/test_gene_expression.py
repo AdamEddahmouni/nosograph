@@ -148,6 +148,19 @@ def test_compute_all_correlations_saves_json(tmp_path, monkeypatch):
     assert data["total_drugs"] == 26
 
 
+def test_compute_all_correlations_save_false_skips_write(tmp_path, monkeypatch):
+    """save=False must not write the shared expression_correlations.json."""
+    monkeypatch.setattr(
+        "med_research.pipeline.gene_expression.correlator.DATA_DIR",
+        tmp_path,
+    )
+    compute_all_correlations(save=False)
+    assert not (tmp_path / "expression_correlations.json").exists()
+    # And save=True still writes
+    compute_all_correlations(save=True)
+    assert (tmp_path / "expression_correlations.json").exists()
+
+
 def test_analyze_prints(capsys):
     drug = {
         "drug_id": "test",
@@ -385,6 +398,58 @@ def test_correlate_with_geo_signature():
     result = correlate_drug("anifrolumab", drugs["anifrolumab"], signature=sig)
     assert result["composite_score"] >= 6.0
     assert result["signature_reversal"] >= 7.0
+
+
+# ── Disease threading ───────────────────────────────────────────────────
+
+
+def test_load_drugs_threads_disease(monkeypatch):
+    import med_research.pipeline.gene_expression.correlator as correlator
+
+    captured = {}
+
+    def fake_config_load_drugs(disease_id="sle"):
+        captured["disease_id"] = disease_id
+        return {"drugs": [{"id": "baricitinib", "name": "Baricitinib"}]}
+
+    monkeypatch.setattr(correlator, "config_load_drugs", fake_config_load_drugs)
+    drugs = correlator.load_drugs("ms")
+    assert captured["disease_id"] == "ms"
+    assert "baricitinib" in drugs
+
+
+def test_get_default_signature_is_per_disease():
+    import med_research.pipeline.gene_expression.correlator as correlator
+
+    sig_sle = correlator._get_default_signature("sle")
+    sig_ra = correlator._get_default_signature("ra")
+    assert sig_sle["disease"] == "sle"
+    assert sig_ra["disease"] == "ra"
+    # Both fall back to the curated SLE gene set (documented stand-in)
+    assert sig_ra["upregulated"]
+    assert sig_sle["upregulated"].keys() == sig_ra["upregulated"].keys()
+
+
+def test_compute_all_correlations_threads_disease(monkeypatch):
+    import med_research.pipeline.gene_expression.correlator as correlator
+
+    captured = {}
+
+    def fake_load_drugs(disease_id="sle"):
+        captured["disease_id"] = disease_id
+        return {"baricitinib": {"id": "baricitinib", "name": "Baricitinib"}}
+
+    monkeypatch.setattr(correlator, "load_drugs", fake_load_drugs)
+    # Avoid GEO/curated signature machinery; pass a tiny explicit signature
+    results = correlator.compute_all_correlations(
+        disease_id="ra",
+        signature={"upregulated": {}, "downregulated": {},
+                   "source": "test", "num_studies_used": 0},
+        signature_source="curated",
+    )
+    assert captured["disease_id"] == "ra"
+    assert len(results) == 1
+    assert results[0]["drug_id"] == "baricitinib"
 
 
 def test_cli_geo_flag(monkeypatch):

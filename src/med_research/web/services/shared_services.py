@@ -22,31 +22,39 @@ def run_literature(
     targeted: bool = False,
     no_cache: bool = False,
     progress_callback=None,
+    disease_id: str = "sle",
 ) -> dict:
     """Run literature mining on PubMed using the mine_literature pipeline."""
     from med_research.pipeline.literature_mining.miner import mine_literature
 
-    genes = get_kg_genes()
+    genes = get_kg_genes(disease_id)
     candidates = get_candidates()
     cb = progress_callback or (lambda p, m: None)
 
     cb(10, "Loading knowledge graph entities…")
 
-    cb(20, "Mining PubMed for SLE-related articles…")
+    cb(20, "Mining PubMed for disease-related articles…")
     crossref, entities, _, _extraction_stats = mine_literature(
         max_per_query=max_articles,
         use_cache=not no_cache and USE_CACHE,
         targeted_candidates=targeted,
+        disease_id=disease_id,
     )
 
     if not crossref or not crossref.get("article_matches"):
         cb(100, "Literature mining complete — no articles found")
+        from med_research.diseases.coverage import module_coverage
+        coverage = module_coverage(
+            disease_id, "literature", ("genes", "drugs", "pathways", "pubmed_queries")
+        )
         return {
             "total_articles": 0,
             "queries_run": 0,
             "articles": [],
             "gene_coverage": [],
             "candidate_support": [],
+            "coverage": coverage.to_dict(),
+                "status": "blocked" if not coverage.is_runnable else "ready",
         }
 
     article_matches = crossref["article_matches"]
@@ -74,12 +82,18 @@ def run_literature(
             })
 
     cb(100, "Literature mining complete")
+    from med_research.diseases.coverage import module_coverage
+    coverage = module_coverage(
+        disease_id, "literature", ("genes", "drugs", "pathways", "pubmed_queries")
+    )
     return {
         "total_articles": len(article_matches),
         "queries_run": 5 + (len(candidates) if targeted else 0),
         "articles": article_matches[:max_articles],
         "gene_coverage": gene_coverage,
         "candidate_support": crossref.get("candidate_support", []),
+        "coverage": coverage.to_dict(),
+        "status": "limited_coverage" if coverage.level == "partial" else "ready",
     }
 
 
@@ -90,6 +104,7 @@ def run_screening(
     top_n: int = 15,
     use_vina: bool = False,
     progress_callback=None,
+    disease_id: str = "sle",
 ) -> dict:
     """Run virtual drug screening."""
     from med_research.pipeline.virtual_screening.screening import (
@@ -101,17 +116,42 @@ def run_screening(
     cb = progress_callback or (lambda p, m: None)
 
     cb(10, "Building compound library…")
-    library = build_compound_library()
+    library = build_compound_library(disease_id)
 
     cb(25, "Selecting target genes…")
-    target_ids = [gene_id] if gene_id else [g["id"] for g in get_untargeted_genes()]
+    target_ids = [gene_id] if gene_id else [g["id"] for g in get_untargeted_genes(disease_id)]
 
     cb(35, f"Screening {len(library)} compounds against {len(target_ids)} targets…")
+    from med_research.diseases.coverage import module_coverage
+    coverage = module_coverage(
+        disease_id,
+        "screening",
+        ("genes", "drugs", "pathways", "screening_profile"),
+    )
+    if not coverage.is_runnable:
+        cb(100, "Screening blocked by incomplete disease-specific calibration")
+        return {
+            "targets": [],
+            "compounds_screened": 0,
+            "total_pairings": 0,
+            "tier1_count": 0,
+            "tier2_count": 0,
+            "vina_available": False,
+            "rdkit_available": False,
+            "coverage": coverage.to_dict(),
+            "status": "blocked",
+            "disease_id": disease_id,
+            "strategy_id": "",
+            "strategy_fingerprint": "",
+            "strategy_limitations": list(coverage.limitations),
+        }
+
     results = screen_compounds(
         target_genes=target_ids,
         compound_library=library,
         top_n=top_n,
         use_vina=use_vina,
+        disease_id=disease_id,
     )
 
     cb(75, "Formatting screening results…")
@@ -146,6 +186,7 @@ def run_screening(
     stats = results.get("stats", {})
 
     cb(100, "Virtual screening complete")
+    coverage = results.get("coverage", {})
     return {
         "targets": targets,
         "compounds_screened": stats.get("compounds_screened", 0),
@@ -154,6 +195,12 @@ def run_screening(
         "tier2_count": stats.get("tier2_count", 0),
         "vina_available": stats.get("vina_available", False),
         "rdkit_available": stats.get("rdkit_available", False),
+        "coverage": coverage,
+        "status": results.get("status", "ready"),
+        "disease_id": results.get("disease_id", disease_id),
+        "strategy_id": results.get("strategy_id", ""),
+        "strategy_fingerprint": results.get("strategy_fingerprint", ""),
+        "strategy_limitations": results.get("strategy_limitations", []),
     }
 
 
@@ -164,17 +211,27 @@ def run_trials(
     query: str = "lupus OR SLE",
     no_cache: bool = False,
     progress_callback=None,
+    disease_id: str = "sle",
 ) -> dict:
     """Track clinical trials from ClinicalTrials.gov using the track_trials pipeline."""
     from med_research.pipeline.clinical_trials.tracker import track_trials
 
     cb = progress_callback or (lambda p, m: None)
 
+    # Resolve a disease-appropriate query when the caller didn't pass one.
+    if not query or query == "lupus OR SLE":
+        try:
+            from med_research.diseases.base import Disease
+            query = Disease(disease_id).get_trial_query()
+        except ValueError:
+            query = "lupus OR SLE"
+
     cb(15, "Searching ClinicalTrials.gov…")
     results = track_trials(
         query=query,
         max_results=max_trials,
         use_cache=not no_cache and USE_CACHE,
+        disease_id=disease_id,
     )
 
     cb(60, "Processing trial data…")

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adverse Event Profiling Report</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background: #0a0a0f; color: #e0e0e8; line-height: 1.6;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+
+        .hero {
+            background: linear-gradient(135deg, #0f1729, #1a0f18, #0f1729);
+            border: 1px solid #252535; border-radius: 16px;
+            padding: 40px; margin-bottom: 32px; text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.2rem; font-weight: 800;
+            background: linear-gradient(135deg, #4ade80, #22d3ee, #818cf8);
+            -webkit-background-clip: text; background-clip: text;
+            -webkit-text-fill-color: transparent; margin-bottom: 8px;
+        }
+        .hero .subtitle { color: #787890; font-size: 1rem; }
+        .hero .date { color: #787890; font-size: 0.8rem; margin-top: 8px; }
+
+        .stats-grid {
+            display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px;
+            margin-bottom: 32px;
+        }
+        .stat-card {
+            background: #13131a; border: 1px solid #252535;
+            border-radius: 12px; padding: 22px; text-align: center;
+        }
+        .stat-card .stat-value { font-size: 1.8rem; font-weight: 800; margin-bottom: 4px; }
+        .stat-card .stat-label { color: #787890; font-size: 0.78rem; }
+
+        .section-title {
+            font-size: 1.3rem; font-weight: 700; margin: 32px 0 16px;
+            padding-bottom: 8px; border-bottom: 1px solid #252535;
+        }
+
+        .highlights-grid {
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 12px; margin-bottom: 28px;
+        }
+        .highlight-card {
+            background: #13131a; border: 1px solid #252535;
+            border-radius: 10px; padding: 16px;
+            transition: border-color 0.2s, transform 0.2s;
+        }
+        .highlight-card:hover { border-color: #4b5563; transform: translateY(-2px); }
+        .hl-rank { font-size: 0.65rem; font-weight: 700; color: #787890; margin-bottom: 4px; }
+        .hl-drug { font-weight: 600; font-size: 0.85rem; margin-bottom: 6px; }
+        .hl-score { font-size: 1.3rem; font-weight: 800; margin-bottom: 8px; }
+        .hl-dims { display: flex; gap: 4px; flex-wrap: wrap; font-size: 0.7rem; }
+        .hl-dim {
+            background: #0a0a0f; border-radius: 5px; padding: 2px 7px;
+            font-weight: 600; color: #787890;
+        }
+
+        .table-container {
+            overflow-x: auto; background: #13131a;
+            border: 1px solid #252535; border-radius: 12px; margin-bottom: 32px;
+        }
+        table { width: 100%; border-collapse: collapse; font-size: 0.86rem; }
+        th {
+            text-align: left; padding: 14px 16px; background: #1a1a24;
+            color: #787890; font-weight: 600; font-size: 0.73rem;
+            text-transform: uppercase; letter-spacing: 0.05em;
+            border-bottom: 1px solid #252535;
+        }
+        td { padding: 11px 16px; border-bottom: 1px solid #1a1a24; }
+        tr:hover td { background: rgba(74,222,128,0.02); }
+        .rank { font-weight: 700; color: #787890; font-size: 1rem; min-width: 28px; }
+        .bbw-badge {
+            display: inline-block; padding: 2px 8px; border-radius: 12px;
+            font-size: 0.68rem; font-weight: 600; background: rgba(248,113,113,0.12);
+            color: #f87171; border: 1px solid rgba(248,113,113,0.2);
+        }
+
+        .methodology {
+            background: #13131a; border: 1px solid #252535;
+            border-radius: 12px; padding: 24px; margin-bottom: 32px;
+        }
+        .methodology h3 { font-size: 1rem; margin-bottom: 12px; }
+        .methodology ul { margin-left: 20px; color: #787890; font-size: 0.86rem; }
+        .methodology li { margin-bottom: 6px; }
+        .methodology strong { color: #e0e0e8; }
+
+        footer { text-align: center; padding: 40px; color: #787890; font-size: 0.78rem; }
+        footer a { color: #818cf8; }
+
+        @media (max-width: 768px) {
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .highlights-grid { grid-template-columns: 1fr; }
+            .hero { padding: 24px; }
+            .hero h1 { font-size: 1.4rem; }
+        }
+
+    /* ── Print / PDF export ─────────────────────────────────────── */
+    @media print {
+        * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        body { background: #ffffff !important; color: #111827 !important; }
+        .hero, .container, .table-container, .stat-card, .match-card,
+        .hit-card, .chart-card, .methodology, .method-card, .vina-box,
+        .target-section, .kg-explorer, .cd-card {
+            background: #ffffff !important; color: #111827 !important;
+            border-color: #d1d5db !important; box-shadow: none !important;
+        }
+        h1, h2, h3, h4, th { color: #111827 !important; }
+        .subtitle, .muted, footer, .stat-label, .hit-count, .target-category,
+        .target-mean, .vina-note, .rel-desc { color: #4b5563 !important; }
+        table { border-collapse: collapse; width: 100%; }
+        th { background: #f3f4f6 !important; }
+        td, th { border: 1px solid #d1d5db !important; }
+        a { color: #2563eb !important; text-decoration: none; }
+        .stat-card, .match-card, .hit-card { break-inside: avoid; }
+        .section-title { border-bottom-color: #d1d5db !important; }
+        footer { border-top-color: #d1d5db !important; }
+        @page { margin: 1.5cm; }
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="hero">
+            <h1>\U0001f6e1\ufe0f Adverse Event Profiling Report</h1>
+            <p class="subtitle">Safety Analysis of {{ ctx_0 }} Drugs from the {{ ctx_disease }} Knowledge Graph &mdash; 4-Dimensional Safety Scoring</p>
+            <p class="date">Generated: {{ ctx_1 }} | {{ ctx_disease }}-Specific Safety Assessment</p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value" style="color:#4ade80;">{{ "%.1f"|format(ctx_2) }}</div>
+                <div class="stat-label">Average Safety Score</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" style="color:#f87171;">{{ ctx_3 }}</div>
+                <div class="stat-label">Drugs with Black Box Warnings</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" style="color:#fbbf24;">{{ ctx_4 }}</div>
+                <div class="stat-label">Drugs with Disease-Specific Risk</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" style="color:#818cf8;">{{ ctx_0 }}</div>
+                <div class="stat-label">Total Drugs Profiled</div>
+            </div>
+        </div>
+
+        <h2 class="section-title">\U0001f3c6 Top 10 Safest Drugs</h2>
+        <div class="highlights-grid">
+            {{ ctx_5 | safe }}
+        </div>
+
+        <h2 class="section-title">\U0001f4ca Complete Safety Rankings</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Drug</th>
+                        <th>Safety Score</th>
+                        <th>Disease Overlap</th>
+                        <th>Severity</th>
+                        <th>Chronic Use</th>
+                        <th>Disease-Specific Risk</th>
+                        <th>Overlap AEs</th>
+                        <th>BBW</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{ ctx_6 | safe }}
+                </tbody>
+            </table>
+        </div>
+
+        <div class="methodology">
+            <h3>\U0001f4d0 Methodology &mdash; 4-Dimensional Safety Scoring</h3>
+            <ul>
+                <li><strong>Disease Symptom Overlap (35%)</strong> &mdash; Do adverse events mimic {{ ctx_disease }} symptoms? Higher overlap = lower score.</li>
+                <li><strong>Severity Burden (30%)</strong> &mdash; How severe are the most common adverse events? Weighted by clinical impact.</li>
+                <li><strong>Chronic Use Safety (25%)</strong> &mdash; Is the drug safe for long-term use? Based on known toxicity profiles.</li>
+                <li><strong>Disease-Specific Risk (10%)</strong> &mdash; Does the configured disease-specific risk profile indicate concern?</li>
+            </ul>
+            <p style="margin-top:16px; color:#787890; font-size:0.82rem;">
+                <strong>Profile source:</strong> {{ ctx_profile_source or "not recorded" }}.
+                <strong>Limitations:</strong> {{ ctx_limitations|join(" ") }}
+            </p>
+            <p style="margin-top:8px; color:#787890; font-size:0.82rem;">
+                <strong>Disclaimer:</strong> Safety profiles are research prioritization inputs, not individualized clinical risk assessments.
+                Validate current labels and patient-specific contraindications with qualified clinicians. Not medical advice.
+            </p>
+        </div>
+
+        <footer>
+            <p>Adverse Event Profiler &middot; Part of the Multi-Disease Research Platform</p>
+            <p><a href="../drug_repurposing/report.html">Drug Repurposing Report</a> &middot; <a href="../knowledge_graph/web/index.html">Knowledge Graph</a></p>
+        </footer>
+    </div>
+</body>
+</html>"""
+
+    with open(output_path, "w", encoding="utf-8") as f:
+        f.write(html)
+
+    return str(output_path)
+
+
+def escape_html(text: str) -> str:
+    """Escape HTML special characters.

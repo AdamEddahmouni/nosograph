@@ -30,8 +30,8 @@ def _get_ner():
     return _biomedical_ner
 
 
-def load_kg_entities():
-    """Load all named entities from the knowledge graph data files."""
+def load_kg_entities(disease_id: str = "sle"):
+    """Load all named entities from a disease's knowledge graph data files."""
     entities = {
         "genes": {},
         "drugs": {},
@@ -39,7 +39,7 @@ def load_kg_entities():
     }
 
     # Load genes
-    genes_data = load_genes()
+    genes_data = load_genes(disease_id)
     for g in genes_data["genes"]:
         entities["genes"][g["id"]] = {
             "name": g["name"],
@@ -49,7 +49,7 @@ def load_kg_entities():
         }
 
     # Load drugs
-    drugs_data = load_drugs()
+    drugs_data = load_drugs(disease_id)
     for d in drugs_data["drugs"]:
         entities["drugs"][d["id"]] = {
             "name": d["name"],
@@ -60,7 +60,7 @@ def load_kg_entities():
         }
 
     # Load pathways
-    pathways_data = load_pathways()
+    pathways_data = load_pathways(disease_id)
     for p in pathways_data["pathways"]:
         entities["pathways"][p["id"]] = {
             "name": p["name"],

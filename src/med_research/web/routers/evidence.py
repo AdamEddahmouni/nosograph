@@ -1,7 +1,8 @@
 """Evidence Gatherer API router."""
 
-from fastapi import APIRouter, Query
+from fastapi import APIRouter, HTTPException, Query
 
+from med_research.diseases.base import Disease
 from med_research.web.models.evidence import EvidenceGatherResponse, EvidenceItem
 from med_research.web.services.evidence_service import run_evidence_gather
 
@@ -16,6 +17,7 @@ async def evidence_gather(
                          description="Comma-separated source types"),
     max_per_source: int = Query(default=20, ge=1, le=100),
     use_cache: bool = Query(default=True),
+    disease_id: str = Query("sle", description="Disease ID"),
 ):
     """Gather evidence from multiple biomedical sources simultaneously.
 
@@ -23,9 +25,14 @@ async def evidence_gather(
     FDA labels (DailyMed), and patents — all with a single query.
     """
     source_list = [s.strip() for s in sources.split(",")]
+    try:
+        disease_name = Disease(disease_id).get_display_name()
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+    search_query = q if disease_name.lower() in q.lower() else f"{disease_name} {q}"
 
     gathered = run_evidence_gather(
-        query=q,
+        query=search_query,
         sources=source_list,
         max_per_source=max_per_source,
         use_cache=use_cache,

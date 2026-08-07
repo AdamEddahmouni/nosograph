@@ -1,12 +1,12 @@
 """
 Adverse Event Profiling Engine
 
-Scores drugs based on adverse event profiles relevant to lupus patients.
+Scores drugs based on disease-specific adverse-event profiles.
 Evaluates safety across 4 dimensions:
-  1. Lupus Symptom Overlap (inverted): Do adverse events mimic lupus symptoms?
+  1. Disease Symptom Overlap (inverted): Do adverse events mimic disease symptoms?
   2. Severity Burden (inverted): How severe are the most common adverse events?
   3. Chronic Use Safety: Is the drug safe for long-term use?
-  4. Drug-Induced Lupus Risk: Does the drug carry a risk of DIL?
+  4. Disease-Specific Risk: Does the active disease risk profile indicate concern?
 
 Usage:
     python adverse_events/profiler.py              # Full analysis
@@ -15,6 +15,7 @@ Usage:
 """
 
 import argparse
+import functools
 import json
 import logging
 import sys
@@ -29,8 +30,9 @@ if sys.platform == "win32":
 
 DATA_DIR = Path(__file__).parent / "data"
 PROFILES_PATH = DATA_DIR / "profiles.json"
+DISEASE_PROFILE_FILENAME = "adverse_events.json"
 
-# ── Core lupus symptoms for overlap analysis ───────────────────────────
+# ── Legacy SLE symptom vocabulary retained for compatibility ───────────
 
 LUPUS_SYMPTOMS = [
     "fatigue",
@@ -62,13 +64,149 @@ LUPUS_SYMPTOMS = [
 ]
 
 
-def load_profiles() -> dict:
-    """Load adverse event profiles indexed by drug ID."""
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
-    if PROFILES_PATH.exists():
-        data = json.loads(PROFILES_PATH.read_text(encoding="utf-8"))
-        return {p["drug_id"]: p for p in data["profiles"]}
-    return _get_default_profiles()
+def _load_disease_profile_payload(disease_id: str) -> dict:
+    """Load and validate the explicit profile contract owned by one disease."""
+    from med_research.diseases.base import Disease
+
+    disease = Disease(disease_id)
+    payload = disease.get_adverse_event_profile()
+    if not isinstance(payload, dict):
+        raise ValueError(f"Safety profile for '{disease_id}' must be a JSON object")
+    profiles = payload.get("profiles", [])
+    if not isinstance(profiles, list):
+        raise ValueError(f"Safety profiles for '{disease_id}' must be a list")
+    if not payload.get("source"):
+        raise ValueError(f"Safety profile for '{disease_id}' has no source")
+    if not payload.get("limitations"):
+        raise ValueError(f"Safety profile for '{disease_id}' has no limitations")
+    if disease_id != "sle":
+        defaults = payload.get("default_profile")
+        required_defaults = {
+            "common_ae", "severe_ae", "disease_overlap_ae",
+            "severity_burden", "chronic_use_safety", "disease_specific_risk",
+            "monitoring_required", "evidence_grade",
+        }
+        if not isinstance(defaults, dict) or not required_defaults <= set(defaults):
+            missing = sorted(required_defaults - set(defaults or {}))
+            raise ValueError(
+                f"Safety profile for '{disease_id}' has incomplete default_profile: {', '.join(missing)}"
+            )
+
+    catalog_ids = {
+        str(drug.get("id"))
+        for drug in disease.load_drugs().get("drugs", [])
+        if drug.get("id")
+    }
+    profile_ids = []
+    for profile in profiles:
+        if not isinstance(profile, dict) or not profile.get("drug_id"):
+            raise ValueError(f"Safety profile for '{disease_id}' contains an invalid drug entry")
+        profile_ids.append(str(profile["drug_id"]))
+    unknown = sorted(set(profile_ids) - catalog_ids)
+    if unknown:
+        raise ValueError(
+            f"Safety profile for '{disease_id}' references unknown drugs: {', '.join(unknown)}"
+        )
+    return payload
+
+
+def _validate_profile_values(profile: dict, disease_id: str) -> None:
+    """Validate bounded safety fields before any scoring occurs."""
+    for field in ("severity_burden", "chronic_use_safety", "disease_specific_risk"):
+        value = profile.get(field)
+        if not isinstance(value, (int, float)) or isinstance(value, bool) or not 0 <= value <= 10:
+            raise ValueError(
+                f"Safety profile for '{disease_id}' has invalid {field}: {value!r}"
+            )
+    for field in ("common_ae", "severe_ae", "disease_overlap_ae", "black_box_warnings"):
+        if not isinstance(profile.get(field, []), list):
+            raise ValueError(
+                f"Safety profile for '{disease_id}' has invalid {field}; expected a list"
+            )
+    if not isinstance(profile.get("monitoring_required", ""), str):
+        raise ValueError(
+            f"Safety profile for '{disease_id}' has invalid monitoring_required"
+        )
+
+
+def _merge_profile(
+    defaults: dict,
+    explicit: dict,
+    drug: dict,
+    disease_id: str,
+    payload: dict | None = None,
+) -> dict:
+    """Materialize one disease drug profile without cross-disease fallback."""
+    drug_id = str(drug.get("id", drug.get("drug_id", "")))
+    drug_name = drug.get("name", drug.get("drug_name", drug_id))
+    profile = {**defaults, **explicit}
+    profile["drug_id"] = drug_id
+    profile["drug_name"] = drug_name
+    profile["disease_id"] = disease_id
+    profile["profile_source"] = (payload or {}).get(
+        "profile_source", (payload or {}).get("source", "disease_adverse_events.json")
+    )
+    profile["profile_curated_inputs"] = list((payload or {}).get("curated_inputs", []))
+    profile["profile_inferred_inputs"] = list((payload or {}).get("inferred_inputs", []))
+    profile["limitations"] = list(
+        dict.fromkeys([*(payload or {}).get("limitations", []), *profile.get("limitations", [])])
+    )
+    # Normalize legacy SLE source fields once at the compatibility boundary.
+    profile["disease_overlap_ae"] = profile.get(
+        "disease_overlap_ae", profile.get("lupus_overlap_ae", [])
+    )
+    profile["disease_specific_risk"] = profile.get(
+        "disease_specific_risk", profile.get("dil_risk", 0)
+    )
+    # Keep old consumers working while disease-neutral fields are authoritative.
+    profile["lupus_overlap_ae"] = profile["disease_overlap_ae"]
+    profile["dil_risk"] = profile["disease_specific_risk"]
+    profile.setdefault("evidence_grade", "inferred_class_default")
+    return profile
+
+
+def load_profiles(disease_id: str = "sle") -> dict:
+    """Load profiles for the selected disease's drug catalog.
+
+    SLE keeps its legacy 26-drug profile set for compatibility. Every
+    non-SLE profile is materialized only from that disease's own explicit JSON
+    contract and its own drug catalog; no SLE profile is reused.
+    """
+    payload = _load_disease_profile_payload(disease_id)
+    explicit = {
+        str(profile.get("drug_id")): profile
+        for profile in payload.get("profiles", [])
+        if isinstance(profile, dict) and profile.get("drug_id")
+    }
+
+    if disease_id == "sle" and not explicit:
+        legacy = _get_default_profiles()
+        profiles = {
+            drug_id: _merge_profile({}, profile, profile, disease_id, payload)
+            for drug_id, profile in legacy.items()
+        }
+        for profile in profiles.values():
+            _validate_profile_values(profile, disease_id)
+        return profiles
+
+    from med_research.diseases.base import Disease
+
+    drugs = Disease(disease_id).load_drugs().get("drugs", [])
+    defaults = payload.get("default_profile", {})
+    profiles = {}
+    for drug in drugs:
+        drug_id = str(drug.get("id", ""))
+        if not drug_id:
+            continue
+        profiles[drug_id] = _merge_profile(
+            defaults,
+            explicit.get(drug_id, {}),
+            drug,
+            disease_id,
+            payload,
+        )
+        _validate_profile_values(profiles[drug_id], disease_id)
+    return profiles
 
 
 def _get_default_profiles() -> dict:
@@ -627,20 +765,27 @@ def _get_default_profiles() -> dict:
     return profiles
 
 
-def count_lupus_symptom_overlap(profile: dict) -> int:
-    """Count how many adverse events overlap with lupus symptoms."""
+def count_disease_symptom_overlap(profile: dict, disease_id: str = "sle") -> int:
+    """Count adverse events overlapping the active disease's symptoms."""
+    from med_research.diseases.base import Disease
+
+    symptoms = Disease(disease_id).get_symptom_overlap_terms()
+    overlap_terms = profile.get(
+        "disease_overlap_ae",
+        profile.get("lupus_overlap_ae", []) if disease_id == "sle" else profile.get("common_ae", []),
+    )
     overlap = 0
-    for ae in profile.get("lupus_overlap_ae", []):
-        for symptom in LUPUS_SYMPTOMS:
+    for ae in overlap_terms:
+        for symptom in symptoms:
             if symptom.lower() in ae.lower():
                 overlap += 1
                 break
     return overlap
 
 
-def score_lupus_overlap(profile: dict) -> float:
-    """Score lupus symptom overlap (0-10, higher = less overlap = safer)."""
-    n_overlap = count_lupus_symptom_overlap(profile)
+def score_disease_overlap(profile: dict, disease_id: str = "sle") -> float:
+    """Score active-disease symptom overlap (0-10; higher is safer)."""
+    n_overlap = count_disease_symptom_overlap(profile, disease_id)
     if n_overlap == 0:
         return 10.0
     if n_overlap <= 2:
@@ -650,6 +795,16 @@ def score_lupus_overlap(profile: dict) -> float:
     if n_overlap <= 5:
         return 4.0
     return 2.0
+
+
+def count_lupus_symptom_overlap(profile: dict, disease_id: str = "sle") -> int:
+    """Backward-compatible alias for :func:`count_disease_symptom_overlap`."""
+    return count_disease_symptom_overlap(profile, disease_id)
+
+
+def score_lupus_overlap(profile: dict, disease_id: str = "sle") -> float:
+    """Backward-compatible alias for :func:`score_disease_overlap`."""
+    return score_disease_overlap(profile, disease_id)
 
 
 def score_severity_burden(profile: dict) -> float:
@@ -663,9 +818,63 @@ def score_chronic_safety(profile: dict) -> float:
     return float(profile.get("chronic_use_safety", 5))
 
 
-def score_dil_risk(profile: dict) -> float:
-    """Score drug-induced lupus risk (0-10, higher = lower risk)."""
-    raw = profile.get("dil_risk", 0)
+@functools.lru_cache(maxsize=16)
+def _load_disease_specific_risk(disease_id: str = "sle") -> dict:
+    """Load the disease's configured risk categories.
+
+    Returns a dict with "high_risk", "moderate_risk", "low_risk" drug
+    lists, defaulting to empty lists when no config exists.
+    """
+    try:
+        from med_research.diseases.base import Disease
+        risk = Disease(disease_id).get_disease_risk_config()
+    except Exception:
+        risk = {}
+    if not isinstance(risk, dict):
+        risk = {}
+    return {
+        "high_risk": risk.get("high_risk", []) or [],
+        "moderate_risk": risk.get("moderate_risk", []) or [],
+        "low_risk": risk.get("low_risk", []) or [],
+    }
+
+
+def _config_disease_specific_risk(profile: dict, disease_id: str = "sle") -> float | None:
+    """Return a disease-specific risk score from the disease config.
+
+    Drugs listed in the config's high/moderate risk lists are scored
+    (higher returned value = lower risk), matching the neutral risk scale.
+    Returns None when the drug is not in the config lists, so the
+    profile-based score is used as fallback.
+    """
+    risk = _load_disease_specific_risk(disease_id)
+    drug_id = str(profile.get("drug_id", "")).lower()
+    drug_name = str(profile.get("drug_name", "")).lower()
+
+    def hit(items):
+        for item in items:
+            item = str(item).lower()
+            if drug_id and (drug_id == item or drug_id in item or item in drug_id):
+                return True
+            if drug_name and (item in drug_name or drug_name in item):
+                return True
+        return False
+
+    if hit(risk["high_risk"]):
+        return 2.0
+    if hit(risk["moderate_risk"]):
+        return 5.0
+    if hit(risk["low_risk"]):
+        return 7.5
+    return None
+
+
+def score_disease_specific_risk(profile: dict, disease_id: str = "sle") -> float:
+    """Score configured disease-specific risk (0-10; higher is safer)."""
+    configured = _config_disease_specific_risk(profile, disease_id)
+    if configured is not None:
+        return configured
+    raw = profile.get("disease_specific_risk", profile.get("dil_risk", 0))
     if raw == 0:
         return 10.0
     if raw == 1:
@@ -673,77 +882,109 @@ def score_dil_risk(profile: dict) -> float:
     return 2.0
 
 
-def compute_adverse_event_score(profile: dict) -> dict:
+def score_dil_risk(profile: dict, disease_id: str = "sle") -> float:
+    """Backward-compatible alias for disease-specific risk scoring."""
+    return score_disease_specific_risk(profile, disease_id)
+
+
+def compute_adverse_event_score(profile: dict, disease_id: str = "sle") -> dict:
     """Compute the adverse event safety score for a single drug.
 
     Returns dict with individual dimension scores and composite score.
     """
-    lupus_overlap = score_lupus_overlap(profile)
+    disease_overlap = score_disease_overlap(profile, disease_id)
     severity = score_severity_burden(profile)
     chronic = score_chronic_safety(profile)
-    dil = score_dil_risk(profile)
+    disease_risk = score_disease_specific_risk(profile, disease_id)
 
     weights = {
-        "lupus_symptom_overlap": 0.35,
+        "disease_symptom_overlap": 0.35,
         "severity_burden": 0.30,
         "chronic_use_safety": 0.25,
-        "dil_risk": 0.10,
+        "disease_specific_risk": 0.10,
     }
 
     composite = (
-        lupus_overlap * weights["lupus_symptom_overlap"]
+        disease_overlap * weights["disease_symptom_overlap"]
         + severity * weights["severity_burden"]
         + chronic * weights["chronic_use_safety"]
-        + dil * weights["dil_risk"]
+        + disease_risk * weights["disease_specific_risk"]
     )
 
     return {
         "drug_id": profile["drug_id"],
         "drug_name": profile["drug_name"],
-        "lupus_symptom_overlap_score": round(lupus_overlap, 1),
+        "disease_id": disease_id,
+        "disease_symptom_overlap_score": round(disease_overlap, 1),
+        "disease_overlap_score": round(disease_overlap, 1),
+        "lupus_symptom_overlap_score": round(disease_overlap, 1),
         "severity_burden_score": round(severity, 1),
         "chronic_use_safety_score": round(chronic, 1),
-        "dil_risk_score": round(dil, 1),
+        "disease_specific_risk_score": round(disease_risk, 1),
+        "dil_risk_score": round(disease_risk, 1),
         "composite_safety_score": round(composite, 2),
-        "n_lupus_overlap_ae": count_lupus_symptom_overlap(profile),
-        "lupus_overlap_ae": profile.get("lupus_overlap_ae", []),
+        "n_disease_overlap_ae": count_disease_symptom_overlap(profile, disease_id),
+        "disease_overlap_ae": profile.get("disease_overlap_ae", profile.get("lupus_overlap_ae", [])),
+        "n_lupus_overlap_ae": count_disease_symptom_overlap(profile, disease_id),
+        "lupus_overlap_ae": profile.get("disease_overlap_ae", profile.get("lupus_overlap_ae", [])),
+        "evidence_grade": profile.get("evidence_grade", "inferred_class_default"),
+        "profile_source": profile.get("profile_source", "disease_adverse_events.json"),
+        "profile_curated_inputs": profile.get("profile_curated_inputs", []),
+        "profile_inferred_inputs": profile.get("profile_inferred_inputs", []),
+        "limitations": profile.get("limitations", []),
         "black_box_warnings": profile.get("black_box_warnings", []),
         "monitoring_required": profile.get("monitoring_required", ""),
         "n_severe_ae": len(profile.get("severe_ae", [])),
     }
 
 
-def score_all_drugs(progress_callback=None) -> list:
+def score_all_drugs(progress_callback=None, disease_id: str = "sle") -> list:
     """Score all drugs and return sorted list by composite safety score.
 
     Args:
         progress_callback: Optional callable(percent, message) for progress.
+        disease_id: Disease whose configured risk categories adjust
+            disease-specific risk scoring.
 
     Returns:
         List of safety scores sorted by composite_safety_score descending.
     """
+    from med_research.diseases.coverage import module_coverage
+
+    coverage = module_coverage(
+        disease_id,
+        "safety",
+        ("symptoms", "adverse_event_profile", "safety_risk"),
+    )
+    if not coverage.is_runnable:
+        cb = progress_callback or (lambda p, m: None)
+        cb(100, "Safety analysis blocked by incomplete disease coverage")
+        return []
+
     cb = progress_callback or (lambda p, m: None)
-    profiles = load_profiles()
+    profiles = load_profiles(disease_id)
 
     cb(10, f"Profiling {len(profiles)} drugs for adverse events...")
 
     results = []
     for _drug_id, profile in profiles.items():
-        results.append(compute_adverse_event_score(profile))
+        results.append(compute_adverse_event_score(profile, disease_id))
 
     results.sort(key=lambda x: x["composite_safety_score"], reverse=True)
 
     cb(50, "Saving profiles...")
-    # Save profiles to JSON for persistence
+    # Preserve the legacy SLE cache contract, but never overwrite it with
+    # another disease's profiles or scores.
     profile_list = list(profiles.values())
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-    PROFILES_PATH.write_text(
-        json.dumps({"profiles": profile_list}, indent=2),
-        encoding="utf-8",
-    )
+    if disease_id == "sle":
+        PROFILES_PATH.write_text(
+            json.dumps({"profiles": profile_list}, indent=2),
+            encoding="utf-8",
+        )
 
-    # Save safety scores
-    scores_path = DATA_DIR / "safety_scores.json"
+    # Keep disease-specific score caches isolated from the legacy SLE cache.
+    scores_path = DATA_DIR / ("safety_scores.json" if disease_id == "sle" else f"safety_scores_{disease_id}.json")
     scores_path.write_text(
         json.dumps({"safety_scores": results}, indent=2),
         encoding="utf-8",
@@ -754,22 +995,39 @@ def score_all_drugs(progress_callback=None) -> list:
     return results
 
 
-def get_drug_profile(drug_id: str) -> dict:
-    """Get the adverse event profile and score for a specific drug."""
-    profiles = load_profiles()
+def get_drug_profile(drug_id: str, disease_id: str = "sle") -> dict:
+    """Get the adverse-event profile and active-disease score for one drug."""
+    from med_research.diseases.coverage import module_coverage
+    coverage = module_coverage(
+        disease_id,
+        "safety",
+        ("symptoms", "adverse_event_profile", "safety_risk"),
+    )
+    if not coverage.is_runnable:
+        return {"coverage": coverage.to_dict(), "status": "blocked"}
+    profiles = load_profiles(disease_id)
     profile = profiles.get(drug_id)
     if not profile:
         return {}
-    score = compute_adverse_event_score(profile)
-    return {**profile, **score}
+    score = compute_adverse_event_score(profile, disease_id=disease_id)
+    return {**profile, **score, "coverage": coverage.to_dict(), "status": "ready"}
 
 
-def get_safety_summary() -> dict:
-    """Get platform-wide safety summary statistics."""
-    results = score_all_drugs()
+def get_safety_summary(disease_id: str = "sle", results: list | None = None) -> dict:
+    """Get safety summary statistics for the active disease."""
+    results = score_all_drugs(disease_id=disease_id) if results is None else results
     scores = [r["composite_safety_score"] for r in results]
 
+    from med_research.diseases.coverage import module_coverage
+
+    coverage = module_coverage(
+        disease_id,
+        "safety",
+        ("symptoms", "adverse_event_profile", "safety_risk"),
+    )
+    payload = _load_disease_profile_payload(disease_id) if coverage.is_runnable else {}
     return {
+        "disease_id": disease_id,
         "total_drugs": len(results),
         "avg_safety_score": round(sum(scores) / len(scores), 2) if scores else 0,
         "safest_drug": results[0]["drug_name"] if results else "",
@@ -777,7 +1035,14 @@ def get_safety_summary() -> dict:
         "riskiest_drug": results[-1]["drug_name"] if results else "",
         "riskiest_score": results[-1]["composite_safety_score"] if results else 0,
         "drugs_with_bbw": sum(1 for r in results if r.get("black_box_warnings")),
-        "drugs_with_dil_risk": sum(1 for r in results if r["dil_risk_score"] < 10.0),
+        "drugs_with_disease_specific_risk": sum(1 for r in results if r["disease_specific_risk_score"] < 10.0),
+        "drugs_with_dil_risk": sum(1 for r in results if r["disease_specific_risk_score"] < 10.0),
+        "coverage": coverage.to_dict(),
+        "status": "limited_coverage" if coverage.level == "partial" else ("ready" if coverage.is_runnable else "blocked"),
+        "profile_source": payload.get("profile_source", payload.get("source", "")),
+        "profile_curated_inputs": payload.get("curated_inputs", []),
+        "profile_inferred_inputs": payload.get("inferred_inputs", []),
+        "limitations": payload.get("limitations", []),
     }
 
 
@@ -787,13 +1052,14 @@ def print_analysis(results: list):
     logger.info("🛡️  ADVERSE EVENT PROFILING SUMMARY")
     logger.info("=" * 75)
 
-    summary = get_safety_summary()
-    logger.info(f"\n  Total drugs profiled: {summary['total_drugs']}")
+    disease_id = results[0].get("disease_id", "sle") if results else "sle"
+    summary = get_safety_summary(disease_id=disease_id, results=results)
+    logger.info(f"\n  Total drugs profiled for {disease_id}: {summary['total_drugs']}")
     logger.info(f"  Average safety score: {summary['avg_safety_score']}")
     logger.info(f"  Safest drug: {summary['safest_drug']} ({summary['safest_score']:.1f})")
     logger.info(f"  Riskiest drug: {summary['riskiest_drug']} ({summary['riskiest_score']:.1f})")
     logger.info(f"  Drugs with black box warnings: {summary['drugs_with_bbw']}")
-    logger.info(f"  Drugs with DIL risk: {summary['drugs_with_dil_risk']}")
+    logger.info(f"  Drugs with disease-specific risk: {summary['drugs_with_disease_specific_risk']}")
 
     logger.info("\n  Top 10 safest drugs:")
     for i, r in enumerate(results[:10], 1):
@@ -808,37 +1074,45 @@ def print_analysis(results: list):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Adverse Event Profiler — Safety scoring for lupus drug library"
+        description="Adverse Event Profiler — disease-specific safety scoring"
     )
+    parser.add_argument("--disease", "-d", default="sle", help="Disease ID")
     parser.add_argument("--drug", type=str, help="Show profile for a specific drug ID")
     parser.add_argument("--export-html", action="store_true", help="Generate HTML report")
     args = parser.parse_args()
 
     if args.drug:
-        profile = get_drug_profile(args.drug)
-        if profile:
+        profile = get_drug_profile(args.drug, disease_id=args.disease)
+        if profile and profile.get("status") != "blocked" and profile.get("drug_name"):
             print(f"\n🛡️  Safety Profile: {profile['drug_name']}")
             print(f"   Composite Safety Score: {profile.get('composite_safety_score', 'N/A')}")
-            print(f"   Lupus Overlap:          {profile.get('lupus_symptom_overlap_score', 'N/A')}/10")
-            print(f"   Severity Burden:        {profile.get('severity_burden_score', 'N/A')}/10")
-            print(f"   Chronic Use Safety:     {profile.get('chronic_use_safety_score', 'N/A')}/10")
-            print(f"   DIL Risk:               {profile.get('dil_risk_score', 'N/A')}/10")
-            print(f"   Black Box Warnings:     {profile.get('black_box_warnings', [])}")
-            print(f"   Lupus Overlap AEs:      {profile.get('lupus_overlap_ae', [])}")
+            print(f"   Disease Symptom Overlap: {profile.get('disease_symptom_overlap_score', 'N/A')}/10")
+            print(f"   Severity Burden:         {profile.get('severity_burden_score', 'N/A')}/10")
+            print(f"   Chronic Use Safety:      {profile.get('chronic_use_safety_score', 'N/A')}/10")
+            print(f"   Disease-Specific Risk:   {profile.get('disease_specific_risk_score', 'N/A')}/10")
+            print(f"   Black Box Warnings:      {profile.get('black_box_warnings', [])}")
+            print(f"   Disease Overlap AEs:      {profile.get('disease_overlap_ae', [])}")
         else:
-            print(f"Drug '{args.drug}' not found in safety database.")
-        return
+            if profile and profile.get("status") == "blocked":
+                print(f"Safety analysis blocked for {args.disease}.")
+            else:
+                print(f"Drug '{args.drug}' not found in safety database.")
+            return 1
+        return 0
 
-    results = score_all_drugs()
+    results = score_all_drugs(disease_id=args.disease)
+    if not results:
+        print(f"Safety analysis is unavailable for {args.disease}.")
+        return 1
     print_analysis(results)
 
     if args.export_html:
         from med_research.pipeline.adverse_events.report import generate_html_report
-        generate_html_report(results)
+        generate_html_report(results, disease_id=args.disease)
         print("\n✅ HTML report generated: adverse_events/report.html")
 
-    return results
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main() or 0)

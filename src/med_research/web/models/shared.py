@@ -30,12 +30,15 @@ class LiteratureResponse(BaseModel):
     articles: list[dict[str, Any]]
     gene_coverage: list[LiteratureCrossReference]
     candidate_support: dict[str, Any] = {}
+    coverage: dict[str, Any] = {}
+    status: str = "ready"
 
 
 class LiteratureRequest(BaseModel):
     max_articles: int = 30
     targeted: bool = False
     no_cache: bool = False
+    disease_id: str = "sle"
 
 
 # ── Virtual Screening ──────────────────────────────────────────────────────
@@ -72,6 +75,12 @@ class ScreeningResponse(BaseModel):
     tier2_count: int
     vina_available: bool
     rdkit_available: bool
+    coverage: dict[str, Any] = {}
+    status: str = "ready"
+    disease_id: str = "sle"
+    strategy_id: str = ""
+    strategy_fingerprint: str = ""
+    strategy_limitations: list[str] = []
 
 
 class ScreeningRequest(BaseModel):
@@ -108,8 +117,9 @@ class TrialsResponse(BaseModel):
 
 class TrialsRequest(BaseModel):
     max_trials: int = 100
-    query: str = "lupus OR SLE"
+    query: str = ""
     no_cache: bool = False
+    disease_id: str = "sle"
 
 
 # ── ML Predictor ───────────────────────────────────────────────────────────

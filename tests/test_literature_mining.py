@@ -919,6 +919,7 @@ class TestGenerateLiteratureReport:
                 "candidates_supported": 2,
                 "spacy_ner": "regex-based (no spaCy)",
                 "novel_entities_found": 0,
+                "statistics_mentions": 1,
             },
             "candidate_support": {
                 "c001": [
@@ -937,6 +938,7 @@ class TestGenerateLiteratureReport:
                 "ibrutinib": {"articles": 3, "pmids": ["12345"]},
             },
             "novel_entities": {},
+            "statistics_entities": ["p < 0.001"],
             "article_matches": [
                 {
                     "pmid": "12345",
@@ -957,7 +959,7 @@ class TestGenerateLiteratureReport:
             ],
         }
 
-        with patch("literature_mining.report.Path") as mock_path_class:
+        with patch("med_research.pipeline.literature_mining.report.Path") as mock_path_class:
             mock_path = MagicMock()
             mock_path.parent = tmp_path
             mock_path.__truediv__.return_value = report_path
@@ -972,6 +974,8 @@ class TestGenerateLiteratureReport:
         html_content = file_handle().write.call_args[0][0]
         assert "<!DOCTYPE html>" in html_content
         assert "10" in html_content
+        assert "Statistical Measures (1 mentions)" in html_content
+        assert "Statistical Measures (1 mentions)" in html_content
 
     def test_report_contains_expected_sections(self, tmp_path, sample_entities, sample_candidates):
         from med_research.pipeline.literature_mining.report import generate_literature_report
@@ -996,7 +1000,7 @@ class TestGenerateLiteratureReport:
         }
 
         # Patch the output path
-        with patch("literature_mining.report.Path") as mock_path_class:
+        with patch("med_research.pipeline.literature_mining.report.Path") as mock_path_class:
             mock_path = MagicMock()
             mock_path.parent = tmp_path
             mock_path.__truediv__.return_value = report_path
@@ -1011,7 +1015,7 @@ class TestGenerateLiteratureReport:
         html_content = file_handle().write.call_args[0][0]
 
         assert "<!DOCTYPE html>" in html_content
-        assert "<title>Lupus Literature Mining Report</title>" in html_content
+        assert "<title>Lupus (SLE) Literature Mining Report</title>" in html_content
         assert "Articles Analyzed" in html_content
         assert "5" in html_content  # total_articles stat
 
@@ -1041,7 +1045,7 @@ class TestGenerateLiteratureReport:
             "article_matches": [],
         }
 
-        with patch("literature_mining.report.Path") as mock_path_class:
+        with patch("med_research.pipeline.literature_mining.report.Path") as mock_path_class:
             mock_path = MagicMock()
             mock_path.parent = tmp_path
             mock_path.__truediv__.return_value = report_path
@@ -1081,7 +1085,7 @@ class TestGenerateLiteratureReport:
             "article_matches": [],
         }
 
-        with patch("literature_mining.report.Path") as mock_path_class:
+        with patch("med_research.pipeline.literature_mining.report.Path") as mock_path_class:
             mock_path = MagicMock()
             mock_path.parent = tmp_path
             mock_path.__truediv__.return_value = report_path
@@ -1366,7 +1370,7 @@ class TestContentExtractor:
             },
         }
 
-        with patch("literature_mining.report.Path") as mock_path_class:
+        with patch("med_research.pipeline.literature_mining.report.Path") as mock_path_class:
             mock_path = MagicMock()
             mock_path.parent = tmp_path
             mock_path.__truediv__.return_value = report_path
@@ -1382,5 +1386,113 @@ class TestContentExtractor:
         assert "10" in html_content
         assert "2,500" in html_content
         assert "Relevant Sentences Kept" in html_content
+
+
+# ── Disease-aware mining ───────────────────────────────────────────────
+
+def _fake_crossref_results():
+    return {
+        "stats": {"total_articles": 0, "articles_with_matches": 0,
+                  "genes_found": 0, "drugs_found": 0, "spacy_ner": "",
+                  "candidates_supported": 0},
+        "article_matches": [], "gene_coverage": {}, "candidate_support": {},
+    }
+
+
+def _noop_entities(disease_id="sle"):
+    return {"genes": {}, "drugs": {}, "pathways": {}}
+
+
+def _capture_queries(captured):
+    def _search(query, max_results=50, email=None):
+        captured.setdefault("queries", []).append(query)
+        return []
+    return _search
+
+
+def test_mine_literature_uses_disease_config_queries(tmp_path, monkeypatch):
+    """A non-SLE disease mines its own PUBMED_QUERIES and KG entities."""
+    from med_research.diseases.base import Disease
+    from med_research.pipeline.literature_mining import miner as miner_mod
+
+    captured = {}
+    monkeypatch.setattr(miner_mod, "DATA_DIR", tmp_path)
+    monkeypatch.setattr(miner_mod, "search_pubmed", _capture_queries(captured))
+    monkeypatch.setattr(miner_mod, "load_kg_entities", _noop_entities)
+    monkeypatch.setattr(miner_mod, "load_repurposing_candidates", lambda: [])
+    monkeypatch.setattr(miner_mod, "cross_reference_articles",
+                        lambda a, e, c: _fake_crossref_results())
+
+    ra_queries = Disease("ra").config["PUBMED_QUERIES"]
+    miner_mod.mine_literature(use_cache=False, disease_id="ra")
+    assert captured["queries"] == ra_queries
+    # sanity: the RA config's queries are RA-specific, not lupus
+    assert all("lupus" not in q.lower() for q in ra_queries)
+
+
+def test_mine_literature_defaults_to_disease_config(tmp_path, monkeypatch):
+    """Default disease (sle) mines its own configured PUBMED_QUERIES."""
+    from med_research.diseases.base import Disease
+    from med_research.pipeline.literature_mining import miner as miner_mod
+
+    captured = {}
+    monkeypatch.setattr(miner_mod, "DATA_DIR", tmp_path)
+    monkeypatch.setattr(miner_mod, "search_pubmed", _capture_queries(captured))
+    monkeypatch.setattr(miner_mod, "load_kg_entities", _noop_entities)
+    monkeypatch.setattr(miner_mod, "load_repurposing_candidates", lambda: [])
+    monkeypatch.setattr(miner_mod, "cross_reference_articles",
+                        lambda a, e, c: _fake_crossref_results())
+
+    sle_queries = Disease("sle").config["PUBMED_QUERIES"]
+    miner_mod.mine_literature(use_cache=False)  # disease_id defaults to sle
+    assert captured["queries"] == sle_queries
+
+
+def test_disease_queries_reject_unknown_or_missing_config():
+    """Known disease config is used; unknown IDs never inherit SLE queries."""
+    from med_research.diseases.base import Disease
+    from med_research.pipeline.literature_mining.miner import (
+        DEFAULT_QUERIES,
+        _disease_queries,
+    )
+
+    assert _disease_queries("no_such_disease") == []
+    assert _disease_queries("ra") == Disease("ra").config["PUBMED_QUERIES"]
+
+
+def test_generate_candidate_queries_scopes_to_disease_term():
+    from med_research.pipeline.literature_mining.miner import generate_candidate_queries
+
+    candidates = [{"id": "C1", "drug_name": "Fenebrutinib (GDC-0853)"}]
+    scoped = generate_candidate_queries(
+        candidates, disease_term='("rheumatoid arthritis"[Title/Abstract])'
+    )
+    assert scoped[0][1] == (
+        '("rheumatoid arthritis"[Title/Abstract]) AND ("Fenebrutinib" OR "GDC-0853")'
+    )
+
+    # Default disease term unchanged for backwards compatibility
+    default = generate_candidate_queries(candidates)
+    assert default[0][1] == '(lupus OR SLE) AND ("Fenebrutinib" OR "GDC-0853")'
+
+
+def test_cmd_literature_threads_disease(monkeypatch):
+    """The CLI literature command passes --disease through to mine_literature."""
+    from med_research.cli import _build_parser, cmd_literature
+    from med_research.pipeline.literature_mining import miner as miner_mod
+
+    captured = {}
+
+    def fake_mine(**kwargs):
+        captured.update(kwargs)
+        return _fake_crossref_results(), {"genes": {}}, [], None
+
+    monkeypatch.setattr(miner_mod, "mine_literature", fake_mine)
+    monkeypatch.setattr(miner_mod, "print_summary", lambda *a, **k: None)
+
+    parser = _build_parser()
+    assert cmd_literature(parser.parse_args(["literature", "--disease", "ra", "--max", "5"])) == 0
+    assert captured["disease_id"] == "ra"
+    assert captured["max_per_query"] == 5
 
 

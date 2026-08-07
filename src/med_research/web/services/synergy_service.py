@@ -11,12 +11,14 @@ from med_research.web.dependencies import safe_serialize
 def run_synergy(
     top_n: int = 20,
     progress_callback=None,
+    disease_id: str = "sle",
 ) -> dict:
     """Run drug combination synergy prediction.
 
     Args:
         top_n: Number of top pairs to return.
         progress_callback: Optional callable(percent, message) for progress.
+        disease_id: Disease whose drug library is used.
 
     Returns:
         Dict with synergy results.
@@ -25,7 +27,7 @@ def run_synergy(
 
     cb = progress_callback or (lambda p, m: None)
 
-    pairs = compute_synergy(progress_callback=cb)
+    pairs = compute_synergy(progress_callback=cb, disease_id=disease_id)
 
     pairs = safe_serialize(pairs)
 

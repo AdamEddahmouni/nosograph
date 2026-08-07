@@ -55,6 +55,36 @@ SLE_SEARCH_TERMS = [
 ]
 
 
+def disease_search_terms(disease_id: str = "sle") -> list:
+    """Resolve GWAS Catalog search terms for a disease.
+
+    Prefers the disease module's ``GWAS_SEARCH_TERMS`` config (see
+    ``diseases/<id>/config.py``), falls back to the disease's display name,
+    and finally to the disease profile name. Returns a list of trait strings.
+    """
+    try:
+        from med_research.diseases.base import Disease
+        terms = Disease(disease_id).get_gwas_search_terms()
+    except ValueError:
+        # Unknown diseases are invalid input, never an excuse to query SLE.
+        return []
+    except Exception:  # noqa: BLE001 — a broken config must not crash the run
+        terms = []
+    if terms:
+        return list(terms)
+    return []
+
+
+def gwas_cache_path(disease_id: str = "sle") -> Path:
+    """Per-disease GWAS cache path, honoring the legacy SLE cache file."""
+    path = DATA_DIR / f"gwas_cache_{disease_id}.json"
+    if disease_id == "sle" and not path.exists():
+        legacy = DATA_DIR / "gwas_cache.json"
+        if legacy.exists():
+            return legacy
+    return path
+
+
 def search_gwas_studies(
     query: str = "systemic lupus erythematosus", max_results: int = 100
 ) -> list:
@@ -368,7 +398,7 @@ def extract_gene_associations(
 
 
 def cross_reference_with_kg(
-    gwas_results: dict, kg_genes: dict
+    gwas_results: dict, kg_genes: dict, disease_id: str = "sle"
 ) -> dict:
     """
     Cross-reference GWAS gene associations with the knowledge graph genes.
@@ -426,15 +456,10 @@ def cross_reference_with_kg(
             }
 
     # Filter drug-target genes from KG before flagging as missing
-    drug_target_genes = {
-        "CD20",
-        "IMPDH",
-        "Calcineurin",
-        "Glucocorticoid Receptor",
-    }
-    missing = {
-        k: v for k, v in missing.items() if k not in drug_target_genes
-    }
+    from med_research.diseases.base import Disease
+
+    drug_target_genes = Disease(disease_id).get_drug_target_exclusions()
+    missing = {k: v for k, v in missing.items() if k not in drug_target_genes}
 
     return {
         "validated": validated,
@@ -513,7 +538,7 @@ def analyze(gwas_results: dict, crossref: dict, kg_genes: dict):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Lupus GWAS Catalog Annotation"
+        description="GWAS Catalog Annotation (disease-aware)"
     )
     parser.add_argument(
         "--max-studies",
@@ -534,18 +559,28 @@ def main():
         action="store_true",
         help="Skip SNP-to-gene resolution (faster but fewer genes)",
     )
+    parser.add_argument(
+        "--disease", "-d", default="sle", help="Disease ID (default: sle)"
+    )
     args = parser.parse_args()
+
+    from med_research.diseases.coverage import module_coverage
+    coverage = module_coverage(args.disease, "gwas", ("genes", "gwas_search_terms"))
+    if not coverage.is_runnable:
+        print(f"❌ GWAS analysis blocked for {args.disease}: {', '.join(coverage.missing_inputs)}")
+        return {"coverage": coverage.to_dict(), "status": "blocked", "gwas_results": {}, "crossref": {}}
 
     print("🔄 Loading knowledge graph genes...")
     kg_genes = {}
-    genes_data = config_load_genes()
+    genes_data = config_load_genes(args.disease)
     for g in genes_data["genes"]:
         kg_genes[g["id"]] = g
     print(f"   Loaded {len(kg_genes)} KG genes")
 
     print("🔄 Searching GWAS Catalog...")
+    search_terms = disease_search_terms(args.disease)
     all_studies = []
-    for term in SLE_SEARCH_TERMS[:2]:  # Use first 2 to avoid too many
+    for term in search_terms[:2]:  # Use first 2 to avoid too many
         studies = search_gwas_studies(
             term, max_results=args.max_studies // 2
         )
@@ -563,8 +598,8 @@ def main():
 
     print(f"   Total unique studies: {len(unique_studies)}")
 
-    # Check cache
-    cache_path = DATA_DIR / "gwas_cache.json"
+    # Check cache (per-disease so results never bleed across diseases)
+    cache_path = gwas_cache_path(args.disease)
     all_results = None
     if not args.no_cache and cache_path.exists():
         try:
@@ -585,7 +620,7 @@ def main():
         )
 
         print("\n🔄 Cross-referencing with knowledge graph...")
-        crossref = cross_reference_with_kg(gwas_results, kg_genes)
+        crossref = cross_reference_with_kg(gwas_results, kg_genes, disease_id=args.disease)
 
         # Save to cache
         os.makedirs(DATA_DIR, exist_ok=True)
@@ -606,6 +641,8 @@ def main():
     # Save results
     os.makedirs(DATA_DIR, exist_ok=True)
     output = {
+        "coverage": coverage.to_dict(),
+        "status": "ready",
         "gwas_results": {
             "gene_associations": gwas_results["gene_associations"],
             "total_studies_analyzed": gwas_results[
@@ -628,7 +665,7 @@ def main():
         from med_research.pipeline.bioinformatics.report import generate_bioinformatics_report
 
         report_path = generate_bioinformatics_report(
-            None, None, None, None, None, gwas_results, crossref
+            None, None, None, None, None, gwas_results, crossref, disease_id=args.disease
         )
         print(f"\n✅ Report generated: {report_path}")
 
@@ -636,4 +673,6 @@ def main():
 
 
 if __name__ == "__main__":
-    gwas_results = main()
+    result = main()
+    if isinstance(result, dict) and result.get("status") == "blocked":
+        raise SystemExit(1)

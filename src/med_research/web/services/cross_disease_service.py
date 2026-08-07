@@ -25,3 +25,12 @@ def run_cross_disease_analysis(disease_id: str = None):
     }
 
     return result
+
+
+def run_comparative_modules(top_synergy: int = 5):
+    """Run biomarker/expression/synergy for every disease, stacked for comparison."""
+    from med_research.pipeline.cross_disease.analyzer import compute_comparative_modules
+    from med_research.web.services.shared_services import safe_serialize
+
+    results = compute_comparative_modules(top_synergy=top_synergy)
+    return safe_serialize(results)

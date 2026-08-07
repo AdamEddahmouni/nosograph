@@ -1,5 +1,9 @@
 # med-research v2.0 — Comprehensive Technical Debt & Improvement Audit
 
+> **Current-state note (2026-08-06):** This document preserves the 2026-07-25 audit for traceability, but several findings have since been resolved or mitigated. The supported runtime is the `src/med_research` package, the root `main.py` is a compatibility wrapper, all seven disease modules pass `python -m med_research.cli disease validate --all --strict`, and current usage is documented in `README.md`, `docs/evidence-workspace.md`, and `docs/api-reference.md`. Treat historical “Current state” sections below as dated audit observations, not the live API specification.
+
+**Resolved or mitigated findings:** legacy runtime entrypoints/static mounts, stale primary README guidance, incomplete seven-disease validation, and unguarded `--reload` behavior. Authentication and rate-limiting middleware are present in the current FastAPI app but still require deployment-policy review. Remaining open work should be re-verified against the current tree before implementation.
+
 > **Audited:** 2026-07-25 | **Package:** `med-research` | **Version:** 2.0.0 (migration in progress)
 > **Scope:** `src/med_research/` (114 Python files), `tests/` (25 files), root config, Docker, Makefile, `scripts/`, legacy v1 directories
 > **Total findings:** 49 issues

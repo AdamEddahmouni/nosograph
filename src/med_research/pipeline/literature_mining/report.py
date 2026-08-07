@@ -11,26 +11,29 @@ Generates a standalone HTML report showing:
 from datetime import datetime
 from pathlib import Path
 
+from med_research.pipeline.reporting import apply_disease_labels, disease_context
+from med_research.templates import env as template_env
 
-def generate_literature_report(results: dict, entities: dict, candidates: list) -> str:
-    """Generate an HTML report from literature mining results."""
+
+def generate_literature_report(
+    results: dict, entities: dict, candidates: list, disease_id: str = "sle"
+) -> str:
+    """Generate an HTML report from disease-specific literature results."""
 
     output_path = Path(__file__).parent / "literature_report.html"
+    context = disease_context(disease_id)
     stats = results["stats"]
     candidate_support = results["candidate_support"]
     gene_coverage = results["gene_coverage"]
-    drug_coverage = results["drug_coverage"]
     novel_entities = results.get("novel_entities", {})
     spacy_status = stats.get("spacy_ner", "not available")
     novel_count = stats.get("novel_entities_found", 0)
     extraction_stats = results.get("extraction_stats")
     variant_entities = results.get("variant_entities", [])
     clinical_entities = results.get("clinical_entities", [])
-    statistics_entities = results.get("statistics_entities", [])
     dosage_entities = results.get("dosage_entities", [])
     variant_count = stats.get("variant_mentions", len(variant_entities))
     clinical_count = stats.get("clinical_mentions", len(clinical_entities))
-    stats_count = stats.get("statistics_mentions", len(statistics_entities))
     dosage_count = stats.get("dosage_mentions", len(dosage_entities))
 
     # ── Content extraction stat card ──────────────────────────────────
@@ -232,14 +235,17 @@ def generate_literature_report(results: dict, entities: dict, candidates: list) 
         <div class="novel-tags">{tags}</div>
         <br>"""
 
+
+    statistics_entities = results.get("statistics_entities", [])
+    statistics_count = stats.get("statistics_mentions", len(statistics_entities))
     statistics_section = ""
     if statistics_entities:
         tags = "".join(
-            f'<span class="entity-tag stats">{escape_html(s[:50])}</span>'
-            for s in statistics_entities[:25]
+            f'<span class="entity-tag stats">{escape_html(item[:50])}</span>'
+            for item in statistics_entities[:25]
         )
         statistics_section = f"""
-        <h2 class="section-title">📊 Statistical Measures ({stats_count} mentions)</h2>
+        <h2 class="section-title">📊 Statistical Measures ({statistics_count} mentions)</h2>
         <div class="novel-tags">{tags}</div>
         <br>"""
 
@@ -255,229 +261,34 @@ def generate_literature_report(results: dict, entities: dict, candidates: list) 
         <br>"""
 
     # ── Assemble HTML ───────────────────────────────────────────────────
-    html = f"""<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lupus Literature Mining Report</title>
-    <style>
-        * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-        body {{
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
-            background: #0a0a0f; color: #e0e0e8; line-height: 1.6;
-        }}
-        .container {{ max-width: 1200px; margin: 0 auto; padding: 24px; }}
-
-        .hero {{
-            background: linear-gradient(135deg, #0f1729, #1a1025, #0f1729);
-            border: 1px solid #252535; border-radius: 16px;
-            padding: 40px; margin-bottom: 32px; text-align: center;
-        }}
-        .hero h1 {{
-            font-size: 2rem; font-weight: 800;
-            background: linear-gradient(135deg, #818cf8, #c084fc, #f472b6);
-            -webkit-background-clip: text; background-clip: text;
-            -webkit-text-fill-color: transparent; margin-bottom: 8px;
-        }}
-        .hero .subtitle {{ color: #787890; font-size: 0.95rem; }}
-
-        .stats-grid {{
-            display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 14px; margin-bottom: 32px;
-        }}
-        .stat-card {{
-            background: #13131a; border: 1px solid #252535;
-            border-radius: 12px; padding: 20px; text-align: center;
-        }}
-        .stat-card .stat-value {{ font-size: 1.8rem; font-weight: 800; }}
-        .stat-card .stat-label {{ color: #787890; font-size: 0.78rem; margin-top: 4px; }}
-
-        .section-title {{
-            font-size: 1.2rem; font-weight: 700; margin: 32px 0 14px;
-            padding-bottom: 8px; border-bottom: 1px solid #252535;
-        }}
-
-        /* Tables */
-        .table-container {{
-            overflow-x: auto; background: #13131a;
-            border: 1px solid #252535; border-radius: 12px; margin-bottom: 28px;
-        }}
-        table {{ width: 100%; border-collapse: collapse; font-size: 0.85rem; }}
-        th {{
-            text-align: left; padding: 12px 14px; background: #1a1a24;
-            color: #787890; font-weight: 600; font-size: 0.72rem;
-            text-transform: uppercase; letter-spacing: 0.04em;
-            border-bottom: 1px solid #252535;
-        }}
-        td {{ padding: 10px 14px; border-bottom: 1px solid #1a1a24; }}
-        tr:hover td {{ background: rgba(129,140,248,0.03); }}
-        .muted {{ color: #787890; font-size: 0.78rem; }}
-
-        /* Bars */
-        .bar-container {{
-            display: flex; align-items: center; gap: 8px; min-width: 120px;
-        }}
-        .bar-fill {{
-            height: 8px; background: linear-gradient(90deg, #4ade80, #22c55e);
-            border-radius: 4px; min-width: 4px; transition: width 0.3s;
-        }}
-        .bar-label {{ font-size: 0.78rem; font-weight: 600; color: #a0a0b0; }}
-
-        /* Article cards */
-        .article-card {{
-            background: #13131a; border: 1px solid #252535;
-            border-radius: 10px; padding: 18px; margin-bottom: 12px;
-            transition: border-color 0.2s;
-        }}
-        .article-card:hover {{ border-color: #4b5563; }}
-        .article-header {{
-            display: flex; justify-content: space-between; align-items: center;
-            margin-bottom: 6px;
-        }}
-        .article-score {{
-            background: #818cf8; color: #fff; font-weight: 700;
-            padding: 2px 10px; border-radius: 12px; font-size: 0.75rem;
-        }}
-        .article-pmid {{ color: #787890; font-size: 0.72rem; }}
-        .article-pmid a {{ color: #818cf8; text-decoration: none; }}
-        .article-card h4 {{ font-size: 0.9rem; margin-bottom: 8px; color: #e0e0e8; }}
-        .article-abstract {{ font-size: 0.78rem; color: #787890; margin-bottom: 10px; }}
-        .article-entities {{ display: flex; gap: 8px; flex-wrap: wrap; }}
-        .entity-tag {{
-            padding: 2px 8px; border-radius: 10px; font-size: 0.7rem;
-            font-weight: 500;
-        }}
-        .entity-tag.gene {{ background: rgba(192,132,252,0.15); color: #c084fc; }}
-        .entity-tag.drug {{ background: rgba(74,222,128,0.15); color: #4ade80; }}
-        .entity-tag.novel {{ background: rgba(52,211,153,0.15); color: #34d399; }}
-        .entity-tag.variant {{ background: rgba(249,115,22,0.15); color: #f97316; }}
-        .entity-tag.clinical {{ background: rgba(6,182,212,0.15); color: #06b6d4; }}
-        .entity-tag.stats {{ background: rgba(168,85,247,0.15); color: #a855f7; }}
-        .entity-tag.dosage {{ background: rgba(139,92,246,0.15); color: #8b5cf6; }}
-
-        /* Novel entities section */
-        .novel-category {{ margin-bottom: 20px; }}
-        .novel-category h4 {{
-            font-size: 0.85rem; color: #a0a0b0; margin-bottom: 10px;
-            font-weight: 600;
-        }}
-        .novel-tags {{ display: flex; flex-wrap: wrap; gap: 6px; }}
-
-        .pmids {{ font-size: 0.75rem; }}
-        .pmid-link {{
-            color: #818cf8; text-decoration: none; margin-right: 6px;
-            font-size: 0.72rem;
-        }}
-
-        footer {{
-            text-align: center; padding: 40px; color: #787890; font-size: 0.75rem;
-        }}
-        footer a {{ color: #818cf8; }}
-
-        @media (max-width: 768px) {{
-            .stats-grid {{ grid-template-columns: repeat(2, 1fr); }}
-            .hero {{ padding: 24px; }}
-        }}
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="hero">
-            <h1>📚 Lupus Literature Mining Report</h1>
-            <p class="subtitle">
-                PubMed Analysis of {stats['total_articles']} Articles · 
-                Cross-Referenced Against {len(entities['genes'])} Genes & {len(entities['drugs'])} Drugs
-            </p>
-            <p class="subtitle" style="font-size:0.78rem;margin-top:8px;">
-                Generated: {datetime.now().strftime('%B %d, %Y at %H:%M')}
-            </p>
-        </div>
-
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div class="stat-value" style="color:#818cf8">{stats['total_articles']}</div>
-                <div class="stat-label">Articles Analyzed</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value" style="color:#4ade80">{stats['articles_with_matches']}</div>
-                <div class="stat-label">With KG Matches</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value" style="color:#c084fc">{stats['genes_found']}</div>
-                <div class="stat-label">Unique Genes Found</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value" style="color:#fbbf24">{stats['drugs_found']}</div>
-                <div class="stat-label">Unique Drugs Found</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value" style="color:#f472b6">{stats['candidates_supported']}</div>
-                <div class="stat-label">Candidates with Lit Support</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value" style="color:#34d399">{novel_count}</div>
-                <div class="stat-label">Novel Entities (spaCy)</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value" style="color:#f97316">{variant_count}</div>
-                <div class="stat-label">Variant Mentions</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value" style="color:#06b6d4">{clinical_count}</div>
-                <div class="stat-label">Clinical Mentions</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value" style="color:#8b5cf6">{dosage_count}</div>
-                <div class="stat-label">Dosage Mentions</div>
-            </div>
-{extraction_stat_card}
-        </div>
-
-{extraction_section}
-        <h2 class="section-title">📋 Candidates with Literature Support</h2>
-        <div class="table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Drug</th><th>Target Gene</th><th>Score</th>
-                        <th>Articles</th><th>PubMed Links</th>
-                    </tr>
-                </thead>
-                <tbody>{candidate_rows}</tbody>
-            </table>
-        </div>
-
-        <h2 class="section-title">🧬 Gene Literature Coverage</h2>
-        <div class="table-container">
-            <table>
-                <thead>
-                    <tr><th>Gene</th><th>Category</th><th>Articles</th></tr>
-                </thead>
-                <tbody>{gene_rows}</tbody>
-            </table>
-        </div>
-
-        <h2 class="section-title">📄 Top Articles by KG Relevance</h2>
-        {article_rows}
-
-        <h2 class="section-title">🔬 Novel Entities Discovered (spaCy NER: {spacy_status})</h2>
-        {novel_section}
-        {variant_section}
-        {clinical_section}
-        {statistics_section}
-        {dosage_section}
-
-        <footer>
-            <p>Lupus Literature Mining Engine · PubMed search via BioPython Entrez</p>
-            <p>Entity matching against the <a href="../knowledge_graph/web/index.html">Lupus Knowledge Graph</a></p>
-            <p style="margin-top:8px;color:#6b7280;">
-                Disclaimer: This is a computational research tool. Literature matches require manual verification.
-            </p>
-        </footer>
-    </div>
-</body>
-</html>"""
+    html = template_env.get_template("reports/literature_mining.html").render(
+        ctx_0=stats['total_articles'],
+        ctx_1=len(entities['genes']),
+        ctx_2=len(entities['drugs']),
+        ctx_3=datetime.now().strftime('%B %d, %Y at %H:%M'),
+        ctx_4=stats['articles_with_matches'],
+        ctx_5=stats['genes_found'],
+        ctx_6=stats['drugs_found'],
+        ctx_7=stats['candidates_supported'],
+        ctx_8=novel_count,
+        ctx_9=variant_count,
+        ctx_10=clinical_count,
+        ctx_11=dosage_count,
+        ctx_12=extraction_stat_card,
+        ctx_13=extraction_section,
+        ctx_14=candidate_rows,
+        ctx_15=gene_rows,
+        ctx_16=article_rows,
+        ctx_17=spacy_status,
+        ctx_18=novel_section,
+        ctx_19=variant_section,
+        ctx_20=clinical_section,
+        ctx_21=dosage_section,
+        ctx_22=statistics_section,
+        disease_id=context["name"],
+        disease_id_raw=context["id"],
+    )
+    html = apply_disease_labels(html, disease_id)
 
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(html)

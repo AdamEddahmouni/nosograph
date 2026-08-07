@@ -3,11 +3,25 @@
 from med_research.web.services.shared_services import safe_serialize
 
 
-def run_cart_analysis(top_n: int = 35) -> dict:
+def run_cart_analysis(top_n: int = 35, disease_id: str = "sle") -> dict:
     """Run CAR-T suitability analysis and return serializable result."""
     from med_research.pipeline.car_t_predictor.predictor import compute_all_scores
 
-    results = compute_all_scores()
+    results = compute_all_scores(disease_id=disease_id)
+    from med_research.pipeline.car_t_predictor.predictor import last_coverage
+
+    coverage = last_coverage.to_dict() if last_coverage else {}
+    if not results and coverage.get("status") == "blocked":
+        return {
+            "genes": [],
+            "total_genes": 0,
+            "avg_score": 0.0,
+            "tier1_count": 0,
+            "tier2_count": 0,
+            "tier3_count": 0,
+            "coverage": coverage,
+            "status": "blocked",
+        }
 
     scores = [r["composite_score"] for r in results]
     avg = sum(scores) / len(scores) if scores else 0.0
@@ -23,4 +37,6 @@ def run_cart_analysis(top_n: int = 35) -> dict:
         "tier1_count": tier1,
         "tier2_count": tier2,
         "tier3_count": tier3,
+        "coverage": coverage,
+        "status": "limited_coverage" if coverage.get("level") == "partial" else "ready",
     })

@@ -3,11 +3,11 @@
 from med_research.web.services.shared_services import safe_serialize
 
 
-def run_biomarker_analysis(top_n: int = 35) -> dict:
+def run_biomarker_analysis(top_n: int = 35, disease_id: str = "sle") -> dict:
     """Run biomarker discovery and return serializable result."""
     from med_research.pipeline.biomarker_discovery.discover import compute_biomarker_matrix
 
-    results = compute_biomarker_matrix()
+    results = compute_biomarker_matrix(disease_id=disease_id)
 
     scores = [r["composite_score"] for r in results]
     avg = sum(scores) / len(scores) if scores else 0.0

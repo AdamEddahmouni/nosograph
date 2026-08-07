@@ -559,6 +559,87 @@ def compute_cross_disease_analysis(progress_callback=None) -> dict:
     return result
 
 
+# ── Comparative Module Run ───────────────────────────────────────────────
+
+
+def compute_comparative_modules(progress_callback=None, top_synergy: int = 5) -> dict:
+    """Run biomarker/expression/synergy for every disease and stack results.
+
+    Runs each of the three scoring modules per disease with save=False so
+    per-disease results never clobber the shared output files, then stacks
+    them into gene/drug x disease score matrices for side-by-side viewing.
+
+    Returns:
+        dict with "diseases" (id/name list) and "modules" containing
+        biomarker/expression score matrices (entity -> disease -> score) and
+        top synergy pairs per disease.
+    """
+    cb = progress_callback or (lambda p, m: None)
+
+    from med_research.pipeline.biomarker_discovery.discover import compute_biomarker_matrix
+    from med_research.pipeline.drug_synergy.engine import compute_synergy
+    from med_research.pipeline.gene_expression.correlator import compute_all_correlations
+
+    all_diseases = list_diseases()
+    disease_ids = sorted(all_diseases.keys())
+    n = len(disease_ids)
+
+    biomarker_scores: dict = {}
+    expression_scores: dict = {}
+    synergy_top: dict = {}
+    counts = {"biomarker": {}, "expression": {}, "synergy": {}}
+
+    for i, did in enumerate(disease_ids):
+        base = int(i / max(1, n) * 90)
+        cb(base, f"[{did}] running biomarker discovery…")
+        try:
+            bm = compute_biomarker_matrix(disease_id=did, save=False)
+            counts["biomarker"][did] = len(bm)
+            for r in bm:
+                biomarker_scores.setdefault(r["gene_id"], {})[did] = r["composite_score"]
+        except Exception as e:  # noqa: BLE001 — keep one disease failure from killing the run
+            counts["biomarker"][did] = 0
+            cb(base, f"[{did}] biomarker failed: {e}")
+
+        cb(base + 5, f"[{did}] correlating expression…")
+        try:
+            ex = compute_all_correlations(disease_id=did, save=False)
+            counts["expression"][did] = len(ex)
+            for r in ex:
+                expression_scores.setdefault(r["drug_id"], {})[did] = r["composite_score"]
+        except Exception as e:  # noqa: BLE001
+            counts["expression"][did] = 0
+            cb(base + 5, f"[{did}] expression failed: {e}")
+
+        cb(base + 10, f"[{did}] scoring synergy pairs…")
+        try:
+            sy = compute_synergy(disease_id=did, save=False)
+            counts["synergy"][did] = len(sy)
+            synergy_top[did] = [
+                {
+                    "label": f"{p['drug_a_name'].split('(')[0].strip()} + {p['drug_b_name'].split('(')[0].strip()}",
+                    "score": p["composite_score"],
+                }
+                for p in sy[:top_synergy]
+            ]
+        except Exception as e:  # noqa: BLE001
+            counts["synergy"][did] = 0
+            synergy_top[did] = []
+            cb(base + 10, f"[{did}] synergy failed: {e}")
+
+    cb(100, "Comparative module run complete")
+    return {
+        "diseases": [
+            {"id": did, "name": all_diseases[did]["name"]} for did in disease_ids
+        ],
+        "modules": {
+            "biomarker": {"scores": biomarker_scores, "counts": counts["biomarker"]},
+            "expression": {"scores": expression_scores, "counts": counts["expression"]},
+            "synergy": {"top": synergy_top, "counts": counts["synergy"]},
+        },
+    }
+
+
 # ── CLI ──────────────────────────────────────────────────────────────────
 
 

@@ -106,3 +106,25 @@ DRUG_INDUCED_LUPUS_RISK = {
         "ACE inhibitors",
     ],
 }
+
+# ── Clinical trials / GWAS search terms ────────────────────────────────
+TRIAL_QUERY = "type 1 diabetes OR T1D"
+GWAS_SEARCH_TERMS = [
+    "type 1 diabetes",
+    "T1D",
+]
+
+# Compatibility alias retained for older callers; neutral name is authoritative.
+DISEASE_SPECIFIC_RISK = DRUG_INDUCED_LUPUS_RISK
+
+SCREENING_PROFILE = {
+    "strategy_id": "t1d-screening-v1",
+    "pathway_keywords": ["t cell", "insulitis", "beta cell", "il-2", "treg", "interferon", "antigen presentation", "costimulation"],
+    "mechanism_keywords": ["cd3", "t cell", "treg", "il-2", "beta cell", "insulin", "ctla4", "cd80", "cd86", "ifn"],
+    "reference_drug_ids": ["teplizumab", "abatacept", "rituximab", "verapamil", "low_dose_il2", "gad_alum"],
+    "weights": {"binding_estimate": 0.20, "druglikeness": 0.10, "target_complementarity": 0.40, "similarity_score": 0.15, "novelty_score": 0.15},
+    "source": "curated_t1d_knowledge_graph",
+    "curated_inputs": ["pathways", "drugs", "screening_strategy"],
+    "inferred_inputs": ["mechanism_keyword_matching", "property_based_binding_estimate"],
+    "limitations": ["Property scores are heuristic prioritization signals and do not establish type 1 diabetes efficacy or preservation of beta-cell function."],
+}

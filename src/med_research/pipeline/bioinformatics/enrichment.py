@@ -53,40 +53,38 @@ GENE_SET_LIBRARIES = [
 ]
 
 
-def load_kg_genes() -> dict:
-    """Load lupus-associated genes from the knowledge graph, indexed by gene ID."""
-    data = load_genes()
+def load_kg_genes(disease_id: str = "sle") -> dict:
+    """Load a disease's genes from the knowledge graph, indexed by gene ID."""
+    data = load_genes(disease_id)
     return {g["id"]: g for g in data["genes"]}
 
 
-def load_kg_graph() -> nx.MultiDiGraph:
-    """Load the knowledge graph for gene targeting analysis."""
+def load_kg_graph(disease_id: str = "sle") -> nx.MultiDiGraph:
+    """Load the knowledge graph for a disease for gene targeting analysis."""
     from med_research.pipeline.knowledge_graph.builder import build_graph
 
-    return build_graph()
+    return build_graph(disease_id)
 
 
 def get_lupus_gene_list(
-    genes: dict, G: nx.MultiDiGraph = None, untargeted_only: bool = False
+    genes: dict, G: nx.MultiDiGraph = None, untargeted_only: bool = False,
+    disease_id: str = "sle",
 ) -> list:
-    """
-    Get the list of lupus gene symbols for enrichment analysis.
 
-    Excludes drug-target-only genes (CD20, IMPDH, Calcineurin, Glucocorticoid Receptor)
-    which are not lupus risk genes.
+    """Return the active disease's analyzable gene list.
+
+    The function name is retained for compatibility with existing callers;
+    records and exclusions are scoped to ``disease_id``.
 
     Args:
-        genes: Gene dictionary indexed by gene ID
-        G: Knowledge graph (optional, for targeted gene detection)
-        untargeted_only: If True, only return genes not targeted by any drug
+        genes: Gene dictionary indexed by gene ID.
+        G: Knowledge graph (optional, for targeted gene detection).
+        untargeted_only: If True, only return genes not targeted by any drug.
     """
     # Drug target genes that are not lupus risk genes
-    drug_target_exclusions = {
-        "CD20",
-        "IMPDH",
-        "Calcineurin",
-        "Glucocorticoid Receptor",
-    }
+    from med_research.diseases.base import Disease
+
+    drug_target_exclusions = Disease(disease_id).get_drug_target_exclusions()
 
     lupus_genes = []
     for gene_id, gene_info in genes.items():
@@ -109,12 +107,21 @@ def get_lupus_gene_list(
                 "symbol": gene_id,
                 "name": gene_info["name"],
                 "category": gene_info.get("category", ""),
+                "disease_evidence": Disease(disease_id).get_disease_evidence(gene_info),
                 "odds_ratio": gene_info.get("odds_ratio"),
                 "chromosome": gene_info.get("chromosome", ""),
             }
         )
 
     return lupus_genes
+
+
+def get_disease_gene_list(
+    genes: dict, G: nx.MultiDiGraph = None, untargeted_only: bool = False,
+    disease_id: str = "sle",
+) -> list:
+    """Return the active disease's analyzable gene list."""
+    return get_lupus_gene_list(genes, G, untargeted_only, disease_id)
 
 
 def run_enrichment(
@@ -257,7 +264,7 @@ def run_enrichment(
 
 
 def cross_reference_with_kg_pathways(
-    enrichment_results: dict, kg_pathways: dict
+    enrichment_results: dict, kg_pathways: dict, disease_id: str = "sle"
 ) -> dict:
     """
     Cross-reference enrichment terms with knowledge graph pathways.
@@ -286,17 +293,7 @@ def cross_reference_with_kg_pathways(
                         and any(
                             kw in term_lower
                             for kw in [
-                                "interferon",
-                                "ifn",
-                                "b cell",
-                                "t cell",
-                                "nfkb",
-                                "nf-κb",
-                                "complement",
-                                "toll",
-                                "tlr",
-                                "jak",
-                                "stat",
+                                *__import__("med_research.diseases.base", fromlist=["Disease"]).Disease(disease_id).get_pathway_keywords(),
                             ]
                         )
                     )
@@ -380,16 +377,25 @@ def main():
         action="store_true",
         help="Skip cache, re-run enrichment from GSEApy",
     )
+    parser.add_argument(
+        "--disease", "-d", default="sle", help="Disease ID (default: sle)"
+    )
     args = parser.parse_args()
 
+    from med_research.diseases.coverage import module_coverage
+    coverage = module_coverage(args.disease, "enrichment", ("genes", "pathways"))
+    if not coverage.is_runnable:
+        print(f"❌ Enrichment blocked for {args.disease}: {', '.join(coverage.missing_inputs)}")
+        return {"coverage": coverage.to_dict(), "status": "blocked", "libraries": []}
+
     print("🔄 Loading knowledge graph and gene data...")
-    G = load_kg_graph()
-    genes = load_kg_genes()
+    G = load_kg_graph(args.disease)
+    genes = load_kg_genes(args.disease)
     print(f"   Loaded {len(genes)} genes from knowledge graph")
 
-    print("🔄 Preparing lupus gene list...")
-    gene_list = get_lupus_gene_list(
-        genes, G, untargeted_only=args.untargeted_only
+    print("🔄 Preparing disease gene list...")
+    gene_list = get_disease_gene_list(
+        genes, G, untargeted_only=args.untargeted_only, disease_id=args.disease
     )
     print(f"   Using {len(gene_list)} genes for enrichment")
     for g in gene_list:
@@ -401,9 +407,9 @@ def main():
     )
 
     print("🔄 Cross-referencing with KG pathways...")
-    kg_pathways = load_pathways()
+    kg_pathways = load_pathways(args.disease)
     kg_matches = cross_reference_with_kg_pathways(
-        enrichment_results, kg_pathways
+        enrichment_results, kg_pathways, disease_id=args.disease
     )
 
     analyze(enrichment_results, gene_list, kg_matches)
@@ -411,6 +417,8 @@ def main():
     # Save results
     os.makedirs(DATA_DIR, exist_ok=True)
     output = {
+        "coverage": coverage.to_dict(),
+        "status": "ready",
         "gene_list": gene_list,
         "enrichment_results": enrichment_results,
         "kg_pathway_matches": {
@@ -428,7 +436,12 @@ def main():
         from med_research.pipeline.bioinformatics.report import generate_bioinformatics_report
 
         report_path = generate_bioinformatics_report(
-            enrichment_results, gene_list, kg_matches, None, None
+            enrichment_results,
+            gene_list,
+            kg_matches,
+            None,
+            None,
+            disease_id=args.disease,
         )
         print(f"\n✅ Report generated: {report_path}")
 
@@ -436,4 +449,6 @@ def main():
 
 
 if __name__ == "__main__":
-    enrichment_results = main()
+    result = main()
+    if isinstance(result, dict) and result.get("status") == "blocked":
+        raise SystemExit(1)

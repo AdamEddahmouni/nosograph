@@ -1,5 +1,7 @@
 # 🧬 Docking Targets Directory
 
+> **Current runtime note:** This README describes the target data used by the packaged `med_research` pipeline. Use the unified CLI (`python -m med_research.cli screening ...`) and install dependencies from the repository root; the old root-level `virtual_screening/` script path shown in historical examples is not the supported entry point.
+
 This directory stores everything needed for AutoDock Vina molecular docking:
 curated PDB mappings, downloaded receptor structures, prepared ligand files,
 and docking output.
@@ -33,7 +35,7 @@ targets/
 ### 1. Install Dependencies
 
 ```bash
-pip install rdkit>=2023.03 meeko>=0.5.0 biopython>=1.81
+python -m pip install -e ".[cheminformatics]"
 ```
 
 ### 2. Install AutoDock Vina
@@ -71,7 +73,7 @@ sudo apt install autodock-vina
 ### 3. Check Your Setup
 
 ```bash
-python -c "from virtual_screening.docking import get_docking_status; print(get_docking_status())"
+python -c "from med_research.pipeline.virtual_screening.docking import get_docking_status; print(get_docking_status())"
 ```
 
 You should see all `true` values:
@@ -90,10 +92,10 @@ You should see all `true` values:
 ```bash
 # From the project root:
 # Full run (expect 20-60 min depending on hardware):
-python virtual_screening/screening.py --use-vina --top 15 --export-html
+python -m med_research.cli screening --disease sle --use-vina --top 15 --export-html
 
 # Quick test with a single target:
-python virtual_screening/screening.py --use-vina --gene BLK --top 5 --export-html
+python -m med_research.cli screening --disease sle --use-vina --gene BLK --top 5 --export-html
 ```
 
 When `--use-vina` is passed, the screening engine will:
@@ -184,14 +186,14 @@ Before committing, test that your new target docks correctly:
 ```bash
 # Test receptor preparation
 python -c "
-from virtual_screening.docking import DockingEngine
+from med_research.pipeline.virtual_screening.docking import DockingEngine
 engine = DockingEngine()
 engine.prepare_all_targets()
 "
 
 # Test docking a known ligand
 python -c "
-from virtual_screening.docking import DockingEngine, prepare_ligand
+from med_research.pipeline.virtual_screening.docking import DockingEngine, prepare_ligand
 
 engine = DockingEngine()
 engine.prepare_all_targets()
@@ -280,7 +282,7 @@ These serve as positive controls for the docking pipeline:
 To run a validation:
 ```bash
 python -c "
-from virtual_screening.docking import DockingEngine, prepare_ligand
+from med_research.pipeline.virtual_screening.docking import DockingEngine, prepare_ligand
 engine = DockingEngine()
 status = engine.get_status()
 print(f'Docking possible: {status[\"docking_possible\"]}')

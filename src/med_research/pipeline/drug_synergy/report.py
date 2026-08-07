@@ -11,8 +11,11 @@ Generates a beautiful standalone HTML report with:
 from datetime import datetime
 from pathlib import Path
 
+from med_research.pipeline.reporting import apply_disease_labels
+from med_research.templates import env as template_env
 
-def generate_html_report(scored_pairs: list) -> str:
+
+def generate_html_report(scored_pairs: list, disease_id: str = "sle") -> str:
     """Generate a standalone HTML report and return the path."""
 
     output_path = Path(__file__).parent / "report.html"
@@ -106,244 +109,18 @@ def generate_html_report(scored_pairs: list) -> str:
             </div>
         </div>"""
 
-    html = f"""<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drug Combination Synergy Report</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
-    <style>
-        * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-        body {{
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
-            background: #0a0a0f; color: #e0e0e8; line-height: 1.6;
-        }}
-        .container {{ max-width: 1200px; margin: 0 auto; padding: 20px; }}
-
-        .hero {{
-            background: linear-gradient(135deg, #0f1729, #1a0f20, #0f1729);
-            border: 1px solid #252535;
-            border-radius: 16px; padding: 40px;
-            margin-bottom: 32px; text-align: center;
-        }}
-        .hero h1 {{
-            font-size: 2.2rem; font-weight: 800;
-            background: linear-gradient(135deg, #f59e0b, #f472b6, #818cf8);
-            -webkit-background-clip: text; background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 8px;
-        }}
-        .hero .subtitle {{ color: #787890; font-size: 1rem; }}
-        .hero .date {{ color: #787890; font-size: 0.8rem; margin-top: 8px; }}
-
-        .stats-grid {{
-            display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px;
-            margin-bottom: 32px;
-        }}
-        .stat-card {{
-            background: #13131a; border: 1px solid #252535;
-            border-radius: 12px; padding: 22px; text-align: center;
-        }}
-        .stat-card .stat-value {{ font-size: 1.8rem; font-weight: 800; margin-bottom: 4px; }}
-        .stat-card .stat-label {{ color: #787890; font-size: 0.78rem; }}
-
-        .section-title {{
-            font-size: 1.3rem; font-weight: 700; margin: 32px 0 16px;
-            padding-bottom: 8px; border-bottom: 1px solid #252535;
-        }}
-
-        .highlights-grid {{
-            display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-            gap: 14px; margin-bottom: 28px;
-        }}
-        .highlight-card {{
-            background: #13131a; border: 1px solid #252535;
-            border-radius: 12px; padding: 18px;
-            transition: border-color 0.2s, transform 0.2s;
-        }}
-        .highlight-card:hover {{ border-color: #4b5563; transform: translateY(-2px); }}
-        .hl-rank {{
-            font-size: 0.7rem; font-weight: 700; color: #787890;
-            margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.05em;
-        }}
-        .hl-body {{
-            display: flex; justify-content: space-between; align-items: center;
-            margin-bottom: 12px;
-        }}
-        .hl-drugs {{ display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }}
-        .hl-drug-a {{ font-weight: 600; font-size: 0.85rem; color: #f59e0b; }}
-        .hl-drug-b {{ font-weight: 600; font-size: 0.85rem; color: #f472b6; }}
-        .hl-plus {{ color: #787890; font-weight: 700; }}
-        .hl-score {{ font-size: 1.4rem; font-weight: 800; }}
-        .hl-dims {{
-            display: flex; gap: 6px; flex-wrap: wrap;
-        }}
-        .hl-dim {{
-            display: flex; align-items: center; gap: 4px;
-            background: #0a0a0f; border-radius: 6px; padding: 3px 8px;
-            font-size: 0.7rem; font-weight: 600;
-        }}
-        .hl-dim span:first-child {{ color: #787890; }}
-        .hl-dim span:last-child {{ color: #e0e0e8; }}
-
-        .table-container {{
-            overflow-x: auto; background: #13131a;
-            border: 1px solid #252535; border-radius: 12px;
-            margin-bottom: 32px;
-        }}
-        table {{ width: 100%; border-collapse: collapse; font-size: 0.86rem; }}
-        th {{
-            text-align: left; padding: 14px 16px; background: #1a1a24;
-            color: #787890; font-weight: 600; font-size: 0.73rem;
-            text-transform: uppercase; letter-spacing: 0.05em;
-            border-bottom: 1px solid #252535;
-        }}
-        td {{ padding: 11px 16px; border-bottom: 1px solid #1a1a24; vertical-align: top; }}
-        tr:hover td {{ background: rgba(245, 158, 11, 0.02); }}
-        .rank {{ font-weight: 700; color: #787890; font-size: 1rem; min-width: 28px; }}
-
-        .tier-badge {{
-            display: inline-block; padding: 2px 9px; border-radius: 20px;
-            font-size: 0.68rem; font-weight: 600; white-space: nowrap;
-        }}
-        .muted {{ color: #787890; font-size: 0.76rem; }}
-        .score-breakdown span {{
-            display: inline-block; margin-right: 5px; font-size: 0.76rem;
-            font-weight: 600; cursor: help;
-        }}
-
-        .methodology {{
-            background: #13131a; border: 1px solid #252535;
-            border-radius: 12px; padding: 24px; margin-bottom: 32px;
-        }}
-        .methodology h3 {{ font-size: 1rem; margin-bottom: 12px; }}
-        .methodology ul {{ margin-left: 20px; color: #787890; font-size: 0.86rem; }}
-        .methodology li {{ margin-bottom: 6px; }}
-        .methodology strong {{ color: #e0e0e8; }}
-
-        footer {{ text-align: center; padding: 40px; color: #787890; font-size: 0.78rem; }}
-        footer a {{ color: #818cf8; }}
-
-        @media (max-width: 768px) {{
-            .stats-grid {{ grid-template-columns: repeat(2, 1fr); }}
-            .highlights-grid {{ grid-template-columns: 1fr; }}
-            .hero {{ padding: 24px; }}
-            .hero h1 {{ font-size: 1.4rem; }}
-        }}
-    </style>
-</head>
-<body>
-    <div class="container">
-
-        <div class="hero">
-            <h1>\U0001f517 Drug Combination Synergy Report</h1>
-            <p class="subtitle">AI-Driven Synergy Prediction for {len(scored_pairs)} Drug Pairs from the 26-Drug Library</p>
-            <p class="date">Generated: {datetime.now().strftime('%B %d, %Y at %H:%M')} | 5-Dimensional Weighted Scoring Model</p>
-        </div>
-
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div class="stat-value" style="color:#dc2626;">{n_tier1}</div>
-                <div class="stat-label">Strong Synergy (&ge;8.0)</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value" style="color:#ea580c;">{n_tier2}</div>
-                <div class="stat-label">Promising Synergy (7.0&ndash;7.9)</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value" style="color:#ca8a04;">{n_tier3}</div>
-                <div class="stat-label">Possible Synergy (6.0&ndash;6.9)</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value" style="color:#818cf8;">{avg_score:.1f}</div>
-                <div class="stat-label">Average Score</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value" style="color:#c084fc;">{len(scored_pairs)}</div>
-                <div class="stat-label">Total Pairs Evaluated</div>
-            </div>
-        </div>
-
-        <h2 class="section-title">🎯 Score Dimension Radar — Top 5 Pairs</h2>
-        <div class="radar-container" style="max-width:700px;margin:0 auto 28px;">
-            <canvas id="radarChart" style="max-height:500px;"></canvas>
-        </div>
-
-        <h2 class="section-title">\U0001f3c6 Top 10 Synergistic Combinations</h2>
-        <div class="highlights-grid">
-            {highlight_html}
-        </div>
-
-        <h2 class="section-title">\U0001f4ca All Ranked Drug Pairs</h2>
-        <div class="table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Tier</th>
-                        <th>Drug A</th>
-                        <th>Drug B</th>
-                        <th>Score</th>
-                        <th>Dimensions</th>
-                        <th>Categories</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {rows_html}
-                </tbody>
-            </table>
-        </div>
-
-        <div class="methodology">
-            <h3>\U0001f4d0 Methodology \u2014 5-Dimensional Weighted Scoring</h3>
-            <ul>
-                <li><strong>Target Complementarity (30%)</strong> \u2014 How different are the drugs' molecular targets? Targeting distinct nodes in the disease network.</li>
-                <li><strong>Pathway Diversity (25%)</strong> \u2014 How diverse are the biological pathways affected? Broader coverage of lupus pathophysiology.</li>
-                <li><strong>Mechanism Orthogonality (20%)</strong> \u2014 How independent are the mechanisms of action? Orthogonal attacks reduce escape mutations.</li>
-                <li><strong>Safety Non-overlap (15%)</strong> \u2014 Non-overlapping toxicity profiles reduce cumulative adverse event burden.</li>
-                <li><strong>Combined Evidence (10%)</strong> \u2014 Existing clinical trials, case reports, or mechanistic rationale for the combination.</li>
-            </ul>
-            <p style="margin-top:16px; color:#787890; font-size:0.82rem;">
-                <strong>Disclaimer:</strong> All synergy predictions are computational hypotheses requiring experimental and clinical validation.
-                This report is a research tool and does not constitute medical advice.
-            </p>
-        </div>
-
-        <footer>
-            <p>Drug Combination Synergy Predictor &middot; Part of the Lupus Research Platform</p>
-            <p><a href="../knowledge_graph/web/index.html">View Knowledge Graph</a> &middot; <a href="../drug_repurposing/report.html">Drug Repurposing Report</a></p>
-        </footer>
-    </div>
-    <script>
-(function() {{
-    const top5 = {top5_json};
-    const labels = ['Target Complementarity', 'Pathway Diversity', 'Mechanism Orthogonality', 'Safety Non-overlap', 'Combined Evidence'];
-    const colors = ['#f59e0b', '#818cf8', '#4ade80', '#f472b6', '#34d399'];
-    const datasets = top5.map((p, i) => ({{
-        label: p.name,
-        data: p.scores,
-        borderColor: colors[i],
-        backgroundColor: colors[i] + '18',
-        borderWidth: 2,
-        pointBackgroundColor: colors[i],
-        pointRadius: 4,
-    }}));
-    new Chart(document.getElementById('radarChart'), {{
-        type: 'radar',
-        data: {{ labels, datasets }},
-        options: {{
-            responsive: true, maintainAspectRatio: true,
-            scales: {{ r: {{ beginAtZero: true, max: 10, ticks: {{ backdropColor: 'transparent', color: '#787890', font: {{ size: 10 }} }}, grid: {{ color: '#252535' }}, pointLabels: {{ color: '#c0c0d0', font: {{ size: 10 }} }}, angleLines: {{ color: '#252535' }} }} }},
-            plugins: {{ legend: {{ position: 'bottom', labels: {{ color: '#c0c0d0', font: {{ size: 11 }}, padding: 14, usePointStyle: true }} }} }}
-        }}
-    }});
-}})();
-</script>
-</body>
-</html>"""
+    html = template_env.get_template("reports/drug_synergy.html").render(
+        ctx_0=len(scored_pairs),
+        ctx_1=datetime.now().strftime('%B %d, %Y at %H:%M'),
+        ctx_2=n_tier1,
+        ctx_3=n_tier2,
+        ctx_4=n_tier3,
+        ctx_5=avg_score,
+        ctx_6=highlight_html,
+        ctx_7=rows_html,
+        ctx_8=top5_json,
+    )
+    html = apply_disease_labels(html, disease_id)
 
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(html)

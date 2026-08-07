@@ -15,24 +15,24 @@ def get_knowledge_graph(disease_id: str = "sle"):
     return build_graph(disease_id)
 
 
-@lru_cache(maxsize=1)
-def get_kg_genes() -> dict:
-    """Load gene data indexed by gene ID."""
-    data = load_genes()
+@lru_cache(maxsize=16)
+def get_kg_genes(disease_id: str = "sle") -> dict:
+    """Load disease-specific gene data indexed by gene ID."""
+    data = load_genes(disease_id)
     return {g["id"]: g for g in data["genes"]}
 
 
-@lru_cache(maxsize=1)
-def get_kg_drugs() -> dict:
-    """Load drug data indexed by drug ID."""
-    data = load_drugs()
+@lru_cache(maxsize=16)
+def get_kg_drugs(disease_id: str = "sle") -> dict:
+    """Load disease-specific drug data indexed by drug ID."""
+    data = load_drugs(disease_id)
     return {d["id"]: d for d in data["drugs"]}
 
 
-@lru_cache(maxsize=1)
-def get_kg_pathways() -> dict:
-    """Load pathway data indexed by pathway ID."""
-    data = load_pathways()
+@lru_cache(maxsize=16)
+def get_kg_pathways(disease_id: str = "sle") -> dict:
+    """Load disease-specific pathway data indexed by pathway ID."""
+    data = load_pathways(disease_id)
     return {p["id"]: p for p in data["pathways"]}
 
 

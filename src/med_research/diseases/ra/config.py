@@ -106,3 +106,25 @@ DRUG_INDUCED_LUPUS_RISK = {
         "corticosteroids",
     ],
 }
+
+# ── Clinical trials / GWAS search terms ────────────────────────────────
+TRIAL_QUERY = "rheumatoid arthritis OR RA"
+GWAS_SEARCH_TERMS = [
+    "rheumatoid arthritis",
+    "RA",
+]
+
+# Compatibility alias retained for older callers; neutral name is authoritative.
+DISEASE_SPECIFIC_RISK = DRUG_INDUCED_LUPUS_RISK
+
+SCREENING_PROFILE = {
+    "strategy_id": "ra-screening-v1",
+    "pathway_keywords": ["tnf", "il-6", "jak-stat", "t cell", "b cell", "nf-kb", "citrullination", "osteoclast"],
+    "mechanism_keywords": ["tnf", "il-6", "jak", "stat", "b cell", "cd20", "ctla4", "rankl", "padi4", "nf-kb"],
+    "reference_drug_ids": ["methotrexate", "adalimumab", "tocilizumab", "tofacitinib", "baricitinib", "rituximab"],
+    "weights": {"binding_estimate": 0.25, "druglikeness": 0.15, "target_complementarity": 0.35, "similarity_score": 0.15, "novelty_score": 0.10},
+    "source": "curated_ra_knowledge_graph",
+    "curated_inputs": ["pathways", "drugs", "screening_strategy"],
+    "inferred_inputs": ["mechanism_keyword_matching", "property_based_binding_estimate"],
+    "limitations": ["Property scores are heuristic prioritization signals and do not establish RA efficacy or safety."],
+}

@@ -1,0 +1,925 @@
+{
+  "safety_scores": [
+    {
+      "drug_id": "vedolizumab",
+      "drug_name": "Vedolizumab (Entyvio)",
+      "disease_id": "ibd",
+      "disease_symptom_overlap_score": 8.0,
+      "disease_overlap_score": 8.0,
+      "lupus_symptom_overlap_score": 8.0,
+      "severity_burden_score": 6.0,
+      "chronic_use_safety_score": 7.0,
+      "disease_specific_risk_score": 10.0,
+      "dil_risk_score": 10.0,
+      "composite_safety_score": 7.35,
+      "n_disease_overlap_ae": 1,
+      "disease_overlap_ae": [
+        "fatigue",
+        "joint pain"
+      ],
+      "n_lupus_overlap_ae": 1,
+      "lupus_overlap_ae": [
+        "fatigue",
+        "joint pain"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "IBD subtype, disease location, nutritional status, and infection history affect treatment risk."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Infection, liver function, and infusion reaction monitoring.",
+      "n_severe_ae": 3
+    },
+    {
+      "drug_id": "ustekinumab",
+      "drug_name": "Ustekinumab (Stelara)",
+      "disease_id": "ibd",
+      "disease_symptom_overlap_score": 8.0,
+      "disease_overlap_score": 8.0,
+      "lupus_symptom_overlap_score": 8.0,
+      "severity_burden_score": 5.0,
+      "chronic_use_safety_score": 7.0,
+      "disease_specific_risk_score": 2.0,
+      "dil_risk_score": 2.0,
+      "composite_safety_score": 6.25,
+      "n_disease_overlap_ae": 1,
+      "disease_overlap_ae": [
+        "fatigue"
+      ],
+      "n_lupus_overlap_ae": 1,
+      "lupus_overlap_ae": [
+        "fatigue"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "IBD subtype, disease location, nutritional status, and infection history affect treatment risk."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Infection, malignancy, and neurologic symptom monitoring.",
+      "n_severe_ae": 3
+    },
+    {
+      "drug_id": "infliximab",
+      "drug_name": "Infliximab (Remicade/Avsola/Inflectra/Flixabi)",
+      "disease_id": "ibd",
+      "disease_symptom_overlap_score": 8.0,
+      "disease_overlap_score": 8.0,
+      "lupus_symptom_overlap_score": 8.0,
+      "severity_burden_score": 4.0,
+      "chronic_use_safety_score": 6.0,
+      "disease_specific_risk_score": 2.0,
+      "dil_risk_score": 2.0,
+      "composite_safety_score": 5.7,
+      "n_disease_overlap_ae": 2,
+      "disease_overlap_ae": [
+        "abdominal pain",
+        "fatigue"
+      ],
+      "n_lupus_overlap_ae": 2,
+      "lupus_overlap_ae": [
+        "abdominal pain",
+        "fatigue"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "IBD subtype, disease location, nutritional status, and infection history affect treatment risk."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "TB/hepatitis screening, infection monitoring, and infusion observation.",
+      "n_severe_ae": 4
+    },
+    {
+      "drug_id": "tofacitinib",
+      "drug_name": "Tofacitinib (Xeljanz)",
+      "disease_id": "ibd",
+      "disease_symptom_overlap_score": 8.0,
+      "disease_overlap_score": 8.0,
+      "lupus_symptom_overlap_score": 8.0,
+      "severity_burden_score": 3.0,
+      "chronic_use_safety_score": 4.0,
+      "disease_specific_risk_score": 5.0,
+      "dil_risk_score": 5.0,
+      "composite_safety_score": 5.2,
+      "n_disease_overlap_ae": 2,
+      "disease_overlap_ae": [
+        "diarrhea",
+        "fatigue"
+      ],
+      "n_lupus_overlap_ae": 2,
+      "lupus_overlap_ae": [
+        "diarrhea",
+        "fatigue"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "IBD subtype, disease location, nutritional status, and infection history affect treatment risk."
+      ],
+      "black_box_warnings": [
+        "Serious infections, malignancy, thrombosis, and cardiovascular risk warnings."
+      ],
+      "monitoring_required": "CBC, liver function, lipids, TB/hepatitis screening, and thrombosis risk review.",
+      "n_severe_ae": 4
+    },
+    {
+      "drug_id": "golimumab",
+      "drug_name": "Golimumab (Simponi)",
+      "disease_id": "ibd",
+      "disease_symptom_overlap_score": 4.0,
+      "disease_overlap_score": 4.0,
+      "lupus_symptom_overlap_score": 4.0,
+      "severity_burden_score": 5.0,
+      "chronic_use_safety_score": 5.0,
+      "disease_specific_risk_score": 10.0,
+      "dil_risk_score": 10.0,
+      "composite_safety_score": 5.15,
+      "n_disease_overlap_ae": 5,
+      "disease_overlap_ae": [
+        "abdominal pain",
+        "diarrhea",
+        "fatigue",
+        "weight loss",
+        "anemia"
+      ],
+      "n_lupus_overlap_ae": 5,
+      "lupus_overlap_ae": [
+        "abdominal pain",
+        "diarrhea",
+        "fatigue",
+        "weight loss",
+        "anemia"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "IBD subtype, disease location, nutritional status, and infection history affect treatment risk."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Review CBC, liver function, infection risk, nutrition, and product-specific monitoring.",
+      "n_severe_ae": 4
+    },
+    {
+      "drug_id": "risankizumab",
+      "drug_name": "Risankizumab (Skyrizi)",
+      "disease_id": "ibd",
+      "disease_symptom_overlap_score": 4.0,
+      "disease_overlap_score": 4.0,
+      "lupus_symptom_overlap_score": 4.0,
+      "severity_burden_score": 5.0,
+      "chronic_use_safety_score": 5.0,
+      "disease_specific_risk_score": 10.0,
+      "dil_risk_score": 10.0,
+      "composite_safety_score": 5.15,
+      "n_disease_overlap_ae": 5,
+      "disease_overlap_ae": [
+        "abdominal pain",
+        "diarrhea",
+        "fatigue",
+        "weight loss",
+        "anemia"
+      ],
+      "n_lupus_overlap_ae": 5,
+      "lupus_overlap_ae": [
+        "abdominal pain",
+        "diarrhea",
+        "fatigue",
+        "weight loss",
+        "anemia"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "IBD subtype, disease location, nutritional status, and infection history affect treatment risk."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Review CBC, liver function, infection risk, nutrition, and product-specific monitoring.",
+      "n_severe_ae": 4
+    },
+    {
+      "drug_id": "mirikizumab",
+      "drug_name": "Mirikizumab (Omvoh)",
+      "disease_id": "ibd",
+      "disease_symptom_overlap_score": 4.0,
+      "disease_overlap_score": 4.0,
+      "lupus_symptom_overlap_score": 4.0,
+      "severity_burden_score": 5.0,
+      "chronic_use_safety_score": 5.0,
+      "disease_specific_risk_score": 10.0,
+      "dil_risk_score": 10.0,
+      "composite_safety_score": 5.15,
+      "n_disease_overlap_ae": 5,
+      "disease_overlap_ae": [
+        "abdominal pain",
+        "diarrhea",
+        "fatigue",
+        "weight loss",
+        "anemia"
+      ],
+      "n_lupus_overlap_ae": 5,
+      "lupus_overlap_ae": [
+        "abdominal pain",
+        "diarrhea",
+        "fatigue",
+        "weight loss",
+        "anemia"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "IBD subtype, disease location, nutritional status, and infection history affect treatment risk."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Review CBC, liver function, infection risk, nutrition, and product-specific monitoring.",
+      "n_severe_ae": 4
+    },
+    {
+      "drug_id": "upadacitinib",
+      "drug_name": "Upadacitinib (Rinvoq)",
+      "disease_id": "ibd",
+      "disease_symptom_overlap_score": 4.0,
+      "disease_overlap_score": 4.0,
+      "lupus_symptom_overlap_score": 4.0,
+      "severity_burden_score": 5.0,
+      "chronic_use_safety_score": 5.0,
+      "disease_specific_risk_score": 10.0,
+      "dil_risk_score": 10.0,
+      "composite_safety_score": 5.15,
+      "n_disease_overlap_ae": 5,
+      "disease_overlap_ae": [
+        "abdominal pain",
+        "diarrhea",
+        "fatigue",
+        "weight loss",
+        "anemia"
+      ],
+      "n_lupus_overlap_ae": 5,
+      "lupus_overlap_ae": [
+        "abdominal pain",
+        "diarrhea",
+        "fatigue",
+        "weight loss",
+        "anemia"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "IBD subtype, disease location, nutritional status, and infection history affect treatment risk."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Review CBC, liver function, infection risk, nutrition, and product-specific monitoring.",
+      "n_severe_ae": 4
+    },
+    {
+      "drug_id": "ozanimod",
+      "drug_name": "Ozanimod (Zeposia)",
+      "disease_id": "ibd",
+      "disease_symptom_overlap_score": 4.0,
+      "disease_overlap_score": 4.0,
+      "lupus_symptom_overlap_score": 4.0,
+      "severity_burden_score": 5.0,
+      "chronic_use_safety_score": 5.0,
+      "disease_specific_risk_score": 10.0,
+      "dil_risk_score": 10.0,
+      "composite_safety_score": 5.15,
+      "n_disease_overlap_ae": 5,
+      "disease_overlap_ae": [
+        "abdominal pain",
+        "diarrhea",
+        "fatigue",
+        "weight loss",
+        "anemia"
+      ],
+      "n_lupus_overlap_ae": 5,
+      "lupus_overlap_ae": [
+        "abdominal pain",
+        "diarrhea",
+        "fatigue",
+        "weight loss",
+        "anemia"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "IBD subtype, disease location, nutritional status, and infection history affect treatment risk."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Review CBC, liver function, infection risk, nutrition, and product-specific monitoring.",
+      "n_severe_ae": 4
+    },
+    {
+      "drug_id": "etrasimod",
+      "drug_name": "Etrasimod (Velsipity)",
+      "disease_id": "ibd",
+      "disease_symptom_overlap_score": 4.0,
+      "disease_overlap_score": 4.0,
+      "lupus_symptom_overlap_score": 4.0,
+      "severity_burden_score": 5.0,
+      "chronic_use_safety_score": 5.0,
+      "disease_specific_risk_score": 10.0,
+      "dil_risk_score": 10.0,
+      "composite_safety_score": 5.15,
+      "n_disease_overlap_ae": 5,
+      "disease_overlap_ae": [
+        "abdominal pain",
+        "diarrhea",
+        "fatigue",
+        "weight loss",
+        "anemia"
+      ],
+      "n_lupus_overlap_ae": 5,
+      "lupus_overlap_ae": [
+        "abdominal pain",
+        "diarrhea",
+        "fatigue",
+        "weight loss",
+        "anemia"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "IBD subtype, disease location, nutritional status, and infection history affect treatment risk."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Review CBC, liver function, infection risk, nutrition, and product-specific monitoring.",
+      "n_severe_ae": 4
+    },
+    {
+      "drug_id": "natalizumab",
+      "drug_name": "Natalizumab (Tysabri)",
+      "disease_id": "ibd",
+      "disease_symptom_overlap_score": 4.0,
+      "disease_overlap_score": 4.0,
+      "lupus_symptom_overlap_score": 4.0,
+      "severity_burden_score": 5.0,
+      "chronic_use_safety_score": 5.0,
+      "disease_specific_risk_score": 10.0,
+      "dil_risk_score": 10.0,
+      "composite_safety_score": 5.15,
+      "n_disease_overlap_ae": 5,
+      "disease_overlap_ae": [
+        "abdominal pain",
+        "diarrhea",
+        "fatigue",
+        "weight loss",
+        "anemia"
+      ],
+      "n_lupus_overlap_ae": 5,
+      "lupus_overlap_ae": [
+        "abdominal pain",
+        "diarrhea",
+        "fatigue",
+        "weight loss",
+        "anemia"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "IBD subtype, disease location, nutritional status, and infection history affect treatment risk."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Review CBC, liver function, infection risk, nutrition, and product-specific monitoring.",
+      "n_severe_ae": 4
+    },
+    {
+      "drug_id": "prednisone",
+      "drug_name": "Prednisone/Prednisolone",
+      "disease_id": "ibd",
+      "disease_symptom_overlap_score": 4.0,
+      "disease_overlap_score": 4.0,
+      "lupus_symptom_overlap_score": 4.0,
+      "severity_burden_score": 5.0,
+      "chronic_use_safety_score": 5.0,
+      "disease_specific_risk_score": 10.0,
+      "dil_risk_score": 10.0,
+      "composite_safety_score": 5.15,
+      "n_disease_overlap_ae": 5,
+      "disease_overlap_ae": [
+        "abdominal pain",
+        "diarrhea",
+        "fatigue",
+        "weight loss",
+        "anemia"
+      ],
+      "n_lupus_overlap_ae": 5,
+      "lupus_overlap_ae": [
+        "abdominal pain",
+        "diarrhea",
+        "fatigue",
+        "weight loss",
+        "anemia"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "IBD subtype, disease location, nutritional status, and infection history affect treatment risk."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Review CBC, liver function, infection risk, nutrition, and product-specific monitoring.",
+      "n_severe_ae": 4
+    },
+    {
+      "drug_id": "cyclosporine",
+      "drug_name": "Cyclosporine A (Neoral/Sandimmune)",
+      "disease_id": "ibd",
+      "disease_symptom_overlap_score": 4.0,
+      "disease_overlap_score": 4.0,
+      "lupus_symptom_overlap_score": 4.0,
+      "severity_burden_score": 5.0,
+      "chronic_use_safety_score": 5.0,
+      "disease_specific_risk_score": 10.0,
+      "dil_risk_score": 10.0,
+      "composite_safety_score": 5.15,
+      "n_disease_overlap_ae": 5,
+      "disease_overlap_ae": [
+        "abdominal pain",
+        "diarrhea",
+        "fatigue",
+        "weight loss",
+        "anemia"
+      ],
+      "n_lupus_overlap_ae": 5,
+      "lupus_overlap_ae": [
+        "abdominal pain",
+        "diarrhea",
+        "fatigue",
+        "weight loss",
+        "anemia"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "IBD subtype, disease location, nutritional status, and infection history affect treatment risk."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Review CBC, liver function, infection risk, nutrition, and product-specific monitoring.",
+      "n_severe_ae": 4
+    },
+    {
+      "drug_id": "tacrolimus",
+      "drug_name": "Tacrolimus (Prograf/FK506)",
+      "disease_id": "ibd",
+      "disease_symptom_overlap_score": 4.0,
+      "disease_overlap_score": 4.0,
+      "lupus_symptom_overlap_score": 4.0,
+      "severity_burden_score": 5.0,
+      "chronic_use_safety_score": 5.0,
+      "disease_specific_risk_score": 10.0,
+      "dil_risk_score": 10.0,
+      "composite_safety_score": 5.15,
+      "n_disease_overlap_ae": 5,
+      "disease_overlap_ae": [
+        "abdominal pain",
+        "diarrhea",
+        "fatigue",
+        "weight loss",
+        "anemia"
+      ],
+      "n_lupus_overlap_ae": 5,
+      "lupus_overlap_ae": [
+        "abdominal pain",
+        "diarrhea",
+        "fatigue",
+        "weight loss",
+        "anemia"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "IBD subtype, disease location, nutritional status, and infection history affect treatment risk."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Review CBC, liver function, infection risk, nutrition, and product-specific monitoring.",
+      "n_severe_ae": 4
+    },
+    {
+      "drug_id": "mesalamine",
+      "drug_name": "Mesalamine / 5-ASA (Asacol/Lialda/Pentasa/Apriso/Delzicol)",
+      "disease_id": "ibd",
+      "disease_symptom_overlap_score": 4.0,
+      "disease_overlap_score": 4.0,
+      "lupus_symptom_overlap_score": 4.0,
+      "severity_burden_score": 5.0,
+      "chronic_use_safety_score": 5.0,
+      "disease_specific_risk_score": 7.5,
+      "dil_risk_score": 7.5,
+      "composite_safety_score": 4.9,
+      "n_disease_overlap_ae": 5,
+      "disease_overlap_ae": [
+        "abdominal pain",
+        "diarrhea",
+        "fatigue",
+        "weight loss",
+        "anemia"
+      ],
+      "n_lupus_overlap_ae": 5,
+      "lupus_overlap_ae": [
+        "abdominal pain",
+        "diarrhea",
+        "fatigue",
+        "weight loss",
+        "anemia"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "IBD subtype, disease location, nutritional status, and infection history affect treatment risk."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Review CBC, liver function, infection risk, nutrition, and product-specific monitoring.",
+      "n_severe_ae": 4
+    },
+    {
+      "drug_id": "budesonide",
+      "drug_name": "Budesonide (Entocort/Budesonide MMX/Uceris)",
+      "disease_id": "ibd",
+      "disease_symptom_overlap_score": 4.0,
+      "disease_overlap_score": 4.0,
+      "lupus_symptom_overlap_score": 4.0,
+      "severity_burden_score": 5.0,
+      "chronic_use_safety_score": 5.0,
+      "disease_specific_risk_score": 7.5,
+      "dil_risk_score": 7.5,
+      "composite_safety_score": 4.9,
+      "n_disease_overlap_ae": 5,
+      "disease_overlap_ae": [
+        "abdominal pain",
+        "diarrhea",
+        "fatigue",
+        "weight loss",
+        "anemia"
+      ],
+      "n_lupus_overlap_ae": 5,
+      "lupus_overlap_ae": [
+        "abdominal pain",
+        "diarrhea",
+        "fatigue",
+        "weight loss",
+        "anemia"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "IBD subtype, disease location, nutritional status, and infection history affect treatment risk."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Review CBC, liver function, infection risk, nutrition, and product-specific monitoring.",
+      "n_severe_ae": 4
+    },
+    {
+      "drug_id": "azathioprine",
+      "drug_name": "Azathioprine (Imuran/Azasan)",
+      "disease_id": "ibd",
+      "disease_symptom_overlap_score": 4.0,
+      "disease_overlap_score": 4.0,
+      "lupus_symptom_overlap_score": 4.0,
+      "severity_burden_score": 5.0,
+      "chronic_use_safety_score": 5.0,
+      "disease_specific_risk_score": 5.0,
+      "dil_risk_score": 5.0,
+      "composite_safety_score": 4.65,
+      "n_disease_overlap_ae": 5,
+      "disease_overlap_ae": [
+        "abdominal pain",
+        "diarrhea",
+        "fatigue",
+        "weight loss",
+        "anemia"
+      ],
+      "n_lupus_overlap_ae": 5,
+      "lupus_overlap_ae": [
+        "abdominal pain",
+        "diarrhea",
+        "fatigue",
+        "weight loss",
+        "anemia"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "IBD subtype, disease location, nutritional status, and infection history affect treatment risk."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Review CBC, liver function, infection risk, nutrition, and product-specific monitoring.",
+      "n_severe_ae": 4
+    },
+    {
+      "drug_id": "6_mercaptopurine",
+      "drug_name": "6-Mercaptopurine (Purinethol)",
+      "disease_id": "ibd",
+      "disease_symptom_overlap_score": 4.0,
+      "disease_overlap_score": 4.0,
+      "lupus_symptom_overlap_score": 4.0,
+      "severity_burden_score": 5.0,
+      "chronic_use_safety_score": 5.0,
+      "disease_specific_risk_score": 5.0,
+      "dil_risk_score": 5.0,
+      "composite_safety_score": 4.65,
+      "n_disease_overlap_ae": 5,
+      "disease_overlap_ae": [
+        "abdominal pain",
+        "diarrhea",
+        "fatigue",
+        "weight loss",
+        "anemia"
+      ],
+      "n_lupus_overlap_ae": 5,
+      "lupus_overlap_ae": [
+        "abdominal pain",
+        "diarrhea",
+        "fatigue",
+        "weight loss",
+        "anemia"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "IBD subtype, disease location, nutritional status, and infection history affect treatment risk."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Review CBC, liver function, infection risk, nutrition, and product-specific monitoring.",
+      "n_severe_ae": 4
+    },
+    {
+      "drug_id": "methotrexate",
+      "drug_name": "Methotrexate (Rheumatrex/Trexall/Otrexup)",
+      "disease_id": "ibd",
+      "disease_symptom_overlap_score": 4.0,
+      "disease_overlap_score": 4.0,
+      "lupus_symptom_overlap_score": 4.0,
+      "severity_burden_score": 5.0,
+      "chronic_use_safety_score": 5.0,
+      "disease_specific_risk_score": 5.0,
+      "dil_risk_score": 5.0,
+      "composite_safety_score": 4.65,
+      "n_disease_overlap_ae": 5,
+      "disease_overlap_ae": [
+        "abdominal pain",
+        "diarrhea",
+        "fatigue",
+        "weight loss",
+        "anemia"
+      ],
+      "n_lupus_overlap_ae": 5,
+      "lupus_overlap_ae": [
+        "abdominal pain",
+        "diarrhea",
+        "fatigue",
+        "weight loss",
+        "anemia"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "IBD subtype, disease location, nutritional status, and infection history affect treatment risk."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Review CBC, liver function, infection risk, nutrition, and product-specific monitoring.",
+      "n_severe_ae": 4
+    },
+    {
+      "drug_id": "adalimumab",
+      "drug_name": "Adalimumab (Humira/Hyrimoz/Cyltezo)",
+      "disease_id": "ibd",
+      "disease_symptom_overlap_score": 4.0,
+      "disease_overlap_score": 4.0,
+      "lupus_symptom_overlap_score": 4.0,
+      "severity_burden_score": 5.0,
+      "chronic_use_safety_score": 5.0,
+      "disease_specific_risk_score": 2.0,
+      "dil_risk_score": 2.0,
+      "composite_safety_score": 4.35,
+      "n_disease_overlap_ae": 5,
+      "disease_overlap_ae": [
+        "abdominal pain",
+        "diarrhea",
+        "fatigue",
+        "weight loss",
+        "anemia"
+      ],
+      "n_lupus_overlap_ae": 5,
+      "lupus_overlap_ae": [
+        "abdominal pain",
+        "diarrhea",
+        "fatigue",
+        "weight loss",
+        "anemia"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "IBD subtype, disease location, nutritional status, and infection history affect treatment risk."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Review CBC, liver function, infection risk, nutrition, and product-specific monitoring.",
+      "n_severe_ae": 4
+    },
+    {
+      "drug_id": "certolizumab_pegol",
+      "drug_name": "Certolizumab Pegol (Cimzia)",
+      "disease_id": "ibd",
+      "disease_symptom_overlap_score": 4.0,
+      "disease_overlap_score": 4.0,
+      "lupus_symptom_overlap_score": 4.0,
+      "severity_burden_score": 5.0,
+      "chronic_use_safety_score": 5.0,
+      "disease_specific_risk_score": 2.0,
+      "dil_risk_score": 2.0,
+      "composite_safety_score": 4.35,
+      "n_disease_overlap_ae": 5,
+      "disease_overlap_ae": [
+        "abdominal pain",
+        "diarrhea",
+        "fatigue",
+        "weight loss",
+        "anemia"
+      ],
+      "n_lupus_overlap_ae": 5,
+      "lupus_overlap_ae": [
+        "abdominal pain",
+        "diarrhea",
+        "fatigue",
+        "weight loss",
+        "anemia"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "IBD subtype, disease location, nutritional status, and infection history affect treatment risk."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Review CBC, liver function, infection risk, nutrition, and product-specific monitoring.",
+      "n_severe_ae": 4
+    }
+  ]
+}

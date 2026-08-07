@@ -1,15 +1,68 @@
 /**
- * Lupus Research Platform — Live Dashboard JavaScript
+ * Medical Research Platform — Live Dashboard JavaScript
  * Calls the FastAPI backend to power module cards with live data.
  * Uses WebSocket for real-time job progress streaming.
  */
 
 const API_BASE = '';
 
+function renderCoverageBadge(coverage) {
+    const level = coverage?.level || 'unknown';
+    const status = coverage?.status || '';
+    const label = level === 'full' ? 'Full coverage'
+        : level === 'partial' || status === 'limited_coverage' ? 'Limited coverage'
+        : level === 'unsupported' ? 'Unsupported for this disease'
+        : 'Coverage unknown';
+    const cls = level === 'full' ? 'coverage-full'
+        : level === 'partial' || status === 'limited_coverage' ? 'coverage-partial' : 'coverage-unsupported';
+    const details = [...(coverage?.missing_inputs || []), ...(coverage?.warnings || []), ...(status === 'limited_coverage' ? ['Coverage is limited for this disease.'] : [])];
+    return `<span class="coverage-badge ${cls}" title="${escapeHtml(details.join('; '))}">${label}</span>`;
+}
+
+function renderCoveragePanel(coverage) {
+    if (!coverage) return '';
+    const details = [...(coverage.missing_inputs || []), ...(coverage.warnings || []), ...(coverage.limitations || [])];
+    if (coverage.status === 'blocked') {
+        return `<div class="coverage-panel coverage-blocked">${renderCoverageBadge(coverage)}<strong> Analysis unavailable for this disease.</strong>${details.length ? `<p>${escapeHtml(details.join(' '))}</p>` : ''}</div>`;
+    }
+    return `<div class="coverage-panel">${renderCoverageBadge(coverage)}${details.length ? `<p>${escapeHtml(details.join(' '))}</p>` : ''}</div>`;
+}
+
 // ── State ────────────────────────────────────────────────────────────────
 
 const activeJobs = {};
 const activeSockets = {};
+let workspaceSubmissionActive = false;
+
+function setWorkspaceSubmissionState(state) {
+    const form = document.getElementById('workspace-form');
+    const result = document.getElementById('workspace-result');
+    const submit = document.getElementById('workspace-submit');
+    const status = document.getElementById('workspace-submit-status');
+    const active = ['submitting', 'running'].includes(state);
+    workspaceSubmissionActive = active;
+    if (form) form.setAttribute('aria-busy', String(active));
+    if (result && active) result.setAttribute('aria-busy', 'true');
+    if (result && !active) result.removeAttribute('aria-busy');
+    if (submit) {
+        submit.disabled = active;
+        submit.setAttribute('aria-busy', String(active));
+    }
+    if (status) {
+        const messages = {
+            idle: 'Ready for a new research question.',
+            submitting: 'Submitting workspace job…',
+            running: 'Workspace job running; duplicate submissions are disabled.',
+            success: 'Workspace dossier ready.',
+            failure: 'Workspace run failed. Review the error and try again.',
+        };
+        status.textContent = messages[state] || messages.idle;
+        status.dataset.state = state;
+    }
+}
+
+// Live disease registry (populated on page load; consumed by the cross-disease view)
+const diseaseCache = { list: null };
 
 // ── API Helpers ──────────────────────────────────────────────────────────
 
@@ -26,7 +79,7 @@ async function apiFetch(path, options = {}) {
         return await res.json();
     } catch (e) {
         if (e.name === 'TypeError' && e.message.includes('fetch')) {
-            throw new Error('API server is not running. Start with: python web_api/main.py');
+            throw new Error('API server is not running. Start with: python -m med_research.cli serve');
         }
         throw e;
     }
@@ -47,6 +100,13 @@ function escapeHtml(text) {
 
 // ── Module Execution ─────────────────────────────────────────────────────
 
+const diseaseQS = () => `disease=${encodeURIComponent(getActiveDisease())}`;
+const diseaseIdQS = () => `disease_id=${encodeURIComponent(getActiveDisease())}`;
+
+function workspaceSourceLabel(source) {
+    return ({ pubmed: 'PubMed', clinical_trials: 'ClinicalTrials.gov', gwas: 'GWAS Catalog', fda_labels: 'FDA / DailyMed' })[source] || source;
+}
+
 async function runModule(module) {
     const resultEl = document.getElementById(`result-${module}`);
     if (!resultEl) return;
@@ -58,45 +118,54 @@ async function runModule(module) {
         let data;
         switch (module) {
             case 'kg':
-                data = await apiFetch('/api/kg/stats');
+                data = await apiFetch(`/api/kg/stats?${diseaseQS()}`);
                 renderKGResult(resultEl, data);
                 break;
             case 'expression':
-                data = await apiFetch('/api/expression/correlate?top_n=10');
+                data = await apiFetch(`/api/expression/correlate?top_n=10&${diseaseIdQS()}`);
                 renderExpressionResult(resultEl, data);
                 break;
             case 'cart':
-                data = await apiFetch('/api/cart/suitability?top_n=10');
+                data = await apiFetch(`/api/cart/suitability?top_n=10&${diseaseIdQS()}`);
                 renderCartResult(resultEl, data);
                 break;
             case 'biomarker':
-                data = await apiFetch('/api/biomarker/discover?top_n=10');
+                data = await apiFetch(`/api/biomarker/discover?top_n=10&${diseaseIdQS()}`);
                 renderBiomarkerResult(resultEl, data);
                 break;
-            case 'semantic':
-                data = await apiFetch('/api/semantic/search?q=lupus+treatment+drug+repurposing&top_k=10');
+            case 'semantic': {
+                const query = encodeURIComponent(`${activeDiseaseInfo().name} treatment drug repurposing`);
+                data = await apiFetch(`/api/semantic/search?q=${query}&top_k=10&${diseaseIdQS()}`);
                 renderSemanticResult(resultEl, data);
                 break;
-            case 'evidence':
-                data = await apiFetch('/api/evidence/gather?q=lupus+treatment+drug+repurposing&max_per_source=5&sources=pubmed,preprints,clinical_trials,fda_labels,patents');
+            }
+            case 'evidence': {
+                const query = encodeURIComponent(`${activeDiseaseInfo().name} treatment drug repurposing`);
+                data = await apiFetch(`/api/evidence/gather?q=${query}&max_per_source=5&sources=pubmed,preprints,clinical_trials,fda_labels,patents&${diseaseIdQS()}`);
                 renderEvidenceResult(resultEl, data);
                 break;
-            case 'extractor':
-                data = await apiFetch('/api/llm/extract?q=lupus+treatment+drug+repurposing&max_articles=10&sources=pubmed,preprints');
+            }
+            case 'extractor': {
+                const query = encodeURIComponent(`${activeDiseaseInfo().name} treatment drug repurposing`);
+                data = await apiFetch(`/api/llm/extract?q=${query}&max_articles=10&sources=pubmed,preprints&${diseaseIdQS()}`);
                 renderExtractorResult(resultEl, data);
                 break;
+            }
             case 'monitor':
                 data = await apiFetch('/api/monitor/diff');
                 renderMonitorResult(resultEl, data);
                 break;
             case 'repurpose':
-                data = await apiFetch('/api/repurpose/candidates?top_n=10');
+                data = await apiFetch(`/api/repurpose/candidates?top_n=10&${diseaseQS()}`);
                 renderRepurposeResult(resultEl, data);
                 break;
             case 'bioinformatics':
-                data = await apiFetch('/api/kg/stats');
+                data = await apiFetch(`/api/kg/stats?${diseaseQS()}`);
                 renderBioResult(resultEl, data);
                 break;
+            case 'workspace':
+                await streamJob(module, resultEl, { disease_id: getActiveDisease() });
+                return;
             case 'gwas':
             case 'enrichment':
             case 'ppi':
@@ -104,9 +173,13 @@ async function runModule(module) {
             case 'screening':
             case 'trials':
             case 'ml':
+                await streamJob(module, resultEl, { disease_id: getActiveDisease() });
+                return;
             case 'synergy':
+                await streamJob(module, resultEl, { disease_id: getActiveDisease() });
+                return;
             case 'safety':
-                await streamJob(module, resultEl);
+                await streamJob(module, resultEl, { disease_id: getActiveDisease() });
                 return;
             default:
                 throw new Error(`Unknown module: ${module}`);
@@ -119,7 +192,7 @@ async function runModule(module) {
 
 // ── Job Submission + WebSocket Streaming ─────────────────────────────────
 
-async function streamJob(module, resultEl) {
+async function streamJob(module, resultEl, params = {}) {
     const endpoints = {
         gwas: '/api/jobs/gwas',
         enrichment: '/api/jobs/enrichment',
@@ -130,17 +203,41 @@ async function streamJob(module, resultEl) {
         ml: '/api/jobs/ml',
         synergy: '/api/jobs/synergy',
         safety: '/api/jobs/safety',
+        workspace: '/api/jobs/workspace',
     };
 
     const endpoint = endpoints[module];
     if (!endpoint) throw new Error(`No job endpoint for ${module}`);
 
-    // Submit the job
-    const data = await apiFetch(endpoint, { method: 'POST' });
+    // Submit the job (extra params become query-string arguments)
+    const qs = Object.entries(params)
+        .filter(([, v]) => v !== undefined && v !== null)
+        .map(([k, v]) => `${encodeURIComponent(k)}=${encodeURIComponent(v)}`)
+        .join('&');
+    const requestOptions = { method: 'POST' };
+    if (module === 'workspace') {
+        requestOptions.headers = { 'Content-Type': 'application/json' };
+        requestOptions.body = JSON.stringify(params);
+    }
+    const data = await apiFetch(module === 'workspace' ? endpoint : endpoint + (qs ? `?${qs}` : ''), requestOptions);
     const jobId = data.job_id;
     const startTime = Date.now();
 
-    activeJobs[jobId] = { module, resultEl, status: 'PENDING', startTime };
+    let resolveTerminal;
+    let rejectTerminal;
+    const terminal = new Promise((resolve, reject) => {
+        resolveTerminal = resolve;
+        rejectTerminal = reject;
+    });
+    activeJobs[jobId] = {
+        module,
+        resultEl,
+        status: 'PENDING',
+        startTime,
+        resolveTerminal,
+        rejectTerminal,
+    };
+    if (module === 'workspace') setWorkspaceSubmissionState('running');
     updateJobBadge();
     showJobsSection();
     renderJobQueue();
@@ -148,41 +245,57 @@ async function streamJob(module, resultEl) {
     // Open WebSocket for real-time progress
     const wsProtocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
     const wsUrl = `${wsProtocol}//${window.location.host}/api/jobs/${jobId}/ws`;
-    const ws = new WebSocket(wsUrl);
+    let ws;
+    try {
+        ws = new WebSocket(wsUrl);
+    } catch (error) {
+        settleJob(jobId, false, error.message || 'Could not open the job stream.');
+        throw error;
+    }
 
     activeSockets[jobId] = ws;
     resultEl.innerHTML = `<span class="spinner"></span> Job <code>${jobId.slice(0, 8)}&hellip;</code> submitted &mdash; streaming via WebSocket…`;
 
     ws.onmessage = (event) => {
-        const msg = JSON.parse(event.data);
+        let msg;
+        try {
+            msg = JSON.parse(event.data);
+        } catch (error) {
+            resultEl.className = 'module-result visible error';
+            resultEl.innerHTML = `<strong>Stream error:</strong> ${escapeHtml(error.message)}`;
+            settleJob(jobId, false, 'Invalid progress message received.');
+            return;
+        }
+        if (!activeJobs[jobId]) return;
         activeJobs[jobId].status = msg.status;
         renderJobQueue();
 
         if (msg.status === 'SUCCESS') {
             resultEl.className = 'module-result visible success';
             renderJobResult(module, resultEl, msg.result);
-            cleanupJob(jobId);
+            if (module === 'workspace') loadWorkspaceHistory();
+            settleJob(jobId, true);
             return;
         }
 
         if (msg.status === 'FAILURE') {
             resultEl.className = 'module-result visible error';
-            resultEl.innerHTML = `<strong>Job failed:</strong> ${msg.error || 'Unknown error'}`;
-            cleanupJob(jobId);
+            resultEl.innerHTML = `<strong>Job failed:</strong> ${escapeHtml(msg.error || 'Unknown error')}`;
+            settleJob(jobId, false, msg.error || 'Unknown job error');
             return;
         }
 
         if (msg.status === 'TIMEOUT') {
             resultEl.className = 'module-result visible error';
             resultEl.innerHTML = '<strong>Timeout:</strong> Job exceeded 10-minute limit.';
-            cleanupJob(jobId);
+            settleJob(jobId, false, 'Job exceeded the time limit.');
             return;
         }
 
         if (msg.status === 'ERROR') {
             resultEl.className = 'module-result visible error';
-            resultEl.innerHTML = `<strong>Stream error:</strong> ${msg.error || 'Unknown'}`;
-            cleanupJob(jobId);
+            resultEl.innerHTML = `<strong>Stream error:</strong> ${escapeHtml(msg.error || 'Unknown')}`;
+            settleJob(jobId, false, msg.error || 'Unknown stream error');
             return;
         }
 
@@ -190,17 +303,18 @@ async function streamJob(module, resultEl) {
         const elapsed = updateElapsed(startTime);
         const progress = msg.progress || {};
         const pct = progress.percent != null ? ` (${progress.percent}%)` : '';
-        const detail = progress.message || progress.step || '';
-        resultEl.innerHTML = `<span class="spinner"></span> ${module} — ${msg.status}${pct} (${elapsed})${detail ? `<br><small style=\"color:var(--text-muted);\">${detail}</small>` : ''}`;
+        const detail = escapeHtml(progress.message || progress.step || '');
+        resultEl.innerHTML = `<span class="spinner"></span> ${escapeHtml(module)} — ${escapeHtml(msg.status)}${pct} (${elapsed})${detail ? `<br><small style=\"color:var(--text-muted);\">${detail}</small>` : ''}`;
     };
 
     ws.onerror = () => {
-        // WebSocket failed. Fall back to HTTP polling silently.
-        // Set a guard so onclose (which always follows onerror) doesn't duplicate
-        if (activeJobs[jobId]) activeJobs[jobId]._fallback = true;
+        // WebSocket failed. Fall back to HTTP polling once.
+        const job = activeJobs[jobId];
+        if (!job || job._fallback || job.settled) return;
+        job._fallback = true;
         resultEl.innerHTML = `<span class="spinner"></span> WebSocket unavailable — falling back to polling…`;
         cleanupSocket(jobId);
-        pollJobFallback(jobId, module, resultEl);
+        void pollJobFallback(jobId, module, resultEl);
     };
 
     ws.onclose = (event) => {
@@ -209,12 +323,15 @@ async function streamJob(module, resultEl) {
         if (activeJobs[jobId] && !activeJobs[jobId]._fallback) {
             const status = activeJobs[jobId].status;
             if (status !== 'SUCCESS' && status !== 'FAILURE' && status !== 'TIMEOUT') {
+                activeJobs[jobId]._fallback = true;
                 resultEl.innerHTML = `<span class="spinner"></span> WebSocket closed — falling back to polling…`;
                 cleanupSocket(jobId);
-                pollJobFallback(jobId, module, resultEl);
+                void pollJobFallback(jobId, module, resultEl);
             }
         }
     };
+
+    return terminal;
 }
 
 // ── HTTP Polling Fallback ────────────────────────────────────────────────
@@ -229,33 +346,38 @@ async function pollJobFallback(jobId, module, resultEl) {
         polls++;
 
         try {
+            const job = activeJobs[jobId];
+            if (!job || job.settled) return;
             const status = await apiFetch(`/api/jobs/${jobId}`);
+            if (!activeJobs[jobId] || activeJobs[jobId].settled) return;
             activeJobs[jobId].status = status.status;
             renderJobQueue();
 
             if (status.status === 'SUCCESS') {
                 resultEl.className = 'module-result visible success';
                 renderJobResult(module, resultEl, status.result);
-                cleanupJob(jobId);
+                if (module === 'workspace') loadWorkspaceHistory();
+                settleJob(jobId, true);
                 return;
             }
 
-            if (status.status === 'FAILURE') {
+            if (status.status === 'FAILURE' || status.status === 'TIMEOUT' || status.status === 'ERROR') {
+                const message = status.error || (status.status === 'TIMEOUT' ? 'Job exceeded the time limit.' : 'Unknown job error');
                 resultEl.className = 'module-result visible error';
-                resultEl.innerHTML = `<strong>Job failed:</strong> ${status.error || 'Unknown error'}`;
-                cleanupJob(jobId);
+                resultEl.innerHTML = `<strong>${escapeHtml(status.status)}:</strong> ${escapeHtml(message)}`;
+                settleJob(jobId, false, message);
                 return;
             }
 
-            resultEl.innerHTML = `<span class="spinner"></span> ${module} — running… (${updateElapsed(startTime)})`;
+            resultEl.innerHTML = `<span class="spinner"></span> ${escapeHtml(module)} — running… (${updateElapsed(startTime)})`;
         } catch (e) {
-            resultEl.innerHTML += `<br><small style="color:#f87171;">Poll error: ${e.message}</small>`;
+            resultEl.innerHTML += `<br><small style="color:#f87171;">Poll error: ${escapeHtml(e.message)}</small>`;
         }
     }
 
     resultEl.className = 'module-result visible error';
     resultEl.innerHTML = '<strong>Timeout:</strong> Job took too long. Check server logs.';
-    cleanupJob(jobId);
+    settleJob(jobId, false, 'Job took too long. Check server logs.');
 }
 
 // ── Helpers ──────────────────────────────────────────────────────────────
@@ -266,8 +388,8 @@ async function runNetworkAnalysis() {
     resultEl.innerHTML = '<span class="spinner"></span> Analyzing network topology...';
     try {
         const [comm, cent] = await Promise.all([
-            apiFetch('/api/kg/communities'),
-            apiFetch('/api/kg/centrality?metric=betweenness&top_n=10'),
+            apiFetch(`/api/kg/communities?${diseaseQS()}`),
+            apiFetch(`/api/kg/centrality?metric=betweenness&top_n=10&${diseaseQS()}`),
         ]);
         resultEl.className = 'module-result visible success';
         const topBridge = cent.nodes?.[0];
@@ -303,15 +425,33 @@ function cleanupJob(jobId) {
     renderJobQueue();
 }
 
+function settleJob(jobId, success, errorMessage = '') {
+    const job = activeJobs[jobId];
+    if (!job || job.settled) return;
+    job.settled = true;
+    if (success) {
+        job.resolveTerminal?.();
+    } else {
+        job.rejectTerminal?.(new Error(errorMessage || 'Workspace job failed'));
+    }
+    if (job.module === 'workspace') setWorkspaceSubmissionState(success ? 'success' : 'failure');
+    cleanupJob(jobId);
+}
+
 function renderJobResult(module, resultEl, result) {
     if (!result) {
         resultEl.innerHTML = '<div class="result-header">✅ Analysis Complete</div>';
         return;
     }
 
+    const coveragePanel = renderCoveragePanel(result.coverage);
+    if (result.status === 'blocked' || result.coverage?.status === 'blocked') {
+        resultEl.innerHTML = coveragePanel || '<div class="coverage-panel coverage-blocked">Analysis unavailable for this disease.</div>';
+        return;
+    }
     switch (module) {
         case 'gwas':
-            resultEl.innerHTML = renderModuleResult([
+            resultEl.innerHTML = coveragePanel + renderModuleResult([
                 ['Studies', result.total_studies],
                 ['Unique Genes', result.unique_genes],
                 ['Validated in KG', result.crossref?.n_validated || 0],
@@ -320,14 +460,14 @@ function renderJobResult(module, resultEl, result) {
             break;
         case 'enrichment':
             const libs = result.libraries || [];
-            resultEl.innerHTML = renderModuleResult([
+            resultEl.innerHTML = coveragePanel + renderModuleResult([
                 ['Genes Analyzed', result.genes_analyzed],
                 ['Libraries', libs.length],
                 ['Significant Terms', libs.reduce((s, l) => s + l.terms.filter(t => t.adj_p_value < 0.05).length, 0)],
             ]);
             break;
         case 'ppi':
-            resultEl.innerHTML = renderModuleResult([
+            resultEl.innerHTML = coveragePanel + renderModuleResult([
                 ['Network Nodes', result.nodes],
                 ['Interactions', result.edges],
                 ['Top Hub', result.top_hubs?.[0]?.symbol || '—'],
@@ -335,14 +475,14 @@ function renderJobResult(module, resultEl, result) {
             ]);
             break;
         case 'literature':
-            resultEl.innerHTML = renderModuleResult([
+            resultEl.innerHTML = coveragePanel + renderModuleResult([
                 ['Articles', result.total_articles],
                 ['Queries Run', result.queries_run],
                 ['Genes Covered', result.gene_coverage?.length || 0],
             ]);
             break;
         case 'screening':
-            resultEl.innerHTML = renderModuleResult([
+            resultEl.innerHTML = coveragePanel + renderModuleResult([
                 ['Compounds Screened', result.compounds_screened],
                 ['Pairings', result.total_pairings],
                 ['Tier 1 Hits', result.tier1_count],
@@ -350,7 +490,7 @@ function renderJobResult(module, resultEl, result) {
             ]);
             break;
         case 'trials':
-            resultEl.innerHTML = renderModuleResult([
+            resultEl.innerHTML = coveragePanel + renderModuleResult([
                 ['Total Trials', result.total_trials],
                 ['Phase 3 Trials', result.phase_distribution?.['Phase 3'] || 0],
                 ['MoA Categories', Object.keys(result.moa_distribution || {}).length],
@@ -374,19 +514,305 @@ function renderJobResult(module, resultEl, result) {
                 ['Avg Score', result.avg_score?.toFixed(2)],
             ]);
             break;
+        case 'workspace':
+            renderWorkspaceResult(resultEl, result);
+            break;
         case 'safety':
-            resultEl.innerHTML = renderModuleResult([
+            resultEl.innerHTML = coveragePanel + renderModuleResult([
                 ['Drugs Profiled', result.total_drugs],
                 ['Avg Safety Score', result.avg_safety_score?.toFixed(2)],
                 ['Safest Drug', result.safest_drug?.split('(')[0].trim() || '—'],
                 ['Drugs with BBW', result.drugs_with_bbw],
-                ['DIL Risk Drugs', result.drugs_with_dil_risk],
+                ['Disease-Specific Risk Drugs', result.drugs_with_disease_specific_risk ?? result.drugs_with_dil_risk],
             ]);
             break;
     }
 }
 
 // ── Result Rendering ─────────────────────────────────────────────────────
+
+function safeCitationUrl(url) {
+    try {
+        const parsed = new URL(String(url || ''), window.location.origin);
+        return ['http:', 'https:'].includes(parsed.protocol) ? parsed.href : '';
+    } catch (_) {
+        return '';
+    }
+}
+
+function citationHtml(citation) {
+    const label = citation.native_id || citation.doi || citation.source || 'citation';
+    const url = safeCitationUrl(citation.url);
+    return url
+        ? `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a>`
+        : escapeHtml(label);
+}
+
+function claimLookup(claims) {
+    return new Map((claims || []).map(claim => [claim.claim_id, claim]));
+}
+
+function renderClaimEvidence(claim, label) {
+    const citations = (claim.citations || []).map(citationHtml).join(', ') || 'citation unavailable';
+    return `<div class="workspace-explanation-claim"><strong>${escapeHtml(label)}</strong> ${escapeHtml(claim.text || '')}<small>${escapeHtml(claim.supporting_snippet || 'No source snippet provided.')} · confidence ${(Number(claim.confidence || 0) * 100).toFixed(0)}% · evidence ${escapeHtml((claim.evidence_ids || []).join(', '))} · ${citations}</small></div>`;
+}
+
+function rankingExplanation(item, claimsById, pathsById) {
+    const componentRows = Object.entries(item.component_scores || {}).map(([name, value]) => `<span><b>${escapeHtml(name.replaceAll('_', ' '))}</b> ${Number(value || 0).toFixed(1)}</span>`).join('') || '<span>No component details available.</span>';
+    const support = (item.supporting_claim_ids || []).map(id => claimsById.get(id) ? renderClaimEvidence(claimsById.get(id), 'supporting evidence:') : `<div class="workspace-explanation-claim"><strong>Supporting evidence:</strong> provenance for ${escapeHtml(id)} is unavailable.</div>`).join('');
+    const contradiction = (item.contradicting_claim_ids || []).map(id => claimsById.get(id) ? renderClaimEvidence(claimsById.get(id), 'contradicting evidence:') : `<div class="workspace-explanation-claim"><strong>Contradicting evidence:</strong> provenance for ${escapeHtml(id)} is unavailable.</div>`).join('');
+    const graph = (item.graph_explanation_ids || []).map(id => pathsById.get(id)).filter(Boolean).map(path => `<div class="workspace-explanation-claim"><strong>Knowledge graph:</strong> ${path.status === 'found' ? escapeHtml((path.path_labels || []).join(' → ')) : escapeHtml(path.reason || 'No graph path found.')}</div>`).join('');
+    return `<details class="workspace-ranking-explanation"><summary>Why this ranked</summary><div class="workspace-component-scores">${componentRows}</div><div class="workspace-explanation-group">${support || '<span class="workspace-muted">No supporting claims.</span>'}${contradiction || '<span class="workspace-muted">No contradicting claims.</span>'}${graph || '<span class="workspace-muted">No graph explanation available.</span>'}</div></details>`;
+}
+
+function renderWorkspaceResult(el, payload) {
+    const dossier = payload?.dossier || payload || {};
+    const drugs = dossier.drug_rankings || [];
+    const targets = dossier.target_rankings || [];
+    const claims = dossier.claims || [];
+    const evidence = dossier.evidence || [];
+    const paths = dossier.graph_explanations || [];
+    const warningCount = (dossier.warnings || []).length;
+    const provenance = dossier.manifest?.provenance || {};
+    const claimsById = claimLookup(claims);
+    const pathsById = new Map(paths.map(path => [path.explanation_id, path]));
+    const sourceStatus = (dossier.source_statuses || []).map(item => `<span class="workspace-source-status ${escapeHtml(item.status)}"><strong>${escapeHtml(workspaceSourceLabel(item.source))}</strong>: ${escapeHtml(item.status)} · ${Number(item.records_found || 0)} records · ${escapeHtml(item.retrieval_mode || 'unknown')}${item.warning ? ` · ${escapeHtml(item.warning)}` : ''}</span>`).join('');
+    const qualitySummary = evidence.reduce((summary, item) => { const tier = item.quality_tier || 'tier_3'; summary[tier] = (summary[tier] || 0) + 1; summary.totalScore += Number(item.quality_score || 0); summary.total += 1; return summary; }, { totalScore: 0, total: 0 });
+    const qualityAverage = qualitySummary.total ? (qualitySummary.totalScore / qualitySummary.total).toFixed(2) : '—';
+    const rankingRows = (items, emptyText) => items.length ? items.slice(0, 6).map(item => `
+        <div class="workspace-ranking-row">
+            <div><strong>${escapeHtml(item.name)}</strong><small>${escapeHtml(item.explanation || '')}</small><small>Support: ${(item.supporting_claim_ids || []).length} · Contradictions: ${(item.contradicting_claim_ids || []).length} · quality ${Number(item.component_scores?.evidence_quality || 0).toFixed(1)} points</small>${rankingExplanation(item, claimsById, pathsById)}</div>
+            <span class="workspace-score">${Number(item.score || 0).toFixed(1)}<small>${escapeHtml(item.confidence_band || '')}</small></span>
+        </div>`).join('') : `<p class="workspace-muted">${emptyText}</p>`;
+    const claimRows = claims.slice(0, 8).map(claim => `
+        <div class="workspace-claim"><span class="claim-relation ${escapeHtml(claim.relationship)}">${escapeHtml(claim.relationship)}</span><strong>${escapeHtml(claim.subject_name)}</strong><span>${escapeHtml(claim.text)}</span><small>confidence ${(Number(claim.confidence || 0) * 100).toFixed(0)}% · ${escapeHtml((claim.evidence_ids || []).join(', '))} · ${(claim.citations || []).map(citationHtml).join(', ') || 'citation unavailable'}</small></div>`).join('');
+    const pathRows = paths.slice(0, 8).map(path => `<div class="workspace-path"><strong>${escapeHtml(path.candidate_id)}</strong><span>${path.status === 'found' ? escapeHtml((path.path_labels || []).join(' → ')) : escapeHtml(path.reason || 'No graph path found')}</span></div>`).join('');
+    const warningRows = (dossier.warnings || []).map(warning => `<li>${escapeHtml(warning)}</li>`).join('');
+    const limitationRows = (dossier.limitations || []).map(item => `<li>${escapeHtml(item)}</li>`).join('');
+    const request = dossier.request || {};
+    const sourceLabels = (request.sources || []).map(workspaceSourceLabel).join(', ') || 'not recorded';
+    el.innerHTML = `
+        <div class="workspace-result-head"><div><strong>✅ Dossier ready</strong><small>${escapeHtml(dossier.run_id || '')} · ${evidence.length} evidence · ${claims.length} claims</small></div><div class="workspace-export-links"><button class="btn btn-secondary btn-sm" type="button" onclick="downloadWorkspaceJson()">⬇ JSON</button>
+<button class="btn btn-secondary btn-sm" type="button" onclick="openWorkspaceHtml()">📄 HTML</button></div></div>
+        <div class="workspace-summary-grid"><div><b>${drugs.length}</b><span>drug candidates</span></div><div><b>${targets.length}</b><span>target candidates</span></div><div><b>${evidence.length}</b><span>evidence records</span></div><div><b>${warningCount}</b><span>warnings</span></div></div>
+        <div class="workspace-provenance"><strong>Reproducibility</strong><span>Fingerprint: <code>${escapeHtml(provenance.fingerprint || 'not available')}</code></span><span>Research question: ${escapeHtml(request.question || 'not recorded')}</span><span>Sources: ${escapeHtml(sourceLabels)}</span><span>Disease: ${escapeHtml(request.disease_id || 'not recorded')}</span><span>Mode: ${escapeHtml(provenance.cache_or_live || dossier.manifest?.cache_or_live || 'unknown')}</span><button class="btn btn-secondary btn-sm" type="button" onclick="copyWorkspaceFingerprint()">Copy fingerprint</button></div>
+        <div class="workspace-source-statuses">${sourceStatus || '<span class="workspace-muted">No source status available.</span>'}</div>
+        <div class="workspace-quality-summary"><strong>Evidence quality:</strong> ${Object.entries(qualitySummary).filter(([key]) => !['totalScore', 'total'].includes(key)).map(([tier, count]) => `<span>${escapeHtml(tier.replace('_', ' '))}: ${count}</span>`).join('') || '<span>not classified</span>'}<span>average score: ${qualityAverage}</span></div>
+        <div class="workspace-result-columns"><section><h4>💊 Prioritized drugs</h4>${rankingRows(drugs, 'No drug ranking available.')}</section><section><h4>🧬 Prioritized targets</h4>${rankingRows(targets, 'No target ranking available.')}</section></div>
+        <details><summary>Claims, citations, and confidence (${claims.length})</summary><div class="workspace-claims">${claimRows || '<p class="workspace-muted">No claims extracted.</p>'}</div></details>
+        <details><summary>Knowledge-graph explanations (${paths.length})</summary><div class="workspace-claims">${pathRows || '<p class="workspace-muted">No graph explanations available.</p>'}</div></details>
+        ${warningRows ? `<details><summary>Warnings (${warningCount})</summary><ul class="workspace-notices">${warningRows}</ul></details>` : ''}
+        ${limitationRows ? `<details><summary>Limitations (${dossier.limitations.length})</summary><ul class="workspace-notices">${limitationRows}</ul></details>` : ''}
+        <p class="workspace-disclaimer">${escapeHtml(dossier.disclaimer || 'For research purposes only. Not medical advice.')}</p>`;
+    el.className = 'workspace-result visible success';
+    window.lastWorkspaceDossier = dossier;
+    window.lastWorkspaceHtml = payload?.html || '';
+}
+
+function copyWorkspaceFingerprint() {
+    const fingerprint = window.lastWorkspaceDossier?.manifest?.provenance?.fingerprint;
+    if (!fingerprint) return;
+    if (navigator.clipboard?.writeText) {
+        navigator.clipboard.writeText(fingerprint).then(() => showToast('Fingerprint copied')).catch(() => showToast(fingerprint));
+    } else {
+        showToast(fingerprint);
+    }
+}
+
+function openWorkspaceHtml() {
+    const dossier = window.lastWorkspaceDossier;
+    if (!dossier) return;
+    const html = window.lastWorkspaceHtml || `<!doctype html><meta charset="utf-8"><title>Evidence Dossier</title><pre style="white-space:pre-wrap;font:14px system-ui">${escapeHtml(JSON.stringify(dossier, null, 2))}</pre>`;
+    const blob = new Blob([html], { type: 'text/html;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    window.open(url, '_blank', 'noopener');
+    window.setTimeout(() => URL.revokeObjectURL(url), 60000);
+}
+
+function downloadWorkspaceJson() {
+    const dossier = window.lastWorkspaceDossier;
+    if (!dossier) return;
+    const blob = new Blob([JSON.stringify(dossier, null, 2)], { type: 'application/json;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'evidence-dossier.json';
+    link.click();
+    window.setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
+let workspaceTrendData = { runs: [], drug_series: [], target_series: [] };
+
+async function loadWorkspaceTrends() {
+    const status = document.getElementById('workspace-trend-status');
+    if (!status) return;
+    try {
+        workspaceTrendData = await apiFetch('/api/workspace/trends?limit=20');
+        const kind = document.getElementById('workspace-trend-kind');
+        const candidate = document.getElementById('workspace-trend-candidate');
+        const series = workspaceTrendData[`${kind?.value || 'drug'}_series`] || [];
+        if (candidate) {
+            const previous = candidate.value;
+            candidate.innerHTML = '<option value="">All candidates</option>' + series.map(item => `<option value="${escapeHtml(item.candidate_id)}">${escapeHtml(item.name)}</option>`).join('');
+            candidate.value = series.some(item => item.candidate_id === previous) ? previous : '';
+        }
+        renderWorkspaceTrends();
+    } catch (error) {
+        status.textContent = `Trend data unavailable: ${error.message}`;
+        const chart = document.getElementById('workspace-trend-chart');
+        if (chart) chart.innerHTML = '';
+    }
+}
+
+function renderWorkspaceTrends() {
+    const status = document.getElementById('workspace-trend-status');
+    const chart = document.getElementById('workspace-trend-chart');
+    const metrics = document.getElementById('workspace-trend-metrics');
+    if (!status || !chart || !metrics) return;
+    const kind = document.getElementById('workspace-trend-kind')?.value || 'drug';
+    const selected = document.getElementById('workspace-trend-candidate')?.value || '';
+    const runs = workspaceTrendData.runs || [];
+    const series = (workspaceTrendData[`${kind}_series`] || []).filter(item => !selected || item.candidate_id === selected).slice(0, 8);
+    if (runs.length < 2) {
+        status.textContent = runs.length ? 'Save at least two successful runs to see trends.' : 'Run a workspace query to start an evidence trend.';
+        chart.innerHTML = '';
+        metrics.innerHTML = '';
+        return;
+    }
+    status.textContent = `${runs.length} successful runs · ${series.length} ${kind} series`;
+    const width = 720;
+    const height = 220;
+    const pad = { left: 42, right: 16, top: 18, bottom: 34 };
+    const x = index => pad.left + (index * (width - pad.left - pad.right)) / Math.max(1, runs.length - 1);
+    const y = score => pad.top + ((100 - Number(score)) * (height - pad.top - pad.bottom)) / 100;
+    const colors = ['#67e8f9', '#a78bfa', '#4ade80', '#fbbf24', '#f472b6', '#fb7185', '#60a5fa', '#c084fc'];
+    const grid = [0, 25, 50, 75, 100].map(value => `<line x1="${pad.left}" x2="${width - pad.right}" y1="${y(value)}" y2="${y(value)}" class="trend-grid"/><text x="${pad.left - 8}" y="${y(value) + 4}" class="trend-axis">${value}</text>`).join('');
+    const paths = series.map((item, seriesIndex) => {
+        const points = item.points.filter(point => point.present && point.score != null);
+        const line = points.map((point, index) => {
+            const runIndex = runs.findIndex(run => run.run_id === point.run_id);
+            return `${index ? 'L' : 'M'} ${x(runIndex)} ${y(point.score)}`;
+        }).join(' ');
+        const dots = points.map(point => { const runIndex = runs.findIndex(run => run.run_id === point.run_id); return `<circle cx="${x(runIndex)}" cy="${y(point.score)}" r="4" fill="${colors[seriesIndex % colors.length]}"><title>${escapeHtml(item.name)} · ${escapeHtml(point.timestamp)} · score ${Number(point.score).toFixed(1)} · rank ${point.rank ?? '—'} · ${escapeHtml(point.confidence_band || 'unknown')}</title></circle>`; }).join('');
+        return `<path d="${line}" class="trend-line" stroke="${colors[seriesIndex % colors.length]}"/><text x="${pad.left + 8}" y="${pad.top + 15 + seriesIndex * 15}" class="trend-legend" fill="${colors[seriesIndex % colors.length]}">${escapeHtml(item.name)}</text>${dots}`;
+    }).join('');
+    const labels = runs.map((run, index) => `<text x="${x(index)}" y="${height - 10}" class="trend-axis" text-anchor="middle">${escapeHtml(run.timestamp.slice(0, 10))}</text>`).join('');
+    chart.innerHTML = `<svg viewBox="0 0 ${width} ${height}" role="img" aria-label="${escapeHtml(kind)} score trends"><title>${escapeHtml(kind)} score trends across saved workspace runs</title>${grid}${paths}${labels}</svg>`;
+    metrics.innerHTML = runs.map(run => `<span><b>${run.evidence_count}</b> evidence · <b>${run.claim_count}</b> claims · <b>${run.warning_count}</b> warnings · ${escapeHtml(run.timestamp.slice(0, 10))}</span>`).join('');
+}
+
+async function loadWorkspaceHistory() {
+    const list = document.getElementById('workspace-history-list');
+    if (!list) return;
+    setupWorkspaceHistoryActions();
+    try {
+        const data = await apiFetch('/api/workspace/runs?limit=20');
+        const runs = data.runs || [];
+        list.innerHTML = runs.length ? runs.map(run => `
+            <div class="workspace-history-row">
+                <label><input type="checkbox" class="workspace-compare-check" value="${escapeHtml(run.run_id)}"> <strong>${escapeHtml(run.question)}</strong></label>
+                <span>${escapeHtml(run.status)} · ${run.evidence_count} evidence · ${escapeHtml(run.updated_at || '')}</span>
+                <div><button class="btn btn-secondary btn-sm" type="button" data-workspace-action="open" data-run-id="${escapeHtml(run.run_id)}">Open</button><button class="btn btn-secondary btn-sm" type="button" data-workspace-action="delete" data-run-id="${escapeHtml(run.run_id)}">Delete</button></div>
+            </div>`).join('') : '<span class="workspace-muted">No saved runs yet. Run a workspace query to create one.</span>';
+        if (runs.length > 1) list.innerHTML += '<button class="btn btn-primary btn-sm" type="button" onclick="compareWorkspaceRuns()">Compare selected runs</button>';
+    } catch (error) {
+        list.innerHTML = `<span class="workspace-muted">History unavailable: ${escapeHtml(error.message)}</span>`;
+    }
+}
+
+function setupWorkspaceHistoryActions() {
+    const list = document.getElementById('workspace-history-list');
+    if (!list || list.dataset.actionsBound) return;
+    list.dataset.actionsBound = 'true';
+    list.addEventListener('click', event => {
+        const button = event.target.closest('[data-workspace-action]');
+        if (!button) return;
+        const runId = button.dataset.runId;
+        if (button.dataset.workspaceAction === 'open') openWorkspaceRun(runId);
+        if (button.dataset.workspaceAction === 'delete') deleteWorkspaceRun(runId);
+    });
+}
+
+async function openWorkspaceRun(runId) {
+    try {
+        const payload = await apiFetch(`/api/workspace/runs/${encodeURIComponent(runId)}`);
+        if (!payload.dossier) throw new Error(payload.error || 'This run has no dossier');
+        renderWorkspaceResult(document.getElementById('workspace-result'), { dossier: payload.dossier, html: payload.html || '' });
+        document.getElementById('workspace-result').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    } catch (error) {
+        showToast(`Could not open run: ${error.message}`, 'error');
+    }
+}
+
+async function deleteWorkspaceRun(runId) {
+    if (!window.confirm(`Delete saved run ${runId}?`)) return;
+    try {
+        await apiFetch(`/api/workspace/runs/${encodeURIComponent(runId)}`, { method: 'DELETE' });
+        await loadWorkspaceHistory();
+        showToast('Saved run deleted');
+    } catch (error) {
+        showToast(`Could not delete run: ${error.message}`, 'error');
+    }
+}
+
+async function compareWorkspaceRuns() {
+    const selected = [...document.querySelectorAll('.workspace-compare-check:checked')].map(input => input.value);
+    const compare = document.getElementById('workspace-compare');
+    if (selected.length !== 2) {
+        compare.innerHTML = '<p class="workspace-muted">Select exactly two runs to compare.</p>';
+        return;
+    }
+    try {
+        const data = await apiFetch(`/api/workspace/compare?left=${encodeURIComponent(selected[0])}&right=${encodeURIComponent(selected[1])}`);
+        const rows = [...(data.drug_changes || []).map(item => ({ ...item, type: 'Drug' })), ...(data.target_changes || []).map(item => ({ ...item, type: 'Target' }))];
+        compare.innerHTML = `<h4>Run comparison</h4><p class="workspace-muted">${escapeHtml(data.left_run_id)} → ${escapeHtml(data.right_run_id)}</p>${rows.map(item => `<div class="workspace-compare-row"><span>${escapeHtml(item.type)} · <strong>${escapeHtml(item.name)}</strong></span><span>${item.left_score ?? '—'} → ${item.right_score ?? '—'} <b class="${(item.score_delta || 0) >= 0 ? 'delta-up' : 'delta-down'}">${item.score_delta == null ? item.change : ((item.score_delta >= 0 ? '+' : '') + item.score_delta.toFixed(1))}</b></span></div>`).join('')}`;
+    } catch (error) {
+        compare.innerHTML = `<p class="workspace-muted">Comparison unavailable: ${escapeHtml(error.message)}</p>`;
+    }
+}
+
+function submitWorkspace(event) {
+    event.preventDefault();
+    if (workspaceSubmissionActive) return;
+    const selectedSources = [...document.getElementById('workspace-sources').selectedOptions].map(option => option.value);
+    const resultEl = document.getElementById('workspace-result');
+    if (!selectedSources.length) {
+        setWorkspaceSubmissionState('failure');
+        if (resultEl) {
+            resultEl.className = 'workspace-result visible error';
+            resultEl.innerHTML = '<strong>Select at least one evidence source.</strong>';
+        }
+        return;
+    }
+    const info = activeDiseaseInfo();
+    const params = {
+        question: document.getElementById('workspace-question').value.trim(),
+        disease_id: info.id,
+        sources: selectedSources,
+        candidate_type: document.getElementById('workspace-candidate-type').value,
+        max_evidence: Number(document.getElementById('workspace-max-evidence').value || 50),
+        enable_llm: document.getElementById('workspace-enable-llm').checked,
+    };
+    const from = document.getElementById('workspace-date-from').value;
+    const to = document.getElementById('workspace-date-to').value;
+    if (from) params.date_from = from;
+    if (to) params.date_to = to;
+    resultEl.className = 'workspace-result visible loading';
+    resultEl.innerHTML = '<span class="spinner"></span> Preparing workspace…';
+    setWorkspaceSubmissionState('submitting');
+    streamJob('workspace', resultEl, params).then(() => {
+        setWorkspaceSubmissionState('success');
+    }).catch(error => {
+        setWorkspaceSubmissionState('failure');
+        // Terminal WebSocket/polling handlers already rendered a specific,
+        // escaped failure message. Preserve it instead of replacing it with
+        // the promise rejection's generic "Error" label.
+        if (!resultEl.classList.contains('error')) {
+            resultEl.className = 'workspace-result visible error';
+            resultEl.innerHTML = `<strong>Error:</strong> ${escapeHtml(error.message)}`;
+        }
+    });
+}
 
 function renderModuleResult(rows) {
     let html = '<div class="result-header">✅ Analysis Complete</div>';
@@ -398,7 +824,11 @@ function renderModuleResult(rows) {
 
 function renderKGResult(el, data) {
     el.className = 'module-result visible success';
-    el.innerHTML = renderModuleResult([
+    if (data.status === 'blocked' || data.coverage?.status === 'blocked') {
+        el.innerHTML = renderCoveragePanel(data.coverage);
+        return;
+    }
+    el.innerHTML = renderCoveragePanel(data.coverage) + renderModuleResult([
         ['Total Nodes', data.total_nodes],
         ['Total Edges', data.total_edges],
         ['Untargeted Genes', data.untargeted_genes?.length || 0],
@@ -408,7 +838,11 @@ function renderKGResult(el, data) {
 
 function renderRepurposeResult(el, data) {
     el.className = 'module-result visible success';
-    el.innerHTML = renderModuleResult([
+    if (data.status === 'blocked' || data.coverage?.status === 'blocked') {
+        el.innerHTML = renderCoveragePanel(data.coverage);
+        return;
+    }
+    el.innerHTML = renderCoveragePanel(data.coverage) + renderModuleResult([
         ['Candidates Scored', data.total],
         ['Avg Score', data.avg_score?.toFixed(2)],
         ['Tier 1 (≥8.0)', data.tier1_count],
@@ -419,7 +853,11 @@ function renderRepurposeResult(el, data) {
 function renderBiomarkerResult(el, data) {
     const top = data.biomarkers?.[0];
     el.className = 'module-result visible success';
-    el.innerHTML = renderModuleResult([
+    if (data.status === 'blocked' || data.coverage?.status === 'blocked') {
+        el.innerHTML = renderCoveragePanel(data.coverage);
+        return;
+    }
+    el.innerHTML = renderCoveragePanel(data.coverage) + renderModuleResult([
         ['Genes Analyzed', data.total_genes],
         ['Avg Score', data.avg_score?.toFixed(2)],
         ['Strong Biomarkers', data.tier1_count],
@@ -431,7 +869,11 @@ function renderBiomarkerResult(el, data) {
 function renderCartResult(el, data) {
     const top = data.genes?.[0];
     el.className = 'module-result visible success';
-    el.innerHTML = renderModuleResult([
+    if (data.status === 'blocked' || data.coverage?.status === 'blocked') {
+        el.innerHTML = renderCoveragePanel(data.coverage);
+        return;
+    }
+    el.innerHTML = renderCoveragePanel(data.coverage) + renderModuleResult([
         ['Genes Scored', data.total_genes],
         ['Avg Score', data.avg_score?.toFixed(2)],
         ['Tier 1 (Strong)', data.tier1_count],
@@ -443,7 +885,11 @@ function renderCartResult(el, data) {
 function renderExpressionResult(el, data) {
     const top = data.drugs?.[0];
     el.className = 'module-result visible success';
-    el.innerHTML = renderModuleResult([
+    if (data.status === 'blocked' || data.coverage?.status === 'blocked') {
+        el.innerHTML = renderCoveragePanel(data.coverage);
+        return;
+    }
+    el.innerHTML = renderCoveragePanel(data.coverage) + renderModuleResult([
         ['Drugs Correlated', data.total_drugs],
         ['Avg Score', data.avg_score?.toFixed(2)],
         ['Tier 1 (Strong)', data.tier1_count],
@@ -455,7 +901,11 @@ function renderExpressionResult(el, data) {
 function renderSemanticResult(el, data) {
     const top = data.results?.[0];
     el.className = 'module-result visible success';
-    el.innerHTML = renderModuleResult([
+    if (data.status === 'blocked' || data.coverage?.status === 'blocked') {
+        el.innerHTML = renderCoveragePanel(data.coverage);
+        return;
+    }
+    el.innerHTML = renderCoveragePanel(data.coverage) + renderModuleResult([
         ['Indexed Articles', data.indexed_articles],
         ['Results Found', data.total_results],
         ['Top Match', top ? top.title?.slice(0, 50) + '...' : '—'],
@@ -466,7 +916,11 @@ function renderSemanticResult(el, data) {
 function renderEvidenceResult(el, data) {
     const top = data.results?.[0];
     el.className = 'module-result visible success';
-    el.innerHTML = renderModuleResult([
+    if (data.status === 'blocked' || data.coverage?.status === 'blocked') {
+        el.innerHTML = renderCoveragePanel(data.coverage);
+        return;
+    }
+    el.innerHTML = renderCoveragePanel(data.coverage) + renderModuleResult([
         ['Total Results', data.total_results],
         ['Sources Searched', data.sources_searched?.length || 0],
         ['Top Source', top ? top.source_type?.replace('_',' ').toUpperCase() : '—'],
@@ -477,7 +931,11 @@ function renderEvidenceResult(el, data) {
 function renderExtractorResult(el, data) {
     const stats = data.stats || {};
     el.className = 'module-result visible success';
-    el.innerHTML = renderModuleResult([
+    if (data.status === 'blocked' || data.coverage?.status === 'blocked') {
+        el.innerHTML = renderCoveragePanel(data.coverage);
+        return;
+    }
+    el.innerHTML = renderCoveragePanel(data.coverage) + renderModuleResult([
         ['Articles Extracted', data.total_extracted],
         ['Successful', data.successful_extractions],
         ['LLM Model', data.model],
@@ -492,7 +950,11 @@ function renderMonitorResult(el, data) {
     const med = alerts.filter(a => a.severity === 'medium').length;
     const low = alerts.filter(a => a.severity === 'low').length;
     el.className = 'module-result visible success';
-    el.innerHTML = renderModuleResult([
+    if (data.status === 'blocked' || data.coverage?.status === 'blocked') {
+        el.innerHTML = renderCoveragePanel(data.coverage);
+        return;
+    }
+    el.innerHTML = renderCoveragePanel(data.coverage) + renderModuleResult([
         ['Total Changes', data.total_changes],
         ['🔴 High Alerts', high],
         ['🟡 Medium Alerts', med],
@@ -503,7 +965,11 @@ function renderMonitorResult(el, data) {
 
 function renderBioResult(el, data) {
     el.className = 'module-result visible success';
-    el.innerHTML = renderModuleResult([
+    if (data.status === 'blocked' || data.coverage?.status === 'blocked') {
+        el.innerHTML = renderCoveragePanel(data.coverage);
+        return;
+    }
+    el.innerHTML = renderCoveragePanel(data.coverage) + renderModuleResult([
         ['Total Nodes', data.total_nodes],
         ['Untargeted Genes', data.untargeted_genes?.length || 0],
         ['Top Hub Gene', data.top_hub_genes?.[0]?.name || '—'],
@@ -600,10 +1066,44 @@ async function runCrossDisease() {
 
 // ── Cross-Disease Comparison View ───────────────────────────────────────
 
-const CD_DISEASE_ORDER = ['sle', 'ra', 'ibd', 'ms', 'ss', 'ssc', 't1d'];
-const CD_DISEASE_LABELS = {
+const CD_KNOWN_LABELS = {
     sle: 'SLE', ra: 'RA', ibd: 'IBD', ms: 'MS', ss: 'SS', ssc: 'SSc', t1d: 'T1D',
 };
+
+function cdAcronym(id, name) {
+    // Curated acronyms win; otherwise derive one from the name's initials
+    // (keeping embedded digits: "Type 1 Diabetes" -> T1D).
+    if (CD_KNOWN_LABELS[id]) return CD_KNOWN_LABELS[id];
+    const clean = String(name || id).replace(/\(.*?\)/g, '').trim();
+    let acr = clean.split(/\s+/).filter(Boolean).map(w => {
+        const digit = (w.match(/\d/) || [null])[0];
+        return digit || w[0] || '';
+    }).join('').toUpperCase();
+    if (acr.length === 1) acr = clean.replace(/[^a-zA-Z0-9]/g, '').slice(0, 3).toUpperCase();
+    return acr || id.toUpperCase();
+}
+
+function cdDiseaseList(summary) {
+    // Order by the live registry when available; always include any disease
+    // present in the response so new diseases show up regardless.
+    const present = Object.keys(summary || {});
+    const ordered = [];
+    for (const d of (diseaseCache && diseaseCache.list) || []) {
+        if (present.includes(d.id)) ordered.push(d.id);
+    }
+    for (const id of present) {
+        if (!ordered.includes(id)) ordered.push(id);
+    }
+    return ordered.map(id => {
+        const entry = summary[id] || {};
+        const fullName = entry.name || id;
+        return {
+            id,
+            name: fullName.split('(')[0].trim(),
+            label: cdAcronym(id, fullName),
+        };
+    });
+}
 
 function cdColorFor(value, max) {
     // value 0..max -> color scale (green -> blue -> purple)
@@ -644,9 +1144,9 @@ function renderCrossDiseaseComparison(data) {
     const similarity = data.disease_similarity || [];
     const multiDrugs = data.multi_disease_drugs || [];
 
-    const diseaseNames = CD_DISEASE_ORDER
-        .filter(d => summary[d])
-        .map(d => ({ id: d, name: (summary[d].name || d).split('(')[0].trim() }));
+    const diseaseNames = cdDiseaseList(summary);
+    const diseaseLabel = {};
+    for (const d of diseaseNames) diseaseLabel[d.id] = d.label;
 
     // ── Gene × Disease heatmap ──────────────────────────────────────
     const geneEntries = Object.entries(sharedGenes)
@@ -687,21 +1187,21 @@ function renderCrossDiseaseComparison(data) {
         simMap[`${s.disease_a}|${s.disease_b}`] = s.similarity;
         simMap[`${s.disease_b}|${s.disease_a}`] = s.similarity;
     }
-    const simHeader = diseaseNames.map(d => `<th>${CD_DISEASE_LABELS[d.id] || d.id}</th>`).join('');
+    const simHeader = diseaseNames.map(d => `<th>${escapeHtml(d.label)}</th>`).join('');
     const simRows = diseaseNames.map(d => {
         const cells = diseaseNames.map(d2 => {
             if (d.id === d2.id) return `<td style="background:rgba(129,140,248,0.15);text-align:center;">—</td>`;
             const v = simMap[`${d.id}|${d2.id}`] || 0;
             return `<td style="background:${cdColorFor(v, 1)};text-align:center;color:#0a0a0f;">${v.toFixed(2)}</td>`;
         }).join('');
-        return `<tr><td class="gene-name">${CD_DISEASE_LABELS[d.id] || d.id}</td>${cells}</tr>`;
+        return `<tr><td class="gene-name">${escapeHtml(d.label)}</td>${cells}</tr>`;
     }).join('');
 
     // ── Multi-disease drugs ─────────────────────────────────────────
     const drugRows = multiDrugs.slice(0, 12).map(drug => {
         const diseases = (drug.diseases || drug.disease_ids || []);
         const tags = diseases.slice(0, 7).map(d =>
-            `<span class="cd-disease-tag">${CD_DISEASE_LABELS[d] || d}</span>`).join('');
+            `<span class="cd-disease-tag">${escapeHtml(diseaseLabel[d] || d)}</span>`).join('');
         return `<div class="cd-drug-row">
             <div>
                 <span class="cd-drug-name">${drug.drug_name || drug.drug_id || drug.name || ''}</span>
@@ -719,7 +1219,7 @@ function renderCrossDiseaseComparison(data) {
             <table class="cd-table">
                 <thead><tr>
                     <th>Gene</th><th>Coverage</th>
-                    ${diseaseNames.map(d => `<th>${CD_DISEASE_LABELS[d.id] || d.id}</th>`).join('')}
+                    ${diseaseNames.map(d => `<th>${escapeHtml(d.label)}</th>`).join('')}
                 </tr></thead>
                 <tbody>${geneRows}</tbody>
             </table>
@@ -742,6 +1242,131 @@ function renderCrossDiseaseComparison(data) {
         <div class="cd-card">
             <h3>💊 Multi-Disease Repurposing Candidates</h3>
             ${drugRows || '<p style="color:var(--text-muted);font-size:0.8rem;">No multi-disease drug data.</p>'}
+        </div>
+    `;
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// ── Comparative Module View (biomarker / expression / synergy × 7 diseases) ──
+
+async function runModuleComparison() {
+    const resultEl = document.getElementById('result-cross-disease');
+    if (!resultEl) return;
+    resultEl.className = 'module-result visible loading';
+    resultEl.innerHTML = '<span class="spinner"></span> Running biomarker · expression · synergy across all diseases…';
+
+    try {
+        const data = await apiFetch('/api/cross-disease/modules');
+        resultEl.className = 'module-result visible success';
+        const modules = data.modules || {};
+        resultEl.innerHTML = renderModuleResult([
+            ['Diseases Analyzed', data.diseases?.length || 0],
+            ['Biomarker Genes', Object.keys(modules.biomarker?.scores || {}).length],
+            ['Drugs Correlated', Object.keys(modules.expression?.scores || {}).length],
+            ['Synergy Pairs Top', Object.keys(modules.synergy?.top || {}).length],
+        ]);
+        renderModuleComparison(data);
+    } catch (e) {
+        resultEl.className = 'module-result visible error';
+        resultEl.innerHTML = `<strong>Error:</strong> ${e.message}`;
+    }
+}
+
+function cmScoreMatrix(diseaseNames, scores, { maxValue = 10 } = {}) {
+    // Rows = union of entities (genes/drugs) across diseases, sorted by
+    // disease coverage then max score. Cells = per-disease score.
+    const entities = new Set();
+    const perDisease = {};
+    for (const [entity, byDisease] of Object.entries(scores)) {
+        entities.add(entity);
+        perDisease[entity] = byDisease;
+    }
+
+    const rows = [...entities].map(e => ({
+        id: e,
+        coverage: Object.keys(perDisease[e] || {}).length,
+        max: Math.max(0, ...Object.values(perDisease[e] || {})),
+    })).sort((a, b) => b.coverage - a.coverage || b.max - a.max);
+
+    const header = `<th>Entity</th>` + diseaseNames.map(d => `<th>${escapeHtml(d.label)}</th>`).join('');
+    const body = rows.map(r => {
+        const cells = diseaseNames.map(d => {
+            const v = (perDisease[r.id] || {})[d.id];
+            if (v == null) {
+                return `<td style="background:rgba(255,255,255,0.04);color:rgba(120,120,144,0.35);">—</td>`;
+            }
+            const bg = cdColorFor(v, maxValue);
+            const txt = v >= maxValue * 0.45 ? '#0a0a0f' : '#e0e0e8';
+            return `<td style="background:${bg};color:${txt};font-weight:600;" title="${escapeHtml(r.id)} · ${escapeHtml(d.label)}: ${v.toFixed(2)}">${v.toFixed(1)}</td>`;
+        }).join('');
+        return `<tr><td class="gene-name">${escapeHtml(r.id)}</td>${cells}</tr>`;
+    }).join('');
+    return { header, body, total: rows.length };
+}
+
+function renderModuleComparison(data) {
+    let section = document.getElementById('comparative-module-view');
+    if (!section) {
+        section = document.createElement('div');
+        section.id = 'comparative-module-view';
+        const container = document.getElementById('modules-grid');
+        container.parentElement.insertBefore(section, container.nextSibling);
+    }
+
+    const diseaseNames = (data.diseases || []).map(d => ({
+        id: d.id,
+        label: cdAcronym(d.id, d.name),
+    }));
+    const modules = data.modules || {};
+    const bm = modules.biomarker?.scores || {};
+    const ex = modules.expression?.scores || {};
+    const sy = modules.synergy?.top || {};
+
+    const bmTable = cmScoreMatrix(diseaseNames, bm);
+    const exTable = cmScoreMatrix(diseaseNames, ex);
+
+    // Synergy: per-disease top pairs side by side
+    const syHeader = diseaseNames.map(d => `<th>${escapeHtml(d.label)}</th>`).join('');
+    const syMax = Math.max(0, ...Object.values(sy).flat().map(p => p?.score || 0));
+    const syRows = [0, 1, 2, 3, 4].map(rank => {
+        const cells = diseaseNames.map(d => {
+            const pair = (sy[d.id] || [])[rank];
+            if (!pair) return `<td style="color:rgba(120,120,144,0.35);">—</td>`;
+            const bg = cdColorFor(pair.score, Math.max(10, syMax));
+            return `<td style="background:${bg};color:${pair.score >= 4.5 ? '#0a0a0f' : '#e0e0e8'};font-weight:600;" title="${escapeHtml(pair.label)} · ${pair.score.toFixed(2)}">${escapeHtml(pair.label)}<br><small style="font-weight:700;">${pair.score.toFixed(2)}</small></td>`;
+        }).join('');
+        return `<tr><td class="gene-count">#${rank + 1}</td>${cells}</tr>`;
+    }).join('');
+
+    section.innerHTML = `
+        <h2 class="section-title"><span>⚖️</span> Cross-Disease Module Comparison</h2>
+        <p style="color:var(--text-muted);font-size:0.82rem;margin-bottom:14px;">
+            Biomarker discovery, gene-expression correlation, and drug synergy scored independently for
+            every disease — stacked side by side so cross-disease patterns are visible at a glance.
+        </p>
+
+        <div class="cd-card">
+            <h3>🧬 Biomarker × Disease <span style="font-weight:400;color:var(--text-muted);font-size:0.78rem;">(composite score, ${bmTable.total} genes)</span></h3>
+            <table class="cd-table">
+                <thead><tr>${bmTable.header}</tr></thead>
+                <tbody>${bmTable.body}</tbody>
+            </table>
+        </div>
+
+        <div class="cd-card">
+            <h3>🧬 Expression Correlation × Disease <span style="font-weight:400;color:var(--text-muted);font-size:0.78rem;">(composite score, ${exTable.total} drugs)</span></h3>
+            <table class="cd-table">
+                <thead><tr>${exTable.header}</tr></thead>
+                <tbody>${exTable.body}</tbody>
+            </table>
+        </div>
+
+        <div class="cd-card">
+            <h3>🔗 Top Synergy Pairs per Disease</h3>
+            <table class="cd-table" style="min-width:480px;">
+                <thead><tr><th>Rank</th>${syHeader}</tr></thead>
+                <tbody>${syRows}</tbody>
+            </table>
         </div>
     `;
     section.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -1087,6 +1712,423 @@ async function loadExportGrid() {
         </div>`).join('');
 }
 
+// ── Modal + Toast UI ───────────────────────────────────────────────────
+
+function showToast(message, type = 'success') {
+    let container = document.getElementById('toast-container');
+    if (!container) {
+        container = document.createElement('div');
+        container.id = 'toast-container';
+        container.className = 'toast-container';
+        document.body.appendChild(container);
+    }
+    const toast = document.createElement('div');
+    toast.className = `toast ${type}`;
+    toast.innerHTML = escapeHtml(message);
+    container.appendChild(toast);
+    setTimeout(() => {
+        toast.style.opacity = '0';
+        toast.style.transform = 'translateY(6px)';
+        setTimeout(() => toast.remove(), 250);
+    }, 4200);
+}
+
+/** Promise-based confirm modal. Resolves `true` on confirm, `false` on cancel/✕/Esc/backdrop. */
+function openModal({ title, body, confirmText = 'Confirm', cancelText = 'Cancel', danger = false }) {
+    return new Promise(resolve => {
+        const previouslyFocused = document.activeElement;
+        const overlay = document.createElement('div');
+        overlay.className = 'modal-overlay';
+        overlay.innerHTML = `
+            <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+                <div class="modal-header">
+                    <span class="modal-title" id="modal-title">${escapeHtml(title)}</span>
+                    <button type="button" class="modal-close" aria-label="Close">✕</button>
+                </div>
+                <div class="modal-body">${body}</div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary modal-cancel">${escapeHtml(cancelText)}</button>
+                    <button type="button" class="btn ${danger ? 'btn-danger' : 'btn-primary'} modal-confirm">${escapeHtml(confirmText)}</button>
+                </div>
+            </div>`;
+        document.body.appendChild(overlay);
+
+        const modal = overlay.querySelector('.modal');
+        const focusables = () => [...overlay.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])')]
+            .filter(el => !el.disabled && el.offsetParent !== null);
+
+        const close = (value) => {
+            document.removeEventListener('keydown', onKey);
+            overlay.remove();
+            if (previouslyFocused && previouslyFocused.focus) previouslyFocused.focus();
+            resolve(value);
+        };
+        const onKey = (e) => {
+            if (e.key === 'Escape') { close(false); return; }
+            if (e.key === 'Tab') {
+                const els = focusables();
+                if (!els.length) { e.preventDefault(); return; }
+                const first = els[0];
+                const last = els[els.length - 1];
+                if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+                else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+            }
+        };
+        overlay.querySelector('.modal-close').addEventListener('click', () => close(false));
+        overlay.querySelector('.modal-cancel').addEventListener('click', () => close(false));
+        overlay.querySelector('.modal-confirm').addEventListener('click', () => close(true));
+        overlay.addEventListener('mousedown', (e) => { if (e.target === overlay) close(false); });
+        document.addEventListener('keydown', onKey);
+        (overlay.querySelector('.modal-confirm') || modal).focus();
+    });
+}
+
+function formatBytes(bytes) {
+    if (bytes == null) return '—';
+    if (bytes < 1024) return `${bytes} B`;
+    if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} kB`;
+    return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
+}
+
+// ── Disease Module Manager ─────────────────────────────────────────────
+
+// Filenames of the currently rendered backups (restore buttons reference by index)
+let manageBackupNames = [];
+// In-flight guard so double-clicking Restore can't stack preview modals
+let manageBusy = false;
+
+function manageSection() {
+    let section = document.getElementById('disease-manager');
+    if (!section) {
+        section = document.createElement('div');
+        section.id = 'disease-manager';
+        section.className = 'cd-card manage-panel';
+        const grid = document.getElementById('modules-grid');
+        grid.parentElement.insertBefore(section, grid.nextSibling);
+    }
+    return section;
+}
+
+async function openDiseaseManager() {
+    const section = manageSection();
+    const info = activeDiseaseInfo();
+    section.innerHTML = `
+        <div class="manage-header">
+            <h3>🛠️ Manage Disease Module — <span id="manage-disease-name">${escapeHtml(info.name)}</span></h3>
+            <button type="button" class="btn btn-secondary btn-sm" onclick="closeDiseaseManager()">✕ Close</button>
+        </div>
+        <div class="manage-summary" id="manage-summary"><span class="spinner"></span> Loading module…</div>
+        <div class="manage-body">
+            <div class="manage-block">
+                <h4>🔄 Refresh &amp; Prune</h4>
+                <p class="manage-hint">
+                    Re-pull genes/drugs/pathways from GWAS Catalog, Open Targets, and Reactome, then drop
+                    entities no source reported. A preview is always shown first — nothing is written until
+                    you confirm, and every removed entity is backed up for restore.
+                </p>
+                <div class="manage-options">
+                    <label class="manage-opt"><input type="checkbox" id="mng-skip-gwas"> Skip GWAS</label>
+                    <label class="manage-opt"><input type="checkbox" id="mng-skip-ot"> Skip Open Targets</label>
+                    <label class="manage-opt"><input type="checkbox" id="mng-skip-reactome"> Skip Reactome</label>
+                    <label class="manage-opt"><input type="checkbox" id="mng-no-cache"> Bypass cache</label>
+                </div>
+                <div class="manage-actions">
+                    <button type="button" class="btn btn-primary" id="mng-prune-btn" onclick="runPrunePreview()">▶ Run Refresh &amp; Prune Preview</button>
+                </div>
+                <div class="manage-result" id="mng-prune-result"></div>
+            </div>
+            <div class="manage-block">
+                <h4>🗂️ Backup History</h4>
+                <p class="manage-hint">Prunes are snapshotted to <code>data/backups/</code>. Restore re-merges a backup verbatim — curated fields intact.</p>
+                <div id="mng-backups"><span class="spinner"></span> Loading backups…</div>
+            </div>
+            <div class="manage-block manage-block-full">
+                <h4>📜 Activity Log</h4>
+                <p class="manage-hint">Every prune and restore is recorded server-side to <code>data/audit_log.jsonl</code> — timestamp, entities removed/restored, and the backup involved — so module changes are fully traceable.</p>
+                <div class="audit-list" id="mng-audit"><span class="spinner"></span> Loading activity…</div>
+            </div>
+        </div>`;
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    loadManageSummary();
+    loadManageBackups();
+    loadManageAudit();
+}
+
+function closeDiseaseManager() {
+    const section = document.getElementById('disease-manager');
+    if (section) section.remove();
+}
+
+async function loadManageSummary() {
+    const el = document.getElementById('manage-summary');
+    if (!el) return;
+    const id = getActiveDisease();
+    try {
+        const [backups, registry] = await Promise.all([
+            apiFetch(`/api/admin/diseases/${encodeURIComponent(id)}/backups`),
+            apiFetch('/api/system/diseases'),
+        ]);
+        const entry = (registry.diseases || []).find(d => d.id === id) || {};
+        el.innerHTML = `
+            <div class="manage-chip">🧬 <b>${entry.genes ?? '…'}</b> genes</div>
+            <div class="manage-chip">💊 <b>${entry.drugs ?? '…'}</b> drugs</div>
+            <div class="manage-chip">🗺️ <b>${entry.pathways ?? '…'}</b> pathways</div>
+            <div class="manage-chip">🗂️ <b>${backups.count ?? 0}</b> backup${backups.count === 1 ? '' : 's'}</div>`;
+    } catch (e) {
+        el.innerHTML = `<span class="manage-err">⚠️ ${escapeHtml(e.message)}</span>`;
+    }
+}
+
+async function loadManageBackups() {
+    const el = document.getElementById('mng-backups');
+    if (!el) return;
+    const id = getActiveDisease();
+    manageBackupNames = [];
+    try {
+        const data = await apiFetch(`/api/admin/diseases/${encodeURIComponent(id)}/backups`);
+        if (!data.backups || data.backups.length === 0) {
+            el.innerHTML = '<div class="manage-empty">No backups yet — running a prune writes the first one here.</div>';
+            return;
+        }
+        el.innerHTML = data.backups.map((b, i) => {
+            const filename = b.path.split(/[\\/]/).pop();
+            manageBackupNames.push(filename);
+            return `
+            <div class="backup-row">
+                <div class="backup-info">
+                    <div class="backup-name">${escapeHtml(filename)}</div>
+                    <div class="backup-meta">${formatBytes(b.size_bytes)} · ${escapeHtml(b.modified || '')}</div>
+                    <div class="backup-contents">
+                        ${(b.genes || []).length ? `<span class="tag blue">${b.genes.length} gene${b.genes.length === 1 ? '' : 's'}</span>` : ''}
+                        ${(b.drugs || []).length ? `<span class="tag pink">${b.drugs.length} drug${b.drugs.length === 1 ? '' : 's'}</span>` : ''}
+                        ${b.readable === false ? '<span class="tag yellow">unreadable</span>' : ''}
+                    </div>
+                </div>
+                <button type="button" class="btn btn-secondary btn-sm" onclick="previewRestore(${i})" ${b.readable === false ? 'disabled' : ''}>↩ Restore</button>
+            </div>`;
+        }).join('');
+    } catch (e) {
+        el.innerHTML = `<span class="manage-err">⚠️ ${escapeHtml(e.message)}</span>`;
+    }
+}
+
+async function loadManageAudit() {
+    const el = document.getElementById('mng-audit');
+    if (!el) return;
+    const id = getActiveDisease();
+    try {
+        const data = await apiFetch(`/api/admin/diseases/${encodeURIComponent(id)}/audit?limit=20`);
+        const entries = data.entries || [];
+        if (entries.length === 0) {
+            el.innerHTML = '<div class="manage-empty">No activity yet — prune and restore actions are recorded here.</div>';
+            return;
+        }
+        el.innerHTML = entries.map(a => {
+            const isPrune = a.action === 'prune';
+            const removed = a.removed || {};
+            const restored = a.restored || {};
+            const genes = isPrune ? (removed.genes || []) : (restored.genes || []);
+            const drugs = isPrune ? (removed.drugs || []) : (restored.drugs || []);
+            const skipped = a.skipped || {};
+            const nSkipped = (skipped.genes || []).length + (skipped.drugs || []).length;
+            const backupFile = (a.backup || '').split(/[\\/]/).pop();
+            const verb = isPrune ? 'Removed' : 'Restored';
+            const summary = `${verb} ${genes.length} gene${genes.length === 1 ? '' : 's'}, ${drugs.length} drug${drugs.length === 1 ? '' : 's'}`;
+            return `
+            <div class="audit-row">
+                <span class="audit-badge ${isPrune ? 'prune' : 'restore'}">${isPrune ? 'PRUNE' : 'RESTORE'}</span>
+                <div class="audit-info">
+                    <div class="audit-line">${escapeHtml(summary)}${nSkipped ? ` <span class="manage-sub">· ${nSkipped} skipped</span>` : ''}</div>
+                    ${backupFile ? `<div class="audit-meta" title="${escapeHtml(a.backup)}">${escapeHtml(backupFile)}</div>` : ''}
+                </div>
+                <span class="audit-ts">${escapeHtml(formatAuditTime(a.ts))}</span>
+            </div>`;
+        }).join('') +
+        (data.count > entries.length ? `<div class="manage-sub" style="padding:8px 4px 2px">Showing the last ${entries.length} of ${data.count} recorded actions.</div>` : '');
+    } catch (e) {
+        el.innerHTML = `<span class="manage-err">⚠️ ${escapeHtml(e.message)}</span>`;
+    }
+}
+
+function formatAuditTime(ts) {
+    if (!ts) return '';
+    const d = new Date(ts);
+    if (isNaN(d.getTime())) return ts;
+    return d.toLocaleString(undefined, { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+}
+
+function refreshManage() {
+    loadManageSummary();
+    loadManageBackups();
+    loadManageAudit();
+    loadPlatformStats();
+}
+
+// ── Prune flow (preview → confirm modal → apply) ────────────────────────
+
+async function runPrunePreview() {
+    const btn = document.getElementById('mng-prune-btn');
+    const resultEl = document.getElementById('mng-prune-result');
+    if (!btn || !resultEl) return;
+
+    btn.disabled = true;
+    resultEl.className = 'manage-result visible';
+    resultEl.innerHTML = '<span class="spinner"></span> Fetching sources (GWAS · Open Targets · Reactome) and computing merge + prune candidates… this can take a minute.';
+
+    const id = getActiveDisease();
+    const req = {
+        apply: false,
+        skip_gwas: document.getElementById('mng-skip-gwas').checked,
+        skip_opentargets: document.getElementById('mng-skip-ot').checked,
+        skip_reactome: document.getElementById('mng-skip-reactome').checked,
+        no_cache: document.getElementById('mng-no-cache').checked,
+    };
+
+    let preview;
+    try {
+        preview = await apiFetch(`/api/admin/diseases/${encodeURIComponent(id)}/prune`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(req),
+        });
+    } catch (e) {
+        resultEl.className = 'manage-result visible error';
+        resultEl.innerHTML = `<strong>Preview failed:</strong> ${escapeHtml(e.message)}`;
+        btn.disabled = false;
+        return;
+    }
+
+    const merge = preview.merge || {};
+    const prune = preview.prune || {};
+    const pruneGenes = prune.genes || [];
+    const pruneDrugs = prune.drugs || [];
+    const totalPrune = pruneGenes.length + pruneDrugs.length;
+
+    const mergeLines = ['genes', 'drugs', 'pathways'].map(kind => {
+        const m = merge[kind] || {};
+        return `${kind}: <b>+${(m.added || []).length}</b> added, <b>~${(m.updated || []).length}</b> updated, <b>${(m.kept || []).length}</b> unchanged`;
+    }).join('<br>');
+
+    if (totalPrune === 0) {
+        resultEl.className = 'manage-result visible success';
+        resultEl.innerHTML = `<strong>✅ Nothing to prune.</strong> Every existing entity was re-reported by at least one source.<br><span class="manage-sub">${mergeLines}</span>`;
+        return;
+    }
+
+    const sourceChips = Object.entries(preview.sources || {})
+        .map(([s, ok]) => `${ok ? '✅' : '⚠️'} ${escapeHtml(s)}`).join(' ');
+    const pruneChips = [
+        ...pruneGenes.map(g => `<span class="candidate-chip gene">${escapeHtml(g)}</span>`),
+        ...pruneDrugs.map(d => `<span class="candidate-chip drug">${escapeHtml(d)}</span>`),
+    ].join(' ');
+
+    const body = `
+        <p class="modal-note"><b>Sources:</b> ${sourceChips || '—'}</p>
+        <p class="modal-note"><b>Merge (refresh):</b><br>${mergeLines}</p>
+        <p class="modal-note warn">⚠️ <b>${pruneGenes.length} gene${pruneGenes.length === 1 ? '' : 's'} and ${pruneDrugs.length} drug${pruneDrugs.length === 1 ? '' : 's'} would be removed</b> — no source reported them on this run. Every removed entity is backed up to <code>data/backups/</code> and can be restored verbatim later.</p>
+        <div class="candidate-list">${pruneChips}</div>`;
+
+    const confirmed = await openModal({
+        title: '⚠️ Refresh & Prune Preview',
+        body,
+        confirmText: `Apply Prune (${totalPrune})`,
+        cancelText: 'Cancel',
+        danger: true,
+    });
+    btn.disabled = false;
+    if (!confirmed) {
+        resultEl.className = 'manage-result visible neutral';
+        resultEl.innerHTML = '<span class="manage-sub">Preview complete — nothing was written. Re-run preview to re-evaluate.</span>';
+        return;
+    }
+
+    resultEl.className = 'manage-result visible';
+    resultEl.innerHTML = '<span class="spinner"></span> Applying refresh + prune…';
+    try {
+        const res = await apiFetch(`/api/admin/diseases/${encodeURIComponent(id)}/prune`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ ...req, apply: true }),
+        });
+        const p = res.prune || {};
+        resultEl.className = 'manage-result visible success';
+        resultEl.innerHTML = `
+            <strong>✅ Prune applied.</strong> Removed ${p.genes?.length || 0} gene(s) and ${p.drugs?.length || 0} drug(s).
+            ${p.backup ? `<br><span class="manage-sub">Backup: <code>${escapeHtml(p.backup)}</code></span>` : ''}`;
+        showToast(`Prune complete — ${p.genes?.length || 0} gene(s), ${p.drugs?.length || 0} drug(s) removed and backed up.`);
+        refreshManage();
+    } catch (e) {
+        resultEl.className = 'manage-result visible error';
+        resultEl.innerHTML = `<strong>Apply failed:</strong> ${escapeHtml(e.message)}`;
+        showToast(e.message, 'error');
+    }
+}
+
+// ── Restore flow (preview → confirm modal → apply) ─────────────────────
+
+async function previewRestore(index) {
+    if (manageBusy) return;
+    manageBusy = true;
+    const restoreBtns = [...document.querySelectorAll('.backup-row .btn')];
+    restoreBtns.forEach(b => { b.disabled = true; });
+    const filename = manageBackupNames[index];
+    const id = getActiveDisease();
+    const body = { backup: filename, apply: false };
+
+    let preview;
+    try {
+        if (!filename) throw new Error('No backup selected');
+        preview = await apiFetch(`/api/admin/diseases/${encodeURIComponent(id)}/restore`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(body),
+        });
+    } catch (e) {
+        showToast(e.message, 'error');
+        restoreBtns.forEach(b => { b.disabled = false; });
+        manageBusy = false;
+        return;
+    }
+
+    const restored = preview.restored || {};
+    const skipped = preview.skipped || {};
+    const nGenes = (restored.genes || []).length;
+    const nDrugs = (restored.drugs || []).length;
+    const nSkipped = (skipped.genes || []).length + (skipped.drugs || []).length;
+    const pathways = preview.updated_pathways || [];
+
+    const bodyHtml = `
+        <p class="modal-note">Backup: <code>${escapeHtml(filename)}</code></p>
+        <p class="modal-note"><b>${nGenes} gene${nGenes === 1 ? '' : 's'}, ${nDrugs} drug${nDrugs === 1 ? '' : 's'}</b> would be restored verbatim (curated fields intact); <b>${nSkipped}</b> already present and skipped.</p>
+        ${pathways.length ? `<p class="modal-note">🔗 Re-attached to ${pathways.length} pathway(s): <span class="manage-sub">${pathways.slice(0, 10).map(escapeHtml).join(', ')}</span></p>` : ''}
+        ${nGenes ? `<div class="candidate-list">${(restored.genes || []).map(g => `<span class="candidate-chip gene">${escapeHtml(g)}</span>`).join(' ')}</div>` : ''}`;
+
+    const confirmed = await openModal({
+        title: '↩ Restore from backup',
+        body: bodyHtml,
+        confirmText: 'Restore',
+        cancelText: 'Cancel',
+        danger: true,
+    });
+    if (!confirmed) return;
+
+    try {
+        const res = await apiFetch(`/api/admin/diseases/${encodeURIComponent(id)}/restore`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ backup: filename, apply: true }),
+        });
+        const r = res.restored || {};
+        showToast(`Restored ${(r.genes || []).length} gene(s) and ${(r.drugs || []).length} drug(s) to ${activeDiseaseInfo().label}.`);
+        refreshManage();
+    } catch (e) {
+        showToast(e.message, 'error');
+    } finally {
+        restoreBtns.forEach(b => { b.disabled = false; });
+        manageBusy = false;
+    }
+}
+
 // ── Init ─────────────────────────────────────────────────────────────────
 
 async function checkAPIStatus() {
@@ -1105,14 +2147,31 @@ async function checkAPIStatus() {
 
 async function loadPlatformStats() {
     try {
-        const stats = await apiFetch('/api/stats');
+        const stats = await apiFetch(`/api/stats?${diseaseQS()}`);
         document.getElementById('stat-kg-nodes').textContent = stats.kg_nodes;
         document.getElementById('stat-genes').textContent = stats.genes;
         document.getElementById('stat-candidates').textContent = stats.candidates;
         document.getElementById('stat-edges').textContent = stats.kg_edges;
+        const label = document.getElementById('stat-genes-label');
+        if (label) label.textContent = `${activeDiseaseInfo().label} Genes`;
     } catch {
         // Stats will show '…' placeholders
     }
+}
+
+function activeDiseaseInfo() {
+    const id = getActiveDisease();
+    const entry = (diseaseCache.list || []).find(d => d.id === id);
+    const name = entry ? entry.name : id;
+    return { id, name, label: cdAcronym(id, name) };
+}
+
+function updateDiseaseDisplay() {
+    const info = activeDiseaseInfo();
+    const nameEl = document.getElementById('hero-disease-name');
+    if (nameEl) nameEl.textContent = info.name;
+    const badgeEl = document.getElementById('hero-disease-badge');
+    if (badgeEl) badgeEl.textContent = `🦠 ${info.label}`;
 }
 
 // ── Bootstrap ────────────────────────────────────────────────────────────
@@ -1126,15 +2185,48 @@ function getActiveDisease() {
     return window.localStorage.getItem('active-disease') || 'sle';
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+async function loadDiseaseSelector() {
     const selector = document.getElementById('disease-selector');
-    if (selector) {
-        selector.value = getActiveDisease();
+    if (!selector) return;
+
+    let diseases = null;
+    let fetched = false;
+    try {
+        const data = await apiFetch('/api/system/diseases');
+        diseases = (data && data.diseases) || [];
+        diseaseCache.list = diseases;  // only on success — never the fallback list
+        fetched = true;
+    } catch {
+        // API unavailable — keep a minimal fallback so the app still works
+        diseases = [{ id: 'sle', name: 'Systemic Lupus Erythematosus' }];
     }
+
+    const options = diseases.map(d =>
+        `<option value="${escapeHtml(d.id)}">${escapeHtml(d.name)}${d.genes ? ` (${d.genes} genes)` : ''}</option>`).join('');
+    selector.innerHTML = options;
+
+    let active = getActiveDisease();
+    // Only validate/reset the stored pick when the registry fetch succeeded;
+    // a transient API outage must not clobber the user's saved disease.
+    if (fetched) {
+        const known = diseases.some(d => d.id === active);
+        if (!known) {
+            active = diseases.some(d => d.id === 'sle') ? 'sle' : (diseases[0] && diseases[0].id) || '';
+            window.localStorage.setItem('active-disease', active);
+        }
+    }
+    selector.value = active;
+}
+
+document.addEventListener('DOMContentLoaded', async () => {
+    await loadDiseaseSelector();
+    updateDiseaseDisplay();
     checkAPIStatus();
     loadPlatformStats();
     initKGExplorer();
     loadExportGrid();
+    loadWorkspaceHistory();
+    loadWorkspaceTrends();
 
     setInterval(checkAPIStatus, 30000);
     setInterval(loadPlatformStats, 60000);

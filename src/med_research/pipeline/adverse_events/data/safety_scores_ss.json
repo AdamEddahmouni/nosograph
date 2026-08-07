@@ -1,0 +1,762 @@
+{
+  "safety_scores": [
+    {
+      "drug_id": "hydroxychloroquine",
+      "drug_name": "Hydroxychloroquine (Plaquenil)",
+      "disease_id": "ss",
+      "disease_symptom_overlap_score": 8.0,
+      "disease_overlap_score": 8.0,
+      "lupus_symptom_overlap_score": 8.0,
+      "severity_burden_score": 7.0,
+      "chronic_use_safety_score": 8.0,
+      "disease_specific_risk_score": 5.0,
+      "dil_risk_score": 5.0,
+      "composite_safety_score": 7.4,
+      "n_disease_overlap_ae": 2,
+      "disease_overlap_ae": [
+        "dry mouth",
+        "fatigue",
+        "rash"
+      ],
+      "n_lupus_overlap_ae": 2,
+      "lupus_overlap_ae": [
+        "dry mouth",
+        "fatigue",
+        "rash"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Many SS therapies are off-label or investigational and have evolving safety evidence."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Baseline and periodic retinal screening; review cardiac and glucose risks.",
+      "n_severe_ae": 3
+    },
+    {
+      "drug_id": "pilocarpine",
+      "drug_name": "Pilocarpine (Salagen)",
+      "disease_id": "ss",
+      "disease_symptom_overlap_score": 8.0,
+      "disease_overlap_score": 8.0,
+      "lupus_symptom_overlap_score": 8.0,
+      "severity_burden_score": 6.0,
+      "chronic_use_safety_score": 7.0,
+      "disease_specific_risk_score": 7.5,
+      "dil_risk_score": 7.5,
+      "composite_safety_score": 7.1,
+      "n_disease_overlap_ae": 2,
+      "disease_overlap_ae": [
+        "dry mouth",
+        "dry eyes"
+      ],
+      "n_lupus_overlap_ae": 2,
+      "lupus_overlap_ae": [
+        "dry mouth",
+        "dry eyes"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Many SS therapies are off-label or investigational and have evolving safety evidence."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Review asthma, cardiac, renal, and cholinergic contraindications.",
+      "n_severe_ae": 3
+    },
+    {
+      "drug_id": "belimumab",
+      "drug_name": "Belimumab (Benlysta)",
+      "disease_id": "ss",
+      "disease_symptom_overlap_score": 8.0,
+      "disease_overlap_score": 8.0,
+      "lupus_symptom_overlap_score": 8.0,
+      "severity_burden_score": 6.0,
+      "chronic_use_safety_score": 7.0,
+      "disease_specific_risk_score": 5.0,
+      "dil_risk_score": 5.0,
+      "composite_safety_score": 6.85,
+      "n_disease_overlap_ae": 1,
+      "disease_overlap_ae": [
+        "fatigue"
+      ],
+      "n_lupus_overlap_ae": 1,
+      "lupus_overlap_ae": [
+        "fatigue"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Many SS therapies are off-label or investigational and have evolving safety evidence."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Infection and mood monitoring; investigational SS evidence should be reviewed.",
+      "n_severe_ae": 3
+    },
+    {
+      "drug_id": "rituximab_ss",
+      "drug_name": "Rituximab (Rituxan)",
+      "disease_id": "ss",
+      "disease_symptom_overlap_score": 8.0,
+      "disease_overlap_score": 8.0,
+      "lupus_symptom_overlap_score": 8.0,
+      "severity_burden_score": 4.0,
+      "chronic_use_safety_score": 6.0,
+      "disease_specific_risk_score": 10.0,
+      "dil_risk_score": 10.0,
+      "composite_safety_score": 6.5,
+      "n_disease_overlap_ae": 2,
+      "disease_overlap_ae": [
+        "fatigue",
+        "dry mouth"
+      ],
+      "n_lupus_overlap_ae": 2,
+      "lupus_overlap_ae": [
+        "fatigue",
+        "dry mouth"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Many SS therapies are off-label or investigational and have evolving safety evidence."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Hepatitis B screening, CBC, immunoglobulins, and infection monitoring.",
+      "n_severe_ae": 3
+    },
+    {
+      "drug_id": "ianalumab",
+      "drug_name": "Ianalumab (VAY736)",
+      "disease_id": "ss",
+      "disease_symptom_overlap_score": 4.0,
+      "disease_overlap_score": 4.0,
+      "lupus_symptom_overlap_score": 4.0,
+      "severity_burden_score": 5.0,
+      "chronic_use_safety_score": 5.0,
+      "disease_specific_risk_score": 10.0,
+      "dil_risk_score": 10.0,
+      "composite_safety_score": 5.15,
+      "n_disease_overlap_ae": 4,
+      "disease_overlap_ae": [
+        "fatigue",
+        "dry mouth",
+        "dry eyes",
+        "joint pain"
+      ],
+      "n_lupus_overlap_ae": 4,
+      "lupus_overlap_ae": [
+        "fatigue",
+        "dry mouth",
+        "dry eyes",
+        "joint pain"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Many SS therapies are off-label or investigational and have evolving safety evidence."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Review infection risk, blood counts, organ involvement, and product-specific monitoring.",
+      "n_severe_ae": 3
+    },
+    {
+      "drug_id": "iscalimab",
+      "drug_name": "Iscalimab (CFZ533)",
+      "disease_id": "ss",
+      "disease_symptom_overlap_score": 4.0,
+      "disease_overlap_score": 4.0,
+      "lupus_symptom_overlap_score": 4.0,
+      "severity_burden_score": 5.0,
+      "chronic_use_safety_score": 5.0,
+      "disease_specific_risk_score": 10.0,
+      "dil_risk_score": 10.0,
+      "composite_safety_score": 5.15,
+      "n_disease_overlap_ae": 4,
+      "disease_overlap_ae": [
+        "fatigue",
+        "dry mouth",
+        "dry eyes",
+        "joint pain"
+      ],
+      "n_lupus_overlap_ae": 4,
+      "lupus_overlap_ae": [
+        "fatigue",
+        "dry mouth",
+        "dry eyes",
+        "joint pain"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Many SS therapies are off-label or investigational and have evolving safety evidence."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Review infection risk, blood counts, organ involvement, and product-specific monitoring.",
+      "n_severe_ae": 3
+    },
+    {
+      "drug_id": "abatacept",
+      "drug_name": "Abatacept (Orencia)",
+      "disease_id": "ss",
+      "disease_symptom_overlap_score": 4.0,
+      "disease_overlap_score": 4.0,
+      "lupus_symptom_overlap_score": 4.0,
+      "severity_burden_score": 5.0,
+      "chronic_use_safety_score": 5.0,
+      "disease_specific_risk_score": 10.0,
+      "dil_risk_score": 10.0,
+      "composite_safety_score": 5.15,
+      "n_disease_overlap_ae": 4,
+      "disease_overlap_ae": [
+        "fatigue",
+        "dry mouth",
+        "dry eyes",
+        "joint pain"
+      ],
+      "n_lupus_overlap_ae": 4,
+      "lupus_overlap_ae": [
+        "fatigue",
+        "dry mouth",
+        "dry eyes",
+        "joint pain"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Many SS therapies are off-label or investigational and have evolving safety evidence."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Review infection risk, blood counts, organ involvement, and product-specific monitoring.",
+      "n_severe_ae": 3
+    },
+    {
+      "drug_id": "leflunomide",
+      "drug_name": "Leflunomide (Arava)",
+      "disease_id": "ss",
+      "disease_symptom_overlap_score": 4.0,
+      "disease_overlap_score": 4.0,
+      "lupus_symptom_overlap_score": 4.0,
+      "severity_burden_score": 5.0,
+      "chronic_use_safety_score": 5.0,
+      "disease_specific_risk_score": 10.0,
+      "dil_risk_score": 10.0,
+      "composite_safety_score": 5.15,
+      "n_disease_overlap_ae": 4,
+      "disease_overlap_ae": [
+        "fatigue",
+        "dry mouth",
+        "dry eyes",
+        "joint pain"
+      ],
+      "n_lupus_overlap_ae": 4,
+      "lupus_overlap_ae": [
+        "fatigue",
+        "dry mouth",
+        "dry eyes",
+        "joint pain"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Many SS therapies are off-label or investigational and have evolving safety evidence."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Review infection risk, blood counts, organ involvement, and product-specific monitoring.",
+      "n_severe_ae": 3
+    },
+    {
+      "drug_id": "mycophenolate",
+      "drug_name": "Mycophenolate Mofetil (CellCept)",
+      "disease_id": "ss",
+      "disease_symptom_overlap_score": 4.0,
+      "disease_overlap_score": 4.0,
+      "lupus_symptom_overlap_score": 4.0,
+      "severity_burden_score": 5.0,
+      "chronic_use_safety_score": 5.0,
+      "disease_specific_risk_score": 10.0,
+      "dil_risk_score": 10.0,
+      "composite_safety_score": 5.15,
+      "n_disease_overlap_ae": 4,
+      "disease_overlap_ae": [
+        "fatigue",
+        "dry mouth",
+        "dry eyes",
+        "joint pain"
+      ],
+      "n_lupus_overlap_ae": 4,
+      "lupus_overlap_ae": [
+        "fatigue",
+        "dry mouth",
+        "dry eyes",
+        "joint pain"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Many SS therapies are off-label or investigational and have evolving safety evidence."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Review infection risk, blood counts, organ involvement, and product-specific monitoring.",
+      "n_severe_ae": 3
+    },
+    {
+      "drug_id": "prednisone_ss",
+      "drug_name": "Prednisone",
+      "disease_id": "ss",
+      "disease_symptom_overlap_score": 4.0,
+      "disease_overlap_score": 4.0,
+      "lupus_symptom_overlap_score": 4.0,
+      "severity_burden_score": 5.0,
+      "chronic_use_safety_score": 5.0,
+      "disease_specific_risk_score": 10.0,
+      "dil_risk_score": 10.0,
+      "composite_safety_score": 5.15,
+      "n_disease_overlap_ae": 4,
+      "disease_overlap_ae": [
+        "fatigue",
+        "dry mouth",
+        "dry eyes",
+        "joint pain"
+      ],
+      "n_lupus_overlap_ae": 4,
+      "lupus_overlap_ae": [
+        "fatigue",
+        "dry mouth",
+        "dry eyes",
+        "joint pain"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Many SS therapies are off-label or investigational and have evolving safety evidence."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Review infection risk, blood counts, organ involvement, and product-specific monitoring.",
+      "n_severe_ae": 3
+    },
+    {
+      "drug_id": "cyclosporine_eye",
+      "drug_name": "Cyclosporine Ophthalmic (Restasis)",
+      "disease_id": "ss",
+      "disease_symptom_overlap_score": 4.0,
+      "disease_overlap_score": 4.0,
+      "lupus_symptom_overlap_score": 4.0,
+      "severity_burden_score": 5.0,
+      "chronic_use_safety_score": 5.0,
+      "disease_specific_risk_score": 10.0,
+      "dil_risk_score": 10.0,
+      "composite_safety_score": 5.15,
+      "n_disease_overlap_ae": 4,
+      "disease_overlap_ae": [
+        "fatigue",
+        "dry mouth",
+        "dry eyes",
+        "joint pain"
+      ],
+      "n_lupus_overlap_ae": 4,
+      "lupus_overlap_ae": [
+        "fatigue",
+        "dry mouth",
+        "dry eyes",
+        "joint pain"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Many SS therapies are off-label or investigational and have evolving safety evidence."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Review infection risk, blood counts, organ involvement, and product-specific monitoring.",
+      "n_severe_ae": 3
+    },
+    {
+      "drug_id": "baricitinib",
+      "drug_name": "Baricitinib (Olumiant)",
+      "disease_id": "ss",
+      "disease_symptom_overlap_score": 4.0,
+      "disease_overlap_score": 4.0,
+      "lupus_symptom_overlap_score": 4.0,
+      "severity_burden_score": 5.0,
+      "chronic_use_safety_score": 5.0,
+      "disease_specific_risk_score": 10.0,
+      "dil_risk_score": 10.0,
+      "composite_safety_score": 5.15,
+      "n_disease_overlap_ae": 4,
+      "disease_overlap_ae": [
+        "fatigue",
+        "dry mouth",
+        "dry eyes",
+        "joint pain"
+      ],
+      "n_lupus_overlap_ae": 4,
+      "lupus_overlap_ae": [
+        "fatigue",
+        "dry mouth",
+        "dry eyes",
+        "joint pain"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Many SS therapies are off-label or investigational and have evolving safety evidence."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Review infection risk, blood counts, organ involvement, and product-specific monitoring.",
+      "n_severe_ae": 3
+    },
+    {
+      "drug_id": "tofacitinib",
+      "drug_name": "Tofacitinib (Xeljanz)",
+      "disease_id": "ss",
+      "disease_symptom_overlap_score": 4.0,
+      "disease_overlap_score": 4.0,
+      "lupus_symptom_overlap_score": 4.0,
+      "severity_burden_score": 5.0,
+      "chronic_use_safety_score": 5.0,
+      "disease_specific_risk_score": 10.0,
+      "dil_risk_score": 10.0,
+      "composite_safety_score": 5.15,
+      "n_disease_overlap_ae": 4,
+      "disease_overlap_ae": [
+        "fatigue",
+        "dry mouth",
+        "dry eyes",
+        "joint pain"
+      ],
+      "n_lupus_overlap_ae": 4,
+      "lupus_overlap_ae": [
+        "fatigue",
+        "dry mouth",
+        "dry eyes",
+        "joint pain"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Many SS therapies are off-label or investigational and have evolving safety evidence."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Review infection risk, blood counts, organ involvement, and product-specific monitoring.",
+      "n_severe_ae": 3
+    },
+    {
+      "drug_id": "deucravacitinib",
+      "drug_name": "Deucravacitinib (Sotyktu)",
+      "disease_id": "ss",
+      "disease_symptom_overlap_score": 4.0,
+      "disease_overlap_score": 4.0,
+      "lupus_symptom_overlap_score": 4.0,
+      "severity_burden_score": 5.0,
+      "chronic_use_safety_score": 5.0,
+      "disease_specific_risk_score": 10.0,
+      "dil_risk_score": 10.0,
+      "composite_safety_score": 5.15,
+      "n_disease_overlap_ae": 4,
+      "disease_overlap_ae": [
+        "fatigue",
+        "dry mouth",
+        "dry eyes",
+        "joint pain"
+      ],
+      "n_lupus_overlap_ae": 4,
+      "lupus_overlap_ae": [
+        "fatigue",
+        "dry mouth",
+        "dry eyes",
+        "joint pain"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Many SS therapies are off-label or investigational and have evolving safety evidence."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Review infection risk, blood counts, organ involvement, and product-specific monitoring.",
+      "n_severe_ae": 3
+    },
+    {
+      "drug_id": "efgartigimod",
+      "drug_name": "Efgartigimod (Vyvgart)",
+      "disease_id": "ss",
+      "disease_symptom_overlap_score": 4.0,
+      "disease_overlap_score": 4.0,
+      "lupus_symptom_overlap_score": 4.0,
+      "severity_burden_score": 5.0,
+      "chronic_use_safety_score": 5.0,
+      "disease_specific_risk_score": 10.0,
+      "dil_risk_score": 10.0,
+      "composite_safety_score": 5.15,
+      "n_disease_overlap_ae": 4,
+      "disease_overlap_ae": [
+        "fatigue",
+        "dry mouth",
+        "dry eyes",
+        "joint pain"
+      ],
+      "n_lupus_overlap_ae": 4,
+      "lupus_overlap_ae": [
+        "fatigue",
+        "dry mouth",
+        "dry eyes",
+        "joint pain"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Many SS therapies are off-label or investigational and have evolving safety evidence."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Review infection risk, blood counts, organ involvement, and product-specific monitoring.",
+      "n_severe_ae": 3
+    },
+    {
+      "drug_id": "dazodalibep",
+      "drug_name": "Dazodalibep",
+      "disease_id": "ss",
+      "disease_symptom_overlap_score": 4.0,
+      "disease_overlap_score": 4.0,
+      "lupus_symptom_overlap_score": 4.0,
+      "severity_burden_score": 5.0,
+      "chronic_use_safety_score": 5.0,
+      "disease_specific_risk_score": 10.0,
+      "dil_risk_score": 10.0,
+      "composite_safety_score": 5.15,
+      "n_disease_overlap_ae": 4,
+      "disease_overlap_ae": [
+        "fatigue",
+        "dry mouth",
+        "dry eyes",
+        "joint pain"
+      ],
+      "n_lupus_overlap_ae": 4,
+      "lupus_overlap_ae": [
+        "fatigue",
+        "dry mouth",
+        "dry eyes",
+        "joint pain"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Many SS therapies are off-label or investigational and have evolving safety evidence."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Review infection risk, blood counts, organ involvement, and product-specific monitoring.",
+      "n_severe_ae": 3
+    },
+    {
+      "drug_id": "secukinumab",
+      "drug_name": "Secukinumab (Cosentyx)",
+      "disease_id": "ss",
+      "disease_symptom_overlap_score": 4.0,
+      "disease_overlap_score": 4.0,
+      "lupus_symptom_overlap_score": 4.0,
+      "severity_burden_score": 5.0,
+      "chronic_use_safety_score": 5.0,
+      "disease_specific_risk_score": 10.0,
+      "dil_risk_score": 10.0,
+      "composite_safety_score": 5.15,
+      "n_disease_overlap_ae": 4,
+      "disease_overlap_ae": [
+        "fatigue",
+        "dry mouth",
+        "dry eyes",
+        "joint pain"
+      ],
+      "n_lupus_overlap_ae": 4,
+      "lupus_overlap_ae": [
+        "fatigue",
+        "dry mouth",
+        "dry eyes",
+        "joint pain"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Many SS therapies are off-label or investigational and have evolving safety evidence."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Review infection risk, blood counts, organ involvement, and product-specific monitoring.",
+      "n_severe_ae": 3
+    },
+    {
+      "drug_id": "cevimeline",
+      "drug_name": "Cevimeline (Evoxac)",
+      "disease_id": "ss",
+      "disease_symptom_overlap_score": 4.0,
+      "disease_overlap_score": 4.0,
+      "lupus_symptom_overlap_score": 4.0,
+      "severity_burden_score": 5.0,
+      "chronic_use_safety_score": 5.0,
+      "disease_specific_risk_score": 7.5,
+      "dil_risk_score": 7.5,
+      "composite_safety_score": 4.9,
+      "n_disease_overlap_ae": 4,
+      "disease_overlap_ae": [
+        "fatigue",
+        "dry mouth",
+        "dry eyes",
+        "joint pain"
+      ],
+      "n_lupus_overlap_ae": 4,
+      "lupus_overlap_ae": [
+        "fatigue",
+        "dry mouth",
+        "dry eyes",
+        "joint pain"
+      ],
+      "evidence_grade": "curated_class_pattern",
+      "profile_source": "disease_drug_safety_profile",
+      "profile_curated_inputs": [
+        "disease_drug_catalog",
+        "class_level_adverse_event_patterns"
+      ],
+      "profile_inferred_inputs": [
+        "class_level_mapping_for_unmatched_drugs"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Many SS therapies are off-label or investigational and have evolving safety evidence."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Review infection risk, blood counts, organ involvement, and product-specific monitoring.",
+      "n_severe_ae": 3
+    }
+  ]
+}

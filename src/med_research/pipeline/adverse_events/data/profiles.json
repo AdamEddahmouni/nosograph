@@ -29,7 +29,27 @@
       "chronic_use_safety": 8,
       "dil_risk": 0,
       "black_box_warnings": [],
-      "monitoring_required": "Infection monitoring; no routine lab monitoring required"
+      "monitoring_required": "Infection monitoring; no routine lab monitoring required",
+      "disease_id": "sle",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
+      ],
+      "disease_overlap_ae": [
+        "depression",
+        "pyrexia"
+      ],
+      "disease_specific_risk": 0,
+      "evidence_grade": "inferred_class_default"
     },
     {
       "drug_id": "anifrolumab",
@@ -54,7 +74,26 @@
       "chronic_use_safety": 8,
       "dil_risk": 0,
       "black_box_warnings": [],
-      "monitoring_required": "Infection monitoring; herpes zoster risk counseling"
+      "monitoring_required": "Infection monitoring; herpes zoster risk counseling",
+      "disease_id": "sle",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
+      ],
+      "disease_overlap_ae": [
+        "cough"
+      ],
+      "disease_specific_risk": 0,
+      "evidence_grade": "inferred_class_default"
     },
     {
       "drug_id": "voclosporin",
@@ -88,7 +127,27 @@
         "Increased risk of serious infections",
         "Increased risk of malignancy (lymphoma, skin cancer)"
       ],
-      "monitoring_required": "Renal function (eGFR), blood pressure, drug levels, CBC"
+      "monitoring_required": "Renal function (eGFR), blood pressure, drug levels, CBC",
+      "disease_id": "sle",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
+      ],
+      "disease_overlap_ae": [
+        "anemia",
+        "headache"
+      ],
+      "disease_specific_risk": 0,
+      "evidence_grade": "inferred_class_default"
     },
     {
       "drug_id": "hydroxychloroquine",
@@ -114,7 +173,26 @@
       "chronic_use_safety": 9,
       "dil_risk": 0,
       "black_box_warnings": [],
-      "monitoring_required": "Annual retinal screening after 5 years; baseline ophthalmologic exam"
+      "monitoring_required": "Annual retinal screening after 5 years; baseline ophthalmologic exam",
+      "disease_id": "sle",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
+      ],
+      "disease_overlap_ae": [
+        "rash"
+      ],
+      "disease_specific_risk": 0,
+      "evidence_grade": "inferred_class_default"
     },
     {
       "drug_id": "mycophenolate",
@@ -149,7 +227,28 @@
         "Increased risk of serious infections",
         "Increased risk of lymphoma"
       ],
-      "monitoring_required": "CBC, pregnancy testing, infection monitoring"
+      "monitoring_required": "CBC, pregnancy testing, infection monitoring",
+      "disease_id": "sle",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
+      ],
+      "disease_overlap_ae": [
+        "leukopenia",
+        "anemia",
+        "thrombocytopenia"
+      ],
+      "disease_specific_risk": 0,
+      "evidence_grade": "inferred_class_default"
     },
     {
       "drug_id": "cyclophosphamide",
@@ -186,7 +285,27 @@
         "Secondary malignancies",
         "Fetal harm"
       ],
-      "monitoring_required": "CBC, urinalysis, renal/hepatic function, fertility counseling"
+      "monitoring_required": "CBC, urinalysis, renal/hepatic function, fertility counseling",
+      "disease_id": "sle",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
+      ],
+      "disease_overlap_ae": [
+        "alopecia",
+        "leukopenia"
+      ],
+      "disease_specific_risk": 1,
+      "evidence_grade": "inferred_class_default"
     },
     {
       "drug_id": "rituximab",
@@ -223,7 +342,28 @@
         "Hepatitis B reactivation",
         "Progressive multifocal leukoencephalopathy"
       ],
-      "monitoring_required": "Hepatitis B/C screening, CBC, cardiac monitoring during infusion"
+      "monitoring_required": "Hepatitis B/C screening, CBC, cardiac monitoring during infusion",
+      "disease_id": "sle",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
+      ],
+      "disease_overlap_ae": [
+        "pyrexia",
+        "rash",
+        "headache"
+      ],
+      "disease_specific_risk": 1,
+      "evidence_grade": "inferred_class_default"
     },
     {
       "drug_id": "prednisone",
@@ -260,7 +400,27 @@
       "chronic_use_safety": 2,
       "dil_risk": 0,
       "black_box_warnings": [],
-      "monitoring_required": "Blood pressure, glucose, bone density, ophthalmologic exam"
+      "monitoring_required": "Blood pressure, glucose, bone density, ophthalmologic exam",
+      "disease_id": "sle",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
+      ],
+      "disease_overlap_ae": [
+        "mood changes",
+        "psychosis"
+      ],
+      "disease_specific_risk": 0,
+      "evidence_grade": "inferred_class_default"
     },
     {
       "drug_id": "tacrolimus",
@@ -296,7 +456,27 @@
         "Increased risk of malignancy (lymphoma, skin cancer)",
         "Increased risk of serious infections"
       ],
-      "monitoring_required": "Renal function, drug levels, blood pressure, glucose, CBC"
+      "monitoring_required": "Renal function, drug levels, blood pressure, glucose, CBC",
+      "disease_id": "sle",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
+      ],
+      "disease_overlap_ae": [
+        "headache",
+        "renal dysfunction"
+      ],
+      "disease_specific_risk": 0,
+      "evidence_grade": "inferred_class_default"
     },
     {
       "drug_id": "azathioprine",
@@ -327,7 +507,26 @@
         "Increased risk of malignancy",
         "TPMT deficiency can cause severe myelotoxicity"
       ],
-      "monitoring_required": "TPMT testing pre-initiation, CBC, LFTs, pregnancy testing"
+      "monitoring_required": "TPMT testing pre-initiation, CBC, LFTs, pregnancy testing",
+      "disease_id": "sle",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
+      ],
+      "disease_overlap_ae": [
+        "leukopenia"
+      ],
+      "disease_specific_risk": 1,
+      "evidence_grade": "inferred_class_default"
     },
     {
       "drug_id": "baricitinib",
@@ -356,7 +555,24 @@
         "Risk of serious infections",
         "Increased mortality in RA patients >50 with CV risk factors"
       ],
-      "monitoring_required": "CBC, LFTs, lipids, TB screening, viral hepatitis screening"
+      "monitoring_required": "CBC, LFTs, lipids, TB screening, viral hepatitis screening",
+      "disease_id": "sle",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
+      ],
+      "disease_overlap_ae": [],
+      "disease_specific_risk": 0,
+      "evidence_grade": "inferred_class_default"
     },
     {
       "drug_id": "obinutuzumab",
@@ -389,7 +605,28 @@
         "Hepatitis B reactivation",
         "Progressive multifocal leukoencephalopathy"
       ],
-      "monitoring_required": "CBC, hepatitis B/C screening, infection monitoring"
+      "monitoring_required": "CBC, hepatitis B/C screening, infection monitoring",
+      "disease_id": "sle",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
+      ],
+      "disease_overlap_ae": [
+        "neutropenia",
+        "thrombocytopenia",
+        "pyrexia"
+      ],
+      "disease_specific_risk": 0,
+      "evidence_grade": "inferred_class_default"
     },
     {
       "drug_id": "acalabrutinib",
@@ -420,7 +657,29 @@
       "chronic_use_safety": 6,
       "dil_risk": 0,
       "black_box_warnings": [],
-      "monitoring_required": "CBC, cardiac monitoring (atrial fibrillation), bleeding risk assessment"
+      "monitoring_required": "CBC, cardiac monitoring (atrial fibrillation), bleeding risk assessment",
+      "disease_id": "sle",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
+      ],
+      "disease_overlap_ae": [
+        "fatigue",
+        "rash",
+        "headache",
+        "myalgia"
+      ],
+      "disease_specific_risk": 0,
+      "evidence_grade": "inferred_class_default"
     },
     {
       "drug_id": "avacopan",
@@ -448,7 +707,27 @@
       "chronic_use_safety": 6,
       "dil_risk": 0,
       "black_box_warnings": [],
-      "monitoring_required": "LFTs (hepatotoxicity monitoring), infection monitoring"
+      "monitoring_required": "LFTs (hepatotoxicity monitoring), infection monitoring",
+      "disease_id": "sle",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
+      ],
+      "disease_overlap_ae": [
+        "headache",
+        "rash"
+      ],
+      "disease_specific_risk": 0,
+      "evidence_grade": "inferred_class_default"
     },
     {
       "drug_id": "cyclosporine",
@@ -483,7 +762,26 @@
         "Increased risk of malignancy",
         "Increased risk of serious infections"
       ],
-      "monitoring_required": "Renal function, blood pressure, drug levels, lipids, CBC"
+      "monitoring_required": "Renal function, blood pressure, drug levels, lipids, CBC",
+      "disease_id": "sle",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
+      ],
+      "disease_overlap_ae": [
+        "renal dysfunction"
+      ],
+      "disease_specific_risk": 0,
+      "evidence_grade": "inferred_class_default"
     },
     {
       "drug_id": "dimethyl_fumarate",
@@ -510,7 +808,26 @@
       "chronic_use_safety": 7,
       "dil_risk": 0,
       "black_box_warnings": [],
-      "monitoring_required": "CBC (lymphocyte counts), LFTs"
+      "monitoring_required": "CBC (lymphocyte counts), LFTs",
+      "disease_id": "sle",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
+      ],
+      "disease_overlap_ae": [
+        "rash"
+      ],
+      "disease_specific_risk": 0,
+      "evidence_grade": "inferred_class_default"
     },
     {
       "drug_id": "iscalimab",
@@ -533,7 +850,26 @@
       "chronic_use_safety": 7,
       "dil_risk": 0,
       "black_box_warnings": [],
-      "monitoring_required": "Infection monitoring; investigational safety profile evolving"
+      "monitoring_required": "Infection monitoring; investigational safety profile evolving",
+      "disease_id": "sle",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
+      ],
+      "disease_overlap_ae": [
+        "headache"
+      ],
+      "disease_specific_risk": 0,
+      "evidence_grade": "inferred_class_default"
     },
     {
       "drug_id": "ravulizumab",
@@ -560,7 +896,27 @@
       "black_box_warnings": [
         "Risk of serious and life-threatening meningococcal infections"
       ],
-      "monitoring_required": "Meningococcal vaccination required pre-treatment; infection monitoring"
+      "monitoring_required": "Meningococcal vaccination required pre-treatment; infection monitoring",
+      "disease_id": "sle",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
+      ],
+      "disease_overlap_ae": [
+        "headache",
+        "pyrexia"
+      ],
+      "disease_specific_risk": 0,
+      "evidence_grade": "inferred_class_default"
     },
     {
       "drug_id": "rozanolixizumab",
@@ -585,7 +941,27 @@
       "chronic_use_safety": 7,
       "dil_risk": 0,
       "black_box_warnings": [],
-      "monitoring_required": "Infection monitoring; IgG levels"
+      "monitoring_required": "Infection monitoring; IgG levels",
+      "disease_id": "sle",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
+      ],
+      "disease_overlap_ae": [
+        "headache",
+        "pyrexia"
+      ],
+      "disease_specific_risk": 0,
+      "evidence_grade": "inferred_class_default"
     },
     {
       "drug_id": "tofacitinib",
@@ -618,7 +994,26 @@
         "Risk of serious infections",
         "Increased risk of mortality, thrombosis, and malignancy (RA patients)"
       ],
-      "monitoring_required": "CBC, LFTs, lipids, TB screening, viral hepatitis screening"
+      "monitoring_required": "CBC, LFTs, lipids, TB screening, viral hepatitis screening",
+      "disease_id": "sle",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
+      ],
+      "disease_overlap_ae": [
+        "headache"
+      ],
+      "disease_specific_risk": 0,
+      "evidence_grade": "inferred_class_default"
     },
     {
       "drug_id": "deucravacitinib",
@@ -644,7 +1039,26 @@
       "chronic_use_safety": 7,
       "dil_risk": 0,
       "black_box_warnings": [],
-      "monitoring_required": "Infection monitoring, TB screening, viral hepatitis screening"
+      "monitoring_required": "Infection monitoring, TB screening, viral hepatitis screening",
+      "disease_id": "sle",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
+      ],
+      "disease_overlap_ae": [
+        "headache"
+      ],
+      "disease_specific_risk": 0,
+      "evidence_grade": "inferred_class_default"
     },
     {
       "drug_id": "dapirolizumab_pegol",
@@ -667,7 +1081,26 @@
       "chronic_use_safety": 7,
       "dil_risk": 0,
       "black_box_warnings": [],
-      "monitoring_required": "Infection monitoring; investigational safety profile evolving"
+      "monitoring_required": "Infection monitoring; investigational safety profile evolving",
+      "disease_id": "sle",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
+      ],
+      "disease_overlap_ae": [
+        "headache"
+      ],
+      "disease_specific_risk": 0,
+      "evidence_grade": "inferred_class_default"
     },
     {
       "drug_id": "litifilimab",
@@ -689,7 +1122,26 @@
       "chronic_use_safety": 7,
       "dil_risk": 0,
       "black_box_warnings": [],
-      "monitoring_required": "Infection monitoring; investigational safety profile evolving"
+      "monitoring_required": "Infection monitoring; investigational safety profile evolving",
+      "disease_id": "sle",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
+      ],
+      "disease_overlap_ae": [
+        "headache"
+      ],
+      "disease_specific_risk": 0,
+      "evidence_grade": "inferred_class_default"
     },
     {
       "drug_id": "iberdomide",
@@ -723,7 +1175,29 @@
         "Fetal harm (contraindicated in pregnancy)",
         "Venous/arterial thromboembolism risk"
       ],
-      "monitoring_required": "CBC, pregnancy testing, thrombosis risk assessment"
+      "monitoring_required": "CBC, pregnancy testing, thrombosis risk assessment",
+      "disease_id": "sle",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
+      ],
+      "disease_overlap_ae": [
+        "neutropenia",
+        "thrombocytopenia",
+        "anemia",
+        "fatigue"
+      ],
+      "disease_specific_risk": 0,
+      "evidence_grade": "inferred_class_default"
     },
     {
       "drug_id": "teclistamab",
@@ -759,7 +1233,30 @@
         "Cytokine release syndrome",
         "Neurologic toxicity including ICANS"
       ],
-      "monitoring_required": "Hospitalization for initial doses; CBC; infection monitoring; immunoglobulin levels"
+      "monitoring_required": "Hospitalization for initial doses; CBC; infection monitoring; immunoglobulin levels",
+      "disease_id": "sle",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
+      ],
+      "disease_overlap_ae": [
+        "neutropenia",
+        "anemia",
+        "thrombocytopenia",
+        "fatigue",
+        "pyrexia"
+      ],
+      "disease_specific_risk": 0,
+      "evidence_grade": "inferred_class_default"
     },
     {
       "drug_id": "anti_cd19_cart",
@@ -796,7 +1293,28 @@
         "Neurologic toxicities",
         "Secondary malignancies"
       ],
-      "monitoring_required": "Hospitalization required; CBC; infection monitoring; immunoglobulin replacement"
+      "monitoring_required": "Hospitalization required; CBC; infection monitoring; immunoglobulin replacement",
+      "disease_id": "sle",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
+      ],
+      "disease_overlap_ae": [
+        "neurotoxicity",
+        "fatigue",
+        "pyrexia"
+      ],
+      "disease_specific_risk": 0,
+      "evidence_grade": "inferred_class_default"
     }
   ]
 }

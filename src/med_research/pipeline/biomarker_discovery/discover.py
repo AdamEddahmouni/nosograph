@@ -32,6 +32,17 @@ if sys.platform == "win32":
 
 DATA_DIR = Path(__file__).parent / "data"
 
+# Module data dirs resolved from package layout (not CWD), so this works
+# regardless of where the process is launched from.
+_PIPELINE_ROOT = Path(__file__).parent.parent
+_MODULE_DATA_DIRS = {
+    "expression": _PIPELINE_ROOT / "gene_expression" / "data",
+    "cart": _PIPELINE_ROOT / "car_t_predictor" / "data",
+    "repurpose": _PIPELINE_ROOT / "drug_repurposing" / "data",
+    "safety": _PIPELINE_ROOT / "adverse_events" / "data",
+    "synergy": _PIPELINE_ROOT / "drug_synergy" / "data",
+}
+
 
 def load_json(path: Path) -> dict:
     with open(path, "r", encoding="utf-8") as f:
@@ -41,41 +52,58 @@ def load_json(path: Path) -> dict:
 # ── Load All Module Results ──────────────────────────────────────────────
 
 
-def load_all_modules() -> dict:
-    """Load results from all 5 scoring modules. Returns dict keyed by module name."""
+def _module_output_path(module: str, filename: str, disease_id: str = "sle") -> Path:
+    """Resolve a module's output file for a disease.
+
+    Prefers a per-disease file (expression_correlations_ra.json) when present;
+    otherwise falls back to the shared file, which reflects the most recent
+    pipeline run for whatever disease it was executed against.
+    """
+    data_dir = _MODULE_DATA_DIRS.get(module, DATA_DIR)
+    per_disease = data_dir / f"{Path(filename).stem}_{disease_id}.json"
+    if per_disease.exists():
+        return per_disease
+    return data_dir / filename
+
+
+def load_all_modules(disease_id: str = "sle") -> dict:
+    """Load results from all 5 scoring modules for a disease.
+
+    Returns dict keyed by module name.
+    """
     results = {}
 
     # Gene Expression Correlation
     try:
-        data = load_json(Path("gene_expression/data/expression_correlations.json"))
+        data = load_json(_module_output_path("expression", "expression_correlations.json", disease_id))
         results["expression"] = {d["drug_id"]: d for d in data.get("drugs", [])}
     except (FileNotFoundError, KeyError):
         pass
 
     # CAR-T Response Predictor
     try:
-        data = load_json(Path("car_t_predictor/data/car_t_scores.json"))
+        data = load_json(_module_output_path("cart", "car_t_scores.json", disease_id))
         results["cart"] = {g["gene_id"]: g for g in data.get("genes", [])}
     except (FileNotFoundError, KeyError):
         pass
 
     # Drug Repurposing candidates
     try:
-        data = load_json(Path("drug_repurposing/data/candidates.json"))
+        data = load_json(_module_output_path("repurpose", "candidates.json", disease_id))
         results["repurpose"] = data.get("repurposing_candidates", [])
     except (FileNotFoundError, KeyError):
         pass
 
     # Adverse Events
     try:
-        data = load_json(Path("adverse_events/data/profiles.json"))
+        data = load_json(_module_output_path("safety", "profiles.json", disease_id))
         results["safety"] = data
     except (FileNotFoundError, KeyError, json.JSONDecodeError):
         results["safety"] = {}
 
     # Drug Synergy
     try:
-        data = load_json(Path("drug_synergy/data/synergy_results.json"))
+        data = load_json(_module_output_path("synergy", "synergy_results.json", disease_id))
         results["synergy"] = data.get("pairs", [])
     except (FileNotFoundError, KeyError):
         pass
@@ -86,22 +114,22 @@ def load_all_modules() -> dict:
 # ── Gene → Module Score Mapping ─────────────────────────────────────────
 
 
-_GENE_DRUG_TARGET_CACHE: dict | None = None
+_GENE_DRUG_TARGET_CACHE: dict = {}
 
 
-def _build_gene_drug_target_map() -> dict:
-    """Build gene_id → [drug_id, ...] map from KG TARGETS relationships.
+def _build_gene_drug_target_map(disease_id: str = "sle") -> dict:
+    """Build gene_id → [drug_id, ...] map from a disease's KG TARGETS relationships.
 
-    Result is memoized in a module-level cache since the relationships
-    file doesn't change during a single process lifetime.
+    Result is memoized per disease in a module-level cache since the
+    relationships file doesn't change during a single process lifetime.
     """
     global _GENE_DRUG_TARGET_CACHE
-    if _GENE_DRUG_TARGET_CACHE is not None:
-        return _GENE_DRUG_TARGET_CACHE
+    if disease_id in _GENE_DRUG_TARGET_CACHE:
+        return _GENE_DRUG_TARGET_CACHE[disease_id]
 
     gene_to_drugs: dict = {}
     try:
-        rel_data = load_relationships()
+        rel_data = load_relationships(disease_id)
         for rel in rel_data.get("relationships", []):
             if rel.get("type") == "TARGETS":
                 gene_id = rel["target"]
@@ -112,18 +140,18 @@ def _build_gene_drug_target_map() -> dict:
     except (FileNotFoundError, KeyError, json.JSONDecodeError):
         pass
 
-    _GENE_DRUG_TARGET_CACHE = gene_to_drugs
+    _GENE_DRUG_TARGET_CACHE[disease_id] = gene_to_drugs
     return gene_to_drugs
 
 
-def map_gene_to_modules(genes: dict, module_data: dict) -> list:
+def map_gene_to_modules(genes: dict, module_data: dict, disease_id: str = "sle") -> list:
     """Build a cross-module score matrix for each gene.
 
     For each gene, collects scores from all available modules and
     computes cross-module correlation metrics.
     """
     # Build gene → drug target mapping from KG relationships
-    gene_to_drugs = _build_gene_drug_target_map()
+    gene_to_drugs = _build_gene_drug_target_map(disease_id)
 
     matrix = []
 
@@ -256,13 +284,21 @@ def _assign_tier(score: float) -> str:
     return "🟢 Tier 4 — Investigational"
 
 
-def compute_biomarker_matrix(progress_callback=None) -> list:
-    """Full pipeline: load modules, map genes, score biomarkers."""
+def compute_biomarker_matrix(progress_callback=None, disease_id: str = "sle", save: bool = True) -> list:
+    """Full pipeline: load modules, map genes, score biomarkers.
+
+    Args:
+        progress_callback: Optional callable(percent, message) for progress.
+        disease_id: Disease whose KG genes and module outputs are used.
+        save: When False, compute in memory without writing the shared
+            biomarker_matrix.json (used by the comparative cross-disease run
+            so per-disease scoring doesn't clobber the last-run results).
+    """
     cb = progress_callback or (lambda p, m: None)
 
     cb(0, "Loading knowledge graph genes...")
     from med_research.pipeline.knowledge_graph.builder import build_graph
-    G = build_graph()
+    G = build_graph(disease_id)
     genes = {}
     for node, data in G.nodes(data=True):
         if data.get("type") == "gene":
@@ -271,24 +307,26 @@ def compute_biomarker_matrix(progress_callback=None) -> list:
     cb(15, f"Loaded {len(genes)} genes")
 
     cb(20, "Loading module results...")
-    module_data = load_all_modules()
+    module_data = load_all_modules(disease_id)
 
     cb(40, "Building cross-module matrix...")
-    matrix = map_gene_to_modules(genes, module_data)
+    matrix = map_gene_to_modules(genes, module_data, disease_id)
 
     cb(60, f"Scoring {len(matrix)} biomarkers...")
     results = [score_biomarker(row) for row in matrix]
     results.sort(key=lambda x: x["composite_score"], reverse=True)
 
-    cb(95, "Saving results...")
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
-    output_path = DATA_DIR / "biomarker_matrix.json"
-    output_path.write_text(json.dumps({
-        "biomarkers": results,
-        "total_genes": len(results),
-    }, indent=2), encoding="utf-8")
-
-    cb(100, f"Results saved to {output_path}")
+    if save:
+        cb(95, "Saving results...")
+        DATA_DIR.mkdir(parents=True, exist_ok=True)
+        output_path = DATA_DIR / "biomarker_matrix.json"
+        output_path.write_text(json.dumps({
+            "biomarkers": results,
+            "total_genes": len(results),
+        }, indent=2), encoding="utf-8")
+        cb(100, f"Results saved to {output_path}")
+    else:
+        cb(100, "Biomarker scoring complete (in-memory)")
     return results
 
 
@@ -342,16 +380,17 @@ def main():
         description="Biomarker Discovery — Cross-module integration for lupus therapy biomarkers"
     )
     parser.add_argument("--top", type=int, default=15, help="Number of top biomarkers to display")
+    parser.add_argument("--disease", "-d", default="sle", help="Disease ID (default: sle)")
     parser.add_argument("--export-html", action="store_true", help="Generate HTML report")
     args = parser.parse_args()
 
-    results = compute_biomarker_matrix()
+    results = compute_biomarker_matrix(disease_id=args.disease)
     analyze(results)
     print_top_biomarkers(results, args.top)
 
     if args.export_html:
         from med_research.pipeline.biomarker_discovery.report import generate_html_report
-        generate_html_report(results)
+        generate_html_report(results, disease_id=args.disease)
         print("\n✅ HTML report generated: biomarker_discovery/report.html")
 
     return results

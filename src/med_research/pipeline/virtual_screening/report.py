@@ -15,6 +15,8 @@ import io
 from datetime import datetime
 from pathlib import Path
 
+from med_research.pipeline.reporting import apply_disease_labels, disease_context
+
 try:
     import matplotlib
     matplotlib.use("Agg")
@@ -26,11 +28,26 @@ except ImportError:
     np = None
 
 
-def generate_screening_report(results: dict) -> str:
+def generate_screening_report(results: dict, disease_id: str = "sle") -> str:
     """Generate an HTML report from virtual screening results."""
 
     output_path = Path(__file__).parent / "screening_report.html"
+    context = disease_context(disease_id)
     stats = results["stats"]
+    coverage = results.get("coverage", {})
+    if results.get("status") == "blocked":
+        output_path.write_text(
+            "<!doctype html><html><head><meta charset='utf-8'><title>Virtual screening blocked</title></head>"
+            "<body><h1>Virtual screening blocked</h1>"
+            f"<p>{escape_html('; '.join(coverage.get('limitations', ['Disease-specific strategy unavailable.'])))}</p>"
+            f"<p>Coverage: {escape_html(coverage.get('level', 'unsupported'))} / "
+            f"{escape_html(coverage.get('status', 'blocked'))}</p></body></html>",
+            encoding="utf-8",
+        )
+        return str(output_path)
+    strategy_id = results.get("strategy_id", "")
+    strategy_fingerprint = results.get("strategy_fingerprint", "")
+    strategy_limitations = results.get("strategy_limitations", [])
     vina_docked_count = stats.get("vina_docked_count", 0)
     has_vina = stats.get("vina_available", False)
     has_real_docking = vina_docked_count > 0
@@ -303,305 +320,50 @@ def generate_screening_report(results: dict) -> str:
             <img src="data:image/png;base64,{comparison_chart}" alt="Real vs Property Comparison" style="max-width:100%"/>
         </div>"""
 
-    html = f"""<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lupus Virtual Drug Screening Report</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
-    <style>
-        * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-        body {{
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
-            background: #0a0a0f; color: #e0e0e8; line-height: 1.6;
-        }}
-        .container {{ max-width: 1200px; margin: 0 auto; padding: 24px; }}
+    # ── Assemble via template ──────────────────────────────────────
+    from med_research.templates import env as template_env
 
-        .hero {{
-            background: linear-gradient(135deg, #0f1729, #1a1025, #0f1729);
-            border: 1px solid #252535; border-radius: 16px;
-            padding: 40px; margin-bottom: 32px; text-align: center;
-        }}
-        .hero h1 {{
-            font-size: 2rem; font-weight: 800;
-            background: linear-gradient(135deg, #818cf8, #34d399, #f472b6);
-            -webkit-background-clip: text; background-clip: text;
-            -webkit-text-fill-color: transparent; margin-bottom: 8px;
-        }}
-        .hero .subtitle {{ color: #787890; font-size: 0.95rem; }}
-
-        .stats-grid {{
-            display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-            gap: 14px; margin-bottom: 32px;
-        }}
-        .stat-card {{
-            background: #13131a; border: 1px solid #252535;
-            border-radius: 12px; padding: 20px; text-align: center;
-            transition: border-color 0.2s, transform 0.2s;
-        }}
-        .stat-card:hover {{ border-color: #4b5563; transform: translateY(-1px); }}
-        .stat-card .stat-value {{ font-size: 1.8rem; font-weight: 800; }}
-        .stat-card .stat-label {{ color: #787890; font-size: 0.72rem; margin-top: 4px; }}
-
-        .section-title {{
-            font-size: 1.2rem; font-weight: 700; margin: 32px 0 14px;
-            padding-bottom: 8px; border-bottom: 1px solid #252535;
-        }}
-
-        /* Table */
-        .table-container {{
-            overflow-x: auto; background: #13131a;
-            border: 1px solid #252535; border-radius: 12px; margin-bottom: 28px;
-        }}
-        table {{ width: 100%; border-collapse: collapse; font-size: 0.85rem; }}
-        th {{
-            text-align: left; padding: 12px 14px; background: #1a1a24;
-            color: #787890; font-weight: 600; font-size: 0.72rem;
-            text-transform: uppercase; letter-spacing: 0.04em;
-            border-bottom: 1px solid #252535;
-        }}
-        td {{ padding: 10px 14px; border-bottom: 1px solid #1a1a24; }}
-        tr:hover td {{ background: rgba(129,140,248,0.03); }}
-        .rank {{ font-weight: 700; color: #787890; min-width: 28px; }}
-        .muted {{ color: #787890; font-size: 0.75rem; }}
-
-        .score-badge {{
-            display: inline-block; padding: 3px 12px; border-radius: 20px;
-            font-size: 0.8rem; font-weight: 700; white-space: nowrap;
-        }}
-        .gene-tag {{ color: #4ade80; font-weight: 600; }}
-        .tier-tag {{
-            display: inline-block; padding: 2px 8px; border-radius: 12px;
-            font-size: 0.7rem; font-weight: 500; background: rgba(129,140,248,0.1); color: #a5b4fc;
-        }}
-
-        /* Vina docking badge */
-        .vina-badge {{
-            display: inline-block; margin-left: 8px; padding: 1px 8px;
-            border-radius: 10px; font-size: 0.65rem; font-weight: 600;
-            background: rgba(52,211,153,0.12); color: #34d399;
-            border: 1px solid rgba(52,211,153,0.2);
-            white-space: nowrap; vertical-align: middle;
-        }}
-        .docking-badge {{
-            display: inline-block; padding: 2px 8px; border-radius: 10px;
-            font-size: 0.65rem; font-weight: 600;
-        }}
-        .docking-real {{
-            background: rgba(52,211,153,0.12); color: #34d399;
-            border: 1px solid rgba(52,211,153,0.2);
-        }}
-        .docking-prop {{
-            background: rgba(129,140,248,0.08); color: #818cf8;
-            border: 1px solid rgba(129,140,248,0.15);
-        }}
-
-        /* Dimension bars */
-        .dim-bar {{
-            display: flex; align-items: center; gap: 6px; margin-bottom: 2px;
-        }}
-        .dim-label {{ font-size: 0.65rem; color: #787890; width: 55px; text-align: right; }}
-        .dim-label.dim-docked {{ color: #34d399; font-weight: 600; }}
-        .dim-fill-wrap {{
-            flex: 1; height: 6px; background: #1a1a24; border-radius: 3px;
-            overflow: hidden;
-        }}
-        .dim-fill {{ height: 100%; border-radius: 3px; min-width: 2px; transition: width 0.3s; }}
-        .dim-fill.dim-docked-fill {{ box-shadow: 0 0 4px rgba(52,211,153,0.3); }}
-        .dim-val {{ font-size: 0.65rem; color: #a0a0b0; width: 28px; text-align: right; font-weight: 600; }}
-        .dim-val.dim-val-docked {{ color: #34d399; }}
-        .dims-cell {{ min-width: 280px; }}
-
-        /* Target sections */
-        .target-section {{
-            background: #13131a; border: 1px solid #252535;
-            border-radius: 12px; margin-bottom: 28px; overflow: hidden;
-        }}
-        .target-header {{
-            display: flex; justify-content: space-between; align-items: center;
-            padding: 20px 24px; background: #1a1a24; border-bottom: 1px solid #252535;
-        }}
-        .target-header h3 {{ font-size: 1rem; }}
-        .target-header code {{ color: #818cf8; font-size: 0.75rem; margin-left: 4px; }}
-        .target-category {{
-            display: block; font-size: 0.75rem; color: #787890; margin-top: 2px;
-        }}
-        .target-mean {{
-            font-size: 0.72rem; color: #a0a0b0; margin-top: 4px; display: block;
-        }}
-        .target-count {{
-            font-size: 0.78rem; color: #6b7280; white-space: nowrap;
-        }}
-
-        /* Vina docking box */
-        .vina-box {{
-            padding: 16px 24px; border-top: 1px solid #252535;
-            background: rgba(52,211,153,0.03);
-        }}
-        .vina-box h4 {{ font-size: 0.82rem; color: #34d399; margin-bottom: 6px; }}
-        .vina-note {{
-            font-size: 0.72rem; color: #6b7280; margin-bottom: 10px;
-        }}
-        .vina-chips {{ display: flex; flex-wrap: wrap; gap: 8px; }}
-        .vina-chip {{
-            background: rgba(52,211,153,0.08); border: 1px solid rgba(52,211,153,0.2);
-            border-radius: 8px; padding: 6px 12px; font-size: 0.75rem; color: #a0a0b0;
-        }}
-        .vina-chip strong {{ color: #34d399; }}
-        .vina-box-empty {{
-            padding: 12px 24px; border-top: 1px solid #252535;
-            background: rgba(129,140,248,0.02); color: #6b7280; font-size: 0.75rem;
-        }}
-
-        /* Chart card */
-        .chart-card {{
-            background: #13131a; border: 1px solid #252535;
-            border-radius: 12px; padding: 20px; text-align: center;
-        }}
-
-        /* Methodology */
-        .method-card {{
-            background: #13131a; border: 1px solid #252535;
-            border-radius: 12px; padding: 24px; margin-bottom: 32px;
-        }}
-        .method-card h3 {{ font-size: 0.95rem; margin-bottom: 12px; }}
-        .method-card ul {{ margin-left: 20px; color: #787890; font-size: 0.85rem; }}
-        .method-card li {{ margin-bottom: 6px; }}
-        .method-card li strong {{ color: #e0e0e8; }}
-
-        footer {{
-            text-align: center; padding: 40px; color: #787890; font-size: 0.75rem;
-        }}
-        footer a {{ color: #818cf8; }}
-
-        @media (max-width: 768px) {{
-            .stats-grid {{ grid-template-columns: repeat(2, 1fr); }}
-            .hero {{ padding: 24px; }}
-            .hero h1 {{ font-size: 1.3rem; }}
-            .target-header {{ flex-direction: column; gap: 8px; }}
-        }}
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="hero">
-            <h1>🔬 Lupus Virtual Drug Screening Report</h1>
-            <p class="subtitle">
-                {stats['total_pairings']} Compound-Target Pairings Across {stats['targets_screened']} Genes
-                · {stats['compounds_screened']} Compounds Screened
-                {f"· {vina_docked_count} Real Docking Scores" if has_real_docking else ""}
-            </p>
-            <p class="subtitle" style="font-size:0.78rem;margin-top:8px;">
-                Generated: {datetime.now().strftime('%B %d, %Y at %H:%M')}
-                · AutoDock Vina: {stats['vina_status']}
-                · RDKit: {'available' if stats['rdkit_available'] else 'not available'}
-            </p>
-        </div>
-
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div class="stat-value" style="color:#818cf8">{stats['targets_screened']}</div>
-                <div class="stat-label">Targets Screened</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value" style="color:#4ade80">{stats['compounds_screened']}</div>
-                <div class="stat-label">Compounds Screened</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value" style="color:#f59e0b">{stats['tier1_count']}</div>
-                <div class="stat-label">Tier 1 Hits (≥7.5)</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value" style="color:#fbbf24">{stats['tier2_count']}</div>
-                <div class="stat-label">Tier 2 Hits (6.5-7.4)</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value" style="color:#c084fc">{stats['total_pairings']}</div>
-                <div class="stat-label">Total Pairings</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value" style="color:#34d399">{vina_docked_count}</div>
-                <div class="stat-label">🧬 Real Docking Scores</div>
-            </div>
-        </div>
-
-        <h2 class="section-title">🎯 Score Dimension Radar — Top 5 Overall Hits</h2>
-        <div class="radar-container" style="max-width:700px;margin:0 auto 28px;">
-            <canvas id="radarChart" style="max-height:500px;"></canvas>
-        </div>
-
-        {docking_summary}
-
-        {comparison_section}
-
-        <h2 class="section-title">🏆 Top 20 Overall Virtual Screening Hits</h2>
-        <div class="table-container">
-            <table>
-                <thead>
-                    <tr><th>#</th><th>Compound</th><th>Target Gene</th><th>Score</th><th>Tier</th><th>Docking</th></tr>
-                </thead>
-                <tbody>{top_overall_rows}</tbody>
-            </table>
-        </div>
-
-        <h2 class="section-title">🧬 Per-Target Screening Results</h2>
-        {target_sections}
-
-        <h2 class="section-title">🎯 Per-Target Radar Charts</h2>
-        {target_radars}
-
-        <h2 class="section-title">📐 Methodology</h2>
-        <div class="method-card">
-            <h3>Scoring Dimensions (each 0–10, weighted)</h3>
-            <ul>
-                <li><strong>Binding Affinity Estimate (30%)</strong> — {'Physics-based AutoDock Vina docking score (ΔG) when available; ' if has_real_docking else ''}Otherwise, molecular property-based pseudo-binding score using MW, LogP, hydrogen bonding, and TPSA.</li>
-                <li><strong>Drug-Likeness (20%)</strong> — Lipinski Rule of 5 compliance. Biologics scored separately.</li>
-                <li><strong>Target Complementarity (25%)</strong> — How well the compound's mechanism and category match the target gene's biology and pathway.</li>
-                <li><strong>Similarity to Known SLE Drugs (15%)</strong> — Molecular property similarity and category overlap with existing drug repurposing candidates for the same gene.</li>
-                <li><strong>Novelty (10%)</strong> — How novel is this compound-target pairing? Investigational compounds score higher than approved SLE therapies.</li>
-            </ul>
-            <p style="margin-top:16px;color:#787890;font-size:0.82rem;">
-                <strong>AutoDock Vina:</strong> {stats['vina_status']}.
-                {'When active, the top 5 property-scored compounds per target are re-scored using physics-based molecular docking with curated PDB structures and defined binding site grids. Vina binding free energy (kcal/mol) is normalized to the 0–10 binding score using a linear mapping: −11 kcal/mol → 10, −5 kcal/mol → 0.' if has_real_docking else 'Install AutoDock Vina and provide protein PDB structures in <code>virtual_screening/targets/</code> for physics-based molecular docking. Current screening uses property-based scoring which does not require external binaries.'}
-            </p>
-        </div>
-
-        <footer>
-            <p>Lupus Virtual Drug Screening Engine · {'Real docking (AutoDock Vina) + ' if has_real_docking else ''}Property-based scoring</p>
-            <p>Compound library derived from the <a href="../knowledge_graph/web/index.html">Lupus Knowledge Graph</a></p>
-            <p style="margin-top:8px;color:#6b7280;">
-                Disclaimer: Virtual screening results are computational predictions. All hits require experimental validation.
-            </p>
-        </footer>
-    </div>
-    <script>
-(function() {{
-    const top5 = {top5_json};
-    const labels = ['Binding', 'Drug-Like', 'Target', 'Similarity', 'Novelty'];
-    const colors = ['#818cf8', '#4ade80', '#f59e0b', '#f472b6', '#34d399'];
-    const datasets = top5.map((c, i) => ({{
-        label: c.name,
-        data: c.scores,
-        borderColor: colors[i % colors.length],
-        backgroundColor: colors[i % colors.length] + '15',
-        borderWidth: 2,
-        pointBackgroundColor: colors[i % colors.length],
-        pointRadius: 3,
-    }}));
-    new Chart(document.getElementById('radarChart'), {{
-        type: 'radar',
-        data: {{ labels, datasets }},
-        options: {{
-            responsive: true, maintainAspectRatio: true,
-            scales: {{ r: {{ beginAtZero: true, max: 10, ticks: {{ backdropColor: 'transparent', color: '#787890', font: {{ size: 10 }} }}, grid: {{ color: '#252535' }}, pointLabels: {{ color: '#c0c0d0', font: {{ size: 11 }} }}, angleLines: {{ color: '#252535' }} }} }},
-            plugins: {{ legend: {{ position: 'bottom', labels: {{ color: '#c0c0d0', font: {{ size: 11 }}, padding: 14, usePointStyle: true }} }} }}
-        }}
-    }});
-}})();
-</script>
-</body>
-</html>"""
+    html = template_env.get_template("reports/virtual_screening.html").render(
+        ctx_disease=context["name"],
+        ctx_disease_id=context["id"],
+        ctx_0=stats["total_pairings"],
+        ctx_1=stats["targets_screened"],
+        ctx_2=stats["compounds_screened"],
+        ctx_3=f"· {vina_docked_count} Real Docking Scores" if has_real_docking else "",
+        ctx_4=datetime.now().strftime("%B %d, %Y at %H:%M"),
+        ctx_5=stats["vina_status"],
+        ctx_6="available" if stats["rdkit_available"] else "not available",
+        ctx_7=stats["targets_screened"],
+        ctx_8=stats["compounds_screened"],
+        ctx_9=stats["tier1_count"],
+        ctx_10=stats["tier2_count"],
+        ctx_11=stats["total_pairings"],
+        ctx_12=vina_docked_count,
+        ctx_13=docking_summary,
+        ctx_14=comparison_section,
+        ctx_15=top_overall_rows,
+        ctx_16=target_sections,
+        ctx_17=target_radars,
+        ctx_18="Physics-based AutoDock Vina docking score (ΔG) when available; " if has_real_docking else "",
+        ctx_19=stats["vina_status"],
+        ctx_20=(
+            "When active, the top 5 property-scored compounds per target are re-scored using physics-based molecular docking with curated PDB structures and defined binding site grids. Vina binding free energy (kcal/mol) is normalized to the 0–10 binding score using a linear mapping: −11 kcal/mol → 10, −5 kcal/mol → 0."
+            if has_real_docking
+            else "Install AutoDock Vina and provide protein PDB structures in <code>virtual_screening/targets/</code> for physics-based molecular docking. Current screening uses property-based scoring which does not require external binaries."
+        ),
+        ctx_21="Real docking (AutoDock Vina) + " if has_real_docking else "",
+        ctx_22=top5_json,
+    )
+    strategy_note = (
+        f"<section class=\"strategy-provenance\"><strong>Screening strategy:</strong> "
+        f"{escape_html(strategy_id)} · fingerprint {escape_html(strategy_fingerprint[:16])}… "
+        f"<br><span>Coverage: {escape_html(coverage.get('level', 'unknown'))} / "
+        f"{escape_html(coverage.get('status', 'unknown'))}</span> "
+        f"<br><span>Limitations: {escape_html('; '.join(strategy_limitations))}</span></section>"
+        if strategy_id else ""
+    )
+    html = html.replace("</body>", strategy_note + "</body>")
+    html = apply_disease_labels(html, disease_id)
 
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(html)

@@ -1,452 +1,220 @@
-# 🧬 Lupus Research & Drug Discovery Platform
+# Medical Research Platform
 
-An open computational platform to accelerate the discovery of treatments and, ultimately, a cure for **Systemic Lupus Erythematosus (SLE)**.
+`med-research` is a multi-disease computational research platform for biomedical evidence exploration, drug discovery, and hypothesis generation. It combines disease-specific knowledge graphs, explainable scoring pipelines, literature and clinical-trial evidence, provenance metadata, and a FastAPI dashboard.
 
----
+> **Research use only.** Outputs are computational prioritization hypotheses, not medical advice, treatment recommendations, or evidence of efficacy. Validate every finding against the cited source and appropriate experimental or clinical evidence.
 
-## 📋 Project Overview
+## What is implemented
 
-Lupus is a chronic autoimmune disease affecting ~5 million people worldwide. It's notoriously complex — driven by genetic predisposition, environmental triggers, and dysregulation across multiple immune pathways. This platform takes a multi-pronged computational approach to accelerate treatment discovery.
+- Seven disease modules: SLE, RA, MS, Sjögren's syndrome, systemic sclerosis, type 1 diabetes, and IBD.
+- Disease-specific JSON knowledge-graph data and pipeline configuration under `src/med_research/diseases/`.
+- Knowledge-graph construction and export, drug repurposing, bioinformatics, literature mining, virtual screening, clinical-trial tracking, ML target prediction, synergy, safety, network pharmacology, expression, CAR-T, biomarker, semantic search, evidence gathering, extraction, and monitoring.
+- Evidence-to-Hypothesis Workspace with PubMed and ClinicalTrials.gov adapters, deterministic claims, optional LLM enrichment, explainable drug/target rankings, graph explanations, provenance fingerprints, saved history, comparison, trends, and JSON/HTML exports.
+- FastAPI web API and vanilla JavaScript dashboard with asynchronous Celery jobs, WebSocket progress, HTTP polling fallback, source-level status, keyboard support, reduced-motion styles, and terminal failure recovery.
 
----
+## Repository layout
 
-## 🏗️ Architecture
-
-```
-lupus-platform/
-├── knowledge_graph/      # Phase 1 ✅ — Heterogeneous graph: genes, drugs, pathways, disease
-│   ├── build_graph.py    #   NetworkX graph builder & analyzer
-│   ├── data/             #   Curated JSON: 22 genes, 20 drugs, 7 pathways, 63+ relationships
-│   └── web/              #   Interactive Cytoscape.js visualization
-│
-├── drug_repurposing/     # Phase 3 ✅ — Multi-modal drug repurposing scoring engine
-│   ├── engine.py         #   6-dimensional weighted scoring across 13 untargeted genes
-│   └── data/             #   39 scored candidates with mechanistic evidence
-│
-├── bioinformatics/       # Phase 2 ✅ — GWAS, pathway enrichment, PPI networks
-│   ├── gwas.py           #   NHGRI-EBI GWAS Catalog annotation & SNP resolution
-│   ├── enrichment.py     #   GSEApy/Enrichr pathway enrichment (GO, KEGG, Reactome, WikiPathways)
-│   ├── ppi.py            #   STRING API protein-protein interaction networks
-│   └── report.py         #   Combined HTML report with dot plots, Manhattan plots, hub charts
-│
-├── literature_mining/    # Phase 4 ✅ — PubMed mining & biomedical NER
-│   ├── miner.py          #   BioPython Entrez PubMed search with targeted queries
-│   ├── crossref.py       #   Dictionary + regex + spaCy entity extraction
-│   ├── ner.py            #   Hybrid NER (regex patterns + optional scispacy)
-│   └── report.py         #   HTML report with coverage bars & candidate support
-│
-├── virtual_screening/    # Phase 6 ✅ — Property-based virtual drug screening
-│   ├── screening.py       #   5-dimensional scoring (binding, drug-likeness, etc.)
-│   ├── docking.py         #   Phase 23 ✅ — AutoDock Vina integration
-│   ├── vina_setup.py      #   Vina binary download helper
-│   ├── report.py          #   HTML report with per-target compound tables
-│   ├── targets/           #   PDB target configs (10 validated + 3 validation)
-│   └── data/              #   Screening results JSON
-│
-├── clinical_trials/      # Phase 8 ✅ — Clinical trial tracker & analysis
-│   ├── tracker.py        #   ClinicalTrials.gov API v2 queries & KG cross-ref
-│   ├── report.py         #   HTML report with phase/MoA charts
-│   └── data/             #   Cached trial data
-│
-├── ml_predictor/         # Phase 7 ✅ — ML-driven target druggability prediction
-│   ├── predictor.py      #   XGBoost classifier with KG features & SHAP interpretability
-│   ├── report.py         #   HTML report with SHAP plots & feature importance
-│   └── data/             #   ML predictions JSON
-│
-├── cross_disease/        # Phase 22 ✅ — Cross-disease analyzer across 7 autoimmune diseases
-│   ├── analyzer.py        #   Shared genes/drugs/pathways, disease similarity, multi-disease scoring
-│   └── report.py          #   HTML report with radar chart, similarity matrix, drug rankings
-│
-├── tests/                # 328 tests, all passing
-│   ├── test_engine.py              # Drug repurposing scoring & tiering
-│   ├── test_knowledge_graph.py     # Graph construction & web export
-│   ├── test_report.py              # Report generation & escaping
-│   ├── test_bioinformatics_enrichment.py
-│   ├── test_bioinformatics_gwas.py
-│   ├── test_bioinformatics_ppi.py
-│   ├── test_literature_mining.py
-│   ├── test_virtual_screening.py
-│   ├── test_clinical_trials.py
-│   ├── test_ml_predictor.py
-│   ├── test_cross_disease.py       # Cross-disease analysis
-│   ├── test_docking.py             # Molecular docking engine
-│   └── test_web_api.py
-│
-└── .github/workflows/    # CI: Python 3.10–3.12, pytest across all modules
+```text
+.
+├── src/med_research/
+│   ├── cli.py                         # Unified `med-research` CLI
+│   ├── diseases/{id}/                 # Profiles, configs, and KG JSON data
+│   ├── pipeline/                      # Analysis modules
+│   │   └── evidence_workspace/        # Dossier schemas, adapters, ranking, reports
+│   ├── web/                            # FastAPI app, routers, services, tasks
+│   │   └── static/                     # Live dashboard
+│   └── templates/                      # Server-rendered report templates
+├── tests/                              # Unit, API, fixture, and Playwright tests
+├── docs/                               # Current usage and API documentation
+├── scripts/check_imports.py            # Stale internal-import audit
+├── main.py                             # Compatibility wrapper for the unified CLI
+├── pyproject.toml                      # Package metadata and dependencies
+├── Makefile                            # Common development commands
+└── docker-compose.yml / Dockerfile     # Containerized API, worker, Redis, and CLI
 ```
 
----
+## Requirements and installation
 
-## 🧰 Tool Suite
+- Python 3.10, 3.11, or 3.12.
+- A virtual environment is recommended.
+- Redis and a Celery worker are required for asynchronous dashboard jobs. Pure Python tests and most CLI commands do not require Redis.
+- Optional extras provide ML, cheminformatics, NLP, semantic-search, and development tooling.
 
-### 1. 🕸️ Lupus Knowledge Graph ✅
-
-An interactive graph connecting **35 genes**, **26 drugs**, **10 pathways**, and the central SLE disease node through **115 curated relationships** across 6 edge types (TARGETS, TREATS, DRIVES, PARTICIPATES_IN, MODULATES, ASSOCIATED_WITH).
-
-**Capabilities:**
-- Explore known gene-disease associations mined from GWAS literature
-- Trace drug mechanisms of action to molecular targets
-- Identify pathway-level intervention points
-- Find drug repurposing candidates via graph traversal
-- Interactive visualization with search, filtering, and detail inspection
-
-**Run it:**
 ```bash
-python knowledge_graph/build_graph.py --analyze --export
-# Open knowledge_graph/web/index.html in a browser
+python -m venv .venv
+# macOS/Linux
+source .venv/bin/activate
+# Windows
+.venv\Scripts\activate
+
+python -m pip install --upgrade pip
+python -m pip install -e ".[all]"
 ```
 
-**Tech Stack:** Python, NetworkX, Cytoscape.js, vanilla HTML/CSS/JS
+The equivalent requirements-file setup is:
 
----
+```bash
+python -m pip install -r requirements.txt -r requirements-dev.txt
+python -m pip install -e .
+```
 
-### 2. 🧪 Drug Repurposing Engine ✅
+## Unified CLI
 
-Multi-modal scoring system evaluating **39 repurposing candidates** across **13 untargeted lupus genes** using a 6-dimensional weighted model.
+Use the installed command or the module form:
 
-**Scoring Dimensions (each 0–10, weighted):**
-| Dimension | Weight | Description |
+```bash
+med-research --help
+python -m med_research.cli --help
+```
+
+The root `main.py` remains a compatibility wrapper, so `python main.py ...` also delegates to the same CLI. New documentation uses `python -m med_research.cli`.
+
+### Discover diseases and modules
+
+```bash
+python -m med_research.cli diseases
+python -m med_research.cli modules
+python -m med_research.cli disease validate --all --strict
+python -m med_research.cli disease coverage ibd
+```
+
+`disease validate --all --strict` is the CI guard. `disease coverage <id>` is the stricter researcher-facing report: it distinguishes full, limited, and unsupported module coverage and prints the stable coverage fingerprint. A blocked module must not be interpreted as a successful empty analysis.
+
+### Run analysis modules
+
+Most analysis commands accept `--disease`/`-d`; the current default is `sle` for backwards compatibility.
+
+```bash
+python -m med_research.cli kg --disease ra --analyze --export
+python -m med_research.cli repurpose --disease sle --top 15 --export-html
+python -m med_research.cli bioinformatics --disease sle --export-html
+python -m med_research.cli literature --disease ms --max 30 --export-html
+python -m med_research.cli screening --disease sle --top 15 --export-html
+python -m med_research.cli screening --disease ibd --top 15 --export-html
+python -m med_research.cli trials --disease ra --top 20 --export-html
+python -m med_research.cli ml --disease sle --top 15 --export-html
+python -m med_research.cli cross-disease --top 20 --export-html
+```
+
+Use `python -m med_research.cli <command> --help` for command-specific options. External-source modules may use caches and may require network access; use the workspace fixture tests for deterministic offline behavior.
+
+Virtual screening is strategy-driven for all seven diseases. Each run reports a strategy ID, deterministic fingerprint, coverage status, curated/inferred inputs, and limitations. A ready/full strategy means disease-specific pathway and drug inputs are present for this transparent property-based prioritization heuristic; it does not establish experimental binding, efficacy, or safety.
+
+### Disease data management
+
+```bash
+python -m med_research.cli disease add crohns --name "Crohn's disease" --dry-run
+python -m med_research.cli disease refresh ra --dry-run
+python -m med_research.cli disease validate ra --strict
+python -m med_research.cli disease backups ra
+python -m med_research.cli disease restore ra --dry-run
+```
+
+Refresh/prune operations create backups before applying destructive changes. Review the prune plan or pass `--yes` only when the source scope is intentional.
+
+## Evidence-to-Hypothesis Workspace
+
+The Workspace turns a question into a cited dossier. The command supports disease selection, source selection, date filters, candidate type, evidence limits, optional LLM enrichment, and JSON/HTML export:
+
+```bash
+python -m med_research.cli workspace \
+  --disease ra \
+  --question "Which JAK interventions merit investigation for rheumatoid arthritis?" \
+  --sources pubmed,clinical_trials \
+  --candidate-type both \
+  --max-evidence 50 \
+  --no-llm \
+  --json ra-workspace.json \
+  --html ra-workspace.html
+```
+
+The default sources are `pubmed,clinical_trials`. The dossier preserves source statuses, native identifiers, citations, claims, supporting and contradictory evidence, ranking components, graph path/no-path explanations, warnings, limitations, and a reproducibility fingerprint. See [`docs/evidence-workspace.md`](docs/evidence-workspace.md) for the request contract, dashboard flow, saved-run API, and export behavior.
+
+## Web API and dashboard
+
+Start the API locally:
+
+```bash
+python -m med_research.cli serve --host 127.0.0.1 --port 8000
+```
+
+Open <http://127.0.0.1:8000/> for the dashboard. OpenAPI documentation is available at <http://127.0.0.1:8000/api/docs> and the schema at <http://127.0.0.1:8000/api/openapi.json>.
+
+For async dashboard jobs, start Redis and a worker separately:
+
+```bash
+redis-server
+celery -A med_research.web.tasks.analysis_tasks worker --loglevel=info --concurrency=2
+python -m med_research.cli serve --host 127.0.0.1 --port 8000
+```
+
+The dashboard's main workspace endpoints are:
+
+| Method | Endpoint | Purpose |
 |---|---|---|
-| Target Similarity | 25% | How closely related is the drug's target to the gene? |
-| Pathway Proximity | 15% | Network distance in the knowledge graph |
-| Mechanistic Rationale | 25% | Does the mechanism make biological sense? |
-| Clinical Evidence | 20% | Literature, trials, and case series support |
-| Safety Profile | 10% | Known safety from approved indications |
-| Novelty Bonus | 5% | How novel is this repurposing application? |
+| `POST` | `/api/jobs/workspace` | Submit a validated workspace request |
+| `GET` | `/api/jobs/{job_id}` | Poll job state/result |
+| `WS` | `/api/jobs/{job_id}/ws` | Stream job progress and terminal state |
+| `GET` | `/api/workspace/runs` | List saved runs |
+| `GET` | `/api/workspace/runs/{run_id}` | Load one saved run and HTML |
+| `DELETE` | `/api/workspace/runs/{run_id}` | Delete a saved run |
+| `GET` | `/api/workspace/compare?left=...&right=...` | Compare two runs |
+| `GET` | `/api/workspace/trends` | Inspect ranking/source trends |
 
-**Run it:**
-```bash
-python drug_repurposing/engine.py --top 15 --export-html
-# Open drug_repurposing/report.html in a browser
-```
+The complete route inventory and environment settings are in [`docs/api-reference.md`](docs/api-reference.md).
 
-**Tech Stack:** Python, NetworkX, custom weighted scoring model
+## Testing and quality checks
 
----
-
-### 3. 📊 Bioinformatics Analysis Platform ✅
-
-Three integrated modules for computational genomics and systems biology:
-
-#### 🧬 GWAS Catalog Annotation
-Queries the NHGRI-EBI GWAS Catalog REST API for SLE-associated variants, resolves SNP rsIDs to genes and genomic locations, and cross-references findings against the knowledge graph. Includes Manhattan plot visualization.
+The repository currently collects 969 tests in this checkout. The authoritative result is the command exit status, not a hardcoded README count.
 
 ```bash
-python bioinformatics/gwas.py --max-studies 50 --export-html
+# Fast offline CI-equivalent suite
+make test-offline
+
+# Focused workspace and browser tests
+python -m pytest tests/test_evidence_workspace*.py -q
+
+# All configured browser tests (Playwright is installed by requirements-dev.txt)
+python -m pytest tests/test_evidence_workspace_browser.py -q
+
+# Slow/live integrations, when external services are available
+make test-slow
+
+# Static checks
+make lint
+python scripts/check_imports.py
+python -m compileall -q src/med_research
+git diff --check
 ```
 
-#### 📈 Pathway Enrichment Analysis
-Runs gene set enrichment via GSEApy/Enrichr across GO Biological Process, KEGG, Reactome, and WikiPathways. Cross-references enriched terms against the 7 curated lupus pathways in the knowledge graph. Generates publication-quality dot plots.
+CI runs the offline suite on Python 3.10–3.12, validates all disease configurations, and runs slow/live tests only on scheduled or manually dispatched workflows. Playwright failure diagnostics are uploaded as CI artifacts.
+
+## Docker
+
+The Compose file defines `redis`, `worker`, `web`, and `pipeline` services. The services are under the `full` and `cli` profiles:
 
 ```bash
-python bioinformatics/enrichment.py --export-html
+# API, worker, and Redis
+ docker compose --profile full up --build
+
+# CLI container
+ docker compose --profile cli run --rm pipeline diseases
+ docker compose --profile cli run --rm pipeline workspace \
+   --question "Which interventions merit investigation for SLE?" \
+   --no-llm
 ```
 
-#### 🔗 PPI Network Analysis
-Builds protein-protein interaction networks from STRING, computes hub scores (degree + betweenness centrality), identifies hub proteins with repurposing candidates, and flags untargeted hubs as new opportunities. Includes interactive pyvis network visualization.
+The web service listens on port 8000. Configure `CELERY_BROKER_URL`, `CELERY_RESULT_BACKEND`, `USE_CACHE`, `HOST`, `PORT`, `DEBUG`, `CORS_ORIGINS`, `WORKSPACE_DB_PATH`, `API_KEY`, `RATE_LIMIT_REQUESTS`, and `RATE_LIMIT_WINDOW` through the environment as needed. When using `med-research serve`, explicit `--host`/`--port` values (including their parser defaults) take precedence over `HOST`/`PORT`; see [`docs/api-reference.md`](docs/api-reference.md) for the distinction and security caveats.
 
-```bash
-python bioinformatics/ppi.py --confidence 0.4 --export-html
-```
+## Documentation map
 
-#### 📋 Combined Bioinformatics Report
-Generates a single HTML report integrating all three analyses with dot plots, Manhattan plots, hub score charts, and PPI network visualization. The report is auto-generated when you pass `--export-html` to any bioinformatics module:
+- [`docs/evidence-workspace.md`](docs/evidence-workspace.md) — Workspace tutorial and reference.
+- [`docs/api-reference.md`](docs/api-reference.md) — Current server, job, history, export, and admin endpoints.
+- [`docs/superpowers/specs/`](docs/superpowers/specs/) — Historical design specifications.
+- [`docs/superpowers/plans/`](docs/superpowers/plans/) — Historical implementation plans and verification records.
+- [`CHANGELOG.md`](CHANGELOG.md) — Historical changes; current commands are maintained in this README and `docs/`.
+- [`TECHNICAL_DEBT_ISSUES.md`](TECHNICAL_DEBT_ISSUES.md) — Technical audit and remaining follow-up work; resolved findings are labeled.
 
-```bash
-python bioinformatics/gwas.py --export-html
-python bioinformatics/enrichment.py --export-html
-python bioinformatics/ppi.py --export-html
-# Each generates bioinformatics/bioinformatics_report.html with the sections available
-```
+## License and contribution
 
-**Tech Stack:** Python, GSEApy, STRING API, NHGRI-EBI GWAS API, NetworkX, matplotlib, pyvis
-
----
-
-### 4. 📚 Literature Mining Engine ✅
-
-Automatically searches PubMed for SLE/lupus-related articles, extracts biomedical entities, and cross-references findings against the knowledge graph and drug repurposing candidates.
-
-**Capabilities:**
-- PubMed search with 5 curated broad queries + optional 39 per-candidate targeted queries
-- Dictionary-based entity matching against all KG genes, drugs, and pathways
-- Hybrid NER: regex biomedical patterns (always on) + optional spaCy/scispacy for novel entity discovery
-- Literature support scoring for each repurposing candidate
-- Gene-level coverage tracking with visual bars
-
-```bash
-python literature_mining/miner.py --max 50 --export-html --targeted
-# Open literature_mining/literature_report.html in a browser
-```
-
-**Tech Stack:** Python, BioPython (Entrez), spaCy/scispacy (optional), regex biomedical NER
-
----
-
-### 5. 🔬 Virtual Drug Screening ✅
-
-Computationally screens the 20-drug compound library against lupus protein targets using a 5-dimensional weighted scoring model.
-
-**Scoring Dimensions (each 0–10, weighted):**
-| Dimension | Weight | Description |
-|---|---|---|
-| Binding Affinity Estimate | 30% | MW, LogP, HBD/HBA, TPSA pseudo-binding score |
-| Drug-likeness | 20% | Lipinski Rule of 5 compliance |
-| Target Complementarity | 25% | Category and keyword matching against gene biology |
-| Similarity to SLE Drugs | 15% | Overlap with known repurposing candidates |
-| Novelty | 10% | Approved vs investigational scoring |
-
-**Run it:**
-```bash
-python virtual_screening/screening.py --top 15 --export-html
-
-# Phase 23: Real molecular docking (requires Vina binary + Meeko)
-python virtual_screening/screening.py --use-vina --top 15 --export-html
-python virtual_screening/vina_setup.py --auto  # Install Vina binary
-
-# Open virtual_screening/screening_report.html in a browser
-```
-
-**Tech Stack:** Python, AutoDock Vina (optional), RDKit, Meeko, BioPython
-
----
-
-### 6. 🧠 ML Target Predictor ✅
-
-Trains an XGBoost classifier on knowledge graph features to predict which currently untargeted lupus genes are most druggable, with SHAP interpretability revealing which features drive predictions.
-
-**Capabilities:**
-- Feature engineering from graph topology (degree, betweenness, pathway count, odds ratio)
-- One-hot encoded gene categories across 16 biological pathways
-- Stratified K-fold cross-validation with ROC-AUC scoring
-- SHAP value analysis for model interpretability
-- Ranked druggability scores for all untargeted genes
-- Feature importance bar chart + SHAP impact visualization
-
-**Run it:**
-```bash
-python ml_predictor/predictor.py --top 10 --export-html
-# Open ml_predictor/ml_report.html in a browser
-```
-
-**Tech Stack:** Python, XGBoost, SHAP, scikit-learn, matplotlib
-
----
-
-### 7. 📋 Clinical Trial Tracker ✅
-
-Queries ClinicalTrials.gov API v2 for lupus/SLE interventional trials, categorizes by phase and mechanism of action, and cross-references trial drugs against the knowledge graph.
-
-**Capabilities:**
-- Live ClinicalTrials.gov API v2 queries with pagination
-- Phase distribution analysis (Early Phase 1 through Phase 4)
-- 9-category mechanism of action classification (B Cell, JAK-STAT, Complement, Cell Therapy, etc.)
-- Cross-referencing against all 35 KG genes and 26 KG drugs
-- Top sponsor analysis and enrollment statistics
-- Matplotlib phase distribution + MoA bar charts
-
-**Run it:**
-```bash
-python clinical_trials/tracker.py --max 50 --export-html
-# Open clinical_trials/ct_report.html in a browser
-```
-
-**Tech Stack:** Python, requests, matplotlib, ClinicalTrials.gov API v2
-
----
-
----
-
-## 🚀 Quick Start
-
-### Installation
-
-```bash
-# Clone and set up
-git clone <repo-url>
-cd medical
-
-# Install all dependencies at once
-pip install -r requirements.txt
-
-# Optional: install dev tooling (pytest, ruff, pytest-cov)
-pip install -r requirements-dev.txt
-```
-
-### Quick Development Setup
-
-```bash
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-
-# Install everything
-pip install -r requirements.txt -r requirements-dev.txt
-
-# Lint
-ruff check .
-ruff format --check .
-
-# Run tests with coverage
-pytest tests/ -v --cov=. --cov-report=term-missing
-```
-
-### Run the Full Pipeline
-
-```bash
-# Option 1: Unified CLI (one command)
-python main.py run-all --export-html
-
-# Option 2: Step-by-step
-# Step 1: Build the knowledge graph (required by all other modules)
-python knowledge_graph/build_graph.py --analyze --export
-
-# Step 2: Run drug repurposing analysis
-python drug_repurposing/engine.py --top 15 --export-html
-
-# Step 3: Run bioinformatics analyses
-python bioinformatics/gwas.py --export-html
-python bioinformatics/enrichment.py --export-html
-python bioinformatics/ppi.py --export-html
-
-# Step 4: Mine the literature
-python literature_mining/miner.py --export-html
-
-# Step 5: Run virtual screening
-python virtual_screening/screening.py --top 15 --export-html
-
-# Step 6: Track clinical trials
-python clinical_trials/tracker.py --export-html
-
-# Step 7: Run ML target prediction
-python ml_predictor/predictor.py --top 10 --export-html
-
-# Step 8: View results
-# Open in browser:
-#   knowledge_graph/web/index.html              — Interactive knowledge graph
-#   drug_repurposing/report.html                 — Drug repurposing candidates
-#   bioinformatics/bioinformatics_report.html     — Combined bioinformatics
-#   literature_mining/literature_report.html      — Literature mining
-#   virtual_screening/screening_report.html       — Virtual drug screening
-#   clinical_trials/ct_report.html               — Clinical trial tracker
-#   ml_predictor/ml_report.html                  — ML target predictor
-```
-
-### Docker (Alternative)
-
-```bash
-# Build the image
-docker compose build
-
-# Run the full pipeline
-docker compose run --rm pipeline run-all --export-html
-
-# Serve the knowledge graph web app (visit http://localhost:8080)
-docker compose up kg-web
-
-# Run tests
-docker compose run --rm pipeline test
-```
-
-### Run Tests
-
-```bash
-python -m pytest tests/ -v
-# 297 tests, all passing
-```
-
----
-
-## 🎯 Roadmap
-
-| Phase | Focus | Status |
-|-------|-------|--------|
-| **Phase 1** | Knowledge Graph + Web Visualization | ✅ Complete |
-| **Phase 2** | Bioinformatics Pipeline (GWAS, Enrichment, PPI) | ✅ Complete |
-| **Phase 3** | Drug Repurposing Engine (39 candidates scored) | ✅ Complete |
-| **Phase 4** | Literature Mining (PubMed + Biomedical NER) | ✅ Complete |
-| **Phase 5** | Integration & Polish (CLI, Docker, Dashboard) | ✅ Complete |
-| **Phase 6** | Virtual Drug Screening (Molecular Docking) | ✅ Complete |
-| **Phase 7** | ML Target Predictor | ✅ Complete |
-| **Phase 8** | Clinical Trial Tracker | ✅ Complete |
-| **Phase 9** | Drug Combination Synergy (325 pairs) | ✅ Complete |
-| **Phase 10** | Adverse Event Profiling (26 drugs) | ✅ Complete |
-| **Phase 11** | Network Pharmacology Hub | ✅ Complete |
-| **Phase 12** | Gene Expression Correlation | ✅ Complete |
-| **Phase 13** | Interactive Radar Charts | ✅ Complete |
-| **Phase 14** | CAR-T Response Predictor | ✅ Complete |
-| **Phase 15** | Biomarker Discovery (cross-module) | ✅ Complete |
-| **Phase 16** | Semantic Literature Search | ✅ Complete |
-| **Phase 17** | Web-Scale Evidence Gatherer | ✅ Complete |
-| **Phase 18** | LLM-Powered Evidence Extraction | ✅ Complete |
-| **Phase 19** | Continuous Evidence Monitor | ✅ Complete |
-| **Phase 20** | Cross-Disease Generalization (RA data curated) | ✅ Complete |
-| **Phase 21** | Cross-Disease Expansion (MS, SS, SSc, T1D, IBD) | ✅ Complete |
-| **Phase 22** | Cross-Disease Drug Repurposing Analyzer | ✅ Complete |
-| **Phase 23** | Real Molecular Docking (AutoDock Vina) | ✅ Complete |
-| **Phase 24** | Data Curation — Expanded KG for SS, T1D, SSc, MS, IBD + MODULATES edges | ✅ Complete |
-| **Phase 25** | Advanced NER — Variant/mutation, clinical trial, statistical extraction + scispacy validation | ✅ Complete |
-| **Phase 26** | GEO Multi-omics — GEO data fetcher, dynamic expression signatures | ✅ Complete |
-| **Phase 27** | Web Dashboard — Cross-disease API, static mounts, dashboard enhancements | ✅ Complete |
-
----
-
-## 🌐 Cross-Disease Support
-
-The platform supports multiple autoimmune diseases through per-disease data directories:
-
-```
-knowledge_graph/data/
-├── sle/                       # Systemic Lupus Erythematosus
-├── ra/                        # Rheumatoid Arthritis (Phase 20)
-├── ms/                        # Multiple Sclerosis (Phase 21)
-├── ss/                        # Sjögren's Syndrome (Phase 21)
-├── ssc/                       # Systemic Sclerosis (Phase 21)
-├── t1d/                       # Type 1 Diabetes (Phase 21)
-└── ibd/                       # Inflammatory Bowel Disease (Phase 21)
-```
-
-**CLI Usage:**
-```bash
-python main.py kg --disease ra --analyze
-python main.py run-all --disease ra --export-html
-python main.py kg --list-diseases
-```
-
----
-
-## 📊 Current Stats
-
-| Metric | Value |
-|---|---|
-| Knowledge Graph Nodes (SLE) | 72 (35 genes, 26 drugs, 10 pathways, 1 disease) |
-| Knowledge Graph Edges (SLE) | 115 curated relationships |
-| Cross-Disease Support | 7 diseases: SLE, RA, MS, SS, SSc, T1D, IBD |
-| Repurposing Candidates | 39 across 13 untargeted genes |
-| GWAS Studies Analyzed | ~30 SLE/lupus studies |
-| Enrichment Libraries | 4 (GO BP, KEGG, Reactome, WikiPathways) |
-| Literature Articles | ~150 PubMed abstracts |
-| Virtual Drug Screening | 20 compounds screened against 13 untargeted genes |
-| Clinical Trials Tracked | 50 interventional lupus trials from ClinicalTrials.gov |
-| ML Predicted Targets | 35 genes analyzed, XGBoost + SHAP druggability scoring |
-| Tests | ~465 passing, 0 failures |
-| Python Support | 3.10, 3.11, 3.12 |
-
----
-
-## ⚠️ Disclaimer
-
-This platform is a **research tool** intended to assist in computational drug discovery. It does not provide medical advice. Any findings are hypotheses that require rigorous experimental and clinical validation before therapeutic use.
-
----
-
-## 🤝 Contributing
-
-This is an open science project. Contributions in computational biology, immunology, rheumatology, data science, and software engineering are welcome.
-
-**Areas where help is especially needed:**
-- Real molecular docking with AutoDock Vina and PDB structures
-- Additional data curation for genes, drugs, and pathways
-- scispacy integration for advanced biomedical NER
-- Multi-omics data integration (GEO expression datasets)
-- Web application / REST API layer
+The project is an open computational research platform. Contributions in computational biology, immunology, data science, software engineering, testing, and documentation are welcome. Keep source provenance explicit, preserve disease context, avoid overstating computational results, and add deterministic tests for new behavior.

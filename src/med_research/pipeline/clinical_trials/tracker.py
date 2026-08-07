@@ -79,7 +79,7 @@ MOA_KEYWORDS = {
 }
 
 
-def search_clinical_trials(query: str = "lupus OR SLE", max_results: int = 100) -> list:
+def search_clinical_trials(query: str, max_results: int = 100) -> list:
     """Search ClinicalTrials.gov API v2 for trials matching the query.
 
     Returns list of study dicts with protocolSection data.
@@ -247,11 +247,11 @@ def categorize_moa(trial: dict) -> str:
     return "Other Targeted"
 
 
-def load_kg_entities() -> dict:
-    """Load all KG genes and drugs for cross-referencing."""
+def load_kg_entities(disease_id: str = "sle") -> dict:
+    """Load disease-specific KG genes and drugs for cross-referencing."""
     genes = {}
     try:
-        genes_data = config_load_genes()
+        genes_data = config_load_genes(disease_id)
         for g in genes_data["genes"]:
             genes[g["id"]] = g
     except (FileNotFoundError, json.JSONDecodeError):
@@ -259,7 +259,7 @@ def load_kg_entities() -> dict:
 
     drugs = {}
     try:
-        drugs_data = config_load_drugs()
+        drugs_data = config_load_drugs(disease_id)
         for d in drugs_data["drugs"]:
             drugs[d["id"]] = d
     except (FileNotFoundError, json.JSONDecodeError):
@@ -284,10 +284,12 @@ def cross_reference_trials(trials: list, kg_entities: dict) -> list:
         for gene_id, gene in kg_entities["genes"].items():
             gene_name = gene["name"].lower()
             # Match by gene ID (e.g. "BTK", "JAK1") or partial name
-            if gene_id.lower() in text or any(
-                part.lower() in text for part in gene_name.split() if len(part) > 4
+            if (
+                (gene_id.lower() in text or any(
+                    part.lower() in text for part in gene_name.split() if len(part) > 4
+                ))
+                and gene_id not in [g["gene_id"] for g in matched_genes]
             ):
-                if gene_id not in [g["gene_id"] for g in matched_genes]:
                     matched_genes.append({
                         "gene_id": gene_id,
                         "gene_name": gene["name"],
@@ -297,8 +299,10 @@ def cross_reference_trials(trials: list, kg_entities: dict) -> list:
         # Match against KG drugs
         for drug_id, drug in kg_entities["drugs"].items():
             drug_name = drug["name"].lower().split("(")[0].strip()
-            if drug_name in text or drug_id in text:
-                if drug_id not in [d["drug_id"] for d in matched_drugs]:
+            if (
+                (drug_name in text or drug_id in text)
+                and drug_id not in [d["drug_id"] for d in matched_drugs]
+            ):
                     matched_drugs.append({
                         "drug_id": drug_id,
                         "drug_name": drug["name"],
@@ -319,22 +323,30 @@ def cross_reference_trials(trials: list, kg_entities: dict) -> list:
 
 
 def track_trials(
-    query: str = "lupus OR SLE",
+    query: str = "",
     max_results: int = 100,
     use_cache: bool = True,
+    disease_id: str = "sle",
 ) -> dict:
     """Run the full clinical trial tracking pipeline.
 
     Returns:
         dict with trials, stats, and kg_crossref data.
     """
+    if not query:
+        from med_research.diseases.base import Disease
+
+        query = Disease(disease_id).get_trial_query()
+
     # Load KG
     logger.info("🔄 Loading knowledge graph entities...")
-    kg_entities = load_kg_entities()
+    kg_entities = load_kg_entities(disease_id)
     logger.info(f"   Loaded {len(kg_entities['genes'])} genes, {len(kg_entities['drugs'])} drugs")
 
-    # Check cache
-    cache_path = DATA_DIR / "ct_cache.json"
+    # Cache is namespaced by disease and query so results cannot bleed across KGs.
+    import hashlib
+    query_key = hashlib.sha256(f"{disease_id}|{query}".encode()).hexdigest()[:12]
+    cache_path = DATA_DIR / f"ct_cache_{disease_id}_{query_key}.json"
     os.makedirs(DATA_DIR, exist_ok=True)
 
     if use_cache and cache_path.exists():
@@ -343,10 +355,9 @@ def track_trials(
             trials = cached.get("trials", [])
             if len(trials) >= max_results:
                 logger.info(f"📦 Loading {len(trials)} trials from cache...")
-                kg_entities_simple = {"genes": kg_entities["genes"], "drugs": kg_entities["drugs"]}
                 if "kg_crossref" in cached and cached.get("kg_crossref"):
                     trials = [dict(t) for t in trials]
-                    for i, t in enumerate(trials):
+                    for t in trials:
                         if "kg_matches" not in t:
                             t["kg_matches"] = {"genes": [], "drugs": [], "gene_count": 0, "drug_count": 0, "has_match": False}
                     return {
@@ -516,8 +527,11 @@ def main():
         help="Max trials to fetch (default: 100)",
     )
     parser.add_argument(
-        "--query", type=str, default="lupus OR SLE",
-        help="Query for ClinicalTrials.gov (default: 'lupus OR SLE')",
+        "--query", type=str, default="",
+        help="Query for ClinicalTrials.gov (default: disease config query)",
+    )
+    parser.add_argument(
+        "--disease", "-d", default="sle", help="Disease ID (default: sle)"
     )
     parser.add_argument(
         "--no-cache", action="store_true",
@@ -534,6 +548,7 @@ def main():
         query=args.query,
         max_results=args.max,
         use_cache=not args.no_cache,
+        disease_id=args.disease,
     )
 
     print_summary(results["stats"], results["kg_crossref"])
@@ -548,7 +563,7 @@ def main():
 
     if args.export_html:
         from med_research.pipeline.clinical_trials.report import generate_ct_report
-        report_path = generate_ct_report(results)
+        report_path = generate_ct_report(results, disease_id=args.disease)
         print(f"✅ HTML report generated: {report_path}")
 
     return results

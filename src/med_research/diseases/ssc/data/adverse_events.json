@@ -1,0 +1,16 @@
+{
+  "schema_version": "1",
+  "disease_id": "ssc",
+  "source": "disease_drug_safety_profile",
+  "coverage_level": "full",
+  "curated_inputs": ["disease_drug_catalog", "class_level_adverse_event_patterns"],
+  "inferred_inputs": ["class_level_mapping_for_unmatched_drugs"],
+  "limitations": ["Safety scores are research heuristics, not individualized clinical risk assessments.", "Organ involvement and dose strongly influence systemic sclerosis treatment risk."],
+  "default_profile": {"common_ae": ["fatigue", "headache", "nausea", "infection risk"], "severe_ae": ["serious infections", "hepatotoxicity", "renal or cardiac complications"], "disease_overlap_ae": ["fatigue", "skin tightening", "joint pain", "Raynaud's phenomenon"], "severity_burden": 5, "chronic_use_safety": 5, "disease_specific_risk": 0, "black_box_warnings": [], "monitoring_required": "Review blood pressure, renal, hepatic, pulmonary, and cardiovascular status.", "evidence_grade": "curated_class_pattern"},
+  "profiles": [
+    {"drug_id": "nintedanib", "common_ae": ["diarrhea", "nausea", "abdominal pain", "weight loss"], "severe_ae": ["hepatotoxicity", "bleeding", "gastrointestinal perforation"], "disease_overlap_ae": ["fatigue", "weight loss"], "severity_burden": 5, "chronic_use_safety": 6, "monitoring_required": "Liver function, gastrointestinal tolerance, bleeding and cardiovascular review."},
+    {"drug_id": "tocilizumab", "common_ae": ["upper respiratory infection", "headache", "hypertension", "injection reactions"], "severe_ae": ["serious infections", "hepatotoxicity", "cytopenias", "gastrointestinal perforation"], "disease_overlap_ae": ["fatigue", "joint pain"], "severity_burden": 6, "chronic_use_safety": 6, "monitoring_required": "CBC, liver function, lipids, infection screening, and gastrointestinal risk review."},
+    {"drug_id": "mycophenolate", "common_ae": ["diarrhea", "nausea", "vomiting", "leukopenia"], "severe_ae": ["serious infections", "malignancy", "cytopenias", "pregnancy harm"], "disease_overlap_ae": ["fatigue"], "severity_burden": 6, "chronic_use_safety": 5, "monitoring_required": "CBC, liver function, pregnancy testing, and infection monitoring."},
+    {"drug_id": "bosentan", "common_ae": ["headache", "edema", "nasal congestion", "elevated liver enzymes"], "severe_ae": ["hepatotoxicity", "anemia", "embryofetal toxicity"], "disease_overlap_ae": ["headache", "Raynaud's phenomenon"], "severity_burden": 6, "chronic_use_safety": 5, "monitoring_required": "Monthly liver function, hemoglobin, pregnancy prevention, and blood pressure review."}
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": "1",
+  "disease_id": "ra",
+  "source": "disease_drug_safety_profile",
+  "coverage_level": "full",
+  "curated_inputs": ["disease_drug_catalog", "class_level_adverse_event_patterns"],
+  "inferred_inputs": ["class_level_mapping_for_unmatched_drugs"],
+  "limitations": ["Safety scores are research heuristics, not individualized clinical risk assessments.", "Class-level defaults must be reviewed against current product labels and patient factors."],
+  "default_profile": {
+    "common_ae": ["fatigue", "nausea", "headache", "infection risk"],
+    "severe_ae": ["serious infections", "cytopenias", "hypersensitivity reactions"],
+    "disease_overlap_ae": ["fatigue", "joint pain", "arthritis"],
+    "severity_burden": 5,
+    "chronic_use_safety": 5,
+    "disease_specific_risk": 0,
+    "black_box_warnings": [],
+    "monitoring_required": "Review CBC, liver function, infection risk, and product-specific monitoring.",
+    "evidence_grade": "curated_class_pattern"
+  },
+  "profiles": [
+    {"drug_id": "methotrexate", "common_ae": ["nausea", "fatigue", "mouth sores"], "severe_ae": ["hepatotoxicity", "bone marrow suppression", "serious infections"], "disease_overlap_ae": ["fatigue"], "severity_burden": 6, "chronic_use_safety": 5, "monitoring_required": "CBC, liver function, renal function, pregnancy precautions."},
+    {"drug_id": "adalimumab", "common_ae": ["injection site reactions", "upper respiratory infection", "headache"], "severe_ae": ["serious infections", "tuberculosis reactivation", "malignancy"], "disease_overlap_ae": ["fatigue"], "severity_burden": 5, "chronic_use_safety": 6, "monitoring_required": "TB/hepatitis screening and infection monitoring."},
+    {"drug_id": "tofacitinib", "common_ae": ["upper respiratory infection", "headache", "herpes zoster", "hyperlipidemia"], "severe_ae": ["serious infections", "thrombosis", "major cardiovascular events", "malignancy"], "disease_overlap_ae": ["fatigue"], "severity_burden": 7, "chronic_use_safety": 4, "black_box_warnings": ["Serious infections, malignancy, thrombosis, and cardiovascular risk warnings."], "monitoring_required": "CBC, lipids, liver function, TB/hepatitis screening, and thrombosis risk review."},
+    {"drug_id": "prednisone", "common_ae": ["weight gain", "insomnia", "hyperglycemia", "mood changes"], "severe_ae": ["osteoporosis with fracture", "adrenal suppression", "serious infections"], "disease_overlap_ae": ["fatigue", "joint pain"], "severity_burden": 7, "chronic_use_safety": 2, "monitoring_required": "Blood pressure, glucose, bone health, infection risk, and tapering plan."}
+  ]
+}

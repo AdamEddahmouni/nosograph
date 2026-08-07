@@ -1,5 +1,63 @@
 # Changelog
 
+## [Current capabilities] — last verified 2026-08-06
+
+This section is the maintained snapshot of the live repository. Historical phase entries below are preserved for project history and describe the codebase at the time of each change; their test counts, paths, and implementation wording are not the current runtime specification.
+
+### Platform status
+
+- **Package:** `med-research` 2.0.0, Python 3.10–3.12 support, unified `med-research` / `python -m med_research.cli` entry points.
+- **Disease modules:** seven discovered modules — `sle`, `ra`, `ms`, `ss`, `ssc`, `t1d`, and `ibd` — with `python -m med_research.cli disease validate --all --strict` passing for all seven.
+- **Analysis capabilities:** disease-specific knowledge graphs, repurposing, bioinformatics, literature mining, virtual screening/docking, trials, ML prediction, synergy, safety, network pharmacology, expression, CAR-T, biomarkers, semantic search, evidence gathering/extraction, monitoring, and cross-disease analysis.
+- **Web application:** FastAPI API and vanilla JavaScript dashboard, with Celery/Redis-backed asynchronous jobs, WebSocket progress, HTTP polling fallback, saved Workspace history, comparison, trends, JSON/HTML exports, API-key middleware, and in-memory rate limiting.
+- **Evidence Workspace:** PubMed and ClinicalTrials.gov are the dashboard defaults; additional GWAS and FDA-label adapters are available in the workspace source boundary. Dossiers include source-level status, native citations, supporting/contradictory claims, explainable drug/target rankings, graph path/no-path explanations, warnings, limitations, and reproducibility fingerprints.
+- **Research-safety posture:** Workspace rankings are computational prioritization heuristics only. Outputs require source review and experimental/clinical validation and are not medical advice.
+
+### Maintained documentation
+
+- `README.md` — installation, CLI, disease validation, dashboard, Docker, and testing quick start.
+- `docs/evidence-workspace.md` — Workspace tutorial and dossier/API behavior.
+- `docs/api-reference.md` — live server routes, job lifecycle, environment variables, exports, and deployment caveats.
+- `TECHNICAL_DEBT_ISSUES.md` — historical audit with current-state qualification.
+
+### Verification snapshot
+
+The following checks were run in the current checkout:
+
+| Check | Result |
+|---|---|
+| `python -m pytest --collect-only -q` | **969 tests collected** |
+| `python -m pytest tests/test_evidence_workspace*.py -q --tb=short` | **56 passed** |
+| `python -m med_research.cli disease validate --all --strict` | **Passed: 7/7 disease modules** |
+| `python -m med_research.cli --help` | **Passed** |
+| Documentation link/content checks and `git diff --check` | **Passed** |
+
+Test counts are a verification snapshot, not a permanent contract. Re-run the commands above after changes and update this section's date/results when the maintained capability status changes.
+
+---
+
+## Historical release notes
+
+## [Evidence Workspace and documentation alignment] — 2026-08-06
+
+### Added
+
+- Evidence-to-Hypothesis Workspace documentation in `docs/evidence-workspace.md`, covering the live CLI request contract, dashboard lifecycle, dossier fields, saved-run history, comparison/trends, exports, failure semantics, and deterministic browser tests.
+- API and operations reference in `docs/api-reference.md`, generated from the current FastAPI route surface, CLI server settings, Docker Compose profiles, Celery lifecycle, environment variables, and export endpoints.
+
+### Changed
+
+- Replaced the stale v1-oriented README with current `med-research` 2.0 installation, CLI, seven-disease validation, dashboard, Workspace, testing, and Docker instructions.
+- Marked the original Workspace design records as implemented historical documents and aligned their scope with the disease-aware source adapters, provenance fingerprints, browser tests, terminal failure recovery, and exports now in the codebase.
+- Clarified the technical-debt audit's historical status so resolved migration, disease-validation, static-mount, and guarded-reload findings are not mistaken for open defects.
+
+### Verification
+
+- `python -m med_research.cli disease validate --all --strict` passed for all seven discovered disease modules.
+- The checkout collected 969 tests; the test command exit status remains authoritative over this snapshot.
+
+---
+
 ## [Phase 23] Real Molecular Docking — 2026-07-25
 
 ### Sprint Goal

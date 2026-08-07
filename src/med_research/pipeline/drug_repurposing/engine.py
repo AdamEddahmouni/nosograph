@@ -112,8 +112,8 @@ def compute_pathway_proximity(G, gene_id: str, candidate: dict) -> float:
     return candidate.get("pathway_proximity_score", 5.0)
 
 
-def identify_untargeted_genes(G) -> list:
-    """Identify lupus-associated genes with no direct drug targeting them."""
+def identify_untargeted_genes(G, disease_id: str = "sle") -> list:
+    """Identify active-disease genes with no direct drug targeting them."""
     targeted_genes = set()
     for u, v, d in G.edges(data=True):
         if d.get("type") == "TARGETS" and G.nodes[v].get("type") == "gene":
@@ -127,7 +127,8 @@ def identify_untargeted_genes(G) -> list:
                     "id": node,
                     "name": data.get("label", node),
                     "function": data.get("description", ""),
-                    "lupus_evidence": data.get("lupus_evidence", ""),
+                    "lupus_evidence": data.get("disease_evidence", data.get("lupus_evidence", "")),
+                    "disease_evidence": data.get("disease_evidence", data.get("lupus_evidence", "")),
                     "odds_ratio": data.get("odds_ratio"),
                     "category": data.get("category", ""),
                     "chromosome": data.get("chromosome", ""),
@@ -136,8 +137,9 @@ def identify_untargeted_genes(G) -> list:
 
     # Filter out drug-target genes (CD20, IMPDH, Calcineurin, Glucocorticoid Receptor)
     # These aren't lupus risk genes - they're drug targets we added
-    drug_target_genes = {"CD20", "IMPDH", "Calcineurin", "Glucocorticoid Receptor"}
-    untargeted = [g for g in untargeted if g["id"] not in drug_target_genes]
+    from med_research.diseases.base import Disease
+    excluded = Disease(disease_id).get_drug_target_exclusions()
+    untargeted = [g for g in untargeted if g["id"] not in excluded]
 
     return untargeted
 
@@ -179,10 +181,10 @@ def compute_composite_score(candidate: dict) -> float:
     return round(composite, 2)
 
 
-def score_candidates(G, candidates: list, genes: dict) -> list:
+def score_candidates(G, candidates: list, genes: dict, disease_id: str = "sle") -> list:
     """Score all repurposing candidates and compute composite scores."""
     scored = []
-    drugs = load_drugs()  # Load KG drugs for AE score matching
+    drugs = load_drugs(disease_id)  # Load active-disease drugs for AE matching
 
     for candidate in candidates:
         gene_id = candidate["gene_id"]
@@ -201,12 +203,12 @@ def score_candidates(G, candidates: list, genes: dict) -> list:
         # Compute adverse event score from profiler if available
         adverse_score = candidate.get("safety_score", 5)
         try:
-            from med_research.pipeline.adverse_events.profiler import get_drug_profile
+            from med_research.pipeline.adverse_events.profiler import compute_adverse_event_score, load_profiles
             # Match by drug ID from the KG drugs dict (same IDs as profiles)
             for drug_id, drug_data in drugs.items():
                 if drug_data.get("name", "").lower() in candidate["drug_name"].lower() or \
                    candidate["drug_name"].lower().split("(")[0].strip() in drug_data.get("name", "").lower():
-                    profile_result = get_drug_profile(drug_id)
+                    profile_result = compute_adverse_event_score(load_profiles().get(drug_id, {}), disease_id)
                     if profile_result and "composite_safety_score" in profile_result:
                         adverse_score = profile_result["composite_safety_score"]
                     break
@@ -227,7 +229,8 @@ def score_candidates(G, candidates: list, genes: dict) -> list:
                 "gene_name": gene_info.get("name", gene_id),
                 "gene_category": gene_info.get("category", ""),
                 "gene_function": gene_info.get("function", ""),
-                "gene_lupus_evidence": gene_info.get("lupus_evidence", ""),
+                "gene_lupus_evidence": gene_info.get("disease_evidence", gene_info.get("lupus_evidence", "")),
+                "gene_disease_evidence": gene_info.get("disease_evidence", gene_info.get("lupus_evidence", "")),
                 "gene_odds_ratio": gene_info.get("odds_ratio"),
             }
         )
@@ -370,14 +373,14 @@ def main():
     print(f"   Loaded {len(genes)} genes, {len(candidates)} repurposing candidates")
 
     print(f"🔄 Identifying untargeted {args.disease.upper()} genes...")
-    untargeted = identify_untargeted_genes(G)
+    untargeted = identify_untargeted_genes(G, args.disease)
     untargeted_ids = {g["id"] for g in untargeted}
     print(f"   Found {len(untargeted)} untargeted lupus genes:")
     for g in untargeted:
         print(f"     • {g['name']} ({g['id']}) — {g.get('category', '')}")
 
     print("🔄 Scoring candidates...")
-    scored = score_candidates(G, candidates, genes)
+    scored = score_candidates(G, candidates, genes, disease_id=args.disease)
 
     # Filter to only candidates for actually untargeted genes
     scored = [c for c in scored if c["gene_id"] in untargeted_ids]
@@ -392,7 +395,7 @@ def main():
 
     if args.export_html:
         from med_research.pipeline.drug_repurposing.report import generate_html_report
-        generate_html_report(scored, untargeted, genes, G)
+        generate_html_report(scored, untargeted, genes, G, disease_id=args.disease)
         print("\n✅ HTML report generated: drug_repurposing/report.html")
 
     return scored

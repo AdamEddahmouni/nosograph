@@ -74,7 +74,7 @@ def build_graph(disease_id: str = "sle") -> nx.MultiDiGraph:
             drug["id"],
             type="drug",
             label=drug["name"],
-            description=drug["mechanism"],
+            description=drug.get("mechanism", ""),
             drug_type=drug.get("type", ""),
             target=drug.get("target", ""),
             approval=drug.get("approval", ""),
@@ -94,14 +94,41 @@ def build_graph(disease_id: str = "sle") -> nx.MultiDiGraph:
 
     rels_data = load_relationships(disease_id)
     for rel in rels_data["relationships"]:
-        if rel["source"] in G and rel["target"] in G:
-            G.add_edge(
-                rel["source"],
-                rel["target"],
-                key=rel["type"],
-                type=rel["type"],
-                description=rel.get("description", ""),
-            )
+        source = rel["source"]
+        target = rel["target"]
+        rel_type = rel["type"]
+
+        # Relationship files may intentionally name assay targets or pathway
+        # components that are not full disease-gene records.  Keep those
+        # curated relationships visible as inferred endpoint nodes instead of
+        # silently dropping them and under-reporting graph coverage.
+        endpoint_types = {
+            "TARGETS": ("drug", "gene"),
+            "ASSOCIATED_WITH": ("gene", "disease"),
+            "PARTICIPATES_IN": ("gene", "pathway"),
+            "DRIVES": ("pathway", "disease"),
+            "TREATS": ("drug", "disease"),
+            "MODULATES": ("drug", "pathway"),
+        }
+        source_type, target_type = endpoint_types.get(rel_type, ("unknown", "unknown"))
+        for endpoint, endpoint_type in ((source, source_type), (target, target_type)):
+            if endpoint not in G:
+                G.add_node(
+                    endpoint,
+                    type=endpoint_type,
+                    label=endpoint,
+                    description="Endpoint declared by the disease relationship catalog.",
+                    disease_id=disease_id,
+                    inferred_from_relationship=True,
+                )
+
+        G.add_edge(
+            source,
+            target,
+            key=rel_type,
+            type=rel_type,
+            description=rel.get("description", ""),
+        )
 
     return G
 

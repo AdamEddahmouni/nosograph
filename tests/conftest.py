@@ -21,6 +21,14 @@ PROJECT_ROOT = Path(__file__).parent.parent
 DR_DATA_DIR = PROJECT_ROOT / "src" / "med_research" / "pipeline" / "drug_repurposing" / "data"
 
 
+@pytest.hookimpl(hookwrapper=True)
+def pytest_runtest_makereport(item, call):
+    """Expose phase reports to fixtures that need failure diagnostics."""
+    outcome = yield
+    report = outcome.get_result()
+    setattr(item, f"rep_{report.when}", report)
+
+
 def pytest_collection_modifyitems(items):
     """Auto-classify tests: every test that is not marked slow or integration
     is a unit test. This keeps `make test-unit` / `make test-integration`
@@ -37,6 +45,7 @@ def pytest_collection_modifyitems(items):
 @pytest.fixture(scope="session")
 def kg_data_dir():
     from med_research.pipeline.knowledge_graph.config import _resolve
+
     return _resolve("sle")
 
 
@@ -49,6 +58,7 @@ def dr_data_dir():
 def sample_graph():
     """Build a fresh knowledge graph for testing."""
     from med_research.pipeline.knowledge_graph.builder import build_graph
+
     return build_graph()
 
 

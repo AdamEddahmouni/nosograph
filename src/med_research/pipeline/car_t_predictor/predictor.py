@@ -29,6 +29,7 @@ if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 DATA_DIR = Path(__file__).parent / "data"
+last_coverage = None
 
 from med_research.pipeline.knowledge_graph.config import load_genes as config_load_genes
 
@@ -38,9 +39,9 @@ def load_json(path: Path) -> dict:
         return json.load(f)
 
 
-def load_genes() -> dict:
-    """Load all genes indexed by gene ID."""
-    data = config_load_genes()
+def load_genes(disease_id: str = "sle") -> dict:
+    """Load all genes for a disease indexed by gene ID."""
+    data = config_load_genes(disease_id)
     return {g["id"]: g for g in data["genes"]}
 
 
@@ -137,16 +138,151 @@ CAR_T_EVIDENCE = {
 }
 
 
-def score_gene(gene_id: str, gene: dict) -> dict:
+# Dimension keys used by dimension-keyed disease configs (e.g. SLE).
+_DIMENSION_KEYS = {
+    "b_cell": "B_CELL_DEPENDENCY",
+    "auto_ab": "AUTOANTIBODY_ASSOCIATION",
+    "plasma": "PLASMA_CELL_RELEVANCE",
+    "cd19": "CD19_TARGETING",
+    "evidence": "CAR_T_EVIDENCE",
+}
+
+
+def _category_dimension_weights(category: str) -> dict:
+    """Map a category label to per-dimension weights (0-1) by keyword semantics.
+
+    Used for category-keyed disease configs (e.g. RA: {"B Cell Signaling":
+    {"BLK": 9.0, ...}}). A gene's dimension score = its category score scaled
+    by the category's B-cell relevance, so non-SLE rubrics actually differ.
+    Returns a dict keyed by the _DIMENSION_KEYS dimensions, so callers can
+    zip safely without positional-order coupling.
+    """
+    c = (category or "").lower()
+    weights = {"b_cell": 0.4, "auto_ab": 0.4, "plasma": 0.3,
+               "cd19": 0.4, "evidence": 0.4}
+
+    if any(k in c for k in ("b cell", "b-cell", "germinal", "plasma",
+                            "baff", "tfh", "bcr", "b lymphocyte", "antibody")):
+        weights["b_cell"] = 0.9
+        weights["cd19"] = 0.85
+        weights["evidence"] = 0.7
+    if any(k in c for k in ("autoantibody", "antibody", "humoral",
+                            "immunoglobulin", "igg", "igm", "dsdna")):
+        weights["auto_ab"] = 0.9
+    if any(k in c for k in ("plasma cell", "plasma-cell", "long-lived",
+                            "germinal center", "survival")):
+        weights["plasma"] = 0.9
+    if any(k in c for k in ("t cell", "t-cell", "cytokine", "th1", "th17",
+                            "innate", "macrophage", "neutrophil", "epithelial",
+                            "barrier", "microbiome")) and weights["b_cell"] < 0.8:
+        weights["b_cell"] = 0.2
+
+    return weights
+
+
+def load_config_scoring(disease_id: str = "sle") -> dict:
+    """Load per-disease CAR-T scoring dicts from the disease config.
+
+    Returns a dict of the five scoring sub-dicts (B_CELL_DEPENDENCY,
+    AUTOANTIBODY_ASSOCIATION, PLASMA_CELL_RELEVANCE, CD19_TARGETING,
+    CAR_T_EVIDENCE), with the disease config's values merged over the
+    hardcoded defaults.
+
+    Supports both config shapes:
+      * dimension-keyed (SLE): {"B_CELL_DEPENDENCY": {...}, ...}
+      * category-keyed (RA, MS, IBD, SS, SSc, T1D): {"B Cell Signaling":
+        {"BLK": 9.0, ...}, ...} — dimension scores are derived from each
+        category's B-cell semantics and the gene's category score.
+    An empty disease configuration produces an empty override; callers must
+    enforce module coverage before using this compatibility helper.
+    """
+    from med_research.diseases.base import Disease
+
+    try:
+        config = Disease(disease_id).get_car_t_scores()
+    except (ValueError, OSError, TypeError):
+        config = {}
+
+    def merge(defaults: dict, overrides: dict) -> dict:
+        merged = dict(defaults)
+        if isinstance(overrides, dict):
+            merged.update(overrides)
+        return merged
+
+    if not isinstance(config, dict):
+        config = {}
+
+    # Dimension-keyed entries (may coexist with category-keyed ones).
+    dim_overrides = {dim: config.get(key, {}) for dim, key in _DIMENSION_KEYS.items()}
+    has_dimension_keys = any(isinstance(v, dict) and v for v in dim_overrides.values())
+
+    # Category-keyed entries: derive per-gene dimension scores.
+    derived = {dim: {} for dim in _DIMENSION_KEYS}
+    for category, gene_scores in config.items():
+        if category in _DIMENSION_KEYS.values() or not isinstance(gene_scores, dict):
+            continue
+        weights = _category_dimension_weights(category)
+        for gene_id, score in gene_scores.items():
+            if not isinstance(score, (int, float)):
+                continue
+            for dim, w in weights.items():
+                val = min(10.0, round(w * score, 1))
+                if val > derived[dim].get(gene_id, 0.0):
+                    derived[dim][gene_id] = val
+
+    if not has_dimension_keys:
+        dim_overrides = derived
+    else:
+        # Prefer explicit dimension values, fill gaps from category derivation.
+        for dim in dim_overrides:
+            for gene_id, val in derived[dim].items():
+                dim_overrides[dim].setdefault(gene_id, val)
+
+    if disease_id == "sle":
+        return {
+            "b_cell": merge(B_CELL_DEPENDENCY, dim_overrides["b_cell"]),
+            "auto_ab": merge(AUTOANTIBODY_ASSOCIATION, dim_overrides["auto_ab"]),
+            "plasma": merge(PLASMA_CELL_RELEVANCE, dim_overrides["plasma"]),
+            "cd19": merge(CD19_TARGETING, dim_overrides["cd19"]),
+            "evidence": merge(CAR_T_EVIDENCE, dim_overrides["evidence"]),
+        }
+    # Non-SLE modules must use only the active disease's configured rubric.
+    # Missing gene/dimension entries are handled as neutral rubric values by
+    # score_gene; they never inherit the SLE dictionaries.
+    return {dim: dict(values) for dim, values in dim_overrides.items()}
+
+
+def score_gene(
+    gene_id: str,
+    gene: dict,
+    scoring: dict | None = None,
+    disease_id: str = "sle",
+) -> dict:
     """Score a single gene for CAR-T therapy suitability.
+
+    Args:
+        gene_id: Gene identifier.
+        gene: Gene metadata dict.
+        scoring: Optional dict of the five scoring sub-dicts (as returned by
+            load_config_scoring). Defaults to the hardcoded SLE rubric only
+            for SLE; non-SLE callers must pass an active disease rubric.
 
     Returns dict with individual scores and composite score.
     """
-    b_cell = B_CELL_DEPENDENCY.get(gene_id, 3.0)
-    auto_ab = AUTOANTIBODY_ASSOCIATION.get(gene_id, 3.0)
-    plasma = PLASMA_CELL_RELEVANCE.get(gene_id, 3.0)
-    cd19 = CD19_TARGETING.get(gene_id, 3.0)
-    evidence = CAR_T_EVIDENCE.get(gene_id, 2.0)
+    if scoring is None and disease_id != "sle":
+        raise ValueError("non-SLE CAR-T scoring requires an explicit disease rubric")
+    scoring = scoring or {
+        "b_cell": B_CELL_DEPENDENCY,
+        "auto_ab": AUTOANTIBODY_ASSOCIATION,
+        "plasma": PLASMA_CELL_RELEVANCE,
+        "cd19": CD19_TARGETING,
+        "evidence": CAR_T_EVIDENCE,
+    }
+    b_cell = scoring["b_cell"].get(gene_id, 3.0)
+    auto_ab = scoring["auto_ab"].get(gene_id, 3.0)
+    plasma = scoring["plasma"].get(gene_id, 3.0)
+    cd19 = scoring["cd19"].get(gene_id, 3.0)
+    evidence = scoring["evidence"].get(gene_id, 2.0)
 
     weights = {
         "b_cell_dependency": 0.35,
@@ -168,8 +304,10 @@ def score_gene(gene_id: str, gene: dict) -> dict:
         "gene_id": gene_id,
         "gene_name": gene.get("name", gene_id),
         "category": gene.get("category", ""),
+        "disease_id": gene.get("disease_id", "sle"),
         "function": gene.get("function", "")[:200],
-        "lupus_evidence": gene.get("lupus_evidence", "")[:200],
+        "disease_evidence": gene.get("disease_evidence", "")[:200],
+        "lupus_evidence": gene.get("disease_evidence", gene.get("lupus_evidence", ""))[:200],
         "odds_ratio": gene.get("odds_ratio"),
         "b_cell_dependency": round(b_cell, 1),
         "autoantibody_association": round(auto_ab, 1),
@@ -202,22 +340,39 @@ def _recommendation(score: float) -> str:
     return "Limited direct CAR-T benefit. Pathway not primarily B-cell-driven. Consider alternative therapies."
 
 
-def compute_all_scores(progress_callback=None) -> list:
-    """Score all 35 lupus genes for CAR-T suitability.
+def compute_all_scores(progress_callback=None, disease_id: str = "sle") -> list:
+    """Score all genes for CAR-T suitability.
+
+    Args:
+        progress_callback: Optional callable(percent, message) for progress.
+        disease_id: Disease whose CAR_T_SCORES config is used (defaults to
+            the hardcoded SLE rubric, which matches the SLE config exactly).
 
     Returns list of scored genes sorted by composite score descending.
     """
     cb = progress_callback or (lambda p, m: None)
 
+    from med_research.diseases.coverage import module_coverage
+
+    coverage = module_coverage(disease_id, "car_t", ("genes", "car_t_scores"))
+    global last_coverage
+    last_coverage = coverage
+    if not coverage.is_runnable:
+        cb(100, f"CAR-T analysis blocked: {', '.join(coverage.missing_inputs)}")
+        return []
+
     cb(0, "Loading gene database...")
-    genes = load_genes()
+    genes = load_genes(disease_id)
+    for gene in genes.values():
+        gene["disease_id"] = disease_id
+    scoring = load_config_scoring(disease_id)
 
     cb(10, f"Scoring {len(genes)} genes for CAR-T suitability...")
     results = []
     for i, (gene_id, gene) in enumerate(genes.items()):
         if i % 5 == 0:
             cb(10 + int(i / len(genes) * 75), f"Scoring {gene_id}...")
-        results.append(score_gene(gene_id, gene))
+        results.append(score_gene(gene_id, gene, scoring, disease_id=disease_id))
 
     results.sort(key=lambda x: x["composite_score"], reverse=True)
 
@@ -227,6 +382,7 @@ def compute_all_scores(progress_callback=None) -> list:
     output_path.write_text(json.dumps({
         "genes": results,
         "total_genes": len(results),
+        "coverage": coverage.to_dict(),
     }, indent=2), encoding="utf-8")
 
     cb(100, f"Results saved to {output_path}")
@@ -283,16 +439,17 @@ def main():
         description="CAR-T Response Predictor — Score lupus genes for CD19 CAR-T suitability"
     )
     parser.add_argument("--top", type=int, default=15, help="Number of top genes to display")
+    parser.add_argument("--disease", "-d", default="sle", help="Disease ID")
     parser.add_argument("--export-html", action="store_true", help="Generate HTML report")
     args = parser.parse_args()
 
-    results = compute_all_scores()
+    results = compute_all_scores(disease_id=args.disease)
     analyze(results)
     print_top_genes(results, args.top)
 
     if args.export_html:
         from med_research.pipeline.car_t_predictor.report import generate_html_report
-        generate_html_report(results)
+        generate_html_report(results, disease_id=args.disease)
         print("\n✅ HTML report generated: car_t_predictor/report.html")
 
     return results

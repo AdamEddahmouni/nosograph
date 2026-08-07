@@ -39,7 +39,10 @@ def test_engine_initialization():
 def test_load_articles_uses_cache(tmp_path, monkeypatch):
     import json
 
-    monkeypatch.setattr("med_research.pipeline.semantic_search.engine.PUBMED_CACHE", tmp_path / "pubmed_cache.json")
+    import med_research.pipeline.semantic_search.engine as engine_mod
+    # SLE without a per-disease cache falls back to the legacy shared cache
+    # under LIT_DATA_DIR, so point it at a temp dir and write there.
+    monkeypatch.setattr(engine_mod, "LIT_DATA_DIR", tmp_path)
     test_articles = [
         {"pmid": "123", "title": "Test Article", "abstract": "Test abstract text", "year": "2024", "journal": "Test J"},
     ]
@@ -51,17 +54,140 @@ def test_load_articles_uses_cache(tmp_path, monkeypatch):
     assert articles[0]["pmid"] == "123"
 
 
-def test_load_articles_missing_cache():
+def test_load_articles_missing_cache(tmp_path, monkeypatch):
+    import med_research.pipeline.semantic_search.engine as engine_mod
+    # Point the data dir at an empty temp dir so no cache is found
+    monkeypatch.setattr(engine_mod, "LIT_DATA_DIR", tmp_path)
     engine = SemanticSearchEngine()
-    # Mock PUBMED_CACHE to non-existent path
-    import semantic_search.engine as e
-    original = e.PUBMED_CACHE
-    e.PUBMED_CACHE = Path("/nonexistent/cache.json")
+    articles = engine.load_articles()
+    assert articles == []
+
+
+# ---- Disease threading ----
+
+def test_engine_accepts_disease_id():
+    engine = SemanticSearchEngine(disease_id="ra")
+    assert engine.disease_id == "ra"
+    assert engine.collection_name == "pubmed_abstracts_ra"
+
+
+def test_collection_name_legacy_for_sle():
+    engine = SemanticSearchEngine(disease_id="sle")
+    assert engine.collection_name == "pubmed_abstracts"
+
+
+def test_cache_path_per_disease(tmp_path, monkeypatch):
+    """Non-SLE diseases always resolve their per-disease cache."""
+    import med_research.pipeline.semantic_search.engine as engine_mod
+
+    monkeypatch.setattr(engine_mod, "LIT_DATA_DIR", tmp_path)
+    # Legacy shared cache exists, but RA must NOT fall back to it
+    (tmp_path / "pubmed_cache.json").write_text("[]")
+    engine = SemanticSearchEngine(disease_id="ra")
+    assert engine._cache_path() == tmp_path / "pubmed_cache_ra.json"
+
+
+def test_cache_path_legacy_fallback_for_sle(tmp_path, monkeypatch):
+    """SLE falls back to the legacy shared cache when no per-disease cache exists."""
+    import med_research.pipeline.semantic_search.engine as engine_mod
+
+    monkeypatch.setattr(engine_mod, "LIT_DATA_DIR", tmp_path)
+    engine = SemanticSearchEngine(disease_id="sle")
+    # Legacy cache is resolved from the same absolute LIT_DATA_DIR
+    assert engine._cache_path() == tmp_path / "pubmed_cache.json"
+
+
+def test_cache_path_sle_prefers_per_disease(tmp_path, monkeypatch):
+    """SLE uses its per-disease cache when one exists."""
+    import med_research.pipeline.semantic_search.engine as engine_mod
+
+    monkeypatch.setattr(engine_mod, "LIT_DATA_DIR", tmp_path)
+    (tmp_path / "pubmed_cache_sle.json").write_text("[]")
+    legacy = tmp_path / "legacy_pubmed_cache.json"
+    legacy.write_text("[]")
+    monkeypatch.setattr(engine_mod, "PUBMED_CACHE", legacy)
+    engine = SemanticSearchEngine(disease_id="sle")
+    assert engine._cache_path() == tmp_path / "pubmed_cache_sle.json"
+
+
+def test_load_articles_reads_per_disease_cache(tmp_path, monkeypatch):
+    """load_articles reads the disease-specific cache file."""
+    import json
+
+    import med_research.pipeline.semantic_search.engine as engine_mod
+
+    monkeypatch.setattr(engine_mod, "LIT_DATA_DIR", tmp_path)
+    articles = [{"pmid": "9", "title": "RA article", "abstract": "RA abstract"}]
+    (tmp_path / "pubmed_cache_ra.json").write_text(json.dumps(articles))
+
+    engine = SemanticSearchEngine(disease_id="ra")
+    loaded = engine.load_articles()
+    assert len(loaded) == 1
+    assert loaded[0]["pmid"] == "9"
+
+
+def test_search_uses_per_disease_collection(tmp_path, monkeypatch):
+    """search/get_indexed_count look up the disease-specific collection."""
+    import med_research.pipeline.semantic_search.engine as engine_mod
+
+    monkeypatch.setattr(engine_mod, "CHROMA_DIR", tmp_path / "chroma")
+    engine = SemanticSearchEngine(disease_id="ra")
+
+    looked_up = []
+
+    class FakeCollection:
+        def count(self):
+            return 3
+
+        def query(self, **kwargs):
+            return {"ids": [[]], "metadatas": None, "distances": None}
+
+    class FakeClient:
+        def get_collection(self, name):
+            looked_up.append(name)
+            return FakeCollection()
+
+    monkeypatch.setattr(engine_mod.chromadb, "PersistentClient", lambda path: FakeClient())
+    # Avoid loading the embedding model just to verify collection lookup
+    class FakeModel:
+        def encode(self, text):
+            return type("Vec", (), {"tolist": lambda self: [0.1] * 4})()
+    engine.model = FakeModel()
+    monkeypatch.setattr(SemanticSearchEngine, "_load_model", lambda self: None)
+    assert engine.get_indexed_count() == 3
+    engine.collection = None  # search() re-resolves its own collection
+    assert engine.search("jak inhibitors", top_k=5) == []
+    assert looked_up == ["pubmed_abstracts_ra", "pubmed_abstracts_ra"]
+
+
+def test_run_semantic_search_accepts_disease_id(tmp_path, monkeypatch):
+    """Web service passes disease_id into the engine."""
+    import med_research.pipeline.semantic_search.engine as engine_mod
+    from med_research.pipeline.semantic_search.engine import SemanticSearchEngine
+    from med_research.web.services.semantic_service import run_semantic_search
+
+    # Redirect Chroma to an empty temp dir so get_indexed_count() returns 0
+    # without touching the real index.
+    monkeypatch.setattr(engine_mod, "CHROMA_DIR", tmp_path / "chroma")
+
+    original = SemanticSearchEngine.__init__
+    captured = {}
+
+    def fake_init(self, model_name="all-MiniLM-L6-v2", disease_id="sle"):
+        captured["disease_id"] = disease_id
+        self.model_name = model_name
+        self.disease_id = disease_id
+        self.model = None
+        self.client = None
+        self.collection = None
+        self._articles = []
+
+    SemanticSearchEngine.__init__ = fake_init
     try:
-        articles = engine.load_articles()
-        assert articles == []
+        run_semantic_search("btk inhibitors", top_k=3, disease_id="ibd")
+        assert captured["disease_id"] == "ibd"
     finally:
-        e.PUBMED_CACHE = original
+        SemanticSearchEngine.__init__ = original
 
 
 # ---- Index & Search (requires sentence-transformers + chromadb) ----
@@ -83,7 +209,7 @@ def test_index_and_search(tmp_path, monkeypatch):
 
     cache_path = tmp_path / "pubmed_cache.json"
     cache_path.write_text(json.dumps(test_articles))
-    monkeypatch.setattr("med_research.pipeline.semantic_search.engine.PUBMED_CACHE", cache_path)
+    monkeypatch.setattr("med_research.pipeline.semantic_search.engine.LIT_DATA_DIR", tmp_path)
     monkeypatch.setattr("med_research.pipeline.semantic_search.engine.CHROMA_DIR", tmp_path / "chroma")
 
     engine = SemanticSearchEngine()
@@ -133,18 +259,16 @@ def test_generate_semantic_report():
 # ---- API Service ----
 
 @pytest.mark.slow
-def test_run_semantic_search_empty_collection():
+def test_run_semantic_search_empty_collection(tmp_path, monkeypatch):
     """Search without indexed collection returns empty results."""
-    import semantic_search.engine as e
-    original = e.CHROMA_DIR
-    e.CHROMA_DIR = Path("/nonexistent/semantic_chroma_test")
-    try:
-        from med_research.web.services.semantic_service import run_semantic_search
-        result = run_semantic_search("lupus treatment", top_k=5)
-        assert result["query"] == "lupus treatment"
-        assert result["total_results"] == 0
-    finally:
-        e.CHROMA_DIR = original
+    import med_research.pipeline.semantic_search.engine as engine_mod
+    # Patch the module the service actually imports (the top-level
+    # `semantic_search.engine` alias is a separate module object).
+    monkeypatch.setattr(engine_mod, "CHROMA_DIR", tmp_path / "no_index")
+    from med_research.web.services.semantic_service import run_semantic_search
+    result = run_semantic_search("lupus treatment", top_k=5)
+    assert result["query"] == "lupus treatment"
+    assert result["total_results"] == 0
 
 
 # ---- CLI ----

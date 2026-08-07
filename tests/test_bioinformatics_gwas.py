@@ -183,3 +183,17 @@ class TestExtractGeneAssociations:
         result = extract_gene_associations([])
         for key in ["gene_associations", "total_studies_analyzed", "total_associations", "study_details"]:
             assert key in result
+
+    def test_disease_search_terms_resolution(self):
+        from med_research.pipeline.bioinformatics.gwas import (
+            SLE_SEARCH_TERMS,
+            disease_search_terms,
+        )
+
+        # RA reads its own GWAS_SEARCH_TERMS config
+        ra = disease_search_terms("ra")
+        assert "rheumatoid arthritis" in ra
+        assert "RA" in ra
+
+        # Unknown disease has no valid search scope and must not query SLE.
+        assert disease_search_terms("no_such_disease") == []

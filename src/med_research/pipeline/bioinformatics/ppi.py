@@ -48,9 +48,9 @@ DEFAULT_SPECIES = 9606  # Homo sapiens
 DEFAULT_CONFIDENCE = 0.4  # Medium confidence
 
 
-def load_genes() -> dict:
-    """Load lupus genes from the knowledge graph."""
-    data = load_kg_genes()
+def load_genes(disease_id: str = "sle") -> dict:
+    """Load a disease's genes from the knowledge graph."""
+    data = load_kg_genes(disease_id)
     return {g["id"]: g for g in data["genes"]}
 
 
@@ -480,10 +480,13 @@ def main():
         action="store_true",
         help="Skip cache, re-fetch PPI network from STRING",
     )
+    parser.add_argument(
+        "--disease", "-d", default="sle", help="Disease ID (default: sle)"
+    )
     args = parser.parse_args()
 
     print("🔄 Loading gene and candidate data...")
-    genes = load_genes()
+    genes = load_genes(args.disease)
     gene_symbols = get_gene_symbols(genes)
     print(f"   Loaded {len(gene_symbols)} lupus gene symbols")
 
@@ -558,7 +561,7 @@ def main():
         from med_research.pipeline.bioinformatics.report import generate_bioinformatics_report
 
         report_path = generate_bioinformatics_report(
-            None, None, None, hub_scores, crossref, graph_data
+            None, None, None, hub_scores, crossref, graph_data, disease_id=args.disease
         )
         print(f"\n✅ Report generated: {report_path}")
 

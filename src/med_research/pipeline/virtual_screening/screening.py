@@ -40,6 +40,9 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
+# The legacy SLE repurposing cache lives beside the pipeline modules.  Keep
+# this path scoped to the SLE compatibility branch; non-SLE scoring never
+# consults it.
 PROJECT_ROOT = Path(__file__).parent.parent
 DATA_DIR = Path(__file__).parent / "data"
 
@@ -178,25 +181,25 @@ _DRUG_PROPERTIES = {
 }
 
 
-def load_kg_genes() -> dict:
+def load_kg_genes(disease_id: str = "sle") -> dict:
     """Load gene data indexed by gene ID."""
-    data = config_load_genes()
+    data = config_load_genes(disease_id)
     return {g["id"]: g for g in data["genes"]}
 
 
-def load_kg_drugs() -> dict:
+def load_kg_drugs(disease_id: str = "sle") -> dict:
     """Load drug data indexed by drug ID."""
-    data = config_load_drugs()
+    data = config_load_drugs(disease_id)
     return {d["id"]: d for d in data["drugs"]}
 
 
-def build_compound_library() -> list:
+def build_compound_library(disease_id: str = "sle") -> list:
     """Build a compound library from KG drugs with RDKit-computed or estimated properties.
 
     If RDKit is available, computes MW, LogP, HBD, HBA, RotB, TPSA from SMILES.
     Otherwise falls back to estimated properties for biologics and small molecules.
     """
-    drugs = load_kg_drugs()
+    drugs = load_kg_drugs(disease_id)
     library = []
 
     for drug_id, drug_info in drugs.items():
@@ -268,69 +271,95 @@ def compute_druglikeness(compound: dict) -> float:
     return round(min(10.0, score), 1)
 
 
-def compute_target_complementarity(compound: dict, gene_info: dict) -> float:
+def compute_target_complementarity(
+    compound: dict,
+    gene_info: dict,
+    disease_id: str = "sle",
+    strategy=None,
+) -> float:
+    """Score disease-strategy vocabulary overlap with target biology.
+
+    This remains a bounded heuristic.  The optional strategy argument avoids
+    repeatedly resolving configuration inside the screening loop while the
+    disease_id default preserves legacy callers.
     """
-    Score how well a compound's mechanism matches the target gene's biology.
+    if strategy is None:
+        from med_research.pipeline.virtual_screening.screening_strategy import strategy_for_disease
+        strategy = strategy_for_disease(disease_id)
 
-    Uses category matching and mechanism text overlap.
-    """
-    gene_category = gene_info.get("category", "").lower()
-    gene_function = gene_info.get("function", "").lower()
-    drug_mechanism = compound.get("mechanism", "").lower()
-    drug_target = compound.get("target", "").lower()
-    drug_category = compound.get("category", "").lower()
+    def _text(value: object) -> str:
+        return " ".join(str(value or "").lower().replace("/", " ").split())
 
-    score = 2.0  # baseline
+    gene_category = _text(gene_info.get("category"))
+    gene_function = _text(gene_info.get("function"))
+    gene_name = _text(gene_info.get("name"))
+    gene_text = f"{gene_category} {gene_function} {gene_name}"
+    drug_text = " ".join(
+        _text(compound.get(field))
+        for field in ("mechanism", "target", "category")
+    )
 
-    # Category overlap
-    category_keywords = {
-        "b cell signaling": ["b cell", "btk", "cd20", "bcr"],
-        "jak-stat signaling": ["jak", "stat", "tyk2", "cytokine"],
-        "type i interferon pathway": ["interferon", "ifn", "ifnar", "tlr"],
-        "nf-κb pathway": ["nf-κb", "nfkb", "proteasome"],
-        "t cell signaling": ["t cell", "calcineurin", "nfat", "cd4"],
-        "innate immune sensing": ["tlr", "innate", "sensor"],
-        "immune complex clearance": ["fc receptor", "fcrn", "immune complex"],
-    }
+    score = 2.0
+    pathway_hits = sum(1 for keyword in strategy.pathway_keywords if _text(keyword) in gene_text)
+    mechanism_hits = sum(1 for keyword in strategy.mechanism_keywords if _text(keyword) in drug_text)
+    score += min(pathway_hits * 1.0, 3.0)
+    score += min(mechanism_hits * 1.0, 4.0)
 
-    for pathway_cat, keywords in category_keywords.items():
-        if pathway_cat in gene_category:
-            for kw in keywords:
-                if kw in drug_mechanism or kw in drug_target or kw in drug_category:
-                    score += 3.0
-                    break
-            break
-
-    # Mechanism-to-function text overlap (simple keyword matching)
-    function_keywords = gene_function.replace(",", " ").split()
-    mechanism_words = set(drug_mechanism.replace(",", " ").split())
-    overlap = len([w for w in function_keywords if len(w) > 4 and w in mechanism_words])
-    score += min(overlap * 1.5, 5.0)
-
+    function_words = {word for word in gene_function.split() if len(word) > 4}
+    mechanism_words = set(drug_text.split())
+    score += min(len(function_words & mechanism_words) * 1.5, 3.0)
     return round(min(10.0, score), 1)
 
 
-def compute_similarity_score(compound: dict, gene_info: dict) -> float:
+def compute_similarity_score(compound: dict, gene_info: dict, disease_id: str = "sle", strategy=None) -> float:
     """
-    Estimate molecular similarity to known SLE drugs for this target.
+    Estimate molecular similarity to known drugs for this disease/target.
 
-    Based on property similarity (MW, LogP) and mechanism overlap.
+    Based on the active disease's reference drugs, property similarity, and
+    mechanism overlap. The shared legacy candidate file is consulted only for
+    backwards-compatible SLE calls; non-SLE scoring is strictly disease-scoped.
     """
+    if strategy is None:
+        from med_research.pipeline.virtual_screening.screening_strategy import strategy_for_disease
+        strategy = strategy_for_disease(disease_id)
+
     # Find known drugs targeting this gene or pathway
     gene_id = gene_info.get("id", "")
-    try:
-        candidates_data = json.loads(
-            (PROJECT_ROOT / "drug_repurposing" / "data" / "candidates.json")
-            .read_text(encoding="utf-8")
-        )
-        existing_candidates = candidates_data.get("repurposing_candidates", [])
-    except (FileNotFoundError, json.JSONDecodeError):
-        existing_candidates = []
-
-    same_gene_candidates = [
-        c for c in existing_candidates
-        if c.get("gene_id") == gene_id
-    ]
+    if disease_id == "sle":
+        # Preserve the legacy SLE candidate behavior for existing callers;
+        # non-SLE diseases never read this shared SLE-only dataset.
+        try:
+            candidates_data = json.loads(
+                (PROJECT_ROOT / "drug_repurposing" / "data" / "candidates.json")
+                .read_text(encoding="utf-8")
+            )
+            existing_candidates = candidates_data.get("repurposing_candidates", [])
+        except (FileNotFoundError, json.JSONDecodeError):
+            existing_candidates = []
+        same_gene_candidates = [
+            {
+                "name": c.get("drug_name", ""),
+                "category": c.get("drug_category", ""),
+            }
+            for c in existing_candidates
+            if c.get("gene_id") == gene_id
+        ]
+    else:
+        # A direct score without a compound ID cannot match a curated
+        # reference, so remain neutral without reading any catalog.
+        if not compound.get("id"):
+            return 3.0
+        # Compare only against the active disease's curated reference library.
+        # The shared SLE candidate cache is never read in this branch.
+        active_drugs = load_kg_drugs(disease_id)
+        same_gene_candidates = [
+            drug for drug_id, drug in active_drugs.items()
+            if drug_id in strategy.reference_drug_ids
+            and gene_id
+            and gene_id.lower() in " ".join(
+                str(drug.get(field, "")) for field in ("target", "mechanism", "category")
+            ).lower()
+        ]
 
     if not same_gene_candidates:
         return 3.0  # no known reference — neutral
@@ -338,13 +367,13 @@ def compute_similarity_score(compound: dict, gene_info: dict) -> float:
     # Higher score if this compound is one of the candidates
     compound_name = compound.get("name", "").lower()
     for c in same_gene_candidates:
-        if c.get("drug_name", "").lower().split("(")[0].strip() in compound_name:
+        if c.get("name", "").lower().split("(")[0].strip() in compound_name:
             return 8.0  # this compound IS a known candidate for this gene
 
     # Compound type similarity
     compound_category = compound.get("category", "").lower()
     for c in same_gene_candidates:
-        candidate_cat = c.get("drug_category", "").lower()
+        candidate_cat = c.get("category", "").lower()
         # Simple category overlap
         if compound_category and candidate_cat:
             cat_words_a = set(compound_category.split())
@@ -404,22 +433,29 @@ def compute_binding_estimate(compound: dict, gene_info: dict) -> float:
     return round(max(0.0, min(10.0, score)), 1)
 
 
-def compute_novelty_score(compound: dict, gene_info: dict) -> float:
+def compute_novelty_score(compound: dict, gene_info: dict, disease_id: str = "sle", strategy=None) -> float:
     """
     Score how novel this compound-target pairing is.
 
-    Already-approved SLE drugs get low novelty.
+    Already-approved drugs for the active disease get low novelty.
     Investigational or off-label drugs get high novelty.
     """
+    if strategy is None:
+        from med_research.pipeline.virtual_screening.screening_strategy import strategy_for_disease
+        strategy = strategy_for_disease(disease_id)
+
     compound_category = compound.get("category", "").lower()
 
     if "approved" in compound_category or "standard of care" in compound_category:
-        if "sle" in compound_category or "lupus" in compound_category:
-            return 2.0  # already used in SLE
-        return 4.0  # approved for other diseases
+        from med_research.diseases.base import Disease
+        disease_name = Disease(disease_id).profile.name.lower()
+        disease_terms = {disease_id.lower(), disease_name}
+        if any(term in compound_category for term in disease_terms):
+            return 2.0
+        return 4.0
 
     if "investigational" in compound_category or "phase" in compound_category:
-        return 8.0  # novel for SLE
+        return 8.0
 
     if "off-label" in compound_category:
         return 7.0
@@ -427,17 +463,20 @@ def compute_novelty_score(compound: dict, gene_info: dict) -> float:
     return 5.0
 
 
-def compute_composite_score(scores: dict) -> float:
-    """Compute weighted composite score from individual dimension scores."""
-    weights = {
-        "binding_estimate": 0.30,
-        "druglikeness": 0.20,
-        "target_complementarity": 0.25,
-        "similarity_score": 0.15,
-        "novelty_score": 0.10,
-    }
-    composite = sum(scores[k] * weights[k] for k in weights)
-    return round(composite, 2)
+def compute_composite_score(scores: dict, weights: dict | None = None) -> float:
+    """Compute a bounded weighted composite score."""
+    if weights is None:
+        weights = {
+            "binding_estimate": 0.30,
+            "druglikeness": 0.20,
+            "target_complementarity": 0.25,
+            "similarity_score": 0.15,
+            "novelty_score": 0.10,
+        }
+    from med_research.pipeline.virtual_screening.screening_strategy import normalized_weights
+    weights = normalized_weights(weights)
+    composite = sum(float(scores[key]) * weights[key] for key in weights)
+    return round(max(0.0, min(10.0, composite)), 2)
 
 
 # ═══════════════════════════════════════════════════════════════════════
@@ -511,6 +550,7 @@ def screen_compounds(
     compound_library: list = None,
     top_n: int = 15,
     use_vina: bool = False,
+    disease_id: str = "sle",
 ) -> dict:
     """
     Run virtual screening of all compounds against all target genes.
@@ -520,15 +560,68 @@ def screen_compounds(
         compound_library: Pre-built compound library (None = auto-build)
         top_n: Number of top results per target
         use_vina: Attempt AutoDock Vina docking
+        disease_id: Disease whose KG genes/drugs are screened.
 
     Returns:
         dict with screening_results, targets, library, stats
     """
-    if compound_library is None:
-        compound_library = build_compound_library()
+    from med_research.diseases.coverage import module_coverage
 
-    all_genes = load_kg_genes()
-    untargeted_genes = get_untargeted_genes()
+    coverage = module_coverage(
+        disease_id,
+        "screening",
+        ("genes", "drugs", "pathways", "screening_profile"),
+    )
+    try:
+        from med_research.pipeline.virtual_screening.screening_strategy import (
+            strategy_for_disease,
+            strategy_fingerprint,
+        )
+        strategy = strategy_for_disease(disease_id)
+        strategy_id = strategy.strategy_id
+        strategy_hash = strategy_fingerprint(strategy)
+    except (ValueError, OSError, KeyError, TypeError) as exc:
+        coverage = coverage.__class__(
+            disease_id=disease_id,
+            module="screening",
+            level="unsupported",
+            status="blocked",
+            curated_inputs=list(coverage.curated_inputs),
+            missing_inputs=["screening_profile"],
+            limitations=[f"Screening strategy is invalid: {exc}"],
+        )
+        strategy = None
+        strategy_id = ""
+        strategy_hash = ""
+    if not coverage.is_runnable:
+        return {
+            "results_per_target": {},
+            "all_results": [],
+            "target_genes": [],
+            "compound_library": [],
+            "coverage": coverage.to_dict(),
+            "status": "blocked",
+            "disease_id": disease_id,
+            "strategy_id": strategy_id,
+            "strategy_fingerprint": strategy_hash,
+            "strategy_limitations": list(strategy.limitations) if strategy else [],
+            "stats": {
+                "targets_screened": 0,
+                "compounds_screened": 0,
+                "total_pairings": 0,
+                "tier1_count": 0,
+                "tier2_count": 0,
+                "vina_available": False,
+                "rdkit_available": _check_rdkit(),
+                "vina_status": get_vina_status(),
+            },
+        }
+
+    if compound_library is None:
+        compound_library = build_compound_library(disease_id)
+
+    all_genes = load_kg_genes(disease_id)
+    untargeted_genes = get_untargeted_genes(disease_id)
 
     if target_genes:
         gene_ids = [g for g in target_genes if g in all_genes]
@@ -549,11 +642,17 @@ def screen_compounds(
             scores = {
                 "binding_estimate": compute_binding_estimate(compound, gene_info),
                 "druglikeness": compute_druglikeness(compound),
-                "target_complementarity": compute_target_complementarity(compound, gene_info),
-                "similarity_score": compute_similarity_score(compound, gene_info),
-                "novelty_score": compute_novelty_score(compound, gene_info),
+                "target_complementarity": compute_target_complementarity(
+                    compound, gene_info, disease_id, strategy
+                ),
+                "similarity_score": compute_similarity_score(
+                    compound, gene_info, disease_id, strategy
+                ),
+                "novelty_score": compute_novelty_score(
+                    compound, gene_info, disease_id, strategy
+                ),
             }
-            composite = compute_composite_score(scores)
+            composite = compute_composite_score(scores, strategy.weights)
 
             result = {
                 **compound,
@@ -562,6 +661,9 @@ def screen_compounds(
                 "gene_id": gene_id,
                 "gene_name": gene_info.get("name", gene_id),
                 "gene_category": gene_info.get("category", ""),
+                "disease_id": disease_id,
+                "strategy_id": strategy_id,
+                "strategy_fingerprint": strategy_hash,
             }
 
             # Assign tier
@@ -624,7 +726,7 @@ def screen_compounds(
                             "target_complementarity": compound["target_complementarity"],
                             "similarity_score": compound["similarity_score"],
                             "novelty_score": compound["novelty_score"],
-                        })
+                        }, strategy.weights)
                         # Reassign tier
                         if compound["composite_score"] >= 7.5:
                             compound["tier"] = "🔴 Tier 1 — Strong Candidate"
@@ -661,6 +763,12 @@ def screen_compounds(
         "all_results": all_scored,
         "target_genes": gene_ids,
         "compound_library": compound_library,
+        "coverage": coverage.to_dict(),
+        "status": "ready" if coverage.level == "full" else "limited_coverage",
+        "disease_id": disease_id,
+        "strategy_id": strategy_id,
+        "strategy_fingerprint": strategy_hash,
+        "strategy_limitations": list(strategy.limitations),
         "stats": {
             "targets_screened": len(gene_ids),
             "compounds_screened": len(compound_library),
@@ -675,18 +783,18 @@ def screen_compounds(
     }
 
 
-def get_untargeted_genes() -> list:
-    """Identify lupus genes with no direct targeted therapy in the KG."""
+def get_untargeted_genes(disease_id: str = "sle") -> list:
+    """Identify genes with no direct targeted therapy in a disease's KG."""
     try:
         from med_research.pipeline.knowledge_graph.builder import build_graph
-        G = build_graph()
+        G = build_graph(disease_id)
 
         targeted = set()
         for _u, v, d in G.edges(data=True):
             if d.get("type") == "TARGETS" and G.nodes[v].get("type") == "gene":
                 targeted.add(v)
 
-        all_genes = load_kg_genes()
+        all_genes = load_kg_genes(disease_id)
         untargeted = []
         for gene_id, gene_info in all_genes.items():
             if gene_id not in targeted:
@@ -697,9 +805,11 @@ def get_untargeted_genes() -> list:
                     "function": gene_info.get("function", ""),
                 })
 
-        # Filter out non-lupus-risk genes
-        drug_target_genes = {"CD20", "IMPDH", "Calcineurin", "Glucocorticoid Receptor"}
-        untargeted = [g for g in untargeted if g["id"] not in drug_target_genes]
+        # Exclude assay targets only when the active disease explicitly marks
+        # them as non-disease genes.
+        from med_research.diseases.base import Disease
+        excluded = Disease(disease_id).get_drug_target_exclusions()
+        untargeted = [g for g in untargeted if g["id"] not in excluded]
 
         return untargeted
     except Exception as e:
@@ -715,6 +825,11 @@ def print_summary(results: dict):
     """Print a summary of virtual screening results."""
     stats = results["stats"]
 
+    if results.get("status") == "blocked":
+        coverage = results.get("coverage", {})
+        print(f"\n❌ Virtual screening blocked: {coverage.get('limitations', ['missing disease-specific strategy'])[0]}")
+        return
+
     print("\n" + "=" * 70)
     print("🔬 VIRTUAL DRUG SCREENING RESULTS")
     print("=" * 70)
@@ -726,6 +841,8 @@ def print_summary(results: dict):
     print(f"  Tier 2 candidates:       {stats['tier2_count']} (6.5-7.4)")
     print(f"  AutoDock Vina:           {stats['vina_status']}")
     print(f"  RDKit:                   {'available' if stats['rdkit_available'] else 'not available'}")
+    if results.get("strategy_id"):
+        print(f"  Strategy:                {results['strategy_id']} ({results.get('strategy_fingerprint', '')[:16]}…)")
 
     # Top results per target
     print("\n  📋 Top compound per target:")
@@ -770,14 +887,25 @@ def main():
         "--use-vina", action="store_true",
         help="Run AutoDock Vina docking (requires Vina binary)",
     )
+    parser.add_argument(
+        "--disease", "-d", default="sle",
+        help="Disease ID (default: sle)",
+    )
     args = parser.parse_args()
 
-    print("🔄 Building compound library...")
-    library = build_compound_library()
+    print(f"🔄 Building compound library ({args.disease})...")
+    from med_research.pipeline.virtual_screening.screening_strategy import strategy_for_disease
+    try:
+        strategy_for_disease(args.disease)
+    except (ValueError, OSError, KeyError, TypeError) as exc:
+        print(f"❌ Screening blocked for {args.disease}: {exc}")
+        return 1
+
+    library = build_compound_library(args.disease)
     print(f"   {len(library)} compounds loaded")
 
-    print("🔄 Identifying untargeted lupus genes...")
-    untargeted = get_untargeted_genes()
+    print(f"🔄 Identifying untargeted {args.disease} genes...")
+    untargeted = get_untargeted_genes(args.disease)
     target_ids = [g["id"] for g in untargeted]
     print(f"   {len(untargeted)} untargeted genes identified")
 
@@ -791,6 +919,7 @@ def main():
         compound_library=library,
         top_n=args.top,
         use_vina=args.use_vina,
+        disease_id=args.disease,
     )
 
     print_summary(results)
@@ -806,11 +935,12 @@ def main():
 
     if args.export_html:
         from med_research.pipeline.virtual_screening.report import generate_screening_report
-        report_path = generate_screening_report(results)
+        report_path = generate_screening_report(results, disease_id=args.disease)
         print(f"✅ HTML report generated: {report_path}")
 
     return results
 
 
 if __name__ == "__main__":
-    results = main()
+    result = main()
+    sys.exit(0 if isinstance(result, dict) else result)

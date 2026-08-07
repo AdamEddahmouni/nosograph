@@ -1,0 +1,16 @@
+{
+  "schema_version": "1",
+  "disease_id": "t1d",
+  "source": "disease_drug_safety_profile",
+  "coverage_level": "full",
+  "curated_inputs": ["disease_drug_catalog", "class_level_adverse_event_patterns"],
+  "inferred_inputs": ["class_level_mapping_for_unmatched_drugs"],
+  "limitations": ["Safety scores are research heuristics, not individualized clinical risk assessments.", "Insulin and glucose-lowering risks depend heavily on dose, meals, monitoring, and patient context."],
+  "default_profile": {"common_ae": ["fatigue", "headache", "injection site reactions", "infection risk"], "severe_ae": ["severe hypoglycemia", "serious infections", "hypersensitivity reactions"], "disease_overlap_ae": ["fatigue", "weight loss", "blurred vision"], "severity_burden": 5, "chronic_use_safety": 5, "disease_specific_risk": 0, "black_box_warnings": [], "monitoring_required": "Review glucose, hypoglycemia, infection, and product-specific monitoring.", "evidence_grade": "curated_class_pattern"},
+  "profiles": [
+    {"drug_id": "insulin_glargine", "common_ae": ["hypoglycemia", "injection site reactions", "weight gain", "edema"], "severe_ae": ["severe hypoglycemia", "hypokalemia", "hypersensitivity"], "disease_overlap_ae": ["fatigue", "blurred vision"], "severity_burden": 6, "chronic_use_safety": 8, "disease_specific_risk": 1, "monitoring_required": "Glucose and hypoglycemia monitoring with dose adjustment."},
+    {"drug_id": "teplizumab", "common_ae": ["rash", "headache", "lymphopenia", "nausea"], "severe_ae": ["cytokine release syndrome", "serious infections", "severe lymphopenia", "hypersensitivity"], "disease_overlap_ae": ["fatigue", "weight loss"], "severity_burden": 7, "chronic_use_safety": 5, "monitoring_required": "CBC, liver function, infection screening, and infusion monitoring."},
+    {"drug_id": "abatacept", "common_ae": ["headache", "upper respiratory infection", "nausea", "infusion reactions"], "severe_ae": ["serious infections", "hypersensitivity", "malignancy"], "disease_overlap_ae": ["fatigue"], "severity_burden": 5, "chronic_use_safety": 6, "monitoring_required": "Infection screening and monitoring; T1D use is investigational."},
+    {"drug_id": "rituximab", "common_ae": ["infusion reactions", "fever", "chills", "fatigue"], "severe_ae": ["serious infections", "hepatitis B reactivation", "progressive multifocal leukoencephalopathy"], "disease_overlap_ae": ["fatigue"], "severity_burden": 7, "chronic_use_safety": 5, "monitoring_required": "Hepatitis B screening, CBC, immunoglobulins, and infection monitoring."}
+  ]
+}

@@ -1,7 +1,7 @@
 {% extends "base.html" %}
-{% block title %}Lupus Bioinformatics Report{% endblock %}
+{% block title %}{% if ctx_disease == 'Lupus (SLE)' %}Lupus{% else %}{{ ctx_disease }}{% endif %} Bioinformatics Report{% endblock %}
 
-{% block hero_title %}🔬 Lupus Bioinformatics Report{% endblock %}
+{% block hero_title %}🔬 {% if ctx_disease == 'Lupus (SLE)' %}Lupus{% else %}{{ ctx_disease }}{% endif %} Bioinformatics Report{% endblock %}
 {% block hero_subtitle %}
     Integrative Analysis: Pathway Enrichment · Protein-Protein Interactions · GWAS Annotation
 {% endblock %}
@@ -90,7 +90,7 @@
 {% endblock %}
 
 {% block footer_text %}
-Lupus Bioinformatics Platform · Powered by GSEApy, STRING, and NHGRI-EBI GWAS Catalog
+{{ ctx_disease }} Bioinformatics Platform · Powered by GSEApy, STRING, and NHGRI-EBI GWAS Catalog
 {% endblock %}
 
 {% block footer_links %}

@@ -320,6 +320,42 @@ def test_score_drug_pairs_single_drug():
     assert pairs == []
 
 
+# ── Disease threading ───────────────────────────────────────────────────
+
+
+def test_load_drugs_threads_disease(monkeypatch):
+    import med_research.pipeline.drug_synergy.engine as engine
+
+    captured = {}
+
+    def fake_config_load_drugs(disease_id="sle"):
+        captured["disease_id"] = disease_id
+        return {"drugs": [{"id": "baricitinib", "name": "Baricitinib"}]}
+
+    monkeypatch.setattr(engine, "config_load_drugs", fake_config_load_drugs)
+    drugs = engine.load_drugs("ra")
+    assert captured["disease_id"] == "ra"
+    assert "baricitinib" in drugs
+
+
+def test_compute_synergy_threads_disease(monkeypatch):
+    import med_research.pipeline.drug_synergy.engine as engine
+
+    captured = {}
+
+    def fake_load_drugs(disease_id="sle"):
+        captured["disease_id"] = disease_id
+        return {
+            "d1": {"id": "d1", "name": "Drug A", "target": "T1", "type": "Small Molecule"},
+            "d2": {"id": "d2", "name": "Drug B", "target": "T2", "type": "Monoclonal Antibody"},
+        }
+
+    monkeypatch.setattr(engine, "load_drugs", fake_load_drugs)
+    pairs = engine.compute_synergy(disease_id="ibd")
+    assert captured["disease_id"] == "ibd"
+    assert len(pairs) == 1  # single pair from 2 drugs
+
+
 # ── Integration: compute_synergy ──────────────────────────────────────────
 
 
@@ -343,15 +379,24 @@ def test_compute_synergy_ranked():
 @pytest.mark.slow
 def test_compute_synergy_saves_json(tmp_path, monkeypatch):
     """Verify that compute_synergy saves results to JSON."""
-    monkeypatch.setattr(
-        "drug_synergy.engine.DATA_DIR",
-        tmp_path,
-    )
+    import med_research.pipeline.drug_synergy.engine as engine_mod
+    monkeypatch.setattr(engine_mod, "DATA_DIR", tmp_path)
     pairs = compute_synergy()
     json_path = tmp_path / "synergy_results.json"
     assert json_path.exists()
     data = json.loads(json_path.read_text())
     assert data["total_pairs"] == len(pairs)
+
+
+def test_compute_synergy_save_false_skips_write(tmp_path, monkeypatch):
+    """save=False must not write the shared synergy_results.json."""
+    import med_research.pipeline.drug_synergy.engine as engine_mod
+    monkeypatch.setattr(engine_mod, "DATA_DIR", tmp_path)
+    compute_synergy(save=False)
+    assert not (tmp_path / "synergy_results.json").exists()
+    # And save=True still writes
+    compute_synergy(save=True)
+    assert (tmp_path / "synergy_results.json").exists()
 
 
 @pytest.mark.slow
@@ -422,11 +467,12 @@ def test_synergy_cli_help():
     result = subprocess.run(
         [sys.executable, "main.py", "synergy", "--help"],
         capture_output=True,
-        text=True,
+        text=True, encoding="utf-8", errors="replace",
         cwd=str(Path(__file__).parent.parent),
     )
     assert result.returncode == 0
-    assert "Predict synergistic drug combinations" in result.stdout
+    assert "synergy" in result.stdout.lower()
+    assert "--disease" in result.stdout
 
 
 @pytest.mark.slow
@@ -436,7 +482,7 @@ def test_synergy_cli_top():
     result = subprocess.run(
         [sys.executable, "main.py", "synergy", "--top", "5"],
         capture_output=True,
-        text=True,
+        text=True, encoding="utf-8", errors="replace",
         cwd=str(Path(__file__).parent.parent),
         timeout=30,
     )

@@ -110,3 +110,26 @@ DRUG_INDUCED_LUPUS_RISK = {
         "iloprost",
     ],
 }
+
+# ── Clinical trials / GWAS search terms ────────────────────────────────
+TRIAL_QUERY = "systemic sclerosis OR scleroderma OR SSc"
+GWAS_SEARCH_TERMS = [
+    "systemic sclerosis",
+    "scleroderma",
+    "SSc",
+]
+
+# Compatibility alias retained for older callers; neutral name is authoritative.
+DISEASE_SPECIFIC_RISK = DRUG_INDUCED_LUPUS_RISK
+
+SCREENING_PROFILE = {
+    "strategy_id": "ssc-screening-v1",
+    "pathway_keywords": ["tgf", "fibrosis", "endothelin", "vasculopathy", "il-6", "jak-stat", "b cell", "tlr"],
+    "mechanism_keywords": ["tgf", "fibrosis", "endothelin", "pde5", "il-6", "jak", "cd20", "b cell", "tlr", "antifibrotic"],
+    "reference_drug_ids": ["nintedanib", "tocilizumab", "mycophenolate", "bosentan", "sildenafil", "rituximab"],
+    "weights": {"binding_estimate": 0.25, "druglikeness": 0.15, "target_complementarity": 0.35, "similarity_score": 0.15, "novelty_score": 0.10},
+    "source": "curated_ssc_knowledge_graph",
+    "curated_inputs": ["pathways", "drugs", "screening_strategy"],
+    "inferred_inputs": ["mechanism_keyword_matching", "property_based_binding_estimate"],
+    "limitations": ["Property scores are heuristic prioritization signals and do not establish systemic sclerosis efficacy."],
+}

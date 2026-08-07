@@ -101,20 +101,43 @@
             .hero { padding: 24px; }
             .hero h1 { font-size: 1.4rem; }
         }
-    </style>
+
+    /* ── Print / PDF export ─────────────────────────────────────── */
+    @media print {
+        * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        body { background: #ffffff !important; color: #111827 !important; }
+        .hero, .container, .table-container, .stat-card, .match-card,
+        .hit-card, .chart-card, .methodology, .method-card, .vina-box,
+        .target-section, .kg-explorer, .cd-card {
+            background: #ffffff !important; color: #111827 !important;
+            border-color: #d1d5db !important; box-shadow: none !important;
+        }
+        h1, h2, h3, h4, th { color: #111827 !important; }
+        .subtitle, .muted, footer, .stat-label, .hit-count, .target-category,
+        .target-mean, .vina-note, .rel-desc { color: #4b5563 !important; }
+        table { border-collapse: collapse; width: 100%; }
+        th { background: #f3f4f6 !important; }
+        td, th { border: 1px solid #d1d5db !important; }
+        a { color: #2563eb !important; text-decoration: none; }
+        .stat-card, .match-card, .hit-card { break-inside: avoid; }
+        .section-title { border-bottom-color: #d1d5db !important; }
+        footer { border-top-color: #d1d5db !important; }
+        @page { margin: 1.5cm; }
+    }
+</style>
 </head>
 <body>
     <div class="container">
 
         <div class="hero">
-            <h1>🛡️ Adverse Event Profiling Report</h1>
-            <p class="subtitle">Safety Analysis of 26 Drugs from the Lupus Knowledge Graph &mdash; 4-Dimensional Safety Scoring</p>
-            <p class="date">Generated: July 25, 2026 at 19:20 | Lupus-Specific Safety Assessment</p>
+            <h1>\U0001f6e1\ufe0f Adverse Event Profiling Report</h1>
+            <p class="subtitle">Safety Analysis of 26 Drugs from the Lupus (SLE) Knowledge Graph &mdash; 4-Dimensional Safety Scoring</p>
+            <p class="date">Generated: August 06, 2026 at 21:16 | Lupus (SLE)-Specific Safety Assessment</p>
         </div>
 
         <div class="stats-grid">
             <div class="stat-card">
-                <div class="stat-value" style="color:#4ade80;">7.0</div>
+                <div class="stat-value" style="color:#4ade80;">6.7</div>
                 <div class="stat-label">Average Safety Score</div>
             </div>
             <div class="stat-card">
@@ -123,7 +146,7 @@
             </div>
             <div class="stat-card">
                 <div class="stat-value" style="color:#fbbf24;">3</div>
-                <div class="stat-label">Drugs with DIL Risk</div>
+                <div class="stat-label">Drugs with Disease-Specific Risk</div>
             </div>
             <div class="stat-card">
                 <div class="stat-value" style="color:#818cf8;">26</div>
@@ -131,112 +154,112 @@
             </div>
         </div>
 
-        <h2 class="section-title">🏆 Top 10 Safest Drugs</h2>
+        <h2 class="section-title">\U0001f3c6 Top 10 Safest Drugs</h2>
         <div class="highlights-grid">
                     <div class="highlight-card">
             <div class="hl-rank">#1</div>
-            <div class="hl-drug">Litifilimab (Anti-BDCA2 / BIIB059)</div>
-            <div class="hl-score" style="color:#4ade80;">8.7</div>
-            <div class="hl-dims">
-                <span class="hl-dim">Lupus Overlap: 10.0</span>
-                <span class="hl-dim">Severity: 8.0</span>
-                <span class="hl-dim">Chronic: 7.0</span>
-                <span class="hl-dim">DIL: 10.0</span>
-            </div>
-        </div>        <div class="highlight-card">
-            <div class="hl-rank">#2</div>
-            <div class="hl-drug">Belimumab (Benlysta)</div>
-            <div class="hl-score" style="color:#4ade80;">8.6</div>
-            <div class="hl-dims">
-                <span class="hl-dim">Lupus Overlap: 10.0</span>
-                <span class="hl-dim">Severity: 7.0</span>
-                <span class="hl-dim">Chronic: 8.0</span>
-                <span class="hl-dim">DIL: 10.0</span>
-            </div>
-        </div>        <div class="highlight-card">
-            <div class="hl-rank">#3</div>
             <div class="hl-drug">Anifrolumab (Saphnelo)</div>
             <div class="hl-score" style="color:#4ade80;">8.6</div>
             <div class="hl-dims">
-                <span class="hl-dim">Lupus Overlap: 10.0</span>
+                <span class="hl-dim">Disease Overlap: 10.0</span>
                 <span class="hl-dim">Severity: 7.0</span>
                 <span class="hl-dim">Chronic: 8.0</span>
-                <span class="hl-dim">DIL: 10.0</span>
+                <span class="hl-dim">Disease Risk: 10.0</span>
             </div>
         </div>        <div class="highlight-card">
-            <div class="hl-rank">#4</div>
+            <div class="hl-rank">#2</div>
             <div class="hl-drug">Hydroxychloroquine (Plaquenil)</div>
             <div class="hl-score" style="color:#4ade80;">8.4</div>
             <div class="hl-dims">
-                <span class="hl-dim">Lupus Overlap: 8.0</span>
+                <span class="hl-dim">Disease Overlap: 8.0</span>
                 <span class="hl-dim">Severity: 8.0</span>
                 <span class="hl-dim">Chronic: 9.0</span>
-                <span class="hl-dim">DIL: 10.0</span>
+                <span class="hl-dim">Disease Risk: 10.0</span>
+            </div>
+        </div>        <div class="highlight-card">
+            <div class="hl-rank">#3</div>
+            <div class="hl-drug">Litifilimab (Anti-BDCA2 / BIIB059)</div>
+            <div class="hl-score" style="color:#4ade80;">8.0</div>
+            <div class="hl-dims">
+                <span class="hl-dim">Disease Overlap: 8.0</span>
+                <span class="hl-dim">Severity: 8.0</span>
+                <span class="hl-dim">Chronic: 7.0</span>
+                <span class="hl-dim">Disease Risk: 10.0</span>
+            </div>
+        </div>        <div class="highlight-card">
+            <div class="hl-rank">#4</div>
+            <div class="hl-drug">Belimumab (Benlysta)</div>
+            <div class="hl-score" style="color:#4ade80;">7.9</div>
+            <div class="hl-dims">
+                <span class="hl-dim">Disease Overlap: 8.0</span>
+                <span class="hl-dim">Severity: 7.0</span>
+                <span class="hl-dim">Chronic: 8.0</span>
+                <span class="hl-dim">Disease Risk: 10.0</span>
             </div>
         </div>        <div class="highlight-card">
             <div class="hl-rank">#5</div>
             <div class="hl-drug">Iscalimab (CFZ533 / anti-CD40)</div>
-            <div class="hl-score" style="color:#4ade80;">8.3</div>
+            <div class="hl-score" style="color:#4ade80;">7.7</div>
             <div class="hl-dims">
-                <span class="hl-dim">Lupus Overlap: 10.0</span>
+                <span class="hl-dim">Disease Overlap: 8.0</span>
                 <span class="hl-dim">Severity: 7.0</span>
                 <span class="hl-dim">Chronic: 7.0</span>
-                <span class="hl-dim">DIL: 10.0</span>
+                <span class="hl-dim">Disease Risk: 10.0</span>
             </div>
         </div>        <div class="highlight-card">
             <div class="hl-rank">#6</div>
             <div class="hl-drug">Rozanolixizumab (Rystiggo)</div>
-            <div class="hl-score" style="color:#4ade80;">8.3</div>
+            <div class="hl-score" style="color:#4ade80;">7.7</div>
             <div class="hl-dims">
-                <span class="hl-dim">Lupus Overlap: 10.0</span>
+                <span class="hl-dim">Disease Overlap: 8.0</span>
                 <span class="hl-dim">Severity: 7.0</span>
                 <span class="hl-dim">Chronic: 7.0</span>
-                <span class="hl-dim">DIL: 10.0</span>
+                <span class="hl-dim">Disease Risk: 10.0</span>
             </div>
         </div>        <div class="highlight-card">
             <div class="hl-rank">#7</div>
             <div class="hl-drug">Deucravacitinib (Sotyktu)</div>
-            <div class="hl-score" style="color:#4ade80;">8.3</div>
+            <div class="hl-score" style="color:#4ade80;">7.7</div>
             <div class="hl-dims">
-                <span class="hl-dim">Lupus Overlap: 10.0</span>
+                <span class="hl-dim">Disease Overlap: 8.0</span>
                 <span class="hl-dim">Severity: 7.0</span>
                 <span class="hl-dim">Chronic: 7.0</span>
-                <span class="hl-dim">DIL: 10.0</span>
+                <span class="hl-dim">Disease Risk: 10.0</span>
             </div>
         </div>        <div class="highlight-card">
             <div class="hl-rank">#8</div>
             <div class="hl-drug">Dapirolizumab Pegol (Anti-CD40L Fab-PEG)</div>
-            <div class="hl-score" style="color:#4ade80;">8.3</div>
+            <div class="hl-score" style="color:#4ade80;">7.7</div>
             <div class="hl-dims">
-                <span class="hl-dim">Lupus Overlap: 10.0</span>
+                <span class="hl-dim">Disease Overlap: 8.0</span>
                 <span class="hl-dim">Severity: 7.0</span>
                 <span class="hl-dim">Chronic: 7.0</span>
-                <span class="hl-dim">DIL: 10.0</span>
+                <span class="hl-dim">Disease Risk: 10.0</span>
             </div>
         </div>        <div class="highlight-card">
             <div class="hl-rank">#9</div>
-            <div class="hl-drug">Ravulizumab (Ultomiris)</div>
-            <div class="hl-score" style="color:#4ade80;">8.0</div>
-            <div class="hl-dims">
-                <span class="hl-dim">Lupus Overlap: 10.0</span>
-                <span class="hl-dim">Severity: 5.0</span>
-                <span class="hl-dim">Chronic: 8.0</span>
-                <span class="hl-dim">DIL: 10.0</span>
-            </div>
-        </div>        <div class="highlight-card">
-            <div class="hl-rank">#10</div>
             <div class="hl-drug">Baricitinib (Olumiant)</div>
             <div class="hl-score" style="color:#4ade80;">7.5</div>
             <div class="hl-dims">
-                <span class="hl-dim">Lupus Overlap: 10.0</span>
+                <span class="hl-dim">Disease Overlap: 10.0</span>
                 <span class="hl-dim">Severity: 5.0</span>
                 <span class="hl-dim">Chronic: 6.0</span>
-                <span class="hl-dim">DIL: 10.0</span>
+                <span class="hl-dim">Disease Risk: 10.0</span>
+            </div>
+        </div>        <div class="highlight-card">
+            <div class="hl-rank">#10</div>
+            <div class="hl-drug">Dimethyl Fumarate (Tecfidera)</div>
+            <div class="hl-score" style="color:#4ade80;">7.3</div>
+            <div class="hl-dims">
+                <span class="hl-dim">Disease Overlap: 8.0</span>
+                <span class="hl-dim">Severity: 6.0</span>
+                <span class="hl-dim">Chronic: 7.0</span>
+                <span class="hl-dim">Disease Risk: 10.0</span>
             </div>
         </div>
         </div>
 
-        <h2 class="section-title">📊 Complete Safety Rankings</h2>
+        <h2 class="section-title">\U0001f4ca Complete Safety Rankings</h2>
         <div class="table-container">
             <table>
                 <thead>
@@ -244,10 +267,10 @@
                         <th>#</th>
                         <th>Drug</th>
                         <th>Safety Score</th>
-                        <th>Lupus Overlap</th>
+                        <th>Disease Overlap</th>
                         <th>Severity</th>
                         <th>Chronic Use</th>
-                        <th>DIL Risk</th>
+                        <th>Disease-Specific Risk</th>
                         <th>Overlap AEs</th>
                         <th>BBW</th>
                     </tr>
@@ -255,26 +278,6 @@
                 <tbody>
                             <tr>
             <td class="rank">1</td>
-            <td><strong>Litifilimab (Anti-BDCA2 / BIIB059)</strong></td>
-            <td><span style="color:#4ade80;font-weight:700;font-size:1.1em;">8.7</span></td>
-            <td>10.0/10</td>
-            <td>8.0/10</td>
-            <td>7.0/10</td>
-            <td>10.0/10</td>
-            <td>0</td>
-            <td></td>
-        </tr>        <tr>
-            <td class="rank">2</td>
-            <td><strong>Belimumab (Benlysta)</strong></td>
-            <td><span style="color:#4ade80;font-weight:700;font-size:1.1em;">8.6</span></td>
-            <td>10.0/10</td>
-            <td>7.0/10</td>
-            <td>8.0/10</td>
-            <td>10.0/10</td>
-            <td>0</td>
-            <td></td>
-        </tr>        <tr>
-            <td class="rank">3</td>
             <td><strong>Anifrolumab (Saphnelo)</strong></td>
             <td><span style="color:#4ade80;font-weight:700;font-size:1.1em;">8.6</span></td>
             <td>10.0/10</td>
@@ -284,7 +287,7 @@
             <td>0</td>
             <td></td>
         </tr>        <tr>
-            <td class="rank">4</td>
+            <td class="rank">2</td>
             <td><strong>Hydroxychloroquine (Plaquenil)</strong></td>
             <td><span style="color:#4ade80;font-weight:700;font-size:1.1em;">8.4</span></td>
             <td>8.0/10</td>
@@ -294,57 +297,67 @@
             <td>1</td>
             <td></td>
         </tr>        <tr>
+            <td class="rank">3</td>
+            <td><strong>Litifilimab (Anti-BDCA2 / BIIB059)</strong></td>
+            <td><span style="color:#4ade80;font-weight:700;font-size:1.1em;">8.0</span></td>
+            <td>8.0/10</td>
+            <td>8.0/10</td>
+            <td>7.0/10</td>
+            <td>10.0/10</td>
+            <td>1</td>
+            <td></td>
+        </tr>        <tr>
+            <td class="rank">4</td>
+            <td><strong>Belimumab (Benlysta)</strong></td>
+            <td><span style="color:#4ade80;font-weight:700;font-size:1.1em;">7.9</span></td>
+            <td>8.0/10</td>
+            <td>7.0/10</td>
+            <td>8.0/10</td>
+            <td>10.0/10</td>
+            <td>1</td>
+            <td></td>
+        </tr>        <tr>
             <td class="rank">5</td>
             <td><strong>Iscalimab (CFZ533 / anti-CD40)</strong></td>
-            <td><span style="color:#4ade80;font-weight:700;font-size:1.1em;">8.3</span></td>
-            <td>10.0/10</td>
+            <td><span style="color:#4ade80;font-weight:700;font-size:1.1em;">7.7</span></td>
+            <td>8.0/10</td>
             <td>7.0/10</td>
             <td>7.0/10</td>
             <td>10.0/10</td>
-            <td>0</td>
+            <td>1</td>
             <td></td>
         </tr>        <tr>
             <td class="rank">6</td>
             <td><strong>Rozanolixizumab (Rystiggo)</strong></td>
-            <td><span style="color:#4ade80;font-weight:700;font-size:1.1em;">8.3</span></td>
-            <td>10.0/10</td>
+            <td><span style="color:#4ade80;font-weight:700;font-size:1.1em;">7.7</span></td>
+            <td>8.0/10</td>
             <td>7.0/10</td>
             <td>7.0/10</td>
             <td>10.0/10</td>
-            <td>0</td>
+            <td>1</td>
             <td></td>
         </tr>        <tr>
             <td class="rank">7</td>
             <td><strong>Deucravacitinib (Sotyktu)</strong></td>
-            <td><span style="color:#4ade80;font-weight:700;font-size:1.1em;">8.3</span></td>
-            <td>10.0/10</td>
+            <td><span style="color:#4ade80;font-weight:700;font-size:1.1em;">7.7</span></td>
+            <td>8.0/10</td>
             <td>7.0/10</td>
             <td>7.0/10</td>
             <td>10.0/10</td>
-            <td>0</td>
+            <td>1</td>
             <td></td>
         </tr>        <tr>
             <td class="rank">8</td>
             <td><strong>Dapirolizumab Pegol (Anti-CD40L Fab-PEG)</strong></td>
-            <td><span style="color:#4ade80;font-weight:700;font-size:1.1em;">8.3</span></td>
-            <td>10.0/10</td>
+            <td><span style="color:#4ade80;font-weight:700;font-size:1.1em;">7.7</span></td>
+            <td>8.0/10</td>
             <td>7.0/10</td>
             <td>7.0/10</td>
             <td>10.0/10</td>
-            <td>0</td>
+            <td>1</td>
             <td></td>
         </tr>        <tr>
             <td class="rank">9</td>
-            <td><strong>Ravulizumab (Ultomiris)</strong></td>
-            <td><span style="color:#4ade80;font-weight:700;font-size:1.1em;">8.0</span></td>
-            <td>10.0/10</td>
-            <td>5.0/10</td>
-            <td>8.0/10</td>
-            <td>10.0/10</td>
-            <td>0</td>
-            <td><span class='bbw-badge'>BBW: 1</span></td>
-        </tr>        <tr>
-            <td class="rank">10</td>
             <td><strong>Baricitinib (Olumiant)</strong></td>
             <td><span style="color:#4ade80;font-weight:700;font-size:1.1em;">7.5</span></td>
             <td>10.0/10</td>
@@ -354,7 +367,7 @@
             <td>0</td>
             <td><span class='bbw-badge'>BBW: 2</span></td>
         </tr>        <tr>
-            <td class="rank">11</td>
+            <td class="rank">10</td>
             <td><strong>Dimethyl Fumarate (Tecfidera)</strong></td>
             <td><span style="color:#4ade80;font-weight:700;font-size:1.1em;">7.3</span></td>
             <td>8.0/10</td>
@@ -364,27 +377,27 @@
             <td>1</td>
             <td></td>
         </tr>        <tr>
-            <td class="rank">12</td>
-            <td><strong>Tacrolimus (Prograf)</strong></td>
-            <td><span style="color:#4ade80;font-weight:700;font-size:1.1em;">7.2</span></td>
-            <td>10.0/10</td>
+            <td class="rank">11</td>
+            <td><strong>Ravulizumab (Ultomiris)</strong></td>
+            <td><span style="color:#4ade80;font-weight:700;font-size:1.1em;">7.3</span></td>
+            <td>8.0/10</td>
             <td>5.0/10</td>
-            <td>5.0/10</td>
+            <td>8.0/10</td>
             <td>10.0/10</td>
-            <td>0</td>
-            <td><span class='bbw-badge'>BBW: 2</span></td>
+            <td>1</td>
+            <td><span class='bbw-badge'>BBW: 1</span></td>
         </tr>        <tr>
-            <td class="rank">13</td>
+            <td class="rank">12</td>
             <td><strong>Avacopan (Tavneos)</strong></td>
             <td><span style="color:#4ade80;font-weight:700;font-size:1.1em;">7.1</span></td>
             <td>8.0/10</td>
             <td>6.0/10</td>
             <td>6.0/10</td>
             <td>10.0/10</td>
-            <td>1</td>
+            <td>2</td>
             <td></td>
         </tr>        <tr>
-            <td class="rank">14</td>
+            <td class="rank">13</td>
             <td><strong>Cyclosporine (Neoral / Sandimmune)</strong></td>
             <td><span style="color:#fbbf24;font-weight:700;font-size:1.1em;">7.0</span></td>
             <td>10.0/10</td>
@@ -394,28 +407,18 @@
             <td>0</td>
             <td><span class='bbw-badge'>BBW: 4</span></td>
         </tr>        <tr>
-            <td class="rank">15</td>
-            <td><strong>Tofacitinib (Xeljanz)</strong></td>
-            <td><span style="color:#fbbf24;font-weight:700;font-size:1.1em;">7.0</span></td>
-            <td>10.0/10</td>
-            <td>4.0/10</td>
-            <td>5.0/10</td>
-            <td>10.0/10</td>
-            <td>0</td>
-            <td><span class='bbw-badge'>BBW: 2</span></td>
-        </tr>        <tr>
-            <td class="rank">16</td>
-            <td><strong>Acalabrutinib (Calquence)</strong></td>
-            <td><span style="color:#fbbf24;font-weight:700;font-size:1.1em;">6.8</span></td>
+            <td class="rank">14</td>
+            <td><strong>Voclosporin (Lupkynis)</strong></td>
+            <td><span style="color:#fbbf24;font-weight:700;font-size:1.1em;">6.5</span></td>
             <td>8.0/10</td>
             <td>5.0/10</td>
-            <td>6.0/10</td>
+            <td>5.0/10</td>
             <td>10.0/10</td>
             <td>2</td>
-            <td></td>
+            <td><span class='bbw-badge'>BBW: 2</span></td>
         </tr>        <tr>
-            <td class="rank">17</td>
-            <td><strong>Voclosporin (Lupkynis)</strong></td>
+            <td class="rank">15</td>
+            <td><strong>Tacrolimus (Prograf)</strong></td>
             <td><span style="color:#fbbf24;font-weight:700;font-size:1.1em;">6.5</span></td>
             <td>8.0/10</td>
             <td>5.0/10</td>
@@ -424,7 +427,7 @@
             <td>1</td>
             <td><span class='bbw-badge'>BBW: 2</span></td>
         </tr>        <tr>
-            <td class="rank">18</td>
+            <td class="rank">16</td>
             <td><strong>Obinutuzumab (Gazyva)</strong></td>
             <td><span style="color:#fbbf24;font-weight:700;font-size:1.1em;">6.5</span></td>
             <td>8.0/10</td>
@@ -434,17 +437,27 @@
             <td>1</td>
             <td><span class='bbw-badge'>BBW: 2</span></td>
         </tr>        <tr>
-            <td class="rank">19</td>
+            <td class="rank">17</td>
             <td><strong>Rituximab (Rituxan)</strong></td>
             <td><span style="color:#fbbf24;font-weight:700;font-size:1.1em;">6.3</span></td>
             <td>8.0/10</td>
             <td>5.0/10</td>
             <td>6.0/10</td>
             <td>5.0/10</td>
-            <td>1</td>
+            <td>2</td>
             <td><span class='bbw-badge'>BBW: 4</span></td>
         </tr>        <tr>
-            <td class="rank">20</td>
+            <td class="rank">18</td>
+            <td><strong>Tofacitinib (Xeljanz)</strong></td>
+            <td><span style="color:#fbbf24;font-weight:700;font-size:1.1em;">6.2</span></td>
+            <td>8.0/10</td>
+            <td>4.0/10</td>
+            <td>5.0/10</td>
+            <td>10.0/10</td>
+            <td>1</td>
+            <td><span class='bbw-badge'>BBW: 2</span></td>
+        </tr>        <tr>
+            <td class="rank">19</td>
             <td><strong>Mycophenolate Mofetil (CellCept)</strong></td>
             <td><span style="color:#fbbf24;font-weight:700;font-size:1.1em;">6.1</span></td>
             <td>6.0/10</td>
@@ -454,7 +467,7 @@
             <td>3</td>
             <td><span class='bbw-badge'>BBW: 3</span></td>
         </tr>        <tr>
-            <td class="rank">21</td>
+            <td class="rank">20</td>
             <td><strong>Azathioprine (Imuran)</strong></td>
             <td><span style="color:#fbbf24;font-weight:700;font-size:1.1em;">6.0</span></td>
             <td>8.0/10</td>
@@ -464,7 +477,7 @@
             <td>1</td>
             <td><span class='bbw-badge'>BBW: 2</span></td>
         </tr>        <tr>
-            <td class="rank">22</td>
+            <td class="rank">21</td>
             <td><strong>Iberdomide (CC-220 / Cereblon Modulator)</strong></td>
             <td><span style="color:#fbbf24;font-weight:700;font-size:1.1em;">5.5</span></td>
             <td>6.0/10</td>
@@ -473,6 +486,16 @@
             <td>10.0/10</td>
             <td>3</td>
             <td><span class='bbw-badge'>BBW: 2</span></td>
+        </tr>        <tr>
+            <td class="rank">22</td>
+            <td><strong>Acalabrutinib (Calquence)</strong></td>
+            <td><span style="color:#fbbf24;font-weight:700;font-size:1.1em;">5.4</span></td>
+            <td>4.0/10</td>
+            <td>5.0/10</td>
+            <td>6.0/10</td>
+            <td>10.0/10</td>
+            <td>4</td>
+            <td></td>
         </tr>        <tr>
             <td class="rank">23</td>
             <td><strong>Prednisone (Corticosteroids)</strong></td>
@@ -519,23 +542,36 @@
         </div>
 
         <div class="methodology">
-            <h3>📐 Methodology &mdash; 4-Dimensional Safety Scoring</h3>
+            <h3>\U0001f4d0 Methodology &mdash; 4-Dimensional Safety Scoring</h3>
             <ul>
-                <li><strong>Lupus Symptom Overlap (35%)</strong> &mdash; Do adverse events mimic lupus symptoms? Higher overlap = lower score.</li>
+                <li><strong>Disease Symptom Overlap (35%)</strong> &mdash; Do adverse events mimic Lupus (SLE) symptoms? Higher overlap = lower score.</li>
                 <li><strong>Severity Burden (30%)</strong> &mdash; How severe are the most common adverse events? Weighted by clinical impact.</li>
                 <li><strong>Chronic Use Safety (25%)</strong> &mdash; Is the drug safe for long-term use? Based on known toxicity profiles.</li>
-                <li><strong>Drug-Induced Lupus Risk (10%)</strong> &mdash; Does the drug carry a risk of triggering drug-induced lupus?</li>
+                <li><strong>Disease-Specific Risk (10%)</strong> &mdash; Does the configured disease-specific risk profile indicate concern?</li>
             </ul>
             <p style="margin-top:16px; color:#787890; font-size:0.82rem;">
-                <strong>Disclaimer:</strong> All safety profiles are based on publicly available FDA label information and published literature.
-                Individual patient risk-benefit assessment requires clinical judgment. Not medical advice.
+                <strong>Profile source:</strong> pipeline/adverse_events/data/profiles.json.
+                <strong>Limitations:</strong> Safety scores are research heuristics, not individualized clinical risk assessments. Validate current labels and patient-specific contraindications before use.
+            </p>
+            <p style="margin-top:8px; color:#787890; font-size:0.82rem;">
+                <strong>Disclaimer:</strong> Safety profiles are research prioritization inputs, not individualized clinical risk assessments.
+                Validate current labels and patient-specific contraindications with qualified clinicians. Not medical advice.
             </p>
         </div>
 
         <footer>
-            <p>Adverse Event Profiler &middot; Part of the Lupus Research Platform</p>
+            <p>Adverse Event Profiler &middot; Part of the Multi-Disease Research Platform</p>
             <p><a href="../drug_repurposing/report.html">Drug Repurposing Report</a> &middot; <a href="../knowledge_graph/web/index.html">Knowledge Graph</a></p>
         </footer>
     </div>
 </body>
-</html>
+</html>"""
+
+    with open(output_path, "w", encoding="utf-8") as f:
+        f.write(html)
+
+    return str(output_path)
+
+
+def escape_html(text: str) -> str:
+    """Escape HTML special characters.

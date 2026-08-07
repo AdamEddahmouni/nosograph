@@ -1,0 +1,16 @@
+{
+  "schema_version": "1",
+  "disease_id": "ss",
+  "source": "disease_drug_safety_profile",
+  "coverage_level": "full",
+  "curated_inputs": ["disease_drug_catalog", "class_level_adverse_event_patterns"],
+  "inferred_inputs": ["class_level_mapping_for_unmatched_drugs"],
+  "limitations": ["Safety scores are research heuristics, not individualized clinical risk assessments.", "Many SS therapies are off-label or investigational and have evolving safety evidence."],
+  "default_profile": {"common_ae": ["fatigue", "headache", "dry mouth", "infection risk"], "severe_ae": ["serious infections", "hypersensitivity reactions", "malignancy"], "disease_overlap_ae": ["fatigue", "dry mouth", "dry eyes", "joint pain"], "severity_burden": 5, "chronic_use_safety": 5, "disease_specific_risk": 0, "black_box_warnings": [], "monitoring_required": "Review infection risk, blood counts, organ involvement, and product-specific monitoring.", "evidence_grade": "curated_class_pattern"},
+  "profiles": [
+    {"drug_id": "hydroxychloroquine", "common_ae": ["nausea", "abdominal pain", "headache", "rash"], "severe_ae": ["retinopathy", "cardiomyopathy", "severe hypoglycemia"], "disease_overlap_ae": ["dry mouth", "fatigue", "rash"], "severity_burden": 3, "chronic_use_safety": 8, "monitoring_required": "Baseline and periodic retinal screening; review cardiac and glucose risks."},
+    {"drug_id": "rituximab_ss", "common_ae": ["infusion reactions", "fever", "chills", "fatigue"], "severe_ae": ["serious infections", "hepatitis B reactivation", "progressive multifocal leukoencephalopathy"], "disease_overlap_ae": ["fatigue", "dry mouth"], "severity_burden": 6, "chronic_use_safety": 6, "monitoring_required": "Hepatitis B screening, CBC, immunoglobulins, and infection monitoring."},
+    {"drug_id": "belimumab", "common_ae": ["nausea", "diarrhea", "headache", "infusion reactions"], "severe_ae": ["serious infections", "hypersensitivity", "depression"], "disease_overlap_ae": ["fatigue"], "severity_burden": 4, "chronic_use_safety": 7, "monitoring_required": "Infection and mood monitoring; investigational SS evidence should be reviewed."},
+    {"drug_id": "pilocarpine", "common_ae": ["sweating", "headache", "nausea", "urinary frequency"], "severe_ae": ["bronchospasm", "cardiac conduction effects", "dehydration"], "disease_overlap_ae": ["dry mouth", "dry eyes"], "severity_burden": 4, "chronic_use_safety": 7, "monitoring_required": "Review asthma, cardiac, renal, and cholinergic contraindications."}
+  ]
+}

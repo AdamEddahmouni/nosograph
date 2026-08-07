@@ -1,0 +1,16 @@
+{
+  "schema_version": "1",
+  "disease_id": "ms",
+  "source": "disease_drug_safety_profile",
+  "coverage_level": "full",
+  "curated_inputs": ["disease_drug_catalog", "class_level_adverse_event_patterns"],
+  "inferred_inputs": ["class_level_mapping_for_unmatched_drugs"],
+  "limitations": ["Safety scores are research heuristics, not individualized clinical risk assessments.", "CNS, infection, and monitoring risks vary by formulation and patient history."],
+  "default_profile": {"common_ae": ["fatigue", "headache", "infection risk"], "severe_ae": ["serious infections", "lymphopenia", "hypersensitivity reactions"], "disease_overlap_ae": ["fatigue", "cognitive impairment", "pain"], "severity_burden": 5, "chronic_use_safety": 5, "disease_specific_risk": 0, "black_box_warnings": [], "monitoring_required": "Review CBC, infection risk, liver function, and class-specific monitoring.", "evidence_grade": "curated_class_pattern"},
+  "profiles": [
+    {"drug_id": "ocrelizumab", "common_ae": ["infusion reactions", "upper respiratory infection", "headache"], "severe_ae": ["serious infections", "hepatitis B reactivation", "malignancy"], "disease_overlap_ae": ["fatigue"], "severity_burden": 5, "chronic_use_safety": 6, "monitoring_required": "Hepatitis B screening, immunoglobulins, and infection monitoring."},
+    {"drug_id": "natalizumab", "common_ae": ["headache", "fatigue", "infusion reactions"], "severe_ae": ["progressive multifocal leukoencephalopathy", "serious infections", "hypersensitivity"], "disease_overlap_ae": ["fatigue", "cognitive impairment"], "severity_burden": 8, "chronic_use_safety": 4, "black_box_warnings": ["Progressive multifocal leukoencephalopathy risk requires structured monitoring."], "monitoring_required": "JC virus status, MRI surveillance, and infection monitoring."},
+    {"drug_id": "fingolimod", "common_ae": ["headache", "back pain", "diarrhea", "cough"], "severe_ae": ["bradyarrhythmia", "macular edema", "serious infections", "rebound disease activity"], "disease_overlap_ae": ["fatigue", "pain"], "severity_burden": 7, "chronic_use_safety": 5, "monitoring_required": "First-dose cardiac observation, ophthalmology, CBC, liver function, and infection review."},
+    {"drug_id": "dimethyl_fumarate", "common_ae": ["flushing", "abdominal pain", "diarrhea", "nausea"], "severe_ae": ["severe lymphopenia", "progressive multifocal leukoencephalopathy", "hepatic injury"], "disease_overlap_ae": ["fatigue"], "severity_burden": 5, "chronic_use_safety": 7, "monitoring_required": "CBC with lymphocyte counts and liver function."}
+  ]
+}

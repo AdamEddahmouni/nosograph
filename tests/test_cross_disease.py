@@ -16,6 +16,7 @@ from med_research.pipeline.cross_disease.analyzer import (
     _normalize_drug_id,
     _normalize_gene_id,
     analyze,
+    compute_comparative_modules,
     compute_cross_disease_analysis,
     compute_cross_disease_repurposing,
     compute_disease_similarity,
@@ -252,6 +253,73 @@ def test_print_repurposing_prints(capsys, analysis_results):
     print_repurposing(analysis_results, top_n=5)
     captured = capsys.readouterr()
     assert "CROSS-DISEASE REPURPOSING OPPORTUNITIES" in captured.out
+
+
+# ── Comparative Modules ────────────────────────────────────────────────────
+
+
+def test_compute_comparative_modules_returns_all_diseases(monkeypatch):
+    """The comparative run stacks results for every disease (compute mocked)."""
+    def fake_bm(disease_id, save=True):
+        return [{"gene_id": f"G1_{disease_id}", "composite_score": 7.5},
+                {"gene_id": "SHARED", "composite_score": 6.0}]
+
+    def fake_ex(disease_id, save=True):
+        return [{"drug_id": f"d1_{disease_id}", "composite_score": 8.0},
+                {"drug_id": "shared_drug", "composite_score": 5.5}]
+
+    def fake_sy(disease_id, save=True):
+        return [{"drug_a_name": "Drug A (Brand)", "drug_b_name": "Drug B",
+                 "composite_score": 8.25}]
+
+    # The pipeline imports these lazily from their source modules, so patch there.
+    monkeypatch.setattr(
+        "med_research.pipeline.biomarker_discovery.discover.compute_biomarker_matrix", fake_bm)
+    monkeypatch.setattr(
+        "med_research.pipeline.gene_expression.correlator.compute_all_correlations", fake_ex)
+    monkeypatch.setattr(
+        "med_research.pipeline.drug_synergy.engine.compute_synergy", fake_sy)
+
+    result = compute_comparative_modules()
+    diseases = result["diseases"]
+    assert len(diseases) == 7
+    assert {d["id"] for d in diseases} == {"sle", "ra", "ms", "ss", "ssc", "t1d", "ibd"}
+
+    modules = result["modules"]
+    # Shared genes appear across all 7 diseases in the matrix
+    assert len(modules["biomarker"]["scores"]["SHARED"]) == 7
+    # Per-disease genes appear only for their own disease
+    assert len(modules["biomarker"]["scores"]["G1_sle"]) == 1
+    # Counts reflect the mocked results
+    assert modules["biomarker"]["counts"]["sle"] == 2
+    assert modules["expression"]["counts"]["ra"] == 2
+    # Synergy labels strip parentheticals and carry scores
+    sle_top = modules["synergy"]["top"]["sle"]
+    assert sle_top[0]["label"] == "Drug A + Drug B"
+    assert sle_top[0]["score"] == 8.25
+
+
+@pytest.mark.slow
+def test_compute_comparative_modules_scores_per_disease():
+    """Each disease should get its own biomarker/expression/synergy scores."""
+    result = compute_comparative_modules()
+    modules = result["modules"]
+
+    # SLE has the most genes and should appear in the biomarker matrix
+    assert "sle" in modules["biomarker"]["counts"]
+    assert modules["biomarker"]["counts"]["sle"] > 0
+    assert modules["expression"]["counts"]["sle"] > 0
+    assert modules["synergy"]["counts"]["sle"] > 0
+
+    # At least one shared gene has per-disease scores (matrix shape)
+    scores = modules["biomarker"]["scores"]
+    multi = [g for g, by_d in scores.items() if len(by_d) >= 2]
+    assert len(multi) >= 3
+
+    # Synergy top pairs are labeled and scored
+    sle_top = modules["synergy"]["top"]["sle"]
+    assert len(sle_top) >= 1
+    assert "label" in sle_top[0] and "score" in sle_top[0]
 
 
 # ── Report ─────────────────────────────────────────────────────────────────

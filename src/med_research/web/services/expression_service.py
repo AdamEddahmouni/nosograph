@@ -3,18 +3,19 @@
 from med_research.web.services.shared_services import safe_serialize
 
 
-def run_correlation_analysis(top_n: int = 26) -> dict:
+def run_correlation_analysis(top_n: int = 26, disease_id: str = "sle") -> dict:
     """Run gene expression correlation analysis and return serializable result.
 
     Args:
         top_n: Number of top results to return (default: all 26).
+        disease_id: Disease whose drug library and signature are used.
 
     Returns:
         Dict with drugs, total_drugs, avg_score, and tier counts.
     """
     from med_research.pipeline.gene_expression.correlator import compute_all_correlations
 
-    results = compute_all_correlations()
+    results = compute_all_correlations(disease_id=disease_id)
 
     scores = [r["composite_score"] for r in results]
     avg = sum(scores) / len(scores) if scores else 0.0

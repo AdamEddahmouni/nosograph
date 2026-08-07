@@ -40,6 +40,8 @@ except ImportError:
         "⚠️  BioPython not installed. Install with: pip install biopython"
     )
 
+# Imports follow the path bootstrap above so the module remains runnable directly.
+# ruff: noqa: E402
 from med_research.pipeline.literature_mining.content_extractor import ContentExtractor
 from med_research.pipeline.literature_mining.crossref import (
     cross_reference_articles,
@@ -69,12 +71,42 @@ DEFAULT_QUERIES = [
 ]
 
 
-def generate_candidate_queries(candidates: list) -> list:
+def _disease_queries(disease_id: str) -> list:
+    """Return PubMed queries configured for the requested disease.
+
+    A missing config is scoped to that disease's profile name rather than
+    silently reusing SLE literature queries.
+    """
+    try:
+        from med_research.diseases.base import Disease
+        disease = Disease(disease_id)
+        queries = disease.config.get("PUBMED_QUERIES") or []
+    except ValueError:
+        # Unknown diseases are invalid input, never an excuse to query SLE.
+        return []
+    except Exception:  # noqa: BLE001 — a broken config must not crash mining
+        queries = []
+        disease = None
+    if queries:
+        return list(queries)
+    if disease is not None:
+        # Known diseases must not silently inherit the SLE query set. A missing
+        # config is an explicit coverage gap, not a reason to guess.
+        return []
+    return []
+
+
+def generate_candidate_queries(candidates: list, disease_term: str = "(lupus OR SLE)") -> list:
     """
     Generate targeted PubMed queries for each repurposing candidate.
 
     Extracts drug generic + brand names from candidate drug names
     and creates queries like: (lupus OR SLE) AND ("fenebrutinib" OR "GDC-0853")
+
+    Args:
+        candidates: Repurposing candidate dicts with a 'drug_name' key
+        disease_term: PubMed disease clause used to scope the search
+            (e.g. '(lupus OR SLE)' or '("rheumatoid arthritis"[Title/Abstract])')
 
     Returns a list of query strings, one per candidate.
     """
@@ -101,7 +133,7 @@ def generate_candidate_queries(candidates: list) -> list:
             continue
 
         drug_search = " OR ".join(drug_terms)
-        query = f'(lupus OR SLE) AND ({drug_search})'
+        query = f'{disease_term} AND ({drug_search})'
         queries.append((c["id"], query, c["drug_name"]))
 
     return queries
@@ -176,6 +208,7 @@ def mine_literature(
     use_cache: bool = True,
     targeted_candidates: bool = False,
     extract_content: bool = False,
+    disease_id: str = "sle",
 ) -> tuple:
     """
     Run the full literature mining pipeline.
@@ -192,11 +225,34 @@ def mine_literature(
         (crossref_results, entities, candidates, extraction_stats)
     """
     if queries is None:
-        queries = list(DEFAULT_QUERIES)
+        queries = _disease_queries(disease_id)
+    if not queries:
+        from med_research.diseases.coverage import module_coverage
+        coverage = module_coverage(
+            disease_id, "literature", ("genes", "drugs", "pathways", "pubmed_queries")
+        )
+        if not coverage.is_runnable:
+            return {
+                "coverage": coverage.to_dict(),
+                "status": "blocked",
+                "article_matches": [],
+                "stats": {
+                    "total_articles": 0,
+                    "articles_with_matches": 0,
+                    "genes_found": 0,
+                    "drugs_found": 0,
+                    "spacy_ner": "not run",
+                    "novel_entities_found": 0,
+                    "candidates_supported": 0,
+                    "queries_run": 0,
+                },
+                "candidate_support": {},
+                "gene_coverage": {},
+            }, {}, [], None
 
     # Load KG entities and candidates
     logger.info("🔄 Loading knowledge graph entities...")
-    entities = load_kg_entities()
+    entities = load_kg_entities(disease_id)
     logger.info(
         f"   Loaded {len(entities['genes'])} genes, {len(entities['drugs'])} drugs, "
         f"{len(entities['pathways'])} pathways"
@@ -206,17 +262,33 @@ def mine_literature(
     candidates = load_repurposing_candidates()
     logger.info(f"   Loaded {len(candidates)} candidates")
 
-    # Generate per-candidate queries if requested
+    # Generate per-candidate queries if requested (scoped to the disease term
+    # extracted from the active query set, e.g. '(lupus OR SLE)' or
+    # '("rheumatoid arthritis"[Title/Abstract])')
     candidate_queries = []
     if targeted_candidates:
-        candidate_queries = generate_candidate_queries(candidates)
+        if queries and " AND " in queries[0]:
+            disease_term = queries[0].split(" AND ")[0].strip()
+        else:
+            from med_research.diseases.base import Disease
+            disease_term = f'("{Disease(disease_id).profile.name}"[Title/Abstract])'
+        candidate_queries = generate_candidate_queries(candidates, disease_term=disease_term)
         logger.info(f"   Generated {len(candidate_queries)} per-candidate queries")
 
-    # Check cache (skip if using targeted queries, since they're per-drug)
-    cache_path = DATA_DIR / "pubmed_cache.json"
-    if use_cache and cache_path.exists() and not targeted_candidates:
+    # Check cache (per-disease so articles never bleed across diseases; a
+    # legacy single-file cache is still honored for sle). Targeted queries
+    # skip the cache since they're per-drug.
+    cache_path = DATA_DIR / f"pubmed_cache_{disease_id}.json"
+    cached_path = cache_path if cache_path.exists() else None
+    if (
+        cached_path is None
+        and disease_id == "sle"
+        and (DATA_DIR / "pubmed_cache.json").exists()
+    ):
+        cached_path = DATA_DIR / "pubmed_cache.json"
+    if use_cache and cached_path is not None and not targeted_candidates:
         logger.info("📦 Loading from PubMed cache...")
-        all_articles = json.loads(cache_path.read_text(encoding="utf-8"))
+        all_articles = json.loads(cached_path.read_text(encoding="utf-8"))
         logger.info(f"   Loaded {len(all_articles)} cached articles")
     else:
         # Search PubMed
@@ -242,7 +314,7 @@ def mine_literature(
         if candidate_queries:
             logger.info(f"\n🎯 Running {len(candidate_queries)} per-candidate targeted queries...")
             matches_found = 0
-            for i, (cid, query, drug_label) in enumerate(candidate_queries, 1):
+            for i, (_cid, query, drug_label) in enumerate(candidate_queries, 1):
                 articles = search_pubmed(query, max_results=3, email=email)
 
                 new_count = 0
@@ -298,6 +370,12 @@ def mine_literature(
         results = cross_reference_articles(all_articles_filtered, entities, candidates)
         results["extraction_stats"] = extraction_stats
 
+    from med_research.diseases.coverage import module_coverage
+    coverage = module_coverage(
+        disease_id, "literature", ("genes", "drugs", "pathways", "pubmed_queries")
+    )
+    results["coverage"] = coverage.to_dict()
+    results["status"] = "limited_coverage" if coverage.level == "partial" else "ready"
     return results, entities, candidates, extraction_stats
 
 
@@ -399,6 +477,9 @@ def main():
         "--install-scispacy", action="store_true",
         help="Install scispacy biomedical NER model for enhanced entity extraction"
     )
+    parser.add_argument(
+        "--disease", "-d", default="sle", help="Disease ID (default: sle)"
+    )
     args = parser.parse_args()
 
     if args.install_scispacy:
@@ -417,6 +498,7 @@ def main():
         use_cache=not args.no_cache,
         targeted_candidates=args.targeted,
         extract_content=args.extract,
+        disease_id=args.disease,
     )
 
     # Store entities globally for print_summary access
@@ -426,15 +508,25 @@ def main():
         for gid in results.get("gene_coverage", {})
     }
 
+    if results.get("status") == "blocked":
+        coverage = results.get("coverage", {})
+        print(f"❌ Literature analysis blocked for {args.disease}: "
+              f"{', '.join(coverage.get('missing_inputs', [])) or 'coverage contract not satisfied'}")
+        return results
+
     print_summary(results, candidates, entities)
 
     if args.export_html:
         from med_research.pipeline.literature_mining.report import generate_literature_report
-        report_path = generate_literature_report(results, entities, candidates)
+        report_path = generate_literature_report(
+            results, entities, candidates, disease_id=args.disease
+        )
         print(f"\n✅ Literature report generated: {report_path}")
 
     return results
 
 
 if __name__ == "__main__":
-    results = main()
+    result = main()
+    if isinstance(result, dict) and result.get("status") == "blocked":
+        raise SystemExit(1)

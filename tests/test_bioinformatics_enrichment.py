@@ -215,3 +215,12 @@ class TestLoadFunctions:
         G = load_kg_graph()
         assert G.number_of_nodes() >= 40
         assert G.number_of_edges() >= 50
+
+    def test_load_kg_genes_is_disease_specific(self):
+        """Enrichment reads the requested disease's gene set, not SLE's."""
+        from med_research.pipeline.bioinformatics.enrichment import load_kg_genes
+
+        sle_genes = load_kg_genes("sle")
+        ra_genes = load_kg_genes("ra")
+        assert len(sle_genes) > 0 and len(ra_genes) > 0
+        assert set(sle_genes) != set(ra_genes)

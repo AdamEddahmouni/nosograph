@@ -176,3 +176,26 @@ DRUG_INDUCED_LUPUS_RISK = {
         "oral contraceptives", "NSAIDs",
     ],
 }
+
+# ── Clinical trials / GWAS search terms ────────────────────────────────
+TRIAL_QUERY = "lupus OR SLE"
+GWAS_SEARCH_TERMS = [
+    "lupus",
+    "systemic lupus erythematosus",
+    "SLE",
+]
+
+# Compatibility alias retained for older callers; neutral name is authoritative.
+DISEASE_SPECIFIC_RISK = DRUG_INDUCED_LUPUS_RISK
+
+SCREENING_PROFILE = {
+    "strategy_id": "sle-screening-v1",
+    "pathway_keywords": ["interferon", "b cell", "jak-stat", "nf-kb", "complement", "t cell", "tlr"],
+    "mechanism_keywords": ["ifn", "interferon", "b cell", "btk", "jak", "stat", "complement", "tlr", "cd20", "baff"],
+    "reference_drug_ids": ["belimumab", "anifrolumab", "hydroxychloroquine", "baricitinib", "rituximab"],
+    "weights": {"binding_estimate": 0.30, "druglikeness": 0.20, "target_complementarity": 0.25, "similarity_score": 0.15, "novelty_score": 0.10},
+    "source": "curated_sle_knowledge_graph",
+    "curated_inputs": ["pathways", "drugs", "screening_strategy"],
+    "inferred_inputs": ["mechanism_keyword_matching", "property_based_binding_estimate"],
+    "limitations": ["Property scores are heuristic prioritization signals, not experimental binding affinity or efficacy."],
+}

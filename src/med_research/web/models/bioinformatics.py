@@ -23,17 +23,20 @@ class GWASCrossReference(BaseModel):
 
 
 class GWASResponse(BaseModel):
-    total_studies: int
-    total_associations: int
-    unique_genes: int
+    total_studies: int = 0
+    total_associations: int = 0
+    unique_genes: int = 0
     gene_associations: dict[str, Any] = {}
-    crossref: GWASCrossReference
-    top_hits: list[GWASGeneHit]
+    crossref: GWASCrossReference = GWASCrossReference()
+    top_hits: list[GWASGeneHit] = []
+    coverage: dict[str, Any] = {}
+    status: str = "ready"
 
 
 class GWASRequest(BaseModel):
     max_studies: int = 30
     no_cache: bool = False
+    disease_id: str = "sle"
 
 
 # ── Enrichment ─────────────────────────────────────────────────────────────
@@ -55,15 +58,18 @@ class EnrichmentLibrary(BaseModel):
 
 
 class EnrichmentResponse(BaseModel):
-    genes_analyzed: int
-    gene_list: list[str]
-    libraries: list[EnrichmentLibrary]
+    genes_analyzed: int = 0
+    gene_list: list[str] = []
+    libraries: list[EnrichmentLibrary] = []
     kg_pathway_matches: dict[str, Any] = {}
+    coverage: dict[str, Any] = {}
+    status: str = "ready"
 
 
 class EnrichmentRequest(BaseModel):
     untargeted_only: bool = False
     no_cache: bool = False
+    disease_id: str = "sle"
 
 
 # ── PPI ────────────────────────────────────────────────────────────────────
@@ -75,18 +81,22 @@ class HubProtein(BaseModel):
     degree: int
     degree_centrality: float
     betweenness_centrality: float
+    is_disease_gene: bool = False
+    # Legacy response alias retained for existing clients.
     is_lupus_gene: bool = False
     is_seed: bool = False
 
 
 class PPINetworkResponse(BaseModel):
-    nodes: int
-    edges: int
-    seed_genes: int
-    confidence: float
-    top_hubs: list[HubProtein]
-    hub_candidates: list[dict[str, Any]]
-    hub_untargeted: list[dict[str, Any]]
+    nodes: int = 0
+    edges: int = 0
+    seed_genes: int = 0
+    confidence: float = 0.4
+    top_hubs: list[HubProtein] = []
+    hub_candidates: list[dict[str, Any]] = []
+    hub_untargeted: list[dict[str, Any]] = []
+    coverage: dict[str, Any] = {}
+    status: str = "ready"
 
 
 class PPIRequest(BaseModel):

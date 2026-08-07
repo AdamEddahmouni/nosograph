@@ -27,3 +27,5 @@ class CARTResponse(BaseModel):
     tier1_count: int = Field(0)
     tier2_count: int = Field(0)
     tier3_count: int = Field(0)
+    coverage: dict = Field(default_factory=dict)
+    status: str = "ready"

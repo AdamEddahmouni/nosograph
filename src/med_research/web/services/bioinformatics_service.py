@@ -15,34 +15,51 @@ from med_research.web.dependencies import get_kg_genes, get_knowledge_graph, loa
 
 # ── GWAS ───────────────────────────────────────────────────────────────────
 
-def run_gwas(max_studies: int = 30, no_cache: bool = False, progress_callback=None) -> dict:
-    """Run GWAS catalog annotation."""
-    from med_research.rate_limiter import rate_limited_sleep
-
+def run_gwas(
+    max_studies: int = 30,
+    no_cache: bool = False,
+    progress_callback=None,
+    disease_id: str = "sle",
+) -> dict:
+    """Run GWAS catalog annotation for a disease."""
     from med_research.pipeline.bioinformatics.gwas import (
-        SLE_SEARCH_TERMS,
         cross_reference_with_kg,
+        disease_search_terms,
         extract_gene_associations,
         search_gwas_studies,
     )
+    from med_research.rate_limiter import rate_limited_sleep
 
-    genes = get_kg_genes()
+    genes = get_kg_genes(disease_id)
     cb = progress_callback or (lambda p, m: None)
+    from med_research.diseases.coverage import module_coverage
+    coverage = module_coverage(disease_id, "gwas", ("genes", "gwas_search_terms"))
+    if not coverage.is_runnable:
+        cb(100, "GWAS analysis blocked by incomplete disease coverage")
+        return {"coverage": coverage.to_dict(), "status": "blocked", "top_hits": []}
 
-    # Check cache
-    cache_path = BIO_DATA_DIR / "gwas_cache.json"
+    # Check cache (per-disease so results never bleed across diseases;
+    # honor the legacy single-file SLE cache on first run)
+    cache_path = BIO_DATA_DIR / f"gwas_cache_{disease_id}.json"
+    if disease_id == "sle" and not cache_path.exists():
+        legacy = BIO_DATA_DIR / "gwas_cache.json"
+        if legacy.exists():
+            cache_path = legacy
     if not no_cache and USE_CACHE and cache_path.exists():
         cached = load_json(cache_path)
         if cached.get("gwas_results"):
             cb(100, "Loaded GWAS results from cache")
             gwas_results = cached["gwas_results"]
             crossref = cached.get("crossref", {})
-            return _format_gwas_response(gwas_results, crossref, genes)
+            response = _format_gwas_response(gwas_results, crossref, genes)
+            response["coverage"] = coverage.to_dict()
+            response["status"] = "ready"
+            return response
 
     # Fetch from GWAS Catalog
     cb(10, "Fetching GWAS Catalog data…")
     all_studies = []
-    for i, term in enumerate(SLE_SEARCH_TERMS[:2]):
+    for i, term in enumerate(disease_search_terms(disease_id)[:2]):
         studies = search_gwas_studies(term, max_results=max_studies // 2)
         all_studies.extend(studies)
         cb(10 + (i + 1) * 15, f"Fetched {len(studies)} studies for '{term}'")
@@ -65,10 +82,13 @@ def run_gwas(max_studies: int = 30, no_cache: bool = False, progress_callback=No
     )
 
     cb(85, "Cross-referencing with knowledge graph…")
-    crossref = cross_reference_with_kg(gwas_results, genes)
+    crossref = cross_reference_with_kg(gwas_results, genes, disease_id=disease_id)
 
     cb(100, "GWAS analysis complete")
-    return _format_gwas_response(gwas_results, crossref, genes)
+    response = _format_gwas_response(gwas_results, crossref, genes)
+    response["coverage"] = coverage.to_dict()
+    response["status"] = "ready"
+    return response
 
 
 def _format_gwas_response(gwas_results: dict, crossref: dict, genes: dict) -> dict:
@@ -100,8 +120,13 @@ def _format_gwas_response(gwas_results: dict, crossref: dict, genes: dict) -> di
 
 # ── Enrichment ─────────────────────────────────────────────────────────────
 
-def run_enrichment(untargeted_only: bool = False, no_cache: bool = False, progress_callback=None) -> dict:
-    """Run pathway enrichment analysis."""
+def run_enrichment(
+    untargeted_only: bool = False,
+    no_cache: bool = False,
+    progress_callback=None,
+    disease_id: str = "sle",
+) -> dict:
+    """Run pathway enrichment analysis for a disease."""
     from med_research.pipeline.bioinformatics.enrichment import (
         GENE_SET_LIBRARIES,
         cross_reference_with_kg_pathways,
@@ -111,12 +136,19 @@ def run_enrichment(untargeted_only: bool = False, no_cache: bool = False, progre
         run_enrichment as do_enrichment,
     )
 
-    G = get_knowledge_graph()
-    genes = get_kg_genes()
+    G = get_knowledge_graph(disease_id)
+    genes = get_kg_genes(disease_id)
     cb = progress_callback or (lambda p, m: None)
+    from med_research.diseases.coverage import module_coverage
+    coverage = module_coverage(disease_id, "enrichment", ("genes", "pathways"))
+    if not coverage.is_runnable:
+        cb(100, "Enrichment blocked by incomplete disease coverage")
+        return {"coverage": coverage.to_dict(), "status": "blocked", "libraries": []}
 
-    cb(10, "Compiling lupus gene list…")
-    gene_list = get_lupus_gene_list(genes, G, untargeted_only=untargeted_only)
+    cb(10, "Compiling disease gene list…")
+    gene_list = get_lupus_gene_list(
+        genes, G, untargeted_only=untargeted_only, disease_id=disease_id
+    )
 
     cb(20, f"Running enrichment on {len(gene_list)} genes…")
     enrichment_results = do_enrichment(
@@ -127,8 +159,10 @@ def run_enrichment(untargeted_only: bool = False, no_cache: bool = False, progre
 
     # Cross-reference with KG pathways
     cb(80, "Cross-referencing with knowledge graph pathways…")
-    kg_pathways = load_pathways()
-    kg_matches = cross_reference_with_kg_pathways(enrichment_results, kg_pathways)
+    kg_pathways = load_pathways(disease_id)
+    kg_matches = cross_reference_with_kg_pathways(
+        enrichment_results, kg_pathways, disease_id=disease_id
+    )
 
     cb(100, "Enrichment analysis complete")
 
@@ -156,13 +190,20 @@ def run_enrichment(untargeted_only: bool = False, no_cache: bool = False, progre
         "gene_list": [g["symbol"] for g in gene_list],
         "libraries": libraries,
         "kg_pathway_matches": {k: v for k, v in kg_matches.items()},
+        "coverage": coverage.to_dict(),
+        "status": "limited_coverage" if coverage.level == "partial" else "ready",
     }
 
 
 # ── PPI ────────────────────────────────────────────────────────────────────
 
-def run_ppi(confidence: float = 0.4, no_cache: bool = False, progress_callback=None) -> dict:
-    """Build PPI network and compute hub scores."""
+def run_ppi(
+    confidence: float = 0.4,
+    no_cache: bool = False,
+    progress_callback=None,
+    disease_id: str = "sle",
+) -> dict:
+    """Build PPI network and compute hub scores for a disease."""
     from med_research.pipeline.bioinformatics.ppi import (
         build_ppi_network,
         compute_hub_scores,
@@ -170,7 +211,7 @@ def run_ppi(confidence: float = 0.4, no_cache: bool = False, progress_callback=N
         get_gene_symbols,
     )
 
-    genes = get_kg_genes()
+    genes = get_kg_genes(disease_id)
     candidates_data = load_json(DR_DATA_DIR / "candidates.json")
     candidates = candidates_data.get("repurposing_candidates", [])
     cb = progress_callback or (lambda p, m: None)
@@ -185,6 +226,8 @@ def run_ppi(confidence: float = 0.4, no_cache: bool = False, progress_callback=N
         use_cache=not no_cache and USE_CACHE,
     )
 
+    from med_research.diseases.coverage import module_coverage
+    coverage = module_coverage(disease_id, "ppi", ("genes",))
     if G_ppi.number_of_nodes() == 0:
         cb(100, "PPI network empty — no interactions found")
         return {
@@ -195,6 +238,8 @@ def run_ppi(confidence: float = 0.4, no_cache: bool = False, progress_callback=N
             "top_hubs": [],
             "hub_candidates": [],
             "hub_untargeted": [],
+            "coverage": coverage.to_dict(),
+            "status": "limited_coverage",
         }
 
     cb(60, f"Computing hub scores on {G_ppi.number_of_nodes()}-node network…")
@@ -214,6 +259,7 @@ def run_ppi(confidence: float = 0.4, no_cache: bool = False, progress_callback=N
             "degree": h["degree"],
             "degree_centrality": h["degree_centrality"],
             "betweenness_centrality": h["betweenness_centrality"],
+            "is_disease_gene": h["is_lupus_gene"],
             "is_lupus_gene": h["is_lupus_gene"],
             "is_seed": h["is_seed"],
         })
@@ -226,4 +272,6 @@ def run_ppi(confidence: float = 0.4, no_cache: bool = False, progress_callback=N
         "top_hubs": top_hubs,
         "hub_candidates": crossref.get("hub_candidate_matches", []),
         "hub_untargeted": crossref.get("hub_untargeted", []),
+        "coverage": coverage.to_dict(),
+        "status": "limited_coverage" if coverage.level == "partial" else "ready",
     }

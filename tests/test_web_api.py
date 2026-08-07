@@ -95,6 +95,40 @@ class TestSystemEndpoints:
         assert resp.json()["candidates"] >= 20
 
 
+class TestDiseasesRegistry:
+    """Tests for GET /api/system/diseases (dynamic disease registry)."""
+
+    def test_returns_200(self, client):
+        resp = client.get("/api/system/diseases")
+        assert resp.status_code == 200
+
+    def test_has_count_and_diseases(self, client):
+        data = client.get("/api/system/diseases").json()
+        assert "count" in data
+        assert "diseases" in data
+        assert data["count"] == len(data["diseases"])
+        assert data["count"] >= 7
+
+    def test_includes_sle_with_full_name(self, client):
+        diseases = client.get("/api/system/diseases").json()["diseases"]
+        sle = next((d for d in diseases if d["id"] == "sle"), None)
+        assert sle is not None
+        assert sle["name"] == "Systemic Lupus Erythematosus"
+        assert sle["genes"] >= 20
+        assert sle["drugs"] >= 10
+
+    def test_diseases_sorted_by_id(self, client):
+        diseases = client.get("/api/system/diseases").json()["diseases"]
+        ids = [d["id"] for d in diseases]
+        assert ids == sorted(ids)
+
+    def test_entries_have_required_fields(self, client):
+        diseases = client.get("/api/system/diseases").json()["diseases"]
+        for d in diseases:
+            for field in ["id", "name", "genes", "drugs", "pathways"]:
+                assert field in d, f"Missing field: {field}"
+
+
 # ── Knowledge Graph Endpoints ───────────────────────────────────────────────
 
 
@@ -699,6 +733,12 @@ class TestJobSubmission:
         assert "job_id" in resp.json()
         assert resp.json()["module"] == "ml"
 
+    def test_submit_safety_with_disease(self, client):
+        resp = client.post("/api/jobs/safety", params={"disease": "ra"})
+        assert resp.status_code == 200
+        assert "job_id" in resp.json()
+        assert resp.json()["module"] == "safety"
+
     def test_job_ids_are_unique(self, client):
         resp1 = client.post("/api/jobs/ml", params={"top_n": 3})
         resp2 = client.post("/api/jobs/ml", params={"top_n": 3})
@@ -998,6 +1038,43 @@ class TestWebSocketSuccessfulStream:
             assert "status" in data
 
 
+class TestDiseaseAwareEndpoints:
+    """Verify module endpoints reflect the selected disease, not just SLE."""
+
+    def test_stats_reflects_disease(self, client):
+        sle = client.get("/api/stats").json()
+        ra = client.get("/api/stats?disease=ra").json()
+        assert ra["kg_nodes"] > 0
+        assert ra != sle
+        assert ra["genes"] > 0
+
+    def test_repurpose_candidates_disease_param(self, client):
+        sle = client.get("/api/repurpose/candidates?top_n=10").json()
+        ra = client.get("/api/repurpose/candidates?top_n=10&disease=ra").json()
+        assert "candidates" in ra and "total" in ra
+        assert ra != sle
+
+    def test_repurpose_gene_with_disease(self, client):
+        resp = client.get("/api/repurpose/gene/TNF?disease=ra")
+        assert resp.status_code == 200
+        data = resp.json()
+        assert data["gene_id"] == "TNF"
+
+    def test_cart_suitability_disease_param(self, client):
+        resp = client.get("/api/cart/suitability?top_n=10&disease=ra")
+        assert resp.status_code == 200
+        data = resp.json()
+        assert data["total_genes"] >= 1
+        assert "genes" in data
+
+    def test_safety_profiles_disease_param(self, client):
+        resp = client.get("/api/safety/profiles?disease=ra")
+        assert resp.status_code == 200
+        data = resp.json()
+        assert data["total_drugs"] >= 1
+        assert "profiles" in data
+
+
 class TestKGGraphDiseaseAware:
     """Tests for GET /api/kg/graph with the disease param."""
 
@@ -1098,3 +1175,31 @@ class TestCrossDiseaseApi:
         data = resp.json()
         assert "drugs" in data
         assert len(data["drugs"]) <= 5
+
+    @pytest.mark.slow
+    def test_modules_endpoint_returns_stacked_matrices(self, client):
+        """Comparative modules endpoint stacks biomarker/expression/synergy per disease."""
+        resp = client.get("/api/cross-disease/modules?top_synergy=3")
+        assert resp.status_code == 200
+        data = resp.json()
+        assert len(data["diseases"]) >= 7
+        modules = data["modules"]
+        for m in ["biomarker", "expression", "synergy"]:
+            assert m in modules
+        # Score matrices are entity -> disease -> score
+        assert "scores" in modules["biomarker"]
+        assert "scores" in modules["expression"]
+        # Synergy has labeled top pairs per disease
+        assert "top" in modules["synergy"]
+        sle_top = modules["synergy"]["top"].get("sle", [])
+        if sle_top:
+            assert "label" in sle_top[0]
+            assert "score" in sle_top[0]
+
+    @pytest.mark.slow
+    def test_modules_endpoint_counts_positive(self, client):
+        resp = client.get("/api/cross-disease/modules")
+        data = resp.json()
+        counts = data["modules"]["biomarker"]["counts"]
+        assert counts.get("sle", 0) > 0
+        assert counts.get("ra", 0) > 0

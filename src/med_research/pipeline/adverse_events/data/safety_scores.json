@@ -1,49 +1,38 @@
 {
   "safety_scores": [
     {
-      "drug_id": "litifilimab",
-      "drug_name": "Litifilimab (Anti-BDCA2 / BIIB059)",
-      "lupus_symptom_overlap_score": 10.0,
-      "severity_burden_score": 8.0,
-      "chronic_use_safety_score": 7.0,
-      "dil_risk_score": 10.0,
-      "composite_safety_score": 8.65,
-      "n_lupus_overlap_ae": 0,
-      "lupus_overlap_ae": [
-        "headache"
-      ],
-      "black_box_warnings": [],
-      "monitoring_required": "Infection monitoring; investigational safety profile evolving",
-      "n_severe_ae": 2
-    },
-    {
-      "drug_id": "belimumab",
-      "drug_name": "Belimumab (Benlysta)",
-      "lupus_symptom_overlap_score": 10.0,
-      "severity_burden_score": 7.0,
-      "chronic_use_safety_score": 8.0,
-      "dil_risk_score": 10.0,
-      "composite_safety_score": 8.6,
-      "n_lupus_overlap_ae": 0,
-      "lupus_overlap_ae": [
-        "depression",
-        "pyrexia"
-      ],
-      "black_box_warnings": [],
-      "monitoring_required": "Infection monitoring; no routine lab monitoring required",
-      "n_severe_ae": 4
-    },
-    {
       "drug_id": "anifrolumab",
       "drug_name": "Anifrolumab (Saphnelo)",
+      "disease_id": "sle",
+      "disease_symptom_overlap_score": 10.0,
+      "disease_overlap_score": 10.0,
       "lupus_symptom_overlap_score": 10.0,
       "severity_burden_score": 7.0,
       "chronic_use_safety_score": 8.0,
+      "disease_specific_risk_score": 10.0,
       "dil_risk_score": 10.0,
       "composite_safety_score": 8.6,
+      "n_disease_overlap_ae": 0,
+      "disease_overlap_ae": [
+        "cough"
+      ],
       "n_lupus_overlap_ae": 0,
       "lupus_overlap_ae": [
         "cough"
+      ],
+      "evidence_grade": "inferred_class_default",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
       ],
       "black_box_warnings": [],
       "monitoring_required": "Infection monitoring; herpes zoster risk counseling",
@@ -52,30 +41,152 @@
     {
       "drug_id": "hydroxychloroquine",
       "drug_name": "Hydroxychloroquine (Plaquenil)",
+      "disease_id": "sle",
+      "disease_symptom_overlap_score": 8.0,
+      "disease_overlap_score": 8.0,
       "lupus_symptom_overlap_score": 8.0,
       "severity_burden_score": 8.0,
       "chronic_use_safety_score": 9.0,
+      "disease_specific_risk_score": 10.0,
       "dil_risk_score": 10.0,
       "composite_safety_score": 8.45,
+      "n_disease_overlap_ae": 1,
+      "disease_overlap_ae": [
+        "rash"
+      ],
       "n_lupus_overlap_ae": 1,
       "lupus_overlap_ae": [
         "rash"
+      ],
+      "evidence_grade": "inferred_class_default",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
       ],
       "black_box_warnings": [],
       "monitoring_required": "Annual retinal screening after 5 years; baseline ophthalmologic exam",
       "n_severe_ae": 4
     },
     {
-      "drug_id": "iscalimab",
-      "drug_name": "Iscalimab (CFZ533 / anti-CD40)",
-      "lupus_symptom_overlap_score": 10.0,
-      "severity_burden_score": 7.0,
+      "drug_id": "litifilimab",
+      "drug_name": "Litifilimab (Anti-BDCA2 / BIIB059)",
+      "disease_id": "sle",
+      "disease_symptom_overlap_score": 8.0,
+      "disease_overlap_score": 8.0,
+      "lupus_symptom_overlap_score": 8.0,
+      "severity_burden_score": 8.0,
       "chronic_use_safety_score": 7.0,
+      "disease_specific_risk_score": 10.0,
       "dil_risk_score": 10.0,
-      "composite_safety_score": 8.35,
-      "n_lupus_overlap_ae": 0,
+      "composite_safety_score": 7.95,
+      "n_disease_overlap_ae": 1,
+      "disease_overlap_ae": [
+        "headache"
+      ],
+      "n_lupus_overlap_ae": 1,
       "lupus_overlap_ae": [
         "headache"
+      ],
+      "evidence_grade": "inferred_class_default",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Infection monitoring; investigational safety profile evolving",
+      "n_severe_ae": 2
+    },
+    {
+      "drug_id": "belimumab",
+      "drug_name": "Belimumab (Benlysta)",
+      "disease_id": "sle",
+      "disease_symptom_overlap_score": 8.0,
+      "disease_overlap_score": 8.0,
+      "lupus_symptom_overlap_score": 8.0,
+      "severity_burden_score": 7.0,
+      "chronic_use_safety_score": 8.0,
+      "disease_specific_risk_score": 10.0,
+      "dil_risk_score": 10.0,
+      "composite_safety_score": 7.9,
+      "n_disease_overlap_ae": 1,
+      "disease_overlap_ae": [
+        "depression",
+        "pyrexia"
+      ],
+      "n_lupus_overlap_ae": 1,
+      "lupus_overlap_ae": [
+        "depression",
+        "pyrexia"
+      ],
+      "evidence_grade": "inferred_class_default",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "Infection monitoring; no routine lab monitoring required",
+      "n_severe_ae": 4
+    },
+    {
+      "drug_id": "iscalimab",
+      "drug_name": "Iscalimab (CFZ533 / anti-CD40)",
+      "disease_id": "sle",
+      "disease_symptom_overlap_score": 8.0,
+      "disease_overlap_score": 8.0,
+      "lupus_symptom_overlap_score": 8.0,
+      "severity_burden_score": 7.0,
+      "chronic_use_safety_score": 7.0,
+      "disease_specific_risk_score": 10.0,
+      "dil_risk_score": 10.0,
+      "composite_safety_score": 7.65,
+      "n_disease_overlap_ae": 1,
+      "disease_overlap_ae": [
+        "headache"
+      ],
+      "n_lupus_overlap_ae": 1,
+      "lupus_overlap_ae": [
+        "headache"
+      ],
+      "evidence_grade": "inferred_class_default",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
       ],
       "black_box_warnings": [],
       "monitoring_required": "Infection monitoring; investigational safety profile evolving",
@@ -84,15 +195,38 @@
     {
       "drug_id": "rozanolixizumab",
       "drug_name": "Rozanolixizumab (Rystiggo)",
-      "lupus_symptom_overlap_score": 10.0,
+      "disease_id": "sle",
+      "disease_symptom_overlap_score": 8.0,
+      "disease_overlap_score": 8.0,
+      "lupus_symptom_overlap_score": 8.0,
       "severity_burden_score": 7.0,
       "chronic_use_safety_score": 7.0,
+      "disease_specific_risk_score": 10.0,
       "dil_risk_score": 10.0,
-      "composite_safety_score": 8.35,
-      "n_lupus_overlap_ae": 0,
+      "composite_safety_score": 7.65,
+      "n_disease_overlap_ae": 1,
+      "disease_overlap_ae": [
+        "headache",
+        "pyrexia"
+      ],
+      "n_lupus_overlap_ae": 1,
       "lupus_overlap_ae": [
         "headache",
         "pyrexia"
+      ],
+      "evidence_grade": "inferred_class_default",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
       ],
       "black_box_warnings": [],
       "monitoring_required": "Infection monitoring; IgG levels",
@@ -101,14 +235,36 @@
     {
       "drug_id": "deucravacitinib",
       "drug_name": "Deucravacitinib (Sotyktu)",
-      "lupus_symptom_overlap_score": 10.0,
+      "disease_id": "sle",
+      "disease_symptom_overlap_score": 8.0,
+      "disease_overlap_score": 8.0,
+      "lupus_symptom_overlap_score": 8.0,
       "severity_burden_score": 7.0,
       "chronic_use_safety_score": 7.0,
+      "disease_specific_risk_score": 10.0,
       "dil_risk_score": 10.0,
-      "composite_safety_score": 8.35,
-      "n_lupus_overlap_ae": 0,
+      "composite_safety_score": 7.65,
+      "n_disease_overlap_ae": 1,
+      "disease_overlap_ae": [
+        "headache"
+      ],
+      "n_lupus_overlap_ae": 1,
       "lupus_overlap_ae": [
         "headache"
+      ],
+      "evidence_grade": "inferred_class_default",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
       ],
       "black_box_warnings": [],
       "monitoring_required": "Infection monitoring, TB screening, viral hepatitis screening",
@@ -117,48 +273,71 @@
     {
       "drug_id": "dapirolizumab_pegol",
       "drug_name": "Dapirolizumab Pegol (Anti-CD40L Fab-PEG)",
-      "lupus_symptom_overlap_score": 10.0,
+      "disease_id": "sle",
+      "disease_symptom_overlap_score": 8.0,
+      "disease_overlap_score": 8.0,
+      "lupus_symptom_overlap_score": 8.0,
       "severity_burden_score": 7.0,
       "chronic_use_safety_score": 7.0,
+      "disease_specific_risk_score": 10.0,
       "dil_risk_score": 10.0,
-      "composite_safety_score": 8.35,
-      "n_lupus_overlap_ae": 0,
+      "composite_safety_score": 7.65,
+      "n_disease_overlap_ae": 1,
+      "disease_overlap_ae": [
+        "headache"
+      ],
+      "n_lupus_overlap_ae": 1,
       "lupus_overlap_ae": [
         "headache"
+      ],
+      "evidence_grade": "inferred_class_default",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
       ],
       "black_box_warnings": [],
       "monitoring_required": "Infection monitoring; investigational safety profile evolving",
       "n_severe_ae": 3
     },
     {
-      "drug_id": "ravulizumab",
-      "drug_name": "Ravulizumab (Ultomiris)",
-      "lupus_symptom_overlap_score": 10.0,
-      "severity_burden_score": 5.0,
-      "chronic_use_safety_score": 8.0,
-      "dil_risk_score": 10.0,
-      "composite_safety_score": 8.0,
-      "n_lupus_overlap_ae": 0,
-      "lupus_overlap_ae": [
-        "headache",
-        "pyrexia"
-      ],
-      "black_box_warnings": [
-        "Risk of serious and life-threatening meningococcal infections"
-      ],
-      "monitoring_required": "Meningococcal vaccination required pre-treatment; infection monitoring",
-      "n_severe_ae": 3
-    },
-    {
       "drug_id": "baricitinib",
       "drug_name": "Baricitinib (Olumiant)",
+      "disease_id": "sle",
+      "disease_symptom_overlap_score": 10.0,
+      "disease_overlap_score": 10.0,
       "lupus_symptom_overlap_score": 10.0,
       "severity_burden_score": 5.0,
       "chronic_use_safety_score": 6.0,
+      "disease_specific_risk_score": 10.0,
       "dil_risk_score": 10.0,
       "composite_safety_score": 7.5,
+      "n_disease_overlap_ae": 0,
+      "disease_overlap_ae": [],
       "n_lupus_overlap_ae": 0,
       "lupus_overlap_ae": [],
+      "evidence_grade": "inferred_class_default",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
+      ],
       "black_box_warnings": [
         "Risk of serious infections",
         "Increased mortality in RA patients >50 with CV risk factors"
@@ -169,51 +348,118 @@
     {
       "drug_id": "dimethyl_fumarate",
       "drug_name": "Dimethyl Fumarate (Tecfidera)",
+      "disease_id": "sle",
+      "disease_symptom_overlap_score": 8.0,
+      "disease_overlap_score": 8.0,
       "lupus_symptom_overlap_score": 8.0,
       "severity_burden_score": 6.0,
       "chronic_use_safety_score": 7.0,
+      "disease_specific_risk_score": 10.0,
       "dil_risk_score": 10.0,
       "composite_safety_score": 7.35,
+      "n_disease_overlap_ae": 1,
+      "disease_overlap_ae": [
+        "rash"
+      ],
       "n_lupus_overlap_ae": 1,
       "lupus_overlap_ae": [
         "rash"
+      ],
+      "evidence_grade": "inferred_class_default",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
       ],
       "black_box_warnings": [],
       "monitoring_required": "CBC (lymphocyte counts), LFTs",
       "n_severe_ae": 4
     },
     {
-      "drug_id": "tacrolimus",
-      "drug_name": "Tacrolimus (Prograf)",
-      "lupus_symptom_overlap_score": 10.0,
+      "drug_id": "ravulizumab",
+      "drug_name": "Ravulizumab (Ultomiris)",
+      "disease_id": "sle",
+      "disease_symptom_overlap_score": 8.0,
+      "disease_overlap_score": 8.0,
+      "lupus_symptom_overlap_score": 8.0,
       "severity_burden_score": 5.0,
-      "chronic_use_safety_score": 5.0,
+      "chronic_use_safety_score": 8.0,
+      "disease_specific_risk_score": 10.0,
       "dil_risk_score": 10.0,
-      "composite_safety_score": 7.25,
-      "n_lupus_overlap_ae": 0,
+      "composite_safety_score": 7.3,
+      "n_disease_overlap_ae": 1,
+      "disease_overlap_ae": [
+        "headache",
+        "pyrexia"
+      ],
+      "n_lupus_overlap_ae": 1,
       "lupus_overlap_ae": [
         "headache",
-        "renal dysfunction"
+        "pyrexia"
+      ],
+      "evidence_grade": "inferred_class_default",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
       ],
       "black_box_warnings": [
-        "Increased risk of malignancy (lymphoma, skin cancer)",
-        "Increased risk of serious infections"
+        "Risk of serious and life-threatening meningococcal infections"
       ],
-      "monitoring_required": "Renal function, drug levels, blood pressure, glucose, CBC",
-      "n_severe_ae": 7
+      "monitoring_required": "Meningococcal vaccination required pre-treatment; infection monitoring",
+      "n_severe_ae": 3
     },
     {
       "drug_id": "avacopan",
       "drug_name": "Avacopan (Tavneos)",
+      "disease_id": "sle",
+      "disease_symptom_overlap_score": 8.0,
+      "disease_overlap_score": 8.0,
       "lupus_symptom_overlap_score": 8.0,
       "severity_burden_score": 6.0,
       "chronic_use_safety_score": 6.0,
+      "disease_specific_risk_score": 10.0,
       "dil_risk_score": 10.0,
       "composite_safety_score": 7.1,
-      "n_lupus_overlap_ae": 1,
+      "n_disease_overlap_ae": 2,
+      "disease_overlap_ae": [
+        "headache",
+        "rash"
+      ],
+      "n_lupus_overlap_ae": 2,
       "lupus_overlap_ae": [
         "headache",
         "rash"
+      ],
+      "evidence_grade": "inferred_class_default",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
       ],
       "black_box_warnings": [],
       "monitoring_required": "LFTs (hepatotoxicity monitoring), infection monitoring",
@@ -222,14 +468,36 @@
     {
       "drug_id": "cyclosporine",
       "drug_name": "Cyclosporine (Neoral / Sandimmune)",
+      "disease_id": "sle",
+      "disease_symptom_overlap_score": 10.0,
+      "disease_overlap_score": 10.0,
       "lupus_symptom_overlap_score": 10.0,
       "severity_burden_score": 4.0,
       "chronic_use_safety_score": 5.0,
+      "disease_specific_risk_score": 10.0,
       "dil_risk_score": 10.0,
       "composite_safety_score": 6.95,
+      "n_disease_overlap_ae": 0,
+      "disease_overlap_ae": [
+        "renal dysfunction"
+      ],
       "n_lupus_overlap_ae": 0,
       "lupus_overlap_ae": [
         "renal dysfunction"
+      ],
+      "evidence_grade": "inferred_class_default",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
       ],
       "black_box_warnings": [
         "Nephrotoxicity",
@@ -241,55 +509,40 @@
       "n_severe_ae": 7
     },
     {
-      "drug_id": "tofacitinib",
-      "drug_name": "Tofacitinib (Xeljanz)",
-      "lupus_symptom_overlap_score": 10.0,
-      "severity_burden_score": 4.0,
-      "chronic_use_safety_score": 5.0,
-      "dil_risk_score": 10.0,
-      "composite_safety_score": 6.95,
-      "n_lupus_overlap_ae": 0,
-      "lupus_overlap_ae": [
-        "headache"
-      ],
-      "black_box_warnings": [
-        "Risk of serious infections",
-        "Increased risk of mortality, thrombosis, and malignancy (RA patients)"
-      ],
-      "monitoring_required": "CBC, LFTs, lipids, TB screening, viral hepatitis screening",
-      "n_severe_ae": 7
-    },
-    {
-      "drug_id": "acalabrutinib",
-      "drug_name": "Acalabrutinib (Calquence)",
-      "lupus_symptom_overlap_score": 8.0,
-      "severity_burden_score": 5.0,
-      "chronic_use_safety_score": 6.0,
-      "dil_risk_score": 10.0,
-      "composite_safety_score": 6.8,
-      "n_lupus_overlap_ae": 2,
-      "lupus_overlap_ae": [
-        "fatigue",
-        "rash",
-        "headache",
-        "myalgia"
-      ],
-      "black_box_warnings": [],
-      "monitoring_required": "CBC, cardiac monitoring (atrial fibrillation), bleeding risk assessment",
-      "n_severe_ae": 5
-    },
-    {
       "drug_id": "voclosporin",
       "drug_name": "Voclosporin (Lupkynis)",
+      "disease_id": "sle",
+      "disease_symptom_overlap_score": 8.0,
+      "disease_overlap_score": 8.0,
       "lupus_symptom_overlap_score": 8.0,
       "severity_burden_score": 5.0,
       "chronic_use_safety_score": 5.0,
+      "disease_specific_risk_score": 10.0,
       "dil_risk_score": 10.0,
       "composite_safety_score": 6.55,
-      "n_lupus_overlap_ae": 1,
+      "n_disease_overlap_ae": 2,
+      "disease_overlap_ae": [
+        "anemia",
+        "headache"
+      ],
+      "n_lupus_overlap_ae": 2,
       "lupus_overlap_ae": [
         "anemia",
         "headache"
+      ],
+      "evidence_grade": "inferred_class_default",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
       ],
       "black_box_warnings": [
         "Increased risk of serious infections",
@@ -299,18 +552,85 @@
       "n_severe_ae": 6
     },
     {
+      "drug_id": "tacrolimus",
+      "drug_name": "Tacrolimus (Prograf)",
+      "disease_id": "sle",
+      "disease_symptom_overlap_score": 8.0,
+      "disease_overlap_score": 8.0,
+      "lupus_symptom_overlap_score": 8.0,
+      "severity_burden_score": 5.0,
+      "chronic_use_safety_score": 5.0,
+      "disease_specific_risk_score": 10.0,
+      "dil_risk_score": 10.0,
+      "composite_safety_score": 6.55,
+      "n_disease_overlap_ae": 1,
+      "disease_overlap_ae": [
+        "headache",
+        "renal dysfunction"
+      ],
+      "n_lupus_overlap_ae": 1,
+      "lupus_overlap_ae": [
+        "headache",
+        "renal dysfunction"
+      ],
+      "evidence_grade": "inferred_class_default",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
+      ],
+      "black_box_warnings": [
+        "Increased risk of malignancy (lymphoma, skin cancer)",
+        "Increased risk of serious infections"
+      ],
+      "monitoring_required": "Renal function, drug levels, blood pressure, glucose, CBC",
+      "n_severe_ae": 7
+    },
+    {
       "drug_id": "obinutuzumab",
       "drug_name": "Obinutuzumab (Gazyva)",
+      "disease_id": "sle",
+      "disease_symptom_overlap_score": 8.0,
+      "disease_overlap_score": 8.0,
       "lupus_symptom_overlap_score": 8.0,
       "severity_burden_score": 4.0,
       "chronic_use_safety_score": 6.0,
+      "disease_specific_risk_score": 10.0,
       "dil_risk_score": 10.0,
       "composite_safety_score": 6.5,
+      "n_disease_overlap_ae": 1,
+      "disease_overlap_ae": [
+        "neutropenia",
+        "thrombocytopenia",
+        "pyrexia"
+      ],
       "n_lupus_overlap_ae": 1,
       "lupus_overlap_ae": [
         "neutropenia",
         "thrombocytopenia",
         "pyrexia"
+      ],
+      "evidence_grade": "inferred_class_default",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
       ],
       "black_box_warnings": [
         "Hepatitis B reactivation",
@@ -322,16 +642,40 @@
     {
       "drug_id": "rituximab",
       "drug_name": "Rituximab (Rituxan)",
+      "disease_id": "sle",
+      "disease_symptom_overlap_score": 8.0,
+      "disease_overlap_score": 8.0,
       "lupus_symptom_overlap_score": 8.0,
       "severity_burden_score": 5.0,
       "chronic_use_safety_score": 6.0,
+      "disease_specific_risk_score": 5.0,
       "dil_risk_score": 5.0,
       "composite_safety_score": 6.3,
-      "n_lupus_overlap_ae": 1,
+      "n_disease_overlap_ae": 2,
+      "disease_overlap_ae": [
+        "pyrexia",
+        "rash",
+        "headache"
+      ],
+      "n_lupus_overlap_ae": 2,
       "lupus_overlap_ae": [
         "pyrexia",
         "rash",
         "headache"
+      ],
+      "evidence_grade": "inferred_class_default",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
       ],
       "black_box_warnings": [
         "Fatal infusion reactions",
@@ -343,18 +687,83 @@
       "n_severe_ae": 6
     },
     {
+      "drug_id": "tofacitinib",
+      "drug_name": "Tofacitinib (Xeljanz)",
+      "disease_id": "sle",
+      "disease_symptom_overlap_score": 8.0,
+      "disease_overlap_score": 8.0,
+      "lupus_symptom_overlap_score": 8.0,
+      "severity_burden_score": 4.0,
+      "chronic_use_safety_score": 5.0,
+      "disease_specific_risk_score": 10.0,
+      "dil_risk_score": 10.0,
+      "composite_safety_score": 6.25,
+      "n_disease_overlap_ae": 1,
+      "disease_overlap_ae": [
+        "headache"
+      ],
+      "n_lupus_overlap_ae": 1,
+      "lupus_overlap_ae": [
+        "headache"
+      ],
+      "evidence_grade": "inferred_class_default",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
+      ],
+      "black_box_warnings": [
+        "Risk of serious infections",
+        "Increased risk of mortality, thrombosis, and malignancy (RA patients)"
+      ],
+      "monitoring_required": "CBC, LFTs, lipids, TB screening, viral hepatitis screening",
+      "n_severe_ae": 7
+    },
+    {
       "drug_id": "mycophenolate",
       "drug_name": "Mycophenolate Mofetil (CellCept)",
+      "disease_id": "sle",
+      "disease_symptom_overlap_score": 6.0,
+      "disease_overlap_score": 6.0,
       "lupus_symptom_overlap_score": 6.0,
       "severity_burden_score": 5.0,
       "chronic_use_safety_score": 6.0,
+      "disease_specific_risk_score": 10.0,
       "dil_risk_score": 10.0,
       "composite_safety_score": 6.1,
+      "n_disease_overlap_ae": 3,
+      "disease_overlap_ae": [
+        "leukopenia",
+        "anemia",
+        "thrombocytopenia"
+      ],
       "n_lupus_overlap_ae": 3,
       "lupus_overlap_ae": [
         "leukopenia",
         "anemia",
         "thrombocytopenia"
+      ],
+      "evidence_grade": "inferred_class_default",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
       ],
       "black_box_warnings": [
         "Increased risk of congenital malformations (pregnancy Category D)",
@@ -367,14 +776,36 @@
     {
       "drug_id": "azathioprine",
       "drug_name": "Azathioprine (Imuran)",
+      "disease_id": "sle",
+      "disease_symptom_overlap_score": 8.0,
+      "disease_overlap_score": 8.0,
       "lupus_symptom_overlap_score": 8.0,
       "severity_burden_score": 5.0,
       "chronic_use_safety_score": 5.0,
+      "disease_specific_risk_score": 5.0,
       "dil_risk_score": 5.0,
       "composite_safety_score": 6.05,
+      "n_disease_overlap_ae": 1,
+      "disease_overlap_ae": [
+        "leukopenia"
+      ],
       "n_lupus_overlap_ae": 1,
       "lupus_overlap_ae": [
         "leukopenia"
+      ],
+      "evidence_grade": "inferred_class_default",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
       ],
       "black_box_warnings": [
         "Increased risk of malignancy",
@@ -386,17 +817,42 @@
     {
       "drug_id": "iberdomide",
       "drug_name": "Iberdomide (CC-220 / Cereblon Modulator)",
+      "disease_id": "sle",
+      "disease_symptom_overlap_score": 6.0,
+      "disease_overlap_score": 6.0,
       "lupus_symptom_overlap_score": 6.0,
       "severity_burden_score": 4.0,
       "chronic_use_safety_score": 5.0,
+      "disease_specific_risk_score": 10.0,
       "dil_risk_score": 10.0,
       "composite_safety_score": 5.55,
+      "n_disease_overlap_ae": 3,
+      "disease_overlap_ae": [
+        "neutropenia",
+        "thrombocytopenia",
+        "anemia",
+        "fatigue"
+      ],
       "n_lupus_overlap_ae": 3,
       "lupus_overlap_ae": [
         "neutropenia",
         "thrombocytopenia",
         "anemia",
         "fatigue"
+      ],
+      "evidence_grade": "inferred_class_default",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
       ],
       "black_box_warnings": [
         "Fetal harm (contraindicated in pregnancy)",
@@ -406,17 +862,84 @@
       "n_severe_ae": 5
     },
     {
+      "drug_id": "acalabrutinib",
+      "drug_name": "Acalabrutinib (Calquence)",
+      "disease_id": "sle",
+      "disease_symptom_overlap_score": 4.0,
+      "disease_overlap_score": 4.0,
+      "lupus_symptom_overlap_score": 4.0,
+      "severity_burden_score": 5.0,
+      "chronic_use_safety_score": 6.0,
+      "disease_specific_risk_score": 10.0,
+      "dil_risk_score": 10.0,
+      "composite_safety_score": 5.4,
+      "n_disease_overlap_ae": 4,
+      "disease_overlap_ae": [
+        "fatigue",
+        "rash",
+        "headache",
+        "myalgia"
+      ],
+      "n_lupus_overlap_ae": 4,
+      "lupus_overlap_ae": [
+        "fatigue",
+        "rash",
+        "headache",
+        "myalgia"
+      ],
+      "evidence_grade": "inferred_class_default",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
+      ],
+      "black_box_warnings": [],
+      "monitoring_required": "CBC, cardiac monitoring (atrial fibrillation), bleeding risk assessment",
+      "n_severe_ae": 5
+    },
+    {
       "drug_id": "prednisone",
       "drug_name": "Prednisone (Corticosteroids)",
+      "disease_id": "sle",
+      "disease_symptom_overlap_score": 8.0,
+      "disease_overlap_score": 8.0,
       "lupus_symptom_overlap_score": 8.0,
       "severity_burden_score": 3.0,
       "chronic_use_safety_score": 2.0,
+      "disease_specific_risk_score": 10.0,
       "dil_risk_score": 10.0,
       "composite_safety_score": 5.2,
+      "n_disease_overlap_ae": 1,
+      "disease_overlap_ae": [
+        "mood changes",
+        "psychosis"
+      ],
       "n_lupus_overlap_ae": 1,
       "lupus_overlap_ae": [
         "mood changes",
         "psychosis"
+      ],
+      "evidence_grade": "inferred_class_default",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
       ],
       "black_box_warnings": [],
       "monitoring_required": "Blood pressure, glucose, bone density, ophthalmologic exam",
@@ -425,16 +948,40 @@
     {
       "drug_id": "anti_cd19_cart",
       "drug_name": "Anti-CD19 CAR-T Cell Therapy",
+      "disease_id": "sle",
+      "disease_symptom_overlap_score": 8.0,
+      "disease_overlap_score": 8.0,
       "lupus_symptom_overlap_score": 8.0,
       "severity_burden_score": 1.0,
       "chronic_use_safety_score": 2.0,
+      "disease_specific_risk_score": 10.0,
       "dil_risk_score": 10.0,
       "composite_safety_score": 4.6,
+      "n_disease_overlap_ae": 1,
+      "disease_overlap_ae": [
+        "neurotoxicity",
+        "fatigue",
+        "pyrexia"
+      ],
       "n_lupus_overlap_ae": 1,
       "lupus_overlap_ae": [
         "neurotoxicity",
         "fatigue",
         "pyrexia"
+      ],
+      "evidence_grade": "inferred_class_default",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
       ],
       "black_box_warnings": [
         "Cytokine release syndrome",
@@ -447,11 +994,23 @@
     {
       "drug_id": "teclistamab",
       "drug_name": "Teclistamab (Tecvayli / BCMAxCD3 Bispecific)",
+      "disease_id": "sle",
+      "disease_symptom_overlap_score": 6.0,
+      "disease_overlap_score": 6.0,
       "lupus_symptom_overlap_score": 6.0,
       "severity_burden_score": 2.0,
       "chronic_use_safety_score": 3.0,
+      "disease_specific_risk_score": 10.0,
       "dil_risk_score": 10.0,
       "composite_safety_score": 4.45,
+      "n_disease_overlap_ae": 3,
+      "disease_overlap_ae": [
+        "neutropenia",
+        "anemia",
+        "thrombocytopenia",
+        "fatigue",
+        "pyrexia"
+      ],
       "n_lupus_overlap_ae": 3,
       "lupus_overlap_ae": [
         "neutropenia",
@@ -459,6 +1018,20 @@
         "thrombocytopenia",
         "fatigue",
         "pyrexia"
+      ],
+      "evidence_grade": "inferred_class_default",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
       ],
       "black_box_warnings": [
         "Cytokine release syndrome",
@@ -470,15 +1043,38 @@
     {
       "drug_id": "cyclophosphamide",
       "drug_name": "Cyclophosphamide (Cytoxan)",
+      "disease_id": "sle",
+      "disease_symptom_overlap_score": 8.0,
+      "disease_overlap_score": 8.0,
       "lupus_symptom_overlap_score": 8.0,
       "severity_burden_score": 1.0,
       "chronic_use_safety_score": 1.0,
+      "disease_specific_risk_score": 5.0,
       "dil_risk_score": 5.0,
       "composite_safety_score": 3.85,
+      "n_disease_overlap_ae": 2,
+      "disease_overlap_ae": [
+        "alopecia",
+        "leukopenia"
+      ],
       "n_lupus_overlap_ae": 2,
       "lupus_overlap_ae": [
         "alopecia",
         "leukopenia"
+      ],
+      "evidence_grade": "inferred_class_default",
+      "profile_source": "pipeline/adverse_events/data/profiles.json",
+      "profile_curated_inputs": [
+        "legacy_profile_database",
+        "disease_symptoms",
+        "disease_risk_config"
+      ],
+      "profile_inferred_inputs": [
+        "profile_to_symptom_overlap"
+      ],
+      "limitations": [
+        "Safety scores are research heuristics, not individualized clinical risk assessments.",
+        "Validate current labels and patient-specific contraindications before use."
       ],
       "black_box_warnings": [
         "Myelosuppression",

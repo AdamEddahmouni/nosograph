@@ -18,14 +18,8 @@
                 <span class="nav-title">Medical Research Platform</span>
             </div>
             <div class="nav-links">
-                <select id="disease-selector" class="nav-select" onchange="onDiseaseChange(this.value)">
-                    <option value="sle">SLE (Lupus)</option>
-                    <option value="ra">RA (Rheumatoid Arthritis)</option>
-                    <option value="ibd">IBD (Crohn's / Colitis)</option>
-                    <option value="ms">MS (Multiple Sclerosis)</option>
-                    <option value="ss">SS (Sjögren's)</option>
-                    <option value="ssc">SSc (Systemic Sclerosis)</option>
-                    <option value="t1d">T1D (Type 1 Diabetes)</option>
+                <select id="disease-selector" class="nav-select" onchange="onDiseaseChange(this.value)" aria-label="Select disease">
+                    <option value="" disabled>Loading diseases…</option>
                 </select>
                 <a href="#modules" class="nav-link">Modules</a>
                 <a href="#jobs" class="nav-link" id="jobs-tab">Jobs <span id="job-count" class="job-badge hidden">0</span></a>
@@ -41,7 +35,8 @@
                 <div class="hero-content">
                     <h1>Medical Research Platform</h1>
                     <p class="subtitle">
-                        An open computational platform accelerating drug discovery for Systemic Lupus Erythematosus.
+                        An open computational platform accelerating drug discovery for
+                        <span id="hero-disease-name" style="color:var(--accent,#818cf8);font-weight:600;">the selected disease</span>.
                         Integrating a knowledge graph, drug repurposing engine, bioinformatics pipeline, literature
                         mining, virtual screening, clinical trial tracking, and ML target prediction — all in one place.
                     </p>
@@ -49,7 +44,8 @@
                         <span class="hero-badge open">🧬 Open Science</span>
                         <span class="hero-badge research">🔬 Research Tool</span>
                         <span class="hero-badge python">🐍 Python 3.10+</span>
-                        <span class="hero-badge api" id="api-badge">⚡ API v1.0</span>
+                        <span class="hero-badge disease" id="hero-disease-badge">🦠 Selected disease</span>
+                        <span class="hero-badge api" id="api-badge">⚡ API v2.0</span>
                     </div>
                 </div>
             </div>
@@ -64,7 +60,7 @@
                 <div class="stat-card">
                     <div class="stat-icon">🧬</div>
                     <div class="stat-value" style="color:#818cf8;" id="stat-genes">…</div>
-                    <div class="stat-label">Lupus-Associated Genes</div>
+                    <div class="stat-label" id="stat-genes-label">Associated Genes</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-icon">💊</div>
@@ -92,6 +88,56 @@
                     <div class="stat-label">Tests Passing</div>
                 </div>
             </div>
+
+            <!-- ── Evidence-to-Hypothesis Workspace ─────────────────── -->
+            <section class="workspace-shell" id="evidence-workspace" aria-labelledby="workspace-title">
+                <div class="workspace-intro">
+                    <div>
+                        <span class="workspace-kicker">RESEARCH WORKSPACE · ASYNC</span>
+                        <h2 id="workspace-title">Evidence-to-Hypothesis Workspace</h2>
+                        <p>Turn a research question into a traceable, computationally prioritized dossier across PubMed and ClinicalTrials.gov.</p>
+                    </div>
+                    <div class="workspace-disclaimer">⚠️ Research use only · not medical advice</div>
+                </div>
+                <form id="workspace-form" class="workspace-form" onsubmit="submitWorkspace(event)">
+                    <label class="workspace-question">
+                        <span>Research question</span>
+                        <textarea id="workspace-question" name="question" rows="2" required minlength="2" maxlength="500" placeholder="Ask a question for the selected disease"></textarea>
+                    </label>
+                    <div class="workspace-controls">
+                        <label><span>Sources</span><select id="workspace-sources" multiple size="2">
+                            <option value="pubmed" selected>PubMed</option>                            <option value="clinical_trials" selected>ClinicalTrials.gov</option>
+                            <option value="gwas">GWAS Catalog</option>
+                            <option value="fda_labels">FDA / DailyMed</option>
+                        </select>
+</label>
+                        <label><span>Rank</span><select id="workspace-candidate-type"><option value="both" selected>Drugs + targets</option><option value="drugs">Drugs only</option><option value="targets">Targets only</option></select></label>
+                        <label><span>From</span><input id="workspace-date-from" type="date"></label>
+                        <label><span>To</span><input id="workspace-date-to" type="date"></label>
+                        <label><span>Evidence limit</span><input id="workspace-max-evidence" type="number" min="1" max="200" value="50"></label>
+                        <label class="workspace-check"><input id="workspace-enable-llm" type="checkbox" checked> Optional LLM enrichment</label>
+                    </div>
+                    <div class="workspace-actions">
+                        <button class="btn btn-primary" type="submit" id="workspace-submit">🚀 Run workspace</button>
+                        <span class="workspace-hint" id="workspace-submit-status" role="status" aria-live="polite">Ready for a new research question.</span>
+                    </div>
+                </form>
+                <div id="workspace-result" class="workspace-result" aria-live="polite"></div>
+                <div class="workspace-history-shell" id="workspace-history">
+                    <div class="workspace-history-head"><h3>🗂️ Saved research runs</h3><button class="btn btn-secondary btn-sm" type="button" onclick="loadWorkspaceHistory()">↻ Refresh</button></div>
+                    <div id="workspace-history-list" class="workspace-history-list"><span class="workspace-muted">No saved runs loaded yet.</span></div>
+                    <div id="workspace-compare" class="workspace-compare" aria-live="polite"></div>
+                    <section id="workspace-trends" class="workspace-trends" aria-labelledby="workspace-trends-title">
+                        <div class="workspace-trends-head">
+                            <div><h3 id="workspace-trends-title">📈 Evidence trends</h3><p class="workspace-muted">Track candidate scores, confidence, evidence volume, and source coverage across saved runs.</p></div>
+                            <div class="workspace-trend-controls"><label>View <select id="workspace-trend-kind" onchange="renderWorkspaceTrends()"><option value="drug">Drugs</option><option value="target">Targets</option></select></label><label>Candidate <select id="workspace-trend-candidate" onchange="renderWorkspaceTrends()"><option value="">All candidates</option></select></label><button class="btn btn-secondary btn-sm" type="button" onclick="loadWorkspaceTrends()">↻ Update</button></div>
+                        </div>
+                        <div id="workspace-trend-status" class="workspace-muted">Loading trend data…</div>
+                        <div id="workspace-trend-chart" class="workspace-trend-chart" role="img" aria-label="Candidate score trends"></div>
+                        <div id="workspace-trend-metrics" class="workspace-trend-metrics"></div>
+                    </section>
+                </div>
+            </section>
 
             <!-- ── Modules ───────────────────────────────────────────── -->
             <h2 class="section-title" id="modules">
@@ -121,7 +167,7 @@
                         <button class="btn btn-primary" onclick="runModule('kg')">🔍 Query Graph</button>
                         <button class="btn btn-secondary" onclick="scrollToExplorer()">🕸️ Explore Graph</button>
                     </div>
-                    <div class="module-result" id="result-kg"></div>
+                    <div class="module-result" id="result-kg"><div class="coverage-panel"><span class="coverage-badge coverage-partial">Coverage shown after run</span></div></div>
                 </div>
 
                 <!-- Drug Repurposing -->
@@ -134,8 +180,8 @@
                         </div>
                     </div>
                     <p class="desc">
-                        Multi-modal scoring system evaluating 39 candidates across 13 untargeted lupus genes
-                        using a 6-dimensional weighted model.
+                        Multi-modal scoring system evaluating drug candidates across disease-associated genes
+                        using a 6-dimensional weighted model for the selected disease.
                     </p>
                     <div class="tags">
                         <span class="tag blue">Scoring Engine</span>
@@ -144,9 +190,9 @@
                     </div>
                     <div class="actions">
                         <button class="btn btn-primary" onclick="runModule('repurpose')">💊 Score Candidates</button>
-                        <a href="/drug_repurposing/report.html" class="btn btn-secondary">📊 Report</a>
+                        <a href="/api/export/report/repurpose" class="btn btn-secondary">📊 Report</a>
                     </div>
-                    <div class="module-result" id="result-repurpose"></div>
+                    <div class="module-result" id="result-repurpose"><div class="coverage-panel"><span class="coverage-badge coverage-partial">Disease-aware scoring</span></div></div>
                 </div>
 
                 <!-- Bioinformatics -->
@@ -174,7 +220,7 @@
                         <button class="btn btn-secondary" onclick="runModule('enrichment')">📈 Enrich</button>
                         <button class="btn btn-secondary" onclick="runModule('ppi')">🔗 PPI</button>
                     </div>
-                    <div class="module-result" id="result-bioinformatics"></div>
+                    <div class="module-result" id="result-bioinformatics"><div class="coverage-panel"><span class="coverage-badge coverage-partial">Coverage shown after run</span></div></div>
                 </div>
 
                 <!-- Evidence Monitor -->
@@ -197,7 +243,7 @@
                     </div>
                     <div class="actions">
                         <button class="btn btn-primary" onclick="runModule('monitor')">📡 Check Alerts</button>
-                        <a href="/evidence_monitor/report.html" class="btn btn-secondary">📊 Report</a>
+                        <a href="#evidence-workspace" class="btn btn-secondary">📊 Report</a>
                     </div>
                     <div class="module-result" id="result-monitor"></div>
                 </div>
@@ -222,7 +268,7 @@
                     </div>
                     <div class="actions">
                         <button class="btn btn-primary" onclick="runModule('extractor')">🤖 Extract Evidence</button>
-                        <a href="/llm_extractor/report.html" class="btn btn-secondary">📊 Report</a>
+                        <a href="#evidence-workspace" class="btn btn-secondary">📊 Report</a>
                     </div>
                     <div class="module-result" id="result-extractor"></div>
                 </div>
@@ -247,7 +293,7 @@
                     </div>
                     <div class="actions">
                         <button class="btn btn-primary" onclick="runModule('evidence')">🌐 Gather Evidence</button>
-                        <a href="/evidence_gatherer/report.html" class="btn btn-secondary">📊 Report</a>
+                        <a href="#evidence-workspace" class="btn btn-secondary">📊 Report</a>
                     </div>
                     <div class="module-result" id="result-evidence"></div>
                 </div>
@@ -272,7 +318,7 @@
                     </div>
                     <div class="actions">
                         <button class="btn btn-primary" onclick="runModule('semantic')">🧠 Semantic Search</button>
-                        <a href="/semantic_search/report.html" class="btn btn-secondary">📊 Report</a>
+                        <a href="/api/export/modules" class="btn btn-secondary">📊 Report</a>
                     </div>
                     <div class="module-result" id="result-semantic"></div>
                 </div>
@@ -297,9 +343,9 @@
                     </div>
                     <div class="actions">
                         <button class="btn btn-primary" onclick="runModule('literature')">📚 Mine Literature</button>
-                        <a href="/literature_mining/literature_report.html" class="btn btn-secondary">📊 Report</a>
+                        <a href="/api/export/report/literature" class="btn btn-secondary">📊 Report</a>
                     </div>
-                    <div class="module-result" id="result-literature"></div>
+                    <div class="module-result" id="result-literature"><div class="coverage-panel"><span class="coverage-badge coverage-partial">Disease-specific sources</span></div></div>
                 </div>
 
                 <!-- Virtual Screening -->
@@ -313,7 +359,8 @@
                     </div>
                     <p class="desc">
                         Property-based virtual screening of the 26-drug compound library against 13 untargeted
-                        lupus protein targets using a 5-dimensional weighted scoring model.
+                        lupus                        protein targets using a 5-dimensional weighted scoring model for the selected disease.
+
                     </p>
                     <div class="tags">
                         <span class="tag yellow">AutoDock Vina</span>
@@ -322,9 +369,9 @@
                     </div>
                     <div class="actions">
                         <button class="btn btn-primary" onclick="runModule('screening')">🔬 Screen</button>
-                        <a href="/virtual_screening/screening_report.html" class="btn btn-secondary">📊 Report</a>
+                        <a href="/api/export/report/screening" class="btn btn-secondary">📊 Report</a>
                     </div>
-                    <div class="module-result" id="result-screening"></div>
+                    <div class="module-result" id="result-screening"><div class="coverage-panel"><span class="coverage-badge coverage-partial">Coverage shown after run</span></div></div>
                 </div>
 
                 <!-- ML Predictor -->
@@ -338,7 +385,7 @@
                     </div>
                     <p class="desc">
                         XGBoost classifier trained on knowledge graph features to predict novel druggable
-                        targets for lupus. SHAP interpretability reveals key features.
+                        disease targets. SHAP interpretability reveals key features.
                     </p>
                     <div class="tags">
                         <span class="tag blue">XGBoost</span>
@@ -347,7 +394,7 @@
                     </div>
                     <div class="actions">
                         <button class="btn btn-primary" onclick="runModule('ml')">🧠 Predict Targets</button>
-                        <a href="/ml_predictor/ml_report.html" class="btn btn-secondary">📊 Report</a>
+                        <a href="/api/export/report/ml" class="btn btn-secondary">📊 Report</a>
                     </div>
                     <div class="module-result" id="result-ml"></div>
                 </div>
@@ -362,7 +409,7 @@
                         </div>
                     </div>
                     <p class="desc">
-                        Gene-level CD19 CAR-T therapy suitability scoring. Identifies which lupus genes/pathways
+                        Gene-level CD19 CAR-T therapy suitability scoring. Identifies which disease genes/pathways
                         are most B-cell-dependent and likely to respond to CAR-T immune reset.
                     </p>
                     <div class="tags">
@@ -372,9 +419,9 @@
                     </div>
                     <div class="actions">
                         <button class="btn btn-primary" onclick="runModule('cart')">🔬 Score Genes</button>
-                        <a href="/car_t_predictor/report.html" class="btn btn-secondary">📊 Report</a>
+                        <a href="/api/export/report/cart" class="btn btn-secondary">📊 Report</a>
                     </div>
-                    <div class="module-result" id="result-cart"></div>
+                    <div class="module-result" id="result-cart"><div class="coverage-panel"><span class="coverage-badge coverage-partial">Curated therapy rubric</span></div></div>
                 </div>
 
                 <!-- Biomarker Discovery -->
@@ -397,7 +444,7 @@
                     </div>
                     <div class="actions">
                         <button class="btn btn-primary" onclick="runModule('biomarker')">🧬 Discover Biomarkers</button>
-                        <a href="/biomarker_discovery/report.html" class="btn btn-secondary">📊 Report</a>
+                        <a href="/api/export/report/biomarker" class="btn btn-secondary">📊 Report</a>
                     </div>
                     <div class="module-result" id="result-biomarker"></div>
                 </div>
@@ -412,7 +459,7 @@
                         </div>
                     </div>
                     <p class="desc">
-                        Connectivity Map approach: correlates drug mechanisms against curated SLE
+                        Connectivity Map approach: correlates drug mechanisms against curated disease
                         transcriptomic signatures. 5-dimensional scoring for expression reversal potential.
                     </p>
                     <div class="tags">
@@ -422,7 +469,7 @@
                     </div>
                     <div class="actions">
                         <button class="btn btn-primary" onclick="runModule('expression')">🧬 Correlate Expression</button>
-                        <a href="/gene_expression/report.html" class="btn btn-secondary">📊 Report</a>
+                        <a href="/api/export/report/expression" class="btn btn-secondary">📊 Report</a>
                     </div>
                     <div class="module-result" id="result-expression"></div>
                 </div>
@@ -447,7 +494,7 @@
                     </div>
                     <div class="actions">
                         <button class="btn btn-primary" onclick="runNetworkAnalysis()">🌐 Analyze Network</button>
-                        <a href="/network_pharmacology/report.html" class="btn btn-secondary">📊 Report</a>
+                        <a href="/api/export/report/network" class="btn btn-secondary">📊 Report</a>
                     </div>
                     <div class="module-result" id="result-network"></div>
                 </div>
@@ -462,8 +509,8 @@
                         </div>
                     </div>
                     <p class="desc">
-                        Lupus-specific adverse event profiling across 4 dimensions: symptom overlap,
-                        severity burden, chronic use safety, and drug-induced lupus risk for all 26 drugs.
+                        Disease-specific adverse event profiling across 4 dimensions: symptom overlap,
+                        severity burden, chronic use safety, and configured disease-risk signals for available drugs.
                     </p>
                     <div class="tags">
                         <span class="tag green">AE Profiling</span>
@@ -472,9 +519,9 @@
                     </div>
                     <div class="actions">
                         <button class="btn btn-primary" onclick="runModule('safety')">🛡️ Safety Check</button>
-                        <a href="/adverse_events/report.html" class="btn btn-secondary">📊 Report</a>
+                        <a href="/api/export/report/safety" class="btn btn-secondary">📊 Report</a>
                     </div>
-                    <div class="module-result" id="result-safety"></div>
+                    <div class="module-result" id="result-safety"><div class="coverage-panel"><span class="coverage-badge coverage-partial">Disease symptoms &amp; risk</span></div></div>
                 </div>
 
                 <!-- Drug Synergy -->
@@ -497,7 +544,7 @@
                     </div>
                     <div class="actions">
                         <button class="btn btn-primary" onclick="runModule('synergy')">🔗 Find Synergies</button>
-                        <a href="/drug_synergy/report.html" class="btn btn-secondary">📊 Report</a>
+                        <a href="/api/export/report/synergy" class="btn btn-secondary">📊 Report</a>
                     </div>
                     <div class="module-result" id="result-synergy"></div>
                 </div>
@@ -522,7 +569,8 @@
                     </div>
                     <div class="actions">
                         <button class="btn btn-primary" onclick="runCrossDisease()">🌐 Analyze Cross-Disease</button>
-                        <a href="/cross_disease/report.html" class="btn btn-secondary">📊 Report</a>
+                        <button class="btn btn-secondary" onclick="runModuleComparison()">⚖️ Compare Modules</button>
+                        <a href="/api/export/report/cross-disease" class="btn btn-secondary">📊 Report</a>
                     </div>
                     <div class="module-result" id="result-cross-disease"><span class="placeholder">Click to analyze</span></div>
                 </div>
@@ -537,7 +585,7 @@
                         </div>
                     </div>
                     <p class="desc">
-                        Tracks interventional lupus clinical trials from ClinicalTrials.gov. Categorizes
+                        Tracks interventional disease clinical trials from ClinicalTrials.gov. Categorizes
                         by phase, mechanism of action, and sponsor.
                     </p>
                     <div class="tags">
@@ -547,9 +595,35 @@
                     </div>
                     <div class="actions">
                         <button class="btn btn-primary" onclick="runModule('trials')">📋 Track Trials</button>
-                        <a href="/clinical_trials/ct_report.html" class="btn btn-secondary">📊 Report</a>
+                        <a href="/api/export/report/trials" class="btn btn-secondary">📊 Report</a>
                     </div>
                     <div class="module-result" id="result-trials"></div>
+                </div>
+
+                <!-- Manage Disease Module -->
+                <div class="module-card" style="--card-accent:#f87171;">
+                    <div class="module-card-header">
+                        <div class="module-icon" style="background:rgba(248,113,113,0.12);">🛠️</div>
+                        <div>
+                            <h3>Manage Disease Module</h3>
+                            <span class="module-phase"><span class="status-dot complete"></span>Admin</span>
+                        </div>
+                    </div>
+                    <p class="desc">
+                        Evolve the active disease's data from the dashboard: refresh genes/drugs from
+                        public sources (GWAS, Open Targets, Reactome), prune entities no longer reported,
+                        and roll back any prune from its backup — no CLI required.
+                    </p>
+                    <div class="tags">
+                        <span class="tag pink">Refresh</span>
+                        <span class="tag yellow">Prune</span>
+                        <span class="tag blue">Restore</span>
+                        <span class="tag green">Backups</span>
+                    </div>
+                    <div class="actions">
+                        <button class="btn btn-primary" onclick="openDiseaseManager()">🛠️ Manage Module</button>
+                    </div>
+                    <div class="module-result" id="result-manage"></div>
                 </div>
             </div>
 
@@ -623,10 +697,10 @@
                 <h3>🌐 API Quick Start</h3>
                 <div class="code-block">
 <span class="comment"># Start the API server</span>
-<span class="cmd">python</span> web_api/main.py
+<span class="cmd">python</span> -m med_research.cli serve --host 127.0.0.1 --port 8000
 
 <span class="comment"># Or with uvicorn</span>
-<span class="cmd">uvicorn</span> web_api.main:app --reload --port 8000
+<span class="cmd">uvicorn</span> med_research.web.main:app --host 127.0.0.1 --port 8000
 
 <span class="comment"># Interactive docs at /api/docs</span>
                 </div>
@@ -637,13 +711,13 @@
         <!-- ── Footer ──────────────────────────────────────────────── -->
         <footer>
             <div class="links">
-                <a href="/knowledge_graph/web/index.html">Knowledge Graph</a>
-                <a href="/drug_repurposing/report.html">Drug Repurposing</a>
-                <a href="/bioinformatics/bioinformatics_report.html">Bioinformatics</a>
-                <a href="/literature_mining/literature_report.html">Literature Mining</a>
-                <a href="/virtual_screening/screening_report.html">Screening</a>
-                <a href="/clinical_trials/ct_report.html">Trials</a>
-                <a href="/ml_predictor/ml_report.html">ML Predictor</a>
+                <a href="#kg-explorer">Knowledge Graph</a>
+                <a href="/api/export/report/repurpose">Drug Repurposing</a>
+                <a href="/api/export/report/bioinformatics">Bioinformatics</a>
+                <a href="/api/export/report/literature">Literature Mining</a>
+                <a href="/api/export/report/screening">Screening</a>
+                <a href="/api/export/report/trials">Trials</a>
+                <a href="/api/export/report/ml">ML Predictor</a>
                 <a href="/api/docs">API Docs</a>
             </div>
             <p style="margin-bottom:6px;">Medical Research Platform · An open science project</p>

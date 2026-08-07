@@ -26,6 +26,8 @@ if sys.platform == "win32":
 DATA_DIR = Path(__file__).parent / "data"
 CHROMA_DIR = Path("data/chroma/semantic")
 PUBMED_CACHE = Path("literature_mining/data/pubmed_cache.json")
+# Literature-mining data dir (same layout the miner writes to)
+LIT_DATA_DIR = Path(__file__).parent.parent / "literature_mining" / "data"
 
 # ---- Optional dependencies with graceful fallback ----
 
@@ -60,12 +62,34 @@ def _check_deps():
 class SemanticSearchEngine:
     """Embedding-based semantic search over PubMed abstracts."""
 
-    def __init__(self, model_name: str = "all-MiniLM-L6-v2"):
+    def __init__(self, model_name: str = "all-MiniLM-L6-v2", disease_id: str = "sle"):
         self.model_name = model_name
+        self.disease_id = disease_id
         self.model = None
         self.client = None
         self.collection = None
         self._articles = []
+
+    @property
+    def collection_name(self) -> str:
+        """Per-disease Chroma collection; legacy name kept for SLE."""
+        if self.disease_id == "sle":
+            return "pubmed_abstracts"
+        return f"pubmed_abstracts_{self.disease_id}"
+
+    def _cache_path(self) -> Path:
+        """Resolve the PubMed cache for this disease.
+
+        Uses the per-disease cache written by literature_mining/miner.py
+        (pubmed_cache_<id>.json), falling back to the legacy shared
+        cache for SLE.
+        """
+        per_disease = LIT_DATA_DIR / f"pubmed_cache_{self.disease_id}.json"
+        if per_disease.exists() or self.disease_id != "sle":
+            return per_disease
+        # Legacy shared cache, resolved the same absolute way as LIT_DATA_DIR
+        # (the module-level PUBMED_CACHE constant is CWD-relative).
+        return LIT_DATA_DIR / "pubmed_cache.json"
 
     def _ensure_deps(self):
         if not _check_deps():
@@ -83,22 +107,23 @@ class SemanticSearchEngine:
             self.client = chromadb.PersistentClient(path=str(CHROMA_DIR))
             # Delete existing collection on re-index to avoid duplicates
             try:
-                self.client.delete_collection("pubmed_abstracts")
+                self.client.delete_collection(self.collection_name)
             except Exception:
                 pass
             self.collection = self.client.create_collection(
-                name="pubmed_abstracts",
-                metadata={"description": "PubMed abstracts for SLE/lupus research"},
+                name=self.collection_name,
+                metadata={"description": f"PubMed abstracts for {self.disease_id} research"},
             )
 
     def load_articles(self) -> list:
-        """Load cached PubMed articles."""
-        if not PUBMED_CACHE.exists():
-            logger.info(f"No PubMed cache found at {PUBMED_CACHE}")
+        """Load cached PubMed articles for the engine's disease."""
+        cache = self._cache_path()
+        if not cache.exists():
+            logger.info(f"No PubMed cache found at {cache}")
             logger.info("Run: python literature_mining/miner.py first")
             return []
 
-        articles = json.loads(PUBMED_CACHE.read_text(encoding="utf-8"))
+        articles = json.loads(cache.read_text(encoding="utf-8"))
         logger.info(f"Loaded {len(articles)} cached articles")
         self._articles = articles
         return articles
@@ -157,7 +182,7 @@ class SemanticSearchEngine:
         if self.collection is None:
             self.client = chromadb.PersistentClient(path=str(CHROMA_DIR))
             try:
-                self.collection = self.client.get_collection("pubmed_abstracts")
+                self.collection = self.client.get_collection(self.collection_name)
             except Exception:
                 logger.info("No indexed collection found. Run --index first.")
                 return []
@@ -191,7 +216,7 @@ class SemanticSearchEngine:
         if self.collection is None:
             self.client = chromadb.PersistentClient(path=str(CHROMA_DIR))
             try:
-                self.collection = self.client.get_collection("pubmed_abstracts")
+                self.collection = self.client.get_collection(self.collection_name)
             except Exception:
                 return 0
         return self.collection.count()
@@ -206,10 +231,11 @@ def main():
     parser.add_argument("--index", action="store_true", help="Index cached PubMed articles into vector DB")
     parser.add_argument("--query", type=str, help="Semantic search query (natural language)")
     parser.add_argument("--top", type=int, default=20, help="Number of results (default: 20)")
+    parser.add_argument("--disease", "-d", default="sle", help="Disease ID (default: sle)")
     parser.add_argument("--export-html", action="store_true", help="Generate HTML report")
     args = parser.parse_args()
 
-    engine = SemanticSearchEngine()
+    engine = SemanticSearchEngine(disease_id=args.disease)
 
     if args.index:
         articles = engine.load_articles()

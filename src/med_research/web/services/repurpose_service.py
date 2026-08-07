@@ -9,21 +9,21 @@ sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 from med_research.web.dependencies import get_candidates, get_kg_genes, get_knowledge_graph
 
 
-def run_repurposing(top_n: int = 15, gene_id: str | None = None) -> dict:
+def run_repurposing(top_n: int = 15, gene_id: str | None = None, disease_id: str = "sle") -> dict:
     """Score drug repurposing candidates and return results."""
     from med_research.pipeline.drug_repurposing.engine import (
         identify_untargeted_genes,
         score_candidates,
     )
 
-    G = get_knowledge_graph()
-    genes = get_kg_genes()
+    G = get_knowledge_graph(disease_id)
+    genes = get_kg_genes(disease_id)
     candidates = get_candidates()
 
-    untargeted = identify_untargeted_genes(G)
+    untargeted = identify_untargeted_genes(G, disease_id)
     untargeted_ids = {g["id"] for g in untargeted}
 
-    scored = score_candidates(G, candidates, genes)
+    scored = score_candidates(G, candidates, genes, disease_id=disease_id)
     scored = [c for c in scored if c["gene_id"] in untargeted_ids]
 
     # Filter by gene if requested
@@ -53,18 +53,18 @@ def run_repurposing(top_n: int = 15, gene_id: str | None = None) -> dict:
     }
 
 
-def get_gene_repurposing(gene_id: str) -> dict | None:
+def get_gene_repurposing(gene_id: str, disease_id: str = "sle") -> dict | None:
     """Get all repurposing candidates for a specific gene."""
-    genes = get_kg_genes()
+    genes = get_kg_genes(disease_id)
     if gene_id not in genes:
         return None
 
-    G = get_knowledge_graph()
+    G = get_knowledge_graph(disease_id)
     candidates = get_candidates()
 
     from med_research.pipeline.drug_repurposing.engine import score_candidates
 
-    scored = score_candidates(G, candidates, genes)
+    scored = score_candidates(G, candidates, genes, disease_id=disease_id)
     gene_candidates = [c for c in scored if c["gene_id"] == gene_id]
     gene_candidates.sort(key=lambda x: x["composite_score"], reverse=True)
 
@@ -77,7 +77,10 @@ def get_gene_repurposing(gene_id: str) -> dict | None:
         "gene_name": gene.get("name", gene_id),
         "gene_category": gene.get("category", ""),
         "gene_function": gene.get("function", ""),
-        "lupus_evidence": gene.get("lupus_evidence", ""),
+        "disease_evidence": gene.get(
+            "disease_evidence", gene.get("lupus_evidence", "")
+        ),
+        "disease_id": disease_id,
         "odds_ratio": gene.get("odds_ratio"),
         "candidates": gene_candidates,
         "best_score": gene_candidates[0]["composite_score"] if gene_candidates else 0,

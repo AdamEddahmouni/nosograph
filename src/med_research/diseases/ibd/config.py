@@ -107,3 +107,27 @@ DRUG_INDUCED_LUPUS_RISK = {
         "sulfasalazine",
     ],
 }
+
+# ── Clinical trials / GWAS search terms ────────────────────────────────
+TRIAL_QUERY = "inflammatory bowel disease OR IBD"
+GWAS_SEARCH_TERMS = [
+    "inflammatory bowel disease",
+    "Crohn's disease",
+    "ulcerative colitis",
+    "IBD",
+]
+
+# Compatibility alias retained for older callers; neutral name is authoritative.
+DISEASE_SPECIFIC_RISK = DRUG_INDUCED_LUPUS_RISK
+
+SCREENING_PROFILE = {
+    "strategy_id": "ibd-screening-v1",
+    "pathway_keywords": ["il-23", "th17", "jak-stat", "leukocyte trafficking", "integrin", "tnf", "epithelial barrier", "autophagy", "s1p"],
+    "mechanism_keywords": ["il-23", "il-12", "th17", "jak", "integrin", "gut", "tnf", "mucosal", "s1p", "autophagy"],
+    "reference_drug_ids": ["infliximab", "vedolizumab", "ustekinumab", "risankizumab", "tofacitinib", "upadacitinib"],
+    "weights": {"binding_estimate": 0.25, "druglikeness": 0.15, "target_complementarity": 0.35, "similarity_score": 0.15, "novelty_score": 0.10},
+    "source": "curated_ibd_knowledge_graph",
+    "curated_inputs": ["pathways", "drugs", "screening_strategy"],
+    "inferred_inputs": ["mechanism_keyword_matching", "property_based_binding_estimate"],
+    "limitations": ["Property scores are heuristic prioritization signals and do not establish inflammatory bowel disease efficacy or mucosal healing."],
+}

@@ -29,10 +29,10 @@ if sys.platform == "win32":
 DATA_DIR = Path(__file__).parent / "data"
 
 
-def load_graph():
-    """Load the knowledge graph."""
+def load_graph(disease_id: str = "sle"):
+    """Load the knowledge graph for the requested disease."""
     from med_research.pipeline.knowledge_graph.builder import build_graph
-    return build_graph()
+    return build_graph(disease_id)
 
 
 def _to_undirected(G):
@@ -249,12 +249,12 @@ def compute_graph_metrics(G=None) -> dict:
 # ── Combined ─────────────────────────────────────────────────────────────
 
 
-def compute_all_metrics(progress_callback=None) -> dict:
+def compute_all_metrics(progress_callback=None, disease_id: str = "sle") -> dict:
     """Run all analyses and return combined results."""
     cb = progress_callback or (lambda p, m: None)
 
-    cb(0, "Loading knowledge graph...")
-    G = load_graph()
+    cb(0, f"Loading {disease_id} knowledge graph...")
+    G = load_graph(disease_id)
 
     cb(5, f"Graph loaded: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
 
@@ -294,6 +294,7 @@ def compute_all_metrics(progress_callback=None) -> dict:
         "centrality": centrality_summary,
         "bridge_nodes": bridge_nodes,
         "communities": communities,
+        "disease_id": disease_id,
     }
 
     output_path = DATA_DIR / "network_analysis.json"
@@ -363,7 +364,7 @@ def main():
         return
 
     if args.communities:
-        communities = compute_communities()
+        communities = compute_communities(disease_id=args.disease)
         print(f"\n🔗 Communities (modularity={communities['modularity']}, {communities['n_communities']} total):")
         for c in communities["communities"]:
             print(f"\n  Community {c['id']} ({c['size']} nodes, dominant: {c['dominant_type']}):")
@@ -373,12 +374,12 @@ def main():
                 print(f"    ... and {len(c['node_labels']) - 8} more")
         return
 
-    results = compute_all_metrics()
+    results = compute_all_metrics(disease_id=args.disease)
     print_analysis(results)
 
     if args.export_html:
         from med_research.pipeline.network_pharmacology.report import generate_html_report
-        generate_html_report(results)
+        generate_html_report(results, disease_id=args.disease)
         print("\n✅ HTML report generated: network_pharmacology/report.html")
 
     return results

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "disease_id": "sle",
+  "source": "legacy_curated_sle_adverse_event_profiles",
+  "coverage_level": "full",
+  "curated_inputs": ["legacy_profile_database", "disease_symptoms", "disease_risk_config"],
+  "inferred_inputs": ["profile_to_symptom_overlap"],
+  "limitations": ["Safety scores are research heuristics, not individualized clinical risk assessments.", "Validate current labels and patient-specific contraindications before use."],
+  "profile_source": "pipeline/adverse_events/data/profiles.json",
+  "profiles": []
+}

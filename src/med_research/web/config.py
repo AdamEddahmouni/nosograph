@@ -24,86 +24,112 @@ API_DESCRIPTION = (
 # in the OpenAPI schema. APIRouter(tags=[...]) only tags individual routes;
 # the FastAPI constructor's openapi_tags parameter creates the schema metadata.
 API_TAGS = [
-    {"name": "System",
-     "description": "Health checks and platform-wide statistics."},
-    {"name": "Knowledge Graph",
-     "description": (
-         "Explore the SLE knowledge graph — nodes, edges, paths, neighbors, "
-         "and search."
-     )},
-    {"name": "Drug Repurposing",
-     "description": (
-         "Ranked drug repurposing candidates by composite score, filterable "
-         "by gene."
-     )},
-    {"name": "Bioinformatics",
-     "description": (
-         "GWAS catalog annotation, pathway enrichment (GO/KEGG/Reactome), "
-         "and PPI network analysis."
-     )},
-    {"name": "Analysis",
-     "description": (
-         "Literature mining (PubMed + NER), virtual drug screening, "
-         "clinical trial tracking, and ML target prediction."
-     )},
-    {"name": "Synergy",
-     "description": (
-         "Predict synergistic drug combinations from the 26-drug library "
-         "using a 5-dimensional weighted scoring model."
-     )},
-    {"name": "Safety",
-     "description": (
-         "Adverse event profiling and lupus-specific safety scoring "
-         "across 4 dimensions for all 26 knowledge graph drugs."
-     )},
-    {"name": "Expression",
-     "description": (
-         "Gene expression correlation — Connectivity Map approach scoring "
-         "drug mechanisms against curated SLE transcriptomic signatures."
-     )},
-    {"name": "CAR-T",
-     "description": (
-         "CAR-T Response Predictor — gene-level CD19 CAR-T therapy "
-         "suitability scoring for all 35 lupus-associated genes."
-     )},
-    {"name": "Biomarker",
-     "description": (
-         "Biomarker Discovery — cross-module integration correlating gene "
-         "signatures across all 5 scoring platforms for therapy selection."
-     )},
-    {"name": "Semantic Search",
-     "description": (
-         "Embedding-based semantic literature search using sentence-transformers "
-         "and ChromaDB to find PubMed articles by meaning, not keywords."
-     )},
-    {"name": "Evidence Gathering",
-     "description": (
-         "Multi-source biomedical evidence aggregation — search PubMed, "
-         "preprints (bioRxiv/medRxiv), ClinicalTrials.gov, FDA labels "
-         "(DailyMed), and patents simultaneously."
-     )},
-    {"name": "LLM Extraction",
-     "description": (
-         "LLM-powered structured data extraction from biomedical abstracts. "
-         "Extracts evidence levels, model systems, key findings, drug mentions, "
-         "sample sizes, and confidence scores using GPT-4o-mini or compatible models."
-     )},
-    {"name": "Monitor",
-     "description": (
-         "Continuous evidence monitoring — take timestamped snapshots, compare "
-         "over time, and receive alerts for new publications, clinical trial "
-         "updates, and trackable changes across all platform entities."
-     )},
-    {"name": "Cross-Disease Analysis",
-     "description": (
-         "Cross-disease shared biology, similarity, and multi-disease "
-         "drug scoring across 7 autoimmune diseases."
-     )},
-    {"name": "Jobs",
-     "description": (
-         "Submit and track async analysis jobs with real-time WebSocket "
-         "progress streaming."
-     )},
+    {"name": "System", "description": "Health checks and platform-wide statistics."},
+    {
+        "name": "Knowledge Graph",
+        "description": (
+            "Explore the SLE knowledge graph — nodes, edges, paths, neighbors, and search."
+        ),
+    },
+    {
+        "name": "Drug Repurposing",
+        "description": (
+            "Ranked drug repurposing candidates by composite score, filterable by gene."
+        ),
+    },
+    {
+        "name": "Bioinformatics",
+        "description": (
+            "GWAS catalog annotation, pathway enrichment (GO/KEGG/Reactome), "
+            "and PPI network analysis."
+        ),
+    },
+    {
+        "name": "Analysis",
+        "description": (
+            "Literature mining (PubMed + NER), virtual drug screening, "
+            "clinical trial tracking, and ML target prediction."
+        ),
+    },
+    {
+        "name": "Synergy",
+        "description": (
+            "Predict synergistic drug combinations from the 26-drug library "
+            "using a 5-dimensional weighted scoring model."
+        ),
+    },
+    {
+        "name": "Safety",
+        "description": (
+            "Adverse event profiling and lupus-specific safety scoring "
+            "across 4 dimensions for all 26 knowledge graph drugs."
+        ),
+    },
+    {
+        "name": "Expression",
+        "description": (
+            "Gene expression correlation — Connectivity Map approach scoring "
+            "drug mechanisms against curated SLE transcriptomic signatures."
+        ),
+    },
+    {
+        "name": "CAR-T",
+        "description": (
+            "CAR-T Response Predictor — gene-level CD19 CAR-T therapy "
+            "suitability scoring for all 35 lupus-associated genes."
+        ),
+    },
+    {
+        "name": "Biomarker",
+        "description": (
+            "Biomarker Discovery — cross-module integration correlating gene "
+            "signatures across all 5 scoring platforms for therapy selection."
+        ),
+    },
+    {
+        "name": "Semantic Search",
+        "description": (
+            "Embedding-based semantic literature search using sentence-transformers "
+            "and ChromaDB to find PubMed articles by meaning, not keywords."
+        ),
+    },
+    {
+        "name": "Evidence Gathering",
+        "description": (
+            "Multi-source biomedical evidence aggregation — search PubMed, "
+            "preprints (bioRxiv/medRxiv), ClinicalTrials.gov, FDA labels "
+            "(DailyMed), and patents simultaneously."
+        ),
+    },
+    {
+        "name": "LLM Extraction",
+        "description": (
+            "LLM-powered structured data extraction from biomedical abstracts. "
+            "Extracts evidence levels, model systems, key findings, drug mentions, "
+            "sample sizes, and confidence scores using GPT-4o-mini or compatible models."
+        ),
+    },
+    {
+        "name": "Monitor",
+        "description": (
+            "Continuous evidence monitoring — take timestamped snapshots, compare "
+            "over time, and receive alerts for new publications, clinical trial "
+            "updates, and trackable changes across all platform entities."
+        ),
+    },
+    {
+        "name": "Cross-Disease Analysis",
+        "description": (
+            "Cross-disease shared biology, similarity, and multi-disease "
+            "drug scoring across 7 autoimmune diseases."
+        ),
+    },
+    {
+        "name": "Jobs",
+        "description": (
+            "Submit and track async analysis jobs with real-time WebSocket progress streaming."
+        ),
+    },
 ]
 
 # ── Celery / Redis ────────────────────────────────────────────────────────
@@ -115,6 +141,13 @@ CORS_ORIGINS = os.environ.get("CORS_ORIGINS", "http://localhost:3000").split(","
 
 # ── Cache ─────────────────────────────────────────────────────────────────
 USE_CACHE = os.environ.get("USE_CACHE", "true").lower() == "true"
+
+# ── Workspace run history ──────────────────────────────────────────────────
+WORKSPACE_DB_PATH = Path(
+    os.environ.get(
+        "WORKSPACE_DB_PATH", str(PROJECT_ROOT.parent / "data" / "evidence_workspace.sqlite3")
+    )
+)
 
 # ── Module Data Paths ─────────────────────────────────────────────────────
 PIPELINE_DIR = PROJECT_ROOT / "pipeline"

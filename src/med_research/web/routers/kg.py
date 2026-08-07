@@ -100,12 +100,13 @@ async def kg_neighbors(
 async def kg_centrality(
     metric: str = Query("betweenness", min_length=1, max_length=50, description="Centrality metric: degree, betweenness, eigenvector, closeness, pagerank"),
     top_n: int = Query(15, ge=1, le=50, description="Number of top nodes"),
+    disease: str = Query("sle", description="Disease ID"),
 ):
-    """Get centrality metrics for all nodes in the knowledge graph."""
-    return run_centrality_analysis(metric=metric, top_n=top_n)
+    """Get centrality metrics for the selected disease graph."""
+    return run_centrality_analysis(metric=metric, top_n=top_n, disease_id=disease)
 
 
 @router.get("/communities", response_model=CommunitiesResponse)
-async def kg_communities():
-    """Detect communities in the knowledge graph using Louvain algorithm."""
-    return run_community_detection()
+async def kg_communities(disease: str = Query("sle", description="Disease ID")):
+    """Detect communities in the selected disease knowledge graph."""
+    return run_community_detection(disease_id=disease)

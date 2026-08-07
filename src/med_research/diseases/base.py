@@ -2,7 +2,7 @@
 
 Each disease module under diseases/{id}/ provides:
   - data/                              JSON knowledge graph data
-  - config.py                          Disease-specific pipeline configuration  
+  - config.py                          Disease-specific pipeline configuration
   - scores.py (optional)               Disease-specific scoring tables
 
 The pipeline reads a disease module and runs all computational modules
@@ -137,13 +137,117 @@ class Disease:
         return self.config.get("CAR_T_SCORES", {})
 
     def get_adverse_event_profile(self) -> dict:
-        return self.config.get("ADVERSE_EVENT_PROFILE", {})
+        """Load the active disease's explicit adverse-event profile contract.
+
+        Disease modules own their safety inputs. The legacy shared profile
+        database is retained only as a SLE compatibility fallback and is never
+        used to make another disease appear covered.
+        """
+        configured = self.config.get("ADVERSE_EVENT_PROFILE")
+        if configured:
+            return configured
+
+        disease_path = self.data_dir / "adverse_events.json"
+        if disease_path.is_file():
+            try:
+                return json.loads(disease_path.read_text(encoding="utf-8"))
+            except (OSError, ValueError, TypeError):
+                return {}
+
+        if self.disease_id == "sle":
+            profile_path = self._root.parent.parent / "pipeline" / "adverse_events" / "data" / "profiles.json"
+            if profile_path.is_file():
+                try:
+                    payload = json.loads(profile_path.read_text(encoding="utf-8"))
+                    return {
+                        "schema_version": "legacy",
+                        "disease_id": "sle",
+                        "source": "legacy_sle_adverse_event_profiles",
+                        "profiles": payload.get("profiles", []),
+                    }
+                except (OSError, ValueError, TypeError):
+                    return {}
+        return {}
+
+    def get_screening_profile(self) -> dict:
+        """Return explicit screening calibration for the active disease.
+
+        Only an explicit disease configuration is valid. Missing profiles are
+        intentionally returned as empty so coverage can block the run rather
+        than silently borrowing another disease's calibration.
+        """
+        return self.config.get("SCREENING_PROFILE", {})
+
+    def get_disease_risk_config(self) -> dict:
+        """Return disease-specific risk configuration without lupus semantics."""
+        return self.config.get("DISEASE_SPECIFIC_RISK") or self.config.get(
+            "DRUG_INDUCED_LUPUS_RISK", {}
+        )
 
     def get_drug_induced_lupus_risk(self) -> dict:
-        return self.config.get("DRUG_INDUCED_LUPUS_RISK", {})
+        """Compatibility alias for the disease-neutral risk configuration."""
+        return self.get_disease_risk_config()
+
+    def coverage(self, module: str = "core", required_inputs=(), optional_inputs=()):
+        """Return strict coverage metadata for this disease/module."""
+        from med_research.diseases.coverage import module_coverage
+
+        return module_coverage(
+            self.disease_id,
+            module,
+            tuple(required_inputs),
+            tuple(optional_inputs),
+        )
+
+    def get_display_name(self) -> str:
+        """Return the configured display name used in user-facing outputs."""
+        return self.config.get("PIPELINE_LABEL") or self.profile.name or self.disease_id
+
+    def get_drug_target_exclusions(self) -> set[str]:
+        """Return entities that are assay targets rather than disease genes."""
+        configured = self.config.get("DRUG_TARGET_EXCLUSIONS")
+        if configured is not None:
+            return {str(item) for item in configured}
+        return {"CD20", "IMPDH", "Calcineurin", "Glucocorticoid Receptor"} if self.disease_id == "sle" else set()
+
+    def get_pathway_keywords(self) -> list[str]:
+        """Return broad terms used to match enrichment results to KG pathways."""
+        configured = self.config.get("PATHWAY_KEYWORDS")
+        if configured:
+            return list(configured)
+        terms = set()
+        for pathway in self.load_pathways().get("pathways", []):
+            terms.update(str(pathway.get("name", "")).lower().replace("/", " ").split())
+        return sorted(term for term in terms if len(term) > 2)
 
     def get_mechanism_categories(self) -> dict:
         return self.config.get("MECHANISM_CATEGORIES", {})
+
+    def get_trial_query(self) -> str:
+        """Return the ClinicalTrials.gov query configured for this disease."""
+        return self.config.get("TRIAL_QUERY") or self.profile.name or self.disease_id
+
+    def get_symptom_overlap_terms(self) -> list[str]:
+        """Return disease symptoms used for adverse-event overlap scoring."""
+        return list(self.get_symptoms())
+
+    def get_disease_evidence(self, entity: dict) -> str:
+        """Read disease-neutral evidence without cross-disease fallback leakage."""
+        if entity.get("disease_evidence"):
+            return entity["disease_evidence"]
+        # Legacy evidence keys are valid only for the legacy SLE data module.
+        if self.disease_id == "sle":
+            return entity.get("lupus_evidence") or entity.get("sle_evidence", "")
+        return ""
+
+    def get_gwas_search_terms(self) -> list[str]:
+        """Return only explicitly curated GWAS Catalog trait terms.
+
+        A missing list is a coverage gap. The profile name is intentionally
+        not substituted because a broad display name can produce an
+        uninterpretable or cross-disease GWAS query.
+        """
+        return list(self.config.get("GWAS_SEARCH_TERMS") or [])
 
     # ── Static helpers ─────────────────────────────────────────────────
 
@@ -157,6 +261,8 @@ class Disease:
         required = {
             "SYMPTOMS": self.get_symptoms(),
             "PUBMED_QUERIES": self.config.get("PUBMED_QUERIES", []),
+            "TRIAL_QUERY": self.config.get("TRIAL_QUERY", ""),
+            "GWAS_SEARCH_TERMS": self.config.get("GWAS_SEARCH_TERMS", []),
             "CAR_T_SCORES": self.get_car_t_scores(),
             "DRUG_INDUCED_LUPUS_RISK": self.get_drug_induced_lupus_risk(),
         }

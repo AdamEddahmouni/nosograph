@@ -95,3 +95,13 @@ src/med_research/pipeline/drug_synergy/report.html
 src/med_research/pipeline/evidence/report.html
 src/med_research/pipeline/bioinformatics/data/ppi_cache.json
 src/med_research/pipeline/knowledge_graph/web/graph_data_*.json
+
+# Per-module audit log (appended by each prune/restore)
+src/med_research/diseases/*/data/audit_log.jsonl
+
+# Playwright failure diagnostics (uploaded by CI)
+test-artifacts/browser/
+
+# Local Workspace database and generated per-query clinical-trial caches
+src/data/
+src/med_research/pipeline/clinical_trials/data/ct_cache_*.json

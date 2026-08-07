@@ -93,9 +93,9 @@ def load_json(path: Path) -> dict:
         return json.load(f)
 
 
-def load_drugs() -> dict:
+def load_drugs(disease_id: str = "sle") -> dict:
     """Load drug data indexed by drug ID."""
-    data = config_load_drugs()
+    data = config_load_drugs(disease_id)
     return {d["id"]: d for d in data["drugs"]}
 
 
@@ -434,24 +434,34 @@ def print_top_pairs(scored_pairs: list, top_n: int = 15):
         print(f"     └─ Combined Evidence:        {p['combined_evidence']}/10")
 
 
-def compute_synergy(progress_callback=None) -> list:
-    """Main entry point: load drugs, score all pairs, return results."""
+def compute_synergy(progress_callback=None, disease_id: str = "sle", save: bool = True) -> list:
+    """Main entry point: load drugs, score all pairs, return results.
+
+    Args:
+        progress_callback: Optional callable(percent, message) for progress.
+        disease_id: Disease whose drug library is used.
+        save: When False, compute in memory without writing the shared
+            synergy_results.json (used by the comparative cross-disease run
+            so per-disease scoring doesn't clobber the last-run results).
+    """
     cb = progress_callback or (lambda p, m: None)
 
     cb(0, "Loading drug library…")
-    drugs = load_drugs()
+    drugs = load_drugs(disease_id)
 
     cb(2, f"Loaded {len(drugs)} drugs from knowledge graph")
 
     pairs = score_drug_pairs(drugs, progress_callback=cb)
 
-    cb(98, "Saving results…")
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
-    output_path = DATA_DIR / "synergy_results.json"
-    with open(output_path, "w", encoding="utf-8") as f:
-        json.dump({"pairs": pairs, "total_pairs": len(pairs)}, f, indent=2)
-
-    cb(100, f"Results saved to {output_path}")
+    if save:
+        cb(98, "Saving results…")
+        DATA_DIR.mkdir(parents=True, exist_ok=True)
+        output_path = DATA_DIR / "synergy_results.json"
+        with open(output_path, "w", encoding="utf-8") as f:
+            json.dump({"pairs": pairs, "total_pairs": len(pairs)}, f, indent=2)
+        cb(100, f"Results saved to {output_path}")
+    else:
+        cb(100, "Synergy scoring complete (in-memory)")
     return pairs
 
 
@@ -460,16 +470,17 @@ def main():
         description="Lupus Drug Combination Synergy Predictor"
     )
     parser.add_argument("--top", type=int, default=15, help="Number of top pairs to display")
+    parser.add_argument("--disease", "-d", default="sle", help="Disease ID (default: sle)")
     parser.add_argument("--export-html", action="store_true", help="Generate HTML report")
     args = parser.parse_args()
 
-    pairs = compute_synergy()
+    pairs = compute_synergy(disease_id=args.disease)
     analyze(pairs)
     print_top_pairs(pairs, args.top)
 
     if args.export_html:
         from med_research.pipeline.drug_synergy.report import generate_html_report
-        generate_html_report(pairs)
+        generate_html_report(pairs, disease_id=args.disease)
         print("\n✅ HTML report generated: drug_synergy/report.html")
 
     return pairs

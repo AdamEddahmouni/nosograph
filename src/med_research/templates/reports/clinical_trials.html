@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ ctx_disease }} Clinical Trial Tracker Report</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root { --text-muted: #787890; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background: #0a0a0f; color: #e0e0e8; line-height: 1.6;
+        }
+        .container { max-width: 1300px; margin: 0 auto; padding: 24px; }
+
+        .hero {
+            background: linear-gradient(135deg, #0f1729, #1a1025, #0f1729);
+            border: 1px solid #252535; border-radius: 16px;
+            padding: 40px; margin-bottom: 32px; text-align: center;
+        }
+        .hero h1 {
+            font-size: 2rem; font-weight: 800;
+            background: linear-gradient(135deg, #60a5fa, #34d399, #fbbf24, #f472b6);
+            -webkit-background-clip: text; background-clip: text;
+            -webkit-text-fill-color: transparent; margin-bottom: 8px;
+        }
+        .hero .subtitle { color: #787890; font-size: 0.95rem; }
+
+        .stats-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+            gap: 14px; margin-bottom: 32px;
+        }
+        .stat-card {
+            background: #13131a; border: 1px solid #252535;
+            border-radius: 12px; padding: 20px; text-align: center;
+            transition: border-color 0.2s, transform 0.2s;
+        }
+        .stat-card:hover { border-color: #4b5563; transform: translateY(-2px); }
+        .stat-card .stat-value { font-size: 1.8rem; font-weight: 800; }
+        .stat-card .stat-label { color: #787890; font-size: 0.75rem; margin-top: 4px; }
+
+        .section-title {
+            font-size: 1.2rem; font-weight: 700; margin: 36px 0 16px;
+            padding-bottom: 8px; border-bottom: 1px solid #252535;
+            display: flex; align-items: center; gap: 8px;
+        }
+
+        .charts-row {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+            gap: 20px; margin-bottom: 28px;
+        }
+        .chart-card {
+            background: #13131a; border: 1px solid #252535;
+            border-radius: 12px; padding: 20px; text-align: center;
+        }
+        .chart-card img { max-width: 100%; height: auto; border-radius: 6px; }
+        .chart-card h4 { font-size: 0.9rem; color: #787890; margin-bottom: 12px; font-weight: 600; }
+
+        .table-container {
+            overflow-x: auto; background: #13131a;
+            border: 1px solid #252535; border-radius: 12px; margin-bottom: 28px;
+        }
+        table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+        th {
+            text-align: left; padding: 12px 14px; background: #1a1a24;
+            color: #787890; font-weight: 600; font-size: 0.7rem;
+            text-transform: uppercase; letter-spacing: 0.04em;
+            border-bottom: 1px solid #252535;
+        }
+        td { padding: 10px 14px; border-bottom: 1px solid #1a1a24; vertical-align: top; }
+        tr:hover td { background: rgba(96, 165, 250, 0.03); }
+
+        .status-badge {
+            display: inline-block; padding: 3px 10px; border-radius: 12px;
+            font-size: 0.68rem; font-weight: 600; white-space: nowrap;
+        }
+        .phase-badge {
+            display: inline-block; padding: 2px 8px; border-radius: 10px;
+            font-size: 0.68rem; font-weight: 600; margin: 1px 2px;
+        }
+        .kg-badge {
+            display: inline-block; padding: 2px 8px; border-radius: 10px;
+            font-size: 0.68rem; font-weight: 600; margin: 1px 2px;
+        }
+
+        .match-card {
+            background: #13131a; border: 1px solid #252535;
+            border-radius: 10px; padding: 16px 18px; margin-bottom: 10px;
+            transition: border-color 0.2s;
+        }
+        .match-card:hover { border-color: #4b5563; }
+        .match-header { display: flex; justify-content: space-between; margin-bottom: 6px; }
+        .match-title { font-weight: 600; font-size: 0.85rem; }
+
+        .gene-drug-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 16px; margin-bottom: 28px;
+        }
+        .hit-card {
+            background: #13131a; border: 1px solid #252535;
+            border-radius: 10px; padding: 16px;
+        }
+        .hit-card h4 { font-size: 0.85rem; margin-bottom: 10px; font-weight: 600; }
+        .hit-bar {
+            display: flex; align-items: center; gap: 10px; margin-bottom: 6px;
+        }
+        .hit-label { font-size: 0.75rem; font-weight: 500; min-width: 100px; }
+        .hit-fill {
+            height: 8px; border-radius: 4px; min-width: 3px;
+            transition: width 0.3s;
+        }
+        .hit-count { font-size: 0.72rem; color: #787890; min-width: 30px; }
+
+        footer {
+            text-align: center; padding: 40px 20px;
+            color: #787890; font-size: 0.75rem;
+            border-top: 1px solid #252535; margin-top: 40px;
+        }
+        footer a { color: #60a5fa; text-decoration: none; }
+
+        @media (max-width: 768px) {
+            .charts-row { grid-template-columns: 1fr; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .gene-drug-grid { grid-template-columns: 1fr; }
+        }
+
+    /* ── Print / PDF export ─────────────────────────────────────── */
+    @media print {
+        * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        body { background: #ffffff !important; color: #111827 !important; }
+        .hero, .container, .table-container, .stat-card, .match-card,
+        .hit-card, .chart-card, .methodology, .method-card, .vina-box,
+        .target-section, .kg-explorer, .cd-card {
+            background: #ffffff !important; color: #111827 !important;
+            border-color: #d1d5db !important; box-shadow: none !important;
+        }
+        h1, h2, h3, h4, th { color: #111827 !important; }
+        .subtitle, .muted, footer, .stat-label, .hit-count, .target-category,
+        .target-mean, .vina-note, .rel-desc { color: #4b5563 !important; }
+        table { border-collapse: collapse; width: 100%; }
+        th { background: #f3f4f6 !important; }
+        td, th { border: 1px solid #d1d5db !important; }
+        a { color: #2563eb !important; text-decoration: none; }
+        .stat-card, .match-card, .hit-card { break-inside: avoid; }
+        .section-title { border-bottom-color: #d1d5db !important; }
+        footer { border-top-color: #d1d5db !important; }
+        @page { margin: 1.5cm; }
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>Clinical Trial Tracker Report</h1>
+            <p class="subtitle">
+                Tracking {{ ctx_0 }} {{ ctx_disease }} Interventional Trials ·
+                {{ ctx_1 }} Cross-Referenced Against the Knowledge Graph
+            </p>
+            <p class="subtitle" style="font-size:0.78rem;margin-top:8px;">
+                Data: ClinicalTrials.gov · Generated: {{ ctx_2 }}
+            </p>
+        </div>
+
+        {{ ctx_3 | safe }}
+
+        <h2 class="section-title">📊 Phase Distribution</h2>
+        <div class="charts-row">
+            {{ ctx_4 | safe }}
+            {{ ctx_5 | safe }}
+        </div>
+
+        <h2 class="section-title">🔬 KG-Cross-Referenced Trials</h2>
+        {{ ctx_6 | safe }}
+
+        <h2 class="section-title">🧬💊 Top Genes & Drugs in Clinical Development</h2>
+        {{ ctx_7 | safe }}
+
+        <h2 class="section-title">📋 All Tracked Trials</h2>
+        <div class="table-container" style="max-height:600px;overflow-y:auto;">
+            {{ ctx_8 | safe }}
+        </div>
+
+        <footer>
+            <p>{{ ctx_disease }} Clinical Trial Tracker · Data from <a href="https://clinicaltrials.gov" target="_blank">ClinicalTrials.gov</a></p>
+            <p>Cross-referenced against the <a href="../knowledge_graph/web/index.html">{{ ctx_disease }} Knowledge Graph</a></p>
+            <p style="margin-top:8px;color:#6b7280;">
+                ⚠️ Disclaimer: Trial data reflects ClinicalTrials.gov records as of report generation.
+                Verify trial status and results on the official registry.
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,4 +1,4 @@
-.PHONY: help test test-quiet test-unit test-integration test-cov lint lint-fix check-imports run-all kg repurpose bio literature docker-build docker-up docker-test clean install
+.PHONY: help test test-quiet test-fast test-offline test-unit test-integration test-slow test-cov lint lint-fix check-imports run-all kg repurpose bio literature docker-build docker-up docker-test clean install
 
 help:  ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | \
@@ -16,6 +16,15 @@ test:  ## Run all tests (verbose)
 
 test-quiet:  ## Run all tests (quiet)
 	python -m pytest tests/ -q --tb=line
+
+test-fast:  ## Run fast unit tests without slow or integration markers
+	python -m pytest tests/ -m "not slow and not integration" -q --tb=line
+
+test-offline:  ## Run the complete offline suite; live API tests are marked slow
+	python -m pytest tests/ -m "not slow" -q --tb=short
+
+test-slow:  ## Run live API/integration tests marked slow
+	python -m pytest tests/ -m slow -v --tb=short
 
 test-unit:  ## Run unit tests only (fast, offline)
 	python -m pytest tests/ -m "unit" -q --tb=line

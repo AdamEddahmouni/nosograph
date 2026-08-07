@@ -32,19 +32,34 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install -r requirements-dev.txt
+          python -m playwright install chromium
           pip install -e .  # install the med_research package itself (src layout)
 
       - name: Check for stale internal imports
         run: |
           python scripts/check_imports.py
 
-      - name: Run tests
+      - name: Run deterministic offline tests
+        timeout-minutes: 5
         run: |
-          python -m pytest tests/ -m "not slow" -v --tb=short
+          python -m pytest tests/ -m "not slow" -q --tb=short
+
+      - name: Upload Playwright failure diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-browser-diagnostics-${{ matrix.python-version }}
+          path: test-artifacts/browser/
+          if-no-files-found: ignore
+          retention-days: 14
 
       - name: Verify unified CLI works
         run: |
           python -m med_research.cli --help
+
+      - name: Verify every disease config is non-stub
+        run: |
+          python -m med_research.cli disease validate --all --strict
 
       - name: Verify knowledge graph builds
         run: |
