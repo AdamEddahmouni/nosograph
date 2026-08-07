@@ -339,6 +339,98 @@
         "PMID:27630099"
       ],
       "category": "B Cell / Germinal Center"
+    },
+    {
+      "id": "BAFF-R",
+      "name": "BAFF-R",
+      "chromosome": "n/a",
+      "function": "Ianalumab blocks BAFF-R survival signaling AND depletes BAFF-R+ B cells via ADCC — dual mechanism",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
+    },
+    {
+      "id": "CD20",
+      "name": "CD20 (MS4A1 / B-lymphocyte antigen CD20)",
+      "chromosome": "11q12.2",
+      "function": "B cell surface protein involved in B cell activation, proliferation, and calcium signaling",
+      "odds_ratio": null,
+      "references": [
+        "PMID:20662064",
+        "PMID:23054334"
+      ],
+      "category": "B Cell Signaling",
+      "disease_evidence": "Target of B cell depletion therapies (rituximab, obinutuzumab) used clinically in refractory SLE."
+    },
+    {
+      "id": "CD40",
+      "name": "CD40",
+      "chromosome": "n/a",
+      "function": "Iscalimab blocks CD40 on B cells, inhibiting Tfh-B cell costimulation and germinal center formation without B cell depletion",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
+    },
+    {
+      "id": "CD80",
+      "name": "CD80",
+      "chromosome": "n/a",
+      "function": "Abatacept (CTLA4-Ig) binds CD80/CD86 on APCs, blocking CD28-mediated T cell costimulation and reducing Tfh help to B cells",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
+    },
+    {
+      "id": "CD86",
+      "name": "CD86",
+      "chromosome": "n/a",
+      "function": "Abatacept (CTLA4-Ig) binds CD86, blocking the CD28-B7 costimulatory pathway",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
+    },
+    {
+      "id": "Calcineurin",
+      "name": "Calcineurin (PPP3CA / Protein Phosphatase 3)",
+      "chromosome": "4q24",
+      "function": "Calcium/calmodulin-dependent serine/threonine phosphatase; dephosphorylates NFAT enabling T cell activation",
+      "odds_ratio": null,
+      "references": [
+        "PMID:33911854",
+        "PMID:25607700"
+      ],
+      "category": "T Cell Signaling",
+      "disease_evidence": "Target of voclosporin and tacrolimus for lupus nephritis; also stabilizes podocyte actin cytoskeleton in kidney."
+    },
+    {
+      "id": "DHODH",
+      "name": "DHODH",
+      "chromosome": "n/a",
+      "function": "Leflunomide inhibits DHODH, blocking de novo pyrimidine synthesis and reducing activated lymphocyte proliferation",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
+    },
+    {
+      "id": "Glucocorticoid Receptor",
+      "name": "Glucocorticoid Receptor (NR3C1)",
+      "chromosome": "5q31.3",
+      "function": "Nuclear receptor that mediates anti-inflammatory effects via transrepression of NF-κB and AP-1, and induction of anti-inflammatory genes",
+      "odds_ratio": null,
+      "references": [
+        "PMID:30875411",
+        "PMID:33174738"
+      ],
+      "category": "Nuclear Receptor Signaling",
+      "disease_evidence": "Target of prednisone and all corticosteroids, the mainstay of acute SLE management. Goal is to minimize exposure due to toxicity."
+    },
+    {
+      "id": "IMPDH",
+      "name": "IMPDH (Inosine Monophosphate Dehydrogenase)",
+      "chromosome": "7q32.1 / 3p21.31",
+      "function": "Rate-limiting enzyme in de novo guanine nucleotide synthesis; essential for lymphocyte proliferation",
+      "odds_ratio": null,
+      "references": [
+        "PMID:16112015",
+        "PMID:21561366"
+      ],
+      "category": "Nucleotide Metabolism",
+      "disease_evidence": "Target of mycophenolate mofetil, a first-line therapy for lupus nephritis."
     }
   ]
 }

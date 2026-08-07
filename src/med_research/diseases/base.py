@@ -68,9 +68,15 @@ class Disease:
     @property
     def profile(self) -> DiseaseProfile:
         if self._profile is None:
+            from med_research.diseases.schemas import (
+                DiseaseProfile as ProfileSchema,
+            )
+            from med_research.diseases.schemas import (
+                load_validated_json,
+            )
+
             path = self.data_dir / "profile.json"
-            with open(path, encoding="utf-8") as f:
-                data = json.load(f)
+            data = load_validated_json(path, ProfileSchema)
             self._profile = DiseaseProfile(
                 id=data.get("id", self.disease_id),
                 name=data.get("name", self.disease_id),
@@ -86,9 +92,15 @@ class Disease:
         return self._profile
 
     def load_json(self, filename: str) -> dict:
+        """Load a data file, validating registered KG files against their schema."""
+        from med_research.diseases.schemas import KG_FILE_MODELS, load_validated_json
+
         path = self.data_dir / filename
-        with open(path, encoding="utf-8") as f:
-            return json.load(f)
+        model_class = KG_FILE_MODELS.get(filename)
+        if model_class is None:
+            with open(path, encoding="utf-8") as f:
+                return json.load(f)
+        return load_validated_json(path, model_class)
 
     def load_genes(self) -> dict:
         return self.load_json("genes.json")
@@ -149,10 +161,12 @@ class Disease:
 
         disease_path = self.data_dir / "adverse_events.json"
         if disease_path.is_file():
-            try:
-                return json.loads(disease_path.read_text(encoding="utf-8"))
-            except (OSError, ValueError, TypeError):
-                return {}
+            from med_research.diseases.schemas import AdverseEventsFile, validate_and_load
+
+            payload = validate_and_load(disease_path, AdverseEventsFile)
+            if payload is not None:
+                return payload
+            return {}
 
         if self.disease_id == "sle":
             profile_path = self._root.parent.parent / "pipeline" / "adverse_events" / "data" / "profiles.json"
@@ -257,7 +271,9 @@ class Disease:
         Returns a dict of ``{field: status}`` where status is ``"ok"`` or a
         message describing what is missing/empty.
         """
-        checks = {}
+        from med_research.exceptions import MissingDataError, SchemaValidationError
+
+        checks: dict[str, str] = {}
         required = {
             "SYMPTOMS": self.get_symptoms(),
             "PUBMED_QUERIES": self.config.get("PUBMED_QUERIES", []),
@@ -276,6 +292,25 @@ class Disease:
                 checks[name] = "ok" if value else "empty"
             else:
                 checks[name] = "ok" if value else "missing"
+
+        for field, filename in (
+            ("genes", "genes.json"),
+            ("drugs", "drugs.json"),
+            ("pathways", "pathways.json"),
+            ("relationships", "relationships.json"),
+            ("profile", "profile.json"),
+        ):
+            try:
+                self.load_json(filename)
+                checks[field] = "ok"
+            except MissingDataError:
+                checks[field] = "missing"
+            except SchemaValidationError as exc:
+                message = str(exc)
+                if len(message) > 100:
+                    message = message[:97] + "..."
+                checks[field] = f"invalid: {message}"
+
         return checks
 
     @staticmethod

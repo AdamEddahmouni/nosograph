@@ -2,7 +2,7 @@
 
 > **Current-state note (2026-08-06):** This document preserves the 2026-07-25 audit for traceability, but several findings have since been resolved or mitigated. The supported runtime is the `src/med_research` package, the root `main.py` is a compatibility wrapper, all seven disease modules pass `python -m med_research.cli disease validate --all --strict`, and current usage is documented in `README.md`, `docs/evidence-workspace.md`, and `docs/api-reference.md`. Treat historical “Current state” sections below as dated audit observations, not the live API specification.
 
-**Resolved or mitigated findings:** legacy runtime entrypoints/static mounts, stale primary README guidance, incomplete seven-disease validation, and unguarded `--reload` behavior. Authentication and rate-limiting middleware are present in the current FastAPI app but still require deployment-policy review. Remaining open work should be re-verified against the current tree before implementation.
+**Resolved or mitigated findings:** legacy runtime entrypoints/static mounts, stale primary README guidance, incomplete seven-disease validation, unguarded `--reload` behavior, and **#2 KG JSON schema validation** (resolved 2026-08-07 — see `diseases/schemas.py`, `test_kg_schema_validation.py`, and extended `disease validate`). Authentication and rate-limiting middleware are present in the current FastAPI app but still require deployment-policy review. Remaining open work should be re-verified against the current tree before implementation.
 
 > **Audited:** 2026-07-25 | **Package:** `med-research` | **Version:** 2.0.0 (migration in progress)
 > **Scope:** `src/med_research/` (114 Python files), `tests/` (25 files), root config, Docker, Makefile, `scripts/`, legacy v1 directories
@@ -61,7 +61,9 @@
 
 ### 2. Data Validation — KG JSON Files Loaded Without Schema Validation
 
-**Current state:** Knowledge graph JSON files (`genes.json`, `drugs.json`, `pathways.json`, `relationships.json`, `profile.json`) are loaded via raw `json.load()` / `json.loads()` with **no schema, no type checking, no required-field validation.**
+> **Resolved 2026-08-07.** KG entity files (`genes.json`, `drugs.json`, `pathways.json`, `relationships.json`, `profile.json`) are validated at load time via Pydantic models in `src/med_research/diseases/schemas.py`, routed through `load_validated_json()` in `pipeline/knowledge_graph/config.py` and `Disease.load_json()`. Typed errors (`MissingDataError`, `SchemaValidationError`) live in `src/med_research/exceptions.py`. `disease validate --all --strict` exercises all five KG files. `adverse_events.json` uses `AdverseEventsFile` via `validate_and_load`. Coverage: `tests/test_kg_schema_validation.py` (parametrized happy-path, error contract, validate integration, relationship integrity).
+
+**Historical audit (2026-07-25):** Knowledge graph JSON files were loaded via raw `json.load()` / `json.loads()` with **no schema, no type checking, no required-field validation.**
 
 **Loading points:**
 - `src/med_research/diseases/base.py:73,91` — `json.load(f)` for profile and data files

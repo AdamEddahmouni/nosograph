@@ -43,6 +43,7 @@ async def disease_registry():
 
     from med_research.diseases.base import Disease
     from med_research.diseases.coverage import coverage_for_disease, module_coverage
+    from med_research.exceptions import DataValidationError
 
     diseases = []
     for disease_id in Disease.list_all():
@@ -52,7 +53,14 @@ async def disease_registry():
             genes = disease.load_genes()
             drugs = disease.load_drugs()
             pathways = disease.load_pathways()
-        except (ValueError, FileNotFoundError, KeyError, json.JSONDecodeError, OSError):
+        except (
+            ValueError,
+            FileNotFoundError,
+            KeyError,
+            json.JSONDecodeError,
+            OSError,
+            DataValidationError,
+        ):
             # Keep incomplete modules visible; their coverage is the reason they
             # belong in the registry and should be reported as blocked.
             try:

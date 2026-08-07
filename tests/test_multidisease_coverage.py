@@ -32,6 +32,19 @@ def test_all_disease_graphs_build_and_relationships_are_present(disease_id):
     assert graph.number_of_edges() >= len(relationships)
 
 
+@pytest.mark.parametrize("disease_id", DISEASES)
+def test_relationships_reference_known_nodes(disease_id):
+    from med_research.diseases.base import Disease
+
+    disease = Disease(disease_id)
+    genes = {g["id"] for g in disease.load_genes()["genes"]}
+    drugs = {d["id"] for d in disease.load_drugs()["drugs"]}
+    pathways = {p["id"] for p in disease.load_pathways()["pathways"]}
+    valid = genes | drugs | pathways | {disease.profile.kg_node_id, disease.profile.name}
+    for rel in disease.load_relationships()["relationships"]:
+        assert rel["source"] in valid and rel["target"] in valid
+
+
 def test_missing_required_config_is_blocked(monkeypatch):
     from med_research.diseases.base import Disease
     from med_research.diseases.coverage import module_coverage

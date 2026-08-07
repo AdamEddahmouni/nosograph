@@ -1,7 +1,17 @@
 """Knowledge Graph configuration and disease-aware data path resolution."""
 
 import json
+import logging
 from pathlib import Path
+
+from med_research.diseases.schemas import (
+    KG_FILE_MODELS,
+    DiseaseProfile,
+    load_validated_json,
+)
+from med_research.exceptions import MissingDataError, SchemaValidationError
+
+logger = logging.getLogger(__name__)
 
 DATA_ROOT = Path(__file__).parent.parent.parent / "diseases"
 
@@ -17,7 +27,12 @@ def _discover_diseases() -> dict:
             data_dir = child / "data"
             profile_path = data_dir / "profile.json"
             if profile_path.exists():
-                profile = json.loads(profile_path.read_text(encoding="utf-8"))
+                try:
+                    profile = load_validated_json(profile_path, DiseaseProfile)
+                except (MissingDataError, SchemaValidationError) as exc:
+                    # Registry must survive one broken module.
+                    logger.warning("Skipping disease %s: invalid profile (%s)", child.name, exc)
+                    continue
                 diseases[profile["id"]] = {
                     "id": profile["id"],
                     "name": profile["name"],
@@ -46,22 +61,30 @@ def list_diseases() -> dict:
 
 
 def get_disease_profile(disease_id: str = "sle") -> dict:
-    """Return the profile dict for a disease."""
+    """Return the profile dict for a disease (validated against the schema)."""
     profile_path = _resolve(disease_id) / "profile.json"
     if profile_path.exists():
-        return json.loads(profile_path.read_text(encoding="utf-8"))
+        return load_validated_json(profile_path, DiseaseProfile)
     return {"id": disease_id, "name": disease_id}
 
 
 def load_disease_json(disease_id: str, filename: str) -> dict:
-    """Load a JSON data file for a given disease."""
+    """Load a JSON data file for a given disease.
+
+    Files with a registered schema (genes/drugs/pathways/relationships/
+    profile) are validated on load; missing files keep the existing
+    ``FileNotFoundError`` contract so tolerant callers degrade gracefully.
+    """
     path = _resolve(disease_id) / filename
     if not path.exists():
         raise FileNotFoundError(
             f"Data file not found: {path}. Do you need to run "
             f"'python main.py kg --disease {disease_id}'?"
         )
-    return json.loads(path.read_text(encoding="utf-8"))
+    model_class = KG_FILE_MODELS.get(filename)
+    if model_class is None:
+        return json.loads(path.read_text(encoding="utf-8"))
+    return load_validated_json(path, model_class)
 
 
 def load_genes(disease_id: str = "sle") -> dict:

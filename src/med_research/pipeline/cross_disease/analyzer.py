@@ -25,6 +25,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
+from med_research.exceptions import DataValidationError
 from med_research.pipeline.knowledge_graph.config import (
     list_diseases,
     load_drugs,
@@ -59,22 +60,22 @@ def load_all_disease_data() -> dict:
         }
         try:
             disease_data["genes"] = load_genes(disease_id)
-        except (FileNotFoundError, json.JSONDecodeError):
+        except (DataValidationError, FileNotFoundError, json.JSONDecodeError):
             disease_data["genes"] = {"genes": []}
 
         try:
             disease_data["drugs"] = load_drugs(disease_id)
-        except (FileNotFoundError, json.JSONDecodeError):
+        except (DataValidationError, FileNotFoundError, json.JSONDecodeError):
             disease_data["drugs"] = {"drugs": []}
 
         try:
             disease_data["pathways"] = load_pathways(disease_id)
-        except (FileNotFoundError, json.JSONDecodeError):
+        except (DataValidationError, FileNotFoundError, json.JSONDecodeError):
             disease_data["pathways"] = {"pathways": []}
 
         try:
             disease_data["relationships"] = load_relationships(disease_id)
-        except (FileNotFoundError, json.JSONDecodeError):
+        except (DataValidationError, FileNotFoundError, json.JSONDecodeError):
             disease_data["relationships"] = {"relationships": []}
 
         data[disease_id] = disease_data

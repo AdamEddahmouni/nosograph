@@ -341,6 +341,154 @@
         "PMID:14645683"
       ],
       "category": "Treg / Immune Regulation"
+    },
+    {
+      "id": "BAFF",
+      "name": "B Cell Activating Factor (TNFSF13B / BLyS)",
+      "chromosome": "13q33.3",
+      "function": "Critical B cell survival and maturation factor",
+      "odds_ratio": null,
+      "references": [
+        "PMID:11323081",
+        "PMID:21989456"
+      ],
+      "category": "B Cell Survival",
+      "disease_evidence": "Elevated serum BAFF levels in SLE patients. Direct therapeutic target of belimumab. Overexpression drives autoantibody production."
+    },
+    {
+      "id": "CD20",
+      "name": "CD20 (MS4A1 / B-lymphocyte antigen CD20)",
+      "chromosome": "11q12.2",
+      "function": "B cell surface protein involved in B cell activation, proliferation, and calcium signaling",
+      "odds_ratio": null,
+      "references": [
+        "PMID:20662064",
+        "PMID:23054334"
+      ],
+      "category": "B Cell Signaling",
+      "disease_evidence": "Target of B cell depletion therapies (rituximab, obinutuzumab) used clinically in refractory SLE."
+    },
+    {
+      "id": "CNR2",
+      "name": "CNR2",
+      "chromosome": "n/a",
+      "function": "Lenabasum is a selective CB2 receptor agonist that activates resolution of innate immune responses and reduces profibrotic cytokine production",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
+    },
+    {
+      "id": "DHFR",
+      "name": "DHFR",
+      "chromosome": "n/a",
+      "function": "Methotrexate inhibits DHFR and AICAR transformylase, leading to adenosine-mediated anti-inflammatory effects on skin fibrosis",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
+    },
+    {
+      "id": "DNA",
+      "name": "DNA",
+      "chromosome": "n/a",
+      "function": "Cyclophosphamide crosslinks DNA, depleting activated T and B cells and reducing pulmonary inflammation in SSc-ILD",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
+    },
+    {
+      "id": "EDNRA",
+      "name": "EDNRA",
+      "chromosome": "n/a",
+      "function": "Bosentan blocks ETA receptor, reducing endothelin-1 mediated pulmonary vasoconstriction and vascular remodeling",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
+    },
+    {
+      "id": "EDNRB",
+      "name": "EDNRB",
+      "chromosome": "n/a",
+      "function": "Bosentan blocks ETB receptor, contributing to vasodilation and endothelin-1 clearance modulation",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
+    },
+    {
+      "id": "FGFR",
+      "name": "FGFR",
+      "chromosome": "n/a",
+      "function": "Nintedanib inhibits FGFR tyrosine kinase, suppressing fibroblast activation and ECM production",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
+    },
+    {
+      "id": "Glucocorticoid Receptor",
+      "name": "Glucocorticoid Receptor (NR3C1)",
+      "chromosome": "5q31.3",
+      "function": "Nuclear receptor that mediates anti-inflammatory effects via transrepression of NF-κB and AP-1, and induction of anti-inflammatory genes",
+      "odds_ratio": null,
+      "references": [
+        "PMID:30875411",
+        "PMID:33174738"
+      ],
+      "category": "Nuclear Receptor Signaling",
+      "disease_evidence": "Target of prednisone and all corticosteroids, the mainstay of acute SLE management. Goal is to minimize exposure due to toxicity."
+    },
+    {
+      "id": "IL6R",
+      "name": "IL6R",
+      "chromosome": "n/a",
+      "function": "Tocilizumab blocks both membrane-bound and soluble IL-6R, inhibiting IL-6-mediated JAK-STAT3 signaling in SSc",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
+    },
+    {
+      "id": "IMPDH",
+      "name": "IMPDH (Inosine Monophosphate Dehydrogenase)",
+      "chromosome": "7q32.1 / 3p21.31",
+      "function": "Rate-limiting enzyme in de novo guanine nucleotide synthesis; essential for lymphocyte proliferation",
+      "odds_ratio": null,
+      "references": [
+        "PMID:16112015",
+        "PMID:21561366"
+      ],
+      "category": "Nucleotide Metabolism",
+      "disease_evidence": "Target of mycophenolate mofetil, a first-line therapy for lupus nephritis."
+    },
+    {
+      "id": "PDE5A",
+      "name": "PDE5A",
+      "chromosome": "n/a",
+      "function": "Sildenafil inhibits PDE5, preventing cGMP degradation and enhancing NO-mediated pulmonary vasodilation in SSc-PAH",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
+    },
+    {
+      "id": "PDGFR",
+      "name": "PDGFR",
+      "chromosome": "n/a",
+      "function": "Nintedanib inhibits PDGFR tyrosine kinase, blocking fibroblast migration and myofibroblast differentiation",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
+    },
+    {
+      "id": "PTGIR",
+      "name": "PTGIR",
+      "chromosome": "n/a",
+      "function": "Treprostinil is a prostacyclin analogue activating IP receptor, inducing potent pulmonary vasodilation and inhibiting vascular remodeling",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
+    },
+    {
+      "id": "VEGFR",
+      "name": "VEGFR",
+      "chromosome": "n/a",
+      "function": "Nintedanib inhibits VEGFR tyrosine kinase, reducing fibroblast proliferation and angiogenesis in SSc",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
+    },
+    {
+      "id": "sGC",
+      "name": "sGC",
+      "chromosome": "n/a",
+      "function": "Riociguat stimulates soluble guanylate cyclase (sGC), increasing cGMP production and promoting pulmonary vasodilation via NO-sGC-cGMP pathway",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
     }
   ]
 }

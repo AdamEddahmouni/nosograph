@@ -27,6 +27,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 import logging
 
+from med_research.exceptions import DataValidationError
 from med_research.pipeline.knowledge_graph.config import load_drugs as config_load_drugs
 from med_research.pipeline.knowledge_graph.config import load_genes as config_load_genes
 
@@ -254,7 +255,7 @@ def load_kg_entities(disease_id: str = "sle") -> dict:
         genes_data = config_load_genes(disease_id)
         for g in genes_data["genes"]:
             genes[g["id"]] = g
-    except (FileNotFoundError, json.JSONDecodeError):
+    except (DataValidationError, FileNotFoundError, json.JSONDecodeError):
         pass
 
     drugs = {}
@@ -262,7 +263,7 @@ def load_kg_entities(disease_id: str = "sle") -> dict:
         drugs_data = config_load_drugs(disease_id)
         for d in drugs_data["drugs"]:
             drugs[d["id"]] = d
-    except (FileNotFoundError, json.JSONDecodeError):
+    except (DataValidationError, FileNotFoundError, json.JSONDecodeError):
         pass
 
     return {"genes": genes, "drugs": drugs}

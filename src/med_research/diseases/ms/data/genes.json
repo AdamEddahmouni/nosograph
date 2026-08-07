@@ -357,6 +357,130 @@
         "PMID:25435325"
       ],
       "category": "JAK-STAT Signaling"
+    },
+    {
+      "id": "BTK",
+      "name": "Bruton Tyrosine Kinase",
+      "chromosome": "Xq22.1",
+      "function": "Essential kinase for B cell receptor and Fc receptor signaling",
+      "odds_ratio": null,
+      "references": [
+        "PMID:26297082",
+        "PMID:30282952"
+      ],
+      "category": "B Cell Signaling",
+      "disease_evidence": "BTK inhibition reduces B cell activation, autoantibody production, and kidney damage in lupus models."
+    },
+    {
+      "id": "CD20",
+      "name": "CD20 (MS4A1 / B-lymphocyte antigen CD20)",
+      "chromosome": "11q12.2",
+      "function": "B cell surface protein involved in B cell activation, proliferation, and calcium signaling",
+      "odds_ratio": null,
+      "references": [
+        "PMID:20662064",
+        "PMID:23054334"
+      ],
+      "category": "B Cell Signaling",
+      "disease_evidence": "Target of B cell depletion therapies (rituximab, obinutuzumab) used clinically in refractory SLE."
+    },
+    {
+      "id": "CD52",
+      "name": "CD52",
+      "chromosome": "n/a",
+      "function": "Alemtuzumab depletes CD52+ lymphocytes, followed by homeostatic reconstitution with an altered, less autoreactive immune repertoire",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
+    },
+    {
+      "id": "DHODH",
+      "name": "DHODH",
+      "chromosome": "n/a",
+      "function": "Teriflunomide inhibits DHODH, blocking de novo pyrimidine synthesis and selectively reducing activated lymphocyte proliferation",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
+    },
+    {
+      "id": "DNA Synthesis",
+      "name": "DNA Synthesis",
+      "chromosome": "n/a",
+      "function": "Cladribine is a purine analogue causing selective lymphocyte depletion; immune reconstitution therapy with durable treatment-free periods",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
+    },
+    {
+      "id": "Glucocorticoid Receptor",
+      "name": "Glucocorticoid Receptor (NR3C1)",
+      "chromosome": "5q31.3",
+      "function": "Nuclear receptor that mediates anti-inflammatory effects via transrepression of NF-κB and AP-1, and induction of anti-inflammatory genes",
+      "odds_ratio": null,
+      "references": [
+        "PMID:30875411",
+        "PMID:33174738"
+      ],
+      "category": "Nuclear Receptor Signaling",
+      "disease_evidence": "Target of prednisone and all corticosteroids, the mainstay of acute SLE management. Goal is to minimize exposure due to toxicity."
+    },
+    {
+      "id": "IFNAR1",
+      "name": "Interferon Alpha and Beta Receptor Subunit 1",
+      "chromosome": "21q22.11",
+      "function": "Receptor subunit for type I interferons (IFN-α/β)",
+      "odds_ratio": null,
+      "references": [
+        "PMID:23111185",
+        "PMID:31851711"
+      ],
+      "category": "Type I Interferon Pathway",
+      "disease_evidence": "Key mediator of the interferon signature. Therapeutic target of anifrolumab."
+    },
+    {
+      "id": "IFNAR2",
+      "name": "IFNAR2",
+      "chromosome": "n/a",
+      "function": "IFN-β engages IFNAR2 as part of the heterodimeric type I IFN receptor complex to activate intracellular signaling",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
+    },
+    {
+      "id": "ITGA4",
+      "name": "ITGA4",
+      "chromosome": "n/a",
+      "function": "Natalizumab blocks α4-integrin (VLA-4), preventing lymphocyte adhesion to VCAM-1 and migration across the blood-brain barrier",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
+    },
+    {
+      "id": "MHC Class II",
+      "name": "MHC Class II",
+      "chromosome": "n/a",
+      "function": "Glatiramer acetate mimics myelin basic protein, competing for MHC class II binding and inducing a Th1→Th2 shift in myelin-reactive T cells",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
+    },
+    {
+      "id": "NRF2",
+      "name": "NRF2",
+      "chromosome": "n/a",
+      "function": "Dimethyl fumarate activates NRF2 antioxidant pathway and agonizes HCAR2/GPR109A on immune cells for anti-inflammatory and cytoprotective effects",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
+    },
+    {
+      "id": "S1PR1",
+      "name": "S1PR1",
+      "chromosome": "n/a",
+      "function": "Fingolimod-phosphate causes S1PR1 internalization, sequestering lymphocytes in lymph nodes and preventing their entry into the CNS",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
+    },
+    {
+      "id": "Topoisomerase II",
+      "name": "Topoisomerase II",
+      "chromosome": "n/a",
+      "function": "Mitoxantrone intercalates DNA and inhibits topoisomerase II, causing broad immunosuppression; limited by cumulative cardiotoxicity",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
     }
   ]
 }

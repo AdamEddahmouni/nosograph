@@ -25,6 +25,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
+from med_research.exceptions import DataValidationError
 from med_research.pipeline.knowledge_graph.config import load_relationships
 
 if sys.platform == "win32":
@@ -137,7 +138,7 @@ def _build_gene_drug_target_map(disease_id: str = "sle") -> dict:
                 if gene_id not in gene_to_drugs:
                     gene_to_drugs[gene_id] = []
                 gene_to_drugs[gene_id].append(drug_id)
-    except (FileNotFoundError, KeyError, json.JSONDecodeError):
+    except (DataValidationError, FileNotFoundError, KeyError, json.JSONDecodeError):
         pass
 
     _GENE_DRUG_TARGET_CACHE[disease_id] = gene_to_drugs

@@ -129,6 +129,26 @@ class TestDiseasesRegistry:
             for field in ["id", "name", "genes", "drugs", "pathways"]:
                 assert field in d, f"Missing field: {field}"
 
+    def test_invalid_kg_disease_registry_survives(self, client, monkeypatch):
+        """A disease with broken KG data must not crash GET /api/system/diseases."""
+        from med_research.diseases.base import Disease
+        from med_research.exceptions import SchemaValidationError
+
+        real_load_genes = Disease.load_genes
+
+        def broken_load_genes(self):
+            if self.disease_id == "sle":
+                raise SchemaValidationError("Schema validation failed for genes.json")
+            return real_load_genes(self)
+
+        monkeypatch.setattr(Disease, "load_genes", broken_load_genes)
+
+        resp = client.get("/api/system/diseases")
+        assert resp.status_code == 200
+        sle = next(d for d in resp.json()["diseases"] if d["id"] == "sle")
+        assert sle["genes"] == 0
+        assert sle["coverage"]["core"]["level"] != "full"
+
 
 # ── Knowledge Graph Endpoints ───────────────────────────────────────────────
 

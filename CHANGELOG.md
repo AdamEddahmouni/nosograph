@@ -1,6 +1,29 @@
 # Changelog
 
-## [Current capabilities] — last verified 2026-08-06
+## [KG schema validation] — 2026-08-07
+
+### Added
+
+- Pydantic validation for all five KG entity files at the two central load boundaries (`config.load_disease_json`, `Disease.load_json`).
+- `AdverseEventsFile` schema for disease-local `adverse_events.json` loaded via `validate_and_load`.
+- `disease validate` now checks KG file schema (per-file `ok` / `missing` / `invalid` status); `--strict` fails on any non-`ok` KG file.
+- Relationship node-integrity test parametrized across all seven diseases; curated gene entries added for relationship endpoints that referenced assay targets not previously in entity catalogs.
+- API test ensuring `GET /api/system/diseases` survives a disease with invalid KG data without crashing.
+
+### Changed
+
+- `DataValidationError` handling in `web/routers/system.py` disease registry build (degrades to empty counts / blocked coverage instead of 500).
+- Marked Technical Debt **#2** resolved in `TECHNICAL_DEBT_ISSUES.md`.
+
+### Verification
+
+- `python -m pytest tests/test_kg_schema_validation.py -q`
+- `python -m pytest tests/ -m "not slow" -q` (excluding Playwright browser tests when Chromium is not installed)
+- `python -m med_research.cli disease validate --all --strict`
+
+---
+
+## [Current capabilities] — last verified 2026-08-07
 
 This section is the maintained snapshot of the live repository. Historical phase entries below are preserved for project history and describe the codebase at the time of each change; their test counts, paths, and implementation wording are not the current runtime specification.
 

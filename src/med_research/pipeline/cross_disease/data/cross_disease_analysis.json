@@ -2,21 +2,21 @@
   "disease_summary": {
     "ibd": {
       "name": "Inflammatory Bowel Disease",
-      "gene_count": 23,
+      "gene_count": 37,
       "drug_count": 21,
       "pathway_count": 9,
       "relationship_count": 105
     },
     "ms": {
       "name": "Multiple Sclerosis",
-      "gene_count": 28,
+      "gene_count": 41,
       "drug_count": 20,
       "pathway_count": 9,
       "relationship_count": 111
     },
     "ra": {
       "name": "Rheumatoid Arthritis",
-      "gene_count": 25,
+      "gene_count": 39,
       "drug_count": 24,
       "pathway_count": 8,
       "relationship_count": 115
@@ -30,21 +30,21 @@
     },
     "ss": {
       "name": "Sj\u00f6gren's Syndrome",
-      "gene_count": 27,
+      "gene_count": 36,
       "drug_count": 18,
       "pathway_count": 7,
       "relationship_count": 108
     },
     "ssc": {
       "name": "Systemic Sclerosis (Scleroderma)",
-      "gene_count": 27,
+      "gene_count": 43,
       "drug_count": 18,
       "pathway_count": 8,
       "relationship_count": 118
     },
     "t1d": {
       "name": "Type 1 Diabetes",
-      "gene_count": 24,
+      "gene_count": 34,
       "drug_count": 15,
       "pathway_count": 8,
       "relationship_count": 118
@@ -199,6 +199,11 @@
             "odds_ratio": 1.2,
             "category": "JAK-STAT Signaling",
             "function": "Non-receptor tyrosine kinase coupling cytokine receptors (IL-6R, IL-12R, IL-23R, GM-CSFR) to STAT3/STAT4 activation; drives intestinal inflammatory gene programs"
+          },
+          "ra": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Baricitinib inhibits JAK2, which mediates signaling for GM-CSF, EPO, TPO, and growth hormone receptors"
           }
         }
       },
@@ -209,6 +214,11 @@
             "odds_ratio": 1.2,
             "category": "IL-23 / Th17 Axis",
             "function": "Shared p40 subunit of IL-12 (p35/p40) and IL-23 (p19/p40); essential for Th1 and Th17 differentiation; bridges innate and adaptive immunity"
+          },
+          "t1d": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Ustekinumab targets the shared p40 subunit of IL-12, blocking the IL-12/IFN-\u03b3 Th1 differentiation pathway implicated in islet autoimmunity"
           }
         }
       },
@@ -362,6 +372,201 @@
           }
         }
       },
+      "CALCINEURIN": {
+        "name": "Calcineurin (PPP3CA / Protein Phosphatase 3)",
+        "per_disease": {
+          "ibd": {
+            "odds_ratio": null,
+            "category": "T Cell Signaling",
+            "function": "Calcium/calmodulin-dependent serine/threonine phosphatase; dephosphorylates NFAT enabling T cell activation"
+          },
+          "ra": {
+            "odds_ratio": null,
+            "category": "T Cell Signaling",
+            "function": "Calcium/calmodulin-dependent serine/threonine phosphatase; dephosphorylates NFAT enabling T cell activation"
+          },
+          "sle": {
+            "odds_ratio": null,
+            "category": "T Cell Signaling",
+            "function": "Calcium/calmodulin-dependent serine/threonine phosphatase; dephosphorylates NFAT enabling T cell activation"
+          },
+          "ss": {
+            "odds_ratio": null,
+            "category": "T Cell Signaling",
+            "function": "Calcium/calmodulin-dependent serine/threonine phosphatase; dephosphorylates NFAT enabling T cell activation"
+          }
+        }
+      },
+      "DHFR": {
+        "name": "DHFR",
+        "per_disease": {
+          "ibd": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Methotrexate inhibits dihydrofolate reductase and AICAR transformylase, leading to adenosine accumulation with anti-inflammatory effects"
+          },
+          "ra": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Methotrexate inhibits DHFR and AICAR transformylase, leading to adenosine accumulation with anti-inflammatory effects"
+          },
+          "ssc": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Methotrexate inhibits DHFR and AICAR transformylase, leading to adenosine-mediated anti-inflammatory effects on skin fibrosis"
+          }
+        }
+      },
+      "GLUCOCORTICOID RECEPTOR (NR3C1)": {
+        "name": "Glucocorticoid Receptor (NR3C1)",
+        "per_disease": {
+          "ibd": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Budesonide activates the glucocorticoid receptor with high topical potency and ~90% first-pass hepatic metabolism, minimizing systemic exposure"
+          }
+        }
+      },
+      "IL12B (P40)": {
+        "name": "IL12B (p40)",
+        "per_disease": {
+          "ibd": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Ustekinumab binds the shared p40 subunit of IL-12 and IL-23, simultaneously blocking both Th1 and Th17 pathways"
+          }
+        }
+      },
+      "IL23A (P19)": {
+        "name": "IL23A (p19)",
+        "per_disease": {
+          "ibd": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Risankizumab selectively neutralizes the IL-23-specific p19 subunit, blocking Th17/ILC3 responses while preserving IL-12-driven Th1 immunity"
+          }
+        }
+      },
+      "ITGA4 (\u03914 INTEGRIN)": {
+        "name": "ITGA4 (\u03b14 Integrin)",
+        "per_disease": {
+          "ibd": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Natalizumab blocks \u03b14 integrin, preventing both \u03b14\u03b21-VCAM-1 (systemic) and \u03b14\u03b27-MAdCAM-1 (gut) lymphocyte adhesion; restricted due to PML risk"
+          }
+        }
+      },
+      "JAK1": {
+        "name": "Janus Kinase 1",
+        "per_disease": {
+          "ibd": {
+            "odds_ratio": null,
+            "category": "JAK-STAT Signaling",
+            "function": "Tyrosine kinase mediating signaling for type I/II cytokine receptors"
+          },
+          "ms": {
+            "odds_ratio": 1.2,
+            "category": "JAK-STAT Signaling",
+            "function": "Tyrosine kinase mediating signaling for type I/II cytokine receptors"
+          },
+          "ra": {
+            "odds_ratio": null,
+            "category": "JAK-STAT Signaling",
+            "function": "Tyrosine kinase mediating signaling for type I/II cytokine receptors"
+          },
+          "sle": {
+            "odds_ratio": null,
+            "category": "JAK-STAT Signaling",
+            "function": "Tyrosine kinase mediating signaling for type I/II cytokine receptors"
+          },
+          "t1d": {
+            "odds_ratio": 1.2,
+            "category": "JAK-STAT Signaling",
+            "function": "Tyrosine kinase mediating signaling for type I/II cytokine receptors"
+          }
+        }
+      },
+      "JAK1/JAK3": {
+        "name": "JAK1/JAK3",
+        "per_disease": {
+          "ibd": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Tofacitinib preferentially inhibits JAK1 and JAK3, blocking signaling downstream of common gamma chain cytokines, type I IFN, and IL-6 family receptors"
+          }
+        }
+      },
+      "PPAR-GAMMA": {
+        "name": "PPAR-gamma",
+        "per_disease": {
+          "ibd": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Mesalamine activates PPAR-gamma in colonic epithelial cells, inhibiting NF-\u03baB and COX-2 pathways with topical anti-inflammatory effects"
+          }
+        }
+      },
+      "PURINE METABOLISM": {
+        "name": "Purine Metabolism",
+        "per_disease": {
+          "ibd": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Azathioprine is a prodrug converted to 6-TGN, which incorporates into DNA and inhibits de novo purine synthesis in proliferating lymphocytes"
+          }
+        }
+      },
+      "S1PR1/S1PR4/S1PR5": {
+        "name": "S1PR1/S1PR4/S1PR5",
+        "per_disease": {
+          "ibd": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Etrasimod is an S1PR1/4/5 modulator with S1PR3 sparing; prevents lymphocyte egress from lymphoid organs into the gut without bradycardia risk"
+          }
+        }
+      },
+      "S1PR1/S1PR5": {
+        "name": "S1PR1/S1PR5",
+        "per_disease": {
+          "ibd": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Ozanimod is an S1P receptor modulator selective for S1PR1 and S1PR5; induces S1PR1 internalization, sequestering lymphocytes in lymph nodes"
+          }
+        }
+      },
+      "TNF": {
+        "name": "TNF",
+        "per_disease": {
+          "ibd": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Infliximab binds soluble and membrane-bound TNF with high affinity, inducing apoptosis of TNF-expressing immune cells via Fc-mediated CDC and ADCC"
+          },
+          "ra": {
+            "odds_ratio": 1.2,
+            "category": "TNF-alpha Signaling",
+            "function": "Master pro-inflammatory cytokine driving synovial inflammation, osteoclast activation, and cartilage degradation"
+          },
+          "t1d": {
+            "odds_ratio": 1.2,
+            "category": "Pro-inflammatory Cytokine / \u03b2 Cell Cytotoxicity",
+            "function": "Pro-inflammatory cytokine produced by macrophages and T cells; induces apoptosis, NF-\u03baB activation, and amplifies autoimmune inflammation"
+          }
+        }
+      },
+      "\u03914\u03927 INTEGRIN (ITGA4/ITGB7)": {
+        "name": "\u03b14\u03b27 Integrin (ITGA4/ITGB7)",
+        "per_disease": {
+          "ibd": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Vedolizumab selectively blocks \u03b14\u03b27 integrin binding to MAdCAM-1 on gut endothelial cells, preventing lymphocyte homing to intestinal mucosa"
+          }
+        }
+      },
       "HLA-DRB1": {
         "name": "HLA Class II DR Beta 1",
         "per_disease": {
@@ -429,6 +634,11 @@
             "odds_ratio": 1.2,
             "category": "T Cell Costimulation",
             "function": "Costimulatory receptor on B cells and APCs; binds CD40L (CD154) on T cells to drive germinal center responses"
+          },
+          "ss": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Iscalimab blocks CD40 on B cells, inhibiting Tfh-B cell costimulation and germinal center formation without B cell depletion"
           }
         }
       },
@@ -519,6 +729,21 @@
             "odds_ratio": 1.15,
             "category": "T Cell Costimulation",
             "function": "Costimulatory ligand on APCs; binds CD28 (activation) and CTLA-4 (inhibition) on T cells"
+          },
+          "ra": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Abatacept (CTLA4-Ig) binds CD80/CD86 on APCs, blocking CD28-mediated T cell costimulation"
+          },
+          "ss": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Abatacept (CTLA4-Ig) binds CD86, blocking the CD28-B7 costimulatory pathway"
+          },
+          "t1d": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Abatacept (CTLA4-Ig) binds CD86 (B7.2) on APCs, blocking CD28-mediated T cell costimulation and reducing islet-reactive T cell activation"
           }
         }
       },
@@ -647,23 +872,203 @@
           }
         }
       },
-      "JAK1": {
-        "name": "Janus Kinase 1",
+      "BTK": {
+        "name": "Bruton Tyrosine Kinase",
         "per_disease": {
           "ms": {
-            "odds_ratio": 1.2,
-            "category": "JAK-STAT Signaling",
-            "function": "Tyrosine kinase mediating signaling for type I/II cytokine receptors"
+            "odds_ratio": null,
+            "category": "B Cell Signaling",
+            "function": "Essential kinase for B cell receptor and Fc receptor signaling"
           },
           "sle": {
             "odds_ratio": null,
-            "category": "JAK-STAT Signaling",
-            "function": "Tyrosine kinase mediating signaling for type I/II cytokine receptors"
+            "category": "B Cell Signaling",
+            "function": "Essential kinase for B cell receptor and Fc receptor signaling"
+          }
+        }
+      },
+      "CD20": {
+        "name": "CD20 (MS4A1 / B-lymphocyte antigen CD20)",
+        "per_disease": {
+          "ms": {
+            "odds_ratio": null,
+            "category": "B Cell Signaling",
+            "function": "B cell surface protein involved in B cell activation, proliferation, and calcium signaling"
+          },
+          "ra": {
+            "odds_ratio": null,
+            "category": "B Cell Signaling",
+            "function": "B cell surface protein involved in B cell activation, proliferation, and calcium signaling"
+          },
+          "sle": {
+            "odds_ratio": null,
+            "category": "B Cell Signaling",
+            "function": "B cell surface protein involved in B cell activation, proliferation, and calcium signaling"
+          },
+          "ss": {
+            "odds_ratio": null,
+            "category": "B Cell Signaling",
+            "function": "B cell surface protein involved in B cell activation, proliferation, and calcium signaling"
+          },
+          "ssc": {
+            "odds_ratio": null,
+            "category": "B Cell Signaling",
+            "function": "B cell surface protein involved in B cell activation, proliferation, and calcium signaling"
           },
           "t1d": {
+            "odds_ratio": null,
+            "category": "B Cell Signaling",
+            "function": "B cell surface protein involved in B cell activation, proliferation, and calcium signaling"
+          }
+        }
+      },
+      "CD52": {
+        "name": "CD52",
+        "per_disease": {
+          "ms": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Alemtuzumab depletes CD52+ lymphocytes, followed by homeostatic reconstitution with an altered, less autoreactive immune repertoire"
+          }
+        }
+      },
+      "DHODH": {
+        "name": "DHODH",
+        "per_disease": {
+          "ms": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Teriflunomide inhibits DHODH, blocking de novo pyrimidine synthesis and selectively reducing activated lymphocyte proliferation"
+          },
+          "ra": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Leflunomide inhibits DHODH, blocking de novo pyrimidine synthesis and proliferating T lymphocytes"
+          },
+          "ss": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Leflunomide inhibits DHODH, blocking de novo pyrimidine synthesis and reducing activated lymphocyte proliferation"
+          }
+        }
+      },
+      "DNA SYNTHESIS": {
+        "name": "DNA Synthesis",
+        "per_disease": {
+          "ms": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Cladribine is a purine analogue causing selective lymphocyte depletion; immune reconstitution therapy with durable treatment-free periods"
+          }
+        }
+      },
+      "GLUCOCORTICOID RECEPTOR": {
+        "name": "Glucocorticoid Receptor (NR3C1)",
+        "per_disease": {
+          "ms": {
+            "odds_ratio": null,
+            "category": "Nuclear Receptor Signaling",
+            "function": "Nuclear receptor that mediates anti-inflammatory effects via transrepression of NF-\u03baB and AP-1, and induction of anti-inflammatory genes"
+          },
+          "ra": {
+            "odds_ratio": null,
+            "category": "Nuclear Receptor Signaling",
+            "function": "Nuclear receptor that mediates anti-inflammatory effects via transrepression of NF-\u03baB and AP-1, and induction of anti-inflammatory genes"
+          },
+          "sle": {
+            "odds_ratio": null,
+            "category": "Nuclear Receptor Signaling",
+            "function": "Nuclear receptor that mediates anti-inflammatory effects via transrepression of NF-\u03baB and AP-1, and induction of anti-inflammatory genes"
+          },
+          "ss": {
+            "odds_ratio": null,
+            "category": "Nuclear Receptor Signaling",
+            "function": "Nuclear receptor that mediates anti-inflammatory effects via transrepression of NF-\u03baB and AP-1, and induction of anti-inflammatory genes"
+          },
+          "ssc": {
+            "odds_ratio": null,
+            "category": "Nuclear Receptor Signaling",
+            "function": "Nuclear receptor that mediates anti-inflammatory effects via transrepression of NF-\u03baB and AP-1, and induction of anti-inflammatory genes"
+          }
+        }
+      },
+      "IFNAR1": {
+        "name": "Interferon Alpha and Beta Receptor Subunit 1",
+        "per_disease": {
+          "ms": {
+            "odds_ratio": null,
+            "category": "Type I Interferon Pathway",
+            "function": "Receptor subunit for type I interferons (IFN-\u03b1/\u03b2)"
+          },
+          "sle": {
+            "odds_ratio": null,
+            "category": "Type I Interferon Pathway",
+            "function": "Receptor subunit for type I interferons (IFN-\u03b1/\u03b2)"
+          },
+          "ss": {
             "odds_ratio": 1.2,
-            "category": "JAK-STAT Signaling",
-            "function": "Tyrosine kinase mediating signaling for type I/II cytokine receptors"
+            "category": "Type I Interferon Pathway",
+            "function": "Receptor subunit for type I interferons (IFN-\u03b1/\u03b2)"
+          }
+        }
+      },
+      "IFNAR2": {
+        "name": "IFNAR2",
+        "per_disease": {
+          "ms": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "IFN-\u03b2 engages IFNAR2 as part of the heterodimeric type I IFN receptor complex to activate intracellular signaling"
+          }
+        }
+      },
+      "ITGA4": {
+        "name": "ITGA4",
+        "per_disease": {
+          "ms": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Natalizumab blocks \u03b14-integrin (VLA-4), preventing lymphocyte adhesion to VCAM-1 and migration across the blood-brain barrier"
+          }
+        }
+      },
+      "MHC CLASS II": {
+        "name": "MHC Class II",
+        "per_disease": {
+          "ms": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Glatiramer acetate mimics myelin basic protein, competing for MHC class II binding and inducing a Th1\u2192Th2 shift in myelin-reactive T cells"
+          }
+        }
+      },
+      "NRF2": {
+        "name": "NRF2",
+        "per_disease": {
+          "ms": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Dimethyl fumarate activates NRF2 antioxidant pathway and agonizes HCAR2/GPR109A on immune cells for anti-inflammatory and cytoprotective effects"
+          }
+        }
+      },
+      "S1PR1": {
+        "name": "S1PR1",
+        "per_disease": {
+          "ms": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Fingolimod-phosphate causes S1PR1 internalization, sequestering lymphocytes in lymph nodes and preventing their entry into the CNS"
+          }
+        }
+      },
+      "TOPOISOMERASE II": {
+        "name": "Topoisomerase II",
+        "per_disease": {
+          "ms": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Mitoxantrone intercalates DNA and inhibits topoisomerase II, causing broad immunosuppression; limited by cumulative cardiotoxicity"
           }
         }
       },
@@ -754,6 +1159,11 @@
             "odds_ratio": 1.2,
             "category": "IL-6 / JAK-STAT",
             "function": "Receptor for IL-6; mediates pro-inflammatory signaling via JAK1/JAK2-STAT3 and soluble gp130 trans-signaling"
+          },
+          "ssc": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Tocilizumab blocks both membrane-bound and soluble IL-6R, inhibiting IL-6-mediated JAK-STAT3 signaling in SSc"
           }
         }
       },
@@ -882,21 +1292,6 @@
           }
         }
       },
-      "TNF": {
-        "name": "Tumor Necrosis Factor Alpha",
-        "per_disease": {
-          "ra": {
-            "odds_ratio": 1.2,
-            "category": "TNF-alpha Signaling",
-            "function": "Master pro-inflammatory cytokine driving synovial inflammation, osteoclast activation, and cartilage degradation"
-          },
-          "t1d": {
-            "odds_ratio": 1.2,
-            "category": "Pro-inflammatory Cytokine / \u03b2 Cell Cytotoxicity",
-            "function": "Pro-inflammatory cytokine produced by macrophages and T cells; induces apoptosis, NF-\u03baB activation, and amplifies autoimmune inflammation"
-          }
-        }
-      },
       "CD28": {
         "name": "CD28 Costimulatory Receptor",
         "per_disease": {
@@ -967,6 +1362,116 @@
           }
         }
       },
+      "CD80": {
+        "name": "CD80",
+        "per_disease": {
+          "ra": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Abatacept (CTLA4-Ig) binds CD80/CD86 on APCs, blocking CD28-mediated T cell costimulation"
+          },
+          "ss": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Abatacept (CTLA4-Ig) binds CD80/CD86 on APCs, blocking CD28-mediated T cell costimulation and reducing Tfh help to B cells"
+          },
+          "t1d": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Abatacept (CTLA4-Ig) binds CD80 (B7.1) on APCs, blocking CD28-mediated T cell costimulation and reducing islet-reactive T cell activation"
+          }
+        }
+      },
+      "IL-1 RECEPTOR": {
+        "name": "IL-1 Receptor",
+        "per_disease": {
+          "ra": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Anakinra is recombinant IL-1Ra that competitively blocks IL-1\u03b1/IL-1\u03b2 binding to IL-1R1"
+          }
+        }
+      },
+      "IMPDH": {
+        "name": "IMPDH (Inosine Monophosphate Dehydrogenase)",
+        "per_disease": {
+          "ra": {
+            "odds_ratio": null,
+            "category": "Nucleotide Metabolism",
+            "function": "Rate-limiting enzyme in de novo guanine nucleotide synthesis; essential for lymphocyte proliferation"
+          },
+          "sle": {
+            "odds_ratio": null,
+            "category": "Nucleotide Metabolism",
+            "function": "Rate-limiting enzyme in de novo guanine nucleotide synthesis; essential for lymphocyte proliferation"
+          },
+          "ss": {
+            "odds_ratio": null,
+            "category": "Nucleotide Metabolism",
+            "function": "Rate-limiting enzyme in de novo guanine nucleotide synthesis; essential for lymphocyte proliferation"
+          },
+          "ssc": {
+            "odds_ratio": null,
+            "category": "Nucleotide Metabolism",
+            "function": "Rate-limiting enzyme in de novo guanine nucleotide synthesis; essential for lymphocyte proliferation"
+          }
+        }
+      },
+      "JAK3": {
+        "name": "JAK3",
+        "per_disease": {
+          "ra": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Tofacitinib inhibits JAK3 which pairs with JAK1 to mediate IL-2, IL-4, IL-7, IL-9, IL-15, and IL-21 signaling"
+          }
+        }
+      },
+      "TLR7": {
+        "name": "Toll-Like Receptor 7",
+        "per_disease": {
+          "ra": {
+            "odds_ratio": 2.0,
+            "category": "Innate Immune Sensing",
+            "function": "Endosomal sensor of single-stranded RNA; drives type I IFN production in plasmacytoid DCs"
+          },
+          "sle": {
+            "odds_ratio": 2.0,
+            "category": "Innate Immune Sensing",
+            "function": "Endosomal sensor of single-stranded RNA; drives type I IFN production in plasmacytoid DCs"
+          },
+          "ss": {
+            "odds_ratio": 1.4,
+            "category": "Innate Immune Sensing",
+            "function": "Endosomal sensor of single-stranded RNA; drives type I IFN production in plasmacytoid DCs"
+          },
+          "ssc": {
+            "odds_ratio": 1.3,
+            "category": "Innate Immune / TLR Signaling",
+            "function": "Endosomal sensor of single-stranded RNA; drives type I IFN production in pDCs"
+          }
+        }
+      },
+      "TLR9": {
+        "name": "Toll-Like Receptor 9",
+        "per_disease": {
+          "ra": {
+            "odds_ratio": 1.4,
+            "category": "Innate Immune Sensing",
+            "function": "Endosomal sensor of unmethylated CpG DNA; activates B cells and pDCs"
+          },
+          "sle": {
+            "odds_ratio": 1.4,
+            "category": "Innate Immune Sensing",
+            "function": "Endosomal sensor of unmethylated CpG DNA; activates B cells and pDCs"
+          },
+          "ss": {
+            "odds_ratio": 1.2,
+            "category": "Innate Immune Sensing",
+            "function": "Endosomal sensor of unmethylated CpG DNA; activates B cells and pDCs"
+          }
+        }
+      },
       "ITGAM": {
         "name": "Integrin Subunit Alpha M (CD11b)",
         "per_disease": {
@@ -1007,41 +1512,6 @@
           }
         }
       },
-      "TLR7": {
-        "name": "Toll-Like Receptor 7",
-        "per_disease": {
-          "sle": {
-            "odds_ratio": 2.0,
-            "category": "Innate Immune Sensing",
-            "function": "Endosomal sensor of single-stranded RNA; drives type I IFN production in plasmacytoid DCs"
-          },
-          "ss": {
-            "odds_ratio": 1.4,
-            "category": "Innate Immune Sensing",
-            "function": "Endosomal sensor of single-stranded RNA; drives type I IFN production in plasmacytoid DCs"
-          },
-          "ssc": {
-            "odds_ratio": 1.3,
-            "category": "Innate Immune / TLR Signaling",
-            "function": "Endosomal sensor of single-stranded RNA; drives type I IFN production in pDCs"
-          }
-        }
-      },
-      "TLR9": {
-        "name": "Toll-Like Receptor 9",
-        "per_disease": {
-          "sle": {
-            "odds_ratio": 1.4,
-            "category": "Innate Immune Sensing",
-            "function": "Endosomal sensor of unmethylated CpG DNA; activates B cells and pDCs"
-          },
-          "ss": {
-            "odds_ratio": 1.2,
-            "category": "Innate Immune Sensing",
-            "function": "Endosomal sensor of unmethylated CpG DNA; activates B cells and pDCs"
-          }
-        }
-      },
       "BAFF": {
         "name": "B Cell Activating Factor (TNFSF13B / BLyS)",
         "per_disease": {
@@ -1054,71 +1524,11 @@
             "odds_ratio": 1.5,
             "category": "B Cell Survival / BAFF Signaling",
             "function": "Major B cell survival and differentiation factor; binds TACI, BCMA, and BAFF-R on B cells"
-          }
-        }
-      },
-      "IFNAR1": {
-        "name": "Interferon Alpha and Beta Receptor Subunit 1",
-        "per_disease": {
-          "sle": {
-            "odds_ratio": null,
-            "category": "Type I Interferon Pathway",
-            "function": "Receptor subunit for type I interferons (IFN-\u03b1/\u03b2)"
           },
-          "ss": {
-            "odds_ratio": 1.2,
-            "category": "Type I Interferon Pathway",
-            "function": "Receptor subunit for type I interferons (IFN-\u03b1/\u03b2)"
-          }
-        }
-      },
-      "BTK": {
-        "name": "Bruton Tyrosine Kinase",
-        "per_disease": {
-          "sle": {
+          "ssc": {
             "odds_ratio": null,
-            "category": "B Cell Signaling",
-            "function": "Essential kinase for B cell receptor and Fc receptor signaling"
-          }
-        }
-      },
-      "CD20": {
-        "name": "CD20 (MS4A1 / B-lymphocyte antigen CD20)",
-        "per_disease": {
-          "sle": {
-            "odds_ratio": null,
-            "category": "B Cell Signaling",
-            "function": "B cell surface protein involved in B cell activation, proliferation, and calcium signaling"
-          }
-        }
-      },
-      "IMPDH": {
-        "name": "IMPDH (Inosine Monophosphate Dehydrogenase)",
-        "per_disease": {
-          "sle": {
-            "odds_ratio": null,
-            "category": "Nucleotide Metabolism",
-            "function": "Rate-limiting enzyme in de novo guanine nucleotide synthesis; essential for lymphocyte proliferation"
-          }
-        }
-      },
-      "CALCINEURIN": {
-        "name": "Calcineurin (PPP3CA / Protein Phosphatase 3)",
-        "per_disease": {
-          "sle": {
-            "odds_ratio": null,
-            "category": "T Cell Signaling",
-            "function": "Calcium/calmodulin-dependent serine/threonine phosphatase; dephosphorylates NFAT enabling T cell activation"
-          }
-        }
-      },
-      "GLUCOCORTICOID RECEPTOR": {
-        "name": "Glucocorticoid Receptor (NR3C1)",
-        "per_disease": {
-          "sle": {
-            "odds_ratio": null,
-            "category": "Nuclear Receptor Signaling",
-            "function": "Nuclear receptor that mediates anti-inflammatory effects via transrepression of NF-\u03baB and AP-1, and induction of anti-inflammatory genes"
+            "category": "B Cell Survival",
+            "function": "Critical B cell survival and maturation factor"
           }
         }
       },
@@ -1387,6 +1797,16 @@
           }
         }
       },
+      "BAFF-R": {
+        "name": "BAFF-R",
+        "per_disease": {
+          "ss": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Ianalumab blocks BAFF-R survival signaling AND depletes BAFF-R+ B cells via ADCC \u2014 dual mechanism"
+          }
+        }
+      },
       "HLA-DPB1": {
         "name": "HLA Class II DP Beta 1",
         "per_disease": {
@@ -1494,6 +1914,106 @@
             "odds_ratio": null,
             "category": "Fibrosis / ECM Component",
             "function": "Major structural component of extracellular matrix"
+          }
+        }
+      },
+      "CNR2": {
+        "name": "CNR2",
+        "per_disease": {
+          "ssc": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Lenabasum is a selective CB2 receptor agonist that activates resolution of innate immune responses and reduces profibrotic cytokine production"
+          }
+        }
+      },
+      "DNA": {
+        "name": "DNA",
+        "per_disease": {
+          "ssc": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Cyclophosphamide crosslinks DNA, depleting activated T and B cells and reducing pulmonary inflammation in SSc-ILD"
+          }
+        }
+      },
+      "EDNRA": {
+        "name": "EDNRA",
+        "per_disease": {
+          "ssc": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Bosentan blocks ETA receptor, reducing endothelin-1 mediated pulmonary vasoconstriction and vascular remodeling"
+          }
+        }
+      },
+      "EDNRB": {
+        "name": "EDNRB",
+        "per_disease": {
+          "ssc": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Bosentan blocks ETB receptor, contributing to vasodilation and endothelin-1 clearance modulation"
+          }
+        }
+      },
+      "FGFR": {
+        "name": "FGFR",
+        "per_disease": {
+          "ssc": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Nintedanib inhibits FGFR tyrosine kinase, suppressing fibroblast activation and ECM production"
+          }
+        }
+      },
+      "PDE5A": {
+        "name": "PDE5A",
+        "per_disease": {
+          "ssc": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Sildenafil inhibits PDE5, preventing cGMP degradation and enhancing NO-mediated pulmonary vasodilation in SSc-PAH"
+          }
+        }
+      },
+      "PDGFR": {
+        "name": "PDGFR",
+        "per_disease": {
+          "ssc": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Nintedanib inhibits PDGFR tyrosine kinase, blocking fibroblast migration and myofibroblast differentiation"
+          }
+        }
+      },
+      "PTGIR": {
+        "name": "PTGIR",
+        "per_disease": {
+          "ssc": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Treprostinil is a prostacyclin analogue activating IP receptor, inducing potent pulmonary vasodilation and inhibiting vascular remodeling"
+          }
+        }
+      },
+      "VEGFR": {
+        "name": "VEGFR",
+        "per_disease": {
+          "ssc": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Nintedanib inhibits VEGFR tyrosine kinase, reducing fibroblast proliferation and angiogenesis in SSc"
+          }
+        }
+      },
+      "SGC": {
+        "name": "sGC",
+        "per_disease": {
+          "ssc": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Riociguat stimulates soluble guanylate cyclase (sGC), increasing cGMP production and promoting pulmonary vasodilation via NO-sGC-cGMP pathway"
           }
         }
       },
@@ -1646,6 +2166,66 @@
             "function": "Essential cytokine for Treg survival and function"
           }
         }
+      },
+      "CD2": {
+        "name": "CD2",
+        "per_disease": {
+          "t1d": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Alefacept (LFA-3-Ig) binds CD2 on effector memory T cells, blocking CD2-CD58 costimulation and depleting pathogenic memory T cells via NK cell-mediated ADCC"
+          }
+        }
+      },
+      "CD3 (TCR/CD3 COMPLEX)": {
+        "name": "CD3 (TCR/CD3 Complex)",
+        "per_disease": {
+          "t1d": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Teplizumab is a humanized anti-CD3 monoclonal antibody that modulates the TCR/CD3 complex, inducing T cell anergy and expanding regulatory T cells"
+          }
+        }
+      },
+      "GLUTAMIC ACID DECARBOXYLASE 65 (GAD65)": {
+        "name": "Glutamic Acid Decarboxylase 65 (GAD65)",
+        "per_disease": {
+          "t1d": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "GAD-alum delivers recombinant GAD65 autoantigen with alum adjuvant, inducing GAD65-specific immune tolerance via Treg induction and Th2 deviation"
+          }
+        }
+      },
+      "IL23A": {
+        "name": "IL23A",
+        "per_disease": {
+          "t1d": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Ustekinumab targets the shared p40 subunit of IL-23, blocking the IL-23/IL-17 Th17 differentiation pathway implicated in islet autoimmunity"
+          }
+        }
+      },
+      "INSULIN RECEPTOR (INSR)": {
+        "name": "Insulin Receptor (INSR)",
+        "per_disease": {
+          "t1d": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Insulin glargine is a long-acting insulin analog that binds and activates the insulin receptor, providing 24-hour basal insulin replacement"
+          }
+        }
+      },
+      "L-TYPE CALCIUM CHANNEL (CACNA1C)": {
+        "name": "L-type Calcium Channel (CACNA1C)",
+        "per_disease": {
+          "t1d": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Verapamil blocks L-type calcium channels in \u03b2 cells, paradoxically reducing TXNIP expression and protecting \u03b2 cells from ER stress and NLRP3 inflammasome-induced apoptosis"
+          }
+        }
       }
     },
     "gene_disease_count": {
@@ -1659,8 +2239,8 @@
       "IL10RA": 1,
       "PTPN22": 6,
       "STAT3": 2,
-      "JAK2": 1,
-      "IL12B": 1,
+      "JAK2": 2,
+      "IL12B": 2,
       "CARD9": 1,
       "NKX2-3": 1,
       "MST1": 1,
@@ -1672,10 +2252,24 @@
       "TYK2": 7,
       "ICOSLG": 1,
       "IL17A": 1,
+      "CALCINEURIN": 4,
+      "DHFR": 3,
+      "GLUCOCORTICOID RECEPTOR (NR3C1)": 1,
+      "IL12B (P40)": 1,
+      "IL23A (P19)": 1,
+      "ITGA4 (\u03914 INTEGRIN)": 1,
+      "JAK1": 5,
+      "JAK1/JAK3": 1,
+      "PPAR-GAMMA": 1,
+      "PURINE METABOLISM": 1,
+      "S1PR1/S1PR4/S1PR5": 1,
+      "S1PR1/S1PR5": 1,
+      "TNF": 3,
+      "\u03914\u03927 INTEGRIN (ITGA4/ITGB7)": 1,
       "HLA-DRB1": 4,
       "IL7R": 1,
       "IL2RA": 3,
-      "CD40": 2,
+      "CD40": 3,
       "CD58": 1,
       "TNFRSF1A": 1,
       "IRF8": 2,
@@ -1683,7 +2277,7 @@
       "CLEC16A": 2,
       "EVI5": 1,
       "CD6": 1,
-      "CD86": 1,
+      "CD86": 4,
       "CBLB": 1,
       "RGS1": 1,
       "CXCR5": 2,
@@ -1696,12 +2290,24 @@
       "MOG": 1,
       "CD4": 1,
       "CD8A": 1,
-      "JAK1": 3,
+      "BTK": 2,
+      "CD20": 6,
+      "CD52": 1,
+      "DHODH": 3,
+      "DNA SYNTHESIS": 1,
+      "GLUCOCORTICOID RECEPTOR": 5,
+      "IFNAR1": 3,
+      "IFNAR2": 1,
+      "ITGA4": 1,
+      "MHC CLASS II": 1,
+      "NRF2": 1,
+      "S1PR1": 1,
+      "TOPOISOMERASE II": 1,
       "STAT4": 4,
       "TNFAIP3": 4,
       "CTLA4": 3,
       "TRAF1_C5": 1,
-      "IL6R": 1,
+      "IL6R": 2,
       "PADI4": 1,
       "FCGR2A": 3,
       "IRF5": 4,
@@ -1711,23 +2317,20 @@
       "REL": 1,
       "ANKRD55": 1,
       "MMP9": 1,
-      "TNF": 2,
       "CD28": 1,
       "BLK": 4,
       "BANK1": 4,
       "RANKL": 1,
+      "CD80": 3,
+      "IL-1 RECEPTOR": 1,
+      "IMPDH": 4,
+      "JAK3": 1,
+      "TLR7": 4,
+      "TLR9": 3,
       "ITGAM": 1,
       "TNFSF4": 3,
       "FCGR3A": 1,
-      "TLR7": 3,
-      "TLR9": 2,
-      "BAFF": 2,
-      "IFNAR1": 2,
-      "BTK": 1,
-      "CD20": 1,
-      "IMPDH": 1,
-      "CALCINEURIN": 1,
-      "GLUCOCORTICOID RECEPTOR": 1,
+      "BAFF": 3,
       "C1QA": 1,
       "C2": 1,
       "C4A": 1,
@@ -1750,6 +2353,7 @@
       "CD40LG": 1,
       "FOXP3": 3,
       "AICDA": 1,
+      "BAFF-R": 1,
       "HLA-DPB1": 1,
       "CD247": 1,
       "DNASE1L3": 1,
@@ -1761,6 +2365,16 @@
       "CTGF": 1,
       "SERPINE1": 1,
       "COL1A1": 1,
+      "CNR2": 1,
+      "DNA": 1,
+      "EDNRA": 1,
+      "EDNRB": 1,
+      "FGFR": 1,
+      "PDE5A": 1,
+      "PDGFR": 1,
+      "PTGIR": 1,
+      "VEGFR": 1,
+      "SGC": 1,
       "HLA-DQA1": 1,
       "HLA-DQB1": 1,
       "INS": 1,
@@ -1775,7 +2389,13 @@
       "BACH2": 1,
       "GAD2": 1,
       "PTPRN": 1,
-      "IL2": 1
+      "IL2": 1,
+      "CD2": 1,
+      "CD3 (TCR/CD3 COMPLEX)": 1,
+      "GLUTAMIC ACID DECARBOXYLASE 65 (GAD65)": 1,
+      "IL23A": 1,
+      "INSULIN RECEPTOR (INSR)": 1,
+      "L-TYPE CALCIUM CHANNEL (CACNA1C)": 1
     },
     "shared_genes": [
       {
@@ -1875,6 +2495,162 @@
         }
       },
       {
+        "gene_id": "CD20",
+        "diseases": [
+          "ms",
+          "ra",
+          "sle",
+          "ss",
+          "ssc",
+          "t1d"
+        ],
+        "disease_count": 6,
+        "name": "CD20 (MS4A1 / B-lymphocyte antigen CD20)",
+        "per_disease": {
+          "ms": {
+            "odds_ratio": null,
+            "category": "B Cell Signaling",
+            "function": "B cell surface protein involved in B cell activation, proliferation, and calcium signaling"
+          },
+          "ra": {
+            "odds_ratio": null,
+            "category": "B Cell Signaling",
+            "function": "B cell surface protein involved in B cell activation, proliferation, and calcium signaling"
+          },
+          "sle": {
+            "odds_ratio": null,
+            "category": "B Cell Signaling",
+            "function": "B cell surface protein involved in B cell activation, proliferation, and calcium signaling"
+          },
+          "ss": {
+            "odds_ratio": null,
+            "category": "B Cell Signaling",
+            "function": "B cell surface protein involved in B cell activation, proliferation, and calcium signaling"
+          },
+          "ssc": {
+            "odds_ratio": null,
+            "category": "B Cell Signaling",
+            "function": "B cell surface protein involved in B cell activation, proliferation, and calcium signaling"
+          },
+          "t1d": {
+            "odds_ratio": null,
+            "category": "B Cell Signaling",
+            "function": "B cell surface protein involved in B cell activation, proliferation, and calcium signaling"
+          }
+        }
+      },
+      {
+        "gene_id": "JAK1",
+        "diseases": [
+          "ibd",
+          "ms",
+          "ra",
+          "sle",
+          "t1d"
+        ],
+        "disease_count": 5,
+        "name": "Janus Kinase 1",
+        "per_disease": {
+          "ibd": {
+            "odds_ratio": null,
+            "category": "JAK-STAT Signaling",
+            "function": "Tyrosine kinase mediating signaling for type I/II cytokine receptors"
+          },
+          "ms": {
+            "odds_ratio": 1.2,
+            "category": "JAK-STAT Signaling",
+            "function": "Tyrosine kinase mediating signaling for type I/II cytokine receptors"
+          },
+          "ra": {
+            "odds_ratio": null,
+            "category": "JAK-STAT Signaling",
+            "function": "Tyrosine kinase mediating signaling for type I/II cytokine receptors"
+          },
+          "sle": {
+            "odds_ratio": null,
+            "category": "JAK-STAT Signaling",
+            "function": "Tyrosine kinase mediating signaling for type I/II cytokine receptors"
+          },
+          "t1d": {
+            "odds_ratio": 1.2,
+            "category": "JAK-STAT Signaling",
+            "function": "Tyrosine kinase mediating signaling for type I/II cytokine receptors"
+          }
+        }
+      },
+      {
+        "gene_id": "GLUCOCORTICOID RECEPTOR",
+        "diseases": [
+          "ms",
+          "ra",
+          "sle",
+          "ss",
+          "ssc"
+        ],
+        "disease_count": 5,
+        "name": "Glucocorticoid Receptor (NR3C1)",
+        "per_disease": {
+          "ms": {
+            "odds_ratio": null,
+            "category": "Nuclear Receptor Signaling",
+            "function": "Nuclear receptor that mediates anti-inflammatory effects via transrepression of NF-\u03baB and AP-1, and induction of anti-inflammatory genes"
+          },
+          "ra": {
+            "odds_ratio": null,
+            "category": "Nuclear Receptor Signaling",
+            "function": "Nuclear receptor that mediates anti-inflammatory effects via transrepression of NF-\u03baB and AP-1, and induction of anti-inflammatory genes"
+          },
+          "sle": {
+            "odds_ratio": null,
+            "category": "Nuclear Receptor Signaling",
+            "function": "Nuclear receptor that mediates anti-inflammatory effects via transrepression of NF-\u03baB and AP-1, and induction of anti-inflammatory genes"
+          },
+          "ss": {
+            "odds_ratio": null,
+            "category": "Nuclear Receptor Signaling",
+            "function": "Nuclear receptor that mediates anti-inflammatory effects via transrepression of NF-\u03baB and AP-1, and induction of anti-inflammatory genes"
+          },
+          "ssc": {
+            "odds_ratio": null,
+            "category": "Nuclear Receptor Signaling",
+            "function": "Nuclear receptor that mediates anti-inflammatory effects via transrepression of NF-\u03baB and AP-1, and induction of anti-inflammatory genes"
+          }
+        }
+      },
+      {
+        "gene_id": "CALCINEURIN",
+        "diseases": [
+          "ibd",
+          "ra",
+          "sle",
+          "ss"
+        ],
+        "disease_count": 4,
+        "name": "Calcineurin (PPP3CA / Protein Phosphatase 3)",
+        "per_disease": {
+          "ibd": {
+            "odds_ratio": null,
+            "category": "T Cell Signaling",
+            "function": "Calcium/calmodulin-dependent serine/threonine phosphatase; dephosphorylates NFAT enabling T cell activation"
+          },
+          "ra": {
+            "odds_ratio": null,
+            "category": "T Cell Signaling",
+            "function": "Calcium/calmodulin-dependent serine/threonine phosphatase; dephosphorylates NFAT enabling T cell activation"
+          },
+          "sle": {
+            "odds_ratio": null,
+            "category": "T Cell Signaling",
+            "function": "Calcium/calmodulin-dependent serine/threonine phosphatase; dephosphorylates NFAT enabling T cell activation"
+          },
+          "ss": {
+            "odds_ratio": null,
+            "category": "T Cell Signaling",
+            "function": "Calcium/calmodulin-dependent serine/threonine phosphatase; dephosphorylates NFAT enabling T cell activation"
+          }
+        }
+      },
+      {
         "gene_id": "HLA-DRB1",
         "diseases": [
           "ms",
@@ -1904,6 +2680,39 @@
             "odds_ratio": 2.5,
             "category": "MHC / Antigen Presentation",
             "function": "Antigen presentation to CD4+ T cells via MHC class II"
+          }
+        }
+      },
+      {
+        "gene_id": "CD86",
+        "diseases": [
+          "ms",
+          "ra",
+          "ss",
+          "t1d"
+        ],
+        "disease_count": 4,
+        "name": "CD86 (B7-2)",
+        "per_disease": {
+          "ms": {
+            "odds_ratio": 1.15,
+            "category": "T Cell Costimulation",
+            "function": "Costimulatory ligand on APCs; binds CD28 (activation) and CTLA-4 (inhibition) on T cells"
+          },
+          "ra": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Abatacept (CTLA4-Ig) binds CD80/CD86 on APCs, blocking CD28-mediated T cell costimulation"
+          },
+          "ss": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Abatacept (CTLA4-Ig) binds CD86, blocking the CD28-B7 costimulatory pathway"
+          },
+          "t1d": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Abatacept (CTLA4-Ig) binds CD86 (B7.2) on APCs, blocking CD28-mediated T cell costimulation and reducing islet-reactive T cell activation"
           }
         }
       },
@@ -2073,6 +2882,126 @@
         }
       },
       {
+        "gene_id": "IMPDH",
+        "diseases": [
+          "ra",
+          "sle",
+          "ss",
+          "ssc"
+        ],
+        "disease_count": 4,
+        "name": "IMPDH (Inosine Monophosphate Dehydrogenase)",
+        "per_disease": {
+          "ra": {
+            "odds_ratio": null,
+            "category": "Nucleotide Metabolism",
+            "function": "Rate-limiting enzyme in de novo guanine nucleotide synthesis; essential for lymphocyte proliferation"
+          },
+          "sle": {
+            "odds_ratio": null,
+            "category": "Nucleotide Metabolism",
+            "function": "Rate-limiting enzyme in de novo guanine nucleotide synthesis; essential for lymphocyte proliferation"
+          },
+          "ss": {
+            "odds_ratio": null,
+            "category": "Nucleotide Metabolism",
+            "function": "Rate-limiting enzyme in de novo guanine nucleotide synthesis; essential for lymphocyte proliferation"
+          },
+          "ssc": {
+            "odds_ratio": null,
+            "category": "Nucleotide Metabolism",
+            "function": "Rate-limiting enzyme in de novo guanine nucleotide synthesis; essential for lymphocyte proliferation"
+          }
+        }
+      },
+      {
+        "gene_id": "TLR7",
+        "diseases": [
+          "ra",
+          "sle",
+          "ss",
+          "ssc"
+        ],
+        "disease_count": 4,
+        "name": "Toll-Like Receptor 7",
+        "per_disease": {
+          "ra": {
+            "odds_ratio": 2.0,
+            "category": "Innate Immune Sensing",
+            "function": "Endosomal sensor of single-stranded RNA; drives type I IFN production in plasmacytoid DCs"
+          },
+          "sle": {
+            "odds_ratio": 2.0,
+            "category": "Innate Immune Sensing",
+            "function": "Endosomal sensor of single-stranded RNA; drives type I IFN production in plasmacytoid DCs"
+          },
+          "ss": {
+            "odds_ratio": 1.4,
+            "category": "Innate Immune Sensing",
+            "function": "Endosomal sensor of single-stranded RNA; drives type I IFN production in plasmacytoid DCs"
+          },
+          "ssc": {
+            "odds_ratio": 1.3,
+            "category": "Innate Immune / TLR Signaling",
+            "function": "Endosomal sensor of single-stranded RNA; drives type I IFN production in pDCs"
+          }
+        }
+      },
+      {
+        "gene_id": "DHFR",
+        "diseases": [
+          "ibd",
+          "ra",
+          "ssc"
+        ],
+        "disease_count": 3,
+        "name": "DHFR",
+        "per_disease": {
+          "ibd": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Methotrexate inhibits dihydrofolate reductase and AICAR transformylase, leading to adenosine accumulation with anti-inflammatory effects"
+          },
+          "ra": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Methotrexate inhibits DHFR and AICAR transformylase, leading to adenosine accumulation with anti-inflammatory effects"
+          },
+          "ssc": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Methotrexate inhibits DHFR and AICAR transformylase, leading to adenosine-mediated anti-inflammatory effects on skin fibrosis"
+          }
+        }
+      },
+      {
+        "gene_id": "TNF",
+        "diseases": [
+          "ibd",
+          "ra",
+          "t1d"
+        ],
+        "disease_count": 3,
+        "name": "TNF",
+        "per_disease": {
+          "ibd": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Infliximab binds soluble and membrane-bound TNF with high affinity, inducing apoptosis of TNF-expressing immune cells via Fc-mediated CDC and ADCC"
+          },
+          "ra": {
+            "odds_ratio": 1.2,
+            "category": "TNF-alpha Signaling",
+            "function": "Master pro-inflammatory cytokine driving synovial inflammation, osteoclast activation, and cartilage degradation"
+          },
+          "t1d": {
+            "odds_ratio": 1.2,
+            "category": "Pro-inflammatory Cytokine / \u03b2 Cell Cytotoxicity",
+            "function": "Pro-inflammatory cytokine produced by macrophages and T cells; induces apoptosis, NF-\u03baB activation, and amplifies autoimmune inflammation"
+          }
+        }
+      },
+      {
         "gene_id": "IL2RA",
         "diseases": [
           "ms",
@@ -2100,29 +3029,83 @@
         }
       },
       {
-        "gene_id": "JAK1",
+        "gene_id": "CD40",
         "diseases": [
           "ms",
-          "sle",
-          "t1d"
+          "ra",
+          "ss"
         ],
         "disease_count": 3,
-        "name": "Janus Kinase 1",
+        "name": "CD40 (TNFRSF5)",
         "per_disease": {
           "ms": {
             "odds_ratio": 1.2,
-            "category": "JAK-STAT Signaling",
-            "function": "Tyrosine kinase mediating signaling for type I/II cytokine receptors"
+            "category": "T Cell Costimulation",
+            "function": "Costimulatory receptor on B cells and APCs; binds CD40L (CD154) on T cells to drive germinal center responses"
+          },
+          "ra": {
+            "odds_ratio": 1.2,
+            "category": "T Cell Costimulation",
+            "function": "Costimulatory receptor on B cells and APCs; binds CD40L (CD154) on T cells to drive germinal center responses"
+          },
+          "ss": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Iscalimab blocks CD40 on B cells, inhibiting Tfh-B cell costimulation and germinal center formation without B cell depletion"
+          }
+        }
+      },
+      {
+        "gene_id": "DHODH",
+        "diseases": [
+          "ms",
+          "ra",
+          "ss"
+        ],
+        "disease_count": 3,
+        "name": "DHODH",
+        "per_disease": {
+          "ms": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Teriflunomide inhibits DHODH, blocking de novo pyrimidine synthesis and selectively reducing activated lymphocyte proliferation"
+          },
+          "ra": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Leflunomide inhibits DHODH, blocking de novo pyrimidine synthesis and proliferating T lymphocytes"
+          },
+          "ss": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Leflunomide inhibits DHODH, blocking de novo pyrimidine synthesis and reducing activated lymphocyte proliferation"
+          }
+        }
+      },
+      {
+        "gene_id": "IFNAR1",
+        "diseases": [
+          "ms",
+          "sle",
+          "ss"
+        ],
+        "disease_count": 3,
+        "name": "Interferon Alpha and Beta Receptor Subunit 1",
+        "per_disease": {
+          "ms": {
+            "odds_ratio": null,
+            "category": "Type I Interferon Pathway",
+            "function": "Receptor subunit for type I interferons (IFN-\u03b1/\u03b2)"
           },
           "sle": {
             "odds_ratio": null,
-            "category": "JAK-STAT Signaling",
-            "function": "Tyrosine kinase mediating signaling for type I/II cytokine receptors"
+            "category": "Type I Interferon Pathway",
+            "function": "Receptor subunit for type I interferons (IFN-\u03b1/\u03b2)"
           },
-          "t1d": {
+          "ss": {
             "odds_ratio": 1.2,
-            "category": "JAK-STAT Signaling",
-            "function": "Tyrosine kinase mediating signaling for type I/II cytokine receptors"
+            "category": "Type I Interferon Pathway",
+            "function": "Receptor subunit for type I interferons (IFN-\u03b1/\u03b2)"
           }
         }
       },
@@ -2181,6 +3164,60 @@
         }
       },
       {
+        "gene_id": "CD80",
+        "diseases": [
+          "ra",
+          "ss",
+          "t1d"
+        ],
+        "disease_count": 3,
+        "name": "CD80",
+        "per_disease": {
+          "ra": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Abatacept (CTLA4-Ig) binds CD80/CD86 on APCs, blocking CD28-mediated T cell costimulation"
+          },
+          "ss": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Abatacept (CTLA4-Ig) binds CD80/CD86 on APCs, blocking CD28-mediated T cell costimulation and reducing Tfh help to B cells"
+          },
+          "t1d": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Abatacept (CTLA4-Ig) binds CD80 (B7.1) on APCs, blocking CD28-mediated T cell costimulation and reducing islet-reactive T cell activation"
+          }
+        }
+      },
+      {
+        "gene_id": "TLR9",
+        "diseases": [
+          "ra",
+          "sle",
+          "ss"
+        ],
+        "disease_count": 3,
+        "name": "Toll-Like Receptor 9",
+        "per_disease": {
+          "ra": {
+            "odds_ratio": 1.4,
+            "category": "Innate Immune Sensing",
+            "function": "Endosomal sensor of unmethylated CpG DNA; activates B cells and pDCs"
+          },
+          "sle": {
+            "odds_ratio": 1.4,
+            "category": "Innate Immune Sensing",
+            "function": "Endosomal sensor of unmethylated CpG DNA; activates B cells and pDCs"
+          },
+          "ss": {
+            "odds_ratio": 1.2,
+            "category": "Innate Immune Sensing",
+            "function": "Endosomal sensor of unmethylated CpG DNA; activates B cells and pDCs"
+          }
+        }
+      },
+      {
         "gene_id": "TNFSF4",
         "diseases": [
           "sle",
@@ -2208,29 +3245,29 @@
         }
       },
       {
-        "gene_id": "TLR7",
+        "gene_id": "BAFF",
         "diseases": [
           "sle",
           "ss",
           "ssc"
         ],
         "disease_count": 3,
-        "name": "Toll-Like Receptor 7",
+        "name": "B Cell Activating Factor (TNFSF13B / BLyS)",
         "per_disease": {
           "sle": {
-            "odds_ratio": 2.0,
-            "category": "Innate Immune Sensing",
-            "function": "Endosomal sensor of single-stranded RNA; drives type I IFN production in plasmacytoid DCs"
+            "odds_ratio": null,
+            "category": "B Cell Survival",
+            "function": "Critical B cell survival and maturation factor"
           },
           "ss": {
-            "odds_ratio": 1.4,
-            "category": "Innate Immune Sensing",
-            "function": "Endosomal sensor of single-stranded RNA; drives type I IFN production in plasmacytoid DCs"
+            "odds_ratio": 1.5,
+            "category": "B Cell Survival / BAFF Signaling",
+            "function": "Major B cell survival and differentiation factor; binds TACI, BCMA, and BAFF-R on B cells"
           },
           "ssc": {
-            "odds_ratio": 1.3,
-            "category": "Innate Immune / TLR Signaling",
-            "function": "Endosomal sensor of single-stranded RNA; drives type I IFN production in pDCs"
+            "odds_ratio": null,
+            "category": "B Cell Survival",
+            "function": "Critical B cell survival and maturation factor"
           }
         }
       },
@@ -2352,6 +3389,48 @@
         }
       },
       {
+        "gene_id": "JAK2",
+        "diseases": [
+          "ibd",
+          "ra"
+        ],
+        "disease_count": 2,
+        "name": "Janus Kinase 2",
+        "per_disease": {
+          "ibd": {
+            "odds_ratio": 1.2,
+            "category": "JAK-STAT Signaling",
+            "function": "Non-receptor tyrosine kinase coupling cytokine receptors (IL-6R, IL-12R, IL-23R, GM-CSFR) to STAT3/STAT4 activation; drives intestinal inflammatory gene programs"
+          },
+          "ra": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Baricitinib inhibits JAK2, which mediates signaling for GM-CSF, EPO, TPO, and growth hormone receptors"
+          }
+        }
+      },
+      {
+        "gene_id": "IL12B",
+        "diseases": [
+          "ibd",
+          "t1d"
+        ],
+        "disease_count": 2,
+        "name": "Interleukin-12 Subunit Beta (p40)",
+        "per_disease": {
+          "ibd": {
+            "odds_ratio": 1.2,
+            "category": "IL-23 / Th17 Axis",
+            "function": "Shared p40 subunit of IL-12 (p35/p40) and IL-23 (p19/p40); essential for Th1 and Th17 differentiation; bridges innate and adaptive immunity"
+          },
+          "t1d": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Ustekinumab targets the shared p40 subunit of IL-12, blocking the IL-12/IFN-\u03b3 Th1 differentiation pathway implicated in islet autoimmunity"
+          }
+        }
+      },
+      {
         "gene_id": "CCR6",
         "diseases": [
           "ibd",
@@ -2390,27 +3469,6 @@
             "odds_ratio": 1.2,
             "category": "Fibrosis / TGF-\u03b2 Signaling",
             "function": "Intracellular mediator of TGF-\u03b2 signaling; drives collagen transcription"
-          }
-        }
-      },
-      {
-        "gene_id": "CD40",
-        "diseases": [
-          "ms",
-          "ra"
-        ],
-        "disease_count": 2,
-        "name": "CD40 (TNFRSF5)",
-        "per_disease": {
-          "ms": {
-            "odds_ratio": 1.2,
-            "category": "T Cell Costimulation",
-            "function": "Costimulatory receptor on B cells and APCs; binds CD40L (CD154) on T cells to drive germinal center responses"
-          },
-          "ra": {
-            "odds_ratio": 1.2,
-            "category": "T Cell Costimulation",
-            "function": "Costimulatory receptor on B cells and APCs; binds CD40L (CD154) on T cells to drive germinal center responses"
           }
         }
       },
@@ -2478,6 +3536,48 @@
         }
       },
       {
+        "gene_id": "BTK",
+        "diseases": [
+          "ms",
+          "sle"
+        ],
+        "disease_count": 2,
+        "name": "Bruton Tyrosine Kinase",
+        "per_disease": {
+          "ms": {
+            "odds_ratio": null,
+            "category": "B Cell Signaling",
+            "function": "Essential kinase for B cell receptor and Fc receptor signaling"
+          },
+          "sle": {
+            "odds_ratio": null,
+            "category": "B Cell Signaling",
+            "function": "Essential kinase for B cell receptor and Fc receptor signaling"
+          }
+        }
+      },
+      {
+        "gene_id": "IL6R",
+        "diseases": [
+          "ra",
+          "ssc"
+        ],
+        "disease_count": 2,
+        "name": "Interleukin-6 Receptor",
+        "per_disease": {
+          "ra": {
+            "odds_ratio": 1.2,
+            "category": "IL-6 / JAK-STAT",
+            "function": "Receptor for IL-6; mediates pro-inflammatory signaling via JAK1/JAK2-STAT3 and soluble gp130 trans-signaling"
+          },
+          "ssc": {
+            "odds_ratio": null,
+            "category": "Therapeutic Target",
+            "function": "Tocilizumab blocks both membrane-bound and soluble IL-6R, inhibiting IL-6-mediated JAK-STAT3 signaling in SSc"
+          }
+        }
+      },
+      {
         "gene_id": "PRDM1",
         "diseases": [
           "ra",
@@ -2516,90 +3616,6 @@
             "odds_ratio": 1.3,
             "category": "Lymphocyte Development",
             "function": "Transcription factor regulating B cell differentiation, plasma cell development, and autoantibody production"
-          }
-        }
-      },
-      {
-        "gene_id": "TNF",
-        "diseases": [
-          "ra",
-          "t1d"
-        ],
-        "disease_count": 2,
-        "name": "Tumor Necrosis Factor Alpha",
-        "per_disease": {
-          "ra": {
-            "odds_ratio": 1.2,
-            "category": "TNF-alpha Signaling",
-            "function": "Master pro-inflammatory cytokine driving synovial inflammation, osteoclast activation, and cartilage degradation"
-          },
-          "t1d": {
-            "odds_ratio": 1.2,
-            "category": "Pro-inflammatory Cytokine / \u03b2 Cell Cytotoxicity",
-            "function": "Pro-inflammatory cytokine produced by macrophages and T cells; induces apoptosis, NF-\u03baB activation, and amplifies autoimmune inflammation"
-          }
-        }
-      },
-      {
-        "gene_id": "TLR9",
-        "diseases": [
-          "sle",
-          "ss"
-        ],
-        "disease_count": 2,
-        "name": "Toll-Like Receptor 9",
-        "per_disease": {
-          "sle": {
-            "odds_ratio": 1.4,
-            "category": "Innate Immune Sensing",
-            "function": "Endosomal sensor of unmethylated CpG DNA; activates B cells and pDCs"
-          },
-          "ss": {
-            "odds_ratio": 1.2,
-            "category": "Innate Immune Sensing",
-            "function": "Endosomal sensor of unmethylated CpG DNA; activates B cells and pDCs"
-          }
-        }
-      },
-      {
-        "gene_id": "BAFF",
-        "diseases": [
-          "sle",
-          "ss"
-        ],
-        "disease_count": 2,
-        "name": "B Cell Activating Factor (TNFSF13B / BLyS)",
-        "per_disease": {
-          "sle": {
-            "odds_ratio": null,
-            "category": "B Cell Survival",
-            "function": "Critical B cell survival and maturation factor"
-          },
-          "ss": {
-            "odds_ratio": 1.5,
-            "category": "B Cell Survival / BAFF Signaling",
-            "function": "Major B cell survival and differentiation factor; binds TACI, BCMA, and BAFF-R on B cells"
-          }
-        }
-      },
-      {
-        "gene_id": "IFNAR1",
-        "diseases": [
-          "sle",
-          "ss"
-        ],
-        "disease_count": 2,
-        "name": "Interferon Alpha and Beta Receptor Subunit 1",
-        "per_disease": {
-          "sle": {
-            "odds_ratio": null,
-            "category": "Type I Interferon Pathway",
-            "function": "Receptor subunit for type I interferons (IFN-\u03b1/\u03b2)"
-          },
-          "ss": {
-            "odds_ratio": 1.2,
-            "category": "Type I Interferon Pathway",
-            "function": "Receptor subunit for type I interferons (IFN-\u03b1/\u03b2)"
           }
         }
       },
@@ -6170,54 +7186,41 @@
   },
   "disease_similarity": [
     {
+      "disease_a": "ra",
+      "disease_b": "sle",
+      "name_a": "Rheumatoid Arthritis",
+      "name_b": "Systemic Lupus Erythematosus",
+      "gene_similarity": 0.3051,
+      "drug_similarity": 0.1905,
+      "pathway_similarity": 0.2,
+      "overall_similarity": 0.2387,
+      "shared_gene_count": 18,
+      "shared_drug_count": 8,
+      "shared_pathway_count": 3
+    },
+    {
       "disease_a": "sle",
       "disease_b": "ss",
       "name_a": "Systemic Lupus Erythematosus",
       "name_b": "Sj\u00f6gren's Syndrome",
-      "gene_similarity": 0.383,
+      "gene_similarity": 0.4231,
       "drug_similarity": 0.1892,
       "pathway_similarity": 0.0,
-      "overall_similarity": 0.2194,
-      "shared_gene_count": 18,
+      "overall_similarity": 0.2354,
+      "shared_gene_count": 22,
       "shared_drug_count": 7,
       "shared_pathway_count": 0
     },
     {
       "disease_a": "ra",
-      "disease_b": "sle",
-      "name_a": "Rheumatoid Arthritis",
-      "name_b": "Systemic Lupus Erythematosus",
-      "gene_similarity": 0.2115,
-      "drug_similarity": 0.1905,
-      "pathway_similarity": 0.2,
-      "overall_similarity": 0.2013,
-      "shared_gene_count": 11,
-      "shared_drug_count": 8,
-      "shared_pathway_count": 3
-    },
-    {
-      "disease_a": "ss",
-      "disease_b": "ssc",
-      "name_a": "Sj\u00f6gren's Syndrome",
-      "name_b": "Systemic Sclerosis (Scleroderma)",
-      "gene_similarity": 0.3171,
-      "drug_similarity": 0.0588,
-      "pathway_similarity": 0.0,
-      "overall_similarity": 0.1474,
-      "shared_gene_count": 13,
-      "shared_drug_count": 2,
-      "shared_pathway_count": 0
-    },
-    {
-      "disease_a": "ra",
       "disease_b": "ss",
       "name_a": "Rheumatoid Arthritis",
       "name_b": "Sj\u00f6gren's Syndrome",
-      "gene_similarity": 0.2093,
+      "gene_similarity": 0.3393,
       "drug_similarity": 0.1667,
       "pathway_similarity": 0.0,
-      "overall_similarity": 0.1421,
-      "shared_gene_count": 9,
+      "overall_similarity": 0.194,
+      "shared_gene_count": 19,
       "shared_drug_count": 6,
       "shared_pathway_count": 0
     },
@@ -6226,38 +7229,51 @@
       "disease_b": "ssc",
       "name_a": "Rheumatoid Arthritis",
       "name_b": "Systemic Sclerosis (Scleroderma)",
-      "gene_similarity": 0.1818,
+      "gene_similarity": 0.2059,
       "drug_similarity": 0.1351,
       "pathway_similarity": 0.0667,
-      "overall_similarity": 0.1367,
-      "shared_gene_count": 8,
+      "overall_similarity": 0.1463,
+      "shared_gene_count": 14,
       "shared_drug_count": 5,
       "shared_pathway_count": 1
-    },
-    {
-      "disease_a": "sle",
-      "disease_b": "ssc",
-      "name_a": "Systemic Lupus Erythematosus",
-      "name_b": "Systemic Sclerosis (Scleroderma)",
-      "gene_similarity": 0.1818,
-      "drug_similarity": 0.1282,
-      "pathway_similarity": 0.0,
-      "overall_similarity": 0.1176,
-      "shared_gene_count": 10,
-      "shared_drug_count": 5,
-      "shared_pathway_count": 0
     },
     {
       "disease_a": "ibd",
       "disease_b": "ra",
       "name_a": "Inflammatory Bowel Disease",
       "name_b": "Rheumatoid Arthritis",
-      "gene_similarity": 0.0667,
+      "gene_similarity": 0.1176,
       "drug_similarity": 0.25,
       "pathway_similarity": 0.0,
-      "overall_similarity": 0.1142,
-      "shared_gene_count": 3,
+      "overall_similarity": 0.1346,
+      "shared_gene_count": 8,
       "shared_drug_count": 9,
+      "shared_pathway_count": 0
+    },
+    {
+      "disease_a": "ss",
+      "disease_b": "ssc",
+      "name_a": "Sj\u00f6gren's Syndrome",
+      "name_b": "Systemic Sclerosis (Scleroderma)",
+      "gene_similarity": 0.2742,
+      "drug_similarity": 0.0588,
+      "pathway_similarity": 0.0,
+      "overall_similarity": 0.1303,
+      "shared_gene_count": 17,
+      "shared_drug_count": 2,
+      "shared_pathway_count": 0
+    },
+    {
+      "disease_a": "sle",
+      "disease_b": "ssc",
+      "name_a": "Systemic Lupus Erythematosus",
+      "name_b": "Systemic Sclerosis (Scleroderma)",
+      "gene_similarity": 0.209,
+      "drug_similarity": 0.1282,
+      "pathway_similarity": 0.0,
+      "overall_similarity": 0.1285,
+      "shared_gene_count": 14,
+      "shared_drug_count": 5,
       "shared_pathway_count": 0
     },
     {
@@ -6265,11 +7281,11 @@
       "disease_b": "t1d",
       "name_a": "Rheumatoid Arthritis",
       "name_b": "Type 1 Diabetes",
-      "gene_similarity": 0.1136,
+      "gene_similarity": 0.1406,
       "drug_similarity": 0.0833,
       "pathway_similarity": 0.0,
-      "overall_similarity": 0.0746,
-      "shared_gene_count": 5,
+      "overall_similarity": 0.0854,
+      "shared_gene_count": 9,
       "shared_drug_count": 3,
       "shared_pathway_count": 0
     },
@@ -6278,51 +7294,77 @@
       "disease_b": "sle",
       "name_a": "Inflammatory Bowel Disease",
       "name_b": "Systemic Lupus Erythematosus",
-      "gene_similarity": 0.0339,
+      "gene_similarity": 0.0563,
       "drug_similarity": 0.119,
       "pathway_similarity": 0.0,
-      "overall_similarity": 0.0552,
-      "shared_gene_count": 2,
+      "overall_similarity": 0.0642,
+      "shared_gene_count": 4,
       "shared_drug_count": 5,
       "shared_pathway_count": 0
     },
     {
-      "disease_a": "ibd",
-      "disease_b": "t1d",
-      "name_a": "Inflammatory Bowel Disease",
-      "name_b": "Type 1 Diabetes",
-      "gene_similarity": 0.0682,
-      "drug_similarity": 0.0588,
+      "disease_a": "ms",
+      "disease_b": "ra",
+      "name_a": "Multiple Sclerosis",
+      "name_b": "Rheumatoid Arthritis",
+      "gene_similarity": 0.1268,
+      "drug_similarity": 0.0233,
       "pathway_similarity": 0.0,
-      "overall_similarity": 0.0479,
-      "shared_gene_count": 3,
-      "shared_drug_count": 2,
-      "shared_pathway_count": 0
-    },
-    {
-      "disease_a": "ssc",
-      "disease_b": "t1d",
-      "name_a": "Systemic Sclerosis (Scleroderma)",
-      "name_b": "Type 1 Diabetes",
-      "gene_similarity": 0.0851,
-      "drug_similarity": 0.0312,
-      "pathway_similarity": 0.0,
-      "overall_similarity": 0.045,
-      "shared_gene_count": 4,
+      "overall_similarity": 0.0588,
+      "shared_gene_count": 9,
       "shared_drug_count": 1,
       "shared_pathway_count": 0
     },
     {
       "disease_a": "ibd",
-      "disease_b": "ssc",
+      "disease_b": "t1d",
       "name_a": "Inflammatory Bowel Disease",
-      "name_b": "Systemic Sclerosis (Scleroderma)",
-      "gene_similarity": 0.0638,
-      "drug_similarity": 0.0541,
+      "name_b": "Type 1 Diabetes",
+      "gene_similarity": 0.0923,
+      "drug_similarity": 0.0588,
       "pathway_similarity": 0.0,
-      "overall_similarity": 0.0445,
-      "shared_gene_count": 3,
+      "overall_similarity": 0.0575,
+      "shared_gene_count": 6,
       "shared_drug_count": 2,
+      "shared_pathway_count": 0
+    },
+    {
+      "disease_a": "ms",
+      "disease_b": "sle",
+      "name_a": "Multiple Sclerosis",
+      "name_b": "Systemic Lupus Erythematosus",
+      "gene_similarity": 0.0972,
+      "drug_similarity": 0.0455,
+      "pathway_similarity": 0.0,
+      "overall_similarity": 0.0548,
+      "shared_gene_count": 7,
+      "shared_drug_count": 2,
+      "shared_pathway_count": 0
+    },
+    {
+      "disease_a": "ms",
+      "disease_b": "ss",
+      "name_a": "Multiple Sclerosis",
+      "name_b": "Sj\u00f6gren's Syndrome",
+      "gene_similarity": 0.1324,
+      "drug_similarity": 0.0,
+      "pathway_similarity": 0.0,
+      "overall_similarity": 0.0529,
+      "shared_gene_count": 9,
+      "shared_drug_count": 0,
+      "shared_pathway_count": 0
+    },
+    {
+      "disease_a": "ss",
+      "disease_b": "t1d",
+      "name_a": "Sj\u00f6gren's Syndrome",
+      "name_b": "Type 1 Diabetes",
+      "gene_similarity": 0.0938,
+      "drug_similarity": 0.0312,
+      "pathway_similarity": 0.0,
+      "overall_similarity": 0.0484,
+      "shared_gene_count": 6,
+      "shared_drug_count": 1,
       "shared_pathway_count": 0
     },
     {
@@ -6330,11 +7372,11 @@
       "disease_b": "t1d",
       "name_a": "Systemic Lupus Erythematosus",
       "name_b": "Type 1 Diabetes",
-      "gene_similarity": 0.0508,
+      "gene_similarity": 0.0588,
       "drug_similarity": 0.025,
       "pathway_similarity": 0.0588,
-      "overall_similarity": 0.0438,
-      "shared_gene_count": 3,
+      "overall_similarity": 0.047,
+      "shared_gene_count": 4,
       "shared_drug_count": 1,
       "shared_pathway_count": 1
     },
@@ -6343,12 +7385,25 @@
       "disease_b": "t1d",
       "name_a": "Multiple Sclerosis",
       "name_b": "Type 1 Diabetes",
-      "gene_similarity": 0.0833,
+      "gene_similarity": 0.087,
       "drug_similarity": 0.0294,
       "pathway_similarity": 0.0,
-      "overall_similarity": 0.0436,
-      "shared_gene_count": 4,
+      "overall_similarity": 0.0451,
+      "shared_gene_count": 6,
       "shared_drug_count": 1,
+      "shared_pathway_count": 0
+    },
+    {
+      "disease_a": "ibd",
+      "disease_b": "ssc",
+      "name_a": "Inflammatory Bowel Disease",
+      "name_b": "Systemic Sclerosis (Scleroderma)",
+      "gene_similarity": 0.0526,
+      "drug_similarity": 0.0541,
+      "pathway_similarity": 0.0,
+      "overall_similarity": 0.04,
+      "shared_gene_count": 4,
+      "shared_drug_count": 2,
       "shared_pathway_count": 0
     },
     {
@@ -6356,63 +7411,24 @@
       "disease_b": "ms",
       "name_a": "Inflammatory Bowel Disease",
       "name_b": "Multiple Sclerosis",
-      "gene_similarity": 0.0625,
+      "gene_similarity": 0.0541,
       "drug_similarity": 0.0513,
       "pathway_similarity": 0.0,
-      "overall_similarity": 0.0429,
-      "shared_gene_count": 3,
+      "overall_similarity": 0.0396,
+      "shared_gene_count": 4,
       "shared_drug_count": 2,
       "shared_pathway_count": 0
     },
     {
-      "disease_a": "ms",
-      "disease_b": "ra",
-      "name_a": "Multiple Sclerosis",
-      "name_b": "Rheumatoid Arthritis",
-      "gene_similarity": 0.0816,
-      "drug_similarity": 0.0233,
-      "pathway_similarity": 0.0,
-      "overall_similarity": 0.0408,
-      "shared_gene_count": 4,
-      "shared_drug_count": 1,
-      "shared_pathway_count": 0
-    },
-    {
-      "disease_a": "ss",
+      "disease_a": "ssc",
       "disease_b": "t1d",
-      "name_a": "Sj\u00f6gren's Syndrome",
+      "name_a": "Systemic Sclerosis (Scleroderma)",
       "name_b": "Type 1 Diabetes",
-      "gene_similarity": 0.0625,
+      "gene_similarity": 0.0694,
       "drug_similarity": 0.0312,
       "pathway_similarity": 0.0,
-      "overall_similarity": 0.0359,
-      "shared_gene_count": 3,
-      "shared_drug_count": 1,
-      "shared_pathway_count": 0
-    },
-    {
-      "disease_a": "ms",
-      "disease_b": "sle",
-      "name_a": "Multiple Sclerosis",
-      "name_b": "Systemic Lupus Erythematosus",
-      "gene_similarity": 0.0476,
-      "drug_similarity": 0.0455,
-      "pathway_similarity": 0.0,
-      "overall_similarity": 0.035,
-      "shared_gene_count": 3,
-      "shared_drug_count": 2,
-      "shared_pathway_count": 0
-    },
-    {
-      "disease_a": "ibd",
-      "disease_b": "ss",
-      "name_a": "Inflammatory Bowel Disease",
-      "name_b": "Sj\u00f6gren's Syndrome",
-      "gene_similarity": 0.0417,
-      "drug_similarity": 0.0263,
-      "pathway_similarity": 0.0,
-      "overall_similarity": 0.0259,
-      "shared_gene_count": 2,
+      "overall_similarity": 0.0387,
+      "shared_gene_count": 5,
       "shared_drug_count": 1,
       "shared_pathway_count": 0
     },
@@ -6421,66 +7437,29 @@
       "disease_b": "ssc",
       "name_a": "Multiple Sclerosis",
       "name_b": "Systemic Sclerosis (Scleroderma)",
-      "gene_similarity": 0.0377,
+      "gene_similarity": 0.05,
       "drug_similarity": 0.027,
       "pathway_similarity": 0.0,
-      "overall_similarity": 0.0246,
-      "shared_gene_count": 2,
+      "overall_similarity": 0.0295,
+      "shared_gene_count": 4,
       "shared_drug_count": 1,
       "shared_pathway_count": 0
     },
     {
-      "disease_a": "ms",
+      "disease_a": "ibd",
       "disease_b": "ss",
-      "name_a": "Multiple Sclerosis",
+      "name_a": "Inflammatory Bowel Disease",
       "name_b": "Sj\u00f6gren's Syndrome",
-      "gene_similarity": 0.0577,
-      "drug_similarity": 0.0,
+      "gene_similarity": 0.0429,
+      "drug_similarity": 0.0263,
       "pathway_similarity": 0.0,
-      "overall_similarity": 0.0231,
+      "overall_similarity": 0.0264,
       "shared_gene_count": 3,
-      "shared_drug_count": 0,
+      "shared_drug_count": 1,
       "shared_pathway_count": 0
     }
   ],
   "multi_disease_drugs": [
-    {
-      "drug_id": "deucravacitinib",
-      "drug_name": "Deucravacitinib (Sotyktu)",
-      "disease_count": 2,
-      "diseases": [
-        "sle",
-        "ss"
-      ],
-      "targets": [
-        "TYK2"
-      ],
-      "categories": [
-        "TYK2 Inhibitor",
-        "Targeted Synthetic - TYK2 Inhibitor"
-      ],
-      "per_disease": {
-        "sle": {
-          "target": "TYK2",
-          "mechanism": "Highly selective allosteric TYK2 inhibitor that binds the pseudokinase (JH2) domain, blocking type I IFN, IL-12, and IL-23 signaling without inhibiting JAK1/2/3",
-          "category": "Targeted Synthetic - TYK2 Inhibitor",
-          "approval": "FDA approved 2022 (plaque psoriasis); Phase 2 in SLE (PAISLEY trial)"
-        },
-        "ss": {
-          "target": "TYK2",
-          "mechanism": "Allosteric TYK2 inhibitor binding JH2 pseudokinase domain; blocks type I IFN, IL-12, IL-23",
-          "category": "TYK2 Inhibitor",
-          "approval": "Rational target for SS IFN/IL-12 axis"
-        }
-      },
-      "disease_coverage": 2.9,
-      "target_centrality": 10.0,
-      "pathway_breadth": 5.0,
-      "mechanistic_transferability": 4.0,
-      "novelty": 7.6,
-      "composite_score": 5.72,
-      "tier": "Tier 3 \u2014 Moderate Cross-Disease Potential"
-    },
     {
       "drug_id": "rituximab",
       "drug_name": "Rituximab (Rituxan)",
@@ -6533,11 +7512,48 @@
         }
       },
       "disease_coverage": 7.1,
-      "target_centrality": 1.4,
+      "target_centrality": 8.6,
       "pathway_breadth": 7.5,
       "mechanistic_transferability": 8.5,
       "novelty": 4.0,
-      "composite_score": 5.68,
+      "composite_score": 7.46,
+      "tier": "Tier 2 \u2014 Promising Cross-Disease Candidate"
+    },
+    {
+      "drug_id": "deucravacitinib",
+      "drug_name": "Deucravacitinib (Sotyktu)",
+      "disease_count": 2,
+      "diseases": [
+        "sle",
+        "ss"
+      ],
+      "targets": [
+        "TYK2"
+      ],
+      "categories": [
+        "TYK2 Inhibitor",
+        "Targeted Synthetic - TYK2 Inhibitor"
+      ],
+      "per_disease": {
+        "sle": {
+          "target": "TYK2",
+          "mechanism": "Highly selective allosteric TYK2 inhibitor that binds the pseudokinase (JH2) domain, blocking type I IFN, IL-12, and IL-23 signaling without inhibiting JAK1/2/3",
+          "category": "Targeted Synthetic - TYK2 Inhibitor",
+          "approval": "FDA approved 2022 (plaque psoriasis); Phase 2 in SLE (PAISLEY trial)"
+        },
+        "ss": {
+          "target": "TYK2",
+          "mechanism": "Allosteric TYK2 inhibitor binding JH2 pseudokinase domain; blocks type I IFN, IL-12, IL-23",
+          "category": "TYK2 Inhibitor",
+          "approval": "Rational target for SS IFN/IL-12 axis"
+        }
+      },
+      "disease_coverage": 2.9,
+      "target_centrality": 10.0,
+      "pathway_breadth": 5.0,
+      "mechanistic_transferability": 4.0,
+      "novelty": 7.6,
+      "composite_score": 5.72,
       "tier": "Tier 3 \u2014 Moderate Cross-Disease Potential"
     },
     {
@@ -6591,6 +7607,43 @@
       "mechanistic_transferability": 7.0,
       "novelty": 5.2,
       "composite_score": 5.64,
+      "tier": "Tier 3 \u2014 Moderate Cross-Disease Potential"
+    },
+    {
+      "drug_id": "upadacitinib",
+      "drug_name": "Upadacitinib (Rinvoq)",
+      "disease_count": 2,
+      "diseases": [
+        "ibd",
+        "ra"
+      ],
+      "targets": [
+        "JAK1"
+      ],
+      "categories": [
+        "tsDMARD - JAK Inhibitor",
+        "tsDMARD - JAK Inhibitor (CD and UC)"
+      ],
+      "per_disease": {
+        "ibd": {
+          "target": "JAK1",
+          "mechanism": "Oral selective JAK1 inhibitor engineered for JAK1 selectivity over JAK2/JAK3/TYK2; blocks IL-6, type I/II IFN, IL-10 family, and common gamma chain cytokine signaling with minimal hematologic impact f",
+          "category": "tsDMARD - JAK Inhibitor (CD and UC)",
+          "approval": "FDA approved 2022 (UC), 2023 (CD). First JAK inhibitor approved for Crohn's disease. Once-daily oral dosing."
+        },
+        "ra": {
+          "target": "JAK1",
+          "mechanism": "Oral selective JAK1 inhibitor; engineered for JAK1 selectivity over JAK2/JAK3/TYK2 to minimize hematologic adverse effects",
+          "category": "tsDMARD - JAK Inhibitor",
+          "approval": "FDA approved 2019 (RA). JAK1 selectivity profile."
+        }
+      },
+      "disease_coverage": 2.9,
+      "target_centrality": 7.1,
+      "pathway_breadth": 5.0,
+      "mechanistic_transferability": 4.0,
+      "novelty": 7.6,
+      "composite_score": 5.0,
       "tier": "Tier 3 \u2014 Moderate Cross-Disease Potential"
     },
     {
@@ -6827,32 +7880,177 @@
       "tier": "Tier 3 \u2014 Moderate Cross-Disease Potential"
     },
     {
-      "drug_id": "upadacitinib",
-      "drug_name": "Upadacitinib (Rinvoq)",
-      "disease_count": 2,
+      "drug_id": "ocrelizumab",
+      "drug_name": "Ocrelizumab (Ocrevus)",
+      "disease_count": 1,
       "diseases": [
-        "ibd",
-        "ra"
+        "ms"
       ],
       "targets": [
-        "JAK1"
+        "CD20"
       ],
       "categories": [
-        "tsDMARD - JAK Inhibitor",
-        "tsDMARD - JAK Inhibitor (CD and UC)"
+        "DMT - B Cell Depletion (Anti-CD20)"
       ],
       "per_disease": {
-        "ibd": {
-          "target": "JAK1",
-          "mechanism": "Oral selective JAK1 inhibitor engineered for JAK1 selectivity over JAK2/JAK3/TYK2; blocks IL-6, type I/II IFN, IL-10 family, and common gamma chain cytokine signaling with minimal hematologic impact f",
-          "category": "tsDMARD - JAK Inhibitor (CD and UC)",
-          "approval": "FDA approved 2022 (UC), 2023 (CD). First JAK inhibitor approved for Crohn's disease. Once-daily oral dosing."
+        "ms": {
+          "target": "CD20",
+          "mechanism": "Humanized anti-CD20 monoclonal antibody; depletes CD20+ B cells via ADCC and CDC. B cell depletion reduces antigen presentation to T cells, pro-inflammatory cytokine production, and autoantibody secre",
+          "category": "DMT - B Cell Depletion (Anti-CD20)",
+          "approval": "FDA approved 2017 (RMS and PPMS). First and only therapy approved for primary progressive MS."
+        }
+      },
+      "disease_coverage": 1.4,
+      "target_centrality": 8.6,
+      "pathway_breadth": 2.5,
+      "mechanistic_transferability": 2.5,
+      "novelty": 8.8,
+      "composite_score": 4.33,
+      "tier": "Tier 4 \u2014 Disease-Specific"
+    },
+    {
+      "drug_id": "ofatumumab",
+      "drug_name": "Ofatumumab (Kesimpta)",
+      "disease_count": 1,
+      "diseases": [
+        "ms"
+      ],
+      "targets": [
+        "CD20"
+      ],
+      "categories": [
+        "DMT - B Cell Depletion (Anti-CD20)"
+      ],
+      "per_disease": {
+        "ms": {
+          "target": "CD20",
+          "mechanism": "Fully human anti-CD20 monoclonal antibody binding a distinct epitope from rituximab/ocrelizumab; depletes B cells via CDC and ADCC. Subcutaneous self-administration at home.",
+          "category": "DMT - B Cell Depletion (Anti-CD20)",
+          "approval": "FDA approved 2020 (RMS). First self-administered B cell therapy for MS."
+        }
+      },
+      "disease_coverage": 1.4,
+      "target_centrality": 8.6,
+      "pathway_breadth": 2.5,
+      "mechanistic_transferability": 2.5,
+      "novelty": 8.8,
+      "composite_score": 4.33,
+      "tier": "Tier 4 \u2014 Disease-Specific"
+    },
+    {
+      "drug_id": "ublituximab",
+      "drug_name": "Ublituximab (Briumvi)",
+      "disease_count": 1,
+      "diseases": [
+        "ms"
+      ],
+      "targets": [
+        "CD20"
+      ],
+      "categories": [
+        "DMT - B Cell Depletion (Anti-CD20)"
+      ],
+      "per_disease": {
+        "ms": {
+          "target": "CD20",
+          "mechanism": "Glycoengineered chimeric anti-CD20 monoclonal antibody with enhanced ADCC; designed for rapid B cell depletion with shorter infusion times than rituximab",
+          "category": "DMT - B Cell Depletion (Anti-CD20)",
+          "approval": "FDA approved 2022 (RMS). First glycoengineered anti-CD20 for MS."
+        }
+      },
+      "disease_coverage": 1.4,
+      "target_centrality": 8.6,
+      "pathway_breadth": 2.5,
+      "mechanistic_transferability": 2.5,
+      "novelty": 8.8,
+      "composite_score": 4.33,
+      "tier": "Tier 4 \u2014 Disease-Specific"
+    },
+    {
+      "drug_id": "obinutuzumab",
+      "drug_name": "Obinutuzumab (Gazyva)",
+      "disease_count": 1,
+      "diseases": [
+        "sle"
+      ],
+      "targets": [
+        "CD20"
+      ],
+      "categories": [
+        "Biologic - B Cell Depletion (Next-Gen)"
+      ],
+      "per_disease": {
+        "sle": {
+          "target": "CD20",
+          "mechanism": "Type II anti-CD20 antibody with enhanced B cell depletion vs rituximab",
+          "category": "Biologic - B Cell Depletion (Next-Gen)",
+          "approval": "Phase 3 in lupus nephritis (REGENCY trial, positive results 2024)"
+        }
+      },
+      "disease_coverage": 1.4,
+      "target_centrality": 8.6,
+      "pathway_breadth": 2.5,
+      "mechanistic_transferability": 2.5,
+      "novelty": 8.8,
+      "composite_score": 4.33,
+      "tier": "Tier 4 \u2014 Disease-Specific"
+    },
+    {
+      "drug_id": "rituximab_ss",
+      "drug_name": "Rituximab (Rituxan)",
+      "disease_count": 1,
+      "diseases": [
+        "ss"
+      ],
+      "targets": [
+        "CD20"
+      ],
+      "categories": [
+        "Biologic - B Cell Depletion (Anti-CD20)"
+      ],
+      "per_disease": {
+        "ss": {
+          "target": "CD20",
+          "mechanism": "Depletes CD20+ B cells via ADCC, CDC, and apoptosis. Reduces B cell-driven inflammation, germinal center formation, and autoantibody production in salivary glands.",
+          "category": "Biologic - B Cell Depletion (Anti-CD20)",
+          "approval": "Off-label for severe SS (not FDA-approved for SS). RCTs show mixed results for primary endpoints but consistent benefit in secondary outcomes and systemic disease."
+        }
+      },
+      "disease_coverage": 1.4,
+      "target_centrality": 8.6,
+      "pathway_breadth": 2.5,
+      "mechanistic_transferability": 2.5,
+      "novelty": 8.8,
+      "composite_score": 4.33,
+      "tier": "Tier 4 \u2014 Disease-Specific"
+    },
+    {
+      "drug_id": "iscalimab",
+      "drug_name": "Iscalimab (CFZ533 / anti-CD40)",
+      "disease_count": 2,
+      "diseases": [
+        "sle",
+        "ss"
+      ],
+      "targets": [
+        "CD40"
+      ],
+      "categories": [
+        "Biologic - T Cell Costimulation Blocker",
+        "Investigational - Anti-CD40 / T-B Costimulation Blocker"
+      ],
+      "per_disease": {
+        "sle": {
+          "target": "CD40",
+          "mechanism": "Blocks CD40-CD40L interaction, preventing T cell-dependent B cell activation and germinal center formation",
+          "category": "Biologic - T Cell Costimulation Blocker",
+          "approval": "Phase 2 in Sj\u00f6gren\u2019s syndrome and renal transplantation (investigational)"
         },
-        "ra": {
-          "target": "JAK1",
-          "mechanism": "Oral selective JAK1 inhibitor; engineered for JAK1 selectivity over JAK2/JAK3/TYK2 to minimize hematologic adverse effects",
-          "category": "tsDMARD - JAK Inhibitor",
-          "approval": "FDA approved 2019 (RA). JAK1 selectivity profile."
+        "ss": {
+          "target": "CD40",
+          "mechanism": "Fully human anti-CD40 monoclonal antibody; blocks CD40-CD40L interaction, inhibiting Tfh-B cell costimulation and germinal center formation without depleting B cells",
+          "category": "Investigational - Anti-CD40 / T-B Costimulation Blocker",
+          "approval": "Phase 2 in SS (TWINSS trial). Phase 2 in SLE and kidney transplantation."
         }
       },
       "disease_coverage": 2.9,
@@ -7094,40 +8292,32 @@
       "tier": "Tier 4 \u2014 Disease-Specific"
     },
     {
-      "drug_id": "iscalimab",
-      "drug_name": "Iscalimab (CFZ533 / anti-CD40)",
-      "disease_count": 2,
+      "drug_id": "filgotinib",
+      "drug_name": "Filgotinib (Jyseleca)",
+      "disease_count": 1,
       "diseases": [
-        "sle",
-        "ss"
+        "ra"
       ],
       "targets": [
-        "CD40"
+        "JAK1"
       ],
       "categories": [
-        "Biologic - T Cell Costimulation Blocker",
-        "Investigational - Anti-CD40 / T-B Costimulation Blocker"
+        "tsDMARD - JAK Inhibitor"
       ],
       "per_disease": {
-        "sle": {
-          "target": "CD40",
-          "mechanism": "Blocks CD40-CD40L interaction, preventing T cell-dependent B cell activation and germinal center formation",
-          "category": "Biologic - T Cell Costimulation Blocker",
-          "approval": "Phase 2 in Sj\u00f6gren\u2019s syndrome and renal transplantation (investigational)"
-        },
-        "ss": {
-          "target": "CD40",
-          "mechanism": "Fully human anti-CD40 monoclonal antibody; blocks CD40-CD40L interaction, inhibiting Tfh-B cell costimulation and germinal center formation without depleting B cells",
-          "category": "Investigational - Anti-CD40 / T-B Costimulation Blocker",
-          "approval": "Phase 2 in SS (TWINSS trial). Phase 2 in SLE and kidney transplantation."
+        "ra": {
+          "target": "JAK1",
+          "mechanism": "Oral selective JAK1 inhibitor with 30-fold selectivity over JAK2; blocks IL-6, type I/II IFN, and common gamma chain cytokine signaling",
+          "category": "tsDMARD - JAK Inhibitor",
+          "approval": "Approved in EU/Japan 2020 (RA). Not FDA approved (pending). JAK1 selectivity profile."
         }
       },
-      "disease_coverage": 2.9,
-      "target_centrality": 2.9,
-      "pathway_breadth": 5.0,
-      "mechanistic_transferability": 4.0,
-      "novelty": 7.6,
-      "composite_score": 3.93,
+      "disease_coverage": 1.4,
+      "target_centrality": 7.1,
+      "pathway_breadth": 2.5,
+      "mechanistic_transferability": 2.5,
+      "novelty": 8.8,
+      "composite_score": 3.97,
       "tier": "Tier 4 \u2014 Disease-Specific"
     },
     {
@@ -7321,24 +8511,24 @@
       "tier": "Tier 4 \u2014 Disease-Specific"
     },
     {
-      "drug_id": "filgotinib",
-      "drug_name": "Filgotinib (Jyseleca)",
+      "drug_id": "anifrolumab",
+      "drug_name": "Anifrolumab (Saphnelo)",
       "disease_count": 1,
       "diseases": [
-        "ra"
+        "sle"
       ],
       "targets": [
-        "JAK1"
+        "IFNAR1"
       ],
       "categories": [
-        "tsDMARD - JAK Inhibitor"
+        "Biologic - IFN Pathway"
       ],
       "per_disease": {
-        "ra": {
-          "target": "JAK1",
-          "mechanism": "Oral selective JAK1 inhibitor with 30-fold selectivity over JAK2; blocks IL-6, type I/II IFN, and common gamma chain cytokine signaling",
-          "category": "tsDMARD - JAK Inhibitor",
-          "approval": "Approved in EU/Japan 2020 (RA). Not FDA approved (pending). JAK1 selectivity profile."
+        "sle": {
+          "target": "IFNAR1",
+          "mechanism": "Blocks type I interferon receptor, suppressing the IFN gene signature",
+          "category": "Biologic - IFN Pathway",
+          "approval": "FDA approved 2021 (moderate to severe SLE)"
         }
       },
       "disease_coverage": 1.4,
@@ -7531,24 +8721,24 @@
       "tier": "Tier 4 \u2014 Disease-Specific"
     },
     {
-      "drug_id": "anifrolumab",
-      "drug_name": "Anifrolumab (Saphnelo)",
+      "drug_id": "acalabrutinib",
+      "drug_name": "Acalabrutinib (Calquence)",
       "disease_count": 1,
       "diseases": [
         "sle"
       ],
       "targets": [
-        "IFNAR1"
+        "BTK"
       ],
       "categories": [
-        "Biologic - IFN Pathway"
+        "Targeted Synthetic - BTK Inhibitor"
       ],
       "per_disease": {
         "sle": {
-          "target": "IFNAR1",
-          "mechanism": "Blocks type I interferon receptor, suppressing the IFN gene signature",
-          "category": "Biologic - IFN Pathway",
-          "approval": "FDA approved 2021 (moderate to severe SLE)"
+          "target": "BTK",
+          "mechanism": "Highly selective, irreversible second-generation BTK inhibitor with reduced off-target kinase inhibition vs ibrutinib",
+          "category": "Targeted Synthetic - BTK Inhibitor",
+          "approval": "FDA approved 2017 (CLL), 2019 (MCL)"
         }
       },
       "disease_coverage": 1.4,
@@ -7781,93 +8971,6 @@
           "mechanism": "Oral corticosteroid with high first-pass hepatic metabolism (~90%); high topical glucocorticoid potency on intestinal mucosa with minimal systemic bioavailability. Enteric-coated formulations target i",
           "category": "Corticosteroid - Gut-Targeted (CD)",
           "approval": "FDA approved (CD - Entocort; UC - Uceris/MMX). First-line corticosteroid for mild-moderate ileocecal CD. Superior safety profile to prednisone. Not effective for severe or colonic CD."
-        }
-      },
-      "disease_coverage": 1.4,
-      "target_centrality": 1.4,
-      "pathway_breadth": 2.5,
-      "mechanistic_transferability": 2.5,
-      "novelty": 8.8,
-      "composite_score": 2.54,
-      "tier": "Tier 4 \u2014 Disease-Specific"
-    },
-    {
-      "drug_id": "ocrelizumab",
-      "drug_name": "Ocrelizumab (Ocrevus)",
-      "disease_count": 1,
-      "diseases": [
-        "ms"
-      ],
-      "targets": [
-        "CD20"
-      ],
-      "categories": [
-        "DMT - B Cell Depletion (Anti-CD20)"
-      ],
-      "per_disease": {
-        "ms": {
-          "target": "CD20",
-          "mechanism": "Humanized anti-CD20 monoclonal antibody; depletes CD20+ B cells via ADCC and CDC. B cell depletion reduces antigen presentation to T cells, pro-inflammatory cytokine production, and autoantibody secre",
-          "category": "DMT - B Cell Depletion (Anti-CD20)",
-          "approval": "FDA approved 2017 (RMS and PPMS). First and only therapy approved for primary progressive MS."
-        }
-      },
-      "disease_coverage": 1.4,
-      "target_centrality": 1.4,
-      "pathway_breadth": 2.5,
-      "mechanistic_transferability": 2.5,
-      "novelty": 8.8,
-      "composite_score": 2.54,
-      "tier": "Tier 4 \u2014 Disease-Specific"
-    },
-    {
-      "drug_id": "ofatumumab",
-      "drug_name": "Ofatumumab (Kesimpta)",
-      "disease_count": 1,
-      "diseases": [
-        "ms"
-      ],
-      "targets": [
-        "CD20"
-      ],
-      "categories": [
-        "DMT - B Cell Depletion (Anti-CD20)"
-      ],
-      "per_disease": {
-        "ms": {
-          "target": "CD20",
-          "mechanism": "Fully human anti-CD20 monoclonal antibody binding a distinct epitope from rituximab/ocrelizumab; depletes B cells via CDC and ADCC. Subcutaneous self-administration at home.",
-          "category": "DMT - B Cell Depletion (Anti-CD20)",
-          "approval": "FDA approved 2020 (RMS). First self-administered B cell therapy for MS."
-        }
-      },
-      "disease_coverage": 1.4,
-      "target_centrality": 1.4,
-      "pathway_breadth": 2.5,
-      "mechanistic_transferability": 2.5,
-      "novelty": 8.8,
-      "composite_score": 2.54,
-      "tier": "Tier 4 \u2014 Disease-Specific"
-    },
-    {
-      "drug_id": "ublituximab",
-      "drug_name": "Ublituximab (Briumvi)",
-      "disease_count": 1,
-      "diseases": [
-        "ms"
-      ],
-      "targets": [
-        "CD20"
-      ],
-      "categories": [
-        "DMT - B Cell Depletion (Anti-CD20)"
-      ],
-      "per_disease": {
-        "ms": {
-          "target": "CD20",
-          "mechanism": "Glycoengineered chimeric anti-CD20 monoclonal antibody with enhanced ADCC; designed for rapid B cell depletion with shorter infusion times than rituximab",
-          "category": "DMT - B Cell Depletion (Anti-CD20)",
-          "approval": "FDA approved 2022 (RMS). First glycoengineered anti-CD20 for MS."
         }
       },
       "disease_coverage": 1.4,
@@ -8488,64 +9591,6 @@
       "tier": "Tier 4 \u2014 Disease-Specific"
     },
     {
-      "drug_id": "obinutuzumab",
-      "drug_name": "Obinutuzumab (Gazyva)",
-      "disease_count": 1,
-      "diseases": [
-        "sle"
-      ],
-      "targets": [
-        "CD20"
-      ],
-      "categories": [
-        "Biologic - B Cell Depletion (Next-Gen)"
-      ],
-      "per_disease": {
-        "sle": {
-          "target": "CD20",
-          "mechanism": "Type II anti-CD20 antibody with enhanced B cell depletion vs rituximab",
-          "category": "Biologic - B Cell Depletion (Next-Gen)",
-          "approval": "Phase 3 in lupus nephritis (REGENCY trial, positive results 2024)"
-        }
-      },
-      "disease_coverage": 1.4,
-      "target_centrality": 1.4,
-      "pathway_breadth": 2.5,
-      "mechanistic_transferability": 2.5,
-      "novelty": 8.8,
-      "composite_score": 2.54,
-      "tier": "Tier 4 \u2014 Disease-Specific"
-    },
-    {
-      "drug_id": "acalabrutinib",
-      "drug_name": "Acalabrutinib (Calquence)",
-      "disease_count": 1,
-      "diseases": [
-        "sle"
-      ],
-      "targets": [
-        "BTK"
-      ],
-      "categories": [
-        "Targeted Synthetic - BTK Inhibitor"
-      ],
-      "per_disease": {
-        "sle": {
-          "target": "BTK",
-          "mechanism": "Highly selective, irreversible second-generation BTK inhibitor with reduced off-target kinase inhibition vs ibrutinib",
-          "category": "Targeted Synthetic - BTK Inhibitor",
-          "approval": "FDA approved 2017 (CLL), 2019 (MCL)"
-        }
-      },
-      "disease_coverage": 1.4,
-      "target_centrality": 1.4,
-      "pathway_breadth": 2.5,
-      "mechanistic_transferability": 2.5,
-      "novelty": 8.8,
-      "composite_score": 2.54,
-      "tier": "Tier 4 \u2014 Disease-Specific"
-    },
-    {
       "drug_id": "avacopan",
       "drug_name": "Avacopan (Tavneos)",
       "disease_count": 1,
@@ -8767,35 +9812,6 @@
           "mechanism": "Autologous T cells engineered with anti-CD19 chimeric antigen receptor (CAR) that deplete CD19+ B cells including autoreactive clones and plasmablasts. Potential for deep B cell reset and drug-free re",
           "category": "Cellular Therapy - CAR-T Cell",
           "approval": "Investigational for SLE; compassionate use cases reported (Erlangen protocol)"
-        }
-      },
-      "disease_coverage": 1.4,
-      "target_centrality": 1.4,
-      "pathway_breadth": 2.5,
-      "mechanistic_transferability": 2.5,
-      "novelty": 8.8,
-      "composite_score": 2.54,
-      "tier": "Tier 4 \u2014 Disease-Specific"
-    },
-    {
-      "drug_id": "rituximab_ss",
-      "drug_name": "Rituximab (Rituxan)",
-      "disease_count": 1,
-      "diseases": [
-        "ss"
-      ],
-      "targets": [
-        "CD20"
-      ],
-      "categories": [
-        "Biologic - B Cell Depletion (Anti-CD20)"
-      ],
-      "per_disease": {
-        "ss": {
-          "target": "CD20",
-          "mechanism": "Depletes CD20+ B cells via ADCC, CDC, and apoptosis. Reduces B cell-driven inflammation, germinal center formation, and autoantibody production in salivary glands.",
-          "category": "Biologic - B Cell Depletion (Anti-CD20)",
-          "approval": "Off-label for severe SS (not FDA-approved for SS). RCTs show mixed results for primary endpoints but consistent benefit in secondary outcomes and systemic disease."
         }
       },
       "disease_coverage": 1.4,
@@ -9679,6 +10695,141 @@
   ],
   "cross_disease_repurposing": [
     {
+      "source_disease": "ibd",
+      "source_disease_name": "Inflammatory Bowel Disease",
+      "target_disease": "t1d",
+      "target_disease_name": "Type 1 Diabetes",
+      "drug_id": "risankizumab",
+      "drug_name": "Risankizumab (Skyrizi)",
+      "drug_target": "IL-23 p19 Subunit (IL23A)",
+      "matched_genes": [
+        "IL2",
+        "IL23A"
+      ],
+      "already_used_in_target": false,
+      "confidence": 10.0
+    },
+    {
+      "source_disease": "ibd",
+      "source_disease_name": "Inflammatory Bowel Disease",
+      "target_disease": "t1d",
+      "target_disease_name": "Type 1 Diabetes",
+      "drug_id": "mirikizumab",
+      "drug_name": "Mirikizumab (Omvoh)",
+      "drug_target": "IL-23 p19 Subunit (IL23A)",
+      "matched_genes": [
+        "IL2",
+        "IL23A"
+      ],
+      "already_used_in_target": false,
+      "confidence": 10.0
+    },
+    {
+      "source_disease": "ms",
+      "source_disease_name": "Multiple Sclerosis",
+      "target_disease": "ibd",
+      "target_disease_name": "Inflammatory Bowel Disease",
+      "drug_id": "ponesimod",
+      "drug_name": "Ponesimod (Ponvory)",
+      "drug_target": "S1PR1",
+      "matched_genes": [
+        "S1PR1/S1PR4/S1PR5",
+        "S1PR1/S1PR5"
+      ],
+      "already_used_in_target": false,
+      "confidence": 10.0
+    },
+    {
+      "source_disease": "ms",
+      "source_disease_name": "Multiple Sclerosis",
+      "target_disease": "t1d",
+      "target_disease_name": "Type 1 Diabetes",
+      "drug_id": "ocrelizumab",
+      "drug_name": "Ocrelizumab (Ocrevus)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD2",
+        "CD20"
+      ],
+      "already_used_in_target": false,
+      "confidence": 10.0
+    },
+    {
+      "source_disease": "ms",
+      "source_disease_name": "Multiple Sclerosis",
+      "target_disease": "t1d",
+      "target_disease_name": "Type 1 Diabetes",
+      "drug_id": "ofatumumab",
+      "drug_name": "Ofatumumab (Kesimpta)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD2",
+        "CD20"
+      ],
+      "already_used_in_target": false,
+      "confidence": 10.0
+    },
+    {
+      "source_disease": "ms",
+      "source_disease_name": "Multiple Sclerosis",
+      "target_disease": "t1d",
+      "target_disease_name": "Type 1 Diabetes",
+      "drug_id": "ublituximab",
+      "drug_name": "Ublituximab (Briumvi)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD2",
+        "CD20"
+      ],
+      "already_used_in_target": false,
+      "confidence": 10.0
+    },
+    {
+      "source_disease": "ra",
+      "source_disease_name": "Rheumatoid Arthritis",
+      "target_disease": "ibd",
+      "target_disease_name": "Inflammatory Bowel Disease",
+      "drug_id": "baricitinib",
+      "drug_name": "Baricitinib (Olumiant)",
+      "drug_target": "JAK1/JAK2",
+      "matched_genes": [
+        "JAK2",
+        "JAK1"
+      ],
+      "already_used_in_target": false,
+      "confidence": 10.0
+    },
+    {
+      "source_disease": "ra",
+      "source_disease_name": "Rheumatoid Arthritis",
+      "target_disease": "ibd",
+      "target_disease_name": "Inflammatory Bowel Disease",
+      "drug_id": "filgotinib",
+      "drug_name": "Filgotinib (Jyseleca)",
+      "drug_target": "JAK1",
+      "matched_genes": [
+        "JAK1",
+        "JAK1/JAK3"
+      ],
+      "already_used_in_target": false,
+      "confidence": 10.0
+    },
+    {
+      "source_disease": "sle",
+      "source_disease_name": "Systemic Lupus Erythematosus",
+      "target_disease": "ibd",
+      "target_disease_name": "Inflammatory Bowel Disease",
+      "drug_id": "baricitinib",
+      "drug_name": "Baricitinib (Olumiant)",
+      "drug_target": "JAK1/JAK2",
+      "matched_genes": [
+        "JAK2",
+        "JAK1"
+      ],
+      "already_used_in_target": false,
+      "confidence": 10.0
+    },
+    {
       "source_disease": "sle",
       "source_disease_name": "Systemic Lupus Erythematosus",
       "target_disease": "ms",
@@ -9704,6 +10855,36 @@
       "matched_genes": [
         "CD40",
         "CD4"
+      ],
+      "already_used_in_target": false,
+      "confidence": 10.0
+    },
+    {
+      "source_disease": "sle",
+      "source_disease_name": "Systemic Lupus Erythematosus",
+      "target_disease": "t1d",
+      "target_disease_name": "Type 1 Diabetes",
+      "drug_id": "obinutuzumab",
+      "drug_name": "Obinutuzumab (Gazyva)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD2",
+        "CD20"
+      ],
+      "already_used_in_target": false,
+      "confidence": 10.0
+    },
+    {
+      "source_disease": "ss",
+      "source_disease_name": "Sj\u00f6gren's Syndrome",
+      "target_disease": "ibd",
+      "target_disease_name": "Inflammatory Bowel Disease",
+      "drug_id": "baricitinib",
+      "drug_name": "Baricitinib (Olumiant)",
+      "drug_target": "JAK1/JAK2",
+      "matched_genes": [
+        "JAK2",
+        "JAK1"
       ],
       "already_used_in_target": false,
       "confidence": 10.0
@@ -9739,6 +10920,35 @@
       "confidence": 10.0
     },
     {
+      "source_disease": "ss",
+      "source_disease_name": "Sj\u00f6gren's Syndrome",
+      "target_disease": "t1d",
+      "target_disease_name": "Type 1 Diabetes",
+      "drug_id": "rituximab_ss",
+      "drug_name": "Rituximab (Rituxan)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD2",
+        "CD20"
+      ],
+      "already_used_in_target": false,
+      "confidence": 10.0
+    },
+    {
+      "source_disease": "ibd",
+      "source_disease_name": "Inflammatory Bowel Disease",
+      "target_disease": "ms",
+      "target_disease_name": "Multiple Sclerosis",
+      "drug_id": "vedolizumab",
+      "drug_name": "Vedolizumab (Entyvio)",
+      "drug_target": "\u03b14\u03b27 Integrin (ITGA4/ITGB7)",
+      "matched_genes": [
+        "ITGA4"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
       "source_disease": "ibd",
       "source_disease_name": "Inflammatory Bowel Disease",
       "target_disease": "ms",
@@ -9769,6 +10979,20 @@
     {
       "source_disease": "ibd",
       "source_disease_name": "Inflammatory Bowel Disease",
+      "target_disease": "ms",
+      "target_disease_name": "Multiple Sclerosis",
+      "drug_id": "etrasimod",
+      "drug_name": "Etrasimod (Velsipity)",
+      "drug_target": "S1P Receptor 1, 4, and 5 (S1PR1/S1PR4/S1PR5)",
+      "matched_genes": [
+        "S1PR1"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ibd",
+      "source_disease_name": "Inflammatory Bowel Disease",
       "target_disease": "ra",
       "target_disease_name": "Rheumatoid Arthritis",
       "drug_id": "certolizumab_pegol",
@@ -9790,6 +11014,34 @@
       "drug_target": "JAK1",
       "matched_genes": [
         "JAK1"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ibd",
+      "source_disease_name": "Inflammatory Bowel Disease",
+      "target_disease": "ssc",
+      "target_disease_name": "Systemic Sclerosis (Scleroderma)",
+      "drug_id": "azathioprine",
+      "drug_name": "Azathioprine (Imuran/Azasan)",
+      "drug_target": "Purine Metabolism / DNA Synthesis",
+      "matched_genes": [
+        "DNA"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ibd",
+      "source_disease_name": "Inflammatory Bowel Disease",
+      "target_disease": "ssc",
+      "target_disease_name": "Systemic Sclerosis (Scleroderma)",
+      "drug_id": "6_mercaptopurine",
+      "drug_name": "6-Mercaptopurine (Purinethol)",
+      "drug_target": "Purine Metabolism / DNA Synthesis",
+      "matched_genes": [
+        "DNA"
       ],
       "already_used_in_target": false,
       "confidence": 7.0
@@ -9841,34 +11093,6 @@
       "source_disease_name": "Inflammatory Bowel Disease",
       "target_disease": "t1d",
       "target_disease_name": "Type 1 Diabetes",
-      "drug_id": "risankizumab",
-      "drug_name": "Risankizumab (Skyrizi)",
-      "drug_target": "IL-23 p19 Subunit (IL23A)",
-      "matched_genes": [
-        "IL2"
-      ],
-      "already_used_in_target": false,
-      "confidence": 7.0
-    },
-    {
-      "source_disease": "ibd",
-      "source_disease_name": "Inflammatory Bowel Disease",
-      "target_disease": "t1d",
-      "target_disease_name": "Type 1 Diabetes",
-      "drug_id": "mirikizumab",
-      "drug_name": "Mirikizumab (Omvoh)",
-      "drug_target": "IL-23 p19 Subunit (IL23A)",
-      "matched_genes": [
-        "IL2"
-      ],
-      "already_used_in_target": false,
-      "confidence": 7.0
-    },
-    {
-      "source_disease": "ibd",
-      "source_disease_name": "Inflammatory Bowel Disease",
-      "target_disease": "t1d",
-      "target_disease_name": "Type 1 Diabetes",
       "drug_id": "tofacitinib",
       "drug_name": "Tofacitinib (Xeljanz)",
       "drug_target": "JAK1/JAK3",
@@ -9888,6 +11112,62 @@
       "drug_target": "JAK1",
       "matched_genes": [
         "JAK1"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ms",
+      "source_disease_name": "Multiple Sclerosis",
+      "target_disease": "ra",
+      "target_disease_name": "Rheumatoid Arthritis",
+      "drug_id": "ocrelizumab",
+      "drug_name": "Ocrelizumab (Ocrevus)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD20"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ms",
+      "source_disease_name": "Multiple Sclerosis",
+      "target_disease": "ra",
+      "target_disease_name": "Rheumatoid Arthritis",
+      "drug_id": "ofatumumab",
+      "drug_name": "Ofatumumab (Kesimpta)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD20"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ms",
+      "source_disease_name": "Multiple Sclerosis",
+      "target_disease": "ra",
+      "target_disease_name": "Rheumatoid Arthritis",
+      "drug_id": "ublituximab",
+      "drug_name": "Ublituximab (Briumvi)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD20"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ms",
+      "source_disease_name": "Multiple Sclerosis",
+      "target_disease": "ra",
+      "target_disease_name": "Rheumatoid Arthritis",
+      "drug_id": "teriflunomide",
+      "drug_name": "Teriflunomide (Aubagio)",
+      "drug_target": "DHODH (Dihydroorotate Dehydrogenase)",
+      "matched_genes": [
+        "DHODH"
       ],
       "already_used_in_target": false,
       "confidence": 7.0
@@ -9981,6 +11261,76 @@
       "source_disease_name": "Multiple Sclerosis",
       "target_disease": "ss",
       "target_disease_name": "Sj\u00f6gren's Syndrome",
+      "drug_id": "ocrelizumab",
+      "drug_name": "Ocrelizumab (Ocrevus)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD20"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ms",
+      "source_disease_name": "Multiple Sclerosis",
+      "target_disease": "ss",
+      "target_disease_name": "Sj\u00f6gren's Syndrome",
+      "drug_id": "ofatumumab",
+      "drug_name": "Ofatumumab (Kesimpta)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD20"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ms",
+      "source_disease_name": "Multiple Sclerosis",
+      "target_disease": "ss",
+      "target_disease_name": "Sj\u00f6gren's Syndrome",
+      "drug_id": "ublituximab",
+      "drug_name": "Ublituximab (Briumvi)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD20"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ms",
+      "source_disease_name": "Multiple Sclerosis",
+      "target_disease": "ss",
+      "target_disease_name": "Sj\u00f6gren's Syndrome",
+      "drug_id": "rituximab",
+      "drug_name": "Rituximab (Rituxan)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD20"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ms",
+      "source_disease_name": "Multiple Sclerosis",
+      "target_disease": "ss",
+      "target_disease_name": "Sj\u00f6gren's Syndrome",
+      "drug_id": "teriflunomide",
+      "drug_name": "Teriflunomide (Aubagio)",
+      "drug_target": "DHODH (Dihydroorotate Dehydrogenase)",
+      "matched_genes": [
+        "DHODH"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ms",
+      "source_disease_name": "Multiple Sclerosis",
+      "target_disease": "ss",
+      "target_disease_name": "Sj\u00f6gren's Syndrome",
       "drug_id": "interferon_beta",
       "drug_name": "Interferon Beta-1a / Beta-1b (Avonex, Rebif, Betaseron, Plegridy)",
       "drug_target": "IFNAR1 / IFNAR2",
@@ -9991,15 +11341,127 @@
       "confidence": 7.0
     },
     {
+      "source_disease": "ms",
+      "source_disease_name": "Multiple Sclerosis",
+      "target_disease": "ssc",
+      "target_disease_name": "Systemic Sclerosis (Scleroderma)",
+      "drug_id": "ocrelizumab",
+      "drug_name": "Ocrelizumab (Ocrevus)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD20"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ms",
+      "source_disease_name": "Multiple Sclerosis",
+      "target_disease": "ssc",
+      "target_disease_name": "Systemic Sclerosis (Scleroderma)",
+      "drug_id": "ofatumumab",
+      "drug_name": "Ofatumumab (Kesimpta)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD20"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ms",
+      "source_disease_name": "Multiple Sclerosis",
+      "target_disease": "ssc",
+      "target_disease_name": "Systemic Sclerosis (Scleroderma)",
+      "drug_id": "ublituximab",
+      "drug_name": "Ublituximab (Briumvi)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD20"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ms",
+      "source_disease_name": "Multiple Sclerosis",
+      "target_disease": "ssc",
+      "target_disease_name": "Systemic Sclerosis (Scleroderma)",
+      "drug_id": "cladribine",
+      "drug_name": "Cladribine (Mavenclad)",
+      "drug_target": "DNA Synthesis / Adenosine Deaminase",
+      "matched_genes": [
+        "DNA"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ms",
+      "source_disease_name": "Multiple Sclerosis",
+      "target_disease": "ssc",
+      "target_disease_name": "Systemic Sclerosis (Scleroderma)",
+      "drug_id": "mitoxantrone",
+      "drug_name": "Mitoxantrone (Novantrone)",
+      "drug_target": "Topoisomerase II / DNA Intercalation",
+      "matched_genes": [
+        "DNA"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
       "source_disease": "ra",
       "source_disease_name": "Rheumatoid Arthritis",
       "target_disease": "ibd",
       "target_disease_name": "Inflammatory Bowel Disease",
-      "drug_id": "baricitinib",
-      "drug_name": "Baricitinib (Olumiant)",
-      "drug_target": "JAK1/JAK2",
+      "drug_id": "etanercept",
+      "drug_name": "Etanercept (Enbrel)",
+      "drug_target": "TNF-alpha / TNF-beta (lymphotoxin)",
       "matched_genes": [
-        "JAK2"
+        "TNF"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ra",
+      "source_disease_name": "Rheumatoid Arthritis",
+      "target_disease": "ibd",
+      "target_disease_name": "Inflammatory Bowel Disease",
+      "drug_id": "certolizumab",
+      "drug_name": "Certolizumab Pegol (Cimzia)",
+      "drug_target": "TNF-alpha",
+      "matched_genes": [
+        "TNF"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ra",
+      "source_disease_name": "Rheumatoid Arthritis",
+      "target_disease": "ibd",
+      "target_disease_name": "Inflammatory Bowel Disease",
+      "drug_id": "denosumab",
+      "drug_name": "Denosumab (Prolia/Xgeva)",
+      "drug_target": "RANKL (TNFSF11)",
+      "matched_genes": [
+        "TNF"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ra",
+      "source_disease_name": "Rheumatoid Arthritis",
+      "target_disease": "ibd",
+      "target_disease_name": "Inflammatory Bowel Disease",
+      "drug_id": "ozoralizumab",
+      "drug_name": "Ozoralizumab (Nanozora)",
+      "drug_target": "TNF-alpha / Human Serum Albumin",
+      "matched_genes": [
+        "TNF"
       ],
       "already_used_in_target": false,
       "confidence": 7.0
@@ -10065,6 +11527,20 @@
       "source_disease_name": "Rheumatoid Arthritis",
       "target_disease": "ms",
       "target_disease_name": "Multiple Sclerosis",
+      "drug_id": "leflunomide",
+      "drug_name": "Leflunomide (Arava)",
+      "drug_target": "DHODH (Dihydroorotate Dehydrogenase)",
+      "matched_genes": [
+        "DHODH"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ra",
+      "source_disease_name": "Rheumatoid Arthritis",
+      "target_disease": "ms",
+      "target_disease_name": "Multiple Sclerosis",
       "drug_id": "filgotinib",
       "drug_name": "Filgotinib (Jyseleca)",
       "drug_target": "JAK1",
@@ -10105,6 +11581,20 @@
     {
       "source_disease": "ra",
       "source_disease_name": "Rheumatoid Arthritis",
+      "target_disease": "ss",
+      "target_disease_name": "Sj\u00f6gren's Syndrome",
+      "drug_id": "rituximab",
+      "drug_name": "Rituximab (Rituxan)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD20"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ra",
+      "source_disease_name": "Rheumatoid Arthritis",
       "target_disease": "ssc",
       "target_disease_name": "Systemic Sclerosis (Scleroderma)",
       "drug_id": "hydroxychloroquine",
@@ -10112,6 +11602,20 @@
       "drug_target": "TLR7/TLR9 endosomal signaling",
       "matched_genes": [
         "TLR7"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ra",
+      "source_disease_name": "Rheumatoid Arthritis",
+      "target_disease": "ssc",
+      "target_disease_name": "Systemic Sclerosis (Scleroderma)",
+      "drug_id": "azathioprine",
+      "drug_name": "Azathioprine (Imuran)",
+      "drug_target": "Purine Metabolism / DNA Synthesis",
+      "matched_genes": [
+        "DNA"
       ],
       "already_used_in_target": false,
       "confidence": 7.0
@@ -10261,11 +11765,11 @@
       "source_disease_name": "Systemic Lupus Erythematosus",
       "target_disease": "ibd",
       "target_disease_name": "Inflammatory Bowel Disease",
-      "drug_id": "baricitinib",
-      "drug_name": "Baricitinib (Olumiant)",
-      "drug_target": "JAK1/JAK2",
+      "drug_id": "deucravacitinib",
+      "drug_name": "Deucravacitinib (Sotyktu)",
+      "drug_target": "TYK2",
       "matched_genes": [
-        "JAK2"
+        "TYK2"
       ],
       "already_used_in_target": false,
       "confidence": 7.0
@@ -10275,11 +11779,25 @@
       "source_disease_name": "Systemic Lupus Erythematosus",
       "target_disease": "ibd",
       "target_disease_name": "Inflammatory Bowel Disease",
-      "drug_id": "deucravacitinib",
-      "drug_name": "Deucravacitinib (Sotyktu)",
-      "drug_target": "TYK2",
+      "drug_id": "teclistamab",
+      "drug_name": "Teclistamab (Tecvayli / BCMAxCD3 Bispecific)",
+      "drug_target": "BCMA (TNFRSF17) on plasma cells / CD3 on T cells",
       "matched_genes": [
-        "TYK2"
+        "TNF"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "sle",
+      "source_disease_name": "Systemic Lupus Erythematosus",
+      "target_disease": "ms",
+      "target_disease_name": "Multiple Sclerosis",
+      "drug_id": "anifrolumab",
+      "drug_name": "Anifrolumab (Saphnelo)",
+      "drug_target": "IFNAR1",
+      "matched_genes": [
+        "IFNAR1"
       ],
       "already_used_in_target": false,
       "confidence": 7.0
@@ -10294,6 +11812,34 @@
       "drug_target": "JAK1/JAK2",
       "matched_genes": [
         "JAK1"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "sle",
+      "source_disease_name": "Systemic Lupus Erythematosus",
+      "target_disease": "ms",
+      "target_disease_name": "Multiple Sclerosis",
+      "drug_id": "obinutuzumab",
+      "drug_name": "Obinutuzumab (Gazyva)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD20"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "sle",
+      "source_disease_name": "Systemic Lupus Erythematosus",
+      "target_disease": "ms",
+      "target_disease_name": "Multiple Sclerosis",
+      "drug_id": "acalabrutinib",
+      "drug_name": "Acalabrutinib (Calquence)",
+      "drug_target": "BTK",
+      "matched_genes": [
+        "BTK"
       ],
       "already_used_in_target": false,
       "confidence": 7.0
@@ -10322,6 +11868,20 @@
       "drug_target": "TYK2",
       "matched_genes": [
         "TYK2"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "sle",
+      "source_disease_name": "Systemic Lupus Erythematosus",
+      "target_disease": "ra",
+      "target_disease_name": "Rheumatoid Arthritis",
+      "drug_id": "obinutuzumab",
+      "drug_name": "Obinutuzumab (Gazyva)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD20"
       ],
       "already_used_in_target": false,
       "confidence": 7.0
@@ -10401,6 +11961,48 @@
       "source_disease_name": "Systemic Lupus Erythematosus",
       "target_disease": "ss",
       "target_disease_name": "Sj\u00f6gren's Syndrome",
+      "drug_id": "rituximab",
+      "drug_name": "Rituximab (Rituxan)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD20"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "sle",
+      "source_disease_name": "Systemic Lupus Erythematosus",
+      "target_disease": "ss",
+      "target_disease_name": "Sj\u00f6gren's Syndrome",
+      "drug_id": "obinutuzumab",
+      "drug_name": "Obinutuzumab (Gazyva)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD20"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "sle",
+      "source_disease_name": "Systemic Lupus Erythematosus",
+      "target_disease": "ss",
+      "target_disease_name": "Sj\u00f6gren's Syndrome",
+      "drug_id": "dapirolizumab_pegol",
+      "drug_name": "Dapirolizumab Pegol (Anti-CD40L Fab-PEG)",
+      "drug_target": "CD40L (CD154)",
+      "matched_genes": [
+        "CD40"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "sle",
+      "source_disease_name": "Systemic Lupus Erythematosus",
+      "target_disease": "ss",
+      "target_disease_name": "Sj\u00f6gren's Syndrome",
       "drug_id": "anti_cd19_cart",
       "drug_name": "Anti-CD19 CAR-T Cell Therapy",
       "drug_target": "CD19 on B lineage cells",
@@ -10420,6 +12022,20 @@
       "drug_target": "TLR7/TLR9 endosomal signaling",
       "matched_genes": [
         "TLR7"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "sle",
+      "source_disease_name": "Systemic Lupus Erythematosus",
+      "target_disease": "ssc",
+      "target_disease_name": "Systemic Sclerosis (Scleroderma)",
+      "drug_id": "obinutuzumab",
+      "drug_name": "Obinutuzumab (Gazyva)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD20"
       ],
       "already_used_in_target": false,
       "confidence": 7.0
@@ -10499,11 +12115,25 @@
       "source_disease_name": "Sj\u00f6gren's Syndrome",
       "target_disease": "ibd",
       "target_disease_name": "Inflammatory Bowel Disease",
-      "drug_id": "baricitinib",
-      "drug_name": "Baricitinib (Olumiant)",
-      "drug_target": "JAK1/JAK2",
+      "drug_id": "belimumab",
+      "drug_name": "Belimumab (Benlysta)",
+      "drug_target": "BAFF (BLyS / TNFSF13B)",
       "matched_genes": [
-        "JAK2"
+        "TNF"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ss",
+      "source_disease_name": "Sj\u00f6gren's Syndrome",
+      "target_disease": "ibd",
+      "target_disease_name": "Inflammatory Bowel Disease",
+      "drug_id": "ianalumab",
+      "drug_name": "Ianalumab (VAY736)",
+      "drug_target": "BAFF Receptor (BAFF-R / TNFRSF13C)",
+      "matched_genes": [
+        "TNF"
       ],
       "already_used_in_target": false,
       "confidence": 7.0
@@ -10527,11 +12157,39 @@
       "source_disease_name": "Sj\u00f6gren's Syndrome",
       "target_disease": "ms",
       "target_disease_name": "Multiple Sclerosis",
+      "drug_id": "rituximab_ss",
+      "drug_name": "Rituximab (Rituxan)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD20"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ss",
+      "source_disease_name": "Sj\u00f6gren's Syndrome",
+      "target_disease": "ms",
+      "target_disease_name": "Multiple Sclerosis",
       "drug_id": "abatacept",
       "drug_name": "Abatacept (Orencia)",
       "drug_target": "CD80 / CD86 (B7.1/B7.2)",
       "matched_genes": [
         "CD86"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ss",
+      "source_disease_name": "Sj\u00f6gren's Syndrome",
+      "target_disease": "ms",
+      "target_disease_name": "Multiple Sclerosis",
+      "drug_id": "leflunomide",
+      "drug_name": "Leflunomide (Arava)",
+      "drug_target": "DHODH (Dihydroorotate Dehydrogenase)",
+      "matched_genes": [
+        "DHODH"
       ],
       "already_used_in_target": false,
       "confidence": 7.0
@@ -10574,6 +12232,20 @@
       "drug_target": "TYK2",
       "matched_genes": [
         "TYK2"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ss",
+      "source_disease_name": "Sj\u00f6gren's Syndrome",
+      "target_disease": "ra",
+      "target_disease_name": "Rheumatoid Arthritis",
+      "drug_id": "rituximab_ss",
+      "drug_name": "Rituximab (Rituxan)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD20"
       ],
       "already_used_in_target": false,
       "confidence": 7.0
@@ -10695,6 +12367,34 @@
       "source_disease_name": "Sj\u00f6gren's Syndrome",
       "target_disease": "ssc",
       "target_disease_name": "Systemic Sclerosis (Scleroderma)",
+      "drug_id": "rituximab_ss",
+      "drug_name": "Rituximab (Rituxan)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD20"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ss",
+      "source_disease_name": "Sj\u00f6gren's Syndrome",
+      "target_disease": "ssc",
+      "target_disease_name": "Systemic Sclerosis (Scleroderma)",
+      "drug_id": "ianalumab",
+      "drug_name": "Ianalumab (VAY736)",
+      "drug_target": "BAFF Receptor (BAFF-R / TNFRSF13C)",
+      "matched_genes": [
+        "BAFF"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ss",
+      "source_disease_name": "Sj\u00f6gren's Syndrome",
+      "target_disease": "ssc",
+      "target_disease_name": "Systemic Sclerosis (Scleroderma)",
       "drug_id": "deucravacitinib",
       "drug_name": "Deucravacitinib (Sotyktu)",
       "drug_target": "TYK2",
@@ -10777,6 +12477,20 @@
     {
       "source_disease": "ssc",
       "source_disease_name": "Systemic Sclerosis (Scleroderma)",
+      "target_disease": "ibd",
+      "target_disease_name": "Inflammatory Bowel Disease",
+      "drug_id": "belimumab",
+      "drug_name": "Belimumab (Benlysta)",
+      "drug_target": "BAFF (B Cell Activating Factor / BLyS / TNFSF13B)",
+      "matched_genes": [
+        "TNF"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ssc",
+      "source_disease_name": "Systemic Sclerosis (Scleroderma)",
       "target_disease": "ra",
       "target_disease_name": "Rheumatoid Arthritis",
       "drug_id": "belimumab",
@@ -10784,6 +12498,20 @@
       "drug_target": "BAFF (B Cell Activating Factor / BLyS / TNFSF13B)",
       "matched_genes": [
         "TNF"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ssc",
+      "source_disease_name": "Systemic Sclerosis (Scleroderma)",
+      "target_disease": "ss",
+      "target_disease_name": "Sj\u00f6gren's Syndrome",
+      "drug_id": "rituximab",
+      "drug_name": "Rituximab (Rituxan)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD20"
       ],
       "already_used_in_target": false,
       "confidence": 7.0
@@ -10831,6 +12559,80 @@
       "confidence": 7.0
     },
     {
+      "source_disease": "t1d",
+      "source_disease_name": "Type 1 Diabetes",
+      "target_disease": "ss",
+      "target_disease_name": "Sj\u00f6gren's Syndrome",
+      "drug_id": "rituximab",
+      "drug_name": "Rituximab (Rituxan)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD20"
+      ],
+      "already_used_in_target": false,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ibd",
+      "source_disease_name": "Inflammatory Bowel Disease",
+      "target_disease": "ra",
+      "target_disease_name": "Rheumatoid Arthritis",
+      "drug_id": "tofacitinib",
+      "drug_name": "Tofacitinib (Xeljanz)",
+      "drug_target": "JAK1/JAK3",
+      "matched_genes": [
+        "JAK1",
+        "JAK3"
+      ],
+      "already_used_in_target": true,
+      "confidence": 10.0
+    },
+    {
+      "source_disease": "ms",
+      "source_disease_name": "Multiple Sclerosis",
+      "target_disease": "t1d",
+      "target_disease_name": "Type 1 Diabetes",
+      "drug_id": "rituximab",
+      "drug_name": "Rituximab (Rituxan)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD2",
+        "CD20"
+      ],
+      "already_used_in_target": true,
+      "confidence": 10.0
+    },
+    {
+      "source_disease": "ra",
+      "source_disease_name": "Rheumatoid Arthritis",
+      "target_disease": "ibd",
+      "target_disease_name": "Inflammatory Bowel Disease",
+      "drug_id": "tofacitinib",
+      "drug_name": "Tofacitinib (Xeljanz)",
+      "drug_target": "JAK1/JAK3",
+      "matched_genes": [
+        "JAK1",
+        "JAK1/JAK3"
+      ],
+      "already_used_in_target": true,
+      "confidence": 10.0
+    },
+    {
+      "source_disease": "ra",
+      "source_disease_name": "Rheumatoid Arthritis",
+      "target_disease": "ibd",
+      "target_disease_name": "Inflammatory Bowel Disease",
+      "drug_id": "upadacitinib",
+      "drug_name": "Upadacitinib (Rinvoq)",
+      "drug_target": "JAK1",
+      "matched_genes": [
+        "JAK1",
+        "JAK1/JAK3"
+      ],
+      "already_used_in_target": true,
+      "confidence": 10.0
+    },
+    {
       "source_disease": "ra",
       "source_disease_name": "Rheumatoid Arthritis",
       "target_disease": "sle",
@@ -10850,12 +12652,117 @@
       "source_disease_name": "Rheumatoid Arthritis",
       "target_disease": "ss",
       "target_disease_name": "Sj\u00f6gren's Syndrome",
+      "drug_id": "abatacept",
+      "drug_name": "Abatacept (Orencia)",
+      "drug_target": "CD80/CD86 (B7.1/B7.2)",
+      "matched_genes": [
+        "CD80",
+        "CD86"
+      ],
+      "already_used_in_target": true,
+      "confidence": 10.0
+    },
+    {
+      "source_disease": "ra",
+      "source_disease_name": "Rheumatoid Arthritis",
+      "target_disease": "ss",
+      "target_disease_name": "Sj\u00f6gren's Syndrome",
       "drug_id": "hydroxychloroquine",
       "drug_name": "Hydroxychloroquine (Plaquenil)",
       "drug_target": "TLR7/TLR9 endosomal signaling",
       "matched_genes": [
         "TLR7",
         "TLR9"
+      ],
+      "already_used_in_target": true,
+      "confidence": 10.0
+    },
+    {
+      "source_disease": "ra",
+      "source_disease_name": "Rheumatoid Arthritis",
+      "target_disease": "t1d",
+      "target_disease_name": "Type 1 Diabetes",
+      "drug_id": "rituximab",
+      "drug_name": "Rituximab (Rituxan)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD2",
+        "CD20"
+      ],
+      "already_used_in_target": true,
+      "confidence": 10.0
+    },
+    {
+      "source_disease": "ra",
+      "source_disease_name": "Rheumatoid Arthritis",
+      "target_disease": "t1d",
+      "target_disease_name": "Type 1 Diabetes",
+      "drug_id": "abatacept",
+      "drug_name": "Abatacept (Orencia)",
+      "drug_target": "CD80/CD86 (B7.1/B7.2)",
+      "matched_genes": [
+        "CD80",
+        "CD86"
+      ],
+      "already_used_in_target": true,
+      "confidence": 10.0
+    },
+    {
+      "source_disease": "sle",
+      "source_disease_name": "Systemic Lupus Erythematosus",
+      "target_disease": "ibd",
+      "target_disease_name": "Inflammatory Bowel Disease",
+      "drug_id": "tofacitinib",
+      "drug_name": "Tofacitinib (Xeljanz)",
+      "drug_target": "JAK1/JAK3",
+      "matched_genes": [
+        "JAK1",
+        "JAK1/JAK3"
+      ],
+      "already_used_in_target": true,
+      "confidence": 10.0
+    },
+    {
+      "source_disease": "sle",
+      "source_disease_name": "Systemic Lupus Erythematosus",
+      "target_disease": "ra",
+      "target_disease_name": "Rheumatoid Arthritis",
+      "drug_id": "hydroxychloroquine",
+      "drug_name": "Hydroxychloroquine (Plaquenil)",
+      "drug_target": "TLR7/TLR9 endosomal signaling",
+      "matched_genes": [
+        "TLR7",
+        "TLR9"
+      ],
+      "already_used_in_target": true,
+      "confidence": 10.0
+    },
+    {
+      "source_disease": "sle",
+      "source_disease_name": "Systemic Lupus Erythematosus",
+      "target_disease": "ra",
+      "target_disease_name": "Rheumatoid Arthritis",
+      "drug_id": "baricitinib",
+      "drug_name": "Baricitinib (Olumiant)",
+      "drug_target": "JAK1/JAK2",
+      "matched_genes": [
+        "JAK1",
+        "JAK2"
+      ],
+      "already_used_in_target": true,
+      "confidence": 10.0
+    },
+    {
+      "source_disease": "sle",
+      "source_disease_name": "Systemic Lupus Erythematosus",
+      "target_disease": "ra",
+      "target_disease_name": "Rheumatoid Arthritis",
+      "drug_id": "tofacitinib",
+      "drug_name": "Tofacitinib (Xeljanz)",
+      "drug_target": "JAK1/JAK3",
+      "matched_genes": [
+        "JAK1",
+        "JAK3"
       ],
       "already_used_in_target": true,
       "confidence": 10.0
@@ -10876,6 +12783,111 @@
       "confidence": 10.0
     },
     {
+      "source_disease": "sle",
+      "source_disease_name": "Systemic Lupus Erythematosus",
+      "target_disease": "ss",
+      "target_disease_name": "Sj\u00f6gren's Syndrome",
+      "drug_id": "iscalimab",
+      "drug_name": "Iscalimab (CFZ533 / anti-CD40)",
+      "drug_target": "CD40",
+      "matched_genes": [
+        "CD40LG",
+        "CD40"
+      ],
+      "already_used_in_target": true,
+      "confidence": 10.0
+    },
+    {
+      "source_disease": "sle",
+      "source_disease_name": "Systemic Lupus Erythematosus",
+      "target_disease": "t1d",
+      "target_disease_name": "Type 1 Diabetes",
+      "drug_id": "rituximab",
+      "drug_name": "Rituximab (Rituxan)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD2",
+        "CD20"
+      ],
+      "already_used_in_target": true,
+      "confidence": 10.0
+    },
+    {
+      "source_disease": "ss",
+      "source_disease_name": "Sj\u00f6gren's Syndrome",
+      "target_disease": "ibd",
+      "target_disease_name": "Inflammatory Bowel Disease",
+      "drug_id": "tofacitinib",
+      "drug_name": "Tofacitinib (Xeljanz)",
+      "drug_target": "JAK1/JAK3",
+      "matched_genes": [
+        "JAK1",
+        "JAK1/JAK3"
+      ],
+      "already_used_in_target": true,
+      "confidence": 10.0
+    },
+    {
+      "source_disease": "ss",
+      "source_disease_name": "Sj\u00f6gren's Syndrome",
+      "target_disease": "ra",
+      "target_disease_name": "Rheumatoid Arthritis",
+      "drug_id": "hydroxychloroquine",
+      "drug_name": "Hydroxychloroquine (Plaquenil)",
+      "drug_target": "TLR7 / TLR9",
+      "matched_genes": [
+        "TLR7",
+        "TLR9"
+      ],
+      "already_used_in_target": true,
+      "confidence": 10.0
+    },
+    {
+      "source_disease": "ss",
+      "source_disease_name": "Sj\u00f6gren's Syndrome",
+      "target_disease": "ra",
+      "target_disease_name": "Rheumatoid Arthritis",
+      "drug_id": "abatacept",
+      "drug_name": "Abatacept (Orencia)",
+      "drug_target": "CD80 / CD86 (B7.1/B7.2)",
+      "matched_genes": [
+        "CD80",
+        "CD86"
+      ],
+      "already_used_in_target": true,
+      "confidence": 10.0
+    },
+    {
+      "source_disease": "ss",
+      "source_disease_name": "Sj\u00f6gren's Syndrome",
+      "target_disease": "ra",
+      "target_disease_name": "Rheumatoid Arthritis",
+      "drug_id": "baricitinib",
+      "drug_name": "Baricitinib (Olumiant)",
+      "drug_target": "JAK1/JAK2",
+      "matched_genes": [
+        "JAK1",
+        "JAK2"
+      ],
+      "already_used_in_target": true,
+      "confidence": 10.0
+    },
+    {
+      "source_disease": "ss",
+      "source_disease_name": "Sj\u00f6gren's Syndrome",
+      "target_disease": "ra",
+      "target_disease_name": "Rheumatoid Arthritis",
+      "drug_id": "tofacitinib",
+      "drug_name": "Tofacitinib (Xeljanz)",
+      "drug_target": "JAK1/JAK3",
+      "matched_genes": [
+        "JAK1",
+        "JAK3"
+      ],
+      "already_used_in_target": true,
+      "confidence": 10.0
+    },
+    {
       "source_disease": "ss",
       "source_disease_name": "Sj\u00f6gren's Syndrome",
       "target_disease": "sle",
@@ -10889,6 +12901,94 @@
       ],
       "already_used_in_target": true,
       "confidence": 10.0
+    },
+    {
+      "source_disease": "ss",
+      "source_disease_name": "Sj\u00f6gren's Syndrome",
+      "target_disease": "t1d",
+      "target_disease_name": "Type 1 Diabetes",
+      "drug_id": "abatacept",
+      "drug_name": "Abatacept (Orencia)",
+      "drug_target": "CD80 / CD86 (B7.1/B7.2)",
+      "matched_genes": [
+        "CD80",
+        "CD86"
+      ],
+      "already_used_in_target": true,
+      "confidence": 10.0
+    },
+    {
+      "source_disease": "ssc",
+      "source_disease_name": "Systemic Sclerosis (Scleroderma)",
+      "target_disease": "t1d",
+      "target_disease_name": "Type 1 Diabetes",
+      "drug_id": "rituximab",
+      "drug_name": "Rituximab (Rituxan)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD2",
+        "CD20"
+      ],
+      "already_used_in_target": true,
+      "confidence": 10.0
+    },
+    {
+      "source_disease": "t1d",
+      "source_disease_name": "Type 1 Diabetes",
+      "target_disease": "ra",
+      "target_disease_name": "Rheumatoid Arthritis",
+      "drug_id": "abatacept",
+      "drug_name": "Abatacept (Orencia)",
+      "drug_target": "CD80/CD86 (B7.1/B7.2)",
+      "matched_genes": [
+        "CD80",
+        "CD86"
+      ],
+      "already_used_in_target": true,
+      "confidence": 10.0
+    },
+    {
+      "source_disease": "t1d",
+      "source_disease_name": "Type 1 Diabetes",
+      "target_disease": "ss",
+      "target_disease_name": "Sj\u00f6gren's Syndrome",
+      "drug_id": "abatacept",
+      "drug_name": "Abatacept (Orencia)",
+      "drug_target": "CD80/CD86 (B7.1/B7.2)",
+      "matched_genes": [
+        "CD80",
+        "CD86"
+      ],
+      "already_used_in_target": true,
+      "confidence": 10.0
+    },
+    {
+      "source_disease": "ibd",
+      "source_disease_name": "Inflammatory Bowel Disease",
+      "target_disease": "ms",
+      "target_disease_name": "Multiple Sclerosis",
+      "drug_id": "ozanimod",
+      "drug_name": "Ozanimod (Zeposia)",
+      "drug_target": "S1P Receptor 1 and 5 (S1PR1/S1PR5)",
+      "matched_genes": [
+        "S1PR1"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ibd",
+      "source_disease_name": "Inflammatory Bowel Disease",
+      "target_disease": "ms",
+      "target_disease_name": "Multiple Sclerosis",
+      "drug_id": "natalizumab",
+      "drug_name": "Natalizumab (Tysabri)",
+      "drug_target": "\u03b14 Integrin (ITGA4)",
+      "matched_genes": [
+        "ITGA4"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
     },
     {
       "source_disease": "ibd",
@@ -10935,6 +13035,34 @@
     {
       "source_disease": "ibd",
       "source_disease_name": "Inflammatory Bowel Disease",
+      "target_disease": "ra",
+      "target_disease_name": "Rheumatoid Arthritis",
+      "drug_id": "upadacitinib",
+      "drug_name": "Upadacitinib (Rinvoq)",
+      "drug_target": "JAK1",
+      "matched_genes": [
+        "JAK1"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ibd",
+      "source_disease_name": "Inflammatory Bowel Disease",
+      "target_disease": "ra",
+      "target_disease_name": "Rheumatoid Arthritis",
+      "drug_id": "methotrexate",
+      "drug_name": "Methotrexate (Rheumatrex/Trexall/Otrexup)",
+      "drug_target": "DHFR / AICAR Transformylase",
+      "matched_genes": [
+        "DHFR"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ibd",
+      "source_disease_name": "Inflammatory Bowel Disease",
       "target_disease": "sle",
       "target_disease_name": "Systemic Lupus Erythematosus",
       "drug_id": "tofacitinib",
@@ -10942,6 +13070,20 @@
       "drug_target": "JAK1/JAK3",
       "matched_genes": [
         "JAK1"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ibd",
+      "source_disease_name": "Inflammatory Bowel Disease",
+      "target_disease": "ssc",
+      "target_disease_name": "Systemic Sclerosis (Scleroderma)",
+      "drug_id": "methotrexate",
+      "drug_name": "Methotrexate (Rheumatrex/Trexall/Otrexup)",
+      "drug_target": "DHFR / AICAR Transformylase",
+      "matched_genes": [
+        "DHFR"
       ],
       "already_used_in_target": true,
       "confidence": 7.0
@@ -10961,10 +13103,122 @@
       "confidence": 7.0
     },
     {
+      "source_disease": "ibd",
+      "source_disease_name": "Inflammatory Bowel Disease",
+      "target_disease": "t1d",
+      "target_disease_name": "Type 1 Diabetes",
+      "drug_id": "ustekinumab",
+      "drug_name": "Ustekinumab (Stelara)",
+      "drug_target": "IL-12/IL-23 p40 Subunit (IL12B)",
+      "matched_genes": [
+        "IL12B"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ms",
+      "source_disease_name": "Multiple Sclerosis",
+      "target_disease": "ra",
+      "target_disease_name": "Rheumatoid Arthritis",
+      "drug_id": "rituximab",
+      "drug_name": "Rituximab (Rituxan)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD20"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
       "source_disease": "ms",
       "source_disease_name": "Multiple Sclerosis",
       "target_disease": "sle",
       "target_disease_name": "Systemic Lupus Erythematosus",
+      "drug_id": "rituximab",
+      "drug_name": "Rituximab (Rituxan)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD20"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ms",
+      "source_disease_name": "Multiple Sclerosis",
+      "target_disease": "ssc",
+      "target_disease_name": "Systemic Sclerosis (Scleroderma)",
+      "drug_id": "rituximab",
+      "drug_name": "Rituximab (Rituxan)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD20"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ra",
+      "source_disease_name": "Rheumatoid Arthritis",
+      "target_disease": "ibd",
+      "target_disease_name": "Inflammatory Bowel Disease",
+      "drug_id": "methotrexate",
+      "drug_name": "Methotrexate (Rheumatrex/Trexall)",
+      "drug_target": "DHFR / AICAR Transformylase",
+      "matched_genes": [
+        "DHFR"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ra",
+      "source_disease_name": "Rheumatoid Arthritis",
+      "target_disease": "ibd",
+      "target_disease_name": "Inflammatory Bowel Disease",
+      "drug_id": "adalimumab",
+      "drug_name": "Adalimumab (Humira)",
+      "drug_target": "TNF-alpha",
+      "matched_genes": [
+        "TNF"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ra",
+      "source_disease_name": "Rheumatoid Arthritis",
+      "target_disease": "ibd",
+      "target_disease_name": "Inflammatory Bowel Disease",
+      "drug_id": "infliximab",
+      "drug_name": "Infliximab (Remicade)",
+      "drug_target": "TNF-alpha",
+      "matched_genes": [
+        "TNF"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ra",
+      "source_disease_name": "Rheumatoid Arthritis",
+      "target_disease": "ibd",
+      "target_disease_name": "Inflammatory Bowel Disease",
+      "drug_id": "golimumab",
+      "drug_name": "Golimumab (Simponi)",
+      "drug_target": "TNF-alpha",
+      "matched_genes": [
+        "TNF"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ra",
+      "source_disease_name": "Rheumatoid Arthritis",
+      "target_disease": "ms",
+      "target_disease_name": "Multiple Sclerosis",
       "drug_id": "rituximab",
       "drug_name": "Rituximab (Rituxan)",
       "drug_target": "CD20",
@@ -11033,6 +13287,76 @@
     {
       "source_disease": "ra",
       "source_disease_name": "Rheumatoid Arthritis",
+      "target_disease": "ss",
+      "target_disease_name": "Sj\u00f6gren's Syndrome",
+      "drug_id": "leflunomide",
+      "drug_name": "Leflunomide (Arava)",
+      "drug_target": "DHODH (Dihydroorotate Dehydrogenase)",
+      "matched_genes": [
+        "DHODH"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ra",
+      "source_disease_name": "Rheumatoid Arthritis",
+      "target_disease": "ss",
+      "target_disease_name": "Sj\u00f6gren's Syndrome",
+      "drug_id": "mycophenolate",
+      "drug_name": "Mycophenolate Mofetil (CellCept)",
+      "drug_target": "IMPDH (Inosine Monophosphate Dehydrogenase)",
+      "matched_genes": [
+        "IMPDH"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ra",
+      "source_disease_name": "Rheumatoid Arthritis",
+      "target_disease": "ssc",
+      "target_disease_name": "Systemic Sclerosis (Scleroderma)",
+      "drug_id": "methotrexate",
+      "drug_name": "Methotrexate (Rheumatrex/Trexall)",
+      "drug_target": "DHFR / AICAR Transformylase",
+      "matched_genes": [
+        "DHFR"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ra",
+      "source_disease_name": "Rheumatoid Arthritis",
+      "target_disease": "ssc",
+      "target_disease_name": "Systemic Sclerosis (Scleroderma)",
+      "drug_id": "rituximab",
+      "drug_name": "Rituximab (Rituxan)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD20"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ra",
+      "source_disease_name": "Rheumatoid Arthritis",
+      "target_disease": "ssc",
+      "target_disease_name": "Systemic Sclerosis (Scleroderma)",
+      "drug_id": "mycophenolate",
+      "drug_name": "Mycophenolate Mofetil (CellCept)",
+      "drug_target": "IMPDH (Inosine Monophosphate Dehydrogenase)",
+      "matched_genes": [
+        "IMPDH"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ra",
+      "source_disease_name": "Rheumatoid Arthritis",
       "target_disease": "t1d",
       "target_disease_name": "Type 1 Diabetes",
       "drug_id": "golimumab",
@@ -11040,6 +13364,48 @@
       "drug_target": "TNF-alpha",
       "matched_genes": [
         "TNF"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "sle",
+      "source_disease_name": "Systemic Lupus Erythematosus",
+      "target_disease": "ms",
+      "target_disease_name": "Multiple Sclerosis",
+      "drug_id": "rituximab",
+      "drug_name": "Rituximab (Rituxan)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD20"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "sle",
+      "source_disease_name": "Systemic Lupus Erythematosus",
+      "target_disease": "ra",
+      "target_disease_name": "Rheumatoid Arthritis",
+      "drug_id": "mycophenolate",
+      "drug_name": "Mycophenolate Mofetil (CellCept)",
+      "drug_target": "IMPDH (Inosine Monophosphate Dehydrogenase)",
+      "matched_genes": [
+        "IMPDH"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "sle",
+      "source_disease_name": "Systemic Lupus Erythematosus",
+      "target_disease": "ra",
+      "target_disease_name": "Rheumatoid Arthritis",
+      "drug_id": "rituximab",
+      "drug_name": "Rituximab (Rituxan)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD20"
       ],
       "already_used_in_target": true,
       "confidence": 7.0
@@ -11063,11 +13429,11 @@
       "source_disease_name": "Systemic Lupus Erythematosus",
       "target_disease": "ss",
       "target_disease_name": "Sj\u00f6gren's Syndrome",
-      "drug_id": "iscalimab",
-      "drug_name": "Iscalimab (CFZ533 / anti-CD40)",
-      "drug_target": "CD40",
+      "drug_id": "mycophenolate",
+      "drug_name": "Mycophenolate Mofetil (CellCept)",
+      "drug_target": "IMPDH (Inosine Monophosphate Dehydrogenase)",
       "matched_genes": [
-        "CD40LG"
+        "IMPDH"
       ],
       "already_used_in_target": true,
       "confidence": 7.0
@@ -11082,6 +13448,90 @@
       "drug_target": "TYK2",
       "matched_genes": [
         "TYK2"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "sle",
+      "source_disease_name": "Systemic Lupus Erythematosus",
+      "target_disease": "ssc",
+      "target_disease_name": "Systemic Sclerosis (Scleroderma)",
+      "drug_id": "belimumab",
+      "drug_name": "Belimumab (Benlysta)",
+      "drug_target": "BAFF (BLyS)",
+      "matched_genes": [
+        "BAFF"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "sle",
+      "source_disease_name": "Systemic Lupus Erythematosus",
+      "target_disease": "ssc",
+      "target_disease_name": "Systemic Sclerosis (Scleroderma)",
+      "drug_id": "mycophenolate",
+      "drug_name": "Mycophenolate Mofetil (CellCept)",
+      "drug_target": "IMPDH (Inosine Monophosphate Dehydrogenase)",
+      "matched_genes": [
+        "IMPDH"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "sle",
+      "source_disease_name": "Systemic Lupus Erythematosus",
+      "target_disease": "ssc",
+      "target_disease_name": "Systemic Sclerosis (Scleroderma)",
+      "drug_id": "cyclophosphamide",
+      "drug_name": "Cyclophosphamide (Cytoxan)",
+      "drug_target": "DNA crosslinking (alkylating agent)",
+      "matched_genes": [
+        "DNA"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "sle",
+      "source_disease_name": "Systemic Lupus Erythematosus",
+      "target_disease": "ssc",
+      "target_disease_name": "Systemic Sclerosis (Scleroderma)",
+      "drug_id": "rituximab",
+      "drug_name": "Rituximab (Rituxan)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD20"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ss",
+      "source_disease_name": "Sj\u00f6gren's Syndrome",
+      "target_disease": "ra",
+      "target_disease_name": "Rheumatoid Arthritis",
+      "drug_id": "leflunomide",
+      "drug_name": "Leflunomide (Arava)",
+      "drug_target": "DHODH (Dihydroorotate Dehydrogenase)",
+      "matched_genes": [
+        "DHODH"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ss",
+      "source_disease_name": "Sj\u00f6gren's Syndrome",
+      "target_disease": "ra",
+      "target_disease_name": "Rheumatoid Arthritis",
+      "drug_id": "mycophenolate",
+      "drug_name": "Mycophenolate Mofetil (CellCept)",
+      "drug_target": "IMPDH (Inosine Monophosphate Dehydrogenase)",
+      "matched_genes": [
+        "IMPDH"
       ],
       "already_used_in_target": true,
       "confidence": 7.0
@@ -11157,6 +13607,104 @@
       "confidence": 7.0
     },
     {
+      "source_disease": "ss",
+      "source_disease_name": "Sj\u00f6gren's Syndrome",
+      "target_disease": "ssc",
+      "target_disease_name": "Systemic Sclerosis (Scleroderma)",
+      "drug_id": "belimumab",
+      "drug_name": "Belimumab (Benlysta)",
+      "drug_target": "BAFF (BLyS / TNFSF13B)",
+      "matched_genes": [
+        "BAFF"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ss",
+      "source_disease_name": "Sj\u00f6gren's Syndrome",
+      "target_disease": "ssc",
+      "target_disease_name": "Systemic Sclerosis (Scleroderma)",
+      "drug_id": "mycophenolate",
+      "drug_name": "Mycophenolate Mofetil (CellCept)",
+      "drug_target": "IMPDH (Inosine Monophosphate Dehydrogenase)",
+      "matched_genes": [
+        "IMPDH"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ssc",
+      "source_disease_name": "Systemic Sclerosis (Scleroderma)",
+      "target_disease": "ibd",
+      "target_disease_name": "Inflammatory Bowel Disease",
+      "drug_id": "methotrexate",
+      "drug_name": "Methotrexate (Rheumatrex/Trexall)",
+      "drug_target": "DHFR / AICAR Transformylase",
+      "matched_genes": [
+        "DHFR"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ssc",
+      "source_disease_name": "Systemic Sclerosis (Scleroderma)",
+      "target_disease": "ms",
+      "target_disease_name": "Multiple Sclerosis",
+      "drug_id": "rituximab",
+      "drug_name": "Rituximab (Rituxan)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD20"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ssc",
+      "source_disease_name": "Systemic Sclerosis (Scleroderma)",
+      "target_disease": "ra",
+      "target_disease_name": "Rheumatoid Arthritis",
+      "drug_id": "mycophenolate",
+      "drug_name": "Mycophenolate Mofetil (CellCept)",
+      "drug_target": "IMPDH (Inosine Monophosphate Dehydrogenase)",
+      "matched_genes": [
+        "IMPDH"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ssc",
+      "source_disease_name": "Systemic Sclerosis (Scleroderma)",
+      "target_disease": "ra",
+      "target_disease_name": "Rheumatoid Arthritis",
+      "drug_id": "rituximab",
+      "drug_name": "Rituximab (Rituxan)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD20"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ssc",
+      "source_disease_name": "Systemic Sclerosis (Scleroderma)",
+      "target_disease": "ra",
+      "target_disease_name": "Rheumatoid Arthritis",
+      "drug_id": "methotrexate",
+      "drug_name": "Methotrexate (Rheumatrex/Trexall)",
+      "drug_target": "DHFR / AICAR Transformylase",
+      "matched_genes": [
+        "DHFR"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
       "source_disease": "ssc",
       "source_disease_name": "Systemic Sclerosis (Scleroderma)",
       "target_disease": "sle",
@@ -11203,11 +13751,39 @@
       "source_disease_name": "Systemic Sclerosis (Scleroderma)",
       "target_disease": "ss",
       "target_disease_name": "Sj\u00f6gren's Syndrome",
+      "drug_id": "mycophenolate",
+      "drug_name": "Mycophenolate Mofetil (CellCept)",
+      "drug_target": "IMPDH (Inosine Monophosphate Dehydrogenase)",
+      "matched_genes": [
+        "IMPDH"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "ssc",
+      "source_disease_name": "Systemic Sclerosis (Scleroderma)",
+      "target_disease": "ss",
+      "target_disease_name": "Sj\u00f6gren's Syndrome",
       "drug_id": "belimumab",
       "drug_name": "Belimumab (Benlysta)",
       "drug_target": "BAFF (B Cell Activating Factor / BLyS / TNFSF13B)",
       "matched_genes": [
         "BAFF"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "t1d",
+      "source_disease_name": "Type 1 Diabetes",
+      "target_disease": "ibd",
+      "target_disease_name": "Inflammatory Bowel Disease",
+      "drug_id": "golimumab",
+      "drug_name": "Golimumab (Simponi)",
+      "drug_target": "TNF-alpha",
+      "matched_genes": [
+        "TNF"
       ],
       "already_used_in_target": true,
       "confidence": 7.0
@@ -11229,6 +13805,20 @@
     {
       "source_disease": "t1d",
       "source_disease_name": "Type 1 Diabetes",
+      "target_disease": "ms",
+      "target_disease_name": "Multiple Sclerosis",
+      "drug_id": "rituximab",
+      "drug_name": "Rituximab (Rituxan)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD20"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "t1d",
+      "source_disease_name": "Type 1 Diabetes",
       "target_disease": "ra",
       "target_disease_name": "Rheumatoid Arthritis",
       "drug_id": "golimumab",
@@ -11243,8 +13833,36 @@
     {
       "source_disease": "t1d",
       "source_disease_name": "Type 1 Diabetes",
+      "target_disease": "ra",
+      "target_disease_name": "Rheumatoid Arthritis",
+      "drug_id": "rituximab",
+      "drug_name": "Rituximab (Rituxan)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD20"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "t1d",
+      "source_disease_name": "Type 1 Diabetes",
       "target_disease": "sle",
       "target_disease_name": "Systemic Lupus Erythematosus",
+      "drug_id": "rituximab",
+      "drug_name": "Rituximab (Rituxan)",
+      "drug_target": "CD20",
+      "matched_genes": [
+        "CD20"
+      ],
+      "already_used_in_target": true,
+      "confidence": 7.0
+    },
+    {
+      "source_disease": "t1d",
+      "source_disease_name": "Type 1 Diabetes",
+      "target_disease": "ssc",
+      "target_disease_name": "Systemic Sclerosis (Scleroderma)",
       "drug_id": "rituximab",
       "drug_name": "Rituximab (Rituxan)",
       "drug_target": "CD20",

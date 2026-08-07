@@ -2,9 +2,26 @@
 
 from __future__ import annotations
 
+import json
 from enum import Enum
+from pathlib import Path
+from typing import Any
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, ConfigDict, Field, ValidationError
+
+from med_research.exceptions import MissingDataError, SchemaValidationError
+
+
+class _LosslessModel(BaseModel):
+    """Base model that keeps unknown keys on ``model_dump()``.
+
+    Disease modules legitimately carry disease-specific fields (e.g.
+    ``ibd_evidence``, ``ms_evidence``) that the shared schema does not
+    enumerate. Preserving extra keys on round-trip means validation never
+    silently drops curated data.
+    """
+
+    model_config = ConfigDict(extra="allow")
 
 
 class RelationshipType(str, Enum):
@@ -16,7 +33,7 @@ class RelationshipType(str, Enum):
     TREATS = "TREATS"
 
 
-class Gene(BaseModel):
+class Gene(_LosslessModel):
     id: str
     name: str
     chromosome: str
@@ -33,7 +50,7 @@ class GenesFile(BaseModel):
     genes: list[Gene]
 
 
-class Drug(BaseModel):
+class Drug(_LosslessModel):
     id: str
     name: str
     type: str
@@ -52,7 +69,7 @@ class DrugsFile(BaseModel):
     drugs: list[Drug]
 
 
-class Pathway(BaseModel):
+class Pathway(_LosslessModel):
     id: str
     name: str
     description: str
@@ -65,7 +82,7 @@ class PathwaysFile(BaseModel):
     pathways: list[Pathway]
 
 
-class Relationship(BaseModel):
+class Relationship(_LosslessModel):
     source: str
     target: str
     type: RelationshipType
@@ -76,10 +93,10 @@ class RelationshipsFile(BaseModel):
     relationships: list[Relationship]
 
 
-class DiseaseProfile(BaseModel):
+class DiseaseProfile(_LosslessModel):
     id: str
     name: str
-    description: str
+    description: str = ""
     prevalence: str = ""
     female_to_male_ratio: str = ""
     peak_onset: str = ""
@@ -89,24 +106,76 @@ class DiseaseProfile(BaseModel):
     kg_node_id: str = ""
 
 
-def validate_and_load(path, model_class):
+class DrugAdverseProfile(_LosslessModel):
+    """Per-drug adverse-event profile; fields vary by disease curation."""
+
+    drug_id: str = ""
+
+
+class AdverseEventsFile(_LosslessModel):
+    """Disease-local adverse-event profile contract (``adverse_events.json``)."""
+
+    schema_version: str = "1"
+    disease_id: str
+    source: str = ""
+    profiles: list[DrugAdverseProfile] = Field(default_factory=list)
+
+
+# ── Validated file loading ───────────────────────────────────────────────
+
+
+KG_FILE_MODELS: dict[str, type[BaseModel]] = {
+    "genes.json": GenesFile,
+    "drugs.json": DrugsFile,
+    "pathways.json": PathwaysFile,
+    "relationships.json": RelationshipsFile,
+    "profile.json": DiseaseProfile,
+}
+
+
+def load_validated_json(path, model_class) -> dict[str, Any]:
     """Load a JSON file and validate it against a Pydantic model.
 
-    Returns the model instance on success, or a dict with an error key on failure.
+    Returns the validated JSON payload as a plain dict so existing
+    dict-based callers keep receiving the same shape they do today.
+
+    Raises:
+        MissingDataError: when the file does not exist.
+        SchemaValidationError: when the file is not valid JSON or its
+            content does not match the model schema.
     """
-    import json
-
-    from med_research.logging_config import get_logger
-
-    logger = get_logger(__name__)
+    path = Path(path)
+    try:
+        text = path.read_text(encoding="utf-8")
+    except FileNotFoundError as exc:
+        error = MissingDataError(f"Data file not found: {path}")
+        error.filename = str(path)
+        raise error from exc
 
     try:
-        with open(path, "r", encoding="utf-8") as f:
-            data = json.load(f)
-        return model_class.model_validate(data)
-    except FileNotFoundError:
-        logger.warning("Data file not found: %s", path)
-        return None
-    except Exception as e:
-        logger.warning("Validation failed for %s: %s", path, e)
+        data = json.loads(text)
+    except json.JSONDecodeError as exc:
+        raise SchemaValidationError(
+            f"Invalid JSON in {path}: {exc}"
+        ) from exc
+
+    try:
+        model_class.model_validate(data)
+    except ValidationError as exc:
+        raise SchemaValidationError(
+            f"Schema validation failed for {path}: {exc}"
+        ) from exc
+    return data
+
+
+def validate_and_load(path, model_class):
+    """Lenient variant of :func:`load_validated_json`.
+
+    Returns the validated payload dict, or ``None`` when the file is
+    missing or fails validation (legacy compatibility; new code should
+    prefer the strict :func:`load_validated_json`).
+    """
+    try:
+        return load_validated_json(path, model_class)
+    except (MissingDataError, SchemaValidationError):
         return None

@@ -297,6 +297,128 @@
         "PMID:22936677"
       ],
       "category": "Th17 / IL-23 Pathway"
+    },
+    {
+      "id": "Calcineurin",
+      "name": "Calcineurin (PPP3CA / Protein Phosphatase 3)",
+      "chromosome": "4q24",
+      "function": "Calcium/calmodulin-dependent serine/threonine phosphatase; dephosphorylates NFAT enabling T cell activation",
+      "odds_ratio": null,
+      "references": [
+        "PMID:33911854",
+        "PMID:25607700"
+      ],
+      "category": "T Cell Signaling",
+      "disease_evidence": "Target of voclosporin and tacrolimus for lupus nephritis; also stabilizes podocyte actin cytoskeleton in kidney."
+    },
+    {
+      "id": "DHFR",
+      "name": "DHFR",
+      "chromosome": "n/a",
+      "function": "Methotrexate inhibits dihydrofolate reductase and AICAR transformylase, leading to adenosine accumulation with anti-inflammatory effects",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
+    },
+    {
+      "id": "Glucocorticoid Receptor (NR3C1)",
+      "name": "Glucocorticoid Receptor (NR3C1)",
+      "chromosome": "n/a",
+      "function": "Budesonide activates the glucocorticoid receptor with high topical potency and ~90% first-pass hepatic metabolism, minimizing systemic exposure",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
+    },
+    {
+      "id": "IL12B (p40)",
+      "name": "IL12B (p40)",
+      "chromosome": "n/a",
+      "function": "Ustekinumab binds the shared p40 subunit of IL-12 and IL-23, simultaneously blocking both Th1 and Th17 pathways",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
+    },
+    {
+      "id": "IL23A (p19)",
+      "name": "IL23A (p19)",
+      "chromosome": "n/a",
+      "function": "Risankizumab selectively neutralizes the IL-23-specific p19 subunit, blocking Th17/ILC3 responses while preserving IL-12-driven Th1 immunity",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
+    },
+    {
+      "id": "ITGA4 (α4 Integrin)",
+      "name": "ITGA4 (α4 Integrin)",
+      "chromosome": "n/a",
+      "function": "Natalizumab blocks α4 integrin, preventing both α4β1-VCAM-1 (systemic) and α4β7-MAdCAM-1 (gut) lymphocyte adhesion; restricted due to PML risk",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
+    },
+    {
+      "id": "JAK1",
+      "name": "Janus Kinase 1",
+      "chromosome": "1p31.3",
+      "function": "Tyrosine kinase mediating signaling for type I/II cytokine receptors",
+      "odds_ratio": null,
+      "references": [
+        "PMID:31851711",
+        "PMID:33174738"
+      ],
+      "category": "JAK-STAT Signaling",
+      "disease_evidence": "Required for IFN-α/β, IL-6, and other proinflammatory cytokine signaling. Target of baricitinib and tofacitinib in SLE trials."
+    },
+    {
+      "id": "JAK1/JAK3",
+      "name": "JAK1/JAK3",
+      "chromosome": "n/a",
+      "function": "Tofacitinib preferentially inhibits JAK1 and JAK3, blocking signaling downstream of common gamma chain cytokines, type I IFN, and IL-6 family receptors",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
+    },
+    {
+      "id": "PPAR-gamma",
+      "name": "PPAR-gamma",
+      "chromosome": "n/a",
+      "function": "Mesalamine activates PPAR-gamma in colonic epithelial cells, inhibiting NF-κB and COX-2 pathways with topical anti-inflammatory effects",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
+    },
+    {
+      "id": "Purine Metabolism",
+      "name": "Purine Metabolism",
+      "chromosome": "n/a",
+      "function": "Azathioprine is a prodrug converted to 6-TGN, which incorporates into DNA and inhibits de novo purine synthesis in proliferating lymphocytes",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
+    },
+    {
+      "id": "S1PR1/S1PR4/S1PR5",
+      "name": "S1PR1/S1PR4/S1PR5",
+      "chromosome": "n/a",
+      "function": "Etrasimod is an S1PR1/4/5 modulator with S1PR3 sparing; prevents lymphocyte egress from lymphoid organs into the gut without bradycardia risk",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
+    },
+    {
+      "id": "S1PR1/S1PR5",
+      "name": "S1PR1/S1PR5",
+      "chromosome": "n/a",
+      "function": "Ozanimod is an S1P receptor modulator selective for S1PR1 and S1PR5; induces S1PR1 internalization, sequestering lymphocytes in lymph nodes",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
+    },
+    {
+      "id": "TNF",
+      "name": "TNF",
+      "chromosome": "n/a",
+      "function": "Infliximab binds soluble and membrane-bound TNF with high affinity, inducing apoptosis of TNF-expressing immune cells via Fc-mediated CDC and ADCC",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
+    },
+    {
+      "id": "α4β7 Integrin (ITGA4/ITGB7)",
+      "name": "α4β7 Integrin (ITGA4/ITGB7)",
+      "chromosome": "n/a",
+      "function": "Vedolizumab selectively blocks α4β7 integrin binding to MAdCAM-1 on gut endothelial cells, preventing lymphocyte homing to intestinal mucosa",
+      "disease_evidence": "Curated relationship endpoint for graph integrity.",
+      "category": "Therapeutic Target"
     }
   ]
 }

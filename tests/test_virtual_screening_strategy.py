@@ -119,10 +119,14 @@ def test_all_diseases_screen_with_ready_strategy(disease_id):
 def test_non_sle_similarity_does_not_use_shared_sle_candidates(monkeypatch):
     from med_research.pipeline.virtual_screening import screening
 
-    def fail_if_read(*args, **kwargs):
-        raise AssertionError("shared SLE candidate data was consulted")
+    original_read_text = screening.Path.read_text
 
-    monkeypatch.setattr(screening.Path, "read_text", fail_if_read)
+    def fail_if_shared_sle_candidates_read(self, *args, **kwargs):
+        if "candidates.json" in str(self):
+            raise AssertionError("shared SLE candidate data was consulted")
+        return original_read_text(self, *args, **kwargs)
+
+    monkeypatch.setattr(screening.Path, "read_text", fail_if_shared_sle_candidates_read)
     score = screening.compute_similarity_score(
         {"name": "Any compound", "category": "Unknown"},
         {"id": "IL23R"},
