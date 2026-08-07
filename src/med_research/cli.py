@@ -23,6 +23,8 @@ from med_research.diseases.base import Disease
 from med_research.logging_config import get_logger, setup_logging
 from med_research.rate_limiter import rate_limited_sleep
 
+logger = get_logger(__name__)
+
 
 def _build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
@@ -297,24 +299,24 @@ def _run_module(module_path: str, func_name: str, *args, **kwargs):
 
 def cmd_diseases(_args):
     """List all available diseases with config validation status."""
-    print("\nAvailable Diseases:")
-    print("-" * 60)
+    logger.info("\nAvailable Diseases:")
+    logger.info("-" * 60)
     issues = []
     for did, disease in Disease.discover().items():
         p = disease.profile
-        print(f"  {did:6s}  {p.name}")
-        print(f"          {p.description[:80]}...")
+        logger.info(f"  {did:6s}  {p.name}")
+        logger.info(f"          {p.description[:80]}...")
         for field, status in disease.validate().items():
             if status != "ok":
                 issues.append(f"{did}.{field}: {status}")
-        print()
+        logger.info("")
     if issues:
-        print("[WARN] Config gaps detected:")
+        logger.warning("[WARN] Config gaps detected:")
         for issue in issues:
-            print(f"  - {issue}")
-        print()
+            logger.info(f"  - {issue}")
+        logger.info("")
     else:
-        print("[OK] All disease configs complete.")
+        logger.info("[OK] All disease configs complete.")
     return 0
 
 
@@ -326,12 +328,12 @@ def cmd_modules(_args):
         "Evidence": ["workspace", "semantic", "evidence", "extractor", "monitor"],
         "Meta": ["disease", "cross-disease", "serve", "test"],
     }
-    print("\nAvailable Pipeline Modules:")
+    logger.info("\nAvailable Pipeline Modules:")
     for category, cmds in modules.items():
-        print(f"\n  {category}:")
+        logger.info(f"\n  {category}:")
         for c in cmds:
-            print(f"    {c}")
-    print()
+            logger.info(f"    {c}")
+    logger.info("")
     return 0
 
 
@@ -350,17 +352,17 @@ def cmd_disease(args):
         try:
             report = build_coverage_report(args.disease_id)
         except (ValueError, OSError, KeyError, TypeError) as exc:
-            print(f"❌ {exc}")
+            logger.error(f"❌ {exc}")
             return 1
-        print(f"\nCoverage: {report['name']} ({report['disease_id']})")
-        print(f"Fingerprint: {report['fingerprint']}")
+        logger.info(f"\nCoverage: {report['name']} ({report['disease_id']})")
+        logger.info(f"Fingerprint: {report['fingerprint']}")
         for module, coverage in report["modules"].items():
             label = coverage["level"].upper()
-            print(f"  {label:12s} {module:14s} ({coverage['status']})")
+            logger.info(f"  {label:12s} {module:14s} ({coverage['status']})")
             for item in coverage.get("missing_inputs", []):
-                print(f"      missing: {item}")
+                logger.info(f"      missing: {item}")
             for item in coverage.get("limitations", []):
-                print(f"      limit:   {item}")
+                logger.info(f"      limit:   {item}")
         if args.json_path:
             Path(args.json_path).write_text(
                 json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8"
@@ -369,14 +371,14 @@ def cmd_disease(args):
 
     if args.disease_action == "validate":
         if not args.all and not args.disease_id:
-            print("❌ disease validate needs a disease_id or --all")
+            logger.error("❌ disease validate needs a disease_id or --all")
             return 2
 
         if args.all:
             # Validate every disease module in one pass — the cheap CI check.
             diseases = Disease.discover()
             gaps: list[str] = []
-            print("\nValidating all disease modules...")
+            logger.info("\nValidating all disease modules...")
             for did in sorted(diseases):
                 disease = diseases[did]
                 try:
@@ -384,41 +386,41 @@ def cmd_disease(args):
                     name = disease.profile.name
                 except Exception as e:  # noqa: BLE001 — report, don't crash the health check
                     gaps.append(f"{did}: config load failed — {e}")
-                    print(f"  ⚠️  {did:8s} config load failed: {e}")
+                    logger.warning(f"  ⚠️  {did:8s} config load failed: {e}")
                     continue
                 bad = {f: s for f, s in checks.items() if s != "ok"}
                 mark = "✅" if not bad else "⚠️ "
-                print(f"  {mark} {did:8s} {name}")
+                logger.info(f"  {mark} {did:8s} {name}")
                 for field, status in bad.items():
                     gaps.append(f"{did}.{field}: {status}")
-                    print(f"          - {field}: {status}")
+                    logger.info(f"          - {field}: {status}")
             if gaps:
                 n_diseases = len({g.split(".", 1)[0] for g in gaps})
-                print(f"\n[WARN] Config gaps in {n_diseases} disease(s):")
+                logger.warning(f"\n[WARN] Config gaps in {n_diseases} disease(s):")
                 for issue in gaps:
-                    print(f"  - {issue}")
-                print("\n  Populate the gaps (e.g. `med-research disease refresh <id>`) or")
-                print("  scaffold them with `med-research disease add <id>`.")
+                    logger.info(f"  - {issue}")
+                logger.info("\n  Populate the gaps (e.g. `med-research disease refresh <id>`) or")
+                logger.info("  scaffold them with `med-research disease add <id>`.")
                 return 1 if args.strict else 0
-            print("\n[OK] All disease configs complete.")
+            logger.info("\n[OK] All disease configs complete.")
             return 0
 
         try:
             disease = Disease(args.disease_id)
         except ValueError as e:
-            print(f"❌ {e}")
+            logger.error(f"❌ {e}")
             return 1
-        print(f"\nValidating {disease.profile.name} ({disease.disease_id})...")
+        logger.info(f"\nValidating {disease.profile.name} ({disease.disease_id})...")
         ok = True
         for field, status in disease.validate().items():
             mark = "✅" if status == "ok" else "⚠️ "
             if status != "ok":
                 ok = False
-            print(f"  {mark} {field}: {status}")
+            logger.info(f"  {mark} {field}: {status}")
         if ok:
-            print("\n[OK] Config complete.")
+            logger.info("\n[OK] Config complete.")
         else:
-            print("\n[WARN] Fill the gaps above before running the full pipeline.")
+            logger.warning("\n[WARN] Fill the gaps above before running the full pipeline.")
             return 1 if args.strict else 0
         return 0
 
@@ -447,10 +449,10 @@ def cmd_disease(args):
                 target_dir=dry_run_dir,
             )
         except (FileExistsError, ValueError) as e:
-            print(f"❌ {e}")
+            logger.error(f"❌ {e}")
             return 1
         if args.dry_run:
-            print(
+            logger.info(
                 f"\n[dry-run] Wrote scaffold to temp dir: {dry_run_dir} — nothing added to diseases/"
             )
         print_scaffold_summary(summary)
@@ -469,7 +471,7 @@ def cmd_disease(args):
             and args.yes
             and (args.skip_gwas or args.skip_opentargets or args.skip_reactome)
         ):
-            print(
+            logger.info(
                 "\n⚠️  WARNING: --prune with --yes and skipped sources (--skip-*) — entities\n"
                 "    from skipped sources are treated as 'not reported' and will be removed.\n"
                 "    A backup is written to data/backups/ before removal.\n",
@@ -480,32 +482,32 @@ def cmd_disease(args):
         if args.prune and not args.yes and not args.dry_run:
 
             def _confirm_prune(plan: dict) -> bool:
-                print("\n" + "=" * 70)
-                print("⚠️  PRUNE PLAN — entities no longer reported by any source")
-                print("=" * 70)
-                print(f"  Disease:        {plan['name']} ({plan['disease_id']})")
-                print(f"  Genes to remove: {len(plan['genes'])}")
+                logger.info("\n" + "=" * 70)
+                logger.warning("⚠️  PRUNE PLAN — entities no longer reported by any source")
+                logger.info("=" * 70)
+                logger.info(f"  Disease:        {plan['name']} ({plan['disease_id']})")
+                logger.info(f"  Genes to remove: {len(plan['genes'])}")
                 for gid in plan["genes"][:15]:
-                    print(f"    - {gid}")
+                    logger.info(f"    - {gid}")
                 if len(plan["genes"]) > 15:
-                    print(f"    … and {len(plan['genes']) - 15} more")
-                print(f"  Drugs to remove: {len(plan['drugs'])}")
+                    logger.info(f"    … and {len(plan['genes']) - 15} more")
+                logger.info(f"  Drugs to remove: {len(plan['drugs'])}")
                 for did in plan["drugs"][:15]:
-                    print(f"    - {did}")
+                    logger.info(f"    - {did}")
                 if len(plan["drugs"]) > 15:
-                    print(f"    … and {len(plan['drugs']) - 15} more")
-                print("\n  Removed entities are backed up to data/backups/ and can be")
-                print("  restored by merging them back into genes.json / drugs.json.")
+                    logger.info(f"    … and {len(plan['drugs']) - 15} more")
+                logger.info("\n  Removed entities are backed up to data/backups/ and can be")
+                logger.info("  restored by merging them back into genes.json / drugs.json.")
                 if args.skip_gwas or args.skip_opentargets or args.skip_reactome:
-                    print("  ⚠️  You skipped sources (--skip-*): entities from those sources")
-                    print("      may be incorrectly flagged for removal.")
+                    logger.warning("  ⚠️  You skipped sources (--skip-*): entities from those sources")
+                    logger.info("      may be incorrectly flagged for removal.")
                 if args.max_genes < 60 or args.max_drugs < 60:
-                    print("  ⚠️  --max-genes/--max-drugs are below the defaults: entities")
-                    print("      beyond those limits are treated as 'not reported'.")
+                    logger.warning("  ⚠️  --max-genes/--max-drugs are below the defaults: entities")
+                    logger.info("      beyond those limits are treated as 'not reported'.")
                 try:
                     answer = input("  Proceed with prune? [y/N]: ").strip().lower()
                 except (EOFError, KeyboardInterrupt):
-                    print()
+                    logger.info("")
                     return False
                 return answer in ("y", "yes")
 
@@ -527,7 +529,7 @@ def cmd_disease(args):
                 confirm=confirm,
             )
         except (FileNotFoundError, ValueError) as e:
-            print(f"❌ {e}")
+            logger.error(f"❌ {e}")
             return 1
         print_refresh_summary(summary)
         return 0
@@ -545,7 +547,7 @@ def cmd_disease(args):
                 dry_run=args.dry_run,
             )
         except (FileNotFoundError, ValueError) as e:
-            print(f"❌ {e}")
+            logger.error(f"❌ {e}")
             return 1
         print_restore_summary(summary)
         return 0
@@ -561,7 +563,7 @@ def cmd_disease(args):
             try:
                 summary = list_backups(args.disease_id)
             except (FileNotFoundError, ValueError) as e:
-                print(f"❌ {e}")
+                logger.error(f"❌ {e}")
                 return 1
             print_backups_summary(summary)
             return 0
@@ -570,22 +572,22 @@ def cmd_disease(args):
         if not args.yes and not args.dry_run:
 
             def _confirm_purge(entries: list) -> bool:
-                print("\n" + "=" * 70)
-                print("🗑️  PURGE PLAN — deleting old pruned backups")
-                print("=" * 70)
+                logger.info("\n" + "=" * 70)
+                logger.info("🗑️  PURGE PLAN — deleting old pruned backups")
+                logger.info("=" * 70)
                 for e in entries:
-                    print(
+                    logger.info(
                         f"    - {Path(e['path']).name}  "
                         f"({e['size_bytes']:,} bytes, {len(e['genes'])} genes, "
                         f"{len(e['drugs'])} drugs)"
                     )
                 total = sum(e["size_bytes"] for e in entries)
-                print(f"\n  {len(entries)} backup(s), {total:,} bytes will be deleted.")
-                print("  The --keep newest backup(s) are retained.")
+                logger.info(f"\n  {len(entries)} backup(s), {total:,} bytes will be deleted.")
+                logger.info("  The --keep newest backup(s) are retained.")
                 try:
                     answer = input("  Proceed with purge? [y/N]: ").strip().lower()
                 except (EOFError, KeyboardInterrupt):
-                    print()
+                    logger.info("")
                     return False
                 return answer in ("y", "yes")
 
@@ -599,12 +601,12 @@ def cmd_disease(args):
                 confirm=confirm,
             )
         except (FileNotFoundError, ValueError) as e:
-            print(f"❌ {e}")
+            logger.error(f"❌ {e}")
             return 1
         print_backups_summary(summary)
         return 0
 
-    print("Usage: med-research disease {add|refresh|restore|backups|list|validate|coverage}")
+    logger.info("Usage: med-research disease {add|refresh|restore|backups|list|validate|coverage}")
     return 0
 
 
@@ -617,10 +619,10 @@ def cmd_kg(args):
     )
 
     disease = Disease(args.disease)
-    print(f"\nBuilding {disease.profile.name} Knowledge Graph...")
+    logger.info(f"\nBuilding {disease.profile.name} Knowledge Graph...")
 
     G = build_graph(args.disease)
-    print(f"Graph: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
+    logger.info(f"Graph: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
 
     if args.analyze:
         analyze_graph(G)
@@ -671,15 +673,15 @@ def cmd_bioinformatics(args):
     """Run bioinformatics pipeline (GWAS + Enrichment + PPI)."""
     exit_code = 0
     if not args.skip_gwas:
-        print("\n[GWAS] Running GWAS analysis...")
+        logger.info("\n[GWAS] Running GWAS analysis...")
         exit_code |= 1 if (_run_gwas(args) or {}).get("status") == "blocked" else 0
 
     if not args.skip_enrichment:
-        print("\n[Enrichment] Running pathway enrichment...")
+        logger.info("\n[Enrichment] Running pathway enrichment...")
         exit_code |= 1 if (_run_enrichment(args) or {}).get("status") == "blocked" else 0
 
     if not args.skip_ppi:
-        print("\n[PPI] Running PPI network analysis...")
+        logger.info("\n[PPI] Running PPI network analysis...")
         exit_code |= 1 if (_run_ppi(args) or {}).get("status") == "blocked" else 0
 
     return exit_code
@@ -693,7 +695,7 @@ def _run_gwas(args):
     disease_id = getattr(args, "disease", "sle")
     coverage = module_coverage(disease_id, "gwas", ("genes", "gwas_search_terms"))
     if not coverage.is_runnable:
-        print(f"❌ GWAS analysis blocked for {disease_id}: {', '.join(coverage.missing_inputs)}")
+        logger.error(f"❌ GWAS analysis blocked for {disease_id}: {', '.join(coverage.missing_inputs)}")
         return {"coverage": coverage.to_dict(), "status": "blocked"}
 
     from med_research.pipeline.bioinformatics.gwas import (
@@ -773,7 +775,7 @@ def _run_enrichment(args):
     from med_research.diseases.coverage import module_coverage
     coverage = module_coverage(disease_id, "enrichment", ("genes", "pathways"))
     if not coverage.is_runnable:
-        print(f"❌ Enrichment blocked for {disease_id}: {', '.join(coverage.missing_inputs)}")
+        logger.error(f"❌ Enrichment blocked for {disease_id}: {', '.join(coverage.missing_inputs)}")
         return {"coverage": coverage.to_dict(), "status": "blocked"}
     G = load_kg_graph(disease_id)
     genes = load_kg_genes(disease_id)
@@ -817,7 +819,7 @@ def _run_ppi(args):
     from med_research.diseases.coverage import module_coverage
     coverage = module_coverage(disease_id, "ppi", ("genes",))
     if not coverage.is_runnable:
-        print(f"❌ PPI analysis blocked for {disease_id}: {', '.join(coverage.missing_inputs)}")
+        logger.error(f"❌ PPI analysis blocked for {disease_id}: {', '.join(coverage.missing_inputs)}")
         return {"coverage": coverage.to_dict(), "status": "blocked"}
 
     genes = load_genes(disease_id)
@@ -831,7 +833,7 @@ def _run_ppi(args):
 
     G = build_ppi_network(gene_symbols, confidence=DEFAULT_CONFIDENCE, use_cache=not args.no_cache)
     if G.number_of_nodes() == 0:
-        print("❌ Empty PPI network. Cannot proceed.")
+        logger.error("❌ Empty PPI network. Cannot proceed.")
         return
 
     hub_scores = compute_hub_scores(G)
@@ -875,7 +877,7 @@ def cmd_literature(args):
     # print_summary reads the module-global entities_hack (set by miner.main())
     if results.get("status") == "blocked":
         coverage = results.get("coverage", {})
-        print(f"❌ Literature analysis blocked for {args.disease}: "
+        logger.error(f"❌ Literature analysis blocked for {args.disease}: "
               f"{', '.join(coverage.get('missing_inputs', [])) or 'coverage contract not satisfied'}")
         return 1
 
@@ -907,7 +909,7 @@ def cmd_screening(args):
         args.disease, "screening", ("genes", "drugs", "pathways", "screening_profile")
     )
     if not coverage.is_runnable:
-        print(f"❌ Screening blocked for {args.disease}: {', '.join(coverage.missing_inputs)}")
+        logger.error(f"❌ Screening blocked for {args.disease}: {', '.join(coverage.missing_inputs)}")
         return 1
 
     library = build_compound_library(args.disease)
@@ -921,7 +923,7 @@ def cmd_screening(args):
         disease_id=args.disease,
     )
     if results.get("status") == "blocked":
-        print(f"❌ Screening blocked for {args.disease}: {', '.join(results.get('coverage', {}).get('missing_inputs', []))}")
+        logger.error(f"❌ Screening blocked for {args.disease}: {', '.join(results.get('coverage', {}).get('missing_inputs', []))}")
         return 1
     print_summary(results)
 
@@ -964,7 +966,7 @@ def cmd_ml(args):
     G = build_graph(args.disease)
     results = train_and_predict(G, top_n=args.top)
     if "error" in results:
-        print(f"❌ {results['error']}")
+        logger.error(f"❌ {results['error']}")
         return 0
     print_summary(results)
 
@@ -1007,30 +1009,30 @@ def cmd_safety(args):
         args.disease, "safety", ("symptoms", "adverse_event_profile", "safety_risk")
     )
     if not coverage.is_runnable:
-        print(f"❌ Safety analysis blocked for {args.disease}: {', '.join(coverage.missing_inputs)}")
+        logger.error(f"❌ Safety analysis blocked for {args.disease}: {', '.join(coverage.missing_inputs)}")
         return 1
 
     results = []
     if args.drug:
         profile = get_drug_profile(args.drug, disease_id=args.disease)
         if not profile:
-            print(f"Drug '{args.drug}' not found in safety database.")
+            logger.info(f"Drug '{args.drug}' not found in safety database.")
             return 1
         results = [profile]
-        print(f"\n🛡️  Safety Profile: {profile['drug_name']}")
-        print(f"   Disease:                  {args.disease}")
-        print(f"   Composite Safety Score:   {profile.get('composite_safety_score', 'N/A')}")
-        print(f"   Disease Symptom Overlap:  {profile.get('disease_symptom_overlap_score', 'N/A')}/10")
-        print(f"   Severity Burden:           {profile.get('severity_burden_score', 'N/A')}/10")
-        print(f"   Chronic Use Safety:        {profile.get('chronic_use_safety_score', 'N/A')}/10")
-        print(f"   Disease-Specific Risk:     {profile.get('disease_specific_risk_score', 'N/A')}/10")
-        print(f"   Black Box Warnings:        {profile.get('black_box_warnings', [])}")
-        print(f"   Disease Overlap AEs:       {profile.get('disease_overlap_ae', [])}")
+        logger.info(f"\n🛡️  Safety Profile: {profile['drug_name']}")
+        logger.info(f"   Disease:                  {args.disease}")
+        logger.info(f"   Composite Safety Score:   {profile.get('composite_safety_score', 'N/A')}")
+        logger.info(f"   Disease Symptom Overlap:  {profile.get('disease_symptom_overlap_score', 'N/A')}/10")
+        logger.info(f"   Severity Burden:           {profile.get('severity_burden_score', 'N/A')}/10")
+        logger.info(f"   Chronic Use Safety:        {profile.get('chronic_use_safety_score', 'N/A')}/10")
+        logger.info(f"   Disease-Specific Risk:     {profile.get('disease_specific_risk_score', 'N/A')}/10")
+        logger.info(f"   Black Box Warnings:        {profile.get('black_box_warnings', [])}")
+        logger.info(f"   Disease Overlap AEs:       {profile.get('disease_overlap_ae', [])}")
     else:
         results = score_all_drugs(disease_id=args.disease)
         summary = get_safety_summary(disease_id=args.disease)
-        print(f"Total drugs ({args.disease}): {summary['total_drugs']}")
-        print(f"Avg safety score: {summary['avg_safety_score']:.1f}")
+        logger.info(f"Total drugs ({args.disease}): {summary['total_drugs']}")
+        logger.info(f"Avg safety score: {summary['avg_safety_score']:.1f}")
         print_analysis(results[:15])
 
     if args.export_html:
@@ -1082,7 +1084,7 @@ def cmd_cart(args):
 
     results = cart_predictor.compute_all_scores(disease_id=args.disease)
     if not results and cart_predictor.last_coverage and not cart_predictor.last_coverage.is_runnable:
-        print(f"❌ CAR-T analysis blocked for {args.disease}: {', '.join(cart_predictor.last_coverage.missing_inputs)}")
+        logger.error(f"❌ CAR-T analysis blocked for {args.disease}: {', '.join(cart_predictor.last_coverage.missing_inputs)}")
         return 1
     cart_predictor.analyze(results)
     cart_predictor.print_top_genes(results, args.top)
@@ -1142,13 +1144,13 @@ def cmd_workspace(args):
         from pathlib import Path
 
         Path(args.html_path).write_text(render_html(dossier), encoding="utf-8")
-    print(f"Evidence workspace run: {dossier.run_id}")
-    print(f"Evidence records: {len(dossier.evidence)} | Claims: {len(dossier.claims)}")
-    print(
+    logger.info(f"Evidence workspace run: {dossier.run_id}")
+    logger.info(f"Evidence records: {len(dossier.evidence)} | Claims: {len(dossier.claims)}")
+    logger.info(
         f"Drug candidates: {len(dossier.drug_rankings)} | Target candidates: {len(dossier.target_rankings)}"
     )
     for warning in dossier.warnings:
-        print(f"Warning: {warning}")
+        logger.info(f"Warning: {warning}")
     return 0
 
 
@@ -1219,15 +1221,15 @@ def cmd_monitor(args):
 
     if args.list_snapshots:
         snapshots = list_snapshots()
-        print(f"\n📂 Available snapshots ({len(snapshots)}):")
+        logger.info(f"\n📂 Available snapshots ({len(snapshots)}):")
         for p in snapshots[:20]:
-            print(f"  {p.name}")
+            logger.info(f"  {p.name}")
         return 0
 
     if args.diff or args.export_html:
         snapshots = load_latest_snapshots(2)
         if len(snapshots) < 2:
-            print("⚠️  Need at least 2 snapshots. Taking baseline + new snapshot...")
+            logger.warning("⚠️  Need at least 2 snapshots. Taking baseline + new snapshot...")
             prev = take_snapshot(sources=sources, max_per_query=args.max)
             rate_limited_sleep(2)
             curr = take_snapshot(sources=sources, max_per_query=args.max)
@@ -1478,17 +1480,17 @@ def cmd_cache(args):
 
     if args.cache_action == "stats":
         stats = cache.stats()
-        print(f"Total cached entries: {stats['total_entries']}")
+        logger.info(f"Total cached entries: {stats['total_entries']}")
         for ns, info in stats["namespaces"].items():
-            print(f"  {ns}: {info['entries']} entries, {info['size_bytes']:,} bytes")
+            logger.info(f"  {ns}: {info['entries']} entries, {info['size_bytes']:,} bytes")
     elif args.cache_action == "clear":
         n = cache.clear(namespace=getattr(args, "namespace", None))
-        print(f"Cleared {n} cache entries")
+        logger.info(f"Cleared {n} cache entries")
     elif args.cache_action == "cleanup":
         n = cache.cleanup(ttl_seconds=getattr(args, "ttl", None))
-        print(f"Removed {n} expired entries")
+        logger.info(f"Removed {n} expired entries")
     else:
-        print("Usage: med-research cache {stats|clear|cleanup}")
+        logger.info("Usage: med-research cache {stats|clear|cleanup}")
     return 0
 
 

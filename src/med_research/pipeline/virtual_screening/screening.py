@@ -831,40 +831,40 @@ def print_summary(results: dict):
 
     if results.get("status") == "blocked":
         coverage = results.get("coverage", {})
-        print(f"\n❌ Virtual screening blocked: {coverage.get('limitations', ['missing disease-specific strategy'])[0]}")
+        logger.error(f"\n❌ Virtual screening blocked: {coverage.get('limitations', ['missing disease-specific strategy'])[0]}")
         return
 
-    print("\n" + "=" * 70)
-    print("🔬 VIRTUAL DRUG SCREENING RESULTS")
-    print("=" * 70)
+    logger.info("\n" + "=" * 70)
+    logger.info("🔬 VIRTUAL DRUG SCREENING RESULTS")
+    logger.info("=" * 70)
 
-    print(f"\n  Targets screened:        {stats['targets_screened']}")
-    print(f"  Compounds screened:      {stats['compounds_screened']}")
-    print(f"  Total pairings scored:   {stats['total_pairings']}")
-    print(f"  Tier 1 candidates:       {stats['tier1_count']} (≥7.5)")
-    print(f"  Tier 2 candidates:       {stats['tier2_count']} (6.5-7.4)")
-    print(f"  AutoDock Vina:           {stats['vina_status']}")
-    print(f"  RDKit:                   {'available' if stats['rdkit_available'] else 'not available'}")
+    logger.info(f"\n  Targets screened:        {stats['targets_screened']}")
+    logger.info(f"  Compounds screened:      {stats['compounds_screened']}")
+    logger.info(f"  Total pairings scored:   {stats['total_pairings']}")
+    logger.info(f"  Tier 1 candidates:       {stats['tier1_count']} (≥7.5)")
+    logger.info(f"  Tier 2 candidates:       {stats['tier2_count']} (6.5-7.4)")
+    logger.info(f"  AutoDock Vina:           {stats['vina_status']}")
+    logger.info(f"  RDKit:                   {'available' if stats['rdkit_available'] else 'not available'}")
     if results.get("strategy_id"):
-        print(f"  Strategy:                {results['strategy_id']} ({results.get('strategy_fingerprint', '')[:16]}…)")
+        logger.info(f"  Strategy:                {results['strategy_id']} ({results.get('strategy_fingerprint', '')[:16]}…)")
 
     # Top results per target
-    print("\n  📋 Top compound per target:")
+    logger.info("\n  📋 Top compound per target:")
     for gene_id, target_data in sorted(results["results_per_target"].items()):
         gene_name = target_data["gene_info"].get("name", gene_id)
         top = target_data["top_compounds"]
         if top:
             best = top[0]
-            print(
+            logger.info(
                 f"    • {gene_name[:45]:<47} "
                 f"{best['name'][:30]:<32} "
                 f"Score: {best['composite_score']:.1f}"
             )
 
     # Top 10 overall
-    print("\n  🏆 Top 10 overall virtual screening hits:")
+    logger.info("\n  🏆 Top 10 overall virtual screening hits:")
     for i, c in enumerate(results["all_results"][:10], 1):
-        print(
+        logger.info(
             f"    {i:2}. {c['name'][:40]:<42} "
             f"→ {c['gene_name'][:25]:<27} "
             f"{c['composite_score']:.1f} ({c['tier'].split('—')[0].strip()})"
@@ -897,27 +897,27 @@ def main():
     )
     args = parser.parse_args()
 
-    print(f"🔄 Building compound library ({args.disease})...")
+    logger.info(f"🔄 Building compound library ({args.disease})...")
     from med_research.pipeline.virtual_screening.screening_strategy import strategy_for_disease
     try:
         strategy_for_disease(args.disease)
     except (ValueError, OSError, KeyError, TypeError) as exc:
-        print(f"❌ Screening blocked for {args.disease}: {exc}")
+        logger.error(f"❌ Screening blocked for {args.disease}: {exc}")
         return 1
 
     library = build_compound_library(args.disease)
-    print(f"   {len(library)} compounds loaded")
+    logger.info(f"   {len(library)} compounds loaded")
 
-    print(f"🔄 Identifying untargeted {args.disease} genes...")
+    logger.info(f"🔄 Identifying untargeted {args.disease} genes...")
     untargeted = get_untargeted_genes(args.disease)
     target_ids = [g["id"] for g in untargeted]
-    print(f"   {len(untargeted)} untargeted genes identified")
+    logger.info(f"   {len(untargeted)} untargeted genes identified")
 
     if args.gene:
         target_ids = [args.gene]
-        print(f"   🎯 Screening against: {args.gene}")
+        logger.info(f"   🎯 Screening against: {args.gene}")
 
-    print("🔄 Running virtual screening...")
+    logger.info("🔄 Running virtual screening...")
     results = screen_compounds(
         target_genes=target_ids,
         compound_library=library,
@@ -935,12 +935,12 @@ def main():
         json.dumps(results, indent=2, ensure_ascii=False, default=str),
         encoding="utf-8",
     )
-    print(f"\n💾 Results saved to {output_path}")
+    logger.info(f"\n💾 Results saved to {output_path}")
 
     if args.export_html:
         from med_research.pipeline.virtual_screening.report import generate_screening_report
         report_path = generate_screening_report(results, disease_id=args.disease)
-        print(f"✅ HTML report generated: {report_path}")
+        logger.info(f"✅ HTML report generated: {report_path}")
 
     return results
 

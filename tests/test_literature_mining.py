@@ -816,7 +816,7 @@ class TestSearchPubmed:
 class TestPrintSummary:
     """Smoke tests for print_summary()."""
 
-    def test_produces_output(self, sample_candidates, sample_entities, capsys):
+    def test_produces_output(self, sample_candidates, sample_entities, caplog):
         from med_research.pipeline.literature_mining.miner import print_summary
 
         results = {
@@ -850,11 +850,10 @@ class TestPrintSummary:
         }
 
         print_summary(results, sample_candidates, sample_entities)
-        captured = capsys.readouterr()
 
-        assert "LITERATURE MINING RESULTS" in captured.out
-        assert "50" in captured.out
-        assert "Articles with KG matches" in captured.out
+        assert "LITERATURE MINING RESULTS" in caplog.text
+        assert "50" in caplog.text
+        assert "Articles with KG matches" in caplog.text
 
 
 # ═══════════════════════════════════════════════════════════════════════

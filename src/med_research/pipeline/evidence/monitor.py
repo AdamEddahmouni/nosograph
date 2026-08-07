@@ -379,42 +379,42 @@ def run_diff() -> dict:
 def print_diff_summary(diff: dict):
     """Print a formatted diff summary."""
     if diff.get("status") == "baseline":
-        print("\n✅ Baseline snapshot created. No diff to show.")
+        logger.info("\n✅ Baseline snapshot created. No diff to show.")
         return
 
-    print("\n" + "=" * 75)
-    print("📡 CONTINUOUS EVIDENCE MONITOR — Diff Report")
-    print("=" * 75)
+    logger.info("\n" + "=" * 75)
+    logger.info("📡 CONTINUOUS EVIDENCE MONITOR — Diff Report")
+    logger.info("=" * 75)
 
-    print(f"\n  Previous: {diff['prev_snapshot']} ({diff['prev_timestamp'][:19]})")
-    print(f"  Current:  {diff['curr_snapshot']} ({diff['curr_timestamp'][:19]})")
-    print(f"  Elapsed:  {diff['hours_elapsed']:.1f} hours")
+    logger.info(f"\n  Previous: {diff['prev_snapshot']} ({diff['prev_timestamp'][:19]})")
+    logger.info(f"  Current:  {diff['curr_snapshot']} ({diff['curr_timestamp'][:19]})")
+    logger.info(f"  Elapsed:  {diff['hours_elapsed']:.1f} hours")
 
     changes = diff["changes"]
-    print("\n  📊 Changes:")
+    logger.info("\n  📊 Changes:")
     if changes["changed_queries"]:
-        print(f"    Changed queries: {len(changes['changed_queries'])}")
+        logger.info(f"    Changed queries: {len(changes['changed_queries'])}")
     if changes["changed_drugs"]:
-        print(f"    Changed drugs:   {len(changes['changed_drugs'])}")
+        logger.info(f"    Changed drugs:   {len(changes['changed_drugs'])}")
         if changes["changed_drugs"]:
-            print(f"      → {', '.join(changes['changed_drugs'][:8])}")
+            logger.info(f"      → {', '.join(changes['changed_drugs'][:8])}")
     if changes["changed_genes"]:
-        print(f"    Changed genes:   {len(changes['changed_genes'])}")
+        logger.info(f"    Changed genes:   {len(changes['changed_genes'])}")
 
     alerts = diff.get("alerts", [])
-    print(f"\n  🚨 Alerts: {len(alerts)}")
+    logger.info(f"\n  🚨 Alerts: {len(alerts)}")
     high = [a for a in alerts if a["severity"] == "high"]
     med = [a for a in alerts if a["severity"] == "medium"]
     low = [a for a in alerts if a["severity"] == "low"]
-    print(f"    🔴 High:   {len(high)}")
-    print(f"    🟡 Medium: {len(med)}")
-    print(f"    🟢 Low:    {len(low)}")
+    logger.info(f"    🔴 High:   {len(high)}")
+    logger.info(f"    🟡 Medium: {len(med)}")
+    logger.info(f"    🟢 Low:    {len(low)}")
 
     if alerts:
-        print("\n  📋 Alert Details:")
+        logger.info("\n  📋 Alert Details:")
         for a in alerts[:10]:
             icon = {"high": "🔴", "medium": "🟡", "low": "🟢"}.get(a["severity"], "⚪")
-            print(f"  {icon} [{a['severity'].upper():7s}] {a['entity']:30s} "
+            logger.info(f"  {icon} [{a['severity'].upper():7s}] {a['entity']:30s} "
                   f"({a['new_count']} new {a['type']})")
 
 
@@ -439,9 +439,9 @@ def main():
 
     if args.list:
         snapshots = list_snapshots()
-        print(f"\n📂 Available snapshots ({len(snapshots)}):")
+        logger.info(f"\n📂 Available snapshots ({len(snapshots)}):")
         for p in snapshots[:20]:
-            print(f"  {p.name}")
+            logger.info(f"  {p.name}")
         return
 
     if args.diff or args.export_html:
@@ -449,8 +449,8 @@ def main():
         snapshots = load_latest_snapshots(2)
 
         if len(snapshots) < 2:
-            print("⚠️  Need at least 2 snapshots. Taking baseline + new snapshot.")
-            print("   This may take a few minutes...")
+            logger.warning("⚠️  Need at least 2 snapshots. Taking baseline + new snapshot.")
+            logger.info("   This may take a few minutes...")
             prev = take_snapshot(sources=sources, max_per_query=args.max)
             rate_limited_sleep(2)
             curr = take_snapshot(sources=sources, max_per_query=args.max)
@@ -463,7 +463,7 @@ def main():
         if args.export_html:
             from med_research.pipeline.evidence.monitor_report import generate_html_report
             generate_html_report(diff, prev, curr)
-            print("\n✅ HTML report generated: evidence_monitor/report.html")
+            logger.info("\n✅ HTML report generated: evidence_monitor/report.html")
         return
 
     if args.snapshot:

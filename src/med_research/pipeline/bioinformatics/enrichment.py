@@ -315,12 +315,12 @@ def cross_reference_with_kg_pathways(
 
 def analyze(enrichment_results: dict, gene_list: list, kg_matches: dict):
     """Print enrichment analysis summary."""
-    print("\n" + "=" * 70)
-    print("📊 PATHWAY ENRICHMENT ANALYSIS")
-    print("=" * 70)
+    logger.info("\n" + "=" * 70)
+    logger.info("📊 PATHWAY ENRICHMENT ANALYSIS")
+    logger.info("=" * 70)
 
-    print(f"\n  Genes analyzed: {len(gene_list)}")
-    print(f"  Gene set libraries queried: {len(enrichment_results)}")
+    logger.info(f"\n  Genes analyzed: {len(gene_list)}")
+    logger.info(f"  Gene set libraries queried: {len(enrichment_results)}")
 
     for library, result in enrichment_results.items():
         lib_name = result.get("library", library)
@@ -328,17 +328,17 @@ def analyze(enrichment_results: dict, gene_list: list, kg_matches: dict):
         n_sig = len(
             [t for t in result.get("terms", []) if t["adj_p_value"] < 0.05]
         )
-        print(f"\n  📚 {lib_name}")
-        print(f"     {n_terms} top terms ({n_sig} significant at adj p < 0.05)")
+        logger.info(f"\n  📚 {lib_name}")
+        logger.info(f"     {n_terms} top terms ({n_sig} significant at adj p < 0.05)")
 
         for i, term in enumerate(result.get("terms", [])[:8], 1):
             sig_marker = (
                 "✅" if term["adj_p_value"] < 0.05 else "  "
             )
-            print(
+            logger.info(
                 f"     {sig_marker} {i}. {term['term'][:70]}"
             )
-            print(
+            logger.info(
                 f"         P={term['p_value']:.2e} | "
                 f"adj P={term['adj_p_value']:.2e} | "
                 f"OR={term['odds_ratio']:.1f} | "
@@ -346,13 +346,13 @@ def analyze(enrichment_results: dict, gene_list: list, kg_matches: dict):
             )
 
     if kg_matches:
-        print(f"\n  🔗 Cross-reference with KG pathways ({len(kg_matches)} matches):")
+        logger.info(f"\n  🔗 Cross-reference with KG pathways ({len(kg_matches)} matches):")
         for _, matches_list in sorted(
             kg_matches.items(),
             key=lambda x: min(m["adj_p_value"] for m in x[1]),
         ):
             best = min(matches_list, key=lambda m: m["adj_p_value"])
-            print(
+            logger.info(
                 f"     {best['kg_pathway_name'][:40]} ↔ "
                 f"{best['enrichment_term'][:50]} "
                 f"(P={best['adj_p_value']:.1e})"
@@ -384,28 +384,28 @@ def main():
     from med_research.diseases.coverage import module_coverage
     coverage = module_coverage(args.disease, "enrichment", ("genes", "pathways"))
     if not coverage.is_runnable:
-        print(f"❌ Enrichment blocked for {args.disease}: {', '.join(coverage.missing_inputs)}")
+        logger.error(f"❌ Enrichment blocked for {args.disease}: {', '.join(coverage.missing_inputs)}")
         return {"coverage": coverage.to_dict(), "status": "blocked", "libraries": []}
 
-    print("🔄 Loading knowledge graph and gene data...")
+    logger.info("🔄 Loading knowledge graph and gene data...")
     G = load_kg_graph(args.disease)
     genes = load_kg_genes(args.disease)
-    print(f"   Loaded {len(genes)} genes from knowledge graph")
+    logger.info(f"   Loaded {len(genes)} genes from knowledge graph")
 
-    print("🔄 Preparing disease gene list...")
+    logger.info("🔄 Preparing disease gene list...")
     gene_list = get_disease_gene_list(
         genes, G, untargeted_only=args.untargeted_only, disease_id=args.disease
     )
-    print(f"   Using {len(gene_list)} genes for enrichment")
+    logger.info(f"   Using {len(gene_list)} genes for enrichment")
     for g in gene_list:
-        print(f"     • {g['symbol']} ({g['gene_id']}) — {g['category']}")
+        logger.info(f"     • {g['symbol']} ({g['gene_id']}) — {g['category']}")
 
-    print("🔄 Running enrichment analysis...")
+    logger.info("🔄 Running enrichment analysis...")
     enrichment_results = run_enrichment(
         gene_list, use_cache=not args.no_cache
     )
 
-    print("🔄 Cross-referencing with KG pathways...")
+    logger.info("🔄 Cross-referencing with KG pathways...")
     kg_pathways = load_pathways(args.disease)
     kg_matches = cross_reference_with_kg_pathways(
         enrichment_results, kg_pathways, disease_id=args.disease
@@ -429,7 +429,7 @@ def main():
         json.dumps(output, indent=2, ensure_ascii=False, default=str),
         encoding="utf-8",
     )
-    print(f"\n💾 Results saved to {out_path}")
+    logger.info(f"\n💾 Results saved to {out_path}")
 
     if args.export_html:
         from med_research.pipeline.bioinformatics.report import generate_bioinformatics_report
@@ -442,7 +442,7 @@ def main():
             None,
             disease_id=args.disease,
         )
-        print(f"\n✅ Report generated: {report_path}")
+        logger.info(f"\n✅ Report generated: {report_path}")
 
     return enrichment_results
 

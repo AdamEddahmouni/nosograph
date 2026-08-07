@@ -207,11 +207,10 @@ class TestExportForWeb:
 class TestAnalyzeGraph:
     """Smoke test for analyze_graph() — just ensure no exceptions."""
 
-    def test_analyze_does_not_crash(self, sample_graph, capsys):
+    def test_analyze_does_not_crash(self, sample_graph, caplog):
         from med_research.pipeline.knowledge_graph.builder import analyze_graph
         analyze_graph(sample_graph)
-        captured = capsys.readouterr()
-        assert "KNOWLEDGE GRAPH ANALYSIS" in captured.out
-        assert "DRUG" in captured.out
-        assert "DRUG REPURPOSING INSIGHTS" in captured.out
-        assert "Analysis complete" in captured.out
+        assert "KNOWLEDGE GRAPH ANALYSIS" in caplog.text
+        assert "DRUG" in caplog.text
+        assert "DRUG REPURPOSING INSIGHTS" in caplog.text
+        assert "Analysis complete" in caplog.text

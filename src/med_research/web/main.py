@@ -15,6 +15,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
+from med_research.logging_config import setup_logging
 from med_research.web.config import (
     API_DESCRIPTION,
     API_TAGS,
@@ -39,6 +40,7 @@ logger = logging.getLogger(__name__)
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Pre-load the knowledge graph on startup for faster first request."""
+    setup_logging(level=logging.DEBUG if DEBUG else logging.INFO)
     logger.info("Pre-loading knowledge graph...")
     from med_research.web.dependencies import get_knowledge_graph
 

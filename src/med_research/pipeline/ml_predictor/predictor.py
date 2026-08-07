@@ -330,40 +330,40 @@ def print_summary(results: dict):
     """Print ML target prediction results."""
     metrics = results.get("model_metrics", {})
 
-    print("\n" + "=" * 70)
-    print("🧠 ML TARGET PREDICTOR RESULTS")
-    print("=" * 70)
+    logger.info("\n" + "=" * 70)
+    logger.info("🧠 ML TARGET PREDICTOR RESULTS")
+    logger.info("=" * 70)
 
-    print(f"\n  Genes analyzed:             {metrics.get('n_genes', 0)}")
-    print(f"  Targeted (known drugs):     {metrics.get('n_targeted', 0)}")
-    print(f"  Untargeted (opportunity):   {metrics.get('n_untargeted', 0)}")
-    print(f"  CV ROC-AUC:                 {metrics.get('cv_roc_auc_mean', 0):.3f} ± {metrics.get('cv_roc_auc_std', 0):.3f}")
-    print(f"  XGBoost:                    {'✅ available' if metrics.get('xgboost_available') else '❌ not available'}")
-    print(f"  SHAP:                       {'✅ available' if metrics.get('shap_available') else '❌ not available'}")
+    logger.info(f"\n  Genes analyzed:             {metrics.get('n_genes', 0)}")
+    logger.info(f"  Targeted (known drugs):     {metrics.get('n_targeted', 0)}")
+    logger.info(f"  Untargeted (opportunity):   {metrics.get('n_untargeted', 0)}")
+    logger.info(f"  CV ROC-AUC:                 {metrics.get('cv_roc_auc_mean', 0):.3f} ± {metrics.get('cv_roc_auc_std', 0):.3f}")
+    logger.info(f"  XGBoost:                    {'✅ available' if metrics.get('xgboost_available') else '❌ not available'}")
+    logger.info(f"  SHAP:                       {'✅ available' if metrics.get('shap_available') else '❌ not available'}")
 
     # Feature importance
     importance = results.get("feature_importance", {})
     if importance:
-        print("\n  📊 Top features by importance:")
+        logger.info("\n  📊 Top features by importance:")
         for i, (feat, imp) in enumerate(list(importance.items())[:8]):
-            print(f"    {i+1}. {feat:<35} {imp:.4f}")
+            logger.info(f"    {i+1}. {feat:<35} {imp:.4f}")
 
     # Top predictions
     top = results.get("top_untargeted", [])
     if top:
-        print("\n  🎯 Top predicted novel druggable targets:")
+        logger.info("\n  🎯 Top predicted novel druggable targets:")
         for i, p in enumerate(top[:10]):
             drugs_note = f"  [targeted by: {', '.join(p['targeted_by'])}]" if p.get('targeted_by') else ""
-            print(f"    {i+1:2}. {p['gene_name'][:45]:<47} "
+            logger.info(f"    {i+1:2}. {p['gene_name'][:45]:<47} "
                   f"Score: {p['druggability_score']:.3f}  "
                   f"Cat: {p['category']}{drugs_note}")
 
     # SHAP
     shap = results.get("shap_summary", [])
     if shap:
-        print("\n  🔍 Top SHAP features (mean |impact|):")
+        logger.info("\n  🔍 Top SHAP features (mean |impact|):")
         for s in shap[:5]:
-            print(f"    • {s['feature']:<35} {s['mean_abs_shap']:.4f}")
+            logger.info(f"    • {s['feature']:<35} {s['mean_abs_shap']:.4f}")
 
 
 def main():
@@ -404,17 +404,17 @@ def main():
         return {"error": "blocked", "coverage": coverage.to_dict()}
 
     if not XGB_AVAILABLE:
-        print("⚠️  XGBoost not installed. Install with: pip install xgboost scikit-learn")
-        print("   Running in feature-engineering-only mode...")
+        logger.warning("⚠️  XGBoost not installed. Install with: pip install xgboost scikit-learn")
+        logger.warning("   Running in feature-engineering-only mode...")
 
     logger.info("Building knowledge graph...")
     G = build_graph(args.disease)
-    print(f"   Graph: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
+    logger.info(f"   Graph: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
 
     results = train_and_predict(G, top_n=args.top)
 
     if "error" in results:
-        print(f"❌ {results['error']}")
+        logger.error(f"❌ {results['error']}")
         return results
 
     print_summary(results)
@@ -433,12 +433,12 @@ def main():
         json.dumps(output, indent=2, ensure_ascii=False, default=str),
         encoding="utf-8",
     )
-    print(f"\n💾 Results saved to {out_path}")
+    logger.info(f"\n💾 Results saved to {out_path}")
 
     if args.export_html:
         from med_research.pipeline.ml_predictor.report import generate_ml_report
         report_path = generate_ml_report(results)
-        print(f"✅ HTML report generated: {report_path}")
+        logger.info(f"✅ HTML report generated: {report_path}")
 
     return results
 

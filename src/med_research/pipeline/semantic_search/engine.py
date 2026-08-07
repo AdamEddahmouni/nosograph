@@ -244,15 +244,15 @@ def main():
     if args.query:
         results = engine.search(args.query, top_k=args.top)
         if results:
-            print(f"\n{'=' * 70}")
-            print(f"🔍 SEMANTIC SEARCH: \"{args.query}\"")
-            print(f"{'=' * 70}")
-            print(f"\n  Found {len(results)} results:\n")
+            logger.info(f"\n{'=' * 70}")
+            logger.info(f"🔍 SEMANTIC SEARCH: \"{args.query}\"")
+            logger.info(f"{'=' * 70}")
+            logger.info(f"\n  Found {len(results)} results:\n")
             for r in results:
-                print(f"  #{r['rank']:<3} [{r['similarity']:.1f}] [{r['year']}] {r['title'][:90]}")
-                print(f"       {r.get('journal', '')}")
+                logger.info(f"  #{r['rank']:<3} [{r['similarity']:.1f}] [{r['year']}] {r['title'][:90]}")
+                logger.info(f"       {r.get('journal', '')}")
         else:
-            print("No results found. Try running --index first.")
+            logger.info("No results found. Try running --index first.")
 
     if args.export_html:
         from med_research.pipeline.semantic_search.report import generate_semantic_report
@@ -260,7 +260,7 @@ def main():
         results = results if args.query else []
         indexed = engine.get_indexed_count()
         generate_semantic_report(results, query, indexed)
-        print("\n✅ HTML report generated: semantic_search/report.html")
+        logger.info("\n✅ HTML report generated: semantic_search/report.html")
 
     return 0
 

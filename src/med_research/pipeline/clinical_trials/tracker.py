@@ -495,50 +495,50 @@ def _build_crossref_summary(trials: list) -> dict:
 
 def print_summary(stats: dict, kg_crossref: dict):
     """Print a summary of clinical trial tracking results."""
-    print("\n" + "=" * 70)
-    print("📋 CLINICAL TRIAL TRACKER RESULTS")
-    print("=" * 70)
+    logger.info("\n" + "=" * 70)
+    logger.info("📋 CLINICAL TRIAL TRACKER RESULTS")
+    logger.info("=" * 70)
 
-    print(f"\n  Total trials analyzed:      {stats['total_trials']}")
-    print(f"  KG-matched trials:          {stats['kg_matched_trials']}")
-    print(f"  Total enrollment:           {stats['total_enrollment']:,}")
-    print(f"  Avg enrollment:             {stats['avg_enrollment']:,}")
+    logger.info(f"\n  Total trials analyzed:      {stats['total_trials']}")
+    logger.info(f"  KG-matched trials:          {stats['kg_matched_trials']}")
+    logger.info(f"  Total enrollment:           {stats['total_enrollment']:,}")
+    logger.info(f"  Avg enrollment:             {stats['avg_enrollment']:,}")
 
     # Phases
-    print("\n  📊 Phase distribution:")
+    logger.info("\n  📊 Phase distribution:")
     for phase, count in sorted(stats["phases"].items(),
                                 key=lambda x: PHASE_ORDER.get(
                                     {v: k for k, v in PHASE_LABELS.items()}.get(x[0], ""), -1
                                 )):
         bar_width = int(count / max(stats["phases"].values()) * 30) if stats["phases"] else 0
-        print(f"    {phase:<16} {'█' * bar_width} {count}")
+        logger.info(f"    {phase:<16} {'█' * bar_width} {count}")
 
     # MoA
     moas = stats.get("moas", {})
     if moas:
-        print("\n  🔬 Mechanism of action categories:")
+        logger.info("\n  🔬 Mechanism of action categories:")
         for moa, count in sorted(moas.items(), key=lambda x: x[1], reverse=True)[:8]:
-            print(f"    • {moa:<30} {count}")
+            logger.info(f"    • {moa:<30} {count}")
 
     # Top sponsors
     sponsors = stats.get("top_sponsors", {})
     if sponsors:
-        print("\n  🏢 Top sponsors:")
+        logger.info("\n  🏢 Top sponsors:")
         for sponsor, count in sorted(sponsors.items(), key=lambda x: x[1], reverse=True)[:5]:
-            print(f"    • {sponsor[:55]:<57} {count}")
+            logger.info(f"    • {sponsor[:55]:<57} {count}")
 
     # KG crossref
     gene_hits = kg_crossref.get("gene_hits", {})
     if gene_hits:
-        print("\n  🧬 Top genes in clinical trials:")
+        logger.info("\n  🧬 Top genes in clinical trials:")
         for gene_id, count in list(gene_hits.items())[:8]:
-            print(f"    • {gene_id:<30} {count} trial{'s' if count > 1 else ''}")
+            logger.info(f"    • {gene_id:<30} {count} trial{'s' if count > 1 else ''}")
 
     drug_hits = kg_crossref.get("drug_hits", {})
     if drug_hits:
-        print("\n  💊 Top drugs in clinical trials:")
+        logger.info("\n  💊 Top drugs in clinical trials:")
         for drug_id, count in list(drug_hits.items())[:8]:
-            print(f"    • {drug_id:<30} {count} trial{'s' if count > 1 else ''}")
+            logger.info(f"    • {drug_id:<30} {count} trial{'s' if count > 1 else ''}")
 
 
 def main():
@@ -566,7 +566,7 @@ def main():
     )
     args = parser.parse_args()
 
-    print("🔄 Initializing Clinical Trial Tracker...")
+    logger.info("🔄 Initializing Clinical Trial Tracker...")
     results = track_trials(
         query=args.query,
         max_results=args.max,
@@ -582,12 +582,12 @@ def main():
         json.dumps(results, indent=2, ensure_ascii=False, default=str),
         encoding="utf-8",
     )
-    print(f"\n💾 Results saved to {output_path}")
+    logger.info(f"\n💾 Results saved to {output_path}")
 
     if args.export_html:
         from med_research.pipeline.clinical_trials.report import generate_ct_report
         report_path = generate_ct_report(results, disease_id=args.disease)
-        print(f"✅ HTML report generated: {report_path}")
+        logger.info(f"✅ HTML report generated: {report_path}")
 
     return results
 

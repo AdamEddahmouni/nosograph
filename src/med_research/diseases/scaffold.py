@@ -1670,35 +1670,35 @@ def print_restore_summary(summary: dict) -> None:
     """Print a human-readable summary of a backup restore."""
     s = summary
     mode = "DRY-RUN — no files written" if s["dry_run"] else "files updated"
-    print("\n" + "=" * 70)
-    print(f"♻️  DISEASE RESTORED: {s['disease_id']}")
-    print("=" * 70)
-    print(f"  Backup:       {s['backup']}")
-    print(f"  Backup was:   {s['backup_disease_id'] or '—'}")
-    print(f"  Module dir:   {s['root']}")
-    print(f"  Mode:         {mode}")
-    print(f"\n  Restored: {len(s['restored']['genes'])} genes, {len(s['restored']['drugs'])} drugs")
+    logger.info("\n" + "=" * 70)
+    logger.info(f"♻️  DISEASE RESTORED: {s['disease_id']}")
+    logger.info("=" * 70)
+    logger.info(f"  Backup:       {s['backup']}")
+    logger.info(f"  Backup was:   {s['backup_disease_id'] or '—'}")
+    logger.info(f"  Module dir:   {s['root']}")
+    logger.info(f"  Mode:         {mode}")
+    logger.info(f"\n  Restored: {len(s['restored']['genes'])} genes, {len(s['restored']['drugs'])} drugs")
     for gid in s["restored"]["genes"]:
-        print(f"    gene  {gid}")
+        logger.info(f"    gene  {gid}")
     for did in s["restored"]["drugs"]:
-        print(f"    drug  {did}")
+        logger.info(f"    drug  {did}")
     if s["skipped"]["genes"] or s["skipped"]["drugs"]:
-        print(
+        logger.info(
             f"\n  Skipped (already present): {len(s['skipped']['genes'])} genes, "
             f"{len(s['skipped']['drugs'])} drugs"
         )
     if s["updated_pathways"]:
-        print(f"\n  Pathway membership re-attached: {len(s['updated_pathways'])} pathways")
-    print("\n  Counts (after restore):")
+        logger.info(f"\n  Pathway membership re-attached: {len(s['updated_pathways'])} pathways")
+    logger.info("\n  Counts (after restore):")
     for k, v in s["counts"].items():
-        print(f"    {k:<14} {v}")
+        logger.info(f"    {k:<14} {v}")
     written = not s["dry_run"]
-    print(f"\n  {'Files written:' if written else 'Files (would be written):'}")
+    logger.info(f"\n  {'Files written:' if written else 'Files (would be written):'}")
     for f in s["files"]:
-        print(f"    {f}")
+        logger.info(f"    {f}")
     if not written:
-        print("\n  Re-run without --dry-run to apply these changes.")
-    print("=" * 70)
+        logger.info("\n  Re-run without --dry-run to apply these changes.")
+    logger.info("=" * 70)
 
 
 # ── Backup housekeeping (list / purge) ──────────────────────────────────
@@ -1822,51 +1822,51 @@ def print_backups_summary(summary: dict) -> None:
         head = "🗑️  BACKUPS PURGED"
     else:
         head = "💾 BACKUP INVENTORY"
-    print("\n" + "=" * 70)
-    print(f"{head}: {s['disease_id']}")
-    print("=" * 70)
+    logger.info("\n" + "=" * 70)
+    logger.info(f"{head}: {s['disease_id']}")
+    logger.info("=" * 70)
 
     if not s["backups"]:
-        print("  No pruned backups found.")
-        print("=" * 70)
+        logger.info("  No pruned backups found.")
+        logger.info("=" * 70)
         return
 
     for e in s["backups"]:
         name = Path(e["path"]).name
-        print(f"\n  {name}")
-        print(f"    Size: {e['size_bytes']:,} bytes   Modified: {e['modified']}")
+        logger.info(f"\n  {name}")
+        logger.info(f"    Size: {e['size_bytes']:,} bytes   Modified: {e['modified']}")
         if not e["readable"]:
-            print("    (unreadable — cannot show contents)")
+            logger.info("    (unreadable — cannot show contents)")
             continue
         gene_ids = e["genes"]
         drug_ids = e["drugs"]
-        print(f"    Restores: {len(gene_ids)} gene(s), {len(drug_ids)} drug(s)")
+        logger.info(f"    Restores: {len(gene_ids)} gene(s), {len(drug_ids)} drug(s)")
         if gene_ids:
             shown = ", ".join(gene_ids[:8]) + (f" … and {len(gene_ids) - 8} more" if len(gene_ids) > 8 else "")
-            print(f"      Genes: {shown}")
+            logger.info(f"      Genes: {shown}")
         if drug_ids:
             shown = ", ".join(drug_ids[:8]) + (f" … and {len(drug_ids) - 8} more" if len(drug_ids) > 8 else "")
-            print(f"      Drugs: {shown}")
+            logger.info(f"      Drugs: {shown}")
 
-    print("\n  " + "-" * 66)
-    print(f"  Total: {s['count']} backup(s), {s['total_size_bytes']:,} bytes")
+    logger.info("\n  " + "-" * 66)
+    logger.info(f"  Total: {s['count']} backup(s), {s['total_size_bytes']:,} bytes")
 
     if purge:
         p = purge
-        print(f"\n  Keep newest: {p['keep']}")
+        logger.info(f"\n  Keep newest: {p['keep']}")
         if p["aborted"]:
-            print("  ⚠️  Deletion cancelled by user — no files removed.")
+            logger.warning("  ⚠️  Deletion cancelled by user — no files removed.")
         else:
             verb = "would delete" if p["dry_run"] else "deleted"
-            print(f"  {verb.capitalize()}: {len(p['deleted'])} backup(s), {p['freed_bytes']:,} bytes freed")
+            logger.info(f"  {verb.capitalize()}: {len(p['deleted'])} backup(s), {p['freed_bytes']:,} bytes freed")
             for path in p["deleted"]:
-                print(f"    - {Path(path).name}")
-            print(f"  Kept: {len(p['kept'])} backup(s)")
+                logger.info(f"    - {Path(path).name}")
+            logger.info(f"  Kept: {len(p['kept'])} backup(s)")
             for path in p["kept"]:
-                print(f"    + {Path(path).name}")
+                logger.info(f"    + {Path(path).name}")
         if p["dry_run"]:
-            print("\n  Re-run without --dry-run to delete.")
-    print("=" * 70)
+            logger.info("\n  Re-run without --dry-run to delete.")
+    logger.info("=" * 70)
 
 
 def print_refresh_summary(summary: dict) -> None:
@@ -1878,70 +1878,70 @@ def print_refresh_summary(summary: dict) -> None:
         mode = "ABORTED by user — no files written"
     else:
         mode = "files updated"
-    print("\n" + "=" * 70)
-    print(f"🔄 DISEASE REFRESHED: {s['name']} ({s['disease_id']})")
-    print("=" * 70)
-    print(f"  EFO id:      {s['efo_id'] or '—'}")
-    print(f"  Module dir:  {s['root']}")
-    print(f"  Mode:        {mode}")
-    print("\n  Sources used:")
+    logger.info("\n" + "=" * 70)
+    logger.info(f"🔄 DISEASE REFRESHED: {s['name']} ({s['disease_id']})")
+    logger.info("=" * 70)
+    logger.info(f"  EFO id:      {s['efo_id'] or '—'}")
+    logger.info(f"  Module dir:  {s['root']}")
+    logger.info(f"  Mode:        {mode}")
+    logger.info("\n  Sources used:")
     for src, ok in s["sources"].items():
-        print(f"    {'✅' if ok else '⚠️  '} {src}")
-    print("\n  Merge results:")
+        logger.warning(f"    {'✅' if ok else '⚠️  '} {src}")
+    logger.info("\n  Merge results:")
     for kind in ("genes", "drugs", "pathways"):
         m = s["merge"][kind]
-        print(f"    {kind:<9} +{len(m['added'])} added, ~{len(m['updated'])} updated, {len(m['kept'])} unchanged")
+        logger.info(f"    {kind:<9} +{len(m['added'])} added, ~{len(m['updated'])} updated, {len(m['kept'])} unchanged")
     p = s.get("prune") or {}
     if p.get("enabled"):
         if p.get("aborted"):
-            print("\n  Prune: ⚠️  aborted by user — no entities removed")
+            logger.warning("\n  Prune: ⚠️  aborted by user — no entities removed")
         else:
             verb = "would remove" if s["dry_run"] else "removed"
-            print(f"\n  Prune: {verb} {len(p['genes'])} genes, {len(p['drugs'])} drugs")
+            logger.info(f"\n  Prune: {verb} {len(p['genes'])} genes, {len(p['drugs'])} drugs")
             for gid in p["genes"][:10]:
-                print(f"    gene  {gid}")
+                logger.info(f"    gene  {gid}")
             for did in p["drugs"][:10]:
-                print(f"    drug  {did}")
+                logger.info(f"    drug  {did}")
             if p.get("scrubbed_pathways"):
-                print(f"    {len(p['scrubbed_pathways'])} pathways scrubbed of pruned genes")
+                logger.info(f"    {len(p['scrubbed_pathways'])} pathways scrubbed of pruned genes")
             if not s["dry_run"] and p.get("backup"):
-                print(f"    Backup: {p['backup']}")
-    print("\n  Added:")
+                logger.info(f"    Backup: {p['backup']}")
+    logger.info("\n  Added:")
     for kind in ("genes", "drugs", "pathways"):
         for eid in s["merge"][kind]["added"][:10]:
-            print(f"    {kind:<9} {eid}")
-    print("\n  Counts (after merge):")
+            logger.info(f"    {kind:<9} {eid}")
+    logger.info("\n  Counts (after merge):")
     for k, v in s["counts"].items():
-        print(f"    {k:<14} {v}")
+        logger.info(f"    {k:<14} {v}")
     written = not s["dry_run"] and not s.get("prune", {}).get("aborted")
-    print(f"\n  {'Files written:' if written else 'Files (would be written):'}")
+    logger.info(f"\n  {'Files written:' if written else 'Files (would be written):'}")
     for f in s["files"]:
-        print(f"    {f}")
+        logger.info(f"    {f}")
     if not written:
-        print("\n  Nothing was written — re-run to apply these changes.")
-    print("=" * 70)
+        logger.info("\n  Nothing was written — re-run to apply these changes.")
+    logger.info("=" * 70)
 
 
 def print_scaffold_summary(summary: dict) -> None:
     """Print a human-readable review summary for a scaffold."""
     s = summary
-    print("\n" + "=" * 70)
-    print(f"✅ DISEASE SCAFFOLDED: {s['name']} ({s['disease_id']})")
-    print("=" * 70)
-    print(f"  EFO id:      {s['efo_id'] or '— (not resolved; genes/drugs limited)'}")
-    print(f"  Target dir:  {s['root']}")
-    print("\n  Sources used:")
+    logger.info("\n" + "=" * 70)
+    logger.info(f"✅ DISEASE SCAFFOLDED: {s['name']} ({s['disease_id']})")
+    logger.info("=" * 70)
+    logger.info(f"  EFO id:      {s['efo_id'] or '— (not resolved; genes/drugs limited)'}")
+    logger.info(f"  Target dir:  {s['root']}")
+    logger.info("\n  Sources used:")
     for src, ok in s["sources"].items():
-        print(f"    {'✅' if ok else '⚠️  '} {src}")
-    print("\n  Counts:")
+        logger.warning(f"    {'✅' if ok else '⚠️  '} {src}")
+    logger.info("\n  Counts:")
     for k, v in s["counts"].items():
-        print(f"    {k:<14} {v}")
-    print("\n  Files written:")
+        logger.info(f"    {k:<14} {v}")
+    logger.info("\n  Files written:")
     for f in s["files"]:
-        print(f"    {f}")
-    print("\n  Next steps:")
-    print("    1. Review data/*.json — refine gene categories & evidence")
-    print("    2. Fill SYMPTOMS, CAR_T_SCORES in config.py")
-    print("    3. Run: med-research disease validate " + s["disease_id"])
-    print("    4. Run: med-research kg --disease " + s["disease_id"])
-    print("=" * 70)
+        logger.info(f"    {f}")
+    logger.info("\n  Next steps:")
+    logger.info("    1. Review data/*.json — refine gene categories & evidence")
+    logger.info("    2. Fill SYMPTOMS, CAR_T_SCORES in config.py")
+    logger.info("    3. Run: med-research disease validate " + s["disease_id"])
+    logger.info("    4. Run: med-research kg --disease " + s["disease_id"])
+    logger.info("=" * 70)

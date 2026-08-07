@@ -1084,32 +1084,32 @@ def main():
     if args.drug:
         profile = get_drug_profile(args.drug, disease_id=args.disease)
         if profile and profile.get("status") != "blocked" and profile.get("drug_name"):
-            print(f"\n🛡️  Safety Profile: {profile['drug_name']}")
-            print(f"   Composite Safety Score: {profile.get('composite_safety_score', 'N/A')}")
-            print(f"   Disease Symptom Overlap: {profile.get('disease_symptom_overlap_score', 'N/A')}/10")
-            print(f"   Severity Burden:         {profile.get('severity_burden_score', 'N/A')}/10")
-            print(f"   Chronic Use Safety:      {profile.get('chronic_use_safety_score', 'N/A')}/10")
-            print(f"   Disease-Specific Risk:   {profile.get('disease_specific_risk_score', 'N/A')}/10")
-            print(f"   Black Box Warnings:      {profile.get('black_box_warnings', [])}")
-            print(f"   Disease Overlap AEs:      {profile.get('disease_overlap_ae', [])}")
+            logger.info(f"\n🛡️  Safety Profile: {profile['drug_name']}")
+            logger.info(f"   Composite Safety Score: {profile.get('composite_safety_score', 'N/A')}")
+            logger.info(f"   Disease Symptom Overlap: {profile.get('disease_symptom_overlap_score', 'N/A')}/10")
+            logger.info(f"   Severity Burden:         {profile.get('severity_burden_score', 'N/A')}/10")
+            logger.info(f"   Chronic Use Safety:      {profile.get('chronic_use_safety_score', 'N/A')}/10")
+            logger.info(f"   Disease-Specific Risk:   {profile.get('disease_specific_risk_score', 'N/A')}/10")
+            logger.info(f"   Black Box Warnings:      {profile.get('black_box_warnings', [])}")
+            logger.info(f"   Disease Overlap AEs:      {profile.get('disease_overlap_ae', [])}")
         else:
             if profile and profile.get("status") == "blocked":
-                print(f"Safety analysis blocked for {args.disease}.")
+                logger.warning(f"Safety analysis blocked for {args.disease}.")
             else:
-                print(f"Drug '{args.drug}' not found in safety database.")
+                logger.warning(f"Drug '{args.drug}' not found in safety database.")
             return 1
         return 0
 
     results = score_all_drugs(disease_id=args.disease)
     if not results:
-        print(f"Safety analysis is unavailable for {args.disease}.")
+        logger.warning(f"Safety analysis is unavailable for {args.disease}.")
         return 1
     print_analysis(results)
 
     if args.export_html:
         from med_research.pipeline.adverse_events.report import generate_html_report
         generate_html_report(results, disease_id=args.disease)
-        print("\n✅ HTML report generated: adverse_events/report.html")
+        logger.info("\n✅ HTML report generated: adverse_events/report.html")
 
     return 0
 

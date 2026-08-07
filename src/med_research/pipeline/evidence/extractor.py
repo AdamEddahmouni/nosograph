@@ -454,44 +454,44 @@ def print_summary(results: dict):
     extractions = results.get("extractions", [])
     stats = results.get("stats", {})
 
-    print("\n" + "=" * 75)
-    print("🤖 LLM EVIDENCE EXTRACTION — Results")
-    print("=" * 75)
+    logger.info("\n" + "=" * 75)
+    logger.info("🤖 LLM EVIDENCE EXTRACTION — Results")
+    logger.info("=" * 75)
 
-    print(f"\n  Query: \"{results['query']}\"")
-    print(f"  Model: {results['model']}")
-    print(f"  Extracted: {results['total_extracted']} articles "
+    logger.info(f"\n  Query: \"{results['query']}\"")
+    logger.info(f"  Model: {results['model']}")
+    logger.info(f"  Extracted: {results['total_extracted']} articles "
           f"({results['successful_extractions']} successful) "
           f"in {results['elapsed_seconds']}s")
 
     if stats:
-        print("\n  📊 Evidence Level Distribution:")
+        logger.info("\n  📊 Evidence Level Distribution:")
         for level, count in stats.get("evidence_levels", {}).items():
             label = level.replace("_", " ").title()
-            print(f"    {label:30s} {count}")
+            logger.info(f"    {label:30s} {count}")
 
-        print("\n  🧬 Model Systems:")
+        logger.info("\n  🧬 Model Systems:")
         for system, count in stats.get("model_systems", {}).items():
             label = system.replace("_", " ").title()
-            print(f"    {label:30s} {count}")
+            logger.info(f"    {label:30s} {count}")
 
         avg_conf = stats.get("avg_confidence", 0)
         avg_rel = stats.get("avg_relevance", 0)
-        print(f"\n  📈 Avg Confidence: {avg_conf:.1f}%")
-        print(f"  📈 Avg Relevance: {avg_rel:.1f}%")
+        logger.info(f"\n  📈 Avg Confidence: {avg_conf:.1f}%")
+        logger.info(f"  📈 Avg Relevance: {avg_rel:.1f}%")
 
         if stats.get("n_unique_drugs", 0) > 0:
-            print(f"\n  💊 Drugs Mentioned ({stats['n_unique_drugs']}): "
+            logger.info(f"\n  💊 Drugs Mentioned ({stats['n_unique_drugs']}): "
                   f"{', '.join(stats['unique_drugs_mentioned'][:12])}")
 
-    print("\n  📋 Top Extractions:")
+    logger.info("\n  📋 Top Extractions:")
     # Sort by relevance * confidence
     scored = sorted(extractions, key=lambda x: x.get("relevance_to_query", 50) * x.get("confidence", 0) / 10000, reverse=True)
     for i, e in enumerate(scored[:10], 1):
         level = e.get("evidence_level", "?").replace("_", " ").title()
         system = e.get("model_system", "?").replace("_", " ").title()
         finding = e.get("key_findings", "")[:100]
-        print(f"  {i:2d}. [{level}] [{system}] {finding}")
+        logger.info(f"  {i:2d}. [{level}] [{system}] {finding}")
 
 
 def main():
@@ -531,7 +531,7 @@ def main():
     if args.export_html and "error" not in results:
         from med_research.pipeline.evidence.extractor_report import generate_html_report
         generate_html_report(results)
-        print("\n✅ HTML report generated: llm_extractor/report.html")
+        logger.info("\n✅ HTML report generated: llm_extractor/report.html")
 
     return results
 

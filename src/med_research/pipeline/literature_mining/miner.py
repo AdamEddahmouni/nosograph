@@ -385,18 +385,18 @@ def print_summary(results: dict, candidates: list, entities: dict):
     candidate_support = results["candidate_support"]
     gene_coverage = results["gene_coverage"]
 
-    print("\n" + "=" * 70)
-    print("📚 LITERATURE MINING RESULTS")
-    print("=" * 70)
+    logger.info("\n" + "=" * 70)
+    logger.info("📚 LITERATURE MINING RESULTS")
+    logger.info("=" * 70)
 
-    print(f"\n  Articles analyzed:           {stats['total_articles']}")
-    print(f"  Articles with KG matches:    {stats['articles_with_matches']}")
-    print(f"  Unique genes found:          {stats['genes_found']}")
-    print(f"  Unique drugs found:          {stats['drugs_found']}")
-    print(f"  spaCy biomedical NER:        {stats.get('spacy_ner', 'not available')}")
+    logger.info(f"\n  Articles analyzed:           {stats['total_articles']}")
+    logger.info(f"  Articles with KG matches:    {stats['articles_with_matches']}")
+    logger.info(f"  Unique genes found:          {stats['genes_found']}")
+    logger.info(f"  Unique drugs found:          {stats['drugs_found']}")
+    logger.info(f"  spaCy biomedical NER:        {stats.get('spacy_ner', 'not available')}")
     if stats.get('novel_entities_found', 0) > 0:
-        print(f"  Novel entities (spaCy):      {stats['novel_entities_found']}")
-    print(
+        logger.info(f"  Novel entities (spaCy):      {stats['novel_entities_found']}")
+    logger.info(
         f"  Repurposing candidates with\n"
         f"  literature support:          {stats['candidates_supported']}/{len(candidates)}"
     )
@@ -406,7 +406,7 @@ def print_summary(results: dict, candidates: list, entities: dict):
 
     # Candidates with literature support
     if candidate_support:
-        print("\n  📋 Candidates with literature support:")
+        logger.info("\n  📋 Candidates with literature support:")
         for cid, articles in sorted(
             candidate_support.items(), key=lambda x: len(x[1]), reverse=True
         )[:15]:
@@ -414,32 +414,32 @@ def print_summary(results: dict, candidates: list, entities: dict):
             if cand:
                 gene = gene_names.get(cand.get("gene_id", ""), cand.get("gene_id", "?"))
                 drug = cand["drug_name"][:50]
-                print(
+                logger.info(
                     f"    • {drug} → {gene} "
                     f"({len(articles)} article{'s' if len(articles) > 1 else ''})"
                 )
 
     # Gene coverage
     if gene_coverage:
-        print("\n  🧬 Gene literature coverage:")
+        logger.info("\n  🧬 Gene literature coverage:")
         for gid, info in sorted(
             gene_coverage.items(), key=lambda x: x[1]["articles"], reverse=True
         ):
             gene_info = entities_hack.get(gid, {"name": gid})
             bar = "█" * min(info["articles"], 10)
-            print(f"    {gene_info['name'][:40]:<42} {bar} {info['articles']}")
+            logger.info(f"    {gene_info['name'][:40]:<42} {bar} {info['articles']}")
 
     # Top articles
     top_articles = [
         a for a in results["article_matches"] if a["relevance_score"] > 0
     ][:5]
     if top_articles:
-        print("\n  📄 Top articles by relevance:")
+        logger.info("\n  📄 Top articles by relevance:")
         for i, a in enumerate(top_articles, 1):
-            print(
+            logger.info(
                 f"    {i}. [{a['year']}] {a['title'][:90]}..."
             )
-            print(
+            logger.info(
                 f"       Score: {a['relevance_score']} | "
                 f"Genes: {a['kg_matches']['gene_count']} | "
                 f"Drugs: {a['kg_matches']['drug_count']}"
@@ -483,9 +483,9 @@ def main():
     args = parser.parse_args()
 
     if args.install_scispacy:
-        print("Installing scispacy biomedical NER models...")
-        print("Run: pip install spacy scispacy")
-        print("Then: pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/"
+        logger.info("Installing scispacy biomedical NER models...")
+        logger.info("Run: pip install spacy scispacy")
+        logger.info("Then: pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/"
               "releases/v0.5.4/en_ner_bc5cdr_md-0.5.4.tar.gz")
         sys.exit(0)
 
@@ -510,7 +510,7 @@ def main():
 
     if results.get("status") == "blocked":
         coverage = results.get("coverage", {})
-        print(f"❌ Literature analysis blocked for {args.disease}: "
+        logger.error(f"❌ Literature analysis blocked for {args.disease}: "
               f"{', '.join(coverage.get('missing_inputs', [])) or 'coverage contract not satisfied'}")
         return results
 
@@ -521,7 +521,7 @@ def main():
         report_path = generate_literature_report(
             results, entities, candidates, disease_id=args.disease
         )
-        print(f"\n✅ Literature report generated: {report_path}")
+        logger.info(f"\n✅ Literature report generated: {report_path}")
 
     return results
 

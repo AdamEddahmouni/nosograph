@@ -1,8 +1,8 @@
 # med-research v2.0 — Comprehensive Technical Debt & Improvement Audit
 
-> **Current-state note (2026-08-06):** This document preserves the 2026-07-25 audit for traceability, but several findings have since been resolved or mitigated. The supported runtime is the `src/med_research` package, the root `main.py` is a compatibility wrapper, all seven disease modules pass `python -m med_research.cli disease validate --all --strict`, and current usage is documented in `README.md`, `docs/evidence-workspace.md`, and `docs/api-reference.md`. Treat historical “Current state” sections below as dated audit observations, not the live API specification.
+> **Current-state note (2026-08-07):** This document preserves the 2026-07-25 audit for traceability, but several findings have since been resolved or mitigated. The supported runtime is the `src/med_research` package, the root `main.py` is a compatibility wrapper, all seven disease modules pass `python -m med_research.cli disease validate --all --strict`, and current usage is documented in `README.md`, `docs/evidence-workspace.md`, and `docs/api-reference.md`. Treat historical “Current state” sections below as dated audit observations, not the live API specification. The **Summary Matrix** at the bottom is likewise historical; prefer the resolved/mitigated list here and per-issue resolution notes.
 
-**Resolved or mitigated findings:** legacy runtime entrypoints/static mounts, stale primary README guidance, incomplete seven-disease validation, unguarded `--reload` behavior, **#2 KG JSON schema validation** (resolved 2026-08-07), **#3 legacy v1 directory cleanup** (archived and removed 2026-08-07), **#6 Docker non-root user** and **#8 multi-disease KG validation in Docker build** (present in current Dockerfile), **#14 dependency lock files** (`requirements-lock.txt`, `requirements-dev-lock.txt`), **#16 `.env.example`**, and **structured logging foundation** (`logging_config.py`, CLI `--verbose`/`--quiet`, pipeline module migration in progress). Authentication and rate-limiting middleware are present in the current FastAPI app but still require deployment-policy review. Remaining open work should be re-verified against the current tree before implementation.
+**Resolved or mitigated findings:** legacy runtime entrypoints/static mounts, stale primary README guidance, incomplete seven-disease validation, unguarded `--reload` behavior, **#1 structured logging migration** (resolved 2026-08-07), **#2 KG JSON schema validation** (resolved 2026-08-07), **#3 legacy v1 directory cleanup** (archived and removed 2026-08-07), **#5 CORS wildcard default** (resolved 2026-08-07), **#6 Docker non-root user** (resolved 2026-08-07), **#7 Dockerfile SLE-only KG build** (resolved 2026-08-07), **#8 multi-disease KG validation in Docker build** (resolved 2026-08-07), **#9 expand_kg v1 paths** (resolved 2026-08-07), **#10 GWAS silent except blocks** (resolved 2026-08-07), **#14 dependency lock files** (`requirements-lock.txt`, `requirements-dev-lock.txt`), **#16 `.env.example`**, **#17 v1 static mounts** (resolved 2026-08-07), **#29 IBD missing relationships** (resolved 2026-08-07), **#34 rate limiting** (mitigated 2026-08-07 — in-memory middleware present). **#4 authentication** is mitigated (middleware present) but still requires deployment-policy review when `API_KEY` is unset. Remaining open work should be re-verified against the current tree before implementation.
 
 > **Audited:** 2026-07-25 | **Package:** `med-research` | **Version:** 2.0.0 (migration in progress)
 > **Scope:** `src/med_research/` (114 Python files), `tests/` (25 files), root config, Docker, Makefile, `scripts/`, legacy v1 directories
@@ -14,7 +14,9 @@
 
 ### 1. Logging — Zero Usage of `logging` Module
 
-**Current state:** Every pipeline module, every utility function, and the CLI use `print()` exclusively for all output. There are **zero imports** of `logging` or `logging.getLogger` anywhere in the `src/med_research/` tree.
+> **Resolved 2026-08-07.** All pipeline modules, the unified CLI, disease scaffold tooling, and web lifespan hooks now use structured logging via `logging_config.py`. CLI `--verbose`/`--quiet` adjust console level; FastAPI calls `setup_logging()` on startup (DEBUG when `DEBUG=true`, else INFO). Pipeline modules use `logging.getLogger(__name__)`; CLI and scaffold use `get_logger(__name__)`. Tests assert formatter output via `caplog` instead of `capsys`.
+
+**Historical audit (2026-07-25):** Every pipeline module, every utility function, and the CLI used `print()` exclusively for all output. There were **zero imports** of `logging` or `logging.getLogger` anywhere in the `src/med_research/` tree.
 
 **What this means:**
 - No log levels (DEBUG, INFO, WARNING, ERROR, CRITICAL). All output is at the same "always on" level.
@@ -157,7 +159,9 @@
 
 ### 4. Security — No Authentication on Any API Endpoint
 
-**Current state:** All 17+ FastAPI router modules in `src/med_research/web/routers/` have **zero authentication or authorization middleware.** Every endpoint — job submission, WebSocket streaming, evidence extraction, KG queries — is publicly accessible with no API key or user auth.
+> **Mitigated 2026-08-07.** `AuthMiddleware` in `src/med_research/web/middleware.py` enforces `X-API-Key` when `API_KEY` is set; when unset, auth is disabled for local development. Deployment policy (require `API_KEY` in production, document in ops runbooks) remains open.
+
+**Historical audit (2026-07-25):** All 17+ FastAPI router modules in `src/med_research/web/routers/` had **zero authentication or authorization middleware.** Every endpoint — job submission, WebSocket streaming, evidence extraction, KG queries — was publicly accessible with no API key or user auth.
 
 **What this means:**
 - Anyone who can reach the web server can submit Celery jobs, stream WebSocket results, and extract evidence via LLM (potentially burning API quota).
@@ -176,7 +180,9 @@
 
 ### 5. Security — CORS Defaults to Wildcard (`*`)
 
-**Current state:** `src/med_research/web/config.py:114` defaults `CORS_ORIGINS` to `"*"` with `allow_credentials=True` and `allow_methods=["*"]`.
+> **Resolved 2026-08-07.** `CORS_ORIGINS` in `src/med_research/web/config.py` now defaults to `http://localhost:3000`. Production deployments should set `CORS_ORIGINS` explicitly via environment variable (documented in `.env.example`).
+
+**Historical audit (2026-07-25):** `src/med_research/web/config.py:114` defaulted `CORS_ORIGINS` to `"*"` with `allow_credentials=True` and `allow_methods=["*"]`.
 
 ```python
 CORS_ORIGINS = os.environ.get("CORS_ORIGINS", "*").split(",")
@@ -196,7 +202,9 @@ CORS_ORIGINS = os.environ.get("CORS_ORIGINS", "*").split(",")
 
 ### 6. Docker Container Runs as Root
 
-**Current state:** `Dockerfile` has no `USER` directive. The container runs as root.
+> **Resolved 2026-08-07.** `Dockerfile` creates `appuser`, chowns `/app`, and sets `USER appuser` before `ENTRYPOINT`.
+
+**Historical audit (2026-07-25):** `Dockerfile` had no `USER` directive. The container ran as root.
 
 **What this means:**
 - Container escape vulnerabilities become remote code execution as root on the host.
@@ -217,11 +225,9 @@ Also switch to `EXPOSE 8000` instead of hardcoded `"--port" "8000"` in ENTRYPOIN
 
 ### 7. Dockerfile Hardcodes SLE Knowledge Graph Build
 
-**Current state:** `Dockerfile:25`:
-```dockerfile
-RUN python -m med_research.cli kg --disease sle --export
-```
-Only the SLE knowledge graph is pre-built into the Docker image. All 6 other diseases are absent.
+> **Resolved 2026-08-07.** The SLE-only KG build step was removed. The Docker image now runs `python -m med_research.cli disease validate --all --strict` at build time to verify all seven disease modules.
+
+**Historical audit (2026-07-25):** `Dockerfile:25` ran `python -m med_research.cli kg --disease sle --export`. Only the SLE knowledge graph was pre-built into the Docker image. All 6 other diseases were absent.
 
 **What this means:**
 - Running the pipeline for RA, MS, IBD, SS, SSc, or T1D inside Docker requires building the KG from scratch at runtime (slow).
@@ -236,7 +242,9 @@ Either build all 7 disease KGs at image build time, or remove this line and buil
 
 ### 8. Dockerfile Installs Package Twice
 
-**Current state:** `Dockerfile:16` and `Dockerfile:22` both run `pip install -e ".[all]"` in `deps` and `runtime` stages.
+> **Resolved 2026-08-07.** The duplicate `pip install -e ".[all]"` in the runtime stage was removed; only the `deps` stage installs the package.
+
+**Historical audit (2026-07-25):** `Dockerfile:16` and `Dockerfile:22` both ran `pip install -e ".[all]"` in `deps` and `runtime` stages.
 
 **What this means:**
 - Wasted build time (second install does nothing useful since `COPY . .` doesn't change the installed editable package).
@@ -251,11 +259,9 @@ Remove line 22. The editable install from the `deps` stage is inherited via `COP
 
 ### 9. `scripts/expand_kg.py` Writes to v1 Legacy Data Paths
 
-**Current state:** `scripts/expand_kg.py:9`:
-```python
-DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "knowledge_graph", "data")
-```
-This resolves to root `knowledge_graph/data/` — the **v1 legacy** directory, NOT v2 `src/med_research/diseases/{id}/data/`.
+> **Resolved 2026-08-07.** `scripts/expand_kg.py` now writes to `src/med_research/diseases/{disease_id}/data/` aligned with the v2 package layout.
+
+**Historical audit (2026-07-25):** `scripts/expand_kg.py:9` resolved to root `knowledge_graph/data/` — the **v1 legacy** directory, NOT v2 `src/med_research/diseases/{id}/data/`.
 
 **What this means:**
 - Any KG expansion for RA, IBD, SS, T1D, MS, SSc writes new data to the v1 directory that the v2 pipeline won't read.
@@ -270,7 +276,9 @@ Rewrite to use `src/med_research/diseases/{id}/data/` paths aligned with the v2 
 
 ### 10. Silent Exception Swallowing in GWAS — `except: pass`
 
-**Current state:** `src/med_research/pipeline/bioinformatics/gwas.py:125-133` has **four consecutive empty except blocks**:
+> **Resolved 2026-08-07.** GWAS API error paths in `gwas.py` now log HTTP 404s, connection/timeouts, and unexpected errors via `logger.info`/`logger.warning` instead of silent `pass`.
+
+**Historical audit (2026-07-25):** `src/med_research/pipeline/bioinformatics/gwas.py:125-133` had **four consecutive empty except blocks**:
 ```python
 try:
     # fetch variant data
@@ -517,7 +525,9 @@ Set flags at import time and log warnings when optional dependencies are missing
 
 ### 17. Web API v2 Mounts v1 Legacy Static Directories
 
-**Current state:** `src/med_research/web/main.py:83-101` mounts 16 `StaticFiles` directories from the project root's legacy v1 directories:
+> **Resolved 2026-08-07.** Resolved with Issue #3 cleanup. `web/main.py` mounts only v2 pipeline static paths; legacy v1 directories were removed from the working tree.
+
+**Historical audit (2026-07-25):** `src/med_research/web/main.py:83-101` mounted 16 `StaticFiles` directories from the project root's legacy v1 directories:
 ```python
 app.mount("/static/adverse_events", StaticFiles(directory=str(REPO_ROOT / "adverse_events")))
 app.mount("/static/biomarker_discovery", StaticFiles(directory=str(REPO_ROOT / "biomarker_discovery")))
@@ -746,7 +756,9 @@ Catch specific expected exceptions, not `Exception`. Let `KeyboardInterrupt` and
 
 ### 29. `ibd/data/relationships.json` Missing
 
-**Current state:** `src/med_research/diseases/ibd/data/` contains `drugs.json`, `genes.json`, `pathways.json`, `profile.json` but **no `relationships.json`**. All other 6 diseases have this file.
+> **Resolved 2026-08-07.** `ibd/data/relationships.json` is present and validated; `disease validate --all --strict` passes for all seven diseases.
+
+**Historical audit (2026-07-25):** `src/med_research/diseases/ibd/data/` contained `drugs.json`, `genes.json`, `pathways.json`, `profile.json` but **no `relationships.json`**. All other 6 diseases had this file.
 
 **Impact:** `Disease("ibd").load_relationships()` raises `FileNotFoundError`. Graph cannot be built for IBD.
 
@@ -834,7 +846,9 @@ Restrict `--reload` to only when `DEBUG=true` or remove entirely from production
 
 ### 34. No Rate Limiting on Web API
 
-**Current state:** `src/med_research/web/main.py:52` — no rate limiting middleware. All endpoints accept unlimited requests.
+> **Mitigated 2026-08-07.** `RateLimitMiddleware` in `src/med_research/web/middleware.py` provides in-memory sliding-window rate limiting per client IP (`RATE_LIMIT_REQUESTS` / `RATE_LIMIT_WINDOW` env vars). Redis-backed or distributed limiting for multi-instance deployments remains a follow-up.
+
+**Historical audit (2026-07-25):** `src/med_research/web/main.py:52` had no rate limiting middleware. All endpoints accepted unlimited requests.
 
 **Recommended approach:**
 Add `slowapi` or custom Redis-based rate limiter.
@@ -925,6 +939,8 @@ The following patterns were verified and found to be safe:
 ---
 
 ## Summary Matrix
+
+> **Historical (2026-07-25 audit).** Severity/effort ratings below predate the 2026-08-07 resolutions. See the header resolved/mitigated list and per-issue resolution notes for current status.
 
 | # | Issue | Severity | Effort | Dependencies |
 |---|---|---|---|---|

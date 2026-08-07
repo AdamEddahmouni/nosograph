@@ -730,13 +730,12 @@ def test_cli_parser_has_disease_subcommands():
     assert args.yes is True
 
 
-def test_cmd_disease_refresh_missing_module(capsys):
+def test_cmd_disease_refresh_missing_module(caplog):
     from med_research.cli import _build_parser, cmd_disease
 
     parser = _build_parser()
     assert cmd_disease(parser.parse_args(["disease", "refresh", "no_such_disease"])) == 1
-    out = capsys.readouterr().out
-    assert "disease add" in out
+    assert "disease add" in caplog.text
 
 
 def test_cmd_disease_refresh_prune_wiring(monkeypatch):
@@ -1097,7 +1096,7 @@ def test_list_backups_missing_module_raises(tmp_path):
         scaffold.list_backups("no_module", target_dir=tmp_path)
 
 
-def test_print_backups_summary_heads(capsys):
+def test_print_backups_summary_heads(caplog):
     """Lock in the four inventory/purge head variants."""
     base = {
         "disease_id": "sle", "backups": [], "count": 0, "total_size_bytes": 0,
@@ -1111,33 +1110,32 @@ def test_print_backups_summary_heads(capsys):
 
     # Plain inventory
     scaffold.print_backups_summary(inv)
-    out = capsys.readouterr().out
-    assert "💾 BACKUP INVENTORY: sle" in out
-    assert "Restores: 1 gene(s)" in out
+    assert "💾 BACKUP INVENTORY: sle" in caplog.text
+    assert "Restores: 1 gene(s)" in caplog.text
 
     # Dry-run purge
+    caplog.clear()
     scaffold.print_backups_summary({**inv, "purge": {"enabled": True, "aborted": False, "keep": 1,
                                                         "dry_run": True, "deleted": [entry["path"]],
                                                         "freed_bytes": 100, "kept": []}})
-    out = capsys.readouterr().out
-    assert "🗑️  PURGE PREVIEW (dry-run — nothing deleted)" in out
-    assert "Would delete: 1 backup(s)" in out
+    assert "🗑️  PURGE PREVIEW (dry-run — nothing deleted)" in caplog.text
+    assert "Would delete: 1 backup(s)" in caplog.text
 
     # Aborted purge
+    caplog.clear()
     scaffold.print_backups_summary({**inv, "purge": {"enabled": True, "aborted": True, "keep": 1,
                                                         "dry_run": False, "deleted": [],
                                                         "freed_bytes": 0, "kept": [entry["path"]]}})
-    out = capsys.readouterr().out
-    assert "⚠️  PURGE ABORTED — nothing deleted" in out
-    assert "cancelled by user" in out
+    assert "⚠️  PURGE ABORTED — nothing deleted" in caplog.text
+    assert "cancelled by user" in caplog.text
 
     # Applied purge
+    caplog.clear()
     scaffold.print_backups_summary({**inv, "purge": {"enabled": True, "aborted": False, "keep": 0,
                                                         "dry_run": False, "deleted": [entry["path"]],
                                                         "freed_bytes": 100, "kept": []}})
-    out = capsys.readouterr().out
-    assert "🗑️  BACKUPS PURGED: sle" in out
-    assert "Deleted: 1 backup(s), 100 bytes freed" in out
+    assert "🗑️  BACKUPS PURGED: sle" in caplog.text
+    assert "Deleted: 1 backup(s), 100 bytes freed" in caplog.text
 
 
 # ── Restore (re-merge a pruned backup) ────────────────────────────────
@@ -1375,7 +1373,7 @@ def test_cmd_disease_restore_wiring(monkeypatch):
     assert cmd_disease(parser.parse_args(["disease", "restore", "no_such"])) == 1
 
 
-def test_print_refresh_summary_prune_modes(capsys):
+def test_print_refresh_summary_prune_modes(caplog):
     """Lock in the ABORTED / dry-run / applied wording of the prune summary."""
     base = {
         "disease_id": "sle", "name": "SLE", "efo_id": None, "root": "/x",
@@ -1393,53 +1391,51 @@ def test_print_refresh_summary_prune_modes(capsys):
         "prune": {"enabled": True, "aborted": True, "genes": ["ORPHAN"], "drugs": [],
                   "scrubbed_pathways": [], "backup": None},
     })
-    out = capsys.readouterr().out
-    assert "ABORTED by user — no files written" in out
-    assert "no entities removed" in out
-    assert "Files (would be written)" in out
+    assert "ABORTED by user — no files written" in caplog.text
+    assert "no entities removed" in caplog.text
+    assert "Files (would be written)" in caplog.text
 
     # Dry-run preview
+    caplog.clear()
     scaffold.print_refresh_summary({
         **base, "dry_run": True,
         "prune": {"enabled": True, "aborted": False, "genes": ["ORPHAN"], "drugs": [],
                   "scrubbed_pathways": [], "backup": None},
     })
-    out = capsys.readouterr().out
-    assert "DRY-RUN — no files written" in out
-    assert "would remove 1 genes" in out
+    assert "DRY-RUN — no files written" in caplog.text
+    assert "would remove 1 genes" in caplog.text
 
     # Applied prune with backup + pathway scrub
+    caplog.clear()
     scaffold.print_refresh_summary({
         **base,
         "prune": {"enabled": True, "aborted": False, "genes": ["ORPHAN"], "drugs": [],
                   "scrubbed_pathways": ["jak-stat"], "backup": "/x/backups/pruned.json"},
     })
-    out = capsys.readouterr().out
-    assert "files updated" in out
-    assert "removed 1 genes" in out
-    assert "1 pathways scrubbed" in out
-    assert "Backup:" in out
-    assert "Files written:" in out
+    assert "files updated" in caplog.text
+    assert "removed 1 genes" in caplog.text
+    assert "1 pathways scrubbed" in caplog.text
+    assert "Backup:" in caplog.text
+    assert "Files written:" in caplog.text
 
 
-def test_cmd_disease_list_and_validate(capsys):
+def test_cmd_disease_list_and_validate(caplog):
     from med_research.cli import _build_parser, cmd_disease
 
     parser = _build_parser()
     assert cmd_disease(parser.parse_args(["disease", "list"])) == 0
 
-    out = capsys.readouterr().out
-    assert "sle" in out
+    assert "sle" in caplog.text
 
+    caplog.clear()
     assert cmd_disease(parser.parse_args(["disease", "validate", "sle"])) == 0
-    out = capsys.readouterr().out
-    assert "Validating" in out
+    assert "Validating" in caplog.text
 
     # unknown disease -> error exit
     assert cmd_disease(parser.parse_args(["disease", "validate", "no_such_disease"])) == 1
 
 
-def test_cmd_disease_validate_all_and_strict(monkeypatch, capsys):
+def test_cmd_disease_validate_all_and_strict(monkeypatch, caplog):
     """`validate --all` checks every module; --strict gates the exit code."""
     import med_research.diseases.base as base
     from med_research.cli import _build_parser, cmd_disease
@@ -1454,7 +1450,7 @@ def test_cmd_disease_validate_all_and_strict(monkeypatch, capsys):
 
     # Healthy disease: --all passes, strict or not
     assert cmd_disease(parser.parse_args(["disease", "validate", "--all"])) == 0
-    assert "[OK] All disease configs complete." in capsys.readouterr().out
+    assert "[OK] All disease configs complete." in caplog.text
     assert cmd_disease(parser.parse_args(["disease", "validate", "sle", "--strict"])) == 0
 
     # Simulate a stub disease: gaps flip the exit code only under --strict
@@ -1476,7 +1472,7 @@ def test_cmd_disease_validate_all_and_strict(monkeypatch, capsys):
 
     monkeypatch.setattr(base.Disease, "validate", _exploding)
     assert cmd_disease(parser.parse_args(["disease", "validate", "--all", "--strict"])) == 1
-    assert "config load failed" in capsys.readouterr().out
+    assert "config load failed" in caplog.text
 
 
 def test_cmd_disease_validate_requires_id_or_all():

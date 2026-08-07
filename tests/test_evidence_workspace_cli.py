@@ -26,7 +26,7 @@ def test_workspace_cli_parser_accepts_question_sources_and_exports():
     assert args.html_path == "out.html"
 
 
-def test_workspace_cli_runs_and_writes_requested_exports(monkeypatch, tmp_path, capsys):
+def test_workspace_cli_runs_and_writes_requested_exports(monkeypatch, tmp_path, caplog):
     import med_research.pipeline.evidence_workspace as workspace_module
 
     def fake_run(request, **kwargs):
@@ -53,4 +53,4 @@ def test_workspace_cli_runs_and_writes_requested_exports(monkeypatch, tmp_path, 
     assert cmd_workspace(args) == 0
     assert (tmp_path / "dossier.json").exists()
     assert (tmp_path / "dossier.html").exists()
-    assert "ew-cli" in capsys.readouterr().out
+    assert "ew-cli" in caplog.text

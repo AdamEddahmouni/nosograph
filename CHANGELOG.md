@@ -1,5 +1,22 @@
 # Changelog
 
+## [Structured logging phase 3] — 2026-08-07
+
+### Changed
+
+- Completed migration of all remaining `print()` calls to structured `logging` across pipeline modules, CLI, and disease scaffold tooling.
+- FastAPI lifespan now calls `setup_logging()` (DEBUG when `DEBUG=true`, else INFO).
+- Tests updated from `capsys` to `caplog` in literature mining, knowledge graph, disease scaffold, and evidence workspace CLI tests.
+- Marked Technical Debt **#1** resolved in `TECHNICAL_DEBT_ISSUES.md`.
+
+### Verification
+
+- `rg "print\\(" src/med_research --glob "*.py"` (no user-output prints remaining)
+- `python -m pytest tests/ -m "not slow" -q`
+- `python -m med_research.cli disease validate --all --strict`
+
+---
+
 ## [Coverage, logging, and deployment hygiene] — 2026-08-07
 
 ### Added

@@ -473,36 +473,36 @@ def cross_reference_with_kg(
 
 def analyze(gwas_results: dict, crossref: dict, kg_genes: dict):
     """Print GWAS annotation summary."""
-    print("\n" + "=" * 70)
-    print("🧬 GWAS CATALOG ANNOTATION")
-    print("=" * 70)
+    logger.info("\n" + "=" * 70)
+    logger.info("🧬 GWAS CATALOG ANNOTATION")
+    logger.info("=" * 70)
 
-    print(
+    logger.info(
         f"\n  Studies analyzed: {gwas_results['total_studies_analyzed']}"
     )
-    print(
+    logger.info(
         f"  Total SNP associations: {gwas_results['total_associations']}"
     )
-    print(
+    logger.info(
         f"  Unique genes with associations: "
         f"{len(gwas_results['gene_associations'])}"
     )
 
-    print("\n  📊 Cross-reference with Knowledge Graph:")
-    print(f"     ✅ Validated (GWAS + KG): {crossref['n_validated']}")
-    print(f"     🆕 Novel (GWAS only):    {crossref['n_novel']}")
-    print(f"     ❓ Missing (KG only):    {crossref['n_missing']}")
+    logger.info("\n  📊 Cross-reference with Knowledge Graph:")
+    logger.info(f"     ✅ Validated (GWAS + KG): {crossref['n_validated']}")
+    logger.info(f"     🆕 Novel (GWAS only):    {crossref['n_novel']}")
+    logger.info(f"     ❓ Missing (KG only):    {crossref['n_missing']}")
 
     # Validated genes
     validated = crossref.get("validated", {})
     if validated:
-        print("\n  🎯 KG genes validated by GWAS:")
+        logger.info("\n  🎯 KG genes validated by GWAS:")
         for gene_name, info in sorted(
             validated.items(),
             key=lambda x: x[1]["n_gwas_studies"],
             reverse=True,
         ):
-            print(
+            logger.info(
                 f"     • {gene_name:<25} "
                 f"{info['n_gwas_studies']} GWAS studies | "
                 f"KG odds ratio: {info.get('odds_ratio', 'N/A')}"
@@ -511,13 +511,13 @@ def analyze(gwas_results: dict, crossref: dict, kg_genes: dict):
     # Novel genes (top 10)
     novel = crossref.get("novel", {})
     if novel:
-        print("\n  🆕 Top GWAS genes NOT in knowledge graph:")
+        logger.info("\n  🆕 Top GWAS genes NOT in knowledge graph:")
         for gene_name, info in sorted(
             novel.items(),
             key=lambda x: x[1]["n_studies"],
             reverse=True,
         )[:10]:
-            print(
+            logger.info(
                 f"     • {gene_name:<25} "
                 f"{info['n_studies']} GWAS studies | "
                 f"Best P={info['best_p_value']:.1e}"
@@ -526,11 +526,11 @@ def analyze(gwas_results: dict, crossref: dict, kg_genes: dict):
     # Missing genes
     missing = crossref.get("missing", {})
     if missing:
-        print(
+        logger.info(
             "\n  ❓ KG genes with NO GWAS hit (may need more investigation):"
         )
         for gene_id, info in sorted(missing.items()):
-            print(
+            logger.info(
                 f"     • {info['name'][:40]:<42} "
                 f"({gene_id}) — {info.get('category', '')}"
             )
@@ -567,17 +567,17 @@ def main():
     from med_research.diseases.coverage import module_coverage
     coverage = module_coverage(args.disease, "gwas", ("genes", "gwas_search_terms"))
     if not coverage.is_runnable:
-        print(f"❌ GWAS analysis blocked for {args.disease}: {', '.join(coverage.missing_inputs)}")
+        logger.error(f"❌ GWAS analysis blocked for {args.disease}: {', '.join(coverage.missing_inputs)}")
         return {"coverage": coverage.to_dict(), "status": "blocked", "gwas_results": {}, "crossref": {}}
 
-    print("🔄 Loading knowledge graph genes...")
+    logger.info("🔄 Loading knowledge graph genes...")
     kg_genes = {}
     genes_data = config_load_genes(args.disease)
     for g in genes_data["genes"]:
         kg_genes[g["id"]] = g
-    print(f"   Loaded {len(kg_genes)} KG genes")
+    logger.info(f"   Loaded {len(kg_genes)} KG genes")
 
-    print("🔄 Searching GWAS Catalog...")
+    logger.info("🔄 Searching GWAS Catalog...")
     search_terms = disease_search_terms(args.disease)
     all_studies = []
     for term in search_terms[:2]:  # Use first 2 to avoid too many
@@ -596,7 +596,7 @@ def main():
             seen.add(acc)
             unique_studies.append(s)
 
-    print(f"   Total unique studies: {len(unique_studies)}")
+    logger.info(f"   Total unique studies: {len(unique_studies)}")
 
     # Check cache (per-disease so results never bleed across diseases)
     cache_path = gwas_cache_path(args.disease)
@@ -604,22 +604,22 @@ def main():
     if not args.no_cache and cache_path.exists():
         try:
             cached = json.loads(cache_path.read_text(encoding="utf-8"))
-            print("📦 Loading GWAS results from cache...")
+            logger.info("📦 Loading GWAS results from cache...")
             gwas_results = cached["gwas_results"]
             crossref = cached["crossref"]
             all_results = cached
         except (json.JSONDecodeError, KeyError):
-            print("   ⚠️  Corrupt cache, re-running GWAS...")
+            logger.warning("   ⚠️  Corrupt cache, re-running GWAS...")
 
     if all_results is None:
-        print("\n🔄 Extracting gene-level associations...")
+        logger.info("\n🔄 Extracting gene-level associations...")
         gwas_results = extract_gene_associations(
             unique_studies,
             max_studies=args.max_studies,
             resolve_snps=not args.no_snp_resolve,
         )
 
-        print("\n🔄 Cross-referencing with knowledge graph...")
+        logger.info("\n🔄 Cross-referencing with knowledge graph...")
         crossref = cross_reference_with_kg(gwas_results, kg_genes, disease_id=args.disease)
 
         # Save to cache
@@ -630,9 +630,9 @@ def main():
                 json.dumps(cache_data, indent=2, ensure_ascii=False, default=str),
                 encoding="utf-8",
             )
-            print(f"💾 Cached GWAS results to {cache_path}")
+            logger.info(f"💾 Cached GWAS results to {cache_path}")
         except Exception as e:
-            print(f"   ⚠️  Cache write error: {e}")
+            logger.warning(f"   ⚠️  Cache write error: {e}")
 
 
 
@@ -659,7 +659,7 @@ def main():
         json.dumps(output, indent=2, ensure_ascii=False, default=str),
         encoding="utf-8",
     )
-    print(f"\n💾 Results saved to {out_path}")
+    logger.info(f"\n💾 Results saved to {out_path}")
 
     if args.export_html:
         from med_research.pipeline.bioinformatics.report import generate_bioinformatics_report
@@ -667,7 +667,7 @@ def main():
         report_path = generate_bioinformatics_report(
             None, None, None, None, None, gwas_results, crossref, disease_id=args.disease
         )
-        print(f"\n✅ Report generated: {report_path}")
+        logger.info(f"\n✅ Report generated: {report_path}")
 
     return gwas_results
 

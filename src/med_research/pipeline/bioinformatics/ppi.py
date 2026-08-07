@@ -405,18 +405,18 @@ def cross_reference_with_candidates(
 
 def analyze(hub_scores: list, crossref: dict, G: nx.Graph):
     """Print PPI network analysis summary."""
-    print("\n" + "=" * 70)
-    print("🔗 PROTEIN-PROTEIN INTERACTION NETWORK ANALYSIS")
-    print("=" * 70)
+    logger.info("\n" + "=" * 70)
+    logger.info("🔗 PROTEIN-PROTEIN INTERACTION NETWORK ANALYSIS")
+    logger.info("=" * 70)
 
-    print(f"\n  Network size: {G.number_of_nodes()} proteins, "
+    logger.info(f"\n  Network size: {G.number_of_nodes()} proteins, "
           f"{G.number_of_edges()} interactions")
 
     # Top hubs
-    print("\n  🏆 Top 10 Hub Proteins:")
+    logger.info("\n  🏆 Top 10 Hub Proteins:")
     for i, h in enumerate(hub_scores[:10], 1):
         marker = "🧬" if h["is_lupus_gene"] else "🔹"
-        print(
+        logger.info(
             f"     {i}. {marker} {h['symbol']:<18} "
             f"Hub: {h['hub_score']:.3f} | "
             f"Deg: {h['degree']} | "
@@ -426,10 +426,10 @@ def analyze(hub_scores: list, crossref: dict, G: nx.Graph):
     # Hub candidates
     matches = crossref.get("hub_candidate_matches", [])
     if matches:
-        print("\n  🎯 Hub proteins with repurposing candidates:")
+        logger.info("\n  🎯 Hub proteins with repurposing candidates:")
         for m in matches[:8]:
             top_cand = m["candidates"][0]
-            print(
+            logger.info(
                 f"     • {m['symbol']} (hub={m['hub_score']:.3f}) → "
                 f"{m['n_candidates']} candidate(s) "
                 f"(best: {top_cand['drug_name'][:50]}, "
@@ -439,9 +439,9 @@ def analyze(hub_scores: list, crossref: dict, G: nx.Graph):
     # Untargeted hubs
     untargeted = crossref.get("hub_untargeted", [])
     if untargeted:
-        print("\n  💡 Hub proteins with NO repurposing candidates (new opportunities):")
+        logger.info("\n  💡 Hub proteins with NO repurposing candidates (new opportunities):")
         for u in untargeted[:8]:
-            print(
+            logger.info(
                 f"     • {u['symbol']} (hub={u['hub_score']:.3f}, "
                 f"deg={u['degree']})"
             )
@@ -449,9 +449,9 @@ def analyze(hub_scores: list, crossref: dict, G: nx.Graph):
     # Non-lupus hubs
     non_lupus = crossref.get("non_lupus_hubs", [])[:8]
     if non_lupus:
-        print("\n  🔬 Top non-lupus hub proteins (potential indirect targets):")
+        logger.info("\n  🔬 Top non-lupus hub proteins (potential indirect targets):")
         for n in non_lupus:
-            print(
+            logger.info(
                 f"     • {n['symbol']} (hub={n['hub_score']:.3f}, "
                 f"deg={n['degree']})"
             )
@@ -502,16 +502,16 @@ def main():
     logger.info("Loading gene and candidate data...")
     genes = load_genes(args.disease)
     gene_symbols = get_gene_symbols(genes)
-    print(f"   Loaded {len(gene_symbols)} lupus gene symbols")
+    logger.info(f"   Loaded {len(gene_symbols)} lupus gene symbols")
 
-    print("🔄 Loading repurposing candidates...")
+    logger.info("🔄 Loading repurposing candidates...")
     candidates_data = json.loads(
         (DR_DATA_DIR / "candidates.json").read_text(encoding="utf-8")
     )
     candidates = candidates_data["repurposing_candidates"]
-    print(f"   Loaded {len(candidates)} candidates")
+    logger.info(f"   Loaded {len(candidates)} candidates")
 
-    print("🔄 Building PPI network...")
+    logger.info("🔄 Building PPI network...")
     G = build_ppi_network(
         gene_symbols,
         confidence=args.confidence,
@@ -520,13 +520,13 @@ def main():
     )
 
     if G.number_of_nodes() == 0:
-        print("❌ Empty PPI network. Cannot proceed.")
+        logger.error("❌ Empty PPI network. Cannot proceed.")
         return None
 
-    print("🔄 Computing hub scores...")
+    logger.info("🔄 Computing hub scores...")
     hub_scores = compute_hub_scores(G)
 
-    print("🔄 Cross-referencing with repurposing candidates...")
+    logger.info("🔄 Cross-referencing with repurposing candidates...")
     crossref = cross_reference_with_candidates(
         hub_scores, G, genes, candidates
     )
@@ -569,7 +569,7 @@ def main():
         json.dumps(output, indent=2, ensure_ascii=False, default=str),
         encoding="utf-8",
     )
-    print(f"\n💾 Results saved to {out_path}")
+    logger.info(f"\n💾 Results saved to {out_path}")
 
     if args.export_html:
         from med_research.pipeline.bioinformatics.report import generate_bioinformatics_report
@@ -577,7 +577,7 @@ def main():
         report_path = generate_bioinformatics_report(
             None, None, None, hub_scores, crossref, graph_data, disease_id=args.disease
         )
-        print(f"\n✅ Report generated: {report_path}")
+        logger.info(f"\n✅ Report generated: {report_path}")
 
     return hub_scores
 

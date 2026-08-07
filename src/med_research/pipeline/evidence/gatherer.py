@@ -390,32 +390,32 @@ def _compute_crossref(results: list, sources: list) -> dict:
 
 def print_summary(gathered: dict):
     """Print a formatted summary of gathered evidence."""
-    print("\n" + "=" * 75)
-    print("🌐 WEB-SCALE EVIDENCE GATHERER — Results")
-    print("=" * 75)
+    logger.info("\n" + "=" * 75)
+    logger.info("🌐 WEB-SCALE EVIDENCE GATHERER — Results")
+    logger.info("=" * 75)
 
-    print(f"\n  Query: \"{gathered['query']}\"")
-    print(f"  Sources searched: {', '.join(gathered['sources_searched'])}")
-    print(f"  Total results: {gathered['total_results']} ({gathered['elapsed_seconds']}s)")
+    logger.info(f"\n  Query: \"{gathered['query']}\"")
+    logger.info(f"  Sources searched: {', '.join(gathered['sources_searched'])}")
+    logger.info(f"  Total results: {gathered['total_results']} ({gathered['elapsed_seconds']}s)")
 
-    print("\n  📊 Results by source:")
+    logger.info("\n  📊 Results by source:")
     for src, count in gathered["results_by_source"].items():
         icon = {"pubmed": "📄", "preprints": "🧪", "patents": "💡",
                 "clinical_trials": "🏥", "fda_labels": "💊"}.get(src, "📌")
-        print(f"    {icon} {src}: {count}")
+        logger.info(f"    {icon} {src}: {count}")
 
     if gathered.get("crossref", {}).get("pairs"):
-        print("\n  🔗 Cross-source overlaps:")
+        logger.info("\n  🔗 Cross-source overlaps:")
         for pair in gathered["crossref"]["pairs"]:
             if pair["overlap_count"] > 0:
-                print(f"    {pair['source_a']} ↔ {pair['source_b']}: {pair['overlap_count']} overlapping")
+                logger.info(f"    {pair['source_a']} ↔ {pair['source_b']}: {pair['overlap_count']} overlapping")
 
-    print("\n  📋 Top results:")
+    logger.info("\n  📋 Top results:")
     for i, r in enumerate(gathered["all_results"][:10], 1):
         yr = r.get("year", "????")
         src = r.get("source_type", "?")
         title = r["title"][:90]
-        print(f"  {i:2d}. [{yr}] [{src:15s}] {title}")
+        logger.info(f"  {i:2d}. [{yr}] [{src:15s}] {title}")
 
 
 def main():
@@ -436,9 +436,9 @@ def main():
 
     sources = DEFAULT_SOURCES if args.sources == "all" else [s.strip() for s in args.sources.split(",")]
 
-    print("🌐 Web-Scale Evidence Gatherer")
-    print(f"   Query: \"{args.query}\"")
-    print(f"   Sources: {', '.join(sources)}\n")
+    logger.info("🌐 Web-Scale Evidence Gatherer")
+    logger.info(f"   Query: \"{args.query}\"")
+    logger.info(f"   Sources: {', '.join(sources)}\n")
 
     results = gather_evidence(
         args.query,
@@ -452,7 +452,7 @@ def main():
     if args.export_html:
         from med_research.pipeline.evidence.gatherer_report import generate_html_report
         generate_html_report(results)
-        print("\n✅ HTML report generated: evidence_gatherer/report.html")
+        logger.info("\n✅ HTML report generated: evidence_gatherer/report.html")
 
     return results
 

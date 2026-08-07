@@ -139,32 +139,32 @@ def analyze_graph(G: nx.MultiDiGraph):
     disease_node = next((n for n, d in G.nodes(data=True) if d.get("type") == "disease"), None)
     disease_name = G.nodes[disease_node]["label"] if disease_node else "Disease"
 
-    print("=" * 70)
-    print(f"KNOWLEDGE GRAPH ANALYSIS: {disease_name}")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info(f"KNOWLEDGE GRAPH ANALYSIS: {disease_name}")
+    logger.info("=" * 70)
 
     node_types = defaultdict(int)
     for _, data in G.nodes(data=True):
         node_types[data.get("type", "unknown")] += 1
 
-    print("\n  Graph Overview:")
-    print(f"   Total nodes: {G.number_of_nodes():,}")
-    print(f"   Total edges: {G.number_of_edges():,}")
-    print("\n   Node types:")
+    logger.info("\n  Graph Overview:")
+    logger.info(f"   Total nodes: {G.number_of_nodes():,}")
+    logger.info(f"   Total edges: {G.number_of_edges():,}")
+    logger.info("\n   Node types:")
     for ntype, count in sorted(node_types.items()):
-        print(f"     \u2022 {ntype}: {count}")
+        logger.info(f"     \u2022 {ntype}: {count}")
 
     edge_types = defaultdict(int)
     for _, _, data in G.edges(data=True):
         edge_types[data.get("type", "unknown")] += 1
 
-    print("\n   Edge types:")
+    logger.info("\n   Edge types:")
     for etype, count in sorted(edge_types.items()):
-        print(f"     \u2022 {etype}: {count}")
+        logger.info(f"     \u2022 {etype}: {count}")
 
-    print("\n" + "=" * 70)
-    print("DRUG -> TARGET ANALYSIS")
-    print("=" * 70)
+    logger.info("\n" + "=" * 70)
+    logger.info("DRUG -> TARGET ANALYSIS")
+    logger.info("=" * 70)
     for node, data in G.nodes(data=True):
         if data.get("type") == "drug":
             targets = [
@@ -176,13 +176,13 @@ def analyze_graph(G: nx.MultiDiGraph):
                 for t in targets:
                     tdata = G.nodes[t]
                     target_info.append(f"{tdata.get('label', t)} ({G.nodes[t].get('type')})")
-                print(f"\n  {data['label']}")
-                print(f"     Mechanism: {data.get('description', 'N/A')[:120]}...")
-                print(f"     Targets: {', '.join(target_info)}")
+                logger.info(f"\n  {data['label']}")
+                logger.info(f"     Mechanism: {data.get('description', 'N/A')[:120]}...")
+                logger.info(f"     Targets: {', '.join(target_info)}")
 
-    print("\n" + "=" * 70)
-    print("TOP GENE HUB ANALYSIS")
-    print("=" * 70)
+    logger.info("\n" + "=" * 70)
+    logger.info("TOP GENE HUB ANALYSIS")
+    logger.info("=" * 70)
     gene_degrees = [
         (node, G.degree(node), G.nodes[node].get("label", node))
         for node, data in G.nodes(data=True)
@@ -190,15 +190,15 @@ def analyze_graph(G: nx.MultiDiGraph):
     ]
     gene_degrees.sort(key=lambda x: x[1], reverse=True)
 
-    print(f"\n  Genes most connected in the {disease_name.lower()} network:")
+    logger.info(f"\n  Genes most connected in the {disease_name.lower()} network:")
     for node, deg, label in gene_degrees[:10]:
         categories = [G.nodes[n].get("type", "?") for n in G.neighbors(node)]
         neighbor_summary = ", ".join(f"{categories.count(c)} {c}" for c in set(categories))
-        print(f"  \u2022 {label} (degree={deg}) \u2014 connected to: {neighbor_summary}")
+        logger.info(f"  \u2022 {label} (degree={deg}) \u2014 connected to: {neighbor_summary}")
 
-    print("\n" + "=" * 70)
-    print("PATHWAY CONNECTIVITY")
-    print("=" * 70)
+    logger.info("\n" + "=" * 70)
+    logger.info("PATHWAY CONNECTIVITY")
+    logger.info("=" * 70)
     for node, data in G.nodes(data=True):
         if data.get("type") == "pathway":
             in_edges = list(G.in_edges(node, data=True))
@@ -212,16 +212,16 @@ def analyze_graph(G: nx.MultiDiGraph):
                 for u, v, d in in_edges
                 if G.nodes[u].get("type") in ("gene",)
             ]
-            print(f"\n  {data['label']}")
-            print(f"     Description: {data.get('description', 'N/A')[:150]}...")
+            logger.info(f"\n  {data['label']}")
+            logger.info(f"     Description: {data.get('description', 'N/A')[:150]}...")
             if drugs_targeting:
-                print(f"     Drugs targeting this pathway: {', '.join(drugs_targeting)}")
+                logger.info(f"     Drugs targeting this pathway: {', '.join(drugs_targeting)}")
             if genes_in:
-                print(f"     Associated genes: {', '.join(genes_in)}")
+                logger.info(f"     Associated genes: {', '.join(genes_in)}")
 
-    print("\n" + "=" * 70)
-    print("DRUG REPURPOSING INSIGHTS (Shortest Path Analysis)")
-    print("=" * 70)
+    logger.info("\n" + "=" * 70)
+    logger.info("DRUG REPURPOSING INSIGHTS (Shortest Path Analysis)")
+    logger.info("=" * 70)
     targeted_genes = set()
     for _, v, d in G.edges(data=True):
         if d.get("type") == "TARGETS" and G.nodes[v].get("type") == "gene":
@@ -232,14 +232,14 @@ def analyze_graph(G: nx.MultiDiGraph):
         if data.get("type") == "gene" and n not in targeted_genes
     ]
 
-    print(f"\n  {len(untargeted_genes)} associated genes with NO direct therapeutic agent:")
+    logger.info(f"\n  {len(untargeted_genes)} associated genes with NO direct therapeutic agent:")
     for gene in untargeted_genes:
         gdata = G.nodes[gene]
-        print(f"     \u2022 {gdata['label']} \u2014 {gdata.get('disease_evidence', '')[:120]}...")
+        logger.info(f"     \u2022 {gdata['label']} \u2014 {gdata.get('disease_evidence', '')[:120]}...")
 
-    print("\n" + "=" * 70)
-    print("Analysis complete.")
-    print("=" * 70)
+    logger.info("\n" + "=" * 70)
+    logger.info("Analysis complete.")
+    logger.info("=" * 70)
 
 
 def export_for_web(G: nx.MultiDiGraph, output_path: str = None, disease_id: str = "sle") -> dict:
@@ -298,15 +298,15 @@ def main():
 
     if args.list_diseases:
         diseases = list_diseases()
-        print("Available diseases:")
+        logger.info("Available diseases:")
         for did, info in sorted(diseases.items()):
-            print(f"  {did:6s} \u2014 {info['name']}")
+            logger.info(f"  {did:6s} \u2014 {info['name']}")
         return None
 
     profile = get_disease_profile(args.disease)
-    print(f"Building {profile['name']} Knowledge Graph...")
+    logger.info(f"Building {profile['name']} Knowledge Graph...")
     G = build_graph(args.disease)
-    print(f"Graph built: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
+    logger.info(f"Graph built: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
 
     if args.analyze:
         analyze_graph(G)
