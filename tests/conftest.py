@@ -3,6 +3,7 @@ Shared test fixtures for the Lupus Research Platform test suite.
 """
 
 import json
+import logging
 import os
 from pathlib import Path
 
@@ -40,6 +41,13 @@ def pytest_collection_modifyitems(items):
             continue
         if "unit" not in markers:
             item.add_marker(pytest.mark.unit)
+
+
+@pytest.fixture(autouse=True)
+def _capture_pipeline_logging(caplog):
+    """Pipeline CLI formatters log to the root logger; make output visible in caplog."""
+    caplog.set_level(logging.INFO)
+    yield
 
 
 @pytest.fixture(scope="session")

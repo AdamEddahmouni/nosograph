@@ -20,6 +20,7 @@ from collections import defaultdict
 from pathlib import Path
 
 import networkx as nx
+import logging
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
@@ -27,6 +28,9 @@ if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 DATA_DIR = Path(__file__).parent / "data"
+
+logger = logging.getLogger(__name__)
+last_coverage = None
 
 
 def load_graph(disease_id: str = "sle"):
@@ -253,6 +257,17 @@ def compute_all_metrics(progress_callback=None, disease_id: str = "sle") -> dict
     """Run all analyses and return combined results."""
     cb = progress_callback or (lambda p, m: None)
 
+    from med_research.diseases.coverage import module_coverage
+
+    global last_coverage
+    coverage = module_coverage(
+        disease_id, "network_pharm", ("genes", "relationships")
+    )
+    last_coverage = coverage
+    if not coverage.is_runnable:
+        cb(100, f"Network pharmacology blocked: {', '.join(coverage.missing_inputs)}")
+        return {"coverage": coverage.to_dict(), "status": "blocked"}
+
     cb(0, f"Loading {disease_id} knowledge graph...")
     G = load_graph(disease_id)
 
@@ -310,35 +325,35 @@ def compute_all_metrics(progress_callback=None, disease_id: str = "sle") -> dict
 def print_analysis(results: dict):
     """Print formatted analysis summary."""
     gm = results["graph_metrics"]
-    print("\n" + "=" * 75)
-    print("🌐 NETWORK PHARMACOLOGY ANALYSIS")
-    print("=" * 75)
+    logger.info("\n" + "=" * 75)
+    logger.info("🌐 NETWORK PHARMACOLOGY ANALYSIS")
+    logger.info("=" * 75)
 
-    print("\n📊 Graph-Level Metrics:")
-    print(f"   Nodes: {gm['n_nodes']}  |  Edges: {gm['n_edges']}")
-    print(f"   Density: {gm['density']}  |  Components: {gm['n_components']}")
-    print(f"   Diameter: {gm['diameter']}  |  Avg Path: {gm['avg_shortest_path']}")
-    print(f"   Avg Clustering: {gm['avg_clustering']}  |  Assortativity: {gm['assortativity']}")
+    logger.info("\n📊 Graph-Level Metrics:")
+    logger.info(f"   Nodes: {gm['n_nodes']}  |  Edges: {gm['n_edges']}")
+    logger.info(f"   Density: {gm['density']}  |  Components: {gm['n_components']}")
+    logger.info(f"   Diameter: {gm['diameter']}  |  Avg Path: {gm['avg_shortest_path']}")
+    logger.info(f"   Avg Clustering: {gm['avg_clustering']}  |  Assortativity: {gm['assortativity']}")
 
     com = results["communities"]
-    print(f"\n🔗 Community Detection ({com['algorithm']}, modularity={com['modularity']}):")
-    print(f"   {com['n_communities']} communities found")
+    logger.info(f"\n🔗 Community Detection ({com['algorithm']}, modularity={com['modularity']}):")
+    logger.info(f"   {com['n_communities']} communities found")
     for c in com["communities"]:
-        print(f"   Community {c['id']}: {c['size']} nodes (dominant: {c['dominant_type']})")
+        logger.info(f"   Community {c['id']}: {c['size']} nodes (dominant: {c['dominant_type']})")
 
-    print("\n🌉 Top 10 Bridge Nodes (betweenness centrality):")
+    logger.info("\n🌉 Top 10 Bridge Nodes (betweenness centrality):")
     for i, b in enumerate(results["bridge_nodes"][:10], 1):
-        print(f"   {i:2d}. {b['label']} ({b['type']}) — {b['betweenness']:.4f}")
+        logger.info(f"   {i:2d}. {b['label']} ({b['type']}) — {b['betweenness']:.4f}")
 
-    print("\n🎯 Top 5 by PageRank:")
+    logger.info("\n🎯 Top 5 by PageRank:")
     pr = results["centrality"].get("pagerank", [])
     for i, n in enumerate(pr[:5], 1):
-        print(f"   {i}. {n['label']} ({n['type']}) — {n['score']:.4f}")
+        logger.info(f"   {i}. {n['label']} ({n['type']}) — {n['score']:.4f}")
 
-    print("\n⭐ Top 5 by Eigenvector Centrality:")
+    logger.info("\n⭐ Top 5 by Eigenvector Centrality:")
     ec = results["centrality"].get("eigenvector", [])
     for i, n in enumerate(ec[:5], 1):
-        print(f"   {i}. {n['label']} ({n['type']}) — {n['score']:.4f}")
+        logger.info(f"   {i}. {n['label']} ({n['type']}) — {n['score']:.4f}")
 
 
 def main():
@@ -353,25 +368,25 @@ def main():
     if args.centrality:
         G = load_graph()
         centrality = compute_centrality(G)
-        print("\n🎯 CENTRALITY METRICS")
+        logger.info("\n🎯 CENTRALITY METRICS")
         for metric in ["degree", "betweenness", "eigenvector", "closeness", "pagerank"]:
             scores = centrality.get(metric, {})
             top5 = sorted(scores.items(), key=lambda x: x[1], reverse=True)[:5]
-            print(f"\n  {metric.upper()}:")
+            logger.info(f"\n  {metric.upper()}:")
             for node, score in top5:
                 label = G.nodes[node].get("label", node)
-                print(f"    {label} — {score:.4f}")
+                logger.info(f"    {label} — {score:.4f}")
         return
 
     if args.communities:
         communities = compute_communities(disease_id=args.disease)
-        print(f"\n🔗 Communities (modularity={communities['modularity']}, {communities['n_communities']} total):")
+        logger.info(f"\n🔗 Communities (modularity={communities['modularity']}, {communities['n_communities']} total):")
         for c in communities["communities"]:
-            print(f"\n  Community {c['id']} ({c['size']} nodes, dominant: {c['dominant_type']}):")
+            logger.info(f"\n  Community {c['id']} ({c['size']} nodes, dominant: {c['dominant_type']}):")
             for label in c["node_labels"][:8]:
-                print(f"    • {label}")
+                logger.info(f"    • {label}")
             if len(c["node_labels"]) > 8:
-                print(f"    ... and {len(c['node_labels']) - 8} more")
+                logger.info(f"    ... and {len(c['node_labels']) - 8} more")
         return
 
     results = compute_all_metrics(disease_id=args.disease)
@@ -380,7 +395,7 @@ def main():
     if args.export_html:
         from med_research.pipeline.network_pharmacology.report import generate_html_report
         generate_html_report(results, disease_id=args.disease)
-        print("\n✅ HTML report generated: network_pharmacology/report.html")
+        logger.info("\n✅ HTML report generated: network_pharmacology/report.html")
 
     return results
 

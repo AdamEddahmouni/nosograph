@@ -35,8 +35,12 @@ if sys.platform == "win32":
 from med_research.pipeline.knowledge_graph.config import load_drugs as config_load_drugs
 from med_research.pipeline.knowledge_graph.config import load_genes as config_load_genes
 from med_research.pipeline.knowledge_graph.config import load_pathways as config_load_pathways
+import logging
 
 DATA_DIR = Path(__file__).parent / "data"
+
+logger = logging.getLogger(__name__)
+last_coverage = None
 
 
 def load_json(path: Path) -> dict:
@@ -255,22 +259,22 @@ def score_candidates(G, candidates: list, genes: dict, disease_id: str = "sle") 
 
 def analyze(scored_candidates: list):
     """Print statistical summary of scored candidates."""
-    print("\n" + "=" * 75)
-    print("📊 REPURPOSING ANALYSIS SUMMARY")
-    print("=" * 75)
+    logger.info("\n" + "=" * 75)
+    logger.info("📊 REPURPOSING ANALYSIS SUMMARY")
+    logger.info("=" * 75)
 
     # By tier
     tier_counts = defaultdict(int)
     for c in scored_candidates:
         tier_counts[c["tier"]] += 1
 
-    print(f"\n  Total candidates evaluated: {len(scored_candidates)}")
-    print(f"  Score range: {min(c['composite_score'] for c in scored_candidates):.2f} - {max(c['composite_score'] for c in scored_candidates):.2f}")
-    print("\n  Distribution by priority tier:")
+    logger.info(f"\n  Total candidates evaluated: {len(scored_candidates)}")
+    logger.info(f"  Score range: {min(c['composite_score'] for c in scored_candidates):.2f} - {max(c['composite_score'] for c in scored_candidates):.2f}")
+    logger.info("\n  Distribution by priority tier:")
     for tier in ["🔴 Tier 1 — Highest Priority", "🟠 Tier 2 — High Priority", "🟡 Tier 3 — Medium Priority", "🟢 Tier 4 — Lower Priority"]:
         count = tier_counts[tier]
         if count > 0:
-            print(f"    {tier}: {count} candidates")
+            logger.info(f"    {tier}: {count} candidates")
 
     # By gene
     gene_counts = defaultdict(int)
@@ -279,17 +283,17 @@ def analyze(scored_candidates: list):
         gene_counts[c["gene_name"]] += 1
         gene_scores[c["gene_name"]].append(c["composite_score"])
 
-    print("\n  Genes with most repurposing candidates:")
+    logger.info("\n  Genes with most repurposing candidates:")
     for gene_name, count in sorted(gene_counts.items(), key=lambda x: x[1], reverse=True):
         avg = sum(gene_scores[gene_name]) / len(gene_scores[gene_name])
-        print(f"    {gene_name}: {count} candidates (avg score: {avg:.2f})")
+        logger.info(f"    {gene_name}: {count} candidates (avg score: {avg:.2f})")
 
     # Top unique drugs
     drug_scores = defaultdict(list)
     for c in scored_candidates:
         drug_scores[c["drug_name"]].append(c["composite_score"])
 
-    print("\n  Most promising drugs (across multiple genes):")
+    logger.info("\n  Most promising drugs (across multiple genes):")
     multi_gene_drugs = [
         (drug, scores)
         for drug, scores in drug_scores.items()
@@ -297,32 +301,32 @@ def analyze(scored_candidates: list):
     ]
     multi_gene_drugs.sort(key=lambda x: sum(x[1]) / len(x[1]), reverse=True)
     for drug, scores in multi_gene_drugs[:8]:
-        print(f"    {drug}: targets {len(scores)} genes (avg: {sum(scores)/len(scores):.2f})")
+        logger.info(f"    {drug}: targets {len(scores)} genes (avg: {sum(scores)/len(scores):.2f})")
 
 
 def print_top_candidates(scored_candidates: list, top_n: int = 10):
     """Print the top N repurposing candidates."""
-    print("\n" + "=" * 75)
-    print(f"🏆 TOP {top_n} REPURPOSING CANDIDATES")
-    print("=" * 75)
+    logger.info("\n" + "=" * 75)
+    logger.info(f"🏆 TOP {top_n} REPURPOSING CANDIDATES")
+    logger.info("=" * 75)
 
     for i, c in enumerate(scored_candidates[:top_n], 1):
-        print(f"\n  #{i} | {c['tier']}")
-        print("  ─────────────────────────────────────────────")
-        print(f"  💊 Drug:      {c['drug_name']}")
-        print(f"  🧬 Gene:      {c['gene_name']} ({c['gene_id']})")
-        print(f"  📂 Category:  {c['gene_category']}")
-        print(f"  ⭐ Score:     {c['composite_score']:.2f}/10")
-        print(f"     ├─ Target Similarity:     {c['target_similarity_score']}/10")
-        print(f"     ├─ Pathway Proximity:     {c['final_proximity']:.1f}/10")
-        print(f"     ├─ Mechanistic Rationale: {c['mechanistic_rationale_score']}/10")
-        print(f"     ├─ Clinical Evidence:     {c['clinical_evidence_score']}/10")
-        print(f"     ├─ Adverse Event Profile:  {c.get('adverse_event_score', c.get('safety_score', 'N/A'))}/10")
-        print(f"     └─ Novelty Bonus:         {c['novelty_score']}/5")
-        print(f"  📋 Evidence:   {c['evidence_level']}")
-        print(f"  🔬 Mechanism:  {c['mechanism'][:150]}...")
-        print(f"  💡 Rationale:  {c['rationale'][:180]}...")
-        print(f"  🚦 Status:     {c['status']}")
+        logger.info(f"\n  #{i} | {c['tier']}")
+        logger.info("  ─────────────────────────────────────────────")
+        logger.info(f"  💊 Drug:      {c['drug_name']}")
+        logger.info(f"  🧬 Gene:      {c['gene_name']} ({c['gene_id']})")
+        logger.info(f"  📂 Category:  {c['gene_category']}")
+        logger.info(f"  ⭐ Score:     {c['composite_score']:.2f}/10")
+        logger.info(f"     ├─ Target Similarity:     {c['target_similarity_score']}/10")
+        logger.info(f"     ├─ Pathway Proximity:     {c['final_proximity']:.1f}/10")
+        logger.info(f"     ├─ Mechanistic Rationale: {c['mechanistic_rationale_score']}/10")
+        logger.info(f"     ├─ Clinical Evidence:     {c['clinical_evidence_score']}/10")
+        logger.info(f"     ├─ Adverse Event Profile:  {c.get('adverse_event_score', c.get('safety_score', 'N/A'))}/10")
+        logger.info(f"     └─ Novelty Bonus:         {c['novelty_score']}/5")
+        logger.info(f"  📋 Evidence:   {c['evidence_level']}")
+        logger.info(f"  🔬 Mechanism:  {c['mechanism'][:150]}...")
+        logger.info(f"  💡 Rationale:  {c['rationale'][:180]}...")
+        logger.info(f"  🚦 Status:     {c['status']}")
 
 
 def print_gene_analysis(scored_candidates: list, genes: dict, gene_id: str):
@@ -330,26 +334,26 @@ def print_gene_analysis(scored_candidates: list, genes: dict, gene_id: str):
     gene = genes.get(gene_id, {})
     gene_candidates = [c for c in scored_candidates if c["gene_id"] == gene_id]
 
-    print("\n" + "=" * 75)
-    print(f"🧬 GENE-FOCUSED ANALYSIS: {gene.get('name', gene_id)}")
-    print("=" * 75)
-    print(f"\n  Function:        {gene.get('function', 'N/A')}")
-    print(f"  Category:        {gene.get('category', 'N/A')}")
-    print(f"  Chromosome:      {gene.get('chromosome', 'N/A')}")
-    print(f"  Odds Ratio:      {gene.get('odds_ratio', 'N/A')}")
-    print(f"  Lupus Evidence:  {gene.get('lupus_evidence', 'N/A')[:200]}")
+    logger.info("\n" + "=" * 75)
+    logger.info(f"🧬 GENE-FOCUSED ANALYSIS: {gene.get('name', gene_id)}")
+    logger.info("=" * 75)
+    logger.info(f"\n  Function:        {gene.get('function', 'N/A')}")
+    logger.info(f"  Category:        {gene.get('category', 'N/A')}")
+    logger.info(f"  Chromosome:      {gene.get('chromosome', 'N/A')}")
+    logger.info(f"  Odds Ratio:      {gene.get('odds_ratio', 'N/A')}")
+    logger.info(f"  Lupus Evidence:  {gene.get('lupus_evidence', 'N/A')[:200]}")
 
     if not gene_candidates:
-        print("\n  ⚠️  No repurposing candidates found for this gene.")
+        logger.warning("\n  ⚠️  No repurposing candidates found for this gene.")
         return
 
-    print(f"\n  📋 {len(gene_candidates)} repurposing candidates:")
+    logger.info(f"\n  📋 {len(gene_candidates)} repurposing candidates:")
     for i, c in enumerate(gene_candidates, 1):
-        print(f"\n    {i}. {c['drug_name']} | Score: {c['composite_score']:.2f} | {c['tier']}")
-        print(f"       Mechanism: {c['mechanism'][:120]}...")
-        print(f"       Rationale: {c['rationale'][:150]}...")
-        print(f"       Evidence:  {c['evidence_level']}")
-        print(f"       Status:    {c['status']}")
+        logger.info(f"\n    {i}. {c['drug_name']} | Score: {c['composite_score']:.2f} | {c['tier']}")
+        logger.info(f"       Mechanism: {c['mechanism'][:120]}...")
+        logger.info(f"       Rationale: {c['rationale'][:150]}...")
+        logger.info(f"       Evidence:  {c['evidence_level']}")
+        logger.info(f"       Status:    {c['status']}")
 
 
 def main():
@@ -363,29 +367,43 @@ def main():
     parser.add_argument("--export-html", action="store_true", help="Export HTML report")
     args = parser.parse_args()
 
-    print(f"🔄 Loading {args.disease.upper()} knowledge graph...")
-    G = load_knowledge_graph(args.disease)
-    print(f"   Graph loaded: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
+    from med_research.diseases.coverage import module_coverage
 
-    print("🔄 Loading gene and candidate data...")
+    global last_coverage
+    coverage = module_coverage(
+        args.disease, "repurposing", ("genes", "drugs", "relationships")
+    )
+    last_coverage = coverage
+    if not coverage.is_runnable:
+        logger.error(
+            f"❌ Drug repurposing blocked for {args.disease}: "
+            f"{', '.join(coverage.missing_inputs)}"
+        )
+        return []
+
+    logger.info(f"🔄 Loading {args.disease.upper()} knowledge graph...")
+    G = load_knowledge_graph(args.disease)
+    logger.info(f"   Graph loaded: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
+
+    logger.info("🔄 Loading gene and candidate data...")
     genes = load_genes(args.disease)
     candidates_data = load_json(DATA_DIR / "candidates.json")
     candidates = candidates_data["repurposing_candidates"]
-    print(f"   Loaded {len(genes)} genes, {len(candidates)} repurposing candidates")
+    logger.info(f"   Loaded {len(genes)} genes, {len(candidates)} repurposing candidates")
 
-    print(f"🔄 Identifying untargeted {args.disease.upper()} genes...")
+    logger.info(f"🔄 Identifying untargeted {args.disease.upper()} genes...")
     untargeted = identify_untargeted_genes(G, args.disease)
     untargeted_ids = {g["id"] for g in untargeted}
-    print(f"   Found {len(untargeted)} untargeted lupus genes:")
+    logger.info(f"   Found {len(untargeted)} untargeted lupus genes:")
     for g in untargeted:
-        print(f"     • {g['name']} ({g['id']}) — {g.get('category', '')}")
+        logger.info(f"     • {g['name']} ({g['id']}) — {g.get('category', '')}")
 
-    print("🔄 Scoring candidates...")
+    logger.info("🔄 Scoring candidates...")
     scored = score_candidates(G, candidates, genes, disease_id=args.disease)
 
     # Filter to only candidates for actually untargeted genes
     scored = [c for c in scored if c["gene_id"] in untargeted_ids]
-    print(f"   Scored {len(scored)} candidates across {len(set(c['gene_id'] for c in scored))} genes")
+    logger.info(f"   Scored {len(scored)} candidates across {len(set(c['gene_id'] for c in scored))} genes")
 
     analyze(scored)
 
@@ -397,7 +415,7 @@ def main():
     if args.export_html:
         from med_research.pipeline.drug_repurposing.report import generate_html_report
         generate_html_report(scored, untargeted, genes, G, disease_id=args.disease)
-        print("\n✅ HTML report generated: drug_repurposing/report.html")
+        logger.info("\n✅ HTML report generated: drug_repurposing/report.html")
 
     return scored
 

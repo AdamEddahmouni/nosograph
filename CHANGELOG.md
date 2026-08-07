@@ -1,5 +1,27 @@
 # Changelog
 
+## [Coverage, logging, and deployment hygiene] — 2026-08-07
+
+### Added
+
+- `module_coverage` wiring for repurposing, synergy, biomarkers, expression, network pharmacology, ML predictor, clinical trials, cross-disease, and PPI modules.
+- `.env.example` documenting web API, Celery, CORS, rate-limit, and workspace environment variables.
+- Extended `DEFAULT_MODULE_INPUTS` in `diseases/coverage_report.py` for all wired modules.
+
+### Changed
+
+- Migrated seven pipeline modules from `print()` to structured `logging` (drug repurposing, synergy, biomarkers, expression, network pharmacology, cross-disease, CAR-T).
+- `web/main.py` lifespan hooks now use the logging module.
+- Removed local `_archive_v1/` legacy directory copy from the working tree.
+- Tests updated to assert CLI formatter output via `caplog` instead of `capsys`.
+
+### Verification
+
+- `python -m pytest tests/ -m "not slow" -q` (excluding Playwright browser tests)
+- `python -m med_research.cli disease validate --all --strict`
+
+---
+
 ## [KG schema validation] — 2026-08-07
 
 ### Added

@@ -218,7 +218,7 @@ def test_compute_biomarker_matrix_save_false_skips_write(tmp_path, monkeypatch):
     assert (tmp_path / "biomarker_matrix.json").exists()
 
 
-def test_analyze_prints(capsys):
+def test_analyze_prints(caplog):
     row = {
         "gene_id": "TEST", "gene_name": "Test Gene",
         "composite_score": 8.5, "cross_module_consistency": 8.0,
@@ -228,8 +228,7 @@ def test_analyze_prints(capsys):
         "tier": "Tier 1 — Strong Biomarker",
     }
     analyze([row])
-    captured = capsys.readouterr()
-    assert "1 genes analyzed" in captured.out
+    assert "1 genes analyzed" in caplog.text
 
 
 # ── Report ────────────────────────────────────────────────────────────────

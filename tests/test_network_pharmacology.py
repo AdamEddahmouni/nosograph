@@ -128,7 +128,7 @@ def test_compute_all_metrics_centrality_summary():
 @pytest.mark.slow
 def test_compute_all_metrics_saves_json(tmp_path, monkeypatch):
     monkeypatch.setattr(
-        "network_pharmacology.analyzer.DATA_DIR",
+        "med_research.pipeline.network_pharmacology.analyzer.DATA_DIR",
         tmp_path,
     )
     compute_all_metrics()

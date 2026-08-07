@@ -44,6 +44,7 @@ except ImportError:
 
 PROJECT_ROOT = Path(__file__).parent.parent
 DATA_DIR = Path(__file__).parent / "data"
+last_coverage = None
 
 # ClinicalTrials.gov API v2
 CT_API = "https://clinicaltrials.gov/api/v2"
@@ -334,6 +335,27 @@ def track_trials(
     Returns:
         dict with trials, stats, and kg_crossref data.
     """
+    from med_research.diseases.coverage import module_coverage
+
+    global last_coverage
+    coverage = module_coverage(
+        disease_id, "clinical_trials", ("genes", "drugs", "trial_query")
+    )
+    last_coverage = coverage
+    if not coverage.is_runnable:
+        logger.error(
+            "Clinical trials blocked for %s: %s",
+            disease_id,
+            ", ".join(coverage.missing_inputs),
+        )
+        return {
+            "trials": [],
+            "stats": {},
+            "kg_crossref": {},
+            "coverage": coverage.to_dict(),
+            "status": "blocked",
+        }
+
     if not query:
         from med_research.diseases.base import Disease
 

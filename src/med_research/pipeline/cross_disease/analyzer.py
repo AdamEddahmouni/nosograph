@@ -20,6 +20,7 @@ Usage:
 
 import argparse
 import json
+import logging
 import sys
 from pathlib import Path
 
@@ -38,6 +39,9 @@ if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 DATA_DIR = Path(__file__).parent / "data"
+
+logger = logging.getLogger(__name__)
+last_coverage = None
 
 
 # ── Data Loading ──────────────────────────────────────────────────────────
@@ -484,6 +488,38 @@ def compute_cross_disease_analysis(progress_callback=None) -> dict:
     """
     cb = progress_callback or (lambda p, m: None)
 
+    from med_research.diseases.coverage import coverage_for_disease
+
+    global last_coverage
+    disease_ids = sorted(list_diseases().keys())
+    blocked = [
+        disease_id
+        for disease_id in disease_ids
+        if not coverage_for_disease(disease_id).is_runnable
+    ]
+    if blocked:
+        coverage = coverage_for_disease(blocked[0])
+        last_coverage = coverage
+        cb(
+            100,
+            f"Cross-disease analysis blocked: incomplete data for {', '.join(blocked)}",
+        )
+        return {
+            "coverage": {
+                **coverage.to_dict(),
+                "module": "cross_disease",
+                "blocked_diseases": blocked,
+            },
+            "status": "blocked",
+            "disease_summary": {},
+            "shared_genes": [],
+            "shared_drugs": [],
+            "shared_pathways": [],
+            "disease_similarity": {},
+            "multi_disease_drugs": [],
+            "cross_disease_repurposing": [],
+        }
+
     cb(0, "Loading all disease data...")
     data = load_all_disease_data()
     disease_ids = sorted(data.keys())
@@ -649,54 +685,54 @@ def analyze(results: dict):
     d_summary = results["disease_summary"]
     n = results["total_diseases"]
 
-    print("\n" + "=" * 75)
-    print("🌐 CROSS-DISEASE DRUG REPURPOSING ANALYSIS")
-    print("=" * 75)
-    print(f"\n  Diseases analyzed: {n}")
+    logger.info("\n" + "=" * 75)
+    logger.info("🌐 CROSS-DISEASE DRUG REPURPOSING ANALYSIS")
+    logger.info("=" * 75)
+    logger.info(f"\n  Diseases analyzed: {n}")
     for did, info in sorted(d_summary.items()):
-        print(f"    {did:5s} — {info['name']:35s} "
+        logger.info(f"    {did:5s} — {info['name']:35s} "
               f"({info['gene_count']} genes, {info['drug_count']} drugs, "
               f"{info['pathway_count']} pathways)")
 
     sg = results["shared_genes"]
-    print(f"\n  Shared Genes (≥2 diseases): {len(sg['shared_genes'])}")
+    logger.info(f"\n  Shared Genes (≥2 diseases): {len(sg['shared_genes'])}")
     for g in sg["shared_genes"][:10]:
-        print(f"    {g['gene_id']:8s} — {g['disease_count']} diseases: {', '.join(g['diseases'])}")
+        logger.info(f"    {g['gene_id']:8s} — {g['disease_count']} diseases: {', '.join(g['diseases'])}")
 
     sd = results["shared_drugs"]
-    print(f"\n  Shared Drugs (≥2 diseases): {len(sd['shared_drugs'])}")
+    logger.info(f"\n  Shared Drugs (≥2 diseases): {len(sd['shared_drugs'])}")
     for d in sd["shared_drugs"][:10]:
-        print(f"    {d['drug_id']:20s} — {d['disease_count']} diseases: {', '.join(d['diseases'])}")
+        logger.info(f"    {d['drug_id']:20s} — {d['disease_count']} diseases: {', '.join(d['diseases'])}")
 
     sp = results["shared_pathways"]
-    print(f"\n  Shared Pathways (≥2 diseases): {len(sp['shared_pathways'])}")
+    logger.info(f"\n  Shared Pathways (≥2 diseases): {len(sp['shared_pathways'])}")
     for p in sp["shared_pathways"][:10]:
-        print(f"    {p['pathway_id']:30s} — {p['disease_count']} diseases")
+        logger.info(f"    {p['pathway_id']:30s} — {p['disease_count']} diseases")
 
     ds = results["disease_similarity"]
-    print("\n  Most Similar Disease Pairs:")
+    logger.info("\n  Most Similar Disease Pairs:")
     for pair in ds[:5]:
-        print(f"    {pair['disease_a']} ↔ {pair['disease_b']}: "
+        logger.info(f"    {pair['disease_a']} ↔ {pair['disease_b']}: "
               f"{pair['overall_similarity']:.4f} "
               f"(genes:{pair['gene_similarity']:.3f}, "
               f"drugs:{pair['drug_similarity']:.3f}, "
               f"pathways:{pair['pathway_similarity']:.3f})")
 
     mdd = results["multi_disease_drugs"]
-    print(f"\n  Multi-Disease Drug Candidates: {len(mdd)}")
+    logger.info(f"\n  Multi-Disease Drug Candidates: {len(mdd)}")
     tiers = {}
     for d in mdd:
         tiers[d["tier"]] = tiers.get(d["tier"], 0) + 1
     for tier, count in sorted(tiers.items()):
-        print(f"    {tier}: {count}")
+        logger.info(f"    {tier}: {count}")
 
 
 def print_top_drugs(results: dict, top_n: int = 20):
     """Print top multi-disease drugs."""
     mdd = results["multi_disease_drugs"][:top_n]
-    print("\n" + "=" * 75)
-    print(f"💊 TOP {top_n} MULTI-DISEASE DRUG CANDIDATES")
-    print("=" * 75)
+    logger.info("\n" + "=" * 75)
+    logger.info(f"💊 TOP {top_n} MULTI-DISEASE DRUG CANDIDATES")
+    logger.info("=" * 75)
 
     for i, d in enumerate(mdd, 1):
         tier_emoji = {
@@ -706,17 +742,17 @@ def print_top_drugs(results: dict, top_n: int = 20):
             "Tier 4 — Disease-Specific": "🟢",
         }.get(d["tier"], "")
 
-        print(f"\n  #{i} | {tier_emoji} {d['tier']}")
-        print("  " + "─" * 50)
-        print(f"  💊 Drug:      {d['drug_name'][:60]}")
-        print(f"  🌐 Diseases:  {d['disease_count']} ({', '.join(d['diseases'])})")
-        print(f"  🎯 Targets:   {', '.join(d['targets']) if d['targets'] else 'N/A'}")
-        print(f"  ⭐ Score:     {d['composite_score']:.2f}/10")
-        print(f"     ├─ Disease Coverage:           {d['disease_coverage']}/10")
-        print(f"     ├─ Target Centrality:          {d['target_centrality']}/10")
-        print(f"     ├─ Pathway Breadth:            {d['pathway_breadth']}/10")
-        print(f"     ├─ Mechanistic Transferability:{d['mechanistic_transferability']}/10")
-        print(f"     └─ Novelty:                    {d['novelty']}/10")
+        logger.info(f"\n  #{i} | {tier_emoji} {d['tier']}")
+        logger.info("  " + "─" * 50)
+        logger.info(f"  💊 Drug:      {d['drug_name'][:60]}")
+        logger.info(f"  🌐 Diseases:  {d['disease_count']} ({', '.join(d['diseases'])})")
+        logger.info(f"  🎯 Targets:   {', '.join(d['targets']) if d['targets'] else 'N/A'}")
+        logger.info(f"  ⭐ Score:     {d['composite_score']:.2f}/10")
+        logger.info(f"     ├─ Disease Coverage:           {d['disease_coverage']}/10")
+        logger.info(f"     ├─ Target Centrality:          {d['target_centrality']}/10")
+        logger.info(f"     ├─ Pathway Breadth:            {d['pathway_breadth']}/10")
+        logger.info(f"     ├─ Mechanistic Transferability:{d['mechanistic_transferability']}/10")
+        logger.info(f"     └─ Novelty:                    {d['novelty']}/10")
 
 
 def print_repurposing(results: dict, top_n: int = 15):
@@ -724,18 +760,18 @@ def print_repurposing(results: dict, top_n: int = 15):
     recs = results["cross_disease_repurposing"]
     novel = [r for r in recs if not r["already_used_in_target"]][:top_n]
 
-    print("\n" + "=" * 75)
-    print(f"🔀 TOP {top_n} CROSS-DISEASE REPURPOSING OPPORTUNITIES")
-    print("=" * 75)
+    logger.info("\n" + "=" * 75)
+    logger.info(f"🔀 TOP {top_n} CROSS-DISEASE REPURPOSING OPPORTUNITIES")
+    logger.info("=" * 75)
 
     for i, r in enumerate(novel[:top_n], 1):
-        print(f"\n  #{i}")
-        print("  " + "─" * 50)
-        print(f"  🔀 {r['source_disease_name']} → {r['target_disease_name']}")
-        print(f"  💊 {r['drug_name'][:60]}")
-        print(f"  🎯 Target: {r['drug_target']}")
-        print(f"  🧬 Matched Genes: {', '.join(r['matched_genes'])}")
-        print(f"  📊 Confidence: {r['confidence']}/10")
+        logger.info(f"\n  #{i}")
+        logger.info("  " + "─" * 50)
+        logger.info(f"  🔀 {r['source_disease_name']} → {r['target_disease_name']}")
+        logger.info(f"  💊 {r['drug_name'][:60]}")
+        logger.info(f"  🎯 Target: {r['drug_target']}")
+        logger.info(f"  🧬 Matched Genes: {', '.join(r['matched_genes'])}")
+        logger.info(f"  📊 Confidence: {r['confidence']}/10")
 
 
 def main():
@@ -760,7 +796,7 @@ def main():
     if args.export_html:
         from med_research.pipeline.cross_disease.report import generate_html_report
         generate_html_report(results)
-        print("\n✅ HTML report generated: cross_disease/report.html")
+        logger.info("\n✅ HTML report generated: cross_disease/report.html")
 
     return results
 

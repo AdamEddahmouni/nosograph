@@ -27,11 +27,15 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from med_research.pipeline.knowledge_graph.config import load_drugs as config_load_drugs
+import logging
 
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 DATA_DIR = Path(__file__).parent / "data"
+
+logger = logging.getLogger(__name__)
+last_coverage = None
 
 # ── Mechanism categories for orthogonality scoring ──────────────────────
 
@@ -381,19 +385,19 @@ def score_drug_pairs(drugs: dict, progress_callback=None) -> list:
 
 def analyze(scored_pairs: list):
     """Print statistical summary of scored pairs."""
-    print("\n" + "=" * 75)
-    print("📊 DRUG SYNERGY ANALYSIS SUMMARY")
-    print("=" * 75)
+    logger.info("\n" + "=" * 75)
+    logger.info("📊 DRUG SYNERGY ANALYSIS SUMMARY")
+    logger.info("=" * 75)
 
     tier_counts = {}
     for p in scored_pairs:
         tier_counts[p["tier"]] = tier_counts.get(p["tier"], 0) + 1
 
-    print(f"\n  Total drug pairs evaluated: {len(scored_pairs)}")
+    logger.info(f"\n  Total drug pairs evaluated: {len(scored_pairs)}")
     scores = [p["composite_score"] for p in scored_pairs]
-    print(f"  Score range: {min(scores):.2f} - {max(scores):.2f}")
-    print(f"  Mean score: {sum(scores)/len(scores):.2f}")
-    print("\n  Distribution by tier:")
+    logger.info(f"  Score range: {min(scores):.2f} - {max(scores):.2f}")
+    logger.info(f"  Mean score: {sum(scores)/len(scores):.2f}")
+    logger.info("\n  Distribution by tier:")
     for tier in [
         "🔴 Tier 1 — Strong Synergy Potential",
         "🟠 Tier 2 — Promising Synergy",
@@ -402,7 +406,7 @@ def analyze(scored_pairs: list):
     ]:
         count = tier_counts.get(tier, 0)
         label = tier.split("—")[0].strip()
-        print(f"    {label}: {count} pairs")
+        logger.info(f"    {label}: {count} pairs")
 
     # Top drugs appearing most in top pairs
     drug_mentions = {}
@@ -410,28 +414,28 @@ def analyze(scored_pairs: list):
         drug_mentions[p["drug_a_name"]] = drug_mentions.get(p["drug_a_name"], 0) + 1
         drug_mentions[p["drug_b_name"]] = drug_mentions.get(p["drug_b_name"], 0) + 1
 
-    print("\n  Most versatile drugs (appearing most in top-50 pairs):")
+    logger.info("\n  Most versatile drugs (appearing most in top-50 pairs):")
     for drug_name, count in sorted(drug_mentions.items(), key=lambda x: x[1], reverse=True)[:8]:
-        print(f"    {drug_name}: {count} synergistic pairings")
+        logger.info(f"    {drug_name}: {count} synergistic pairings")
 
 
 def print_top_pairs(scored_pairs: list, top_n: int = 15):
     """Print the top N synergistic drug pairs."""
-    print("\n" + "=" * 75)
-    print(f"🏆 TOP {top_n} SYNERGISTIC DRUG PAIRS")
-    print("=" * 75)
+    logger.info("\n" + "=" * 75)
+    logger.info(f"🏆 TOP {top_n} SYNERGISTIC DRUG PAIRS")
+    logger.info("=" * 75)
 
     for i, p in enumerate(scored_pairs[:top_n], 1):
-        print(f"\n  #{i} | {p['tier']}")
-        print("  " + "─" * 50)
-        print(f"  💊 Drug A:  {p['drug_a_name']}")
-        print(f"  💊 Drug B:  {p['drug_b_name']}")
-        print(f"  ⭐ Score:   {p['composite_score']:.2f}/10")
-        print(f"     ├─ Target Complementarity:   {p['target_complementarity']}/10")
-        print(f"     ├─ Pathway Diversity:        {p['pathway_diversity']}/10")
-        print(f"     ├─ Mechanism Orthogonality:  {p['mechanism_orthogonality']}/10")
-        print(f"     ├─ Safety Non-overlap:       {p['safety_non_overlap']}/10")
-        print(f"     └─ Combined Evidence:        {p['combined_evidence']}/10")
+        logger.info(f"\n  #{i} | {p['tier']}")
+        logger.info("  " + "─" * 50)
+        logger.info(f"  💊 Drug A:  {p['drug_a_name']}")
+        logger.info(f"  💊 Drug B:  {p['drug_b_name']}")
+        logger.info(f"  ⭐ Score:   {p['composite_score']:.2f}/10")
+        logger.info(f"     ├─ Target Complementarity:   {p['target_complementarity']}/10")
+        logger.info(f"     ├─ Pathway Diversity:        {p['pathway_diversity']}/10")
+        logger.info(f"     ├─ Mechanism Orthogonality:  {p['mechanism_orthogonality']}/10")
+        logger.info(f"     ├─ Safety Non-overlap:       {p['safety_non_overlap']}/10")
+        logger.info(f"     └─ Combined Evidence:        {p['combined_evidence']}/10")
 
 
 def compute_synergy(progress_callback=None, disease_id: str = "sle", save: bool = True) -> list:
@@ -445,6 +449,15 @@ def compute_synergy(progress_callback=None, disease_id: str = "sle", save: bool 
             so per-disease scoring doesn't clobber the last-run results).
     """
     cb = progress_callback or (lambda p, m: None)
+
+    from med_research.diseases.coverage import module_coverage
+
+    global last_coverage
+    coverage = module_coverage(disease_id, "synergy", ("genes", "drugs"))
+    last_coverage = coverage
+    if not coverage.is_runnable:
+        cb(100, f"Synergy analysis blocked: {', '.join(coverage.missing_inputs)}")
+        return []
 
     cb(0, "Loading drug library…")
     drugs = load_drugs(disease_id)
@@ -481,7 +494,7 @@ def main():
     if args.export_html:
         from med_research.pipeline.drug_synergy.report import generate_html_report
         generate_html_report(pairs, disease_id=args.disease)
-        print("\n✅ HTML report generated: drug_synergy/report.html")
+        logger.info("\n✅ HTML report generated: drug_synergy/report.html")
 
     return pairs
 

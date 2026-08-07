@@ -41,6 +41,7 @@ except ImportError:
     logger.info("⚠️  requests not installed. Install with: pip install requests")
 
 DATA_DIR = Path(__file__).parent / "data"
+last_coverage = None
 DR_DATA_DIR = Path(__file__).parent.parent / "drug_repurposing" / "data"
 
 STRING_API = "https://string-db.org/api"
@@ -485,7 +486,20 @@ def main():
     )
     args = parser.parse_args()
 
-    print("🔄 Loading gene and candidate data...")
+    from med_research.diseases.coverage import module_coverage
+
+    global last_coverage
+    coverage = module_coverage(args.disease, "ppi", ("genes",))
+    last_coverage = coverage
+    if not coverage.is_runnable:
+        logger.error(
+            "PPI analysis blocked for %s: %s",
+            args.disease,
+            ", ".join(coverage.missing_inputs),
+        )
+        return
+
+    logger.info("Loading gene and candidate data...")
     genes = load_genes(args.disease)
     gene_symbols = get_gene_symbols(genes)
     print(f"   Loaded {len(gene_symbols)} lupus gene symbols")

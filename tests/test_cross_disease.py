@@ -235,24 +235,21 @@ def test_compute_cross_disease_analysis_saves_json(tmp_path, monkeypatch):
 # ── Unit: CLI Print Functions ──────────────────────────────────────────────
 
 
-def test_analyze_prints(capsys, analysis_results):
+def test_analyze_prints(caplog, analysis_results):
     analyze(analysis_results)
-    captured = capsys.readouterr()
-    assert "CROSS-DISEASE DRUG REPURPOSING" in captured.out
-    assert "Diseases analyzed: 7" in captured.out
+    assert "CROSS-DISEASE DRUG REPURPOSING" in caplog.text
+    assert "Diseases analyzed: 7" in caplog.text
 
 
-def test_print_top_drugs_prints(capsys, analysis_results):
+def test_print_top_drugs_prints(caplog, analysis_results):
     print_top_drugs(analysis_results, top_n=5)
-    captured = capsys.readouterr()
-    assert "MULTI-DISEASE DRUG CANDIDATES" in captured.out
-    assert "Score:" in captured.out
+    assert "MULTI-DISEASE DRUG CANDIDATES" in caplog.text
+    assert "Score:" in caplog.text
 
 
-def test_print_repurposing_prints(capsys, analysis_results):
+def test_print_repurposing_prints(caplog, analysis_results):
     print_repurposing(analysis_results, top_n=5)
-    captured = capsys.readouterr()
-    assert "CROSS-DISEASE REPURPOSING OPPORTUNITIES" in captured.out
+    assert "CROSS-DISEASE REPURPOSING OPPORTUNITIES" in caplog.text
 
 
 # ── Comparative Modules ────────────────────────────────────────────────────

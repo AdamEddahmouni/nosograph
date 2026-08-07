@@ -27,11 +27,15 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from med_research.exceptions import DataValidationError
 from med_research.pipeline.knowledge_graph.config import load_relationships
+import logging
 
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 DATA_DIR = Path(__file__).parent / "data"
+
+logger = logging.getLogger(__name__)
+last_coverage = None
 
 # Module data dirs resolved from package layout (not CWD), so this works
 # regardless of where the process is launched from.
@@ -297,6 +301,15 @@ def compute_biomarker_matrix(progress_callback=None, disease_id: str = "sle", sa
     """
     cb = progress_callback or (lambda p, m: None)
 
+    from med_research.diseases.coverage import module_coverage
+
+    global last_coverage
+    coverage = module_coverage(disease_id, "biomarkers", ("genes",))
+    last_coverage = coverage
+    if not coverage.is_runnable:
+        cb(100, f"Biomarker analysis blocked: {', '.join(coverage.missing_inputs)}")
+        return []
+
     cb(0, "Loading knowledge graph genes...")
     from med_research.pipeline.knowledge_graph.builder import build_graph
     G = build_graph(disease_id)
@@ -336,44 +349,44 @@ def compute_biomarker_matrix(progress_callback=None, disease_id: str = "sle", sa
 
 def analyze(results: list):
     """Print summary."""
-    print("\n" + "=" * 75)
-    print("🧬 BIOMARKER DISCOVERY — Cross-Module Integration")
-    print("=" * 75)
+    logger.info("\n" + "=" * 75)
+    logger.info("🧬 BIOMARKER DISCOVERY — Cross-Module Integration")
+    logger.info("=" * 75)
 
     scores = [r["composite_score"] for r in results]
-    print(f"\n  {len(results)} genes analyzed across 5 platforms")
-    print(f"  Score range: {min(scores):.2f} - {max(scores):.2f}")
-    print(f"  Mean score: {sum(scores)/len(scores):.2f}")
+    logger.info(f"\n  {len(results)} genes analyzed across 5 platforms")
+    logger.info(f"  Score range: {min(scores):.2f} - {max(scores):.2f}")
+    logger.info(f"  Mean score: {sum(scores)/len(scores):.2f}")
 
     tier_counts = {}
     for r in results:
         tier_counts[r["tier"]] = tier_counts.get(r["tier"], 0) + 1
-    print("\n  Distribution by tier:")
+    logger.info("\n  Distribution by tier:")
     for tier in ["🔴 Tier 1 — Strong Biomarker", "🟠 Tier 2 — Promising Biomarker",
                   "🟡 Tier 3 — Emergent Biomarker", "🟢 Tier 4 — Investigational"]:
         count = tier_counts.get(tier, 0)
         label = tier.split("—")[0].strip()
-        print(f"    {label}: {count} biomarkers")
+        logger.info(f"    {label}: {count} biomarkers")
 
 
 def print_top_biomarkers(results: list, top_n: int = 15):
     """Print top biomarkers."""
-    print("\n" + "=" * 75)
-    print(f"🎯 TOP {top_n} BIOMARKER CANDIDATES")
-    print("=" * 75)
+    logger.info("\n" + "=" * 75)
+    logger.info(f"🎯 TOP {top_n} BIOMARKER CANDIDATES")
+    logger.info("=" * 75)
 
     for i, r in enumerate(results[:top_n], 1):
-        print(f"\n  #{i} | {r['tier']}")
-        print("  " + "─" * 50)
-        print(f"  🧬 Gene:      {r['gene_name']} ({r['gene_id']})")
-        print(f"  📂 Category:   {r.get('category', '')}")
-        print(f"  ⭐ Score:      {r['composite_score']:.2f}/10")
-        print(f"     ├─ Cross-Module Consistency: {r['cross_module_consistency']}/10")
-        print(f"     ├─ Expression Predictiveness: {r['expression_predictiveness']}/10")
-        print(f"     ├─ CAR-T Alignment:          {r['cart_alignment']}/10")
-        print(f"     ├─ Druggability:             {r['druggability']}/10")
-        print(f"     └─ Biomarker Novelty:        {r['biomarker_novelty']}/10")
-        print(f"  💊 Best Modality: {r['best_modality']} ({r['best_modality_score']})")
+        logger.info(f"\n  #{i} | {r['tier']}")
+        logger.info("  " + "─" * 50)
+        logger.info(f"  🧬 Gene:      {r['gene_name']} ({r['gene_id']})")
+        logger.info(f"  📂 Category:   {r.get('category', '')}")
+        logger.info(f"  ⭐ Score:      {r['composite_score']:.2f}/10")
+        logger.info(f"     ├─ Cross-Module Consistency: {r['cross_module_consistency']}/10")
+        logger.info(f"     ├─ Expression Predictiveness: {r['expression_predictiveness']}/10")
+        logger.info(f"     ├─ CAR-T Alignment:          {r['cart_alignment']}/10")
+        logger.info(f"     ├─ Druggability:             {r['druggability']}/10")
+        logger.info(f"     └─ Biomarker Novelty:        {r['biomarker_novelty']}/10")
+        logger.info(f"  💊 Best Modality: {r['best_modality']} ({r['best_modality_score']})")
 
 
 def main():
@@ -392,7 +405,7 @@ def main():
     if args.export_html:
         from med_research.pipeline.biomarker_discovery.report import generate_html_report
         generate_html_report(results, disease_id=args.disease)
-        print("\n✅ HTML report generated: biomarker_discovery/report.html")
+        logger.info("\n✅ HTML report generated: biomarker_discovery/report.html")
 
     return results
 

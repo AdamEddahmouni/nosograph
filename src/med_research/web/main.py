@@ -1,5 +1,6 @@
 """FastAPI application entry point for the Medical Research Platform API."""
 
+import logging
 import sys
 from contextlib import asynccontextmanager
 from pathlib import Path
@@ -30,6 +31,7 @@ from med_research.web.routers.jobs import router as jobs_router
 
 REPO_ROOT = Path(__file__).parent.parent.parent.parent
 PIPELINE_DIR = Path(__file__).parent.parent / "pipeline"
+logger = logging.getLogger(__name__)
 
 
 # ── Lifespan (startup / shutdown) ─────────────────────────────────────────
@@ -37,16 +39,20 @@ PIPELINE_DIR = Path(__file__).parent.parent / "pipeline"
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Pre-load the knowledge graph on startup for faster first request."""
-    print("🔄 Pre-loading knowledge graph...")
+    logger.info("Pre-loading knowledge graph...")
     from med_research.web.dependencies import get_knowledge_graph
 
     G = get_knowledge_graph()
-    print(f"✅ Knowledge graph loaded: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
+    logger.info(
+        "Knowledge graph loaded: %s nodes, %s edges",
+        G.number_of_nodes(),
+        G.number_of_edges(),
+    )
 
     yield
 
     # Shutdown: nothing to clean up currently
-    print("🔄 Shutting down...")
+    logger.info("Shutting down...")
 
 
 # ── App Creation ────────────────────────────────────────────────────────────

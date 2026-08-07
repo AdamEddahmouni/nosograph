@@ -20,6 +20,8 @@ FROM deps AS runtime
 
 COPY . .
 
+RUN python -m med_research.cli disease validate --all --strict
+
 RUN useradd -m appuser && chown -R appuser:appuser /app
 USER appuser
 

@@ -102,12 +102,11 @@ def test_compute_all_scores_saves_json(tmp_path, monkeypatch):
     assert data["total_genes"] >= 35
 
 
-def test_analyze_prints(capsys):
+def test_analyze_prints(caplog):
     genes = load_genes()
     gene = score_gene("PRDM1", genes["PRDM1"])
     analyze([gene])
-    captured = capsys.readouterr()
-    assert "1 genes scored" in captured.out
+    assert "1 genes scored" in caplog.text
 
 
 # ── Disease-Aware Scoring ────────────────────────────────────────────────

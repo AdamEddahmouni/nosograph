@@ -2,7 +2,7 @@
 
 > **Current-state note (2026-08-06):** This document preserves the 2026-07-25 audit for traceability, but several findings have since been resolved or mitigated. The supported runtime is the `src/med_research` package, the root `main.py` is a compatibility wrapper, all seven disease modules pass `python -m med_research.cli disease validate --all --strict`, and current usage is documented in `README.md`, `docs/evidence-workspace.md`, and `docs/api-reference.md`. Treat historical “Current state” sections below as dated audit observations, not the live API specification.
 
-**Resolved or mitigated findings:** legacy runtime entrypoints/static mounts, stale primary README guidance, incomplete seven-disease validation, unguarded `--reload` behavior, and **#2 KG JSON schema validation** (resolved 2026-08-07 — see `diseases/schemas.py`, `test_kg_schema_validation.py`, and extended `disease validate`). Authentication and rate-limiting middleware are present in the current FastAPI app but still require deployment-policy review. Remaining open work should be re-verified against the current tree before implementation.
+**Resolved or mitigated findings:** legacy runtime entrypoints/static mounts, stale primary README guidance, incomplete seven-disease validation, unguarded `--reload` behavior, **#2 KG JSON schema validation** (resolved 2026-08-07), **#3 legacy v1 directory cleanup** (archived and removed 2026-08-07), **#6 Docker non-root user** and **#8 multi-disease KG validation in Docker build** (present in current Dockerfile), **#14 dependency lock files** (`requirements-lock.txt`, `requirements-dev-lock.txt`), **#16 `.env.example`**, and **structured logging foundation** (`logging_config.py`, CLI `--verbose`/`--quiet`, pipeline module migration in progress). Authentication and rate-limiting middleware are present in the current FastAPI app but still require deployment-policy review. Remaining open work should be re-verified against the current tree before implementation.
 
 > **Audited:** 2026-07-25 | **Package:** `med-research` | **Version:** 2.0.0 (migration in progress)
 > **Scope:** `src/med_research/` (114 Python files), `tests/` (25 files), root config, Docker, Makefile, `scripts/`, legacy v1 directories
@@ -99,7 +99,9 @@
 
 ### 3. Pre-Reorganization Cleanup — 19 Legacy v1 Directories Duplicate v2 Package
 
-**Current state:** The project root is cluttered with 19 legacy v1 directories that are **functionally duplicated** by `src/med_research/pipeline/` and `src/med_research/web/`.
+> **Resolved 2026-08-07.** Legacy v1 directories were archived under `_archive_v1/` and removed from the working tree. Root `main.py` delegates to `med_research.cli`, and `web/main.py` mounts only v2 pipeline static paths.
+
+**Historical audit (2026-07-25):**
 
 **Legacy directories at root:**
 | Root Directory | Duplicated in | Issue |

@@ -12,9 +12,18 @@ DEFAULT_MODULE_INPUTS = {
     "literature": ("genes", "drugs", "pathways", "pubmed_queries"),
     "gwas": ("genes", "gwas_search_terms"),
     "enrichment": ("genes", "pathways"),
+    "ppi": ("genes",),
     "screening": ("genes", "drugs", "pathways", "screening_profile"),
     "safety": ("symptoms", "adverse_event_profile", "safety_risk"),
     "car_t": ("genes", "car_t_scores"),
+    "repurposing": ("genes", "drugs", "relationships"),
+    "synergy": ("genes", "drugs"),
+    "biomarkers": ("genes",),
+    "expression": ("genes", "drugs"),
+    "network_pharm": ("genes", "relationships"),
+    "ml_predictor": ("genes", "relationships"),
+    "clinical_trials": ("genes", "drugs", "trial_query"),
+    "cross_disease": ("genes", "drugs", "pathways"),
 }
 
 

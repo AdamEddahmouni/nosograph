@@ -20,6 +20,7 @@ Usage:
 
 import argparse
 import json
+import logging
 import sys
 from pathlib import Path
 
@@ -33,6 +34,8 @@ from med_research.pipeline.knowledge_graph.config import (
 )
 
 DATA_DIR = Path(__file__).parent / "data"
+
+logger = logging.getLogger(__name__)
 last_coverage = None
 
 
@@ -396,44 +399,44 @@ def compute_all_scores(progress_callback=None, disease_id: str = "sle") -> list:
 
 def analyze(results: list):
     """Print statistical summary."""
-    print("\n" + "=" * 75)
-    print("🔬 CAR-T RESPONSE PREDICTOR — Gene-Level Analysis")
-    print("=" * 75)
+    logger.info("\n" + "=" * 75)
+    logger.info("🔬 CAR-T RESPONSE PREDICTOR — Gene-Level Analysis")
+    logger.info("=" * 75)
 
     scores = [r["composite_score"] for r in results]
-    print(f"\n  {len(results)} genes scored for CD19 CAR-T suitability")
-    print(f"  Score range: {min(scores):.2f} - {max(scores):.2f}")
-    print(f"  Mean score: {sum(scores)/len(scores):.2f}")
+    logger.info(f"\n  {len(results)} genes scored for CD19 CAR-T suitability")
+    logger.info(f"  Score range: {min(scores):.2f} - {max(scores):.2f}")
+    logger.info(f"  Mean score: {sum(scores)/len(scores):.2f}")
 
     tier_counts = {}
     for r in results:
         tier_counts[r["tier"]] = tier_counts.get(r["tier"], 0) + 1
-    print("\n  Distribution by tier:")
+    logger.info("\n  Distribution by tier:")
     for tier in ["🔴 Tier 1 — Strong CAR-T Candidate", "🟠 Tier 2 — Good CAR-T Candidate",
                   "🟡 Tier 3 — Possible CAR-T Benefit", "🟢 Tier 4 — Limited CAR-T Benefit"]:
         count = tier_counts.get(tier, 0)
         label = tier.split("—")[0].strip()
-        print(f"    {label}: {count} genes")
+        logger.info(f"    {label}: {count} genes")
 
 
 def print_top_genes(results: list, top_n: int = 15):
     """Print the top N genes by CAR-T suitability."""
-    print("\n" + "=" * 75)
-    print(f"🎯 TOP {top_n} GENES FOR CD19 CAR-T SUITABILITY")
-    print("=" * 75)
+    logger.info("\n" + "=" * 75)
+    logger.info(f"🎯 TOP {top_n} GENES FOR CD19 CAR-T SUITABILITY")
+    logger.info("=" * 75)
 
     for i, r in enumerate(results[:top_n], 1):
-        print(f"\n  #{i} | {r['tier']}")
-        print("  " + "─" * 50)
-        print(f"  🧬 Gene:     {r['gene_name']}")
-        print(f"  📂 Category:  {r.get('category', '')}")
-        print(f"  ⭐ Score:     {r['composite_score']:.2f}/10")
-        print(f"     ├─ B Cell Dependency:     {r['b_cell_dependency']}/10")
-        print(f"     ├─ Autoantibody Assoc:    {r['autoantibody_association']}/10")
-        print(f"     ├─ Plasma Cell Relevance: {r['plasma_cell_relevance']}/10")
-        print(f"     ├─ CD19 Targeting:        {r['cd19_targeting']}/10")
-        print(f"     └─ Clinical Evidence:     {r['clinical_evidence']}/10")
-        print(f"  💡 {r['recommendation']}")
+        logger.info(f"\n  #{i} | {r['tier']}")
+        logger.info("  " + "─" * 50)
+        logger.info(f"  🧬 Gene:     {r['gene_name']}")
+        logger.info(f"  📂 Category:  {r.get('category', '')}")
+        logger.info(f"  ⭐ Score:     {r['composite_score']:.2f}/10")
+        logger.info(f"     ├─ B Cell Dependency:     {r['b_cell_dependency']}/10")
+        logger.info(f"     ├─ Autoantibody Assoc:    {r['autoantibody_association']}/10")
+        logger.info(f"     ├─ Plasma Cell Relevance: {r['plasma_cell_relevance']}/10")
+        logger.info(f"     ├─ CD19 Targeting:        {r['cd19_targeting']}/10")
+        logger.info(f"     └─ Clinical Evidence:     {r['clinical_evidence']}/10")
+        logger.info(f"  💡 {r['recommendation']}")
 
 
 def main():
@@ -452,7 +455,7 @@ def main():
     if args.export_html:
         from med_research.pipeline.car_t_predictor.report import generate_html_report
         generate_html_report(results, disease_id=args.disease)
-        print("\n✅ HTML report generated: car_t_predictor/report.html")
+        logger.info("\n✅ HTML report generated: car_t_predictor/report.html")
 
     return results
 

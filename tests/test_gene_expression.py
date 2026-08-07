@@ -161,7 +161,7 @@ def test_compute_all_correlations_save_false_skips_write(tmp_path, monkeypatch):
     assert (tmp_path / "expression_correlations.json").exists()
 
 
-def test_analyze_prints(capsys):
+def test_analyze_prints(caplog):
     drug = {
         "drug_id": "test",
         "drug_name": "Test Drug",
@@ -174,8 +174,7 @@ def test_analyze_prints(capsys):
         "tier": "🔴 Tier 1 — Strong Expression Reversal",
     }
     analyze([drug])
-    captured = capsys.readouterr()
-    assert "1 drugs scored" in captured.out
+    assert "1 drugs scored" in caplog.text
 
 
 # ── Report ────────────────────────────────────────────────────────────────

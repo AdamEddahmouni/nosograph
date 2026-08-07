@@ -239,7 +239,7 @@ class TestScoreCandidates:
 class TestAnalyzeFunction:
     """Smoke tests for analyze()."""
 
-    def test_analyze_produces_output(self, sample_graph, sample_genes, sample_candidates, capsys):
+    def test_analyze_produces_output(self, sample_graph, sample_genes, sample_candidates, caplog):
         from med_research.pipeline.drug_repurposing.engine import (
             analyze,
             identify_untargeted_genes,
@@ -252,10 +252,9 @@ class TestAnalyzeFunction:
         scored = [c for c in scored if c["gene_id"] in untargeted_ids]
 
         analyze(scored)
-        captured = capsys.readouterr()
-        assert "REPURPOSING ANALYSIS SUMMARY" in captured.out
-        assert "Distribution by priority tier" in captured.out
-        assert "Most promising drugs" in captured.out
+        assert "REPURPOSING ANALYSIS SUMMARY" in caplog.text
+        assert "Distribution by priority tier" in caplog.text
+        assert "Most promising drugs" in caplog.text
 
 
 class TestPathwayProximityHelper:
@@ -360,7 +359,7 @@ class TestPathwayProximityHelper:
 class TestPrintTopCandidates:
     """Smoke tests for print_top_candidates()."""
 
-    def test_produces_output(self, sample_graph, sample_genes, sample_candidates, capsys):
+    def test_produces_output(self, sample_graph, sample_genes, sample_candidates, caplog):
         from med_research.pipeline.drug_repurposing.engine import (
             print_top_candidates,
             score_candidates,
@@ -368,16 +367,16 @@ class TestPrintTopCandidates:
 
         scored = score_candidates(sample_graph, sample_candidates, sample_genes)
         print_top_candidates(scored, top_n=5)
-        captured = capsys.readouterr()
-        assert "TOP 5 REPURPOSING CANDIDATES" in captured.out
-        assert "Drug:" in captured.out
-        assert "Score:" in captured.out
+
+        assert "TOP 5 REPURPOSING CANDIDATES" in caplog.text
+        assert "Drug:" in caplog.text
+        assert "Score:" in caplog.text
 
 
 class TestPrintGeneAnalysis:
     """Smoke tests for print_gene_analysis()."""
 
-    def test_gene_with_candidates(self, sample_graph, sample_genes, sample_candidates, capsys):
+    def test_gene_with_candidates(self, sample_graph, sample_genes, sample_candidates, caplog):
         from med_research.pipeline.drug_repurposing.engine import (
             print_gene_analysis,
             score_candidates,
@@ -385,10 +384,10 @@ class TestPrintGeneAnalysis:
 
         scored = score_candidates(sample_graph, sample_candidates, sample_genes)
         print_gene_analysis(scored, sample_genes, "BTK")
-        captured = capsys.readouterr()
-        assert "BTK" in captured.out
 
-    def test_gene_without_candidates(self, sample_graph, sample_genes, sample_candidates, capsys):
+        assert "BTK" in caplog.text
+
+    def test_gene_without_candidates(self, sample_graph, sample_genes, sample_candidates, caplog):
         from med_research.pipeline.drug_repurposing.engine import (
             print_gene_analysis,
             score_candidates,
@@ -396,8 +395,8 @@ class TestPrintGeneAnalysis:
 
         scored = score_candidates(sample_graph, sample_candidates, sample_genes)
         print_gene_analysis(scored, sample_genes, "NONEXISTENT")
-        captured = capsys.readouterr()
-        assert "No repurposing candidates" in captured.out
+
+        assert "No repurposing candidates" in caplog.text
 
 
 class TestLoadFunctions:

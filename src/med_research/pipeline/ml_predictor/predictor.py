@@ -37,6 +37,7 @@ from med_research.pipeline.knowledge_graph.builder import build_graph
 logger = logging.getLogger(__name__)
 DATA_DIR = Path(__file__).parent / "data"
 PROJECT_ROOT = Path(__file__).parent.parent
+last_coverage = None
 
 # Optional imports
 XGB_AVAILABLE = False
@@ -381,14 +382,33 @@ def main():
         "--no-shap", action="store_true",
         help="Skip SHAP analysis (faster)",
     )
+    parser.add_argument(
+        "--disease", "-d", default="sle",
+        help="Disease ID (default: sle)",
+    )
     args = parser.parse_args()
+
+    from med_research.diseases.coverage import module_coverage
+
+    global last_coverage
+    coverage = module_coverage(
+        args.disease, "ml_predictor", ("genes", "relationships")
+    )
+    last_coverage = coverage
+    if not coverage.is_runnable:
+        logger.error(
+            "ML predictor blocked for %s: %s",
+            args.disease,
+            ", ".join(coverage.missing_inputs),
+        )
+        return {"error": "blocked", "coverage": coverage.to_dict()}
 
     if not XGB_AVAILABLE:
         print("⚠️  XGBoost not installed. Install with: pip install xgboost scikit-learn")
         print("   Running in feature-engineering-only mode...")
 
-    print("🔄 Building knowledge graph...")
-    G = build_graph()
+    logger.info("Building knowledge graph...")
+    G = build_graph(args.disease)
     print(f"   Graph: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
 
     results = train_and_predict(G, top_n=args.top)
