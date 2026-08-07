@@ -6,7 +6,9 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
-from med_research.pipeline.cross_disease.analyzer import compute_cross_disease_analysis
+from med_research.pipeline.cross_disease.analyzer import (  # noqa: E402
+    compute_cross_disease_analysis,  # noqa: E402
+)
 
 
 def run_cross_disease_analysis(disease_id: str = None):

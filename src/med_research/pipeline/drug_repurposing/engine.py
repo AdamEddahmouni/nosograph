@@ -75,7 +75,8 @@ def compute_pathway_proximity(G, gene_id: str, candidate: dict) -> float:
     We look at the distance between the gene node and the drug's target nodes
     (if the drug exists in the graph), or pathway-level proximity.
     """
-    gene_label = G.nodes[gene_id].get("label", gene_id)
+    # Preserve the graph lookup contract: an unknown gene should fail loudly.
+    G.nodes[gene_id]
 
     # If the drug is in our knowledge graph, use network distance
     drug_nodes = [
@@ -115,7 +116,7 @@ def compute_pathway_proximity(G, gene_id: str, candidate: dict) -> float:
 def identify_untargeted_genes(G, disease_id: str = "sle") -> list:
     """Identify active-disease genes with no direct drug targeting them."""
     targeted_genes = set()
-    for u, v, d in G.edges(data=True):
+    for _, v, d in G.edges(data=True):
         if d.get("type") == "TARGETS" and G.nodes[v].get("type") == "gene":
             targeted_genes.add(v)
 
@@ -172,10 +173,7 @@ def compute_composite_score(candidate: dict) -> float:
 
     composite = 0.0
     for key, weight in weights.items():
-        if key == "adverse_event_score":
-            score = ae_score
-        else:
-            score = candidate.get(key, 5)
+        score = ae_score if key == "adverse_event_score" else candidate.get(key, 5)
         composite += score * weight
 
     return round(composite, 2)
@@ -203,7 +201,10 @@ def score_candidates(G, candidates: list, genes: dict, disease_id: str = "sle") 
         # Compute adverse event score from profiler if available
         adverse_score = candidate.get("safety_score", 5)
         try:
-            from med_research.pipeline.adverse_events.profiler import compute_adverse_event_score, load_profiles
+            from med_research.pipeline.adverse_events.profiler import (
+                compute_adverse_event_score,
+                load_profiles,
+            )
             # Match by drug ID from the KG drugs dict (same IDs as profiles)
             for drug_id, drug_data in drugs.items():
                 if drug_data.get("name", "").lower() in candidate["drug_name"].lower() or \

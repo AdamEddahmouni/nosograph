@@ -105,9 +105,6 @@ class ContentExtractor:
         self.stats["total_sentences"] += len(sentences)
         self.stats["total_tokens"] += total_tokens
 
-        # Build a set of terms to check (lowercase, pre-compute)
-        abstract_lower = abstract.lower()
-
         kept = []
         for sentence in sentences:
             sent_lower = sentence.lower()
@@ -144,8 +141,6 @@ class ContentExtractor:
         for article in articles:
             fa = dict(article)
             original_abstract = fa.get("abstract", "")
-            original_title = fa.get("title", "")
-
             fa["abstract"] = self.filter_abstract(original_abstract)
 
             filtered.append(fa)

@@ -39,20 +39,20 @@ class TestBuildGraph:
         assert node["prevalence"] == "~5 million worldwide"
 
     def test_gene_nodes_have_required_fields(self, sample_graph):
-        for node, data in sample_graph.nodes(data=True):
+        for _, data in sample_graph.nodes(data=True):
             if data.get("type") == "gene":
                 assert "label" in data
                 assert "chromosome" in data
                 assert "category" in data
 
     def test_drug_nodes_have_required_fields(self, sample_graph):
-        for node, data in sample_graph.nodes(data=True):
+        for _, data in sample_graph.nodes(data=True):
             if data.get("type") == "drug":
                 assert "label" in data
                 assert "target" in data
 
     def test_pathway_nodes_have_required_fields(self, sample_graph):
-        for node, data in sample_graph.nodes(data=True):
+        for _, data in sample_graph.nodes(data=True):
             if data.get("type") == "pathway":
                 assert "label" in data
                 assert "description" in data

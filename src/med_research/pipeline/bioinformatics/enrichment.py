@@ -94,7 +94,7 @@ def get_lupus_gene_list(
         # If untargeted_only, filter out genes targeted by drugs
         if untargeted_only and G is not None:
             targeted = False
-            for u, v, d in G.edges(data=True):
+            for _, v, d in G.edges(data=True):
                 if d.get("type") == "TARGETS" and v == gene_id:
                     targeted = True
                     break
@@ -175,7 +175,6 @@ def run_enrichment(
 
     results = {}
     for library in libraries:
-        lib_short = library.split("_")[0]
         logger.info(f"\n   📚 {library}...")
 
         try:
@@ -348,7 +347,7 @@ def analyze(enrichment_results: dict, gene_list: list, kg_matches: dict):
 
     if kg_matches:
         print(f"\n  🔗 Cross-reference with KG pathways ({len(kg_matches)} matches):")
-        for key, matches_list in sorted(
+        for _, matches_list in sorted(
             kg_matches.items(),
             key=lambda x: min(m["adj_p_value"] for m in x[1]),
         ):

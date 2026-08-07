@@ -2,7 +2,6 @@
 
 import pytest
 
-
 DISEASES = ["sle", "ra", "ms", "ss", "ssc", "t1d", "ibd"]
 
 

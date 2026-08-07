@@ -13,10 +13,10 @@ identifies literature-supported repurposing candidates.
 import json
 from pathlib import Path
 
+from med_research.pipeline.knowledge_graph.config import load_drugs, load_genes, load_pathways
+
 PROJECT_ROOT = Path(__file__).parent.parent
 DR_DATA_DIR = PROJECT_ROOT / "drug_repurposing" / "data"
-
-from med_research.pipeline.knowledge_graph.config import load_drugs, load_genes, load_pathways
 
 # ── Optional spaCy NER ──────────────────────────────────────────────────
 _biomedical_ner = None

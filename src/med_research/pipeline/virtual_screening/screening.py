@@ -40,16 +40,20 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
+import logging  # noqa: E402
+
+from med_research.pipeline.knowledge_graph.config import (
+    load_drugs as config_load_drugs,  # noqa: E402
+)
+from med_research.pipeline.knowledge_graph.config import (
+    load_genes as config_load_genes,  # noqa: E402
+)
+
 # The legacy SLE repurposing cache lives beside the pipeline modules.  Keep
 # this path scoped to the SLE compatibility branch; non-SLE scoring never
 # consults it.
 PROJECT_ROOT = Path(__file__).parent.parent
 DATA_DIR = Path(__file__).parent / "data"
-
-import logging
-
-from med_research.pipeline.knowledge_graph.config import load_drugs as config_load_drugs
-from med_research.pipeline.knowledge_graph.config import load_genes as config_load_genes
 
 logger = logging.getLogger(__name__)
 # ── Optional RDKit / AutoDock Vina detection ────────────────────────────
@@ -574,8 +578,8 @@ def screen_compounds(
     )
     try:
         from med_research.pipeline.virtual_screening.screening_strategy import (
-            strategy_for_disease,
             strategy_fingerprint,
+            strategy_for_disease,
         )
         strategy = strategy_for_disease(disease_id)
         strategy_id = strategy.strategy_id

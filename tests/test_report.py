@@ -83,7 +83,7 @@ class TestGenerateHtmlReport:
 
         monkeypatch.setattr(report_module, "Path", PatchedPath)
 
-        result = report_module.generate_html_report(scored, untargeted, sample_genes, sample_graph)
+        report_module.generate_html_report(scored, untargeted, sample_genes, sample_graph)
         assert out_path.exists()
         content = out_path.read_text(encoding="utf-8")
         assert "<!DOCTYPE html>" in content

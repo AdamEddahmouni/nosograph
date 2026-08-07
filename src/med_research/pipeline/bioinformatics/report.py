@@ -162,7 +162,7 @@ def _generate_enrichment_dotplot(enrichment_results: dict, max_terms: int = 40) 
     ax.set_facecolor("#0a0a0f")
 
     # Plot
-    scatter = ax.scatter(
+    ax.scatter(
         neg_log_ps,
         range(len(terms)),
         s=sizes,
@@ -290,9 +290,6 @@ def _build_stats_cards(
     cards = ""
 
     if enrichment_results:
-        n_enriched = sum(
-            len(r.get("terms", [])) for r in enrichment_results.values()
-        )
         n_sig = sum(
             1
             for r in enrichment_results.values()
@@ -420,7 +417,7 @@ def _build_kg_matches_section(kg_matches: dict) -> str:
         return ""
 
     matches_html = ""
-    for key, matches_list in sorted(
+    for _, matches_list in sorted(
         kg_matches.items(),
         key=lambda x: min(m["adj_p_value"] for m in x[1]),
     ):
@@ -463,7 +460,6 @@ def _generate_ppi_hub_chart(hub_scores: list, ppi_crossref: dict) -> str:
 
     symbols = [h["symbol"] for h in lupus_hubs]
     hub_vals = [h["hub_score"] for h in lupus_hubs]
-    degrees = [h.get("degree", 0) for h in lupus_hubs]
 
     # Check if hub has candidates
     matched_ids = {m["gene_id"] for m in ppi_crossref.get("hub_candidate_matches", [])} if ppi_crossref else set()
@@ -476,7 +472,7 @@ def _generate_ppi_hub_chart(hub_scores: list, ppi_crossref: dict) -> str:
     fig.patch.set_facecolor("#0a0a0f")
     ax.set_facecolor("#0a0a0f")
 
-    bars = ax.barh(range(len(symbols)), hub_vals, color=bar_colors, height=0.6, zorder=2)
+    ax.barh(range(len(symbols)), hub_vals, color=bar_colors, height=0.6, zorder=2)
 
     ax.set_yticks(range(len(symbols)))
     ax.set_yticklabels(symbols, fontsize=9, color="#e0e0e8")
@@ -497,7 +493,7 @@ def _generate_ppi_hub_chart(hub_scores: list, ppi_crossref: dict) -> str:
         plt.Line2D([0], [0], color="#4ade80", linewidth=8, label="Has repurposing candidate"),
         plt.Line2D([0], [0], color="#818cf8", linewidth=8, label="No candidate yet"),
     ]
-    legend = ax.legend(
+    ax.legend(
         handles=legend_handles, loc="lower right", fontsize=7,
         framealpha=0.9, facecolor="#13131a", edgecolor="#252535", labelcolor="#787890",
     )
@@ -512,7 +508,7 @@ def _generate_ppi_hub_chart(hub_scores: list, ppi_crossref: dict) -> str:
     return base64.b64encode(buf.read()).decode("utf-8")
 
 
-def _run_ppi_communities(G: "nx.Graph") -> dict:
+def _run_ppi_communities(G) -> dict:
     """
     Detect communities using Louvain algorithm.
 
@@ -616,7 +612,7 @@ def _generate_ppi_network_plot(ppi_graph: dict, hub_scores: list) -> str:
     # Draw edges with weight-based alpha/width
     edge_widths = []
     edge_alphas = []
-    for u, v, data in G.edges(data=True):
+    for _, _, data in G.edges(data=True):
         score = data.get("score", 0.5)
         edge_widths.append(max(0.2, score * 2.5))
         edge_alphas.append(min(0.6, max(0.08, score * 0.5)))
@@ -715,7 +711,7 @@ def _generate_ppi_network_plot(ppi_graph: dict, hub_scores: list) -> str:
                        label=f"{n_communities} communities (Louvain)")
         )
 
-    legend = ax.legend(
+    ax.legend(
         handles=legend_handles, loc="upper left", fontsize=7,
         framealpha=0.9, facecolor="#13131a", edgecolor="#252535",
         labelcolor="#787890", borderpad=0.8,
@@ -825,7 +821,6 @@ def _generate_ppi_interactive(ppi_graph: dict, hub_scores: list) -> str:
         deg = degrees.get(nid, 0)
         size = 15 + (deg / max_deg) * 30
         border = 3 if is_seed else 1
-        border_color = "#ffffff" if is_seed else "#1a1a24"
 
         title = (
             f"<b>{symbol}</b><br>"
@@ -871,7 +866,7 @@ def _build_ppi_section(hub_scores: list, ppi_crossref: dict, ppi_graph: dict = N
 
     # Top hubs table
     hub_rows = ""
-    for i, h in enumerate(hub_scores[:15], 1):
+    for h in hub_scores[:15]:
         is_lupus = h.get("is_lupus_gene", False)
         row_class = "lupus" if is_lupus else "nonlupus"
         marker = "🧬" if is_lupus else "🔹"
@@ -1166,7 +1161,7 @@ def _build_gwas_section(gwas_results: dict, gwas_crossref: dict) -> str:
 
     # Missing genes
     missing = gwas_crossref.get("missing", {})
-    for gene_id, info in missing.items():
+    for _, info in missing.items():
         cards_html += f"""
         <div class="gwas-card missing">
             <div style="display:flex;justify-content:space-between;margin-bottom:4px;">

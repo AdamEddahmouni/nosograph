@@ -266,7 +266,7 @@ class TestGenerateBioinformaticsReport:
 
         monkeypatch.setattr(report_module, "Path", PatchedPath)
 
-        result = report_module.generate_bioinformatics_report(
+        report_module.generate_bioinformatics_report(
             enrichment_results=sample_enrichment,
             gene_list=sample_gene_list,
         )

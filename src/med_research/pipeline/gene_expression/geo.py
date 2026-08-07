@@ -254,7 +254,6 @@ def fetch_expression_data(accession: str) -> Optional[str]:
     if cache_file.exists():
         return str(cache_file)
 
-    url = f"https://ftp.ncbi.nlm.nih.gov/geo/series/{accession[:len(accession)-3]}nnn/{accession}/matrix/{accession}_series_matrix.txt.gz"
     return None
 
 

@@ -2,10 +2,9 @@
 
 import pytest
 
-from med_research.diseases.coverage import module_coverage
 from med_research.diseases.base import Disease
+from med_research.diseases.coverage import module_coverage
 from med_research.pipeline.adverse_events.profiler import (
-    get_drug_profile,
     load_profiles,
     score_all_drugs,
 )

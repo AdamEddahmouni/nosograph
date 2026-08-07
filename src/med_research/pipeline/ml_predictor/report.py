@@ -18,7 +18,6 @@ try:
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
-    import matplotlib.ticker as ticker
     import numpy as np
     MPL_AVAILABLE = True
 except ImportError:
@@ -94,7 +93,7 @@ def _generate_importance_chart(importance: dict) -> str:
 
     bars = ax.barh(labels[::-1], values[::-1], color=colors[::-1], edgecolor="#252535",
                    linewidth=0.5, height=0.6)
-    for bar, val in zip(bars, values[::-1]):
+    for bar, val in zip(bars, values[::-1], strict=True):
         ax.text(bar.get_width() + 0.002, bar.get_y() + bar.get_height() / 2,
                 f"{val:.4f}", ha="left", va="center", fontsize=8, color="#e0e0e8")
 
@@ -128,7 +127,7 @@ def _generate_shap_chart(shap_summary: list) -> str:
 
     bars = ax.barh(labels[::-1], values[::-1], color=colors[::-1], edgecolor="#252535",
                    linewidth=0.5, height=0.6)
-    for bar, val in zip(bars, values[::-1]):
+    for bar, val in zip(bars, values[::-1], strict=True):
         ax.text(bar.get_width() + 0.0005, bar.get_y() + bar.get_height() / 2,
                 f"{val:.4f}", ha="left", va="center", fontsize=8, color="#e0e0e8")
 

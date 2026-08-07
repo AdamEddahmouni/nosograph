@@ -1451,10 +1451,7 @@ def test_mine_literature_defaults_to_disease_config(tmp_path, monkeypatch):
 def test_disease_queries_reject_unknown_or_missing_config():
     """Known disease config is used; unknown IDs never inherit SLE queries."""
     from med_research.diseases.base import Disease
-    from med_research.pipeline.literature_mining.miner import (
-        DEFAULT_QUERIES,
-        _disease_queries,
-    )
+    from med_research.pipeline.literature_mining.miner import _disease_queries
 
     assert _disease_queries("no_such_disease") == []
     assert _disease_queries("ra") == Disease("ra").config["PUBMED_QUERIES"]

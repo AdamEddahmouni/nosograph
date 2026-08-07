@@ -50,7 +50,6 @@ except ImportError:
     NP_AVAILABLE = False
 
 try:
-    from sklearn.metrics import classification_report
     from sklearn.model_selection import StratifiedKFold, cross_val_score
     from sklearn.preprocessing import StandardScaler
     SKLEARN_AVAILABLE = True
@@ -109,7 +108,7 @@ def extract_features(G) -> tuple:
 
     # Find targeted genes (those with TARGETS edge from a drug)
     targeted_genes = set()
-    for u, v, d in G.edges(data=True):
+    for _, v, d in G.edges(data=True):
         if d.get("type") == "TARGETS" and G.nodes[v].get("type") == "gene":
             targeted_genes.add(v)
 
@@ -134,9 +133,12 @@ def extract_features(G) -> tuple:
         # Which drugs target this gene
         targeting_drugs = []
         for u, v, d in G.edges(data=True):
-            if d.get("type") == "TARGETS" and v == gene_id:
-                if G.nodes[u].get("type") == "drug":
-                    targeting_drugs.append(u)
+            if (
+                d.get("type") == "TARGETS"
+                and v == gene_id
+                and G.nodes[u].get("type") == "drug"
+            ):
+                targeting_drugs.append(u)
 
         labels.append((is_targeted, targeting_drugs))
 
@@ -208,7 +210,7 @@ def train_and_predict(G, top_n: int = 15) -> dict:
     if len(X) == 0:
         return {"error": "No gene features extracted"}
 
-    y = np.array([l[0] for l in labels])
+    y = np.array([label[0] for label in labels])
     targeted_count = int(np.sum(y))
     untargeted_count = int(len(y) - targeted_count)
 
@@ -253,7 +255,7 @@ def train_and_predict(G, top_n: int = 15) -> dict:
     probas = model.predict_proba(X_scaled)[:, 1]
 
     # Feature importance
-    importance = dict(zip(feature_names, model.feature_importances_))
+    importance = dict(zip(feature_names, model.feature_importances_, strict=True))
     importance = dict(sorted(importance.items(), key=lambda x: x[1], reverse=True))
 
     # Build results

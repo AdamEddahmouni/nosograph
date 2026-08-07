@@ -118,7 +118,7 @@ class TestCrossReferenceWithKG:
         crossref = cross_reference_with_kg(sample_gwas_results, sample_kg_genes)
         validated = crossref["validated"]
 
-        for gene_name, info in validated.items():
+        for _, info in validated.items():
             assert "n_gwas_studies" in info
             assert "gwas_best_p" in info
             assert "category" in info
@@ -185,10 +185,7 @@ class TestExtractGeneAssociations:
             assert key in result
 
     def test_disease_search_terms_resolution(self):
-        from med_research.pipeline.bioinformatics.gwas import (
-            SLE_SEARCH_TERMS,
-            disease_search_terms,
-        )
+        from med_research.pipeline.bioinformatics.gwas import disease_search_terms
 
         # RA reads its own GWAS_SEARCH_TERMS config
         ra = disease_search_terms("ra")

@@ -105,7 +105,7 @@ def test_engine_load_config(engine):
 def test_engine_get_dockable_targets(engine):
     targets = engine.get_dockable_targets()
     assert len(targets) >= 10
-    for gid, cfg in targets.items():
+    for cfg in targets.values():
         assert cfg.get("grid_validated") is True
         assert cfg.get("grid_center") is not None
 

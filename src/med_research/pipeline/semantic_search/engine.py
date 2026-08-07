@@ -15,6 +15,7 @@ import argparse
 import json
 import logging
 import sys
+from contextlib import suppress
 from pathlib import Path
 
 logger = logging.getLogger(__name__)
@@ -106,10 +107,8 @@ class SemanticSearchEngine:
             DATA_DIR.mkdir(parents=True, exist_ok=True)
             self.client = chromadb.PersistentClient(path=str(CHROMA_DIR))
             # Delete existing collection on re-index to avoid duplicates
-            try:
+            with suppress(Exception):
                 self.client.delete_collection(self.collection_name)
-            except Exception:
-                pass
             self.collection = self.client.create_collection(
                 name=self.collection_name,
                 metadata={"description": f"PubMed abstracts for {self.disease_id} research"},

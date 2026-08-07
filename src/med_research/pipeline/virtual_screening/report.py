@@ -404,9 +404,9 @@ def _generate_comparison_chart(all_results: list) -> str:
     x = np.arange(len(labels))
     width = 0.35
 
-    bars1 = ax.bar(x - width / 2, real_scores, width, label="Real Docking (Vina)",
+    ax.bar(x - width / 2, real_scores, width, label="Real Docking (Vina)",
                    color="#34d399", edgecolor="#252535", linewidth=0.5)
-    bars2 = ax.bar(x + width / 2, prop_scores, width, label="Property-Based Estimate",
+    ax.bar(x + width / 2, prop_scores, width, label="Property-Based Estimate",
                    color="#818cf8", edgecolor="#252535", linewidth=0.5)
 
     ax.set_ylabel("Binding Score (0-10)", color="#787890", fontsize=9)

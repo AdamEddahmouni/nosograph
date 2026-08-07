@@ -896,14 +896,13 @@ def cmd_literature(args):
 
 def cmd_screening(args):
     """Run virtual drug screening."""
+    from med_research.diseases.coverage import module_coverage
     from med_research.pipeline.virtual_screening.screening import (
         build_compound_library,
         get_untargeted_genes,
         print_summary,
         screen_compounds,
     )
-
-    from med_research.diseases.coverage import module_coverage
     coverage = module_coverage(
         args.disease, "screening", ("genes", "drugs", "pathways", "screening_profile")
     )
@@ -997,14 +996,13 @@ def cmd_synergy(args):
 
 def cmd_safety(args):
     """Adverse event safety profiling."""
+    from med_research.diseases.coverage import module_coverage
     from med_research.pipeline.adverse_events.profiler import (
         get_drug_profile,
         get_safety_summary,
         print_analysis,
         score_all_drugs,
     )
-
-    from med_research.diseases.coverage import module_coverage
     coverage = module_coverage(
         args.disease, "safety", ("symptoms", "adverse_event_profile", "safety_risk")
     )
@@ -1383,13 +1381,12 @@ def _step_literature(args):
 
 
 def _step_screening(args):
+    from med_research.diseases.coverage import module_coverage
     from med_research.pipeline.virtual_screening.screening import (
         build_compound_library,
         get_untargeted_genes,
         screen_compounds,
     )
-
-    from med_research.diseases.coverage import module_coverage
     coverage = module_coverage(
         args.disease, "screening", ("genes", "drugs", "pathways", "screening_profile")
     )

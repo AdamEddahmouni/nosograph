@@ -12,7 +12,6 @@ import json
 from dataclasses import dataclass
 from typing import Any, Mapping
 
-
 SCORE_DIMENSIONS = (
     "binding_estimate",
     "druglikeness",

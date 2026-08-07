@@ -28,10 +28,12 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
+from med_research.pipeline.knowledge_graph.config import (
+    load_genes as config_load_genes,  # noqa: E402
+)
+
 DATA_DIR = Path(__file__).parent / "data"
 last_coverage = None
-
-from med_research.pipeline.knowledge_graph.config import load_genes as config_load_genes
 
 
 def load_json(path: Path) -> dict:

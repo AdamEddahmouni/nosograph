@@ -9,7 +9,6 @@ from __future__ import annotations
 
 from typing import Any, TypedDict
 
-
 # ── Core KG entity shapes (mirror diseases/schemas.py Pydantic models) ──
 
 

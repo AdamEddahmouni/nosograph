@@ -5,9 +5,9 @@ from med_research.pipeline.adverse_events.profiler import (
     count_disease_symptom_overlap,
     count_lupus_symptom_overlap,
     get_safety_summary,
+    score_dil_risk,
     score_disease_overlap,
     score_disease_specific_risk,
-    score_dil_risk,
     score_lupus_overlap,
 )
 

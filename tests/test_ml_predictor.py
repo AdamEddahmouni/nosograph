@@ -31,7 +31,7 @@ class TestExtractFeatures:
         from med_research.pipeline.ml_predictor.predictor import extract_features
         G = build_graph()
         _, gene_ids, labels = extract_features(G)
-        for gene_id, (is_targeted, drugs) in zip(gene_ids, labels):
+        for _, (is_targeted, drugs) in zip(gene_ids, labels, strict=True):
             assert isinstance(is_targeted, int)
             assert isinstance(drugs, list)
 
@@ -40,7 +40,7 @@ class TestExtractFeatures:
         from med_research.pipeline.ml_predictor.predictor import extract_features
         G = build_graph()
         _, gene_ids, labels = extract_features(G)
-        targeted = [g for g, (t, _) in zip(gene_ids, labels) if t]
+        targeted = [g for g, (t, _) in zip(gene_ids, labels, strict=True) if t]
         # Known targeted genes: BAFF, IFNAR1, Calcineurin, JAK1, TYK2, CD20, IMPDH,
         # Glucocorticoid Receptor, TLR7, TLR9, IKZF1, IKZF3
         assert len(targeted) >= 8
@@ -197,7 +197,8 @@ class TestGenerateMLReport:
         }
         report_path = generate_ml_report(results)
         assert report_path.endswith("ml_report.html")
-        html = open(report_path, encoding="utf-8").read()
+        with open(report_path, encoding="utf-8") as report_file:
+            html = report_file.read()
         assert "ML Target Predictor" in html
         assert "Bruton Tyrosine Kinase" in html
         assert "0.920" in html

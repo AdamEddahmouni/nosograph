@@ -442,14 +442,14 @@ class TestLoadKgEntities:
     def test_genes_have_expected_keys(self):
         from med_research.pipeline.clinical_trials.tracker import load_kg_entities
         entities = load_kg_entities()
-        for gene_id, gene in entities["genes"].items():
+        for gene in entities["genes"].values():
             assert "name" in gene
             assert "category" in gene
 
     def test_drugs_have_expected_keys(self):
         from med_research.pipeline.clinical_trials.tracker import load_kg_entities
         entities = load_kg_entities()
-        for drug_id, drug in entities["drugs"].items():
+        for drug in entities["drugs"].values():
             assert "name" in drug
             assert "target" in drug
 
@@ -555,9 +555,6 @@ class TestGenerateReport:
             },
         }
 
-        # Monkey-patch output path
-        import med_research.pipeline.clinical_trials.report as ct_report
-        original_path = ct_report.Path(__file__).parent if hasattr(ct_report.Path, '__call__') else ct_report.Path
         report_path = generate_ct_report(results)
         assert report_path.endswith("ct_report.html")
 
@@ -605,7 +602,8 @@ class TestGenerateReport:
         }
 
         report_path = generate_ct_report(results)
-        html = open(report_path, encoding="utf-8").read()
+        with open(report_path, encoding="utf-8") as report_file:
+            html = report_file.read()
 
         assert "Clinical Trial Tracker" in html
         assert "Phase Distribution" in html

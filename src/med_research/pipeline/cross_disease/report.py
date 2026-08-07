@@ -37,9 +37,8 @@ def generate_html_report(results: dict) -> str:
 
     # Top-5 JSON for radar chart
     top5 = mdd[:5]
-    colors = ["#818cf8", "#4ade80", "#f59e0b", "#f472b6", "#34d399"]
     top5_json_data = []
-    for i, d in enumerate(top5):
+    for d in top5:
         name = d["drug_name"].split("(")[0].strip()[:30]
         top5_json_data.append({
             "name": name,

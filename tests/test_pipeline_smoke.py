@@ -7,12 +7,12 @@ class TestPipelineSmoke:
     """End-to-end smoke tests for the SLE pipeline."""
 
     def test_build_graph_and_score_candidates(self):
-        from med_research.pipeline.knowledge_graph.builder import build_graph
-        from med_research.pipeline.knowledge_graph.config import load_genes
         from med_research.pipeline.drug_repurposing.engine import (
             identify_untargeted_genes,
             score_candidates,
         )
+        from med_research.pipeline.knowledge_graph.builder import build_graph
+        from med_research.pipeline.knowledge_graph.config import load_genes
 
         graph = build_graph("sle")
         assert graph.number_of_nodes() >= 40

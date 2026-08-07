@@ -16,6 +16,7 @@ import socket
 
 import pytest
 from fastapi.testclient import TestClient
+from starlette.websockets import WebSocketDisconnect
 
 from med_research.web.main import app
 
@@ -900,7 +901,7 @@ class TestWebSocketOrphanedJob:
                     break  # Connection closed — expected
 
             # Attempting to receive after the connection closes must raise
-            with pytest.raises(Exception):
+            with pytest.raises((RuntimeError, WebSocketDisconnect)):
                 ws.receive_json()
 
 

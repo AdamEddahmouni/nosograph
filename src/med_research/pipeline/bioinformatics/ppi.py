@@ -68,7 +68,7 @@ def get_gene_symbols(genes: dict, exclude_drug_targets: bool = True) -> list:
     }
 
     symbols = []
-    for gene_id, gene_info in genes.items():
+    for gene_id, _ in genes.items():
         if gene_id in exclusions:
             continue
         symbols.append((gene_id, gene_id))

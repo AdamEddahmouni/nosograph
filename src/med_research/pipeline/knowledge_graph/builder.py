@@ -21,7 +21,6 @@ from pathlib import Path
 
 import networkx as nx
 
-logger = logging.getLogger(__name__)
 from med_research.pipeline.knowledge_graph.config import (
     get_disease_profile,
     list_diseases,
@@ -30,6 +29,8 @@ from med_research.pipeline.knowledge_graph.config import (
     load_pathways,
     load_relationships,
 )
+
+logger = logging.getLogger(__name__)
 
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -222,7 +223,7 @@ def analyze_graph(G: nx.MultiDiGraph):
     print("DRUG REPURPOSING INSIGHTS (Shortest Path Analysis)")
     print("=" * 70)
     targeted_genes = set()
-    for u, v, d in G.edges(data=True):
+    for _, v, d in G.edges(data=True):
         if d.get("type") == "TARGETS" and G.nodes[v].get("type") == "gene":
             targeted_genes.add(v)
 

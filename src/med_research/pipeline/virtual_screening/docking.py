@@ -117,7 +117,7 @@ def _find_vina_binary() -> str | None:
     # Check common locations on Windows
     if sys.platform == "win32":
         common = [
-            Path(os.environ.get("ProgramFiles", "C:\\Program Files"), "AutoDock Vina", "vina.exe"),
+            Path(os.environ.get("PROGRAMFILES", "C:\\Program Files"), "AutoDock Vina", "vina.exe"),
             Path(os.environ.get("LOCALAPPDATA", ""), "AutoDock Vina", "vina.exe"),
         ]
         for p in common:
@@ -601,7 +601,6 @@ class DockingEngine:
         Returns:
             Dict mapping gene_id → receptor PDBQT path (or None if failed).
         """
-        config = self.load_config()
         targets = self.get_dockable_targets()
         results = {}
 
