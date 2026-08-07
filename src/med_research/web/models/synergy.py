@@ -30,6 +30,8 @@ class SynergyResponse(BaseModel):
     tier3_count: int
     avg_score: float
     max_score: float
+    coverage: dict = {}
+    status: str = "ready"
 
 
 class SynergyRequest(BaseModel):

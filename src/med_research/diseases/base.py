@@ -293,7 +293,7 @@ class Disease:
             else:
                 checks[name] = "ok" if value else "missing"
 
-        for field, filename in (
+        for data_field, filename in (
             ("genes", "genes.json"),
             ("drugs", "drugs.json"),
             ("pathways", "pathways.json"),
@@ -302,14 +302,14 @@ class Disease:
         ):
             try:
                 self.load_json(filename)
-                checks[field] = "ok"
+                checks[data_field] = "ok"
             except MissingDataError:
-                checks[field] = "missing"
+                checks[data_field] = "missing"
             except SchemaValidationError as exc:
                 message = str(exc)
                 if len(message) > 100:
                     message = message[:97] + "..."
-                checks[field] = f"invalid: {message}"
+                checks[data_field] = f"invalid: {message}"
 
         return checks
 

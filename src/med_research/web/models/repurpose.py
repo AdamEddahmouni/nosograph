@@ -33,6 +33,8 @@ class RepurposingResponse(BaseModel):
     tier2_count: int
     avg_score: float
     top_n: int
+    coverage: dict = {}
+    status: str = "ready"
 
 
 class GeneRepurposingResponse(BaseModel):

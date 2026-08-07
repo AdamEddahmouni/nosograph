@@ -43,6 +43,7 @@ async def disease_registry():
 
     from med_research.diseases.base import Disease
     from med_research.diseases.coverage import coverage_for_disease, module_coverage
+    from med_research.diseases.coverage_report import DEFAULT_MODULE_INPUTS
     from med_research.exceptions import DataValidationError
 
     diseases = []
@@ -86,14 +87,7 @@ async def disease_registry():
                             module,
                             required_inputs=inputs,
                         ).to_dict()
-                        for module, inputs in {
-                            "literature": ("genes", "drugs", "pathways", "pubmed_queries"),
-                            "gwas": ("genes", "gwas_search_terms"),
-                            "enrichment": ("genes", "pathways"),
-                            "screening": ("genes", "drugs", "pathways", "screening_profile"),
-                            "safety": ("symptoms", "adverse_event_profile", "safety_risk"),
-                            "car_t": ("genes", "car_t_scores"),
-                        }.items()
+                        for module, inputs in DEFAULT_MODULE_INPUTS.items()
                     },
                 },
             )

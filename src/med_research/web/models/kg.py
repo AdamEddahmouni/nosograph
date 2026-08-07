@@ -27,6 +27,8 @@ class GraphEdge(BaseModel):
 
 class GraphData(BaseModel):
     elements: list[dict[str, Any]]
+    coverage: dict[str, Any] = {}
+    status: str = "ready"
 
 
 class GraphStats(BaseModel):
@@ -36,6 +38,8 @@ class GraphStats(BaseModel):
     edge_types: dict[str, int]
     untargeted_genes: list[dict[str, Any]]
     top_hub_genes: list[dict[str, Any]]
+    coverage: dict[str, Any] = {}
+    status: str = "ready"
 
 
 class ShortestPathRequest(BaseModel):

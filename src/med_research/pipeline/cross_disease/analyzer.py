@@ -488,7 +488,7 @@ def compute_cross_disease_analysis(progress_callback=None) -> dict:
     """
     cb = progress_callback or (lambda p, m: None)
 
-    from med_research.diseases.coverage import coverage_for_disease
+    from med_research.diseases.coverage import ModuleCoverage, coverage_for_disease, module_coverage
 
     global last_coverage
     disease_ids = sorted(list_diseases().keys())
@@ -499,15 +499,23 @@ def compute_cross_disease_analysis(progress_callback=None) -> dict:
     ]
     if blocked:
         coverage = coverage_for_disease(blocked[0])
-        last_coverage = coverage
+        last_coverage = ModuleCoverage(
+            disease_id=blocked[0],
+            module="cross_disease",
+            level=coverage.level,
+            status=coverage.status,
+            curated_inputs=list(coverage.curated_inputs),
+            missing_inputs=list(coverage.missing_inputs),
+            warnings=list(coverage.warnings),
+            limitations=list(coverage.limitations),
+        )
         cb(
             100,
             f"Cross-disease analysis blocked: incomplete data for {', '.join(blocked)}",
         )
         return {
             "coverage": {
-                **coverage.to_dict(),
-                "module": "cross_disease",
+                **last_coverage.to_dict(),
                 "blocked_diseases": blocked,
             },
             "status": "blocked",
@@ -545,6 +553,9 @@ def compute_cross_disease_analysis(progress_callback=None) -> dict:
     repurposing = compute_cross_disease_repurposing(data)
 
     cb(95, "Saving results...")
+    last_coverage = module_coverage(
+        disease_ids[0], "cross_disease", ("genes", "drugs", "pathways")
+    )
     result = {
         "disease_summary": {
             did: {
@@ -563,6 +574,8 @@ def compute_cross_disease_analysis(progress_callback=None) -> dict:
         "multi_disease_drugs": multi_disease_drugs,
         "cross_disease_repurposing": repurposing,
         "total_diseases": len(disease_ids),
+        "coverage": last_coverage.to_dict(),
+        "status": "limited_coverage" if last_coverage.level == "partial" else "ready",
     }
 
     DATA_DIR.mkdir(parents=True, exist_ok=True)

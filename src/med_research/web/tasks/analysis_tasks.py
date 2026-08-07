@@ -217,13 +217,14 @@ def task_run_trials(
 
 
 @celery_app.task(bind=True, name="run_ml")
-def task_run_ml(self, top_n: int = 15, no_shap: bool = False):
+def task_run_ml(self, top_n: int = 15, no_shap: bool = False, disease_id: str = "sle"):
     """Celery task: Run ML target prediction with progress updates."""
     from med_research.web.services.shared_services import run_ml_prediction
 
     return run_ml_prediction(
         top_n=top_n,
         no_shap=no_shap,
+        disease_id=disease_id,
         progress_callback=_make_progress(self),
     )
 

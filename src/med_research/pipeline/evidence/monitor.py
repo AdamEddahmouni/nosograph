@@ -39,6 +39,8 @@ if sys.platform == "win32":
 DATA_DIR = Path(__file__).parent / "data"
 SNAPSHOTS_DIR = DATA_DIR / "snapshots"
 
+last_coverage = None
+
 # ── Tracked entities ────────────────────────────────────────────────────
 
 TRACKED_QUERIES = [
@@ -107,16 +109,37 @@ def _hash_results(results: list) -> str:
 # ── Snapshot Engine ──────────────────────────────────────────────────────
 
 
-def take_snapshot(sources: list = None, max_per_query: int = 10) -> dict:
+def take_snapshot(
+    sources: list = None,
+    max_per_query: int = 10,
+    disease_id: str = "sle",
+) -> dict:
     """Take a new evidence snapshot for all tracked entities.
 
     Args:
         sources: Source types to query.
         max_per_query: Max results per query/source.
+        disease_id: Disease whose curated inputs gate monitor readiness.
 
     Returns:
         Snapshot dict with timestamp, queries, and results.
     """
+    from med_research.diseases.coverage import module_coverage
+
+    global last_coverage
+    coverage = module_coverage(disease_id, "evidence_monitor", ("genes", "pubmed_queries"))
+    last_coverage = coverage
+    if not coverage.is_runnable:
+        return {
+            "snapshot_id": "",
+            "timestamp": datetime.now().isoformat(),
+            "coverage": coverage.to_dict(),
+            "status": "blocked",
+            "queries": {},
+            "drugs": {},
+            "genes": {},
+        }
+
     if sources is None:
         sources = ["pubmed", "preprints", "clinical_trials"]
 
@@ -185,6 +208,8 @@ def take_snapshot(sources: list = None, max_per_query: int = 10) -> dict:
         "queries": queries_data,
         "drugs": drug_data,
         "genes": gene_data,
+        "coverage": last_coverage.to_dict(),
+        "status": "limited_coverage" if last_coverage.level == "partial" else "ready",
     }
 
     # Save snapshot

@@ -48,9 +48,11 @@ class ExtractionResponse(BaseModel):
     query: str
     model: str
     total_extracted: int
-    successful_extractions: int
-    elapsed_seconds: float
+    successful_extractions: int = 0
+    elapsed_seconds: float = 0.0
     extractions: list[ExtractionResult] = Field(default_factory=list)
     stats: ExtractionStats = Field(default_factory=ExtractionStats)
     error: Optional[str] = None
     generated_at: str = ""
+    coverage: dict = Field(default_factory=dict)
+    status: str = "ready"

@@ -39,4 +39,5 @@ async def llm_extract(
         max_articles=max_articles,
         model=model if model else None,
         use_cache=use_cache,
+        disease_id=disease_id,
     )

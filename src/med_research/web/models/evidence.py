@@ -31,6 +31,8 @@ class EvidenceGatherResponse(BaseModel):
     crossref: dict = Field(default_factory=dict)
     results: list[EvidenceItem]
     generated_at: str
+    coverage: dict = Field(default_factory=dict)
+    status: str = "ready"
 
 
 class EvidenceGatherRequest(BaseModel):

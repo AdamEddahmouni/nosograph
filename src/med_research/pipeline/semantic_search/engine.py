@@ -18,6 +18,8 @@ import sys
 from contextlib import suppress
 from pathlib import Path
 
+from med_research.diseases.coverage import ModuleCoverage
+
 logger = logging.getLogger(__name__)
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
@@ -43,6 +45,36 @@ try:
     ST_AVAILABLE = True
 except ImportError:
     ST_AVAILABLE = False
+
+last_coverage = None
+
+
+def resolve_semantic_coverage(disease_id: str) -> ModuleCoverage:
+    """Return disease-scoped semantic search readiness including optional deps."""
+    from med_research.diseases.coverage import module_coverage
+
+    cov = module_coverage(disease_id, "semantic", ("genes", "drugs", "pubmed_queries"))
+    if not cov.is_runnable:
+        return cov
+    warnings = list(cov.warnings)
+    missing_deps: list[str] = []
+    if not CHROMADB_AVAILABLE:
+        missing_deps.append("chromadb")
+    if not ST_AVAILABLE:
+        missing_deps.append("sentence-transformers")
+    if missing_deps:
+        warnings.append(
+            "Optional dependencies missing: " + ", ".join(missing_deps) + "."
+        )
+        return ModuleCoverage(
+            disease_id=disease_id,
+            module="semantic",
+            level="partial",
+            status="limited_coverage",
+            curated_inputs=list(cov.curated_inputs),
+            warnings=warnings,
+        )
+    return cov
 
 
 def _check_deps():
@@ -174,7 +206,13 @@ class SemanticSearchEngine:
 
     def search(self, query: str, top_k: int = 20) -> list:
         """Semantic search for articles matching the query."""
-        self._ensure_deps()
+        global last_coverage
+        last_coverage = resolve_semantic_coverage(self.disease_id)
+        if not last_coverage.is_runnable:
+            return []
+
+        if not _check_deps():
+            return []
         self._load_model()
 
         # Load existing collection (don't recreate)

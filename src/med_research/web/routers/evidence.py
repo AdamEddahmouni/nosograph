@@ -36,8 +36,10 @@ async def evidence_gather(
         sources=source_list,
         max_per_source=max_per_source,
         use_cache=use_cache,
+        disease_id=disease_id,
     )
 
+    raw_results = gathered.get("all_results", gathered.get("results", []))
     results = [
         EvidenceItem(
             title=r.get("title", ""),
@@ -49,7 +51,7 @@ async def evidence_gather(
             id=r.get("id", ""),
             citation_count=r.get("citation_count", 0),
         )
-        for r in gathered["all_results"]
+        for r in raw_results
     ]
 
     return EvidenceGatherResponse(
@@ -61,4 +63,6 @@ async def evidence_gather(
         crossref=gathered.get("crossref", {}),
         results=results,
         generated_at=gathered["generated_at"],
+        coverage=gathered.get("coverage", {}),
+        status=gathered.get("status", "ready"),
     )

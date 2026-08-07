@@ -15,12 +15,12 @@ Usage:
 
 import argparse
 import json
+import logging
 import sys
 from collections import defaultdict
 from pathlib import Path
 
 import networkx as nx
-import logging
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 

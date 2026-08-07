@@ -24,6 +24,8 @@ def run_cross_disease_analysis(disease_id: str = None):
         "disease_count": results.get("total_diseases", 0),
         "diseases": list(results.get("disease_summary", {}).keys()),
         "disease_summary": results.get("disease_summary", {}),
+        "coverage": results.get("coverage", {}),
+        "status": results.get("status", "ready"),
     }
 
     return result

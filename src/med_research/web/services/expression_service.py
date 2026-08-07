@@ -1,5 +1,6 @@
 """Gene Expression Correlation service layer."""
 
+from med_research.diseases.coverage import module_coverage
 from med_research.web.services.shared_services import safe_serialize
 
 
@@ -13,7 +14,22 @@ def run_correlation_analysis(top_n: int = 26, disease_id: str = "sle") -> dict:
     Returns:
         Dict with drugs, total_drugs, avg_score, and tier counts.
     """
+    import med_research.pipeline.gene_expression.correlator as expression_module
     from med_research.pipeline.gene_expression.correlator import compute_all_correlations
+
+    coverage = module_coverage(disease_id, "expression", ("genes", "drugs"))
+    expression_module.last_coverage = coverage
+    if not coverage.is_runnable:
+        return {
+            "drugs": [],
+            "total_drugs": 0,
+            "avg_score": 0.0,
+            "tier1_count": 0,
+            "tier2_count": 0,
+            "tier3_count": 0,
+            "coverage": coverage.to_dict(),
+            "status": "blocked",
+        }
 
     results = compute_all_correlations(disease_id=disease_id)
 
@@ -31,4 +47,6 @@ def run_correlation_analysis(top_n: int = 26, disease_id: str = "sle") -> dict:
         "tier1_count": tier1,
         "tier2_count": tier2,
         "tier3_count": tier3,
+        "coverage": coverage.to_dict(),
+        "status": "limited_coverage" if coverage.level == "partial" else "ready",
     })

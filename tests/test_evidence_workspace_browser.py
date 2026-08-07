@@ -20,6 +20,8 @@ import pytest
 
 playwright = pytest.importorskip("playwright.sync_api")
 
+pytestmark = pytest.mark.slow
+
 # Importing through a local alias keeps optional Playwright collection explicit.
 Browser = playwright.Browser
 Page = playwright.Page

@@ -13873,5 +13873,21 @@
       "confidence": 7.0
     }
   ],
-  "total_diseases": 7
+  "total_diseases": 7,
+  "coverage": {
+    "disease_id": "ibd",
+    "module": "cross_disease",
+    "level": "full",
+    "status": "ready",
+    "curated_inputs": [
+      "genes",
+      "drugs",
+      "pathways"
+    ],
+    "missing_inputs": [],
+    "inferred_inputs": [],
+    "warnings": [],
+    "limitations": []
+  },
+  "status": "ready"
 }

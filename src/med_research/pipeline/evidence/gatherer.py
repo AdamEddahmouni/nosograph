@@ -42,6 +42,8 @@ DAILYMED_URL = "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls.json"
 
 DEFAULT_SOURCES = ["pubmed", "preprints", "clinical_trials", "fda_labels", "patents"]
 
+last_coverage = None
+
 
 # ── Helpers ──────────────────────────────────────────────────────────────
 
@@ -282,6 +284,7 @@ def gather_evidence(
     max_per_source: int = 20,
     use_cache: bool = True,
     cross_reference: bool = True,
+    disease_id: str | None = None,
 ) -> dict:
     """Search all configured sources and aggregate results.
 
@@ -291,10 +294,45 @@ def gather_evidence(
         max_per_source: Max results per source.
         use_cache: Whether to use cached results.
         cross_reference: Whether to compute cross-source overlap stats.
+        disease_id: When set, enforce literature-style curated inputs for the disease.
 
     Returns:
         Dict with keys: query, total_results, results_by_source, all_results, crossref.
     """
+    from med_research.diseases.coverage import ModuleCoverage, module_coverage
+
+    global last_coverage
+    if disease_id:
+        coverage = module_coverage(
+            disease_id,
+            "evidence_gather",
+            ("genes", "drugs", "pathways", "pubmed_queries"),
+        )
+        last_coverage = coverage
+        if not coverage.is_runnable:
+            return {
+                "query": query,
+                "sources_searched": sources or DEFAULT_SOURCES,
+                "total_results": 0,
+                "elapsed_seconds": 0.0,
+                "results_by_source": {},
+                "crossref": {},
+                "all_results": [],
+                "generated_at": datetime.now().isoformat(),
+                "coverage": coverage.to_dict(),
+                "status": "blocked",
+            }
+    else:
+        last_coverage = ModuleCoverage(
+            disease_id="query",
+            module="evidence_gather",
+            level="full",
+            status="ready",
+            limitations=[
+                "Query-driven gather; results are not scoped to a disease module."
+            ],
+        )
+
     if sources is None:
         sources = DEFAULT_SOURCES
 
@@ -341,6 +379,10 @@ def gather_evidence(
         "crossref": crossref,
         "all_results": all_results,
         "generated_at": datetime.now().isoformat(),
+        "coverage": last_coverage.to_dict(),
+        "status": (
+            "limited_coverage" if last_coverage.level == "partial" else "ready"
+        ),
     }
 
     # Save results

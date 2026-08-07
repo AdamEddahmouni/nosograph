@@ -147,3 +147,100 @@ def test_dashboard_has_coverage_rendering_and_blocks_direct_results():
         end = script.find("\nfunction ", start + 10)
         body = script[start:] if end == -1 else script[start:end]
         assert "coverage?.status === 'blocked'" in body
+
+
+@pytest.mark.parametrize("disease_id", DISEASES)
+def test_all_default_modules_return_structured_coverage(disease_id):
+    from med_research.diseases.coverage import module_coverage
+    from med_research.diseases.coverage_report import DEFAULT_MODULE_INPUTS
+
+    for module, inputs in DEFAULT_MODULE_INPUTS.items():
+        result = module_coverage(disease_id, module, inputs)
+        payload = result.to_dict()
+        assert payload["module"] == module
+        assert payload["disease_id"] == disease_id
+        assert payload["level"] in {"full", "partial", "unsupported"}
+        assert payload["status"] in {"ready", "limited_coverage", "blocked"}
+
+
+@pytest.mark.parametrize("disease_id", ["ra", "ibd", "ms"])
+def test_non_sle_car_t_and_safety_report_structured_coverage(disease_id):
+    from med_research.diseases.coverage import module_coverage
+
+    car_t = module_coverage(disease_id, "car_t", ("genes", "car_t_scores"))
+    safety = module_coverage(
+        disease_id,
+        "safety",
+        ("symptoms", "adverse_event_profile", "safety_risk"),
+    )
+    assert car_t.to_dict()["module"] == "car_t"
+    assert safety.to_dict()["module"] == "safety"
+    assert car_t.status in {"ready", "limited_coverage", "blocked"}
+    assert safety.status in {"ready", "limited_coverage", "blocked"}
+
+
+def test_repurpose_service_returns_coverage_module():
+    from med_research.web.services.repurpose_service import run_repurposing
+
+    result = run_repurposing(top_n=5, disease_id="ra")
+    assert result["coverage"]["module"] == "repurposing"
+    assert "status" in result
+
+
+def test_synergy_service_returns_coverage_module():
+    from med_research.web.services.synergy_service import run_synergy
+
+    result = run_synergy(top_n=5, disease_id="ra")
+    assert result["coverage"]["module"] == "synergy"
+    assert "status" in result
+
+
+def test_biomarker_service_returns_coverage_module():
+    from med_research.web.services.biomarker_service import run_biomarker_analysis
+
+    result = run_biomarker_analysis(top_n=5, disease_id="ra")
+    assert result["coverage"]["module"] == "biomarkers"
+    assert "status" in result
+
+
+def test_kg_service_stats_include_coverage():
+    from med_research.web.services.kg_service import get_graph_stats
+
+    result = get_graph_stats("ra")
+    assert result["coverage"]["module"] == "kg"
+    assert result["status"] in {"ready", "limited_coverage", "blocked"}
+
+
+def test_gather_evidence_query_only_marks_ready_with_limitation(monkeypatch):
+    from med_research.pipeline.evidence.gatherer import gather_evidence
+
+    monkeypatch.setattr(
+        "med_research.pipeline.evidence.gatherer.search_europe_pmc",
+        lambda *args, **kwargs: [],
+    )
+    result = gather_evidence(
+        "test query",
+        sources=["pubmed"],
+        max_per_source=1,
+        use_cache=False,
+    )
+    assert result["status"] in {"ready", "limited_coverage"}
+    assert result["coverage"]["module"] == "evidence_gather"
+
+
+def test_build_graph_with_coverage_returns_metadata():
+    from med_research.pipeline.knowledge_graph.builder import build_graph_with_coverage
+
+    payload = build_graph_with_coverage("ra")
+    assert payload["coverage"]["module"] == "kg"
+    assert payload["status"] in {"ready", "limited_coverage", "blocked"}
+    if payload["status"] != "blocked":
+        assert payload["graph"] is not None
+
+
+def test_cross_disease_analysis_includes_coverage():
+    from med_research.pipeline.cross_disease.analyzer import compute_cross_disease_analysis
+
+    result = compute_cross_disease_analysis()
+    assert result["coverage"]["module"] == "cross_disease"
+    assert result["status"] in {"ready", "limited_coverage", "blocked"}

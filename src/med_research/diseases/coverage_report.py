@@ -24,7 +24,15 @@ DEFAULT_MODULE_INPUTS = {
     "ml_predictor": ("genes", "relationships"),
     "clinical_trials": ("genes", "drugs", "trial_query"),
     "cross_disease": ("genes", "drugs", "pathways"),
+    "semantic": ("genes", "drugs", "pubmed_queries"),
+    "evidence_gather": ("genes", "drugs", "pathways", "pubmed_queries"),
+    "evidence_extract": (),
+    "evidence_monitor": ("genes", "pubmed_queries"),
+    "kg": ("genes", "drugs", "pathways", "relationships"),
 }
+
+# Alias for API/registry consumers that prefer MODULE_INPUTS naming.
+MODULE_INPUTS = DEFAULT_MODULE_INPUTS
 
 
 def build_coverage_report(

@@ -134,6 +134,40 @@ def build_graph(disease_id: str = "sle") -> nx.MultiDiGraph:
     return G
 
 
+last_coverage = None
+
+
+def build_graph_with_coverage(disease_id: str = "sle") -> dict:
+    """Build a knowledge graph and return coverage metadata alongside the graph."""
+    from med_research.diseases.coverage import ModuleCoverage, coverage_for_disease
+
+    global last_coverage
+    core = coverage_for_disease(disease_id)
+    last_coverage = ModuleCoverage(
+        disease_id=disease_id,
+        module="kg",
+        level=core.level,
+        status=core.status,
+        curated_inputs=list(core.curated_inputs),
+        missing_inputs=list(core.missing_inputs),
+        warnings=list(core.warnings),
+        limitations=list(core.limitations),
+    )
+    if not core.is_runnable:
+        return {
+            "graph": None,
+            "coverage": last_coverage.to_dict(),
+            "status": "blocked",
+        }
+    graph = build_graph(disease_id)
+    status = "limited_coverage" if last_coverage.level == "partial" else "ready"
+    return {
+        "graph": graph,
+        "coverage": last_coverage.to_dict(),
+        "status": status,
+    }
+
+
 def analyze_graph(G: nx.MultiDiGraph):
     """Run comprehensive graph analysis and print findings."""
     disease_node = next((n for n, d in G.nodes(data=True) if d.get("type") == "disease"), None)

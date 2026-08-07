@@ -32,10 +32,11 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
+import logging
+
 from med_research.pipeline.knowledge_graph.config import load_drugs as config_load_drugs
 from med_research.pipeline.knowledge_graph.config import load_genes as config_load_genes
 from med_research.pipeline.knowledge_graph.config import load_pathways as config_load_pathways
-import logging
 
 DATA_DIR = Path(__file__).parent / "data"
 

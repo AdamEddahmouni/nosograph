@@ -247,6 +247,7 @@ def run_trials(
         moa_dist[moa] = moa_dist.get(moa, 0) + 1
 
     cb(100, "Clinical trials tracking complete")
+    coverage = results.get("coverage", {})
     return {
         "total_trials": len(trials),
         "phase_distribution": stats.get("phase_counts", {}),
@@ -254,6 +255,8 @@ def run_trials(
         "top_sponsors": stats.get("top_sponsors", [])[:10],
         "trials": trials[:max_trials],
         "kg_crossref": kg_crossref,
+        "coverage": coverage,
+        "status": results.get("status", "ready"),
     }
 
 
@@ -263,14 +266,30 @@ def run_ml_prediction(
     top_n: int = 15,
     no_shap: bool = False,
     progress_callback=None,
+    disease_id: str = "sle",
 ) -> dict:
     """Run ML target druggability prediction using train_and_predict."""
+    import med_research.pipeline.ml_predictor.predictor as ml_module
+    from med_research.diseases.coverage import module_coverage
     from med_research.pipeline.ml_predictor.predictor import train_and_predict
+
+    coverage = module_coverage(disease_id, "ml_predictor", ("genes", "relationships"))
+    ml_module.last_coverage = coverage
+    if not coverage.is_runnable:
+        return {
+            "predictions": [],
+            "model_type": "XGBoost",
+            "cross_val_auc": None,
+            "accuracy": None,
+            "top_features": [],
+            "coverage": coverage.to_dict(),
+            "status": "blocked",
+        }
 
     cb = progress_callback or (lambda p, m: None)
 
     cb(10, "Loading knowledge graph…")
-    G = get_knowledge_graph()
+    G = get_knowledge_graph(disease_id)
 
     cb(25, "Training XGBoost model and computing SHAP values…")
     results = train_and_predict(G, top_n=top_n)
@@ -282,6 +301,8 @@ def run_ml_prediction(
             "model_type": "XGBoost",
             "error": results["error"],
             "top_features": [],
+            "coverage": coverage.to_dict(),
+            "status": "blocked",
         }
 
     cb(70, "Formatting predictions and feature importance…")
@@ -315,4 +336,6 @@ def run_ml_prediction(
             else None
         ),
         "top_features": top_features,
+        "coverage": coverage.to_dict(),
+        "status": "limited_coverage" if coverage.level == "partial" else "ready",
     }

@@ -1,5 +1,23 @@
 # Changelog
 
+## [Multi-disease coverage completion] — 2026-08-07
+
+### Changed
+
+- Unified `DEFAULT_MODULE_INPUTS` as the single module registry for CLI, `GET /api/system/diseases`, and coverage reports (19 modules including semantic, evidence, and KG).
+- Wired `module_coverage` boundaries in semantic search, evidence gatherer/extractor/monitor, knowledge graph builder wrapper, and cross-disease success path.
+- Propagated `coverage` + `status` through repurposing, synergy, biomarker, expression, clinical trials, ML predictor, cross-disease, semantic, evidence, and KG web services.
+- Extended Pydantic response models with optional `coverage` and `status` fields for all affected analysis endpoints.
+
+### Verification
+
+- `python -m pytest tests/test_multidisease_coverage.py tests/test_web_api.py -q`
+- `python -m pytest tests/ -m "not slow" -q`
+- `python -m med_research.cli disease coverage ra`
+- `python -m med_research.cli disease coverage ibd`
+
+---
+
 ## [Structured logging phase 3] — 2026-08-07
 
 ### Changed

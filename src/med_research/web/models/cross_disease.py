@@ -13,3 +13,5 @@ class CrossDiseaseResponse(BaseModel):
     disease_count: int = 0
     diseases: list = []
     disease_summary: dict = {}
+    coverage: dict = {}
+    status: str = "ready"

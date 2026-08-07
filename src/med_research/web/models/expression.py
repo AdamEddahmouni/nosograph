@@ -27,3 +27,5 @@ class ExpressionCorrelationResponse(BaseModel):
     tier1_count: int = Field(0, description="Tier 1 count (score >= 7.5)")
     tier2_count: int = Field(0, description="Tier 2 count (6.0 <= score < 7.5)")
     tier3_count: int = Field(0, description="Tier 3 count (4.5 <= score < 6.0)")
+    coverage: dict = Field(default_factory=dict)
+    status: str = "ready"

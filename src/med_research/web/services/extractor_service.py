@@ -9,6 +9,7 @@ def run_llm_extraction(
     max_articles: int = 20,
     model: str = None,
     use_cache: bool = True,
+    disease_id: str | None = None,
 ) -> dict:
     """Run LLM evidence extraction and return structured results.
 
@@ -18,6 +19,7 @@ def run_llm_extraction(
         max_articles: Max articles to extract from.
         model: LLM model name.
         use_cache: Whether to use cached extractions.
+        disease_id: Optional disease scope for gather coverage checks.
 
     Returns:
         Dict with extractions, stats, and metadata.
@@ -28,4 +30,5 @@ def run_llm_extraction(
         max_articles=max_articles,
         model=model,
         use_cache=use_cache,
+        disease_id=disease_id,
     )

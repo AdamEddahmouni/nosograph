@@ -73,6 +73,7 @@ async def clinical_trials(
 async def ml_predictor(
     top_n: int = Query(15, ge=1, le=50, description="Top predictions"),
     no_shap: bool = Query(False, description="Skip SHAP analysis"),
+    disease_id: str = Query("sle", description="Disease ID"),
 ):
     """Run ML target druggability prediction with XGBoost + SHAP."""
-    return run_ml_prediction(top_n=top_n, no_shap=no_shap)
+    return run_ml_prediction(top_n=top_n, no_shap=no_shap, disease_id=disease_id)

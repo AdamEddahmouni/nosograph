@@ -25,3 +25,5 @@ class BiomarkerResponse(BaseModel):
     avg_score: float = Field(0.0)
     tier1_count: int = Field(0)
     tier2_count: int = Field(0)
+    coverage: dict = Field(default_factory=dict)
+    status: str = "ready"

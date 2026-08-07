@@ -4,11 +4,33 @@ from collections import defaultdict
 
 import networkx as nx
 
+from med_research.diseases.coverage import coverage_for_disease
 from med_research.web.dependencies import get_knowledge_graph
+
+
+def _kg_coverage_payload(disease_id: str) -> dict:
+    core = coverage_for_disease(disease_id)
+    return {
+        **core.to_dict(),
+        "module": "kg",
+    }
 
 
 def get_graph_stats(disease_id: str = "sle") -> dict:
     """Return graph statistics including node/edge counts and untargeted genes."""
+    coverage = _kg_coverage_payload(disease_id)
+    if coverage.get("status") == "blocked":
+        return {
+            "total_nodes": 0,
+            "total_edges": 0,
+            "node_types": {},
+            "edge_types": {},
+            "untargeted_genes": [],
+            "top_hub_genes": [],
+            "coverage": coverage,
+            "status": "blocked",
+        }
+
     G = get_knowledge_graph(disease_id)
 
     node_types = defaultdict(int)
@@ -65,11 +87,21 @@ def get_graph_stats(disease_id: str = "sle") -> dict:
         "edge_types": dict(edge_types),
         "untargeted_genes": untargeted,
         "top_hub_genes": gene_degrees,
+        "coverage": coverage,
+        "status": "limited_coverage" if coverage.get("level") == "partial" else "ready",
     }
 
 
 def get_graph_data(disease_id: str = "sle") -> dict:
     """Export graph data in Cytoscape.js format."""
+    coverage = _kg_coverage_payload(disease_id)
+    if coverage.get("status") == "blocked":
+        return {
+            "elements": [],
+            "coverage": coverage,
+            "status": "blocked",
+        }
+
     G = get_knowledge_graph(disease_id)
     elements = []
 
@@ -96,7 +128,11 @@ def get_graph_data(disease_id: str = "sle") -> dict:
         }
         elements.append(edge_data)
 
-    return {"elements": elements}
+    return {
+        "elements": elements,
+        "coverage": coverage,
+        "status": "limited_coverage" if coverage.get("level") == "partial" else "ready",
+    }
 
 
 def get_node_detail(node_id: str, disease_id: str = "sle") -> dict | None:

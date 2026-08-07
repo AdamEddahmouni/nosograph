@@ -19,3 +19,5 @@ class SemanticSearchResponse(BaseModel):
     results: list[SemanticResult]
     total_results: int
     indexed_articles: int
+    coverage: dict = {}
+    status: str = "ready"

@@ -309,7 +309,7 @@ def test_vina_setup_cli_help():
     import subprocess
 
     result = subprocess.run(
-        [sys.executable, "virtual_screening/vina_setup.py", "--help"],
+        [sys.executable, "-m", "med_research.pipeline.virtual_screening.vina_setup", "--help"],
         capture_output=True, text=True, encoding="utf-8", errors="replace",
         cwd=str(Path(__file__).parent.parent),
     )
@@ -321,7 +321,7 @@ def test_vina_setup_check_cli():
     import subprocess
 
     result = subprocess.run(
-        [sys.executable, "virtual_screening/vina_setup.py", "--check"],
+        [sys.executable, "-m", "med_research.pipeline.virtual_screening.vina_setup", "--check"],
         capture_output=True, text=True, encoding="utf-8", errors="replace",
         cwd=str(Path(__file__).parent.parent),
     )

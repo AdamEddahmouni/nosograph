@@ -129,6 +129,16 @@ class TestDiseasesRegistry:
             for field in ["id", "name", "genes", "drugs", "pathways"]:
                 assert field in d, f"Missing field: {field}"
 
+    def test_disease_registry_lists_all_module_coverage_keys(self, client):
+        from med_research.diseases.coverage_report import DEFAULT_MODULE_INPUTS
+
+        diseases = client.get("/api/system/diseases").json()["diseases"]
+        sle = next(d for d in diseases if d["id"] == "sle")
+        modules = sle["coverage"]["modules"]
+        assert set(modules) == set(DEFAULT_MODULE_INPUTS)
+        for module in DEFAULT_MODULE_INPUTS:
+            assert modules[module]["module"] == module
+
     def test_invalid_kg_disease_registry_survives(self, client, monkeypatch):
         """A disease with broken KG data must not crash GET /api/system/diseases."""
         from med_research.diseases.base import Disease
@@ -1110,14 +1120,13 @@ class TestKGGraphDiseaseAware:
         assert len(ra) > 0
         assert ra != sle
 
-    def test_unknown_disease_returns_500(self):
-        # Unknown disease has no data dir -> build_graph raises FileNotFoundError
-        from fastapi.testclient import TestClient
-
-        from med_research.web.main import app as test_app
-        with TestClient(test_app, raise_server_exceptions=False) as c:
-            resp = c.get("/api/kg/graph?disease=nonexistent")
-            assert resp.status_code == 500
+    def test_unknown_disease_returns_blocked_graph(self, client):
+        resp = client.get("/api/kg/graph?disease=nonexistent")
+        assert resp.status_code == 200
+        data = resp.json()
+        assert data["status"] == "blocked"
+        assert data["elements"] == []
+        assert data["coverage"]["status"] == "blocked"
 
     def test_stats_disease_param(self, client):
         sle = client.get("/api/kg/stats?disease=sle").json()

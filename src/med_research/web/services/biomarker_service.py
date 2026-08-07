@@ -1,11 +1,26 @@
 """Biomarker Discovery service layer."""
 
+from med_research.diseases.coverage import module_coverage
 from med_research.web.services.shared_services import safe_serialize
 
 
 def run_biomarker_analysis(top_n: int = 35, disease_id: str = "sle") -> dict:
     """Run biomarker discovery and return serializable result."""
+    import med_research.pipeline.biomarker_discovery.discover as biomarker_module
     from med_research.pipeline.biomarker_discovery.discover import compute_biomarker_matrix
+
+    coverage = module_coverage(disease_id, "biomarkers", ("genes",))
+    biomarker_module.last_coverage = coverage
+    if not coverage.is_runnable:
+        return {
+            "biomarkers": [],
+            "total_genes": 0,
+            "avg_score": 0.0,
+            "tier1_count": 0,
+            "tier2_count": 0,
+            "coverage": coverage.to_dict(),
+            "status": "blocked",
+        }
 
     results = compute_biomarker_matrix(disease_id=disease_id)
 
@@ -21,4 +36,6 @@ def run_biomarker_analysis(top_n: int = 35, disease_id: str = "sle") -> dict:
         "avg_score": round(avg, 2),
         "tier1_count": tier1,
         "tier2_count": tier2,
+        "coverage": coverage.to_dict(),
+        "status": "limited_coverage" if coverage.level == "partial" else "ready",
     })

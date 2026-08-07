@@ -113,6 +113,8 @@ class TrialsResponse(BaseModel):
     top_sponsors: list[dict[str, Any]]
     trials: list[dict[str, Any]]
     kg_crossref: dict[str, Any] = {}
+    coverage: dict[str, Any] = {}
+    status: str = "ready"
 
 
 class TrialsRequest(BaseModel):
@@ -140,6 +142,8 @@ class MLResponse(BaseModel):
     cross_val_auc: Optional[float] = None
     accuracy: Optional[float] = None
     top_features: list[dict[str, Any]] = []
+    coverage: dict[str, Any] = {}
+    status: str = "ready"
 
 
 class MLRequest(BaseModel):

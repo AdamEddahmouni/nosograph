@@ -6,15 +6,33 @@ from pathlib import Path
 # Ensure the parent is importable
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
+from med_research.diseases.coverage import module_coverage
 from med_research.web.dependencies import get_candidates, get_kg_genes, get_knowledge_graph
 
 
 def run_repurposing(top_n: int = 15, gene_id: str | None = None, disease_id: str = "sle") -> dict:
     """Score drug repurposing candidates and return results."""
+    from med_research.pipeline.drug_repurposing import engine as rep_engine
     from med_research.pipeline.drug_repurposing.engine import (
         identify_untargeted_genes,
         score_candidates,
     )
+
+    coverage = module_coverage(
+        disease_id, "repurposing", ("genes", "drugs", "relationships")
+    )
+    rep_engine.last_coverage = coverage
+    if not coverage.is_runnable:
+        return {
+            "candidates": [],
+            "total": 0,
+            "tier1_count": 0,
+            "tier2_count": 0,
+            "avg_score": 0.0,
+            "top_n": top_n,
+            "coverage": coverage.to_dict(),
+            "status": "blocked",
+        }
 
     G = get_knowledge_graph(disease_id)
     genes = get_kg_genes(disease_id)
@@ -50,6 +68,8 @@ def run_repurposing(top_n: int = 15, gene_id: str | None = None, disease_id: str
         "tier2_count": n_tier2,
         "avg_score": round(avg_score, 2),
         "top_n": top_n,
+        "coverage": coverage.to_dict(),
+        "status": "limited_coverage" if coverage.level == "partial" else "ready",
     }
 
 

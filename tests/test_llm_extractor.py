@@ -368,14 +368,16 @@ class TestExtractAllNoAPI:
             tmp_path / "extraction_cache.json",
         )
 
-    def test_extract_all_without_api_key(self):
+    def test_extract_all_without_api_key(self, monkeypatch):
         """extract_all without API key returns error dict."""
+        monkeypatch.delenv("OPENAI_API_KEY", raising=False)
         with patch("med_research.pipeline.evidence.extractor.API_KEY", ""):
             result = extract_all("lupus", sources=["pubmed"], max_articles=3,
                                  use_cache=True)
             assert result["total_extracted"] == 0
+            assert result["status"] == "blocked"
+            assert result["coverage"]["module"] == "evidence_extract"
             assert "error" in result
-            assert result["error"] == "No API key configured."
 
 
 # ── Slow / Live Tests ────────────────────────────────────────────────────

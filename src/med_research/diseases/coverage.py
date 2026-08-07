@@ -144,7 +144,26 @@ def module_coverage(
     optional_inputs: tuple[str, ...] = (),
 ) -> ModuleCoverage:
     """Return strict readiness metadata for one disease/module boundary."""
+    import os
+
     from med_research.diseases.base import Disease
+
+    if module == "evidence_extract":
+        if not os.environ.get("OPENAI_API_KEY"):
+            return ModuleCoverage(
+                disease_id=disease_id,
+                module=module,
+                level="unsupported",
+                status="blocked",
+                missing_inputs=["OPENAI_API_KEY"],
+                limitations=["LLM extraction requires OPENAI_API_KEY to be set."],
+            )
+        return ModuleCoverage(
+            disease_id=disease_id,
+            module=module,
+            level="full",
+            status="ready",
+        )
 
     try:
         disease = Disease(disease_id)

@@ -2,29 +2,41 @@
 
 from med_research.pipeline.evidence.monitor import (
     compare_snapshots,
+    last_coverage,
     list_snapshots,
     load_latest_snapshots,
     take_snapshot,
 )
 
 
-def run_snapshot(sources: list = None, max_per_query: int = 10) -> dict:
+def run_snapshot(
+    sources: list = None,
+    max_per_query: int = 10,
+    disease_id: str = "sle",
+) -> dict:
     """Take a new evidence snapshot and return snapshot info."""
-    return take_snapshot(sources=sources, max_per_query=max_per_query)
+    return take_snapshot(
+        sources=sources,
+        max_per_query=max_per_query,
+        disease_id=disease_id,
+    )
 
 
-def run_diff() -> dict:
+def run_diff(disease_id: str = "sle") -> dict:
     """Run a snapshot diff and return results."""
     snapshots = load_latest_snapshots(2)
 
     if len(snapshots) < 2:
         # Need a baseline
-        prev = take_snapshot()
-        curr = take_snapshot()
+        prev = take_snapshot(disease_id=disease_id)
+        curr = take_snapshot(disease_id=disease_id)
         snapshots = [prev, curr]
 
     prev, curr = snapshots
-    return compare_snapshots(prev, curr)
+    diff = compare_snapshots(prev, curr)
+    if last_coverage:
+        diff["coverage"] = last_coverage.to_dict()
+    return diff
 
 
 def run_status() -> dict:

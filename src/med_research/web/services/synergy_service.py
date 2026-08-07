@@ -5,6 +5,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
+from med_research.diseases.coverage import module_coverage
 from med_research.web.dependencies import safe_serialize
 
 
@@ -23,7 +24,23 @@ def run_synergy(
     Returns:
         Dict with synergy results.
     """
+    from med_research.pipeline.drug_synergy import engine as synergy_engine
     from med_research.pipeline.drug_synergy.engine import compute_synergy
+
+    coverage = module_coverage(disease_id, "synergy", ("genes", "drugs"))
+    synergy_engine.last_coverage = coverage
+    if not coverage.is_runnable:
+        return {
+            "total_pairs": 0,
+            "pairs": [],
+            "tier1_count": 0,
+            "tier2_count": 0,
+            "tier3_count": 0,
+            "avg_score": 0.0,
+            "max_score": 0.0,
+            "coverage": coverage.to_dict(),
+            "status": "blocked",
+        }
 
     cb = progress_callback or (lambda p, m: None)
 
@@ -42,4 +59,6 @@ def run_synergy(
         "tier3_count": sum(1 for p in pairs if 6.0 <= p["composite_score"] < 7.0),
         "avg_score": round(avg, 2),
         "max_score": round(max(scores), 2) if scores else 0,
+        "coverage": coverage.to_dict(),
+        "status": "limited_coverage" if coverage.level == "partial" else "ready",
     }

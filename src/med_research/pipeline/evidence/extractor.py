@@ -54,6 +54,8 @@ DEFAULT_MODEL = os.environ.get("LLM_EXTRACTOR_MODEL", "gpt-4o-mini")
 API_BASE = os.environ.get("OPENAI_API_BASE", "https://api.openai.com/v1")
 API_KEY = os.environ.get("OPENAI_API_KEY")
 
+last_coverage = None
+
 EXTRACTION_SYSTEM_PROMPT = (
     "You are a biomedical evidence extraction AI. Extract structured information "
     "from the provided abstract/snippet of a biomedical research article. "
@@ -285,6 +287,7 @@ def extract_all(
     max_articles: int = 20,
     model: str = None,
     use_cache: bool = True,
+    disease_id: str | None = None,
 ) -> dict:
     """Gather evidence then extract structured data from all results.
 
@@ -294,11 +297,35 @@ def extract_all(
         max_articles: Max articles to extract from.
         model: LLM model name.
         use_cache: Whether to use cached results (both evidence + extractions).
+        disease_id: Optional disease scope for gather coverage checks.
 
     Returns:
         Dict with query, model, total_extracted, extractions list, and stats.
     """
+    from med_research.diseases.coverage import module_coverage
+
     model = model or DEFAULT_MODEL
+    global last_coverage
+    last_coverage = module_coverage(
+        disease_id or "global",
+        "evidence_extract",
+        (),
+    )
+    if not last_coverage.is_runnable:
+        return {
+            "query": query,
+            "model": model,
+            "total_extracted": 0,
+            "successful_extractions": 0,
+            "elapsed_seconds": 0.0,
+            "extractions": [],
+            "stats": {},
+            "coverage": last_coverage.to_dict(),
+            "status": "blocked",
+            "error": "LLM extraction blocked: OPENAI_API_KEY is not configured.",
+            "generated_at": datetime.now().isoformat(),
+        }
+
     if sources is None:
         sources = ["pubmed", "preprints", "clinical_trials"]
 
@@ -314,8 +341,12 @@ def extract_all(
             "query": query,
             "model": model,
             "total_extracted": 0,
+            "successful_extractions": 0,
+            "elapsed_seconds": 0.0,
             "extractions": [],
             "stats": {},
+            "coverage": last_coverage.to_dict(),
+            "status": "blocked",
             "error": "No API key configured.",
             "generated_at": datetime.now().isoformat(),
         }
@@ -331,6 +362,7 @@ def extract_all(
         sources=sources,
         max_per_source=max_articles // len(sources) + 1,
         use_cache=use_cache,
+        disease_id=disease_id,
     )
     articles = evidence["all_results"][:max_articles]
     logger.info(f"   → {len(articles)} articles to extract\n")
@@ -382,6 +414,8 @@ def extract_all(
         "extractions": extractions,
         "stats": stats,
         "generated_at": datetime.now().isoformat(),
+        "coverage": last_coverage.to_dict(),
+        "status": "ready",
     }
 
     # Save results
