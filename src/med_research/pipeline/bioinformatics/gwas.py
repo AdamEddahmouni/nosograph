@@ -663,9 +663,25 @@ def main():
 
     if args.export_html:
         from med_research.pipeline.bioinformatics.report import generate_bioinformatics_report
+        from med_research.pipeline.provenance import build_provenance
 
+        provenance = build_provenance(
+            disease_id=args.disease,
+            module="bioinformatics",
+            sources=["gwas_catalog"],
+            cache_or_live="cache",
+            scoring={"analysis": "gwas_crossref"},
+        )
         report_path = generate_bioinformatics_report(
-            None, None, None, None, None, gwas_results, crossref, disease_id=args.disease
+            None,
+            None,
+            None,
+            None,
+            None,
+            gwas_results,
+            crossref,
+            disease_id=args.disease,
+            provenance=provenance,
         )
         logger.info(f"\n✅ Report generated: {report_path}")
 

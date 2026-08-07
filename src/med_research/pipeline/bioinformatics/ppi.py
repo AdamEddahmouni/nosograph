@@ -573,9 +573,24 @@ def main():
 
     if args.export_html:
         from med_research.pipeline.bioinformatics.report import generate_bioinformatics_report
+        from med_research.pipeline.provenance import build_provenance
 
+        provenance = build_provenance(
+            disease_id=args.disease,
+            module="bioinformatics",
+            sources=["string"],
+            cache_or_live="cache",
+            scoring={"analysis": "ppi_hub"},
+        )
         report_path = generate_bioinformatics_report(
-            None, None, None, hub_scores, crossref, graph_data, disease_id=args.disease
+            None,
+            None,
+            None,
+            hub_scores,
+            crossref,
+            graph_data,
+            disease_id=args.disease,
+            provenance=provenance,
         )
         logger.info(f"\n✅ Report generated: {report_path}")
 

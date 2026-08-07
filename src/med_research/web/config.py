@@ -28,7 +28,7 @@ API_TAGS = [
     {
         "name": "Knowledge Graph",
         "description": (
-            "Explore the SLE knowledge graph — nodes, edges, paths, neighbors, and search."
+            "Explore disease knowledge graphs — nodes, edges, paths, neighbors, and search."
         ),
     },
     {
@@ -61,22 +61,22 @@ API_TAGS = [
     {
         "name": "Safety",
         "description": (
-            "Adverse event profiling and lupus-specific safety scoring "
-            "across 4 dimensions for all 26 knowledge graph drugs."
+            "Adverse event profiling and disease-aware safety scoring "
+            "across 4 dimensions for knowledge graph drugs."
         ),
     },
     {
         "name": "Expression",
         "description": (
             "Gene expression correlation — Connectivity Map approach scoring "
-            "drug mechanisms against curated SLE transcriptomic signatures."
+            "drug mechanisms against curated disease transcriptomic signatures."
         ),
     },
     {
         "name": "CAR-T",
         "description": (
             "CAR-T Response Predictor — gene-level CD19 CAR-T therapy "
-            "suitability scoring for all 35 lupus-associated genes."
+            "suitability scoring for disease-associated genes."
         ),
     },
     {

@@ -73,7 +73,7 @@ modules:  ## List all available pipeline modules
 	python -m med_research.cli modules
 
 serve:  ## Start the web API server
-	python -m med_research.cli serve --reload
+	python -m med_research.cli serve
 
 # ── Docker ───────────────────────────────────────────────────────────────
 

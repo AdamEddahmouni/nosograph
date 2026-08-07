@@ -1,5 +1,52 @@
 # Changelog
 
+## [Pipeline report provenance footers] — 2026-08-07
+
+### Added
+
+- Shared `provenance_footer_html()` in `pipeline/reporting.py` for standardized reproducibility footers.
+- `tests/test_report_provenance.py` — integration tests for all eight priority pipeline HTML report generators.
+- Provenance footer and cross-run fingerprint stability tests in `tests/test_provenance.py`.
+- Evidence Workspace report provenance block test in `tests/test_evidence_workspace_report.py`.
+
+### Changed
+
+- Priority pipeline report generators accept optional `provenance` and inject a footer before `</body>`.
+- CLI `--export-html` paths build provenance metadata via `build_provenance()` for adverse events, bioinformatics, biomarker discovery, CAR-T, clinical trials, drug repurposing, literature mining, and virtual screening.
+- Evidence Workspace report refactored to use the shared footer helper.
+- Removed generated artifact `adverse_events/report.html`.
+
+### Verification
+
+- `python -m pytest tests/test_provenance.py tests/test_report_provenance.py tests/test_evidence_workspace_report.py -q`
+- `python -m pytest tests/ -m "not slow" -q`
+
+---
+
+## [Tech debt quick wins batch] — 2026-08-07
+
+### Added
+
+- `tests/test_package_data.py` — verifies disease JSON, web static assets, and pipeline data ship via setuptools package-data.
+- `tests/test_cli.py` — asserts `--reload` is disabled unless `DEBUG=true`.
+
+### Changed
+
+- `docker-compose.yml` — removed stale named volumes; mount `./data:/app/data`; configurable `PORT` mapping.
+- Multi-disease branding in root `index.html`, `web/config.py` API tags, and knowledge-graph explorer page.
+- Consolidated `jobs_router` into `routers/__init__.py` with domain-grouping comments.
+- `make serve` no longer passes `--reload` by default.
+- Marked Technical Debt **#33**, **#35**, **#36**, **#37**, **#38**, and **#39** resolved in `TECHNICAL_DEBT_ISSUES.md`.
+
+### Verification
+
+- `python -m pytest tests/test_package_data.py tests/test_cli.py -q`
+- `python -m pytest tests/ -m "not slow" -q`
+- `python -m ruff check src/ tests/`
+- `docker compose config`
+
+---
+
 ## [Quick wins and provenance hardening] — 2026-08-07
 
 ### Added

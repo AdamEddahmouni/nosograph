@@ -4,7 +4,11 @@ import json
 from datetime import datetime
 from pathlib import Path
 
-from med_research.pipeline.reporting import apply_disease_labels, disease_context
+from med_research.pipeline.reporting import (
+    apply_disease_labels,
+    disease_context,
+    provenance_footer_html,
+)
 from med_research.templates import env as template_env
 
 
@@ -14,7 +18,9 @@ def escape_html(value):
     return str(value).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
 
 
-def generate_html_report(results: list, disease_id: str = "sle") -> str:
+def generate_html_report(
+    results: list, disease_id: str = "sle", *, provenance: dict | None = None
+) -> str:
     """Generate integrated biomarker discovery report."""
     now = datetime.now().strftime("%B %d, %Y at %H:%M")
     context = disease_context(disease_id)
@@ -86,6 +92,9 @@ def generate_html_report(results: list, disease_id: str = "sle") -> str:
         ctx_disease_id=context["id"],
     )
     html = apply_disease_labels(html, disease_id)
+    footer = provenance_footer_html(provenance)
+    if footer:
+        html = html.replace("</body>", f"{footer}\n</body>", 1)
 
     report_path = Path(__file__).parent / "report.html"
     report_path.write_text(html, encoding="utf-8")

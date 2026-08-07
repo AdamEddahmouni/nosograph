@@ -87,3 +87,40 @@ def test_workspace_dossier_provenance_matches_run_id():
     provenance = dossier.manifest["provenance"]
     assert provenance["run_id"] == dossier.run_id
     assert dossier.manifest["fingerprint"] == provenance["fingerprint"]
+
+
+def test_provenance_footer_html_escapes_values():
+    from med_research.pipeline.reporting import provenance_footer_html
+
+    footer = provenance_footer_html(
+        {
+            "run_id": 'run-<script>',
+            "fingerprint": 'fp&"x"',
+            "generated_at": "<2026>",
+            "cache_or_live": "live",
+        }
+    )
+    assert "<script>" not in footer
+    assert "&lt;script&gt;" in footer
+    assert "fp&amp;&quot;x&quot;" in footer
+    assert "&lt;2026&gt;" in footer
+    assert "Reproducibility" in footer
+
+
+def test_workspace_fingerprint_stable_across_runs():
+    from med_research.pipeline.evidence_workspace.workspace import run_workspace
+
+    inputs = {
+        "disease_id": "sle",
+        "question": "BTK inhibition",
+        "sources": ["pubmed"],
+        "enable_llm": False,
+    }
+    dossier1 = run_workspace(inputs, sources={})
+    dossier2 = run_workspace(inputs, sources={})
+
+    provenance1 = dossier1.manifest["provenance"]
+    provenance2 = dossier2.manifest["provenance"]
+    assert provenance1["fingerprint"] == provenance2["fingerprint"]
+    assert provenance1["run_id"] != provenance2["run_id"]
+    assert provenance1["generated_at"] != provenance2["generated_at"]

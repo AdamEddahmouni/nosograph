@@ -3,8 +3,25 @@
 from __future__ import annotations
 
 from html import escape
+from typing import Any
 
 from med_research.diseases.base import Disease
+
+
+def provenance_footer_html(provenance: dict[str, Any] | None) -> str:
+    """Render a concise reproducibility footer from build_provenance() output."""
+    if not provenance:
+        return ""
+    fingerprint = escape(str(provenance.get("fingerprint", "not available")))
+    generated = escape(str(provenance.get("generated_at", "not available")))
+    cache_mode = escape(str(provenance.get("cache_or_live", "unknown")))
+    run_id = escape(str(provenance.get("run_id", "not available")))
+    return (
+        '<div class="meta provenance"><strong>Reproducibility:</strong> '
+        f'run <code>{run_id}</code> · fingerprint <code>{fingerprint}</code> · '
+        f"generated {generated} · mode {cache_mode}"
+        "</div>"
+    )
 
 
 def disease_context(disease_id: str = "sle") -> dict[str, str]:

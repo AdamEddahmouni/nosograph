@@ -585,8 +585,21 @@ def main():
     logger.info(f"\n💾 Results saved to {output_path}")
 
     if args.export_html:
+        from med_research.diseases.base import Disease
         from med_research.pipeline.clinical_trials.report import generate_ct_report
-        report_path = generate_ct_report(results, disease_id=args.disease)
+        from med_research.pipeline.provenance import build_provenance
+
+        query = args.query or Disease(args.disease).get_trial_query()
+        provenance = build_provenance(
+            disease_id=args.disease,
+            module="clinical_trials",
+            sources=["clinicaltrials_gov"],
+            query=query,
+            cache_or_live="cache" if not args.no_cache else "live",
+        )
+        report_path = generate_ct_report(
+            results, disease_id=args.disease, provenance=provenance
+        )
         logger.info(f"✅ HTML report generated: {report_path}")
 
     return results

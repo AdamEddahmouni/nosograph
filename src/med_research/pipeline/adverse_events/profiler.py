@@ -1108,7 +1108,15 @@ def main():
 
     if args.export_html:
         from med_research.pipeline.adverse_events.report import generate_html_report
-        generate_html_report(results, disease_id=args.disease)
+        from med_research.pipeline.provenance import build_provenance
+
+        provenance = build_provenance(
+            disease_id=args.disease,
+            module="adverse_events",
+            sources=["fda_labels"],
+            cache_or_live="cache",
+        )
+        generate_html_report(results, disease_id=args.disease, provenance=provenance)
         logger.info("\n✅ HTML report generated: adverse_events/report.html")
 
     return 0

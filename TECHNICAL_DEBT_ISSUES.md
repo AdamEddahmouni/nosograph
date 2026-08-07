@@ -2,7 +2,7 @@
 
 > **Current-state note (2026-08-07):** This document preserves the 2026-07-25 audit for traceability, but several findings have since been resolved or mitigated. The supported runtime is the `src/med_research` package, the root `main.py` is a compatibility wrapper, all seven disease modules pass `python -m med_research.cli disease validate --all --strict`, and current usage is documented in `README.md`, `docs/evidence-workspace.md`, and `docs/api-reference.md`. Treat historical “Current state” sections below as dated audit observations, not the live API specification. The **Summary Matrix** at the bottom is likewise historical; prefer the resolved/mitigated list here and per-issue resolution notes.
 
-**Resolved or mitigated findings:** legacy runtime entrypoints/static mounts, stale primary README guidance, incomplete seven-disease validation, unguarded `--reload` behavior, **#1 structured logging migration** (resolved 2026-08-07), **#2 KG JSON schema validation** (resolved 2026-08-07), **#3 legacy v1 directory cleanup** (archived and removed 2026-08-07), **#5 CORS wildcard default** (resolved 2026-08-07), **#6 Docker non-root user** (resolved 2026-08-07), **#7 Dockerfile SLE-only KG build** (resolved 2026-08-07), **#8 multi-disease KG validation in Docker build** (resolved 2026-08-07), **#9 expand_kg v1 paths** (resolved 2026-08-07), **#10 GWAS silent except blocks** (resolved 2026-08-07), **#11 ML predictor silent ImportError** (resolved 2026-08-07), **#12 disease config stubs** (mitigated 2026-08-07 — all seven diseases have curated CAR_T_SCORES and risk tiers), **#14 dependency lock files** (`requirements-lock.txt`, `requirements-dev-lock.txt`), **#16 `.env.example`**, **#17 v1 static mounts** (resolved 2026-08-07), **#18 hardcoded web values** (mitigated 2026-08-07 — version from metadata, `tests_passing` removed), **#29 IBD missing relationships** (resolved 2026-08-07), **#34 rate limiting** (mitigated 2026-08-07 — in-memory middleware present). **#4 authentication** is mitigated (middleware present, production warning when `API_KEY` unset) but still requires deployment-policy review when `API_KEY` is unset. Remaining open work should be re-verified against the current tree before implementation.
+**Resolved or mitigated findings:** legacy runtime entrypoints/static mounts, stale primary README guidance, incomplete seven-disease validation, unguarded `--reload` behavior, **#1 structured logging migration** (resolved 2026-08-07), **#2 KG JSON schema validation** (resolved 2026-08-07), **#3 legacy v1 directory cleanup** (archived and removed 2026-08-07), **#5 CORS wildcard default** (resolved 2026-08-07), **#6 Docker non-root user** (resolved 2026-08-07), **#7 Dockerfile SLE-only KG build** (resolved 2026-08-07), **#8 multi-disease KG validation in Docker build** (resolved 2026-08-07), **#9 expand_kg v1 paths** (resolved 2026-08-07), **#10 GWAS silent except blocks** (resolved 2026-08-07), **#11 ML predictor silent ImportError** (resolved 2026-08-07), **#12 disease config stubs** (mitigated 2026-08-07 — all seven diseases have curated CAR_T_SCORES and risk tiers), **#14 dependency lock files** (`requirements-lock.txt`, `requirements-dev-lock.txt`), **#16 `.env.example`**, **#17 v1 static mounts** (resolved 2026-08-07), **#18 hardcoded web values** (mitigated 2026-08-07 — version from metadata, `tests_passing` removed), **#29 IBD missing relationships** (resolved 2026-08-07), **#33 guarded `--reload`** (resolved 2026-08-07), **#34 rate limiting** (mitigated 2026-08-07 — in-memory middleware present), **#35 Dockerfile hardcoded port** (resolved 2026-08-07), **#36 docker-compose volume paths** (resolved 2026-08-07), **#37 pyproject.toml package-data patterns** (resolved 2026-08-07), **#38 router file organization** (resolved 2026-08-07), **#39 index.html v1 branding** (resolved 2026-08-07). **#4 authentication** is mitigated (middleware present, production warning when `API_KEY` unset) but still requires deployment-policy review when `API_KEY` is unset. Remaining open work should be re-verified against the current tree before implementation.
 
 > **Audited:** 2026-07-25 | **Package:** `med-research` | **Version:** 2.0.0 (migration in progress)
 > **Scope:** `src/med_research/` (114 Python files), `tests/` (25 files), root config, Docker, Makefile, `scripts/`, legacy v1 directories
@@ -837,7 +837,9 @@ Literature mining, GWAS, enrichment, PPI, clinical trials, evidence gathering, g
 
 ### 33. Hardcoded Debug Mode via CLI Flag
 
-**Current state:** `src/med_research/cli.py:163` — `--reload` flag on `serve` command enables uvicorn reload, which can leak stack traces and source in production.
+> **Resolved 2026-08-07.** `cmd_serve` honors `--reload` only when `DEBUG=true`; otherwise it logs a warning and starts without reload. `tests/test_cli.py` mocks `uvicorn.run` to assert the guard, and `make serve` no longer passes `--reload` by default.
+
+**Historical audit (2026-07-25):** `src/med_research/cli.py:163` — `--reload` flag on `serve` command enables uvicorn reload, which can leak stack traces and source in production.
 
 **Recommended approach:**
 Restrict `--reload` to only when `DEBUG=true` or remove entirely from production path.
@@ -861,7 +863,9 @@ Add `slowapi` or custom Redis-based rate limiter.
 
 ### 35. Dockerfile `ENTRYPOINT` Uses Hardcoded Ports
 
-**Current state:** `Dockerfile:29` — `"--port", "8000"` hardcoded. Changing port requires Dockerfile edit.
+> **Resolved 2026-08-07.** `Dockerfile` uses `EXPOSE 8000` and `CMD ["serve", "--host", "0.0.0.0"]` without a hardcoded `--port`; `docker-compose.yml` passes `PORT` via environment and `${PORT:-8000}` port mapping.
+
+**Historical audit (2026-07-25):** `Dockerfile:29` — `"--port", "8000"` hardcoded. Changing port required Dockerfile edit.
 
 **Recommended approach:**
 Use `EXPOSE 8000` and let `--port` default from env var.
@@ -872,7 +876,9 @@ Use `EXPOSE 8000` and let `--port` default from env var.
 
 ### 36. docker-compose Volume Paths Reference Non-Existent Structure
 
-**Current state:** `docker-compose.yml:38-39,57-58,68-69` maps volumes like `/app/src/med_research/diseases` and `/app/src/med_research/pipeline` but these paths don't match the container layout cleanly.
+> **Resolved 2026-08-07.** Removed `disease-data` and `pipeline-data` named volumes. `web`, `worker`, and `pipeline` services now mount `./data:/app/data` for runtime persistence.
+
+**Historical audit (2026-07-25):** `docker-compose.yml:38-39,57-58,68-69` mapped volumes like `/app/src/med_research/diseases` and `/app/src/med_research/pipeline` but these paths didn't match the container layout cleanly.
 
 **Recommended approach:**
 Map only `./src:/app/src:ro` or `./data:/app/data`.
@@ -883,12 +889,9 @@ Map only `./src:/app/src:ro` or `./data:/app/data`.
 
 ### 37. pyproject.toml Package-Data Patterns May Not Match
 
-**Current state:** `pyproject.toml:63-68`:
-```toml
-"diseases/*/data/*.json", "pipeline/*/data/*.json",
-"pipeline/knowledge_graph/data/**/*.json", "web/static/**/*"
-```
-These are relative to `src/med_research/` (from `where = ["src"]`). The pattern `"diseases/*/data/*.json"` should match `src/med_research/diseases/*/data/*.json` but may need verification.
+> **Resolved 2026-08-07.** `tests/test_package_data.py` verifies disease JSON, web static assets, and pipeline data files via `importlib.metadata.files("med-research")` (with an editable-install fallback via `importlib.resources`).
+
+**Historical audit (2026-07-25):** `pyproject.toml:63-68` package-data patterns were relative to `src/med_research/` and had not been verified against a built wheel.
 
 **Recommended approach:**
 Test with `python -m build --wheel` and verify package contents. Remove or fix patterns.
@@ -899,7 +902,9 @@ Test with `python -m build --wheel` and verify package contents. Remove or fix p
 
 ### 38. Web API Router File Organization
 
-**Current state:** `src/med_research/web/routers/` has 17+ router files. Some group related endpoints (KG), others are per-feature (repurpose, synergy, biomarker). No consistent organization.
+> **Resolved 2026-08-07.** `jobs_router` consolidated into `src/med_research/web/routers/__init__.py` with domain-grouping comments; `main.py` includes routers from the single registry only.
+
+**Historical audit (2026-07-25):** `src/med_research/web/routers/` had 17+ router files with no consistent domain grouping, and `jobs_router` was included separately in `main.py`.
 
 **Recommended approach:**
 Group routers by domain (kg, analysis, evidence, system) with consistent naming.
@@ -910,7 +915,9 @@ Group routers by domain (kg, analysis, evidence, system) with consistent naming.
 
 ### 39. `index.html` Branded as v1
 
-**Current state:** Root `index.html` references "Lupus Research Platform" with SLE-specific branding. v2 is multi-disease.
+> **Resolved 2026-08-07.** Root `index.html`, API OpenAPI tag descriptions in `web/config.py`, and the knowledge-graph explorer page use multi-disease / disease-agnostic branding.
+
+**Historical audit (2026-07-25):** Root `index.html` referenced "Lupus Research Platform" with SLE-specific branding. v2 is multi-disease.
 
 **Recommended approach:**
 Rebrand to "Medical Research Platform" or generate dynamically per disease.

@@ -523,8 +523,21 @@ def main():
 
     if args.export_html:
         from med_research.pipeline.literature_mining.report import generate_literature_report
+        from med_research.pipeline.provenance import build_provenance
+
+        provenance = build_provenance(
+            disease_id=args.disease,
+            module="literature_mining",
+            sources=["pubmed"],
+            query=args.query or "",
+            cache_or_live="cache" if not args.no_cache else "live",
+        )
         report_path = generate_literature_report(
-            results, entities, candidates, disease_id=args.disease
+            results,
+            entities,
+            candidates,
+            disease_id=args.disease,
+            provenance=provenance,
         )
         logger.info(f"\n✅ Literature report generated: {report_path}")
 

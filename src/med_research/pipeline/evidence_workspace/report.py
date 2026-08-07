@@ -7,6 +7,8 @@ import json
 from pathlib import Path
 from urllib.parse import urlsplit
 
+from med_research.pipeline.reporting import provenance_footer_html
+
 from .schemas import EvidenceDossier
 
 DISCLAIMER = (
@@ -22,19 +24,12 @@ def dossier_to_json(dossier: EvidenceDossier, *, indent: int = 2) -> str:
 
 
 def _provenance_html(dossier: EvidenceDossier) -> str:
-    provenance = dossier.manifest.get("provenance", {})
+    provenance = dict(dossier.manifest.get("provenance", {}) or {})
     if not provenance:
         return ""
-    fingerprint = html.escape(str(provenance.get("fingerprint", "not available")))
-    generated = html.escape(str(provenance.get("generated_at", "not available")))
-    cache_mode = html.escape(str(provenance.get("cache_or_live", "unknown")))
-    run_id = html.escape(str(provenance.get("run_id", dossier.run_id)))
-    return (
-        '<div class="meta provenance"><strong>Reproducibility:</strong> '
-        f'run <code>{run_id}</code> · fingerprint <code>{fingerprint}</code> · '
-        f"generated {generated} · mode {cache_mode}"
-        '</div>'
-    )
+    if "run_id" not in provenance and dossier.run_id:
+        provenance["run_id"] = dossier.run_id
+    return provenance_footer_html(provenance)
 
 
 def _ranking_rows(rankings) -> str:

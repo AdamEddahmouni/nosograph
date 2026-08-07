@@ -2,9 +2,13 @@
 #
 # Usage:
 #   docker compose build                          Build the image
-#   docker compose up web                          Start the web API + dashboard
+#   docker compose --profile full up web          Start the web API + dashboard
+#   docker compose --profile full up worker       Start the Celery worker
 #   docker compose run --rm pipeline run-all      Run the full pipeline
 #   docker compose run --rm pipeline test          Run tests
+#
+# Runtime data (caches, workspace DB, pipeline outputs) persists under ./data
+# mounted at /app/data inside containers. Override PORT to change the host port.
 #
 # ─────────────────────────────────────────────────────────────────────────────
 
@@ -35,8 +39,7 @@ services:
       redis:
         condition: service_healthy
     volumes:
-      - disease-data:/app/src/med_research/diseases:ro
-      - pipeline-data:/app/src/med_research/pipeline
+      - ./data:/app/data
     profiles:
       - full
 
@@ -45,8 +48,9 @@ services:
     build: .
     image: med-research:latest
     ports:
-      - "8000:8000"
+      - "${PORT:-8000}:${PORT:-8000}"
     environment:
+      - PORT=${PORT:-8000}
       - CELERY_BROKER_URL=redis://redis:6379/0
       - CELERY_RESULT_BACKEND=redis://redis:6379/0
       - USE_CACHE=true
@@ -54,8 +58,7 @@ services:
       redis:
         condition: service_healthy
     volumes:
-      - disease-data:/app/src/med_research/diseases:ro
-      - pipeline-data:/app/src/med_research/pipeline
+      - ./data:/app/data
     profiles:
       - full
 
@@ -65,12 +68,9 @@ services:
     image: med-research:latest
     entrypoint: ["python", "-m", "med_research.cli"]
     volumes:
-      - disease-data:/app/src/med_research/diseases:ro
-      - pipeline-data:/app/src/med_research/pipeline
+      - ./data:/app/data
     profiles:
       - cli
 
 volumes:
   redis-data:
-  disease-data:
-  pipeline-data:

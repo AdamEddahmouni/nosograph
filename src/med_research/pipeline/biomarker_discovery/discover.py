@@ -405,7 +405,15 @@ def main():
 
     if args.export_html:
         from med_research.pipeline.biomarker_discovery.report import generate_html_report
-        generate_html_report(results, disease_id=args.disease)
+        from med_research.pipeline.provenance import build_provenance
+
+        provenance = build_provenance(
+            disease_id=args.disease,
+            module="biomarker_discovery",
+            sources=["knowledge_graph"],
+            cache_or_live="cache",
+        )
+        generate_html_report(results, disease_id=args.disease, provenance=provenance)
         logger.info("\n✅ HTML report generated: biomarker_discovery/report.html")
 
     return results

@@ -15,7 +15,11 @@ import io
 from datetime import datetime
 from pathlib import Path
 
-from med_research.pipeline.reporting import apply_disease_labels, disease_context
+from med_research.pipeline.reporting import (
+    apply_disease_labels,
+    disease_context,
+    provenance_footer_html,
+)
 
 try:
     import matplotlib
@@ -28,7 +32,9 @@ except ImportError:
     np = None
 
 
-def generate_screening_report(results: dict, disease_id: str = "sle") -> str:
+def generate_screening_report(
+    results: dict, disease_id: str = "sle", *, provenance: dict | None = None
+) -> str:
     """Generate an HTML report from virtual screening results."""
 
     output_path = Path(__file__).parent / "screening_report.html"
@@ -362,7 +368,8 @@ def generate_screening_report(results: dict, disease_id: str = "sle") -> str:
         f"<br><span>Limitations: {escape_html('; '.join(strategy_limitations))}</span></section>"
         if strategy_id else ""
     )
-    html = html.replace("</body>", strategy_note + "</body>")
+    footer = provenance_footer_html(provenance)
+    html = html.replace("</body>", strategy_note + footer + "</body>")
     html = apply_disease_labels(html, disease_id)
 
     with open(output_path, "w", encoding="utf-8") as f:

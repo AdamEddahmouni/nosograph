@@ -938,8 +938,22 @@ def main():
     logger.info(f"\n💾 Results saved to {output_path}")
 
     if args.export_html:
+        from med_research.pipeline.provenance import build_provenance
         from med_research.pipeline.virtual_screening.report import generate_screening_report
-        report_path = generate_screening_report(results, disease_id=args.disease)
+
+        provenance = build_provenance(
+            disease_id=args.disease,
+            module="virtual_screening",
+            sources=["knowledge_graph"],
+            cache_or_live="cache",
+            scoring={
+                "strategy_id": results.get("strategy_id", ""),
+                "strategy_fingerprint": results.get("strategy_fingerprint", ""),
+            },
+        )
+        report_path = generate_screening_report(
+            results, disease_id=args.disease, provenance=provenance
+        )
         logger.info(f"✅ HTML report generated: {report_path}")
 
     return results

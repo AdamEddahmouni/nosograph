@@ -12,7 +12,11 @@ Generates a beautiful standalone HTML report with:
 from datetime import datetime
 from pathlib import Path
 
-from med_research.pipeline.reporting import apply_disease_labels, disease_context
+from med_research.pipeline.reporting import (
+    apply_disease_labels,
+    disease_context,
+    provenance_footer_html,
+)
 
 
 def generate_html_report(
@@ -21,6 +25,8 @@ def generate_html_report(
     genes: dict,
     G,
     disease_id: str = "sle",
+    *,
+    provenance: dict | None = None,
 ) -> str:
     """Generate a standalone report for the requested disease."""
 
@@ -190,6 +196,9 @@ def generate_html_report(
         disease_id=context["name"],
     )
     html = apply_disease_labels(html, disease_id)
+    footer = provenance_footer_html(provenance)
+    if footer:
+        html = html.replace("</body>", f"{footer}\n</body>", 1)
 
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(html)

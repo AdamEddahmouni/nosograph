@@ -415,7 +415,18 @@ def main():
 
     if args.export_html:
         from med_research.pipeline.drug_repurposing.report import generate_html_report
-        generate_html_report(scored, untargeted, genes, G, disease_id=args.disease)
+        from med_research.pipeline.provenance import build_provenance
+
+        provenance = build_provenance(
+            disease_id=args.disease,
+            module="drug_repurposing",
+            sources=["knowledge_graph"],
+            cache_or_live="cache",
+            scoring={"ranking": "composite_score"},
+        )
+        generate_html_report(
+            scored, untargeted, genes, G, disease_id=args.disease, provenance=provenance
+        )
         logger.info("\n✅ HTML report generated: drug_repurposing/report.html")
 
     return scored

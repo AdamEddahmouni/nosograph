@@ -51,10 +51,16 @@ STATUS_COLORS = {
 }
 
 
-def generate_ct_report(results: dict, disease_id: str = "sle") -> str:
+def generate_ct_report(
+    results: dict, disease_id: str = "sle", *, provenance: dict | None = None
+) -> str:
     """Generate an HTML report from disease-specific trial results."""
     output_path = Path(__file__).parent / "ct_report.html"
-    from med_research.pipeline.reporting import apply_disease_labels, disease_context
+    from med_research.pipeline.reporting import (
+        apply_disease_labels,
+        disease_context,
+        provenance_footer_html,
+    )
     context = disease_context(disease_id)
 
     trials = results["trials"]
@@ -105,6 +111,9 @@ def generate_ct_report(results: dict, disease_id: str = "sle") -> str:
         ctx_disease_id=context["id"],
     )
     html = apply_disease_labels(html, disease_id)
+    footer = provenance_footer_html(provenance)
+    if footer:
+        html = html.replace("</body>", f"{footer}\n</body>", 1)
 
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(html)

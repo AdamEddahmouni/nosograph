@@ -11,12 +11,21 @@ Generates a standalone HTML report showing:
 from datetime import datetime
 from pathlib import Path
 
-from med_research.pipeline.reporting import apply_disease_labels, disease_context
+from med_research.pipeline.reporting import (
+    apply_disease_labels,
+    disease_context,
+    provenance_footer_html,
+)
 from med_research.templates import env as template_env
 
 
 def generate_literature_report(
-    results: dict, entities: dict, candidates: list, disease_id: str = "sle"
+    results: dict,
+    entities: dict,
+    candidates: list,
+    disease_id: str = "sle",
+    *,
+    provenance: dict | None = None,
 ) -> str:
     """Generate an HTML report from disease-specific literature results."""
 
@@ -289,6 +298,9 @@ def generate_literature_report(
         disease_id_raw=context["id"],
     )
     html = apply_disease_labels(html, disease_id)
+    footer = provenance_footer_html(provenance)
+    if footer:
+        html = html.replace("</body>", f"{footer}\n</body>", 1)
 
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(html)

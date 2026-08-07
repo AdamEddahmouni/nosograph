@@ -28,7 +28,6 @@ from med_research.web.config import (
 )
 from med_research.web.middleware import AuthMiddleware, RateLimitMiddleware
 from med_research.web.routers import routers
-from med_research.web.routers.jobs import router as jobs_router
 
 REPO_ROOT = Path(__file__).parent.parent.parent.parent
 PIPELINE_DIR = Path(__file__).parent.parent / "pipeline"
@@ -96,8 +95,6 @@ app.add_middleware(RateLimitMiddleware)
 
 for router in routers:
     app.include_router(router)
-
-app.include_router(jobs_router)
 
 # ── Static Files ──────────────────────────────────────────────────────────
 

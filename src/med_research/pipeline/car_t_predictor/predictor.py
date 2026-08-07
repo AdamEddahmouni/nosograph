@@ -454,7 +454,16 @@ def main():
 
     if args.export_html:
         from med_research.pipeline.car_t_predictor.report import generate_html_report
-        generate_html_report(results, disease_id=args.disease)
+        from med_research.pipeline.provenance import build_provenance
+
+        provenance = build_provenance(
+            disease_id=args.disease,
+            module="car_t_predictor",
+            sources=["knowledge_graph"],
+            cache_or_live="cache",
+            scoring={"ranking": "car_t_heuristic"},
+        )
+        generate_html_report(results, disease_id=args.disease, provenance=provenance)
         logger.info("\n✅ HTML report generated: car_t_predictor/report.html")
 
     return results
