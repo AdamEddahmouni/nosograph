@@ -1,9 +1,10 @@
 """Job management API router — submit and track Celery tasks."""
 
 import asyncio
+from uuid import UUID
 
 from celery.result import AsyncResult
-from fastapi import APIRouter, WebSocket, WebSocketDisconnect
+from fastapi import APIRouter, HTTPException, WebSocket, WebSocketDisconnect
 
 from med_research.pipeline.evidence_workspace.schemas import ResearchRequest
 from med_research.web.dependencies import safe_serialize
@@ -23,6 +24,15 @@ from med_research.web.tasks.analysis_tasks import (
 )
 
 router = APIRouter(prefix="/api/jobs", tags=["Jobs"])
+
+
+def _validate_job_id(job_id: str) -> str:
+    """Ensure job IDs match the Celery UUID format."""
+    try:
+        UUID(job_id)
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail="Invalid job_id format") from exc
+    return job_id
 
 
 # ── Job submission endpoints ────────────────────────────────────────────────
@@ -150,6 +160,7 @@ async def submit_safety(drug_id: str | None = None, disease_id: str = "sle"):
 @router.get("/{job_id}", response_model=JobStatus)
 async def get_job_status(job_id: str):
     """Get the status and result of a submitted job."""
+    _validate_job_id(job_id)
     result = AsyncResult(job_id, app=celery_app)
 
     response = {
@@ -177,6 +188,12 @@ async def job_websocket(websocket: WebSocket, job_id: str):
     Connects to Celery's AsyncResult and pushes state changes
     every 500ms until the job reaches a terminal state.
     """
+    try:
+        UUID(job_id)
+    except ValueError:
+        await websocket.close(code=1008, reason="Invalid job_id format")
+        return
+
     await websocket.accept()
 
     result = AsyncResult(job_id, app=celery_app)

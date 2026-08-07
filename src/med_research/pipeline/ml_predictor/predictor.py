@@ -462,7 +462,18 @@ def main():
 
     if args.export_html:
         from med_research.pipeline.ml_predictor.report import generate_ml_report
-        report_path = generate_ml_report(results)
+        from med_research.pipeline.provenance import build_provenance
+
+        provenance = build_provenance(
+            disease_id=args.disease,
+            module="ml_predictor",
+            sources=["knowledge_graph"],
+            cache_or_live="cache",
+            scoring={"ranking": "druggability_score"},
+        )
+        report_path = generate_ml_report(
+            results, disease_id=args.disease, provenance=provenance
+        )
         logger.info(f"✅ HTML report generated: {report_path}")
 
     return results

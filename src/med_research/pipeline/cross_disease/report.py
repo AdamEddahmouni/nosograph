@@ -13,10 +13,13 @@ import json
 from datetime import datetime
 from pathlib import Path
 
+from med_research.pipeline.reporting import provenance_footer_html
 from med_research.templates import env as template_env
 
 
-def generate_html_report(results: dict) -> str:
+def generate_html_report(
+    results: dict, *, provenance: dict | None = None
+) -> str:
     """Generate a standalone HTML report and return the path."""
 
     output_path = Path(__file__).parent / "report.html"
@@ -177,6 +180,9 @@ def generate_html_report(results: dict) -> str:
         ctx_14=rep_rows,
         ctx_15=top5_json,
     )
+    footer = provenance_footer_html(provenance)
+    if footer:
+        html = html.replace("</body>", f"{footer}\n</body>", 1)
 
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(html)

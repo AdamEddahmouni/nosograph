@@ -612,11 +612,24 @@ def main():
 
     if args.export_html:
         from med_research.pipeline.gene_expression.report import generate_html_report
+        from med_research.pipeline.provenance import build_provenance
+
         _, _, sig_source, num_studies = _normalize_signature(signature)
-        generate_html_report(results, signature_source=sig_source,
-                            num_studies=num_studies,
-                            tissue=args.tissue or "broad",
-                            disease_id=args.disease)
+        provenance = build_provenance(
+            disease_id=args.disease,
+            module="gene_expression",
+            sources=[sig_source],
+            cache_or_live="cache",
+            scoring={"signature_source": sig_source, "tissue": args.tissue or "broad"},
+        )
+        generate_html_report(
+            results,
+            signature_source=sig_source,
+            num_studies=num_studies,
+            tissue=args.tissue or "broad",
+            disease_id=args.disease,
+            provenance=provenance,
+        )
         logger.info("\n✅ HTML report generated: gene_expression/report.html")
 
     return results

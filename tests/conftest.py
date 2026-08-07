@@ -17,6 +17,7 @@ from med_research.pipeline.knowledge_graph.config import load_genes
 # test_web_api.py, which imports med_research.web.main) is loaded, so the
 # middleware picks it up at module import time.
 os.environ["RATE_LIMIT_REQUESTS"] = "0"
+os.environ.setdefault("DEBUG", "true")
 
 PROJECT_ROOT = Path(__file__).parent.parent
 DR_DATA_DIR = PROJECT_ROOT / "src" / "med_research" / "pipeline" / "drug_repurposing" / "data"

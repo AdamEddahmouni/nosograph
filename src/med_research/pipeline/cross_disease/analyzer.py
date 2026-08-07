@@ -808,7 +808,16 @@ def main():
 
     if args.export_html:
         from med_research.pipeline.cross_disease.report import generate_html_report
-        generate_html_report(results)
+        from med_research.pipeline.provenance import build_provenance
+
+        provenance = build_provenance(
+            disease_id="multi",
+            module="cross_disease",
+            sources=["knowledge_graph"],
+            cache_or_live="cache",
+            scoring={"diseases": results["total_diseases"]},
+        )
+        generate_html_report(results, provenance=provenance)
         logger.info("\n✅ HTML report generated: cross_disease/report.html")
 
     return results

@@ -21,7 +21,7 @@ test-fast:  ## Run fast unit tests without slow or integration markers
 	python -m pytest tests/ -m "not slow and not integration" -q --tb=line
 
 test-offline:  ## Run the complete offline suite; live API tests are marked slow
-	python -m pytest tests/ -m "not slow" -q --tb=short
+	python -m pytest tests/ -m "not slow and not integration" -q --tb=short
 
 test-slow:  ## Run live API/integration tests marked slow
 	python -m pytest tests/ -m slow -v --tb=short

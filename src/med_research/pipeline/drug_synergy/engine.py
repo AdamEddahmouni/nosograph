@@ -494,7 +494,18 @@ def main():
 
     if args.export_html:
         from med_research.pipeline.drug_synergy.report import generate_html_report
-        generate_html_report(pairs, disease_id=args.disease)
+        from med_research.pipeline.provenance import build_provenance
+
+        provenance = build_provenance(
+            disease_id=args.disease,
+            module="drug_synergy",
+            sources=["knowledge_graph"],
+            cache_or_live="cache",
+            scoring={"ranking": "composite_score"},
+        )
+        generate_html_report(
+            pairs, disease_id=args.disease, provenance=provenance
+        )
         logger.info("\n✅ HTML report generated: drug_synergy/report.html")
 
     return pairs

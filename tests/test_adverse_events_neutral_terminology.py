@@ -1,5 +1,7 @@
 """Disease-neutral safety terminology contract tests."""
 
+import pytest
+
 from med_research.pipeline.adverse_events.profiler import (
     compute_adverse_event_score,
     count_disease_symptom_overlap,
@@ -10,6 +12,8 @@ from med_research.pipeline.adverse_events.profiler import (
     score_disease_specific_risk,
     score_lupus_overlap,
 )
+
+pytestmark = pytest.mark.unit
 
 
 def test_neutral_scorers_are_authoritative_and_legacy_names_are_aliases():

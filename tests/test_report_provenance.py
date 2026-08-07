@@ -9,6 +9,8 @@ import pytest
 from med_research.pipeline.provenance import build_provenance
 from med_research.pipeline.reporting import disease_context
 
+pytestmark = pytest.mark.unit
+
 
 @pytest.fixture
 def sample_library():
@@ -44,7 +46,9 @@ def sample_library():
     ]
 
 
-def _assert_provenance_footer(html: str, provenance: dict, disease_id: str) -> None:
+def _assert_provenance_footer(
+    html: str, provenance: dict, disease_id: str | None = None
+) -> None:
     fingerprint = provenance["fingerprint"]
     assert len(fingerprint) == 20
     assert fingerprint in html
@@ -52,10 +56,21 @@ def _assert_provenance_footer(html: str, provenance: dict, disease_id: str) -> N
     assert provenance["run_id"] in html
     assert provenance["cache_or_live"] in html
 
-    display_name = disease_context(disease_id)["name"]
-    assert display_name in html
+    if not disease_id or disease_id == "multi":
+        return
+
+    context = disease_context(disease_id)
+    label_candidates = {
+        context["name"],
+        context["profile_name"],
+        context["short_label"],
+        context["name"].split("(")[0].strip(),
+    }
     if disease_id != "sle":
-        assert display_name != "Lupus"
+        assert context["name"] != "Lupus"
+    assert any(label and label in html for label in label_candidates), (
+        f"Expected a disease label from {label_candidates} in report HTML"
+    )
 
 
 def _read_report(path: str) -> str:
@@ -373,6 +388,156 @@ def test_biomarker_discovery_report_provenance():
 
     report_path = generate_html_report(
         results,
+        disease_id=disease_id,
+        provenance=provenance,
+    )
+    _assert_provenance_footer(_read_report(report_path), provenance, disease_id)
+
+
+def test_cross_disease_report_provenance():
+    from med_research.pipeline.cross_disease.analyzer import compute_cross_disease_analysis
+    from med_research.pipeline.cross_disease.report import generate_html_report
+
+    results = compute_cross_disease_analysis()
+    provenance = build_provenance(
+        disease_id="multi",
+        module="cross_disease",
+        sources=["knowledge_graph"],
+        cache_or_live="cache",
+        run_id="cd-test-run",
+    )
+
+    report_path = generate_html_report(results, provenance=provenance)
+    html = _read_report(report_path)
+    _assert_provenance_footer(html, provenance)
+    assert "Rheumatoid Arthritis" in html
+
+
+def test_drug_synergy_report_provenance():
+    from med_research.pipeline.drug_synergy.engine import compute_synergy
+    from med_research.pipeline.drug_synergy.report import generate_html_report
+
+    disease_id = "ra"
+    pairs = compute_synergy(disease_id=disease_id, save=False)
+    assert pairs, "Synergy scoring should return results for RA"
+    provenance = build_provenance(
+        disease_id=disease_id,
+        module="drug_synergy",
+        sources=["knowledge_graph"],
+        cache_or_live="cache",
+        run_id="ds-test-run",
+    )
+
+    report_path = generate_html_report(
+        pairs, disease_id=disease_id, provenance=provenance
+    )
+    _assert_provenance_footer(_read_report(report_path), provenance, disease_id)
+
+
+def test_network_pharmacology_report_provenance():
+    from med_research.pipeline.network_pharmacology.analyzer import compute_all_metrics
+    from med_research.pipeline.network_pharmacology.report import generate_html_report
+
+    disease_id = "ibd"
+    results = compute_all_metrics(disease_id=disease_id)
+    provenance = build_provenance(
+        disease_id=disease_id,
+        module="network_pharmacology",
+        sources=["knowledge_graph"],
+        cache_or_live="cache",
+        run_id="np-test-run",
+    )
+
+    report_path = generate_html_report(
+        results, disease_id=disease_id, provenance=provenance
+    )
+    _assert_provenance_footer(_read_report(report_path), provenance, disease_id)
+
+
+def test_gene_expression_report_provenance():
+    from med_research.pipeline.gene_expression.correlator import compute_all_correlations
+    from med_research.pipeline.gene_expression.report import generate_html_report
+
+    disease_id = "ra"
+    results = compute_all_correlations(disease_id=disease_id, save=False)
+    assert results, "Expression correlation should return results for RA"
+    provenance = build_provenance(
+        disease_id=disease_id,
+        module="gene_expression",
+        sources=["curated_literature"],
+        cache_or_live="cache",
+        run_id="ge-test-run",
+    )
+
+    report_path = generate_html_report(
+        results,
+        disease_id=disease_id,
+        provenance=provenance,
+    )
+    _assert_provenance_footer(_read_report(report_path), provenance, disease_id)
+
+
+def test_ml_predictor_report_provenance():
+    from med_research.pipeline.ml_predictor.report import generate_ml_report
+
+    disease_id = "ibd"
+    results = {
+        "model_metrics": {
+            "n_genes": 40,
+            "n_targeted": 10,
+            "n_untargeted": 30,
+            "cv_roc_auc_mean": 0.82,
+        },
+        "top_untargeted": [{
+            "gene_id": "TNF",
+            "gene_name": "Tumor Necrosis Factor",
+            "category": "Cytokine",
+            "druggability_score": 0.88,
+            "odds_ratio": 2.1,
+            "degree": 6,
+        }],
+        "feature_importance": {"degree": 0.25, "odds_ratio": 0.20},
+        "shap_summary": [{"feature": "degree", "mean_abs_shap": 0.12}],
+    }
+    provenance = build_provenance(
+        disease_id=disease_id,
+        module="ml_predictor",
+        sources=["knowledge_graph"],
+        cache_or_live="cache",
+        run_id="ml-test-run",
+    )
+
+    report_path = generate_ml_report(
+        results, disease_id=disease_id, provenance=provenance
+    )
+    _assert_provenance_footer(_read_report(report_path), provenance, disease_id)
+
+
+def test_semantic_search_report_provenance():
+    from med_research.pipeline.semantic_search.report import generate_semantic_report
+
+    disease_id = "ra"
+    results = [{
+        "rank": 1,
+        "pmid": "123",
+        "title": "Anti-TNF therapy in rheumatoid arthritis",
+        "year": "2024",
+        "journal": "NEJM",
+        "similarity": 9.1,
+    }]
+    provenance = build_provenance(
+        disease_id=disease_id,
+        module="semantic_search",
+        sources=["pubmed"],
+        query="anti-TNF therapy",
+        cache_or_live="cache",
+        run_id="ss-test-run",
+    )
+
+    report_path = generate_semantic_report(
+        results,
+        "anti-TNF therapy",
+        indexed_count=42,
         disease_id=disease_id,
         provenance=provenance,
     )

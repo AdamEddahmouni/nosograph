@@ -363,10 +363,11 @@ def main():
     parser.add_argument("--centrality", action="store_true", help="Show centrality only")
     parser.add_argument("--communities", action="store_true", help="Show communities only")
     parser.add_argument("--export-html", action="store_true", help="Generate HTML report")
+    parser.add_argument("--disease", "-d", default="sle", help="Disease ID (default: sle)")
     args = parser.parse_args()
 
     if args.centrality:
-        G = load_graph()
+        G = load_graph(args.disease)
         centrality = compute_centrality(G)
         logger.info("\n🎯 CENTRALITY METRICS")
         for metric in ["degree", "betweenness", "eigenvector", "closeness", "pagerank"]:
@@ -394,7 +395,17 @@ def main():
 
     if args.export_html:
         from med_research.pipeline.network_pharmacology.report import generate_html_report
-        generate_html_report(results, disease_id=args.disease)
+        from med_research.pipeline.provenance import build_provenance
+
+        provenance = build_provenance(
+            disease_id=args.disease,
+            module="network_pharmacology",
+            sources=["knowledge_graph"],
+            cache_or_live="cache",
+        )
+        generate_html_report(
+            results, disease_id=args.disease, provenance=provenance
+        )
         logger.info("\n✅ HTML report generated: network_pharmacology/report.html")
 
     return results

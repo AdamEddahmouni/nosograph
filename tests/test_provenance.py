@@ -4,12 +4,16 @@ from __future__ import annotations
 
 import re
 
+import pytest
+
 from med_research.pipeline.provenance import (
     SCHEMA_VERSION,
     build_provenance,
     reproducibility_fingerprint,
     utc_now_iso,
 )
+
+pytestmark = pytest.mark.unit
 
 
 def test_utc_now_iso_is_explicit_utc():

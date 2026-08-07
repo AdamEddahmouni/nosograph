@@ -26,7 +26,11 @@ from med_research.web.config import (
     HOST,
     PORT,
 )
-from med_research.web.middleware import AuthMiddleware, RateLimitMiddleware
+from med_research.web.middleware import (
+    AuthMiddleware,
+    RateLimitMiddleware,
+    RequestBodySizeLimitMiddleware,
+)
 from med_research.web.routers import routers
 
 REPO_ROOT = Path(__file__).parent.parent.parent.parent
@@ -43,9 +47,9 @@ async def lifespan(app: FastAPI):
     import os
 
     if not DEBUG and not os.environ.get("API_KEY"):
-        logger.warning(
-            "API_KEY is not set while DEBUG=false. "
-            "Protected write endpoints are open; set API_KEY in production deployments."
+        raise RuntimeError(
+            "API_KEY must be set when DEBUG=false. "
+            "Set API_KEY in production deployments or enable DEBUG=true for local development."
         )
     logger.info("Pre-loading knowledge graph...")
     from med_research.web.dependencies import get_knowledge_graph
@@ -88,6 +92,7 @@ app.add_middleware(
 
 # ── Auth & Rate Limiting ─────────────────────────────────────────────────────
 
+app.add_middleware(RequestBodySizeLimitMiddleware)
 app.add_middleware(AuthMiddleware)
 app.add_middleware(RateLimitMiddleware)
 

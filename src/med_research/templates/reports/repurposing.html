@@ -172,7 +172,7 @@
         </div>
         <div class="gene-card-body">
             <p class="gene-function"><strong>Function:</strong> {{ gene.function }}</p>
-            <p class="gene-evidence"><strong>{{ ctx_disease }} Evidence:</strong> {{ gene.disease_evidence or gene.lupus_evidence }}</p>
+            <p class="gene-evidence"><strong>{{ ctx_disease }} Evidence:</strong> {{ gene.disease_evidence }}</p>
             <p class="gene-odds">
                 <strong>Odds Ratio:</strong> {{ gene.odds_ratio }} | <strong>Chr:</strong> {{ gene.chromosome }}
             </p>

@@ -1,5 +1,29 @@
 # Changelog
 
+## [Provenance, API hardening, disease-neutral polish] — 2026-08-07
+
+### Added
+
+- Provenance footers for cross-disease, drug synergy, network pharmacology, gene expression, ML predictor, and semantic search reports.
+- `tests/integration/` with CLI subprocess smoke tests and auto-marked integration suite.
+- `tests/test_report_neutral_terminology.py` — RA/IBD reports must not leak unrelated lupus/SLE copy.
+- API hardening: request body size limit middleware, UUID `job_id` validation, fail-fast `API_KEY` requirement when `DEBUG=false`.
+- Disease-neutral `get_disease_gene_list()` as the primary bioinformatics helper (`get_lupus_gene_list` deprecated).
+
+### Changed
+
+- CLI semantic/evidence/extractor default queries derive from `--disease` via curated PubMed queries.
+- Drug synergy and repurposing report templates use disease-neutral wording.
+- Optional-dependency tests (RDKit, Meeko, ChromaDB) skip cleanly when packages are absent.
+
+### Verification
+
+- `python -m pytest tests/test_provenance.py tests/test_report_provenance.py tests/test_evidence_workspace_report.py -q`
+- `python -m pytest tests/ -m "not slow" -q`
+- `make test-unit` / `make test-integration`
+
+---
+
 ## [Pipeline report provenance footers] — 2026-08-07
 
 ### Added

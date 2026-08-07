@@ -73,20 +73,31 @@ def get_lupus_gene_list(
 
     """Return the active disease's analyzable gene list.
 
-    The function name is retained for compatibility with existing callers;
-    records and exclusions are scoped to ``disease_id``.
-
-    Args:
-        genes: Gene dictionary indexed by gene ID.
-        G: Knowledge graph (optional, for targeted gene detection).
-        untargeted_only: If True, only return genes not targeted by any drug.
+    .. deprecated::
+        Use :func:`get_disease_gene_list` instead. The name is retained for
+        compatibility with existing callers.
     """
-    # Drug target genes that are not lupus risk genes
+    import warnings
+
+    warnings.warn(
+        "get_lupus_gene_list() is deprecated; use get_disease_gene_list() instead.",
+        DeprecationWarning,
+        stacklevel=2,
+    )
+    return get_disease_gene_list(genes, G, untargeted_only, disease_id)
+
+
+def get_disease_gene_list(
+    genes: dict, G: nx.MultiDiGraph = None, untargeted_only: bool = False,
+    disease_id: str = "sle",
+) -> list:
+    """Return the active disease's analyzable gene list."""
+    # Drug target genes that are not disease risk genes
     from med_research.diseases.base import Disease
 
     drug_target_exclusions = Disease(disease_id).get_drug_target_exclusions()
 
-    lupus_genes = []
+    disease_genes = []
     for gene_id, gene_info in genes.items():
         if gene_id in drug_target_exclusions:
             continue
@@ -101,7 +112,7 @@ def get_lupus_gene_list(
             if targeted:
                 continue
 
-        lupus_genes.append(
+        disease_genes.append(
             {
                 "gene_id": gene_id,
                 "symbol": gene_id,
@@ -113,15 +124,7 @@ def get_lupus_gene_list(
             }
         )
 
-    return lupus_genes
-
-
-def get_disease_gene_list(
-    genes: dict, G: nx.MultiDiGraph = None, untargeted_only: bool = False,
-    disease_id: str = "sle",
-) -> list:
-    """Return the active disease's analyzable gene list."""
-    return get_lupus_gene_list(genes, G, untargeted_only, disease_id)
+    return disease_genes
 
 
 def run_enrichment(

@@ -716,6 +716,7 @@ class TestAnalysisML:
 # ── Job Endpoints ──────────────────────────────────────────────────────────
 
 
+@pytest.mark.integration
 @skip_without_redis
 class TestJobSubmission:
     """Tests for POST /api/jobs/* submission endpoints."""
@@ -781,6 +782,7 @@ class TestJobSubmission:
         assert len(resp.json()["job_id"]) > 0
 
 
+@pytest.mark.integration
 @skip_without_redis
 class TestJobStatus:
     """Tests for GET /api/jobs/{job_id}."""
@@ -795,10 +797,15 @@ class TestJobStatus:
         assert status_resp.json()["status"] in ("PENDING", "STARTED", "SUCCESS", "FAILURE")
 
     def test_nonexistent_job(self, client):
-        resp = client.get("/api/jobs/nonexistent-job-id-12345")
+        resp = client.get("/api/jobs/00000000-0000-0000-0000-000000000099")
         assert resp.status_code == 200
         data = resp.json()
-        assert data["job_id"] == "nonexistent-job-id-12345"
+        assert data["job_id"] == "00000000-0000-0000-0000-000000000099"
+
+    def test_invalid_job_id_format(self, client):
+        resp = client.get("/api/jobs/not-a-uuid")
+        assert resp.status_code == 400
+        assert resp.json()["detail"] == "Invalid job_id format"
 
 
 # ── Error Handling & Edge Cases ─────────────────────────────────────────────
@@ -974,6 +981,7 @@ class TestWebSocketDisconnect:
         assert resp.status_code == 200
 
 
+@pytest.mark.integration
 @skip_without_redis
 class TestWebSocketSuccessfulStream:
     """Test real-time WebSocket job progress streaming.
@@ -1233,3 +1241,41 @@ class TestCrossDiseaseApi:
         counts = data["modules"]["biomarker"]["counts"]
         assert counts.get("sle", 0) > 0
         assert counts.get("ra", 0) > 0
+
+
+class TestAPIHardening:
+    """Input validation, body limits, and production startup guards."""
+
+    def test_kg_search_query_max_length(self, client):
+        resp = client.get("/api/kg/search?q=" + ("a" * 501))
+        assert resp.status_code == 422
+
+    def test_request_body_size_limit(self, client):
+        resp = client.post(
+            "/api/jobs/workspace",
+            content=b"x" * (1024 * 1024 + 1),
+            headers={"Content-Type": "application/json"},
+        )
+        assert resp.status_code == 413
+        assert resp.json()["detail"] == "Request body too large"
+
+    def test_websocket_rejects_invalid_job_id(self, client):
+        with pytest.raises(WebSocketDisconnect), client.websocket_connect(
+            "/api/jobs/not-a-uuid/ws"
+        ) as ws:
+            ws.receive_json()
+
+    def test_api_key_required_when_debug_false(self, monkeypatch):
+        monkeypatch.delenv("API_KEY", raising=False)
+        monkeypatch.setenv("DEBUG", "false")
+        from med_research.web import main as web_main
+
+        monkeypatch.setattr(web_main, "DEBUG", False)
+        with pytest.raises(RuntimeError, match="API_KEY must be set"):
+            import asyncio
+
+            async def _run():
+                async with web_main.lifespan(None):
+                    pass
+
+            asyncio.run(_run())

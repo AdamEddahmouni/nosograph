@@ -42,7 +42,7 @@ jobs:
       - name: Run deterministic offline tests
         timeout-minutes: 5
         run: |
-          python -m pytest tests/ -m "not slow" -q --tb=short
+          python -m pytest tests/ -m "not slow and not integration" -q --tb=short
 
       - name: Upload Playwright failure diagnostics
         if: always()

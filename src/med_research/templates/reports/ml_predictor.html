@@ -3,7 +3,7 @@
 
 {% block hero_title %}ML Target Predictor Report{% endblock %}
 {% block hero_subtitle %}
-    XGBoost-Based Druggability Prediction · {{ n_genes }} Genes · CV ROC-AUC: {{ "%.3f"|format(cv_roc_auc) }}
+    XGBoost-Based Druggability Prediction for {{ ctx_disease }} · {{ n_genes }} Genes · CV ROC-AUC: {{ "%.3f"|format(cv_roc_auc) }}
 {% endblock %}
 
 {% block extra_head %}{% endblock %}

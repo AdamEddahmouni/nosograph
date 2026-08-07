@@ -38,6 +38,7 @@ try:
     import chromadb
     CHROMADB_AVAILABLE = True
 except ImportError:
+    chromadb = None  # type: ignore[assignment,misc]
     CHROMADB_AVAILABLE = False
 
 try:
@@ -250,6 +251,8 @@ class SemanticSearchEngine:
 
     def get_indexed_count(self) -> int:
         """Return number of indexed articles."""
+        if not CHROMADB_AVAILABLE:
+            return 0
         if self.collection is None:
             self.client = chromadb.PersistentClient(path=str(CHROMA_DIR))
             try:
@@ -273,6 +276,7 @@ def main():
     args = parser.parse_args()
 
     engine = SemanticSearchEngine(disease_id=args.disease)
+    results: list = []
 
     if args.index:
         articles = engine.load_articles()
@@ -293,11 +297,26 @@ def main():
             logger.info("No results found. Try running --index first.")
 
     if args.export_html:
+        from med_research.pipeline.provenance import build_provenance
         from med_research.pipeline.semantic_search.report import generate_semantic_report
+
         query = args.query or "(all articles)"
-        results = results if args.query else []
+        search_results = results if args.query else []
         indexed = engine.get_indexed_count()
-        generate_semantic_report(results, query, indexed)
+        provenance = build_provenance(
+            disease_id=args.disease,
+            module="semantic_search",
+            sources=["pubmed"],
+            query=query,
+            cache_or_live="cache",
+        )
+        generate_semantic_report(
+            search_results,
+            query,
+            indexed,
+            disease_id=args.disease,
+            provenance=provenance,
+        )
         logger.info("\n✅ HTML report generated: semantic_search/report.html")
 
     return 0

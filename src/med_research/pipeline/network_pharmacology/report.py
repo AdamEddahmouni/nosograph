@@ -11,10 +11,19 @@ Generates a standalone HTML report with:
 from datetime import datetime
 from pathlib import Path
 
-from med_research.pipeline.reporting import apply_disease_labels
+from med_research.pipeline.reporting import (
+    apply_disease_labels,
+    disease_context,
+    provenance_footer_html,
+)
 
 
-def generate_html_report(results: dict, disease_id: str = "sle") -> str:
+def generate_html_report(
+    results: dict,
+    disease_id: str = "sle",
+    *,
+    provenance: dict | None = None,
+) -> str:
     """Generate a standalone HTML report and return the path."""
 
     output_path = Path(__file__).parent / "report.html"
@@ -114,6 +123,7 @@ def generate_html_report(results: dict, disease_id: str = "sle") -> str:
     # ── Assemble via template ──────────────────────────────────────
     from med_research.templates import env as template_env
 
+    context = disease_context(disease_id)
     html = template_env.get_template("reports/network_pharmacology.html").render(
         ctx_0=gm["n_nodes"],
         ctx_1=gm["n_edges"],
@@ -123,8 +133,13 @@ def generate_html_report(results: dict, disease_id: str = "sle") -> str:
         ctx_5=com_rows,
         ctx_6=bridge_rows,
         ctx_7=centrality_sections,
+        ctx_disease=context["name"],
+        ctx_disease_id=context["id"],
     )
     html = apply_disease_labels(html, disease_id)
+    footer = provenance_footer_html(provenance)
+    if footer:
+        html = html.replace("</body>", f"{footer}\n</body>", 1)
 
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(html)

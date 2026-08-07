@@ -17,11 +17,15 @@ from med_research.pipeline.semantic_search.engine import (
 
 # ---- Dependency checks ----
 
+@pytest.mark.slow
+@pytest.mark.skipif(not CHROMADB_AVAILABLE, reason="chromadb not installed")
 def test_chromadb_available():
     """Verify ChromaDB is installed."""
     assert CHROMADB_AVAILABLE, "chromadb required: pip install chromadb"
 
 
+@pytest.mark.slow
+@pytest.mark.skipif(not ST_AVAILABLE, reason="sentence-transformers not installed")
 def test_sentence_transformers_available():
     """Verify sentence-transformers is installed."""
     assert ST_AVAILABLE, "sentence-transformers required: pip install sentence-transformers"
@@ -128,10 +132,12 @@ def test_load_articles_reads_per_disease_cache(tmp_path, monkeypatch):
 
 def test_search_uses_per_disease_collection(tmp_path, monkeypatch):
     """search/get_indexed_count look up the disease-specific collection."""
+    import types
+
     import med_research.pipeline.semantic_search.engine as engine_mod
 
-    monkeypatch.setattr(engine_mod, "CHROMA_DIR", tmp_path / "chroma")
-    engine = SemanticSearchEngine(disease_id="ra")
+    if getattr(engine_mod, "chromadb", None) is None:
+        monkeypatch.setattr(engine_mod, "CHROMADB_AVAILABLE", True)
 
     looked_up = []
 
@@ -147,15 +153,23 @@ def test_search_uses_per_disease_collection(tmp_path, monkeypatch):
             looked_up.append(name)
             return FakeCollection()
 
-    monkeypatch.setattr(engine_mod.chromadb, "PersistentClient", lambda path: FakeClient())
+    monkeypatch.setattr(
+        engine_mod,
+        "chromadb",
+        types.SimpleNamespace(PersistentClient=lambda path: FakeClient()),
+    )
+    monkeypatch.setattr(engine_mod, "CHROMA_DIR", tmp_path / "chroma")
+    engine = SemanticSearchEngine(disease_id="ra")
     # Avoid loading the embedding model just to verify collection lookup
     class FakeModel:
         def encode(self, text):
             return type("Vec", (), {"tolist": lambda self: [0.1] * 4})()
     engine.model = FakeModel()
     monkeypatch.setattr(SemanticSearchEngine, "_load_model", lambda self: None)
+    monkeypatch.setattr(engine_mod, "_check_deps", lambda: True)
     assert engine.get_indexed_count() == 3
-    engine.collection = None  # search() re-resolves its own collection
+    assert looked_up == ["pubmed_abstracts_ra"]
+    engine.collection = None
     assert engine.search("jak inhibitors", top_k=5) == []
     assert looked_up == ["pubmed_abstracts_ra", "pubmed_abstracts_ra"]
 

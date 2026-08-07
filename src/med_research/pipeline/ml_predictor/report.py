@@ -12,6 +12,7 @@ import io
 from datetime import datetime
 from pathlib import Path
 
+from med_research.pipeline.reporting import disease_context, provenance_footer_html
 from med_research.templates import env as template_env
 
 try:
@@ -25,7 +26,12 @@ except ImportError:
     np = None
 
 
-def generate_ml_report(results: dict) -> str:
+def generate_ml_report(
+    results: dict,
+    disease_id: str = "sle",
+    *,
+    provenance: dict | None = None,
+) -> str:
     """Generate an HTML report from ML prediction results."""
     output_path = Path(__file__).parent / "ml_report.html"
 
@@ -59,6 +65,7 @@ def generate_ml_report(results: dict) -> str:
         for feat, imp in list(importance.items())[:15]
     ]
 
+    context = disease_context(disease_id)
     html = template_env.get_template("reports/ml_predictor.html").render(
         n_genes=metrics.get("n_genes", 0),
         n_targeted=metrics.get("n_targeted", 0),
@@ -70,12 +77,15 @@ def generate_ml_report(results: dict) -> str:
         shap_chart=shap_chart,
         feature_importance=feature_importance,
         generated_at=datetime.now().strftime("%B %d, %Y at %H:%M"),
+        ctx_disease=context["name"],
+        ctx_disease_id=context["id"],
     )
+    footer = provenance_footer_html(provenance)
+    if footer:
+        html = html.replace("</body>", f"{footer}\n</body>", 1)
 
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(html)
-
-    return str(output_path)
 
     return str(output_path)
 

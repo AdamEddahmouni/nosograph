@@ -27,6 +27,27 @@ def _get_client_ip(request: Request) -> str:
     return request.client.host if request.client else "unknown"
 
 
+MAX_REQUEST_BODY_BYTES = int(os.environ.get("MAX_REQUEST_BODY_BYTES", str(1024 * 1024)))
+
+
+class RequestBodySizeLimitMiddleware(BaseHTTPMiddleware):
+    """Reject oversized request bodies before handlers run."""
+
+    def __init__(self, app: ASGIApp, max_bytes: int = MAX_REQUEST_BODY_BYTES) -> None:
+        super().__init__(app)
+        self.max_bytes = max_bytes
+
+    async def dispatch(self, request: Request, call_next: Callable):
+        if request.method in ("POST", "PUT", "PATCH"):
+            content_length = request.headers.get("content-length")
+            if content_length and int(content_length) > self.max_bytes:
+                return JSONResponse(
+                    status_code=413,
+                    content={"detail": "Request body too large"},
+                )
+        return await call_next(request)
+
+
 class AuthMiddleware(BaseHTTPMiddleware):
     """Simple API key check on protected write/mutation endpoints.
 

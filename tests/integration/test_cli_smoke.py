@@ -16,7 +16,7 @@ from pathlib import Path
 
 import pytest
 
-PROJECT_ROOT = Path(__file__).parent.parent
+PROJECT_ROOT = Path(__file__).parent.parent.parent
 
 # (test id, CLI args, expected fragment in stdout)
 CLI_SMOKE_COMMANDS = [

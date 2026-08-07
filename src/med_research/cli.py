@@ -26,6 +26,15 @@ from med_research.rate_limiter import rate_limited_sleep
 logger = get_logger(__name__)
 
 
+def _default_pubmed_query(disease_id: str) -> str:
+    """Return a disease-scoped default query for CLI search commands."""
+    disease = Disease(disease_id)
+    queries = disease.config.get("PUBMED_QUERIES", [])
+    if queries:
+        return queries[0]
+    return f"treatment targets {disease.get_display_name()}"
+
+
 def _build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description="Medical Research Platform — Multi-disease drug discovery pipeline",
@@ -220,12 +229,13 @@ def _build_parser() -> argparse.ArgumentParser:
 
     semantic = sub.add_parser("semantic", help="Semantic search over biomedical abstracts")
     semantic.add_argument("--disease", "-d", default="sle", help="Disease ID")
-    semantic.add_argument("--query", "-q", default="treatment targets lupus", help="Search query")
+    semantic.add_argument("--query", "-q", default=None, help="Search query")
     semantic.add_argument("--top", type=int, default=20)
     semantic.add_argument("--export-html", action="store_true")
 
     evidence = sub.add_parser("evidence", help="Multi-source evidence gathering")
-    evidence.add_argument("--query", "-q", default="B cell depletion therapy lupus")
+    evidence.add_argument("--disease", "-d", default="sle", help="Disease ID")
+    evidence.add_argument("--query", "-q", default=None)
     evidence.add_argument("--sources", default="all")
     evidence.add_argument("--max", type=int, default=20)
     evidence.add_argument("--no-cache", action="store_true")
@@ -233,7 +243,8 @@ def _build_parser() -> argparse.ArgumentParser:
     evidence.add_argument("--export-html", action="store_true")
 
     extractor = sub.add_parser("extractor", help="LLM-powered evidence extraction")
-    extractor.add_argument("--query", "-q", default="B cell depletion therapy lupus")
+    extractor.add_argument("--disease", "-d", default="sle", help="Disease ID")
+    extractor.add_argument("--query", "-q", default=None)
     extractor.add_argument("--sources", default="pubmed,preprints,clinical_trials")
     extractor.add_argument(
         "--model", "-m", default="gpt-4o-mini", help="LLM model (default: gpt-4o-mini)"
@@ -764,7 +775,7 @@ def _run_enrichment(args):
     from med_research.pipeline.bioinformatics.enrichment import (
         analyze,
         cross_reference_with_kg_pathways,
-        get_lupus_gene_list,
+        get_disease_gene_list,
         load_kg_genes,
         load_kg_graph,
         load_pathways,
@@ -779,7 +790,7 @@ def _run_enrichment(args):
         return {"coverage": coverage.to_dict(), "status": "blocked"}
     G = load_kg_graph(disease_id)
     genes = load_kg_genes(disease_id)
-    gene_list = get_lupus_gene_list(
+    gene_list = get_disease_gene_list(
         genes, G, untargeted_only=False, disease_id=disease_id
     )
     enrichment_results = run_enrichment(gene_list, use_cache=not args.no_cache)
@@ -1158,13 +1169,16 @@ def cmd_semantic(args):
     """Semantic search."""
     from med_research.pipeline.semantic_search.engine import SemanticSearchEngine
 
+    query = args.query or _default_pubmed_query(args.disease)
     engine = SemanticSearchEngine(disease_id=args.disease)
-    results = engine.search(args.query, top_k=args.top)
+    results = engine.search(query, top_k=args.top)
 
     if args.export_html:
         from med_research.pipeline.semantic_search.report import generate_semantic_report
 
-        generate_semantic_report(results, args.query, engine.get_indexed_count())
+        generate_semantic_report(
+            results, query, engine.get_indexed_count(), disease_id=args.disease
+        )
     return 0
 
 
@@ -1172,12 +1186,14 @@ def cmd_evidence(args):
     """Multi-source evidence gathering."""
     from med_research.pipeline.evidence.gatherer import gather_evidence
 
+    query = args.query or _default_pubmed_query(args.disease)
     sources = None if args.sources == "all" else [s.strip() for s in args.sources.split(",")]
     results = gather_evidence(
-        query=args.query,
+        query=query,
         sources=sources,
         max_per_source=args.max,
         use_cache=not args.no_cache,
+        disease_id=args.disease,
     )
 
     if args.export_html:
@@ -1191,9 +1207,10 @@ def cmd_extractor(args):
     """LLM-powered evidence extraction."""
     from med_research.pipeline.evidence.extractor import extract_all
 
+    query = args.query or _default_pubmed_query(args.disease)
     sources = [s.strip() for s in args.sources.split(",")]
     results = extract_all(
-        query=args.query,
+        query=query,
         sources=sources,
         max_articles=args.max,
         model=args.model or None,

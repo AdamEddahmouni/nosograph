@@ -130,7 +130,7 @@ def run_enrichment(
     from med_research.pipeline.bioinformatics.enrichment import (
         GENE_SET_LIBRARIES,
         cross_reference_with_kg_pathways,
-        get_lupus_gene_list,
+        get_disease_gene_list,
     )
     from med_research.pipeline.bioinformatics.enrichment import (
         run_enrichment as do_enrichment,
@@ -146,7 +146,7 @@ def run_enrichment(
         return {"coverage": coverage.to_dict(), "status": "blocked", "libraries": []}
 
     cb(10, "Compiling disease gene list…")
-    gene_list = get_lupus_gene_list(
+    gene_list = get_disease_gene_list(
         genes, G, untargeted_only=untargeted_only, disease_id=disease_id
     )
 

@@ -1,7 +1,11 @@
 from datetime import datetime, timezone
 
+import pytest
+
 from med_research.pipeline.evidence_workspace.report import dossier_to_json, render_html
 from med_research.pipeline.evidence_workspace.schemas import EvidenceDossier, ResearchRequest
+
+pytestmark = pytest.mark.unit
 
 
 def test_report_preserves_provenance_escapes_text_and_includes_disclaimer():
