@@ -120,6 +120,17 @@ class TestTrainAndPredict:
         except ImportError:
             pytest.skip("xgboost/scikit-learn not installed")
 
+    def test_raises_configuration_error_when_dependencies_missing(self, monkeypatch):
+        from med_research.exceptions import ConfigurationError
+        from med_research.pipeline.ml_predictor import predictor as ml_module
+
+        monkeypatch.setattr(ml_module, "NP_AVAILABLE", False)
+        monkeypatch.setattr(ml_module, "SKLEARN_AVAILABLE", False)
+        monkeypatch.setattr(ml_module, "XGB_AVAILABLE", False)
+
+        with pytest.raises(ConfigurationError, match="ML predictor dependencies"):
+            ml_module.require_ml_dependencies()
+
     def test_returns_valid_structure(self):
         from med_research.pipeline.knowledge_graph.builder import build_graph
         from med_research.pipeline.ml_predictor.predictor import train_and_predict

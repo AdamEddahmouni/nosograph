@@ -64,6 +64,7 @@ def run_workspace(
 ) -> EvidenceDossier:
     request = normalize_request(request)
     validate_disease_contract(request.disease_id)
+    run_id = f"ew-{uuid4().hex}"
     _report(progress_callback, 5, "Validating research request")
     started = datetime.now(timezone.utc)
     search_terms = build_search_terms(request)
@@ -119,6 +120,9 @@ def run_workspace(
     except TypeError:
         request_dump = request.model_dump()
     source_counts = {status.source: status.records_found for status in statuses}
+    retrieval_times = {
+        status.source: status.retrieved_at.isoformat() for status in statuses
+    }
     retrieval_modes = {
         status.retrieval_mode
         for status in statuses
@@ -156,15 +160,18 @@ def run_workspace(
                 "candidate_type": request.candidate_type,
             },
             inputs={"search_terms": search_terms, "source_counts": source_counts},
+            run_id=run_id,
+            retrieval_times=retrieval_times,
         ),
     }
+    manifest["fingerprint"] = manifest["provenance"]["fingerprint"]
     limitations = [
         "Evidence and rankings depend on the selected sources and retrieval window.",
         "Entity extraction is deterministic pattern matching unless validated LLM enrichment is enabled.",
         "Rankings are computational prioritization heuristics and do not establish treatment efficacy.",
     ]
     dossier = EvidenceDossier(
-        run_id=f"ew-{uuid4().hex}",
+        run_id=run_id,
         request=request,
         search_terms=search_terms,
         started_at=started,

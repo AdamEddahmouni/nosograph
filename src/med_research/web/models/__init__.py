@@ -5,12 +5,17 @@ from typing import Any, Optional
 
 from pydantic import BaseModel, Field
 
+try:
+    from importlib.metadata import version as package_version
+except ImportError:  # pragma: no cover
+    from importlib_metadata import version as package_version  # type: ignore[no-redef]
+
 # ── System / Job Models ────────────────────────────────────────────────────
 
 
 class HealthResponse(BaseModel):
     status: str = "ok"
-    version: str = "1.0.0"
+    version: str = Field(default_factory=lambda: package_version("med-research"))
     timestamp: str = Field(default_factory=lambda: datetime.now().isoformat())
 
 
@@ -43,7 +48,6 @@ class PlatformStats(BaseModel):
     drugs: int = 0
     pathways: int = 0
     candidates: int = 0
-    tests_passing: int = 297
 
 
 # ── Diseases Registry ─────────────────────────────────────────────────────

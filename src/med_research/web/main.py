@@ -41,6 +41,13 @@ logger = logging.getLogger(__name__)
 async def lifespan(app: FastAPI):
     """Pre-load the knowledge graph on startup for faster first request."""
     setup_logging(level=logging.DEBUG if DEBUG else logging.INFO)
+    import os
+
+    if not DEBUG and not os.environ.get("API_KEY"):
+        logger.warning(
+            "API_KEY is not set while DEBUG=false. "
+            "Protected write endpoints are open; set API_KEY in production deployments."
+        )
     logger.info("Pre-loading knowledge graph...")
     from med_research.web.dependencies import get_knowledge_graph
 

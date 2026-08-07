@@ -58,6 +58,8 @@ def build_provenance(
     model: str | None = None,
     scoring: dict[str, Any] | None = None,
     inputs: dict[str, Any] | None = None,
+    run_id: str | None = None,
+    retrieval_times: dict[str, str] | None = None,
 ) -> dict[str, Any]:
     """Build deterministic, secret-free metadata for a computation or report."""
     stable_inputs = {
@@ -71,10 +73,12 @@ def build_provenance(
         "scoring": scoring or {},
         **(inputs or {}),
     }
-    return {
+    payload = {
         "schema_version": SCHEMA_VERSION,
+        "run_id": run_id,
         "disease_id": disease_id,
         "module": module,
+        "package_version": package_version(),
         "module_version": package_version(),
         "sources": stable_inputs["sources"],
         "query": query or "",
@@ -82,6 +86,8 @@ def build_provenance(
         "cache_or_live": cache_or_live,
         "model": model,
         "scoring": _json_safe(scoring or {}),
+        "retrieval_times": _json_safe(retrieval_times or {}),
         "fingerprint": reproducibility_fingerprint(stable_inputs),
         "generated_at": utc_now_iso(),
     }
+    return {key: value for key, value in payload.items() if value is not None}

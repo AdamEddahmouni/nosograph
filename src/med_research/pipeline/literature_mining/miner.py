@@ -53,6 +53,11 @@ DATA_DIR = Path(__file__).parent / "data"
 DEFAULT_EMAIL = os.environ.get("ENTREZ_EMAIL")
 if DEFAULT_EMAIL is None:
     DEFAULT_EMAIL = "researcher@example.com"
+    logger.warning(
+        "ENTREZ_EMAIL is not set; using placeholder %s. "
+        "Set ENTREZ_EMAIL in the environment for NCBI Entrez compliance.",
+        DEFAULT_EMAIL,
+    )
     logger.info("⚠️  ENTREZ_EMAIL not set; using placeholder. NCBI requires a real email. Set ENTREZ_EMAIL env var.")
 
 # ── PubMed queries for SLE/lupus ──────────────────────────────────────────

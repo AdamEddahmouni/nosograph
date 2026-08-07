@@ -80,7 +80,7 @@ class TestSystemEndpoints:
         resp = client.get("/api/stats")
         assert resp.status_code == 200
         data = resp.json()
-        for key in ["kg_nodes", "kg_edges", "genes", "drugs", "pathways", "candidates", "tests_passing"]:
+        for key in ["kg_nodes", "kg_edges", "genes", "drugs", "pathways", "candidates"]:
             assert key in data, f"Missing key: {key}"
 
     def test_stats_kg_nodes_is_positive(self, client):

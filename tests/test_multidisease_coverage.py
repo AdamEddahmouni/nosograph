@@ -163,6 +163,20 @@ def test_all_default_modules_return_structured_coverage(disease_id):
         assert payload["status"] in {"ready", "limited_coverage", "blocked"}
 
 
+@pytest.mark.parametrize("disease_id", DISEASES)
+def test_all_diseases_have_curated_car_t_and_safety_configs(disease_id):
+    """Non-SLE diseases must ship curated CAR-T and safety tables, not empty stubs."""
+    from med_research.diseases.base import Disease
+
+    disease = Disease(disease_id)
+    car_t_scores = disease.get_car_t_scores()
+    risk_config = disease.get_disease_risk_config()
+    assert car_t_scores, f"{disease_id} CAR_T_SCORES must be populated"
+    assert any(car_t_scores.values()), f"{disease_id} CAR_T_SCORES tables must contain scores"
+    assert risk_config, f"{disease_id} disease risk config must be populated"
+    assert any(risk_config.values()), f"{disease_id} risk tiers must list drugs"
+
+
 @pytest.mark.parametrize("disease_id", ["ra", "ibd", "ms"])
 def test_non_sle_car_t_and_safety_report_structured_coverage(disease_id):
     from med_research.diseases.coverage import module_coverage

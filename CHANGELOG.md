@@ -1,5 +1,27 @@
 # Changelog
 
+## [Quick wins and provenance hardening] — 2026-08-07
+
+### Added
+
+- Shared provenance contract tests in `tests/test_provenance.py` with run ID, retrieval timestamps, and stable fingerprints.
+- Parametrized test ensuring all seven diseases ship curated `CAR_T_SCORES` and disease-risk configs.
+
+### Changed
+
+- ML predictor logs missing optional dependencies and raises `ConfigurationError` via `require_ml_dependencies()`.
+- `HealthResponse` reads package version from metadata; removed stale `tests_passing` from `PlatformStats`.
+- Evidence Workspace dossiers embed `run_id` and per-source retrieval times in provenance metadata.
+- FastAPI lifespan warns when `DEBUG=false` and `API_KEY` is unset; `.env.example` documents production auth and `ENTREZ_EMAIL`.
+- Playwright browser tests marked `slow` for offline CI; vina setup CLI tests target the v2 module path.
+
+### Verification
+
+- `python -m pytest tests/ -m "not slow" -q` (1037 passed)
+- `python -m ruff check src/ tests/`
+
+---
+
 ## [Multi-disease coverage completion] — 2026-08-07
 
 ### Changed

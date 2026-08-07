@@ -28,9 +28,11 @@ def _provenance_html(dossier: EvidenceDossier) -> str:
     fingerprint = html.escape(str(provenance.get("fingerprint", "not available")))
     generated = html.escape(str(provenance.get("generated_at", "not available")))
     cache_mode = html.escape(str(provenance.get("cache_or_live", "unknown")))
+    run_id = html.escape(str(provenance.get("run_id", dossier.run_id)))
     return (
         '<div class="meta provenance"><strong>Reproducibility:</strong> '
-        f'fingerprint <code>{fingerprint}</code> · generated {generated} · mode {cache_mode}'
+        f'run <code>{run_id}</code> · fingerprint <code>{fingerprint}</code> · '
+        f"generated {generated} · mode {cache_mode}"
         '</div>'
     )
 

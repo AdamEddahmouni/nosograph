@@ -49,6 +49,7 @@ try:
     NP_AVAILABLE = True
 except ImportError:
     NP_AVAILABLE = False
+    logger.warning("numpy is not installed; ML predictor requires numpy")
 
 try:
     from sklearn.model_selection import StratifiedKFold, cross_val_score
@@ -56,18 +57,43 @@ try:
     SKLEARN_AVAILABLE = True
 except ImportError:
     SKLEARN_AVAILABLE = False
+    logger.warning("scikit-learn is not installed; ML predictor requires sklearn")
 
 try:
     import xgboost as xgb
     XGB_AVAILABLE = True
 except ImportError:
     XGB_AVAILABLE = False
+    logger.warning("xgboost is not installed; ML predictor requires xgboost")
 
 try:
     import shap
     SHAP_AVAILABLE = True
 except ImportError:
     SHAP_AVAILABLE = False
+    logger.warning("shap is not installed; SHAP interpretability will be unavailable")
+
+
+def require_ml_dependencies(*, raise_error: bool = True) -> None:
+    """Validate optional ML dependencies and fail fast when required."""
+    from med_research.exceptions import ConfigurationError
+
+    missing = []
+    if not NP_AVAILABLE:
+        missing.append("numpy")
+    if not SKLEARN_AVAILABLE:
+        missing.append("scikit-learn")
+    if not XGB_AVAILABLE:
+        missing.append("xgboost")
+    if missing:
+        message = (
+            "ML predictor dependencies are missing: "
+            + ", ".join(missing)
+            + ". Install with: pip install xgboost scikit-learn numpy"
+        )
+        if raise_error:
+            raise ConfigurationError(message)
+        logger.warning(message)
 
 
 # ── Feature Engineering ──────────────────────────────────────────────
@@ -200,10 +226,9 @@ def train_and_predict(G, top_n: int = 15) -> dict:
     Returns:
         dict with predictions, feature_importance, model_metrics, gene_details
     """
-    if not all([XGB_AVAILABLE, SKLEARN_AVAILABLE, NP_AVAILABLE]):
-        logger.info("❌ xgboost, scikit-learn, and numpy required.")
-        logger.info("   Install: pip install xgboost scikit-learn numpy")
-        return {"error": "Missing dependencies"}
+    require_ml_dependencies()
+    if not SHAP_AVAILABLE:
+        logger.warning("shap is not installed; feature importance plots will be skipped")
 
     logger.info("🔄 Extracting features from knowledge graph...")
     X, gene_ids, labels = extract_features(G)
