@@ -38,8 +38,12 @@ class MlPredictorModule(BasePipelineModule):
         if not coverage.is_runnable:
             return {"error": "blocked", "coverage": coverage.to_dict()}
 
-        graph = build_graph(disease_id)
-        return train_and_predict(graph, top_n=opts.get("top", 15))
+        graph = build_graph(disease_id, progress_callback=opts.get("progress_callback"))
+        return train_and_predict(
+            graph,
+            top_n=opts.get("top", 15),
+            progress_callback=opts.get("progress_callback"),
+        )
 
     def report(
         self,

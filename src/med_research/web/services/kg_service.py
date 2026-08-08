@@ -5,8 +5,10 @@ from collections import defaultdict
 import networkx as nx
 
 from med_research.diseases.coverage import coverage_for_disease
-from med_research.pipeline.dispatch import execute_module
-from med_research.web.services.registry_service import run_module
+from med_research.web.services.registry_service import (
+    dispatch_sync_module,
+    require_runnable_coverage,
+)
 
 
 def _kg_coverage_payload(disease_id: str) -> dict:
@@ -19,39 +21,15 @@ def _kg_coverage_payload(disease_id: str) -> dict:
 
 def _load_graph(disease_id: str):
     """Build or load the knowledge graph via the registry dispatch path."""
-    result = execute_module("knowledge_graph", disease_id)
-    if not result.success:
-        return None, result
-    return result.data, result
+    core = coverage_for_disease(disease_id)
+    require_runnable_coverage(core, "knowledge_graph")
+    return dispatch_sync_module("knowledge_graph", disease_id)
 
 
 def get_graph_stats(disease_id: str = "sle") -> dict:
     """Return graph statistics including node/edge counts and untargeted genes."""
     coverage = _kg_coverage_payload(disease_id)
-    if coverage.get("status") == "blocked":
-        return {
-            "total_nodes": 0,
-            "total_edges": 0,
-            "node_types": {},
-            "edge_types": {},
-            "untargeted_genes": [],
-            "top_hub_genes": [],
-            "coverage": coverage,
-            "status": "blocked",
-        }
-
-    G, _ = _load_graph(disease_id)
-    if G is None:
-        return {
-            "total_nodes": 0,
-            "total_edges": 0,
-            "node_types": {},
-            "edge_types": {},
-            "untargeted_genes": [],
-            "top_hub_genes": [],
-            "coverage": coverage,
-            "status": "blocked",
-        }
+    G = _load_graph(disease_id)
 
     node_types = defaultdict(int)
     for _, data in G.nodes(data=True):
@@ -115,20 +93,7 @@ def get_graph_stats(disease_id: str = "sle") -> dict:
 def get_graph_data(disease_id: str = "sle") -> dict:
     """Export graph data in Cytoscape.js format."""
     coverage = _kg_coverage_payload(disease_id)
-    if coverage.get("status") == "blocked":
-        return {
-            "elements": [],
-            "coverage": coverage,
-            "status": "blocked",
-        }
-
-    G, _ = _load_graph(disease_id)
-    if G is None:
-        return {
-            "elements": [],
-            "coverage": coverage,
-            "status": "blocked",
-        }
+    G = _load_graph(disease_id)
 
     elements = []
 
@@ -164,8 +129,8 @@ def get_graph_data(disease_id: str = "sle") -> dict:
 
 def get_node_detail(node_id: str, disease_id: str = "sle") -> dict | None:
     """Get detailed information about a specific node."""
-    G, _ = _load_graph(disease_id)
-    if G is None or node_id not in G:
+    G = _load_graph(disease_id)
+    if node_id not in G:
         return None
 
     data = dict(G.nodes[node_id])
@@ -194,9 +159,7 @@ def get_node_detail(node_id: str, disease_id: str = "sle") -> dict | None:
 
 def get_shortest_path(source: str, target: str, disease_id: str = "sle") -> dict | None:
     """Find the shortest path between two nodes."""
-    G, _ = _load_graph(disease_id)
-    if G is None:
-        return None
+    G = _load_graph(disease_id)
 
     try:
         path = nx.shortest_path(G, source=source, target=target)
@@ -219,8 +182,8 @@ def get_shortest_path(source: str, target: str, disease_id: str = "sle") -> dict
 
 def get_neighbors(node_id: str, n_hops: int = 1, disease_id: str = "sle") -> dict | None:
     """Get neighbors of a node up to n_hops away."""
-    G, _ = _load_graph(disease_id)
-    if G is None or node_id not in G:
+    G = _load_graph(disease_id)
+    if node_id not in G:
         return None
 
     if n_hops == 1:
@@ -262,9 +225,7 @@ def get_neighbors(node_id: str, n_hops: int = 1, disease_id: str = "sle") -> dic
 
 def search_nodes(query: str, disease_id: str = "sle") -> list[dict]:
     """Search nodes by label, ID, or description."""
-    G, _ = _load_graph(disease_id)
-    if G is None:
-        return []
+    G = _load_graph(disease_id)
 
     query_lower = query.lower()
     results = []
@@ -291,7 +252,7 @@ def run_centrality_analysis(
     metric: str = "betweenness", top_n: int = 15, disease_id: str = "sle"
 ) -> dict:
     """Compute centrality metrics via the network_pharmacology registry adapter."""
-    return run_module(
+    return dispatch_sync_module(
         "network_pharmacology",
         disease_id,
         operation="centrality",
@@ -302,7 +263,7 @@ def run_centrality_analysis(
 
 def run_community_detection(disease_id: str = "sle") -> dict:
     """Detect communities in the selected disease knowledge graph."""
-    return run_module(
+    return dispatch_sync_module(
         "network_pharmacology",
         disease_id,
         operation="communities",

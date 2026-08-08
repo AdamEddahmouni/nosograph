@@ -35,6 +35,7 @@ class GwasModule(BasePipelineModule):
             max_studies=opts.get("max_studies", 30),
             use_cache=opts.get("use_cache", True),
             resolve_snps=opts.get("resolve_snps", True),
+            progress_callback=opts.get("progress_callback"),
         )
 
     def report(
@@ -46,9 +47,11 @@ class GwasModule(BasePipelineModule):
     ) -> Path:
         from med_research.pipeline.bioinformatics.report import generate_bioinformatics_report
 
+        gwas_results = results.get("gwas_results")
+        gwas_crossref = results.get("crossref")
         report_path = generate_bioinformatics_report(
-            gwas_results=results.get("gwas_results"),
-            gwas_crossref=results.get("crossref"),
+            gwas_results=gwas_results if isinstance(gwas_results, dict) else {},
+            gwas_crossref=gwas_crossref if isinstance(gwas_crossref, dict) else {},
             disease_id=disease_id,
             provenance=provenance,
         )
@@ -89,6 +92,7 @@ class EnrichmentModule(BasePipelineModule):
             disease_id=disease_id,
             untargeted_only=opts.get("untargeted_only", False),
             use_cache=opts.get("use_cache", True),
+            progress_callback=opts.get("progress_callback"),
         )
 
     def report(
@@ -100,10 +104,15 @@ class EnrichmentModule(BasePipelineModule):
     ) -> Path:
         from med_research.pipeline.bioinformatics.report import generate_bioinformatics_report
 
+        enrichment_results = results.get("enrichment_results")
+        gene_list = results.get("gene_list")
+        kg_matches = results.get("kg_pathway_matches")
         report_path = generate_bioinformatics_report(
-            enrichment_results=results.get("enrichment_results"),
-            gene_list=results.get("gene_list"),
-            kg_matches=results.get("kg_pathway_matches"),
+            enrichment_results=(
+                enrichment_results if isinstance(enrichment_results, dict) else {}
+            ),
+            gene_list=gene_list if isinstance(gene_list, list) else [],
+            kg_matches=kg_matches if isinstance(kg_matches, dict) else {},
             disease_id=disease_id,
             provenance=provenance,
         )
@@ -148,6 +157,7 @@ class PpiModule(BasePipelineModule):
             confidence=opts.get("confidence", DEFAULT_CONFIDENCE),
             expand_neighbors=opts.get("expand_neighbors", 0),
             use_cache=opts.get("use_cache", True),
+            progress_callback=opts.get("progress_callback"),
         )
 
     def report(
@@ -159,10 +169,13 @@ class PpiModule(BasePipelineModule):
     ) -> Path:
         from med_research.pipeline.bioinformatics.report import generate_bioinformatics_report
 
+        hub_scores = results.get("hub_scores")
+        ppi_crossref = results.get("crossref")
+        ppi_graph = results.get("graph")
         report_path = generate_bioinformatics_report(
-            hub_scores=results.get("hub_scores"),
-            ppi_crossref=results.get("crossref"),
-            ppi_graph=results.get("graph"),
+            hub_scores=hub_scores if isinstance(hub_scores, list) else [],
+            ppi_crossref=ppi_crossref if isinstance(ppi_crossref, dict) else {},
+            ppi_graph=ppi_graph if isinstance(ppi_graph, dict) else {},
             disease_id=disease_id,
             provenance=provenance,
         )

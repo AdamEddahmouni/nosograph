@@ -2,7 +2,11 @@
 
 from med_research.diseases.coverage import module_coverage
 from med_research.web.dependencies import safe_serialize
-from med_research.web.services.registry_service import make_progress_reporter, run_module
+from med_research.web.services.registry_service import (
+    dispatch_sync_module,
+    make_progress_reporter,
+    require_runnable_coverage,
+)
 
 
 def run_synergy(
@@ -12,23 +16,12 @@ def run_synergy(
 ) -> dict:
     """Run drug combination synergy prediction."""
     coverage = module_coverage(disease_id, "synergy", ("genes", "drugs"))
-    if not coverage.is_runnable:
-        return {
-            "total_pairs": 0,
-            "pairs": [],
-            "tier1_count": 0,
-            "tier2_count": 0,
-            "tier3_count": 0,
-            "avg_score": 0.0,
-            "max_score": 0.0,
-            "coverage": coverage.to_dict(),
-            "status": "blocked",
-        }
+    require_runnable_coverage(coverage, "drug_synergy")
 
     reporter = make_progress_reporter(progress_callback)
     reporter("Synergy analysis", 0, 1)
 
-    pairs = run_module(
+    pairs = dispatch_sync_module(
         "drug_synergy",
         disease_id,
         progress_callback=progress_callback,

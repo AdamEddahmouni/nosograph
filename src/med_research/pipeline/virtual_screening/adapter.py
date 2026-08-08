@@ -41,6 +41,8 @@ class VirtualScreeningModule(BasePipelineModule):
         target_genes = opts.get("target_genes")
         if target_genes is None and opts.get("gene"):
             target_genes = [opts["gene"]]
+        if not isinstance(target_genes, list):
+            target_genes = []
 
         compound_library = opts.get("compound_library")
         if compound_library is None:
@@ -52,6 +54,7 @@ class VirtualScreeningModule(BasePipelineModule):
             top_n=opts.get("top_n", opts.get("top", 15)),
             use_vina=opts.get("use_vina", False),
             disease_id=disease_id,
+            progress_callback=opts.get("progress_callback"),
         )
 
     def report(

@@ -12,7 +12,12 @@ from pathlib import Path
 from typing import Any
 
 from med_research.diseases.coverage import ModuleCoverage, module_coverage
-from med_research.exceptions import ModuleNotAvailableError
+from med_research.exceptions import (
+    ConfigurationError,
+    DataValidationError,
+    ExternalAPIError,
+    ModuleNotAvailableError,
+)
 from med_research.pipeline.base import PipelineRunResult
 from med_research.pipeline.registry import get_module
 
@@ -117,14 +122,18 @@ def _wire_progress_callback(
     progress_callback: LegacyProgress | StandardProgress | None,
     opts: dict[str, Any],
 ) -> None:
-    """Bridge standard or legacy progress callbacks into engine opts."""
+    """Bridge legacy or standard progress callbacks into engine opts."""
     if progress_callback is None:
         return
     if _accepts_legacy(progress_callback):
-        opts["progress_callback"] = progress_callback
+        legacy_cb: LegacyProgress = progress_callback  # type: ignore[assignment]
+        opts["progress_callback"] = (
+            lambda step, current, total: standard_to_legacy(
+                step, current, total, legacy_cb
+            )
+        )
     else:
-        reporter = ProgressReporter(progress_callback)  # type: ignore[arg-type]
-        opts["progress_callback"] = reporter.legacy()
+        opts["progress_callback"] = progress_callback
 
 
 def execute_module(
@@ -163,6 +172,8 @@ def execute_module(
     try:
         data = module.run(disease_id, **run_opts)
     except ModuleNotAvailableError as exc:
+        return PipelineRunResult(success=False, data=None, errors=[str(exc)])
+    except (ExternalAPIError, DataValidationError, ConfigurationError) as exc:
         return PipelineRunResult(success=False, data=None, errors=[str(exc)])
 
     report_path: Path | None = None

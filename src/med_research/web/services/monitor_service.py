@@ -1,7 +1,7 @@
 """Evidence Monitor service — snapshot, diff, and status via registry."""
 
 from med_research.pipeline.evidence.monitor import last_coverage, list_snapshots
-from med_research.web.services.registry_service import run_module
+from med_research.web.services.registry_service import dispatch_sync_module
 
 
 def run_snapshot(
@@ -10,7 +10,7 @@ def run_snapshot(
     disease_id: str = "sle",
 ) -> dict:
     """Take a new evidence snapshot via the evidence_monitor registry adapter."""
-    result = run_module(
+    result = dispatch_sync_module(
         "evidence_monitor",
         disease_id,
         sources=sources,
@@ -21,7 +21,7 @@ def run_snapshot(
 
 def run_diff(disease_id: str = "sle") -> dict:
     """Run a snapshot diff via the evidence_monitor registry adapter."""
-    result = run_module("evidence_monitor", disease_id, diff=True)
+    result = dispatch_sync_module("evidence_monitor", disease_id, diff=True)
     diff = result.get("diff", result)
     if last_coverage:
         diff["coverage"] = last_coverage.to_dict()

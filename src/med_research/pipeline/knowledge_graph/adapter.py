@@ -37,7 +37,7 @@ class KnowledgeGraphModule(BasePipelineModule):
         if not coverage.is_runnable:
             return None
 
-        return build_graph(disease_id)
+        return build_graph(disease_id, progress_callback=opts.get("progress_callback"))
 
     def report(
         self,

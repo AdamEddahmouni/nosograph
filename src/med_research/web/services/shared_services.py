@@ -1,9 +1,14 @@
 """Literature Mining, Virtual Screening, Clinical Trials, ML services."""
 
 from med_research.diseases.coverage import module_coverage
+from med_research.exceptions import ModuleNotAvailableError
 from med_research.web.config import USE_CACHE
 from med_research.web.dependencies import get_candidates, get_kg_genes, safe_serialize
-from med_research.web.services.registry_service import make_progress_reporter, run_module
+from med_research.web.services.registry_service import (
+    dispatch_sync_module,
+    make_progress_reporter,
+    require_runnable_coverage,
+)
 
 
 def run_literature(
@@ -20,7 +25,7 @@ def run_literature(
 
     reporter("Literature mining", 0, 4)
 
-    raw = run_module(
+    raw = dispatch_sync_module(
         "literature_mining",
         disease_id,
         max_per_query=max_articles,
@@ -42,7 +47,7 @@ def run_literature(
             "gene_coverage": [],
             "candidate_support": [],
             "coverage": coverage.to_dict(),
-            "status": "blocked" if not coverage.is_runnable else "ready",
+            "status": "ready",
         }
 
     article_matches = crossref["article_matches"]
@@ -99,35 +104,21 @@ def run_screening(
     )
     if not coverage.is_runnable:
         reporter("Screening blocked", 1, 1)
-        return {
-            "targets": [],
-            "compounds_screened": 0,
-            "total_pairings": 0,
-            "tier1_count": 0,
-            "tier2_count": 0,
-            "vina_available": False,
-            "rdkit_available": False,
-            "coverage": coverage.to_dict(),
-            "status": "blocked",
-            "disease_id": disease_id,
-            "strategy_id": "",
-            "strategy_fingerprint": "",
-            "strategy_limitations": list(coverage.limitations),
-        }
+        require_runnable_coverage(coverage, "virtual_screening")
 
     reporter("Virtual screening", 0, 3)
 
     if gene_id:
         target_ids = [gene_id]
     else:
-        untargeted = run_module(
+        untargeted = dispatch_sync_module(
             "virtual_screening",
             disease_id,
             operation="untargeted_genes",
         )
         target_ids = [g["id"] for g in untargeted.get("untargeted_genes", [])]
 
-    results = run_module(
+    results = dispatch_sync_module(
         "virtual_screening",
         disease_id,
         target_genes=target_ids,
@@ -203,7 +194,7 @@ def run_trials(
             query = "lupus OR SLE"
 
     reporter("Searching ClinicalTrials.gov", 0, 3)
-    results = run_module(
+    results = dispatch_sync_module(
         "clinical_trials",
         disease_id,
         query=query,
@@ -245,20 +236,12 @@ def run_ml_prediction(
     """Run ML target druggability prediction via the ml_predictor registry adapter."""
     coverage = module_coverage(disease_id, "ml_predictor", ("genes", "relationships"))
     if not coverage.is_runnable:
-        return {
-            "predictions": [],
-            "model_type": "XGBoost",
-            "cross_val_auc": None,
-            "accuracy": None,
-            "top_features": [],
-            "coverage": coverage.to_dict(),
-            "status": "blocked",
-        }
+        require_runnable_coverage(coverage, "ml_predictor")
 
     reporter = make_progress_reporter(progress_callback)
     reporter("ML prediction", 0, 3)
 
-    results = run_module(
+    results = dispatch_sync_module(
         "ml_predictor",
         disease_id,
         top=top_n,
@@ -267,14 +250,7 @@ def run_ml_prediction(
 
     if results.get("error"):
         reporter("ML prediction failed", 3, 3)
-        return {
-            "predictions": [],
-            "model_type": "XGBoost",
-            "error": results["error"],
-            "top_features": [],
-            "coverage": results.get("coverage", coverage.to_dict()),
-            "status": "blocked",
-        }
+        raise ModuleNotAvailableError(results["error"])
 
     reporter("Formatting predictions", 2, 3)
     predictions = safe_serialize(results.get("predictions", []))

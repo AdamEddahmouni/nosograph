@@ -3,8 +3,8 @@
 from med_research.web.config import USE_CACHE
 from med_research.web.dependencies import get_kg_genes
 from med_research.web.services.registry_service import (
+    dispatch_sync_module,
     make_progress_reporter,
-    run_module,
 )
 
 
@@ -18,21 +18,13 @@ def run_gwas(
     reporter = make_progress_reporter(progress_callback)
     reporter("GWAS analysis", 0, 4)
 
-    raw = run_module(
+    raw = dispatch_sync_module(
         "gwas",
         disease_id,
         max_studies=max_studies,
         use_cache=not no_cache and USE_CACHE,
         progress_callback=progress_callback,
     )
-
-    if raw.get("status") == "blocked":
-        reporter("GWAS analysis blocked", 4, 4)
-        return {
-            "coverage": raw.get("coverage", {}),
-            "status": "blocked",
-            "top_hits": [],
-        }
 
     reporter("Formatting GWAS response", 3, 4)
     genes = get_kg_genes(disease_id)
@@ -84,17 +76,13 @@ def run_enrichment(
     reporter = make_progress_reporter(progress_callback)
     reporter("Enrichment analysis", 0, 3)
 
-    raw = run_module(
+    raw = dispatch_sync_module(
         "enrichment",
         disease_id,
         untargeted_only=untargeted_only,
         use_cache=not no_cache and USE_CACHE,
         progress_callback=progress_callback,
     )
-
-    if raw.get("status") == "blocked":
-        reporter("Enrichment blocked", 3, 3)
-        return {"coverage": raw.get("coverage", {}), "status": "blocked", "libraries": []}
 
     reporter("Formatting enrichment response", 2, 3)
     gene_list = raw.get("gene_list", [])
@@ -142,7 +130,7 @@ def run_ppi(
     reporter = make_progress_reporter(progress_callback)
     reporter("PPI analysis", 0, 3)
 
-    raw = run_module(
+    raw = dispatch_sync_module(
         "ppi",
         disease_id,
         confidence=confidence,

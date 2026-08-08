@@ -5,7 +5,7 @@ from __future__ import annotations
 import json
 from enum import Enum
 from pathlib import Path
-from typing import Any
+from typing import Any, TypedDict, TypeVar
 
 from pydantic import BaseModel, ConfigDict, Field, ValidationError
 
@@ -22,6 +22,49 @@ class _LosslessModel(BaseModel):
     """
 
     model_config = ConfigDict(extra="allow")
+
+
+# ── TypedDict pilots (dict-based loaders; mirror Pydantic models below) ──
+
+
+class GeneDict(TypedDict, total=False):
+    """Dict shape for genes.json entries — mirrors :class:`Gene`."""
+
+    id: str
+    name: str
+    chromosome: str
+    function: str
+    lupus_evidence: str
+    odds_ratio: float | None
+    references: list[str]
+    category: str
+    sle_evidence: str
+    disease_evidence: str
+
+
+class DrugDict(TypedDict, total=False):
+    """Dict shape for drugs.json entries — mirrors :class:`Drug`."""
+
+    id: str
+    name: str
+    type: str
+    target: str
+    mechanism: str
+    approval: str
+    route: str
+    efficacy: str
+    references: list[str]
+    category: str
+    disease_evidence: str
+    adverse_effects: str
+
+
+class GenesFileDict(TypedDict):
+    genes: list[GeneDict]
+
+
+class DrugsFileDict(TypedDict):
+    drugs: list[DrugDict]
 
 
 class RelationshipType(str, Enum):
@@ -132,8 +175,10 @@ KG_FILE_MODELS: dict[str, type[BaseModel]] = {
     "profile.json": DiseaseProfile,
 }
 
+_ModelT = TypeVar("_ModelT", bound=BaseModel)
 
-def load_validated_json(path, model_class) -> dict[str, Any]:
+
+def load_validated_json(path: Path | str, model_class: type[_ModelT]) -> dict[str, Any]:
     """Load a JSON file and validate it against a Pydantic model.
 
     Returns the validated JSON payload as a plain dict so existing
@@ -153,22 +198,22 @@ def load_validated_json(path, model_class) -> dict[str, Any]:
         raise error from exc
 
     try:
-        data = json.loads(text)
+        parsed: dict[str, Any] = json.loads(text)
     except json.JSONDecodeError as exc:
         raise SchemaValidationError(
             f"Invalid JSON in {path}: {exc}"
         ) from exc
 
     try:
-        model_class.model_validate(data)
+        model_class.model_validate(parsed)
     except ValidationError as exc:
         raise SchemaValidationError(
             f"Schema validation failed for {path}: {exc}"
         ) from exc
-    return data
+    return parsed
 
 
-def validate_and_load(path, model_class):
+def validate_and_load(path: Path | str, model_class: type[_ModelT]) -> dict[str, Any] | None:
     """Lenient variant of :func:`load_validated_json`.
 
     Returns the validated payload dict, or ``None`` when the file is

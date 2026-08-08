@@ -16,7 +16,7 @@ def _default_query(disease_id: str) -> str:
     disease = Disease(disease_id)
     queries = disease.config.get("PUBMED_QUERIES", [])
     if queries:
-        return queries[0]
+        return str(queries[0])
     return f"treatment targets {disease.get_display_name()}"
 
 
@@ -42,7 +42,11 @@ class SemanticSearchModule(BasePipelineModule):
 
         engine = SemanticSearchEngine(disease_id=disease_id)
         query = opts.get("query") or _default_query(disease_id)
-        results = engine.search(query, top_k=opts.get("top", 20))
+        results = engine.search(
+            query,
+            top_k=opts.get("top", 20),
+            progress_callback=opts.get("progress_callback"),
+        )
         return {
             "results": results,
             "query": query,

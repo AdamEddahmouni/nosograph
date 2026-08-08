@@ -3,24 +3,18 @@
 from med_research.diseases.coverage import module_coverage
 from med_research.pipeline.biomarker_discovery.discover import last_coverage
 from med_research.web.dependencies import safe_serialize
-from med_research.web.services.registry_service import run_module
+from med_research.web.services.registry_service import (
+    dispatch_sync_module,
+    require_runnable_coverage,
+)
 
 
 def run_biomarker_analysis(top_n: int = 35, disease_id: str = "sle") -> dict:
     """Run biomarker discovery via the biomarker_discovery registry adapter."""
     coverage = module_coverage(disease_id, "biomarkers", ("genes",))
-    if not coverage.is_runnable:
-        return {
-            "biomarkers": [],
-            "total_genes": 0,
-            "avg_score": 0.0,
-            "tier1_count": 0,
-            "tier2_count": 0,
-            "coverage": coverage.to_dict(),
-            "status": "blocked",
-        }
+    require_runnable_coverage(coverage, "biomarker_discovery")
 
-    results = run_module("biomarker_discovery", disease_id)
+    results = dispatch_sync_module("biomarker_discovery", disease_id)
     coverage_payload = last_coverage.to_dict() if last_coverage else coverage.to_dict()
 
     scores = [r["composite_score"] for r in results]

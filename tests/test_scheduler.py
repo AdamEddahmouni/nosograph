@@ -35,6 +35,16 @@ class TestResolveDependsOn:
     def test_drug_repurposing_depends_on_knowledge_graph(self):
         assert resolve_depends_on("drug_repurposing") == ("knowledge_graph",)
 
+    def test_biomarker_depends_on_upstream_scoring_modules(self):
+        assert resolve_depends_on("biomarker_discovery") == (
+            "knowledge_graph",
+            "gene_expression",
+            "car_t_predictor",
+            "drug_repurposing",
+            "adverse_events",
+            "drug_synergy",
+        )
+
     def test_resolve_depends_on_matches_adapter_metadata(self):
         for module_id in list_modules():
             assert resolve_depends_on(module_id) == get_module(module_id).depends_on
@@ -74,6 +84,28 @@ class TestTopologicalLevels:
         assert levels[0] == ["knowledge_graph"]
         assert levels[1] == ["drug_repurposing"]
         assert levels[2] == ["ppi"]
+
+    def test_biomarker_runs_after_upstream_scoring_modules(self):
+        module_ids = [
+            "knowledge_graph",
+            "gene_expression",
+            "car_t_predictor",
+            "drug_repurposing",
+            "adverse_events",
+            "drug_synergy",
+            "biomarker_discovery",
+        ]
+        levels = topological_levels(module_ids)
+        assert levels[0] == ["knowledge_graph"]
+        upstream = {
+            "gene_expression",
+            "car_t_predictor",
+            "drug_repurposing",
+            "adverse_events",
+            "drug_synergy",
+        }
+        assert set(levels[1]) == upstream
+        assert levels[2] == ["biomarker_discovery"]
 
     def test_evidence_workspace_runs_after_knowledge_graph(self):
         modules = ["evidence_workspace", "knowledge_graph", "semantic_search"]

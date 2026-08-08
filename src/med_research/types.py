@@ -9,39 +9,9 @@ from __future__ import annotations
 
 from typing import Any, TypedDict
 
-# ── Core KG entity shapes (mirror diseases/schemas.py Pydantic models) ──
+from med_research.diseases.schemas import DrugDict, GeneDict
 
-
-class GeneDict(TypedDict, total=False):
-    """Dict shape for gene.json entries — mirrors diseases.schemas.Gene."""
-
-    id: str
-    name: str
-    chromosome: str
-    function: str
-    lupus_evidence: str
-    odds_ratio: float | None
-    references: list[str]
-    category: str
-    sle_evidence: str
-    disease_evidence: str
-
-
-class DrugDict(TypedDict, total=False):
-    """Dict shape for drugs.json entries — mirrors diseases.schemas.Drug."""
-
-    id: str
-    name: str
-    type: str
-    target: str
-    mechanism: str
-    approval: str
-    route: str
-    efficacy: str
-    references: list[str]
-    category: str
-    disease_evidence: str
-    adverse_effects: str
+# ── Core KG entity shapes (GeneDict/DrugDict defined in diseases.schemas) ──
 
 
 class PathwayDict(TypedDict, total=False):

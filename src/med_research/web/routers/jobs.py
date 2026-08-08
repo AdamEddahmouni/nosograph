@@ -2,7 +2,8 @@
 
 import asyncio
 import json
-from typing import Any
+import logging
+from typing import Annotated, Any
 from uuid import UUID
 
 from celery.result import AsyncResult
@@ -11,11 +12,13 @@ from pydantic import ValidationError
 
 from med_research.pipeline.evidence_workspace.schemas import ResearchRequest
 from med_research.web.dependencies import safe_serialize
+from med_research.web.identity import DEFAULT_RESEARCHER_ID, get_researcher_id
 from med_research.web.models import JobStatus, JobSubmitResponse
-from med_research.web.models.jobs import GenericModuleJobRequest
+from med_research.web.models.jobs import GenericModuleJobRequest, RunAllJobRequest
 from med_research.web.services.registry_service import resolve_module_id
 from med_research.web.tasks.analysis_tasks import (
     celery_app,
+    task_run_all,
     task_run_enrichment,
     task_run_gwas,
     task_run_literature,
@@ -30,6 +33,39 @@ from med_research.web.tasks.analysis_tasks import (
 )
 
 router = APIRouter(prefix="/api/jobs", tags=["Jobs"])
+logger = logging.getLogger(__name__)
+
+
+def _celery_backend_errors() -> tuple[type[BaseException], ...]:
+    """Exception types raised when the Celery result backend is unavailable."""
+    errors: list[type[BaseException]] = [AttributeError, OSError, ConnectionError]
+    try:
+        from celery.exceptions import BackendError
+
+        errors.append(BackendError)
+    except ImportError:
+        pass
+    try:
+        from kombu.exceptions import OperationalError
+
+        errors.append(OperationalError)
+    except ImportError:
+        pass
+    try:
+        from redis.exceptions import ConnectionError as RedisConnectionError
+
+        errors.append(RedisConnectionError)
+    except ImportError:
+        pass
+    return tuple(errors)
+
+
+def _parse_run_all_request(request: Request) -> RunAllJobRequest:
+    """Parse and validate run-all job query parameters."""
+    try:
+        return RunAllJobRequest.model_validate(dict(request.query_params))
+    except ValidationError as exc:
+        raise HTTPException(status_code=422, detail=json.loads(exc.json())) from exc
 
 
 def _parse_generic_job_request(request: Request) -> GenericModuleJobRequest:
@@ -54,7 +90,8 @@ def _safe_result_state(result: AsyncResult) -> str | None:
     try:
         state = result.state
         return str(state) if state is not None else None
-    except Exception:
+    except _celery_backend_errors() as exc:
+        logger.warning("Celery result backend unavailable: %s", exc)
         return None
 
 
@@ -62,12 +99,17 @@ def _safe_result_state(result: AsyncResult) -> str | None:
 
 
 @router.post("/workspace", response_model=JobSubmitResponse)
-async def submit_workspace(payload: ResearchRequest) -> dict[str, Any]:
-    """Submit an asynchronous Evidence-to-Hypothesis Workspace run."""
+async def submit_workspace(
+    payload: ResearchRequest, request: Request = None  # type: ignore[assignment]
+) -> dict[str, Any]:
+    """Submit a Workspace run with the server-derived researcher principal."""
     try:
         task_payload = payload.model_dump(mode="json")
     except TypeError:
         task_payload = payload.model_dump()
+    task_payload["researcher_id"] = (
+        get_researcher_id(request) if request is not None else DEFAULT_RESEARCHER_ID
+    )
     task = task_run_workspace.delay(**task_payload)
     return {"job_id": task.id, "status": "PENDING", "module": "workspace"}
 
@@ -177,22 +219,25 @@ async def submit_safety(drug_id: str | None = None, disease_id: str = "sle") -> 
     return {"job_id": task.id, "status": "PENDING", "module": "safety"}
 
 
+@router.post("/run-all", response_model=JobSubmitResponse)
+async def submit_run_all(
+    job: Annotated[RunAllJobRequest, Depends(_parse_run_all_request)],
+) -> dict[str, Any]:
+    """Submit a full pipeline orchestration job (mirrors CLI ``run-all``)."""
+    task = task_run_all.delay(job.disease_id, **job.to_task_opts())
+    return {"job_id": task.id, "status": "PENDING", "module": "run-all"}
+
+
 @router.post("/{module_id}", response_model=JobSubmitResponse)
 async def submit_module_job(
     module_id: str,
-    job: GenericModuleJobRequest = Depends(_parse_generic_job_request),
+    job: Annotated[GenericModuleJobRequest, Depends(_parse_generic_job_request)],
 ) -> dict[str, Any]:
     """Submit any registry-backed module as an asynchronous Celery job."""
     try:
         resolved = resolve_module_id(module_id)
     except KeyError as exc:
         raise HTTPException(status_code=404, detail=str(exc)) from exc
-
-    if resolved == "evidence_workspace":
-        raise HTTPException(
-            status_code=400,
-            detail="Use POST /api/jobs/workspace with a ResearchRequest body for workspace jobs.",
-        )
 
     task = task_run_module.delay(resolved, job.disease_id, **job.to_task_opts())
     return {"job_id": task.id, "status": "PENDING", "module": module_id}
@@ -307,5 +352,7 @@ async def job_websocket(websocket: WebSocket, job_id: str) -> None:
 
     except WebSocketDisconnect:
         pass
+    except _celery_backend_errors() as exc:
+        logger.warning("WebSocket job poll failed: %s", exc)
     except asyncio.CancelledError:
         raise

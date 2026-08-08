@@ -135,7 +135,14 @@ class TestBiomarkerDiscoveryAdapter(ModuleAdapterContract):
         expected = build_provenance(
             disease_id=self.disease_id,
             module=module.module_id,
-            sources=["knowledge_graph"],
+            sources=[
+                "knowledge_graph",
+                "gene_expression",
+                "car_t_predictor",
+                "drug_repurposing",
+                "adverse_events",
+                "drug_synergy",
+            ],
             cache_or_live="cache",
         )
 

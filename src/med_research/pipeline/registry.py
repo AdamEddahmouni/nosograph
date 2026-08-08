@@ -40,12 +40,13 @@ def _ensure_registered() -> None:
     if _REGISTRATION_COMPLETE:
         return
     import med_research.pipeline.adverse_events.adapter  # noqa: F401
-    import med_research.pipeline.base  # noqa: F401
     import med_research.pipeline.bioinformatics.adapter  # noqa: F401
     import med_research.pipeline.biomarker_discovery.adapter  # noqa: F401
     import med_research.pipeline.car_t_predictor.adapter  # noqa: F401
     import med_research.pipeline.clinical_trials.adapter  # noqa: F401
     import med_research.pipeline.cross_disease.adapter  # noqa: F401
+    import med_research.pipeline.drug_repurposing.adapter  # noqa: F401
+    import med_research.pipeline.drug_synergy.adapter  # noqa: F401
     import med_research.pipeline.evidence.adapter  # noqa: F401
     import med_research.pipeline.evidence_workspace.adapter  # noqa: F401
     import med_research.pipeline.gene_expression.adapter  # noqa: F401

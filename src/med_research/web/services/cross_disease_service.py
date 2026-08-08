@@ -1,12 +1,12 @@
 """Service layer for cross-disease analysis operations."""
 
 from med_research.web.dependencies import safe_serialize  # noqa: F401 — used by callers
-from med_research.web.services.registry_service import run_module
+from med_research.web.services.registry_service import dispatch_sync_module
 
 
 def run_cross_disease_analysis(disease_id: str = None):
     """Run cross-disease analysis via the cross_disease registry adapter."""
-    results = run_module("cross_disease", disease_id or "sle")
+    results = dispatch_sync_module("cross_disease", disease_id or "sle")
 
     return {
         "shared_genes": results.get("shared_genes", {}),
@@ -24,7 +24,7 @@ def run_cross_disease_analysis(disease_id: str = None):
 
 def run_comparative_modules(top_synergy: int = 5):
     """Run biomarker/expression/synergy for every disease, stacked for comparison."""
-    results = run_module(
+    results = dispatch_sync_module(
         "cross_disease",
         "sle",
         comparative=True,

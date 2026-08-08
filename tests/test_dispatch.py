@@ -8,7 +8,14 @@ from unittest.mock import MagicMock, patch
 import pytest
 
 from med_research.diseases.coverage import ModuleCoverage
-from med_research.exceptions import ModuleNotAvailableError
+from med_research.exceptions import (
+    APIQuotaError,
+    APITimeoutError,
+    ConfigurationError,
+    DataValidationError,
+    ExternalAPIError,
+    ModuleNotAvailableError,
+)
 from med_research.pipeline.base import PipelineRunResult
 from med_research.pipeline.dispatch import (
     ProgressReporter,
@@ -147,6 +154,40 @@ class TestExecuteModule:
         assert result.data is None
         assert result.errors == ["dependency offline"]
 
+    @pytest.mark.parametrize(
+        ("exc_type", "message"),
+        [
+            (ExternalAPIError, "GWAS API unavailable"),
+            (APITimeoutError, "request timed out"),
+            (APIQuotaError, "rate limited"),
+            (DataValidationError, "invalid gene payload"),
+            (ConfigurationError, "missing API key"),
+        ],
+    )
+    def test_typed_errors_from_run_are_caught(self, exc_type, message):
+        mock_module = self._mock_module()
+        mock_module.run.side_effect = exc_type(message)
+
+        runnable = ModuleCoverage(
+            disease_id="ra",
+            module="gwas",
+            level="full",
+            status="ready",
+        )
+
+        with (
+            patch("med_research.pipeline.dispatch.get_module", return_value=mock_module),
+            patch(
+                "med_research.pipeline.dispatch.module_coverage",
+                return_value=runnable,
+            ),
+        ):
+            result = execute_module("gwas", "ra")
+
+        assert result.success is False
+        assert result.data is None
+        assert result.errors == [message]
+
     def test_export_html_builds_provenance_and_report(self, tmp_path: Path):
         mock_module = self._mock_module()
         mock_module.run.return_value = {"hits": []}
@@ -241,12 +282,33 @@ class TestExecuteModule:
         if not coverage.is_runnable:
             pytest.skip("RA GWAS coverage not runnable in this environment")
 
-        with patch.object(module, "run", return_value={"status": "ready"}) as mock_run:
-            with patch(
+        with (
+            patch.object(module, "run", return_value={"status": "ready"}) as mock_run,
+            patch(
                 "med_research.pipeline.dispatch.get_module",
                 return_value=module,
-            ):
-                result = execute_module("gwas", "ra")
+            ),
+        ):
+            result = execute_module("gwas", "ra")
 
         assert result.success is True
         mock_run.assert_called_once()
+
+    def test_real_gwas_run_emits_monotonic_progress(self):
+        """Real GWAS adapter run emits monotonic progress ticks."""
+        from med_research.diseases.coverage import module_coverage
+        from tests.test_pipeline_base import assert_monotonic_progress
+
+        module = get_module("gwas")
+        coverage = module_coverage("ra", "gwas", module.coverage_inputs())
+        if not coverage.is_runnable:
+            pytest.skip("RA GWAS coverage not runnable in this environment")
+
+        calls: list[tuple[str, int, int]] = []
+
+        def progress(step: str, current: int, total: int) -> None:
+            calls.append((step, current, total))
+
+        result = execute_module("gwas", "ra", use_cache=True, progress_callback=progress)
+        assert result.success is True
+        assert_monotonic_progress(calls)

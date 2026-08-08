@@ -9,6 +9,16 @@ from med_research.pipeline.base import BasePipelineModule
 from med_research.pipeline.provenance import build_provenance
 from med_research.pipeline.registry import register_module
 
+_DEFAULT_GATHER_SOURCES = [
+    "pubmed",
+    "preprints",
+    "clinical_trials",
+    "fda_labels",
+    "patents",
+]
+_DEFAULT_EXTRACT_SOURCES = ["pubmed", "preprints", "clinical_trials"]
+_DEFAULT_MONITOR_SOURCES = ["pubmed", "preprints", "clinical_trials"]
+
 
 def _default_query(disease_id: str) -> str:
     """Return the first curated PubMed query for a disease."""
@@ -17,7 +27,7 @@ def _default_query(disease_id: str) -> str:
     disease = Disease(disease_id)
     queries = disease.config.get("PUBMED_QUERIES", [])
     if queries:
-        return queries[0]
+        return str(queries[0])
     return f"treatment targets {disease.get_display_name()}"
 
 
@@ -42,13 +52,17 @@ class EvidenceGathererModule(BasePipelineModule):
         from med_research.pipeline.evidence.gatherer import gather_evidence
 
         query = opts.get("query") or _default_query(disease_id)
+        sources = opts.get("sources")
+        if not isinstance(sources, list):
+            sources = list(_DEFAULT_GATHER_SOURCES)
         return gather_evidence(
             query,
-            sources=opts.get("sources"),
+            sources=sources,
             max_per_source=opts.get("max_per_source", 20),
             use_cache=opts.get("use_cache", True),
             cross_reference=opts.get("cross_reference", True),
             disease_id=disease_id,
+            progress_callback=opts.get("progress_callback"),
         )
 
     def report(
@@ -103,13 +117,19 @@ class LLMExtractorModule(BasePipelineModule):
         from med_research.pipeline.evidence.extractor import extract_all
 
         query = opts.get("query") or _default_query(disease_id)
+        sources = opts.get("sources")
+        if not isinstance(sources, list):
+            sources = list(_DEFAULT_EXTRACT_SOURCES)
+        model_raw = opts.get("model")
+        model = model_raw if isinstance(model_raw, str) else ""
         return extract_all(
             query,
-            sources=opts.get("sources"),
+            sources=sources,
             max_articles=opts.get("max_articles", 20),
-            model=opts.get("model"),
+            model=model,
             use_cache=opts.get("use_cache", True),
             disease_id=disease_id,
+            progress_callback=opts.get("progress_callback"),
         )
 
     def report(
@@ -163,6 +183,8 @@ class EvidenceMonitorModule(BasePipelineModule):
         )
 
         sources = opts.get("sources")
+        if not isinstance(sources, list):
+            sources = list(_DEFAULT_MONITOR_SOURCES)
         max_per_query = opts.get("max_per_query", 10)
 
         if opts.get("diff"):

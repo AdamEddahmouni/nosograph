@@ -3,7 +3,11 @@
 from med_research.diseases.coverage import module_coverage
 from med_research.pipeline.adverse_events.profiler import get_drug_profile, get_safety_summary
 from med_research.web.dependencies import safe_serialize
-from med_research.web.services.registry_service import make_progress_reporter, run_module
+from med_research.web.services.registry_service import (
+    dispatch_sync_module,
+    make_progress_reporter,
+    require_runnable_coverage,
+)
 
 
 def run_safety_profiling(
@@ -19,14 +23,7 @@ def run_safety_profiling(
         "safety",
         ("symptoms", "adverse_event_profile", "safety_risk"),
     )
-    if not coverage.is_runnable:
-        reporter("Safety analysis blocked", 1, 1)
-        return {
-            "total_drugs": 0,
-            "profiles": [],
-            "coverage": coverage.to_dict(),
-            "status": "blocked",
-        }
+    require_runnable_coverage(coverage, "adverse_events")
 
     if drug_id:
         reporter(f"Loading safety profile for {drug_id}", 0, 1)
@@ -37,7 +34,7 @@ def run_safety_profiling(
         return safe_serialize(profile)
 
     reporter("Scoring drugs for adverse events", 0, 2)
-    results = run_module(
+    results = dispatch_sync_module(
         "adverse_events",
         disease_id,
         progress_callback=progress_callback,

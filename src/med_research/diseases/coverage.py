@@ -8,7 +8,7 @@ source retrieval can succeed while a module remains unsupported by curation.
 from __future__ import annotations
 
 from dataclasses import asdict, dataclass, field
-from typing import Literal
+from typing import Any, Literal
 
 CoverageLevel = Literal["full", "partial", "unsupported"]
 CoverageStatus = Literal["ready", "limited_coverage", "blocked"]
@@ -32,11 +32,11 @@ class ModuleCoverage:
     def is_runnable(self) -> bool:
         return self.status != "blocked"
 
-    def to_dict(self) -> dict:
+    def to_dict(self) -> dict[str, Any]:
         return asdict(self)
 
 
-def _is_empty(value) -> bool:
+def _is_empty(value: Any) -> bool:
     """Treat empty collections/text as unavailable; preserve numeric zero."""
     if value is None:
         return True
@@ -45,7 +45,7 @@ def _is_empty(value) -> bool:
     return False
 
 
-def _input_value(disease, name: str):
+def _input_value(disease: Any, name: str) -> Any:
     """Resolve a named curated input through the Disease boundary."""
     accessors = {
         "symptoms": disease.get_symptoms,

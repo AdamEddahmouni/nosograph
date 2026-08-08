@@ -1,6 +1,6 @@
 """LLM Extractor service — wraps extract_all via module registry."""
 
-from med_research.web.services.registry_service import run_module
+from med_research.web.services.registry_service import dispatch_sync_module
 
 
 def run_llm_extraction(
@@ -12,7 +12,7 @@ def run_llm_extraction(
     disease_id: str | None = None,
 ) -> dict:
     """Run LLM evidence extraction via the llm_extractor registry adapter."""
-    return run_module(
+    return dispatch_sync_module(
         "llm_extractor",
         disease_id or "sle",
         query=query,

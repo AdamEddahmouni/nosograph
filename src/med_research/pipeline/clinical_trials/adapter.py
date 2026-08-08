@@ -35,6 +35,7 @@ class ClinicalTrialsModule(BasePipelineModule):
             max_results=opts.get("max_results", opts.get("max", 100)),
             use_cache=opts.get("use_cache", True),
             disease_id=disease_id,
+            progress_callback=opts.get("progress_callback"),
         )
 
     def report(

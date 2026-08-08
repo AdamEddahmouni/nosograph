@@ -1,6 +1,6 @@
 """Evidence Gatherer service layer."""
 
-from med_research.web.services.registry_service import run_module
+from med_research.web.services.registry_service import dispatch_sync_module
 
 
 def run_evidence_gather(
@@ -12,7 +12,7 @@ def run_evidence_gather(
 ) -> dict:
     """Run the evidence gatherer via the evidence_gather registry adapter."""
     disease_id = disease_id or "sle"
-    result = run_module(
+    result = dispatch_sync_module(
         "evidence_gather",
         disease_id,
         query=query,

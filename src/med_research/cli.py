@@ -344,6 +344,7 @@ def _build_parser() -> argparse.ArgumentParser:
 
     # ── Cross-Disease ──────────────────────────────────────────────────
     cd = sub.add_parser("cross-disease", help="Cross-disease drug repurposing analysis")
+    cd.add_argument("--disease", "-d", default="sle", help="Disease ID (for provenance/reporting)")
     cd.add_argument("--top", type=int, default=20)
     cd.add_argument("--export-html", action="store_true")
 
@@ -358,7 +359,11 @@ def _build_parser() -> argparse.ArgumentParser:
     run_all.add_argument(
         "--full",
         action="store_true",
-        help="Include advanced modules (safety, network, expression, cart, biomarker, cross-disease)",
+        help=(
+            "Include advanced modules (safety, network, expression, cart, biomarker, cross-disease). "
+            "Evidence modules (workspace, semantic, evidence, extractor, monitor) are not included — "
+            "run them via their individual CLI commands."
+        ),
     )
     run_mode = run_all.add_mutually_exclusive_group()
     run_mode.add_argument(
@@ -1165,7 +1170,7 @@ def cmd_cross_disease(args):
         print_top_drugs,
     )
 
-    result = _dispatch("cross_disease", getattr(args, "disease", "sle"), args)
+    result = _dispatch("cross_disease", args.disease, args)
     if not result.success:
         return _exit_from_result(result, context="Cross-disease analysis")
 
@@ -1338,8 +1343,6 @@ def cmd_run_all(args):
             logger.info("[STEP %d/%d] %s", i, len(steps), step_name)
             try:
                 if module_id is None:
-                    if args.no_cache:
-                        continue
                     for sub_id in _bioinformatics_module_ids():
                         errors += _run_all_module(sub_id, args)
                 else:
@@ -1356,7 +1359,10 @@ def cmd_run_all(args):
     return 1 if errors > 0 else 0
 
 
-# (display name, registry module_id or None for bioinformatics composite)
+# (display name, registry module_id or None for bioinformatics composite).
+# Evidence registry modules (evidence_workspace, semantic_search, evidence_gather,
+# llm_extractor, evidence_monitor) are intentionally excluded — they need per-run
+# queries/questions and are invoked via dedicated CLI commands, not run-all.
 PIPELINE_STEPS = [
     ("Knowledge Graph", "knowledge_graph"),
     ("Drug Repurposing", "drug_repurposing"),

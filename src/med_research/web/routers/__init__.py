@@ -2,6 +2,7 @@
 
 from med_research.web.routers.adverse_events import router as adverse_events_router
 from med_research.web.routers.analysis import router as analysis_router
+from med_research.web.routers.auth import router as auth_router
 from med_research.web.routers.bioinformatics import router as bio_router
 from med_research.web.routers.biomarker import router as biomarker_router
 from med_research.web.routers.car_t import router as cart_router
@@ -42,7 +43,8 @@ routers = [
     cross_disease_router,
     disease_admin_router,
     export_router,
-    # Platform & workspace
+    # Platform, authentication & workspace
+    auth_router,
     system_router,
     workspace_router,
     jobs_router,

@@ -28,19 +28,26 @@ class LiteratureMiningModule(BasePipelineModule):
         return ("genes", "drugs", "pathways", "pubmed_queries")
 
     def run(self, disease_id: str, **opts: Any) -> dict:
-        from med_research.pipeline.literature_mining.miner import mine_literature
+        from med_research.diseases.base import Disease
+        from med_research.pipeline.literature_mining.miner import DEFAULT_EMAIL, mine_literature
 
         use_cache = opts.get("use_cache", True)
+        queries = opts.get("queries")
+        if not isinstance(queries, list):
+            queries = Disease(disease_id).config.get("PUBMED_QUERIES", [])
+        email = opts.get("email")
+        resolved_email: str = email if isinstance(email, str) else str(DEFAULT_EMAIL)
         results, entities, candidates, extraction_stats = mine_literature(
-            queries=opts.get("queries"),
+            queries=queries,
             max_per_query=opts.get("max_per_query", opts.get("max", 30)),
-            email=opts.get("email"),
+            email=resolved_email,
             use_cache=use_cache,
             targeted_candidates=opts.get(
                 "targeted_candidates", opts.get("targeted", False)
             ),
             extract_content=opts.get("extract_content", opts.get("extract", False)),
             disease_id=disease_id,
+            progress_callback=opts.get("progress_callback"),
         )
         return {
             "results": results,

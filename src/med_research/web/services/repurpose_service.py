@@ -2,7 +2,10 @@
 
 from med_research.diseases.coverage import module_coverage
 from med_research.web.dependencies import get_kg_genes
-from med_research.web.services.registry_service import run_module
+from med_research.web.services.registry_service import (
+    dispatch_sync_module,
+    require_runnable_coverage,
+)
 
 
 def run_repurposing(top_n: int = 15, gene_id: str | None = None, disease_id: str = "sle") -> dict:
@@ -10,19 +13,9 @@ def run_repurposing(top_n: int = 15, gene_id: str | None = None, disease_id: str
     coverage = module_coverage(
         disease_id, "repurposing", ("genes", "drugs", "relationships")
     )
-    if not coverage.is_runnable:
-        return {
-            "candidates": [],
-            "total": 0,
-            "tier1_count": 0,
-            "tier2_count": 0,
-            "avg_score": 0.0,
-            "top_n": top_n,
-            "coverage": coverage.to_dict(),
-            "status": "blocked",
-        }
+    require_runnable_coverage(coverage, "drug_repurposing")
 
-    scored = run_module("drug_repurposing", disease_id)
+    scored = dispatch_sync_module("drug_repurposing", disease_id)
     genes = get_kg_genes(disease_id)
 
     if gene_id and gene_id in genes:
@@ -56,7 +49,7 @@ def get_gene_repurposing(gene_id: str, disease_id: str = "sle") -> dict | None:
     if gene_id not in genes:
         return None
 
-    scored = run_module(
+    scored = dispatch_sync_module(
         "drug_repurposing",
         disease_id,
         gene_id=gene_id,

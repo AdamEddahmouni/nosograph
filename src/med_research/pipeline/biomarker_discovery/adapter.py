@@ -22,7 +22,14 @@ class BiomarkerDiscoveryModule(BasePipelineModule):
 
     @property
     def depends_on(self) -> tuple[str, ...]:
-        return ("knowledge_graph",)
+        return (
+            "knowledge_graph",
+            "gene_expression",
+            "car_t_predictor",
+            "drug_repurposing",
+            "adverse_events",
+            "drug_synergy",
+        )
 
     def coverage_inputs(self) -> tuple[str, ...]:
         return ("genes",)
@@ -58,7 +65,14 @@ class BiomarkerDiscoveryModule(BasePipelineModule):
         return build_provenance(
             disease_id=disease_id,
             module=self.module_id,
-            sources=["knowledge_graph"],
+            sources=[
+                "knowledge_graph",
+                "gene_expression",
+                "car_t_predictor",
+                "drug_repurposing",
+                "adverse_events",
+                "drug_synergy",
+            ],
             cache_or_live="cache",
             **opts,
         )

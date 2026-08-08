@@ -5,17 +5,30 @@ from __future__ import annotations
 import pytest
 
 from med_research.diseases.coverage import module_coverage
-from med_research.pipeline.base import (
-    BasePipelineModule,
-    DrugRepurposingModule,
-    DrugSynergyModule,
-    PipelineRunResult,
-)
+from med_research.pipeline.base import BasePipelineModule, PipelineRunResult
+from med_research.pipeline.drug_repurposing.adapter import DrugRepurposingModule
+from med_research.pipeline.drug_synergy.adapter import DrugSynergyModule
 from med_research.pipeline.provenance import build_provenance
 from med_research.pipeline.registry import (
     MODULE_REGISTRY,
     get_module,
 )
+
+
+def assert_monotonic_progress(calls: list[tuple[str, int, int]]) -> None:
+    """Assert standard progress ticks stay within bounds and advance per step."""
+    assert calls, "expected at least one progress tick"
+    prev_by_step: dict[str, int] = {}
+    for step, current, total in calls:
+        assert total >= 0
+        assert 0 <= current <= total, (
+            f"current {current} exceeds total {total} for step {step!r}"
+        )
+        prev = prev_by_step.get(step, 0)
+        assert current >= prev, (
+            f"non-monotonic progress for {step!r}: {prev} -> {current}"
+        )
+        prev_by_step[step] = current
 
 
 class ModuleAdapterContract:
@@ -172,32 +185,36 @@ def test_list_modules_auto_registers_on_registry_import():
 
     from med_research.pipeline import registry as registry_module
 
-    pipeline_prefix = "med_research.pipeline"
+    # Purge only the adapter modules so their ``@register_module`` decorators
+    # re-run on import. Purging the entire ``med_research.pipeline`` module
+    # tree (as this test once did) leaves ``sys.modules`` entries pointing at
+    # different objects than the package attribute chains, which silently
+    # breaks later ``monkeypatch.setattr`` on engine modules (e.g. the CLI
+    # coverage-boost tests in test_web_registry.py).
+    adapter_keys = sorted(
+        key
+        for key in sys.modules
+        if key.startswith("med_research.pipeline.") and key.endswith(".adapter")
+    )
     saved_registry = dict(MODULE_REGISTRY)
-    saved_modules = {
-        key: module
-        for key, module in sys.modules.items()
-        if key == pipeline_prefix or key.startswith(f"{pipeline_prefix}.")
-    }
+    saved_adapters = {key: sys.modules[key] for key in adapter_keys}
 
     try:
         MODULE_REGISTRY.clear()
         registry_module._REGISTRATION_COMPLETE = False
-        for key in saved_modules:
+        for key in adapter_keys:
             del sys.modules[key]
 
-        from med_research.pipeline import registry as lazy_registry
-
-        modules = lazy_registry.list_modules()
+        modules = registry_module.list_modules()
         assert len(modules) >= 2
         assert "drug_repurposing" in modules
         assert "drug_synergy" in modules
-        assert modules == sorted(lazy_registry.MODULE_REGISTRY.keys())
+        assert modules == sorted(registry_module.MODULE_REGISTRY.keys())
     finally:
         MODULE_REGISTRY.clear()
         MODULE_REGISTRY.update(saved_registry)
         registry_module._REGISTRATION_COMPLETE = True
-        for key, module in saved_modules.items():
+        for key, module in saved_adapters.items():
             sys.modules[key] = module
 
 

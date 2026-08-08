@@ -26,10 +26,15 @@ BOOL_JOB_OPTS = frozenset({
     "targeted",
     "use_cache",
     "enable_llm",
+    "export_html",
+    "full",
+    "parallel",
+    "skip_ml",
 })
 FLOAT_JOB_OPTS = frozenset({"confidence"})
 STR_JOB_OPTS = frozenset({
     "query",
+    "question",
     "gene_id",
     "drug_id",
     "model",
@@ -38,6 +43,9 @@ STR_JOB_OPTS = frozenset({
     "signature_source",
     "tissue",
     "operation",
+    "candidate_type",
+    "date_from",
+    "date_to",
 })
 KNOWN_JOB_OPTION_KEYS = INT_JOB_OPTS | BOOL_JOB_OPTS | FLOAT_JOB_OPTS | STR_JOB_OPTS
 
@@ -67,12 +75,17 @@ class GenericModuleJobRequest(BaseModel):
     targeted: bool | None = None
     use_cache: bool | None = None
     enable_llm: bool | None = None
+    export_html: bool | None = None
+    full: bool | None = None
+    parallel: bool | None = None
+    skip_ml: bool | None = None
 
     # Float options
     confidence: float | None = Field(default=None, ge=0.0, le=1.0)
 
     # String options
     query: str | None = None
+    question: str | None = None
     gene_id: str | None = None
     drug_id: str | None = None
     model: str | None = None
@@ -81,6 +94,9 @@ class GenericModuleJobRequest(BaseModel):
     signature_source: str | None = None
     tissue: str | None = None
     operation: str | None = None
+    candidate_type: str | None = None
+    date_from: str | None = None
+    date_to: str | None = None
 
     @field_validator("disease_id")
     @classmethod
@@ -99,3 +115,30 @@ class GenericModuleJobRequest(BaseModel):
             key: value
             for key, value in self.model_dump(exclude={"disease_id"}, exclude_none=True).items()
         }
+
+
+class RunAllJobRequest(BaseModel):
+    """Validated query parameters for POST /api/jobs/run-all."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    disease_id: str = "sle"
+    full: bool = False
+    parallel: bool = False
+    skip_ml: bool = False
+    export_html: bool = False
+    no_cache: bool = False
+
+    @field_validator("disease_id")
+    @classmethod
+    def validate_disease_id(cls, value: str) -> str:
+        disease_id = value.strip().lower()
+        if disease_id not in Disease.list_all():
+            available = ", ".join(sorted(Disease.list_all()))
+            raise ValueError(
+                f"Unknown disease_id '{value}'. Available diseases: {available}"
+            )
+        return disease_id
+
+    def to_task_opts(self) -> dict[str, Any]:
+        return self.model_dump(exclude={"disease_id"}, exclude_defaults=True)
