@@ -42,12 +42,14 @@ if sys.platform == "win32":
 
 import logging  # noqa: E402
 
+from med_research.diseases.schemas import DrugDict, GeneDict  # noqa: E402
 from med_research.pipeline.knowledge_graph.config import (
     load_drugs as config_load_drugs,  # noqa: E402
 )
 from med_research.pipeline.knowledge_graph.config import (
     load_genes as config_load_genes,  # noqa: E402
 )
+from med_research.pipeline.progress import StandardProgress, _tick  # noqa: E402
 
 # The legacy SLE repurposing cache lives beside the pipeline modules.  Keep
 # this path scoped to the SLE compatibility branch; non-SLE scoring never
@@ -111,7 +113,8 @@ def _compute_rdkit_properties(smiles: str) -> dict:
             "rotb": Lipinski.NumRotatableBonds(mol),
             "tpsa": round(Descriptors.TPSA(mol), 1),
         }
-    except Exception:
+    except (ValueError, TypeError, RuntimeError, AttributeError) as exc:
+        logger.warning("RDKit property computation failed: %s", exc)
         return {}
 
 
@@ -185,13 +188,13 @@ _DRUG_PROPERTIES = {
 }
 
 
-def load_kg_genes(disease_id: str = "sle") -> dict:
+def load_kg_genes(disease_id: str = "sle") -> dict[str, GeneDict]:
     """Load gene data indexed by gene ID."""
     data = config_load_genes(disease_id)
     return {g["id"]: g for g in data["genes"]}
 
 
-def load_kg_drugs(disease_id: str = "sle") -> dict:
+def load_kg_drugs(disease_id: str = "sle") -> dict[str, DrugDict]:
     """Load drug data indexed by drug ID."""
     data = config_load_drugs(disease_id)
     return {d["id"]: d for d in data["drugs"]}
@@ -525,7 +528,14 @@ def run_autodock_vina(
             "modes_found": len(scores),
         }
 
-    except (subprocess.TimeoutExpired, FileNotFoundError, Exception) as e:
+    except (
+        subprocess.TimeoutExpired,
+        FileNotFoundError,
+        subprocess.CalledProcessError,
+        OSError,
+        ValueError,
+        RuntimeError,
+    ) as e:
         logger.info(f"   ⚠️  Vina docking error: {e}")
         return {}
 
@@ -555,6 +565,7 @@ def screen_compounds(
     top_n: int = 15,
     use_vina: bool = False,
     disease_id: str = "sle",
+    progress_callback: StandardProgress | None = None,
 ) -> dict:
     """
     Run virtual screening of all compounds against all target genes.
@@ -638,7 +649,8 @@ def screen_compounds(
     results_per_target = {}
     all_scored = []
 
-    for gene_id in gene_ids:
+    for gene_idx, gene_id in enumerate(gene_ids, 1):
+        _tick(progress_callback, "screening compounds", gene_idx, len(gene_ids))
         gene_info = all_genes.get(gene_id, {"id": gene_id, "name": gene_id})
         scored_compounds = []
 
@@ -816,8 +828,8 @@ def get_untargeted_genes(disease_id: str = "sle") -> list:
         untargeted = [g for g in untargeted if g["id"] not in excluded]
 
         return untargeted
-    except Exception as e:
-        logger.info(f"⚠️  Could not load KG for untargeted gene detection: {e}")
+    except (FileNotFoundError, OSError, KeyError, TypeError, AttributeError, ValueError) as exc:
+        logger.warning("Could not load KG for untargeted gene detection: %s", exc)
         return []
 
 

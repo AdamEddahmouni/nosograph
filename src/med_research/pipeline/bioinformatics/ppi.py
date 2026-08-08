@@ -27,8 +27,9 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 import logging
 
 from med_research.cache import NS_PPI, cache_get, cache_set, load_legacy_json
-from med_research.exceptions import classify_api_error
+from med_research.exceptions import ExternalAPIError, classify_api_error, retry_with_backoff
 from med_research.pipeline.knowledge_graph.config import load_genes as load_kg_genes
+from med_research.pipeline.progress import StandardProgress, _tick
 
 logger = logging.getLogger(__name__)
 if sys.platform == "win32":
@@ -50,6 +51,13 @@ DR_DATA_DIR = Path(__file__).parent.parent / "drug_repurposing" / "data"
 STRING_API = "https://string-db.org/api"
 DEFAULT_SPECIES = 9606  # Homo sapiens
 DEFAULT_CONFIDENCE = 0.4  # Medium confidence
+
+
+def _string_http_get(path: str, params: dict, timeout: int = 30):
+    """Perform a STRING API GET request, raising on HTTP failure."""
+    resp = requests.get(f"{STRING_API}/{path}", params=params, timeout=timeout)
+    resp.raise_for_status()
+    return resp
 
 
 def load_genes(disease_id: str = "sle") -> dict:
@@ -114,10 +122,15 @@ def _string_id_map(symbols: list) -> dict:
         "echo_query": 1,
     }
 
-    url = f"{STRING_API}/tsv/get_string_ids"
     try:
-        resp = requests.get(url, params=params, timeout=30)
-        resp.raise_for_status()
+        resp = retry_with_backoff(
+            lambda: _string_http_get(
+                "tsv/get_string_ids",
+                params,
+                timeout=30,
+            ),
+            source="STRING ID mapping",
+        )
 
         mapping = {}
         for line in resp.text.strip().split("\n")[1:]:  # Skip header
@@ -129,6 +142,9 @@ def _string_id_map(symbols: list) -> dict:
                     mapping[query] = string_id
 
         return mapping
+    except ExternalAPIError as e:
+        logger.info(f"   ⚠️  {e}")
+        return {}
     except requests.exceptions.RequestException as e:
         err = classify_api_error(e, "STRING ID mapping")
         logger.info(f"   ⚠️  {err}")
@@ -148,12 +164,17 @@ def _string_network(string_ids: list, confidence: float = 0.4) -> list:
         "network_type": "functional",
     }
 
-    url = f"{STRING_API}/tsv/network"
     interactions = []
 
     try:
-        resp = requests.get(url, params=params, timeout=60)
-        resp.raise_for_status()
+        resp = retry_with_backoff(
+            lambda: _string_http_get(
+                "tsv/network",
+                params,
+                timeout=60,
+            ),
+            source="STRING network fetch",
+        )
 
         for line in resp.text.strip().split("\n")[1:]:  # Skip header
             parts = line.split("\t")
@@ -170,6 +191,8 @@ def _string_network(string_ids: list, confidence: float = 0.4) -> list:
                     }
                 )
 
+    except ExternalAPIError as e:
+        logger.info(f"   ⚠️  {e}")
     except requests.exceptions.RequestException as e:
         err = classify_api_error(e, "STRING network fetch")
         logger.info(f"   ⚠️  {err}")
@@ -474,6 +497,7 @@ def run_ppi_analysis(
     confidence: float = DEFAULT_CONFIDENCE,
     expand_neighbors: int = 0,
     use_cache: bool = True,
+    progress_callback: StandardProgress | None = None,
 ) -> dict:
     """Build PPI network and hub scores for a disease (engine entry point)."""
     from med_research.diseases.coverage import module_coverage
@@ -502,6 +526,7 @@ def run_ppi_analysis(
     logger.info(f"   Loaded {len(candidates)} candidates")
 
     logger.info("🔄 Building PPI network...")
+    _tick(progress_callback, "building PPI network", 1, 4)
     G = build_ppi_network(
         gene_symbols,
         confidence=confidence,
@@ -521,12 +546,15 @@ def run_ppi_analysis(
         }
 
     logger.info("🔄 Computing hub scores...")
+    _tick(progress_callback, "computing hub scores", 2, 4)
     hub_scores = compute_hub_scores(G)
 
     logger.info("🔄 Cross-referencing with repurposing candidates...")
+    _tick(progress_callback, "cross-referencing candidates", 3, 4)
     crossref = cross_reference_with_candidates(hub_scores, G, genes, candidates)
 
     analyze(hub_scores, crossref, G)
+    _tick(progress_callback, "finalizing PPI results", 4, 4)
 
     graph_data = {
         "nodes": [

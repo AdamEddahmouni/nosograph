@@ -13,8 +13,8 @@ from med_research.cache import (
     NS_EVIDENCE_GATHER,
     NS_GEO,
     NS_GWAS,
-    NS_LLM_EXTRACTOR,
     NS_LITERATURE_MINING,
+    NS_LLM_EXTRACTOR,
     NS_PPI,
     CacheManager,
     migrate_legacy_caches,
@@ -137,6 +137,68 @@ def test_migrate_literature_per_disease(mgr, legacy_dirs):
     summary = migrate_legacy_caches(mgr)
     assert summary["total"]["migrated"] == 1
     assert mgr.get(NS_LITERATURE_MINING, "ibd", ttl_seconds=10**9) == articles
+
+
+def test_migrate_literature_sle_default_filename(mgr, legacy_dirs):
+    articles = [{"pmid": "456", "title": "SLE paper"}]
+    legacy_dirs["lit"].joinpath("pubmed_cache.json").write_text(
+        json.dumps(articles),
+        encoding="utf-8",
+    )
+
+    summary = migrate_legacy_caches(mgr)
+    assert summary["namespaces"]["literature_mining"]["migrated"] == 1
+    assert mgr.get(NS_LITERATURE_MINING, "sle", ttl_seconds=10**9) == articles
+
+
+def test_migrate_all_namespaces_in_one_run(mgr, legacy_dirs):
+    legacy_dirs["bio"].joinpath("gwas_cache_ra.json").write_text(
+        json.dumps({"gwas_results": {}, "crossref": {}}),
+        encoding="utf-8",
+    )
+    legacy_dirs["bio"].joinpath("enrichment_cache.json").write_text(
+        json.dumps(
+            {
+                "cache_key": "A",
+                "libraries": ["GO"],
+                "top_n": 10,
+                "results": {},
+            }
+        ),
+        encoding="utf-8",
+    )
+    legacy_dirs["bio"].joinpath("ppi_cache.json").write_text(
+        json.dumps({"cache_key": "A", "confidence": 0.4}),
+        encoding="utf-8",
+    )
+    legacy_dirs["lit"].joinpath("pubmed_cache.json").write_text(json.dumps([]), encoding="utf-8")
+    legacy_dirs["trials"].joinpath("ct_cache_sle_abc123def456.json").write_text(
+        json.dumps({"trials": [], "kg_crossref": {}}),
+        encoding="utf-8",
+    )
+    legacy_dirs["evidence"].joinpath("evidence_cache.json").write_text(
+        json.dumps({"q|||pubmed|||5": []}),
+        encoding="utf-8",
+    )
+    legacy_dirs["evidence"].joinpath("extraction_cache.json").write_text(
+        json.dumps({"id|||model": {}}),
+        encoding="utf-8",
+    )
+    legacy_dirs["geo"].joinpath("sle_search.json").write_text(json.dumps([]), encoding="utf-8")
+
+    summary = migrate_legacy_caches(mgr)
+    assert summary["total"]["migrated"] == 8
+    for namespace in (
+        "gwas",
+        "enrichment",
+        "ppi",
+        "literature_mining",
+        "clinical_trials",
+        NS_EVIDENCE_GATHER,
+        NS_LLM_EXTRACTOR,
+        "geo",
+    ):
+        assert summary["namespaces"][namespace]["migrated"] == 1
 
 
 def test_migrate_clinical_trials_legacy_file(mgr, legacy_dirs):

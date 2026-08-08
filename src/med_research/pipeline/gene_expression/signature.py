@@ -5,11 +5,16 @@ Manages both hardcoded curated signatures and GEO-derived dynamic signatures.
 Provides a unified interface for signature retrieval with fallback logic.
 """
 
+import logging
 from pathlib import Path
 from typing import Optional
 
+from med_research.exceptions import ExternalAPIError
+
 SIGNATURE_DIR = Path(__file__).parent / "data"
 SIGNATURE_DIR.mkdir(parents=True, exist_ok=True)
+
+logger = logging.getLogger(__name__)
 
 
 def get_signature(disease: str = "sle", tissue: Optional[str] = None,
@@ -28,18 +33,29 @@ def get_signature(disease: str = "sle", tissue: Optional[str] = None,
         return _get_curated_signature(disease)
 
     if source in ("auto", "geo"):
-        try:
-            from med_research.pipeline.gene_expression.geo import get_expression_signature
-            sig = get_expression_signature(disease, tissue)
-            if sig and sig.get("num_studies_used", 0) > 0:
-                return sig
-        except Exception:
-            pass
+        sig = _try_geo_signature(disease, tissue)
+        if sig is not None:
+            return sig
 
     if source in ("auto", "curated"):
         return _get_curated_signature(disease)
 
     return _get_curated_signature(disease)
+
+
+def _try_geo_signature(disease: str, tissue: Optional[str]) -> dict | None:
+    """Load a GEO-derived signature, logging and returning None on failure."""
+    try:
+        from med_research.pipeline.gene_expression.geo import get_expression_signature
+
+        sig = get_expression_signature(disease, tissue)
+        if sig and sig.get("num_studies_used", 0) > 0:
+            return sig
+    except ExternalAPIError as exc:
+        logger.warning("GEO signature unavailable for %s, using curated fallback: %s", disease, exc)
+    except (OSError, ValueError, KeyError, TypeError, ImportError) as exc:
+        logger.warning("GEO signature unavailable for %s, using curated fallback: %s", disease, exc)
+    return None
 
 
 def _get_curated_signature(disease: str = "sle") -> dict:

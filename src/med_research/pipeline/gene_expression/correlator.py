@@ -28,7 +28,9 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 import logging
 
+from med_research.cache import disease_output_path, write_json_atomic
 from med_research.pipeline.knowledge_graph.config import load_drugs as config_load_drugs
+from med_research.pipeline.progress import StandardProgress, _tick
 
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -57,7 +59,12 @@ def _get_default_signature(disease_id: str = "sle"):
                                   "source": sig.get("source", "curated"),
                                   "num_studies_used": sig.get("num_studies_used", 0),
                                   "disease": disease_id}
-        except Exception:
+        except (KeyError, TypeError, AttributeError, ImportError, ValueError) as exc:
+            logger.warning(
+                "Curated signature load failed for %s, using SLE fallback: %s",
+                disease_id,
+                exc,
+            )
             _DEFAULT_SIGNATURES[disease_id] = {"upregulated": SLE_UPREGULATED,
                                   "downregulated": SLE_DOWNREGULATED,
                                   "source": "curated_literature",
@@ -446,15 +453,20 @@ def _assign_tier(score: float) -> str:
     return "🟢 Tier 4 — Minimal Reversal"
 
 
-def compute_all_correlations(progress_callback=None, signature=None,
-                             signature_source="auto", tissue=None,
-                             disease_id: str = "sle", save: bool = True) -> list:
+def compute_all_correlations(
+    progress_callback: StandardProgress | None = None,
+    signature=None,
+    signature_source="auto",
+    tissue=None,
+    disease_id: str = "sle",
+    save: bool = True,
+) -> list:
     """Correlate drugs against a disease's expression signature.
 
     Returns list of scored drugs sorted by composite score descending.
 
     Args:
-        progress_callback: Optional fn(percent, message) for progress reporting
+        progress_callback: Optional ``(step, current, total)`` progress callback.
         signature: Optional pre-loaded signature dict
         signature_source: "auto", "geo", or "curated"
         tissue: Tissue filter for GEO search
@@ -463,39 +475,42 @@ def compute_all_correlations(progress_callback=None, signature=None,
             expression_correlations.json (used by the comparative cross-disease
             run so per-disease scoring doesn't clobber the last-run results).
     """
-    cb = progress_callback or (lambda p, m: None)
-
     from med_research.diseases.coverage import module_coverage
 
     global last_coverage
     coverage = module_coverage(disease_id, "expression", ("genes", "drugs"))
     last_coverage = coverage
     if not coverage.is_runnable:
-        cb(100, f"Expression analysis blocked: {', '.join(coverage.missing_inputs)}")
+        _tick(progress_callback, "expression blocked", 1, 1)
         return []
 
-    cb(0, "Loading drug library...")
+    _tick(progress_callback, "loading drug library", 1, 1)
     drugs = load_drugs(disease_id)
 
     if signature is None and signature_source != "curated":
         try:
             from med_research.pipeline.gene_expression.signature import get_signature
+
             sig = get_signature(disease=disease_id, source=signature_source, tissue=tissue)
             if sig and sig.get("num_studies_used", 0) > 0:
                 signature = sig
-        except Exception:
-            pass
+        except (KeyError, TypeError, AttributeError, ImportError, ValueError) as exc:
+            logger.warning(
+                "GEO signature unavailable for %s, using curated fallback: %s",
+                disease_id,
+                exc,
+            )
 
     if signature is None:
         signature = _get_default_signature(disease_id)
 
     _, _, sig_source, num_studies = _normalize_signature(signature, disease_id)
 
-    cb(10, f"Correlating {len(drugs)} drugs against SLE expression signature ({sig_source})...")
+    total_drugs = len(drugs)
     results = []
-    for i, (drug_id, drug) in enumerate(drugs.items()):
-        if i % 5 == 0:
-            cb(10 + int(i / len(drugs) * 75), f"Scoring {drug_id}...")
+    for i, (drug_id, drug) in enumerate(drugs.items(), 1):
+        if i % 5 == 0 or i == total_drugs:
+            _tick(progress_callback, "correlating drugs", i, total_drugs)
         try:
             results.append(correlate_drug(drug_id, drug, drugs, signature))
         except (KeyError, TypeError, AttributeError):
@@ -509,20 +524,19 @@ def compute_all_correlations(progress_callback=None, signature=None,
     results.sort(key=lambda x: x["composite_score"], reverse=True)
 
     if save:
-        cb(95, "Saving results...")
-        DATA_DIR.mkdir(parents=True, exist_ok=True)
-        output_path = DATA_DIR / "expression_correlations.json"
-        output_path.write_text(json.dumps({
+        _tick(progress_callback, "saving results", 0, 1)
+        output_path = disease_output_path(DATA_DIR, "expression_correlations", disease_id)
+        write_json_atomic(output_path, {
             "drugs": results,
             "total_drugs": len(results),
             "signature_upregulated": len(signature.get("upregulated", {})),
             "signature_downregulated": len(signature.get("downregulated", {})),
             "signature_source": sig_source,
             "signature_studies": num_studies,
-        }, indent=2), encoding="utf-8")
-        cb(100, f"Results saved to {output_path}")
+        })
+        _tick(progress_callback, "saving results", 1, 1)
     else:
-        cb(100, "Correlation complete (in-memory)")
+        _tick(progress_callback, "correlation complete", 1, 1)
     return results
 
 
@@ -599,9 +613,14 @@ def main():
     if args.geo:
         try:
             from med_research.pipeline.gene_expression.signature import get_signature
+
             signature = get_signature(disease=args.disease, source="auto", tissue=args.tissue)
-        except Exception:
-            pass
+        except (KeyError, TypeError, AttributeError, ImportError, ValueError) as exc:
+            logger.warning(
+                "GEO signature unavailable for %s, using curated fallback: %s",
+                args.disease,
+                exc,
+            )
 
     results = compute_all_correlations(signature=signature,
                                        signature_source=signature_source,

@@ -22,6 +22,8 @@ from pathlib import Path
 
 import networkx as nx
 
+from med_research.pipeline.progress import StandardProgress, _tick
+
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 if sys.platform == "win32":
@@ -56,25 +58,27 @@ def _to_undirected(G):
 # ── Centrality Metrics ───────────────────────────────────────────────────
 
 
-def compute_centrality(G=None, progress_callback=None) -> dict:
+def compute_centrality(
+    G=None,
+    progress_callback: StandardProgress | None = None,
+) -> dict:
     """Compute all centrality metrics for every node.
 
     Returns dict with keys: degree, betweenness, eigenvector, closeness, pagerank.
     Each value is a dict of node_id -> score.
     """
-    cb = progress_callback or (lambda p, m: None)
     if G is None:
         G = load_graph()
 
     UG = _to_undirected(G)
 
-    cb(10, "Computing degree centrality...")
+    _tick(progress_callback, "degree centrality", 1, 5)
     degree = nx.degree_centrality(UG)
 
-    cb(30, "Computing betweenness centrality...")
+    _tick(progress_callback, "betweenness centrality", 2, 5)
     betweenness = nx.betweenness_centrality(UG, weight=None)
 
-    cb(50, "Computing eigenvector centrality...")
+    _tick(progress_callback, "eigenvector centrality", 3, 5)
     eigenvector = {}
     try:
         # Eigenvector centrality requires a connected graph
@@ -94,13 +98,11 @@ def compute_centrality(G=None, progress_callback=None) -> dict:
     except nx.NetworkXError:
         eigenvector = {}
 
-    cb(65, "Computing closeness centrality...")
+    _tick(progress_callback, "closeness centrality", 4, 5)
     closeness = nx.closeness_centrality(UG)
 
-    cb(75, "Computing PageRank...")
+    _tick(progress_callback, "pagerank", 5, 5)
     pagerank = nx.pagerank(UG)
-
-    cb(90, "Formatting results...")
 
     return {
         "degree": degree,
@@ -133,21 +135,23 @@ def compute_bridge_nodes(G=None, centrality=None) -> list:
 # ── Community Detection ──────────────────────────────────────────────────
 
 
-def compute_communities(G=None, progress_callback=None) -> dict:
+def compute_communities(
+    G=None,
+    progress_callback: StandardProgress | None = None,
+) -> dict:
     """Detect communities using Louvain (preferred) or greedy modularity.
 
     Returns dict with communities list and modularity score.
     """
-    cb = progress_callback or (lambda p, m: None)
     if G is None:
         G = load_graph()
 
     UG = _to_undirected(G)
 
-    cb(20, "Removing self-loops for community detection...")
+    _tick(progress_callback, "community detection", 1, 4)
     UG.remove_edges_from(nx.selfloop_edges(UG))
 
-    cb(40, "Running community detection...")
+    _tick(progress_callback, "community detection", 2, 4)
     communities = []
     modularity = 0.0
 
@@ -166,7 +170,7 @@ def compute_communities(G=None, progress_callback=None) -> dict:
         communities = [sorted(list(c)) for c in raw_communities]
         modularity = nx.community.modularity(UG, raw_communities)
 
-    cb(70, "Classifying communities...")
+    _tick(progress_callback, "classifying communities", 3, 4)
     # Label each community by its dominant node type
     community_labels = []
     for i, comm in enumerate(communities):
@@ -187,7 +191,7 @@ def compute_communities(G=None, progress_callback=None) -> dict:
             "type_distribution": dict(type_counts),
         })
 
-    cb(90, f"Found {len(communities)} communities (modularity={modularity:.3f})")
+    _tick(progress_callback, "community detection", 4, 4)
 
     return {
         "communities": community_labels,
@@ -253,10 +257,11 @@ def compute_graph_metrics(G=None) -> dict:
 # ── Combined ─────────────────────────────────────────────────────────────
 
 
-def compute_all_metrics(progress_callback=None, disease_id: str = "sle") -> dict:
+def compute_all_metrics(
+    progress_callback: StandardProgress | None = None,
+    disease_id: str = "sle",
+) -> dict:
     """Run all analyses and return combined results."""
-    cb = progress_callback or (lambda p, m: None)
-
     from med_research.diseases.coverage import module_coverage
 
     global last_coverage
@@ -265,29 +270,24 @@ def compute_all_metrics(progress_callback=None, disease_id: str = "sle") -> dict
     )
     last_coverage = coverage
     if not coverage.is_runnable:
-        cb(100, f"Network pharmacology blocked: {', '.join(coverage.missing_inputs)}")
+        _tick(progress_callback, "network pharmacology blocked", 1, 1)
         return {"coverage": coverage.to_dict(), "status": "blocked"}
 
-    cb(0, f"Loading {disease_id} knowledge graph...")
+    _tick(progress_callback, "loading knowledge graph", 1, 5)
     G = load_graph(disease_id)
 
-    cb(5, f"Graph loaded: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
-
-    # Graph metrics
-    cb(10, "Computing graph-level metrics...")
+    _tick(progress_callback, "graph metrics", 2, 5)
     graph_metrics = compute_graph_metrics(G)
 
-    # Centrality
-    centrality = compute_centrality(G, progress_callback=lambda p, m: cb(15 + int(p * 0.35), m))
+    _tick(progress_callback, "centrality", 3, 5)
+    centrality = compute_centrality(G, progress_callback=progress_callback)
 
-    # Bridge nodes
-    cb(50, "Identifying bridge nodes...")
+    _tick(progress_callback, "bridge nodes", 4, 5)
     bridge_nodes = compute_bridge_nodes(G, centrality)
 
-    # Communities
-    communities = compute_communities(G, progress_callback=lambda p, m: cb(55 + int(p * 0.35), m))
+    communities = compute_communities(G, progress_callback=progress_callback)
 
-    cb(95, "Saving results...")
+    _tick(progress_callback, "saving results", 4, 5)
     DATA_DIR.mkdir(parents=True, exist_ok=True)
 
     # Save centrality top-20 per metric
@@ -315,7 +315,7 @@ def compute_all_metrics(progress_callback=None, disease_id: str = "sle") -> dict
     output_path = DATA_DIR / "network_analysis.json"
     output_path.write_text(json.dumps(results, indent=2, default=str), encoding="utf-8")
 
-    cb(100, f"Results saved to {output_path}")
+    _tick(progress_callback, "saving results", 5, 5)
     return results
 
 

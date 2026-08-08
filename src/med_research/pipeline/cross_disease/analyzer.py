@@ -34,6 +34,7 @@ from med_research.pipeline.knowledge_graph.config import (
     load_pathways,
     load_relationships,
 )
+from med_research.pipeline.progress import StandardProgress, _tick
 
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -478,7 +479,9 @@ def compute_cross_disease_repurposing(data: dict) -> list:
 # ── Full Pipeline ─────────────────────────────────────────────────────────
 
 
-def compute_cross_disease_analysis(progress_callback=None) -> dict:
+def compute_cross_disease_analysis(
+    progress_callback: StandardProgress | None = None,
+) -> dict:
     """Run the full cross-disease analysis pipeline.
 
     Returns:
@@ -486,8 +489,6 @@ def compute_cross_disease_analysis(progress_callback=None) -> dict:
         shared_pathways, disease_similarity, multi_disease_drugs,
         cross_disease_repurposing.
     """
-    cb = progress_callback or (lambda p, m: None)
-
     from med_research.diseases.coverage import ModuleCoverage, coverage_for_disease, module_coverage
 
     global last_coverage
@@ -509,10 +510,7 @@ def compute_cross_disease_analysis(progress_callback=None) -> dict:
             warnings=list(coverage.warnings),
             limitations=list(coverage.limitations),
         )
-        cb(
-            100,
-            f"Cross-disease analysis blocked: incomplete data for {', '.join(blocked)}",
-        )
+        _tick(progress_callback, "cross-disease blocked", 1, 1)
         return {
             "coverage": {
                 **last_coverage.to_dict(),
@@ -528,31 +526,29 @@ def compute_cross_disease_analysis(progress_callback=None) -> dict:
             "cross_disease_repurposing": [],
         }
 
-    cb(0, "Loading all disease data...")
+    _tick(progress_callback, "loading disease data", 1, 9)
     data = load_all_disease_data()
     disease_ids = sorted(data.keys())
 
-    cb(10, f"Loaded {len(disease_ids)} diseases: {', '.join(disease_ids)}")
-
-    cb(15, "Computing shared genes...")
+    _tick(progress_callback, "shared genes", 2, 9)
     shared_genes = compute_shared_genes(data)
 
-    cb(30, "Computing shared drugs...")
+    _tick(progress_callback, "shared drugs", 3, 9)
     shared_drugs = compute_shared_drugs(data)
 
-    cb(45, "Computing shared pathways...")
+    _tick(progress_callback, "shared pathways", 4, 9)
     shared_pathways = compute_shared_pathways(data)
 
-    cb(55, "Computing disease similarity...")
+    _tick(progress_callback, "disease similarity", 5, 9)
     similarity = compute_disease_similarity(data)
 
-    cb(70, "Scoring multi-disease drugs...")
+    _tick(progress_callback, "multi-disease drugs", 6, 9)
     multi_disease_drugs = score_multi_disease_drugs(data, shared_genes, shared_pathways)
 
-    cb(85, "Computing cross-disease repurposing...")
+    _tick(progress_callback, "cross-disease repurposing", 7, 9)
     repurposing = compute_cross_disease_repurposing(data)
 
-    cb(95, "Saving results...")
+    _tick(progress_callback, "saving results", 8, 9)
     last_coverage = module_coverage(
         disease_ids[0], "cross_disease", ("genes", "drugs", "pathways")
     )
@@ -605,14 +601,17 @@ def compute_cross_disease_analysis(progress_callback=None) -> dict:
 
     output_path.write_text(json.dumps(safe, indent=2, default=list), encoding="utf-8")
 
-    cb(100, f"Results saved to {output_path}")
+    _tick(progress_callback, "saving results", 9, 9)
     return result
 
 
 # ── Comparative Module Run ───────────────────────────────────────────────
 
 
-def compute_comparative_modules(progress_callback=None, top_synergy: int = 5) -> dict:
+def compute_comparative_modules(
+    progress_callback: StandardProgress | None = None,
+    top_synergy: int = 5,
+) -> dict:
     """Run biomarker/expression/synergy for every disease and stack results.
 
     Runs each of the three scoring modules per disease with save=False so
@@ -624,8 +623,6 @@ def compute_comparative_modules(progress_callback=None, top_synergy: int = 5) ->
         biomarker/expression score matrices (entity -> disease -> score) and
         top synergy pairs per disease.
     """
-    cb = progress_callback or (lambda p, m: None)
-
     from med_research.pipeline.biomarker_discovery.discover import compute_biomarker_matrix
     from med_research.pipeline.drug_synergy.engine import compute_synergy
     from med_research.pipeline.gene_expression.correlator import compute_all_correlations
@@ -633,35 +630,37 @@ def compute_comparative_modules(progress_callback=None, top_synergy: int = 5) ->
     all_diseases = list_diseases()
     disease_ids = sorted(all_diseases.keys())
     n = len(disease_ids)
+    total_steps = max(1, n * 3)
 
     biomarker_scores: dict = {}
     expression_scores: dict = {}
     synergy_top: dict = {}
     counts = {"biomarker": {}, "expression": {}, "synergy": {}}
 
-    for i, did in enumerate(disease_ids):
-        base = int(i / max(1, n) * 90)
-        cb(base, f"[{did}] running biomarker discovery…")
+    step = 0
+    for did in disease_ids:
+        step += 1
+        _tick(progress_callback, f"{did} biomarker", step, total_steps)
         try:
             bm = compute_biomarker_matrix(disease_id=did, save=False)
             counts["biomarker"][did] = len(bm)
             for r in bm:
                 biomarker_scores.setdefault(r["gene_id"], {})[did] = r["composite_score"]
-        except Exception as e:  # noqa: BLE001 — keep one disease failure from killing the run
+        except Exception:  # noqa: BLE001 — keep one disease failure from killing the run
             counts["biomarker"][did] = 0
-            cb(base, f"[{did}] biomarker failed: {e}")
 
-        cb(base + 5, f"[{did}] correlating expression…")
+        step += 1
+        _tick(progress_callback, f"{did} expression", step, total_steps)
         try:
             ex = compute_all_correlations(disease_id=did, save=False)
             counts["expression"][did] = len(ex)
             for r in ex:
                 expression_scores.setdefault(r["drug_id"], {})[did] = r["composite_score"]
-        except Exception as e:  # noqa: BLE001
+        except Exception:  # noqa: BLE001
             counts["expression"][did] = 0
-            cb(base + 5, f"[{did}] expression failed: {e}")
 
-        cb(base + 10, f"[{did}] scoring synergy pairs…")
+        step += 1
+        _tick(progress_callback, f"{did} synergy", step, total_steps)
         try:
             sy = compute_synergy(disease_id=did, save=False)
             counts["synergy"][did] = len(sy)
@@ -672,12 +671,11 @@ def compute_comparative_modules(progress_callback=None, top_synergy: int = 5) ->
                 }
                 for p in sy[:top_synergy]
             ]
-        except Exception as e:  # noqa: BLE001
+        except Exception:  # noqa: BLE001
             counts["synergy"][did] = 0
             synergy_top[did] = []
-            cb(base + 10, f"[{did}] synergy failed: {e}")
 
-    cb(100, "Comparative module run complete")
+    _tick(progress_callback, "comparative complete", total_steps, total_steps)
     return {
         "diseases": [
             {"id": did, "name": all_diseases[did]["name"]} for did in disease_ids

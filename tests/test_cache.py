@@ -13,6 +13,8 @@ from med_research.cache import (
     CacheManager,
     cache_get,
     cache_set,
+    env_use_cache,
+    get_cache_manager,
     load_legacy_json,
 )
 from med_research.exceptions import CacheCorruptionError
@@ -104,11 +106,68 @@ def test_cache_get_bypass_when_use_cache_false(cache_dir, monkeypatch):
     assert cache_get(NS_GWAS, "sle", use_cache=False) is None
 
 
+def test_env_use_cache_defaults_true(monkeypatch):
+    monkeypatch.delenv("USE_CACHE", raising=False)
+    assert env_use_cache() is True
+
+
+def test_cache_get_respects_use_cache_env(cache_dir, monkeypatch):
+    monkeypatch.setenv("USE_CACHE", "false")
+    monkeypatch.setattr("med_research.cache._DEFAULT_MANAGER", None)
+    mgr = CacheManager(cache_dir=cache_dir, respect_env_use_cache=True)
+    monkeypatch.setattr("med_research.cache.get_cache_manager", lambda: mgr)
+    mgr.set(NS_GWAS, "sle", {"gwas_results": {}})
+    assert cache_get(NS_GWAS, "sle", use_cache=True) is None
+    assert mgr.get(NS_GWAS, "sle") is None
+
+
+def test_cache_set_respects_use_cache_env(cache_dir, monkeypatch):
+    monkeypatch.setenv("USE_CACHE", "false")
+    monkeypatch.setattr("med_research.cache._DEFAULT_MANAGER", None)
+    mgr = CacheManager(cache_dir=cache_dir, respect_env_use_cache=True)
+    monkeypatch.setattr("med_research.cache.get_cache_manager", lambda: mgr)
+    cache_set(NS_GWAS, "sle", {"gwas_results": {}}, use_cache=True)
+    assert mgr.stats()["total_entries"] == 0
+
+
+def test_explicit_cache_manager_bypasses_use_cache_env(cache_dir, monkeypatch):
+    monkeypatch.setenv("USE_CACHE", "false")
+    mgr = CacheManager(cache_dir=cache_dir, respect_env_use_cache=False)
+    cache_set(NS_GWAS, "sle", {"gwas_results": {}}, use_cache=True, cache=mgr)
+    assert cache_get(NS_GWAS, "sle", use_cache=True, cache=mgr) == {"gwas_results": {}}
+
+
+def test_get_cache_manager_singleton_respects_env(cache_dir, monkeypatch):
+    monkeypatch.setenv("USE_CACHE", "false")
+    monkeypatch.setattr("med_research.cache.DEFAULT_CACHE_DIR", cache_dir)
+    monkeypatch.setattr("med_research.cache._DEFAULT_MANAGER", None)
+    mgr = get_cache_manager()
+    mgr.set(NS_GWAS, "sle", {"gwas_results": {}})
+    assert mgr.stats()["total_entries"] == 0
+
+
 def test_load_legacy_json(tmp_path):
     path = tmp_path / "legacy.json"
     path.write_text(json.dumps([1, 2, 3]), encoding="utf-8")
     assert load_legacy_json(path) == [1, 2, 3]
     assert load_legacy_json(tmp_path / "missing.json") is None
+
+
+def test_write_json_atomic_replaces_target(tmp_path):
+    from med_research.cache import write_json_atomic
+
+    target = tmp_path / "output.json"
+    write_json_atomic(target, {"version": 1})
+    write_json_atomic(target, {"version": 2})
+    assert json.loads(target.read_text(encoding="utf-8")) == {"version": 2}
+    assert not list(tmp_path.glob("*.tmp"))
+
+
+def test_disease_output_path_format(tmp_path):
+    from med_research.cache import disease_output_path
+
+    path = disease_output_path(tmp_path, "expression_correlations", "ra")
+    assert path == tmp_path / "expression_correlations_ra.json"
 
 
 def test_module_namespace_constants():

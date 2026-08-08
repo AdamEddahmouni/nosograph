@@ -37,6 +37,7 @@ import logging
 from med_research.pipeline.knowledge_graph.config import load_drugs as config_load_drugs
 from med_research.pipeline.knowledge_graph.config import load_genes as config_load_genes
 from med_research.pipeline.knowledge_graph.config import load_pathways as config_load_pathways
+from med_research.pipeline.progress import StandardProgress, _tick
 
 DATA_DIR = Path(__file__).parent / "data"
 
@@ -184,12 +185,19 @@ def compute_composite_score(candidate: dict) -> float:
     return round(composite, 2)
 
 
-def score_candidates(G, candidates: list, genes: dict, disease_id: str = "sle") -> list:
+def score_candidates(
+    G,
+    candidates: list,
+    genes: dict,
+    disease_id: str = "sle",
+    progress_callback: StandardProgress | None = None,
+) -> list:
     """Score all repurposing candidates and compute composite scores."""
     scored = []
     drugs = load_drugs(disease_id)  # Load active-disease drugs for AE matching
 
-    for candidate in candidates:
+    for i, candidate in enumerate(candidates, 1):
+        _tick(progress_callback, "scoring candidates", i, len(candidates))
         gene_id = candidate["gene_id"]
         gene_info = genes.get(gene_id, {})
 

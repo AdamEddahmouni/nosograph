@@ -25,8 +25,10 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 import logging
 
 from med_research.cache import NS_ENRICHMENT, cache_get, cache_set, load_legacy_json
-from med_research.exceptions import ExternalAPIError, classify_api_error
+from med_research.diseases.schemas import GeneDict
+from med_research.exceptions import ExternalAPIError, classify_api_error, retry_with_backoff
 from med_research.pipeline.knowledge_graph.config import load_genes, load_pathways
+from med_research.pipeline.progress import StandardProgress, _tick
 
 logger = logging.getLogger(__name__)
 if sys.platform == "win32":
@@ -56,7 +58,7 @@ GENE_SET_LIBRARIES = [
 ]
 
 
-def load_kg_genes(disease_id: str = "sle") -> dict:
+def load_kg_genes(disease_id: str = "sle") -> dict[str, GeneDict]:
     """Load a disease's genes from the knowledge graph, indexed by gene ID."""
     data = load_genes(disease_id)
     return {g["id"]: g for g in data["genes"]}
@@ -147,6 +149,7 @@ def run_enrichment(
     libraries: list = None,
     top_n: int = 15,
     use_cache: bool = True,
+    progress_callback: StandardProgress | None = None,
 ) -> dict:
     """
     Run pathway enrichment analysis using GSEApy Enrichr.
@@ -193,23 +196,28 @@ def run_enrichment(
     if cached is not None:
         logger.info("📦 Loading enrichment results from cache...")
         logger.info(f"   Genes: {', '.join(symbols)}")
+        _tick(progress_callback, "pathway enrichment", len(libraries), len(libraries))
         return cached
 
     logger.info(f"\n🔄 Running enrichment analysis on {len(symbols)} genes...")
     logger.info(f"   Genes: {', '.join(symbols)}")
 
     results = {}
-    for library in libraries:
+    for i, library in enumerate(libraries, 1):
+        _tick(progress_callback, "pathway enrichment", i, len(libraries))
         logger.info(f"\n   📚 {library}...")
 
         try:
-            enr = gp.enrichr(
-                gene_list=symbols,
-                gene_sets=library,
-                organism="human",
-                outdir=None,
-                no_plot=True,
-                cutoff=0.05,
+            enr = retry_with_backoff(
+                lambda lib=library: gp.enrichr(
+                    gene_list=symbols,
+                    gene_sets=lib,
+                    organism="human",
+                    outdir=None,
+                    no_plot=True,
+                    cutoff=0.05,
+                ),
+                source=f"Enrichr {library}",
             )
 
             if enr.results is not None and not enr.results.empty:
@@ -337,6 +345,7 @@ def run_enrichment_analysis(
     disease_id: str = "sle",
     untargeted_only: bool = False,
     use_cache: bool = True,
+    progress_callback: StandardProgress | None = None,
 ) -> dict:
     """Run pathway enrichment for a disease (engine entry point)."""
     from med_research.diseases.coverage import module_coverage
@@ -363,7 +372,11 @@ def run_enrichment_analysis(
     logger.info(f"   Using {len(gene_list)} genes for enrichment")
 
     logger.info("🔄 Running enrichment analysis...")
-    enrichment_results = run_enrichment(gene_list, use_cache=use_cache)
+    enrichment_results = run_enrichment(
+        gene_list,
+        use_cache=use_cache,
+        progress_callback=progress_callback,
+    )
 
     logger.info("🔄 Cross-referencing with KG pathways...")
     kg_pathways = load_pathways(disease_id)

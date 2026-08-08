@@ -33,6 +33,7 @@ if sys.platform == "win32":
 import logging
 
 from med_research.pipeline.knowledge_graph.builder import build_graph
+from med_research.pipeline.progress import StandardProgress, _tick
 
 logger = logging.getLogger(__name__)
 DATA_DIR = Path(__file__).parent / "data"
@@ -122,7 +123,10 @@ _RECEPTOR_KEYWORDS = ["receptor", "fcgr", "tlr", "ifnar", "cd20"]
 _TF_KEYWORDS = ["transcription factor", "regulatory factor", "stat", "irf", "ikzf", "prdm"]
 
 
-def extract_features(G) -> tuple:
+def extract_features(
+    G,
+    progress_callback: StandardProgress | None = None,
+) -> tuple:
     """Extract features from the knowledge graph for all gene nodes.
 
     Returns:
@@ -141,18 +145,22 @@ def extract_features(G) -> tuple:
 
     # Compute betweenness centrality
     try:
-        betweenness = nx_betweenness(G) if "nx_betweenness" in dir() else {}
-    except Exception:
+        betweenness = nx_betweenness(G)
+    except (ImportError, ValueError, ZeroDivisionError, RuntimeError) as exc:
+        logger.warning("Betweenness centrality unavailable: %s", exc)
         betweenness = {}
 
     features = []
     gene_ids = []
     labels = []
+    gene_nodes = [
+        (node, data)
+        for node, data in G.nodes(data=True)
+        if data.get("type") == "gene"
+    ]
 
-    for node, data in G.nodes(data=True):
-        if data.get("type") != "gene":
-            continue
-
+    for i, (node, data) in enumerate(gene_nodes, 1):
+        _tick(progress_callback, "extracting gene features", i, len(gene_nodes))
         gene_id = node
         gene_ids.append(gene_id)
         is_targeted = 1 if gene_id in targeted_genes else 0
@@ -213,14 +221,22 @@ def nx_betweenness(G):
     try:
         import networkx as nx
         return nx.betweenness_centrality(G)
-    except Exception:
+    except ImportError as exc:
+        logger.warning("networkx unavailable for betweenness centrality: %s", exc)
+        return {}
+    except (ValueError, ZeroDivisionError, RuntimeError) as exc:
+        logger.warning("Betweenness centrality computation failed: %s", exc)
         return {}
 
 
 # ── ML Pipeline ──────────────────────────────────────────────────────
 
 
-def train_and_predict(G, top_n: int = 15) -> dict:
+def train_and_predict(
+    G,
+    top_n: int = 15,
+    progress_callback: StandardProgress | None = None,
+) -> dict:
     """Train XGBoost and predict druggability scores for all genes.
 
     Returns:
@@ -231,7 +247,7 @@ def train_and_predict(G, top_n: int = 15) -> dict:
         logger.warning("shap is not installed; feature importance plots will be skipped")
 
     logger.info("🔄 Extracting features from knowledge graph...")
-    X, gene_ids, labels = extract_features(G)
+    X, gene_ids, labels = extract_features(G, progress_callback=progress_callback)
 
     if len(X) == 0:
         return {"error": "No gene features extracted"}
@@ -321,8 +337,8 @@ def train_and_predict(G, top_n: int = 15) -> dict:
                 })
             shap_summary.sort(key=lambda x: x["mean_abs_shap"], reverse=True)
             shap_values = shap_vals
-        except Exception as e:
-            logger.info(f"   ⚠️  SHAP error: {e}")
+        except (ValueError, RuntimeError, ImportError, TypeError) as exc:
+            logger.warning("SHAP analysis skipped: %s", exc)
 
     # Generate top N untargeted genes
     untargeted_predictions = [p for p in predictions if not p["is_targeted"]]

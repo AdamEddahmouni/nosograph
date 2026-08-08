@@ -29,9 +29,11 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
+from med_research.cache import disease_output_path, write_json_atomic
 from med_research.pipeline.knowledge_graph.config import (
     load_genes as config_load_genes,  # noqa: E402
 )
+from med_research.pipeline.progress import StandardProgress, _tick
 
 DATA_DIR = Path(__file__).parent / "data"
 
@@ -345,52 +347,52 @@ def _recommendation(score: float) -> str:
     return "Limited direct CAR-T benefit. Pathway not primarily B-cell-driven. Consider alternative therapies."
 
 
-def compute_all_scores(progress_callback=None, disease_id: str = "sle") -> list:
+def compute_all_scores(
+    progress_callback: StandardProgress | None = None,
+    disease_id: str = "sle",
+) -> list:
     """Score all genes for CAR-T suitability.
 
     Args:
-        progress_callback: Optional callable(percent, message) for progress.
+        progress_callback: Optional ``(step, current, total)`` progress callback.
         disease_id: Disease whose CAR_T_SCORES config is used (defaults to
             the hardcoded SLE rubric, which matches the SLE config exactly).
 
     Returns list of scored genes sorted by composite score descending.
     """
-    cb = progress_callback or (lambda p, m: None)
-
     from med_research.diseases.coverage import module_coverage
 
     coverage = module_coverage(disease_id, "car_t", ("genes", "car_t_scores"))
     global last_coverage
     last_coverage = coverage
     if not coverage.is_runnable:
-        cb(100, f"CAR-T analysis blocked: {', '.join(coverage.missing_inputs)}")
+        _tick(progress_callback, "car-t blocked", 1, 1)
         return []
 
-    cb(0, "Loading gene database...")
+    _tick(progress_callback, "loading genes", 1, 1)
     genes = load_genes(disease_id)
     for gene in genes.values():
         gene["disease_id"] = disease_id
     scoring = load_config_scoring(disease_id)
 
-    cb(10, f"Scoring {len(genes)} genes for CAR-T suitability...")
+    total_genes = len(genes)
     results = []
-    for i, (gene_id, gene) in enumerate(genes.items()):
-        if i % 5 == 0:
-            cb(10 + int(i / len(genes) * 75), f"Scoring {gene_id}...")
+    for i, (gene_id, gene) in enumerate(genes.items(), 1):
+        if i % 5 == 0 or i == total_genes:
+            _tick(progress_callback, "scoring genes", i, total_genes)
         results.append(score_gene(gene_id, gene, scoring, disease_id=disease_id))
 
     results.sort(key=lambda x: x["composite_score"], reverse=True)
 
-    cb(95, "Saving results...")
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
-    output_path = DATA_DIR / "car_t_scores.json"
-    output_path.write_text(json.dumps({
+    _tick(progress_callback, "saving results", 0, 1)
+    output_path = disease_output_path(DATA_DIR, "car_t_scores", disease_id)
+    write_json_atomic(output_path, {
         "genes": results,
         "total_genes": len(results),
         "coverage": coverage.to_dict(),
-    }, indent=2), encoding="utf-8")
+    })
 
-    cb(100, f"Results saved to {output_path}")
+    _tick(progress_callback, "saving results", 1, 1)
     return results
 
 

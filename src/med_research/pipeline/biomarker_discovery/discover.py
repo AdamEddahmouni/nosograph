@@ -27,8 +27,10 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 import logging
 
+from med_research.cache import disease_output_path, write_json_atomic
 from med_research.exceptions import DataValidationError
 from med_research.pipeline.knowledge_graph.config import load_relationships
+from med_research.pipeline.progress import StandardProgress, _tick
 
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -58,18 +60,10 @@ def load_json(path: Path) -> dict:
 # ── Load All Module Results ──────────────────────────────────────────────
 
 
-def _module_output_path(module: str, filename: str, disease_id: str = "sle") -> Path:
-    """Resolve a module's output file for a disease.
-
-    Prefers a per-disease file (expression_correlations_ra.json) when present;
-    otherwise falls back to the shared file, which reflects the most recent
-    pipeline run for whatever disease it was executed against.
-    """
+def _module_output_path(module: str, stem: str, disease_id: str = "sle") -> Path:
+    """Resolve a module's per-disease output file."""
     data_dir = _MODULE_DATA_DIRS.get(module, DATA_DIR)
-    per_disease = data_dir / f"{Path(filename).stem}_{disease_id}.json"
-    if per_disease.exists():
-        return per_disease
-    return data_dir / filename
+    return disease_output_path(data_dir, stem, disease_id)
 
 
 def load_all_modules(disease_id: str = "sle") -> dict:
@@ -81,35 +75,35 @@ def load_all_modules(disease_id: str = "sle") -> dict:
 
     # Gene Expression Correlation
     try:
-        data = load_json(_module_output_path("expression", "expression_correlations.json", disease_id))
+        data = load_json(_module_output_path("expression", "expression_correlations", disease_id))
         results["expression"] = {d["drug_id"]: d for d in data.get("drugs", [])}
     except (FileNotFoundError, KeyError):
         pass
 
     # CAR-T Response Predictor
     try:
-        data = load_json(_module_output_path("cart", "car_t_scores.json", disease_id))
+        data = load_json(_module_output_path("cart", "car_t_scores", disease_id))
         results["cart"] = {g["gene_id"]: g for g in data.get("genes", [])}
     except (FileNotFoundError, KeyError):
         pass
 
     # Drug Repurposing candidates
     try:
-        data = load_json(_module_output_path("repurpose", "candidates.json", disease_id))
+        data = load_json(_module_output_path("repurpose", "candidates", disease_id))
         results["repurpose"] = data.get("repurposing_candidates", [])
     except (FileNotFoundError, KeyError):
         pass
 
     # Adverse Events
     try:
-        data = load_json(_module_output_path("safety", "profiles.json", disease_id))
+        data = load_json(_module_output_path("safety", "profiles", disease_id))
         results["safety"] = data
     except (FileNotFoundError, KeyError, json.JSONDecodeError):
         results["safety"] = {}
 
     # Drug Synergy
     try:
-        data = load_json(_module_output_path("synergy", "synergy_results.json", disease_id))
+        data = load_json(_module_output_path("synergy", "synergy_results", disease_id))
         results["synergy"] = data.get("pairs", [])
     except (FileNotFoundError, KeyError):
         pass
@@ -290,28 +284,30 @@ def _assign_tier(score: float) -> str:
     return "🟢 Tier 4 — Investigational"
 
 
-def compute_biomarker_matrix(progress_callback=None, disease_id: str = "sle", save: bool = True) -> list:
+def compute_biomarker_matrix(
+    progress_callback: StandardProgress | None = None,
+    disease_id: str = "sle",
+    save: bool = True,
+) -> list:
     """Full pipeline: load modules, map genes, score biomarkers.
 
     Args:
-        progress_callback: Optional callable(percent, message) for progress.
+        progress_callback: Optional ``(step, current, total)`` progress callback.
         disease_id: Disease whose KG genes and module outputs are used.
         save: When False, compute in memory without writing the shared
             biomarker_matrix.json (used by the comparative cross-disease run
             so per-disease scoring doesn't clobber the last-run results).
     """
-    cb = progress_callback or (lambda p, m: None)
-
     from med_research.diseases.coverage import module_coverage
 
     global last_coverage
     coverage = module_coverage(disease_id, "biomarkers", ("genes",))
     last_coverage = coverage
     if not coverage.is_runnable:
-        cb(100, f"Biomarker analysis blocked: {', '.join(coverage.missing_inputs)}")
+        _tick(progress_callback, "biomarker blocked", 1, 1)
         return []
 
-    cb(0, "Loading knowledge graph genes...")
+    _tick(progress_callback, "loading genes", 1, 5)
     from med_research.pipeline.knowledge_graph.builder import build_graph
     G = build_graph(disease_id)
     genes = {}
@@ -319,29 +315,26 @@ def compute_biomarker_matrix(progress_callback=None, disease_id: str = "sle", sa
         if data.get("type") == "gene":
             genes[node] = data
 
-    cb(15, f"Loaded {len(genes)} genes")
-
-    cb(20, "Loading module results...")
+    _tick(progress_callback, "loading module results", 2, 5)
     module_data = load_all_modules(disease_id)
 
-    cb(40, "Building cross-module matrix...")
+    _tick(progress_callback, "building matrix", 3, 5)
     matrix = map_gene_to_modules(genes, module_data, disease_id)
 
-    cb(60, f"Scoring {len(matrix)} biomarkers...")
+    _tick(progress_callback, "scoring biomarkers", 4, 5)
     results = [score_biomarker(row) for row in matrix]
     results.sort(key=lambda x: x["composite_score"], reverse=True)
 
     if save:
-        cb(95, "Saving results...")
-        DATA_DIR.mkdir(parents=True, exist_ok=True)
-        output_path = DATA_DIR / "biomarker_matrix.json"
-        output_path.write_text(json.dumps({
+        _tick(progress_callback, "saving results", 4, 5)
+        output_path = disease_output_path(DATA_DIR, "biomarker_matrix", disease_id)
+        write_json_atomic(output_path, {
             "biomarkers": results,
             "total_genes": len(results),
-        }, indent=2), encoding="utf-8")
-        cb(100, f"Results saved to {output_path}")
+        })
+        _tick(progress_callback, "saving results", 5, 5)
     else:
-        cb(100, "Biomarker scoring complete (in-memory)")
+        _tick(progress_callback, "biomarker complete", 5, 5)
     return results
 
 

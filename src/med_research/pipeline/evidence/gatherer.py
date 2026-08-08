@@ -29,7 +29,8 @@ from datetime import datetime
 from pathlib import Path
 
 from med_research.cache import NS_EVIDENCE_GATHER, cache_get, cache_set, load_legacy_json
-from med_research.exceptions import ExternalAPIError, classify_api_error
+from med_research.exceptions import ExternalAPIError, classify_api_error, retry_with_backoff
+from med_research.pipeline.progress import StandardProgress, _tick
 
 logger = logging.getLogger(__name__)
 sys.path.insert(0, str(Path(__file__).parent.parent))
@@ -62,14 +63,19 @@ def save_json(path: Path, data):
 
 def api_get(url: str, timeout: int = 15) -> dict:
     """Fetch JSON from a REST API, raising typed errors on failure."""
-    try:
-        req = urllib.request.Request(url, headers={"User-Agent": "LupusResearchPlatform/2.0"})
-        with urllib.request.urlopen(req, timeout=timeout) as resp:
-            return json.loads(resp.read().decode("utf-8"))
-    except json.JSONDecodeError as e:
-        raise classify_api_error(e, f"API response parse error ({url[:80]}...)") from e
-    except (urllib.error.URLError, urllib.error.HTTPError) as e:
-        raise classify_api_error(e, f"API error ({url[:80]}...)") from e
+    source = f"API GET ({url[:80]}...)"
+
+    def _fetch() -> dict:
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "LupusResearchPlatform/2.0"})
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                return json.loads(resp.read().decode("utf-8"))
+        except json.JSONDecodeError as e:
+            raise classify_api_error(e, f"API response parse error ({url[:80]}...)") from e
+        except (urllib.error.URLError, urllib.error.HTTPError) as e:
+            raise classify_api_error(e, f"API error ({url[:80]}...)") from e
+
+    return retry_with_backoff(_fetch, source=source)
 
 
 # ── Cache ────────────────────────────────────────────────────────────────
@@ -80,7 +86,7 @@ def _cache_key(query: str, source: str, max_results: int) -> str:
 
 
 def _load_legacy_evidence_cache() -> dict:
-    """Load the legacy monolithic evidence cache file."""
+    """Load the legacy monolithic evidence cache file (read-only after migration)."""
     legacy = load_legacy_json(LEGACY_EVIDENCE_CACHE)
     return legacy if isinstance(legacy, dict) else {}
 
@@ -303,6 +309,7 @@ def gather_evidence(
     use_cache: bool = True,
     cross_reference: bool = True,
     disease_id: str | None = None,
+    progress_callback: StandardProgress | None = None,
 ) -> dict:
     """Search all configured sources and aggregate results.
 
@@ -357,7 +364,8 @@ def gather_evidence(
     start_time = time.time()
     all_results = []
 
-    for src in sources:
+    for i, src in enumerate(sources, 1):
+        _tick(progress_callback, f"searching {src}", i, len(sources))
         if src in ("pubmed", "preprints", "patents"):
             results = search_europe_pmc(query, src, max_per_source, use_cache)
             all_results.extend(results)

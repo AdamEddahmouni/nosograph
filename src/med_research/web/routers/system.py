@@ -127,6 +127,24 @@ async def pipeline_modules(
     }
 
 
+@router.get("/api/system/cache/stats")
+async def cache_stats():
+    """Return cache namespace statistics (auth-protected when API_KEY is set)."""
+    from med_research.cache import CacheManager
+
+    return CacheManager().stats()
+
+
+@router.delete("/api/system/cache")
+@router.delete("/api/system/cache/{namespace}")
+async def cache_clear(namespace: str | None = None):
+    """Clear one cache namespace or all namespaces (auth-protected when API_KEY is set)."""
+    from med_research.cache import CacheManager
+
+    removed = CacheManager().clear(namespace=namespace)
+    return {"removed": removed, "namespace": namespace}
+
+
 @router.get("/api/stats", response_model=PlatformStats)
 async def platform_stats(
     disease: str = Query("sle", description="Disease ID to compute stats for"),

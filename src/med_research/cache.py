@@ -1,6 +1,9 @@
+import contextlib
 import hashlib
 import json
+import os
 import re
+import tempfile
 import time
 from pathlib import Path
 from typing import Any, Optional
@@ -12,6 +15,54 @@ logger = get_logger(__name__)
 
 DEFAULT_CACHE_DIR = Path(__file__).parent.parent / "data" / "cache"
 DEFAULT_TTL_SECONDS = 24 * 3600  # 24 hours
+
+_DEFAULT_MANAGER: Optional["CacheManager"] = None
+
+
+def env_use_cache() -> bool:
+    """Whether caching is enabled via the ``USE_CACHE`` environment variable."""
+    return os.environ.get("USE_CACHE", "true").lower() == "true"
+
+
+def disease_output_path(data_dir: Path, stem: str, disease_id: str) -> Path:
+    """Per-disease module output path: ``{data_dir}/{stem}_{disease_id}.json``."""
+    return Path(data_dir) / f"{stem}_{disease_id}.json"
+
+
+def write_json_atomic(
+    path: Path,
+    data: Any,
+    *,
+    indent: int = 2,
+    default: Any = str,
+) -> None:
+    """Atomically write JSON via a temp file and ``os.replace``."""
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    fd, tmp_name = tempfile.mkstemp(
+        suffix=".tmp",
+        prefix=f"{path.stem}.",
+        dir=str(path.parent),
+    )
+    try:
+        with os.fdopen(fd, "w", encoding="utf-8") as handle:
+            json.dump(data, handle, indent=indent, ensure_ascii=False, default=default)
+        for attempt in range(3):
+            try:
+                os.replace(tmp_name, path)
+                return
+            except PermissionError:
+                if attempt == 2:
+                    raise
+                if path.exists():
+                    with contextlib.suppress(OSError):
+                        path.unlink()
+                time.sleep(0.05)
+    finally:
+        # On success os.replace() already moved the temp file away, so this
+        # unlink is a no-op; it only cleans up on failure paths.
+        with contextlib.suppress(OSError):
+            os.unlink(tmp_name)
 
 # Namespace convention: one namespace per pipeline module_id
 NS_GWAS = "gwas"
@@ -40,9 +91,15 @@ class CacheManager:
         self,
         cache_dir: Path = DEFAULT_CACHE_DIR,
         ttl_seconds: int = DEFAULT_TTL_SECONDS,
+        *,
+        respect_env_use_cache: bool = False,
     ):
         self._dir = Path(cache_dir)
         self._ttl_seconds = ttl_seconds
+        self._respect_env_use_cache = respect_env_use_cache
+
+    def _cache_active(self) -> bool:
+        return not self._respect_env_use_cache or env_use_cache()
 
     def _namespace_dir(self, namespace: str) -> Path:
         ns_dir = self._dir / namespace
@@ -62,6 +119,8 @@ class CacheManager:
         return self._namespace_dir(namespace) / f"{safe_key}.json"
 
     def get(self, namespace: str, key: str, ttl_seconds: Optional[int] = None) -> Optional[Any]:
+        if not self._cache_active():
+            return None
         cache_path = self._cache_path(namespace, key)
         ttl = ttl_seconds if ttl_seconds is not None else self._ttl_seconds
 
@@ -88,12 +147,14 @@ class CacheManager:
         return entry["data"]
 
     def set(self, namespace: str, key: str, data: Any) -> None:
+        if not self._cache_active():
+            return
         cache_path = self._cache_path(namespace, key)
         entry = {
             "timestamp": time.time(),
             "data": data,
         }
-        cache_path.write_text(json.dumps(entry, indent=2, ensure_ascii=False), encoding="utf-8")
+        write_json_atomic(cache_path, entry)
         logger.debug("Cache set for %s/%s", namespace, key)
 
     def clear(self, namespace: Optional[str] = None) -> int:
@@ -149,13 +210,25 @@ def get_cache_manager(
     cache_dir: Optional[Path] = None,
     ttl_seconds: Optional[int] = None,
 ) -> CacheManager:
-    """Return a shared CacheManager instance (new object, same default paths)."""
+    """Return a shared CacheManager instance (new object, same default paths).
+
+    The default singleton respects ``USE_CACHE`` from the environment. Instances
+    created with an explicit ``cache_dir`` or ``ttl_seconds`` always allow
+    cache I/O (for tests and isolated stores).
+    """
+    global _DEFAULT_MANAGER
     if cache_dir is not None or ttl_seconds is not None:
         return CacheManager(
             cache_dir=cache_dir or DEFAULT_CACHE_DIR,
             ttl_seconds=ttl_seconds or DEFAULT_TTL_SECONDS,
+            respect_env_use_cache=False,
         )
-    return CacheManager()
+    if _DEFAULT_MANAGER is None:
+        _DEFAULT_MANAGER = CacheManager(
+            cache_dir=DEFAULT_CACHE_DIR,
+            respect_env_use_cache=True,
+        )
+    return _DEFAULT_MANAGER
 
 
 def cache_get(
@@ -165,8 +238,10 @@ def cache_get(
     ttl_seconds: Optional[int] = None,
     cache: Optional[CacheManager] = None,
 ) -> Optional[Any]:
-    """Read from cache when ``use_cache`` is enabled."""
+    """Read from cache when ``use_cache`` and ``USE_CACHE`` env are enabled."""
     if not use_cache:
+        return None
+    if cache is None and not env_use_cache():
         return None
     mgr = cache or get_cache_manager()
     return mgr.get(namespace, key, ttl_seconds=ttl_seconds)
@@ -179,8 +254,10 @@ def cache_set(
     use_cache: bool = True,
     cache: Optional[CacheManager] = None,
 ) -> None:
-    """Write to cache when ``use_cache`` is enabled."""
+    """Write to cache when ``use_cache`` and ``USE_CACHE`` env are enabled."""
     if not use_cache:
+        return
+    if cache is None and not env_use_cache():
         return
     mgr = cache or get_cache_manager()
     mgr.set(namespace, key, data)

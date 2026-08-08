@@ -18,7 +18,10 @@ Usage:
     # novel = {"chemicals": [...], "diseases": [...], "genes": [...]}
 """
 
+import logging
 import re
+
+logger = logging.getLogger(__name__)
 
 # ── Lazy spaCy import ────────────────────────────────────────────────────
 
@@ -318,8 +321,8 @@ class BiomedicalNER:
                     if name_len < 4:
                         confidence -= 0.2  # Short names are ambiguous
                     result["confidence"] = min(confidence, 1.0)
-            except Exception:
-                pass
+            except (RuntimeError, ValueError, AttributeError) as exc:
+                logger.debug("spaCy validation failed for %s: %s", entity_name, exc)
 
         return result
 
@@ -345,7 +348,8 @@ class BiomedicalNER:
         """Extract entities using spaCy biomedical model."""
         try:
             doc = _spacy_nlp(text[:10000])
-        except Exception:
+        except (RuntimeError, ValueError, AttributeError) as exc:
+            logger.debug("spaCy extraction failed: %s", exc)
             return {}
 
         results = {}

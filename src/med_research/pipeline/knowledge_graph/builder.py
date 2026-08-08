@@ -29,6 +29,7 @@ from med_research.pipeline.knowledge_graph.config import (
     load_pathways,
     load_relationships,
 )
+from med_research.pipeline.progress import StandardProgress, _tick
 
 logger = logging.getLogger(__name__)
 
@@ -36,7 +37,10 @@ if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 
-def build_graph(disease_id: str = "sle") -> nx.MultiDiGraph:
+def build_graph(
+    disease_id: str = "sle",
+    progress_callback: StandardProgress | None = None,
+) -> nx.MultiDiGraph:
     """Build a disease-specific heterogeneous knowledge graph."""
     G = nx.MultiDiGraph()
     profile = get_disease_profile(disease_id)
@@ -54,7 +58,9 @@ def build_graph(disease_id: str = "sle") -> nx.MultiDiGraph:
     )
 
     genes_data = load_genes(disease_id)
-    for gene in genes_data["genes"]:
+    gene_list = genes_data["genes"]
+    for i, gene in enumerate(gene_list, 1):
+        _tick(progress_callback, "loading genes", i, len(gene_list))
         evidence_key = f"{disease_id}_evidence"
         evidence = gene.get(evidence_key) or gene.get("lupus_evidence") or gene.get("disease_evidence", "")
         G.add_node(
@@ -70,7 +76,9 @@ def build_graph(disease_id: str = "sle") -> nx.MultiDiGraph:
         )
 
     drugs_data = load_drugs(disease_id)
-    for drug in drugs_data["drugs"]:
+    drug_list = drugs_data["drugs"]
+    for i, drug in enumerate(drug_list, 1):
+        _tick(progress_callback, "loading drugs", i, len(drug_list))
         G.add_node(
             drug["id"],
             type="drug",
@@ -85,7 +93,9 @@ def build_graph(disease_id: str = "sle") -> nx.MultiDiGraph:
         )
 
     pathways_data = load_pathways(disease_id)
-    for pathway in pathways_data["pathways"]:
+    pathway_list = pathways_data["pathways"]
+    for i, pathway in enumerate(pathway_list, 1):
+        _tick(progress_callback, "loading pathways", i, len(pathway_list))
         G.add_node(
             pathway["id"],
             type="pathway",
@@ -94,7 +104,9 @@ def build_graph(disease_id: str = "sle") -> nx.MultiDiGraph:
         )
 
     rels_data = load_relationships(disease_id)
-    for rel in rels_data["relationships"]:
+    rel_list = rels_data["relationships"]
+    for i, rel in enumerate(rel_list, 1):
+        _tick(progress_callback, "loading relationships", i, len(rel_list))
         source = rel["source"]
         target = rel["target"]
         rel_type = rel["type"]

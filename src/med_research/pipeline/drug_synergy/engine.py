@@ -28,7 +28,9 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 import logging
 
+from med_research.cache import disease_output_path, write_json_atomic
 from med_research.pipeline.knowledge_graph.config import load_drugs as config_load_drugs
+from med_research.pipeline.progress import StandardProgress, _tick
 
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -343,26 +345,26 @@ def score_drug_pair(drug_a: dict, drug_b: dict) -> dict:
     }
 
 
-def score_drug_pairs(drugs: dict, progress_callback=None) -> list:
+def score_drug_pairs(
+    drugs: dict,
+    progress_callback: StandardProgress | None = None,
+) -> list:
     """Score all unique drug pairs.
 
     Args:
         drugs: Dict of drug data indexed by drug ID.
-        progress_callback: Optional callable(percent, message) for progress.
+        progress_callback: Optional ``(step, current, total)`` progress callback.
 
     Returns:
         List of scored pairs sorted by composite score descending.
     """
-    cb = progress_callback or (lambda p, m: None)
     drug_list = list(drugs.values())
     total_pairs = len(drug_list) * (len(drug_list) - 1) // 2
 
-    cb(5, f"Scoring {total_pairs} drug pairs across 5 dimensions…")
-
     pairs = []
-    for i, (drug_a, drug_b) in enumerate(combinations(drug_list, 2)):
-        if i % 50 == 0:
-            cb(5 + int(i / total_pairs * 80), f"Scored {i}/{total_pairs} pairs…")
+    for i, (drug_a, drug_b) in enumerate(combinations(drug_list, 2), 1):
+        if total_pairs and (i % 50 == 0 or i == total_pairs):
+            _tick(progress_callback, "scoring drug pairs", i, total_pairs)
         pairs.append(score_drug_pair(drug_a, drug_b))
 
     # Sort by composite score descending
@@ -379,7 +381,7 @@ def score_drug_pairs(drugs: dict, progress_callback=None) -> list:
         else:
             p["tier"] = "🟢 Tier 4 — Limited Synergy"
 
-    cb(95, f"Scoring complete: {len(pairs)} pairs rated")
+    _tick(progress_callback, "scoring drug pairs", total_pairs or 1, total_pairs or 1)
 
     return pairs
 
@@ -439,43 +441,43 @@ def print_top_pairs(scored_pairs: list, top_n: int = 15):
         logger.info(f"     └─ Combined Evidence:        {p['combined_evidence']}/10")
 
 
-def compute_synergy(progress_callback=None, disease_id: str = "sle", save: bool = True) -> list:
+def compute_synergy(
+    progress_callback: StandardProgress | None = None,
+    disease_id: str = "sle",
+    save: bool = True,
+) -> list:
     """Main entry point: load drugs, score all pairs, return results.
 
     Args:
-        progress_callback: Optional callable(percent, message) for progress.
+        progress_callback: Optional ``(step, current, total)`` progress callback.
         disease_id: Disease whose drug library is used.
         save: When False, compute in memory without writing the shared
             synergy_results.json (used by the comparative cross-disease run
             so per-disease scoring doesn't clobber the last-run results).
     """
-    cb = progress_callback or (lambda p, m: None)
-
     from med_research.diseases.coverage import module_coverage
 
     global last_coverage
     coverage = module_coverage(disease_id, "synergy", ("genes", "drugs"))
     last_coverage = coverage
     if not coverage.is_runnable:
-        cb(100, f"Synergy analysis blocked: {', '.join(coverage.missing_inputs)}")
+        _tick(progress_callback, "synergy blocked", 1, 1)
         return []
 
-    cb(0, "Loading drug library…")
+    _tick(progress_callback, "loading drug library", 1, 3)
     drugs = load_drugs(disease_id)
 
-    cb(2, f"Loaded {len(drugs)} drugs from knowledge graph")
+    _tick(progress_callback, "loading drug library", 2, 3)
 
-    pairs = score_drug_pairs(drugs, progress_callback=cb)
+    pairs = score_drug_pairs(drugs, progress_callback=progress_callback)
 
     if save:
-        cb(98, "Saving results…")
-        DATA_DIR.mkdir(parents=True, exist_ok=True)
-        output_path = DATA_DIR / "synergy_results.json"
-        with open(output_path, "w", encoding="utf-8") as f:
-            json.dump({"pairs": pairs, "total_pairs": len(pairs)}, f, indent=2)
-        cb(100, f"Results saved to {output_path}")
+        _tick(progress_callback, "saving results", 2, 3)
+        output_path = disease_output_path(DATA_DIR, "synergy_results", disease_id)
+        write_json_atomic(output_path, {"pairs": pairs, "total_pairs": len(pairs)})
+        _tick(progress_callback, "saving results", 3, 3)
     else:
-        cb(100, "Synergy scoring complete (in-memory)")
+        _tick(progress_callback, "synergy complete", 3, 3)
     return pairs
 
 

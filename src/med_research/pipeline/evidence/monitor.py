@@ -96,16 +96,16 @@ def _load_tracked_entities() -> tuple:
                     drugs.add((c.get("drug_name") or "").split("(")[0].strip())
                 if c.get("gene_name"):
                     genes.add(c["gene_name"])
-    except (FileNotFoundError, json.JSONDecodeError, KeyError):
-        pass
+    except (FileNotFoundError, json.JSONDecodeError, KeyError) as exc:
+        logger.debug("Could not load tracked drugs from candidates: %s", exc)
 
     try:
         gene_data = config_load_genes()
         for g in gene_data.get("genes", []):
             if g.get("name"):
                 genes.add(g["name"])
-    except (FileNotFoundError, json.JSONDecodeError, KeyError):
-        pass
+    except (FileNotFoundError, json.JSONDecodeError, KeyError) as exc:
+        logger.debug("Could not load tracked genes from knowledge graph: %s", exc)
 
     return sorted(drugs), sorted(genes)
 

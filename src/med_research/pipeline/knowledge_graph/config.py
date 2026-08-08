@@ -7,6 +7,8 @@ from pathlib import Path
 from med_research.diseases.schemas import (
     KG_FILE_MODELS,
     DiseaseProfile,
+    DrugsFileDict,
+    GenesFileDict,
     load_validated_json,
 )
 from med_research.exceptions import MissingDataError, SchemaValidationError
@@ -87,11 +89,11 @@ def load_disease_json(disease_id: str, filename: str) -> dict:
     return load_validated_json(path, model_class)
 
 
-def load_genes(disease_id: str = "sle") -> dict:
+def load_genes(disease_id: str = "sle") -> GenesFileDict:
     return load_disease_json(disease_id, "genes.json")
 
 
-def load_drugs(disease_id: str = "sle") -> dict:
+def load_drugs(disease_id: str = "sle") -> DrugsFileDict:
     return load_disease_json(disease_id, "drugs.json")
 
 

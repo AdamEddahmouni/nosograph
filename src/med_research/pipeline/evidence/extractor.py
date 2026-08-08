@@ -40,7 +40,9 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 import logging
 
 from med_research.cache import NS_LLM_EXTRACTOR, cache_get, cache_set, load_legacy_json
+from med_research.exceptions import ExternalAPIError, classify_api_error, retry_with_backoff
 from med_research.pipeline.evidence.gatherer import gather_evidence
+from med_research.pipeline.progress import StandardProgress, _tick
 
 logger = logging.getLogger(__name__)
 if sys.platform == "win32":
@@ -48,7 +50,7 @@ if sys.platform == "win32":
 
 DATA_DIR = Path(__file__).parent / "data"
 LEGACY_EXTRACTION_CACHE = DATA_DIR / "extraction_cache.json"
-CACHE_PATH = LEGACY_EXTRACTION_CACHE  # backward compat for tests and callers
+CACHE_PATH = LEGACY_EXTRACTION_CACHE  # backward compat for tests; not written after migration
 
 # ── Configuration ─────────────────────────────────────────────────────────
 
@@ -166,15 +168,28 @@ def call_llm(
         "Authorization": f"Bearer {API_KEY}",
     }
 
+    def _call() -> str:
+        try:
+            return _call_llm_request(url, payload, headers)
+        except json.JSONDecodeError as e:
+            raise classify_api_error(e, "LLM chat completions response parse") from e
+        except (urllib.error.URLError, urllib.error.HTTPError) as e:
+            raise classify_api_error(e, "LLM chat completions") from e
+        except (KeyError, IndexError, ValueError) as e:
+            raise classify_api_error(e, "LLM chat completions response") from e
+
     try:
-        req = urllib.request.Request(url, data=payload, headers=headers, method="POST")
-        with urllib.request.urlopen(req, timeout=45) as resp:
-            body = json.loads(resp.read().decode("utf-8"))
-            return body["choices"][0]["message"]["content"].strip()
-    except (urllib.error.URLError, urllib.error.HTTPError, json.JSONDecodeError,
-            KeyError, IndexError) as e:
-        logger.info(f"  ⚠️  LLM API error: {e}")
+        return retry_with_backoff(_call, source="LLM chat completions")
+    except ExternalAPIError as e:
+        logger.info(f"  ⚠️  {e}")
         return None
+
+
+def _call_llm_request(url: str, payload: bytes, headers: dict) -> str:
+    req = urllib.request.Request(url, data=payload, headers=headers, method="POST")
+    with urllib.request.urlopen(req, timeout=45) as resp:
+        body = json.loads(resp.read().decode("utf-8"))
+        return body["choices"][0]["message"]["content"].strip()
 
 
 def _clean_json_response(text: str) -> str:
@@ -300,6 +315,7 @@ def extract_all(
     model: str = None,
     use_cache: bool = True,
     disease_id: str | None = None,
+    progress_callback: StandardProgress | None = None,
 ) -> dict:
     """Gather evidence then extract structured data from all results.
 
@@ -324,6 +340,7 @@ def extract_all(
         (),
     )
     if not last_coverage.is_runnable:
+        _tick(progress_callback, "llm extraction blocked", 1, 1)
         return {
             "query": query,
             "model": model,
@@ -342,6 +359,7 @@ def extract_all(
         sources = ["pubmed", "preprints", "clinical_trials"]
 
     if not API_KEY:
+        _tick(progress_callback, "llm extraction blocked", 1, 1)
         logger.info("\n⚠️  No OPENAI_API_KEY environment variable set.")
         logger.info("   LLM extraction requires an API key.\n"
               "   Set it via: export OPENAI_API_KEY=sk-...\n"
@@ -369,14 +387,17 @@ def extract_all(
 
     # Step 1: Gather evidence
     logger.info("Step 1/2: Gathering evidence...")
+    _tick(progress_callback, "gathering evidence", 0, 2)
     evidence = gather_evidence(
         query,
         sources=sources,
         max_per_source=max_articles // len(sources) + 1,
         use_cache=use_cache,
         disease_id=disease_id,
+        progress_callback=progress_callback,
     )
     articles = evidence["all_results"][:max_articles]
+    _tick(progress_callback, "gathering evidence", 1, 2)
     logger.info(f"   → {len(articles)} articles to extract\n")
 
     # Step 2: Extract structured data
@@ -386,6 +407,7 @@ def extract_all(
     success_count = 0
 
     for i, article in enumerate(articles, 1):
+        _tick(progress_callback, "extracting evidence", i, len(articles) or 1)
         logger.info(f"  [{i}/{len(articles)}] {article['title'][:70]}...")
         extracted = extract_evidence(article, query, model, use_cache)
         if extracted:

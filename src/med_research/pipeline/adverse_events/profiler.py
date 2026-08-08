@@ -16,7 +16,6 @@ Usage:
 
 import argparse
 import functools
-import json
 import logging
 import sys
 from pathlib import Path
@@ -24,6 +23,8 @@ from pathlib import Path
 logger = logging.getLogger(__name__)
 # Ensure project root is importable
 sys.path.insert(0, str(Path(__file__).parent.parent))
+
+from med_research.pipeline.progress import StandardProgress, _tick  # noqa: E402
 
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -940,11 +941,14 @@ def compute_adverse_event_score(profile: dict, disease_id: str = "sle") -> dict:
     }
 
 
-def score_all_drugs(progress_callback=None, disease_id: str = "sle") -> list:
+def score_all_drugs(
+    progress_callback: StandardProgress | None = None,
+    disease_id: str = "sle",
+) -> list:
     """Score all drugs and return sorted list by composite safety score.
 
     Args:
-        progress_callback: Optional callable(percent, message) for progress.
+        progress_callback: Optional ``(step, current, total)`` progress callback.
         disease_id: Disease whose configured risk categories adjust
             disease-specific risk scoring.
 
@@ -959,14 +963,12 @@ def score_all_drugs(progress_callback=None, disease_id: str = "sle") -> list:
         ("symptoms", "adverse_event_profile", "safety_risk"),
     )
     if not coverage.is_runnable:
-        cb = progress_callback or (lambda p, m: None)
-        cb(100, "Safety analysis blocked by incomplete disease coverage")
+        _tick(progress_callback, "safety blocked", 1, 1)
         return []
 
-    cb = progress_callback or (lambda p, m: None)
     profiles = load_profiles(disease_id)
 
-    cb(10, f"Profiling {len(profiles)} drugs for adverse events...")
+    _tick(progress_callback, "profiling drugs", 1, 2)
 
     results = []
     for _drug_id, profile in profiles.items():
@@ -974,25 +976,17 @@ def score_all_drugs(progress_callback=None, disease_id: str = "sle") -> list:
 
     results.sort(key=lambda x: x["composite_safety_score"], reverse=True)
 
-    cb(50, "Saving profiles...")
-    # Preserve the legacy SLE cache contract, but never overwrite it with
-    # another disease's profiles or scores.
-    profile_list = list(profiles.values())
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
-    if disease_id == "sle":
-        PROFILES_PATH.write_text(
-            json.dumps({"profiles": profile_list}, indent=2),
-            encoding="utf-8",
-        )
+    _tick(progress_callback, "saving profiles", 1, 2)
+    profiles_by_drug = {result["drug_id"]: result for result in results}
+    from med_research.cache import disease_output_path, write_json_atomic
 
-    # Keep disease-specific score caches isolated from the legacy SLE cache.
-    scores_path = DATA_DIR / ("safety_scores.json" if disease_id == "sle" else f"safety_scores_{disease_id}.json")
-    scores_path.write_text(
-        json.dumps({"safety_scores": results}, indent=2),
-        encoding="utf-8",
-    )
+    profiles_path = disease_output_path(DATA_DIR, "profiles", disease_id)
+    write_json_atomic(profiles_path, profiles_by_drug)
 
-    cb(100, f"Safety profiling complete: {len(results)} drugs scored")
+    scores_path = disease_output_path(DATA_DIR, "safety_scores", disease_id)
+    write_json_atomic(scores_path, {"safety_scores": results})
+
+    _tick(progress_callback, "saving profiles", 2, 2)
 
     return results
 
