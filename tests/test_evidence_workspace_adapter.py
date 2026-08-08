@@ -2,8 +2,9 @@
 
 from __future__ import annotations
 
-import networkx as nx
 from pathlib import Path
+
+import networkx as nx
 
 import med_research.pipeline.evidence_workspace.adapter  # noqa: F401
 from med_research.pipeline.evidence_workspace.adapter import EvidenceWorkspaceModule

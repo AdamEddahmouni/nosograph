@@ -80,7 +80,22 @@ from med_research.web.models.disease_admin import (  # noqa: E402  (after local 
     RestoreResponse,
 )
 from med_research.web.models.workspace import (  # noqa: E402  (after local defs)
+    WorkspaceAlert,
+    WorkspaceAlertListResponse,
+    WorkspaceCandidateHistoryPoint,
+    WorkspaceCandidateHistoryResponse,
+    WorkspaceCandidateReview,
+    WorkspaceCandidateReviewRequest,
     WorkspaceCompareResponse,
+    WorkspaceDigestDecision,
+    WorkspaceDigestEvidence,
+    WorkspaceEvidenceGraphResponse,
+    WorkspaceGraphEdge,
+    WorkspaceGraphNode,
+    WorkspaceNotificationDelivery,
+    WorkspaceNotificationSettings,
+    WorkspaceNotificationSettingsRequest,
+    WorkspaceReviewListResponse,
     WorkspaceRunListResponse,
     WorkspaceRunResponse,
     WorkspaceRunSummary,
@@ -88,4 +103,5 @@ from med_research.web.models.workspace import (  # noqa: E402  (after local defs
     WorkspaceTrendRun,
     WorkspaceTrendSeries,
     WorkspaceTrendsResponse,
+    WorkspaceWeeklyDigestResponse,
 )

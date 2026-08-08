@@ -1,5 +1,6 @@
 """Celery application and analysis tasks — with real-time progress reporting."""
 
+from datetime import datetime, timezone
 from uuid import uuid4
 
 from celery import Celery
@@ -21,6 +22,12 @@ celery_app.conf.update(
     task_track_started=True,
     task_time_limit=600,
     task_soft_time_limit=540,
+    beat_schedule={
+        "workspace-digest-dispatcher": {
+            "task": "dispatch_workspace_digests",
+            "schedule": 60.0,
+        },
+    },
 )
 
 
@@ -36,19 +43,52 @@ def _make_progress(self):
     return report
 
 
+def _dispatch_module(self, route_id: str, disease_id: str = "sle", **opts):
+    """Shared Celery dispatch path for registry-backed module jobs."""
+    from med_research.web.services.registry_service import run_module_job
+
+    return run_module_job(
+        route_id,
+        disease_id,
+        progress_callback=_make_progress(self),
+        **opts,
+    )
+
+
 # ── Generic module dispatch ─────────────────────────────────────────────────
 
 
 @celery_app.task(bind=True, name="run_module")
 def task_run_module(self, module_id: str, disease_id: str = "sle", **opts):
     """Celery task: run any registry-backed module via the web service bridge."""
-    from med_research.web.services.registry_service import run_module_job
+    return _dispatch_module(self, module_id, disease_id, **opts)
 
-    return run_module_job(
-        module_id,
+
+@celery_app.task(bind=True, name="run_all")
+def task_run_all(
+    self,
+    disease_id: str = "sle",
+    full: bool = False,
+    parallel: bool = False,
+    skip_ml: bool = False,
+    export_html: bool = False,
+    no_cache: bool = False,
+):
+    """Celery task: orchestrate a full pipeline run via the DAG scheduler."""
+    from med_research.web.services.registry_service import run_all_pipeline
+
+    self.update_state(
+        state="PROGRESS",
+        meta={"percent": 0, "message": "Pipeline run accepted"},
+    )
+    return run_all_pipeline(
         disease_id,
+        full=full,
+        parallel=parallel,
+        skip_ml=skip_ml,
+        export_html=export_html,
+        no_cache=no_cache,
         progress_callback=_make_progress(self),
-        **opts,
     )
 
 
@@ -66,6 +106,7 @@ def task_run_workspace(
     candidate_type: str = "both",
     max_evidence: int = 50,
     enable_llm: bool = True,
+    researcher_id: str = "anonymous",
 ):
     """Run an evidence dossier with progress updates for the dashboard."""
     from med_research.pipeline.evidence_workspace.report import render_html
@@ -94,7 +135,7 @@ def task_run_workspace(
     store = WorkspaceRunStore(WORKSPACE_DB_PATH)
     task_id = getattr(self.request, "id", None) or uuid4().hex
     run_id = f"ew-{task_id}"
-    store.create_run(run_id, request)
+    store.create_run(run_id, request, researcher_id=researcher_id)
 
     self.update_state(state="PROGRESS", meta={"percent": 1, "message": "Workspace job accepted"})
     try:
@@ -111,6 +152,42 @@ def task_run_workspace(
     return {"dossier": dossier.model_dump(mode="json"), "html": html}
 
 
+@celery_app.task(name="dispatch_workspace_digests")
+def task_dispatch_workspace_digests() -> dict[str, object]:
+    """Queue due researcher digests; Celery Beat invokes this every minute."""
+    from med_research.web.config import WORKSPACE_DB_PATH
+    from med_research.web.services.workspace_store import WorkspaceRunStore
+
+    store = WorkspaceRunStore(WORKSPACE_DB_PATH)
+    researcher_ids = store.due_weekly_digest_researchers(datetime.now(timezone.utc))
+    for researcher_id in researcher_ids:
+        task_dispatch_workspace_digest.delay(researcher_id)
+    return {"queued": len(researcher_ids), "researcher_ids": researcher_ids}
+
+
+@celery_app.task(
+    bind=True,
+    name="dispatch_workspace_digest",
+    autoretry_for=(Exception,),
+    retry_backoff=True,
+    retry_backoff_max=3600,
+    retry_jitter=True,
+    max_retries=5,
+)
+def task_dispatch_workspace_digest(self, researcher_id: str) -> dict[str, object]:
+    """Deliver one researcher's digest with exponential retry on channel failures."""
+    from med_research.web.config import WORKSPACE_DB_PATH
+    from med_research.web.services.notifications import dispatch_weekly_digest
+    from med_research.web.services.workspace_store import WorkspaceRunStore
+
+    store = WorkspaceRunStore(WORKSPACE_DB_PATH)
+    return dispatch_weekly_digest(
+        store,
+        researcher_id,
+        raise_on_failure=True,
+    )
+
+
 # ── Bioinformatics tasks ────────────────────────────────────────────────────
 
 
@@ -119,12 +196,8 @@ def task_run_gwas(
     self, max_studies: int = 30, no_cache: bool = False, disease_id: str = "sle"
 ):
     """Celery task: Run GWAS catalog annotation with progress updates."""
-    return task_run_module(
-        self,
-        "gwas",
-        disease_id,
-        max_studies=max_studies,
-        no_cache=no_cache,
+    return _dispatch_module(
+        self, "gwas", disease_id, max_studies=max_studies, no_cache=no_cache
     )
 
 
@@ -136,7 +209,7 @@ def task_run_enrichment(
     disease_id: str = "sle",
 ):
     """Celery task: Run pathway enrichment analysis with progress updates."""
-    return task_run_module(
+    return _dispatch_module(
         self,
         "enrichment",
         disease_id,
@@ -150,7 +223,7 @@ def task_run_ppi(
     self, confidence: float = 0.4, no_cache: bool = False, disease_id: str = "sle"
 ):
     """Celery task: Build PPI network and compute hub scores with progress updates."""
-    return task_run_module(
+    return _dispatch_module(
         self,
         "ppi",
         disease_id,
@@ -171,7 +244,7 @@ def task_run_literature(
     disease_id: str = "sle",
 ):
     """Celery task: Mine PubMed for disease articles with progress updates."""
-    return task_run_module(
+    return _dispatch_module(
         self,
         "literature",
         disease_id,
@@ -190,7 +263,7 @@ def task_run_screening(
     disease_id: str = "sle",
 ):
     """Celery task: Run virtual drug screening with progress updates."""
-    return task_run_module(
+    return _dispatch_module(
         self,
         "screening",
         disease_id,
@@ -209,7 +282,7 @@ def task_run_trials(
     disease_id: str = "sle",
 ):
     """Celery task: Track disease-specific clinical trials with progress updates."""
-    return task_run_module(
+    return _dispatch_module(
         self,
         "trials",
         disease_id,
@@ -222,7 +295,7 @@ def task_run_trials(
 @celery_app.task(bind=True, name="run_ml")
 def task_run_ml(self, top_n: int = 15, no_shap: bool = False, disease_id: str = "sle"):
     """Celery task: Run ML target prediction with progress updates."""
-    return task_run_module(
+    return _dispatch_module(
         self,
         "ml",
         disease_id,
@@ -234,7 +307,7 @@ def task_run_ml(self, top_n: int = 15, no_shap: bool = False, disease_id: str = 
 @celery_app.task(bind=True, name="run_synergy")
 def task_run_synergy(self, top_n: int = 20, disease_id: str = "sle"):
     """Celery task: Run drug combination synergy prediction with progress updates."""
-    return task_run_module(
+    return _dispatch_module(
         self,
         "synergy",
         disease_id,
@@ -245,7 +318,7 @@ def task_run_synergy(self, top_n: int = 20, disease_id: str = "sle"):
 @celery_app.task(bind=True, name="run_safety")
 def task_run_safety(self, drug_id: str | None = None, disease_id: str = "sle"):
     """Celery task: Run adverse event safety profiling with progress updates."""
-    return task_run_module(
+    return _dispatch_module(
         self,
         "safety",
         disease_id,
@@ -259,7 +332,7 @@ def task_run_safety(self, drug_id: str | None = None, disease_id: str = "sle"):
 @celery_app.task(bind=True, name="run_knowledge_graph")
 def task_run_knowledge_graph(self, disease_id: str = "sle"):
     """Celery task: Build the disease knowledge graph."""
-    return task_run_module(self, "knowledge_graph", disease_id)
+    return _dispatch_module(self, "knowledge_graph", disease_id)
 
 
 @celery_app.task(bind=True, name="run_drug_repurposing")
@@ -270,7 +343,7 @@ def task_run_drug_repurposing(
     disease_id: str = "sle",
 ):
     """Celery task: Score drug repurposing candidates."""
-    return task_run_module(
+    return _dispatch_module(
         self,
         "drug_repurposing",
         disease_id,
@@ -282,31 +355,31 @@ def task_run_drug_repurposing(
 @celery_app.task(bind=True, name="run_network_pharmacology")
 def task_run_network_pharmacology(self, disease_id: str = "sle"):
     """Celery task: Run network pharmacology analysis."""
-    return task_run_module(self, "network_pharmacology", disease_id)
+    return _dispatch_module(self, "network_pharmacology", disease_id)
 
 
 @celery_app.task(bind=True, name="run_gene_expression")
 def task_run_gene_expression(self, top_n: int = 26, disease_id: str = "sle"):
     """Celery task: Run gene expression correlation analysis."""
-    return task_run_module(self, "gene_expression", disease_id, top_n=top_n)
+    return _dispatch_module(self, "gene_expression", disease_id, top_n=top_n)
 
 
 @celery_app.task(bind=True, name="run_car_t_predictor")
 def task_run_car_t_predictor(self, top_n: int = 35, disease_id: str = "sle"):
     """Celery task: Run CAR-T response prediction."""
-    return task_run_module(self, "car_t_predictor", disease_id, top_n=top_n)
+    return _dispatch_module(self, "car_t_predictor", disease_id, top_n=top_n)
 
 
 @celery_app.task(bind=True, name="run_biomarker_discovery")
 def task_run_biomarker_discovery(self, top_n: int = 35, disease_id: str = "sle"):
     """Celery task: Run biomarker discovery."""
-    return task_run_module(self, "biomarker_discovery", disease_id, top_n=top_n)
+    return _dispatch_module(self, "biomarker_discovery", disease_id, top_n=top_n)
 
 
 @celery_app.task(bind=True, name="run_cross_disease")
 def task_run_cross_disease(self, disease_id: str = "sle"):
     """Celery task: Run cross-disease analysis."""
-    return task_run_module(self, "cross_disease", disease_id)
+    return _dispatch_module(self, "cross_disease", disease_id)
 
 
 @celery_app.task(bind=True, name="run_semantic_search")
@@ -317,7 +390,7 @@ def task_run_semantic_search(
     disease_id: str = "sle",
 ):
     """Celery task: Run semantic literature search."""
-    return task_run_module(
+    return _dispatch_module(
         self,
         "semantic_search",
         disease_id,
@@ -335,7 +408,7 @@ def task_run_evidence_gather(
     use_cache: bool = True,
 ):
     """Celery task: Gather evidence from external sources."""
-    return task_run_module(
+    return _dispatch_module(
         self,
         "evidence_gather",
         disease_id,
@@ -354,7 +427,7 @@ def task_run_llm_extractor(
     use_cache: bool = True,
 ):
     """Celery task: Run LLM evidence extraction."""
-    return task_run_module(
+    return _dispatch_module(
         self,
         "llm_extractor",
         disease_id,
@@ -371,7 +444,7 @@ def task_run_evidence_monitor(
     max_per_query: int = 10,
 ):
     """Celery task: Capture an evidence monitor snapshot."""
-    return task_run_module(
+    return _dispatch_module(
         self,
         "evidence_monitor",
         disease_id,

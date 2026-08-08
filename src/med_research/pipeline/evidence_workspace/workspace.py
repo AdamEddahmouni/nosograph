@@ -2,12 +2,11 @@
 
 from __future__ import annotations
 
-from contextlib import suppress
 from datetime import datetime, timezone
-from typing import Callable
 from uuid import uuid4
 
 from med_research.diseases.base import Disease
+from med_research.pipeline.progress import StandardProgress, _tick
 from med_research.pipeline.provenance import build_provenance, package_version
 
 from .extraction import extract_claims
@@ -21,17 +20,6 @@ from .schemas import (
     normalize_request,
 )
 from .sources import EvidenceSource, default_sources
-
-ProgressCallback = Callable[[int, str], None]
-
-
-def _report(callback: ProgressCallback | None, percent: int, message: str) -> None:
-    """Emit progress without allowing UI/reporting failures to abort research."""
-    if callback is None:
-        return
-    with suppress(Exception):
-        callback(percent, message)
-
 
 REPORTABLE_SOURCE_STEPS = {
     "pubmed": (20, "Searching PubMed evidence"),
@@ -60,25 +48,25 @@ def run_workspace(
     graph=None,
     llm_client=None,
     model: str | None = None,
-    progress_callback: ProgressCallback | None = None,
+    progress_callback: StandardProgress | None = None,
 ) -> EvidenceDossier:
     request = normalize_request(request)
     validate_disease_contract(request.disease_id)
     run_id = f"ew-{uuid4().hex}"
-    _report(progress_callback, 5, "Validating research request")
+    _tick(progress_callback, "validating request", 1, 8)
     started = datetime.now(timezone.utc)
     search_terms = build_search_terms(request)
-    _report(progress_callback, 10, "Building evidence search plan")
+    _tick(progress_callback, "building search plan", 2, 8)
     source_map = sources or default_sources()
     statuses = []
     warnings = []
     records = []
-    for index, source_name in enumerate(request.sources):
-        percent, message = REPORTABLE_SOURCE_STEPS.get(
+    for index, source_name in enumerate(request.sources, 1):
+        _, step_name = REPORTABLE_SOURCE_STEPS.get(
             source_name,
-            (15 + int((index / max(len(request.sources), 1)) * 25), f"Searching {source_name}"),
+            (None, f"searching {source_name}"),
         )
-        _report(progress_callback, percent, message)
+        _tick(progress_callback, step_name, index, len(request.sources))
         source = source_map.get(source_name)
         if source is None:
             statuses.append(
@@ -96,9 +84,9 @@ def run_workspace(
         records.extend(result.records)
         if result.status.warning:
             warnings.append(result.status.warning)
-    _report(progress_callback, 45, "Normalizing and deduplicating evidence")
+    _tick(progress_callback, "deduplicating evidence", 4, 8)
     records = deduplicate_evidence(records)[: request.max_evidence]
-    _report(progress_callback, 55, "Extracting entities and evidence claims")
+    _tick(progress_callback, "extracting claims", 5, 8)
     extraction = extract_claims(records, request.disease_id, request.enable_llm, llm_client, model)
     warnings.extend(extraction.warnings)
     claims = extraction.claims
@@ -108,12 +96,13 @@ def run_workspace(
     target_rankings = (
         rank_targets(records, claims) if request.candidate_type in {"targets", "both"} else []
     )
-    _report(progress_callback, 75, "Ranking candidate drugs and targets")
+    _tick(progress_callback, "ranking candidates", 6, 8)
     graph_candidates = drug_rankings[:10] + target_rankings[:10]
     graph_explanations = build_graph_explanations(graph_candidates, request.disease_id, graph)
     graph_by_candidate = {item.candidate_id: item.explanation_id for item in graph_explanations}
     for ranking in graph_candidates:
         ranking.graph_explanation_ids = [graph_by_candidate[ranking.candidate_id]]
+    _tick(progress_callback, "building dossier", 7, 8)
     completed = datetime.now(timezone.utc)
     try:
         request_dump = request.model_dump(mode="json")
@@ -186,5 +175,5 @@ def run_workspace(
         limitations=limitations,
         manifest={"request": request_dump, **manifest},
     )
-    _report(progress_callback, 100, "Evidence dossier ready")
+    _tick(progress_callback, "evidence dossier ready", 8, 8)
     return dossier

@@ -33,6 +33,7 @@ function renderCoveragePanel(coverage) {
 const activeJobs = {};
 const activeSockets = {};
 let workspaceSubmissionActive = false;
+let workspaceReviews = {};
 
 function setWorkspaceSubmissionState(state) {
     const form = document.getElementById('workspace-form');
@@ -66,11 +67,60 @@ const diseaseCache = { list: null };
 
 // ── API Helpers ──────────────────────────────────────────────────────────
 
+async function loadWorkspaceAuth() {
+    const status = document.getElementById('workspace-auth-status');
+    if (!status) return;
+    try {
+        const session = await apiFetch('/api/auth/me');
+        status.textContent = session.authenticated
+            ? `Signed in as ${session.researcher_id}`
+            : 'Not signed in (sign in to save private reviews)';
+        status.dataset.authenticated = String(session.authenticated);
+    } catch (error) {
+        status.textContent = `Authentication unavailable: ${error.message}`;
+    }
+}
+
+async function loginWorkspaceResearcher() {
+    const status = document.getElementById('workspace-auth-status');
+    try {
+        const response = await apiFetch('/api/auth/login', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                username: document.getElementById('workspace-auth-username')?.value.trim() || '',
+                password: document.getElementById('workspace-auth-password')?.value || '',
+            }),
+        });
+        if (status) status.textContent = `Signed in as ${response.researcher_id}`;
+        const password = document.getElementById('workspace-auth-password');
+        if (password) password.value = '';
+        await Promise.all([loadWorkspaceHistory(), loadWorkspaceNotificationSettings(), loadWorkspaceAlerts()]);
+    } catch (error) {
+        if (status) status.textContent = `Sign-in failed: ${error.message}`;
+    }
+}
+
+async function logoutWorkspaceResearcher() {
+    const status = document.getElementById('workspace-auth-status');
+    try {
+        await apiFetch('/api/auth/logout', { method: 'POST' });
+        if (status) status.textContent = 'Signed out';
+    } catch (error) {
+        if (status) status.textContent = `Sign-out failed: ${error.message}`;
+    }
+}
+
 async function apiFetch(path, options = {}) {
     try {
+        const headers = {
+            'Accept': 'application/json',
+            ...options.headers,
+        };
         const res = await fetch(`${API_BASE}${path}`, {
-            headers: { 'Accept': 'application/json', ...options.headers },
             ...options,
+            credentials: 'same-origin',
+            headers,
         });
         if (!res.ok) {
             const err = await res.json().catch(() => ({ detail: res.statusText }));
@@ -569,6 +619,222 @@ function rankingExplanation(item, claimsById, pathsById) {
     return `<details class="workspace-ranking-explanation"><summary>Why this ranked</summary><div class="workspace-component-scores">${componentRows}</div><div class="workspace-explanation-group">${support || '<span class="workspace-muted">No supporting claims.</span>'}${contradiction || '<span class="workspace-muted">No contradicting claims.</span>'}${graph || '<span class="workspace-muted">No graph explanation available.</span>'}</div></details>`;
 }
 
+function reviewControls(item, candidateType) {
+    const key = `${candidateType}:${item.candidate_id}`;
+    const review = workspaceReviews[key] || {};
+    const tags = (review.tags || []).join(', ');
+    return `<details class="workspace-review-card" data-candidate-id="${escapeHtml(item.candidate_id)}" data-candidate-type="${candidateType}">
+        <summary>📝 Researcher review${review.decision && review.decision !== 'unreviewed' ? ` · ${escapeHtml(review.decision)}` : ''}</summary>
+        <div class="workspace-review-fields">
+            <label>Decision<select data-review-field="decision"><option value="unreviewed" ${review.decision === 'unreviewed' || !review.decision ? 'selected' : ''}>Unreviewed</option><option value="pinned" ${review.decision === 'pinned' ? 'selected' : ''}>📌 Pin candidate</option><option value="rejected" ${review.decision === 'rejected' ? 'selected' : ''}>✕ Reject candidate</option></select></label>
+            <label>Tags<input data-review-field="tags" maxlength="500" value="${escapeHtml(tags)}" placeholder="e.g. validate, safety, follow-up"></label>
+            <label>Rationale<textarea data-review-field="rationale" maxlength="2000" rows="2" placeholder="Why did you make this decision?">${escapeHtml(review.rationale || '')}</textarea></label>
+            <label>Notes<textarea data-review-field="notes" maxlength="5000" rows="2" placeholder="Research notes and next steps">${escapeHtml(review.notes || '')}</textarea></label>
+            <label>What changed my mind?<textarea data-review-field="changed_my_mind" maxlength="3000" rows="2" placeholder="Record the evidence that changed your view">${escapeHtml(review.changed_my_mind || '')}</textarea></label>
+            <div class="workspace-review-actions"><button class="btn btn-secondary btn-sm" type="button" data-workspace-review-save>Save review</button><button class="btn btn-secondary btn-sm" type="button" data-workspace-review-history>Evidence history</button><span class="workspace-review-status" role="status"></span></div>
+            <div class="workspace-review-history" hidden></div>
+        </div>
+    </details>`;
+}
+
+function setupWorkspaceReviewActions() {
+    const result = document.getElementById('workspace-result');
+    if (!result || result.dataset.reviewActionsBound) return;
+    result.dataset.reviewActionsBound = 'true';
+    result.addEventListener('click', event => {
+        const save = event.target.closest('[data-workspace-review-save]');
+        if (save) saveWorkspaceReview(save);
+        const history = event.target.closest('[data-workspace-review-history]');
+        if (history) loadCandidateHistory(history);
+    });
+}
+
+async function loadWorkspaceReviews(runId) {
+    if (!runId) return;
+    try {
+        const data = await apiFetch(`/api/workspace/runs/${encodeURIComponent(runId)}/reviews`);
+        workspaceReviews = Object.fromEntries((data.reviews || []).map(review => [`${review.candidate_type}:${review.candidate_id}`, review]));
+        document.querySelectorAll('.workspace-review-card').forEach(card => {
+            const key = `${card.dataset.candidateType}:${card.dataset.candidateId}`;
+            const review = workspaceReviews[key];
+            if (!review) return;
+            card.querySelector('[data-review-field="decision"]').value = review.decision || 'unreviewed';
+            card.querySelector('[data-review-field="tags"]').value = (review.tags || []).join(', ');
+            card.querySelector('[data-review-field="rationale"]').value = review.rationale || '';
+            card.querySelector('[data-review-field="notes"]').value = review.notes || '';
+            card.querySelector('[data-review-field="changed_my_mind"]').value = review.changed_my_mind || '';
+        });
+    } catch (error) {
+        showToast(`Reviews unavailable: ${error.message}`, 'error');
+    }
+}
+
+async function saveWorkspaceReview(button) {
+    const card = button.closest('.workspace-review-card');
+    const runId = window.lastWorkspaceDossier?.run_id;
+    if (!card || !runId) return;
+    const value = field => card.querySelector(`[data-review-field="${field}"]`)?.value || '';
+    const payload = {
+        candidate_id: card.dataset.candidateId,
+        candidate_type: card.dataset.candidateType,
+        decision: value('decision'),
+        tags: value('tags').split(',').map(tag => tag.trim()).filter(Boolean),
+        rationale: value('rationale'),
+        notes: value('notes'),
+        changed_my_mind: value('changed_my_mind'),
+    };
+    const status = card.querySelector('.workspace-review-status');
+    button.disabled = true;
+    try {
+        const review = await apiFetch(`/api/workspace/runs/${encodeURIComponent(runId)}/reviews`, {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload),
+        });
+        workspaceReviews[`${review.candidate_type}:${review.candidate_id}`] = review;
+        if (status) status.textContent = `Saved with fingerprint ${review.provenance_fingerprint || 'n/a'}`;
+        showToast('Candidate review saved');
+    } catch (error) {
+        if (status) status.textContent = `Save failed: ${error.message}`;
+        showToast(`Could not save review: ${error.message}`, 'error');
+    } finally {
+        button.disabled = false;
+    }
+}
+
+async function loadCandidateHistory(button) {
+    const card = button.closest('.workspace-review-card');
+    const history = card?.querySelector('.workspace-review-history');
+    if (!card || !history) return;
+    try {
+        const params = new URLSearchParams({ candidate_id: card.dataset.candidateId, candidate_type: card.dataset.candidateType, disease_id: window.lastWorkspaceDossier?.request?.disease_id || '' });
+        const data = await apiFetch(`/api/workspace/candidate-history?${params.toString()}`);
+        const points = data.points || [];
+        history.hidden = false;
+        history.innerHTML = points.length ? points.map(point => `<div><strong>${escapeHtml(point.timestamp.slice(0, 10))}</strong> · score ${point.score ?? '—'} · rank ${point.rank ?? '—'} · evidence ${point.evidence_ids.length ? escapeHtml(point.evidence_ids.join(', ')) : 'none'}${point.evidence_added.length ? ` · <span class="delta-up">+${escapeHtml(point.evidence_added.join(', '))}</span>` : ''}${point.evidence_removed.length ? ` · <span class="delta-down">−${escapeHtml(point.evidence_removed.join(', '))}</span>` : ''}</div>`).join('') : '<span class="workspace-muted">No previous runs contain this candidate.</span>';
+    } catch (error) {
+        history.hidden = false;
+        history.innerHTML = `<span class="workspace-muted">History unavailable: ${escapeHtml(error.message)}</span>`;
+    }
+}
+
+function downloadWorkspaceBundle() {
+    const runId = window.lastWorkspaceDossier?.run_id;
+    if (!runId) return;        fetch(`${API_BASE}/api/workspace/runs/${encodeURIComponent(runId)}/review-bundle`, { credentials: 'same-origin', headers: { 'Accept': 'application/zip' } })
+
+        .then(async response => { if (!response.ok) throw new Error((await response.json().catch(() => ({}))).detail || `HTTP ${response.status}`); return response.blob(); })
+        .then(blob => { const url = URL.createObjectURL(blob); const link = document.createElement('a'); link.href = url; link.download = `workspace-${runId}-review.zip`; link.click(); window.setTimeout(() => URL.revokeObjectURL(url), 1000); })
+        .catch(error => showToast(`Could not export review bundle: ${error.message}`, 'error'));
+}
+
+const WORKSPACE_GRAPH_COLORS = {
+    candidate: '#60a5fa',
+    claim: '#c084fc',
+    citation: '#22d3ee',
+    pathway: '#f59e0b',
+    decision: '#4ade80',
+    disease: '#f43f5e',
+    knowledge_graph: '#94a3b8',
+};
+
+let workspaceEvidenceNetwork = null;
+let workspaceEvidenceGraph = null;
+
+function workspaceGraphTitle(node) {
+    const metadata = node.metadata || {};
+    const details = Object.entries(metadata)
+        .filter(([, value]) => value !== null && value !== undefined && value !== '' && !Array.isArray(value))
+        .slice(0, 5)
+        .map(([key, value]) => `${key}: ${value}`)
+        .join(' · ');
+    return `${node.label}${node.subtitle ? `\n${node.subtitle}` : ''}${details ? `\n${details}` : ''}`;
+}
+
+function showWorkspaceGraphDetail(nodeId) {
+    const detail = document.getElementById('workspace-graph-detail');
+    const node = (workspaceEvidenceGraph?.nodes || []).find(item => item.id === nodeId);
+    if (!detail || !node) return;
+    const color = WORKSPACE_GRAPH_COLORS[node.type] || '#94a3b8';
+    const metadata = Object.entries(node.metadata || {})
+        .filter(([, value]) => value !== null && value !== undefined && value !== '' && !Array.isArray(value))
+        .slice(0, 12)
+        .map(([key, value]) => `<dt>${escapeHtml(key.replaceAll('_', ' '))}</dt><dd>${escapeHtml(String(value))}</dd>`)
+        .join('');
+    const link = safeCitationUrl(node.url) ? `<p><a href="${escapeHtml(safeCitationUrl(node.url))}" target="_blank" rel="noopener noreferrer">Open source citation ↗</a></p>` : '';
+    detail.innerHTML = `<h4>${escapeHtml(node.label)}</h4><span class="graph-type" style="background:${color}">${escapeHtml(node.type.replaceAll('_', ' '))}</span>${node.subtitle ? `<p>${escapeHtml(node.subtitle)}</p>` : ''}${node.description ? `<p>${escapeHtml(node.description)}</p>` : ''}${link}${metadata ? `<dl>${metadata}</dl>` : ''}`;
+}
+
+function renderWorkspaceEvidenceGraph(data) {
+    const canvas = document.getElementById('workspace-graph-canvas');
+    const status = document.getElementById('workspace-graph-status');
+    if (!canvas || !status) return;
+    workspaceEvidenceGraph = data;
+    if (typeof vis === 'undefined') {
+        status.textContent = 'Evidence graph unavailable: vis-network library not loaded.';
+        canvas.innerHTML = '';
+        return;
+    }
+    const nodes = new vis.DataSet((data.nodes || []).map(node => {
+        const color = WORKSPACE_GRAPH_COLORS[node.type] || '#94a3b8';
+        return {
+            id: node.id,
+            label: String(node.label || node.id).slice(0, 46),
+            title: workspaceGraphTitle(node),
+            shape: node.type === 'candidate' ? 'box' : node.type === 'pathway' ? 'diamond' : node.type === 'decision' ? 'star' : node.type === 'disease' ? 'hexagon' : 'dot',
+            size: node.type === 'candidate' ? 24 : node.type === 'decision' ? 21 : 15,
+            color: { background: color, border: color, highlight: { background: '#ffffff', border: '#ffffff' } },
+            font: { color: '#e0e0e8', size: node.type === 'candidate' ? 13 : 11 },
+        };
+    }));
+    const edges = new vis.DataSet((data.edges || []).map(edge => ({
+        id: edge.id,
+        from: edge.source,
+        to: edge.target,
+        label: edge.label || edge.type,
+        title: edge.label || edge.type,
+        arrows: { to: { enabled: true, scaleFactor: 0.45 } },
+        color: { color: edge.type === 'contradicts' ? '#f87171' : edge.type === 'supports' ? '#4ade80' : '#64748b', opacity: 0.65 },
+        dashes: ['evidence', 'citation'].includes(edge.type),
+        width: edge.type === 'supports' || edge.type === 'contradicts' ? 2 : 1,
+        font: { color: '#9ca3af', size: 9, strokeWidth: 0 },
+        smooth: { type: 'continuous' },
+    })));
+    workspaceEvidenceNetwork?.destroy();
+    workspaceEvidenceNetwork = new vis.Network(canvas, { nodes, edges }, {
+        physics: { enabled: true, solver: 'forceAtlas2Based', forceAtlas2Based: { gravitationalConstant: -55, centralGravity: 0.015, springLength: 145, springConstant: 0.05, damping: 0.55 }, stabilization: { iterations: 220 } },
+        interaction: { hover: true, tooltipDelay: 120, navigationButtons: false, keyboard: true },
+        nodes: { borderWidth: 1.5, shadow: false },
+        edges: { selectionWidth: 2 },
+        layout: { improvedLayout: false },
+    });
+    workspaceEvidenceNetwork.on('click', params => {
+        if (params.nodes?.length) showWorkspaceGraphDetail(params.nodes[0]);
+    });
+    status.textContent = `${data.nodes?.length || 0} nodes · ${data.edges?.length || 0} connections · researcher ${data.researcher_id || 'anonymous'}`;
+    const detail = document.getElementById('workspace-graph-detail');
+    if (detail) detail.innerHTML = '<span class="workspace-muted">Select a node to inspect its evidence or review metadata.</span>';
+}
+
+async function loadWorkspaceEvidenceGraph(runId) {
+    const status = document.getElementById('workspace-graph-status');
+    if (!status || !runId) return;
+    status.textContent = 'Loading evidence graph…';
+    try {
+        const data = await apiFetch(`/api/workspace/runs/${encodeURIComponent(runId)}/graph`);
+        renderWorkspaceEvidenceGraph(data);
+    } catch (error) {
+        status.textContent = `Evidence graph unavailable: ${error.message}`;
+    }
+}
+
+function fitWorkspaceEvidenceGraph() {
+    workspaceEvidenceNetwork?.fit({ animation: { duration: 500, easingFunction: 'easeInOutQuad' } });
+}
+
+function reloadWorkspaceEvidenceGraph() {
+    loadWorkspaceEvidenceGraph(window.lastWorkspaceDossier?.run_id);
+}
+
 function renderWorkspaceResult(el, payload) {
     const dossier = payload?.dossier || payload || {};
     const drugs = dossier.drug_rankings || [];
@@ -583,9 +849,9 @@ function renderWorkspaceResult(el, payload) {
     const sourceStatus = (dossier.source_statuses || []).map(item => `<span class="workspace-source-status ${escapeHtml(item.status)}"><strong>${escapeHtml(workspaceSourceLabel(item.source))}</strong>: ${escapeHtml(item.status)} · ${Number(item.records_found || 0)} records · ${escapeHtml(item.retrieval_mode || 'unknown')}${item.warning ? ` · ${escapeHtml(item.warning)}` : ''}</span>`).join('');
     const qualitySummary = evidence.reduce((summary, item) => { const tier = item.quality_tier || 'tier_3'; summary[tier] = (summary[tier] || 0) + 1; summary.totalScore += Number(item.quality_score || 0); summary.total += 1; return summary; }, { totalScore: 0, total: 0 });
     const qualityAverage = qualitySummary.total ? (qualitySummary.totalScore / qualitySummary.total).toFixed(2) : '—';
-    const rankingRows = (items, emptyText) => items.length ? items.slice(0, 6).map(item => `
+    const rankingRows = (items, emptyText, candidateType) => items.length ? items.slice(0, 6).map(item => `
         <div class="workspace-ranking-row">
-            <div><strong>${escapeHtml(item.name)}</strong><small>${escapeHtml(item.explanation || '')}</small><small>Support: ${(item.supporting_claim_ids || []).length} · Contradictions: ${(item.contradicting_claim_ids || []).length} · quality ${Number(item.component_scores?.evidence_quality || 0).toFixed(1)} points</small>${rankingExplanation(item, claimsById, pathsById)}</div>
+            <div><strong>${escapeHtml(item.name)}</strong><small>${escapeHtml(item.explanation || '')}</small><small>Support: ${(item.supporting_claim_ids || []).length} · Contradictions: ${(item.contradicting_claim_ids || []).length} · quality ${Number(item.component_scores?.evidence_quality || 0).toFixed(1)} points</small>${rankingExplanation(item, claimsById, pathsById)}${reviewControls(item, candidateType)}</div>
             <span class="workspace-score">${Number(item.score || 0).toFixed(1)}<small>${escapeHtml(item.confidence_band || '')}</small></span>
         </div>`).join('') : `<p class="workspace-muted">${emptyText}</p>`;
     const claimRows = claims.slice(0, 8).map(claim => `
@@ -597,12 +863,12 @@ function renderWorkspaceResult(el, payload) {
     const sourceLabels = (request.sources || []).map(workspaceSourceLabel).join(', ') || 'not recorded';
     el.innerHTML = `
         <div class="workspace-result-head"><div><strong>✅ Dossier ready</strong><small>${escapeHtml(dossier.run_id || '')} · ${evidence.length} evidence · ${claims.length} claims</small></div><div class="workspace-export-links"><button class="btn btn-secondary btn-sm" type="button" onclick="downloadWorkspaceJson()">⬇ JSON</button>
-<button class="btn btn-secondary btn-sm" type="button" onclick="openWorkspaceHtml()">📄 HTML</button></div></div>
+<button class="btn btn-secondary btn-sm" type="button" onclick="openWorkspaceHtml()">📄 HTML</button><button class="btn btn-secondary btn-sm" type="button" onclick="downloadWorkspaceBundle()">📦 Review bundle</button></div></div>
         <div class="workspace-summary-grid"><div><b>${drugs.length}</b><span>drug candidates</span></div><div><b>${targets.length}</b><span>target candidates</span></div><div><b>${evidence.length}</b><span>evidence records</span></div><div><b>${warningCount}</b><span>warnings</span></div></div>
         <div class="workspace-provenance"><strong>Reproducibility</strong><span>Fingerprint: <code>${escapeHtml(provenance.fingerprint || 'not available')}</code></span><span>Research question: ${escapeHtml(request.question || 'not recorded')}</span><span>Sources: ${escapeHtml(sourceLabels)}</span><span>Disease: ${escapeHtml(request.disease_id || 'not recorded')}</span><span>Mode: ${escapeHtml(provenance.cache_or_live || dossier.manifest?.cache_or_live || 'unknown')}</span><button class="btn btn-secondary btn-sm" type="button" onclick="copyWorkspaceFingerprint()">Copy fingerprint</button></div>
         <div class="workspace-source-statuses">${sourceStatus || '<span class="workspace-muted">No source status available.</span>'}</div>
         <div class="workspace-quality-summary"><strong>Evidence quality:</strong> ${Object.entries(qualitySummary).filter(([key]) => !['totalScore', 'total'].includes(key)).map(([tier, count]) => `<span>${escapeHtml(tier.replace('_', ' '))}: ${count}</span>`).join('') || '<span>not classified</span>'}<span>average score: ${qualityAverage}</span></div>
-        <div class="workspace-result-columns"><section><h4>💊 Prioritized drugs</h4>${rankingRows(drugs, 'No drug ranking available.')}</section><section><h4>🧬 Prioritized targets</h4>${rankingRows(targets, 'No target ranking available.')}</section></div>
+        <div class="workspace-result-columns"><section><h4>💊 Prioritized drugs</h4>${rankingRows(drugs, 'No drug ranking available.', 'drug')}</section><section><h4>🧬 Prioritized targets</h4>${rankingRows(targets, 'No target ranking available.', 'target')}</section></div>
         <details><summary>Claims, citations, and confidence (${claims.length})</summary><div class="workspace-claims">${claimRows || '<p class="workspace-muted">No claims extracted.</p>'}</div></details>
         <details><summary>Knowledge-graph explanations (${paths.length})</summary><div class="workspace-claims">${pathRows || '<p class="workspace-muted">No graph explanations available.</p>'}</div></details>
         ${warningRows ? `<details><summary>Warnings (${warningCount})</summary><ul class="workspace-notices">${warningRows}</ul></details>` : ''}
@@ -611,6 +877,10 @@ function renderWorkspaceResult(el, payload) {
     el.className = 'workspace-result visible success';
     window.lastWorkspaceDossier = dossier;
     window.lastWorkspaceHtml = payload?.html || '';
+    setupWorkspaceReviewActions();
+    loadWorkspaceReviews(dossier.run_id);
+    loadWorkspaceEvidenceGraph(dossier.run_id);
+    loadWorkspaceAlerts();
 }
 
 function copyWorkspaceFingerprint() {
@@ -705,6 +975,156 @@ function renderWorkspaceTrends() {
     metrics.innerHTML = runs.map(run => `<span><b>${run.evidence_count}</b> evidence · <b>${run.claim_count}</b> claims · <b>${run.warning_count}</b> warnings · ${escapeHtml(run.timestamp.slice(0, 10))}</span>`).join('');
 }
 
+function renderWorkspaceDeliveryStatus(delivery, digestDelivery = {}) {
+    const render = (status, entries, emptyText) => {
+        if (!status) return;
+        const values = Object.entries(entries || {});
+        if (!values.length) {
+            status.textContent = emptyText;
+            return;
+        }
+        status.textContent = values.map(([channel, value]) => {
+            const label = value.status === 'delivered' ? 'delivered' : `failed (${value.attempts || 0})`;
+            return `${channel}: ${label}`;
+        }).join(' · ');
+        status.title = values.map(([channel, value]) => `${channel}: ${value.error || value.delivered_at || 'no details'}`).join('\n');
+    };
+    render(document.getElementById('workspace-alert-delivery-status'), delivery, 'No alert delivery attempts yet.');
+    render(document.getElementById('workspace-digest-delivery-status'), digestDelivery, 'No digest delivery attempts yet.');
+}
+
+async function loadWorkspaceNotificationSettings() {
+    const email = document.getElementById('workspace-alert-email');
+    const emailEnabled = document.getElementById('workspace-alert-email-enabled');
+    const slackEnabled = document.getElementById('workspace-alert-slack-enabled');
+    const scoreThreshold = document.getElementById('workspace-alert-score-threshold');
+    const rankThreshold = document.getElementById('workspace-alert-rank-threshold');
+    const qualityThreshold = document.getElementById('workspace-alert-quality-threshold');
+    const digestEnabled = document.getElementById('workspace-weekly-digest-enabled');
+    const digestWeekday = document.getElementById('workspace-digest-weekday');
+    const digestTime = document.getElementById('workspace-digest-time');
+    const digestTimezone = document.getElementById('workspace-digest-timezone');
+    const status = document.getElementById('workspace-alert-settings-status');
+    if (!email || !status) return;
+    try {
+        const settings = await apiFetch('/api/workspace/notifications');
+        email.value = settings.email || '';
+        if (emailEnabled) emailEnabled.checked = settings.email_enabled !== false;
+        if (slackEnabled) slackEnabled.checked = settings.slack_enabled !== false;
+        if (scoreThreshold) scoreThreshold.value = settings.score_drop_threshold ?? 0;
+        if (rankThreshold) rankThreshold.value = settings.rank_change_threshold ?? 0;
+        if (qualityThreshold) qualityThreshold.value = settings.evidence_quality_change_threshold ?? 0;
+        if (digestEnabled) digestEnabled.checked = settings.weekly_digest_enabled === true;
+        if (digestWeekday) digestWeekday.value = settings.weekly_digest_weekday ?? 0;
+        if (digestTime) digestTime.value = `${String(settings.weekly_digest_hour ?? 9).padStart(2, '0')}:${String(settings.weekly_digest_minute ?? 0).padStart(2, '0')}`;
+        if (digestTimezone) digestTimezone.value = settings.weekly_digest_timezone || 'UTC';
+        status.textContent = settings.slack_configured ? 'Slack webhook configured.' : 'No Slack webhook configured.';
+        renderWorkspaceDeliveryStatus(settings.delivery, settings.digest_delivery);
+    } catch (error) {
+        status.textContent = `Notification settings unavailable: ${error.message}`;
+    }
+}
+
+async function saveWorkspaceNotificationSettings() {
+    const status = document.getElementById('workspace-alert-settings-status');
+    try {
+        const payload = {
+            email: document.getElementById('workspace-alert-email')?.value.trim() || '',
+            email_enabled: document.getElementById('workspace-alert-email-enabled')?.checked !== false,
+            slack_webhook_url: document.getElementById('workspace-alert-slack')?.value.trim() || '',
+            slack_enabled: document.getElementById('workspace-alert-slack-enabled')?.checked !== false,
+            score_drop_threshold: Number(document.getElementById('workspace-alert-score-threshold')?.value || 0),
+            rank_change_threshold: Number(document.getElementById('workspace-alert-rank-threshold')?.value || 0),
+            evidence_quality_change_threshold: Number(document.getElementById('workspace-alert-quality-threshold')?.value || 0),
+            weekly_digest_enabled: document.getElementById('workspace-weekly-digest-enabled')?.checked === true,
+            weekly_digest_weekday: Number(document.getElementById('workspace-digest-weekday')?.value || 0),
+            weekly_digest_hour: Number((document.getElementById('workspace-digest-time')?.value || '09:00').split(':')[0]),
+            weekly_digest_minute: Number((document.getElementById('workspace-digest-time')?.value || '09:00').split(':')[1]),
+            weekly_digest_timezone: document.getElementById('workspace-digest-timezone')?.value.trim() || 'UTC',
+        };
+        const settings = await apiFetch('/api/workspace/notifications', {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload),
+        });
+        if (status) status.textContent = settings.slack_configured ? 'Notification settings saved; Slack configured.' : 'Notification settings saved.';
+        renderWorkspaceDeliveryStatus(settings.delivery, settings.digest_delivery);
+        const thresholdSummary = `Thresholds: score drop ${settings.score_drop_threshold ?? 0}, rank movement ${settings.rank_change_threshold ?? 0}, quality change ${settings.evidence_quality_change_threshold ?? 0}`;
+        if (status) status.textContent += ` ${thresholdSummary}.`;
+        const slack = document.getElementById('workspace-alert-slack');
+        if (slack) slack.value = '';
+        await loadWorkspaceAlerts();
+    } catch (error) {
+        if (status) status.textContent = `Could not save notification settings: ${error.message}`;
+    }
+}
+
+function renderWorkspaceDigest(digest) {
+    const preview = document.getElementById('workspace-digest-preview');
+    if (!preview) return;
+    preview.hidden = false;
+    preview.textContent = digest.markdown || 'No digest content available.';
+}
+
+async function previewWorkspaceDigest() {
+    const status = document.getElementById('workspace-alert-settings-status');
+    try {
+        const digest = await apiFetch('/api/workspace/digest');
+        renderWorkspaceDigest(digest);
+        if (status) status.textContent = `Digest preview: ${digest.new_evidence_count} new evidence, ${digest.unresolved_reminder_count} unresolved reminders, ${digest.changed_decision_count} changed decisions.`;
+    } catch (error) {
+        if (status) status.textContent = `Digest preview unavailable: ${error.message}`;
+    }
+}
+
+async function sendWorkspaceDigest() {
+    const status = document.getElementById('workspace-alert-settings-status');
+    try {
+        const digest = await apiFetch('/api/workspace/digest/send?force=true', { method: 'POST' });
+        renderWorkspaceDigest(digest);
+        if (status) status.textContent = `Digest sent: ${digest.email_delivered || 0} email, ${digest.slack_delivered || 0} Slack.`;
+        await loadWorkspaceNotificationSettings();
+    } catch (error) {
+        if (status) status.textContent = `Could not send digest: ${error.message}`;
+    }
+}
+
+async function loadWorkspaceAlerts() {
+    const list = document.getElementById('workspace-alert-list');
+    const count = document.getElementById('workspace-alert-count');
+    if (!list) return;
+    try {
+        const data = await apiFetch('/api/workspace/alerts?limit=20');
+        if (count) count.textContent = data.unread_count ? String(data.unread_count) : '';
+        const alerts = data.alerts || [];
+        list.innerHTML = alerts.length ? alerts.map(alert => {
+            const added = (alert.evidence_added || []).join(', ') || 'new evidence';
+            const metricParts = [];
+            if (alert.previous_score != null && alert.current_score != null) metricParts.push(`score ${Number(alert.previous_score).toFixed(1)} → ${Number(alert.current_score).toFixed(1)}`);
+            if (alert.rank_change) metricParts.push(`rank moved ${alert.rank_change}`);
+            if (alert.quality_change != null) metricParts.push(`quality ${Number(alert.quality_change).toFixed(2)}`);
+            const delta = metricParts.length ? ` · ${metricParts.join(' · ')}` : '';
+            return `<div class="workspace-alert-row ${alert.read_at ? '' : 'unread'}"><div><strong>${escapeHtml(alert.title)}</strong><small>${escapeHtml(alert.message)} · added: ${escapeHtml(added)}${delta}</small><small>${escapeHtml(alert.created_at || '')} · trigger run ${escapeHtml(alert.trigger_run_id)}</small></div><div><button class="btn btn-secondary btn-sm" type="button" onclick="openWorkspaceAlert('${escapeHtml(alert.alert_id)}','${escapeHtml(alert.trigger_run_id)}')">Review</button>${alert.read_at ? '' : `<button class="btn btn-secondary btn-sm" type="button" onclick="markWorkspaceAlertRead('${escapeHtml(alert.alert_id)}')">Dismiss</button>`}</div></div>`;
+        }).join('') : '<span class="workspace-muted">No new evidence requires review.</span>';
+    } catch (error) {
+        list.innerHTML = `<span class="workspace-muted">Alerts unavailable: ${escapeHtml(error.message)}</span>`;
+    }
+}
+
+async function markWorkspaceAlertRead(alertId) {
+    try {
+        await apiFetch(`/api/workspace/alerts/${encodeURIComponent(alertId)}/read`, { method: 'POST' });
+        await loadWorkspaceAlerts();
+    } catch (error) {
+        showToast(`Could not dismiss alert: ${error.message}`, 'error');
+    }
+}
+
+async function openWorkspaceAlert(alertId, runId) {
+    await markWorkspaceAlertRead(alertId);
+    await openWorkspaceRun(runId);
+}
+
 async function loadWorkspaceHistory() {
     const list = document.getElementById('workspace-history-list');
     if (!list) return;
@@ -769,7 +1189,8 @@ async function compareWorkspaceRuns() {
     try {
         const data = await apiFetch(`/api/workspace/compare?left=${encodeURIComponent(selected[0])}&right=${encodeURIComponent(selected[1])}`);
         const rows = [...(data.drug_changes || []).map(item => ({ ...item, type: 'Drug' })), ...(data.target_changes || []).map(item => ({ ...item, type: 'Target' }))];
-        compare.innerHTML = `<h4>Run comparison</h4><p class="workspace-muted">${escapeHtml(data.left_run_id)} → ${escapeHtml(data.right_run_id)}</p>${rows.map(item => `<div class="workspace-compare-row"><span>${escapeHtml(item.type)} · <strong>${escapeHtml(item.name)}</strong></span><span>${item.left_score ?? '—'} → ${item.right_score ?? '—'} <b class="${(item.score_delta || 0) >= 0 ? 'delta-up' : 'delta-down'}">${item.score_delta == null ? item.change : ((item.score_delta >= 0 ? '+' : '') + item.score_delta.toFixed(1))}</b></span></div>`).join('')}`;
+        const reviewRows = (data.review_changes || []).map(item => `<div class="workspace-compare-row"><span>${escapeHtml(item.candidate_type)} · <strong>${escapeHtml(item.candidate_name || item.candidate_id)}</strong></span><span>${escapeHtml(item.left?.decision || 'unreviewed')} → ${escapeHtml(item.right?.decision || 'unreviewed')}</span></div>`).join('');
+        compare.innerHTML = `<h4>Run comparison</h4><p class="workspace-muted">${escapeHtml(data.left_run_id)} → ${escapeHtml(data.right_run_id)}</p>${rows.map(item => `<div class="workspace-compare-row"><span>${escapeHtml(item.type)} · <strong>${escapeHtml(item.name)}</strong></span><span>${item.left_score ?? '—'} → ${item.right_score ?? '—'} <b class="${(item.score_delta || 0) >= 0 ? 'delta-up' : 'delta-down'}">${item.score_delta == null ? item.change : ((item.score_delta >= 0 ? '+' : '') + item.score_delta.toFixed(1))}</b></span></div>`).join('')}${reviewRows ? `<h5>Researcher review changes</h5>${reviewRows}` : ''}`;
     } catch (error) {
         compare.innerHTML = `<p class="workspace-muted">Comparison unavailable: ${escapeHtml(error.message)}</p>`;
     }
@@ -2223,15 +2644,21 @@ async function loadDiseaseSelector() {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
+    const linkedParams = new URLSearchParams(window.location.search);
     await loadDiseaseSelector();
     updateDiseaseDisplay();
     checkAPIStatus();
     loadPlatformStats();
     initKGExplorer();
     loadExportGrid();
+    loadWorkspaceAuth();
     loadWorkspaceHistory();
     loadWorkspaceTrends();
+    loadWorkspaceNotificationSettings();
+    loadWorkspaceAlerts();
+    if (linkedParams.get('digest_key')) window.setTimeout(previewWorkspaceDigest, 250);
 
     setInterval(checkAPIStatus, 30000);
     setInterval(loadPlatformStats, 60000);
+    setInterval(loadWorkspaceAlerts, 60000);
 });

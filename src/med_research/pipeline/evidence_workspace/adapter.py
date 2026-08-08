@@ -6,6 +6,7 @@ from pathlib import Path
 from typing import Any
 
 from med_research.pipeline.base import BasePipelineModule
+from med_research.pipeline.evidence_workspace.schemas import EvidenceDossier, ResearchRequest
 from med_research.pipeline.provenance import build_provenance
 from med_research.pipeline.registry import register_module
 
@@ -17,11 +18,10 @@ def _default_question(disease_id: str) -> str:
     return f"Treatment targets for {disease.profile.name}"
 
 
-def _research_request(disease_id: str, **opts: Any):
-    from med_research.pipeline.evidence_workspace.schemas import ResearchRequest
-
-    if isinstance(opts.get("request"), ResearchRequest):
-        return opts["request"]
+def _research_request(disease_id: str, **opts: Any) -> ResearchRequest:
+    request = opts.get("request")
+    if isinstance(request, ResearchRequest):
+        return request
 
     request_fields = set(ResearchRequest.model_fields)
     request_kwargs = {
@@ -49,7 +49,7 @@ class EvidenceWorkspaceModule(BasePipelineModule):
     def coverage_inputs(self) -> tuple[str, ...]:
         return ()
 
-    def run(self, disease_id: str, **opts: Any):
+    def run(self, disease_id: str, **opts: Any) -> EvidenceDossier:
         from med_research.pipeline.evidence_workspace.workspace import run_workspace
 
         request = _research_request(disease_id, **opts)
@@ -64,7 +64,7 @@ class EvidenceWorkspaceModule(BasePipelineModule):
 
     def report(
         self,
-        results,
+        results: EvidenceDossier,
         disease_id: str,
         *,
         provenance: dict | None = None,
