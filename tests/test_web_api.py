@@ -20,6 +20,8 @@ from starlette.websockets import WebSocketDisconnect
 
 from med_research.web.main import app
 
+pytestmark = pytest.mark.integration
+
 # ── Redis availability check ────────────────────────────────────────────────
 
 
@@ -491,21 +493,19 @@ class TestRepurposeGene:
 # ── Bioinformatics Endpoints ────────────────────────────────────────────────
 
 
+@pytest.mark.integration
 class TestBioGWAS:
     """Tests for GET /api/bioinformatics/gwas (uses cache)."""
 
-    @pytest.mark.slow
     def test_returns_200(self, client):
         resp = client.get("/api/bioinformatics/gwas?max_studies=5")
         assert resp.status_code == 200
 
-    @pytest.mark.slow
     def test_has_required_keys(self, client):
         data = client.get("/api/bioinformatics/gwas?max_studies=5").json()
         for key in ["total_studies", "total_associations", "unique_genes", "crossref", "top_hits"]:
             assert key in data, f"Missing key: {key}"
 
-    @pytest.mark.slow
     def test_crossref_has_validated(self, client):
         crossref = client.get("/api/bioinformatics/gwas?max_studies=5").json()["crossref"]
         assert "validated" in crossref
@@ -515,78 +515,68 @@ class TestBioGWAS:
         assert "n_novel" in crossref
         assert "n_missing" in crossref
 
-    @pytest.mark.slow
     def test_top_hits_are_list(self, client):
         top_hits = client.get("/api/bioinformatics/gwas?max_studies=5").json()["top_hits"]
         assert isinstance(top_hits, list)
 
 
+@pytest.mark.integration
 class TestBioEnrichment:
     """Tests for GET /api/bioinformatics/enrichment (uses cache)."""
 
-    @pytest.mark.slow
     def test_returns_200(self, client):
         resp = client.get("/api/bioinformatics/enrichment")
         assert resp.status_code == 200
 
-    @pytest.mark.slow
     def test_has_required_keys(self, client):
         data = client.get("/api/bioinformatics/enrichment").json()
         for key in ["genes_analyzed", "gene_list", "libraries"]:
             assert key in data, f"Missing key: {key}"
 
-    @pytest.mark.slow
     def test_gene_list_is_list_of_strings(self, client):
         gene_list = client.get("/api/bioinformatics/enrichment").json()["gene_list"]
         assert isinstance(gene_list, list)
         assert len(gene_list) >= 5
         assert all(isinstance(g, str) for g in gene_list)
 
-    @pytest.mark.slow
     def test_libraries_are_list(self, client):
         libraries = client.get("/api/bioinformatics/enrichment").json()["libraries"]
         assert isinstance(libraries, list)
         assert len(libraries) >= 1
 
-    @pytest.mark.slow
     def test_library_has_terms(self, client):
         library = client.get("/api/bioinformatics/enrichment").json()["libraries"][0]
         assert "library" in library
         assert "terms" in library
 
 
+@pytest.mark.integration
 class TestBioPPI:
     """Tests for GET /api/bioinformatics/ppi (uses cache)."""
 
-    @pytest.mark.slow
     def test_returns_200(self, client):
         resp = client.get("/api/bioinformatics/ppi")
         assert resp.status_code == 200
 
-    @pytest.mark.slow
     def test_has_required_keys(self, client):
         data = client.get("/api/bioinformatics/ppi").json()
         for key in ["nodes", "edges", "seed_genes", "confidence", "top_hubs"]:
             assert key in data, f"Missing key: {key}"
 
-    @pytest.mark.slow
     def test_top_hubs_are_list(self, client):
         hubs = client.get("/api/bioinformatics/ppi").json()["top_hubs"]
         assert isinstance(hubs, list)
 
-    @pytest.mark.slow
     def test_hub_has_required_fields(self, client):
         hubs = client.get("/api/bioinformatics/ppi").json()["top_hubs"]
         if hubs:
             for field in ["symbol", "hub_score", "degree", "is_lupus_gene"]:
                 assert field in hubs[0], f"Missing field: {field}"
 
-    @pytest.mark.slow
     def test_confidence_passed_through(self, client):
         data = client.get("/api/bioinformatics/ppi?confidence=0.7").json()
         assert data["confidence"] == 0.7
 
-    @pytest.mark.slow
     def test_invalid_confidence_validation(self, client):
         resp = client.get("/api/bioinformatics/ppi?confidence=1.5")
         assert resp.status_code == 422

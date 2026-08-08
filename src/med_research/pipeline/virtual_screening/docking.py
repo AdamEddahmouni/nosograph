@@ -32,6 +32,8 @@ import subprocess
 import sys
 from pathlib import Path
 
+from med_research.exceptions import classify_api_error
+
 logger = logging.getLogger(__name__)
 PROJECT_ROOT = Path(__file__).parent.parent
 TARGETS_DIR = Path(__file__).parent / "targets"
@@ -180,7 +182,8 @@ def _fetch_pdb(pdb_id: str, output_path: Path) -> bool:
             output_path.write_bytes(resp.read())
         return True
     except (urllib.error.HTTPError, urllib.error.URLError, OSError) as e:
-        logger.info(f"   ⚠️  PDB download failed ({pdb_id}): {e}")
+        err = classify_api_error(e, f"PDB download for {pdb_id}")
+        logger.info(f"   ⚠️  {err}")
         return False
 
 
@@ -210,7 +213,7 @@ def _clean_receptor(pdb_path: Path, cleaned_path: Path, chain: str = "A") -> boo
         io.set_structure(structure)
         io.save(str(cleaned_path), _CleanSelect(chain))
         return True
-    except Exception as e:
+    except (OSError, ValueError, KeyError, ImportError) as e:
         logger.info(f"   ⚠️  Receptor cleaning failed: {e}")
         return False
 
@@ -278,7 +281,7 @@ def prepare_receptor(gene_id: str, config: dict, force: bool = False) -> str | N
                 if not success:
                     logger.info(f"   ⚠️  Meeko PDBQT conversion failed for {gene_id}")
                     return None
-            except Exception as e:
+            except (ImportError, OSError, RuntimeError, ValueError) as e:
                 logger.info(f"   ⚠️  Meeko receptor prep error ({gene_id}): {e}")
                 return None
         else:
@@ -322,7 +325,7 @@ def _smiles_to_3d_mol(smiles: str):
 
         AllChem.MMFFOptimizeMolecule(mol)
         return mol
-    except Exception:
+    except (ImportError, ValueError, RuntimeError):
         return None
 
 
@@ -382,7 +385,7 @@ def prepare_ligand(
 
         pdbqt_path.write_text(pdbqt_string, encoding="utf-8")
         return str(pdbqt_path)
-    except Exception as e:
+    except (ImportError, OSError, RuntimeError, ValueError) as e:
         logger.info(f"   ⚠️  Ligand prep error ({drug_id}): {e}")
         return None
 
@@ -474,7 +477,7 @@ def run_vina_docking(
         return {"error": "Vina timed out", "best_score": None}
     except FileNotFoundError:
         return {"error": f"Vina binary not found at {vina_bin}", "best_score": None}
-    except Exception as e:
+    except (OSError, subprocess.SubprocessError) as e:
         return {"error": str(e), "best_score": None}
 
 
@@ -733,7 +736,7 @@ class DockingEngine:
                     try:
                         drug_id, vina_result = future.result()
                         results[drug_id] = vina_result
-                    except Exception as e:
+                    except (RuntimeError, OSError, ValueError) as e:
                         lid = futures[future]
                         results[lid] = {"error": str(e), "best_score": None}
         else:

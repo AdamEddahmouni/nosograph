@@ -24,6 +24,8 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 import logging
 
+from med_research.cache import NS_ENRICHMENT, cache_get, cache_set, load_legacy_json
+from med_research.exceptions import ExternalAPIError, classify_api_error
 from med_research.pipeline.knowledge_graph.config import load_genes, load_pathways
 
 logger = logging.getLogger(__name__)
@@ -31,6 +33,7 @@ if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 DATA_DIR = Path(__file__).parent / "data"
+LEGACY_ENRICHMENT_CACHE = DATA_DIR / "enrichment_cache.json"
 DR_DATA_DIR = Path(__file__).parent.parent / "drug_repurposing" / "data"
 
 # ── GSEApy import ────────────────────────────────────────────────────────
@@ -127,6 +130,18 @@ def get_disease_gene_list(
     return disease_genes
 
 
+def load_disease_gene_list(
+    disease_id: str = "sle",
+    untargeted_only: bool = False,
+) -> list:
+    """Load the active disease's analyzable gene list from the knowledge graph."""
+    genes = load_kg_genes(disease_id)
+    graph = load_kg_graph(disease_id) if untargeted_only else None
+    return get_disease_gene_list(
+        genes, graph, untargeted_only=untargeted_only, disease_id=disease_id
+    )
+
+
 def run_enrichment(
     gene_list: list,
     libraries: list = None,
@@ -154,24 +169,31 @@ def run_enrichment(
 
     symbols = [g["symbol"] for g in gene_list if g["symbol"]]
     cache_key = ",".join(sorted(symbols))
+    libraries_key = json.dumps(libraries, sort_keys=True)
+    cache_lookup_key = f"{cache_key}|||{libraries_key}|||{top_n}"
 
-    # Check cache
-    cache_path = DATA_DIR / "enrichment_cache.json"
-    if use_cache and cache_path.exists():
-        try:
-            cached = json.loads(cache_path.read_text(encoding="utf-8"))
-            if (
-                cached.get("cache_key") == cache_key
-                and cached.get("libraries") == libraries
-                and cached.get("top_n") == top_n
-            ):
-                logger.info("📦 Loading enrichment results from cache...")
-                logger.info(f"   Genes: {', '.join(symbols)}")
-                return cached["results"]
-            else:
-                logger.info("   ⚠️  Cache key mismatch, re-running enrichment...")
-        except (json.JSONDecodeError, KeyError):
-            logger.info("   ⚠️  Corrupt cache, re-running enrichment...")
+    cached = cache_get(NS_ENRICHMENT, cache_lookup_key, use_cache=use_cache)
+    if cached is None and use_cache:
+        legacy = load_legacy_json(LEGACY_ENRICHMENT_CACHE)
+        if (
+            legacy
+            and legacy.get("cache_key") == cache_key
+            and legacy.get("libraries") == libraries
+            and legacy.get("top_n") == top_n
+        ):
+            cached = legacy.get("results")
+            if cached is not None:
+                cache_set(
+                    NS_ENRICHMENT,
+                    cache_lookup_key,
+                    cached,
+                    use_cache=True,
+                )
+
+    if cached is not None:
+        logger.info("📦 Loading enrichment results from cache...")
+        logger.info(f"   Genes: {', '.join(symbols)}")
+        return cached
 
     logger.info(f"\n🔄 Running enrichment analysis on {len(symbols)} genes...")
     logger.info(f"   Genes: {', '.join(symbols)}")
@@ -232,7 +254,7 @@ def run_enrichment(
                 }
                 logger.info("      No results returned")
 
-        except Exception as e:
+        except ExternalAPIError as e:
             logger.info(f"      ❌ Error: {e}")
             results[library] = {
                 "library": library,
@@ -240,26 +262,21 @@ def run_enrichment(
                 "total_significant": 0,
                 "error": str(e),
             }
+        except (ConnectionError, TimeoutError, OSError, ValueError) as e:
+            err = classify_api_error(e, f"Enrichr {library}")
+            logger.info(f"      ❌ Error: {err}")
+            results[library] = {
+                "library": library,
+                "terms": [],
+                "total_significant": 0,
+                "error": str(err),
+            }
 
     # Save to cache
-    os.makedirs(DATA_DIR, exist_ok=True)
     try:
-        cache_path.write_text(
-            json.dumps(
-                {
-                    "cache_key": cache_key,
-                    "libraries": libraries,
-                    "top_n": top_n,
-                    "results": results,
-                },
-                indent=2,
-                ensure_ascii=False,
-                default=str,
-            ),
-            encoding="utf-8",
-        )
-        logger.info(f"\n💾 Cached enrichment results to {cache_path}")
-    except Exception as e:
+        cache_set(NS_ENRICHMENT, cache_lookup_key, results, use_cache=use_cache)
+        logger.info("\n💾 Cached enrichment results (namespace=%s)", NS_ENRICHMENT)
+    except OSError as e:
         logger.info(f"   ⚠️  Cache write error: {e}")
 
     return results
@@ -316,6 +333,123 @@ def cross_reference_with_kg_pathways(
     return matches
 
 
+def run_enrichment_analysis(
+    disease_id: str = "sle",
+    untargeted_only: bool = False,
+    use_cache: bool = True,
+) -> dict:
+    """Run pathway enrichment for a disease (engine entry point)."""
+    from med_research.diseases.coverage import module_coverage
+
+    coverage = module_coverage(disease_id, "enrichment", ("genes", "pathways"))
+    if not coverage.is_runnable:
+        return {
+            "coverage": coverage.to_dict(),
+            "status": "blocked",
+            "enrichment_results": {},
+            "gene_list": [],
+            "kg_pathway_matches": {},
+        }
+
+    logger.info("🔄 Loading knowledge graph and gene data...")
+    G = load_kg_graph(disease_id)
+    genes = load_kg_genes(disease_id)
+    logger.info(f"   Loaded {len(genes)} genes from knowledge graph")
+
+    logger.info("🔄 Preparing disease gene list...")
+    gene_list = get_disease_gene_list(
+        genes, G, untargeted_only=untargeted_only, disease_id=disease_id
+    )
+    logger.info(f"   Using {len(gene_list)} genes for enrichment")
+
+    logger.info("🔄 Running enrichment analysis...")
+    enrichment_results = run_enrichment(gene_list, use_cache=use_cache)
+
+    logger.info("🔄 Cross-referencing with KG pathways...")
+    kg_pathways = load_pathways(disease_id)
+    kg_matches = cross_reference_with_kg_pathways(
+        enrichment_results, kg_pathways, disease_id=disease_id
+    )
+
+    analyze(enrichment_results, gene_list, kg_matches)
+
+    os.makedirs(DATA_DIR, exist_ok=True)
+    output = {
+        "coverage": coverage.to_dict(),
+        "status": "ready",
+        "gene_list": gene_list,
+        "enrichment_results": enrichment_results,
+        "kg_pathway_matches": {k: v for k, v in kg_matches.items()},
+    }
+    out_path = DATA_DIR / "enrichment_results.json"
+    out_path.write_text(
+        json.dumps(output, indent=2, ensure_ascii=False, default=str),
+        encoding="utf-8",
+    )
+    logger.info(f"\n💾 Results saved to {out_path}")
+
+    return output
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="Lupus Pathway Enrichment Analysis"
+    )
+    parser.add_argument(
+        "--export-html", action="store_true", help="Generate HTML report"
+    )
+    parser.add_argument(
+        "--untargeted-only",
+        action="store_true",
+        help="Restrict enrichment to untargeted lupus genes only",
+    )
+    parser.add_argument(
+        "--no-cache",
+        action="store_true",
+        help="Skip cache, re-run enrichment from GSEApy",
+    )
+    parser.add_argument(
+        "--disease", "-d", default="sle", help="Disease ID (default: sle)"
+    )
+    args = parser.parse_args()
+
+    result = run_enrichment_analysis(
+        disease_id=args.disease,
+        untargeted_only=args.untargeted_only,
+        use_cache=not args.no_cache,
+    )
+    if result.get("status") == "blocked":
+        logger.error(
+            f"❌ Enrichment blocked for {args.disease}: "
+            f"{', '.join(result['coverage'].get('missing_inputs', []))}"
+        )
+        return result
+
+    if args.export_html:
+        from med_research.pipeline.bioinformatics.report import generate_bioinformatics_report
+        from med_research.pipeline.provenance import build_provenance
+
+        provenance = build_provenance(
+            disease_id=args.disease,
+            module="bioinformatics",
+            sources=["enrichr"],
+            cache_or_live="cache",
+            scoring={"analysis": "pathway_enrichment"},
+        )
+        report_path = generate_bioinformatics_report(
+            result["enrichment_results"],
+            result["gene_list"],
+            result["kg_pathway_matches"],
+            None,
+            None,
+            disease_id=args.disease,
+            provenance=provenance,
+        )
+        logger.info(f"\n✅ Report generated: {report_path}")
+
+    return result["enrichment_results"]
+
+
 def analyze(enrichment_results: dict, gene_list: list, kg_matches: dict):
     """Print enrichment analysis summary."""
     logger.info("\n" + "=" * 70)
@@ -360,103 +494,6 @@ def analyze(enrichment_results: dict, gene_list: list, kg_matches: dict):
                 f"{best['enrichment_term'][:50]} "
                 f"(P={best['adj_p_value']:.1e})"
             )
-
-
-def main():
-    parser = argparse.ArgumentParser(
-        description="Lupus Pathway Enrichment Analysis"
-    )
-    parser.add_argument(
-        "--export-html", action="store_true", help="Generate HTML report"
-    )
-    parser.add_argument(
-        "--untargeted-only",
-        action="store_true",
-        help="Restrict enrichment to untargeted lupus genes only",
-    )
-    parser.add_argument(
-        "--no-cache",
-        action="store_true",
-        help="Skip cache, re-run enrichment from GSEApy",
-    )
-    parser.add_argument(
-        "--disease", "-d", default="sle", help="Disease ID (default: sle)"
-    )
-    args = parser.parse_args()
-
-    from med_research.diseases.coverage import module_coverage
-    coverage = module_coverage(args.disease, "enrichment", ("genes", "pathways"))
-    if not coverage.is_runnable:
-        logger.error(f"❌ Enrichment blocked for {args.disease}: {', '.join(coverage.missing_inputs)}")
-        return {"coverage": coverage.to_dict(), "status": "blocked", "libraries": []}
-
-    logger.info("🔄 Loading knowledge graph and gene data...")
-    G = load_kg_graph(args.disease)
-    genes = load_kg_genes(args.disease)
-    logger.info(f"   Loaded {len(genes)} genes from knowledge graph")
-
-    logger.info("🔄 Preparing disease gene list...")
-    gene_list = get_disease_gene_list(
-        genes, G, untargeted_only=args.untargeted_only, disease_id=args.disease
-    )
-    logger.info(f"   Using {len(gene_list)} genes for enrichment")
-    for g in gene_list:
-        logger.info(f"     • {g['symbol']} ({g['gene_id']}) — {g['category']}")
-
-    logger.info("🔄 Running enrichment analysis...")
-    enrichment_results = run_enrichment(
-        gene_list, use_cache=not args.no_cache
-    )
-
-    logger.info("🔄 Cross-referencing with KG pathways...")
-    kg_pathways = load_pathways(args.disease)
-    kg_matches = cross_reference_with_kg_pathways(
-        enrichment_results, kg_pathways, disease_id=args.disease
-    )
-
-    analyze(enrichment_results, gene_list, kg_matches)
-
-    # Save results
-    os.makedirs(DATA_DIR, exist_ok=True)
-    output = {
-        "coverage": coverage.to_dict(),
-        "status": "ready",
-        "gene_list": gene_list,
-        "enrichment_results": enrichment_results,
-        "kg_pathway_matches": {
-            k: v for k, v in kg_matches.items()
-        },
-    }
-    out_path = DATA_DIR / "enrichment_results.json"
-    out_path.write_text(
-        json.dumps(output, indent=2, ensure_ascii=False, default=str),
-        encoding="utf-8",
-    )
-    logger.info(f"\n💾 Results saved to {out_path}")
-
-    if args.export_html:
-        from med_research.pipeline.bioinformatics.report import generate_bioinformatics_report
-        from med_research.pipeline.provenance import build_provenance
-
-        provenance = build_provenance(
-            disease_id=args.disease,
-            module="bioinformatics",
-            sources=["enrichr"],
-            cache_or_live="cache",
-            scoring={"analysis": "pathway_enrichment"},
-        )
-        report_path = generate_bioinformatics_report(
-            enrichment_results,
-            gene_list,
-            kg_matches,
-            None,
-            None,
-            disease_id=args.disease,
-            provenance=provenance,
-        )
-        logger.info(f"\n✅ Report generated: {report_path}")
-
-    return enrichment_results
 
 
 if __name__ == "__main__":

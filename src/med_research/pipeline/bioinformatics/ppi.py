@@ -26,6 +26,8 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 import logging
 
+from med_research.cache import NS_PPI, cache_get, cache_set, load_legacy_json
+from med_research.exceptions import classify_api_error
 from med_research.pipeline.knowledge_graph.config import load_genes as load_kg_genes
 
 logger = logging.getLogger(__name__)
@@ -41,6 +43,7 @@ except ImportError:
     logger.info("⚠️  requests not installed. Install with: pip install requests")
 
 DATA_DIR = Path(__file__).parent / "data"
+LEGACY_PPI_CACHE = DATA_DIR / "ppi_cache.json"
 last_coverage = None
 DR_DATA_DIR = Path(__file__).parent.parent / "drug_repurposing" / "data"
 
@@ -55,18 +58,19 @@ def load_genes(disease_id: str = "sle") -> dict:
     return {g["id"]: g for g in data["genes"]}
 
 
-def get_gene_symbols(genes: dict, exclude_drug_targets: bool = True) -> list:
+def get_gene_symbols(
+    genes: dict, exclude_drug_targets: bool = True, disease_id: str = "sle"
+) -> list:
     """
     Get gene symbols for STRING query, excluding drug-target-only genes.
 
     Returns list of (gene_id, symbol) tuples.
     """
-    exclusions = {
-        "CD20",
-        "IMPDH",
-        "Calcineurin",
-        "Glucocorticoid Receptor",
-    }
+    from med_research.diseases.base import Disease
+
+    exclusions = set()
+    if exclude_drug_targets:
+        exclusions = set(Disease(disease_id).get_drug_target_exclusions())
 
     symbols = []
     for gene_id, _ in genes.items():
@@ -125,8 +129,9 @@ def _string_id_map(symbols: list) -> dict:
                     mapping[query] = string_id
 
         return mapping
-    except Exception as e:
-        logger.info(f"   ⚠️  STRING ID mapping error: {e}")
+    except requests.exceptions.RequestException as e:
+        err = classify_api_error(e, "STRING ID mapping")
+        logger.info(f"   ⚠️  {err}")
         return {}
 
 
@@ -165,8 +170,9 @@ def _string_network(string_ids: list, confidence: float = 0.4) -> list:
                     }
                 )
 
-    except Exception as e:
-        logger.info(f"   ⚠️  STRING network error: {e}")
+    except requests.exceptions.RequestException as e:
+        err = classify_api_error(e, "STRING network fetch")
+        logger.info(f"   ⚠️  {err}")
 
     return interactions
 
@@ -197,13 +203,23 @@ def build_ppi_network(
     symbols = [s for _, s in gene_symbols]
     symbol_to_gene_id = {s: gid for gid, s in gene_symbols}
     cache_key = ",".join(sorted(symbols))
+    cache_lookup_key = f"{cache_key}|||{confidence}"
 
     # Check cache
     freshly_fetched = False
-    cache_path = DATA_DIR / "ppi_cache.json"
-    if use_cache and cache_path.exists():
+    cached = cache_get(NS_PPI, cache_lookup_key, use_cache=use_cache)
+    if cached is None and use_cache:
+        legacy = load_legacy_json(LEGACY_PPI_CACHE)
+        if (
+            legacy
+            and legacy.get("cache_key") == cache_key
+            and legacy.get("confidence") == confidence
+        ):
+            cached = legacy
+            cache_set(NS_PPI, cache_lookup_key, cached, use_cache=True)
+
+    if cached is not None:
         try:
-            cached = json.loads(cache_path.read_text(encoding="utf-8"))
             if (
                 cached.get("cache_key") == cache_key
                 and cached.get("confidence") == confidence
@@ -219,7 +235,7 @@ def build_ppi_network(
                 logger.info("   ⚠️  Cache key mismatch, re-fetching PPI network...")
                 id_map, interactions = _fetch_ppi(symbols, confidence)
                 freshly_fetched = True
-        except (json.JSONDecodeError, KeyError):
+        except (KeyError, TypeError):
             logger.info("   ⚠️  Corrupt cache, re-fetching PPI network...")
             id_map, interactions = _fetch_ppi(symbols, confidence)
             freshly_fetched = True
@@ -229,24 +245,20 @@ def build_ppi_network(
 
     # Save fresh data to cache (only when we fetched new data)
     if use_cache and freshly_fetched:
-        os.makedirs(DATA_DIR, exist_ok=True)
         try:
-            cache_path.write_text(
-                json.dumps(
-                    {
-                        "cache_key": cache_key,
-                        "confidence": confidence,
-                        "id_map": id_map,
-                        "interactions": interactions,
-                    },
-                    indent=2,
-                    ensure_ascii=False,
-                    default=str,
-                ),
-                encoding="utf-8",
+            cache_set(
+                NS_PPI,
+                cache_lookup_key,
+                {
+                    "cache_key": cache_key,
+                    "confidence": confidence,
+                    "id_map": id_map,
+                    "interactions": interactions,
+                },
+                use_cache=True,
             )
-            logger.info(f"💾 Cached PPI network to {cache_path}")
-        except Exception as e:
+            logger.info("💾 Cached PPI network (namespace=%s)", NS_PPI)
+        except OSError as e:
             logger.info(f"   ⚠️  Cache write error: {e}")
 
     if not id_map:
@@ -457,6 +469,105 @@ def analyze(hub_scores: list, crossref: dict, G: nx.Graph):
             )
 
 
+def run_ppi_analysis(
+    disease_id: str = "sle",
+    confidence: float = DEFAULT_CONFIDENCE,
+    expand_neighbors: int = 0,
+    use_cache: bool = True,
+) -> dict:
+    """Build PPI network and hub scores for a disease (engine entry point)."""
+    from med_research.diseases.coverage import module_coverage
+
+    coverage = module_coverage(disease_id, "ppi", ("genes",))
+    if not coverage.is_runnable:
+        return {
+            "coverage": coverage.to_dict(),
+            "status": "blocked",
+            "hub_scores": [],
+            "crossref": {},
+            "graph": {"nodes": [], "edges": []},
+            "confidence": confidence,
+        }
+
+    logger.info("Loading gene and candidate data...")
+    genes = load_genes(disease_id)
+    gene_symbols = get_gene_symbols(genes, disease_id=disease_id)
+    logger.info(f"   Loaded {len(gene_symbols)} disease gene symbols")
+
+    logger.info("🔄 Loading repurposing candidates...")
+    candidates_data = json.loads(
+        (DR_DATA_DIR / "candidates.json").read_text(encoding="utf-8")
+    )
+    candidates = candidates_data["repurposing_candidates"]
+    logger.info(f"   Loaded {len(candidates)} candidates")
+
+    logger.info("🔄 Building PPI network...")
+    G = build_ppi_network(
+        gene_symbols,
+        confidence=confidence,
+        expand_neighbors=expand_neighbors,
+        use_cache=use_cache,
+    )
+
+    if G.number_of_nodes() == 0:
+        logger.error("❌ Empty PPI network. Cannot proceed.")
+        return {
+            "coverage": coverage.to_dict(),
+            "status": "limited_coverage",
+            "hub_scores": [],
+            "crossref": {},
+            "graph": {"nodes": [], "edges": []},
+            "confidence": confidence,
+        }
+
+    logger.info("🔄 Computing hub scores...")
+    hub_scores = compute_hub_scores(G)
+
+    logger.info("🔄 Cross-referencing with repurposing candidates...")
+    crossref = cross_reference_with_candidates(hub_scores, G, genes, candidates)
+
+    analyze(hub_scores, crossref, G)
+
+    graph_data = {
+        "nodes": [
+            {
+                "id": n,
+                "symbol": G.nodes[n].get("symbol", n),
+                "gene_id": G.nodes[n].get("gene_id"),
+                "is_seed": G.nodes[n].get("is_seed", False),
+                "is_lupus_gene": G.nodes[n].get("is_lupus_gene", False),
+            }
+            for n in G.nodes()
+        ],
+        "edges": [
+            {"source": u, "target": v, "score": d["score"]}
+            for u, v, d in G.edges(data=True)
+        ],
+    }
+
+    os.makedirs(DATA_DIR, exist_ok=True)
+    output = {
+        "coverage": coverage.to_dict(),
+        "status": "ready",
+        "hub_scores": hub_scores,
+        "crossref": {
+            "hub_candidate_matches": crossref["hub_candidate_matches"],
+            "hub_untargeted": crossref["hub_untargeted"],
+            "top_hubs_overall": crossref["top_hubs_overall"],
+        },
+        "graph": graph_data,
+        "confidence": confidence,
+    }
+    out_path = DATA_DIR / "ppi_results.json"
+    out_path.write_text(
+        json.dumps(output, indent=2, ensure_ascii=False, default=str),
+        encoding="utf-8",
+    )
+    logger.info(f"\n💾 Results saved to {out_path}")
+
+    return output
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Lupus PPI Network Analysis via STRING API"
@@ -486,92 +597,21 @@ def main():
     )
     args = parser.parse_args()
 
-    from med_research.diseases.coverage import module_coverage
-
-    global last_coverage
-    coverage = module_coverage(args.disease, "ppi", ("genes",))
-    last_coverage = coverage
-    if not coverage.is_runnable:
-        logger.error(
-            "PPI analysis blocked for %s: %s",
-            args.disease,
-            ", ".join(coverage.missing_inputs),
-        )
-        return
-
-    logger.info("Loading gene and candidate data...")
-    genes = load_genes(args.disease)
-    gene_symbols = get_gene_symbols(genes)
-    logger.info(f"   Loaded {len(gene_symbols)} lupus gene symbols")
-
-    logger.info("🔄 Loading repurposing candidates...")
-    candidates_data = json.loads(
-        (DR_DATA_DIR / "candidates.json").read_text(encoding="utf-8")
-    )
-    candidates = candidates_data["repurposing_candidates"]
-    logger.info(f"   Loaded {len(candidates)} candidates")
-
-    logger.info("🔄 Building PPI network...")
-    G = build_ppi_network(
-        gene_symbols,
+    result = run_ppi_analysis(
+        disease_id=args.disease,
         confidence=args.confidence,
         expand_neighbors=args.max_neighbors,
         use_cache=not args.no_cache,
     )
+    if result.get("status") == "blocked":
+        logger.error(
+            "PPI analysis blocked for %s: %s",
+            args.disease,
+            ", ".join(result["coverage"].get("missing_inputs", [])),
+        )
+        return result
 
-    if G.number_of_nodes() == 0:
-        logger.error("❌ Empty PPI network. Cannot proceed.")
-        return None
-
-    logger.info("🔄 Computing hub scores...")
-    hub_scores = compute_hub_scores(G)
-
-    logger.info("🔄 Cross-referencing with repurposing candidates...")
-    crossref = cross_reference_with_candidates(
-        hub_scores, G, genes, candidates
-    )
-
-    analyze(hub_scores, crossref, G)
-
-    # Save results
-    os.makedirs(DATA_DIR, exist_ok=True)
-
-    # Convert graph to serializable format
-    graph_data = {
-        "nodes": [
-            {
-                "id": n,
-                "symbol": G.nodes[n].get("symbol", n),
-                "gene_id": G.nodes[n].get("gene_id"),
-                "is_seed": G.nodes[n].get("is_seed", False),
-                "is_lupus_gene": G.nodes[n].get("is_lupus_gene", False),
-            }
-            for n in G.nodes()
-        ],
-        "edges": [
-            {"source": u, "target": v, "score": d["score"]}
-            for u, v, d in G.edges(data=True)
-        ],
-    }
-
-    output = {
-        "hub_scores": hub_scores,
-        "crossref": {
-            "hub_candidate_matches": crossref["hub_candidate_matches"],
-            "hub_untargeted": crossref["hub_untargeted"],
-            "top_hubs_overall": crossref["top_hubs_overall"],
-        },
-        "graph": graph_data,
-        "confidence": args.confidence,
-    }
-    out_path = DATA_DIR / "ppi_results.json"
-    out_path.write_text(
-        json.dumps(output, indent=2, ensure_ascii=False, default=str),
-        encoding="utf-8",
-    )
-    logger.info(f"\n💾 Results saved to {out_path}")
-
-    if args.export_html:
+    if args.export_html and result.get("hub_scores"):
         from med_research.pipeline.bioinformatics.report import generate_bioinformatics_report
         from med_research.pipeline.provenance import build_provenance
 
@@ -586,15 +626,15 @@ def main():
             None,
             None,
             None,
-            hub_scores,
-            crossref,
-            graph_data,
+            result["hub_scores"],
+            result["crossref"],
+            result["graph"],
             disease_id=args.disease,
             provenance=provenance,
         )
         logger.info(f"\n✅ Report generated: {report_path}")
 
-    return hub_scores
+    return result.get("hub_scores")
 
 
 if __name__ == "__main__":

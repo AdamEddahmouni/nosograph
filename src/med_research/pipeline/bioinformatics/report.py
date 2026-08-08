@@ -18,12 +18,7 @@ import os
 from datetime import datetime
 from pathlib import Path
 
-from med_research.pipeline.reporting import (
-    apply_disease_labels,
-    disease_context,
-    provenance_footer_html,
-)
-from med_research.templates import env as template_env
+from med_research.pipeline.reporting import disease_context, render_report
 
 try:
     import matplotlib
@@ -84,19 +79,20 @@ def generate_bioinformatics_report(
     )
 
     # ── Assemble HTML via shared Jinja2 template ──────────────────────────
-    html = template_env.get_template("reports/bioinformatics.html").render(
-        stats_cards=stats_cards,
-        enrichment_html=enrichment_html,
-        ppi_html=ppi_html,
-        gwas_html=gwas_html,
-        generated_at=datetime.now().strftime("%B %d, %Y at %H:%M"),
-        ctx_disease=context["name"],
-        ctx_disease_id=context["id"],
+    html = render_report(
+        "reports/bioinformatics.html",
+        {
+            "stats_cards": stats_cards,
+            "enrichment_html": enrichment_html,
+            "ppi_html": ppi_html,
+            "gwas_html": gwas_html,
+            "generated_at": datetime.now().strftime("%B %d, %Y at %H:%M"),
+            "ctx_disease": context["name"],
+            "ctx_disease_id": context["id"],
+        },
+        disease_id,
+        provenance=provenance,
     )
-    html = apply_disease_labels(html, disease_id)
-    footer = provenance_footer_html(provenance)
-    if footer:
-        html = html.replace("</body>", f"{footer}\n</body>", 1)
 
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(html)

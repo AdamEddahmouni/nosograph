@@ -1,6 +1,6 @@
-"""LLM Extractor service — thin wrapper around extract_all()."""
+"""LLM Extractor service — wraps extract_all via module registry."""
 
-from med_research.pipeline.evidence.extractor import extract_all
+from med_research.web.services.registry_service import run_module
 
 
 def run_llm_extraction(
@@ -11,24 +11,13 @@ def run_llm_extraction(
     use_cache: bool = True,
     disease_id: str | None = None,
 ) -> dict:
-    """Run LLM evidence extraction and return structured results.
-
-    Args:
-        query: Search query string.
-        sources: List of source types.
-        max_articles: Max articles to extract from.
-        model: LLM model name.
-        use_cache: Whether to use cached extractions.
-        disease_id: Optional disease scope for gather coverage checks.
-
-    Returns:
-        Dict with extractions, stats, and metadata.
-    """
-    return extract_all(
+    """Run LLM evidence extraction via the llm_extractor registry adapter."""
+    return run_module(
+        "llm_extractor",
+        disease_id or "sle",
         query=query,
         sources=sources,
         max_articles=max_articles,
         model=model,
         use_cache=use_cache,
-        disease_id=disease_id,
     )

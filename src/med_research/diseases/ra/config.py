@@ -22,9 +22,10 @@ SYMPTOMS = [
 ]
 
 PUBMED_QUERIES = [
-    "(RA[Title/Abstract]) AND (treatment[Title/Abstract])",
-    "(RA[Title/Abstract]) AND (genetics[Title/Abstract])",
-    "(RA[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(rheumatoid arthritis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(rheumatoid arthritis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(rheumatoid arthritis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(rheumatoid arthritis[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 CAR_T_SCORES = {
@@ -85,7 +86,7 @@ CAR_T_SCORES = {
     },
 }
 
-DRUG_INDUCED_LUPUS_RISK = {
+DRUG_SAFETY_RISK = {
     "high_risk": [
         "infliximab",
         "adalimumab",
@@ -114,8 +115,8 @@ GWAS_SEARCH_TERMS = [
     "RA",
 ]
 
-# Compatibility alias retained for older callers; neutral name is authoritative.
-DISEASE_SPECIFIC_RISK = DRUG_INDUCED_LUPUS_RISK
+DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK
+DRUG_INDUCED_LUPUS_RISK = DRUG_SAFETY_RISK
 
 SCREENING_PROFILE = {
     "strategy_id": "ra-screening-v1",

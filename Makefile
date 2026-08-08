@@ -1,4 +1,4 @@
-.PHONY: help test test-quiet test-fast test-offline test-unit test-integration test-slow test-cov lint lint-fix check-imports run-all kg repurpose bio literature docker-build docker-up docker-test clean install
+.PHONY: help test test-quiet test-fast test-offline test-unit test-integration test-integration-all test-slow test-cov lint lint-fix check-imports typecheck lock lock-check run-all kg repurpose bio literature docker-build docker-up docker-test clean install
 
 help:  ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | \
@@ -29,7 +29,10 @@ test-slow:  ## Run live API/integration tests marked slow
 test-unit:  ## Run unit tests only (fast, offline)
 	python -m pytest tests/ -m "unit" -q --tb=line
 
-test-integration:  ## Run integration/slow tests (may hit external APIs)
+test-integration:  ## Run offline integration tests (fixture-backed, no live APIs)
+	python -m pytest tests/ -m "integration and not slow" -q --tb=short
+
+test-integration-all:  ## Run integration and slow tests (may hit external APIs)
 	python -m pytest tests/ -m "integration or slow" -v --tb=short
 
 test-cov:  ## Run tests with coverage
@@ -38,13 +41,36 @@ test-cov:  ## Run tests with coverage
 # ── Linting ──────────────────────────────────────────────────────────────
 
 lint:  ## Run ruff linter
-	python -m ruff check src/ tests/
+	python -m ruff check src tests
 
 lint-fix:  ## Auto-fix ruff lint issues
-	python -m ruff check src/ tests/ --fix
+	python -m ruff check src tests --fix
 
 check-imports:  ## Audit for stale/dead internal med_research imports
 	python scripts/check_imports.py
+
+typecheck:  ## Run mypy on the expanded type-check scope
+	python -m mypy \
+		src/med_research/pipeline/dispatch.py \
+		src/med_research/pipeline/registry.py \
+		src/med_research/pipeline/base.py \
+		src/med_research/pipeline/scheduler.py \
+		src/med_research/exceptions.py \
+		src/med_research/pipeline_errors.py \
+		src/med_research/cache.py \
+		src/med_research/rate_limiter.py \
+		src/med_research/web/error_handlers.py \
+		src/med_research/web/models/jobs.py \
+		src/med_research/web/routers/jobs.py \
+		src/med_research/web/services/registry_service.py
+
+lock:  ## Regenerate requirements-lock.txt and requirements-dev-lock.txt
+	python -m piptools compile --output-file=requirements-lock.txt requirements.in
+	python -m piptools compile --output-file=requirements-dev-lock.txt requirements-dev.in
+
+lock-check:  ## Verify lock files are up to date with .in sources
+	python -m piptools compile --quiet --dry-run --output-file=requirements-lock.txt requirements.in
+	python -m piptools compile --quiet --dry-run --output-file=requirements-dev-lock.txt requirements-dev.in
 
 # ── Pipeline ─────────────────────────────────────────────────────────────
 

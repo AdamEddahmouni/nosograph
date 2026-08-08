@@ -43,7 +43,7 @@ last_coverage = None
 
 # ── Tracked entities ────────────────────────────────────────────────────
 
-TRACKED_QUERIES = [
+SLE_TRACKED_QUERIES = [
     "B cell depletion therapy lupus",
     "CAR-T cell therapy lupus",
     "BTK inhibitor lupus",
@@ -55,6 +55,32 @@ TRACKED_QUERIES = [
     "voclosporin lupus nephritis",
     "anifrolumab lupus",
 ]
+
+# Backwards-compatible alias for legacy imports/tests.
+TRACKED_QUERIES = SLE_TRACKED_QUERIES
+
+
+def _tracked_queries(disease_id: str = "sle") -> list[str]:
+    """Return disease-scoped monitor queries from curated pubmed config."""
+    if disease_id == "sle":
+        return list(SLE_TRACKED_QUERIES)
+    from med_research.diseases.base import Disease
+
+    disease = Disease(disease_id)
+    queries = disease.config.get("PUBMED_QUERIES") or []
+    if queries:
+        return list(queries)
+    return [f"treatment targets {disease.get_display_name()}"]
+
+
+def _entity_query_suffix(disease_id: str = "sle") -> str:
+    """Short disease label for drug/gene evidence snapshot queries."""
+    if disease_id == "sle":
+        return "lupus"
+    from med_research.diseases.base import Disease
+
+    disease = Disease(disease_id)
+    return disease.profile.name.split("(")[0].strip().lower()
 
 # Load tracked drugs/genes from repurposing candidates
 def _load_tracked_entities() -> tuple:
@@ -143,20 +169,23 @@ def take_snapshot(
     if sources is None:
         sources = ["pubmed", "preprints", "clinical_trials"]
 
+    tracked_queries = _tracked_queries(disease_id)
+    entity_suffix = _entity_query_suffix(disease_id)
     drugs, genes = _load_tracked_entities()
     timestamp = datetime.now()
     snapshot_id = timestamp.strftime("%Y%m%d_%H%M%S")
 
     logger.info(f"\n📸 Taking snapshot: {snapshot_id}")
-    logger.info(f"   Tracking: {len(TRACKED_QUERIES)} queries, "
+    logger.info(f"   Disease: {disease_id}")
+    logger.info(f"   Tracking: {len(tracked_queries)} queries, "
           f"{len(drugs)} drugs, {len(genes)} genes")
     logger.info(f"   Sources: {', '.join(sources)}\n")
 
     queries_data = {}
 
     # Snapshot tracked queries
-    for i, query in enumerate(TRACKED_QUERIES, 1):
-        logger.info(f"  [{i}/{len(TRACKED_QUERIES)}] Query: \"{query}\"")
+    for i, query in enumerate(tracked_queries, 1):
+        logger.info(f"  [{i}/{len(tracked_queries)}] Query: \"{query}\"")
         evidence = gather_evidence(
             query, sources=sources, max_per_source=max_per_query, use_cache=True,
         )
@@ -170,7 +199,7 @@ def take_snapshot(
     logger.info(f"\n  Snapshotting {len(drugs)} drugs...")
     drug_data = {}
     for drug in drugs[:25]:  # Cap at 25 to avoid excessive API calls
-        query = f"{drug} lupus"
+        query = f"{drug} {entity_suffix}"
         logger.info(f"    💊 {drug}")
         evidence = gather_evidence(
             query, sources=["pubmed", "clinical_trials"],
@@ -186,7 +215,7 @@ def take_snapshot(
     logger.info(f"\n  Snapshotting {len(genes)} genes...")
     gene_data = {}
     for gene in genes[:25]:
-        query = f"{gene} lupus"
+        query = f"{gene} {entity_suffix}"
         logger.info(f"    🧬 {gene}")
         evidence = gather_evidence(
             query, sources=["pubmed", "clinical_trials"],
@@ -201,7 +230,8 @@ def take_snapshot(
     snapshot = {
         "snapshot_id": snapshot_id,
         "timestamp": timestamp.isoformat(),
-        "tracked_queries": TRACKED_QUERIES,
+        "tracked_queries": tracked_queries,
+        "disease_id": disease_id,
         "tracked_drugs": drugs,
         "tracked_genes": genes,
         "sources": sources,
@@ -373,7 +403,7 @@ def load_latest_snapshots(n: int = 2) -> list:
     return [load_json(p) for p in paths]
 
 
-def run_diff() -> dict:
+def run_diff(disease_id: str = "sle") -> dict:
     """Run a full snapshot differencing workflow.
 
     Takes a new snapshot and compares against the most recent one.
@@ -381,12 +411,12 @@ def run_diff() -> dict:
     snapshots = load_latest_snapshots(1)
     if not snapshots:
         logger.info("⚠️  No previous snapshots found. Taking first baseline snapshot.")
-        prev = take_snapshot()
+        prev = take_snapshot(disease_id=disease_id)
         return {"status": "baseline", "snapshot_id": prev["snapshot_id"]}
 
     logger.info(f"📸 Comparing against snapshot: {snapshots[0]['snapshot_id']}")
     prev = snapshots[0]
-    curr = take_snapshot()
+    curr = take_snapshot(disease_id=disease_id)
 
     logger.info("\n🔍 Computing diff...")
     diff = compare_snapshots(prev, curr)
@@ -487,7 +517,15 @@ def main():
 
         if args.export_html:
             from med_research.pipeline.evidence.monitor_report import generate_html_report
-            generate_html_report(diff, prev, curr)
+            from med_research.pipeline.provenance import build_provenance
+
+            provenance = build_provenance(
+                disease_id="query",
+                module="evidence_monitor",
+                sources=sources,
+                cache_or_live="cache",
+            )
+            generate_html_report(diff, prev, curr, provenance=provenance)
             logger.info("\n✅ HTML report generated: evidence_monitor/report.html")
         return
 

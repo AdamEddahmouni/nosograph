@@ -39,3 +39,22 @@ def exponential_backoff(
     min_sleep = delay * (1 - jitter)
     max_sleep = delay * (1 + jitter)
     return random.uniform(min_sleep, max_sleep)
+
+
+def backoff_sleep(
+    attempt: int,
+    base_seconds: float = 0.5,
+    max_seconds: float = 30.0,
+    backoff_factor: float = 2.0,
+    jitter: float = 0.5,
+) -> None:
+    """Sleep for an exponential-backoff duration with jitter."""
+    time.sleep(
+        exponential_backoff(
+            attempt,
+            base_seconds=base_seconds,
+            max_seconds=max_seconds,
+            backoff_factor=backoff_factor,
+            jitter=jitter,
+        )
+    )

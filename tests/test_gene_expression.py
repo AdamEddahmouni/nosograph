@@ -214,18 +214,10 @@ def test_run_correlation_analysis_service():
 
 @pytest.mark.slow
 def test_expression_cli_help():
-    import subprocess
+    from tests.cli_helpers import cli_help_output
 
-    result = subprocess.run(
-        [sys.executable, "main.py", "expression", "--help"],
-        capture_output=True,
-        text=True,
-        encoding="utf-8",
-        errors="replace",
-        cwd=str(Path(__file__).parent.parent),
-    )
-    assert result.returncode == 0
-    assert "expression" in result.stdout.lower()
+    help_text = cli_help_output("expression", "--help")
+    assert "expression" in help_text.lower()
 
 
 # ── GEO Multi-Omics Integration ───────────────────────────────────────────
@@ -310,19 +302,33 @@ def test_geo_search_broad(monkeypatch):
 
 
 def test_geo_search_cache(monkeypatch, tmp_path):
+    from med_research.cache import CacheManager
     from med_research.pipeline.gene_expression import geo
-    monkeypatch.setattr(geo, "CACHE_DIR", tmp_path)
-    monkeypatch.setattr("med_research.pipeline.gene_expression.geo.requests.get", _mock_requests_get)
+
+    cache_root = tmp_path / "central_cache"
+    monkeypatch.setattr(
+        "med_research.cache.get_cache_manager",
+        lambda: CacheManager(cache_dir=cache_root),
+    )
+    monkeypatch.setattr(
+        "med_research.pipeline.gene_expression.geo.requests.get",
+        _mock_requests_get,
+    )
 
     studies1 = geo.search_geo_datasets(disease="sle", category="broad", no_cache=True)
     assert len(studies1) >= 2
 
     hit_count = 0
+
     def counting_mock(url, params, timeout=15):
         nonlocal hit_count
         hit_count += 1
         return _mock_requests_get(url, params, timeout)
-    monkeypatch.setattr("med_research.pipeline.gene_expression.geo.requests.get", counting_mock)
+
+    monkeypatch.setattr(
+        "med_research.pipeline.gene_expression.geo.requests.get",
+        counting_mock,
+    )
 
     studies2 = geo.search_geo_datasets(disease="sle", category="broad", no_cache=False)
     assert hit_count == 0

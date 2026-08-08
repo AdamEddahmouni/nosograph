@@ -50,6 +50,24 @@ def disease_context(disease_id: str = "sle") -> dict[str, str]:
     }
 
 
+def render_report(
+    template_name: str,
+    context: dict[str, Any],
+    disease_id: str = "sle",
+    *,
+    provenance: dict[str, Any] | None = None,
+) -> str:
+    """Render a Jinja2 report template with disease labels and provenance footer."""
+    from med_research.templates import env as template_env
+
+    html = template_env.get_template(template_name).render(**context)
+    html = apply_disease_labels(html, disease_id)
+    footer = provenance_footer_html(provenance)
+    if footer:
+        html = html.replace("</body>", f"{footer}\n</body>", 1)
+    return html
+
+
 def apply_disease_labels(content: str, disease_id: str = "sle") -> str:
     """Replace legacy SLE copy in rendered reports for non-SLE contexts."""
     context = disease_context(disease_id)

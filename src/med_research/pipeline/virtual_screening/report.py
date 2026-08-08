@@ -15,11 +15,7 @@ import io
 from datetime import datetime
 from pathlib import Path
 
-from med_research.pipeline.reporting import (
-    apply_disease_labels,
-    disease_context,
-    provenance_footer_html,
-)
+from med_research.pipeline.reporting import disease_context, render_report
 
 try:
     import matplotlib
@@ -327,38 +323,41 @@ def generate_screening_report(
         </div>"""
 
     # ── Assemble via template ──────────────────────────────────────
-    from med_research.templates import env as template_env
-
-    html = template_env.get_template("reports/virtual_screening.html").render(
-        ctx_disease=context["name"],
-        ctx_disease_id=context["id"],
-        ctx_0=stats["total_pairings"],
-        ctx_1=stats["targets_screened"],
-        ctx_2=stats["compounds_screened"],
-        ctx_3=f"· {vina_docked_count} Real Docking Scores" if has_real_docking else "",
-        ctx_4=datetime.now().strftime("%B %d, %Y at %H:%M"),
-        ctx_5=stats["vina_status"],
-        ctx_6="available" if stats["rdkit_available"] else "not available",
-        ctx_7=stats["targets_screened"],
-        ctx_8=stats["compounds_screened"],
-        ctx_9=stats["tier1_count"],
-        ctx_10=stats["tier2_count"],
-        ctx_11=stats["total_pairings"],
-        ctx_12=vina_docked_count,
-        ctx_13=docking_summary,
-        ctx_14=comparison_section,
-        ctx_15=top_overall_rows,
-        ctx_16=target_sections,
-        ctx_17=target_radars,
-        ctx_18="Physics-based AutoDock Vina docking score (ΔG) when available; " if has_real_docking else "",
-        ctx_19=stats["vina_status"],
-        ctx_20=(
-            "When active, the top 5 property-scored compounds per target are re-scored using physics-based molecular docking with curated PDB structures and defined binding site grids. Vina binding free energy (kcal/mol) is normalized to the 0–10 binding score using a linear mapping: −11 kcal/mol → 10, −5 kcal/mol → 0."
-            if has_real_docking
-            else "Install AutoDock Vina and provide protein PDB structures in <code>virtual_screening/targets/</code> for physics-based molecular docking. Current screening uses property-based scoring which does not require external binaries."
-        ),
-        ctx_21="Real docking (AutoDock Vina) + " if has_real_docking else "",
-        ctx_22=top5_json,
+    html = render_report(
+        "reports/virtual_screening.html",
+        {
+            "ctx_disease": context["name"],
+            "ctx_disease_id": context["id"],
+            "ctx_0": stats["total_pairings"],
+            "ctx_1": stats["targets_screened"],
+            "ctx_2": stats["compounds_screened"],
+            "ctx_3": f"· {vina_docked_count} Real Docking Scores" if has_real_docking else "",
+            "ctx_4": datetime.now().strftime("%B %d, %Y at %H:%M"),
+            "ctx_5": stats["vina_status"],
+            "ctx_6": "available" if stats["rdkit_available"] else "not available",
+            "ctx_7": stats["targets_screened"],
+            "ctx_8": stats["compounds_screened"],
+            "ctx_9": stats["tier1_count"],
+            "ctx_10": stats["tier2_count"],
+            "ctx_11": stats["total_pairings"],
+            "ctx_12": vina_docked_count,
+            "ctx_13": docking_summary,
+            "ctx_14": comparison_section,
+            "ctx_15": top_overall_rows,
+            "ctx_16": target_sections,
+            "ctx_17": target_radars,
+            "ctx_18": "Physics-based AutoDock Vina docking score (ΔG) when available; " if has_real_docking else "",
+            "ctx_19": stats["vina_status"],
+            "ctx_20": (
+                "When active, the top 5 property-scored compounds per target are re-scored using physics-based molecular docking with curated PDB structures and defined binding site grids. Vina binding free energy (kcal/mol) is normalized to the 0–10 binding score using a linear mapping: −11 kcal/mol → 10, −5 kcal/mol → 0."
+                if has_real_docking
+                else "Install AutoDock Vina and provide protein PDB structures in <code>virtual_screening/targets/</code> for physics-based molecular docking. Current screening uses property-based scoring which does not require external binaries."
+            ),
+            "ctx_21": "Real docking (AutoDock Vina) + " if has_real_docking else "",
+            "ctx_22": top5_json,
+        },
+        disease_id,
+        provenance=provenance,
     )
     strategy_note = (
         f"<section class=\"strategy-provenance\"><strong>Screening strategy:</strong> "
@@ -368,9 +367,15 @@ def generate_screening_report(
         f"<br><span>Limitations: {escape_html('; '.join(strategy_limitations))}</span></section>"
         if strategy_id else ""
     )
-    footer = provenance_footer_html(provenance)
-    html = html.replace("</body>", strategy_note + footer + "</body>")
-    html = apply_disease_labels(html, disease_id)
+    if strategy_note:
+        if provenance:
+            html = html.replace(
+                '<div class="meta provenance">',
+                f"{strategy_note}\n<div class=\"meta provenance\">",
+                1,
+            )
+        else:
+            html = html.replace("</body>", f"{strategy_note}\n</body>", 1)
 
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(html)

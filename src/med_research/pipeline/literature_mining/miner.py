@@ -13,11 +13,12 @@ Usage:
 """
 
 import argparse
-import json
 import os
 import sys
+import urllib.error
 from pathlib import Path
 
+from med_research.exceptions import ConfigurationError, ExternalAPIError, classify_api_error
 from med_research.rate_limiter import rate_limited_sleep
 
 # Add parent to path
@@ -42,6 +43,7 @@ except ImportError:
 
 # Imports follow the path bootstrap above so the module remains runnable directly.
 # ruff: noqa: E402
+from med_research.cache import NS_LITERATURE_MINING, cache_get, cache_set, load_legacy_json
 from med_research.pipeline.literature_mining.content_extractor import ContentExtractor
 from med_research.pipeline.literature_mining.crossref import (
     cross_reference_articles,
@@ -50,6 +52,10 @@ from med_research.pipeline.literature_mining.crossref import (
 )
 
 DATA_DIR = Path(__file__).parent / "data"
+
+
+def _legacy_pubmed_cache_path() -> Path:
+    return DATA_DIR / "pubmed_cache.json"
 DEFAULT_EMAIL = os.environ.get("ENTREZ_EMAIL")
 if DEFAULT_EMAIL is None:
     DEFAULT_EMAIL = "researcher@example.com"
@@ -76,6 +82,40 @@ DEFAULT_QUERIES = [
 ]
 
 
+def literature_cache_path(disease_id: str = "sle") -> Path:
+    """Legacy per-disease PubMed cache path (for backward-compatible readers)."""
+    per_disease = DATA_DIR / f"pubmed_cache_{disease_id}.json"
+    if per_disease.exists() or disease_id != "sle":
+        return per_disease
+    return DATA_DIR / "pubmed_cache.json"
+
+
+def load_literature_articles(disease_id: str, use_cache: bool = True) -> list | None:
+    """Load cached PubMed articles for a disease from CacheManager or legacy files."""
+    articles = cache_get(NS_LITERATURE_MINING, disease_id, use_cache=use_cache)
+    if articles is not None:
+        return articles
+
+    if not use_cache:
+        return None
+
+    legacy_path = literature_cache_path(disease_id)
+    legacy = load_legacy_json(legacy_path)
+    if isinstance(legacy, list):
+        cache_set(NS_LITERATURE_MINING, disease_id, legacy, use_cache=True)
+        return legacy
+    return None
+
+
+def save_literature_articles(
+    disease_id: str,
+    articles: list,
+    use_cache: bool = True,
+) -> None:
+    """Persist PubMed articles to the centralized cache."""
+    cache_set(NS_LITERATURE_MINING, disease_id, articles, use_cache=use_cache)
+
+
 def _disease_queries(disease_id: str) -> list:
     """Return PubMed queries configured for the requested disease.
 
@@ -89,7 +129,12 @@ def _disease_queries(disease_id: str) -> list:
     except ValueError:
         # Unknown diseases are invalid input, never an excuse to query SLE.
         return []
-    except Exception:  # noqa: BLE001 — a broken config must not crash mining
+    except ConfigurationError as exc:
+        logger.info(f"   ⚠️  Disease config error for {disease_id}: {exc}")
+        queries = []
+        disease = None
+    except (AttributeError, KeyError, TypeError, OSError) as exc:
+        logger.info(f"   ⚠️  Disease config error for {disease_id}: {exc}")
         queries = []
         disease = None
     if queries:
@@ -101,7 +146,27 @@ def _disease_queries(disease_id: str) -> list:
     return []
 
 
-def generate_candidate_queries(candidates: list, disease_term: str = "(lupus OR SLE)") -> list:
+def _default_disease_term(disease_id: str) -> str:
+    """Build a PubMed disease clause from configured queries or profile name."""
+    queries = _disease_queries(disease_id)
+    if queries and " AND " in queries[0]:
+        return queries[0].split(" AND ")[0].strip()
+    try:
+        from med_research.diseases.base import Disease
+
+        name = Disease(disease_id).profile.name
+        if name:
+            return f"({name}[Title/Abstract])"
+    except (ValueError, OSError, TypeError):
+        pass
+    return ""
+
+
+def generate_candidate_queries(
+    candidates: list,
+    disease_term: str | None = None,
+    disease_id: str = "sle",
+) -> list:
     """
     Generate targeted PubMed queries for each repurposing candidate.
 
@@ -115,6 +180,14 @@ def generate_candidate_queries(candidates: list, disease_term: str = "(lupus OR 
 
     Returns a list of query strings, one per candidate.
     """
+    if disease_term is None:
+        if disease_id == "sle":
+            disease_term = "(lupus OR SLE)"
+        else:
+            disease_term = _default_disease_term(disease_id)
+    if not disease_term:
+        return []
+
     queries = []
     for c in candidates:
         drug_name = c["drug_name"]
@@ -201,8 +274,16 @@ def search_pubmed(
 
         return articles
 
-    except Exception as e:
+    except ExternalAPIError as e:
         logger.info(f"   ❌ PubMed query error: {e}")
+        return []
+    except (urllib.error.URLError, urllib.error.HTTPError, OSError, ValueError) as e:
+        err = classify_api_error(e, "PubMed query")
+        logger.info(f"   ❌ PubMed query error: {err}")
+        return []
+    except Exception as e:
+        err = classify_api_error(e, "PubMed query")
+        logger.info(f"   ❌ PubMed query error: {err}")
         return []
 
 
@@ -272,31 +353,22 @@ def mine_literature(
     # '("rheumatoid arthritis"[Title/Abstract])')
     candidate_queries = []
     if targeted_candidates:
+        disease_term = _default_disease_term(disease_id)
         if queries and " AND " in queries[0]:
             disease_term = queries[0].split(" AND ")[0].strip()
-        else:
-            from med_research.diseases.base import Disease
-            disease_term = f'("{Disease(disease_id).profile.name}"[Title/Abstract])'
-        candidate_queries = generate_candidate_queries(candidates, disease_term=disease_term)
+        candidate_queries = generate_candidate_queries(
+            candidates,
+            disease_term=disease_term,
+            disease_id=disease_id,
+        )
         logger.info(f"   Generated {len(candidate_queries)} per-candidate queries")
 
-    # Check cache (per-disease so articles never bleed across diseases; a
-    # legacy single-file cache is still honored for sle). Targeted queries
-    # skip the cache since they're per-drug.
-    cache_path = DATA_DIR / f"pubmed_cache_{disease_id}.json"
-    cached_path = cache_path if cache_path.exists() else None
-    if (
-        cached_path is None
-        and disease_id == "sle"
-        and (DATA_DIR / "pubmed_cache.json").exists()
-    ):
-        cached_path = DATA_DIR / "pubmed_cache.json"
-    if use_cache and cached_path is not None and not targeted_candidates:
+    # Check cache (per-disease; targeted queries skip cache since they're per-drug).
+    all_articles = load_literature_articles(disease_id, use_cache=use_cache)
+    if use_cache and all_articles is not None and not targeted_candidates:
         logger.info("📦 Loading from PubMed cache...")
-        all_articles = json.loads(cached_path.read_text(encoding="utf-8"))
         logger.info(f"   Loaded {len(all_articles)} cached articles")
     else:
-        # Search PubMed
         all_articles = []
         seen_pmids = set()
 
@@ -344,13 +416,8 @@ def mine_literature(
 
             logger.info(f"   ✅ {matches_found}/{len(candidate_queries)} candidates returned articles")
 
-        # Save to cache
-        os.makedirs(DATA_DIR, exist_ok=True)
-        cache_path.write_text(
-            json.dumps(all_articles, indent=2, ensure_ascii=False),
-            encoding="utf-8",
-        )
-        logger.info(f"\n💾 Cached {len(all_articles)} articles to {cache_path}")
+        save_literature_articles(disease_id, all_articles, use_cache=use_cache)
+        logger.info(f"\n💾 Cached {len(all_articles)} articles (namespace=%s)", NS_LITERATURE_MINING)
 
     # Cross-reference
     logger.info("\n🔄 Cross-referencing against knowledge graph...")

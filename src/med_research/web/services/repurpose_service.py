@@ -1,27 +1,15 @@
-"""Drug Repurposing service — wraps engine.py functions."""
-
-import sys
-from pathlib import Path
-
-# Ensure the parent is importable
-sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+"""Drug Repurposing service — wraps engine via module registry."""
 
 from med_research.diseases.coverage import module_coverage
-from med_research.web.dependencies import get_candidates, get_kg_genes, get_knowledge_graph
+from med_research.web.dependencies import get_kg_genes
+from med_research.web.services.registry_service import run_module
 
 
 def run_repurposing(top_n: int = 15, gene_id: str | None = None, disease_id: str = "sle") -> dict:
     """Score drug repurposing candidates and return results."""
-    from med_research.pipeline.drug_repurposing import engine as rep_engine
-    from med_research.pipeline.drug_repurposing.engine import (
-        identify_untargeted_genes,
-        score_candidates,
-    )
-
     coverage = module_coverage(
         disease_id, "repurposing", ("genes", "drugs", "relationships")
     )
-    rep_engine.last_coverage = coverage
     if not coverage.is_runnable:
         return {
             "candidates": [],
@@ -34,29 +22,18 @@ def run_repurposing(top_n: int = 15, gene_id: str | None = None, disease_id: str
             "status": "blocked",
         }
 
-    G = get_knowledge_graph(disease_id)
+    scored = run_module("drug_repurposing", disease_id)
     genes = get_kg_genes(disease_id)
-    candidates = get_candidates()
 
-    untargeted = identify_untargeted_genes(G, disease_id)
-    untargeted_ids = {g["id"] for g in untargeted}
-
-    scored = score_candidates(G, candidates, genes, disease_id=disease_id)
-    scored = [c for c in scored if c["gene_id"] in untargeted_ids]
-
-    # Filter by gene if requested
     if gene_id and gene_id in genes:
         scored = [c for c in scored if c["gene_id"] == gene_id]
 
-    # Sort by composite score
     scored.sort(key=lambda x: x["composite_score"], reverse=True)
     scored = scored[:top_n]
 
-    # Add rank
     for i, c in enumerate(scored, 1):
         c["rank"] = i
 
-    # Summary stats
     n_tier1 = sum(1 for c in scored if c["composite_score"] >= 8.0)
     n_tier2 = sum(1 for c in scored if 7.0 <= c["composite_score"] < 8.0)
     avg_score = sum(c["composite_score"] for c in scored) / len(scored) if scored else 0
@@ -79,13 +56,13 @@ def get_gene_repurposing(gene_id: str, disease_id: str = "sle") -> dict | None:
     if gene_id not in genes:
         return None
 
-    G = get_knowledge_graph(disease_id)
-    candidates = get_candidates()
-
-    from med_research.pipeline.drug_repurposing.engine import score_candidates
-
-    scored = score_candidates(G, candidates, genes, disease_id=disease_id)
-    gene_candidates = [c for c in scored if c["gene_id"] == gene_id]
+    scored = run_module(
+        "drug_repurposing",
+        disease_id,
+        gene_id=gene_id,
+        untargeted_only=False,
+    )
+    gene_candidates = list(scored)
     gene_candidates.sort(key=lambda x: x["composite_score"], reverse=True)
 
     for i, c in enumerate(gene_candidates, 1):

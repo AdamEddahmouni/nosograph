@@ -238,32 +238,20 @@ def test_run_safety_profiling_single_drug():
 
 @pytest.mark.slow
 def test_safety_cli_help():
-    import subprocess
+    from tests.cli_helpers import cli_help_output
 
-    result = subprocess.run(
-        [sys.executable, "main.py", "safety", "--help"],
-        capture_output=True,
-        text=True,
-        encoding="utf-8",
-        errors="replace",
-        cwd=str(Path(__file__).parent.parent),
-    )
-    assert result.returncode == 0
-    assert "safety" in result.stdout.lower()
+    help_text = cli_help_output("safety", "--help")
+    assert "safety" in help_text.lower()
 
 
-@pytest.mark.slow
-def test_safety_cli_single_drug():
-    import subprocess
+def test_safety_cli_single_drug(caplog):
+    import logging
 
-    result = subprocess.run(
-        [sys.executable, "main.py", "safety", "--drug", "belimumab"],
-        capture_output=True,
-        text=True,
-        encoding="utf-8",
-        errors="replace",
-        cwd=str(Path(__file__).parent.parent),
-        timeout=30,
-    )
-    assert result.returncode == 0
-    assert "Safety Profile" in result.stdout
+    from med_research.cli import cmd_safety
+    from tests.cli_helpers import run_cli_handler
+
+    with caplog.at_level(logging.INFO):
+        exit_code = run_cli_handler(cmd_safety, "safety", "--drug", "belimumab")
+
+    assert exit_code == 0
+    assert "Safety Profile" in caplog.text

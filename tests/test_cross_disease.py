@@ -344,27 +344,20 @@ def test_generate_html_report(analysis_results):
 
 @pytest.mark.slow
 def test_cross_disease_cli_help():
-    import subprocess
+    from tests.cli_helpers import cli_help_output
 
-    result = subprocess.run(
-        [sys.executable, "main.py", "cross-disease", "--help"],
-        capture_output=True,
-        text=True, encoding="utf-8", errors="replace",
-        cwd=str(Path(__file__).parent.parent),
-    )
-    assert result.returncode == 0
-    assert "cross-disease" in result.stdout.lower()
+    help_text = cli_help_output("cross-disease", "--help")
+    assert "cross-disease" in help_text.lower()
 
 
-@pytest.mark.slow
-def test_cross_disease_cli_run():
-    import subprocess
+def test_cross_disease_cli_run(caplog):
+    import logging
 
-    result = subprocess.run(
-        [sys.executable, "main.py", "cross-disease", "--top", "5"],
-        capture_output=True,
-        text=True, encoding="utf-8", errors="replace",
-        cwd=str(Path(__file__).parent.parent),
-    )
-    assert result.returncode == 0
-    assert "CROSS-DISEASE" in result.stdout
+    from med_research.cli import cmd_cross_disease
+    from tests.cli_helpers import run_cli_handler
+
+    with caplog.at_level(logging.INFO):
+        exit_code = run_cli_handler(cmd_cross_disease, "cross-disease", "--top", "5")
+
+    assert exit_code == 0
+    assert "CROSS-DISEASE" in caplog.text

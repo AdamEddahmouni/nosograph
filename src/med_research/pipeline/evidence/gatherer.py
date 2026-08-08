@@ -28,6 +28,9 @@ import urllib.request
 from datetime import datetime
 from pathlib import Path
 
+from med_research.cache import NS_EVIDENCE_GATHER, cache_get, cache_set, load_legacy_json
+from med_research.exceptions import ExternalAPIError, classify_api_error
+
 logger = logging.getLogger(__name__)
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
@@ -35,7 +38,7 @@ if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 DATA_DIR = Path(__file__).parent / "data"
-CACHE_PATH = DATA_DIR / "evidence_cache.json"
+LEGACY_EVIDENCE_CACHE = DATA_DIR / "evidence_cache.json"
 
 EUROPE_PMC_URL = "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
 DAILYMED_URL = "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls.json"
@@ -57,15 +60,16 @@ def save_json(path: Path, data):
     path.write_text(json.dumps(data, indent=2), encoding="utf-8")
 
 
-def api_get(url: str, timeout: int = 15) -> dict | None:
-    """Fetch JSON from a REST API with error handling."""
+def api_get(url: str, timeout: int = 15) -> dict:
+    """Fetch JSON from a REST API, raising typed errors on failure."""
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "LupusResearchPlatform/2.0"})
         with urllib.request.urlopen(req, timeout=timeout) as resp:
             return json.loads(resp.read().decode("utf-8"))
-    except (urllib.error.URLError, urllib.error.HTTPError, json.JSONDecodeError) as e:
-        logger.info(f"  ⚠️  API error ({url[:80]}...): {e}")
-        return None
+    except json.JSONDecodeError as e:
+        raise classify_api_error(e, f"API response parse error ({url[:80]}...)") from e
+    except (urllib.error.URLError, urllib.error.HTTPError) as e:
+        raise classify_api_error(e, f"API error ({url[:80]}...)") from e
 
 
 # ── Cache ────────────────────────────────────────────────────────────────
@@ -75,15 +79,27 @@ def _cache_key(query: str, source: str, max_results: int) -> str:
     return f"{query}|||{source}|||{max_results}"
 
 
-def load_cache() -> dict:
-    if CACHE_PATH.exists():
-        return load_json(CACHE_PATH)
-    return {}
+def _load_legacy_evidence_cache() -> dict:
+    """Load the legacy monolithic evidence cache file."""
+    legacy = load_legacy_json(LEGACY_EVIDENCE_CACHE)
+    return legacy if isinstance(legacy, dict) else {}
 
 
-def save_cache(cache: dict):
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
-    save_json(CACHE_PATH, cache)
+def _get_cached_results(key: str, use_cache: bool) -> list | None:
+    cached = cache_get(NS_EVIDENCE_GATHER, key, use_cache=use_cache)
+    if cached is not None:
+        return cached
+    if not use_cache:
+        return None
+    legacy = _load_legacy_evidence_cache()
+    if key in legacy:
+        cache_set(NS_EVIDENCE_GATHER, key, legacy[key], use_cache=True)
+        return legacy[key]
+    return None
+
+
+def _set_cached_results(key: str, results: list, use_cache: bool) -> None:
+    cache_set(NS_EVIDENCE_GATHER, key, results, use_cache=use_cache)
 
 
 # ── Europe PMC Search ────────────────────────────────────────────────────
@@ -101,11 +117,11 @@ def search_europe_pmc(query: str, source: str, max_results: int = 20, use_cache:
     Returns:
         List of result dicts with keys: title, source, source_type, year, url, snippet, authors.
     """
-    cache = load_cache()
     key = _cache_key(query, source, max_results)
-    if use_cache and key in cache:
-        logger.info(f"  📦 Using cached {source} results ({len(cache[key])} items)")
-        return cache[key]
+    cached = _get_cached_results(key, use_cache)
+    if cached is not None:
+        logger.info(f"  📦 Using cached {source} results ({len(cached)} items)")
+        return cached
 
     # Build query with source filter
     if source == "preprints":
@@ -125,8 +141,10 @@ def search_europe_pmc(query: str, source: str, max_results: int = 20, use_cache:
     url = f"{EUROPE_PMC_URL}?{params}"
 
     logger.info(f"  🔎 Searching {source} via Europe PMC...")
-    data = api_get(url)
-    if not data:
+    try:
+        data = api_get(url)
+    except ExternalAPIError as e:
+        logger.info(f"  ⚠️  {e}")
         return []
 
     results = []
@@ -144,8 +162,7 @@ def search_europe_pmc(query: str, source: str, max_results: int = 20, use_cache:
             "id": item.get("id", ""),
         })
 
-    cache[key] = results
-    save_cache(cache)
+    _set_cached_results(key, results, use_cache)
     return results
 
 
@@ -220,11 +237,11 @@ def search_clinical_trials(query: str, max_results: int = 20) -> list:
 
 def search_fda_labels(query: str, max_results: int = 20, use_cache: bool = True) -> list:
     """Search DailyMed for FDA-approved drug labels matching the query."""
-    cache = load_cache()
     key = _cache_key(query, "fda_labels", max_results)
-    if use_cache and key in cache:
-        logger.info(f"  📦 Using cached FDA label results ({len(cache[key])} items)")
-        return cache[key]
+    cached = _get_cached_results(key, use_cache)
+    if cached is not None:
+        logger.info(f"  📦 Using cached FDA label results ({len(cached)} items)")
+        return cached
 
     logger.info("  🔎 Searching FDA labels via DailyMed...")
     params = urllib.parse.urlencode({
@@ -233,8 +250,10 @@ def search_fda_labels(query: str, max_results: int = 20, use_cache: bool = True)
     })
     url = f"{DAILYMED_URL}?{params}"
 
-    data = api_get(url)
-    if not data:
+    try:
+        data = api_get(url)
+    except ExternalAPIError as e:
+        logger.info(f"  ⚠️  {e}")
         return []
 
     results = []
@@ -253,8 +272,7 @@ def search_fda_labels(query: str, max_results: int = 20, use_cache: bool = True)
             "label_id": item.get("setid", ""),
         })
 
-    cache[key] = results
-    save_cache(cache)
+    _set_cached_results(key, results, use_cache)
     return results
 
 
@@ -493,7 +511,16 @@ def main():
 
     if args.export_html:
         from med_research.pipeline.evidence.gatherer_report import generate_html_report
-        generate_html_report(results)
+        from med_research.pipeline.provenance import build_provenance
+
+        provenance = build_provenance(
+            disease_id="query",
+            module="evidence_gather",
+            sources=sources,
+            query=args.query,
+            cache_or_live="live" if args.no_cache else "cache",
+        )
+        generate_html_report(results, provenance=provenance)
         logger.info("\n✅ HTML report generated: evidence_gatherer/report.html")
 
     return results

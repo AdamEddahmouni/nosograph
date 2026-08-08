@@ -1,12 +1,8 @@
 """Drug Combination Synergy service."""
 
-import sys
-from pathlib import Path
-
-sys.path.insert(0, str(Path(__file__).parent.parent.parent))
-
 from med_research.diseases.coverage import module_coverage
 from med_research.web.dependencies import safe_serialize
+from med_research.web.services.registry_service import make_progress_reporter, run_module
 
 
 def run_synergy(
@@ -14,21 +10,8 @@ def run_synergy(
     progress_callback=None,
     disease_id: str = "sle",
 ) -> dict:
-    """Run drug combination synergy prediction.
-
-    Args:
-        top_n: Number of top pairs to return.
-        progress_callback: Optional callable(percent, message) for progress.
-        disease_id: Disease whose drug library is used.
-
-    Returns:
-        Dict with synergy results.
-    """
-    from med_research.pipeline.drug_synergy import engine as synergy_engine
-    from med_research.pipeline.drug_synergy.engine import compute_synergy
-
+    """Run drug combination synergy prediction."""
     coverage = module_coverage(disease_id, "synergy", ("genes", "drugs"))
-    synergy_engine.last_coverage = coverage
     if not coverage.is_runnable:
         return {
             "total_pairs": 0,
@@ -42,11 +25,18 @@ def run_synergy(
             "status": "blocked",
         }
 
-    cb = progress_callback or (lambda p, m: None)
+    reporter = make_progress_reporter(progress_callback)
+    reporter("Synergy analysis", 0, 1)
 
-    pairs = compute_synergy(progress_callback=cb, disease_id=disease_id)
-
+    pairs = run_module(
+        "drug_synergy",
+        disease_id,
+        progress_callback=progress_callback,
+        save=True,
+    )
     pairs = safe_serialize(pairs)
+
+    reporter("Synergy analysis complete", 1, 1)
 
     scores = [p["composite_score"] for p in pairs]
     avg = sum(scores) / len(scores) if scores else 0

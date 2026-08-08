@@ -192,22 +192,23 @@ async function runModule(module) {
 
 // ── Job Submission + WebSocket Streaming ─────────────────────────────────
 
-async function streamJob(module, resultEl, params = {}) {
-    const endpoints = {
-        gwas: '/api/jobs/gwas',
-        enrichment: '/api/jobs/enrichment',
-        ppi: '/api/jobs/ppi',
-        literature: '/api/jobs/literature',
-        screening: '/api/jobs/screening',
-        trials: '/api/jobs/trials',
-        ml: '/api/jobs/ml',
-        synergy: '/api/jobs/synergy',
-        safety: '/api/jobs/safety',
-        workspace: '/api/jobs/workspace',
-    };
+// Job route aliases used by the dashboard map to registry module_ids server-side.
+const JOB_ROUTE_ALIASES = {
+    cart: 'car_t_predictor',
+    repurpose: 'drug_repurposing',
+    biomarker: 'biomarker_discovery',
+    expression: 'gene_expression',
+    semantic: 'semantic_search',
+    evidence: 'evidence_gather',
+    extractor: 'llm_extractor',
+    monitor: 'evidence_monitor',
+};
 
-    const endpoint = endpoints[module];
-    if (!endpoint) throw new Error(`No job endpoint for ${module}`);
+async function streamJob(module, resultEl, params = {}) {
+    const routeId = JOB_ROUTE_ALIASES[module] || module;
+    const endpoint = module === 'workspace'
+        ? '/api/jobs/workspace'
+        : `/api/jobs/${encodeURIComponent(routeId)}`;
 
     // Submit the job (extra params become query-string arguments)
     const qs = Object.entries(params)
@@ -219,7 +220,10 @@ async function streamJob(module, resultEl, params = {}) {
         requestOptions.headers = { 'Content-Type': 'application/json' };
         requestOptions.body = JSON.stringify(params);
     }
-    const data = await apiFetch(module === 'workspace' ? endpoint : endpoint + (qs ? `?${qs}` : ''), requestOptions);
+    const data = await apiFetch(
+        module === 'workspace' ? endpoint : endpoint + (qs ? `?${qs}` : ''),
+        requestOptions,
+    );
     const jobId = data.job_id;
     const startTime = Date.now();
 

@@ -19,8 +19,10 @@ def _package_paths() -> set[str]:
     except PackageNotFoundError:
         pytest.skip(f"{PACKAGE_NAME} is not installed")
 
-    if dist.files and len(dist.files) > 20:
-        return {str(path).replace("\\", "/") for path in dist.files}
+    if dist.files:
+        paths_from_dist = {str(path).replace("\\", "/") for path in dist.files}
+        if any(path.startswith("med_research/") for path in paths_from_dist):
+            return paths_from_dist
 
     # Editable installs only record dist-info in metadata; fall back to resources.
     root = resource_files("med_research")

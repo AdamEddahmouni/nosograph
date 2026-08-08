@@ -12,8 +12,7 @@ import io
 from datetime import datetime
 from pathlib import Path
 
-from med_research.pipeline.reporting import disease_context, provenance_footer_html
-from med_research.templates import env as template_env
+from med_research.pipeline.reporting import disease_context, render_report
 
 try:
     import matplotlib
@@ -66,23 +65,25 @@ def generate_ml_report(
     ]
 
     context = disease_context(disease_id)
-    html = template_env.get_template("reports/ml_predictor.html").render(
-        n_genes=metrics.get("n_genes", 0),
-        n_targeted=metrics.get("n_targeted", 0),
-        n_untargeted=metrics.get("n_untargeted", 0),
-        cv_roc_auc=metrics.get("cv_roc_auc_mean", 0),
-        top_predictions=top_predictions,
-        n_features=len(importance),
-        importance_chart=importance_chart,
-        shap_chart=shap_chart,
-        feature_importance=feature_importance,
-        generated_at=datetime.now().strftime("%B %d, %Y at %H:%M"),
-        ctx_disease=context["name"],
-        ctx_disease_id=context["id"],
+    html = render_report(
+        "reports/ml_predictor.html",
+        {
+            "n_genes": metrics.get("n_genes", 0),
+            "n_targeted": metrics.get("n_targeted", 0),
+            "n_untargeted": metrics.get("n_untargeted", 0),
+            "cv_roc_auc": metrics.get("cv_roc_auc_mean", 0),
+            "top_predictions": top_predictions,
+            "n_features": len(importance),
+            "importance_chart": importance_chart,
+            "shap_chart": shap_chart,
+            "feature_importance": feature_importance,
+            "generated_at": datetime.now().strftime("%B %d, %Y at %H:%M"),
+            "ctx_disease": context["name"],
+            "ctx_disease_id": context["id"],
+        },
+        disease_id,
+        provenance=provenance,
     )
-    footer = provenance_footer_html(provenance)
-    if footer:
-        html = html.replace("</body>", f"{footer}\n</body>", 1)
 
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(html)

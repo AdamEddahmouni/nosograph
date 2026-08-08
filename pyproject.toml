@@ -46,6 +46,9 @@ dev = [
     "pytest>=8.0",
     "pytest-cov>=4.1",
     "ruff>=0.3",
+    "responses>=0.25",
+    "mypy>=1.8",
+    "pip-tools>=7.4",
 ]
 all = [
     "med-research[ml,cheminformatics,nlp,semantic,dev]",
@@ -78,10 +81,30 @@ select = ["E", "F", "I", "B", "SIM", "W"]
 [tool.ruff.lint.isort]
 known-first-party = ["med_research"]
 
+[tool.coverage.run]
+source = ["src/med_research"]
+
+[tool.coverage.report]
+fail_under = 80
+show_missing = true
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["src"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short --color=auto"
 markers = [
     "slow: marks tests as slow (deselect with '-m \"not slow\"')",
-    "unit: marks tests as unit tests",
+    "unit: unit tests (fast, offline, no external calls)",
+    "integration: end-to-end pipeline smoke tests (no live external APIs)",
 ]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_ignores = true
+ignore_missing_imports = true
+check_untyped_defs = true
+disallow_incomplete_defs = true

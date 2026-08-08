@@ -269,13 +269,7 @@ def test_run_biomarker_analysis_service():
 
 @pytest.mark.slow
 def test_biomarker_cli_help():
-    import subprocess
+    from tests.cli_helpers import cli_help_output
 
-    result = subprocess.run(
-        [sys.executable, "main.py", "biomarker", "--help"],
-        capture_output=True,
-        text=True, encoding="utf-8", errors="replace",
-        cwd=str(Path(__file__).parent.parent),
-    )
-    assert result.returncode == 0
-    assert "biomarker" in result.stdout.lower()
+    help_text = cli_help_output("biomarker", "--help")
+    assert "biomarker" in help_text.lower()

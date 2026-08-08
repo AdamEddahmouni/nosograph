@@ -158,9 +158,9 @@ PUBMED_QUERIES = [
     "(systemic lupus erythematosus[Title/Abstract]) AND (clinical trial[Title/Abstract])",
 ]
 
-# ── Drug-Induced Lupus Risk ──────────────────────────────────────────────
+# ── Drug safety / disease-specific risk ──────────────────────────────────
 
-DRUG_INDUCED_LUPUS_RISK = {
+DRUG_SAFETY_RISK = {
     "high_risk": [
         "hydralazine", "procainamide", "isoniazid", "minocycline",
         "anti-TNF", "infliximab", "adalimumab", "etanercept",
@@ -185,8 +185,8 @@ GWAS_SEARCH_TERMS = [
     "SLE",
 ]
 
-# Compatibility alias retained for older callers; neutral name is authoritative.
-DISEASE_SPECIFIC_RISK = DRUG_INDUCED_LUPUS_RISK
+DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK
+DRUG_INDUCED_LUPUS_RISK = DRUG_SAFETY_RISK
 
 SCREENING_PROFILE = {
     "strategy_id": "sle-screening-v1",

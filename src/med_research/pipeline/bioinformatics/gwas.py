@@ -21,6 +21,13 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
+from med_research.cache import (
+    NS_GWAS,
+    cache_get,
+    cache_set,
+    load_legacy_json,
+)
+from med_research.exceptions import ConfigurationError, classify_api_error
 from med_research.pipeline.knowledge_graph.config import load_genes as config_load_genes
 from med_research.rate_limiter import rate_limited_sleep
 
@@ -68,7 +75,11 @@ def disease_search_terms(disease_id: str = "sle") -> list:
     except ValueError:
         # Unknown diseases are invalid input, never an excuse to query SLE.
         return []
-    except Exception:  # noqa: BLE001 — a broken config must not crash the run
+    except ConfigurationError as exc:
+        logger.info(f"   ⚠️  Disease config error for {disease_id}: {exc}")
+        terms = []
+    except (AttributeError, KeyError, TypeError, OSError) as exc:
+        logger.info(f"   ⚠️  Disease config error for {disease_id}: {exc}")
         terms = []
     if terms:
         return list(terms)
@@ -86,13 +97,22 @@ def gwas_cache_path(disease_id: str = "sle") -> Path:
 
 
 def search_gwas_studies(
-    query: str = "systemic lupus erythematosus", max_results: int = 100
+    query: str | None = None,
+    max_results: int = 100,
+    disease_id: str = "sle",
 ) -> list:
     """
-    Search the GWAS Catalog for SLE-related studies.
+    Search the GWAS Catalog for disease-associated studies.
 
-    Returns list of study dicts with: study_id, title, pubmed_id, etc.
+    When ``query`` is omitted, uses the first term from
+    :func:`disease_search_terms` for ``disease_id``.
     """
+    if query is None:
+        terms = disease_search_terms(disease_id)
+        query = terms[0] if terms else ""
+    if not query:
+        logger.info("   ⚠️  No GWAS search terms configured; skipping catalog query")
+        return []
     if not REQUESTS_AVAILABLE:
         logger.info("❌ requests required. Install: pip install requests")
         return []
@@ -128,8 +148,13 @@ def search_gwas_studies(
             # Rate limiting
             rate_limited_sleep(0.5)
 
-        except Exception as e:
-            logger.info(f"   ⚠️  GWAS search error: {e}")
+        except json.JSONDecodeError as e:
+            err = classify_api_error(e, "GWAS search")
+            logger.info(f"   ⚠️  {err}")
+            break
+        except requests.exceptions.RequestException as e:
+            err = classify_api_error(e, "GWAS search")
+            logger.info(f"   ⚠️  {err}")
             break
 
     logger.info(f"   Found {len(studies)} studies")
@@ -158,11 +183,17 @@ def fetch_study_associations(study_accession: str) -> list:
         if e.response is not None and e.response.status_code == 404:
             logger.info(f"   ⚠️  No associations found for study {study_accession} (404)")
         else:
-            logger.info(f"   ⚠️  HTTP error fetching associations for {study_accession}: {e}")
+            err = classify_api_error(e, f"GWAS associations for {study_accession}")
+            logger.info(f"   ⚠️  {err}")
     except (requests.exceptions.ConnectionError, requests.exceptions.Timeout) as e:
-        logger.info(f"   ⚠️  Connection/timeout fetching associations for {study_accession}: {e}")
-    except Exception as e:
-        logger.info(f"   ⚠️  Unexpected error fetching associations for {study_accession}: {e}")
+        err = classify_api_error(e, f"GWAS associations for {study_accession}")
+        logger.info(f"   ⚠️  {err}")
+    except json.JSONDecodeError as e:
+        err = classify_api_error(e, f"GWAS associations for {study_accession}")
+        logger.info(f"   ⚠️  {err}")
+    except requests.exceptions.RequestException as e:
+        err = classify_api_error(e, f"GWAS associations for {study_accession}")
+        logger.info(f"   ⚠️  {err}")
 
     rate_limited_sleep(0.5)
     return associations
@@ -218,8 +249,13 @@ def _resolve_snp_details(rsids: set) -> dict:
                     resolved += 1
             else:
                 snp_cache[rsid] = {"genes": [], "chromosome": "", "position": 0}
-        except Exception as e:
-            logger.info(f"   ⚠️  Error resolving SNP {rsid}: {e}")
+        except json.JSONDecodeError as e:
+            err = classify_api_error(e, f"SNP resolution for {rsid}")
+            logger.info(f"   ⚠️  {err}")
+            snp_cache[rsid] = {"genes": [], "chromosome": "", "position": 0}
+        except requests.exceptions.RequestException as e:
+            err = classify_api_error(e, f"SNP resolution for {rsid}")
+            logger.info(f"   ⚠️  {err}")
             snp_cache[rsid] = {"genes": [], "chromosome": "", "position": 0}
 
         if (i + 1) % 20 == 0 or i == len(unresolved) - 1:
@@ -536,6 +572,112 @@ def analyze(gwas_results: dict, crossref: dict, kg_genes: dict):
             )
 
 
+def run_gwas_analysis(
+    disease_id: str = "sle",
+    max_studies: int = 30,
+    use_cache: bool = True,
+    resolve_snps: bool = True,
+) -> dict:
+    """Run GWAS Catalog annotation for a disease (engine entry point)."""
+    from med_research.diseases.coverage import module_coverage
+
+    coverage = module_coverage(disease_id, "gwas", ("genes", "gwas_search_terms"))
+    if not coverage.is_runnable:
+        return {
+            "coverage": coverage.to_dict(),
+            "status": "blocked",
+            "gwas_results": {},
+            "crossref": {},
+        }
+
+    logger.info("🔄 Loading knowledge graph genes...")
+    kg_genes = {}
+    genes_data = config_load_genes(disease_id)
+    for g in genes_data["genes"]:
+        kg_genes[g["id"]] = g
+    logger.info(f"   Loaded {len(kg_genes)} KG genes")
+
+    logger.info("🔄 Searching GWAS Catalog...")
+    search_terms = disease_search_terms(disease_id)
+    all_studies = []
+    for term in search_terms[:2]:
+        studies = search_gwas_studies(term, max_results=max_studies // 2)
+        all_studies.extend(studies)
+        rate_limited_sleep(0.5)
+
+    seen = set()
+    unique_studies = []
+    for s in all_studies:
+        acc = s.get("accessionId")
+        if acc and acc not in seen:
+            seen.add(acc)
+            unique_studies.append(s)
+
+    logger.info(f"   Total unique studies: {len(unique_studies)}")
+
+    all_results = None
+    if use_cache:
+        cached = cache_get(NS_GWAS, disease_id, use_cache=True)
+        if cached is None:
+            legacy = load_legacy_json(gwas_cache_path(disease_id))
+            if legacy and "gwas_results" in legacy and "crossref" in legacy:
+                cached = {
+                    "gwas_results": legacy["gwas_results"],
+                    "crossref": legacy["crossref"],
+                }
+                cache_set(NS_GWAS, disease_id, cached, use_cache=True)
+        if cached:
+            try:
+                logger.info("📦 Loading GWAS results from cache...")
+                gwas_results = cached["gwas_results"]
+                crossref = cached["crossref"]
+                all_results = cached
+            except KeyError:
+                logger.warning("   ⚠️  Corrupt cache, re-running GWAS...")
+
+    if all_results is None:
+        logger.info("\n🔄 Extracting gene-level associations...")
+        gwas_results = extract_gene_associations(
+            unique_studies,
+            max_studies=max_studies,
+            resolve_snps=resolve_snps,
+        )
+
+        logger.info("\n🔄 Cross-referencing with knowledge graph...")
+        crossref = cross_reference_with_kg(gwas_results, kg_genes, disease_id=disease_id)
+
+        cache_data = {"gwas_results": gwas_results, "crossref": crossref}
+        try:
+            cache_set(NS_GWAS, disease_id, cache_data, use_cache=use_cache)
+            logger.info("💾 Cached GWAS results (namespace=%s, key=%s)", NS_GWAS, disease_id)
+        except OSError as e:
+            logger.warning(f"   ⚠️  Cache write error: {e}")
+
+    analyze(gwas_results, crossref, kg_genes)
+
+    os.makedirs(DATA_DIR, exist_ok=True)
+    output = {
+        "coverage": coverage.to_dict(),
+        "status": "ready",
+        "gwas_results": {
+            "gene_associations": gwas_results["gene_associations"],
+            "total_studies_analyzed": gwas_results["total_studies_analyzed"],
+            "total_associations": gwas_results["total_associations"],
+            "study_details": gwas_results["study_details"],
+            "snp_data": gwas_results.get("snp_data", []),
+        },
+        "crossref": crossref,
+    }
+    out_path = DATA_DIR / "gwas_results.json"
+    out_path.write_text(
+        json.dumps(output, indent=2, ensure_ascii=False, default=str),
+        encoding="utf-8",
+    )
+    logger.info(f"\n💾 Results saved to {out_path}")
+
+    return output
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="GWAS Catalog Annotation (disease-aware)"
@@ -564,102 +706,18 @@ def main():
     )
     args = parser.parse_args()
 
-    from med_research.diseases.coverage import module_coverage
-    coverage = module_coverage(args.disease, "gwas", ("genes", "gwas_search_terms"))
-    if not coverage.is_runnable:
-        logger.error(f"❌ GWAS analysis blocked for {args.disease}: {', '.join(coverage.missing_inputs)}")
-        return {"coverage": coverage.to_dict(), "status": "blocked", "gwas_results": {}, "crossref": {}}
-
-    logger.info("🔄 Loading knowledge graph genes...")
-    kg_genes = {}
-    genes_data = config_load_genes(args.disease)
-    for g in genes_data["genes"]:
-        kg_genes[g["id"]] = g
-    logger.info(f"   Loaded {len(kg_genes)} KG genes")
-
-    logger.info("🔄 Searching GWAS Catalog...")
-    search_terms = disease_search_terms(args.disease)
-    all_studies = []
-    for term in search_terms[:2]:  # Use first 2 to avoid too many
-        studies = search_gwas_studies(
-            term, max_results=args.max_studies // 2
-        )
-        all_studies.extend(studies)
-        rate_limited_sleep(0.5)
-
-    # Deduplicate by accession
-    seen = set()
-    unique_studies = []
-    for s in all_studies:
-        acc = s.get("accessionId")
-        if acc and acc not in seen:
-            seen.add(acc)
-            unique_studies.append(s)
-
-    logger.info(f"   Total unique studies: {len(unique_studies)}")
-
-    # Check cache (per-disease so results never bleed across diseases)
-    cache_path = gwas_cache_path(args.disease)
-    all_results = None
-    if not args.no_cache and cache_path.exists():
-        try:
-            cached = json.loads(cache_path.read_text(encoding="utf-8"))
-            logger.info("📦 Loading GWAS results from cache...")
-            gwas_results = cached["gwas_results"]
-            crossref = cached["crossref"]
-            all_results = cached
-        except (json.JSONDecodeError, KeyError):
-            logger.warning("   ⚠️  Corrupt cache, re-running GWAS...")
-
-    if all_results is None:
-        logger.info("\n🔄 Extracting gene-level associations...")
-        gwas_results = extract_gene_associations(
-            unique_studies,
-            max_studies=args.max_studies,
-            resolve_snps=not args.no_snp_resolve,
-        )
-
-        logger.info("\n🔄 Cross-referencing with knowledge graph...")
-        crossref = cross_reference_with_kg(gwas_results, kg_genes, disease_id=args.disease)
-
-        # Save to cache
-        os.makedirs(DATA_DIR, exist_ok=True)
-        cache_data = {"gwas_results": gwas_results, "crossref": crossref}
-        try:
-            cache_path.write_text(
-                json.dumps(cache_data, indent=2, ensure_ascii=False, default=str),
-                encoding="utf-8",
-            )
-            logger.info(f"💾 Cached GWAS results to {cache_path}")
-        except Exception as e:
-            logger.warning(f"   ⚠️  Cache write error: {e}")
-
-
-
-    analyze(gwas_results, crossref, kg_genes)
-
-    # Save results
-    os.makedirs(DATA_DIR, exist_ok=True)
-    output = {
-        "coverage": coverage.to_dict(),
-        "status": "ready",
-        "gwas_results": {
-            "gene_associations": gwas_results["gene_associations"],
-            "total_studies_analyzed": gwas_results[
-                "total_studies_analyzed"
-            ],
-            "total_associations": gwas_results["total_associations"],
-            "study_details": gwas_results["study_details"],
-            "snp_data": gwas_results.get("snp_data", []),
-        },
-        "crossref": crossref,
-    }
-    out_path = DATA_DIR / "gwas_results.json"
-    out_path.write_text(
-        json.dumps(output, indent=2, ensure_ascii=False, default=str),
-        encoding="utf-8",
+    result = run_gwas_analysis(
+        disease_id=args.disease,
+        max_studies=args.max_studies,
+        use_cache=not args.no_cache,
+        resolve_snps=not args.no_snp_resolve,
     )
-    logger.info(f"\n💾 Results saved to {out_path}")
+    if result.get("status") == "blocked":
+        logger.error(
+            f"❌ GWAS analysis blocked for {args.disease}: "
+            f"{', '.join(result['coverage'].get('missing_inputs', []))}"
+        )
+        return result
 
     if args.export_html:
         from med_research.pipeline.bioinformatics.report import generate_bioinformatics_report
@@ -678,14 +736,14 @@ def main():
             None,
             None,
             None,
-            gwas_results,
-            crossref,
+            result["gwas_results"],
+            result["crossref"],
             disease_id=args.disease,
             provenance=provenance,
         )
         logger.info(f"\n✅ Report generated: {report_path}")
 
-    return gwas_results
+    return result["gwas_results"]
 
 
 if __name__ == "__main__":

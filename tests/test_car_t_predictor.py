@@ -180,15 +180,7 @@ def test_run_cart_analysis_service():
 
 @pytest.mark.slow
 def test_cart_cli_help():
-    import subprocess
+    from tests.cli_helpers import cli_help_output
 
-    result = subprocess.run(
-        [sys.executable, "main.py", "cart", "--help"],
-        capture_output=True,
-        text=True,
-        encoding="utf-8",
-        errors="replace",
-        cwd=str(Path(__file__).parent.parent),
-    )
-    assert result.returncode == 0
-    assert "cart" in result.stdout.lower()
+    help_text = cli_help_output("cart", "--help")
+    assert "cart" in help_text.lower()

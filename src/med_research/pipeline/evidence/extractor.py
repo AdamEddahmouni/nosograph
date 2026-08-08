@@ -39,6 +39,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 import logging
 
+from med_research.cache import NS_LLM_EXTRACTOR, cache_get, cache_set, load_legacy_json
 from med_research.pipeline.evidence.gatherer import gather_evidence
 
 logger = logging.getLogger(__name__)
@@ -46,7 +47,8 @@ if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 DATA_DIR = Path(__file__).parent / "data"
-CACHE_PATH = DATA_DIR / "extraction_cache.json"
+LEGACY_EXTRACTION_CACHE = DATA_DIR / "extraction_cache.json"
+CACHE_PATH = LEGACY_EXTRACTION_CACHE  # backward compat for tests and callers
 
 # ── Configuration ─────────────────────────────────────────────────────────
 
@@ -105,15 +107,26 @@ def _cache_key(article_id: str, model: str) -> str:
     return f"{article_id}|||{model}"
 
 
-def load_cache() -> dict:
-    if CACHE_PATH.exists():
-        return load_json(CACHE_PATH)
-    return {}
+def _load_legacy_extraction_cache() -> dict:
+    legacy = load_legacy_json(LEGACY_EXTRACTION_CACHE)
+    return legacy if isinstance(legacy, dict) else {}
 
 
-def save_cache(cache: dict):
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
-    save_json(CACHE_PATH, cache)
+def _get_cached_extraction(key: str, use_cache: bool) -> dict | None:
+    cached = cache_get(NS_LLM_EXTRACTOR, key, use_cache=use_cache)
+    if cached is not None:
+        return cached
+    if not use_cache:
+        return None
+    legacy = _load_legacy_extraction_cache()
+    if key in legacy:
+        cache_set(NS_LLM_EXTRACTOR, key, legacy[key], use_cache=True)
+        return legacy[key]
+    return None
+
+
+def _set_cached_extraction(key: str, extracted: dict, use_cache: bool) -> None:
+    cache_set(NS_LLM_EXTRACTOR, key, extracted, use_cache=use_cache)
 
 
 # ── LLM API Call ─────────────────────────────────────────────────────────
@@ -208,9 +221,9 @@ def extract_evidence(
     article_id = article.get("id", article.get("title", ""))
     key = _cache_key(article_id, model)
 
-    cache = load_cache()
-    if use_cache and key in cache:
-        return cache[key]
+    cached = _get_cached_extraction(key, use_cache)
+    if cached is not None:
+        return cached
 
     user_prompt = EXTRACTION_USER_PROMPT_TEMPLATE.format(
         title=article.get("title", ""),
@@ -276,8 +289,7 @@ def extract_evidence(
             "confidence": 0,
         }
 
-    cache[key] = extracted
-    save_cache(cache)
+    _set_cached_extraction(key, extracted, use_cache)
     return extracted
 
 
@@ -564,7 +576,17 @@ def main():
 
     if args.export_html and "error" not in results:
         from med_research.pipeline.evidence.extractor_report import generate_html_report
-        generate_html_report(results)
+        from med_research.pipeline.provenance import build_provenance
+
+        provenance = build_provenance(
+            disease_id="query",
+            module="llm_extractor",
+            sources=sources,
+            query=args.query,
+            cache_or_live="live" if args.no_cache else "cache",
+            model=args.model,
+        )
+        generate_html_report(results, provenance=provenance)
         logger.info("\n✅ HTML report generated: llm_extractor/report.html")
 
     return results

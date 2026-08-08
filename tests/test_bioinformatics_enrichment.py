@@ -2,7 +2,7 @@
 Unit tests for the Lupus Pathway Enrichment module.
 
 Tests cover:
-  - get_lupus_gene_list(): gene filtering, exclusions
+  - get_disease_gene_list(disease_id="sle"): gene filtering, exclusions
   - cross_reference_with_kg_pathways(): matching logic
   - Data loading functions
 """
@@ -11,26 +11,61 @@ Tests cover:
 import pytest
 
 
-class TestGetLupusGeneList:
-    """Tests for get_lupus_gene_list()."""
+class TestGetDiseaseGeneList:
+    """Tests for get_disease_gene_list(disease_id="sle")."""
 
     @pytest.fixture
     def sample_kg_genes(self):
         from med_research.pipeline.bioinformatics.enrichment import load_kg_genes
         return load_kg_genes()
 
-    def test_excludes_drug_target_genes(self, sample_kg_genes):
-        from med_research.pipeline.bioinformatics.enrichment import get_lupus_gene_list
+    @pytest.mark.parametrize("disease_id", ["sle", "ra", "ibd"])
+    def test_returns_non_empty_gene_list(self, disease_id):
+        from med_research.pipeline.bioinformatics.enrichment import (
+            get_disease_gene_list,
+            load_kg_genes,
+        )
 
-        gene_list = get_lupus_gene_list(sample_kg_genes, G=None, untargeted_only=False)
+        genes = load_kg_genes(disease_id)
+        gene_list = get_disease_gene_list(
+            genes, G=None, untargeted_only=False, disease_id=disease_id
+        )
+        assert len(gene_list) > 0
+        symbols = {g["gene_id"] for g in gene_list}
+        assert symbols.issubset(set(genes.keys()))
+
+    @pytest.mark.parametrize("disease_id", ["ra", "ibd"])
+    def test_excludes_disease_drug_targets(self, disease_id):
+        from med_research.diseases.base import Disease
+        from med_research.pipeline.bioinformatics.enrichment import (
+            get_disease_gene_list,
+            load_kg_genes,
+        )
+
+        genes = load_kg_genes(disease_id)
+        gene_list = get_disease_gene_list(
+            genes, G=None, untargeted_only=False, disease_id=disease_id
+        )
+        symbols = {g["gene_id"] for g in gene_list}
+        exclusions = set(Disease(disease_id).get_drug_target_exclusions())
+        assert symbols.isdisjoint(exclusions)
+
+    def test_excludes_drug_target_genes(self, sample_kg_genes):
+        from med_research.pipeline.bioinformatics.enrichment import get_disease_gene_list
+
+        gene_list = get_disease_gene_list(
+            sample_kg_genes, G=None, untargeted_only=False, disease_id="sle"
+        )
         symbols = {g["gene_id"] for g in gene_list}
         excluded = {"CD20", "IMPDH", "Calcineurin", "Glucocorticoid Receptor"}
         assert symbols.isdisjoint(excluded)
 
     def test_includes_lupus_risk_genes(self, sample_kg_genes):
-        from med_research.pipeline.bioinformatics.enrichment import get_lupus_gene_list
+        from med_research.pipeline.bioinformatics.enrichment import get_disease_gene_list
 
-        gene_list = get_lupus_gene_list(sample_kg_genes, G=None, untargeted_only=False)
+        gene_list = get_disease_gene_list(
+            sample_kg_genes, G=None, untargeted_only=False, disease_id="sle"
+        )
         symbols = {g["gene_id"] for g in gene_list}
         expected = {
             "HLA-DRB1", "IRF5", "STAT4", "BLK", "TNFAIP3",
@@ -41,9 +76,11 @@ class TestGetLupusGeneList:
         assert expected.issubset(symbols)
 
     def test_returns_list_of_dicts(self, sample_kg_genes):
-        from med_research.pipeline.bioinformatics.enrichment import get_lupus_gene_list
+        from med_research.pipeline.bioinformatics.enrichment import get_disease_gene_list
 
-        gene_list = get_lupus_gene_list(sample_kg_genes, G=None, untargeted_only=False)
+        gene_list = get_disease_gene_list(
+            sample_kg_genes, G=None, untargeted_only=False, disease_id="sle"
+        )
         assert isinstance(gene_list, list)
         for g in gene_list:
             assert "gene_id" in g
@@ -51,10 +88,14 @@ class TestGetLupusGeneList:
             assert "category" in g
 
     def test_untargeted_only_mode(self, sample_kg_genes, sample_graph):
-        from med_research.pipeline.bioinformatics.enrichment import get_lupus_gene_list
+        from med_research.pipeline.bioinformatics.enrichment import get_disease_gene_list
 
-        untargeted = get_lupus_gene_list(sample_kg_genes, G=sample_graph, untargeted_only=True)
-        all_genes = get_lupus_gene_list(sample_kg_genes, G=sample_graph, untargeted_only=False)
+        untargeted = get_disease_gene_list(
+            sample_kg_genes, G=sample_graph, untargeted_only=True, disease_id="sle"
+        )
+        all_genes = get_disease_gene_list(
+            sample_kg_genes, G=sample_graph, untargeted_only=False, disease_id="sle"
+        )
 
         # Untargeted should be a subset of all
         untargeted_ids = {g["gene_id"] for g in untargeted}
@@ -63,25 +104,31 @@ class TestGetLupusGeneList:
         assert len(untargeted_ids) < len(all_ids)
 
     def test_untargeted_excludes_targeted(self, sample_kg_genes, sample_graph):
-        from med_research.pipeline.bioinformatics.enrichment import get_lupus_gene_list
+        from med_research.pipeline.bioinformatics.enrichment import get_disease_gene_list
 
-        untargeted = get_lupus_gene_list(sample_kg_genes, G=sample_graph, untargeted_only=True)
+        untargeted = get_disease_gene_list(
+            sample_kg_genes, G=sample_graph, untargeted_only=True, disease_id="sle"
+        )
         ids = {g["gene_id"] for g in untargeted}
         # These genes have TARGETS edges in the KG
         targeted = {"BAFF", "IFNAR1", "TLR7", "TLR9", "JAK1"}
         assert ids.isdisjoint(targeted)
 
     def test_has_correct_count(self, sample_kg_genes):
-        from med_research.pipeline.bioinformatics.enrichment import get_lupus_gene_list
+        from med_research.pipeline.bioinformatics.enrichment import get_disease_gene_list
 
-        gene_list = get_lupus_gene_list(sample_kg_genes, G=None, untargeted_only=False)
+        gene_list = get_disease_gene_list(
+            sample_kg_genes, G=None, untargeted_only=False, disease_id="sle"
+        )
         # 22 total - 4 drug target genes = 18 lupus genes
         assert len(gene_list) >= 18
 
     def test_symbols_are_clean(self, sample_kg_genes):
-        from med_research.pipeline.bioinformatics.enrichment import get_lupus_gene_list
+        from med_research.pipeline.bioinformatics.enrichment import get_disease_gene_list
 
-        gene_list = get_lupus_gene_list(sample_kg_genes, G=None, untargeted_only=False)
+        gene_list = get_disease_gene_list(
+            sample_kg_genes, G=None, untargeted_only=False, disease_id="sle"
+        )
         for g in gene_list:
             symbol = g["symbol"]
             # Should not contain parentheses (stripped brand/detail parts)
@@ -222,5 +269,7 @@ class TestLoadFunctions:
 
         sle_genes = load_kg_genes("sle")
         ra_genes = load_kg_genes("ra")
-        assert len(sle_genes) > 0 and len(ra_genes) > 0
+        ibd_genes = load_kg_genes("ibd")
+        assert len(sle_genes) > 0 and len(ra_genes) > 0 and len(ibd_genes) > 0
         assert set(sle_genes) != set(ra_genes)
+        assert set(ra_genes) != set(ibd_genes)

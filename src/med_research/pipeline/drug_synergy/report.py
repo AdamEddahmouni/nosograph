@@ -11,12 +11,7 @@ Generates a beautiful standalone HTML report with:
 from datetime import datetime
 from pathlib import Path
 
-from med_research.pipeline.reporting import (
-    apply_disease_labels,
-    disease_context,
-    provenance_footer_html,
-)
-from med_research.templates import env as template_env
+from med_research.pipeline.reporting import disease_context, render_report
 
 
 def generate_html_report(
@@ -119,23 +114,24 @@ def generate_html_report(
         </div>"""
 
     context = disease_context(disease_id)
-    html = template_env.get_template("reports/drug_synergy.html").render(
-        ctx_0=len(scored_pairs),
-        ctx_1=datetime.now().strftime('%B %d, %Y at %H:%M'),
-        ctx_2=n_tier1,
-        ctx_3=n_tier2,
-        ctx_4=n_tier3,
-        ctx_5=avg_score,
-        ctx_6=highlight_html,
-        ctx_7=rows_html,
-        ctx_8=top5_json,
-        ctx_disease=context["name"],
-        ctx_disease_id=context["id"],
+    html = render_report(
+        "reports/drug_synergy.html",
+        {
+            "ctx_0": len(scored_pairs),
+            "ctx_1": datetime.now().strftime('%B %d, %Y at %H:%M'),
+            "ctx_2": n_tier1,
+            "ctx_3": n_tier2,
+            "ctx_4": n_tier3,
+            "ctx_5": avg_score,
+            "ctx_6": highlight_html,
+            "ctx_7": rows_html,
+            "ctx_8": top5_json,
+            "ctx_disease": context["name"],
+            "ctx_disease_id": context["id"],
+        },
+        disease_id,
+        provenance=provenance,
     )
-    html = apply_disease_labels(html, disease_id)
-    footer = provenance_footer_html(provenance)
-    if footer:
-        html = html.replace("</body>", f"{footer}\n</body>", 1)
 
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(html)

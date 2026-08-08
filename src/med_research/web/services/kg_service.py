@@ -1,11 +1,12 @@
-"""Knowledge Graph service — wraps build_graph module functions."""
+"""Knowledge Graph service — wraps knowledge_graph registry adapter."""
 
 from collections import defaultdict
 
 import networkx as nx
 
 from med_research.diseases.coverage import coverage_for_disease
-from med_research.web.dependencies import get_knowledge_graph
+from med_research.pipeline.dispatch import execute_module
+from med_research.web.services.registry_service import run_module
 
 
 def _kg_coverage_payload(disease_id: str) -> dict:
@@ -14,6 +15,14 @@ def _kg_coverage_payload(disease_id: str) -> dict:
         **core.to_dict(),
         "module": "kg",
     }
+
+
+def _load_graph(disease_id: str):
+    """Build or load the knowledge graph via the registry dispatch path."""
+    result = execute_module("knowledge_graph", disease_id)
+    if not result.success:
+        return None, result
+    return result.data, result
 
 
 def get_graph_stats(disease_id: str = "sle") -> dict:
@@ -31,7 +40,18 @@ def get_graph_stats(disease_id: str = "sle") -> dict:
             "status": "blocked",
         }
 
-    G = get_knowledge_graph(disease_id)
+    G, _ = _load_graph(disease_id)
+    if G is None:
+        return {
+            "total_nodes": 0,
+            "total_edges": 0,
+            "node_types": {},
+            "edge_types": {},
+            "untargeted_genes": [],
+            "top_hub_genes": [],
+            "coverage": coverage,
+            "status": "blocked",
+        }
 
     node_types = defaultdict(int)
     for _, data in G.nodes(data=True):
@@ -102,7 +122,14 @@ def get_graph_data(disease_id: str = "sle") -> dict:
             "status": "blocked",
         }
 
-    G = get_knowledge_graph(disease_id)
+    G, _ = _load_graph(disease_id)
+    if G is None:
+        return {
+            "elements": [],
+            "coverage": coverage,
+            "status": "blocked",
+        }
+
     elements = []
 
     for node_id, data in G.nodes(data=True):
@@ -137,8 +164,8 @@ def get_graph_data(disease_id: str = "sle") -> dict:
 
 def get_node_detail(node_id: str, disease_id: str = "sle") -> dict | None:
     """Get detailed information about a specific node."""
-    G = get_knowledge_graph(disease_id)
-    if node_id not in G:
+    G, _ = _load_graph(disease_id)
+    if G is None or node_id not in G:
         return None
 
     data = dict(G.nodes[node_id])
@@ -167,7 +194,10 @@ def get_node_detail(node_id: str, disease_id: str = "sle") -> dict | None:
 
 def get_shortest_path(source: str, target: str, disease_id: str = "sle") -> dict | None:
     """Find the shortest path between two nodes."""
-    G = get_knowledge_graph(disease_id)
+    G, _ = _load_graph(disease_id)
+    if G is None:
+        return None
+
     try:
         path = nx.shortest_path(G, source=source, target=target)
         edges = []
@@ -189,8 +219,8 @@ def get_shortest_path(source: str, target: str, disease_id: str = "sle") -> dict
 
 def get_neighbors(node_id: str, n_hops: int = 1, disease_id: str = "sle") -> dict | None:
     """Get neighbors of a node up to n_hops away."""
-    G = get_knowledge_graph(disease_id)
-    if node_id not in G:
+    G, _ = _load_graph(disease_id)
+    if G is None or node_id not in G:
         return None
 
     if n_hops == 1:
@@ -232,7 +262,10 @@ def get_neighbors(node_id: str, n_hops: int = 1, disease_id: str = "sle") -> dic
 
 def search_nodes(query: str, disease_id: str = "sle") -> list[dict]:
     """Search nodes by label, ID, or description."""
-    G = get_knowledge_graph(disease_id)
+    G, _ = _load_graph(disease_id)
+    if G is None:
+        return []
+
     query_lower = query.lower()
     results = []
 
@@ -257,29 +290,20 @@ def search_nodes(query: str, disease_id: str = "sle") -> list[dict]:
 def run_centrality_analysis(
     metric: str = "betweenness", top_n: int = 15, disease_id: str = "sle"
 ) -> dict:
-    """Compute centrality metrics for the selected disease graph."""
-    G = get_knowledge_graph(disease_id)
-    from med_research.pipeline.network_pharmacology.analyzer import compute_centrality
-
-    all_centrality = compute_centrality(G)
-    scores = all_centrality.get(metric, {})
-
-    sorted_nodes = sorted(scores.items(), key=lambda x: x[1], reverse=True)[:top_n]
-    nodes = [
-        {
-            "node_id": node,
-            "label": G.nodes[node].get("label", node),
-            "type": G.nodes[node].get("type", "unknown"),
-            "score": round(score, 4),
-        }
-        for node, score in sorted_nodes
-    ]
-
-    return {"metric": metric, "nodes": nodes, "total_nodes": G.number_of_nodes()}
+    """Compute centrality metrics via the network_pharmacology registry adapter."""
+    return run_module(
+        "network_pharmacology",
+        disease_id,
+        operation="centrality",
+        metric=metric,
+        top_n=top_n,
+    )
 
 
 def run_community_detection(disease_id: str = "sle") -> dict:
     """Detect communities in the selected disease knowledge graph."""
-    from med_research.pipeline.network_pharmacology.analyzer import compute_communities
-
-    return compute_communities(get_knowledge_graph(disease_id))
+    return run_module(
+        "network_pharmacology",
+        disease_id,
+        operation="communities",
+    )

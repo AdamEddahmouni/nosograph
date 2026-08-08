@@ -23,9 +23,10 @@ SYMPTOMS = [
 ]
 
 PUBMED_QUERIES = [
-    "(SSC[Title/Abstract]) AND (treatment[Title/Abstract])",
-    "(SSC[Title/Abstract]) AND (genetics[Title/Abstract])",
-    "(SSC[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(systemic sclerosis[Title/Abstract] OR scleroderma[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(systemic sclerosis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(systemic sclerosis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(systemic sclerosis[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 CAR_T_SCORES = {
@@ -92,7 +93,7 @@ CAR_T_SCORES = {
     },
 }
 
-DRUG_INDUCED_LUPUS_RISK = {
+DRUG_SAFETY_RISK = {
     "high_risk": [
         "bleomycin",
         "interferon-alpha",
@@ -119,8 +120,8 @@ GWAS_SEARCH_TERMS = [
     "SSc",
 ]
 
-# Compatibility alias retained for older callers; neutral name is authoritative.
-DISEASE_SPECIFIC_RISK = DRUG_INDUCED_LUPUS_RISK
+DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK
+DRUG_INDUCED_LUPUS_RISK = DRUG_SAFETY_RISK
 
 SCREENING_PROFILE = {
     "strategy_id": "ssc-screening-v1",

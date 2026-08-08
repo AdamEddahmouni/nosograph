@@ -11,12 +11,7 @@ Generates a standalone HTML report showing:
 from datetime import datetime
 from pathlib import Path
 
-from med_research.pipeline.reporting import (
-    apply_disease_labels,
-    disease_context,
-    provenance_footer_html,
-)
-from med_research.templates import env as template_env
+from med_research.pipeline.reporting import disease_context, render_report
 
 
 def generate_literature_report(
@@ -270,37 +265,38 @@ def generate_literature_report(
         <br>"""
 
     # ── Assemble HTML ───────────────────────────────────────────────────
-    html = template_env.get_template("reports/literature_mining.html").render(
-        ctx_0=stats['total_articles'],
-        ctx_1=len(entities['genes']),
-        ctx_2=len(entities['drugs']),
-        ctx_3=datetime.now().strftime('%B %d, %Y at %H:%M'),
-        ctx_4=stats['articles_with_matches'],
-        ctx_5=stats['genes_found'],
-        ctx_6=stats['drugs_found'],
-        ctx_7=stats['candidates_supported'],
-        ctx_8=novel_count,
-        ctx_9=variant_count,
-        ctx_10=clinical_count,
-        ctx_11=dosage_count,
-        ctx_12=extraction_stat_card,
-        ctx_13=extraction_section,
-        ctx_14=candidate_rows,
-        ctx_15=gene_rows,
-        ctx_16=article_rows,
-        ctx_17=spacy_status,
-        ctx_18=novel_section,
-        ctx_19=variant_section,
-        ctx_20=clinical_section,
-        ctx_21=dosage_section,
-        ctx_22=statistics_section,
-        disease_id=context["name"],
-        disease_id_raw=context["id"],
+    html = render_report(
+        "reports/literature_mining.html",
+        {
+            "ctx_0": stats['total_articles'],
+            "ctx_1": len(entities['genes']),
+            "ctx_2": len(entities['drugs']),
+            "ctx_3": datetime.now().strftime('%B %d, %Y at %H:%M'),
+            "ctx_4": stats['articles_with_matches'],
+            "ctx_5": stats['genes_found'],
+            "ctx_6": stats['drugs_found'],
+            "ctx_7": stats['candidates_supported'],
+            "ctx_8": novel_count,
+            "ctx_9": variant_count,
+            "ctx_10": clinical_count,
+            "ctx_11": dosage_count,
+            "ctx_12": extraction_stat_card,
+            "ctx_13": extraction_section,
+            "ctx_14": candidate_rows,
+            "ctx_15": gene_rows,
+            "ctx_16": article_rows,
+            "ctx_17": spacy_status,
+            "ctx_18": novel_section,
+            "ctx_19": variant_section,
+            "ctx_20": clinical_section,
+            "ctx_21": dosage_section,
+            "ctx_22": statistics_section,
+            "disease_id": context["name"],
+            "disease_id_raw": context["id"],
+        },
+        disease_id,
+        provenance=provenance,
     )
-    html = apply_disease_labels(html, disease_id)
-    footer = provenance_footer_html(provenance)
-    if footer:
-        html = html.replace("</body>", f"{footer}\n</body>", 1)
 
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(html)

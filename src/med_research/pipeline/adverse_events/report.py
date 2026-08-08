@@ -13,12 +13,7 @@ Rendered via the shared Jinja2 template infrastructure (templates/reports/).
 from datetime import datetime
 from pathlib import Path
 
-from med_research.pipeline.reporting import (
-    apply_disease_labels,
-    disease_context,
-    provenance_footer_html,
-)
-from med_research.templates import env as template_env
+from med_research.pipeline.reporting import disease_context, render_report
 
 
 def generate_html_report(
@@ -78,23 +73,24 @@ def generate_html_report(
             <td>{bbw_badge}</td>
         </tr>"""
 
-    html = template_env.get_template("reports/adverse_events.html").render(
-        ctx_0=len(safety_results),
-        ctx_disease=context["name"],
-        ctx_disease_id=context["id"],
-        ctx_1=datetime.now().strftime("%B %d, %Y at %H:%M"),
-        ctx_2=avg,
-        ctx_3=n_bbw,
-        ctx_4=n_disease_risk,
-        ctx_5=highlight_html,
-        ctx_6=rows_html,
-        ctx_profile_source=metadata.get("profile_source", ""),
-        ctx_limitations=metadata.get("limitations", []),
+    html = render_report(
+        "reports/adverse_events.html",
+        {
+            "ctx_0": len(safety_results),
+            "ctx_disease": context["name"],
+            "ctx_disease_id": context["id"],
+            "ctx_1": datetime.now().strftime("%B %d, %Y at %H:%M"),
+            "ctx_2": avg,
+            "ctx_3": n_bbw,
+            "ctx_4": n_disease_risk,
+            "ctx_5": highlight_html,
+            "ctx_6": rows_html,
+            "ctx_profile_source": metadata.get("profile_source", ""),
+            "ctx_limitations": metadata.get("limitations", []),
+        },
+        disease_id,
+        provenance=provenance,
     )
-    html = apply_disease_labels(html, disease_id)
-    footer = provenance_footer_html(provenance)
-    if footer:
-        html = html.replace("</body>", f"{footer}\n</body>", 1)
 
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(html)

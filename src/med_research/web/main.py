@@ -31,6 +31,7 @@ from med_research.web.middleware import (
     RateLimitMiddleware,
     RequestBodySizeLimitMiddleware,
 )
+from med_research.web.error_handlers import register_error_handlers
 from med_research.web.routers import routers
 
 REPO_ROOT = Path(__file__).parent.parent.parent.parent
@@ -95,6 +96,8 @@ app.add_middleware(
 app.add_middleware(RequestBodySizeLimitMiddleware)
 app.add_middleware(AuthMiddleware)
 app.add_middleware(RateLimitMiddleware)
+
+register_error_handlers(app)
 
 # ── Register Routers ────────────────────────────────────────────────────────
 

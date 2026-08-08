@@ -462,30 +462,22 @@ def test_run_synergy_service():
 
 @pytest.mark.slow
 def test_synergy_cli_help():
-    import subprocess
+    from tests.cli_helpers import cli_help_output
 
-    result = subprocess.run(
-        [sys.executable, "main.py", "synergy", "--help"],
-        capture_output=True,
-        text=True, encoding="utf-8", errors="replace",
-        cwd=str(Path(__file__).parent.parent),
-    )
-    assert result.returncode == 0
-    assert "synergy" in result.stdout.lower()
-    assert "--disease" in result.stdout
+    help_text = cli_help_output("synergy", "--help")
+    assert "synergy" in help_text.lower()
+    assert "--disease" in help_text
 
 
-@pytest.mark.slow
-def test_synergy_cli_top():
-    import subprocess
+def test_synergy_cli_top(caplog):
+    import logging
 
-    result = subprocess.run(
-        [sys.executable, "main.py", "synergy", "--top", "5"],
-        capture_output=True,
-        text=True, encoding="utf-8", errors="replace",
-        cwd=str(Path(__file__).parent.parent),
-        timeout=30,
-    )
-    assert result.returncode == 0
-    assert "TOP 5 SYNERGISTIC" in result.stdout
-    assert "DRUG SYNERGY ANALYSIS SUMMARY" in result.stdout
+    from med_research.cli import cmd_synergy
+    from tests.cli_helpers import run_cli_handler
+
+    with caplog.at_level(logging.INFO):
+        exit_code = run_cli_handler(cmd_synergy, "synergy", "--top", "5")
+
+    assert exit_code == 0
+    assert "TOP 5 SYNERGISTIC" in caplog.text
+    assert "DRUG SYNERGY ANALYSIS SUMMARY" in caplog.text

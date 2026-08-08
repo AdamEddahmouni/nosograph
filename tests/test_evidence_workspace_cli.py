@@ -27,7 +27,7 @@ def test_workspace_cli_parser_accepts_question_sources_and_exports():
 
 
 def test_workspace_cli_runs_and_writes_requested_exports(monkeypatch, tmp_path, caplog):
-    import med_research.pipeline.evidence_workspace as workspace_module
+    import logging
 
     def fake_run(request, **kwargs):
         return EvidenceDossier(
@@ -37,7 +37,10 @@ def test_workspace_cli_runs_and_writes_requested_exports(monkeypatch, tmp_path, 
             completed_at="2026-08-06T00:00:00Z",
         )
 
-    monkeypatch.setattr(workspace_module, "run_workspace", fake_run)
+    monkeypatch.setattr(
+        "med_research.pipeline.evidence_workspace.workspace.run_workspace",
+        fake_run,
+    )
     args = _build_parser().parse_args(
         [
             "workspace",
@@ -50,7 +53,8 @@ def test_workspace_cli_runs_and_writes_requested_exports(monkeypatch, tmp_path, 
         ]
     )
 
-    assert cmd_workspace(args) == 0
+    with caplog.at_level(logging.INFO):
+        assert cmd_workspace(args) == 0
     assert (tmp_path / "dossier.json").exists()
     assert (tmp_path / "dossier.html").exists()
     assert "ew-cli" in caplog.text

@@ -2,6 +2,9 @@
 
 from __future__ import annotations
 
+import re
+import subprocess
+import sys
 from pathlib import Path
 
 import pytest
@@ -10,6 +13,9 @@ from med_research.pipeline.provenance import build_provenance
 from med_research.pipeline.reporting import disease_context
 
 pytestmark = pytest.mark.unit
+
+PROJECT_ROOT = Path(__file__).parent.parent
+CLI_MODULE = [sys.executable, "-m", "med_research.cli"]
 
 
 @pytest.fixture
@@ -78,6 +84,26 @@ def _read_report(path: str) -> str:
     html = report_path.read_text(encoding="utf-8")
     report_path.unlink(missing_ok=True)
     return html
+
+
+def _assert_cli_provenance_footer(html: str) -> None:
+    """Assert CLI --export-html reports include a reproducibility footer."""
+    assert "Reproducibility" in html
+    assert re.search(r"fingerprint <code>[a-f0-9]{20}</code>", html)
+    assert re.search(r"mode (cache|live)", html)
+    assert re.search(r"run <code>[^<]+</code>", html)
+
+
+def _run_cli_export_html(*args: str) -> subprocess.CompletedProcess[str]:
+    return subprocess.run(
+        [*CLI_MODULE, *args],
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        timeout=120,
+        cwd=PROJECT_ROOT,
+    )
 
 
 @pytest.fixture
@@ -542,3 +568,139 @@ def test_semantic_search_report_provenance():
         provenance=provenance,
     )
     _assert_provenance_footer(_read_report(report_path), provenance, disease_id)
+
+
+@pytest.mark.parametrize(
+    ("command", "report_rel_path"),
+    [
+        ("synergy", "src/med_research/pipeline/drug_synergy/report.html"),
+        ("expression", "src/med_research/pipeline/gene_expression/report.html"),
+        ("cross-disease", "src/med_research/pipeline/cross_disease/report.html"),
+    ],
+)
+def test_cli_export_html_includes_provenance_footer(command, report_rel_path):
+    """CLI --export-html should match engine __main__ provenance footers."""
+    report_path = PROJECT_ROOT / report_rel_path
+    report_path.unlink(missing_ok=True)
+
+    args = [command, "--export-html", "--top", "5"]
+    if command != "cross-disease":
+        args.extend(["--disease", "ra"])
+
+    result = _run_cli_export_html(*args)
+    assert result.returncode == 0, result.stderr or result.stdout
+    assert report_path.exists(), f"Expected report at {report_path}"
+
+    html = _read_report(str(report_path))
+    _assert_cli_provenance_footer(html)
+
+
+def test_evidence_gatherer_report_provenance():
+    from med_research.pipeline.evidence.gatherer_report import generate_html_report
+
+    gathered = {
+        "query": "rheumatoid arthritis treatment",
+        "total_results": 1,
+        "elapsed_seconds": 1.2,
+        "results_by_source": {"pubmed": 1},
+        "all_results": [{
+            "source_type": "pubmed",
+            "title": "Anti-TNF therapy in RA",
+            "year": "2024",
+            "snippet": "Clinical outcomes",
+            "url": "https://example.com/1",
+        }],
+        "crossref": {"pairs": []},
+    }
+    provenance = build_provenance(
+        disease_id="ra",
+        module="evidence_gather",
+        sources=["pubmed"],
+        query="rheumatoid arthritis treatment",
+        cache_or_live="cache",
+        run_id="eg-test-run",
+    )
+
+    report_path = generate_html_report(gathered, provenance=provenance)
+    _assert_provenance_footer(_read_report(report_path), provenance, "ra")
+
+
+def test_llm_extractor_report_provenance():
+    from med_research.pipeline.evidence.extractor_report import generate_html_report
+
+    results = {
+        "query": "JAK inhibitor rheumatoid arthritis",
+        "model": "gpt-4o-mini",
+        "total_extracted": 1,
+        "successful_extractions": 1,
+        "elapsed_seconds": 2.5,
+        "extractions": [{
+            "title": "Tofacitinib in RA",
+            "year": "2024",
+            "source_type": "pubmed",
+            "source": "PMID:123",
+            "evidence_level": "rct",
+            "model_system": "human",
+            "key_findings": "Improved ACR response",
+            "drugs_mentioned": ["tofacitinib"],
+            "confidence": 85,
+            "relevance_to_query": 90,
+        }],
+        "stats": {
+            "evidence_levels": {"rct": 1},
+            "model_systems": {"human": 1},
+            "study_designs": {"rct": 1},
+            "unique_drugs_mentioned": ["tofacitinib"],
+            "avg_confidence": 85.0,
+            "n_unique_drugs": 1,
+        },
+    }
+    provenance = build_provenance(
+        disease_id="ra",
+        module="llm_extractor",
+        sources=["pubmed"],
+        query="JAK inhibitor rheumatoid arthritis",
+        cache_or_live="cache",
+        model="gpt-4o-mini",
+        run_id="le-test-run",
+    )
+
+    report_path = generate_html_report(results, provenance=provenance)
+    _assert_provenance_footer(_read_report(report_path), provenance, "ra")
+
+
+def test_evidence_monitor_report_provenance():
+    from med_research.pipeline.evidence.monitor_report import generate_html_report
+
+    prev_snapshot = {
+        "snapshot_id": "20250101_120000",
+        "queries": {"ra treatment": {"total": 1}},
+        "drugs": {},
+        "genes": {},
+    }
+    curr_snapshot = {
+        "snapshot_id": "20250102_120000",
+        "queries": {"ra treatment": {"total": 2}},
+        "drugs": {},
+        "genes": {},
+    }
+    diff = {
+        "prev_snapshot": prev_snapshot["snapshot_id"],
+        "curr_snapshot": curr_snapshot["snapshot_id"],
+        "hours_elapsed": 24.0,
+        "total_changes": 1,
+        "alerts": [],
+        "changes": {"changed_queries": ["ra treatment"], "changed_drugs": [], "changed_genes": []},
+    }
+    provenance = build_provenance(
+        disease_id="ra",
+        module="evidence_monitor",
+        sources=["pubmed"],
+        cache_or_live="cache",
+        run_id="em-test-run",
+    )
+
+    report_path = generate_html_report(
+        diff, prev_snapshot, curr_snapshot, provenance=provenance
+    )
+    _assert_provenance_footer(_read_report(report_path), provenance)

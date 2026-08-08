@@ -1,24 +1,14 @@
 """Gene Expression Correlation service layer."""
 
 from med_research.diseases.coverage import module_coverage
-from med_research.web.services.shared_services import safe_serialize
+from med_research.pipeline.gene_expression.correlator import last_coverage
+from med_research.web.dependencies import safe_serialize
+from med_research.web.services.registry_service import run_module
 
 
 def run_correlation_analysis(top_n: int = 26, disease_id: str = "sle") -> dict:
-    """Run gene expression correlation analysis and return serializable result.
-
-    Args:
-        top_n: Number of top results to return (default: all 26).
-        disease_id: Disease whose drug library and signature are used.
-
-    Returns:
-        Dict with drugs, total_drugs, avg_score, and tier counts.
-    """
-    import med_research.pipeline.gene_expression.correlator as expression_module
-    from med_research.pipeline.gene_expression.correlator import compute_all_correlations
-
+    """Run gene expression correlation via the gene_expression registry adapter."""
     coverage = module_coverage(disease_id, "expression", ("genes", "drugs"))
-    expression_module.last_coverage = coverage
     if not coverage.is_runnable:
         return {
             "drugs": [],
@@ -31,7 +21,8 @@ def run_correlation_analysis(top_n: int = 26, disease_id: str = "sle") -> dict:
             "status": "blocked",
         }
 
-    results = compute_all_correlations(disease_id=disease_id)
+    results = run_module("gene_expression", disease_id)
+    coverage_payload = last_coverage.to_dict() if last_coverage else coverage.to_dict()
 
     scores = [r["composite_score"] for r in results]
     avg = sum(scores) / len(scores) if scores else 0.0
@@ -47,6 +38,6 @@ def run_correlation_analysis(top_n: int = 26, disease_id: str = "sle") -> dict:
         "tier1_count": tier1,
         "tier2_count": tier2,
         "tier3_count": tier3,
-        "coverage": coverage.to_dict(),
-        "status": "limited_coverage" if coverage.level == "partial" else "ready",
+        "coverage": coverage_payload,
+        "status": "limited_coverage" if coverage_payload.get("level") == "partial" else "ready",
     })

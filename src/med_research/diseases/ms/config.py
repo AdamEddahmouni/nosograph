@@ -21,9 +21,10 @@ SYMPTOMS = [
 ]
 
 PUBMED_QUERIES = [
-    "(MS[Title/Abstract]) AND (treatment[Title/Abstract])",
-    "(MS[Title/Abstract]) AND (genetics[Title/Abstract])",
-    "(MS[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(multiple sclerosis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(multiple sclerosis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(multiple sclerosis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(multiple sclerosis[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 CAR_T_SCORES = {
@@ -105,7 +106,7 @@ CAR_T_SCORES = {
     },
 }
 
-DRUG_INDUCED_LUPUS_RISK = {
+DRUG_SAFETY_RISK = {
     "high_risk": [
         "interferon-beta",
         "natalizumab (PML)",
@@ -131,8 +132,8 @@ GWAS_SEARCH_TERMS = [
     "MS",
 ]
 
-# Compatibility alias retained for older callers; neutral name is authoritative.
-DISEASE_SPECIFIC_RISK = DRUG_INDUCED_LUPUS_RISK
+DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK
+DRUG_INDUCED_LUPUS_RISK = DRUG_SAFETY_RISK
 
 SCREENING_PROFILE = {
     "strategy_id": "ms-screening-v1",

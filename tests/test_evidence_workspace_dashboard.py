@@ -123,7 +123,8 @@ def test_dashboard_contains_workspace_form_and_async_rendering():
 
     assert 'id="evidence-workspace"' in index
     assert 'onsubmit="submitWorkspace(event)"' in index
-    assert "workspace: '/api/jobs/workspace'" in script
+    assert "module === 'workspace'" in script
+    assert "'/api/jobs/workspace'" in script
     assert "renderWorkspaceResult" in script
     assert ".workspace-shell" in styles
     assert "selected disease" in index

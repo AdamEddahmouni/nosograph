@@ -20,9 +20,10 @@ SYMPTOMS = [
 ]
 
 PUBMED_QUERIES = [
-    "(SS[Title/Abstract]) AND (treatment[Title/Abstract])",
-    "(SS[Title/Abstract]) AND (genetics[Title/Abstract])",
-    "(SS[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Sjogren's syndrome[Title/Abstract] OR Sjögren's syndrome[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Sjogren's syndrome[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Sjogren's syndrome[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Sjogren's syndrome[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 CAR_T_SCORES = {
@@ -91,7 +92,7 @@ CAR_T_SCORES = {
     },
 }
 
-DRUG_INDUCED_LUPUS_RISK = {
+DRUG_SAFETY_RISK = {
     "high_risk": [
         "interferon-alpha",
         "interferon-beta",
@@ -116,8 +117,8 @@ GWAS_SEARCH_TERMS = [
     "SS",
 ]
 
-# Compatibility alias retained for older callers; neutral name is authoritative.
-DISEASE_SPECIFIC_RISK = DRUG_INDUCED_LUPUS_RISK
+DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK
+DRUG_INDUCED_LUPUS_RISK = DRUG_SAFETY_RISK
 
 SCREENING_PROFILE = {
     "strategy_id": "ss-screening-v1",

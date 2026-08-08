@@ -11,6 +11,8 @@ import pytest
 
 from med_research.pipeline.knowledge_graph.config import load_genes
 
+pytest_plugins = ["tests.evidence_http_fixtures", "tests.integration.http_fixtures"]
+
 # Disable the in-memory API rate limiter during tests. The web API suite
 # issues 100+ requests per session and would otherwise be throttled with
 # 429 responses mid-run. This runs before any test module (including

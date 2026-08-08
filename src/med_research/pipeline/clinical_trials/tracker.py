@@ -15,7 +15,6 @@ Usage:
 
 import argparse
 import json
-import os
 import sys
 from collections import Counter
 from datetime import datetime
@@ -27,7 +26,8 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 import logging
 
-from med_research.exceptions import DataValidationError
+from med_research.cache import NS_CLINICAL_TRIALS, cache_get, cache_set, load_legacy_json
+from med_research.exceptions import DataValidationError, classify_api_error
 from med_research.pipeline.knowledge_graph.config import load_drugs as config_load_drugs
 from med_research.pipeline.knowledge_graph.config import load_genes as config_load_genes
 
@@ -122,8 +122,9 @@ def search_clinical_trials(query: str, max_results: int = 100) -> list:
             resp = requests.get(f"{CT_API}/studies", params=params, timeout=30)
             resp.raise_for_status()
             data = resp.json()
-        except Exception as e:
-            logger.info(f"   ⚠️  API error: {e}")
+        except (requests.exceptions.RequestException, json.JSONDecodeError) as e:
+            err = classify_api_error(e, "ClinicalTrials.gov search")
+            logger.info(f"   ⚠️  {err}")
             break
 
         studies = data.get("studies", [])
@@ -369,26 +370,38 @@ def track_trials(
     # Cache is namespaced by disease and query so results cannot bleed across KGs.
     import hashlib
     query_key = hashlib.sha256(f"{disease_id}|{query}".encode()).hexdigest()[:12]
-    cache_path = DATA_DIR / f"ct_cache_{disease_id}_{query_key}.json"
-    os.makedirs(DATA_DIR, exist_ok=True)
+    cache_lookup_key = f"{disease_id}|||{query_key}"
+    legacy_cache_path = DATA_DIR / f"ct_cache_{disease_id}_{query_key}.json"
 
-    if use_cache and cache_path.exists():
+    cached_payload = cache_get(NS_CLINICAL_TRIALS, cache_lookup_key, use_cache=use_cache)
+    if cached_payload is None and use_cache:
+        legacy = load_legacy_json(legacy_cache_path)
+        if legacy:
+            cached_payload = legacy
+            cache_set(NS_CLINICAL_TRIALS, cache_lookup_key, legacy, use_cache=True)
+
+    if use_cache and cached_payload is not None:
         try:
-            cached = json.loads(cache_path.read_text(encoding="utf-8"))
-            trials = cached.get("trials", [])
+            trials = cached_payload.get("trials", [])
             if len(trials) >= max_results:
                 logger.info(f"📦 Loading {len(trials)} trials from cache...")
-                if "kg_crossref" in cached and cached.get("kg_crossref"):
+                if cached_payload.get("kg_crossref"):
                     trials = [dict(t) for t in trials]
                     for t in trials:
                         if "kg_matches" not in t:
-                            t["kg_matches"] = {"genes": [], "drugs": [], "gene_count": 0, "drug_count": 0, "has_match": False}
+                            t["kg_matches"] = {
+                                "genes": [],
+                                "drugs": [],
+                                "gene_count": 0,
+                                "drug_count": 0,
+                                "has_match": False,
+                            }
                     return {
                         "trials": trials,
                         "stats": _compute_stats(trials),
-                        "kg_crossref": cached.get("kg_crossref", {}),
+                        "kg_crossref": cached_payload.get("kg_crossref", {}),
                     }
-        except (json.JSONDecodeError, KeyError) as e:
+        except (KeyError, TypeError) as e:
             logger.info(f"   ⚠️  Cache error ({e}), re-fetching...")
 
     # Search trials
@@ -418,11 +431,8 @@ def track_trials(
         "kg_crossref": kg_crossref,
         "timestamp": datetime.now().isoformat(),
     }
-    cache_path.write_text(
-        json.dumps(cache_data, indent=2, ensure_ascii=False, default=str),
-        encoding="utf-8",
-    )
-    logger.info(f"💾 Cached {len(trials)} trials to {cache_path}")
+    cache_set(NS_CLINICAL_TRIALS, cache_lookup_key, cache_data, use_cache=use_cache)
+    logger.info("💾 Cached %d trials (namespace=%s)", len(trials), NS_CLINICAL_TRIALS)
 
     return {"trials": trials, "stats": stats, "kg_crossref": kg_crossref}
 

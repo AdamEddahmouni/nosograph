@@ -14,16 +14,50 @@ Usage:
 import json
 import logging
 from pathlib import Path
-from typing import Optional
+from typing import Any, Optional
 
 import requests
 
+from med_research.cache import NS_GEO, cache_get, cache_set, load_legacy_json
+from med_research.exceptions import classify_api_error
 from med_research.rate_limiter import rate_limited_sleep
 
 logger = logging.getLogger(__name__)
 GEO_DATA_DIR = Path(__file__).parent / "data"
 CACHE_DIR = GEO_DATA_DIR / "geo_cache"
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def _legacy_geo_search_path(disease: str, category: str) -> Path:
+    return CACHE_DIR / f"{disease}_{category}_search.json"
+
+
+def _legacy_geo_study_path(accession: str) -> Path:
+    return CACHE_DIR / f"study_{accession}.json"
+
+
+def _legacy_geo_signature_path(disease: str, tissue_key: str) -> Path:
+    return CACHE_DIR / f"signature_{disease}_{tissue_key}.json"
+
+
+def _get_geo_cached(
+    key: str,
+    legacy_path: Path,
+    use_cache: bool = True,
+) -> Optional[Any]:
+    cached = cache_get(NS_GEO, key, use_cache=use_cache)
+    if cached is not None:
+        return cached
+    if not use_cache:
+        return None
+    legacy = load_legacy_json(legacy_path)
+    if legacy is not None:
+        cache_set(NS_GEO, key, legacy, use_cache=True)
+    return legacy
+
+
+def _set_geo_cached(key: str, data: Any, use_cache: bool = True) -> None:
+    cache_set(NS_GEO, key, data, use_cache=use_cache)
 
 BASE_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
 
@@ -119,10 +153,15 @@ TISSUE_SPECIFIC_GENES = {
 def search_geo_datasets(disease: str = "sle", category: str = "broad",
                         max_results: int = 30, no_cache: bool = False) -> list:
     """Search GEO for expression datasets related to a disease."""
-    cache_file = CACHE_DIR / f"{disease}_{category}_search.json"
-
-    if not no_cache and cache_file.exists():
-        return json.loads(cache_file.read_text())
+    use_cache = not no_cache
+    search_key = f"{disease}_{category}_search"
+    cached = _get_geo_cached(
+        search_key,
+        _legacy_geo_search_path(disease, category),
+        use_cache=use_cache,
+    )
+    if cached is not None:
+        return cached
 
     search_term = SLE_SEARCH_TERMS.get(category, SLE_SEARCH_TERMS["broad"])
 
@@ -131,8 +170,9 @@ def search_geo_datasets(disease: str = "sle", category: str = "broad",
         resp = requests.get(f"{BASE_URL}/esearch.fcgi", params=params, timeout=15)
         resp.raise_for_status()
         id_list = resp.json().get("esearchresult", {}).get("idlist", [])
-    except Exception as e:
-        logger.info(f"  [GEO] Search failed for {category}: {e}")
+    except requests.exceptions.RequestException as e:
+        err = classify_api_error(e, f"GEO search for {category}")
+        logger.info(f"  [GEO] Search failed for {category}: {err}")
         return []
 
     if not id_list:
@@ -174,23 +214,29 @@ def search_geo_datasets(disease: str = "sle", category: str = "broad",
                 "organism": organism,
                 "tissue_category": category,
             })
-    except Exception as e:
-        logger.info(f"  [GEO] Summary failed: {e}")
+    except (requests.exceptions.RequestException, json.JSONDecodeError, KeyError, TypeError) as e:
+        err = classify_api_error(e, "GEO summary fetch")
+        logger.info(f"  [GEO] Summary failed: {err}")
         return []
 
-    cache_file.write_text(json.dumps(studies, indent=2))
+    _set_geo_cached(search_key, studies, use_cache=use_cache)
     return studies
 
 
-def get_study_metadata(accession: str) -> Optional[dict]:
+def get_study_metadata(accession: str, use_cache: bool = True) -> Optional[dict]:
     """Fetch detailed metadata for a single GSE study.
 
     Returns dict with title, summary, sample groups, platforms, and experimental design
     if a Series entry exists for this accession.
     """
-    cache_file = CACHE_DIR / f"study_{accession}.json"
-    if cache_file.exists():
-        return json.loads(cache_file.read_text())
+    study_key = f"study_{accession}"
+    cached = _get_geo_cached(
+        study_key,
+        _legacy_geo_study_path(accession),
+        use_cache=use_cache,
+    )
+    if cached is not None:
+        return cached
 
     params = {"db": "gds", "term": accession, "retmode": "json"}
     try:
@@ -199,8 +245,9 @@ def get_study_metadata(accession: str) -> Optional[dict]:
         id_list = resp.json().get("esearchresult", {}).get("idlist", [])
         if not id_list:
             return None
-    except Exception as e:
-        logger.info(f"  [GEO] Study search failed for {accession}: {e}")
+    except requests.exceptions.RequestException as e:
+        err = classify_api_error(e, f"GEO study search for {accession}")
+        logger.info(f"  [GEO] Study search failed for {accession}: {err}")
         return None
 
     rate_limited_sleep(0.4)
@@ -238,10 +285,11 @@ def get_study_metadata(accession: str) -> Optional[dict]:
             "n_samples": int(study_raw.get("nsamples", 0)),
         }
 
-        cache_file.write_text(json.dumps(metadata, indent=2))
+        _set_geo_cached(study_key, metadata, use_cache=True)
         return metadata
-    except Exception as e:
-        logger.info(f"  [GEO] Study summary failed for {accession}: {e}")
+    except (requests.exceptions.RequestException, json.JSONDecodeError, KeyError, TypeError) as e:
+        err = classify_api_error(e, f"GEO study summary for {accession}")
+        logger.info(f"  [GEO] Study summary failed for {accession}: {err}")
         return None
 
 
@@ -344,9 +392,14 @@ def get_expression_signature(disease: str = "sle", tissue: Optional[str] = None,
         Dict with upregulated/downregulated genes, or empty dict on failure
     """
     tissue_key = tissue or "all"
-    cache_file = CACHE_DIR / f"signature_{disease}_{tissue_key}.json"
-    if cache_file.exists():
-        return json.loads(cache_file.read_text())
+    signature_key = f"signature_{disease}_{tissue_key}"
+    cached = _get_geo_cached(
+        signature_key,
+        _legacy_geo_signature_path(disease, tissue_key),
+        use_cache=True,
+    )
+    if cached is not None:
+        return cached
 
     if tissue and tissue in SLE_SEARCH_TERMS:
         studies = search_geo_datasets(disease, tissue, max_results=20)
@@ -356,7 +409,7 @@ def get_expression_signature(disease: str = "sle", tissue: Optional[str] = None,
     signature = build_consensus_signature(studies, disease, min_studies, tissue)
 
     if signature["num_studies_used"] >= min_studies:
-        cache_file.write_text(json.dumps(signature, indent=2))
+        _set_geo_cached(signature_key, signature, use_cache=True)
         return signature
 
     fallback = build_consensus_signature([{"accession": "GEO_FALLBACK"}], disease, min_studies, tissue)

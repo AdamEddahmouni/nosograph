@@ -1,21 +1,10 @@
 """Literature Mining, Virtual Screening, Clinical Trials, ML services."""
 
-import sys
-from pathlib import Path
+from med_research.diseases.coverage import module_coverage
+from med_research.web.config import USE_CACHE
+from med_research.web.dependencies import get_candidates, get_kg_genes, safe_serialize
+from med_research.web.services.registry_service import make_progress_reporter, run_module
 
-sys.path.insert(0, str(Path(__file__).parent.parent.parent))
-
-from med_research.web.config import (
-    USE_CACHE,
-)
-from med_research.web.dependencies import (
-    get_candidates,
-    get_kg_genes,
-    get_knowledge_graph,
-    safe_serialize,
-)
-
-# ── Literature Mining ──────────────────────────────────────────────────────
 
 def run_literature(
     max_articles: int = 30,
@@ -24,26 +13,25 @@ def run_literature(
     progress_callback=None,
     disease_id: str = "sle",
 ) -> dict:
-    """Run literature mining on PubMed using the mine_literature pipeline."""
-    from med_research.pipeline.literature_mining.miner import mine_literature
-
+    """Run literature mining on PubMed via the literature_mining registry adapter."""
     genes = get_kg_genes(disease_id)
     candidates = get_candidates()
-    cb = progress_callback or (lambda p, m: None)
+    reporter = make_progress_reporter(progress_callback)
 
-    cb(10, "Loading knowledge graph entities…")
+    reporter("Literature mining", 0, 4)
 
-    cb(20, "Mining PubMed for disease-related articles…")
-    crossref, entities, _, _extraction_stats = mine_literature(
+    raw = run_module(
+        "literature_mining",
+        disease_id,
         max_per_query=max_articles,
         use_cache=not no_cache and USE_CACHE,
         targeted_candidates=targeted,
-        disease_id=disease_id,
+        progress_callback=progress_callback,
     )
+    crossref = raw.get("results", {})
 
     if not crossref or not crossref.get("article_matches"):
-        cb(100, "Literature mining complete — no articles found")
-        from med_research.diseases.coverage import module_coverage
+        reporter("Literature mining complete", 4, 4)
         coverage = module_coverage(
             disease_id, "literature", ("genes", "drugs", "pathways", "pubmed_queries")
         )
@@ -54,13 +42,12 @@ def run_literature(
             "gene_coverage": [],
             "candidate_support": [],
             "coverage": coverage.to_dict(),
-                "status": "blocked" if not coverage.is_runnable else "ready",
+            "status": "blocked" if not coverage.is_runnable else "ready",
         }
 
     article_matches = crossref["article_matches"]
-    cb(50, f"Mined {len(article_matches)} articles")
+    reporter("Building gene coverage profiles", 3, 4)
 
-    cb(75, "Building gene coverage profiles…")
     raw_coverage = crossref.get("gene_coverage", {})
     gene_coverage = []
     for gene_id, cov_info in raw_coverage.items():
@@ -81,8 +68,7 @@ def run_literature(
                 "coverage_score": min(cov_info / max(len(article_matches), 1) * 100, 100),
             })
 
-    cb(100, "Literature mining complete")
-    from med_research.diseases.coverage import module_coverage
+    reporter("Literature mining complete", 4, 4)
     coverage = module_coverage(
         disease_id, "literature", ("genes", "drugs", "pathways", "pubmed_queries")
     )
@@ -97,8 +83,6 @@ def run_literature(
     }
 
 
-# ── Virtual Screening ──────────────────────────────────────────────────────
-
 def run_screening(
     gene_id: str | None = None,
     top_n: int = 15,
@@ -106,30 +90,15 @@ def run_screening(
     progress_callback=None,
     disease_id: str = "sle",
 ) -> dict:
-    """Run virtual drug screening."""
-    from med_research.pipeline.virtual_screening.screening import (
-        build_compound_library,
-        get_untargeted_genes,
-        screen_compounds,
-    )
-
-    cb = progress_callback or (lambda p, m: None)
-
-    cb(10, "Building compound library…")
-    library = build_compound_library(disease_id)
-
-    cb(25, "Selecting target genes…")
-    target_ids = [gene_id] if gene_id else [g["id"] for g in get_untargeted_genes(disease_id)]
-
-    cb(35, f"Screening {len(library)} compounds against {len(target_ids)} targets…")
-    from med_research.diseases.coverage import module_coverage
+    """Run virtual drug screening via the virtual_screening registry adapter."""
+    reporter = make_progress_reporter(progress_callback)
     coverage = module_coverage(
         disease_id,
         "screening",
         ("genes", "drugs", "pathways", "screening_profile"),
     )
     if not coverage.is_runnable:
-        cb(100, "Screening blocked by incomplete disease-specific calibration")
+        reporter("Screening blocked", 1, 1)
         return {
             "targets": [],
             "compounds_screened": 0,
@@ -146,15 +115,29 @@ def run_screening(
             "strategy_limitations": list(coverage.limitations),
         }
 
-    results = screen_compounds(
+    reporter("Virtual screening", 0, 3)
+
+    if gene_id:
+        target_ids = [gene_id]
+    else:
+        untargeted = run_module(
+            "virtual_screening",
+            disease_id,
+            operation="untargeted_genes",
+        )
+        target_ids = [g["id"] for g in untargeted.get("untargeted_genes", [])]
+
+    results = run_module(
+        "virtual_screening",
+        disease_id,
         target_genes=target_ids,
-        compound_library=library,
         top_n=top_n,
         use_vina=use_vina,
-        disease_id=disease_id,
+        progress_callback=progress_callback,
     )
 
-    cb(75, "Formatting screening results…")
+    coverage = results.get("coverage", coverage.to_dict())
+    reporter("Formatting screening results", 2, 3)
     targets = []
     for gid, target_data in results.get("results_per_target", {}).items():
         top_compounds = []
@@ -184,9 +167,7 @@ def run_screening(
         })
 
     stats = results.get("stats", {})
-
-    cb(100, "Virtual screening complete")
-    coverage = results.get("coverage", {})
+    reporter("Virtual screening complete", 3, 3)
     return {
         "targets": targets,
         "compounds_screened": stats.get("compounds_screened", 0),
@@ -204,8 +185,6 @@ def run_screening(
     }
 
 
-# ── Clinical Trials ────────────────────────────────────────────────────────
-
 def run_trials(
     max_trials: int = 100,
     query: str = "lupus OR SLE",
@@ -213,12 +192,9 @@ def run_trials(
     progress_callback=None,
     disease_id: str = "sle",
 ) -> dict:
-    """Track clinical trials from ClinicalTrials.gov using the track_trials pipeline."""
-    from med_research.pipeline.clinical_trials.tracker import track_trials
+    """Track clinical trials via the clinical_trials registry adapter."""
+    reporter = make_progress_reporter(progress_callback)
 
-    cb = progress_callback or (lambda p, m: None)
-
-    # Resolve a disease-appropriate query when the caller didn't pass one.
     if not query or query == "lupus OR SLE":
         try:
             from med_research.diseases.base import Disease
@@ -226,27 +202,27 @@ def run_trials(
         except ValueError:
             query = "lupus OR SLE"
 
-    cb(15, "Searching ClinicalTrials.gov…")
-    results = track_trials(
+    reporter("Searching ClinicalTrials.gov", 0, 3)
+    results = run_module(
+        "clinical_trials",
+        disease_id,
         query=query,
         max_results=max_trials,
         use_cache=not no_cache and USE_CACHE,
-        disease_id=disease_id,
+        progress_callback=progress_callback,
     )
 
-    cb(60, "Processing trial data…")
+    reporter("Processing trial data", 2, 3)
     trials = results.get("trials", [])
     stats = results.get("stats", {})
     kg_crossref = results.get("kg_crossref", {})
 
-    # Build MoA distribution from categorized trials
-    cb(85, "Computing mechanism-of-action distributions…")
     moa_dist = {}
     for t in trials:
         moa = t.get("moa_category", "Other")
         moa_dist[moa] = moa_dist.get(moa, 0) + 1
 
-    cb(100, "Clinical trials tracking complete")
+    reporter("Clinical trials tracking complete", 3, 3)
     coverage = results.get("coverage", {})
     return {
         "total_trials": len(trials),
@@ -260,21 +236,14 @@ def run_trials(
     }
 
 
-# ── ML Predictor ───────────────────────────────────────────────────────────
-
 def run_ml_prediction(
     top_n: int = 15,
     no_shap: bool = False,
     progress_callback=None,
     disease_id: str = "sle",
 ) -> dict:
-    """Run ML target druggability prediction using train_and_predict."""
-    import med_research.pipeline.ml_predictor.predictor as ml_module
-    from med_research.diseases.coverage import module_coverage
-    from med_research.pipeline.ml_predictor.predictor import train_and_predict
-
+    """Run ML target druggability prediction via the ml_predictor registry adapter."""
     coverage = module_coverage(disease_id, "ml_predictor", ("genes", "relationships"))
-    ml_module.last_coverage = coverage
     if not coverage.is_runnable:
         return {
             "predictions": [],
@@ -286,32 +255,32 @@ def run_ml_prediction(
             "status": "blocked",
         }
 
-    cb = progress_callback or (lambda p, m: None)
+    reporter = make_progress_reporter(progress_callback)
+    reporter("ML prediction", 0, 3)
 
-    cb(10, "Loading knowledge graph…")
-    G = get_knowledge_graph(disease_id)
+    results = run_module(
+        "ml_predictor",
+        disease_id,
+        top=top_n,
+        progress_callback=progress_callback,
+    )
 
-    cb(25, "Training XGBoost model and computing SHAP values…")
-    results = train_and_predict(G, top_n=top_n)
-
-    if "error" in results:
-        cb(100, "ML prediction failed — see error details")
+    if results.get("error"):
+        reporter("ML prediction failed", 3, 3)
         return {
             "predictions": [],
             "model_type": "XGBoost",
             "error": results["error"],
             "top_features": [],
-            "coverage": coverage.to_dict(),
+            "coverage": results.get("coverage", coverage.to_dict()),
             "status": "blocked",
         }
 
-    cb(70, "Formatting predictions and feature importance…")
-    # Convert numpy types to native Python for JSON serialization
+    reporter("Formatting predictions", 2, 3)
     predictions = safe_serialize(results.get("predictions", []))
     for i, p in enumerate(predictions[:top_n], 1):
         p["rank"] = i
 
-    # model_metrics is a sub-dict inside results
     model_metrics = safe_serialize(results.get("model_metrics", {}))
 
     top_features = []
@@ -321,7 +290,7 @@ def run_ml_prediction(
         for name, imp in sorted_features:
             top_features.append({"feature": name, "importance": float(imp)})
 
-    cb(100, "ML prediction complete")
+    reporter("ML prediction complete", 3, 3)
     return {
         "predictions": predictions[:top_n],
         "model_type": "XGBoost",

@@ -96,6 +96,37 @@ async def disease_registry():
     return DiseasesResponse(count=len(diseases), diseases=diseases)
 
 
+@router.get("/api/system/modules")
+async def pipeline_modules(
+    disease: str = Query("sle", description="Disease ID for per-module coverage metadata"),
+):
+    """List registered pipeline modules with per-disease coverage metadata."""
+    from med_research.diseases.coverage import module_coverage
+    from med_research.pipeline.registry import get_module, list_modules
+
+    modules = []
+    for module_id in list_modules():
+        adapter = get_module(module_id)
+        coverage_module = getattr(adapter, "_COVERAGE_MODULE", module_id)
+        coverage = module_coverage(
+            disease,
+            coverage_module,
+            adapter.coverage_inputs(),
+        )
+        modules.append({
+            "module_id": module_id,
+            "depends_on": list(adapter.depends_on),
+            "coverage_inputs": list(adapter.coverage_inputs()),
+            "coverage": coverage.to_dict(),
+        })
+
+    return {
+        "count": len(modules),
+        "disease_id": disease,
+        "modules": modules,
+    }
+
+
 @router.get("/api/stats", response_model=PlatformStats)
 async def platform_stats(
     disease: str = Query("sle", description="Disease ID to compute stats for"),

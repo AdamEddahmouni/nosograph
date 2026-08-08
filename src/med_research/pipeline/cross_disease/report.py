@@ -13,8 +13,7 @@ import json
 from datetime import datetime
 from pathlib import Path
 
-from med_research.pipeline.reporting import provenance_footer_html
-from med_research.templates import env as template_env
+from med_research.pipeline.reporting import render_report
 
 
 def generate_html_report(
@@ -162,27 +161,28 @@ def generate_html_report(
             </div>
         </div>"""
 
-    html = template_env.get_template("reports/cross_disease.html").render(
-        ctx_0=n_diseases,
-        ctx_1=datetime.now().strftime('%B %d, %Y at %H:%M'),
-        ctx_2=len(mdd),
-        ctx_3=disease_cards_html,
-        ctx_4=n_shared_genes,
-        ctx_5=n_shared_drugs,
-        ctx_6=n_shared_pathways,
-        ctx_7=n_tier1,
-        ctx_8=n_tier2,
-        ctx_9=avg_score,
-        ctx_10=sim_rows_html,
-        ctx_11=drug_rows_html,
-        ctx_12=sg_rows,
-        ctx_13=sd_rows,
-        ctx_14=rep_rows,
-        ctx_15=top5_json,
+    html = render_report(
+        "reports/cross_disease.html",
+        {
+            "ctx_0": n_diseases,
+            "ctx_1": datetime.now().strftime('%B %d, %Y at %H:%M'),
+            "ctx_2": len(mdd),
+            "ctx_3": disease_cards_html,
+            "ctx_4": n_shared_genes,
+            "ctx_5": n_shared_drugs,
+            "ctx_6": n_shared_pathways,
+            "ctx_7": n_tier1,
+            "ctx_8": n_tier2,
+            "ctx_9": avg_score,
+            "ctx_10": sim_rows_html,
+            "ctx_11": drug_rows_html,
+            "ctx_12": sg_rows,
+            "ctx_13": sd_rows,
+            "ctx_14": rep_rows,
+            "ctx_15": top5_json,
+        },
+        provenance=provenance,
     )
-    footer = provenance_footer_html(provenance)
-    if footer:
-        html = html.replace("</body>", f"{footer}\n</body>", 1)
 
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(html)

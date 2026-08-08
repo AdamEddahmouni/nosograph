@@ -4,12 +4,7 @@ import json
 from datetime import datetime
 from pathlib import Path
 
-from med_research.pipeline.reporting import (
-    apply_disease_labels,
-    disease_context,
-    provenance_footer_html,
-)
-from med_research.templates import env as template_env
+from med_research.pipeline.reporting import disease_context, render_report
 
 
 def escape_html(value):
@@ -96,26 +91,27 @@ def generate_html_report(
                 <td class="col-tier" style="color:{tier_color}">{r['tier']}</td>
             </tr>"""
 
-    html = template_env.get_template("reports/gene_expression.html").render(
-        ctx_0=now,
-        ctx_1=n,
-        ctx_2=avg_score,
-        ctx_3=tier1,
-        ctx_4=tier2,
-        ctx_5=tier3,
-        ctx_6=signature_source,
-        ctx_7=num_studies,
-        ctx_8=tissue or 'broad / multi-tissue',
-        ctx_9=highlights_rows,
-        ctx_10=table_rows,
-        ctx_11=top5_json,
-        ctx_disease=disease_context(disease_id)["name"],
-        ctx_disease_id=disease_id,
+    html = render_report(
+        "reports/gene_expression.html",
+        {
+            "ctx_0": now,
+            "ctx_1": n,
+            "ctx_2": avg_score,
+            "ctx_3": tier1,
+            "ctx_4": tier2,
+            "ctx_5": tier3,
+            "ctx_6": signature_source,
+            "ctx_7": num_studies,
+            "ctx_8": tissue or "broad / multi-tissue",
+            "ctx_9": highlights_rows,
+            "ctx_10": table_rows,
+            "ctx_11": top5_json,
+            "ctx_disease": disease_context(disease_id)["name"],
+            "ctx_disease_id": disease_id,
+        },
+        disease_id,
+        provenance=provenance,
     )
-    html = apply_disease_labels(html, disease_id)
-    footer = provenance_footer_html(provenance)
-    if footer:
-        html = html.replace("</body>", f"{footer}\n</body>", 1)
 
     report_path = Path(__file__).parent / "report.html"
     report_path.write_text(html, encoding="utf-8")

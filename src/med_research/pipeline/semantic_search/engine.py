@@ -12,10 +12,8 @@ Usage:
 """
 
 import argparse
-import json
 import logging
 import sys
-from contextlib import suppress
 from pathlib import Path
 
 from med_research.diseases.coverage import ModuleCoverage
@@ -48,6 +46,15 @@ except ImportError:
     ST_AVAILABLE = False
 
 last_coverage = None
+
+
+def _chromadb_collection_errors() -> tuple:
+    """Exception types raised when a Chroma collection is missing."""
+    if CHROMADB_AVAILABLE:
+        from chromadb.errors import NotFoundError
+
+        return (NotFoundError, ValueError, RuntimeError)
+    return (ValueError, RuntimeError)
 
 
 def resolve_semantic_coverage(disease_id: str) -> ModuleCoverage:
@@ -112,18 +119,25 @@ class SemanticSearchEngine:
         return f"pubmed_abstracts_{self.disease_id}"
 
     def _cache_path(self) -> Path:
-        """Resolve the PubMed cache for this disease.
+        """Resolve the legacy PubMed cache path for this disease."""
+        from med_research.pipeline.literature_mining.miner import literature_cache_path
 
-        Uses the per-disease cache written by literature_mining/miner.py
-        (pubmed_cache_<id>.json), falling back to the legacy shared
-        cache for SLE.
-        """
-        per_disease = LIT_DATA_DIR / f"pubmed_cache_{self.disease_id}.json"
-        if per_disease.exists() or self.disease_id != "sle":
-            return per_disease
-        # Legacy shared cache, resolved the same absolute way as LIT_DATA_DIR
-        # (the module-level PUBMED_CACHE constant is CWD-relative).
-        return LIT_DATA_DIR / "pubmed_cache.json"
+        return literature_cache_path(self.disease_id)
+
+    def load_articles(self) -> list:
+        """Load cached PubMed articles for the engine's disease."""
+        from med_research.pipeline.literature_mining.miner import load_literature_articles
+
+        articles = load_literature_articles(self.disease_id, use_cache=True)
+        if articles is None:
+            cache = self._cache_path()
+            logger.info(f"No PubMed cache found at {cache}")
+            logger.info("Run: python literature_mining/miner.py first")
+            return []
+
+        logger.info(f"Loaded {len(articles)} cached articles")
+        self._articles = articles
+        return articles
 
     def _ensure_deps(self):
         if not _check_deps():
@@ -140,25 +154,14 @@ class SemanticSearchEngine:
             DATA_DIR.mkdir(parents=True, exist_ok=True)
             self.client = chromadb.PersistentClient(path=str(CHROMA_DIR))
             # Delete existing collection on re-index to avoid duplicates
-            with suppress(Exception):
+            try:
                 self.client.delete_collection(self.collection_name)
+            except _chromadb_collection_errors():
+                pass
             self.collection = self.client.create_collection(
                 name=self.collection_name,
                 metadata={"description": f"PubMed abstracts for {self.disease_id} research"},
             )
-
-    def load_articles(self) -> list:
-        """Load cached PubMed articles for the engine's disease."""
-        cache = self._cache_path()
-        if not cache.exists():
-            logger.info(f"No PubMed cache found at {cache}")
-            logger.info("Run: python literature_mining/miner.py first")
-            return []
-
-        articles = json.loads(cache.read_text(encoding="utf-8"))
-        logger.info(f"Loaded {len(articles)} cached articles")
-        self._articles = articles
-        return articles
 
     def index_articles(self, articles: list = None, batch_size: int = 50) -> int:
         """Embed and index article abstracts into ChromaDB.
@@ -221,7 +224,7 @@ class SemanticSearchEngine:
             self.client = chromadb.PersistentClient(path=str(CHROMA_DIR))
             try:
                 self.collection = self.client.get_collection(self.collection_name)
-            except Exception:
+            except _chromadb_collection_errors():
                 logger.info("No indexed collection found. Run --index first.")
                 return []
 
@@ -257,7 +260,7 @@ class SemanticSearchEngine:
             self.client = chromadb.PersistentClient(path=str(CHROMA_DIR))
             try:
                 self.collection = self.client.get_collection(self.collection_name)
-            except Exception:
+            except _chromadb_collection_errors():
                 return 0
         return self.collection.count()
 

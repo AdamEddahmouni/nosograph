@@ -14,13 +14,16 @@ import pytest
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from med_research.pipeline.evidence.monitor import (
+    _entity_query_suffix,
     _find_new_items,
     _hash_results,
+    _tracked_queries,
     compare_snapshots,
     list_snapshots,
     load_json,
     load_latest_snapshots,
     save_json,
+    take_snapshot,
 )
 from med_research.pipeline.evidence.monitor_report import generate_html_report
 
@@ -78,6 +81,68 @@ SAMPLE_SNAPSHOT_CURR = {
                 "hash": _hash_results(SAMPLE_RESULTS_B)},
     },
 }
+
+
+# ── Disease Scoping Tests ─────────────────────────────────────────────────
+
+
+class TestDiseaseScoping:
+    def test_sle_keeps_legacy_tracked_queries(self):
+        """SLE retains the original hardcoded monitor query list."""
+        queries = _tracked_queries("sle")
+        assert "B cell depletion therapy lupus" in queries
+        assert "belimumab lupus" in queries
+
+    def test_ra_uses_configured_pubmed_queries(self):
+        """Non-SLE diseases use curated PUBMED_QUERIES from config."""
+        queries = _tracked_queries("ra")
+        assert queries
+        assert all("lupus" not in query.lower() for query in queries)
+        assert any("ra" in query.lower() for query in queries)
+
+    def test_entity_query_suffix_for_sle(self):
+        assert _entity_query_suffix("sle") == "lupus"
+
+    def test_entity_query_suffix_for_ra(self):
+        suffix = _entity_query_suffix("ra")
+        assert "lupus" not in suffix
+        assert "rheumatoid" in suffix
+
+
+class TestCoverageGating:
+    def test_blocked_when_pubmed_queries_missing(self, monkeypatch):
+        from med_research.diseases.base import Disease
+
+        monkeypatch.setattr(Disease, "config", property(lambda self: {}))
+        result = take_snapshot(disease_id="ra")
+        assert result["status"] == "blocked"
+        assert result["coverage"]["module"] == "evidence_monitor"
+        assert "pubmed_queries" in result["coverage"]["missing_inputs"]
+
+    def test_snapshot_uses_disease_scoped_drug_queries(self, monkeypatch):
+        """Drug snapshot queries should not hardcode lupus for RA."""
+        captured_queries: list[str] = []
+
+        def _fake_gather(query, **kwargs):
+            captured_queries.append(query)
+            return {"all_results": [], "total_results": 0}
+
+        monkeypatch.setattr(
+            "med_research.pipeline.evidence.monitor.gather_evidence",
+            _fake_gather,
+        )
+        monkeypatch.setattr(
+            "med_research.pipeline.evidence.monitor._load_tracked_entities",
+            lambda: (["Methotrexate"], []),
+        )
+        monkeypatch.setattr(
+            "med_research.pipeline.evidence.monitor._tracked_queries",
+            lambda disease_id="sle": ["ra treatment"],
+        )
+        take_snapshot(disease_id="ra", sources=["pubmed"], max_per_query=1)
+        assert captured_queries
+        assert all("lupus" not in query.lower() for query in captured_queries)
+        assert any("methotrexate" in query.lower() for query in captured_queries)
 
 
 # ── Hashing Tests ─────────────────────────────────────────────────────────

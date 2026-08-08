@@ -827,7 +827,9 @@ def _load_disease_specific_risk(disease_id: str = "sle") -> dict:
     """
     try:
         from med_research.diseases.base import Disease
-        risk = Disease(disease_id).get_disease_risk_config()
+
+        disease = Disease(disease_id)
+        risk = disease.config.get("DRUG_SAFETY_RISK") or disease.get_disease_risk_config()
     except Exception:
         risk = {}
     if not isinstance(risk, dict):

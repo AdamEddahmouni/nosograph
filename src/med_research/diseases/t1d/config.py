@@ -20,9 +20,10 @@ SYMPTOMS = [
 ]
 
 PUBMED_QUERIES = [
-    "(T1D[Title/Abstract]) AND (treatment[Title/Abstract])",
-    "(T1D[Title/Abstract]) AND (genetics[Title/Abstract])",
-    "(T1D[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(type 1 diabetes[Title/Abstract] OR type 1 diabetes mellitus[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(type 1 diabetes[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(type 1 diabetes[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(type 1 diabetes[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 CAR_T_SCORES = {
@@ -88,7 +89,7 @@ CAR_T_SCORES = {
     },
 }
 
-DRUG_INDUCED_LUPUS_RISK = {
+DRUG_SAFETY_RISK = {
     "high_risk": [
         "interferon-alpha",
         "interferon-beta",
@@ -114,8 +115,8 @@ GWAS_SEARCH_TERMS = [
     "T1D",
 ]
 
-# Compatibility alias retained for older callers; neutral name is authoritative.
-DISEASE_SPECIFIC_RISK = DRUG_INDUCED_LUPUS_RISK
+DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK
+DRUG_INDUCED_LUPUS_RISK = DRUG_SAFETY_RISK
 
 SCREENING_PROFILE = {
     "strategy_id": "t1d-screening-v1",

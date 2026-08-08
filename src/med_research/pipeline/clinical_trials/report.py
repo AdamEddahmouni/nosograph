@@ -56,11 +56,8 @@ def generate_ct_report(
 ) -> str:
     """Generate an HTML report from disease-specific trial results."""
     output_path = Path(__file__).parent / "ct_report.html"
-    from med_research.pipeline.reporting import (
-        apply_disease_labels,
-        disease_context,
-        provenance_footer_html,
-    )
+    from med_research.pipeline.reporting import disease_context, render_report
+
     context = disease_context(disease_id)
 
     trials = results["trials"]
@@ -85,35 +82,33 @@ def generate_ct_report(
     # ── Top genes/drugs ──────────────────────────────────────────────
     genes_drugs_html = _build_genes_drugs_section(kg_crossref)
 
-    # ── Assemble ────────────────────────────────────────────────────
     # ── Assemble via template ──────────────────────────────────────
-    from med_research.templates import env as template_env
-
-    html = template_env.get_template("reports/clinical_trials.html").render(
-        ctx_0=stats["total_trials"],
-        ctx_1=stats["kg_matched_trials"],
-        ctx_2=datetime.now().strftime("%B %d, %Y at %H:%M"),
-        ctx_3=stats_html,
-        ctx_4=(
-            f'<div class="chart-card"><h4>Trials by Phase</h4><img src="data:image/png;base64,{phase_chart_b64}" alt="Phase Distribution Chart"/></div>'
-            if phase_chart_b64
-            else '<div class="chart-card"><p class="subtitle" style="padding:40px">📊 Install matplotlib for phase charts</p></div>'
-        ),
-        ctx_5=(
-            f'<div class="chart-card"><h4>Mechanism of Action Categories</h4><img src="data:image/png;base64,{moa_chart_b64}" alt="MoA Chart"/></div>'
-            if moa_chart_b64
-            else ""
-        ),
-        ctx_6=matched_html,
-        ctx_7=genes_drugs_html,
-        ctx_8=trials_table_html,
-        ctx_disease=context["name"],
-        ctx_disease_id=context["id"],
+    html = render_report(
+        "reports/clinical_trials.html",
+        {
+            "ctx_0": stats["total_trials"],
+            "ctx_1": stats["kg_matched_trials"],
+            "ctx_2": datetime.now().strftime("%B %d, %Y at %H:%M"),
+            "ctx_3": stats_html,
+            "ctx_4": (
+                f'<div class="chart-card"><h4>Trials by Phase</h4><img src="data:image/png;base64,{phase_chart_b64}" alt="Phase Distribution Chart"/></div>'
+                if phase_chart_b64
+                else '<div class="chart-card"><p class="subtitle" style="padding:40px">📊 Install matplotlib for phase charts</p></div>'
+            ),
+            "ctx_5": (
+                f'<div class="chart-card"><h4>Mechanism of Action Categories</h4><img src="data:image/png;base64,{moa_chart_b64}" alt="MoA Chart"/></div>'
+                if moa_chart_b64
+                else ""
+            ),
+            "ctx_6": matched_html,
+            "ctx_7": genes_drugs_html,
+            "ctx_8": trials_table_html,
+            "ctx_disease": context["name"],
+            "ctx_disease_id": context["id"],
+        },
+        disease_id,
+        provenance=provenance,
     )
-    html = apply_disease_labels(html, disease_id)
-    footer = provenance_footer_html(provenance)
-    if footer:
-        html = html.replace("</body>", f"{footer}\n</body>", 1)
 
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(html)

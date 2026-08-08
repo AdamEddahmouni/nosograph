@@ -23,9 +23,10 @@ SYMPTOMS = [
 ]
 
 PUBMED_QUERIES = [
-    "(IBD[Title/Abstract]) AND (treatment[Title/Abstract])",
-    "(IBD[Title/Abstract]) AND (genetics[Title/Abstract])",
-    "(IBD[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(inflammatory bowel disease[Title/Abstract] OR Crohn's disease[Title/Abstract] OR ulcerative colitis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(inflammatory bowel disease[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(inflammatory bowel disease[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(inflammatory bowel disease[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 CAR_T_SCORES = {
@@ -88,7 +89,7 @@ CAR_T_SCORES = {
     },
 }
 
-DRUG_INDUCED_LUPUS_RISK = {
+DRUG_SAFETY_RISK = {
     "high_risk": [
         "infliximab",
         "adalimumab",
@@ -117,8 +118,8 @@ GWAS_SEARCH_TERMS = [
     "IBD",
 ]
 
-# Compatibility alias retained for older callers; neutral name is authoritative.
-DISEASE_SPECIFIC_RISK = DRUG_INDUCED_LUPUS_RISK
+DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK
+DRUG_INDUCED_LUPUS_RISK = DRUG_SAFETY_RISK
 
 SCREENING_PROFILE = {
     "strategy_id": "ibd-screening-v1",

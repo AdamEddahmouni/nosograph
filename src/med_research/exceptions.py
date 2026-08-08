@@ -1,3 +1,6 @@
+import json
+
+
 class MedResearchError(Exception):
     """Base exception for all medical research platform errors."""
 
@@ -60,3 +63,54 @@ class PipelineExecutionError(MedResearchError):
 
 class ModuleNotAvailableError(PipelineExecutionError):
     """An optional pipeline module or dependency is not available."""
+
+
+def classify_api_error(exc: BaseException, source: str = "") -> ExternalAPIError:
+    """Map a network or parse exception to a typed :class:`ExternalAPIError`."""
+    prefix = f"{source}: " if source else ""
+
+    if isinstance(exc, ExternalAPIError):
+        return exc
+
+    if isinstance(exc, json.JSONDecodeError):
+        return APIParseError(f"{prefix}{exc}")
+
+    try:
+        import requests
+
+        if isinstance(exc, requests.exceptions.Timeout):
+            return APITimeoutError(f"{prefix}{exc}")
+        if isinstance(exc, requests.exceptions.HTTPError):
+            response = exc.response
+            if response is not None and response.status_code in (429, 503):
+                return APIQuotaError(f"{prefix}{exc}")
+            return ExternalAPIError(f"{prefix}{exc}")
+        if isinstance(exc, requests.exceptions.ConnectionError):
+            return APITimeoutError(f"{prefix}{exc}")
+        if isinstance(exc, requests.exceptions.RequestException):
+            return ExternalAPIError(f"{prefix}{exc}")
+    except ImportError:
+        pass
+
+    import urllib.error
+
+    if isinstance(exc, urllib.error.HTTPError):
+        if exc.code in (429, 503):
+            return APIQuotaError(f"{prefix}{exc}")
+        return ExternalAPIError(f"{prefix}{exc}")
+
+    if isinstance(exc, urllib.error.URLError):
+        reason = exc.reason
+        if isinstance(reason, TimeoutError) or "timed out" in str(exc).lower():
+            return APITimeoutError(f"{prefix}{exc}")
+        return ExternalAPIError(f"{prefix}{exc}")
+
+    if isinstance(exc, TimeoutError):
+        return APITimeoutError(f"{prefix}{exc}")
+
+    return ExternalAPIError(f"{prefix}{exc}")
+
+
+def raise_api_error(exc: BaseException, source: str = "") -> None:
+    """Re-raise *exc* as a typed :class:`ExternalAPIError`."""
+    raise classify_api_error(exc, source) from exc

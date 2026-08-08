@@ -185,15 +185,7 @@ def test_run_community_detection():
 
 @pytest.mark.slow
 def test_network_cli_help():
-    import subprocess
+    from tests.cli_helpers import cli_help_output
 
-    result = subprocess.run(
-        [sys.executable, "main.py", "network", "--help"],
-        capture_output=True,
-        text=True,
-        encoding="utf-8",
-        errors="replace",
-        cwd=str(Path(__file__).parent.parent),
-    )
-    assert result.returncode == 0
-    assert "network" in result.stdout.lower()
+    help_text = cli_help_output("network", "--help")
+    assert "network" in help_text.lower()

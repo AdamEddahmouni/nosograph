@@ -59,6 +59,22 @@ def _get_curated_signature(disease: str = "sle") -> dict:
 
 def list_available_signatures() -> list:
     """List available GEO-derived signatures in cache."""
+    from med_research.cache import NS_GEO, get_cache_manager
+
+    mgr = get_cache_manager()
+    stats = mgr.stats()
+    ns = stats.get("namespaces", {}).get(NS_GEO, {})
+    if ns.get("entries", 0) > 0:
+        ns_dir = mgr._dir / NS_GEO
+        sigs = []
+        for cache_file in sorted(ns_dir.glob("signature_*.json")):
+            # Filename is sanitized key + .json wrapper from CacheManager
+            stem = cache_file.stem
+            if stem.startswith("signature_"):
+                sigs.append(stem.replace("signature_", "", 1))
+        if sigs:
+            return sigs
+
     from med_research.pipeline.gene_expression.geo import CACHE_DIR as GEO_CACHE_DIR
     sigs = []
     for f in sorted(GEO_CACHE_DIR.glob("signature_*.json")):

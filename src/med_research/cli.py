@@ -35,6 +35,82 @@ def _default_pubmed_query(disease_id: str) -> str:
     return f"treatment targets {disease.get_display_name()}"
 
 
+def _exit_from_result(result, *, context: str = "") -> int:
+    """Map a failed :class:`PipelineRunResult` to a CLI exit code."""
+    from med_research.exceptions import ModuleNotAvailableError
+    from med_research.pipeline.base import PipelineRunResult
+    from med_research.pipeline_errors import EXIT_RUNTIME, handle_pipeline_error
+
+    if not isinstance(result, PipelineRunResult):
+        return EXIT_RUNTIME
+    if result.success:
+        return 0
+
+    prefix = f"{context}: " if context else ""
+    ctx = prefix.rstrip(": ")
+    for err in result.errors:
+        if any(
+            token in err.lower()
+            for token in ("not available", "missing", "blocked", "module '")
+        ):
+            return handle_pipeline_error(
+                ModuleNotAvailableError(err),
+                logger=logger,
+                context=ctx or None,
+            )
+        logger.error("%s%s", prefix, err)
+    return EXIT_RUNTIME
+
+
+def _data_blocked(data) -> bool:
+    """Return True when engine output indicates a coverage block."""
+    if isinstance(data, dict):
+        if data.get("status") == "blocked":
+            return True
+        if data.get("error") == "blocked":
+            return True
+        nested = data.get("results")
+        if isinstance(nested, dict) and nested.get("status") == "blocked":
+            return True
+    return False
+
+
+def _dispatch(
+    module_id: str,
+    disease_id: str,
+    args,
+    *,
+    export_html: bool | None = None,
+    **opts,
+):
+    """Run a registry module through the unified dispatch path."""
+    from med_research.pipeline.dispatch import execute_module
+
+    if export_html is None:
+        export_html = bool(getattr(args, "export_html", False))
+    return execute_module(
+        module_id,
+        disease_id,
+        export_html=export_html,
+        **opts,
+    )
+
+
+def _run_all_opts(args) -> dict:
+    """Common kwargs forwarded from ``run-all`` flags."""
+    opts: dict = {}
+    if getattr(args, "no_cache", False):
+        opts["use_cache"] = False
+    return opts
+
+
+def _trial_query(disease_id: str) -> str:
+    try:
+        return Disease(disease_id).get_trial_query()
+    except ValueError:
+        return "lupus OR SLE"
+
+
 def _build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description="Medical Research Platform — Multi-disease drug discovery pipeline",
@@ -46,7 +122,10 @@ def _build_parser() -> argparse.ArgumentParser:
 
     # ── Discovery ──────────────────────────────────────────────────────
     sub.add_parser("diseases", help="List all available diseases")
-    sub.add_parser("modules", help="List all available pipeline modules")
+    modules_parser = sub.add_parser("modules", help="List all available pipeline modules")
+    modules_parser.add_argument(
+        "--json", action="store_true", help="Output registered adapter modules as JSON"
+    )
 
     # ── Disease Management (scaffolding) ────────────────────────────────
     disease = sub.add_parser("disease", help="Scaffold and manage disease modules")
@@ -255,6 +334,7 @@ def _build_parser() -> argparse.ArgumentParser:
     extractor.add_argument("--export-html", action="store_true")
 
     monitor = sub.add_parser("monitor", help="Continuous evidence monitoring")
+    monitor.add_argument("--disease", "-d", default="sle", help="Disease ID")
     monitor.add_argument("--snapshot", action="store_true")
     monitor.add_argument("--diff", action="store_true")
     monitor.add_argument("--list", dest="list_snapshots", action="store_true")
@@ -275,6 +355,22 @@ def _build_parser() -> argparse.ArgumentParser:
     run_all.add_argument("--skip-trials", action="store_true")
     run_all.add_argument("--skip-ml", action="store_true")
     run_all.add_argument("--skip-synergy", action="store_true")
+    run_all.add_argument(
+        "--full",
+        action="store_true",
+        help="Include advanced modules (safety, network, expression, cart, biomarker, cross-disease)",
+    )
+    run_mode = run_all.add_mutually_exclusive_group()
+    run_mode.add_argument(
+        "--parallel",
+        action="store_true",
+        help="Run independent modules in parallel via registry DAG",
+    )
+    run_mode.add_argument(
+        "--sequential",
+        action="store_true",
+        help="Run pipeline steps sequentially (default)",
+    )
 
     serve = sub.add_parser("serve", help="Start the web API server")
     serve.add_argument("--host", default="0.0.0.0")
@@ -292,20 +388,17 @@ def _build_parser() -> argparse.ArgumentParser:
     clear_cmd.add_argument("--namespace", "-n", help="Clear specific namespace")
     cleanup_cmd = cache_sub.add_parser("cleanup", help="Remove expired entries")
     cleanup_cmd.add_argument("--ttl", type=int, help="TTL in seconds")
+    migrate_cmd = cache_sub.add_parser("migrate", help="Migrate legacy flat JSON caches")
+    migrate_cmd.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Report what would be migrated without writing",
+    )
 
     return parser
 
 
 # ── Command Handlers ────────────────────────────────────────────────────
-
-
-def _run_module(module_path: str, func_name: str, *args, **kwargs):
-    """Import and call a module function directly."""
-    import importlib
-
-    mod = importlib.import_module(module_path)
-    func = getattr(mod, func_name)
-    return func(*args, **kwargs)
 
 
 def cmd_diseases(_args):
@@ -331,8 +424,18 @@ def cmd_diseases(_args):
     return 0
 
 
-def cmd_modules(_args):
+def cmd_modules(args):
     """List all available pipeline modules."""
+    import json
+
+    from med_research.pipeline.registry import list_modules
+
+    registered = list_modules()
+
+    if args.json:
+        print(json.dumps(registered, indent=2))
+        return 0
+
     modules = {
         "Core": ["kg", "repurpose", "bioinformatics", "literature", "screening", "trials", "ml"],
         "Advanced": ["synergy", "safety", "network", "expression", "cart", "biomarker"],
@@ -344,6 +447,10 @@ def cmd_modules(_args):
         logger.info(f"\n  {category}:")
         for c in cmds:
             logger.info(f"    {c}")
+    if registered:
+        logger.info("\n  Registered adapters:")
+        for module_id in registered:
+            logger.info(f"    {module_id}")
     logger.info("")
     return 0
 
@@ -623,407 +730,198 @@ def cmd_disease(args):
 
 def cmd_kg(args):
     """Build the knowledge graph for a disease."""
-    from med_research.pipeline.knowledge_graph.builder import (
-        analyze_graph,
-        build_graph,
-        export_for_web,
-    )
+    from med_research.pipeline.knowledge_graph.builder import analyze_graph, export_for_web
 
     disease = Disease(args.disease)
     logger.info(f"\nBuilding {disease.profile.name} Knowledge Graph...")
 
-    G = build_graph(args.disease)
-    logger.info(f"Graph: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
+    result = _dispatch("knowledge_graph", args.disease, args)
+    if not result.success:
+        return _exit_from_result(result, context="Knowledge graph")
+
+    graph = result.data
+    if graph is None:
+        return _exit_from_result(result, context="Knowledge graph")
+
+    logger.info(f"Graph: {graph.number_of_nodes()} nodes, {graph.number_of_edges()} edges")
 
     if args.analyze:
-        analyze_graph(G)
+        analyze_graph(graph)
 
     if args.export or not args.analyze:
-        export_for_web(G, disease_id=args.disease)
+        export_for_web(graph, disease_id=args.disease)
 
     return 0
 
 
 def cmd_repurpose(args):
     """Run drug repurposing analysis."""
-    from med_research.pipeline.drug_repurposing.engine import (
-        DATA_DIR,
-        analyze,
-        identify_untargeted_genes,
-        load_genes,
-        load_json,
-        load_knowledge_graph,
-        print_top_candidates,
-        score_candidates,
-    )
+    from med_research.pipeline.drug_repurposing.engine import analyze, print_top_candidates
 
-    G = load_knowledge_graph(args.disease)
-    genes = load_genes(args.disease)
-    candidates = load_json(DATA_DIR / "candidates.json")["repurposing_candidates"]
+    result = _dispatch("drug_repurposing", args.disease, args)
+    if not result.success:
+        return _exit_from_result(result, context="Drug repurposing")
 
-    untargeted = identify_untargeted_genes(G, args.disease)
-    untargeted_ids = {g["id"] for g in untargeted}
-
-    scored = score_candidates(G, candidates, genes, disease_id=args.disease)
-    scored = [c for c in scored if c["gene_id"] in untargeted_ids]
-
+    scored = result.data or []
     analyze(scored)
     print_top_candidates(scored, args.top)
-
-    if args.export_html:
-        from med_research.pipeline.drug_repurposing.report import generate_html_report
-
-        generate_html_report(
-            scored, untargeted, genes, G, disease_id=args.disease
-        )
-
     return 0
 
 
 def cmd_bioinformatics(args):
     """Run bioinformatics pipeline (GWAS + Enrichment + PPI)."""
     exit_code = 0
+    use_cache = not args.no_cache
+    opts = {"use_cache": use_cache}
+
     if not args.skip_gwas:
         logger.info("\n[GWAS] Running GWAS analysis...")
-        exit_code |= 1 if (_run_gwas(args) or {}).get("status") == "blocked" else 0
+        result = _dispatch("gwas", args.disease, args, **opts)
+        if not result.success or _data_blocked(result.data):
+            exit_code |= _exit_from_result(result, context="GWAS") or 1
 
     if not args.skip_enrichment:
         logger.info("\n[Enrichment] Running pathway enrichment...")
-        exit_code |= 1 if (_run_enrichment(args) or {}).get("status") == "blocked" else 0
+        result = _dispatch("enrichment", args.disease, args, **opts)
+        if not result.success or _data_blocked(result.data):
+            exit_code |= _exit_from_result(result, context="Enrichment") or 1
 
     if not args.skip_ppi:
         logger.info("\n[PPI] Running PPI network analysis...")
-        exit_code |= 1 if (_run_ppi(args) or {}).get("status") == "blocked" else 0
+        result = _dispatch("ppi", args.disease, args, **opts)
+        if not result.success or _data_blocked(result.data):
+            exit_code |= _exit_from_result(result, context="PPI") or 1
 
     return exit_code
-
-
-def _run_gwas(args):
-    """GWAS Catalog analysis (mirrors gwas.main())."""
-    import json
-
-    from med_research.diseases.coverage import module_coverage
-    disease_id = getattr(args, "disease", "sle")
-    coverage = module_coverage(disease_id, "gwas", ("genes", "gwas_search_terms"))
-    if not coverage.is_runnable:
-        logger.error(f"❌ GWAS analysis blocked for {disease_id}: {', '.join(coverage.missing_inputs)}")
-        return {"coverage": coverage.to_dict(), "status": "blocked"}
-
-    from med_research.pipeline.bioinformatics.gwas import (
-        analyze,
-        config_load_genes,
-        cross_reference_with_kg,
-        disease_search_terms,
-        extract_gene_associations,
-        gwas_cache_path,
-        rate_limited_sleep,
-        search_gwas_studies,
-    )
-
-    kg_genes = {g["id"]: g for g in config_load_genes(disease_id)["genes"]}
-    all_studies = []
-    for term in disease_search_terms(disease_id)[:2]:
-        all_studies.extend(search_gwas_studies(term, max_results=15))
-        rate_limited_sleep(0.5)
-
-    seen, unique_studies = set(), []
-    for s in all_studies:
-        acc = s.get("accessionId")
-        if acc and acc not in seen:
-            seen.add(acc)
-            unique_studies.append(s)
-
-    # Per-disease cache so results never bleed across diseases
-    cache_path = gwas_cache_path(disease_id)
-    cached = None
-    if not args.no_cache and cache_path.exists():
-        try:
-            cached = json.loads(cache_path.read_text(encoding="utf-8"))
-        except (json.JSONDecodeError, KeyError):
-            cached = None
-
-    if cached:
-        gwas_results, crossref = cached["gwas_results"], cached["crossref"]
-    else:
-        gwas_results = extract_gene_associations(unique_studies, max_studies=30)
-        crossref = cross_reference_with_kg(gwas_results, kg_genes, disease_id=disease_id)
-        cache_path.write_text(
-            json.dumps(
-                {"gwas_results": gwas_results, "crossref": crossref},
-                indent=2,
-                ensure_ascii=False,
-                default=str,
-            ),
-            encoding="utf-8",
-        )
-
-    analyze(gwas_results, crossref, kg_genes)
-
-    if args.export_html:
-        from med_research.pipeline.bioinformatics.report import generate_bioinformatics_report
-
-        generate_bioinformatics_report(
-            gwas_results=gwas_results,
-            gwas_crossref=crossref,
-            disease_id=disease_id,
-        )
-    return {"coverage": coverage.to_dict(), "status": "ready"}
-
-
-def _run_enrichment(args):
-    """Pathway enrichment (mirrors enrichment.main())."""
-    from med_research.pipeline.bioinformatics.enrichment import (
-        analyze,
-        cross_reference_with_kg_pathways,
-        get_disease_gene_list,
-        load_kg_genes,
-        load_kg_graph,
-        load_pathways,
-        run_enrichment,
-    )
-
-    disease_id = getattr(args, "disease", "sle")
-    from med_research.diseases.coverage import module_coverage
-    coverage = module_coverage(disease_id, "enrichment", ("genes", "pathways"))
-    if not coverage.is_runnable:
-        logger.error(f"❌ Enrichment blocked for {disease_id}: {', '.join(coverage.missing_inputs)}")
-        return {"coverage": coverage.to_dict(), "status": "blocked"}
-    G = load_kg_graph(disease_id)
-    genes = load_kg_genes(disease_id)
-    gene_list = get_disease_gene_list(
-        genes, G, untargeted_only=False, disease_id=disease_id
-    )
-    enrichment_results = run_enrichment(gene_list, use_cache=not args.no_cache)
-    kg_pathways = load_pathways(disease_id)
-    kg_matches = cross_reference_with_kg_pathways(
-        enrichment_results, kg_pathways, disease_id=disease_id
-    )
-    analyze(enrichment_results, gene_list, kg_matches)
-
-    if args.export_html:
-        from med_research.pipeline.bioinformatics.report import generate_bioinformatics_report
-
-        generate_bioinformatics_report(
-            enrichment_results=enrichment_results,
-            gene_list=gene_list,
-            kg_matches=kg_matches,
-            disease_id=disease_id,
-        )
-    return {"coverage": coverage.to_dict(), "status": "ready"}
-
-
-def _run_ppi(args):
-    """PPI network analysis (mirrors ppi.main())."""
-    import json
-
-    from med_research.pipeline.bioinformatics.ppi import (
-        DEFAULT_CONFIDENCE,
-        analyze,
-        build_ppi_network,
-        compute_hub_scores,
-        cross_reference_with_candidates,
-        get_gene_symbols,
-        load_genes,
-    )
-
-    disease_id = getattr(args, "disease", "sle")
-    from med_research.diseases.coverage import module_coverage
-    coverage = module_coverage(disease_id, "ppi", ("genes",))
-    if not coverage.is_runnable:
-        logger.error(f"❌ PPI analysis blocked for {disease_id}: {', '.join(coverage.missing_inputs)}")
-        return {"coverage": coverage.to_dict(), "status": "blocked"}
-
-    genes = load_genes(disease_id)
-    gene_symbols = get_gene_symbols(genes)
-    candidates_data = json.loads(
-        (
-            Path(__file__).parent / "pipeline" / "drug_repurposing" / "data" / "candidates.json"
-        ).read_text(encoding="utf-8")
-    )
-    candidates = candidates_data["repurposing_candidates"]
-
-    G = build_ppi_network(gene_symbols, confidence=DEFAULT_CONFIDENCE, use_cache=not args.no_cache)
-    if G.number_of_nodes() == 0:
-        logger.error("❌ Empty PPI network. Cannot proceed.")
-        return
-
-    hub_scores = compute_hub_scores(G)
-    crossref = cross_reference_with_candidates(hub_scores, G, genes, candidates)
-    analyze(hub_scores, crossref, G)
-
-    if args.export_html:
-        from med_research.pipeline.bioinformatics.report import generate_bioinformatics_report
-
-        graph_data = {
-            "nodes": [{"id": n, "symbol": G.nodes[n].get("symbol", n)} for n in G.nodes()],
-            "edges": [
-                {"source": u, "target": v, "score": d["score"]} for u, v, d in G.edges(data=True)
-            ],
-        }
-        generate_bioinformatics_report(
-            hub_scores=hub_scores,
-            ppi_crossref=crossref,
-            ppi_graph=graph_data,
-            disease_id=disease_id,
-        )
-    return {"coverage": coverage.to_dict(), "status": "ready"}
 
 
 def cmd_literature(args):
     """Run literature mining."""
     import med_research.pipeline.literature_mining.miner as miner_mod
-    from med_research.pipeline.literature_mining.miner import (
-        mine_literature,
-        print_summary,
-    )
+    from med_research.pipeline.literature_mining.miner import print_summary
 
-    results, entities, candidates, _ = mine_literature(
+    result = _dispatch(
+        "literature_mining",
+        args.disease,
+        args,
         max_per_query=args.max_articles,
         use_cache=not args.no_cache,
-        targeted_candidates=args.targeted,
+        targeted=args.targeted,
         extract_content=args.extract,
-        disease_id=args.disease,
     )
+    if not result.success:
+        return _exit_from_result(result, context="Literature mining")
 
-    # print_summary reads the module-global entities_hack (set by miner.main())
-    if results.get("status") == "blocked":
+    payload = result.data or {}
+    results = payload.get("results", {})
+    if _data_blocked(payload) or _data_blocked(results):
         coverage = results.get("coverage", {})
-        logger.error(f"❌ Literature analysis blocked for {args.disease}: "
-              f"{', '.join(coverage.get('missing_inputs', [])) or 'coverage contract not satisfied'}")
-        return 1
+        logger.error(
+            "❌ Literature analysis blocked for %s: %s",
+            args.disease,
+            ", ".join(coverage.get("missing_inputs", []))
+            or "coverage contract not satisfied",
+        )
+        return _exit_from_result(result, context="Literature mining") or 1
 
+    entities = payload.get("entities", {})
+    candidates = payload.get("candidates", [])
     miner_mod.entities_hack = {
-        gid: entities["genes"].get(gid, {"name": gid}) for gid in results.get("gene_coverage", {})
+        gid: entities["genes"].get(gid, {"name": gid})
+        for gid in results.get("gene_coverage", {})
     }
     print_summary(results, candidates, entities)
-
-    if args.export_html:
-        from med_research.pipeline.literature_mining.report import generate_literature_report
-
-        generate_literature_report(
-            results, entities, candidates, disease_id=args.disease
-        )
-
     return 0
 
 
 def cmd_screening(args):
     """Run virtual drug screening."""
-    from med_research.diseases.coverage import module_coverage
-    from med_research.pipeline.virtual_screening.screening import (
-        build_compound_library,
-        get_untargeted_genes,
-        print_summary,
-        screen_compounds,
-    )
-    coverage = module_coverage(
-        args.disease, "screening", ("genes", "drugs", "pathways", "screening_profile")
-    )
-    if not coverage.is_runnable:
-        logger.error(f"❌ Screening blocked for {args.disease}: {', '.join(coverage.missing_inputs)}")
-        return 1
+    from med_research.pipeline.virtual_screening.screening import print_summary
 
-    library = build_compound_library(args.disease)
-    untargeted = get_untargeted_genes(args.disease)
-    target_ids = [args.gene] if args.gene else [g["id"] for g in untargeted]
-    results = screen_compounds(
-        target_genes=target_ids,
-        compound_library=library,
-        top_n=args.top,
+    result = _dispatch(
+        "virtual_screening",
+        args.disease,
+        args,
+        gene=args.gene,
+        top=args.top,
         use_vina=args.use_vina,
-        disease_id=args.disease,
     )
-    if results.get("status") == "blocked":
-        logger.error(f"❌ Screening blocked for {args.disease}: {', '.join(results.get('coverage', {}).get('missing_inputs', []))}")
+    if not result.success:
+        return _exit_from_result(result, context="Virtual screening")
+
+    results = result.data or {}
+    if _data_blocked(results):
+        logger.error(
+            "❌ Screening blocked for %s: %s",
+            args.disease,
+            ", ".join(results.get("coverage", {}).get("missing_inputs", [])),
+        )
         return 1
+
     print_summary(results)
-
-    if args.export_html:
-        from med_research.pipeline.virtual_screening.report import generate_screening_report
-
-        generate_screening_report(results, disease_id=args.disease)
     return 0
 
 
 def cmd_trials(args):
     """Track clinical trials."""
-    from med_research.pipeline.clinical_trials.tracker import print_summary, track_trials
+    from med_research.pipeline.clinical_trials.tracker import print_summary
 
-    try:
-        query = Disease(args.disease).get_trial_query()
-    except ValueError:
-        query = "lupus OR SLE"
-
-    results = track_trials(
+    query = _trial_query(args.disease)
+    result = _dispatch(
+        "clinical_trials",
+        args.disease,
+        args,
         query=query,
         max_results=args.top,
         use_cache=not args.no_cache,
-        disease_id=args.disease,
     )
-    print_summary(results["stats"], results["kg_crossref"])
+    if not result.success:
+        return _exit_from_result(result, context="Clinical trials")
 
-    if args.export_html:
-        from med_research.pipeline.clinical_trials.report import generate_ct_report
-
-        generate_ct_report(results, disease_id=args.disease)
+    results = result.data or {}
+    print_summary(results.get("stats", {}), results.get("kg_crossref", {}))
     return 0
 
 
 def cmd_ml(args):
     """Train ML predictor."""
-    from med_research.pipeline.knowledge_graph.builder import build_graph
-    from med_research.pipeline.ml_predictor.predictor import print_summary, train_and_predict
+    from med_research.pipeline.ml_predictor.predictor import print_summary
 
-    G = build_graph(args.disease)
-    results = train_and_predict(G, top_n=args.top)
-    if "error" in results:
-        logger.error(f"❌ {results['error']}")
+    result = _dispatch("ml_predictor", args.disease, args, top=args.top)
+    if not result.success:
+        return _exit_from_result(result, context="ML predictor")
+
+    results = result.data or {}
+    if isinstance(results, dict) and results.get("error"):
+        logger.error("❌ %s", results["error"])
         return 0
+
     print_summary(results)
-
-    if args.export_html:
-        from med_research.pipeline.ml_predictor.report import generate_ml_report
-
-        generate_ml_report(results, disease_id=args.disease)
     return 0
 
 
 def cmd_synergy(args):
     """Drug combination synergy."""
-    from med_research.pipeline.drug_synergy.engine import (
-        analyze,
-        compute_synergy,
-        print_top_pairs,
-    )
+    from med_research.pipeline.drug_synergy.engine import analyze, print_top_pairs
 
-    pairs = compute_synergy(disease_id=args.disease)
+    result = _dispatch("drug_synergy", args.disease, args)
+    if not result.success:
+        return _exit_from_result(result, context="Drug synergy")
+
+    pairs = result.data or []
     analyze(pairs)
     print_top_pairs(pairs, args.top)
-
-    if args.export_html:
-        from med_research.pipeline.drug_synergy.report import generate_html_report
-
-        generate_html_report(pairs, disease_id=args.disease)
     return 0
 
 
 def cmd_safety(args):
     """Adverse event safety profiling."""
-    from med_research.diseases.coverage import module_coverage
     from med_research.pipeline.adverse_events.profiler import (
         get_drug_profile,
         get_safety_summary,
         print_analysis,
-        score_all_drugs,
     )
-    coverage = module_coverage(
-        args.disease, "safety", ("symptoms", "adverse_event_profile", "safety_risk")
-    )
-    if not coverage.is_runnable:
-        logger.error(f"❌ Safety analysis blocked for {args.disease}: {', '.join(coverage.missing_inputs)}")
-        return 1
 
-    results = []
     if args.drug:
         profile = get_drug_profile(args.drug, disease_id=args.disease)
         if not profile:
@@ -1040,33 +938,27 @@ def cmd_safety(args):
         logger.info(f"   Black Box Warnings:        {profile.get('black_box_warnings', [])}")
         logger.info(f"   Disease Overlap AEs:       {profile.get('disease_overlap_ae', [])}")
     else:
-        results = score_all_drugs(disease_id=args.disease)
+        result = _dispatch("adverse_events", args.disease, args)
+        if not result.success:
+            return _exit_from_result(result, context="Safety analysis")
+        results = result.data or []
         summary = get_safety_summary(disease_id=args.disease)
         logger.info(f"Total drugs ({args.disease}): {summary['total_drugs']}")
         logger.info(f"Avg safety score: {summary['avg_safety_score']:.1f}")
         print_analysis(results[:15])
 
-    if args.export_html:
-        from med_research.pipeline.adverse_events.report import generate_html_report
-
-        generate_html_report(results, disease_id=args.disease)
     return 0
 
 
 def cmd_network(args):
     """Network pharmacology analysis."""
-    from med_research.pipeline.network_pharmacology.analyzer import (
-        compute_all_metrics,
-        print_analysis,
-    )
+    from med_research.pipeline.network_pharmacology.analyzer import print_analysis
 
-    results = compute_all_metrics(disease_id=args.disease)
-    print_analysis(results)
+    result = _dispatch("network_pharmacology", args.disease, args)
+    if not result.success:
+        return _exit_from_result(result, context="Network pharmacology")
 
-    if args.export_html:
-        from med_research.pipeline.network_pharmacology.report import generate_html_report
-
-        generate_html_report(results, disease_id=args.disease)
+    print_analysis(result.data or {})
     return 0
 
 
@@ -1074,18 +966,16 @@ def cmd_expression(args):
     """Gene expression correlations."""
     from med_research.pipeline.gene_expression.correlator import (
         analyze,
-        compute_all_correlations,
         print_top_correlations,
     )
 
-    results = compute_all_correlations(disease_id=args.disease)
+    result = _dispatch("gene_expression", args.disease, args, top=args.top)
+    if not result.success:
+        return _exit_from_result(result, context="Gene expression")
+
+    results = result.data or []
     analyze(results, None)
     print_top_correlations(results, args.top)
-
-    if args.export_html:
-        from med_research.pipeline.gene_expression.report import generate_html_report
-
-        generate_html_report(results, disease_id=args.disease)
     return 0
 
 
@@ -1093,17 +983,25 @@ def cmd_cart(args):
     """CAR-T response prediction."""
     import med_research.pipeline.car_t_predictor.predictor as cart_predictor
 
-    results = cart_predictor.compute_all_scores(disease_id=args.disease)
-    if not results and cart_predictor.last_coverage and not cart_predictor.last_coverage.is_runnable:
-        logger.error(f"❌ CAR-T analysis blocked for {args.disease}: {', '.join(cart_predictor.last_coverage.missing_inputs)}")
+    result = _dispatch("car_t_predictor", args.disease, args)
+    if not result.success:
+        return _exit_from_result(result, context="CAR-T predictor")
+
+    results = result.data or []
+    if (
+        not results
+        and cart_predictor.last_coverage
+        and not cart_predictor.last_coverage.is_runnable
+    ):
+        logger.error(
+            "❌ CAR-T analysis blocked for %s: %s",
+            args.disease,
+            ", ".join(cart_predictor.last_coverage.missing_inputs),
+        )
         return 1
+
     cart_predictor.analyze(results)
     cart_predictor.print_top_genes(results, args.top)
-
-    if args.export_html:
-        from med_research.pipeline.car_t_predictor.report import generate_html_report
-
-        generate_html_report(results, disease_id=args.disease)
     return 0
 
 
@@ -1111,18 +1009,16 @@ def cmd_biomarker(args):
     """Biomarker discovery."""
     from med_research.pipeline.biomarker_discovery.discover import (
         analyze,
-        compute_biomarker_matrix,
         print_top_biomarkers,
     )
 
-    results = compute_biomarker_matrix(disease_id=args.disease)
+    result = _dispatch("biomarker_discovery", args.disease, args)
+    if not result.success:
+        return _exit_from_result(result, context="Biomarker discovery")
+
+    results = result.data or []
     analyze(results)
     print_top_biomarkers(results, args.top)
-
-    if args.export_html:
-        from med_research.pipeline.biomarker_discovery.report import generate_html_report
-
-        generate_html_report(results, disease_id=args.disease)
     return 0
 
 
@@ -1130,13 +1026,13 @@ def cmd_workspace(args):
     """Build and export an evidence-to-hypothesis dossier."""
     from datetime import date
 
-    from med_research.pipeline import evidence_workspace as workspace_module
     from med_research.pipeline.evidence_workspace.report import dossier_to_json, render_html
+    from med_research.pipeline.evidence_workspace.schemas import ResearchRequest
 
     def parse_date(value):
         return date.fromisoformat(value) if value else None
 
-    request = workspace_module.ResearchRequest(
+    request = ResearchRequest(
         disease_id=args.disease,
         question=args.question,
         sources=tuple(item.strip() for item in args.sources.split(",") if item.strip()),
@@ -1146,15 +1042,16 @@ def cmd_workspace(args):
         max_evidence=args.max_evidence,
         enable_llm=args.enable_llm,
     )
-    dossier = workspace_module.run_workspace(request)
-    if args.json_path:
-        from pathlib import Path
+    result = _dispatch("evidence_workspace", args.disease, args, request=request)
+    if not result.success:
+        return _exit_from_result(result, context="Evidence workspace")
 
+    dossier = result.data
+    if args.json_path:
         Path(args.json_path).write_text(dossier_to_json(dossier), encoding="utf-8")
     if args.html_path:
-        from pathlib import Path
-
         Path(args.html_path).write_text(render_html(dossier), encoding="utf-8")
+
     logger.info(f"Evidence workspace run: {dossier.run_id}")
     logger.info(f"Evidence records: {len(dossier.evidence)} | Claims: {len(dossier.claims)}")
     logger.info(
@@ -1167,72 +1064,59 @@ def cmd_workspace(args):
 
 def cmd_semantic(args):
     """Semantic search."""
-    from med_research.pipeline.semantic_search.engine import SemanticSearchEngine
-
     query = args.query or _default_pubmed_query(args.disease)
-    engine = SemanticSearchEngine(disease_id=args.disease)
-    results = engine.search(query, top_k=args.top)
-
-    if args.export_html:
-        from med_research.pipeline.semantic_search.report import generate_semantic_report
-
-        generate_semantic_report(
-            results, query, engine.get_indexed_count(), disease_id=args.disease
-        )
+    result = _dispatch(
+        "semantic_search",
+        args.disease,
+        args,
+        query=query,
+        top=args.top,
+    )
+    if not result.success:
+        return _exit_from_result(result, context="Semantic search")
     return 0
 
 
 def cmd_evidence(args):
     """Multi-source evidence gathering."""
-    from med_research.pipeline.evidence.gatherer import gather_evidence
-
     query = args.query or _default_pubmed_query(args.disease)
     sources = None if args.sources == "all" else [s.strip() for s in args.sources.split(",")]
-    results = gather_evidence(
+    result = _dispatch(
+        "evidence_gather",
+        args.disease,
+        args,
         query=query,
         sources=sources,
         max_per_source=args.max,
         use_cache=not args.no_cache,
-        disease_id=args.disease,
     )
-
-    if args.export_html:
-        from med_research.pipeline.evidence.gatherer_report import generate_html_report
-
-        generate_html_report(results)
+    if not result.success:
+        return _exit_from_result(result, context="Evidence gathering")
     return 0
 
 
 def cmd_extractor(args):
     """LLM-powered evidence extraction."""
-    from med_research.pipeline.evidence.extractor import extract_all
-
     query = args.query or _default_pubmed_query(args.disease)
     sources = [s.strip() for s in args.sources.split(",")]
-    results = extract_all(
+    result = _dispatch(
+        "llm_extractor",
+        args.disease,
+        args,
         query=query,
         sources=sources,
         max_articles=args.max,
         model=args.model or None,
         use_cache=not args.no_cache,
     )
-
-    if args.export_html:
-        from med_research.pipeline.evidence.extractor_report import generate_html_report
-
-        generate_html_report(results)
+    if not result.success:
+        return _exit_from_result(result, context="LLM extractor")
     return 0
 
 
 def cmd_monitor(args):
     """Evidence monitoring."""
-    from med_research.pipeline.evidence.monitor import (
-        compare_snapshots,
-        list_snapshots,
-        load_latest_snapshots,
-        print_diff_summary,
-        take_snapshot,
-    )
+    from med_research.pipeline.evidence.monitor import list_snapshots
 
     sources = [s.strip() for s in args.sources.split(",")]
 
@@ -1244,23 +1128,32 @@ def cmd_monitor(args):
         return 0
 
     if args.diff or args.export_html:
-        snapshots = load_latest_snapshots(2)
-        if len(snapshots) < 2:
-            logger.warning("⚠️  Need at least 2 snapshots. Taking baseline + new snapshot...")
-            prev = take_snapshot(sources=sources, max_per_query=args.max)
-            rate_limited_sleep(2)
-            curr = take_snapshot(sources=sources, max_per_query=args.max)
-        else:
-            prev, curr = snapshots
-        diff = compare_snapshots(prev, curr)
-        print_diff_summary(diff)
-        if args.export_html:
-            from med_research.pipeline.evidence.monitor_report import generate_html_report
+        result = _dispatch(
+            "evidence_monitor",
+            args.disease,
+            args,
+            sources=sources,
+            max_per_query=args.max,
+            diff=True,
+        )
+        if not result.success:
+            return _exit_from_result(result, context="Evidence monitor")
 
-            generate_html_report(diff, prev, curr)
+        if not args.export_html:
+            from med_research.pipeline.evidence.monitor import print_diff_summary
+
+            print_diff_summary((result.data or {}).get("diff", {}))
         return 0
 
-    take_snapshot(sources=sources, max_per_query=args.max)
+    result = _dispatch(
+        "evidence_monitor",
+        args.disease,
+        args,
+        sources=sources,
+        max_per_query=args.max,
+    )
+    if not result.success:
+        return _exit_from_result(result, context="Evidence monitor")
     return 0
 
 
@@ -1268,21 +1161,18 @@ def cmd_cross_disease(args):
     """Cross-disease analysis."""
     from med_research.pipeline.cross_disease.analyzer import (
         analyze,
-        compute_cross_disease_analysis,
         print_repurposing,
         print_top_drugs,
     )
 
-    results = compute_cross_disease_analysis()
+    result = _dispatch("cross_disease", getattr(args, "disease", "sle"), args)
+    if not result.success:
+        return _exit_from_result(result, context="Cross-disease analysis")
 
+    results = result.data or {}
     analyze(results)
     print_top_drugs(results, top_n=args.top)
     print_repurposing(results, top_n=args.top)
-
-    if args.export_html:
-        from med_research.pipeline.cross_disease.report import generate_html_report
-
-        generate_html_report(results)
     return 0
 
 
@@ -1327,27 +1217,137 @@ def _warn_config_gaps(disease: Disease) -> bool:
     return True
 
 
+def _get_pipeline_steps(args) -> list[tuple[str, str | None]]:
+    """Return ordered pipeline steps, honoring ``--full`` and skip flags."""
+
+    steps = list(PIPELINE_STEPS)
+    if getattr(args, "full", False):
+        steps.extend(PIPELINE_STEPS_FULL)
+
+    if getattr(args, "skip_trials", False):
+        steps = [step for step in steps if step[1] != "clinical_trials"]
+    if getattr(args, "skip_ml", False):
+        steps = [step for step in steps if step[1] != "ml_predictor"]
+    if getattr(args, "skip_synergy", False):
+        steps = [step for step in steps if step[1] != "drug_synergy"]
+    return steps
+
+
+def _steps_to_parallel_modules(steps: list[tuple[str, str | None]]) -> list[str]:
+    """Expand composite steps (bioinformatics) into registry module IDs."""
+
+    modules: list[str] = []
+    for _name, module_id in steps:
+        if module_id is None:
+            modules.extend(["gwas", "enrichment", "ppi"])
+        else:
+            modules.append(module_id)
+    return modules
+
+
+def _bioinformatics_module_ids() -> list[str]:
+    return ["gwas", "enrichment", "ppi"]
+
+
+def _run_all_module(module_id: str, args) -> int:
+    """Execute one registry module for ``run-all``."""
+    from med_research.exceptions import MedResearchError
+    from med_research.pipeline.dispatch import execute_module
+    from med_research.pipeline_errors import handle_pipeline_error
+
+    opts = _run_all_opts(args)
+    export_html = bool(getattr(args, "export_html", False))
+
+    if module_id == "clinical_trials":
+        opts["query"] = _trial_query(args.disease)
+        opts["max_results"] = 20
+    elif module_id == "literature_mining":
+        opts["max_per_query"] = 20
+    elif module_id in {"ml_predictor", "virtual_screening", "drug_synergy"}:
+        opts["top"] = 10
+    elif module_id == "adverse_events":
+        opts["top"] = 15
+
+    try:
+        result = execute_module(
+            module_id,
+            args.disease,
+            export_html=export_html,
+            **opts,
+        )
+    except MedResearchError as exc:
+        return handle_pipeline_error(exc, logger=logger, context=module_id)
+
+    if not result.success:
+        return _exit_from_result(result, context=module_id)
+    if _data_blocked(result.data):
+        return 1
+
+    if module_id == "knowledge_graph" and result.data is not None:
+        from med_research.pipeline.knowledge_graph.builder import export_for_web
+
+        export_for_web(result.data, disease_id=args.disease)
+
+    return 0
+
+
 def cmd_run_all(args):
     """Run the complete research pipeline for a disease."""
-    logger = get_logger(__name__)
+    from med_research.pipeline.scheduler import run_levels, validate_dag
+
     disease = Disease(args.disease)
     _warn_config_gaps(disease)
+    steps = _get_pipeline_steps(args)
+    parallel = bool(getattr(args, "parallel", False))
+
     logger.info("=" * 70)
     logger.info("MEDICAL RESEARCH PIPELINE — %s", disease.profile.name)
     logger.info("=" * 70)
-    logger.info("%d steps for %s", len(PIPELINE_STEPS), disease.profile.name)
+    if parallel:
+        logger.info(
+            "Parallel DAG execution (%d modules) for %s",
+            len(_steps_to_parallel_modules(steps)),
+            disease.profile.name,
+        )
+    else:
+        logger.info("%d steps for %s", len(steps), disease.profile.name)
 
     start_time = time.time()
     errors = 0
 
-    for i, (step_name, handler_fn) in enumerate(PIPELINE_STEPS, 1):
-        logger.info("[STEP %d/%d] %s", i, len(PIPELINE_STEPS), step_name)
-        try:
-            handler_fn(args)
-        except Exception as e:
-            errors += 1
-            logger.error("  %s", e)
-        rate_limited_sleep(0.3)
+    if parallel:
+        module_ids = _steps_to_parallel_modules(steps)
+        levels = validate_dag(module_ids)
+
+        def _runner(module_id: str) -> None:
+            logger.info("[MODULE] %s", module_id)
+            exit_code = _run_all_module(module_id, args)
+            if exit_code:
+                raise RuntimeError(f"Module '{module_id}' failed with exit code {exit_code}")
+
+        for level_index, level in enumerate(levels, 1):
+            logger.info(
+                "[LEVEL %d/%d] %s",
+                level_index,
+                len(levels),
+                ", ".join(level),
+            )
+            errors += run_levels([level], _runner, parallel=True)
+    else:
+        for i, (step_name, module_id) in enumerate(steps, 1):
+            logger.info("[STEP %d/%d] %s", i, len(steps), step_name)
+            try:
+                if module_id is None:
+                    if args.no_cache:
+                        continue
+                    for sub_id in _bioinformatics_module_ids():
+                        errors += _run_all_module(sub_id, args)
+                else:
+                    errors += _run_all_module(module_id, args)
+            except Exception as e:
+                errors += 1
+                logger.error("  %s", e)
+            rate_limited_sleep(0.3)
 
     elapsed = time.time() - start_time
     logger.info("=" * 70)
@@ -1356,115 +1356,25 @@ def cmd_run_all(args):
     return 1 if errors > 0 else 0
 
 
-def _step_kg(args):
-    from med_research.pipeline.knowledge_graph.builder import build_graph, export_for_web
-
-    G = build_graph(args.disease)
-    export_for_web(G, disease_id=args.disease)
-
-
-def _step_repurpose(args):
-    from med_research.pipeline.drug_repurposing.engine import (
-        DATA_DIR,
-        analyze,
-        identify_untargeted_genes,
-        load_genes,
-        load_json,
-        load_knowledge_graph,
-        print_top_candidates,
-        score_candidates,
-    )
-
-    G = load_knowledge_graph(args.disease)
-    genes = load_genes(args.disease)
-    candidates = load_json(DATA_DIR / "candidates.json")["repurposing_candidates"]
-    untargeted = identify_untargeted_genes(G, args.disease)
-    untargeted_ids = {g["id"] for g in untargeted}
-    scored = score_candidates(G, candidates, genes, disease_id=args.disease)
-    scored = [c for c in scored if c["gene_id"] in untargeted_ids]
-    analyze(scored)
-    print_top_candidates(scored, 10)
-
-
-def _step_bioinformatics(args):
-    if not args.no_cache:
-        _run_gwas(args)
-        _run_enrichment(args)
-        _run_ppi(args)
-
-
-def _step_literature(args):
-    from med_research.pipeline.literature_mining.miner import mine_literature
-
-    mine_literature(max_per_query=20, use_cache=True, disease_id=args.disease)
-
-
-def _step_screening(args):
-    from med_research.diseases.coverage import module_coverage
-    from med_research.pipeline.virtual_screening.screening import (
-        build_compound_library,
-        get_untargeted_genes,
-        screen_compounds,
-    )
-    coverage = module_coverage(
-        args.disease, "screening", ("genes", "drugs", "pathways", "screening_profile")
-    )
-    if not coverage.is_runnable:
-        raise RuntimeError(
-            f"Screening blocked for {args.disease}: "
-            + ", ".join(coverage.missing_inputs or coverage.limitations)
-        )
-
-    library = build_compound_library(args.disease)
-    target_ids = [g["id"] for g in get_untargeted_genes(args.disease)]
-    results = screen_compounds(
-        target_genes=target_ids,
-        compound_library=library,
-        top_n=10,
-        disease_id=args.disease,
-    )
-    if results.get("status") == "blocked":
-        raise RuntimeError(
-            f"Screening blocked for {args.disease}: "
-            + ", ".join(results.get("coverage", {}).get("limitations", []))
-        )
-
-
-def _step_trials(args):
-    from med_research.pipeline.clinical_trials.tracker import track_trials
-
-    try:
-        query = Disease(args.disease).get_trial_query()
-    except ValueError:
-        query = "lupus OR SLE"
-    track_trials(
-        query=query, max_results=20, use_cache=True, disease_id=args.disease
-    )
-
-
-def _step_ml(args):
-    from med_research.pipeline.knowledge_graph.builder import build_graph
-    from med_research.pipeline.ml_predictor.predictor import train_and_predict
-
-    G = build_graph(args.disease)
-    train_and_predict(G, top_n=10)
-
-
-def _step_synergy(args):
-    from med_research.pipeline.drug_synergy.engine import compute_synergy
-
-    compute_synergy(disease_id=args.disease)
-
-
+# (display name, registry module_id or None for bioinformatics composite)
 PIPELINE_STEPS = [
-    ("Knowledge Graph", _step_kg),
-    ("Drug Repurposing", _step_repurpose),
-    ("Bioinformatics", _step_bioinformatics),
-    ("Literature Mining", _step_literature),
-    ("Virtual Screening", _step_screening),
-    ("Clinical Trials", _step_trials),
-    ("ML Predictor", _step_ml),
-    ("Drug Synergy", _step_synergy),
+    ("Knowledge Graph", "knowledge_graph"),
+    ("Drug Repurposing", "drug_repurposing"),
+    ("Bioinformatics", None),
+    ("Literature Mining", "literature_mining"),
+    ("Virtual Screening", "virtual_screening"),
+    ("Clinical Trials", "clinical_trials"),
+    ("ML Predictor", "ml_predictor"),
+    ("Drug Synergy", "drug_synergy"),
+]
+
+PIPELINE_STEPS_FULL = [
+    ("Adverse Events", "adverse_events"),
+    ("Network Pharmacology", "network_pharmacology"),
+    ("Gene Expression", "gene_expression"),
+    ("CAR-T Predictor", "car_t_predictor"),
+    ("Biomarker Discovery", "biomarker_discovery"),
+    ("Cross-Disease", "cross_disease"),
 ]
 
 
@@ -1491,7 +1401,7 @@ def cmd_serve(args):
 
 def cmd_cache(args):
     """Manage pipeline caches."""
-    from med_research.cache import CacheManager
+    from med_research.cache import CacheManager, migrate_legacy_caches
 
     cache = CacheManager()
 
@@ -1506,8 +1416,27 @@ def cmd_cache(args):
     elif args.cache_action == "cleanup":
         n = cache.cleanup(ttl_seconds=getattr(args, "ttl", None))
         logger.info(f"Removed {n} expired entries")
+    elif args.cache_action == "migrate":
+        summary = migrate_legacy_caches(
+            cache,
+            dry_run=getattr(args, "dry_run", False),
+        )
+        total = summary["total"]
+        logger.info(
+            "Migration complete: %d migrated, %d skipped, %d errors",
+            total["migrated"],
+            total["skipped"],
+            total["error"],
+        )
+        for namespace, counts in sorted(summary["namespaces"].items()):
+            if namespace == "total":
+                continue
+            migrated = counts.get("migrated", 0)
+            skipped = counts.get("skipped", 0)
+            if migrated or skipped:
+                logger.info("  %s: %d migrated, %d skipped", namespace, migrated, skipped)
     else:
-        logger.info("Usage: med-research cache {stats|clear|cleanup}")
+        logger.info("Usage: med-research cache {stats|clear|cleanup|migrate}")
     return 0
 
 
