@@ -1,4 +1,13 @@
 import json
+import logging
+from collections.abc import Callable
+from typing import TypeVar
+
+from med_research.rate_limiter import backoff_sleep
+
+logger = logging.getLogger(__name__)
+
+T = TypeVar("T")
 
 
 class MedResearchError(Exception):
@@ -52,6 +61,15 @@ class APITimeoutError(ExternalAPIError):
 class APIQuotaError(ExternalAPIError):
     """External API quota exceeded or rate limited."""
 
+    def __init__(
+        self,
+        message: str = "",
+        *,
+        retry_after_seconds: float | None = None,
+    ) -> None:
+        super().__init__(message)
+        self.retry_after_seconds = retry_after_seconds
+
 
 class APIParseError(ExternalAPIError):
     """Failed to parse response from external API."""
@@ -83,7 +101,10 @@ def classify_api_error(exc: BaseException, source: str = "") -> ExternalAPIError
         if isinstance(exc, requests.exceptions.HTTPError):
             response = exc.response
             if response is not None and response.status_code in (429, 503):
-                return APIQuotaError(f"{prefix}{exc}")
+                from med_research.rate_limiter import parse_retry_after
+
+                retry_after = parse_retry_after(response.headers.get("Retry-After"))
+                return APIQuotaError(f"{prefix}{exc}", retry_after_seconds=retry_after)
             return ExternalAPIError(f"{prefix}{exc}")
         if isinstance(exc, requests.exceptions.ConnectionError):
             return APITimeoutError(f"{prefix}{exc}")
@@ -96,7 +117,10 @@ def classify_api_error(exc: BaseException, source: str = "") -> ExternalAPIError
 
     if isinstance(exc, urllib.error.HTTPError):
         if exc.code in (429, 503):
-            return APIQuotaError(f"{prefix}{exc}")
+            from med_research.rate_limiter import parse_retry_after
+
+            retry_after = parse_retry_after(exc.headers.get("Retry-After"))
+            return APIQuotaError(f"{prefix}{exc}", retry_after_seconds=retry_after)
         return ExternalAPIError(f"{prefix}{exc}")
 
     if isinstance(exc, urllib.error.URLError):
@@ -114,3 +138,47 @@ def classify_api_error(exc: BaseException, source: str = "") -> ExternalAPIError
 def raise_api_error(exc: BaseException, source: str = "") -> None:
     """Re-raise *exc* as a typed :class:`ExternalAPIError`."""
     raise classify_api_error(exc, source) from exc
+
+
+def retry_with_backoff(
+    func: Callable[[], T],
+    *,
+    max_attempts: int = 3,
+    source: str = "",
+) -> T:
+    """Call *func*, retrying transient timeout/quota errors with backoff."""
+    last_error: ExternalAPIError | None = None
+    label = source or "API call"
+
+    for attempt in range(max_attempts):
+        try:
+            return func()
+        except (KeyboardInterrupt, SystemExit):
+            raise
+        except ExternalAPIError as exc:
+            err = exc
+        except BaseException as exc:
+            err = classify_api_error(exc, source)
+
+        if isinstance(err, (APITimeoutError, APIQuotaError)) and attempt < max_attempts - 1:
+            retry_after = (
+                err.retry_after_seconds
+                if isinstance(err, APIQuotaError)
+                else None
+            )
+            logger.info(
+                "Retrying %s after %s (attempt %d/%d)",
+                label,
+                err,
+                attempt + 1,
+                max_attempts,
+            )
+            backoff_sleep(attempt, retry_after=retry_after)
+            last_error = err
+            continue
+
+        raise err
+
+    if last_error is not None:
+        raise last_error
+    raise RuntimeError(f"retry_with_backoff exhausted attempts for {label}")

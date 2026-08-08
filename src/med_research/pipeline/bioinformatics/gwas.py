@@ -27,8 +27,14 @@ from med_research.cache import (
     cache_set,
     load_legacy_json,
 )
-from med_research.exceptions import ConfigurationError, classify_api_error
+from med_research.exceptions import (
+    ConfigurationError,
+    ExternalAPIError,
+    classify_api_error,
+    retry_with_backoff,
+)
 from med_research.pipeline.knowledge_graph.config import load_genes as config_load_genes
+from med_research.pipeline.progress import StandardProgress, _tick
 from med_research.rate_limiter import rate_limited_sleep
 
 logger = logging.getLogger(__name__)
@@ -45,6 +51,14 @@ except ImportError:
 DATA_DIR = Path(__file__).parent / "data"
 
 GWAS_API = "https://www.ebi.ac.uk/gwas/rest/api"
+
+
+def _gwas_http_get(url: str, params: dict, timeout: int = 30):
+    """Perform a GWAS Catalog GET request, raising on HTTP failure."""
+    resp = requests.get(url, params=params, timeout=timeout)
+    resp.raise_for_status()
+    return resp
+
 
 # EFO term for systemic lupus erythematosus
 SLE_EFO_TERMS = [
@@ -100,6 +114,7 @@ def search_gwas_studies(
     query: str | None = None,
     max_results: int = 100,
     disease_id: str = "sle",
+    progress_callback: StandardProgress | None = None,
 ) -> list:
     """
     Search the GWAS Catalog for disease-associated studies.
@@ -130,12 +145,14 @@ def search_gwas_studies(
         }
 
         try:
-            resp = requests.get(
-                f"{GWAS_API}/studies/search/findByDiseaseTrait",
-                params={"diseaseTrait": params["q"], "size": params["size"]},
-                timeout=30,
+            resp = retry_with_backoff(
+                lambda p=params: _gwas_http_get(
+                    f"{GWAS_API}/studies/search/findByDiseaseTrait",
+                    {"diseaseTrait": p["q"], "size": p["size"]},
+                    timeout=30,
+                ),
+                source="GWAS search",
             )
-            resp.raise_for_status()
             data = resp.json()
 
             page_studies = data.get("_embedded", {}).get("studies", [])
@@ -144,10 +161,14 @@ def search_gwas_studies(
 
             studies.extend(page_studies)
             page += 1
+            _tick(progress_callback, "fetching GWAS studies", min(len(studies), max_results), max_results)
 
             # Rate limiting
             rate_limited_sleep(0.5)
 
+        except ExternalAPIError as e:
+            logger.info(f"   ⚠️  {e}")
+            break
         except json.JSONDecodeError as e:
             err = classify_api_error(e, "GWAS search")
             logger.info(f"   ⚠️  {err}")
@@ -170,15 +191,19 @@ def fetch_study_associations(study_accession: str) -> list:
     associations = []
 
     try:
-        resp = requests.get(
-            f"{GWAS_API}/studies/{study_accession}/associations",
-            params={"size": 100},
-            timeout=30,
+        resp = retry_with_backoff(
+            lambda: _gwas_http_get(
+                f"{GWAS_API}/studies/{study_accession}/associations",
+                {"size": 100},
+                timeout=30,
+            ),
+            source=f"GWAS associations for {study_accession}",
         )
-        resp.raise_for_status()
         data = resp.json()
         return data.get("_embedded", {}).get("associations", [])
 
+    except ExternalAPIError as e:
+        logger.info(f"   ⚠️  {e}")
     except requests.exceptions.HTTPError as e:
         if e.response is not None and e.response.status_code == 404:
             logger.info(f"   ⚠️  No associations found for study {study_accession} (404)")
@@ -199,7 +224,10 @@ def fetch_study_associations(study_accession: str) -> list:
     return associations
 
 
-def _resolve_snp_details(rsids: set) -> dict:
+def _resolve_snp_details(
+    rsids: set,
+    progress_callback: StandardProgress | None = None,
+) -> dict:
     """
     Resolve SNP rsIDs to gene names + genomic locations.
 
@@ -220,9 +248,13 @@ def _resolve_snp_details(rsids: set) -> dict:
 
     for i, rsid in enumerate(unresolved):
         try:
-            resp = requests.get(
-                f"{GWAS_API}/singleNucleotidePolymorphisms/{rsid}",
-                timeout=15,
+            resp = retry_with_backoff(
+                lambda rsid=rsid: _gwas_http_get(
+                    f"{GWAS_API}/singleNucleotidePolymorphisms/{rsid}",
+                    {},
+                    timeout=15,
+                ),
+                source=f"SNP resolution for {rsid}",
             )
             if resp.ok:
                 data = resp.json()
@@ -249,6 +281,9 @@ def _resolve_snp_details(rsids: set) -> dict:
                     resolved += 1
             else:
                 snp_cache[rsid] = {"genes": [], "chromosome": "", "position": 0}
+        except ExternalAPIError as e:
+            logger.info(f"   ⚠️  {e}")
+            snp_cache[rsid] = {"genes": [], "chromosome": "", "position": 0}
         except json.JSONDecodeError as e:
             err = classify_api_error(e, f"SNP resolution for {rsid}")
             logger.info(f"   ⚠️  {err}")
@@ -260,6 +295,7 @@ def _resolve_snp_details(rsids: set) -> dict:
 
         if (i + 1) % 20 == 0 or i == len(unresolved) - 1:
             logger.info(f"      [{i+1}/{len(unresolved)}] {resolved} SNPs mapped")
+        _tick(progress_callback, "resolving SNPs", i + 1, len(unresolved))
 
         rate_limited_sleep(0.3)
 
@@ -271,6 +307,7 @@ def extract_gene_associations(
     studies: list,
     max_studies: int = 30,
     resolve_snps: bool = True,
+    progress_callback: StandardProgress | None = None,
 ) -> dict:
     """
     Extract gene-level associations from GWAS studies.
@@ -294,7 +331,9 @@ def extract_gene_associations(
     # Store (accession, title, pubmed_id, p_val, rsids) per association
     assoc_records = []
 
+    study_limit = min(len(studies), max_studies)
     for i, study in enumerate(studies[:max_studies]):
+        _tick(progress_callback, "extracting associations", i + 1, study_limit)
         accession = study.get("accessionId", "")
         title = study.get("title", "Unknown")
         pubmed_id = study.get("publicationInfo", {}).get("pubmedId", "")
@@ -367,7 +406,7 @@ def extract_gene_associations(
     snp_details = {}
     if resolve_snps and all_rsids:
         logger.info(f"\n   🧬 Collected {len(all_rsids)} unique SNP rsIDs across all studies")
-        snp_details = _resolve_snp_details(all_rsids)
+        snp_details = _resolve_snp_details(all_rsids, progress_callback=progress_callback)
 
         # Map resolved genes back to study/gene tracking
         for record in assoc_records:
@@ -577,6 +616,7 @@ def run_gwas_analysis(
     max_studies: int = 30,
     use_cache: bool = True,
     resolve_snps: bool = True,
+    progress_callback: StandardProgress | None = None,
 ) -> dict:
     """Run GWAS Catalog annotation for a disease (engine entry point)."""
     from med_research.diseases.coverage import module_coverage
@@ -600,9 +640,14 @@ def run_gwas_analysis(
     logger.info("🔄 Searching GWAS Catalog...")
     search_terms = disease_search_terms(disease_id)
     all_studies = []
-    for term in search_terms[:2]:
-        studies = search_gwas_studies(term, max_results=max_studies // 2)
+    term_count = min(len(search_terms), 2)
+    for idx, term in enumerate(search_terms[:2], 1):
+        studies = search_gwas_studies(
+            term,
+            max_results=max_studies // 2,
+        )
         all_studies.extend(studies)
+        _tick(progress_callback, "searching GWAS catalog", idx, term_count)
         rate_limited_sleep(0.5)
 
     seen = set()
@@ -629,6 +674,7 @@ def run_gwas_analysis(
         if cached:
             try:
                 logger.info("📦 Loading GWAS results from cache...")
+                _tick(progress_callback, "loading GWAS results", 1, 1)
                 gwas_results = cached["gwas_results"]
                 crossref = cached["crossref"]
                 all_results = cached
@@ -641,6 +687,7 @@ def run_gwas_analysis(
             unique_studies,
             max_studies=max_studies,
             resolve_snps=resolve_snps,
+            progress_callback=progress_callback,
         )
 
         logger.info("\n🔄 Cross-referencing with knowledge graph...")

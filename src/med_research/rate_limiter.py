@@ -1,5 +1,7 @@
+import email.utils
 import random
 import time
+from datetime import datetime, timezone
 
 
 def rate_limited_sleep(base_seconds: float, jitter: float = 0.5) -> None:
@@ -41,20 +43,52 @@ def exponential_backoff(
     return random.uniform(min_sleep, max_sleep)
 
 
+def parse_retry_after(value: str | int | None) -> float | None:
+    """Parse a ``Retry-After`` header value into seconds to wait."""
+    if value is None:
+        return None
+
+    raw = str(value).strip()
+    if not raw:
+        return None
+
+    try:
+        seconds = float(raw)
+    except ValueError:
+        try:
+            retry_at = email.utils.parsedate_to_datetime(raw)
+        except (TypeError, ValueError):
+            return None
+        if retry_at.tzinfo is None:
+            retry_at = retry_at.replace(tzinfo=timezone.utc)
+        seconds = (retry_at - datetime.now(timezone.utc)).total_seconds()
+
+    if seconds <= 0:
+        return None
+    return seconds
+
+
 def backoff_sleep(
     attempt: int,
     base_seconds: float = 0.5,
     max_seconds: float = 30.0,
     backoff_factor: float = 2.0,
     jitter: float = 0.5,
+    *,
+    retry_after: float | None = None,
 ) -> None:
     """Sleep for an exponential-backoff duration with jitter."""
-    time.sleep(
-        exponential_backoff(
+    if retry_after is not None:
+        delay = min(retry_after, max_seconds)
+        min_sleep = delay * (1 - jitter)
+        max_sleep = delay * (1 + jitter)
+        actual = random.uniform(min_sleep, max_sleep)
+    else:
+        actual = exponential_backoff(
             attempt,
             base_seconds=base_seconds,
             max_seconds=max_seconds,
             backoff_factor=backoff_factor,
             jitter=jitter,
         )
-    )
+    time.sleep(actual)

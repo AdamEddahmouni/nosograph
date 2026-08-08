@@ -18,7 +18,13 @@ import sys
 import urllib.error
 from pathlib import Path
 
-from med_research.exceptions import ConfigurationError, ExternalAPIError, classify_api_error
+from med_research.exceptions import (
+    ConfigurationError,
+    ExternalAPIError,
+    classify_api_error,
+    retry_with_backoff,
+)
+from med_research.pipeline.progress import StandardProgress, _tick
 from med_research.rate_limiter import rate_limited_sleep
 
 # Add parent to path
@@ -233,11 +239,15 @@ def search_pubmed(
 
     try:
         # Step 1: Search for IDs
-        handle = Entrez.esearch(
-            db="pubmed", term=query, retmax=max_results, sort="relevance"
-        )
-        record = Entrez.read(handle)
-        handle.close()
+        def _esearch():
+            handle = Entrez.esearch(
+                db="pubmed", term=query, retmax=max_results, sort="relevance"
+            )
+            record = Entrez.read(handle)
+            handle.close()
+            return record
+
+        record = retry_with_backoff(_esearch, source="PubMed esearch")
         id_list = record["IdList"]
 
         if not id_list:
@@ -249,11 +259,15 @@ def search_pubmed(
         rate_limited_sleep(0.4)
 
         # Step 2: Fetch article details
-        handle = Entrez.efetch(
-            db="pubmed", id=id_list, rettype="medline", retmode="text"
-        )
-        records = list(Medline.parse(handle))
-        handle.close()
+        def _efetch():
+            handle = Entrez.efetch(
+                db="pubmed", id=id_list, rettype="medline", retmode="text"
+            )
+            records = list(Medline.parse(handle))
+            handle.close()
+            return records
+
+        records = retry_with_backoff(_efetch, source="PubMed efetch")
 
         articles = []
         for rec in records:
@@ -277,11 +291,7 @@ def search_pubmed(
     except ExternalAPIError as e:
         logger.info(f"   ❌ PubMed query error: {e}")
         return []
-    except (urllib.error.URLError, urllib.error.HTTPError, OSError, ValueError) as e:
-        err = classify_api_error(e, "PubMed query")
-        logger.info(f"   ❌ PubMed query error: {err}")
-        return []
-    except Exception as e:
+    except (urllib.error.URLError, urllib.error.HTTPError, OSError, ValueError, RuntimeError) as e:
         err = classify_api_error(e, "PubMed query")
         logger.info(f"   ❌ PubMed query error: {err}")
         return []
@@ -295,6 +305,7 @@ def mine_literature(
     targeted_candidates: bool = False,
     extract_content: bool = False,
     disease_id: str = "sle",
+    progress_callback: StandardProgress | None = None,
 ) -> tuple:
     """
     Run the full literature mining pipeline.
@@ -368,12 +379,14 @@ def mine_literature(
     if use_cache and all_articles is not None and not targeted_candidates:
         logger.info("📦 Loading from PubMed cache...")
         logger.info(f"   Loaded {len(all_articles)} cached articles")
+        _tick(progress_callback, "PubMed query", 1, 1)
     else:
         all_articles = []
         seen_pmids = set()
 
         # ── Broad queries ────────────────────────────────────────────
         for i, query in enumerate(queries, 1):
+            _tick(progress_callback, "PubMed query", i, len(queries))
             logger.info(f"\n🔍 Broad query {i}/{len(queries)}: {query[:100]}...")
             articles = search_pubmed(query, max_results=max_per_query, email=email)
 
@@ -392,6 +405,12 @@ def mine_literature(
             logger.info(f"\n🎯 Running {len(candidate_queries)} per-candidate targeted queries...")
             matches_found = 0
             for i, (_cid, query, drug_label) in enumerate(candidate_queries, 1):
+                _tick(
+                    progress_callback,
+                    "candidate PubMed query",
+                    i,
+                    len(candidate_queries),
+                )
                 articles = search_pubmed(query, max_results=3, email=email)
 
                 new_count = 0

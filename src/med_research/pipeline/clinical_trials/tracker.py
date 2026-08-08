@@ -27,9 +27,15 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 import logging
 
 from med_research.cache import NS_CLINICAL_TRIALS, cache_get, cache_set, load_legacy_json
-from med_research.exceptions import DataValidationError, classify_api_error
+from med_research.exceptions import (
+    DataValidationError,
+    ExternalAPIError,
+    classify_api_error,
+    retry_with_backoff,
+)
 from med_research.pipeline.knowledge_graph.config import load_drugs as config_load_drugs
 from med_research.pipeline.knowledge_graph.config import load_genes as config_load_genes
+from med_research.pipeline.progress import StandardProgress, _tick
 
 logger = logging.getLogger(__name__)
 if sys.platform == "win32":
@@ -48,6 +54,14 @@ last_coverage = None
 
 # ClinicalTrials.gov API v2
 CT_API = "https://clinicaltrials.gov/api/v2"
+
+
+def _ct_http_get(params: dict):
+    """Perform a ClinicalTrials.gov GET request, raising on HTTP failure."""
+    resp = requests.get(f"{CT_API}/studies", params=params, timeout=30)
+    resp.raise_for_status()
+    return resp
+
 
 # Phase ordering for sorting
 PHASE_ORDER = {
@@ -81,7 +95,11 @@ MOA_KEYWORDS = {
 }
 
 
-def search_clinical_trials(query: str, max_results: int = 100) -> list:
+def search_clinical_trials(
+    query: str,
+    max_results: int = 100,
+    progress_callback: StandardProgress | None = None,
+) -> list:
     """Search ClinicalTrials.gov API v2 for trials matching the query.
 
     Returns list of study dicts with protocolSection data.
@@ -119,16 +137,24 @@ def search_clinical_trials(query: str, max_results: int = 100) -> list:
             params["pageToken"] = page_token
 
         try:
-            resp = requests.get(f"{CT_API}/studies", params=params, timeout=30)
-            resp.raise_for_status()
+            resp = retry_with_backoff(
+                lambda p=params: _ct_http_get(p),
+                source="ClinicalTrials.gov search",
+            )
             data = resp.json()
-        except (requests.exceptions.RequestException, json.JSONDecodeError) as e:
+        except (ExternalAPIError, requests.exceptions.RequestException, json.JSONDecodeError) as e:
             err = classify_api_error(e, "ClinicalTrials.gov search")
             logger.info(f"   ⚠️  {err}")
             break
 
         studies = data.get("studies", [])
         all_studies.extend(studies)
+        _tick(
+            progress_callback,
+            "fetching clinical trials",
+            min(len(all_studies), max_results),
+            max_results,
+        )
 
         page_token = data.get("nextPageToken")
         if not page_token or len(studies) == 0:
@@ -250,6 +276,26 @@ def categorize_moa(trial: dict) -> str:
     return "Other Targeted"
 
 
+def _legacy_ct_cache_path(disease_id: str, query_key: str) -> Path:
+    """Legacy per-query clinical trial cache path (read-only after migration)."""
+    return DATA_DIR / f"ct_cache_{disease_id}_{query_key}.json"
+
+
+def _get_cached_trials(disease_id: str, query_key: str, use_cache: bool) -> dict | None:
+    """Load trial payload from CacheManager namespace, falling back to legacy file once."""
+    lookup_key = f"{disease_id}|||{query_key}"
+    cached = cache_get(NS_CLINICAL_TRIALS, lookup_key, use_cache=use_cache)
+    if cached is not None:
+        return cached
+    if not use_cache:
+        return None
+    legacy = load_legacy_json(_legacy_ct_cache_path(disease_id, query_key))
+    if legacy:
+        cache_set(NS_CLINICAL_TRIALS, lookup_key, legacy, use_cache=True)
+        return legacy
+    return None
+
+
 def load_kg_entities(disease_id: str = "sle") -> dict:
     """Load disease-specific KG genes and drugs for cross-referencing."""
     genes = {}
@@ -257,16 +303,16 @@ def load_kg_entities(disease_id: str = "sle") -> dict:
         genes_data = config_load_genes(disease_id)
         for g in genes_data["genes"]:
             genes[g["id"]] = g
-    except (DataValidationError, FileNotFoundError, json.JSONDecodeError):
-        pass
+    except (DataValidationError, FileNotFoundError, json.JSONDecodeError) as exc:
+        logger.debug("Could not load KG genes for trial cross-reference: %s", exc)
 
     drugs = {}
     try:
         drugs_data = config_load_drugs(disease_id)
         for d in drugs_data["drugs"]:
             drugs[d["id"]] = d
-    except (DataValidationError, FileNotFoundError, json.JSONDecodeError):
-        pass
+    except (DataValidationError, FileNotFoundError, json.JSONDecodeError) as exc:
+        logger.debug("Could not load KG drugs for trial cross-reference: %s", exc)
 
     return {"genes": genes, "drugs": drugs}
 
@@ -330,6 +376,7 @@ def track_trials(
     max_results: int = 100,
     use_cache: bool = True,
     disease_id: str = "sle",
+    progress_callback: StandardProgress | None = None,
 ) -> dict:
     """Run the full clinical trial tracking pipeline.
 
@@ -371,20 +418,15 @@ def track_trials(
     import hashlib
     query_key = hashlib.sha256(f"{disease_id}|{query}".encode()).hexdigest()[:12]
     cache_lookup_key = f"{disease_id}|||{query_key}"
-    legacy_cache_path = DATA_DIR / f"ct_cache_{disease_id}_{query_key}.json"
 
-    cached_payload = cache_get(NS_CLINICAL_TRIALS, cache_lookup_key, use_cache=use_cache)
-    if cached_payload is None and use_cache:
-        legacy = load_legacy_json(legacy_cache_path)
-        if legacy:
-            cached_payload = legacy
-            cache_set(NS_CLINICAL_TRIALS, cache_lookup_key, legacy, use_cache=True)
+    cached_payload = _get_cached_trials(disease_id, query_key, use_cache)
 
     if use_cache and cached_payload is not None:
         try:
             trials = cached_payload.get("trials", [])
             if len(trials) >= max_results:
                 logger.info(f"📦 Loading {len(trials)} trials from cache...")
+                _tick(progress_callback, "loading clinical trials", 1, 1)
                 if cached_payload.get("kg_crossref"):
                     trials = [dict(t) for t in trials]
                     for t in trials:
@@ -405,10 +447,17 @@ def track_trials(
             logger.info(f"   ⚠️  Cache error ({e}), re-fetching...")
 
     # Search trials
-    raw_trials = search_clinical_trials(query, max_results)
+    raw_trials = search_clinical_trials(
+        query,
+        max_results,
+        progress_callback=progress_callback,
+    )
 
     # Parse trials
-    trials = [parse_trial(t) for t in raw_trials]
+    trials = []
+    for i, trial in enumerate(raw_trials, 1):
+        _tick(progress_callback, "parsing trials", i, len(raw_trials))
+        trials.append(parse_trial(trial))
 
     # Categorize MoA
     for trial in trials:
