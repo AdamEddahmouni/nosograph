@@ -10,6 +10,13 @@ HOST = os.environ.get("HOST", "0.0.0.0")
 PORT = int(os.environ.get("PORT", "8000"))
 DEBUG = os.environ.get("DEBUG", "false").lower() == "true"
 
+# ── Researcher authentication ─────────────────────────────────────────────
+# ``local`` uses signed HttpOnly sessions issued by /api/auth/login. ``proxy``
+# accepts a principal header only from an address listed in AUTH_TRUSTED_PROXY_IPS.
+AUTH_MODE = os.environ.get("AUTH_MODE", "local").lower()
+AUTH_SESSION_SECRET = os.environ.get("AUTH_SESSION_SECRET", "")
+AUTH_TRUSTED_PROXY_IPS = os.environ.get("AUTH_TRUSTED_PROXY_IPS", "")
+
 # ── API Metadata ──────────────────────────────────────────────────────────
 API_TITLE = "Medical Research Platform API"
 API_VERSION = "2.0.0"
@@ -24,6 +31,7 @@ API_DESCRIPTION = (
 # in the OpenAPI schema. APIRouter(tags=[...]) only tags individual routes;
 # the FastAPI constructor's openapi_tags parameter creates the schema metadata.
 API_TAGS = [
+    {"name": "Authentication", "description": "Server-derived researcher login and session state."},
     {"name": "System", "description": "Health checks and platform-wide statistics."},
     {
         "name": "Knowledge Graph",

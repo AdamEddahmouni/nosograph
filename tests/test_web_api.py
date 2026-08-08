@@ -13,14 +13,13 @@ Tests cover all REST endpoints using FastAPI's TestClient:
 """
 
 import socket
+from unittest.mock import patch
 
 import pytest
 from fastapi.testclient import TestClient
 from starlette.websockets import WebSocketDisconnect
 
 from med_research.web.main import app
-
-pytestmark = pytest.mark.integration
 
 # ── Redis availability check ────────────────────────────────────────────────
 
@@ -493,7 +492,6 @@ class TestRepurposeGene:
 # ── Bioinformatics Endpoints ────────────────────────────────────────────────
 
 
-@pytest.mark.integration
 class TestBioGWAS:
     """Tests for GET /api/bioinformatics/gwas (uses cache)."""
 
@@ -520,7 +518,6 @@ class TestBioGWAS:
         assert isinstance(top_hits, list)
 
 
-@pytest.mark.integration
 class TestBioEnrichment:
     """Tests for GET /api/bioinformatics/enrichment (uses cache)."""
 
@@ -550,7 +547,6 @@ class TestBioEnrichment:
         assert "terms" in library
 
 
-@pytest.mark.integration
 class TestBioPPI:
     """Tests for GET /api/bioinformatics/ppi (uses cache)."""
 
@@ -796,6 +792,28 @@ class TestJobStatus:
         resp = client.get("/api/jobs/not-a-uuid")
         assert resp.status_code == 400
         assert resp.json()["detail"] == "Invalid job_id format"
+
+
+class TestSafeResultState:
+    """Unit tests for Celery result backend error handling in jobs router."""
+
+    def test_returns_none_when_backend_unavailable(self):
+        from med_research.web.routers import jobs
+
+        class BrokenResult:
+            @property
+            def state(self):
+                raise AttributeError("result backend unavailable")
+
+        assert jobs._safe_result_state(BrokenResult()) is None
+
+    def test_returns_state_when_available(self):
+        from med_research.web.routers import jobs
+
+        class GoodResult:
+            state = "SUCCESS"
+
+        assert jobs._safe_result_state(GoodResult()) == "SUCCESS"
 
 
 # ── Error Handling & Edge Cases ─────────────────────────────────────────────
@@ -1118,13 +1136,12 @@ class TestKGGraphDiseaseAware:
         assert len(ra) > 0
         assert ra != sle
 
-    def test_unknown_disease_returns_blocked_graph(self, client):
+    def test_unknown_disease_returns_409_for_graph(self, client):
         resp = client.get("/api/kg/graph?disease=nonexistent")
-        assert resp.status_code == 200
+        assert resp.status_code == 409
         data = resp.json()
-        assert data["status"] == "blocked"
-        assert data["elements"] == []
-        assert data["coverage"]["status"] == "blocked"
+        assert data["error_type"] == "ModuleNotAvailableError"
+        assert "detail" in data
 
     def test_stats_disease_param(self, client):
         sle = client.get("/api/kg/stats?disease=sle").json()
@@ -1240,6 +1257,59 @@ class TestAPIHardening:
         resp = client.get("/api/kg/search?q=" + ("a" * 501))
         assert resp.status_code == 422
 
+    def test_kg_search_query_min_length(self, client):
+        resp = client.get("/api/kg/search?q=")
+        assert resp.status_code == 422
+
+    def test_semantic_search_query_bounds(self, client):
+        assert client.get("/api/semantic/search?q=").status_code == 422
+        assert client.get("/api/semantic/search?q=" + ("a" * 501)).status_code == 422
+
+    def test_cache_stats_endpoint(self, client):
+        resp = client.get("/api/system/cache/stats")
+        assert resp.status_code == 200
+        data = resp.json()
+        assert "total_entries" in data
+        assert "namespaces" in data
+
+    def test_cache_clear_all(self, client):
+        resp = client.delete("/api/system/cache")
+        assert resp.status_code == 200
+        data = resp.json()
+        assert "removed" in data
+        assert data["namespace"] is None
+
+    def test_cache_clear_namespace(self, client):
+        resp = client.delete("/api/system/cache/gwas")
+        assert resp.status_code == 200
+        assert resp.json()["namespace"] == "gwas"
+
+    def test_submit_run_all_job(self, client):
+        with patch("med_research.web.routers.jobs.task_run_all") as mock_task:
+            mock_task.delay.return_value.id = "00000000-0000-0000-0000-000000000002"
+            resp = client.post(
+                "/api/jobs/run-all",
+                params={
+                    "disease_id": "ra",
+                    "full": True,
+                    "parallel": True,
+                    "skip_ml": True,
+                    "export_html": True,
+                    "no_cache": True,
+                },
+            )
+        assert resp.status_code == 200
+        data = resp.json()
+        assert data["module"] == "run-all"
+        mock_task.delay.assert_called_once_with(
+            "ra",
+            full=True,
+            parallel=True,
+            skip_ml=True,
+            export_html=True,
+            no_cache=True,
+        )
+
     def test_request_body_size_limit(self, client):
         resp = client.post(
             "/api/jobs/workspace",
@@ -1269,3 +1339,43 @@ class TestAPIHardening:
                     pass
 
             asyncio.run(_run())
+
+    def test_auth_middleware_blocks_missing_api_key(self, client, monkeypatch):
+        import med_research.web.middleware as mw
+
+        monkeypatch.setattr(mw, "API_KEY", "test-secret")
+        with patch("med_research.web.routers.jobs.task_run_ml") as mock_task:
+            mock_task.delay.return_value.id = "00000000-0000-0000-0000-000000000020"
+            resp = client.post("/api/jobs/ml", params={"top_n": 5})
+        assert resp.status_code == 401
+
+    def test_auth_middleware_accepts_valid_api_key(self, client, monkeypatch):
+        import med_research.web.middleware as mw
+
+        monkeypatch.setattr(mw, "API_KEY", "test-secret")
+        with patch("med_research.web.routers.jobs.task_run_ml") as mock_task:
+            mock_task.delay.return_value.id = "00000000-0000-0000-0000-000000000021"
+            resp = client.post(
+                "/api/jobs/ml",
+                params={"top_n": 5},
+                headers={"X-API-Key": "test-secret"},
+            )
+        assert resp.status_code == 200
+
+    def test_rate_limit_middleware_returns_429(self, client, monkeypatch):
+        import med_research.web.middleware as mw
+
+        monkeypatch.setattr(mw, "RATE_LIMIT_REQUESTS", 2)
+        monkeypatch.setattr(mw, "RATE_LIMIT_WINDOW", 60)
+        client.get("/api/health")
+        client.get("/api/health")
+        resp = client.get("/api/health")
+        assert resp.status_code == 429
+
+    def test_request_body_size_limit_via_content_length(self, client):
+        resp = client.post(
+            "/api/jobs/workspace",
+            content=b"{}",
+            headers={"Content-Type": "application/json", "Content-Length": str(1024 * 1024 + 1)},
+        )
+        assert resp.status_code == 413

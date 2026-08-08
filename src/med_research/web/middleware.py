@@ -12,6 +12,7 @@ PROTECTED_PREFIXES = (
     "/api/jobs",
     "/api/llm/extract",
     "/api/evidence/gather",
+    "/api/system/cache",
 )
 
 API_KEY = os.environ.get("API_KEY", "")
@@ -62,8 +63,10 @@ class AuthMiddleware(BaseHTTPMiddleware):
         if not API_KEY:
             return await call_next(request)
 
-        if request.method in ("POST", "PUT", "PATCH", "DELETE") or any(
-            request.url.path.startswith(prefix) for prefix in PROTECTED_PREFIXES
+        is_auth_endpoint = request.url.path.startswith("/api/auth/")
+        if not is_auth_endpoint and (
+            request.method in ("POST", "PUT", "PATCH", "DELETE")
+            or any(request.url.path.startswith(prefix) for prefix in PROTECTED_PREFIXES)
         ):
             auth_header = request.headers.get("X-API-Key", "")
             if auth_header != API_KEY:

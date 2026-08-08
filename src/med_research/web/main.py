@@ -26,12 +26,12 @@ from med_research.web.config import (
     HOST,
     PORT,
 )
+from med_research.web.error_handlers import register_error_handlers
 from med_research.web.middleware import (
     AuthMiddleware,
     RateLimitMiddleware,
     RequestBodySizeLimitMiddleware,
 )
-from med_research.web.error_handlers import register_error_handlers
 from med_research.web.routers import routers
 
 REPO_ROOT = Path(__file__).parent.parent.parent.parent
