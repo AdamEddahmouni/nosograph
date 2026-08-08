@@ -59,6 +59,25 @@ typecheck:  ## Run mypy on the expanded type-check scope
 		src/med_research/pipeline_errors.py \
 		src/med_research/cache.py \
 		src/med_research/rate_limiter.py \
+		src/med_research/diseases/coverage.py \
+		src/med_research/diseases/schemas.py \
+		src/med_research/pipeline/adverse_events/adapter.py \
+		src/med_research/pipeline/bioinformatics/adapter.py \
+		src/med_research/pipeline/biomarker_discovery/adapter.py \
+		src/med_research/pipeline/car_t_predictor/adapter.py \
+		src/med_research/pipeline/clinical_trials/adapter.py \
+		src/med_research/pipeline/cross_disease/adapter.py \
+		src/med_research/pipeline/drug_repurposing/adapter.py \
+		src/med_research/pipeline/drug_synergy/adapter.py \
+		src/med_research/pipeline/evidence/adapter.py \
+		src/med_research/pipeline/evidence_workspace/adapter.py \
+		src/med_research/pipeline/gene_expression/adapter.py \
+		src/med_research/pipeline/knowledge_graph/adapter.py \
+		src/med_research/pipeline/literature_mining/adapter.py \
+		src/med_research/pipeline/ml_predictor/adapter.py \
+		src/med_research/pipeline/network_pharmacology/adapter.py \
+		src/med_research/pipeline/semantic_search/adapter.py \
+		src/med_research/pipeline/virtual_screening/adapter.py \
 		src/med_research/web/error_handlers.py \
 		src/med_research/web/models/jobs.py \
 		src/med_research/web/routers/jobs.py \

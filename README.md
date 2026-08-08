@@ -93,10 +93,22 @@ python -m med_research.cli screening --disease sle --top 15 --export-html
 python -m med_research.cli screening --disease ibd --top 15 --export-html
 python -m med_research.cli trials --disease ra --top 20 --export-html
 python -m med_research.cli ml --disease sle --top 15 --export-html
-python -m med_research.cli cross-disease --top 20 --export-html
+python -m med_research.cli cross-disease --disease ra --top 20 --export-html
 ```
 
 Use `python -m med_research.cli <command> --help` for command-specific options. External-source modules may use caches and may require network access; use the workspace fixture tests for deterministic offline behavior.
+
+### Run the full pipeline
+
+```bash
+# Default sequential run-all (core modules)
+python -m med_research.cli run-all --disease sle --export-html
+
+# Advanced modules + parallel DAG execution
+python -m med_research.cli run-all --disease ra --full --parallel --export-html --skip-ml
+```
+
+`run-all` uses the same `execute_module()` dispatch primitive as the web API and Celery `run_module` task. Evidence and semantic modules are optional and excluded from the default step list; use individual CLI commands or `POST /api/jobs/{module_id}` when needed.
 
 Virtual screening is strategy-driven for all seven diseases. Each run reports a strategy ID, deterministic fingerprint, coverage status, curated/inferred inputs, and limitations. A ready/full strategy means disease-specific pathway and drug inputs are present for this transparent property-based prioritization heuristic; it does not establish experimental binding, efficacy, or safety.
 
@@ -165,11 +177,22 @@ The complete route inventory and environment settings are in [`docs/api-referenc
 
 ## Testing and quality checks
 
-The repository currently collects 969 tests in this checkout. The authoritative result is the command exit status, not a hardcoded README count.
+Test tiers (see `pyproject.toml` markers):
+
+| Tier | Command | Scope |
+|---|---|---|
+| Offline unit | `make test-offline` | Fast suite; excludes `slow` and `integration` |
+| Integration | `make test-integration` | Fixture-backed E2E, CLI smoke, web API (no live APIs) |
+| Slow/live | `make test-slow` | External API calls; scheduled CI only |
+
+Copy `.env.example` to `.env` for local web/Celery configuration before running dashboard jobs.
 
 ```bash
 # Fast offline CI-equivalent suite
 make test-offline
+
+# Integration (mocked HTTP, full-pipeline E2E for sle/ra/ibd)
+make test-integration
 
 # Focused workspace and browser tests
 python -m pytest tests/test_evidence_workspace*.py -q
@@ -182,12 +205,14 @@ make test-slow
 
 # Static checks
 make lint
+make typecheck
+make lock-check
 python scripts/check_imports.py
 python -m compileall -q src/med_research
 git diff --check
 ```
 
-CI runs the offline suite on Python 3.10–3.12, validates all disease configurations, and runs slow/live tests only on scheduled or manually dispatched workflows. Playwright failure diagnostics are uploaded as CI artifacts.
+CI runs lint, lock-check, the offline suite with an **80% coverage gate**, integration tests, and disease validation on Python 3.10–3.12. Slow/live tests run only on scheduled or manually dispatched workflows.
 
 ## Docker
 

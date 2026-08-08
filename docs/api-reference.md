@@ -18,7 +18,7 @@ Useful URLs:
 - OpenAPI JSON: `http://127.0.0.1:8000/api/openapi.json`
 - Health: `GET /api/health`
 
-The application preloads the default knowledge graph at startup. The app includes API-key and rate-limit middleware, but authentication is disabled when `API_KEY` is unset, and the limiter is in-memory and per process. Configure and review these policies before exposing the service publicly; do not treat the development defaults as production security.
+The application preloads the default knowledge graph at startup. API-key middleware protects deployment-level mutation endpoints when `API_KEY` is set. Researcher ownership uses a separate server-derived principal: local deployments issue signed HttpOnly sessions, while production deployments can use a trusted identity-aware reverse proxy. Do not treat development compatibility behavior as production security.
 
 ## Environment settings
 
@@ -31,12 +31,27 @@ The application preloads the default knowledge graph at startup. The app include
 | `CELERY_BROKER_URL` | `redis://localhost:6379/0` | Celery broker. |
 | `CELERY_RESULT_BACKEND` | `redis://localhost:6379/0` | Celery result backend. |
 | `USE_CACHE` | `true` | Enables cache-aware service behavior. |
-| `WORKSPACE_DB_PATH` | project `data/evidence_workspace.sqlite3` path | SQLite store for saved Workspace runs. |
-| `API_KEY` | empty | When set, requires `X-API-Key` for POST/PUT/PATCH/DELETE and protected evidence/job endpoints; empty disables API-key authentication. |
+| `WORKSPACE_DB_PATH` | project `data/evidence_workspace.sqlite3` path | SQLite store for saved Workspace runs, alert delivery state, and weekly digest delivery state. |
+| `ALERT_SMTP_HOST` | empty | Enables email delivery when a researcher opts in and configures an email address. |
+| `ALERT_SMTP_PORT` | `587` | SMTP port; port `465` uses implicit TLS. |
+| `ALERT_SMTP_USERNAME` | empty | Optional SMTP username. |
+| `ALERT_SMTP_PASSWORD` | empty | Optional SMTP password. Keep this in deployment secrets. |
+| `ALERT_SMTP_FROM` | username or `alerts@localhost` | Optional sender address. |
+| `ALERT_SMTP_USE_TLS` | `true` | Start TLS for non-465 SMTP connections unless set to `false`. |
+| `WORKSPACE_PUBLIC_URL` | `http://127.0.0.1:8000` | Public dashboard origin used in signed digest review links. |
+| `WORKSPACE_REVIEW_LINK_SECRET` | empty | HMAC secret for expiring review links; required unless `API_KEY` is used as the fallback secret. Keep it in deployment secrets. |
+| `API_KEY` | empty | When set, requires `X-API-Key` for POST/PUT/PATCH/DELETE and protected evidence/job/cache endpoints; empty disables API-key authentication. |
 | `RATE_LIMIT_REQUESTS` | `60` | In-memory requests per client IP per window. Set to `0` to disable. |
 | `RATE_LIMIT_WINDOW` | `60` | Rate-limit window in seconds. |
+| `MAX_REQUEST_BODY_BYTES` | `1048576` | Maximum accepted request body size (1 MiB) for POST/PUT/PATCH. |
+| `AUTH_MODE` | `local` | Researcher authentication mode: `local` signed sessions or `proxy` trusted reverse-proxy identity. |
+| `LOCAL_AUTH_USERS` | empty | Development-only JSON map such as `{"alice":"password"}` or comma-separated `alice=password` accounts. Store it as a deployment secret. |
+| `AUTH_SESSION_SECRET` | empty | HMAC secret for local researcher session cookies; required outside `DEBUG` unless `API_KEY` is used as a fallback. |
+| `AUTH_TRUSTED_PROXY_IPS` | empty | Comma-separated proxy source IPs allowed to provide `X-Authenticated-User`, `X-Auth-Request-User`, or `Remote-User` when `AUTH_MODE=proxy`. |
 
-The Celery application uses JSON task/result serialization, UTC, started-state tracking, a 10-minute hard task limit, and a 9-minute soft limit.
+Researcher ownership is server-derived. In `AUTH_MODE=local`, call `POST /api/auth/login` with a configured local account; the API sets an expiring HttpOnly session cookie. In `AUTH_MODE=proxy`, the application accepts an identity header only from a source address listed in `AUTH_TRUSTED_PROXY_IPS`. The historical `X-Researcher-ID` header is accepted only in `DEBUG=true` compatibility mode and is never an authentication mechanism in production.
+
+The Celery application uses JSON task/result serialization, UTC, started-state tracking, a 10-minute hard task limit, and a 9-minute soft limit. Celery Beat publishes the digest dispatcher every 60 seconds; run one Beat process alongside the worker in production.
 
 ## Response and job models
 
@@ -78,14 +93,31 @@ See [`evidence-workspace.md`](evidence-workspace.md) for the full request and do
 
 | Method | Path | Description |
 |---|---|---|
-| `POST` | `/api/jobs/workspace` | Queue a Workspace dossier. Body: `ResearchRequest`. |
+| `POST` | `/api/auth/login` | Local mode only; exchange a configured development username/password for an HttpOnly researcher session. |
+| `GET` | `/api/auth/me` | Return the current server-derived authentication state. |
+| `POST` | `/api/auth/logout` | Clear the current researcher session cookie. |
+| `POST` | `/api/jobs/workspace` | Queue a Workspace dossier and bind it to the authenticated researcher principal. Body: `ResearchRequest`. |
 | `GET` | `/api/jobs/{job_id}` | Poll the job. |
 | `WS` | `/api/jobs/{job_id}/ws` | Stream progress. |
+| `GET` | `/api/workspace/alerts` | List the requesting researcher's unread/all review reminders (`unread_only`, `limit`, `offset`); dispatches configured pending notifications. |
+| `POST` | `/api/workspace/alerts/{alert_id}/read` | Mark one owned review reminder as read. |
+| `GET` | `/api/workspace/notifications` | Load owned email/Slack notification settings and latest delivery status (Slack secrets are never returned). |
+| `PUT` | `/api/workspace/notifications` | Save owned notification settings, thresholds, weekly digest opt-in/schedule, and attempt pending email/Slack deliveries. Supports metric thresholds, `weekly_digest_enabled`, weekday/hour/minute, and an IANA timezone. |
+| `GET` | `/api/workspace/digest` | Preview the previous completed UTC calendar week's new evidence, unresolved reminders, and changed decisions. |
+| `POST` | `/api/workspace/digest/send` | Send the opt-in weekly digest through configured channels; `force=true` manually retries an already delivered period. |
+| `GET` | `/api/workspace/digest/delivery-history` | List researcher-owned digest delivery attempts and failure details (`limit` 1–200). |
+| `GET` | `/api/workspace/digest/review` | Validate an expiring signed review token and redirect to the researcher dashboard context. |
 | `GET` | `/api/workspace/runs` | List saved run summaries (`limit`, `offset`). |
 | `GET` | `/api/workspace/runs/{run_id}` | Load one saved request/dossier/HTML. |
-| `DELETE` | `/api/workspace/runs/{run_id}` | Delete one saved run. |
-| `GET` | `/api/workspace/compare` | Compare runs with required `left` and `right` query parameters. |
-| `GET` | `/api/workspace/trends` | Trend run IDs and rankings; accepts repeated `run_ids` and `limit`. |
+| `DELETE` | `/api/workspace/runs/{run_id}` | Delete one saved run and its review history. |
+| `GET` | `/api/workspace/runs/{run_id}/reviews` | Load the requesting researcher's candidate notes, tags, decisions, and provenance. |
+| `GET` | `/api/workspace/runs/{run_id}/review-events` | Load the requesting researcher's append-only decision history for a run. |
+| `GET` | `/api/workspace/runs/{run_id}/graph` | Return the interactive evidence graph for candidates, claims, citations, pathways, and owned review decisions. |
+| `PUT` | `/api/workspace/runs/{run_id}/reviews` | Save a candidate decision, rationale, notes, tags, and “what changed my mind?” entry. |
+| `GET` | `/api/workspace/runs/{run_id}/review-bundle` | Download a citation-ready ZIP containing Markdown, CSV citations, exact dossier JSON, reviews, review events, and provenance. |
+| `GET` | `/api/workspace/candidate-history` | Track one candidate’s ranking, evidence additions/removals, and reviews across runs. |
+| `GET` | `/api/workspace/compare` | Compare runs with required `left` and `right` query parameters, including candidate evidence and review changes. |
+| `GET` | `/api/workspace/trends` | Trend run IDs, rankings, and candidate evidence changes; accepts repeated `run_ids` and `limit`. |
 
 ## Core analysis endpoints
 
@@ -128,11 +160,37 @@ All routes below are `GET` unless stated otherwise. Disease-query support is lis
 | `/api/system/diseases` | — | Discovered disease registry and counts. |
 | `/api/stats` | `disease_id` where supported | Platform summary statistics. |
 
-The exact parameter constraints and response schemas are authoritative in `/api/openapi.json`.
+The exact parameter constraints and response schemas are authoritative in `/api/openapi.json`. Workspace review, alert, notification, digest, graph, history, and export routes use the authenticated session/proxy principal; they no longer accept a researcher identity from dashboard request headers.
 
 ### Asynchronous analysis job submissions
 
-In addition to Workspace, the following `POST /api/jobs/...` endpoints queue Celery jobs and return the same `JobSubmitResponse` shape: `/api/jobs/gwas`, `/api/jobs/enrichment`, `/api/jobs/ppi`, `/api/jobs/literature`, `/api/jobs/screening`, `/api/jobs/trials`, `/api/jobs/ml`, `/api/jobs/synergy`, and `/api/jobs/safety`. Their query parameters are visible in OpenAPI and mirror the corresponding analysis service options.
+All registry-backed modules can be queued via the unified endpoint:
+
+`POST /api/jobs/{module_id}` — query parameters validated by `GenericModuleJobRequest` (`disease_id`, module-specific opts). Dispatches through `task_run_module` → `registry_service.run_module_job()` → `execute_module()`.
+
+Legacy aliases remain for dashboard compatibility: `/api/jobs/gwas`, `/api/jobs/enrichment`, `/api/jobs/ppi`, `/api/jobs/literature`, `/api/jobs/screening`, `/api/jobs/trials`, `/api/jobs/ml`, `/api/jobs/synergy`, and `/api/jobs/safety`. These thin wrappers delegate to the same `run_module` Celery task.
+
+`POST /api/jobs/workspace` accepts a JSON `ResearchRequest` body for evidence workspace dossiers.
+
+`POST /api/jobs/run-all` queues a full pipeline orchestration (mirrors CLI `run-all`). Query parameters: `disease_id`, `full`, `parallel`, `skip_ml`, `export_html`, `no_cache`. Dispatches `task_run_all` → `registry_service.run_all_pipeline()` → `scheduler.py` + `execute_module()`. Successful Celery results include `modules_completed`, `report_paths` (when `export_html=true`), and any per-module `errors`.
+
+When `export_html=true` on `POST /api/jobs/{module_id}`, the Celery result includes `report_path` in the task result payload.
+
+### Error responses
+
+Validation failures return HTTP 422 with Pydantic error detail. Blocked pipeline modules on synchronous routes raise `ModuleNotAvailableError` and return **HTTP 409** with `{ "detail": "...", "error_type": "ModuleNotAvailableError" }`. Other pipeline execution failures from job handlers use structured errors via `error_handlers.py`.
+
+## Cache administration
+
+Auth-protected when `API_KEY` is set (prefix `/api/system/cache`).
+
+| Method | Path | Description |
+|---|---|---|
+| `GET` | `/api/system/cache/stats` | Namespace entry counts and byte sizes. |
+| `DELETE` | `/api/system/cache` | Clear all cache namespaces. |
+| `DELETE` | `/api/system/cache/{namespace}` | Clear one namespace (e.g. `gwas`, `literature_mining`). |
+
+Response for deletes: `{ "removed": <int>, "namespace": <str|null> }`.
 
 ## Disease administration endpoints
 
@@ -167,4 +225,4 @@ Export modules are configured in `src/med_research/web/routers/export.py`; a mis
  docker compose --profile cli run --rm pipeline diseases
 ```
 
-The Compose `web` service exposes port 8000. The `worker` service runs `celery -A med_research.web.tasks.analysis_tasks worker --loglevel=info --concurrency=2`.
+The Compose `web` service exposes port 8000. The `worker` service runs `celery -A med_research.web.tasks.analysis_tasks worker --loglevel=info --concurrency=2`, and the `beat` service runs the one required scheduler process. Do not run multiple Beat instances against the same deployment.

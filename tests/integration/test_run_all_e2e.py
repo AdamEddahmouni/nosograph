@@ -1,6 +1,11 @@
 """Full offline ``run-all --full`` end-to-end test for RA.
 
 Exercises the CLI and DAG scheduler through ``pipeline.dispatch.execute_module``.
+
+Note: ``test_run_all_full_parallel_cli`` expects per-disease atomic module outputs
+and a corrected biomarker ``depends_on`` DAG (Track 3). If parallel run-all still
+fails with JSON parse errors in biomarker_discovery, that is a known Track 3 gap —
+the sequential path and ``execute_module`` DAG runner remain the contract tests here.
 """
 
 from __future__ import annotations
@@ -69,6 +74,28 @@ class TestRunAllFullOfflineRA:
         assert exit_code == 0, caplog.text
         assert "Parallel DAG execution" in caplog.text
         assert "Pipeline complete" in caplog.text
+
+    def test_biomarker_not_parallel_with_upstream_writers(self):
+        """Biomarker must not share a DAG level with modules it reads from."""
+        from med_research.pipeline.scheduler import topological_levels
+        from tests.integration.test_run_all_e2e import _run_all_steps
+
+        module_ids = _run_all_steps()
+        levels = topological_levels(module_ids)
+        level_by_module = {
+            module_id: index for index, level in enumerate(levels) for module_id in level
+        }
+        biomarker_level = level_by_module["biomarker_discovery"]
+        for upstream in (
+            "gene_expression",
+            "car_t_predictor",
+            "drug_repurposing",
+            "adverse_events",
+            "drug_synergy",
+        ):
+            assert level_by_module[upstream] < biomarker_level, (
+                f"{upstream} must finish before biomarker_discovery"
+            )
 
     def test_run_all_full_via_execute_module(self, offline_pipeline_http_mocks):
         """DAG scheduler dispatches each module through ``execute_module``."""

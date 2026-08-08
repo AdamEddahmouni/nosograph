@@ -63,31 +63,27 @@ def test_module_output_path_per_disease(tmp_path, monkeypatch):
     from med_research.pipeline.biomarker_discovery import discover as d
 
     monkeypatch.setitem(d._MODULE_DATA_DIRS, "expression", tmp_path)
-    # When a per-disease file exists, it wins over the shared file
-    (tmp_path / "expression_correlations_ra.json").write_text("{}")
-    path = d._module_output_path("expression", "expression_correlations.json", "ra")
+    path = d._module_output_path("expression", "expression_correlations", "ra")
     assert path.name == "expression_correlations_ra.json"
 
 
-def test_module_output_path_shared_fallback(tmp_path, monkeypatch):
-    """Missing per-disease files fall back to the shared module output."""
+def test_module_output_path_always_per_disease(tmp_path, monkeypatch):
+    """Module outputs are always disease-scoped; no shared fallback files."""
     from med_research.pipeline.biomarker_discovery import discover as d
 
     monkeypatch.setitem(d._MODULE_DATA_DIRS, "expression", tmp_path)
     (tmp_path / "expression_correlations.json").write_text("{}")
-    path = d._module_output_path("expression", "expression_correlations.json", "sle")
-    assert path.name == "expression_correlations.json"
-    # Non-SLE also falls back to the shared file when no per-disease file exists
-    path_ra = d._module_output_path("expression", "expression_correlations.json", "ra")
-    assert path_ra.name == "expression_correlations.json"
+    path = d._module_output_path("expression", "expression_correlations", "sle")
+    assert path.name == "expression_correlations_sle.json"
+    path_ra = d._module_output_path("expression", "expression_correlations", "ra")
+    assert path_ra.name == "expression_correlations_ra.json"
 
 
-def test_module_output_path_sle_prefers_per_disease(tmp_path, monkeypatch):
+def test_module_output_path_sle_uses_disease_suffix(tmp_path, monkeypatch):
     from med_research.pipeline.biomarker_discovery import discover as d
 
     monkeypatch.setitem(d._MODULE_DATA_DIRS, "expression", tmp_path)
-    (tmp_path / "expression_correlations_sle.json").write_text("{}")
-    path = d._module_output_path("expression", "expression_correlations.json", "sle")
+    path = d._module_output_path("expression", "expression_correlations", "sle")
     assert path.name == "expression_correlations_sle.json"
 
 
@@ -102,7 +98,7 @@ def test_load_all_modules_reads_per_disease_files(tmp_path, monkeypatch):
     monkeypatch.setitem(d._MODULE_DATA_DIRS, "expression", data_dir)
     (data_dir / "expression_correlations_ra.json").write_text(
         json.dumps({"drugs": [{"drug_id": "baricitinib", "composite_score": 8.0}]}))
-    # A stale shared SLE file must NOT shadow the RA per-disease file
+    # A stale shared file must NOT be read when the per-disease file exists
     (data_dir / "expression_correlations.json").write_text(
         json.dumps({"drugs": [{"drug_id": "sle_only", "composite_score": 9.0}]}))
 
@@ -122,15 +118,15 @@ def test_load_all_modules_reads_legacy_files(tmp_path, monkeypatch):
         data_dir.mkdir(parents=True, exist_ok=True)
         monkeypatch.setitem(d._MODULE_DATA_DIRS, module, data_dir)
 
-    (tmp_path / "expression" / "expression_correlations.json").write_text(
+    (tmp_path / "expression" / "expression_correlations_sle.json").write_text(
         json.dumps({"drugs": [{"drug_id": "baricitinib", "composite_score": 8.0}]}))
-    (tmp_path / "cart" / "car_t_scores.json").write_text(
+    (tmp_path / "cart" / "car_t_scores_sle.json").write_text(
         json.dumps({"genes": [{"gene_id": "BTK", "composite_score": 9.0}]}))
-    (tmp_path / "repurpose" / "candidates.json").write_text(
+    (tmp_path / "repurpose" / "candidates_sle.json").write_text(
         json.dumps({"repurposing_candidates": [{"gene_id": "BTK"}]}))
-    (tmp_path / "safety" / "profiles.json").write_text(
+    (tmp_path / "safety" / "profiles_sle.json").write_text(
         json.dumps({"baricitinib": {"composite_safety_score": 7.0}}))
-    (tmp_path / "synergy" / "synergy_results.json").write_text(
+    (tmp_path / "synergy" / "synergy_results_sle.json").write_text(
         json.dumps({"pairs": [{"drug_a_id": "d1"}]}))
 
     module_data = d.load_all_modules("sle")
@@ -200,22 +196,22 @@ def test_compute_biomarker_matrix():
 def test_compute_biomarker_matrix_saves_json(tmp_path, monkeypatch):
     monkeypatch.setattr("med_research.pipeline.biomarker_discovery.discover.DATA_DIR", tmp_path)
     compute_biomarker_matrix()
-    json_path = tmp_path / "biomarker_matrix.json"
+    json_path = tmp_path / "biomarker_matrix_sle.json"
     assert json_path.exists()
     data = json.loads(json_path.read_text())
     assert "biomarkers" in data
 
 
 def test_compute_biomarker_matrix_save_false_skips_write(tmp_path, monkeypatch):
-    """save=False must not write the shared biomarker_matrix.json."""
+    """save=False must not write the per-disease biomarker_matrix file."""
     from med_research.pipeline.biomarker_discovery import discover as d
 
     monkeypatch.setattr(d, "DATA_DIR", tmp_path)
     compute_biomarker_matrix(save=False)
-    assert not (tmp_path / "biomarker_matrix.json").exists()
+    assert not (tmp_path / "biomarker_matrix_sle.json").exists()
     # And save=True still writes
     compute_biomarker_matrix(save=True)
-    assert (tmp_path / "biomarker_matrix.json").exists()
+    assert (tmp_path / "biomarker_matrix_sle.json").exists()
 
 
 def test_analyze_prints(caplog):

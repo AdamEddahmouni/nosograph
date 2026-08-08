@@ -77,6 +77,8 @@ line-length = 100
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "B", "SIM", "W"]
+# B008 (function-call argument defaults) is enforced via the B ruleset.
+# Use Annotated[..., Depends(...)] for FastAPI dependencies.
 
 [tool.ruff.lint.isort]
 known-first-party = ["med_research"]
@@ -97,8 +99,8 @@ python_functions = ["test_*"]
 addopts = "-v --tb=short --color=auto"
 markers = [
     "slow: marks tests as slow (deselect with '-m \"not slow\"')",
-    "unit: unit tests (fast, offline, no external calls)",
-    "integration: end-to-end pipeline smoke tests (no live external APIs)",
+    "unit: auto-applied to non-slow, non-integration tests (see tests/conftest.py)",
+    "integration: auto-applied under tests/integration/ (see tests/integration/conftest.py)",
 ]
 
 [tool.mypy]

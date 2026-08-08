@@ -95,7 +95,7 @@ def test_compute_all_scores():
 def test_compute_all_scores_saves_json(tmp_path, monkeypatch):
     monkeypatch.setattr("med_research.pipeline.car_t_predictor.predictor.DATA_DIR", tmp_path)
     compute_all_scores()
-    json_path = tmp_path / "car_t_scores.json"
+    json_path = tmp_path / "car_t_scores_sle.json"
     assert json_path.exists()
     data = json.loads(json_path.read_text())
     assert "genes" in data

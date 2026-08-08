@@ -107,6 +107,15 @@ def test_serve_reload_guard(debug, reload_flag, expected_reload):
     assert mock_run.call_args.kwargs["reload"] is expected_reload
 
 
+def test_cross_disease_parser_accepts_disease_flag():
+    """cross-disease exposes --disease / -d like other pipeline commands."""
+    from tests.cli_helpers import parse_cli_args
+
+    args = parse_cli_args("cross-disease", "--disease", "ra", "--top", "10")
+    assert args.disease == "ra"
+    assert args.top == 10
+
+
 def test_run_all_parser_accepts_parallel_and_full_flags():
     """run-all exposes --parallel, --sequential, and --full flags."""
     from tests.cli_helpers import parse_cli_args

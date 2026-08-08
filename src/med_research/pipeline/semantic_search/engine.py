@@ -17,6 +17,7 @@ import sys
 from pathlib import Path
 
 from med_research.diseases.coverage import ModuleCoverage
+from med_research.pipeline.progress import StandardProgress, _tick
 
 logger = logging.getLogger(__name__)
 sys.path.insert(0, str(Path(__file__).parent.parent))
@@ -26,7 +27,6 @@ if sys.platform == "win32":
 
 DATA_DIR = Path(__file__).parent / "data"
 CHROMA_DIR = Path("data/chroma/semantic")
-PUBMED_CACHE = Path("literature_mining/data/pubmed_cache.json")
 # Literature-mining data dir (same layout the miner writes to)
 LIT_DATA_DIR = Path(__file__).parent.parent / "literature_mining" / "data"
 
@@ -156,14 +156,19 @@ class SemanticSearchEngine:
             # Delete existing collection on re-index to avoid duplicates
             try:
                 self.client.delete_collection(self.collection_name)
-            except _chromadb_collection_errors():
-                pass
+            except _chromadb_collection_errors() as exc:
+                logger.debug("No existing collection to delete: %s", exc)
             self.collection = self.client.create_collection(
                 name=self.collection_name,
                 metadata={"description": f"PubMed abstracts for {self.disease_id} research"},
             )
 
-    def index_articles(self, articles: list = None, batch_size: int = 50) -> int:
+    def index_articles(
+        self,
+        articles: list = None,
+        batch_size: int = 50,
+        progress_callback: StandardProgress | None = None,
+    ) -> int:
         """Embed and index article abstracts into ChromaDB.
 
         Returns number of articles indexed.
@@ -182,6 +187,9 @@ class SemanticSearchEngine:
 
         for i in range(0, len(articles), batch_size):
             batch = articles[i:i + batch_size]
+            batch_num = i // batch_size + 1
+            total_batches = (len(articles) + batch_size - 1) // batch_size
+            _tick(progress_callback, "indexing articles", batch_num, total_batches)
             texts = [(a.get("title", "") or "") + " " + (a.get("abstract", "") or "") for a in batch]
             ids = [a.get("pmid", f"art_{i+j}") for j, a in enumerate(batch)]
             metadatas = [
@@ -208,7 +216,12 @@ class SemanticSearchEngine:
         logger.info(f"Done — {total} articles indexed into {CHROMA_DIR}")
         return total
 
-    def search(self, query: str, top_k: int = 20) -> list:
+    def search(
+        self,
+        query: str,
+        top_k: int = 20,
+        progress_callback: StandardProgress | None = None,
+    ) -> list:
         """Semantic search for articles matching the query."""
         global last_coverage
         last_coverage = resolve_semantic_coverage(self.disease_id)
@@ -224,11 +237,12 @@ class SemanticSearchEngine:
             self.client = chromadb.PersistentClient(path=str(CHROMA_DIR))
             try:
                 self.collection = self.client.get_collection(self.collection_name)
-            except _chromadb_collection_errors():
-                logger.info("No indexed collection found. Run --index first.")
+            except _chromadb_collection_errors() as exc:
+                logger.info("No indexed collection found for %s: %s", self.collection_name, exc)
                 return []
 
         query_embedding = self.model.encode(query).tolist()
+        _tick(progress_callback, "semantic search", 1, 1)
         results = self.collection.query(
             query_embeddings=[query_embedding],
             n_results=min(top_k, self.collection.count()),
@@ -260,7 +274,8 @@ class SemanticSearchEngine:
             self.client = chromadb.PersistentClient(path=str(CHROMA_DIR))
             try:
                 self.collection = self.client.get_collection(self.collection_name)
-            except _chromadb_collection_errors():
+            except _chromadb_collection_errors() as exc:
+                logger.debug("Indexed collection unavailable for %s: %s", self.collection_name, exc)
                 return 0
         return self.collection.count()
 

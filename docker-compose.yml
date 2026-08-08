@@ -35,6 +35,38 @@ services:
     environment:
       - CELERY_BROKER_URL=redis://redis:6379/0
       - CELERY_RESULT_BACKEND=redis://redis:6379/0
+      - ALERT_SMTP_HOST=${ALERT_SMTP_HOST:-}
+      - ALERT_SMTP_PORT=${ALERT_SMTP_PORT:-587}
+      - ALERT_SMTP_USERNAME=${ALERT_SMTP_USERNAME:-}
+      - ALERT_SMTP_PASSWORD=${ALERT_SMTP_PASSWORD:-}
+      - ALERT_SMTP_FROM=${ALERT_SMTP_FROM:-}
+      - ALERT_SMTP_USE_TLS=${ALERT_SMTP_USE_TLS:-true}
+      - WORKSPACE_PUBLIC_URL=${WORKSPACE_PUBLIC_URL:-http://localhost:8000}
+      - WORKSPACE_REVIEW_LINK_SECRET=${WORKSPACE_REVIEW_LINK_SECRET:-}
+    depends_on:
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./data:/app/data
+    profiles:
+      - full
+
+  # ── Celery Beat — weekly digest scheduler ────────────────────────────
+  beat:
+    build: .
+    image: med-research:latest
+    command: celery -A med_research.web.tasks.analysis_tasks beat --loglevel=info
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+      - ALERT_SMTP_HOST=${ALERT_SMTP_HOST:-}
+      - ALERT_SMTP_PORT=${ALERT_SMTP_PORT:-587}
+      - ALERT_SMTP_USERNAME=${ALERT_SMTP_USERNAME:-}
+      - ALERT_SMTP_PASSWORD=${ALERT_SMTP_PASSWORD:-}
+      - ALERT_SMTP_FROM=${ALERT_SMTP_FROM:-}
+      - ALERT_SMTP_USE_TLS=${ALERT_SMTP_USE_TLS:-true}
+      - WORKSPACE_PUBLIC_URL=${WORKSPACE_PUBLIC_URL:-http://localhost:8000}
+      - WORKSPACE_REVIEW_LINK_SECRET=${WORKSPACE_REVIEW_LINK_SECRET:-}
     depends_on:
       redis:
         condition: service_healthy

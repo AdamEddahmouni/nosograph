@@ -1,23 +1,21 @@
 """End-to-end smoke tests for the unified CLI.
 
-Each test invokes ``python -m med_research.cli <command>`` as a subprocess and
-asserts the command exits 0 and emits expected output. This guards against the
-stale v1 imports and silent handler failures (e.g. exit 0 with no output) that
-have broken the CLI twice since the v2 migration.
+Each test invokes CLI handlers directly (no subprocess) and asserts the command
+exits 0 and emits expected output. This guards against stale v1 imports and
+silent handler failures (e.g. exit 0 with no output) that have broken the CLI
+twice since the v2 migration.
 
-Offline commands run as subprocess smokes. Literature and bioinformatics use
-cached fixtures; evidence and workspace use handler imports with mocked HTTP.
+Offline commands use handler imports with logging capture. Evidence and
+workspace use mocked HTTP fixtures.
 """
 
 from __future__ import annotations
 
-import subprocess
-import sys
-from pathlib import Path
+import logging
 
 import pytest
 
-PROJECT_ROOT = Path(__file__).parent.parent.parent
+from tests.cli_helpers import run_cli_command, run_cli_command_capture, run_cli_handler
 
 pytestmark = pytest.mark.integration
 
@@ -31,7 +29,7 @@ def _ml_predictor_available() -> bool:
         return False
 
 
-# (test id, CLI args, expected fragment in stdout/stderr)
+# (test id, CLI args, expected fragment in stdout/stderr or caplog)
 CLI_SMOKE_COMMANDS = [
     ("diseases", ["diseases"], "Available Diseases"),
     ("modules", ["modules"], "Available Pipeline Modules"),
@@ -77,42 +75,25 @@ CLI_SMOKE_COMMANDS = [
 COMMAND_IDS = [name for name, _, _ in CLI_SMOKE_COMMANDS]
 
 
-def _run_cli_subprocess(args: list[str], *, timeout: int = 180) -> subprocess.CompletedProcess[str]:
-    return subprocess.run(
-        [sys.executable, "-m", "med_research.cli", *args],
-        capture_output=True,
-        text=True,
-        encoding="utf-8",
-        errors="replace",
-        timeout=timeout,
-        cwd=PROJECT_ROOT,
-    )
-
-
 @pytest.mark.parametrize("name,args,expected", CLI_SMOKE_COMMANDS, ids=COMMAND_IDS)
-def test_cli_command_smoke(name, args, expected):
+def test_cli_command_smoke(name, args, expected, caplog):
     """Run an offline CLI command end-to-end and verify it produces output."""
     if name == "ml" and not _ml_predictor_available():
         pytest.skip("xgboost not installed")
 
-    result = _run_cli_subprocess(args)
-    assert result.returncode == 0, (
-        f"`med_research.cli {name}` exited {result.returncode}:\n"
-        f"--- stdout ---\n{result.stdout}\n--- stderr ---\n{result.stderr}"
-    )
-    combined = result.stdout + result.stderr
-    assert expected in combined, (
+    with caplog.at_level(logging.INFO):
+        exit_code = run_cli_command(*args)
+
+    assert exit_code == 0, caplog.text
+    assert expected in caplog.text, (
         f"`med_research.cli {name}` succeeded but produced no expected output "
-        f"({expected!r}):\n{combined[:1000]}"
+        f"({expected!r}):\n{caplog.text[:1000]}"
     )
 
 
 def test_evidence_cli_smoke(evidence_api_mocks, caplog):
     """Evidence gatherer CLI smoke with mocked Europe PMC / DailyMed APIs."""
-    import logging
-
     from med_research.cli import cmd_evidence
-    from tests.cli_helpers import run_cli_handler
 
     with caplog.at_level(logging.INFO):
         exit_code = run_cli_handler(
@@ -135,8 +116,6 @@ def test_evidence_cli_smoke(evidence_api_mocks, caplog):
 
 def test_cross_disease_dispatch_smoke(caplog):
     """Cross-disease via ``execute_module`` (CLI ``args.disease`` pending Lane 1 fix)."""
-    import logging
-
     from med_research.pipeline.cross_disease.analyzer import (
         analyze,
         print_repurposing,
@@ -156,8 +135,6 @@ def test_cross_disease_dispatch_smoke(caplog):
 
 def test_workspace_cli_smoke(evidence_api_mocks, caplog):
     """Workspace smoke via ``run_workspace`` until adapter ``sources`` wiring lands."""
-    import logging
-
     from med_research.pipeline.evidence_workspace.schemas import ResearchRequest
     from med_research.pipeline.evidence_workspace.workspace import run_workspace
 
@@ -177,18 +154,15 @@ def test_workspace_cli_smoke(evidence_api_mocks, caplog):
 
 def test_modules_json_smoke():
     """``modules --json`` emits registered adapter IDs."""
-    result = _run_cli_subprocess(["modules", "--json"], timeout=60)
-    assert result.returncode == 0
-    assert "knowledge_graph" in result.stdout
-    assert "drug_repurposing" in result.stdout
+    exit_code, output = run_cli_command_capture("modules", "--json")
+    assert exit_code == 0
+    assert "knowledge_graph" in output
+    assert "drug_repurposing" in output
 
 
 def test_run_all_partial_offline(offline_pipeline_http_mocks, caplog):
     """Partial run-all smoke with mocked HTTP and optional ML skipped."""
-    import logging
-
     from med_research.cli import cmd_run_all
-    from tests.cli_helpers import run_cli_handler
 
     argv = [
         "run-all",
@@ -209,10 +183,7 @@ def test_run_all_partial_offline(offline_pipeline_http_mocks, caplog):
 
 def test_run_all_full_ra_offline(offline_pipeline_http_mocks, caplog):
     """Full RA run-all uses registry dispatch path offline (handler import)."""
-    import logging
-
     from med_research.cli import cmd_run_all
-    from tests.cli_helpers import run_cli_handler
 
     with caplog.at_level(logging.INFO):
         exit_code = run_cli_handler(

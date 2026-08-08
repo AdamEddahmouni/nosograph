@@ -78,10 +78,10 @@ def offline_pipeline_http_mocks(monkeypatch):
     from med_research.pipeline.gene_expression import geo
     from med_research.pipeline.literature_mining import miner
 
-    def fake_search_pubmed(query: str, max_results: int = 50, email: str | None = None):
+    def fake_search_pubmed(query: str, max_results: int = 50, email: str | None = None, **kwargs):
         return SAMPLE_PUBMED_ARTICLES[:max_results]
 
-    def fake_search_clinical_trials(query: str, max_results: int = 100):
+    def fake_search_clinical_trials(query: str, max_results: int = 100, **kwargs):
         return [MINIMAL_CT_STUDY]
 
     def fake_run_gwas_analysis(disease_id: str = "sle", **kwargs):

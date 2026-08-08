@@ -141,7 +141,7 @@ def test_compute_all_correlations_saves_json(tmp_path, monkeypatch):
         tmp_path,
     )
     compute_all_correlations()
-    json_path = tmp_path / "expression_correlations.json"
+    json_path = tmp_path / "expression_correlations_sle.json"
     assert json_path.exists()
     data = json.loads(json_path.read_text())
     assert "drugs" in data
@@ -149,16 +149,16 @@ def test_compute_all_correlations_saves_json(tmp_path, monkeypatch):
 
 
 def test_compute_all_correlations_save_false_skips_write(tmp_path, monkeypatch):
-    """save=False must not write the shared expression_correlations.json."""
+    """save=False must not write the per-disease expression correlations file."""
     monkeypatch.setattr(
         "med_research.pipeline.gene_expression.correlator.DATA_DIR",
         tmp_path,
     )
     compute_all_correlations(save=False)
-    assert not (tmp_path / "expression_correlations.json").exists()
+    assert not (tmp_path / "expression_correlations_sle.json").exists()
     # And save=True still writes
     compute_all_correlations(save=True)
-    assert (tmp_path / "expression_correlations.json").exists()
+    assert (tmp_path / "expression_correlations_sle.json").exists()
 
 
 def test_analyze_prints(caplog):

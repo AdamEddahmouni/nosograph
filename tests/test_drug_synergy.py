@@ -382,21 +382,21 @@ def test_compute_synergy_saves_json(tmp_path, monkeypatch):
     import med_research.pipeline.drug_synergy.engine as engine_mod
     monkeypatch.setattr(engine_mod, "DATA_DIR", tmp_path)
     pairs = compute_synergy()
-    json_path = tmp_path / "synergy_results.json"
+    json_path = tmp_path / "synergy_results_sle.json"
     assert json_path.exists()
     data = json.loads(json_path.read_text())
     assert data["total_pairs"] == len(pairs)
 
 
 def test_compute_synergy_save_false_skips_write(tmp_path, monkeypatch):
-    """save=False must not write the shared synergy_results.json."""
+    """save=False must not write the per-disease synergy results file."""
     import med_research.pipeline.drug_synergy.engine as engine_mod
     monkeypatch.setattr(engine_mod, "DATA_DIR", tmp_path)
     compute_synergy(save=False)
-    assert not (tmp_path / "synergy_results.json").exists()
+    assert not (tmp_path / "synergy_results_sle.json").exists()
     # And save=True still writes
     compute_synergy(save=True)
-    assert (tmp_path / "synergy_results.json").exists()
+    assert (tmp_path / "synergy_results_sle.json").exists()
 
 
 @pytest.mark.slow

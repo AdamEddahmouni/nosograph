@@ -146,9 +146,7 @@ jobs:
 
 
 
-      - name: Coverage threshold (informational, 80%)
-
-        continue-on-error: true
+      - name: Coverage threshold (80%)
 
         run: |
 

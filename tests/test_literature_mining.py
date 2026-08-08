@@ -792,7 +792,7 @@ class TestSearchPubmed:
 
         monkeypatch.setattr("med_research.pipeline.literature_mining.miner.BIOPYTHON_AVAILABLE", True)
 
-        mock_entrez.esearch.side_effect = Exception("Network error")
+        mock_entrez.esearch.side_effect = RuntimeError("Network error")
 
         articles = search_pubmed("lupus", max_results=10)
         assert articles == []

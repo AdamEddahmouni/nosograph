@@ -120,7 +120,13 @@ def test_load_articles_reads_per_disease_cache(tmp_path, monkeypatch):
     """load_articles reads the disease-specific cache file."""
     import json
 
+    from med_research.cache import CacheManager
 
+    monkeypatch.setattr(
+        "med_research.cache.get_cache_manager",
+        lambda: CacheManager(cache_dir=tmp_path / "central"),
+    )
+    monkeypatch.setattr("med_research.cache.cache_get", lambda *a, **k: None)
     monkeypatch.setattr(_miner_mod, "DATA_DIR", tmp_path)
     articles = [{"pmid": "9", "title": "RA article", "abstract": "RA abstract"}]
     (tmp_path / "pubmed_cache_ra.json").write_text(json.dumps(articles))
