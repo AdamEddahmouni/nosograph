@@ -85,11 +85,11 @@ typecheck:  ## Run mypy on the expanded type-check scope
 
 lock:  ## Regenerate requirements-lock.txt and requirements-dev-lock.txt
 	python -m piptools compile --output-file=requirements-lock.txt requirements.in
-	python -m piptools compile --output-file=requirements-dev-lock.txt requirements-dev.in
+	python -m piptools compile --output-file=requirements-dev-lock.txt requirements-dev.in -c requirements-lock.txt
 
 lock-check:  ## Verify lock files are up to date with .in sources
 	python -m piptools compile --quiet --dry-run --output-file=requirements-lock.txt requirements.in
-	python -m piptools compile --quiet --dry-run --output-file=requirements-dev-lock.txt requirements-dev.in
+	python -m piptools compile --quiet --dry-run --output-file=requirements-dev-lock.txt requirements-dev.in -c requirements-lock.txt
 
 # ── Pipeline ─────────────────────────────────────────────────────────────
 
