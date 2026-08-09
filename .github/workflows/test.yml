@@ -134,53 +134,7 @@ jobs:
 
         run: |
 
-          python - <<'EOF'
-
-          import importlib.metadata
-
-          import re
-
-          lock = open("requirements-lock.txt", encoding="utf-8").read()
-
-          pins = {}
-
-          for line in lock.splitlines():
-
-              match = re.match(r"^([A-Za-z0-9_.-]+)==([^\s]+)$", line.strip())
-
-              if match:
-
-                  pins[match.group(1)] = match.group(2)
-
-          assert pins, "no pins found in requirements-lock.txt"
-
-          missing = []
-
-          mismatched = []
-
-          for pkg, expected in sorted(pins.items()):
-
-              try:
-
-                  installed = importlib.metadata.version(pkg)
-
-              except importlib.metadata.PackageNotFoundError:
-
-                  missing.append(pkg)
-
-                  continue
-
-              if installed != expected:
-
-                  mismatched.append(f"{pkg}: installed {installed}, locked {expected}")
-
-          assert not missing, f"packages not installed: {missing}"
-
-          assert not mismatched, "version mismatches:\n" + "\n".join(mismatched)
-
-          print(f"all {len(pins)} locked packages match")
-
-          EOF
+          python scripts/lock_verify.py
 
 
 
