@@ -106,3 +106,22 @@ test-artifacts/browser/
 # Local Workspace database and generated per-query clinical-trial caches
 src/data/
 src/med_research/pipeline/clinical_trials/data/ct_cache_*.json
+
+# v2 pipeline per-disease generated outputs (disease_output_path(): {stem}_{disease}.json)
+src/med_research/pipeline/adverse_events/data/profiles_*.json
+src/med_research/pipeline/adverse_events/data/safety_scores_sle.json
+src/med_research/pipeline/bioinformatics/data/
+src/med_research/pipeline/car_t_predictor/data/car_t_scores_*.json
+src/med_research/pipeline/drug_repurposing/data/candidates_*.json
+src/med_research/pipeline/drug_synergy/data/synergy_results_*.json
+src/med_research/pipeline/gene_expression/data/expression_correlations_*.json
+
+# v2 pipeline generated reports and atomic-write leftovers
+src/med_research/pipeline/*/report.html
+src/med_research/pipeline/*/report_*.html
+src/med_research/pipeline/*/data/*.tmp
+
+# Local tooling output
+.coverage
+coverage.xml
+pytest*.txt
