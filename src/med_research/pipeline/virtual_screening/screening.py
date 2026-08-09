@@ -38,9 +38,12 @@ except ImportError:
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    reconfigure = getattr(sys.stdout, "reconfigure", None)
+    if reconfigure is not None:
+        reconfigure(encoding="utf-8", errors="replace")
 
 import logging  # noqa: E402
+from typing import Any  # noqa: E402
 
 from med_research.diseases.schemas import DrugDict, GeneDict  # noqa: E402
 from med_research.pipeline.knowledge_graph.config import (
@@ -62,7 +65,7 @@ logger = logging.getLogger(__name__)
 
 RDKIT_AVAILABLE = False
 VINA_AVAILABLE = False
-_DOCKING_ENGINE = None
+_DOCKING_ENGINE: Any = None
 
 
 def _check_rdkit():
@@ -251,7 +254,7 @@ def compute_druglikeness(compound: dict) -> float:
 
     Returns 0-10, where 10 means fully compliant.
     """
-    violations = 0
+    violations = 0.0
     mw = compound.get("mw", 400)
     logp = compound.get("logp", 2.0)
     hbd = compound.get("hbd", 2)
@@ -282,7 +285,7 @@ def compute_target_complementarity(
     compound: dict,
     gene_info: dict,
     disease_id: str = "sle",
-    strategy=None,
+    strategy: Any = None,
 ) -> float:
     """Score disease-strategy vocabulary overlap with target biology.
 
@@ -318,7 +321,7 @@ def compute_target_complementarity(
     return round(min(10.0, score), 1)
 
 
-def compute_similarity_score(compound: dict, gene_info: dict, disease_id: str = "sle", strategy=None) -> float:
+def compute_similarity_score(compound: dict, gene_info: dict, disease_id: str = "sle", strategy: Any = None) -> float:
     """
     Estimate molecular similarity to known drugs for this disease/target.
 
@@ -360,7 +363,7 @@ def compute_similarity_score(compound: dict, gene_info: dict, disease_id: str = 
         # The shared SLE candidate cache is never read in this branch.
         active_drugs = load_kg_drugs(disease_id)
         same_gene_candidates = [
-            drug for drug_id, drug in active_drugs.items()
+            dict(drug) for drug_id, drug in active_drugs.items()
             if drug_id in strategy.reference_drug_ids
             and gene_id
             and gene_id.lower() in " ".join(
@@ -440,7 +443,7 @@ def compute_binding_estimate(compound: dict, gene_info: dict) -> float:
     return round(max(0.0, min(10.0, score)), 1)
 
 
-def compute_novelty_score(compound: dict, gene_info: dict, disease_id: str = "sle", strategy=None) -> float:
+def compute_novelty_score(compound: dict, gene_info: dict, disease_id: str = "sle", strategy: Any = None) -> float:
     """
     Score how novel this compound-target pairing is.
 
@@ -560,8 +563,8 @@ def get_vina_status() -> str:
 # ═══════════════════════════════════════════════════════════════════════
 
 def screen_compounds(
-    target_genes: list = None,
-    compound_library: list = None,
+    target_genes: list | None = None,
+    compound_library: list | None = None,
     top_n: int = 15,
     use_vina: bool = False,
     disease_id: str = "sle",
@@ -631,6 +634,8 @@ def screen_compounds(
                 "vina_status": get_vina_status(),
             },
         }
+
+    assert strategy is not None  # strategy failures are captured by the coverage gate above
 
     if compound_library is None:
         compound_library = build_compound_library(disease_id)
@@ -837,7 +842,7 @@ def get_untargeted_genes(disease_id: str = "sle") -> list:
 #  Summary & CLI
 # ═══════════════════════════════════════════════════════════════════════
 
-def print_summary(results: dict):
+def print_summary(results: dict) -> None:
     """Print a summary of virtual screening results."""
     stats = results["stats"]
 

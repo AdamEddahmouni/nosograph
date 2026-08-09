@@ -31,6 +31,7 @@ import shutil
 import subprocess
 import sys
 from pathlib import Path
+from typing import Any
 
 from med_research.exceptions import classify_api_error
 
@@ -335,7 +336,7 @@ def _convert_receptor_to_pdbqt(cleaned_path: Path, pdbqt_path: Path) -> bool:
         return False
 
 
-def _smiles_to_3d_mol(smiles: str):
+def _smiles_to_3d_mol(smiles: str) -> Any | None:
     """Convert SMILES to an RDKit Mol with 3D coordinates.
 
     Returns RDKit Mol object or None on failure.
@@ -367,7 +368,7 @@ def _smiles_to_3d_mol(smiles: str):
         return None
 
 
-def _convert_ligand_mol_to_pdbqt(mol) -> str | None:
+def _convert_ligand_mol_to_pdbqt(mol: Any) -> str | None:
     """Convert an RDKit Mol to a ligand PDBQT string via Meeko.
 
     Uses the Meeko 0.7 ``MoleculePreparation`` / ``PDBQTWriterLegacy``
@@ -386,7 +387,7 @@ def _convert_ligand_mol_to_pdbqt(mol) -> str | None:
         pdbqt_string, is_ok, _error = PDBQTWriterLegacy.write_string(mol_setups[0])
         if not is_ok:
             return None
-        return pdbqt_string
+        return str(pdbqt_string)
     except (ImportError, OSError, RuntimeError, ValueError) as e:
         logger.info(f"   ⚠️  Ligand prep error: {e}")
         return None
@@ -624,7 +625,7 @@ class DockingEngine:
     def get_validation_targets(self) -> list:
         """Return validation targets from config."""
         config = self.load_config()
-        return config.get("targeted_genes_for_validation", [])
+        return list(config.get("targeted_genes_for_validation") or [])
 
     # ── Status ──────────────────────────────────────────────────────
 

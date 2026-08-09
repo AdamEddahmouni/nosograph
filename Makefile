@@ -77,8 +77,14 @@ typecheck:  ## Run mypy on the expanded type-check scope
 		src/med_research/pipeline/ml_predictor/adapter.py \
 		src/med_research/pipeline/network_pharmacology/adapter.py \
 		src/med_research/pipeline/semantic_search/adapter.py \
-		src/med_research/pipeline/virtual_screening/adapter.py \
-		src/med_research/web/error_handlers.py \
+	src/med_research/pipeline/virtual_screening/adapter.py \
+	src/med_research/pipeline/virtual_screening/docking.py \
+	src/med_research/pipeline/virtual_screening/screening.py \
+	src/med_research/pipeline/virtual_screening/screening_strategy.py \
+	src/med_research/pipeline/virtual_screening/vina_setup.py \
+	src/med_research/web/error_handlers.py \
+	src/med_research/web/middleware.py \
+	src/med_research/web/rate_limit.py \
 		src/med_research/web/models/jobs.py \
 		src/med_research/web/routers/jobs.py \
 		src/med_research/web/services/registry_service.py
