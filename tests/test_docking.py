@@ -16,6 +16,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from med_research.pipeline.virtual_screening.docking import (
     DockingEngine,
+    _convert_receptor_to_pdbqt,
     _detect_biopython,
     _detect_meeko,
     _detect_rdkit,
@@ -204,6 +205,82 @@ def test_compute_real_binding_score_missing_drug():
     vina_results = {"BTK": {"baricitinib": {"best_score": -9.0}}}
     result = compute_real_binding_score(compound, "BTK", vina_results)
     assert result is None
+
+
+# ── Unit: Meeko Polymer Receptor Preparation ──────────────────────────────
+
+# Small synthetic tripeptide (Gly-Gly-Gly, chain A) with standard backbone
+# geometry. Meeko's Polymer workflow must parameterize it into a valid PDBQT
+# without any network access — this guards against silent API drift in
+# future Meeko releases (e.g. the 0.6 -> 0.7 write_pdbqt_file removal).
+TRI_GLY_PDB = """ATOM      1  N   GLY A   1       0.000   0.000   0.000  1.00  0.00           N
+ATOM      2  CA  GLY A   1       1.420   0.000   0.000  1.00  0.00           C
+ATOM      3  C   GLY A   1       1.980   1.420   0.000  1.00  0.00           C
+ATOM      4  O   GLY A   1       1.420   2.420   0.000  1.00  0.00           O
+ATOM      5  N   GLY A   2       3.300   1.420   0.000  1.00  0.00           N
+ATOM      6  CA  GLY A   2       3.980   2.700   0.000  1.00  0.00           C
+ATOM      7  C   GLY A   2       3.980   4.000   0.000  1.00  0.00           C
+ATOM      8  O   GLY A   2       3.200   4.700   0.000  1.00  0.00           O
+ATOM      9  N   GLY A   3       5.200   4.500   0.000  1.00  0.00           N
+ATOM     10  CA  GLY A   3       5.300   5.900   0.000  1.00  0.00           C
+ATOM     11  C   GLY A   3       4.500   6.800   0.000  1.00  0.00           C
+ATOM     12  O   GLY A   3       4.600   8.000   0.000  1.00  0.00           O
+TER
+END
+"""
+
+
+@pytest.mark.skipif(not MEEKO_AVAILABLE, reason="Meeko not installed")
+def test_convert_receptor_to_pdbqt_synthetic_polymer(tmp_path):
+    """The Meeko 0.7 Polymer workflow converts a small PDB to valid PDBQT."""
+    pdb_path = tmp_path / "tri_gly.pdb"
+    pdbqt_path = tmp_path / "tri_gly.pdbqt"
+    pdb_path.write_text(TRI_GLY_PDB, encoding="utf-8")
+
+    ok = _convert_receptor_to_pdbqt(pdb_path, pdbqt_path)
+
+    assert ok is True
+    assert pdbqt_path.exists()
+    lines = pdbqt_path.read_text(encoding="utf-8").splitlines()
+    assert len(lines) >= 3
+    # PDBQT ATOM records carry an AutoDock atom type and Gasteiger charge
+    assert any("ATOM" in line and "OA" in line for line in lines)
+    assert any("ATOM" in line and "N " in line for line in lines)
+
+    # The output must round-trip through Meeko's own PDBQT reader
+    from meeko import PDBQTReceptor
+
+    receptor = PDBQTReceptor.from_pdbqt_filename(str(pdbqt_path))
+    assert receptor.atoms().shape[0] >= 3
+
+
+@pytest.mark.skipif(not MEEKO_AVAILABLE, reason="Meeko not installed")
+def test_convert_receptor_to_pdbqt_garbage_input_fails_cleanly(tmp_path):
+    """Unparseable input returns False instead of raising."""
+    pdb_path = tmp_path / "garbage.pdb"
+    pdbqt_path = tmp_path / "garbage.pdbqt"
+    pdb_path.write_text("THIS IS NOT A PDB\n", encoding="utf-8")
+
+    ok = _convert_receptor_to_pdbqt(pdb_path, pdbqt_path)
+
+    assert ok is False
+    assert not pdbqt_path.exists()
+
+
+def test_convert_receptor_to_pdbqt_missing_meeko(tmp_path, monkeypatch):
+    """Without Meeko the helper degrades to False without writing output."""
+    monkeypatch.setattr(
+        "med_research.pipeline.virtual_screening.docking._detect_meeko",
+        lambda: False,
+    )
+    pdb_path = tmp_path / "tri_gly.pdb"
+    pdbqt_path = tmp_path / "tri_gly.pdbqt"
+    pdb_path.write_text(TRI_GLY_PDB, encoding="utf-8")
+
+    ok = _convert_receptor_to_pdbqt(pdb_path, pdbqt_path)
+
+    assert ok is False
+    assert not pdbqt_path.exists()
 
 
 # ── Unit: Vina Setup Tool ──────────────────────────────────────────────────

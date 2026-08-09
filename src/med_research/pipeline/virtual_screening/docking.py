@@ -275,40 +275,14 @@ def prepare_receptor(gene_id: str, config: dict, force: bool = False) -> str | N
             shutil.copy(pdb_path, cleaned_path)
 
     # Step 3: Convert to PDBQT
-    if not pdbqt_path.exists() or pdbqt_path.stat().st_size == 0 or force:
-        if _detect_meeko():
-            try:
-                from meeko import (
-                    MoleculePreparation,
-                    PDBQTWriterLegacy,
-                    Polymer,
-                    ResidueChemTemplates,
-                )
-
-                # Meeko 0.7 receptor prep: parse polymer, add hydrogens/charges,
-                # then serialize the rigid receptor to a PDBQT string.
-                chem_templates = ResidueChemTemplates.create_from_defaults()
-                mk_prep = MoleculePreparation()
-                polymer = Polymer.from_pdb_string(
-                    cleaned_path.read_text(encoding="utf-8"),
-                    chem_templates=chem_templates,
-                    mk_prep=mk_prep,
-                    allow_bad_res=True,
-                )
-                polymer.stitch()
-                polymer.parameterize(mk_prep)
-                pdbqt_string, _flex_pdbqt = PDBQTWriterLegacy.write_from_polymer(polymer)
-                if not pdbqt_string:
-                    logger.info(f"   ⚠️  Meeko PDBQT conversion failed for {gene_id}")
-                    return None
-                pdbqt_path.write_text(pdbqt_string, encoding="utf-8")
-            except (ImportError, OSError, RuntimeError, ValueError) as e:
-                logger.info(f"   ⚠️  Meeko receptor prep error ({gene_id}): {e}")
-                return None
-        else:
-            # Without Meeko, we can't produce PDBQT
-            logger.info(f"   ⚠️  Meeko not available — cannot prepare receptor {gene_id}")
-            return None
+    needs_conversion = (
+        not pdbqt_path.exists()
+        or pdbqt_path.stat().st_size == 0
+        or force
+    )
+    if needs_conversion and not _convert_receptor_to_pdbqt(cleaned_path, pdbqt_path):
+        logger.info(f"   ⚠️  Meeko PDBQT conversion failed for {gene_id}")
+        return None
 
     return str(pdbqt_path)
 
@@ -316,6 +290,49 @@ def prepare_receptor(gene_id: str, config: dict, force: bool = False) -> str | N
 # ═══════════════════════════════════════════════════════════════════════
 #  Ligand Preparation
 # ═══════════════════════════════════════════════════════════════════════
+
+
+def _convert_receptor_to_pdbqt(cleaned_path: Path, pdbqt_path: Path) -> bool:
+    """Convert a cleaned PDB receptor to PDBQT via Meeko's Polymer workflow.
+
+    Uses the Meeko 0.7 ``Polymer`` API: parse the polymer, add hydrogens and
+    Gasteiger charges, then serialize the rigid receptor to a PDBQT string.
+
+    Args:
+        cleaned_path: Cleaned PDB receptor file.
+        pdbqt_path: Destination PDBQT file (written on success).
+
+    Returns:
+        True on success, False if Meeko is unavailable or conversion fails.
+    """
+    if not _detect_meeko():
+        return False
+    try:
+        from meeko import (
+            MoleculePreparation,
+            PDBQTWriterLegacy,
+            Polymer,
+            ResidueChemTemplates,
+        )
+
+        chem_templates = ResidueChemTemplates.create_from_defaults()
+        mk_prep = MoleculePreparation()
+        polymer = Polymer.from_pdb_string(
+            cleaned_path.read_text(encoding="utf-8"),
+            chem_templates=chem_templates,
+            mk_prep=mk_prep,
+            allow_bad_res=True,
+        )
+        polymer.stitch()
+        polymer.parameterize(mk_prep)
+        pdbqt_string, _flex_pdbqt = PDBQTWriterLegacy.write_from_polymer(polymer)
+        if not pdbqt_string:
+            return False
+        pdbqt_path.write_text(pdbqt_string, encoding="utf-8")
+        return True
+    except (ImportError, OSError, RuntimeError, ValueError) as e:
+        logger.info(f"   ⚠️  Meeko receptor prep error: {e}")
+        return False
 
 
 def _smiles_to_3d_mol(smiles: str):
