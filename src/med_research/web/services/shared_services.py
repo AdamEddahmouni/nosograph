@@ -215,11 +215,21 @@ def run_trials(
 
     reporter("Clinical trials tracking complete", 3, 3)
     coverage = results.get("coverage", {})
+    # The engine reports top sponsors as a {sponsor: count} dict already
+    # limited to the top 10; the API contract is a list of dicts.
+    top_sponsors = stats.get("top_sponsors", {})
+    if isinstance(top_sponsors, dict):
+        top_sponsors = [
+            {"name": sponsor, "count": count}
+            for sponsor, count in list(top_sponsors.items())[:10]
+        ]
+    else:
+        top_sponsors = top_sponsors[:10] if isinstance(top_sponsors, list) else []
     return {
         "total_trials": len(trials),
         "phase_distribution": stats.get("phase_counts", {}),
         "moa_distribution": moa_dist,
-        "top_sponsors": stats.get("top_sponsors", [])[:10],
+        "top_sponsors": top_sponsors,
         "trials": trials[:max_trials],
         "kg_crossref": kg_crossref,
         "coverage": coverage,
