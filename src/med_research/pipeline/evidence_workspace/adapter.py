@@ -3,10 +3,14 @@
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Any
+from typing import Any, cast
 
+from typing_extensions import Unpack
+
+from med_research.pipeline.adapter_options import AdapterOptions
 from med_research.pipeline.base import BasePipelineModule
 from med_research.pipeline.evidence_workspace.schemas import EvidenceDossier, ResearchRequest
+from med_research.pipeline.evidence_workspace.sources import EvidenceSource
 from med_research.pipeline.provenance import build_provenance
 from med_research.pipeline.registry import register_module
 
@@ -18,7 +22,7 @@ def _default_question(disease_id: str) -> str:
     return f"Treatment targets for {disease.profile.name}"
 
 
-def _research_request(disease_id: str, **opts: Any) -> ResearchRequest:
+def _research_request(disease_id: str, **opts: Unpack[AdapterOptions]) -> ResearchRequest:
     request = opts.get("request")
     if isinstance(request, ResearchRequest):
         return request
@@ -49,13 +53,15 @@ class EvidenceWorkspaceModule(BasePipelineModule):
     def coverage_inputs(self) -> tuple[str, ...]:
         return ()
 
-    def run(self, disease_id: str, **opts: Any) -> EvidenceDossier:
+    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> EvidenceDossier:
         from med_research.pipeline.evidence_workspace.workspace import run_workspace
 
         request = _research_request(disease_id, **opts)
         return run_workspace(
             request,
-            sources=opts.get("sources"),
+            # The workspace option maps source names to EvidenceSource objects,
+            # unlike the list-of-names ``sources`` option of the other modules.
+            sources=cast(dict[str, EvidenceSource] | None, opts.get("sources")),
             graph=opts.get("graph"),
             llm_client=opts.get("llm_client"),
             model=opts.get("model"),
@@ -80,8 +86,13 @@ class EvidenceWorkspaceModule(BasePipelineModule):
         output = Path(__file__).parent / f"report_{disease_id}.html"
         return write_html(dossier, output)
 
-    def build_provenance(self, disease_id: str, **opts: Any) -> dict:
+    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
         sources = opts.get("sources") or ("pubmed", "clinical_trials")
+        extra: dict[str, Any] = {
+            key: value
+            for key, value in opts.items()
+            if key not in {"sources", "question", "cache_or_live", "candidate_type"}
+        }
         return build_provenance(
             disease_id=disease_id,
             module=self.module_id,
@@ -92,15 +103,5 @@ class EvidenceWorkspaceModule(BasePipelineModule):
                 "ranking": "support/contradiction/recency/quality heuristic",
                 "candidate_type": opts.get("candidate_type", "both"),
             },
-            **{
-                key: value
-                for key, value in opts.items()
-                if key
-                not in {
-                    "sources",
-                    "question",
-                    "cache_or_live",
-                    "candidate_type",
-                }
-            },
+            **extra,
         )

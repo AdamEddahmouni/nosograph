@@ -5,6 +5,9 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Any
 
+from typing_extensions import Unpack
+
+from med_research.pipeline.adapter_options import AdapterOptions
 from med_research.pipeline.base import BasePipelineModule
 from med_research.pipeline.provenance import build_provenance
 from med_research.pipeline.registry import register_module
@@ -27,7 +30,7 @@ class VirtualScreeningModule(BasePipelineModule):
     def coverage_inputs(self) -> tuple[str, ...]:
         return ("genes", "drugs", "pathways", "screening_profile")
 
-    def run(self, disease_id: str, **opts: Any) -> dict:
+    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
         if opts.get("operation") == "untargeted_genes":
             from med_research.pipeline.virtual_screening.screening import get_untargeted_genes
 
@@ -73,7 +76,7 @@ class VirtualScreeningModule(BasePipelineModule):
         )
         return Path(report_path)
 
-    def build_provenance(self, disease_id: str, **opts: Any) -> dict:
+    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
         scoring = opts.get("scoring")
         if scoring is None:
             from med_research.pipeline.virtual_screening.screening_strategy import (
@@ -87,15 +90,16 @@ class VirtualScreeningModule(BasePipelineModule):
                 "strategy_fingerprint": strategy_fingerprint(strategy),
             }
 
+        extra: dict[str, Any] = {
+            key: value
+            for key, value in opts.items()
+            if key not in {"sources", "scoring", "cache_or_live"}
+        }
         return build_provenance(
             disease_id=disease_id,
             module=self.module_id,
             sources=["knowledge_graph"],
             cache_or_live=opts.get("cache_or_live", "cache"),
             scoring=scoring,
-            **{
-                key: value
-                for key, value in opts.items()
-                if key not in {"scoring", "cache_or_live"}
-            },
+            **extra,
         )

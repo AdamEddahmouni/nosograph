@@ -14,6 +14,10 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
+from typing_extensions import Unpack
+
+from med_research.pipeline.adapter_options import AdapterOptions
+
 
 @dataclass
 class PipelineRunResult:
@@ -39,7 +43,7 @@ class BasePipelineModule(ABC):
         """Curated input keys passed to ``module_coverage()``."""
 
     @abstractmethod
-    def run(self, disease_id: str, **opts: Any) -> Any:
+    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> Any:
         """Execute the module for a disease and return raw results."""
 
     @abstractmethod
@@ -53,7 +57,9 @@ class BasePipelineModule(ABC):
         """Render an HTML report from ``run()`` output and return its path."""
 
     @abstractmethod
-    def build_provenance(self, disease_id: str, **opts: Any) -> dict[str, Any]:
+    def build_provenance(
+        self, disease_id: str, **opts: Unpack[AdapterOptions]
+    ) -> dict[str, Any]:
         """Build reproducibility metadata for a disease run."""
 
     @property

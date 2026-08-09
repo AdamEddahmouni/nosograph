@@ -5,6 +5,9 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Any
 
+from typing_extensions import Unpack
+
+from med_research.pipeline.adapter_options import AdapterOptions
 from med_research.pipeline.base import BasePipelineModule
 from med_research.pipeline.provenance import build_provenance
 from med_research.pipeline.registry import register_module
@@ -27,7 +30,7 @@ class LiteratureMiningModule(BasePipelineModule):
     def coverage_inputs(self) -> tuple[str, ...]:
         return ("genes", "drugs", "pathways", "pubmed_queries")
 
-    def run(self, disease_id: str, **opts: Any) -> dict:
+    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
         from med_research.diseases.base import Disease
         from med_research.pipeline.literature_mining.miner import DEFAULT_EMAIL, mine_literature
 
@@ -74,8 +77,13 @@ class LiteratureMiningModule(BasePipelineModule):
         )
         return Path(report_path)
 
-    def build_provenance(self, disease_id: str, **opts: Any) -> dict:
+    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
         use_cache = opts.get("use_cache", True)
+        extra: dict[str, Any] = {
+            key: value
+            for key, value in opts.items()
+            if key not in {"sources", "query", "cache_or_live", "use_cache"}
+        }
         return build_provenance(
             disease_id=disease_id,
             module=self.module_id,
@@ -84,9 +92,5 @@ class LiteratureMiningModule(BasePipelineModule):
             cache_or_live=opts.get(
                 "cache_or_live", "cache" if use_cache else "live"
             ),
-            **{
-                key: value
-                for key, value in opts.items()
-                if key not in {"query", "cache_or_live", "use_cache"}
-            },
+            **extra,
         )

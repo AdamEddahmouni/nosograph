@@ -5,6 +5,9 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Any
 
+from typing_extensions import Unpack
+
+from med_research.pipeline.adapter_options import AdapterOptions
 from med_research.pipeline.base import BasePipelineModule
 from med_research.pipeline.provenance import build_provenance
 from med_research.pipeline.registry import register_module
@@ -37,7 +40,7 @@ class SemanticSearchModule(BasePipelineModule):
     def coverage_inputs(self) -> tuple[str, ...]:
         return ("genes", "drugs", "pubmed_queries")
 
-    def run(self, disease_id: str, **opts: Any) -> dict:
+    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
         from med_research.pipeline.semantic_search.engine import SemanticSearchEngine
 
         engine = SemanticSearchEngine(disease_id=disease_id)
@@ -71,17 +74,18 @@ class SemanticSearchModule(BasePipelineModule):
         )
         return Path(report_path)
 
-    def build_provenance(self, disease_id: str, **opts: Any) -> dict:
+    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
         query = opts.get("query") or _default_query(disease_id)
+        extra: dict[str, Any] = {
+            key: value
+            for key, value in opts.items()
+            if key not in {"sources", "query", "cache_or_live"}
+        }
         return build_provenance(
             disease_id=disease_id,
             module=self.module_id,
             sources=["pubmed"],
             query=query,
             cache_or_live=opts.get("cache_or_live", "cache"),
-            **{
-                key: value
-                for key, value in opts.items()
-                if key not in {"query", "cache_or_live"}
-            },
+            **extra,
         )

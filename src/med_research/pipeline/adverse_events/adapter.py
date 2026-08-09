@@ -5,6 +5,9 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Any
 
+from typing_extensions import Unpack
+
+from med_research.pipeline.adapter_options import AdapterOptions
 from med_research.pipeline.base import BasePipelineModule
 from med_research.pipeline.provenance import build_provenance
 from med_research.pipeline.registry import register_module
@@ -27,7 +30,7 @@ class AdverseEventsModule(BasePipelineModule):
     def coverage_inputs(self) -> tuple[str, ...]:
         return ("symptoms", "adverse_event_profile", "safety_risk")
 
-    def run(self, disease_id: str, **opts: Any) -> list:
+    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> list:
         from med_research.pipeline.adverse_events.profiler import score_all_drugs
 
         return score_all_drugs(
@@ -51,11 +54,16 @@ class AdverseEventsModule(BasePipelineModule):
         )
         return Path(report_path)
 
-    def build_provenance(self, disease_id: str, **opts: Any) -> dict:
+    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
+        extra: dict[str, Any] = {
+            key: value
+            for key, value in opts.items()
+            if key not in {"sources", "cache_or_live"}
+        }
         return build_provenance(
             disease_id=disease_id,
             module=self.module_id,
             sources=["fda_labels"],
             cache_or_live="cache",
-            **opts,
+            **extra,
         )

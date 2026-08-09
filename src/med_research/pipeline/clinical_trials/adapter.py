@@ -5,6 +5,9 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Any
 
+from typing_extensions import Unpack
+
+from med_research.pipeline.adapter_options import AdapterOptions
 from med_research.pipeline.base import BasePipelineModule
 from med_research.pipeline.provenance import build_provenance
 from med_research.pipeline.registry import register_module
@@ -27,7 +30,7 @@ class ClinicalTrialsModule(BasePipelineModule):
     def coverage_inputs(self) -> tuple[str, ...]:
         return ("genes", "drugs", "trial_query")
 
-    def run(self, disease_id: str, **opts: Any) -> dict:
+    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
         from med_research.pipeline.clinical_trials.tracker import track_trials
 
         return track_trials(
@@ -54,11 +57,16 @@ class ClinicalTrialsModule(BasePipelineModule):
         )
         return Path(report_path)
 
-    def build_provenance(self, disease_id: str, **opts: Any) -> dict:
+    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
         from med_research.diseases.base import Disease
 
         use_cache = opts.get("use_cache", True)
         query = opts.get("query") or Disease(disease_id).get_trial_query()
+        extra: dict[str, Any] = {
+            key: value
+            for key, value in opts.items()
+            if key not in {"sources", "query", "cache_or_live", "use_cache"}
+        }
         return build_provenance(
             disease_id=disease_id,
             module=self.module_id,
@@ -67,9 +75,5 @@ class ClinicalTrialsModule(BasePipelineModule):
             cache_or_live=opts.get(
                 "cache_or_live", "cache" if use_cache else "live"
             ),
-            **{
-                key: value
-                for key, value in opts.items()
-                if key not in {"query", "cache_or_live", "use_cache"}
-            },
+            **extra,
         )

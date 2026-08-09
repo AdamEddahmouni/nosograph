@@ -5,6 +5,9 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Any
 
+from typing_extensions import Unpack
+
+from med_research.pipeline.adapter_options import AdapterOptions
 from med_research.pipeline.base import BasePipelineModule
 from med_research.pipeline.provenance import build_provenance
 from med_research.pipeline.registry import register_module
@@ -27,7 +30,7 @@ class GwasModule(BasePipelineModule):
     def coverage_inputs(self) -> tuple[str, ...]:
         return ("genes", "gwas_search_terms")
 
-    def run(self, disease_id: str, **opts: Any) -> dict:
+    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
         from med_research.pipeline.bioinformatics.gwas import run_gwas_analysis
 
         return run_gwas_analysis(
@@ -57,14 +60,19 @@ class GwasModule(BasePipelineModule):
         )
         return Path(report_path)
 
-    def build_provenance(self, disease_id: str, **opts: Any) -> dict:
+    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
+        extra: dict[str, Any] = {
+            key: value
+            for key, value in opts.items()
+            if key not in {"sources", "cache_or_live", "scoring"}
+        }
         return build_provenance(
             disease_id=disease_id,
             module=self.module_id,
             sources=["gwas_catalog"],
             cache_or_live="cache",
             scoring={"analysis": "gwas_crossref"},
-            **opts,
+            **extra,
         )
 
 
@@ -85,7 +93,7 @@ class EnrichmentModule(BasePipelineModule):
     def coverage_inputs(self) -> tuple[str, ...]:
         return ("genes", "pathways")
 
-    def run(self, disease_id: str, **opts: Any) -> dict:
+    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
         from med_research.pipeline.bioinformatics.enrichment import run_enrichment_analysis
 
         return run_enrichment_analysis(
@@ -118,14 +126,19 @@ class EnrichmentModule(BasePipelineModule):
         )
         return Path(report_path)
 
-    def build_provenance(self, disease_id: str, **opts: Any) -> dict:
+    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
+        extra: dict[str, Any] = {
+            key: value
+            for key, value in opts.items()
+            if key not in {"sources", "cache_or_live", "scoring"}
+        }
         return build_provenance(
             disease_id=disease_id,
             module=self.module_id,
             sources=["enrichr"],
             cache_or_live="cache",
             scoring={"analysis": "pathway_enrichment"},
-            **opts,
+            **extra,
         )
 
 
@@ -146,7 +159,7 @@ class PpiModule(BasePipelineModule):
     def coverage_inputs(self) -> tuple[str, ...]:
         return ("genes",)
 
-    def run(self, disease_id: str, **opts: Any) -> dict:
+    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
         from med_research.pipeline.bioinformatics.ppi import (
             DEFAULT_CONFIDENCE,
             run_ppi_analysis,
@@ -181,12 +194,17 @@ class PpiModule(BasePipelineModule):
         )
         return Path(report_path)
 
-    def build_provenance(self, disease_id: str, **opts: Any) -> dict:
+    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
+        extra: dict[str, Any] = {
+            key: value
+            for key, value in opts.items()
+            if key not in {"sources", "cache_or_live", "scoring"}
+        }
         return build_provenance(
             disease_id=disease_id,
             module=self.module_id,
             sources=["string"],
             cache_or_live="cache",
             scoring={"analysis": "ppi_hub"},
-            **opts,
+            **extra,
         )

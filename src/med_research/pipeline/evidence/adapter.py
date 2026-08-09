@@ -3,8 +3,10 @@
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Any
 
+from typing_extensions import Unpack
+
+from med_research.pipeline.adapter_options import AdapterOptions
 from med_research.pipeline.base import BasePipelineModule
 from med_research.pipeline.provenance import build_provenance
 from med_research.pipeline.registry import register_module
@@ -48,7 +50,7 @@ class EvidenceGathererModule(BasePipelineModule):
     def coverage_inputs(self) -> tuple[str, ...]:
         return ("genes", "drugs", "pathways", "pubmed_queries")
 
-    def run(self, disease_id: str, **opts: Any) -> dict:
+    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
         from med_research.pipeline.evidence.gatherer import gather_evidence
 
         query = opts.get("query") or _default_query(disease_id)
@@ -76,7 +78,7 @@ class EvidenceGathererModule(BasePipelineModule):
 
         return Path(generate_html_report(results, provenance=provenance))
 
-    def build_provenance(self, disease_id: str, **opts: Any) -> dict:
+    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
         use_cache = opts.get("use_cache", True)
         sources = opts.get("sources") or [
             "pubmed",
@@ -113,7 +115,7 @@ class LLMExtractorModule(BasePipelineModule):
     def coverage_inputs(self) -> tuple[str, ...]:
         return ()
 
-    def run(self, disease_id: str, **opts: Any) -> dict:
+    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
         from med_research.pipeline.evidence.extractor import extract_all
 
         query = opts.get("query") or _default_query(disease_id)
@@ -143,7 +145,7 @@ class LLMExtractorModule(BasePipelineModule):
 
         return Path(generate_html_report(results, provenance=provenance))
 
-    def build_provenance(self, disease_id: str, **opts: Any) -> dict:
+    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
         use_cache = opts.get("use_cache", True)
         sources = opts.get("sources") or ["pubmed", "preprints", "clinical_trials"]
         return build_provenance(
@@ -175,7 +177,7 @@ class EvidenceMonitorModule(BasePipelineModule):
     def coverage_inputs(self) -> tuple[str, ...]:
         return ("genes", "pubmed_queries")
 
-    def run(self, disease_id: str, **opts: Any) -> dict:
+    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
         from med_research.pipeline.evidence.monitor import (
             compare_snapshots,
             load_latest_snapshots,
@@ -244,7 +246,7 @@ class EvidenceMonitorModule(BasePipelineModule):
             )
         return Path(report_path)
 
-    def build_provenance(self, disease_id: str, **opts: Any) -> dict:
+    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
         sources = opts.get("sources") or ["pubmed", "preprints", "clinical_trials"]
         return build_provenance(
             disease_id=disease_id,
