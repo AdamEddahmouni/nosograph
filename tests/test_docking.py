@@ -25,6 +25,7 @@ from med_research.pipeline.virtual_screening.docking import (
     compute_real_binding_score,
     get_docking_status,
     get_vina_status_text,
+    prepare_ligand,
 )
 
 # ── Unit: Dependency Detection ────────────────────────────────────────────
@@ -281,6 +282,61 @@ def test_convert_receptor_to_pdbqt_missing_meeko(tmp_path, monkeypatch):
 
     assert ok is False
     assert not pdbqt_path.exists()
+
+
+# ── Unit: Meeko Ligand Preparation ─────────────────────────────────────────
+
+ASPIRIN_SMILES = "CC(=O)Oc1ccccc1C(=O)O"
+
+
+@pytest.mark.skipif(not MEEKO_AVAILABLE, reason="Meeko not installed")
+@pytest.mark.skipif(not RDKIT_AVAILABLE, reason="RDKit not installed")
+def test_prepare_ligand_synthetic_smiles(tmp_path, monkeypatch):
+    """SMILES -> RDKit 3D -> Meeko PDBQTWriterLegacy produces valid PDBQT."""
+    monkeypatch.setattr(
+        "med_research.pipeline.virtual_screening.docking.TARGETS_DIR", tmp_path
+    )
+
+    pdbqt_path = prepare_ligand("aspirin", ASPIRIN_SMILES)
+
+    assert pdbqt_path is not None
+    text = Path(pdbqt_path).read_text(encoding="utf-8")
+    assert "ROOT" in text
+    # PDBQT records carry an AutoDock atom type (aromatic carbon here)
+    assert any("ATOM" in line and " A " in line for line in text.splitlines())
+
+    # The output must round-trip through Meeko's own ligand reader
+    from meeko import PDBQTMolecule
+
+    molecule = PDBQTMolecule.from_file(pdbqt_path)
+    assert molecule.atoms().shape[0] >= 3
+
+
+def test_prepare_ligand_garbage_smiles_fails_cleanly(tmp_path, monkeypatch):
+    """Invalid SMILES returns None instead of raising."""
+    monkeypatch.setattr(
+        "med_research.pipeline.virtual_screening.docking.TARGETS_DIR", tmp_path
+    )
+
+    result = prepare_ligand("junk", "not-a-valid-smiles!!!")
+
+    assert result is None
+
+
+def test_prepare_ligand_missing_meeko(tmp_path, monkeypatch):
+    """Without Meeko the ligand path degrades to None without writing output."""
+    monkeypatch.setattr(
+        "med_research.pipeline.virtual_screening.docking.TARGETS_DIR", tmp_path
+    )
+    monkeypatch.setattr(
+        "med_research.pipeline.virtual_screening.docking._detect_meeko",
+        lambda: False,
+    )
+
+    result = prepare_ligand("aspirin", ASPIRIN_SMILES)
+
+    assert result is None
+    assert not (tmp_path / "ligands" / "aspirin.pdbqt").exists()
 
 
 # ── Unit: Vina Setup Tool ──────────────────────────────────────────────────

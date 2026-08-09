@@ -367,6 +367,31 @@ def _smiles_to_3d_mol(smiles: str):
         return None
 
 
+def _convert_ligand_mol_to_pdbqt(mol) -> str | None:
+    """Convert an RDKit Mol to a ligand PDBQT string via Meeko.
+
+    Uses the Meeko 0.7 ``MoleculePreparation`` / ``PDBQTWriterLegacy``
+    workflow. Returns the PDBQT string, or None on failure.
+    """
+    if not _detect_meeko():
+        return None
+    try:
+        from meeko import MoleculePreparation, PDBQTWriterLegacy
+
+        preparator = MoleculePreparation()
+        mol_setups = preparator.prepare(mol)
+        if not mol_setups:
+            return None
+
+        pdbqt_string, is_ok, _error = PDBQTWriterLegacy.write_string(mol_setups[0])
+        if not is_ok:
+            return None
+        return pdbqt_string
+    except (ImportError, OSError, RuntimeError, ValueError) as e:
+        logger.info(f"   ⚠️  Ligand prep error: {e}")
+        return None
+
+
 def prepare_ligand(
     drug_id: str,
     smiles: str,
@@ -405,27 +430,13 @@ def prepare_ligand(
         return None
 
     # Step 2 & 3: Meeko prep → PDBQT
-    if not _detect_meeko():
-        logger.info(f"   ⚠️  Meeko not available — cannot prepare ligand {drug_id}")
+    pdbqt_string = _convert_ligand_mol_to_pdbqt(mol)
+    if not pdbqt_string:
+        logger.info(f"   ⚠️  Meeko ligand preparation failed for {drug_id}")
         return None
 
-    try:
-        from meeko import MoleculePreparation, PDBQTWriterLegacy
-
-        preparator = MoleculePreparation()
-        mol_setups = preparator.prepare(mol)
-        if not mol_setups:
-            return None
-
-        pdbqt_string, is_ok = PDBQTWriterLegacy.write_string(mol_setups[0])
-        if not is_ok:
-            return None
-
-        pdbqt_path.write_text(pdbqt_string, encoding="utf-8")
-        return str(pdbqt_path)
-    except (ImportError, OSError, RuntimeError, ValueError) as e:
-        logger.info(f"   ⚠️  Ligand prep error ({drug_id}): {e}")
-        return None
+    pdbqt_path.write_text(pdbqt_string, encoding="utf-8")
+    return str(pdbqt_path)
 
 
 # ═══════════════════════════════════════════════════════════════════════
