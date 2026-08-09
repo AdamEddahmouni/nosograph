@@ -907,8 +907,9 @@ class TestWebSocketOrphanedJob:
     def test_orphaned_job_returns_error(self, client):
         """Connecting to a nonexistent job via WebSocket should eventually emit ERROR.
 
-        After ~4 poll iterations (~2s) the server detects that the job has
-        no backend data and sends {"status": "ERROR", "error": "Job not found or expired"}.
+        After a few poll iterations the server detects the orphaned job and
+        sends an ERROR — either "Job not found or expired" when the result
+        backend is reachable, or "Job backend unavailable" when it is not.
         """
         fake_job_id = "00000000-0000-0000-0000-000000000000"
 
@@ -930,7 +931,8 @@ class TestWebSocketOrphanedJob:
             error_msgs = [m for m in messages if m["status"] == "ERROR"]
             assert len(error_msgs) >= 1, \
                 f"Expected an ERROR message for orphaned job, got: {messages}"
-            assert "not found" in error_msgs[0]["error"].lower()
+            error_text = error_msgs[0]["error"].lower()
+            assert "not found" in error_text or "unavailable" in error_text
 
     @pytest.mark.slow
     def test_orphaned_job_closes_cleanly(self, client):
@@ -938,16 +940,22 @@ class TestWebSocketOrphanedJob:
         fake_job_id = "11111111-1111-1111-1111-111111111111"
 
         with client.websocket_connect(f"/api/jobs/{fake_job_id}/ws") as ws:
+            last_exc = None
             # Consume all messages until the connection closes
             while True:
                 try:
                     ws.receive_json()
-                except Exception:
+                except Exception as exc:
+                    last_exc = exc
                     break  # Connection closed — expected
 
-            # Attempting to receive after the connection closes must raise
-            with pytest.raises((RuntimeError, WebSocketDisconnect)):
-                ws.receive_json()
+            # The server must close the connection after the terminal ERROR.
+            # (In Starlette's TestClient the close frame surfaces as a
+            # disconnect on the receive that consumes it; any further receive
+            # would block forever, so we assert on that exception directly.)
+            assert isinstance(last_exc, (RuntimeError, WebSocketDisconnect)), (
+                f"Expected a disconnect after the terminal ERROR, got: {last_exc!r}"
+            )
 
 
 class TestWebSocketDisconnect:

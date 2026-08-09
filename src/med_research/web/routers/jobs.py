@@ -294,7 +294,10 @@ async def job_websocket(websocket: WebSocket, job_id: str) -> None:
 
     try:
         while polls < max_polls:
-            state = _safe_result_state(result)
+            # Celery/Redis reads block (connection timeouts can take seconds);
+            # run them off the event loop so one slow poll cannot stall the
+            # whole server.
+            state = await asyncio.to_thread(_safe_result_state, result)
             if state is None:
                 await websocket.send_json(
                     {
@@ -303,18 +306,37 @@ async def job_websocket(websocket: WebSocket, job_id: str) -> None:
                         "error": "Job backend unavailable",
                     }
                 )
+                await websocket.close()
                 break
 
             # Detect orphaned job IDs early (3 polls / 1.5s without any backend data)
-            if polls > 3 and state == "PENDING" and not result.info and not result.date_done:
-                await websocket.send_json(
-                    {
-                        "job_id": job_id,
-                        "status": "ERROR",
-                        "error": "Job not found or expired",
-                    }
-                )
-                break
+            if polls > 3 and state == "PENDING":
+                try:
+                    info, date_done = await asyncio.to_thread(
+                        lambda: (result.info, result.date_done)
+                    )
+                    job_missing = not info and not date_done
+                except _celery_backend_errors() as exc:
+                    logger.warning("WebSocket job meta poll failed: %s", exc)
+                    await websocket.send_json(
+                        {
+                            "job_id": job_id,
+                            "status": "ERROR",
+                            "error": "Job backend unavailable",
+                        }
+                    )
+                    await websocket.close()
+                    break
+                if job_missing:
+                    await websocket.send_json(
+                        {
+                            "job_id": job_id,
+                            "status": "ERROR",
+                            "error": "Job not found or expired",
+                        }
+                    )
+                    await websocket.close()
+                    break
 
             # Only send when state changes or on first poll
             if state != last_state:
@@ -322,12 +344,17 @@ async def job_websocket(websocket: WebSocket, job_id: str) -> None:
                 message = {"job_id": job_id, "status": state}
 
                 if state == "SUCCESS":
-                    message["result"] = safe_serialize(result.result)
+                    message["result"] = safe_serialize(
+                        await asyncio.to_thread(lambda: result.result)
+                    )
                     await websocket.send_json(message)
+                    await websocket.close()
                     break
                 elif state == "FAILURE":
-                    message["error"] = str(result.info) if result.info else "Unknown error"
+                    failure_info = await asyncio.to_thread(lambda: result.info)
+                    message["error"] = str(failure_info) if failure_info else "Unknown error"
                     await websocket.send_json(message)
+                    await websocket.close()
                     break
                 elif state == "PROGRESS":
                     progress = result.info if result.info else {}
@@ -349,10 +376,22 @@ async def job_websocket(websocket: WebSocket, job_id: str) -> None:
                     "error": "Job exceeded 10-minute timeout",
                 }
             )
+            await websocket.close()
 
     except WebSocketDisconnect:
         pass
     except _celery_backend_errors() as exc:
         logger.warning("WebSocket job poll failed: %s", exc)
+        try:
+            await websocket.send_json(
+                {
+                    "job_id": job_id,
+                    "status": "ERROR",
+                    "error": "Job backend unavailable",
+                }
+            )
+            await websocket.close()
+        except (WebSocketDisconnect, RuntimeError):
+            pass
     except asyncio.CancelledError:
         raise
