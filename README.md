@@ -237,7 +237,7 @@ The Compose file defines `redis`, `worker`, `web`, and `pipeline` services. The 
    --no-llm
 ```
 
-The web service listens on port 8000. Configure `CELERY_BROKER_URL`, `CELERY_RESULT_BACKEND`, `USE_CACHE`, `HOST`, `PORT`, `DEBUG`, `CORS_ORIGINS`, `WORKSPACE_DB_PATH`, `API_KEY`, `RATE_LIMIT_REQUESTS`, and `RATE_LIMIT_WINDOW` through the environment as needed. When using `med-research serve`, explicit `--host`/`--port` values (including their parser defaults) take precedence over `HOST`/`PORT`; see [`docs/api-reference.md`](docs/api-reference.md) for the distinction and security caveats.
+The web service listens on port 8000. Configure `CELERY_BROKER_URL`, `CELERY_RESULT_BACKEND`, `USE_CACHE`, `HOST`, `PORT`, `DEBUG`, `CORS_ORIGINS`, `WORKSPACE_DB_PATH`, `API_KEY`, `RATE_LIMIT_REQUESTS`, `RATE_LIMIT_WINDOW`, and `REDIS_RATE_LIMIT_URL` through the environment as needed. The rate limiter is distributed via Redis when `REDIS_RATE_LIMIT_URL` (default: the Celery broker URL) is reachable and falls back to per-process in-memory limiting otherwise. When using `med-research serve`, explicit `--host`/`--port` values (including their parser defaults) take precedence over `HOST`/`PORT`; see [`docs/api-reference.md`](docs/api-reference.md) for the distinction and security caveats.
 
 ## Documentation map
 

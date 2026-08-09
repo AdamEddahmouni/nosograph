@@ -41,8 +41,9 @@ The application preloads the default knowledge graph at startup. API-key middlew
 | `WORKSPACE_PUBLIC_URL` | `http://127.0.0.1:8000` | Public dashboard origin used in signed digest review links. |
 | `WORKSPACE_REVIEW_LINK_SECRET` | empty | HMAC secret for expiring review links; required unless `API_KEY` is used as the fallback secret. Keep it in deployment secrets. |
 | `API_KEY` | empty | When set, requires `X-API-Key` for POST/PUT/PATCH/DELETE and protected evidence/job/cache endpoints; empty disables API-key authentication. |
-| `RATE_LIMIT_REQUESTS` | `60` | In-memory requests per client IP per window. Set to `0` to disable. |
+| `RATE_LIMIT_REQUESTS` | `60` | Requests per client IP per window. Distributed via Redis when reachable, with an in-memory per-process fallback. Set to `0` to disable. |
 | `RATE_LIMIT_WINDOW` | `60` | Rate-limit window in seconds. |
+| `REDIS_RATE_LIMIT_URL` | `CELERY_BROKER_URL`, else `redis://localhost:6379/0` | Redis URL for the distributed sliding-window rate-limit store. When unreachable, the limiter falls back to per-process in-memory limiting. |
 | `MAX_REQUEST_BODY_BYTES` | `1048576` | Maximum accepted request body size (1 MiB) for POST/PUT/PATCH. |
 | `AUTH_MODE` | `local` | Researcher authentication mode: `local` signed sessions or `proxy` trusted reverse-proxy identity. |
 | `LOCAL_AUTH_USERS` | empty | Development-only JSON map such as `{"alice":"password"}` or comma-separated `alice=password` accounts. Store it as a deployment secret. |

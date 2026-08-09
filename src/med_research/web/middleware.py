@@ -1,12 +1,17 @@
+import asyncio
 import os
-import time
-from collections import defaultdict
 from typing import Callable
 
 from fastapi import Request
 from fastapi.responses import JSONResponse
 from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.types import ASGIApp
+
+from med_research.web.rate_limit import (
+    InMemoryRateLimitStore,
+    RateLimitStore,
+    create_rate_limit_store,
+)
 
 PROTECTED_PREFIXES = (
     "/api/jobs",
@@ -79,41 +84,37 @@ class AuthMiddleware(BaseHTTPMiddleware):
 
 
 class RateLimitMiddleware(BaseHTTPMiddleware):
-    """Simple in-memory sliding-window rate limiter per client IP."""
+    """Sliding-window rate limiter per client IP.
 
-    def __init__(self, app: ASGIApp) -> None:
+    Uses a :class:`RateLimitStore` — Redis-backed when reachable (shared
+    across app instances), in-memory otherwise. The store check runs off
+    the event loop so a slow Redis call cannot stall the server.
+    """
+
+    def __init__(self, app: ASGIApp, store: RateLimitStore | None = None) -> None:
         super().__init__(app)
-        self._store: dict[str, list[float]] = defaultdict(list)
-
-    def _cleanup(self, now: float) -> None:
-        threshold = now - RATE_LIMIT_WINDOW
-        for key in list(self._store):
-            self._store[key] = [t for t in self._store[key] if t > threshold]
-            if not self._store[key]:
-                del self._store[key]
+        if store is not None:
+            self._store = store
+        elif not RATE_LIMIT_REQUESTS:
+            self._store = InMemoryRateLimitStore()
+        else:
+            self._store = create_rate_limit_store()
 
     async def dispatch(self, request: Request, call_next: Callable):
         if not RATE_LIMIT_REQUESTS:
             return await call_next(request)
 
         ip = _get_client_ip(request)
-        now = time.time()
-        window_start = now - RATE_LIMIT_WINDOW
-
-        timestamps = self._store[ip]
-        timestamps = [t for t in timestamps if t > window_start]
-        self._store[ip] = timestamps
-
-        if len(timestamps) >= RATE_LIMIT_REQUESTS:
-            self._cleanup(now)
+        allowed, retry_after = await asyncio.to_thread(
+            self._store.check, ip, RATE_LIMIT_REQUESTS, RATE_LIMIT_WINDOW
+        )
+        if not allowed:
             return JSONResponse(
                 status_code=429,
                 content={
                     "detail": "Too many requests. Please try again later.",
-                    "retry_after": int(RATE_LIMIT_WINDOW),
+                    "retry_after": int(retry_after) or int(RATE_LIMIT_WINDOW),
                 },
             )
 
-        self._store[ip].append(now)
-        self._cleanup(now)
         return await call_next(request)
