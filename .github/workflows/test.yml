@@ -166,6 +166,18 @@ jobs:
 
 
 
+      # Docking prep is covered on every push/PR; only the real-PDB
+
+      # receptor-prep test needs network and stays in the slow job.
+
+      - name: Run docking tests (no network)
+
+        run: |
+
+          python -m pytest tests/test_docking.py -m "not network" -q --tb=short
+
+
+
       - name: Run deterministic offline tests
 
         timeout-minutes: 5

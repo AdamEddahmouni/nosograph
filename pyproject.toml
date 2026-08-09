@@ -101,6 +101,7 @@ markers = [
     "slow: marks tests as slow (deselect with '-m \"not slow\"')",
     "unit: auto-applied to non-slow, non-integration tests (see tests/conftest.py)",
     "integration: auto-applied under tests/integration/ (see tests/integration/conftest.py)",
+    "network: requires live external APIs (excluded from the PR docking check)",
 ]
 
 [tool.mypy]

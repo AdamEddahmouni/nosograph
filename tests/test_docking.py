@@ -437,6 +437,7 @@ def test_docking_possible_false_without_vina():
 
 
 @pytest.mark.slow
+@pytest.mark.network  # downloads real PDB structures from RCSB
 def test_engine_prepare_targets_no_force(engine):
     rec_paths = engine.prepare_all_targets(force=False)
     assert isinstance(rec_paths, dict)
