@@ -56,7 +56,9 @@ jobs:
 
           python -m pip install --upgrade pip
 
-          pip install -r requirements-dev.txt
+          pip install -r requirements-lock.txt
+
+          pip install -r requirements-dev-lock.txt
 
           pip install -e .
 
@@ -88,7 +90,9 @@ jobs:
 
       matrix:
 
-        python-version: ["3.10", "3.11", "3.12"]
+        # numpy==2.4.6 (locked) supports Python 3.11+; drop 3.10
+
+        python-version: ["3.11", "3.12"]
 
 
 
@@ -118,11 +122,39 @@ jobs:
 
           python -m pip install --upgrade pip
 
-          pip install -r requirements.txt
+          pip install -r requirements-lock.txt
 
-          pip install -r requirements-dev.txt
+          pip install -r requirements-dev-lock.txt
 
           pip install -e .  # install the med_research package itself (src layout)
+
+
+
+      - name: Verify meeko matches lock
+
+        run: |
+
+          python - <<'EOF'
+
+          import importlib.metadata
+
+          import re
+
+          lock = open("requirements-lock.txt", encoding="utf-8").read()
+
+          match = re.search(r"^meeko==([^\s]+)", lock, re.M)
+
+          assert match, "meeko is not pinned in requirements-lock.txt"
+
+          expected = match.group(1)
+
+          installed = importlib.metadata.version("meeko")
+
+          assert installed == expected, f"installed meeko {installed} != locked {expected}"
+
+          print(f"meeko {installed} matches requirements-lock.txt")
+
+          EOF
 
 
 
@@ -242,9 +274,9 @@ jobs:
 
           python -m pip install --upgrade pip
 
-          pip install -r requirements.txt
+          pip install -r requirements-lock.txt
 
-          pip install -r requirements-dev.txt
+          pip install -r requirements-dev-lock.txt
 
           pip install -e .
 
@@ -298,9 +330,9 @@ jobs:
 
           python -m pip install --upgrade pip
 
-          pip install -r requirements.txt
+          pip install -r requirements-lock.txt
 
-          pip install -r requirements-dev.txt
+          pip install -r requirements-dev-lock.txt
 
           python -m playwright install chromium
 
