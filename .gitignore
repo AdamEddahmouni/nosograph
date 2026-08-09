@@ -109,12 +109,23 @@ src/med_research/pipeline/clinical_trials/data/ct_cache_*.json
 
 # v2 pipeline per-disease generated outputs (disease_output_path(): {stem}_{disease}.json)
 src/med_research/pipeline/adverse_events/data/profiles_*.json
-src/med_research/pipeline/adverse_events/data/safety_scores_sle.json
+src/med_research/pipeline/adverse_events/data/safety_scores_*.json
 src/med_research/pipeline/bioinformatics/data/
 src/med_research/pipeline/car_t_predictor/data/car_t_scores_*.json
 src/med_research/pipeline/drug_repurposing/data/candidates_*.json
 src/med_research/pipeline/drug_synergy/data/synergy_results_*.json
 src/med_research/pipeline/gene_expression/data/expression_correlations_*.json
+
+# Module run outputs written directly under data/ (regenerated every run)
+src/med_research/pipeline/clinical_trials/data/ct_results.json
+src/med_research/pipeline/ml_predictor/data/ml_predictions.json
+src/med_research/pipeline/cross_disease/data/cross_disease_analysis.json
+src/med_research/pipeline/virtual_screening/data/screening_results.json
+
+# Legacy flat-file caches (pre-CacheManager) — regenerable, not curated
+src/med_research/pipeline/clinical_trials/data/ct_cache.json
+src/med_research/pipeline/gene_expression/data/geo_cache/
+src/med_research/pipeline/literature_mining/data/pubmed_cache*.json
 
 # v2 pipeline generated reports and atomic-write leftovers
 src/med_research/pipeline/*/report.html
