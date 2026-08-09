@@ -128,20 +128,21 @@ def download_vina(auto: bool = False) -> str | None:
 
 
 def print_status():
-    """Print current Vina availability status."""
+    """Print current Vina availability status (to stdout)."""
     vina_path = check_vina()
     bin_dir_exists = BIN_DIR.is_dir()
     bin_contents = list(BIN_DIR.glob("vina*")) if bin_dir_exists else []
 
-    logger.info("\nAutoDock Vina Status:")
-    logger.info(f"   In PATH:           {'✅ ' + vina_path if vina_path else '❌ not found'}")
-    logger.info(f"   Project bin/:      {'✅ ' + ', '.join(str(p.name) for p in bin_contents) if bin_contents else 'empty'}")
-    logger.info(f"   Platform:          {platform.system()} {platform.machine()}")
+    # ASCII-safe output: status text may be printed to cp1252 consoles
+    print("\nAutoDock Vina Status:")
+    print(f"   In PATH:           {vina_path if vina_path else 'not found'}")
+    print(f"   Project bin/:      {', '.join(str(p.name) for p in bin_contents) if bin_contents else 'empty'}")
+    print(f"   Platform:          {platform.system()} {platform.machine()}")
 
     if not vina_path:
-        logger.info("\n   To install: python virtual_screening/vina_setup.py --auto")
-        logger.info("   Manual: download from https://github.com/ccsb-scripps/AutoDock-Vina/releases")
-        logger.info(f"            save to {BIN_DIR / 'vina'} (or vina.exe on Windows)")
+        print("\n   To install: python virtual_screening/vina_setup.py --auto")
+        print("   Manual: download from https://github.com/ccsb-scripps/AutoDock-Vina/releases")
+        print(f"            save to {BIN_DIR / 'vina'} (or vina.exe on Windows)")
 
 
 def main():

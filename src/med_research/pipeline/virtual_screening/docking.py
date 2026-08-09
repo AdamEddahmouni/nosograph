@@ -136,32 +136,6 @@ def _find_vina_binary() -> str | None:
 # ═══════════════════════════════════════════════════════════════════════
 
 
-class _CleanSelect:
-    """BioPython Select class: keep only standard amino acids, target chain."""
-
-    def __init__(self, chain_id: str = "A"):
-        self.chain_id = chain_id
-        self._standard = {
-            "ALA", "ARG", "ASN", "ASP", "CYS", "GLN", "GLU", "GLY", "HIS",
-            "ILE", "LEU", "LYS", "MET", "PHE", "PRO", "SER", "THR", "TRP",
-            "TYR", "VAL",
-        }
-
-    def accept_chain(self, chain):
-        return chain.get_id() == self.chain_id
-
-    def accept_residue(self, residue):
-        """Keep only standard amino acid residues."""
-        hetfield = residue.get_id()[0]
-        if hetfield.strip() != "":
-            return False
-        return residue.get_resname() in self._standard
-
-    def accept_atom(self, atom):
-        """Keep all atoms of accepted residues."""
-        return True
-
-
 def _fetch_pdb(pdb_id: str, output_path: Path) -> bool:
     """Download a PDB file from RCSB.
 
@@ -204,7 +178,32 @@ def _clean_receptor(pdb_path: Path, cleaned_path: Path, chain: str = "A") -> boo
         return False
 
     try:
-        from Bio.PDB import PDBIO, PDBParser
+        from Bio.PDB import PDBIO, PDBParser, Select
+
+        class _CleanSelect(Select):
+            """Keep only standard amino acids from the target chain."""
+
+            def __init__(self, chain_id: str):
+                self.chain_id = chain_id
+                self._standard = {
+                    "ALA", "ARG", "ASN", "ASP", "CYS", "GLN", "GLU", "GLY", "HIS",
+                    "ILE", "LEU", "LYS", "MET", "PHE", "PRO", "SER", "THR", "TRP",
+                    "TYR", "VAL",
+                }
+
+            def accept_chain(self, chain):
+                return chain.get_id() == self.chain_id
+
+            def accept_residue(self, residue):
+                """Keep only standard amino acid residues."""
+                hetfield = residue.get_id()[0]
+                if hetfield.strip() != "":
+                    return False
+                return residue.get_resname() in self._standard
+
+            def accept_atom(self, atom):
+                """Keep all atoms of accepted residues."""
+                return True
 
         parser = PDBParser(QUIET=True)
         structure = parser.get_structure("receptor", str(pdb_path))
@@ -212,8 +211,8 @@ def _clean_receptor(pdb_path: Path, cleaned_path: Path, chain: str = "A") -> boo
         io = PDBIO()
         io.set_structure(structure)
         io.save(str(cleaned_path), _CleanSelect(chain))
-        return True
-    except (OSError, ValueError, KeyError, ImportError) as e:
+        return cleaned_path.exists() and cleaned_path.stat().st_size > 0
+    except (OSError, ValueError, KeyError, AttributeError, ImportError) as e:
         logger.info(f"   ⚠️  Receptor cleaning failed: {e}")
         return False
 
@@ -261,26 +260,48 @@ def prepare_receptor(gene_id: str, config: dict, force: bool = False) -> str | N
             return None
 
     # Step 2: Clean (optional — skip if BioPython unavailable)
-    if not cleaned_path.exists() or force:
+    needs_clean = (
+        not cleaned_path.exists()
+        or cleaned_path.stat().st_size == 0
+        or force
+    )
+    if needs_clean:
         if _detect_biopython():
-            _clean_receptor(pdb_path, cleaned_path, chain)
+            if not _clean_receptor(pdb_path, cleaned_path, chain):
+                # Fall back to the raw PDB if cleaning failed
+                shutil.copy(pdb_path, cleaned_path)
         else:
             # Use raw PDB as-is
             shutil.copy(pdb_path, cleaned_path)
 
     # Step 3: Convert to PDBQT
-    if not pdbqt_path.exists() or force:
+    if not pdbqt_path.exists() or pdbqt_path.stat().st_size == 0 or force:
         if _detect_meeko():
             try:
-                from meeko import PDBQTReceptor
-
-                # Meeko's receptor preparation adds hydrogens and Gasteiger charges
-                success = PDBQTReceptor.write_pdbqt_file(
-                    str(cleaned_path), str(pdbqt_path)
+                from meeko import (
+                    MoleculePreparation,
+                    PDBQTWriterLegacy,
+                    Polymer,
+                    ResidueChemTemplates,
                 )
-                if not success:
+
+                # Meeko 0.7 receptor prep: parse polymer, add hydrogens/charges,
+                # then serialize the rigid receptor to a PDBQT string.
+                chem_templates = ResidueChemTemplates.create_from_defaults()
+                mk_prep = MoleculePreparation()
+                polymer = Polymer.from_pdb_string(
+                    cleaned_path.read_text(encoding="utf-8"),
+                    chem_templates=chem_templates,
+                    mk_prep=mk_prep,
+                    allow_bad_res=True,
+                )
+                polymer.stitch()
+                polymer.parameterize(mk_prep)
+                pdbqt_string, _flex_pdbqt = PDBQTWriterLegacy.write_from_polymer(polymer)
+                if not pdbqt_string:
                     logger.info(f"   ⚠️  Meeko PDBQT conversion failed for {gene_id}")
                     return None
+                pdbqt_path.write_text(pdbqt_string, encoding="utf-8")
             except (ImportError, OSError, RuntimeError, ValueError) as e:
                 logger.info(f"   ⚠️  Meeko receptor prep error ({gene_id}): {e}")
                 return None

@@ -121,6 +121,10 @@ src/med_research/pipeline/*/report.html
 src/med_research/pipeline/*/report_*.html
 src/med_research/pipeline/*/data/*.tmp
 
+# Docking artifacts: cleaned receptors and PDBQT outputs are regenerated per run
+src/med_research/pipeline/virtual_screening/targets/receptors/*_clean.pdb
+src/med_research/pipeline/virtual_screening/targets/receptors/*.pdbqt
+
 # Local tooling output
 .coverage
 coverage.xml
