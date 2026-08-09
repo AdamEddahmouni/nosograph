@@ -1,5 +1,30 @@
 # Changelog
 
+## [Locked dependency environment and docking verification] — 2026-08-08
+
+### Added
+
+- `scripts/lock_verify.py` — pin-by-pin check of the installed environment against `requirements-lock.txt`, plus `--compare-locks` to fail when the runtime and dev lock files disagree on any shared package.
+- `make venv-sync` (syncs `.venv` to the lock files via uv) and `make lock-verify`; `make lock-check` now also fails on lock-to-lock divergence.
+- CI installs `requirements-lock.txt` / `requirements-dev-lock.txt` instead of the loose `requirements.in` ranges and verifies installed packages match the lock on every push. Test matrix narrowed to Python 3.11–3.12 (the locked numpy requires 3.11+).
+- Fast synthetic docking tests for the Meeko 0.7 receptor (`Polymer`) and ligand (`MoleculePreparation`/`PDBQTWriterLegacy`) preparation paths, run in the PR test job; the real-PDB receptor test is marked `network` and stays in the scheduled slow job.
+
+### Changed
+
+- `requirements-dev-lock.txt` is compiled against the runtime lock (`-c requirements-lock.txt`) so the two files cannot silently diverge (fixes the fastapi/starlette version mismatch between them).
+- Fixed docking against Meeko 0.7: receptor prep uses the `Polymer` workflow (`write_pdbqt_file` was removed) and `_CleanSelect` now subclasses BioPython's `Select`; ligand prep handles `write_string`'s 3-tuple return.
+- Job WebSocket handler closes connections after terminal messages and runs Celery reads off the event loop (orphaned-job hang); trials `top_sponsors` now matches the API's list-of-dicts contract.
+- Untracked regenerated module outputs and legacy flat-file caches; docking artifacts (`*_clean.pdb`, `*.pdbqt`) are gitignored.
+
+### Verification
+
+- `python scripts/lock_verify.py` — all 65 locked packages match
+- `make lock-check` — runtime/dev dry-runs fresh; locks agree on all shared packages
+- `python -m pytest tests/ -m "not slow and not integration"` — 1626 passed
+- Slow suite (ML, WebSocket, trials, docking, live APIs) — 64/64 pass on the locked environment
+
+---
+
 ## [Provenance, API hardening, disease-neutral polish] — 2026-08-07
 
 ### Added
