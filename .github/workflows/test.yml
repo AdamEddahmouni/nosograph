@@ -130,7 +130,7 @@ jobs:
 
 
 
-      - name: Verify key packages match lock
+      - name: Verify installed packages match lock
 
         run: |
 
@@ -142,19 +142,43 @@ jobs:
 
           lock = open("requirements-lock.txt", encoding="utf-8").read()
 
-          for pkg in ("meeko", "xgboost", "numpy"):
+          pins = {}
 
-              match = re.search(rf"^{pkg}==([^\s]+)", lock, re.M)
+          for line in lock.splitlines():
 
-              assert match, f"{pkg} is not pinned in requirements-lock.txt"
+              match = re.match(r"^([A-Za-z0-9_.-]+)==([^\s]+)$", line.strip())
 
-              expected = match.group(1)
+              if match:
 
-              installed = importlib.metadata.version(pkg)
+                  pins[match.group(1)] = match.group(2)
 
-              assert installed == expected, f"installed {pkg} {installed} != locked {expected}"
+          assert pins, "no pins found in requirements-lock.txt"
 
-              print(f"{pkg} {installed} matches requirements-lock.txt")
+          missing = []
+
+          mismatched = []
+
+          for pkg, expected in sorted(pins.items()):
+
+              try:
+
+                  installed = importlib.metadata.version(pkg)
+
+              except importlib.metadata.PackageNotFoundError:
+
+                  missing.append(pkg)
+
+                  continue
+
+              if installed != expected:
+
+                  mismatched.append(f"{pkg}: installed {installed}, locked {expected}")
+
+          assert not missing, f"packages not installed: {missing}"
+
+          assert not mismatched, "version mismatches:\n" + "\n".join(mismatched)
+
+          print(f"all {len(pins)} locked packages match")
 
           EOF
 
