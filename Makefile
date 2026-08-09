@@ -1,4 +1,4 @@
-.PHONY: help test test-quiet test-fast test-offline test-unit test-integration test-integration-all test-slow test-cov lint lint-fix check-imports typecheck lock lock-check run-all kg repurpose bio literature docker-build docker-up docker-test clean install
+.PHONY: help test test-quiet test-fast test-offline test-unit test-integration test-integration-all test-slow test-cov lint lint-fix check-imports typecheck lock lock-check lock-verify venv-sync run-all kg repurpose bio literature docker-build docker-up docker-test clean install
 
 help:  ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | \
@@ -90,6 +90,19 @@ lock:  ## Regenerate requirements-lock.txt and requirements-dev-lock.txt
 lock-check:  ## Verify lock files are up to date with .in sources
 	python -m piptools compile --quiet --dry-run --output-file=requirements-lock.txt requirements.in
 	python -m piptools compile --quiet --dry-run --output-file=requirements-dev-lock.txt requirements-dev.in -c requirements-lock.txt
+
+# Path to the venv interpreter (Windows uses Scripts/, Unix uses bin/)
+VENV_PY := $(shell test -f .venv/Scripts/python.exe && echo .venv/Scripts/python.exe || echo .venv/bin/python)
+
+lock-verify:  ## Verify .venv packages match requirements-lock.txt
+	$(VENV_PY) scripts/lock_verify.py
+
+venv-sync:  ## Sync .venv to the locked requirements (install uv: pip install uv)
+	@test -f $(VENV_PY) || { echo "No venv found at $(VENV_PY) - create one first (e.g. uv venv)"; exit 1; }
+	@command -v uv >/dev/null 2>&1 || { echo "uv is required for venv-sync (install with: pip install uv)"; exit 1; }
+	uv pip install --python $(VENV_PY) -r requirements-lock.txt -r requirements-dev-lock.txt
+	uv pip install --python $(VENV_PY) -e .
+	@echo "Venv synced. Run 'make lock-verify' to confirm it matches the lock."
 
 # ── Pipeline ─────────────────────────────────────────────────────────────
 
