@@ -35,7 +35,7 @@
 
 ## Requirements and installation
 
-- Python 3.10, 3.11, or 3.12.
+- Python 3.11 or 3.12 (the locked numpy version requires 3.11+).
 - A virtual environment is recommended.
 - Redis and a Celery worker are required for asynchronous dashboard jobs. Pure Python tests and most CLI commands do not require Redis.
 - Optional extras provide ML, cheminformatics, NLP, semantic-search, and development tooling.
@@ -51,11 +51,19 @@ python -m pip install --upgrade pip
 python -m pip install -e ".[all]"
 ```
 
-The equivalent requirements-file setup is:
+The equivalent requirements-file setup — and the only one CI uses — installs the compiled lock files, not the loose `requirements.in` ranges:
 
 ```bash
-python -m pip install -r requirements.txt -r requirements-dev.txt
+python -m pip install -r requirements-lock.txt -r requirements-dev-lock.txt
 python -m pip install -e .
+```
+
+Keep a local venv pinned exactly to the locked environment:
+
+```bash
+make venv-sync    # syncs .venv to the lock files via uv
+make lock-verify  # fails if any installed package differs from requirements-lock.txt
+make lock-check   # fails if the lock files are stale or disagree with each other
 ```
 
 ## Unified CLI
@@ -212,7 +220,7 @@ python -m compileall -q src/med_research
 git diff --check
 ```
 
-CI runs lint, lock-check, the offline suite with an **80% coverage gate**, integration tests, and disease validation on Python 3.10–3.12. Slow/live tests run only on scheduled or manually dispatched workflows.
+CI runs lint, lock-check, the offline suite with an **80% coverage gate**, integration tests, and disease validation on Python 3.11–3.12, and verifies the installed packages match `requirements-lock.txt` on every push. Slow/live tests run only on scheduled or manually dispatched workflows.
 
 ## Docker
 

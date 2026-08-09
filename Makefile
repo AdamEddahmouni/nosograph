@@ -83,6 +83,12 @@ typecheck:  ## Run mypy on the expanded type-check scope
 		src/med_research/web/routers/jobs.py \
 		src/med_research/web/services/registry_service.py
 
+# ── Locked dependencies ────────────────────────────────────────────────────
+# The dev lock is compiled against the runtime lock (-c requirements-lock.txt)
+# so the two files can never disagree. lock-check enforces freshness and
+# mutual consistency; lock-verify compares the installed venv against the
+# runtime lock; venv-sync brings a local .venv back onto the lock via uv.
+
 lock:  ## Regenerate requirements-lock.txt and requirements-dev-lock.txt
 	python -m piptools compile --output-file=requirements-lock.txt requirements.in
 	python -m piptools compile --output-file=requirements-dev-lock.txt requirements-dev.in -c requirements-lock.txt
