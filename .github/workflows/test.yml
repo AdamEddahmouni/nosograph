@@ -130,7 +130,7 @@ jobs:
 
 
 
-      - name: Verify meeko matches lock
+      - name: Verify key packages match lock
 
         run: |
 
@@ -142,17 +142,19 @@ jobs:
 
           lock = open("requirements-lock.txt", encoding="utf-8").read()
 
-          match = re.search(r"^meeko==([^\s]+)", lock, re.M)
+          for pkg in ("meeko", "xgboost", "numpy"):
 
-          assert match, "meeko is not pinned in requirements-lock.txt"
+              match = re.search(rf"^{pkg}==([^\s]+)", lock, re.M)
 
-          expected = match.group(1)
+              assert match, f"{pkg} is not pinned in requirements-lock.txt"
 
-          installed = importlib.metadata.version("meeko")
+              expected = match.group(1)
 
-          assert installed == expected, f"installed meeko {installed} != locked {expected}"
+              installed = importlib.metadata.version(pkg)
 
-          print(f"meeko {installed} matches requirements-lock.txt")
+              assert installed == expected, f"installed {pkg} {installed} != locked {expected}"
+
+              print(f"{pkg} {installed} matches requirements-lock.txt")
 
           EOF
 
