@@ -1,5 +1,32 @@
 # Changelog
 
+## [Typed result contracts and pipeline gateway] — 2026-08-10
+
+### Added
+
+- `src/med_research/pipeline/results.py` — TypedDict result contracts for every engine seam, with `validate_result_contract()` (Pydantic `TypeAdapter`) enforced at the dispatch boundary and `result_contract_name()`/`result_contract_schema()` feeding catalog metadata.
+- `src/med_research/pipeline/gateway.py` — `PipelineGateway` facade (`execute`, `coverage`, `provenance`, `report`) as the single typed entry point shared by the CLI, web services, and Celery.
+- The registry now owns module aliases, request-option schemas, and Celery task routes, so the catalog drives the generic CLI and web job APIs from one source of truth.
+- `tests/test_pipeline_contracts.py` — registry-wide contract tests: typed dispatch, adapter call discipline, catalog metadata, Workspace request-schema alignment, and per-route response-model coverage.
+- `tests/test_cli_progress.py` — every engine `main()` must thread the shared `cli_progress` callback.
+
+### Changed
+
+- `PipelineRunResult` and `BasePipelineModule` are now generic over result types; all adapters declare `BasePipelineModule[ResultT]` with typed `run()`/`report()` signatures.
+- `execute_module()` validates raw results against the module contract before CLI, web, Celery, or report consumers see them; contract violations surface as typed failures instead of silent drift.
+- CLI and web services dispatch through `pipeline_gateway`; generic CLI commands generate argument converters from catalog request schemas.
+- mypy typecheck scope expanded to 57 files; newly surfaced errors fixed (RDKit compiled-module attributes, `chromadb` fallback assignment).
+- Integration HTTP fixtures aligned to real engine output shapes (`gwas_results`/crossref as dicts).
+
+### Verification
+
+- `python -m pytest tests/test_pipeline_contracts.py tests/test_cli_progress.py -q` — 73 passed
+- `python -m pytest tests/ -m "not slow and not integration"` — 1803 passed, 1 skipped
+- `python -m pytest tests/ -m "integration and not slow"` — 59 passed, 24 skipped
+- `make typecheck` — no issues in 57 source files
+
+---
+
 ## [Locked dependency environment and docking verification] — 2026-08-08
 
 ### Added
