@@ -11,10 +11,11 @@ from med_research.pipeline.adapter_options import AdapterOptions
 from med_research.pipeline.base import BasePipelineModule
 from med_research.pipeline.provenance import build_provenance
 from med_research.pipeline.registry import register_module
+from med_research.pipeline.results import ExpressionResults
 
 
 @register_module
-class GeneExpressionModule(BasePipelineModule):
+class GeneExpressionModule(BasePipelineModule[ExpressionResults]):
     """Adapter around ``gene_expression.correlator`` scoring and reporting."""
 
     _COVERAGE_MODULE = "expression"
@@ -30,7 +31,7 @@ class GeneExpressionModule(BasePipelineModule):
     def coverage_inputs(self) -> tuple[str, ...]:
         return ("genes", "drugs")
 
-    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> list:
+    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> ExpressionResults:
         from med_research.pipeline.gene_expression.correlator import (
             compute_all_correlations,
         )
@@ -46,7 +47,7 @@ class GeneExpressionModule(BasePipelineModule):
 
     def report(
         self,
-        results: list,
+        results: ExpressionResults,
         disease_id: str,
         *,
         provenance: dict | None = None,

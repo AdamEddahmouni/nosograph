@@ -11,10 +11,11 @@ from med_research.pipeline.adapter_options import AdapterOptions
 from med_research.pipeline.base import BasePipelineModule
 from med_research.pipeline.provenance import build_provenance
 from med_research.pipeline.registry import register_module
+from med_research.pipeline.results import CarTResults
 
 
 @register_module
-class CarTPredictorModule(BasePipelineModule):
+class CarTPredictorModule(BasePipelineModule[CarTResults]):
     """Adapter around CAR-T gene suitability scoring and HTML reports."""
 
     _COVERAGE_MODULE = "car_t"
@@ -30,7 +31,7 @@ class CarTPredictorModule(BasePipelineModule):
     def coverage_inputs(self) -> tuple[str, ...]:
         return ("genes", "car_t_scores")
 
-    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> list:
+    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> CarTResults:
         from med_research.pipeline.car_t_predictor.predictor import compute_all_scores
 
         return compute_all_scores(
@@ -40,7 +41,7 @@ class CarTPredictorModule(BasePipelineModule):
 
     def report(
         self,
-        results: list,
+        results: CarTResults,
         disease_id: str,
         *,
         provenance: dict | None = None,

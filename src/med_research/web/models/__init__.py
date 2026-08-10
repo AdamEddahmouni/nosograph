@@ -69,6 +69,47 @@ class DiseasesResponse(BaseModel):
     diseases: list[DiseaseInfo]
 
 
+class PipelineModuleCatalogEntry(BaseModel):
+    """OpenAPI shape for registry-generated module metadata."""
+
+    module_id: str
+    aliases: list[str] = Field(default_factory=list)
+    depends_on: list[str] = Field(default_factory=list)
+    coverage_inputs: list[str] = Field(default_factory=list)
+    coverage_module: str
+    result_contract: str | None = None
+    response_schema: dict[str, Any] = Field(default_factory=dict)
+    request_schema: dict[str, Any] = Field(default_factory=dict)
+    request_validators: list[dict[str, Any]] = Field(default_factory=list)
+    cli_command: str
+    cli_help: str
+    celery_task: str
+    job_aliases: list[str] = Field(default_factory=list)
+    persisted_request_schema_version: str | None = Field(
+        default=None,
+        description="Version of the persisted request schema, when this module has run storage.",
+    )
+    persisted_result_schema_version: str | None = Field(
+        default=None,
+        description="Version of the persisted result schema, when this module has run storage.",
+    )
+    persisted_request_schema: dict[str, Any] | None = Field(
+        default=None,
+        description="JSON Schema for the persisted request payload.",
+    )
+    persisted_result_schema: dict[str, Any] | None = Field(
+        default=None,
+        description="JSON Schema for the persisted result payload.",
+    )
+    coverage: dict[str, Any] = Field(default_factory=dict)
+
+
+class PipelineModulesResponse(BaseModel):
+    count: int
+    disease_id: str
+    modules: list[PipelineModuleCatalogEntry] = Field(default_factory=list)
+
+
 # ── Disease Admin (backups / prune / restore) ────────────────────────────
 
 from med_research.web.models.disease_admin import (  # noqa: E402  (after local defs)

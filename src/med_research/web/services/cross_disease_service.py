@@ -1,10 +1,12 @@
 """Service layer for cross-disease analysis operations."""
 
+from typing import Any, cast
+
 from med_research.web.dependencies import safe_serialize  # noqa: F401 — used by callers
 from med_research.web.services.registry_service import dispatch_sync_module
 
 
-def run_cross_disease_analysis(disease_id: str = None):
+def run_cross_disease_analysis(disease_id: str | None = None) -> dict[str, Any]:
     """Run cross-disease analysis via the cross_disease registry adapter."""
     results = dispatch_sync_module("cross_disease", disease_id or "sle")
 
@@ -22,7 +24,7 @@ def run_cross_disease_analysis(disease_id: str = None):
     }
 
 
-def run_comparative_modules(top_synergy: int = 5):
+def run_comparative_modules(top_synergy: int = 5) -> dict[str, Any]:
     """Run biomarker/expression/synergy for every disease, stacked for comparison."""
     results = dispatch_sync_module(
         "cross_disease",
@@ -30,4 +32,4 @@ def run_comparative_modules(top_synergy: int = 5):
         comparative=True,
         top_synergy=top_synergy,
     )
-    return safe_serialize(results)
+    return cast(dict[str, Any], safe_serialize(results))

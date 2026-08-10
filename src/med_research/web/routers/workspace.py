@@ -2,6 +2,7 @@
 
 import os
 import re
+from typing import Any
 
 from fastapi import APIRouter, HTTPException, Query, Request
 from fastapi.responses import RedirectResponse, StreamingResponse
@@ -49,7 +50,7 @@ def list_workspace_alerts(
     unread_only: bool = Query(default=False),
     limit: int = Query(default=25, ge=1, le=100),
     offset: int = Query(default=0, ge=0),
-):
+) -> Any:
     store = _store()
     researcher_id = get_researcher_id(request)
     store.refresh_alerts(researcher_id)
@@ -61,14 +62,14 @@ def list_workspace_alerts(
 
 
 @router.get("/notifications", response_model=WorkspaceNotificationSettings)
-def get_workspace_notification_settings(request: Request):
+def get_workspace_notification_settings(request: Request) -> Any:
     return _store().get_notification_settings(get_researcher_id(request))
 
 
 @router.put("/notifications", response_model=WorkspaceNotificationSettings)
 def save_workspace_notification_settings(
     request: Request, payload: WorkspaceNotificationSettingsRequest
-):
+) -> Any:
     if payload.slack_webhook_url and not _slack_webhook_is_safe(payload.slack_webhook_url):
         raise HTTPException(
             status_code=422,
@@ -100,7 +101,7 @@ def save_workspace_notification_settings(
 
 
 @router.get("/digest", response_model=WorkspaceWeeklyDigestResponse)
-def preview_workspace_digest(request: Request):
+def preview_workspace_digest(request: Request) -> Any:
     store = _store()
     researcher_id = get_researcher_id(request)
     store.refresh_alerts(researcher_id)
@@ -111,7 +112,7 @@ def preview_workspace_digest(request: Request):
 
 
 @router.post("/digest/send", response_model=WorkspaceWeeklyDigestResponse)
-def send_workspace_digest(request: Request, force: bool = Query(default=False)):
+def send_workspace_digest(request: Request, force: bool = Query(default=False)) -> Any:
     store = _store()
     researcher_id = get_researcher_id(request)
     store.refresh_alerts(researcher_id)
@@ -124,14 +125,14 @@ def send_workspace_digest(request: Request, force: bool = Query(default=False)):
 @router.get("/digest/delivery-history")
 def workspace_digest_delivery_history(
     request: Request, limit: int = Query(default=50, ge=1, le=200)
-):
+) -> dict[str, Any]:
     return {
         "deliveries": _store().list_digest_deliveries(get_researcher_id(request), limit)
     }
 
 
 @router.get("/digest/review")
-def open_workspace_digest_review(request: Request, token: str):
+def open_workspace_digest_review(request: Request, token: str) -> RedirectResponse:
     claims = verify_review_token(token)
     if claims is None:
         raise HTTPException(status_code=401, detail="Invalid or expired workspace review link")
@@ -153,7 +154,7 @@ def open_workspace_digest_review(request: Request, token: str):
 
 
 @router.post("/alerts/{alert_id}/read")
-def mark_workspace_alert_read(request: Request, alert_id: str):
+def mark_workspace_alert_read(request: Request, alert_id: str) -> dict[str, Any]:
     researcher_id = get_researcher_id(request)
     if not _store().mark_alert_read(alert_id, researcher_id):
         raise HTTPException(status_code=404, detail=f"Workspace alert not found: {alert_id}")
@@ -163,7 +164,7 @@ def mark_workspace_alert_read(request: Request, alert_id: str):
 @router.get("/runs", response_model=WorkspaceRunListResponse)
 def list_workspace_runs(
     limit: int = Query(default=25, ge=1, le=200), offset: int = Query(default=0, ge=0)
-):
+) -> dict[str, Any]:
     return {
         "runs": _store().list_runs(limit=limit, offset=offset),
         "limit": limit,
@@ -172,7 +173,7 @@ def list_workspace_runs(
 
 
 @router.get("/runs/{run_id}", response_model=WorkspaceRunResponse)
-def get_workspace_run(run_id: str):
+def get_workspace_run(run_id: str) -> Any:
     result = _store().get_run(run_id)
     if result is None:
         raise HTTPException(status_code=404, detail=f"Workspace run not found: {run_id}")
@@ -180,14 +181,14 @@ def get_workspace_run(run_id: str):
 
 
 @router.delete("/runs/{run_id}")
-def delete_workspace_run(run_id: str):
+def delete_workspace_run(run_id: str) -> dict[str, Any]:
     if not _store().delete_run(run_id):
         raise HTTPException(status_code=404, detail=f"Workspace run not found: {run_id}")
     return {"deleted": True, "run_id": run_id}
 
 
 @router.get("/runs/{run_id}/reviews", response_model=WorkspaceReviewListResponse)
-def list_candidate_reviews(request: Request, run_id: str):
+def list_candidate_reviews(request: Request, run_id: str) -> dict[str, Any]:
     store = _store()
     if store.get_run(run_id) is None:
         raise HTTPException(status_code=404, detail=f"Workspace run not found: {run_id}")
@@ -196,7 +197,7 @@ def list_candidate_reviews(request: Request, run_id: str):
 
 
 @router.get("/runs/{run_id}/review-events")
-def list_candidate_review_events(request: Request, run_id: str):
+def list_candidate_review_events(request: Request, run_id: str) -> dict[str, Any]:
     store = _store()
     if store.get_run(run_id) is None:
         raise HTTPException(status_code=404, detail=f"Workspace run not found: {run_id}")
@@ -205,7 +206,7 @@ def list_candidate_review_events(request: Request, run_id: str):
 
 
 @router.get("/runs/{run_id}/graph", response_model=WorkspaceEvidenceGraphResponse)
-def workspace_evidence_graph(request: Request, run_id: str):
+def workspace_evidence_graph(request: Request, run_id: str) -> Any:
     store = _store()
     run = store.get_run(run_id)
     if run is None:
@@ -219,7 +220,7 @@ def workspace_evidence_graph(request: Request, run_id: str):
 @router.put("/runs/{run_id}/reviews", response_model=WorkspaceCandidateReview)
 def save_candidate_review(
     request: Request, run_id: str, review: WorkspaceCandidateReviewRequest
-):
+) -> Any:
     store = _store()
     run = store.get_run(run_id)
     if run is None:
@@ -256,14 +257,14 @@ def candidate_history(
     candidate_id: str = Query(..., min_length=1, max_length=200),
     candidate_type: str = Query(..., pattern="^(drug|target)$"),
     disease_id: str | None = Query(default=None, min_length=1, max_length=50),
-):
+) -> Any:
     return _store().candidate_history(
         candidate_id, candidate_type, disease_id, get_researcher_id(request)
     )
 
 
 @router.get("/runs/{run_id}/review-bundle")
-def download_review_bundle(request: Request, run_id: str):
+def download_review_bundle(request: Request, run_id: str) -> StreamingResponse:
     store = _store()
     run = store.get_run(run_id)
     if run is None:
@@ -290,12 +291,12 @@ def download_review_bundle(request: Request, run_id: str):
 def workspace_trends(
     run_ids: list[str] | None = None,
     limit: int = _TRENDS_LIMIT,
-):
+) -> Any:
     return _store().trends(limit=limit, run_ids=run_ids)
 
 
 @router.get("/compare", response_model=WorkspaceCompareResponse)
-def compare_workspace_runs(request: Request, left: str, right: str):
+def compare_workspace_runs(request: Request, left: str, right: str) -> Any:
     try:
         return _store().compare_runs(left, right, get_researcher_id(request))
     except KeyError as exc:

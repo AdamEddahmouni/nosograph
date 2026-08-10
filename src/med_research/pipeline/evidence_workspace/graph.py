@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from typing import Any, cast
+
 import networkx as nx
 
 from .schemas import GraphExplanation, RankedCandidate
@@ -59,7 +61,10 @@ def build_graph_explanations(
         relationships = []
         labels = []
         for source, target in zip(path[:-1], path[1:], strict=True):
-            data = graph.get_edge_data(source, target) or graph.get_edge_data(target, source) or {}
+            data = cast(
+                dict[str, Any],
+                graph.get_edge_data(source, target) or graph.get_edge_data(target, source) or {},
+            )
             if isinstance(data, dict) and "type" not in data:
                 data = next(iter(data.values()), {})
             relationships.append(str(data.get("type", "RELATED_TO")))

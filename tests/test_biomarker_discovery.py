@@ -6,8 +6,6 @@ import json
 import sys
 from pathlib import Path
 
-import pytest
-
 sys.path.insert(0, str(Path(__file__).parent.parent))  # noqa: I001
 
 from med_research.pipeline.biomarker_discovery.discover import (
@@ -236,7 +234,6 @@ def test_escape_html_biomarker():
     assert escape_html(None) == ""
 
 
-@pytest.mark.slow
 def test_generate_html_report():
     from med_research.pipeline.biomarker_discovery.report import generate_html_report
 
@@ -250,7 +247,6 @@ def test_generate_html_report():
 # ── API Service ───────────────────────────────────────────────────────────
 
 
-@pytest.mark.slow
 def test_run_biomarker_analysis_service():
     from med_research.web.services.biomarker_service import run_biomarker_analysis
 
@@ -263,7 +259,6 @@ def test_run_biomarker_analysis_service():
 # ── CLI Integration ───────────────────────────────────────────────────────
 
 
-@pytest.mark.slow
 def test_biomarker_cli_help():
     from tests.cli_helpers import cli_help_output
 

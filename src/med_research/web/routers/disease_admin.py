@@ -14,6 +14,8 @@ event loop. Both mutation endpoints are auto-protected by AuthMiddleware when
 an API key is configured.
 """
 
+from typing import Any
+
 from fastapi import APIRouter, HTTPException
 
 from med_research.web.models.disease_admin import (
@@ -30,7 +32,7 @@ router = APIRouter(prefix="/api/admin/diseases", tags=["Disease Admin"])
 
 
 @router.get("/{disease_id}/backups", response_model=BackupsResponse)
-def list_backups(disease_id: str):
+def list_backups(disease_id: str) -> dict[str, Any]:
     """List the pruned backups for a disease (newest first)."""
     try:
         return disease_admin_service.list_disease_backups(disease_id)
@@ -39,7 +41,7 @@ def list_backups(disease_id: str):
 
 
 @router.post("/{disease_id}/prune", response_model=PruneResponse)
-def prune_disease(disease_id: str, req: PruneRequest):
+def prune_disease(disease_id: str, req: PruneRequest) -> dict[str, Any]:
     """Refresh sources and drop entities no longer reported.
 
     Default (``apply: false``) is a preview: merge + prune candidates are
@@ -57,7 +59,7 @@ def prune_disease(disease_id: str, req: PruneRequest):
 
 
 @router.post("/{disease_id}/restore", response_model=RestoreResponse)
-def restore_disease(disease_id: str, req: RestoreRequest):
+def restore_disease(disease_id: str, req: RestoreRequest) -> dict[str, Any]:
     """Re-merge a pruned backup back into the module.
 
     ``backup`` accepts a full path or a bare filename from the module's
@@ -74,7 +76,7 @@ def restore_disease(disease_id: str, req: RestoreRequest):
 
 
 @router.get("/{disease_id}/audit", response_model=AuditResponse)
-def list_audit(disease_id: str, limit: int = 20):
+def list_audit(disease_id: str, limit: int = 20) -> dict[str, Any]:
     """Return a module's recent prune/restore activity (newest first).
 
     ``limit`` clamps to the last N actions (1–500). The log is written by the

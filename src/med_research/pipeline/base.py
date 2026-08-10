@@ -12,25 +12,27 @@ from __future__ import annotations
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any
+from typing import Any, Generic, TypeVar
 
 from typing_extensions import Unpack
 
 from med_research.pipeline.adapter_options import AdapterOptions
 
+ResultT = TypeVar("ResultT")
+
 
 @dataclass
-class PipelineRunResult:
+class PipelineRunResult(Generic[ResultT]):
     """Normalized outcome from a registry-backed module run."""
 
     success: bool
-    data: Any
+    data: ResultT | None
     report_path: Path | None = None
     provenance: dict[str, Any] | None = None
     errors: list[str] = field(default_factory=list)
 
 
-class BasePipelineModule(ABC):
+class BasePipelineModule(ABC, Generic[ResultT]):
     """Minimal contract shared by disease-aware analysis modules."""
 
     @property
@@ -43,13 +45,13 @@ class BasePipelineModule(ABC):
         """Curated input keys passed to ``module_coverage()``."""
 
     @abstractmethod
-    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> Any:
-        """Execute the module for a disease and return raw results."""
+    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> ResultT:
+        """Execute the module for a disease and return typed raw results."""
 
     @abstractmethod
     def report(
         self,
-        results: Any,
+        results: ResultT,
         disease_id: str,
         *,
         provenance: dict[str, Any] | None = None,

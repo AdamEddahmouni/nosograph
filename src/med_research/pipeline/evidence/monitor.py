@@ -22,7 +22,9 @@ import json
 import sys
 from datetime import datetime
 from pathlib import Path
+from typing import Any, cast
 
+from med_research.pipeline.progress import StandardProgress, _tick, cli_progress
 from med_research.rate_limiter import rate_limited_sleep
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
@@ -34,7 +36,7 @@ from med_research.pipeline.knowledge_graph.config import load_genes as config_lo
 
 logger = logging.getLogger(__name__)
 if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # type: ignore[union-attr]
 
 DATA_DIR = Path(__file__).parent / "data"
 SNAPSHOTS_DIR = DATA_DIR / "snapshots"
@@ -115,10 +117,10 @@ def _load_tracked_entities() -> tuple:
 
 def load_json(path: Path) -> dict:
     with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
+        return cast(dict, json.load(f))
 
 
-def save_json(path: Path, data):
+def save_json(path: Path, data: Any) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(data, indent=2), encoding="utf-8")
 
@@ -136,9 +138,10 @@ def _hash_results(results: list) -> str:
 
 
 def take_snapshot(
-    sources: list = None,
+    sources: list | None = None,
     max_per_query: int = 10,
     disease_id: str = "sle",
+    progress_callback: StandardProgress | None = None,
 ) -> dict:
     """Take a new evidence snapshot for all tracked entities.
 
@@ -156,6 +159,7 @@ def take_snapshot(
     coverage = module_coverage(disease_id, "evidence_monitor", ("genes", "pubmed_queries"))
     last_coverage = coverage
     if not coverage.is_runnable:
+        _tick(progress_callback, "snapshot blocked", 1, 1)
         return {
             "snapshot_id": "",
             "timestamp": datetime.now().isoformat(),
@@ -186,6 +190,7 @@ def take_snapshot(
     # Snapshot tracked queries
     for i, query in enumerate(tracked_queries, 1):
         logger.info(f"  [{i}/{len(tracked_queries)}] Query: \"{query}\"")
+        _tick(progress_callback, "snapshotting queries", i, len(tracked_queries))
         evidence = gather_evidence(
             query, sources=sources, max_per_source=max_per_query, use_cache=True,
         )
@@ -198,9 +203,10 @@ def take_snapshot(
     # Snapshot top drugs
     logger.info(f"\n  Snapshotting {len(drugs)} drugs...")
     drug_data = {}
-    for drug in drugs[:25]:  # Cap at 25 to avoid excessive API calls
+    for i, drug in enumerate(drugs[:25], 1):  # Cap at 25 to avoid excessive API calls
         query = f"{drug} {entity_suffix}"
         logger.info(f"    💊 {drug}")
+        _tick(progress_callback, "snapshotting drugs", i, len(drugs[:25]))
         evidence = gather_evidence(
             query, sources=["pubmed", "clinical_trials"],
             max_per_source=5, use_cache=True,
@@ -214,9 +220,10 @@ def take_snapshot(
     # Snapshot top genes
     logger.info(f"\n  Snapshotting {len(genes)} genes...")
     gene_data = {}
-    for gene in genes[:25]:
+    for i, gene in enumerate(genes[:25], 1):
         query = f"{gene} {entity_suffix}"
         logger.info(f"    🧬 {gene}")
+        _tick(progress_callback, "snapshotting genes", i, len(genes[:25]))
         evidence = gather_evidence(
             query, sources=["pubmed", "clinical_trials"],
             max_per_source=5, use_cache=True,
@@ -249,6 +256,7 @@ def take_snapshot(
     logger.info(f"\n✅ Snapshot saved: {path.name}")
     logger.info(f"   Queries: {len(queries_data)} · Drugs: {len(drug_data)} · Genes: {len(gene_data)}")
 
+    _tick(progress_callback, "snapshot complete", 1, 1)
     return snapshot
 
 
@@ -266,7 +274,7 @@ def compare_snapshots(prev: dict, curr: dict) -> dict:
         Diff dict with changes and alerts.
     """
     alerts = []
-    changes = {"new_queries": [], "changed_queries": [], "new_drugs": [],
+    changes: dict[str, Any] = {"new_queries": [], "changed_queries": [], "new_drugs": [],
                "changed_drugs": [], "new_genes": [], "changed_genes": []}
 
     prev_time = datetime.fromisoformat(prev["timestamp"])
@@ -431,7 +439,7 @@ def run_diff(disease_id: str = "sle") -> dict:
 # ── CLI ──────────────────────────────────────────────────────────────────
 
 
-def print_diff_summary(diff: dict):
+def print_diff_summary(diff: dict) -> None:
     """Print a formatted diff summary."""
     if diff.get("status") == "baseline":
         logger.info("\n✅ Baseline snapshot created. No diff to show.")
@@ -506,9 +514,9 @@ def main():
         if len(snapshots) < 2:
             logger.warning("⚠️  Need at least 2 snapshots. Taking baseline + new snapshot.")
             logger.info("   This may take a few minutes...")
-            prev = take_snapshot(sources=sources, max_per_query=args.max)
+            prev = take_snapshot(sources=sources, max_per_query=args.max, progress_callback=cli_progress)
             rate_limited_sleep(2)
-            curr = take_snapshot(sources=sources, max_per_query=args.max)
+            curr = take_snapshot(sources=sources, max_per_query=args.max, progress_callback=cli_progress)
         else:
             prev, curr = snapshots
 
@@ -531,12 +539,12 @@ def main():
 
     if args.snapshot:
         sources = [s.strip() for s in args.sources.split(",")]
-        take_snapshot(sources=sources, max_per_query=args.max)
+        take_snapshot(sources=sources, max_per_query=args.max, progress_callback=cli_progress)
         return
 
     # Default: take snapshot
     sources = [s.strip() for s in args.sources.split(",")]
-    take_snapshot(sources=sources, max_per_query=args.max)
+    take_snapshot(sources=sources, max_per_query=args.max, progress_callback=cli_progress)
 
 
 if __name__ == "__main__":

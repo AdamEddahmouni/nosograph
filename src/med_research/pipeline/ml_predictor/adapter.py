@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Any
+from typing import Any, cast
 
 from typing_extensions import Unpack
 
@@ -11,10 +11,11 @@ from med_research.pipeline.adapter_options import AdapterOptions
 from med_research.pipeline.base import BasePipelineModule
 from med_research.pipeline.provenance import build_provenance
 from med_research.pipeline.registry import register_module
+from med_research.pipeline.results import MlPredictionResult
 
 
 @register_module
-class MlPredictorModule(BasePipelineModule):
+class MlPredictorModule(BasePipelineModule[MlPredictionResult]):
     """Adapter around ``ml_predictor.predictor`` training and reporting."""
 
     _COVERAGE_MODULE = "ml_predictor"
@@ -30,7 +31,7 @@ class MlPredictorModule(BasePipelineModule):
     def coverage_inputs(self) -> tuple[str, ...]:
         return ("genes", "relationships")
 
-    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
+    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> MlPredictionResult:
         from med_research.diseases.coverage import module_coverage
         from med_research.pipeline.knowledge_graph.builder import build_graph
         from med_research.pipeline.ml_predictor.predictor import train_and_predict
@@ -50,7 +51,7 @@ class MlPredictorModule(BasePipelineModule):
 
     def report(
         self,
-        results: dict,
+        results: MlPredictionResult,
         disease_id: str,
         *,
         provenance: dict | None = None,
@@ -58,7 +59,7 @@ class MlPredictorModule(BasePipelineModule):
         from med_research.pipeline.ml_predictor.report import generate_ml_report
 
         report_path = generate_ml_report(
-            results,
+            cast(dict, results),
             disease_id=disease_id,
             provenance=provenance,
         )

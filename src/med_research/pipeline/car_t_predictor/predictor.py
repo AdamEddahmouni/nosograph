@@ -23,17 +23,19 @@ import json
 import logging
 import sys
 from pathlib import Path
+from typing import cast
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # type: ignore[union-attr]
 
 from med_research.cache import disease_output_path, write_json_atomic
 from med_research.pipeline.knowledge_graph.config import (
     load_genes as config_load_genes,  # noqa: E402
 )
-from med_research.pipeline.progress import StandardProgress, _tick
+from med_research.pipeline.progress import StandardProgress, _tick, cli_progress
+from med_research.pipeline.results import CarTGeneScore
 
 DATA_DIR = Path(__file__).parent / "data"
 
@@ -43,7 +45,7 @@ last_coverage = None
 
 def load_json(path: Path) -> dict:
     with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
+        return cast(dict, json.load(f))
 
 
 def load_genes(disease_id: str = "sle") -> dict:
@@ -224,7 +226,7 @@ def load_config_scoring(disease_id: str = "sle") -> dict:
     has_dimension_keys = any(isinstance(v, dict) and v for v in dim_overrides.values())
 
     # Category-keyed entries: derive per-gene dimension scores.
-    derived = {dim: {} for dim in _DIMENSION_KEYS}
+    derived: dict[str, dict[str, float]] = {dim: {} for dim in _DIMENSION_KEYS}
     for category, gene_scores in config.items():
         if category in _DIMENSION_KEYS.values() or not isinstance(gene_scores, dict):
             continue
@@ -264,7 +266,7 @@ def score_gene(
     gene: dict,
     scoring: dict | None = None,
     disease_id: str = "sle",
-) -> dict:
+) -> CarTGeneScore:
     """Score a single gene for CAR-T therapy suitability.
 
     Args:
@@ -350,7 +352,7 @@ def _recommendation(score: float) -> str:
 def compute_all_scores(
     progress_callback: StandardProgress | None = None,
     disease_id: str = "sle",
-) -> list:
+) -> list[CarTGeneScore]:
     """Score all genes for CAR-T suitability.
 
     Args:
@@ -399,7 +401,7 @@ def compute_all_scores(
 # ── CLI ──────────────────────────────────────────────────────────────────
 
 
-def analyze(results: list):
+def analyze(results: list) -> None:
     """Print statistical summary."""
     logger.info("\n" + "=" * 75)
     logger.info("🔬 CAR-T RESPONSE PREDICTOR — Gene-Level Analysis")
@@ -410,7 +412,7 @@ def analyze(results: list):
     logger.info(f"  Score range: {min(scores):.2f} - {max(scores):.2f}")
     logger.info(f"  Mean score: {sum(scores)/len(scores):.2f}")
 
-    tier_counts = {}
+    tier_counts: dict[str, int] = {}
     for r in results:
         tier_counts[r["tier"]] = tier_counts.get(r["tier"], 0) + 1
     logger.info("\n  Distribution by tier:")
@@ -421,7 +423,7 @@ def analyze(results: list):
         logger.info(f"    {label}: {count} genes")
 
 
-def print_top_genes(results: list, top_n: int = 15):
+def print_top_genes(results: list, top_n: int = 15) -> None:
     """Print the top N genes by CAR-T suitability."""
     logger.info("\n" + "=" * 75)
     logger.info(f"🎯 TOP {top_n} GENES FOR CD19 CAR-T SUITABILITY")
@@ -450,7 +452,7 @@ def main():
     parser.add_argument("--export-html", action="store_true", help="Generate HTML report")
     args = parser.parse_args()
 
-    results = compute_all_scores(disease_id=args.disease)
+    results = compute_all_scores(disease_id=args.disease, progress_callback=cli_progress)
     analyze(results)
     print_top_genes(results, args.top)
 

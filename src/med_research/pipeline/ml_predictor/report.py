@@ -11,6 +11,7 @@ import base64
 import io
 from datetime import datetime
 from pathlib import Path
+from typing import Any
 
 from med_research.pipeline.reporting import disease_context, render_report
 
@@ -22,7 +23,7 @@ try:
     MPL_AVAILABLE = True
 except ImportError:
     MPL_AVAILABLE = False
-    np = None
+    np: Any = None  # type: ignore[no-redef]
 
 
 def generate_ml_report(
@@ -161,7 +162,7 @@ def _escape(text: str) -> str:
     return escape_html(text)
 
 
-def escape_html(text) -> str:
+def escape_html(text: Any) -> str:
     """Escape HTML special characters."""
     if not text:
         return ""

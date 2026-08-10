@@ -5,6 +5,7 @@ from __future__ import annotations
 import html
 import json
 from pathlib import Path
+from typing import Any
 from urllib.parse import urlsplit
 
 from med_research.pipeline.reporting import provenance_footer_html
@@ -32,7 +33,7 @@ def _provenance_html(dossier: EvidenceDossier) -> str:
     return provenance_footer_html(provenance)
 
 
-def _ranking_rows(rankings) -> str:
+def _ranking_rows(rankings: list[Any]) -> str:
     rows = [
         "<table><tr><th>Candidate</th><th>Score</th><th>Confidence</th><th>Evidence quality</th><th>Explanation</th></tr>"
     ]

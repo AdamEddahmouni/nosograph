@@ -23,6 +23,7 @@ import json
 import sys
 from collections import defaultdict
 from pathlib import Path
+from typing import Any, cast
 
 import networkx as nx
 
@@ -30,14 +31,17 @@ import networkx as nx
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    _stdout = sys.stdout
+    if hasattr(_stdout, "reconfigure"):
+        _stdout.reconfigure(encoding="utf-8", errors="replace")
 
 import logging
 
 from med_research.pipeline.knowledge_graph.config import load_drugs as config_load_drugs
 from med_research.pipeline.knowledge_graph.config import load_genes as config_load_genes
 from med_research.pipeline.knowledge_graph.config import load_pathways as config_load_pathways
-from med_research.pipeline.progress import StandardProgress, _tick
+from med_research.pipeline.progress import StandardProgress, _tick, cli_progress
+from med_research.pipeline.results import RepurposingCandidate, UntargetedGene
 
 DATA_DIR = Path(__file__).parent / "data"
 
@@ -47,34 +51,34 @@ last_coverage = None
 
 def load_json(path: Path) -> dict:
     with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
+        return cast(dict, json.load(f))
 
 
-def load_knowledge_graph(disease_id: str = "sle"):
+def load_knowledge_graph(disease_id: str = "sle") -> nx.MultiDiGraph:
     """Load the knowledge graph using the existing build_graph module."""
     from med_research.pipeline.knowledge_graph.builder import build_graph
     return build_graph(disease_id)
 
 
-def load_genes(disease_id: str = "sle"):
+def load_genes(disease_id: str = "sle") -> dict[str, Any]:
     """Load gene data indexed by gene ID."""
     data = config_load_genes(disease_id)
     return {g["id"]: g for g in data["genes"]}
 
 
-def load_drugs(disease_id: str = "sle"):
+def load_drugs(disease_id: str = "sle") -> dict[str, Any]:
     """Load drug data indexed by drug ID."""
     data = config_load_drugs(disease_id)
     return {d["id"]: d for d in data["drugs"]}
 
 
-def load_pathways(disease_id: str = "sle"):
+def load_pathways(disease_id: str = "sle") -> dict[str, Any]:
     """Load pathway data indexed by pathway ID."""
     data = config_load_pathways(disease_id)
     return {p["id"]: p for p in data["pathways"]}
 
 
-def compute_pathway_proximity(G, gene_id: str, candidate: dict) -> float:
+def compute_pathway_proximity(G: nx.MultiDiGraph, gene_id: str, candidate: dict[str, Any]) -> float:
     """
     Compute pathway proximity score using shortest path in the knowledge graph.
 
@@ -116,17 +120,17 @@ def compute_pathway_proximity(G, gene_id: str, candidate: dict) -> float:
             pass
 
     # If drug is not in graph, score based on the candidate's curated score
-    return candidate.get("pathway_proximity_score", 5.0)
+    return float(candidate.get("pathway_proximity_score", 5.0))
 
 
-def identify_untargeted_genes(G, disease_id: str = "sle") -> list:
+def identify_untargeted_genes(G: nx.MultiDiGraph, disease_id: str = "sle") -> list[UntargetedGene]:
     """Identify active-disease genes with no direct drug targeting them."""
     targeted_genes = set()
     for _, v, d in G.edges(data=True):
         if d.get("type") == "TARGETS" and G.nodes[v].get("type") == "gene":
             targeted_genes.add(v)
 
-    untargeted = []
+    untargeted: list[UntargetedGene] = []
     for node, data in G.nodes(data=True):
         if data.get("type") == "gene" and node not in targeted_genes:
             untargeted.append(
@@ -186,14 +190,14 @@ def compute_composite_score(candidate: dict) -> float:
 
 
 def score_candidates(
-    G,
+    G: nx.MultiDiGraph,
     candidates: list,
     genes: dict,
     disease_id: str = "sle",
     progress_callback: StandardProgress | None = None,
-) -> list:
+) -> list[RepurposingCandidate]:
     """Score all repurposing candidates and compute composite scores."""
-    scored = []
+    scored: list[RepurposingCandidate] = []
     drugs = load_drugs(disease_id)  # Load active-disease drugs for AE matching
 
     for i, candidate in enumerate(candidates, 1):
@@ -235,18 +239,21 @@ def score_candidates(
         composite = compute_composite_score(candidate)
 
         scored.append(
-            {
-                **candidate,
-                "kg_pathway_proximity": round(kg_proximity, 1),
-                "final_proximity": round(final_proximity, 1),
-                "composite_score": composite,
-                "gene_name": gene_info.get("name", gene_id),
-                "gene_category": gene_info.get("category", ""),
-                "gene_function": gene_info.get("function", ""),
-                "gene_lupus_evidence": gene_info.get("disease_evidence", gene_info.get("lupus_evidence", "")),
-                "gene_disease_evidence": gene_info.get("disease_evidence", gene_info.get("lupus_evidence", "")),
-                "gene_odds_ratio": gene_info.get("odds_ratio"),
-            }
+            cast(
+                RepurposingCandidate,
+                {
+                    **candidate,
+                    "kg_pathway_proximity": round(kg_proximity, 1),
+                    "final_proximity": round(final_proximity, 1),
+                    "composite_score": composite,
+                    "gene_name": gene_info.get("name", gene_id),
+                    "gene_category": gene_info.get("category", ""),
+                    "gene_function": gene_info.get("function", ""),
+                    "gene_lupus_evidence": gene_info.get("disease_evidence", gene_info.get("lupus_evidence", "")),
+                    "gene_disease_evidence": gene_info.get("disease_evidence", gene_info.get("lupus_evidence", "")),
+                    "gene_odds_ratio": gene_info.get("odds_ratio"),
+                },
+            )
         )
 
     # Sort by composite score descending
@@ -266,14 +273,14 @@ def score_candidates(
     return scored
 
 
-def analyze(scored_candidates: list):
+def analyze(scored_candidates: list) -> None:
     """Print statistical summary of scored candidates."""
     logger.info("\n" + "=" * 75)
     logger.info("📊 REPURPOSING ANALYSIS SUMMARY")
     logger.info("=" * 75)
 
     # By tier
-    tier_counts = defaultdict(int)
+    tier_counts: defaultdict[str, int] = defaultdict(int)
     for c in scored_candidates:
         tier_counts[c["tier"]] += 1
 
@@ -286,8 +293,8 @@ def analyze(scored_candidates: list):
             logger.info(f"    {tier}: {count} candidates")
 
     # By gene
-    gene_counts = defaultdict(int)
-    gene_scores = defaultdict(list)
+    gene_counts: defaultdict[str, int] = defaultdict(int)
+    gene_scores: defaultdict[str, list] = defaultdict(list)
     for c in scored_candidates:
         gene_counts[c["gene_name"]] += 1
         gene_scores[c["gene_name"]].append(c["composite_score"])
@@ -313,7 +320,7 @@ def analyze(scored_candidates: list):
         logger.info(f"    {drug}: targets {len(scores)} genes (avg: {sum(scores)/len(scores):.2f})")
 
 
-def print_top_candidates(scored_candidates: list, top_n: int = 10):
+def print_top_candidates(scored_candidates: list, top_n: int = 10) -> None:
     """Print the top N repurposing candidates."""
     logger.info("\n" + "=" * 75)
     logger.info(f"🏆 TOP {top_n} REPURPOSING CANDIDATES")
@@ -338,7 +345,7 @@ def print_top_candidates(scored_candidates: list, top_n: int = 10):
         logger.info(f"  🚦 Status:     {c['status']}")
 
 
-def print_gene_analysis(scored_candidates: list, genes: dict, gene_id: str):
+def print_gene_analysis(scored_candidates: list, genes: dict, gene_id: str) -> None:
     """Print detailed analysis for a specific gene."""
     gene = genes.get(gene_id, {})
     gene_candidates = [c for c in scored_candidates if c["gene_id"] == gene_id]
@@ -408,7 +415,9 @@ def main():
         logger.info(f"     • {g['name']} ({g['id']}) — {g.get('category', '')}")
 
     logger.info("🔄 Scoring candidates...")
-    scored = score_candidates(G, candidates, genes, disease_id=args.disease)
+    scored = score_candidates(
+        G, candidates, genes, disease_id=args.disease, progress_callback=cli_progress
+    )
 
     # Filter to only candidates for actually untargeted genes
     scored = [c for c in scored if c["gene_id"] in untargeted_ids]

@@ -23,16 +23,18 @@ import networkx as nx
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 import logging
+from typing import Any, cast
 
 from med_research.cache import NS_ENRICHMENT, cache_get, cache_set, load_legacy_json
 from med_research.diseases.schemas import GeneDict
 from med_research.exceptions import ExternalAPIError, classify_api_error, retry_with_backoff
 from med_research.pipeline.knowledge_graph.config import load_genes, load_pathways
-from med_research.pipeline.progress import StandardProgress, _tick
+from med_research.pipeline.progress import StandardProgress, _tick, cli_progress
+from med_research.pipeline.results import EnrichmentResult
 
 logger = logging.getLogger(__name__)
 if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # type: ignore[union-attr]
 
 DATA_DIR = Path(__file__).parent / "data"
 LEGACY_ENRICHMENT_CACHE = DATA_DIR / "enrichment_cache.json"
@@ -146,7 +148,7 @@ def load_disease_gene_list(
 
 def run_enrichment(
     gene_list: list,
-    libraries: list = None,
+    libraries: list | None = None,
     top_n: int = 15,
     use_cache: bool = True,
     progress_callback: StandardProgress | None = None,
@@ -197,7 +199,7 @@ def run_enrichment(
         logger.info("📦 Loading enrichment results from cache...")
         logger.info(f"   Genes: {', '.join(symbols)}")
         _tick(progress_callback, "pathway enrichment", len(libraries), len(libraries))
-        return cached
+        return cast(dict, cached)
 
     logger.info(f"\n🔄 Running enrichment analysis on {len(symbols)} genes...")
     logger.info(f"   Genes: {', '.join(symbols)}")
@@ -209,7 +211,7 @@ def run_enrichment(
 
         try:
             enr = retry_with_backoff(
-                lambda lib=library: gp.enrichr(
+                lambda lib=library: gp.enrichr(  # type: ignore[misc]
                     gene_list=symbols,
                     gene_sets=lib,
                     organism="human",
@@ -299,7 +301,7 @@ def cross_reference_with_kg_pathways(
     Matches enriched pathway terms against the 7 curated lupus pathways
     to validate that the enrichment analysis recovers known lupus biology.
     """
-    matches = {}
+    matches: dict[str, Any] = {}
     kg_pathway_names = {p["name"].lower(): p for p in kg_pathways["pathways"]}
 
     for library, result in enrichment_results.items():
@@ -346,7 +348,7 @@ def run_enrichment_analysis(
     untargeted_only: bool = False,
     use_cache: bool = True,
     progress_callback: StandardProgress | None = None,
-) -> dict:
+) -> EnrichmentResult:
     """Run pathway enrichment for a disease (engine entry point)."""
     from med_research.diseases.coverage import module_coverage
 
@@ -387,7 +389,7 @@ def run_enrichment_analysis(
     analyze(enrichment_results, gene_list, kg_matches)
 
     os.makedirs(DATA_DIR, exist_ok=True)
-    output = {
+    output: EnrichmentResult = {
         "coverage": coverage.to_dict(),
         "status": "ready",
         "gene_list": gene_list,
@@ -430,6 +432,7 @@ def main():
         disease_id=args.disease,
         untargeted_only=args.untargeted_only,
         use_cache=not args.no_cache,
+        progress_callback=cli_progress,
     )
     if result.get("status") == "blocked":
         logger.error(
@@ -463,7 +466,7 @@ def main():
     return result["enrichment_results"]
 
 
-def analyze(enrichment_results: dict, gene_list: list, kg_matches: dict):
+def analyze(enrichment_results: dict, gene_list: list, kg_matches: dict) -> None:
     """Print enrichment analysis summary."""
     logger.info("\n" + "=" * 70)
     logger.info("📊 PATHWAY ENRICHMENT ANALYSIS")

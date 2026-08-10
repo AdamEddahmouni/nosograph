@@ -19,6 +19,7 @@ import os
 import sys
 from collections import defaultdict
 from pathlib import Path
+from typing import Any
 
 import networkx as nx
 
@@ -29,11 +30,12 @@ import logging
 from med_research.cache import NS_PPI, cache_get, cache_set, load_legacy_json
 from med_research.exceptions import ExternalAPIError, classify_api_error, retry_with_backoff
 from med_research.pipeline.knowledge_graph.config import load_genes as load_kg_genes
-from med_research.pipeline.progress import StandardProgress, _tick
+from med_research.pipeline.progress import StandardProgress, _tick, cli_progress
+from med_research.pipeline.results import PpiResult
 
 logger = logging.getLogger(__name__)
 if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # type: ignore[union-attr]
 
 try:
     import requests
@@ -53,7 +55,7 @@ DEFAULT_SPECIES = 9606  # Homo sapiens
 DEFAULT_CONFIDENCE = 0.4  # Medium confidence
 
 
-def _string_http_get(path: str, params: dict, timeout: int = 30):
+def _string_http_get(path: str, params: dict, timeout: int = 30) -> Any:
     """Perform a STRING API GET request, raising on HTTP failure."""
     resp = requests.get(f"{STRING_API}/{path}", params=params, timeout=timeout)
     resp.raise_for_status()
@@ -438,7 +440,7 @@ def cross_reference_with_candidates(
     }
 
 
-def analyze(hub_scores: list, crossref: dict, G: nx.Graph):
+def analyze(hub_scores: list, crossref: dict, G: nx.Graph) -> None:
     """Print PPI network analysis summary."""
     logger.info("\n" + "=" * 70)
     logger.info("🔗 PROTEIN-PROTEIN INTERACTION NETWORK ANALYSIS")
@@ -498,7 +500,7 @@ def run_ppi_analysis(
     expand_neighbors: int = 0,
     use_cache: bool = True,
     progress_callback: StandardProgress | None = None,
-) -> dict:
+) -> PpiResult:
     """Build PPI network and hub scores for a disease (engine entry point)."""
     from med_research.diseases.coverage import module_coverage
 
@@ -574,7 +576,7 @@ def run_ppi_analysis(
     }
 
     os.makedirs(DATA_DIR, exist_ok=True)
-    output = {
+    output: PpiResult = {
         "coverage": coverage.to_dict(),
         "status": "ready",
         "hub_scores": hub_scores,
@@ -630,6 +632,7 @@ def main():
         confidence=args.confidence,
         expand_neighbors=args.max_neighbors,
         use_cache=not args.no_cache,
+        progress_callback=cli_progress,
     )
     if result.get("status") == "blocked":
         logger.error(

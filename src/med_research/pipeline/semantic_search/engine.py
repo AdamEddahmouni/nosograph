@@ -15,15 +15,19 @@ import argparse
 import logging
 import sys
 from pathlib import Path
+from typing import Any
 
 from med_research.diseases.coverage import ModuleCoverage
-from med_research.pipeline.progress import StandardProgress, _tick
+from med_research.pipeline.progress import StandardProgress, _tick, cli_progress
+from med_research.pipeline.results import SemanticHit
 
 logger = logging.getLogger(__name__)
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    _stdout = sys.stdout
+    if hasattr(_stdout, "reconfigure"):
+        _stdout.reconfigure(encoding="utf-8", errors="replace")
 
 DATA_DIR = Path(__file__).parent / "data"
 CHROMA_DIR = Path("data/chroma/semantic")
@@ -36,7 +40,7 @@ try:
     import chromadb
     CHROMADB_AVAILABLE = True
 except ImportError:
-    chromadb = None  # type: ignore[assignment,misc]
+    chromadb = None  # type: ignore[assignment]
     CHROMADB_AVAILABLE = False
 
 try:
@@ -106,10 +110,10 @@ class SemanticSearchEngine:
     def __init__(self, model_name: str = "all-MiniLM-L6-v2", disease_id: str = "sle"):
         self.model_name = model_name
         self.disease_id = disease_id
-        self.model = None
-        self.client = None
-        self.collection = None
-        self._articles = []
+        self.model: Any = None
+        self.client: Any = None
+        self.collection: Any = None
+        self._articles: list[Any] = []
 
     @property
     def collection_name(self) -> str:
@@ -165,7 +169,7 @@ class SemanticSearchEngine:
 
     def index_articles(
         self,
-        articles: list = None,
+        articles: list[Any] | None = None,
         batch_size: int = 50,
         progress_callback: StandardProgress | None = None,
     ) -> int:
@@ -221,7 +225,7 @@ class SemanticSearchEngine:
         query: str,
         top_k: int = 20,
         progress_callback: StandardProgress | None = None,
-    ) -> list:
+    ) -> list[SemanticHit]:
         """Semantic search for articles matching the query."""
         global last_coverage
         last_coverage = resolve_semantic_coverage(self.disease_id)
@@ -231,6 +235,7 @@ class SemanticSearchEngine:
         if not _check_deps():
             return []
         self._load_model()
+        _tick(progress_callback, "semantic search", 1, 1)
 
         # Load existing collection (don't recreate)
         if self.collection is None:
@@ -242,13 +247,12 @@ class SemanticSearchEngine:
                 return []
 
         query_embedding = self.model.encode(query).tolist()
-        _tick(progress_callback, "semantic search", 1, 1)
         results = self.collection.query(
             query_embeddings=[query_embedding],
             n_results=min(top_k, self.collection.count()),
         )
 
-        formatted = []
+        formatted: list[SemanticHit] = []
         if results["ids"] and results["ids"][0]:
             for i, doc_id in enumerate(results["ids"][0]):
                 meta = results["metadatas"][0][i] if results["metadatas"] else {}
@@ -277,7 +281,7 @@ class SemanticSearchEngine:
             except _chromadb_collection_errors() as exc:
                 logger.debug("Indexed collection unavailable for %s: %s", self.collection_name, exc)
                 return 0
-        return self.collection.count()
+        return int(self.collection.count())
 
 
 # ---- CLI ----
@@ -299,10 +303,10 @@ def main():
     if args.index:
         articles = engine.load_articles()
         if articles:
-            engine.index_articles(articles)
+            engine.index_articles(articles, progress_callback=cli_progress)
 
     if args.query:
-        results = engine.search(args.query, top_k=args.top)
+        results = engine.search(args.query, top_k=args.top, progress_callback=cli_progress)
         if results:
             logger.info(f"\n{'=' * 70}")
             logger.info(f"🔍 SEMANTIC SEARCH: \"{args.query}\"")

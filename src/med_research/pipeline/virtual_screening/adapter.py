@@ -11,10 +11,11 @@ from med_research.pipeline.adapter_options import AdapterOptions
 from med_research.pipeline.base import BasePipelineModule
 from med_research.pipeline.provenance import build_provenance
 from med_research.pipeline.registry import register_module
+from med_research.pipeline.results import ScreeningResult, UntargetedGenesResult
 
 
 @register_module
-class VirtualScreeningModule(BasePipelineModule):
+class VirtualScreeningModule(BasePipelineModule[ScreeningResult | UntargetedGenesResult]):
     """Adapter around ``virtual_screening.screening`` scoring and reporting."""
 
     _COVERAGE_MODULE = "screening"
@@ -30,7 +31,9 @@ class VirtualScreeningModule(BasePipelineModule):
     def coverage_inputs(self) -> tuple[str, ...]:
         return ("genes", "drugs", "pathways", "screening_profile")
 
-    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
+    def run(
+        self, disease_id: str, **opts: Unpack[AdapterOptions]
+    ) -> ScreeningResult | UntargetedGenesResult:
         if opts.get("operation") == "untargeted_genes":
             from med_research.pipeline.virtual_screening.screening import get_untargeted_genes
 
@@ -62,7 +65,7 @@ class VirtualScreeningModule(BasePipelineModule):
 
     def report(
         self,
-        results: dict,
+        results: ScreeningResult | UntargetedGenesResult,
         disease_id: str,
         *,
         provenance: dict | None = None,

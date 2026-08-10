@@ -359,7 +359,6 @@ def test_compute_synergy_threads_disease(monkeypatch):
 # ── Integration: compute_synergy ──────────────────────────────────────────
 
 
-@pytest.mark.slow
 def test_compute_synergy_loads_drugs():
     """Verify compute_synergy loads drugs from the KG and scores all pairs."""
     pairs = compute_synergy()
@@ -368,7 +367,6 @@ def test_compute_synergy_loads_drugs():
     assert len(pairs) == 325
 
 
-@pytest.mark.slow
 def test_compute_synergy_ranked():
     pairs = compute_synergy()
     # Pairs should be sorted by composite score descending
@@ -376,7 +374,6 @@ def test_compute_synergy_ranked():
         assert pairs[i]["composite_score"] >= pairs[i + 1]["composite_score"]
 
 
-@pytest.mark.slow
 def test_compute_synergy_saves_json(tmp_path, monkeypatch):
     """Verify that compute_synergy saves results to JSON."""
     import med_research.pipeline.drug_synergy.engine as engine_mod
@@ -399,7 +396,6 @@ def test_compute_synergy_save_false_skips_write(tmp_path, monkeypatch):
     assert (tmp_path / "synergy_results_sle.json").exists()
 
 
-@pytest.mark.slow
 def test_compute_synergy_all_dimensions():
     pairs = compute_synergy()
     for p in pairs[:10]:
@@ -444,7 +440,6 @@ def test_generate_html_report_with_empty_pairs():
 # ── API Service ───────────────────────────────────────────────────────────
 
 
-@pytest.mark.slow
 def test_run_synergy_service():
     from med_research.web.services.synergy_service import run_synergy
 
@@ -460,7 +455,6 @@ def test_run_synergy_service():
 # ── CLI Integration ───────────────────────────────────────────────────────
 
 
-@pytest.mark.slow
 def test_synergy_cli_help():
     from tests.cli_helpers import cli_help_output
 

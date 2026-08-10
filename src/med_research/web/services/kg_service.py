@@ -1,6 +1,7 @@
 """Knowledge Graph service — wraps knowledge_graph registry adapter."""
 
 from collections import defaultdict
+from typing import Any, cast
 
 import networkx as nx
 
@@ -19,7 +20,7 @@ def _kg_coverage_payload(disease_id: str) -> dict:
     }
 
 
-def _load_graph(disease_id: str):
+def _load_graph(disease_id: str) -> Any:
     """Build or load the knowledge graph via the registry dispatch path."""
     core = coverage_for_disease(disease_id)
     require_runnable_coverage(core, "knowledge_graph")
@@ -31,11 +32,11 @@ def get_graph_stats(disease_id: str = "sle") -> dict:
     coverage = _kg_coverage_payload(disease_id)
     G = _load_graph(disease_id)
 
-    node_types = defaultdict(int)
+    node_types: dict[str, int] = defaultdict(int)
     for _, data in G.nodes(data=True):
         node_types[data.get("type", "unknown")] += 1
 
-    edge_types = defaultdict(int)
+    edge_types: dict[str, int] = defaultdict(int)
     for _, _, data in G.edges(data=True):
         edge_types[data.get("type", "unknown")] += 1
 
@@ -252,19 +253,19 @@ def run_centrality_analysis(
     metric: str = "betweenness", top_n: int = 15, disease_id: str = "sle"
 ) -> dict:
     """Compute centrality metrics via the network_pharmacology registry adapter."""
-    return dispatch_sync_module(
+    return cast(dict[str, Any], dispatch_sync_module(
         "network_pharmacology",
         disease_id,
         operation="centrality",
         metric=metric,
         top_n=top_n,
-    )
+    ))
 
 
 def run_community_detection(disease_id: str = "sle") -> dict:
     """Detect communities in the selected disease knowledge graph."""
-    return dispatch_sync_module(
+    return cast(dict[str, Any], dispatch_sync_module(
         "network_pharmacology",
         disease_id,
         operation="communities",
-    )
+    ))

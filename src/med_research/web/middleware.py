@@ -8,6 +8,7 @@ from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.responses import Response
 from starlette.types import ASGIApp
 
+from med_research.web.config import DASHBOARD_CSP_MODE, DASHBOARD_CSP_POLICY
 from med_research.web.rate_limit import (
     InMemoryRateLimitStore,
     RateLimitStore,
@@ -35,6 +36,28 @@ def _get_client_ip(request: Request) -> str:
 
 
 MAX_REQUEST_BODY_BYTES = int(os.environ.get("MAX_REQUEST_BODY_BYTES", str(1024 * 1024)))
+
+
+class DashboardCSPMiddleware(BaseHTTPMiddleware):
+    """Attach the opt-in CSP to the dashboard document only.
+
+    API responses and downloaded reports keep their existing headers. The
+    policy blocks inline script/event attributes while allowing the dashboard's
+    external local JavaScript, WebSocket progress stream, and Google font CSS.
+    """
+
+    async def dispatch(
+        self, request: Request, call_next: Callable[[Request], Awaitable[Response]]
+    ) -> Response:
+        response = await call_next(request)
+        if DASHBOARD_CSP_MODE in {"enforce", "report-only"} and request.url.path in {"/", "/index.html"}:
+            header = (
+                "Content-Security-Policy"
+                if DASHBOARD_CSP_MODE == "enforce"
+                else "Content-Security-Policy-Report-Only"
+            )
+            response.headers[header] = DASHBOARD_CSP_POLICY
+        return response
 
 
 class RequestBodySizeLimitMiddleware(BaseHTTPMiddleware):

@@ -1,5 +1,7 @@
 """Biomarker Discovery API router."""
 
+from typing import Any
+
 from fastapi import APIRouter, Query
 
 from med_research.web.models.biomarker import BiomarkerResponse
@@ -12,7 +14,7 @@ router = APIRouter(tags=["Biomarker"])
 async def discover_biomarkers(
     top_n: int = Query(35, ge=1, le=50, description="Number of top biomarkers to return"),
     disease_id: str = Query("sle", description="Disease ID"),
-):
+) -> dict[str, Any]:
     """Cross-module biomarker discovery across 5 scoring platforms.
 
     Returns ranked genes with cross-module consistency, expression

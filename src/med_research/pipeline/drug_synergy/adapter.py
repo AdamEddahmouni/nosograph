@@ -11,10 +11,11 @@ from med_research.pipeline.adapter_options import AdapterOptions
 from med_research.pipeline.base import BasePipelineModule
 from med_research.pipeline.provenance import build_provenance
 from med_research.pipeline.registry import register_module
+from med_research.pipeline.results import SynergyResults
 
 
 @register_module
-class DrugSynergyModule(BasePipelineModule):
+class DrugSynergyModule(BasePipelineModule[SynergyResults]):
     """Adapter around ``drug_synergy.engine`` scoring and reporting."""
 
     _COVERAGE_MODULE = "synergy"
@@ -30,7 +31,7 @@ class DrugSynergyModule(BasePipelineModule):
     def coverage_inputs(self) -> tuple[str, ...]:
         return ("genes", "drugs")
 
-    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> list:
+    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> SynergyResults:
         from med_research.pipeline.drug_synergy.engine import compute_synergy
 
         return compute_synergy(
@@ -41,7 +42,7 @@ class DrugSynergyModule(BasePipelineModule):
 
     def report(
         self,
-        results: list,
+        results: SynergyResults,
         disease_id: str,
         *,
         provenance: dict[str, Any] | None = None,

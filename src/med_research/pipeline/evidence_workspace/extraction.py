@@ -5,7 +5,7 @@ from __future__ import annotations
 import re
 from collections import defaultdict
 from datetime import date
-from typing import Any
+from typing import Any, cast
 
 from med_research.pipeline.knowledge_graph.config import load_drugs, load_genes, load_pathways
 
@@ -13,9 +13,9 @@ from .schemas import Citation, Claim, EvidenceRecord
 
 
 def _entity_catalog(disease_id: str) -> dict[str, dict[str, dict[str, Any]]]:
-    genes = {item["id"]: item for item in load_genes(disease_id).get("genes", [])}
-    drugs = {item["id"]: item for item in load_drugs(disease_id).get("drugs", [])}
-    pathways = {item["id"]: item for item in load_pathways(disease_id).get("pathways", [])}
+    genes = {item["id"]: dict(item) for item in load_genes(disease_id).get("genes", [])}
+    drugs = {item["id"]: dict(item) for item in load_drugs(disease_id).get("drugs", [])}
+    pathways = {item["id"]: dict(item) for item in load_pathways(disease_id).get("pathways", [])}
     return {"genes": genes, "drugs": drugs, "pathways": pathways}
 
 
@@ -128,9 +128,9 @@ def extract_deterministic(records: list[EvidenceRecord], disease_id: str) -> "Ex
                 Claim(
                     claim_id=f"rules:{record.evidence_id}:{entity_id}:{relationship}",
                     subject_id=entity_id,
-                    subject_type=subject_type,
+                    subject_type=cast(Any, subject_type),
                     subject_name=subject_name,
-                    relationship=relationship,
+                    relationship=cast(Any, relationship),
                     text=f"{subject_name} is mentioned in evidence titled '{record.title}'.",
                     evidence_ids=[record.evidence_id],
                     citations=[_citation(record)],

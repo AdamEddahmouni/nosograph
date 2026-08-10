@@ -3,8 +3,6 @@
 from __future__ import annotations
 
 import re
-import subprocess
-import sys
 from pathlib import Path
 
 import pytest
@@ -15,7 +13,6 @@ from med_research.pipeline.reporting import disease_context
 pytestmark = pytest.mark.unit
 
 PROJECT_ROOT = Path(__file__).parent.parent
-CLI_MODULE = [sys.executable, "-m", "med_research.cli"]
 
 
 @pytest.fixture
@@ -92,18 +89,6 @@ def _assert_cli_provenance_footer(html: str) -> None:
     assert re.search(r"fingerprint <code>[a-f0-9]{20}</code>", html)
     assert re.search(r"mode (cache|live)", html)
     assert re.search(r"run <code>[^<]+</code>", html)
-
-
-def _run_cli_export_html(*args: str) -> subprocess.CompletedProcess[str]:
-    return subprocess.run(
-        [*CLI_MODULE, *args],
-        capture_output=True,
-        text=True,
-        encoding="utf-8",
-        errors="replace",
-        timeout=120,
-        cwd=PROJECT_ROOT,
-    )
 
 
 @pytest.fixture
@@ -420,11 +405,10 @@ def test_biomarker_discovery_report_provenance():
     _assert_provenance_footer(_read_report(report_path), provenance, disease_id)
 
 
-def test_cross_disease_report_provenance():
-    from med_research.pipeline.cross_disease.analyzer import compute_cross_disease_analysis
+def test_cross_disease_report_provenance(cross_disease_analysis):
     from med_research.pipeline.cross_disease.report import generate_html_report
 
-    results = compute_cross_disease_analysis()
+    results = cross_disease_analysis
     provenance = build_provenance(
         disease_id="multi",
         module="cross_disease",
@@ -439,12 +423,11 @@ def test_cross_disease_report_provenance():
     assert "Rheumatoid Arthritis" in html
 
 
-def test_drug_synergy_report_provenance():
-    from med_research.pipeline.drug_synergy.engine import compute_synergy
+def test_drug_synergy_report_provenance(synergy_pairs):
     from med_research.pipeline.drug_synergy.report import generate_html_report
 
     disease_id = "ra"
-    pairs = compute_synergy(disease_id=disease_id, save=False)
+    pairs = synergy_pairs
     assert pairs, "Synergy scoring should return results for RA"
     provenance = build_provenance(
         disease_id=disease_id,
@@ -480,12 +463,11 @@ def test_network_pharmacology_report_provenance():
     _assert_provenance_footer(_read_report(report_path), provenance, disease_id)
 
 
-def test_gene_expression_report_provenance():
-    from med_research.pipeline.gene_expression.correlator import compute_all_correlations
+def test_gene_expression_report_provenance(expression_results):
     from med_research.pipeline.gene_expression.report import generate_html_report
 
     disease_id = "ra"
-    results = compute_all_correlations(disease_id=disease_id, save=False)
+    results = expression_results
     assert results, "Expression correlation should return results for RA"
     provenance = build_provenance(
         disease_id=disease_id,
@@ -571,24 +553,68 @@ def test_semantic_search_report_provenance():
 
 
 @pytest.mark.parametrize(
-    ("command", "report_rel_path"),
+    ("command", "handler_name", "engine_fixture", "report_rel_path"),
     [
-        ("synergy", "src/med_research/pipeline/drug_synergy/report.html"),
-        ("expression", "src/med_research/pipeline/gene_expression/report.html"),
-        ("cross-disease", "src/med_research/pipeline/cross_disease/report.html"),
+        (
+            "synergy",
+            "cmd_synergy",
+            "synergy_pairs",
+            "src/med_research/pipeline/drug_synergy/report.html",
+        ),
+        (
+            "expression",
+            "cmd_expression",
+            "expression_results",
+            "src/med_research/pipeline/gene_expression/report.html",
+        ),
+        (
+            "cross-disease",
+            "cmd_cross_disease",
+            "cross_disease_analysis",
+            "src/med_research/pipeline/cross_disease/report.html",
+        ),
     ],
 )
-def test_cli_export_html_includes_provenance_footer(command, report_rel_path):
-    """CLI --export-html should match engine __main__ provenance footers."""
+def test_cli_export_html_includes_provenance_footer(
+    command,
+    handler_name,
+    engine_fixture,
+    report_rel_path,
+    monkeypatch,
+    request,
+):
+    """CLI --export-html should produce reports with a provenance footer.
+
+    Runs the real ``cmd_*`` handler in-process (arg parsing -> dispatch ->
+    adapter -> report) against the shared session engine fixture, so each
+    engine computes once per process instead of once per CLI subprocess.
+    """
+    from med_research.cli import cmd_cross_disease, cmd_expression, cmd_synergy
+    from tests.cli_helpers import run_cli_handler
+
+    handler = {
+        "cmd_synergy": cmd_synergy,
+        "cmd_expression": cmd_expression,
+        "cmd_cross_disease": cmd_cross_disease,
+    }[handler_name]
+
+    patch_target = {
+        "synergy": "med_research.pipeline.drug_synergy.engine.compute_synergy",
+        "expression": "med_research.pipeline.gene_expression.correlator.compute_all_correlations",
+        "cross-disease": "med_research.pipeline.cross_disease.analyzer.compute_cross_disease_analysis",
+    }[command]
+    engine_result = request.getfixturevalue(engine_fixture)
+    monkeypatch.setattr(patch_target, lambda **kwargs: engine_result)
+
     report_path = PROJECT_ROOT / report_rel_path
     report_path.unlink(missing_ok=True)
 
-    args = [command, "--export-html", "--top", "5"]
+    args = ["--export-html", "--top", "5"]
     if command != "cross-disease":
         args.extend(["--disease", "ra"])
 
-    result = _run_cli_export_html(*args)
-    assert result.returncode == 0, result.stderr or result.stdout
+    exit_code = run_cli_handler(handler, command, *args)
+    assert exit_code == 0
     assert report_path.exists(), f"Expected report at {report_path}"
 
     html = _read_report(str(report_path))

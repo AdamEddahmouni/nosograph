@@ -33,6 +33,7 @@ def setup_logging(
     root.setLevel(level)
     root.handlers.clear()
 
+    handler: logging.Handler | None = None
     if console:
         handler = logging.StreamHandler(sys.stdout)
         handler.setLevel(level)

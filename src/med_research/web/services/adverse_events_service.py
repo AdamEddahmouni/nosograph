@@ -1,5 +1,7 @@
 """Adverse Event Profiling service."""
 
+from typing import Any, cast
+
 from med_research.diseases.coverage import module_coverage
 from med_research.pipeline.adverse_events.profiler import get_drug_profile, get_safety_summary
 from med_research.web.dependencies import safe_serialize
@@ -13,7 +15,7 @@ from med_research.web.services.registry_service import (
 def run_safety_profiling(
     drug_id: str | None = None,
     disease_id: str = "sle",
-    progress_callback=None,
+    progress_callback: Any = None,
 ) -> dict:
     """Run adverse event safety profiling."""
     reporter = make_progress_reporter(progress_callback)
@@ -31,7 +33,7 @@ def run_safety_profiling(
         reporter("Profile loaded", 1, 1)
         if not profile:
             return {"error": f"Drug '{drug_id}' not found"}
-        return safe_serialize(profile)
+        return cast(dict[str, Any], safe_serialize(profile))
 
     reporter("Scoring drugs for adverse events", 0, 2)
     results = dispatch_sync_module(

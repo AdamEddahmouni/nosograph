@@ -23,6 +23,7 @@ import json
 import logging
 import sys
 from pathlib import Path
+from typing import Any
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
@@ -34,10 +35,10 @@ from med_research.pipeline.knowledge_graph.config import (
     load_pathways,
     load_relationships,
 )
-from med_research.pipeline.progress import StandardProgress, _tick
+from med_research.pipeline.progress import StandardProgress, _tick, cli_progress
 
 if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # type: ignore[union-attr]
 
 DATA_DIR = Path(__file__).parent / "data"
 
@@ -251,7 +252,7 @@ def compute_disease_similarity(data: dict) -> dict:
             for p in data[did]["pathways"].get("pathways", [])
         }
 
-    matrix = {}
+    matrix: dict[str, Any] = {}
     ranked_pairs = []
 
     for i, did_a in enumerate(disease_ids):
@@ -576,7 +577,7 @@ def compute_cross_disease_analysis(
 
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     output_path = DATA_DIR / "cross_disease_analysis.json"
-    safe = {}
+    safe: dict[str, Any] = {}
     for k, v in result.items():
         if isinstance(v, dict):
             safe[k] = {str(k2): v2 for k2, v2 in v.items()}
@@ -635,7 +636,7 @@ def compute_comparative_modules(
     biomarker_scores: dict = {}
     expression_scores: dict = {}
     synergy_top: dict = {}
-    counts = {"biomarker": {}, "expression": {}, "synergy": {}}
+    counts: dict[str, dict[str, Any]] = {"biomarker": {}, "expression": {}, "synergy": {}}
 
     step = 0
     for did in disease_ids:
@@ -654,8 +655,8 @@ def compute_comparative_modules(
         try:
             ex = compute_all_correlations(disease_id=did, save=False)
             counts["expression"][did] = len(ex)
-            for r in ex:
-                expression_scores.setdefault(r["drug_id"], {})[did] = r["composite_score"]
+            for er in ex:
+                expression_scores.setdefault(er["drug_id"], {})[did] = er["composite_score"]
         except Exception:  # noqa: BLE001
             counts["expression"][did] = 0
 
@@ -691,7 +692,7 @@ def compute_comparative_modules(
 # ── CLI ──────────────────────────────────────────────────────────────────
 
 
-def analyze(results: dict):
+def analyze(results: dict) -> None:
     """Print analysis summary."""
     d_summary = results["disease_summary"]
     n = results["total_diseases"]
@@ -731,14 +732,14 @@ def analyze(results: dict):
 
     mdd = results["multi_disease_drugs"]
     logger.info(f"\n  Multi-Disease Drug Candidates: {len(mdd)}")
-    tiers = {}
+    tiers: dict[str, int] = {}
     for d in mdd:
         tiers[d["tier"]] = tiers.get(d["tier"], 0) + 1
     for tier, count in sorted(tiers.items()):
         logger.info(f"    {tier}: {count}")
 
 
-def print_top_drugs(results: dict, top_n: int = 20):
+def print_top_drugs(results: dict, top_n: int = 20) -> None:
     """Print top multi-disease drugs."""
     mdd = results["multi_disease_drugs"][:top_n]
     logger.info("\n" + "=" * 75)
@@ -766,7 +767,7 @@ def print_top_drugs(results: dict, top_n: int = 20):
         logger.info(f"     └─ Novelty:                    {d['novelty']}/10")
 
 
-def print_repurposing(results: dict, top_n: int = 15):
+def print_repurposing(results: dict, top_n: int = 15) -> None:
     """Print cross-disease repurposing recommendations."""
     recs = results["cross_disease_repurposing"]
     novel = [r for r in recs if not r["already_used_in_target"]][:top_n]
@@ -799,7 +800,7 @@ def main():
     )
     args = parser.parse_args()
 
-    results = compute_cross_disease_analysis()
+    results = compute_cross_disease_analysis(progress_callback=cli_progress)
     analyze(results)
     print_top_drugs(results, args.top)
     print_repurposing(results, args.top)

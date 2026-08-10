@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Any
+from typing import Any, cast
 
 from typing_extensions import Unpack
 
@@ -11,10 +11,11 @@ from med_research.pipeline.adapter_options import AdapterOptions
 from med_research.pipeline.base import BasePipelineModule
 from med_research.pipeline.provenance import build_provenance
 from med_research.pipeline.registry import register_module
+from med_research.pipeline.results import LiteratureMiningResult
 
 
 @register_module
-class LiteratureMiningModule(BasePipelineModule):
+class LiteratureMiningModule(BasePipelineModule[LiteratureMiningResult]):
     """Adapter around ``literature_mining.miner`` PubMed search and reporting."""
 
     _COVERAGE_MODULE = "literature"
@@ -30,7 +31,7 @@ class LiteratureMiningModule(BasePipelineModule):
     def coverage_inputs(self) -> tuple[str, ...]:
         return ("genes", "drugs", "pathways", "pubmed_queries")
 
-    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
+    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> LiteratureMiningResult:
         from med_research.diseases.base import Disease
         from med_research.pipeline.literature_mining.miner import DEFAULT_EMAIL, mine_literature
 
@@ -61,7 +62,7 @@ class LiteratureMiningModule(BasePipelineModule):
 
     def report(
         self,
-        results: dict,
+        results: LiteratureMiningResult,
         disease_id: str,
         *,
         provenance: dict | None = None,
@@ -69,7 +70,7 @@ class LiteratureMiningModule(BasePipelineModule):
         from med_research.pipeline.literature_mining.report import generate_literature_report
 
         report_path = generate_literature_report(
-            results["results"],
+            cast(dict, results["results"]),
             results["entities"],
             results["candidates"],
             disease_id=disease_id,

@@ -18,7 +18,7 @@ async def evidence_gather(
     max_per_source: int = Query(default=20, ge=1, le=100),
     use_cache: bool = Query(default=True),
     disease_id: str = Query("sle", description="Disease ID"),
-):
+) -> EvidenceGatherResponse:
     """Gather evidence from multiple biomedical sources simultaneously.
 
     Searches PubMed, preprints (bioRxiv/medRxiv), ClinicalTrials.gov,

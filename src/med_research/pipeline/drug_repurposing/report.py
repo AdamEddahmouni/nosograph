@@ -11,6 +11,7 @@ Generates a beautiful standalone HTML report with:
 
 from datetime import datetime
 from pathlib import Path
+from typing import Any
 
 from med_research.pipeline.reporting import disease_context, render_report
 
@@ -19,7 +20,7 @@ def generate_html_report(
     scored_candidates: list,
     untargeted_genes: list,
     genes: dict,
-    G,
+    G: Any,
     disease_id: str = "sle",
     *,
     provenance: dict | None = None,
@@ -30,7 +31,7 @@ def generate_html_report(
     context = disease_context(disease_id)
 
     # Build gene->candidates mapping
-    gene_candidates = {}
+    gene_candidates: dict[str, list[Any]] = {}
     for c in scored_candidates:
         gene_candidates.setdefault(c["gene_id"], []).append(c)
 

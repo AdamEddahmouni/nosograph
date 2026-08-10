@@ -18,7 +18,7 @@
                 <span class="nav-title">Medical Research Platform</span>
             </div>
             <div class="nav-links">
-                <select id="disease-selector" class="nav-select" onchange="onDiseaseChange(this.value)" aria-label="Select disease">
+                <select id="disease-selector" class="nav-select" data-action="disease-change" aria-label="Select disease">
                     <option value="" disabled>Loading diseases…</option>
                 </select>
                 <a href="#modules" class="nav-link">Modules</a>
@@ -99,13 +99,13 @@
                     </div>
                     <div class="workspace-disclaimer">⚠️ Research use only · not medical advice</div>
                 </div>
-                <form id="workspace-form" class="workspace-form" onsubmit="submitWorkspace(event)">
+                <form id="workspace-form" class="workspace-form" data-action="workspace-submit" aria-describedby="workspace-submit-status">
                     <label class="workspace-question">
                         <span>Research question</span>
-                        <textarea id="workspace-question" name="question" rows="2" required minlength="2" maxlength="500" placeholder="Ask a question for the selected disease"></textarea>
+                        <textarea id="workspace-question" name="question" rows="2" required minlength="2" maxlength="500" aria-describedby="workspace-submit-status" placeholder="Ask a question for the selected disease"></textarea>
                     </label>
                     <div class="workspace-controls">
-                        <label><span>Sources</span><select id="workspace-sources" multiple size="2">
+                        <label><span>Sources</span><select id="workspace-sources" aria-label="Evidence sources" multiple size="2">
                             <option value="pubmed" selected>PubMed</option>                            <option value="clinical_trials" selected>ClinicalTrials.gov</option>
                             <option value="gwas">GWAS Catalog</option>
                             <option value="fda_labels">FDA / DailyMed</option>
@@ -115,7 +115,7 @@
                         <label><span>From</span><input id="workspace-date-from" type="date"></label>
                         <label><span>To</span><input id="workspace-date-to" type="date"></label>
                         <label><span>Evidence limit</span><input id="workspace-max-evidence" type="number" min="1" max="200" value="50"></label>
-                        <div class="workspace-auth-controls" aria-label="Researcher authentication"><span id="workspace-auth-status" class="workspace-muted">Checking researcher session…</span><input id="workspace-auth-username" maxlength="64" pattern="[A-Za-z0-9][A-Za-z0-9_.:@+-]{0,63}" placeholder="username" autocomplete="username"><input id="workspace-auth-password" type="password" maxlength="1000" placeholder="password" autocomplete="current-password"><button class="btn btn-secondary btn-sm" type="button" onclick="loginWorkspaceResearcher()">Sign in</button><button class="btn btn-secondary btn-sm" type="button" onclick="logoutWorkspaceResearcher()">Sign out</button></div>
+                        <div class="workspace-auth-controls" aria-label="Researcher authentication"><span id="workspace-auth-status" class="workspace-muted">Checking researcher session…</span><input id="workspace-auth-username" maxlength="64" pattern="[A-Za-z0-9][A-Za-z0-9_.:@+-]{0,63}" placeholder="username" autocomplete="username"><input id="workspace-auth-password" type="password" maxlength="1000" placeholder="password" autocomplete="current-password"><button class="btn btn-secondary btn-sm" type="button" data-action="workspace-auth-login">Sign in</button><button class="btn btn-secondary btn-sm" type="button" data-action="workspace-auth-logout">Sign out</button></div>
                         <label class="workspace-check"><input id="workspace-enable-llm" type="checkbox" checked> Optional LLM enrichment</label>
                     </div>
                     <div class="workspace-actions">
@@ -123,32 +123,33 @@
                         <span class="workspace-hint" id="workspace-submit-status" role="status" aria-live="polite">Ready for a new research question.</span>
                     </div>
                 </form>
-                <div id="workspace-result" class="workspace-result" aria-live="polite"></div>
+                <div id="workspace-result" class="workspace-result" role="region" aria-label="Workspace result" aria-live="polite" aria-atomic="false"></div>
                 <div class="workspace-history-shell" id="workspace-history">
-                    <div class="workspace-history-head"><h3>🗂️ Saved research runs</h3><button class="btn btn-secondary btn-sm" type="button" onclick="loadWorkspaceHistory()">↻ Refresh</button></div>
-                    <div id="workspace-history-list" class="workspace-history-list"><span class="workspace-muted">No saved runs loaded yet.</span></div>
+                    <div class="workspace-history-head"><h3>🗂️ Saved research runs</h3><button class="btn btn-secondary btn-sm" type="button" data-action="workspace-history-refresh">↻ Refresh</button></div>
+                    <div id="workspace-history-list" class="workspace-history-list" role="region" aria-label="Saved research runs" aria-live="polite"><span class="workspace-muted">No saved runs loaded yet.</span></div>
                     <section id="workspace-alerts" class="workspace-alerts" aria-labelledby="workspace-alerts-title">
-                        <div class="workspace-alerts-head"><h3 id="workspace-alerts-title">🔔 Review reminders <span id="workspace-alert-count" class="workspace-alert-count"></span></h3><button class="btn btn-secondary btn-sm" type="button" onclick="loadWorkspaceAlerts()">↻ Refresh</button></div>
-                        <div class="workspace-notification-settings"><label>Email <input id="workspace-alert-email" type="email" maxlength="320" placeholder="researcher@example.org"></label><label>Slack webhook <input id="workspace-alert-slack" type="password" maxlength="500" placeholder="https://hooks.slack.com/services/…" autocomplete="new-password"></label><label class="workspace-alert-check"><input id="workspace-alert-email-enabled" type="checkbox" checked> Email</label><label class="workspace-alert-check"><input id="workspace-alert-slack-enabled" type="checkbox" checked> Slack</label><label>Score drop <input id="workspace-alert-score-threshold" type="number" min="0" max="100" step="0.1" value="0" title="0 disables score-drop-only alerts"></label><label>Rank movement <input id="workspace-alert-rank-threshold" type="number" min="0" max="100" step="1" value="0" title="0 disables rank-change-only alerts"></label><label>Quality change <input id="workspace-alert-quality-threshold" type="number" min="0" max="1" step="0.01" value="0" title="0 disables quality-change-only alerts"></label><label class="workspace-alert-check"><input id="workspace-weekly-digest-enabled" type="checkbox"> Weekly digest</label><label>Day <select id="workspace-digest-weekday"><option value="0">Mon</option><option value="1">Tue</option><option value="2">Wed</option><option value="3">Thu</option><option value="4">Fri</option><option value="5">Sat</option><option value="6">Sun</option></select></label><label>Time <input id="workspace-digest-time" type="time" value="09:00"></label><label>Timezone <input id="workspace-digest-timezone" type="text" maxlength="64" value="UTC" placeholder="America/New_York"></label><button class="btn btn-secondary btn-sm" type="button" onclick="saveWorkspaceNotificationSettings()">Save notifications</button><button class="btn btn-secondary btn-sm" type="button" onclick="previewWorkspaceDigest()">Preview digest</button><button class="btn btn-secondary btn-sm" type="button" onclick="sendWorkspaceDigest()">Send digest now</button><span id="workspace-alert-settings-status" class="workspace-muted" role="status"></span><span id="workspace-alert-delivery-status" class="workspace-muted" role="status"></span><span id="workspace-digest-delivery-status" class="workspace-muted" role="status"></span></div>
+                        <div class="workspace-alerts-head"><h3 id="workspace-alerts-title">🔔 Review reminders <span id="workspace-alert-count" class="workspace-alert-count"></span></h3><button class="btn btn-secondary btn-sm" type="button" data-action="workspace-alerts-refresh">↻ Refresh</button></div>
+                        <div class="workspace-notification-settings"><label>Email <input id="workspace-alert-email" type="email" maxlength="320" placeholder="researcher@example.org"></label><label>Slack webhook <input id="workspace-alert-slack" type="password" maxlength="500" placeholder="https://hooks.slack.com/services/…" autocomplete="new-password"></label><label class="workspace-alert-check"><input id="workspace-alert-email-enabled" type="checkbox" checked> Email</label><label class="workspace-alert-check"><input id="workspace-alert-slack-enabled" type="checkbox" checked> Slack</label><label>Score drop <input id="workspace-alert-score-threshold" type="number" min="0" max="100" step="0.1" value="0" title="0 disables score-drop-only alerts"></label><label>Rank movement <input id="workspace-alert-rank-threshold" type="number" min="0" max="100" step="1" value="0" title="0 disables rank-change-only alerts"></label><label>Quality change <input id="workspace-alert-quality-threshold" type="number" min="0" max="1" step="0.01" value="0" title="0 disables quality-change-only alerts"></label><label class="workspace-alert-check"><input id="workspace-weekly-digest-enabled" type="checkbox"> Weekly digest</label><label>Day <select id="workspace-digest-weekday"><option value="0">Mon</option><option value="1">Tue</option><option value="2">Wed</option><option value="3">Thu</option><option value="4">Fri</option><option value="5">Sat</option><option value="6">Sun</option></select></label><label>Time <input id="workspace-digest-time" type="time" value="09:00"></label><label>Timezone <input id="workspace-digest-timezone" type="text" maxlength="64" value="UTC" placeholder="America/New_York"></label><button class="btn btn-secondary btn-sm" type="button" data-action="workspace-notifications-save">Save notifications</button><button class="btn btn-secondary btn-sm" type="button" data-action="workspace-digest-preview">Preview digest</button><button class="btn btn-secondary btn-sm" type="button" data-action="workspace-digest-send">Send digest now</button><span id="workspace-alert-settings-status" class="workspace-muted" role="status"></span><span id="workspace-alert-delivery-status" class="workspace-muted" role="status"></span><span id="workspace-digest-delivery-status" class="workspace-muted" role="status"></span></div>
                         <div id="workspace-alert-list" class="workspace-alert-list"><span class="workspace-muted">No evidence alerts yet.</span></div><div id="workspace-digest-preview" class="workspace-digest-preview" hidden></div>
                     </section>
-                    <div id="workspace-compare" class="workspace-compare" aria-live="polite"></div>
+                    <div id="workspace-compare" class="workspace-compare" role="region" aria-label="Workspace run comparison" aria-live="polite" aria-atomic="true"></div>
                     <section id="workspace-trends" class="workspace-trends" aria-labelledby="workspace-trends-title">
                         <div class="workspace-trends-head">
                             <div><h3 id="workspace-trends-title">📈 Evidence trends</h3><p class="workspace-muted">Track candidate scores, confidence, evidence volume, and source coverage across saved runs.</p></div>
-                            <div class="workspace-trend-controls"><label>View <select id="workspace-trend-kind" onchange="renderWorkspaceTrends()"><option value="drug">Drugs</option><option value="target">Targets</option></select></label><label>Candidate <select id="workspace-trend-candidate" onchange="renderWorkspaceTrends()"><option value="">All candidates</option></select></label><button class="btn btn-secondary btn-sm" type="button" onclick="loadWorkspaceTrends()">↻ Update</button></div>
+                            <div class="workspace-trend-controls"><label>View <select id="workspace-trend-kind" data-action="workspace-trends-render"><option value="drug">Drugs</option><option value="target">Targets</option></select></label><label>Candidate <select id="workspace-trend-candidate" data-action="workspace-trends-render"><option value="">All candidates</option></select></label><button class="btn btn-secondary btn-sm" type="button" data-action="workspace-trends-update">↻ Update</button></div>
                         </div>
-                        <div id="workspace-trend-status" class="workspace-muted">Loading trend data…</div>
-                        <div id="workspace-trend-chart" class="workspace-trend-chart" role="img" aria-label="Candidate score trends"></div>
+                        <div id="workspace-trend-status" class="workspace-muted" role="status" aria-live="polite">Loading trend data…</div>
+                        <div id="workspace-trend-chart" class="workspace-trend-chart" role="img" aria-label="Candidate score trends" aria-live="polite"></div>
+                        <div id="workspace-trend-table" class="workspace-trend-table" role="region" aria-label="Tabular trend data" aria-live="polite"></div>
                         <div id="workspace-trend-metrics" class="workspace-trend-metrics"></div>
                     </section>
                     <section id="workspace-evidence-graph" class="workspace-evidence-graph" aria-labelledby="workspace-evidence-graph-title">
                         <div class="workspace-graph-head">
                             <div><h3 id="workspace-evidence-graph-title">🕸️ Evidence graph</h3><p class="workspace-muted">Explore how candidates connect to claims, citations, pathways, and your review decisions.</p></div>
-                            <div class="workspace-graph-controls"><button class="btn btn-secondary btn-sm" type="button" onclick="fitWorkspaceEvidenceGraph()">Fit graph</button><button class="btn btn-secondary btn-sm" type="button" onclick="reloadWorkspaceEvidenceGraph()">↻ Refresh</button></div>
+                            <div class="workspace-graph-controls"><button class="btn btn-secondary btn-sm" type="button" data-action="workspace-graph-fit">Fit graph</button><button class="btn btn-secondary btn-sm" type="button" data-action="workspace-graph-refresh">↻ Refresh</button></div>
                         </div>
                         <div class="workspace-graph-legend"><span><i class="graph-dot candidate"></i>Candidate</span><span><i class="graph-dot claim"></i>Claim</span><span><i class="graph-dot citation"></i>Citation</span><span><i class="graph-dot pathway"></i>Pathway</span><span><i class="graph-dot decision"></i>Review decision</span></div>
-                        <div id="workspace-graph-status" class="workspace-muted">Run a workspace query to load the evidence graph.</div>
+                        <div id="workspace-graph-status" class="workspace-muted" role="status" aria-live="polite">Run a workspace query to load the evidence graph.</div>
                         <div class="workspace-graph-layout"><div id="workspace-graph-canvas" class="workspace-graph-canvas" role="application" aria-label="Interactive evidence graph"></div><aside id="workspace-graph-detail" class="workspace-graph-detail"><span class="workspace-muted">Select a node to inspect its evidence or review metadata.</span></aside></div>
                     </section>
                 </div>
@@ -179,8 +180,8 @@
                         <span class="tag purple">Interactive</span>
                     </div>
                     <div class="actions">
-                        <button class="btn btn-primary" onclick="runModule('kg')">🔍 Query Graph</button>
-                        <button class="btn btn-secondary" onclick="scrollToExplorer()">🕸️ Explore Graph</button>
+                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="kg">🔍 Query Graph</button>
+                        <button type="button" class="btn btn-secondary" data-action="scroll-explorer">🕸️ Explore Graph</button>
                     </div>
                     <div class="module-result" id="result-kg"><div class="coverage-panel"><span class="coverage-badge coverage-partial">Coverage shown after run</span></div></div>
                 </div>
@@ -204,7 +205,7 @@
                         <span class="tag green">13 Genes</span>
                     </div>
                     <div class="actions">
-                        <button class="btn btn-primary" onclick="runModule('repurpose')">💊 Score Candidates</button>
+                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="repurpose">💊 Score Candidates</button>
                         <a href="/api/export/report/repurpose" class="btn btn-secondary">📊 Report</a>
                     </div>
                     <div class="module-result" id="result-repurpose"><div class="coverage-panel"><span class="coverage-badge coverage-partial">Disease-aware scoring</span></div></div>
@@ -230,10 +231,10 @@
                         <span class="tag blue">STRING</span>
                     </div>
                     <div class="actions">
-                        <button class="btn btn-primary" onclick="runModule('bioinformatics')">🧬 Run All</button>
-                        <button class="btn btn-secondary" onclick="runModule('gwas')">🧬 GWAS</button>
-                        <button class="btn btn-secondary" onclick="runModule('enrichment')">📈 Enrich</button>
-                        <button class="btn btn-secondary" onclick="runModule('ppi')">🔗 PPI</button>
+                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="bioinformatics">🧬 Run All</button>
+                        <button type="button" class="btn btn-secondary" data-action="module-run" data-module="gwas">🧬 GWAS</button>
+                        <button type="button" class="btn btn-secondary" data-action="module-run" data-module="enrichment">📈 Enrich</button>
+                        <button type="button" class="btn btn-secondary" data-action="module-run" data-module="ppi">🔗 PPI</button>
                     </div>
                     <div class="module-result" id="result-bioinformatics"><div class="coverage-panel"><span class="coverage-badge coverage-partial">Coverage shown after run</span></div></div>
                 </div>
@@ -257,7 +258,7 @@
                         <span class="tag blue">Continuous</span>
                     </div>
                     <div class="actions">
-                        <button class="btn btn-primary" onclick="runModule('monitor')">📡 Check Alerts</button>
+                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="monitor">📡 Check Alerts</button>
                         <a href="#evidence-workspace" class="btn btn-secondary">📊 Report</a>
                     </div>
                     <div class="module-result" id="result-monitor"></div>
@@ -282,7 +283,7 @@
                         <span class="tag green">Evidence Levels</span>
                     </div>
                     <div class="actions">
-                        <button class="btn btn-primary" onclick="runModule('extractor')">🤖 Extract Evidence</button>
+                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="extractor">🤖 Extract Evidence</button>
                         <a href="#evidence-workspace" class="btn btn-secondary">📊 Report</a>
                     </div>
                     <div class="module-result" id="result-extractor"></div>
@@ -307,7 +308,7 @@
                         <span class="tag green">5 Sources</span>
                     </div>
                     <div class="actions">
-                        <button class="btn btn-primary" onclick="runModule('evidence')">🌐 Gather Evidence</button>
+                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="evidence">🌐 Gather Evidence</button>
                         <a href="#evidence-workspace" class="btn btn-secondary">📊 Report</a>
                     </div>
                     <div class="module-result" id="result-evidence"></div>
@@ -332,7 +333,7 @@
                         <span class="tag green">Semantic</span>
                     </div>
                     <div class="actions">
-                        <button class="btn btn-primary" onclick="runModule('semantic')">🧠 Semantic Search</button>
+                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="semantic">🧠 Semantic Search</button>
                         <a href="/api/export/modules" class="btn btn-secondary">📊 Report</a>
                     </div>
                     <div class="module-result" id="result-semantic"></div>
@@ -357,7 +358,7 @@
                         <span class="tag blue">BioPython</span>
                     </div>
                     <div class="actions">
-                        <button class="btn btn-primary" onclick="runModule('literature')">📚 Mine Literature</button>
+                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="literature">📚 Mine Literature</button>
                         <a href="/api/export/report/literature" class="btn btn-secondary">📊 Report</a>
                     </div>
                     <div class="module-result" id="result-literature"><div class="coverage-panel"><span class="coverage-badge coverage-partial">Disease-specific sources</span></div></div>
@@ -383,7 +384,7 @@
                         <span class="tag green">26 Compounds</span>
                     </div>
                     <div class="actions">
-                        <button class="btn btn-primary" onclick="runModule('screening')">🔬 Screen</button>
+                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="screening">🔬 Screen</button>
                         <a href="/api/export/report/screening" class="btn btn-secondary">📊 Report</a>
                     </div>
                     <div class="module-result" id="result-screening"><div class="coverage-panel"><span class="coverage-badge coverage-partial">Coverage shown after run</span></div></div>
@@ -408,7 +409,7 @@
                         <span class="tag green">Feature Engineering</span>
                     </div>
                     <div class="actions">
-                        <button class="btn btn-primary" onclick="runModule('ml')">🧠 Predict Targets</button>
+                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="ml">🧠 Predict Targets</button>
                         <a href="/api/export/report/ml" class="btn btn-secondary">📊 Report</a>
                     </div>
                     <div class="module-result" id="result-ml"></div>
@@ -433,7 +434,7 @@
                         <span class="tag blue">Immune Reset</span>
                     </div>
                     <div class="actions">
-                        <button class="btn btn-primary" onclick="runModule('cart')">🔬 Score Genes</button>
+                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="cart">🔬 Score Genes</button>
                         <a href="/api/export/report/cart" class="btn btn-secondary">📊 Report</a>
                     </div>
                     <div class="module-result" id="result-cart"><div class="coverage-panel"><span class="coverage-badge coverage-partial">Curated therapy rubric</span></div></div>
@@ -458,7 +459,7 @@
                         <span class="tag green">5 Platforms</span>
                     </div>
                     <div class="actions">
-                        <button class="btn btn-primary" onclick="runModule('biomarker')">🧬 Discover Biomarkers</button>
+                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="biomarker">🧬 Discover Biomarkers</button>
                         <a href="/api/export/report/biomarker" class="btn btn-secondary">📊 Report</a>
                     </div>
                     <div class="module-result" id="result-biomarker"></div>
@@ -483,7 +484,7 @@
                         <span class="tag green">26 Drugs</span>
                     </div>
                     <div class="actions">
-                        <button class="btn btn-primary" onclick="runModule('expression')">🧬 Correlate Expression</button>
+                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="expression">🧬 Correlate Expression</button>
                         <a href="/api/export/report/expression" class="btn btn-secondary">📊 Report</a>
                     </div>
                     <div class="module-result" id="result-expression"></div>
@@ -508,7 +509,7 @@
                         <span class="tag green">Bridge Nodes</span>
                     </div>
                     <div class="actions">
-                        <button class="btn btn-primary" onclick="runNetworkAnalysis()">🌐 Analyze Network</button>
+                        <button type="button" class="btn btn-primary" data-action="network-analysis">🌐 Analyze Network</button>
                         <a href="/api/export/report/network" class="btn btn-secondary">📊 Report</a>
                     </div>
                     <div class="module-result" id="result-network"></div>
@@ -533,7 +534,7 @@
                         <span class="tag pink">Black Box Warnings</span>
                     </div>
                     <div class="actions">
-                        <button class="btn btn-primary" onclick="runModule('safety')">🛡️ Safety Check</button>
+                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="safety">🛡️ Safety Check</button>
                         <a href="/api/export/report/safety" class="btn btn-secondary">📊 Report</a>
                     </div>
                     <div class="module-result" id="result-safety"><div class="coverage-panel"><span class="coverage-badge coverage-partial">Disease symptoms &amp; risk</span></div></div>
@@ -558,7 +559,7 @@
                         <span class="tag blue">Synergy Scoring</span>
                     </div>
                     <div class="actions">
-                        <button class="btn btn-primary" onclick="runModule('synergy')">🔗 Find Synergies</button>
+                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="synergy">🔗 Find Synergies</button>
                         <a href="/api/export/report/synergy" class="btn btn-secondary">📊 Report</a>
                     </div>
                     <div class="module-result" id="result-synergy"></div>
@@ -583,8 +584,8 @@
                         <span class="tag green">Multi-Disease Scoring</span>
                     </div>
                     <div class="actions">
-                        <button class="btn btn-primary" onclick="runCrossDisease()">🌐 Analyze Cross-Disease</button>
-                        <button class="btn btn-secondary" onclick="runModuleComparison()">⚖️ Compare Modules</button>
+                        <button type="button" class="btn btn-primary" data-action="cross-disease">🌐 Analyze Cross-Disease</button>
+                        <button type="button" class="btn btn-secondary" data-action="module-comparison">⚖️ Compare Modules</button>
                         <a href="/api/export/report/cross-disease" class="btn btn-secondary">📊 Report</a>
                     </div>
                     <div class="module-result" id="result-cross-disease"><span class="placeholder">Click to analyze</span></div>
@@ -609,7 +610,7 @@
                         <span class="tag pink">MoA</span>
                     </div>
                     <div class="actions">
-                        <button class="btn btn-primary" onclick="runModule('trials')">📋 Track Trials</button>
+                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="trials">📋 Track Trials</button>
                         <a href="/api/export/report/trials" class="btn btn-secondary">📊 Report</a>
                     </div>
                     <div class="module-result" id="result-trials"></div>
@@ -636,7 +637,7 @@
                         <span class="tag green">Backups</span>
                     </div>
                     <div class="actions">
-                        <button class="btn btn-primary" onclick="openDiseaseManager()">🛠️ Manage Module</button>
+                        <button type="button" class="btn btn-primary" data-action="disease-manager-open">🛠️ Manage Module</button>
                     </div>
                     <div class="module-result" id="result-manage"></div>
                 </div>
@@ -656,7 +657,7 @@
                         <label class="kg-filter"><input type="checkbox" data-type="pathway" checked> <span class="dot" style="background:#f59e0b;"></span> Pathways</label>
                         <label class="kg-filter"><input type="checkbox" data-type="disease" checked> <span class="dot" style="background:#f43f5e;"></span> Diseases</label>
                     </div>
-                    <button class="btn btn-secondary" id="kg-reset" onclick="resetKGExplorer()">🔄 Reset Layout</button>
+                    <button type="button" class="btn btn-secondary" id="kg-reset" data-action="kg-reset">🔄 Reset Layout</button>
                 </div>
                 <div class="kg-body">
                     <div id="kg-canvas" class="kg-canvas">

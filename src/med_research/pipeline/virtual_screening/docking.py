@@ -353,16 +353,20 @@ def _smiles_to_3d_mol(smiles: str) -> Any | None:
             return None
 
         mol = Chem.AddHs(mol)
-        params = AllChem.ETKDGv3()
+        # AllChem re-exports these from compiled rdMolDescriptors modules;
+        # mypy cannot resolve them, so each call is annotated with the code.
+        params = AllChem.ETKDGv3()  # type: ignore[attr-defined]
         params.randomSeed = 42
-        status = AllChem.EmbedMolecule(mol, params)
+        status = AllChem.EmbedMolecule(mol, params)  # type: ignore[attr-defined]
         if status != 0:
             # Fallback: basic distance geometry
-            status = AllChem.EmbedMolecule(mol, AllChem.ETKDG())
+            status = AllChem.EmbedMolecule(  # type: ignore[attr-defined]
+                mol, AllChem.ETKDG()  # type: ignore[attr-defined]
+            )
             if status != 0:
                 return None
 
-        AllChem.MMFFOptimizeMolecule(mol)
+        AllChem.MMFFOptimizeMolecule(mol)  # type: ignore[attr-defined]
         return mol
     except (ImportError, ValueError, RuntimeError):
         return None

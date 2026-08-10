@@ -22,6 +22,7 @@ import argparse
 import json
 import sys
 from pathlib import Path
+from typing import Any, cast
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
@@ -30,10 +31,11 @@ import logging
 from med_research.cache import disease_output_path, write_json_atomic
 from med_research.exceptions import DataValidationError
 from med_research.pipeline.knowledge_graph.config import load_relationships
-from med_research.pipeline.progress import StandardProgress, _tick
+from med_research.pipeline.progress import StandardProgress, _tick, cli_progress
+from med_research.pipeline.results import BiomarkerRow
 
 if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # type: ignore[union-attr]
 
 DATA_DIR = Path(__file__).parent / "data"
 
@@ -54,7 +56,7 @@ _MODULE_DATA_DIRS = {
 
 def load_json(path: Path) -> dict:
     with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
+        return cast(dict, json.load(f))
 
 
 # ── Load All Module Results ──────────────────────────────────────────────
@@ -71,7 +73,7 @@ def load_all_modules(disease_id: str = "sle") -> dict:
 
     Returns dict keyed by module name.
     """
-    results = {}
+    results: dict[str, Any] = {}
 
     # Gene Expression Correlation
     try:
@@ -114,7 +116,7 @@ def load_all_modules(disease_id: str = "sle") -> dict:
 # ── Gene → Module Score Mapping ─────────────────────────────────────────
 
 
-_GENE_DRUG_TARGET_CACHE: dict = {}
+_GENE_DRUG_TARGET_CACHE: dict[str, dict] = {}
 
 
 def _build_gene_drug_target_map(disease_id: str = "sle") -> dict:
@@ -228,7 +230,7 @@ def map_gene_to_modules(genes: dict, module_data: dict, disease_id: str = "sle")
 # ── Scoring ─────────────────────────────────────────────────────────────
 
 
-def score_biomarker(row: dict) -> dict:
+def score_biomarker(row: dict) -> BiomarkerRow:
     """Score a single gene as a biomarker across all treatment modalities."""
     consistency = row.get("consistency", 5.0)
     expression = row.get("expression_max", 0) * 0.8  # Scale to ~0-8
@@ -258,7 +260,7 @@ def score_biomarker(row: dict) -> dict:
         "CAR-T Therapy": row.get("cart_score", 0),
         "Expression-Targeted": row.get("expression_max", 0),
     }
-    best_modality = max(modalities, key=modalities.get)
+    best_modality = max(modalities, key=lambda m: modalities.get(m, 0))
 
     return {
         **row,
@@ -288,7 +290,7 @@ def compute_biomarker_matrix(
     progress_callback: StandardProgress | None = None,
     disease_id: str = "sle",
     save: bool = True,
-) -> list:
+) -> list[BiomarkerRow]:
     """Full pipeline: load modules, map genes, score biomarkers.
 
     Args:
@@ -341,7 +343,7 @@ def compute_biomarker_matrix(
 # ── CLI ──────────────────────────────────────────────────────────────────
 
 
-def analyze(results: list):
+def analyze(results: list) -> None:
     """Print summary."""
     logger.info("\n" + "=" * 75)
     logger.info("🧬 BIOMARKER DISCOVERY — Cross-Module Integration")
@@ -352,7 +354,7 @@ def analyze(results: list):
     logger.info(f"  Score range: {min(scores):.2f} - {max(scores):.2f}")
     logger.info(f"  Mean score: {sum(scores)/len(scores):.2f}")
 
-    tier_counts = {}
+    tier_counts: dict[str, int] = {}
     for r in results:
         tier_counts[r["tier"]] = tier_counts.get(r["tier"], 0) + 1
     logger.info("\n  Distribution by tier:")
@@ -363,7 +365,7 @@ def analyze(results: list):
         logger.info(f"    {label}: {count} biomarkers")
 
 
-def print_top_biomarkers(results: list, top_n: int = 15):
+def print_top_biomarkers(results: list, top_n: int = 15) -> None:
     """Print top biomarkers."""
     logger.info("\n" + "=" * 75)
     logger.info(f"🎯 TOP {top_n} BIOMARKER CANDIDATES")
@@ -392,7 +394,7 @@ def main():
     parser.add_argument("--export-html", action="store_true", help="Generate HTML report")
     args = parser.parse_args()
 
-    results = compute_biomarker_matrix(disease_id=args.disease)
+    results = compute_biomarker_matrix(disease_id=args.disease, progress_callback=cli_progress)
     analyze(results)
     print_top_biomarkers(results, args.top)
 

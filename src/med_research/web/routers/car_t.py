@@ -1,5 +1,7 @@
 """CAR-T Response Predictor API router."""
 
+from typing import Any
+
 from fastapi import APIRouter, Query
 
 from med_research.web.models.car_t import CARTResponse
@@ -13,7 +15,7 @@ async def cart_suitability(
     top_n: int = Query(35, ge=1, le=35, description="Number of top genes to return"),
     disease: str = Query("sle", description="Legacy disease ID parameter"),
     disease_id: str | None = Query(None, description="Disease ID to score genes for"),
-):
+) -> dict[str, Any]:
     """Score genes for CD19 CAR-T cell therapy suitability.
 
     Returns ranked genes scored across 5 dimensions: B cell dependency,

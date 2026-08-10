@@ -1,5 +1,7 @@
 """Analysis API routers — Literature, Screening, Trials, ML."""
 
+from typing import Any
+
 from fastapi import APIRouter, Query
 
 from med_research.web.models.shared import (
@@ -26,7 +28,7 @@ async def literature_mining(
     targeted: bool = Query(False, description="Include per-drug targeted queries"),
     no_cache: bool = Query(False, description="Skip cache"),
     disease_id: str = Query("sle", description="Disease ID"),
-):
+) -> dict[str, Any]:
     """Mine PubMed for disease-related articles with biomedical NER."""
     return run_literature(
         max_articles=max_articles,
@@ -44,7 +46,7 @@ async def virtual_screening(
     top_n: int = Query(15, ge=1, le=50, description="Top compounds per target"),
     use_vina: bool = Query(False, description="Use AutoDock Vina docking"),
     disease_id: str = Query("sle", description="Disease ID"),
-):
+) -> dict[str, Any]:
     """Run virtual drug screening against a disease's targets."""
     return run_screening(gene_id=gene_id, top_n=top_n, use_vina=use_vina, disease_id=disease_id)
 
@@ -57,7 +59,7 @@ async def clinical_trials(
     query: str | None = Query(None, min_length=1, max_length=500, description="ClinicalTrials.gov search query"),
     no_cache: bool = Query(False, description="Skip cache"),
     disease_id: str = Query("sle", description="Disease ID"),
-):
+) -> dict[str, Any]:
     """Track disease-specific clinical trials from ClinicalTrials.gov."""
     return run_trials(
         max_trials=max_trials,
@@ -74,6 +76,6 @@ async def ml_predictor(
     top_n: int = Query(15, ge=1, le=50, description="Top predictions"),
     no_shap: bool = Query(False, description="Skip SHAP analysis"),
     disease_id: str = Query("sle", description="Disease ID"),
-):
+) -> dict[str, Any]:
     """Run ML target druggability prediction with XGBoost + SHAP."""
     return run_ml_prediction(top_n=top_n, no_shap=no_shap, disease_id=disease_id)

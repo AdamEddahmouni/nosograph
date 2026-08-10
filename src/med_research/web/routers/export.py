@@ -7,6 +7,7 @@ tooling (notebooks, dashboards, papers) can consume the data directly.
 
 import json
 from pathlib import Path
+from typing import Any
 
 from fastapi import APIRouter, HTTPException
 from fastapi.responses import FileResponse, JSONResponse, PlainTextResponse
@@ -66,7 +67,7 @@ def _all_pipeline_data_dirs() -> list[Path]:
 
 
 @router.get("/modules")
-def list_export_modules():
+def list_export_modules() -> dict[str, Any]:
     """List all modules available for JSON export with their file names."""
     items = []
     for name, fname in MODULE_FILES.items():
@@ -79,7 +80,7 @@ def list_export_modules():
 
 
 @router.get("/json/{module}")
-def export_module_json(module: str):
+def export_module_json(module: str) -> JSONResponse:
     """Download a module's latest results as raw JSON."""
     fname = MODULE_FILES.get(module)
     if fname is None:
@@ -101,7 +102,7 @@ def export_module_json(module: str):
 
 
 @router.get("/raw/{module}")
-def export_module_raw(module: str):
+def export_module_raw(module: str) -> FileResponse:
     """Download a module's raw results file (original JSON layout)."""
     fname = MODULE_FILES.get(module)
     if fname is None:
@@ -121,7 +122,7 @@ def export_module_raw(module: str):
 
 
 @router.get("/report/{module}")
-def export_module_report(module: str):
+def export_module_report(module: str) -> FileResponse:
     """Download a module's rendered HTML report."""
     entry = MODULE_REPORTS.get(module)
     if entry is None:
@@ -143,7 +144,7 @@ def export_module_report(module: str):
 
 
 @router.get("/report/{module}/print.css")
-def export_print_stylesheet(module: str):
+def export_print_stylesheet(module: str) -> PlainTextResponse:
     """Serve the shared print stylesheet used when saving reports to PDF."""
     css = _PRINT_CSS
     return PlainTextResponse(css, media_type="text/css")

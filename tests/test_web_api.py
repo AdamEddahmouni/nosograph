@@ -12,6 +12,7 @@ Tests cover all REST endpoints using FastAPI's TestClient:
   - Static serving: dashboard, module reports, API docs
 """
 
+import importlib.util
 import socket
 from unittest.mock import patch
 
@@ -38,6 +39,14 @@ REDIS_AVAILABLE = _redis_available()
 skip_without_redis = pytest.mark.skipif(
     not REDIS_AVAILABLE,
     reason="Redis server not available on localhost:6379",
+)
+ML_DEPENDENCIES_AVAILABLE = all(
+    importlib.util.find_spec(name) is not None
+    for name in ("numpy", "sklearn", "xgboost")
+)
+skip_without_ml = pytest.mark.skipif(
+    not ML_DEPENDENCIES_AVAILABLE,
+    reason="ML dependencies (numpy, scikit-learn, and xgboost) are not installed",
 )
 
 
@@ -495,16 +504,27 @@ class TestRepurposeGene:
 class TestBioGWAS:
     """Tests for GET /api/bioinformatics/gwas (uses cache)."""
 
-    def test_returns_200(self, client):
+    def _patch_gwas_engine(self, monkeypatch, gwas_result):
+        """Serve the shared session fixture instead of re-running the live GWAS compute."""
+        monkeypatch.setattr(
+            "med_research.pipeline.bioinformatics.gwas.run_gwas_analysis",
+            lambda disease_id="sle", max_studies=30, use_cache=True,
+            resolve_snps=True, progress_callback=None: gwas_result,
+        )
+
+    def test_returns_200(self, client, gwas_result, monkeypatch):
+        self._patch_gwas_engine(monkeypatch, gwas_result)
         resp = client.get("/api/bioinformatics/gwas?max_studies=5")
         assert resp.status_code == 200
 
-    def test_has_required_keys(self, client):
+    def test_has_required_keys(self, client, gwas_result, monkeypatch):
+        self._patch_gwas_engine(monkeypatch, gwas_result)
         data = client.get("/api/bioinformatics/gwas?max_studies=5").json()
         for key in ["total_studies", "total_associations", "unique_genes", "crossref", "top_hits"]:
             assert key in data, f"Missing key: {key}"
 
-    def test_crossref_has_validated(self, client):
+    def test_crossref_has_validated(self, client, gwas_result, monkeypatch):
+        self._patch_gwas_engine(monkeypatch, gwas_result)
         crossref = client.get("/api/bioinformatics/gwas?max_studies=5").json()["crossref"]
         assert "validated" in crossref
         assert "novel" in crossref
@@ -513,7 +533,8 @@ class TestBioGWAS:
         assert "n_novel" in crossref
         assert "n_missing" in crossref
 
-    def test_top_hits_are_list(self, client):
+    def test_top_hits_are_list(self, client, gwas_result, monkeypatch):
+        self._patch_gwas_engine(monkeypatch, gwas_result)
         top_hits = client.get("/api/bioinformatics/gwas?max_studies=5").json()["top_hits"]
         assert isinstance(top_hits, list)
 
@@ -584,12 +605,10 @@ class TestBioPPI:
 class TestAnalysisLiterature:
     """Tests for GET /api/literature (uses cached results)."""
 
-    @pytest.mark.slow
     def test_returns_200(self, client):
         resp = client.get("/api/literature?max_articles=5")
         assert resp.status_code == 200
 
-    @pytest.mark.slow
     def test_has_required_keys(self, client):
         data = client.get("/api/literature?max_articles=5").json()
         for key in ["total_articles", "queries_run", "articles", "gene_coverage", "candidate_support"]:
@@ -599,30 +618,25 @@ class TestAnalysisLiterature:
 class TestAnalysisScreening:
     """Tests for GET /api/screening."""
 
-    @pytest.mark.slow
     def test_returns_200(self, client):
         resp = client.get("/api/screening?top_n=5")
         assert resp.status_code == 200
 
-    @pytest.mark.slow
     def test_has_required_keys(self, client):
         data = client.get("/api/screening?top_n=5").json()
         for key in ["targets", "compounds_screened", "total_pairings", "tier1_count", "tier2_count", "vina_available", "rdkit_available"]:
             assert key in data, f"Missing key: {key}"
 
-    @pytest.mark.slow
     def test_vina_and_rdkit_fields_are_bools(self, client):
         data = client.get("/api/screening?top_n=5").json()
         assert isinstance(data["vina_available"], bool)
         assert isinstance(data["rdkit_available"], bool)
 
-    @pytest.mark.slow
     def test_targets_are_list(self, client):
         targets = client.get("/api/screening?top_n=5").json()["targets"]
         assert isinstance(targets, list)
         assert len(targets) >= 1
 
-    @pytest.mark.slow
     def test_target_has_compounds(self, client):
         target = client.get("/api/screening?top_n=5").json()["targets"][0]
         assert "gene_id" in target
@@ -630,7 +644,6 @@ class TestAnalysisScreening:
         assert "top_compounds" in target
         assert isinstance(target["top_compounds"], list)
 
-    @pytest.mark.slow
     def test_compound_has_scores(self, client):
         compounds = client.get("/api/screening?top_n=5").json()["targets"][0]["top_compounds"]
         if compounds:
@@ -638,7 +651,6 @@ class TestAnalysisScreening:
             for field in ["drug_id", "drug_name", "composite_score", "binding_estimate", "druglikeness", "tier"]:
                 assert field in c, f"Missing field: {field}"
 
-    @pytest.mark.slow
     def test_filter_by_gene(self, client):
         data = client.get("/api/screening?gene_id=BTK&top_n=5").json()
         assert len(data["targets"]) == 1
@@ -648,50 +660,43 @@ class TestAnalysisScreening:
 class TestAnalysisTrials:
     """Tests for GET /api/trials (uses cached results)."""
 
-    @pytest.mark.slow
     def test_returns_200(self, client):
         resp = client.get("/api/trials?max_trials=5")
         assert resp.status_code == 200
 
-    @pytest.mark.slow
     def test_has_required_keys(self, client):
         data = client.get("/api/trials?max_trials=5").json()
         for key in ["total_trials", "phase_distribution", "moa_distribution", "top_sponsors", "trials"]:
             assert key in data, f"Missing key: {key}"
 
 
+@skip_without_ml
 class TestAnalysisML:
     """Tests for GET /api/ml/predict."""
 
-    @pytest.mark.slow
     def test_returns_200(self, client):
         resp = client.get("/api/ml/predict?top_n=5")
         assert resp.status_code == 200
 
-    @pytest.mark.slow
     def test_has_required_keys(self, client):
         data = client.get("/api/ml/predict?top_n=5").json()
         for key in ["predictions", "model_type", "top_features"]:
             assert key in data, f"Missing key: {key}"
 
-    @pytest.mark.slow
     def test_model_type_is_xgboost(self, client):
         data = client.get("/api/ml/predict?top_n=5").json()
         assert data["model_type"] == "XGBoost"
 
-    @pytest.mark.slow
     def test_predictions_have_rank(self, client):
         predictions = client.get("/api/ml/predict?top_n=5").json()["predictions"]
         if predictions:
             assert "rank" in predictions[0]
             assert predictions[0]["rank"] == 1
 
-    @pytest.mark.slow
     def test_respects_top_n(self, client):
         data = client.get("/api/ml/predict?top_n=3").json()
         assert len(data["predictions"]) <= 3
 
-    @pytest.mark.slow
     def test_prediction_has_gene_info(self, client):
         predictions = client.get("/api/ml/predict?top_n=5").json()["predictions"]
         if predictions:
@@ -1230,8 +1235,13 @@ class TestCrossDiseaseApi:
         assert len(data["drugs"]) <= 5
 
     @pytest.mark.slow
-    def test_modules_endpoint_returns_stacked_matrices(self, client):
+    def test_modules_endpoint_returns_stacked_matrices(self, client, comparative_modules, monkeypatch):
         """Comparative modules endpoint stacks biomarker/expression/synergy per disease."""
+        # The 7.5s cross-disease compute is shared via the session fixture.
+        monkeypatch.setattr(
+            "med_research.pipeline.cross_disease.analyzer.compute_comparative_modules",
+            lambda progress_callback=None, top_synergy=5: comparative_modules,
+        )
         resp = client.get("/api/cross-disease/modules?top_synergy=3")
         assert resp.status_code == 200
         data = resp.json()
@@ -1250,7 +1260,11 @@ class TestCrossDiseaseApi:
             assert "score" in sle_top[0]
 
     @pytest.mark.slow
-    def test_modules_endpoint_counts_positive(self, client):
+    def test_modules_endpoint_counts_positive(self, client, comparative_modules, monkeypatch):
+        monkeypatch.setattr(
+            "med_research.pipeline.cross_disease.analyzer.compute_comparative_modules",
+            lambda progress_callback=None, top_synergy=5: comparative_modules,
+        )
         resp = client.get("/api/cross-disease/modules")
         data = resp.json()
         counts = data["modules"]["biomarker"]["counts"]

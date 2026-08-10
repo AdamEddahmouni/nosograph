@@ -296,11 +296,9 @@ def test_compute_comparative_modules_returns_all_diseases(monkeypatch):
     assert sle_top[0]["score"] == 8.25
 
 
-@pytest.mark.slow
-def test_compute_comparative_modules_scores_per_disease():
+def test_compute_comparative_modules_scores_per_disease(comparative_modules):
     """Each disease should get its own biomarker/expression/synergy scores."""
-    result = compute_comparative_modules()
-    modules = result["modules"]
+    modules = comparative_modules["modules"]
 
     # SLE has the most genes and should appear in the biomarker matrix
     assert "sle" in modules["biomarker"]["counts"]
@@ -329,7 +327,6 @@ def test_escape_html_cross_disease():
     assert escape_html("AT&T") == "AT&amp;T"
 
 
-@pytest.mark.slow
 def test_generate_html_report(analysis_results):
     from med_research.pipeline.cross_disease.report import generate_html_report
 
@@ -342,7 +339,6 @@ def test_generate_html_report(analysis_results):
 # ── CLI Integration ────────────────────────────────────────────────────────
 
 
-@pytest.mark.slow
 def test_cross_disease_cli_help():
     from tests.cli_helpers import cli_help_output
 

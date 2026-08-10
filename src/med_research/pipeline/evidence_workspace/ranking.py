@@ -4,11 +4,12 @@ from __future__ import annotations
 
 from collections import defaultdict
 from datetime import date
+from typing import Literal
 
 from .schemas import Claim, EvidenceRecord, RankedCandidate
 
 
-def _band(score: float) -> str:
+def _band(score: float) -> Literal["low", "moderate", "high"]:
     if score >= 70:
         return "high"
     if score >= 40:
@@ -19,7 +20,9 @@ def _band(score: float) -> str:
 def rank_candidates(
     records: list[EvidenceRecord], claims: list[Claim], candidate_type: str
 ) -> list[RankedCandidate]:
-    allowed = {"drug": "drug", "drugs": "drug", "target": "target", "targets": "target"}
+    allowed: dict[str, Literal["drug", "target"]] = {
+        "drug": "drug", "drugs": "drug", "target": "target", "targets": "target"
+    }
     subject_type = allowed.get(candidate_type)
     if subject_type is None:
         raise ValueError(f"unsupported candidate type: {candidate_type}")
@@ -39,8 +42,8 @@ def rank_candidates(
             claim for claim in candidate_claims if claim.relationship == "associated_with"
         ]
         all_claims = support + contradiction + associated
-        support_quality = []
-        contradiction_quality = []
+        support_quality: list[float] = []
+        contradiction_quality: list[float] = []
         for claim in support:
             support_quality.extend(
                 record_index[evidence_id].quality_score

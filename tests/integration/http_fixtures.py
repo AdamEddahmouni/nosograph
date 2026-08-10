@@ -86,11 +86,21 @@ def offline_pipeline_http_mocks(monkeypatch):
 
     def fake_run_gwas_analysis(disease_id: str = "sle", **kwargs):
         return {
-            "gwas_results": [],
+            # The real engine emits gwas_results as a dict; the result
+            # contract (GwasResult) validates it as such.
+            "gwas_results": {
+                "gene_associations": {},
+                "total_studies_analyzed": 0,
+                "total_associations": 0,
+                "study_details": [],
+                "snp_data": [],
+            },
+            # The real engine cross-references GWAS genes into symbol-keyed
+            # dicts; the report and web layers iterate those dicts.
             "crossref": {
-                "validated": [],
-                "novel": [],
-                "missing": [],
+                "validated": {},
+                "novel": {},
+                "missing": {},
                 "n_validated": 0,
                 "n_novel": 0,
                 "n_missing": 0,

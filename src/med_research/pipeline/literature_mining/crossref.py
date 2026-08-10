@@ -12,8 +12,10 @@ identifies literature-supported repurposing candidates.
 
 import json
 from pathlib import Path
+from typing import Any, Mapping
 
 from med_research.pipeline.knowledge_graph.config import load_drugs, load_genes, load_pathways
+from med_research.pipeline.results import LiteratureResults
 
 PROJECT_ROOT = Path(__file__).parent.parent
 DR_DATA_DIR = PROJECT_ROOT / "drug_repurposing" / "data"
@@ -30,9 +32,9 @@ def _get_ner():
     return _biomedical_ner
 
 
-def load_kg_entities(disease_id: str = "sle"):
+def load_kg_entities(disease_id: str = "sle") -> dict[str, Any]:
     """Load all named entities from a disease's knowledge graph data files."""
-    entities = {
+    entities: dict[str, Any] = {
         "genes": {},
         "drugs": {},
         "pathways": {},
@@ -79,7 +81,7 @@ def load_repurposing_candidates():
     return candidates_data["repurposing_candidates"]
 
 
-def _generate_gene_synonyms(gene: dict) -> list:
+def _generate_gene_synonyms(gene: Mapping[str, Any]) -> list:
     """Generate search synonyms for a gene."""
     synonyms = [gene["name"].lower()]
     if "function" in gene and gene["function"]:
@@ -94,7 +96,7 @@ def _generate_gene_synonyms(gene: dict) -> list:
     return list(set(synonyms))
 
 
-def _generate_drug_synonyms(drug: dict) -> list:
+def _generate_drug_synonyms(drug: Mapping[str, Any]) -> list:
     """Generate search synonyms for a drug including brand and generic names."""
     synonyms = [drug["name"].lower()]
     # Extract brand name from "Generic (Brand)" format
@@ -109,7 +111,9 @@ def _generate_drug_synonyms(drug: dict) -> list:
     return list(set(synonyms))
 
 
-def cross_reference_articles(articles: list, entities: dict, candidates: list) -> dict:
+def cross_reference_articles(
+    articles: list, entities: dict, candidates: list
+) -> LiteratureResults:
     """
     Cross-reference extracted article entities against the knowledge graph.
 
@@ -123,9 +127,9 @@ def cross_reference_articles(articles: list, entities: dict, candidates: list) -
       - stats: summary statistics
     """
     article_matches = []
-    candidate_support = {}
-    gene_article_counts = {}
-    drug_article_counts = {}
+    candidate_support: dict[str, Any] = {}
+    gene_article_counts: dict[str, Any] = {}
+    drug_article_counts: dict[str, Any] = {}
 
     for article in articles:
         matches = _match_article_entities(article, entities)
@@ -171,7 +175,7 @@ def cross_reference_articles(articles: list, entities: dict, candidates: list) -
     article_matches.sort(key=lambda a: a["relevance_score"], reverse=True)
 
     # Aggregate novel entities across all articles
-    all_novel = {"chemicals": set(), "diseases": set(), "genes": set()}
+    all_novel: dict[str, set[str]] = {"chemicals": set(), "diseases": set(), "genes": set()}
     all_variants = set()
     all_clinical = set()
     all_statistics = set()
@@ -332,15 +336,15 @@ def _compute_relevance(matches: dict) -> float:
     Novel entities (from spaCy) provide a small bonus for discovery potential.
     """
     score = 0.0
-    score += matches["gene_count"] * 2.0
-    score += matches["drug_count"] * 2.0
-    score += matches["pathway_count"] * 1.5
+    score += float(matches["gene_count"]) * 2.0
+    score += float(matches["drug_count"]) * 2.0
+    score += float(matches["pathway_count"]) * 1.5
 
     # Bonus for co-mentioning a gene and drug (potential relationship)
     if matches["gene_count"] > 0 and matches["drug_count"] > 0:
         score += 5.0
 
     # Small bonus for novel entities discovered by spaCy
-    score += matches.get("novel_count", 0) * 0.5
+    score += float(matches.get("novel_count", 0)) * 0.5
 
     return round(score, 1)

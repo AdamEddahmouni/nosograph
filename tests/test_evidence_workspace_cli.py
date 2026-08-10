@@ -1,5 +1,6 @@
-from med_research.cli import _build_parser, cmd_workspace
-from med_research.pipeline.evidence_workspace.schemas import EvidenceDossier
+from med_research.cli import _build_parser, cmd_workspace, cmd_workspace_migrate
+from med_research.pipeline.evidence_workspace.schemas import EvidenceDossier, ResearchRequest
+from med_research.web.services.workspace_store import WorkspaceRunStore
 
 
 def test_workspace_cli_parser_accepts_question_sources_and_exports():
@@ -24,6 +25,44 @@ def test_workspace_cli_parser_accepts_question_sources_and_exports():
     assert args.enable_llm is False
     assert args.json_path == "out.json"
     assert args.html_path == "out.html"
+
+
+def test_workspace_migrate_cli_defaults_to_dry_run_then_applies(tmp_path, capsys):
+    import json
+    import sqlite3
+
+    path = tmp_path / "workspace.sqlite3"
+    store = WorkspaceRunStore(path)
+    store.create_run("ew-cli-legacy", ResearchRequest(question="Find JAK interventions"))
+    with sqlite3.connect(path) as connection:
+        connection.execute(
+            "UPDATE workspace_runs SET request_json=?, request_schema_version='1.0' "
+            "WHERE run_id=?",
+            (json.dumps({"question": "Find JAK interventions"}), "ew-cli-legacy"),
+        )
+
+    args = _build_parser().parse_args(
+        ["workspace-migrate", "--db", str(path), "--dry-run", "--json"]
+    )
+    assert cmd_workspace_migrate(args) == 0
+    report = json.loads(capsys.readouterr().out)
+    assert report["dry_run"] is True
+    assert report["legacy"] == 1
+    assert report["migrated"] == 0
+
+    with sqlite3.connect(path) as connection:
+        request_json = connection.execute(
+            "SELECT request_json FROM workspace_runs WHERE run_id=?", ("ew-cli-legacy",)
+        ).fetchone()[0]
+    assert "schema_version" not in json.loads(request_json)
+
+    args = _build_parser().parse_args(
+        ["workspace-migrate", "--db", str(path), "--apply", "--json"]
+    )
+    assert cmd_workspace_migrate(args) == 0
+    report = json.loads(capsys.readouterr().out)
+    assert report["dry_run"] is False
+    assert report["migrated"] == 1
 
 
 def test_workspace_cli_runs_and_writes_requested_exports(monkeypatch, tmp_path, caplog):

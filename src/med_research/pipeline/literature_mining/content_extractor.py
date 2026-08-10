@@ -67,7 +67,7 @@ class ContentExtractor:
     (methods details, background citations, statistical methodology).
     """
 
-    def __init__(self, known_terms: set = None):
+    def __init__(self, known_terms: set[str] | None = None):
         """
         Args:
             known_terms: Set of lowercase entity terms to match against.

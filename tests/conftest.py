@@ -85,3 +85,77 @@ def sample_candidates():
     """Load repurposing candidates."""
     data = json.loads((DR_DATA_DIR / "candidates.json").read_text(encoding="utf-8"))
     return data["repurposing_candidates"]
+
+
+@pytest.fixture(scope="session")
+def comparative_modules():
+    """Cross-disease comparative module stack, computed once per process.
+
+    ``compute_comparative_modules`` runs biomarker/expression/synergy for all
+    seven diseases (~7.5s). Sharing it as a session fixture means the demoted
+    score test and the two HTTP modules-endpoint tests each get the result
+    from a single real engine run instead of recomputing it per call site.
+    """
+    from med_research.pipeline.cross_disease.analyzer import compute_comparative_modules
+
+    return compute_comparative_modules()
+
+
+class _FakeEmbedder:
+    """SentenceTransformer stand-in returning zero vectors.
+
+    Semantic-search empty paths (no indexed collection) return before any
+    text is embedded, so the real all-MiniLM-L6-v2 model is never used there.
+    Loading it costs ~2s per engine instance; sharing this stand-in avoids
+    paying that load in tests that only exercise the empty path.
+    """
+
+    def encode(self, texts):
+        if isinstance(texts, str):
+            texts = [texts]
+        return [[0.0] * 384 for _ in texts]
+
+
+@pytest.fixture(scope="session")
+def semantic_fake_embedder():
+    """Shared embedder for semantic-search tests that exercise empty paths."""
+    return _FakeEmbedder()
+
+
+@pytest.fixture(scope="session")
+def gwas_result():
+    """GWAS engine result, computed once per process.
+
+    ``run_gwas_analysis`` performs live GWAS Catalog searches plus per-term
+    rate-limit sleeps (~7s). The four TestBioGWAS endpoint tests each used to
+    trigger that compute independently; sharing the result as a session
+    fixture runs the real engine once and lets the endpoint tests exercise
+    routing/dispatch/serialization against the shared output.
+    """
+    from med_research.pipeline.bioinformatics.gwas import run_gwas_analysis
+
+    return run_gwas_analysis(disease_id="sle", max_studies=5, use_cache=True)
+
+
+@pytest.fixture(scope="session")
+def synergy_pairs():
+    """Drug-synergy pairs for RA, computed once per process."""
+    from med_research.pipeline.drug_synergy.engine import compute_synergy
+
+    return compute_synergy(disease_id="ra", save=False)
+
+
+@pytest.fixture(scope="session")
+def expression_results():
+    """Gene-expression correlations for RA, computed once per process."""
+    from med_research.pipeline.gene_expression.correlator import compute_all_correlations
+
+    return compute_all_correlations(disease_id="ra", save=False)
+
+
+@pytest.fixture(scope="session")
+def cross_disease_analysis():
+    """Cross-disease analysis result, computed once per process."""
+    from med_research.pipeline.cross_disease.analyzer import compute_cross_disease_analysis
+
+    return compute_cross_disease_analysis()

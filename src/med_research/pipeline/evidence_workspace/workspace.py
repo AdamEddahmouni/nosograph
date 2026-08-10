@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from datetime import datetime, timezone
+from typing import Any
 from uuid import uuid4
 
 from med_research.diseases.base import Disease
@@ -45,8 +46,8 @@ def validate_disease_contract(disease_id: str) -> None:
 def run_workspace(
     request: ResearchRequest | dict,
     sources: dict[str, EvidenceSource] | None = None,
-    graph=None,
-    llm_client=None,
+    graph: Any = None,
+    llm_client: Any = None,
     model: str | None = None,
     progress_callback: StandardProgress | None = None,
 ) -> EvidenceDossier:
@@ -109,7 +110,7 @@ def run_workspace(
     except TypeError:
         request_dump = request.model_dump()
     source_counts = {status.source: status.records_found for status in statuses}
-    retrieval_times = {
+    retrieval_times: dict[str, str] = {
         status.source: status.retrieved_at.isoformat() for status in statuses
     }
     retrieval_modes = {
@@ -125,7 +126,7 @@ def run_workspace(
         if known_modes
         else "unknown"
     )
-    manifest = {
+    manifest: dict[str, Any] = {
         "package_version": package_version(),
         "sources": list(request.sources),
         "source_counts": source_counts,

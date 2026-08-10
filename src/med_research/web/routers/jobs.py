@@ -1,6 +1,7 @@
 """Job management API router — submit and track Celery tasks."""
 
 import asyncio
+import inspect
 import json
 import logging
 from typing import Annotated, Any
@@ -8,13 +9,19 @@ from uuid import UUID
 
 from celery.result import AsyncResult
 from fastapi import APIRouter, Depends, HTTPException, Request, WebSocket, WebSocketDisconnect
-from pydantic import ValidationError
+from pydantic import Field, ValidationError
 
 from med_research.pipeline.evidence_workspace.schemas import ResearchRequest
+from med_research.pipeline.registry import module_catalog
 from med_research.web.dependencies import safe_serialize
 from med_research.web.identity import DEFAULT_RESEARCHER_ID, get_researcher_id
 from med_research.web.models import JobStatus, JobSubmitResponse
-from med_research.web.models.jobs import GenericModuleJobRequest, RunAllJobRequest
+from med_research.web.models.jobs import (
+    GenericModuleJobRequest,
+    RunAllJobRequest,
+    module_body_request_model,
+    module_job_request_model,
+)
 from med_research.web.services.registry_service import resolve_module_id
 from med_research.web.tasks.analysis_tasks import (
     celery_app,
@@ -34,6 +41,7 @@ from med_research.web.tasks.analysis_tasks import (
 
 router = APIRouter(prefix="/api/jobs", tags=["Jobs"])
 logger = logging.getLogger(__name__)
+WorkspaceJobRequest = module_body_request_model("evidence_workspace")
 
 
 def _celery_backend_errors() -> tuple[type[BaseException], ...]:
@@ -76,6 +84,52 @@ def _parse_generic_job_request(request: Request) -> GenericModuleJobRequest:
         raise HTTPException(status_code=422, detail=json.loads(exc.json())) from exc
 
 
+def _make_catalog_request_dependency(request_model: type[Any]) -> Any:
+    """Create a validating query dependency while preserving model OpenAPI docs."""
+
+    parameters = []
+    for name, parameter in inspect.signature(request_model).parameters.items():
+        field = request_model.model_fields.get(name)
+        annotation = parameter.annotation
+        if field is not None and field.json_schema_extra:
+            annotation = Annotated[
+                annotation,
+                Field(json_schema_extra=field.json_schema_extra),
+            ]
+        parameters.append(parameter.replace(annotation=annotation))
+    parameters.insert(
+        0,
+        inspect.Parameter(
+            "request",
+            inspect.Parameter.KEYWORD_ONLY,
+            annotation=Request,
+        ),
+    )
+
+    def parse_catalog_request(request: Request, **values: Any) -> Any:
+        unknown = sorted(set(request.query_params) - set(request_model.model_fields))
+        if unknown:
+            raise HTTPException(
+                status_code=422,
+                detail=f"Unknown request options: {', '.join(unknown)}",
+            )
+        try:
+            return request_model.model_validate(values)
+        except ValidationError as exc:
+            raise HTTPException(
+                status_code=422,
+                detail=json.loads(exc.json()),
+            ) from exc
+
+    parse_catalog_request.__signature__ = inspect.Signature(parameters)  # type: ignore[attr-defined]
+    return parse_catalog_request
+
+
+def _catalog_job_dependency(module_id: str) -> Any:
+    """Return the registry-generated query dependency for a legacy job route."""
+    return _make_catalog_request_dependency(module_job_request_model(module_id))
+
+
 def _validate_job_id(job_id: str) -> str:
     """Ensure job IDs match the Celery UUID format."""
     try:
@@ -98,15 +152,17 @@ def _safe_result_state(result: AsyncResult) -> str | None:
 # ── Job submission endpoints ────────────────────────────────────────────────
 
 
-@router.post("/workspace", response_model=JobSubmitResponse)
 async def submit_workspace(
-    payload: ResearchRequest, request: Request = None  # type: ignore[assignment]
+    payload: Any, request: Request = None  # type: ignore[assignment]
 ) -> dict[str, Any]:
-    """Submit a Workspace run with the server-derived researcher principal."""
-    try:
-        task_payload = payload.model_dump(mode="json")
-    except TypeError:
-        task_payload = payload.model_dump()
+    """Submit a catalog-backed Workspace run with server-derived ownership."""
+    payload_data = payload.model_dump(mode="json")
+    model = payload_data.get("model")
+    normalized = ResearchRequest.model_validate(payload_data)
+    task_payload = normalized.model_dump(mode="json")
+    if model is None:
+        # Preserve the legacy task payload when no model was supplied.
+        task_payload.pop("model", None)
     task_payload["researcher_id"] = (
         get_researcher_id(request) if request is not None else DEFAULT_RESEARCHER_ID
     )
@@ -114,108 +170,160 @@ async def submit_workspace(
     return {"job_id": task.id, "status": "PENDING", "module": "workspace"}
 
 
+# Register after replacing the runtime annotation so FastAPI uses the
+# registry-generated body model while mypy can treat the dynamic payload as Any.
+submit_workspace.__annotations__["payload"] = WorkspaceJobRequest
+router.add_api_route(
+    "/workspace",
+    submit_workspace,
+    methods=["POST"],
+    response_model=JobSubmitResponse,
+    name="submit_workspace",
+)
+
+
 @router.post("/gwas", response_model=JobSubmitResponse)
 async def submit_gwas(
-    max_studies: int = 30, no_cache: bool = False, disease_id: str = "sle"
+    job: Annotated[Any, Depends(_catalog_job_dependency("gwas"))],
 ) -> dict[str, Any]:
     """Submit a disease-specific GWAS analysis job."""
-    task = task_run_gwas.delay(
-        max_studies=max_studies, no_cache=no_cache, disease_id=disease_id
-    )
+    options: dict[str, Any] = {
+        "max_studies": job.max_studies if job.max_studies is not None else 30,
+        "no_cache": job.no_cache if job.no_cache is not None else False,
+        "disease_id": job.disease_id,
+    }
+    for name in ("use_cache", "resolve_snps"):
+        value = getattr(job, name, None)
+        if value is not None:
+            options[name] = value
+    task = task_run_gwas.delay(**options)
     return {"job_id": task.id, "status": "PENDING", "module": "gwas"}
 
 
 @router.post("/enrichment", response_model=JobSubmitResponse)
 async def submit_enrichment(
-    untargeted_only: bool = False,
-    no_cache: bool = False,
-    disease_id: str = "sle",
+    job: Annotated[Any, Depends(_catalog_job_dependency("enrichment"))],
 ) -> dict[str, Any]:
     """Submit a disease-specific pathway enrichment job."""
-    task = task_run_enrichment.delay(
-        untargeted_only=untargeted_only,
-        no_cache=no_cache,
-        disease_id=disease_id,
-    )
+    options: dict[str, Any] = {
+        "untargeted_only": job.untargeted_only if job.untargeted_only is not None else False,
+        "no_cache": job.no_cache if job.no_cache is not None else False,
+        "disease_id": job.disease_id,
+    }
+    if job.use_cache is not None:
+        options["use_cache"] = job.use_cache
+    task = task_run_enrichment.delay(**options)
     return {"job_id": task.id, "status": "PENDING", "module": "enrichment"}
 
 
 @router.post("/ppi", response_model=JobSubmitResponse)
 async def submit_ppi(
-    confidence: float = 0.4,
-    no_cache: bool = False,
-    disease_id: str = "sle",
+    job: Annotated[Any, Depends(_catalog_job_dependency("ppi"))],
 ) -> dict[str, Any]:
     """Submit a disease-specific PPI network analysis job."""
-    task = task_run_ppi.delay(
-        confidence=confidence, no_cache=no_cache, disease_id=disease_id
-    )
+    options: dict[str, Any] = {
+        "confidence": job.confidence if job.confidence is not None else 0.4,
+        "no_cache": job.no_cache if job.no_cache is not None else False,
+        "disease_id": job.disease_id,
+    }
+    for name in ("expand_neighbors", "use_cache"):
+        value = getattr(job, name, None)
+        if value is not None:
+            options[name] = value
+    task = task_run_ppi.delay(**options)
     return {"job_id": task.id, "status": "PENDING", "module": "ppi"}
 
 
 @router.post("/literature", response_model=JobSubmitResponse)
 async def submit_literature(
-    max_articles: int = 30,
-    targeted: bool = False,
-    no_cache: bool = False,
-    disease_id: str = "sle",
+    job: Annotated[Any, Depends(_catalog_job_dependency("literature_mining"))],
 ) -> dict[str, Any]:
     """Submit a disease-specific literature mining job."""
-    task = task_run_literature.delay(
-        max_articles=max_articles,
-        targeted=targeted,
-        no_cache=no_cache,
-        disease_id=disease_id,
-    )
+    options: dict[str, Any] = {
+        "max_articles": job.max_articles if job.max_articles is not None else 30,
+        "targeted": job.targeted if job.targeted is not None else False,
+        "no_cache": job.no_cache if job.no_cache is not None else False,
+        "disease_id": job.disease_id,
+    }
+    for name in ("query", "sources", "queries", "extract_content", "use_cache", "email"):
+        value = getattr(job, name, None)
+        if value is not None:
+            options[name] = value
+    task = task_run_literature.delay(**options)
     return {"job_id": task.id, "status": "PENDING", "module": "literature"}
 
 
 @router.post("/screening", response_model=JobSubmitResponse)
 async def submit_screening(
-    gene_id: str | None = None, top_n: int = 15, use_vina: bool = False, disease_id: str = "sle"
+    job: Annotated[Any, Depends(_catalog_job_dependency("virtual_screening"))],
 ) -> dict[str, Any]:
     """Submit a virtual screening job."""
-    task = task_run_screening.delay(
-        gene_id=gene_id, top_n=top_n, use_vina=use_vina, disease_id=disease_id
-    )
+    options: dict[str, Any] = {
+        "gene_id": job.gene_id,
+        "top_n": job.top_n if job.top_n is not None else 15,
+        "use_vina": job.use_vina if job.use_vina is not None else False,
+        "disease_id": job.disease_id,
+    }
+    if job.operation is not None:
+        options["operation"] = job.operation
+    task = task_run_screening.delay(**options)
     return {"job_id": task.id, "status": "PENDING", "module": "screening"}
 
 
 @router.post("/trials", response_model=JobSubmitResponse)
 async def submit_trials(
-    max_trials: int = 100,
-    query: str = "",
-    no_cache: bool = False,
-    disease_id: str = "sle",
+    job: Annotated[Any, Depends(_catalog_job_dependency("clinical_trials"))],
 ) -> dict[str, Any]:
     """Submit a disease-specific clinical trials tracking job."""
-    task = task_run_trials.delay(
-        max_trials=max_trials,
-        query=query,
-        no_cache=no_cache,
-        disease_id=disease_id,
-    )
+    options: dict[str, Any] = {
+        "max_trials": job.max_trials if job.max_trials is not None else 100,
+        "query": job.query if job.query is not None else "",
+        "no_cache": job.no_cache if job.no_cache is not None else False,
+        "disease_id": job.disease_id,
+    }
+    if job.use_cache is not None:
+        options["use_cache"] = job.use_cache
+    task = task_run_trials.delay(**options)
     return {"job_id": task.id, "status": "PENDING", "module": "trials"}
 
 
 @router.post("/ml", response_model=JobSubmitResponse)
-async def submit_ml(top_n: int = 15, no_shap: bool = False, disease_id: str = "sle") -> dict[str, Any]:
+async def submit_ml(
+    job: Annotated[Any, Depends(_catalog_job_dependency("ml_predictor"))],
+) -> dict[str, Any]:
     """Submit an ML prediction job."""
-    task = task_run_ml.delay(top_n=top_n, no_shap=no_shap, disease_id=disease_id)
+    task = task_run_ml.delay(
+        top_n=job.top_n if job.top_n is not None else 15,
+        no_shap=job.no_shap if job.no_shap is not None else False,
+        disease_id=job.disease_id,
+    )
     return {"job_id": task.id, "status": "PENDING", "module": "ml"}
 
 
 @router.post("/synergy", response_model=JobSubmitResponse)
-async def submit_synergy(top_n: int = 20, disease_id: str = "sle") -> dict[str, Any]:
+async def submit_synergy(
+    job: Annotated[Any, Depends(_catalog_job_dependency("drug_synergy"))],
+) -> dict[str, Any]:
     """Submit a drug combination synergy prediction job."""
-    task = task_run_synergy.delay(top_n=top_n, disease_id=disease_id)
+    options: dict[str, Any] = {
+        "top_n": job.top_n if job.top_n is not None else 20,
+        "disease_id": job.disease_id,
+    }
+    if job.save is not None:
+        options["save"] = job.save
+    task = task_run_synergy.delay(**options)
     return {"job_id": task.id, "status": "PENDING", "module": "synergy"}
 
 
 @router.post("/safety", response_model=JobSubmitResponse)
-async def submit_safety(drug_id: str | None = None, disease_id: str = "sle") -> dict[str, Any]:
+async def submit_safety(
+    job: Annotated[Any, Depends(_catalog_job_dependency("adverse_events"))],
+) -> dict[str, Any]:
     """Submit an adverse event safety profiling job."""
-    task = task_run_safety.delay(drug_id=drug_id, disease_id=disease_id)
+    task = task_run_safety.delay(
+        drug_id=job.drug_id,
+        disease_id=job.disease_id,
+    )
     return {"job_id": task.id, "status": "PENDING", "module": "safety"}
 
 
@@ -228,6 +336,58 @@ async def submit_run_all(
     return {"job_id": task.id, "status": "PENDING", "module": "run-all"}
 
 
+def _make_catalog_job_submitter(
+    module_id: str, request_model: type[Any]
+) -> Any:
+    """Create a static, schema-backed job endpoint for one registry module."""
+
+    request_dependency = _make_catalog_request_dependency(request_model)
+
+    async def submit_catalog_job(
+        job: Any = Depends(request_dependency),  # noqa: B008 - dynamic dependency
+    ) -> dict[str, Any]:
+        task = task_run_module.delay(module_id, job.disease_id, **job.to_task_opts())
+        return {"job_id": task.id, "status": "PENDING", "module": module_id}
+
+    submit_catalog_job.__name__ = f"submit_{module_id}_catalog_job"
+    submit_catalog_job.__doc__ = (
+        f"Submit the {module_id} module using its registry-generated request schema."
+    )
+    return submit_catalog_job
+
+
+# Generate static module paths before the fallback ``/{module_id}`` route so
+# FastAPI publishes each module's exact query contract in OpenAPI. Dedicated
+# legacy aliases above remain unchanged for backwards compatibility.
+_DEDICATED_JOB_PATHS = {
+    "gwas",
+    "enrichment",
+    "ppi",
+    "literature",
+    "screening",
+    "trials",
+    "ml",
+    "synergy",
+    "safety",
+    "workspace",
+    "run-all",
+}
+for _catalog_entry in module_catalog():
+    _catalog_module_id = _catalog_entry["module_id"]
+    if _catalog_module_id in _DEDICATED_JOB_PATHS:
+        continue
+    router.add_api_route(
+        f"/{_catalog_module_id}",
+        _make_catalog_job_submitter(
+            _catalog_module_id,
+            module_job_request_model(_catalog_module_id),
+        ),
+        methods=["POST"],
+        response_model=JobSubmitResponse,
+        name=f"submit_{_catalog_module_id}_catalog_job",
+    )
+
+
 @router.post("/{module_id}", response_model=JobSubmitResponse)
 async def submit_module_job(
     module_id: str,
@@ -238,6 +398,11 @@ async def submit_module_job(
         resolved = resolve_module_id(module_id)
     except KeyError as exc:
         raise HTTPException(status_code=404, detail=str(exc)) from exc
+
+    try:
+        job.validate_for_module(resolved)
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
 
     task = task_run_module.delay(resolved, job.disease_id, **job.to_task_opts())
     return {"job_id": task.id, "status": "PENDING", "module": module_id}

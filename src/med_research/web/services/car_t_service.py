@@ -1,5 +1,7 @@
 """CAR-T Response Predictor service layer."""
 
+from typing import Any, cast
+
 from med_research.diseases.coverage import module_coverage
 from med_research.pipeline.car_t_predictor.predictor import last_coverage
 from med_research.web.dependencies import safe_serialize
@@ -24,7 +26,7 @@ def run_cart_analysis(top_n: int = 35, disease_id: str = "sle") -> dict:
     tier2 = sum(1 for r in results if 7.0 <= r["composite_score"] < 8.0)
     tier3 = sum(1 for r in results if 5.0 <= r["composite_score"] < 7.0)
 
-    return safe_serialize({
+    return cast(dict[str, Any], safe_serialize({
         "genes": results[:top_n],
         "total_genes": len(results),
         "avg_score": round(avg, 2),
@@ -33,4 +35,4 @@ def run_cart_analysis(top_n: int = 35, disease_id: str = "sle") -> dict:
         "tier3_count": tier3,
         "coverage": coverage_payload,
         "status": "limited_coverage" if coverage_payload.get("level") == "partial" else "ready",
-    })
+    }))

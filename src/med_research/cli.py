@@ -9,6 +9,7 @@ Usage:
     med-research repurpose --disease ms --top 15 Drug repurposing for MS
     med-research diseases                       List available diseases
     med-research modules                        List available pipeline modules
+    med-research workspace-migrate --dry-run    Inspect persisted Workspace migrations
     med-research serve                          Start the web API server
 """
 
@@ -18,6 +19,7 @@ import argparse
 import sys
 import time
 from pathlib import Path
+from typing import Any
 
 from med_research.diseases.base import Disease
 from med_research.logging_config import get_logger, setup_logging
@@ -84,11 +86,11 @@ def _dispatch(
     **opts,
 ):
     """Run a registry module through the unified dispatch path."""
-    from med_research.pipeline.dispatch import execute_module
+    from med_research.pipeline.gateway import pipeline_gateway
 
     if export_html is None:
         export_html = bool(getattr(args, "export_html", False))
-    return execute_module(
+    return pipeline_gateway.execute(
         module_id,
         disease_id,
         export_html=export_html,
@@ -109,6 +111,127 @@ def _trial_query(disease_id: str) -> str:
         return Disease(disease_id).get_trial_query()
     except ValueError:
         return "lupus OR SLE"
+
+
+def _schema_argument_type(definition: dict) -> type | object:
+    """Return an argparse converter that enforces catalog bounds."""
+    type_by_schema = {"integer": int, "number": float, "string": str}
+    schema_type = definition.get("type")
+    if not isinstance(schema_type, str):
+        schema_type = "string"
+    converter = type_by_schema.get(schema_type, str)
+    minimum = definition.get("minimum")
+    maximum = definition.get("maximum")
+    min_length = definition.get("minLength")
+    max_length = definition.get("maxLength")
+    if all(value is None for value in (minimum, maximum, min_length, max_length)):
+        return converter
+
+    def convert(value: str) -> Any:
+        try:
+            parsed = converter(value)
+        except (TypeError, ValueError) as exc:
+            raise argparse.ArgumentTypeError(f"invalid value: {value}") from exc
+        if minimum is not None and parsed < minimum:
+            raise argparse.ArgumentTypeError(f"must be >= {minimum}")
+        if maximum is not None and parsed > maximum:
+            raise argparse.ArgumentTypeError(f"must be <= {maximum}")
+        if min_length is not None and len(parsed) < min_length:
+            raise argparse.ArgumentTypeError(f"must have at least {min_length} characters")
+        if max_length is not None and len(parsed) > max_length:
+            raise argparse.ArgumentTypeError(f"must have at most {max_length} characters")
+        return parsed
+
+    return convert
+
+
+def _add_request_schema_arguments(
+    parser: argparse.ArgumentParser,
+    schema: dict,
+) -> None:
+    """Expose catalog request properties as options on a generic CLI command."""
+    for name, definition in schema.get("properties", {}).items():
+        flag = f"--{name.replace('_', '-')}"
+        kwargs = {
+            "dest": name,
+            "default": None,
+            "help": definition.get("description", "Module request option"),
+        }
+        if definition.get("type") == "boolean":
+            kwargs["action"] = "store_true"
+        else:
+            kwargs["type"] = _schema_argument_type(definition)
+            if "enum" in definition:
+                kwargs["choices"] = definition["enum"]
+        parser.add_argument(flag, **kwargs)
+
+
+def _add_workspace_request_arguments(parser: argparse.ArgumentParser) -> None:
+    """Generate the Workspace-specific CLI options from the registry schema."""
+    from med_research.pipeline.registry import module_request_schema
+
+    schema = module_request_schema("evidence_workspace")
+    for name, definition in schema["properties"].items():
+        flag = f"--{name.replace('_', '-')}"
+        default = definition.get("default")
+        if name == "sources":
+            flag_default = ",".join(definition.get("body_default", []))
+        else:
+            flag_default = default
+        kwargs = {
+            "dest": name,
+            "default": flag_default,
+            "required": name in schema.get("required", []),
+            "help": definition.get("description", "Workspace request option"),
+        }
+        if name == "question":
+            kwargs["option_strings"] = [flag, "-q"]
+        if name == "enable_llm":
+            kwargs.update(
+                option_strings=["--no-llm"],
+                action="store_false",
+                default=default,
+                help="Skip optional LLM enrichment",
+            )
+        elif name == "sources":
+            kwargs["type"] = str
+        else:
+            kwargs["type"] = _schema_argument_type(definition)
+            if "enum" in definition:
+                kwargs["choices"] = definition["enum"]
+        option_strings = kwargs.pop("option_strings", [flag])
+        parser.add_argument(*option_strings, **kwargs)
+
+
+
+def _add_registry_cli_commands(
+    subparsers: argparse._SubParsersAction,
+) -> None:
+    """Add generic CLI entry points and refresh help from the module catalog."""
+    from med_research.pipeline.registry import module_catalog
+
+    catalog = module_catalog()
+    existing = getattr(subparsers, "_name_parser_map", {})
+    for entry in catalog:
+        command = entry["cli_command"]
+        if command in existing:
+            continue
+        module_parser = subparsers.add_parser(command, help=entry["cli_help"])
+        module_parser.set_defaults(registry_module_id=entry["module_id"])
+        module_parser.add_argument(
+            "--disease", "-d", default="sle", help="Disease ID"
+        )
+        module_parser.add_argument(
+            "--export-html", action="store_true", help="Generate an HTML report"
+        )
+        _add_request_schema_arguments(module_parser, entry["request_schema"])
+
+    # Existing specialized commands keep their handlers/options, but their
+    # help text is still generated from the registered adapter metadata.
+    help_by_command = {entry["cli_command"]: entry["cli_help"] for entry in catalog}
+    for action in getattr(subparsers, "_choices_actions", []):
+        if action.dest in help_by_command:
+            action.help = help_by_command[action.dest]
 
 
 def _build_parser() -> argparse.ArgumentParser:
@@ -284,26 +407,39 @@ def _build_parser() -> argparse.ArgumentParser:
 
     # ── Evidence & Knowledge ───────────────────────────────────────────
     workspace = sub.add_parser("workspace", help="Build a cited evidence-to-hypothesis dossier")
-    workspace.add_argument(
-        "--question", "-q", required=True, help="Natural-language research question"
-    )
     workspace.add_argument("--disease", "-d", default="sle", help="Disease ID (MVP: sle)")
-    workspace.add_argument(
-        "--sources", default="pubmed,clinical_trials", help="Comma-separated evidence sources"
-    )
-    workspace.add_argument("--date-from", help="Earliest publication/study date (YYYY-MM-DD)")
-    workspace.add_argument("--date-to", help="Latest publication/study date (YYYY-MM-DD)")
-    workspace.add_argument("--candidate-type", choices=["drugs", "targets", "both"], default="both")
-    workspace.add_argument("--max-evidence", type=int, default=50)
-    workspace.add_argument(
-        "--no-llm", dest="enable_llm", action="store_false", help="Skip optional LLM enrichment"
-    )
-    workspace.set_defaults(enable_llm=True)
+    _add_workspace_request_arguments(workspace)
     workspace.add_argument(
         "--json", dest="json_path", help="Write complete dossier JSON to this path"
     )
     workspace.add_argument(
         "--html", dest="html_path", help="Write self-contained dossier HTML to this path"
+    )
+
+    workspace_migrate = sub.add_parser(
+        "workspace-migrate",
+        help="Inspect and migrate persisted Workspace SQLite runs",
+    )
+    workspace_migrate.add_argument(
+        "--db", type=Path, help="Workspace SQLite path (defaults to WORKSPACE_DB_PATH)"
+    )
+    workspace_migrate.add_argument("--run-id", help="Inspect or migrate one run only")
+    workspace_migrate.add_argument(
+        "--limit", type=int, default=200, help="Maximum runs to inspect (default: 200)"
+    )
+    workspace_migrate_mode = workspace_migrate.add_mutually_exclusive_group()
+    workspace_migrate_mode.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Inspect migrations without writing rows (the default)",
+    )
+    workspace_migrate_mode.add_argument(
+        "--apply",
+        action="store_true",
+        help="Rewrite legacy rows instead of only reporting them",
+    )
+    workspace_migrate.add_argument(
+        "--json", action="store_true", help="Print the machine-readable migration report"
     )
 
     semantic = sub.add_parser("semantic", help="Semantic search over biomedical abstracts")
@@ -400,6 +536,7 @@ def _build_parser() -> argparse.ArgumentParser:
         help="Report what would be migrated without writing",
     )
 
+    _add_registry_cli_commands(sub)
     return parser
 
 
@@ -433,9 +570,10 @@ def cmd_modules(args):
     """List all available pipeline modules."""
     import json
 
-    from med_research.pipeline.registry import list_modules
+    from med_research.pipeline.registry import list_modules, module_catalog
 
     registered = list_modules()
+    catalog = module_catalog()
 
     if args.json:
         print(json.dumps(registered, indent=2))
@@ -454,9 +592,46 @@ def cmd_modules(args):
             logger.info(f"    {c}")
     if registered:
         logger.info("\n  Registered adapters:")
-        for module_id in registered:
-            logger.info(f"    {module_id}")
+        for entry in catalog:
+            aliases = ", ".join(entry["job_aliases"])
+            logger.info(
+                "    %-24s  CLI: %-14s  Celery: %-28s  aliases: %s",
+                entry["module_id"],
+                entry["cli_command"],
+                entry["celery_task"],
+                aliases,
+            )
     logger.info("")
+    return 0
+
+
+def cmd_registry_module(args):
+    """Run a registry-generated generic CLI module entry point."""
+    import json
+
+    from med_research.pipeline.gateway import pipeline_gateway
+    from med_research.pipeline.registry import module_request_schema
+
+    schema = module_request_schema(args.registry_module_id)
+    opts = {
+        name: value
+        for name in schema["properties"]
+        if (value := getattr(args, name, None)) is not None
+    }
+    if opts.pop("no_cache", False):
+        opts["use_cache"] = False
+
+    result = pipeline_gateway.execute(
+        args.registry_module_id,
+        args.disease,
+        export_html=bool(args.export_html),
+        **opts,
+    )
+    if not result.success:
+        return _exit_from_result(result, context=args.registry_module_id)
+    logger.info(json.dumps(result.data, default=str, indent=2))
+    if result.report_path is not None:
+        logger.info("Report: %s", result.report_path)
     return 0
 
 
@@ -1046,6 +1221,7 @@ def cmd_workspace(args):
         candidate_type=args.candidate_type,
         max_evidence=args.max_evidence,
         enable_llm=args.enable_llm,
+        model=args.model,
     )
     result = _dispatch("evidence_workspace", args.disease, args, request=request)
     if not result.success:
@@ -1065,6 +1241,51 @@ def cmd_workspace(args):
     for warning in dossier.warnings:
         logger.info(f"Warning: {warning}")
     return 0
+
+
+def cmd_workspace_migrate(args: Any) -> int:
+    """Inspect Workspace migrations and optionally rewrite legacy SQLite rows."""
+    import json
+
+    from med_research.web.config import WORKSPACE_DB_PATH
+    from med_research.web.services.workspace_store import WorkspaceRunStore
+
+    path = args.db or WORKSPACE_DB_PATH
+    if not path.exists():
+        logger.error("Workspace database does not exist: %s", path)
+        return 1
+
+    try:
+        report = WorkspaceRunStore(path).migrate_legacy_runs(
+            dry_run=not args.apply,
+            run_id=args.run_id,
+            limit=args.limit,
+        )
+    except (OSError, ValueError) as exc:
+        logger.error("Workspace migration failed: %s", exc)
+        return 1
+
+    if args.json:
+        print(json.dumps(report, indent=2, sort_keys=True))
+        return 1 if report["errors"] else 0
+
+    mode = "dry-run" if report["dry_run"] else "applied"
+    logger.info(
+        "Workspace migration %s: scanned=%d legacy=%d migrated=%d unchanged=%d errors=%d",
+        mode,
+        report["scanned"],
+        report["legacy"],
+        report["migrated"],
+        report["unchanged"],
+        report["errors"],
+    )
+    for item in report["runs"]:
+        if item.get("error"):
+            logger.error("  %s: %s", item["run_id"], item["error"])
+        elif item["needs_migration"]:
+            action = "migrated" if item["migrated"] else "would migrate"
+            logger.info("  %s: %s", item["run_id"], action)
+    return 1 if report["errors"] else 0
 
 
 def cmd_semantic(args):
@@ -1257,7 +1478,7 @@ def _bioinformatics_module_ids() -> list[str]:
 def _run_all_module(module_id: str, args) -> int:
     """Execute one registry module for ``run-all``."""
     from med_research.exceptions import MedResearchError
-    from med_research.pipeline.dispatch import execute_module
+    from med_research.pipeline.gateway import pipeline_gateway
     from med_research.pipeline_errors import handle_pipeline_error
 
     opts = _run_all_opts(args)
@@ -1274,7 +1495,7 @@ def _run_all_module(module_id: str, args) -> int:
         opts["top"] = 15
 
     try:
-        result = execute_module(
+        result = pipeline_gateway.execute(
             module_id,
             args.disease,
             export_html=export_html,
@@ -1497,6 +1718,7 @@ def main():
         "cart": cmd_cart,
         "biomarker": cmd_biomarker,
         "workspace": cmd_workspace,
+        "workspace-migrate": cmd_workspace_migrate,
         "semantic": cmd_semantic,
         "evidence": cmd_evidence,
         "extractor": cmd_extractor,
@@ -1511,6 +1733,8 @@ def main():
     handler = handlers.get(args.command)
     if handler:
         return handler(args)
+    if getattr(args, "registry_module_id", None):
+        return cmd_registry_module(args)
 
     parser.print_help()
     return 0

@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Any
+from typing import Any, cast
 
 from typing_extensions import Unpack
 
@@ -11,10 +11,11 @@ from med_research.pipeline.adapter_options import AdapterOptions
 from med_research.pipeline.base import BasePipelineModule
 from med_research.pipeline.provenance import build_provenance
 from med_research.pipeline.registry import register_module
+from med_research.pipeline.results import CentralityEntry, NetworkModuleResult
 
 
 @register_module
-class NetworkPharmacologyModule(BasePipelineModule):
+class NetworkPharmacologyModule(BasePipelineModule[NetworkModuleResult]):
     """Adapter around ``network_pharmacology.analyzer`` metrics and reporting."""
 
     _COVERAGE_MODULE = "network_pharm"
@@ -30,7 +31,7 @@ class NetworkPharmacologyModule(BasePipelineModule):
     def coverage_inputs(self) -> tuple[str, ...]:
         return ("genes", "relationships")
 
-    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
+    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> NetworkModuleResult:
         from med_research.pipeline.network_pharmacology.analyzer import (
             compute_all_metrics,
             compute_centrality,
@@ -48,7 +49,7 @@ class NetworkPharmacologyModule(BasePipelineModule):
             all_centrality = compute_centrality(graph, progress_callback=progress_callback)
             scores = all_centrality.get(metric, {})
             sorted_nodes = sorted(scores.items(), key=lambda x: x[1], reverse=True)[:top_n]
-            nodes = [
+            nodes: list[CentralityEntry] = [
                 {
                     "node_id": node,
                     "label": graph.nodes[node].get("label", node),
@@ -60,16 +61,19 @@ class NetworkPharmacologyModule(BasePipelineModule):
             return {"metric": metric, "nodes": nodes, "total_nodes": graph.number_of_nodes()}
 
         if operation == "communities":
-            return compute_communities(graph, progress_callback=progress_callback)
+            return cast(NetworkModuleResult, compute_communities(graph, progress_callback=progress_callback))
 
-        return compute_all_metrics(
-            progress_callback=progress_callback,
-            disease_id=disease_id,
+        return cast(
+            NetworkModuleResult,
+            compute_all_metrics(
+                progress_callback=progress_callback,
+                disease_id=disease_id,
+            ),
         )
 
     def report(
         self,
-        results: dict,
+        results: NetworkModuleResult,
         disease_id: str,
         *,
         provenance: dict | None = None,
@@ -79,7 +83,7 @@ class NetworkPharmacologyModule(BasePipelineModule):
         )
 
         report_path = generate_html_report(
-            results,
+            cast(dict, results),
             disease_id=disease_id,
             provenance=provenance,
         )

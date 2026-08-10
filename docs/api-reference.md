@@ -49,6 +49,7 @@ The application preloads the default knowledge graph at startup. API-key middlew
 | `LOCAL_AUTH_USERS` | empty | Development-only JSON map such as `{"alice":"password"}` or comma-separated `alice=password` accounts. Store it as a deployment secret. |
 | `AUTH_SESSION_SECRET` | empty | HMAC secret for local researcher session cookies; required outside `DEBUG` unless `API_KEY` is used as a fallback. |
 | `AUTH_TRUSTED_PROXY_IPS` | empty | Comma-separated proxy source IPs allowed to provide `X-Authenticated-User`, `X-Auth-Request-User`, or `Remote-User` when `AUTH_MODE=proxy`. |
+| `DASHBOARD_CSP_MODE` | `off` | Dashboard document CSP mode: `off`, `report-only`, or `enforce`. `DASHBOARD_CSP=true` is an alias for `enforce`. |
 
 Researcher ownership is server-derived. In `AUTH_MODE=local`, call `POST /api/auth/login` with a configured local account; the API sets an expiring HttpOnly session cookie. In `AUTH_MODE=proxy`, the application accepts an identity header only from a source address listed in `AUTH_TRUSTED_PROXY_IPS`. The historical `X-Researcher-ID` header is accepted only in `DEBUG=true` compatibility mode and is never an authentication mechanism in production.
 

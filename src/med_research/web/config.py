@@ -147,6 +147,29 @@ CELERY_RESULT_BACKEND = os.environ.get("CELERY_RESULT_BACKEND", "redis://localho
 # ── CORS ──────────────────────────────────────────────────────────────────
 CORS_ORIGINS = os.environ.get("CORS_ORIGINS", "http://localhost:3000").split(",")
 
+# ── Dashboard security ────────────────────────────────────────────────────
+# The dashboard has no inline event handlers or scripts. Opt into an enforcing
+# or report-only policy at the reverse-proxy boundary without changing the UI.
+# ``DASHBOARD_CSP=true`` is retained as a concise opt-in for local deployments;
+# ``DASHBOARD_CSP_MODE`` also accepts ``off``, ``report-only``, or ``enforce``.
+DASHBOARD_CSP_MODE = os.environ.get(
+    "DASHBOARD_CSP_MODE",
+    "enforce" if os.environ.get("DASHBOARD_CSP", "false").lower() == "true" else "off",
+).lower()
+DASHBOARD_CSP_POLICY = (
+    "default-src 'self'; "
+    "base-uri 'self'; "
+    "object-src 'none'; "
+    "frame-ancestors 'self'; "
+    "form-action 'self'; "
+    "script-src 'self'; "
+    "script-src-attr 'none'; "
+    "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; "
+    "font-src 'self' https://fonts.gstatic.com; "
+    "img-src 'self' data: blob:; "
+    "connect-src 'self' ws: wss:"
+)
+
 # ── Cache ─────────────────────────────────────────────────────────────────
 USE_CACHE = os.environ.get("USE_CACHE", "true").lower() == "true"
 

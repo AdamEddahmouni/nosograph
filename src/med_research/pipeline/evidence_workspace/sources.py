@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from datetime import date, datetime, timezone
 from hashlib import sha1
-from typing import Any, Callable, Protocol
+from typing import Any, Callable, Protocol, cast
 
 from .schemas import EvidenceRecord, ResearchRequest, SourceName, SourceStatus
 
@@ -141,7 +141,7 @@ def _run_fetcher(
             records,
             SourceStatus(
                 source=source,
-                status=status,
+                status=cast(Any, status),
                 records_found=len(records),
                 warning=warning,
                 query_terms=terms,
@@ -183,11 +183,13 @@ def _fetch_gwas_live(query: str, limit: int) -> list[dict[str, Any]]:
 
     response = requests.get(
         "https://www.ebi.ac.uk/gwas/rest/api/studies/search/findByDiseaseTrait",
-        params={"diseaseTrait": query, "size": min(limit, 50)},
+        params=cast(dict[str, str | int], {"diseaseTrait": query, "size": min(limit, 50)}),
         timeout=30,
     )
     response.raise_for_status()
-    return response.json().get("_embedded", {}).get("studies", [])[:limit]
+    return cast(
+        list[dict[str, Any]], response.json().get("_embedded", {}).get("studies", [])[:limit]
+    )
 
 
 def _fetch_fda_live(query: str, limit: int) -> list[dict[str, Any]]:
@@ -196,11 +198,11 @@ def _fetch_fda_live(query: str, limit: int) -> list[dict[str, Any]]:
 
     response = requests.get(
         "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls.json",
-        params={"searchterms": query, "pagesize": min(limit, 50)},
+        params=cast(dict[str, str | int], {"searchterms": query, "pagesize": min(limit, 50)}),
         timeout=30,
     )
     response.raise_for_status()
-    return response.json().get("data", [])[:limit]
+    return cast(list[dict[str, Any]], response.json().get("data", [])[:limit])
 
 
 class GWASSource:

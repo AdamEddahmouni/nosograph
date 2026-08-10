@@ -23,6 +23,7 @@ import argparse
 import json
 import sys
 from pathlib import Path
+from typing import Any, cast
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
@@ -30,19 +31,22 @@ import logging
 
 from med_research.cache import disease_output_path, write_json_atomic
 from med_research.pipeline.knowledge_graph.config import load_drugs as config_load_drugs
-from med_research.pipeline.progress import StandardProgress, _tick
+from med_research.pipeline.progress import StandardProgress, _tick, cli_progress
+from med_research.pipeline.results import ExpressionCorrelation
 
 if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    _stdout = sys.stdout
+    if hasattr(_stdout, "reconfigure"):
+        _stdout.reconfigure(encoding="utf-8", errors="replace")
 
 DATA_DIR = Path(__file__).parent / "data"
 
 logger = logging.getLogger(__name__)
 last_coverage = None
 
-_DEFAULT_SIGNATURES: dict = {}
+_DEFAULT_SIGNATURES: dict[str, dict[str, Any]] = {}
 
-def _get_default_signature(disease_id: str = "sle"):
+def _get_default_signature(disease_id: str = "sle") -> dict[str, Any]:
     """Return the curated fallback expression signature for a disease.
 
     Curated signatures are only curated for SLE; other diseases fall back
@@ -73,7 +77,9 @@ def _get_default_signature(disease_id: str = "sle"):
     return _DEFAULT_SIGNATURES[disease_id]
 
 
-def _normalize_signature(signature, disease_id: str = "sle"):
+def _normalize_signature(
+    signature: dict[str, Any] | None, disease_id: str = "sle"
+) -> tuple[dict[str, Any], dict[str, Any], str, int]:
     """Normalize a signature dict to {upregulated: {gene: fc}, downregulated: {gene: fc}}."""
     if signature is None:
         sig = _get_default_signature(disease_id)
@@ -94,7 +100,7 @@ def _normalize_signature(signature, disease_id: str = "sle"):
 
 def load_json(path: Path) -> dict:
     with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
+        return cast(dict, json.load(f))
 
 
 def load_drugs(disease_id: str = "sle") -> dict:
@@ -219,7 +225,7 @@ DRUG_PATHWAY_REVERSAL = {
 
 # ── Cell Type Relevance ───────────────────────────────────────────────────
 
-CELL_TYPE_RELEVANCE = {
+CELL_TYPE_RELEVANCE: dict[str, float] = {
     "B_cell": 9.0,
     "plasma_cell": 9.5,
     "plasmacytoid_DC": 9.0,
@@ -265,7 +271,9 @@ DRUG_CELL_TYPES = {
 
 # ── Scoring Functions ────────────────────────────────────────────────────
 
-def score_signature_reversal(drug_id: str, signature=None) -> float:
+def score_signature_reversal(
+    drug_id: str, signature: dict[str, Any] | None = None
+) -> float:
     """Score how well the drug reverses the SLE expression signature.
 
     Higher score = drug mechanism directly counteracts more dysregulated genes.
@@ -308,7 +316,9 @@ def score_signature_reversal(drug_id: str, signature=None) -> float:
     return round(score, 1)
 
 
-def score_target_disease_overlap(drug_id: str, signature=None) -> float:
+def score_target_disease_overlap(
+    drug_id: str, signature: dict[str, Any] | None = None
+) -> float:
     """Score based on how many drug target genes overlap with SLE-dysregulated genes.
 
     Args:
@@ -331,7 +341,7 @@ def score_target_disease_overlap(drug_id: str, signature=None) -> float:
     down_score = sum(down_genes.get(g, 0) for g in downregulated_overlap)
 
     total = up_score * 0.7 + down_score * 0.3
-    return round(min(10.0, total * 0.7 + 1.0), 1)
+    return round(min(10.0, float(total) * 0.7 + 1.0), 1)
 
 
 def score_cell_type_specificity(drug_id: str) -> float:
@@ -351,7 +361,7 @@ def score_cell_type_specificity(drug_id: str) -> float:
     return round(min(10.0, avg * 0.7 + bonus + 1.0), 1)
 
 
-def score_expression_evidence(drug_id: str, drugs: dict = None) -> float:
+def score_expression_evidence(drug_id: str, drugs: dict | None = None) -> float:
     """Score based on publication evidence strength for gene expression studies."""
     if drugs is None:
         drugs = load_drugs()
@@ -393,8 +403,12 @@ def score_directionality(drug_id: str) -> float:
     return 5.0
 
 
-def correlate_drug(drug_id: str, drug: dict, all_drugs: dict = None,
-                   signature=None) -> dict:
+def correlate_drug(
+    drug_id: str,
+    drug: dict,
+    all_drugs: dict | None = None,
+    signature: dict[str, Any] | None = None,
+) -> ExpressionCorrelation:
     """Score a single drug for gene expression reversal potential.
 
     Returns dict with individual scores and composite score.
@@ -455,12 +469,12 @@ def _assign_tier(score: float) -> str:
 
 def compute_all_correlations(
     progress_callback: StandardProgress | None = None,
-    signature=None,
-    signature_source="auto",
-    tissue=None,
+    signature: dict[str, Any] | None = None,
+    signature_source: str = "auto",
+    tissue: str | None = None,
     disease_id: str = "sle",
     save: bool = True,
-) -> list:
+) -> list[ExpressionCorrelation]:
     """Correlate drugs against a disease's expression signature.
 
     Returns list of scored drugs sorted by composite score descending.
@@ -543,7 +557,7 @@ def compute_all_correlations(
 # ── CLI ──────────────────────────────────────────────────────────────────
 
 
-def analyze(results: list, signature=None):
+def analyze(results: list, signature: dict[str, Any] | None = None) -> None:
     """Print statistical summary."""
     up_genes, down_genes, sig_source, num_studies = _normalize_signature(signature)
 
@@ -565,7 +579,7 @@ def analyze(results: list, signature=None):
     logger.info(f"  Score range: {min(scores):.2f} - {max(scores):.2f}")
     logger.info(f"  Mean score: {sum(scores)/len(scores):.2f}")
 
-    tier_counts = {}
+    tier_counts: dict[str, int] = {}
     for r in results:
         tier_counts[r["tier"]] = tier_counts.get(r["tier"], 0) + 1
     logger.info("\n  Distribution by tier:")
@@ -576,7 +590,7 @@ def analyze(results: list, signature=None):
         logger.info(f"    {label}: {count} drugs")
 
 
-def print_top_correlations(results: list, top_n: int = 15):
+def print_top_correlations(results: list, top_n: int = 15) -> None:
     """Print the top N drugs by expression correlation."""
     logger.info("\n" + "=" * 75)
     logger.info(f"🏆 TOP {top_n} EXPRESSION-CORRELATED DRUGS")
@@ -625,7 +639,8 @@ def main():
     results = compute_all_correlations(signature=signature,
                                        signature_source=signature_source,
                                        tissue=args.tissue,
-                                       disease_id=args.disease)
+                                       disease_id=args.disease,
+                                       progress_callback=cli_progress)
     analyze(results, signature if signature else None)
     print_top_correlations(results, args.top)
 

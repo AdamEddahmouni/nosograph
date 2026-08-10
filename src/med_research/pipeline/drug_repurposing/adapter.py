@@ -11,10 +11,11 @@ from med_research.pipeline.adapter_options import AdapterOptions
 from med_research.pipeline.base import BasePipelineModule
 from med_research.pipeline.provenance import build_provenance
 from med_research.pipeline.registry import register_module
+from med_research.pipeline.results import RepurposingResults
 
 
 @register_module
-class DrugRepurposingModule(BasePipelineModule):
+class DrugRepurposingModule(BasePipelineModule[RepurposingResults]):
     """Adapter around ``drug_repurposing.engine`` scoring and reporting."""
 
     _COVERAGE_MODULE = "repurposing"
@@ -30,7 +31,7 @@ class DrugRepurposingModule(BasePipelineModule):
     def coverage_inputs(self) -> tuple[str, ...]:
         return ("genes", "drugs", "relationships")
 
-    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> list:
+    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> RepurposingResults:
         from med_research.cache import disease_output_path, write_json_atomic
         from med_research.pipeline.drug_repurposing.engine import (
             DATA_DIR,
@@ -73,7 +74,7 @@ class DrugRepurposingModule(BasePipelineModule):
 
     def report(
         self,
-        results: list,
+        results: RepurposingResults,
         disease_id: str,
         *,
         provenance: dict[str, Any] | None = None,

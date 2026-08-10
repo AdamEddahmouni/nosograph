@@ -22,6 +22,7 @@ import json
 import sys
 from itertools import combinations
 from pathlib import Path
+from typing import cast
 
 # Ensure project root is importable
 sys.path.insert(0, str(Path(__file__).parent.parent))
@@ -30,10 +31,11 @@ import logging
 
 from med_research.cache import disease_output_path, write_json_atomic
 from med_research.pipeline.knowledge_graph.config import load_drugs as config_load_drugs
-from med_research.pipeline.progress import StandardProgress, _tick
+from med_research.pipeline.progress import StandardProgress, _tick, cli_progress
+from med_research.pipeline.results import SynergyPair
 
 if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # type: ignore[union-attr]
 
 DATA_DIR = Path(__file__).parent / "data"
 
@@ -97,7 +99,7 @@ KNOWN_COMBINATIONS = {
 
 def load_json(path: Path) -> dict:
     with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
+        return cast(dict, json.load(f))
 
 
 def load_drugs(disease_id: str = "sle") -> dict:
@@ -109,7 +111,7 @@ def load_drugs(disease_id: str = "sle") -> dict:
 def get_mechanism_group(drug: dict) -> str:
     """Return the mechanism group for a drug for orthogonality scoring."""
     category = drug.get("category", "")
-    return MECHANISM_CATEGORIES.get(category, drug.get("type", "Unknown"))
+    return MECHANISM_CATEGORIES.get(category, cast(str, drug.get("type", "Unknown")))
 
 
 def score_target_complementarity(drug_a: dict, drug_b: dict) -> float:
@@ -226,7 +228,7 @@ def score_mechanism_orthogonality(drug_a: dict, drug_b: dict) -> float:
         ("Cellular", "Complement"): 9.0,
     }
 
-    key = tuple(sorted([group_a, group_b]))
+    key = (min(group_a, group_b), max(group_a, group_b))
     return mechanism_pairs.get(key, 5.0)
 
 
@@ -297,7 +299,7 @@ def score_combined_evidence(drug_a: dict, drug_b: dict) -> float:
     return 1.0  # No known evidence
 
 
-def score_drug_pair(drug_a: dict, drug_b: dict) -> dict:
+def score_drug_pair(drug_a: dict, drug_b: dict) -> SynergyPair:
     """Score a single drug pair across all 5 dimensions.
 
     Returns:
@@ -348,7 +350,7 @@ def score_drug_pair(drug_a: dict, drug_b: dict) -> dict:
 def score_drug_pairs(
     drugs: dict,
     progress_callback: StandardProgress | None = None,
-) -> list:
+) -> list[SynergyPair]:
     """Score all unique drug pairs.
 
     Args:
@@ -386,13 +388,13 @@ def score_drug_pairs(
     return pairs
 
 
-def analyze(scored_pairs: list):
+def analyze(scored_pairs: list) -> None:
     """Print statistical summary of scored pairs."""
     logger.info("\n" + "=" * 75)
     logger.info("📊 DRUG SYNERGY ANALYSIS SUMMARY")
     logger.info("=" * 75)
 
-    tier_counts = {}
+    tier_counts: dict[str, int] = {}
     for p in scored_pairs:
         tier_counts[p["tier"]] = tier_counts.get(p["tier"], 0) + 1
 
@@ -412,7 +414,7 @@ def analyze(scored_pairs: list):
         logger.info(f"    {label}: {count} pairs")
 
     # Top drugs appearing most in top pairs
-    drug_mentions = {}
+    drug_mentions: dict[str, int] = {}
     for p in scored_pairs[:50]:
         drug_mentions[p["drug_a_name"]] = drug_mentions.get(p["drug_a_name"], 0) + 1
         drug_mentions[p["drug_b_name"]] = drug_mentions.get(p["drug_b_name"], 0) + 1
@@ -422,7 +424,7 @@ def analyze(scored_pairs: list):
         logger.info(f"    {drug_name}: {count} synergistic pairings")
 
 
-def print_top_pairs(scored_pairs: list, top_n: int = 15):
+def print_top_pairs(scored_pairs: list, top_n: int = 15) -> None:
     """Print the top N synergistic drug pairs."""
     logger.info("\n" + "=" * 75)
     logger.info(f"🏆 TOP {top_n} SYNERGISTIC DRUG PAIRS")
@@ -445,7 +447,7 @@ def compute_synergy(
     progress_callback: StandardProgress | None = None,
     disease_id: str = "sle",
     save: bool = True,
-) -> list:
+) -> list[SynergyPair]:
     """Main entry point: load drugs, score all pairs, return results.
 
     Args:
@@ -490,7 +492,7 @@ def main():
     parser.add_argument("--export-html", action="store_true", help="Generate HTML report")
     args = parser.parse_args()
 
-    pairs = compute_synergy(disease_id=args.disease)
+    pairs = compute_synergy(disease_id=args.disease, progress_callback=cli_progress)
     analyze(pairs)
     print_top_pairs(pairs, args.top)
 

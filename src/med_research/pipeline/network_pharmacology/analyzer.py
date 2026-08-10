@@ -19,15 +19,24 @@ import logging
 import sys
 from collections import defaultdict
 from pathlib import Path
+from typing import Any, cast
 
 import networkx as nx
 
-from med_research.pipeline.progress import StandardProgress, _tick
+from med_research.pipeline.progress import StandardProgress, _tick, cli_progress
+from med_research.pipeline.results import (
+    BridgeNode,
+    CentralityEntry,
+    CommunitiesResult,
+    CommunityInfo,
+    GraphMetrics,
+    NetworkAnalysis,
+)
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # type: ignore[union-attr]
 
 DATA_DIR = Path(__file__).parent / "data"
 
@@ -35,7 +44,7 @@ logger = logging.getLogger(__name__)
 last_coverage = None
 
 
-def load_graph(disease_id: str = "sle"):
+def load_graph(disease_id: str = "sle") -> Any:
     """Load the knowledge graph for the requested disease."""
     from med_research.pipeline.knowledge_graph.builder import build_graph
     return build_graph(disease_id)
@@ -59,9 +68,9 @@ def _to_undirected(G):
 
 
 def compute_centrality(
-    G=None,
+    G: Any = None,
     progress_callback: StandardProgress | None = None,
-) -> dict:
+) -> dict[str, dict[str, float]]:
     """Compute all centrality metrics for every node.
 
     Returns dict with keys: degree, betweenness, eigenvector, closeness, pagerank.
@@ -113,7 +122,7 @@ def compute_centrality(
     }
 
 
-def compute_bridge_nodes(G=None, centrality=None) -> list:
+def compute_bridge_nodes(G: Any = None, centrality: Any = None) -> list[BridgeNode]:
     """Identify bridge nodes: top nodes by betweenness centrality."""
     if G is None:
         G = load_graph()
@@ -136,9 +145,9 @@ def compute_bridge_nodes(G=None, centrality=None) -> list:
 
 
 def compute_communities(
-    G=None,
+    G: Any = None,
     progress_callback: StandardProgress | None = None,
-) -> dict:
+) -> CommunitiesResult:
     """Detect communities using Louvain (preferred) or greedy modularity.
 
     Returns dict with communities list and modularity score.
@@ -172,16 +181,16 @@ def compute_communities(
 
     _tick(progress_callback, "classifying communities", 3, 4)
     # Label each community by its dominant node type
-    community_labels = []
+    community_labels: list[CommunityInfo] = []
     for i, comm in enumerate(communities):
-        type_counts = defaultdict(int)
+        type_counts: dict[str, int] = defaultdict(int)
         labels = []
         for node_id in comm:
             ndata = G.nodes[node_id]
             ntype = ndata.get("type", "unknown")
             type_counts[ntype] += 1
             labels.append(ndata.get("label", node_id))
-        dominant_type = max(type_counts, key=type_counts.get)
+        dominant_type = max(type_counts, key=lambda t: type_counts.get(t, 0))
         community_labels.append({
             "id": i + 1,
             "size": len(comm),
@@ -204,7 +213,7 @@ def compute_communities(
 # ── Graph-Level Metrics ──────────────────────────────────────────────────
 
 
-def compute_graph_metrics(G=None) -> dict:
+def compute_graph_metrics(G: Any = None) -> GraphMetrics:
     """Compute graph-level topological metrics."""
     if G is None:
         G = load_graph()
@@ -260,7 +269,7 @@ def compute_graph_metrics(G=None) -> dict:
 def compute_all_metrics(
     progress_callback: StandardProgress | None = None,
     disease_id: str = "sle",
-) -> dict:
+) -> NetworkAnalysis:
     """Run all analyses and return combined results."""
     from med_research.diseases.coverage import module_coverage
 
@@ -291,7 +300,7 @@ def compute_all_metrics(
     DATA_DIR.mkdir(parents=True, exist_ok=True)
 
     # Save centrality top-20 per metric
-    centrality_summary = {}
+    centrality_summary: dict[str, list[CentralityEntry]] = {}
     for metric, scores in centrality.items():
         top = sorted(scores.items(), key=lambda x: x[1], reverse=True)[:20]
         centrality_summary[metric] = [
@@ -304,7 +313,7 @@ def compute_all_metrics(
             for node, score in top
         ]
 
-    results = {
+    results: NetworkAnalysis = {
         "graph_metrics": graph_metrics,
         "centrality": centrality_summary,
         "bridge_nodes": bridge_nodes,
@@ -322,7 +331,7 @@ def compute_all_metrics(
 # ── CLI ──────────────────────────────────────────────────────────────────
 
 
-def print_analysis(results: dict):
+def print_analysis(results: NetworkAnalysis) -> None:
     """Print formatted analysis summary."""
     gm = results["graph_metrics"]
     logger.info("\n" + "=" * 75)
@@ -368,7 +377,7 @@ def main():
 
     if args.centrality:
         G = load_graph(args.disease)
-        centrality = compute_centrality(G)
+        centrality = compute_centrality(G, progress_callback=cli_progress)
         logger.info("\n🎯 CENTRALITY METRICS")
         for metric in ["degree", "betweenness", "eigenvector", "closeness", "pagerank"]:
             scores = centrality.get(metric, {})
@@ -380,7 +389,9 @@ def main():
         return
 
     if args.communities:
-        communities = compute_communities(disease_id=args.disease)
+        communities = compute_communities(
+            G=load_graph(args.disease), progress_callback=cli_progress
+        )
         logger.info(f"\n🔗 Communities (modularity={communities['modularity']}, {communities['n_communities']} total):")
         for c in communities["communities"]:
             logger.info(f"\n  Community {c['id']} ({c['size']} nodes, dominant: {c['dominant_type']}):")
@@ -390,7 +401,7 @@ def main():
                 logger.info(f"    ... and {len(c['node_labels']) - 8} more")
         return
 
-    results = compute_all_metrics(disease_id=args.disease)
+    results = compute_all_metrics(disease_id=args.disease, progress_callback=cli_progress)
     print_analysis(results)
 
     if args.export_html:
@@ -404,7 +415,7 @@ def main():
             cache_or_live="cache",
         )
         generate_html_report(
-            results, disease_id=args.disease, provenance=provenance
+            cast(dict, results), disease_id=args.disease, provenance=provenance
         )
         logger.info("\n✅ HTML report generated: network_pharmacology/report.html")
 

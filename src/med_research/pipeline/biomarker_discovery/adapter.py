@@ -11,10 +11,11 @@ from med_research.pipeline.adapter_options import AdapterOptions
 from med_research.pipeline.base import BasePipelineModule
 from med_research.pipeline.provenance import build_provenance
 from med_research.pipeline.registry import register_module
+from med_research.pipeline.results import BiomarkerResults
 
 
 @register_module
-class BiomarkerDiscoveryModule(BasePipelineModule):
+class BiomarkerDiscoveryModule(BasePipelineModule[BiomarkerResults]):
     """Adapter around cross-module biomarker discovery and HTML reports."""
 
     _COVERAGE_MODULE = "biomarkers"
@@ -37,7 +38,7 @@ class BiomarkerDiscoveryModule(BasePipelineModule):
     def coverage_inputs(self) -> tuple[str, ...]:
         return ("genes",)
 
-    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> list:
+    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> BiomarkerResults:
         from med_research.pipeline.biomarker_discovery.discover import (
             compute_biomarker_matrix,
         )
@@ -50,7 +51,7 @@ class BiomarkerDiscoveryModule(BasePipelineModule):
 
     def report(
         self,
-        results: list,
+        results: BiomarkerResults,
         disease_id: str,
         *,
         provenance: dict | None = None,

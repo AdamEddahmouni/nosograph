@@ -163,7 +163,6 @@ def test_score_all_drugs():
     assert results[0]["composite_safety_score"] >= results[-1]["composite_safety_score"]
 
 
-@pytest.mark.slow
 def test_score_all_drugs_persists():
     score_all_drugs()
     profiles_path = (
@@ -204,7 +203,6 @@ def test_escape_html_safety():
     assert escape_html(None) == ""
 
 
-@pytest.mark.slow
 def test_generate_html_report():
     results = score_all_drugs()
     path = generate_html_report(results)
@@ -215,7 +213,6 @@ def test_generate_html_report():
 # ── API Service ──────────────────────────────────────────────────────────
 
 
-@pytest.mark.slow
 def test_run_safety_profiling():
     from med_research.web.services.adverse_events_service import run_safety_profiling
 
@@ -225,7 +222,6 @@ def test_run_safety_profiling():
     assert result["avg_safety_score"] > 0
 
 
-@pytest.mark.slow
 def test_run_safety_profiling_single_drug():
     from med_research.web.services.adverse_events_service import run_safety_profiling
 
@@ -236,7 +232,6 @@ def test_run_safety_profiling_single_drug():
 # ── CLI Integration ──────────────────────────────────────────────────────
 
 
-@pytest.mark.slow
 def test_safety_cli_help():
     from tests.cli_helpers import cli_help_output
 

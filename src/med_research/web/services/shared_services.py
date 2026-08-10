@@ -1,5 +1,7 @@
 """Literature Mining, Virtual Screening, Clinical Trials, ML services."""
 
+from typing import Any
+
 from med_research.diseases.coverage import module_coverage
 from med_research.exceptions import ModuleNotAvailableError
 from med_research.web.config import USE_CACHE
@@ -15,7 +17,7 @@ def run_literature(
     max_articles: int = 30,
     targeted: bool = False,
     no_cache: bool = False,
-    progress_callback=None,
+    progress_callback: Any = None,
     disease_id: str = "sle",
 ) -> dict:
     """Run literature mining on PubMed via the literature_mining registry adapter."""
@@ -92,7 +94,7 @@ def run_screening(
     gene_id: str | None = None,
     top_n: int = 15,
     use_vina: bool = False,
-    progress_callback=None,
+    progress_callback: Any = None,
     disease_id: str = "sle",
 ) -> dict:
     """Run virtual drug screening via the virtual_screening registry adapter."""
@@ -180,7 +182,7 @@ def run_trials(
     max_trials: int = 100,
     query: str = "lupus OR SLE",
     no_cache: bool = False,
-    progress_callback=None,
+    progress_callback: Any = None,
     disease_id: str = "sle",
 ) -> dict:
     """Track clinical trials via the clinical_trials registry adapter."""
@@ -208,7 +210,7 @@ def run_trials(
     stats = results.get("stats", {})
     kg_crossref = results.get("kg_crossref", {})
 
-    moa_dist = {}
+    moa_dist: dict[str, int] = {}
     for t in trials:
         moa = t.get("moa_category", "Other")
         moa_dist[moa] = moa_dist.get(moa, 0) + 1
@@ -240,7 +242,7 @@ def run_trials(
 def run_ml_prediction(
     top_n: int = 15,
     no_shap: bool = False,
-    progress_callback=None,
+    progress_callback: Any = None,
     disease_id: str = "sle",
 ) -> dict:
     """Run ML target druggability prediction via the ml_predictor registry adapter."""

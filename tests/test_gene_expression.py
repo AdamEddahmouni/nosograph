@@ -6,8 +6,6 @@ import json
 import sys
 from pathlib import Path
 
-import pytest
-
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from med_research.pipeline.gene_expression.correlator import (
@@ -186,7 +184,6 @@ def test_escape_html_expression():
     assert escape_html("safe") == "safe"
 
 
-@pytest.mark.slow
 def test_generate_html_report():
     results = compute_all_correlations()
     path = generate_html_report(results)
@@ -198,7 +195,6 @@ def test_generate_html_report():
 # ── API Service ───────────────────────────────────────────────────────────
 
 
-@pytest.mark.slow
 def test_run_correlation_analysis_service():
     from med_research.web.services.expression_service import run_correlation_analysis
 
@@ -212,7 +208,6 @@ def test_run_correlation_analysis_service():
 # ── CLI Integration ───────────────────────────────────────────────────────
 
 
-@pytest.mark.slow
 def test_expression_cli_help():
     from tests.cli_helpers import cli_help_output
 

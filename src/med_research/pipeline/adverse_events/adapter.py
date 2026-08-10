@@ -11,10 +11,11 @@ from med_research.pipeline.adapter_options import AdapterOptions
 from med_research.pipeline.base import BasePipelineModule
 from med_research.pipeline.provenance import build_provenance
 from med_research.pipeline.registry import register_module
+from med_research.pipeline.results import AdverseEventResults
 
 
 @register_module
-class AdverseEventsModule(BasePipelineModule):
+class AdverseEventsModule(BasePipelineModule[AdverseEventResults]):
     """Adapter around adverse-event safety profiling and HTML reports."""
 
     _COVERAGE_MODULE = "safety"
@@ -30,7 +31,7 @@ class AdverseEventsModule(BasePipelineModule):
     def coverage_inputs(self) -> tuple[str, ...]:
         return ("symptoms", "adverse_event_profile", "safety_risk")
 
-    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> list:
+    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> AdverseEventResults:
         from med_research.pipeline.adverse_events.profiler import score_all_drugs
 
         return score_all_drugs(
@@ -40,7 +41,7 @@ class AdverseEventsModule(BasePipelineModule):
 
     def report(
         self,
-        results: list,
+        results: AdverseEventResults,
         disease_id: str,
         *,
         provenance: dict | None = None,

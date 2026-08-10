@@ -20,6 +20,7 @@ Usage:
 
 import logging
 import re
+from typing import Any
 
 logger = logging.getLogger(__name__)
 
@@ -216,7 +217,7 @@ class BiomedicalNER:
         self.spacy_available = _try_load_spacy()
 
     def extract_novel_entities(
-        self, text: str, known_entities: set = None
+        self, text: str, known_entities: set[str] | None = None
     ) -> dict:
         """
         Extract biomedical entities from text that are NOT in the known set.
@@ -240,7 +241,7 @@ class BiomedicalNER:
         return results
 
     def extract_all_entities(
-        self, text: str, known_entities: set = None
+        self, text: str, known_entities: set[str] | None = None
     ) -> dict:
         """
         Full-featured extraction including variants, clinical outcomes,
@@ -346,13 +347,16 @@ class BiomedicalNER:
 
     def _extract_spacy(self, text: str, known_entities: set) -> dict:
         """Extract entities using spaCy biomedical model."""
+        nlp = _spacy_nlp
+        if nlp is None:
+            return {}
         try:
-            doc = _spacy_nlp(text[:10000])
+            doc = nlp(text[:10000])
         except (RuntimeError, ValueError, AttributeError) as exc:
             logger.debug("spaCy extraction failed: %s", exc)
             return {}
 
-        results = {}
+        results: dict[str, list[dict[str, Any]]] = {}
 
         for ent in doc.ents:
             label = ent.label_
@@ -375,7 +379,7 @@ class BiomedicalNER:
 
     def _extract_regex(self, text: str, known_entities: set) -> dict:
         """Extract entities using regex biomedical patterns."""
-        results = {}
+        results: dict[str, list[dict[str, Any]]] = {}
 
         # Extract genes
         for match in _GENE_PATTERN.finditer(text):
@@ -422,7 +426,7 @@ class BiomedicalNER:
 
     def _extract_variants(self, text: str) -> list:
         """Extract genetic variant mentions (rsIDs, missense, HLA alleles, etc.)."""
-        results = []
+        results: list[dict[str, Any]] = []
         seen = set()
         for match in _VARIANT_PATTERN.finditer(text):
             entity = match.group().strip()
@@ -435,7 +439,7 @@ class BiomedicalNER:
 
     def _extract_clinical(self, text: str) -> list:
         """Extract clinical trial outcome mentions."""
-        results = []
+        results: list[dict[str, Any]] = []
         seen = set()
         for match in _CLINICAL_PATTERN.finditer(text):
             entity = match.group().strip()
@@ -448,7 +452,7 @@ class BiomedicalNER:
 
     def _extract_statistics(self, text: str) -> list:
         """Extract statistical measure mentions (p-values, OR, HR, CI)."""
-        results = []
+        results: list[dict[str, Any]] = []
         seen = set()
         for match in _STATISTICAL_PATTERN.finditer(text):
             entity = match.group().strip()
@@ -461,7 +465,7 @@ class BiomedicalNER:
 
     def _extract_dosage(self, text: str) -> list:
         """Extract dosage and administration mentions."""
-        results = []
+        results: list[dict[str, Any]] = []
         seen = set()
         for match in _DOSAGE_PATTERN.finditer(text):
             entity = match.group().strip()

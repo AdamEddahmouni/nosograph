@@ -3,13 +3,20 @@
 from __future__ import annotations
 
 from datetime import date, datetime, timezone
-from typing import Any, Literal
+from typing import Any, Callable, Literal, cast
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
 
 SourceName = Literal["pubmed", "clinical_trials", "gwas", "fda_labels"]
 CandidateType = Literal["drugs", "targets", "both"]
+
+# Persisted schema versions are intentionally separate from the runtime model
+# classes. Runtime requests/results can evolve without making old SQLite JSON
+# payloads impossible to read.
+WORKSPACE_REQUEST_SCHEMA_VERSION: Literal["1.0"] = "1.0"
+WORKSPACE_RESULT_SCHEMA_VERSION: Literal["1.1"] = "1.1"
+
 ClaimRelationship = Literal[
     "supports",
     "contradicts",
@@ -51,6 +58,7 @@ class ResearchRequest(WorkspaceModel):
     candidate_type: CandidateType = "both"
     max_evidence: int = Field(default=50, ge=1, le=200)
     enable_llm: bool = True
+    model: str | None = None
 
     @field_validator("disease_id", mode="before")
     @classmethod
@@ -85,7 +93,7 @@ class ResearchRequest(WorkspaceModel):
         value = tuple(value)
         if not value:
             raise ValueError("at least one evidence source is required")
-        return value
+        return cast(tuple[str, ...], value)
 
     @model_validator(mode="after")
     def validate_dates(self) -> "ResearchRequest":
@@ -272,8 +280,14 @@ class SourceStatus(WorkspaceModel):
     retrieved_at: datetime = Field(default_factory=_utc_now)
 
 
+class WorkspaceRequestV1(ResearchRequest):
+    """Versioned request shape written to persistent run storage."""
+
+    schema_version: Literal["1.0"] = WORKSPACE_REQUEST_SCHEMA_VERSION
+
+
 class EvidenceDossier(WorkspaceModel):
-    schema_version: str = "1.1"
+    schema_version: str = WORKSPACE_RESULT_SCHEMA_VERSION
     run_id: str
     request: ResearchRequest
     search_terms: list[str] = Field(default_factory=list)
@@ -294,11 +308,196 @@ class EvidenceDossier(WorkspaceModel):
     )
 
 
+class WorkspaceResultV1(EvidenceDossier):
+    """Versioned result shape written to persistent run storage."""
+
+    schema_version: Literal["1.1"] = WORKSPACE_RESULT_SCHEMA_VERSION
+    request: WorkspaceRequestV1
+
+
+WorkspaceMigration = Callable[[dict[str, Any]], dict[str, Any]]
+WorkspaceMigrationKind = Literal["request", "result"]
+
+
+def _request_legacy_to_v1(payload: dict[str, Any]) -> dict[str, Any]:
+    migrated = dict(payload)
+    migrated["schema_version"] = WORKSPACE_REQUEST_SCHEMA_VERSION
+    return migrated
+
+
+def _result_legacy_to_v1(payload: dict[str, Any]) -> dict[str, Any]:
+    migrated = dict(payload)
+    migrated["schema_version"] = "1.0"
+    return migrated
+
+
+def _result_v1_to_v1_1(payload: dict[str, Any]) -> dict[str, Any]:
+    migrated = dict(payload)
+    migrated.setdefault("graph_explanations", [])
+    migrated.setdefault("limitations", [])
+    migrated["schema_version"] = WORKSPACE_RESULT_SCHEMA_VERSION
+    return migrated
+
+
+# Each edge is one intentionally small upgrade. Future versions append an edge
+# rather than replacing old migrations, allowing legacy rows to upgrade through
+# every intermediate contract in a deterministic chain.
+WORKSPACE_REQUEST_MIGRATIONS: dict[tuple[str, str], WorkspaceMigration] = {
+    ("legacy", WORKSPACE_REQUEST_SCHEMA_VERSION): _request_legacy_to_v1,
+}
+WORKSPACE_RESULT_MIGRATIONS: dict[tuple[str, str], WorkspaceMigration] = {
+    ("legacy", "1.0"): _result_legacy_to_v1,
+    ("1.0", WORKSPACE_RESULT_SCHEMA_VERSION): _result_v1_to_v1_1,
+}
+
+
+def register_workspace_migration(
+    kind: WorkspaceMigrationKind,
+    from_version: str,
+    to_version: str,
+    migration: WorkspaceMigration,
+) -> None:
+    """Register one immutable edge in the request/result migration graph."""
+    if from_version == to_version:
+        raise ValueError("Workspace migration versions must differ")
+    registry = (
+        WORKSPACE_REQUEST_MIGRATIONS
+        if kind == "request"
+        else WORKSPACE_RESULT_MIGRATIONS
+    )
+    edge = (from_version, to_version)
+    if edge in registry:
+        raise ValueError(f"Workspace migration already registered: {kind} {edge}")
+    registry[edge] = migration
+
+
+def _apply_workspace_migration_chain(
+    payload: dict[str, Any],
+    *,
+    kind: WorkspaceMigrationKind,
+    from_version: str,
+    to_version: str,
+) -> dict[str, Any]:
+    """Apply registered migration edges until the target version is reached."""
+    if from_version == to_version:
+        return dict(payload)
+    registry = (
+        WORKSPACE_REQUEST_MIGRATIONS
+        if kind == "request"
+        else WORKSPACE_RESULT_MIGRATIONS
+    )
+    current = from_version
+    migrated = dict(payload)
+    visited: set[str] = set()
+    while current != to_version:
+        if current in visited:
+            raise ValueError(f"Workspace {kind} migration cycle at version {current}")
+        visited.add(current)
+        edges = [
+            (destination, step)
+            for (source, destination), step in registry.items()
+            if source == current
+        ]
+        if not edges:
+            raise ValueError(
+                f"Unsupported Workspace {kind} schema version: {from_version}"
+            )
+        if len(edges) > 1:
+            raise ValueError(
+                f"Ambiguous Workspace {kind} migrations from version {current}"
+            )
+        destination, step = edges[0]
+        migrated = step(migrated)
+        if migrated.get("schema_version") != destination:
+            raise ValueError(
+                f"Workspace {kind} migration did not produce version {destination}"
+            )
+        current = destination
+    return migrated
+
+
 def normalize_request(request: ResearchRequest | dict[str, Any]) -> ResearchRequest:
     """Validate and normalize a request from Python or JSON-compatible input."""
     return (
         request if isinstance(request, ResearchRequest) else ResearchRequest.model_validate(request)
     )
+
+
+def serialize_workspace_request(
+    request: ResearchRequest | dict[str, Any],
+) -> dict[str, Any]:
+    """Serialize a request with its migration version marker."""
+    normalized = normalize_request(request)
+    return WorkspaceRequestV1.model_validate(
+        normalized.model_dump(mode="json")
+    ).model_dump(mode="json")
+
+
+def migrate_workspace_request(payload: ResearchRequest | dict[str, Any]) -> ResearchRequest:
+    """Load current or legacy persisted request JSON into the runtime model."""
+    if isinstance(payload, ResearchRequest):
+        return payload
+    if not isinstance(payload, dict):
+        raise TypeError("Workspace request payload must be a mapping")
+
+    raw: dict[str, Any] = dict(payload)
+    version = raw.pop("schema_version", None) or "legacy"
+    migrated = _apply_workspace_migration_chain(
+        raw,
+        kind="request",
+        from_version=str(version),
+        to_version=WORKSPACE_REQUEST_SCHEMA_VERSION,
+    )
+    migrated.pop("schema_version", None)
+    return ResearchRequest.model_validate(migrated)
+
+
+def serialize_workspace_result(dossier: EvidenceDossier) -> dict[str, Any]:
+    """Serialize a dossier with its migration version marker."""
+    versioned = WorkspaceResultV1.model_validate(dossier.model_dump(mode="json"))
+    for target, source in zip(versioned.evidence, dossier.evidence, strict=True):
+        for field in ("quality_tier", "quality_score", "quality_rationale"):
+            object.__setattr__(target, field, getattr(source, field))
+    return versioned.model_dump(mode="json")
+
+
+def migrate_workspace_result(payload: EvidenceDossier | dict[str, Any]) -> EvidenceDossier:
+    """Migrate a persisted dossier into the current result model.
+
+    Version ``1.0`` and unversioned payloads are accepted as legacy results;
+    fields introduced in the current result contract are populated by their
+    model defaults before the payload is returned as version ``1.1``.
+    """
+    if isinstance(payload, EvidenceDossier):
+        return payload
+    if not isinstance(payload, dict):
+        raise TypeError("Workspace result payload must be a mapping")
+
+    raw: dict[str, Any] = dict(payload)
+    version = raw.get("schema_version") or "legacy"
+    raw = _apply_workspace_migration_chain(
+        raw,
+        kind="result",
+        from_version=str(version),
+        to_version=WORKSPACE_RESULT_SCHEMA_VERSION,
+    )
+
+    nested_request = raw.get("request")
+    if isinstance(nested_request, dict):
+        raw["request"] = migrate_workspace_request(nested_request).model_dump(mode="json")
+
+    migrated = EvidenceDossier.model_validate(raw)
+    # Result validation classifies evidence quality for newly created records;
+    # migration must preserve persisted analyst/source quality values exactly.
+    for record, raw_record in zip(
+        migrated.evidence, raw.get("evidence", []), strict=True
+    ):
+        if not isinstance(raw_record, dict):
+            continue
+        for field in ("quality_tier", "quality_score", "quality_rationale"):
+            if field in raw_record:
+                object.__setattr__(record, field, raw_record[field])
+    return migrated
 
 
 def _dedupe_key(record: EvidenceRecord) -> tuple[str, str]:

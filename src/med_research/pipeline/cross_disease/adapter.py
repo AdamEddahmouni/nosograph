@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Any
+from typing import Any, cast
 
 from typing_extensions import Unpack
 
@@ -11,10 +11,11 @@ from med_research.pipeline.adapter_options import AdapterOptions
 from med_research.pipeline.base import BasePipelineModule
 from med_research.pipeline.provenance import build_provenance
 from med_research.pipeline.registry import register_module
+from med_research.pipeline.results import ComparativeModulesResult, CrossDiseaseResult
 
 
 @register_module
-class CrossDiseaseModule(BasePipelineModule):
+class CrossDiseaseModule(BasePipelineModule[CrossDiseaseResult | ComparativeModulesResult]):
     """Adapter around ``cross_disease.analyzer`` scoring and reporting."""
 
     _COVERAGE_MODULE = "cross_disease"
@@ -30,35 +31,43 @@ class CrossDiseaseModule(BasePipelineModule):
     def coverage_inputs(self) -> tuple[str, ...]:
         return ("genes", "drugs", "pathways")
 
-    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
+    def run(
+        self, disease_id: str, **opts: Unpack[AdapterOptions]
+    ) -> CrossDiseaseResult | ComparativeModulesResult:
         if opts.get("comparative"):
             from med_research.pipeline.cross_disease.analyzer import (
                 compute_comparative_modules,
             )
 
-            return compute_comparative_modules(
-                progress_callback=opts.get("progress_callback"),
-                top_synergy=opts.get("top_synergy", 5),
+            return cast(
+                ComparativeModulesResult,
+                compute_comparative_modules(
+                    progress_callback=opts.get("progress_callback"),
+                    top_synergy=opts.get("top_synergy", 5),
+                ),
             )
 
         from med_research.pipeline.cross_disease.analyzer import (
             compute_cross_disease_analysis,
         )
 
-        return compute_cross_disease_analysis(
-            progress_callback=opts.get("progress_callback"),
+        return cast(
+            CrossDiseaseResult,
+            compute_cross_disease_analysis(
+                progress_callback=opts.get("progress_callback"),
+            ),
         )
 
     def report(
         self,
-        results: dict,
+        results: CrossDiseaseResult | ComparativeModulesResult,
         disease_id: str,
         *,
         provenance: dict | None = None,
     ) -> Path:
         from med_research.pipeline.cross_disease.report import generate_html_report
 
-        report_path = generate_html_report(results, provenance=provenance)
+        report_path = generate_html_report(cast(dict, results), provenance=provenance)
         return Path(report_path)
 
     def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:

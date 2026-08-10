@@ -7,6 +7,7 @@ Tests cover:
   - vina_setup.py: Vina binary check/download helper
 """
 
+import os
 import sys
 from pathlib import Path
 
@@ -444,26 +445,36 @@ def test_engine_prepare_targets_no_force(engine):
     assert len(rec_paths) >= 10
 
 
-@pytest.mark.slow
 def test_vina_setup_cli_help():
     import subprocess
 
+    env = os.environ.copy()
+    src_dir = Path(__file__).parent.parent / "src"
+    env["PYTHONPATH"] = os.pathsep.join(
+        path for path in (str(src_dir), env.get("PYTHONPATH", "")) if path
+    )
     result = subprocess.run(
         [sys.executable, "-m", "med_research.pipeline.virtual_screening.vina_setup", "--help"],
         capture_output=True, text=True, encoding="utf-8", errors="replace",
         cwd=str(Path(__file__).parent.parent),
+        env=env,
     )
     assert result.returncode == 0
 
 
-@pytest.mark.slow
 def test_vina_setup_check_cli():
     import subprocess
 
+    env = os.environ.copy()
+    src_dir = Path(__file__).parent.parent / "src"
+    env["PYTHONPATH"] = os.pathsep.join(
+        path for path in (str(src_dir), env.get("PYTHONPATH", "")) if path
+    )
     result = subprocess.run(
         [sys.executable, "-m", "med_research.pipeline.virtual_screening.vina_setup", "--check"],
         capture_output=True, text=True, encoding="utf-8", errors="replace",
         cwd=str(Path(__file__).parent.parent),
+        env=env,
     )
     assert result.returncode == 0
     assert "Status" in result.stdout or "Vina" in result.stdout

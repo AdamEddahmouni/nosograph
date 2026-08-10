@@ -148,6 +148,11 @@ function escapeHtml(text) {
         .replace(/'/g, '&#39;');
 }
 
+function workspaceDateLabel(value) {
+    const text = String(value || '').trim();
+    return text ? text.slice(0, 10) : 'Unknown date';
+}
+
 // ── Module Execution ─────────────────────────────────────────────────────
 
 const diseaseQS = () => `disease=${encodeURIComponent(getActiveDisease())}`;
@@ -649,6 +654,19 @@ function setupWorkspaceReviewActions() {
     });
 }
 
+function setupWorkspaceResultActions() {
+    const result = document.getElementById('workspace-result');
+    if (!result || result.dataset.resultActionsBound) return;
+    result.dataset.resultActionsBound = 'true';
+    result.addEventListener('click', event => {
+        const action = event.target.closest('[data-workspace-result-action]')?.dataset.workspaceResultAction;
+        if (action === 'download-json') downloadWorkspaceJson();
+        if (action === 'open-html') openWorkspaceHtml();
+        if (action === 'download-bundle') downloadWorkspaceBundle();
+        if (action === 'copy-fingerprint') copyWorkspaceFingerprint();
+    });
+}
+
 async function loadWorkspaceReviews(runId) {
     if (!runId) return;
     try {
@@ -862,10 +880,10 @@ function renderWorkspaceResult(el, payload) {
     const request = dossier.request || {};
     const sourceLabels = (request.sources || []).map(workspaceSourceLabel).join(', ') || 'not recorded';
     el.innerHTML = `
-        <div class="workspace-result-head"><div><strong>✅ Dossier ready</strong><small>${escapeHtml(dossier.run_id || '')} · ${evidence.length} evidence · ${claims.length} claims</small></div><div class="workspace-export-links"><button class="btn btn-secondary btn-sm" type="button" onclick="downloadWorkspaceJson()">⬇ JSON</button>
-<button class="btn btn-secondary btn-sm" type="button" onclick="openWorkspaceHtml()">📄 HTML</button><button class="btn btn-secondary btn-sm" type="button" onclick="downloadWorkspaceBundle()">📦 Review bundle</button></div></div>
+        <div class="workspace-result-head"><div><strong>✅ Dossier ready</strong><small>${escapeHtml(dossier.run_id || '')} · ${evidence.length} evidence · ${claims.length} claims</small></div><div class="workspace-export-links"><button class="btn btn-secondary btn-sm" type="button" data-workspace-result-action="download-json">⬇ JSON</button>
+<button class="btn btn-secondary btn-sm" type="button" data-workspace-result-action="open-html">📄 HTML</button><button class="btn btn-secondary btn-sm" type="button" data-workspace-result-action="download-bundle">📦 Review bundle</button></div></div>
         <div class="workspace-summary-grid"><div><b>${drugs.length}</b><span>drug candidates</span></div><div><b>${targets.length}</b><span>target candidates</span></div><div><b>${evidence.length}</b><span>evidence records</span></div><div><b>${warningCount}</b><span>warnings</span></div></div>
-        <div class="workspace-provenance"><strong>Reproducibility</strong><span>Fingerprint: <code>${escapeHtml(provenance.fingerprint || 'not available')}</code></span><span>Research question: ${escapeHtml(request.question || 'not recorded')}</span><span>Sources: ${escapeHtml(sourceLabels)}</span><span>Disease: ${escapeHtml(request.disease_id || 'not recorded')}</span><span>Mode: ${escapeHtml(provenance.cache_or_live || dossier.manifest?.cache_or_live || 'unknown')}</span><button class="btn btn-secondary btn-sm" type="button" onclick="copyWorkspaceFingerprint()">Copy fingerprint</button></div>
+        <div class="workspace-provenance"><strong>Reproducibility</strong><span>Fingerprint: <code>${escapeHtml(provenance.fingerprint || 'not available')}</code></span><span>Research question: ${escapeHtml(request.question || 'not recorded')}</span><span>Sources: ${escapeHtml(sourceLabels)}</span><span>Disease: ${escapeHtml(request.disease_id || 'not recorded')}</span><span>Mode: ${escapeHtml(provenance.cache_or_live || dossier.manifest?.cache_or_live || 'unknown')}</span><button class="btn btn-secondary btn-sm" type="button" data-workspace-result-action="copy-fingerprint">Copy fingerprint</button></div>
         <div class="workspace-source-statuses">${sourceStatus || '<span class="workspace-muted">No source status available.</span>'}</div>
         <div class="workspace-quality-summary"><strong>Evidence quality:</strong> ${Object.entries(qualitySummary).filter(([key]) => !['totalScore', 'total'].includes(key)).map(([tier, count]) => `<span>${escapeHtml(tier.replace('_', ' '))}: ${count}</span>`).join('') || '<span>not classified</span>'}<span>average score: ${qualityAverage}</span></div>
         <div class="workspace-result-columns"><section><h4>💊 Prioritized drugs</h4>${rankingRows(drugs, 'No drug ranking available.', 'drug')}</section><section><h4>🧬 Prioritized targets</h4>${rankingRows(targets, 'No target ranking available.', 'target')}</section></div>
@@ -878,6 +896,7 @@ function renderWorkspaceResult(el, payload) {
     window.lastWorkspaceDossier = dossier;
     window.lastWorkspaceHtml = payload?.html || '';
     setupWorkspaceReviewActions();
+    setupWorkspaceResultActions();
     loadWorkspaceReviews(dossier.run_id);
     loadWorkspaceEvidenceGraph(dossier.run_id);
     loadWorkspaceAlerts();
@@ -917,36 +936,101 @@ function downloadWorkspaceJson() {
 
 let workspaceTrendData = { runs: [], drug_series: [], target_series: [] };
 
+function populateWorkspaceTrendCandidates() {
+    const kind = document.getElementById('workspace-trend-kind')?.value || 'drug';
+    const candidate = document.getElementById('workspace-trend-candidate');
+    if (!candidate) return;
+    const previous = candidate.value;
+    const series = workspaceTrendData[`${kind}_series`] || [];
+    candidate.innerHTML = '<option value="">All candidates</option>' + series.map(item => `<option value="${escapeHtml(item.candidate_id)}">${escapeHtml(item.name)}</option>`).join('');
+    candidate.value = series.some(item => item.candidate_id === previous) ? previous : '';
+}
+
 async function loadWorkspaceTrends() {
     const status = document.getElementById('workspace-trend-status');
     if (!status) return;
+    status.textContent = 'Loading trend data…';
     try {
         workspaceTrendData = await apiFetch('/api/workspace/trends?limit=20');
-        const kind = document.getElementById('workspace-trend-kind');
-        const candidate = document.getElementById('workspace-trend-candidate');
-        const series = workspaceTrendData[`${kind?.value || 'drug'}_series`] || [];
-        if (candidate) {
-            const previous = candidate.value;
-            candidate.innerHTML = '<option value="">All candidates</option>' + series.map(item => `<option value="${escapeHtml(item.candidate_id)}">${escapeHtml(item.name)}</option>`).join('');
-            candidate.value = series.some(item => item.candidate_id === previous) ? previous : '';
-        }
+        populateWorkspaceTrendCandidates();
         renderWorkspaceTrends();
     } catch (error) {
         status.textContent = `Trend data unavailable: ${error.message}`;
         const chart = document.getElementById('workspace-trend-chart');
+        const table = document.getElementById('workspace-trend-table');
+        const metrics = document.getElementById('workspace-trend-metrics');
         if (chart) chart.innerHTML = '';
+        if (table) table.innerHTML = '';
+        if (metrics) metrics.innerHTML = '';
     }
+}
+
+function workspaceTrendPoint(item, runId) {
+    return (item.points || []).find(point => point.run_id === runId);
+}
+
+function renderWorkspaceTrendTable(kind, runs, series) {
+    const container = document.getElementById('workspace-trend-table');
+    if (!container) return;
+    const exportButton = '<button class="btn btn-secondary btn-sm" type="button" data-action="workspace-trends-export">⬇ Download CSV</button>';
+    if (!runs.length || !series.length) {
+        container.innerHTML = `<div class="workspace-trend-table-head"><h4>Tabular trend data</h4>${exportButton}</div><p class="workspace-muted">No ${escapeHtml(kind)} trend data is available yet.</p>`;
+        return;
+    }
+    const headers = runs.map(run => `<th scope="col">${escapeHtml(workspaceDateLabel(run.timestamp))}<span class="workspace-sr-only">, run ${escapeHtml(run.run_id)}</span></th>`).join('');
+    const rows = series.map(item => {
+        const cells = runs.map(run => {
+            const point = workspaceTrendPoint(item, run.run_id);
+            const present = point?.present && point.score != null && Number.isFinite(Number(point.score));
+            const score = present ? Number(point.score).toFixed(1) : '—';
+            const details = present ? `rank ${point.rank ?? 'not available'}, confidence ${point.confidence_band || 'unknown'}` : 'candidate not present in this run';
+            return `<td>${escapeHtml(score)}<span class="workspace-sr-only">, ${escapeHtml(details)}</span></td>`;
+        }).join('');
+        return `<tr><th scope="row">${escapeHtml(item.name || item.candidate_id)}<span class="workspace-sr-only"> (${escapeHtml(kind)} ${escapeHtml(item.candidate_id)})</span></th>${cells}</tr>`;
+    }).join('');
+    container.innerHTML = `<div class="workspace-trend-table-head"><h4 id="workspace-trend-table-title">Tabular trend data</h4>${exportButton}</div><div class="workspace-trend-table-scroll"><table aria-describedby="workspace-trend-table-title"><caption class="workspace-sr-only">${escapeHtml(kind)} candidate scores across successful Workspace runs. Scores include rank and confidence for screen-reader users.</caption><thead><tr><th scope="col">Candidate</th>${headers}</tr></thead><tbody>${rows}</tbody></table></div>`;
+}
+
+function csvCell(value) {
+    return `"${String(value == null ? '' : value).replace(/"/g, '""')}"`;
+}
+
+function downloadWorkspaceTrendCsv() {
+    const kind = document.getElementById('workspace-trend-kind')?.value || 'drug';
+    const selected = document.getElementById('workspace-trend-candidate')?.value || '';
+    const runs = workspaceTrendData.runs || [];
+    const series = (workspaceTrendData[`${kind}_series`] || []).filter(item => !selected || item.candidate_id === selected).slice(0, 8);
+    if (!runs.length || !series.length) {
+        showToast('No trend data is available to export.', 'error');
+        return;
+    }
+    const header = ['candidate_type', 'candidate_id', 'candidate_name', 'run_id', 'timestamp', 'present', 'score', 'rank', 'confidence_band', 'evidence_count', 'claim_count', 'warning_count'];
+    const rows = series.flatMap(item => runs.map(run => {
+        const point = workspaceTrendPoint(item, run.run_id) || {};
+        return [kind, item.candidate_id, item.name, run.run_id, point.timestamp || run.timestamp, point.present === true, point.score ?? '', point.rank ?? '', point.confidence_band || '', run.evidence_count ?? '', run.claim_count ?? '', run.warning_count ?? ''];
+    }));
+    const csv = [header, ...rows].map(row => row.map(csvCell).join(',')).join('\r\n') + '\r\n';
+    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `workspace-${kind}-trends.csv`;
+    link.click();
+    window.setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
 
 function renderWorkspaceTrends() {
     const status = document.getElementById('workspace-trend-status');
     const chart = document.getElementById('workspace-trend-chart');
+    const table = document.getElementById('workspace-trend-table');
     const metrics = document.getElementById('workspace-trend-metrics');
-    if (!status || !chart || !metrics) return;
+    if (!status || !chart || !table || !metrics) return;
+    populateWorkspaceTrendCandidates();
     const kind = document.getElementById('workspace-trend-kind')?.value || 'drug';
     const selected = document.getElementById('workspace-trend-candidate')?.value || '';
     const runs = workspaceTrendData.runs || [];
     const series = (workspaceTrendData[`${kind}_series`] || []).filter(item => !selected || item.candidate_id === selected).slice(0, 8);
+    renderWorkspaceTrendTable(kind, runs, series);
     if (runs.length < 2) {
         status.textContent = runs.length ? 'Save at least two successful runs to see trends.' : 'Run a workspace query to start an evidence trend.';
         chart.innerHTML = '';
@@ -962,17 +1046,20 @@ function renderWorkspaceTrends() {
     const colors = ['#67e8f9', '#a78bfa', '#4ade80', '#fbbf24', '#f472b6', '#fb7185', '#60a5fa', '#c084fc'];
     const grid = [0, 25, 50, 75, 100].map(value => `<line x1="${pad.left}" x2="${width - pad.right}" y1="${y(value)}" y2="${y(value)}" class="trend-grid"/><text x="${pad.left - 8}" y="${y(value) + 4}" class="trend-axis">${value}</text>`).join('');
     const paths = series.map((item, seriesIndex) => {
-        const points = item.points.filter(point => point.present && point.score != null);
+        const points = (item.points || []).filter(point => point.present && point.score != null && runs.some(run => run.run_id === point.run_id));
         const line = points.map((point, index) => {
             const runIndex = runs.findIndex(run => run.run_id === point.run_id);
             return `${index ? 'L' : 'M'} ${x(runIndex)} ${y(point.score)}`;
         }).join(' ');
-        const dots = points.map(point => { const runIndex = runs.findIndex(run => run.run_id === point.run_id); return `<circle cx="${x(runIndex)}" cy="${y(point.score)}" r="4" fill="${colors[seriesIndex % colors.length]}"><title>${escapeHtml(item.name)} · ${escapeHtml(point.timestamp)} · score ${Number(point.score).toFixed(1)} · rank ${point.rank ?? '—'} · ${escapeHtml(point.confidence_band || 'unknown')}</title></circle>`; }).join('');
+        const dots = points.map(point => {
+            const runIndex = runs.findIndex(run => run.run_id === point.run_id);
+            return `<circle cx="${x(runIndex)}" cy="${y(point.score)}" r="4" fill="${colors[seriesIndex % colors.length]}"><title>${escapeHtml(item.name)} · ${escapeHtml(point.timestamp || '')} · score ${Number(point.score).toFixed(1)} · rank ${point.rank ?? '—'} · ${escapeHtml(point.confidence_band || 'unknown')}</title></circle>`;
+        }).join('');
         return `<path d="${line}" class="trend-line" stroke="${colors[seriesIndex % colors.length]}"/><text x="${pad.left + 8}" y="${pad.top + 15 + seriesIndex * 15}" class="trend-legend" fill="${colors[seriesIndex % colors.length]}">${escapeHtml(item.name)}</text>${dots}`;
     }).join('');
-    const labels = runs.map((run, index) => `<text x="${x(index)}" y="${height - 10}" class="trend-axis" text-anchor="middle">${escapeHtml(run.timestamp.slice(0, 10))}</text>`).join('');
+    const labels = runs.map((run, index) => `<text x="${x(index)}" y="${height - 10}" class="trend-axis" text-anchor="middle">${escapeHtml(workspaceDateLabel(run.timestamp))}</text>`).join('');
     chart.innerHTML = `<svg viewBox="0 0 ${width} ${height}" role="img" aria-label="${escapeHtml(kind)} score trends"><title>${escapeHtml(kind)} score trends across saved workspace runs</title>${grid}${paths}${labels}</svg>`;
-    metrics.innerHTML = runs.map(run => `<span><b>${run.evidence_count}</b> evidence · <b>${run.claim_count}</b> claims · <b>${run.warning_count}</b> warnings · ${escapeHtml(run.timestamp.slice(0, 10))}</span>`).join('');
+    metrics.innerHTML = runs.map(run => `<span><b>${escapeHtml(run.evidence_count)}</b> evidence · <b>${escapeHtml(run.claim_count)}</b> claims · <b>${escapeHtml(run.warning_count)}</b> warnings · ${escapeHtml(workspaceDateLabel(run.timestamp))}</span>`).join('');
 }
 
 function renderWorkspaceDeliveryStatus(delivery, digestDelivery = {}) {
@@ -1089,10 +1176,25 @@ async function sendWorkspaceDigest() {
     }
 }
 
+function setupWorkspaceAlertActions() {
+    const list = document.getElementById('workspace-alert-list');
+    if (!list || list.dataset.actionsBound) return;
+    list.dataset.actionsBound = 'true';
+    list.addEventListener('click', event => {
+        const button = event.target.closest('[data-workspace-alert-action]');
+        if (!button) return;
+        const action = button.dataset.workspaceAlertAction;
+        const alertId = button.dataset.alertId;
+        if (action === 'review') openWorkspaceAlert(alertId, button.dataset.runId);
+        if (action === 'dismiss') markWorkspaceAlertRead(alertId);
+    });
+}
+
 async function loadWorkspaceAlerts() {
     const list = document.getElementById('workspace-alert-list');
     const count = document.getElementById('workspace-alert-count');
     if (!list) return;
+    setupWorkspaceAlertActions();
     try {
         const data = await apiFetch('/api/workspace/alerts?limit=20');
         if (count) count.textContent = data.unread_count ? String(data.unread_count) : '';
@@ -1104,7 +1206,7 @@ async function loadWorkspaceAlerts() {
             if (alert.rank_change) metricParts.push(`rank moved ${alert.rank_change}`);
             if (alert.quality_change != null) metricParts.push(`quality ${Number(alert.quality_change).toFixed(2)}`);
             const delta = metricParts.length ? ` · ${metricParts.join(' · ')}` : '';
-            return `<div class="workspace-alert-row ${alert.read_at ? '' : 'unread'}"><div><strong>${escapeHtml(alert.title)}</strong><small>${escapeHtml(alert.message)} · added: ${escapeHtml(added)}${delta}</small><small>${escapeHtml(alert.created_at || '')} · trigger run ${escapeHtml(alert.trigger_run_id)}</small></div><div><button class="btn btn-secondary btn-sm" type="button" onclick="openWorkspaceAlert('${escapeHtml(alert.alert_id)}','${escapeHtml(alert.trigger_run_id)}')">Review</button>${alert.read_at ? '' : `<button class="btn btn-secondary btn-sm" type="button" onclick="markWorkspaceAlertRead('${escapeHtml(alert.alert_id)}')">Dismiss</button>`}</div></div>`;
+            return `<div class="workspace-alert-row ${alert.read_at ? '' : 'unread'}"><div><strong>${escapeHtml(alert.title)}</strong><small>${escapeHtml(alert.message)} · added: ${escapeHtml(added)}${delta}</small><small>${escapeHtml(alert.created_at || '')} · trigger run ${escapeHtml(alert.trigger_run_id)}</small></div><div><button class="btn btn-secondary btn-sm" type="button" data-workspace-alert-action="review" data-alert-id="${escapeHtml(alert.alert_id)}" data-run-id="${escapeHtml(alert.trigger_run_id)}">Review</button>${alert.read_at ? '' : `<button class="btn btn-secondary btn-sm" type="button" data-workspace-alert-action="dismiss" data-alert-id="${escapeHtml(alert.alert_id)}">Dismiss</button>`}</div></div>`;
         }).join('') : '<span class="workspace-muted">No new evidence requires review.</span>';
     } catch (error) {
         list.innerHTML = `<span class="workspace-muted">Alerts unavailable: ${escapeHtml(error.message)}</span>`;
@@ -1134,11 +1236,11 @@ async function loadWorkspaceHistory() {
         const runs = data.runs || [];
         list.innerHTML = runs.length ? runs.map(run => `
             <div class="workspace-history-row">
-                <label><input type="checkbox" class="workspace-compare-check" value="${escapeHtml(run.run_id)}"> <strong>${escapeHtml(run.question)}</strong></label>
-                <span>${escapeHtml(run.status)} · ${run.evidence_count} evidence · ${escapeHtml(run.updated_at || '')}</span>
-                <div><button class="btn btn-secondary btn-sm" type="button" data-workspace-action="open" data-run-id="${escapeHtml(run.run_id)}">Open</button><button class="btn btn-secondary btn-sm" type="button" data-workspace-action="delete" data-run-id="${escapeHtml(run.run_id)}">Delete</button></div>
+                <label><input type="checkbox" class="workspace-compare-check" value="${escapeHtml(run.run_id)}" aria-label="Compare saved run: ${escapeHtml(run.question)}"> <strong>${escapeHtml(run.question)}</strong></label>
+                <span>${escapeHtml(run.status)} · ${escapeHtml(run.evidence_count)} evidence · ${escapeHtml(run.updated_at || '')}</span>
+                <div><button class="btn btn-secondary btn-sm" type="button" data-workspace-action="open" data-run-id="${escapeHtml(run.run_id)}" aria-label="Open saved run ${escapeHtml(run.run_id)}">Open</button><button class="btn btn-secondary btn-sm" type="button" data-workspace-action="delete" data-run-id="${escapeHtml(run.run_id)}" aria-label="Delete saved run ${escapeHtml(run.run_id)}">Delete</button></div>
             </div>`).join('') : '<span class="workspace-muted">No saved runs yet. Run a workspace query to create one.</span>';
-        if (runs.length > 1) list.innerHTML += '<button class="btn btn-primary btn-sm" type="button" onclick="compareWorkspaceRuns()">Compare selected runs</button>';
+        if (runs.length > 1) list.innerHTML += '<button class="btn btn-primary btn-sm" type="button" data-workspace-action="compare" aria-describedby="workspace-compare">Compare selected runs</button>';
     } catch (error) {
         list.innerHTML = `<span class="workspace-muted">History unavailable: ${escapeHtml(error.message)}</span>`;
     }
@@ -1154,6 +1256,7 @@ function setupWorkspaceHistoryActions() {
         const runId = button.dataset.runId;
         if (button.dataset.workspaceAction === 'open') openWorkspaceRun(runId);
         if (button.dataset.workspaceAction === 'delete') deleteWorkspaceRun(runId);
+        if (button.dataset.workspaceAction === 'compare') compareWorkspaceRuns();
     });
 }
 
@@ -1182,17 +1285,29 @@ async function deleteWorkspaceRun(runId) {
 async function compareWorkspaceRuns() {
     const selected = [...document.querySelectorAll('.workspace-compare-check:checked')].map(input => input.value);
     const compare = document.getElementById('workspace-compare');
+    if (!compare) return;
     if (selected.length !== 2) {
+        compare.removeAttribute('aria-busy');
         compare.innerHTML = '<p class="workspace-muted">Select exactly two runs to compare.</p>';
         return;
     }
+    compare.setAttribute('aria-busy', 'true');
+    compare.innerHTML = '<p class="workspace-muted">Loading comparison…</p>';
     try {
         const data = await apiFetch(`/api/workspace/compare?left=${encodeURIComponent(selected[0])}&right=${encodeURIComponent(selected[1])}`);
         const rows = [...(data.drug_changes || []).map(item => ({ ...item, type: 'Drug' })), ...(data.target_changes || []).map(item => ({ ...item, type: 'Target' }))];
         const reviewRows = (data.review_changes || []).map(item => `<div class="workspace-compare-row"><span>${escapeHtml(item.candidate_type)} · <strong>${escapeHtml(item.candidate_name || item.candidate_id)}</strong></span><span>${escapeHtml(item.left?.decision || 'unreviewed')} → ${escapeHtml(item.right?.decision || 'unreviewed')}</span></div>`).join('');
-        compare.innerHTML = `<h4>Run comparison</h4><p class="workspace-muted">${escapeHtml(data.left_run_id)} → ${escapeHtml(data.right_run_id)}</p>${rows.map(item => `<div class="workspace-compare-row"><span>${escapeHtml(item.type)} · <strong>${escapeHtml(item.name)}</strong></span><span>${item.left_score ?? '—'} → ${item.right_score ?? '—'} <b class="${(item.score_delta || 0) >= 0 ? 'delta-up' : 'delta-down'}">${item.score_delta == null ? item.change : ((item.score_delta >= 0 ? '+' : '') + item.score_delta.toFixed(1))}</b></span></div>`).join('')}${reviewRows ? `<h5>Researcher review changes</h5>${reviewRows}` : ''}`;
+        const changeRows = rows.map(item => {
+            const delta = Number.isFinite(Number(item.score_delta)) ? Number(item.score_delta) : null;
+            const deltaLabel = delta == null ? escapeHtml(item.change || 'unchanged') : `${delta >= 0 ? '+' : ''}${delta.toFixed(1)}`;
+            const deltaClass = delta == null || delta >= 0 ? 'delta-up' : 'delta-down';
+            return `<div class="workspace-compare-row"><span>${escapeHtml(item.type)} · <strong>${escapeHtml(item.name || item.candidate_id)}</strong></span><span>${escapeHtml(item.left_score ?? '—')} → ${escapeHtml(item.right_score ?? '—')} <b class="${deltaClass}">${deltaLabel}</b></span></div>`;
+        }).join('');
+        compare.innerHTML = `<h4 id="workspace-compare-title">Run comparison</h4><p class="workspace-muted">${escapeHtml(data.left_run_id)} → ${escapeHtml(data.right_run_id)}</p>${changeRows || '<p class="workspace-muted">No ranking changes between these runs.</p>'}${reviewRows ? `<h5>Researcher review changes</h5>${reviewRows}` : ''}`;
     } catch (error) {
         compare.innerHTML = `<p class="workspace-muted">Comparison unavailable: ${escapeHtml(error.message)}</p>`;
+    } finally {
+        compare.removeAttribute('aria-busy');
     }
 }
 
@@ -2240,7 +2355,7 @@ async function openDiseaseManager() {
     section.innerHTML = `
         <div class="manage-header">
             <h3>🛠️ Manage Disease Module — <span id="manage-disease-name">${escapeHtml(info.name)}</span></h3>
-            <button type="button" class="btn btn-secondary btn-sm" onclick="closeDiseaseManager()">✕ Close</button>
+            <button type="button" class="btn btn-secondary btn-sm" data-action="disease-manager-close">✕ Close</button>
         </div>
         <div class="manage-summary" id="manage-summary"><span class="spinner"></span> Loading module…</div>
         <div class="manage-body">
@@ -2258,7 +2373,7 @@ async function openDiseaseManager() {
                     <label class="manage-opt"><input type="checkbox" id="mng-no-cache"> Bypass cache</label>
                 </div>
                 <div class="manage-actions">
-                    <button type="button" class="btn btn-primary" id="mng-prune-btn" onclick="runPrunePreview()">▶ Run Refresh &amp; Prune Preview</button>
+                    <button type="button" class="btn btn-primary" id="mng-prune-btn" data-action="disease-manager-prune">▶ Run Refresh &amp; Prune Preview</button>
                 </div>
                 <div class="manage-result" id="mng-prune-result"></div>
             </div>
@@ -2329,7 +2444,7 @@ async function loadManageBackups() {
                         ${b.readable === false ? '<span class="tag yellow">unreadable</span>' : ''}
                     </div>
                 </div>
-                <button type="button" class="btn btn-secondary btn-sm" onclick="previewRestore(${i})" ${b.readable === false ? 'disabled' : ''}>↩ Restore</button>
+                <button type="button" class="btn btn-secondary btn-sm" data-action="disease-manager-restore" data-backup-index="${i}" ${b.readable === false ? 'disabled' : ''}>↩ Restore</button>
             </div>`;
         }).join('');
     } catch (e) {
@@ -2369,7 +2484,7 @@ async function loadManageAudit() {
                 <span class="audit-ts">${escapeHtml(formatAuditTime(a.ts))}</span>
             </div>`;
         }).join('') +
-        (data.count > entries.length ? `<div class="manage-sub" style="padding:8px 4px 2px">Showing the last ${entries.length} of ${data.count} recorded actions.</div>` : '');
+        (data.count > entries.length ? `<div class="manage-sub">Showing the last ${entries.length} of ${data.count} recorded actions.</div>` : '');
     } catch (e) {
         el.innerHTML = `<span class="manage-err">⚠️ ${escapeHtml(e.message)}</span>`;
     }
@@ -2606,6 +2721,57 @@ function onDiseaseChange(diseaseId) {
     window.location.reload();
 }
 
+// All dashboard controls use native buttons/forms plus delegated data actions.
+// Keeping this binding at document level also covers controls rendered later,
+// such as the disease manager and Workspace result/history cards.
+function setupDashboardActions() {
+    if (document.documentElement.dataset.dashboardActionsBound) return;
+    document.documentElement.dataset.dashboardActionsBound = 'true';
+
+    document.addEventListener('click', event => {
+        const control = event.target.closest('[data-action]');
+        if (!control) return;
+        const action = control.dataset.action;
+        switch (action) {
+            case 'workspace-auth-login': void loginWorkspaceResearcher(); break;
+            case 'workspace-auth-logout': void logoutWorkspaceResearcher(); break;
+            case 'workspace-history-refresh': void loadWorkspaceHistory(); break;
+            case 'workspace-alerts-refresh': void loadWorkspaceAlerts(); break;
+            case 'workspace-notifications-save': void saveWorkspaceNotificationSettings(); break;
+            case 'workspace-digest-preview': void previewWorkspaceDigest(); break;
+            case 'workspace-digest-send': void sendWorkspaceDigest(); break;
+            case 'workspace-trends-update': void loadWorkspaceTrends(); break;
+            case 'workspace-trends-export': downloadWorkspaceTrendCsv(); break;
+            case 'workspace-graph-fit': fitWorkspaceEvidenceGraph(); break;
+            case 'workspace-graph-refresh': reloadWorkspaceEvidenceGraph(); break;
+            case 'module-run': void runModule(control.dataset.module); break;
+            case 'scroll-explorer': scrollToExplorer(); break;
+            case 'network-analysis': void runNetworkAnalysis(); break;
+            case 'cross-disease': void runCrossDisease(); break;
+            case 'module-comparison': void runModuleComparison(); break;
+            case 'disease-manager-open': void openDiseaseManager(); break;
+            case 'disease-manager-close': closeDiseaseManager(); break;
+            case 'disease-manager-prune': void runPrunePreview(); break;
+            case 'disease-manager-restore': void previewRestore(Number(control.dataset.backupIndex)); break;
+            case 'kg-reset': resetKGExplorer(); break;
+            default: break;
+        }
+    });
+
+    document.addEventListener('change', event => {
+        const control = event.target.closest('[data-action]');
+        if (!control) return;
+        if (control.dataset.action === 'disease-change') onDiseaseChange(control.value);
+        if (control.dataset.action === 'workspace-trends-render') renderWorkspaceTrends();
+    });
+
+    document.addEventListener('submit', event => {
+        const form = event.target.closest('[data-action="workspace-submit"]');
+        if (!form) return;
+        submitWorkspace(event);
+    });
+}
+
 function getActiveDisease() {
     return window.localStorage.getItem('active-disease') || 'sle';
 }
@@ -2644,6 +2810,7 @@ async function loadDiseaseSelector() {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
+    setupDashboardActions();
     const linkedParams = new URLSearchParams(window.location.search);
     await loadDiseaseSelector();
     updateDiseaseDisplay();

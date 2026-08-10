@@ -11,6 +11,8 @@ from collections.abc import Callable
 from pathlib import Path
 from typing import Any
 
+from pydantic import ValidationError
+
 from med_research.diseases.coverage import ModuleCoverage, module_coverage
 from med_research.exceptions import (
     ConfigurationError,
@@ -20,6 +22,7 @@ from med_research.exceptions import (
 )
 from med_research.pipeline.base import PipelineRunResult
 from med_research.pipeline.registry import get_module
+from med_research.pipeline.results import validate_result_contract
 
 # Standard: step label, units completed, total units.
 StandardProgress = Callable[[str, int, int], None]
@@ -136,6 +139,38 @@ def _wire_progress_callback(
         opts["progress_callback"] = progress_callback
 
 
+def module_coverage_for(module_id: str, disease_id: str) -> ModuleCoverage:
+    """Resolve a registered module and return its disease coverage metadata."""
+    module = get_module(module_id)
+    return module_coverage(
+        disease_id,
+        _coverage_module_name(module),
+        module.coverage_inputs(),
+    )
+
+
+def build_module_provenance(
+    module_id: str,
+    disease_id: str,
+    **provenance_opts: Any,
+) -> dict[str, Any]:
+    """Build provenance for a registered module through the dispatch boundary."""
+    module = get_module(module_id)
+    return module.build_provenance(disease_id, **provenance_opts)
+
+
+def render_module_report(
+    module_id: str,
+    results: Any,
+    disease_id: str,
+    **provenance_opts: Any,
+) -> Path:
+    """Render a precomputed registry result through the centralized report path."""
+    module = get_module(module_id)
+    provenance = module.build_provenance(disease_id, **provenance_opts)
+    return module.report(results, disease_id, provenance=provenance)
+
+
 def execute_module(
     module_id: str,
     disease_id: str,
@@ -143,7 +178,7 @@ def execute_module(
     export_html: bool = False,
     progress_callback: LegacyProgress | StandardProgress | None = None,
     **opts: Any,
-) -> PipelineRunResult:
+) -> PipelineRunResult[Any]:
     """Run a registry module with coverage gating and optional HTML export."""
     try:
         module = get_module(module_id)
@@ -171,10 +206,17 @@ def execute_module(
 
     try:
         data = module.run(disease_id, **run_opts)
+        data = validate_result_contract(module_id, data)
     except ModuleNotAvailableError as exc:
         return PipelineRunResult(success=False, data=None, errors=[str(exc)])
     except (ExternalAPIError, DataValidationError, ConfigurationError) as exc:
         return PipelineRunResult(success=False, data=None, errors=[str(exc)])
+    except ValidationError as exc:
+        return PipelineRunResult(
+            success=False,
+            data=None,
+            errors=[f"{module_id} result contract validation failed: {exc}"],
+        )
 
     report_path: Path | None = None
     provenance: dict[str, Any] | None = None

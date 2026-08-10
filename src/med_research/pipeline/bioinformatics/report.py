@@ -17,6 +17,7 @@ import math
 import os
 from datetime import datetime
 from pathlib import Path
+from typing import Any
 
 from med_research.pipeline.reporting import disease_context, render_report
 
@@ -33,14 +34,14 @@ except ImportError:
 
 
 def generate_bioinformatics_report(
-    enrichment_results: dict = None,
-    gene_list: list = None,
-    kg_matches: dict = None,
-    hub_scores: list = None,
-    ppi_crossref: dict = None,
-    ppi_graph: dict = None,
-    gwas_results: dict = None,
-    gwas_crossref: dict = None,
+    enrichment_results: dict | None = None,
+    gene_list: list | None = None,
+    kg_matches: dict | None = None,
+    hub_scores: list | None = None,
+    ppi_crossref: dict | None = None,
+    ppi_graph: dict | None = None,
+    gwas_results: dict | None = None,
+    gwas_crossref: dict | None = None,
     disease_id: str = "sle",
     *,
     provenance: dict | None = None,
@@ -56,7 +57,7 @@ def generate_bioinformatics_report(
 
     # ── Enrichment section ───────────────────────────────────────────────
     enrichment_html = ""
-    if enrichment_results:
+    if enrichment_results and gene_list is not None:
         enrichment_html += _build_enrichment_section(enrichment_results, gene_list)
 
         if kg_matches:
@@ -64,7 +65,7 @@ def generate_bioinformatics_report(
 
     # ── PPI section ──────────────────────────────────────────────────────
     ppi_html = ""
-    if hub_scores:
+    if hub_scores and ppi_crossref is not None:
         ppi_html += _build_ppi_section(hub_scores, ppi_crossref, ppi_graph)
 
     # ── GWAS section ─────────────────────────────────────────────────────
@@ -288,8 +289,12 @@ def _generate_enrichment_dotplot(enrichment_results: dict, max_terms: int = 40) 
 
 
 def _build_stats_cards(
-    enrichment_results, gene_list, hub_scores, ppi_crossref,
-    gwas_results, gwas_crossref,
+    enrichment_results: dict | None,
+    gene_list: list | None,
+    hub_scores: list | None,
+    ppi_crossref: dict | None,
+    gwas_results: dict | None,
+    gwas_crossref: dict | None,
 ) -> str:
     """Build the stats cards row."""
     cards = ""
@@ -513,7 +518,7 @@ def _generate_ppi_hub_chart(hub_scores: list, ppi_crossref: dict) -> str:
     return base64.b64encode(buf.read()).decode("utf-8")
 
 
-def _run_ppi_communities(G) -> dict:
+def _run_ppi_communities(G: Any) -> dict:
     """
     Detect communities using Louvain algorithm.
 
@@ -864,7 +869,7 @@ def _generate_ppi_interactive(ppi_graph: dict, hub_scores: list) -> str:
     return str(output_path)
 
 
-def _build_ppi_section(hub_scores: list, ppi_crossref: dict, ppi_graph: dict = None) -> str:
+def _build_ppi_section(hub_scores: list, ppi_crossref: dict, ppi_graph: dict | None = None) -> str:
     """Build the PPI network analysis section."""
     if not hub_scores or not ppi_crossref:
         return ""

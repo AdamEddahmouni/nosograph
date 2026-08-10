@@ -1,5 +1,7 @@
 """Bioinformatics service — wraps GWAS, enrichment, PPI via module registry."""
 
+from typing import Any
+
 from med_research.web.config import USE_CACHE
 from med_research.web.dependencies import get_kg_genes
 from med_research.web.services.registry_service import (
@@ -11,7 +13,7 @@ from med_research.web.services.registry_service import (
 def run_gwas(
     max_studies: int = 30,
     no_cache: bool = False,
-    progress_callback=None,
+    progress_callback: Any = None,
     disease_id: str = "sle",
 ) -> dict:
     """Run GWAS catalog annotation for a disease."""
@@ -69,7 +71,7 @@ def _format_gwas_response(gwas_results: dict, crossref: dict, genes: dict) -> di
 def run_enrichment(
     untargeted_only: bool = False,
     no_cache: bool = False,
-    progress_callback=None,
+    progress_callback: Any = None,
     disease_id: str = "sle",
 ) -> dict:
     """Run pathway enrichment analysis for a disease."""
@@ -123,7 +125,7 @@ def run_enrichment(
 def run_ppi(
     confidence: float = 0.4,
     no_cache: bool = False,
-    progress_callback=None,
+    progress_callback: Any = None,
     disease_id: str = "sle",
 ) -> dict:
     """Build PPI network and compute hub scores for a disease."""

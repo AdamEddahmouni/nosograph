@@ -43,7 +43,7 @@ if sys.platform == "win32":
         reconfigure(encoding="utf-8", errors="replace")
 
 import logging  # noqa: E402
-from typing import Any  # noqa: E402
+from typing import Any, Mapping, cast  # noqa: E402
 
 from med_research.diseases.schemas import DrugDict, GeneDict  # noqa: E402
 from med_research.pipeline.knowledge_graph.config import (
@@ -52,7 +52,12 @@ from med_research.pipeline.knowledge_graph.config import (
 from med_research.pipeline.knowledge_graph.config import (
     load_genes as config_load_genes,  # noqa: E402
 )
-from med_research.pipeline.progress import StandardProgress, _tick  # noqa: E402
+from med_research.pipeline.progress import StandardProgress, _tick, cli_progress  # noqa: E402
+from med_research.pipeline.results import (  # noqa: E402
+    ScreeningCompound,
+    ScreeningResult,
+    ScreeningTarget,
+)
 
 # The legacy SLE repurposing cache lives beside the pipeline modules.  Keep
 # this path scoped to the SLE compatibility branch; non-SLE scoring never
@@ -108,13 +113,16 @@ def _compute_rdkit_properties(smiles: str) -> dict:
         if mol is None:
             return {}
 
+        # RDKit re-exports these names from compiled rdMolDescriptors; mypy
+        # sees the wrapper modules as bare ModuleType and cannot resolve the
+        # attributes, so each access is annotated with the code it trips.
         return {
-            "mw": round(Descriptors.MolWt(mol), 1),
-            "logp": round(Crippen.MolLogP(mol), 2),
-            "hbd": Lipinski.NumHDonors(mol),
-            "hba": Lipinski.NumHAcceptors(mol),
-            "rotb": Lipinski.NumRotatableBonds(mol),
-            "tpsa": round(Descriptors.TPSA(mol), 1),
+            "mw": round(Descriptors.MolWt(mol), 1),  # type: ignore[attr-defined]
+            "logp": round(Crippen.MolLogP(mol), 2),  # type: ignore[attr-defined]
+            "hbd": Lipinski.NumHDonors(mol),  # type: ignore[attr-defined]
+            "hba": Lipinski.NumHAcceptors(mol),  # type: ignore[attr-defined]
+            "rotb": Lipinski.NumRotatableBonds(mol),  # type: ignore[attr-defined]
+            "tpsa": round(Descriptors.TPSA(mol), 1),  # type: ignore[attr-defined]
         }
     except (ValueError, TypeError, RuntimeError, AttributeError) as exc:
         logger.warning("RDKit property computation failed: %s", exc)
@@ -203,14 +211,14 @@ def load_kg_drugs(disease_id: str = "sle") -> dict[str, DrugDict]:
     return {d["id"]: d for d in data["drugs"]}
 
 
-def build_compound_library(disease_id: str = "sle") -> list:
+def build_compound_library(disease_id: str = "sle") -> list[ScreeningCompound]:
     """Build a compound library from KG drugs with RDKit-computed or estimated properties.
 
     If RDKit is available, computes MW, LogP, HBD, HBA, RotB, TPSA from SMILES.
     Otherwise falls back to estimated properties for biologics and small molecules.
     """
     drugs = load_kg_drugs(disease_id)
-    library = []
+    library: list[ScreeningCompound] = []
 
     for drug_id, drug_info in drugs.items():
         smiles = _DRUG_SMILES.get(drug_id, "")
@@ -223,7 +231,7 @@ def build_compound_library(disease_id: str = "sle") -> list:
             if rdkit_props:
                 props = rdkit_props
 
-        compound = {
+        compound: ScreeningCompound = {
             "id": drug_id,
             "name": drug_info["name"],
             "type": drug_info.get("type", ""),
@@ -233,9 +241,9 @@ def build_compound_library(disease_id: str = "sle") -> list:
             "smiles": smiles,
             "mw": props.get("mw", 400),
             "logp": props.get("logp", 2.0),
-            "hbd": props.get("hbd", 2),
-            "hba": props.get("hba", 5),
-            "rotb": props.get("rotb", 5),
+            "hbd": int(props.get("hbd", 2)),
+            "hba": int(props.get("hba", 5)),
+            "rotb": int(props.get("rotb", 5)),
             "tpsa": props.get("tpsa", 100),
             "rdkit_computed": bool(rdkit_props),
         }
@@ -248,7 +256,7 @@ def build_compound_library(disease_id: str = "sle") -> list:
 #  Scoring Functions
 # ═══════════════════════════════════════════════════════════════════════
 
-def compute_druglikeness(compound: dict) -> float:
+def compute_druglikeness(compound: Mapping[str, Any]) -> float:
     """
     Score drug-likeness based on Lipinski's Rule of 5.
 
@@ -282,8 +290,8 @@ def compute_druglikeness(compound: dict) -> float:
 
 
 def compute_target_complementarity(
-    compound: dict,
-    gene_info: dict,
+    compound: Mapping[str, Any],
+    gene_info: Mapping[str, Any],
     disease_id: str = "sle",
     strategy: Any = None,
 ) -> float:
@@ -321,7 +329,12 @@ def compute_target_complementarity(
     return round(min(10.0, score), 1)
 
 
-def compute_similarity_score(compound: dict, gene_info: dict, disease_id: str = "sle", strategy: Any = None) -> float:
+def compute_similarity_score(
+    compound: Mapping[str, Any],
+    gene_info: Mapping[str, Any],
+    disease_id: str = "sle",
+    strategy: Any = None,
+) -> float:
     """
     Estimate molecular similarity to known drugs for this disease/target.
 
@@ -395,7 +408,7 @@ def compute_similarity_score(compound: dict, gene_info: dict, disease_id: str = 
     return 3.0
 
 
-def compute_binding_estimate(compound: dict, gene_info: dict) -> float:
+def compute_binding_estimate(compound: Mapping[str, Any], gene_info: Mapping[str, Any]) -> float:
     """
     Estimate binding affinity based on molecular properties.
 
@@ -443,7 +456,12 @@ def compute_binding_estimate(compound: dict, gene_info: dict) -> float:
     return round(max(0.0, min(10.0, score)), 1)
 
 
-def compute_novelty_score(compound: dict, gene_info: dict, disease_id: str = "sle", strategy: Any = None) -> float:
+def compute_novelty_score(
+    compound: Mapping[str, Any],
+    gene_info: Mapping[str, Any],
+    disease_id: str = "sle",
+    strategy: Any = None,
+) -> float:
     """
     Score how novel this compound-target pairing is.
 
@@ -564,12 +582,12 @@ def get_vina_status() -> str:
 
 def screen_compounds(
     target_genes: list | None = None,
-    compound_library: list | None = None,
+    compound_library: list[ScreeningCompound] | None = None,
     top_n: int = 15,
     use_vina: bool = False,
     disease_id: str = "sle",
     progress_callback: StandardProgress | None = None,
-) -> dict:
+) -> ScreeningResult:
     """
     Run virtual screening of all compounds against all target genes.
 
@@ -612,7 +630,7 @@ def screen_compounds(
         strategy_id = ""
         strategy_hash = ""
     if not coverage.is_runnable:
-        return {
+        return cast(ScreeningResult, {
             "results_per_target": {},
             "all_results": [],
             "target_genes": [],
@@ -633,7 +651,7 @@ def screen_compounds(
                 "rdkit_available": _check_rdkit(),
                 "vina_status": get_vina_status(),
             },
-        }
+        })
 
     assert strategy is not None  # strategy failures are captured by the coverage gate above
 
@@ -675,8 +693,8 @@ def screen_compounds(
             }
             composite = compute_composite_score(scores, strategy.weights)
 
-            result = {
-                **compound,
+            result: dict[str, Any] = {
+                **cast(dict[str, Any], compound),
                 **scores,
                 "composite_score": composite,
                 "gene_id": gene_id,
@@ -729,34 +747,34 @@ def screen_compounds(
                 )
 
                 # Merge real docking scores into scored compounds
-                for compound in top_for_docking:
+                for hit in top_for_docking:
                     real_score = compute_real_binding_score(
-                        compound, gene_id, dock_results
+                        hit, gene_id, dock_results
                     )
                     if real_score is not None:
                         # Replace property-based binding estimate with real score
-                        compound["binding_estimate"] = real_score
-                        compound["vina_docked"] = True
-                        compound["vina_best_kcal"] = (
-                            dock_results.get(compound["id"], {}).get("best_score")
+                        hit["binding_estimate"] = real_score
+                        hit["vina_docked"] = True
+                        hit["vina_best_kcal"] = (
+                            dock_results.get(hit["id"], {}).get("best_score")
                         )
                         # Recompute composite with real binding score
-                        compound["composite_score"] = compute_composite_score({
+                        hit["composite_score"] = compute_composite_score({
                             "binding_estimate": real_score,
-                            "druglikeness": compound["druglikeness"],
-                            "target_complementarity": compound["target_complementarity"],
-                            "similarity_score": compound["similarity_score"],
-                            "novelty_score": compound["novelty_score"],
+                            "druglikeness": hit["druglikeness"],
+                            "target_complementarity": hit["target_complementarity"],
+                            "similarity_score": hit["similarity_score"],
+                            "novelty_score": hit["novelty_score"],
                         }, strategy.weights)
                         # Reassign tier
-                        if compound["composite_score"] >= 7.5:
-                            compound["tier"] = "🔴 Tier 1 — Strong Candidate"
-                        elif compound["composite_score"] >= 6.5:
-                            compound["tier"] = "🟠 Tier 2 — Promising"
-                        elif compound["composite_score"] >= 5.0:
-                            compound["tier"] = "🟡 Tier 3 — Possible"
+                        if hit["composite_score"] >= 7.5:
+                            hit["tier"] = "🔴 Tier 1 — Strong Candidate"
+                        elif hit["composite_score"] >= 6.5:
+                            hit["tier"] = "🟠 Tier 2 — Promising"
+                        elif hit["composite_score"] >= 5.0:
+                            hit["tier"] = "🟡 Tier 3 — Possible"
                         else:
-                            compound["tier"] = "🟢 Tier 4 — Low Priority"
+                            hit["tier"] = "🟢 Tier 4 — Low Priority"
 
                 vina_results = dock_results
 
@@ -779,7 +797,7 @@ def screen_compounds(
     n_tier2 = sum(1 for c in all_scored if c["tier"].startswith("🟠"))
     n_vina_docked = sum(1 for c in all_scored if c.get("vina_docked"))
 
-    return {
+    return cast(ScreeningResult, {
         "results_per_target": results_per_target,
         "all_results": all_scored,
         "target_genes": gene_ids,
@@ -801,10 +819,10 @@ def screen_compounds(
             "rdkit_available": _check_rdkit(),
             "vina_status": get_vina_status(),
         },
-    }
+    })
 
 
-def get_untargeted_genes(disease_id: str = "sle") -> list:
+def get_untargeted_genes(disease_id: str = "sle") -> list[ScreeningTarget]:
     """Identify genes with no direct targeted therapy in a disease's KG."""
     try:
         from med_research.pipeline.knowledge_graph.builder import build_graph
@@ -832,17 +850,17 @@ def get_untargeted_genes(disease_id: str = "sle") -> list:
         excluded = Disease(disease_id).get_drug_target_exclusions()
         untargeted = [g for g in untargeted if g["id"] not in excluded]
 
-        return untargeted
+        return cast(list[ScreeningTarget], untargeted)
     except (FileNotFoundError, OSError, KeyError, TypeError, AttributeError, ValueError) as exc:
         logger.warning("Could not load KG for untargeted gene detection: %s", exc)
-        return []
+        return cast(list[ScreeningTarget], [])
 
 
 # ═══════════════════════════════════════════════════════════════════════
 #  Summary & CLI
 # ═══════════════════════════════════════════════════════════════════════
 
-def print_summary(results: dict) -> None:
+def print_summary(results: Mapping[str, Any]) -> None:
     """Print a summary of virtual screening results."""
     stats = results["stats"]
 
@@ -941,6 +959,7 @@ def main():
         top_n=args.top,
         use_vina=args.use_vina,
         disease_id=args.disease,
+        progress_callback=cli_progress,
     )
 
     print_summary(results)

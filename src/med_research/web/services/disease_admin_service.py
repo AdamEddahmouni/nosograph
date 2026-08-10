@@ -7,7 +7,7 @@ are invalidated so the next request rebuilds from the updated data files.
 """
 
 from pathlib import Path
-from typing import Optional
+from typing import Any, Optional
 
 # Note: the scaffold module is imported inside each function so tests can
 # monkeypatch it at the module level (matches the CLI's lazy-import pattern).
@@ -33,7 +33,7 @@ def list_disease_backups(disease_id: str) -> dict:
     return list_backups(disease_id)
 
 
-def _prune_options(req) -> dict:
+def _prune_options(req: Any) -> dict:
     return {
         "max_genes": req.max_genes,
         "max_drugs": req.max_drugs,
@@ -45,7 +45,7 @@ def _prune_options(req) -> dict:
     }
 
 
-def preview_prune(disease_id: str, req) -> dict:
+def preview_prune(disease_id: str, req: Any) -> dict:
     """Dry-run refresh+prune: returns merge + prune candidates, writes nothing."""
     from med_research.diseases.scaffold import refresh_disease
 
@@ -55,7 +55,7 @@ def preview_prune(disease_id: str, req) -> dict:
     return _prune_payload(disease_id, summary)
 
 
-def apply_prune(disease_id: str, req) -> dict:
+def apply_prune(disease_id: str, req: Any) -> dict:
     """Real refresh+prune: writes files, backs up pruned entities."""
     from med_research.diseases.scaffold import refresh_disease
 
@@ -89,7 +89,7 @@ def _prune_payload(disease_id: str, summary: dict) -> dict:
     }
 
 
-def _resolve_backup_path(disease_id: str, backup: Optional[str]) -> Optional[str]:
+def _resolve_backup_path(disease_id: str, backup: str | None) -> str | None:
     """Accept a full path or a bare filename inside the module's backups dir.
 
     ``None`` → the newest backup (resolved by restore_disease); an empty or
@@ -108,7 +108,7 @@ def _resolve_backup_path(disease_id: str, backup: Optional[str]) -> Optional[str
     inventory = list_backups(disease_id)
     for entry in inventory.get("backups", []):
         if Path(entry["path"]).name == backup:
-            return entry["path"]
+            return str(entry["path"])
     return str(path)  # let restore_disease raise the precise error
 
 

@@ -27,16 +27,20 @@ import urllib.parse
 import urllib.request
 from datetime import datetime
 from pathlib import Path
+from typing import Any, cast
 
 from med_research.cache import NS_EVIDENCE_GATHER, cache_get, cache_set, load_legacy_json
 from med_research.exceptions import ExternalAPIError, classify_api_error, retry_with_backoff
-from med_research.pipeline.progress import StandardProgress, _tick
+from med_research.pipeline.progress import StandardProgress, _tick, cli_progress
+from med_research.pipeline.results import EvidenceGatherResult
 
 logger = logging.getLogger(__name__)
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    _stdout = sys.stdout
+    if hasattr(_stdout, "reconfigure"):
+        _stdout.reconfigure(encoding="utf-8", errors="replace")
 
 DATA_DIR = Path(__file__).parent / "data"
 LEGACY_EVIDENCE_CACHE = DATA_DIR / "evidence_cache.json"
@@ -54,10 +58,10 @@ last_coverage = None
 
 def load_json(path: Path) -> dict:
     with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
+        return cast(dict, json.load(f))
 
 
-def save_json(path: Path, data):
+def save_json(path: Path, data: Any) -> None:
     path.write_text(json.dumps(data, indent=2), encoding="utf-8")
 
 
@@ -69,13 +73,13 @@ def api_get(url: str, timeout: int = 15) -> dict:
         try:
             req = urllib.request.Request(url, headers={"User-Agent": "LupusResearchPlatform/2.0"})
             with urllib.request.urlopen(req, timeout=timeout) as resp:
-                return json.loads(resp.read().decode("utf-8"))
+                return cast(dict, json.loads(resp.read().decode("utf-8")))
         except json.JSONDecodeError as e:
             raise classify_api_error(e, f"API response parse error ({url[:80]}...)") from e
         except (urllib.error.URLError, urllib.error.HTTPError) as e:
             raise classify_api_error(e, f"API error ({url[:80]}...)") from e
 
-    return retry_with_backoff(_fetch, source=source)
+    return cast(dict, retry_with_backoff(_fetch, source=source))
 
 
 # ── Cache ────────────────────────────────────────────────────────────────
@@ -94,13 +98,13 @@ def _load_legacy_evidence_cache() -> dict:
 def _get_cached_results(key: str, use_cache: bool) -> list | None:
     cached = cache_get(NS_EVIDENCE_GATHER, key, use_cache=use_cache)
     if cached is not None:
-        return cached
+        return cast(list, cached)
     if not use_cache:
         return None
     legacy = _load_legacy_evidence_cache()
     if key in legacy:
         cache_set(NS_EVIDENCE_GATHER, key, legacy[key], use_cache=True)
-        return legacy[key]
+        return cast(list, legacy[key])
     return None
 
 
@@ -284,7 +288,7 @@ def search_fda_labels(query: str, max_results: int = 20, use_cache: bool = True)
 
 def _extract_drug_name(item: dict) -> str:
     """Extract drug name from DailyMed result."""
-    title = item.get("title", "")
+    title: str = item.get("title", "")
     # Titles are like "HUMIRA (adalimumab) injection"
     if "(" in title:
         return title.split("(")[-1].split(")")[0].strip()
@@ -295,7 +299,7 @@ def _extract_label_snippet(item: dict) -> str:
     """Extract a meaningful snippet from the label metadata."""
     # DailyMed SPL JSON response includes the title and setid;
     # full indications text requires fetching the SPL XML separately.
-    title = item.get("title", "")
+    title: str = item.get("title", "")
     return title[:400]
 
 
@@ -304,13 +308,13 @@ def _extract_label_snippet(item: dict) -> str:
 
 def gather_evidence(
     query: str,
-    sources: list = None,
+    sources: list | None = None,
     max_per_source: int = 20,
     use_cache: bool = True,
     cross_reference: bool = True,
     disease_id: str | None = None,
     progress_callback: StandardProgress | None = None,
-) -> dict:
+) -> EvidenceGatherResult:
     """Search all configured sources and aggregate results.
 
     Args:
@@ -396,7 +400,7 @@ def gather_evidence(
     if cross_reference and len(sources) > 1:
         crossref = _compute_crossref(all_results, sources)
 
-    output = {
+    output: EvidenceGatherResult = {
         "query": query,
         "sources_searched": sources,
         "total_results": len(all_results),
@@ -419,7 +423,7 @@ def gather_evidence(
 
 
 def _counts_by_source(results: list) -> dict:
-    counts = {}
+    counts: dict[str, int] = {}
     for r in results:
         src = r.get("source_type", "unknown")
         counts[src] = counts.get(src, 0) + 1
@@ -428,7 +432,7 @@ def _counts_by_source(results: list) -> dict:
 
 def _compute_crossref(results: list, sources: list) -> dict:
     """Compute simple cross-source overlap statistics."""
-    crossref = {"pairs": []}
+    crossref: dict[str, Any] = {"pairs": []}
     source_sets = {}
     for src in sources:
         source_sets[src] = {
@@ -456,7 +460,7 @@ def _compute_crossref(results: list, sources: list) -> dict:
 # ── CLI ──────────────────────────────────────────────────────────────────
 
 
-def print_summary(gathered: dict):
+def print_summary(gathered: EvidenceGatherResult) -> None:
     """Print a formatted summary of gathered evidence."""
     logger.info("\n" + "=" * 75)
     logger.info("🌐 WEB-SCALE EVIDENCE GATHERER — Results")
@@ -513,6 +517,7 @@ def main():
         sources=sources,
         max_per_source=args.max_per_source,
         use_cache=not args.no_cache,
+        progress_callback=cli_progress,
     )
 
     print_summary(results)
@@ -528,7 +533,7 @@ def main():
             query=args.query,
             cache_or_live="live" if args.no_cache else "cache",
         )
-        generate_html_report(results, provenance=provenance)
+        generate_html_report(cast(dict, results), provenance=provenance)
         logger.info("\n✅ HTML report generated: evidence_gatherer/report.html")
 
     return results

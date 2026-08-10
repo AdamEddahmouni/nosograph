@@ -1,5 +1,7 @@
 """LLM Evidence Extractor API router."""
 
+from typing import Any
+
 from fastapi import APIRouter, HTTPException, Query
 
 from med_research.diseases.base import Disease
@@ -19,7 +21,7 @@ async def llm_extract(
     model: str = Query("", min_length=0, max_length=200, description="LLM model name (default: gpt-4o-mini)"),
     use_cache: bool = Query(True, description="Use cached extractions"),
     disease_id: str = Query("sle", description="Disease ID"),
-):
+) -> dict[str, Any]:
     """Extract structured data from biomedical evidence using an LLM.
 
     Gathers articles from the evidence gatherer, then uses an LLM

@@ -19,7 +19,9 @@ import logging
 import os
 import sys
 from collections import defaultdict
+from functools import partial
 from pathlib import Path
+from typing import Any, cast
 
 from med_research.cache import (
     NS_GWAS,
@@ -34,12 +36,15 @@ from med_research.exceptions import (
     retry_with_backoff,
 )
 from med_research.pipeline.knowledge_graph.config import load_genes as config_load_genes
-from med_research.pipeline.progress import StandardProgress, _tick
+from med_research.pipeline.progress import StandardProgress, _tick, cli_progress
+from med_research.pipeline.results import GwasResult
 from med_research.rate_limiter import rate_limited_sleep
 
 logger = logging.getLogger(__name__)
 if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    _stdout = sys.stdout
+    if hasattr(_stdout, "reconfigure"):
+        _stdout.reconfigure(encoding="utf-8", errors="replace")
 
 try:
     import requests
@@ -53,7 +58,9 @@ DATA_DIR = Path(__file__).parent / "data"
 GWAS_API = "https://www.ebi.ac.uk/gwas/rest/api"
 
 
-def _gwas_http_get(url: str, params: dict, timeout: int = 30):
+def _gwas_http_get(
+    url: str, params: dict[str, Any], timeout: int = 30
+) -> "requests.Response":
     """Perform a GWAS Catalog GET request, raising on HTTP failure."""
     resp = requests.get(url, params=params, timeout=timeout)
     resp.raise_for_status()
@@ -132,23 +139,17 @@ def search_gwas_studies(
         logger.info("❌ requests required. Install: pip install requests")
         return []
 
-    studies = []
+    studies: list[Any] = []
     page = 0
 
     logger.info(f"\n🔄 Searching GWAS Catalog for: {query}")
 
     while len(studies) < max_results:
-        params = {
-            "q": query,
-            "size": 50,
-            "page": page,
-        }
-
         try:
             resp = retry_with_backoff(
-                lambda p=params: _gwas_http_get(
+                lambda: _gwas_http_get(
                     f"{GWAS_API}/studies/search/findByDiseaseTrait",
-                    {"diseaseTrait": p["q"], "size": p["size"]},
+                    {"diseaseTrait": query, "size": 50},
                     timeout=30,
                 ),
                 source="GWAS search",
@@ -188,7 +189,7 @@ def fetch_study_associations(study_accession: str) -> list:
     Returns raw association dicts with loci containing SNP rsIDs.
     Gene resolution happens later via _resolve_snp_genes().
     """
-    associations = []
+    associations: list[Any] = []
 
     try:
         resp = retry_with_backoff(
@@ -200,7 +201,7 @@ def fetch_study_associations(study_accession: str) -> list:
             source=f"GWAS associations for {study_accession}",
         )
         data = resp.json()
-        return data.get("_embedded", {}).get("associations", [])
+        return cast(list, data.get("_embedded", {}).get("associations", []))
 
     except ExternalAPIError as e:
         logger.info(f"   ⚠️  {e}")
@@ -225,9 +226,9 @@ def fetch_study_associations(study_accession: str) -> list:
 
 
 def _resolve_snp_details(
-    rsids: set,
+    rsids: set[str],
     progress_callback: StandardProgress | None = None,
-) -> dict:
+) -> dict[str, dict[str, Any]]:
     """
     Resolve SNP rsIDs to gene names + genomic locations.
 
@@ -236,7 +237,7 @@ def _resolve_snp_details(
 
     Returns dict: {rsid: {"genes": [...], "chromosome": str, "position": int}}
     """
-    snp_cache = {}
+    snp_cache: dict[str, dict[str, Any]] = {}
 
     unresolved = [r for r in rsids if r and r not in snp_cache]
 
@@ -249,7 +250,8 @@ def _resolve_snp_details(
     for i, rsid in enumerate(unresolved):
         try:
             resp = retry_with_backoff(
-                lambda rsid=rsid: _gwas_http_get(
+                partial(
+                    _gwas_http_get,
                     f"{GWAS_API}/singleNucleotidePolymorphisms/{rsid}",
                     {},
                     timeout=15,
@@ -324,7 +326,9 @@ def extract_gene_associations(
             "study_details": [...],
         }
     """
-    gene_map = defaultdict(lambda: {"studies": [], "best_p": 1.0})
+    gene_map: defaultdict[str, dict[str, Any]] = defaultdict(
+        lambda: {"studies": [], "best_p": 1.0}
+    )
     study_details = []
     total_associations = 0
     all_rsids = set()
@@ -403,7 +407,7 @@ def extract_gene_associations(
             rate_limited_sleep(0.5)  # Rate limiting between studies
 
     # ── Resolve SNPs to genes + locations ────────────────────────────
-    snp_details = {}
+    snp_details: dict[str, dict[str, Any]] = {}
     if resolve_snps and all_rsids:
         logger.info(f"\n   🧬 Collected {len(all_rsids)} unique SNP rsIDs across all studies")
         snp_details = _resolve_snp_details(all_rsids, progress_callback=progress_callback)
@@ -546,7 +550,7 @@ def cross_reference_with_kg(
     }
 
 
-def analyze(gwas_results: dict, crossref: dict, kg_genes: dict):
+def analyze(gwas_results: dict, crossref: dict, kg_genes: dict) -> None:
     """Print GWAS annotation summary."""
     logger.info("\n" + "=" * 70)
     logger.info("🧬 GWAS CATALOG ANNOTATION")
@@ -617,7 +621,7 @@ def run_gwas_analysis(
     use_cache: bool = True,
     resolve_snps: bool = True,
     progress_callback: StandardProgress | None = None,
-) -> dict:
+) -> GwasResult:
     """Run GWAS Catalog annotation for a disease (engine entry point)."""
     from med_research.diseases.coverage import module_coverage
 
@@ -703,7 +707,7 @@ def run_gwas_analysis(
     analyze(gwas_results, crossref, kg_genes)
 
     os.makedirs(DATA_DIR, exist_ok=True)
-    output = {
+    output: GwasResult = {
         "coverage": coverage.to_dict(),
         "status": "ready",
         "gwas_results": {
@@ -758,6 +762,7 @@ def main():
         max_studies=args.max_studies,
         use_cache=not args.no_cache,
         resolve_snps=not args.no_snp_resolve,
+        progress_callback=cli_progress,
     )
     if result.get("status") == "blocked":
         logger.error(

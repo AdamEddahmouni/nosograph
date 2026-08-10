@@ -10,7 +10,16 @@ from pathlib import Path
 from typing import Any
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
-from med_research.pipeline.evidence_workspace.schemas import EvidenceDossier, ResearchRequest
+from med_research.pipeline.evidence_workspace.schemas import (
+    WORKSPACE_REQUEST_SCHEMA_VERSION,
+    WORKSPACE_RESULT_SCHEMA_VERSION,
+    EvidenceDossier,
+    ResearchRequest,
+    migrate_workspace_request,
+    migrate_workspace_result,
+    serialize_workspace_request,
+    serialize_workspace_result,
+)
 from med_research.web.identity import DEFAULT_RESEARCHER_ID
 
 
@@ -90,6 +99,8 @@ class WorkspaceRunStore:
                     claim_count INTEGER NOT NULL DEFAULT 0,
                     drug_count INTEGER NOT NULL DEFAULT 0,
                     target_count INTEGER NOT NULL DEFAULT 0,
+                    request_schema_version TEXT NOT NULL DEFAULT '1.0',
+                    result_schema_version TEXT NOT NULL DEFAULT '1.1',
                     created_at TEXT NOT NULL,
                     updated_at TEXT NOT NULL
                 )
@@ -98,7 +109,15 @@ class WorkspaceRunStore:
             self._ensure_columns(
                 connection,
                 "workspace_runs",
-                {"researcher_id": "TEXT NOT NULL DEFAULT 'anonymous'"},
+                {
+                    "researcher_id": "TEXT NOT NULL DEFAULT 'anonymous'",
+                    "request_schema_version": (
+                        f"TEXT NOT NULL DEFAULT '{WORKSPACE_REQUEST_SCHEMA_VERSION}'"
+                    ),
+                    "result_schema_version": (
+                        f"TEXT NOT NULL DEFAULT '{WORKSPACE_RESULT_SCHEMA_VERSION}'"
+                    ),
+                },
             )
             connection.execute(
                 "CREATE INDEX IF NOT EXISTS idx_workspace_runs_updated "
@@ -314,7 +333,7 @@ class WorkspaceRunStore:
 
     @staticmethod
     def _request_json(request: ResearchRequest) -> str:
-        return json.dumps(request.model_dump(mode="json"), sort_keys=True)
+        return json.dumps(serialize_workspace_request(request), sort_keys=True)
 
     def create_run(
         self,
@@ -327,8 +346,9 @@ class WorkspaceRunStore:
             connection.execute(
                 """
                 INSERT OR REPLACE INTO workspace_runs
-                (run_id, researcher_id, disease_id, question, status, request_json, created_at, updated_at)
-                VALUES (?, ?, ?, ?, 'PENDING', ?, ?, ?)
+                (run_id, researcher_id, disease_id, question, status, request_json,
+                 request_schema_version, created_at, updated_at)
+                VALUES (?, ?, ?, ?, 'PENDING', ?, ?, ?, ?)
                 """,
                 (
                     run_id,
@@ -336,6 +356,7 @@ class WorkspaceRunStore:
                     request.disease_id,
                     request.question,
                     self._request_json(request),
+                    WORKSPACE_REQUEST_SCHEMA_VERSION,
                     now,
                     now,
                 ),
@@ -343,18 +364,20 @@ class WorkspaceRunStore:
 
     def save_success(self, dossier: EvidenceDossier, html: str) -> None:
         now = self._now()
-        dossier_json = json.dumps(dossier.model_dump(mode="json"), ensure_ascii=False)
+        dossier_json = json.dumps(serialize_workspace_result(dossier), ensure_ascii=False)
         with self._connect() as connection:
             cursor = connection.execute(
                 """
                 UPDATE workspace_runs
                 SET status='SUCCESS', dossier_json=?, html_export=?, error=NULL,
-                    evidence_count=?, claim_count=?, drug_count=?, target_count=?, updated_at=?
+                    result_schema_version=?, evidence_count=?, claim_count=?, drug_count=?,
+                    target_count=?, updated_at=?
                 WHERE run_id=?
                 """,
                 (
                     dossier_json,
                     html,
+                    WORKSPACE_RESULT_SCHEMA_VERSION,
                     len(dossier.evidence),
                     len(dossier.claims),
                     len(dossier.drug_rankings),
@@ -395,11 +418,183 @@ class WorkspaceRunStore:
         if row is None:
             return None
         result = dict(row)
-        result["request"] = json.loads(result.pop("request_json"))
-        result["dossier"] = json.loads(result["dossier_json"]) if result["dossier_json"] else None
+        request_payload = json.loads(result.pop("request_json"))
+        request_needs_migration = (
+            request_payload.get("schema_version") != WORKSPACE_REQUEST_SCHEMA_VERSION
+        )
+        request = migrate_workspace_request(request_payload)
+        result["request"] = serialize_workspace_request(request)
+        result["request_schema_version"] = WORKSPACE_REQUEST_SCHEMA_VERSION
+
+        dossier_payload = (
+            json.loads(result["dossier_json"]) if result["dossier_json"] else None
+        )
+        dossier_needs_migration = False
+        if dossier_payload is not None:
+            dossier_needs_migration = (
+                dossier_payload.get("schema_version") != WORKSPACE_RESULT_SCHEMA_VERSION
+            )
+            dossier = migrate_workspace_result(dossier_payload)
+            result["dossier"] = serialize_workspace_result(dossier)
+            result["result_schema_version"] = WORKSPACE_RESULT_SCHEMA_VERSION
+        else:
+            dossier = None
+            result["dossier"] = None
+
+        # Rewrite legacy JSON after a successful read so subsequent consumers
+        # do not need to repeat the migration. This is idempotent for current
+        # versioned payloads and keeps the SQLite row self-describing.
+        if request_needs_migration or dossier_needs_migration:
+            with self._connect() as connection:
+                connection.execute(
+                    """
+                    UPDATE workspace_runs
+                    SET request_json=?, request_schema_version=?, dossier_json=?,
+                        result_schema_version=?, updated_at=?
+                    WHERE run_id=?
+                    """,
+                    (
+                        json.dumps(serialize_workspace_request(request), sort_keys=True),
+                        WORKSPACE_REQUEST_SCHEMA_VERSION,
+                        json.dumps(serialize_workspace_result(dossier), ensure_ascii=False)
+                        if dossier is not None
+                        else result.get("dossier_json"),
+                        WORKSPACE_RESULT_SCHEMA_VERSION,
+                        self._now(),
+                        run_id,
+                    ),
+                )
         result.pop("dossier_json", None)
         result["html"] = result.pop("html_export", None)
         return result
+
+    def migrate_legacy_runs(
+        self,
+        *,
+        dry_run: bool = True,
+        run_id: str | None = None,
+        limit: int = 200,
+    ) -> dict[str, Any]:
+        """Inspect persisted runs and optionally rewrite legacy payloads.
+
+        Dry-run mode never writes to SQLite.  A run is considered migratable
+        when either persisted JSON payload (or its version column) is not at
+        the current contract version.  Invalid rows are reported individually
+        so one corrupt run does not hide the remaining migration plan.
+        """
+        limit = max(1, min(int(limit), 10_000))
+        query = (
+            "SELECT run_id, status, request_json, dossier_json, "
+            "request_schema_version, result_schema_version "
+            "FROM workspace_runs"
+        )
+        parameters: list[Any] = []
+        if run_id is not None:
+            query += " WHERE run_id=?"
+            parameters.append(run_id)
+        query += " ORDER BY updated_at DESC LIMIT ?"
+        parameters.append(limit)
+
+        with self._connect() as connection:
+            rows = connection.execute(query, parameters).fetchall()
+            report: dict[str, Any] = {
+                "path": str(self.path),
+                "dry_run": dry_run,
+                "scanned": len(rows),
+                "legacy": 0,
+                "migrated": 0,
+                "unchanged": 0,
+                "errors": 0,
+                "runs": [],
+            }
+            updates: list[tuple[str, str | None, str, str, str, str]] = []
+
+            for row in rows:
+                item: dict[str, Any] = {
+                    "run_id": row["run_id"],
+                    "status": row["status"],
+                    "request_schema_version": row["request_schema_version"],
+                    "result_schema_version": row["result_schema_version"],
+                    "target_request_schema_version": WORKSPACE_REQUEST_SCHEMA_VERSION,
+                    "target_result_schema_version": WORKSPACE_RESULT_SCHEMA_VERSION,
+                    "needs_migration": False,
+                    "migrated": False,
+                }
+                try:
+                    request_payload = json.loads(row["request_json"])
+                    request_version = request_payload.get("schema_version") or "legacy"
+                    request = migrate_workspace_request(request_payload)
+                    request_json = json.dumps(
+                        serialize_workspace_request(request), sort_keys=True
+                    )
+                    request_needs_migration = (
+                        request_version != WORKSPACE_REQUEST_SCHEMA_VERSION
+                        or row["request_schema_version"] != WORKSPACE_REQUEST_SCHEMA_VERSION
+                    )
+
+                    dossier_json: str | None = row["dossier_json"]
+                    result_needs_migration = False
+                    result_version = None
+                    if dossier_json:
+                        dossier_payload = json.loads(dossier_json)
+                        result_version = dossier_payload.get("schema_version") or "legacy"
+                        dossier = migrate_workspace_result(dossier_payload)
+                        dossier_json = json.dumps(
+                            serialize_workspace_result(dossier), ensure_ascii=False
+                        )
+                        result_needs_migration = (
+                            result_version != WORKSPACE_RESULT_SCHEMA_VERSION
+                            or row["result_schema_version"] != WORKSPACE_RESULT_SCHEMA_VERSION
+                        )
+                    else:
+                        result_needs_migration = (
+                            row["result_schema_version"] != WORKSPACE_RESULT_SCHEMA_VERSION
+                        )
+
+                    needs_migration = request_needs_migration or result_needs_migration
+                    item.update(
+                        {
+                            "request_payload_version": str(request_version),
+                            "result_payload_version": result_version,
+                            "needs_migration": needs_migration,
+                        }
+                    )
+                    if needs_migration:
+                        report["legacy"] += 1
+                        updates.append(
+                            (
+                                request_json,
+                                dossier_json,
+                                WORKSPACE_REQUEST_SCHEMA_VERSION,
+                                WORKSPACE_RESULT_SCHEMA_VERSION,
+                                self._now(),
+                                row["run_id"],
+                            )
+                        )
+                        if not dry_run:
+                            item["migrated"] = True
+                            report["migrated"] += 1
+                        else:
+                            item["would_migrate"] = True
+                    else:
+                        report["unchanged"] += 1
+                except Exception as exc:  # noqa: BLE001 - report corrupt rows individually
+                    item["error"] = str(exc)
+                    report["errors"] += 1
+                report["runs"].append(item)
+
+            if not dry_run and updates:
+                connection.executemany(
+                    """
+                    UPDATE workspace_runs
+                    SET request_json=?, dossier_json=?, request_schema_version=?,
+                        result_schema_version=?, updated_at=?
+                    WHERE run_id=?
+                    """,
+                    updates,
+                )
+
+        return report
 
     def delete_run(self, run_id: str) -> bool:
         with self._connect() as connection:
@@ -991,7 +1186,9 @@ class WorkspaceRunStore:
         parsed_runs: list[dict[str, Any]] = []
         for row in run_rows:
             try:
-                dossier = json.loads(row["dossier_json"] or "{}")
+                dossier = migrate_workspace_result(
+                    json.loads(row["dossier_json"] or "{}")
+                ).model_dump(mode="json")
                 timestamp = str(dossier.get("completed_at") or row["updated_at"]).replace(
                     "Z", "+00:00"
                 )
@@ -1285,7 +1482,9 @@ class WorkspaceRunStore:
         candidate_name = ""
         for row in rows:
             try:
-                dossier = json.loads(row["dossier_json"] or "{}")
+                dossier = migrate_workspace_result(
+                    json.loads(row["dossier_json"] or "{}")
+                ).model_dump(mode="json")
                 timestamp = str(dossier.get("completed_at") or row["updated_at"]).replace(
                     "Z", "+00:00"
                 )

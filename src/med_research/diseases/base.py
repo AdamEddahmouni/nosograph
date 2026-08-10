@@ -14,7 +14,9 @@ from __future__ import annotations
 import json
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Optional
+from typing import Any, Optional, Sequence, cast
+
+from med_research.diseases.coverage import ModuleCoverage
 
 
 @dataclass
@@ -47,7 +49,7 @@ class Disease:
         self.disease_id = disease_id
         self._root = self._resolve_root(disease_id)
         self._profile: Optional[DiseaseProfile] = None
-        self._config: Optional[dict] = None
+        self._config: Optional[dict[str, Any]] = None
         self._scores: Optional[dict] = None
 
     @staticmethod
@@ -91,7 +93,7 @@ class Disease:
             )
         return self._profile
 
-    def load_json(self, filename: str) -> dict:
+    def load_json(self, filename: str) -> dict[str, Any]:
         """Load a data file, validating registered KG files against their schema."""
         from med_research.diseases.schemas import KG_FILE_MODELS, load_validated_json
 
@@ -99,7 +101,7 @@ class Disease:
         model_class = KG_FILE_MODELS.get(filename)
         if model_class is None:
             with open(path, encoding="utf-8") as f:
-                return json.load(f)
+                return cast(dict[str, Any], json.load(f))
         return load_validated_json(path, model_class)
 
     def load_genes(self) -> dict:
@@ -143,10 +145,10 @@ class Disease:
         return self._load_config()
 
     def get_symptoms(self) -> list[str]:
-        return self.config.get("SYMPTOMS", [])
+        return cast(list[str], self.config.get("SYMPTOMS", []))
 
-    def get_car_t_scores(self) -> dict:
-        return self.config.get("CAR_T_SCORES", {})
+    def get_car_t_scores(self) -> dict[str, Any]:
+        return cast(dict[str, Any], self.config.get("CAR_T_SCORES", {}))
 
     def get_adverse_event_profile(self) -> dict:
         """Load the active disease's explicit adverse-event profile contract.
@@ -157,7 +159,7 @@ class Disease:
         """
         configured = self.config.get("ADVERSE_EVENT_PROFILE")
         if configured:
-            return configured
+            return cast(dict[str, Any], configured)
 
         disease_path = self.data_dir / "adverse_events.json"
         if disease_path.is_file():
@@ -190,19 +192,26 @@ class Disease:
         intentionally returned as empty so coverage can block the run rather
         than silently borrowing another disease's calibration.
         """
-        return self.config.get("SCREENING_PROFILE", {})
+        return cast(dict[str, Any], self.config.get("SCREENING_PROFILE", {}))
 
     def get_disease_risk_config(self) -> dict:
         """Return disease-specific risk configuration without lupus semantics."""
-        return self.config.get("DISEASE_SPECIFIC_RISK") or self.config.get(
-            "DRUG_INDUCED_LUPUS_RISK", {}
+        return cast(
+            dict[str, Any],
+            self.config.get("DISEASE_SPECIFIC_RISK")
+            or self.config.get("DRUG_INDUCED_LUPUS_RISK", {}),
         )
 
     def get_drug_induced_lupus_risk(self) -> dict:
         """Compatibility alias for the disease-neutral risk configuration."""
         return self.get_disease_risk_config()
 
-    def coverage(self, module: str = "core", required_inputs=(), optional_inputs=()):
+    def coverage(
+        self,
+        module: str = "core",
+        required_inputs: Sequence[str] = (),
+        optional_inputs: Sequence[str] = (),
+    ) -> ModuleCoverage:
         """Return strict coverage metadata for this disease/module."""
         from med_research.diseases.coverage import module_coverage
 
@@ -234,12 +243,12 @@ class Disease:
             terms.update(str(pathway.get("name", "")).lower().replace("/", " ").split())
         return sorted(term for term in terms if len(term) > 2)
 
-    def get_mechanism_categories(self) -> dict:
-        return self.config.get("MECHANISM_CATEGORIES", {})
+    def get_mechanism_categories(self) -> dict[str, Any]:
+        return cast(dict[str, Any], self.config.get("MECHANISM_CATEGORIES", {}))
 
     def get_trial_query(self) -> str:
         """Return the ClinicalTrials.gov query configured for this disease."""
-        return self.config.get("TRIAL_QUERY") or self.profile.name or self.disease_id
+        return cast(str, self.config.get("TRIAL_QUERY") or self.profile.name or self.disease_id)
 
     def get_symptom_overlap_terms(self) -> list[str]:
         """Return disease symptoms used for adverse-event overlap scoring."""
@@ -248,10 +257,12 @@ class Disease:
     def get_disease_evidence(self, entity: dict) -> str:
         """Read disease-neutral evidence without cross-disease fallback leakage."""
         if entity.get("disease_evidence"):
-            return entity["disease_evidence"]
+            return cast(str, entity["disease_evidence"])
         # Legacy evidence keys are valid only for the legacy SLE data module.
         if self.disease_id == "sle":
-            return entity.get("lupus_evidence") or entity.get("sle_evidence", "")
+            return cast(
+                str, entity.get("lupus_evidence") or entity.get("sle_evidence", "")
+            )
         return ""
 
     def get_gwas_search_terms(self) -> list[str]:
@@ -261,7 +272,7 @@ class Disease:
         not substituted because a broad display name can produce an
         uninterpretable or cross-disease GWAS query.
         """
-        return list(self.config.get("GWAS_SEARCH_TERMS") or [])
+        return cast(list[str], list(self.config.get("GWAS_SEARCH_TERMS") or []))
 
     # ── Static helpers ─────────────────────────────────────────────────
 

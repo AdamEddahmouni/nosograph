@@ -29,12 +29,13 @@ from med_research.pipeline.knowledge_graph.config import (
     load_pathways,
     load_relationships,
 )
-from med_research.pipeline.progress import StandardProgress, _tick
+from med_research.pipeline.progress import StandardProgress, _tick, cli_progress
+from med_research.pipeline.results import KgBuildResult
 
 logger = logging.getLogger(__name__)
 
 if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # type: ignore[union-attr]
 
 
 def build_graph(
@@ -149,7 +150,7 @@ def build_graph(
 last_coverage = None
 
 
-def build_graph_with_coverage(disease_id: str = "sle") -> dict:
+def build_graph_with_coverage(disease_id: str = "sle") -> KgBuildResult:
     """Build a knowledge graph and return coverage metadata alongside the graph."""
     from med_research.diseases.coverage import ModuleCoverage, coverage_for_disease
 
@@ -180,7 +181,7 @@ def build_graph_with_coverage(disease_id: str = "sle") -> dict:
     }
 
 
-def analyze_graph(G: nx.MultiDiGraph):
+def analyze_graph(G: nx.MultiDiGraph) -> None:
     """Run comprehensive graph analysis and print findings."""
     disease_node = next((n for n, d in G.nodes(data=True) if d.get("type") == "disease"), None)
     disease_name = G.nodes[disease_node]["label"] if disease_node else "Disease"
@@ -189,7 +190,7 @@ def analyze_graph(G: nx.MultiDiGraph):
     logger.info(f"KNOWLEDGE GRAPH ANALYSIS: {disease_name}")
     logger.info("=" * 70)
 
-    node_types = defaultdict(int)
+    node_types: dict[str, int] = defaultdict(int)
     for _, data in G.nodes(data=True):
         node_types[data.get("type", "unknown")] += 1
 
@@ -200,7 +201,7 @@ def analyze_graph(G: nx.MultiDiGraph):
     for ntype, count in sorted(node_types.items()):
         logger.info(f"     \u2022 {ntype}: {count}")
 
-    edge_types = defaultdict(int)
+    edge_types: dict[str, int] = defaultdict(int)
     for _, _, data in G.edges(data=True):
         edge_types[data.get("type", "unknown")] += 1
 
@@ -288,7 +289,7 @@ def analyze_graph(G: nx.MultiDiGraph):
     logger.info("=" * 70)
 
 
-def export_for_web(G: nx.MultiDiGraph, output_path: str = None, disease_id: str = "sle") -> dict:
+def export_for_web(G: nx.MultiDiGraph, output_path: str | Path | None = None, disease_id: str = "sle") -> dict:
     """Export the graph in a format suitable for Cytoscape.js visualization."""
     if output_path is None:
         output_path = Path(__file__).parent / "web" / f"graph_data_{disease_id}.json"
@@ -351,7 +352,7 @@ def main():
 
     profile = get_disease_profile(args.disease)
     logger.info(f"Building {profile['name']} Knowledge Graph...")
-    G = build_graph(args.disease)
+    G = build_graph(args.disease, progress_callback=cli_progress)
     logger.info(f"Graph built: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
 
     if args.analyze:

@@ -11,6 +11,7 @@ from med_research.pipeline.adapter_options import AdapterOptions
 from med_research.pipeline.base import BasePipelineModule
 from med_research.pipeline.provenance import build_provenance
 from med_research.pipeline.registry import register_module
+from med_research.pipeline.results import SemanticSearchResult
 
 
 def _default_query(disease_id: str) -> str:
@@ -24,7 +25,7 @@ def _default_query(disease_id: str) -> str:
 
 
 @register_module
-class SemanticSearchModule(BasePipelineModule):
+class SemanticSearchModule(BasePipelineModule[SemanticSearchResult]):
     """Adapter around ``semantic_search.engine`` search and reporting."""
 
     _COVERAGE_MODULE = "semantic"
@@ -40,7 +41,7 @@ class SemanticSearchModule(BasePipelineModule):
     def coverage_inputs(self) -> tuple[str, ...]:
         return ("genes", "drugs", "pubmed_queries")
 
-    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
+    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> SemanticSearchResult:
         from med_research.pipeline.semantic_search.engine import SemanticSearchEngine
 
         engine = SemanticSearchEngine(disease_id=disease_id)
@@ -58,7 +59,7 @@ class SemanticSearchModule(BasePipelineModule):
 
     def report(
         self,
-        results: dict,
+        results: SemanticSearchResult,
         disease_id: str,
         *,
         provenance: dict | None = None,

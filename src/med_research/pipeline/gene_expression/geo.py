@@ -14,7 +14,7 @@ Usage:
 import json
 import logging
 from pathlib import Path
-from typing import Any, Optional
+from typing import Any, Optional, cast
 
 import requests
 
@@ -161,11 +161,11 @@ def search_geo_datasets(disease: str = "sle", category: str = "broad",
         use_cache=use_cache,
     )
     if cached is not None:
-        return cached
+        return cast(list, cached)
 
     search_term = SLE_SEARCH_TERMS.get(category, SLE_SEARCH_TERMS["broad"])
 
-    params = {"db": "gds", "term": search_term, "retmax": max_results, "retmode": "json"}
+    params: dict[str, str | int] = {"db": "gds", "term": search_term, "retmax": max_results, "retmode": "json"}
     try:
         resp = requests.get(f"{BASE_URL}/esearch.fcgi", params=params, timeout=15)
         resp.raise_for_status()
@@ -236,7 +236,7 @@ def get_study_metadata(accession: str, use_cache: bool = True) -> Optional[dict]
         use_cache=use_cache,
     )
     if cached is not None:
-        return cached
+        return cast(dict | None, cached)
 
     params = {"db": "gds", "term": accession, "retmode": "json"}
     try:
@@ -399,7 +399,7 @@ def get_expression_signature(disease: str = "sle", tissue: Optional[str] = None,
         use_cache=True,
     )
     if cached is not None:
-        return cached
+        return cast(dict, cached)
 
     if tissue and tissue in SLE_SEARCH_TERMS:
         studies = search_geo_datasets(disease, tissue, max_results=20)

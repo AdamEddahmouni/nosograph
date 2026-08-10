@@ -18,7 +18,9 @@ import json
 import sys
 from collections import Counter
 from datetime import datetime
+from functools import partial
 from pathlib import Path
+from typing import Any, cast
 
 from med_research.rate_limiter import rate_limited_sleep
 
@@ -35,11 +37,14 @@ from med_research.exceptions import (
 )
 from med_research.pipeline.knowledge_graph.config import load_drugs as config_load_drugs
 from med_research.pipeline.knowledge_graph.config import load_genes as config_load_genes
-from med_research.pipeline.progress import StandardProgress, _tick
+from med_research.pipeline.progress import StandardProgress, _tick, cli_progress
+from med_research.pipeline.results import TrialRecord, TrialRunResult
 
 logger = logging.getLogger(__name__)
 if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    _stdout = sys.stdout
+    if hasattr(_stdout, "reconfigure"):
+        _stdout.reconfigure(encoding="utf-8", errors="replace")
 
 try:
     import requests
@@ -56,7 +61,7 @@ last_coverage = None
 CT_API = "https://clinicaltrials.gov/api/v2"
 
 
-def _ct_http_get(params: dict):
+def _ct_http_get(params: dict) -> "requests.Response":
     """Perform a ClinicalTrials.gov GET request, raising on HTTP failure."""
     resp = requests.get(f"{CT_API}/studies", params=params, timeout=30)
     resp.raise_for_status()
@@ -108,7 +113,7 @@ def search_clinical_trials(
         logger.info("❌ requests required. Install: pip install requests")
         return []
 
-    all_studies = []
+    all_studies: list[Any] = []
     page_token = None
 
     fields = (
@@ -138,7 +143,7 @@ def search_clinical_trials(
 
         try:
             resp = retry_with_backoff(
-                lambda p=params: _ct_http_get(p),
+                partial(_ct_http_get, params),
                 source="ClinicalTrials.gov search",
             )
             data = resp.json()
@@ -166,7 +171,7 @@ def search_clinical_trials(
     return all_studies
 
 
-def parse_trial(study: dict) -> dict:
+def parse_trial(study: dict) -> TrialRecord:
     """Parse a ClinicalTrials.gov study into a structured format."""
     proto = study.get("protocolSection", {})
 
@@ -286,13 +291,13 @@ def _get_cached_trials(disease_id: str, query_key: str, use_cache: bool) -> dict
     lookup_key = f"{disease_id}|||{query_key}"
     cached = cache_get(NS_CLINICAL_TRIALS, lookup_key, use_cache=use_cache)
     if cached is not None:
-        return cached
+        return cast(dict, cached)
     if not use_cache:
         return None
     legacy = load_legacy_json(_legacy_ct_cache_path(disease_id, query_key))
     if legacy:
         cache_set(NS_CLINICAL_TRIALS, lookup_key, legacy, use_cache=True)
-        return legacy
+        return cast(dict, legacy)
     return None
 
 
@@ -317,13 +322,13 @@ def load_kg_entities(disease_id: str = "sle") -> dict:
     return {"genes": genes, "drugs": drugs}
 
 
-def cross_reference_trials(trials: list, kg_entities: dict) -> list:
+def cross_reference_trials(trials: list, kg_entities: dict) -> list[TrialRecord]:
     """Cross-reference trial interventions against KG genes and drugs."""
     results = []
 
     for trial in trials:
-        matched_genes = []
-        matched_drugs = []
+        matched_genes: list[dict[str, Any]] = []
+        matched_drugs: list[dict[str, Any]] = []
 
         text = (trial.get("title", "") + " " +
                 " ".join(trial.get("interventions", [])) + " " +
@@ -377,7 +382,7 @@ def track_trials(
     use_cache: bool = True,
     disease_id: str = "sle",
     progress_callback: StandardProgress | None = None,
-) -> dict:
+) -> TrialRunResult:
     """Run the full clinical trial tracking pipeline.
 
     Returns:
@@ -428,7 +433,7 @@ def track_trials(
                 logger.info(f"📦 Loading {len(trials)} trials from cache...")
                 _tick(progress_callback, "loading clinical trials", 1, 1)
                 if cached_payload.get("kg_crossref"):
-                    trials = [dict(t) for t in trials]
+                    trials = [cast(TrialRecord, dict(t)) for t in trials]
                     for t in trials:
                         if "kg_matches" not in t:
                             t["kg_matches"] = {
@@ -489,9 +494,9 @@ def track_trials(
 def _compute_stats(trials: list) -> dict:
     """Compute summary statistics across all trials."""
     statuses = Counter(t["status"] for t in trials)
-    phases = Counter()
-    moas = Counter()
-    sponsors = Counter()
+    phases: Counter[str] = Counter()
+    moas: Counter[str] = Counter()
+    sponsors: Counter[str] = Counter()
     matched_count = 0
     total_enrollment = 0
     enrollment_count = 0
@@ -521,8 +526,8 @@ def _compute_stats(trials: list) -> dict:
 
 def _build_crossref_summary(trials: list) -> dict:
     """Build a summary of KG cross-references across all trials."""
-    gene_hits = Counter()
-    drug_hits = Counter()
+    gene_hits: Counter[str] = Counter()
+    drug_hits: Counter[str] = Counter()
     trials_with_matches = []
 
     for t in trials:
@@ -552,7 +557,7 @@ def _build_crossref_summary(trials: list) -> dict:
     }
 
 
-def print_summary(stats: dict, kg_crossref: dict):
+def print_summary(stats: dict, kg_crossref: dict) -> None:
     """Print a summary of clinical trial tracking results."""
     logger.info("\n" + "=" * 70)
     logger.info("📋 CLINICAL TRIAL TRACKER RESULTS")
@@ -631,6 +636,7 @@ def main():
         max_results=args.max,
         use_cache=not args.no_cache,
         disease_id=args.disease,
+        progress_callback=cli_progress,
     )
 
     print_summary(results["stats"], results["kg_crossref"])
@@ -657,7 +663,7 @@ def main():
             cache_or_live="cache" if not args.no_cache else "live",
         )
         report_path = generate_ct_report(
-            results, disease_id=args.disease, provenance=provenance
+            cast(dict, results), disease_id=args.disease, provenance=provenance
         )
         logger.info(f"✅ HTML report generated: {report_path}")
 

@@ -29,6 +29,7 @@ from med_research.web.config import (
 from med_research.web.error_handlers import register_error_handlers
 from med_research.web.middleware import (
     AuthMiddleware,
+    DashboardCSPMiddleware,
     RateLimitMiddleware,
     RequestBodySizeLimitMiddleware,
 )
@@ -95,6 +96,7 @@ app.add_middleware(
 
 app.add_middleware(RequestBodySizeLimitMiddleware)
 app.add_middleware(AuthMiddleware)
+app.add_middleware(DashboardCSPMiddleware)
 app.add_middleware(RateLimitMiddleware)
 
 register_error_handlers(app)

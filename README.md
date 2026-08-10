@@ -181,7 +181,7 @@ The dashboard's main workspace endpoints are:
 | `GET` | `/api/workspace/compare?left=...&right=...` | Compare two runs |
 | `GET` | `/api/workspace/trends` | Inspect ranking/source trends |
 
-The complete route inventory and environment settings are in [`docs/api-reference.md`](docs/api-reference.md).
+The complete route inventory and environment settings are in [`docs/api-reference.md`](docs/api-reference.md). The dashboard uses delegated `data-action` controls rather than inline event attributes, so deployments can enable `DASHBOARD_CSP_MODE=enforce` (or `DASHBOARD_CSP=true`) without allowing inline scripts.
 
 ## Testing and quality checks
 

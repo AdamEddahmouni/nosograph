@@ -1,5 +1,7 @@
 """Drug Combination Synergy service."""
 
+from typing import Any
+
 from med_research.diseases.coverage import module_coverage
 from med_research.web.dependencies import safe_serialize
 from med_research.web.services.registry_service import (
@@ -11,7 +13,7 @@ from med_research.web.services.registry_service import (
 
 def run_synergy(
     top_n: int = 20,
-    progress_callback=None,
+    progress_callback: Any = None,
     disease_id: str = "sle",
 ) -> dict:
     """Run drug combination synergy prediction."""

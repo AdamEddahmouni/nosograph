@@ -1,11 +1,13 @@
 """Evidence Monitor service — snapshot, diff, and status via registry."""
 
+from typing import Any, cast
+
 from med_research.pipeline.evidence.monitor import last_coverage, list_snapshots
 from med_research.web.services.registry_service import dispatch_sync_module
 
 
 def run_snapshot(
-    sources: list = None,
+    sources: list | None = None,
     max_per_query: int = 10,
     disease_id: str = "sle",
 ) -> dict:
@@ -16,13 +18,13 @@ def run_snapshot(
         sources=sources,
         max_per_query=max_per_query,
     )
-    return result.get("snapshot", result)
+    return cast(dict[str, Any], result.get("snapshot", result))
 
 
 def run_diff(disease_id: str = "sle") -> dict:
     """Run a snapshot diff via the evidence_monitor registry adapter."""
     result = dispatch_sync_module("evidence_monitor", disease_id, diff=True)
-    diff = result.get("diff", result)
+    diff = cast(dict[str, Any], result.get("diff", result))
     if last_coverage:
         diff["coverage"] = last_coverage.to_dict()
     return diff

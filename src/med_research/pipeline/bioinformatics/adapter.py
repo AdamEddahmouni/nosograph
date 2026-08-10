@@ -11,10 +11,11 @@ from med_research.pipeline.adapter_options import AdapterOptions
 from med_research.pipeline.base import BasePipelineModule
 from med_research.pipeline.provenance import build_provenance
 from med_research.pipeline.registry import register_module
+from med_research.pipeline.results import EnrichmentResult, GwasResult, PpiResult
 
 
 @register_module
-class GwasModule(BasePipelineModule):
+class GwasModule(BasePipelineModule[GwasResult]):
     """Adapter around ``bioinformatics.gwas`` GWAS Catalog annotation."""
 
     _COVERAGE_MODULE = "gwas"
@@ -30,7 +31,7 @@ class GwasModule(BasePipelineModule):
     def coverage_inputs(self) -> tuple[str, ...]:
         return ("genes", "gwas_search_terms")
 
-    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
+    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> GwasResult:
         from med_research.pipeline.bioinformatics.gwas import run_gwas_analysis
 
         return run_gwas_analysis(
@@ -43,7 +44,7 @@ class GwasModule(BasePipelineModule):
 
     def report(
         self,
-        results: dict,
+        results: GwasResult,
         disease_id: str,
         *,
         provenance: dict | None = None,
@@ -77,7 +78,7 @@ class GwasModule(BasePipelineModule):
 
 
 @register_module
-class EnrichmentModule(BasePipelineModule):
+class EnrichmentModule(BasePipelineModule[EnrichmentResult]):
     """Adapter around ``bioinformatics.enrichment`` pathway enrichment."""
 
     _COVERAGE_MODULE = "enrichment"
@@ -93,7 +94,7 @@ class EnrichmentModule(BasePipelineModule):
     def coverage_inputs(self) -> tuple[str, ...]:
         return ("genes", "pathways")
 
-    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
+    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> EnrichmentResult:
         from med_research.pipeline.bioinformatics.enrichment import run_enrichment_analysis
 
         return run_enrichment_analysis(
@@ -105,7 +106,7 @@ class EnrichmentModule(BasePipelineModule):
 
     def report(
         self,
-        results: dict,
+        results: EnrichmentResult,
         disease_id: str,
         *,
         provenance: dict | None = None,
@@ -143,7 +144,7 @@ class EnrichmentModule(BasePipelineModule):
 
 
 @register_module
-class PpiModule(BasePipelineModule):
+class PpiModule(BasePipelineModule[PpiResult]):
     """Adapter around ``bioinformatics.ppi`` STRING PPI hub analysis."""
 
     _COVERAGE_MODULE = "ppi"
@@ -159,7 +160,7 @@ class PpiModule(BasePipelineModule):
     def coverage_inputs(self) -> tuple[str, ...]:
         return ("genes",)
 
-    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
+    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> PpiResult:
         from med_research.pipeline.bioinformatics.ppi import (
             DEFAULT_CONFIDENCE,
             run_ppi_analysis,
@@ -175,7 +176,7 @@ class PpiModule(BasePipelineModule):
 
     def report(
         self,
-        results: dict,
+        results: PpiResult,
         disease_id: str,
         *,
         provenance: dict | None = None,

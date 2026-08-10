@@ -22,7 +22,6 @@ from med_research.web.services.registry_service import (
     report_module,
     resolve_module_id,
     run_all_pipeline,
-    run_module,
     run_module_job,
     standard_to_legacy,
 )
@@ -53,6 +52,13 @@ class TestRegistryService:
         assert "literature_mining" in modules
         assert "evidence_workspace" in modules
         assert len(modules) >= 20
+
+    def test_job_module_ids_are_generated_from_registry_catalog(self):
+        from med_research.pipeline.registry import module_job_aliases
+
+        assert module_job_aliases() == JOB_MODULE_IDS
+        assert JOB_MODULE_IDS["drug_repurposing"] == "drug_repurposing"
+        assert JOB_MODULE_IDS["repurpose"] == "drug_repurposing"
 
     def test_job_module_ids_cover_celery_tasks(self):
         assert JOB_MODULE_IDS["gwas"] == "gwas"
@@ -96,25 +102,12 @@ class TestRegistryService:
         reporter("complete", 1, 1)
         sink.assert_called_once_with(100, "complete")
 
-    def test_run_module_delegates_to_registry(self):
-        mock_module = MagicMock()
-        mock_module.run.return_value = {"status": "ready", "data": [1, 2, 3]}
-
-        with patch(
-            "med_research.web.services.registry_service.get_module",
-            return_value=mock_module,
-        ):
-            result = run_module("gwas", "ra", max_studies=10)
-
-        mock_module.run.assert_called_once_with("ra", max_studies=10)
-        assert result["status"] == "ready"
-
     def test_execute_module_delegates_to_dispatch(self):
         from med_research.pipeline.base import PipelineRunResult
 
         expected = PipelineRunResult(success=True, data={"ok": True})
         with patch(
-            "med_research.web.services.registry_service._execute_module",
+            "med_research.web.services.registry_service.pipeline_gateway.execute",
             return_value=expected,
         ) as mock_dispatch:
             result = execute_module("gwas", "ra")
@@ -122,20 +115,21 @@ class TestRegistryService:
         mock_dispatch.assert_called_once_with("gwas", "ra", export_html=False, progress_callback=None)
         assert result.success is True
 
-    def test_report_module_builds_provenance_and_calls_report(self, tmp_path):
-        mock_module = MagicMock()
-        mock_module.build_provenance.return_value = {"module": "gwas"}
-        mock_module.report.return_value = tmp_path / "report.html"
-
+    def test_report_module_delegates_to_centralized_dispatch(self, tmp_path) -> None:
+        expected_path = tmp_path / "report.html"
         with patch(
-            "med_research.web.services.registry_service.get_module",
-            return_value=mock_module,
-        ):
-            path = report_module("gwas", {"gwas_results": {}}, "ra")
+            "med_research.web.services.registry_service.pipeline_gateway.report",
+            return_value=expected_path,
+        ) as mock_report:
+            path = report_module("gwas", {"gwas_results": {}}, "ra", run_id="test")
 
-        mock_module.build_provenance.assert_called_once_with("ra")
-        mock_module.report.assert_called_once()
-        assert path == tmp_path / "report.html"
+        mock_report.assert_called_once_with(
+            "gwas",
+            {"gwas_results": {}},
+            "ra",
+            run_id="test",
+        )
+        assert path == expected_path
 
     def test_dispatch_sync_module_raises_on_blocked(self):
         expected = PipelineRunResult(success=False, data=None, errors=["blocked module"])
@@ -561,12 +555,95 @@ class TestGenericJobRouter:
         )
         assert resp.status_code == 422
 
+    def test_submit_generic_job_rejects_option_outside_module_schema(self, client):
+        resp = client.post("/api/jobs/cross_disease", params={"top_n": 5})
+        assert resp.status_code == 422
+        assert "Unknown request options" in resp.json()["detail"]
+
     def test_submit_generic_job_invalid_top_n_422(self, client):
         resp = client.post(
             "/api/jobs/ml_predictor",
             params={"top_n": 0},
         )
         assert resp.status_code == 422
+
+    def test_generated_module_job_openapi_uses_catalog_schema(self):
+        operation = app.openapi()["paths"]["/api/jobs/cross_disease"]["post"]
+        parameters = {parameter["name"]: parameter for parameter in operation["parameters"]}
+        assert {"disease_id", "comparative", "top_synergy"}.issubset(parameters)
+        top_schema = parameters["top_synergy"]["schema"]
+        assert any(option.get("minimum") == 1 for option in top_schema["anyOf"])
+        assert parameters["comparative"]["schema"]["anyOf"][0]["type"] == "boolean"
+
+    @pytest.mark.parametrize(
+        ("route", "module_id"),
+        [
+            ("gwas", "gwas"),
+            ("enrichment", "enrichment"),
+            ("ppi", "ppi"),
+            ("literature", "literature_mining"),
+            ("screening", "virtual_screening"),
+            ("trials", "clinical_trials"),
+            ("ml", "ml_predictor"),
+            ("synergy", "drug_synergy"),
+            ("safety", "adverse_events"),
+        ],
+    )
+    def test_specialized_job_openapi_uses_catalog_schema(self, route, module_id):
+        """Legacy job paths document the same options as their registry module."""
+        from med_research.pipeline.registry import module_request_schema
+
+        operation = app.openapi()["paths"][f"/api/jobs/{route}"]["post"]
+        parameter_names = {
+            parameter["name"]
+            for parameter in operation.get("parameters", [])
+            if parameter["name"] != "request"
+        }
+        assert parameter_names == {
+            "disease_id",
+            *module_request_schema(module_id)["properties"],
+        }
+
+    def test_specialized_job_openapi_preserves_registry_constraints(self):
+        operation = app.openapi()["paths"]["/api/jobs/gwas"]["post"]
+        parameters = {parameter["name"]: parameter for parameter in operation["parameters"]}
+        assert parameters["max_studies"]["schema"]["anyOf"][0]["minimum"] == 1
+
+        from med_research.web.models.jobs import module_job_request_model
+
+        generated_schema = module_job_request_model("gwas").model_json_schema()["properties"]
+        assert generated_schema["max_studies"]["default"] == 30
+        assert generated_schema["use_cache"]["default"] is True
+
+    def test_specialized_job_options_forward_to_legacy_tasks(self, client):
+        with patch("med_research.web.routers.jobs.task_run_gwas") as mock_gwas:
+            mock_gwas.delay.return_value.id = "00000000-0000-0000-0000-000000000019"
+            response = client.post(
+                "/api/jobs/gwas",
+                params={"use_cache": False, "resolve_snps": False},
+            )
+        assert response.status_code == 200
+        mock_gwas.delay.assert_called_once_with(
+            max_studies=30,
+            no_cache=False,
+            disease_id="sle",
+            use_cache=False,
+            resolve_snps=False,
+        )
+
+        with patch("med_research.web.routers.jobs.task_run_ppi") as mock_ppi:
+            mock_ppi.delay.return_value.id = "00000000-0000-0000-0000-000000000020"
+            response = client.post(
+                "/api/jobs/ppi",
+                params={"expand_neighbors": 2},
+            )
+        assert response.status_code == 200
+        mock_ppi.delay.assert_called_once_with(
+            confidence=0.4,
+            no_cache=False,
+            disease_id="sle",
+            expand_neighbors=2,
+        )
 
     def test_list_system_modules(self, client):
         resp = client.get("/api/system/modules", params={"disease": "ra"})
@@ -579,7 +656,41 @@ class TestGenericJobRouter:
         assert "evidence_workspace" in module_ids
         first = data["modules"][0]
         assert "depends_on" in first
+        assert "aliases" in first
+        assert "coverage_inputs" in first
+        assert "coverage_module" in first
+        assert "result_contract" in first
+        assert "response_schema" in first
+        assert "request_schema" in first
         assert "coverage" in first
+        workspace = next(
+            module for module in data["modules"] if module["module_id"] == "evidence_workspace"
+        )
+        assert workspace["persisted_request_schema_version"] == "1.0"
+        assert workspace["persisted_result_schema_version"] == "1.1"
+        assert workspace["persisted_request_schema"]["properties"]["schema_version"]["const"] == "1.0"
+        assert workspace["persisted_result_schema"]["properties"]["schema_version"]["const"] == "1.1"
+
+    def test_list_system_modules_uses_pipeline_gateway_for_coverage(self, client):
+        from med_research.diseases.coverage import ModuleCoverage
+
+        coverage = ModuleCoverage(
+            disease_id="ra",
+            module="test",
+            level="full",
+            status="ready",
+        )
+        with patch(
+            "med_research.web.routers.system.pipeline_gateway.coverage",
+            return_value=coverage,
+        ) as mock_coverage:
+            resp = client.get("/api/system/modules", params={"disease": "ra"})
+
+        assert resp.status_code == 200
+        data = resp.json()
+        assert mock_coverage.call_count == data["count"]
+        mock_coverage.assert_any_call("gwas", "ra")
+        assert all(module["coverage"]["status"] == "ready" for module in data["modules"])
 
 
 class TestPipelineErrors:
@@ -2120,6 +2231,35 @@ class TestMiscRouterUnit:
             )
         assert resp.status_code == 200
         assert resp.json()["module"] == "workspace"
+        mock_task.delay.assert_called_once_with(
+            disease_id="sle",
+            question="What drives lupus?",
+            sources=["pubmed"],
+            date_from=None,
+            date_to=None,
+            candidate_type="both",
+            max_evidence=50,
+            enable_llm=True,
+            researcher_id="anonymous",
+        )
+
+    def test_workspace_openapi_uses_registry_body_schema(self):
+        operation = app.openapi()["paths"]["/api/jobs/workspace"]["post"]
+        schema_ref = operation["requestBody"]["content"]["application/json"]["schema"]["$ref"]
+        schema_name = schema_ref.rsplit("/", 1)[-1]
+        schema = app.openapi()["components"]["schemas"][schema_name]
+
+        assert schema_name == "EvidenceWorkspaceRequest"
+        assert schema["required"] == ["question"]
+        assert schema["properties"]["question"]["minLength"] == 2
+        assert schema["properties"]["max_evidence"]["maximum"] == 200
+        source_items = schema["properties"]["sources"]["items"]
+        assert set(source_items["enum"]) == {
+            "pubmed",
+            "clinical_trials",
+            "gwas",
+            "fda_labels",
+        }
 
 
 class TestMonitorServiceUnit:

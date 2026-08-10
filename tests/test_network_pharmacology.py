@@ -125,7 +125,6 @@ def test_compute_all_metrics_centrality_summary():
         assert len(centrality[metric]) > 0
 
 
-@pytest.mark.slow
 def test_compute_all_metrics_saves_json(tmp_path, monkeypatch):
     monkeypatch.setattr(
         "med_research.pipeline.network_pharmacology.analyzer.DATA_DIR",
@@ -147,7 +146,6 @@ def test_escape_html_network():
     assert escape_html(None) == ""
 
 
-@pytest.mark.slow
 def test_generate_html_report():
     results = compute_all_metrics()
     path = generate_html_report(results)
@@ -160,7 +158,6 @@ def test_generate_html_report():
 # ── API Service ──────────────────────────────────────────────────────────
 
 
-@pytest.mark.slow
 def test_run_centrality_analysis():
     from med_research.web.services.kg_service import run_centrality_analysis
 
@@ -170,7 +167,6 @@ def test_run_centrality_analysis():
     assert result["nodes"][0]["score"] > 0
 
 
-@pytest.mark.slow
 def test_run_community_detection():
     from med_research.web.services.kg_service import run_community_detection
 
@@ -183,7 +179,6 @@ def test_run_community_detection():
 # ── CLI Integration ──────────────────────────────────────────────────────
 
 
-@pytest.mark.slow
 def test_network_cli_help():
     from tests.cli_helpers import cli_help_output
 

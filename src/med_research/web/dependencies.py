@@ -3,12 +3,13 @@
 import json
 from functools import lru_cache
 from pathlib import Path
+from typing import Any, cast
 
 from med_research.pipeline.knowledge_graph.config import load_drugs, load_genes, load_pathways
 
 
 @lru_cache(maxsize=16)
-def get_knowledge_graph(disease_id: str = "sle"):
+def get_knowledge_graph(disease_id: str = "sle") -> Any:
     """Load a disease-specific knowledge graph and cache it in memory."""
     from med_research.pipeline.knowledge_graph.builder import build_graph
 
@@ -42,18 +43,18 @@ def get_candidates() -> list:
     from med_research.web.config import DR_DATA_DIR
 
     data = json.loads((DR_DATA_DIR / "candidates.json").read_text(encoding="utf-8"))
-    return data["repurposing_candidates"]
+    return cast(list, data["repurposing_candidates"])
 
 
 def load_json(path: Path) -> dict:
     """Safely load a JSON file. Returns empty dict on failure."""
     try:
-        return json.loads(path.read_text(encoding="utf-8"))
+        return cast(dict, json.loads(path.read_text(encoding="utf-8")))
     except (FileNotFoundError, json.JSONDecodeError):
         return {}
 
 
-def safe_serialize(obj):
+def safe_serialize(obj: Any) -> Any:
     """Convert numpy types to native Python for JSON serialization.
 
     Used by both REST response handlers and WebSocket streaming code.

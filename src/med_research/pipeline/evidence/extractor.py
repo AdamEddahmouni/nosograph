@@ -34,6 +34,7 @@ import urllib.parse
 import urllib.request
 from datetime import datetime
 from pathlib import Path
+from typing import Any, cast
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
@@ -42,11 +43,14 @@ import logging
 from med_research.cache import NS_LLM_EXTRACTOR, cache_get, cache_set, load_legacy_json
 from med_research.exceptions import ExternalAPIError, classify_api_error, retry_with_backoff
 from med_research.pipeline.evidence.gatherer import gather_evidence
-from med_research.pipeline.progress import StandardProgress, _tick
+from med_research.pipeline.progress import StandardProgress, _tick, cli_progress
+from med_research.pipeline.results import EvidenceExtractionResult
 
 logger = logging.getLogger(__name__)
 if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    _stdout = sys.stdout
+    if hasattr(_stdout, "reconfigure"):
+        _stdout.reconfigure(encoding="utf-8", errors="replace")
 
 DATA_DIR = Path(__file__).parent / "data"
 LEGACY_EXTRACTION_CACHE = DATA_DIR / "extraction_cache.json"
@@ -95,10 +99,10 @@ JSON:"""
 
 def load_json(path: Path) -> dict:
     with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
+        return cast(dict, json.load(f))
 
 
-def save_json(path: Path, data):
+def save_json(path: Path, data: Any) -> None:
     path.write_text(json.dumps(data, indent=2), encoding="utf-8")
 
 
@@ -117,13 +121,13 @@ def _load_legacy_extraction_cache() -> dict:
 def _get_cached_extraction(key: str, use_cache: bool) -> dict | None:
     cached = cache_get(NS_LLM_EXTRACTOR, key, use_cache=use_cache)
     if cached is not None:
-        return cached
+        return cast(dict, cached)
     if not use_cache:
         return None
     legacy = _load_legacy_extraction_cache()
     if key in legacy:
         cache_set(NS_LLM_EXTRACTOR, key, legacy[key], use_cache=True)
-        return legacy[key]
+        return cast(dict, legacy[key])
     return None
 
 
@@ -137,7 +141,7 @@ def _set_cached_extraction(key: str, extracted: dict, use_cache: bool) -> None:
 def call_llm(
     system_prompt: str,
     user_prompt: str,
-    model: str = None,
+    model: str | None = None,
     temperature: float = 0.1,
     max_tokens: int = 800,
 ) -> str | None:
@@ -189,7 +193,7 @@ def _call_llm_request(url: str, payload: bytes, headers: dict) -> str:
     req = urllib.request.Request(url, data=payload, headers=headers, method="POST")
     with urllib.request.urlopen(req, timeout=45) as resp:
         body = json.loads(resp.read().decode("utf-8"))
-        return body["choices"][0]["message"]["content"].strip()
+        return cast(str, body["choices"][0]["message"]["content"]).strip()
 
 
 def _clean_json_response(text: str) -> str:
@@ -218,7 +222,7 @@ def _clean_json_response(text: str) -> str:
 def extract_evidence(
     article: dict,
     query: str,
-    model: str = None,
+    model: str | None = None,
     use_cache: bool = True,
 ) -> dict | None:
     """Extract structured data from a single evidence article using an LLM.
@@ -253,7 +257,7 @@ def extract_evidence(
 
     if response is None:
         # Return a minimal extraction with defaults
-        extracted = {
+        extracted: dict[str, Any] = {
             "evidence_level": "unknown",
             "model_system": "unknown",
             "key_findings": "",
@@ -272,7 +276,7 @@ def extract_evidence(
         cleaned = _clean_json_response(response)
         extracted = json.loads(cleaned)
         # Ensure all expected fields exist
-        defaults = {
+        defaults: dict[str, Any] = {
             "evidence_level": "unknown",
             "model_system": "unknown",
             "key_findings": "",
@@ -310,13 +314,13 @@ def extract_evidence(
 
 def extract_all(
     query: str,
-    sources: list = None,
+    sources: list | None = None,
     max_articles: int = 20,
-    model: str = None,
+    model: str | None = None,
     use_cache: bool = True,
     disease_id: str | None = None,
     progress_callback: StandardProgress | None = None,
-) -> dict:
+) -> EvidenceExtractionResult:
     """Gather evidence then extract structured data from all results.
 
     Args:
@@ -439,7 +443,7 @@ def extract_all(
     # Compute stats
     stats = _compute_extraction_stats(extractions)
 
-    output = {
+    output: EvidenceExtractionResult = {
         "query": query,
         "model": model,
         "total_extracted": len(extractions),
@@ -465,11 +469,11 @@ def _compute_extraction_stats(extractions: list) -> dict:
         return {}
 
     # Evidence level distribution
-    evidence_levels = {}
-    model_systems = {}
-    study_designs = {}
-    drugs = set()
-    diseases = {}
+    evidence_levels: dict[str, int] = {}
+    model_systems: dict[str, int] = {}
+    study_designs: dict[str, int] = {}
+    drugs: set[str] = set()
+    diseases: dict[str, int] = {}
     total_sample = 0
     sample_count = 0
     avg_confidence = 0
@@ -517,7 +521,7 @@ def _compute_extraction_stats(extractions: list) -> dict:
 # ── CLI ──────────────────────────────────────────────────────────────────
 
 
-def print_summary(results: dict):
+def print_summary(results: EvidenceExtractionResult) -> None:
     """Print a formatted summary of LLM extractions."""
     extractions = results.get("extractions", [])
     stats = results.get("stats", {})
@@ -591,6 +595,7 @@ def main():
         max_articles=args.max_articles,
         model=args.model,
         use_cache=not args.no_cache,
+        progress_callback=cli_progress,
     )
 
     if "error" not in results:
@@ -608,7 +613,7 @@ def main():
             cache_or_live="live" if args.no_cache else "cache",
             model=args.model,
         )
-        generate_html_report(results, provenance=provenance)
+        generate_html_report(cast(dict, results), provenance=provenance)
         logger.info("\n✅ HTML report generated: llm_extractor/report.html")
 
     return results

@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Any
+from typing import Any, cast
 
 from typing_extensions import Unpack
 
@@ -11,10 +11,11 @@ from med_research.pipeline.adapter_options import AdapterOptions
 from med_research.pipeline.base import BasePipelineModule
 from med_research.pipeline.provenance import build_provenance
 from med_research.pipeline.registry import register_module
+from med_research.pipeline.results import TrialRunResult
 
 
 @register_module
-class ClinicalTrialsModule(BasePipelineModule):
+class ClinicalTrialsModule(BasePipelineModule[TrialRunResult]):
     """Adapter around ``clinical_trials.tracker`` trial search and reporting."""
 
     _COVERAGE_MODULE = "clinical_trials"
@@ -30,7 +31,7 @@ class ClinicalTrialsModule(BasePipelineModule):
     def coverage_inputs(self) -> tuple[str, ...]:
         return ("genes", "drugs", "trial_query")
 
-    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
+    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> TrialRunResult:
         from med_research.pipeline.clinical_trials.tracker import track_trials
 
         return track_trials(
@@ -43,7 +44,7 @@ class ClinicalTrialsModule(BasePipelineModule):
 
     def report(
         self,
-        results: dict,
+        results: TrialRunResult,
         disease_id: str,
         *,
         provenance: dict | None = None,
@@ -51,7 +52,7 @@ class ClinicalTrialsModule(BasePipelineModule):
         from med_research.pipeline.clinical_trials.report import generate_ct_report
 
         report_path = generate_ct_report(
-            results,
+            cast(dict, results),
             disease_id=disease_id,
             provenance=provenance,
         )

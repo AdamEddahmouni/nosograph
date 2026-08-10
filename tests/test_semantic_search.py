@@ -18,14 +18,12 @@ from med_research.pipeline.semantic_search.engine import (
 
 # ---- Dependency checks ----
 
-@pytest.mark.slow
 @pytest.mark.skipif(not CHROMADB_AVAILABLE, reason="chromadb not installed")
 def test_chromadb_available():
     """Verify ChromaDB is installed."""
     assert CHROMADB_AVAILABLE, "chromadb required: pip install chromadb"
 
 
-@pytest.mark.slow
 @pytest.mark.skipif(not ST_AVAILABLE, reason="sentence-transformers not installed")
 def test_sentence_transformers_available():
     """Verify sentence-transformers is installed."""
@@ -267,7 +265,6 @@ def test_escape_html_semantic():
     assert escape_html(None) == ""
 
 
-@pytest.mark.slow
 def test_generate_semantic_report():
     from med_research.pipeline.semantic_search.report import generate_semantic_report
 
@@ -283,13 +280,19 @@ def test_generate_semantic_report():
 
 # ---- API Service ----
 
-@pytest.mark.slow
-def test_run_semantic_search_empty_collection(tmp_path, monkeypatch):
+def test_run_semantic_search_empty_collection(tmp_path, monkeypatch, semantic_fake_embedder):
     """Search without indexed collection returns empty results."""
     import med_research.pipeline.semantic_search.engine as engine_mod
     # Patch the module the service actually imports (the top-level
     # `semantic_search.engine` alias is a separate module object).
     monkeypatch.setattr(engine_mod, "CHROMA_DIR", tmp_path / "no_index")
+    # The empty path returns before any embedding is computed, so skip the
+    # ~2s real-model load and use the shared stand-in embedder instead.
+    monkeypatch.setattr(
+        engine_mod.SemanticSearchEngine,
+        "_load_model",
+        lambda self: setattr(self, "model", semantic_fake_embedder),
+    )
     from med_research.web.services.semantic_service import run_semantic_search
     result = run_semantic_search("lupus treatment", top_k=5)
     assert result["query"] == "lupus treatment"
@@ -298,7 +301,6 @@ def test_run_semantic_search_empty_collection(tmp_path, monkeypatch):
 
 # ---- CLI ----
 
-@pytest.mark.slow
 def test_semantic_cli_help():
     from tests.cli_helpers import cli_help_output
 

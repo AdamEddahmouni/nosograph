@@ -5,6 +5,11 @@ from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
 from pydantic import BaseModel, Field, field_validator
 
+from med_research.pipeline.evidence_workspace.schemas import (
+    WorkspaceRequestV1,
+    WorkspaceResultV1,
+)
+
 CandidateType = Literal["drug", "target"]
 
 CandidateDecision = Literal["unreviewed", "pinned", "rejected"]
@@ -245,8 +250,21 @@ class WorkspaceRunListResponse(BaseModel):
 class WorkspaceRunResponse(BaseModel):
     run_id: str
     status: str
-    request: dict[str, Any]
-    dossier: dict[str, Any] | None = None
+    request_schema_version: Literal["1.0"] = Field(
+        default="1.0",
+        description="Persisted Workspace request schema version.",
+    )
+    result_schema_version: Literal["1.1"] = Field(
+        default="1.1",
+        description="Persisted Workspace result schema version.",
+    )
+    request: WorkspaceRequestV1 = Field(
+        description="Versioned persisted Workspace request payload."
+    )
+    dossier: WorkspaceResultV1 | None = Field(
+        default=None,
+        description="Versioned persisted Workspace result payload.",
+    )
     html: str | None = None
     error: str | None = None
     created_at: str

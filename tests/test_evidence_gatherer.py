@@ -242,10 +242,10 @@ class TestServiceLayer:
         assert "total_results" in result
 
 
-@pytest.mark.slow
 class TestEvidenceGatherSlow:
     """Slow tests that hit live APIs across all sources."""
 
+    @pytest.mark.slow
     def test_all_sources_gather(self):
         from med_research.pipeline.evidence.gatherer import gather_evidence
 
@@ -254,6 +254,7 @@ class TestEvidenceGatherSlow:
         sources_found = set(result["results_by_source"].keys())
         assert len(sources_found) >= 2
 
+    @pytest.mark.slow
     def test_live_pubmed_search(self):
         from med_research.pipeline.evidence.gatherer import search_europe_pmc
 

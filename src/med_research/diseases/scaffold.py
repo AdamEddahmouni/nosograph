@@ -35,7 +35,7 @@ import json
 import re
 from datetime import datetime
 from pathlib import Path
-from typing import Callable, Optional
+from typing import Any, Callable, Optional, Union, cast
 
 from med_research.cache import CacheManager
 from med_research.logging_config import get_logger
@@ -97,7 +97,7 @@ def _http_get_json(url: str, params: Optional[dict] = None, timeout: int = 30) -
     try:
         resp = requests.get(url, params=params, timeout=timeout, headers={"User-Agent": USER_AGENT})
         resp.raise_for_status()
-        return resp.json()
+        return cast(dict, resp.json())
     except Exception as e:  # noqa: BLE001 — scaffold must degrade gracefully
         logger.warning("GET %s failed: %s", url, e)
         return None
@@ -112,7 +112,7 @@ def _http_post_json(url: str, payload: dict, timeout: int = 30) -> Optional[dict
             url, json=payload, timeout=timeout, headers={"User-Agent": USER_AGENT}
         )
         resp.raise_for_status()
-        return resp.json()
+        return cast(dict, resp.json())
     except Exception as e:  # noqa: BLE001
         logger.warning("POST %s failed: %s", url, e)
         return None
@@ -150,7 +150,7 @@ def search_efo_id(name: str) -> Optional[str]:
     hits = ((data.get("data") or {}).get("search") or {}).get("hits") or []
     for hit in hits:
         if hit.get("entity") == "disease" and hit.get("id", "").startswith("EFO_"):
-            return hit["id"]
+            return cast(str, hit["id"])
     return None
 
 
@@ -566,7 +566,7 @@ def build_genes_json(
     """Merge Open Targets + GWAS genes into genes.json (deduped by symbol)."""
     merged: dict[str, dict] = {}
 
-    def _add(symbol: str, **updates):
+    def _add(symbol: str, **updates: Any) -> None:
         key = symbol.upper()
         if key not in merged:
             merged[key] = {
@@ -610,7 +610,7 @@ def build_genes_json(
     return {"genes": genes[:max_genes]}
 
 
-def _approval_text(phase, status: str) -> str:
+def _approval_text(phase: Any, status: str) -> str:
     status = (status or "").strip()
     if status and status.lower() not in ("unknown", "investigational"):
         return status
@@ -661,8 +661,10 @@ def build_pathways_json(
     gene-membership depth. ``genes`` is the list of gene dicts (with "symbol").
     """
     pathways = []
-    gene_symbols = {
-        (g.get("symbol") or g.get("id") or "").upper(): (g.get("symbol") or g.get("id"))
+    gene_symbols: dict[str, str] = {
+        (g.get("symbol") or g.get("id") or "").upper(): cast(
+            str, g.get("symbol") or g.get("id")
+        )
         for g in genes
         if (g.get("symbol") or g.get("id"))
     }
@@ -876,7 +878,7 @@ def _collect_sources(
 
     genes_json = build_genes_json(ot_targets, gwas_genes, disease_id, max_genes)
 
-    drugs_json = {"drugs": []}
+    drugs_json: dict[str, Any] = {"drugs": []}
     if use_opentargets and resolved_efo:
         logger.info("💊 Fetching Open Targets known drugs...")
         ot_drugs = fetch_ot_known_drugs(resolved_efo, max_drugs)
@@ -1032,7 +1034,7 @@ PATHWAY_LIST_FIELDS = frozenset({"key_components", "therapeutic_targets"})
 _SOURCE_EVIDENCE_PREFIXES = ("Open Targets", "GWAS Catalog")
 
 
-def _is_empty(value) -> bool:
+def _is_empty(value: Any) -> bool:
     """True for None, '', or an empty list (used for curated backfill)."""
     return value is None or value == "" or value == []
 
@@ -1476,7 +1478,7 @@ def _write_prune_backup(
 
 # ── Restore (re-merge a pruned backup) ──────────────────────────────────
 
-def _load_backup(data_dir: Path, disease_id: str, explicit: Optional[Path]) -> dict:
+def _load_backup(data_dir: Path, disease_id: str, explicit: Optional[Union[str, Path]]) -> dict:
     """Locate + parse a prune backup (explicit path, else newest for the disease)."""
     if explicit is not None:
         path = Path(explicit)
@@ -1558,7 +1560,7 @@ def _restore_pathway_membership(
 
 def restore_disease(
     disease_id: str,
-    backup_path: Optional[Path] = None,
+    backup_path: Optional[Union[str, Path]] = None,
     target_dir: Optional[Path] = None,
     dry_run: bool = False,
 ) -> dict:

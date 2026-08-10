@@ -17,6 +17,7 @@ import os
 import sys
 import urllib.error
 from pathlib import Path
+from typing import Any, cast
 
 from med_research.exceptions import (
     ConfigurationError,
@@ -24,18 +25,23 @@ from med_research.exceptions import (
     classify_api_error,
     retry_with_backoff,
 )
-from med_research.pipeline.progress import StandardProgress, _tick
+from med_research.pipeline.progress import StandardProgress, _tick, cli_progress
+from med_research.pipeline.results import LiteratureArticle, LiteratureResults
 from med_research.rate_limiter import rate_limited_sleep
 
 # Add parent to path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # type: ignore[union-attr]
 
 import logging
 
 logger = logging.getLogger(__name__)
+
+# Set by ``main()`` for ``print_summary``; declared at module level so the
+# function is safe to call standalone and mypy can type the global.
+entities_hack: dict[str, Any] = {}
 
 try:
     from Bio import Entrez, Medline
@@ -100,7 +106,7 @@ def load_literature_articles(disease_id: str, use_cache: bool = True) -> list | 
     """Load cached PubMed articles for a disease from CacheManager or legacy files."""
     articles = cache_get(NS_LITERATURE_MINING, disease_id, use_cache=use_cache)
     if articles is not None:
-        return articles
+        return cast(list | None, articles)
 
     if not use_cache:
         return None
@@ -122,7 +128,7 @@ def save_literature_articles(
     cache_set(NS_LITERATURE_MINING, disease_id, articles, use_cache=use_cache)
 
 
-def _disease_queries(disease_id: str) -> list:
+def _disease_queries(disease_id: str) -> list[str]:
     """Return PubMed queries configured for the requested disease.
 
     A missing config is scoped to that disease's profile name rather than
@@ -225,7 +231,7 @@ def generate_candidate_queries(
 
 def search_pubmed(
     query: str, max_results: int = 50, email: str = DEFAULT_EMAIL
-) -> list:
+) -> list[LiteratureArticle]:
     """
     Search PubMed and return list of articles with abstracts.
 
@@ -235,7 +241,7 @@ def search_pubmed(
         logger.info("❌ BioPython required. Install: pip install biopython")
         return []
 
-    Entrez.email = email
+    Entrez.email = email  # type: ignore[assignment]
 
     try:
         # Step 1: Search for IDs
@@ -269,7 +275,7 @@ def search_pubmed(
 
         records = retry_with_backoff(_efetch, source="PubMed efetch")
 
-        articles = []
+        articles: list[LiteratureArticle] = []
         for rec in records:
             abstract = rec.get("AB", "")
             if abstract:  # Only keep articles with abstracts
@@ -298,7 +304,7 @@ def search_pubmed(
 
 
 def mine_literature(
-    queries: list = None,
+    queries: list | None = None,
     max_per_query: int = 30,
     email: str = DEFAULT_EMAIL,
     use_cache: bool = True,
@@ -306,7 +312,7 @@ def mine_literature(
     extract_content: bool = False,
     disease_id: str = "sle",
     progress_callback: StandardProgress | None = None,
-) -> tuple:
+) -> tuple[LiteratureResults, dict[str, Any], list[Any], Any]:
     """
     Run the full literature mining pipeline.
 
@@ -470,7 +476,7 @@ def mine_literature(
     return results, entities, candidates, extraction_stats
 
 
-def print_summary(results: dict, candidates: list, entities: dict):
+def print_summary(results: LiteratureResults, candidates: list, entities: dict) -> None:
     """Print a summary of literature mining results."""
     stats = results["stats"]
     candidate_support = results["candidate_support"]
@@ -590,6 +596,7 @@ def main():
         targeted_candidates=args.targeted,
         extract_content=args.extract,
         disease_id=args.disease,
+        progress_callback=cli_progress,
     )
 
     # Store entities globally for print_summary access
@@ -619,7 +626,7 @@ def main():
             cache_or_live="cache" if not args.no_cache else "live",
         )
         report_path = generate_literature_report(
-            results,
+            cast(dict, results),
             entities,
             candidates,
             disease_id=args.disease,

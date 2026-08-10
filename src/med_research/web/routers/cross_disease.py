@@ -1,5 +1,7 @@
 """Router for cross-disease analysis endpoints."""
 
+from typing import Any
+
 from fastapi import APIRouter, Query
 
 from med_research.web.models.cross_disease import CrossDiseaseResponse
@@ -12,21 +14,21 @@ router = APIRouter(prefix="/api/cross-disease", tags=["Cross-Disease Analysis"])
 
 
 @router.get("/overlap", response_model=CrossDiseaseResponse)
-def get_cross_disease_overlap():
+def get_cross_disease_overlap() -> CrossDiseaseResponse:
     """Get shared genes, drugs, pathways, and disease similarity across 7 diseases."""
     result = run_cross_disease_analysis()
     return CrossDiseaseResponse(**result)
 
 
 @router.get("/similarity")
-def get_disease_similarity():
+def get_disease_similarity() -> dict[str, Any]:
     """Get pairwise disease similarity matrix."""
     result = run_cross_disease_analysis()
     return {"similarity": result.get("disease_similarity", []), "diseases": result.get("diseases", [])}
 
 
 @router.get("/drugs")
-def get_multi_disease_drugs(top: int = Query(20, ge=1, le=100)):
+def get_multi_disease_drugs(top: int = Query(20, ge=1, le=100)) -> dict[str, Any]:
     """Get drugs ranked by multi-disease therapeutic potential."""
     result = run_cross_disease_analysis()
     drugs = result.get("multi_disease_drugs", [])
@@ -34,7 +36,7 @@ def get_multi_disease_drugs(top: int = Query(20, ge=1, le=100)):
 
 
 @router.get("/modules")
-def get_comparative_modules(top_synergy: int = Query(5, ge=1, le=20)):
+def get_comparative_modules(top_synergy: int = Query(5, ge=1, le=20)) -> dict[str, Any]:
     """Run biomarker/expression/synergy across all 7 diseases, stacked side by side.
 
     Returns per-disease gene/drug score matrices (entity -> disease -> score)

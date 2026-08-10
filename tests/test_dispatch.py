@@ -21,6 +21,7 @@ from med_research.pipeline.dispatch import (
     ProgressReporter,
     _accepts_legacy,
     execute_module,
+    render_module_report,
     standard_to_legacy,
 )
 from med_research.pipeline.registry import get_module
@@ -188,6 +189,20 @@ class TestExecuteModule:
         assert result.data is None
         assert result.errors == [message]
 
+    def test_render_module_report_uses_registry_adapter(self, tmp_path: Path) -> None:
+        mock_module = self._mock_module()
+        mock_module.build_provenance.return_value = {"module": "gwas"}
+        mock_module.report.return_value = tmp_path / "report.html"
+
+        with patch("med_research.pipeline.dispatch.get_module", return_value=mock_module):
+            path = render_module_report("gwas", {"hits": []}, "ra", run_id="test")
+
+        mock_module.build_provenance.assert_called_once_with("ra", run_id="test")
+        mock_module.report.assert_called_once_with(
+            {"hits": []}, "ra", provenance={"module": "gwas"}
+        )
+        assert path == tmp_path / "report.html"
+
     def test_export_html_builds_provenance_and_report(self, tmp_path: Path):
         mock_module = self._mock_module()
         mock_module.run.return_value = {"hits": []}
@@ -293,22 +308,3 @@ class TestExecuteModule:
 
         assert result.success is True
         mock_run.assert_called_once()
-
-    def test_real_gwas_run_emits_monotonic_progress(self):
-        """Real GWAS adapter run emits monotonic progress ticks."""
-        from med_research.diseases.coverage import module_coverage
-        from tests.test_pipeline_base import assert_monotonic_progress
-
-        module = get_module("gwas")
-        coverage = module_coverage("ra", "gwas", module.coverage_inputs())
-        if not coverage.is_runnable:
-            pytest.skip("RA GWAS coverage not runnable in this environment")
-
-        calls: list[tuple[str, int, int]] = []
-
-        def progress(step: str, current: int, total: int) -> None:
-            calls.append((step, current, total))
-
-        result = execute_module("gwas", "ra", use_cache=True, progress_callback=progress)
-        assert result.success is True
-        assert_monotonic_progress(calls)

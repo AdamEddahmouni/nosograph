@@ -37,7 +37,7 @@ def _research_request(disease_id: str, **opts: Unpack[AdapterOptions]) -> Resear
 
 
 @register_module
-class EvidenceWorkspaceModule(BasePipelineModule):
+class EvidenceWorkspaceModule(BasePipelineModule[EvidenceDossier]):
     """Adapter around ``evidence_workspace.workspace`` dossier orchestration."""
 
     _COVERAGE_MODULE = "evidence_workspace"

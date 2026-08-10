@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+from typing import cast
 
 from typing_extensions import Unpack
 
@@ -10,6 +11,11 @@ from med_research.pipeline.adapter_options import AdapterOptions
 from med_research.pipeline.base import BasePipelineModule
 from med_research.pipeline.provenance import build_provenance
 from med_research.pipeline.registry import register_module
+from med_research.pipeline.results import (
+    EvidenceExtractionResult,
+    EvidenceGatherResult,
+    EvidenceMonitorResult,
+)
 
 _DEFAULT_GATHER_SOURCES = [
     "pubmed",
@@ -34,7 +40,7 @@ def _default_query(disease_id: str) -> str:
 
 
 @register_module
-class EvidenceGathererModule(BasePipelineModule):
+class EvidenceGathererModule(BasePipelineModule[EvidenceGatherResult]):
     """Adapter around ``evidence.gatherer`` multi-source search."""
 
     _COVERAGE_MODULE = "evidence_gather"
@@ -50,7 +56,7 @@ class EvidenceGathererModule(BasePipelineModule):
     def coverage_inputs(self) -> tuple[str, ...]:
         return ("genes", "drugs", "pathways", "pubmed_queries")
 
-    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
+    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> EvidenceGatherResult:
         from med_research.pipeline.evidence.gatherer import gather_evidence
 
         query = opts.get("query") or _default_query(disease_id)
@@ -69,14 +75,14 @@ class EvidenceGathererModule(BasePipelineModule):
 
     def report(
         self,
-        results: dict,
+        results: EvidenceGatherResult,
         disease_id: str,
         *,
         provenance: dict | None = None,
     ) -> Path:
         from med_research.pipeline.evidence.gatherer_report import generate_html_report
 
-        return Path(generate_html_report(results, provenance=provenance))
+        return Path(generate_html_report(cast(dict, results), provenance=provenance))
 
     def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
         use_cache = opts.get("use_cache", True)
@@ -99,7 +105,7 @@ class EvidenceGathererModule(BasePipelineModule):
 
 
 @register_module
-class LLMExtractorModule(BasePipelineModule):
+class LLMExtractorModule(BasePipelineModule[EvidenceExtractionResult]):
     """Adapter around ``evidence.extractor`` LLM structured extraction."""
 
     _COVERAGE_MODULE = "evidence_extract"
@@ -115,7 +121,7 @@ class LLMExtractorModule(BasePipelineModule):
     def coverage_inputs(self) -> tuple[str, ...]:
         return ()
 
-    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
+    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> EvidenceExtractionResult:
         from med_research.pipeline.evidence.extractor import extract_all
 
         query = opts.get("query") or _default_query(disease_id)
@@ -136,14 +142,14 @@ class LLMExtractorModule(BasePipelineModule):
 
     def report(
         self,
-        results: dict,
+        results: EvidenceExtractionResult,
         disease_id: str,
         *,
         provenance: dict | None = None,
     ) -> Path:
         from med_research.pipeline.evidence.extractor_report import generate_html_report
 
-        return Path(generate_html_report(results, provenance=provenance))
+        return Path(generate_html_report(cast(dict, results), provenance=provenance))
 
     def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
         use_cache = opts.get("use_cache", True)
@@ -161,7 +167,7 @@ class LLMExtractorModule(BasePipelineModule):
 
 
 @register_module
-class EvidenceMonitorModule(BasePipelineModule):
+class EvidenceMonitorModule(BasePipelineModule[EvidenceMonitorResult]):
     """Adapter around ``evidence.monitor`` snapshot and diff workflows."""
 
     _COVERAGE_MODULE = "evidence_monitor"
@@ -177,7 +183,7 @@ class EvidenceMonitorModule(BasePipelineModule):
     def coverage_inputs(self) -> tuple[str, ...]:
         return ("genes", "pubmed_queries")
 
-    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
+    def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> EvidenceMonitorResult:
         from med_research.pipeline.evidence.monitor import (
             compare_snapshots,
             load_latest_snapshots,
@@ -196,11 +202,13 @@ class EvidenceMonitorModule(BasePipelineModule):
                     sources=sources,
                     max_per_query=max_per_query,
                     disease_id=disease_id,
+                    progress_callback=opts.get("progress_callback"),
                 )
                 curr = take_snapshot(
                     sources=sources,
                     max_per_query=max_per_query,
                     disease_id=disease_id,
+                    progress_callback=opts.get("progress_callback"),
                 )
             else:
                 prev, curr = snapshots[1], snapshots[0]
@@ -215,12 +223,13 @@ class EvidenceMonitorModule(BasePipelineModule):
             sources=sources,
             max_per_query=max_per_query,
             disease_id=disease_id,
+            progress_callback=opts.get("progress_callback"),
         )
         return {"snapshot": snapshot}
 
     def report(
         self,
-        results: dict,
+        results: EvidenceMonitorResult,
         disease_id: str,
         *,
         provenance: dict | None = None,
@@ -230,13 +239,13 @@ class EvidenceMonitorModule(BasePipelineModule):
 
         if "diff" in results:
             report_path = generate_html_report(
-                results["diff"],
-                results["prev_snapshot"],
-                results["curr_snapshot"],
+                cast(dict, results["diff"]),
+                cast(dict, results["prev_snapshot"]),
+                cast(dict, results["curr_snapshot"]),
                 provenance=provenance,
             )
         else:
-            snapshot = results.get("snapshot", results)
+            snapshot = cast(dict, results.get("snapshot", results))
             diff = compare_snapshots(snapshot, snapshot)
             report_path = generate_html_report(
                 diff,

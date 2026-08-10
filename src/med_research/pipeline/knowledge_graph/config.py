@@ -3,6 +3,7 @@
 import json
 import logging
 from pathlib import Path
+from typing import Any, cast
 
 from med_research.diseases.schemas import (
     KG_FILE_MODELS,
@@ -44,7 +45,7 @@ def _discover_diseases() -> dict:
     return diseases
 
 
-def _resolve(disease_id: str = None) -> Path:
+def _resolve(disease_id: str | None = None) -> Path:
     """Resolve the data directory for a disease, defaulting to SLE.
 
     Returns the Path to the disease-specific data subdirectory, e.g.
@@ -70,7 +71,7 @@ def get_disease_profile(disease_id: str = "sle") -> dict:
     return {"id": disease_id, "name": disease_id}
 
 
-def load_disease_json(disease_id: str, filename: str) -> dict:
+def load_disease_json(disease_id: str, filename: str) -> dict[str, Any]:
     """Load a JSON data file for a given disease.
 
     Files with a registered schema (genes/drugs/pathways/relationships/
@@ -85,16 +86,16 @@ def load_disease_json(disease_id: str, filename: str) -> dict:
         )
     model_class = KG_FILE_MODELS.get(filename)
     if model_class is None:
-        return json.loads(path.read_text(encoding="utf-8"))
+        return cast(dict[str, Any], json.loads(path.read_text(encoding="utf-8")))
     return load_validated_json(path, model_class)
 
 
 def load_genes(disease_id: str = "sle") -> GenesFileDict:
-    return load_disease_json(disease_id, "genes.json")
+    return cast(GenesFileDict, load_disease_json(disease_id, "genes.json"))
 
 
 def load_drugs(disease_id: str = "sle") -> DrugsFileDict:
-    return load_disease_json(disease_id, "drugs.json")
+    return cast(DrugsFileDict, load_disease_json(disease_id, "drugs.json"))
 
 
 def load_pathways(disease_id: str = "sle") -> dict:

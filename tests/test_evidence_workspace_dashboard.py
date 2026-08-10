@@ -24,7 +24,7 @@ def test_workspace_task_returns_json_safe_dossier_and_html(monkeypatch):
     dossier = _fixture_dossier()
 
     def fake_run(request, progress_callback=None):
-        progress_callback(42, "fixture progress")
+        progress_callback("fixture progress", 42, 100)
         return dossier
 
     monkeypatch.setattr(
@@ -122,7 +122,10 @@ def test_dashboard_contains_workspace_form_and_async_rendering():
     styles = (root / "css/dashboard.css").read_text(encoding="utf-8")
 
     assert 'id="evidence-workspace"' in index
-    assert 'onsubmit="submitWorkspace(event)"' in index
+    assert 'data-action="workspace-submit"' in index
+    assert 'onsubmit=' not in index
+    assert 'onclick=' not in index
+    assert 'onchange=' not in index
     assert "module === 'workspace'" in script
     assert "'/api/jobs/workspace'" in script
     assert "renderWorkspaceResult" in script
@@ -149,13 +152,26 @@ def test_dashboard_workspace_submission_is_terminal_aware_and_explainable():
     assert "JSON.parse(event.data)" in script
     assert "escapeHtml(e.message)" in script
     assert "data-workspace-action" in script
-    assert 'onclick="openWorkspaceRun' not in script
+    assert "data-workspace-alert-action" in script
+    assert "setupWorkspaceResultActions" in script
+    assert "populateWorkspaceTrendCandidates" in script
+    assert "renderWorkspaceTrendTable" in script
+    assert "downloadWorkspaceTrendCsv" in script
+    assert "candidate_type" in script
+    assert 'onclick=' not in script
+    assert 'onchange=' not in script
+    assert 'onsubmit=' not in script
+    assert "setupDashboardActions" in script
+    assert "data-action" in script
     assert ".workspace-provenance" in styles
     assert ".workspace-ranking-explanation" in styles
+    assert ".workspace-trend-table" in styles
+    assert ".workspace-sr-only" in styles
 
 
 def test_dashboard_workspace_exports_keep_the_exact_task_payload():
     root = Path(__file__).parents[1] / "src/med_research/web/static"
+    index = (root / "index.html").read_text(encoding="utf-8")
     script = (root / "js/dashboard.js").read_text(encoding="utf-8")
 
     assert "window.lastWorkspaceDossier = dossier" in script
@@ -164,9 +180,32 @@ def test_dashboard_workspace_exports_keep_the_exact_task_payload():
     assert "openWorkspaceHtml" in script
     assert "URL.createObjectURL" in script
     assert "sources: selectedSources" in script
+    assert "aria-describedby=\"workspace-submit-status\"" in index
+    assert "aria-label=\"Evidence sources\"" in index
+    assert "role=\"region\" aria-label=\"Workspace result\"" in index
+    assert "id=\"workspace-trend-table\"" in index
+    assert "aria-label=\"Tabular trend data\"" in index
+    assert "data-action=\"workspace-trends-export\"" in script
+    assert "workspace-trend-table" in script
     assert "Research question:" in script
     assert "Sources:" in script
     assert "sources: selectedSources" in script
+
+
+def test_dashboard_csp_mode_adds_an_enforcing_policy(monkeypatch):
+    from med_research.web import middleware
+    from med_research.web.main import app
+
+    monkeypatch.setattr(middleware, "DASHBOARD_CSP_MODE", "enforce")
+    with TestClient(app) as client:
+        response = client.get("/")
+
+    assert response.status_code == 200
+    policy = response.headers["content-security-policy"]
+    assert "script-src 'self'" in policy
+    assert "script-src-attr 'none'" in policy
+    assert "ws:" in policy
+    assert "unsafe-eval" not in policy
 
 
 def test_workspace_task_rejects_incomplete_disease_configuration(monkeypatch):

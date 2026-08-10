@@ -4,6 +4,7 @@ HTML report generator for Evidence Monitor diff results.
 
 from datetime import datetime
 from pathlib import Path
+from typing import Any
 
 from med_research.pipeline.reporting import disease_context, render_report
 
@@ -144,7 +145,7 @@ def generate_html_report(
     return str(out_path)
 
 
-def escape_html(text) -> str:
+def escape_html(text: Any) -> str:
     """Escape HTML special characters."""
     if not text:
         return ""

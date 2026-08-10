@@ -1,8 +1,7 @@
 """Registry bridge for web services and Celery tasks.
 
-Dispatches pipeline work through ``get_module(module_id).run()`` / ``.report()``
-or the unified ``execute_module()`` dispatch primitive instead of duplicating
-engine imports in each service module.
+Dispatches pipeline work through the unified registry-backed execution and
+reporting primitives instead of duplicating engine imports in each service.
 
 Progress reporting uses a standard ``(step, current, total)`` callback that
 bridges to the legacy ``(percent, message)`` format consumed by Celery and
@@ -22,13 +21,10 @@ from med_research.pipeline.dispatch import (
     LegacyProgress,
     ProgressReporter,
     StandardProgress,
-    _wire_progress_callback,
     standard_to_legacy,
 )
-from med_research.pipeline.dispatch import (
-    execute_module as _execute_module,
-)
-from med_research.pipeline.registry import get_module, list_modules
+from med_research.pipeline.gateway import pipeline_gateway
+from med_research.pipeline.registry import list_modules, module_job_aliases
 from med_research.web.config import USE_CACHE
 
 # Re-export dispatch progress helpers for web services and tests.
@@ -45,7 +41,6 @@ __all__ = [
     "require_runnable_coverage",
     "resolve_module_id",
     "run_all_pipeline",
-    "run_module",
     "run_module_job",
     "standard_to_legacy",
 ]
@@ -71,41 +66,9 @@ _RUN_ALL_FULL_STEPS: list[tuple[str, str | None]] = [
 ]
 _BIOINFORMATICS_MODULE_IDS = ("gwas", "enrichment", "ppi")
 
-# Celery job route names → registry module_id (legacy aliases + module_ids).
-JOB_MODULE_IDS: dict[str, str] = {
-    "gwas": "gwas",
-    "enrichment": "enrichment",
-    "ppi": "ppi",
-    "literature": "literature_mining",
-    "screening": "virtual_screening",
-    "trials": "clinical_trials",
-    "ml": "ml_predictor",
-    "synergy": "drug_synergy",
-    "safety": "adverse_events",
-    "kg": "knowledge_graph",
-    "knowledge_graph": "knowledge_graph",
-    "repurpose": "drug_repurposing",
-    "drug_repurposing": "drug_repurposing",
-    "network": "network_pharmacology",
-    "network_pharmacology": "network_pharmacology",
-    "expression": "gene_expression",
-    "gene_expression": "gene_expression",
-    "cart": "car_t_predictor",
-    "car_t_predictor": "car_t_predictor",
-    "biomarker": "biomarker_discovery",
-    "biomarker_discovery": "biomarker_discovery",
-    "cross_disease": "cross_disease",
-    "semantic": "semantic_search",
-    "semantic_search": "semantic_search",
-    "evidence": "evidence_gather",
-    "evidence_gather": "evidence_gather",
-    "extractor": "llm_extractor",
-    "llm_extractor": "llm_extractor",
-    "monitor": "evidence_monitor",
-    "evidence_monitor": "evidence_monitor",
-    "workspace": "evidence_workspace",
-    "evidence_workspace": "evidence_workspace",
-}
+# Compatibility export for existing Celery/web callers. The mapping is
+# generated from the same registry catalog used by the system endpoint.
+JOB_MODULE_IDS = module_job_aliases()
 
 OptsMapper = Callable[[dict[str, Any], str], dict[str, Any]]
 
@@ -120,6 +83,7 @@ def _map_gwas_opts(opts: dict[str, Any], _disease_id: str) -> dict[str, Any]:
     return {
         "max_studies": opts.get("max_studies", 30),
         "use_cache": _use_cache_from_opts(opts),
+        "resolve_snps": opts.get("resolve_snps", True),
     }
 
 
@@ -133,16 +97,27 @@ def _map_enrichment_opts(opts: dict[str, Any], _disease_id: str) -> dict[str, An
 def _map_ppi_opts(opts: dict[str, Any], _disease_id: str) -> dict[str, Any]:
     return {
         "confidence": opts.get("confidence", 0.4),
+        "expand_neighbors": opts.get("expand_neighbors", 0),
         "use_cache": _use_cache_from_opts(opts),
     }
 
 
 def _map_literature_opts(opts: dict[str, Any], _disease_id: str) -> dict[str, Any]:
-    return {
+    mapped: dict[str, Any] = {
         "max_per_query": opts.get("max_articles", 30),
         "targeted_candidates": opts.get("targeted", False),
+        "extract_content": opts.get("extract_content", False),
         "use_cache": _use_cache_from_opts(opts),
     }
+    if opts.get("query"):
+        mapped["query"] = opts["query"]
+    if opts.get("sources"):
+        mapped["sources"] = [item.strip() for item in opts["sources"].split(",")]
+    if opts.get("queries"):
+        mapped["queries"] = [item.strip() for item in opts["queries"].split(",")]
+    if opts.get("email"):
+        mapped["email"] = opts["email"]
+    return mapped
 
 
 def _map_screening_opts(opts: dict[str, Any], _disease_id: str) -> dict[str, Any]:
@@ -152,6 +127,8 @@ def _map_screening_opts(opts: dict[str, Any], _disease_id: str) -> dict[str, Any
     }
     if opts.get("gene_id"):
         mapped["gene"] = opts["gene_id"]
+    if opts.get("operation"):
+        mapped["operation"] = opts["operation"]
     return mapped
 
 
@@ -176,13 +153,14 @@ def _map_ml_opts(opts: dict[str, Any], _disease_id: str) -> dict[str, Any]:
 
 
 def _map_synergy_opts(opts: dict[str, Any], _disease_id: str) -> dict[str, Any]:
-    return {"save": True}
+    return {"save": opts.get("save", True)}
 
 
 def _map_repurposing_opts(opts: dict[str, Any], _disease_id: str) -> dict[str, Any]:
     mapped: dict[str, Any] = {}
-    if opts.get("gene_id"):
-        mapped["gene_id"] = opts["gene_id"]
+    for key in ("gene_id", "untargeted_only", "save"):
+        if key in opts:
+            mapped[key] = opts[key]
     return mapped
 
 
@@ -194,11 +172,13 @@ def _map_semantic_opts(opts: dict[str, Any], _disease_id: str) -> dict[str, Any]
 
 
 def _map_evidence_gather_opts(opts: dict[str, Any], _disease_id: str) -> dict[str, Any]:
+    sources = opts.get("sources") or ""
     return {
         "query": opts.get("query", ""),
-        "sources": opts.get("sources") or [],
+        "sources": [item.strip() for item in sources.split(",") if item.strip()],
         "max_per_source": opts.get("max_per_source", 20),
         "use_cache": opts.get("use_cache", True),
+        "cross_reference": opts.get("cross_reference", True),
     }
 
 
@@ -216,9 +196,11 @@ def _map_llm_extractor_opts(opts: dict[str, Any], _disease_id: str) -> dict[str,
 
 
 def _map_evidence_monitor_opts(opts: dict[str, Any], _disease_id: str) -> dict[str, Any]:
+    sources = opts.get("sources") or ""
     return {
-        "sources": opts.get("sources") or [],
+        "sources": [item.strip() for item in sources.split(",") if item.strip()],
         "max_per_query": opts.get("max_per_query", 10),
+        "diff": opts.get("diff", False),
     }
 
 
@@ -276,9 +258,9 @@ def execute_module(
     export_html: bool = False,
     progress_callback: LegacyProgress | StandardProgress | None = None,
     **opts: Any,
-) -> PipelineRunResult:
+) -> PipelineRunResult[Any]:
     """Run a registry module via the unified dispatch primitive."""
-    return _execute_module(
+    return pipeline_gateway.execute(
         module_id,
         disease_id,
         export_html=export_html,
@@ -305,7 +287,7 @@ def require_runnable_coverage(coverage: ModuleCoverage, module_id: str = "") -> 
     raise ModuleNotAvailableError(detail)
 
 
-def require_module_data(result: PipelineRunResult, module_id: str) -> Any:
+def require_module_data(result: PipelineRunResult[Any], module_id: str) -> Any:
     """Return dispatch data or raise :class:`ModuleNotAvailableError`."""
     if result.success:
         return result.data
@@ -336,19 +318,6 @@ def dispatch_sync_module(
     return require_module_data(result, module_id)
 
 
-def run_module(
-    module_id: str,
-    disease_id: str,
-    *,
-    progress_callback: LegacyProgress | StandardProgress | None = None,
-    **opts: Any,
-) -> Any:
-    """Run a registry-backed module and return raw engine output."""
-    module = get_module(module_id)
-    run_opts = dict(opts)
-    _wire_progress_callback(progress_callback, run_opts)
-    return module.run(disease_id, **run_opts)
-
 
 def report_module(
     module_id: str,
@@ -356,10 +325,8 @@ def report_module(
     disease_id: str,
     **provenance_opts: Any,
 ) -> Path:
-    """Render an HTML report via the registry adapter."""
-    module = get_module(module_id)
-    provenance = module.build_provenance(disease_id, **provenance_opts)
-    return module.report(results, disease_id, provenance=provenance)
+    """Render an HTML report through the centralized dispatch path."""
+    return pipeline_gateway.report(module_id, results, disease_id, **provenance_opts)
 
 
 def _kg_job_result(data: Any) -> dict[str, Any]:
@@ -423,7 +390,7 @@ def _run_all_module_opts(module_id: str, disease_id: str, *, no_cache: bool) -> 
 def _finalize_run_all_module(
     module_id: str,
     disease_id: str,
-    result: PipelineRunResult,
+    result: PipelineRunResult[Any],
     report_paths: dict[str, str],
 ) -> None:
     if result.report_path is not None:

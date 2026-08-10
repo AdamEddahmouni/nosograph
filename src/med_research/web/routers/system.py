@@ -2,9 +2,11 @@
 
 from datetime import datetime
 from importlib.metadata import version
+from typing import Any
 
 from fastapi import APIRouter, Query
 
+from med_research.pipeline.gateway import pipeline_gateway
 from med_research.web.dependencies import (
     get_candidates,
     get_kg_drugs,
@@ -16,6 +18,7 @@ from med_research.web.models import (
     DiseaseInfo,
     DiseasesResponse,
     HealthResponse,
+    PipelineModulesResponse,
     PlatformStats,
 )
 
@@ -23,7 +26,7 @@ router = APIRouter(tags=["System"])
 
 
 @router.get("/api/health", response_model=HealthResponse)
-async def health():
+async def health() -> dict[str, Any]:
     """Health check endpoint."""
     return {
         "status": "ok",
@@ -33,7 +36,7 @@ async def health():
 
 
 @router.get("/api/system/diseases", response_model=DiseasesResponse)
-async def disease_registry():
+async def disease_registry() -> DiseasesResponse:
     """List all available diseases (fresh filesystem scan).
 
     Scans the diseases/ tree on every request so diseases scaffolded via
@@ -42,9 +45,13 @@ async def disease_registry():
     import json
 
     from med_research.diseases.base import Disease
-    from med_research.diseases.coverage import coverage_for_disease, module_coverage
+    from med_research.diseases.coverage import coverage_for_disease
     from med_research.diseases.coverage_report import DEFAULT_MODULE_INPUTS
     from med_research.exceptions import DataValidationError
+    catalog = pipeline_gateway.catalog()
+    coverage_module_ids = {
+        entry["coverage_module"]: entry["module_id"] for entry in catalog
+    }
 
     diseases = []
     for disease_id in Disease.list_all():
@@ -82,12 +89,11 @@ async def disease_registry():
                 coverage={
                     "core": coverage_for_disease(disease_id).to_dict(),
                     "modules": {
-                        module: module_coverage(
+                        module: pipeline_gateway.coverage(
+                            coverage_module_ids[module],
                             disease_id,
-                            module,
-                            required_inputs=inputs,
                         ).to_dict()
-                        for module, inputs in DEFAULT_MODULE_INPUTS.items()
+                        for module in DEFAULT_MODULE_INPUTS
                     },
                 },
             )
@@ -96,29 +102,15 @@ async def disease_registry():
     return DiseasesResponse(count=len(diseases), diseases=diseases)
 
 
-@router.get("/api/system/modules")
+@router.get("/api/system/modules", response_model=PipelineModulesResponse)
 async def pipeline_modules(
     disease: str = Query("sle", description="Disease ID for per-module coverage metadata"),
-):
+) -> dict[str, Any]:
     """List registered pipeline modules with per-disease coverage metadata."""
-    from med_research.diseases.coverage import module_coverage
-    from med_research.pipeline.registry import get_module, list_modules
-
     modules = []
-    for module_id in list_modules():
-        adapter = get_module(module_id)
-        coverage_module = getattr(adapter, "_COVERAGE_MODULE", module_id)
-        coverage = module_coverage(
-            disease,
-            coverage_module,
-            adapter.coverage_inputs(),
-        )
-        modules.append({
-            "module_id": module_id,
-            "depends_on": list(adapter.depends_on),
-            "coverage_inputs": list(adapter.coverage_inputs()),
-            "coverage": coverage.to_dict(),
-        })
+    for metadata in pipeline_gateway.catalog():
+        coverage = pipeline_gateway.coverage(metadata["module_id"], disease)
+        modules.append({**metadata, "coverage": coverage.to_dict()})
 
     return {
         "count": len(modules),
@@ -128,7 +120,7 @@ async def pipeline_modules(
 
 
 @router.get("/api/system/cache/stats")
-async def cache_stats():
+async def cache_stats() -> dict[str, Any]:
     """Return cache namespace statistics (auth-protected when API_KEY is set)."""
     from med_research.cache import CacheManager
 
@@ -137,7 +129,7 @@ async def cache_stats():
 
 @router.delete("/api/system/cache")
 @router.delete("/api/system/cache/{namespace}")
-async def cache_clear(namespace: str | None = None):
+async def cache_clear(namespace: str | None = None) -> dict[str, Any]:
     """Clear one cache namespace or all namespaces (auth-protected when API_KEY is set)."""
     from med_research.cache import CacheManager
 
@@ -148,7 +140,7 @@ async def cache_clear(namespace: str | None = None):
 @router.get("/api/stats", response_model=PlatformStats)
 async def platform_stats(
     disease: str = Query("sle", description="Disease ID to compute stats for"),
-):
+) -> dict[str, Any]:
     """Get platform statistics for a specific disease."""
     G = get_knowledge_graph(disease)
     genes = get_kg_genes(disease)

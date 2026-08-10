@@ -14,6 +14,7 @@ import base64
 import io
 from datetime import datetime
 from pathlib import Path
+from typing import Any, Mapping
 
 from med_research.pipeline.reporting import disease_context, render_report
 
@@ -25,11 +26,11 @@ try:
     MPL_AVAILABLE = True
 except ImportError:
     MPL_AVAILABLE = False
-    np = None
+    np: Any = None  # type: ignore[no-redef]
 
 
 def generate_screening_report(
-    results: dict, disease_id: str = "sle", *, provenance: dict | None = None
+    results: Mapping[str, Any], disease_id: str = "sle", *, provenance: dict | None = None
 ) -> str:
     """Generate an HTML report from virtual screening results."""
 

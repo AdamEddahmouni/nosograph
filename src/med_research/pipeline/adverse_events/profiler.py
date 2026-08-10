@@ -24,10 +24,11 @@ logger = logging.getLogger(__name__)
 # Ensure project root is importable
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from med_research.pipeline.progress import StandardProgress, _tick  # noqa: E402
+from med_research.pipeline.progress import StandardProgress, _tick, cli_progress  # noqa: E402
+from med_research.pipeline.results import AdverseEventScore  # noqa: E402
 
 if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # type: ignore[union-attr]
 
 DATA_DIR = Path(__file__).parent / "data"
 PROFILES_PATH = DATA_DIR / "profiles.json"
@@ -811,7 +812,7 @@ def score_lupus_overlap(profile: dict, disease_id: str = "sle") -> float:
 def score_severity_burden(profile: dict) -> float:
     """Convert severity burden (1-10 raw) to 0-10 score (higher = safer)."""
     raw = profile.get("severity_burden", 5)
-    return 10.0 - raw
+    return 10.0 - float(raw)
 
 
 def score_chronic_safety(profile: dict) -> float:
@@ -890,7 +891,9 @@ def score_dil_risk(profile: dict, disease_id: str = "sle") -> float:
     return score_disease_specific_risk(profile, disease_id)
 
 
-def compute_adverse_event_score(profile: dict, disease_id: str = "sle") -> dict:
+def compute_adverse_event_score(
+    profile: dict, disease_id: str = "sle"
+) -> AdverseEventScore:
     """Compute the adverse event safety score for a single drug.
 
     Returns dict with individual dimension scores and composite score.
@@ -944,7 +947,7 @@ def compute_adverse_event_score(profile: dict, disease_id: str = "sle") -> dict:
 def score_all_drugs(
     progress_callback: StandardProgress | None = None,
     disease_id: str = "sle",
-) -> list:
+) -> list[AdverseEventScore]:
     """Score all drugs and return sorted list by composite safety score.
 
     Args:
@@ -1042,7 +1045,7 @@ def get_safety_summary(disease_id: str = "sle", results: list | None = None) -> 
     }
 
 
-def print_analysis(results: list):
+def print_analysis(results: list) -> None:
     """Print summary analysis."""
     logger.info("\n" + "=" * 75)
     logger.info("🛡️  ADVERSE EVENT PROFILING SUMMARY")
@@ -1096,7 +1099,7 @@ def main():
             return 1
         return 0
 
-    results = score_all_drugs(disease_id=args.disease)
+    results = score_all_drugs(disease_id=args.disease, progress_callback=cli_progress)
     if not results:
         logger.warning(f"Safety analysis is unavailable for {args.disease}.")
         return 1

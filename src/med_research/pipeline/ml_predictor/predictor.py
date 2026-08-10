@@ -24,16 +24,18 @@ import json
 import os
 import sys
 from pathlib import Path
+from typing import Any, cast
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # type: ignore[union-attr]
 
 import logging
 
 from med_research.pipeline.knowledge_graph.builder import build_graph
-from med_research.pipeline.progress import StandardProgress, _tick
+from med_research.pipeline.progress import StandardProgress, _tick, cli_progress
+from med_research.pipeline.results import MlPrediction, MlPredictionResult
 
 logger = logging.getLogger(__name__)
 DATA_DIR = Path(__file__).parent / "data"
@@ -124,7 +126,7 @@ _TF_KEYWORDS = ["transcription factor", "regulatory factor", "stat", "irf", "ikz
 
 
 def extract_features(
-    G,
+    G: Any,
     progress_callback: StandardProgress | None = None,
 ) -> tuple:
     """Extract features from the knowledge graph for all gene nodes.
@@ -203,7 +205,7 @@ def extract_features(
     return np.array(features, dtype=float), gene_ids, labels
 
 
-def _count_pathways(G, gene_node: str) -> int:
+def _count_pathways(G: Any, gene_node: str) -> int:
     """Count how many pathway nodes this gene participates in."""
     count = 0
     for _, v, d in G.edges(gene_node, data=True):
@@ -233,10 +235,10 @@ def nx_betweenness(G):
 
 
 def train_and_predict(
-    G,
+    G: Any,
     top_n: int = 15,
     progress_callback: StandardProgress | None = None,
-) -> dict:
+) -> MlPredictionResult:
     """Train XGBoost and predict druggability scores for all genes.
 
     Returns:
@@ -301,7 +303,7 @@ def train_and_predict(
     importance = dict(sorted(importance.items(), key=lambda x: x[1], reverse=True))
 
     # Build results
-    predictions = []
+    predictions: list[MlPrediction] = []
     for i, gene_id in enumerate(gene_ids):
         gene_data = G.nodes[gene_id]
         is_targeted = labels[i][0]
@@ -323,7 +325,7 @@ def train_and_predict(
 
     # SHAP analysis
     shap_values = None
-    shap_summary = []
+    shap_summary: list[dict[str, Any]] = []
     if SHAP_AVAILABLE and hasattr(model, "get_booster"):
         logger.info("🔄 Computing SHAP values...")
         try:
@@ -367,7 +369,7 @@ def train_and_predict(
 # ── Summary & CLI ────────────────────────────────────────────────────
 
 
-def print_summary(results: dict):
+def print_summary(results: MlPredictionResult) -> None:
     """Print ML target prediction results."""
     metrics = results.get("model_metrics", {})
 
@@ -449,10 +451,10 @@ def main():
         logger.warning("   Running in feature-engineering-only mode...")
 
     logger.info("Building knowledge graph...")
-    G = build_graph(args.disease)
+    G = build_graph(args.disease, progress_callback=cli_progress)
     logger.info(f"   Graph: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
 
-    results = train_and_predict(G, top_n=args.top)
+    results = train_and_predict(G, top_n=args.top, progress_callback=cli_progress)
 
     if "error" in results:
         logger.error(f"❌ {results['error']}")
@@ -488,7 +490,7 @@ def main():
             scoring={"ranking": "druggability_score"},
         )
         report_path = generate_ml_report(
-            results, disease_id=args.disease, provenance=provenance
+            cast(dict, results), disease_id=args.disease, provenance=provenance
         )
         logger.info(f"✅ HTML report generated: {report_path}")
 
