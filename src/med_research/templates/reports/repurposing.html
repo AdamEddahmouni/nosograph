@@ -1,9 +1,9 @@
 {% extends "base.html" %}
-{% block title %}{% if ctx_disease == 'Lupus (SLE)' %}Lupus{% else %}{{ ctx_disease }}{% endif %} Drug Repurposing Report{% endblock %}
+{% block title %}{{ ctx_report_name }} Drug Repurposing Report{% endblock %}
 
-{% block hero_title %}🧬 {% if ctx_disease == 'Lupus (SLE)' %}Lupus{% else %}{{ ctx_disease }}{% endif %} Drug Repurposing Report{% endblock %}
+{% block hero_title %}🧬 {{ ctx_report_name }} Drug Repurposing Report{% endblock %}
 {% block hero_subtitle %}
-    AI-Driven Analysis of {{ n_candidates }} Repurposing Candidates Across {{ n_genes }} Untargeted {% if ctx_disease == 'Lupus (SLE)' %}Lupus{% else %}{{ ctx_disease }}{% endif %} Genes
+    AI-Driven Analysis of {{ n_candidates }} Repurposing Candidates Across {{ n_genes }} Untargeted {{ ctx_report_name }} Genes
 {% endblock %}
 
 {% set tier_color = {"Tier 1": "#dc2626", "Tier 2": "#ea580c", "Tier 3": "#ca8a04", "Tier 4": "#16a34a"} %}
@@ -97,7 +97,7 @@
     </div>
     <div class="stat-card">
         <div class="stat-value" style="color:#c084fc;">{{ n_genes }}</div>
-        <div class="stat-label">Untargeted {% if ctx_disease == 'Lupus (SLE)' %}Lupus{% else %}{{ ctx_disease }}{% endif %} Genes</div>
+        <div class="stat-label">Untargeted {{ ctx_report_name }} Genes</div>
     </div>
 </div>
 

@@ -1,5 +1,4 @@
-"""
-Unit tests for the Lupus Bioinformatics Report Generator.
+"""Unit tests for the disease-aware bioinformatics report generator.
 
 Tests cover:
   - escape_html(): HTML entity escaping

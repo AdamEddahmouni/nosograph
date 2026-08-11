@@ -1,5 +1,4 @@
-"""
-Unit tests for the Lupus Drug Repurposing Report Generator.
+"""Unit tests for the disease-aware drug repurposing report generator.
 
 Tests cover:
   - escape_html(): HTML entity escaping

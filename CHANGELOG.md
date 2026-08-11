@@ -1,5 +1,28 @@
 # Changelog
 
+## [Per-disease expression consensus curation] — 2026-08-11
+
+### Added
+
+- Per-disease curated consensus gene lists in `geo.py` for sle, ra, ibd, ms, ss, ssc, and t1d (`CURATED_CONSENSUS_DISEASES`).
+- `fetch_expression_data()` explicit `not_implemented` contract — live GEO matrix download is not supported; only cached matrices are used.
+- `CONTRIBUTING.md` — contributor guide covering validate/coverage workflow and local development.
+- `docs/disease-curation.md` — disease curation playbook for expression consensus and coverage expectations.
+
+### Changed
+
+- Correlator and signature modules load per-disease signatures; uncurated diseases no longer silently inherit SLE consensus genes.
+- Report templates and bioinformatics provenance use disease-neutral terminology and coverage wording.
+- CLI typing cleanup (`PipelineRunResult`, typed `_dispatch`, safer `_default_pubmed_query`); web lifespan return type.
+
+### Verification
+
+- `python -m pytest tests/test_report_neutral_terminology.py tests/test_gene_expression.py -q`
+- `python -m pytest tests/ -m "not slow and not integration" -q`
+- `python -m med_research.cli disease validate --all --strict`
+
+---
+
 ## [Typed result contracts and pipeline gateway] — 2026-08-10
 
 ### Added
@@ -867,16 +890,7 @@ Add embedding-based semantic search over cached PubMed abstracts using sentence-
 
 ---
 
-## [Future] Planned Features — Roadmap
-The following features are documented for future implementation:
+## Remaining ideas (not scheduled)
 
-### Adverse Event Profiling
-- New scoring dimension in drug repurposing engine using FAERS/SIDER adverse event data
-- Scores each candidate on known adverse events vs lupus symptom overlap
-- Updates `drug_repurposing/engine.py` with a `safety_profile_score` dimension
-- Adds `GET /api/repurpose/safety` endpoint with per-drug adverse event profiles
-
-### Interactive Radar Charts for Scoring
-- Enhances drug repurposing and virtual screening reports with interactive radar/spider charts
-- Uses Chart.js for per-candidate score breakdown visualization
-- Updates `report.py` in both modules + adds Chart.js CDN dependency
+- Real GEO expression matrix download and ingestion (beyond curated signatures)
+- Deeper AutoDock Vina integration for virtual screening beyond property-based heuristics

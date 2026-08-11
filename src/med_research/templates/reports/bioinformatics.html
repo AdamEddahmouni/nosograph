@@ -1,7 +1,7 @@
 {% extends "base.html" %}
-{% block title %}{% if ctx_disease == 'Lupus (SLE)' %}Lupus{% else %}{{ ctx_disease }}{% endif %} Bioinformatics Report{% endblock %}
+{% block title %}{{ ctx_report_name }} Bioinformatics Report{% endblock %}
 
-{% block hero_title %}🔬 {% if ctx_disease == 'Lupus (SLE)' %}Lupus{% else %}{{ ctx_disease }}{% endif %} Bioinformatics Report{% endblock %}
+{% block hero_title %}🔬 {{ ctx_report_name }} Bioinformatics Report{% endblock %}
 {% block hero_subtitle %}
     Integrative Analysis: Pathway Enrichment · Protein-Protein Interactions · GWAS Annotation
 {% endblock %}

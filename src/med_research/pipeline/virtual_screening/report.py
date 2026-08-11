@@ -1,5 +1,4 @@
-"""
-Lupus Virtual Screening Report Generator
+"""Disease-aware virtual screening HTML report generator.
 
 Generates a standalone HTML report showing:
   - Screening overview and statistics (incl. real docking counts)
@@ -352,7 +351,14 @@ def generate_screening_report(
             "ctx_20": (
                 "When active, the top 5 property-scored compounds per target are re-scored using physics-based molecular docking with curated PDB structures and defined binding site grids. Vina binding free energy (kcal/mol) is normalized to the 0–10 binding score using a linear mapping: −11 kcal/mol → 10, −5 kcal/mol → 0."
                 if has_real_docking
-                else "Install AutoDock Vina and provide protein PDB structures in <code>virtual_screening/targets/</code> for physics-based molecular docking. Current screening uses property-based scoring which does not require external binaries."
+                else (
+                    "Curated protein PDB structures for physics-based AutoDock Vina docking "
+                    "are not yet available for this disease module. Binding scores use "
+                    "property-based estimates (MW, LogP, hydrogen bonding, TPSA) that do "
+                    "not require external binaries."
+                    if context["id"] != "sle"
+                    else "Install AutoDock Vina and provide protein PDB structures in <code>virtual_screening/targets/</code> for physics-based molecular docking. Current screening uses property-based scoring which does not require external binaries."
+                )
             ),
             "ctx_21": "Real docking (AutoDock Vina) + " if has_real_docking else "",
             "ctx_22": top5_json,
@@ -365,7 +371,9 @@ def generate_screening_report(
         f"{escape_html(strategy_id)} · fingerprint {escape_html(strategy_fingerprint[:16])}… "
         f"<br><span>Coverage: {escape_html(coverage.get('level', 'unknown'))} / "
         f"{escape_html(coverage.get('status', 'unknown'))}</span> "
-        f"<br><span>Limitations: {escape_html('; '.join(strategy_limitations))}</span></section>"
+        f"<br><span>Limitations: {escape_html('; '.join(strategy_limitations))}</span>"
+        f"{_docking_scope_note(context['id'], context['name'])}"
+        f"</section>"
         if strategy_id else ""
     )
     if strategy_note:
@@ -476,6 +484,17 @@ def _estimate_property_score(compound: dict) -> float:
         if tpsa < 140:
             score += 1.0
         return round(max(0.0, min(10.0, score)), 1)
+
+
+def _docking_scope_note(disease_id: str, disease_name: str) -> str:
+    """Clarify that Vina PDB docking is not available for non-primary target sets."""
+    if disease_id == "sle":
+        return ""
+    return (
+        "<br><span><strong>Docking scope:</strong> Physics-based AutoDock Vina docking "
+        "requires curated PDB target structures, which are not yet available for "
+        f"{escape_html(disease_name)}. Property-based binding estimates are used instead.</span>"
+    )
 
 
 def escape_html(text: str) -> str:

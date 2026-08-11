@@ -1,14 +1,14 @@
 """
 Gene Expression Correlation Engine (Connectivity Map Approach)
 
-Compares drug mechanisms against curated SLE gene expression signatures
+Compares drug mechanisms against curated disease gene expression signatures
 to score each drug's potential to reverse disease-associated dysregulation.
 
 Scoring Dimensions (each 0-10, weighted):
   1. Signature Reversal (35%): Counteracts up/down-regulated disease genes?
-  2. Target-Disease Gene Overlap (25%): Drug targets in lupus pathways?
-  3. Cell Type Specificity (20%): Active in SLE-relevant cell types?
-  4. Expression Evidence (15%): Well-studied in SLE expression datasets?
+  2. Target-Disease Gene Overlap (25%): Drug targets in disease pathways?
+  3. Cell Type Specificity (20%): Active in disease-relevant cell types?
+  4. Expression Evidence (15%): Well-studied in disease expression datasets?
   5. Directionality (5%): Drug's effect directionally correct?
 
 Usage:
@@ -49,31 +49,52 @@ _DEFAULT_SIGNATURES: dict[str, dict[str, Any]] = {}
 def _get_default_signature(disease_id: str = "sle") -> dict[str, Any]:
     """Return the curated fallback expression signature for a disease.
 
-    Curated signatures are only curated for SLE; other diseases fall back
-    to the SLE signature as a documented stand-in until GEO data exists.
+    Each disease uses its own curated consensus gene list from ``geo.py``.
+    Diseases without curated lists return an empty signature with
+    ``coverage: not_curated`` rather than reusing another disease's genes.
     """
     global _DEFAULT_SIGNATURES
     if disease_id not in _DEFAULT_SIGNATURES:
         try:
             from med_research.pipeline.gene_expression.signature import get_signature
             sig = get_signature(disease=disease_id, source="curated")
-            _up = {k: v["fold_change"] for k, v in sig.get("upregulated", {}).items()}
-            _down = {k: v["fold_change"] for k, v in sig.get("downregulated", {}).items()}
-            _DEFAULT_SIGNATURES[disease_id] = {"upregulated": _up, "downregulated": _down,
-                                  "source": sig.get("source", "curated"),
-                                  "num_studies_used": sig.get("num_studies_used", 0),
-                                  "disease": disease_id}
+            coverage = sig.get("coverage", "curated")
+            up = sig.get("upregulated", {})
+            down = sig.get("downregulated", {})
+            if coverage == "not_curated" or (not up and not down):
+                _DEFAULT_SIGNATURES[disease_id] = {
+                    "upregulated": {},
+                    "downregulated": {},
+                    "source": sig.get("source", "curated_consensus"),
+                    "num_studies_used": 0,
+                    "disease": disease_id,
+                    "coverage": "not_curated",
+                }
+            else:
+                _up = {k: v["fold_change"] for k, v in up.items()}
+                _down = {k: v["fold_change"] for k, v in down.items()}
+                _DEFAULT_SIGNATURES[disease_id] = {
+                    "upregulated": _up,
+                    "downregulated": _down,
+                    "source": sig.get("source", "curated_consensus"),
+                    "num_studies_used": sig.get("num_studies_used", 0),
+                    "disease": disease_id,
+                    "coverage": coverage,
+                }
         except (KeyError, TypeError, AttributeError, ImportError, ValueError) as exc:
             logger.warning(
-                "Curated signature load failed for %s, using SLE fallback: %s",
+                "Curated signature load failed for %s: %s",
                 disease_id,
                 exc,
             )
-            _DEFAULT_SIGNATURES[disease_id] = {"upregulated": SLE_UPREGULATED,
-                                  "downregulated": SLE_DOWNREGULATED,
-                                  "source": "curated_literature",
-                                  "num_studies_used": 0,
-                                  "disease": disease_id}
+            _DEFAULT_SIGNATURES[disease_id] = {
+                "upregulated": {},
+                "downregulated": {},
+                "source": "curated_consensus",
+                "num_studies_used": 0,
+                "disease": disease_id,
+                "coverage": "not_curated",
+            }
     return _DEFAULT_SIGNATURES[disease_id]
 
 
@@ -557,15 +578,27 @@ def compute_all_correlations(
 # ── CLI ──────────────────────────────────────────────────────────────────
 
 
-def analyze(results: list, signature: dict[str, Any] | None = None) -> None:
+def analyze(
+    results: list,
+    signature: dict[str, Any] | None = None,
+    disease_id: str = "sle",
+) -> None:
     """Print statistical summary."""
-    up_genes, down_genes, sig_source, num_studies = _normalize_signature(signature)
+    up_genes, down_genes, sig_source, num_studies = _normalize_signature(
+        signature, disease_id
+    )
+    try:
+        from med_research.diseases.base import Disease
+
+        disease_label = Disease(disease_id).get_display_name()
+    except (ValueError, OSError, KeyError, TypeError):
+        disease_label = disease_id
 
     logger.info("\n" + "=" * 75)
     logger.info("🧬 GENE EXPRESSION CORRELATION ANALYSIS")
     logger.info("=" * 75)
 
-    logger.info("\n  SLE Expression Signature:")
+    logger.info(f"\n  {disease_label} Expression Signature:")
     logger.info(f"    Source:               {sig_source}")
     logger.info(f"    GEO Studies:          {num_studies}")
     logger.info(f"    Upregulated genes:    {len(up_genes)}")
@@ -611,7 +644,7 @@ def print_top_correlations(results: list, top_n: int = 15) -> None:
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Gene Expression Correlation — Connectivity Map approach for lupus"
+        description="Gene Expression Correlation — Connectivity Map approach"
     )
     parser.add_argument("--top", type=int, default=15, help="Number of top drugs to display")
     parser.add_argument("--disease", "-d", default="sle", help="Disease ID (default: sle)")
@@ -641,14 +674,17 @@ def main():
                                        tissue=args.tissue,
                                        disease_id=args.disease,
                                        progress_callback=cli_progress)
-    analyze(results, signature if signature else None)
+    resolved_signature = signature or _get_default_signature(args.disease)
+    analyze(results, resolved_signature, disease_id=args.disease)
     print_top_correlations(results, args.top)
 
     if args.export_html:
         from med_research.pipeline.gene_expression.report import generate_html_report
         from med_research.pipeline.provenance import build_provenance
 
-        _, _, sig_source, num_studies = _normalize_signature(signature)
+        _, _, sig_source, num_studies = _normalize_signature(
+            resolved_signature, args.disease
+        )
         provenance = build_provenance(
             disease_id=args.disease,
             module="gene_expression",

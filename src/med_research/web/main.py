@@ -2,11 +2,12 @@
 
 import logging
 import sys
+from collections.abc import AsyncIterator
 from contextlib import asynccontextmanager
 from pathlib import Path
 
 if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # type: ignore[union-attr]
 
 # Ensure project root is importable
 sys.path.insert(0, str(Path(__file__).parent.parent))
@@ -43,7 +44,7 @@ logger = logging.getLogger(__name__)
 # ── Lifespan (startup / shutdown) ─────────────────────────────────────────
 
 @asynccontextmanager
-async def lifespan(app: FastAPI):
+async def lifespan(app: FastAPI) -> AsyncIterator[None]:
     """Pre-load the knowledge graph on startup for faster first request."""
     setup_logging(level=logging.DEBUG if DEBUG else logging.INFO)
     import os

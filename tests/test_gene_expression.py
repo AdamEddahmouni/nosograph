@@ -6,6 +6,8 @@ import json
 import sys
 from pathlib import Path
 
+import pytest
+
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from med_research.pipeline.gene_expression.correlator import (
@@ -296,6 +298,58 @@ def test_geo_search_broad(monkeypatch):
     assert any(s["accession"] == "GSE100001" for s in studies)
 
 
+def test_geo_search_ra_uses_disease_specific_terms(monkeypatch):
+    """RA GEO search must not reuse SLE query terms."""
+    captured_terms: list[str] = []
+
+    def capture_term(url, params, timeout=15):
+        if "esearch" in url:
+            captured_terms.append(params.get("term", ""))
+        return _mock_requests_get(url, params, timeout)
+
+    monkeypatch.setattr(
+        "med_research.pipeline.gene_expression.geo.requests.get",
+        capture_term,
+    )
+    from med_research.pipeline.gene_expression.geo import search_geo_datasets
+
+    search_geo_datasets(disease="ra", category="broad", no_cache=True)
+    assert captured_terms
+    ra_term = captured_terms[0]
+    assert "rheumatoid arthritis" in ra_term.lower()
+    assert "lupus" not in ra_term.lower()
+    assert "systemic lupus" not in ra_term.lower()
+
+
+def test_geo_search_ibd_differs_from_sle(monkeypatch):
+    """IBD and SLE broad searches must issue different Entrez term strings."""
+    captured: dict[str, str] = {}
+
+    def capture_term(url, params, timeout=15):
+        if "esearch" in url:
+            captured[params.get("db", "gds")] = params.get("term", "")
+        return _mock_requests_get(url, params, timeout)
+
+    monkeypatch.setattr(
+        "med_research.pipeline.gene_expression.geo.requests.get",
+        capture_term,
+    )
+    from med_research.pipeline.gene_expression.geo import search_geo_datasets
+
+    search_geo_datasets(disease="sle", category="broad", no_cache=True)
+    sle_term = captured.get("gds", "")
+    captured.clear()
+
+    search_geo_datasets(disease="ibd", category="broad", no_cache=True)
+    ibd_term = captured.get("gds", "")
+
+    assert sle_term
+    assert ibd_term
+    assert sle_term != ibd_term
+    assert "inflammatory bowel disease" in ibd_term.lower() or "crohn" in ibd_term.lower()
+    assert "lupus" not in ibd_term.lower()
+
+
 def test_geo_search_cache(monkeypatch, tmp_path):
     from med_research.cache import CacheManager
     from med_research.pipeline.gene_expression import geo
@@ -330,6 +384,69 @@ def test_geo_search_cache(monkeypatch, tmp_path):
     assert studies1 == studies2
 
 
+def _quota_error_response():
+    class _Response:
+        status_code = 429
+        headers = {"Retry-After": "5"}
+
+    return _Response()
+
+
+def test_geo_search_retries_quota_with_retry_after(monkeypatch):
+    """A 429 with Retry-After is retried via backoff_sleep, then succeeds."""
+    import requests
+
+    from med_research.pipeline.gene_expression import geo
+
+    esearch_calls = {"count": 0}
+
+    def quota_then_success(url, params=None, timeout=15):
+        if "esearch" in url:
+            esearch_calls["count"] += 1
+            if esearch_calls["count"] == 1:
+                raise requests.exceptions.HTTPError(response=_quota_error_response())
+        return _mock_requests_get(url, params, timeout)
+
+    slept: list[dict] = []
+    monkeypatch.setattr(
+        "med_research.exceptions.backoff_sleep",
+        lambda attempt, **kwargs: slept.append({"attempt": attempt, **kwargs}),
+    )
+    monkeypatch.setattr(
+        "med_research.pipeline.gene_expression.geo.requests.get",
+        quota_then_success,
+    )
+
+    studies = geo.search_geo_datasets(disease="sle", category="broad", no_cache=True)
+
+    assert len(studies) >= 2
+    # First esearch attempt hit the quota; the retry succeeded.
+    assert esearch_calls["count"] == 2
+    assert slept == [{"attempt": 0, "retry_after": 5.0}]
+
+
+def test_geo_search_degrades_after_persistent_timeout(monkeypatch):
+    """A persistent timeout is retried with backoff, then degrades to []"""
+    import requests
+
+    from med_research.pipeline.gene_expression import geo
+
+    def always_timeout(url, params=None, timeout=15):
+        raise requests.exceptions.Timeout("timed out")
+
+    monkeypatch.setattr(
+        "med_research.exceptions.backoff_sleep",
+        lambda attempt, **kwargs: None,
+    )
+    monkeypatch.setattr(
+        "med_research.pipeline.gene_expression.geo.requests.get",
+        always_timeout,
+    )
+
+    studies = geo.search_geo_datasets(disease="sle", category="broad", no_cache=True)
+    assert studies == []
+
+
 def test_build_consensus_signature():
     from med_research.pipeline.gene_expression.geo import build_consensus_signature
 
@@ -337,12 +454,90 @@ def test_build_consensus_signature():
     sig = build_consensus_signature(studies, disease="sle", min_occurrence=2)
 
     assert sig["source"] == "geo_consensus"
+    assert sig["coverage"] == "curated"
     assert sig["num_studies_used"] == 2
     assert len(sig["upregulated"]) > 0
     assert len(sig["downregulated"]) > 0
     assert all("fold_change" in v for v in sig["upregulated"].values())
     assert all("confidence" in v for v in sig["upregulated"].values())
     assert sig["study_ids"] == ["GSE100001", "GSE100002"]
+
+
+def test_build_consensus_signature_ra():
+    from med_research.pipeline.gene_expression.geo import build_consensus_signature
+
+    studies = [{"accession": "GSE200001"}, {"accession": "GSE200002"}]
+    sig = build_consensus_signature(studies, disease="ra", min_occurrence=2)
+
+    assert sig["coverage"] == "curated"
+    assert sig["disease"] == "ra"
+    assert "TNF" in sig["upregulated"]
+    assert "IRF5" not in sig["upregulated"]
+
+
+def test_build_consensus_signature_ibd():
+    from med_research.pipeline.gene_expression.geo import build_consensus_signature
+
+    studies = [{"accession": "GSE300001"}]
+    sig = build_consensus_signature(studies, disease="ibd", min_occurrence=1)
+
+    assert sig["coverage"] == "curated"
+    assert sig["disease"] == "ibd"
+    assert "TNF" in sig["upregulated"]
+    assert "MUC2" in sig["downregulated"]
+
+
+def test_build_consensus_signature_ms():
+    from med_research.pipeline.gene_expression.geo import build_consensus_signature
+
+    studies = [{"accession": "GSE400001"}]
+    sig = build_consensus_signature(studies, disease="ms", min_occurrence=1)
+
+    assert sig["coverage"] == "curated"
+    assert sig["disease"] == "ms"
+    assert "IL7R" in sig["upregulated"]
+    assert "MBP" in sig["downregulated"]
+    assert "IRF5" not in sig["upregulated"]
+
+
+@pytest.mark.parametrize("disease_id,up_gene,down_gene", [
+    ("ms", "IL7R", "MBP"),
+    ("ss", "TNFSF13B", "AQP5"),
+    ("ssc", "COL1A1", "PPARG"),
+    ("t1d", "PTPN22", "PDX1"),
+])
+def test_build_consensus_signature_new_diseases(disease_id, up_gene, down_gene):
+    from med_research.pipeline.gene_expression.geo import build_consensus_signature
+
+    studies = [{"accession": f"GSE_{disease_id}"}]
+    sig = build_consensus_signature(studies, disease=disease_id, min_occurrence=1)
+
+    assert sig["coverage"] == "curated"
+    assert sig["disease"] == disease_id
+    assert up_gene in sig["upregulated"]
+    assert down_gene in sig["downregulated"]
+
+
+def test_build_consensus_signature_unsupported_disease():
+    from med_research.pipeline.gene_expression.geo import build_consensus_signature
+
+    studies = [{"accession": "GSE400001"}]
+    sig = build_consensus_signature(studies, disease="unknown_disease", min_occurrence=1)
+
+    assert sig["coverage"] == "not_curated"
+    assert sig["upregulated"] == {}
+    assert sig["downregulated"] == {}
+    assert "note" in sig
+
+
+def test_fetch_expression_data_reports_status():
+    from med_research.pipeline.gene_expression.geo import fetch_expression_data
+
+    result = fetch_expression_data("GSE999999")
+    assert result["status"] == "not_implemented"
+    assert result["coverage"] == "download_not_implemented"
+    assert result["path"] is None
+    assert "message" in result
 
 
 def test_build_consensus_with_tissue():
@@ -369,7 +564,8 @@ def test_signature_manager_curated():
     from med_research.pipeline.gene_expression.signature import get_signature
 
     sig = get_signature(disease="sle", source="curated")
-    assert sig["source"] == "curated_literature"
+    assert sig["source"] == "curated_consensus"
+    assert sig["coverage"] == "curated"
     assert len(sig["upregulated"]) > 0
     assert len(sig["downregulated"]) > 0
     assert "IRF5" in sig["upregulated"]
@@ -385,7 +581,7 @@ def test_get_signature_fallback(monkeypatch):
     from med_research.pipeline.gene_expression.signature import get_signature
 
     sig = get_signature(disease="sle", source="auto")
-    assert sig["source"] == "curated_literature"
+    assert sig["source"] == "curated_consensus"
     assert len(sig["upregulated"]) > 0
 
 
@@ -421,13 +617,18 @@ def test_load_drugs_threads_disease(monkeypatch):
 def test_get_default_signature_is_per_disease():
     import med_research.pipeline.gene_expression.correlator as correlator
 
+    correlator._DEFAULT_SIGNATURES.clear()
     sig_sle = correlator._get_default_signature("sle")
     sig_ra = correlator._get_default_signature("ra")
+    sig_ms = correlator._get_default_signature("ms")
     assert sig_sle["disease"] == "sle"
     assert sig_ra["disease"] == "ra"
-    # Both fall back to the curated SLE gene set (documented stand-in)
-    assert sig_ra["upregulated"]
-    assert sig_sle["upregulated"].keys() == sig_ra["upregulated"].keys()
+    assert sig_ms["disease"] == "ms"
+    assert "IRF5" in sig_sle["upregulated"]
+    assert "TNF" in sig_ra["upregulated"]
+    assert "IL7R" in sig_ms["upregulated"]
+    assert "IRF5" not in sig_ms["upregulated"]
+    assert sig_ra["upregulated"].keys() != sig_sle["upregulated"].keys()
 
 
 def test_compute_all_correlations_threads_disease(monkeypatch):
@@ -459,7 +660,7 @@ def test_cli_geo_flag(monkeypatch):
     from med_research.pipeline.gene_expression.correlator import _normalize_signature
 
     up_genes, down_genes, sig_source, num_studies = _normalize_signature(sig)
-    assert sig_source in ("curated_literature", "geo_consensus", "geo_fallback")
+    assert sig_source in ("curated_consensus", "geo_consensus", "geo_fallback")
     assert len(up_genes) > 0
     assert len(down_genes) > 0
 
@@ -469,9 +670,9 @@ def test_expression_report_with_signature_source():
     from med_research.pipeline.gene_expression.report import generate_html_report
 
     results = compute_all_correlations()
-    path = generate_html_report(results, signature_source="curated_literature",
+    path = generate_html_report(results[:5], signature_source="curated_consensus",
                                 num_studies=0, tissue="broad")
     content = Path(path).read_text(encoding="utf-8")
     assert "Expression Signature Source" in content
-    assert "curated_literature" in content
+    assert "curated_consensus" in content
     Path(path).unlink(missing_ok=True)

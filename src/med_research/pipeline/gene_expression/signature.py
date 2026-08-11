@@ -59,18 +59,31 @@ def _try_geo_signature(disease: str, tissue: Optional[str]) -> dict | None:
 
 
 def _get_curated_signature(disease: str = "sle") -> dict:
-    """Return the hardcoded curated signature from correlator.py as fallback."""
-    from med_research.pipeline.gene_expression.correlator import SLE_DOWNREGULATED, SLE_UPREGULATED
+    """Return the hand-curated consensus signature for a disease."""
+    from med_research.pipeline.gene_expression.geo import (
+        CURATED_CONSENSUS_DISEASES,
+        build_consensus_signature,
+    )
 
-    return {
-        "source": "curated_literature",
-        "num_studies_used": 0,
-        "disease": disease,
-        "upregulated": {k: {"fold_change": v, "confidence": 0.9}
-                       for k, v in SLE_UPREGULATED.items()},
-        "downregulated": {k: {"fold_change": v, "confidence": 0.9}
-                         for k, v in SLE_DOWNREGULATED.items()},
-    }
+    disease_key = disease.strip().lower()
+    if disease_key not in CURATED_CONSENSUS_DISEASES:
+        return {
+            "source": "curated_consensus",
+            "num_studies_used": 0,
+            "disease": disease_key,
+            "coverage": "not_curated",
+            "upregulated": {},
+            "downregulated": {},
+        }
+
+    sig = build_consensus_signature(
+        [{"accession": "CURATED_LITERATURE"}],
+        disease=disease_key,
+        min_occurrence=1,
+    )
+    sig["source"] = "curated_consensus"
+    sig["num_studies_used"] = 0
+    return sig
 
 
 def list_available_signatures() -> list:

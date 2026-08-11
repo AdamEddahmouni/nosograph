@@ -242,6 +242,7 @@ The web service listens on port 8000. Configure `CELERY_BROKER_URL`, `CELERY_RES
 ## Documentation map
 
 - [`docs/evidence-workspace.md`](docs/evidence-workspace.md) — Workspace tutorial and reference.
+- [`docs/disease-curation.md`](docs/disease-curation.md) — Disease validate/coverage/refresh workflow and curation checklist.
 - [`docs/api-reference.md`](docs/api-reference.md) — Current server, job, history, export, and admin endpoints.
 - [`docs/superpowers/specs/`](docs/superpowers/specs/) — Historical design specifications.
 - [`docs/superpowers/plans/`](docs/superpowers/plans/) — Historical implementation plans and verification records.
@@ -250,4 +251,4 @@ The web service listens on port 8000. Configure `CELERY_BROKER_URL`, `CELERY_RES
 
 ## License and contribution
 
-The project is an open computational research platform. Contributions in computational biology, immunology, data science, software engineering, testing, and documentation are welcome. Keep source provenance explicit, preserve disease context, avoid overstating computational results, and add deterministic tests for new behavior.
+The project is an open computational research platform. Contributions in computational biology, immunology, data science, software engineering, testing, and documentation are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for dev setup, testing expectations, and contribution guidelines. Keep source provenance explicit, preserve disease context, avoid overstating computational results, and add deterministic tests for new behavior.

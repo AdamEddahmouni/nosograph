@@ -1,5 +1,4 @@
-"""
-Lupus Drug Repurposing Report Generator
+"""Disease-aware drug repurposing HTML report generator.
 
 Generates a beautiful standalone HTML report with:
   - Executive summary and statistics
@@ -100,6 +99,7 @@ def generate_html_report(
         {
             "ctx_disease": context["name"],
             "ctx_disease_id": context["id"],
+            "ctx_report_name": context["report_name"],
             "n_candidates": len(scored_candidates),
             "n_genes": len(untargeted_genes),
             "n_tier1": n_tier1,

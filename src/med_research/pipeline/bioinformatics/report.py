@@ -1,5 +1,4 @@
-"""
-Lupus Bioinformatics Report Generator
+"""Disease-aware bioinformatics HTML report generator.
 
 Generates a standalone HTML report integrating:
   - Pathway enrichment analysis (GSEApy)
@@ -66,17 +65,17 @@ def generate_bioinformatics_report(
     # ── PPI section ──────────────────────────────────────────────────────
     ppi_html = ""
     if hub_scores and ppi_crossref is not None:
-        ppi_html += _build_ppi_section(hub_scores, ppi_crossref, ppi_graph)
+        ppi_html += _build_ppi_section(hub_scores, ppi_crossref, ppi_graph, disease_id=disease_id)
 
     # ── GWAS section ─────────────────────────────────────────────────────
     gwas_html = ""
     if gwas_results and gwas_crossref:
-        gwas_html += _build_gwas_section(gwas_results, gwas_crossref)
+        gwas_html += _build_gwas_section(gwas_results, gwas_crossref, disease_id=disease_id)
 
     # ── Stats cards ──────────────────────────────────────────────────────
     stats_cards = _build_stats_cards(
         enrichment_results, gene_list, hub_scores, ppi_crossref,
-        gwas_results, gwas_crossref,
+        gwas_results, gwas_crossref, disease_id=disease_id,
     )
 
     # ── Assemble HTML via shared Jinja2 template ──────────────────────────
@@ -90,6 +89,7 @@ def generate_bioinformatics_report(
             "generated_at": datetime.now().strftime("%B %d, %Y at %H:%M"),
             "ctx_disease": context["name"],
             "ctx_disease_id": context["id"],
+            "ctx_report_name": context["report_name"],
         },
         disease_id,
         provenance=provenance,
@@ -295,8 +295,11 @@ def _build_stats_cards(
     ppi_crossref: dict | None,
     gwas_results: dict | None,
     gwas_crossref: dict | None,
+    *,
+    disease_id: str = "sle",
 ) -> str:
     """Build the stats cards row."""
+    disease_label = disease_context(disease_id)["report_name"]
     cards = ""
 
     if enrichment_results:
@@ -316,7 +319,7 @@ def _build_stats_cards(
         cards += f"""
             <div class="stat-card">
                 <div class="stat-value" style="color:#818cf8;">{len(gene_list)}</div>
-                <div class="stat-label">Lupus Genes Analyzed</div>
+                <div class="stat-label">{disease_label} Genes Analyzed</div>
             </div>"""
 
     if hub_scores and ppi_crossref:
@@ -450,7 +453,12 @@ def _build_kg_matches_section(kg_matches: dict) -> str:
     """
 
 
-def _generate_ppi_hub_chart(hub_scores: list, ppi_crossref: dict) -> str:
+def _generate_ppi_hub_chart(
+    hub_scores: list,
+    ppi_crossref: dict,
+    *,
+    disease_id: str = "sle",
+) -> str:
     """
     Generate a hub score bar chart for the PPI network.
 
@@ -461,7 +469,9 @@ def _generate_ppi_hub_chart(hub_scores: list, ppi_crossref: dict) -> str:
     if not MPL_AVAILABLE or not hub_scores:
         return ""
 
-    # Filter to lupus gene hubs, take top 15
+    disease_label = disease_context(disease_id)["report_name"]
+
+    # Filter to disease-gene hubs, take top 15
     lupus_hubs = [h for h in hub_scores if h.get("is_lupus_gene", False)]
     if not lupus_hubs:
         lupus_hubs = hub_scores[:15]
@@ -508,7 +518,7 @@ def _generate_ppi_hub_chart(hub_scores: list, ppi_crossref: dict) -> str:
         framealpha=0.9, facecolor="#13131a", edgecolor="#252535", labelcolor="#787890",
     )
 
-    ax.set_title("Lupus Gene Hub Scores", fontsize=12, fontweight="700", color="#e0e0e8", pad=10)
+    ax.set_title(f"{disease_label} Gene Hub Scores", fontsize=12, fontweight="700", color="#e0e0e8", pad=10)
     plt.tight_layout()
 
     buf = io.BytesIO()
@@ -555,13 +565,18 @@ COMMUNITY_PALETTE = [
 ]
 
 
-def _generate_ppi_network_plot(ppi_graph: dict, hub_scores: list) -> str:
+def _generate_ppi_network_plot(
+    ppi_graph: dict,
+    hub_scores: list,
+    *,
+    disease_id: str = "sle",
+) -> str:
     """
     Generate a network layout visualization of the PPI graph.
 
     Uses spring layout positioning via networkx.
     - Nodes colored by Louvain community (distinct palette)
-    - Lupus seed genes have brighter fill and thicker border
+    - Disease seed genes have brighter fill and thicker border
     - Node size proportional to degree
     - Edge width by STRING score; top 10 edges labeled with scores
     - Labels for seed genes and high-degree non-seed nodes
@@ -570,6 +585,8 @@ def _generate_ppi_network_plot(ppi_graph: dict, hub_scores: list) -> str:
     """
     if not MPL_AVAILABLE or not ppi_graph:
         return ""
+
+    disease_label = disease_context(disease_id)["report_name"]
 
     nodes = ppi_graph.get("nodes", [])
     edges = ppi_graph.get("edges", [])
@@ -708,7 +725,7 @@ def _generate_ppi_network_plot(ppi_graph: dict, hub_scores: list) -> str:
     legend_handles = [
         plt.Line2D([0], [0], marker="o", color="w", markerfacecolor="#4ade80",
                    markersize=10, markeredgecolor="#ffffff", markeredgewidth=1.2,
-                   label="Lupus Gene (seed)"),
+                   label=f"{disease_label} Gene (seed)"),
         plt.Line2D([0], [0], marker="o", color="w", markerfacecolor="#818cf8",
                    markersize=8, markeredgecolor="#1a1a24", markeredgewidth=0.5,
                    label="Interacting Protein"),
@@ -728,7 +745,7 @@ def _generate_ppi_network_plot(ppi_graph: dict, hub_scores: list) -> str:
     )
 
     ax.set_title(
-        "PPI Network — Lupus Seed Genes & Interactors"
+        f"PPI Network — {disease_label} Seed Genes & Interactors"
         + (f" ({n_communities} communities)" if n_communities > 1 else ""),
         fontsize=13, fontweight="700", color="#e0e0e8", pad=12,
     )
@@ -869,7 +886,13 @@ def _generate_ppi_interactive(ppi_graph: dict, hub_scores: list) -> str:
     return str(output_path)
 
 
-def _build_ppi_section(hub_scores: list, ppi_crossref: dict, ppi_graph: dict | None = None) -> str:
+def _build_ppi_section(
+    hub_scores: list,
+    ppi_crossref: dict,
+    ppi_graph: dict | None = None,
+    *,
+    disease_id: str = "sle",
+) -> str:
     """Build the PPI network analysis section."""
     if not hub_scores or not ppi_crossref:
         return ""
@@ -933,7 +956,7 @@ def _build_ppi_section(hub_scores: list, ppi_crossref: dict, ppi_graph: dict | N
     # Generate PPI network graph (actual layout)
     network_plot_img = ""
     if ppi_graph:
-        network_b64 = _generate_ppi_network_plot(ppi_graph, hub_scores)
+        network_b64 = _generate_ppi_network_plot(ppi_graph, hub_scores, disease_id=disease_id)
         if network_b64:
             network_plot_img = f"""
         <div class="enrichment-plot">
@@ -965,7 +988,7 @@ def _build_ppi_section(hub_scores: list, ppi_crossref: dict, ppi_graph: dict | N
 
     # Generate PPI hub bar chart
     ppi_plot_img = ""
-    ppi_plot_b64 = _generate_ppi_hub_chart(hub_scores, ppi_crossref)
+    ppi_plot_b64 = _generate_ppi_hub_chart(hub_scores, ppi_crossref, disease_id=disease_id)
     if ppi_plot_b64:
         ppi_plot_img = f"""
         <div class="enrichment-plot">
@@ -993,7 +1016,7 @@ def _build_ppi_section(hub_scores: list, ppi_crossref: dict, ppi_graph: dict | N
     """
 
 
-def _generate_gwas_manhattan(gwas_results: dict) -> str:
+def _generate_gwas_manhattan(gwas_results: dict, *, disease_id: str = "sle") -> str:
     """
     Generate a Manhattan-plot-style visualization of GWAS SNPs.
 
@@ -1005,6 +1028,8 @@ def _generate_gwas_manhattan(gwas_results: dict) -> str:
     """
     if not MPL_AVAILABLE:
         return ""
+
+    disease_label = disease_context(disease_id)["report_name"]
 
     snp_data = gwas_results.get("snp_data", []) if gwas_results else []
     if not snp_data:
@@ -1122,7 +1147,7 @@ def _generate_gwas_manhattan(gwas_results: dict) -> str:
             fontweight="600",
         )
 
-    ax.set_title("GWAS Manhattan Plot — SLE/Lupus SNPs", fontsize=12, fontweight="700", color="#e0e0e8", pad=10)
+    ax.set_title(f"GWAS Manhattan Plot — {disease_label} SNPs", fontsize=12, fontweight="700", color="#e0e0e8", pad=10)
     plt.tight_layout()
 
     buf = io.BytesIO()
@@ -1132,8 +1157,14 @@ def _generate_gwas_manhattan(gwas_results: dict) -> str:
     return base64.b64encode(buf.read()).decode("utf-8")
 
 
-def _build_gwas_section(gwas_results: dict, gwas_crossref: dict) -> str:
+def _build_gwas_section(
+    gwas_results: dict,
+    gwas_crossref: dict,
+    *,
+    disease_id: str = "sle",
+) -> str:
     """Build the GWAS annotation section."""
+    disease_label = disease_context(disease_id)["report_name"]
     cards_html = ""
 
     # Validated genes
@@ -1183,7 +1214,7 @@ def _build_gwas_section(gwas_results: dict, gwas_crossref: dict) -> str:
 
     # Generate Manhattan plot
     manhattan_img = ""
-    manhattan_b64 = _generate_gwas_manhattan(gwas_results)
+    manhattan_b64 = _generate_gwas_manhattan(gwas_results, disease_id=disease_id)
     if manhattan_b64:
         snp_count = len(gwas_results.get("snp_data", [])) if gwas_results else 0
         manhattan_img = f"""
@@ -1200,7 +1231,7 @@ def _build_gwas_section(gwas_results: dict, gwas_crossref: dict) -> str:
     return f"""
         <h2 class="section-title">🧬 GWAS Catalog Annotation</h2>
         <p class="muted" style="margin-bottom:12px;">
-            NHGRI-EBI GWAS Catalog results for SLE/lupus studies.
+            NHGRI-EBI GWAS Catalog results for {disease_label} studies.
             Validated = found in both GWAS and KG. Novel = GWAS only. No GWAS hit = KG genes without GWAS evidence.
         </p>
         {manhattan_img}

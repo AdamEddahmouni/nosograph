@@ -1,5 +1,4 @@
-"""
-Lupus Literature Mining Report Generator
+"""Disease-aware literature mining HTML report generator.
 
 Generates a standalone HTML report showing:
   - Literature coverage statistics

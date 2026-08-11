@@ -19,10 +19,12 @@ import argparse
 import sys
 import time
 from pathlib import Path
-from typing import Any
+from typing import Any, cast
 
 from med_research.diseases.base import Disease
 from med_research.logging_config import get_logger, setup_logging
+from med_research.pipeline.base import PipelineRunResult
+from med_research.pipeline.results import MlPredictionResult, NetworkAnalysis
 from med_research.rate_limiter import rate_limited_sleep
 
 logger = get_logger(__name__)
@@ -33,14 +35,13 @@ def _default_pubmed_query(disease_id: str) -> str:
     disease = Disease(disease_id)
     queries = disease.config.get("PUBMED_QUERIES", [])
     if queries:
-        return queries[0]
+        return str(queries[0])
     return f"treatment targets {disease.get_display_name()}"
 
 
-def _exit_from_result(result, *, context: str = "") -> int:
+def _exit_from_result(result: Any, *, context: str = "") -> int:
     """Map a failed :class:`PipelineRunResult` to a CLI exit code."""
     from med_research.exceptions import ModuleNotAvailableError
-    from med_research.pipeline.base import PipelineRunResult
     from med_research.pipeline_errors import EXIT_RUNTIME, handle_pipeline_error
 
     if not isinstance(result, PipelineRunResult):
@@ -58,13 +59,13 @@ def _exit_from_result(result, *, context: str = "") -> int:
             return handle_pipeline_error(
                 ModuleNotAvailableError(err),
                 logger=logger,
-                context=ctx or None,
+                context=ctx,
             )
         logger.error("%s%s", prefix, err)
     return EXIT_RUNTIME
 
 
-def _data_blocked(data) -> bool:
+def _data_blocked(data: Any) -> bool:
     """Return True when engine output indicates a coverage block."""
     if isinstance(data, dict):
         if data.get("status") == "blocked":
@@ -80,11 +81,11 @@ def _data_blocked(data) -> bool:
 def _dispatch(
     module_id: str,
     disease_id: str,
-    args,
+    args: Any,
     *,
     export_html: bool | None = None,
-    **opts,
-):
+    **opts: Any,
+) -> PipelineRunResult[Any]:
     """Run a registry module through the unified dispatch path."""
     from med_research.pipeline.gateway import pipeline_gateway
 
@@ -98,7 +99,7 @@ def _dispatch(
     )
 
 
-def _run_all_opts(args) -> dict:
+def _run_all_opts(args: Any) -> dict:
     """Common kwargs forwarded from ``run-all`` flags."""
     opts: dict = {}
     if getattr(args, "no_cache", False):
@@ -769,14 +770,14 @@ def cmd_disease(args):
             and args.yes
             and (args.skip_gwas or args.skip_opentargets or args.skip_reactome)
         ):
-            logger.info(
+            print(
                 "\n⚠️  WARNING: --prune with --yes and skipped sources (--skip-*) — entities\n"
                 "    from skipped sources are treated as 'not reported' and will be removed.\n"
                 "    A backup is written to data/backups/ before removal.\n",
                 file=sys.stderr,
             )
 
-        confirm = None
+        confirm: Any = None
         if args.prune and not args.yes and not args.dry_run:
 
             def _confirm_prune(plan: dict) -> bool:
@@ -1076,7 +1077,7 @@ def cmd_ml(args):
         logger.error("❌ %s", results["error"])
         return 0
 
-    print_summary(results)
+    print_summary(cast(MlPredictionResult, results))
     return 0
 
 
@@ -1138,7 +1139,7 @@ def cmd_network(args):
     if not result.success:
         return _exit_from_result(result, context="Network pharmacology")
 
-    print_analysis(result.data or {})
+    print_analysis(cast(NetworkAnalysis, result.data or {}))
     return 0
 
 
@@ -1154,7 +1155,7 @@ def cmd_expression(args):
         return _exit_from_result(result, context="Gene expression")
 
     results = result.data or []
-    analyze(results, None)
+    analyze(results, None, disease_id=args.disease)
     print_top_correlations(results, args.top)
     return 0
 
@@ -1443,7 +1444,7 @@ def _warn_config_gaps(disease: Disease) -> bool:
     return True
 
 
-def _get_pipeline_steps(args) -> list[tuple[str, str | None]]:
+def _get_pipeline_steps(args: Any) -> list[tuple[str, str | None]]:
     """Return ordered pipeline steps, honoring ``--full`` and skip flags."""
 
     steps = list(PIPELINE_STEPS)
@@ -1475,7 +1476,7 @@ def _bioinformatics_module_ids() -> list[str]:
     return ["gwas", "enrichment", "ppi"]
 
 
-def _run_all_module(module_id: str, args) -> int:
+def _run_all_module(module_id: str, args: Any) -> int:
     """Execute one registry module for ``run-all``."""
     from med_research.exceptions import MedResearchError
     from med_research.pipeline.gateway import pipeline_gateway
@@ -1681,8 +1682,8 @@ def main():
     # Emoji/unicode output on Windows consoles (matches gwas.py/builder.py)
     if sys.platform == "win32":
         try:
-            sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-            sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+            sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # type: ignore[union-attr]
+            sys.stderr.reconfigure(encoding="utf-8", errors="replace")  # type: ignore[union-attr]
         except (AttributeError, OSError):
             pass
 

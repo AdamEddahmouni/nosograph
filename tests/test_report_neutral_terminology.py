@@ -46,7 +46,7 @@ def test_drug_synergy_report_avoids_unrelated_lupus_copy(disease_id):
     assert not UNRELATED_TERMS.search(visible), visible
 
 
-@pytest.mark.parametrize("disease_id", ["ra", "ibd"])
+@pytest.mark.parametrize("disease_id", ["ra", "ibd", "ms", "ss", "ssc", "t1d"])
 def test_gene_expression_report_avoids_unrelated_lupus_copy(disease_id):
     from med_research.pipeline.gene_expression.correlator import compute_all_correlations
     from med_research.pipeline.gene_expression.report import generate_html_report
@@ -283,8 +283,51 @@ def test_bioinformatics_report_avoids_unrelated_lupus_copy(disease_id):
     gene_list = [
         {"gene_id": "TNF", "symbol": "TNF", "name": "Tumor Necrosis Factor", "category": "Cytokine"},
     ]
+    hub_scores = [{
+        "symbol": "TNF",
+        "hub_score": 0.12,
+        "is_lupus_gene": True,
+        "degree": 8,
+        "betweenness_centrality": 0.04,
+        "gene_id": "TNF",
+    }]
+    ppi_crossref = {
+        "hub_candidate_matches": [],
+        "hub_untargeted": [],
+        "n_validated": 0,
+        "n_novel": 0,
+    }
+    ppi_graph = {
+        "nodes": [
+            {"id": "TNF", "symbol": "TNF", "is_seed": True, "is_lupus_gene": True},
+            {"id": "IL6", "symbol": "IL6", "is_seed": False},
+        ],
+        "edges": [{"source": "TNF", "target": "IL6", "score": 0.85}],
+    }
+    gwas_results = {
+        "snp_data": [{
+            "chromosome": "6",
+            "position": 100000,
+            "p_value": 1e-8,
+            "rsid": "rs123456",
+        }],
+    }
+    gwas_crossref = {
+        "validated": {},
+        "novel": {},
+        "missing": {},
+        "n_validated": 0,
+        "n_novel": 0,
+    }
     report_path = generate_bioinformatics_report(
-        enrichment_results, gene_list, disease_id=disease_id,
+        enrichment_results,
+        gene_list,
+        hub_scores=hub_scores,
+        ppi_crossref=ppi_crossref,
+        ppi_graph=ppi_graph,
+        gwas_results=gwas_results,
+        gwas_crossref=gwas_crossref,
+        disease_id=disease_id,
     )
     html = Path(report_path).read_text(encoding="utf-8")
     visible = _visible_text(html)

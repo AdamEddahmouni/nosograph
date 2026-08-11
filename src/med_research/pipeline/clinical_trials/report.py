@@ -1,5 +1,4 @@
-"""
-Lupus Clinical Trial Tracker Report Generator
+"""Disease-aware clinical trial tracker HTML report generator.
 
 Generates a standalone HTML report showing:
   - Trial statistics and phase distribution chart
