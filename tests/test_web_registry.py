@@ -34,10 +34,16 @@ _MODULE_ROUTE_CASES = sorted(
     key=lambda item: item[0],
 )
 
+pytestmark = pytest.mark.unit
+
+
+
 
 @pytest.fixture(scope="module")
 def client():
     """Shared FastAPI test client for router integration checks."""
+
+
     with TestClient(app) as test_client:
         yield test_client
 
@@ -112,7 +118,9 @@ class TestRegistryService:
         ) as mock_dispatch:
             result = execute_module("gwas", "ra")
 
-        mock_dispatch.assert_called_once_with("gwas", "ra", export_html=False, progress_callback=None)
+        mock_dispatch.assert_called_once_with(
+            "gwas", "ra", export_html=False, progress_callback=None
+        )
         assert result.success is True
 
     def test_report_module_delegates_to_centralized_dispatch(self, tmp_path) -> None:
@@ -133,10 +141,13 @@ class TestRegistryService:
 
     def test_dispatch_sync_module_raises_on_blocked(self):
         expected = PipelineRunResult(success=False, data=None, errors=["blocked module"])
-        with patch(
-            "med_research.web.services.registry_service.execute_module",
-            return_value=expected,
-        ), pytest.raises(ModuleNotAvailableError, match="blocked module"):
+        with (
+            patch(
+                "med_research.web.services.registry_service.execute_module",
+                return_value=expected,
+            ),
+            pytest.raises(ModuleNotAvailableError, match="blocked module"),
+        ):
             dispatch_sync_module("gwas", "ra")
 
     def test_run_module_job_includes_report_path_when_export_html(self):
@@ -206,10 +217,13 @@ class TestRegistryService:
         from med_research.exceptions import PipelineExecutionError
 
         expected = PipelineRunResult(success=False, data=None, errors=["blocked"])
-        with patch(
-            "med_research.web.services.registry_service.execute_module",
-            return_value=expected,
-        ), pytest.raises(PipelineExecutionError, match="blocked"):
+        with (
+            patch(
+                "med_research.web.services.registry_service.execute_module",
+                return_value=expected,
+            ),
+            pytest.raises(PipelineExecutionError, match="blocked"),
+        ):
             run_module_job("gwas", "ra")
 
     def test_require_runnable_coverage_raises_with_limitation(self):
@@ -276,10 +290,13 @@ class TestRegistryService:
             data = MagicMock() if module_id == "knowledge_graph" else {}
             return PipelineRunResult(success=True, data=data)
 
-        with patch(
-            "med_research.web.services.registry_service.execute_module",
-            side_effect=fake_execute,
-        ), patch("med_research.pipeline.knowledge_graph.builder.export_for_web"):
+        with (
+            patch(
+                "med_research.web.services.registry_service.execute_module",
+                side_effect=fake_execute,
+            ),
+            patch("med_research.pipeline.knowledge_graph.builder.export_for_web"),
+        ):
             result = run_all_pipeline("ra", no_cache=True, parallel=False)
 
         for bio_id in ("gwas", "enrichment", "ppi"):
@@ -313,16 +330,21 @@ class TestRegistryService:
                 for module_id in level:
                     runner(module_id)
 
-        with patch(
-            "med_research.web.services.registry_service.execute_module",
-            side_effect=fake_execute,
-        ), patch(
-            "med_research.pipeline.scheduler.validate_dag",
-            fake_validate,
-        ), patch(
-            "med_research.pipeline.scheduler.run_levels",
-            fake_run_levels,
-        ), patch("med_research.pipeline.knowledge_graph.builder.export_for_web"):
+        with (
+            patch(
+                "med_research.web.services.registry_service.execute_module",
+                side_effect=fake_execute,
+            ),
+            patch(
+                "med_research.pipeline.scheduler.validate_dag",
+                fake_validate,
+            ),
+            patch(
+                "med_research.pipeline.scheduler.run_levels",
+                fake_run_levels,
+            ),
+            patch("med_research.pipeline.knowledge_graph.builder.export_for_web"),
+        ):
             result = run_all_pipeline("ra", parallel=True, full=False)
 
         assert "knowledge_graph" in calls
@@ -348,13 +370,16 @@ class TestWebServiceRegistryWiring:
         assert "status" in result
 
     def test_gene_repurposing_uses_registry(self):
-        with patch(
-            "med_research.web.services.repurpose_service.get_kg_genes",
-            return_value={"STAT4": {"name": "STAT4", "category": "signaling"}},
-        ), patch(
-            "med_research.web.services.repurpose_service.dispatch_sync_module",
-            return_value=[{"gene_id": "STAT4", "composite_score": 8.5}],
-        ) as mock_run:
+        with (
+            patch(
+                "med_research.web.services.repurpose_service.get_kg_genes",
+                return_value={"STAT4": {"name": "STAT4", "category": "signaling"}},
+            ),
+            patch(
+                "med_research.web.services.repurpose_service.dispatch_sync_module",
+                return_value=[{"gene_id": "STAT4", "composite_score": 8.5}],
+            ) as mock_run,
+        ):
             result = get_gene_repurposing("STAT4", disease_id="ra")
 
         mock_run.assert_called_once_with(
@@ -668,8 +693,12 @@ class TestGenericJobRouter:
         )
         assert workspace["persisted_request_schema_version"] == "1.0"
         assert workspace["persisted_result_schema_version"] == "1.1"
-        assert workspace["persisted_request_schema"]["properties"]["schema_version"]["const"] == "1.0"
-        assert workspace["persisted_result_schema"]["properties"]["schema_version"]["const"] == "1.1"
+        assert (
+            workspace["persisted_request_schema"]["properties"]["schema_version"]["const"] == "1.0"
+        )
+        assert (
+            workspace["persisted_result_schema"]["properties"]["schema_version"]["const"] == "1.1"
+        )
 
     def test_list_system_modules_uses_pipeline_gateway_for_coverage(self, client):
         from med_research.diseases.coverage import ModuleCoverage
@@ -903,6 +932,7 @@ class TestRunAllNoCacheBioinformatics:
             export_html=False,
         )
         assert cmd_run_all(args) == 1
+
     """Coverage for diseases.coverage_report helpers."""
 
     def test_build_coverage_report_has_fingerprint(self):
@@ -956,10 +986,10 @@ class TestCliCoverageBoost:
         from tests.cli_helpers import run_cli_command
 
         ok = PipelineRunResult(success=True, data=[])
-        with patch("med_research.cli._dispatch", return_value=ok), patch(
-            "med_research.pipeline.drug_repurposing.engine.analyze"
-        ), patch(
-            "med_research.pipeline.drug_repurposing.engine.print_top_candidates"
+        with (
+            patch("med_research.cli._dispatch", return_value=ok),
+            patch("med_research.pipeline.drug_repurposing.engine.analyze"),
+            patch("med_research.pipeline.drug_repurposing.engine.print_top_candidates"),
         ):
             assert run_cli_command("repurpose", "--disease", "ra", "--top", "5") == 0
 
@@ -971,8 +1001,9 @@ class TestCliCoverageBoost:
         graph.number_of_nodes.return_value = 10
         graph.number_of_edges.return_value = 20
         ok = PipelineRunResult(success=True, data=graph)
-        with patch("med_research.cli._dispatch", return_value=ok), patch(
-            "med_research.pipeline.knowledge_graph.builder.export_for_web"
+        with (
+            patch("med_research.cli._dispatch", return_value=ok),
+            patch("med_research.pipeline.knowledge_graph.builder.export_for_web"),
         ):
             assert run_cli_command("kg", "--disease", "ra") == 0
 
@@ -982,14 +1013,17 @@ class TestCliCoverageBoost:
 
         ok = PipelineRunResult(success=True, data={})
         with patch("med_research.cli._dispatch", return_value=ok):
-            assert run_cli_command(
-                "bioinformatics",
-                "--disease",
-                "ra",
-                "--skip-gwas",
-                "--skip-enrichment",
-                "--skip-ppi",
-            ) == 0
+            assert (
+                run_cli_command(
+                    "bioinformatics",
+                    "--disease",
+                    "ra",
+                    "--skip-gwas",
+                    "--skip-enrichment",
+                    "--skip-ppi",
+                )
+                == 0
+            )
 
     def test_cli_bioinformatics_no_cache_runs_all(self):
         from med_research.pipeline.base import PipelineRunResult
@@ -1027,18 +1061,13 @@ class TestCliCoverageBoost:
                 ok_ml,
                 ok_list,
             ]
-            with patch(
-                "med_research.pipeline.literature_mining.miner.print_summary"
-            ), patch(
-                "med_research.pipeline.virtual_screening.screening.print_summary"
-            ), patch(
-                "med_research.pipeline.clinical_trials.tracker.print_summary"
-            ), patch(
-                "med_research.pipeline.ml_predictor.predictor.print_summary"
-            ), patch(
-                "med_research.pipeline.drug_synergy.engine.analyze"
-            ), patch(
-                "med_research.pipeline.drug_synergy.engine.print_top_pairs"
+            with (
+                patch("med_research.pipeline.literature_mining.miner.print_summary"),
+                patch("med_research.pipeline.virtual_screening.screening.print_summary"),
+                patch("med_research.pipeline.clinical_trials.tracker.print_summary"),
+                patch("med_research.pipeline.ml_predictor.predictor.print_summary"),
+                patch("med_research.pipeline.drug_synergy.engine.analyze"),
+                patch("med_research.pipeline.drug_synergy.engine.print_top_pairs"),
             ):
                 assert run_cli_command("literature", "--disease", "ra", "--max", "5") == 0
                 assert run_cli_command("screening", "--disease", "ra", "--top", "5") == 0
@@ -1075,12 +1104,15 @@ class TestCliCoverageBoost:
             },
         }
 
-        def fake_dispatch(module_id, _disease, _args, **kwargs):
+        def fake_execute(module_id, disease_id, **kwargs):
             if module_id == "network_pharmacology":
                 return PipelineRunResult(success=True, data=network_data)
             return PipelineRunResult(success=True, data=[])
 
-        monkeypatch.setattr(cli_mod, "_dispatch", fake_dispatch)
+        monkeypatch.setattr(
+            "med_research.pipeline.gateway.pipeline_gateway.execute",
+            fake_execute,
+        )
         monkeypatch.setattr(network_analyzer, "print_analysis", lambda *a, **k: None)
         monkeypatch.setattr(
             "med_research.pipeline.adverse_events.profiler.get_safety_summary",
@@ -1145,42 +1177,39 @@ class TestCliCoverageBoost:
                 ok,
                 ok,
             ]
-            with patch(
-                "med_research.pipeline.biomarker_discovery.discover.analyze"
-            ), patch(
-                "med_research.pipeline.biomarker_discovery.discover.print_top_biomarkers"
-            ), patch(
-                "med_research.pipeline.cross_disease.analyzer.analyze"
-            ), patch(
-                "med_research.pipeline.cross_disease.analyzer.print_top_drugs"
-            ), patch(
-                "med_research.pipeline.cross_disease.analyzer.print_repurposing"
-            ), patch(
-                "med_research.pipeline.evidence.monitor.list_snapshots",
-                return_value=[tmp_path / "snap1.json"],
-            ), patch(
-                "med_research.pipeline.evidence.monitor.print_diff_summary"
+            with (
+                patch("med_research.pipeline.biomarker_discovery.discover.analyze"),
+                patch("med_research.pipeline.biomarker_discovery.discover.print_top_biomarkers"),
+                patch("med_research.pipeline.cross_disease.analyzer.analyze"),
+                patch("med_research.pipeline.cross_disease.analyzer.print_top_drugs"),
+                patch("med_research.pipeline.cross_disease.analyzer.print_repurposing"),
+                patch(
+                    "med_research.pipeline.evidence.monitor.list_snapshots",
+                    return_value=[tmp_path / "snap1.json"],
+                ),
+                patch("med_research.pipeline.evidence.monitor.print_diff_summary"),
             ):
-                assert run_cli_command(
-                    "workspace",
-                    "--question",
-                    "RA drug targets",
-                    "--disease",
-                    "ra",
-                    "--json",
-                    str(json_path),
-                    "--html",
-                    str(html_path),
-                ) == 0
+                assert (
+                    run_cli_command(
+                        "workspace",
+                        "--question",
+                        "RA drug targets",
+                        "--disease",
+                        "ra",
+                        "--json",
+                        str(json_path),
+                        "--html",
+                        str(html_path),
+                    )
+                    == 0
+                )
                 assert json_path.is_file()
                 assert html_path.is_file()
                 assert run_cli_command("semantic", "--disease", "ra", "--top", "5") == 0
                 assert run_cli_command("evidence", "--disease", "ra", "--max", "5") == 0
                 assert run_cli_command("extractor", "--disease", "ra", "--max", "5") == 0
                 assert run_cli_command("monitor", "--list") == 0
-                assert run_cli_command(
-                    "monitor", "--disease", "ra", "--diff", "--max", "5"
-                ) == 0
+                assert run_cli_command("monitor", "--disease", "ra", "--diff", "--max", "5") == 0
                 assert run_cli_command("monitor", "--disease", "ra", "--max", "5") == 0
                 assert run_cli_command("biomarker", "--disease", "ra", "--top", "5") == 0
                 assert run_cli_command("cross-disease", "--disease", "ra", "--top", "5") == 0
@@ -1345,9 +1374,7 @@ class TestJobsRouterHelpers:
                 params={"max_studies": 5, "no_cache": True, "disease_id": "ra"},
             )
         assert resp.status_code == 200
-        mock_task.delay.assert_called_once_with(
-            max_studies=5, no_cache=True, disease_id="ra"
-        )
+        mock_task.delay.assert_called_once_with(max_studies=5, no_cache=True, disease_id="ra")
 
     def test_submit_enrichment_job_mocked(self, client):
         with patch("med_research.web.routers.jobs.task_run_enrichment") as mock_task:
@@ -1369,9 +1396,7 @@ class TestJobsRouterHelpers:
                 params={"confidence": 0.7, "no_cache": True, "disease_id": "ra"},
             )
         assert resp.status_code == 200
-        mock_task.delay.assert_called_once_with(
-            confidence=0.7, no_cache=True, disease_id="ra"
-        )
+        mock_task.delay.assert_called_once_with(confidence=0.7, no_cache=True, disease_id="ra")
 
     def test_submit_literature_job_mocked(self, client):
         with patch("med_research.web.routers.jobs.task_run_literature") as mock_task:
@@ -1418,7 +1443,9 @@ class TestJobsRouterHelpers:
 
         with patch("med_research.web.routers.jobs.task_run_synergy") as mock_synergy:
             mock_synergy.delay.return_value.id = "00000000-0000-0000-0000-000000000017"
-            synergy_resp = client.post("/api/jobs/synergy", params={"top_n": 10, "disease_id": "ra"})
+            synergy_resp = client.post(
+                "/api/jobs/synergy", params={"top_n": 10, "disease_id": "ra"}
+            )
             assert synergy_resp.status_code == 200
             mock_synergy.delay.assert_called_once_with(top_n=10, disease_id="ra")
 
@@ -1467,15 +1494,19 @@ class TestSharedServicesUnit:
     """Unit tests for shared_services with mocked registry dispatch."""
 
     def test_run_literature_empty_crossref(self):
-        with patch(
-            "med_research.web.services.shared_services.dispatch_sync_module",
-            return_value={"results": {}},
-        ), patch(
-            "med_research.web.services.shared_services.get_kg_genes",
-            return_value={},
-        ), patch(
-            "med_research.web.services.shared_services.get_candidates",
-            return_value=[],
+        with (
+            patch(
+                "med_research.web.services.shared_services.dispatch_sync_module",
+                return_value={"results": {}},
+            ),
+            patch(
+                "med_research.web.services.shared_services.get_kg_genes",
+                return_value={},
+            ),
+            patch(
+                "med_research.web.services.shared_services.get_candidates",
+                return_value=[],
+            ),
         ):
             from med_research.web.services.shared_services import run_literature
 
@@ -1490,15 +1521,19 @@ class TestSharedServicesUnit:
             "gene_coverage": {"BTK": {"articles": 2, "supporting_count": 1, "coverage_score": 50}},
             "candidate_support": [],
         }
-        with patch(
-            "med_research.web.services.shared_services.dispatch_sync_module",
-            return_value={"results": crossref},
-        ), patch(
-            "med_research.web.services.shared_services.get_kg_genes",
-            return_value={"BTK": {"name": "BTK"}},
-        ), patch(
-            "med_research.web.services.shared_services.get_candidates",
-            return_value=[],
+        with (
+            patch(
+                "med_research.web.services.shared_services.dispatch_sync_module",
+                return_value={"results": crossref},
+            ),
+            patch(
+                "med_research.web.services.shared_services.get_kg_genes",
+                return_value={"BTK": {"name": "BTK"}},
+            ),
+            patch(
+                "med_research.web.services.shared_services.get_candidates",
+                return_value=[],
+            ),
         ):
             from med_research.web.services.shared_services import run_literature
 
@@ -1550,15 +1585,18 @@ class TestSharedServicesUnit:
                 run_ml_prediction(disease_id="ra")
 
     def test_run_ml_prediction_with_results(self):
-        with patch(
-            "med_research.web.services.shared_services.module_coverage",
-        ) as mock_cov, patch(
-            "med_research.web.services.shared_services.dispatch_sync_module",
-            return_value={
-                "predictions": [{"gene_id": "BTK", "druggability_score": 0.9}],
-                "model_metrics": {"cv_auc_mean": 0.8, "accuracy": 0.75},
-                "feature_importance": {"degree": 0.5},
-            },
+        with (
+            patch(
+                "med_research.web.services.shared_services.module_coverage",
+            ) as mock_cov,
+            patch(
+                "med_research.web.services.shared_services.dispatch_sync_module",
+                return_value={
+                    "predictions": [{"gene_id": "BTK", "druggability_score": 0.9}],
+                    "model_metrics": {"cv_auc_mean": 0.8, "accuracy": 0.75},
+                    "feature_importance": {"degree": 0.5},
+                },
+            ),
         ):
             mock_cov.return_value.is_runnable = True
             mock_cov.return_value.level = "full"
@@ -1573,11 +1611,14 @@ class TestSharedServicesUnit:
     def test_run_ml_prediction_error_raises(self):
         from med_research.exceptions import ModuleNotAvailableError
 
-        with patch(
-            "med_research.web.services.shared_services.module_coverage",
-        ) as mock_cov, patch(
-            "med_research.web.services.shared_services.dispatch_sync_module",
-            return_value={"error": "model unavailable"},
+        with (
+            patch(
+                "med_research.web.services.shared_services.module_coverage",
+            ) as mock_cov,
+            patch(
+                "med_research.web.services.shared_services.dispatch_sync_module",
+                return_value={"error": "model unavailable"},
+            ),
         ):
             mock_cov.return_value.is_runnable = True
             mock_cov.return_value.level = "full"
@@ -1593,15 +1634,19 @@ class TestSharedServicesUnit:
             "gene_coverage": {"BTK": 3},
             "candidate_support": [],
         }
-        with patch(
-            "med_research.web.services.shared_services.dispatch_sync_module",
-            return_value={"results": crossref},
-        ), patch(
-            "med_research.web.services.shared_services.get_kg_genes",
-            return_value={"BTK": {"name": "BTK"}},
-        ), patch(
-            "med_research.web.services.shared_services.get_candidates",
-            return_value=[],
+        with (
+            patch(
+                "med_research.web.services.shared_services.dispatch_sync_module",
+                return_value={"results": crossref},
+            ),
+            patch(
+                "med_research.web.services.shared_services.get_kg_genes",
+                return_value={"BTK": {"name": "BTK"}},
+            ),
+            patch(
+                "med_research.web.services.shared_services.get_candidates",
+                return_value=[],
+            ),
         ):
             from med_research.web.services.shared_services import run_literature
 
@@ -1651,11 +1696,14 @@ class TestSharedServicesUnit:
                 return untargeted
             return screening_results
 
-        with patch(
-            "med_research.web.services.shared_services.module_coverage",
-        ) as mock_cov, patch(
-            "med_research.web.services.shared_services.dispatch_sync_module",
-            side_effect=dispatch_side_effect,
+        with (
+            patch(
+                "med_research.web.services.shared_services.module_coverage",
+            ) as mock_cov,
+            patch(
+                "med_research.web.services.shared_services.dispatch_sync_module",
+                side_effect=dispatch_side_effect,
+            ),
         ):
             mock_cov.return_value.is_runnable = True
             mock_cov.return_value.to_dict.return_value = {"level": "full"}
@@ -1680,11 +1728,14 @@ class TestSharedServicesUnit:
             "status": "ready",
             "disease_id": "ra",
         }
-        with patch(
-            "med_research.web.services.shared_services.module_coverage",
-        ) as mock_cov, patch(
-            "med_research.web.services.shared_services.dispatch_sync_module",
-            return_value=screening_results,
+        with (
+            patch(
+                "med_research.web.services.shared_services.module_coverage",
+            ) as mock_cov,
+            patch(
+                "med_research.web.services.shared_services.dispatch_sync_module",
+                return_value=screening_results,
+            ),
         ):
             mock_cov.return_value.is_runnable = True
             mock_cov.return_value.to_dict.return_value = {"level": "full"}
@@ -1730,6 +1781,7 @@ class TestJobsWebSocketUnit:
 
     def test_websocket_backend_unavailable(self, client):
         with patch("med_research.web.routers.jobs.AsyncResult") as mock_async:
+
             class BrokenResult:
                 @property
                 def state(self):
@@ -1802,12 +1854,15 @@ class TestBioinformaticsServiceUnit:
             "coverage": {"level": "full"},
             "status": "ready",
         }
-        with patch(
-            "med_research.web.services.bioinformatics_service.dispatch_sync_module",
-            return_value=raw,
-        ), patch(
-            "med_research.web.services.bioinformatics_service.get_kg_genes",
-            return_value={"BTK": {"name": "BTK"}},
+        with (
+            patch(
+                "med_research.web.services.bioinformatics_service.dispatch_sync_module",
+                return_value=raw,
+            ),
+            patch(
+                "med_research.web.services.bioinformatics_service.get_kg_genes",
+                return_value={"BTK": {"name": "BTK"}},
+            ),
         ):
             from med_research.web.services.bioinformatics_service import run_gwas
 
@@ -1988,14 +2043,18 @@ class TestSmallWebServicesUnit:
             {"composite_score": 7.2, "gene_id": "IRF5"},
             {"composite_score": 5.5, "gene_id": "TLR7"},
         ]
-        with patch(
-            "med_research.web.services.car_t_service.module_coverage",
-        ) as mock_cov, patch(
-            "med_research.web.services.car_t_service.dispatch_sync_module",
-            return_value=results,
-        ), patch(
-            "med_research.web.services.car_t_service.last_coverage",
-            None,
+        with (
+            patch(
+                "med_research.web.services.car_t_service.module_coverage",
+            ) as mock_cov,
+            patch(
+                "med_research.web.services.car_t_service.dispatch_sync_module",
+                return_value=results,
+            ),
+            patch(
+                "med_research.web.services.car_t_service.last_coverage",
+                None,
+            ),
         ):
             mock_cov.return_value.is_runnable = True
             mock_cov.return_value.to_dict.return_value = {"level": "full"}
@@ -2011,14 +2070,18 @@ class TestSmallWebServicesUnit:
             {"composite_score": 8.0, "drug_id": "belimumab"},
             {"composite_score": 6.5, "drug_id": "rituximab"},
         ]
-        with patch(
-            "med_research.web.services.expression_service.module_coverage",
-        ) as mock_cov, patch(
-            "med_research.web.services.expression_service.dispatch_sync_module",
-            return_value=results,
-        ), patch(
-            "med_research.web.services.expression_service.last_coverage",
-            None,
+        with (
+            patch(
+                "med_research.web.services.expression_service.module_coverage",
+            ) as mock_cov,
+            patch(
+                "med_research.web.services.expression_service.dispatch_sync_module",
+                return_value=results,
+            ),
+            patch(
+                "med_research.web.services.expression_service.last_coverage",
+                None,
+            ),
         ):
             mock_cov.return_value.is_runnable = True
             mock_cov.return_value.to_dict.return_value = {"level": "partial"}
@@ -2140,15 +2203,19 @@ class TestMiscRouterUnit:
         assert resp.status_code == 200
 
     def test_monitor_router_endpoints(self, client):
-        with patch(
-            "med_research.web.services.monitor_service.run_snapshot",
-            return_value={"snapshot_id": "s1"},
-        ), patch(
-            "med_research.web.routers.monitor.run_diff",
-            return_value={"total_changes": 0, "alerts": [], "changes": {}},
-        ), patch(
-            "med_research.web.routers.monitor.run_status",
-            return_value={"snapshots_available": 0, "last_snapshot": None},
+        with (
+            patch(
+                "med_research.web.services.monitor_service.run_snapshot",
+                return_value={"snapshot_id": "s1"},
+            ),
+            patch(
+                "med_research.web.routers.monitor.run_diff",
+                return_value={"total_changes": 0, "alerts": [], "changes": {}},
+            ),
+            patch(
+                "med_research.web.routers.monitor.run_status",
+                return_value={"snapshots_available": 0, "last_snapshot": None},
+            ),
         ):
             assert client.post("/api/monitor/snapshot").status_code == 200
             assert client.get("/api/monitor/diff").status_code == 200
@@ -2207,12 +2274,13 @@ class TestMiscRouterUnit:
 
             mock_async.return_value = mock_result
 
-            with patch(
-                "med_research.web.routers.jobs.asyncio.sleep",
-                side_effect=lambda _: advance_state(),
-            ), client.websocket_connect(
-                "/api/jobs/00000000-0000-0000-0000-000000000053/ws"
-            ) as ws:
+            with (
+                patch(
+                    "med_research.web.routers.jobs.asyncio.sleep",
+                    side_effect=lambda _: advance_state(),
+                ),
+                client.websocket_connect("/api/jobs/00000000-0000-0000-0000-000000000053/ws") as ws,
+            ):
                 first = ws.receive_json()
                 second = ws.receive_json()
         assert first["status"] == "PROGRESS"
@@ -2346,12 +2414,15 @@ class TestAnalysisTasksUnit:
             task_run_synergy,
         )
 
-        with patch(
-            "med_research.web.tasks.analysis_tasks._dispatch_module",
-            return_value={"ok": True},
-        ) as mock_dispatch, patch(
-            "med_research.web.services.registry_service.run_all_pipeline",
-            return_value={"status": "success"},
+        with (
+            patch(
+                "med_research.web.tasks.analysis_tasks._dispatch_module",
+                return_value={"ok": True},
+            ) as mock_dispatch,
+            patch(
+                "med_research.web.services.registry_service.run_all_pipeline",
+                return_value={"status": "success"},
+            ),
         ):
             task_run_ppi.run(confidence=0.5, disease_id="ra")
             task_run_screening.run(gene_id="BTK", top_n=5, disease_id="ra")
@@ -2411,17 +2482,20 @@ class TestAdditionalRouterUnit:
     """Extra router coverage for KG network, CAR-T, and safety endpoints."""
 
     def test_kg_centrality_and_communities(self, client):
-        with patch(
-            "med_research.web.routers.kg.run_centrality_analysis",
-            return_value={"metric": "betweenness", "nodes": [], "total_nodes": 0},
-        ), patch(
-            "med_research.web.routers.kg.run_community_detection",
-            return_value={
-                "communities": [],
-                "modularity": 0.0,
-                "n_communities": 0,
-                "algorithm": "louvain",
-            },
+        with (
+            patch(
+                "med_research.web.routers.kg.run_centrality_analysis",
+                return_value={"metric": "betweenness", "nodes": [], "total_nodes": 0},
+            ),
+            patch(
+                "med_research.web.routers.kg.run_community_detection",
+                return_value={
+                    "communities": [],
+                    "modularity": 0.0,
+                    "n_communities": 0,
+                    "algorithm": "louvain",
+                },
+            ),
         ):
             centrality = client.get("/api/kg/centrality?disease=ra")
             communities = client.get("/api/kg/communities?disease=ra")
@@ -2499,11 +2573,14 @@ class TestDispatchUnit:
     def test_execute_module_blocked_coverage(self):
         from med_research.pipeline.dispatch import execute_module
 
-        with patch(
-            "med_research.pipeline.dispatch.get_module",
-        ) as mock_get, patch(
-            "med_research.pipeline.dispatch.module_coverage",
-        ) as mock_cov:
+        with (
+            patch(
+                "med_research.pipeline.dispatch.get_module",
+            ) as mock_get,
+            patch(
+                "med_research.pipeline.dispatch.module_coverage",
+            ) as mock_cov,
+        ):
             mock_module = MagicMock()
             mock_module.coverage_inputs.return_value = ("genes",)
             mock_get.return_value = mock_module
@@ -2526,12 +2603,15 @@ class TestDispatchUnit:
         report_path = tmp_path / "report.html"
         mock_module.report.return_value = report_path
 
-        with patch(
-            "med_research.pipeline.dispatch.get_module",
-            return_value=mock_module,
-        ), patch(
-            "med_research.pipeline.dispatch.module_coverage",
-        ) as mock_cov:
+        with (
+            patch(
+                "med_research.pipeline.dispatch.get_module",
+                return_value=mock_module,
+            ),
+            patch(
+                "med_research.pipeline.dispatch.module_coverage",
+            ) as mock_cov,
+        ):
             mock_cov.return_value.is_runnable = True
             result = execute_module("gwas", "ra", export_html=True)
         assert result.success is True
@@ -2546,12 +2626,15 @@ class TestDispatchUnit:
         mock_module.coverage_inputs.return_value = ("genes",)
         mock_module.run.side_effect = ExternalAPIError("api down")
 
-        with patch(
-            "med_research.pipeline.dispatch.get_module",
-            return_value=mock_module,
-        ), patch(
-            "med_research.pipeline.dispatch.module_coverage",
-        ) as mock_cov:
+        with (
+            patch(
+                "med_research.pipeline.dispatch.get_module",
+                return_value=mock_module,
+            ),
+            patch(
+                "med_research.pipeline.dispatch.module_coverage",
+            ) as mock_cov,
+        ):
             mock_cov.return_value.is_runnable = True
             result = execute_module("gwas", "ra")
         assert result.success is False
@@ -2620,4 +2703,3 @@ class TestExceptionsUnit:
         result = retry_with_backoff(flaky, max_attempts=3, source="test")
         assert result == "ok"
         assert attempts["count"] == 2
-

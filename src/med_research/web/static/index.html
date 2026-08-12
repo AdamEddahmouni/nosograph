@@ -7,24 +7,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="/lib/tom-select/tom-select.css">
 </head>
 <body>
     <div id="app">
 
         <!-- ── Navigation ───────────────────────────────────────────── -->
-        <nav class="top-nav">
+        <nav class="top-nav" id="top-nav">
             <div class="nav-brand">
+                <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">☰</button>
                 <span class="nav-logo">🧬</span>
                 <span class="nav-title">Medical Research Platform</span>
             </div>
-            <div class="nav-links">
-                <select id="disease-selector" class="nav-select" data-action="disease-change" aria-label="Select disease">
-                    <option value="" disabled>Loading diseases…</option>
-                </select>
-                <a href="#modules" class="nav-link">Modules</a>
-                <a href="#jobs" class="nav-link" id="jobs-tab">Jobs <span id="job-count" class="job-badge hidden">0</span></a>
-                <a href="/api/docs" class="nav-link" target="_blank">API Docs</a>
-                <a href="/api/health" class="nav-link nav-status" id="api-status" title="API Status">●</a>
+            <div class="nav-menu" id="nav-menu">
+                <div class="nav-disease-wrap">
+                    <select id="disease-selector" class="nav-select" aria-label="Select disease">
+                        <option value="" disabled>Loading diseases…</option>
+                    </select>
+                </div>
+                <div class="nav-links">
+                    <a href="#evidence-workspace" class="nav-link" data-nav="evidence-workspace">Workspace</a>
+                    <a href="#modules" class="nav-link" data-nav="modules">Modules</a>
+                    <a href="#kg-explorer" class="nav-link" data-nav="kg-explorer">KG</a>
+                    <a href="#condition-explorer" class="nav-link" data-nav="condition-explorer">Conditions</a>
+                    <a href="#condition-comparison" class="nav-link" data-nav="condition-comparison">Compare</a>
+                    <a href="#export" class="nav-link" data-nav="export">Export</a>
+                    <a href="#jobs" class="nav-link" id="jobs-tab" data-nav="jobs">Jobs <span id="job-count" class="job-badge hidden">0</span></a>
+                    <a href="/api/docs" class="nav-link" target="_blank" rel="noopener">API Docs</a>
+                    <a href="/api/health" class="nav-link nav-status" id="api-status" title="API Status">●</a>
+                </div>
             </div>
         </nav>
 
@@ -32,62 +43,90 @@
 
             <!-- ── Hero ──────────────────────────────────────────────── -->
             <div class="hero">
-                <div class="hero-content">
-                    <h1>Medical Research Platform</h1>
-                    <p class="subtitle">
-                        An open computational platform accelerating drug discovery for
-                        <span id="hero-disease-name" style="color:var(--accent,#818cf8);font-weight:600;">the selected disease</span>.
-                        Integrating a knowledge graph, drug repurposing engine, bioinformatics pipeline, literature
-                        mining, virtual screening, clinical trial tracking, and ML target prediction — all in one place.
-                    </p>
-                    <div class="badges">
-                        <span class="hero-badge open">🧬 Open Science</span>
-                        <span class="hero-badge research">🔬 Research Tool</span>
-                        <span class="hero-badge python">🐍 Python 3.10+</span>
-                        <span class="hero-badge disease" id="hero-disease-badge">🦠 Selected disease</span>
-                        <span class="hero-badge api" id="api-badge">⚡ API v2.0</span>
+                <div class="hero-layout">
+                    <div class="hero-content">
+                        <h1>Medical Research Platform</h1>
+                        <p class="subtitle">
+                            An open computational platform accelerating drug discovery for
+                            <span id="hero-disease-name" class="hero-disease-name">the selected disease</span>.
+                            Integrating a knowledge graph, drug repurposing engine, bioinformatics pipeline, literature
+                            mining, virtual screening, clinical trial tracking, and ML target prediction — all in one place.
+                        </p>
+                        <div class="badges">
+                            <span class="hero-badge open">🧬 Open Science</span>
+                            <span class="hero-badge research">🔬 Research Tool</span>
+                            <span class="hero-badge python">🐍 Python 3.10+</span>
+                            <span class="hero-badge disease" id="hero-disease-badge">🦠 Selected disease</span>
+                            <span class="hero-badge api" id="api-badge">⚡ API …</span>
+                        </div>
+                    </div>
+                    <div class="hero-actions" aria-label="Quick actions">
+                        <a href="#evidence-workspace" class="btn btn-primary">🚀 Run Workspace</a>
+                        <a href="#kg-explorer" class="btn btn-secondary">🕸️ Explore KG</a>
+                        <a href="#condition-comparison" class="btn btn-secondary">⚖️ Compare Conditions</a>
+                        <a href="/api/docs" class="btn btn-secondary" target="_blank" rel="noopener">📖 API Docs</a>
                     </div>
                 </div>
             </div>
 
             <!-- ── Stats ─────────────────────────────────────────────── -->
-            <div class="stats-grid" id="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-icon">🕸️</div>
-                    <div class="stat-value" style="color:#4ade80;" id="stat-kg-nodes">…</div>
-                    <div class="stat-label">Knowledge Graph Nodes</div>
+            <section class="stats-section" id="stats-section" aria-label="Platform statistics">
+                <div class="stats-group">
+                    <h3 class="stats-group-title">Platform</h3>
+                    <div class="stats-grid stats-grid-platform" id="stats-grid-platform">
+                        <div class="stat-card" data-stat="diseases">
+                            <div class="stat-icon">🦠</div>
+                            <div class="stat-value stat-color-cyan" id="stat-diseases">…</div>
+                            <div class="stat-label">Diseases Registered</div>
+                        </div>
+                        <div class="stat-card" data-stat="modules">
+                            <div class="stat-icon">🧪</div>
+                            <div class="stat-value stat-color-cyan" id="stat-modules">…</div>
+                            <div class="stat-label">Analysis Modules</div>
+                        </div>
+                        <div class="stat-card" data-stat="api-status">
+                            <div class="stat-icon">⚡</div>
+                            <div class="stat-value stat-color-green" id="stat-api-status">…</div>
+                            <div class="stat-label">API Status</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="stat-card">
-                    <div class="stat-icon">🧬</div>
-                    <div class="stat-value" style="color:#818cf8;" id="stat-genes">…</div>
-                    <div class="stat-label" id="stat-genes-label">Associated Genes</div>
+                <div class="stats-group">
+                    <h3 class="stats-group-title" id="stats-disease-title">Selected Disease</h3>
+                    <div class="stats-grid stats-grid-disease" id="stats-grid-disease">
+                        <div class="stat-card" data-stat="kg-nodes">
+                            <div class="stat-icon">🕸️</div>
+                            <div class="stat-value stat-color-green" id="stat-kg-nodes">…</div>
+                            <div class="stat-label">KG Nodes</div>
+                        </div>
+                        <div class="stat-card" data-stat="edges">
+                            <div class="stat-icon">🔗</div>
+                            <div class="stat-value stat-color-yellow" id="stat-edges">…</div>
+                            <div class="stat-label">KG Relationships</div>
+                        </div>
+                        <div class="stat-card" data-stat="genes">
+                            <div class="stat-icon">🧬</div>
+                            <div class="stat-value stat-color-purple" id="stat-genes">…</div>
+                            <div class="stat-label" id="stat-genes-label">Associated Genes</div>
+                        </div>
+                        <div class="stat-card" data-stat="drugs">
+                            <div class="stat-icon">💊</div>
+                            <div class="stat-value stat-color-blue" id="stat-drugs">…</div>
+                            <div class="stat-label">Associated Drugs</div>
+                        </div>
+                        <div class="stat-card" data-stat="pathways">
+                            <div class="stat-icon">🛤️</div>
+                            <div class="stat-value stat-color-orange" id="stat-pathways">…</div>
+                            <div class="stat-label">Pathways</div>
+                        </div>
+                        <div class="stat-card" data-stat="candidates">
+                            <div class="stat-icon">🎯</div>
+                            <div class="stat-value stat-color-pink" id="stat-candidates">…</div>
+                            <div class="stat-label">Repurposing Candidates</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="stat-card">
-                    <div class="stat-icon">💊</div>
-                    <div class="stat-value" style="color:#c084fc;" id="stat-candidates">…</div>
-                    <div class="stat-label">Repurposing Candidates</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-icon">🧪</div>
-                    <div class="stat-value" style="color:#22d3ee;">18</div>
-                    <div class="stat-label">Analysis Modules</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-icon">🔗</div>
-                    <div class="stat-value" style="color:#fbbf24;" id="stat-edges">…</div>
-                    <div class="stat-label">KG Relationships</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-icon">📚</div>
-                    <div class="stat-value" style="color:#f472b6;">~150</div>
-                    <div class="stat-label">PubMed Articles</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-icon">✅</div>
-                    <div class="stat-value" style="color:#fbbf24;">~465</div>
-                    <div class="stat-label">Tests Passing</div>
-                </div>
-            </div>
+            </section>
 
             <!-- ── Evidence-to-Hypothesis Workspace ─────────────────── -->
             <section class="workspace-shell" id="evidence-workspace" aria-labelledby="workspace-title">
@@ -162,20 +201,20 @@
 
             <div class="modules-grid" id="modules-grid">
                 <!-- Knowledge Graph -->
-                <div class="module-card kg">
+                <div class="module-card kg" data-module="kg">
                     <div class="module-card-header">
                         <div class="module-icon kg">🕸️</div>
                         <div>
                             <h3>Knowledge Graph</h3>
-                            <span class="module-phase"><span class="status-dot complete"></span>Phase 1</span>
+                            <span class="module-phase"><span class="status-dot complete"></span>Phase 1 <span class="module-coverage-badge coverage-badge coverage-partial">Coverage loading…</span></span>
                         </div>
                     </div>
-                    <p class="desc">
-                        Interactive heterogeneous graph connecting 35 genes, 26 drugs, and 10 pathways through
-                        115 curated relationships across 6 biological edge types.
+                    <p class="desc module-desc">
+                        Interactive heterogeneous graph connecting genes, drugs, and pathways through
+                        curated relationships across biological edge types.
                     </p>
-                    <div class="tags">
-                        <span class="tag green">Cytoscape.js</span>
+                    <div class="tags module-tags" data-dynamic-tags="kg">
+                        <span class="tag green">vis-network</span>
                         <span class="tag blue">NetworkX</span>
                         <span class="tag purple">Interactive</span>
                     </div>
@@ -187,22 +226,22 @@
                 </div>
 
                 <!-- Drug Repurposing -->
-                <div class="module-card dr">
+                <div class="module-card dr" data-module="repurpose">
                     <div class="module-card-header">
                         <div class="module-icon dr">💊</div>
                         <div>
                             <h3>Drug Repurposing</h3>
-                            <span class="module-phase"><span class="status-dot complete"></span>Phase 3</span>
+                            <span class="module-phase"><span class="status-dot complete"></span>Phase 3 <span class="module-coverage-badge coverage-badge coverage-partial">Coverage loading…</span></span>
                         </div>
                     </div>
-                    <p class="desc">
+                    <p class="desc module-desc">
                         Multi-modal scoring system evaluating drug candidates across disease-associated genes
                         using a 6-dimensional weighted model for the selected disease.
                     </p>
-                    <div class="tags">
+                    <div class="tags module-tags" data-dynamic-tags="repurpose">
                         <span class="tag blue">Scoring Engine</span>
-                        <span class="tag purple">39 Candidates</span>
-                        <span class="tag green">13 Genes</span>
+                        <span class="tag purple">Composite Score</span>
+                        <span class="tag green">Gene-Targeted</span>
                     </div>
                     <div class="actions">
                         <button type="button" class="btn btn-primary" data-action="module-run" data-module="repurpose">💊 Score Candidates</button>
@@ -212,12 +251,12 @@
                 </div>
 
                 <!-- Bioinformatics -->
-                <div class="module-card bio">
+                <div class="module-card bio" data-module="bioinformatics">
                     <div class="module-card-header">
                         <div class="module-icon bio">🧬</div>
                         <div>
                             <h3>Bioinformatics</h3>
-                            <span class="module-phase"><span class="status-dot complete"></span>Phase 2</span>
+                            <span class="module-phase"><span class="status-dot complete"></span>Phase 2 <span class="module-coverage-badge coverage-badge coverage-partial">Coverage loading…</span></span>
                         </div>
                     </div>
                     <p class="desc">
@@ -240,7 +279,7 @@
                 </div>
 
                 <!-- Evidence Monitor -->
-                <div class="module-card" style="--card-accent:#06b6d4;">
+                <div class="module-card" style="--card-accent:#06b6d4;" data-module="monitor">
                     <div class="module-card-header">
                         <div class="module-icon" style="background:rgba(6,182,212,0.12);">📡</div>
                         <div>
@@ -259,13 +298,13 @@
                     </div>
                     <div class="actions">
                         <button type="button" class="btn btn-primary" data-action="module-run" data-module="monitor">📡 Check Alerts</button>
-                        <a href="#evidence-workspace" class="btn btn-secondary">📊 Report</a>
+                        <a href="#evidence-workspace" class="btn btn-secondary module-report-link" data-report-module="monitor" title="Use the Evidence Workspace for dossier reports">📊 Workspace</a>
                     </div>
                     <div class="module-result" id="result-monitor"></div>
                 </div>
 
                 <!-- LLM Extractor -->
-                <div class="module-card" style="--card-accent:#8b5cf6;">
+                <div class="module-card" style="--card-accent:#8b5cf6;" data-module="extractor">
                     <div class="module-card-header">
                         <div class="module-icon" style="background:rgba(139,92,246,0.12);">🤖</div>
                         <div>
@@ -284,13 +323,13 @@
                     </div>
                     <div class="actions">
                         <button type="button" class="btn btn-primary" data-action="module-run" data-module="extractor">🤖 Extract Evidence</button>
-                        <a href="#evidence-workspace" class="btn btn-secondary">📊 Report</a>
+                        <a href="#evidence-workspace" class="btn btn-secondary module-report-link" data-report-module="extractor" title="Use the Evidence Workspace for dossier reports">📊 Workspace</a>
                     </div>
                     <div class="module-result" id="result-extractor"></div>
                 </div>
 
                 <!-- Evidence Gatherer -->
-                <div class="module-card" style="--card-accent:#f59e0b;">
+                <div class="module-card" style="--card-accent:#f59e0b;" data-module="evidence">
                     <div class="module-card-header">
                         <div class="module-icon" style="background:rgba(245,158,11,0.12);">🌐</div>
                         <div>
@@ -309,13 +348,12 @@
                     </div>
                     <div class="actions">
                         <button type="button" class="btn btn-primary" data-action="module-run" data-module="evidence">🌐 Gather Evidence</button>
-                        <a href="#evidence-workspace" class="btn btn-secondary">📊 Report</a>
+                        <a href="#evidence-workspace" class="btn btn-secondary module-report-link" data-report-module="evidence" title="Use the Evidence Workspace for dossier reports">📊 Workspace</a>
                     </div>
                     <div class="module-result" id="result-evidence"></div>
                 </div>
 
-                <!-- Semantic Search -->
-                <div class="module-card" style="--card-accent:#818cf8;">
+                <div class="module-card" style="--card-accent:#818cf8;" data-module="semantic">
                     <div class="module-card-header">
                         <div class="module-icon" style="background:rgba(129,140,248,0.12);">🧠</div>
                         <div>
@@ -340,7 +378,7 @@
                 </div>
 
                 <!-- Literature Mining -->
-                <div class="module-card lit">
+                <div class="module-card lit" data-module="literature">
                     <div class="module-card-header">
                         <div class="module-icon lit">📚</div>
                         <div>
@@ -365,7 +403,7 @@
                 </div>
 
                 <!-- Virtual Screening -->
-                <div class="module-card vs">
+                <div class="module-card vs" data-module="screening">
                     <div class="module-card-header">
                         <div class="module-icon" style="background:rgba(245,158,11,0.12);">🔬</div>
                         <div>
@@ -391,7 +429,7 @@
                 </div>
 
                 <!-- ML Predictor -->
-                <div class="module-card" style="--card-accent:#818cf8;">
+                <div class="module-card" style="--card-accent:#818cf8;" data-module="ml">
                     <div class="module-card-header">
                         <div class="module-icon" style="background:rgba(129,140,248,0.12);">🧠</div>
                         <div>
@@ -416,7 +454,7 @@
                 </div>
 
                 <!-- CAR-T Predictor -->
-                <div class="module-card" style="--card-accent:#dc2626;">
+                <div class="module-card" style="--card-accent:#dc2626;" data-module="cart">
                     <div class="module-card-header">
                         <div class="module-icon" style="background:rgba(220,38,38,0.12);">🔬</div>
                         <div>
@@ -441,7 +479,7 @@
                 </div>
 
                 <!-- Biomarker Discovery -->
-                <div class="module-card" style="--card-accent:#22d3ee;">
+                <div class="module-card" style="--card-accent:#22d3ee;" data-module="biomarker">
                     <div class="module-card-header">
                         <div class="module-icon" style="background:rgba(34,211,238,0.12);">🧬</div>
                         <div>
@@ -466,7 +504,7 @@
                 </div>
 
                 <!-- Gene Expression Correlation -->
-                <div class="module-card" style="--card-accent:#a78bfa;">
+                <div class="module-card" style="--card-accent:#a78bfa;" data-module="expression">
                     <div class="module-card-header">
                         <div class="module-icon" style="background:rgba(167,139,250,0.12);">🧬</div>
                         <div>
@@ -491,7 +529,7 @@
                 </div>
 
                 <!-- Network Pharmacology -->
-                <div class="module-card" style="--card-accent:#22d3ee;">
+                <div class="module-card" style="--card-accent:#22d3ee;" data-module="network">
                     <div class="module-card-header">
                         <div class="module-icon" style="background:rgba(34,211,238,0.12);">🌐</div>
                         <div>
@@ -516,7 +554,7 @@
                 </div>
 
                 <!-- Safety Profiling -->
-                <div class="module-card" style="--card-accent:#4ade80;">
+                <div class="module-card" style="--card-accent:#4ade80;" data-module="safety">
                     <div class="module-card-header">
                         <div class="module-icon" style="background:rgba(74,222,128,0.12);">🛡️</div>
                         <div>
@@ -541,7 +579,7 @@
                 </div>
 
                 <!-- Drug Synergy -->
-                <div class="module-card" style="--card-accent:#f59e0b;">
+                <div class="module-card" style="--card-accent:#f59e0b;" data-module="synergy">
                     <div class="module-card-header">
                         <div class="module-icon" style="background:rgba(245,158,11,0.12);">🔗</div>
                         <div>
@@ -566,7 +604,7 @@
                 </div>
 
                 <!-- Cross-Disease Analysis -->
-                <div class="module-card" style="--card-accent:#c084fc;">
+                <div class="module-card" style="--card-accent:#c084fc;" data-module="cross-disease">
                     <div class="module-card-header">
                         <div class="module-icon" style="background:rgba(192,132,252,0.12);">🌐</div>
                         <div>
@@ -592,7 +630,7 @@
                 </div>
 
                 <!-- Clinical Trials -->
-                <div class="module-card" style="--card-accent:#60a5fa;">
+                <div class="module-card" style="--card-accent:#60a5fa;" data-module="trials">
                     <div class="module-card-header">
                         <div class="module-icon" style="background:rgba(96,165,250,0.12);">📋</div>
                         <div>
@@ -642,6 +680,75 @@
                     <div class="module-result" id="result-manage"></div>
                 </div>
             </div>
+
+            <!-- ── Universal Condition Explorer ─────────────────────── -->
+            <section class="biomed-import-status-shell" id="biomed-import-status" aria-labelledby="biomed-import-status-title">
+                <div class="biomed-import-status-intro">
+                    <div>
+                        <span class="workspace-kicker">OPERATOR · IMPORT STATUS</span>
+                        <h2 id="biomed-import-status-title">Biomedical Import Status</h2>
+                        <p>Active ontology snapshots, versions, and checksums from the canonical biomedical store.</p>
+                    </div>
+                </div>
+                <div class="biomed-import-status-panel" id="biomed-import-status-panel" aria-live="polite">
+                    <p class="condition-explorer-placeholder">Loading import status…</p>
+                </div>
+            </section>
+
+            <section class="condition-explorer-shell" id="condition-explorer" aria-labelledby="condition-explorer-title">
+                <div class="condition-explorer-intro">
+                    <div>
+                        <span class="workspace-kicker">UNIVERSAL BIOMEDICAL · RESEARCH ONLY</span>
+                        <h2 id="condition-explorer-title">Condition Explorer</h2>
+                        <p>Search imported ontology conditions, inspect hierarchy, and review supporting evidence and contradictory evidence without a hand-authored disease module.</p>
+                    </div>
+                    <div class="condition-explorer-disclaimer" id="condition-explorer-disclaimer">⚠️ Research use only · not medical advice</div>
+                </div>
+                <div class="condition-explorer-panel" id="condition-explorer-panel" aria-busy="false">
+                    <div class="condition-explorer-toolbar">
+                        <label class="condition-explorer-search-label" for="condition-search-input">Search conditions</label>
+                        <input type="search" id="condition-search-input" class="condition-explorer-search" placeholder="Search by label or synonym (e.g. lupus, rheumatoid)…" autocomplete="off" aria-controls="condition-search-results">
+                        <label class="condition-explorer-depth-label" for="condition-hierarchy-depth">Hierarchy depth</label>
+                        <select id="condition-hierarchy-depth" class="condition-explorer-depth" aria-label="Hierarchy traversal depth">
+                            <option value="0">0 — selected only</option>
+                            <option value="1" selected>1 — direct parents/children</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div class="condition-explorer-body">
+                        <aside class="condition-explorer-results" id="condition-search-results" aria-live="polite">
+                            <p class="condition-explorer-placeholder">Type to search imported conditions.</p>
+                        </aside>
+                        <div class="condition-explorer-detail" id="condition-explorer-detail">
+                            <p class="condition-explorer-placeholder">Select a condition to inspect labels, hierarchy, claims, and snapshot provenance.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="condition-comparison-shell" id="condition-comparison" aria-labelledby="condition-comparison-title">
+                <div class="condition-comparison-intro">
+                    <div>
+                        <span class="workspace-kicker">UNIVERSAL BIOMEDICAL · RESEARCH ONLY</span>
+                        <h2 id="condition-comparison-title">Condition Comparison</h2>
+                        <p>Compare two imported conditions using transparent HPO-aware phenotype similarity and biological overlap scores. Results are research hypotheses, not diagnoses.</p>
+                    </div>
+                    <div class="condition-comparison-disclaimer" id="condition-comparison-disclaimer">⚠️ Research use only · condition similarity for exploratory analysis</div>
+                </div>
+                <div class="condition-comparison-panel" id="condition-comparison-panel" aria-busy="false">
+                    <div class="condition-comparison-toolbar">
+                        <label class="condition-comparison-label" for="comparison-left-curie">Left condition</label>
+                        <select id="comparison-left-curie" class="condition-comparison-input" placeholder="Search conditions…" autocomplete="off"></select>
+                        <label class="condition-comparison-label" for="comparison-right-curie">Right condition</label>
+                        <select id="comparison-right-curie" class="condition-comparison-input" placeholder="Search conditions…" autocomplete="off"></select>
+                        <button type="button" class="btn btn-primary" id="comparison-run-btn">Compare conditions</button>
+                    </div>
+                    <div class="condition-comparison-result" id="condition-comparison-result" aria-live="polite">
+                        <p class="condition-comparison-placeholder">Enter two condition CURIEs to run a persisted comparison research run.</p>
+                    </div>
+                </div>
+            </section>
 
             <!-- ── Knowledge Graph Explorer ─────────────────────────── -->
             <h2 class="section-title" id="kg-explorer">
@@ -746,6 +853,7 @@
     </div>
 
     <script src="/lib/vis-9.1.2/vis-network.min.js"></script>
+    <script src="/lib/tom-select/tom-select.complete.min.js"></script>
     <script src="/js/dashboard.js"></script>
 </body>
 </html>

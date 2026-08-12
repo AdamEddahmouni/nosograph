@@ -64,6 +64,34 @@ function setWorkspaceSubmissionState(state) {
 
 // Live disease registry (populated on page load; consumed by the cross-disease view)
 const diseaseCache = { list: null };
+let diseaseSelectControl = null;
+let dashboardRefreshing = false;
+
+const DASHBOARD_MODULE_REGISTRY = {
+    kg: 'knowledge_graph',
+    repurpose: 'drug_repurposing',
+    bioinformatics: 'gwas',
+    gwas: 'gwas',
+    enrichment: 'enrichment',
+    ppi: 'ppi',
+    monitor: 'evidence_monitor',
+    extractor: 'llm_extractor',
+    evidence: 'evidence_gather',
+    semantic: 'semantic_search',
+    literature: 'literature_mining',
+    screening: 'virtual_screening',
+    ml: 'ml_predictor',
+    cart: 'car_t_predictor',
+    biomarker: 'biomarker_discovery',
+    expression: 'gene_expression',
+    network: 'network_pharmacology',
+    safety: 'adverse_events',
+    synergy: 'drug_synergy',
+    'cross-disease': 'cross_disease',
+    trials: 'clinical_trials',
+};
+
+const MODULES_WITHOUT_STATIC_REPORT = new Set(['monitor', 'extractor', 'evidence']);
 
 // ── API Helpers ──────────────────────────────────────────────────────────
 
@@ -2134,6 +2162,342 @@ function resetKGExplorer() {
     if (kgNetwork) kgNetwork.fit({ animation: true });
 }
 
+// ── Universal Condition Explorer ─────────────────────────────────────────
+
+let conditionSearchTimer = null;
+let activeConditionCurie = null;
+let comparisonLeftControl = null;
+let comparisonRightControl = null;
+
+function setConditionExplorerBusy(isBusy) {
+    const panel = document.getElementById('condition-explorer-panel');
+    if (panel) panel.setAttribute('aria-busy', String(isBusy));
+}
+
+function renderUniversalClaimEvidence(evidence, directionLabel) {
+    const url = evidence.source_url && /^https?:\/\//i.test(evidence.source_url) ? evidence.source_url : '';
+    const citation = url
+        ? `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(evidence.source_record_id || 'source')}</a>`
+        : escapeHtml(evidence.source_record_id || 'source unavailable');
+    return `<span class="condition-evidence-chip ${escapeHtml(directionLabel)}">${escapeHtml(directionLabel)}: ${citation}${evidence.evidence_type ? ` · ${escapeHtml(evidence.evidence_type)}` : ''}</span>`;
+}
+
+function renderConditionClaimRow(claim) {
+    const supporting = (claim.supporting_evidence || []).map(item => renderUniversalClaimEvidence(item, 'supporting')).join('');
+    const contradictory = (claim.contradictory_evidence || []).map(item => renderUniversalClaimEvidence(item, 'contradictory')).join('');
+    const evidence = supporting || contradictory
+        ? `${supporting}${contradictory}`
+        : '<span class="condition-empty">No data imported for this section</span>';
+    return `<div class="condition-claim">
+        <strong>${escapeHtml(claim.predicate)} · ${escapeHtml(claim.object_label || claim.object_curie)}</strong>
+        <small>${escapeHtml(claim.subject_curie)} → ${escapeHtml(claim.object_curie)}</small>
+        <div>${evidence}</div>
+    </div>`;
+}
+
+async function searchConditions(query) {
+    const results = document.getElementById('condition-search-results');
+    if (!results) return;
+    const trimmed = (query || '').trim();
+    if (!trimmed) {
+        results.innerHTML = '<p class="condition-explorer-placeholder">Type to search imported conditions.</p>';
+        return;
+    }
+    setConditionExplorerBusy(true);
+    try {
+        const data = await apiFetch(`/api/v1/conditions/search?q=${encodeURIComponent(trimmed)}&limit=20`);
+        if (!data.items.length) {
+            results.innerHTML = '<p class="condition-explorer-placeholder">No imported conditions matched this query.</p>';
+            return;
+        }
+        results.innerHTML = data.items.map(item => `
+            <button type="button" class="condition-result-item${item.curie === activeConditionCurie ? ' active' : ''}" data-condition-curie="${escapeHtml(item.curie)}">
+                <strong>${escapeHtml(item.label)}</strong>
+                <small>${escapeHtml(item.curie)}</small>
+            </button>
+        `).join('');
+        results.querySelectorAll('[data-condition-curie]').forEach(button => {
+            button.addEventListener('click', () => {
+                void renderConditionExplorer(button.dataset.conditionCurie);
+            });
+        });
+    } catch (error) {
+        results.innerHTML = `<p class="condition-explorer-placeholder">Search unavailable: ${escapeHtml(error.message)}</p>`;
+    } finally {
+        setConditionExplorerBusy(false);
+    }
+}
+
+async function renderConditionExplorer(curie) {
+    const detail = document.getElementById('condition-explorer-detail');
+    const depthSelect = document.getElementById('condition-hierarchy-depth');
+    if (!detail || !curie) return;
+    activeConditionCurie = curie;
+    setConditionExplorerBusy(true);
+    detail.innerHTML = '<p class="condition-explorer-placeholder"><span class="spinner"></span> Loading condition…</p>';
+    const depth = Number(depthSelect?.value || 1);
+    try {
+        const [summary, hierarchy, claims] = await Promise.all([
+            apiFetch(`/api/v1/conditions/${encodeURIComponent(curie)}`),
+            apiFetch(`/api/v1/conditions/${encodeURIComponent(curie)}/hierarchy?depth=${depth}`),
+            apiFetch(`/api/v1/conditions/${encodeURIComponent(curie)}/claims?limit=100`),
+        ]);
+        const synonymChips = (summary.synonyms || []).map(item => `<span class="condition-chip">${escapeHtml(item)}</span>`).join('') || '<span class="condition-empty">No data imported for this section</span>';
+        const mappingChips = (summary.mappings || []).map(item => `<span class="condition-chip" title="${escapeHtml(item.relation)}">${escapeHtml(item.object_curie)}</span>`).join('') || '<span class="condition-empty">No data imported for this section</span>';
+        const hierarchyRows = (hierarchy.nodes || []).filter(node => node.relation !== 'self').map(node => `<div class="condition-chip">${escapeHtml(node.relation)} · ${escapeHtml(node.label)} <small>${escapeHtml(node.curie)}</small></div>`).join('') || '<span class="condition-empty">No data imported for this section</span>';
+        const snapshotRows = (summary.snapshots || []).map(item => `<div class="condition-chip">${escapeHtml(item.resource_name)}@${escapeHtml(item.version)}${item.active ? ' · active' : ''}</div>`).join('') || '<span class="condition-empty">No data imported for this section</span>';
+        const grouped = {};
+        (claims.items || []).forEach(claim => {
+            grouped[claim.predicate] = grouped[claim.predicate] || [];
+            grouped[claim.predicate].push(claim);
+        });
+        const claimGroups = Object.keys(grouped).length
+            ? Object.entries(grouped).map(([predicate, rows]) => `<div class="condition-claim-group"><h4>${escapeHtml(predicate)}</h4>${rows.map(renderConditionClaimRow).join('')}</div>`).join('')
+            : '<span class="condition-empty">No data imported for this section</span>';
+        const readiness = summary.readiness || {};
+        const readinessClass = readiness.ontology_present ? '' : ' partial';
+        detail.innerHTML = `
+            <div class="condition-detail-head">
+                <h3>${escapeHtml(summary.label)}</h3>
+                <p>${escapeHtml(summary.curie)}</p>
+                <p>${summary.definition ? escapeHtml(summary.definition) : '<span class="condition-empty">No data imported for this section</span>'}</p>
+                <p class="condition-explorer-disclaimer">${escapeHtml(summary.disclaimer?.text || 'For research use only.')}</p>
+                <button type="button" class="btn btn-secondary btn-sm" data-action="compare-with-condition" data-condition-curie="${escapeHtml(summary.curie)}">Compare with…</button>
+            </div>
+            <div class="condition-readiness">
+                <span class="${readinessClass}">${readiness.ontology_present ? 'Ontology imported' : 'Ontology missing'}</span>
+                <span class="${readiness.legacy_curated ? '' : ' partial'}">${readiness.legacy_curated ? 'Legacy curated projection active' : 'Legacy projection optional'}</span>
+                ${readiness.legacy_disease_id ? `<span>Legacy module: ${escapeHtml(readiness.legacy_disease_id)}</span>` : ''}
+            </div>
+            <div class="condition-section"><h4>Synonyms</h4><div class="condition-chip-list">${synonymChips}</div></div>
+            <div class="condition-section"><h4>Mappings</h4><div class="condition-chip-list">${mappingChips}</div></div>
+            <div class="condition-section"><h4>Hierarchy</h4>${hierarchyRows}</div>
+            <div class="condition-section"><h4>Claims</h4>${claimGroups}</div>
+            <div class="condition-section"><h4>Active snapshots</h4>${snapshotRows}</div>`;
+        const searchInput = document.getElementById('condition-search-input');
+        if (searchInput && searchInput.value.trim()) {
+            void searchConditions(searchInput.value);
+        }
+    } catch (error) {
+        detail.innerHTML = `<p class="condition-explorer-placeholder">Could not load condition: ${escapeHtml(error.message)}</p>`;
+    } finally {
+        setConditionExplorerBusy(false);
+    }
+}
+
+function initConditionCurieTomSelect(selector) {
+    if (typeof TomSelect === 'undefined') return null;
+    const element = document.querySelector(selector);
+    if (!element) return null;
+    return new TomSelect(element, {
+        valueField: 'curie',
+        labelField: 'label',
+        searchField: ['label', 'curie'],
+        maxOptions: 20,
+        create: false,
+        placeholder: 'Search imported conditions…',
+        load(query, callback) {
+            const trimmed = (query || '').trim();
+            if (trimmed.length < 2) return callback();
+            apiFetch(`/api/v1/conditions/search?q=${encodeURIComponent(trimmed)}&limit=20`)
+                .then(data => callback((data.items || []).map(item => ({
+                    curie: item.curie,
+                    label: item.label || item.curie,
+                }))))
+                .catch(() => callback());
+        },
+        render: {
+            option(data, escape) {
+                return `<div><strong>${escapeHtml(data.label)}</strong><br><small>${escapeHtml(data.curie)}</small></div>`;
+            },
+            item(data, escape) {
+                return `<div>${escapeHtml(data.label || data.curie)}</div>`;
+            },
+        },
+    });
+}
+
+function setComparisonCurie(side, curie, label) {
+    const control = side === 'left' ? comparisonLeftControl : comparisonRightControl;
+    if (!control || !curie) return;
+    if (!control.options[curie]) {
+        control.addOption({ curie, label: label || curie });
+    }
+    control.setValue(curie, true);
+}
+
+function openConditionComparison(leftCurie, rightCurie, leftLabel, rightLabel) {
+    window.location.hash = 'condition-comparison';
+    if (leftCurie) setComparisonCurie('left', leftCurie, leftLabel);
+    if (rightCurie) setComparisonCurie('right', rightCurie, rightLabel);
+}
+
+async function loadBiomedImportStatus() {
+    const panel = document.getElementById('biomed-import-status-panel');
+    if (!panel) return;
+    try {
+        const data = await apiFetch('/api/v1/snapshots?limit=50');
+        if (!data.items?.length) {
+            panel.innerHTML = '<p class="condition-explorer-placeholder">No imported snapshots found. Run biomed import fixtures or full import.</p>';
+            return;
+        }
+        const rows = data.items.map(item => `
+            <tr>
+                <td>${escapeHtml(item.resource_name)}</td>
+                <td>${escapeHtml(item.version)}</td>
+                <td><code>${escapeHtml(item.checksum || '—')}</code></td>
+                <td>${item.active ? 'active' : 'inactive'}</td>
+            </tr>`).join('');
+        panel.innerHTML = `
+            <table class="biomed-import-status-table">
+                <thead><tr><th>Resource</th><th>Version</th><th>Checksum</th><th>Status</th></tr></thead>
+                <tbody>${rows}</tbody>
+            </table>`;
+    } catch (error) {
+        panel.innerHTML = `<p class="condition-explorer-placeholder">Import status unavailable: ${escapeHtml(error.message)}</p>`;
+    }
+}
+
+function handleUniversalDeepLinks() {
+    const params = new URLSearchParams(window.location.search);
+    const curie = params.get('curie');
+    const left = params.get('left');
+    const right = params.get('right');
+    if (curie) {
+        window.location.hash = 'condition-explorer';
+        void renderConditionExplorer(curie);
+    }
+    if (left || right) {
+        openConditionComparison(left || '', right || '');
+    }
+}
+
+function initConditionExplorer() {
+    const searchInput = document.getElementById('condition-search-input');
+    const depthSelect = document.getElementById('condition-hierarchy-depth');
+    if (!searchInput) return;
+    searchInput.addEventListener('input', () => {
+        window.clearTimeout(conditionSearchTimer);
+        conditionSearchTimer = window.setTimeout(() => {
+            void searchConditions(searchInput.value);
+        }, 250);
+    });
+    depthSelect?.addEventListener('change', () => {
+        if (activeConditionCurie) void renderConditionExplorer(activeConditionCurie);
+    });
+}
+
+function setConditionComparisonBusy(isBusy) {
+    const panel = document.getElementById('condition-comparison-panel');
+    if (panel) panel.setAttribute('aria-busy', String(isBusy));
+}
+
+function renderComparisonComponentBars(components, effectiveWeights) {
+    const entries = Object.entries(components || {}).filter(([key, value]) => typeof value === 'number' && key !== 'negative_phenotype');
+    if (!entries.length) return '<p class="condition-comparison-placeholder">No comparable component scores.</p>';
+    return entries.map(([key, value]) => {
+        const pct = Math.max(0, Math.min(100, Math.round(value * 100)));
+        const weight = effectiveWeights?.[key];
+        const weightLabel = typeof weight === 'number' ? ` · weight ${(weight * 100).toFixed(0)}%` : '';
+        return `<div class="condition-comparison-bar-row">
+            <span>${escapeHtml(key)}${escapeHtml(weightLabel)}</span>
+            <div class="condition-comparison-bar"><span style="width:${pct}%"></span></div>
+            <span>${pct}%</span>
+        </div>`;
+    }).join('');
+}
+
+function renderComparisonEntityLists(sharedEntities, distinguishingEntities) {
+    const shared = Object.entries(sharedEntities || {}).map(([dimension, items]) => {
+        if (!items?.length) return '';
+        return `<div><strong>Shared ${escapeHtml(dimension)}</strong><div class="condition-chip-list">${items.map(item => `<span class="condition-chip">${escapeHtml(item)}</span>`).join('')}</div></div>`;
+    }).join('');
+    const distinguishing = Object.entries(distinguishingEntities || {}).map(([dimension, sides]) => {
+        const leftOnly = sides?.left_only || [];
+        const rightOnly = sides?.right_only || [];
+        if (!leftOnly.length && !rightOnly.length) return '';
+        return `<div><strong>Distinguishing ${escapeHtml(dimension)}</strong>
+            ${leftOnly.length ? `<div>Left only: ${leftOnly.map(item => `<span class="condition-chip">${escapeHtml(item)}</span>`).join('')}</div>` : ''}
+            ${rightOnly.length ? `<div>Right only: ${rightOnly.map(item => `<span class="condition-chip">${escapeHtml(item)}</span>`).join('')}</div>` : ''}
+        </div>`;
+    }).join('');
+    if (!shared && !distinguishing) {
+        return '<p class="condition-comparison-placeholder">No shared or distinguishing entities reported.</p>';
+    }
+    return `<div class="condition-comparison-entities">${shared}${distinguishing}</div>`;
+}
+
+function renderComparisonResult(result) {
+    const container = document.getElementById('condition-comparison-result');
+    if (!container || !result) return;
+    const disclaimer = escapeHtml(result.disclaimer?.text || 'For research and exploratory analysis only.');
+    if (result.status === 'insufficient_data') {
+        const missing = (result.coverage?.missing_dimensions || []).join(', ') || 'required dimensions';
+        container.innerHTML = `
+            <p class="condition-comparison-score">Insufficient comparable data</p>
+            <p class="condition-comparison-placeholder">This comparison could not produce a numeric overall score. Missing or non-overlapping dimensions: ${escapeHtml(missing)}.</p>
+            <p class="condition-comparison-meta">run_id: ${escapeHtml(result.run_id)}</p>
+            <p class="condition-comparison-disclaimer">${disclaimer}</p>`;
+        return;
+    }
+    const overall = typeof result.overall_score === 'number' ? `${Math.round(result.overall_score * 100)}% condition similarity` : 'No overall score';
+    const coverage = result.coverage || {};
+    const coverageBadges = (coverage.comparable_dimensions || []).map(item => `<span class="condition-chip">${escapeHtml(item)} comparable</span>`).join('');
+    container.innerHTML = `
+        <p class="condition-comparison-score">${escapeHtml(overall)}</p>
+        <p class="condition-comparison-meta">${escapeHtml(result.left_curie)} vs ${escapeHtml(result.right_curie)} · algorithm ${escapeHtml(result.algorithm_id)} v${escapeHtml(result.algorithm_version)}</p>
+        <div class="condition-chip-list">${coverageBadges}</div>
+        ${renderComparisonComponentBars(result.components, result.effective_weights)}
+        ${renderComparisonEntityLists(result.shared_entities, result.distinguishing_entities)}
+        <p class="condition-comparison-meta">run_id: <a href="#condition-comparison">${escapeHtml(result.run_id)}</a> · snapshots: ${(result.snapshot_ids || []).map(item => escapeHtml(item)).join(', ') || 'none'}</p>
+        <p class="condition-comparison-disclaimer">${disclaimer}</p>`;
+}
+
+async function compareConditions() {
+    const leftInput = document.getElementById('comparison-left-curie');
+    const rightInput = document.getElementById('comparison-right-curie');
+    const container = document.getElementById('condition-comparison-result');
+    if (!leftInput || !rightInput || !container) return;
+    const left = comparisonLeftControl?.getValue() || leftInput.value.trim();
+    const right = comparisonRightControl?.getValue() || rightInput.value.trim();
+    if (!left || !right) {
+        container.innerHTML = '<p class="condition-comparison-placeholder">Enter both condition CURIEs before comparing.</p>';
+        return;
+    }
+    setConditionComparisonBusy(true);
+    container.innerHTML = '<p class="condition-comparison-placeholder"><span class="spinner"></span> Running comparison…</p>';
+    try {
+        const result = await apiFetch('/api/v1/comparisons', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ left_curie: left, right_curie: right }),
+        });
+        renderComparisonResult(result);
+    } catch (error) {
+        container.innerHTML = `<p class="condition-comparison-placeholder">Comparison failed: ${escapeHtml(error.message)}</p>`;
+    } finally {
+        setConditionComparisonBusy(false);
+    }
+}
+
+function initConditionComparison() {
+    const button = document.getElementById('comparison-run-btn');
+    const leftInput = document.getElementById('comparison-left-curie');
+    const rightInput = document.getElementById('comparison-right-curie');
+    if (!button || !leftInput || !rightInput) return;
+    comparisonLeftControl = initConditionCurieTomSelect('#comparison-left-curie');
+    comparisonRightControl = initConditionCurieTomSelect('#comparison-right-curie');
+    button.addEventListener('click', () => { void compareConditions(); });
+    [leftInput, rightInput].forEach(input => {
+        input.addEventListener('keydown', event => {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                void compareConditions();
+            }
+        });
+    });
+}
+
 async function showKGNodeDetail(nodeId) {
     const panel = document.getElementById('kg-detail');
     if (!panel) return;
@@ -2673,30 +3037,215 @@ async function previewRestore(index) {
 
 async function checkAPIStatus() {
     const indicator = document.getElementById('api-status');
+    const statApi = document.getElementById('stat-api-status');
     try {
-        await apiFetch('/api/health');
-        indicator.textContent = '●';
-        indicator.className = 'nav-link nav-status online';
-        indicator.title = 'API Connected';
+        const health = await apiFetch('/api/health');
+        if (indicator) {
+            indicator.textContent = '●';
+            indicator.className = 'nav-link nav-status online';
+            indicator.title = 'API Connected';
+        }
+        if (statApi) {
+            statApi.textContent = 'Online';
+            statApi.className = 'stat-value stat-color-green';
+        }
+        const badge = document.getElementById('api-badge');
+        if (badge && health.version) badge.textContent = `⚡ API v${health.version}`;
+        return health;
     } catch {
-        indicator.textContent = '●';
-        indicator.className = 'nav-link nav-status offline';
-        indicator.title = 'API Disconnected';
+        if (indicator) {
+            indicator.textContent = '●';
+            indicator.className = 'nav-link nav-status offline';
+            indicator.title = 'API Disconnected';
+        }
+        if (statApi) {
+            statApi.textContent = 'Offline';
+            statApi.className = 'stat-value';
+            statApi.style.color = '#f87171';
+        }
+        return null;
     }
 }
 
+function setStatsLoading(loading) {
+    document.querySelectorAll('.stat-card .stat-value').forEach(el => {
+        el.closest('.stat-card')?.classList.toggle('is-loading', loading);
+    });
+}
+
+function animateStatValue(el, value) {
+    if (!el) return;
+    el.classList.remove('is-loading');
+    const text = typeof value === 'number' ? value.toLocaleString() : String(value);
+    el.textContent = text;
+}
+
 async function loadPlatformStats() {
+    setStatsLoading(true);
     try {
         const stats = await apiFetch(`/api/stats?${diseaseQS()}`);
-        document.getElementById('stat-kg-nodes').textContent = stats.kg_nodes;
-        document.getElementById('stat-genes').textContent = stats.genes;
-        document.getElementById('stat-candidates').textContent = stats.candidates;
-        document.getElementById('stat-edges').textContent = stats.kg_edges;
+        animateStatValue(document.getElementById('stat-kg-nodes'), stats.kg_nodes);
+        animateStatValue(document.getElementById('stat-genes'), stats.genes);
+        animateStatValue(document.getElementById('stat-candidates'), stats.candidates);
+        animateStatValue(document.getElementById('stat-edges'), stats.kg_edges);
+        animateStatValue(document.getElementById('stat-drugs'), stats.drugs);
+        animateStatValue(document.getElementById('stat-pathways'), stats.pathways);
+        animateStatValue(document.getElementById('stat-modules'), stats.modules);
+        animateStatValue(document.getElementById('stat-diseases'), stats.diseases);
+
         const label = document.getElementById('stat-genes-label');
-        if (label) label.textContent = `${activeDiseaseInfo().label} Genes`;
+        if (label) label.textContent = `${stats.disease_name || activeDiseaseInfo().name} Genes`;
+
+        const diseaseTitle = document.getElementById('stats-disease-title');
+        if (diseaseTitle) {
+            diseaseTitle.textContent = stats.disease_name || activeDiseaseInfo().name;
+        }
     } catch {
-        // Stats will show '…' placeholders
+        setStatsLoading(false);
     }
+}
+
+function coverageBadgeForLevel(level, status) {
+    const label = level === 'full' ? 'Full'
+        : level === 'partial' || status === 'limited_coverage' ? 'Limited'
+        : level === 'unsupported' ? 'Unsupported' : 'Unknown';
+    const cls = level === 'full' ? 'coverage-full'
+        : level === 'partial' || status === 'limited_coverage' ? 'coverage-partial' : 'coverage-unsupported';
+    return { label, cls };
+}
+
+async function refreshModuleMetadata() {
+    const diseaseId = getActiveDisease();
+    let modulesData;
+    let stats;
+    try {
+        [modulesData, stats] = await Promise.all([
+            apiFetch(`/api/system/modules?disease=${encodeURIComponent(diseaseId)}`),
+            apiFetch(`/api/stats?${diseaseQS()}`),
+        ]);
+    } catch {
+        return;
+    }
+
+    const byRegistryId = {};
+    for (const mod of (modulesData.modules || [])) {
+        byRegistryId[mod.module_id] = mod;
+    }
+
+    document.querySelectorAll('.module-card[data-module]').forEach(card => {
+        const dashId = card.dataset.module;
+        const registryId = DASHBOARD_MODULE_REGISTRY[dashId] || dashId;
+        const mod = byRegistryId[registryId];
+        const badge = card.querySelector('.module-coverage-badge');
+        if (badge && mod?.coverage) {
+            const { label, cls } = coverageBadgeForLevel(mod.coverage.level, mod.coverage.status);
+            badge.textContent = label;
+            badge.className = `module-coverage-badge coverage-badge ${cls}`;
+            badge.title = [...(mod.coverage.missing_inputs || []), ...(mod.coverage.warnings || [])].join('; ');
+        }
+
+        const tagsEl = card.querySelector('[data-dynamic-tags]');
+        if (!tagsEl) return;
+        const kind = tagsEl.dataset.dynamicTags;
+        if (kind === 'kg') {
+            tagsEl.innerHTML = `
+                <span class="tag green">${stats.genes} genes</span>
+                <span class="tag blue">${stats.drugs} drugs</span>
+                <span class="tag purple">${stats.pathways} pathways</span>
+                <span class="tag yellow">vis-network</span>`;
+        } else if (kind === 'repurpose') {
+            tagsEl.innerHTML = `
+                <span class="tag blue">Scoring Engine</span>
+                <span class="tag purple">${stats.candidates} candidates</span>
+                <span class="tag green">${stats.genes} genes</span>`;
+        }
+    });
+
+    document.querySelectorAll('.module-report-link[data-report-module]').forEach(link => {
+        const mod = link.dataset.reportModule;
+        if (MODULES_WITHOUT_STATIC_REPORT.has(mod)) {
+            link.title = 'No static report — use the Evidence Workspace';
+        }
+    });
+}
+
+async function refreshDashboardForDisease(diseaseId) {
+    if (dashboardRefreshing) return;
+    dashboardRefreshing = true;
+    window.localStorage.setItem('active-disease', diseaseId);
+    if (diseaseSelectControl && diseaseSelectControl.getValue() !== diseaseId) {
+        diseaseSelectControl.setValue(diseaseId, true);
+    }
+    updateDiseaseDisplay();
+    setStatsLoading(true);
+    try {
+        await Promise.all([
+            loadPlatformStats(),
+            refreshModuleMetadata(),
+            initKGExplorer(),
+            loadExportGrid(),
+        ]);
+    } catch (error) {
+        console.error('Soft disease refresh failed; reloading page.', error);
+        window.location.reload();
+        return;
+    } finally {
+        dashboardRefreshing = false;
+    }
+}
+
+function setupNavUi() {
+    const toggle = document.getElementById('nav-toggle');
+    const menu = document.getElementById('nav-menu');
+    if (toggle && menu) {
+        toggle.addEventListener('click', () => {
+            const open = menu.classList.toggle('is-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+    }
+
+    const updateActiveNav = () => {
+        const hash = window.location.hash.replace('#', '') || 'evidence-workspace';
+        document.querySelectorAll('.nav-link[data-nav]').forEach(link => {
+            link.classList.toggle('active', link.dataset.nav === hash);
+        });
+    };
+    window.addEventListener('hashchange', updateActiveNav);
+    updateActiveNav();
+}
+
+function initDiseaseTomSelect(selector, diseases, active) {
+    if (typeof TomSelect === 'undefined') return null;
+
+    const options = diseases.map(d => ({
+        value: d.id,
+        text: d.name,
+        genes: d.genes,
+    }));
+
+    const control = new TomSelect(selector, {
+        options,
+        items: active ? [active] : [],
+        maxOptions: 50,
+        searchField: ['text'],
+        placeholder: 'Search diseases…',
+        allowEmptyOption: false,
+        onChange(value) {
+            if (!value || value === getActiveDisease()) return;
+            void onDiseaseChange(value);
+        },
+        render: {
+            option(data, escape) {
+                const genes = data.genes ? ` <small>(${data.genes} genes)</small>` : '';
+                return `<div>${escape(data.text)}${genes}</div>`;
+            },
+            item(data, escape) {
+                return `<div>${escape(data.text)}</div>`;
+            },
+        },
+    });
+    control.wrapper.classList.add('nav-select-ts');
+    return control;
 }
 
 function activeDiseaseInfo() {
@@ -2717,8 +3266,7 @@ function updateDiseaseDisplay() {
 // ── Bootstrap ────────────────────────────────────────────────────────────
 
 function onDiseaseChange(diseaseId) {
-    window.localStorage.setItem('active-disease', diseaseId);
-    window.location.reload();
+    void refreshDashboardForDisease(diseaseId);
 }
 
 // All dashboard controls use native buttons/forms plus delegated data actions.
@@ -2754,6 +3302,11 @@ function setupDashboardActions() {
             case 'disease-manager-prune': void runPrunePreview(); break;
             case 'disease-manager-restore': void previewRestore(Number(control.dataset.backupIndex)); break;
             case 'kg-reset': resetKGExplorer(); break;
+            case 'compare-with-condition': {
+                const curie = control.dataset.conditionCurie;
+                if (curie) openConditionComparison(curie, '', control.dataset.conditionLabel || curie, '');
+                break;
+            }
             default: break;
         }
     });
@@ -2785,20 +3338,13 @@ async function loadDiseaseSelector() {
     try {
         const data = await apiFetch('/api/system/diseases');
         diseases = (data && data.diseases) || [];
-        diseaseCache.list = diseases;  // only on success — never the fallback list
+        diseaseCache.list = diseases;
         fetched = true;
     } catch {
-        // API unavailable — keep a minimal fallback so the app still works
-        diseases = [{ id: 'sle', name: 'Systemic Lupus Erythematosus' }];
+        diseases = [{ id: 'sle', name: 'Systemic Lupus Erythematosus', genes: 0 }];
     }
 
-    const options = diseases.map(d =>
-        `<option value="${escapeHtml(d.id)}">${escapeHtml(d.name)}${d.genes ? ` (${d.genes} genes)` : ''}</option>`).join('');
-    selector.innerHTML = options;
-
     let active = getActiveDisease();
-    // Only validate/reset the stored pick when the registry fetch succeeded;
-    // a transient API outage must not clobber the user's saved disease.
     if (fetched) {
         const known = diseases.some(d => d.id === active);
         if (!known) {
@@ -2806,17 +3352,40 @@ async function loadDiseaseSelector() {
             window.localStorage.setItem('active-disease', active);
         }
     }
+
+    if (diseaseSelectControl) {
+        diseaseSelectControl.destroy();
+        diseaseSelectControl = null;
+    }
+
+    const options = diseases.map(d =>
+        `<option value="${escapeHtml(d.id)}">${escapeHtml(d.name)}${d.genes ? ` (${d.genes} genes)` : ''}</option>`).join('');
+    selector.innerHTML = options;
     selector.value = active;
+
+    if (typeof TomSelect !== 'undefined') {
+        diseaseSelectControl = initDiseaseTomSelect(selector, diseases, active);
+    } else {
+        selector.addEventListener('change', () => {
+            if (selector.value) onDiseaseChange(selector.value);
+        });
+    }
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
     setupDashboardActions();
+    setupNavUi();
     const linkedParams = new URLSearchParams(window.location.search);
     await loadDiseaseSelector();
     updateDiseaseDisplay();
-    checkAPIStatus();
-    loadPlatformStats();
+    await checkAPIStatus();
+    await loadPlatformStats();
+    await refreshModuleMetadata();
     initKGExplorer();
+    initConditionExplorer();
+    initConditionComparison();
+    void loadBiomedImportStatus();
+    handleUniversalDeepLinks();
     loadExportGrid();
     loadWorkspaceAuth();
     loadWorkspaceHistory();
