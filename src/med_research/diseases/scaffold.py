@@ -38,13 +38,14 @@ from pathlib import Path
 from typing import Any, Callable, Optional, Union, cast
 
 from med_research.cache import CacheManager
+from med_research.exceptions import ConfigurationError
 from med_research.logging_config import get_logger
 
 logger = get_logger(__name__)
 
 # ── External API endpoints ───────────────────────────────────────────────
 
-OPENTARGETS_URL = "https://platform-api.opentargets.org/v4/graphql"
+OPENTARGETS_URL = "https://api.platform.opentargets.org/api/v4/graphql"
 GWAS_API = "https://www.ebi.ac.uk/gwas/rest/api"
 REACTOME_API = "https://reactome.org/ContentService"
 USER_AGENT = "med-research-platform/2.0 (disease scaffold)"
@@ -60,7 +61,8 @@ query($q: String!) {
 _OT_TARGETS_QUERY = """
 query($efo: String!, $size: Int!) {
   disease(efoId: $efo) {
-    id name synonyms description { value }
+    id name description
+    synonyms { relation terms }
     associatedTargets(page: { index: 0, size: $size }) {
       count
       rows {
@@ -72,15 +74,18 @@ query($efo: String!, $size: Int!) {
 }
 """
 _OT_DRUGS_QUERY = """
-query($efo: String!, $size: Int!) {
+query($efo: String!) {
   disease(efoId: $efo) {
-    knownDrugs(size: $size) {
+    drugAndClinicalCandidates {
       count
       rows {
-        drug { id name drugType }
-        maximumClinicalTrialPhase
-        target { approvedSymbol }
-        mechanismsOfAction { rows { actionType mechanismOfAction target { approvedSymbol } } }
+        maxClinicalStage
+        drug {
+          id name drugType
+          mechanismsOfAction {
+            rows { actionType mechanismOfAction targets { approvedSymbol } }
+          }
+        }
       }
     }
   }
@@ -90,35 +95,37 @@ query($efo: String!, $size: Int!) {
 
 # ── HTTP helpers (module-level so tests can monkeypatch them) ────────────
 
+
 def _http_get_json(url: str, params: Optional[dict] = None, timeout: int = 30) -> Optional[dict]:
     """GET a JSON endpoint; return None on any failure (scaffold degrades gracefully)."""
     import requests
 
     try:
+        import requests
+
         resp = requests.get(url, params=params, timeout=timeout, headers={"User-Agent": USER_AGENT})
         resp.raise_for_status()
         return cast(dict, resp.json())
-    except Exception as e:  # noqa: BLE001 — scaffold must degrade gracefully
+    except requests.exceptions.RequestException as e:
         logger.warning("GET %s failed: %s", url, e)
         return None
 
 
-def _http_post_json(url: str, payload: dict, timeout: int = 30) -> Optional[dict]:
+def _http_post_json(url: str, payload: dict, timeout: int = 60) -> Optional[dict]:
     """POST a JSON payload (GraphQL); return None on any failure."""
     import requests
 
     try:
-        resp = requests.post(
-            url, json=payload, timeout=timeout, headers={"User-Agent": USER_AGENT}
-        )
+        resp = requests.post(url, json=payload, timeout=timeout, headers={"User-Agent": USER_AGENT})
         resp.raise_for_status()
         return cast(dict, resp.json())
-    except Exception as e:  # noqa: BLE001
+    except requests.exceptions.RequestException as e:
         logger.warning("POST %s failed: %s", url, e)
         return None
 
 
 # ── Identifiers & helpers ────────────────────────────────────────────────
+
 
 def sanitize_id(name: str) -> str:
     """Turn a free-form name into a lowercase slug usable as a disease ID."""
@@ -137,6 +144,7 @@ def _first(items: list) -> Optional[str]:
 
 # ── Open Targets Platform ────────────────────────────────────────────────
 
+
 def search_efo_id(name: str) -> Optional[str]:
     """Resolve a disease name to an Open Targets EFO id (e.g. EFO_0001370)."""
     if not name:
@@ -149,8 +157,10 @@ def search_efo_id(name: str) -> Optional[str]:
         return None
     hits = ((data.get("data") or {}).get("search") or {}).get("hits") or []
     for hit in hits:
-        if hit.get("entity") == "disease" and hit.get("id", "").startswith("EFO_"):
-            return cast(str, hit["id"])
+        if hit.get("entity") == "disease":
+            hit_id = hit.get("id", "")
+            if hit_id.startswith(("EFO_", "MONDO_")):
+                return cast(str, hit_id)
     return None
 
 
@@ -165,19 +175,18 @@ def fetch_ot_disease_info(efo_id: str) -> dict:
     disease = (data.get("data") or {}).get("disease") or {}
     synonyms = disease.get("synonyms") or []
     name = disease.get("name") or ""
-    # synonyms can be a list of strings or of {term} dicts in some responses
-    cleaned = [
-        s.get("term", s) if isinstance(s, dict) else s
-        for s in synonyms
-        if isinstance(s, (dict, str))
-    ]
-    description = ""
-    raw_desc = disease.get("description")
-    # OT v4 returns a single {value} object; some mirror/legacy shapes are lists
-    if isinstance(raw_desc, dict):
-        description = raw_desc.get("value", "")
-    elif isinstance(raw_desc, list) and raw_desc:
-        description = raw_desc[0].get("value", "") if isinstance(raw_desc[0], dict) else ""
+    cleaned: list[str] = []
+    for s in synonyms:
+        if isinstance(s, dict):
+            cleaned.extend(term for term in (s.get("terms") or []) if isinstance(term, str))
+        elif isinstance(s, str):
+            cleaned.append(s)
+    description = disease.get("description") or ""
+    if isinstance(description, dict):
+        description = description.get("value", "")
+    elif isinstance(description, list) and description:
+        first = description[0]
+        description = first.get("value", "") if isinstance(first, dict) else str(first)
     return {"name": name, "synonyms": cleaned[:5], "description": description}
 
 
@@ -204,11 +213,13 @@ def fetch_ot_associated_targets(efo_id: str, max_genes: int = 60) -> list[dict]:
         biotype = target.get("biotype", "")
         if biotype and biotype != "protein_coding":
             continue
-        targets.append({
-            "symbol": symbol,
-            "name": target.get("approvedName") or symbol,
-            "score": row.get("score"),
-        })
+        targets.append(
+            {
+                "symbol": symbol,
+                "name": target.get("approvedName") or symbol,
+                "score": row.get("score"),
+            }
+        )
     targets.sort(key=lambda t: t["score"] or 0, reverse=True)
     return targets[:max_genes]
 
@@ -220,26 +231,37 @@ def fetch_ot_known_drugs(efo_id: str, max_drugs: int = 60) -> list[dict]:
     """
     data = _http_post_json(
         OPENTARGETS_URL,
-        {"query": _OT_DRUGS_QUERY, "variables": {"efo": efo_id, "size": max_drugs}},
+        {"query": _OT_DRUGS_QUERY, "variables": {"efo": efo_id}},
     )
     if not data:
         return []
     disease = (data.get("data") or {}).get("disease") or {}
-    rows = (disease.get("knownDrugs") or {}).get("rows") or []
+    known_drugs = disease.get("knownDrugs") or {}
+    clinical = disease.get("drugAndClinicalCandidates") or {}
+    rows = (known_drugs.get("rows") or clinical.get("rows") or [])
     drugs = []
     for row in rows:
         drug = row.get("drug") or {}
         drug_id = drug.get("id") or ""
         if not drug_id:
             continue
-        # Targets from the row level and/or mechanism rows
-        targets = []
+        targets: list[str] = []
         mechanism = ""
-        mechanisms = ((row.get("mechanismsOfAction") or {}).get("rows")) or []
+        mechanisms = ((row.get("mechanismsOfAction") or drug.get("mechanismsOfAction") or {}).get(
+            "rows"
+        )) or []
         for m in mechanisms:
-            target = (m.get("target") or {}).get("approvedSymbol")
-            if target and target not in targets:
-                targets.append(target)
+            for target_obj in m.get("targets") or []:
+                target = (
+                    target_obj.get("approvedSymbol")
+                    if isinstance(target_obj, dict)
+                    else None
+                )
+                if target and target not in targets:
+                    targets.append(target)
+            legacy_target = (m.get("target") or {}).get("approvedSymbol")
+            if legacy_target and legacy_target not in targets:
+                targets.append(legacy_target)
             moa = m.get("mechanismOfAction") or m.get("actionType") or ""
             if moa and not mechanism:
                 mechanism = moa
@@ -247,15 +269,17 @@ def fetch_ot_known_drugs(efo_id: str, max_drugs: int = 60) -> list[dict]:
         if row_target and row_target not in targets:
             targets.append(row_target)
 
-        drugs.append({
-            "id": drug_id,
-            "name": drug.get("name") or drug_id,
-            "type": drug.get("drugType") or "",
-            "phase": row.get("maximumClinicalTrialPhase"),
-            "status": row.get("status") or "",
-            "targets": targets,
-            "mechanism": mechanism,
-        })
+        drugs.append(
+            {
+                "id": drug_id,
+                "name": drug.get("name") or drug_id,
+                "type": drug.get("drugType") or "",
+                "phase": row.get("maximumClinicalTrialPhase", row.get("maxClinicalStage")),
+                "status": row.get("status") or "",
+                "targets": targets,
+                "mechanism": mechanism,
+            }
+        )
     # Prefer drugs with a target and a phase; keep API order otherwise.
     drugs.sort(
         key=lambda d: (not d["targets"], d.get("phase") is None),
@@ -264,6 +288,7 @@ def fetch_ot_known_drugs(efo_id: str, max_drugs: int = 60) -> list[dict]:
 
 
 # ── GWAS Catalog (reuses the proven parsing in bioinformatics/gwas.py) ───
+
 
 def _gwas_genes_for_trait(trait: str, max_studies: int = 15) -> list[dict]:
     """Return author-reported genes for a trait via the GWAS Catalog.
@@ -283,16 +308,19 @@ def _gwas_genes_for_trait(trait: str, max_studies: int = 15) -> list[dict]:
     results = extract_gene_associations(studies, max_studies=max_studies, resolve_snps=False)
     genes = []
     for symbol, info in results.get("gene_associations", {}).items():
-        genes.append({
-            "symbol": symbol,
-            "n_studies": info.get("n_studies", 1),
-            "best_p": info.get("best_p_value"),
-        })
-    genes.sort(key=lambda g: (g["n_studies"] or 0), reverse=True)
+        genes.append(
+            {
+                "symbol": symbol,
+                "n_studies": info.get("n_studies", 1),
+                "best_p": info.get("best_p_value"),
+            }
+        )
+    genes.sort(key=lambda g: g["n_studies"] or 0, reverse=True)
     return genes
 
 
 # ── Reactome ─────────────────────────────────────────────────────────────
+
 
 def fetch_reactome_pathways(name: str, max_pathways: int = 15) -> list[dict]:
     """Search Reactome for disease-relevant canonical pathways.
@@ -300,7 +328,7 @@ def fetch_reactome_pathways(name: str, max_pathways: int = 15) -> list[dict]:
     Returns a list of ``{"id", "name", "description"}`` for pathway hits.
     """
     data = _http_get_json(
-        f"{REACTOME_API}/data/query/search",
+        f"{REACTOME_API}/search/query",
         params={"query": name, "types": "Pathway", "species": "Homo sapiens"},
         timeout=30,
     )
@@ -310,11 +338,13 @@ def fetch_reactome_pathways(name: str, max_pathways: int = 15) -> list[dict]:
     for hit in data:
         if hit.get("schemaClass") != "Pathway":
             continue
-        pathways.append({
-            "id": hit.get("stId") or "",
-            "name": hit.get("displayName") or "",
-            "description": (hit.get("description") or "").get("value", ""),
-        })
+        pathways.append(
+            {
+                "id": hit.get("stId") or "",
+                "name": hit.get("displayName") or "",
+                "description": (hit.get("description") or "").get("value", ""),
+            }
+        )
     return [p for p in pathways if p["id"] and p["name"]][:max_pathways]
 
 
@@ -339,7 +369,18 @@ KEYWORD_PATHWAYS: dict[str, dict] = {
     "type1-ifn": {
         "name": "Type I Interferon Pathway",
         "description": "IFN-α/β production and signaling through IFNAR; drives the interferon gene signature in autoimmune disease.",
-        "keywords": ["IFN", "IRF", "MX1", "OAS", "ISG15", "STAT1", "ADAR", "IFIH1", "RIGI", "DDX58"],
+        "keywords": [
+            "IFN",
+            "IRF",
+            "MX1",
+            "OAS",
+            "ISG15",
+            "STAT1",
+            "ADAR",
+            "IFIH1",
+            "RIGI",
+            "DDX58",
+        ],
     },
     "il6-signaling": {
         "name": "IL-6 Signaling",
@@ -364,17 +405,62 @@ KEYWORD_PATHWAYS: dict[str, dict] = {
     "bcr-signaling": {
         "name": "B Cell Receptor Signaling",
         "description": "BCR signal transduction controlling B cell survival, proliferation, and antibody production.",
-        "keywords": ["CD19", "MS4A1", "CD20", "BLK", "BANK1", "BTK", "SYK", "LYN", "CD79", "PLCG2", "BCMA", "TNFRSF17", "CD22", "SIGLEC"],
+        "keywords": [
+            "CD19",
+            "MS4A1",
+            "CD20",
+            "BLK",
+            "BANK1",
+            "BTK",
+            "SYK",
+            "LYN",
+            "CD79",
+            "PLCG2",
+            "BCMA",
+            "TNFRSF17",
+            "CD22",
+            "SIGLEC",
+        ],
     },
     "tcr-signaling": {
         "name": "T Cell Receptor Signaling",
         "description": "TCR signal transduction and T cell activation; a therapeutic hub in autoimmunity.",
-        "keywords": ["CD3", "CD28", "CTLA4", "ICOS", "LAT", "ZAP70", "LCK", "PTPN22", "THEMIS", "CD8", "CD4"],
+        "keywords": [
+            "CD3",
+            "CD28",
+            "CTLA4",
+            "ICOS",
+            "LAT",
+            "ZAP70",
+            "LCK",
+            "PTPN22",
+            "THEMIS",
+            "CD8",
+            "CD4",
+        ],
     },
     "complement": {
         "name": "Complement Cascade",
         "description": "Classical, lectin, and alternative complement pathways for opsonization, lysis, and immune complex clearance.",
-        "keywords": ["C1Q", "C1QA", "C1QB", "C1QC", "C4A", "C4B", "C3AR1", "C5AR1", "CFH", "CFI", "MASP", "MBL", "ITGAM", "CR1", "CR2", "CD46", "SERPING1"],
+        "keywords": [
+            "C1Q",
+            "C1QA",
+            "C1QB",
+            "C1QC",
+            "C4A",
+            "C4B",
+            "C3AR1",
+            "C5AR1",
+            "CFH",
+            "CFI",
+            "MASP",
+            "MBL",
+            "ITGAM",
+            "CR1",
+            "CR2",
+            "CD46",
+            "SERPING1",
+        ],
     },
     "tlr-signaling": {
         "name": "TLR / Innate Sensing",
@@ -384,7 +470,19 @@ KEYWORD_PATHWAYS: dict[str, dict] = {
     "apoptosis": {
         "name": "Apoptosis",
         "description": "Intrinsic and extrinsic programmed cell death; dysregulation contributes to autoimmunity and cancer.",
-        "keywords": ["BCL2", "BAX", "BAD", "BIM", "BCL2L11", "CASP", "FADD", "RIPK", "MCL1", "XIAP", "BIRC"],
+        "keywords": [
+            "BCL2",
+            "BAX",
+            "BAD",
+            "BIM",
+            "BCL2L11",
+            "CASP",
+            "FADD",
+            "RIPK",
+            "MCL1",
+            "XIAP",
+            "BIRC",
+        ],
     },
     "autophagy": {
         "name": "Autophagy",
@@ -409,7 +507,20 @@ KEYWORD_PATHWAYS: dict[str, dict] = {
     "mapk-erk": {
         "name": "MAPK / ERK Signaling",
         "description": "RAS-RAF-MEK-ERK cascade coupling growth factor receptors to proliferation and differentiation.",
-        "keywords": ["MAPK", "ERK", "MEK", "MAP2K", "RAF", "RAS", "KRAS", "NRAS", "HRAS", "BRAF", "EGFR", "FGFR"],
+        "keywords": [
+            "MAPK",
+            "ERK",
+            "MEK",
+            "MAP2K",
+            "RAF",
+            "RAS",
+            "KRAS",
+            "NRAS",
+            "HRAS",
+            "BRAF",
+            "EGFR",
+            "FGFR",
+        ],
     },
     "pi3k-akt-mtor": {
         "name": "PI3K / AKT / mTOR Signaling",
@@ -454,7 +565,17 @@ KEYWORD_PATHWAYS: dict[str, dict] = {
     "bone-remodeling": {
         "name": "Bone Remodeling",
         "description": "RANK-RANKL-OPG axis and osteoclast/osteoblast balance governing skeletal homeostasis.",
-        "keywords": ["RANKL", "TNFSF11", "TNFRSF11A", "RANK", "OPG", "TNFRSF11B", "SOST", "RUNX2", "WNT1"],
+        "keywords": [
+            "RANKL",
+            "TNFSF11",
+            "TNFRSF11A",
+            "RANK",
+            "OPG",
+            "TNFRSF11B",
+            "SOST",
+            "RUNX2",
+            "WNT1",
+        ],
     },
     "mast-cell": {
         "name": "Mast Cell / IgE Signaling",
@@ -464,17 +585,54 @@ KEYWORD_PATHWAYS: dict[str, dict] = {
     "coagulation": {
         "name": "Coagulation Cascade",
         "description": "Plasma coagulation factors and fibrinolysis; a hub for cardiovascular and thrombotic disease.",
-        "keywords": ["F2", "F7", "F8", "F9", "F10", "VWF", "PLAT", "SERPINE1", "FGB", "FGG", "PROC"],
+        "keywords": [
+            "F2",
+            "F7",
+            "F8",
+            "F9",
+            "F10",
+            "VWF",
+            "PLAT",
+            "SERPINE1",
+            "FGB",
+            "FGG",
+            "PROC",
+        ],
     },
     "lipid-metabolism": {
         "name": "Lipid Metabolism",
         "description": "Cholesterol and lipid homeostasis; the therapeutic hub of cardiovascular disease.",
-        "keywords": ["LDLR", "PCSK9", "APOE", "APOB", "HMGCR", "CETP", "LPL", "FABP", "PPARG", "ANGPTL"],
+        "keywords": [
+            "LDLR",
+            "PCSK9",
+            "APOE",
+            "APOB",
+            "HMGCR",
+            "CETP",
+            "LPL",
+            "FABP",
+            "PPARG",
+            "ANGPTL",
+        ],
     },
     "glucose-metabolism": {
         "name": "Glucose Metabolism / Insulin Secretion",
         "description": "Pancreatic β-cell function, insulin secretion, and glycemic control.",
-        "keywords": ["SLC2A", "GCK", "G6PC", "HNF1", "HNF4", "PDX1", "ABCC8", "KCNJ11", "INS", "INSR", "IRS1", "GLP1R", "DPP4"],
+        "keywords": [
+            "SLC2A",
+            "GCK",
+            "G6PC",
+            "HNF1",
+            "HNF4",
+            "PDX1",
+            "ABCC8",
+            "KCNJ11",
+            "INS",
+            "INSR",
+            "IRS1",
+            "GLP1R",
+            "DPP4",
+        ],
     },
     "ecm-remodeling": {
         "name": "ECM Remodeling",
@@ -533,7 +691,7 @@ def keyword_pathways(genes: list[dict]) -> list[dict]:
     """
     matched: dict[str, set[str]] = {}
     for gene in genes:
-        symbol_key = (gene.get("symbol") or gene.get("id") or "")
+        symbol_key = gene.get("symbol") or gene.get("id") or ""
         symbol = symbol_key.upper()
         if not symbol:
             continue
@@ -544,18 +702,21 @@ def keyword_pathways(genes: list[dict]) -> list[dict]:
     pathways = []
     for pid in sorted(matched):
         tmpl = KEYWORD_PATHWAYS[pid]
-        pathways.append({
-            "id": pid,
-            "name": tmpl["name"],
-            "description": tmpl["description"],
-            "key_components": sorted(matched[pid]),
-            "therapeutic_targets": sorted(matched[pid]),
-            "references": [],
-        })
+        pathways.append(
+            {
+                "id": pid,
+                "name": tmpl["name"],
+                "description": tmpl["description"],
+                "key_components": sorted(matched[pid]),
+                "therapeutic_targets": sorted(matched[pid]),
+                "references": [],
+            }
+        )
     return pathways
 
 
 # ── File builders ────────────────────────────────────────────────────────
+
 
 def build_genes_json(
     ot_targets: list[dict],
@@ -590,7 +751,8 @@ def build_genes_json(
     for g in ot_targets:
         score = g.get("score")
         evidence = (
-            f"Open Targets association score {score:.2f}" if score is not None
+            f"Open Targets association score {score:.2f}"
+            if score is not None
             else "Open Targets disease-associated target"
         )
         _add(g["symbol"], name=g.get("name") or g["symbol"], disease_evidence=evidence)
@@ -634,19 +796,21 @@ def build_drugs_json(ot_drugs: list[dict]) -> dict:
         if not d.get("id"):
             continue
         target = _first(d.get("targets") or []) or ""
-        drugs.append({
-            "id": d["id"],
-            "name": d.get("name") or d["id"],
-            "type": d.get("type") or "",
-            "target": target,
-            "mechanism": d.get("mechanism") or "",
-            "approval": _approval_text(d.get("phase"), d.get("status") or ""),
-            "route": "",
-            "efficacy": "",
-            "references": [],
-            "category": "",
-            "disease_evidence": f"Open Targets known-drug association (max phase {d.get('phase') or 'n/a'})",
-        })
+        drugs.append(
+            {
+                "id": d["id"],
+                "name": d.get("name") or d["id"],
+                "type": d.get("type") or "",
+                "target": target,
+                "mechanism": d.get("mechanism") or "",
+                "approval": _approval_text(d.get("phase"), d.get("status") or ""),
+                "route": "",
+                "efficacy": "",
+                "references": [],
+                "category": "",
+                "disease_evidence": f"Open Targets known-drug association (max phase {d.get('phase') or 'n/a'})",
+            }
+        )
     return {"drugs": drugs}
 
 
@@ -662,9 +826,7 @@ def build_pathways_json(
     """
     pathways = []
     gene_symbols: dict[str, str] = {
-        (g.get("symbol") or g.get("id") or "").upper(): cast(
-            str, g.get("symbol") or g.get("id")
-        )
+        (g.get("symbol") or g.get("id") or "").upper(): cast(str, g.get("symbol") or g.get("id"))
         for g in genes
         if (g.get("symbol") or g.get("id"))
     }
@@ -672,16 +834,19 @@ def build_pathways_json(
     # Prefer Reactome hits that match at least one scaffolded gene by keyword
     for rp in reactome:
         members = _match_pathway_genes(rp.get("name", ""), gene_symbols)
-        pathways.append({
-            "id": _slugify(rp.get("name", rp.get("id", ""))) or rp.get("id", ""),
-            "name": rp.get("name") or rp.get("id", ""),
-            "description": rp.get("description") or f"Reactome pathway implicated in {rp.get('name') or 'disease'}.",
-            "key_components": members,
-            "therapeutic_targets": members,
-            "references": [
-                f"https://reactome.org/content/detail/{rp.get('id', '')}"
-            ] if rp.get("id") else [],
-        })
+        pathways.append(
+            {
+                "id": _slugify(rp.get("name", rp.get("id", ""))) or rp.get("id", ""),
+                "name": rp.get("name") or rp.get("id", ""),
+                "description": rp.get("description")
+                or f"Reactome pathway implicated in {rp.get('name') or 'disease'}.",
+                "key_components": members,
+                "therapeutic_targets": members,
+                "references": [f"https://reactome.org/content/detail/{rp.get('id', '')}"]
+                if rp.get("id")
+                else [],
+            }
+        )
 
     keyword = keyword_pathways(genes)
     pathways.extend(keyword)
@@ -721,46 +886,54 @@ def build_relationships_json(
     for d in drugs:
         target = d.get("target") or ""
         if target and target in gene_ids:
-            relationships.append({
-                "source": d["id"],
-                "target": target,
-                "type": "TARGETS",
-                "description": f"{d.get('name', d['id'])} targets {target}.",
-            })
+            relationships.append(
+                {
+                    "source": d["id"],
+                    "target": target,
+                    "type": "TARGETS",
+                    "description": f"{d.get('name', d['id'])} targets {target}.",
+                }
+            )
 
     # drug TREATS disease (approved / late-stage only)
     for d in drugs:
         approval = (d.get("approval") or "").lower()
-        if any(token in approval for token in ("approv", "phase 3", "phase 4", "marketed", "launched")):
-            relationships.append({
-                "source": d["id"],
-                "target": disease_label,
-                "type": "TREATS",
-                "description": (
-                    f"{d.get('name', d['id'])} is {approval} for {disease_label}."
-                ),
-            })
+        if any(
+            token in approval for token in ("approv", "phase 3", "phase 4", "marketed", "launched")
+        ):
+            relationships.append(
+                {
+                    "source": d["id"],
+                    "target": disease_label,
+                    "type": "TREATS",
+                    "description": (f"{d.get('name', d['id'])} is {approval} for {disease_label}."),
+                }
+            )
 
     # gene PARTICIPATES_IN pathway
     for p in pathways:
         for comp in p.get("key_components") or []:
             if comp in gene_ids:
-                relationships.append({
-                    "source": comp,
-                    "target": p["id"],
-                    "type": "PARTICIPATES_IN",
-                    "description": f"{comp} is a component of the {p['name']} pathway.",
-                })
+                relationships.append(
+                    {
+                        "source": comp,
+                        "target": p["id"],
+                        "type": "PARTICIPATES_IN",
+                        "description": f"{comp} is a component of the {p['name']} pathway.",
+                    }
+                )
 
     # gene ASSOCIATED_WITH disease
     for g in genes:
         evidence = (g.get("disease_evidence") or "").strip()
-        relationships.append({
-            "source": g["id"],
-            "target": disease_label,
-            "type": "ASSOCIATED_WITH",
-            "description": f"{g['id']} is associated with {disease_label}. {evidence}".strip(),
-        })
+        relationships.append(
+            {
+                "source": g["id"],
+                "target": disease_label,
+                "type": "ASSOCIATED_WITH",
+                "description": f"{g['id']} is associated with {disease_label}. {evidence}".strip(),
+            }
+        )
 
     return {"relationships": relationships}
 
@@ -784,13 +957,21 @@ def generate_config_py(disease_id: str, name: str) -> str:
     """Generate the disease config.py scaffold."""
     label = f"{name} ({disease_id.upper()})"
     acronym = name.split()[0] if name else disease_id
+    pubmed_queries = [
+        f"({name}[Title/Abstract]) AND (treatment[Title/Abstract])",
+        f"({name}[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+        f"({name}[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+        f"({name}[Title/Abstract]) AND (biomarker[Title/Abstract])",
+    ]
+    pubmed_block = ",\n    ".join(repr(q) for q in pubmed_queries)
+    gwas_terms = repr([name, acronym])
     return f'''"""{label} disease configuration.
 
 AUTO-GENERATED by `med-research disease add`. Review and fill in the
 disease-specific parameters below before running the pipeline.
 """
 
-PIPELINE_LABEL = "{label}"
+PIPELINE_LABEL = {label!r}
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
@@ -799,31 +980,48 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '({name}[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '({name}[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '({name}[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '({name}[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    {pubmed_block},
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
-TRIAL_QUERY = "{name} OR {acronym}"
-GWAS_SEARCH_TERMS = ["{name}", "{acronym}"]
+TRIAL_QUERY = {f"{name} OR {acronym}"!r}
+GWAS_SEARCH_TERMS = {gwas_terms}
 
 # ── CAR-T Scoring Tables (used by car_t_predictor/predictor.py) ──────────
-# TODO: derive with scripts/populate_disease_configs.py after curating genes
 CAR_T_SCORES = {{}}
 
-# ── Drug-Induced Disease Risk (legacy key name; used by adverse_events) ──
-# TODO: fill in drugs that can induce or exacerbate {name}
-DRUG_INDUCED_LUPUS_RISK = {{
+# ── Drug safety tiers (used by adverse_events/profiler.py) ───────────────
+DRUG_SAFETY_RISK = {{
     "high_risk": [],
     "moderate_risk": [],
     "low_risk": [],
 }}
+DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK
+DRUG_INDUCED_LUPUS_RISK = DRUG_SAFETY_RISK
+
+# ── Virtual screening calibration (used by virtual_screening/screening.py) ─
+SCREENING_PROFILE = {{}}
 '''
 
 
 # ── Orchestration ────────────────────────────────────────────────────────
+
+
+def populate_scaffolded_config(disease_id: str) -> Path | None:
+    """Derive CAR_T_SCORES, DRUG_SAFETY_RISK, and SCREENING_PROFILE from KG JSON."""
+    if disease_id == "sle":
+        return None
+    import importlib.util
+
+    repo_root = Path(__file__).resolve().parents[3]
+    script_path = repo_root / "scripts" / "populate_disease_configs.py"
+    spec = importlib.util.spec_from_file_location("populate_disease_configs", script_path)
+    if spec is None or spec.loader is None:
+        raise ConfigurationError(f"Cannot load populate script at {script_path}")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module.write_config_sections(disease_id)
+
 
 def _diseases_root() -> Path:
     import med_research.diseases as diseases_pkg
@@ -842,6 +1040,7 @@ def _collect_sources(
     use_opentargets: bool = True,
     use_reactome: bool = True,
     use_cache: bool = True,
+    use_bulk: bool = True,
 ) -> dict:
     """Fetch every scaffold source and build the fresh entity payloads.
 
@@ -849,6 +1048,25 @@ def _collect_sources(
     hit exactly the same sources. Returns a dict with the resolved EFO id,
     the display name, and the freshly-built genes/drugs/pathways JSON.
     """
+    if use_bulk and use_opentargets:
+        from med_research.diseases.bulk_store import OpenTargetsBulkStore
+        from med_research.diseases.bulk_scaffold import collect_sources_from_bulk
+
+        bulk_store = OpenTargetsBulkStore()
+        if bulk_store.is_available():
+            logger.info("📦 Using local Open Targets bulk store for '%s'", name)
+            return collect_sources_from_bulk(
+                bulk_store,
+                disease_id=disease_id,
+                name=name,
+                efo_id=efo_id,
+                max_genes=max_genes,
+                max_drugs=max_drugs,
+                max_pathways=max_pathways,
+                use_gwas=use_gwas,
+                use_reactome=use_reactome,
+            )
+
     cache = CacheManager() if use_cache else None
     resolved_efo = efo_id
     ot_info: dict = {}
@@ -916,6 +1134,7 @@ def scaffold_disease(
     target_dir: Optional[Path] = None,
     overwrite: bool = False,
     use_cache: bool = True,
+    use_bulk: bool = True,
 ) -> dict:
     """Scaffold a disease module from public knowledge bases.
 
@@ -950,6 +1169,7 @@ def scaffold_disease(
         use_opentargets=use_opentargets,
         use_reactome=use_reactome,
         use_cache=use_cache,
+        use_bulk=use_bulk,
     )
     resolved_efo = sources["efo_id"]
     display_name = sources["name"]
@@ -963,7 +1183,9 @@ def scaffold_disease(
         genes_json["genes"], drugs_json["drugs"], pathways_json["pathways"], disease_label
     )
     key_pathways = [p["name"] for p in pathways_json["pathways"][:5]]
-    profile_json = build_profile(disease_id, display_name, sources.get("description") or "", key_pathways)
+    profile_json = build_profile(
+        disease_id, display_name, sources.get("description") or "", key_pathways
+    )
 
     # ── Write files ───────────────────────────────────────────────────
     root.mkdir(parents=True, exist_ok=True)
@@ -980,6 +1202,15 @@ def scaffold_disease(
         (data_dir / fname).write_text(
             json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8"
         )
+
+    try:
+        populate_scaffolded_config(disease_id)
+        logger.info(
+            "✅ Populated CAR_T_SCORES, DRUG_SAFETY_RISK, and SCREENING_PROFILE for %s",
+            disease_id,
+        )
+    except (ConfigurationError, OSError, ValueError, KeyError, TypeError) as exc:
+        logger.warning("⚠️  Could not auto-populate config sections for %s: %s", disease_id, exc)
 
     return {
         "disease_id": disease_id,
@@ -1001,9 +1232,19 @@ def scaffold_disease(
         "files": [
             str(root / "__init__.py"),
             str(root / "config.py"),
-            *(str(data_dir / f) for f in ("genes.json", "drugs.json", "pathways.json", "relationships.json", "profile.json")),
+            *(
+                str(data_dir / f)
+                for f in (
+                    "genes.json",
+                    "drugs.json",
+                    "pathways.json",
+                    "relationships.json",
+                    "profile.json",
+                )
+            ),
         ],
     }
+
 
 # ── Refresh (merge into an existing module) ─────────────────────────────
 
@@ -1012,16 +1253,33 @@ def scaffold_disease(
 # curated fields (category, function, evidence text, references) are kept
 # verbatim when a matching entity already exists — though an *empty* curated
 # value is backfilled when a fresh source provides one.
-GENE_CURATED_FIELDS = frozenset({
-    "id", "name", "chromosome", "function", "lupus_evidence",
-    "sle_evidence", "odds_ratio", "references", "category",
-})
+GENE_CURATED_FIELDS = frozenset(
+    {
+        "id",
+        "name",
+        "chromosome",
+        "function",
+        "lupus_evidence",
+        "sle_evidence",
+        "odds_ratio",
+        "references",
+        "category",
+    }
+)
 GENE_EVIDENCE_FIELD = "disease_evidence"  # appended, never replaced
 
-DRUG_CURATED_FIELDS = frozenset({
-    "id", "name", "category", "route", "efficacy",
-    "adverse_effects", "references", "mechanism",
-})
+DRUG_CURATED_FIELDS = frozenset(
+    {
+        "id",
+        "name",
+        "category",
+        "route",
+        "efficacy",
+        "adverse_effects",
+        "references",
+        "mechanism",
+    }
+)
 DRUG_EVIDENCE_FIELD = "disease_evidence"  # appended, never replaced
 
 PATHWAY_CURATED_FIELDS = frozenset({"id", "name", "description", "references"})
@@ -1084,7 +1342,9 @@ def merge_genes(existing: list[dict], fresh: list[dict]) -> dict:
             added.append(gid)
             continue
         old = existing_by_id[gid]
-        merged.append(_merge_entity(old, gene, GENE_CURATED_FIELDS, GENE_EVIDENCE_FIELD, updated, gid))
+        merged.append(
+            _merge_entity(old, gene, GENE_CURATED_FIELDS, GENE_EVIDENCE_FIELD, updated, gid)
+        )
 
     # Any existing genes the sources no longer report are retained as-is.
     fresh_ids = {g["id"] for g in fresh}
@@ -1117,7 +1377,9 @@ def merge_drugs(existing: list[dict], fresh: list[dict]) -> dict:
             added.append(did)
             continue
         old = existing_by_id[did]
-        merged.append(_merge_entity(old, drug, DRUG_CURATED_FIELDS, DRUG_EVIDENCE_FIELD, updated, did))
+        merged.append(
+            _merge_entity(old, drug, DRUG_CURATED_FIELDS, DRUG_EVIDENCE_FIELD, updated, did)
+        )
 
     fresh_ids = {d["id"] for d in fresh}
     for did, drug in existing_by_id.items():
@@ -1148,7 +1410,11 @@ def merge_pathways(existing: list[dict], fresh: list[dict]) -> dict:
             added.append(pid)
             continue
         old = existing_by_id[pid]
-        merged.append(_merge_entity(old, pathway, PATHWAY_CURATED_FIELDS, None, updated, pid, PATHWAY_LIST_FIELDS))
+        merged.append(
+            _merge_entity(
+                old, pathway, PATHWAY_CURATED_FIELDS, None, updated, pid, PATHWAY_LIST_FIELDS
+            )
+        )
 
     fresh_ids = {p["id"] for p in fresh}
     for pid, pathway in existing_by_id.items():
@@ -1241,6 +1507,7 @@ def refresh_disease(
     use_opentargets: bool = True,
     use_reactome: bool = True,
     use_cache: bool = True,
+    use_bulk: bool = True,
     target_dir: Optional[Path] = None,
     dry_run: bool = False,
     prune: bool = False,
@@ -1297,6 +1564,7 @@ def refresh_disease(
         use_opentargets=use_opentargets,
         use_reactome=use_reactome,
         use_cache=use_cache,
+        use_bulk=use_bulk,
     )
     display_name = sources["name"]
 
@@ -1321,8 +1589,12 @@ def refresh_disease(
     if prune:
         fresh_gene_ids = {g["id"] for g in sources["genes"]["genes"]}
         fresh_drug_ids = {d["id"] for d in sources["drugs"]["drugs"]}
-        prune_info["genes"] = sorted(g["id"] for g in existing_genes if g["id"] not in fresh_gene_ids)
-        prune_info["drugs"] = sorted(d["id"] for d in existing_drugs if d["id"] not in fresh_drug_ids)
+        prune_info["genes"] = sorted(
+            g["id"] for g in existing_genes if g["id"] not in fresh_gene_ids
+        )
+        prune_info["drugs"] = sorted(
+            d["id"] for d in existing_drugs if d["id"] not in fresh_drug_ids
+        )
 
         # Confirmation gate: only for a real (non dry-run) prune with work to do.
         # Declining aborts the *entire* write — nothing on disk changes.
@@ -1350,8 +1622,13 @@ def refresh_disease(
             )
             prune_info["backup"] = str(
                 _write_prune_backup(
-                    data_dir, disease_id, existing_genes, existing_drugs,
-                    existing_pathways, pruned_gene_ids, pruned_drug_ids,
+                    data_dir,
+                    disease_id,
+                    existing_genes,
+                    existing_drugs,
+                    existing_pathways,
+                    pruned_gene_ids,
+                    pruned_drug_ids,
                 )
             )
 
@@ -1384,9 +1661,21 @@ def refresh_disease(
             "reactome": bool(sources["reactome_hits"]),
         },
         "merge": {
-            "genes": {"added": gene_merge["added"], "updated": gene_merge["updated"], "kept": gene_merge["kept"]},
-            "drugs": {"added": drug_merge["added"], "updated": drug_merge["updated"], "kept": drug_merge["kept"]},
-            "pathways": {"added": pathway_merge["added"], "updated": pathway_merge["updated"], "kept": pathway_merge["kept"]},
+            "genes": {
+                "added": gene_merge["added"],
+                "updated": gene_merge["updated"],
+                "kept": gene_merge["kept"],
+            },
+            "drugs": {
+                "added": drug_merge["added"],
+                "updated": drug_merge["updated"],
+                "kept": drug_merge["kept"],
+            },
+            "pathways": {
+                "added": pathway_merge["added"],
+                "updated": pathway_merge["updated"],
+                "kept": pathway_merge["kept"],
+            },
         },
         "counts": {
             "genes": len(gene_merge["genes"]),
@@ -1395,7 +1684,8 @@ def refresh_disease(
             "relationships": len(relationships["relationships"]),
         },
         "files": [
-            str(data_dir / f) for f in ("genes.json", "drugs.json", "pathways.json", "relationships.json")
+            str(data_dir / f)
+            for f in ("genes.json", "drugs.json", "pathways.json", "relationships.json")
         ],
     }
 
@@ -1478,6 +1768,7 @@ def _write_prune_backup(
 
 # ── Restore (re-merge a pruned backup) ──────────────────────────────────
 
+
 def _load_backup(data_dir: Path, disease_id: str, explicit: Optional[Union[str, Path]]) -> dict:
     """Locate + parse a prune backup (explicit path, else newest for the disease)."""
     if explicit is not None:
@@ -1487,9 +1778,7 @@ def _load_backup(data_dir: Path, disease_id: str, explicit: Optional[Union[str, 
     else:
         backup_dir = data_dir / "backups"
         candidates = (
-            sorted(backup_dir.glob(f"pruned_{disease_id}_*.json"))
-            if backup_dir.exists()
-            else []
+            sorted(backup_dir.glob(f"pruned_{disease_id}_*.json")) if backup_dir.exists() else []
         )
         if not candidates:
             raise FileNotFoundError(
@@ -1539,9 +1828,7 @@ def _restore_pathway_membership(
         if memberships is None:
             # Legacy backup without a membership map: best-effort keyword match.
             upper = gid.upper()
-            target_ids = [
-                pid for pid, p in by_id.items() if _pathway_matches_gene(p, upper)
-            ]
+            target_ids = [pid for pid, p in by_id.items() if _pathway_matches_gene(p, upper)]
         else:
             # The recorded map is authoritative: absent key = was in no pathway.
             target_ids = memberships.get(gid) or []
@@ -1591,7 +1878,8 @@ def restore_disease(
     if backup.get("disease_id") and backup["disease_id"] != disease_id:
         logger.warning(
             "Backup was created for '%s' but restoring into '%s'.",
-            backup["disease_id"], disease_id,
+            backup["disease_id"],
+            disease_id,
         )
 
     # Use the module's own display name for relationships (profile wins).
@@ -1656,7 +1944,8 @@ def restore_disease(
             "relationships": len(relationships["relationships"]),
         },
         "files": [
-            str(data_dir / f) for f in ("genes.json", "drugs.json", "pathways.json", "relationships.json")
+            str(data_dir / f)
+            for f in ("genes.json", "drugs.json", "pathways.json", "relationships.json")
         ],
     }
 
@@ -1679,7 +1968,9 @@ def print_restore_summary(summary: dict) -> None:
     logger.info(f"  Backup was:   {s['backup_disease_id'] or '—'}")
     logger.info(f"  Module dir:   {s['root']}")
     logger.info(f"  Mode:         {mode}")
-    logger.info(f"\n  Restored: {len(s['restored']['genes'])} genes, {len(s['restored']['drugs'])} drugs")
+    logger.info(
+        f"\n  Restored: {len(s['restored']['genes'])} genes, {len(s['restored']['drugs'])} drugs"
+    )
     for gid in s["restored"]["genes"]:
         logger.info(f"    gene  {gid}")
     for did in s["restored"]["drugs"]:
@@ -1704,6 +1995,7 @@ def print_restore_summary(summary: dict) -> None:
 
 
 # ── Backup housekeeping (list / purge) ──────────────────────────────────
+
 
 def list_backups(disease_id: str, target_dir: Optional[Path] = None) -> dict:
     """Inventory the pruned backups for a disease (newest first).
@@ -1740,11 +2032,17 @@ def list_backups(disease_id: str, target_dir: Optional[Path] = None) -> dict:
         }
         try:
             entry["size_bytes"] = path.stat().st_size
-            entry["modified"] = datetime.fromtimestamp(path.stat().st_mtime).isoformat(timespec="seconds")
+            entry["modified"] = datetime.fromtimestamp(path.stat().st_mtime).isoformat(
+                timespec="seconds"
+            )
             data = json.loads(path.read_text(encoding="utf-8"))
             entry["backup_disease_id"] = data.get("disease_id")
-            entry["genes"] = [g.get("id", "?") for g in data.get("genes") or [] if isinstance(g, dict)]
-            entry["drugs"] = [d.get("id", "?") for d in data.get("drugs") or [] if isinstance(d, dict)]
+            entry["genes"] = [
+                g.get("id", "?") for g in data.get("genes") or [] if isinstance(g, dict)
+            ]
+            entry["drugs"] = [
+                d.get("id", "?") for d in data.get("drugs") or [] if isinstance(d, dict)
+            ]
         except (json.JSONDecodeError, OSError):
             # Unreadable or deleted-while-listing (race): flag it, don't crash.
             entry["readable"] = False
@@ -1782,8 +2080,12 @@ def purge_backups(
         return {
             **inventory,
             "purge": {
-                "enabled": True, "aborted": True, "keep": keep, "dry_run": dry_run,
-                "deleted": [], "freed_bytes": 0,
+                "enabled": True,
+                "aborted": True,
+                "keep": keep,
+                "dry_run": dry_run,
+                "deleted": [],
+                "freed_bytes": 0,
                 "kept": [e["path"] for e in keep_entries],
             },
         }
@@ -1805,8 +2107,12 @@ def purge_backups(
     return {
         **inventory,
         "purge": {
-            "enabled": True, "aborted": False, "keep": keep, "dry_run": dry_run,
-            "deleted": deleted, "freed_bytes": freed,
+            "enabled": True,
+            "aborted": False,
+            "keep": keep,
+            "dry_run": dry_run,
+            "deleted": deleted,
+            "freed_bytes": freed,
             "kept": [e["path"] for e in keep_entries],
         },
     }
@@ -1844,10 +2150,14 @@ def print_backups_summary(summary: dict) -> None:
         drug_ids = e["drugs"]
         logger.info(f"    Restores: {len(gene_ids)} gene(s), {len(drug_ids)} drug(s)")
         if gene_ids:
-            shown = ", ".join(gene_ids[:8]) + (f" … and {len(gene_ids) - 8} more" if len(gene_ids) > 8 else "")
+            shown = ", ".join(gene_ids[:8]) + (
+                f" … and {len(gene_ids) - 8} more" if len(gene_ids) > 8 else ""
+            )
             logger.info(f"      Genes: {shown}")
         if drug_ids:
-            shown = ", ".join(drug_ids[:8]) + (f" … and {len(drug_ids) - 8} more" if len(drug_ids) > 8 else "")
+            shown = ", ".join(drug_ids[:8]) + (
+                f" … and {len(drug_ids) - 8} more" if len(drug_ids) > 8 else ""
+            )
             logger.info(f"      Drugs: {shown}")
 
     logger.info("\n  " + "-" * 66)
@@ -1860,7 +2170,9 @@ def print_backups_summary(summary: dict) -> None:
             logger.warning("  ⚠️  Deletion cancelled by user — no files removed.")
         else:
             verb = "would delete" if p["dry_run"] else "deleted"
-            logger.info(f"  {verb.capitalize()}: {len(p['deleted'])} backup(s), {p['freed_bytes']:,} bytes freed")
+            logger.info(
+                f"  {verb.capitalize()}: {len(p['deleted'])} backup(s), {p['freed_bytes']:,} bytes freed"
+            )
             for path in p["deleted"]:
                 logger.info(f"    - {Path(path).name}")
             logger.info(f"  Kept: {len(p['kept'])} backup(s)")
@@ -1892,7 +2204,9 @@ def print_refresh_summary(summary: dict) -> None:
     logger.info("\n  Merge results:")
     for kind in ("genes", "drugs", "pathways"):
         m = s["merge"][kind]
-        logger.info(f"    {kind:<9} +{len(m['added'])} added, ~{len(m['updated'])} updated, {len(m['kept'])} unchanged")
+        logger.info(
+            f"    {kind:<9} +{len(m['added'])} added, ~{len(m['updated'])} updated, {len(m['kept'])} unchanged"
+        )
     p = s.get("prune") or {}
     if p.get("enabled"):
         if p.get("aborted"):
@@ -1946,4 +2260,178 @@ def print_scaffold_summary(summary: dict) -> None:
     logger.info("    2. Fill SYMPTOMS, CAR_T_SCORES in config.py")
     logger.info("    3. Run: med-research disease validate " + s["disease_id"])
     logger.info("    4. Run: med-research kg --disease " + s["disease_id"])
+    logger.info("=" * 70)
+
+
+# ── Batch scaffolding ────────────────────────────────────────────────────
+
+
+def load_disease_registry(
+    registry_path: Optional[Path] = None,
+) -> list[dict]:
+    """Load the curated disease registry JSON.
+
+    Returns the ``diseases`` list from the registry, each entry being a dict
+    with keys ``id``, ``name``, ``efo_id``, and ``category``.
+    """
+    if registry_path is None:
+        registry_path = _diseases_root() / "disease_registry.json"
+    if not registry_path.is_file():
+        raise FileNotFoundError(f"Disease registry not found at {registry_path}")
+    with open(registry_path, encoding="utf-8") as fh:
+        data = json.load(fh)
+    return data.get("diseases", [])
+
+
+def batch_scaffold(
+    *,
+    category: Optional[str] = None,
+    limit: Optional[int] = None,
+    max_genes: int = 60,
+    max_drugs: int = 60,
+    max_pathways: int = 30,
+    use_gwas: bool = True,
+    use_opentargets: bool = True,
+    use_reactome: bool = True,
+    use_cache: bool = True,
+    dry_run: bool = False,
+    delay: float = 1.0,
+    registry_path: Optional[Path] = None,
+) -> dict:
+    """Scaffold multiple diseases from the curated registry.
+
+    Reads the disease registry, filters by *category* and *limit*, then
+    calls :func:`scaffold_disease` for each entry that does not already
+    exist. Failures are isolated — one disease failing does not abort the
+    batch.
+
+    Returns a summary dict with ``succeeded``, ``skipped``, ``failed``
+    lists and timing information.
+    """
+    import tempfile
+    import time
+
+    from med_research.diseases.base import Disease
+
+    diseases = load_disease_registry(registry_path)
+
+    # ── Filter ────────────────────────────────────────────────────────
+    if category:
+        diseases = [d for d in diseases if d.get("category", "").lower() == category.lower()]
+    if limit and limit > 0:
+        diseases = diseases[:limit]
+
+    existing = set(Disease.list_all())
+
+    succeeded: list[dict] = []
+    skipped: list[dict] = []
+    failed: list[dict] = []
+
+    total = len(diseases)
+    logger.info("=" * 70)
+    logger.info("🚀 BATCH SCAFFOLD — %d diseases queued", total)
+    if category:
+        logger.info("   Category filter: %s", category)
+    if dry_run:
+        logger.info("   Mode: DRY RUN (no files written)")
+    logger.info("=" * 70)
+
+    t0 = time.monotonic()
+
+    for idx, entry in enumerate(diseases, 1):
+        did = sanitize_id(entry.get("id", ""))
+        name = entry.get("name", did)
+        efo = entry.get("efo_id")
+
+        if did in existing or (_diseases_root() / did).exists():
+            logger.info("[%d/%d] ⏭️  %s — already exists, skipping", idx, total, did)
+            skipped.append({"disease_id": did, "name": name, "reason": "already_exists"})
+            continue
+
+        logger.info("[%d/%d] 🏗️  Scaffolding %s (%s)...", idx, total, name, did)
+        dry_run_dir = Path(tempfile.mkdtemp(prefix=f"scaffold_{did}_")) if dry_run else None
+
+        try:
+            summary = scaffold_disease(
+                disease_id=did,
+                name=name,
+                efo_id=efo,
+                max_genes=max_genes,
+                max_drugs=max_drugs,
+                max_pathways=max_pathways,
+                use_gwas=use_gwas,
+                use_opentargets=use_opentargets,
+                use_reactome=use_reactome,
+                overwrite=False,
+                use_cache=use_cache,
+                target_dir=dry_run_dir,
+            )
+            succeeded.append(summary)
+            existing.add(did)
+            logger.info(
+                "  ✅ %s — %d genes, %d drugs, %d pathways",
+                did,
+                summary["counts"]["genes"],
+                summary["counts"]["drugs"],
+                summary["counts"]["pathways"],
+            )
+        except Exception as exc:
+            logger.warning("  ❌ %s — %s: %s", did, type(exc).__name__, exc)
+            failed.append({"disease_id": did, "name": name, "error": str(exc)})
+
+        # Rate-limit between API-heavy scaffolds
+        if idx < total and delay > 0:
+            time.sleep(delay)
+
+    elapsed = time.monotonic() - t0
+
+    return {
+        "total": total,
+        "succeeded": succeeded,
+        "skipped": skipped,
+        "failed": failed,
+        "elapsed_seconds": round(elapsed, 1),
+        "dry_run": dry_run,
+        "category": category,
+    }
+
+
+def print_batch_summary(report: dict) -> None:
+    """Print a human-readable batch scaffold report."""
+    logger.info("\n" + "=" * 70)
+    logger.info("📊 BATCH SCAFFOLD COMPLETE")
+    logger.info("=" * 70)
+    if report.get("dry_run"):
+        logger.info("  Mode:      DRY RUN (no files written to diseases/)")
+    if report.get("category"):
+        logger.info("  Category:  %s", report["category"])
+    logger.info("  Total:     %d diseases", report["total"])
+    logger.info("  ✅ Success: %d", len(report["succeeded"]))
+    logger.info("  ⏭️  Skipped: %d", len(report["skipped"]))
+    logger.info("  ❌ Failed:  %d", len(report["failed"]))
+    logger.info("  ⏱️  Time:    %.1fs", report["elapsed_seconds"])
+
+    if report["succeeded"]:
+        logger.info("\n  Successfully scaffolded:")
+        for s in report["succeeded"]:
+            logger.info(
+                "    %s — %d genes, %d drugs, %d pathways",
+                s["disease_id"],
+                s["counts"]["genes"],
+                s["counts"]["drugs"],
+                s["counts"]["pathways"],
+            )
+
+    if report["failed"]:
+        logger.info("\n  Failed:")
+        for f in report["failed"]:
+            logger.info("    %s — %s", f["disease_id"], f["error"][:80])
+
+    if report["skipped"]:
+        logger.info("\n  Skipped (already exist): %s", ", ".join(s["disease_id"] for s in report["skipped"]))
+
+    logger.info("\n  Next steps:")
+    logger.info("    1. Review scaffolded modules: med-research disease validate --all")
+    logger.info("    2. Fill disease-specific SYMPTOMS and CAR_T_SCORES in config.py")
+    logger.info("    3. Run the pipeline: med-research pipeline --disease <id>")
     logger.info("=" * 70)

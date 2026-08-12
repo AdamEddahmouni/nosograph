@@ -22,6 +22,7 @@ from med_research.diseases.coverage import ModuleCoverage
 @dataclass
 class DiseaseProfile:
     """Parsed profile data for a disease."""
+
     id: str
     name: str
     description: str = ""
@@ -56,11 +57,10 @@ class Disease:
     def _resolve_root(disease_id: str) -> Path:
         """Find the diseases directory and resolve this disease's path."""
         import med_research.diseases as diseases_pkg
+
         root = Path(diseases_pkg.__file__).parent / disease_id
         if not root.exists():
-            raise ValueError(
-                f"Disease '{disease_id}' not found. Available: {Disease.list_all()}"
-            )
+            raise ValueError(f"Disease '{disease_id}' not found. Available: {Disease.list_all()}")
         return root
 
     @property
@@ -124,6 +124,7 @@ class Disease:
             config_path = self._root / "config.py"
             if config_path.exists():
                 import importlib.util
+
                 spec = importlib.util.spec_from_file_location(
                     f"med_research.diseases.{self.disease_id}.config", str(config_path)
                 )
@@ -131,7 +132,8 @@ class Disease:
                     module = importlib.util.module_from_spec(spec)
                     spec.loader.exec_module(module)
                     self._config = {
-                        k: v for k, v in vars(module).items()
+                        k: v
+                        for k, v in vars(module).items()
                         if not k.startswith("_") and k.isupper()
                     }
                 else:
@@ -171,7 +173,9 @@ class Disease:
             return {}
 
         if self.disease_id == "sle":
-            profile_path = self._root.parent.parent / "pipeline" / "adverse_events" / "data" / "profiles.json"
+            profile_path = (
+                self._root.parent.parent / "pipeline" / "adverse_events" / "data" / "profiles.json"
+            )
             if profile_path.is_file():
                 try:
                     payload = json.loads(profile_path.read_text(encoding="utf-8"))
@@ -231,7 +235,11 @@ class Disease:
         configured = self.config.get("DRUG_TARGET_EXCLUSIONS")
         if configured is not None:
             return {str(item) for item in configured}
-        return {"CD20", "IMPDH", "Calcineurin", "Glucocorticoid Receptor"} if self.disease_id == "sle" else set()
+        return (
+            {"CD20", "IMPDH", "Calcineurin", "Glucocorticoid Receptor"}
+            if self.disease_id == "sle"
+            else set()
+        )
 
     def get_pathway_keywords(self) -> list[str]:
         """Return broad terms used to match enrichment results to KG pathways."""
@@ -260,9 +268,7 @@ class Disease:
             return cast(str, entity["disease_evidence"])
         # Legacy evidence keys are valid only for the legacy SLE data module.
         if self.disease_id == "sle":
-            return cast(
-                str, entity.get("lupus_evidence") or entity.get("sle_evidence", "")
-            )
+            return cast(str, entity.get("lupus_evidence") or entity.get("sle_evidence", ""))
         return ""
 
     def get_gwas_search_terms(self) -> list[str]:
@@ -291,7 +297,7 @@ class Disease:
             "TRIAL_QUERY": self.config.get("TRIAL_QUERY", ""),
             "GWAS_SEARCH_TERMS": self.config.get("GWAS_SEARCH_TERMS", []),
             "CAR_T_SCORES": self.get_car_t_scores(),
-            "DRUG_INDUCED_LUPUS_RISK": self.get_drug_induced_lupus_risk(),
+            "DRUG_SAFETY_RISK": self.get_disease_risk_config(),
         }
         for name, value in required.items():
             if isinstance(value, dict):
@@ -327,11 +333,15 @@ class Disease:
     @staticmethod
     def list_all() -> list[str]:
         import med_research.diseases as diseases_pkg
+
         root = Path(diseases_pkg.__file__).parent
         return sorted(
-            d.name for d in root.iterdir()
-            if d.is_dir() and (d / "__init__.py").exists()
-            and not d.name.startswith("_") and d.name != "__pycache__"
+            d.name
+            for d in root.iterdir()
+            if d.is_dir()
+            and (d / "__init__.py").exists()
+            and not d.name.startswith("_")
+            and d.name != "__pycache__"
         )
 
     @staticmethod

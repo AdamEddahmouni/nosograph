@@ -1,0 +1,4622 @@
+{
+  "schema_version": "1.0",
+  "description": "Curated disease registry for batch scaffolding. 525 diseases across 30 therapeutic areas.",
+  "diseases": [
+    {
+      "id": "adult_onset_stills",
+      "name": "Adult-onset Still disease",
+      "category": "autoimmune",
+      "efo_id": "EFO_0007135",
+      "mondo_id": "MONDO:0019355",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "anti_synthetase_syndrome",
+      "name": "Anti-synthetase syndrome",
+      "category": "autoimmune",
+      "efo_id": "EFO_1001982",
+      "mondo_id": "MONDO:0019344",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "autoimmune_gastritis",
+      "name": "Autoimmune gastritis",
+      "category": "autoimmune",
+      "efo_id": "MONDO_0031014",
+      "mondo_id": "MONDO:0031014",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "autoimmune_inner_ear",
+      "name": "Autoimmune inner ear disease",
+      "category": "autoimmune",
+      "efo_id": "MONDO_0022518",
+      "mondo_id": "MONDO:0022518",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "autoimmune_polyglandular",
+      "name": "Autoimmune polyglandular syndrome",
+      "category": "autoimmune",
+      "efo_id": "MONDO_0017278",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "behcet_disease",
+      "name": "Behçet disease",
+      "category": "autoimmune",
+      "efo_id": "EFO_0003780",
+      "mondo_id": "MONDO:0007191",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "cryoglobulinemic_vasculitis",
+      "name": "Cryoglobulinemic vasculitis",
+      "category": "autoimmune",
+      "efo_id": "EFO_0000651",
+      "mondo_id": "MONDO:0007407",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "familial_mediterranean_fever",
+      "name": "Familial Mediterranean fever",
+      "category": "autoimmune",
+      "efo_id": "MONDO_0018088",
+      "mondo_id": "MONDO:0018088",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "granulomatosis_polyangiitis",
+      "name": "Granulomatosis with polyangiitis",
+      "category": "autoimmune",
+      "efo_id": "EFO_0005297",
+      "mondo_id": "MONDO:0012105",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "iga_vasculitis",
+      "name": "IgA vasculitis",
+      "category": "autoimmune",
+      "efo_id": "EFO_1000965",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "igg4_related_disease",
+      "name": "IgG4-related disease",
+      "category": "autoimmune",
+      "efo_id": "MONDO_0017287",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "microscopic_polyangiitis",
+      "name": "Microscopic polyangiitis",
+      "category": "autoimmune",
+      "efo_id": "EFO_1000784",
+      "mondo_id": "MONDO:0019124",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "mixed_connective_tissue",
+      "name": "Mixed connective tissue disease",
+      "category": "autoimmune",
+      "efo_id": "EFO_0007374",
+      "mondo_id": "MONDO:0005854",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "neurosarcoidosis",
+      "name": "Neurosarcoidosis",
+      "category": "autoimmune",
+      "efo_id": "MONDO_0045047",
+      "mondo_id": "MONDO:0045047",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "polyarteritis_nodosa",
+      "name": "Polyarteritis nodosa",
+      "category": "autoimmune",
+      "efo_id": "MONDO_0019170",
+      "mondo_id": "MONDO:0019170",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "primary_angiitis_cns",
+      "name": "Primary angiitis of the central nervous system",
+      "category": "autoimmune",
+      "efo_id": "MONDO_0016747",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "relapsing_polychondritis",
+      "name": "Relapsing polychondritis",
+      "category": "autoimmune",
+      "efo_id": "EFO_1001148",
+      "mondo_id": "MONDO:0019125",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "retroperitoneal_fibrosis",
+      "name": "Retroperitoneal fibrosis",
+      "category": "autoimmune",
+      "efo_id": "MONDO_0018848",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "stiff_person_syndrome",
+      "name": "Stiff-person syndrome",
+      "category": "autoimmune",
+      "efo_id": "EFO_0007498",
+      "mondo_id": "MONDO:0008491",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "undifferentiated_ctd",
+      "name": "Undifferentiated connective tissue disease",
+      "category": "autoimmune",
+      "efo_id": "EFO_1001986",
+      "mondo_id": "MONDO:0003900",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "aortic_aneurysm",
+      "name": "Aortic aneurysm",
+      "efo_id": "EFO_0003821",
+      "category": "cardiovascular",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "aortic_stenosis",
+      "name": "Aortic stenosis",
+      "category": "cardiovascular",
+      "efo_id": "EFO_0000266",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "arrhythmogenic_cardiomyopathy",
+      "name": "Arrhythmogenic right ventricular cardiomyopathy",
+      "category": "cardiovascular",
+      "efo_id": "MONDO_0016587",
+      "mondo_id": "MONDO:0016587",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "atrial_fibrillation",
+      "name": "Atrial fibrillation",
+      "efo_id": "EFO_0000275",
+      "category": "cardiovascular",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0004981"
+    },
+    {
+      "id": "atrial_septal_defect",
+      "name": "Atrial septal defect",
+      "category": "cardiovascular",
+      "efo_id": "EFO_1000825",
+      "mondo_id": "MONDO:0006664",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "brugada_syndrome",
+      "name": "Brugada syndrome",
+      "category": "cardiovascular",
+      "efo_id": "MONDO_0015263",
+      "mondo_id": "MONDO:0015263",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "cardiac_amyloidosis",
+      "name": "Cardiac amyloidosis",
+      "category": "cardiovascular",
+      "efo_id": "EFO_1001984",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "cardiomyopathy",
+      "name": "Cardiomyopathy",
+      "efo_id": "EFO_0000318",
+      "category": "cardiovascular",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0004994"
+    },
+    {
+      "id": "chronic_venous_insufficiency",
+      "name": "Chronic venous insufficiency",
+      "category": "cardiovascular",
+      "efo_id": "EFO_0007940",
+      "mondo_id": "MONDO:0000492",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "coarctation_of_aorta",
+      "name": "Coarctation of aorta",
+      "category": "cardiovascular",
+      "efo_id": "MONDO_0015445",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "coronary_artery_disease",
+      "name": "Coronary artery disease",
+      "efo_id": "EFO_0001645",
+      "category": "cardiovascular",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005010"
+    },
+    {
+      "id": "deep_vein_thrombosis",
+      "name": "Deep vein thrombosis",
+      "efo_id": "EFO_0004288",
+      "category": "cardiovascular",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005401"
+    },
+    {
+      "id": "dilated_cardiomyopathy",
+      "name": "Dilated cardiomyopathy",
+      "category": "cardiovascular",
+      "efo_id": "EFO_0000407",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005021"
+    },
+    {
+      "id": "eisenmenger_syndrome",
+      "name": "Eisenmenger syndrome",
+      "category": "cardiovascular",
+      "efo_id": "EFO_0009200",
+      "mondo_id": "MONDO:0019944",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "giant_cell_arteritis",
+      "name": "Giant cell arteritis",
+      "category": "cardiovascular",
+      "efo_id": "EFO_0004236",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0100313"
+    },
+    {
+      "id": "heart_failure",
+      "name": "Heart failure",
+      "efo_id": "EFO_0003144",
+      "category": "cardiovascular",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005252"
+    },
+    {
+      "id": "hypertension",
+      "name": "Hypertension",
+      "efo_id": "EFO_0000537",
+      "category": "cardiovascular",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005044"
+    },
+    {
+      "id": "hypertrophic_cardiomyopathy",
+      "name": "Hypertrophic cardiomyopathy",
+      "category": "cardiovascular",
+      "efo_id": "EFO_0000538",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005045"
+    },
+    {
+      "id": "infective_endocarditis",
+      "name": "Infective endocarditis",
+      "category": "cardiovascular",
+      "efo_id": "MONDO_0000565",
+      "mondo_id": "MONDO:0000565",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "kawasaki_disease",
+      "name": "Kawasaki disease",
+      "category": "cardiovascular",
+      "efo_id": "EFO_0003777",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005267"
+    },
+    {
+      "id": "long_qt_syndrome",
+      "name": "Long QT syndrome",
+      "category": "cardiovascular",
+      "efo_id": "EFO_0003778",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0011849"
+    },
+    {
+      "id": "mitral_regurgitation",
+      "name": "Mitral regurgitation",
+      "category": "cardiovascular",
+      "efo_id": "EFO_0000651",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "mitral_valve_prolapse",
+      "name": "Mitral valve prolapse",
+      "category": "cardiovascular",
+      "efo_id": "EFO_0000319",
+      "mondo_id": "MONDO:0004910",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "myocarditis",
+      "name": "Myocarditis",
+      "category": "cardiovascular",
+      "efo_id": "EFO_0009609",
+      "mondo_id": "MONDO:0004496",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "patent_ductus_arteriosus",
+      "name": "Patent ductus arteriosus",
+      "category": "cardiovascular",
+      "efo_id": "EFO_0000651",
+      "mondo_id": "MONDO:0011827",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "pericarditis",
+      "name": "Pericarditis",
+      "category": "cardiovascular",
+      "efo_id": "EFO_0007427",
+      "mondo_id": "MONDO:0005904",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "peripheral_artery_disease",
+      "name": "Peripheral artery disease",
+      "efo_id": "EFO_0003914",
+      "category": "cardiovascular",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005311"
+    },
+    {
+      "id": "pulmonary_embolism",
+      "name": "Pulmonary embolism",
+      "efo_id": "EFO_0003827",
+      "category": "cardiovascular",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005279"
+    },
+    {
+      "id": "pulmonary_valve_stenosis",
+      "name": "Pulmonary valve stenosis",
+      "category": "cardiovascular",
+      "efo_id": "EFO_1001138",
+      "mondo_id": "MONDO:0006936",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "raynauds_disease",
+      "name": "Raynaud disease",
+      "category": "cardiovascular",
+      "efo_id": "EFO_1001145",
+      "mondo_id": "MONDO:0008364",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "restrictive_cardiomyopathy",
+      "name": "Restrictive cardiomyopathy",
+      "category": "cardiovascular",
+      "efo_id": "EFO_0002630",
+      "mondo_id": "MONDO:0005201",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "stroke",
+      "name": "Stroke",
+      "efo_id": "EFO_0000712",
+      "category": "cardiovascular",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005098"
+    },
+    {
+      "id": "supraventricular_tachycardia",
+      "name": "Supraventricular tachycardia",
+      "category": "cardiovascular",
+      "efo_id": "EFO_0004269",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "takayasu_arteritis",
+      "name": "Takayasu arteritis",
+      "category": "cardiovascular",
+      "efo_id": "EFO_1001857",
+      "mondo_id": "MONDO:0017991",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "takotsubo_cardiomyopathy",
+      "name": "Takotsubo cardiomyopathy",
+      "category": "cardiovascular",
+      "efo_id": "EFO_1002000",
+      "mondo_id": "MONDO:0019018",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "tetralogy_of_fallot",
+      "name": "Tetralogy of Fallot",
+      "category": "cardiovascular",
+      "efo_id": "EFO_0000651",
+      "mondo_id": "MONDO:0008542",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "thromboangiitis_obliterans",
+      "name": "Thromboangiitis obliterans",
+      "category": "cardiovascular",
+      "efo_id": "EFO_1001211",
+      "mondo_id": "MONDO:0008889",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "ventricular_septal_defect",
+      "name": "Ventricular septal defect",
+      "category": "cardiovascular",
+      "efo_id": "MONDO_0002070",
+      "mondo_id": "MONDO:0002070",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "ventricular_tachycardia",
+      "name": "Ventricular tachycardia",
+      "category": "cardiovascular",
+      "efo_id": "EFO_0005306",
+      "mondo_id": "MONDO:0005477",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "wolff_parkinson_white",
+      "name": "Wolff-Parkinson-White syndrome",
+      "category": "cardiovascular",
+      "efo_id": "EFO_1001450",
+      "mondo_id": "MONDO:0008685",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "acne_vulgaris",
+      "name": "Acne vulgaris",
+      "category": "dermatology",
+      "efo_id": "EFO_0003894",
+      "mondo_id": "MONDO:0011438",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "alopecia_areata",
+      "name": "Alopecia areata",
+      "efo_id": "EFO_0004232",
+      "category": "dermatology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005361"
+    },
+    {
+      "id": "angioedema",
+      "name": "Angioedema",
+      "category": "dermatology",
+      "efo_id": "EFO_0005532",
+      "mondo_id": "MONDO:0010481",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "bullous_pemphigoid",
+      "name": "Bullous pemphigoid",
+      "category": "dermatology",
+      "efo_id": "EFO_0007187",
+      "mondo_id": "MONDO:0019082",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "urticaria_chronic",
+      "name": "Chronic spontaneous urticaria",
+      "category": "dermatology",
+      "efo_id": "EFO_0005531",
+      "mondo_id": "MONDO:0005492",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "contact_dermatitis",
+      "name": "Contact dermatitis",
+      "category": "dermatology",
+      "efo_id": "EFO_0005319",
+      "mondo_id": "MONDO:0005480",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "cutaneous_lupus",
+      "name": "Cutaneous lupus erythematosus",
+      "category": "dermatology",
+      "efo_id": "EFO_0003834",
+      "mondo_id": "MONDO:0005282",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "dermatomyositis",
+      "name": "Dermatomyositis",
+      "category": "dermatology",
+      "efo_id": "EFO_0000405",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "epidermolysis_bullosa",
+      "name": "Epidermolysis bullosa",
+      "category": "dermatology",
+      "efo_id": "EFO_1000690",
+      "mondo_id": "MONDO:0006541",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "granuloma_annulare",
+      "name": "Granuloma annulare",
+      "category": "dermatology",
+      "efo_id": "EFO_1000704",
+      "mondo_id": "MONDO:0006554",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "hidradenitis_suppurativa",
+      "name": "Hidradenitis suppurativa",
+      "efo_id": "EFO_0006789",
+      "category": "dermatology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005619"
+    },
+    {
+      "id": "ichthyosis_vulgaris",
+      "name": "Ichthyosis vulgaris",
+      "category": "dermatology",
+      "efo_id": "MONDO_0024304",
+      "mondo_id": "MONDO:0024304",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "keloid",
+      "name": "Keloid",
+      "category": "dermatology",
+      "efo_id": "EFO_0004212",
+      "mondo_id": "MONDO:0005348",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "lichen_planus",
+      "name": "Lichen planus",
+      "category": "dermatology",
+      "efo_id": "EFO_1000726",
+      "mondo_id": "MONDO:0006572",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "lichen_sclerosus",
+      "name": "Lichen sclerosus",
+      "category": "dermatology",
+      "efo_id": "MONDO_0007899",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "scleroderma_localized",
+      "name": "Localized scleroderma",
+      "category": "dermatology",
+      "efo_id": "EFO_1001361",
+      "mondo_id": "MONDO:0019562",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "morphea",
+      "name": "Morphea",
+      "category": "dermatology",
+      "efo_id": "MONDO_0957497",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "palmoplantar_pustulosis",
+      "name": "Palmoplantar pustulosis",
+      "category": "dermatology",
+      "efo_id": "EFO_0000676",
+      "mondo_id": "MONDO:0015597",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "pemphigus",
+      "name": "Pemphigus vulgaris",
+      "efo_id": "EFO_1001218",
+      "category": "dermatology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0007001"
+    },
+    {
+      "id": "prurigo_nodularis",
+      "name": "Prurigo nodularis",
+      "category": "dermatology",
+      "efo_id": "MONDO_0026045",
+      "mondo_id": "MONDO:0026045",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "pyoderma_gangrenosum",
+      "name": "Pyoderma gangrenosum",
+      "category": "dermatology",
+      "efo_id": "EFO_0006835",
+      "mondo_id": "MONDO:0018824",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "rosacea",
+      "name": "Rosacea",
+      "category": "dermatology",
+      "efo_id": "EFO_1000760",
+      "mondo_id": "MONDO:0006604",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "seborrheic_dermatitis",
+      "name": "Seborrheic dermatitis",
+      "category": "dermatology",
+      "efo_id": "EFO_1000764",
+      "mondo_id": "MONDO:0006608",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "vitiligo",
+      "name": "Vitiligo",
+      "efo_id": "EFO_0004256",
+      "category": "dermatology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0019100"
+    },
+    {
+      "id": "adenomyosis",
+      "name": "Adenomyosis",
+      "category": "endocrine_reproductive",
+      "efo_id": "MONDO_0010888",
+      "mondo_id": "MONDO:0010888",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "benign_prostatic_hyperplasia",
+      "name": "Benign prostatic hyperplasia",
+      "category": "endocrine_reproductive",
+      "efo_id": "EFO_0000284",
+      "mondo_id": "MONDO:0010811",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "endometriosis",
+      "name": "Endometriosis",
+      "category": "endocrine_reproductive",
+      "efo_id": "EFO_0001065",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005133"
+    },
+    {
+      "id": "erectile_dysfunction",
+      "name": "Erectile dysfunction",
+      "category": "endocrine_reproductive",
+      "efo_id": "EFO_0004234",
+      "mondo_id": "MONDO:0005362",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "hyperemesis_gravidarum",
+      "name": "Hyperemesis gravidarum",
+      "category": "endocrine_reproductive",
+      "efo_id": "EFO_1000971",
+      "mondo_id": "MONDO:0006791",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "male_hypogonadism",
+      "name": "Male hypogonadism",
+      "category": "endocrine_reproductive",
+      "efo_id": "MONDO_0002146",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "postpartum_depression",
+      "name": "Postpartum depression",
+      "category": "endocrine_reproductive",
+      "efo_id": "EFO_0007453",
+      "mondo_id": "MONDO:0005929",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "preeclampsia",
+      "name": "Preeclampsia",
+      "category": "endocrine_reproductive",
+      "efo_id": "EFO_0000668",
+      "mondo_id": "MONDO:0005081",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "premature_ovarian_insufficiency",
+      "name": "Premature ovarian insufficiency",
+      "category": "endocrine_reproductive",
+      "efo_id": "EFO_0000651",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "uterine_fibroids",
+      "name": "Uterine fibroids",
+      "category": "endocrine_reproductive",
+      "efo_id": "EFO_0000731",
+      "mondo_id": "MONDO:0007886",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "otitis_media_chronic",
+      "name": "Chronic otitis media",
+      "category": "ent_dental",
+      "efo_id": "MONDO_0021204",
+      "mondo_id": "MONDO:0021204",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "laryngopharyngeal_reflux",
+      "name": "Laryngopharyngeal reflux",
+      "category": "ent_dental",
+      "efo_id": "EFO_1001355",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "menieres_disease",
+      "name": "Ménière disease",
+      "category": "ent_dental",
+      "efo_id": "EFO_0006862",
+      "mondo_id": "MONDO:0007972",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "oral_lichen_planus",
+      "name": "Oral lichen planus",
+      "category": "ent_dental",
+      "efo_id": "EFO_0008517",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "otosclerosis",
+      "name": "Otosclerosis",
+      "category": "ent_dental",
+      "efo_id": "EFO_0004213",
+      "mondo_id": "MONDO:0005349",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "periodontitis",
+      "name": "Periodontitis",
+      "category": "ent_dental",
+      "efo_id": "EFO_0000649",
+      "mondo_id": "MONDO:0005076",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "sialolithiasis",
+      "name": "Sialolithiasis",
+      "category": "ent_dental",
+      "efo_id": "EFO_1001180",
+      "mondo_id": "MONDO:0006970",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "sudden_sensorineural_hearing_loss",
+      "name": "Sudden sensorineural hearing loss",
+      "category": "ent_dental",
+      "efo_id": "MONDO_0043373",
+      "mondo_id": "MONDO:0043373",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "tinnitus",
+      "name": "Tinnitus",
+      "category": "ent_dental",
+      "efo_id": "EFO_0000651",
+      "mondo_id": "MONDO:0700322",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "vestibular_neuritis",
+      "name": "Vestibular neuritis",
+      "category": "ent_dental",
+      "efo_id": "EFO_0007537",
+      "mondo_id": "MONDO:0006008",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "achalasia",
+      "name": "Achalasia",
+      "category": "gastroenterology",
+      "efo_id": "EFO_0000651",
+      "mondo_id": "MONDO:0008698",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "alcoholic_liver_disease",
+      "name": "Alcoholic liver disease",
+      "category": "gastroenterology",
+      "efo_id": "EFO_0008573",
+      "mondo_id": "MONDO:0043693",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "autoimmune_hepatitis",
+      "name": "Autoimmune hepatitis",
+      "category": "gastroenterology",
+      "efo_id": "EFO_0005676",
+      "mondo_id": "MONDO:0016264",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "autoimmune_pancreatitis",
+      "name": "Autoimmune pancreatitis",
+      "category": "gastroenterology",
+      "efo_id": "MONDO_0015175",
+      "mondo_id": "MONDO:0015175",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "barretts_esophagus",
+      "name": "Barrett esophagus",
+      "category": "gastroenterology",
+      "efo_id": "EFO_0000280",
+      "mondo_id": "MONDO:0013662",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "budd_chiari_syndrome",
+      "name": "Budd-Chiari syndrome",
+      "category": "gastroenterology",
+      "efo_id": "MONDO_0006786",
+      "mondo_id": "MONDO:0010947",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "celiac_disease",
+      "name": "Celiac disease",
+      "efo_id": "EFO_0001060",
+      "category": "gastroenterology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005130"
+    },
+    {
+      "id": "intestinal_pseudo_obstruction",
+      "name": "Chronic intestinal pseudo-obstruction",
+      "category": "gastroenterology",
+      "efo_id": "EFO_1000988",
+      "mondo_id": "MONDO:0017574",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "crohns_disease",
+      "name": "Crohn disease",
+      "category": "gastroenterology",
+      "efo_id": "EFO_0000384",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005011"
+    },
+    {
+      "id": "diverticular_disease",
+      "name": "Diverticular disease",
+      "category": "gastroenterology",
+      "efo_id": "EFO_0009959",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "eosinophilic_esophagitis",
+      "name": "Eosinophilic esophagitis",
+      "category": "gastroenterology",
+      "efo_id": "EFO_0004232",
+      "mondo_id": "MONDO:0005361",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "exocrine_pancreatic_insufficiency",
+      "name": "Exocrine pancreatic insufficiency",
+      "category": "gastroenterology",
+      "efo_id": "MONDO_0001684",
+      "mondo_id": "MONDO:0001684",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "functional_dyspepsia",
+      "name": "Functional dyspepsia",
+      "category": "gastroenterology",
+      "efo_id": "EFO_0008533",
+      "mondo_id": "MONDO:0002268",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "gerd",
+      "name": "Gastroesophageal reflux disease",
+      "efo_id": "EFO_0004239",
+      "category": "gastroenterology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005366"
+    },
+    {
+      "id": "gastroparesis",
+      "name": "Gastroparesis",
+      "category": "gastroenterology",
+      "efo_id": "EFO_1000948",
+      "mondo_id": "MONDO:0006769",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "h_pylori_infection",
+      "name": "Helicobacter pylori infection",
+      "category": "gastroenterology",
+      "efo_id": "EFO_0000544",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "hepatic_encephalopathy",
+      "name": "Hepatic encephalopathy",
+      "category": "gastroenterology",
+      "efo_id": "EFO_0000651",
+      "mondo_id": "MONDO:0001711",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "hepatitis_b",
+      "name": "Hepatitis B",
+      "efo_id": "EFO_0004197",
+      "category": "gastroenterology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005344"
+    },
+    {
+      "id": "hepatitis_c",
+      "name": "Hepatitis C",
+      "efo_id": "EFO_0004196",
+      "category": "gastroenterology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0006011"
+    },
+    {
+      "id": "hepatorenal_syndrome",
+      "name": "Hepatorenal syndrome",
+      "category": "gastroenterology",
+      "efo_id": "MONDO_0001382",
+      "mondo_id": "MONDO:0001382",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "hereditary_pancreatitis",
+      "name": "Hereditary pancreatitis",
+      "category": "gastroenterology",
+      "efo_id": "EFO_0000508",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact",
+      "mondo_id": "MONDO:0003847"
+    },
+    {
+      "id": "irritable_bowel",
+      "name": "Irritable bowel syndrome",
+      "category": "gastroenterology",
+      "efo_id": "EFO_0000555",
+      "mondo_id": "MONDO:0005052",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "liver_cirrhosis",
+      "name": "Liver cirrhosis",
+      "efo_id": "EFO_0001422",
+      "category": "gastroenterology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005155"
+    },
+    {
+      "id": "microscopic_colitis",
+      "name": "Microscopic colitis",
+      "category": "gastroenterology",
+      "efo_id": "EFO_1001295",
+      "mondo_id": "MONDO:0000702",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "pancreatitis",
+      "name": "Pancreatitis",
+      "efo_id": "EFO_0000786",
+      "category": "gastroenterology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "peptic_ulcer",
+      "name": "Peptic ulcer disease",
+      "category": "gastroenterology",
+      "efo_id": "MONDO_0004247",
+      "mondo_id": "MONDO:0004247",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "primary_biliary_cholangitis",
+      "name": "Primary biliary cholangitis",
+      "category": "gastroenterology",
+      "efo_id": "EFO_1001486",
+      "mondo_id": "MONDO:0005388",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "primary_sclerosing_cholangitis",
+      "name": "Primary sclerosing cholangitis",
+      "category": "gastroenterology",
+      "efo_id": "EFO_0004268",
+      "mondo_id": "MONDO:0013433",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "short_bowel_syndrome",
+      "name": "Short bowel syndrome",
+      "category": "gastroenterology",
+      "efo_id": "MONDO_0015183",
+      "mondo_id": "MONDO:0015183",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "ulcerative_colitis",
+      "name": "Ulcerative colitis",
+      "category": "gastroenterology",
+      "efo_id": "EFO_0000729",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005101"
+    },
+    {
+      "id": "whipple_disease",
+      "name": "Whipple disease",
+      "category": "gastroenterology",
+      "efo_id": "EFO_0000775",
+      "mondo_id": "MONDO:0005116",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "alpha_thalassemia",
+      "name": "Alpha-thalassemia",
+      "category": "hematology",
+      "efo_id": "EFO_0005803",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact",
+      "mondo_id": "MONDO:0005570"
+    },
+    {
+      "id": "antiphospholipid_syndrome",
+      "name": "Antiphospholipid syndrome",
+      "category": "hematology",
+      "efo_id": "EFO_0002689",
+      "mondo_id": "MONDO:8000010",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "aplastic_anemia",
+      "name": "Aplastic anemia",
+      "efo_id": "EFO_0004244",
+      "category": "hematology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0015925"
+    },
+    {
+      "id": "autoimmune_hemolytic_anemia",
+      "name": "Autoimmune hemolytic anemia",
+      "category": "hematology",
+      "efo_id": "EFO_1001264",
+      "mondo_id": "MONDO:0020108",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "thalassemia",
+      "name": "Beta-thalassemia",
+      "efo_id": "EFO_0005537",
+      "category": "hematology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005494"
+    },
+    {
+      "id": "castleman_disease",
+      "name": "Castleman disease",
+      "category": "hematology",
+      "efo_id": "MONDO_0015564",
+      "mondo_id": "MONDO:0015564",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "chronic_myelomonocytic_leukemia",
+      "name": "Chronic myelomonocytic leukemia",
+      "category": "hematology",
+      "efo_id": "EFO_1001779",
+      "mondo_id": "MONDO:0020311",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "cold_agglutinin_disease",
+      "name": "Cold agglutinin disease",
+      "category": "hematology",
+      "efo_id": "MONDO_0018922",
+      "mondo_id": "MONDO:0018922",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "diamond_blackfan_anemia",
+      "name": "Diamond-Blackfan anemia",
+      "category": "hematology",
+      "efo_id": "MONDO_0015253",
+      "mondo_id": "MONDO:0015253",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "factor_v_leiden",
+      "name": "Factor V Leiden thrombophilia",
+      "category": "hematology",
+      "efo_id": "EFO_0009315",
+      "mondo_id": "MONDO:0002305",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "fanconi_anemia",
+      "name": "Fanconi anemia",
+      "category": "hematology",
+      "efo_id": "MONDO_0019391",
+      "mondo_id": "MONDO:0019391",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "g6pd_deficiency",
+      "name": "Glucose-6-phosphate dehydrogenase deficiency",
+      "category": "hematology",
+      "efo_id": "EFO_0007287",
+      "mondo_id": "MONDO:7770486",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "hemolytic_uremic_syndrome",
+      "name": "Hemolytic uremic syndrome",
+      "category": "hematology",
+      "efo_id": "MONDO_0008893",
+      "mondo_id": "MONDO:0001549",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "hemophagocytic_lymphohistiocytosis",
+      "name": "Hemophagocytic lymphohistiocytosis",
+      "category": "hematology",
+      "efo_id": "EFO_0007352",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact",
+      "mondo_id": "MONDO:0005833"
+    },
+    {
+      "id": "hemophilia_a",
+      "name": "Hemophilia A",
+      "efo_id": "EFO_0004285",
+      "category": "hematology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "hemophilia_b",
+      "name": "Hemophilia B",
+      "category": "hematology",
+      "efo_id": "MONDO_0010604",
+      "mondo_id": "MONDO:0010604",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "heparin_induced_thrombocytopenia",
+      "name": "Heparin-induced thrombocytopenia",
+      "category": "hematology",
+      "efo_id": "EFO_0000651",
+      "mondo_id": "MONDO:0018048",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "hereditary_spherocytosis",
+      "name": "Hereditary spherocytosis",
+      "category": "hematology",
+      "efo_id": "MONDO_0019350",
+      "mondo_id": "MONDO:0019350",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "immune_thrombocytopenia",
+      "name": "Immune thrombocytopenic purpura",
+      "efo_id": "EFO_0004247",
+      "category": "hematology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005371"
+    },
+    {
+      "id": "iron_deficiency_anemia",
+      "name": "Iron deficiency anemia",
+      "category": "hematology",
+      "efo_id": "EFO_0000651",
+      "mondo_id": "MONDO:0001356",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "langerhans_cell_histiocytosis",
+      "name": "Langerhans cell histiocytosis",
+      "category": "hematology",
+      "efo_id": "EFO_1000318",
+      "mondo_id": "MONDO:0018310",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "light_chain_deposition",
+      "name": "Light chain deposition disease",
+      "category": "hematology",
+      "efo_id": "MONDO_0019438",
+      "mondo_id": "MONDO:0019730",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "myelodysplastic_syndrome",
+      "name": "Myelodysplastic syndrome",
+      "efo_id": "EFO_0000198",
+      "category": "hematology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0018881"
+    },
+    {
+      "id": "paroxysmal_nocturnal_hemoglobinuria",
+      "name": "Paroxysmal nocturnal hemoglobinuria",
+      "category": "hematology",
+      "efo_id": "MONDO_0100244",
+      "mondo_id": "MONDO:0100244",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "pernicious_anemia",
+      "name": "Pernicious anemia",
+      "category": "hematology",
+      "efo_id": "EFO_0005576",
+      "mondo_id": "MONDO:0008228",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "primary_myelofibrosis",
+      "name": "Primary myelofibrosis",
+      "category": "hematology",
+      "efo_id": "EFO_0002430",
+      "mondo_id": "MONDO:0009692",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "sickle_cell",
+      "name": "Sickle cell disease",
+      "efo_id": "EFO_0006859",
+      "category": "hematology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005627"
+    },
+    {
+      "id": "systemic_al_amyloidosis",
+      "name": "Systemic AL amyloidosis",
+      "category": "hematology",
+      "efo_id": "MONDO_0019438",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "thrombotic_thrombocytopenic_purpura",
+      "name": "Thrombotic thrombocytopenic purpura",
+      "category": "hematology",
+      "efo_id": "MONDO_0018896",
+      "mondo_id": "MONDO:0018896",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "von_willebrand_disease",
+      "name": "Von Willebrand disease",
+      "category": "hematology",
+      "efo_id": "EFO_0000508",
+      "mondo_id": "MONDO:0008668",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "warm_agglutinin_disease",
+      "name": "Warm autoimmune hemolytic anemia",
+      "category": "hematology",
+      "efo_id": "EFO_0000651",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "acinetobacter_infection",
+      "name": "Acinetobacter baumannii infection",
+      "category": "infectious",
+      "efo_id": "EFO_0000544",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "anthrax",
+      "name": "Anthrax",
+      "category": "infectious",
+      "efo_id": "MONDO_0000236",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "brucellosis",
+      "name": "Brucellosis",
+      "category": "infectious",
+      "efo_id": "EFO_0007185",
+      "mondo_id": "MONDO:0005683",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "covid19",
+      "name": "COVID-19",
+      "efo_id": "MONDO_0100096",
+      "category": "infectious",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "chagas_disease",
+      "name": "Chagas disease",
+      "category": "infectious",
+      "efo_id": "MONDO_0001444",
+      "mondo_id": "MONDO:0001444",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "chikungunya",
+      "name": "Chikungunya fever",
+      "category": "infectious",
+      "efo_id": "EFO_0000651",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "chlamydia",
+      "name": "Chlamydia infection",
+      "category": "infectious",
+      "efo_id": "EFO_0000544",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "clostridioides_difficile",
+      "name": "Clostridioides difficile infection",
+      "efo_id": "EFO_0007306",
+      "category": "infectious",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005791"
+    },
+    {
+      "id": "cryptococcal_meningitis",
+      "name": "Cryptococcal meningitis",
+      "category": "infectious",
+      "efo_id": "EFO_0007228",
+      "mondo_id": "MONDO:0005723",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "cytomegalovirus",
+      "name": "Cytomegalovirus infection",
+      "category": "infectious",
+      "efo_id": "EFO_0001062",
+      "mondo_id": "MONDO:0005132",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "dengue",
+      "name": "Dengue fever",
+      "efo_id": "EFO_0007159",
+      "category": "infectious",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005659"
+    },
+    {
+      "id": "ebola",
+      "name": "Ebola virus disease",
+      "category": "infectious",
+      "efo_id": "MONDO_0005737",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "epstein_barr",
+      "name": "Epstein-Barr virus infection",
+      "category": "infectious",
+      "efo_id": "EFO_0000769",
+      "mondo_id": "MONDO:0005111",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "gonorrhea",
+      "name": "Gonorrhea",
+      "category": "infectious",
+      "efo_id": "EFO_0009549",
+      "mondo_id": "MONDO:0004277",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "hiv",
+      "name": "HIV infection",
+      "efo_id": "EFO_0000764",
+      "category": "infectious",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005109"
+    },
+    {
+      "id": "hepatitis_a",
+      "name": "Hepatitis A",
+      "category": "infectious",
+      "efo_id": "EFO_0007305",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact",
+      "mondo_id": "MONDO:0005790"
+    },
+    {
+      "id": "hepatitis_d",
+      "name": "Hepatitis D",
+      "category": "infectious",
+      "efo_id": "EFO_0007304",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact",
+      "mondo_id": "MONDO:0005789"
+    },
+    {
+      "id": "hepatitis_e",
+      "name": "Hepatitis E",
+      "category": "infectious",
+      "efo_id": "EFO_0007303",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact",
+      "mondo_id": "MONDO:0005788"
+    },
+    {
+      "id": "herpes_simplex",
+      "name": "Herpes simplex virus infection",
+      "category": "infectious",
+      "efo_id": "MONDO_0017381",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "influenza",
+      "name": "Influenza",
+      "efo_id": "EFO_0007328",
+      "category": "infectious",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005812"
+    },
+    {
+      "id": "candidiasis_invasive",
+      "name": "Invasive candidiasis",
+      "category": "infectious",
+      "efo_id": "MONDO_0002026",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "klebsiella_infection",
+      "name": "Klebsiella pneumoniae infection",
+      "category": "infectious",
+      "efo_id": "EFO_0000651",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "leishmaniasis",
+      "name": "Leishmaniasis",
+      "category": "infectious",
+      "efo_id": "EFO_0005044",
+      "mondo_id": "MONDO:0011989",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "leprosy",
+      "name": "Leprosy",
+      "category": "infectious",
+      "efo_id": "EFO_0001054",
+      "mondo_id": "MONDO:0005124",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "lyme_disease",
+      "name": "Lyme disease",
+      "category": "infectious",
+      "efo_id": "EFO_0008510",
+      "mondo_id": "MONDO:0019632",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "malaria",
+      "name": "Malaria",
+      "efo_id": "EFO_0001068",
+      "category": "infectious",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005136"
+    },
+    {
+      "id": "measles",
+      "name": "Measles",
+      "category": "infectious",
+      "efo_id": "EFO_1002025",
+      "mondo_id": "MONDO:0004619",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "mrsa_infection",
+      "name": "Methicillin-resistant Staphylococcus aureus infection",
+      "category": "infectious",
+      "efo_id": "EFO_0008555",
+      "mondo_id": "MONDO:0100073",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "mumps",
+      "name": "Mumps",
+      "category": "infectious",
+      "efo_id": "MONDO_0014715",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "norovirus",
+      "name": "Norovirus gastroenteritis",
+      "category": "infectious",
+      "efo_id": "MONDO_0043579",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "plague",
+      "name": "Plague",
+      "category": "infectious",
+      "efo_id": "EFO_0009425",
+      "mondo_id": "MONDO:0019095",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "pneumocystis_pneumonia",
+      "name": "Pneumocystis pneumonia",
+      "category": "infectious",
+      "efo_id": "EFO_0007448",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact",
+      "mondo_id": "MONDO:0019121"
+    },
+    {
+      "id": "pseudomonas_infection",
+      "name": "Pseudomonas aeruginosa infection",
+      "category": "infectious",
+      "efo_id": "MONDO_0037398",
+      "mondo_id": "MONDO:0005142",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "rabies",
+      "name": "Rabies",
+      "category": "infectious",
+      "efo_id": "EFO_0007457",
+      "mondo_id": "MONDO:0019173",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "rsv_infection",
+      "name": "Respiratory syncytial virus infection",
+      "category": "infectious",
+      "efo_id": "EFO_1001413",
+      "mondo_id": "MONDO:0001577",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "rocky_mountain_spotted_fever",
+      "name": "Rocky Mountain spotted fever",
+      "category": "infectious",
+      "efo_id": "EFO_0000651",
+      "mondo_id": "MONDO:0019359",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "rotavirus",
+      "name": "Rotavirus gastroenteritis",
+      "category": "infectious",
+      "efo_id": "MONDO_0043579",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "rubella",
+      "name": "Rubella",
+      "category": "infectious",
+      "efo_id": "EFO_1002026",
+      "mondo_id": "MONDO:0004656",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "schistosomiasis",
+      "name": "Schistosomiasis",
+      "category": "infectious",
+      "efo_id": "EFO_1001475",
+      "mondo_id": "MONDO:0015254",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "sepsis",
+      "name": "Sepsis",
+      "efo_id": "EFO_0003832",
+      "category": "infectious",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005281"
+    },
+    {
+      "id": "syphilis",
+      "name": "Syphilis",
+      "category": "infectious",
+      "efo_id": "EFO_0007504",
+      "mondo_id": "MONDO:0005976",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "toxoplasmosis",
+      "name": "Toxoplasmosis",
+      "category": "infectious",
+      "efo_id": "EFO_0007517",
+      "mondo_id": "MONDO:0005989",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "tuberculosis",
+      "name": "Tuberculosis",
+      "efo_id": "EFO_0007443",
+      "category": "infectious",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005919"
+    },
+    {
+      "id": "enterococcal_infection",
+      "name": "Vancomycin-resistant Enterococcus infection",
+      "category": "infectious",
+      "efo_id": "EFO_0000544",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "varicella",
+      "name": "Varicella",
+      "category": "infectious",
+      "efo_id": "MONDO_0010919",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "west_nile",
+      "name": "West Nile virus infection",
+      "category": "infectious",
+      "efo_id": "EFO_0000544",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "yellow_fever",
+      "name": "Yellow fever",
+      "category": "infectious",
+      "efo_id": "EFO_0000651",
+      "mondo_id": "MONDO:0020502",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "zika",
+      "name": "Zika virus disease",
+      "category": "infectious",
+      "efo_id": "MONDO_0018661",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "acromegaly",
+      "name": "Acromegaly",
+      "category": "metabolic",
+      "efo_id": "EFO_0000232",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0004972"
+    },
+    {
+      "id": "addisons_disease",
+      "name": "Addison disease",
+      "efo_id": "EFO_0003779",
+      "category": "metabolic",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0007699"
+    },
+    {
+      "id": "adrenal_insufficiency",
+      "name": "Adrenal insufficiency",
+      "category": "metabolic",
+      "efo_id": "EFO_0009491",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact",
+      "mondo_id": "MONDO:0000004"
+    },
+    {
+      "id": "biotinidase_deficiency",
+      "name": "Biotinidase deficiency",
+      "category": "metabolic",
+      "efo_id": "MONDO_0009665",
+      "mondo_id": "MONDO:0009665",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "carnitine_deficiency",
+      "name": "Carnitine deficiency",
+      "category": "metabolic",
+      "efo_id": "MONDO_0008919",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "congenital_adrenal_hyperplasia",
+      "name": "Congenital adrenal hyperplasia",
+      "category": "metabolic",
+      "efo_id": "MONDO_0018479",
+      "mondo_id": "MONDO:0018479",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "cushings_syndrome",
+      "name": "Cushing syndrome",
+      "efo_id": "EFO_0000470",
+      "category": "metabolic",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "diabetes_insipidus",
+      "name": "Diabetes insipidus",
+      "category": "metabolic",
+      "efo_id": "MONDO_0004782",
+      "mondo_id": "MONDO:0004782",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "diabetic_nephropathy",
+      "name": "Diabetic nephropathy",
+      "category": "metabolic",
+      "efo_id": "EFO_1000783",
+      "mondo_id": "MONDO:0006626",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "diabetic_neuropathy",
+      "name": "Diabetic neuropathy",
+      "category": "metabolic",
+      "efo_id": "EFO_1000783",
+      "mondo_id": "MONDO:0006626",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "familial_hypercholesterolemia",
+      "name": "Familial hypercholesterolemia",
+      "category": "metabolic",
+      "efo_id": "EFO_0003899",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "galactosemia",
+      "name": "Galactosemia",
+      "category": "metabolic",
+      "efo_id": "MONDO_0018116",
+      "mondo_id": "MONDO:0018116",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "gestational_diabetes",
+      "name": "Gestational diabetes mellitus",
+      "category": "metabolic",
+      "efo_id": "EFO_0004593",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact",
+      "mondo_id": "MONDO:0005406"
+    },
+    {
+      "id": "glycogen_storage_disease",
+      "name": "Glycogen storage disease",
+      "category": "metabolic",
+      "efo_id": "MONDO_0002413",
+      "mondo_id": "MONDO:0002413",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "graves_disease",
+      "name": "Graves disease",
+      "category": "metabolic",
+      "efo_id": "EFO_0004234",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005362"
+    },
+    {
+      "id": "hashimoto_thyroiditis",
+      "name": "Hashimoto thyroiditis",
+      "category": "metabolic",
+      "efo_id": "EFO_0003779",
+      "mondo_id": "MONDO:0007699",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "hemochromatosis",
+      "name": "Hereditary hemochromatosis",
+      "category": "metabolic",
+      "efo_id": "EFO_0000541",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "homocystinuria",
+      "name": "Homocystinuria",
+      "category": "metabolic",
+      "efo_id": "EFO_0000651",
+      "mondo_id": "MONDO:0004737",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "hyperparathyroidism",
+      "name": "Hyperparathyroidism",
+      "category": "metabolic",
+      "efo_id": "EFO_0008506",
+      "mondo_id": "MONDO:0001741",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "hyperthyroidism",
+      "name": "Hyperthyroidism",
+      "efo_id": "EFO_0004237",
+      "category": "metabolic",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005364"
+    },
+    {
+      "id": "hypertriglyceridemia",
+      "name": "Hypertriglyceridemia",
+      "category": "metabolic",
+      "efo_id": "EFO_0004211",
+      "mondo_id": "MONDO:0005347",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "hyperuricemia",
+      "name": "Hyperuricemia",
+      "category": "metabolic",
+      "efo_id": "EFO_0000651",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "hypoparathyroidism",
+      "name": "Hypoparathyroidism",
+      "category": "metabolic",
+      "efo_id": "EFO_0009451",
+      "mondo_id": "MONDO:0001220",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "hypothyroidism",
+      "name": "Hypothyroidism",
+      "efo_id": "EFO_0004238",
+      "category": "metabolic",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005365"
+    },
+    {
+      "id": "lipodystrophy",
+      "name": "Lipodystrophy",
+      "category": "metabolic",
+      "efo_id": "EFO_1000727",
+      "mondo_id": "MONDO:0006573",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "maple_syrup_urine",
+      "name": "Maple syrup urine disease",
+      "category": "metabolic",
+      "efo_id": "MONDO_0009563",
+      "mondo_id": "MONDO:0009563",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "type3_diabetes",
+      "name": "Maturity-onset diabetes of the young",
+      "category": "metabolic",
+      "efo_id": "MONDO_0018911",
+      "mondo_id": "MONDO:0018911",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "metabolic_syndrome",
+      "name": "Metabolic syndrome",
+      "category": "metabolic",
+      "efo_id": "EFO_0000195",
+      "mondo_id": "MONDO:0011565",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "nafld",
+      "name": "Non-alcoholic fatty liver disease",
+      "efo_id": "EFO_0004267",
+      "category": "metabolic",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "obesity",
+      "name": "Obesity",
+      "efo_id": "EFO_0001073",
+      "category": "metabolic",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0011122"
+    },
+    {
+      "id": "phenylketonuria",
+      "name": "Phenylketonuria",
+      "efo_id": "EFO_0000793",
+      "category": "metabolic",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "pcos",
+      "name": "Polycystic ovary syndrome",
+      "efo_id": "EFO_0000660",
+      "category": "metabolic",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0008487"
+    },
+    {
+      "id": "porphyria",
+      "name": "Porphyria",
+      "category": "metabolic",
+      "efo_id": "MONDO_0037939",
+      "mondo_id": "MONDO:0037939",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "primary_aldosteronism",
+      "name": "Primary aldosteronism",
+      "category": "metabolic",
+      "efo_id": "MONDO_0001422",
+      "mondo_id": "MONDO:0001422",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "prolactinoma",
+      "name": "Prolactinoma",
+      "category": "metabolic",
+      "efo_id": "EFO_1001063",
+      "mondo_id": "MONDO:0017124",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "sitosterolemia",
+      "name": "Sitosterolemia",
+      "category": "metabolic",
+      "efo_id": "MONDO_0008863",
+      "mondo_id": "MONDO:0008863",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "thyroid_nodule",
+      "name": "Thyroid nodule",
+      "category": "metabolic",
+      "efo_id": "EFO_1001436",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "tyrosinemia",
+      "name": "Tyrosinemia",
+      "category": "metabolic",
+      "efo_id": "MONDO_0004741",
+      "mondo_id": "MONDO:0004741",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "achondroplasia",
+      "name": "Achondroplasia",
+      "category": "musculoskeletal",
+      "efo_id": "MONDO_0007037",
+      "mondo_id": "MONDO:0007037",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "avascular_necrosis",
+      "name": "Avascular necrosis",
+      "category": "musculoskeletal",
+      "efo_id": "EFO_0000651",
+      "mondo_id": "MONDO:0018373",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "bursitis",
+      "name": "Bursitis",
+      "category": "musculoskeletal",
+      "efo_id": "MONDO_0002471",
+      "mondo_id": "MONDO:0002471",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "calcium_pyrophosphate",
+      "name": "Calcium pyrophosphate deposition disease",
+      "category": "musculoskeletal",
+      "efo_id": "MONDO_0001314",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "chronic_low_back_pain",
+      "name": "Chronic low back pain",
+      "category": "musculoskeletal",
+      "efo_id": "EFO_0003843",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "duchenne_md",
+      "name": "Duchenne muscular dystrophy",
+      "efo_id": "EFO_0003093",
+      "category": "musculoskeletal",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "fibromyalgia",
+      "name": "Fibromyalgia",
+      "efo_id": "EFO_0004249",
+      "category": "musculoskeletal",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005373"
+    },
+    {
+      "id": "scoliosis",
+      "name": "Idiopathic scoliosis",
+      "category": "musculoskeletal",
+      "efo_id": "MONDO_0000726",
+      "mondo_id": "MONDO:0000726",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "inclusion_body_myositis",
+      "name": "Inclusion body myositis",
+      "category": "musculoskeletal",
+      "efo_id": "EFO_0007323",
+      "mondo_id": "MONDO:0007827",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "juvenile_idiopathic_arthritis",
+      "name": "Juvenile idiopathic arthritis",
+      "category": "musculoskeletal",
+      "efo_id": "EFO_0002609",
+      "mondo_id": "MONDO:0011429",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "herniated_disc",
+      "name": "Lumbar disc herniation",
+      "category": "musculoskeletal",
+      "efo_id": "EFO_1002005",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "ankylosing_spondylitis_nr",
+      "name": "Non-radiographic axial spondyloarthritis",
+      "category": "musculoskeletal",
+      "efo_id": "EFO_0000651",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "osteoarthritis",
+      "name": "Osteoarthritis",
+      "efo_id": "EFO_0002506",
+      "category": "musculoskeletal",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "osteogenesis_imperfecta",
+      "name": "Osteogenesis imperfecta",
+      "category": "musculoskeletal",
+      "efo_id": "MONDO_0019019",
+      "mondo_id": "MONDO:0019019",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "osteoporosis",
+      "name": "Osteoporosis",
+      "efo_id": "EFO_0003882",
+      "category": "musculoskeletal",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005298"
+    },
+    {
+      "id": "pagets_disease_bone",
+      "name": "Paget disease of bone",
+      "category": "musculoskeletal",
+      "efo_id": "MONDO_0000507",
+      "mondo_id": "MONDO:0008176",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "plantar_fasciitis",
+      "name": "Plantar fasciitis",
+      "category": "musculoskeletal",
+      "efo_id": "EFO_1001909",
+      "mondo_id": "MONDO:0004833",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "polymyalgia_rheumatica",
+      "name": "Polymyalgia rheumatica",
+      "category": "musculoskeletal",
+      "efo_id": "EFO_0008518",
+      "mondo_id": "MONDO:0019735",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "polymyositis",
+      "name": "Polymyositis",
+      "category": "musculoskeletal",
+      "efo_id": "EFO_0003063",
+      "mondo_id": "MONDO:0019127",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "reactive_arthritis",
+      "name": "Reactive arthritis",
+      "category": "musculoskeletal",
+      "efo_id": "EFO_0007460",
+      "mondo_id": "MONDO:0017376",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "rotator_cuff_tendinopathy",
+      "name": "Rotator cuff tendinopathy",
+      "category": "musculoskeletal",
+      "efo_id": "EFO_1001434",
+      "mondo_id": "MONDO:0100010",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "sjogrens_associated_arthritis",
+      "name": "Sjögren syndrome-associated arthritis",
+      "category": "musculoskeletal",
+      "efo_id": "EFO_0000651",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "spinal_stenosis",
+      "name": "Spinal stenosis",
+      "category": "musculoskeletal",
+      "efo_id": "EFO_0007490",
+      "mondo_id": "MONDO:0005965",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "tendinosis",
+      "name": "Tendinosis",
+      "category": "musculoskeletal",
+      "efo_id": "MONDO_0100011",
+      "mondo_id": "MONDO:0100011",
+      "resolution_confidence": 1.0,
+      "resolution_source": "mondo_ot_id"
+    },
+    {
+      "id": "anca_vasculitis_renal",
+      "name": "ANCA-associated vasculitis with renal involvement",
+      "category": "nephrology",
+      "efo_id": "EFO_0000651",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "acute_kidney_injury",
+      "name": "Acute kidney injury",
+      "category": "nephrology",
+      "efo_id": "EFO_0000651",
+      "mondo_id": "MONDO:0002492",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "alport_syndrome",
+      "name": "Alport syndrome",
+      "category": "nephrology",
+      "efo_id": "MONDO_0018965",
+      "mondo_id": "MONDO:0018965",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "anti_gbm_disease",
+      "name": "Anti-glomerular basement membrane disease",
+      "category": "nephrology",
+      "efo_id": "EFO_0007290",
+      "mondo_id": "MONDO:0009303",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "bartter_syndrome",
+      "name": "Bartter syndrome",
+      "category": "nephrology",
+      "efo_id": "MONDO_0015231",
+      "mondo_id": "MONDO:0015231",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "c3_glomerulopathy",
+      "name": "C3 glomerulopathy",
+      "category": "nephrology",
+      "efo_id": "MONDO_0018013",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "chronic_kidney_disease",
+      "name": "Chronic kidney disease",
+      "efo_id": "EFO_0003884",
+      "category": "nephrology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005300"
+    },
+    {
+      "id": "cystinuria",
+      "name": "Cystinuria",
+      "category": "nephrology",
+      "efo_id": "MONDO_0009067",
+      "mondo_id": "MONDO:0009067",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "diabetic_kidney_disease",
+      "name": "Diabetic kidney disease",
+      "category": "nephrology",
+      "efo_id": "EFO_0000401",
+      "mondo_id": "MONDO:0005016",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "fabry_nephropathy",
+      "name": "Fabry disease nephropathy",
+      "category": "nephrology",
+      "efo_id": "EFO_0000651",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "focal_segmental_glomerulosclerosis",
+      "name": "Focal segmental glomerulosclerosis",
+      "category": "nephrology",
+      "efo_id": "EFO_0004236",
+      "mondo_id": "MONDO:0100313",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "gitelman_syndrome",
+      "name": "Gitelman syndrome",
+      "category": "nephrology",
+      "efo_id": "MONDO_0009904",
+      "mondo_id": "MONDO:0009904",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "hypertensive_nephrosclerosis",
+      "name": "Hypertensive nephrosclerosis",
+      "category": "nephrology",
+      "efo_id": "EFO_1000041",
+      "mondo_id": "MONDO:0006044",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "iga_nephropathy",
+      "name": "IgA nephropathy",
+      "efo_id": "EFO_0004194",
+      "category": "nephrology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005342"
+    },
+    {
+      "id": "lupus_nephritis",
+      "name": "Lupus nephritis",
+      "efo_id": "EFO_0004253",
+      "category": "nephrology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0008171"
+    },
+    {
+      "id": "membranoproliferative_gn",
+      "name": "Membranoproliferative glomerulonephritis",
+      "category": "nephrology",
+      "efo_id": "EFO_1002050",
+      "mondo_id": "MONDO:0002461",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "membranous_nephropathy",
+      "name": "Membranous nephropathy",
+      "efo_id": "EFO_0004255",
+      "category": "nephrology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005377"
+    },
+    {
+      "id": "minimal_change_disease",
+      "name": "Minimal change disease",
+      "category": "nephrology",
+      "efo_id": "EFO_1001020",
+      "mondo_id": "MONDO:0006835",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "kidney_stones",
+      "name": "Nephrolithiasis",
+      "category": "nephrology",
+      "efo_id": "EFO_0004253",
+      "mondo_id": "MONDO:0008171",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "nephrotic_syndrome",
+      "name": "Nephrotic syndrome",
+      "category": "nephrology",
+      "efo_id": "EFO_0004255",
+      "mondo_id": "MONDO:0005377",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "polycystic_kidney",
+      "name": "Polycystic kidney disease",
+      "efo_id": "EFO_0000658",
+      "category": "nephrology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "renal_artery_stenosis",
+      "name": "Renal artery stenosis",
+      "category": "nephrology",
+      "efo_id": "EFO_0000651",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "renal_tubular_acidosis",
+      "name": "Renal tubular acidosis",
+      "category": "nephrology",
+      "efo_id": "MONDO_0001909",
+      "mondo_id": "MONDO:0001909",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "thin_basement_membrane",
+      "name": "Thin basement membrane nephropathy",
+      "category": "nephrology",
+      "efo_id": "EFO_0000651",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "interstitial_nephritis",
+      "name": "Tubulointerstitial nephritis",
+      "category": "nephrology",
+      "efo_id": "EFO_0009690",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact",
+      "mondo_id": "MONDO:0002118"
+    },
+    {
+      "id": "substance_use_alcohol",
+      "name": "Alcohol use disorder",
+      "category": "neurology",
+      "efo_id": "EFO_0009458",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "eating_disorder_an",
+      "name": "Anorexia nervosa",
+      "category": "neurology",
+      "efo_id": "EFO_0000240",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "anxiety_disorder",
+      "name": "Anxiety disorder",
+      "efo_id": "EFO_0004252",
+      "category": "neurology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005375"
+    },
+    {
+      "id": "adhd",
+      "name": "Attention deficit hyperactivity disorder",
+      "efo_id": "EFO_0003888",
+      "category": "neurology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0007743"
+    },
+    {
+      "id": "autism",
+      "name": "Autism spectrum disorder",
+      "efo_id": "EFO_0003758",
+      "category": "neurology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005260"
+    },
+    {
+      "id": "encephalitis_autoimmune",
+      "name": "Autoimmune encephalitis",
+      "category": "neurology",
+      "efo_id": "MONDO_0020640",
+      "mondo_id": "MONDO:0020640",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "meningitis_bacterial",
+      "name": "Bacterial meningitis",
+      "category": "neurology",
+      "efo_id": "EFO_1000831",
+      "mondo_id": "MONDO:0006670",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "bells_palsy",
+      "name": "Bell palsy",
+      "category": "neurology",
+      "efo_id": "EFO_1000631",
+      "mondo_id": "MONDO:0006496",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "bipolar_disorder",
+      "name": "Bipolar disorder",
+      "efo_id": "EFO_0000289",
+      "category": "neurology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "eating_disorder_bn",
+      "name": "Bulimia nervosa",
+      "category": "neurology",
+      "efo_id": "EFO_0005204",
+      "mondo_id": "MONDO:0005452",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "cerebral_palsy",
+      "name": "Cerebral palsy",
+      "category": "neurology",
+      "efo_id": "EFO_1000632",
+      "mondo_id": "MONDO:0006497",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "charcot_marie_tooth",
+      "name": "Charcot-Marie-Tooth disease",
+      "category": "neurology",
+      "efo_id": "MONDO_0015626",
+      "mondo_id": "MONDO:0015626",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "chronic_inflammatory_demyelinating",
+      "name": "Chronic inflammatory demyelinating polyneuropathy",
+      "category": "neurology",
+      "efo_id": "EFO_1000868",
+      "mondo_id": "MONDO:0006702",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "cluster_headache",
+      "name": "Cluster headache",
+      "category": "neurology",
+      "efo_id": "EFO_0000651",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "corticobasal_degeneration",
+      "name": "Corticobasal degeneration",
+      "category": "neurology",
+      "efo_id": "MONDO_0022308",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "creutzfeldt_jakob",
+      "name": "Creutzfeldt-Jakob disease",
+      "category": "neurology",
+      "efo_id": "EFO_0004226",
+      "mondo_id": "MONDO:0005357",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "lewy_body_dementia",
+      "name": "Dementia with Lewy bodies",
+      "category": "neurology",
+      "efo_id": "EFO_0006792",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact",
+      "mondo_id": "MONDO:0007488"
+    },
+    {
+      "id": "dravet_syndrome",
+      "name": "Dravet syndrome",
+      "category": "neurology",
+      "efo_id": "MONDO_0100135",
+      "mondo_id": "MONDO:0100135",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "dystonia",
+      "name": "Dystonia",
+      "category": "neurology",
+      "efo_id": "EFO_0000415",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "epilepsy",
+      "name": "Epilepsy",
+      "efo_id": "EFO_0000474",
+      "category": "neurology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005027"
+    },
+    {
+      "id": "essential_tremor",
+      "name": "Essential tremor",
+      "category": "neurology",
+      "efo_id": "EFO_0003108",
+      "mondo_id": "MONDO:0003233",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "friedreichs_ataxia",
+      "name": "Friedreich ataxia",
+      "category": "neurology",
+      "efo_id": "EFO_0000503",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005036"
+    },
+    {
+      "id": "frontotemporal_dementia",
+      "name": "Frontotemporal dementia",
+      "category": "neurology",
+      "efo_id": "EFO_0000504",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005037"
+    },
+    {
+      "id": "guillain_barre",
+      "name": "Guillain-Barré syndrome",
+      "category": "neurology",
+      "efo_id": "EFO_0007292",
+      "mondo_id": "MONDO:0016218",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "huntington_disease",
+      "name": "Huntington disease",
+      "efo_id": "EFO_0000536",
+      "category": "neurology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005043"
+    },
+    {
+      "id": "idiopathic_intracranial_hypertension",
+      "name": "Idiopathic intracranial hypertension",
+      "category": "neurology",
+      "efo_id": "EFO_1001132",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact",
+      "mondo_id": "MONDO:0009468"
+    },
+    {
+      "id": "lennox_gastaut",
+      "name": "Lennox-Gastaut syndrome",
+      "category": "neurology",
+      "efo_id": "MONDO_0016532",
+      "mondo_id": "MONDO:0016532",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "major_depression",
+      "name": "Major depressive disorder",
+      "efo_id": "EFO_0003761",
+      "category": "neurology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0002009"
+    },
+    {
+      "id": "migraine",
+      "name": "Migraine",
+      "efo_id": "EFO_0003821",
+      "category": "neurology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "multiple_system_atrophy",
+      "name": "Multiple system atrophy",
+      "category": "neurology",
+      "efo_id": "EFO_1001050",
+      "mondo_id": "MONDO:0007803",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "myasthenia_gravis",
+      "name": "Myasthenia gravis",
+      "efo_id": "EFO_0001395",
+      "category": "neurology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "narcolepsy",
+      "name": "Narcolepsy",
+      "category": "neurology",
+      "efo_id": "EFO_0003932",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005316"
+    },
+    {
+      "id": "neuromyelitis_optica",
+      "name": "Neuromyelitis optica spectrum disorder",
+      "category": "neurology",
+      "efo_id": "EFO_0004256",
+      "mondo_id": "MONDO:0019100",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "neuropathic_pain",
+      "name": "Neuropathic pain",
+      "category": "neurology",
+      "efo_id": "EFO_0005762",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "normal_pressure_hydrocephalus",
+      "name": "Normal pressure hydrocephalus",
+      "category": "neurology",
+      "efo_id": "EFO_1001065",
+      "mondo_id": "MONDO:0009366",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "obsessive_compulsive",
+      "name": "Obsessive-compulsive disorder",
+      "category": "neurology",
+      "efo_id": "EFO_0004246",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0012727"
+    },
+    {
+      "id": "substance_use_opioid",
+      "name": "Opioid use disorder",
+      "category": "neurology",
+      "efo_id": "EFO_0010702",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "ptsd",
+      "name": "Post-traumatic stress disorder",
+      "category": "neurology",
+      "efo_id": "EFO_0001358",
+      "mondo_id": "MONDO:0005146",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "progressive_supranuclear_palsy",
+      "name": "Progressive supranuclear palsy",
+      "category": "neurology",
+      "efo_id": "MONDO_0019037",
+      "mondo_id": "MONDO:0019037",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "restless_legs_syndrome",
+      "name": "Restless legs syndrome",
+      "category": "neurology",
+      "efo_id": "EFO_0004270",
+      "mondo_id": "MONDO:0005391",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "schizophrenia",
+      "name": "Schizophrenia",
+      "efo_id": "EFO_0000692",
+      "category": "neurology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "spinocerebellar_ataxia",
+      "name": "Spinocerebellar ataxia",
+      "category": "neurology",
+      "efo_id": "EFO_0004280",
+      "mondo_id": "MONDO:0013029",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "status_epilepticus",
+      "name": "Status epilepticus",
+      "category": "neurology",
+      "efo_id": "EFO_0008526",
+      "mondo_id": "MONDO:0002125",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "tension_headache",
+      "name": "Tension-type headache",
+      "category": "neurology",
+      "efo_id": "EFO_0000651",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "tourette_syndrome",
+      "name": "Tourette syndrome",
+      "category": "neurology",
+      "efo_id": "EFO_0004895",
+      "mondo_id": "MONDO:0007661",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "transverse_myelitis",
+      "name": "Transverse myelitis",
+      "category": "neurology",
+      "efo_id": "MONDO_0021553",
+      "mondo_id": "MONDO:0021553",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "trigeminal_neuralgia",
+      "name": "Trigeminal neuralgia",
+      "category": "neurology",
+      "efo_id": "EFO_1001219",
+      "mondo_id": "MONDO:0008599",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "tuberous_sclerosis_epilepsy",
+      "name": "Tuberous sclerosis complex epilepsy",
+      "category": "neurology",
+      "efo_id": "MONDO_0001734",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "vascular_dementia",
+      "name": "Vascular dementia",
+      "category": "neurology",
+      "efo_id": "EFO_0004718",
+      "mondo_id": "MONDO:0004648",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "wernicke_encephalopathy",
+      "name": "Wernicke encephalopathy",
+      "category": "neurology",
+      "efo_id": "EFO_1001241",
+      "mondo_id": "MONDO:0007020",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "acute_lymphoblastic_leukemia",
+      "name": "Acute lymphoblastic leukemia",
+      "category": "oncology",
+      "efo_id": "EFO_0000220",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0004967"
+    },
+    {
+      "id": "acute_myeloid_leukemia",
+      "name": "Acute myeloid leukemia",
+      "efo_id": "EFO_0000222",
+      "category": "oncology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0018874"
+    },
+    {
+      "id": "adrenocortical_carcinoma",
+      "name": "Adrenocortical carcinoma",
+      "category": "oncology",
+      "efo_id": "MONDO_0008734",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "anal_cancer",
+      "name": "Anal cancer",
+      "category": "oncology",
+      "efo_id": "MONDO_0000405",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "appendiceal_cancer",
+      "name": "Appendiceal cancer",
+      "category": "oncology",
+      "efo_id": "MONDO_0004992",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "basal_cell_carcinoma",
+      "name": "Basal cell carcinoma",
+      "category": "oncology",
+      "efo_id": "EFO_0004193",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0020804"
+    },
+    {
+      "id": "bladder_cancer",
+      "name": "Bladder cancer",
+      "efo_id": "EFO_0003060",
+      "category": "oncology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005233"
+    },
+    {
+      "id": "breast_cancer",
+      "name": "Breast cancer",
+      "efo_id": "EFO_0000305",
+      "category": "oncology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0004989"
+    },
+    {
+      "id": "burkitt_lymphoma",
+      "name": "Burkitt lymphoma",
+      "category": "oncology",
+      "efo_id": "EFO_0000309",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0007243"
+    },
+    {
+      "id": "carcinoid_tumor",
+      "name": "Carcinoid tumor",
+      "category": "oncology",
+      "efo_id": "EFO_0004243",
+      "mondo_id": "MONDO:0005369",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "cervical_cancer",
+      "name": "Cervical cancer",
+      "category": "oncology",
+      "efo_id": "EFO_0001061",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005131"
+    },
+    {
+      "id": "cholangiocarcinoma",
+      "name": "Cholangiocarcinoma",
+      "category": "oncology",
+      "efo_id": "EFO_0005232",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005461"
+    },
+    {
+      "id": "chronic_lymphocytic_leukemia",
+      "name": "Chronic lymphocytic leukemia",
+      "category": "oncology",
+      "efo_id": "EFO_0000095",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0004948"
+    },
+    {
+      "id": "chronic_myeloid_leukemia",
+      "name": "Chronic myeloid leukemia",
+      "efo_id": "EFO_0000339",
+      "category": "oncology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0011996"
+    },
+    {
+      "id": "colorectal_cancer",
+      "name": "Colorectal cancer",
+      "efo_id": "EFO_0005842",
+      "category": "oncology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "cutaneous_t_cell_lymphoma",
+      "name": "Cutaneous T-cell lymphoma",
+      "category": "oncology",
+      "efo_id": "EFO_0002913",
+      "mondo_id": "MONDO:0000607",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "squamous_cell_carcinoma",
+      "name": "Cutaneous squamous cell carcinoma",
+      "category": "oncology",
+      "efo_id": "EFO_1001927",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "diffuse_large_b_cell_lymphoma",
+      "name": "Diffuse large B-cell lymphoma",
+      "category": "oncology",
+      "efo_id": "EFO_0000403",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0018905"
+    },
+    {
+      "id": "ductal_carcinoma_in_situ",
+      "name": "Ductal carcinoma in situ",
+      "category": "oncology",
+      "efo_id": "EFO_0000313",
+      "mondo_id": "MONDO:0004993",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "endometrial_cancer",
+      "name": "Endometrial cancer",
+      "efo_id": "EFO_0001075",
+      "category": "oncology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005140"
+    },
+    {
+      "id": "esophageal_cancer",
+      "name": "Esophageal cancer",
+      "efo_id": "EFO_0002916",
+      "category": "oncology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0019086"
+    },
+    {
+      "id": "essential_thrombocythemia",
+      "name": "Essential thrombocythemia",
+      "category": "oncology",
+      "efo_id": "EFO_0000475",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "ewing_sarcoma",
+      "name": "Ewing sarcoma",
+      "category": "oncology",
+      "efo_id": "EFO_0000476",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "follicular_lymphoma",
+      "name": "Follicular lymphoma",
+      "category": "oncology",
+      "efo_id": "EFO_0000403",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0018905"
+    },
+    {
+      "id": "gastric_cancer",
+      "name": "Gastric cancer",
+      "efo_id": "EFO_0000178",
+      "category": "oncology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0004950"
+    },
+    {
+      "id": "gastrointestinal_stromal_tumor",
+      "name": "Gastrointestinal stromal tumor",
+      "category": "oncology",
+      "efo_id": "EFO_0000513",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "glioblastoma",
+      "name": "Glioblastoma",
+      "efo_id": "EFO_0000519",
+      "category": "oncology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0018177"
+    },
+    {
+      "id": "her2_pos_breast_cancer",
+      "name": "HER2-positive breast cancer",
+      "category": "oncology",
+      "efo_id": "MONDO_0004992",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "hairy_cell_leukemia",
+      "name": "Hairy cell leukemia",
+      "category": "oncology",
+      "efo_id": "EFO_0000531",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "head_neck_cancer",
+      "name": "Head and neck squamous cell carcinoma",
+      "efo_id": "EFO_0006859",
+      "category": "oncology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005627"
+    },
+    {
+      "id": "hepatocellular_carcinoma",
+      "name": "Hepatocellular carcinoma",
+      "efo_id": "EFO_0000182",
+      "category": "oncology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0007256"
+    },
+    {
+      "id": "hodgkin_lymphoma",
+      "name": "Hodgkin lymphoma",
+      "category": "oncology",
+      "efo_id": "EFO_0000183",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0004952"
+    },
+    {
+      "id": "kaposi_sarcoma",
+      "name": "Kaposi sarcoma",
+      "category": "oncology",
+      "efo_id": "EFO_0000564",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005058"
+    },
+    {
+      "id": "laryngeal_cancer",
+      "name": "Laryngeal cancer",
+      "category": "oncology",
+      "efo_id": "MONDO_0004992",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "lung_cancer",
+      "name": "Lung cancer",
+      "efo_id": "EFO_0001071",
+      "category": "oncology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005138"
+    },
+    {
+      "id": "mantle_cell_lymphoma",
+      "name": "Mantle cell lymphoma",
+      "category": "oncology",
+      "efo_id": "EFO_0000574",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005062"
+    },
+    {
+      "id": "melanoma",
+      "name": "Melanoma",
+      "efo_id": "EFO_0000389",
+      "category": "oncology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005012"
+    },
+    {
+      "id": "merkel_cell_carcinoma",
+      "name": "Merkel cell carcinoma",
+      "category": "oncology",
+      "efo_id": "EFO_0000313",
+      "mondo_id": "MONDO:0004993",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "mesothelioma",
+      "name": "Mesothelioma",
+      "category": "oncology",
+      "efo_id": "EFO_0000588",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005065"
+    },
+    {
+      "id": "multiple_myeloma",
+      "name": "Multiple myeloma",
+      "efo_id": "EFO_0001378",
+      "category": "oncology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0009693"
+    },
+    {
+      "id": "myelofibrosis",
+      "name": "Myelofibrosis",
+      "category": "oncology",
+      "efo_id": "EFO_0002430",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0009692"
+    },
+    {
+      "id": "nasopharyngeal_carcinoma",
+      "name": "Nasopharyngeal carcinoma",
+      "category": "oncology",
+      "efo_id": "MONDO_0015459",
+      "mondo_id": "MONDO:0015459",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "neuroblastoma",
+      "name": "Neuroblastoma",
+      "category": "oncology",
+      "efo_id": "EFO_0000621",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005072"
+    },
+    {
+      "id": "non_hodgkin_lymphoma",
+      "name": "Non-Hodgkin lymphoma",
+      "efo_id": "EFO_0005952",
+      "category": "oncology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0018908"
+    },
+    {
+      "id": "nsclc",
+      "name": "Non-small cell lung cancer",
+      "category": "oncology",
+      "efo_id": "EFO_0003060",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005233"
+    },
+    {
+      "id": "osteosarcoma",
+      "name": "Osteosarcoma",
+      "category": "oncology",
+      "efo_id": "EFO_0000637",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0009807"
+    },
+    {
+      "id": "ovarian_cancer",
+      "name": "Ovarian cancer",
+      "efo_id": "EFO_0001075",
+      "category": "oncology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005140"
+    },
+    {
+      "id": "pancreatic_cancer",
+      "name": "Pancreatic cancer",
+      "efo_id": "EFO_0002618",
+      "category": "oncology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005192"
+    },
+    {
+      "id": "penile_cancer",
+      "name": "Penile cancer",
+      "category": "oncology",
+      "efo_id": "MONDO_0001325",
+      "mondo_id": "MONDO:0001325",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "peritoneal_mesothelioma",
+      "name": "Peritoneal mesothelioma",
+      "category": "oncology",
+      "efo_id": "EFO_1000467",
+      "mondo_id": "MONDO:0006362",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "pheochromocytoma",
+      "name": "Pheochromocytoma",
+      "category": "oncology",
+      "efo_id": "EFO_0000649",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005076"
+    },
+    {
+      "id": "polycythemia_vera",
+      "name": "Polycythemia vera",
+      "category": "oncology",
+      "efo_id": "EFO_0002429",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0009891"
+    },
+    {
+      "id": "primary_cns_lymphoma",
+      "name": "Primary CNS lymphoma",
+      "category": "oncology",
+      "efo_id": "EFO_0000574",
+      "mondo_id": "MONDO:0005062",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "prostate_cancer",
+      "name": "Prostate cancer",
+      "efo_id": "EFO_0001663",
+      "category": "oncology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005159"
+    },
+    {
+      "id": "renal_cell_carcinoma",
+      "name": "Renal cell carcinoma",
+      "efo_id": "EFO_0000681",
+      "category": "oncology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005086"
+    },
+    {
+      "id": "retinoblastoma",
+      "name": "Retinoblastoma",
+      "category": "oncology",
+      "efo_id": "EFO_0000684",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005087"
+    },
+    {
+      "id": "rhabdomyosarcoma",
+      "name": "Rhabdomyosarcoma",
+      "category": "oncology",
+      "efo_id": "EFO_0002918",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005212"
+    },
+    {
+      "id": "salivary_gland_cancer",
+      "name": "Salivary gland cancer",
+      "category": "oncology",
+      "efo_id": "MONDO_0004669",
+      "mondo_id": "MONDO:0004669",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "small_bowel_cancer",
+      "name": "Small bowel adenocarcinoma",
+      "category": "oncology",
+      "efo_id": "EFO_0000228",
+      "mondo_id": "MONDO:0004970",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "small_cell_lung_cancer",
+      "name": "Small cell lung cancer",
+      "category": "oncology",
+      "efo_id": "EFO_0000702",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0008433"
+    },
+    {
+      "id": "soft_tissue_sarcoma",
+      "name": "Soft tissue sarcoma",
+      "category": "oncology",
+      "efo_id": "EFO_0000707",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005096"
+    },
+    {
+      "id": "mastocytosis",
+      "name": "Systemic mastocytosis",
+      "category": "oncology",
+      "efo_id": "MONDO_0016586",
+      "mondo_id": "MONDO:0016586",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "testicular_cancer",
+      "name": "Testicular cancer",
+      "category": "oncology",
+      "efo_id": "EFO_0000719",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "thymoma",
+      "name": "Thymoma",
+      "category": "oncology",
+      "efo_id": "EFO_0000727",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "thyroid_cancer",
+      "name": "Thyroid cancer",
+      "efo_id": "EFO_0002892",
+      "category": "oncology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0015075"
+    },
+    {
+      "id": "triple_neg_breast_cancer",
+      "name": "Triple-negative breast cancer",
+      "category": "oncology",
+      "efo_id": "EFO_0005537",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005494"
+    },
+    {
+      "id": "uveal_melanoma",
+      "name": "Uveal melanoma",
+      "category": "oncology",
+      "efo_id": "EFO_1000616",
+      "mondo_id": "MONDO:0006486",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "vulvar_cancer",
+      "name": "Vulvar cancer",
+      "category": "oncology",
+      "efo_id": "MONDO_0004992",
+      "mondo_id": "MONDO:0001528",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "waldenstrom_macroglobulinemia",
+      "name": "Waldenström macroglobulinemia",
+      "category": "oncology",
+      "efo_id": "EFO_0009441",
+      "mondo_id": "MONDO:0100280",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "wilms_tumor",
+      "name": "Wilms tumor",
+      "category": "oncology",
+      "efo_id": "EFO_0000731",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0007886"
+    },
+    {
+      "id": "macular_degeneration",
+      "name": "Age-related macular degeneration",
+      "efo_id": "EFO_0001365",
+      "category": "ophthalmology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005150"
+    },
+    {
+      "id": "blepharitis",
+      "name": "Blepharitis",
+      "category": "ophthalmology",
+      "efo_id": "EFO_0009536",
+      "mondo_id": "MONDO:0004785",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "central_serous_chorioretinopathy",
+      "name": "Central serous chorioretinopathy",
+      "category": "ophthalmology",
+      "efo_id": "EFO_0003839",
+      "mondo_id": "MONDO:0018616",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "macular_edema",
+      "name": "Diabetic macular edema",
+      "category": "ophthalmology",
+      "efo_id": "EFO_0009321",
+      "mondo_id": "MONDO:0004728",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "diabetic_retinopathy",
+      "name": "Diabetic retinopathy",
+      "efo_id": "EFO_0004264",
+      "category": "ophthalmology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005385"
+    },
+    {
+      "id": "dry_eye_disease",
+      "name": "Dry eye disease",
+      "category": "ophthalmology",
+      "efo_id": "EFO_0003966",
+      "mondo_id": "MONDO:0005328",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "fuchs_dystrophy",
+      "name": "Fuchs endothelial corneal dystrophy",
+      "category": "ophthalmology",
+      "efo_id": "EFO_0009464",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact",
+      "mondo_id": "MONDO:0000942"
+    },
+    {
+      "id": "glaucoma",
+      "name": "Glaucoma",
+      "efo_id": "EFO_0000516",
+      "category": "ophthalmology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "keratoconus",
+      "name": "Keratoconus",
+      "category": "ophthalmology",
+      "efo_id": "MONDO_0015486",
+      "mondo_id": "MONDO:0015486",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "leber_hereditary_optic_neuropathy",
+      "name": "Leber hereditary optic neuropathy",
+      "category": "ophthalmology",
+      "efo_id": "MONDO_0010788",
+      "mondo_id": "MONDO:0010788",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "ocular_hypertension",
+      "name": "Ocular hypertension",
+      "category": "ophthalmology",
+      "efo_id": "EFO_1001069",
+      "mondo_id": "MONDO:0006875",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "optic_neuritis",
+      "name": "Optic neuritis",
+      "category": "ophthalmology",
+      "efo_id": "EFO_0007405",
+      "mondo_id": "MONDO:0005885",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "retinal_detachment",
+      "name": "Retinal detachment",
+      "category": "ophthalmology",
+      "efo_id": "EFO_0005773",
+      "mondo_id": "MONDO:0008375",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "retinal_vein_occlusion",
+      "name": "Retinal vein occlusion",
+      "category": "ophthalmology",
+      "efo_id": "EFO_1001157",
+      "mondo_id": "MONDO:0006951",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "retinitis_pigmentosa",
+      "name": "Retinitis pigmentosa",
+      "category": "ophthalmology",
+      "efo_id": "EFO_0000678",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005085"
+    },
+    {
+      "id": "stargardt_disease",
+      "name": "Stargardt disease",
+      "category": "ophthalmology",
+      "efo_id": "MONDO_0019353",
+      "mondo_id": "MONDO:0019353",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "thyroid_eye_disease",
+      "name": "Thyroid eye disease",
+      "category": "ophthalmology",
+      "efo_id": "EFO_0003966",
+      "mondo_id": "MONDO:0005328",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "uveitis",
+      "name": "Uveitis",
+      "efo_id": "EFO_0003062",
+      "category": "ophthalmology",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "vernal_keratoconjunctivitis",
+      "name": "Vernal keratoconjunctivitis",
+      "category": "ophthalmology",
+      "efo_id": "EFO_0000651",
+      "mondo_id": "MONDO:0019085",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "chronic_fatigue_syndrome",
+      "name": "Chronic fatigue syndrome",
+      "category": "other",
+      "efo_id": "EFO_0004540",
+      "mondo_id": "MONDO:0005404",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "chronic_pelvic_pain",
+      "name": "Chronic pelvic pain syndrome",
+      "category": "other",
+      "efo_id": "EFO_0000651",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "complex_regional_pain",
+      "name": "Complex regional pain syndrome",
+      "category": "other",
+      "efo_id": "EFO_1001998",
+      "mondo_id": "MONDO:0019369",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "ehlers_danlos_hypermobile",
+      "name": "Hypermobile Ehlers-Danlos syndrome",
+      "category": "other",
+      "efo_id": "MONDO_0020066",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "interstitial_cystitis",
+      "name": "Interstitial cystitis",
+      "category": "other",
+      "efo_id": "EFO_0008507",
+      "mondo_id": "MONDO:0018301",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "lymphedema",
+      "name": "Lymphedema",
+      "category": "other",
+      "efo_id": "EFO_0000651",
+      "mondo_id": "MONDO:0019297",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "mast_cell_activation",
+      "name": "Mast cell activation syndrome",
+      "category": "other",
+      "efo_id": "EFO_0000508",
+      "mondo_id": "MONDO:0100004",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "postural_orthostatic_tachycardia",
+      "name": "Postural orthostatic tachycardia syndrome",
+      "category": "other",
+      "efo_id": "EFO_1000645",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact",
+      "mondo_id": "MONDO:0011479"
+    },
+    {
+      "id": "sarcoid_arthritis",
+      "name": "Sarcoid arthritis",
+      "category": "other",
+      "efo_id": "EFO_0000651",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "vulvodynia",
+      "name": "Vulvodynia",
+      "category": "other",
+      "mondo_id": "MONDO:0021722",
+      "resolution_confidence": 1.0,
+      "resolution_source": "mondo_ot_id",
+      "efo_id": "MONDO_0021722"
+    },
+    {
+      "id": "amyloidosis",
+      "name": "Amyloidosis",
+      "efo_id": "EFO_0000238",
+      "category": "rare",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "ehlers_danlos",
+      "name": "Ehlers-Danlos syndrome",
+      "efo_id": "EFO_0005901",
+      "category": "rare",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "fabry_disease",
+      "name": "Fabry disease",
+      "efo_id": "EFO_0003896",
+      "category": "rare",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "gaucher_disease",
+      "name": "Gaucher disease",
+      "efo_id": "EFO_0000515",
+      "category": "rare",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "hereditary_angioedema",
+      "name": "Hereditary angioedema",
+      "efo_id": "EFO_0004200",
+      "category": "rare",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "marfan_syndrome",
+      "name": "Marfan syndrome",
+      "efo_id": "EFO_0002927",
+      "category": "rare",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "neurofibromatosis",
+      "name": "Neurofibromatosis type 1",
+      "efo_id": "EFO_0002917",
+      "category": "rare",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005211"
+    },
+    {
+      "id": "spinal_muscular_atrophy",
+      "name": "Spinal muscular atrophy",
+      "efo_id": "EFO_0003847",
+      "category": "rare",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "tuberous_sclerosis",
+      "name": "Tuberous sclerosis complex",
+      "efo_id": "EFO_0003396",
+      "category": "rare",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "wilson_disease",
+      "name": "Wilson disease",
+      "efo_id": "EFO_0000730",
+      "category": "rare",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005102"
+    },
+    {
+      "id": "adrenoleukodystrophy",
+      "name": "Adrenoleukodystrophy",
+      "category": "rare_genetic",
+      "efo_id": "MONDO_0018544",
+      "mondo_id": "MONDO:0018544",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "alagille_syndrome",
+      "name": "Alagille syndrome",
+      "category": "rare_genetic",
+      "efo_id": "MONDO_0007318",
+      "mondo_id": "MONDO:0007318",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "angelman_syndrome",
+      "name": "Angelman syndrome",
+      "category": "rare_genetic",
+      "efo_id": "MONDO_0007113",
+      "mondo_id": "MONDO:0007113",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "ataxia_telangiectasia",
+      "name": "Ataxia-telangiectasia",
+      "category": "rare_genetic",
+      "efo_id": "EFO_0000540",
+      "mondo_id": "MONDO:0008840",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "batten_disease",
+      "name": "Batten disease",
+      "category": "rare_genetic",
+      "efo_id": "MONDO_0024913",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "beckwith_wiedemann",
+      "name": "Beckwith-Wiedemann syndrome",
+      "category": "rare_genetic",
+      "efo_id": "MONDO_0007534",
+      "mondo_id": "MONDO:0007534",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "charge_syndrome",
+      "name": "CHARGE syndrome",
+      "category": "rare_genetic",
+      "efo_id": "MONDO_0008965",
+      "mondo_id": "MONDO:0008965",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "cockayne_syndrome",
+      "name": "Cockayne syndrome",
+      "category": "rare_genetic",
+      "efo_id": "MONDO_0016006",
+      "mondo_id": "MONDO:0016006",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "cornelia_de_lange",
+      "name": "Cornelia de Lange syndrome",
+      "category": "rare_genetic",
+      "efo_id": "MONDO_0016033",
+      "mondo_id": "MONDO:0016033",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "down_syndrome",
+      "name": "Down syndrome",
+      "category": "rare_genetic",
+      "efo_id": "EFO_0001064",
+      "mondo_id": "MONDO:0008608",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "familial_adenomatous_polyposis",
+      "name": "Familial adenomatous polyposis",
+      "category": "rare_genetic",
+      "efo_id": "EFO_0000508",
+      "mondo_id": "MONDO:0012041",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "fragile_x",
+      "name": "Fragile X syndrome",
+      "category": "rare_genetic",
+      "efo_id": "MONDO_0010383",
+      "mondo_id": "MONDO:0010383",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "hereditary_hemorrhagic_telangiectasia",
+      "name": "Hereditary hemorrhagic telangiectasia",
+      "category": "rare_genetic",
+      "efo_id": "MONDO_0019180",
+      "mondo_id": "MONDO:0019180",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "progeria",
+      "name": "Hutchinson-Gilford progeria syndrome",
+      "category": "rare_genetic",
+      "efo_id": "MONDO_0008310",
+      "mondo_id": "MONDO:0008310",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "kabuki_syndrome",
+      "name": "Kabuki syndrome",
+      "category": "rare_genetic",
+      "efo_id": "MONDO_0016512",
+      "mondo_id": "MONDO:0016512",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "klinefelter_syndrome",
+      "name": "Klinefelter syndrome",
+      "category": "rare_genetic",
+      "efo_id": "EFO_1001006",
+      "mondo_id": "MONDO:0006823",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "krabbe_disease",
+      "name": "Krabbe disease",
+      "category": "rare_genetic",
+      "efo_id": "MONDO_0009499",
+      "mondo_id": "MONDO:0009499",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "li_fraumeni_syndrome",
+      "name": "Li-Fraumeni syndrome",
+      "category": "rare_genetic",
+      "efo_id": "MONDO_0018875",
+      "mondo_id": "MONDO:0018875",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "loeys_dietz_syndrome",
+      "name": "Loeys-Dietz syndrome",
+      "category": "rare_genetic",
+      "efo_id": "MONDO_0018954",
+      "mondo_id": "MONDO:0018954",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "lynch_syndrome",
+      "name": "Lynch syndrome",
+      "category": "rare_genetic",
+      "efo_id": "MONDO_0005835",
+      "mondo_id": "MONDO:0005835",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "metachromatic_leukodystrophy",
+      "name": "Metachromatic leukodystrophy",
+      "category": "rare_genetic",
+      "efo_id": "MONDO_0018868",
+      "mondo_id": "MONDO:0018868",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "mucopolysaccharidosis_i",
+      "name": "Mucopolysaccharidosis type I",
+      "category": "rare_genetic",
+      "efo_id": "MONDO_0019249",
+      "mondo_id": "MONDO:0001586",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "mucopolysaccharidosis_ii",
+      "name": "Mucopolysaccharidosis type II",
+      "category": "rare_genetic",
+      "efo_id": "MONDO_0019249",
+      "mondo_id": "MONDO:0001586",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "neurofibromatosis_2",
+      "name": "Neurofibromatosis type 2",
+      "category": "rare_genetic",
+      "efo_id": "EFO_0000497",
+      "mondo_id": "MONDO:0018975",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "niemann_pick",
+      "name": "Niemann-Pick disease",
+      "category": "rare_genetic",
+      "efo_id": "EFO_1001380",
+      "mondo_id": "MONDO:0001982",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "noonan_syndrome",
+      "name": "Noonan syndrome",
+      "category": "rare_genetic",
+      "efo_id": "MONDO_0018997",
+      "mondo_id": "MONDO:0018997",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "pendred_syndrome",
+      "name": "Pendred syndrome",
+      "category": "rare_genetic",
+      "efo_id": "MONDO_0010134",
+      "mondo_id": "MONDO:0010134",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "pompe_disease",
+      "name": "Pompe disease",
+      "category": "rare_genetic",
+      "efo_id": "EFO_0003777",
+      "mondo_id": "MONDO:0005267",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "prader_willi",
+      "name": "Prader-Willi syndrome",
+      "category": "rare_genetic",
+      "efo_id": "MONDO_0008300",
+      "mondo_id": "MONDO:0008300",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "rett_syndrome",
+      "name": "Rett syndrome",
+      "category": "rare_genetic",
+      "efo_id": "MONDO_0010726",
+      "mondo_id": "MONDO:0010726",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "rubinstein_taybi",
+      "name": "Rubinstein-Taybi syndrome",
+      "category": "rare_genetic",
+      "efo_id": "MONDO_0019188",
+      "mondo_id": "MONDO:0019188",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "stickler_syndrome",
+      "name": "Stickler syndrome",
+      "category": "rare_genetic",
+      "efo_id": "MONDO_0019354",
+      "mondo_id": "MONDO:0019354",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "tay_sachs",
+      "name": "Tay-Sachs disease",
+      "category": "rare_genetic",
+      "efo_id": "MONDO_0010100",
+      "mondo_id": "MONDO:0010100",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "turner_syndrome",
+      "name": "Turner syndrome",
+      "category": "rare_genetic",
+      "efo_id": "MONDO_0019499",
+      "mondo_id": "MONDO:0019499",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "usher_syndrome",
+      "name": "Usher syndrome",
+      "category": "rare_genetic",
+      "efo_id": "MONDO_0019501",
+      "mondo_id": "MONDO:0019501",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "von_hippel_lindau",
+      "name": "Von Hippel-Lindau disease",
+      "category": "rare_genetic",
+      "efo_id": "MONDO_0008667",
+      "mondo_id": "MONDO:0008667",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "waardenburg_syndrome",
+      "name": "Waardenburg syndrome",
+      "category": "rare_genetic",
+      "efo_id": "MONDO_0018094",
+      "mondo_id": "MONDO:0018094",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "werner_syndrome",
+      "name": "Werner syndrome",
+      "category": "rare_genetic",
+      "efo_id": "MONDO_0010196",
+      "mondo_id": "MONDO:0010196",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "williams_syndrome",
+      "name": "Williams syndrome",
+      "category": "rare_genetic",
+      "efo_id": "MONDO_0008678",
+      "mondo_id": "MONDO:0008678",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "xeroderma_pigmentosum",
+      "name": "Xeroderma pigmentosum",
+      "category": "rare_genetic",
+      "efo_id": "MONDO_0019600",
+      "mondo_id": "MONDO:0019600",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "ards",
+      "name": "Acute respiratory distress syndrome",
+      "category": "respiratory",
+      "efo_id": "EFO_1000637",
+      "mondo_id": "MONDO:0006502",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "allergic_bronchopulmonary_aspergillosis",
+      "name": "Allergic bronchopulmonary aspergillosis",
+      "category": "respiratory",
+      "efo_id": "EFO_0007140",
+      "mondo_id": "MONDO:0015243",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "allergic_rhinitis",
+      "name": "Allergic rhinitis",
+      "category": "respiratory",
+      "efo_id": "EFO_0003785",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "alpha1_antitrypsin",
+      "name": "Alpha-1 antitrypsin deficiency",
+      "category": "respiratory",
+      "efo_id": "EFO_0000589",
+      "mondo_id": "MONDO:0013282",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "bronchiectasis",
+      "name": "Bronchiectasis",
+      "category": "respiratory",
+      "efo_id": "EFO_0000651",
+      "mondo_id": "MONDO:0004822",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "chronic_rhinosinusitis",
+      "name": "Chronic rhinosinusitis",
+      "category": "respiratory",
+      "efo_id": "EFO_1000024",
+      "mondo_id": "MONDO:0006031",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "community_acquired_pneumonia",
+      "name": "Community-acquired pneumonia",
+      "category": "respiratory",
+      "efo_id": "EFO_0000651",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "organizing_pneumonia",
+      "name": "Cryptogenic organizing pneumonia",
+      "category": "respiratory",
+      "efo_id": "EFO_1001300",
+      "mondo_id": "MONDO:0015264",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "cystic_fibrosis",
+      "name": "Cystic fibrosis",
+      "efo_id": "EFO_0000508",
+      "category": "respiratory",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0003847"
+    },
+    {
+      "id": "eosinophilic_granulomatosis",
+      "name": "Eosinophilic granulomatosis with polyangiitis",
+      "category": "respiratory",
+      "efo_id": "EFO_0007208",
+      "mondo_id": "MONDO:0015943",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "eosinophilic_pneumonia",
+      "name": "Eosinophilic pneumonia",
+      "category": "respiratory",
+      "efo_id": "EFO_0007257",
+      "mondo_id": "MONDO:0005749",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "hypersensitivity_pneumonitis",
+      "name": "Hypersensitivity pneumonitis",
+      "category": "respiratory",
+      "efo_id": "MONDO_0017853",
+      "mondo_id": "MONDO:0017853",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "pulmonary_fibrosis",
+      "name": "Idiopathic pulmonary fibrosis",
+      "efo_id": "EFO_0000768",
+      "category": "respiratory",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "aspergillosis_invasive",
+      "name": "Invasive aspergillosis",
+      "category": "respiratory",
+      "efo_id": "EFO_0007157",
+      "mondo_id": "MONDO:0000240",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "lymphangioleiomyomatosis",
+      "name": "Lymphangioleiomyomatosis",
+      "category": "respiratory",
+      "efo_id": "MONDO_0011705",
+      "mondo_id": "MONDO:0011705",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "nasal_polyposis",
+      "name": "Nasal polyposis",
+      "category": "respiratory",
+      "efo_id": "EFO_0000651",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "sleep_apnea",
+      "name": "Obstructive sleep apnea",
+      "efo_id": "EFO_0004228",
+      "category": "respiratory",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005359"
+    },
+    {
+      "id": "occupational_asthma",
+      "name": "Occupational asthma",
+      "category": "respiratory",
+      "efo_id": "MONDO_0022742",
+      "mondo_id": "MONDO:0022742",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "pleural_effusion",
+      "name": "Pleural effusion",
+      "category": "respiratory",
+      "efo_id": "EFO_0000651",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "pneumothorax",
+      "name": "Pneumothorax",
+      "category": "respiratory",
+      "efo_id": "EFO_0000651",
+      "mondo_id": "MONDO:0002076",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    },
+    {
+      "id": "primary_ciliary_dyskinesia",
+      "name": "Primary ciliary dyskinesia",
+      "category": "respiratory",
+      "efo_id": "MONDO_0016575",
+      "mondo_id": "MONDO:0016575",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "pulmonary_hypertension",
+      "name": "Pulmonary arterial hypertension",
+      "efo_id": "EFO_0001365",
+      "category": "respiratory",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo",
+      "mondo_id": "MONDO:0005150"
+    },
+    {
+      "id": "sarcoidosis",
+      "name": "Sarcoidosis",
+      "efo_id": "EFO_0000690",
+      "category": "respiratory",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "ventilator_pneumonia",
+      "name": "Ventilator-associated pneumonia",
+      "category": "respiratory",
+      "efo_id": "EFO_1001865",
+      "resolution_confidence": 1.0,
+      "resolution_source": "registry_efo"
+    },
+    {
+      "id": "vocal_cord_dysfunction",
+      "name": "Vocal cord dysfunction",
+      "category": "respiratory",
+      "efo_id": "EFO_0000651",
+      "resolution_confidence": 0.95,
+      "resolution_source": "ot_disease_exact"
+    }
+  ]
+}

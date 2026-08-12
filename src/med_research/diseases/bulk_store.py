@@ -1,0 +1,536 @@
+"""Local Open Targets bulk-data layer — DuckDB queries over parquet subsets.
+
+Replaces per-disease GraphQL calls with fast local reads from downloaded
+Open Targets Platform parquet tables (disease, associations, known drugs,
+disease phenotypes).
+"""
+
+from __future__ import annotations
+
+import json
+import re
+from dataclasses import dataclass, field
+from pathlib import Path
+from typing import Any, Optional
+
+from med_research.logging_config import get_logger
+
+logger = get_logger(__name__)
+
+DEFAULT_VERSION = "25.03"
+MANIFEST_NAME = "manifest.json"
+
+
+@dataclass(frozen=True)
+class ResolvedDisease:
+    """A disease resolved to an Open Targets EFO identifier."""
+
+    efo_id: str
+    name: str
+    description: str = ""
+    synonyms: list[str] = field(default_factory=list)
+
+
+def repo_root() -> Path:
+    return Path(__file__).resolve().parents[3]
+
+
+def default_bulk_root() -> Path:
+    return repo_root() / "data" / "bulk" / "opentargets"
+
+
+def manifest_path(bulk_root: Optional[Path] = None) -> Path:
+    root = bulk_root or default_bulk_root()
+    return root.parent / MANIFEST_NAME
+
+
+class OpenTargetsBulkStore:
+    """Query Open Targets parquet subsets via DuckDB without loading full tables."""
+
+    def __init__(self, bulk_root: Optional[Path] = None, version: Optional[str] = None) -> None:
+        self.bulk_root = bulk_root or default_bulk_root()
+        self._manifest = self._load_manifest()
+        self.version = version or self._manifest.get("version", DEFAULT_VERSION)
+        self._data_dir = self.bulk_root / self.version
+        self._conn: Any = None
+
+    def _load_manifest(self) -> dict:
+        path = manifest_path(self.bulk_root)
+        if not path.is_file():
+            return {}
+        try:
+            return json.loads(path.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            logger.warning("Could not read bulk manifest at %s", path)
+            return {}
+
+    def is_available(self) -> bool:
+        """True when manifest + required parquet tables exist."""
+        if not self._manifest.get("version"):
+            return False
+        required = ("disease", "association_overall_direct", "known_drug")
+        for table in required:
+            if not self._parquet_glob(table):
+                return False
+        return True
+
+    def _parquet_glob(self, table: str) -> Optional[str]:
+        table_dir = self._data_dir / table
+        if table_dir.is_dir():
+            files = list(table_dir.glob("*.parquet"))
+            if files:
+                return str(table_dir / "*.parquet").replace("\\", "/")
+        single = self._data_dir / f"{table}.parquet"
+        if single.is_file():
+            return str(single).replace("\\", "/")
+        return None
+
+    def _connect(self) -> Any:
+        if self._conn is not None:
+            return self._conn
+        import duckdb
+
+        self._conn = duckdb.connect()
+        return self._conn
+
+    def close(self) -> None:
+        if self._conn is not None:
+            self._conn.close()
+            self._conn = None
+
+    def _query(self, sql: str, params: list[Any] = []) -> list[dict]:
+        try:
+            conn = self._connect()
+            result = conn.execute(sql, params)
+            cols = [d[0] for d in result.description]
+            return [dict(zip(cols, row)) for row in result.fetchall()]
+        except Exception as exc:
+            logger.warning("Bulk store query failed: %s", exc)
+            return []
+
+    def _read_table(self, table: str, where: str = "", params: list[Any] = []) -> list[dict]:
+        glob = self._parquet_glob(table)
+        if not glob:
+            return []
+        sql = f"SELECT * FROM read_parquet('{glob}')"
+        if where:
+            sql += f" WHERE {where}"
+        return self._query(sql, params)
+
+    def get_disease_info(self, disease_id: str) -> dict:
+        """Return {name, synonyms, description} for an Open Targets disease id."""
+        normalized = normalize_disease_id(disease_id)
+        rows = self._read_table("disease", "id = ?", [normalized])
+        if not rows and normalized.startswith("MONDO_"):
+            mondo_curie = ot_id_to_mondo_curie(normalized)
+            rows = [
+                row
+                for row in self._read_table("disease")
+                if ot_id_to_mondo_curie(str(row.get("id") or "")) == mondo_curie
+            ]
+        if not rows:
+            return {}
+        row = rows[0]
+        synonyms_raw = row.get("synonyms") or ""
+        synonyms: list[str] = []
+        if isinstance(synonyms_raw, str) and synonyms_raw.strip():
+            try:
+                parsed = json.loads(synonyms_raw)
+                if isinstance(parsed, list):
+                    synonyms = [s for s in parsed if isinstance(s, str)]
+            except json.JSONDecodeError:
+                synonyms = [synonyms_raw]
+        elif isinstance(synonyms_raw, list):
+            synonyms = [s for s in synonyms_raw if isinstance(s, str)]
+        description = row.get("description") or ""
+        if isinstance(description, dict):
+            description = description.get("value", "")
+        return {
+            "name": row.get("name") or "",
+            "synonyms": synonyms[:10],
+            "description": description,
+        }
+
+    def resolve_disease(
+        self,
+        name: str,
+        efo_id: Optional[str] = None,
+        mondo_to_efo: Optional[dict[str, str]] = None,
+    ) -> Optional[ResolvedDisease]:
+        """Resolve a disease name or EFO id to a ResolvedDisease."""
+        if efo_id:
+            normalized = normalize_disease_id(efo_id)
+            if is_ot_disease_id(normalized):
+                info = self.get_disease_info(normalized)
+                return ResolvedDisease(
+                    efo_id=normalized,
+                    name=info.get("name") or name,
+                    description=info.get("description", ""),
+                    synonyms=info.get("synonyms", []),
+                )
+        if not name:
+            return None
+        needle = name.strip().lower()
+        rows = self._read_table("disease")
+        for row in rows:
+            row_name = (row.get("name") or "").strip().lower()
+            if row_name == needle:
+                resolved = _resolved_from_row(row, name, mondo_to_efo)
+                if resolved:
+                    return resolved
+            synonyms_raw = row.get("synonyms") or ""
+            syns: list[str] = []
+            if isinstance(synonyms_raw, str):
+                try:
+                    syns = json.loads(synonyms_raw)
+                except json.JSONDecodeError:
+                    syns = [synonyms_raw]
+            elif isinstance(synonyms_raw, dict):
+                for key in (
+                    "hasExactSynonym",
+                    "hasRelatedSynonym",
+                    "hasNarrowSynonym",
+                    "hasBroadSynonym",
+                ):
+                    for item in synonyms_raw.get(key) or []:
+                        if isinstance(item, str):
+                            syns.append(item)
+            elif isinstance(synonyms_raw, list):
+                syns = synonyms_raw
+            for syn in syns:
+                if isinstance(syn, str) and syn.strip().lower() == needle:
+                    resolved = _resolved_from_row(row, name, mondo_to_efo)
+                    if resolved:
+                        return resolved
+        # Substring fallback for partial matches
+        for row in rows:
+            row_name = (row.get("name") or "").strip().lower()
+            if needle in row_name or row_name in needle:
+                resolved = _resolved_from_row(row, name, mondo_to_efo)
+                if resolved:
+                    return resolved
+        return None
+
+    def _glob_column_names(self, glob: Optional[str]) -> set[str]:
+        if not glob:
+            return set()
+        rows = self._query(f"DESCRIBE SELECT * FROM read_parquet('{glob}') LIMIT 1")
+        return {str(row.get("column_name", "")) for row in rows}
+
+    def _disease_row_by_id(self, disease_id: str) -> dict[str, Any]:
+        normalized = normalize_disease_id(disease_id)
+        rows = self._read_table("disease", "id = ?", [normalized])
+        if rows:
+            return rows[0]
+        if normalized.startswith("MONDO_"):
+            mondo_curie = ot_id_to_mondo_curie(normalized)
+            for row in self._read_table("disease"):
+                if ot_id_to_mondo_curie(str(row.get("id") or "")) == mondo_curie:
+                    return row
+        return {}
+
+    def _association_disease_ids(self, disease_id: str) -> list[str]:
+        """Return disease ids to query in association tables, with ancestor fallback."""
+        normalized = normalize_disease_id(disease_id)
+        if not normalized:
+            return []
+        candidates = [normalized]
+        row = self._disease_row_by_id(normalized)
+        for anc in row.get("ancestors") or []:
+            anc_id = str(anc)
+            if anc_id and anc_id not in candidates:
+                candidates.append(anc_id)
+        return candidates
+
+    def get_targets(self, disease_id: str, limit: int = 60) -> list[dict]:
+        """Return disease-associated targets as {symbol, name, score}."""
+        assoc_glob = self._parquet_glob("association_overall_direct")
+        if not assoc_glob:
+            return []
+        assoc_cols = self._glob_column_names(assoc_glob)
+        target_glob = self._parquet_glob("target")
+        legacy = "approvedSymbol" in assoc_cols
+
+        for candidate_id in self._association_disease_ids(disease_id):
+            if legacy:
+                sql = f"""
+                    SELECT diseaseId, score, approvedSymbol, approvedName, biotype
+                    FROM read_parquet('{assoc_glob}')
+                    WHERE diseaseId = ?
+                    ORDER BY score DESC
+                    LIMIT ?
+                """
+                rows = self._query(sql, [candidate_id, limit * 2])
+            elif target_glob:
+                sql = f"""
+                    SELECT a.score, t.approvedSymbol, t.approvedName, t.biotype
+                    FROM read_parquet('{assoc_glob}') a
+                    LEFT JOIN read_parquet('{target_glob}') t ON a.targetId = t.id
+                    WHERE a.diseaseId = ?
+                    ORDER BY a.score DESC
+                    LIMIT ?
+                """
+                rows = self._query(sql, [candidate_id, limit * 2])
+            else:
+                sql = f"""
+                    SELECT score, targetId AS approvedSymbol, targetId AS approvedName, '' AS biotype
+                    FROM read_parquet('{assoc_glob}')
+                    WHERE diseaseId = ?
+                    ORDER BY score DESC
+                    LIMIT ?
+                """
+                rows = self._query(sql, [candidate_id, limit * 2])
+
+            targets: list[dict] = []
+            for row in rows:
+                symbol = row.get("approvedSymbol") or ""
+                if not symbol:
+                    continue
+                biotype = row.get("biotype") or ""
+                if biotype and biotype != "protein_coding":
+                    continue
+                targets.append(
+                    {
+                        "symbol": symbol,
+                        "name": row.get("approvedName") or symbol,
+                        "score": row.get("score"),
+                    }
+                )
+            if targets:
+                return targets[:limit]
+        return []
+
+    def get_drugs(self, disease_id: str, limit: int = 60) -> list[dict]:
+        """Return known drugs as scaffold-compatible dicts."""
+        glob = self._parquet_glob("known_drug")
+        if not glob:
+            return []
+        for candidate_id in self._association_disease_ids(disease_id):
+            sql = f"""
+                SELECT *
+                FROM read_parquet('{glob}')
+                WHERE diseaseId = ?
+                LIMIT ?
+            """
+            rows = self._query(sql, [candidate_id, limit * 2])
+            drugs: list[dict] = []
+            for row in rows:
+                drug_id = row.get("drugId") or row.get("id") or ""
+                if not drug_id:
+                    continue
+                target = row.get("targetSymbol") or row.get("approvedSymbol") or ""
+                targets = [target] if target else []
+                drugs.append(
+                    {
+                        "id": drug_id,
+                        "name": row.get("drugName") or row.get("prefName") or row.get("label") or drug_id,
+                        "type": row.get("drugType") or "",
+                        "phase": row.get("phase") or row.get("maximumClinicalTrialPhase"),
+                        "status": row.get("status") or "",
+                        "targets": targets,
+                        "mechanism": row.get("mechanism") or row.get("mechanismOfAction") or "",
+                    }
+                )
+            if drugs:
+                drugs.sort(key=lambda d: (not d["targets"], d.get("phase") is None))
+                return drugs[:limit]
+        return []
+
+    def get_phenotypes(self, disease_id: str, limit: int = 15) -> list[str]:
+        """Return human-readable phenotype labels for a disease."""
+        glob = self._parquet_glob("disease_phenotype")
+        if not glob:
+            return []
+        cols = self._glob_column_names(glob)
+        if "phenotypeLabel" in cols:
+            sql = f"""
+                SELECT phenotypeLabel, frequency
+                FROM read_parquet('{glob}')
+                WHERE diseaseId = ?
+                ORDER BY frequency DESC
+                LIMIT ?
+            """
+            id_param = normalize_disease_id(disease_id)
+        else:
+            sql = f"""
+                SELECT phenotype
+                FROM read_parquet('{glob}')
+                WHERE disease = ?
+                LIMIT ?
+            """
+            id_param = normalize_disease_id(disease_id)
+        rows = self._query(sql, [id_param, limit])
+        labels: list[str] = []
+        for row in rows:
+            label = row.get("phenotypeLabel") or row.get("phenotype") or ""
+            if label and label not in labels:
+                labels.append(str(label))
+        return labels
+
+    def count_targets(self, efo_id: str) -> int:
+        glob = self._parquet_glob("association_overall_direct")
+        if not glob:
+            return 0
+        rows = self._query(
+            f"SELECT COUNT(*) AS n FROM read_parquet('{glob}') WHERE diseaseId = ?",
+            [efo_id],
+        )
+        return int(rows[0]["n"]) if rows else 0
+
+    def count_drugs(self, efo_id: str) -> int:
+        glob = self._parquet_glob("known_drug")
+        if not glob:
+            return 0
+        rows = self._query(
+            f"SELECT COUNT(*) AS n FROM read_parquet('{glob}') WHERE diseaseId = ?",
+            [efo_id],
+        )
+        return int(rows[0]["n"]) if rows else 0
+
+    def list_diseases(self, min_targets: int = 0, limit: int = 10000) -> list[dict]:
+        """List diseases with optional minimum target association count."""
+        disease_rows = self._read_table("disease")
+        assoc_glob = self._parquet_glob("association_overall_direct")
+        counts: dict[str, int] = {}
+        if assoc_glob:
+            count_rows = self._query(
+                f"SELECT diseaseId, COUNT(*) AS n FROM read_parquet('{assoc_glob}') GROUP BY diseaseId"
+            )
+            counts = {r["diseaseId"]: int(r["n"]) for r in count_rows}
+        results = []
+        for row in disease_rows:
+            efo = row.get("id") or ""
+            if not efo:
+                continue
+            n_targets = counts.get(efo, 0)
+            if n_targets < min_targets:
+                continue
+            results.append(
+                {
+                    "efo_id": efo,
+                    "name": row.get("name") or "",
+                    "gene_count": n_targets,
+                    "drug_count": self.count_drugs(efo),
+                }
+            )
+        return results[:limit]
+
+    def search_disease_names(self, pattern: str, limit: int = 20) -> list[dict]:
+        """Case-insensitive substring search over disease names."""
+        needle = pattern.strip().lower()
+        if not needle:
+            return []
+        matches = []
+        for row in self._read_table("disease"):
+            name = (row.get("name") or "").strip()
+            if needle in name.lower():
+                matches.append({"id": row["id"], "name": name})
+        return matches[:limit]
+
+
+def normalize_efo(value: str) -> str:
+    """Normalize EFO identifiers to EFO_######## format."""
+    value = (value or "").strip()
+    if not value:
+        return ""
+    if value.startswith("EFO_"):
+        return value
+    if value.upper().startswith("EFO:"):
+        return "EFO_" + value.split(":", 1)[1]
+    if re.fullmatch(r"\d+", value):
+        return f"EFO_{value}"
+    return value
+
+
+def mondo_curie_to_ot_id(curie: str) -> str:
+    if curie.startswith("MONDO:"):
+        return "MONDO_" + curie.split(":", 1)[1]
+    if curie.startswith("MONDO_"):
+        return curie
+    return ""
+
+
+def normalize_disease_id(value: str) -> str:
+    """Normalize Open Targets disease ids (EFO_* or MONDO_*)."""
+    mondo = mondo_curie_to_ot_id(value)
+    if mondo:
+        return mondo
+    normalized = normalize_efo(value)
+    if is_efo_id(normalized):
+        return normalized
+    return value.strip()
+
+
+def is_efo_id(value: str) -> bool:
+    normalized = normalize_efo(value)
+    return bool(normalized) and normalized.startswith("EFO_")
+
+
+def is_ot_disease_id(value: str) -> bool:
+    normalized = normalize_disease_id(value)
+    return normalized.startswith("EFO_") or normalized.startswith("MONDO_")
+
+
+def ot_id_to_mondo_curie(value: str) -> str:
+    if value.startswith("MONDO_"):
+        return "MONDO:" + value.split("_", 1)[1]
+    if value.startswith("MONDO:"):
+        return value
+    return ""
+
+
+def efo_from_disease_row(
+    row: dict[str, Any],
+    mondo_to_efo: Optional[dict[str, str]] = None,
+) -> str:
+    """Extract an EFO id from an Open Targets disease row (25.03+ uses mixed ontology ids)."""
+    row_id = str(row.get("id") or "")
+    if is_efo_id(row_id):
+        return normalize_efo(row_id)
+    for xref in row.get("dbXRefs") or []:
+        if isinstance(xref, str) and xref.upper().startswith("EFO:"):
+            normalized = normalize_efo(xref)
+            if is_efo_id(normalized):
+                return normalized
+    for anc in row.get("ancestors") or []:
+        if isinstance(anc, str) and is_efo_id(anc):
+            return normalize_efo(anc)
+    mondo_curie = ot_id_to_mondo_curie(row_id)
+    if mondo_curie and mondo_to_efo:
+        return mondo_to_efo.get(mondo_curie, "")
+    return ""
+
+
+def _resolved_from_row(
+    row: dict[str, Any],
+    fallback_name: str,
+    mondo_to_efo: Optional[dict[str, str]] = None,
+) -> Optional[ResolvedDisease]:
+    efo_id = efo_from_disease_row(row, mondo_to_efo)
+    if not efo_id:
+        return None
+    synonyms_raw = row.get("synonyms") or ""
+    syns: list[str] = []
+    if isinstance(synonyms_raw, str) and synonyms_raw.strip():
+        try:
+            parsed = json.loads(synonyms_raw)
+            if isinstance(parsed, list):
+                syns = [s for s in parsed if isinstance(s, str)]
+        except json.JSONDecodeError:
+            syns = [synonyms_raw]
+    elif isinstance(synonyms_raw, dict):
+        for key in ("hasExactSynonym", "hasRelatedSynonym", "hasNarrowSynonym", "hasBroadSynonym"):
+            for item in synonyms_raw.get(key) or []:
+                if isinstance(item, str):
+                    syns.append(item)
+    elif isinstance(synonyms_raw, list):
+        syns = [s for s in synonyms_raw if isinstance(s, str)]
+    description = row.get("description") or ""
+    if isinstance(description, dict):
+        description = description.get("value", "")
+    return ResolvedDisease(
+        efo_id=efo_id,
+        name=row.get("name") or fallback_name,
+        description=description or "",
+        synonyms=syns[:10],
+    )

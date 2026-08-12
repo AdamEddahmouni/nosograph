@@ -90,11 +90,7 @@ def coverage_for_disease(disease_id: str) -> ModuleCoverage:
             limitations=[f"Disease '{disease_id}' is not registered; no analysis was run."],
         )
     required_files = ("profile", "genes", "drugs", "pathways", "relationships")
-    missing = [
-        name
-        for name in required_files
-        if not (disease.data_dir / f"{name}.json").is_file()
-    ]
+    missing = [name for name in required_files if not (disease.data_dir / f"{name}.json").is_file()]
     warnings: list[str] = []
     if not missing:
         for name in ("genes", "drugs", "pathways", "relationships"):
@@ -220,38 +216,51 @@ def module_coverage(
                 for item in disease.load_drugs().get("drugs", [])
                 if item.get("id")
             }
-            profile_ids = {
-                str(item.get("drug_id"))
-                for item in profiles
-                if isinstance(item, dict) and item.get("drug_id")
-            } if isinstance(profiles, list) else set()
+            profile_ids = (
+                {
+                    str(item.get("drug_id"))
+                    for item in profiles
+                    if isinstance(item, dict) and item.get("drug_id")
+                }
+                if isinstance(profiles, list)
+                else set()
+            )
             invalid = sorted(profile_ids - catalog)
             if not isinstance(payload, dict) or not payload.get("source"):
                 raise ValueError("profile source is missing")
             if not payload.get("limitations"):
                 raise ValueError("profile limitations are missing")
             required_defaults = {
-                "common_ae", "severe_ae", "disease_overlap_ae",
-                "severity_burden", "chronic_use_safety", "disease_specific_risk",
-                "monitoring_required", "evidence_grade",
+                "common_ae",
+                "severe_ae",
+                "disease_overlap_ae",
+                "severity_burden",
+                "chronic_use_safety",
+                "disease_specific_risk",
+                "monitoring_required",
+                "evidence_grade",
             }
             defaults = payload.get("default_profile", {})
             if not isinstance(profiles, list) or invalid:
-                detail = f"unknown drugs: {', '.join(invalid)}" if invalid else "profiles must be a list"
+                detail = (
+                    f"unknown drugs: {', '.join(invalid)}" if invalid else "profiles must be a list"
+                )
                 raise ValueError(detail)
             if disease_id != "sle" and (
                 not isinstance(defaults, dict) or not required_defaults <= set(defaults)
             ):
                 missing_defaults = sorted(required_defaults - set(defaults or {}))
-                raise ValueError(
-                    "default_profile is incomplete: " + ", ".join(missing_defaults)
-                )
+                raise ValueError("default_profile is incomplete: " + ", ".join(missing_defaults))
             if disease_id != "sle":
                 if not isinstance(defaults, dict):
                     raise ValueError("default_profile must be an object")
                 for field in ("severity_burden", "chronic_use_safety", "disease_specific_risk"):
                     value = defaults.get(field)
-                    if not isinstance(value, (int, float)) or isinstance(value, bool) or not 0 <= value <= 10:
+                    if (
+                        not isinstance(value, (int, float))
+                        or isinstance(value, bool)
+                        or not 0 <= value <= 10
+                    ):
                         raise ValueError(f"invalid default {field}")
             list_fields = ("common_ae", "severe_ae", "disease_overlap_ae", "black_box_warnings")
             for entry in profiles:
@@ -260,7 +269,11 @@ def module_coverage(
                 merged = {**defaults, **entry}
                 for field in ("severity_burden", "chronic_use_safety", "disease_specific_risk"):
                     value = merged.get(field)
-                    if not isinstance(value, (int, float)) or isinstance(value, bool) or not 0 <= value <= 10:
+                    if (
+                        not isinstance(value, (int, float))
+                        or isinstance(value, bool)
+                        or not 0 <= value <= 10
+                    ):
                         raise ValueError(f"invalid {field}")
                 for field in list_fields:
                     if not isinstance(merged.get(field, []), list):
@@ -304,9 +317,7 @@ def module_coverage(
             status="blocked",
             curated_inputs=curated,
             missing_inputs=missing,
-            limitations=[
-                f"Required curated inputs are missing: {', '.join(missing)}."
-            ],
+            limitations=[f"Required curated inputs are missing: {', '.join(missing)}."],
         )
     if optional_missing:
         return ModuleCoverage(
@@ -317,9 +328,7 @@ def module_coverage(
             curated_inputs=curated,
             missing_inputs=optional_missing,
             warnings=[
-                "Optional curated inputs are unavailable: "
-                + ", ".join(optional_missing)
-                + "."
+                "Optional curated inputs are unavailable: " + ", ".join(optional_missing) + "."
             ],
         )
     return ModuleCoverage(

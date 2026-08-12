@@ -13,15 +13,20 @@ import pytest
 
 from med_research.diseases import audit, scaffold
 
+pytestmark = pytest.mark.unit
+
+
 # ── Helpers ──────────────────────────────────────────────────────────────
+
 
 def _make_module(tmp_path: Path, disease_id: str = "zzx") -> Path:
     """Create a minimal disease module (no network, no sources)."""
     root = tmp_path / disease_id
     (root / "data").mkdir(parents=True)
     (root / "__init__.py").write_text("", encoding="utf-8")
-    (root / "data" / "profile.json").write_text(json.dumps({"id": disease_id, "name": "ZZX"}),
-                                                encoding="utf-8")
+    (root / "data" / "profile.json").write_text(
+        json.dumps({"id": disease_id, "name": "ZZX"}), encoding="utf-8"
+    )
     return root
 
 
@@ -29,8 +34,12 @@ def _seed_module(root: Path, genes=None, drugs=None, pathways=None) -> None:
     data_dir = root / "data"
     (data_dir / "genes.json").write_text(json.dumps({"genes": genes or []}), encoding="utf-8")
     (data_dir / "drugs.json").write_text(json.dumps({"drugs": drugs or []}), encoding="utf-8")
-    (data_dir / "pathways.json").write_text(json.dumps({"pathways": pathways or []}), encoding="utf-8")
-    (data_dir / "relationships.json").write_text(json.dumps({"relationships": []}), encoding="utf-8")
+    (data_dir / "pathways.json").write_text(
+        json.dumps({"pathways": pathways or []}), encoding="utf-8"
+    )
+    (data_dir / "relationships.json").write_text(
+        json.dumps({"relationships": []}), encoding="utf-8"
+    )
 
 
 def _fresh_sources():
@@ -39,7 +48,9 @@ def _fresh_sources():
         "efo_id": "EFO_0000000",
         "name": "ZZX Test",
         "description": "",
-        "genes": {"genes": [{"id": "FRESH", "name": "FRESH", "disease_evidence": "Open Targets x"}]},
+        "genes": {
+            "genes": [{"id": "FRESH", "name": "FRESH", "disease_evidence": "Open Targets x"}]
+        },
         "drugs": {"drugs": []},
         "pathways": {"pathways": []},
         "reactome_hits": [],
@@ -50,12 +61,19 @@ def _fresh_sources():
 
 # ── Storage primitives ───────────────────────────────────────────────────
 
+
 def test_append_and_read_round_trip(tmp_path):
     root = _make_module(tmp_path)
-    p1 = audit.append_audit("zzx", {"action": "prune", "disease_id": "zzx",
-                                    "removed": {"genes": ["A"], "drugs": []}}, target_dir=root)
-    p2 = audit.append_audit("zzx", {"action": "restore", "disease_id": "zzx",
-                                    "restored": {"genes": ["A"], "drugs": []}}, target_dir=root)
+    p1 = audit.append_audit(
+        "zzx",
+        {"action": "prune", "disease_id": "zzx", "removed": {"genes": ["A"], "drugs": []}},
+        target_dir=root,
+    )
+    p2 = audit.append_audit(
+        "zzx",
+        {"action": "restore", "disease_id": "zzx", "restored": {"genes": ["A"], "drugs": []}},
+        target_dir=root,
+    )
     assert p1 == p2 == root / "data" / audit.AUDIT_LOG_NAME
     entries = audit.read_audit("zzx", target_dir=root)
     assert [e["action"] for e in entries] == ["prune", "restore"]  # chronological
@@ -118,20 +136,31 @@ def test_append_failure_returns_none(tmp_path, monkeypatch):
         raise OSError("disk full")
 
     monkeypatch.setattr(Path, "open", _broken_open)
-    assert audit.append_audit("zzx", {"action": "prune", "disease_id": "zzx"},
-                              target_dir=root) is None
+    assert (
+        audit.append_audit("zzx", {"action": "prune", "disease_id": "zzx"}, target_dir=root) is None
+    )
 
 
 # ── Entry builders ───────────────────────────────────────────────────────
 
+
 def test_prune_entry_maps_summary():
     summary = {
-        "disease_id": "sle", "name": "SLE",
-        "prune": {"enabled": True, "aborted": False, "genes": ["ORPHAN"], "drugs": ["D2"],
-                  "scrubbed_pathways": ["jak-stat"], "backup": "/x/pruned_sle.json"},
-        "merge": {"genes": {"added": ["N1"], "updated": [], "kept": ["K1"]},
-                  "drugs": {"added": [], "updated": [], "kept": []},
-                  "pathways": {"added": [], "updated": [], "kept": []}},
+        "disease_id": "sle",
+        "name": "SLE",
+        "prune": {
+            "enabled": True,
+            "aborted": False,
+            "genes": ["ORPHAN"],
+            "drugs": ["D2"],
+            "scrubbed_pathways": ["jak-stat"],
+            "backup": "/x/pruned_sle.json",
+        },
+        "merge": {
+            "genes": {"added": ["N1"], "updated": [], "kept": ["K1"]},
+            "drugs": {"added": [], "updated": [], "kept": []},
+            "pathways": {"added": [], "updated": [], "kept": []},
+        },
         "counts": {"genes": 5, "drugs": 2, "pathways": 3, "relationships": 9},
     }
     e = audit.prune_entry(summary)
@@ -147,7 +176,8 @@ def test_prune_entry_maps_summary():
 def test_restore_entry_maps_summary():
     summary = {
         "disease_id": "sle",
-        "backup": "/x/pruned_sle.json", "backup_disease_id": "sle",
+        "backup": "/x/pruned_sle.json",
+        "backup_disease_id": "sle",
         "restored": {"genes": ["ORPHAN"], "drugs": []},
         "skipped": {"genes": [], "drugs": ["D2"]},
         "updated_pathways": ["jak-stat"],
@@ -163,6 +193,7 @@ def test_restore_entry_maps_summary():
 
 
 # ── Engine integration (scaffold records on real writes) ────────────────
+
 
 def test_refresh_prune_records_audit_but_dry_run_and_decline_do_not(tmp_path, monkeypatch):
     root = _make_module(tmp_path)
@@ -205,17 +236,33 @@ def test_refresh_prune_with_nothing_to_remove_still_records(tmp_path, monkeypatc
 
 def test_restore_records_audit_but_dry_run_does_not(tmp_path):
     root = _make_module(tmp_path)
-    _seed_module(root, genes=[{"id": "FRESH"}],
-                 pathways=[{"id": "jak-stat", "name": "JAK-STAT Signaling",
-                            "key_components": [], "therapeutic_targets": []}])
+    _seed_module(
+        root,
+        genes=[{"id": "FRESH"}],
+        pathways=[
+            {
+                "id": "jak-stat",
+                "name": "JAK-STAT Signaling",
+                "key_components": [],
+                "therapeutic_targets": [],
+            }
+        ],
+    )
     backup_dir = root / "data" / "backups"
     backup_dir.mkdir(parents=True)
     backup_path = backup_dir / "pruned_zzx_20260101_000000_000000.json"
-    backup_path.write_text(json.dumps({
-        "disease_id": "zzx", "pruned_at": "2026-01-01T00:00:00",
-        "genes": [{"id": "ORPHAN", "category": "Curated legacy"}],
-        "drugs": [], "pathway_memberships": {"ORPHAN": ["jak-stat"]},
-    }), encoding="utf-8")
+    backup_path.write_text(
+        json.dumps(
+            {
+                "disease_id": "zzx",
+                "pruned_at": "2026-01-01T00:00:00",
+                "genes": [{"id": "ORPHAN", "category": "Curated legacy"}],
+                "drugs": [],
+                "pathway_memberships": {"ORPHAN": ["jak-stat"]},
+            }
+        ),
+        encoding="utf-8",
+    )
 
     # Dry run first: nothing recorded
     scaffold.restore_disease("zzx", backup_path=backup_path, target_dir=root, dry_run=True)

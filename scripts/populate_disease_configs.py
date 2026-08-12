@@ -32,10 +32,9 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "src"
-if str(SRC) not in sys.path:
-    sys.path.insert(0, str(SRC))
+from med_research.diseases.base import Disease
 
-DISEASE_IDS = ("sle", "ra", "ms", "ibd", "ss", "ssc", "t1d")
+DISEASE_IDS = tuple(Disease.list_all())
 
 SLE_DIMENSION_KEYS = frozenset(
     {
@@ -172,6 +171,71 @@ def derive_drug_safety_risk(drugs_payload: dict) -> dict[str, list[str]]:
     return tiers
 
 
+def derive_screening_profile(
+    pathways_payload: dict,
+    drugs_payload: dict,
+    disease_id: str,
+) -> dict[str, Any]:
+    """Build a minimal SCREENING_PROFILE stub from KG pathways and drugs."""
+    pathway_keywords: list[str] = []
+    for pathway in pathways_payload.get("pathways", [])[:10]:
+        name = str(pathway.get("name", "")).lower()
+        pathway_keywords.extend(
+            token
+            for token in name.replace("/", " ").replace("-", " ").split()
+            if len(token) > 3
+        )
+    pathway_keywords = sorted(set(pathway_keywords))[:10] or ["immune", "inflammation"]
+
+    reference_drug_ids = [
+        drug_id
+        for drug_id in (
+            drug.get("id") for drug in drugs_payload.get("drugs", [])[:6] if drug.get("id")
+        )
+        if drug_id
+    ]
+
+    return {
+        "strategy_id": f"{disease_id}-screening-v1",
+        "pathway_keywords": pathway_keywords,
+        "mechanism_keywords": pathway_keywords[:10],
+        "reference_drug_ids": reference_drug_ids,
+        "weights": {
+            "binding_estimate": 0.25,
+            "druglikeness": 0.15,
+            "target_complementarity": 0.35,
+            "similarity_score": 0.15,
+            "novelty_score": 0.10,
+        },
+        "source": f"scaffold_{disease_id}_knowledge_graph",
+        "curated_inputs": ["pathways", "drugs", "screening_strategy"],
+        "inferred_inputs": ["mechanism_keyword_matching", "property_based_binding_estimate"],
+        "limitations": [
+            "Property scores are heuristic prioritization signals and do not establish "
+            "clinical efficacy or safety."
+        ],
+    }
+
+
+def _format_screening_block(profile: dict[str, Any]) -> str:
+    lines = ["SCREENING_PROFILE = {"]
+    for key, value in profile.items():
+        if isinstance(value, str):
+            lines.append(f'    "{key}": "{value}",')
+        elif isinstance(value, list):
+            lines.append(f'    "{key}": [')
+            for item in value:
+                lines.append(f'        "{item}",')
+            lines.append("    ],")
+        elif isinstance(value, dict):
+            lines.append(f'    "{key}": {{')
+            for sub_key, sub_value in value.items():
+                lines.append(f'        "{sub_key}": {sub_value},')
+            lines.append("    },")
+    lines.append("}")
+    return "\n".join(lines) + "\n"
+
+
 def _load_json(path: Path) -> dict:
     with path.open(encoding="utf-8") as fh:
         return json.load(fh)
@@ -214,9 +278,7 @@ def _compare_risk(existing: dict, derived: dict, strict: bool = False) -> list[s
             existing_set = {x.lower() for x in (existing.get(tier) or [])}
             derived_set = {x.lower() for x in (derived.get(tier) or [])}
             if not existing_set and derived_set:
-                issues.append(
-                    f"{tier}: config empty but derived has {len(derived_set)} entries"
-                )
+                issues.append(f"{tier}: config empty but derived has {len(derived_set)} entries")
     return issues
 
 
@@ -244,9 +306,7 @@ def validate_disease(disease_id: str, rubric_strict: bool = False) -> dict[str, 
 
     car_t_categories = len(existing_car_t)
     if disease_id == "sle":
-        car_t_categories = sum(
-            1 for k in existing_car_t if k in SLE_DIMENSION_KEYS
-        )
+        car_t_categories = sum(1 for k in existing_car_t if k in SLE_DIMENSION_KEYS)
     if car_t_categories < 5:
         issues.append(f"CAR_T has only {car_t_categories} categories (need >=5)")
 
@@ -318,13 +378,16 @@ def write_config_sections(disease_id: str, dry_run: bool = False) -> Path:
     config_path = SRC / "med_research" / "diseases" / disease_id / "config.py"
     genes = _load_json(data_dir / "genes.json")
     drugs = _load_json(data_dir / "drugs.json")
+    pathways = _load_json(data_dir / "pathways.json")
 
     car_t = derive_car_t_scores(genes, disease_id)
     risk = derive_drug_safety_risk(drugs)
+    screening = derive_screening_profile(pathways, drugs, disease_id)
 
     text = config_path.read_text(encoding="utf-8")
     car_t_block = _format_car_t_block(car_t)
     risk_block = _format_risk_block(risk)
+    screening_block = _format_screening_block(screening)
 
     if "CAR_T_SCORES = {" in text:
         start = text.index("CAR_T_SCORES = {")
@@ -353,12 +416,26 @@ def write_config_sections(disease_id: str, dry_run: bool = False) -> Path:
             risk_start = text.index(marker)
             break
     if risk_start is not None:
-        trial_marker = "# ── Clinical trials"
-        trial_start = text.find(trial_marker, risk_start)
-        if trial_start == -1:
-            trial_start = text.find("TRIAL_QUERY", risk_start)
-        if trial_start != -1:
-            text = text[:risk_start] + risk_block + "\n\n" + text[trial_start:]
+        section_end = len(text)
+        for marker in ("SCREENING_PROFILE = {", "# ── Clinical trials", "TRIAL_QUERY"):
+            pos = text.find(marker, risk_start + 1)
+            if pos != -1:
+                section_end = min(section_end, pos)
+        text = text[:risk_start] + risk_block + "\n\n" + text[section_end:]
+
+    if "SCREENING_PROFILE = {" in text:
+        start = text.index("SCREENING_PROFILE = {")
+        depth = 0
+        end = start
+        for idx in range(start, len(text)):
+            if text[idx] == "{":
+                depth += 1
+            elif text[idx] == "}":
+                depth -= 1
+                if depth == 0:
+                    end = idx + 1
+                    break
+        text = text[:start] + screening_block.rstrip() + text[end:]
 
     if not dry_run:
         config_path.write_text(text, encoding="utf-8")
@@ -395,9 +472,7 @@ def main(argv: list[str] | None = None) -> int:
         parser.error("Provide disease_id or --all")
 
     rubric_strict = args.strict and args.check
-    results = [
-        validate_disease(did, rubric_strict=rubric_strict) for did in disease_ids
-    ]
+    results = [validate_disease(did, rubric_strict=rubric_strict) for did in disease_ids]
 
     if args.write:
         for did in disease_ids:
@@ -406,9 +481,7 @@ def main(argv: list[str] | None = None) -> int:
                 continue
             path = write_config_sections(did)
             print(f"Updated {path}")
-            results = [
-                validate_disease(did, rubric_strict=rubric_strict) for did in disease_ids
-            ]
+            results = [validate_disease(did, rubric_strict=rubric_strict) for did in disease_ids]
 
     if args.json:
         print(json.dumps(results, indent=2))

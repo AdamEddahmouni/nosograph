@@ -36,11 +36,51 @@ OT_TARGETS = {
             "associatedTargets": {
                 "count": 5,
                 "rows": [
-                    {"score": 0.97, "target": {"id": "ENSG00000232810", "approvedSymbol": "TNF", "approvedName": "Tumor necrosis factor", "biotype": "protein_coding"}},
-                    {"score": 0.9, "target": {"id": "ENSG00000175084", "approvedSymbol": "IL6R", "approvedName": "Interleukin-6 receptor", "biotype": "protein_coding"}},
-                    {"score": 0.8, "target": {"id": "ENSG00000138378", "approvedSymbol": "STAT4", "approvedName": "Signal transducer and activator of transcription 4", "biotype": "protein_coding"}},
-                    {"score": 0.75, "target": {"id": "ENSG00000134242", "approvedSymbol": "PTPN22", "approvedName": "Tyrosine-protein phosphatase non-receptor type 22", "biotype": "protein_coding"}},
-                    {"score": 0.7, "target": {"id": "ENSG00000096968", "approvedSymbol": "JAK2", "approvedName": "Tyrosine-protein kinase JAK2", "biotype": "protein_coding"}},
+                    {
+                        "score": 0.97,
+                        "target": {
+                            "id": "ENSG00000232810",
+                            "approvedSymbol": "TNF",
+                            "approvedName": "Tumor necrosis factor",
+                            "biotype": "protein_coding",
+                        },
+                    },
+                    {
+                        "score": 0.9,
+                        "target": {
+                            "id": "ENSG00000175084",
+                            "approvedSymbol": "IL6R",
+                            "approvedName": "Interleukin-6 receptor",
+                            "biotype": "protein_coding",
+                        },
+                    },
+                    {
+                        "score": 0.8,
+                        "target": {
+                            "id": "ENSG00000138378",
+                            "approvedSymbol": "STAT4",
+                            "approvedName": "Signal transducer and activator of transcription 4",
+                            "biotype": "protein_coding",
+                        },
+                    },
+                    {
+                        "score": 0.75,
+                        "target": {
+                            "id": "ENSG00000134242",
+                            "approvedSymbol": "PTPN22",
+                            "approvedName": "Tyrosine-protein phosphatase non-receptor type 22",
+                            "biotype": "protein_coding",
+                        },
+                    },
+                    {
+                        "score": 0.7,
+                        "target": {
+                            "id": "ENSG00000096968",
+                            "approvedSymbol": "JAK2",
+                            "approvedName": "Tyrosine-protein kinase JAK2",
+                            "biotype": "protein_coding",
+                        },
+                    },
                 ],
             },
         }
@@ -54,32 +94,76 @@ OT_DRUGS = {
                 "count": 4,
                 "rows": [
                     {
-                        "drug": {"id": "CHEMBL1201581", "name": "Adalimumab", "drugType": "Antibody"},
+                        "drug": {
+                            "id": "CHEMBL1201581",
+                            "name": "Adalimumab",
+                            "drugType": "Antibody",
+                        },
                         "maximumClinicalTrialPhase": 0,
                         "status": "Approved",
                         "target": {"approvedSymbol": "TNF"},
-                        "mechanismsOfAction": {"rows": [{"actionType": "ANTIBODY", "mechanismOfAction": "TNF-alpha inhibitor", "target": {"approvedSymbol": "TNF"}}]},
+                        "mechanismsOfAction": {
+                            "rows": [
+                                {
+                                    "actionType": "ANTIBODY",
+                                    "mechanismOfAction": "TNF-alpha inhibitor",
+                                    "target": {"approvedSymbol": "TNF"},
+                                }
+                            ]
+                        },
                     },
                     {
-                        "drug": {"id": "CHEMBL2073839", "name": "Baricitinib", "drugType": "Small molecule"},
+                        "drug": {
+                            "id": "CHEMBL2073839",
+                            "name": "Baricitinib",
+                            "drugType": "Small molecule",
+                        },
                         "maximumClinicalTrialPhase": 3,
                         "status": "Phase 3",
                         "target": {"approvedSymbol": "JAK1"},
-                        "mechanismsOfAction": {"rows": [{"actionType": "INHIBITOR", "mechanismOfAction": "JAK inhibitor", "target": {"approvedSymbol": "JAK1"}}]},
+                        "mechanismsOfAction": {
+                            "rows": [
+                                {
+                                    "actionType": "INHIBITOR",
+                                    "mechanismOfAction": "JAK inhibitor",
+                                    "target": {"approvedSymbol": "JAK1"},
+                                }
+                            ]
+                        },
                     },
                     {
-                        "drug": {"id": "CHEMBL1200490", "name": "Methotrexate", "drugType": "Small molecule"},
+                        "drug": {
+                            "id": "CHEMBL1200490",
+                            "name": "Methotrexate",
+                            "drugType": "Small molecule",
+                        },
                         "maximumClinicalTrialPhase": 0,
                         "status": "Approved",
                         "target": {"approvedSymbol": "TNF"},
-                        "mechanismsOfAction": {"rows": [{"actionType": "INHIBITOR", "mechanismOfAction": "Dihydrofolate reductase inhibitor", "target": {"approvedSymbol": "DHFR"}}]},
+                        "mechanismsOfAction": {
+                            "rows": [
+                                {
+                                    "actionType": "INHIBITOR",
+                                    "mechanismOfAction": "Dihydrofolate reductase inhibitor",
+                                    "target": {"approvedSymbol": "DHFR"},
+                                }
+                            ]
+                        },
                     },
                     {
-                        "drug": {"id": "CHEMBL2111306", "name": "GLPG0634", "drugType": "Small molecule"},
+                        "drug": {
+                            "id": "CHEMBL2111306",
+                            "name": "GLPG0634",
+                            "drugType": "Small molecule",
+                        },
                         "maximumClinicalTrialPhase": 2,
                         "status": "Phase 2",
                         "target": {"approvedSymbol": "JAK1"},
-                        "mechanismsOfAction": {"rows": [{"actionType": "INHIBITOR", "target": {"approvedSymbol": "JAK1"}}]},
+                        "mechanismsOfAction": {
+                            "rows": [
+                                {"actionType": "INHIBITOR", "target": {"approvedSymbol": "JAK1"}}
+                            ]
+                        },
                     },
                 ],
             }
@@ -101,8 +185,13 @@ REACTOME_HITS = [
     }
 ]
 
+pytestmark = pytest.mark.unit
+
+
+
 
 # ── HTTP mock dispatchers ────────────────────────────────────────────────
+
 
 def _fake_ot_post(url, payload, timeout=30):
     query = payload.get("query", "")
@@ -110,7 +199,7 @@ def _fake_ot_post(url, payload, timeout=30):
         return {"data": {"search": {"total": 2, "hits": OT_SEARCH_HITS}}}
     if "associatedTargets" in query:
         return OT_TARGETS
-    if "knownDrugs" in query:
+    if "drugAndClinicalCandidates" in query or "knownDrugs" in query:
         return OT_DRUGS
     return None
 
@@ -124,6 +213,7 @@ def _no_network(monkeypatch):
 
 
 # ── Unit tests ───────────────────────────────────────────────────────────
+
 
 def test_sanitize_id():
     assert scaffold.sanitize_id("Crohn's disease") == "crohns_disease"
@@ -153,6 +243,7 @@ def test_fetch_ot_disease_info_handles_single_and_list_description(monkeypatch):
 
     # list-shaped description (legacy/mirror responses) also parses
     import copy
+
     payload = copy.deepcopy(OT_TARGETS)
     payload["data"]["disease"]["description"] = [{"value": "Legacy shape"}]
     monkeypatch.setattr(scaffold, "_http_post_json", lambda *a, **k: payload)
@@ -170,8 +261,12 @@ def test_fetch_ot_known_drugs():
 
 def test_keyword_pathways():
     genes = [
-        {"symbol": "JAK2"}, {"symbol": "STAT4"}, {"symbol": "TNF"}, {"symbol": "IL6R"},
-        {"symbol": "IRF5"}, {"symbol": "HLA-DRB1"},
+        {"symbol": "JAK2"},
+        {"symbol": "STAT4"},
+        {"symbol": "TNF"},
+        {"symbol": "IL6R"},
+        {"symbol": "IRF5"},
+        {"symbol": "HLA-DRB1"},
     ]
     paths = scaffold.keyword_pathways(genes)
     by_name = {p["name"]: p for p in paths}
@@ -229,7 +324,9 @@ def test_build_relationships_json():
     )["genes"]
     drugs = scaffold.build_drugs_json(scaffold.fetch_ot_known_drugs("EFO_0001370"))["drugs"]
     paths = scaffold.build_pathways_json([], genes, max_pathways=30)["pathways"]
-    rels = scaffold.build_relationships_json(genes, drugs, paths, "Rheumatoid Arthritis (RA_TEST)")["relationships"]
+    rels = scaffold.build_relationships_json(genes, drugs, paths, "Rheumatoid Arthritis (RA_TEST)")[
+        "relationships"
+    ]
 
     types = {r["type"] for r in rels}
     assert types >= {"TARGETS", "TREATS", "PARTICIPATES_IN", "ASSOCIATED_WITH"}
@@ -249,16 +346,35 @@ def test_build_relationships_json():
 
 def test_generate_config_py_has_required_keys():
     src = scaffold.generate_config_py("ra_test", "Rheumatoid Arthritis")
-    for key in ("PIPELINE_LABEL", "SYMPTOMS", "PUBMED_QUERIES", "CAR_T_SCORES", "DRUG_INDUCED_LUPUS_RISK"):
+    for key in (
+        "PIPELINE_LABEL",
+        "SYMPTOMS",
+        "PUBMED_QUERIES",
+        "CAR_T_SCORES",
+        "DRUG_SAFETY_RISK",
+        "SCREENING_PROFILE",
+    ):
         assert f"{key} =" in src
+
+
+def test_generate_config_py_escapes_apostrophes():
+    src = scaffold.generate_config_py("bells_palsy", "Bell's palsy")
+    compile(src, "<config>", "exec")
+    assert "Bell's palsy" in src
+    assert "'(Bell's palsy" not in src
 
 
 # ── End-to-end ───────────────────────────────────────────────────────────
 
+
 def test_scaffold_disease_end_to_end(tmp_path, monkeypatch):
     summary = scaffold.scaffold_disease(
-        "ra_test", name="Rheumatoid Arthritis", efo_id="EFO_0001370",
-        target_dir=tmp_path, use_cache=False,
+        "ra_test",
+        name="Rheumatoid Arthritis",
+        efo_id="EFO_0001370",
+        target_dir=tmp_path,
+        use_cache=False,
+        use_bulk=False,
     )
 
     assert summary["counts"]["genes"] >= 6  # 5 OT + 1 GWAS-only
@@ -294,8 +410,13 @@ def test_scaffold_disease_integration_with_builder():
     disease_dir = root / "zz_scaffold_test"
     try:
         summary = scaffold.scaffold_disease(
-            "zz_scaffold_test", name="Scaffold Test Disease", efo_id="EFO_0001370",
-            target_dir=disease_dir, overwrite=True, use_cache=False,
+            "zz_scaffold_test",
+            name="Scaffold Test Disease",
+            efo_id="EFO_0001370",
+            target_dir=disease_dir,
+            overwrite=True,
+            use_cache=False,
+            use_bulk=False,
         )
         G = build_graph("zz_scaffold_test")
         assert G.number_of_nodes() > 0
@@ -304,8 +425,7 @@ def test_scaffold_disease_integration_with_builder():
         assert G.out_degree(disease_node) >= 0
         # genes connect to the disease node via ASSOCIATED_WITH
         assert any(
-            G.has_edge(n, disease_node)
-            for n, d in G.nodes(data=True) if d.get("type") == "gene"
+            G.has_edge(n, disease_node) for n, d in G.nodes(data=True) if d.get("type") == "gene"
         )
         assert summary["counts"]["genes"] > 0
     finally:
@@ -319,7 +439,11 @@ def test_scaffold_all_sources_offline_still_valid(tmp_path, monkeypatch):
     monkeypatch.setattr(scaffold, "_gwas_genes_for_trait", lambda *a, **k: [])
 
     summary = scaffold.scaffold_disease(
-        "offline_test", name="Offline Disease", target_dir=tmp_path, use_cache=False,
+        "offline_test",
+        name="Offline Disease",
+        target_dir=tmp_path,
+        use_cache=False,
+        use_bulk=False,
     )
     assert summary["counts"]["genes"] == 0
     assert summary["counts"]["drugs"] == 0
@@ -332,15 +456,25 @@ def test_scaffold_all_sources_offline_still_valid(tmp_path, monkeypatch):
 
 def test_scaffold_existing_raises_without_overwrite(tmp_path):
     scaffold.scaffold_disease(
-        "dup_test", name="Dup Disease", target_dir=tmp_path, use_cache=False,
+        "dup_test",
+        name="Dup Disease",
+        target_dir=tmp_path,
+        use_cache=False,
     )
     with pytest.raises(FileExistsError):
         scaffold.scaffold_disease(
-            "dup_test", name="Dup Disease", target_dir=tmp_path, use_cache=False,
+            "dup_test",
+            name="Dup Disease",
+            target_dir=tmp_path,
+            use_cache=False,
         )
     # overwrite succeeds
     summary = scaffold.scaffold_disease(
-        "dup_test", name="Dup Disease", target_dir=tmp_path, use_cache=False, overwrite=True,
+        "dup_test",
+        name="Dup Disease",
+        target_dir=tmp_path,
+        use_cache=False,
+        overwrite=True,
     )
     assert summary["disease_id"] == "dup_test"
 
@@ -349,7 +483,10 @@ def test_scaffold_id_is_sanitized(tmp_path):
     # target_dir is an exact write destination; the sanitized id is applied
     # when no target_dir is given (i.e. to the real diseases/ tree).
     summary = scaffold.scaffold_disease(
-        "Crohn's Disease", name="Crohn's disease", target_dir=tmp_path, use_cache=False,
+        "Crohn's Disease",
+        name="Crohn's disease",
+        target_dir=tmp_path,
+        use_cache=False,
     )
     assert summary["disease_id"] == "crohns_disease"
     assert (tmp_path / "__init__.py").exists()
@@ -358,26 +495,46 @@ def test_scaffold_id_is_sanitized(tmp_path):
 
 # ── Refresh (merge into existing module) ────────────────────────────────
 
+
 def test_merge_genes_preserves_curated_fields():
     existing = [
         {
-            "id": "TNF", "name": "Tumor necrosis factor", "chromosome": "6p21.33",
-            "function": "Pro-inflammatory cytokine.", "category": "Cytokine",
-            "lupus_evidence": "Curated note.", "disease_evidence": "Curated evidence.",
-            "odds_ratio": 1.5, "references": ["PMID-1"], "sle_evidence": "",
+            "id": "TNF",
+            "name": "Tumor necrosis factor",
+            "chromosome": "6p21.33",
+            "function": "Pro-inflammatory cytokine.",
+            "category": "Cytokine",
+            "lupus_evidence": "Curated note.",
+            "disease_evidence": "Curated evidence.",
+            "odds_ratio": 1.5,
+            "references": ["PMID-1"],
+            "sle_evidence": "",
         }
     ]
     fresh = [
         {
-            "id": "TNF", "name": "Tumor necrosis factor", "chromosome": "",
-            "function": "", "category": "", "lupus_evidence": "",
+            "id": "TNF",
+            "name": "Tumor necrosis factor",
+            "chromosome": "",
+            "function": "",
+            "category": "",
+            "lupus_evidence": "",
             "disease_evidence": "Open Targets association score 0.97",
-            "odds_ratio": None, "references": [], "sle_evidence": "",
+            "odds_ratio": None,
+            "references": [],
+            "sle_evidence": "",
         },
         {
-            "id": "NEWGENE", "name": "New Gene", "chromosome": "", "function": "",
-            "category": "", "lupus_evidence": "", "disease_evidence": "GWAS Catalog: 2 study(ies), best p=1.0e-08",
-            "odds_ratio": None, "references": [], "sle_evidence": "",
+            "id": "NEWGENE",
+            "name": "New Gene",
+            "chromosome": "",
+            "function": "",
+            "category": "",
+            "lupus_evidence": "",
+            "disease_evidence": "GWAS Catalog: 2 study(ies), best p=1.0e-08",
+            "odds_ratio": None,
+            "references": [],
+            "sle_evidence": "",
         },
     ]
     result = scaffold.merge_genes(existing, fresh)
@@ -405,24 +562,53 @@ def test_merge_genes_preserves_curated_fields():
 
 def test_merge_replaces_stale_source_evidence():
     """Repeated refreshes replace source fragments instead of accumulating."""
-    existing = [{"id": "TLR7", "name": "TLR7", "category": "Innate Immune Sensing",
-                 "disease_evidence": "Curated note. | GWAS Catalog: 3 study(ies), best p=1.0e-06"}]
-    fresh = [{"id": "TLR7", "name": "TLR7", "category": "",
-              "disease_evidence": "GWAS Catalog: 5 study(ies), best p=1.0e-08"}]
+    existing = [
+        {
+            "id": "TLR7",
+            "name": "TLR7",
+            "category": "Innate Immune Sensing",
+            "disease_evidence": "Curated note. | GWAS Catalog: 3 study(ies), best p=1.0e-06",
+        }
+    ]
+    fresh = [
+        {
+            "id": "TLR7",
+            "name": "TLR7",
+            "category": "",
+            "disease_evidence": "GWAS Catalog: 5 study(ies), best p=1.0e-08",
+        }
+    ]
     result = scaffold.merge_genes(existing, fresh)
     ev = result["genes"][0]["disease_evidence"]
     assert "Curated note." in ev  # human text preserved
-    assert "5 study(ies)" in ev   # fresh source fragment present
+    assert "5 study(ies)" in ev  # fresh source fragment present
     assert "3 study(ies)" not in ev  # stale fragment replaced, not accumulated
     assert ev.count("GWAS Catalog") == 1
 
 
 def test_merge_backfills_empty_curated_fields():
-    existing = [{"id": "TLR7", "name": "TLR7", "category": "", "function": "",
-                 "chromosome": "", "odds_ratio": None, "disease_evidence": ""}]
-    fresh = [{"id": "TLR7", "name": "TLR7", "category": "Innate Immune Sensing",
-              "function": "Senses viral RNA.", "chromosome": "Xp22", "odds_ratio": 2.0,
-              "disease_evidence": "Open Targets association score 0.9"}]
+    existing = [
+        {
+            "id": "TLR7",
+            "name": "TLR7",
+            "category": "",
+            "function": "",
+            "chromosome": "",
+            "odds_ratio": None,
+            "disease_evidence": "",
+        }
+    ]
+    fresh = [
+        {
+            "id": "TLR7",
+            "name": "TLR7",
+            "category": "Innate Immune Sensing",
+            "function": "Senses viral RNA.",
+            "chromosome": "Xp22",
+            "odds_ratio": 2.0,
+            "disease_evidence": "Open Targets association score 0.9",
+        }
+    ]
     result = scaffold.merge_genes(existing, fresh)
     gene = result["genes"][0]
     assert gene["category"] == "Innate Immune Sensing"
@@ -433,7 +619,9 @@ def test_merge_backfills_empty_curated_fields():
 
 
 def test_merge_genes_keeps_genes_dropped_by_sources():
-    existing = [{"id": "CURATED", "name": "Curated", "category": "Kept", "disease_evidence": "Manual"}]
+    existing = [
+        {"id": "CURATED", "name": "Curated", "category": "Kept", "disease_evidence": "Manual"}
+    ]
     fresh = [{"id": "ONLY_SOURCE", "name": "Source", "disease_evidence": "Auto"}]
     result = scaffold.merge_genes(existing, fresh)
     ids = {g["id"] for g in result["genes"]}
@@ -445,23 +633,47 @@ def test_merge_genes_keeps_genes_dropped_by_sources():
 def test_merge_drugs_updates_source_fields_preserves_curated():
     existing = [
         {
-            "id": "CHEMBL123", "name": "Drug A", "type": "Small molecule",
-            "target": "JAK1", "mechanism": "Curated mechanism.", "approval": "Phase 2",
-            "category": "JAK inhibitor", "route": "Oral", "efficacy": "Curated efficacy",
-            "adverse_effects": "Nausea", "references": ["PMID-9"], "disease_evidence": "Curated.",
+            "id": "CHEMBL123",
+            "name": "Drug A",
+            "type": "Small molecule",
+            "target": "JAK1",
+            "mechanism": "Curated mechanism.",
+            "approval": "Phase 2",
+            "category": "JAK inhibitor",
+            "route": "Oral",
+            "efficacy": "Curated efficacy",
+            "adverse_effects": "Nausea",
+            "references": ["PMID-9"],
+            "disease_evidence": "Curated.",
         }
     ]
     fresh = [
         {
-            "id": "CHEMBL123", "name": "Drug A", "type": "Small molecule",
-            "target": "JAK1", "mechanism": "JAK inhibitor", "approval": "Phase 3",
-            "category": "", "route": "", "efficacy": "", "adverse_effects": "",
-            "references": [], "disease_evidence": "Open Targets known-drug association (max phase 3)",
+            "id": "CHEMBL123",
+            "name": "Drug A",
+            "type": "Small molecule",
+            "target": "JAK1",
+            "mechanism": "JAK inhibitor",
+            "approval": "Phase 3",
+            "category": "",
+            "route": "",
+            "efficacy": "",
+            "adverse_effects": "",
+            "references": [],
+            "disease_evidence": "Open Targets known-drug association (max phase 3)",
         },
         {
-            "id": "CHEMBL456", "name": "Drug B", "type": "Antibody", "target": "TNF",
-            "mechanism": "TNF-alpha inhibitor", "approval": "Approved", "category": "",
-            "route": "", "efficacy": "", "adverse_effects": "", "references": [],
+            "id": "CHEMBL456",
+            "name": "Drug B",
+            "type": "Antibody",
+            "target": "TNF",
+            "mechanism": "TNF-alpha inhibitor",
+            "approval": "Approved",
+            "category": "",
+            "route": "",
+            "efficacy": "",
+            "adverse_effects": "",
+            "references": [],
             "disease_evidence": "Open Targets known-drug association (max phase 0)",
         },
     ]
@@ -486,13 +698,24 @@ def test_merge_drugs_updates_source_fields_preserves_curated():
 
 def test_merge_pathways_unions_components():
     existing = [
-        {"id": "jak-stat", "name": "JAK-STAT Signaling", "description": "Curated desc",
-         "key_components": ["JAK1"], "therapeutic_targets": ["JAK1"], "references": ["PMID-1"]}
+        {
+            "id": "jak-stat",
+            "name": "JAK-STAT Signaling",
+            "description": "Curated desc",
+            "key_components": ["JAK1"],
+            "therapeutic_targets": ["JAK1"],
+            "references": ["PMID-1"],
+        }
     ]
     fresh = [
-        {"id": "jak-stat", "name": "JAK-STAT Signaling", "description": "Auto desc",
-         "key_components": ["JAK1", "STAT3"], "therapeutic_targets": ["JAK1", "STAT3"],
-         "references": []}
+        {
+            "id": "jak-stat",
+            "name": "JAK-STAT Signaling",
+            "description": "Auto desc",
+            "key_components": ["JAK1", "STAT3"],
+            "therapeutic_targets": ["JAK1", "STAT3"],
+            "references": [],
+        }
     ]
     result = scaffold.merge_pathways(existing, fresh)
     p = result["pathways"][0]
@@ -505,8 +728,11 @@ def test_merge_pathways_unions_components():
 def test_refresh_disease_preserves_curation_and_adds_new(tmp_path, monkeypatch):
     """End-to-end: scaffold, curate a field, refresh, verify merge."""
     scaffold.scaffold_disease(
-        "ra_refresh", name="Rheumatoid Arthritis", efo_id="EFO_0001370",
-        target_dir=tmp_path, use_cache=False,
+        "ra_refresh",
+        name="Rheumatoid Arthritis",
+        efo_id="EFO_0001370",
+        target_dir=tmp_path,
+        use_cache=False,
     )
     data_dir = tmp_path / "data"
     genes_path = data_dir / "genes.json"
@@ -520,7 +746,10 @@ def test_refresh_disease_preserves_curation_and_adds_new(tmp_path, monkeypatch):
     genes_path.write_text(json.dumps(genes, indent=2), encoding="utf-8")
 
     summary = scaffold.refresh_disease(
-        "ra_refresh", efo_id="EFO_0001370", target_dir=tmp_path, use_cache=False,
+        "ra_refresh",
+        efo_id="EFO_0001370",
+        target_dir=tmp_path,
+        use_cache=False,
     )
     assert summary["merge"]["genes"]["kept"]
 
@@ -534,12 +763,20 @@ def test_refresh_disease_preserves_curation_and_adds_new(tmp_path, monkeypatch):
 
 def test_refresh_disease_dry_run_writes_nothing(tmp_path):
     scaffold.scaffold_disease(
-        "dry_test", name="Dry Test", efo_id="EFO_0001370", target_dir=tmp_path, use_cache=False,
+        "dry_test",
+        name="Dry Test",
+        efo_id="EFO_0001370",
+        target_dir=tmp_path,
+        use_cache=False,
     )
     genes_path = tmp_path / "data" / "genes.json"
     before = genes_path.read_text(encoding="utf-8")
     summary = scaffold.refresh_disease(
-        "dry_test", efo_id="EFO_0001370", target_dir=tmp_path, use_cache=False, dry_run=True,
+        "dry_test",
+        efo_id="EFO_0001370",
+        target_dir=tmp_path,
+        use_cache=False,
+        dry_run=True,
     )
     assert summary["dry_run"] is True
     assert genes_path.read_text(encoding="utf-8") == before
@@ -552,24 +789,42 @@ def test_refresh_disease_missing_module_raises(tmp_path):
 
 # ── Refresh + prune (--prune) ───────────────────────────────────────────
 
+
 def _add_orphan_entities(data_dir, with_pathway_ref=True):
     """Inject a gene + drug no source reports, plus an optional pathway ref."""
     genes_path = data_dir / "genes.json"
     genes = json.loads(genes_path.read_text(encoding="utf-8"))
-    genes["genes"].append({
-        "id": "ORPHAN", "name": "Orphan", "chromosome": "", "function": "",
-        "disease_evidence": "Curated legacy", "odds_ratio": None,
-        "references": [], "category": "Curated",
-    })
+    genes["genes"].append(
+        {
+            "id": "ORPHAN",
+            "name": "Orphan",
+            "chromosome": "",
+            "function": "",
+            "disease_evidence": "Curated legacy",
+            "odds_ratio": None,
+            "references": [],
+            "category": "Curated",
+        }
+    )
     genes_path.write_text(json.dumps(genes, indent=2), encoding="utf-8")
 
     drugs_path = data_dir / "drugs.json"
     drugs = json.loads(drugs_path.read_text(encoding="utf-8"))
-    drugs["drugs"].append({
-        "id": "CHEMBLORPHAN", "name": "Orphan drug", "type": "", "target": "ORPHAN",
-        "mechanism": "", "approval": "", "route": "", "efficacy": "",
-        "references": [], "category": "", "disease_evidence": "Curated legacy",
-    })
+    drugs["drugs"].append(
+        {
+            "id": "CHEMBLORPHAN",
+            "name": "Orphan drug",
+            "type": "",
+            "target": "ORPHAN",
+            "mechanism": "",
+            "approval": "",
+            "route": "",
+            "efficacy": "",
+            "references": [],
+            "category": "",
+            "disease_evidence": "Curated legacy",
+        }
+    )
     drugs_path.write_text(json.dumps(drugs, indent=2), encoding="utf-8")
 
     if with_pathway_ref:
@@ -584,15 +839,22 @@ def _add_orphan_entities(data_dir, with_pathway_ref=True):
 
 def test_refresh_prune_removes_dropped_entities_and_backs_up(tmp_path):
     scaffold.scaffold_disease(
-        "prune_test", name="Prune Test", efo_id="EFO_0001370",
-        target_dir=tmp_path, use_cache=False,
+        "prune_test",
+        name="Prune Test",
+        efo_id="EFO_0001370",
+        target_dir=tmp_path,
+        use_cache=False,
     )
     data_dir = tmp_path / "data"
     _add_orphan_entities(data_dir)
 
     summary = scaffold.refresh_disease(
-        "prune_test", efo_id="EFO_0001370", target_dir=tmp_path,
-        use_cache=False, prune=True, confirm=lambda plan: True,
+        "prune_test",
+        efo_id="EFO_0001370",
+        target_dir=tmp_path,
+        use_cache=False,
+        prune=True,
+        confirm=lambda plan: True,
     )
     p = summary["prune"]
     assert p["enabled"] and not p["aborted"]
@@ -622,8 +884,11 @@ def test_refresh_prune_removes_dropped_entities_and_backs_up(tmp_path):
 def test_refresh_prune_confirm_decline_aborts(tmp_path):
     """Declining the prune aborts the entire write — no files change."""
     scaffold.scaffold_disease(
-        "prune_abort", name="Prune Abort", efo_id="EFO_0001370",
-        target_dir=tmp_path, use_cache=False,
+        "prune_abort",
+        name="Prune Abort",
+        efo_id="EFO_0001370",
+        target_dir=tmp_path,
+        use_cache=False,
     )
     data_dir = tmp_path / "data"
     _add_orphan_entities(data_dir, with_pathway_ref=False)
@@ -633,8 +898,12 @@ def test_refresh_prune_confirm_decline_aborts(tmp_path):
     }
 
     summary = scaffold.refresh_disease(
-        "prune_abort", efo_id="EFO_0001370", target_dir=tmp_path,
-        use_cache=False, prune=True, confirm=lambda plan: False,
+        "prune_abort",
+        efo_id="EFO_0001370",
+        target_dir=tmp_path,
+        use_cache=False,
+        prune=True,
+        confirm=lambda plan: False,
     )
     p = summary["prune"]
     assert p["enabled"] and p["aborted"]
@@ -646,8 +915,11 @@ def test_refresh_prune_confirm_decline_aborts(tmp_path):
 
 def test_refresh_prune_dry_run_reports_without_writing(tmp_path):
     scaffold.scaffold_disease(
-        "prune_dry", name="Prune Dry", efo_id="EFO_0001370",
-        target_dir=tmp_path, use_cache=False,
+        "prune_dry",
+        name="Prune Dry",
+        efo_id="EFO_0001370",
+        target_dir=tmp_path,
+        use_cache=False,
     )
     data_dir = tmp_path / "data"
     _add_orphan_entities(data_dir, with_pathway_ref=False)
@@ -657,8 +929,13 @@ def test_refresh_prune_dry_run_reports_without_writing(tmp_path):
         raise AssertionError("confirm must not run during a dry run")
 
     summary = scaffold.refresh_disease(
-        "prune_dry", efo_id="EFO_0001370", target_dir=tmp_path,
-        use_cache=False, prune=True, dry_run=True, confirm=_never_called,
+        "prune_dry",
+        efo_id="EFO_0001370",
+        target_dir=tmp_path,
+        use_cache=False,
+        prune=True,
+        dry_run=True,
+        confirm=_never_called,
     )
     p = summary["prune"]
     assert p["enabled"] and not p["aborted"]
@@ -670,8 +947,11 @@ def test_refresh_prune_dry_run_reports_without_writing(tmp_path):
 def test_refresh_prune_nothing_to_prune_skips_confirm(tmp_path):
     """Fresh sources report the same entities → no candidates, no prompt."""
     scaffold.scaffold_disease(
-        "prune_clean", name="Prune Clean", efo_id="EFO_0001370",
-        target_dir=tmp_path, use_cache=False,
+        "prune_clean",
+        name="Prune Clean",
+        efo_id="EFO_0001370",
+        target_dir=tmp_path,
+        use_cache=False,
     )
     called = {"n": 0}
 
@@ -680,8 +960,12 @@ def test_refresh_prune_nothing_to_prune_skips_confirm(tmp_path):
         return True
 
     summary = scaffold.refresh_disease(
-        "prune_clean", efo_id="EFO_0001370", target_dir=tmp_path,
-        use_cache=False, prune=True, confirm=_confirm,
+        "prune_clean",
+        efo_id="EFO_0001370",
+        target_dir=tmp_path,
+        use_cache=False,
+        prune=True,
+        confirm=_confirm,
     )
     assert called["n"] == 0
     assert summary["prune"]["enabled"] and not summary["prune"]["aborted"]
@@ -692,11 +976,14 @@ def test_refresh_prune_nothing_to_prune_skips_confirm(tmp_path):
 
 # ── CLI wiring ───────────────────────────────────────────────────────────
 
+
 def test_cli_parser_has_disease_subcommands():
     from med_research.cli import _build_parser
 
     parser = _build_parser()
-    args = parser.parse_args(["disease", "add", "crohns", "--name", "Crohn's disease", "--efo", "EFO_0000384"])
+    args = parser.parse_args(
+        ["disease", "add", "crohns", "--name", "Crohn's disease", "--efo", "EFO_0000384"]
+    )
     assert args.command == "disease"
     assert args.disease_action == "add"
     assert args.disease_id == "crohns"
@@ -716,7 +1003,9 @@ def test_cli_parser_has_disease_subcommands():
     assert args.prune is True
     assert args.yes is True
 
-    args = parser.parse_args(["disease", "restore", "sle", "--backup", "data/backups/pruned_sle_x.json", "--dry-run"])
+    args = parser.parse_args(
+        ["disease", "restore", "sle", "--backup", "data/backups/pruned_sle_x.json", "--dry-run"]
+    )
     assert args.disease_action == "restore"
     assert args.disease_id == "sle"
     assert args.backup == "data/backups/pruned_sle_x.json"
@@ -748,8 +1037,12 @@ def test_cmd_disease_refresh_prune_wiring(monkeypatch):
     def fake_refresh(**kwargs):
         captured.update(kwargs)
         return {
-            "disease_id": "sle", "name": "Systemic Lupus", "efo_id": None,
-            "root": "/tmp", "dry_run": kwargs["dry_run"], "sources": {},
+            "disease_id": "sle",
+            "name": "Systemic Lupus",
+            "efo_id": None,
+            "root": "/tmp",
+            "dry_run": kwargs["dry_run"],
+            "sources": {},
             "merge": {
                 "genes": {"added": [], "updated": [], "kept": []},
                 "drugs": {"added": [], "updated": [], "kept": []},
@@ -757,8 +1050,14 @@ def test_cmd_disease_refresh_prune_wiring(monkeypatch):
             },
             "counts": {"genes": 0, "drugs": 0, "pathways": 0, "relationships": 0},
             "files": [],
-            "prune": {"enabled": kwargs["prune"], "aborted": False, "genes": [],
-                      "drugs": [], "scrubbed_pathways": [], "backup": None},
+            "prune": {
+                "enabled": kwargs["prune"],
+                "aborted": False,
+                "genes": [],
+                "drugs": [],
+                "scrubbed_pathways": [],
+                "backup": None,
+            },
         }
 
     monkeypatch.setattr(scaf, "refresh_disease", fake_refresh)
@@ -786,6 +1085,7 @@ def test_cmd_disease_refresh_prune_wiring(monkeypatch):
 
 # ── Restore (undo --prune) ────────────────────────────────────────────
 
+
 def _rebuild_relationships(data_dir, disease_label):
     """Rebuild relationships.json from the current entity files."""
     genes = json.loads((data_dir / "genes.json").read_text(encoding="utf-8"))["genes"]
@@ -802,16 +1102,21 @@ def test_prune_then_restore_round_trip(tmp_path):
     from med_research.diseases import audit
 
     scaffold.scaffold_disease(
-        "roundtrip", name="Roundtrip", efo_id="EFO_0001370",
-        target_dir=tmp_path, use_cache=False,
+        "roundtrip",
+        name="Roundtrip",
+        efo_id="EFO_0001370",
+        target_dir=tmp_path,
+        use_cache=False,
     )
     data_dir = tmp_path / "data"
     _add_orphan_entities(data_dir)  # ORPHAN + CHEMBLORPHAN + pathway refs
     # Keep relationships.json consistent with the injected entities (as a real
     # curated module would be), so the round-trip comparison is meaningful.
     label = next(
-        r["target"] for r in
-        json.loads((data_dir / "relationships.json").read_text(encoding="utf-8"))["relationships"]
+        r["target"]
+        for r in json.loads((data_dir / "relationships.json").read_text(encoding="utf-8"))[
+            "relationships"
+        ]
         if r["type"] == "ASSOCIATED_WITH"
     )
     _rebuild_relationships(data_dir, label)
@@ -822,8 +1127,12 @@ def test_prune_then_restore_round_trip(tmp_path):
     }
 
     summary = scaffold.refresh_disease(
-        "roundtrip", efo_id="EFO_0001370", target_dir=tmp_path,
-        use_cache=False, prune=True, confirm=lambda plan: True,
+        "roundtrip",
+        efo_id="EFO_0001370",
+        target_dir=tmp_path,
+        use_cache=False,
+        prune=True,
+        confirm=lambda plan: True,
     )
     backup = summary["prune"]["backup"]
     assert backup and Path(backup).exists()
@@ -846,8 +1155,11 @@ def test_prune_then_restore_round_trip(tmp_path):
 
 def test_restore_auto_selects_newest_backup(tmp_path):
     scaffold.scaffold_disease(
-        "auto_restore", name="Auto Restore", efo_id="EFO_0001370",
-        target_dir=tmp_path, use_cache=False,
+        "auto_restore",
+        name="Auto Restore",
+        efo_id="EFO_0001370",
+        target_dir=tmp_path,
+        use_cache=False,
     )
     data_dir = tmp_path / "data"
     _write_backup(data_dir, "auto_restore", "20260101_000000_000000", genes=["OLD"])
@@ -861,20 +1173,38 @@ def test_restore_auto_selects_newest_backup(tmp_path):
 def test_restore_legacy_backup_reattaches_pathway_by_keyword(tmp_path):
     """Backups without a membership map fall back to keyword matching."""
     scaffold.scaffold_disease(
-        "legacy", name="Legacy", efo_id="EFO_0001370",
-        target_dir=tmp_path, use_cache=False,
+        "legacy",
+        name="Legacy",
+        efo_id="EFO_0001370",
+        target_dir=tmp_path,
+        use_cache=False,
     )
     data_dir = tmp_path / "data"
     backup = data_dir / "backups" / "pruned_legacy_20260101_000000_000000.json"
     backup.parent.mkdir(parents=True, exist_ok=True)
-    backup.write_text(json.dumps({
-        "disease_id": "legacy", "pruned_at": "2026-01-01T00:00:00",
-        "genes": [{"id": "IL6", "name": "IL6", "chromosome": "", "function": "",
-                    "disease_evidence": "legacy", "odds_ratio": None,
-                    "references": [], "category": ""}],
-        "drugs": [],
-        # no pathway_memberships key → the keyword template must re-attach IL6
-    }), encoding="utf-8")
+    backup.write_text(
+        json.dumps(
+            {
+                "disease_id": "legacy",
+                "pruned_at": "2026-01-01T00:00:00",
+                "genes": [
+                    {
+                        "id": "IL6",
+                        "name": "IL6",
+                        "chromosome": "",
+                        "function": "",
+                        "disease_evidence": "legacy",
+                        "odds_ratio": None,
+                        "references": [],
+                        "category": "",
+                    }
+                ],
+                "drugs": [],
+                # no pathway_memberships key → the keyword template must re-attach IL6
+            }
+        ),
+        encoding="utf-8",
+    )
 
     summary = scaffold.restore_disease("legacy", backup_path=backup, target_dir=tmp_path)
     assert summary["restored"]["genes"] == ["IL6"]
@@ -885,17 +1215,26 @@ def test_restore_legacy_backup_reattaches_pathway_by_keyword(tmp_path):
 
 def test_restore_skips_entities_already_present(tmp_path):
     scaffold.scaffold_disease(
-        "skip_restore", name="Skip Restore", efo_id="EFO_0001370",
-        target_dir=tmp_path, use_cache=False,
+        "skip_restore",
+        name="Skip Restore",
+        efo_id="EFO_0001370",
+        target_dir=tmp_path,
+        use_cache=False,
     )
     data_dir = tmp_path / "data"
     backup = data_dir / "backups" / "pruned_skip_restore_20260101_000000_000000.json"
     backup.parent.mkdir(parents=True, exist_ok=True)
-    backup.write_text(json.dumps({
-        "disease_id": "skip_restore", "pruned_at": "2026-01-01T00:00:00",
-        "genes": [{"id": "TNF", "name": "TNF"}, {"id": "IL6", "name": "IL6"}],
-        "drugs": [],
-    }), encoding="utf-8")
+    backup.write_text(
+        json.dumps(
+            {
+                "disease_id": "skip_restore",
+                "pruned_at": "2026-01-01T00:00:00",
+                "genes": [{"id": "TNF", "name": "TNF"}, {"id": "IL6", "name": "IL6"}],
+                "drugs": [],
+            }
+        ),
+        encoding="utf-8",
+    )
 
     summary = scaffold.restore_disease("skip_restore", backup_path=backup, target_dir=tmp_path)
     assert summary["restored"]["genes"] == ["IL6"]
@@ -904,8 +1243,11 @@ def test_restore_skips_entities_already_present(tmp_path):
 
 def test_restore_dry_run_writes_nothing(tmp_path):
     scaffold.scaffold_disease(
-        "dry_restore", name="Dry Restore", efo_id="EFO_0001370",
-        target_dir=tmp_path, use_cache=False,
+        "dry_restore",
+        name="Dry Restore",
+        efo_id="EFO_0001370",
+        target_dir=tmp_path,
+        use_cache=False,
     )
     data_dir = tmp_path / "data"
     _write_backup(data_dir, "dry_restore", "20260101_000000_000000", genes=["IL6"])
@@ -922,8 +1264,11 @@ def test_restore_dry_run_writes_nothing(tmp_path):
 
 def test_restore_missing_backup_raises(tmp_path):
     scaffold.scaffold_disease(
-        "no_backup", name="No Backup", efo_id="EFO_0001370",
-        target_dir=tmp_path, use_cache=False,
+        "no_backup",
+        name="No Backup",
+        efo_id="EFO_0001370",
+        target_dir=tmp_path,
+        use_cache=False,
     )
     with pytest.raises(FileNotFoundError, match="Backup file not found"):
         scaffold.restore_disease(
@@ -937,8 +1282,11 @@ def test_restore_missing_backup_raises(tmp_path):
 
 def test_restore_unparseable_backup_raises(tmp_path):
     scaffold.scaffold_disease(
-        "bad_backup", name="Bad Backup", efo_id="EFO_0001370",
-        target_dir=tmp_path, use_cache=False,
+        "bad_backup",
+        name="Bad Backup",
+        efo_id="EFO_0001370",
+        target_dir=tmp_path,
+        use_cache=False,
     )
     data_dir = tmp_path / "data"
     bad = data_dir / "backups" / "pruned_bad_backup_20260101_000000_000000.json"
@@ -953,16 +1301,26 @@ def test_restore_wrong_disease_backup_warns(tmp_path, caplog):
     import logging
 
     scaffold.scaffold_disease(
-        "ms_restore", name="MS Restore", efo_id="EFO_0001370",
-        target_dir=tmp_path, use_cache=False,
+        "ms_restore",
+        name="MS Restore",
+        efo_id="EFO_0001370",
+        target_dir=tmp_path,
+        use_cache=False,
     )
     data_dir = tmp_path / "data"
     foreign = data_dir / "backups" / "pruned_other_20260101_000000_000000.json"
     foreign.parent.mkdir(parents=True, exist_ok=True)
-    foreign.write_text(json.dumps({
-        "disease_id": "other", "pruned_at": "2026-01-01T00:00:00",
-        "genes": [{"id": "IL6", "name": "IL6"}], "drugs": [],
-    }), encoding="utf-8")
+    foreign.write_text(
+        json.dumps(
+            {
+                "disease_id": "other",
+                "pruned_at": "2026-01-01T00:00:00",
+                "genes": [{"id": "IL6", "name": "IL6"}],
+                "drugs": [],
+            }
+        ),
+        encoding="utf-8",
+    )
 
     with caplog.at_level(logging.WARNING):
         summary = scaffold.restore_disease("ms_restore", backup_path=foreign, target_dir=tmp_path)
@@ -971,6 +1329,7 @@ def test_restore_wrong_disease_backup_warns(tmp_path, caplog):
 
 
 # ── Backup housekeeping (list / purge) ────────────────────────────────
+
 
 def _write_backup(data_dir, disease_id, ts, genes=(), drugs=(), memberships=None):
     """Craft a pruned backup file with a fixed timestamp (for ordering)."""
@@ -990,11 +1349,16 @@ def _write_backup(data_dir, disease_id, ts, genes=(), drugs=(), memberships=None
 
 def test_list_backups_inventory(tmp_path):
     scaffold.scaffold_disease(
-        "inv_test", name="Inv Test", efo_id="EFO_0001370",
-        target_dir=tmp_path, use_cache=False,
+        "inv_test",
+        name="Inv Test",
+        efo_id="EFO_0001370",
+        target_dir=tmp_path,
+        use_cache=False,
     )
     data_dir = tmp_path / "data"
-    _write_backup(data_dir, "inv_test", "20260102_000000_000000", genes=["ORPHAN"], drugs=["CHEMBLORPHAN"])
+    _write_backup(
+        data_dir, "inv_test", "20260102_000000_000000", genes=["ORPHAN"], drugs=["CHEMBLORPHAN"]
+    )
     _write_backup(data_dir, "inv_test", "20260101_000000_000000", genes=["TLR7"])
 
     inv = scaffold.list_backups("inv_test", target_dir=tmp_path)
@@ -1014,8 +1378,11 @@ def test_list_backups_inventory(tmp_path):
 
 def test_purge_backups_keeps_newest(tmp_path):
     scaffold.scaffold_disease(
-        "purge_test", name="Purge Test", efo_id="EFO_0001370",
-        target_dir=tmp_path, use_cache=False,
+        "purge_test",
+        name="Purge Test",
+        efo_id="EFO_0001370",
+        target_dir=tmp_path,
+        use_cache=False,
     )
     data_dir = tmp_path / "data"
     oldest = _write_backup(data_dir, "purge_test", "20260101_000000_000000", genes=["A"])
@@ -1038,15 +1405,20 @@ def test_purge_backups_keeps_newest(tmp_path):
 
 def test_purge_backups_confirm_decline_and_dry_run(tmp_path):
     scaffold.scaffold_disease(
-        "purge_abort", name="Purge Abort", efo_id="EFO_0001370",
-        target_dir=tmp_path, use_cache=False,
+        "purge_abort",
+        name="Purge Abort",
+        efo_id="EFO_0001370",
+        target_dir=tmp_path,
+        use_cache=False,
     )
     data_dir = tmp_path / "data"
     old = _write_backup(data_dir, "purge_abort", "20260101_000000_000000", genes=["A"])
     new = _write_backup(data_dir, "purge_abort", "20260102_000000_000000", genes=["B"])
 
     # Decline → nothing deleted
-    r = scaffold.purge_backups("purge_abort", keep=1, target_dir=tmp_path, confirm=lambda entries: False)
+    r = scaffold.purge_backups(
+        "purge_abort", keep=1, target_dir=tmp_path, confirm=lambda entries: False
+    )
     assert r["purge"]["aborted"] and r["purge"]["deleted"] == []
     assert old.exists() and new.exists()
 
@@ -1058,8 +1430,11 @@ def test_purge_backups_confirm_decline_and_dry_run(tmp_path):
 
 def test_purge_nothing_to_delete(tmp_path):
     scaffold.scaffold_disease(
-        "purge_none", name="Purge None", efo_id="EFO_0001370",
-        target_dir=tmp_path, use_cache=False,
+        "purge_none",
+        name="Purge None",
+        efo_id="EFO_0001370",
+        target_dir=tmp_path,
+        use_cache=False,
     )
     _write_backup(tmp_path / "data", "purge_none", "20260101_000000_000000", genes=["A"])
     called = {"n": 0}
@@ -1075,8 +1450,11 @@ def test_purge_nothing_to_delete(tmp_path):
 
 def test_list_backups_unreadable_file_flagged(tmp_path):
     scaffold.scaffold_disease(
-        "inv_bad", name="Inv Bad", efo_id="EFO_0001370",
-        target_dir=tmp_path, use_cache=False,
+        "inv_bad",
+        name="Inv Bad",
+        efo_id="EFO_0001370",
+        target_dir=tmp_path,
+        use_cache=False,
     )
     data_dir = tmp_path / "data"
     good = _write_backup(data_dir, "inv_bad", "20260102_000000_000000", genes=["A"])
@@ -1099,12 +1477,19 @@ def test_list_backups_missing_module_raises(tmp_path):
 def test_print_backups_summary_heads(caplog):
     """Lock in the four inventory/purge head variants."""
     base = {
-        "disease_id": "sle", "backups": [], "count": 0, "total_size_bytes": 0,
+        "disease_id": "sle",
+        "backups": [],
+        "count": 0,
+        "total_size_bytes": 0,
     }
     entry = {
         "path": "data/backups/pruned_sle_20260101_000000_000000.json",
-        "size_bytes": 100, "modified": "2026-01-01T00:00:00",
-        "genes": ["ORPHAN"], "drugs": [], "backup_disease_id": "sle", "readable": True,
+        "size_bytes": 100,
+        "modified": "2026-01-01T00:00:00",
+        "genes": ["ORPHAN"],
+        "drugs": [],
+        "backup_disease_id": "sle",
+        "readable": True,
     }
     inv = {**base, "backups": [entry], "count": 1, "total_size_bytes": 100}
 
@@ -1115,43 +1500,84 @@ def test_print_backups_summary_heads(caplog):
 
     # Dry-run purge
     caplog.clear()
-    scaffold.print_backups_summary({**inv, "purge": {"enabled": True, "aborted": False, "keep": 1,
-                                                        "dry_run": True, "deleted": [entry["path"]],
-                                                        "freed_bytes": 100, "kept": []}})
+    scaffold.print_backups_summary(
+        {
+            **inv,
+            "purge": {
+                "enabled": True,
+                "aborted": False,
+                "keep": 1,
+                "dry_run": True,
+                "deleted": [entry["path"]],
+                "freed_bytes": 100,
+                "kept": [],
+            },
+        }
+    )
     assert "🗑️  PURGE PREVIEW (dry-run — nothing deleted)" in caplog.text
     assert "Would delete: 1 backup(s)" in caplog.text
 
     # Aborted purge
     caplog.clear()
-    scaffold.print_backups_summary({**inv, "purge": {"enabled": True, "aborted": True, "keep": 1,
-                                                        "dry_run": False, "deleted": [],
-                                                        "freed_bytes": 0, "kept": [entry["path"]]}})
+    scaffold.print_backups_summary(
+        {
+            **inv,
+            "purge": {
+                "enabled": True,
+                "aborted": True,
+                "keep": 1,
+                "dry_run": False,
+                "deleted": [],
+                "freed_bytes": 0,
+                "kept": [entry["path"]],
+            },
+        }
+    )
     assert "⚠️  PURGE ABORTED — nothing deleted" in caplog.text
     assert "cancelled by user" in caplog.text
 
     # Applied purge
     caplog.clear()
-    scaffold.print_backups_summary({**inv, "purge": {"enabled": True, "aborted": False, "keep": 0,
-                                                        "dry_run": False, "deleted": [entry["path"]],
-                                                        "freed_bytes": 100, "kept": []}})
+    scaffold.print_backups_summary(
+        {
+            **inv,
+            "purge": {
+                "enabled": True,
+                "aborted": False,
+                "keep": 0,
+                "dry_run": False,
+                "deleted": [entry["path"]],
+                "freed_bytes": 100,
+                "kept": [],
+            },
+        }
+    )
     assert "🗑️  BACKUPS PURGED: sle" in caplog.text
     assert "Deleted: 1 backup(s), 100 bytes freed" in caplog.text
 
 
 # ── Restore (re-merge a pruned backup) ────────────────────────────────
 
+
 def test_restore_disease_round_trip(tmp_path):
     """Prune → restore returns the module (entities + pathway membership)."""
     scaffold.scaffold_disease(
-        "restore_test", name="Restore Test", efo_id="EFO_0001370",
-        target_dir=tmp_path, use_cache=False,
+        "restore_test",
+        name="Restore Test",
+        efo_id="EFO_0001370",
+        target_dir=tmp_path,
+        use_cache=False,
     )
     data_dir = tmp_path / "data"
     _add_orphan_entities(data_dir)  # ORPHAN gene, CHEMBLORPHAN drug, pathway ref
 
     pruned = scaffold.refresh_disease(
-        "restore_test", efo_id="EFO_0001370", target_dir=tmp_path,
-        use_cache=False, prune=True, confirm=lambda plan: True,
+        "restore_test",
+        efo_id="EFO_0001370",
+        target_dir=tmp_path,
+        use_cache=False,
+        prune=True,
+        confirm=lambda plan: True,
     )
     backup = pruned["prune"]["backup"]
     assert backup and Path(backup).exists()
@@ -1181,25 +1607,44 @@ def test_restore_disease_round_trip(tmp_path):
     paths = json.loads((data_dir / "pathways.json").read_text(encoding="utf-8"))["pathways"]
     assert any("ORPHAN" in (pw.get("key_components") or []) for pw in paths)
     # Relationships rebuilt for the restored entities
-    rels = json.loads((data_dir / "relationships.json").read_text(encoding="utf-8"))["relationships"]
+    rels = json.loads((data_dir / "relationships.json").read_text(encoding="utf-8"))[
+        "relationships"
+    ]
     assert any(x["source"] == "CHEMBLORPHAN" and x["type"] == "TARGETS" for x in rels)
     assert any(x["source"] == "ORPHAN" and x["type"] == "ASSOCIATED_WITH" for x in rels)
 
 
 def test_restore_disease_skips_existing_ids(tmp_path):
     scaffold.scaffold_disease(
-        "restore_skip", name="Restore Skip", efo_id="EFO_0001370",
-        target_dir=tmp_path, use_cache=False,
+        "restore_skip",
+        name="Restore Skip",
+        efo_id="EFO_0001370",
+        target_dir=tmp_path,
+        use_cache=False,
     )
     backup = tmp_path / "backup.json"
-    backup.write_text(json.dumps({
-        "disease_id": "restore_skip",
-        "pruned_at": "2026-01-01T00:00:00",
-        "genes": [{"id": "TNF", "name": "Tumor necrosis factor", "chromosome": "",
-                    "function": "", "disease_evidence": "Curated", "odds_ratio": None,
-                    "references": [], "category": "Cytokine"}],
-        "drugs": [],
-    }), encoding="utf-8")
+    backup.write_text(
+        json.dumps(
+            {
+                "disease_id": "restore_skip",
+                "pruned_at": "2026-01-01T00:00:00",
+                "genes": [
+                    {
+                        "id": "TNF",
+                        "name": "Tumor necrosis factor",
+                        "chromosome": "",
+                        "function": "",
+                        "disease_evidence": "Curated",
+                        "odds_ratio": None,
+                        "references": [],
+                        "category": "Cytokine",
+                    }
+                ],
+                "drugs": [],
+            }
+        ),
+        encoding="utf-8",
+    )
 
     r = scaffold.restore_disease("restore_skip", backup_path=backup, target_dir=tmp_path)
     assert "TNF" in r["skipped"]["genes"]
@@ -1211,14 +1656,21 @@ def test_restore_disease_skips_existing_ids(tmp_path):
 
 def test_restore_disease_default_backup_and_dry_run(tmp_path):
     scaffold.scaffold_disease(
-        "restore_dry", name="Restore Dry", efo_id="EFO_0001370",
-        target_dir=tmp_path, use_cache=False,
+        "restore_dry",
+        name="Restore Dry",
+        efo_id="EFO_0001370",
+        target_dir=tmp_path,
+        use_cache=False,
     )
     data_dir = tmp_path / "data"
     _add_orphan_entities(data_dir, with_pathway_ref=False)
     pruned = scaffold.refresh_disease(
-        "restore_dry", efo_id="EFO_0001370", target_dir=tmp_path,
-        use_cache=False, prune=True, confirm=lambda plan: True,
+        "restore_dry",
+        efo_id="EFO_0001370",
+        target_dir=tmp_path,
+        use_cache=False,
+        prune=True,
+        confirm=lambda plan: True,
     )
     before = (data_dir / "genes.json").read_text(encoding="utf-8")
 
@@ -1234,33 +1686,55 @@ def test_restore_disease_default_backup_and_dry_run(tmp_path):
 def test_restore_disease_legacy_backup_fuzzy_membership(tmp_path):
     """Backups without pathway_memberships fall back to keyword matching."""
     scaffold.scaffold_disease(
-        "restore_legacy", name="Restore Legacy", efo_id="EFO_0001370",
-        target_dir=tmp_path, use_cache=False,
+        "restore_legacy",
+        name="Restore Legacy",
+        efo_id="EFO_0001370",
+        target_dir=tmp_path,
+        use_cache=False,
     )
     # Pre-feature backup: no pathway_memberships key. Gene "FAS" is not in the
     # module but keyword-matches the tnf-signaling template (which exists).
     backup = tmp_path / "legacy.json"
-    backup.write_text(json.dumps({
-        "disease_id": "restore_legacy",
-        "pruned_at": "2026-01-01T00:00:00",
-        "genes": [{"id": "FAS", "name": "FAS", "chromosome": "", "function": "",
-                    "disease_evidence": "Legacy", "odds_ratio": None,
-                    "references": [], "category": ""}],
-        "drugs": [],
-    }), encoding="utf-8")
+    backup.write_text(
+        json.dumps(
+            {
+                "disease_id": "restore_legacy",
+                "pruned_at": "2026-01-01T00:00:00",
+                "genes": [
+                    {
+                        "id": "FAS",
+                        "name": "FAS",
+                        "chromosome": "",
+                        "function": "",
+                        "disease_evidence": "Legacy",
+                        "odds_ratio": None,
+                        "references": [],
+                        "category": "",
+                    }
+                ],
+                "drugs": [],
+            }
+        ),
+        encoding="utf-8",
+    )
 
     r = scaffold.restore_disease("restore_legacy", backup_path=backup, target_dir=tmp_path)
     assert "FAS" in r["restored"]["genes"]
     assert "tnf-signaling" in r["updated_pathways"]
-    paths = json.loads((tmp_path / "data" / "pathways.json").read_text(encoding="utf-8"))["pathways"]
+    paths = json.loads((tmp_path / "data" / "pathways.json").read_text(encoding="utf-8"))[
+        "pathways"
+    ]
     tnf = next(p for p in paths if p["id"] == "tnf-signaling")
     assert "FAS" in tnf["key_components"]
 
 
 def test_restore_disease_backup_errors(tmp_path):
     scaffold.scaffold_disease(
-        "restore_err", name="Restore Err", efo_id="EFO_0001370",
-        target_dir=tmp_path, use_cache=False,
+        "restore_err",
+        name="Restore Err",
+        efo_id="EFO_0001370",
+        target_dir=tmp_path,
+        use_cache=False,
     )
     # Missing module
     with pytest.raises(FileNotFoundError):
@@ -1301,9 +1775,19 @@ def test_cmd_disease_backups_wiring(monkeypatch):
         calls.append(("purge", disease_id, keep, dry_run, confirm))
         captured.update(keep=keep, dry_run=dry_run, confirm=confirm)
         return {
-            "disease_id": disease_id, "backups": [], "count": 0, "total_size_bytes": 0,
-            "purge": {"enabled": True, "aborted": False, "keep": keep, "dry_run": dry_run,
-                      "deleted": [], "freed_bytes": 0, "kept": []},
+            "disease_id": disease_id,
+            "backups": [],
+            "count": 0,
+            "total_size_bytes": 0,
+            "purge": {
+                "enabled": True,
+                "aborted": False,
+                "keep": keep,
+                "dry_run": dry_run,
+                "deleted": [],
+                "freed_bytes": 0,
+                "kept": [],
+            },
         }
 
     monkeypatch.setattr(scaf, "list_backups", fake_list)
@@ -1331,7 +1815,9 @@ def test_cmd_disease_backups_wiring(monkeypatch):
 
     # Missing module → error exit
     monkeypatch.setattr(
-        scaf, "list_backups", lambda *a, **kw: (_ for _ in ()).throw(FileNotFoundError("no module")),
+        scaf,
+        "list_backups",
+        lambda *a, **kw: (_ for _ in ()).throw(FileNotFoundError("no module")),
     )
     assert cmd_disease(parser.parse_args(["disease", "backups", "sle"])) == 1
 
@@ -1346,11 +1832,16 @@ def test_cmd_disease_restore_wiring(monkeypatch):
     def fake_restore(**kwargs):
         captured.update(kwargs)
         return {
-            "disease_id": "sle", "backup": "/x/b.json", "backup_disease_id": "sle",
-            "root": "/tmp", "dry_run": kwargs["dry_run"],
+            "disease_id": "sle",
+            "backup": "/x/b.json",
+            "backup_disease_id": "sle",
+            "root": "/tmp",
+            "dry_run": kwargs["dry_run"],
             "restored": {"genes": [], "drugs": []},
             "skipped": {"genes": [], "drugs": []},
-            "updated_pathways": [], "counts": {}, "files": [],
+            "updated_pathways": [],
+            "counts": {},
+            "files": [],
         }
 
     monkeypatch.setattr(scaf, "restore_disease", fake_restore)
@@ -1368,7 +1859,9 @@ def test_cmd_disease_restore_wiring(monkeypatch):
 
     # Missing module → error exit
     monkeypatch.setattr(
-        scaf, "restore_disease", lambda **kw: (_ for _ in ()).throw(FileNotFoundError("no module")),
+        scaf,
+        "restore_disease",
+        lambda **kw: (_ for _ in ()).throw(FileNotFoundError("no module")),
     )
     assert cmd_disease(parser.parse_args(["disease", "restore", "no_such"])) == 1
 
@@ -1376,8 +1869,14 @@ def test_cmd_disease_restore_wiring(monkeypatch):
 def test_print_refresh_summary_prune_modes(caplog):
     """Lock in the ABORTED / dry-run / applied wording of the prune summary."""
     base = {
-        "disease_id": "sle", "name": "SLE", "efo_id": None, "root": "/x",
-        "dry_run": False, "sources": {}, "files": [], "counts": {},
+        "disease_id": "sle",
+        "name": "SLE",
+        "efo_id": None,
+        "root": "/x",
+        "dry_run": False,
+        "sources": {},
+        "files": [],
+        "counts": {},
         "merge": {
             "genes": {"added": [], "updated": [], "kept": []},
             "drugs": {"added": [], "updated": [], "kept": []},
@@ -1386,32 +1885,57 @@ def test_print_refresh_summary_prune_modes(caplog):
     }
 
     # Aborted by the confirmation prompt
-    scaffold.print_refresh_summary({
-        **base,
-        "prune": {"enabled": True, "aborted": True, "genes": ["ORPHAN"], "drugs": [],
-                  "scrubbed_pathways": [], "backup": None},
-    })
+    scaffold.print_refresh_summary(
+        {
+            **base,
+            "prune": {
+                "enabled": True,
+                "aborted": True,
+                "genes": ["ORPHAN"],
+                "drugs": [],
+                "scrubbed_pathways": [],
+                "backup": None,
+            },
+        }
+    )
     assert "ABORTED by user — no files written" in caplog.text
     assert "no entities removed" in caplog.text
     assert "Files (would be written)" in caplog.text
 
     # Dry-run preview
     caplog.clear()
-    scaffold.print_refresh_summary({
-        **base, "dry_run": True,
-        "prune": {"enabled": True, "aborted": False, "genes": ["ORPHAN"], "drugs": [],
-                  "scrubbed_pathways": [], "backup": None},
-    })
+    scaffold.print_refresh_summary(
+        {
+            **base,
+            "dry_run": True,
+            "prune": {
+                "enabled": True,
+                "aborted": False,
+                "genes": ["ORPHAN"],
+                "drugs": [],
+                "scrubbed_pathways": [],
+                "backup": None,
+            },
+        }
+    )
     assert "DRY-RUN — no files written" in caplog.text
     assert "would remove 1 genes" in caplog.text
 
     # Applied prune with backup + pathway scrub
     caplog.clear()
-    scaffold.print_refresh_summary({
-        **base,
-        "prune": {"enabled": True, "aborted": False, "genes": ["ORPHAN"], "drugs": [],
-                  "scrubbed_pathways": ["jak-stat"], "backup": "/x/backups/pruned.json"},
-    })
+    scaffold.print_refresh_summary(
+        {
+            **base,
+            "prune": {
+                "enabled": True,
+                "aborted": False,
+                "genes": ["ORPHAN"],
+                "drugs": [],
+                "scrubbed_pathways": ["jak-stat"],
+                "backup": "/x/backups/pruned.json",
+            },
+        }
+    )
     assert "files updated" in caplog.text
     assert "removed 1 genes" in caplog.text
     assert "1 pathways scrubbed" in caplog.text
@@ -1456,8 +1980,10 @@ def test_cmd_disease_validate_all_and_strict(monkeypatch, caplog):
     # Simulate a stub disease: gaps flip the exit code only under --strict
     def _gappy(self):
         return {
-            "SYMPTOMS": "ok", "PUBMED_QUERIES": "ok",
-            "CAR_T_SCORES": "empty", "DRUG_INDUCED_LUPUS_RISK": "empty",
+            "SYMPTOMS": "ok",
+            "PUBMED_QUERIES": "ok",
+            "CAR_T_SCORES": "empty",
+            "DRUG_SAFETY_RISK": "empty",
         }
 
     monkeypatch.setattr(base.Disease, "validate", _gappy)
@@ -1493,8 +2019,10 @@ def test_warn_config_gaps_reports_and_quiets(monkeypatch, caplog):
 
     def _gappy(self):
         return {
-            "SYMPTOMS": "ok", "PUBMED_QUERIES": "ok",
-            "CAR_T_SCORES": "empty", "DRUG_INDUCED_LUPUS_RISK": "empty",
+            "SYMPTOMS": "ok",
+            "PUBMED_QUERIES": "ok",
+            "CAR_T_SCORES": "empty",
+            "DRUG_SAFETY_RISK": "empty",
         }
 
     monkeypatch.setattr(base.Disease, "validate", _gappy)

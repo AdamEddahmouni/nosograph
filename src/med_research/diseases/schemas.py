@@ -67,6 +67,30 @@ class DrugsFileDict(TypedDict):
     drugs: list[DrugDict]
 
 
+class PathwayDict(TypedDict, total=False):
+    id: str
+    name: str
+    description: str
+    key_components: list[str]
+    therapeutic_targets: list[str]
+    references: list[str]
+
+
+class PathwaysFileDict(TypedDict):
+    pathways: list[PathwayDict]
+
+
+class RelationshipDict(TypedDict, total=False):
+    source: str
+    target: str
+    type: str
+    description: str
+
+
+class RelationshipsFileDict(TypedDict):
+    relationships: list[RelationshipDict]
+
+
 class RelationshipType(str, Enum):
     TARGETS = "TARGETS"
     PARTICIPATES_IN = "PARTICIPATES_IN"
@@ -200,16 +224,12 @@ def load_validated_json(path: Path | str, model_class: type[_ModelT]) -> dict[st
     try:
         parsed: dict[str, Any] = json.loads(text)
     except json.JSONDecodeError as exc:
-        raise SchemaValidationError(
-            f"Invalid JSON in {path}: {exc}"
-        ) from exc
+        raise SchemaValidationError(f"Invalid JSON in {path}: {exc}") from exc
 
     try:
         model_class.model_validate(parsed)
     except ValidationError as exc:
-        raise SchemaValidationError(
-            f"Schema validation failed for {path}: {exc}"
-        ) from exc
+        raise SchemaValidationError(f"Schema validation failed for {path}: {exc}") from exc
     return parsed
 
 

@@ -37,10 +37,10 @@ def _diseases_root() -> Path:
 def audit_path(disease_id: str, target_dir: Optional[Path] = None) -> Path:
     """Resolve the audit log path for a disease module.
 
-    ``disease_id`` is sanitized like ``scaffold.list_backups`` — an id from
-the web URL can carry path separators, and we must never resolve outside
-the diseases dir. ``target_dir`` is the module root (containing ``data/``)
-— used by tests.
+        ``disease_id`` is sanitized like ``scaffold.list_backups`` — an id from
+    the web URL can carry path separators, and we must never resolve outside
+    the diseases dir. ``target_dir`` is the module root (containing ``data/``)
+    — used by tests.
     """
     disease_id = sanitize_id(disease_id or "")
     root = target_dir or (_diseases_root() / disease_id)
