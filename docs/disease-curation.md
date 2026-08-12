@@ -68,9 +68,9 @@ Each `src/med_research/diseases/<id>/config.py` must define:
 ```python
 SCREENING_PROFILE = {
     "strategy_id": "<id>-screening-v1",
-    "pathway_keywords": [...],       # pathway terms from KG
-    "mechanism_keywords": [...],      # MOA terms for complementarity scoring
-    "reference_drug_ids": [...],      # must exist in drugs.json
+    "pathway_keywords": [...],  # pathway terms from KG
+    "mechanism_keywords": [...],  # MOA terms for complementarity scoring
+    "reference_drug_ids": [...],  # must exist in drugs.json
     "weights": {
         "binding_estimate": 0.25,
         "druglikeness": 0.15,

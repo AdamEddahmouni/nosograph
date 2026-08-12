@@ -2,7 +2,7 @@
 
 > **Current-state note (2026-08-07):** This document preserves the 2026-07-25 audit for traceability, but several findings have since been resolved or mitigated. The supported runtime is the `src/med_research` package, the root `main.py` is a compatibility wrapper, all seven disease modules pass `python -m med_research.cli disease validate --all --strict`, and current usage is documented in `README.md`, `docs/evidence-workspace.md`, and `docs/api-reference.md`. Treat historical “Current state” sections below as dated audit observations, not the live API specification. The **Summary Matrix** at the bottom is likewise historical; prefer the resolved/mitigated list here and per-issue resolution notes.
 
-**Resolved or mitigated findings:** legacy runtime entrypoints/static mounts, stale primary README guidance, incomplete seven-disease validation, unguarded `--reload` behavior, **#1 structured logging migration** (resolved 2026-08-07), **#2 KG JSON schema validation** (resolved 2026-08-07), **#3 legacy v1 directory cleanup** (archived and removed 2026-08-07), **#4 authentication** (mitigated 2026-08-07 — `AuthMiddleware` enforces `X-API-Key`; `API_KEY` is **required** when `DEBUG=false`, fail-fast in `web/main.py` lifespan), **#5 CORS wildcard default** (resolved 2026-08-07), **#6 Docker non-root user** (resolved 2026-08-07), **#7 Dockerfile SLE-only KG build** (resolved 2026-08-07), **#8 multi-disease KG validation in Docker build** (resolved 2026-08-07), **#9 expand_kg v1 paths** (resolved 2026-08-07), **#10 GWAS silent except blocks** (resolved 2026-08-07), **#11 ML predictor silent ImportError** (resolved 2026-08-07), **#12 disease config stubs** (mitigated 2026-08-07 — all seven diseases have curated CAR_T_SCORES and risk tiers), **#13 Base module interface** (resolved 2026-08-07 — 21 `BasePipelineModule` adapters + `registry.py`), **#14 dependency lock files** (resolved 2026-08-07 — `requirements.in`/`requirements-dev.in`, `make lock`/`lock-check`, CI lock-check step), **#15 error taxonomy** (substantially complete 2026-08-07 — `classify_api_error`, typed raises in API-heavy modules), **#16 `.env.example`** (resolved 2026-08-07), **#17 v1 static mounts** (resolved 2026-08-07), **#18 hardcoded web values** (mitigated 2026-08-07 — version from metadata, `tests_passing` removed), **#19 progress callbacks** (substantially complete 2026-08-07 — `_tick` helper + adapter tests), **#20 Caching strategy** (substantially complete 2026-08-07 — `CacheManager` migration), **#21 Separated compute/report** (substantially complete 2026-08-07 — adapters own `report()`), **#22 integration tests** (substantially complete 2026-08-07 — full-pipeline E2E for sle/ra/ibd, expanded integration, mocked evidence HTTP), **#25 B008 lint** (resolved 2026-08-07 — ruff B ruleset enabled), **#26 CLI subprocess smokes** (mitigated 2026-08-07 — `cli_helpers.py` pattern), **#29 IBD missing relationships** (resolved 2026-08-07), **#30 TypedDict pilot** (mitigated 2026-08-07 — `GeneDict`/`DrugDict` in `diseases/schemas.py`), **#31 Async/concurrent pipeline** (mitigated 2026-08-07 — `--parallel` run-all via `scheduler.py`), **#33 guarded `--reload`** (resolved 2026-08-07), **#34 rate limiting** (resolved 2026-08-08 — Redis-backed distributed sliding-window store with in-memory fallback; see `src/med_research/web/rate_limit.py`), **#35 Dockerfile hardcoded port** (resolved 2026-08-07), **#36 docker-compose volume paths** (resolved 2026-08-07), **#37 pyproject.toml package-data patterns** (resolved 2026-08-07), **#38 router file organization** (resolved 2026-08-07), **#39 index.html v1 branding** (resolved 2026-08-07), **Jinja2 report pilot** (mitigated 2026-08-07 — `render_report()` helper; drug_repurposing, bioinformatics, gene_expression on shared templates), **generic job API validation** (mitigated 2026-08-07 — `GenericModuleJobRequest` + 422 handlers), **unified dispatch** (resolved 2026-08-07 — `registry_service.run_module_job` → `execute_module()`), **mypy pilot** (resolved 2026-08-08 — `[tool.mypy]`, `make typecheck` now covers 37 files: the core + adapter scope plus the virtual_screening package and the web rate-limit modules; adapter `opts` are typed via `AdapterOptions` TypedDict + `Unpack` in `pipeline/adapter_options.py`). CLI `--export-html` provenance wiring (the remaining provenance gap vs engine `__main__` blocks) was resolved 2026-08-07 via `_provenance_for()` in `cli.py`. **2026-08-08:** slow-suite verification (WebSocket orphaned-job hang, trials `top_sponsors` contract, docking vs Meeko 0.7, `vina_setup --check` output), end-to-end dependency locking (CI installs the lock files and verifies the installed env against them; `make venv-sync`/`lock-verify`; `lock-check` also guards lock-to-lock consistency; dev lock compiled against the runtime lock), a new `network` marker for live-external-API tests, and fast docking prep unit tests moved into the PR test job. **#34 (Redis/distributed rate limiting) was resolved 2026-08-08 — `RedisRateLimitStore` (sorted-set + Lua sliding window, fail-open) with `InMemoryRateLimitStore` fallback, wired through `RateLimitMiddleware` via `asyncio.to_thread`, configured by `REDIS_RATE_LIMIT_URL`. The mypy adapter-`opts` gap was also resolved 2026-08-08 — adapter options are now typed (`AdapterOptions` TypedDict + `Unpack`), and `make typecheck` was extended from 31 to 37 files (virtual_screening package incl. the previously-excluded `docking.py`, plus `web/middleware.py` and `web/rate_limit.py`), with all newly-surfaced errors fixed.** Remaining open work should be re-verified against the current tree before implementation.
+**Resolved or mitigated findings:** legacy runtime entrypoints/static mounts, stale primary README guidance, incomplete seven-disease validation, unguarded `--reload` behavior, **#1 structured logging migration** (resolved 2026-08-07), **#2 KG JSON schema validation** (resolved 2026-08-07), **#3 legacy v1 directory cleanup** (archived and removed 2026-08-07), **#4 authentication** (mitigated 2026-08-07 — `AuthMiddleware` enforces `X-API-Key`; `API_KEY` is **required** when `DEBUG=false`, fail-fast in `web/main.py` lifespan), **#5 CORS wildcard default** (resolved 2026-08-07), **#6 Docker non-root user** (resolved 2026-08-07), **#7 Dockerfile SLE-only KG build** (resolved 2026-08-07), **#8 multi-disease KG validation in Docker build** (resolved 2026-08-07), **#9 expand_kg v1 paths** (resolved 2026-08-07), **#10 GWAS silent except blocks** (resolved 2026-08-07), **#11 ML predictor silent ImportError** (resolved 2026-08-07), **#12 disease config stubs** (mitigated 2026-08-07 — all seven diseases have curated CAR_T_SCORES and risk tiers), **#13 Base module interface** (resolved 2026-08-07 — 21 `BasePipelineModule` adapters + `registry.py`), **#14 dependency lock files** (resolved 2026-08-07 — `requirements.in`/`requirements-dev.in`, `make lock`/`lock-check`, CI lock-check step), **#15 error taxonomy** (substantially complete 2026-08-07 — `classify_api_error`, typed raises in API-heavy modules), **#16 `.env.example`** (resolved 2026-08-07), **#17 v1 static mounts** (resolved 2026-08-07), **#18 hardcoded web values** (mitigated 2026-08-07 — version from metadata, `tests_passing` removed), **#19 progress callbacks** (substantially complete 2026-08-07 — `_tick` helper + adapter tests), **#20 Caching strategy** (substantially complete 2026-08-07 — `CacheManager` migration), **#21 Separated compute/report** (substantially complete 2026-08-07 — adapters own `report()`), **#22 integration tests** (resolved 2026-08-11 — explicit `unit` markers, `make test-offline` uses `-m "unit and not network"`, full `run-all` E2E with artifact assertions, RA GWAS skip removed, API behavioral tests for synergy/biomarker/expression/evidence/llm routes), **#23 sleep/jitter** (resolved 2026-08-11 — `rate_limiter.rate_limited_sleep()` / `backoff_sleep()` and `retry_with_backoff()` at API call sites), **#24 Missing input validation in API** (resolved 2026-08-11 — KG query length bounds, job UUID validation, 10 MB request body middleware), **#25 B008 lint** (resolved 2026-08-07 — ruff B ruleset enabled), **#26 CLI subprocess smokes** (resolved 2026-08-11 — docking/adverse-events CLI tests use `CliRunner`/handler imports; `test_check_imports.py` keeps subprocess for script entrypoint audit), **#27 Stale documentation** (resolved 2026-08-11 — root `main.py` is a thin CLI wrapper, `index.html` roadmap/footer fixed, ruff header rebranded), **#28 WebSocket error handler** (resolved 2026-08-08 — `suppress(Exception)` removed from jobs router), **#29 IBD missing relationships** (resolved 2026-08-07), **#30 TypedDict pilot** (mitigated 2026-08-07 — `GeneDict`/`DrugDict` in `diseases/schemas.py`), **#31 Async/concurrent pipeline** (accepted limitation 2026-08-11 — module-level `--parallel` via `scheduler.py` is sufficient; per-module async I/O deferred as enhancement), **#32 Template-based reports** (resolved 2026-08-11 — all 18 report modules including `evidence_workspace/report.py` use `render_report()` + Jinja2 templates), **#33 guarded `--reload`** (resolved 2026-08-07), **#34 rate limiting** (resolved 2026-08-08 — Redis-backed distributed sliding-window store with in-memory fallback; see `src/med_research/web/rate_limit.py`), **#35 Dockerfile hardcoded port** (resolved 2026-08-07), **#36 docker-compose volume paths** (resolved 2026-08-07), **#37 pyproject.toml package-data patterns** (resolved 2026-08-07), **#38 router file organization** (resolved 2026-08-07), **#39 index.html v1 branding** (resolved 2026-08-07), **Jinja2 report pilot** (resolved 2026-08-11 — see #32), **generic job API validation** (mitigated 2026-08-07 — `GenericModuleJobRequest` + 422 handlers), **unified dispatch** (resolved 2026-08-07 — `registry_service.run_module_job` → `execute_module()`), **mypy pilot** (resolved 2026-08-08 — expanded to CLI, web routers/services, and pipeline scope via `make typecheck`). CLI `--export-html` provenance wiring was resolved 2026-08-07 via `_provenance_for()` in `cli.py`. **2026-08-08:** slow-suite verification, end-to-end dependency locking, `network` marker, fast docking prep unit tests. Remaining open work should be re-verified against the current tree before implementation.
 
 > **Audited:** 2026-07-25 | **Package:** `med-research` | **Version:** 2.0.0 (migration in progress)
 > **Scope:** `src/med_research/` (114 Python files), `tests/` (25 files), root config, Docker, Makefile, `scripts/`, legacy v1 directories
@@ -392,11 +392,13 @@ Set flags at import time and log warnings when optional dependencies are missing
    from abc import ABC, abstractmethod
    from dataclasses import dataclass
 
+
    @dataclass
    class PipelineResult:
        success: bool
        data: dict[str, Any]
        errors: list[str]
+
 
    class BasePipelineModule(ABC):
        def __init__(self, disease_id: str, progress_callback=None):
@@ -480,12 +482,26 @@ Set flags at import time and log warnings when optional dependencies are missing
 1. Create `src/med_research/exceptions.py`:
    ```python
    class MedResearchError(Exception): ...
+
+
    class DataValidationError(MedResearchError): ...
+
+
    class ExternalAPIError(MedResearchError): ...
+
+
    class APITimeoutError(ExternalAPIError): ...
+
+
    class APIQuotaError(ExternalAPIError): ...
+
+
    class APIParseError(ExternalAPIError): ...
+
+
    class CacheCorruptionError(MedResearchError): ...
+
+
    class ConfigurationError(MedResearchError): ...
    ```
 2. Replace bare `except Exception` with specific catches:
@@ -534,7 +550,9 @@ Set flags at import time and log warnings when optional dependencies are missing
 **Historical audit (2026-07-25):** `src/med_research/web/main.py:83-101` mounted 16 `StaticFiles` directories from the project root's legacy v1 directories:
 ```python
 app.mount("/static/adverse_events", StaticFiles(directory=str(REPO_ROOT / "adverse_events")))
-app.mount("/static/biomarker_discovery", StaticFiles(directory=str(REPO_ROOT / "biomarker_discovery")))
+app.mount(
+    "/static/biomarker_discovery", StaticFiles(directory=str(REPO_ROOT / "biomarker_discovery"))
+)
 # ... 14 more legacy paths
 ```
 
@@ -644,7 +662,7 @@ Serve only v2 output from `src/med_research/pipeline/*/data/` directories. Remov
 
 ### 22. Integration Tests — Zero Organized Integration Tests
 
-> **Substantially complete 2026-08-07.** `tests/integration/` holds CLI subprocess smokes (`test_cli_smoke.py`), pipeline E2E smoke (`test_pipeline_e2e.py`), and auto-marked `integration` tests via `conftest.py`. Evidence gatherer tests use `responses`-based HTTP mocks (`tests/evidence_http_fixtures.py`). `make test-integration` / `make test-offline` targets run suites independently. Remaining gaps: `unit` marker still auto-applied rather than explicit on most tests; full KG→all-modules→report E2E not yet automated. **2026-08-08:** added a `network` marker (registered in `pyproject.toml`) for tests that require live external APIs; the RCSB-downloading docking receptor-prep test is tagged `network` and excluded from the PR docking gate, which runs the fast synthetic prep tests on every push. The `unit`-explicit and E2E gaps remain open.
+> **Resolved 2026-08-11.** `tests/integration/` holds CLI smokes, full-pipeline E2E (`test_full_pipeline_e2e.py` with sle artifact gate and mocked HTTP), execute-module contracts, and scheduler integration tests. Fast tests declare `@pytest.mark.unit` explicitly; `make test-offline` runs `-m "unit and not network"`. RA GWAS skips replaced with coverage assertions. API behavioral tests cover synergy, biomarker, expression, evidence gather, and LLM extract routes in `test_web_api.py`. Evidence gatherer tests use `responses`-based HTTP mocks.
 
 **Historical audit (2026-07-25):** ~718 total tests. ~628 pure unit tests. ~90 tests with integration-like behavior but **not marked, not separated, not independently runnable.**
 
@@ -671,96 +689,37 @@ Serve only v2 output from `src/med_research/pipeline/*/data/` directories. Remov
 
 ### 23. `time.sleep()` Rate Limiting Without Jitter
 
-**Current state:** 14 `time.sleep()` calls across the codebase use fixed intervals:
-- `cli.py:507` — 0.3s between pipeline steps
-- `gwas.py:97,135,195,295,550` — GWAS API rate limiting
-- `tracker.py:129` — ClinicalTrials.gov rate limiting
-- `geo.py:139,204` — GEO API rate limiting
-- `miner.py:131,231,258` — PubMed rate limiting
-- `monitor.py:451` — Evidence monitor polling
-- `bioinformatics_service.py:50` — Web service polling
-
-**What this means:**
-- Fixed intervals cause thundering herd problems if multiple processes run.
-- No adaptation to API response headers (e.g., `Retry-After`, `X-RateLimit-Reset`).
-- Competitive API clients with jitter get priority over fixed-interval clients.
-
-**Recommended approach:**
-Replace with exponential backoff + jitter, respecting `Retry-After` headers where available.
-
-**Estimated effort:** Low (add backoff utility, update ~14 call sites)
+> **Resolved 2026-08-11.** `rate_limiter.rate_limited_sleep()` / `backoff_sleep()` and `exceptions.retry_with_backoff()` replace fixed-interval sleeps across GWAS, PubMed, GEO, ClinicalTrials.gov, PPI, and evidence gatherer call sites, honoring `Retry-After` where available.
 
 ---
 
 ### 24. Missing Input Validation in Web API
 
-**Current state:**
-- Query parameters lack length/pattern validation: `src/med_research/web/routers/kg.py:42` accepts `q: str` with no `min_length` or `max_length`.
-- No request body size limits configured — arbitrary payloads accepted.
-- WebSocket job IDs not validated as UUIDs (`jobs.py:116-117`) — any string accepted.
-
-**Recommended approach:**
-1. Add `min_length=1`, `max_length=500` to search queries.
-2. Add `Request` body size middleware (e.g., 10 MB limit).
-3. Validate job_id as UUID format.
-
-**Estimated effort:** Low (adding validation decorators/parameters)
+> **Resolved 2026-08-11.** KG search queries enforce `min_length`/`max_length`; job IDs are validated as UUIDs; `RequestBodySizeLimitMiddleware` caps bodies at 10 MB in `web/main.py`.
 
 ---
 
 ### 25. `ruff.toml` B008 Suppressed Project-Wide
 
-**Current state:** `ruff.toml:18` ignores `B008` (do not perform function calls in argument defaults). This masks risky patterns like mutable default arguments.
-
-**Recommended approach:**
-Enable B008. Fix specific cases with `None` sentinels and factory patterns.
-
-**Estimated effort:** Low (enable rule, fix ~5 cases)
+> **Resolved 2026-08-07.** B008 is enabled; risky default-argument patterns were fixed with `None` sentinels.
 
 ---
 
 ### 26. Subprocess Tests Don't Provide Coverage
 
-**Current state:** 14 tests across 10 files call `subprocess.run(["med-research", ...])` to exercise CLI. Coverage tools can't track code executed in subprocesses.
-
-**Recommended approach:**
-Replace with direct `import` calls and `monkeypatch` for CLI entry points.
-
-**Estimated effort:** Low (refactoring 14 test invocations)
+> **Resolved 2026-08-11.** Docking `vina_setup` and adverse-events profiler CLI tests invoke handlers directly via `cli_helpers.run_cli_handler` / in-process `main()`. `test_check_imports.py` intentionally keeps subprocess to audit `scripts/check_imports.py` as an isolated entrypoint (documented in module docstring).
 
 ---
 
 ### 27. Stale Documentation Files
 
-**Current state:**
-- Root `main.py` (967 lines) has docstring referencing "Lupus Research Platform" and old usage patterns that no longer work.
-- Root `index.html` branded "Lupus Research Platform" but v2 is multi-disease.
-- `lupus_research.md`, `exa_ai_research.md` are v1 docs at root.
-
-**Recommended approach:**
-- Replace `main.py` with a one-line wrapper calling `med_research.cli.main()` or delete.
-- Rebrand `index.html` to "Medical Research Platform."
-- Archive or delete v1 markdown docs.
-
-**Estimated effort:** Low (file updates/deletions)
+> **Resolved 2026-08-11.** Root `main.py` is a thin `med_research.cli.main()` wrapper; `index.html` roadmap and footer links point at the live v2 dashboard; `ruff.toml` header uses Medical Research Platform branding.
 
 ---
 
 ### 28. WebSocket Error Handler Swallows All Exceptions
 
-**Current state:** `src/med_research/web/routers/jobs.py:176-185`:
-```python
-with suppress(Exception):  # catches ALL including KeyboardInterrupt
-    ...
-```
-
-**What this means:**
-`Ctrl+C` (KeyboardInterrupt) and `SystemExit` are silently suppressed, preventing clean shutdown.
-
-**Recommended approach:**
-Catch specific expected exceptions, not `Exception`. Let `KeyboardInterrupt` and `SystemExit` propagate.
-
-**Estimated effort:** Low (one block change)
+> **Resolved 2026-08-08.** `suppress(Exception)` removed from `jobs.py`; only expected disconnect/cancel paths are caught so `KeyboardInterrupt` and `SystemExit` propagate.
 
 ---
 
@@ -809,7 +768,7 @@ def load_kg_genes() -> dict:           def load_kg_genes() -> dict[str, GeneDict
 
 ### 31. Async/Concurrent Pipeline — Sequential I/O-Bound Steps
 
-> **Mitigated 2026-08-07.** `scheduler.py` derives topological levels from adapter `depends_on` metadata and `run-all --parallel` executes independent levels via `ThreadPoolExecutor`. Sequential mode remains the default. Remaining gap: no async I/O within individual modules; parallelism is module-level only.
+> **Accepted limitation 2026-08-11.** Module-level parallelism via `scheduler.py` and `run-all --parallel` is the supported model. Per-module async HTTP (concurrent GWAS/PubMed/GEO fetches inside a single adapter) is deferred as enhancement work, not debt.
 
 **Historical audit (2026-07-25):** CLI pipeline (`cli.py:500-507`) ran all steps sequentially in a `for` loop.
 
@@ -827,21 +786,7 @@ Literature mining, GWAS, enrichment, PPI, clinical trials, evidence gathering, g
 
 ### 32. Template-Based Reports — HTML Built with F-strings
 
-**Current state:** 16 HTML reports generated via Python string concatenation/f-strings with inline CSS.
-
-**Problems:**
-- Zero template reuse — every report copy-pastes CSS, header/footer.
-- XSS risk — `escape_html()` used inconsistently.
-- Hard to test individual rendering components.
-- Changing style requires editing 16 Python files.
-
-**Recommended approach:**
-1. Add `jinja2` to dependencies.
-2. Create `src/med_research/templates/` with `base.html`, partials, and per-report templates.
-3. `report.py` functions become `render_report(results, template_name) -> str`.
-4. Jinja2 auto-escapes HTML by default, eliminating XSS risk.
-
-**Estimated effort:** Medium-Low (creating ~9 templates, refactoring 16 report functions)
+> **Resolved 2026-08-11.** All 18 pipeline report modules, including `evidence_workspace/report.py`, render through `render_report()` with Jinja2 templates under `src/med_research/templates/`.
 
 ---
 
@@ -935,6 +880,22 @@ Rebrand to "Medical Research Platform" or generate dynamically per disease.
 **Estimated effort:** Low (HTML updates)
 
 ---
+
+---
+
+## Remaining open
+
+No substantive audit items remain open as of **2026-08-11**. Accepted limitations and out-of-scope enhancements:
+
+| Item | Status | Notes |
+|------|--------|-------|
+| #12 Disease config depth | Mitigated | All seven diseases have curated configs; deeper domain curation is ongoing science, not blocking debt |
+| #15 Error taxonomy | Substantially complete | Residual broad `except Exception` in edge paths only |
+| #19 Progress callbacks | Substantially complete | Long-tail modules without callbacks are low priority |
+| #30 Type hints | Ongoing | `make typecheck` scope expanded; full `-> dict` cleanup is incremental |
+| #31 Per-module async I/O | Accepted limitation | Module-level `--parallel` is sufficient for current scale |
+
+Feature work explicitly **not scheduled** (see `CHANGELOG.md`): live GEO download, multi-disease Vina PDB targets.
 
 ---
 

@@ -1,6 +1,6 @@
 # Disease-Aware Virtual Screening Strategy Refactor Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [x]`) syntax for tracking.
 
 **Goal:** Replace SLE-shaped virtual-screening assumptions with validated, provenance-carrying strategies for all seven disease modules while preserving existing screening APIs.
 
@@ -29,7 +29,7 @@
 - `ScreeningStrategy` fields: `strategy_id`, `disease_id`, `pathway_keywords`, `mechanism_keywords`, `reference_drug_ids`, `weights`, `source`, `curated_inputs`, `inferred_inputs`, `limitations`.
 - `strategy_for_disease` raises `ValueError` for unknown or malformed strategy configuration; it must not substitute SLE.
 
-- [ ] **Step 1: Write failing contract tests**
+- [x] **Step 1: Write failing contract tests**
 
 ```python
 def test_strategy_for_each_disease_is_valid():
@@ -53,17 +53,17 @@ def test_strategy_fingerprint_is_deterministic():
     assert len(strategy_fingerprint(strategy)) == 64
 ```
 
-- [ ] **Step 2: Run the focused tests and verify the expected import/configuration failure**
+- [x] **Step 2: Run the focused tests and verify the expected import/configuration failure**
 
 Run: `PYTHONPATH=src python -m pytest tests/test_virtual_screening_strategy.py -q`
 
 Expected: FAIL because the strategy module and config contract do not yet exist.
 
-- [ ] **Step 3: Implement the contract**
+- [x] **Step 3: Implement the contract**
 
 Use a frozen dataclass. Require non-empty disease ID, strategy ID, pathway and mechanism vocabularies, normalized weights summing to 1, and a non-empty source. Resolve the strategy from `Disease(disease_id).get_screening_profile()`, copy only active-disease configuration, and compute a SHA-256 fingerprint over canonical JSON.
 
-- [ ] **Step 4: Run the focused tests**
+- [x] **Step 4: Run the focused tests**
 
 Run: `PYTHONPATH=src python -m pytest tests/test_virtual_screening_strategy.py -q`
 
@@ -90,32 +90,35 @@ Expected: The tests pass once the seven configs are added in Task 2; until then,
 - `SCREENING_PROFILE` must provide `strategy_id`, `pathway_keywords`, `mechanism_keywords`, `reference_drug_ids`, `weights`, `source`, `curated_inputs`, `inferred_inputs`, and `limitations`.
 - Strategy vocabularies are derived from each disease’s pathway names and known mechanism/category terms; reference IDs must be filtered to IDs present in that disease’s `drugs.json`.
 
-- [ ] **Step 1: Add failing coverage assertions**
+- [x] **Step 1: Add failing coverage assertions**
 
 ```python
 @pytest.mark.parametrize("disease_id", DISEASES)
 def test_screening_strategy_is_full_for_every_disease(disease_id):
     from med_research.diseases.coverage import module_coverage
-    result = module_coverage(disease_id, "screening", ("genes", "drugs", "pathways", "screening_profile"))
+
+    result = module_coverage(
+        disease_id, "screening", ("genes", "drugs", "pathways", "screening_profile")
+    )
     assert result.status == "ready"
     assert result.level == "full"
 ```
 
-- [ ] **Step 2: Run the focused coverage test and verify non-SLE screening is currently blocked**
+- [x] **Step 2: Run the focused coverage test and verify non-SLE screening is currently blocked**
 
 Run: `PYTHONPATH=src python -m pytest tests/test_multidisease_coverage.py -q`
 
 Expected: The new parametrized screening assertion fails for the six non-SLE diseases because `screening_profile` is missing.
 
-- [ ] **Step 3: Add the seven configuration dictionaries**
+- [x] **Step 3: Add the seven configuration dictionaries**
 
 Use disease pathway names and categories already present in each disease module. Use transparent heuristic weights, initially preserving the existing composite dimensions while allowing disease-specific emphasis. Mark mechanism matching as inferred and include limitations explaining that scores are not experimental binding affinity.
 
-- [ ] **Step 4: Remove the SLE-only implicit marker in `Disease.get_screening_profile()`**
+- [x] **Step 4: Remove the SLE-only implicit marker in `Disease.get_screening_profile()`**
 
 Return only explicit configuration. A missing `SCREENING_PROFILE` must return `{}` for every disease, including SLE, unless its config explicitly declares the strategy.
 
-- [ ] **Step 5: Run coverage and contract tests**
+- [x] **Step 5: Run coverage and contract tests**
 
 Run: `PYTHONPATH=src python -m pytest tests/test_multidisease_coverage.py tests/test_virtual_screening_strategy.py -q`
 
@@ -137,11 +140,15 @@ Expected: All seven disease screening coverage checks pass.
 - `compute_novelty_score` uses active disease display name and strategy reference IDs.
 - `compute_composite_score(scores, weights=None)` accepts optional strategy weights and validates normalized weights.
 
-- [ ] **Step 1: Add failing disease-isolation tests**
+- [x] **Step 1: Add failing disease-isolation tests**
 
 ```python
 def test_target_complementarity_uses_active_disease_vocabulary():
-    gene = {"id": "IL23R", "category": "IL-23 / Th17 Axis", "function": "mucosal cytokine signaling"}
+    gene = {
+        "id": "IL23R",
+        "category": "IL-23 / Th17 Axis",
+        "function": "mucosal cytokine signaling",
+    }
     compound = {"mechanism": "IL-23 / Th17 inhibitor", "target": "IL23R", "category": "IBD therapy"}
     ibd = compute_target_complementarity(compound, gene, disease_id="ibd")
     sle = compute_target_complementarity(compound, gene, disease_id="sle")
@@ -149,27 +156,45 @@ def test_target_complementarity_uses_active_disease_vocabulary():
 
 
 def test_composite_score_accepts_strategy_weights():
-    scores = {"binding_estimate": 8, "druglikeness": 8, "target_complementarity": 8, "similarity_score": 8, "novelty_score": 8}
-    assert compute_composite_score(scores, {"binding_estimate": .1, "druglikeness": .1, "target_complementarity": .5, "similarity_score": .2, "novelty_score": .1}) == 8.0
+    scores = {
+        "binding_estimate": 8,
+        "druglikeness": 8,
+        "target_complementarity": 8,
+        "similarity_score": 8,
+        "novelty_score": 8,
+    }
+    assert (
+        compute_composite_score(
+            scores,
+            {
+                "binding_estimate": 0.1,
+                "druglikeness": 0.1,
+                "target_complementarity": 0.5,
+                "similarity_score": 0.2,
+                "novelty_score": 0.1,
+            },
+        )
+        == 8.0
+    )
 ```
 
-- [ ] **Step 2: Run the focused tests and verify the old hardcoded scorer fails the disease-isolation assertion**
+- [x] **Step 2: Run the focused tests and verify the old hardcoded scorer fails the disease-isolation assertion**
 
 Run: `PYTHONPATH=src python -m pytest tests/test_virtual_screening_strategy.py -q`
 
 Expected: FAIL because the current scorer recognizes only its hardcoded SLE category map.
 
-- [ ] **Step 3: Implement strategy-driven scorer helpers**
+- [x] **Step 3: Implement strategy-driven scorer helpers**
 
 Tokenize case-insensitively, normalize punctuation, score exact and multi-token keyword matches, cap complementarity at 10, and preserve the current function behavior for SLE by placing its existing vocabulary in the explicit SLE strategy.
 
 For similarity, resolve reference drug IDs from the strategy and compare against the active disease compound library; use neutral `3.0` only when no active-disease reference exists, and record that limitation in result metadata rather than silently treating it as evidence.
 
-- [ ] **Step 4: Pass strategy weights through `screen_compounds`**
+- [x] **Step 4: Pass strategy weights through `screen_compounds`**
 
 Resolve strategy after coverage validation. Use the strategy for all five dimensions and add `strategy_id`, `strategy_fingerprint`, and `disease_id` to every scored result and the top-level response.
 
-- [ ] **Step 5: Run screening regression tests**
+- [x] **Step 5: Run screening regression tests**
 
 Run: `PYTHONPATH=src python -m pytest tests/test_virtual_screening.py tests/test_virtual_screening_strategy.py -q`
 
@@ -192,7 +217,7 @@ Expected: Existing SLE scoring tests and new disease-isolation tests pass.
 - API `ScreeningResponse` accepts these fields without breaking existing clients.
 - The dashboard shows the strategy identifier/fingerprint in the coverage panel and never renders blocked screening as “Analysis Complete.”
 
-- [ ] **Step 1: Add failing metadata assertions**
+- [x] **Step 1: Add failing metadata assertions**
 
 ```python
 def test_screening_result_has_strategy_provenance():
@@ -202,17 +227,17 @@ def test_screening_result_has_strategy_provenance():
     assert result["coverage"]["status"] == "ready"
 ```
 
-- [ ] **Step 2: Run the test and verify metadata is absent**
+- [x] **Step 2: Run the test and verify metadata is absent**
 
 Run: `PYTHONPATH=src python -m pytest tests/test_virtual_screening_strategy.py -q`
 
 Expected: FAIL on missing strategy metadata.
 
-- [ ] **Step 3: Add metadata to service/model/report/dashboard paths**
+- [x] **Step 3: Add metadata to service/model/report/dashboard paths**
 
 Ensure the service forwards the entire screening metadata contract. Render limitations as explicit research caveats, not as efficacy language. Preserve existing result rows and API field defaults.
 
-- [ ] **Step 4: Run focused API/static tests**
+- [x] **Step 4: Run focused API/static tests**
 
 Run: `PYTHONPATH=src python -m pytest tests/test_multidisease_coverage.py tests/test_web_api.py -q`
 
@@ -228,17 +253,17 @@ Expected: Screening response models and dashboard coverage checks pass when depe
 - Modify: `README.md`
 - Modify: `docs/evidence-workspace.md` only if screening coverage terminology is referenced
 
-- [ ] **Step 1: Add deterministic smoke tests**
+- [x] **Step 1: Add deterministic smoke tests**
 
 For every disease, build its compound library and call `screen_compounds` against one valid disease gene with a small library fixture. Assert `status == "ready"`, `coverage.level == "full"`, matching disease ID, a non-empty strategy fingerprint, bounded scores, and no `lupus` token in non-SLE strategy vocabulary.
 
-- [ ] **Step 2: Run smoke tests**
+- [x] **Step 2: Run smoke tests**
 
 Run: `PYTHONPATH=src python -m pytest tests/test_virtual_screening.py tests/test_multidisease_coverage.py tests/test_virtual_screening_strategy.py -q`
 
 Expected: All targeted tests pass.
 
-- [ ] **Step 3: Update documentation**
+- [x] **Step 3: Update documentation**
 
 Document that virtual screening is strategy-driven, property-based prioritization; list the strategy provenance fields and explain that full coverage means curated strategy inputs exist, not validated efficacy.
 
@@ -249,23 +274,23 @@ Document that virtual screening is strategy-driven, property-based prioritizatio
 **Files:**
 - Review all files changed by Tasks 1–5.
 
-- [ ] **Step 1: Run compile and import checks**
+- [x] **Step 1: Run compile and import checks**
 
 Run: `python -m compileall -q src/med_research tests && PYTHONPATH=src python scripts/check_imports.py && git diff --check`
 
 Expected: compilation succeeds, import audit reports no stale references, and diff check is clean for owned changes.
 
-- [ ] **Step 2: Run the code review agent**
+- [x] **Step 2: Run the code review agent**
 
 Review for SLE fallback leakage, weight errors, malformed profiles, API compatibility, and blocked-result rendering.
 
-- [ ] **Step 3: Run the complete offline suite**
+- [x] **Step 3: Run the complete offline suite**
 
 Run: `PYTHONPATH=src python -m pytest tests/ -m "not slow" -q --tb=short`
 
 Expected: all available offline tests pass. If pytest or project dependencies are unavailable, report the exact environment limitation rather than claiming success.
 
-- [ ] **Step 4: Run final disease coverage verification**
+- [x] **Step 4: Run final disease coverage verification**
 
 Run: `PYTHONPATH=src python -m med_research.cli disease validate --all --strict`
 

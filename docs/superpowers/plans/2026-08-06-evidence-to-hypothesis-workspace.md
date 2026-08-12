@@ -35,11 +35,11 @@
 - Produce `normalize_request(request: ResearchRequest) -> ResearchRequest` and `deduplicate_evidence(records: list[EvidenceRecord]) -> list[EvidenceRecord]`.
 - Use literal source names `pubmed` and `clinical_trials`, candidate types `drugs`, `targets`, and `both`, and `disease_id` default `sle`.
 
-- [ ] Write tests for valid default input, whitespace rejection, invalid dates, unsupported sources/candidate types, bounded `max_evidence`, and JSON round-trip.
-- [ ] Run `pytest tests/test_evidence_workspace_schemas.py -v` and confirm the new tests fail because the package is absent.
-- [ ] Implement the Pydantic models with strict enough validation for the documented contract, default factories for collections, UTC-aware timestamps, and explicit `schema_version`.
-- [ ] Implement identifier-based deduplication in priority order PMID/NCT, DOI, canonical URL; merge missing metadata without dropping provenance/source IDs.
-- [ ] Run the focused schema tests and confirm they pass.
+- [x] Write tests for valid default input, whitespace rejection, invalid dates, unsupported sources/candidate types, bounded `max_evidence`, and JSON round-trip.
+- [x] Run `pytest tests/test_evidence_workspace_schemas.py -v` and confirm the new tests fail because the package is absent.
+- [x] Implement the Pydantic models with strict enough validation for the documented contract, default factories for collections, UTC-aware timestamps, and explicit `schema_version`.
+- [x] Implement identifier-based deduplication in priority order PMID/NCT, DOI, canonical URL; merge missing metadata without dropping provenance/source IDs.
+- [x] Run the focused schema tests and confirm they pass.
 
 ### Task 2: Add source adapter boundary and PubMed/trials adapters
 
@@ -55,12 +55,12 @@
 - Produce `PubMedSource` and `ClinicalTrialsSource` adapters with injectable callables for deterministic fixtures.
 - Default adapters wrap existing project functions rather than duplicating HTTP implementation.
 
-- [ ] Write tests with fixture callables returning PubMed/trial-shaped records and assert normalized IDs, URLs, dates, source kinds, and query context.
-- [ ] Write source-isolation tests where one adapter raises and the other still returns records; assert warnings/status are preserved.
-- [ ] Run the focused source tests and confirm they fail before implementation.
-- [ ] Implement normalization helpers for common dict shapes, native identifiers, snippets, study type, citation metadata, and retrieval timestamps.
-- [ ] Catch ordinary source exceptions at the adapter boundary, return an error `SourceStatus`, and do not catch process-control exceptions.
-- [ ] Run the focused source tests and confirm they pass.
+- [x] Write tests with fixture callables returning PubMed/trial-shaped records and assert normalized IDs, URLs, dates, source kinds, and query context.
+- [x] Write source-isolation tests where one adapter raises and the other still returns records; assert warnings/status are preserved.
+- [x] Run the focused source tests and confirm they fail before implementation.
+- [x] Implement normalization helpers for common dict shapes, native identifiers, snippets, study type, citation metadata, and retrieval timestamps.
+- [x] Catch ordinary source exceptions at the adapter boundary, return an error `SourceStatus`, and do not catch process-control exceptions.
+- [x] Run the focused source tests and confirm they pass.
 
 ### Task 3: Implement deterministic extraction and optional LLM enrichment
 
@@ -76,14 +76,14 @@
 - Produce `enrich_with_llm(records, existing_claims, llm_client=None, model=None) -> ExtractionResult`.
 - Produce `extract_claims(records, disease_id, enable_llm=True, llm_client=None, model=None) -> ExtractionResult`.
 
-- [ ] Write tests that extract known SLE genes, drugs, pathways, support/contradiction polarity, snippets, evidence references, and citations from fixture text.
-- [ ] Write tests for no-client fallback and malformed/unknown-evidence LLM output; assert deterministic claims survive and warnings are recorded.
-- [ ] Write conflict tests for opposite claims about the same subject/context.
-- [ ] Run focused extraction tests and confirm expected red failures.
-- [ ] Implement deterministic matching using existing disease/config entities and existing entity extraction utilities where possible; create claims only with evidence IDs.
-- [ ] Implement validation for LLM claim dictionaries, filtering unsupported entities/relationships/evidence IDs and recording safe warnings.
-- [ ] Compute claim confidence from source/study quality, recency, extraction method, and conflict state; keep component details in the claim.
-- [ ] Run focused extraction tests and confirm green.
+- [x] Write tests that extract known SLE genes, drugs, pathways, support/contradiction polarity, snippets, evidence references, and citations from fixture text.
+- [x] Write tests for no-client fallback and malformed/unknown-evidence LLM output; assert deterministic claims survive and warnings are recorded.
+- [x] Write conflict tests for opposite claims about the same subject/context.
+- [x] Run focused extraction tests and confirm expected red failures.
+- [x] Implement deterministic matching using existing disease/config entities and existing entity extraction utilities where possible; create claims only with evidence IDs.
+- [x] Implement validation for LLM claim dictionaries, filtering unsupported entities/relationships/evidence IDs and recording safe warnings.
+- [x] Compute claim confidence from source/study quality, recency, extraction method, and conflict state; keep component details in the claim.
+- [x] Run focused extraction tests and confirm green.
 
 ### Task 4: Implement explainable drug and target ranking
 
@@ -95,11 +95,11 @@
 - Produce `rank_candidates(records: list[EvidenceRecord], claims: list[Claim], candidate_type: str) -> list[RankedCandidate]`.
 - Produce separate `rank_drugs(...)` and `rank_targets(...)` wrappers.
 
-- [ ] Write tests proving supporting claims increase a candidate score, contradictory claims reduce it, recent/clinical evidence contributes to components, and ties sort deterministically.
-- [ ] Run focused ranking tests and verify red failures.
-- [ ] Implement transparent bounded components for support, contradiction, recency, clinical-trial signal, confidence, and evidence count; include claim/citation IDs and explanation text.
-- [ ] Return no candidates for a type with no claims and never create candidates from unreferenced text.
-- [ ] Run focused ranking tests and confirm green.
+- [x] Write tests proving supporting claims increase a candidate score, contradictory claims reduce it, recent/clinical evidence contributes to components, and ties sort deterministically.
+- [x] Run focused ranking tests and verify red failures.
+- [x] Implement transparent bounded components for support, contradiction, recency, clinical-trial signal, confidence, and evidence count; include claim/citation IDs and explanation text.
+- [x] Return no candidates for a type with no claims and never create candidates from unreferenced text.
+- [x] Run focused ranking tests and confirm green.
 
 ### Task 5: Add knowledge-graph path explanations
 
@@ -113,11 +113,11 @@
 - Produce `build_graph_explanations(candidates: list[RankedCandidate], disease_id: str = "sle", graph=None) -> list[GraphExplanation]`.
 - Explanations must contain candidate ID, path node IDs, edge/relationship labels, status `found` or `no_path_found`, and a reason when absent.
 
-- [ ] Write tests with a small NetworkX fixture covering a valid drug→gene→pathway→disease path, missing node, and no-path cases.
-- [ ] Run focused graph tests and verify red failures.
-- [ ] Implement graph injection for tests and default loading through existing disease-aware KG helpers; use real shortest paths only.
-- [ ] Ensure missing paths are explicit and no textual claim is converted into a fabricated graph edge.
-- [ ] Run focused graph tests and confirm green.
+- [x] Write tests with a small NetworkX fixture covering a valid drug→gene→pathway→disease path, missing node, and no-path cases.
+- [x] Run focused graph tests and verify red failures.
+- [x] Implement graph injection for tests and default loading through existing disease-aware KG helpers; use real shortest paths only.
+- [x] Ensure missing paths are explicit and no textual claim is converted into a fabricated graph edge.
+- [x] Run focused graph tests and confirm green.
 
 ### Task 6: Orchestrate the workspace and assemble reproducibility metadata
 
@@ -131,13 +131,13 @@
 - Produce `build_search_terms(request) -> list[str]`.
 - Produce source status, warnings, LLM status, run timestamps, normalized request/search plan, evidence, claims, rankings, graph explanations, limitations, and manifest.
 
-- [ ] Write a fixture-backed end-to-end test with two source adapters, one graph fixture, deterministic extraction, rankings for both types, and reproducibility metadata.
-- [ ] Write failure tests for PubMed-only success, trials-only success, both-source failure, and LLM-unavailable execution.
-- [ ] Run focused orchestration tests and verify red failures.
-- [ ] Implement independent source execution, deduplication, extraction, ranking, graph explanation, and dossier assembly in the documented order.
-- [ ] Ensure `run_workspace` is deterministic apart from run IDs/timestamps when fixture inputs are supplied.
-- [ ] Export public symbols from `__init__.py`.
-- [ ] Run focused orchestration tests and confirm green.
+- [x] Write a fixture-backed end-to-end test with two source adapters, one graph fixture, deterministic extraction, rankings for both types, and reproducibility metadata.
+- [x] Write failure tests for PubMed-only success, trials-only success, both-source failure, and LLM-unavailable execution.
+- [x] Run focused orchestration tests and verify red failures.
+- [x] Implement independent source execution, deduplication, extraction, ranking, graph explanation, and dossier assembly in the documented order.
+- [x] Ensure `run_workspace` is deterministic apart from run IDs/timestamps when fixture inputs are supplied.
+- [x] Export public symbols from `__init__.py`.
+- [x] Run focused orchestration tests and confirm green.
 
 ### Task 7: Render reproducible JSON and HTML dossiers
 
@@ -150,21 +150,21 @@
 - Produce `render_html(dossier: EvidenceDossier) -> str`.
 - Produce `write_json(dossier, path)` and `write_html(dossier, path)`.
 
-- [ ] Write tests for JSON provenance preservation, HTML escaping, supporting/contradicting sections, citations, confidence display, graph notices, and disclaimer.
-- [ ] Run focused report tests and verify red failures.
-- [ ] Implement pure renderers that never recompute rankings or perform network access; HTML must be self-contained and print-friendly.
-- [ ] Include the exact safety copy: `For research purposes only. This computational prioritization is not medical advice and requires experimental and clinical validation.`
-- [ ] Run focused report tests and confirm green.
+- [x] Write tests for JSON provenance preservation, HTML escaping, supporting/contradicting sections, citations, confidence display, graph notices, and disclaimer.
+- [x] Run focused report tests and verify red failures.
+- [x] Implement pure renderers that never recompute rankings or perform network access; HTML must be self-contained and print-friendly.
+- [x] Include the exact safety copy: `For research purposes only. This computational prioritization is not medical advice and requires experimental and clinical validation.`
+- [x] Run focused report tests and confirm green.
 
 ### Task 8: Run review, lint, and regression verification
 
 **Files:**
 - Modify only if needed after review: workspace package/tests
 
-- [ ] Run the complete new test slice: `pytest tests/test_evidence_workspace*.py -v`.
-- [ ] Run relevant existing tests: `pytest tests/test_evidence_gatherer.py tests/test_clinical_trials.py tests/test_knowledge_graph.py -v`.
-- [ ] Run `ruff check src/med_research/pipeline/evidence_workspace tests/test_evidence_workspace*.py`.
-- [ ] Run `ruff format --check` on the new package/tests.
-- [ ] Spawn a code reviewer to inspect the implementation, provenance guarantees, failure isolation, and safety wording.
-- [ ] Fix any verified review findings and rerun affected tests/lint.
-- [ ] Report exact verification results and list any unrelated pre-existing working-tree changes left untouched.
+- [x] Run the complete new test slice: `pytest tests/test_evidence_workspace*.py -v`.
+- [x] Run relevant existing tests: `pytest tests/test_evidence_gatherer.py tests/test_clinical_trials.py tests/test_knowledge_graph.py -v`.
+- [x] Run `ruff check src/med_research/pipeline/evidence_workspace tests/test_evidence_workspace*.py`.
+- [x] Run `ruff format --check` on the new package/tests.
+- [x] Spawn a code reviewer to inspect the implementation, provenance guarantees, failure isolation, and safety wording.
+- [x] Fix any verified review findings and rerun affected tests/lint.
+- [x] Report exact verification results and list any unrelated pre-existing working-tree changes left untouched.
