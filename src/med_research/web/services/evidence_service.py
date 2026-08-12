@@ -1,7 +1,6 @@
 """Evidence Gatherer service layer."""
 
-from typing import Any, cast
-
+from med_research.pipeline.results import EvidenceGatherResult
 from med_research.web.services.registry_service import dispatch_sync_module
 
 
@@ -11,17 +10,17 @@ def run_evidence_gather(
     max_per_source: int = 20,
     use_cache: bool = True,
     disease_id: str | None = None,
-) -> dict:
+) -> EvidenceGatherResult:
     """Run the evidence gatherer via the evidence_gather registry adapter."""
     disease_id = disease_id or "sle"
-    result = cast(dict[str, Any], dispatch_sync_module(
+    result = dispatch_sync_module(
         "evidence_gather",
         disease_id,
         query=query,
         sources=sources,
         max_per_source=max_per_source,
         use_cache=use_cache,
-    ))
+    )
     if "all_results" in result and "results" not in result:
         result["results"] = result["all_results"]
     return result

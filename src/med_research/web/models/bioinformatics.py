@@ -6,6 +6,7 @@ from pydantic import BaseModel
 
 # ── GWAS ───────────────────────────────────────────────────────────────────
 
+
 class GWASGeneHit(BaseModel):
     gene: str
     n_studies: int
@@ -41,6 +42,7 @@ class GWASRequest(BaseModel):
 
 # ── Enrichment ─────────────────────────────────────────────────────────────
 
+
 class EnrichmentTerm(BaseModel):
     term: str
     p_value: float
@@ -74,6 +76,7 @@ class EnrichmentRequest(BaseModel):
 
 # ── PPI ────────────────────────────────────────────────────────────────────
 
+
 class HubProtein(BaseModel):
     symbol: str
     gene_id: Optional[str] = None
@@ -105,6 +108,7 @@ class PPIRequest(BaseModel):
 
 
 # ── Combined ───────────────────────────────────────────────────────────────
+
 
 class CombinedBioResponse(BaseModel):
     gwas: Optional[GWASResponse] = None

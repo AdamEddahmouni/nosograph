@@ -41,13 +41,24 @@ class ErrorResponse(BaseModel):
 # ── Platform Stats ─────────────────────────────────────────────────────────
 
 
+class CoverageSummary(BaseModel):
+    full: int = 0
+    partial: int = 0
+    unsupported: int = 0
+
+
 class PlatformStats(BaseModel):
+    disease_id: str = "sle"
+    disease_name: str = ""
     kg_nodes: int = 0
     kg_edges: int = 0
     genes: int = 0
     drugs: int = 0
     pathways: int = 0
     candidates: int = 0
+    modules: int = 0
+    diseases: int = 0
+    coverage_summary: CoverageSummary = Field(default_factory=CoverageSummary)
 
 
 # ── Diseases Registry ─────────────────────────────────────────────────────

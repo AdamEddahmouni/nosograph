@@ -5,6 +5,7 @@ from pydantic import BaseModel, Field
 
 class BiomarkerResult(BaseModel):
     """Single biomarker result."""
+
     gene_id: str
     gene_name: str
     category: str = ""
@@ -20,6 +21,7 @@ class BiomarkerResult(BaseModel):
 
 class BiomarkerResponse(BaseModel):
     """Response model for biomarker discovery."""
+
     biomarkers: list[BiomarkerResult]
     total_genes: int
     avg_score: float = Field(0.0)

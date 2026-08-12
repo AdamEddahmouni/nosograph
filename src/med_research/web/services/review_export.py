@@ -13,7 +13,9 @@ def _markdown(value: Any) -> str:
     return str(value or "").replace("\r", " ").replace("\n", " ").strip()
 
 
-def _candidate_reviews(run: dict[str, Any], reviews: list[dict[str, Any]]) -> dict[tuple[str, str], dict[str, Any]]:
+def _candidate_reviews(
+    run: dict[str, Any], reviews: list[dict[str, Any]]
+) -> dict[tuple[str, str], dict[str, Any]]:
     return {(item["candidate_type"], item["candidate_id"]): item for item in reviews}
 
 
@@ -87,13 +89,27 @@ def _citations_csv(dossier: dict[str, Any]) -> str:
     output = io.StringIO()
     writer = csv.DictWriter(
         output,
-        fieldnames=["citation_key", "source", "native_id", "doi", "title", "published_date", "url", "snippet"],
+        fieldnames=[
+            "citation_key",
+            "source",
+            "native_id",
+            "doi",
+            "title",
+            "published_date",
+            "url",
+            "snippet",
+        ],
         lineterminator="\n",
     )
     writer.writeheader()
     seen: set[str] = set()
     for index, evidence in enumerate(dossier.get("evidence", []), start=1):
-        citation_key = evidence.get("native_id") or evidence.get("doi") or evidence.get("evidence_id") or f"evidence-{index}"
+        citation_key = (
+            evidence.get("native_id")
+            or evidence.get("doi")
+            or evidence.get("evidence_id")
+            or f"evidence-{index}"
+        )
         if citation_key in seen:
             continue
         seen.add(citation_key)
@@ -125,7 +141,9 @@ def build_review_bundle(
         "citations.csv": _citations_csv(dossier),
         "dossier.json": json.dumps(dossier, indent=2, ensure_ascii=False, sort_keys=True),
         "reviews.json": json.dumps(reviews, indent=2, ensure_ascii=False, sort_keys=True),
-        "review-events.json": json.dumps(review_events or [], indent=2, ensure_ascii=False, sort_keys=True),
+        "review-events.json": json.dumps(
+            review_events or [], indent=2, ensure_ascii=False, sort_keys=True
+        ),
         "provenance.json": json.dumps(provenance, indent=2, ensure_ascii=False, sort_keys=True),
     }
     archive = io.BytesIO()

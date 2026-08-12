@@ -67,7 +67,9 @@ def build_workspace_graph(
         )
 
     evidence_by_id: dict[str, dict[str, Any]] = {
-        item.get("evidence_id", ""): item for item in dossier.get("evidence", []) if item.get("evidence_id")
+        item.get("evidence_id", ""): item
+        for item in dossier.get("evidence", [])
+        if item.get("evidence_id")
     }
     citation_lookup: dict[str, str] = {}
 
@@ -200,7 +202,9 @@ def build_workspace_graph(
                     add_edge(candidate_node, citation, "citation", "Candidate citation")
 
             if review and decision != "unreviewed":
-                decision_node = _node_id("decision", f"{candidate_type}:{candidate_id}:{researcher_id}")
+                decision_node = _node_id(
+                    "decision", f"{candidate_type}:{candidate_id}:{researcher_id}"
+                )
                 add_node(
                     decision_node,
                     "decision",
@@ -273,12 +277,16 @@ def build_workspace_graph(
                 graph_node,
                 node_type,
                 pathway.get("name", label) if pathway else label,
-                subtitle="Knowledge-graph pathway" if node_type == "pathway" else "Knowledge-graph node",
+                subtitle="Knowledge-graph pathway"
+                if node_type == "pathway"
+                else "Knowledge-graph node",
                 description=pathway.get("description", "") if pathway else "",
                 metadata={"node_id": path_id, "path_position": index, "source": "knowledge graph"},
             )
             relationships = explanation.get("relationship_labels", [])
-            relationship = relationships[index - 1] if index - 1 < len(relationships) else "RELATED_TO"
+            relationship = (
+                relationships[index - 1] if index - 1 < len(relationships) else "RELATED_TO"
+            )
             add_edge(previous, graph_node, "knowledge_graph", relationship)
             previous = graph_node
 

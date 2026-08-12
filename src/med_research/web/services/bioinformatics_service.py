@@ -96,20 +96,24 @@ def run_enrichment(
     for lib_name, result in enrichment_results.items():
         terms = []
         for t in result.get("terms", []):
-            terms.append({
-                "term": t["term"],
-                "p_value": t["p_value"],
-                "adj_p_value": t["adj_p_value"],
-                "odds_ratio": t["odds_ratio"],
-                "combined_score": t["combined_score"],
-                "genes": t.get("genes", []),
-                "overlap": t.get("overlap", ""),
-            })
-        libraries.append({
-            "library": result.get("library", lib_name),
-            "terms": terms,
-            "total_significant": result.get("total_significant", 0),
-        })
+            terms.append(
+                {
+                    "term": t["term"],
+                    "p_value": t["p_value"],
+                    "adj_p_value": t["adj_p_value"],
+                    "odds_ratio": t["odds_ratio"],
+                    "combined_score": t["combined_score"],
+                    "genes": t.get("genes", []),
+                    "overlap": t.get("overlap", ""),
+                }
+            )
+        libraries.append(
+            {
+                "library": result.get("library", lib_name),
+                "terms": terms,
+                "total_significant": result.get("total_significant", 0),
+            }
+        )
 
     reporter("Enrichment analysis complete", 3, 3)
     return {
@@ -144,9 +148,7 @@ def run_ppi(
     hub_scores = raw.get("hub_scores", [])
     crossref = raw.get("crossref", {})
     graph = raw.get("graph", {})
-    seed_genes = sum(
-        1 for node in graph.get("nodes", []) if node.get("is_seed")
-    )
+    seed_genes = sum(1 for node in graph.get("nodes", []) if node.get("is_seed"))
 
     if raw.get("status") == "blocked" or not hub_scores:
         reporter("PPI analysis complete", 3, 3)
@@ -165,17 +167,19 @@ def run_ppi(
     reporter("Formatting PPI response", 2, 3)
     top_hubs = []
     for h in hub_scores[:20]:
-        top_hubs.append({
-            "symbol": h["symbol"],
-            "gene_id": h.get("gene_id"),
-            "hub_score": h["hub_score"],
-            "degree": h["degree"],
-            "degree_centrality": h["degree_centrality"],
-            "betweenness_centrality": h["betweenness_centrality"],
-            "is_disease_gene": h["is_lupus_gene"],
-            "is_lupus_gene": h["is_lupus_gene"],
-            "is_seed": h["is_seed"],
-        })
+        top_hubs.append(
+            {
+                "symbol": h["symbol"],
+                "gene_id": h.get("gene_id"),
+                "hub_score": h["hub_score"],
+                "degree": h["degree"],
+                "degree_centrality": h["degree_centrality"],
+                "betweenness_centrality": h["betweenness_centrality"],
+                "is_disease_gene": h["is_lupus_gene"],
+                "is_lupus_gene": h["is_lupus_gene"],
+                "is_seed": h["is_seed"],
+            }
+        )
 
     reporter("PPI analysis complete", 3, 3)
     return {

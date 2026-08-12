@@ -119,11 +119,15 @@ class RedisRateLimitStore(RateLimitStore):
     """
 
     def __init__(self, client: redis.Redis | None = None, url: str | None = None) -> None:
-        self._redis = client if client is not None else redis.Redis.from_url(
-            url or REDIS_RATE_LIMIT_URL,
-            socket_connect_timeout=1.0,
-            socket_timeout=1.0,
-            decode_responses=True,
+        self._redis = (
+            client
+            if client is not None
+            else redis.Redis.from_url(
+                url or REDIS_RATE_LIMIT_URL,
+                socket_connect_timeout=1.0,
+                socket_timeout=1.0,
+                decode_responses=True,
+            )
         )
         self._script = self._redis.register_script(_SLIDING_WINDOW_LUA)
 
@@ -160,5 +164,5 @@ def create_rate_limit_store(url: str | None = None) -> RateLimitStore:
         )
         client.ping()
         return RedisRateLimitStore(client=client)
-    except Exception:
+    except (redis.RedisError, OSError, ConnectionError, TimeoutError, ValueError, TypeError):
         return InMemoryRateLimitStore()

@@ -22,6 +22,7 @@ router = APIRouter(tags=["Analysis"])
 
 # ── Literature Mining ──────────────────────────────────────────────────────
 
+
 @router.get("/api/literature", response_model=LiteratureResponse)
 async def literature_mining(
     max_articles: int = Query(30, ge=1, le=100, description="Max articles"),
@@ -40,6 +41,7 @@ async def literature_mining(
 
 # ── Virtual Screening ──────────────────────────────────────────────────────
 
+
 @router.get("/api/screening", response_model=ScreeningResponse)
 async def virtual_screening(
     gene_id: str | None = Query(None, description="Screen against a specific gene"),
@@ -53,10 +55,13 @@ async def virtual_screening(
 
 # ── Clinical Trials ────────────────────────────────────────────────────────
 
+
 @router.get("/api/trials", response_model=TrialsResponse)
 async def clinical_trials(
     max_trials: int = Query(100, ge=1, le=200, description="Max trials"),
-    query: str | None = Query(None, min_length=1, max_length=500, description="ClinicalTrials.gov search query"),
+    query: str | None = Query(
+        None, min_length=1, max_length=500, description="ClinicalTrials.gov search query"
+    ),
     no_cache: bool = Query(False, description="Skip cache"),
     disease_id: str = Query("sle", description="Disease ID"),
 ) -> dict[str, Any]:
@@ -70,6 +75,7 @@ async def clinical_trials(
 
 
 # ── ML Predictor ───────────────────────────────────────────────────────────
+
 
 @router.get("/api/ml/predict", response_model=MLResponse)
 async def ml_predictor(

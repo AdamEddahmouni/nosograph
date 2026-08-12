@@ -78,8 +78,15 @@ def verify_session_token(token: str, *, now: int | None = None) -> str | None:
         if int(payload.get("exp", 0)) < current:
             return None
         return _validate_user(str(payload["sub"]))
-    except (ValueError, KeyError, TypeError, json.JSONDecodeError, UnicodeDecodeError,
-            binascii.Error, HTTPException):
+    except (
+        ValueError,
+        KeyError,
+        TypeError,
+        json.JSONDecodeError,
+        UnicodeDecodeError,
+        binascii.Error,
+        HTTPException,
+    ):
         return None
 
 

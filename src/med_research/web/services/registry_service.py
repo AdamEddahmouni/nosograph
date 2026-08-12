@@ -241,8 +241,7 @@ def resolve_module_id(route_id: str) -> str:
     if route_id in registered:
         return route_id
     raise KeyError(
-        f"Unknown job module '{route_id}'. "
-        f"Known routes: {', '.join(sorted(JOB_MODULE_IDS))}"
+        f"Unknown job module '{route_id}'. Known routes: {', '.join(sorted(JOB_MODULE_IDS))}"
     )
 
 
@@ -276,14 +275,10 @@ def require_runnable_coverage(coverage: ModuleCoverage, module_id: str = "") -> 
     if coverage.limitations:
         detail = coverage.limitations[0]
     elif coverage.missing_inputs:
-        detail = (
-            f"Required curated inputs are missing: {', '.join(coverage.missing_inputs)}."
-        )
+        detail = f"Required curated inputs are missing: {', '.join(coverage.missing_inputs)}."
     else:
         label = module_id or coverage.module
-        detail = (
-            f"Module '{label}' is not available for disease '{coverage.disease_id}'."
-        )
+        detail = f"Module '{label}' is not available for disease '{coverage.disease_id}'."
     raise ModuleNotAvailableError(detail)
 
 
@@ -291,11 +286,7 @@ def require_module_data(result: PipelineRunResult[Any], module_id: str) -> Any:
     """Return dispatch data or raise :class:`ModuleNotAvailableError`."""
     if result.success:
         return result.data
-    message = (
-        result.errors[0]
-        if result.errors
-        else f"Module '{module_id}' is not available"
-    )
+    message = result.errors[0] if result.errors else f"Module '{module_id}' is not available"
     raise ModuleNotAvailableError(message)
 
 
@@ -316,7 +307,6 @@ def dispatch_sync_module(
         **opts,
     )
     return require_module_data(result, module_id)
-
 
 
 def report_module(
@@ -429,11 +419,7 @@ def run_all_pipeline(
             **opts,
         )
         if not result.success:
-            message = (
-                result.errors[0]
-                if result.errors
-                else f"Module '{module_id}' failed"
-            )
+            message = result.errors[0] if result.errors else f"Module '{module_id}' failed"
             errors.append({"module_id": module_id, "error": message})
             raise ModuleNotAvailableError(message)
         _finalize_run_all_module(module_id, disease_id, result, report_paths)

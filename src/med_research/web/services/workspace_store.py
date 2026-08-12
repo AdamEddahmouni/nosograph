@@ -27,9 +27,7 @@ def _candidate_evidence_ids(
     dossier: dict[str, Any], candidate_type: str, candidate_id: str
 ) -> set[str]:
     rankings = dossier.get(f"{candidate_type}_rankings", [])
-    candidate = next(
-        (item for item in rankings if item.get("candidate_id") == candidate_id), None
-    )
+    candidate = next((item for item in rankings if item.get("candidate_id") == candidate_id), None)
     if not candidate:
         return set()
     claims_by_id = {claim.get("claim_id"): claim for claim in dossier.get("claims", [])}
@@ -75,9 +73,7 @@ class WorkspaceRunStore:
         table: str,
         columns: dict[str, str],
     ) -> None:
-        existing = {
-            row[1] for row in connection.execute(f"PRAGMA table_info({table})").fetchall()
-        }
+        existing = {row[1] for row in connection.execute(f"PRAGMA table_info({table})").fetchall()}
         for name, definition in columns.items():
             if name not in existing:
                 connection.execute(f"ALTER TABLE {table} ADD COLUMN {name} {definition}")
@@ -243,8 +239,7 @@ class WorkspaceRunStore:
         legacy_reviews = False
         legacy_events = False
         review_columns = {
-            row[1]
-            for row in connection.execute("PRAGMA table_info(workspace_reviews)").fetchall()
+            row[1] for row in connection.execute("PRAGMA table_info(workspace_reviews)").fetchall()
         }
         if review_columns and "researcher_id" not in review_columns:
             connection.execute("DROP INDEX IF EXISTS idx_workspace_reviews_candidate")
@@ -426,9 +421,7 @@ class WorkspaceRunStore:
         result["request"] = serialize_workspace_request(request)
         result["request_schema_version"] = WORKSPACE_REQUEST_SCHEMA_VERSION
 
-        dossier_payload = (
-            json.loads(result["dossier_json"]) if result["dossier_json"] else None
-        )
+        dossier_payload = json.loads(result["dossier_json"]) if result["dossier_json"] else None
         dossier_needs_migration = False
         if dossier_payload is not None:
             dossier_needs_migration = (
@@ -524,9 +517,7 @@ class WorkspaceRunStore:
                     request_payload = json.loads(row["request_json"])
                     request_version = request_payload.get("schema_version") or "legacy"
                     request = migrate_workspace_request(request_payload)
-                    request_json = json.dumps(
-                        serialize_workspace_request(request), sort_keys=True
-                    )
+                    request_json = json.dumps(serialize_workspace_request(request), sort_keys=True)
                     request_needs_migration = (
                         request_version != WORKSPACE_REQUEST_SCHEMA_VERSION
                         or row["request_schema_version"] != WORKSPACE_REQUEST_SCHEMA_VERSION
@@ -578,7 +569,7 @@ class WorkspaceRunStore:
                             item["would_migrate"] = True
                     else:
                         report["unchanged"] += 1
-                except Exception as exc:  # noqa: BLE001 - report corrupt rows individually
+                except (OSError, ValueError, KeyError, TypeError, json.JSONDecodeError) as exc:
                     item["error"] = str(exc)
                     report["errors"] += 1
                 report["runs"].append(item)
@@ -717,9 +708,7 @@ class WorkspaceRunStore:
                         "created_at": alert["created_at"],
                     }
                 )
-        events = self.list_review_events_between(
-            researcher_id, period_start_text, period_end_text
-        )
+        events = self.list_review_events_between(researcher_id, period_start_text, period_end_text)
         decisions = [
             {
                 key: event[key]
@@ -754,9 +743,7 @@ class WorkspaceRunStore:
             "markdown": "",
         }
 
-    def due_weekly_digest_researchers(
-        self, now: datetime | None = None
-    ) -> list[str]:
+    def due_weekly_digest_researchers(self, now: datetime | None = None) -> list[str]:
         """Return enabled researchers whose configured local schedule is due this minute."""
         current = (now or datetime.now(timezone.utc)).astimezone(timezone.utc)
         with self._connect() as connection:
@@ -776,9 +763,7 @@ class WorkspaceRunStore:
             except ZoneInfoNotFoundError:
                 zone = ZoneInfo("UTC")
             local = current.astimezone(zone)
-            digest_key, _, _ = self._weekly_period(
-                current, row["weekly_digest_timezone"] or "UTC"
-            )
+            digest_key, _, _ = self._weekly_period(current, row["weekly_digest_timezone"] or "UTC")
             with self._connect() as connection:
                 attempted = {
                     (item["researcher_id"], item["channel"])
@@ -807,9 +792,7 @@ class WorkspaceRunStore:
             due.append(researcher_id)
         return due
 
-    def digest_delivery_completed(
-        self, digest_key: str, researcher_id: str, channel: str
-    ) -> bool:
+    def digest_delivery_completed(self, digest_key: str, researcher_id: str, channel: str) -> bool:
         with self._connect() as connection:
             row = connection.execute(
                 "SELECT delivered_at FROM workspace_digest_deliveries "
@@ -996,7 +979,9 @@ class WorkspaceRunStore:
             status.setdefault(row["channel"], dict(row))
         return status
 
-    def get_notification_settings(self, researcher_id: str = DEFAULT_RESEARCHER_ID) -> dict[str, Any]:
+    def get_notification_settings(
+        self, researcher_id: str = DEFAULT_RESEARCHER_ID
+    ) -> dict[str, Any]:
         settings = self._notification_settings_raw(researcher_id)
         return {
             "researcher_id": researcher_id,
@@ -1006,9 +991,7 @@ class WorkspaceRunStore:
             "slack_enabled": settings["slack_enabled"],
             "score_drop_threshold": settings["score_drop_threshold"],
             "rank_change_threshold": settings["rank_change_threshold"],
-            "evidence_quality_change_threshold": settings[
-                "evidence_quality_change_threshold"
-            ],
+            "evidence_quality_change_threshold": settings["evidence_quality_change_threshold"],
             "weekly_digest_enabled": settings["weekly_digest_enabled"],
             "weekly_digest_weekday": settings["weekly_digest_weekday"],
             "weekly_digest_hour": settings["weekly_digest_hour"],
@@ -1100,9 +1083,7 @@ class WorkspaceRunStore:
             ).fetchall()
         return [self._alert_dict(row) for row in rows]
 
-    def delivery_completed(
-        self, alert_id: str, researcher_id: str, channel: str
-    ) -> bool:
+    def delivery_completed(self, alert_id: str, researcher_id: str, channel: str) -> bool:
         with self._connect() as connection:
             row = connection.execute(
                 "SELECT delivered_at FROM workspace_alert_deliveries "
@@ -1208,10 +1189,15 @@ class WorkspaceRunStore:
         with self._connect() as connection:
             for index, current in enumerate(parsed_runs):
                 current_dossier = current["dossier"]
-                for candidate_type, ranking_key in (("drug", "drug_rankings"), ("target", "target_rankings")):
+                for candidate_type, ranking_key in (
+                    ("drug", "drug_rankings"),
+                    ("target", "target_rankings"),
+                ):
                     for candidate in current_dossier.get(ranking_key, []):
                         candidate_id = candidate.get("candidate_id", "")
-                        current_review = reviews.get((current["run_id"], candidate_type, candidate_id))
+                        current_review = reviews.get(
+                            (current["run_id"], candidate_type, candidate_id)
+                        )
                         if current_review:
                             continue
                         previous = None
@@ -1246,7 +1232,9 @@ class WorkspaceRunStore:
                         previous_rank = next(
                             (
                                 rank + 1
-                                for rank, item in enumerate(previous["dossier"].get(ranking_key, []))
+                                for rank, item in enumerate(
+                                    previous["dossier"].get(ranking_key, [])
+                                )
                                 if item.get("candidate_id") == candidate_id
                             ),
                             None,
@@ -1258,11 +1246,12 @@ class WorkspaceRunStore:
                         )
                         previous_score = previous_ranked.get("score")
                         current_score = candidate.get("score")
-                        score_drop = round(
-                            max(previous_score - current_score, 0.0), 6
-                        ) if isinstance(previous_score, (int, float)) and isinstance(
-                            current_score, (int, float)
-                        ) else 0.0
+                        score_drop = (
+                            round(max(previous_score - current_score, 0.0), 6)
+                            if isinstance(previous_score, (int, float))
+                            and isinstance(current_score, (int, float))
+                            else 0.0
+                        )
                         rank_change = (
                             abs(current_rank - previous_rank)
                             if current_rank is not None and previous_rank is not None
@@ -1304,9 +1293,7 @@ class WorkspaceRunStore:
                         if evidence_added:
                             detail_parts.append(f"{len(evidence_added)} new evidence record(s)")
                         if "score_drop" in trigger_reasons:
-                            detail_parts.append(
-                                f"score dropped by {score_drop:.1f}"
-                            )
+                            detail_parts.append(f"score dropped by {score_drop:.1f}")
                         if "rank_change" in trigger_reasons:
                             detail_parts.append(f"rank changed by {rank_change}")
                         if "evidence_quality_change" in trigger_reasons:
@@ -1636,9 +1623,7 @@ class WorkspaceRunStore:
                     "source_coverage": source_coverage,
                 }
             )
-            claims_by_id = {
-                claim.get("claim_id"): claim for claim in dossier.get("claims", [])
-            }
+            claims_by_id = {claim.get("claim_id"): claim for claim in dossier.get("claims", [])}
             for kind in ("drug", "target"):
                 rankings = dossier.get(f"{kind}_rankings", [])
                 for rank, candidate in enumerate(rankings, start=1):
@@ -1669,9 +1654,7 @@ class WorkspaceRunStore:
                         "score": candidate.get("score"),
                         "rank": rank,
                         "confidence_band": candidate.get("confidence_band"),
-                        "supporting_claim_count": len(
-                            candidate.get("supporting_claim_ids", [])
-                        ),
+                        "supporting_claim_count": len(candidate.get("supporting_claim_ids", [])),
                         "contradicting_claim_count": len(
                             candidate.get("contradicting_claim_ids", [])
                         ),
@@ -1732,9 +1715,7 @@ class WorkspaceRunStore:
         def candidate_evidence(dossier: dict[str, Any], item: dict[str, Any] | None) -> list[str]:
             if not item:
                 return []
-            claims_by_id = {
-                claim.get("claim_id"): claim for claim in dossier.get("claims", [])
-            }
+            claims_by_id = {claim.get("claim_id"): claim for claim in dossier.get("claims", [])}
             claim_ids = set(item.get("supporting_claim_ids", [])) | set(
                 item.get("contradicting_claim_ids", [])
             )
@@ -1821,19 +1802,21 @@ class WorkspaceRunStore:
         for key in sorted(set(left_reviews) | set(right_reviews)):
             left_review = left_reviews.get(key)
             right_review = right_reviews.get(key)
-            if (left_review or {}).get("decision") == (right_review or {}).get("decision") and (
-                left_review or {}
-            ).get("rationale", "") == (right_review or {}).get("rationale", "") and (
-                left_review or {}
-            ).get("notes", "") == (right_review or {}).get("notes", "") and (
-                left_review or {}
-            ).get("tags", []) == (right_review or {}).get("tags", []):
+            if (
+                (left_review or {}).get("decision") == (right_review or {}).get("decision")
+                and (left_review or {}).get("rationale", "")
+                == (right_review or {}).get("rationale", "")
+                and (left_review or {}).get("notes", "") == (right_review or {}).get("notes", "")
+                and (left_review or {}).get("tags", []) == (right_review or {}).get("tags", [])
+            ):
                 continue
             review_changes.append(
                 {
                     "candidate_type": key[0],
                     "candidate_id": key[1],
-                    "candidate_name": (right_review or left_review or {}).get("candidate_name", key[1]),
+                    "candidate_name": (right_review or left_review or {}).get(
+                        "candidate_name", key[1]
+                    ),
                     "left": left_review,
                     "right": right_review,
                 }

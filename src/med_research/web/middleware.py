@@ -35,7 +35,7 @@ def _get_client_ip(request: Request) -> str:
     return request.client.host if request.client else "unknown"
 
 
-MAX_REQUEST_BODY_BYTES = int(os.environ.get("MAX_REQUEST_BODY_BYTES", str(1024 * 1024)))
+MAX_REQUEST_BODY_BYTES = int(os.environ.get("MAX_REQUEST_BODY_BYTES", str(10 * 1024 * 1024)))
 
 
 class DashboardCSPMiddleware(BaseHTTPMiddleware):
@@ -50,7 +50,10 @@ class DashboardCSPMiddleware(BaseHTTPMiddleware):
         self, request: Request, call_next: Callable[[Request], Awaitable[Response]]
     ) -> Response:
         response = await call_next(request)
-        if DASHBOARD_CSP_MODE in {"enforce", "report-only"} and request.url.path in {"/", "/index.html"}:
+        if DASHBOARD_CSP_MODE in {"enforce", "report-only"} and request.url.path in {
+            "/",
+            "/index.html",
+        }:
             header = (
                 "Content-Security-Policy"
                 if DASHBOARD_CSP_MODE == "enforce"

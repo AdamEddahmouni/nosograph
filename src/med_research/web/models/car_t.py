@@ -5,6 +5,7 @@ from pydantic import BaseModel, Field
 
 class CARTGeneResult(BaseModel):
     """Single gene CAR-T suitability result."""
+
     gene_id: str
     gene_name: str
     category: str = ""
@@ -21,6 +22,7 @@ class CARTGeneResult(BaseModel):
 
 class CARTResponse(BaseModel):
     """Response model for CAR-T suitability analysis."""
+
     genes: list[CARTGeneResult]
     total_genes: int
     avg_score: float = Field(0.0)

@@ -37,13 +37,22 @@ def get_kg_pathways(disease_id: str = "sle") -> dict:
     return {p["id"]: p for p in data["pathways"]}
 
 
-@lru_cache(maxsize=1)
-def get_candidates() -> list:
-    """Load repurposing candidates."""
-    from med_research.web.config import DR_DATA_DIR
+@lru_cache(maxsize=16)
+def get_candidates(disease_id: str = "sle") -> list:
+    """Load disease-scored repurposing candidates."""
+    try:
+        from med_research.web.services.registry_service import dispatch_sync_module
 
-    data = json.loads((DR_DATA_DIR / "candidates.json").read_text(encoding="utf-8"))
-    return cast(list, data["repurposing_candidates"])
+        scored = dispatch_sync_module("drug_repurposing", disease_id)
+        return list(scored) if scored else []
+    except Exception:
+        from med_research.web.config import DR_DATA_DIR
+
+        try:
+            data = json.loads((DR_DATA_DIR / "candidates.json").read_text(encoding="utf-8"))
+            return cast(list, data["repurposing_candidates"])
+        except (FileNotFoundError, json.JSONDecodeError, KeyError, OSError):
+            return []
 
 
 def load_json(path: Path) -> dict:
@@ -67,6 +76,7 @@ def safe_serialize(obj: Any) -> Any:
         return [safe_serialize(v) for v in obj]
     try:
         import numpy as np
+
         if isinstance(obj, (np.floating, np.integer)):
             return obj.item()
         if isinstance(obj, np.ndarray):

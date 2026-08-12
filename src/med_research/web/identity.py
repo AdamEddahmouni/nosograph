@@ -19,7 +19,11 @@ _RESEARCHER_ID_PATTERN = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_.:@+-]{0,63}$")
 def validate_researcher_id(value: str) -> str:
     """Validate a principal after it has been resolved by the auth layer."""
     normalized = value.strip()
-    if not normalized or len(normalized) > _MAX_RESEARCHER_ID_LENGTH or not _RESEARCHER_ID_PATTERN.fullmatch(normalized):
+    if (
+        not normalized
+        or len(normalized) > _MAX_RESEARCHER_ID_LENGTH
+        or not _RESEARCHER_ID_PATTERN.fullmatch(normalized)
+    ):
         raise HTTPException(
             status_code=400,
             detail="Authenticated researcher principal must be 1-64 safe identifier characters",

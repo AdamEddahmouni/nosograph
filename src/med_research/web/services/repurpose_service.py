@@ -1,6 +1,7 @@
 """Drug Repurposing service — wraps engine via module registry."""
 
 from med_research.diseases.coverage import module_coverage
+from med_research.pipeline.results import GeneRepurposingResponse, RepurposingAnalysisResponse
 from med_research.web.dependencies import get_kg_genes
 from med_research.web.services.registry_service import (
     dispatch_sync_module,
@@ -8,11 +9,9 @@ from med_research.web.services.registry_service import (
 )
 
 
-def run_repurposing(top_n: int = 15, gene_id: str | None = None, disease_id: str = "sle") -> dict:
+def run_repurposing(top_n: int = 15, gene_id: str | None = None, disease_id: str = "sle") -> RepurposingAnalysisResponse:
     """Score drug repurposing candidates and return results."""
-    coverage = module_coverage(
-        disease_id, "repurposing", ("genes", "drugs", "relationships")
-    )
+    coverage = module_coverage(disease_id, "repurposing", ("genes", "drugs", "relationships"))
     require_runnable_coverage(coverage, "drug_repurposing")
 
     scored = dispatch_sync_module("drug_repurposing", disease_id)
@@ -43,7 +42,7 @@ def run_repurposing(top_n: int = 15, gene_id: str | None = None, disease_id: str
     }
 
 
-def get_gene_repurposing(gene_id: str, disease_id: str = "sle") -> dict | None:
+def get_gene_repurposing(gene_id: str, disease_id: str = "sle") -> GeneRepurposingResponse | None:
     """Get all repurposing candidates for a specific gene."""
     genes = get_kg_genes(disease_id)
     if gene_id not in genes:
@@ -67,9 +66,7 @@ def get_gene_repurposing(gene_id: str, disease_id: str = "sle") -> dict | None:
         "gene_name": gene.get("name", gene_id),
         "gene_category": gene.get("category", ""),
         "gene_function": gene.get("function", ""),
-        "disease_evidence": gene.get(
-            "disease_evidence", gene.get("lupus_evidence", "")
-        ),
+        "disease_evidence": gene.get("disease_evidence", gene.get("lupus_evidence", "")),
         "disease_id": disease_id,
         "odds_ratio": gene.get("odds_ratio"),
         "candidates": gene_candidates,

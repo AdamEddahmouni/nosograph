@@ -1,5 +1,6 @@
 """Semantic Search service layer."""
 
+from med_research.pipeline.results import SemanticSearchResponse
 from med_research.pipeline.semantic_search.engine import last_coverage, resolve_semantic_coverage
 from med_research.web.services.registry_service import (
     dispatch_sync_module,
@@ -7,7 +8,7 @@ from med_research.web.services.registry_service import (
 )
 
 
-def run_semantic_search(query: str, top_k: int = 20, disease_id: str = "sle") -> dict:
+def run_semantic_search(query: str, top_k: int = 20, disease_id: str = "sle") -> SemanticSearchResponse:
     """Run semantic search via the semantic_search registry adapter."""
     coverage = resolve_semantic_coverage(disease_id)
     require_runnable_coverage(coverage, "semantic_search")
@@ -22,9 +23,5 @@ def run_semantic_search(query: str, top_k: int = 20, disease_id: str = "sle") ->
         "total_results": len(results),
         "indexed_articles": raw.get("indexed_count", 0),
         "coverage": coverage_payload,
-        "status": (
-            "limited_coverage"
-            if coverage_payload.get("level") == "partial"
-            else "ready"
-        ),
+        "status": ("limited_coverage" if coverage_payload.get("level") == "partial" else "ready"),
     }

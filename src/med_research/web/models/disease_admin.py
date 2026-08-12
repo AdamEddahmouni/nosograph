@@ -11,6 +11,7 @@ from pydantic import BaseModel, Field
 
 # ── Backups ───────────────────────────────────────────────────────────────
 
+
 class BackupEntry(BaseModel):
     """One pruned-backup file with what restoring it would bring back."""
 
@@ -30,6 +31,7 @@ class BackupsResponse(BaseModel):
 
 
 # ── Prune (refresh + drop entities no source reports) ────────────────────
+
 
 class PruneRequest(BaseModel):
     """Two-phase prune: preview by default, `apply: true` writes.
@@ -63,6 +65,7 @@ class PruneResponse(BaseModel):
 
 # ── Restore (re-merge a pruned backup) ───────────────────────────────────
 
+
 class RestoreRequest(BaseModel):
     """Restore a backup. `backup` is a full path or a bare filename inside
     the module's data/backups/ dir; omitted → the newest backup."""
@@ -84,6 +87,7 @@ class RestoreResponse(BaseModel):
 
 
 # ── Audit log (traceable prune / restore history) ───────────────────────
+
 
 class AuditEntry(BaseModel):
     """One recorded prune/restore mutation.

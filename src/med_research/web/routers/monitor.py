@@ -31,5 +31,6 @@ async def monitor_status():
 def create_monitor_snapshot():
     """Manually trigger an evidence monitor snapshot."""
     from med_research.web.services.monitor_service import run_snapshot
+
     result = run_snapshot()
     return {"status": "snapshot_complete", "result": result}

@@ -54,14 +54,16 @@ def get_graph_stats(disease_id: str = "sle") -> dict:
             and node not in targeted_genes
             and node not in drug_target_exclusions
         ):
-            untargeted.append({
-                "id": node,
-                "name": data.get("label", node),
-                "category": data.get("category", ""),
-                "function": data.get("description", ""),
-                "odds_ratio": data.get("odds_ratio"),
-                "chromosome": data.get("chromosome", ""),
-            })
+            untargeted.append(
+                {
+                    "id": node,
+                    "name": data.get("label", node),
+                    "category": data.get("category", ""),
+                    "function": data.get("description", ""),
+                    "odds_ratio": data.get("odds_ratio"),
+                    "chromosome": data.get("chromosome", ""),
+                }
+            )
 
     # Top hub genes by degree
     gene_degrees = sorted(
@@ -140,19 +142,23 @@ def get_node_detail(node_id: str, disease_id: str = "sle") -> dict | None:
     # In-edges and out-edges
     data["incoming"] = []
     for u, _, d in G.in_edges(node_id, data=True):
-        data["incoming"].append({
-            "source": u,
-            "type": d.get("type", ""),
-            "description": d.get("description", "")[:200],
-        })
+        data["incoming"].append(
+            {
+                "source": u,
+                "type": d.get("type", ""),
+                "description": d.get("description", "")[:200],
+            }
+        )
 
     data["outgoing"] = []
     for _, v, d in G.out_edges(node_id, data=True):
-        data["outgoing"].append({
-            "target": v,
-            "type": d.get("type", ""),
-            "description": d.get("description", "")[:200],
-        })
+        data["outgoing"].append(
+            {
+                "target": v,
+                "type": d.get("type", ""),
+                "description": d.get("description", "")[:200],
+            }
+        )
 
     data["degree"] = G.degree(node_id)
     return data
@@ -169,12 +175,14 @@ def get_shortest_path(source: str, target: str, disease_id: str = "sle") -> dict
             edge_data = G.get_edge_data(path[i], path[i + 1])
             if edge_data:
                 for _, d in edge_data.items():
-                    edges.append({
-                        "source": path[i],
-                        "target": path[i + 1],
-                        "type": d.get("type", ""),
-                        "description": d.get("description", "")[:200],
-                    })
+                    edges.append(
+                        {
+                            "source": path[i],
+                            "target": path[i + 1],
+                            "type": d.get("type", ""),
+                            "description": d.get("description", "")[:200],
+                        }
+                    )
                     break
         return {"path": path, "length": len(path) - 1, "edges": edges}
     except (nx.NetworkXNoPath, nx.NodeNotFound):
@@ -235,13 +243,15 @@ def search_nodes(query: str, disease_id: str = "sle") -> list[dict]:
         label = data.get("label", "").lower()
         desc = data.get("description", "").lower()
         if query_lower in label or query_lower in node_id.lower() or query_lower in desc:
-            results.append({
-                "id": node_id,
-                "label": data.get("label", node_id),
-                "type": data.get("type", "unknown"),
-                "description": data.get("description", "")[:200],
-                "category": data.get("category", ""),
-            })
+            results.append(
+                {
+                    "id": node_id,
+                    "label": data.get("label", node_id),
+                    "type": data.get("type", "unknown"),
+                    "description": data.get("description", "")[:200],
+                    "category": data.get("category", ""),
+                }
+            )
 
     return results[:50]
 
@@ -253,19 +263,25 @@ def run_centrality_analysis(
     metric: str = "betweenness", top_n: int = 15, disease_id: str = "sle"
 ) -> dict:
     """Compute centrality metrics via the network_pharmacology registry adapter."""
-    return cast(dict[str, Any], dispatch_sync_module(
-        "network_pharmacology",
-        disease_id,
-        operation="centrality",
-        metric=metric,
-        top_n=top_n,
-    ))
+    return cast(
+        dict[str, Any],
+        dispatch_sync_module(
+            "network_pharmacology",
+            disease_id,
+            operation="centrality",
+            metric=metric,
+            top_n=top_n,
+        ),
+    )
 
 
 def run_community_detection(disease_id: str = "sle") -> dict:
     """Detect communities in the selected disease knowledge graph."""
-    return cast(dict[str, Any], dispatch_sync_module(
-        "network_pharmacology",
-        disease_id,
-        operation="communities",
-    ))
+    return cast(
+        dict[str, Any],
+        dispatch_sync_module(
+            "network_pharmacology",
+            disease_id,
+            operation="communities",
+        ),
+    )

@@ -1,6 +1,5 @@
 """Pydantic models for cross-disease analysis endpoints."""
 
-
 from pydantic import BaseModel
 
 

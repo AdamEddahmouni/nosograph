@@ -153,7 +153,8 @@ def _safe_result_state(result: AsyncResult) -> str | None:
 
 
 async def submit_workspace(
-    payload: Any, request: Request = None  # type: ignore[assignment]
+    payload: Any,
+    request: Request = None,  # type: ignore[assignment]
 ) -> dict[str, Any]:
     """Submit a catalog-backed Workspace run with server-derived ownership."""
     payload_data = payload.model_dump(mode="json")
@@ -336,9 +337,7 @@ async def submit_run_all(
     return {"job_id": task.id, "status": "PENDING", "module": "run-all"}
 
 
-def _make_catalog_job_submitter(
-    module_id: str, request_model: type[Any]
-) -> Any:
+def _make_catalog_job_submitter(module_id: str, request_model: type[Any]) -> Any:
     """Create a static, schema-backed job endpoint for one registry module."""
 
     request_dependency = _make_catalog_request_dependency(request_model)

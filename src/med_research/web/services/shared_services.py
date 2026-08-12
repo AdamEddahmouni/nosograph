@@ -22,7 +22,7 @@ def run_literature(
 ) -> dict:
     """Run literature mining on PubMed via the literature_mining registry adapter."""
     genes = get_kg_genes(disease_id)
-    candidates = get_candidates()
+    candidates = get_candidates(disease_id)
     reporter = make_progress_reporter(progress_callback)
 
     reporter("Literature mining", 0, 4)
@@ -59,21 +59,25 @@ def run_literature(
     gene_coverage = []
     for gene_id, cov_info in raw_coverage.items():
         if isinstance(cov_info, dict):
-            gene_coverage.append({
-                "gene_id": gene_id,
-                "gene_name": genes.get(gene_id, {}).get("name", gene_id),
-                "article_count": cov_info.get("articles", 0),
-                "supporting_count": cov_info.get("supporting_count", 0),
-                "coverage_score": cov_info.get("coverage_score", 0),
-            })
+            gene_coverage.append(
+                {
+                    "gene_id": gene_id,
+                    "gene_name": genes.get(gene_id, {}).get("name", gene_id),
+                    "article_count": cov_info.get("articles", 0),
+                    "supporting_count": cov_info.get("supporting_count", 0),
+                    "coverage_score": cov_info.get("coverage_score", 0),
+                }
+            )
         elif isinstance(cov_info, (int, float)):
-            gene_coverage.append({
-                "gene_id": gene_id,
-                "gene_name": genes.get(gene_id, {}).get("name", gene_id),
-                "article_count": cov_info,
-                "supporting_count": cov_info,
-                "coverage_score": min(cov_info / max(len(article_matches), 1) * 100, 100),
-            })
+            gene_coverage.append(
+                {
+                    "gene_id": gene_id,
+                    "gene_name": genes.get(gene_id, {}).get("name", gene_id),
+                    "article_count": cov_info,
+                    "supporting_count": cov_info,
+                    "coverage_score": min(cov_info / max(len(article_matches), 1) * 100, 100),
+                }
+            )
 
     reporter("Literature mining complete", 4, 4)
     coverage = module_coverage(
@@ -135,29 +139,33 @@ def run_screening(
     for gid, target_data in results.get("results_per_target", {}).items():
         top_compounds = []
         for c in target_data.get("top_compounds", []):
-            top_compounds.append({
-                "drug_id": c["id"],
-                "drug_name": c["name"],
-                "composite_score": c["composite_score"],
-                "binding_estimate": c["binding_estimate"],
-                "druglikeness": c["druglikeness"],
-                "target_complementarity": c["target_complementarity"],
-                "similarity_score": c["similarity_score"],
-                "novelty_score": c["novelty_score"],
-                "tier": c.get("tier", ""),
-                "gene_id": c.get("gene_id", gid),
-                "gene_name": c.get("gene_name", ""),
-                "drug_type": c.get("type", ""),
-            })
+            top_compounds.append(
+                {
+                    "drug_id": c["id"],
+                    "drug_name": c["name"],
+                    "composite_score": c["composite_score"],
+                    "binding_estimate": c["binding_estimate"],
+                    "druglikeness": c["druglikeness"],
+                    "target_complementarity": c["target_complementarity"],
+                    "similarity_score": c["similarity_score"],
+                    "novelty_score": c["novelty_score"],
+                    "tier": c.get("tier", ""),
+                    "gene_id": c.get("gene_id", gid),
+                    "gene_name": c.get("gene_name", ""),
+                    "drug_type": c.get("type", ""),
+                }
+            )
 
-        targets.append({
-            "gene_id": gid,
-            "gene_name": target_data["gene_info"].get("name", gid),
-            "gene_category": target_data["gene_info"].get("category", ""),
-            "top_compounds": top_compounds,
-            "total_screened": target_data["total_screened"],
-            "mean_score": target_data["mean_score"],
-        })
+        targets.append(
+            {
+                "gene_id": gid,
+                "gene_name": target_data["gene_info"].get("name", gid),
+                "gene_category": target_data["gene_info"].get("category", ""),
+                "top_compounds": top_compounds,
+                "total_screened": target_data["total_screened"],
+                "mean_score": target_data["mean_score"],
+            }
+        )
 
     stats = results.get("stats", {})
     reporter("Virtual screening complete", 3, 3)
@@ -191,6 +199,7 @@ def run_trials(
     if not query or query == "lupus OR SLE":
         try:
             from med_research.diseases.base import Disease
+
             query = Disease(disease_id).get_trial_query()
         except ValueError:
             query = "lupus OR SLE"
@@ -222,8 +231,7 @@ def run_trials(
     top_sponsors = stats.get("top_sponsors", {})
     if isinstance(top_sponsors, dict):
         top_sponsors = [
-            {"name": sponsor, "count": count}
-            for sponsor, count in list(top_sponsors.items())[:10]
+            {"name": sponsor, "count": count} for sponsor, count in list(top_sponsors.items())[:10]
         ]
     else:
         top_sponsors = top_sponsors[:10] if isinstance(top_sponsors, list) else []

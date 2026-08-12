@@ -5,6 +5,7 @@ from pydantic import BaseModel
 
 class SemanticResult(BaseModel):
     """Single semantic search result."""
+
     rank: int
     pmid: str
     title: str
@@ -15,6 +16,7 @@ class SemanticResult(BaseModel):
 
 class SemanticSearchResponse(BaseModel):
     """Response model for semantic search."""
+
     query: str
     results: list[SemanticResult]
     total_results: int

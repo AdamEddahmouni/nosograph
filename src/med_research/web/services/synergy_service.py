@@ -3,6 +3,7 @@
 from typing import Any
 
 from med_research.diseases.coverage import module_coverage
+from med_research.pipeline.results import SynergyAnalysisResponse
 from med_research.web.dependencies import safe_serialize
 from med_research.web.services.registry_service import (
     dispatch_sync_module,
@@ -15,7 +16,7 @@ def run_synergy(
     top_n: int = 20,
     progress_callback: Any = None,
     disease_id: str = "sle",
-) -> dict:
+) -> SynergyAnalysisResponse:
     """Run drug combination synergy prediction."""
     coverage = module_coverage(disease_id, "synergy", ("genes", "drugs"))
     require_runnable_coverage(coverage, "drug_synergy")

@@ -12,55 +12,61 @@ from pydantic import BaseModel, ConfigDict, Field, create_model, field_validator
 from med_research.diseases.base import Disease
 from med_research.pipeline.registry import module_request_schema
 
-INT_JOB_OPTS = frozenset({
-    "max_studies",
-    "top_n",
-    "max_articles",
-    "max_trials",
-    "top_k",
-    "max_per_source",
-    "max_per_query",
-    "max_evidence",
-    "expand_neighbors",
-    "top_synergy",
-})
-BOOL_JOB_OPTS = frozenset({
-    "no_cache",
-    "untargeted_only",
-    "use_vina",
-    "no_shap",
-    "targeted",
-    "use_cache",
-    "enable_llm",
-    "export_html",
-    "full",
-    "parallel",
-    "skip_ml",
-    "resolve_snps",
-    "extract_content",
-    "cross_reference",
-    "comparative",
-    "save",
-    "diff",
-})
+INT_JOB_OPTS = frozenset(
+    {
+        "max_studies",
+        "top_n",
+        "max_articles",
+        "max_trials",
+        "top_k",
+        "max_per_source",
+        "max_per_query",
+        "max_evidence",
+        "expand_neighbors",
+        "top_synergy",
+    }
+)
+BOOL_JOB_OPTS = frozenset(
+    {
+        "no_cache",
+        "untargeted_only",
+        "use_vina",
+        "no_shap",
+        "targeted",
+        "use_cache",
+        "enable_llm",
+        "export_html",
+        "full",
+        "parallel",
+        "skip_ml",
+        "resolve_snps",
+        "extract_content",
+        "cross_reference",
+        "comparative",
+        "save",
+        "diff",
+    }
+)
 FLOAT_JOB_OPTS = frozenset({"confidence"})
-STR_JOB_OPTS = frozenset({
-    "query",
-    "question",
-    "gene_id",
-    "drug_id",
-    "model",
-    "sources",
-    "signature",
-    "signature_source",
-    "tissue",
-    "operation",
-    "candidate_type",
-    "date_from",
-    "date_to",
-    "email",
-    "queries",
-})
+STR_JOB_OPTS = frozenset(
+    {
+        "query",
+        "question",
+        "gene_id",
+        "drug_id",
+        "model",
+        "sources",
+        "signature",
+        "signature_source",
+        "tissue",
+        "operation",
+        "candidate_type",
+        "date_from",
+        "date_to",
+        "email",
+        "queries",
+    }
+)
 KNOWN_JOB_OPTION_KEYS = INT_JOB_OPTS | BOOL_JOB_OPTS | FLOAT_JOB_OPTS | STR_JOB_OPTS
 
 
@@ -77,9 +83,7 @@ class CatalogModuleJobRequest(BaseModel):
         disease_id = value.strip().lower()
         if disease_id not in Disease.list_all():
             available = ", ".join(sorted(Disease.list_all()))
-            raise ValueError(
-                f"Unknown disease_id '{value}'. Available diseases: {available}"
-            )
+            raise ValueError(f"Unknown disease_id '{value}'. Available diseases: {available}")
         return disease_id
 
     def to_task_opts(self) -> dict[str, Any]:
@@ -106,9 +110,7 @@ def _build_module_request_model(
         if body and definition.get("body_type") == "array":
             item_schema = definition.get("items", {})
             item_enum = item_schema.get("enum")
-            item_annotation: Any = (
-                Literal[tuple(item_enum)] if item_enum else str
-            )
+            item_annotation: Any = Literal[tuple(item_enum)] if item_enum else str
             annotation: Any = list[item_annotation]
         elif body and definition.get("format") == "date":
             annotation = date
@@ -135,9 +137,7 @@ def _build_module_request_model(
         if not body:
             field_default = None
         elif definition.get("body_type") == "array":
-            field_default = definition.get(
-                "body_default", definition.get("default", None)
-            )
+            field_default = definition.get("body_default", definition.get("default", None))
         else:
             field_default = definition.get("default", None)
         field_kwargs: dict[str, Any] = {
@@ -260,9 +260,7 @@ class GenericModuleJobRequest(BaseModel):
         disease_id = value.strip().lower()
         if disease_id not in Disease.list_all():
             available = ", ".join(sorted(Disease.list_all()))
-            raise ValueError(
-                f"Unknown disease_id '{value}'. Available diseases: {available}"
-            )
+            raise ValueError(f"Unknown disease_id '{value}'. Available diseases: {available}")
         return disease_id
 
     def to_task_opts(self) -> dict[str, Any]:
@@ -279,9 +277,7 @@ class GenericModuleJobRequest(BaseModel):
         unsupported = sorted(supplied - allowed)
         if unsupported:
             names = ", ".join(unsupported)
-            raise ValueError(
-                f"Options not supported by module '{module_id}': {names}"
-            )
+            raise ValueError(f"Options not supported by module '{module_id}': {names}")
 
 
 class RunAllJobRequest(BaseModel):
@@ -302,9 +298,7 @@ class RunAllJobRequest(BaseModel):
         disease_id = value.strip().lower()
         if disease_id not in Disease.list_all():
             available = ", ".join(sorted(Disease.list_all()))
-            raise ValueError(
-                f"Unknown disease_id '{value}'. Available diseases: {available}"
-            )
+            raise ValueError(f"Unknown disease_id '{value}'. Available diseases: {available}")
         return disease_id
 
     def to_task_opts(self) -> dict[str, Any]:

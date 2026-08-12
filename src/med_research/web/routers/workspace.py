@@ -56,9 +56,7 @@ def list_workspace_alerts(
     store.refresh_alerts(researcher_id)
     dispatch_pending_alerts(store, researcher_id)
     dispatch_weekly_digest(store, researcher_id)
-    return store.list_alerts(
-        researcher_id, unread_only=unread_only, limit=limit, offset=offset
-    )
+    return store.list_alerts(researcher_id, unread_only=unread_only, limit=limit, offset=offset)
 
 
 @router.get("/notifications", response_model=WorkspaceNotificationSettings)
@@ -126,9 +124,7 @@ def send_workspace_digest(request: Request, force: bool = Query(default=False)) 
 def workspace_digest_delivery_history(
     request: Request, limit: int = Query(default=50, ge=1, le=200)
 ) -> dict[str, Any]:
-    return {
-        "deliveries": _store().list_digest_deliveries(get_researcher_id(request), limit)
-    }
+    return {"deliveries": _store().list_digest_deliveries(get_researcher_id(request), limit)}
 
 
 @router.get("/digest/review")
@@ -138,9 +134,13 @@ def open_workspace_digest_review(request: Request, token: str) -> RedirectRespon
         raise HTTPException(status_code=401, detail="Invalid or expired workspace review link")
     principal = resolve_principal(request)
     if principal and principal != claims["researcher_id"]:
-        raise HTTPException(status_code=403, detail="Workspace review link belongs to another researcher")
+        raise HTTPException(
+            status_code=403, detail="Workspace review link belongs to another researcher"
+        )
     if not principal and os.environ.get("DEBUG", "false").lower() != "true":
-        raise HTTPException(status_code=401, detail="Authentication required to open workspace review link")
+        raise HTTPException(
+            status_code=401, detail="Authentication required to open workspace review link"
+        )
     from urllib.parse import quote
 
     destination = (

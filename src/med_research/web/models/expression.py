@@ -5,6 +5,7 @@ from pydantic import BaseModel, Field
 
 class ExpressionCorrelationResult(BaseModel):
     """Single drug expression correlation result."""
+
     drug_id: str
     drug_name: str
     category: str = ""
@@ -21,6 +22,7 @@ class ExpressionCorrelationResult(BaseModel):
 
 class ExpressionCorrelationResponse(BaseModel):
     """Response model for expression correlation analysis."""
+
     drugs: list[ExpressionCorrelationResult]
     total_drugs: int
     avg_score: float = Field(0.0, description="Average composite score")

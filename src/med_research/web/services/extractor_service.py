@@ -14,12 +14,15 @@ def run_llm_extraction(
     disease_id: str | None = None,
 ) -> dict:
     """Run LLM evidence extraction via the llm_extractor registry adapter."""
-    return cast(dict[str, Any], dispatch_sync_module(
-        "llm_extractor",
-        disease_id or "sle",
-        query=query,
-        sources=sources,
-        max_articles=max_articles,
-        model=model,
-        use_cache=use_cache,
-    ))
+    return cast(
+        dict[str, Any],
+        dispatch_sync_module(
+            "llm_extractor",
+            disease_id or "sle",
+            query=query,
+            sources=sources,
+            max_articles=max_articles,
+            model=model,
+            use_cache=use_cache,
+        ),
+    )

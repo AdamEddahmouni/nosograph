@@ -24,7 +24,10 @@ def get_cross_disease_overlap() -> CrossDiseaseResponse:
 def get_disease_similarity() -> dict[str, Any]:
     """Get pairwise disease similarity matrix."""
     result = run_cross_disease_analysis()
-    return {"similarity": result.get("disease_similarity", []), "diseases": result.get("diseases", [])}
+    return {
+        "similarity": result.get("disease_similarity", []),
+        "diseases": result.get("diseases", []),
+    }
 
 
 @router.get("/drugs")

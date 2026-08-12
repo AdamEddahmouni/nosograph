@@ -6,6 +6,7 @@ from pydantic import BaseModel
 
 # ── Literature Mining ──────────────────────────────────────────────────────
 
+
 class LiteratureArticle(BaseModel):
     pmid: str
     title: str
@@ -42,6 +43,7 @@ class LiteratureRequest(BaseModel):
 
 
 # ── Virtual Screening ──────────────────────────────────────────────────────
+
 
 class ScreeningCompound(BaseModel):
     drug_id: str
@@ -91,6 +93,7 @@ class ScreeningRequest(BaseModel):
 
 # ── Clinical Trials ────────────────────────────────────────────────────────
 
+
 class ClinicalTrial(BaseModel):
     nct_id: str
     title: str
@@ -125,6 +128,7 @@ class TrialsRequest(BaseModel):
 
 
 # ── ML Predictor ───────────────────────────────────────────────────────────
+
 
 class MLPrediction(BaseModel):
     rank: int

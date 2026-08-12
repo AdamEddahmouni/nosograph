@@ -24,9 +24,13 @@ def _public_url() -> str:
 
 
 def _encode(payload: dict[str, Any]) -> str:
-    encoded = base64.urlsafe_b64encode(
-        json.dumps(payload, separators=(",", ":"), sort_keys=True).encode()
-    ).decode().rstrip("=")
+    encoded = (
+        base64.urlsafe_b64encode(
+            json.dumps(payload, separators=(",", ":"), sort_keys=True).encode()
+        )
+        .decode()
+        .rstrip("=")
+    )
     signature = hmac.new(_secret().encode(), encoded.encode(), hashlib.sha256).digest()
     return f"{encoded}.{base64.urlsafe_b64encode(signature).decode().rstrip('=')}"
 
@@ -59,9 +63,7 @@ def verify_review_token(token: str, *, now: datetime | None = None) -> dict[str,
         actual = base64.urlsafe_b64decode(supplied_signature + "=" * (-len(supplied_signature) % 4))
         if not secret or not hmac.compare_digest(actual, expected):
             return None
-        payload = json.loads(
-            base64.urlsafe_b64decode(encoded + "=" * (-len(encoded) % 4)).decode()
-        )
+        payload = json.loads(base64.urlsafe_b64decode(encoded + "=" * (-len(encoded) % 4)).decode())
         current_timestamp = int((now or datetime.now(timezone.utc)).timestamp())
         if int(payload["expires_at"]) < current_timestamp:
             return None

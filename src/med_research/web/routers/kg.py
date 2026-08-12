@@ -100,7 +100,12 @@ async def kg_neighbors(
 
 @router.get("/centrality", response_model=CentralityResponse)
 async def kg_centrality(
-    metric: str = Query("betweenness", min_length=1, max_length=50, description="Centrality metric: degree, betweenness, eigenvector, closeness, pagerank"),
+    metric: str = Query(
+        "betweenness",
+        min_length=1,
+        max_length=50,
+        description="Centrality metric: degree, betweenness, eigenvector, closeness, pagerank",
+    ),
     top_n: int = Query(15, ge=1, le=50, description="Number of top nodes"),
     disease: str = Query("sle", description="Disease ID"),
 ) -> dict[str, Any]:

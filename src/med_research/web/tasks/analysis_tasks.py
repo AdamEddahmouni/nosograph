@@ -170,7 +170,7 @@ def task_run_workspace(
         dossier.run_id = run_id
         html = render_html(dossier)
         store.save_success(dossier, html)
-    except Exception as exc:
+    except (OSError, ValueError, TypeError, KeyError, RuntimeError) as exc:
         store.mark_failed(run_id, f"{type(exc).__name__}: {exc}")
         raise
     return {"dossier": dossier.model_dump(mode="json"), "html": html}
@@ -518,9 +518,7 @@ def _make_catalog_task(module_id: str, task_name: str) -> Any:
     """Register a generic Celery task for modules without a custom wrapper."""
 
     @celery_app.task(bind=True, name=task_name)
-    def run_registered_module(
-        self: Any, disease_id: str = "sle", **opts: Any
-    ) -> Any:
+    def run_registered_module(self: Any, disease_id: str = "sle", **opts: Any) -> Any:
         return _dispatch_module(self, module_id, disease_id, **opts)
 
     return run_registered_module

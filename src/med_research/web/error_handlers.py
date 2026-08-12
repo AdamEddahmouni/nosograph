@@ -31,9 +31,7 @@ async def request_validation_error_handler(
     )
 
 
-async def external_api_error_handler(
-    _request: Request, exc: ExternalAPIError
-) -> JSONResponse:
+async def external_api_error_handler(_request: Request, exc: ExternalAPIError) -> JSONResponse:
     return _error_response(502, exc)
 
 
@@ -49,15 +47,11 @@ async def module_not_available_handler(
     return _error_response(409, exc)
 
 
-async def configuration_error_handler(
-    _request: Request, exc: ConfigurationError
-) -> JSONResponse:
+async def configuration_error_handler(_request: Request, exc: ConfigurationError) -> JSONResponse:
     return _error_response(503, exc)
 
 
-async def med_research_error_handler(
-    _request: Request, exc: MedResearchError
-) -> JSONResponse:
+async def med_research_error_handler(_request: Request, exc: MedResearchError) -> JSONResponse:
     return _error_response(500, exc)
 
 

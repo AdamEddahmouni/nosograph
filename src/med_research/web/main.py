@@ -43,6 +43,7 @@ logger = logging.getLogger(__name__)
 
 # ── Lifespan (startup / shutdown) ─────────────────────────────────────────
 
+
 @asynccontextmanager
 async def lifespan(app: FastAPI) -> AsyncIterator[None]:
     """Pre-load the knowledge graph on startup for faster first request."""

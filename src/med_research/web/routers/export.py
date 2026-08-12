@@ -71,11 +71,13 @@ def list_export_modules() -> dict[str, Any]:
     """List all modules available for JSON export with their file names."""
     items = []
     for name, fname in MODULE_FILES.items():
-        items.append({
-            "module": name,
-            "file": fname,
-            "available": _find_results_file(fname) is not None,
-        })
+        items.append(
+            {
+                "module": name,
+                "file": fname,
+                "available": _find_results_file(fname) is not None,
+            }
+        )
     return {"modules": items}
 
 

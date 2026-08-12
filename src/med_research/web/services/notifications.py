@@ -80,7 +80,9 @@ def _send_email_message(subject: str, text: str, recipient: str) -> None:
 
 def send_email_alert(alert: dict[str, Any], recipient: str) -> None:
     """Send one alert using the deployment's opt-in SMTP configuration."""
-    _send_email_message(alert.get("title", "Workspace review reminder"), _alert_text(alert), recipient)
+    _send_email_message(
+        alert.get("title", "Workspace review reminder"), _alert_text(alert), recipient
+    )
 
 
 def render_weekly_digest(digest: dict[str, Any]) -> str:
@@ -108,7 +110,11 @@ def render_weekly_digest(digest: dict[str, Any]) -> str:
         )
         if decision.get("changed_my_mind"):
             lines.append(f"  What changed my mind: {decision['changed_my_mind']}")
-    if not digest["new_evidence"] and not digest["unresolved_reminders"] and not digest["changed_decisions"]:
+    if (
+        not digest["new_evidence"]
+        and not digest["unresolved_reminders"]
+        and not digest["changed_decisions"]
+    ):
         lines.extend(["", "No new evidence, unresolved reminders, or changed decisions."])
     return "\n".join(lines)
 
@@ -148,9 +154,7 @@ def dispatch_weekly_digest(
     digest["review_url"] = create_review_link(researcher_id, digest["digest_key"], now=now)
     digest["markdown"] = render_weekly_digest(digest)
     if not (
-        digest["new_evidence"]
-        or digest["unresolved_reminders"]
-        or digest["changed_decisions"]
+        digest["new_evidence"] or digest["unresolved_reminders"] or digest["changed_decisions"]
     ):
         digest["status"] = "empty"
         digest["email_delivered"] = 0
@@ -180,19 +184,22 @@ def dispatch_weekly_digest(
         channels.append(
             (
                 "slack",
-                lambda digest=digest, webhook=slack_webhook: send_slack_digest(
-                    digest, webhook
-                ),
+                lambda digest=digest, webhook=slack_webhook: send_slack_digest(digest, webhook),
             )
         )
     for channel, send in channels:
-        if not force and store.digest_delivery_completed(digest["digest_key"], researcher_id, channel):
+        if not force and store.digest_delivery_completed(
+            digest["digest_key"], researcher_id, channel
+        ):
             continue
         try:
             send()
-        except Exception as exc:  # delivery must not break preview/polling
+        except (OSError, ConnectionError, TimeoutError, ValueError, TypeError) as exc:
             store.record_digest_delivery_attempt(
-                digest["digest_key"], researcher_id, channel, delivered=False,
+                digest["digest_key"],
+                researcher_id,
+                channel,
+                delivered=False,
                 error=f"{type(exc).__name__}: {exc}",
             )
             delivered["failed"] += 1
@@ -234,9 +241,7 @@ def dispatch_pending_alerts(store: WorkspaceRunStore, researcher_id: str) -> dic
             channels.append(
                 (
                     "slack",
-                    lambda alert=alert, webhook=slack_webhook: send_slack_alert(
-                        alert, webhook
-                    ),
+                    lambda alert=alert, webhook=slack_webhook: send_slack_alert(alert, webhook),
                 )
             )
         for channel, send in channels:
@@ -245,7 +250,7 @@ def dispatch_pending_alerts(store: WorkspaceRunStore, researcher_id: str) -> dic
                 continue
             try:
                 send()
-            except Exception as exc:  # delivery must not break alert reads
+            except (OSError, ConnectionError, TimeoutError, ValueError, TypeError, RuntimeError) as exc:
                 store.record_delivery_attempt(
                     alert["alert_id"],
                     researcher_id,
