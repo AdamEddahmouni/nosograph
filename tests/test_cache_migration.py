@@ -20,6 +20,8 @@ from med_research.cache import (
     migrate_legacy_caches,
 )
 
+pytestmark = pytest.mark.unit
+
 
 @pytest.fixture
 def cache_dir(tmp_path):
@@ -34,6 +36,8 @@ def mgr(cache_dir):
 @pytest.fixture
 def legacy_dirs(tmp_path, monkeypatch):
     """Point migration source directories at isolated temp paths."""
+
+
     bio = tmp_path / "bioinformatics" / "data"
     lit = tmp_path / "literature_mining" / "data"
     trials = tmp_path / "clinical_trials" / "data"

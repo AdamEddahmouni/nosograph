@@ -8,6 +8,8 @@ from fastapi.testclient import TestClient
 
 from med_research.pipeline.evidence_workspace.schemas import EvidenceDossier, ResearchRequest
 
+pytestmark = pytest.mark.unit
+
 
 def _fixture_dossier():
     return EvidenceDossier(
@@ -123,9 +125,9 @@ def test_dashboard_contains_workspace_form_and_async_rendering():
 
     assert 'id="evidence-workspace"' in index
     assert 'data-action="workspace-submit"' in index
-    assert 'onsubmit=' not in index
-    assert 'onclick=' not in index
-    assert 'onchange=' not in index
+    assert "onsubmit=" not in index
+    assert "onclick=" not in index
+    assert "onchange=" not in index
     assert "module === 'workspace'" in script
     assert "'/api/jobs/workspace'" in script
     assert "renderWorkspaceResult" in script
@@ -158,9 +160,9 @@ def test_dashboard_workspace_submission_is_terminal_aware_and_explainable():
     assert "renderWorkspaceTrendTable" in script
     assert "downloadWorkspaceTrendCsv" in script
     assert "candidate_type" in script
-    assert 'onclick=' not in script
-    assert 'onchange=' not in script
-    assert 'onsubmit=' not in script
+    assert "onclick=" not in script
+    assert "onchange=" not in script
+    assert "onsubmit=" not in script
     assert "setupDashboardActions" in script
     assert "data-action" in script
     assert ".workspace-provenance" in styles
@@ -180,12 +182,12 @@ def test_dashboard_workspace_exports_keep_the_exact_task_payload():
     assert "openWorkspaceHtml" in script
     assert "URL.createObjectURL" in script
     assert "sources: selectedSources" in script
-    assert "aria-describedby=\"workspace-submit-status\"" in index
-    assert "aria-label=\"Evidence sources\"" in index
-    assert "role=\"region\" aria-label=\"Workspace result\"" in index
-    assert "id=\"workspace-trend-table\"" in index
-    assert "aria-label=\"Tabular trend data\"" in index
-    assert "data-action=\"workspace-trends-export\"" in script
+    assert 'aria-describedby="workspace-submit-status"' in index
+    assert 'aria-label="Evidence sources"' in index
+    assert 'role="region" aria-label="Workspace result"' in index
+    assert 'id="workspace-trend-table"' in index
+    assert 'aria-label="Tabular trend data"' in index
+    assert 'data-action="workspace-trends-export"' in script
     assert "workspace-trend-table" in script
     assert "Research question:" in script
     assert "Sources:" in script

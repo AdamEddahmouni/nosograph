@@ -9,6 +9,8 @@ from med_research.pipeline.evidence_workspace.schemas import (
     deduplicate_evidence,
 )
 
+pytestmark = pytest.mark.unit
+
 
 def test_request_defaults_to_sle_and_both_sources_and_candidates():
     request = ResearchRequest(question="  Find JAK interventions  ")

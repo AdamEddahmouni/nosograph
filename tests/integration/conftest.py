@@ -3,8 +3,9 @@
 Marker policy (see also ``tests/conftest.py`` and ``pyproject.toml``):
 
 - Every test under ``tests/integration/`` receives ``@pytest.mark.integration``.
-- All other tests without ``slow`` or ``integration`` markers receive
-  ``@pytest.mark.unit`` automatically; do not add ``unit`` here.
+- Fast tests under ``tests/`` declare ``@pytest.mark.unit`` explicitly; tests
+  without ``slow`` or ``integration`` still receive ``unit`` via
+  ``tests/conftest.py`` as a fallback.
 """
 
 from __future__ import annotations

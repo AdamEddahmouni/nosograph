@@ -1,9 +1,13 @@
 from datetime import datetime, timezone
 
+import pytest
+
 from med_research.pipeline.evidence_workspace.schemas import RankedCandidate
 from med_research.web.services.workspace_store import WorkspaceRunStore
 
 from .test_evidence_workspace_reviews import _dossier, _save
+
+pytestmark = pytest.mark.unit
 
 
 def test_score_and_quality_thresholds_trigger_without_new_evidence(tmp_path):
@@ -81,9 +85,7 @@ def test_rank_threshold_triggers_when_candidate_moves(tmp_path):
         "fp-rank",
         researcher_id="alice",
     )
-    store.save_notification_settings(
-        "alice", "", False, "", False, rank_change_threshold=1
-    )
+    store.save_notification_settings("alice", "", False, "", False, rank_change_threshold=1)
 
     assert store.refresh_alerts("alice") == 1
     alert = store.list_alerts("alice")["alerts"][0]

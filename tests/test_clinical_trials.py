@@ -8,7 +8,11 @@ Tests cover:
 
 import pytest
 
+pytestmark = pytest.mark.unit
+
+
 # ── Sample fixtures ───────────────────────────────────────────────────
+
 
 @pytest.fixture
 def sample_raw_trial():
@@ -34,12 +38,8 @@ def sample_raw_trial():
                     {"name": "Placebo", "type": "DRUG"},
                 ]
             },
-            "sponsorCollaboratorsModule": {
-                "leadSponsor": {"name": "GSK", "class": "INDUSTRY"}
-            },
-            "conditionsModule": {
-                "conditions": ["Systemic Lupus Erythematosus"]
-            },
+            "sponsorCollaboratorsModule": {"leadSponsor": {"name": "GSK", "class": "INDUSTRY"}},
+            "conditionsModule": {"conditions": ["Systemic Lupus Erythematosus"]},
         }
     }
 
@@ -67,9 +67,7 @@ def sample_raw_trial_phase2():
             "sponsorCollaboratorsModule": {
                 "leadSponsor": {"name": "Eli Lilly", "class": "INDUSTRY"}
             },
-            "conditionsModule": {
-                "conditions": ["Systemic Lupus Erythematosus"]
-            },
+            "conditionsModule": {"conditions": ["Systemic Lupus Erythematosus"]},
         }
     }
 
@@ -139,26 +137,31 @@ def sample_kg_entities():
 #  parse_trial tests
 # ═══════════════════════════════════════════════════════════════════════
 
+
 class TestParseTrial:
     """Tests for parse_trial()."""
 
     def test_parses_nct_id(self, sample_raw_trial):
         from med_research.pipeline.clinical_trials.tracker import parse_trial
+
         result = parse_trial(sample_raw_trial)
         assert result["nct_id"] == "NCT00000001"
 
     def test_parses_title(self, sample_raw_trial):
         from med_research.pipeline.clinical_trials.tracker import parse_trial
+
         result = parse_trial(sample_raw_trial)
         assert "Belimumab" in result["title"]
 
     def test_parses_status(self, sample_raw_trial):
         from med_research.pipeline.clinical_trials.tracker import parse_trial
+
         result = parse_trial(sample_raw_trial)
         assert result["status"] == "RECRUITING"
 
     def test_parses_phases(self, sample_raw_trial):
         from med_research.pipeline.clinical_trials.tracker import parse_trial
+
         result = parse_trial(sample_raw_trial)
         assert "PHASE3" in result["phases"]
         assert result["primary_phase"] == "PHASE3"
@@ -166,54 +169,64 @@ class TestParseTrial:
 
     def test_parses_interventions(self, sample_raw_trial):
         from med_research.pipeline.clinical_trials.tracker import parse_trial
+
         result = parse_trial(sample_raw_trial)
         assert "Belimumab" in result["interventions"]
         assert "DRUG" in result["intervention_types"]
 
     def test_parses_sponsor(self, sample_raw_trial):
         from med_research.pipeline.clinical_trials.tracker import parse_trial
+
         result = parse_trial(sample_raw_trial)
         assert result["sponsor_name"] == "GSK"
         assert result["sponsor_class"] == "INDUSTRY"
 
     def test_parses_enrollment(self, sample_raw_trial):
         from med_research.pipeline.clinical_trials.tracker import parse_trial
+
         result = parse_trial(sample_raw_trial)
         assert result["enrollment"] == 500
 
     def test_parses_conditions(self, sample_raw_trial):
         from med_research.pipeline.clinical_trials.tracker import parse_trial
+
         result = parse_trial(sample_raw_trial)
         assert "Systemic Lupus Erythematosus" in result["conditions"]
 
     def test_summary_truncated_to_500_chars(self):
         from med_research.pipeline.clinical_trials.tracker import parse_trial
-        long_summary = {"protocolSection": {
-            "identificationModule": {"nctId": "NCT"},
-            "statusModule": {"overallStatus": "COMPLETED"},
-            "descriptionModule": {
-                "briefTitle": "Test",
-                "briefSummary": "X" * 1000,
-            },
-            "designModule": {"phases": [], "enrollmentInfo": {}},
-            "armsInterventionsModule": {"interventions": []},
-            "sponsorCollaboratorsModule": {"leadSponsor": {"name": "", "class": ""}},
-            "conditionsModule": {"conditions": []},
-        }}
+
+        long_summary = {
+            "protocolSection": {
+                "identificationModule": {"nctId": "NCT"},
+                "statusModule": {"overallStatus": "COMPLETED"},
+                "descriptionModule": {
+                    "briefTitle": "Test",
+                    "briefSummary": "X" * 1000,
+                },
+                "designModule": {"phases": [], "enrollmentInfo": {}},
+                "armsInterventionsModule": {"interventions": []},
+                "sponsorCollaboratorsModule": {"leadSponsor": {"name": "", "class": ""}},
+                "conditionsModule": {"conditions": []},
+            }
+        }
         result = parse_trial(long_summary)
         assert len(result["summary"]) <= 500
 
     def test_empty_phases_handled(self):
         from med_research.pipeline.clinical_trials.tracker import parse_trial
-        trial = {"protocolSection": {
-            "identificationModule": {"nctId": "NCT"},
-            "statusModule": {"overallStatus": "COMPLETED"},
-            "descriptionModule": {"briefTitle": "Test", "briefSummary": ""},
-            "designModule": {"phases": [], "enrollmentInfo": {}},
-            "armsInterventionsModule": {"interventions": []},
-            "sponsorCollaboratorsModule": {"leadSponsor": {"name": "", "class": ""}},
-            "conditionsModule": {"conditions": []},
-        }}
+
+        trial = {
+            "protocolSection": {
+                "identificationModule": {"nctId": "NCT"},
+                "statusModule": {"overallStatus": "COMPLETED"},
+                "descriptionModule": {"briefTitle": "Test", "briefSummary": ""},
+                "designModule": {"phases": [], "enrollmentInfo": {}},
+                "armsInterventionsModule": {"interventions": []},
+                "sponsorCollaboratorsModule": {"leadSponsor": {"name": "", "class": ""}},
+                "conditionsModule": {"conditions": []},
+            }
+        }
         result = parse_trial(trial)
         assert result["phases"] == []
         assert result["primary_phase"] == ""
@@ -223,52 +236,90 @@ class TestParseTrial:
 #  categorize_moa tests
 # ═══════════════════════════════════════════════════════════════════════
 
+
 class TestCategorizeMoa:
     """Tests for categorize_moa()."""
 
     def test_b_cell_targeting(self):
         from med_research.pipeline.clinical_trials.tracker import categorize_moa
-        trial = {"title": "Anti-CD20 B cell depletion study", "interventions": ["Rituximab"], "summary": ""}
+
+        trial = {
+            "title": "Anti-CD20 B cell depletion study",
+            "interventions": ["Rituximab"],
+            "summary": "",
+        }
         assert categorize_moa(trial) == "B Cell Targeting"
 
     def test_jak_stat_inhibitor(self):
         from med_research.pipeline.clinical_trials.tracker import categorize_moa
-        trial = {"title": "JAK inhibitor trial for SLE", "interventions": ["Tofacitinib"], "summary": ""}
+
+        trial = {
+            "title": "JAK inhibitor trial for SLE",
+            "interventions": ["Tofacitinib"],
+            "summary": "",
+        }
         assert categorize_moa(trial) == "Type I IFN / JAK-STAT"
 
     def test_interferon_targeting(self):
         from med_research.pipeline.clinical_trials.tracker import categorize_moa
+
         trial = {"title": "Anti-IFNAR therapy", "interventions": ["Anifrolumab"], "summary": ""}
         assert categorize_moa(trial) == "Type I IFN / JAK-STAT"
 
     def test_complement_inhibitor(self):
         from med_research.pipeline.clinical_trials.tracker import categorize_moa
-        trial = {"title": "Complement C5 inhibition", "interventions": ["Eculizumab"], "summary": ""}
+
+        trial = {
+            "title": "Complement C5 inhibition",
+            "interventions": ["Eculizumab"],
+            "summary": "",
+        }
         assert categorize_moa(trial) == "Complement"
 
     def test_car_t_cell_therapy(self):
         from med_research.pipeline.clinical_trials.tracker import categorize_moa
-        trial = {"title": "CAR-T cell therapy for refractory lupus", "interventions": ["Anti-CD19 CAR-T"], "summary": ""}
+
+        trial = {
+            "title": "CAR-T cell therapy for refractory lupus",
+            "interventions": ["Anti-CD19 CAR-T"],
+            "summary": "",
+        }
         assert categorize_moa(trial) == "Cell Therapy"
 
     def test_cytokine_targeting(self):
         from med_research.pipeline.clinical_trials.tracker import categorize_moa
-        trial = {"title": "IL-6 receptor blockade in SLE", "interventions": ["Tocilizumab"], "summary": ""}
+
+        trial = {
+            "title": "IL-6 receptor blockade in SLE",
+            "interventions": ["Tocilizumab"],
+            "summary": "",
+        }
         assert categorize_moa(trial) == "Cytokine / Chemokine"
 
     def test_t_cell_costimulation(self):
         from med_research.pipeline.clinical_trials.tracker import categorize_moa
-        trial = {"title": "CD40 blockade in lupus", "interventions": ["Dapirolizumab"], "summary": ""}
+
+        trial = {
+            "title": "CD40 blockade in lupus",
+            "interventions": ["Dapirolizumab"],
+            "summary": "",
+        }
         assert categorize_moa(trial) == "T Cell / Costimulation"
 
     def test_falls_back_to_other(self):
         from med_research.pipeline.clinical_trials.tracker import categorize_moa
+
         trial = {"title": "Unknown novel therapy", "interventions": ["Mystery Drug"], "summary": ""}
         assert categorize_moa(trial) == "Other Targeted"
 
     def test_matches_on_summary_when_title_empty(self):
         from med_research.pipeline.clinical_trials.tracker import categorize_moa
-        trial = {"title": "Unknown therapy", "interventions": [], "summary": "Inhibiting complement C5a receptor reduces inflammation"}
+
+        trial = {
+            "title": "Unknown therapy",
+            "interventions": [],
+            "summary": "Inhibiting complement C5a receptor reduces inflammation",
+        }
         assert categorize_moa(trial) == "Complement"
 
 
@@ -276,27 +327,33 @@ class TestCategorizeMoa:
 #  phase ordering tests
 # ═══════════════════════════════════════════════════════════════════════
 
+
 class TestPrimaryPhase:
     """Tests for _primary_phase()."""
 
     def test_picks_highest_phase(self):
         from med_research.pipeline.clinical_trials.tracker import _primary_phase
+
         assert _primary_phase(["PHASE1", "PHASE2", "PHASE3"]) == "PHASE3"
 
     def test_handles_empty_list(self):
         from med_research.pipeline.clinical_trials.tracker import _primary_phase
+
         assert _primary_phase([]) == ""
 
     def test_single_phase(self):
         from med_research.pipeline.clinical_trials.tracker import _primary_phase
+
         assert _primary_phase(["PHASE2"]) == "PHASE2"
 
     def test_early_phase1_lower_than_phase1(self):
         from med_research.pipeline.clinical_trials.tracker import _primary_phase
+
         assert _primary_phase(["EARLY_PHASE1", "PHASE1"]) == "PHASE1"
 
     def test_phase4_highest(self):
         from med_research.pipeline.clinical_trials.tracker import _primary_phase
+
         assert _primary_phase(["PHASE1", "PHASE4", "PHASE2"]) == "PHASE4"
 
 
@@ -304,16 +361,20 @@ class TestPrimaryPhase:
 #  cross-referencing tests
 # ═══════════════════════════════════════════════════════════════════════
 
+
 class TestCrossReference:
     """Tests for cross_reference_trials()."""
 
     def test_matches_gene_by_id(self, sample_kg_entities):
         from med_research.pipeline.clinical_trials.tracker import cross_reference_trials
-        trials = [{
-            "title": "BTK inhibitor study",
-            "interventions": ["Ibrutinib"],
-            "summary": "Targeting BTK in lupus",
-        }]
+
+        trials = [
+            {
+                "title": "BTK inhibitor study",
+                "interventions": ["Ibrutinib"],
+                "summary": "Targeting BTK in lupus",
+            }
+        ]
         results = cross_reference_trials(trials, sample_kg_entities)
         assert results[0]["kg_matches"]["gene_count"] >= 1
         matched_genes = [g["gene_id"] for g in results[0]["kg_matches"]["genes"]]
@@ -321,11 +382,14 @@ class TestCrossReference:
 
     def test_matches_drug_by_name(self, sample_kg_entities):
         from med_research.pipeline.clinical_trials.tracker import cross_reference_trials
-        trials = [{
-            "title": "Belimumab trial",
-            "interventions": ["Belimumab"],
-            "summary": "BAFF blockade in SLE",
-        }]
+
+        trials = [
+            {
+                "title": "Belimumab trial",
+                "interventions": ["Belimumab"],
+                "summary": "BAFF blockade in SLE",
+            }
+        ]
         results = cross_reference_trials(trials, sample_kg_entities)
         assert results[0]["kg_matches"]["drug_count"] >= 1
         matched_drugs = [d["drug_id"] for d in results[0]["kg_matches"]["drugs"]]
@@ -333,11 +397,14 @@ class TestCrossReference:
 
     def test_no_match_returns_empty(self, sample_kg_entities):
         from med_research.pipeline.clinical_trials.tracker import cross_reference_trials
-        trials = [{
-            "title": "Completely unrelated study",
-            "interventions": ["Sugar pill"],
-            "summary": "Nothing to do with lupus genes",
-        }]
+
+        trials = [
+            {
+                "title": "Completely unrelated study",
+                "interventions": ["Sugar pill"],
+                "summary": "Nothing to do with lupus genes",
+            }
+        ]
         results = cross_reference_trials(trials, sample_kg_entities)
         assert not results[0]["kg_matches"]["has_match"]
         assert results[0]["kg_matches"]["gene_count"] == 0
@@ -345,6 +412,7 @@ class TestCrossReference:
 
     def test_has_match_flag(self, sample_kg_entities):
         from med_research.pipeline.clinical_trials.tracker import cross_reference_trials
+
         trials = [
             {"title": "BTK study", "interventions": ["Ibrutinib"], "summary": ""},
             {"title": "No match", "interventions": [], "summary": ""},
@@ -358,31 +426,67 @@ class TestCrossReference:
 #  stats computation tests
 # ═══════════════════════════════════════════════════════════════════════
 
+
 class TestComputeStats:
     """Tests for _compute_stats()."""
 
     def test_counts_total_trials(self):
         from med_research.pipeline.clinical_trials.tracker import _compute_stats
+
         trials = [
-            {"nct_id": "NCT1", "status": "RECRUITING", "phases": ["PHASE2"],
-             "moa_category": "B Cell Targeting", "sponsor_name": "Sponsor A",
-             "enrollment": 100, "kg_matches": {"has_match": True}},
-            {"nct_id": "NCT2", "status": "COMPLETED", "phases": ["PHASE3"],
-             "moa_category": "Type I IFN / JAK-STAT", "sponsor_name": "Sponsor B",
-             "enrollment": 200, "kg_matches": {"has_match": False}},
+            {
+                "nct_id": "NCT1",
+                "status": "RECRUITING",
+                "phases": ["PHASE2"],
+                "moa_category": "B Cell Targeting",
+                "sponsor_name": "Sponsor A",
+                "enrollment": 100,
+                "kg_matches": {"has_match": True},
+            },
+            {
+                "nct_id": "NCT2",
+                "status": "COMPLETED",
+                "phases": ["PHASE3"],
+                "moa_category": "Type I IFN / JAK-STAT",
+                "sponsor_name": "Sponsor B",
+                "enrollment": 200,
+                "kg_matches": {"has_match": False},
+            },
         ]
         stats = _compute_stats(trials)
         assert stats["total_trials"] == 2
 
     def test_counts_statuses(self):
         from med_research.pipeline.clinical_trials.tracker import _compute_stats
+
         trials = [
-            {"nct_id": "NCT1", "status": "RECRUITING", "phases": [], "moa_category": "X",
-             "sponsor_name": "A", "enrollment": 0, "kg_matches": {"has_match": False}},
-            {"nct_id": "NCT2", "status": "RECRUITING", "phases": [], "moa_category": "X",
-             "sponsor_name": "A", "enrollment": 0, "kg_matches": {"has_match": False}},
-            {"nct_id": "NCT3", "status": "COMPLETED", "phases": [], "moa_category": "X",
-             "sponsor_name": "B", "enrollment": 0, "kg_matches": {"has_match": False}},
+            {
+                "nct_id": "NCT1",
+                "status": "RECRUITING",
+                "phases": [],
+                "moa_category": "X",
+                "sponsor_name": "A",
+                "enrollment": 0,
+                "kg_matches": {"has_match": False},
+            },
+            {
+                "nct_id": "NCT2",
+                "status": "RECRUITING",
+                "phases": [],
+                "moa_category": "X",
+                "sponsor_name": "A",
+                "enrollment": 0,
+                "kg_matches": {"has_match": False},
+            },
+            {
+                "nct_id": "NCT3",
+                "status": "COMPLETED",
+                "phases": [],
+                "moa_category": "X",
+                "sponsor_name": "B",
+                "enrollment": 0,
+                "kg_matches": {"has_match": False},
+            },
         ]
         stats = _compute_stats(trials)
         assert stats["statuses"]["RECRUITING"] == 2
@@ -390,22 +494,52 @@ class TestComputeStats:
 
     def test_counts_moas(self):
         from med_research.pipeline.clinical_trials.tracker import _compute_stats
+
         trials = [
-            {"nct_id": "NCT1", "status": "RECRUITING", "phases": [], "moa_category": "B Cell Targeting",
-             "sponsor_name": "A", "enrollment": 0, "kg_matches": {"has_match": False}},
-            {"nct_id": "NCT2", "status": "RECRUITING", "phases": [], "moa_category": "B Cell Targeting",
-             "sponsor_name": "A", "enrollment": 0, "kg_matches": {"has_match": False}},
+            {
+                "nct_id": "NCT1",
+                "status": "RECRUITING",
+                "phases": [],
+                "moa_category": "B Cell Targeting",
+                "sponsor_name": "A",
+                "enrollment": 0,
+                "kg_matches": {"has_match": False},
+            },
+            {
+                "nct_id": "NCT2",
+                "status": "RECRUITING",
+                "phases": [],
+                "moa_category": "B Cell Targeting",
+                "sponsor_name": "A",
+                "enrollment": 0,
+                "kg_matches": {"has_match": False},
+            },
         ]
         stats = _compute_stats(trials)
         assert stats["moas"]["B Cell Targeting"] == 2
 
     def test_computes_enrollment_stats(self):
         from med_research.pipeline.clinical_trials.tracker import _compute_stats
+
         trials = [
-            {"nct_id": "NCT1", "status": "R", "phases": [], "moa_category": "X",
-             "sponsor_name": "A", "enrollment": 100, "kg_matches": {"has_match": False}},
-            {"nct_id": "NCT2", "status": "R", "phases": [], "moa_category": "X",
-             "sponsor_name": "A", "enrollment": 200, "kg_matches": {"has_match": False}},
+            {
+                "nct_id": "NCT1",
+                "status": "R",
+                "phases": [],
+                "moa_category": "X",
+                "sponsor_name": "A",
+                "enrollment": 100,
+                "kg_matches": {"has_match": False},
+            },
+            {
+                "nct_id": "NCT2",
+                "status": "R",
+                "phases": [],
+                "moa_category": "X",
+                "sponsor_name": "A",
+                "enrollment": 200,
+                "kg_matches": {"has_match": False},
+            },
         ]
         stats = _compute_stats(trials)
         assert stats["total_enrollment"] == 300
@@ -413,11 +547,26 @@ class TestComputeStats:
 
     def test_counts_kg_matched(self):
         from med_research.pipeline.clinical_trials.tracker import _compute_stats
+
         trials = [
-            {"nct_id": "NCT1", "status": "R", "phases": [], "moa_category": "X",
-             "sponsor_name": "A", "enrollment": 0, "kg_matches": {"has_match": True}},
-            {"nct_id": "NCT2", "status": "R", "phases": [], "moa_category": "X",
-             "sponsor_name": "A", "enrollment": 0, "kg_matches": {"has_match": False}},
+            {
+                "nct_id": "NCT1",
+                "status": "R",
+                "phases": [],
+                "moa_category": "X",
+                "sponsor_name": "A",
+                "enrollment": 0,
+                "kg_matches": {"has_match": True},
+            },
+            {
+                "nct_id": "NCT2",
+                "status": "R",
+                "phases": [],
+                "moa_category": "X",
+                "sponsor_name": "A",
+                "enrollment": 0,
+                "kg_matches": {"has_match": False},
+            },
         ]
         stats = _compute_stats(trials)
         assert stats["kg_matched_trials"] == 1
@@ -427,11 +576,13 @@ class TestComputeStats:
 #  KG entity loading tests
 # ═══════════════════════════════════════════════════════════════════════
 
+
 class TestLoadKgEntities:
     """Tests for load_kg_entities()."""
 
     def test_loads_from_real_kg_files(self):
         from med_research.pipeline.clinical_trials.tracker import load_kg_entities
+
         entities = load_kg_entities()
         assert isinstance(entities, dict)
         assert "genes" in entities
@@ -441,6 +592,7 @@ class TestLoadKgEntities:
 
     def test_genes_have_expected_keys(self):
         from med_research.pipeline.clinical_trials.tracker import load_kg_entities
+
         entities = load_kg_entities()
         for gene in entities["genes"].values():
             assert "name" in gene
@@ -448,6 +600,7 @@ class TestLoadKgEntities:
 
     def test_drugs_have_expected_keys(self):
         from med_research.pipeline.clinical_trials.tracker import load_kg_entities
+
         entities = load_kg_entities()
         for drug in entities["drugs"].values():
             assert "name" in drug
@@ -458,18 +611,42 @@ class TestLoadKgEntities:
 #  build crossref summary tests
 # ═══════════════════════════════════════════════════════════════════════
 
+
 class TestBuildCrossrefSummary:
     """Tests for _build_crossref_summary()."""
 
     def test_counts_gene_hits(self):
         from med_research.pipeline.clinical_trials.tracker import _build_crossref_summary
+
         trials = [
-            {"nct_id": "NCT1", "title": "BTK study", "phase_label": "Phase 2",
-             "status": "R", "kg_matches": {"has_match": True, "gene_count": 1, "drug_count": 0,
-             "genes": [{"gene_id": "BTK"}], "drugs": []}, "moa_category": "X"},
-            {"nct_id": "NCT2", "title": "BTK-JAK study", "phase_label": "Phase 2",
-             "status": "R", "kg_matches": {"has_match": True, "gene_count": 2, "drug_count": 0,
-             "genes": [{"gene_id": "BTK"}, {"gene_id": "JAK1"}], "drugs": []}, "moa_category": "X"},
+            {
+                "nct_id": "NCT1",
+                "title": "BTK study",
+                "phase_label": "Phase 2",
+                "status": "R",
+                "kg_matches": {
+                    "has_match": True,
+                    "gene_count": 1,
+                    "drug_count": 0,
+                    "genes": [{"gene_id": "BTK"}],
+                    "drugs": [],
+                },
+                "moa_category": "X",
+            },
+            {
+                "nct_id": "NCT2",
+                "title": "BTK-JAK study",
+                "phase_label": "Phase 2",
+                "status": "R",
+                "kg_matches": {
+                    "has_match": True,
+                    "gene_count": 2,
+                    "drug_count": 0,
+                    "genes": [{"gene_id": "BTK"}, {"gene_id": "JAK1"}],
+                    "drugs": [],
+                },
+                "moa_category": "X",
+            },
         ]
         result = _build_crossref_summary(trials)
         assert result["gene_hits"]["BTK"] == 2
@@ -477,13 +654,36 @@ class TestBuildCrossrefSummary:
 
     def test_counts_matched_trials(self):
         from med_research.pipeline.clinical_trials.tracker import _build_crossref_summary
+
         trials = [
-            {"nct_id": "NCT1", "title": "Match", "phase_label": "Phase 2",
-             "status": "R", "kg_matches": {"has_match": True, "gene_count": 1, "drug_count": 0,
-             "genes": [{"gene_id": "BTK"}], "drugs": []}, "moa_category": "X"},
-            {"nct_id": "NCT2", "title": "No match", "phase_label": "Phase 2",
-             "status": "R", "kg_matches": {"has_match": False, "gene_count": 0, "drug_count": 0,
-             "genes": [], "drugs": []}, "moa_category": "X"},
+            {
+                "nct_id": "NCT1",
+                "title": "Match",
+                "phase_label": "Phase 2",
+                "status": "R",
+                "kg_matches": {
+                    "has_match": True,
+                    "gene_count": 1,
+                    "drug_count": 0,
+                    "genes": [{"gene_id": "BTK"}],
+                    "drugs": [],
+                },
+                "moa_category": "X",
+            },
+            {
+                "nct_id": "NCT2",
+                "title": "No match",
+                "phase_label": "Phase 2",
+                "status": "R",
+                "kg_matches": {
+                    "has_match": False,
+                    "gene_count": 0,
+                    "drug_count": 0,
+                    "genes": [],
+                    "drugs": [],
+                },
+                "moa_category": "X",
+            },
         ]
         result = _build_crossref_summary(trials)
         assert result["total_matched"] == 1
@@ -494,6 +694,7 @@ class TestBuildCrossrefSummary:
 #  report generation tests
 # ═══════════════════════════════════════════════════════════════════════
 
+
 class TestGenerateReport:
     """Tests for generate_ct_report()."""
 
@@ -501,32 +702,43 @@ class TestGenerateReport:
         from med_research.pipeline.clinical_trials.report import generate_ct_report
 
         results = {
-            "trials": [{
-                "nct_id": "NCT00000001",
-                "title": "Belimumab Trial",
-                "summary": "A trial of belimumab",
-                "status": "RECRUITING",
-                "phases": ["PHASE3"],
-                "primary_phase": "PHASE3",
-                "phase_label": "Phase 3",
-                "interventions": ["Belimumab"],
-                "intervention_types": ["DRUG"],
-                "sponsor_name": "GSK",
-                "sponsor_class": "INDUSTRY",
-                "enrollment": 500,
-                "start_date": "2024-01-01",
-                "completion_date": "2026-01-01",
-                "why_stopped": "",
-                "conditions": ["SLE"],
-                "moa_category": "B Cell Targeting",
-                "kg_matches": {
-                    "has_match": True,
-                    "gene_count": 2,
-                    "drug_count": 1,
-                    "genes": [{"gene_id": "BAFF", "gene_name": "BAFF", "category": "B Cell Survival"}],
-                    "drugs": [{"drug_id": "belimumab", "drug_name": "Belimumab", "target": "BAFF", "category": "Biologic"}],
-                },
-            }],
+            "trials": [
+                {
+                    "nct_id": "NCT00000001",
+                    "title": "Belimumab Trial",
+                    "summary": "A trial of belimumab",
+                    "status": "RECRUITING",
+                    "phases": ["PHASE3"],
+                    "primary_phase": "PHASE3",
+                    "phase_label": "Phase 3",
+                    "interventions": ["Belimumab"],
+                    "intervention_types": ["DRUG"],
+                    "sponsor_name": "GSK",
+                    "sponsor_class": "INDUSTRY",
+                    "enrollment": 500,
+                    "start_date": "2024-01-01",
+                    "completion_date": "2026-01-01",
+                    "why_stopped": "",
+                    "conditions": ["SLE"],
+                    "moa_category": "B Cell Targeting",
+                    "kg_matches": {
+                        "has_match": True,
+                        "gene_count": 2,
+                        "drug_count": 1,
+                        "genes": [
+                            {"gene_id": "BAFF", "gene_name": "BAFF", "category": "B Cell Survival"}
+                        ],
+                        "drugs": [
+                            {
+                                "drug_id": "belimumab",
+                                "drug_name": "Belimumab",
+                                "target": "BAFF",
+                                "category": "Biologic",
+                            }
+                        ],
+                    },
+                }
+            ],
             "stats": {
                 "total_trials": 1,
                 "kg_matched_trials": 1,
@@ -540,17 +752,19 @@ class TestGenerateReport:
             "kg_crossref": {
                 "gene_hits": {"BAFF": 1},
                 "drug_hits": {"belimumab": 1},
-                "trials_with_matches": [{
-                    "nct_id": "NCT00000001",
-                    "title": "Belimumab Trial",
-                    "phase": "Phase 3",
-                    "status": "RECRUITING",
-                    "gene_count": 2,
-                    "drug_count": 1,
-                    "genes": ["BAFF"],
-                    "drugs": ["belimumab"],
-                    "moa": "B Cell Targeting",
-                }],
+                "trials_with_matches": [
+                    {
+                        "nct_id": "NCT00000001",
+                        "title": "Belimumab Trial",
+                        "phase": "Phase 3",
+                        "status": "RECRUITING",
+                        "gene_count": 2,
+                        "drug_count": 1,
+                        "genes": ["BAFF"],
+                        "drugs": ["belimumab"],
+                        "moa": "B Cell Targeting",
+                    }
+                ],
                 "total_matched": 1,
             },
         }
@@ -562,41 +776,69 @@ class TestGenerateReport:
         from med_research.pipeline.clinical_trials.report import generate_ct_report
 
         results = {
-            "trials": [{
-                "nct_id": "NCT00000001",
-                "title": "Belimumab Trial",
-                "summary": "A trial of belimumab",
-                "status": "RECRUITING",
-                "phases": ["PHASE3"],
-                "primary_phase": "PHASE3",
-                "phase_label": "Phase 3",
-                "interventions": ["Belimumab"],
-                "intervention_types": ["DRUG"],
-                "sponsor_name": "GSK",
-                "sponsor_class": "INDUSTRY",
-                "enrollment": 500,
-                "start_date": "",
-                "completion_date": "",
-                "why_stopped": "",
-                "conditions": ["SLE"],
-                "moa_category": "B Cell Targeting",
-                "kg_matches": {
-                    "has_match": True, "gene_count": 2, "drug_count": 1,
-                    "genes": [{"gene_id": "BAFF", "gene_name": "BAFF", "category": "B Cell Survival"}],
-                    "drugs": [{"drug_id": "belimumab", "drug_name": "Belimumab", "target": "BAFF", "category": "Biologic"}],
-                },
-            }],
+            "trials": [
+                {
+                    "nct_id": "NCT00000001",
+                    "title": "Belimumab Trial",
+                    "summary": "A trial of belimumab",
+                    "status": "RECRUITING",
+                    "phases": ["PHASE3"],
+                    "primary_phase": "PHASE3",
+                    "phase_label": "Phase 3",
+                    "interventions": ["Belimumab"],
+                    "intervention_types": ["DRUG"],
+                    "sponsor_name": "GSK",
+                    "sponsor_class": "INDUSTRY",
+                    "enrollment": 500,
+                    "start_date": "",
+                    "completion_date": "",
+                    "why_stopped": "",
+                    "conditions": ["SLE"],
+                    "moa_category": "B Cell Targeting",
+                    "kg_matches": {
+                        "has_match": True,
+                        "gene_count": 2,
+                        "drug_count": 1,
+                        "genes": [
+                            {"gene_id": "BAFF", "gene_name": "BAFF", "category": "B Cell Survival"}
+                        ],
+                        "drugs": [
+                            {
+                                "drug_id": "belimumab",
+                                "drug_name": "Belimumab",
+                                "target": "BAFF",
+                                "category": "Biologic",
+                            }
+                        ],
+                    },
+                }
+            ],
             "stats": {
-                "total_trials": 1, "kg_matched_trials": 1, "total_enrollment": 500,
-                "avg_enrollment": 500, "statuses": {"RECRUITING": 1},
-                "phases": {"Phase 3": 1}, "moas": {"B Cell Targeting": 1},
+                "total_trials": 1,
+                "kg_matched_trials": 1,
+                "total_enrollment": 500,
+                "avg_enrollment": 500,
+                "statuses": {"RECRUITING": 1},
+                "phases": {"Phase 3": 1},
+                "moas": {"B Cell Targeting": 1},
                 "top_sponsors": {"GSK": 1},
             },
             "kg_crossref": {
-                "gene_hits": {"BAFF": 1}, "drug_hits": {"belimumab": 1},
-                "trials_with_matches": [{"nct_id": "NCT00000001", "title": "Test", "phase": "Phase 3",
-                 "status": "R", "gene_count": 1, "drug_count": 1, "genes": ["BAFF"],
-                 "drugs": ["belimumab"], "moa": "B Cell"}],
+                "gene_hits": {"BAFF": 1},
+                "drug_hits": {"belimumab": 1},
+                "trials_with_matches": [
+                    {
+                        "nct_id": "NCT00000001",
+                        "title": "Test",
+                        "phase": "Phase 3",
+                        "status": "R",
+                        "gene_count": 1,
+                        "drug_count": 1,
+                        "genes": ["BAFF"],
+                        "drugs": ["belimumab"],
+                        "moa": "B Cell",
+                    }
+                ],
                 "total_matched": 1,
             },
         }
@@ -616,23 +858,28 @@ class TestGenerateReport:
 #  escape_html tests
 # ═══════════════════════════════════════════════════════════════════════
 
+
 class TestEscapeHtml:
     """Tests for _escape_html in report.py."""
 
     def test_escapes_angle_brackets(self):
         from med_research.pipeline.clinical_trials.report import _escape_html
+
         assert "&lt;script&gt;" in _escape_html("<script>")
 
     def test_escapes_ampersand(self):
         from med_research.pipeline.clinical_trials.report import _escape_html
+
         assert "&amp;" in _escape_html("A & B")
 
     def test_empty_string_returns_empty(self):
         from med_research.pipeline.clinical_trials.report import _escape_html
+
         assert _escape_html("") == ""
 
     def test_none_returns_empty(self):
         from med_research.pipeline.clinical_trials.report import _escape_html
+
         assert _escape_html(None) == ""
 
 
@@ -640,20 +887,24 @@ class TestEscapeHtml:
 #  hex_to_rgba tests
 # ═══════════════════════════════════════════════════════════════════════
 
+
 class TestHexToRgba:
     """Tests for _hex_to_rgba in report.py."""
 
     def test_converts_color(self):
         from med_research.pipeline.clinical_trials.report import _hex_to_rgba
+
         assert _hex_to_rgba("#4ade80") == "74,222,128,0.15"
 
     def test_returns_default_for_short(self):
         from med_research.pipeline.clinical_trials.report import _hex_to_rgba
+
         result = _hex_to_rgba("#fff")
         assert "120,120,144" in result
 
     def test_returns_default_for_empty(self):
         from med_research.pipeline.clinical_trials.report import _hex_to_rgba
+
         result = _hex_to_rgba("")
         assert "120,120,144" in result
 
@@ -679,5 +930,3 @@ def test_cmd_trials_uses_disease_query(monkeypatch):
     # Default disease keeps the SLE query
     assert cmd_trials(parser.parse_args(["trials"])) == 0
     assert captured["query"] == "lupus OR SLE"
-
-

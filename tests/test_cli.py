@@ -8,9 +8,13 @@ from unittest.mock import patch
 
 import pytest
 
+pytestmark = pytest.mark.unit
+
 
 def test_modules_json_lists_registry_modules(capsys):
     """``modules --json`` must list every registry adapter."""
+
+
     from med_research.cli import cmd_modules
     from med_research.pipeline.registry import list_modules
 
@@ -208,4 +212,3 @@ def test_run_all_parallel_uses_scheduler(monkeypatch):
     assert captured["parallel"] is True
     assert captured["levels"] is not None
     assert "knowledge_graph" in captured["modules"]
-

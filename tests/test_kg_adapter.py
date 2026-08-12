@@ -6,9 +6,12 @@ import json
 from pathlib import Path
 
 import networkx as nx
+import pytest
 
 from med_research.pipeline.knowledge_graph.adapter import KnowledgeGraphModule
 from tests.test_pipeline_base import ModuleAdapterContract
+
+pytestmark = pytest.mark.unit
 
 
 class TestKnowledgeGraphAdapter(ModuleAdapterContract):

@@ -7,8 +7,9 @@ Tests cover:
   - Data loading functions
 """
 
-
 import pytest
+
+pytestmark = pytest.mark.unit
 
 
 class TestGetDiseaseGeneList:
@@ -17,6 +18,7 @@ class TestGetDiseaseGeneList:
     @pytest.fixture
     def sample_kg_genes(self):
         from med_research.pipeline.bioinformatics.enrichment import load_kg_genes
+
         return load_kg_genes()
 
     @pytest.mark.parametrize("disease_id", ["sle", "ra", "ibd"])
@@ -68,10 +70,24 @@ class TestGetDiseaseGeneList:
         )
         symbols = {g["gene_id"] for g in gene_list}
         expected = {
-            "HLA-DRB1", "IRF5", "STAT4", "BLK", "TNFAIP3",
-            "ITGAM", "BANK1", "PTPN22", "TNFSF4", "FCGR2A",
-            "FCGR3A", "TLR7", "TLR9", "BAFF", "IFNAR1",
-            "JAK1", "TYK2", "BTK",
+            "HLA-DRB1",
+            "IRF5",
+            "STAT4",
+            "BLK",
+            "TNFAIP3",
+            "ITGAM",
+            "BANK1",
+            "PTPN22",
+            "TNFSF4",
+            "FCGR2A",
+            "FCGR3A",
+            "TLR7",
+            "TLR9",
+            "BAFF",
+            "IFNAR1",
+            "JAK1",
+            "TYK2",
+            "BTK",
         }
         assert expected.issubset(symbols)
 
@@ -238,9 +254,7 @@ class TestCrossReferenceWithKG:
     def test_empty_pathways(self, sample_enrichment):
         from med_research.pipeline.bioinformatics.enrichment import cross_reference_with_kg_pathways
 
-        matches = cross_reference_with_kg_pathways(
-            sample_enrichment, {"pathways": []}
-        )
+        matches = cross_reference_with_kg_pathways(sample_enrichment, {"pathways": []})
         assert matches == {}
 
 

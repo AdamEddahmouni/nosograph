@@ -10,6 +10,8 @@ from pathlib import Path
 
 import pytest
 
+pytestmark = pytest.mark.unit
+
 
 class TestEnrichmentDotPlot:
     """Tests for _generate_enrichment_dotplot()."""
@@ -57,6 +59,7 @@ class TestEnrichmentDotPlot:
         assert len(result) > 100
         # Verify it's valid base64 (decode/re-encode roundtrip)
         import base64
+
         decoded = base64.b64decode(result)
         assert len(decoded) > 0
 
@@ -112,35 +115,43 @@ class TestEscapeHtml:
 
     def test_ampersand(self):
         from med_research.pipeline.bioinformatics.report import escape_html
+
         assert escape_html("A & B") == "A &amp; B"
 
     def test_less_than(self):
         from med_research.pipeline.bioinformatics.report import escape_html
+
         assert escape_html("x < 5") == "x &lt; 5"
 
     def test_greater_than(self):
         from med_research.pipeline.bioinformatics.report import escape_html
+
         assert escape_html("x > 5") == "x &gt; 5"
 
     def test_double_quote(self):
         from med_research.pipeline.bioinformatics.report import escape_html
+
         assert escape_html('He said "hello"') == "He said &quot;hello&quot;"
 
     def test_combined(self):
         from med_research.pipeline.bioinformatics.report import escape_html
+
         assert escape_html('<a href="x&y">') == "&lt;a href=&quot;x&amp;y&quot;&gt;"
 
     def test_no_special_chars(self):
         from med_research.pipeline.bioinformatics.report import escape_html
+
         text = "Hello, world 2026!"
         assert escape_html(text) == text
 
     def test_none_input(self):
         from med_research.pipeline.bioinformatics.report import escape_html
+
         assert escape_html(None) == ""
 
     def test_empty_string(self):
         from med_research.pipeline.bioinformatics.report import escape_html
+
         assert escape_html("") == ""
 
 
@@ -190,9 +201,30 @@ class TestGenerateBioinformaticsReport:
     @pytest.fixture
     def sample_gene_list(self):
         return [
-            {"gene_id": "IRF5", "symbol": "IRF5", "name": "Interferon Regulatory Factor 5", "category": "Type I Interferon Pathway", "odds_ratio": 1.8, "chromosome": "7q32.1"},
-            {"gene_id": "BTK", "symbol": "BTK", "name": "Bruton Tyrosine Kinase", "category": "B Cell Signaling", "odds_ratio": None, "chromosome": "Xq22.1"},
-            {"gene_id": "STAT4", "symbol": "STAT4", "name": "Signal Transducer and Activator of Transcription 4", "category": "JAK-STAT Signaling", "odds_ratio": 1.5, "chromosome": "2q32.2"},
+            {
+                "gene_id": "IRF5",
+                "symbol": "IRF5",
+                "name": "Interferon Regulatory Factor 5",
+                "category": "Type I Interferon Pathway",
+                "odds_ratio": 1.8,
+                "chromosome": "7q32.1",
+            },
+            {
+                "gene_id": "BTK",
+                "symbol": "BTK",
+                "name": "Bruton Tyrosine Kinase",
+                "category": "B Cell Signaling",
+                "odds_ratio": None,
+                "chromosome": "Xq22.1",
+            },
+            {
+                "gene_id": "STAT4",
+                "symbol": "STAT4",
+                "name": "Signal Transducer and Activator of Transcription 4",
+                "category": "JAK-STAT Signaling",
+                "odds_ratio": 1.5,
+                "chromosome": "2q32.2",
+            },
         ]
 
     @pytest.fixture
@@ -254,7 +286,9 @@ class TestGenerateBioinformaticsReport:
             "top_hubs_overall": [],
         }
 
-    def test_creates_output_file_enrichment_only(self, sample_enrichment, sample_gene_list, tmp_path, monkeypatch):
+    def test_creates_output_file_enrichment_only(
+        self, sample_enrichment, sample_gene_list, tmp_path, monkeypatch
+    ):
         import med_research.pipeline.bioinformatics.report as report_module
 
         out_path = tmp_path / "bioinformatics_report.html"
@@ -296,8 +330,14 @@ class TestGenerateBioinformaticsReport:
         assert "</html>" in content
 
     def test_report_with_enrichment_and_ppi(
-        self, sample_enrichment, sample_gene_list, sample_kg_matches,
-        sample_hub_scores, sample_ppi_crossref, tmp_path, monkeypatch
+        self,
+        sample_enrichment,
+        sample_gene_list,
+        sample_kg_matches,
+        sample_hub_scores,
+        sample_ppi_crossref,
+        tmp_path,
+        monkeypatch,
     ):
         import med_research.pipeline.bioinformatics.report as report_module
 
@@ -322,7 +362,9 @@ class TestGenerateBioinformaticsReport:
         assert "PPI Network Hub Analysis" in content
         assert "Fenebrutinib" in content
 
-    def test_report_with_enrichment_section(self, sample_enrichment, sample_gene_list, tmp_path, monkeypatch):
+    def test_report_with_enrichment_section(
+        self, sample_enrichment, sample_gene_list, tmp_path, monkeypatch
+    ):
         import med_research.pipeline.bioinformatics.report as report_module
 
         out_path = tmp_path / "bioinformatics_report.html"
@@ -345,7 +387,9 @@ class TestGenerateBioinformaticsReport:
         assert "Significant Enriched Pathways" in content
         assert "Lupus Genes Analyzed" in content
 
-    def test_report_with_ppi_section(self, sample_hub_scores, sample_ppi_crossref, tmp_path, monkeypatch):
+    def test_report_with_ppi_section(
+        self, sample_hub_scores, sample_ppi_crossref, tmp_path, monkeypatch
+    ):
         import med_research.pipeline.bioinformatics.report as report_module
 
         out_path = tmp_path / "bioinformatics_report.html"
@@ -492,5 +536,3 @@ class TestGenerateBioinformaticsReport:
         assert "Knowledge Graph" in content
         assert "Drug Repurposing Report" in content
         assert "Literature Mining Report" in content
-
-

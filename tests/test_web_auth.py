@@ -7,6 +7,8 @@ from starlette.requests import Request
 
 from med_research.web.services import auth
 
+pytestmark = pytest.mark.unit
+
 
 def _request(*, headers=None, cookies=None, client_host="127.0.0.1") -> Request:
     all_headers = dict(headers or {})
@@ -34,7 +36,9 @@ def test_local_session_is_signed_and_header_cannot_switch_identity(monkeypatch):
     monkeypatch.setenv("AUTH_MODE", "local")
     monkeypatch.setenv("DEBUG", "false")
     monkeypatch.setenv("AUTH_SESSION_SECRET", "test-session-secret")
-    monkeypatch.setenv("LOCAL_AUTH_USERS", json.dumps({"alice": "alice-password", "bob": "bob-password"}))
+    monkeypatch.setenv(
+        "LOCAL_AUTH_USERS", json.dumps({"alice": "alice-password", "bob": "bob-password"})
+    )
 
     issued = int(time.time())
     token = auth.create_session_token("alice", now=issued)
@@ -66,12 +70,8 @@ def test_proxy_principal_requires_trusted_source(monkeypatch):
     monkeypatch.setenv("DEBUG", "false")
     monkeypatch.setenv("AUTH_TRUSTED_PROXY_IPS", "10.0.0.5")
 
-    trusted = _request(
-        headers={"X-Authenticated-User": "alice"}, client_host="10.0.0.5"
-    )
-    untrusted = _request(
-        headers={"X-Authenticated-User": "bob"}, client_host="192.168.1.10"
-    )
+    trusted = _request(headers={"X-Authenticated-User": "alice"}, client_host="10.0.0.5")
+    untrusted = _request(headers={"X-Authenticated-User": "bob"}, client_host="192.168.1.10")
     assert auth.get_researcher_id(trusted) == "alice"
     with pytest.raises(HTTPException) as error:
         auth.get_researcher_id(untrusted)

@@ -1,3 +1,5 @@
+
+
 """Error contract tests for typed API exceptions."""
 
 import json
@@ -14,6 +16,8 @@ from med_research.exceptions import (
     raise_api_error,
     retry_with_backoff,
 )
+
+pytestmark = pytest.mark.unit
 
 
 class TestClassifyApiError:

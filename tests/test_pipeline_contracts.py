@@ -25,9 +25,15 @@ _NON_TYPED_CONTRACT_MODULES = frozenset({"knowledge_graph", "evidence_workspace"
 _SOURCE_ROOT = Path(__file__).parents[1] / "src" / "med_research"
 _DISPATCH_SOURCE = _SOURCE_ROOT / "pipeline" / "dispatch.py"
 
+pytestmark = pytest.mark.unit
+
+
+
 
 class _DirectAdapterMethodVisitor(ast.NodeVisitor):
     """Find adapter execution/reporting calls that bypass ``pipeline.dispatch``."""
+
+
 
     _ADAPTER_METHODS = frozenset({"run", "report", "build_provenance"})
     _ADAPTER_RECEIVER_NAMES = frozenset(
@@ -76,15 +82,10 @@ class _DirectAdapterMethodVisitor(ast.NodeVisitor):
         self.generic_visit(node)
 
     def visit_Call(self, node: ast.Call) -> None:
-        if (
-            isinstance(node.func, ast.Attribute)
-            and node.func.attr in self._ADAPTER_METHODS
-        ):
+        if isinstance(node.func, ast.Attribute) and node.func.attr in self._ADAPTER_METHODS:
             receiver = node.func.value
             if self._is_adapter_receiver(receiver):
-                self.violations.append(
-                    f"{self.path}:{node.lineno}: {ast.unparse(node)}"
-                )
+                self.violations.append(f"{self.path}:{node.lineno}: {ast.unparse(node)}")
         self.generic_visit(node)
 
     def _is_registry_get_module(self, node: ast.AST | None) -> bool:
@@ -237,8 +238,7 @@ def test_registered_adapter_methods_are_only_called_by_dispatch() -> None:
     violations = _find_direct_adapter_methods()
     assert not violations, (
         "Registered adapter .run(), .report(), and .build_provenance() calls "
-        "must go through med_research.pipeline.dispatch:\n"
-        + "\n".join(violations)
+        "must go through med_research.pipeline.dispatch:\n" + "\n".join(violations)
     )
 
 
@@ -412,9 +412,7 @@ def test_workspace_generated_cli_and_web_models_match_contract() -> None:
     with pytest.raises(ValidationError):
         body_model.model_validate({"question": "Find targets", "sources": []})
     with pytest.raises(ValidationError):
-        body_model.model_validate(
-            {"question": "Find targets", "candidate_type": "invalid"}
-        )
+        body_model.model_validate({"question": "Find targets", "candidate_type": "invalid"})
 
     # The specialized Workspace CLI is generated from the same registry
     # properties, with disease_id represented by its established --disease
@@ -470,15 +468,21 @@ def test_workspace_persisted_versions_are_exposed_in_openapi() -> None:
     catalog_schema = openapi["components"]["schemas"]["PipelineModuleCatalogEntry"]
     assert "persisted_request_schema_version" in catalog_schema["properties"]
     assert "persisted_result_schema_version" in catalog_schema["properties"]
-    assert openapi["paths"]["/api/system/modules"]["get"]["responses"]["200"]["content"][
-        "application/json"
-    ]["schema"]["$ref"] == "#/components/schemas/PipelineModulesResponse"
+    assert (
+        openapi["paths"]["/api/system/modules"]["get"]["responses"]["200"]["content"][
+            "application/json"
+        ]["schema"]["$ref"]
+        == "#/components/schemas/PipelineModulesResponse"
+    )
 
     run_schema = openapi["components"]["schemas"]["WorkspaceRunResponse"]
     assert run_schema["properties"]["request_schema_version"]["const"] == "1.0"
     assert run_schema["properties"]["result_schema_version"]["const"] == "1.1"
     assert run_schema["properties"]["request"]["$ref"] == "#/components/schemas/WorkspaceRequestV1"
-    assert run_schema["properties"]["dossier"]["anyOf"][0]["$ref"] == "#/components/schemas/WorkspaceResultV1"
+    assert (
+        run_schema["properties"]["dossier"]["anyOf"][0]["$ref"]
+        == "#/components/schemas/WorkspaceResultV1"
+    )
 
 
 def test_registry_catalog_generates_application_routes() -> None:
@@ -539,10 +543,19 @@ def test_pipeline_gateway_exposes_typed_boundaries(tmp_path: Path) -> None:
     expected_report = tmp_path / "gwas.html"
 
     with (
-        patch("med_research.pipeline.dispatch.execute_module", return_value=expected_result) as execute,
-        patch("med_research.pipeline.dispatch.module_coverage_for", return_value=expected_coverage) as coverage,
-        patch("med_research.pipeline.dispatch.build_module_provenance", return_value=expected_provenance) as provenance,
-        patch("med_research.pipeline.dispatch.render_module_report", return_value=expected_report) as report,
+        patch(
+            "med_research.pipeline.dispatch.execute_module", return_value=expected_result
+        ) as execute,
+        patch(
+            "med_research.pipeline.dispatch.module_coverage_for", return_value=expected_coverage
+        ) as coverage,
+        patch(
+            "med_research.pipeline.dispatch.build_module_provenance",
+            return_value=expected_provenance,
+        ) as provenance,
+        patch(
+            "med_research.pipeline.dispatch.render_module_report", return_value=expected_report
+        ) as report,
     ):
         result = gateway.execute("gwas", "ra", export_html=True, max_studies=5)
         metadata = gateway.coverage("gwas", "ra")
@@ -610,9 +623,7 @@ def test_api_routes_validate_contract_backed_results(
     from med_research.web.main import app
 
     assert module_id in RESULT_CONTRACTS or module_id in _NON_TYPED_CONTRACT_MODULES
-    route = next(
-        route for route in _iter_api_routes(app) if route.path == route_path
-    )
+    route = next(route for route in _iter_api_routes(app) if route.path == route_path)
     assert route.response_model is not None
 
 

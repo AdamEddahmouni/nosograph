@@ -4,6 +4,8 @@ from __future__ import annotations
 
 from pathlib import Path
 
+import pytest
+
 from med_research.pipeline.bioinformatics.adapter import (
     EnrichmentModule,
     GwasModule,
@@ -12,9 +14,13 @@ from med_research.pipeline.bioinformatics.adapter import (
 from med_research.pipeline.provenance import build_provenance
 from tests.test_pipeline_base import ModuleAdapterContract
 
+pytestmark = pytest.mark.unit
+
 
 class BioinformaticsAdapterContract(ModuleAdapterContract):
     """Shared provenance assertions for bioinformatics adapters."""
+
+
 
     provenance_sources: list[str]
     provenance_scoring: dict

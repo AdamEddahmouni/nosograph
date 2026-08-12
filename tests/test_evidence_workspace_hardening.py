@@ -1,5 +1,7 @@
 from datetime import date
 
+import pytest
+
 from med_research.pipeline.evidence_workspace.report import render_html
 from med_research.pipeline.evidence_workspace.schemas import (
     EvidenceDossier,
@@ -7,6 +9,8 @@ from med_research.pipeline.evidence_workspace.schemas import (
     ResearchRequest,
 )
 from med_research.pipeline.evidence_workspace.sources import PubMedSource
+
+pytestmark = pytest.mark.unit
 
 
 def test_source_applies_date_window():

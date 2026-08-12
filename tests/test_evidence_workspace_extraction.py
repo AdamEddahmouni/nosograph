@@ -1,5 +1,9 @@
+import pytest
+
 from med_research.pipeline.evidence_workspace.extraction import extract_claims
 from med_research.pipeline.evidence_workspace.schemas import EvidenceRecord
+
+pytestmark = pytest.mark.unit
 
 
 def _record(text="Baricitinib targets JAK1 in SLE and improved disease activity."):

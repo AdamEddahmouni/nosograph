@@ -7,9 +7,11 @@ import pytest
 from med_research.pipeline.dispatch import execute_module
 from med_research.pipeline.scheduler import resolve_depends_on, run_levels, validate_dag
 
-pytestmark = pytest.mark.integration
-
 DISEASE = "ra"
+
+pytestmark = [pytest.mark.integration]
+
+
 
 
 class TestSchedulerRegistryIntegration:

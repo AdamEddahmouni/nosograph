@@ -1,8 +1,12 @@
 from datetime import datetime, timezone
 
+import pytest
+
 from med_research.web.services.review_links import create_review_link, verify_review_token
 from med_research.web.services.workspace_store import WorkspaceRunStore
 from med_research.web.tasks.analysis_tasks import celery_app
+
+pytestmark = pytest.mark.unit
 
 
 def test_due_digest_researchers_use_configured_local_schedule(tmp_path):
@@ -53,12 +57,8 @@ def test_secure_review_endpoint_redirects_only_valid_tokens(monkeypatch):
     assert link is not None
     token = link.split("token=", 1)[1]
     with TestClient(app) as client:
-        response = client.get(
-            f"/api/workspace/digest/review?token={token}", follow_redirects=False
-        )
-        invalid = client.get(
-            "/api/workspace/digest/review?token=invalid", follow_redirects=False
-        )
+        response = client.get(f"/api/workspace/digest/review?token={token}", follow_redirects=False)
+        invalid = client.get("/api/workspace/digest/review?token=invalid", follow_redirects=False)
 
     assert response.status_code == 303
     assert "researcher_id=alice" in response.headers["location"]

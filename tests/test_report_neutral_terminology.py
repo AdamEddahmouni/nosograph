@@ -9,9 +9,11 @@ import pytest
 
 from med_research.pipeline.reporting import disease_context
 
+UNRELATED_TERMS = re.compile(r"\b(?:lupus|sle|systemic lupus erythematosus)\b", re.IGNORECASE)
+
 pytestmark = pytest.mark.unit
 
-UNRELATED_TERMS = re.compile(r"\b(?:lupus|sle|systemic lupus erythematosus)\b", re.IGNORECASE)
+
 
 
 def _visible_text(html: str) -> str:
@@ -123,13 +125,15 @@ def test_evidence_gatherer_report_avoids_unrelated_lupus_copy(disease_id):
         "total_results": 1,
         "elapsed_seconds": 0.5,
         "results_by_source": {"pubmed": 1},
-        "all_results": [{
-            "source_type": "pubmed",
-            "title": f"Novel therapy in {disease_id}",
-            "year": "2024",
-            "snippet": "Clinical outcomes",
-            "url": "https://example.com/1",
-        }],
+        "all_results": [
+            {
+                "source_type": "pubmed",
+                "title": f"Novel therapy in {disease_id}",
+                "year": "2024",
+                "snippet": "Clinical outcomes",
+                "url": "https://example.com/1",
+            }
+        ],
         "crossref": {"pairs": []},
     }
     provenance = build_provenance(
@@ -156,18 +160,20 @@ def test_llm_extractor_report_avoids_unrelated_lupus_copy(disease_id):
         "total_extracted": 1,
         "successful_extractions": 1,
         "elapsed_seconds": 1.0,
-        "extractions": [{
-            "title": f"Biologic therapy in {disease_id}",
-            "year": "2024",
-            "source_type": "pubmed",
-            "source": "PMID:123",
-            "evidence_level": "rct",
-            "model_system": "human",
-            "key_findings": "Improved outcomes",
-            "drugs_mentioned": ["adalimumab"],
-            "confidence": 80,
-            "relevance_to_query": 85,
-        }],
+        "extractions": [
+            {
+                "title": f"Biologic therapy in {disease_id}",
+                "year": "2024",
+                "source_type": "pubmed",
+                "source": "PMID:123",
+                "evidence_level": "rct",
+                "model_system": "human",
+                "key_findings": "Improved outcomes",
+                "drugs_mentioned": ["adalimumab"],
+                "confidence": 80,
+                "relevance_to_query": 85,
+            }
+        ],
         "stats": {
             "evidence_levels": {"rct": 1},
             "model_systems": {"human": 1},
@@ -227,7 +233,10 @@ def test_evidence_monitor_report_avoids_unrelated_lupus_copy(disease_id):
         cache_or_live="cache",
     )
     report_path = generate_html_report(
-        diff, prev_snapshot, curr_snapshot, provenance=provenance,
+        diff,
+        prev_snapshot,
+        curr_snapshot,
+        provenance=provenance,
     )
     html = Path(report_path).read_text(encoding="utf-8")
     visible = _visible_text(html)
@@ -236,7 +245,10 @@ def test_evidence_monitor_report_avoids_unrelated_lupus_copy(disease_id):
 
 @pytest.mark.parametrize("disease_id", ["ra", "ibd"])
 def test_drug_repurposing_report_avoids_unrelated_lupus_copy(
-    disease_id, sample_graph, sample_genes, sample_candidates,
+    disease_id,
+    sample_graph,
+    sample_genes,
+    sample_candidates,
 ):
     from med_research.pipeline.drug_repurposing.engine import (
         identify_untargeted_genes,
@@ -247,7 +259,10 @@ def test_drug_repurposing_report_avoids_unrelated_lupus_copy(
     untargeted = identify_untargeted_genes(sample_graph, disease_id=disease_id)
     untargeted_ids = {gene["id"] for gene in untargeted}
     scored = score_candidates(
-        sample_graph, sample_candidates, sample_genes, disease_id=disease_id,
+        sample_graph,
+        sample_candidates,
+        sample_genes,
+        disease_id=disease_id,
     )
     scored = [candidate for candidate in scored if candidate["gene_id"] in untargeted_ids]
     assert scored
@@ -271,26 +286,35 @@ def test_bioinformatics_report_avoids_unrelated_lupus_copy(disease_id):
     enrichment_results = {
         "GO_Biological_Process_2023": {
             "library": "GO_Biological_Process_2023",
-            "terms": [{
-                "term": "immune response",
-                "adj_p_value": 0.01,
-                "genes": ["TNF"],
-                "odds_ratio": 4.0,
-            }],
+            "terms": [
+                {
+                    "term": "immune response",
+                    "adj_p_value": 0.01,
+                    "genes": ["TNF"],
+                    "odds_ratio": 4.0,
+                }
+            ],
             "total_significant": 1,
         },
     }
     gene_list = [
-        {"gene_id": "TNF", "symbol": "TNF", "name": "Tumor Necrosis Factor", "category": "Cytokine"},
+        {
+            "gene_id": "TNF",
+            "symbol": "TNF",
+            "name": "Tumor Necrosis Factor",
+            "category": "Cytokine",
+        },
     ]
-    hub_scores = [{
-        "symbol": "TNF",
-        "hub_score": 0.12,
-        "is_lupus_gene": True,
-        "degree": 8,
-        "betweenness_centrality": 0.04,
-        "gene_id": "TNF",
-    }]
+    hub_scores = [
+        {
+            "symbol": "TNF",
+            "hub_score": 0.12,
+            "is_lupus_gene": True,
+            "degree": 8,
+            "betweenness_centrality": 0.04,
+            "gene_id": "TNF",
+        }
+    ]
     ppi_crossref = {
         "hub_candidate_matches": [],
         "hub_untargeted": [],
@@ -305,12 +329,14 @@ def test_bioinformatics_report_avoids_unrelated_lupus_copy(disease_id):
         "edges": [{"source": "TNF", "target": "IL6", "score": 0.85}],
     }
     gwas_results = {
-        "snp_data": [{
-            "chromosome": "6",
-            "position": 100000,
-            "p_value": 1e-8,
-            "rsid": "rs123456",
-        }],
+        "snp_data": [
+            {
+                "chromosome": "6",
+                "position": 100000,
+                "p_value": 1e-8,
+                "rsid": "rs123456",
+            }
+        ],
     }
     gwas_crossref = {
         "validated": {},
@@ -337,7 +363,8 @@ def test_bioinformatics_report_avoids_unrelated_lupus_copy(disease_id):
 
 @pytest.mark.parametrize("disease_id", ["ra", "ibd"])
 def test_literature_mining_report_avoids_unrelated_lupus_copy(
-    disease_id, sample_candidates,
+    disease_id,
+    sample_candidates,
 ):
     from med_research.pipeline.literature_mining.report import generate_literature_report
 
@@ -370,7 +397,10 @@ def test_literature_mining_report_avoids_unrelated_lupus_copy(
         "pathways": {},
     }
     report_path = generate_literature_report(
-        results, entities, sample_candidates, disease_id=disease_id,
+        results,
+        entities,
+        sample_candidates,
+        disease_id=disease_id,
     )
     html = Path(report_path).read_text(encoding="utf-8")
     visible = _visible_text(html)
@@ -383,32 +413,34 @@ def test_clinical_trials_report_avoids_unrelated_lupus_copy(disease_id):
     from med_research.pipeline.clinical_trials.report import generate_ct_report
 
     results = {
-        "trials": [{
-            "nct_id": "NCT00000001",
-            "title": "Anti-TNF trial",
-            "summary": "Trial summary",
-            "status": "RECRUITING",
-            "phases": ["PHASE3"],
-            "primary_phase": "PHASE3",
-            "phase_label": "Phase 3",
-            "interventions": ["Adalimumab"],
-            "intervention_types": ["DRUG"],
-            "sponsor_name": "Sponsor",
-            "sponsor_class": "INDUSTRY",
-            "enrollment": 100,
-            "start_date": "2024-01-01",
-            "completion_date": "2026-01-01",
-            "why_stopped": "",
-            "conditions": [disease_id.upper()],
-            "moa_category": "TNF inhibition",
-            "kg_matches": {
-                "has_match": False,
-                "gene_count": 0,
-                "drug_count": 0,
-                "genes": [],
-                "drugs": [],
-            },
-        }],
+        "trials": [
+            {
+                "nct_id": "NCT00000001",
+                "title": "Anti-TNF trial",
+                "summary": "Trial summary",
+                "status": "RECRUITING",
+                "phases": ["PHASE3"],
+                "primary_phase": "PHASE3",
+                "phase_label": "Phase 3",
+                "interventions": ["Adalimumab"],
+                "intervention_types": ["DRUG"],
+                "sponsor_name": "Sponsor",
+                "sponsor_class": "INDUSTRY",
+                "enrollment": 100,
+                "start_date": "2024-01-01",
+                "completion_date": "2026-01-01",
+                "why_stopped": "",
+                "conditions": [disease_id.upper()],
+                "moa_category": "TNF inhibition",
+                "kg_matches": {
+                    "has_match": False,
+                    "gene_count": 0,
+                    "drug_count": 0,
+                    "genes": [],
+                    "drugs": [],
+                },
+            }
+        ],
         "stats": {
             "total_trials": 1,
             "kg_matched_trials": 0,

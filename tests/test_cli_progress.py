@@ -19,6 +19,8 @@ import pytest
 
 from med_research.pipeline.progress import cli_progress
 
+pytestmark = pytest.mark.unit
+
 
 class _EngineCalled(Exception):
     """Raised by mocked engine functions to stop main() at the call site."""
@@ -353,9 +355,7 @@ CLI_MAIN_CASES = [
 ]
 
 
-@pytest.mark.parametrize(
-    "case", CLI_MAIN_CASES, ids=[case["id"] for case in CLI_MAIN_CASES]
-)
+@pytest.mark.parametrize("case", CLI_MAIN_CASES, ids=[case["id"] for case in CLI_MAIN_CASES])
 def test_engine_main_threads_cli_progress(case: dict, monkeypatch: pytest.MonkeyPatch):
     """Each engine main() passes ``cli_progress`` into the engine functions it calls."""
     module = importlib.import_module(case["module"])

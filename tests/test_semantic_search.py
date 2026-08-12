@@ -16,7 +16,11 @@ from med_research.pipeline.semantic_search.engine import (
     SemanticSearchEngine,
 )
 
+pytestmark = pytest.mark.unit
+
+
 # ---- Dependency checks ----
+
 
 @pytest.mark.skipif(not CHROMADB_AVAILABLE, reason="chromadb not installed")
 def test_chromadb_available():
@@ -31,6 +35,7 @@ def test_sentence_transformers_available():
 
 
 # ---- Engine ----
+
 
 def test_engine_initialization():
     engine = SemanticSearchEngine()
@@ -51,7 +56,13 @@ def test_load_articles_uses_cache(tmp_path, monkeypatch):
     monkeypatch.setattr("med_research.cache.cache_get", lambda *a, **k: None)
     monkeypatch.setattr(_miner_mod, "DATA_DIR", tmp_path)
     test_articles = [
-        {"pmid": "123", "title": "Test Article", "abstract": "Test abstract text", "year": "2024", "journal": "Test J"},
+        {
+            "pmid": "123",
+            "title": "Test Article",
+            "abstract": "Test abstract text",
+            "year": "2024",
+            "journal": "Test J",
+        },
     ]
     (tmp_path / "pubmed_cache.json").write_text(json.dumps(test_articles))
 
@@ -76,6 +87,7 @@ def test_load_articles_missing_cache(tmp_path, monkeypatch):
 
 
 # ---- Disease threading ----
+
 
 def test_engine_accepts_disease_id():
     engine = SemanticSearchEngine(disease_id="ra")
@@ -209,31 +221,54 @@ def test_run_semantic_search_accepts_disease_id(tmp_path, monkeypatch):
 
 # ---- Index & Search (requires sentence-transformers + chromadb) ----
 
+
 @pytest.mark.slow
+@pytest.mark.skipif(
+    not (CHROMADB_AVAILABLE and ST_AVAILABLE),
+    reason="chromadb and sentence-transformers required for indexing",
+)
 def test_index_and_search(tmp_path, monkeypatch):
     """Full pipeline: index a few test articles, then search."""
     import json
 
     # Prepare test articles
     test_articles = [
-        {"pmid": "1", "title": "JAK inhibition in lupus nephritis",
-         "abstract": "Baricitinib reduced proteinuria and anti-dsDNA in SLE patients.", "year": "2024", "journal": "NEJM"},
-        {"pmid": "2", "title": "B cell depletion with rituximab",
-         "abstract": "Rituximab improved renal outcomes in refractory lupus nephritis.", "year": "2023", "journal": "Lancet"},
-        {"pmid": "3", "title": "Vitamin D supplementation in elderly",
-         "abstract": "Vitamin D did not reduce fracture risk in nursing home residents.", "year": "2022", "journal": "BMJ"},
+        {
+            "pmid": "1",
+            "title": "JAK inhibition in lupus nephritis",
+            "abstract": "Baricitinib reduced proteinuria and anti-dsDNA in SLE patients.",
+            "year": "2024",
+            "journal": "NEJM",
+        },
+        {
+            "pmid": "2",
+            "title": "B cell depletion with rituximab",
+            "abstract": "Rituximab improved renal outcomes in refractory lupus nephritis.",
+            "year": "2023",
+            "journal": "Lancet",
+        },
+        {
+            "pmid": "3",
+            "title": "Vitamin D supplementation in elderly",
+            "abstract": "Vitamin D did not reduce fracture risk in nursing home residents.",
+            "year": "2022",
+            "journal": "BMJ",
+        },
     ]
 
     cache_path = tmp_path / "pubmed_cache.json"
     cache_path.write_text(json.dumps(test_articles))
     from med_research.cache import CacheManager
+
     monkeypatch.setattr(
         "med_research.cache.get_cache_manager",
         lambda: CacheManager(cache_dir=tmp_path / "central"),
     )
     monkeypatch.setattr("med_research.cache.cache_get", lambda *a, **k: None)
     monkeypatch.setattr(_miner_mod, "DATA_DIR", tmp_path)
-    monkeypatch.setattr("med_research.pipeline.semantic_search.engine.CHROMA_DIR", tmp_path / "chroma")
+    monkeypatch.setattr(
+        "med_research.pipeline.semantic_search.engine.CHROMA_DIR", tmp_path / "chroma"
+    )
 
     engine = SemanticSearchEngine()
     articles = engine.load_articles()
@@ -253,14 +288,18 @@ def test_index_and_search(tmp_path, monkeypatch):
     # Vitamin D article should be last
     if "Vitamin D" in titles:
         assert titles.index([t for t in titles if "Vitamin D" in t][0]) == len(titles) - 1 or any(
-            r["similarity"] < results[0]["similarity"] * 0.5 for r in results if "Vitamin D" in r["title"]
+            r["similarity"] < results[0]["similarity"] * 0.5
+            for r in results
+            if "Vitamin D" in r["title"]
         )
 
 
 # ---- Report ----
 
+
 def test_escape_html_semantic():
     from med_research.pipeline.semantic_search.report import escape_html
+
     assert escape_html("<script>") == "&lt;script&gt;"
     assert escape_html(None) == ""
 
@@ -269,8 +308,14 @@ def test_generate_semantic_report():
     from med_research.pipeline.semantic_search.report import generate_semantic_report
 
     results = [
-        {"rank": 1, "pmid": "123", "title": "JAK inhibition in SLE", "year": "2024",
-         "journal": "NEJM", "similarity": 9.2},
+        {
+            "rank": 1,
+            "pmid": "123",
+            "title": "JAK inhibition in SLE",
+            "year": "2024",
+            "journal": "NEJM",
+            "similarity": 9.2,
+        },
     ]
     path = generate_semantic_report(results, "lupus treatment", 150)
     assert "report.html" in path
@@ -280,9 +325,11 @@ def test_generate_semantic_report():
 
 # ---- API Service ----
 
+
 def test_run_semantic_search_empty_collection(tmp_path, monkeypatch, semantic_fake_embedder):
     """Search without indexed collection returns empty results."""
     import med_research.pipeline.semantic_search.engine as engine_mod
+
     # Patch the module the service actually imports (the top-level
     # `semantic_search.engine` alias is a separate module object).
     monkeypatch.setattr(engine_mod, "CHROMA_DIR", tmp_path / "no_index")
@@ -294,12 +341,14 @@ def test_run_semantic_search_empty_collection(tmp_path, monkeypatch, semantic_fa
         lambda self: setattr(self, "model", semantic_fake_embedder),
     )
     from med_research.web.services.semantic_service import run_semantic_search
+
     result = run_semantic_search("lupus treatment", top_k=5)
     assert result["query"] == "lupus treatment"
     assert result["total_results"] == 0
 
 
 # ---- CLI ----
+
 
 def test_semantic_cli_help():
     from tests.cli_helpers import cli_help_output

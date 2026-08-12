@@ -1,9 +1,12 @@
 from pathlib import Path
 
+import pytest
 from fastapi.testclient import TestClient
 
 from med_research.pipeline.evidence_workspace.schemas import EvidenceDossier, ResearchRequest
 from med_research.web.services.workspace_store import WorkspaceRunStore
+
+pytestmark = pytest.mark.unit
 
 
 def _save_run(path, run_id, score):

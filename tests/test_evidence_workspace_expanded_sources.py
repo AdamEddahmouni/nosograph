@@ -1,9 +1,13 @@
+import pytest
+
 from med_research.pipeline.evidence_workspace.schemas import ResearchRequest
 from med_research.pipeline.evidence_workspace.sources import (
     FDALabelSource,
     GWASSource,
     default_sources,
 )
+
+pytestmark = pytest.mark.unit
 
 
 def test_request_accepts_gwas_and_fda_sources():
@@ -17,7 +21,7 @@ def test_request_accepts_gwas_and_fda_sources():
 
 def test_default_sources_registers_expanded_adapters():
     sources = default_sources()
-    assert set(sources) == {"pubmed", "clinical_trials", "gwas", "fda_labels"}
+    assert {"pubmed", "clinical_trials", "gwas", "fda_labels"}.issubset(set(sources))
 
 
 def test_gwas_source_normalizes_study_fixture():

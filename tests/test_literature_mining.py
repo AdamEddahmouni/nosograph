@@ -8,21 +8,39 @@ Tests cover:
   - report.py: HTML escape, report generation
 """
 
+from pathlib import Path
 from unittest.mock import MagicMock, mock_open, patch
 
 import pytest
 
+pytestmark = pytest.mark.unit
+
+
 # ── Prevent spaCy from loading in all tests ──────────────────────────
+
 
 @pytest.fixture(autouse=True)
 def _mock_spacy_load(monkeypatch):
     """Prevent spaCy from being imported/loaded in all literature mining tests."""
-    monkeypatch.setattr("med_research.pipeline.literature_mining.ner._try_load_spacy", lambda: False)
+    monkeypatch.setattr(
+        "med_research.pipeline.literature_mining.ner._try_load_spacy", lambda: False
+    )
+
+
+@pytest.fixture(autouse=True)
+def _entrez_email(monkeypatch):
+    """Provide a contact email for live PubMed code paths in unit tests."""
+    monkeypatch.setenv("ENTREZ_EMAIL", "test@example.com")
+    monkeypatch.setattr(
+        "med_research.pipeline.literature_mining.miner.ENTREZ_EMAIL",
+        "test@example.com",
+    )
 
 
 # ═══════════════════════════════════════════════════════════════════════
 #  Sample fixture data
 # ═══════════════════════════════════════════════════════════════════════
+
 
 @pytest.fixture
 def sample_entities():
@@ -175,12 +193,14 @@ def sample_articles():
 #  ner.py — BiomedicalNER tests
 # ═══════════════════════════════════════════════════════════════════════
 
+
 class TestBiomedicalNER:
     """Tests for BiomedicalNER regex-based entity extraction."""
 
     @pytest.fixture(autouse=True)
     def _setup_ner(self):
         from med_research.pipeline.literature_mining.ner import BiomedicalNER
+
         self.ner = BiomedicalNER()
         # spaCy should be disabled by the autouse fixture
         assert self.ner.spacy_available is False
@@ -189,7 +209,9 @@ class TestBiomedicalNER:
 
     def test_extract_regex_genes_uppercase_symbols(self):
         """Regex should detect uppercase gene symbols like BTK, TYK2, STAT4."""
-        text = "BTK and TYK2 are kinases involved in B cell signaling. STAT4 mediates IL-12 responses."
+        text = (
+            "BTK and TYK2 are kinases involved in B cell signaling. STAT4 mediates IL-12 responses."
+        )
         results = self.ner._extract_regex(text, set())
         gene_texts = results.get("genes", [])
         assert "BTK" in gene_texts
@@ -354,6 +376,7 @@ class TestBiomedicalNER:
 # ═══════════════════════════════════════════════════════════════════════
 #  crossref.py — Entity matching & cross-referencing tests
 # ═══════════════════════════════════════════════════════════════════════
+
 
 class TestGenerateSynonyms:
     """Tests for _generate_gene_synonyms() and _generate_drug_synonyms()."""
@@ -606,16 +629,22 @@ class TestCrossReferenceArticles:
         # At least one article for that candidate
         assert len(candidate_support["c001"]) >= 1
 
-    def test_articles_sorted_by_relevance_descending(self, sample_articles, sample_entities, sample_candidates):
+    def test_articles_sorted_by_relevance_descending(
+        self, sample_articles, sample_entities, sample_candidates
+    ):
         from med_research.pipeline.literature_mining.crossref import cross_reference_articles
 
         results = cross_reference_articles(sample_articles, sample_entities, sample_candidates)
         article_matches = results["article_matches"]
 
         for i in range(len(article_matches) - 1):
-            assert article_matches[i]["relevance_score"] >= article_matches[i + 1]["relevance_score"]
+            assert (
+                article_matches[i]["relevance_score"] >= article_matches[i + 1]["relevance_score"]
+            )
 
-    def test_gene_coverage_tracks_mentions(self, sample_articles, sample_entities, sample_candidates):
+    def test_gene_coverage_tracks_mentions(
+        self, sample_articles, sample_entities, sample_candidates
+    ):
         from med_research.pipeline.literature_mining.crossref import cross_reference_articles
 
         results = cross_reference_articles(sample_articles, sample_entities, sample_candidates)
@@ -625,7 +654,9 @@ class TestCrossReferenceArticles:
         assert "BTK" in gene_coverage
         assert gene_coverage["BTK"]["articles"] >= 1
 
-    def test_unrelated_article_scores_zero(self, sample_articles, sample_entities, sample_candidates):
+    def test_unrelated_article_scores_zero(
+        self, sample_articles, sample_entities, sample_candidates
+    ):
         from med_research.pipeline.literature_mining.crossref import cross_reference_articles
 
         results = cross_reference_articles(sample_articles, sample_entities, sample_candidates)
@@ -648,6 +679,7 @@ class TestCrossReferenceArticles:
 # ═══════════════════════════════════════════════════════════════════════
 #  miner.py — Candidate query generation & PubMed search tests
 # ═══════════════════════════════════════════════════════════════════════
+
 
 class TestGenerateCandidateQueries:
     """Tests for generate_candidate_queries()."""
@@ -729,7 +761,9 @@ class TestSearchPubmed:
 
     def test_returns_empty_when_biopython_unavailable(self, monkeypatch):
         """search_pubmed should return [] when BioPython is not installed."""
-        monkeypatch.setattr("med_research.pipeline.literature_mining.miner.BIOPYTHON_AVAILABLE", False)
+        monkeypatch.setattr(
+            "med_research.pipeline.literature_mining.miner.BIOPYTHON_AVAILABLE", False
+        )
         from med_research.pipeline.literature_mining.miner import search_pubmed
 
         articles = search_pubmed("lupus treatment", max_results=10)
@@ -742,7 +776,9 @@ class TestSearchPubmed:
         from med_research.pipeline.literature_mining.miner import search_pubmed
 
         # Ensure BIOPYTHON_AVAILABLE is True using monkeypatch for clean teardown
-        monkeypatch.setattr("med_research.pipeline.literature_mining.miner.BIOPYTHON_AVAILABLE", True)
+        monkeypatch.setattr(
+            "med_research.pipeline.literature_mining.miner.BIOPYTHON_AVAILABLE", True
+        )
 
         # Mock Entrez.esearch → Entrez.read → return IdList
         mock_search_handle = MagicMock()
@@ -790,7 +826,9 @@ class TestSearchPubmed:
         """search_pubmed should return [] on Entrez exception, not crash."""
         from med_research.pipeline.literature_mining.miner import search_pubmed
 
-        monkeypatch.setattr("med_research.pipeline.literature_mining.miner.BIOPYTHON_AVAILABLE", True)
+        monkeypatch.setattr(
+            "med_research.pipeline.literature_mining.miner.BIOPYTHON_AVAILABLE", True
+        )
 
         mock_entrez.esearch.side_effect = RuntimeError("Network error")
 
@@ -803,7 +841,9 @@ class TestSearchPubmed:
         """search_pubmed should return [] when PubMed returns no matching IDs."""
         from med_research.pipeline.literature_mining.miner import search_pubmed
 
-        monkeypatch.setattr("med_research.pipeline.literature_mining.miner.BIOPYTHON_AVAILABLE", True)
+        monkeypatch.setattr(
+            "med_research.pipeline.literature_mining.miner.BIOPYTHON_AVAILABLE", True
+        )
 
         mock_search_handle = MagicMock()
         mock_entrez.esearch.return_value = mock_search_handle
@@ -812,12 +852,20 @@ class TestSearchPubmed:
         articles = search_pubmed("xyznonexistentquery123456", max_results=10)
         assert articles == []
 
+    def test_requires_entrez_email_for_live_calls(self, monkeypatch):
+        from med_research.exceptions import ConfigurationError
+        from med_research.pipeline.literature_mining.miner import resolve_entrez_email
+
+        monkeypatch.setattr("med_research.pipeline.literature_mining.miner.ENTREZ_EMAIL", None)
+        with pytest.raises(ConfigurationError, match="ENTREZ_EMAIL"):
+            resolve_entrez_email(None, live=True)
+
 
 class TestPrintSummary:
     """Smoke tests for print_summary()."""
 
     def test_produces_output(self, sample_candidates, sample_entities, caplog):
-        from med_research.pipeline.literature_mining.miner import print_summary
+        from med_research.pipeline.literature_mining.miner import EntityContext, print_summary
 
         results = {
             "stats": {
@@ -842,14 +890,10 @@ class TestPrintSummary:
             "article_matches": [],
         }
 
-        # Set up entities_hack global since print_summary uses it
-        import med_research.pipeline.literature_mining.miner as miner_mod
-        miner_mod.entities_hack = {
-            "BTK": {"name": "Bruton Tyrosine Kinase"},
-            "STAT4": {"name": "Signal Transducer and Activator of Transcription 4"},
-        }
+        entity_context = EntityContext.from_results(sample_entities, results["gene_coverage"])
+        results["gene_coverage"] = {"BTK": {"articles": 3}, "STAT4": {"articles": 1}}
 
-        print_summary(results, sample_candidates, sample_entities)
+        print_summary(results, sample_candidates, sample_entities, entity_context=entity_context)
 
         assert "LITERATURE MINING RESULTS" in caplog.text
         assert "50" in caplog.text
@@ -859,6 +903,7 @@ class TestPrintSummary:
 # ═══════════════════════════════════════════════════════════════════════
 #  report.py — HTML escape & report generation tests
 # ═══════════════════════════════════════════════════════════════════════
+
 
 class TestEscapeHtml:
     """Tests for escape_html()."""
@@ -903,12 +948,26 @@ class TestEscapeHtml:
 class TestGenerateLiteratureReport:
     """Tests for generate_literature_report()."""
 
-    def test_creates_html_file(self, tmp_path, sample_entities, sample_candidates):
+    @staticmethod
+    def _render_report_html(
+        tmp_path,
+        monkeypatch,
+        results,
+        sample_entities,
+        sample_candidates,
+    ) -> str:
         from med_research.pipeline.literature_mining.report import generate_literature_report
 
-        # Patch the output path to use tmp_path
-        report_path = tmp_path / "literature_report.html"
+        report_module = tmp_path / "report.py"
+        report_module.write_text("# stub", encoding="utf-8")
+        monkeypatch.setattr(
+            "med_research.pipeline.literature_mining.report.__file__",
+            str(report_module),
+        )
+        report_path = generate_literature_report(results, sample_entities, sample_candidates)
+        return Path(report_path).read_text(encoding="utf-8")
 
+    def test_creates_html_file(self, tmp_path, monkeypatch, sample_entities, sample_candidates):
         results = {
             "stats": {
                 "total_articles": 10,
@@ -958,29 +1017,16 @@ class TestGenerateLiteratureReport:
             ],
         }
 
-        with patch("med_research.pipeline.literature_mining.report.Path") as mock_path_class:
-            mock_path = MagicMock()
-            mock_path.parent = tmp_path
-            mock_path.__truediv__.return_value = report_path
-            mock_path_class.return_value = mock_path
-
-            file_handle = mock_open()
-            with patch("builtins.open", file_handle):
-                _ = generate_literature_report(results, sample_entities, sample_candidates)
-
-        # Verify file was written
-        file_handle().write.assert_called_once()
-        html_content = file_handle().write.call_args[0][0]
+        html_content = self._render_report_html(
+            tmp_path, monkeypatch, results, sample_entities, sample_candidates
+        )
         assert "<!DOCTYPE html>" in html_content
         assert "10" in html_content
         assert "Statistical Measures (1 mentions)" in html_content
-        assert "Statistical Measures (1 mentions)" in html_content
 
-    def test_report_contains_expected_sections(self, tmp_path, sample_entities, sample_candidates):
-        from med_research.pipeline.literature_mining.report import generate_literature_report
-
-        report_path = tmp_path / "test_report.html"
-
+    def test_report_contains_expected_sections(
+        self, tmp_path, monkeypatch, sample_entities, sample_candidates
+    ):
         results = {
             "stats": {
                 "total_articles": 5,
@@ -998,31 +1044,17 @@ class TestGenerateLiteratureReport:
             "article_matches": [],
         }
 
-        # Patch the output path
-        with patch("med_research.pipeline.literature_mining.report.Path") as mock_path_class:
-            mock_path = MagicMock()
-            mock_path.parent = tmp_path
-            mock_path.__truediv__.return_value = report_path
-            mock_path_class.return_value = mock_path
-
-            file_handle = mock_open()
-            with patch("builtins.open", file_handle):
-                _ = generate_literature_report(results, sample_entities, sample_candidates)
-
-        # Verify file was written with HTML content
-        file_handle().write.assert_called_once()
-        html_content = file_handle().write.call_args[0][0]
-
+        html_content = self._render_report_html(
+            tmp_path, monkeypatch, results, sample_entities, sample_candidates
+        )
         assert "<!DOCTYPE html>" in html_content
         assert "<title>Lupus (SLE) Literature Mining Report</title>" in html_content
         assert "Articles Analyzed" in html_content
         assert "5" in html_content  # total_articles stat
 
-    def test_report_with_novel_entities(self, tmp_path, sample_entities, sample_candidates):
-        from med_research.pipeline.literature_mining.report import generate_literature_report
-
-        report_path = tmp_path / "novel_report.html"
-
+    def test_report_with_novel_entities(
+        self, tmp_path, monkeypatch, sample_entities, sample_candidates
+    ):
         results = {
             "stats": {
                 "total_articles": 3,
@@ -1044,29 +1076,18 @@ class TestGenerateLiteratureReport:
             "article_matches": [],
         }
 
-        with patch("med_research.pipeline.literature_mining.report.Path") as mock_path_class:
-            mock_path = MagicMock()
-            mock_path.parent = tmp_path
-            mock_path.__truediv__.return_value = report_path
-            mock_path_class.return_value = mock_path
-
-            file_handle = mock_open()
-            with patch("builtins.open", file_handle):
-                generate_literature_report(results, sample_entities, sample_candidates)
-
-        html_content = file_handle().write.call_args[0][0]
-
+        html_content = self._render_report_html(
+            tmp_path, monkeypatch, results, sample_entities, sample_candidates
+        )
         assert "Novel Entities" in html_content
         assert "NLRP3" in html_content
         assert "Bortezomib" in html_content
         assert "active (biomedical model)" in html_content
         assert "5" in html_content
 
-    def test_report_without_novel_entities_shows_hint(self, tmp_path, sample_entities, sample_candidates):
-        from med_research.pipeline.literature_mining.report import generate_literature_report
-
-        report_path = tmp_path / "no_spacy_report.html"
-
+    def test_report_without_novel_entities_shows_hint(
+        self, tmp_path, monkeypatch, sample_entities, sample_candidates
+    ):
         results = {
             "stats": {
                 "total_articles": 1,
@@ -1084,25 +1105,16 @@ class TestGenerateLiteratureReport:
             "article_matches": [],
         }
 
-        with patch("med_research.pipeline.literature_mining.report.Path") as mock_path_class:
-            mock_path = MagicMock()
-            mock_path.parent = tmp_path
-            mock_path.__truediv__.return_value = report_path
-            mock_path_class.return_value = mock_path
-
-            file_handle = mock_open()
-            with patch("builtins.open", file_handle):
-                generate_literature_report(results, sample_entities, sample_candidates)
-
-        html_content = file_handle().write.call_args[0][0]
-
-        # When no spaCy and no novel entities, it should show a hint paragraph
+        html_content = self._render_report_html(
+            tmp_path, monkeypatch, results, sample_entities, sample_candidates
+        )
         assert "spaCy biomedical NER is not active" in html_content
 
 
 # ═══════════════════════════════════════════════════════════════════════
 #  content_extractor.py — Content extraction tests
 # ═══════════════════════════════════════════════════════════════════════
+
 
 class TestSplitSentences:
     """Tests for _split_sentences()."""
@@ -1182,6 +1194,7 @@ class TestContentExtractor:
     @pytest.fixture
     def extractor(self, known_terms):
         from med_research.pipeline.literature_mining.content_extractor import ContentExtractor
+
         return ContentExtractor(known_terms=known_terms)
 
     def test_filters_to_relevant_sentences(self, extractor):
@@ -1389,12 +1402,20 @@ class TestContentExtractor:
 
 # ── Disease-aware mining ───────────────────────────────────────────────
 
+
 def _fake_crossref_results():
     return {
-        "stats": {"total_articles": 0, "articles_with_matches": 0,
-                  "genes_found": 0, "drugs_found": 0, "spacy_ner": "",
-                  "candidates_supported": 0},
-        "article_matches": [], "gene_coverage": {}, "candidate_support": {},
+        "stats": {
+            "total_articles": 0,
+            "articles_with_matches": 0,
+            "genes_found": 0,
+            "drugs_found": 0,
+            "spacy_ner": "",
+            "candidates_supported": 0,
+        },
+        "article_matches": [],
+        "gene_coverage": {},
+        "candidate_support": {},
     }
 
 
@@ -1406,6 +1427,7 @@ def _capture_queries(captured):
     def _search(query, max_results=50, email=None):
         captured.setdefault("queries", []).append(query)
         return []
+
     return _search
 
 
@@ -1419,8 +1441,9 @@ def test_mine_literature_uses_disease_config_queries(tmp_path, monkeypatch):
     monkeypatch.setattr(miner_mod, "search_pubmed", _capture_queries(captured))
     monkeypatch.setattr(miner_mod, "load_kg_entities", _noop_entities)
     monkeypatch.setattr(miner_mod, "load_repurposing_candidates", lambda: [])
-    monkeypatch.setattr(miner_mod, "cross_reference_articles",
-                        lambda a, e, c: _fake_crossref_results())
+    monkeypatch.setattr(
+        miner_mod, "cross_reference_articles", lambda a, e, c: _fake_crossref_results()
+    )
 
     ra_queries = Disease("ra").config["PUBMED_QUERIES"]
     miner_mod.mine_literature(use_cache=False, disease_id="ra")
@@ -1439,8 +1462,9 @@ def test_mine_literature_defaults_to_disease_config(tmp_path, monkeypatch):
     monkeypatch.setattr(miner_mod, "search_pubmed", _capture_queries(captured))
     monkeypatch.setattr(miner_mod, "load_kg_entities", _noop_entities)
     monkeypatch.setattr(miner_mod, "load_repurposing_candidates", lambda: [])
-    monkeypatch.setattr(miner_mod, "cross_reference_articles",
-                        lambda a, e, c: _fake_crossref_results())
+    monkeypatch.setattr(
+        miner_mod, "cross_reference_articles", lambda a, e, c: _fake_crossref_results()
+    )
 
     sle_queries = Disease("sle").config["PUBMED_QUERIES"]
     miner_mod.mine_literature(use_cache=False)  # disease_id defaults to sle
@@ -1490,5 +1514,3 @@ def test_cmd_literature_threads_disease(monkeypatch):
     assert cmd_literature(parser.parse_args(["literature", "--disease", "ra", "--max", "5"])) == 0
     assert captured["disease_id"] == "ra"
     assert captured["max_per_query"] == 5
-
-

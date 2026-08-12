@@ -1,5 +1,9 @@
+import pytest
+
 from med_research.pipeline.evidence_workspace.schemas import ResearchRequest
 from med_research.pipeline.evidence_workspace.sources import ClinicalTrialsSource, PubMedSource
+
+pytestmark = pytest.mark.unit
 
 
 def test_pubmed_source_normalizes_fixture_record():

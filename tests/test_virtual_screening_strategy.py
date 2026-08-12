@@ -1,8 +1,14 @@
+
+
 """Tests for disease-aware virtual screening strategies."""
 
 import pytest
 
 DISEASES = ["sle", "ra", "ms", "ss", "ssc", "t1d", "ibd"]
+
+pytestmark = pytest.mark.unit
+
+
 
 
 def test_strategy_for_each_disease_is_valid():
@@ -44,13 +50,16 @@ def test_strategy_fingerprint_is_deterministic():
 def test_composite_score_accepts_strategy_weights():
     from med_research.pipeline.virtual_screening.screening import compute_composite_score
 
-    scores = {dimension: 8.0 for dimension in (
-        "binding_estimate",
-        "druglikeness",
-        "target_complementarity",
-        "similarity_score",
-        "novelty_score",
-    )}
+    scores = {
+        dimension: 8.0
+        for dimension in (
+            "binding_estimate",
+            "druglikeness",
+            "target_complementarity",
+            "similarity_score",
+            "novelty_score",
+        )
+    }
     weights = {
         "binding_estimate": 0.1,
         "druglikeness": 0.1,

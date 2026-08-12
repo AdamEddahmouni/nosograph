@@ -1,6 +1,7 @@
 from datetime import datetime
 from pathlib import Path
 
+import pytest
 from fastapi.testclient import TestClient
 
 from med_research.pipeline.evidence_workspace.schemas import (
@@ -10,6 +11,8 @@ from med_research.pipeline.evidence_workspace.schemas import (
     SourceStatus,
 )
 from med_research.web.services.workspace_store import WorkspaceRunStore
+
+pytestmark = pytest.mark.unit
 
 
 def _dossier(run_id: str, completed_at: str, drug_score: float, include_target: bool = True):

@@ -5,6 +5,8 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
+import pytest
+
 sys.path.insert(0, str(Path(__file__).parent))
 
 from test_pipeline_base import ModuleAdapterContract
@@ -14,6 +16,9 @@ from med_research.pipeline.adverse_events.adapter import AdverseEventsModule
 from med_research.pipeline.biomarker_discovery.adapter import BiomarkerDiscoveryModule
 from med_research.pipeline.car_t_predictor.adapter import CarTPredictorModule
 from med_research.pipeline.provenance import build_provenance
+
+pytestmark = pytest.mark.unit
+
 
 
 class TestAdverseEventsAdapter(ModuleAdapterContract):
@@ -35,9 +40,7 @@ class TestAdverseEventsAdapter(ModuleAdapterContract):
         for key in ("disease_id", "module", "sources", "cache_or_live", "scoring"):
             assert provenance[key] == expected[key]
 
-        coverage = module_coverage(
-            self.disease_id, self.coverage_module, module.coverage_inputs()
-        )
+        coverage = module_coverage(self.disease_id, self.coverage_module, module.coverage_inputs())
         assert coverage.is_runnable
 
     def test_run_matches_engine(self):
@@ -89,9 +92,7 @@ class TestCarTPredictorAdapter(ModuleAdapterContract):
         for key in ("disease_id", "module", "sources", "cache_or_live", "scoring"):
             assert provenance[key] == expected[key]
 
-        coverage = module_coverage(
-            self.disease_id, self.coverage_module, module.coverage_inputs()
-        )
+        coverage = module_coverage(self.disease_id, self.coverage_module, module.coverage_inputs())
         assert coverage.is_runnable
 
     def test_run_matches_engine(self):
@@ -149,9 +150,7 @@ class TestBiomarkerDiscoveryAdapter(ModuleAdapterContract):
         for key in ("disease_id", "module", "sources", "cache_or_live", "scoring"):
             assert provenance[key] == expected[key]
 
-        coverage = module_coverage(
-            self.disease_id, self.coverage_module, module.coverage_inputs()
-        )
+        coverage = module_coverage(self.disease_id, self.coverage_module, module.coverage_inputs())
         assert coverage.is_runnable
 
     def test_run_matches_engine(self):

@@ -12,6 +12,8 @@ import json
 import networkx as nx
 import pytest
 
+pytestmark = pytest.mark.unit
+
 
 class TestBuildGraph:
     """Tests for build_graph()."""
@@ -58,25 +60,44 @@ class TestBuildGraph:
                 assert "description" in data
 
     def test_key_genes_present(self, sample_graph):
-        gene_ids = {
-            n for n, d in sample_graph.nodes(data=True) if d.get("type") == "gene"
-        }
+        gene_ids = {n for n, d in sample_graph.nodes(data=True) if d.get("type") == "gene"}
         expected = {
-            "HLA-DRB1", "IRF5", "STAT4", "BLK", "TNFAIP3",
-            "ITGAM", "BANK1", "PTPN22", "TNFSF4", "FCGR2A",
-            "FCGR3A", "TLR7", "TLR9", "BAFF", "IFNAR1",
-            "JAK1", "TYK2", "BTK",
+            "HLA-DRB1",
+            "IRF5",
+            "STAT4",
+            "BLK",
+            "TNFAIP3",
+            "ITGAM",
+            "BANK1",
+            "PTPN22",
+            "TNFSF4",
+            "FCGR2A",
+            "FCGR3A",
+            "TLR7",
+            "TLR9",
+            "BAFF",
+            "IFNAR1",
+            "JAK1",
+            "TYK2",
+            "BTK",
         }
         assert expected.issubset(gene_ids)
 
     def test_key_drugs_present(self, sample_graph):
-        drug_ids = {
-            n for n, d in sample_graph.nodes(data=True) if d.get("type") == "drug"
-        }
+        drug_ids = {n for n, d in sample_graph.nodes(data=True) if d.get("type") == "drug"}
         expected = {
-            "belimumab", "anifrolumab", "voclosporin", "hydroxychloroquine",
-            "mycophenolate", "cyclophosphamide", "rituximab", "prednisone",
-            "tacrolimus", "azathioprine", "baricitinib", "obinutuzumab",
+            "belimumab",
+            "anifrolumab",
+            "voclosporin",
+            "hydroxychloroquine",
+            "mycophenolate",
+            "cyclophosphamide",
+            "rituximab",
+            "prednisone",
+            "tacrolimus",
+            "azathioprine",
+            "baricitinib",
+            "obinutuzumab",
         }
         assert expected.issubset(drug_ids)
 
@@ -84,7 +105,14 @@ class TestBuildGraph:
         types = set()
         for _, _, data in sample_graph.edges(data=True):
             types.add(data.get("type"))
-        expected = {"TARGETS", "PARTICIPATES_IN", "MODULATES", "DRIVES", "ASSOCIATED_WITH", "TREATS"}
+        expected = {
+            "TARGETS",
+            "PARTICIPATES_IN",
+            "MODULATES",
+            "DRIVES",
+            "ASSOCIATED_WITH",
+            "TREATS",
+        }
         assert types == expected
 
     def test_treats_edges_exist(self, sample_graph):
@@ -166,6 +194,7 @@ class TestExportForWeb:
     @pytest.fixture
     def web_export(self, sample_graph, tmp_path):
         from med_research.pipeline.knowledge_graph.builder import export_for_web
+
         out_path = tmp_path / "graph_data.json"
         export_for_web(sample_graph, str(out_path))
         return json.loads(out_path.read_text(encoding="utf-8"))
@@ -209,6 +238,7 @@ class TestAnalyzeGraph:
 
     def test_analyze_does_not_crash(self, sample_graph, caplog):
         from med_research.pipeline.knowledge_graph.builder import analyze_graph
+
         analyze_graph(sample_graph)
         assert "KNOWLEDGE GRAPH ANALYSIS" in caplog.text
         assert "DRUG" in caplog.text

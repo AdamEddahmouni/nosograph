@@ -12,6 +12,8 @@ from fastapi.testclient import TestClient
 
 from med_research.web.main import app
 
+pytestmark = pytest.mark.unit
+
 
 @pytest.fixture(scope="module")
 def client():
@@ -34,14 +36,25 @@ def admin_mocks(monkeypatch):
         state["prune"].append(kwargs)
         dry_run = kwargs.get("dry_run", False)
         return {
-            "disease_id": kwargs["disease_id"], "name": "Test Disease", "efo_id": "EFO_0000000",
-            "root": "/tmp", "dry_run": dry_run,
+            "disease_id": kwargs["disease_id"],
+            "name": "Test Disease",
+            "efo_id": "EFO_0000000",
+            "root": "/tmp",
+            "dry_run": dry_run,
             "sources": {"opentargets": True, "gwas": True, "reactome": False},
-            "merge": {"genes": {"added": ["NEWGENE"], "updated": [], "kept": ["TLR7"]},
-                      "drugs": {"added": [], "updated": [], "kept": []},
-                      "pathways": {"added": [], "updated": [], "kept": []}},
-            "prune": {"enabled": True, "aborted": False, "genes": ["ORPHAN"], "drugs": [],
-                      "scrubbed_pathways": [], "backup": None if dry_run else "/tmp/data/backups/pruned_x.json"},
+            "merge": {
+                "genes": {"added": ["NEWGENE"], "updated": [], "kept": ["TLR7"]},
+                "drugs": {"added": [], "updated": [], "kept": []},
+                "pathways": {"added": [], "updated": [], "kept": []},
+            },
+            "prune": {
+                "enabled": True,
+                "aborted": False,
+                "genes": ["ORPHAN"],
+                "drugs": [],
+                "scrubbed_pathways": [],
+                "backup": None if dry_run else "/tmp/data/backups/pruned_x.json",
+            },
             "counts": {"genes": 5, "drugs": 2, "pathways": 3, "relationships": 10},
             "files": ["/tmp/data/genes.json"],
         }
@@ -54,7 +67,8 @@ def admin_mocks(monkeypatch):
             "disease_id": kwargs["disease_id"],
             "backup": kwargs.get("backup_path") or "/tmp/data/backups/newest.json",
             "backup_disease_id": kwargs["disease_id"],
-            "root": "/tmp", "dry_run": kwargs.get("dry_run", False),
+            "root": "/tmp",
+            "dry_run": kwargs.get("dry_run", False),
             "restored": {"genes": ["ORPHAN"], "drugs": []},
             "skipped": {"genes": [], "drugs": []},
             "updated_pathways": ["jak-stat"],
@@ -65,12 +79,19 @@ def admin_mocks(monkeypatch):
     def fake_list_backups(disease_id, target_dir=None):
         state["backups"].append(disease_id)
         return {
-            "disease_id": disease_id, "count": 1, "total_size_bytes": 586,
-            "backups": [{
-                "path": "/tmp/data/backups/pruned_sle_20260101_000000_000000.json",
-                "size_bytes": 586, "modified": "2026-01-01T00:00:00",
-                "genes": ["ORPHAN"], "drugs": [], "readable": True,
-            }],
+            "disease_id": disease_id,
+            "count": 1,
+            "total_size_bytes": 586,
+            "backups": [
+                {
+                    "path": "/tmp/data/backups/pruned_sle_20260101_000000_000000.json",
+                    "size_bytes": 586,
+                    "modified": "2026-01-01T00:00:00",
+                    "genes": ["ORPHAN"],
+                    "drugs": [],
+                    "readable": True,
+                }
+            ],
         }
 
     monkeypatch.setattr(scaf, "refresh_disease", fake_refresh)
@@ -89,6 +110,7 @@ def admin_mocks(monkeypatch):
 
 # ── Backups ──────────────────────────────────────────────────────────────
 
+
 class TestAdminBackups:
     def test_lists_backups(self, client, admin_mocks):
         resp = client.get("/api/admin/diseases/sle/backups")
@@ -105,7 +127,9 @@ class TestAdminBackups:
         import med_research.diseases.scaffold as scaf
 
         def boom(disease_id, target_dir=None):
-            raise FileNotFoundError("No disease module 'nope' found. Run 'med-research disease add <id>' first.")
+            raise FileNotFoundError(
+                "No disease module 'nope' found. Run 'med-research disease add <id>' first."
+            )
 
         monkeypatch.setattr(scaf, "list_backups", boom)
         resp = client.get("/api/admin/diseases/nope/backups")
@@ -114,6 +138,7 @@ class TestAdminBackups:
 
 
 # ── Prune ────────────────────────────────────────────────────────────────
+
 
 class TestAdminPrune:
     def test_preview_is_dry_run_and_writes_nothing(self, client, admin_mocks):
@@ -169,10 +194,16 @@ class TestAdminPrune:
         def all_down(*args, **kwargs):
             disease_id = args[0] if args else kwargs.get("disease_id", "sle")
             summary = {
-                "disease_id": disease_id, "name": "X", "efo_id": None,
-                "root": "/tmp", "dry_run": False,
+                "disease_id": disease_id,
+                "name": "X",
+                "efo_id": None,
+                "root": "/tmp",
+                "dry_run": False,
                 "sources": {"opentargets": False, "gwas": False, "reactome": False},
-                "merge": {}, "prune": {}, "counts": {}, "files": [],
+                "merge": {},
+                "prune": {},
+                "counts": {},
+                "files": [],
             }
             return summary
 
@@ -184,6 +215,7 @@ class TestAdminPrune:
 
 
 # ── Restore ──────────────────────────────────────────────────────────────
+
 
 class TestAdminRestore:
     def test_preview_resolves_bare_filename_and_writes_nothing(self, client, admin_mocks):
@@ -263,17 +295,31 @@ class TestAdminAudit:
     @staticmethod
     def _canned(monkeypatch, entries):
         import med_research.diseases.audit as audit_mod
+
         monkeypatch.setattr(
-            audit_mod, "read_audit",
+            audit_mod,
+            "read_audit",
             lambda disease_id, limit=None, target_dir=None: entries,
         )
 
     def test_returns_newest_first_with_limit(self, client, monkeypatch):
         canned = [
-            {"version": 1, "ts": "2026-01-01T10:00:00", "action": "prune", "disease_id": "sle",
-             "removed": {"genes": ["OLD"], "drugs": []}, "backup": "/x/pruned_sle_old.json"},
-            {"version": 1, "ts": "2026-01-02T10:00:00", "action": "restore", "disease_id": "sle",
-             "restored": {"genes": ["NEW"], "drugs": []}, "backup": "/x/pruned_sle_new.json"},
+            {
+                "version": 1,
+                "ts": "2026-01-01T10:00:00",
+                "action": "prune",
+                "disease_id": "sle",
+                "removed": {"genes": ["OLD"], "drugs": []},
+                "backup": "/x/pruned_sle_old.json",
+            },
+            {
+                "version": 1,
+                "ts": "2026-01-02T10:00:00",
+                "action": "restore",
+                "disease_id": "sle",
+                "restored": {"genes": ["NEW"], "drugs": []},
+                "backup": "/x/pruned_sle_new.json",
+            },
         ]
         self._canned(monkeypatch, canned)
         resp = client.get("/api/admin/diseases/sle/audit?limit=1")
@@ -307,8 +353,13 @@ class TestAdminAudit:
         from med_research.web.services import disease_admin_service
 
         canned = [
-            {"version": 1, "ts": f"2026-01-01T10:{i:02d}:00", "action": "prune",
-             "disease_id": "sle", "removed": {"genes": [f"G{i}"], "drugs": []}}
+            {
+                "version": 1,
+                "ts": f"2026-01-01T10:{i:02d}:00",
+                "action": "prune",
+                "disease_id": "sle",
+                "removed": {"genes": [f"G{i}"], "drugs": []},
+            }
             for i in range(30)
         ]
         self._canned(monkeypatch, canned)

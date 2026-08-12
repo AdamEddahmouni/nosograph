@@ -10,9 +10,11 @@ import pytest
 from med_research.pipeline.provenance import build_provenance
 from med_research.pipeline.reporting import disease_context
 
+PROJECT_ROOT = Path(__file__).parent.parent
+
 pytestmark = pytest.mark.unit
 
-PROJECT_ROOT = Path(__file__).parent.parent
+
 
 
 @pytest.fixture
@@ -49,9 +51,7 @@ def sample_library():
     ]
 
 
-def _assert_provenance_footer(
-    html: str, provenance: dict, disease_id: str | None = None
-) -> None:
+def _assert_provenance_footer(html: str, provenance: dict, disease_id: str | None = None) -> None:
     fingerprint = provenance["fingerprint"]
     assert len(fingerprint) == 20
     assert fingerprint in html
@@ -130,32 +130,34 @@ def minimal_literature_entities():
 @pytest.fixture
 def minimal_ct_results():
     return {
-        "trials": [{
-            "nct_id": "NCT00000001",
-            "title": "Anti-TNF trial",
-            "summary": "Trial summary",
-            "status": "RECRUITING",
-            "phases": ["PHASE3"],
-            "primary_phase": "PHASE3",
-            "phase_label": "Phase 3",
-            "interventions": ["Adalimumab"],
-            "intervention_types": ["DRUG"],
-            "sponsor_name": "Sponsor",
-            "sponsor_class": "INDUSTRY",
-            "enrollment": 100,
-            "start_date": "2024-01-01",
-            "completion_date": "2026-01-01",
-            "why_stopped": "",
-            "conditions": ["RA"],
-            "moa_category": "TNF inhibition",
-            "kg_matches": {
-                "has_match": False,
-                "gene_count": 0,
-                "drug_count": 0,
-                "genes": [],
-                "drugs": [],
-            },
-        }],
+        "trials": [
+            {
+                "nct_id": "NCT00000001",
+                "title": "Anti-TNF trial",
+                "summary": "Trial summary",
+                "status": "RECRUITING",
+                "phases": ["PHASE3"],
+                "primary_phase": "PHASE3",
+                "phase_label": "Phase 3",
+                "interventions": ["Adalimumab"],
+                "intervention_types": ["DRUG"],
+                "sponsor_name": "Sponsor",
+                "sponsor_class": "INDUSTRY",
+                "enrollment": 100,
+                "start_date": "2024-01-01",
+                "completion_date": "2026-01-01",
+                "why_stopped": "",
+                "conditions": ["RA"],
+                "moa_category": "TNF inhibition",
+                "kg_matches": {
+                    "has_match": False,
+                    "gene_count": 0,
+                    "drug_count": 0,
+                    "genes": [],
+                    "drugs": [],
+                },
+            }
+        ],
         "stats": {
             "total_trials": 1,
             "kg_matched_trials": 0,
@@ -176,7 +178,9 @@ def minimal_ct_results():
 
 
 def test_drug_repurposing_report_provenance(
-    sample_graph, sample_genes, sample_candidates,
+    sample_graph,
+    sample_genes,
+    sample_candidates,
 ):
     from med_research.pipeline.drug_repurposing.engine import (
         identify_untargeted_genes,
@@ -243,17 +247,24 @@ def test_bioinformatics_report_provenance():
     enrichment_results = {
         "GO_Biological_Process_2023": {
             "library": "GO_Biological_Process_2023",
-            "terms": [{
-                "term": "immune response",
-                "adj_p_value": 0.01,
-                "genes": ["TNF"],
-                "odds_ratio": 4.0,
-            }],
+            "terms": [
+                {
+                    "term": "immune response",
+                    "adj_p_value": 0.01,
+                    "genes": ["TNF"],
+                    "odds_ratio": 4.0,
+                }
+            ],
             "total_significant": 1,
         },
     }
     gene_list = [
-        {"gene_id": "TNF", "symbol": "TNF", "name": "Tumor Necrosis Factor", "category": "Cytokine"},
+        {
+            "gene_id": "TNF",
+            "symbol": "TNF",
+            "name": "Tumor Necrosis Factor",
+            "category": "Cytokine",
+        },
     ]
     provenance = build_provenance(
         disease_id=disease_id,
@@ -437,9 +448,7 @@ def test_drug_synergy_report_provenance(synergy_pairs):
         run_id="ds-test-run",
     )
 
-    report_path = generate_html_report(
-        pairs, disease_id=disease_id, provenance=provenance
-    )
+    report_path = generate_html_report(pairs, disease_id=disease_id, provenance=provenance)
     _assert_provenance_footer(_read_report(report_path), provenance, disease_id)
 
 
@@ -457,9 +466,7 @@ def test_network_pharmacology_report_provenance():
         run_id="np-test-run",
     )
 
-    report_path = generate_html_report(
-        results, disease_id=disease_id, provenance=provenance
-    )
+    report_path = generate_html_report(results, disease_id=disease_id, provenance=provenance)
     _assert_provenance_footer(_read_report(report_path), provenance, disease_id)
 
 
@@ -496,14 +503,16 @@ def test_ml_predictor_report_provenance():
             "n_untargeted": 30,
             "cv_roc_auc_mean": 0.82,
         },
-        "top_untargeted": [{
-            "gene_id": "TNF",
-            "gene_name": "Tumor Necrosis Factor",
-            "category": "Cytokine",
-            "druggability_score": 0.88,
-            "odds_ratio": 2.1,
-            "degree": 6,
-        }],
+        "top_untargeted": [
+            {
+                "gene_id": "TNF",
+                "gene_name": "Tumor Necrosis Factor",
+                "category": "Cytokine",
+                "druggability_score": 0.88,
+                "odds_ratio": 2.1,
+                "degree": 6,
+            }
+        ],
         "feature_importance": {"degree": 0.25, "odds_ratio": 0.20},
         "shap_summary": [{"feature": "degree", "mean_abs_shap": 0.12}],
     }
@@ -515,9 +524,7 @@ def test_ml_predictor_report_provenance():
         run_id="ml-test-run",
     )
 
-    report_path = generate_ml_report(
-        results, disease_id=disease_id, provenance=provenance
-    )
+    report_path = generate_ml_report(results, disease_id=disease_id, provenance=provenance)
     _assert_provenance_footer(_read_report(report_path), provenance, disease_id)
 
 
@@ -525,14 +532,16 @@ def test_semantic_search_report_provenance():
     from med_research.pipeline.semantic_search.report import generate_semantic_report
 
     disease_id = "ra"
-    results = [{
-        "rank": 1,
-        "pmid": "123",
-        "title": "Anti-TNF therapy in rheumatoid arthritis",
-        "year": "2024",
-        "journal": "NEJM",
-        "similarity": 9.1,
-    }]
+    results = [
+        {
+            "rank": 1,
+            "pmid": "123",
+            "title": "Anti-TNF therapy in rheumatoid arthritis",
+            "year": "2024",
+            "journal": "NEJM",
+            "similarity": 9.1,
+        }
+    ]
     provenance = build_provenance(
         disease_id=disease_id,
         module="semantic_search",
@@ -629,13 +638,15 @@ def test_evidence_gatherer_report_provenance():
         "total_results": 1,
         "elapsed_seconds": 1.2,
         "results_by_source": {"pubmed": 1},
-        "all_results": [{
-            "source_type": "pubmed",
-            "title": "Anti-TNF therapy in RA",
-            "year": "2024",
-            "snippet": "Clinical outcomes",
-            "url": "https://example.com/1",
-        }],
+        "all_results": [
+            {
+                "source_type": "pubmed",
+                "title": "Anti-TNF therapy in RA",
+                "year": "2024",
+                "snippet": "Clinical outcomes",
+                "url": "https://example.com/1",
+            }
+        ],
         "crossref": {"pairs": []},
     }
     provenance = build_provenance(
@@ -660,18 +671,20 @@ def test_llm_extractor_report_provenance():
         "total_extracted": 1,
         "successful_extractions": 1,
         "elapsed_seconds": 2.5,
-        "extractions": [{
-            "title": "Tofacitinib in RA",
-            "year": "2024",
-            "source_type": "pubmed",
-            "source": "PMID:123",
-            "evidence_level": "rct",
-            "model_system": "human",
-            "key_findings": "Improved ACR response",
-            "drugs_mentioned": ["tofacitinib"],
-            "confidence": 85,
-            "relevance_to_query": 90,
-        }],
+        "extractions": [
+            {
+                "title": "Tofacitinib in RA",
+                "year": "2024",
+                "source_type": "pubmed",
+                "source": "PMID:123",
+                "evidence_level": "rct",
+                "model_system": "human",
+                "key_findings": "Improved ACR response",
+                "drugs_mentioned": ["tofacitinib"],
+                "confidence": 85,
+                "relevance_to_query": 90,
+            }
+        ],
         "stats": {
             "evidence_levels": {"rct": 1},
             "model_systems": {"human": 1},
@@ -726,7 +739,5 @@ def test_evidence_monitor_report_provenance():
         run_id="em-test-run",
     )
 
-    report_path = generate_html_report(
-        diff, prev_snapshot, curr_snapshot, provenance=provenance
-    )
+    report_path = generate_html_report(diff, prev_snapshot, curr_snapshot, provenance=provenance)
     _assert_provenance_footer(_read_report(report_path), provenance)

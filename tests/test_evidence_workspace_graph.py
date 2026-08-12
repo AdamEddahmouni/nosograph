@@ -1,7 +1,10 @@
 import networkx as nx
+import pytest
 
 from med_research.pipeline.evidence_workspace.graph import build_graph_explanations
 from med_research.pipeline.evidence_workspace.schemas import RankedCandidate
+
+pytestmark = pytest.mark.unit
 
 
 def candidate(candidate_id):

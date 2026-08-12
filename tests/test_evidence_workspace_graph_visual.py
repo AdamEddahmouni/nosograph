@@ -1,9 +1,13 @@
 from pathlib import Path
 
+import pytest
+
 from med_research.pipeline.evidence_workspace.schemas import Citation, Claim, GraphExplanation
 from med_research.web.services.workspace_graph import build_workspace_graph
 
 from .test_evidence_workspace_reviews import _dossier, _save
+
+pytestmark = pytest.mark.unit
 
 
 def _graph_dossier(run_id: str = "ew-graph"):

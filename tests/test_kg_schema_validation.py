@@ -27,10 +27,12 @@ from med_research.exceptions import (
     SchemaValidationError,
 )
 
-pytestmark = pytest.mark.unit
-
 DISEASES = ["sle", "ra", "ms", "ss", "ssc", "t1d", "ibd"]
 KG_FILES = ["genes.json", "drugs.json", "pathways.json", "relationships.json", "profile.json"]
+
+pytestmark = pytest.mark.unit
+
+
 
 
 # ── Happy path: every disease validates through both boundaries ──────────

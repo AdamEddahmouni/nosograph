@@ -1,8 +1,14 @@
+
+
 """Contract tests for scientifically reliable multi-disease execution."""
 
 import pytest
 
 DISEASES = ["sle", "ra", "ms", "ss", "ssc", "t1d", "ibd"]
+
+pytestmark = pytest.mark.unit
+
+
 
 
 @pytest.mark.parametrize("disease_id", DISEASES)
@@ -48,8 +54,18 @@ def test_gwas_missing_gene_filter_uses_requested_disease_exclusions():
 def test_clinical_trial_entity_loading_is_disease_specific(monkeypatch):
     from med_research.pipeline.clinical_trials import tracker
 
-    monkeypatch.setattr(tracker, "config_load_genes", lambda disease_id="sle": {"genes": [{"id": disease_id, "name": disease_id, "category": ""}]})
-    monkeypatch.setattr(tracker, "config_load_drugs", lambda disease_id="sle": {"drugs": [{"id": disease_id, "name": disease_id, "target": ""}]})
+    monkeypatch.setattr(
+        tracker,
+        "config_load_genes",
+        lambda disease_id="sle": {
+            "genes": [{"id": disease_id, "name": disease_id, "category": ""}]
+        },
+    )
+    monkeypatch.setattr(
+        tracker,
+        "config_load_drugs",
+        lambda disease_id="sle": {"drugs": [{"id": disease_id, "name": disease_id, "target": ""}]},
+    )
 
     entities = tracker.load_kg_entities("ra")
     assert set(entities["genes"]) == {"ra"}

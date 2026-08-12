@@ -28,6 +28,9 @@ from med_research.pipeline.gene_expression.correlator import (
 )
 from med_research.pipeline.gene_expression.report import escape_html, generate_html_report
 
+pytestmark = pytest.mark.unit
+
+
 # ── Unit: Data Integrity ─────────────────────────────────────────────────
 
 
@@ -289,7 +292,9 @@ def _mock_requests_get(url, params, timeout=15):
 
 
 def test_geo_search_broad(monkeypatch):
-    monkeypatch.setattr("med_research.pipeline.gene_expression.geo.requests.get", _mock_requests_get)
+    monkeypatch.setattr(
+        "med_research.pipeline.gene_expression.geo.requests.get", _mock_requests_get
+    )
     from med_research.pipeline.gene_expression.geo import search_geo_datasets
 
     studies = search_geo_datasets(disease="sle", category="broad", no_cache=True)
@@ -500,12 +505,15 @@ def test_build_consensus_signature_ms():
     assert "IRF5" not in sig["upregulated"]
 
 
-@pytest.mark.parametrize("disease_id,up_gene,down_gene", [
-    ("ms", "IL7R", "MBP"),
-    ("ss", "TNFSF13B", "AQP5"),
-    ("ssc", "COL1A1", "PPARG"),
-    ("t1d", "PTPN22", "PDX1"),
-])
+@pytest.mark.parametrize(
+    "disease_id,up_gene,down_gene",
+    [
+        ("ms", "IL7R", "MBP"),
+        ("ss", "TNFSF13B", "AQP5"),
+        ("ssc", "COL1A1", "PPARG"),
+        ("t1d", "PTPN22", "PDX1"),
+    ],
+)
 def test_build_consensus_signature_new_diseases(disease_id, up_gene, down_gene):
     from med_research.pipeline.gene_expression.geo import build_consensus_signature
 
@@ -544,8 +552,7 @@ def test_build_consensus_with_tissue():
     from med_research.pipeline.gene_expression.geo import build_consensus_signature
 
     studies = [{"accession": "GSE100003"}]
-    sig = build_consensus_signature(studies, disease="sle",
-                                    min_occurrence=2, tissue="kidney")
+    sig = build_consensus_signature(studies, disease="sle", min_occurrence=2, tissue="kidney")
     assert sig["tissue_category"] == "kidney"
     kidney_genes = {"CCL2", "CCL5", "TNF", "IL6", "STAT1", "IKZF1", "PRDM1"}
     for gene in sig["upregulated"]:
@@ -554,6 +561,7 @@ def test_build_consensus_with_tissue():
 
 def test_build_consensus_empty_studies():
     from med_research.pipeline.gene_expression.geo import build_consensus_signature
+
     sig = build_consensus_signature([], disease="sle", min_occurrence=2)
     assert sig["num_studies_used"] == 0
     assert sig["upregulated"] == {}
@@ -576,8 +584,10 @@ def test_get_signature_fallback(monkeypatch):
     def mock_get_expression_sig(disease=None, tissue=None, min_studies=2):
         return {"num_studies_used": 0, "upregulated": {}, "downregulated": {}}
 
-    monkeypatch.setattr("med_research.pipeline.gene_expression.geo.get_expression_signature",
-                        mock_get_expression_sig)
+    monkeypatch.setattr(
+        "med_research.pipeline.gene_expression.geo.get_expression_signature",
+        mock_get_expression_sig,
+    )
     from med_research.pipeline.gene_expression.signature import get_signature
 
     sig = get_signature(disease="sle", source="auto")
@@ -644,8 +654,7 @@ def test_compute_all_correlations_threads_disease(monkeypatch):
     # Avoid GEO/curated signature machinery; pass a tiny explicit signature
     results = correlator.compute_all_correlations(
         disease_id="ra",
-        signature={"upregulated": {}, "downregulated": {},
-                   "source": "test", "num_studies_used": 0},
+        signature={"upregulated": {}, "downregulated": {}, "source": "test", "num_studies_used": 0},
         signature_source="curated",
     )
     assert captured["disease_id"] == "ra"
@@ -670,8 +679,9 @@ def test_expression_report_with_signature_source():
     from med_research.pipeline.gene_expression.report import generate_html_report
 
     results = compute_all_correlations()
-    path = generate_html_report(results[:5], signature_source="curated_consensus",
-                                num_studies=0, tissue="broad")
+    path = generate_html_report(
+        results[:5], signature_source="curated_consensus", num_studies=0, tissue="broad"
+    )
     content = Path(path).read_text(encoding="utf-8")
     assert "Expression Signature Source" in content
     assert "curated_consensus" in content

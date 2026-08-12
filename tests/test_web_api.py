@@ -22,6 +22,9 @@ from starlette.websockets import WebSocketDisconnect
 
 from med_research.web.main import app
 
+pytestmark = pytest.mark.unit
+
+
 # ── Redis availability check ────────────────────────────────────────────────
 
 
@@ -41,8 +44,7 @@ skip_without_redis = pytest.mark.skipif(
     reason="Redis server not available on localhost:6379",
 )
 ML_DEPENDENCIES_AVAILABLE = all(
-    importlib.util.find_spec(name) is not None
-    for name in ("numpy", "sklearn", "xgboost")
+    importlib.util.find_spec(name) is not None for name in ("numpy", "sklearn", "xgboost")
 )
 skip_without_ml = pytest.mark.skipif(
     not ML_DEPENDENCIES_AVAILABLE,
@@ -90,8 +92,14 @@ class TestSystemEndpoints:
         resp = client.get("/api/stats")
         assert resp.status_code == 200
         data = resp.json()
-        for key in ["kg_nodes", "kg_edges", "genes", "drugs", "pathways", "candidates"]:
+        for key in [
+            "disease_id", "disease_name", "kg_nodes", "kg_edges", "genes", "drugs",
+            "pathways", "candidates", "modules", "diseases", "coverage_summary",
+        ]:
             assert key in data, f"Missing key: {key}"
+        assert "full" in data["coverage_summary"]
+        assert data["modules"] > 0
+        assert data["diseases"] > 0
 
     def test_stats_kg_nodes_is_positive(self, client):
         resp = client.get("/api/stats")
@@ -182,7 +190,14 @@ class TestKGStats:
 
     def test_has_required_keys(self, client):
         data = client.get("/api/kg/stats").json()
-        for key in ["total_nodes", "total_edges", "node_types", "edge_types", "untargeted_genes", "top_hub_genes"]:
+        for key in [
+            "total_nodes",
+            "total_edges",
+            "node_types",
+            "edge_types",
+            "untargeted_genes",
+            "top_hub_genes",
+        ]:
             assert key in data, f"Missing key: {key}"
 
     def test_node_types_has_all_types(self, client):
@@ -429,10 +444,18 @@ class TestRepurposeCandidates:
     def test_candidate_has_required_fields(self, client):
         candidate = client.get("/api/repurpose/candidates?top_n=10").json()["candidates"][0]
         required = [
-            "rank", "drug_name", "gene_id", "gene_name", "composite_score",
-            "target_similarity_score", "mechanistic_rationale_score",
-            "clinical_evidence_score", "safety_score", "novelty_score",
-            "evidence_level", "tier",
+            "rank",
+            "drug_name",
+            "gene_id",
+            "gene_name",
+            "composite_score",
+            "target_similarity_score",
+            "mechanistic_rationale_score",
+            "clinical_evidence_score",
+            "safety_score",
+            "novelty_score",
+            "evidence_level",
+            "tier",
         ]
         for field in required:
             assert field in candidate, f"Missing field: {field}"
@@ -481,7 +504,14 @@ class TestRepurposeGene:
 
     def test_has_gene_info(self, client):
         data = client.get("/api/repurpose/gene/BTK").json()
-        for field in ["gene_id", "gene_name", "gene_category", "gene_function", "lupus_evidence", "candidates"]:
+        for field in [
+            "gene_id",
+            "gene_name",
+            "gene_category",
+            "gene_function",
+            "lupus_evidence",
+            "candidates",
+        ]:
             assert field in data, f"Missing field: {field}"
 
     def test_candidates_count_matches(self, client):
@@ -508,8 +538,9 @@ class TestBioGWAS:
         """Serve the shared session fixture instead of re-running the live GWAS compute."""
         monkeypatch.setattr(
             "med_research.pipeline.bioinformatics.gwas.run_gwas_analysis",
-            lambda disease_id="sle", max_studies=30, use_cache=True,
-            resolve_snps=True, progress_callback=None: gwas_result,
+            lambda disease_id="sle", max_studies=30, use_cache=True, resolve_snps=True, progress_callback=None: (
+                gwas_result
+            ),
         )
 
     def test_returns_200(self, client, gwas_result, monkeypatch):
@@ -599,6 +630,201 @@ class TestBioPPI:
         assert resp.status_code == 422
 
 
+class TestSynergyPairs:
+    """Behavioral tests for GET /api/synergy/pairs."""
+
+    def test_returns_200(self, client, synergy_pairs, monkeypatch):
+        monkeypatch.setattr(
+            "med_research.web.services.synergy_service.dispatch_sync_module",
+            lambda *_args, **_kwargs: synergy_pairs,
+        )
+        resp = client.get("/api/synergy/pairs?top_n=5&disease_id=ra")
+        assert resp.status_code == 200
+
+    def test_has_required_keys(self, client, synergy_pairs, monkeypatch):
+        monkeypatch.setattr(
+            "med_research.web.services.synergy_service.dispatch_sync_module",
+            lambda *_args, **_kwargs: synergy_pairs,
+        )
+        data = client.get("/api/synergy/pairs?top_n=5&disease_id=ra").json()
+        for key in ["total_pairs", "pairs", "tier1_count", "avg_score", "coverage", "status"]:
+            assert key in data, f"Missing key: {key}"
+        assert data["status"] == "ready"
+        assert len(data["pairs"]) <= 5
+
+
+class TestBiomarkerDiscover:
+    """Behavioral tests for GET /api/biomarker/discover."""
+
+    _FAKE_BIOMARKERS = [
+        {
+            "gene_id": "BTK",
+            "gene_name": "Bruton Tyrosine Kinase",
+            "composite_score": 8.2,
+            "cross_module_consistency": 7.5,
+            "expression_predictiveness": 6.0,
+            "car_t_alignment": 5.0,
+            "druggability": 8.0,
+            "novelty": 4.0,
+        }
+    ]
+
+    def test_returns_200(self, client, monkeypatch):
+        monkeypatch.setattr(
+            "med_research.web.services.biomarker_service.dispatch_sync_module",
+            lambda *_args, **_kwargs: self._FAKE_BIOMARKERS,
+        )
+        resp = client.get("/api/biomarker/discover?top_n=5&disease_id=sle")
+        assert resp.status_code == 200
+
+    def test_has_required_keys(self, client, monkeypatch):
+        monkeypatch.setattr(
+            "med_research.web.services.biomarker_service.dispatch_sync_module",
+            lambda *_args, **_kwargs: self._FAKE_BIOMARKERS,
+        )
+        data = client.get("/api/biomarker/discover?top_n=5&disease_id=sle").json()
+        for key in ["biomarkers", "total_genes", "avg_score", "coverage", "status"]:
+            assert key in data, f"Missing key: {key}"
+        assert data["status"] == "ready"
+        assert data["biomarkers"]
+
+
+class TestExpressionCorrelate:
+    """Behavioral tests for GET /api/expression/correlate."""
+
+    def test_returns_200(self, client, expression_results, monkeypatch):
+        monkeypatch.setattr(
+            "med_research.web.services.expression_service.dispatch_sync_module",
+            lambda *_args, **_kwargs: expression_results,
+        )
+        resp = client.get("/api/expression/correlate?top_n=5&disease_id=ra")
+        assert resp.status_code == 200
+
+    def test_has_required_keys(self, client, expression_results, monkeypatch):
+        monkeypatch.setattr(
+            "med_research.web.services.expression_service.dispatch_sync_module",
+            lambda *_args, **_kwargs: expression_results,
+        )
+        data = client.get("/api/expression/correlate?top_n=5&disease_id=ra").json()
+        for key in ["drugs", "total_drugs", "avg_score", "coverage", "status"]:
+            assert key in data, f"Missing key: {key}"
+        assert data["status"] == "ready"
+        assert isinstance(data["drugs"], list)
+
+
+class TestEvidenceGather:
+    """Behavioral tests for GET /api/evidence/gather."""
+
+    _FAKE_GATHER = {
+        "query": "Systemic Lupus Erythematosus BTK",
+        "all_results": [
+            {
+                "title": "BTK inhibition in autoimmunity",
+                "source": "pubmed",
+                "source_type": "pubmed",
+                "year": "2024",
+                "url": "https://example.test/1",
+                "snippet": "Study of BTK inhibitors.",
+                "id": "pmid-1",
+                "citation_count": 3,
+            }
+        ],
+        "sources_searched": ["pubmed"],
+        "total_results": 1,
+        "elapsed_seconds": 0.12,
+        "results_by_source": {"pubmed": 1},
+        "crossref": {},
+        "generated_at": "2026-01-01T00:00:00Z",
+    }
+
+    def test_returns_200(self, client, monkeypatch):
+        monkeypatch.setattr(
+            "med_research.web.services.evidence_service.dispatch_sync_module",
+            lambda *_args, **_kwargs: self._FAKE_GATHER,
+        )
+        resp = client.get("/api/evidence/gather?q=BTK&disease_id=sle&max_per_source=5")
+        assert resp.status_code == 200
+
+    def test_has_required_keys(self, client, monkeypatch):
+        monkeypatch.setattr(
+            "med_research.web.services.evidence_service.dispatch_sync_module",
+            lambda *_args, **_kwargs: self._FAKE_GATHER,
+        )
+        data = client.get("/api/evidence/gather?q=BTK&disease_id=sle&max_per_source=5").json()
+        for key in [
+            "query",
+            "sources_searched",
+            "total_results",
+            "results",
+            "coverage",
+            "status",
+        ]:
+            assert key in data, f"Missing key: {key}"
+        assert data["status"] == "ready"
+        assert data["total_results"] >= 1
+
+
+class TestLLMExtract:
+    """Behavioral tests for GET /api/llm/extract."""
+
+    _FAKE_EXTRACTION = {
+        "query": "BTK inhibition",
+        "model": "gpt-4o-mini",
+        "total_extracted": 1,
+        "successful_extractions": 1,
+        "elapsed_seconds": 0.5,
+        "extractions": [
+            {
+                "title": "BTK inhibition study",
+                "source_type": "pubmed",
+                "source": "pubmed",
+                "year": "2024",
+                "url": "https://example.test/1",
+                "id": "pmid-1",
+                "evidence_level": "preclinical",
+                "model_system": "mouse",
+                "key_findings": "Reduced disease activity",
+                "drugs_mentioned": ["ibrutinib"],
+                "disease": "lupus",
+                "study_design": "preclinical",
+                "relevance_to_query": 80,
+                "confidence": 70,
+            }
+        ],
+        "stats": {
+            "evidence_levels": {"preclinical": 1},
+            "model_systems": {"mouse": 1},
+            "study_designs": {"preclinical": 1},
+            "unique_drugs_mentioned": ["ibrutinib"],
+            "n_unique_drugs": 1,
+            "top_diseases": {"lupus": 1},
+            "articles_with_sample_size": 0,
+        },
+        "generated_at": "2026-01-01T00:00:00Z",
+        "coverage": {"module": "evidence_extract", "status": "ready"},
+        "status": "ready",
+    }
+
+    def test_returns_200(self, client, monkeypatch):
+        monkeypatch.setattr(
+            "med_research.web.services.extractor_service.dispatch_sync_module",
+            lambda *_args, **_kwargs: self._FAKE_EXTRACTION,
+        )
+        resp = client.get("/api/llm/extract?q=BTK&disease_id=sle&max_articles=5")
+        assert resp.status_code == 200
+
+    def test_has_required_keys(self, client, monkeypatch):
+        monkeypatch.setattr(
+            "med_research.web.services.extractor_service.dispatch_sync_module",
+            lambda *_args, **_kwargs: self._FAKE_EXTRACTION,
+        )
+        data = client.get("/api/llm/extract?q=BTK&disease_id=sle&max_articles=5").json()
+        for key in ["query", "total_extracted", "extractions", "stats", "status"]:
+            assert key in data, f"Missing key: {key}"
+        assert data["status"] == "ready"
+        assert data["extractions"]
+
+
 # ── Analysis Endpoints (sync / cached results) ─────────────────────────────
 
 
@@ -611,7 +837,13 @@ class TestAnalysisLiterature:
 
     def test_has_required_keys(self, client):
         data = client.get("/api/literature?max_articles=5").json()
-        for key in ["total_articles", "queries_run", "articles", "gene_coverage", "candidate_support"]:
+        for key in [
+            "total_articles",
+            "queries_run",
+            "articles",
+            "gene_coverage",
+            "candidate_support",
+        ]:
             assert key in data, f"Missing key: {key}"
 
 
@@ -624,7 +856,15 @@ class TestAnalysisScreening:
 
     def test_has_required_keys(self, client):
         data = client.get("/api/screening?top_n=5").json()
-        for key in ["targets", "compounds_screened", "total_pairings", "tier1_count", "tier2_count", "vina_available", "rdkit_available"]:
+        for key in [
+            "targets",
+            "compounds_screened",
+            "total_pairings",
+            "tier1_count",
+            "tier2_count",
+            "vina_available",
+            "rdkit_available",
+        ]:
             assert key in data, f"Missing key: {key}"
 
     def test_vina_and_rdkit_fields_are_bools(self, client):
@@ -648,7 +888,14 @@ class TestAnalysisScreening:
         compounds = client.get("/api/screening?top_n=5").json()["targets"][0]["top_compounds"]
         if compounds:
             c = compounds[0]
-            for field in ["drug_id", "drug_name", "composite_score", "binding_estimate", "druglikeness", "tier"]:
+            for field in [
+                "drug_id",
+                "drug_name",
+                "composite_score",
+                "binding_estimate",
+                "druglikeness",
+                "tier",
+            ]:
                 assert field in c, f"Missing field: {field}"
 
     def test_filter_by_gene(self, client):
@@ -666,7 +913,13 @@ class TestAnalysisTrials:
 
     def test_has_required_keys(self, client):
         data = client.get("/api/trials?max_trials=5").json()
-        for key in ["total_trials", "phase_distribution", "moa_distribution", "top_sponsors", "trials"]:
+        for key in [
+            "total_trials",
+            "phase_distribution",
+            "moa_distribution",
+            "top_sponsors",
+            "trials",
+        ]:
             assert key in data, f"Missing key: {key}"
 
 
@@ -861,7 +1114,14 @@ class TestErrorHandling:
         schema = client.get("/api/openapi.json").json()
         tags = schema.get("tags") or []
         tag_names = {t["name"] for t in tags}
-        expected = {"Knowledge Graph", "Drug Repurposing", "Bioinformatics", "Analysis", "System", "Jobs"}
+        expected = {
+            "Knowledge Graph",
+            "Drug Repurposing",
+            "Bioinformatics",
+            "Analysis",
+            "System",
+            "Jobs",
+        }
         # Tags may be empty depending on FastAPI version; test is informational
         if tag_names:
             assert expected.issubset(tag_names), f"Missing tags: {expected - tag_names}"
@@ -934,8 +1194,9 @@ class TestWebSocketOrphanedJob:
 
             # At least one message must be the orphaned-job ERROR
             error_msgs = [m for m in messages if m["status"] == "ERROR"]
-            assert len(error_msgs) >= 1, \
+            assert len(error_msgs) >= 1, (
                 f"Expected an ERROR message for orphaned job, got: {messages}"
+            )
             error_text = error_msgs[0]["error"].lower()
             assert "not found" in error_text or "unavailable" in error_text
 
@@ -1235,7 +1496,9 @@ class TestCrossDiseaseApi:
         assert len(data["drugs"]) <= 5
 
     @pytest.mark.slow
-    def test_modules_endpoint_returns_stacked_matrices(self, client, comparative_modules, monkeypatch):
+    def test_modules_endpoint_returns_stacked_matrices(
+        self, client, comparative_modules, monkeypatch
+    ):
         """Comparative modules endpoint stacks biomarker/expression/synergy per disease."""
         # The 7.5s cross-disease compute is shared via the session fixture.
         monkeypatch.setattr(
@@ -1335,16 +1598,17 @@ class TestAPIHardening:
     def test_request_body_size_limit(self, client):
         resp = client.post(
             "/api/jobs/workspace",
-            content=b"x" * (1024 * 1024 + 1),
+            content=b"x" * (10 * 1024 * 1024 + 1),
             headers={"Content-Type": "application/json"},
         )
         assert resp.status_code == 413
         assert resp.json()["detail"] == "Request body too large"
 
     def test_websocket_rejects_invalid_job_id(self, client):
-        with pytest.raises(WebSocketDisconnect), client.websocket_connect(
-            "/api/jobs/not-a-uuid/ws"
-        ) as ws:
+        with (
+            pytest.raises(WebSocketDisconnect),
+            client.websocket_connect("/api/jobs/not-a-uuid/ws") as ws,
+        ):
             ws.receive_json()
 
     def test_api_key_required_when_debug_false(self, monkeypatch):
@@ -1398,6 +1662,6 @@ class TestAPIHardening:
         resp = client.post(
             "/api/jobs/workspace",
             content=b"{}",
-            headers={"Content-Type": "application/json", "Content-Length": str(1024 * 1024 + 1)},
+            headers={"Content-Type": "application/json", "Content-Length": str(10 * 1024 * 1024 + 1)},
         )
         assert resp.status_code == 413

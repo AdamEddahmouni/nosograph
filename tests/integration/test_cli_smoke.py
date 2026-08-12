@@ -17,7 +17,7 @@ import pytest
 
 from tests.cli_helpers import run_cli_command, run_cli_command_capture, run_cli_handler
 
-pytestmark = pytest.mark.integration
+pytestmark = [pytest.mark.integration]
 
 
 def _ml_predictor_available() -> bool:

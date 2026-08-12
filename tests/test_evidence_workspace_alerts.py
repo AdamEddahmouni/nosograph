@@ -1,9 +1,13 @@
 from datetime import datetime, timezone
 from pathlib import Path
 
+import pytest
+
 from med_research.web.services.workspace_store import WorkspaceRunStore
 
 from .test_evidence_workspace_reviews import _dossier, _save
+
+pytestmark = pytest.mark.unit
 
 
 def test_dashboard_contains_review_alert_inbox():

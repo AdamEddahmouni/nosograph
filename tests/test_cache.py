@@ -1,3 +1,5 @@
+
+
 """Unit tests for CacheManager and cache helper utilities."""
 
 from __future__ import annotations
@@ -18,6 +20,8 @@ from med_research.cache import (
     load_legacy_json,
 )
 from med_research.exceptions import CacheCorruptionError
+
+pytestmark = pytest.mark.unit
 
 
 @pytest.fixture
@@ -178,9 +182,9 @@ def test_module_namespace_constants():
 def test_safe_key_filename_handles_windows_invalid_chars(mgr):
     path = mgr._cache_path(
         "enrichment",
-        "GENE1,GENE2|||[\"GO_Biological_Process_2023\"]|||15",
+        'GENE1,GENE2|||["GO_Biological_Process_2023"]|||15',
     )
     assert "|" not in path.name
     assert '"' not in path.name
-    mgr.set("enrichment", "GENE1,GENE2|||[\"GO\"]|||15", {"ok": True})
-    assert mgr.get("enrichment", "GENE1,GENE2|||[\"GO\"]|||15") == {"ok": True}
+    mgr.set("enrichment", 'GENE1,GENE2|||["GO"]|||15', {"ok": True})
+    assert mgr.get("enrichment", 'GENE1,GENE2|||["GO"]|||15') == {"ok": True}

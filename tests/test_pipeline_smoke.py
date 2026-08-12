@@ -1,6 +1,6 @@
 import pytest
 
-pytestmark = pytest.mark.integration
+pytestmark = [pytest.mark.unit, pytest.mark.integration]
 
 
 class TestPipelineSmoke:
@@ -26,11 +26,13 @@ class TestPipelineSmoke:
 
         dr_data_dir = (
             Path(__file__).parent.parent
-            / "src" / "med_research" / "pipeline" / "drug_repurposing" / "data"
+            / "src"
+            / "med_research"
+            / "pipeline"
+            / "drug_repurposing"
+            / "data"
         )
-        candidates_data = json.loads(
-            (dr_data_dir / "candidates.json").read_text(encoding="utf-8")
-        )
+        candidates_data = json.loads((dr_data_dir / "candidates.json").read_text(encoding="utf-8"))
         candidates = candidates_data["repurposing_candidates"]
 
         untargeted = identify_untargeted_genes(graph)

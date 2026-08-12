@@ -1,8 +1,11 @@
 import networkx as nx
+import pytest
 
 from med_research.pipeline.evidence_workspace.schemas import ResearchRequest
 from med_research.pipeline.evidence_workspace.sources import ClinicalTrialsSource, PubMedSource
 from med_research.pipeline.evidence_workspace.workspace import run_workspace
+
+pytestmark = pytest.mark.unit
 
 
 def test_workspace_assembles_evidence_claims_rankings_and_manifest():

@@ -7,9 +7,14 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
+pytestmark = pytest.mark.unit
+
+
 
 class TestCoverageGating:
     """Blocked status when curated disease inputs are missing."""
+
+
 
     def test_blocked_when_pubmed_queries_missing(self, monkeypatch):
         from med_research.diseases.base import Disease
@@ -60,7 +65,13 @@ class TestGatherEvidence:
             use_cache=False,
         )
         assert isinstance(result, dict)
-        for key in ("query", "total_results", "results_by_source", "all_results", "elapsed_seconds"):
+        for key in (
+            "query",
+            "total_results",
+            "results_by_source",
+            "all_results",
+            "elapsed_seconds",
+        ):
             assert key in result, f"Missing key: {key}"
 
     def test_results_have_required_fields(self, evidence_http_mocks):

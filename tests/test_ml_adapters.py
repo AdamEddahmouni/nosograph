@@ -1,3 +1,5 @@
+
+
 """Contract tests for ML and semantic search pipeline adapters."""
 
 from __future__ import annotations
@@ -14,6 +16,8 @@ from med_research.pipeline.semantic_search.adapter import (
 )
 from med_research.pipeline.semantic_search.engine import SemanticSearchEngine
 from tests.test_pipeline_base import ModuleAdapterContract
+
+pytestmark = pytest.mark.unit
 
 
 def _ml_deps_available() -> bool:
@@ -60,9 +64,10 @@ class TestMlPredictorAdapter(ModuleAdapterContract):
 
         assert isinstance(wrapped, dict)
         assert "error" not in wrapped
-        assert wrapped["predictions"][0]["druggability_score"] == direct["predictions"][0][
-            "druggability_score"
-        ]
+        assert (
+            wrapped["predictions"][0]["druggability_score"]
+            == direct["predictions"][0]["druggability_score"]
+        )
         assert len(wrapped["top_untargeted"]) == len(direct["top_untargeted"])
 
     @pytest.mark.skipif(not _ml_deps_available(), reason="xgboost/scikit-learn not installed")

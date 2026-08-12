@@ -1,3 +1,5 @@
+
+
 """Regression tests for disease-specific adverse-event coverage."""
 
 import pytest
@@ -12,6 +14,10 @@ from med_research.web.services.adverse_events_service import run_safety_profilin
 
 DISEASES = ["sle", "ra", "ms", "ss", "ssc", "t1d", "ibd"]
 
+pytestmark = pytest.mark.unit
+
+
+
 
 @pytest.mark.parametrize("disease_id", DISEASES)
 def test_safety_profiles_are_ready_and_scoped_to_catalog(disease_id):
@@ -19,9 +25,7 @@ def test_safety_profiles_are_ready_and_scoped_to_catalog(disease_id):
         disease_id, "safety", ("symptoms", "adverse_event_profile", "safety_risk")
     )
     profiles = load_profiles(disease_id)
-    catalog_ids = {
-        drug["id"] for drug in Disease(disease_id).load_drugs()["drugs"]
-    }
+    catalog_ids = {drug["id"] for drug in Disease(disease_id).load_drugs()["drugs"]}
     assert coverage.status == "ready"
     assert profiles
     assert set(profiles) == catalog_ids
@@ -79,17 +83,20 @@ def test_invalid_profile_drug_reference_is_blocked(monkeypatch):
     monkeypatch.setattr(Disease, "get_adverse_event_profile", invalid_profile)
     with pytest.raises(ValueError, match="unknown drugs"):
         from med_research.pipeline.adverse_events import profiler
+
         profiler._load_disease_profile_payload("ra")
 
 
 def test_profiler_cli_unknown_drug_returns_nonzero():
-    import subprocess
-    import sys
+    from med_research.cli import cmd_safety
+    from tests.cli_helpers import run_cli_handler
 
-    result = subprocess.run(
-        [sys.executable, "-m", "med_research.pipeline.adverse_events.profiler", "--disease", "ra", "--drug", "not-a-drug"],
-        capture_output=True,
-        text=True,
-        cwd=".",
+    exit_code = run_cli_handler(
+        cmd_safety,
+        "safety",
+        "--disease",
+        "ra",
+        "--drug",
+        "not-a-drug",
     )
-    assert result.returncode != 0
+    assert exit_code != 0

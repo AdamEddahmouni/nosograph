@@ -1,3 +1,5 @@
+
+
 """Unit tests for rate limiting and backoff helpers."""
 
 from datetime import datetime, timedelta, timezone
@@ -10,6 +12,8 @@ from med_research.rate_limiter import (
     parse_retry_after,
     rate_limited_sleep,
 )
+
+pytestmark = pytest.mark.unit
 
 
 class TestParseRetryAfter:

@@ -24,6 +24,9 @@ from med_research.pipeline.adverse_events.profiler import (
 )
 from med_research.pipeline.adverse_events.report import escape_html, generate_html_report
 
+pytestmark = pytest.mark.unit
+
+
 # ── Fixtures ──────────────────────────────────────────────────────────────
 
 
@@ -50,7 +53,11 @@ def risky_drug_profile():
         "severity_burden": 9,
         "chronic_use_safety": 1,
         "dil_risk": 1,
-        "black_box_warnings": ["Myelosuppression", "Hemorrhagic cystitis", "Secondary malignancies"],
+        "black_box_warnings": [
+            "Myelosuppression",
+            "Hemorrhagic cystitis",
+            "Secondary malignancies",
+        ],
         "severe_ae": ["bone marrow failure", "bladder cancer", "pulmonary fibrosis"],
     }
 
@@ -167,7 +174,12 @@ def test_score_all_drugs_persists():
     score_all_drugs()
     profiles_path = (
         Path(__file__).parent.parent
-        / "src" / "med_research" / "pipeline" / "adverse_events" / "data" / "profiles.json"
+        / "src"
+        / "med_research"
+        / "pipeline"
+        / "adverse_events"
+        / "data"
+        / "profiles.json"
     )
     assert profiles_path.exists()
 

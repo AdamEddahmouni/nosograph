@@ -9,8 +9,9 @@ Tests cover:
   - analyze(): summary output
 """
 
-
 import pytest
+
+pytestmark = pytest.mark.unit
 
 
 class TestComputeCompositeScore:
@@ -73,7 +74,7 @@ class TestComputeCompositeScore:
         }
         score = compute_composite_score(candidate)
         # New weights: 20/15/20/15/20/10. Legacy safety_score used as fallback.
-        expected = 10*0.20 + 2*0.15 + 8*0.20 + 4*0.15 + 6*0.20 + 0*0.10
+        expected = 10 * 0.20 + 2 * 0.15 + 8 * 0.20 + 4 * 0.15 + 6 * 0.20 + 0 * 0.10
         assert score == round(expected, 2)
 
     def test_result_is_float(self):
@@ -305,22 +306,24 @@ class TestPathwayProximityHelper:
         """score_candidates catches KeyError from compute_pathway_proximity gracefully."""
         from med_research.pipeline.drug_repurposing.engine import score_candidates
 
-        candidates = [{
-            "id": "test001",
-            "gene_id": "NONEXISTENT_GENE",
-            "drug_name": "Test Drug",
-            "drug_category": "Test",
-            "mechanism": "Test mechanism",
-            "rationale": "Test rationale",
-            "target_similarity_score": 5,
-            "pathway_proximity_score": 7.0,
-            "mechanistic_rationale_score": 5,
-            "clinical_evidence_score": 5,
-            "safety_score": 5,
-            "novelty_score": 2,
-            "evidence_level": "Test",
-            "status": "Test",
-        }]
+        candidates = [
+            {
+                "id": "test001",
+                "gene_id": "NONEXISTENT_GENE",
+                "drug_name": "Test Drug",
+                "drug_category": "Test",
+                "mechanism": "Test mechanism",
+                "rationale": "Test rationale",
+                "target_similarity_score": 5,
+                "pathway_proximity_score": 7.0,
+                "mechanistic_rationale_score": 5,
+                "clinical_evidence_score": 5,
+                "safety_score": 5,
+                "novelty_score": 2,
+                "evidence_level": "Test",
+                "status": "Test",
+            }
+        ]
         scored = score_candidates(sample_graph, candidates, sample_genes)
         assert len(scored) == 1
         # kg_pathway_proximity should fall back to curated score
@@ -417,9 +420,18 @@ class TestLoadFunctions:
     def test_first_candidate_has_required_fields(self, sample_candidates):
         c = sample_candidates[0]
         for field in [
-            "id", "gene_id", "drug_name", "mechanism", "rationale",
-            "target_similarity_score", "pathway_proximity_score",
-            "mechanistic_rationale_score", "clinical_evidence_score",
-            "safety_score", "novelty_score", "evidence_level", "status",
+            "id",
+            "gene_id",
+            "drug_name",
+            "mechanism",
+            "rationale",
+            "target_similarity_score",
+            "pathway_proximity_score",
+            "mechanistic_rationale_score",
+            "clinical_evidence_score",
+            "safety_score",
+            "novelty_score",
+            "evidence_level",
+            "status",
         ]:
             assert field in c, f"Missing field: {field}"

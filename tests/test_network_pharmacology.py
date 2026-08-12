@@ -20,6 +20,9 @@ from med_research.pipeline.network_pharmacology.analyzer import (
 )
 from med_research.pipeline.network_pharmacology.report import escape_html, generate_html_report
 
+pytestmark = pytest.mark.unit
+
+
 # ── Fixtures ──────────────────────────────────────────────────────────────
 
 

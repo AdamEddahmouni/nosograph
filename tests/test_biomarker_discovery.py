@@ -2,9 +2,13 @@
 Tests for the Biomarker Discovery module.
 """
 
+
+
 import json
 import sys
 from pathlib import Path
+
+import pytest
 
 sys.path.insert(0, str(Path(__file__).parent.parent))  # noqa: I001
 
@@ -15,11 +19,15 @@ from med_research.pipeline.biomarker_discovery.discover import (
     score_biomarker,
 )
 
+pytestmark = pytest.mark.unit
+
+
 # ── Unit: Gene Mapping ───────────────────────────────────────────────────
 
 
 def test_map_gene_to_modules_returns_list():
     from med_research.pipeline.knowledge_graph.builder import build_graph
+
     G = build_graph()
     genes = {n: d for n, d in G.nodes(data=True) if d.get("type") == "gene"}
     matrix = map_gene_to_modules(genes, {})
@@ -31,9 +39,12 @@ def test_map_gene_to_modules_returns_list():
 
 def test_score_biomarker_range():
     row = {
-        "gene_id": "TEST", "gene_name": "Test Gene",
-        "consistency": 5.0, "expression_max": 5.0,
-        "cart_score": 5.0, "repurpose_count": 2,
+        "gene_id": "TEST",
+        "gene_name": "Test Gene",
+        "consistency": 5.0,
+        "expression_max": 5.0,
+        "cart_score": 5.0,
+        "repurpose_count": 2,
     }
     result = score_biomarker(row)
     assert 0.0 <= result["composite_score"] <= 10.0
@@ -43,14 +54,22 @@ def test_score_biomarker_range():
 
 def test_score_biomarker_all_fields():
     row = {
-        "gene_id": "TEST", "gene_name": "Test",
-        "consistency": 8.0, "expression_max": 9.0,
-        "cart_score": 9.5, "repurpose_count": 4,
+        "gene_id": "TEST",
+        "gene_name": "Test",
+        "consistency": 8.0,
+        "expression_max": 9.0,
+        "cart_score": 9.5,
+        "repurpose_count": 4,
     }
     result = score_biomarker(row)
-    for field in ["cross_module_consistency", "expression_predictiveness",
-                   "cart_alignment", "druggability", "biomarker_novelty",
-                   "best_modality"]:
+    for field in [
+        "cross_module_consistency",
+        "expression_predictiveness",
+        "cart_alignment",
+        "druggability",
+        "biomarker_novelty",
+        "best_modality",
+    ]:
         assert field in result
 
 
@@ -95,10 +114,12 @@ def test_load_all_modules_reads_per_disease_files(tmp_path, monkeypatch):
     data_dir.mkdir(parents=True, exist_ok=True)
     monkeypatch.setitem(d._MODULE_DATA_DIRS, "expression", data_dir)
     (data_dir / "expression_correlations_ra.json").write_text(
-        json.dumps({"drugs": [{"drug_id": "baricitinib", "composite_score": 8.0}]}))
+        json.dumps({"drugs": [{"drug_id": "baricitinib", "composite_score": 8.0}]})
+    )
     # A stale shared file must NOT be read when the per-disease file exists
     (data_dir / "expression_correlations.json").write_text(
-        json.dumps({"drugs": [{"drug_id": "sle_only", "composite_score": 9.0}]}))
+        json.dumps({"drugs": [{"drug_id": "sle_only", "composite_score": 9.0}]})
+    )
 
     module_data = d.load_all_modules("ra")
     assert "baricitinib" in module_data["expression"]
@@ -117,15 +138,20 @@ def test_load_all_modules_reads_legacy_files(tmp_path, monkeypatch):
         monkeypatch.setitem(d._MODULE_DATA_DIRS, module, data_dir)
 
     (tmp_path / "expression" / "expression_correlations_sle.json").write_text(
-        json.dumps({"drugs": [{"drug_id": "baricitinib", "composite_score": 8.0}]}))
+        json.dumps({"drugs": [{"drug_id": "baricitinib", "composite_score": 8.0}]})
+    )
     (tmp_path / "cart" / "car_t_scores_sle.json").write_text(
-        json.dumps({"genes": [{"gene_id": "BTK", "composite_score": 9.0}]}))
+        json.dumps({"genes": [{"gene_id": "BTK", "composite_score": 9.0}]})
+    )
     (tmp_path / "repurpose" / "candidates_sle.json").write_text(
-        json.dumps({"repurposing_candidates": [{"gene_id": "BTK"}]}))
+        json.dumps({"repurposing_candidates": [{"gene_id": "BTK"}]})
+    )
     (tmp_path / "safety" / "profiles_sle.json").write_text(
-        json.dumps({"baricitinib": {"composite_safety_score": 7.0}}))
+        json.dumps({"baricitinib": {"composite_safety_score": 7.0}})
+    )
     (tmp_path / "synergy" / "synergy_results_sle.json").write_text(
-        json.dumps({"pairs": [{"drug_a_id": "d1"}]}))
+        json.dumps({"pairs": [{"drug_a_id": "d1"}]})
+    )
 
     module_data = d.load_all_modules("sle")
     assert "baricitinib" in module_data["expression"]
@@ -142,9 +168,11 @@ def test_build_gene_drug_target_map_threads_disease(monkeypatch):
 
     def fake_load_relationships(disease_id="sle"):
         captured["disease_id"] = disease_id
-        return {"relationships": [
-            {"type": "TARGETS", "source": "baricitinib", "target": "BTK"},
-        ]}
+        return {
+            "relationships": [
+                {"type": "TARGETS", "source": "baricitinib", "target": "BTK"},
+            ]
+        }
 
     monkeypatch.setattr(d, "load_relationships", fake_load_relationships)
     monkeypatch.setattr(d, "_GENE_DRUG_TARGET_CACHE", {})
@@ -171,6 +199,7 @@ def test_compute_biomarker_matrix_threads_disease(monkeypatch):
         return {}
 
     import med_research.pipeline.knowledge_graph.builder as kg_builder
+
     monkeypatch.setattr(kg_builder, "build_graph", fake_build_graph)
     monkeypatch.setattr(d, "load_all_modules", fake_load_all_modules)
     monkeypatch.setattr(d, "_GENE_DRUG_TARGET_CACHE", {})
@@ -214,11 +243,16 @@ def test_compute_biomarker_matrix_save_false_skips_write(tmp_path, monkeypatch):
 
 def test_analyze_prints(caplog):
     row = {
-        "gene_id": "TEST", "gene_name": "Test Gene",
-        "composite_score": 8.5, "cross_module_consistency": 8.0,
-        "expression_predictiveness": 7.0, "cart_alignment": 9.0,
-        "druggability": 8.0, "biomarker_novelty": 6.0,
-        "best_modality": "CAR-T Therapy", "best_modality_score": 9.5,
+        "gene_id": "TEST",
+        "gene_name": "Test Gene",
+        "composite_score": 8.5,
+        "cross_module_consistency": 8.0,
+        "expression_predictiveness": 7.0,
+        "cart_alignment": 9.0,
+        "druggability": 8.0,
+        "biomarker_novelty": 6.0,
+        "best_modality": "CAR-T Therapy",
+        "best_modality_score": 9.5,
         "tier": "Tier 1 — Strong Biomarker",
     }
     analyze([row])
@@ -230,6 +264,7 @@ def test_analyze_prints(caplog):
 
 def test_escape_html_biomarker():
     from med_research.pipeline.biomarker_discovery.report import escape_html
+
     assert escape_html("<script>") == "&lt;script&gt;"
     assert escape_html(None) == ""
 

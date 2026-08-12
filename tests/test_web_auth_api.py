@@ -1,8 +1,11 @@
 import json
 
+import pytest
 from fastapi.testclient import TestClient
 
 from med_research.web.services.workspace_store import WorkspaceRunStore
+
+pytestmark = pytest.mark.unit
 
 
 def test_local_login_binds_workspace_requests_to_session(monkeypatch, tmp_path):

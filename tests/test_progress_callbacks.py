@@ -13,6 +13,9 @@ from med_research.pipeline.dispatch import execute_module
 from med_research.pipeline.registry import get_module, list_modules
 from tests.test_pipeline_base import assert_monotonic_progress
 
+pytestmark = pytest.mark.unit
+
+
 MODULE_RUN_KWARGS: dict[str, dict] = {
     "clinical_trials": {"use_cache": True},
     "cross_disease": {},
@@ -70,6 +73,8 @@ def _stub_semantic_search_empty_path(monkeypatch: pytest.MonkeyPatch) -> None:
     client makes every collection lookup fail, which is exactly the early-return
     regression that used to skip the tick.
     """
+
+
     import med_research.pipeline.semantic_search.engine as engine_mod
 
     class _FakeEmbedder:

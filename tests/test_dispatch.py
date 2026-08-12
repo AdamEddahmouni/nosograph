@@ -26,6 +26,8 @@ from med_research.pipeline.dispatch import (
 )
 from med_research.pipeline.registry import get_module
 
+pytestmark = pytest.mark.unit
+
 
 class TestProgressBridging:
     def test_standard_to_legacy_percent(self):
@@ -290,12 +292,13 @@ class TestExecuteModule:
 
     def test_integration_with_real_registry_adapter(self):
         """Smoke: real adapter + real coverage gate for RA GWAS."""
+
+
         from med_research.diseases.coverage import module_coverage
 
         module = get_module("gwas")
         coverage = module_coverage("ra", "gwas", module.coverage_inputs())
-        if not coverage.is_runnable:
-            pytest.skip("RA GWAS coverage not runnable in this environment")
+        assert coverage.status == "ready", coverage.to_dict()
 
         with (
             patch.object(module, "run", return_value={"status": "ready"}) as mock_run,

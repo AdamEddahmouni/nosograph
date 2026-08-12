@@ -9,6 +9,8 @@ Tests cover:
 
 import pytest
 
+pytestmark = pytest.mark.unit
+
 
 class TestCrossReferenceWithKG:
     """Tests for cross_reference_with_kg()."""
@@ -136,7 +138,12 @@ class TestCrossReferenceWithKG:
     def test_empty_gwas(self, sample_kg_genes):
         from med_research.pipeline.bioinformatics.gwas import cross_reference_with_kg
 
-        empty_gwas = {"gene_associations": {}, "total_studies_analyzed": 0, "total_associations": 0, "study_details": []}
+        empty_gwas = {
+            "gene_associations": {},
+            "total_studies_analyzed": 0,
+            "total_associations": 0,
+            "study_details": [],
+        }
         crossref = cross_reference_with_kg(empty_gwas, sample_kg_genes)
 
         assert crossref["n_validated"] == 0
@@ -181,7 +188,12 @@ class TestExtractGeneAssociations:
         from med_research.pipeline.bioinformatics.gwas import extract_gene_associations
 
         result = extract_gene_associations([])
-        for key in ["gene_associations", "total_studies_analyzed", "total_associations", "study_details"]:
+        for key in [
+            "gene_associations",
+            "total_studies_analyzed",
+            "total_associations",
+            "study_details",
+        ]:
             assert key in result
 
     def test_disease_search_terms_resolution(self):

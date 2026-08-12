@@ -5,6 +5,9 @@ calls and fail-open behavior, the create/fallback factory, and the
 middleware's 429 integration.
 """
 
+
+
+import pytest
 import redis
 
 from med_research.web.middleware import RateLimitMiddleware
@@ -13,6 +16,9 @@ from med_research.web.rate_limit import (
     RedisRateLimitStore,
     create_rate_limit_store,
 )
+
+pytestmark = pytest.mark.unit
+
 
 # ── In-memory store ─────────────────────────────────────────────────────────
 
@@ -164,9 +170,7 @@ class TestRateLimitMiddleware:
 
         monkeypatch.setattr(mw, "RATE_LIMIT_REQUESTS", 2)
         monkeypatch.setattr(mw, "RATE_LIMIT_WINDOW", 60)
-        monkeypatch.setattr(
-            mw, "create_rate_limit_store", lambda: InMemoryRateLimitStore()
-        )
+        monkeypatch.setattr(mw, "create_rate_limit_store", lambda: InMemoryRateLimitStore())
 
         app = FastAPI()
 

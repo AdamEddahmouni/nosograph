@@ -3,6 +3,7 @@ from datetime import datetime, timezone
 from io import BytesIO
 from zipfile import ZipFile
 
+import pytest
 from fastapi.testclient import TestClient
 
 from med_research.pipeline.evidence_workspace.schemas import (
@@ -13,6 +14,8 @@ from med_research.pipeline.evidence_workspace.schemas import (
     ResearchRequest,
 )
 from med_research.web.services.workspace_store import WorkspaceRunStore
+
+pytestmark = pytest.mark.unit
 
 
 def _dossier(run_id: str, score: float, evidence_id: str = "pmid-1") -> EvidenceDossier:
@@ -192,10 +195,28 @@ def test_candidate_history_and_compare_include_evidence_and_review_changes(tmp_p
     newer.completed_at = datetime(2026, 1, 2, tzinfo=timezone.utc)
     _save(store, newer)
     store.upsert_review(
-        "ew-old", "tofacitinib", "drug", "Tofacitinib", "pinned", "Old rationale", "", [], "", "fp-old"
+        "ew-old",
+        "tofacitinib",
+        "drug",
+        "Tofacitinib",
+        "pinned",
+        "Old rationale",
+        "",
+        [],
+        "",
+        "fp-old",
     )
     store.upsert_review(
-        "ew-new", "tofacitinib", "drug", "Tofacitinib", "rejected", "New rationale", "", [], "Changed my mind", "fp-new"
+        "ew-new",
+        "tofacitinib",
+        "drug",
+        "Tofacitinib",
+        "rejected",
+        "New rationale",
+        "",
+        [],
+        "Changed my mind",
+        "fp-new",
     )
 
     history = store.candidate_history("tofacitinib", "drug", "sle")
@@ -213,7 +234,16 @@ def test_review_bundle_contains_machine_and_citation_ready_artifacts(tmp_path):
     store = WorkspaceRunStore(tmp_path / "workspace.sqlite3")
     _save(store, _dossier("ew-bundle", 82.0))
     store.upsert_review(
-        "ew-bundle", "tofacitinib", "drug", "Tofacitinib", "pinned", "Investigate", "Next step", ["priority"], "", "fp-bundle"
+        "ew-bundle",
+        "tofacitinib",
+        "drug",
+        "Tofacitinib",
+        "pinned",
+        "Investigate",
+        "Next step",
+        ["priority"],
+        "",
+        "fp-bundle",
     )
     from med_research.web.services.review_export import build_review_bundle
 

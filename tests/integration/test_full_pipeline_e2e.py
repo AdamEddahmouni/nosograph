@@ -1,4 +1,9 @@
-"""Full offline ``run-all --full --export-html`` E2E for all known diseases."""
+"""Full offline ``run-all --full --export-html`` E2E for all known diseases.
+
+Primary regression target: ``sle`` with network boundaries mocked via
+``offline_pipeline_http_mocks`` — every runnable module must return structured
+result data and an HTML (or KG JSON) artifact.
+"""
 
 from __future__ import annotations
 
@@ -12,11 +17,13 @@ from med_research.pipeline.registry import get_module
 from tests.cli_helpers import run_cli_handler
 from tests.integration.conftest import ALL_DISEASES
 
-pytestmark = pytest.mark.integration
-
 PROJECT_ROOT = Path(__file__).parent.parent.parent
 PIPELINE_ROOT = PROJECT_ROOT / "src/med_research/pipeline"
 DISEASES = ALL_DISEASES
+
+pytestmark = [pytest.mark.integration]
+
+
 
 
 def _run_all_module_ids(*, skip_ml: bool = True) -> list[str]:
@@ -134,4 +141,27 @@ class TestFullPipelineExportHtml:
             )
             _assert_module_outcome(module_id, disease_id, result)
             if result.success:
+                assert isinstance(result.data, dict) and result.data, (
+                    f"{module_id}@{disease_id} missing result payload"
+                )
+                _assert_report_path(module_id, disease_id, result.report_path)
+
+
+class TestSleFullPipelineArtifacts:
+    """Focused sle run-all artifact gate (network mocked at HTTP boundaries)."""
+
+    def test_sle_run_all_modules_produce_results_and_reports(
+        self, offline_pipeline_http_mocks
+    ):
+        disease_id = "sle"
+        for module_id in _run_all_module_ids():
+            result = execute_module(
+                module_id,
+                disease_id,
+                export_html=True,
+                **_run_all_opts(module_id),
+            )
+            _assert_module_outcome(module_id, disease_id, result)
+            if result.success:
+                assert isinstance(result.data, dict) and result.data
                 _assert_report_path(module_id, disease_id, result.report_path)

@@ -1,7 +1,11 @@
 from datetime import date
 
+import pytest
+
 from med_research.pipeline.evidence_workspace.ranking import rank_drugs, rank_targets
 from med_research.pipeline.evidence_workspace.schemas import Citation, Claim, EvidenceRecord
+
+pytestmark = pytest.mark.unit
 
 
 def _evidence(source="pubmed", evidence_type="RCT", year=2024):

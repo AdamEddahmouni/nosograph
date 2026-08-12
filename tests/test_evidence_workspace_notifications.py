@@ -1,9 +1,13 @@
 from datetime import datetime, timezone
 
+import pytest
+
 from med_research.web.services import notifications
 from med_research.web.services.workspace_store import WorkspaceRunStore
 
 from .test_evidence_workspace_reviews import _dossier, _save
+
+pytestmark = pytest.mark.unit
 
 
 def _store_with_alert(tmp_path):
@@ -118,9 +122,7 @@ def test_notification_settings_api_masks_slack_secret(monkeypatch, tmp_path):
                 "weekly_digest_timezone": "America/New_York",
             },
         )
-        loaded = client.get(
-            "/api/workspace/notifications", headers={"X-Researcher-ID": "alice"}
-        )
+        loaded = client.get("/api/workspace/notifications", headers={"X-Researcher-ID": "alice"})
 
     assert saved.status_code == 200
     assert loaded.status_code == 200

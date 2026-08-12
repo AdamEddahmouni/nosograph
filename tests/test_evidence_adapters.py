@@ -18,10 +18,14 @@ from med_research.pipeline.provenance import build_provenance
 from med_research.pipeline.registry import MODULE_REGISTRY, get_module
 from tests.test_pipeline_base import ModuleAdapterContract
 
+pytestmark = pytest.mark.unit
+
 
 @pytest.fixture(autouse=True)
 def _openai_api_key(monkeypatch):
     """Evidence extract coverage requires an API key."""
+
+
     monkeypatch.setenv("OPENAI_API_KEY", "test-key-for-adapters")
 
 
@@ -64,9 +68,9 @@ class TestEvidenceGathererAdapter(ModuleAdapterContract):
 
         from med_research.pipeline.evidence.gatherer import gather_evidence
 
-        direct = gather_evidence(query, disease_id=disease_id, **{
-            k: v for k, v in kwargs.items() if k != "query"
-        })
+        direct = gather_evidence(
+            query, disease_id=disease_id, **{k: v for k, v in kwargs.items() if k != "query"}
+        )
         wrapped = module.run(disease_id, **kwargs)
 
         assert isinstance(wrapped, dict)
@@ -169,9 +173,9 @@ class TestLLMExtractorAdapter(ModuleAdapterContract):
         ):
             from med_research.pipeline.evidence.extractor import extract_all
 
-            direct = extract_all(query, disease_id=disease_id, **{
-                k: v for k, v in kwargs.items() if k != "query"
-            })
+            direct = extract_all(
+                query, disease_id=disease_id, **{k: v for k, v in kwargs.items() if k != "query"}
+            )
             wrapped = module.run(disease_id, **kwargs)
 
         assert isinstance(wrapped, dict)

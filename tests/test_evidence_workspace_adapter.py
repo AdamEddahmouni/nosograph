@@ -5,6 +5,7 @@ from __future__ import annotations
 from pathlib import Path
 
 import networkx as nx
+import pytest
 
 import med_research.pipeline.evidence_workspace.adapter  # noqa: F401
 from med_research.pipeline.evidence_workspace.adapter import EvidenceWorkspaceModule
@@ -14,6 +15,8 @@ from med_research.pipeline.evidence_workspace.workspace import run_workspace
 from med_research.pipeline.provenance import build_provenance
 from med_research.pipeline.registry import MODULE_REGISTRY, get_module
 from tests.test_pipeline_base import ModuleAdapterContract
+
+pytestmark = pytest.mark.unit
 
 
 def _fixture_sources():

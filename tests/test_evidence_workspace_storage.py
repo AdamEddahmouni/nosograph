@@ -21,6 +21,8 @@ from med_research.pipeline.evidence_workspace.schemas import (
 )
 from med_research.web.services.workspace_store import WorkspaceRunStore
 
+pytestmark = pytest.mark.unit
+
 
 def dossier(run_id: str, drug_score: float, target_score: float) -> EvidenceDossier:
     return EvidenceDossier(

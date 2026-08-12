@@ -29,7 +29,9 @@ def test_neutral_scorers_are_authoritative_and_legacy_names_are_aliases():
         "severe_ae": [],
     }
 
-    assert count_disease_symptom_overlap(profile, "ibd") == count_lupus_symptom_overlap(profile, "ibd")
+    assert count_disease_symptom_overlap(profile, "ibd") == count_lupus_symptom_overlap(
+        profile, "ibd"
+    )
     assert score_disease_overlap(profile, "ibd") == score_lupus_overlap(profile, "ibd")
     assert score_disease_specific_risk(profile, "ibd") == score_dil_risk(profile, "ibd")
 

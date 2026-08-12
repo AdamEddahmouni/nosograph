@@ -1,6 +1,14 @@
+from unittest.mock import MagicMock, patch
+
+import pytest
+
 from med_research.cli import _build_parser, cmd_workspace, cmd_workspace_migrate
+from med_research.pipeline.base import PipelineRunResult
 from med_research.pipeline.evidence_workspace.schemas import EvidenceDossier, ResearchRequest
+from med_research.pipeline.progress import cli_progress
 from med_research.web.services.workspace_store import WorkspaceRunStore
+
+pytestmark = pytest.mark.unit
 
 
 def test_workspace_cli_parser_accepts_question_sources_and_exports():
@@ -36,8 +44,7 @@ def test_workspace_migrate_cli_defaults_to_dry_run_then_applies(tmp_path, capsys
     store.create_run("ew-cli-legacy", ResearchRequest(question="Find JAK interventions"))
     with sqlite3.connect(path) as connection:
         connection.execute(
-            "UPDATE workspace_runs SET request_json=?, request_schema_version='1.0' "
-            "WHERE run_id=?",
+            "UPDATE workspace_runs SET request_json=?, request_schema_version='1.0' WHERE run_id=?",
             (json.dumps({"question": "Find JAK interventions"}), "ew-cli-legacy"),
         )
 
@@ -56,13 +63,42 @@ def test_workspace_migrate_cli_defaults_to_dry_run_then_applies(tmp_path, capsys
         ).fetchone()[0]
     assert "schema_version" not in json.loads(request_json)
 
-    args = _build_parser().parse_args(
-        ["workspace-migrate", "--db", str(path), "--apply", "--json"]
-    )
+    args = _build_parser().parse_args(["workspace-migrate", "--db", str(path), "--apply", "--json"])
     assert cmd_workspace_migrate(args) == 0
     report = json.loads(capsys.readouterr().out)
     assert report["dry_run"] is False
     assert report["migrated"] == 1
+
+
+def test_workspace_cli_wires_cli_progress_through_dispatch(monkeypatch, tmp_path):
+    """Workspace CLI must thread cli_progress into the gateway dispatch path."""
+    dossier = EvidenceDossier(
+        run_id="ew-cli-progress",
+        request=ResearchRequest(question="JAK interventions"),
+        started_at="2026-08-06T00:00:00Z",
+        completed_at="2026-08-06T00:00:00Z",
+    )
+    mock_execute = MagicMock(
+        return_value=PipelineRunResult(success=True, data=dossier)
+    )
+    monkeypatch.setattr(
+        "med_research.pipeline.gateway.pipeline_gateway.execute",
+        mock_execute,
+    )
+    args = _build_parser().parse_args(
+        [
+            "workspace",
+            "--question",
+            "JAK interventions",
+            "--json",
+            str(tmp_path / "dossier.json"),
+        ]
+    )
+
+    assert cmd_workspace(args) == 0
+    mock_execute.assert_called_once()
+    _, kwargs = mock_execute.call_args
+    assert kwargs["progress_callback"] is cli_progress
 
 
 def test_workspace_cli_runs_and_writes_requested_exports(monkeypatch, tmp_path, caplog):

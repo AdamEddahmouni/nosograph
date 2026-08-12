@@ -14,20 +14,20 @@ from med_research.pipeline.registry import (
     get_module,
 )
 
+pytestmark = pytest.mark.unit
+
 
 def assert_monotonic_progress(calls: list[tuple[str, int, int]]) -> None:
     """Assert standard progress ticks stay within bounds and advance per step."""
+
+
     assert calls, "expected at least one progress tick"
     prev_by_step: dict[str, int] = {}
     for step, current, total in calls:
         assert total >= 0
-        assert 0 <= current <= total, (
-            f"current {current} exceeds total {total} for step {step!r}"
-        )
+        assert 0 <= current <= total, f"current {current} exceeds total {total} for step {step!r}"
         prev = prev_by_step.get(step, 0)
-        assert current >= prev, (
-            f"non-monotonic progress for {step!r}: {prev} -> {current}"
-        )
+        assert current >= prev, f"non-monotonic progress for {step!r}: {prev} -> {current}"
         prev_by_step[step] = current
 
 
@@ -50,9 +50,7 @@ class ModuleAdapterContract:
         assert module.module_id == self.module_id
         assert module.coverage_inputs() == self.coverage_inputs
 
-        coverage = module_coverage(
-            self.disease_id, self.coverage_module, module.coverage_inputs()
-        )
+        coverage = module_coverage(self.disease_id, self.coverage_module, module.coverage_inputs())
         assert coverage.is_runnable
         assert set(module.coverage_inputs()).issubset(set(coverage.curated_inputs))
 
@@ -71,9 +69,7 @@ class ModuleAdapterContract:
         for key in ("disease_id", "module", "sources", "cache_or_live", "scoring"):
             assert provenance[key] == expected[key]
 
-        coverage = module_coverage(
-            self.disease_id, self.coverage_module, module.coverage_inputs()
-        )
+        coverage = module_coverage(self.disease_id, self.coverage_module, module.coverage_inputs())
         assert coverage.is_runnable
 
     def test_registered_in_module_registry(self):
@@ -109,9 +105,7 @@ class TestDrugRepurposingAdapter(ModuleAdapterContract):
         graph = load_knowledge_graph(disease_id)
         genes = load_genes(disease_id)
         candidates = load_json(DATA_DIR / "candidates.json")["repurposing_candidates"]
-        untargeted_ids = {
-            gene["id"] for gene in identify_untargeted_genes(graph, disease_id)
-        }
+        untargeted_ids = {gene["id"] for gene in identify_untargeted_genes(graph, disease_id)}
         direct = [
             candidate
             for candidate in score_candidates(graph, candidates, genes, disease_id=disease_id)

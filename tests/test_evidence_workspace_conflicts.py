@@ -1,6 +1,10 @@
+import pytest
+
 from med_research.pipeline.evidence_workspace.extraction import extract_claims
 from med_research.pipeline.evidence_workspace.ranking import rank_drugs
 from med_research.pipeline.evidence_workspace.schemas import EvidenceRecord
+
+pytestmark = pytest.mark.unit
 
 
 def record(evidence_id, text):

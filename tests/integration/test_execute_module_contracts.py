@@ -15,7 +15,7 @@ from med_research.exceptions import (
 from med_research.pipeline.dispatch import execute_module
 from med_research.pipeline.registry import get_module
 
-pytestmark = pytest.mark.integration
+pytestmark = [pytest.mark.integration]
 
 
 def _expect_typed_dispatch_failure(result, *, substring: str) -> None:
@@ -67,8 +67,7 @@ class TestExecuteModuleTypedErrorContract:
     def test_external_api_error_populates_errors(self, offline_pipeline_http_mocks):
         module = get_module("gwas")
         coverage = module_coverage("ra", "gwas", module.coverage_inputs())
-        if not coverage.is_runnable:
-            pytest.skip("RA GWAS coverage not runnable in this environment")
+        assert coverage.status == "ready", coverage.to_dict()
 
         def _raise_api_error(_disease_id: str, **_opts):
             raise ExternalAPIError("GWAS Catalog unavailable (contract test)")
@@ -90,8 +89,7 @@ class TestExecuteModuleTypedErrorContract:
             module._COVERAGE_MODULE or module.module_id,
             module.coverage_inputs(),
         )
-        if not coverage.is_runnable:
-            pytest.skip("RA literature_mining coverage not runnable in this environment")
+        assert coverage.status == "ready", coverage.to_dict()
 
         def _raise_validation_error(_disease_id: str, **_opts):
             raise DataValidationError("curated gene table failed schema check")

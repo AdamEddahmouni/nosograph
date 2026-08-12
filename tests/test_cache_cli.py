@@ -10,10 +10,14 @@ import pytest
 
 from med_research.cache import CacheManager
 
+pytestmark = pytest.mark.unit
+
 
 @pytest.fixture
 def cache_dir(tmp_path, monkeypatch):
     """Point all CacheManager() calls at an isolated temp directory."""
+
+
     path = tmp_path / "cache"
 
     def _manager(*_args, **_kwargs):

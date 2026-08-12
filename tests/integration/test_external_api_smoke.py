@@ -16,9 +16,11 @@ from med_research.pipeline.bioinformatics.gwas import GWAS_API
 from med_research.pipeline.dispatch import execute_module
 from med_research.pipeline.registry import get_module
 
-pytestmark = pytest.mark.integration
-
 GWAS_SEARCH_URL = f"{GWAS_API}/studies/search/findByDiseaseTrait"
+
+pytestmark = [pytest.mark.integration]
+
+
 
 
 @pytest.fixture
@@ -43,8 +45,7 @@ class TestMockedExternalApiSmoke:
     ):
         module = get_module("gwas")
         coverage = module_coverage("ra", "gwas", module.coverage_inputs())
-        if not coverage.is_runnable:
-            pytest.skip("RA GWAS coverage not runnable in this environment")
+        assert coverage.status == "ready", coverage.to_dict()
 
         result = execute_module(
             "gwas",

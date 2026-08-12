@@ -98,7 +98,7 @@ def test_provenance_footer_html_escapes_values():
 
     footer = provenance_footer_html(
         {
-            "run_id": 'run-<script>',
+            "run_id": "run-<script>",
             "fingerprint": 'fp&"x"',
             "generated_at": "<2026>",
             "cache_or_live": "live",

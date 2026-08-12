@@ -1,3 +1,5 @@
+
+
 """Tests for the parallel run-all DAG scheduler."""
 
 from __future__ import annotations
@@ -11,6 +13,8 @@ from med_research.pipeline.scheduler import (
     topological_levels,
     validate_dag,
 )
+
+pytestmark = pytest.mark.unit
 
 
 class TestResolveDependsOn:

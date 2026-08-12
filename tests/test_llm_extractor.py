@@ -108,6 +108,9 @@ SAMPLE_EXTRACTIONS = [
     },
 ]
 
+pytestmark = pytest.mark.unit
+
+
 
 # ── Cache Key Tests ───────────────────────────────────────────────────────
 
@@ -307,10 +310,10 @@ class TestExtractEvidenceNoAPI:
             patch("med_research.pipeline.evidence.extractor.API_KEY", "fake-key"),
             patch("med_research.pipeline.evidence.extractor.call_llm", return_value=None),
         ):
-                result = extract_evidence(article, "test query", use_cache=False)
-                assert result is not None
-                assert result["evidence_level"] == "unknown"
-                assert result["confidence"] == 0
+            result = extract_evidence(article, "test query", use_cache=False)
+            assert result is not None
+            assert result["evidence_level"] == "unknown"
+            assert result["confidence"] == 0
 
     def test_extract_with_malformed_llm_response(self):
         """Handles malformed LLM JSON response gracefully."""
@@ -324,12 +327,14 @@ class TestExtractEvidenceNoAPI:
         }
         with (
             patch("med_research.pipeline.evidence.extractor.API_KEY", "fake-key"),
-            patch("med_research.pipeline.evidence.extractor.call_llm",
-                  return_value="not valid json at all"),
+            patch(
+                "med_research.pipeline.evidence.extractor.call_llm",
+                return_value="not valid json at all",
+            ),
         ):
-                result = extract_evidence(article, "test query", use_cache=False)
-                assert result is not None
-                assert "not valid json at all" in result.get("key_findings", "")
+            result = extract_evidence(article, "test query", use_cache=False)
+            assert result is not None
+            assert "not valid json at all" in result.get("key_findings", "")
 
     def test_extract_with_partial_json(self):
         """Handles partial JSON (missing fields) gracefully."""
@@ -343,16 +348,18 @@ class TestExtractEvidenceNoAPI:
         }
         with (
             patch("med_research.pipeline.evidence.extractor.API_KEY", "fake-key"),
-            patch("med_research.pipeline.evidence.extractor.call_llm",
-                  return_value='{"evidence_level": "rct", "model_system": "human"}'),
+            patch(
+                "med_research.pipeline.evidence.extractor.call_llm",
+                return_value='{"evidence_level": "rct", "model_system": "human"}',
+            ),
         ):
-                result = extract_evidence(article, "test query", use_cache=False)
-                assert result is not None
-                assert result["evidence_level"] == "rct"
-                assert result["model_system"] == "human"
-                # Missing fields get defaults
-                assert result["key_findings"] == ""
-                assert result["drugs_mentioned"] == []
+            result = extract_evidence(article, "test query", use_cache=False)
+            assert result is not None
+            assert result["evidence_level"] == "rct"
+            assert result["model_system"] == "human"
+            # Missing fields get defaults
+            assert result["key_findings"] == ""
+            assert result["drugs_mentioned"] == []
 
 
 # ── Extract All (No-API Mode) Tests ──────────────────────────────────────
@@ -372,8 +379,7 @@ class TestExtractAllNoAPI:
         """extract_all without API key returns error dict."""
         monkeypatch.delenv("OPENAI_API_KEY", raising=False)
         with patch("med_research.pipeline.evidence.extractor.API_KEY", ""):
-            result = extract_all("lupus", sources=["pubmed"], max_articles=3,
-                                 use_cache=True)
+            result = extract_all("lupus", sources=["pubmed"], max_articles=3, use_cache=True)
             assert result["total_extracted"] == 0
             assert result["status"] == "blocked"
             assert result["coverage"]["module"] == "evidence_extract"
@@ -388,16 +394,20 @@ class TestExtractionLive:
     def test_extract_all_requires_api_key(self):
         """extract_all returns error when no API key is set."""
         import os
+
         if not os.environ.get("OPENAI_API_KEY"):
             result = extract_all(
-                "lupus rituximab", sources=["pubmed"],
-                max_articles=2, use_cache=True,
+                "lupus rituximab",
+                sources=["pubmed"],
+                max_articles=2,
+                use_cache=True,
             )
             assert "error" in result
 
     def test_extraction_response_structure(self):
         """Verify extraction response has correct structure when API key set."""
         import os
+
         if os.environ.get("OPENAI_API_KEY"):
             result = extract_all(
                 "lupus nephritis treatment",

@@ -23,6 +23,9 @@ from med_research.pipeline.drug_synergy.engine import (
 )
 from med_research.pipeline.drug_synergy.report import escape_html, generate_html_report
 
+pytestmark = pytest.mark.unit
+
+
 # ── Fixtures ──────────────────────────────────────────────────────────────
 
 
@@ -135,8 +138,18 @@ def test_target_complementarity_same_target(sample_drug_same_target, sample_drug
 
 def test_target_complementarity_same_group_different_target():
     """Both are B Cell biologics but with different targets."""
-    drug_a = {"id": "rituximab", "type": "Monoclonal Antibody", "target": "CD20", "category": "Biologic - B Cell Depletion"}
-    drug_b = {"id": "belimumab", "type": "Monoclonal Antibody", "target": "BAFF (BLyS)", "category": "Biologic - B Cell Modulation"}
+    drug_a = {
+        "id": "rituximab",
+        "type": "Monoclonal Antibody",
+        "target": "CD20",
+        "category": "Biologic - B Cell Depletion",
+    }
+    drug_b = {
+        "id": "belimumab",
+        "type": "Monoclonal Antibody",
+        "target": "BAFF (BLyS)",
+        "category": "Biologic - B Cell Modulation",
+    }
     score = score_target_complementarity(drug_a, drug_b)
     assert score == 6.0
 
@@ -377,6 +390,7 @@ def test_compute_synergy_ranked():
 def test_compute_synergy_saves_json(tmp_path, monkeypatch):
     """Verify that compute_synergy saves results to JSON."""
     import med_research.pipeline.drug_synergy.engine as engine_mod
+
     monkeypatch.setattr(engine_mod, "DATA_DIR", tmp_path)
     pairs = compute_synergy()
     json_path = tmp_path / "synergy_results_sle.json"
@@ -388,6 +402,7 @@ def test_compute_synergy_saves_json(tmp_path, monkeypatch):
 def test_compute_synergy_save_false_skips_write(tmp_path, monkeypatch):
     """save=False must not write the per-disease synergy results file."""
     import med_research.pipeline.drug_synergy.engine as engine_mod
+
     monkeypatch.setattr(engine_mod, "DATA_DIR", tmp_path)
     compute_synergy(save=False)
     assert not (tmp_path / "synergy_results_sle.json").exists()
@@ -412,7 +427,9 @@ def test_compute_synergy_all_dimensions():
 
 
 def test_escape_html():
-    assert escape_html("<script>alert('xss')</script>") == "&lt;script&gt;alert('xss')&lt;/script&gt;"
+    assert (
+        escape_html("<script>alert('xss')</script>") == "&lt;script&gt;alert('xss')&lt;/script&gt;"
+    )
     assert escape_html("A & B") == "A &amp; B"
     assert escape_html('quote"test') == "quote&quot;test"
     assert escape_html(None) == ""
@@ -425,6 +442,7 @@ def test_generate_html_report_creates_file(tmp_path, monkeypatch):
     result = generate_html_report(pairs[:5])
     assert "report.html" in result
     from pathlib import Path
+
     assert Path(result).exists()
 
 

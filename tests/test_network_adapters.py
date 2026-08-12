@@ -4,6 +4,8 @@ from __future__ import annotations
 
 from pathlib import Path
 
+import pytest
+
 import med_research.pipeline.cross_disease.adapter  # noqa: F401
 import med_research.pipeline.gene_expression.adapter  # noqa: F401
 import med_research.pipeline.network_pharmacology.adapter  # noqa: F401
@@ -12,6 +14,10 @@ from med_research.pipeline.cross_disease.adapter import CrossDiseaseModule
 from med_research.pipeline.gene_expression.adapter import GeneExpressionModule
 from med_research.pipeline.network_pharmacology.adapter import NetworkPharmacologyModule
 from tests.test_pipeline_base import ModuleAdapterContract
+
+pytestmark = pytest.mark.unit
+
+pytestmark = pytest.mark.unit
 
 
 class TestNetworkPharmacologyAdapter(ModuleAdapterContract):
@@ -28,9 +34,7 @@ class TestNetworkPharmacologyAdapter(ModuleAdapterContract):
             compute_all_metrics,
         )
 
-        coverage = module_coverage(
-            disease_id, self.coverage_module, module.coverage_inputs()
-        )
+        coverage = module_coverage(disease_id, self.coverage_module, module.coverage_inputs())
         assert coverage.is_runnable
 
         direct = compute_all_metrics(disease_id=disease_id)

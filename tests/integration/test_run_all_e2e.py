@@ -14,9 +14,11 @@ import pytest
 
 from tests.cli_helpers import run_cli_handler
 
-pytestmark = pytest.mark.integration
-
 DISEASE = "ra"
+
+pytestmark = [pytest.mark.integration]
+
+
 
 
 def _run_all_steps(*, skip_ml: bool = True):

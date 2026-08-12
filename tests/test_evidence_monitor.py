@@ -37,7 +37,13 @@ SAMPLE_RESULTS_A = [
 SAMPLE_RESULTS_B = [
     {"id": "P1", "title": "Paper One", "source_type": "pubmed", "year": "2024", "url": ""},
     {"id": "P2", "title": "Paper Two", "source_type": "pubmed", "year": "2023", "url": ""},
-    {"id": "P3", "title": "Paper Three (NEW)", "source_type": "preprints", "year": "2025", "url": ""},
+    {
+        "id": "P3",
+        "title": "Paper Three (NEW)",
+        "source_type": "preprints",
+        "year": "2025",
+        "url": "",
+    },
 ]
 
 SAMPLE_SNAPSHOT_PREV = {
@@ -48,16 +54,21 @@ SAMPLE_SNAPSHOT_PREV = {
     "tracked_genes": ["BTK"],
     "sources": ["pubmed"],
     "queries": {
-        "lupus treatment": {"results": SAMPLE_RESULTS_A, "total": 2,
-                            "hash": _hash_results(SAMPLE_RESULTS_A)},
+        "lupus treatment": {
+            "results": SAMPLE_RESULTS_A,
+            "total": 2,
+            "hash": _hash_results(SAMPLE_RESULTS_A),
+        },
     },
     "drugs": {
-        "Rituximab": {"results": SAMPLE_RESULTS_A, "total": 2,
-                      "hash": _hash_results(SAMPLE_RESULTS_A)},
+        "Rituximab": {
+            "results": SAMPLE_RESULTS_A,
+            "total": 2,
+            "hash": _hash_results(SAMPLE_RESULTS_A),
+        },
     },
     "genes": {
-        "BTK": {"results": SAMPLE_RESULTS_A, "total": 2,
-                "hash": _hash_results(SAMPLE_RESULTS_A)},
+        "BTK": {"results": SAMPLE_RESULTS_A, "total": 2, "hash": _hash_results(SAMPLE_RESULTS_A)},
     },
 }
 
@@ -69,18 +80,26 @@ SAMPLE_SNAPSHOT_CURR = {
     "tracked_genes": ["BTK"],
     "sources": ["pubmed"],
     "queries": {
-        "lupus treatment": {"results": SAMPLE_RESULTS_B, "total": 3,
-                            "hash": _hash_results(SAMPLE_RESULTS_B)},
+        "lupus treatment": {
+            "results": SAMPLE_RESULTS_B,
+            "total": 3,
+            "hash": _hash_results(SAMPLE_RESULTS_B),
+        },
     },
     "drugs": {
-        "Rituximab": {"results": SAMPLE_RESULTS_B, "total": 3,
-                      "hash": _hash_results(SAMPLE_RESULTS_B)},
+        "Rituximab": {
+            "results": SAMPLE_RESULTS_B,
+            "total": 3,
+            "hash": _hash_results(SAMPLE_RESULTS_B),
+        },
     },
     "genes": {
-        "BTK": {"results": SAMPLE_RESULTS_B, "total": 3,
-                "hash": _hash_results(SAMPLE_RESULTS_B)},
+        "BTK": {"results": SAMPLE_RESULTS_B, "total": 3, "hash": _hash_results(SAMPLE_RESULTS_B)},
     },
 }
+
+pytestmark = pytest.mark.unit
+
 
 
 # ── Disease Scoping Tests ─────────────────────────────────────────────────

@@ -11,9 +11,15 @@ PACKAGE_NAME = "med-research"
 DISEASE_IDS = ("sle", "ra", "ibd", "ms", "ss", "ssc", "t1d")
 KG_FILES = ("genes.json", "drugs.json", "pathways.json", "relationships.json", "profile.json")
 
+pytestmark = pytest.mark.unit
+
+
+
 
 def _package_paths() -> set[str]:
     """Return normalized paths shipped with the distribution."""
+
+
     try:
         dist = distribution(PACKAGE_NAME)
     except PackageNotFoundError:

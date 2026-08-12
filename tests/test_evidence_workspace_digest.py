@@ -1,9 +1,13 @@
 from datetime import datetime, timezone
 
+import pytest
+
 from med_research.web.services import notifications
 from med_research.web.services.workspace_store import WorkspaceRunStore
 
 from .test_evidence_workspace_reviews import _dossier, _save
+
+pytestmark = pytest.mark.unit
 
 
 def _store_with_weekly_digest_data(tmp_path):
@@ -55,9 +59,7 @@ def _store_with_weekly_digest_data(tmp_path):
 
 def test_weekly_digest_summarizes_evidence_reminders_and_decisions(tmp_path):
     store = _store_with_weekly_digest_data(tmp_path)
-    digest = store.build_weekly_digest(
-        "alice", now=datetime(2026, 3, 9, 12, tzinfo=timezone.utc)
-    )
+    digest = store.build_weekly_digest("alice", now=datetime(2026, 3, 9, 12, tzinfo=timezone.utc))
 
     assert digest["digest_key"] == "weekly-2026-03-02"
     assert digest["new_evidence_count"] == 1

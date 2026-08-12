@@ -2,9 +2,13 @@
 Tests for the CAR-T Response Predictor module.
 """
 
+
+
 import json
 import sys
 from pathlib import Path
+
+import pytest
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
@@ -17,6 +21,9 @@ from med_research.pipeline.car_t_predictor.predictor import (
     load_genes,
     score_gene,
 )
+
+pytestmark = pytest.mark.unit
+
 
 # ── Unit: Data Integrity ─────────────────────────────────────────────────
 
@@ -144,6 +151,7 @@ def test_ms_top_genes_are_ms_specific():
 
 def test_escape_html_cart():
     from med_research.pipeline.car_t_predictor.report import escape_html
+
     assert escape_html("<script>") == "&lt;script&gt;"
     assert escape_html(None) == ""
 

@@ -21,8 +21,6 @@ import pytest
 
 playwright = pytest.importorskip("playwright.sync_api")
 
-pytestmark = pytest.mark.slow
-
 # Importing through a local alias keeps optional Playwright collection explicit.
 Browser = playwright.Browser
 Page = playwright.Page
@@ -32,6 +30,10 @@ sync_playwright = playwright.sync_playwright
 PROJECT_ROOT = Path(__file__).parents[1]
 STATIC_DIR = PROJECT_ROOT / "src" / "med_research" / "web" / "static"
 BROWSER_ARTIFACT_DIR = PROJECT_ROOT / "test-artifacts" / "browser"
+
+pytestmark = [pytest.mark.unit, pytest.mark.slow]
+
+
 
 
 def _fixture_dossier() -> dict:
@@ -210,8 +212,20 @@ class _FixtureBackend:
                 },
             ],
             "edges": [
-                {"id": "edge-1", "source": "candidate:drug-tofacitinib", "target": "claim:claim-support", "type": "supports", "label": "supports"},
-                {"id": "edge-2", "source": "claim:claim-support", "target": "citation:PMID-123456", "type": "citation", "label": "cited by"},
+                {
+                    "id": "edge-1",
+                    "source": "candidate:drug-tofacitinib",
+                    "target": "claim:claim-support",
+                    "type": "supports",
+                    "label": "supports",
+                },
+                {
+                    "id": "edge-2",
+                    "source": "claim:claim-support",
+                    "target": "citation:PMID-123456",
+                    "type": "citation",
+                    "label": "cited by",
+                },
             ],
         }
         self.history_runs = [
@@ -258,25 +272,71 @@ class _FixtureBackend:
         }
         self.trend_payload = {
             "runs": [
-                {"run_id": "history-left", "question": "first", "timestamp": "2026-08-01T00:00:00Z", "evidence_count": 4, "claim_count": 2, "warning_count": 0},
-                {"run_id": "history-right", "question": "second", "timestamp": "2026-08-02T00:00:00Z", "evidence_count": 6, "claim_count": 3, "warning_count": 1},
+                {
+                    "run_id": "history-left",
+                    "question": "first",
+                    "timestamp": "2026-08-01T00:00:00Z",
+                    "evidence_count": 4,
+                    "claim_count": 2,
+                    "warning_count": 0,
+                },
+                {
+                    "run_id": "history-right",
+                    "question": "second",
+                    "timestamp": "2026-08-02T00:00:00Z",
+                    "evidence_count": 6,
+                    "claim_count": 3,
+                    "warning_count": 1,
+                },
             ],
-            "drug_series": [{
-                "candidate_id": "drug-1",
-                "name": "<svg onload=alert(1)>",
-                "points": [
-                    {"run_id": "history-left", "timestamp": "2026-08-01T00:00:00Z", "score": 80, "rank": 1, "confidence_band": "high", "present": True},
-                    {"run_id": "history-right", "timestamp": "2026-08-02T00:00:00Z", "score": 72, "rank": 2, "confidence_band": "moderate", "present": True},
-                ],
-            }],
-            "target_series": [{
-                "candidate_id": "target-1",
-                "name": "JAK1",
-                "points": [
-                    {"run_id": "history-left", "timestamp": "2026-08-01T00:00:00Z", "score": 70, "rank": 2, "confidence_band": "moderate", "present": True},
-                    {"run_id": "history-right", "timestamp": "2026-08-02T00:00:00Z", "score": 75, "rank": 1, "confidence_band": "high", "present": True},
-                ],
-            }],
+            "drug_series": [
+                {
+                    "candidate_id": "drug-1",
+                    "name": "<svg onload=alert(1)>",
+                    "points": [
+                        {
+                            "run_id": "history-left",
+                            "timestamp": "2026-08-01T00:00:00Z",
+                            "score": 80,
+                            "rank": 1,
+                            "confidence_band": "high",
+                            "present": True,
+                        },
+                        {
+                            "run_id": "history-right",
+                            "timestamp": "2026-08-02T00:00:00Z",
+                            "score": 72,
+                            "rank": 2,
+                            "confidence_band": "moderate",
+                            "present": True,
+                        },
+                    ],
+                }
+            ],
+            "target_series": [
+                {
+                    "candidate_id": "target-1",
+                    "name": "JAK1",
+                    "points": [
+                        {
+                            "run_id": "history-left",
+                            "timestamp": "2026-08-01T00:00:00Z",
+                            "score": 70,
+                            "rank": 2,
+                            "confidence_band": "moderate",
+                            "present": True,
+                        },
+                        {
+                            "run_id": "history-right",
+                            "timestamp": "2026-08-02T00:00:00Z",
+                            "score": 75,
+                            "rank": 1,
+                            "confidence_band": "high",
+                            "present": True,
+                        },
+                    ],
+                }
+            ],
         }
 
     @staticmethod
@@ -287,7 +347,13 @@ class _FixtureBackend:
         request = route.request
         path = urlsplit(request.url).path
         if path == "/api/auth/me" and request.method == "GET":
-            self._fulfill(route, {"authenticated": self.authenticated, "researcher_id": "fixture-researcher" if self.authenticated else None})
+            self._fulfill(
+                route,
+                {
+                    "authenticated": self.authenticated,
+                    "researcher_id": "fixture-researcher" if self.authenticated else None,
+                },
+            )
             return
         if path == "/api/auth/login" and request.method == "POST":
             self.login_payload = json.loads(request.post_data or "{}")
@@ -314,22 +380,66 @@ class _FixtureBackend:
             )
             self._fulfill(route, payload)
             return
-        if path == f"/api/workspace/runs/{self.dossier['run_id']}/reviews" and request.method == "GET":
-            self._fulfill(route, {"run_id": self.dossier["run_id"], "reviews": [self.review_response] if self.review_request else []})
+        if (
+            path == f"/api/workspace/runs/{self.dossier['run_id']}/reviews"
+            and request.method == "GET"
+        ):
+            self._fulfill(
+                route,
+                {
+                    "run_id": self.dossier["run_id"],
+                    "reviews": [self.review_response] if self.review_request else [],
+                },
+            )
             return
-        if path == f"/api/workspace/runs/{self.dossier['run_id']}/reviews" and request.method == "PUT":
+        if (
+            path == f"/api/workspace/runs/{self.dossier['run_id']}/reviews"
+            and request.method == "PUT"
+        ):
             self.review_request = json.loads(request.post_data or "{}")
             self.review_response.update(self.review_request)
             self._fulfill(route, self.review_response)
             return
-        if path == f"/api/workspace/runs/{self.dossier['run_id']}/graph" and request.method == "GET":
+        if (
+            path == f"/api/workspace/runs/{self.dossier['run_id']}/graph"
+            and request.method == "GET"
+        ):
             self._fulfill(route, self.graph_payload)
             return
-        if path == f"/api/workspace/runs/{self.dossier['run_id']}/review-bundle" and request.method == "GET":
-            route.fulfill(status=200, content_type="application/zip", body=self.review_bundle, headers={"Content-Disposition": f'attachment; filename="workspace-{self.dossier["run_id"]}-review.zip"'})
+        if (
+            path == f"/api/workspace/runs/{self.dossier['run_id']}/review-bundle"
+            and request.method == "GET"
+        ):
+            route.fulfill(
+                status=200,
+                content_type="application/zip",
+                body=self.review_bundle,
+                headers={
+                    "Content-Disposition": f'attachment; filename="workspace-{self.dossier["run_id"]}-review.zip"'
+                },
+            )
             return
         if path == "/api/workspace/notifications" and request.method == "GET":
-            self._fulfill(route, {"researcher_id": "fixture-researcher", "email": "", "email_enabled": True, "slack_configured": False, "slack_enabled": True, "score_drop_threshold": 0, "rank_change_threshold": 0, "evidence_quality_change_threshold": 0, "weekly_digest_enabled": False, "weekly_digest_weekday": 0, "weekly_digest_hour": 9, "weekly_digest_minute": 0, "weekly_digest_timezone": "UTC", "delivery": {}, "digest_delivery": {}})
+            self._fulfill(
+                route,
+                {
+                    "researcher_id": "fixture-researcher",
+                    "email": "",
+                    "email_enabled": True,
+                    "slack_configured": False,
+                    "slack_enabled": True,
+                    "score_drop_threshold": 0,
+                    "rank_change_threshold": 0,
+                    "evidence_quality_change_threshold": 0,
+                    "weekly_digest_enabled": False,
+                    "weekly_digest_weekday": 0,
+                    "weekly_digest_hour": 9,
+                    "weekly_digest_minute": 0,
+                    "weekly_digest_timezone": "UTC",
+                    "delivery": {},
+                    "digest_delivery": {},
+                },
+            )
             return
         if path == "/api/workspace/alerts" and request.method == "GET":
             self._fulfill(route, {"alerts": [], "unread_count": 0, "limit": 20, "offset": 0})
@@ -338,7 +448,18 @@ class _FixtureBackend:
             self._fulfill(route, self.compare_payload)
             return
         if path == "/api/workspace/runs/history-left" and request.method == "GET":
-            self._fulfill(route, {"run_id": "history-left", "status": "SUCCESS", "request": self.dossier["request"], "dossier": self.dossier, "html": self.html, "created_at": "2026-08-01T00:00:00Z", "updated_at": "2026-08-01T00:00:00Z"})
+            self._fulfill(
+                route,
+                {
+                    "run_id": "history-left",
+                    "status": "SUCCESS",
+                    "request": self.dossier["request"],
+                    "dossier": self.dossier,
+                    "html": self.html,
+                    "created_at": "2026-08-01T00:00:00Z",
+                    "updated_at": "2026-08-01T00:00:00Z",
+                },
+            )
             return
         responses = {
             "/api/system/diseases": {
@@ -349,7 +470,9 @@ class _FixtureBackend:
             "/api/kg/graph": {"elements": []},
             "/api/export/modules": {"modules": []},
             "/api/workspace/runs": {"runs": self.history_runs if self.mode == "history" else []},
-            "/api/workspace/trends": self.trend_payload if self.mode == "history" else {"runs": [], "drug_series": [], "target_series": []},
+            "/api/workspace/trends": self.trend_payload
+            if self.mode == "history"
+            else {"runs": [], "drug_series": [], "target_series": []},
         }
         if path not in responses:
             route.fulfill(
@@ -536,7 +659,9 @@ def test_workspace_browser_exposes_accessible_workspace_regions(dashboard_page):
     page, base_url = dashboard_page
     backend = _FixtureBackend("success")
     _open_dashboard(page, base_url, backend)
-    expect(page.locator("#workspace-form")).to_have_attribute("aria-describedby", "workspace-submit-status")
+    expect(page.locator("#workspace-form")).to_have_attribute(
+        "aria-describedby", "workspace-submit-status"
+    )
     expect(page.locator("#workspace-sources")).to_have_attribute("aria-label", "Evidence sources")
     expect(page.locator("#workspace-result")).to_have_attribute("role", "region")
     expect(page.locator("#workspace-submit-status")).to_have_attribute("aria-live", "polite")
@@ -628,9 +753,7 @@ def test_workspace_browser_researcher_review_graph_and_bundle(dashboard_page):
     review.locator('[data-review-field="decision"]').select_option("pinned")
     review.locator('[data-review-field="notes"]').fill("Fixture review notes")
     review.get_by_role("button", name="Save review").click()
-    expect(review.locator(".workspace-review-status")).to_contain_text(
-        "sha256-browser-fixture-001"
-    )
+    expect(review.locator(".workspace-review-status")).to_contain_text("sha256-browser-fixture-001")
     assert backend.review_request == {
         "candidate_id": "drug-tofacitinib",
         "candidate_type": "drug",

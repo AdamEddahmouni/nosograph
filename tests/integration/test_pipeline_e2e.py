@@ -10,8 +10,6 @@ import pytest
 from med_research.pipeline.reporting import disease_context
 from tests.cli_helpers import parse_cli_args, run_cli_handler
 
-pytestmark = pytest.mark.integration
-
 PROJECT_ROOT = Path(__file__).parent.parent.parent
 DISEASES = ("sle", "ra", "ibd")
 
@@ -20,6 +18,10 @@ REPORT_PATHS = {
     "synergy": PROJECT_ROOT / "src/med_research/pipeline/drug_synergy/report.html",
     "safety": PROJECT_ROOT / "src/med_research/pipeline/adverse_events/report.html",
 }
+
+pytestmark = [pytest.mark.integration]
+
+
 
 
 def _assert_disease_report(disease_id: str, html: str) -> None:
@@ -94,9 +96,7 @@ class TestOfflinePipelineE2E:
 
     def test_repurpose_handler_args_match_parser(self, disease_id):
         """Sanity-check argparse wiring for the repurpose step."""
-        args = parse_cli_args(
-            "repurpose", "--disease", disease_id, "--top", "3", "--export-html"
-        )
+        args = parse_cli_args("repurpose", "--disease", disease_id, "--top", "3", "--export-html")
         assert args.disease == disease_id
         assert args.top == 3
         assert args.export_html is True

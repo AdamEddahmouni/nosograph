@@ -1,5 +1,9 @@
+import pytest
+
 from med_research.pipeline.evidence_workspace.extraction import extract_claims
 from med_research.pipeline.evidence_workspace.schemas import EvidenceRecord
+
+pytestmark = pytest.mark.unit
 
 
 def test_deterministic_extraction_captures_variants_and_outcomes():

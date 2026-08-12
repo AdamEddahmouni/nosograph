@@ -4,6 +4,10 @@ import pytest
 
 DISEASES = ["sle", "ra", "ms", "ss", "ssc", "t1d", "ibd"]
 
+pytestmark = pytest.mark.unit
+
+
+
 
 @pytest.mark.parametrize("disease_id", DISEASES)
 def test_core_coverage_reports_all_five_data_files(disease_id):
@@ -13,7 +17,11 @@ def test_core_coverage_reports_all_five_data_files(disease_id):
     assert coverage.level == "full"
     assert coverage.status == "ready"
     assert set(coverage.curated_inputs) >= {
-        "profile", "genes", "drugs", "pathways", "relationships"
+        "profile",
+        "genes",
+        "drugs",
+        "pathways",
+        "relationships",
     }
     assert coverage.missing_inputs == []
 
@@ -142,7 +150,13 @@ def test_dashboard_has_coverage_rendering_and_blocks_direct_results():
     assert "Unsupported for this disease" in script
     assert "limited_coverage" in script
     assert ".coverage-badge" in styles
-    for renderer in ("renderKGResult", "renderRepurposeResult", "renderBiomarkerResult", "renderSemanticResult", "renderEvidenceResult"):
+    for renderer in (
+        "renderKGResult",
+        "renderRepurposeResult",
+        "renderBiomarkerResult",
+        "renderSemanticResult",
+        "renderEvidenceResult",
+    ):
         start = script.index(f"function {renderer}")
         end = script.find("\nfunction ", start + 10)
         body = script[start:] if end == -1 else script[start:end]
@@ -166,6 +180,8 @@ def test_all_default_modules_return_structured_coverage(disease_id):
 @pytest.mark.parametrize("disease_id", DISEASES)
 def test_all_diseases_have_curated_car_t_and_safety_configs(disease_id):
     """Non-SLE diseases must ship curated CAR-T and safety tables, not empty stubs."""
+
+
     from med_research.diseases.base import Disease
 
     disease = Disease(disease_id)

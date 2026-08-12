@@ -1,6 +1,8 @@
 from datetime import date, datetime, timezone
 from pathlib import Path
 
+import pytest
+
 from med_research.pipeline.evidence_workspace.ranking import rank_drugs
 from med_research.pipeline.evidence_workspace.report import render_html
 from med_research.pipeline.evidence_workspace.schemas import (
@@ -9,6 +11,8 @@ from med_research.pipeline.evidence_workspace.schemas import (
     EvidenceRecord,
     ResearchRequest,
 )
+
+pytestmark = pytest.mark.unit
 
 
 def _record(source: str, evidence_type: str, evidence_id: str) -> EvidenceRecord:

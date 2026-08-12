@@ -29,6 +29,9 @@ from med_research.pipeline.cross_disease.analyzer import (
     score_multi_disease_drugs,
 )
 
+pytestmark = pytest.mark.unit
+
+
 # ── Fixtures ───────────────────────────────────────────────────────────────
 
 
@@ -174,9 +177,17 @@ def test_score_multi_disease_drugs_returns_list(all_data):
     results = score_multi_disease_drugs(all_data, genes, pathways)
     assert len(results) > 50
     for d in results:
-        for field in ["drug_id", "drug_name", "composite_score", "tier",
-                       "disease_coverage", "target_centrality",
-                       "pathway_breadth", "mechanistic_transferability", "novelty"]:
+        for field in [
+            "drug_id",
+            "drug_name",
+            "composite_score",
+            "tier",
+            "disease_coverage",
+            "target_centrality",
+            "pathway_breadth",
+            "mechanistic_transferability",
+            "novelty",
+        ]:
             assert field in d
 
 
@@ -212,10 +223,16 @@ def test_compute_cross_disease_repurposing_returns_list(all_data):
 
 
 def test_compute_cross_disease_analysis_returns_all_keys(analysis_results):
-    for key in ["disease_summary", "shared_genes", "shared_drugs",
-                "shared_pathways", "disease_similarity",
-                "multi_disease_drugs", "cross_disease_repurposing",
-                "total_diseases"]:
+    for key in [
+        "disease_summary",
+        "shared_genes",
+        "shared_drugs",
+        "shared_pathways",
+        "disease_similarity",
+        "multi_disease_drugs",
+        "cross_disease_repurposing",
+        "total_diseases",
+    ]:
         assert key in analysis_results
 
 
@@ -257,25 +274,30 @@ def test_print_repurposing_prints(caplog, analysis_results):
 
 def test_compute_comparative_modules_returns_all_diseases(monkeypatch):
     """The comparative run stacks results for every disease (compute mocked)."""
+
     def fake_bm(disease_id, save=True):
-        return [{"gene_id": f"G1_{disease_id}", "composite_score": 7.5},
-                {"gene_id": "SHARED", "composite_score": 6.0}]
+        return [
+            {"gene_id": f"G1_{disease_id}", "composite_score": 7.5},
+            {"gene_id": "SHARED", "composite_score": 6.0},
+        ]
 
     def fake_ex(disease_id, save=True):
-        return [{"drug_id": f"d1_{disease_id}", "composite_score": 8.0},
-                {"drug_id": "shared_drug", "composite_score": 5.5}]
+        return [
+            {"drug_id": f"d1_{disease_id}", "composite_score": 8.0},
+            {"drug_id": "shared_drug", "composite_score": 5.5},
+        ]
 
     def fake_sy(disease_id, save=True):
-        return [{"drug_a_name": "Drug A (Brand)", "drug_b_name": "Drug B",
-                 "composite_score": 8.25}]
+        return [{"drug_a_name": "Drug A (Brand)", "drug_b_name": "Drug B", "composite_score": 8.25}]
 
     # The pipeline imports these lazily from their source modules, so patch there.
     monkeypatch.setattr(
-        "med_research.pipeline.biomarker_discovery.discover.compute_biomarker_matrix", fake_bm)
+        "med_research.pipeline.biomarker_discovery.discover.compute_biomarker_matrix", fake_bm
+    )
     monkeypatch.setattr(
-        "med_research.pipeline.gene_expression.correlator.compute_all_correlations", fake_ex)
-    monkeypatch.setattr(
-        "med_research.pipeline.drug_synergy.engine.compute_synergy", fake_sy)
+        "med_research.pipeline.gene_expression.correlator.compute_all_correlations", fake_ex
+    )
+    monkeypatch.setattr("med_research.pipeline.drug_synergy.engine.compute_synergy", fake_sy)
 
     result = compute_comparative_modules()
     diseases = result["diseases"]
@@ -322,6 +344,7 @@ def test_compute_comparative_modules_scores_per_disease(comparative_modules):
 
 def test_escape_html_cross_disease():
     from med_research.pipeline.cross_disease.report import escape_html
+
     assert escape_html("<script>") == "&lt;script&gt;"
     assert escape_html(None) == ""
     assert escape_html("AT&T") == "AT&amp;T"

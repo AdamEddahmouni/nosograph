@@ -11,6 +11,8 @@ Tests cover:
 import networkx as nx
 import pytest
 
+pytestmark = pytest.mark.unit
+
 
 class TestGetGeneSymbols:
     """Tests for get_gene_symbols()."""
@@ -18,6 +20,7 @@ class TestGetGeneSymbols:
     @pytest.fixture
     def sample_genes(self):
         from med_research.pipeline.bioinformatics.ppi import load_genes
+
         return load_genes()
 
     def test_excludes_drug_target_genes(self, sample_genes):
@@ -53,8 +56,16 @@ class TestGetGeneSymbols:
         symbols = get_gene_symbols(sample_genes)
         gene_ids = {gid for gid, _ in symbols}
         expected = {
-            "HLA-DRB1", "IRF5", "STAT4", "BTK", "TYK2",
-            "BLK", "TNFAIP3", "ITGAM", "BANK1", "PTPN22",
+            "HLA-DRB1",
+            "IRF5",
+            "STAT4",
+            "BTK",
+            "TYK2",
+            "BLK",
+            "TNFAIP3",
+            "ITGAM",
+            "BANK1",
+            "PTPN22",
         }
         assert expected.issubset(gene_ids)
 
@@ -130,8 +141,14 @@ class TestComputeHubScores:
         scores = compute_hub_scores(G)
         for s in scores:
             for key in [
-                "node_id", "symbol", "is_seed", "is_lupus_gene",
-                "degree", "degree_centrality", "betweenness_centrality", "hub_score",
+                "node_id",
+                "symbol",
+                "is_seed",
+                "is_lupus_gene",
+                "degree",
+                "degree_centrality",
+                "betweenness_centrality",
+                "hub_score",
             ]:
                 assert key in s, f"Missing key: {key}"
 
@@ -203,6 +220,7 @@ class TestCrossReferenceWithCandidates:
     @pytest.fixture
     def sample_kg_genes(self):
         from med_research.pipeline.bioinformatics.ppi import load_genes
+
         return load_genes()
 
     @pytest.fixture
@@ -282,8 +300,11 @@ class TestCrossReferenceWithCandidates:
         )
 
         for key in [
-            "lupus_hubs", "non_lupus_hubs", "hub_candidate_matches",
-            "hub_untargeted", "top_hubs_overall",
+            "lupus_hubs",
+            "non_lupus_hubs",
+            "hub_candidate_matches",
+            "hub_untargeted",
+            "top_hubs_overall",
         ]:
             assert key in crossref, f"Missing key: {key}"
 

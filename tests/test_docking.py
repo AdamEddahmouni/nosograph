@@ -7,7 +7,6 @@ Tests cover:
   - vina_setup.py: Vina binary check/download helper
 """
 
-import os
 import sys
 from pathlib import Path
 
@@ -33,6 +32,9 @@ from med_research.pipeline.virtual_screening.docking import (
 
 RDKIT_AVAILABLE = _detect_rdkit()
 MEEKO_AVAILABLE = _detect_meeko()
+
+pytestmark = pytest.mark.unit
+
 
 
 @pytest.mark.skipif(not RDKIT_AVAILABLE, reason="RDKit not installed")
@@ -149,8 +151,7 @@ def test_engine_get_status(engine):
 def test_engine_config_has_all_fields(engine):
     config = engine.load_config()
     targets = config["targets"]
-    required = ["pdb_id", "chain", "grid_center", "grid_size",
-                "grid_validated", "method"]
+    required = ["pdb_id", "chain", "grid_center", "grid_size", "grid_validated", "method"]
     for gid, cfg in targets.items():
         for field in required:
             assert field in cfg, f"{gid} missing {field}"
@@ -294,9 +295,7 @@ ASPIRIN_SMILES = "CC(=O)Oc1ccccc1C(=O)O"
 @pytest.mark.skipif(not RDKIT_AVAILABLE, reason="RDKit not installed")
 def test_prepare_ligand_synthetic_smiles(tmp_path, monkeypatch):
     """SMILES -> RDKit 3D -> Meeko PDBQTWriterLegacy produces valid PDBQT."""
-    monkeypatch.setattr(
-        "med_research.pipeline.virtual_screening.docking.TARGETS_DIR", tmp_path
-    )
+    monkeypatch.setattr("med_research.pipeline.virtual_screening.docking.TARGETS_DIR", tmp_path)
 
     pdbqt_path = prepare_ligand("aspirin", ASPIRIN_SMILES)
 
@@ -315,9 +314,7 @@ def test_prepare_ligand_synthetic_smiles(tmp_path, monkeypatch):
 
 def test_prepare_ligand_garbage_smiles_fails_cleanly(tmp_path, monkeypatch):
     """Invalid SMILES returns None instead of raising."""
-    monkeypatch.setattr(
-        "med_research.pipeline.virtual_screening.docking.TARGETS_DIR", tmp_path
-    )
+    monkeypatch.setattr("med_research.pipeline.virtual_screening.docking.TARGETS_DIR", tmp_path)
 
     result = prepare_ligand("junk", "not-a-valid-smiles!!!")
 
@@ -326,9 +323,7 @@ def test_prepare_ligand_garbage_smiles_fails_cleanly(tmp_path, monkeypatch):
 
 def test_prepare_ligand_missing_meeko(tmp_path, monkeypatch):
     """Without Meeko the ligand path degrades to None without writing output."""
-    monkeypatch.setattr(
-        "med_research.pipeline.virtual_screening.docking.TARGETS_DIR", tmp_path
-    )
+    monkeypatch.setattr("med_research.pipeline.virtual_screening.docking.TARGETS_DIR", tmp_path)
     monkeypatch.setattr(
         "med_research.pipeline.virtual_screening.docking._detect_meeko",
         lambda: False,
@@ -345,12 +340,14 @@ def test_prepare_ligand_missing_meeko(tmp_path, monkeypatch):
 
 def test_vina_setup_check(monkeypatch):
     from med_research.pipeline.virtual_screening.vina_setup import check_vina
+
     result = check_vina()
     assert result is None or isinstance(result, str)
 
 
 def test_vina_setup_system(monkeypatch):
     from med_research.pipeline.virtual_screening.vina_setup import _system
+
     sysname = _system()
     assert sysname in ("win32", "darwin", "linux")
 
@@ -361,8 +358,14 @@ def test_vina_setup_system(monkeypatch):
 def test_get_docking_status_returns_dict():
     status = get_docking_status()
     assert isinstance(status, dict)
-    for key in ["rdkit_available", "meeko_available", "biopython_available",
-                "vina_binary", "vina_available", "docking_possible"]:
+    for key in [
+        "rdkit_available",
+        "meeko_available",
+        "biopython_available",
+        "vina_binary",
+        "vina_available",
+        "docking_possible",
+    ]:
         assert key in status
 
 
@@ -446,35 +449,30 @@ def test_engine_prepare_targets_no_force(engine):
 
 
 def test_vina_setup_cli_help():
-    import subprocess
+    import sys
 
-    env = os.environ.copy()
-    src_dir = Path(__file__).parent.parent / "src"
-    env["PYTHONPATH"] = os.pathsep.join(
-        path for path in (str(src_dir), env.get("PYTHONPATH", "")) if path
-    )
-    result = subprocess.run(
-        [sys.executable, "-m", "med_research.pipeline.virtual_screening.vina_setup", "--help"],
-        capture_output=True, text=True, encoding="utf-8", errors="replace",
-        cwd=str(Path(__file__).parent.parent),
-        env=env,
-    )
-    assert result.returncode == 0
+    from med_research.pipeline.virtual_screening import vina_setup
+
+    argv = sys.argv
+    try:
+        sys.argv = ["vina_setup", "--help"]
+        with pytest.raises(SystemExit) as exc:
+            vina_setup.main()
+        assert exc.value.code == 0
+    finally:
+        sys.argv = argv
 
 
-def test_vina_setup_check_cli():
-    import subprocess
+def test_vina_setup_check_cli(capsys):
+    import sys
 
-    env = os.environ.copy()
-    src_dir = Path(__file__).parent.parent / "src"
-    env["PYTHONPATH"] = os.pathsep.join(
-        path for path in (str(src_dir), env.get("PYTHONPATH", "")) if path
-    )
-    result = subprocess.run(
-        [sys.executable, "-m", "med_research.pipeline.virtual_screening.vina_setup", "--check"],
-        capture_output=True, text=True, encoding="utf-8", errors="replace",
-        cwd=str(Path(__file__).parent.parent),
-        env=env,
-    )
-    assert result.returncode == 0
-    assert "Status" in result.stdout or "Vina" in result.stdout
+    from med_research.pipeline.virtual_screening import vina_setup
+
+    argv = sys.argv
+    try:
+        sys.argv = ["vina_setup", "--check"]
+        vina_setup.main()
+    finally:
+        sys.argv = argv
+    captured = capsys.readouterr()
+    assert "Status" in captured.out or "Vina" in captured.out

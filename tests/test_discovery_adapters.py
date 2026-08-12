@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import pytest
+
 import med_research.pipeline.clinical_trials.adapter  # noqa: F401
 import med_research.pipeline.literature_mining.adapter  # noqa: F401
 import med_research.pipeline.virtual_screening.adapter  # noqa: F401
@@ -10,6 +12,10 @@ from med_research.pipeline.literature_mining.adapter import LiteratureMiningModu
 from med_research.pipeline.provenance import build_provenance
 from med_research.pipeline.virtual_screening.adapter import VirtualScreeningModule
 from tests.test_pipeline_base import ModuleAdapterContract
+
+pytestmark = pytest.mark.unit
+
+pytestmark = pytest.mark.unit
 
 
 class TestLiteratureMiningAdapter(ModuleAdapterContract):
@@ -255,9 +261,10 @@ class TestVirtualScreeningAdapter(ModuleAdapterContract):
         assert isinstance(wrapped, dict)
         assert wrapped["status"] == direct["status"]
         assert wrapped["stats"]["total_pairings"] == direct["stats"]["total_pairings"]
-        assert wrapped["all_results"][0]["composite_score"] == direct["all_results"][0][
-            "composite_score"
-        ]
+        assert (
+            wrapped["all_results"][0]["composite_score"]
+            == direct["all_results"][0]["composite_score"]
+        )
 
     def test_report_returns_path(self):
         from pathlib import Path
@@ -267,9 +274,7 @@ class TestVirtualScreeningAdapter(ModuleAdapterContract):
         results = module.run(disease_id, gene="PTPN22", top_n=3)
         assert results.get("status") != "blocked"
 
-        provenance = module.build_provenance(
-            disease_id, run_id="discovery-adapter-test"
-        )
+        provenance = module.build_provenance(disease_id, run_id="discovery-adapter-test")
         report_path = module.report(results, disease_id, provenance=provenance)
 
         assert isinstance(report_path, Path)
