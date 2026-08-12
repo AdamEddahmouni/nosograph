@@ -1,0 +1,47 @@
+{
+  "disease_id": "t2d",
+  "disease_name": "Type 2 Diabetes",
+  "drugs": [
+    {
+      "id": "metformin",
+      "name": "Metformin",
+      "targets": [
+        "PRKAA1"
+      ],
+      "phase": "Approved",
+      "mechanism_of_action": "AMPK activator suppressing hepatic gluconeogenesis",
+      "drug_type": "Small molecule"
+    },
+    {
+      "id": "semaglutide",
+      "name": "Semaglutide",
+      "targets": [
+        "GLP1R"
+      ],
+      "phase": "Approved",
+      "mechanism_of_action": "GLP-1 receptor agonist enhancing glucose-dependent insulin secretion",
+      "drug_type": "Peptide"
+    },
+    {
+      "id": "empagliflozin",
+      "name": "Empagliflozin",
+      "targets": [
+        "SLC5A2"
+      ],
+      "phase": "Approved",
+      "mechanism_of_action": "SGLT2 inhibitor reducing renal glucose reabsorption",
+      "drug_type": "Small molecule"
+    },
+    {
+      "id": "tirzepatide",
+      "name": "Tirzepatide",
+      "targets": [
+        "GLP1R",
+        "GIPR"
+      ],
+      "phase": "Approved",
+      "mechanism_of_action": "Dual GIP and GLP-1 receptor agonist",
+      "drug_type": "Peptide"
+    }
+  ]
+}

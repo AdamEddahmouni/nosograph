@@ -1,0 +1,574 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL535",
+      "target": "CSF1R",
+      "type": "TARGETS",
+      "description": "SUNITINIB targets CSF1R."
+    },
+    {
+      "source": "CHEMBL1513",
+      "target": "AGTR1",
+      "type": "TARGETS",
+      "description": "IRBESARTAN targets AGTR1."
+    },
+    {
+      "source": "CHEMBL1487",
+      "target": "HMGCR",
+      "type": "TARGETS",
+      "description": "ATORVASTATIN targets HMGCR."
+    },
+    {
+      "source": "CHEMBL633",
+      "target": "KCNH2",
+      "type": "TARGETS",
+      "description": "AMIODARONE targets KCNH2."
+    },
+    {
+      "source": "CHEMBL553",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "ERLOTINIB targets EGFR."
+    },
+    {
+      "source": "KCNH2",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNH2 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "E2F1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "E2F1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCR2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "C9orf72",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C9orf72 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "IL18",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL18 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP6",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP6 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "ITGB3",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB3 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "JAK3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "SOCS1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "SOCS1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "HMGCR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HMGCR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "ACE2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "AGTR1",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGTR1 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "ITGB3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "MYD88",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MYD88 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR5",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR5 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR7",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR7 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "FLT1",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "FLT1 is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "NLRP6",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP6 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ABCB1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "KCNH2",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNH2 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.18"
+    },
+    {
+      "source": "AFP",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFP is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.06"
+    },
+    {
+      "source": "EGFR",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.06"
+    },
+    {
+      "source": "MUC2",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC2 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.06"
+    },
+    {
+      "source": "AGTR1",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGTR1 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.06"
+    },
+    {
+      "source": "FLT1",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT1 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.06"
+    },
+    {
+      "source": "HMGCR",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGCR is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.06"
+    },
+    {
+      "source": "PDGFRA",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRA is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.06"
+    },
+    {
+      "source": "PDGFRB",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.06"
+    },
+    {
+      "source": "FLT3",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.06"
+    },
+    {
+      "source": "CSF1R",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF1R is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.06"
+    },
+    {
+      "source": "FLT4",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT4 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.06"
+    },
+    {
+      "source": "RET",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.06"
+    },
+    {
+      "source": "KIT",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.06"
+    },
+    {
+      "source": "KDR",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.06"
+    },
+    {
+      "source": "AIRE",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIRE is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TGFB1",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL2",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXP3",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.05"
+    },
+    {
+      "source": "NPC1",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPC1 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRKDC",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKDC is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.05"
+    },
+    {
+      "source": "C9orf72",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C9orf72 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TREX1",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TREX1 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC12A2",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC12A2 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.05"
+    },
+    {
+      "source": "GIMAP5",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIMAP5 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.05"
+    },
+    {
+      "source": "GIMAP1-GIMAP5",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIMAP1-GIMAP5 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.05"
+    },
+    {
+      "source": "JAK3",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK3 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SOCS1",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOCS1 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ITGB3",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB3 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTPN2",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN2 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ITPKB",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITPKB is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.04"
+    },
+    {
+      "source": "MUC13",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC13 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.04"
+    },
+    {
+      "source": "NFKB1",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNF",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ACE2",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE2 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL2RA",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RA is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.04"
+    },
+    {
+      "source": "NLRP6",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP6 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.04"
+    },
+    {
+      "source": "LIF",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIF is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SHARPIN",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHARPIN is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ABCB1",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB1 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CCR2",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR2 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.04"
+    },
+    {
+      "source": "MYD88",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYD88 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZFP36L2",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFP36L2 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.04"
+    },
+    {
+      "source": "FCGR2A",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2A is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.04"
+    },
+    {
+      "source": "RAG2",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAG2 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.04"
+    },
+    {
+      "source": "LAT",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAT is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.04"
+    },
+    {
+      "source": "FCGR2B",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2B is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CTLA4",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTLA4 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.04"
+    },
+    {
+      "source": "AHR",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHR is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CACNB4",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNB4 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.04"
+    },
+    {
+      "source": "MAP3K14",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K14 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.04"
+    },
+    {
+      "source": "WAS",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WAS is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.04"
+    },
+    {
+      "source": "FERMT3",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FERMT3 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TLR7",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR7 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.04"
+    },
+    {
+      "source": "NKX2-3",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX2-3 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.04"
+    },
+    {
+      "source": "FCGR2C",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2C is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.04"
+    },
+    {
+      "source": "E2F1",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "E2F1 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZNF574",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF574 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TLR5",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR5 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL18",
+      "target": "Ebola hemorrhagic fever (EBOLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL18 is associated with Ebola hemorrhagic fever (EBOLA). Open Targets association score 0.04"
+    }
+  ]
+}

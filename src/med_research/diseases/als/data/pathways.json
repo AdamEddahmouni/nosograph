@@ -1,0 +1,29 @@
+{
+  "disease_id": "als",
+  "disease_name": "Amyotrophic Lateral Sclerosis",
+  "pathways": [
+    {
+      "id": "tdp43-proteinopathy",
+      "name": "TDP-43 Proteinopathy",
+      "description": "Nuclear clearance and cytoplasmic aggregation of TDP-43.",
+      "key_components": [
+        "TARDBP",
+        "C9orf72"
+      ],
+      "therapeutic_targets": [
+        "TARDBP"
+      ]
+    },
+    {
+      "id": "glutamate-excitotoxicity",
+      "name": "Glutamate Excitotoxicity",
+      "description": "Excess extracellular glutamate causing motor neuron excitotoxic cell death.",
+      "key_components": [
+        "SOD1"
+      ],
+      "therapeutic_targets": [
+        "GRIN1"
+      ]
+    }
+  ]
+}

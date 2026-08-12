@@ -1,0 +1,66 @@
+{
+  "disease_id": "gout",
+  "disease_name": "Gout",
+  "genes": [
+    {
+      "id": "SLC2A9",
+      "symbol": "SLC2A9",
+      "name": "Solute Carrier Family 2 Member 9 (GLUT9)",
+      "category": "Renal Urate Transport",
+      "association_score": 0.98,
+      "odds_ratio": 3.0,
+      "disease_evidence": "Major renal urate reabsorption transporter.",
+      "gwas_pvalue": 1e-150,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "ABCG2",
+      "symbol": "ABCG2",
+      "name": "ATP Binding Cassette Subfamily G Member 2",
+      "category": "Renal Urate Transport",
+      "association_score": 0.96,
+      "odds_ratio": 2.5,
+      "disease_evidence": "Intestinal and renal urate efflux pump.",
+      "gwas_pvalue": 1e-110,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "SLC22A12",
+      "symbol": "SLC22A12",
+      "name": "Solute Carrier Family 22 Member 12 (URAT1)",
+      "category": "Renal Urate Transport",
+      "association_score": 0.94,
+      "odds_ratio": 2.2,
+      "disease_evidence": "Apical renal urate anion exchanger.",
+      "gwas_pvalue": 1e-90,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "NLRP3",
+      "symbol": "NLRP3",
+      "name": "NLR Family Pyrin Domain Containing 3",
+      "category": "NLRP3 Inflammasome Activation",
+      "association_score": 0.9,
+      "odds_ratio": 1.8,
+      "disease_evidence": "Sensory receptor for urate crystals initiating IL-1 beta cleavage.",
+      "gwas_pvalue": 1e-50,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "IL1B",
+      "symbol": "IL1B",
+      "name": "Interleukin 1 Beta",
+      "category": "NLRP3 Inflammasome Activation",
+      "association_score": 0.88,
+      "odds_ratio": 1.6,
+      "disease_evidence": "Primary inflammatory cytokine causing acute gouty flare.",
+      "gwas_pvalue": 1e-40,
+      "chromosome": "unknown",
+      "function": "unknown"
+    }
+  ]
+}

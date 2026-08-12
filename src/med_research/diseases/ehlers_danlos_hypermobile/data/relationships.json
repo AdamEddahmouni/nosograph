@@ -1,0 +1,964 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL27810",
+      "target": "ADRA2A",
+      "type": "TARGETS",
+      "description": "CELIPROLOL targets ADRA2A."
+    },
+    {
+      "source": "CHEMBL300138",
+      "target": "PRKCB",
+      "type": "TARGETS",
+      "description": "ENZASTAURIN targets PRKCB."
+    },
+    {
+      "source": "CHEMBL27810",
+      "target": "ADRB2",
+      "type": "TARGETS",
+      "description": "CELIPROLOL targets ADRB2."
+    },
+    {
+      "source": "CHEMBL27810",
+      "target": "ADRA2B",
+      "type": "TARGETS",
+      "description": "CELIPROLOL targets ADRA2B."
+    },
+    {
+      "source": "CHEMBL27810",
+      "target": "ADRA2C",
+      "type": "TARGETS",
+      "description": "CELIPROLOL targets ADRA2C."
+    },
+    {
+      "source": "CHEMBL27810",
+      "target": "ADRB1",
+      "type": "TARGETS",
+      "description": "CELIPROLOL targets ADRB1."
+    },
+    {
+      "source": "CHEMBL79",
+      "target": "SCN1A",
+      "type": "TARGETS",
+      "description": "LIDOCAINE targets SCN1A."
+    },
+    {
+      "source": "CHEMBL395429",
+      "target": "OXTR",
+      "type": "TARGETS",
+      "description": "OXYTOCIN targets OXTR."
+    },
+    {
+      "source": "SLC39A13",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC39A13 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "ADRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "ADRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ADAM17",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAM17 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ADAM19",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAM19 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ADAMTS19",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS19 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL1A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL1A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL2A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL2A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL3A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL3A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ADAMTS2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL1A2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL1A2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL5A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL5A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL5A2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL5A2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "PLOD1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLOD1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "MTHFR",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "MTHFR is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "THBS2",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THBS2 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "FBN1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "FBN1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "FBN2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "FBN2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "SMAD3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFBR1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFBR2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFBR1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFBR2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "SCN5A",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "SCN5A is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "FGF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "GLI3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CHUK",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CHUK is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "COL5A1",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL5A1 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.66"
+    },
+    {
+      "source": "COL1A2",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL1A2 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.62"
+    },
+    {
+      "source": "COL1A1",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL1A1 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.60"
+    },
+    {
+      "source": "B3GALT6",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B3GALT6 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.56"
+    },
+    {
+      "source": "PLOD1",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLOD1 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.52"
+    },
+    {
+      "source": "TNXB",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNXB is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.52"
+    },
+    {
+      "source": "COL3A1",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL3A1 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.50"
+    },
+    {
+      "source": "COL5A2",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL5A2 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.46"
+    },
+    {
+      "source": "SMAD3",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD3 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.45"
+    },
+    {
+      "source": "B4GALT7",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B4GALT7 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.42"
+    },
+    {
+      "source": "CHST14",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHST14 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.42"
+    },
+    {
+      "source": "PRDM5",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM5 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.41"
+    },
+    {
+      "source": "ZNF469",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF469 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.40"
+    },
+    {
+      "source": "TGFB2",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB2 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.40"
+    },
+    {
+      "source": "THBS2",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THBS2 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.34"
+    },
+    {
+      "source": "FBN2",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBN2 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.34"
+    },
+    {
+      "source": "TGFBR2",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFBR2 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.33"
+    },
+    {
+      "source": "PRKCB",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCB is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.28"
+    },
+    {
+      "source": "C1R",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C1R is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.26"
+    },
+    {
+      "source": "ADRB2",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB2 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.26"
+    },
+    {
+      "source": "ADRA2B",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA2B is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.26"
+    },
+    {
+      "source": "ADRA2C",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA2C is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.26"
+    },
+    {
+      "source": "ADRB1",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB1 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.26"
+    },
+    {
+      "source": "ADRA2A",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA2A is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.26"
+    },
+    {
+      "source": "ADAMTS2",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS2 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.20"
+    },
+    {
+      "source": "SLC39A13",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC39A13 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.19"
+    },
+    {
+      "source": "DSE",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSE is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.19"
+    },
+    {
+      "source": "TGFBR1",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFBR1 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.19"
+    },
+    {
+      "source": "ATP7A",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP7A is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.19"
+    },
+    {
+      "source": "PGK1",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGK1 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.18"
+    },
+    {
+      "source": "FKBP14",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKBP14 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.17"
+    },
+    {
+      "source": "FLNA",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLNA is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.12"
+    },
+    {
+      "source": "SPI1",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPI1 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.12"
+    },
+    {
+      "source": "VEGFA",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.10"
+    },
+    {
+      "source": "TNF",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.10"
+    },
+    {
+      "source": "IL6",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.10"
+    },
+    {
+      "source": "CRP",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.09"
+    },
+    {
+      "source": "PDE5A",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE5A is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.09"
+    },
+    {
+      "source": "BDNF",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BDNF is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.08"
+    },
+    {
+      "source": "APOA1",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA1 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.08"
+    },
+    {
+      "source": "IGFBP5",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGFBP5 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.08"
+    },
+    {
+      "source": "APOB",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.08"
+    },
+    {
+      "source": "TGFB1",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.08"
+    },
+    {
+      "source": "NUCB2",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUCB2 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.08"
+    },
+    {
+      "source": "YAP1",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YAP1 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.08"
+    },
+    {
+      "source": "YY1AP1",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YY1AP1 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.08"
+    },
+    {
+      "source": "HEBP1",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEBP1 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.08"
+    },
+    {
+      "source": "LPA",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPA is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.08"
+    },
+    {
+      "source": "ALB",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.08"
+    },
+    {
+      "source": "WWTR1",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WWTR1 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.08"
+    },
+    {
+      "source": "TAFAZZIN",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAFAZZIN is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.08"
+    },
+    {
+      "source": "PRKCA",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCA is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.07"
+    },
+    {
+      "source": "PRRT2",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRRT2 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.07"
+    },
+    {
+      "source": "PRKCG",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCG is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.07"
+    },
+    {
+      "source": "IGF1",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.07"
+    },
+    {
+      "source": "ICAM1",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.07"
+    },
+    {
+      "source": "PPP1R12A",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP1R12A is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.07"
+    },
+    {
+      "source": "TNNT2",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNT2 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.06"
+    },
+    {
+      "source": "MTHFR",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTHFR is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.06"
+    },
+    {
+      "source": "CDH1",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.06"
+    },
+    {
+      "source": "SCN4A",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN4A is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.27"
+    },
+    {
+      "source": "SCN8A",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN8A is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.27"
+    },
+    {
+      "source": "OLA1",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OLA1 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.26"
+    },
+    {
+      "source": "SCN3A",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN3A is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.26"
+    },
+    {
+      "source": "SCN9A",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN9A is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.26"
+    },
+    {
+      "source": "SCN7A",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN7A is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.26"
+    },
+    {
+      "source": "SCN5A",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN5A is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.26"
+    },
+    {
+      "source": "SCN1A",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN1A is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.26"
+    },
+    {
+      "source": "SCN11A",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN11A is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.26"
+    },
+    {
+      "source": "SCN10A",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN10A is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.26"
+    },
+    {
+      "source": "SCN2A",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN2A is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.26"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.12"
+    },
+    {
+      "source": "ZFPM2",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFPM2 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.06"
+    },
+    {
+      "source": "HBEGF",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBEGF is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.06"
+    },
+    {
+      "source": "KLK15",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLK15 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.06"
+    },
+    {
+      "source": "RXRA",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RXRA is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.06"
+    },
+    {
+      "source": "ENPP1",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENPP1 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.06"
+    },
+    {
+      "source": "HEY2",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEY2 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.06"
+    },
+    {
+      "source": "OXTR",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OXTR is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.06"
+    },
+    {
+      "source": "FGFR2",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.06"
+    },
+    {
+      "source": "EGFR",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.05"
+    },
+    {
+      "source": "IDUA",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDUA is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXC1",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC1 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.05"
+    },
+    {
+      "source": "NKX2-5",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX2-5 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.05"
+    },
+    {
+      "source": "FGF9",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF9 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.05"
+    },
+    {
+      "source": "SH3PXD2B",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH3PXD2B is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.05"
+    },
+    {
+      "source": "GATA4",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA4 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.05"
+    },
+    {
+      "source": "GLI3",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI3 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.05"
+    },
+    {
+      "source": "FBN1",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBN1 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.05"
+    },
+    {
+      "source": "ROR2",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROR2 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.05"
+    },
+    {
+      "source": "ADAM17",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAM17 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.05"
+    },
+    {
+      "source": "MYBPC3",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYBPC3 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.05"
+    },
+    {
+      "source": "CHUK",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHUK is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.05"
+    },
+    {
+      "source": "GJA1",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA1 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.05"
+    },
+    {
+      "source": "TP63",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.05"
+    },
+    {
+      "source": "CCN3",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCN3 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.05"
+    },
+    {
+      "source": "HSPG2",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPG2 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.05"
+    },
+    {
+      "source": "RYR1",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RYR1 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.05"
+    },
+    {
+      "source": "SOX11",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX11 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.05"
+    },
+    {
+      "source": "ADAM19",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAM19 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.05"
+    },
+    {
+      "source": "COL2A1",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL2A1 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.05"
+    },
+    {
+      "source": "LMNA",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMNA is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.05"
+    },
+    {
+      "source": "AWAT2",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AWAT2 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.05"
+    },
+    {
+      "source": "LDB3",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDB3 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC27A4",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC27A4 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.05"
+    },
+    {
+      "source": "MYH10",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH10 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.05"
+    },
+    {
+      "source": "ADAMTS19",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS19 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.05"
+    },
+    {
+      "source": "TLL1",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLL1 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.05"
+    },
+    {
+      "source": "CTSV",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSV is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.05"
+    },
+    {
+      "source": "CTSL",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSL is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.05"
+    },
+    {
+      "source": "KL",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KL is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.04"
+    },
+    {
+      "source": "EDNRA",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDNRA is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.04"
+    },
+    {
+      "source": "NTF3",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTF3 is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.04"
+    },
+    {
+      "source": "EDA",
+      "target": "Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDA is associated with Ehlers-Danlos syndrome, hypermobility type (EHLERS_DANLOS_HYPERMOBILE). Open Targets association score 0.04"
+    }
+  ]
+}

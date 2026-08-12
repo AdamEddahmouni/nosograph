@@ -1,0 +1,34 @@
+{
+  "disease_id": "t2d",
+  "disease_name": "Type 2 Diabetes",
+  "adverse_events": [
+    {
+      "drug": "metformin",
+      "common_events": [
+        "Diarrhea",
+        "Nausea",
+        "Abdominal discomfort",
+        "Vitamin B12 deficiency"
+      ],
+      "serious_events": [
+        "Lactic acidosis"
+      ],
+      "black_box_warning": true
+    },
+    {
+      "drug": "semaglutide",
+      "common_events": [
+        "Nausea",
+        "Vomiting",
+        "Diarrhea",
+        "Constipation"
+      ],
+      "serious_events": [
+        "Pancreatitis",
+        "Gallbladder disease",
+        "Acute kidney injury"
+      ],
+      "black_box_warning": true
+    }
+  ]
+}

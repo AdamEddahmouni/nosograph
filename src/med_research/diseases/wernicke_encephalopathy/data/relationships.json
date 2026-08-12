@@ -1,0 +1,532 @@
+{
+  "relationships": [
+    {
+      "source": "BTK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BTK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CACNA1C",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1C is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "CXCL13",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL13 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "EIF2AK2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "EIF2AK2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "C4BPA",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C4BPA is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "GATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "GATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "SLC1A2",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC1A2 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "SLC1A3",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC1A3 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GLP1R",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GLP1R is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKBIA",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKBIA is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "CARD14",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD14 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "MYD88",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MYD88 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "GSTM1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTM1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ABCB6",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB6 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "PTGS2",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNF",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "TKT",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TKT is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAPT",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPT is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TLR4",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYD88",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYD88 is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MT-CO2",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-CO2 is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC1A3",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC1A3 is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC1A2",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC1A2 is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "APTX",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APTX is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "AVP",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AVP is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "AQP4",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP4 is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "DPP6",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPP6 is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL1B",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CPLX2",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPLX2 is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CPLX1",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPLX1 is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "DPP10",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPP10 is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRDX2",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDX2 is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ABCB6",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB6 is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CARD14",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD14 is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRNP",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRNP is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "C4BPA",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C4BPA is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "UCHL1",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UCHL1 is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "YWHAQ",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YWHAQ is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "YWHAG",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YWHAG is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TBXAS1",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBXAS1 is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PROS1",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROS1 is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "BTK",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTK is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CACNA1C",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1C is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TBXT",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBXT is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "KLK3",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLK3 is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PLAG1",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAG1 is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GATM",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATM is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PSAT1",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSAT1 is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TYMS",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYMS is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "NPEPPS",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPEPPS is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GSTM1",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTM1 is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SYNM",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYNM is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "FYN",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FYN is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "INS",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "NEFL",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEFL is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "XDH",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XDH is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC19A3",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC19A3 is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PPIB",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPIB is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "RANBP2",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RANBP2 is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ALB",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "OGDH",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OGDH is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "EIF2AK2",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF2AK2 is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCL13",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL13 is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TPK1",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPK1 is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GFAP",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFAP is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GLP1R",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLP1R is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "POLG",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLG is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFKBIA",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKBIA is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "NFKB1",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "DPYSL2",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPYSL2 is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SOAT1",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOAT1 is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "FLT3",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3 is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CRMP1",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRMP1 is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SMTN",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMTN is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "HPDL",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPDL is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "STAT3",
+      "target": "Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with Wernicke encephalopathy (WERNICKE_ENCEPHALOPATHY). Open Targets association score 0.00"
+    }
+  ]
+}

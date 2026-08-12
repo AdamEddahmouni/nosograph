@@ -1,0 +1,36 @@
+{
+  "disease_id": "als",
+  "disease_name": "Amyotrophic Lateral Sclerosis",
+  "drugs": [
+    {
+      "id": "riluzole",
+      "name": "Riluzole",
+      "targets": [
+        "GRIN1"
+      ],
+      "phase": "Approved",
+      "mechanism_of_action": "Glutamate neurotransmission inhibitor",
+      "drug_type": "Small molecule"
+    },
+    {
+      "id": "edaravone",
+      "name": "Edaravone",
+      "targets": [
+        "ROS"
+      ],
+      "phase": "Approved",
+      "mechanism_of_action": "Free radical scavenger reducing oxidative stress",
+      "drug_type": "Small molecule"
+    },
+    {
+      "id": "tofersen",
+      "name": "Tofersen",
+      "targets": [
+        "SOD1"
+      ],
+      "phase": "Approved",
+      "mechanism_of_action": "Antisense oligonucleotide targeting SOD1 mRNA",
+      "drug_type": "Oligonucleotide"
+    }
+  ]
+}

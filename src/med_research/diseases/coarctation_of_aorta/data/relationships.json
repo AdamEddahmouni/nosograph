@@ -1,0 +1,964 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1200694",
+      "target": "GLRA1",
+      "type": "TARGETS",
+      "description": "SEVOFLURANE targets GLRA1."
+    },
+    {
+      "source": "CHEMBL2097081",
+      "target": "GUCY1B1",
+      "type": "TARGETS",
+      "description": "NITROPRUSSIDE targets GUCY1B1."
+    },
+    {
+      "source": "CHEMBL191",
+      "target": "AGTR1",
+      "type": "TARGETS",
+      "description": "LOSARTAN targets AGTR1."
+    },
+    {
+      "source": "CHEMBL730",
+      "target": "GUCY1B1",
+      "type": "TARGETS",
+      "description": "NITROGLYCERIN targets GUCY1B1."
+    },
+    {
+      "source": "GABRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "GABRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDK13",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK13 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RNF213",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "RNF213 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "NF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SERPING1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "SERPING1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ADAMTS19",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS19 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ADAMTS6",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS6 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL11A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL11A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL2A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL2A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "TIMP3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TIMP3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "KIDINS220",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "KIDINS220 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "JAG1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "JAG1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "NOTCH3",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH3 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "TSC1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TGM6",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGM6 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ACKR3",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ACKR3 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "GABRA1",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GABRA1 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GABRA2",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GABRA2 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GABRA3",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GABRA3 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GABRA4",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GABRA4 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GABRA5",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GABRA5 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GABRA6",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GABRA6 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GABRB1",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GABRB1 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GABRB2",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GABRB2 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GABRB3",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GABRB3 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "BMPR2",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMPR2 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "AGTR1",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGTR1 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "FBN1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "FBN1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "SERPING1",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPING1 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATXN3",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATXN3 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KIDINS220",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIDINS220 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.01"
+    },
+    {
+      "source": "COL11A1",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL11A1 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.01"
+    },
+    {
+      "source": "APC",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MEN1",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEN1 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TTR",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTR is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NF1",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.01"
+    },
+    {
+      "source": "UMOD",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UMOD is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.01"
+    },
+    {
+      "source": "VCP",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VCP is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PACS1",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PACS1 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.01"
+    },
+    {
+      "source": "COL2A1",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL2A1 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOTCH3",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH3 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYH9",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH9 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDK13",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK13 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MPV17",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPV17 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOG",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOG is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRNP",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRNP is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.01"
+    },
+    {
+      "source": "LDLR",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "HNRNPC",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNRNPC is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ARHGAP4",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP4 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PFDN4",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PFDN4 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SOD1",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD1 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NOD2",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOD2 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "VHL",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VHL is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NF2",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF2 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TSC2",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC2 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TSC1",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC1 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC12A3",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC12A3 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TESC",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TESC is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGM6",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGM6 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDC73",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDC73 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "LMNA",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMNA is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TCOF1",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCOF1 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TERT",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERT is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GRN",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRN is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TP53",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "EXT1",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EXT1 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "INS",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PPARG",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARG is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "AICDA",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AICDA is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRRT2",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRRT2 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ALB",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TBX5",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX5 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SPAST",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPAST is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PSEN2",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSEN2 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TRPV4",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV4 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MUTYH",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUTYH is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "DNM1",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNM1 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "FGFR2",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "DNAJB6",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAJB6 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TIMP3",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMP3 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MYH7",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH7 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTPN11",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN11 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "EP300",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EP300 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SHOC2",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHOC2 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "RNF125",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF125 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "RP1",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RP1 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACVR1",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACVR1 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "RIT1",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIT1 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.00"
+    },
+    {
+      "source": "JAG1",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAG1 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.38"
+    },
+    {
+      "source": "RNF213",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF213 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.26"
+    },
+    {
+      "source": "AGTR1",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGTR1 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.26"
+    },
+    {
+      "source": "GATA6",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA6 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.26"
+    },
+    {
+      "source": "GUCY1A1",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GUCY1A1 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.10"
+    },
+    {
+      "source": "GUCY1A2",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GUCY1A2 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.09"
+    },
+    {
+      "source": "GUCY1B1",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GUCY1B1 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.09"
+    },
+    {
+      "source": "NKX2-5",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX2-5 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.08"
+    },
+    {
+      "source": "HEY2",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEY2 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.08"
+    },
+    {
+      "source": "KCNK3",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNK3 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "GABRD",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRD is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "GABRA6",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRA6 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "GABRP",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRP is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "GABRA4",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRA4 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "GABRA5",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRA5 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "GABRB2",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRB2 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "GABRG3",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRG3 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "KCNK2",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNK2 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "GABRB1",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRB1 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "KCNK9",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNK9 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "GLRB",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLRB is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "GABRA2",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRA2 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "GABRB3",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRB3 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "GABRQ",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRQ is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "GLRA1",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLRA1 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "GABRA3",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRA3 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "GABRA1",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRA1 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "KCNK18",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNK18 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "GABRG2",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRG2 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "GABRG1",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRG1 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "KCNK10",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNK10 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "GABRE",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRE is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "GJA1",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA1 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "TBX1",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX1 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "ACKR3",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACKR3 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "ZFPM2",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFPM2 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "CITED2",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CITED2 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "FBLN1",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBLN1 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "MRTFB",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRTFB is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "HBEGF",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBEGF is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "MUS81",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUS81 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "PLXND1",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLXND1 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "FBN1",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBN1 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "PITX2",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITX2 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "GATA4",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA4 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "DNAH11",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAH11 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "EGFR",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.07"
+    },
+    {
+      "source": "MYH10",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH10 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.06"
+    },
+    {
+      "source": "MYH6",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH6 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.06"
+    },
+    {
+      "source": "TAB1",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAB1 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.06"
+    },
+    {
+      "source": "RBM20",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBM20 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.06"
+    },
+    {
+      "source": "SAP130",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAP130 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.06"
+    },
+    {
+      "source": "SEMA3C",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEMA3C is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.06"
+    },
+    {
+      "source": "SMARCA4",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA4 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.06"
+    },
+    {
+      "source": "ADAMTS19",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS19 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.06"
+    },
+    {
+      "source": "BMPR2",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMPR2 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.06"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.06"
+    },
+    {
+      "source": "EFEMP2",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EFEMP2 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.06"
+    },
+    {
+      "source": "ADAMTS6",
+      "target": "aorta coarctation (COARCTATION_OF_AORTA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS6 is associated with aorta coarctation (COARCTATION_OF_AORTA). Open Targets association score 0.06"
+    }
+  ]
+}

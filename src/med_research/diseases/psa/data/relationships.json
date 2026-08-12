@@ -1,0 +1,168 @@
+{
+  "disease_id": "psa",
+  "disease_name": "Psoriatic Arthritis",
+  "relationships": [
+    {
+      "source": "IL23R",
+      "type": "ASSOCIATED_WITH",
+      "target": "Psoriatic Arthritis",
+      "evidence": "Key susceptibility gene for entheseal and skin inflammation."
+    },
+    {
+      "source": "IL17A",
+      "type": "ASSOCIATED_WITH",
+      "target": "Psoriatic Arthritis",
+      "evidence": "Primary effector cytokine driving dactylitis and synovial erosion."
+    },
+    {
+      "source": "TNF",
+      "type": "ASSOCIATED_WITH",
+      "target": "Psoriatic Arthritis",
+      "evidence": "Central pro-inflammatory cytokine in PsA synovitis."
+    },
+    {
+      "source": "HLA-B",
+      "type": "ASSOCIATED_WITH",
+      "target": "Psoriatic Arthritis",
+      "evidence": "Strong genetic risk marker for axial involvement in PsA."
+    },
+    {
+      "source": "TYK2",
+      "type": "ASSOCIATED_WITH",
+      "target": "Psoriatic Arthritis",
+      "evidence": "Transduces IL-23 and type I IFN signaling in immune cells."
+    },
+    {
+      "source": "IL12B",
+      "type": "ASSOCIATED_WITH",
+      "target": "Psoriatic Arthritis",
+      "evidence": "Encodes p40 subunit shared by IL-12 and IL-23."
+    },
+    {
+      "source": "TNFAIP3",
+      "type": "ASSOCIATED_WITH",
+      "target": "Psoriatic Arthritis",
+      "evidence": "Negative regulator of NF-kB signaling."
+    },
+    {
+      "source": "secukinumab",
+      "type": "TREATS",
+      "target": "Psoriatic Arthritis",
+      "evidence": "Approved disease treatment"
+    },
+    {
+      "source": "secukinumab",
+      "type": "TARGETS",
+      "target": "IL17A",
+      "evidence": "Monoclonal antibody neutralizing IL-17A"
+    },
+    {
+      "source": "ixekizumab",
+      "type": "TREATS",
+      "target": "Psoriatic Arthritis",
+      "evidence": "Approved disease treatment"
+    },
+    {
+      "source": "ixekizumab",
+      "type": "TARGETS",
+      "target": "IL17A",
+      "evidence": "High-affinity humanized anti-IL-17A mAb"
+    },
+    {
+      "source": "ustekinumab",
+      "type": "TREATS",
+      "target": "Psoriatic Arthritis",
+      "evidence": "Approved disease treatment"
+    },
+    {
+      "source": "ustekinumab",
+      "type": "TARGETS",
+      "target": "IL12B",
+      "evidence": "Anti-IL-12/IL-23 p40 monoclonal antibody"
+    },
+    {
+      "source": "tofacitinib",
+      "type": "TREATS",
+      "target": "Psoriatic Arthritis",
+      "evidence": "Approved disease treatment"
+    },
+    {
+      "source": "tofacitinib",
+      "type": "TARGETS",
+      "target": "TYK2",
+      "evidence": "Oral Janus kinase inhibitor"
+    },
+    {
+      "source": "tofacitinib",
+      "type": "TARGETS",
+      "target": "JAK1",
+      "evidence": "Oral Janus kinase inhibitor"
+    },
+    {
+      "source": "adalimumab",
+      "type": "TREATS",
+      "target": "Psoriatic Arthritis",
+      "evidence": "Approved disease treatment"
+    },
+    {
+      "source": "adalimumab",
+      "type": "TARGETS",
+      "target": "TNF",
+      "evidence": "Human anti-TNF monoclonal antibody"
+    },
+    {
+      "source": "apremilast",
+      "type": "TREATS",
+      "target": "Psoriatic Arthritis",
+      "evidence": "Approved disease treatment"
+    },
+    {
+      "source": "apremilast",
+      "type": "TARGETS",
+      "target": "PDE4A",
+      "evidence": "Oral phosphodiesterase-4 inhibitor"
+    },
+    {
+      "source": "IL23R",
+      "type": "PARTICIPATES_IN",
+      "target": "il23-il17-axis",
+      "evidence": "Key component of IL-23/IL-17 Axis"
+    },
+    {
+      "source": "IL17A",
+      "type": "PARTICIPATES_IN",
+      "target": "il23-il17-axis",
+      "evidence": "Key component of IL-23/IL-17 Axis"
+    },
+    {
+      "source": "IL12B",
+      "type": "PARTICIPATES_IN",
+      "target": "il23-il17-axis",
+      "evidence": "Key component of IL-23/IL-17 Axis"
+    },
+    {
+      "source": "TYK2",
+      "type": "PARTICIPATES_IN",
+      "target": "il23-il17-axis",
+      "evidence": "Key component of IL-23/IL-17 Axis"
+    },
+    {
+      "source": "TNF",
+      "type": "PARTICIPATES_IN",
+      "target": "tnf-signaling",
+      "evidence": "Key component of TNF Signaling"
+    },
+    {
+      "source": "TNFAIP3",
+      "type": "PARTICIPATES_IN",
+      "target": "tnf-signaling",
+      "evidence": "Key component of TNF Signaling"
+    },
+    {
+      "source": "TYK2",
+      "type": "PARTICIPATES_IN",
+      "target": "jak-stat",
+      "evidence": "Key component of JAK-STAT Signaling"
+    }
+  ]
+}

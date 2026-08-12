@@ -1,0 +1,46 @@
+{
+  "disease_id": "pso",
+  "disease_name": "Psoriasis",
+  "drugs": [
+    {
+      "id": "bimekizumab",
+      "name": "Bimekizumab",
+      "targets": [
+        "IL17A"
+      ],
+      "phase": "Approved",
+      "mechanism_of_action": "Dual IL-17A and IL-17F inhibitor mAb",
+      "drug_type": "Biologic"
+    },
+    {
+      "id": "guselkumab",
+      "name": "Guselkumab",
+      "targets": [
+        "IL23A"
+      ],
+      "phase": "Approved",
+      "mechanism_of_action": "Selective IL-23 p19 subunit inhibitor mAb",
+      "drug_type": "Biologic"
+    },
+    {
+      "id": "risankizumab",
+      "name": "Risankizumab",
+      "targets": [
+        "IL23A"
+      ],
+      "phase": "Approved",
+      "mechanism_of_action": "High-affinity humanized anti-IL-23 p19 mAb",
+      "drug_type": "Biologic"
+    },
+    {
+      "id": "deucravacitinib",
+      "name": "Deucravacitinib",
+      "targets": [
+        "TYK2"
+      ],
+      "phase": "Approved",
+      "mechanism_of_action": "Allosteric TYK2 inhibitor",
+      "drug_type": "Small molecule"
+    }
+  ]
+}

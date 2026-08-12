@@ -1,0 +1,66 @@
+{
+  "disease_id": "t2d",
+  "disease_name": "Type 2 Diabetes",
+  "genes": [
+    {
+      "id": "TCF7L2",
+      "symbol": "TCF7L2",
+      "name": "Transcription Factor 7 Like 2",
+      "category": "Beta-Cell Function & Survival",
+      "association_score": 0.98,
+      "odds_ratio": 1.4,
+      "disease_evidence": "Strongest common genetic locus associated with T2D risk.",
+      "gwas_pvalue": 1e-150,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "PPARG",
+      "symbol": "PPARG",
+      "name": "Peroxisome Proliferator Activated Receptor Gamma",
+      "category": "Insulin Receptor Signaling",
+      "association_score": 0.92,
+      "odds_ratio": 1.25,
+      "disease_evidence": "Master regulator of adipogenesis and insulin sensitivity.",
+      "gwas_pvalue": 1e-80,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "KCNJ11",
+      "symbol": "KCNJ11",
+      "name": "Potassium Inwardly Rectifying Channel Subfamily J Member 11",
+      "category": "Beta-Cell Function & Survival",
+      "association_score": 0.9,
+      "odds_ratio": 1.2,
+      "disease_evidence": "Encodes Kir6.2 subunit of beta-cell KATP channel.",
+      "gwas_pvalue": 1e-60,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "SLC30A8",
+      "symbol": "SLC30A8",
+      "name": "Solute Carrier Family 30 Member 8",
+      "category": "Beta-Cell Function & Survival",
+      "association_score": 0.88,
+      "odds_ratio": 1.18,
+      "disease_evidence": "Zinc transporter ZnT8 critical for insulin crystallization.",
+      "gwas_pvalue": 1e-50,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "GLP1R",
+      "symbol": "GLP1R",
+      "name": "Glucagon Like Peptide 1 Receptor",
+      "category": "Incretin Hormone Response",
+      "association_score": 0.95,
+      "odds_ratio": 1.3,
+      "disease_evidence": "Primary therapeutic target for incretin mimetics.",
+      "gwas_pvalue": 1e-90,
+      "chromosome": "unknown",
+      "function": "unknown"
+    }
+  ]
+}

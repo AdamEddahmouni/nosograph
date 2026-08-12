@@ -1,0 +1,982 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL2105395",
+      "target": "ESR1",
+      "type": "TARGETS",
+      "description": "OSPEMIFENE targets ESR1."
+    },
+    {
+      "source": "CHEMBL3185958",
+      "target": "ESR1",
+      "type": "TARGETS",
+      "description": "CLOMIPHENE CITRATE targets ESR1."
+    },
+    {
+      "source": "CHEMBL2355051",
+      "target": "ESR1",
+      "type": "TARGETS",
+      "description": "CLOMIPHENE targets ESR1."
+    },
+    {
+      "source": "CHEMBL1200699",
+      "target": "MMP8",
+      "type": "TARGETS",
+      "description": "DOXYCYCLINE targets MMP8."
+    },
+    {
+      "source": "CCL17",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL17 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR4",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR4 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "ARHGEF7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ARHGEF7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "GDF7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "GDF7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "PDCD10",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD10 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "TIGIT",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "TIGIT is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "VEGFC",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFC is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "WNT4",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT4 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ABCB1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ABCC9",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC9 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SLCO1B1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLCO1B1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SULT2A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SULT2A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "BCL2L11",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2L11 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CD19",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD19 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MMP1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP13",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP13 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP7",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP7 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP8",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP8 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "TSLP",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "TSLP is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "ITGB6",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB6 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "IKBKB",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "IKBKB is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "POMC",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "POMC is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD44",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD44 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ITGB6",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB6 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "SYNE1",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYNE1 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.45"
+    },
+    {
+      "source": "F5",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F5 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.41"
+    },
+    {
+      "source": "ARL14EP",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARL14EP is associated with gonorrhea (GONORRHEA). Open Targets association score 0.38"
+    },
+    {
+      "source": "STX16",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STX16 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.36"
+    },
+    {
+      "source": "WNT4",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT4 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.36"
+    },
+    {
+      "source": "FSHB",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSHB is associated with gonorrhea (GONORRHEA). Open Targets association score 0.35"
+    },
+    {
+      "source": "KDR",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with gonorrhea (GONORRHEA). Open Targets association score 0.34"
+    },
+    {
+      "source": "GDF7",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF7 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.31"
+    },
+    {
+      "source": "ARHGEF7",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGEF7 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.29"
+    },
+    {
+      "source": "NGF",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NGF is associated with gonorrhea (GONORRHEA). Open Targets association score 0.27"
+    },
+    {
+      "source": "ZBTB20",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB20 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.25"
+    },
+    {
+      "source": "PSMD13",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMD13 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.21"
+    },
+    {
+      "source": "TNRC6B",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNRC6B is associated with gonorrhea (GONORRHEA). Open Targets association score 0.20"
+    },
+    {
+      "source": "ESR1",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.17"
+    },
+    {
+      "source": "MYCT1",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYCT1 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.17"
+    },
+    {
+      "source": "MFHAS1",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MFHAS1 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.14"
+    },
+    {
+      "source": "PPP1R17",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP1R17 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.13"
+    },
+    {
+      "source": "SIRT3",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIRT3 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.12"
+    },
+    {
+      "source": "CCDC170",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC170 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.11"
+    },
+    {
+      "source": "PDE1C",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE1C is associated with gonorrhea (GONORRHEA). Open Targets association score 0.09"
+    },
+    {
+      "source": "TMEM150C",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM150C is associated with gonorrhea (GONORRHEA). Open Targets association score 0.09"
+    },
+    {
+      "source": "TIGIT",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIGIT is associated with gonorrhea (GONORRHEA). Open Targets association score 0.09"
+    },
+    {
+      "source": "LDAH",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDAH is associated with gonorrhea (GONORRHEA). Open Targets association score 0.08"
+    },
+    {
+      "source": "CDC42",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDC42 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.08"
+    },
+    {
+      "source": "ERI1",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERI1 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.07"
+    },
+    {
+      "source": "ABCC9",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC9 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.06"
+    },
+    {
+      "source": "SLCO1B1",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLCO1B1 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.06"
+    },
+    {
+      "source": "BTRC",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTRC is associated with gonorrhea (GONORRHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "VIP",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VIP is associated with gonorrhea (GONORRHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CDHR4",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDHR4 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "RNF123",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF123 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.03"
+    },
+    {
+      "source": "RIC8A",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIC8A is associated with gonorrhea (GONORRHEA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ARMH3",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARMH3 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.03"
+    },
+    {
+      "source": "BET1L",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BET1L is associated with gonorrhea (GONORRHEA). Open Targets association score 0.03"
+    },
+    {
+      "source": "RHOA",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHOA is associated with gonorrhea (GONORRHEA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MST1R",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MST1R is associated with gonorrhea (GONORRHEA). Open Targets association score 0.03"
+    },
+    {
+      "source": "GMPPB",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GMPPB is associated with gonorrhea (GONORRHEA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TEX29",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TEX29 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.03"
+    },
+    {
+      "source": "INKA1",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INKA1 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.02"
+    },
+    {
+      "source": "RBM6",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBM6 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.02"
+    },
+    {
+      "source": "IFITM2",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFITM2 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.02"
+    },
+    {
+      "source": "NPEPL1",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPEPL1 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SLC19A2",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC19A2 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ADSL",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADSL is associated with gonorrhea (GONORRHEA). Open Targets association score 0.02"
+    },
+    {
+      "source": "UBA7",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBA7 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNF",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with gonorrhea (GONORRHEA). Open Targets association score 0.02"
+    },
+    {
+      "source": "NLRP3",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP3 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.01"
+    },
+    {
+      "source": "VEGFA",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with gonorrhea (GONORRHEA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC16",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC16 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NBR1",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBR1 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CGA",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGA is associated with gonorrhea (GONORRHEA). Open Targets association score 0.01"
+    },
+    {
+      "source": "STING1",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STING1 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CGAS",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGAS is associated with gonorrhea (GONORRHEA). Open Targets association score 0.01"
+    },
+    {
+      "source": "WFDC2",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WFDC2 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADIPOQ",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADIPOQ is associated with gonorrhea (GONORRHEA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SULT2A1",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SULT2A1 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRP",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with gonorrhea (GONORRHEA). Open Targets association score 0.01"
+    },
+    {
+      "source": "C19orf33",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C19orf33 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CXCL8",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP1",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP1 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.39"
+    },
+    {
+      "source": "MMP8",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP8 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.39"
+    },
+    {
+      "source": "MMP13",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP13 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.39"
+    },
+    {
+      "source": "MMP7",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP7 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.39"
+    },
+    {
+      "source": "CEACAM5",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM5 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.38"
+    },
+    {
+      "source": "CEACAM1",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM1 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CEACAM3",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM3 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CEACAM6",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM6 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.37"
+    },
+    {
+      "source": "GH1",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.09"
+    },
+    {
+      "source": "POMC",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMC is associated with gonorrhea (GONORRHEA). Open Targets association score 0.09"
+    },
+    {
+      "source": "KRAS",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with gonorrhea (GONORRHEA). Open Targets association score 0.08"
+    },
+    {
+      "source": "PRL",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRL is associated with gonorrhea (GONORRHEA). Open Targets association score 0.08"
+    },
+    {
+      "source": "LGI3",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGI3 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.08"
+    },
+    {
+      "source": "ALCAM",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALCAM is associated with gonorrhea (GONORRHEA). Open Targets association score 0.08"
+    },
+    {
+      "source": "NEDD9",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEDD9 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.08"
+    },
+    {
+      "source": "TBX2",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX2 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.07"
+    },
+    {
+      "source": "SCG5",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCG5 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.07"
+    },
+    {
+      "source": "KRT17",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT17 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.07"
+    },
+    {
+      "source": "ITGB6",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB6 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.07"
+    },
+    {
+      "source": "CXCR4",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR4 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.07"
+    },
+    {
+      "source": "USP8",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP8 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.07"
+    },
+    {
+      "source": "IL10",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.06"
+    },
+    {
+      "source": "VEGFC",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFC is associated with gonorrhea (GONORRHEA). Open Targets association score 0.06"
+    },
+    {
+      "source": "SOX4",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX4 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.06"
+    },
+    {
+      "source": "CD4",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.06"
+    },
+    {
+      "source": "CD44",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD44 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.06"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with gonorrhea (GONORRHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "HMGA2",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGA2 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PGP",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGP is associated with gonorrhea (GONORRHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "MGMT",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MGMT is associated with gonorrhea (GONORRHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "P4HB",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P4HB is associated with gonorrhea (GONORRHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "MAX",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAX is associated with gonorrhea (GONORRHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "MEN1",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEN1 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL1B",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with gonorrhea (GONORRHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "MMP9",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "BRAF",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with gonorrhea (GONORRHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "KLK3",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLK3 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PON1",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PON1 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ABCB1",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB1 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TSLP",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSLP is associated with gonorrhea (GONORRHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "RPIA",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPIA is associated with gonorrhea (GONORRHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CCL17",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL17 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ERBB2",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "NF1",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "MKI67",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TLR4",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PDCD10",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD10 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "AKT1",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "MET",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with gonorrhea (GONORRHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "HOXB13",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXB13 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.03"
+    },
+    {
+      "source": "IKBKB",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKBKB is associated with gonorrhea (GONORRHEA). Open Targets association score 0.03"
+    },
+    {
+      "source": "BCL2L11",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2L11 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PTEN",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with gonorrhea (GONORRHEA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ABCG2",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG2 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.03"
+    },
+    {
+      "source": "KIF11",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF11 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD19",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD19 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.03"
+    },
+    {
+      "source": "KRT7",
+      "target": "gonorrhea (GONORRHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT7 is associated with gonorrhea (GONORRHEA). Open Targets association score 0.03"
+    }
+  ]
+}

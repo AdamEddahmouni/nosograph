@@ -1,0 +1,586 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1789941",
+      "target": "JAK1",
+      "type": "TARGETS",
+      "description": "RUXOLITINIB targets JAK1."
+    },
+    {
+      "source": "CHEMBL4594542",
+      "target": "IL10RB",
+      "type": "TARGETS",
+      "description": "EFLEPEDOCOKIN ALFA targets IL10RB."
+    },
+    {
+      "source": "CHEMBL2108730",
+      "target": "IL6R",
+      "type": "TARGETS",
+      "description": "SARILUMAB targets IL6R."
+    },
+    {
+      "source": "BECN1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "BECN1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "MAP1LC3B",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP1LC3B is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "CFI",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CFI is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "HAVCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "HAVCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "IL10RB",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10RB is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "JAK1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "TYK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "TYK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CETP",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CETP is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "IKBKB",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "IKBKB is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "CHUK",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CHUK is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "IKBKG",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "IKBKG is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "PIK3C3",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3C3 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3R4",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3R4 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "ACE2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "IFNAR2",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNAR2 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IRF3",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF3 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "ISG15",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "ISG15 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "OAS1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "OAS1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "OAS3",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "OAS3 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "CCR1",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR1 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCR3",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR3 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "IL6R",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6R is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "HTRA1",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "HTRA1 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "ACE2",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE2 is associated with COVID-19 (COVID19). Open Targets association score 0.69"
+    },
+    {
+      "source": "IFNAR2",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNAR2 is associated with COVID-19 (COVID19). Open Targets association score 0.67"
+    },
+    {
+      "source": "TYK2",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYK2 is associated with COVID-19 (COVID19). Open Targets association score 0.65"
+    },
+    {
+      "source": "GPC5",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPC5 is associated with COVID-19 (COVID19). Open Targets association score 0.62"
+    },
+    {
+      "source": "IL10RB",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10RB is associated with COVID-19 (COVID19). Open Targets association score 0.62"
+    },
+    {
+      "source": "TMPRSS2",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMPRSS2 is associated with COVID-19 (COVID19). Open Targets association score 0.60"
+    },
+    {
+      "source": "SFTPD",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFTPD is associated with COVID-19 (COVID19). Open Targets association score 0.60"
+    },
+    {
+      "source": "SDC1",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDC1 is associated with COVID-19 (COVID19). Open Targets association score 0.56"
+    },
+    {
+      "source": "OAS1",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OAS1 is associated with COVID-19 (COVID19). Open Targets association score 0.55"
+    },
+    {
+      "source": "LZTFL1",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LZTFL1 is associated with COVID-19 (COVID19). Open Targets association score 0.55"
+    },
+    {
+      "source": "DPP9",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPP9 is associated with COVID-19 (COVID19). Open Targets association score 0.55"
+    },
+    {
+      "source": "SLC6A20",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A20 is associated with COVID-19 (COVID19). Open Targets association score 0.55"
+    },
+    {
+      "source": "AGRN",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGRN is associated with COVID-19 (COVID19). Open Targets association score 0.55"
+    },
+    {
+      "source": "ABO",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABO is associated with COVID-19 (COVID19). Open Targets association score 0.54"
+    },
+    {
+      "source": "GPC1",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPC1 is associated with COVID-19 (COVID19). Open Targets association score 0.54"
+    },
+    {
+      "source": "HSPG2",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPG2 is associated with COVID-19 (COVID19). Open Targets association score 0.54"
+    },
+    {
+      "source": "SDC2",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDC2 is associated with COVID-19 (COVID19). Open Targets association score 0.54"
+    },
+    {
+      "source": "GPC3",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPC3 is associated with COVID-19 (COVID19). Open Targets association score 0.54"
+    },
+    {
+      "source": "SDC3",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDC3 is associated with COVID-19 (COVID19). Open Targets association score 0.54"
+    },
+    {
+      "source": "GPC4",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPC4 is associated with COVID-19 (COVID19). Open Targets association score 0.54"
+    },
+    {
+      "source": "GPC2",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPC2 is associated with COVID-19 (COVID19). Open Targets association score 0.54"
+    },
+    {
+      "source": "SDC4",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDC4 is associated with COVID-19 (COVID19). Open Targets association score 0.54"
+    },
+    {
+      "source": "GPC6",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPC6 is associated with COVID-19 (COVID19). Open Targets association score 0.54"
+    },
+    {
+      "source": "OAS3",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OAS3 is associated with COVID-19 (COVID19). Open Targets association score 0.54"
+    },
+    {
+      "source": "ST6GAL1",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ST6GAL1 is associated with COVID-19 (COVID19). Open Targets association score 0.53"
+    },
+    {
+      "source": "UVRAG",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UVRAG is associated with COVID-19 (COVID19). Open Targets association score 0.53"
+    },
+    {
+      "source": "FURIN",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FURIN is associated with COVID-19 (COVID19). Open Targets association score 0.53"
+    },
+    {
+      "source": "APOE",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with COVID-19 (COVID19). Open Targets association score 0.52"
+    },
+    {
+      "source": "FYCO1",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FYCO1 is associated with COVID-19 (COVID19). Open Targets association score 0.52"
+    },
+    {
+      "source": "MAP1LC3B",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP1LC3B is associated with COVID-19 (COVID19). Open Targets association score 0.51"
+    },
+    {
+      "source": "JAK1",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK1 is associated with COVID-19 (COVID19). Open Targets association score 0.51"
+    },
+    {
+      "source": "TBK1",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBK1 is associated with COVID-19 (COVID19). Open Targets association score 0.51"
+    },
+    {
+      "source": "ELF5",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELF5 is associated with COVID-19 (COVID19). Open Targets association score 0.50"
+    },
+    {
+      "source": "SLC22A31",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A31 is associated with COVID-19 (COVID19). Open Targets association score 0.49"
+    },
+    {
+      "source": "HLA-G",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-G is associated with COVID-19 (COVID19). Open Targets association score 0.49"
+    },
+    {
+      "source": "HLA-C",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-C is associated with COVID-19 (COVID19). Open Targets association score 0.49"
+    },
+    {
+      "source": "BECN1",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BECN1 is associated with COVID-19 (COVID19). Open Targets association score 0.48"
+    },
+    {
+      "source": "TUFM",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUFM is associated with COVID-19 (COVID19). Open Targets association score 0.48"
+    },
+    {
+      "source": "HLA-E",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-E is associated with COVID-19 (COVID19). Open Targets association score 0.48"
+    },
+    {
+      "source": "HLA-B",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-B is associated with COVID-19 (COVID19). Open Targets association score 0.48"
+    },
+    {
+      "source": "HAVCR1",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAVCR1 is associated with COVID-19 (COVID19). Open Targets association score 0.48"
+    },
+    {
+      "source": "IKBKB",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKBKB is associated with COVID-19 (COVID19). Open Targets association score 0.48"
+    },
+    {
+      "source": "CETP",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CETP is associated with COVID-19 (COVID19). Open Targets association score 0.48"
+    },
+    {
+      "source": "NRP1",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRP1 is associated with COVID-19 (COVID19). Open Targets association score 0.48"
+    },
+    {
+      "source": "STING1",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STING1 is associated with COVID-19 (COVID19). Open Targets association score 0.48"
+    },
+    {
+      "source": "HLA-A",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-A is associated with COVID-19 (COVID19). Open Targets association score 0.48"
+    },
+    {
+      "source": "FUBP1",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUBP1 is associated with COVID-19 (COVID19). Open Targets association score 0.47"
+    },
+    {
+      "source": "ATP11A",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP11A is associated with COVID-19 (COVID19). Open Targets association score 0.47"
+    },
+    {
+      "source": "IRF3",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF3 is associated with COVID-19 (COVID19). Open Targets association score 0.47"
+    },
+    {
+      "source": "PIK3C3",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3C3 is associated with COVID-19 (COVID19). Open Targets association score 0.47"
+    },
+    {
+      "source": "CTRB2",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTRB2 is associated with COVID-19 (COVID19). Open Targets association score 0.47"
+    },
+    {
+      "source": "ISG15",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ISG15 is associated with COVID-19 (COVID19). Open Targets association score 0.47"
+    },
+    {
+      "source": "MAVS",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAVS is associated with COVID-19 (COVID19). Open Targets association score 0.47"
+    },
+    {
+      "source": "IKBKG",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKBKG is associated with COVID-19 (COVID19). Open Targets association score 0.47"
+    },
+    {
+      "source": "PIK3R4",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3R4 is associated with COVID-19 (COVID19). Open Targets association score 0.46"
+    },
+    {
+      "source": "RPS27A",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPS27A is associated with COVID-19 (COVID19). Open Targets association score 0.46"
+    },
+    {
+      "source": "ST3GAL4",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ST3GAL4 is associated with COVID-19 (COVID19). Open Targets association score 0.46"
+    },
+    {
+      "source": "B2M",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B2M is associated with COVID-19 (COVID19). Open Targets association score 0.46"
+    },
+    {
+      "source": "CHUK",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHUK is associated with COVID-19 (COVID19). Open Targets association score 0.46"
+    },
+    {
+      "source": "ST6GALNAC4",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ST6GALNAC4 is associated with COVID-19 (COVID19). Open Targets association score 0.46"
+    },
+    {
+      "source": "IL6R",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6R is associated with COVID-19 (COVID19). Open Targets association score 0.63"
+    },
+    {
+      "source": "CCR1",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR1 is associated with COVID-19 (COVID19). Open Targets association score 0.55"
+    },
+    {
+      "source": "FUT2",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUT2 is associated with COVID-19 (COVID19). Open Targets association score 0.52"
+    },
+    {
+      "source": "LIPC",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPC is associated with COVID-19 (COVID19). Open Targets association score 0.52"
+    },
+    {
+      "source": "C3",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C3 is associated with COVID-19 (COVID19). Open Targets association score 0.50"
+    },
+    {
+      "source": "CCR3",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR3 is associated with COVID-19 (COVID19). Open Targets association score 0.48"
+    },
+    {
+      "source": "CFI",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFI is associated with COVID-19 (COVID19). Open Targets association score 0.48"
+    },
+    {
+      "source": "FUT6",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUT6 is associated with COVID-19 (COVID19). Open Targets association score 0.47"
+    },
+    {
+      "source": "HTRA1",
+      "target": "COVID-19 (COVID19)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTRA1 is associated with COVID-19 (COVID19). Open Targets association score 0.47"
+    }
+  ]
+}

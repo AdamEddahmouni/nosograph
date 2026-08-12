@@ -1,0 +1,32 @@
+{
+  "disease_id": "pso",
+  "disease_name": "Psoriasis",
+  "pathways": [
+    {
+      "id": "il23-th17",
+      "name": "IL-23/Th17 Pathway",
+      "description": "Drives acanthosis and hyperkeratosis in skin.",
+      "key_components": [
+        "IL23R",
+        "IL17A",
+        "IL12B",
+        "TYK2"
+      ],
+      "therapeutic_targets": [
+        "IL17A",
+        "IL23A"
+      ]
+    },
+    {
+      "id": "nfkb-skin",
+      "name": "NF-kB Signaling",
+      "description": "Pro-inflammatory cascade in epidermal keratinocytes.",
+      "key_components": [
+        "CARD14"
+      ],
+      "therapeutic_targets": [
+        "CARD14"
+      ]
+    }
+  ]
+}

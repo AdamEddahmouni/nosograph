@@ -1,0 +1,46 @@
+{
+  "disease_id": "gout",
+  "disease_name": "Gout",
+  "drugs": [
+    {
+      "id": "allopurinol",
+      "name": "Allopurinol",
+      "targets": [
+        "XDH"
+      ],
+      "phase": "Approved",
+      "mechanism_of_action": "Xanthine oxidase inhibitor reducing uric acid synthesis",
+      "drug_type": "Small molecule"
+    },
+    {
+      "id": "febuxostat",
+      "name": "Febuxostat",
+      "targets": [
+        "XDH"
+      ],
+      "phase": "Approved",
+      "mechanism_of_action": "Non-purine selective xanthine oxidase inhibitor",
+      "drug_type": "Small molecule"
+    },
+    {
+      "id": "colchicine",
+      "name": "Colchicine",
+      "targets": [
+        "TUBB"
+      ],
+      "phase": "Approved",
+      "mechanism_of_action": "Microtubule assembly inhibitor blocking neutrophil chemotaxis",
+      "drug_type": "Small molecule"
+    },
+    {
+      "id": "canakinumab",
+      "name": "Canakinumab",
+      "targets": [
+        "IL1B"
+      ],
+      "phase": "Approved",
+      "mechanism_of_action": "Human anti-IL-1 beta monoclonal antibody",
+      "drug_type": "Biologic"
+    }
+  ]
+}

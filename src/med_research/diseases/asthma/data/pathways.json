@@ -1,0 +1,30 @@
+{
+  "disease_id": "asthma",
+  "disease_name": "Chronic Airway Inflammation (Asthma)",
+  "pathways": [
+    {
+      "id": "t2-airway-inflammation",
+      "name": "Type 2 High Airway Inflammation",
+      "description": "Eosinophilic recruitment and bronchial hyperreactivity.",
+      "key_components": [
+        "IL5",
+        "IL4R"
+      ],
+      "therapeutic_targets": [
+        "IL5",
+        "IL4R"
+      ]
+    },
+    {
+      "id": "alarmin-signaling",
+      "name": "Epithelial Alarmin Signaling",
+      "description": "Epithelial injury releases TSLP and IL-33 driving innate lymphoid cells.",
+      "key_components": [
+        "TSLP"
+      ],
+      "therapeutic_targets": [
+        "TSLP"
+      ]
+    }
+  ]
+}

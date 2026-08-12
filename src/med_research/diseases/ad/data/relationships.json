@@ -1,0 +1,112 @@
+{
+  "relationships": [
+    {
+      "source": "donepezil",
+      "target": "ACHE",
+      "type": "TARGETS",
+      "description": "Inhibits acetylcholinesterase to increase synaptic acetylcholine levels."
+    },
+    {
+      "source": "memantine",
+      "target": "GRIN1",
+      "type": "TARGETS",
+      "description": "Blocks uncompetitive NMDA glutamate receptors."
+    },
+    {
+      "source": "lecanemab",
+      "target": "APP",
+      "type": "TARGETS",
+      "description": "Binds and clears soluble Abeta protofibrils and plaques."
+    },
+    {
+      "source": "donanemab",
+      "target": "APP",
+      "type": "TARGETS",
+      "description": "Targets pyroglutamate Abeta in dense amyloid plaques."
+    },
+    {
+      "source": "donepezil",
+      "target": "ad",
+      "type": "TREATS",
+      "description": "Approved for mild, moderate, and severe Alzheimer's disease."
+    },
+    {
+      "source": "memantine",
+      "target": "ad",
+      "type": "TREATS",
+      "description": "Approved for moderate-to-severe Alzheimer's disease."
+    },
+    {
+      "source": "lecanemab",
+      "target": "ad",
+      "type": "TREATS",
+      "description": "Approved disease-modifying antibody for early AD."
+    },
+    {
+      "source": "donanemab",
+      "target": "ad",
+      "type": "TREATS",
+      "description": "Approved disease-modifying antibody for early symptomatic AD."
+    },
+    {
+      "source": "APP",
+      "target": "PATH_AD_AMYLOID",
+      "type": "PARTICIPATES_IN",
+      "description": "Primary precursor substrate cleaved into Abeta peptides."
+    },
+    {
+      "source": "BACE1",
+      "target": "PATH_AD_AMYLOID",
+      "type": "PARTICIPATES_IN",
+      "description": "Beta-secretase enzyme initiating amyloid cleavage."
+    },
+    {
+      "source": "MAPT",
+      "target": "PATH_AD_TAU",
+      "type": "PARTICIPATES_IN",
+      "description": "Tau protein forming neurofibrillary tangles upon hyperphosphorylation."
+    },
+    {
+      "source": "TREM2",
+      "target": "PATH_AD_MICROGLIA",
+      "type": "PARTICIPATES_IN",
+      "description": "Microglial surface receptor promoting protective plaque phagocytosis."
+    },
+    {
+      "source": "APOE",
+      "target": "PATH_AD_LIPID",
+      "type": "PARTICIPATES_IN",
+      "description": "Apolipoprotein regulating brain lipid homeostasis and Abeta clearance."
+    },
+    {
+      "source": "PICALM",
+      "target": "PATH_AD_ENDOCYTOSIS",
+      "type": "PARTICIPATES_IN",
+      "description": "Endocytic adapter regulating APP trafficking."
+    },
+    {
+      "source": "APOE",
+      "target": "ad",
+      "type": "ASSOCIATED_WITH",
+      "description": "Primary genetic risk factor allele for late-onset AD."
+    },
+    {
+      "source": "APP",
+      "target": "ad",
+      "type": "ASSOCIATED_WITH",
+      "description": "Causative genetic locus for early-onset familial AD."
+    },
+    {
+      "source": "MAPT",
+      "target": "ad",
+      "type": "ASSOCIATED_WITH",
+      "description": "Core biomarker and histopathological driver of AD neurodegeneration."
+    },
+    {
+      "source": "TREM2",
+      "target": "ad",
+      "type": "ASSOCIATED_WITH",
+      "description": "High-impact genetic risk factor modulating microglial activation."
+    }
+  ]
+}

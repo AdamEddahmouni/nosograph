@@ -1,0 +1,754 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL34259",
+      "target": "DHFR",
+      "type": "TARGETS",
+      "description": "METHOTREXATE targets DHFR."
+    },
+    {
+      "source": "CHEMBL786",
+      "target": "ESR1",
+      "type": "TARGETS",
+      "description": "TAMOXIFEN CITRATE targets ESR1."
+    },
+    {
+      "source": "CHEMBL413",
+      "target": "FKBP1A",
+      "type": "TARGETS",
+      "description": "SIROLIMUS targets FKBP1A."
+    },
+    {
+      "source": "CHEMBL635",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "PREDNISONE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL635",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "PREDNISONE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL83",
+      "target": "ESR1",
+      "type": "TARGETS",
+      "description": "TAMOXIFEN targets ESR1."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BCL2L11",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2L11 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "MS4A1",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MS4A1 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CCL11",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL11 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CFH",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CFH is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "SLC4A1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC4A1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "COL4A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A4",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A4 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A5",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A5 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP12",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP12 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "SLC2A9",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A9 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HNF1B",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1B is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "GLIS2",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLIS2 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "PIK3C2A",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3C2A is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "AGT",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGT is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "AGTR2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGTR2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "REN",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "REN is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "HTR3A",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "HTR3A is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "LAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "CYP19A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP19A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP2D6",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP2D6 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SLC3A1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC3A1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "ZNF880",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ZNF880 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "NR3C1",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "DHFR",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHFR is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "ESR1",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "FKBP1A",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKBP1A is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "PTGS2",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "DNASE1",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNASE1 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL4A3",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A3 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "REN",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REN is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "HTR3A",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTR3A is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC12A1",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC12A1 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "ARHGDIA",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGDIA is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ACE",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "MOCOS",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MOCOS is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CYP19A1",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP19A1 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC2A9",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A9 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CYBB",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYBB is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "HMOX1",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMOX1 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "LHCGR",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHCGR is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "RUBCN",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUBCN is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PIK3C2A",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3C2A is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TUSC2",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUSC2 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "COL4A1",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A1 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "APRT",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APRT is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD1D",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD1D is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "BCL2L11",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2L11 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "GLIS2",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLIS2 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SCARF1",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCARF1 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "RRM2B",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RRM2B is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "COL4A4",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A4 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "AQP2",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP2 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "LAT",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAT is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CRIM1",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRIM1 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC4A1",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC4A1 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TREX1",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TREX1 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "AGT",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGT is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "LEPR",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEPR is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "WWTR1",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WWTR1 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "FAS",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "C1GALT1",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C1GALT1 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SIRT1",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIRT1 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "UMOD",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UMOD is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SPP1",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPP1 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "MDM2",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDM2 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "PRTN3",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRTN3 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "GDF15",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF15 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MTOR",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP12",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP12 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYP2D6",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP2D6 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCL11",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL11 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PHB1",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHB1 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MS4A1",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MS4A1 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRT20",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT20 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "DNAJB9",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAJB9 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CRP",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "GGH",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGH is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PSAP",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSAP is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRH2",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRH2 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "NF1",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "HNF1B",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1B is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "NPHS2",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPHS2 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "C3",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C3 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "NOS3",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS3 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC3A1",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC3A1 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "BCL2",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD151",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD151 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "WT1",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WT1 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "GNE",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNE is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "NPHP3",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPHP3 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "NPHP3-ACAD11",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPHP3-ACAD11 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "HNF1A",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "LAMA5",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMA5 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL4A5",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A5 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CFH",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFH is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "AGTR2",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGTR2 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "AHR",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHR is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TRPV5",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV5 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "ALMS1",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALMS1 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "SGPL1",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGPL1 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "MPV17",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPV17 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "ATP8B1",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP8B1 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CLEC2D",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC2D is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "LGMN",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGMN is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PKD1",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKD1 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "UPK1A",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UPK1A is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "VEGFA",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZNF880",
+      "target": "IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF880 is associated with IgG4-related retroperitoneal fibrosis (RETROPERITONEAL_FIBROSIS). Open Targets association score 0.04"
+    }
+  ]
+}

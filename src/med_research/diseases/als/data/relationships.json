@@ -1,0 +1,84 @@
+{
+  "disease_id": "als",
+  "disease_name": "Amyotrophic Lateral Sclerosis",
+  "relationships": [
+    {
+      "source": "SOD1",
+      "type": "ASSOCIATED_WITH",
+      "target": "Amyotrophic Lateral Sclerosis",
+      "evidence": "First identified genetic cause of familial ALS."
+    },
+    {
+      "source": "C9orf72",
+      "type": "ASSOCIATED_WITH",
+      "target": "Amyotrophic Lateral Sclerosis",
+      "evidence": "Most frequent genetic cause of ALS and frontotemporal dementia."
+    },
+    {
+      "source": "TARDBP",
+      "type": "ASSOCIATED_WITH",
+      "target": "Amyotrophic Lateral Sclerosis",
+      "evidence": "Major component of ubiquitinated protein inclusions in ALS."
+    },
+    {
+      "source": "FUS",
+      "type": "ASSOCIATED_WITH",
+      "target": "Amyotrophic Lateral Sclerosis",
+      "evidence": "RNA-binding protein implicated in juvenile and familial ALS."
+    },
+    {
+      "source": "riluzole",
+      "type": "TREATS",
+      "target": "Amyotrophic Lateral Sclerosis",
+      "evidence": "Approved disease treatment"
+    },
+    {
+      "source": "riluzole",
+      "type": "TARGETS",
+      "target": "GRIN1",
+      "evidence": "Glutamate neurotransmission inhibitor"
+    },
+    {
+      "source": "edaravone",
+      "type": "TREATS",
+      "target": "Amyotrophic Lateral Sclerosis",
+      "evidence": "Approved disease treatment"
+    },
+    {
+      "source": "edaravone",
+      "type": "TARGETS",
+      "target": "ROS",
+      "evidence": "Free radical scavenger reducing oxidative stress"
+    },
+    {
+      "source": "tofersen",
+      "type": "TREATS",
+      "target": "Amyotrophic Lateral Sclerosis",
+      "evidence": "Approved disease treatment"
+    },
+    {
+      "source": "tofersen",
+      "type": "TARGETS",
+      "target": "SOD1",
+      "evidence": "Antisense oligonucleotide targeting SOD1 mRNA"
+    },
+    {
+      "source": "TARDBP",
+      "type": "PARTICIPATES_IN",
+      "target": "tdp43-proteinopathy",
+      "evidence": "Key component of TDP-43 Proteinopathy"
+    },
+    {
+      "source": "C9orf72",
+      "type": "PARTICIPATES_IN",
+      "target": "tdp43-proteinopathy",
+      "evidence": "Key component of TDP-43 Proteinopathy"
+    },
+    {
+      "source": "SOD1",
+      "type": "PARTICIPATES_IN",
+      "target": "glutamate-excitotoxicity",
+      "evidence": "Key component of Glutamate Excitotoxicity"
+    }
+  ]
+}

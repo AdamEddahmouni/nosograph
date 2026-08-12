@@ -1,0 +1,306 @@
+{
+  "pathways": [
+    {
+      "id": "bcr-signaling",
+      "name": "B Cell Receptor Signaling",
+      "description": "BCR signal transduction controlling B cell survival, proliferation, and antibody production.",
+      "key_components": [
+        "SIGLEC14",
+        "SIGLEC6",
+        "SIGLEC8"
+      ],
+      "therapeutic_targets": [
+        "SIGLEC14",
+        "SIGLEC6",
+        "SIGLEC8"
+      ],
+      "references": []
+    },
+    {
+      "id": "chemokine-signaling",
+      "name": "Chemokine Signaling",
+      "description": "Chemokine-receptor interactions directing leukocyte migration and lymphoid organization.",
+      "key_components": [
+        "CCL17"
+      ],
+      "therapeutic_targets": [
+        "CCL17"
+      ],
+      "references": []
+    },
+    {
+      "id": "complement",
+      "name": "Complement Cascade",
+      "description": "Classical, lectin, and alternative complement pathways for opsonization, lysis, and immune complex clearance.",
+      "key_components": [
+        "MBL2"
+      ],
+      "therapeutic_targets": [
+        "MBL2"
+      ],
+      "references": []
+    },
+    {
+      "id": "ecm-remodeling",
+      "name": "ECM Remodeling",
+      "description": "Matrix metalloproteinases and extracellular matrix turnover in tissue remodeling and fibrosis.",
+      "key_components": [
+        "ADAMTSL2",
+        "MMP14",
+        "TIMP1"
+      ],
+      "therapeutic_targets": [
+        "ADAMTSL2",
+        "MMP14",
+        "TIMP1"
+      ],
+      "references": []
+    },
+    {
+      "id": "glucose-metabolism",
+      "name": "Glucose Metabolism / Insulin Secretion",
+      "description": "Pancreatic β-cell function, insulin secretion, and glycemic control.",
+      "key_components": [
+        "DPP4"
+      ],
+      "therapeutic_targets": [
+        "DPP4"
+      ],
+      "references": []
+    },
+    {
+      "id": "hepcidin-iron",
+      "name": "Hepcidin / Iron Homeostasis",
+      "description": "Hepcidin-ferroportin axis regulating systemic iron balance.",
+      "key_components": [
+        "BMPR2"
+      ],
+      "therapeutic_targets": [
+        "BMPR2"
+      ],
+      "references": []
+    },
+    {
+      "id": "il1-inflammasome",
+      "name": "IL-1 / Inflammasome Pathway",
+      "description": "NLRP3 inflammasome assembly and IL-1β/IL-18 maturation; a driver of sterile inflammation.",
+      "key_components": [
+        "IL13",
+        "NLRP3"
+      ],
+      "therapeutic_targets": [
+        "IL13",
+        "NLRP3"
+      ],
+      "references": []
+    },
+    {
+      "id": "il4-il13",
+      "name": "IL-4 / IL-13 (Th2) Pathway",
+      "description": "Type 2 cytokine signaling driving allergic and eosinophilic inflammation.",
+      "key_components": [
+        "IL13",
+        "IL4R",
+        "IL5",
+        "IL4"
+      ],
+      "therapeutic_targets": [
+        "IL13",
+        "IL4R",
+        "IL5",
+        "IL4"
+      ],
+      "references": []
+    },
+    {
+      "id": "immune-checkpoint",
+      "name": "Immune Checkpoint Signaling",
+      "description": "Co-inhibitory receptor signaling (PD-1/CTLA-4/TIGIT/LAG-3) that restrains T cell responses.",
+      "key_components": [
+        "PDCD1"
+      ],
+      "therapeutic_targets": [
+        "PDCD1"
+      ],
+      "references": []
+    },
+    {
+      "id": "nfkb",
+      "name": "NF-κB Pathway",
+      "description": "Canonical and non-canonical NF-κB activation driving pro-inflammatory gene expression.",
+      "key_components": [
+        "CARD9",
+        "RELB"
+      ],
+      "therapeutic_targets": [
+        "CARD9",
+        "RELB"
+      ],
+      "references": []
+    },
+    {
+      "id": "serotonin-dopamine",
+      "name": "Serotonin / Dopamine Signaling",
+      "description": "Monoamine neurotransmission; the pharmacological hub of psychiatry.",
+      "key_components": [
+        "TPH1"
+      ],
+      "therapeutic_targets": [
+        "TPH1"
+      ],
+      "references": []
+    },
+    {
+      "id": "tcr-signaling",
+      "name": "T Cell Receptor Signaling",
+      "description": "TCR signal transduction and T cell activation; a therapeutic hub in autoimmunity.",
+      "key_components": [
+        "CD4",
+        "CD33"
+      ],
+      "therapeutic_targets": [
+        "CD4",
+        "CD33"
+      ],
+      "references": []
+    },
+    {
+      "id": "tgf-beta",
+      "name": "TGF-β Signaling",
+      "description": "Transforming growth factor beta signaling controlling fibrosis, immune tolerance, and tumor suppression.",
+      "key_components": [
+        "FBN1",
+        "LTBP4",
+        "TGFB3"
+      ],
+      "therapeutic_targets": [
+        "FBN1",
+        "LTBP4",
+        "TGFB3"
+      ],
+      "references": []
+    },
+    {
+      "id": "th17-il17",
+      "name": "Th17 / IL-17 Pathway",
+      "description": "Th17 differentiation and IL-17 family cytokine signaling driving neutrophil recruitment and autoimmunity.",
+      "key_components": [
+        "IL21"
+      ],
+      "therapeutic_targets": [
+        "IL21"
+      ],
+      "references": []
+    },
+    {
+      "id": "thyroid-hormone",
+      "name": "Thyroid Hormone Signaling",
+      "description": "Thyroid hormone synthesis, transport, and nuclear receptor signaling.",
+      "key_components": [
+        "PTGES3",
+        "TGFB3"
+      ],
+      "therapeutic_targets": [
+        "PTGES3",
+        "TGFB3"
+      ],
+      "references": []
+    },
+    {
+      "id": "type1-ifn",
+      "name": "Type I Interferon Pathway",
+      "description": "IFN-α/β production and signaling through IFNAR; drives the interferon gene signature in autoimmune disease.",
+      "key_components": [
+        "IFNG"
+      ],
+      "therapeutic_targets": [
+        "IFNG"
+      ],
+      "references": []
+    },
+    {
+      "id": "wnt-signaling",
+      "name": "Wnt Signaling",
+      "description": "Canonical Wnt/β-catenin signaling controlling cell fate, proliferation, and tissue regeneration.",
+      "key_components": [
+        "NLRP3",
+        "WNT7B"
+      ],
+      "therapeutic_targets": [
+        "NLRP3",
+        "WNT7B"
+      ],
+      "references": []
+    },
+    {
+      "id": "coagulation",
+      "name": "Coagulation Cascade",
+      "description": "Plasma coagulation factors and fibrinolysis; a hub for cardiovascular and thrombotic disease.",
+      "key_components": [
+        "CSF2RB",
+        "FGF10",
+        "TCF21"
+      ],
+      "therapeutic_targets": [
+        "CSF2RB",
+        "FGF10",
+        "TCF21"
+      ],
+      "references": []
+    },
+    {
+      "id": "hedgehog",
+      "name": "Hedgehog Signaling",
+      "description": "Hedgehog morphogen signaling governing embryonic patterning and stem cell maintenance.",
+      "key_components": [
+        "SHH"
+      ],
+      "therapeutic_targets": [
+        "SHH"
+      ],
+      "references": []
+    },
+    {
+      "id": "mapk-erk",
+      "name": "MAPK / ERK Signaling",
+      "description": "RAS-RAF-MEK-ERK cascade coupling growth factor receptors to proliferation and differentiation.",
+      "key_components": [
+        "EGFR",
+        "MAPK8IP3",
+        "TRAF4"
+      ],
+      "therapeutic_targets": [
+        "EGFR",
+        "MAPK8IP3",
+        "TRAF4"
+      ],
+      "references": []
+    },
+    {
+      "id": "renin-angiotensin",
+      "name": "Renin-Angiotensin System",
+      "description": "Renin-angiotensin-aldosterone axis controlling blood pressure and fluid balance.",
+      "key_components": [
+        "ACE2"
+      ],
+      "therapeutic_targets": [
+        "ACE2"
+      ],
+      "references": []
+    },
+    {
+      "id": "tnf-signaling",
+      "name": "TNF Signaling",
+      "description": "Tumor necrosis factor receptor superfamily signaling; central to many autoimmune and inflammatory diseases.",
+      "key_components": [
+        "LTBP4",
+        "TRAF4"
+      ],
+      "therapeutic_targets": [
+        "LTBP4",
+        "TRAF4"
+      ],
+      "references": []
+    }
+  ]
+}

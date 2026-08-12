@@ -1,0 +1,286 @@
+{
+  "pathways": [
+    {
+      "id": "chemokine-signaling",
+      "name": "Chemokine Signaling",
+      "description": "Chemokine-receptor interactions directing leukocyte migration and lymphoid organization.",
+      "key_components": [
+        "CCR5",
+        "CCR7",
+        "CXCL8"
+      ],
+      "therapeutic_targets": [
+        "CCR5",
+        "CCR7",
+        "CXCL8"
+      ],
+      "references": []
+    },
+    {
+      "id": "coagulation",
+      "name": "Coagulation Cascade",
+      "description": "Plasma coagulation factors and fibrinolysis; a hub for cardiovascular and thrombotic disease.",
+      "key_components": [
+        "CSF2",
+        "TFF2"
+      ],
+      "therapeutic_targets": [
+        "CSF2",
+        "TFF2"
+      ],
+      "references": []
+    },
+    {
+      "id": "hepcidin-iron",
+      "name": "Hepcidin / Iron Homeostasis",
+      "description": "Hepcidin-ferroportin axis regulating systemic iron balance.",
+      "key_components": [
+        "TFRC"
+      ],
+      "therapeutic_targets": [
+        "TFRC"
+      ],
+      "references": []
+    },
+    {
+      "id": "il1-inflammasome",
+      "name": "IL-1 / Inflammasome Pathway",
+      "description": "NLRP3 inflammasome assembly and IL-1β/IL-18 maturation; a driver of sterile inflammation.",
+      "key_components": [
+        "IL10",
+        "IL13",
+        "IL17A",
+        "IL17F",
+        "IL19"
+      ],
+      "therapeutic_targets": [
+        "IL10",
+        "IL13",
+        "IL17A",
+        "IL17F",
+        "IL19"
+      ],
+      "references": []
+    },
+    {
+      "id": "il4-il13",
+      "name": "IL-4 / IL-13 (Th2) Pathway",
+      "description": "Type 2 cytokine signaling driving allergic and eosinophilic inflammation.",
+      "key_components": [
+        "IL13",
+        "IL4R"
+      ],
+      "therapeutic_targets": [
+        "IL13",
+        "IL4R"
+      ],
+      "references": []
+    },
+    {
+      "id": "immune-checkpoint",
+      "name": "Immune Checkpoint Signaling",
+      "description": "Co-inhibitory receptor signaling (PD-1/CTLA-4/TIGIT/LAG-3) that restrains T cell responses.",
+      "key_components": [
+        "PDCD1"
+      ],
+      "therapeutic_targets": [
+        "PDCD1"
+      ],
+      "references": []
+    },
+    {
+      "id": "integrin-adhesion",
+      "name": "Integrin / Cell Adhesion",
+      "description": "Integrin-mediated adhesion and leukocyte trafficking into inflamed tissue.",
+      "key_components": [
+        "SELL",
+        "SELP",
+        "MADCAM1"
+      ],
+      "therapeutic_targets": [
+        "SELL",
+        "SELP",
+        "MADCAM1"
+      ],
+      "references": []
+    },
+    {
+      "id": "mast-cell",
+      "name": "Mast Cell / IgE Signaling",
+      "description": "FcεRI-mediated mast cell activation and degranulation in allergic disease.",
+      "key_components": [
+        "HDC"
+      ],
+      "therapeutic_targets": [
+        "HDC"
+      ],
+      "references": []
+    },
+    {
+      "id": "tcr-signaling",
+      "name": "T Cell Receptor Signaling",
+      "description": "TCR signal transduction and T cell activation; a therapeutic hub in autoimmunity.",
+      "key_components": [
+        "CD4",
+        "CD8A"
+      ],
+      "therapeutic_targets": [
+        "CD4",
+        "CD8A"
+      ],
+      "references": []
+    },
+    {
+      "id": "tgf-beta",
+      "name": "TGF-β Signaling",
+      "description": "Transforming growth factor beta signaling controlling fibrosis, immune tolerance, and tumor suppression.",
+      "key_components": [
+        "TGFB1"
+      ],
+      "therapeutic_targets": [
+        "TGFB1"
+      ],
+      "references": []
+    },
+    {
+      "id": "th17-il17",
+      "name": "Th17 / IL-17 Pathway",
+      "description": "Th17 differentiation and IL-17 family cytokine signaling driving neutrophil recruitment and autoimmunity.",
+      "key_components": [
+        "IL17A",
+        "IL17F",
+        "IL21"
+      ],
+      "therapeutic_targets": [
+        "IL17A",
+        "IL17F",
+        "IL21"
+      ],
+      "references": []
+    },
+    {
+      "id": "thyroid-hormone",
+      "name": "Thyroid Hormone Signaling",
+      "description": "Thyroid hormone synthesis, transport, and nuclear receptor signaling.",
+      "key_components": [
+        "TGFB1",
+        "TGM2",
+        "TPO"
+      ],
+      "therapeutic_targets": [
+        "TGFB1",
+        "TGM2",
+        "TPO"
+      ],
+      "references": []
+    },
+    {
+      "id": "tnf-signaling",
+      "name": "TNF Signaling",
+      "description": "Tumor necrosis factor receptor superfamily signaling; central to many autoimmune and inflammatory diseases.",
+      "key_components": [
+        "FAS",
+        "FASLG",
+        "TNF",
+        "TNFRSF18"
+      ],
+      "therapeutic_targets": [
+        "FAS",
+        "FASLG",
+        "TNF",
+        "TNFRSF18"
+      ],
+      "references": []
+    },
+    {
+      "id": "type1-ifn",
+      "name": "Type I Interferon Pathway",
+      "description": "IFN-α/β production and signaling through IFNAR; drives the interferon gene signature in autoimmune disease.",
+      "key_components": [
+        "IFNA1",
+        "IFNG",
+        "IFNL1",
+        "IFNL2"
+      ],
+      "therapeutic_targets": [
+        "IFNA1",
+        "IFNG",
+        "IFNL1",
+        "IFNL2"
+      ],
+      "references": []
+    },
+    {
+      "id": "bcr-signaling",
+      "name": "B Cell Receptor Signaling",
+      "description": "BCR signal transduction controlling B cell survival, proliferation, and antibody production.",
+      "key_components": [
+        "CD79A"
+      ],
+      "therapeutic_targets": [
+        "CD79A"
+      ],
+      "references": []
+    },
+    {
+      "id": "cardiac-ion-channel",
+      "name": "Cardiac Ion Channel / Conduction",
+      "description": "Voltage-gated sodium, potassium, and calcium channels governing cardiac excitability.",
+      "key_components": [
+        "CACNA1A"
+      ],
+      "therapeutic_targets": [
+        "CACNA1A"
+      ],
+      "references": []
+    },
+    {
+      "id": "complement",
+      "name": "Complement Cascade",
+      "description": "Classical, lectin, and alternative complement pathways for opsonization, lysis, and immune complex clearance.",
+      "key_components": [
+        "FLVCR1"
+      ],
+      "therapeutic_targets": [
+        "FLVCR1"
+      ],
+      "references": []
+    },
+    {
+      "id": "dna-repair",
+      "name": "DNA Repair",
+      "description": "Homologous recombination, mismatch repair, and base excision pathways preserving genome integrity.",
+      "key_components": [
+        "BRCA2"
+      ],
+      "therapeutic_targets": [
+        "BRCA2"
+      ],
+      "references": []
+    },
+    {
+      "id": "il6-signaling",
+      "name": "IL-6 Signaling",
+      "description": "Interleukin-6 signaling via gp130 and STAT3; a key amplifier of systemic inflammation.",
+      "key_components": [
+        "STAT3"
+      ],
+      "therapeutic_targets": [
+        "STAT3"
+      ],
+      "references": []
+    },
+    {
+      "id": "jak-stat",
+      "name": "JAK-STAT Signaling",
+      "description": "Cytokine receptor signaling through JAK kinases and STAT transcription factors; a hub for inflammatory and autoimmune disease pathways.",
+      "key_components": [
+        "STAT3"
+      ],
+      "therapeutic_targets": [
+        "STAT3"
+      ],
+      "references": []
+    }
+  ]
+}

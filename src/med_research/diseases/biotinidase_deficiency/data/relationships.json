@@ -1,0 +1,790 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1431",
+      "target": "NDUFS4",
+      "type": "TARGETS",
+      "description": "METFORMIN targets NDUFS4."
+    },
+    {
+      "source": "CACNA1D",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1D is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "KCNA2",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNA2 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "C4B",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C4B is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "BRCA2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "SLC2A1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "THRB",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THRB is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "MTHFR",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "MTHFR is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CYP21A2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP21A2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GSTM1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTM1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GTF2IRD1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "GTF2IRD1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "BMP4",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP4 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "MAPK8IP3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK8IP3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFKBIZ",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKBIZ is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "THRB",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "THRB is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LMX1A",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "LMX1A is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "BTD",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTD is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.84"
+    },
+    {
+      "source": "HACL1",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HACL1 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.19"
+    },
+    {
+      "source": "FOXP3",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "GSTM1",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTM1 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC5A6",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC5A6 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GALT",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GALT is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TPK1",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPK1 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GAL",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAL is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GJB2",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJB2 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATP6V1B1",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP6V1B1 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MLKL",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLKL is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "HLCS",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLCS is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACADM",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACADM is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "POLD3",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLD3 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SCN2A",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN2A is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC6A19",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A19 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PDHX",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDHX is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC2A1",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A1 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TBC1D24",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBC1D24 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ASS1",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASS1 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRODH",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRODH is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "RPE65",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPE65 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PDHA1",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDHA1 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SHC1",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHC1 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "BRCA2",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA2 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CFTR",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFTR is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SERPINA1",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA1 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TP63",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "C4B",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C4B is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SETX",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETX is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "BCKDHB",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCKDHB is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "RPIA",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPIA is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GLDC",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLDC is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "BCKDHA",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCKDHA is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "UVRAG",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UVRAG is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ATP1A3",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP1A3 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "DARS2",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DARS2 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACO2",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACO2 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRRT2",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRRT2 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ALDH7A1",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALDH7A1 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CKAP4",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CKAP4 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "DBT",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DBT is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "KCNA2",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNA2 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ALMS1",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALMS1 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "G6PD",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "G6PD is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "HBB",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBB is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CYP21A2",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP21A2 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CLTC",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLTC is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MTHFR",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTHFR is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ATP2A2",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP2A2 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ADRA1D",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA1D is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CYCS",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYCS is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "DARS1",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DARS1 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TCN1",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCN1 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "NDUFS4",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFS4 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "THRB",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THRB is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PSAP",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSAP is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CSTB",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSTB is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "EDNRA",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDNRA is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "AWAT2",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AWAT2 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "HNF1A",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "LMX1A",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMX1A is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SPNS2",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPNS2 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "FAS",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "NFKBIZ",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKBIZ is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CHD7",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD7 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ELP1",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELP1 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CLRN1",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLRN1 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "WDR45",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR45 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CACNA1D",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1D is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC17A8",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC17A8 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "AHR",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHR is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "POU3F4",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU3F4 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SCN8A",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN8A is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CDH23",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH23 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "NRTN",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRTN is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CTSV",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSV is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CTSL",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSL is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SPTBN4",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTBN4 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "BMP4",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP4 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "AIFM1",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIFM1 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "HR",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HR is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC26A4",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC26A4 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PCDH15",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCDH15 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "RPL24",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL24 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRPH2",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRPH2 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "RUNX3",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX3 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SALL4",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SALL4 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "EDARADD",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDARADD is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "IGF1",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ATP2B2",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP2B2 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "FIGN",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FIGN is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "NAGLU",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAGLU is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "TGFB1",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "DMD",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMD is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "BLOC1S6",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLOC1S6 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "FKRP",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKRP is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "EDA",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDA is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "TP73",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP73 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "ESR2",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR2 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "GTF2IRD1",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GTF2IRD1 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "SYNE1",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYNE1 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "DBNL",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DBNL is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "MAPK8IP3",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK8IP3 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "PXDN",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PXDN is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "DNAJC5",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAJC5 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "CELSR3",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELSR3 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZSCAN10",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZSCAN10 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "GJB6",
+      "target": "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJB6 is associated with biotinidase deficiency (BIOTINIDASE_DEFICIENCY). Open Targets association score 0.03"
+    }
+  ]
+}

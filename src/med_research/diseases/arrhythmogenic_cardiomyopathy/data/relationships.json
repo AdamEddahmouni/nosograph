@@ -1,0 +1,670 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL578",
+      "target": "ACE",
+      "type": "TARGETS",
+      "description": "ENALAPRIL targets ACE."
+    },
+    {
+      "source": "CHEMBL1237",
+      "target": "ACE",
+      "type": "TARGETS",
+      "description": "LISINOPRIL ANHYDROUS targets ACE."
+    },
+    {
+      "source": "CHEMBL633",
+      "target": "KCNH2",
+      "type": "TARGETS",
+      "description": "AMIODARONE targets KCNH2."
+    },
+    {
+      "source": "CHEMBL3545157",
+      "target": "GSK3B",
+      "type": "TARGETS",
+      "description": "TIDEGLUSIB targets GSK3B."
+    },
+    {
+      "source": "CHEMBL2105675",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "TREATS",
+      "description": "TAFAMIDIS MEGLUMINE is phase 4 / marketed for arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)."
+    },
+    {
+      "source": "CHEMBL1200778",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "TREATS",
+      "description": "DEXRAZOXANE HYDROCHLORIDE is phase 4 / marketed for arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)."
+    },
+    {
+      "source": "CHEMBL1200778",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "TREATS",
+      "description": "DEXRAZOXANE HYDROCHLORIDE is phase 4 / marketed for arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)."
+    },
+    {
+      "source": "CHEMBL2103837",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "TREATS",
+      "description": "TAFAMIDIS is phase 4 / marketed for arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)."
+    },
+    {
+      "source": "HCN4",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "HCN4 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "KCNH2",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNH2 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "PLN",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "PLN is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "RYR2",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "RYR2 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "SCN5A",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "SCN5A is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "CELF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CELF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "IL18R1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL18R1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1RL1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1RL1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "TGFB3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ABCC9",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC9 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SULT2A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SULT2A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "MRGPRD",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "MRGPRD is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "GSK3B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "GSK3B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "PKP2",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKP2 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.77"
+    },
+    {
+      "source": "DSG2",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSG2 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.71"
+    },
+    {
+      "source": "DSP",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSP is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.67"
+    },
+    {
+      "source": "DSC2",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSC2 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.63"
+    },
+    {
+      "source": "TMEM43",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM43 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.52"
+    },
+    {
+      "source": "DES",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DES is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.51"
+    },
+    {
+      "source": "SCN5A",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN5A is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.49"
+    },
+    {
+      "source": "LMNA",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMNA is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.42"
+    },
+    {
+      "source": "RYR2",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RYR2 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.42"
+    },
+    {
+      "source": "FLNC",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLNC is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.38"
+    },
+    {
+      "source": "MYBPC3",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYBPC3 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.34"
+    },
+    {
+      "source": "CTNNA3",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNA3 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.34"
+    },
+    {
+      "source": "JUP",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JUP is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.33"
+    },
+    {
+      "source": "ACTN2",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTN2 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.27"
+    },
+    {
+      "source": "PLN",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLN is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.19"
+    },
+    {
+      "source": "TGFB3",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB3 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.19"
+    },
+    {
+      "source": "TTN",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTN is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.18"
+    },
+    {
+      "source": "DMD",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMD is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.16"
+    },
+    {
+      "source": "RBM20",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBM20 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.16"
+    },
+    {
+      "source": "LAMA4",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMA4 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.16"
+    },
+    {
+      "source": "MYH7",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH7 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.15"
+    },
+    {
+      "source": "ABCC9",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC9 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.15"
+    },
+    {
+      "source": "ANK2",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK2 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.12"
+    },
+    {
+      "source": "MYH6",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH6 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.12"
+    },
+    {
+      "source": "TRPM4",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPM4 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.12"
+    },
+    {
+      "source": "MYL2",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYL2 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.12"
+    },
+    {
+      "source": "FHL2",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FHL2 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.12"
+    },
+    {
+      "source": "CACNB2",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNB2 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.12"
+    },
+    {
+      "source": "HCN4",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HCN4 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.12"
+    },
+    {
+      "source": "MYOM1",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYOM1 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.12"
+    },
+    {
+      "source": "KCNE1",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNE1 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.12"
+    },
+    {
+      "source": "PLEC",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLEC is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.06"
+    },
+    {
+      "source": "CDH2",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH2 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "STRN",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STRN is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "BIN1",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BIN1 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "NPPB",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPB is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CRP",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "ANKRD1",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKRD1 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNNI3",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNI3 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "NFKB1",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "PPP1R13L",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP1R13L is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "CELF2",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELF2 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "LGALS3",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS3 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "GJA1",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA1 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "CA11",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CA11 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "CA8",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CA8 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "MINDY3",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MINDY3 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL18R1",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL18R1 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "EBI3",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EBI3 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "TP53",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "LDB3",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDB3 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "SETD2",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETD2 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "ACTB",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTB is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "OXT",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OXT is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "TGFB1",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "SORBS2",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORBS2 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "ACE",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SDCBP2",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDCBP2 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SULT2A1",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SULT2A1 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL1RL1",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1RL1 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CASQ2",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASQ2 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.59"
+    },
+    {
+      "source": "TRDN",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRDN is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.57"
+    },
+    {
+      "source": "CALM1",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALM1 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.34"
+    },
+    {
+      "source": "CRADD",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRADD is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.34"
+    },
+    {
+      "source": "DYNC2H1",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYNC2H1 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.34"
+    },
+    {
+      "source": "PRKAR1A",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAR1A is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.27"
+    },
+    {
+      "source": "DMPK",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMPK is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.14"
+    },
+    {
+      "source": "BAG3",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAG3 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.13"
+    },
+    {
+      "source": "RYR1",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RYR1 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.13"
+    },
+    {
+      "source": "KCNH2",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNH2 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.12"
+    },
+    {
+      "source": "RSRP1",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSRP1 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.12"
+    },
+    {
+      "source": "SCN4B",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN4B is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "NKX2-5",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX2-5 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.10"
+    },
+    {
+      "source": "GJA5",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA5 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.10"
+    },
+    {
+      "source": "TBX5",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX5 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.10"
+    },
+    {
+      "source": "TNNC1",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNC1 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.10"
+    },
+    {
+      "source": "TNNT2",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNT2 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.10"
+    },
+    {
+      "source": "ZFPM2",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFPM2 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.10"
+    },
+    {
+      "source": "NEXN",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEXN is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.09"
+    },
+    {
+      "source": "IRX4",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRX4 is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.09"
+    },
+    {
+      "source": "NPPA",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPA is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.09"
+    },
+    {
+      "source": "GSK3B",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSK3B is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.09"
+    },
+    {
+      "source": "MRGPRD",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRGPRD is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.09"
+    },
+    {
+      "source": "HBEGF",
+      "target": "arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBEGF is associated with arrhythmogenic right ventricular cardiomyopathy (ARRHYTHMOGENIC_CARDIOMYOPATHY). Open Targets association score 0.09"
+    }
+  ]
+}

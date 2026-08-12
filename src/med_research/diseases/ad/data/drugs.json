@@ -1,0 +1,82 @@
+{
+  "drugs": [
+    {
+      "id": "donepezil",
+      "name": "Donepezil",
+      "type": "Small Molecule",
+      "target": "ACHE",
+      "mechanism": "Reversible acetylcholinesterase inhibitor that increases cholinergic neurotransmission.",
+      "approval": "FDA Approved (1996)",
+      "route": "Oral",
+      "efficacy": "Symptomatic improvement in mild-to-severe Alzheimer's dementia cognitive scoring.",
+      "category": "Symptomatic / Cholinergic",
+      "disease_evidence": "First-line symptomatic therapy for Alzheimer's disease.",
+      "references": ["PMID:9854728"]
+    },
+    {
+      "id": "memantine",
+      "name": "Memantine",
+      "type": "Small Molecule",
+      "target": "GRIN1",
+      "mechanism": "Uncompetitive low-affinity NMDA receptor antagonist protecting against glutamate-induced excitotoxicity.",
+      "approval": "FDA Approved (2003)",
+      "route": "Oral",
+      "efficacy": "Modest cognitive and functional stabilization in moderate-to-severe AD.",
+      "category": "Symptomatic / Glutamatergic",
+      "disease_evidence": "Approved standard-of-care for moderate-to-severe Alzheimer's disease.",
+      "references": ["PMID:12672860"]
+    },
+    {
+      "id": "lecanemab",
+      "name": "Lecanemab",
+      "type": "Monoclonal Antibody",
+      "target": "APP",
+      "mechanism": "Humanized IgG1 monoclonal antibody binding soluble Abeta protofibrils to clear brain amyloid deposits.",
+      "approval": "FDA Approved (2023)",
+      "route": "Intravenous Infusion",
+      "efficacy": "Slows cognitive decline on CDR-SB by 27% at 18 months in early AD.",
+      "category": "Disease-Modifying / Anti-Amyloid",
+      "disease_evidence": "Disease-modifying biologic targeting amyloid plaques in early AD.",
+      "references": ["PMID:36579184"]
+    },
+    {
+      "id": "donanemab",
+      "name": "Donanemab",
+      "type": "Monoclonal Antibody",
+      "target": "APP",
+      "mechanism": "Monoclonal antibody targeting N3pG-Abeta (pyroglutamate-modified amyloid) to eliminate established plaques.",
+      "approval": "FDA Approved (2024)",
+      "route": "Intravenous Infusion",
+      "efficacy": "Significant reduction in cognitive decline (35% slowing) on iADRS scale.",
+      "category": "Disease-Modifying / Anti-Amyloid",
+      "disease_evidence": "Plaque-clearing biologic approved for early symptomatic Alzheimer's.",
+      "references": ["PMID:37459141"]
+    },
+    {
+      "id": "rivastigmine",
+      "name": "Rivastigmine",
+      "type": "Small Molecule",
+      "target": "ACHE",
+      "mechanism": "Dual pseudo-irreversible inhibitor of acetylcholinesterase and butyrylcholinesterase.",
+      "approval": "FDA Approved (2000)",
+      "route": "Oral / Transdermal Patch",
+      "efficacy": "Provides symptomatic benefit in mild-to-moderate AD.",
+      "category": "Symptomatic / Cholinergic",
+      "disease_evidence": "Standard cholinergic symptomatic treatment.",
+      "references": ["PMID:10741885"]
+    },
+    {
+      "id": "galantamine",
+      "name": "Galantamine",
+      "type": "Small Molecule",
+      "target": "ACHE",
+      "mechanism": "Competitive acetylcholinesterase inhibitor and allosteric modulator of nicotinic acetylcholine receptors.",
+      "approval": "FDA Approved (2001)",
+      "route": "Oral",
+      "efficacy": "Symptomatic cognitive enhancement in mild-to-moderate AD.",
+      "category": "Symptomatic / Cholinergic",
+      "disease_evidence": "Standard cholinergic option.",
+      "references": ["PMID:11159336"]
+    }
+  ]
+}

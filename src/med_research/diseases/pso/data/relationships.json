@@ -1,0 +1,114 @@
+{
+  "disease_id": "pso",
+  "disease_name": "Psoriasis",
+  "relationships": [
+    {
+      "source": "IL23R",
+      "type": "ASSOCIATED_WITH",
+      "target": "Psoriasis",
+      "evidence": "Central genetic risk factor for psoriasis plaques."
+    },
+    {
+      "source": "IL17A",
+      "type": "ASSOCIATED_WITH",
+      "target": "Psoriasis",
+      "evidence": "Key mediator of epidermal hyperplasia and neutrophil recruitment."
+    },
+    {
+      "source": "CARD14",
+      "type": "ASSOCIATED_WITH",
+      "target": "Psoriasis",
+      "evidence": "Keratinocyte-specific activator of NF-kB."
+    },
+    {
+      "source": "TYK2",
+      "type": "ASSOCIATED_WITH",
+      "target": "Psoriasis",
+      "evidence": "Transduces IL-23 signaling in T cells."
+    },
+    {
+      "source": "IL12B",
+      "type": "ASSOCIATED_WITH",
+      "target": "Psoriasis",
+      "evidence": "Encodes p40 subunit of IL-23."
+    },
+    {
+      "source": "bimekizumab",
+      "type": "TREATS",
+      "target": "Psoriasis",
+      "evidence": "Approved disease treatment"
+    },
+    {
+      "source": "bimekizumab",
+      "type": "TARGETS",
+      "target": "IL17A",
+      "evidence": "Dual IL-17A and IL-17F inhibitor mAb"
+    },
+    {
+      "source": "guselkumab",
+      "type": "TREATS",
+      "target": "Psoriasis",
+      "evidence": "Approved disease treatment"
+    },
+    {
+      "source": "guselkumab",
+      "type": "TARGETS",
+      "target": "IL23A",
+      "evidence": "Selective IL-23 p19 subunit inhibitor mAb"
+    },
+    {
+      "source": "risankizumab",
+      "type": "TREATS",
+      "target": "Psoriasis",
+      "evidence": "Approved disease treatment"
+    },
+    {
+      "source": "risankizumab",
+      "type": "TARGETS",
+      "target": "IL23A",
+      "evidence": "High-affinity humanized anti-IL-23 p19 mAb"
+    },
+    {
+      "source": "deucravacitinib",
+      "type": "TREATS",
+      "target": "Psoriasis",
+      "evidence": "Approved disease treatment"
+    },
+    {
+      "source": "deucravacitinib",
+      "type": "TARGETS",
+      "target": "TYK2",
+      "evidence": "Allosteric TYK2 inhibitor"
+    },
+    {
+      "source": "IL23R",
+      "type": "PARTICIPATES_IN",
+      "target": "il23-th17",
+      "evidence": "Key component of IL-23/Th17 Pathway"
+    },
+    {
+      "source": "IL17A",
+      "type": "PARTICIPATES_IN",
+      "target": "il23-th17",
+      "evidence": "Key component of IL-23/Th17 Pathway"
+    },
+    {
+      "source": "IL12B",
+      "type": "PARTICIPATES_IN",
+      "target": "il23-th17",
+      "evidence": "Key component of IL-23/Th17 Pathway"
+    },
+    {
+      "source": "TYK2",
+      "type": "PARTICIPATES_IN",
+      "target": "il23-th17",
+      "evidence": "Key component of IL-23/Th17 Pathway"
+    },
+    {
+      "source": "CARD14",
+      "type": "PARTICIPATES_IN",
+      "target": "nfkb-skin",
+      "evidence": "Key component of NF-kB Signaling"
+    }
+  ]
+}

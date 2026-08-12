@@ -1,0 +1,514 @@
+{
+  "relationships": [
+    {
+      "source": "CRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "C10orf105",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C10orf105 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "GRXCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "GRXCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "COL4A4",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A4 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ZDHHC24",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "ZDHHC24 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "VSIR",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "VSIR is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "CERKL",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "CERKL is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "LRP2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "NMNAT1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "NMNAT1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CDH23",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH23 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.70"
+    },
+    {
+      "source": "PCDH15",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCDH15 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.67"
+    },
+    {
+      "source": "ARSG",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARSG is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.64"
+    },
+    {
+      "source": "CIB2",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIB2 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.61"
+    },
+    {
+      "source": "USH2A",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USH2A is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.59"
+    },
+    {
+      "source": "MYO7A",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO7A is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.59"
+    },
+    {
+      "source": "ADGRV1",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADGRV1 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.58"
+    },
+    {
+      "source": "USH1G",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USH1G is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.56"
+    },
+    {
+      "source": "CLRN1",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLRN1 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.53"
+    },
+    {
+      "source": "C10orf105",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C10orf105 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.53"
+    },
+    {
+      "source": "USH1C",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USH1C is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.53"
+    },
+    {
+      "source": "PDZD7",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDZD7 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.52"
+    },
+    {
+      "source": "WHRN",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WHRN is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.47"
+    },
+    {
+      "source": "OTOP2",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OTOP2 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.46"
+    },
+    {
+      "source": "PROM1",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROM1 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.36"
+    },
+    {
+      "source": "CRB1",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRB1 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.34"
+    },
+    {
+      "source": "SLC9B1",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC9B1 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.34"
+    },
+    {
+      "source": "CEP250",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEP250 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.34"
+    },
+    {
+      "source": "ZDHHC24",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZDHHC24 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.33"
+    },
+    {
+      "source": "MT-CYB",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-CYB is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.33"
+    },
+    {
+      "source": "GUCA1A",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GUCA1A is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.33"
+    },
+    {
+      "source": "BBS1",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BBS1 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.33"
+    },
+    {
+      "source": "MT-ND5",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-ND5 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.33"
+    },
+    {
+      "source": "PRPH2",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRPH2 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.27"
+    },
+    {
+      "source": "LUC7L2",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LUC7L2 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.27"
+    },
+    {
+      "source": "CABP4",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CABP4 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.27"
+    },
+    {
+      "source": "FMC1",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FMC1 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.27"
+    },
+    {
+      "source": "CCDC40",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC40 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.27"
+    },
+    {
+      "source": "HARS1",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HARS1 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.15"
+    },
+    {
+      "source": "PDE6A",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE6A is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.15"
+    },
+    {
+      "source": "PSAP",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSAP is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.12"
+    },
+    {
+      "source": "PAX3",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX3 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.12"
+    },
+    {
+      "source": "CRX",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRX is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.12"
+    },
+    {
+      "source": "HDAC6",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDAC6 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.12"
+    },
+    {
+      "source": "SERPINB6",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINB6 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.12"
+    },
+    {
+      "source": "COCH",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COCH is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.12"
+    },
+    {
+      "source": "COL4A4",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A4 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.12"
+    },
+    {
+      "source": "DGKQ",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DGKQ is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.12"
+    },
+    {
+      "source": "ATP6V1B1",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP6V1B1 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.12"
+    },
+    {
+      "source": "DNAJC5",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAJC5 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CERKL",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CERKL is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "AMELX",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMELX is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "AMELY",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMELY is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "NAA50",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAA50 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "UBR3",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBR3 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEP78",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEP78 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PCARE",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCARE is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADH5",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADH5 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "RP1",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RP1 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ABHD12",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABHD12 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "VSIR",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VSIR is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALDH2",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALDH2 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "GDPD4",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDPD4 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PEX26",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PEX26 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "GJB2",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJB2 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "GRXCR2",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRXCR2 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PEX6",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PEX6 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPE65",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPE65 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "MERTK",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MERTK is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "WDR36",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR36 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ESPN",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESPN is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.56"
+    },
+    {
+      "source": "SLC12A6",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC12A6 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.36"
+    },
+    {
+      "source": "KIF11",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF11 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.12"
+    },
+    {
+      "source": "ZFHX4",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFHX4 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.12"
+    },
+    {
+      "source": "ATP2B2",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP2B2 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "RS1",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RS1 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "PDE6B",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE6B is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "LRP2",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP2 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "LAMA1",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMA1 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "NMNAT1",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NMNAT1 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "MAP3K1",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K1 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "TULP1",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TULP1 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "RPGR",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPGR is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "POU4F3",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU4F3 is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "RHO",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHO is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "SMPX",
+      "target": "Usher syndrome (USHER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMPX is associated with Usher syndrome (USHER_SYNDROME). Open Targets association score 0.10"
+    }
+  ]
+}

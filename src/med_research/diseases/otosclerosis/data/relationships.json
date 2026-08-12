@@ -1,0 +1,580 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL4297744",
+      "target": "RPS12",
+      "type": "TARGETS",
+      "description": "ELX-02 targets RPS12."
+    },
+    {
+      "source": "RUNX2",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "RUNX2 is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "TNFSF11",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF11 is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "GRB10",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "GRB10 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MLH3",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MLH3 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "COL4A2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "RELN",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "RELN is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "RELN",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELN is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "MAML2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MAML2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "LTBP3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "LTBP3",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP3 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF11",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF11 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "ANAPC1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ANAPC1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ACYP1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ACYP1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GRXCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "GRXCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "GRXCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "GRXCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "MEPE",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEPE is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.51"
+    },
+    {
+      "source": "AHSG",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHSG is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.45"
+    },
+    {
+      "source": "LTBP3",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTBP3 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.44"
+    },
+    {
+      "source": "RELN",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELN is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.42"
+    },
+    {
+      "source": "EIF3H",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF3H is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.41"
+    },
+    {
+      "source": "ZC3H11B",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZC3H11B is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.40"
+    },
+    {
+      "source": "MAML2",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAML2 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.38"
+    },
+    {
+      "source": "TRPS1",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPS1 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.37"
+    },
+    {
+      "source": "CFL1",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFL1 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.35"
+    },
+    {
+      "source": "SOX4",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX4 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.35"
+    },
+    {
+      "source": "OSR1",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OSR1 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.35"
+    },
+    {
+      "source": "NOX3",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOX3 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.34"
+    },
+    {
+      "source": "COL4A2",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A2 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.33"
+    },
+    {
+      "source": "EYA2",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EYA2 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.31"
+    },
+    {
+      "source": "IRX5",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRX5 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.30"
+    },
+    {
+      "source": "CKB",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CKB is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.29"
+    },
+    {
+      "source": "FAM20A",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM20A is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "ARHGEF3",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGEF3 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.27"
+    },
+    {
+      "source": "TNFSF11",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF11 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.27"
+    },
+    {
+      "source": "RUNX2",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX2 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.27"
+    },
+    {
+      "source": "LHFPL2",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHFPL2 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "KDR",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "PRKCD",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCD is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "SUPT3H",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUPT3H is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.24"
+    },
+    {
+      "source": "ANAPC1",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANAPC1 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.24"
+    },
+    {
+      "source": "GRB10",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRB10 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.23"
+    },
+    {
+      "source": "CLDN23",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLDN23 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.21"
+    },
+    {
+      "source": "CSF1",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF1 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.21"
+    },
+    {
+      "source": "KCNRG",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNRG is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.19"
+    },
+    {
+      "source": "STX17",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STX17 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.19"
+    },
+    {
+      "source": "AKIP1",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKIP1 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.18"
+    },
+    {
+      "source": "IBSP",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IBSP is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.16"
+    },
+    {
+      "source": "ACYP1",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACYP1 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.16"
+    },
+    {
+      "source": "PTX4",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTX4 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.15"
+    },
+    {
+      "source": "RPS12",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPS12 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.15"
+    },
+    {
+      "source": "ZNRD2",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNRD2 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.13"
+    },
+    {
+      "source": "SEMA4D",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEMA4D is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.12"
+    },
+    {
+      "source": "LHFPL3",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHFPL3 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.12"
+    },
+    {
+      "source": "PSMC2",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMC2 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.12"
+    },
+    {
+      "source": "CCDC97",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC97 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.12"
+    },
+    {
+      "source": "SLC26A5",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC26A5 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.11"
+    },
+    {
+      "source": "DNAJC2",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAJC2 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.11"
+    },
+    {
+      "source": "KAT5",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KAT5 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.11"
+    },
+    {
+      "source": "MLH3",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLH3 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.11"
+    },
+    {
+      "source": "ITPR3",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITPR3 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.11"
+    },
+    {
+      "source": "DMRT1",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMRT1 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.10"
+    },
+    {
+      "source": "ORC5",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ORC5 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.10"
+    },
+    {
+      "source": "TFB1M",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFB1M is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "RAB20",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB20 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "CHD7",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD7 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "EMX2",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EMX2 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "NEK9",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEK9 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "HOXA2",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA2 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "SPP1",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPP1 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "TMEM43",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM43 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "POU3F4",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU3F4 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "IP6K3",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IP6K3 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF11B is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "TFAP2A",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFAP2A is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "MARK3",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MARK3 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "SMARCA4",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA4 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.47"
+    },
+    {
+      "source": "FOXL1",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXL1 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.35"
+    },
+    {
+      "source": "LYZL2",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYZL2 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.24"
+    },
+    {
+      "source": "AKAP11",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKAP11 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.14"
+    },
+    {
+      "source": "UTP23",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UTP23 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.12"
+    },
+    {
+      "source": "UQCC2",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UQCC2 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.10"
+    },
+    {
+      "source": "ATP2B2",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP2B2 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "MYO7A",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO7A is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "POU4F3",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU4F3 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "SMPX",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMPX is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "SLC12A2",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC12A2 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "SLC7A8",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC7A8 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "GRXCR1",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRXCR1 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "MYO6",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO6 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "TMC1",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMC1 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "GRXCR2",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRXCR2 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "CDH23",
+      "target": "otosclerosis (OTOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH23 is associated with otosclerosis (OTOSCLEROSIS). Open Targets association score 0.09"
+    }
+  ]
+}

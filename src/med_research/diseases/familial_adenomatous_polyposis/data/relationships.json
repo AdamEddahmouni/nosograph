@@ -1,0 +1,862 @@
+{
+  "relationships": [
+    {
+      "source": "CACNA1A",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1A is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "KCNQ2",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNQ2 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "CDKN1C",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1C is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKL5",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKL5 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "SERPING1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "SERPING1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "SLC2A1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "LRP6",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP6 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "FGF10",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF10 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "FGF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ADAM17",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAM17 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL2A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL2A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GLI3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "SMOC1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SMOC1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "BMP7",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP7 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FRAS1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FRAS1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CHUK",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CHUK is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "TGFA",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFA is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "IRF6",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF6 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "CTNS",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNS is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.56"
+    },
+    {
+      "source": "SCN1A",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN1A is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.56"
+    },
+    {
+      "source": "ARID1B",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1B is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.56"
+    },
+    {
+      "source": "MECP2",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MECP2 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.56"
+    },
+    {
+      "source": "SYNGAP1",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYNGAP1 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.56"
+    },
+    {
+      "source": "ANKRD11",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKRD11 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.56"
+    },
+    {
+      "source": "PKD1",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKD1 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.55"
+    },
+    {
+      "source": "KMT2A",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2A is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.55"
+    },
+    {
+      "source": "CHD7",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD7 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.55"
+    },
+    {
+      "source": "KMT2D",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.55"
+    },
+    {
+      "source": "CACNA1A",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1A is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.55"
+    },
+    {
+      "source": "SCN2A",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN2A is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.55"
+    },
+    {
+      "source": "KCNQ2",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNQ2 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.55"
+    },
+    {
+      "source": "SPG11",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPG11 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.55"
+    },
+    {
+      "source": "DDX3X",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDX3X is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.55"
+    },
+    {
+      "source": "ATP7B",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP7B is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.55"
+    },
+    {
+      "source": "VPS13B",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VPS13B is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.55"
+    },
+    {
+      "source": "STXBP1",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STXBP1 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.55"
+    },
+    {
+      "source": "PAH",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAH is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.55"
+    },
+    {
+      "source": "NSD1",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSD1 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.55"
+    },
+    {
+      "source": "DHCR7",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHCR7 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.55"
+    },
+    {
+      "source": "CHD2",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD2 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.55"
+    },
+    {
+      "source": "TCF4",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF4 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.55"
+    },
+    {
+      "source": "POLG",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLG is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.55"
+    },
+    {
+      "source": "CREBBP",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.55"
+    },
+    {
+      "source": "SCN8A",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN8A is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.55"
+    },
+    {
+      "source": "MED13L",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MED13L is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.55"
+    },
+    {
+      "source": "ZEB2",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB2 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.55"
+    },
+    {
+      "source": "CDKL5",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKL5 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.55"
+    },
+    {
+      "source": "EP300",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EP300 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.55"
+    },
+    {
+      "source": "FIG4",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FIG4 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.55"
+    },
+    {
+      "source": "KAT6A",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KAT6A is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.55"
+    },
+    {
+      "source": "SLC2A1",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A1 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.55"
+    },
+    {
+      "source": "DYRK1A",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYRK1A is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.55"
+    },
+    {
+      "source": "RYR1",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RYR1 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.55"
+    },
+    {
+      "source": "ABCD1",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCD1 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.55"
+    },
+    {
+      "source": "SATB2",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SATB2 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.54"
+    },
+    {
+      "source": "PCDH19",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCDH19 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.54"
+    },
+    {
+      "source": "POGZ",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POGZ is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.54"
+    },
+    {
+      "source": "CHD8",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD8 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.54"
+    },
+    {
+      "source": "GJB1",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJB1 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.54"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.54"
+    },
+    {
+      "source": "MPZ",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPZ is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.54"
+    },
+    {
+      "source": "PURA",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PURA is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.54"
+    },
+    {
+      "source": "ASPM",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASPM is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.54"
+    },
+    {
+      "source": "SERPING1",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPING1 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.54"
+    },
+    {
+      "source": "SON",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SON is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.54"
+    },
+    {
+      "source": "ADNP",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADNP is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.54"
+    },
+    {
+      "source": "DEPDC5",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEPDC5 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.54"
+    },
+    {
+      "source": "IGHMBP2",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGHMBP2 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.54"
+    },
+    {
+      "source": "UBE3A",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBE3A is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.54"
+    },
+    {
+      "source": "KDM5C",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM5C is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.54"
+    },
+    {
+      "source": "SLC12A3",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC12A3 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.54"
+    },
+    {
+      "source": "FOXG1",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXG1 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.54"
+    },
+    {
+      "source": "SHANK3",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHANK3 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.54"
+    },
+    {
+      "source": "FOXP1",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP1 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.54"
+    },
+    {
+      "source": "ASXL3",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASXL3 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.54"
+    },
+    {
+      "source": "NIPBL",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NIPBL is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.54"
+    },
+    {
+      "source": "MFN2",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MFN2 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.54"
+    },
+    {
+      "source": "EHMT1",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EHMT1 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.54"
+    },
+    {
+      "source": "APC",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.76"
+    },
+    {
+      "source": "MBD4",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MBD4 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.53"
+    },
+    {
+      "source": "TTR",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTR is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.46"
+    },
+    {
+      "source": "MUTYH",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUTYH is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.12"
+    },
+    {
+      "source": "EDA",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDA is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "FGFR2",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "EDNRA",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDNRA is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "ZEB1",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "CHUK",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHUK is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "SFN",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFN is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "GLI3",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI3 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ALX1",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALX1 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRICKLE1",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRICKLE1 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "COL2A1",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL2A1 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "BMP7",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP7 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXC1",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC1 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "DLX5",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLX5 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "IRF6",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF6 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ROR2",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROR2 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXE3",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXE3 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "FGFR3",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "GSC",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSC is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "FRAS1",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FRAS1 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ADAM17",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAM17 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "TMEM107",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM107 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "MKS1",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKS1 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "RSPO2",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO2 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "FGF9",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF9 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CRKL",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRKL is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "TCOF1",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCOF1 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "TGFA",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFA is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "EGFR",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "SMOC1",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMOC1 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "VAX1",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VAX1 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "TP63",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "PTCH1",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "SOX11",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX11 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "AWAT2",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AWAT2 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "LRP6",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP6 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "FGFR1",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "MSX1",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSX1 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CDKN1C",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1C is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "TBX1",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX1 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "HOXA2",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA2 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "PKDCC",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKDCC is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "PSIP1",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSIP1 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "FGF10",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF10 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "SIX1",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIX1 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "FUZ",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUZ is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "SH3PXD2B",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH3PXD2B is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ZIC3",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZIC3 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "FREM1",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FREM1 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "PAX9",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX9 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CDON",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDON is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXC2",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC2 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "DLX2",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLX2 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "NKX3-2",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX3-2 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "PITX2",
+      "target": "classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITX2 is associated with classic familial adenomatous polyposis (FAMILIAL_ADENOMATOUS_POLYPOSIS). Open Targets association score 0.05"
+    }
+  ]
+}

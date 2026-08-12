@@ -1,0 +1,36 @@
+{
+  "profiles": [
+    {
+      "drug_id": "donepezil",
+      "disease_symptoms_overlap": ["nausea", "diarrhea", "insomnia", "muscle cramps", "bradycardia"],
+      "severity_burden": "moderate",
+      "chronic_safety_score": 7.5,
+      "black_box_warnings": [],
+      "monitoring_required": "Heart rate monitoring for syncope/bradycardia."
+    },
+    {
+      "drug_id": "memantine",
+      "disease_symptoms_overlap": ["dizziness", "headache", "confusion", "constipation"],
+      "severity_burden": "low",
+      "chronic_safety_score": 8.5,
+      "black_box_warnings": [],
+      "monitoring_required": "Renal function monitoring."
+    },
+    {
+      "drug_id": "lecanemab",
+      "disease_symptoms_overlap": ["infusion reactions", "headache", "visual disturbance", "dizziness"],
+      "severity_burden": "high",
+      "chronic_safety_score": 6.0,
+      "black_box_warnings": ["Amyloid Related Imaging Abnormalities (ARIA-E / ARIA-H)"],
+      "monitoring_required": "Periodic brain MRI monitoring for edema and microhemorrhage."
+    },
+    {
+      "drug_id": "donanemab",
+      "disease_symptoms_overlap": ["infusion reactions", "headache", "confusion"],
+      "severity_burden": "high",
+      "chronic_safety_score": 6.0,
+      "black_box_warnings": ["Amyloid Related Imaging Abnormalities (ARIA)"],
+      "monitoring_required": "Brain MRI safety monitoring prior to infusions."
+    }
+  ]
+}

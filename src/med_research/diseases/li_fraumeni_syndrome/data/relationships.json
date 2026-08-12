@@ -1,0 +1,820 @@
+{
+  "relationships": [
+    {
+      "source": "BECN1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "BECN1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CDKN1C",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1C is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2C",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2C is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "EAF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "EAF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "NF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "BRCA2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "CHEK2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "CHEK2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "FANCD2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "FANCD2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MLH1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MLH1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KITLG",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KITLG is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "HACE1",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "HACE1 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "LTBP4",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP4 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "SMAD4",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD4 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ADAMTS18",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS18 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "PDX1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PDX1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "THRB",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THRB is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "THRB",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "THRB is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "LTBP4",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP4 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "CYP11A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP11A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.88"
+    },
+    {
+      "source": "CHEK2",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHEK2 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.67"
+    },
+    {
+      "source": "MDM2",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDM2 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.39"
+    },
+    {
+      "source": "WRAP53",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WRAP53 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.18"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "MEN1",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEN1 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "PTEN",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "NF2",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF2 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "KRAS",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "MSH2",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH2 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "APC",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "BAP1",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAP1 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "TP73",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP73 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "PTCH1",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "MET",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "MLH1",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLH1 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "STK11",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK11 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "TRIM62",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM62 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "NF1",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "RB1",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "TNK1",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNK1 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "SMAD4",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD4 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PRDM2",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM2 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PRDX1",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDX1 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "EAF2",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EAF2 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "SMARCB1",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCB1 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "CDKN1A",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1A is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "CUL9",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUL9 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "POLD1",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLD1 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "HTATIP2",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTATIP2 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "DND1",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DND1 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PRKAR1A",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAR1A is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "LZTS1",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LZTS1 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "KITLG",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KITLG is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "BECN1",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BECN1 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "FBXO4",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXO4 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PPP2R1A",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP2R1A is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "NDRG2",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDRG2 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "TSC1",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC1 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "LMO7",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMO7 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "MCM9",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCM9 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "CTSG",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSG is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PMS2",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PMS2 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "MCM4",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCM4 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "WWOX",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WWOX is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "FHIT",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FHIT is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "ATM",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "FANCD2",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCD2 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "DCLRE1A",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCLRE1A is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "DNAI7",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAI7 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "BUB1B",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BUB1B is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "BUB1B-PAK6",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BUB1B-PAK6 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "BUB1",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BUB1 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "HIC1",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIC1 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "HELQ",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HELQ is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "HACE1",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HACE1 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CDKN2C",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2C is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SPI1",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPI1 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "GPRC5A",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPRC5A is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SAMD9L",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAMD9L is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SUPT16H",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUPT16H is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.12"
+    },
+    {
+      "source": "TES",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TES is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "TFF1",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFF1 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "RET",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "LTBP4",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTBP4 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "NUDT1",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUDT1 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "PAX6",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX6 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "ATP4A",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP4A is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "HOXA5",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA5 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "NR3C1",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "RNF43",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF43 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "GAST",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAST is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TTC7A",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTC7A is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "THRB",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THRB is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "NKX2-1",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX2-1 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "BRCA2",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA2 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PLG",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLG is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FEM1A",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FEM1A is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SPTBN1",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTBN1 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "NBN",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBN is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC9A4",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC9A4 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "INHA",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INHA is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SIRT2",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIRT2 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "NEUROG3",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEUROG3 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TGFB1",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "LPO",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPO is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TPX2",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPX2 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CDX2",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDX2 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PGBD1",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGBD1 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PGBD2",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGBD2 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXL1",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXL1 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CYP11A1",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP11A1 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "GFI1B",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFI1B is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TMEM248",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM248 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRKDC",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKDC is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FGFR2",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PDX1",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDX1 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CDKN1C",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1C is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "ERRFI1",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERRFI1 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PDCD6IP",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD6IP is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRLR",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRLR is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "LHCGR",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHCGR is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ADAMTS18",
+      "target": "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS18 is associated with Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME). Open Targets association score 0.04"
+    }
+  ]
+}

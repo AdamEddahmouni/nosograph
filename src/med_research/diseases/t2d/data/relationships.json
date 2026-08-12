@@ -1,0 +1,108 @@
+{
+  "disease_id": "t2d",
+  "disease_name": "Type 2 Diabetes",
+  "relationships": [
+    {
+      "source": "TCF7L2",
+      "type": "ASSOCIATED_WITH",
+      "target": "Type 2 Diabetes",
+      "evidence": "Strongest common genetic locus associated with T2D risk."
+    },
+    {
+      "source": "PPARG",
+      "type": "ASSOCIATED_WITH",
+      "target": "Type 2 Diabetes",
+      "evidence": "Master regulator of adipogenesis and insulin sensitivity."
+    },
+    {
+      "source": "KCNJ11",
+      "type": "ASSOCIATED_WITH",
+      "target": "Type 2 Diabetes",
+      "evidence": "Encodes Kir6.2 subunit of beta-cell KATP channel."
+    },
+    {
+      "source": "SLC30A8",
+      "type": "ASSOCIATED_WITH",
+      "target": "Type 2 Diabetes",
+      "evidence": "Zinc transporter ZnT8 critical for insulin crystallization."
+    },
+    {
+      "source": "GLP1R",
+      "type": "ASSOCIATED_WITH",
+      "target": "Type 2 Diabetes",
+      "evidence": "Primary therapeutic target for incretin mimetics."
+    },
+    {
+      "source": "metformin",
+      "type": "TREATS",
+      "target": "Type 2 Diabetes",
+      "evidence": "Approved disease treatment"
+    },
+    {
+      "source": "metformin",
+      "type": "TARGETS",
+      "target": "PRKAA1",
+      "evidence": "AMPK activator suppressing hepatic gluconeogenesis"
+    },
+    {
+      "source": "semaglutide",
+      "type": "TREATS",
+      "target": "Type 2 Diabetes",
+      "evidence": "Approved disease treatment"
+    },
+    {
+      "source": "semaglutide",
+      "type": "TARGETS",
+      "target": "GLP1R",
+      "evidence": "GLP-1 receptor agonist enhancing glucose-dependent insulin secretion"
+    },
+    {
+      "source": "empagliflozin",
+      "type": "TREATS",
+      "target": "Type 2 Diabetes",
+      "evidence": "Approved disease treatment"
+    },
+    {
+      "source": "empagliflozin",
+      "type": "TARGETS",
+      "target": "SLC5A2",
+      "evidence": "SGLT2 inhibitor reducing renal glucose reabsorption"
+    },
+    {
+      "source": "tirzepatide",
+      "type": "TREATS",
+      "target": "Type 2 Diabetes",
+      "evidence": "Approved disease treatment"
+    },
+    {
+      "source": "tirzepatide",
+      "type": "TARGETS",
+      "target": "GLP1R",
+      "evidence": "Dual GIP and GLP-1 receptor agonist"
+    },
+    {
+      "source": "tirzepatide",
+      "type": "TARGETS",
+      "target": "GIPR",
+      "evidence": "Dual GIP and GLP-1 receptor agonist"
+    },
+    {
+      "source": "GLP1R",
+      "type": "PARTICIPATES_IN",
+      "target": "incretin-response",
+      "evidence": "Key component of Incretin Hormone Response"
+    },
+    {
+      "source": "TCF7L2",
+      "type": "PARTICIPATES_IN",
+      "target": "incretin-response",
+      "evidence": "Key component of Incretin Hormone Response"
+    },
+    {
+      "source": "PPARG",
+      "type": "PARTICIPATES_IN",
+      "target": "insulin-signaling",
+      "evidence": "Key component of Insulin Receptor Signaling"
+    }
+  ]
+}

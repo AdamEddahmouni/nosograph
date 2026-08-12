@@ -1,0 +1,616 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1639",
+      "target": "REN",
+      "type": "TARGETS",
+      "description": "ALISKIREN targets REN."
+    },
+    {
+      "source": "CHEMBL1513",
+      "target": "AGTR1",
+      "type": "TARGETS",
+      "description": "IRBESARTAN targets AGTR1."
+    },
+    {
+      "source": "CHEMBL24",
+      "target": "ADRB1",
+      "type": "TARGETS",
+      "description": "ATENOLOL targets ADRB1."
+    },
+    {
+      "source": "CHEMBL1200699",
+      "target": "MMP8",
+      "type": "TARGETS",
+      "description": "DOXYCYCLINE targets MMP8."
+    },
+    {
+      "source": "CHEMBL191",
+      "target": "AGTR1",
+      "type": "TARGETS",
+      "description": "LOSARTAN targets AGTR1."
+    },
+    {
+      "source": "CHEMBL1581",
+      "target": "ACE",
+      "type": "TARGETS",
+      "description": "PERINDOPRIL targets ACE."
+    },
+    {
+      "source": "CHEMBL434394",
+      "target": "ADRB1",
+      "type": "TARGETS",
+      "description": "NEBIVOLOL targets ADRB1."
+    },
+    {
+      "source": "ADRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "ADRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "FGF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ADAM17",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAM17 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL11A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL11A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL1A2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL1A2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL2A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL2A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL3A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL3A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL5A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL5A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL5A2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL5A2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "LOX",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "LOX is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP13",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP13 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP7",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP7 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP8",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP8 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GLI3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "BMP7",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP7 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CHUK",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CHUK is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "AGTR1",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGTR1 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "REN",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "REN is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "FBN1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "FBN1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "FBN2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "FBN2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "LTBP2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFBR1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFBR2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFBR1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFBR2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "LTBP2",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP2 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "FBN1",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBN1 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.90"
+    },
+    {
+      "source": "TGFBR2",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFBR2 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.76"
+    },
+    {
+      "source": "TGFBR1",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFBR1 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.52"
+    },
+    {
+      "source": "CBS",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBS is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.42"
+    },
+    {
+      "source": "AGTR1",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGTR1 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.38"
+    },
+    {
+      "source": "LTBP2",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTBP2 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.36"
+    },
+    {
+      "source": "ACTA2",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTA2 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.34"
+    },
+    {
+      "source": "STAMBPL1",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAMBPL1 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.34"
+    },
+    {
+      "source": "ADRB1",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB1 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.34"
+    },
+    {
+      "source": "FBN2",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBN2 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.33"
+    },
+    {
+      "source": "CEP152",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEP152 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.33"
+    },
+    {
+      "source": "TGFB2",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB2 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.29"
+    },
+    {
+      "source": "COL2A1",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL2A1 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.28"
+    },
+    {
+      "source": "ACE",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "REN",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REN is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "ADRB2",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB2 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "COL5A2",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL5A2 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.18"
+    },
+    {
+      "source": "MYH11",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH11 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.15"
+    },
+    {
+      "source": "COL11A1",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL11A1 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.13"
+    },
+    {
+      "source": "FLNA",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLNA is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.13"
+    },
+    {
+      "source": "COL5A1",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL5A1 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.12"
+    },
+    {
+      "source": "COL1A2",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL1A2 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.12"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.12"
+    },
+    {
+      "source": "FLII",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLII is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.12"
+    },
+    {
+      "source": "COL3A1",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL3A1 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.11"
+    },
+    {
+      "source": "MYLK",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYLK is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.11"
+    },
+    {
+      "source": "TULP4",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TULP4 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.11"
+    },
+    {
+      "source": "TGFB1",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "MMP13",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP13 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "MMP1",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP1 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "MMP8",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP8 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "MMP7",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP7 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "FOXC1",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC1 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "PCSK5",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK5 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "NF1",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "ADAM17",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAM17 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "FGF9",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF9 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "VEGFA",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "SH3PXD2B",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH3PXD2B is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "CHUK",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHUK is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "BMP7",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP7 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "HSPG2",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPG2 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "FGFR2",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "RPGRIP1L",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPGRIP1L is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "ROR2",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROR2 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "SOX11",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX11 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "PDGFRB",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "LOX",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LOX is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "FOXC2",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC2 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "PRRX1",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRRX1 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "FBLN1",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBLN1 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "CCN2",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCN2 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "CCN3",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCN3 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "GLI3",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI3 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "IFT25",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFT25 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "MKS1",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKS1 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "TBC1D32",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBC1D32 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "EFEMP2",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EFEMP2 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "CPLANE1",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPLANE1 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "PAX9",
+      "target": "Marfan syndrome (MARFAN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX9 is associated with Marfan syndrome (MARFAN_SYNDROME). Open Targets association score 0.07"
+    }
+  ]
+}

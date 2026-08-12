@@ -1,0 +1,910 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201438",
+      "target": "IL2RA",
+      "type": "TARGETS",
+      "description": "ALDESLEUKIN targets IL2RA."
+    },
+    {
+      "source": "CHEMBL1201438",
+      "target": "IL2RB",
+      "type": "TARGETS",
+      "description": "ALDESLEUKIN targets IL2RB."
+    },
+    {
+      "source": "CHEMBL1201823",
+      "target": "CD86",
+      "type": "TARGETS",
+      "description": "ABATACEPT targets CD86."
+    },
+    {
+      "source": "CHEMBL1201823",
+      "target": "CD80",
+      "type": "TARGETS",
+      "description": "ABATACEPT targets CD80."
+    },
+    {
+      "source": "CHEMBL1237022",
+      "target": "IL6R",
+      "type": "TARGETS",
+      "description": "TOCILIZUMAB targets IL6R."
+    },
+    {
+      "source": "CHEMBL1201580",
+      "target": "TNF",
+      "type": "TARGETS",
+      "description": "ADALIMUMAB targets TNF."
+    },
+    {
+      "source": "CHEMBL3622821",
+      "target": "JAK1",
+      "type": "TARGETS",
+      "description": "UPADACITINIB targets JAK1."
+    },
+    {
+      "source": "CHEMBL1201581",
+      "target": "TNF",
+      "type": "TARGETS",
+      "description": "INFLIXIMAB targets TNF."
+    },
+    {
+      "source": "CHEMBL1542",
+      "target": "PPAT",
+      "type": "TARGETS",
+      "description": "AZATHIOPRINE targets PPAT."
+    },
+    {
+      "source": "CHEMBL34259",
+      "target": "DHFR",
+      "type": "TARGETS",
+      "description": "METHOTREXATE targets DHFR."
+    },
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "HLA-DRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "HLA-DRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "F2R",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "F2R is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SULF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SULF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TMEFF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TMEFF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TFRC",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "TFRC is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6R",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6R is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD80",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD80 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD86",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD86 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTPN22",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PTPN22 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LTBP4",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP4 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "ADAM17",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAM17 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ADAMTSL2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTSL2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "SHH",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SHH is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "JAK1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "JAK3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "TYK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "TYK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFRL1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFRL1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFKBIZ",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKBIZ is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "FBN1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "FBN1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "LTBP4",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP4 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFA",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFA is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "IL6R",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6R is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "IL2RB",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RB is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "IL2RA",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RA is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "CD80",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD80 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD86",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD86 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "MATN1",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MATN1 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNF",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "COMP",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COMP is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "UBA1",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBA1 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MIF",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MIF is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL10",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRTN3",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRTN3 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD79A",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALB",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ARSL",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARSL is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRP",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "SULF2",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SULF2 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MGP",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MGP is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATN1",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATN1 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "SULF1",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SULF1 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYGB",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYGB is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL2",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADA",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADA is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTPN22",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN22 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD4",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD1D",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD1D is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD8A",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "HLA-B",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-B is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "HLA-DRB1",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DRB1 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "RBM45",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBM45 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "GFAP",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFAP is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TFRC",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFRC is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TXNRD2",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TXNRD2 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDR2",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDR2 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TXNRD1",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TXNRD1 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TMEFF2",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEFF2 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "F2R",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F2R is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TREM1",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TREM1 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL6",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "AQP4",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP4 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MOG",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MOG is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ENO1",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENO1 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "OMG",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OMG is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "BCHE",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCHE is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "DUSP4",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DUSP4 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ENOPH1",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENOPH1 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SGCG",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGCG is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PPAT",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPAT is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "IL2RG",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RG is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "DHFR",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHFR is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "FBN1",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBN1 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "ADAM17",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAM17 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "JAK1",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK1 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "JAK3",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK3 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "TYK2",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYK2 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "JAK2",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "AWAT2",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AWAT2 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXP3",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "FGFR2",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "FAS",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "DSG3",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSG3 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "NFKBIZ",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKBIZ is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "AIRE",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIRE is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "EDA",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDA is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "EDNRA",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDNRA is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CHD7",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD7 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "TBX1",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX1 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "FBLN1",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBLN1 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "PLG",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLG is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "PITX2",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITX2 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "LTBP4",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTBP4 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "HOXA5",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA5 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "TGFA",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFA is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "SH3PXD2B",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH3PXD2B is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "TREX1",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TREX1 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "COL4A1",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A1 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "IDUA",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDUA is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ENPP1",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENPP1 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "MKS1",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKS1 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "BRAF",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CTSV",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSV is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CTSL",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSL is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ADAMTSL2",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTSL2 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXE3",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXE3 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "RXRA",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RXRA is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXC1",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC1 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "BCL2",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TGFB2",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB2 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TOM1L2",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TOM1L2 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "DLX5",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLX5 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTGS2",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CEBPE",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEBPE is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL4A3",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A3 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGFRL1",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFRL1 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "HEY2",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEY2 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "LMNA",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMNA is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CRIM1",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRIM1 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "KL",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KL is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PSIP1",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSIP1 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TBC1D32",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBC1D32 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "VEGFA",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "MPZL3",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPZL3 is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "SHH",
+      "target": "relapsing polychondritis (RELAPSING_POLYCHONDRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHH is associated with relapsing polychondritis (RELAPSING_POLYCHONDRITIS). Open Targets association score 0.04"
+    }
+  ]
+}

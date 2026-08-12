@@ -1,0 +1,706 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL578",
+      "target": "ACE",
+      "type": "TARGETS",
+      "description": "ENALAPRIL targets ACE."
+    },
+    {
+      "source": "CHEMBL79",
+      "target": "SCN5A",
+      "type": "TARGETS",
+      "description": "LIDOCAINE targets SCN5A."
+    },
+    {
+      "source": "KCNH5",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNH5 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "HCN1",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "HCN1 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "HCN4",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "HCN4 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "RYR2",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "RYR2 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "SCN5A",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "SCN5A is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "COL5A2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL5A2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ABCC8",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC8 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "ABCC8",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC8 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ARHGEF10",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ARHGEF10 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "BMP2",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP2 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "TGFB2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "NKX2-5",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX2-5 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.80"
+    },
+    {
+      "source": "TBX20",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX20 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.78"
+    },
+    {
+      "source": "TLL1",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLL1 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.70"
+    },
+    {
+      "source": "DIPK1A",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DIPK1A is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.34"
+    },
+    {
+      "source": "RPL5",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL5 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.34"
+    },
+    {
+      "source": "DMD",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMD is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.34"
+    },
+    {
+      "source": "TBX5",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX5 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.28"
+    },
+    {
+      "source": "SMARCA4",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA4 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.27"
+    },
+    {
+      "source": "CHD7",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD7 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.27"
+    },
+    {
+      "source": "HDAC8",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDAC8 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.27"
+    },
+    {
+      "source": "ABCC8",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC8 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.27"
+    },
+    {
+      "source": "CREBBP",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.27"
+    },
+    {
+      "source": "SETBP1",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETBP1 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.27"
+    },
+    {
+      "source": "ACTL6A",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTL6A is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.27"
+    },
+    {
+      "source": "TBCK",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBCK is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.26"
+    },
+    {
+      "source": "STX18",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STX18 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.21"
+    },
+    {
+      "source": "ACTC1",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTC1 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.20"
+    },
+    {
+      "source": "MYH6",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH6 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.20"
+    },
+    {
+      "source": "CDC27",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDC27 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.16"
+    },
+    {
+      "source": "CUL9",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUL9 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.15"
+    },
+    {
+      "source": "CYFIP1",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYFIP1 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.15"
+    },
+    {
+      "source": "OBSL1",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OBSL1 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.15"
+    },
+    {
+      "source": "GATA4",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA4 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.14"
+    },
+    {
+      "source": "COL5A2",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL5A2 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.12"
+    },
+    {
+      "source": "HUWE1",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HUWE1 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.12"
+    },
+    {
+      "source": "RYR1",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RYR1 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.12"
+    },
+    {
+      "source": "MN1",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MN1 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.12"
+    },
+    {
+      "source": "ERF",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERF is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.12"
+    },
+    {
+      "source": "SOS1",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOS1 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.11"
+    },
+    {
+      "source": "MYLK",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYLK is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.11"
+    },
+    {
+      "source": "RYR2",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RYR2 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.08"
+    },
+    {
+      "source": "FBLN1",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBLN1 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.08"
+    },
+    {
+      "source": "SCN5A",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN5A is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.08"
+    },
+    {
+      "source": "EDN1",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDN1 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.07"
+    },
+    {
+      "source": "CASQ2",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASQ2 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.07"
+    },
+    {
+      "source": "CITED2",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CITED2 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.07"
+    },
+    {
+      "source": "RBM20",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBM20 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.07"
+    },
+    {
+      "source": "GJA1",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA1 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.07"
+    },
+    {
+      "source": "ACE",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.07"
+    },
+    {
+      "source": "GJA5",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA5 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.07"
+    },
+    {
+      "source": "FKBP1B",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKBP1B is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.07"
+    },
+    {
+      "source": "HEY2",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEY2 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.07"
+    },
+    {
+      "source": "CCN1",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCN1 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.07"
+    },
+    {
+      "source": "TBX3",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX3 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.07"
+    },
+    {
+      "source": "DES",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DES is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.07"
+    },
+    {
+      "source": "PITX2",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITX2 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.06"
+    },
+    {
+      "source": "NTF3",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTF3 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.06"
+    },
+    {
+      "source": "HCN4",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HCN4 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.06"
+    },
+    {
+      "source": "NDUFA6",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFA6 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.06"
+    },
+    {
+      "source": "ANK2",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK2 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.06"
+    },
+    {
+      "source": "ZFPM2",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFPM2 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.06"
+    },
+    {
+      "source": "PLXND1",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLXND1 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.06"
+    },
+    {
+      "source": "HCN1",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HCN1 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.06"
+    },
+    {
+      "source": "ECE1",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ECE1 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.06"
+    },
+    {
+      "source": "SEMA3D",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEMA3D is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.06"
+    },
+    {
+      "source": "MECP2",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MECP2 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.06"
+    },
+    {
+      "source": "DNAH11",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAH11 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.06"
+    },
+    {
+      "source": "DSG2",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSG2 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.06"
+    },
+    {
+      "source": "LMNA",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMNA is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.06"
+    },
+    {
+      "source": "TAB1",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAB1 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.06"
+    },
+    {
+      "source": "GATA6",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA6 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.75"
+    },
+    {
+      "source": "PTPN11",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN11 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.36"
+    },
+    {
+      "source": "FOXP1",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP1 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.35"
+    },
+    {
+      "source": "SEC24B",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEC24B is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.35"
+    },
+    {
+      "source": "TGFB2",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB2 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.35"
+    },
+    {
+      "source": "BMP2",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP2 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.35"
+    },
+    {
+      "source": "PSMC3",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMC3 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.34"
+    },
+    {
+      "source": "VSIG10",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VSIG10 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.32"
+    },
+    {
+      "source": "KIF16B",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF16B is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.29"
+    },
+    {
+      "source": "KCNH5",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNH5 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.29"
+    },
+    {
+      "source": "TMTC4",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMTC4 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.29"
+    },
+    {
+      "source": "HSD17B2",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSD17B2 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.29"
+    },
+    {
+      "source": "EDIL3",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDIL3 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.29"
+    },
+    {
+      "source": "SEMA3C",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEMA3C is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.29"
+    },
+    {
+      "source": "PGGT1B",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGGT1B is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.29"
+    },
+    {
+      "source": "CCDC85A",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC85A is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.29"
+    },
+    {
+      "source": "SNAI1",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNAI1 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.29"
+    },
+    {
+      "source": "ASTN2",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASTN2 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.29"
+    },
+    {
+      "source": "ZRANB3",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZRANB3 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.27"
+    },
+    {
+      "source": "DNAAF4",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAAF4 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.27"
+    },
+    {
+      "source": "TPM1",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPM1 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.27"
+    },
+    {
+      "source": "TNIP3",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNIP3 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.27"
+    },
+    {
+      "source": "TAB2",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAB2 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.27"
+    },
+    {
+      "source": "MRPL47",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRPL47 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.27"
+    },
+    {
+      "source": "PXDNL",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PXDNL is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.26"
+    },
+    {
+      "source": "RIT2",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIT2 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.26"
+    },
+    {
+      "source": "DDX60",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDX60 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.26"
+    },
+    {
+      "source": "STEAP2",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STEAP2 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.26"
+    },
+    {
+      "source": "PER3",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PER3 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.25"
+    },
+    {
+      "source": "ROBO1",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROBO1 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.25"
+    },
+    {
+      "source": "CCDC85C",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC85C is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.25"
+    },
+    {
+      "source": "SHANK2",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHANK2 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.25"
+    },
+    {
+      "source": "MACROD2",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MACROD2 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.25"
+    },
+    {
+      "source": "FMN1",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FMN1 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.25"
+    },
+    {
+      "source": "AKR1C1",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKR1C1 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.24"
+    },
+    {
+      "source": "NETO1",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NETO1 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.24"
+    },
+    {
+      "source": "DUSP10",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DUSP10 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.24"
+    },
+    {
+      "source": "DIP2B",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DIP2B is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.24"
+    },
+    {
+      "source": "ARHGEF10",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGEF10 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.24"
+    },
+    {
+      "source": "VIPR2",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VIPR2 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.24"
+    },
+    {
+      "source": "FOXA2",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXA2 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.24"
+    },
+    {
+      "source": "GPR26",
+      "target": "atrial septal defect (ATRIAL_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR26 is associated with atrial septal defect (ATRIAL_SEPTAL_DEFECT). Open Targets association score 0.24"
+    }
+  ]
+}

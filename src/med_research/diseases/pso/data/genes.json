@@ -1,0 +1,66 @@
+{
+  "disease_id": "pso",
+  "disease_name": "Psoriasis",
+  "genes": [
+    {
+      "id": "IL23R",
+      "symbol": "IL23R",
+      "name": "Interleukin 23 Receptor",
+      "category": "IL-23 / Th17 Signaling",
+      "association_score": 0.94,
+      "odds_ratio": 2.3,
+      "disease_evidence": "Central genetic risk factor for psoriasis plaques.",
+      "gwas_pvalue": 1e-55,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "IL17A",
+      "symbol": "IL17A",
+      "name": "Interleukin 17A",
+      "category": "IL-23 / Th17 Signaling",
+      "association_score": 0.96,
+      "odds_ratio": 2.5,
+      "disease_evidence": "Key mediator of epidermal hyperplasia and neutrophil recruitment.",
+      "gwas_pvalue": 1e-60,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "CARD14",
+      "symbol": "CARD14",
+      "name": "Caspase Recruitment Domain Family Member 14",
+      "category": "NF-kB Signaling",
+      "association_score": 0.86,
+      "odds_ratio": 2.0,
+      "disease_evidence": "Keratinocyte-specific activator of NF-kB.",
+      "gwas_pvalue": 1e-35,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "TYK2",
+      "symbol": "TYK2",
+      "name": "Tyrosine Kinase 2",
+      "category": "JAK-STAT Signaling",
+      "association_score": 0.88,
+      "odds_ratio": 1.8,
+      "disease_evidence": "Transduces IL-23 signaling in T cells.",
+      "gwas_pvalue": 1e-40,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "IL12B",
+      "symbol": "IL12B",
+      "name": "Interleukin 12B",
+      "category": "IL-23 / Th17 Signaling",
+      "association_score": 0.9,
+      "odds_ratio": 1.9,
+      "disease_evidence": "Encodes p40 subunit of IL-23.",
+      "gwas_pvalue": 1e-45,
+      "chromosome": "unknown",
+      "function": "unknown"
+    }
+  ]
+}

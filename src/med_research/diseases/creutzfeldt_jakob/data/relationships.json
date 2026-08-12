@@ -1,0 +1,826 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1200420",
+      "target": "GABRG2",
+      "type": "TARGETS",
+      "description": "MIDAZOLAM HYDROCHLORIDE targets GABRG2."
+    },
+    {
+      "source": "CHEMBL1201574",
+      "target": "SNAP25",
+      "type": "TARGETS",
+      "description": "ONABOTULINUMTOXINA targets SNAP25."
+    },
+    {
+      "source": "CHEMBL655",
+      "target": "GABRG2",
+      "type": "TARGETS",
+      "description": "MIDAZOLAM targets GABRG2."
+    },
+    {
+      "source": "CACNA1A",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1A is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "CACNA2D2",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA2D2 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "KCNA1",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNA1 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "CACNA1G",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1G is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "CSF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CSF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "F2RL1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "F2RL1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "GTF2H4",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "GTF2H4 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "C4BPA",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C4BPA is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "MATR3",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MATR3 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "RELN",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "RELN is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GAD2",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GAD2 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIA2",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIA2 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "KCNJ11",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNJ11 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "RELN",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELN is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "CARD14",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD14 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NOTCH3",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH3 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "HTRA2",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "HTRA2 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TLR3",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR3 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "ABCB6",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB6 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "WNT1",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT1 is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "CDK5R1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK5R1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "AGTPBP1",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGTPBP1 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "RORA",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "RORA is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "WNT1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "PRNP",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRNP is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.78"
+    },
+    {
+      "source": "MAPT",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPT is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.11"
+    },
+    {
+      "source": "CARD14",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD14 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.11"
+    },
+    {
+      "source": "C4BPA",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C4BPA is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.11"
+    },
+    {
+      "source": "PRDX2",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDX2 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.11"
+    },
+    {
+      "source": "ABCB6",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB6 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.11"
+    },
+    {
+      "source": "NRGN",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRGN is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.09"
+    },
+    {
+      "source": "TF",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TF is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.09"
+    },
+    {
+      "source": "SNAP25",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNAP25 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "CHI3L1",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHI3L1 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "APOE",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.06"
+    },
+    {
+      "source": "ARX",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARX is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.06"
+    },
+    {
+      "source": "AOPEP",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AOPEP is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.06"
+    },
+    {
+      "source": "NEFL",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEFL is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.06"
+    },
+    {
+      "source": "GTF2H4",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GTF2H4 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNF",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOSB",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOSB is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.05"
+    },
+    {
+      "source": "S100A1",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A1 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.04"
+    },
+    {
+      "source": "HPRT1",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPRT1 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.04"
+    },
+    {
+      "source": "KCNJ11",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNJ11 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.04"
+    },
+    {
+      "source": "ASPA",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASPA is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.04"
+    },
+    {
+      "source": "ENO2",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENO2 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.04"
+    },
+    {
+      "source": "UBE3A",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBE3A is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.04"
+    },
+    {
+      "source": "GAD2",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAD2 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.04"
+    },
+    {
+      "source": "ABCD2",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCD2 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.04"
+    },
+    {
+      "source": "CSF1R",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF1R is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.04"
+    },
+    {
+      "source": "NOTCH3",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH3 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.04"
+    },
+    {
+      "source": "SERPINA1",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA1 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.04"
+    },
+    {
+      "source": "PLAUR",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAUR is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.04"
+    },
+    {
+      "source": "TLR3",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR3 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.04"
+    },
+    {
+      "source": "GH1",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.04"
+    },
+    {
+      "source": "CYBB",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYBB is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.04"
+    },
+    {
+      "source": "VAC14",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VAC14 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.04"
+    },
+    {
+      "source": "FUCA1",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUCA1 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.03"
+    },
+    {
+      "source": "HTRA2",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTRA2 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.03"
+    },
+    {
+      "source": "RELN",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELN is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.03"
+    },
+    {
+      "source": "GABRG2",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRG2 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.03"
+    },
+    {
+      "source": "CNTNAP2",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNTNAP2 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC52A1",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC52A1 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.03"
+    },
+    {
+      "source": "NR1I2",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR1I2 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.03"
+    },
+    {
+      "source": "F2RL1",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F2RL1 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.03"
+    },
+    {
+      "source": "MATR3",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MATR3 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.03"
+    },
+    {
+      "source": "CLU",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLU is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.03"
+    },
+    {
+      "source": "GRIA2",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIA2 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC9A6",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC9A6 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.03"
+    },
+    {
+      "source": "CACNA1G",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1G is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.03"
+    },
+    {
+      "source": "S100B",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100B is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.03"
+    },
+    {
+      "source": "CANX",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CANX is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.03"
+    },
+    {
+      "source": "ATP2B1",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP2B1 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL1B",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.03"
+    },
+    {
+      "source": "SNCG",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCG is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.03"
+    },
+    {
+      "source": "EML1",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EML1 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.03"
+    },
+    {
+      "source": "SNCA",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.03"
+    },
+    {
+      "source": "SNCB",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCB is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.03"
+    },
+    {
+      "source": "CSTB",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSTB is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.03"
+    },
+    {
+      "source": "PSAP",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSAP is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.03"
+    },
+    {
+      "source": "KCNC2",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNC2 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.03"
+    },
+    {
+      "source": "SST",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SST is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.03"
+    },
+    {
+      "source": "CSF2",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF2 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.03"
+    },
+    {
+      "source": "LAMC2",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMC2 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.03"
+    },
+    {
+      "source": "STX6",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STX6 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.26"
+    },
+    {
+      "source": "GAL3ST1",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAL3ST1 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.24"
+    },
+    {
+      "source": "ZNF423",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF423 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.09"
+    },
+    {
+      "source": "SCN8A",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN8A is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.09"
+    },
+    {
+      "source": "GLRA1",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLRA1 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.09"
+    },
+    {
+      "source": "PMP22",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PMP22 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.09"
+    },
+    {
+      "source": "RORA",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RORA is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "ATXN7",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATXN7 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "MBP",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MBP is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "SPTBN4",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTBN4 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "GLRB",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLRB is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "MYH10",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH10 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "SPTBN2",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTBN2 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "CACNA1A",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1A is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "UNC5C",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UNC5C is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "RREB1",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RREB1 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "GDF1",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF1 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "CERS1",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CERS1 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "SGCE",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGCE is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "GRID2",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRID2 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "AGTPBP1",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGTPBP1 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "ATP2B2",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP2B2 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "KCNA1",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNA1 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "GOLGA1",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GOLGA1 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "DAB1",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DAB1 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "MAP1B",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP1B is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "QKI",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "QKI is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "SLC6A5",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A5 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "ELP6",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELP6 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "MYO5A",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO5A is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "DSCAM",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSCAM is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "CA8",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CA8 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "TRIM2",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM2 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "ANKFY1",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKFY1 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "DST",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DST is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "POMK",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMK is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "TARDBP",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TARDBP is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "WNT1",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT1 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "ANK3",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK3 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "CDK5R1",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK5R1 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "CACNA2D2",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA2D2 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "EFHC1",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EFHC1 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "GALC",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GALC is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "ATP1B2",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP1B2 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "PPT1",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPT1 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "KCNN2",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNN2 is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    },
+    {
+      "source": "CIT",
+      "target": "Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIT is associated with Creutzfeldt Jacob disease (CREUTZFELDT_JAKOB). Open Targets association score 0.08"
+    }
+  ]
+}

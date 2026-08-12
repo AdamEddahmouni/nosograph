@@ -1,0 +1,44 @@
+{
+  "pathways": [
+    {
+      "id": "PATH_AD_AMYLOID",
+      "name": "Amyloid Cascade & Abeta Processing",
+      "description": "Sequential processing of APP by beta-secretase (BACE1) and gamma-secretase (PSEN1/PSEN2) releasing hydrophobic Abeta peptides.",
+      "key_components": ["APP", "BACE1", "PSEN1", "PSEN2"],
+      "therapeutic_targets": ["BACE1", "APP"],
+      "references": ["REACTOME:R-HSA-977225"]
+    },
+    {
+      "id": "PATH_AD_TAU",
+      "name": "Tau Phosphorylation & Tangle Pathogenesis",
+      "description": "Aberrant hyperphosphorylation of Tau (MAPT) by kinases leading to detachment from microtubules and neurofibrillary tangle formation.",
+      "key_components": ["MAPT", "GSK3B", "MAPK1"],
+      "therapeutic_targets": ["MAPT"],
+      "references": ["REACTOME:R-HSA-8950505"]
+    },
+    {
+      "id": "PATH_AD_MICROGLIA",
+      "name": "Microglial Response & Neuroinflammation",
+      "description": "TREM2- and CD33-dependent activation of microglia surrounding amyloid plaques controlling phagocytosis and inflammatory cytokine secretion.",
+      "key_components": ["TREM2", "CD33", "CR1", "INPP5D"],
+      "therapeutic_targets": ["TREM2", "CD33"],
+      "references": ["KEGG:hsa05010"]
+    },
+    {
+      "id": "PATH_AD_LIPID",
+      "name": "Lipid Metabolism & Apolipoprotein Transport",
+      "description": "APOE- and ABCA7-mediated transport of cholesterol and phospholipids modulating membrane fluidity and amyloid clearance.",
+      "key_components": ["APOE", "ABCA7", "CLU"],
+      "therapeutic_targets": ["APOE"],
+      "references": ["REACTOME:R-HSA-8963888"]
+    },
+    {
+      "id": "PATH_AD_ENDOCYTOSIS",
+      "name": "Endocytic Trafficking & Synaptic Plasticity",
+      "description": "Clathrin-mediated endocytosis regulated by PICALM, BIN1, and SORL1 governing APP recycling and synaptic receptor turnover.",
+      "key_components": ["PICALM", "BIN1", "SORL1"],
+      "therapeutic_targets": ["PICALM", "BIN1"],
+      "references": ["REACTOME:R-HSA-8856828"]
+    }
+  ]
+}

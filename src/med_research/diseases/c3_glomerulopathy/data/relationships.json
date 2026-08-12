@@ -1,0 +1,790 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL4250860",
+      "target": "CFD",
+      "type": "TARGETS",
+      "description": "DANICOPAN targets CFD."
+    },
+    {
+      "source": "CHEMBL4298195",
+      "target": "MASP2",
+      "type": "TARGETS",
+      "description": "NARSOPLIMAB targets MASP2."
+    },
+    {
+      "source": "CHEMBL4594448",
+      "target": "CFB",
+      "type": "TARGETS",
+      "description": "IPTACOPAN targets CFB."
+    },
+    {
+      "source": "CHEMBL3989871",
+      "target": "C5AR1",
+      "type": "TARGETS",
+      "description": "AVACOPAN targets C5AR1."
+    },
+    {
+      "source": "CHEMBL1743007",
+      "target": "CD38",
+      "type": "TARGETS",
+      "description": "DARATUMUMAB targets CD38."
+    },
+    {
+      "source": "CHEMBL1639",
+      "target": "REN",
+      "type": "TARGETS",
+      "description": "ALISKIREN targets REN."
+    },
+    {
+      "source": "CHEMBL4298211",
+      "target": "C3",
+      "type": "TARGETS",
+      "description": "PEGCETACOPLAN targets C3."
+    },
+    {
+      "source": "BCL2L11",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2L11 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "SLC3A1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC3A1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "LYN",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LYN is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CCR1",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR1 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "C4A",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C4A is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "C5AR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C5AR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "CFH",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CFH is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "CFHR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CFHR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "CFHR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CFHR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "CFHR5",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CFHR5 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "CFI",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CFI is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "CCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "MASP2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "MASP2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "COL18A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL18A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A4",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A4 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A5",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A5 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "SLC2A9",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A9 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "GLIS2",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLIS2 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "PIK3C2A",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3C2A is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "REN",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "REN is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "FASLG",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASLG is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFAIP2",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFAIP2 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LMX1B",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "LMX1B is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFIH1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFIH1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "FRAS1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FRAS1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIRREL1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "KIRREL1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "CD38",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD38 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "APCS",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APCS is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CFHR5",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFHR5 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.47"
+    },
+    {
+      "source": "CFB",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFB is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.44"
+    },
+    {
+      "source": "CFH",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFH is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.40"
+    },
+    {
+      "source": "C3",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C3 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.37"
+    },
+    {
+      "source": "CFI",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFI is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.37"
+    },
+    {
+      "source": "CFHR2",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFHR2 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.37"
+    },
+    {
+      "source": "CFHR1",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFHR1 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.37"
+    },
+    {
+      "source": "DGKE",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DGKE is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.37"
+    },
+    {
+      "source": "C5AR1",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C5AR1 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "MASP2",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MASP2 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "CFD",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFD is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "FAS",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.06"
+    },
+    {
+      "source": "COL4A3",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A3 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.06"
+    },
+    {
+      "source": "UMOD",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UMOD is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.06"
+    },
+    {
+      "source": "LYN",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYN is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "DNASE1",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNASE1 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "NPHS2",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPHS2 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "COL4A4",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A4 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "COL4A1",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A1 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "FASLG",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASLG is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "BCL2L11",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2L11 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "WT1",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WT1 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD1D",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD1D is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD2AP",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD2AP is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ASH1L",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASH1L is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "COL4A5",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A5 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD151",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD151 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC12A1",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC12A1 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CLCN5",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLCN5 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "B4GALT1",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B4GALT1 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "REN",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REN is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTPRC",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRC is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "IKZF3",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF3 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CYBB",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYBB is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "MYO1E",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO1E is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGL2",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGL2 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SCARF1",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCARF1 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "RO60",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RO60 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "RUBCN",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUBCN is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "MAGI2",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAGI2 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "GLIS2",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLIS2 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CCNI",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCNI is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "DUSP22",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DUSP22 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CCR1",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR1 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CLEC2D",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC2D is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PKN1",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKN1 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "WAS",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WAS is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "TREX1",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TREX1 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC2A9",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A9 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "TMEM218",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM218 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "NPHP1",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPHP1 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "TANK",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TANK is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "MAS1",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAS1 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "GATA5",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA5 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PIK3C2A",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3C2A is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL4",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "BSG",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BSG is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFIH1",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFIH1 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD59",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD59 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC3A1",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC3A1 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CRIM1",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRIM1 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.09"
+    },
+    {
+      "source": "CLU",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLU is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.09"
+    },
+    {
+      "source": "GDNF",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDNF is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.09"
+    },
+    {
+      "source": "LMX1B",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMX1B is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.09"
+    },
+    {
+      "source": "INS",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.09"
+    },
+    {
+      "source": "GNE",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNE is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "PTGS2",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "MYO9A",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO9A is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "EMCN",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EMCN is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "FOXC2",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC2 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "APCS",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APCS is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "PDGFRB",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "ACE",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "NPHS1",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPHS1 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "TRPV5",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV5 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "MAFB",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAFB is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "TNFAIP2",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFAIP2 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "FRAS1",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FRAS1 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "RHPN1",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHPN1 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "KIRREL1",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIRREL1 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "LCAT",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCAT is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "KCNMA1",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNMA1 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "LRRC55",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRC55 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "COL18A1",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL18A1 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "C4A",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C4A is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "ERMP1",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERMP1 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "CD38",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD38 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "HPRT1",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPRT1 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "ACTN4",
+      "target": "complement 3 glomerulopathy (C3_GLOMERULOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTN4 is associated with complement 3 glomerulopathy (C3_GLOMERULOPATHY). Open Targets association score 0.07"
+    }
+  ]
+}

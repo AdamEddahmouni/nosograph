@@ -1,0 +1,628 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201577",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "CETUXIMAB targets EGFR."
+    },
+    {
+      "source": "CHEMBL2028663",
+      "target": "BRAF",
+      "type": "TARGETS",
+      "description": "DABRAFENIB targets BRAF."
+    },
+    {
+      "source": "CHEMBL3545402",
+      "target": "PDGFRA",
+      "type": "TARGETS",
+      "description": "XL-820 targets PDGFRA."
+    },
+    {
+      "source": "CHEMBL384467",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "DEXAMETHASONE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL521851",
+      "target": "PIK3R1",
+      "type": "TARGETS",
+      "description": "PICTILISIB targets PIK3R1."
+    },
+    {
+      "source": "CHEMBL522892",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "DOVITINIB targets KIT."
+    },
+    {
+      "source": "CHEMBL465",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "TREATS",
+      "description": "DRONABINOL is phase 4 / marketed for cancer (HER2_POS_BREAST_CANCER)."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "FGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "FGF23",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF23 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "VWF",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "VWF is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "CHEK2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "CHEK2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ITGB3",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB3 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT5A",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT5A is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT5B",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT5B is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR4",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR4 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "HRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "NRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RAF1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RAF1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "OPRM1",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "OPRM1 is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3R1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3R1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "LCK",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LCK is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ITGB3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "BRCA2",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA2 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.82"
+    },
+    {
+      "source": "FGFR2",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.77"
+    },
+    {
+      "source": "ATM",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.76"
+    },
+    {
+      "source": "BRCA1",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA1 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.75"
+    },
+    {
+      "source": "EGFR",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.74"
+    },
+    {
+      "source": "BRAF",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.73"
+    },
+    {
+      "source": "ERBB2",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.73"
+    },
+    {
+      "source": "PALB2",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PALB2 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.72"
+    },
+    {
+      "source": "ALK",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.72"
+    },
+    {
+      "source": "KIT",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.71"
+    },
+    {
+      "source": "CHEK2",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHEK2 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.71"
+    },
+    {
+      "source": "NPM1",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPM1 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.71"
+    },
+    {
+      "source": "MAP2K1",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K1 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.70"
+    },
+    {
+      "source": "AKT1",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.70"
+    },
+    {
+      "source": "FGFR1",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.69"
+    },
+    {
+      "source": "EML4",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EML4 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.69"
+    },
+    {
+      "source": "PDGFRA",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRA is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.69"
+    },
+    {
+      "source": "FGFR3",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.69"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.68"
+    },
+    {
+      "source": "FLT3",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.68"
+    },
+    {
+      "source": "FGFR4",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR4 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.67"
+    },
+    {
+      "source": "MAP2K2",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K2 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.67"
+    },
+    {
+      "source": "ERBB3",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB3 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.67"
+    },
+    {
+      "source": "TP53",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.66"
+    },
+    {
+      "source": "KRAS",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.65"
+    },
+    {
+      "source": "NRAS",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRAS is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.65"
+    },
+    {
+      "source": "HRAS",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRAS is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.65"
+    },
+    {
+      "source": "LCK",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCK is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.64"
+    },
+    {
+      "source": "EXO1",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EXO1 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.64"
+    },
+    {
+      "source": "HSP90AA1",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSP90AA1 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.64"
+    },
+    {
+      "source": "SRC",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRC is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.63"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.63"
+    },
+    {
+      "source": "RAF1",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAF1 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.63"
+    },
+    {
+      "source": "STRN",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STRN is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.63"
+    },
+    {
+      "source": "MAPK1",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK1 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.63"
+    },
+    {
+      "source": "FN1",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FN1 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.63"
+    },
+    {
+      "source": "STAT3",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.63"
+    },
+    {
+      "source": "PIK3R1",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3R1 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.63"
+    },
+    {
+      "source": "FGF2",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF2 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.63"
+    },
+    {
+      "source": "BCR",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCR is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.62"
+    },
+    {
+      "source": "EGF",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGF is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.62"
+    },
+    {
+      "source": "OPRM1",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OPRM1 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.62"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.62"
+    },
+    {
+      "source": "VWF",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VWF is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.62"
+    },
+    {
+      "source": "MAPK3",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK3 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.62"
+    },
+    {
+      "source": "ITGB3",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB3 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.62"
+    },
+    {
+      "source": "ACTB",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTB is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.62"
+    },
+    {
+      "source": "CDC37",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDC37 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.61"
+    },
+    {
+      "source": "GRB2",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRB2 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.61"
+    },
+    {
+      "source": "STAT5A",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT5A is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.61"
+    },
+    {
+      "source": "SHC1",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHC1 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.61"
+    },
+    {
+      "source": "DNMT1",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT1 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.61"
+    },
+    {
+      "source": "TLN1",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLN1 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.61"
+    },
+    {
+      "source": "STAT5B",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT5B is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.61"
+    },
+    {
+      "source": "ERBB4",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB4 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.61"
+    },
+    {
+      "source": "FGF1",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF1 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.61"
+    },
+    {
+      "source": "NR3C1",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.61"
+    },
+    {
+      "source": "FGF23",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF23 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.61"
+    },
+    {
+      "source": "APC",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.61"
+    },
+    {
+      "source": "TRIM24",
+      "target": "cancer (HER2_POS_BREAST_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM24 is associated with cancer (HER2_POS_BREAST_CANCER). Open Targets association score 0.61"
+    }
+  ]
+}

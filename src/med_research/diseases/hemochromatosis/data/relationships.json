@@ -1,0 +1,442 @@
+{
+  "relationships": [
+    {
+      "source": "C1QA",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QA is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "PGRMC1",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "PGRMC1 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "BMP2",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP2 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "HAMP",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "HAMP is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "HFE",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "HFE is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "HJV",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "HJV is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "SLC40A1",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC40A1 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "TFR2",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "TFR2 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "FTH1",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "FTH1 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "LRP6",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP6 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ABCB4",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB4 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ABCC12",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC12 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ABCC2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SLC40A1",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC40A1 is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.85"
+    },
+    {
+      "source": "HFE",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HFE is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.84"
+    },
+    {
+      "source": "TFR2",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFR2 is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.83"
+    },
+    {
+      "source": "HAMP",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAMP is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.83"
+    },
+    {
+      "source": "HJV",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HJV is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.83"
+    },
+    {
+      "source": "H2BC4",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H2BC4 is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.57"
+    },
+    {
+      "source": "FTH1",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FTH1 is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.56"
+    },
+    {
+      "source": "TF",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TF is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.47"
+    },
+    {
+      "source": "BMP2",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP2 is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.37"
+    },
+    {
+      "source": "BEST1",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BEST1 is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.18"
+    },
+    {
+      "source": "STX1B",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STX1B is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.12"
+    },
+    {
+      "source": "SRPRB",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRPRB is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "CUL3",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUL3 is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "ABCB4",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB4 is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "VSX1",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VSX1 is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "KIFBP",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIFBP is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "CISH",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CISH is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "MCRS1",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCRS1 is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "TOGARAM2",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TOGARAM2 is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "CLDN34",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLDN34 is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "CP",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CP is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "TMPRSS6",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMPRSS6 is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "ENTPD1",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENTPD1 is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "NDFIP2",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDFIP2 is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "SPTA1",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTA1 is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "SKIC2",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SKIC2 is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "DACH1",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DACH1 is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "PPP1R13L",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP1R13L is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "LRP6",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP6 is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "ORM2",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ORM2 is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "ORM1",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ORM1 is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "USP20",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP20 is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "ADAD1",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAD1 is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "LEPR",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEPR is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "ABCC12",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC12 is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "BRMS1",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRMS1 is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "LGALS3",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS3 is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "PYGL",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PYGL is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "NR1H4",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR1H4 is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "CLCNKA",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLCNKA is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "CLCNKB",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLCNKB is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "SLC12A1",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC12A1 is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "NR3C1",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "GNMT",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNMT is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "DES",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DES is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "ABCC2",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC2 is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "RXRA",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RXRA is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "PPARA",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARA is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "SART1",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SART1 is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "KIF12",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF12 is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "FECH",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FECH is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "LDLR",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "PGRMC1",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGRMC1 is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "SIDT2",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIDT2 is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "LMNA",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMNA is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "ENTPD5",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENTPD5 is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "NCOA5",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOA5 is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "NPR1",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPR1 is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "C1QA",
+      "target": "hereditary hemochromatosis (HEMOCHROMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C1QA is associated with hereditary hemochromatosis (HEMOCHROMATOSIS). Open Targets association score 0.07"
+    }
+  ]
+}

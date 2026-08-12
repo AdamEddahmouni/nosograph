@@ -1,0 +1,158 @@
+{
+  "pathways": [
+    {
+      "id": "cell-cycle",
+      "name": "Cell Cycle Regulation",
+      "description": "Cyclin-CDK machinery controlling cell division; a backbone of oncology target discovery.",
+      "key_components": [
+        "CCNE1",
+        "CDK12",
+        "CDKN1A",
+        "CDKN2A",
+        "RB1"
+      ],
+      "therapeutic_targets": [
+        "CCNE1",
+        "CDK12",
+        "CDKN1A",
+        "CDKN2A",
+        "RB1"
+      ],
+      "references": []
+    },
+    {
+      "id": "dna-repair",
+      "name": "DNA Repair",
+      "description": "Homologous recombination, mismatch repair, and base excision pathways preserving genome integrity.",
+      "key_components": [
+        "ATM",
+        "BRCA1",
+        "BRCA2",
+        "MSH2",
+        "TP53"
+      ],
+      "therapeutic_targets": [
+        "ATM",
+        "BRCA1",
+        "BRCA2",
+        "MSH2",
+        "TP53"
+      ],
+      "references": []
+    },
+    {
+      "id": "immune-checkpoint",
+      "name": "Immune Checkpoint Signaling",
+      "description": "Co-inhibitory receptor signaling (PD-1/CTLA-4/TIGIT/LAG-3) that restrains T cell responses.",
+      "key_components": [
+        "CD274",
+        "CTLA4",
+        "PDCD1"
+      ],
+      "therapeutic_targets": [
+        "CD274",
+        "CTLA4",
+        "PDCD1"
+      ],
+      "references": []
+    },
+    {
+      "id": "mapk-erk",
+      "name": "MAPK / ERK Signaling",
+      "description": "RAS-RAF-MEK-ERK cascade coupling growth factor receptors to proliferation and differentiation.",
+      "key_components": [
+        "BRAF",
+        "EGFR",
+        "FGFR1",
+        "FGFR2",
+        "FGFR3",
+        "FGFR4",
+        "HRAS",
+        "KRAS"
+      ],
+      "therapeutic_targets": [
+        "BRAF",
+        "EGFR",
+        "FGFR1",
+        "FGFR2",
+        "FGFR3",
+        "FGFR4",
+        "HRAS",
+        "KRAS"
+      ],
+      "references": []
+    },
+    {
+      "id": "mast-cell",
+      "name": "Mast Cell / IgE Signaling",
+      "description": "FcεRI-mediated mast cell activation and degranulation in allergic disease.",
+      "key_components": [
+        "KIT"
+      ],
+      "therapeutic_targets": [
+        "KIT"
+      ],
+      "references": []
+    },
+    {
+      "id": "pi3k-akt-mtor",
+      "name": "PI3K / AKT / mTOR Signaling",
+      "description": "Growth and survival signaling through PI3K-AKT-mTOR; a major oncology and immunology target hub.",
+      "key_components": [
+        "MTOR",
+        "PIK3CA",
+        "PTEN",
+        "TSC1",
+        "TSC2"
+      ],
+      "therapeutic_targets": [
+        "MTOR",
+        "PIK3CA",
+        "PTEN",
+        "TSC1",
+        "TSC2"
+      ],
+      "references": []
+    },
+    {
+      "id": "tcr-signaling",
+      "name": "T Cell Receptor Signaling",
+      "description": "TCR signal transduction and T cell activation; a therapeutic hub in autoimmunity.",
+      "key_components": [
+        "CTLA4"
+      ],
+      "therapeutic_targets": [
+        "CTLA4"
+      ],
+      "references": []
+    },
+    {
+      "id": "vegf-angiogenesis",
+      "name": "VEGF / Angiogenesis",
+      "description": "Vascular endothelial growth factor signaling driving angiogenesis and vascular permeability.",
+      "key_components": [
+        "KDR",
+        "VEGFA"
+      ],
+      "therapeutic_targets": [
+        "KDR",
+        "VEGFA"
+      ],
+      "references": []
+    },
+    {
+      "id": "wnt-signaling",
+      "name": "Wnt Signaling",
+      "description": "Canonical Wnt/β-catenin signaling controlling cell fate, proliferation, and tissue regeneration.",
+      "key_components": [
+        "APC",
+        "CTNNB1"
+      ],
+      "therapeutic_targets": [
+        "APC",
+        "CTNNB1"
+      ],
+      "references": []
+    }
+  ]
+}

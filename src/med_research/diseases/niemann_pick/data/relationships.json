@@ -1,0 +1,844 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL98",
+      "target": "HDAC3",
+      "type": "TARGETS",
+      "description": "VORINOSTAT targets HDAC3."
+    },
+    {
+      "source": "CHEMBL98",
+      "target": "HDAC2",
+      "type": "TARGETS",
+      "description": "VORINOSTAT targets HDAC2."
+    },
+    {
+      "source": "CHEMBL98",
+      "target": "HDAC1",
+      "type": "TARGETS",
+      "description": "VORINOSTAT targets HDAC1."
+    },
+    {
+      "source": "CHEMBL98",
+      "target": "HDAC6",
+      "type": "TARGETS",
+      "description": "VORINOSTAT targets HDAC6."
+    },
+    {
+      "source": "CHEMBL1029",
+      "target": "UGCG",
+      "type": "TARGETS",
+      "description": "MIGLUSTAT targets UGCG."
+    },
+    {
+      "source": "CASP3",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP3 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "C9orf72",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C9orf72 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "F9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "F9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "GTF2IRD1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "GTF2IRD1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "KLF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "KLF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ALPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ALPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "ABCB4",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB4 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP11B1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP11B1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CACNA1A",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1A is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "CACNA2D2",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA2D2 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "KCNA1",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNA1 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "DLL1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "DLL1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "RORA",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "RORA is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "NPC1",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPC1 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.69"
+    },
+    {
+      "source": "NPC2",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPC2 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.64"
+    },
+    {
+      "source": "SMPD1",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMPD1 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.58"
+    },
+    {
+      "source": "HDAC6",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDAC6 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.04"
+    },
+    {
+      "source": "HDAC2",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDAC2 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.04"
+    },
+    {
+      "source": "HDAC1",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDAC1 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.04"
+    },
+    {
+      "source": "HDAC3",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDAC3 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.04"
+    },
+    {
+      "source": "SOAT1",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOAT1 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.01"
+    },
+    {
+      "source": "FANCA",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCA is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.01"
+    },
+    {
+      "source": "FXN",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FXN is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.01"
+    },
+    {
+      "source": "FAS",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.01"
+    },
+    {
+      "source": "ICAM1",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.01"
+    },
+    {
+      "source": "CHIT1",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHIT1 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.01"
+    },
+    {
+      "source": "HSPA1A",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPA1A is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.01"
+    },
+    {
+      "source": "HSPA4",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPA4 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.01"
+    },
+    {
+      "source": "LAMP1",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMP1 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.01"
+    },
+    {
+      "source": "CTSB",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSB is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.01"
+    },
+    {
+      "source": "ABCG1",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG1 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL10",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.01"
+    },
+    {
+      "source": "PPT1",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPT1 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.01"
+    },
+    {
+      "source": "CAV1",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAV1 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.01"
+    },
+    {
+      "source": "RAB7A",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB7A is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.01"
+    },
+    {
+      "source": "RAB7B",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB7B is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.01"
+    },
+    {
+      "source": "TF",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TF is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.00"
+    },
+    {
+      "source": "APOE",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.00"
+    },
+    {
+      "source": "JUND",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JUND is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.00"
+    },
+    {
+      "source": "SERPINA1",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA1 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.00"
+    },
+    {
+      "source": "FOS",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOS is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.00"
+    },
+    {
+      "source": "JUNB",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JUNB is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.00"
+    },
+    {
+      "source": "JUN",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JUN is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.00"
+    },
+    {
+      "source": "GPC1",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPC1 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.00"
+    },
+    {
+      "source": "FOSB",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOSB is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.00"
+    },
+    {
+      "source": "ZNF185",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF185 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCZ1",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCZ1 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.00"
+    },
+    {
+      "source": "PICK1",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PICK1 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.00"
+    },
+    {
+      "source": "CASP3",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP3 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.00"
+    },
+    {
+      "source": "AFP",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFP is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.00"
+    },
+    {
+      "source": "MTOR",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.00"
+    },
+    {
+      "source": "ARHGAP4",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP4 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.00"
+    },
+    {
+      "source": "BLM",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLM is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.00"
+    },
+    {
+      "source": "TPP1",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPP1 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFNG",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.00"
+    },
+    {
+      "source": "QDPR",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "QDPR is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.00"
+    },
+    {
+      "source": "GAL",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAL is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.00"
+    },
+    {
+      "source": "CYP11B1",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP11B1 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.00"
+    },
+    {
+      "source": "PLP1",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLP1 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.00"
+    },
+    {
+      "source": "SNCG",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCG is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.00"
+    },
+    {
+      "source": "BTD",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTD is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.00"
+    },
+    {
+      "source": "SNCB",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCB is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.00"
+    },
+    {
+      "source": "KLF2",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF2 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.00"
+    },
+    {
+      "source": "PFDN4",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PFDN4 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.00"
+    },
+    {
+      "source": "AGO2",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGO2 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.00"
+    },
+    {
+      "source": "SNCA",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.00"
+    },
+    {
+      "source": "RMC1",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RMC1 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.00"
+    },
+    {
+      "source": "ETV1",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETV1 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.00"
+    },
+    {
+      "source": "HNRNPC",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNRNPC is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.00"
+    },
+    {
+      "source": "TMEM97",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM97 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.00"
+    },
+    {
+      "source": "GBA1",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GBA1 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.00"
+    },
+    {
+      "source": "STING1",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STING1 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.00"
+    },
+    {
+      "source": "UCN3",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UCN3 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.00"
+    },
+    {
+      "source": "UGCG",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UGCG is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.53"
+    },
+    {
+      "source": "PDCD1",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.37"
+    },
+    {
+      "source": "F9",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F9 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.07"
+    },
+    {
+      "source": "PSAP",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSAP is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.07"
+    },
+    {
+      "source": "ZSCAN10",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZSCAN10 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.07"
+    },
+    {
+      "source": "ABCG8",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG8 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.07"
+    },
+    {
+      "source": "C9orf72",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C9orf72 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.07"
+    },
+    {
+      "source": "ATCAY",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATCAY is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.07"
+    },
+    {
+      "source": "ASAH1",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASAH1 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.07"
+    },
+    {
+      "source": "LDLR",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.07"
+    },
+    {
+      "source": "RUNX3",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX3 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.07"
+    },
+    {
+      "source": "ABCG5",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG5 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.07"
+    },
+    {
+      "source": "RORA",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RORA is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.07"
+    },
+    {
+      "source": "PRKAB1",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAB1 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.07"
+    },
+    {
+      "source": "CACNA2D2",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA2D2 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.07"
+    },
+    {
+      "source": "GALC",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GALC is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    },
+    {
+      "source": "DBNL",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DBNL is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    },
+    {
+      "source": "LEPR",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEPR is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    },
+    {
+      "source": "ANK1",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK1 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    },
+    {
+      "source": "COMMD3-BMI1",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COMMD3-BMI1 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    },
+    {
+      "source": "BMI1",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMI1 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    },
+    {
+      "source": "CSTB",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSTB is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    },
+    {
+      "source": "MECP2",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MECP2 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    },
+    {
+      "source": "CNTNAP1",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNTNAP1 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    },
+    {
+      "source": "PMP22",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PMP22 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    },
+    {
+      "source": "TUBB4A",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB4A is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    },
+    {
+      "source": "GLRA1",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLRA1 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    },
+    {
+      "source": "SCN8A",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN8A is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    },
+    {
+      "source": "WWOX",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WWOX is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    },
+    {
+      "source": "ATP2B2",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP2B2 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    },
+    {
+      "source": "PPT2-EGFL8",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPT2-EGFL8 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    },
+    {
+      "source": "PPT2",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPT2 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    },
+    {
+      "source": "VEGFA",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    },
+    {
+      "source": "GTF2IRD1",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GTF2IRD1 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    },
+    {
+      "source": "NDUFS4",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFS4 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    },
+    {
+      "source": "LAMA4",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMA4 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    },
+    {
+      "source": "ABCA1",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA1 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    },
+    {
+      "source": "LPO",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPO is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    },
+    {
+      "source": "PEX2",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PEX2 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    },
+    {
+      "source": "ALPL",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALPL is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    },
+    {
+      "source": "CLCN3",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLCN3 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    },
+    {
+      "source": "TARDBP",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TARDBP is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    },
+    {
+      "source": "PITPNA",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITPNA is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    },
+    {
+      "source": "HPRT1",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPRT1 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    },
+    {
+      "source": "DLL1",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLL1 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    },
+    {
+      "source": "CACNA1A",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1A is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    },
+    {
+      "source": "SOD2",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD2 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    },
+    {
+      "source": "CLOCK",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLOCK is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    },
+    {
+      "source": "ABCB4",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB4 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    },
+    {
+      "source": "KL",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KL is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    },
+    {
+      "source": "ZNF423",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF423 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    },
+    {
+      "source": "SPTA1",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTA1 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    },
+    {
+      "source": "KCNA1",
+      "target": "Niemann-Pick disease (NIEMANN_PICK)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNA1 is associated with Niemann-Pick disease (NIEMANN_PICK). Open Targets association score 0.06"
+    }
+  ]
+}

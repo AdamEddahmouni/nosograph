@@ -1,0 +1,31 @@
+{
+  "disease_id": "pd",
+  "disease_name": "Parkinson's Disease",
+  "pathways": [
+    {
+      "id": "alpha-synuclein-pathway",
+      "name": "Alpha-Synuclein Aggregation",
+      "description": "Misfolding and neurotoxic intracellular accumulation of alpha-synuclein.",
+      "key_components": [
+        "SNCA",
+        "GBA1"
+      ],
+      "therapeutic_targets": [
+        "SNCA"
+      ]
+    },
+    {
+      "id": "mitophagy-pathway",
+      "name": "Mitochondrial Dysfunction",
+      "description": "Impaired mitochondrial quality control and oxidative stress.",
+      "key_components": [
+        "PRKN",
+        "PINK1"
+      ],
+      "therapeutic_targets": [
+        "PRKN",
+        "PINK1"
+      ]
+    }
+  ]
+}

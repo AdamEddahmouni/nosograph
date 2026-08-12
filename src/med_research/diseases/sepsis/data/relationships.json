@@ -1,0 +1,928 @@
+{
+  "relationships": [
+    {
+      "source": "SRSF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SRSF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "F2R",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "F2R is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HNF4A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF4A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "RASIP1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASIP1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "GSTM1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTM1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ABCB4",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB4 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ABCC2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SULT2A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SULT2A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "RIPK3",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "RIPK3 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "MBL2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "MBL2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "BRCA2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MMP8",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP8 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "TIMP1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TIMP1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GLI1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "SHH",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SHH is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "SMOX",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SMOX is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "HAMP",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "HAMP is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1R1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1R1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT4",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT4 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "TSC22D1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC22D1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TLR2",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR2 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR3",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR3 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR9",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR9 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ABCB4",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB4 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.82"
+    },
+    {
+      "source": "ABCG8",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG8 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.49"
+    },
+    {
+      "source": "SERPINA1",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA1 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.37"
+    },
+    {
+      "source": "TTC39B",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTC39B is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.35"
+    },
+    {
+      "source": "LRBA",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRBA is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.34"
+    },
+    {
+      "source": "TM4SF4",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TM4SF4 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.33"
+    },
+    {
+      "source": "SULT2A1",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SULT2A1 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.33"
+    },
+    {
+      "source": "HNF4A",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF4A is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.32"
+    },
+    {
+      "source": "HNF1A",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.30"
+    },
+    {
+      "source": "DYNC2LI1",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYNC2LI1 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.30"
+    },
+    {
+      "source": "ABCG5",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG5 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.24"
+    },
+    {
+      "source": "SYMPK",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYMPK is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.17"
+    },
+    {
+      "source": "SLC26A3",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC26A3 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.17"
+    },
+    {
+      "source": "MAMSTR",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAMSTR is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.16"
+    },
+    {
+      "source": "OR7G2",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OR7G2 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.15"
+    },
+    {
+      "source": "TARBP1",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TARBP1 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.11"
+    },
+    {
+      "source": "REEP3",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REEP3 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.10"
+    },
+    {
+      "source": "FUT2",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUT2 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.10"
+    },
+    {
+      "source": "DMKN",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMKN is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "TMEM147",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM147 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "DCLK2",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCLK2 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "PKHD1",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKHD1 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "JMJD1C",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JMJD1C is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "SOX17",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX17 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "C12orf43",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C12orf43 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "BICC1",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BICC1 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "IFT88",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFT88 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "RASIP1",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASIP1 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "PCTP",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCTP is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "CYS1",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYS1 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "AIRE",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIRE is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "GPBAR1",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPBAR1 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ABCC2",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC2 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CCKAR",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCKAR is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ACOX2",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACOX2 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "PLAU",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAU is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "NR1H4",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR1H4 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "RTN4RL1",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RTN4RL1 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "FAH",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAH is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "MUC1",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC1 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "HES1",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HES1 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "PKD2",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKD2 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "MALRD1",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MALRD1 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "F2R",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F2R is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "GBA1",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GBA1 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "ONECUT2",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ONECUT2 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "KLB",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLB is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "FAM83H",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM83H is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CFTR",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFTR is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "RNF139",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF139 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "IGFBP1",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGFBP1 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PKD1",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKD1 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "SHMT1",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHMT1 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "P2RY13",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RY13 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PLAUR",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAUR is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "ATP4A",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP4A is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "XYLT2",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XYLT2 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "UBXN2B",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBXN2B is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "VTI1B",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VTI1B is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TRPV4",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV4 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TET2",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.43"
+    },
+    {
+      "source": "SRSF2",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRSF2 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.38"
+    },
+    {
+      "source": "DYRK4",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYRK4 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "P2RY12",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RY12 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "ADORA2A",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADORA2A is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "ADORA2B",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADORA2B is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "ADORA1",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADORA1 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "ADORA3",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADORA3 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "STAT4",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT4 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "TSC22D1",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC22D1 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.25"
+    },
+    {
+      "source": "ASXL1",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASXL1 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.25"
+    },
+    {
+      "source": "CDH12",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH12 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.25"
+    },
+    {
+      "source": "SUDS3",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUDS3 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.16"
+    },
+    {
+      "source": "C8orf48",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C8orf48 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.12"
+    },
+    {
+      "source": "CRP",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.11"
+    },
+    {
+      "source": "TAOK3",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAOK3 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.11"
+    },
+    {
+      "source": "BRCA2",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA2 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.11"
+    },
+    {
+      "source": "ENSG00000233974",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENSG00000233974 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.11"
+    },
+    {
+      "source": "CALCA",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCA is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.10"
+    },
+    {
+      "source": "IL6",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "CD8A",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "CP",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CP is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "MBL2",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MBL2 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "CD69",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD69 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "LCN2",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCN2 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "BPI",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BPI is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "TLR2",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR2 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "DLC1",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLC1 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "ALB",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "CD4",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "HAMP",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAMP is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "UMOD",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UMOD is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "GSTM1",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTM1 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL10",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "SHH",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHH is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD177",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD177 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "NLRP3",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP3 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CSF3",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "GLI1",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI1 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL1R1",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1R1 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "TIMP1",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMP1 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNF",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CXCL8",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TLR3",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR3 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "MMP8",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP8 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "RIPK3",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIPK3 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "HP",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HP is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFNG",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TLR9",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR9 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD40LG",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "ANXA3",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANXA3 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "MS4A4A",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MS4A4A is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "SMOX",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMOX is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "C3",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C3 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTX3",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTX3 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD79A",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "FN1",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FN1 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "BTNL9",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTNL9 is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "FCGR1A",
+      "target": "bacterial infectious disease with sepsis (SEPSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR1A is associated with bacterial infectious disease with sepsis (SEPSIS). Open Targets association score 0.03"
+    }
+  ]
+}

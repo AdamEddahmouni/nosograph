@@ -1,0 +1,102 @@
+{
+  "disease_id": "atopic_dermatitis",
+  "disease_name": "Atopic Dermatitis",
+  "relationships": [
+    {
+      "source": "FLG",
+      "type": "ASSOCIATED_WITH",
+      "target": "Atopic Dermatitis",
+      "evidence": "Major loss-of-function skin barrier gene causing skin permeability."
+    },
+    {
+      "source": "IL4R",
+      "type": "ASSOCIATED_WITH",
+      "target": "Atopic Dermatitis",
+      "evidence": "Shared receptor subunit for IL-4 and IL-13 cytokines."
+    },
+    {
+      "source": "IL13",
+      "type": "ASSOCIATED_WITH",
+      "target": "Atopic Dermatitis",
+      "evidence": "Dominant Type 2 cytokine in AD cutaneous lesions."
+    },
+    {
+      "source": "TSLP",
+      "type": "ASSOCIATED_WITH",
+      "target": "Atopic Dermatitis",
+      "evidence": "Epithelial alarmin triggering dendritic cell T2 priming."
+    },
+    {
+      "source": "JAK1",
+      "type": "ASSOCIATED_WITH",
+      "target": "Atopic Dermatitis",
+      "evidence": "Downstream transducer of IL-4, IL-13, and IL-31 pruritic signals."
+    },
+    {
+      "source": "dupilumab",
+      "type": "TREATS",
+      "target": "Atopic Dermatitis",
+      "evidence": "Approved disease treatment"
+    },
+    {
+      "source": "dupilumab",
+      "type": "TARGETS",
+      "target": "IL4R",
+      "evidence": "Monoclonal antibody blocking IL-4R alpha subunit"
+    },
+    {
+      "source": "tralokinumab",
+      "type": "TREATS",
+      "target": "Atopic Dermatitis",
+      "evidence": "Approved disease treatment"
+    },
+    {
+      "source": "tralokinumab",
+      "type": "TARGETS",
+      "target": "IL13",
+      "evidence": "Human anti-IL-13 monoclonal antibody"
+    },
+    {
+      "source": "abrocitinib",
+      "type": "TREATS",
+      "target": "Atopic Dermatitis",
+      "evidence": "Approved disease treatment"
+    },
+    {
+      "source": "abrocitinib",
+      "type": "TARGETS",
+      "target": "JAK1",
+      "evidence": "Oral selective Janus kinase 1 inhibitor"
+    },
+    {
+      "source": "IL4R",
+      "type": "PARTICIPATES_IN",
+      "target": "type2-immune-ad",
+      "evidence": "Key component of Type 2 Immune Signaling (IL-4/IL-13)"
+    },
+    {
+      "source": "IL13",
+      "type": "PARTICIPATES_IN",
+      "target": "type2-immune-ad",
+      "evidence": "Key component of Type 2 Immune Signaling (IL-4/IL-13)"
+    },
+    {
+      "source": "JAK1",
+      "type": "PARTICIPATES_IN",
+      "target": "type2-immune-ad",
+      "evidence": "Key component of Type 2 Immune Signaling (IL-4/IL-13)"
+    },
+    {
+      "source": "FLG",
+      "type": "PARTICIPATES_IN",
+      "target": "barrier-dysfunction",
+      "evidence": "Key component of Epidermal Barrier Function"
+    },
+    {
+      "source": "TSLP",
+      "type": "PARTICIPATES_IN",
+      "target": "barrier-dysfunction",
+      "evidence": "Key component of Epidermal Barrier Function"
+    }
+  ]
+}

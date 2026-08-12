@@ -1,0 +1,568 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL578",
+      "target": "ACE",
+      "type": "TARGETS",
+      "description": "ENALAPRIL targets ACE."
+    },
+    {
+      "source": "ACKR3",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ACKR3 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL12",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL12 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL16",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL16 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR4",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR4 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "FGF10",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF10 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "FGF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "VWF",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "VWF is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ADAMTS17",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS17 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ADAMTS19",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS19 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ELN",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ELN is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K7",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K7 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RAF1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RAF1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "MTHFR",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "MTHFR is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CACNA1C",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1C is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "STAT1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "SMAD3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "STAT1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "CCDC186",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC186 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.34"
+    },
+    {
+      "source": "NKX2-5",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX2-5 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "FBLN1",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBLN1 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CCN1",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCN1 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PLXND1",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLXND1 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "KLF3",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF3 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "NR1D2",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR1D2 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "NTF3",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTF3 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "BAZ1B",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAZ1B is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SIRT1",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIRT1 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SPDEF",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPDEF is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "NODAL",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NODAL is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PTPN11",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN11 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "BRAF",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "SOS1",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOS1 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "SOS2",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOS2 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACE",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "NF1",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "GATA4",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA4 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "RIT1",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIT1 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "RAF1",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAF1 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "FGF8",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF8 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MYH6",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH6 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "FGF10",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF10 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "NOS3",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS3 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "APOB",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "GATA5",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA5 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PDGFB",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFB is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MTHFR",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTHFR is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ELN",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELN is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCL12",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL12 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PSMA2",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMA2 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "VWF",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VWF is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACKR3",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACKR3 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACTB",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTB is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "RAI1",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAI1 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ROR2",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROR2 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MFNG",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MFNG is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAP2K7",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K7 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PALB2",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PALB2 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ADAMTS19",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS19 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "QDPR",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "QDPR is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCR4",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR4 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "REG1A",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REG1A is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCL16",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL16 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTPRU",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRU is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PDGFRB",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ADAMTS17",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS17 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TTN",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTN is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "NPPB",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPB is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "FLT4",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT4 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC25A3",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC25A3 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAP2K1",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K1 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGFB1",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRKAG2",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAG2 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "NPHS1",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPHS1 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "STAT1",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT1 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "NPHS2",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPHS2 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "LZTR1",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LZTR1 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ITPR1",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITPR1 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MYH14",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH14 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "WNK2",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNK2 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SMAD3",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD3 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "GALNT1",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GALNT1 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MYL4",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYL4 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHD1L",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD1L is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CACNA1C",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1C is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "GATA6",
+      "target": "pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA6 is associated with pulmonary valve stenosis (PULMONARY_VALVE_STENOSIS). Open Targets association score 0.00"
+    }
+  ]
+}

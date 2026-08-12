@@ -1,0 +1,970 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201532",
+      "target": "TSHR",
+      "type": "TARGETS",
+      "description": "THYROTROPIN targets TSHR."
+    },
+    {
+      "source": "CHEMBL1544",
+      "target": "THRA",
+      "type": "TARGETS",
+      "description": "LIOTHYRONINE targets THRA."
+    },
+    {
+      "source": "CHEMBL2103741",
+      "target": "THRA",
+      "type": "TARGETS",
+      "description": "LEVOTHYROXINE SODIUM targets THRA."
+    },
+    {
+      "source": "CHEMBL1624",
+      "target": "THRA",
+      "type": "TARGETS",
+      "description": "LEVOTHYROXINE targets THRA."
+    },
+    {
+      "source": "CHEMBL1518",
+      "target": "TPO",
+      "type": "TARGETS",
+      "description": "PROPYLTHIOURACIL targets TPO."
+    },
+    {
+      "source": "CHEMBL1201119",
+      "target": "THRA",
+      "type": "TARGETS",
+      "description": "LIOTHYRONINE SODIUM targets THRA."
+    },
+    {
+      "source": "ZNF800",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ZNF800 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ARHGEF28",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ARHGEF28 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "GTF2H5",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "GTF2H5 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "COL11A2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL11A2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A5",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A5 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "KLHDC7B",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KLHDC7B is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "SLC5A5",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC5A5 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TG",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TG is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "THRA",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "THRA is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "THRB",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "THRB is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TPO",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TPO is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TSHR",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TSHR is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ACTG1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ACTG1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "CD226",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD226 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TNFSF11",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF11 is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "CCR9",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR9 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "C1QTNF6",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF6 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "GLIS3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLIS3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "JAK1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "TYK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "TYK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "APOBR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOBR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "RASGRP1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASGRP1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFATC1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFATC1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "THRA",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THRA is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "THRB",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THRB is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTPN22",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PTPN22 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TLR3",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR3 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "C1QTNF6",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF6 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF14",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF14 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF11",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF11 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFIH1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFIH1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IRF4",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF4 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "VEGFC",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFC is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "GJB2",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJB2 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.69"
+    },
+    {
+      "source": "KLHDC7B",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLHDC7B is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.65"
+    },
+    {
+      "source": "SLC26A5",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC26A5 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.64"
+    },
+    {
+      "source": "TECTA",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TECTA is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.63"
+    },
+    {
+      "source": "EYA4",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EYA4 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.61"
+    },
+    {
+      "source": "MYO6",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO6 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.58"
+    },
+    {
+      "source": "CDH23",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH23 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.56"
+    },
+    {
+      "source": "TRIOBP",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIOBP is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.56"
+    },
+    {
+      "source": "CLRN2",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLRN2 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.51"
+    },
+    {
+      "source": "ARHGEF28",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGEF28 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.49"
+    },
+    {
+      "source": "SLC12A2",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC12A2 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.49"
+    },
+    {
+      "source": "PHLDB1",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHLDB1 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.48"
+    },
+    {
+      "source": "CTBP2",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTBP2 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.47"
+    },
+    {
+      "source": "ABHD12",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABHD12 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.46"
+    },
+    {
+      "source": "PNPT1",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PNPT1 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.46"
+    },
+    {
+      "source": "ATP11B",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP11B is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.46"
+    },
+    {
+      "source": "PRPS1",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRPS1 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.45"
+    },
+    {
+      "source": "ILDR1",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ILDR1 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.44"
+    },
+    {
+      "source": "ACTG1",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTG1 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.42"
+    },
+    {
+      "source": "FSCN2",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSCN2 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.42"
+    },
+    {
+      "source": "SIX1",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIX1 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.42"
+    },
+    {
+      "source": "MYO7A",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO7A is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.41"
+    },
+    {
+      "source": "GTF2H5",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GTF2H5 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.41"
+    },
+    {
+      "source": "NID2",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NID2 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.40"
+    },
+    {
+      "source": "ARID5B",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID5B is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.40"
+    },
+    {
+      "source": "TMPRSS3",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMPRSS3 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.40"
+    },
+    {
+      "source": "TMC1",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMC1 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.39"
+    },
+    {
+      "source": "TYR",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYR is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.39"
+    },
+    {
+      "source": "OTOF",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OTOF is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.38"
+    },
+    {
+      "source": "SLC26A4",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC26A4 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.38"
+    },
+    {
+      "source": "ACAN",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACAN is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.38"
+    },
+    {
+      "source": "WFS1",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WFS1 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.38"
+    },
+    {
+      "source": "POU3F4",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU3F4 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.38"
+    },
+    {
+      "source": "DNMT1",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT1 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.38"
+    },
+    {
+      "source": "SMPX",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMPX is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.37"
+    },
+    {
+      "source": "DIAPH1",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DIAPH1 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.37"
+    },
+    {
+      "source": "CLDN14",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLDN14 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.37"
+    },
+    {
+      "source": "GJB3",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJB3 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.37"
+    },
+    {
+      "source": "PCDH15",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCDH15 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.37"
+    },
+    {
+      "source": "GIPC3",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIPC3 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.37"
+    },
+    {
+      "source": "MARVELD2",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MARVELD2 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.37"
+    },
+    {
+      "source": "COL11A2",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL11A2 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.37"
+    },
+    {
+      "source": "CIB2",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIB2 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.37"
+    },
+    {
+      "source": "CHD7",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD7 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.37"
+    },
+    {
+      "source": "USH2A",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USH2A is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.37"
+    },
+    {
+      "source": "OTOA",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OTOA is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.37"
+    },
+    {
+      "source": "DSPP",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSPP is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.37"
+    },
+    {
+      "source": "ESRRB",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESRRB is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.37"
+    },
+    {
+      "source": "EYA1",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EYA1 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.37"
+    },
+    {
+      "source": "TMIE",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMIE is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.37"
+    },
+    {
+      "source": "FANCA",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCA is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.37"
+    },
+    {
+      "source": "USH1C",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USH1C is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.37"
+    },
+    {
+      "source": "ATP6V1B1",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP6V1B1 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.37"
+    },
+    {
+      "source": "SLC17A8",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC17A8 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.37"
+    },
+    {
+      "source": "CLRN1",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLRN1 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.37"
+    },
+    {
+      "source": "RDX",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RDX is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.37"
+    },
+    {
+      "source": "WHRN",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WHRN is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.37"
+    },
+    {
+      "source": "COL4A5",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A5 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.37"
+    },
+    {
+      "source": "LRTOMT",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRTOMT is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.37"
+    },
+    {
+      "source": "CCDC50",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC50 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.37"
+    },
+    {
+      "source": "TSHR",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSHR is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.90"
+    },
+    {
+      "source": "THRA",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THRA is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.84"
+    },
+    {
+      "source": "TG",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TG is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.84"
+    },
+    {
+      "source": "SLC5A5",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC5A5 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.82"
+    },
+    {
+      "source": "DUOX2",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DUOX2 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.81"
+    },
+    {
+      "source": "SECISBP2",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SECISBP2 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.80"
+    },
+    {
+      "source": "PAX8",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX8 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.78"
+    },
+    {
+      "source": "TPO",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPO is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.78"
+    },
+    {
+      "source": "IGSF1",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGSF1 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.78"
+    },
+    {
+      "source": "TSHB",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSHB is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.76"
+    },
+    {
+      "source": "KAT6B",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KAT6B is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.76"
+    },
+    {
+      "source": "TRHR",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRHR is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.73"
+    },
+    {
+      "source": "DUOXA2",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DUOXA2 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.72"
+    },
+    {
+      "source": "NKX2-5",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX2-5 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.71"
+    },
+    {
+      "source": "IYD",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IYD is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.65"
+    },
+    {
+      "source": "IFIH1",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFIH1 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.64"
+    },
+    {
+      "source": "GLIS3",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLIS3 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.64"
+    },
+    {
+      "source": "THRB",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THRB is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.63"
+    },
+    {
+      "source": "FOXE1",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXE1 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.59"
+    },
+    {
+      "source": "KCNJ10",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNJ10 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.59"
+    },
+    {
+      "source": "CTLA4",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTLA4 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.59"
+    },
+    {
+      "source": "SH2B3",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2B3 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.59"
+    },
+    {
+      "source": "CEP128",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEP128 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.58"
+    },
+    {
+      "source": "IL7R",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL7R is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.58"
+    },
+    {
+      "source": "TLR3",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR3 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.58"
+    },
+    {
+      "source": "ADCY7",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADCY7 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.57"
+    },
+    {
+      "source": "JAK1",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK1 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.57"
+    },
+    {
+      "source": "IRS4",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRS4 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.57"
+    },
+    {
+      "source": "FLT3",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.57"
+    },
+    {
+      "source": "TYK2",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYK2 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.56"
+    },
+    {
+      "source": "PTEN",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.56"
+    },
+    {
+      "source": "TBX21",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX21 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.55"
+    },
+    {
+      "source": "BACH2",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BACH2 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.55"
+    },
+    {
+      "source": "RNASET2",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNASET2 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.55"
+    },
+    {
+      "source": "PTPN22",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN22 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.55"
+    },
+    {
+      "source": "C1QTNF6",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C1QTNF6 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.54"
+    },
+    {
+      "source": "FCRL3",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCRL3 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.54"
+    },
+    {
+      "source": "CD226",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD226 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.54"
+    },
+    {
+      "source": "PDE10A",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE10A is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.54"
+    },
+    {
+      "source": "TNFRSF14",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF14 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.54"
+    },
+    {
+      "source": "VEGFC",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFC is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.53"
+    },
+    {
+      "source": "BHLHE40",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BHLHE40 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.53"
+    },
+    {
+      "source": "NFATC1",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFATC1 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.53"
+    },
+    {
+      "source": "VAV3",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VAV3 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.53"
+    },
+    {
+      "source": "IRF4",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF4 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.53"
+    },
+    {
+      "source": "SYN2",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYN2 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.52"
+    },
+    {
+      "source": "NRG1",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRG1 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.52"
+    },
+    {
+      "source": "RASGRP1",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASGRP1 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.52"
+    },
+    {
+      "source": "PKN3",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKN3 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.52"
+    },
+    {
+      "source": "TNFSF11",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF11 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.52"
+    },
+    {
+      "source": "ZNF800",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF800 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.52"
+    },
+    {
+      "source": "PLGRKT",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLGRKT is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.52"
+    },
+    {
+      "source": "SPATA6",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA6 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.51"
+    },
+    {
+      "source": "PDE8B",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE8B is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.51"
+    },
+    {
+      "source": "CCR9",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR9 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.51"
+    },
+    {
+      "source": "APOBR",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOBR is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.51"
+    },
+    {
+      "source": "CHRNA9",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHRNA9 is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.51"
+    },
+    {
+      "source": "CPVL",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPVL is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.51"
+    },
+    {
+      "source": "CLNK",
+      "target": "hypothyroidism (HYPOTHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLNK is associated with hypothyroidism (HYPOTHYROIDISM). Open Targets association score 0.51"
+    }
+  ]
+}

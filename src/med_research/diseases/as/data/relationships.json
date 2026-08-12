@@ -1,0 +1,90 @@
+{
+  "disease_id": "as",
+  "disease_name": "Ankylosing Spondylitis",
+  "relationships": [
+    {
+      "source": "HLA-B27",
+      "type": "ASSOCIATED_WITH",
+      "target": "Ankylosing Spondylitis",
+      "evidence": "Dominant genetic marker associated with >85% of AS cases."
+    },
+    {
+      "source": "ERAP1",
+      "type": "ASSOCIATED_WITH",
+      "target": "Ankylosing Spondylitis",
+      "evidence": "Peptide trimming enzyme interacting epistatically with HLA-B27."
+    },
+    {
+      "source": "IL23R",
+      "type": "ASSOCIATED_WITH",
+      "target": "Ankylosing Spondylitis",
+      "evidence": "Drives entheseal inflammatory T cell activation."
+    },
+    {
+      "source": "IL12B",
+      "type": "ASSOCIATED_WITH",
+      "target": "Ankylosing Spondylitis",
+      "evidence": "IL-23 cytokine subunit component."
+    },
+    {
+      "source": "secukinumab",
+      "type": "TREATS",
+      "target": "Ankylosing Spondylitis",
+      "evidence": "Approved disease treatment"
+    },
+    {
+      "source": "secukinumab",
+      "type": "TARGETS",
+      "target": "IL17A",
+      "evidence": "Anti-IL-17A monoclonal antibody"
+    },
+    {
+      "source": "ixekizumab",
+      "type": "TREATS",
+      "target": "Ankylosing Spondylitis",
+      "evidence": "Approved disease treatment"
+    },
+    {
+      "source": "ixekizumab",
+      "type": "TARGETS",
+      "target": "IL17A",
+      "evidence": "Humanized anti-IL-17A mAb"
+    },
+    {
+      "source": "upadacitinib",
+      "type": "TREATS",
+      "target": "Ankylosing Spondylitis",
+      "evidence": "Approved disease treatment"
+    },
+    {
+      "source": "upadacitinib",
+      "type": "TARGETS",
+      "target": "JAK1",
+      "evidence": "Selective JAK1 inhibitor"
+    },
+    {
+      "source": "HLA-B27",
+      "type": "PARTICIPATES_IN",
+      "target": "hla-b27-presentation",
+      "evidence": "Key component of HLA-B27 Misfolding & Antigen Presentation"
+    },
+    {
+      "source": "ERAP1",
+      "type": "PARTICIPATES_IN",
+      "target": "hla-b27-presentation",
+      "evidence": "Key component of HLA-B27 Misfolding & Antigen Presentation"
+    },
+    {
+      "source": "IL23R",
+      "type": "PARTICIPATES_IN",
+      "target": "il23-il17-as",
+      "evidence": "Key component of IL-23/IL-17 Axis"
+    },
+    {
+      "source": "IL12B",
+      "type": "PARTICIPATES_IN",
+      "target": "il23-il17-as",
+      "evidence": "Key component of IL-23/IL-17 Axis"
+    }
+  ]
+}

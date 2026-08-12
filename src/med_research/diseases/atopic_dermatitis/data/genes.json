@@ -1,0 +1,66 @@
+{
+  "disease_id": "atopic_dermatitis",
+  "disease_name": "Atopic Dermatitis",
+  "genes": [
+    {
+      "id": "FLG",
+      "symbol": "FLG",
+      "name": "Filaggrin",
+      "category": "Epidermal Barrier Function",
+      "association_score": 0.98,
+      "odds_ratio": 3.5,
+      "disease_evidence": "Major loss-of-function skin barrier gene causing skin permeability.",
+      "gwas_pvalue": 1e-120,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "IL4R",
+      "symbol": "IL4R",
+      "name": "Interleukin 4 Receptor",
+      "category": "Type 2 Immune Signaling",
+      "association_score": 0.94,
+      "odds_ratio": 2.2,
+      "disease_evidence": "Shared receptor subunit for IL-4 and IL-13 cytokines.",
+      "gwas_pvalue": 1e-70,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "IL13",
+      "symbol": "IL13",
+      "name": "Interleukin 13",
+      "category": "Type 2 Immune Signaling",
+      "association_score": 0.92,
+      "odds_ratio": 2.0,
+      "disease_evidence": "Dominant Type 2 cytokine in AD cutaneous lesions.",
+      "gwas_pvalue": 1e-60,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "TSLP",
+      "symbol": "TSLP",
+      "name": "Thymic Stromal Lymphopoietin",
+      "category": "Epidermal Barrier Function",
+      "association_score": 0.88,
+      "odds_ratio": 1.8,
+      "disease_evidence": "Epithelial alarmin triggering dendritic cell T2 priming.",
+      "gwas_pvalue": 1e-45,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "JAK1",
+      "symbol": "JAK1",
+      "name": "Janus Kinase 1",
+      "category": "JAK-STAT Signaling",
+      "association_score": 0.86,
+      "odds_ratio": 1.6,
+      "disease_evidence": "Downstream transducer of IL-4, IL-13, and IL-31 pruritic signals.",
+      "gwas_pvalue": 1e-35,
+      "chromosome": "unknown",
+      "function": "unknown"
+    }
+  ]
+}

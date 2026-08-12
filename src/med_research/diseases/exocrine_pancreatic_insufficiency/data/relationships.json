@@ -1,0 +1,874 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1503",
+      "target": "ATP4A",
+      "type": "TARGETS",
+      "description": "OMEPRAZOLE targets ATP4A."
+    },
+    {
+      "source": "ATG7",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "ATG7 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "SLC4A4",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC4A4 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "COL1A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL1A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP8",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP8 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "TIMP1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TIMP1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "PDX1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PDX1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "GLP1R",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GLP1R is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HNF1B",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1B is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "ACE2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ATG7",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ATG7 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "LTBP3",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP3 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF11A",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11A is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF11",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF11 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "RUNX2",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "RUNX2 is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "TNFRSF11A",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11A is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "TNFSF11",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF11 is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "C9orf72",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C9orf72 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "EIF2AK3",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "EIF2AK3 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RELB",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELB is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "RPS6KA3",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "RPS6KA3 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "LTBP3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "UNC93B1",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "UNC93B1 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ABCB4",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB4 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "PIEZO2",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIEZO2 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.27"
+    },
+    {
+      "source": "ATP4A",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP4A is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.26"
+    },
+    {
+      "source": "CTR9",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTR9 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.12"
+    },
+    {
+      "source": "LIPF",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPF is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CELA3B",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELA3B is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "CELA1",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELA1 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "CELA3A",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELA3A is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "CFTR",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFTR is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "CCK",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCK is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "PNLIP",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PNLIP is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "PDX1",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDX1 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "ATG7",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATG7 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "CHI3L1",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHI3L1 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "SCT",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCT is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNF",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "GCG",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCG is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "LEP",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GAST",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAST is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "COX4I2",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COX4I2 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "INS",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ARG1",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARG1 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CBL",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBL is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GATA6",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA6 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "HNF1A",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "APOA2",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA2 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPINK1",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPINK1 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATP12A",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP12A is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "HNF1B",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1B is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CLPS",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLPS is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "EFL1",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EFL1 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PPY",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPY is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TCN1",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCN1 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TMPRSS15",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMPRSS15 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "YARS2",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YARS2 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZGLP1",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZGLP1 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "EHMT1",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EHMT1 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GLP1R",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLP1R is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALB",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CTLA4",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTLA4 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NPY",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPY is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPL17",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADCY10",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADCY10 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC4A4",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC4A4 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "LIPA",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPA is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLB1",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLB1 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "BDNF",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BDNF is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SERPINI2",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINI2 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "VIP",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VIP is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "EPB41",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPB41 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MCAT",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCAT is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MCPH1",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCPH1 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC16A1",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC16A1 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "KEAP1",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KEAP1 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SOD2",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD2 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GPT",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP9",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TIMP1",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMP1 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP8",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP8 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACE2",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE2 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADIPOQ",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADIPOQ is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "FOXP3",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SPTA1",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTA1 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "FGFR3",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ABCB4",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB4 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNFSF11",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF11 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ANK1",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK1 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PKHD1",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKHD1 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "C9orf72",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C9orf72 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SNX10",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNX10 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "TREX1",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TREX1 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "RUNX2",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX2 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "MPZL3",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPZL3 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "AHR",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHR is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "NR1H4",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR1H4 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "DLX5",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLX5 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "BCL6",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL6 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "TET2",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PKD1",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKD1 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "RELB",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELB is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL2",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "TTC7A",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTC7A is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CEBPE",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEBPE is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "EIF2AK3",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF2AK3 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNFRSF11A",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF11A is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "UNC93B1",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UNC93B1 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "RUNX3",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX3 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL1A1",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL1A1 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTPN2",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN2 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "IKZF1",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "IBSP",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IBSP is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ANO5",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANO5 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "RPS6KA3",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPS6KA3 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "NLRP3",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP3 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTPN6",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN6 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CHSY1",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHSY1 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "DMP1",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMP1 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "KRT8",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT8 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SH3BP2",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH3BP2 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "BRAF",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SP3",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SP3 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "LTBP3",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTBP3 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SHARPIN",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHARPIN is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "NKX2-3",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX2-3 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SPRY2",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPRY2 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SOX17",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX17 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "NELL1",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NELL1 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "NOTUM",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTUM is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "GJA1",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA1 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "MUC13",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC13 is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "FCGR2A",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2A is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "FCGR2C",
+      "target": "exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2C is associated with exocrine pancreatic insufficiency (EXOCRINE_PANCREATIC_INSUFFICIENCY). Open Targets association score 0.04"
+    }
+  ]
+}

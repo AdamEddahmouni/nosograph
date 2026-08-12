@@ -1,0 +1,868 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL160",
+      "target": "PPIA",
+      "type": "TARGETS",
+      "description": "CYCLOSPORINE targets PPIA."
+    },
+    {
+      "source": "CHEMBL4594250",
+      "target": "ROCK2",
+      "type": "TARGETS",
+      "description": "NETARSUDIL targets ROCK2."
+    },
+    {
+      "source": "CHEMBL160",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "TREATS",
+      "description": "CYCLOSPORINE is phase 4 / marketed for Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)."
+    },
+    {
+      "source": "CDK5RAP2",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK5RAP2 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MEGF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "MEGF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ZNF76",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ZNF76 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "COL8A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL8A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL8A2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL8A2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A4",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A4 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "TRAF1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "TGFBI",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBI is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "SMAD4",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD4 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TRAF1",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF1 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CACNA2D3",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA2D3 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "KCNH5",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNH5 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "SLC4A11",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC4A11 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "THRB",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THRB is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "THSD7A",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THSD7A is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TGFBI",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBI is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "THRB",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "THRB is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "CYP1B1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP1B1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "COL4A3",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A3 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.48"
+    },
+    {
+      "source": "TCF4",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF4 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.42"
+    },
+    {
+      "source": "MFF",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MFF is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.38"
+    },
+    {
+      "source": "COL4A4",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A4 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.37"
+    },
+    {
+      "source": "PPIA",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPIA is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.37"
+    },
+    {
+      "source": "DCC",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCC is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.35"
+    },
+    {
+      "source": "MEX3C",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEX3C is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.35"
+    },
+    {
+      "source": "TNRC18",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNRC18 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.33"
+    },
+    {
+      "source": "BRINP1",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRINP1 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.33"
+    },
+    {
+      "source": "PPARD",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARD is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.32"
+    },
+    {
+      "source": "CDK5RAP2",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK5RAP2 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.32"
+    },
+    {
+      "source": "BTBD9",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTBD9 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.26"
+    },
+    {
+      "source": "GLO1",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLO1 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.23"
+    },
+    {
+      "source": "ERAP1",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERAP1 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.21"
+    },
+    {
+      "source": "MYO5B",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO5B is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.21"
+    },
+    {
+      "source": "CAST",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAST is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.17"
+    },
+    {
+      "source": "STOM",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STOM is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.17"
+    },
+    {
+      "source": "TFAP2C",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFAP2C is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.15"
+    },
+    {
+      "source": "MACROH2A1",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MACROH2A1 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.15"
+    },
+    {
+      "source": "DNAH8",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAH8 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.14"
+    },
+    {
+      "source": "TCP11",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCP11 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "OR2L13",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OR2L13 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.10"
+    },
+    {
+      "source": "FKBP5",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKBP5 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.09"
+    },
+    {
+      "source": "ZFAND3",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFAND3 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "MEGF9",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEGF9 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "WNK2",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNK2 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ACAA2",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACAA2 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "TF",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TF is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "GSN",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSN is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "ILRUN",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ILRUN is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "DEF6",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEF6 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "TEAD3",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TEAD3 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "ELAC1",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELAC1 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "SNRPC",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNRPC is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "BLTP3A",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLTP3A is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "TAF11",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAF11 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "RAB14",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB14 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "TULP1",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TULP1 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "FANCE",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCE is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "TRAF1",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRAF1 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "TTLL11",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTLL11 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "RPL10A",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL10A is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "CNTRL",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNTRL is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "ME2",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ME2 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "DAB2IP",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DAB2IP is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZNF76",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF76 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "ANKS1A",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKS1A is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "SCUBE3",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCUBE3 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "GGTA1",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGTA1 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "C5",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C5 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "SMAD4",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD4 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC5A2",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC5A2 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "STING1",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STING1 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "GABPA",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABPA is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "FOSL2",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOSL2 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "PPARA",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARA is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "NLRP3",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP3 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL10",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL1B",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "SLC4A11",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC4A11 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.81"
+    },
+    {
+      "source": "ZEB1",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.57"
+    },
+    {
+      "source": "LAMC1",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMC1 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.44"
+    },
+    {
+      "source": "ATP1B1",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP1B1 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.44"
+    },
+    {
+      "source": "LAMB1",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMB1 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.42"
+    },
+    {
+      "source": "RAB27B",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB27B is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.42"
+    },
+    {
+      "source": "KANK4",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KANK4 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.39"
+    },
+    {
+      "source": "THSD7A",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THSD7A is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.39"
+    },
+    {
+      "source": "MBNL1",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MBNL1 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.38"
+    },
+    {
+      "source": "MBD2",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MBD2 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.34"
+    },
+    {
+      "source": "PIDD1",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIDD1 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.31"
+    },
+    {
+      "source": "SSBP3",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSBP3 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.30"
+    },
+    {
+      "source": "CCDC68",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC68 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.30"
+    },
+    {
+      "source": "PRNP",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRNP is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.29"
+    },
+    {
+      "source": "KCNH5",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNH5 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.29"
+    },
+    {
+      "source": "ATP8B1",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP8B1 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.28"
+    },
+    {
+      "source": "FGFR3",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.27"
+    },
+    {
+      "source": "CTXND1",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTXND1 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.27"
+    },
+    {
+      "source": "RIF1",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIF1 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.26"
+    },
+    {
+      "source": "LAMC2",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMC2 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.23"
+    },
+    {
+      "source": "THRB",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THRB is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.23"
+    },
+    {
+      "source": "TXNL1",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TXNL1 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.20"
+    },
+    {
+      "source": "ST8SIA3",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ST8SIA3 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.20"
+    },
+    {
+      "source": "DYNAP",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYNAP is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.19"
+    },
+    {
+      "source": "CACNA2D3",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA2D3 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.19"
+    },
+    {
+      "source": "GABRG2",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRG2 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.19"
+    },
+    {
+      "source": "AGBL1",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGBL1 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.17"
+    },
+    {
+      "source": "HS3ST3B1",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HS3ST3B1 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.16"
+    },
+    {
+      "source": "WDR7",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR7 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.14"
+    },
+    {
+      "source": "PNPLA2",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PNPLA2 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.14"
+    },
+    {
+      "source": "COL8A2",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL8A2 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.12"
+    },
+    {
+      "source": "STARD6",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STARD6 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "POLI",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLI is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.10"
+    },
+    {
+      "source": "PAX6",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX6 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.10"
+    },
+    {
+      "source": "PRMT2IP",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRMT2IP is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.10"
+    },
+    {
+      "source": "PPIP5K2",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPIP5K2 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.10"
+    },
+    {
+      "source": "FOXE3",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXE3 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.10"
+    },
+    {
+      "source": "KRT12",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT12 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.10"
+    },
+    {
+      "source": "DSTN",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSTN is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.10"
+    },
+    {
+      "source": "FOXC1",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC1 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.09"
+    },
+    {
+      "source": "ROCK2",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROCK2 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.09"
+    },
+    {
+      "source": "ROCK1",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROCK1 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.09"
+    },
+    {
+      "source": "BEST2",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BEST2 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.09"
+    },
+    {
+      "source": "UBIAD1",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBIAD1 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.09"
+    },
+    {
+      "source": "TGFBI",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFBI is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.09"
+    },
+    {
+      "source": "COL8A1",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL8A1 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.09"
+    },
+    {
+      "source": "RAD54L",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAD54L is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.09"
+    },
+    {
+      "source": "ADCYAP1",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADCYAP1 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.09"
+    },
+    {
+      "source": "ENSG00000293685",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENSG00000293685 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.09"
+    },
+    {
+      "source": "CRYGD",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYGD is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.09"
+    },
+    {
+      "source": "CHST6",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHST6 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.09"
+    },
+    {
+      "source": "CHST5",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHST5 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.09"
+    },
+    {
+      "source": "CRYAA",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYAA is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.09"
+    },
+    {
+      "source": "CRYBA2",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYBA2 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.09"
+    },
+    {
+      "source": "CYP1B1",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP1B1 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.09"
+    },
+    {
+      "source": "CRYGC",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYGC is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "HSF4",
+      "target": "Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSF4 is associated with Fuchs' endothelial dystrophy (FUCHS_DYSTROPHY). Open Targets association score 0.08"
+    }
+  ]
+}

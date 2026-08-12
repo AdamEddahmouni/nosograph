@@ -1,0 +1,54 @@
+{
+  "disease_id": "asthma",
+  "disease_name": "Chronic Airway Inflammation (Asthma)",
+  "genes": [
+    {
+      "id": "IL5",
+      "symbol": "IL5",
+      "name": "Interleukin 5",
+      "category": "Type 2 Immune Signaling",
+      "association_score": 0.94,
+      "odds_ratio": 2.2,
+      "disease_evidence": "Primary cytokine regulating eosinophil differentiation and survival.",
+      "gwas_pvalue": 1e-65,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "TSLP",
+      "symbol": "TSLP",
+      "name": "Thymic Stromal Lymphopoietin",
+      "category": "Epidermal Barrier Function",
+      "association_score": 0.92,
+      "odds_ratio": 2.0,
+      "disease_evidence": "Upstream epithelial alarmin initiating airway Type 2 cascade.",
+      "gwas_pvalue": 1e-55,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "IL4R",
+      "symbol": "IL4R",
+      "name": "Interleukin 4 Receptor",
+      "category": "Type 2 Immune Signaling",
+      "association_score": 0.9,
+      "odds_ratio": 1.9,
+      "disease_evidence": "Receptor subunit mediating IgE class switching and mucus hypersecretion.",
+      "gwas_pvalue": 1e-50,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "ADAM33",
+      "symbol": "ADAM33",
+      "name": "ADAM Metallopeptidase Domain 33",
+      "category": "Fibrosis & Tissue Remodeling",
+      "association_score": 0.84,
+      "odds_ratio": 1.5,
+      "disease_evidence": "Airway smooth muscle hyperresponsiveness and remodeling gene.",
+      "gwas_pvalue": 1e-30,
+      "chromosome": "unknown",
+      "function": "unknown"
+    }
+  ]
+}

@@ -1,0 +1,754 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL2109334",
+      "target": "CD19",
+      "type": "TARGETS",
+      "description": "INEBILIZUMAB targets CD19."
+    },
+    {
+      "source": "CHEMBL4298134",
+      "target": "CD19",
+      "type": "TARGETS",
+      "description": "OBEXELIMAB targets CD19."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCL25",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL25 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL10",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL10 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL9",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL9 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR3",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR3 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR5",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR5 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "HAVCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "HAVCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL33",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL33 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "FABP1",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "FABP1 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "AGT",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGT is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "REN",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "REN is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "DRD2",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "DRD2 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "HTR6",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "HTR6 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "SLC6A3",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC6A3 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR3",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR3 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF1A",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF1A is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF13B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF13B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNA1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNA17",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA17 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNA2",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA2 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "HIF1A",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "HIF1A is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "GSTK1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTK1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SLCO6A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLCO6A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CD19",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD19 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IFNA1",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA1 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "RPL17",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "SNCA",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "RPL17-C18orf32",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17-C18orf32 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "PDCD1",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "SPATA2",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA2 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "VEGFA",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "CCN3",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCN3 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "HAVCR1",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAVCR1 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "CXCR3",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR3 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "CSF3",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "HMBS",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMBS is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "TLR3",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR3 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "CD4",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ALAS1",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALAS1 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CXCL9",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL9 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "INS",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "APOA2",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA2 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CDKN1A",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1A is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CCL25",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL25 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "NSG1",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSG1 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "TCEAL1",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCEAL1 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "IFNA17",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA17 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "IFNA2",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA2 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "FABP1",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FABP1 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "GOT2",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GOT2 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "DRD2",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DRD2 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CLU",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLU is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CXCL10",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL10 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "RET",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD69",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD69 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PPOX",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPOX is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "NPPB",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPB is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL2RA",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RA is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "ISG20",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ISG20 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "MAP3K7",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K7 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD5L",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD5L is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "DNMT1",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT1 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "SERPINH1",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINH1 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "GSDMB",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMB is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "REN",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REN is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CA2",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CA2 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CCND1",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL33",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL33 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFNG",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "SOD1",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD1 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "AIP",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIP is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "KRAS",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "FOXP3",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNF",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PON1",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PON1 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SSB",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSB is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "GSTK1",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTK1 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLCO6A1",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLCO6A1 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CHI3L1",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHI3L1 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CTLA4",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTLA4 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD8A",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TGFB1",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CRP",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.10"
+    },
+    {
+      "source": "IL1B",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "TNFRSF1A",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF1A is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "NAMPT",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAMPT is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "HIF1A",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIF1A is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "SLC6A3",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A3 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "CST3",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CST3 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "AGT",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGT is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "APOA1",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA1 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL7",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL7 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD19",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD19 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CFTR",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFTR is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "HTR6",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTR6 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL17A",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "MEN1",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEN1 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNFSF13B",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF13B is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "APOB",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRSS1",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRSS1 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CXCR5",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR5 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "BACH2",
+      "target": "autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BACH2 is associated with autoimmune pancreatitis (AUTOIMMUNE_PANCREATITIS). Open Targets association score 0.04"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "disease_id": "gout",
+  "disease_name": "Gout",
+  "relationships": [
+    {
+      "source": "SLC2A9",
+      "type": "ASSOCIATED_WITH",
+      "target": "Gout",
+      "evidence": "Major renal urate reabsorption transporter."
+    },
+    {
+      "source": "ABCG2",
+      "type": "ASSOCIATED_WITH",
+      "target": "Gout",
+      "evidence": "Intestinal and renal urate efflux pump."
+    },
+    {
+      "source": "SLC22A12",
+      "type": "ASSOCIATED_WITH",
+      "target": "Gout",
+      "evidence": "Apical renal urate anion exchanger."
+    },
+    {
+      "source": "NLRP3",
+      "type": "ASSOCIATED_WITH",
+      "target": "Gout",
+      "evidence": "Sensory receptor for urate crystals initiating IL-1 beta cleavage."
+    },
+    {
+      "source": "IL1B",
+      "type": "ASSOCIATED_WITH",
+      "target": "Gout",
+      "evidence": "Primary inflammatory cytokine causing acute gouty flare."
+    },
+    {
+      "source": "allopurinol",
+      "type": "TREATS",
+      "target": "Gout",
+      "evidence": "Approved disease treatment"
+    },
+    {
+      "source": "allopurinol",
+      "type": "TARGETS",
+      "target": "XDH",
+      "evidence": "Xanthine oxidase inhibitor reducing uric acid synthesis"
+    },
+    {
+      "source": "febuxostat",
+      "type": "TREATS",
+      "target": "Gout",
+      "evidence": "Approved disease treatment"
+    },
+    {
+      "source": "febuxostat",
+      "type": "TARGETS",
+      "target": "XDH",
+      "evidence": "Non-purine selective xanthine oxidase inhibitor"
+    },
+    {
+      "source": "colchicine",
+      "type": "TREATS",
+      "target": "Gout",
+      "evidence": "Approved disease treatment"
+    },
+    {
+      "source": "colchicine",
+      "type": "TARGETS",
+      "target": "TUBB",
+      "evidence": "Microtubule assembly inhibitor blocking neutrophil chemotaxis"
+    },
+    {
+      "source": "canakinumab",
+      "type": "TREATS",
+      "target": "Gout",
+      "evidence": "Approved disease treatment"
+    },
+    {
+      "source": "canakinumab",
+      "type": "TARGETS",
+      "target": "IL1B",
+      "evidence": "Human anti-IL-1 beta monoclonal antibody"
+    },
+    {
+      "source": "SLC2A9",
+      "type": "PARTICIPATES_IN",
+      "target": "urate-transport",
+      "evidence": "Key component of Renal & Intestinal Urate Transport"
+    },
+    {
+      "source": "ABCG2",
+      "type": "PARTICIPATES_IN",
+      "target": "urate-transport",
+      "evidence": "Key component of Renal & Intestinal Urate Transport"
+    },
+    {
+      "source": "SLC22A12",
+      "type": "PARTICIPATES_IN",
+      "target": "urate-transport",
+      "evidence": "Key component of Renal & Intestinal Urate Transport"
+    },
+    {
+      "source": "NLRP3",
+      "type": "PARTICIPATES_IN",
+      "target": "nlrp3-inflammasome",
+      "evidence": "Key component of NLRP3 Inflammasome Activation"
+    },
+    {
+      "source": "IL1B",
+      "type": "PARTICIPATES_IN",
+      "target": "nlrp3-inflammasome",
+      "evidence": "Key component of NLRP3 Inflammasome Activation"
+    }
+  ]
+}

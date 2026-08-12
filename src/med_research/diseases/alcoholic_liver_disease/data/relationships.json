@@ -1,0 +1,844 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL131",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "PREDNISOLONE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL25",
+      "target": "PTGS1",
+      "type": "TARGETS",
+      "description": "ASPIRIN targets PTGS1."
+    },
+    {
+      "source": "CHEMBL1016",
+      "target": "AGTR1",
+      "type": "TARGETS",
+      "description": "CANDESARTAN targets AGTR1."
+    },
+    {
+      "source": "CHEMBL25",
+      "target": "PTGS2",
+      "type": "TARGETS",
+      "description": "ASPIRIN targets PTGS2."
+    },
+    {
+      "source": "CHEMBL2364648",
+      "target": "IL23A",
+      "type": "TARGETS",
+      "description": "GUSELKUMAB targets IL23A."
+    },
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CCL5",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL5 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "TM6SF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TM6SF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ZNF827",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ZNF827 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ZNF281",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ZNF281 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HAMP",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "HAMP is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1R1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1R1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "AGTR1",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGTR1 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL23A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL23A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "PTGS1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "HIF1A",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "HIF1A is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "CYP2E1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP2E1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GSTM1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTM1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SULT4A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SULT4A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "RIPK3",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "RIPK3 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "OAS1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "OAS1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "OAS3",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "OAS3 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "GGT1",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGT1 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.48"
+    },
+    {
+      "source": "PNPLA3",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PNPLA3 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.45"
+    },
+    {
+      "source": "HNF1A",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.32"
+    },
+    {
+      "source": "ZNF827",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF827 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.32"
+    },
+    {
+      "source": "C4orf36",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C4orf36 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.29"
+    },
+    {
+      "source": "DGKI",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DGKI is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.27"
+    },
+    {
+      "source": "NR3C1",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.26"
+    },
+    {
+      "source": "TM6SF2",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TM6SF2 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.22"
+    },
+    {
+      "source": "CELF4",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELF4 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.22"
+    },
+    {
+      "source": "SUGP1",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUGP1 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.17"
+    },
+    {
+      "source": "PTN",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTN is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "MAU2",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAU2 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "C12orf43",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C12orf43 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "LRRC75B",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRC75B is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "TNF",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "ZNF281",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF281 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "AGTR1",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGTR1 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL23A",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL23A is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL37",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL37 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD79A",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CYP2E1",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP2E1 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SULT4A1",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SULT4A1 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CEACAM5",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM5 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "GSTM1",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTM1 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CHI3L1",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHI3L1 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "MLKL",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLKL is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "GPT",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "TGFB1",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "ALDH2",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALDH2 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "GAST",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAST is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "DDR2",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDR2 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "LAMB2",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMB2 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "NCAN",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCAN is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "AGER",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGER is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "MOK",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MOK is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "TF",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TF is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "PPARA",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARA is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "SPP1",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPP1 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "IGF1",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "SLC10A6",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC10A6 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CXCL8",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "PTGS2",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL10",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "MMP2",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "GABPA",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABPA is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD14",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD14 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "ICAM1",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL17A",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "ADH4",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADH4 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "ADH1B",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADH1B is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "LCAT",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCAT is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CCL5",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL5 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "ENPP2",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENPP2 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "PTGS1",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS1 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "HAMP",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAMP is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "PEPD",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PEPD is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "HIF1A",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIF1A is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "HMGB1",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGB1 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL6",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CSF3R",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3R is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.38"
+    },
+    {
+      "source": "AR",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.37"
+    },
+    {
+      "source": "SERPINA1",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA1 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.37"
+    },
+    {
+      "source": "HSD17B13",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSD17B13 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.36"
+    },
+    {
+      "source": "PDE4B",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE4B is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.35"
+    },
+    {
+      "source": "PDE4A",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE4A is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.35"
+    },
+    {
+      "source": "ADORA2B",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADORA2B is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.35"
+    },
+    {
+      "source": "PDE5A",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE5A is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.35"
+    },
+    {
+      "source": "PDE6A",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE6A is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.35"
+    },
+    {
+      "source": "PDE7B",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE7B is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.35"
+    },
+    {
+      "source": "PDE1A",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE1A is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.35"
+    },
+    {
+      "source": "PDE6D",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE6D is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.35"
+    },
+    {
+      "source": "PDE6G",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE6G is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.35"
+    },
+    {
+      "source": "PDE6B",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE6B is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.35"
+    },
+    {
+      "source": "PDE3B",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE3B is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.35"
+    },
+    {
+      "source": "PDE8A",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE8A is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.35"
+    },
+    {
+      "source": "PDE10A",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE10A is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.35"
+    },
+    {
+      "source": "ADORA2A",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADORA2A is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.35"
+    },
+    {
+      "source": "PDE4C",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE4C is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.35"
+    },
+    {
+      "source": "PDE6C",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE6C is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.35"
+    },
+    {
+      "source": "PDE1C",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE1C is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.35"
+    },
+    {
+      "source": "PDE3A",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE3A is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.35"
+    },
+    {
+      "source": "PDE8B",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE8B is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.35"
+    },
+    {
+      "source": "PDE9A",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE9A is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.35"
+    },
+    {
+      "source": "PDE1B",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE1B is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.35"
+    },
+    {
+      "source": "PDE4D",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE4D is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.35"
+    },
+    {
+      "source": "PDE7A",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE7A is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.35"
+    },
+    {
+      "source": "PDE2A",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE2A is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.35"
+    },
+    {
+      "source": "PDE6H",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE6H is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.35"
+    },
+    {
+      "source": "BRAP",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAP is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.32"
+    },
+    {
+      "source": "TMC4",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMC4 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.25"
+    },
+    {
+      "source": "OAS3",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OAS3 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.25"
+    },
+    {
+      "source": "IL1R1",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1R1 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.20"
+    },
+    {
+      "source": "POU2F1",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU2F1 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.13"
+    },
+    {
+      "source": "OAS1",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OAS1 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.13"
+    },
+    {
+      "source": "IL1B",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.10"
+    },
+    {
+      "source": "ATP2A2",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP2A2 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "IMPDH1",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IMPDH1 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "TLR4",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "IMPDH2",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IMPDH2 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "MAP3K5",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K5 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "RIPK3",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIPK3 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "SERPINA6",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA6 is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "CRP",
+      "target": "alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with alcoholic liver diseases (ALCOHOLIC_LIVER_DISEASE). Open Targets association score 0.07"
+    }
+  ]
+}

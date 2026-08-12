@@ -1,0 +1,874 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL160",
+      "target": "PPIA",
+      "type": "TARGETS",
+      "description": "CYCLOSPORINE targets PPIA."
+    },
+    {
+      "source": "CHEMBL1542",
+      "target": "PPAT",
+      "type": "TARGETS",
+      "description": "AZATHIOPRINE targets PPAT."
+    },
+    {
+      "source": "CHEMBL1201621",
+      "target": "GHR",
+      "type": "TARGETS",
+      "description": "SOMATROPIN targets GHR."
+    },
+    {
+      "source": "CHEMBL1201580",
+      "target": "TNF",
+      "type": "TARGETS",
+      "description": "ADALIMUMAB targets TNF."
+    },
+    {
+      "source": "CHEMBL4594565",
+      "target": "TFRC",
+      "type": "TARGETS",
+      "description": "PABINAFUSP ALFA targets TFRC."
+    },
+    {
+      "source": "FGF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ADAM17",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAM17 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL2A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL2A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "DPP4",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "DPP4 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "CD34",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD34 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "FBN1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "FBN1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TP53BP2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53BP2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GLI3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "SMOC1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SMOC1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "BMP4",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP4 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "BMPER",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMPER is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "TFR2",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "TFR2 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "TFRC",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "TFRC is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFRL1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFRL1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "TGFB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "ARSB",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARSB is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.58"
+    },
+    {
+      "source": "IDS",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDS is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.48"
+    },
+    {
+      "source": "GLB1",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLB1 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.46"
+    },
+    {
+      "source": "HYAL1",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HYAL1 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.46"
+    },
+    {
+      "source": "GUSB",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GUSB is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.43"
+    },
+    {
+      "source": "IDUA",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDUA is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.34"
+    },
+    {
+      "source": "SLC26A1",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC26A1 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.34"
+    },
+    {
+      "source": "GHR",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GHR is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.07"
+    },
+    {
+      "source": "PPIA",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPIA is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.04"
+    },
+    {
+      "source": "PPAT",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPAT is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.04"
+    },
+    {
+      "source": "VPS33A",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VPS33A is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNF",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.02"
+    },
+    {
+      "source": "OGA",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OGA is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACTB",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTB is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "SGSH",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGSH is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "GH1",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "CTSK",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSK is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "ARSK",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARSK is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "DPP4",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPP4 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "PPP1CB",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP1CB is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "NAGLU",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAGLU is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "TLR4",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "CTSL",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSL is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "NEU1",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEU1 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "CST3",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CST3 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "ARSG",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARSG is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "CTSS",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSS is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "VPS16",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VPS16 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD63",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD63 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "EXTL2",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EXTL2 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "GPER1",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPER1 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "NPPC",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPC is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "IGF2",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "C3",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C3 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD34",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD34 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "EXTL3",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EXTL3 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACADVL",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACADVL is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "EBP",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EBP is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "OXTR",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OXTR is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "APP",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APP is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "CTSB",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSB is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "BTD",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTD is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "FAP",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAP is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "PAH",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAH is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYBRD1",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYBRD1 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "CLOCK",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLOCK is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "GALNS",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GALNS is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.00"
+    },
+    {
+      "source": "SUMF1",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUMF1 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.00"
+    },
+    {
+      "source": "GAL",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAL is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.00"
+    },
+    {
+      "source": "ARSH",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARSH is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.00"
+    },
+    {
+      "source": "DMD",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMD is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.00"
+    },
+    {
+      "source": "SERPIND1",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPIND1 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.00"
+    },
+    {
+      "source": "HEXB",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEXB is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.00"
+    },
+    {
+      "source": "HEXA",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEXA is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRNP",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRNP is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.00"
+    },
+    {
+      "source": "ARSA",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARSA is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.00"
+    },
+    {
+      "source": "ALAS2",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALAS2 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.00"
+    },
+    {
+      "source": "MMP2",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.00"
+    },
+    {
+      "source": "FBN1",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBN1 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.00"
+    },
+    {
+      "source": "MECP2",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MECP2 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.00"
+    },
+    {
+      "source": "TFRC",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFRC is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.49"
+    },
+    {
+      "source": "TFR2",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFR2 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.49"
+    },
+    {
+      "source": "EDNRA",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDNRA is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.06"
+    },
+    {
+      "source": "FOXC1",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC1 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.06"
+    },
+    {
+      "source": "FGFR2",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.06"
+    },
+    {
+      "source": "GLI3",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI3 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.06"
+    },
+    {
+      "source": "HSPG2",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPG2 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.06"
+    },
+    {
+      "source": "FGFR3",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.06"
+    },
+    {
+      "source": "RPGRIP1L",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPGRIP1L is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.06"
+    },
+    {
+      "source": "DLX5",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLX5 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.06"
+    },
+    {
+      "source": "MKS1",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKS1 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.06"
+    },
+    {
+      "source": "TGFB2",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB2 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.06"
+    },
+    {
+      "source": "KL",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KL is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.06"
+    },
+    {
+      "source": "ENPP1",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENPP1 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.06"
+    },
+    {
+      "source": "SH3PXD2B",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH3PXD2B is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.06"
+    },
+    {
+      "source": "FBLN1",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBLN1 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "FGF9",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF9 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "TP53BP2",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53BP2 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "ZEB1",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "SOX11",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX11 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "PSIP1",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSIP1 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "TBX1",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX1 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "LMNA",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMNA is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "ADAM17",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAM17 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "VEGFA",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "ROR2",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROR2 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "ELP1",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELP1 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "PSPH",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSPH is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "PITX2",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITX2 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "CHD7",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD7 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRICKLE1",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRICKLE1 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "BMP4",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP4 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "RXRA",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RXRA is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "FAS",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "PCSK5",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK5 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRRX1",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRRX1 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "SSR2",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSR2 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "RDH10",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RDH10 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "NKX3-2",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX3-2 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "CCN3",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCN3 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "MYH10",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH10 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "COL2A1",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL2A1 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "SMOC1",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMOC1 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "BRAF",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "BMPER",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMPER is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "TCOF1",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCOF1 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "EGFR",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "FGFRL1",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFRL1 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "PDGFRA",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRA is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "CHTOP",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHTOP is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "RPL38",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL38 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "ACAN",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACAN is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "TBC1D32",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBC1D32 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    },
+    {
+      "source": "GAS1",
+      "target": "mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAS1 is associated with mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_II). Open Targets association score 0.05"
+    }
+  ]
+}

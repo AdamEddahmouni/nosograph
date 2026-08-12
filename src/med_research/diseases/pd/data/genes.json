@@ -1,0 +1,66 @@
+{
+  "disease_id": "pd",
+  "disease_name": "Parkinson's Disease",
+  "genes": [
+    {
+      "id": "SNCA",
+      "symbol": "SNCA",
+      "name": "Synuclein Alpha",
+      "category": "Alpha-Synuclein Aggregation",
+      "association_score": 0.98,
+      "odds_ratio": 4.0,
+      "disease_evidence": "Encodes alpha-synuclein, main constituent of Lewy bodies.",
+      "gwas_pvalue": 1e-100,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "LRRK2",
+      "symbol": "LRRK2",
+      "name": "Leucine Rich Repeat Kinase 2",
+      "category": "Lysosomal/Autophagy Degradation",
+      "association_score": 0.94,
+      "odds_ratio": 3.0,
+      "disease_evidence": "Most common genetic cause of familial Parkinson's disease.",
+      "gwas_pvalue": 1e-70,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "PRKN",
+      "symbol": "PRKN",
+      "name": "Parkin RBR E3 Ubiquitin Protein Ligase",
+      "category": "Mitochondrial Dysfunction",
+      "association_score": 0.9,
+      "odds_ratio": 2.8,
+      "disease_evidence": "Drives mitophagy and recessive early-onset PD.",
+      "gwas_pvalue": 1e-50,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "PINK1",
+      "symbol": "PINK1",
+      "name": "PTEN Induced Kinase 1",
+      "category": "Mitochondrial Dysfunction",
+      "association_score": 0.88,
+      "odds_ratio": 2.5,
+      "disease_evidence": "Mitochondrial quality control kinase working with Parkin.",
+      "gwas_pvalue": 1e-45,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "GBA1",
+      "symbol": "GBA1",
+      "name": "Glucosylceramidase Beta 1",
+      "category": "Lysosomal/Autophagy Degradation",
+      "association_score": 0.92,
+      "odds_ratio": 3.5,
+      "disease_evidence": "Lysosomal enzyme deficit increasing alpha-synuclein accumulation.",
+      "gwas_pvalue": 1e-65,
+      "chromosome": "unknown",
+      "function": "unknown"
+    }
+  ]
+}

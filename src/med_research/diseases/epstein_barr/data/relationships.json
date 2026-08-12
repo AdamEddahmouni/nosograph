@@ -1,0 +1,778 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL848",
+      "target": "CUL4A",
+      "type": "TARGETS",
+      "description": "LENALIDOMIDE targets CUL4A."
+    },
+    {
+      "source": "CHEMBL4297843",
+      "target": "PDCD1",
+      "type": "TARGETS",
+      "description": "TORIPALIMAB targets PDCD1."
+    },
+    {
+      "source": "CHEMBL848",
+      "target": "RBX1",
+      "type": "TARGETS",
+      "description": "LENALIDOMIDE targets RBX1."
+    },
+    {
+      "source": "CHEMBL848",
+      "target": "CRBN",
+      "type": "TARGETS",
+      "description": "LENALIDOMIDE targets CRBN."
+    },
+    {
+      "source": "CHEMBL848",
+      "target": "DDB1",
+      "type": "TARGETS",
+      "description": "LENALIDOMIDE targets DDB1."
+    },
+    {
+      "source": "CHEMBL1201576",
+      "target": "MS4A1",
+      "type": "TARGETS",
+      "description": "RITUXIMAB targets MS4A1."
+    },
+    {
+      "source": "CHEMBL4297829",
+      "target": "PDCD1",
+      "type": "TARGETS",
+      "description": "SINTILIMAB targets PDCD1."
+    },
+    {
+      "source": "XIAP",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "XIAP is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "AURKA",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "AURKA is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "HLA-DRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "HLA-DRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "LILRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "LILRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCL22",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL22 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "PARP15",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "PARP15 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HAMP",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "HAMP is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "YTHDF1",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "YTHDF1 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "MAOA",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "MAOA is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD81",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD81 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTPN22",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PTPN22 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD47",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD47 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TNFRSF13B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF13B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF17",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF17 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNA1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "HIF1A",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "HIF1A is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "LEF1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LEF1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "WNT5A",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT5A is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "MS4A1",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MS4A1 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TNFRSF17",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF17 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "SLAMF7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SLAMF7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CUL4A",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUL4A is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.26"
+    },
+    {
+      "source": "CRBN",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRBN is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.26"
+    },
+    {
+      "source": "RBX1",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBX1 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.26"
+    },
+    {
+      "source": "DDB1",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDB1 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.26"
+    },
+    {
+      "source": "IL27RA",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL27RA is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.18"
+    },
+    {
+      "source": "RPL17",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.10"
+    },
+    {
+      "source": "PDCD1",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.09"
+    },
+    {
+      "source": "CD8A",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.09"
+    },
+    {
+      "source": "SNCA",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.09"
+    },
+    {
+      "source": "SPATA2",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA2 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.09"
+    },
+    {
+      "source": "RPL17-C18orf32",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17-C18orf32 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.09"
+    },
+    {
+      "source": "HLA-DRB1",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DRB1 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.08"
+    },
+    {
+      "source": "IFITM1",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFITM1 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.08"
+    },
+    {
+      "source": "TET2",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.08"
+    },
+    {
+      "source": "LGALS9",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS9 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.08"
+    },
+    {
+      "source": "NRP1",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRP1 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.08"
+    },
+    {
+      "source": "AURKA",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AURKA is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.08"
+    },
+    {
+      "source": "CCL22",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL22 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.07"
+    },
+    {
+      "source": "EPHA2",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHA2 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.07"
+    },
+    {
+      "source": "CD40LG",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.07"
+    },
+    {
+      "source": "OLFM4",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OLFM4 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.07"
+    },
+    {
+      "source": "RBM45",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBM45 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.07"
+    },
+    {
+      "source": "KLF4",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF4 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.06"
+    },
+    {
+      "source": "AGBL2",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGBL2 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.06"
+    },
+    {
+      "source": "CD81",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD81 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.06"
+    },
+    {
+      "source": "CD4",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.05"
+    },
+    {
+      "source": "LEF1",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEF1 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.05"
+    },
+    {
+      "source": "PDLIM7",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDLIM7 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD68",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD68 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL4",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD70",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD70 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.05"
+    },
+    {
+      "source": "IMPDH2",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IMPDH2 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.05"
+    },
+    {
+      "source": "YTHDF1",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YTHDF1 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.04"
+    },
+    {
+      "source": "ARID1A",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.04"
+    },
+    {
+      "source": "CHAF1A",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHAF1A is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFNA1",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA1 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.04"
+    },
+    {
+      "source": "YAP1",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YAP1 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.04"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.04"
+    },
+    {
+      "source": "MAOA",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAOA is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.04"
+    },
+    {
+      "source": "HLA-E",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-E is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.04"
+    },
+    {
+      "source": "YY1AP1",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YY1AP1 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.04"
+    },
+    {
+      "source": "XIAP",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XIAP is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.04"
+    },
+    {
+      "source": "HAMP",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAMP is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD274",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.04"
+    },
+    {
+      "source": "TP53",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD163",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD163 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD47",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD47 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.03"
+    },
+    {
+      "source": "WRAP53",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WRAP53 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD27",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD27 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.03"
+    },
+    {
+      "source": "ADA",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADA is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.03"
+    },
+    {
+      "source": "EGFR",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.03"
+    },
+    {
+      "source": "ABCD1",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCD1 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.03"
+    },
+    {
+      "source": "HIF1A",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIF1A is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.03"
+    },
+    {
+      "source": "INS",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.03"
+    },
+    {
+      "source": "CR2",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CR2 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.03"
+    },
+    {
+      "source": "GZMB",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GZMB is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.03"
+    },
+    {
+      "source": "IFNG",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.03"
+    },
+    {
+      "source": "CA9",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CA9 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNF",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.03"
+    },
+    {
+      "source": "WNT5A",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT5A is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.03"
+    },
+    {
+      "source": "LPP",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPP is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.38"
+    },
+    {
+      "source": "TNFRSF17",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF17 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.37"
+    },
+    {
+      "source": "PTPN22",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN22 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.36"
+    },
+    {
+      "source": "TNFRSF13B",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF13B is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.35"
+    },
+    {
+      "source": "LNPEP",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LNPEP is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.34"
+    },
+    {
+      "source": "SLAMF7",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLAMF7 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.32"
+    },
+    {
+      "source": "EOMES",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EOMES is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.32"
+    },
+    {
+      "source": "PARP15",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PARP15 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.30"
+    },
+    {
+      "source": "SPMIP7",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPMIP7 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.29"
+    },
+    {
+      "source": "SLC8A1",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC8A1 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.29"
+    },
+    {
+      "source": "SERPINB9",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINB9 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.29"
+    },
+    {
+      "source": "SCGN",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCGN is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.28"
+    },
+    {
+      "source": "ITPR3",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITPR3 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.27"
+    },
+    {
+      "source": "KSR1",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KSR1 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.25"
+    },
+    {
+      "source": "ILDR1",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ILDR1 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.25"
+    },
+    {
+      "source": "LILRB1",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LILRB1 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.21"
+    },
+    {
+      "source": "UBAC2",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBAC2 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.18"
+    },
+    {
+      "source": "CHSY3",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHSY3 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.18"
+    },
+    {
+      "source": "SLC22A5",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A5 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.13"
+    },
+    {
+      "source": "VWA7",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VWA7 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.10"
+    },
+    {
+      "source": "GPR18",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR18 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.09"
+    },
+    {
+      "source": "SLC22A4",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A4 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.08"
+    },
+    {
+      "source": "ERAP2",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERAP2 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.08"
+    },
+    {
+      "source": "GPR183",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR183 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.08"
+    },
+    {
+      "source": "MS4A1",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MS4A1 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.08"
+    },
+    {
+      "source": "ZPBP",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZPBP is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.07"
+    },
+    {
+      "source": "WWTR1",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WWTR1 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.07"
+    },
+    {
+      "source": "PHTF1",
+      "target": "Epstein-Barr virus infection (EPSTEIN_BARR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHTF1 is associated with Epstein-Barr virus infection (EPSTEIN_BARR). Open Targets association score 0.06"
+    }
+  ]
+}

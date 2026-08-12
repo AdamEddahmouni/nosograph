@@ -1,0 +1,44 @@
+{
+  "disease_id": "psa",
+  "disease_name": "Psoriatic Arthritis",
+  "pathways": [
+    {
+      "id": "il23-il17-axis",
+      "name": "IL-23/IL-17 Axis",
+      "description": "Drives pathogenic T17 cell differentiation and tissue inflammation in skin and entheses.",
+      "key_components": [
+        "IL23R",
+        "IL17A",
+        "IL12B",
+        "TYK2"
+      ],
+      "therapeutic_targets": [
+        "IL17A",
+        "IL12B"
+      ]
+    },
+    {
+      "id": "tnf-signaling",
+      "name": "TNF Signaling",
+      "description": "Pro-inflammatory cascade promoting synovial pannus formation and joint destruction.",
+      "key_components": [
+        "TNF",
+        "TNFAIP3"
+      ],
+      "therapeutic_targets": [
+        "TNF"
+      ]
+    },
+    {
+      "id": "jak-stat",
+      "name": "JAK-STAT Signaling",
+      "description": "Cytokine receptor signal transduction hub.",
+      "key_components": [
+        "TYK2"
+      ],
+      "therapeutic_targets": [
+        "TYK2"
+      ]
+    }
+  ]
+}

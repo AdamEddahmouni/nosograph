@@ -1,0 +1,532 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL135",
+      "target": "ESR1",
+      "type": "TARGETS",
+      "description": "ESTRADIOL targets ESR1."
+    },
+    {
+      "source": "CHEMBL1201649",
+      "target": "ESR2",
+      "type": "TARGETS",
+      "description": "ESTROGENS, CONJUGATED targets ESR2."
+    },
+    {
+      "source": "CHEMBL1200980",
+      "target": "ESR1",
+      "type": "TARGETS",
+      "description": "ESTROPIPATE targets ESR1."
+    },
+    {
+      "source": "CHEMBL1511",
+      "target": "ESR1",
+      "type": "TARGETS",
+      "description": "ESTRADIOL VALERATE targets ESR1."
+    },
+    {
+      "source": "CHEMBL1201464",
+      "target": "LHCGR",
+      "type": "TARGETS",
+      "description": "CHORIOGONADOTROPIN ALFA targets LHCGR."
+    },
+    {
+      "source": "CHEMBL1201468",
+      "target": "ESR2",
+      "type": "TARGETS",
+      "description": "ESTROGENS, ESTERIFIED targets ESR2."
+    },
+    {
+      "source": "CHEMBL4297955",
+      "target": "FSHR",
+      "type": "TARGETS",
+      "description": "FOLLITROPIN targets FSHR."
+    },
+    {
+      "source": "COL11A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL11A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL2A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL2A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "HSF2BP",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "HSF2BP is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH4",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH4 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH5",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH5 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BMP15",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP15 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "CHAMP1",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "CHAMP1 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "WNT4",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT4 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP19A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP19A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "COL2A1",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL2A1 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "COL11A1",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL11A1 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PMM2",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PMM2 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SKIC2",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SKIC2 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "KIF12",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF12 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "DHX16",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHX16 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "DDX19A",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDX19A is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PROM1",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROM1 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "DDX46",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDX46 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MTREX",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTREX is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ATM",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.88"
+    },
+    {
+      "source": "GALT",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GALT is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.86"
+    },
+    {
+      "source": "FOXL2",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXL2 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.86"
+    },
+    {
+      "source": "CLPP",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLPP is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.85"
+    },
+    {
+      "source": "LARS2",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LARS2 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.85"
+    },
+    {
+      "source": "TWNK",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TWNK is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.84"
+    },
+    {
+      "source": "STAR",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAR is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.82"
+    },
+    {
+      "source": "HSD17B4",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSD17B4 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.81"
+    },
+    {
+      "source": "NR5A1",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR5A1 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.80"
+    },
+    {
+      "source": "HARS2",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HARS2 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.80"
+    },
+    {
+      "source": "BMP15",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP15 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.78"
+    },
+    {
+      "source": "CYP19A1",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP19A1 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.77"
+    },
+    {
+      "source": "XRCC4",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XRCC4 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.76"
+    },
+    {
+      "source": "NOBOX",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOBOX is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.75"
+    },
+    {
+      "source": "STAG3",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAG3 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.72"
+    },
+    {
+      "source": "ERCC6",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC6 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.69"
+    },
+    {
+      "source": "MSH4",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH4 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.67"
+    },
+    {
+      "source": "C11orf65",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C11orf65 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.66"
+    },
+    {
+      "source": "SPIDR",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPIDR is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.66"
+    },
+    {
+      "source": "WNT4",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT4 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.66"
+    },
+    {
+      "source": "MSH5",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH5 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.64"
+    },
+    {
+      "source": "FSHR",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSHR is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.63"
+    },
+    {
+      "source": "ERAL1",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERAL1 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.63"
+    },
+    {
+      "source": "FMR1",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FMR1 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.62"
+    },
+    {
+      "source": "GHR",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GHR is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.61"
+    },
+    {
+      "source": "ESR1",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.61"
+    },
+    {
+      "source": "DAP3",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DAP3 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.61"
+    },
+    {
+      "source": "XRCC2",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XRCC2 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.60"
+    },
+    {
+      "source": "ESR2",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR2 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.59"
+    },
+    {
+      "source": "ZSWIM7",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZSWIM7 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.59"
+    },
+    {
+      "source": "C14orf39",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C14orf39 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.59"
+    },
+    {
+      "source": "SYCE1",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYCE1 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.57"
+    },
+    {
+      "source": "HFM1",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HFM1 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.55"
+    },
+    {
+      "source": "TP63",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.55"
+    },
+    {
+      "source": "PRORP",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRORP is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.54"
+    },
+    {
+      "source": "MRPS22",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRPS22 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.53"
+    },
+    {
+      "source": "FIGLA",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FIGLA is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.52"
+    },
+    {
+      "source": "MRPL43",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRPL43 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.52"
+    },
+    {
+      "source": "CHAMP1",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHAMP1 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.52"
+    },
+    {
+      "source": "NR3C1",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.51"
+    },
+    {
+      "source": "MCM8",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCM8 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.51"
+    },
+    {
+      "source": "HSF2BP",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSF2BP is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.50"
+    },
+    {
+      "source": "MEIOB",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEIOB is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.50"
+    },
+    {
+      "source": "LHCGR",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHCGR is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.50"
+    },
+    {
+      "source": "POF1B",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POF1B is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.49"
+    },
+    {
+      "source": "GGPS1",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGPS1 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.47"
+    },
+    {
+      "source": "SPATA22",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA22 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.47"
+    },
+    {
+      "source": "SYCP2L",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYCP2L is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.47"
+    },
+    {
+      "source": "KASH5",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KASH5 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.47"
+    },
+    {
+      "source": "RMND1",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RMND1 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.47"
+    },
+    {
+      "source": "PSMC3IP",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMC3IP is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.46"
+    },
+    {
+      "source": "BNC1",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BNC1 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.46"
+    },
+    {
+      "source": "MGA",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MGA is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.45"
+    },
+    {
+      "source": "HROB",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HROB is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.45"
+    },
+    {
+      "source": "RAD54L",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAD54L is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.45"
+    },
+    {
+      "source": "FAHD1",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAHD1 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.45"
+    },
+    {
+      "source": "BRAF",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.44"
+    },
+    {
+      "source": "LRRC41",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRC41 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.44"
+    },
+    {
+      "source": "MCM9",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCM9 is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.44"
+    },
+    {
+      "source": "POLR3H",
+      "target": "primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLR3H is associated with primary ovarian failure (PREMATURE_OVARIAN_INSUFFICIENCY). Open Targets association score 0.42"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "disease_id": "pd",
+  "disease_name": "Parkinson's Disease",
+  "relationships": [
+    {
+      "source": "SNCA",
+      "type": "ASSOCIATED_WITH",
+      "target": "Parkinson's Disease",
+      "evidence": "Encodes alpha-synuclein, main constituent of Lewy bodies."
+    },
+    {
+      "source": "LRRK2",
+      "type": "ASSOCIATED_WITH",
+      "target": "Parkinson's Disease",
+      "evidence": "Most common genetic cause of familial Parkinson's disease."
+    },
+    {
+      "source": "PRKN",
+      "type": "ASSOCIATED_WITH",
+      "target": "Parkinson's Disease",
+      "evidence": "Drives mitophagy and recessive early-onset PD."
+    },
+    {
+      "source": "PINK1",
+      "type": "ASSOCIATED_WITH",
+      "target": "Parkinson's Disease",
+      "evidence": "Mitochondrial quality control kinase working with Parkin."
+    },
+    {
+      "source": "GBA1",
+      "type": "ASSOCIATED_WITH",
+      "target": "Parkinson's Disease",
+      "evidence": "Lysosomal enzyme deficit increasing alpha-synuclein accumulation."
+    },
+    {
+      "source": "levodopa",
+      "type": "TREATS",
+      "target": "Parkinson's Disease",
+      "evidence": "Approved disease treatment"
+    },
+    {
+      "source": "levodopa",
+      "type": "TARGETS",
+      "target": "SLC6A3",
+      "evidence": "Dopamine precursor converted by DOPA decarboxylase"
+    },
+    {
+      "source": "pramipexole",
+      "type": "TREATS",
+      "target": "Parkinson's Disease",
+      "evidence": "Approved disease treatment"
+    },
+    {
+      "source": "pramipexole",
+      "type": "TARGETS",
+      "target": "DRD2",
+      "evidence": "Non-ergot dopamine D2/D3 receptor agonist"
+    },
+    {
+      "source": "rasagiline",
+      "type": "TREATS",
+      "target": "Parkinson's Disease",
+      "evidence": "Approved disease treatment"
+    },
+    {
+      "source": "rasagiline",
+      "type": "TARGETS",
+      "target": "MAOB",
+      "evidence": "Irreversible monoamine oxidase-B inhibitor"
+    },
+    {
+      "source": "entacapone",
+      "type": "TREATS",
+      "target": "Parkinson's Disease",
+      "evidence": "Approved disease treatment"
+    },
+    {
+      "source": "entacapone",
+      "type": "TARGETS",
+      "target": "COMT",
+      "evidence": "Reversible catechol-O-methyltransferase inhibitor"
+    },
+    {
+      "source": "SNCA",
+      "type": "PARTICIPATES_IN",
+      "target": "alpha-synuclein-pathway",
+      "evidence": "Key component of Alpha-Synuclein Aggregation"
+    },
+    {
+      "source": "GBA1",
+      "type": "PARTICIPATES_IN",
+      "target": "alpha-synuclein-pathway",
+      "evidence": "Key component of Alpha-Synuclein Aggregation"
+    },
+    {
+      "source": "PRKN",
+      "type": "PARTICIPATES_IN",
+      "target": "mitophagy-pathway",
+      "evidence": "Key component of Mitochondrial Dysfunction"
+    },
+    {
+      "source": "PINK1",
+      "type": "PARTICIPATES_IN",
+      "target": "mitophagy-pathway",
+      "evidence": "Key component of Mitochondrial Dysfunction"
+    }
+  ]
+}

@@ -1,0 +1,532 @@
+{
+  "relationships": [
+    {
+      "source": "RELN",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "RELN is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL11A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL11A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL2A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL2A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "WNT1",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT1 is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "CACNA1A",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1A is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "CACNA2D2",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA2D2 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "CDK5R1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK5R1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "GTF2IRD1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "GTF2IRD1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "ZDHHC13",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "ZDHHC13 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "MAPK8IP3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK8IP3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RELN",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELN is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "AGTPBP1",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGTPBP1 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "ETHE1",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "ETHE1 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "RORA",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "RORA is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "APC2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "WNT1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP7A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP7A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "COL2A1",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL2A1 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "COL11A1",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL11A1 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PMM2",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PMM2 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SKIC2",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SKIC2 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "DHX16",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHX16 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "DDX46",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDX46 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "DDX19A",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDX19A is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "KIF12",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF12 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MTREX",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTREX is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PROM1",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROM1 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ETHE1",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETHE1 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.84"
+    },
+    {
+      "source": "ZNF575",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF575 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.57"
+    },
+    {
+      "source": "TRIM8",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM8 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.37"
+    },
+    {
+      "source": "TNK2",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNK2 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.18"
+    },
+    {
+      "source": "RELN",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELN is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "ZNF423",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF423 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.06"
+    },
+    {
+      "source": "MYO5A",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO5A is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.06"
+    },
+    {
+      "source": "SOD2",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD2 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.06"
+    },
+    {
+      "source": "RORA",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RORA is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.06"
+    },
+    {
+      "source": "CDK5R1",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK5R1 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.06"
+    },
+    {
+      "source": "ARX",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARX is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.06"
+    },
+    {
+      "source": "CACNA1A",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1A is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "UNC5C",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UNC5C is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "HNF1A",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "NPC1",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPC1 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CYP7A1",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP7A1 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "HTT",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTT is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "AGTPBP1",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGTPBP1 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CSTB",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSTB is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "DSCAM",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSCAM is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "DST",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DST is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "GRID2",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRID2 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ATP2B2",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP2B2 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "MAPK8IP3",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK8IP3 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ELP6",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELP6 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC6A5",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A5 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CELSR3",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELSR3 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "GAA",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAA is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ZDHHC13",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZDHHC13 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "DBNL",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DBNL is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "NR2E1",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR2E1 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PITPNA",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITPNA is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "MECP2",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MECP2 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "DAB1",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DAB1 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ATXN7",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATXN7 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "GM2A",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GM2A is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ACP2",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACP2 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ARCN1",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARCN1 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "NAGLU",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAGLU is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "MYH10",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH10 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC9A6",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC9A6 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CBS",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBS is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "NR2F1",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR2F1 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CLCN3",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLCN3 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ASPA",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASPA is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ELP2",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELP2 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "APC2",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC2 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "BICD2",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BICD2 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "WNT1",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT1 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "FZD4",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FZD4 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "MOCS2",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MOCS2 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "EPHA4",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHA4 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PSAP",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSAP is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CACNA2D2",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA2D2 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "GRN",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRN is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SPTBN2",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTBN2 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "MMUT",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMUT is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "GTF2IRD1",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GTF2IRD1 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "IDUA",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDUA is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "BBS4",
+      "target": "ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BBS4 is associated with ethylmalonic encephalopathy (HEPATIC_ENCEPHALOPATHY). Open Targets association score 0.05"
+    }
+  ]
+}

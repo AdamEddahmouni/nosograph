@@ -1,0 +1,604 @@
+{
+  "relationships": [
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CXCL10",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL10 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "EIF2B2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "EIF2B2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "RASGRF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "RASGRF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "EIF2AK3",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "EIF2AK3 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IL1R1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1R1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "RASGRF2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASGRF2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "THBS4",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THBS4 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "MTHFR",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "MTHFR is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD300A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD300A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IFNA1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNA17",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA17 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNA2",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA2 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNL3",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNL3 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "HEATR5A",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "HEATR5A is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "HEATR5B",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "HEATR5B is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MLH3",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MLH3 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH3",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH3 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "PARP1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "PARP1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNA1",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA1 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNL3",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNL3 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "GPT",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD79A",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "EIF2AK3",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF2AK3 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "MTTP",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTTP is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFNA17",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA17 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFNA2",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA2 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "KLRK1",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLRK1 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD8A",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "SPP1",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPP1 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "AFP",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFP is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "MTHFR",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTHFR is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "ALB",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCL10",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL10 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "UNG",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UNG is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL1R1",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1R1 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "MSH2",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH2 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.51"
+    },
+    {
+      "source": "PMS2",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PMS2 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.46"
+    },
+    {
+      "source": "FAN1",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAN1 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.46"
+    },
+    {
+      "source": "DHFR",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHFR is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.43"
+    },
+    {
+      "source": "PARP1",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PARP1 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.41"
+    },
+    {
+      "source": "MSH3",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH3 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.40"
+    },
+    {
+      "source": "MLH3",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLH3 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.40"
+    },
+    {
+      "source": "EIF2B2",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF2B2 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.39"
+    },
+    {
+      "source": "PMS1",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PMS1 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.38"
+    },
+    {
+      "source": "DCC",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCC is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.35"
+    },
+    {
+      "source": "TCF4",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF4 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.34"
+    },
+    {
+      "source": "RASGRF2",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASGRF2 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.34"
+    },
+    {
+      "source": "FBXO11",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXO11 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.32"
+    },
+    {
+      "source": "RUNX1",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.32"
+    },
+    {
+      "source": "PALMD",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PALMD is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.31"
+    },
+    {
+      "source": "CCDC68",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC68 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.31"
+    },
+    {
+      "source": "CMYA5",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CMYA5 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.31"
+    },
+    {
+      "source": "STON1",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STON1 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.31"
+    },
+    {
+      "source": "RPN1",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPN1 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.31"
+    },
+    {
+      "source": "POT1",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POT1 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.31"
+    },
+    {
+      "source": "GRAMD1B",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRAMD1B is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.30"
+    },
+    {
+      "source": "TRIM44",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM44 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.29"
+    },
+    {
+      "source": "MCFD2",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCFD2 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.29"
+    },
+    {
+      "source": "AIMP2",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIMP2 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "SEPTIN9",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEPTIN9 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "LSM3",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LSM3 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "ADGRE2",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADGRE2 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "SMARCAD1",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCAD1 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.27"
+    },
+    {
+      "source": "THBS4",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THBS4 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.27"
+    },
+    {
+      "source": "SH3BP4",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH3BP4 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.27"
+    },
+    {
+      "source": "SSBP2",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSBP2 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.26"
+    },
+    {
+      "source": "STARD6",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STARD6 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.26"
+    },
+    {
+      "source": "HEATR5B",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEATR5B is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.25"
+    },
+    {
+      "source": "CD300A",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD300A is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.25"
+    },
+    {
+      "source": "ANKRD34B",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKRD34B is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.25"
+    },
+    {
+      "source": "ONECUT2",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ONECUT2 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.25"
+    },
+    {
+      "source": "SDK2",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDK2 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.24"
+    },
+    {
+      "source": "HEATR5A",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEATR5A is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.24"
+    },
+    {
+      "source": "MELK",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MELK is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.24"
+    },
+    {
+      "source": "HOXA9",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA9 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.24"
+    },
+    {
+      "source": "SETBP1",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETBP1 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.23"
+    },
+    {
+      "source": "FGF14",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF14 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.22"
+    },
+    {
+      "source": "ACOT11",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACOT11 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.22"
+    },
+    {
+      "source": "ZFYVE16",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFYVE16 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.22"
+    },
+    {
+      "source": "TLL1",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLL1 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.21"
+    },
+    {
+      "source": "KCNK12",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNK12 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.20"
+    },
+    {
+      "source": "CALCOCO2",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCOCO2 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.20"
+    },
+    {
+      "source": "TXNL1",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TXNL1 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.19"
+    },
+    {
+      "source": "PRKACA",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKACA is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.19"
+    },
+    {
+      "source": "PLEKHH2",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLEKHH2 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.19"
+    },
+    {
+      "source": "HOXB9",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXB9 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.19"
+    },
+    {
+      "source": "RERE",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RERE is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.19"
+    },
+    {
+      "source": "ORMDL1",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ORMDL1 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.17"
+    },
+    {
+      "source": "XPC",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XPC is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.17"
+    },
+    {
+      "source": "ZNF333",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF333 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.16"
+    },
+    {
+      "source": "EPCAM",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPCAM is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.14"
+    },
+    {
+      "source": "ATAD5",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATAD5 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.14"
+    },
+    {
+      "source": "C1GALT1C1L",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C1GALT1C1L is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.13"
+    },
+    {
+      "source": "CKMT2",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CKMT2 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.13"
+    },
+    {
+      "source": "WDR7",
+      "target": "genotype (GASTROINTESTINAL_STROMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR7 is associated with genotype (GASTROINTESTINAL_STROMAL_TUMOR). Open Targets association score 0.13"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "disease_id": "as",
+  "disease_name": "Ankylosing Spondylitis",
+  "pathways": [
+    {
+      "id": "hla-b27-presentation",
+      "name": "HLA-B27 Misfolding & Antigen Presentation",
+      "description": "Heavy chain misfolding and unfolded protein response in ER.",
+      "key_components": [
+        "HLA-B27",
+        "ERAP1"
+      ],
+      "therapeutic_targets": [
+        "HLA-B27"
+      ]
+    },
+    {
+      "id": "il23-il17-as",
+      "name": "IL-23/IL-17 Axis",
+      "description": "Effector cytokine activation at entheseal insertion sites.",
+      "key_components": [
+        "IL23R",
+        "IL12B"
+      ],
+      "therapeutic_targets": [
+        "IL23R"
+      ]
+    }
+  ]
+}

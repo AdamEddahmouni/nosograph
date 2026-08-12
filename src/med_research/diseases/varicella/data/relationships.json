@@ -1,0 +1,880 @@
+{
+  "relationships": [
+    {
+      "source": "IRF2BP2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF2BP2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IRF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IL12A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL12A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL17F",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17F is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL17RE",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17RE is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL4R",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4R is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "STAT1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "TPSAB1",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "TPSAB1 is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "TPSB2",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "TPSB2 is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "IL12A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL12A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL17F",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17F is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL17RE",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17RE is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "TGM6",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGM6 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "FASLG",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASLG is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNA1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNA2",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA2 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNAR1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNAR1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNLR1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNLR1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IRF2BP2",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF2BP2 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IRF9",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF9 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "STAT1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "MAP1LC3A",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP1LC3A is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "C4A",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C4A is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "INSL3",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INSL3 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "SPDL1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "SPDL1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IRF2BP2",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF2BP2 is associated with chickenpox (VARICELLA). Open Targets association score 0.11"
+    },
+    {
+      "source": "SPP1",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPP1 is associated with chickenpox (VARICELLA). Open Targets association score 0.11"
+    },
+    {
+      "source": "PRNP",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRNP is associated with chickenpox (VARICELLA). Open Targets association score 0.10"
+    },
+    {
+      "source": "SLC11A1",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC11A1 is associated with chickenpox (VARICELLA). Open Targets association score 0.10"
+    },
+    {
+      "source": "KIF1C",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF1C is associated with chickenpox (VARICELLA). Open Targets association score 0.09"
+    },
+    {
+      "source": "CAMP",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAMP is associated with chickenpox (VARICELLA). Open Targets association score 0.09"
+    },
+    {
+      "source": "IFNLR1",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNLR1 is associated with chickenpox (VARICELLA). Open Targets association score 0.08"
+    },
+    {
+      "source": "ADPRH",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADPRH is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "TNF",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "CLEC6A",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC6A is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "C3",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C3 is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "CFB",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFB is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "UMOD",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UMOD is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "IL9",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL9 is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "BPIFA1",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BPIFA1 is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "TGM6",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGM6 is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "TPSAB1",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPSAB1 is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "C5",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C5 is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "NAIP",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAIP is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "DEFB4B",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEFB4B is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "DEFB1",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEFB1 is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "IL17F",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17F is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "LBP",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LBP is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "IL17A",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "TPSB2",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPSB2 is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "DEFB4A",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEFB4A is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "IRF9",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF9 is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "IL4R",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4R is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "IFNAR1",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNAR1 is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "IRGM",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRGM is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "GBP7",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GBP7 is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "GBP1",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GBP1 is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "USP18",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP18 is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "IL17RE",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17RE is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "GSDMA",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMA is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "GBP2",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GBP2 is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "FCN1",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCN1 is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "GBP4",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GBP4 is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "SP140",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SP140 is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "FCN2",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCN2 is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "IFNG",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "SP140L",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SP140L is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "IL12A",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL12A is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "LYST",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYST is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "TYROBP",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYROBP is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "GZMM",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GZMM is associated with chickenpox (VARICELLA). Open Targets association score 0.07"
+    },
+    {
+      "source": "HRH1",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRH1 is associated with chickenpox (VARICELLA). Open Targets association score 0.06"
+    },
+    {
+      "source": "GUCY2C",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GUCY2C is associated with chickenpox (VARICELLA). Open Targets association score 0.06"
+    },
+    {
+      "source": "MUC4",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC4 is associated with chickenpox (VARICELLA). Open Targets association score 0.06"
+    },
+    {
+      "source": "MR1",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MR1 is associated with chickenpox (VARICELLA). Open Targets association score 0.06"
+    },
+    {
+      "source": "STAT1",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT1 is associated with chickenpox (VARICELLA). Open Targets association score 0.06"
+    },
+    {
+      "source": "PLA2G7",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLA2G7 is associated with chickenpox (VARICELLA). Open Targets association score 0.06"
+    },
+    {
+      "source": "IFIT1B",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFIT1B is associated with chickenpox (VARICELLA). Open Targets association score 0.06"
+    },
+    {
+      "source": "KCNJ8",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNJ8 is associated with chickenpox (VARICELLA). Open Targets association score 0.06"
+    },
+    {
+      "source": "PRF1",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRF1 is associated with chickenpox (VARICELLA). Open Targets association score 0.06"
+    },
+    {
+      "source": "IFIT1",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFIT1 is associated with chickenpox (VARICELLA). Open Targets association score 0.06"
+    },
+    {
+      "source": "IFITM3",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFITM3 is associated with chickenpox (VARICELLA). Open Targets association score 0.06"
+    },
+    {
+      "source": "AGBL5",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGBL5 is associated with chickenpox (VARICELLA). Open Targets association score 0.06"
+    },
+    {
+      "source": "JCHAIN",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JCHAIN is associated with chickenpox (VARICELLA). Open Targets association score 0.06"
+    },
+    {
+      "source": "SLC25A21",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC25A21 is associated with chickenpox (VARICELLA). Open Targets association score 0.10"
+    },
+    {
+      "source": "PAX9",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX9 is associated with chickenpox (VARICELLA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD40LG",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with chickenpox (VARICELLA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ALB",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with chickenpox (VARICELLA). Open Targets association score 0.03"
+    },
+    {
+      "source": "NKX2-8",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX2-8 is associated with chickenpox (VARICELLA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD4",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with chickenpox (VARICELLA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD8A",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with chickenpox (VARICELLA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD79A",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with chickenpox (VARICELLA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SPINK1",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPINK1 is associated with chickenpox (VARICELLA). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL2",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with chickenpox (VARICELLA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PROS1",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROS1 is associated with chickenpox (VARICELLA). Open Targets association score 0.02"
+    },
+    {
+      "source": "GPI",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPI is associated with chickenpox (VARICELLA). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL6",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with chickenpox (VARICELLA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD1D",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD1D is associated with chickenpox (VARICELLA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPDL1",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPDL1 is associated with chickenpox (VARICELLA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GNLY",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNLY is associated with chickenpox (VARICELLA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MRC1",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRC1 is associated with chickenpox (VARICELLA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GPT",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with chickenpox (VARICELLA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HLA-A",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-A is associated with chickenpox (VARICELLA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MOG",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MOG is associated with chickenpox (VARICELLA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL7R",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL7R is associated with chickenpox (VARICELLA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PAPPA",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAPPA is associated with chickenpox (VARICELLA). Open Targets association score 0.01"
+    },
+    {
+      "source": "F5",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F5 is associated with chickenpox (VARICELLA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DHRS2",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHRS2 is associated with chickenpox (VARICELLA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SAA1",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAA1 is associated with chickenpox (VARICELLA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DDX41",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDX41 is associated with chickenpox (VARICELLA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRP",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with chickenpox (VARICELLA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DOCK2",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOCK2 is associated with chickenpox (VARICELLA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TKT",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TKT is associated with chickenpox (VARICELLA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HLA-B",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-B is associated with chickenpox (VARICELLA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNA1",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA1 is associated with chickenpox (VARICELLA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ART4",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ART4 is associated with chickenpox (VARICELLA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MBP",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MBP is associated with chickenpox (VARICELLA). Open Targets association score 0.00"
+    },
+    {
+      "source": "AFP",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFP is associated with chickenpox (VARICELLA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFNA2",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA2 is associated with chickenpox (VARICELLA). Open Targets association score 0.00"
+    },
+    {
+      "source": "C4A",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C4A is associated with chickenpox (VARICELLA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ABHD16A",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABHD16A is associated with chickenpox (VARICELLA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GNAI1",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAI1 is associated with chickenpox (VARICELLA). Open Targets association score 0.00"
+    },
+    {
+      "source": "INSL3",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INSL3 is associated with chickenpox (VARICELLA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAG",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAG is associated with chickenpox (VARICELLA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TAC1",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAC1 is associated with chickenpox (VARICELLA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ENSG00000279284",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENSG00000279284 is associated with chickenpox (VARICELLA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CORO1A",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CORO1A is associated with chickenpox (VARICELLA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SPINK5",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPINK5 is associated with chickenpox (VARICELLA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ICAM1",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with chickenpox (VARICELLA). Open Targets association score 0.00"
+    },
+    {
+      "source": "FASLG",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASLG is associated with chickenpox (VARICELLA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ENSG00000280371",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENSG00000280371 is associated with chickenpox (VARICELLA). Open Targets association score 0.00"
+    },
+    {
+      "source": "POU5F1",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU5F1 is associated with chickenpox (VARICELLA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PPIB",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPIB is associated with chickenpox (VARICELLA). Open Targets association score 0.00"
+    },
+    {
+      "source": "RHD",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHD is associated with chickenpox (VARICELLA). Open Targets association score 0.00"
+    },
+    {
+      "source": "LCT",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCT is associated with chickenpox (VARICELLA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAP1LC3A",
+      "target": "chickenpox (VARICELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP1LC3A is associated with chickenpox (VARICELLA). Open Targets association score 0.00"
+    }
+  ]
+}

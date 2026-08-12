@@ -1,0 +1,622 @@
+{
+  "relationships": [
+    {
+      "source": "CCL5",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL5 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "EIF2AK2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "EIF2AK2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IGF2BP2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2BP2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "HAVCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "HAVCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ZDHHC11",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "ZDHHC11 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "ITGB4",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB4 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "STAT1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "TRAF6",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF6 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL22",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL22 is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ITGB4",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB4 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TRAF6",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF6 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TRAF6",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF6 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNA1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNAR1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNAR1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNB1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNB1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNE",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNE is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "RIGI",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "RIGI is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "STAT1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CASP3",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP3 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "IFNA1",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA1 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.11"
+    },
+    {
+      "source": "CD8A",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.10"
+    },
+    {
+      "source": "CD4",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.10"
+    },
+    {
+      "source": "AXL",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AXL is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.10"
+    },
+    {
+      "source": "STAT1",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT1 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.09"
+    },
+    {
+      "source": "TNF",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.09"
+    },
+    {
+      "source": "IVNS1ABP",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IVNS1ABP is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.08"
+    },
+    {
+      "source": "PTPN11",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN11 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.08"
+    },
+    {
+      "source": "S100A4",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A4 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.08"
+    },
+    {
+      "source": "IFITM3",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFITM3 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.08"
+    },
+    {
+      "source": "ATF3",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATF3 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.08"
+    },
+    {
+      "source": "STAT2",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT2 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.08"
+    },
+    {
+      "source": "ALPP",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALPP is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.08"
+    },
+    {
+      "source": "USP38",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP38 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.08"
+    },
+    {
+      "source": "CFLAR",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFLAR is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.08"
+    },
+    {
+      "source": "VIM",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VIM is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.08"
+    },
+    {
+      "source": "FOXG1",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXG1 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.08"
+    },
+    {
+      "source": "RHOV",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHOV is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.07"
+    },
+    {
+      "source": "PRKDC",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKDC is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.07"
+    },
+    {
+      "source": "EXT1",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EXT1 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.07"
+    },
+    {
+      "source": "ACTB",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTB is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.07"
+    },
+    {
+      "source": "ITGB4",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB4 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.07"
+    },
+    {
+      "source": "CLEC5A",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC5A is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.07"
+    },
+    {
+      "source": "TRAF6",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRAF6 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.07"
+    },
+    {
+      "source": "ZSWIM8",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZSWIM8 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.07"
+    },
+    {
+      "source": "PDIA3",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDIA3 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.07"
+    },
+    {
+      "source": "IFNE",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNE is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.07"
+    },
+    {
+      "source": "GSDME",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDME is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.07"
+    },
+    {
+      "source": "IL1B",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.07"
+    },
+    {
+      "source": "PRKAB1",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAB1 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.07"
+    },
+    {
+      "source": "PRKAA1",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAA1 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.07"
+    },
+    {
+      "source": "PRKAA2",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAA2 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.07"
+    },
+    {
+      "source": "RSAD2",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSAD2 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.07"
+    },
+    {
+      "source": "TRIM56",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM56 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.07"
+    },
+    {
+      "source": "CCL5",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL5 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.07"
+    },
+    {
+      "source": "PELI1",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PELI1 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.07"
+    },
+    {
+      "source": "IFNG",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.07"
+    },
+    {
+      "source": "MAVS",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAVS is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.07"
+    },
+    {
+      "source": "ZDHHC11",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZDHHC11 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.07"
+    },
+    {
+      "source": "MMP9",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.07"
+    },
+    {
+      "source": "KLHL2",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLHL2 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.07"
+    },
+    {
+      "source": "WWP2",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WWP2 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.07"
+    },
+    {
+      "source": "IGF2BP2",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2BP2 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.06"
+    },
+    {
+      "source": "HCAR2",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HCAR2 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.06"
+    },
+    {
+      "source": "RPSA",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPSA is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.06"
+    },
+    {
+      "source": "NDUFA4",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFA4 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.06"
+    },
+    {
+      "source": "GCH1",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCH1 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.06"
+    },
+    {
+      "source": "KRAS",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.06"
+    },
+    {
+      "source": "UPF1",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UPF1 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.06"
+    },
+    {
+      "source": "NLRP3",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP3 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL27",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL27 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.06"
+    },
+    {
+      "source": "HSPA5",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPA5 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.06"
+    },
+    {
+      "source": "XBP1",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XBP1 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL22",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL22 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.06"
+    },
+    {
+      "source": "SF3B3",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SF3B3 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.05"
+    },
+    {
+      "source": "GJA1",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA1 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.05"
+    },
+    {
+      "source": "IFNB1",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNB1 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.05"
+    },
+    {
+      "source": "HAVCR1",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAVCR1 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.05"
+    },
+    {
+      "source": "EIF2AK2",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF2AK2 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TIMELESS",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMELESS is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.05"
+    },
+    {
+      "source": "RIGI",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIGI is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.08"
+    },
+    {
+      "source": "GSDMD",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMD is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.08"
+    },
+    {
+      "source": "BMAL1",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMAL1 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.07"
+    },
+    {
+      "source": "CD274",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.07"
+    },
+    {
+      "source": "DISC1",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DISC1 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.07"
+    },
+    {
+      "source": "ATP2A2",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP2A2 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.07"
+    },
+    {
+      "source": "ILF3",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ILF3 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.07"
+    },
+    {
+      "source": "TRPC4",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPC4 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.07"
+    },
+    {
+      "source": "ERN1",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERN1 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.07"
+    },
+    {
+      "source": "XRCC6",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XRCC6 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.07"
+    },
+    {
+      "source": "ANKS4B",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKS4B is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.07"
+    },
+    {
+      "source": "IFNAR1",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNAR1 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.07"
+    },
+    {
+      "source": "CASP3",
+      "target": "Zika virus infectious disease (ZIKA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP3 is associated with Zika virus infectious disease (ZIKA). Open Targets association score 0.07"
+    }
+  ]
+}

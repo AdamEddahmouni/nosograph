@@ -1,0 +1,29 @@
+{
+  "disease_id": "t2d",
+  "disease_name": "Type 2 Diabetes",
+  "pathways": [
+    {
+      "id": "incretin-response",
+      "name": "Incretin Hormone Response",
+      "description": "Glucose-dependent stimulation of insulin secretion via GLP-1 signaling.",
+      "key_components": [
+        "GLP1R",
+        "TCF7L2"
+      ],
+      "therapeutic_targets": [
+        "GLP1R"
+      ]
+    },
+    {
+      "id": "insulin-signaling",
+      "name": "Insulin Receptor Signaling",
+      "description": "Peroxisome proliferator cascade regulating peripheral glucose uptake.",
+      "key_components": [
+        "PPARG"
+      ],
+      "therapeutic_targets": [
+        "PPARG"
+      ]
+    }
+  ]
+}

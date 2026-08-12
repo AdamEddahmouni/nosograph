@@ -1,0 +1,862 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL3545252",
+      "target": "TUBB3",
+      "type": "TARGETS",
+      "description": "DOCETAXEL targets TUBB3."
+    },
+    {
+      "source": "CHEMBL4303201",
+      "target": "PDGFRB",
+      "type": "TARGETS",
+      "description": "CATEQUENTINIB targets PDGFRB."
+    },
+    {
+      "source": "CHEMBL1743062",
+      "target": "KDR",
+      "type": "TARGETS",
+      "description": "RAMUCIRUMAB targets KDR."
+    },
+    {
+      "source": "CHEMBL939",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "GEFITINIB targets EGFR."
+    },
+    {
+      "source": "CHEMBL3301587",
+      "target": "CD274",
+      "type": "TARGETS",
+      "description": "DURVALUMAB targets CD274."
+    },
+    {
+      "source": "CHEMBL3707227",
+      "target": "CD274",
+      "type": "TARGETS",
+      "description": "ATEZOLIZUMAB targets CD274."
+    },
+    {
+      "source": "CHEMBL20883",
+      "target": "TYMS",
+      "type": "TARGETS",
+      "description": "TEGAFUR targets TYMS."
+    },
+    {
+      "source": "CHEMBL3545308",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "ROCILETINIB targets EGFR."
+    },
+    {
+      "source": "CHEMBL2110732",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "DACOMITINIB ANHYDROUS targets EGFR."
+    },
+    {
+      "source": "CHEMBL3647420",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "PYROTINIB targets EGFR."
+    },
+    {
+      "source": "CHEMBL3545071",
+      "target": "ERBB3",
+      "type": "TARGETS",
+      "description": "SERIBANTUMAB targets ERBB3."
+    },
+    {
+      "source": "CHEMBL477772",
+      "target": "FGFR1",
+      "type": "TARGETS",
+      "description": "PAZOPANIB targets FGFR1."
+    },
+    {
+      "source": "CHEMBL4298191",
+      "target": "PDCD1",
+      "type": "TARGETS",
+      "description": "SASANLIMAB targets PDCD1."
+    },
+    {
+      "source": "CHEMBL189963",
+      "target": "CDK4",
+      "type": "TARGETS",
+      "description": "PALBOCICLIB targets CDK4."
+    },
+    {
+      "source": "CHEMBL1229517",
+      "target": "BRAF",
+      "type": "TARGETS",
+      "description": "VEMURAFENIB targets BRAF."
+    },
+    {
+      "source": "CHEMBL1079742",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "ERLOTINIB HYDROCHLORIDE targets EGFR."
+    },
+    {
+      "source": "CHEMBL3286830",
+      "target": "ALK",
+      "type": "TARGETS",
+      "description": "LORLATINIB targets ALK."
+    },
+    {
+      "source": "BTK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BTK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CACNA1D",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1D is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "BRCA2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "CHEK2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "CHEK2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ATR",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATR is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "RAD51B",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "RAD51B is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GRIN2A",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2A is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "JAK1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "NOTCH2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "AKT2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "IRF4",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF4 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "CDK4",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK4 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDK6",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK6 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "LRP1B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP1B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "TP63",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.63"
+    },
+    {
+      "source": "TERT",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERT is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.62"
+    },
+    {
+      "source": "CHEK2",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHEK2 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.59"
+    },
+    {
+      "source": "BRAF",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.56"
+    },
+    {
+      "source": "BRCA2",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA2 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.54"
+    },
+    {
+      "source": "EGFR",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.54"
+    },
+    {
+      "source": "CHRNA5",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHRNA5 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.51"
+    },
+    {
+      "source": "CLPTM1L",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLPTM1L is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.50"
+    },
+    {
+      "source": "CHRNA3",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHRNA3 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.49"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.48"
+    },
+    {
+      "source": "KRAS",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.47"
+    },
+    {
+      "source": "IRF4",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF4 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.46"
+    },
+    {
+      "source": "POT1",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POT1 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.46"
+    },
+    {
+      "source": "ERCC6",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC6 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.45"
+    },
+    {
+      "source": "SLC67A1",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC67A1 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.45"
+    },
+    {
+      "source": "NF1",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.44"
+    },
+    {
+      "source": "FGFR2",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.43"
+    },
+    {
+      "source": "FUBP1",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUBP1 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.42"
+    },
+    {
+      "source": "RAD52",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAD52 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.41"
+    },
+    {
+      "source": "VTI1A",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VTI1A is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.41"
+    },
+    {
+      "source": "MET",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.41"
+    },
+    {
+      "source": "KDR",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.40"
+    },
+    {
+      "source": "ROS1",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROS1 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.40"
+    },
+    {
+      "source": "FLT4",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT4 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.39"
+    },
+    {
+      "source": "PDGFRB",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.39"
+    },
+    {
+      "source": "PDGFRA",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRA is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.39"
+    },
+    {
+      "source": "ALK",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.39"
+    },
+    {
+      "source": "IL7R",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL7R is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.38"
+    },
+    {
+      "source": "PTPRC",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRC is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.38"
+    },
+    {
+      "source": "NR4A3",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR4A3 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.38"
+    },
+    {
+      "source": "RAD51B",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAD51B is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.38"
+    },
+    {
+      "source": "DCBLD1",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCBLD1 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.38"
+    },
+    {
+      "source": "HGF",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGF is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.38"
+    },
+    {
+      "source": "FGFR1",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.38"
+    },
+    {
+      "source": "PTPRB",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRB is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.38"
+    },
+    {
+      "source": "CACNA1D",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1D is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "FAT1",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT1 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "FANCA",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCA is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "AFF3",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFF3 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "RNF43",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF43 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "KEAP1",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KEAP1 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "GRIN2A",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2A is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "NTRK1",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "NOTCH2",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH2 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "CIITA",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIITA is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "BTK",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTK is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "MECOM",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MECOM is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "AKT2",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT2 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "ATR",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATR is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "ETV1",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETV1 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "CDX2",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDX2 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "CDC73",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDC73 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "SRC",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRC is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "BCL6",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL6 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "EML4",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EML4 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "ZBTB16",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB16 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "JAK1",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK1 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "SETBP1",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETBP1 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "ERBB2",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.84"
+    },
+    {
+      "source": "TP53",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.82"
+    },
+    {
+      "source": "DICER1",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DICER1 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.80"
+    },
+    {
+      "source": "RB1",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.80"
+    },
+    {
+      "source": "RET",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.78"
+    },
+    {
+      "source": "ERBB4",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB4 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.76"
+    },
+    {
+      "source": "STK11",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK11 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.75"
+    },
+    {
+      "source": "KMT2D",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.75"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.75"
+    },
+    {
+      "source": "POLD1",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLD1 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.73"
+    },
+    {
+      "source": "KIF5B",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF5B is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.73"
+    },
+    {
+      "source": "POLE",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLE is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.73"
+    },
+    {
+      "source": "CCDC6",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC6 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.72"
+    },
+    {
+      "source": "CD274",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.71"
+    },
+    {
+      "source": "NTRK3",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK3 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.71"
+    },
+    {
+      "source": "CD74",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD74 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.70"
+    },
+    {
+      "source": "SMARCA4",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA4 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.70"
+    },
+    {
+      "source": "NPM1",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPM1 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.70"
+    },
+    {
+      "source": "NTRK2",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK2 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.69"
+    },
+    {
+      "source": "RBM10",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBM10 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.69"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.69"
+    },
+    {
+      "source": "CDK4",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK4 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.69"
+    },
+    {
+      "source": "ARID1A",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.68"
+    },
+    {
+      "source": "NRG1",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRG1 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.68"
+    },
+    {
+      "source": "LRP1B",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP1B is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.67"
+    },
+    {
+      "source": "TOP1",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TOP1 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.67"
+    },
+    {
+      "source": "CDK6",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK6 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.67"
+    },
+    {
+      "source": "SDC4",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDC4 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.67"
+    },
+    {
+      "source": "FGFR3",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.66"
+    },
+    {
+      "source": "MAP2K1",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K1 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.65"
+    },
+    {
+      "source": "KMT2C",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.65"
+    },
+    {
+      "source": "U2AF1",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "U2AF1 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.64"
+    },
+    {
+      "source": "TYMS",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYMS is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.63"
+    },
+    {
+      "source": "ERBB3",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB3 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.63"
+    },
+    {
+      "source": "TUBB3",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB3 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.63"
+    },
+    {
+      "source": "PDCD1",
+      "target": "lung cancer (LUNG_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with lung cancer (LUNG_CANCER). Open Targets association score 0.63"
+    }
+  ]
+}

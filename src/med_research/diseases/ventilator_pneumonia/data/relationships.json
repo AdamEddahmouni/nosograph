@@ -1,0 +1,736 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL517712",
+      "target": "CHRM3",
+      "type": "TARGETS",
+      "description": "ATROPINE targets CHRM3."
+    },
+    {
+      "source": "CHEMBL766",
+      "target": "DPEP1",
+      "type": "TARGETS",
+      "description": "CILASTATIN targets DPEP1."
+    },
+    {
+      "source": "CHEMBL517712",
+      "target": "CHRM1",
+      "type": "TARGETS",
+      "description": "ATROPINE targets CHRM1."
+    },
+    {
+      "source": "CHEMBL1201564",
+      "target": "IFNGR1",
+      "type": "TARGETS",
+      "description": "INTERFERON GAMMA-1B targets IFNGR1."
+    },
+    {
+      "source": "CHEMBL1201564",
+      "target": "IFNGR2",
+      "type": "TARGETS",
+      "description": "INTERFERON GAMMA-1B targets IFNGR2."
+    },
+    {
+      "source": "CHEMBL517712",
+      "target": "CHRM2",
+      "type": "TARGETS",
+      "description": "ATROPINE targets CHRM2."
+    },
+    {
+      "source": "CHEMBL650",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "METHYLPREDNISOLONE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL1064",
+      "target": "HMGCR",
+      "type": "TARGETS",
+      "description": "SIMVASTATIN targets HMGCR."
+    },
+    {
+      "source": "CHEMBL389621",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "HYDROCORTISONE targets NR3C1."
+    },
+    {
+      "source": "ATG16L1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "ATG16L1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CCL2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "SERPINE1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SERPINE1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MBL2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "MBL2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL18",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL18 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "SELL",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELL is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "MAPK8",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK8 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "AKT3",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT3 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD28",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD28 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ATG16L1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ATG16L1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF1A",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF1A is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNGR1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNGR1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNGR2",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNGR2 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "SYK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "SYK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "HMGCR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HMGCR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "MRGPRX3",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "MRGPRX3 is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "SLC6A3",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC6A3 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "IFNGR1",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNGR1 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.26"
+    },
+    {
+      "source": "IFNGR2",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNGR2 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.26"
+    },
+    {
+      "source": "DPEP1",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPEP1 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.13"
+    },
+    {
+      "source": "CRP",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.10"
+    },
+    {
+      "source": "CALCA",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCA is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.10"
+    },
+    {
+      "source": "UROD",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UROD is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.10"
+    },
+    {
+      "source": "IL17A",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "CD4",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "TNF",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "MMP9",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "PTX3",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTX3 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "CCL2",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL2 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "CHRM2",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHRM2 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "CHRM3",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHRM3 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "CHRM1",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHRM1 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "IL1B",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "IL6",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "CXCL8",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "CD8A",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "MUC1",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC1 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SCGB1A1",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCGB1A1 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SFTPD",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFTPD is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "HOXD13",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD13 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "DSP",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSP is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "AVP",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AVP is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "HP",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HP is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNFRSF1A",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF1A is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL18",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL18 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "S100A8",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A8 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "INS",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL10",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "MPO",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPO is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "AKT3",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT3 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "VPREB1",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VPREB1 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "HRG",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRG is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL4",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "VEGFA",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ICAM1",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ATG16L1",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATG16L1 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SERPINE1",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINE1 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FCGR1A",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR1A is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "LEP",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TLR4",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SOD1",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD1 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ALB",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MAPK8",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK8 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MAP3K20",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K20 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "A4GALT",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "A4GALT is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL13",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL13 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MBL2",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MBL2 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SELL",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELL is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD28",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD28 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TREM1",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TREM1 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PRH1",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRH1 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PRH2",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRH2 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CLEC7A",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC7A is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "EPB42",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPB42 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "AMY2A",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMY2A is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "BLOC1S6",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLOC1S6 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD40LG",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "HMGCR",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGCR is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.13"
+    },
+    {
+      "source": "NR3C1",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "LBP",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LBP is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC6A3",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A3 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "NUCLEOLIN",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUCLEOLIN is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "YWHAH",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YWHAH is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TF",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TF is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "NPPA",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPA is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MYC",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MRGPRX3",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRGPRX3 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "LTF",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTF is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CSF3",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3 is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "IFNG",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CNP",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNP is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SYK",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYK is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ACE",
+      "target": "ventilator-associated pneumonia (VENTILATOR_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with ventilator-associated pneumonia (VENTILATOR_PNEUMONIA). Open Targets association score 0.02"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "disease_id": "copd",
+  "disease_name": "Chronic Obstructive Pulmonary Disease",
+  "relationships": [
+    {
+      "source": "SERPINA1",
+      "type": "ASSOCIATED_WITH",
+      "target": "Chronic Obstructive Pulmonary Disease",
+      "evidence": "Protease inhibitor deficit causing early emphysema."
+    },
+    {
+      "source": "MMP9",
+      "type": "ASSOCIATED_WITH",
+      "target": "Chronic Obstructive Pulmonary Disease",
+      "evidence": "Gelatinase degrading alveolar extracellular matrix."
+    },
+    {
+      "source": "CHRNA3",
+      "type": "ASSOCIATED_WITH",
+      "target": "Chronic Obstructive Pulmonary Disease",
+      "evidence": "Nicotinic acetylcholine receptor locus associated with COPD susceptibility."
+    },
+    {
+      "source": "TGFB1",
+      "type": "ASSOCIATED_WITH",
+      "target": "Chronic Obstructive Pulmonary Disease",
+      "evidence": "Drives small airway fibrosis and extracellular matrix deposition."
+    },
+    {
+      "source": "tiotropium",
+      "type": "TREATS",
+      "target": "Chronic Obstructive Pulmonary Disease",
+      "evidence": "Approved disease treatment"
+    },
+    {
+      "source": "tiotropium",
+      "type": "TARGETS",
+      "target": "CHRM3",
+      "evidence": "Long-acting muscarinic antagonist (LAMA) bronchodilator"
+    },
+    {
+      "source": "roflumilast",
+      "type": "TREATS",
+      "target": "Chronic Obstructive Pulmonary Disease",
+      "evidence": "Approved disease treatment"
+    },
+    {
+      "source": "roflumilast",
+      "type": "TARGETS",
+      "target": "PDE4B",
+      "evidence": "Oral PDE4 inhibitor reducing exacerbations"
+    },
+    {
+      "source": "indacaterol",
+      "type": "TREATS",
+      "target": "Chronic Obstructive Pulmonary Disease",
+      "evidence": "Approved disease treatment"
+    },
+    {
+      "source": "indacaterol",
+      "type": "TARGETS",
+      "target": "ADRB2",
+      "evidence": "Ultra-long-acting beta-2 adrenergic agonist (LABA)"
+    },
+    {
+      "source": "SERPINA1",
+      "type": "PARTICIPATES_IN",
+      "target": "protease-imbalance",
+      "evidence": "Key component of Protease-Antiprotease Imbalance"
+    },
+    {
+      "source": "MMP9",
+      "type": "PARTICIPATES_IN",
+      "target": "protease-imbalance",
+      "evidence": "Key component of Protease-Antiprotease Imbalance"
+    },
+    {
+      "source": "TGFB1",
+      "type": "PARTICIPATES_IN",
+      "target": "airway-remodeling",
+      "evidence": "Key component of Small Airway Remodeling"
+    }
+  ]
+}

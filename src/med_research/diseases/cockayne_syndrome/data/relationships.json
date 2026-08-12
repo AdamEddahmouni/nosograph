@@ -1,0 +1,874 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1431",
+      "target": "NDUFAF2",
+      "type": "TARGETS",
+      "description": "METFORMIN targets NDUFAF2."
+    },
+    {
+      "source": "BAX",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BAX is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CDK5RAP2",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK5RAP2 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "FGF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "NDUFAF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NDUFAF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "GTF2H1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "GTF2H1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "GTF2H2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "GTF2H2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "GTF2H3",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "GTF2H3 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "GTF2H4",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "GTF2H4 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "GTF2H5",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "GTF2H5 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "BRCA1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "IFNB1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNB1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "CACNA1S",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1S is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "ADAM17",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAM17 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GLI3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "SMOC1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SMOC1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "BMP4",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP4 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "BMP7",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP7 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "CHUK",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CHUK is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "TGFB2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ERCC8",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC8 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.72"
+    },
+    {
+      "source": "ERCC6",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC6 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.69"
+    },
+    {
+      "source": "ERCC4",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC4 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.55"
+    },
+    {
+      "source": "NDUFAF2",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFAF2 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.16"
+    },
+    {
+      "source": "CSH2",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSH2 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ERCC3",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC3 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ERCC2",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC2 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "ARK2N",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARK2N is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "ERCC5",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC5 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "GTF2H1",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GTF2H1 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "GTF2H5",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GTF2H5 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "GTF2H2",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GTF2H2 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "GTF2H3",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GTF2H3 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "GTF2H4",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GTF2H4 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "GYPA",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GYPA is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CSH1",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSH1 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "HSPA9",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPA9 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TDP1",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TDP1 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PPIB",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPIB is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPS27A",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPS27A is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "UBA52",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBA52 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "UBB",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBB is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "UBC",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBC is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "HFM1",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HFM1 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNB1",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNB1 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATF3",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATF3 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SIRT1",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIRT1 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PCNA",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCNA is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "DNAH8",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAH8 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERCC1",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC1 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "DDB2",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDB2 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "GH1",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "MORC2",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MORC2 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN1A",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1A is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "NSG1",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSG1 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "BAX",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAX is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "IGF1",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TCEAL1",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCEAL1 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "NEDD4",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEDD4 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "GYPE",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GYPE is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TARDBP",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TARDBP is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "HDAC9",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDAC9 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "RB1",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TARP",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TARP is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "MEN1",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEN1 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "GYPB",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GYPB is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "NCL",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCL is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRAS",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDK5RAP2",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK5RAP2 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CAT",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAT is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "XPA",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XPA is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "OGG1",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OGG1 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "UVSSA",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UVSSA is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "BRCA1",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA1 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "XPC",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XPC is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CANT1",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CANT1 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "DNASE1",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNASE1 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "DNASE1L3",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNASE1L3 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "VCP",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VCP is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "GLI3",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI3 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "FOXC1",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC1 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "BMP4",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP4 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "FIGN",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FIGN is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "SH3PXD2B",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH3PXD2B is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "EDNRA",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDNRA is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "ZEB1",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "PSIP1",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSIP1 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "DLX5",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLX5 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "PRRX1",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRRX1 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "FGFR3",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "GAS1",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAS1 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "KAT6B",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KAT6B is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "ROR2",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROR2 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "NRTN",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRTN is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "FOXE3",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXE3 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "PSPH",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSPH is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "OTX2",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OTX2 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "FGF9",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF9 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "CHD7",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD7 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "TCOF1",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCOF1 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "ELP1",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELP1 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PGAP1",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGAP1 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "VEGFA",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "EDARADD",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDARADD is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "CHUK",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHUK is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "LMNA",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMNA is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "GSC",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSC is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "TGFB2",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB2 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "FGFR2",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "RPL38",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL38 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "RPL24",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL24 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "TMEM107",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM107 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "HSPG2",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPG2 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "CACNA1S",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1S is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "EDA",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDA is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "GNPTAB",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNPTAB is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "CSGALNACT1",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSGALNACT1 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "MKS1",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKS1 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "CRKL",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRKL is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "ADAM17",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAM17 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "LGR4",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGR4 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "ENPP1",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENPP1 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "NFIX",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFIX is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "SMOC1",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMOC1 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "TBX15",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX15 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "RPGRIP1L",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPGRIP1L is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "EYA1",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EYA1 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "BMP7",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP7 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "ZIC3",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZIC3 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "AWAT2",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AWAT2 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "ALKBH1",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALKBH1 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "FGFR1",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PXDN",
+      "target": "Cockayne syndrome (COCKAYNE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PXDN is associated with Cockayne syndrome (COCKAYNE_SYNDROME). Open Targets association score 0.06"
+    }
+  ]
+}

@@ -1,0 +1,622 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL160",
+      "target": "PPIA",
+      "type": "TARGETS",
+      "description": "CYCLOSPORINE targets PPIA."
+    },
+    {
+      "source": "CHEMBL1812161",
+      "target": "NQO1",
+      "type": "TARGETS",
+      "description": "VATIQUINONE targets NQO1."
+    },
+    {
+      "source": "XIAP",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "XIAP is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CACNA1F",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1F is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "CACNA1D",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1D is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "HCN1",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "HCN1 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "SCN5A",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "SCN5A is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "POU4F2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "POU4F2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SNF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SNF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ZNF722",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ZNF722 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ZNF735",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ZNF735 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SLC4A3",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC4A3 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "NMNAT1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "NMNAT1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "MT-ND1",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-ND1 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.77"
+    },
+    {
+      "source": "MT-ND6",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-ND6 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.76"
+    },
+    {
+      "source": "MT-ND5",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-ND5 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.75"
+    },
+    {
+      "source": "MT-ND4",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-ND4 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.75"
+    },
+    {
+      "source": "MT-ATP6",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-ATP6 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.72"
+    },
+    {
+      "source": "MT-CYB",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-CYB is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.71"
+    },
+    {
+      "source": "MT-CO1",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-CO1 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.71"
+    },
+    {
+      "source": "MT-ND2",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-ND2 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.70"
+    },
+    {
+      "source": "MT-ND4L",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-ND4L is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.68"
+    },
+    {
+      "source": "MT-CO3",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-CO3 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.64"
+    },
+    {
+      "source": "ACO2",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACO2 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.52"
+    },
+    {
+      "source": "POLR3H",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLR3H is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.49"
+    },
+    {
+      "source": "DNAJC30",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAJC30 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.46"
+    },
+    {
+      "source": "NDUFS2",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFS2 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.44"
+    },
+    {
+      "source": "TMEM126A",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM126A is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.41"
+    },
+    {
+      "source": "PRICKLE3",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRICKLE3 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.19"
+    },
+    {
+      "source": "MT-CO2",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-CO2 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "RP1",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RP1 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "NQO1",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NQO1 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "PPIA",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPIA is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "OPA1",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OPA1 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.06"
+    },
+    {
+      "source": "PDE6B",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE6B is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.06"
+    },
+    {
+      "source": "CRX",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRX is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.06"
+    },
+    {
+      "source": "AVPR2",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AVPR2 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "DES",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DES is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "OTX2",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OTX2 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC4A3",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC4A3 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "MAPT",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPT is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "NR2E1",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR2E1 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CACNA1D",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1D is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "TENM2",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TENM2 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SCN8A",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN8A is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SOD2",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD2 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ENKD1",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENKD1 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SPTBN4",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTBN4 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "NYX",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NYX is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "OPTN",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OPTN is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFT81",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFT81 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "TP53",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PLCB4",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLCB4 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "YJU2",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YJU2 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "CCDC125",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC125 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZFPL1",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFPL1 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "CLN8",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLN8 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "AGRN",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGRN is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "HCN1",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HCN1 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "ATOH7",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATOH7 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "RAB18",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB18 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "SPIN1",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPIN1 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "LARGE1",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LARGE1 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "POU4F2",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU4F2 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRIMPOL",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRIMPOL is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "EGLN3",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGLN3 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "SCN5A",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN5A is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "TBX3",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX3 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "SYT8",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYT8 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "MECP2",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MECP2 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "PPFIA2",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPFIA2 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "XIAP",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XIAP is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "IVNS1ABP",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IVNS1ABP is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "DNM1L",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNM1L is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.39"
+    },
+    {
+      "source": "ABHD12",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABHD12 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.38"
+    },
+    {
+      "source": "BTD",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTD is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.38"
+    },
+    {
+      "source": "SLC25A46",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC25A46 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.37"
+    },
+    {
+      "source": "SLC52A2",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC52A2 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.37"
+    },
+    {
+      "source": "ISCA2",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ISCA2 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.37"
+    },
+    {
+      "source": "SNF8",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNF8 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.19"
+    },
+    {
+      "source": "MT-ND3",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-ND3 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.19"
+    },
+    {
+      "source": "PPIB",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPIB is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.18"
+    },
+    {
+      "source": "MAB21L1",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAB21L1 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.09"
+    },
+    {
+      "source": "PAX2",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX2 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.09"
+    },
+    {
+      "source": "METTL23",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "METTL23 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "PRPH2",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRPH2 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "AHSA1",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHSA1 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "TBCEL-TECTA",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBCEL-TECTA is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "TBCEL",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBCEL is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "ZNF329",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF329 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "PRSS56",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRSS56 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "RPGR",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPGR is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "NMNAT1",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NMNAT1 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "CACNA1F",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1F is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "INTS15",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INTS15 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "RS1",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RS1 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "RHO",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHO is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "IDH3A",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH3A is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "ZNF735",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF735 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "ZNF722",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF722 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "ZNF486",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF486 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "ZNF679",
+      "target": "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF679 is associated with Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUROPATHY). Open Targets association score 0.07"
+    }
+  ]
+}

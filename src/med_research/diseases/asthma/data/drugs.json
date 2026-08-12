@@ -1,0 +1,36 @@
+{
+  "disease_id": "asthma",
+  "disease_name": "Chronic Airway Inflammation (Asthma)",
+  "drugs": [
+    {
+      "id": "mepolizumab",
+      "name": "Mepolizumab",
+      "targets": [
+        "IL5"
+      ],
+      "phase": "Approved",
+      "mechanism_of_action": "Humanized anti-IL-5 monoclonal antibody",
+      "drug_type": "Biologic"
+    },
+    {
+      "id": "tezepelumab",
+      "name": "Tezepelumab",
+      "targets": [
+        "TSLP"
+      ],
+      "phase": "Approved",
+      "mechanism_of_action": "Human anti-TSLP monoclonal antibody",
+      "drug_type": "Biologic"
+    },
+    {
+      "id": "fluticasone",
+      "name": "Fluticasone",
+      "targets": [
+        "NR3C1"
+      ],
+      "phase": "Approved",
+      "mechanism_of_action": "Inhaled corticosteroid anti-inflammatory agent",
+      "drug_type": "Small molecule"
+    }
+  ]
+}

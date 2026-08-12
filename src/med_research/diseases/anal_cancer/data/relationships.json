@@ -1,0 +1,592 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL185",
+      "target": "TYMS",
+      "type": "TARGETS",
+      "description": "FLUOROURACIL targets TYMS."
+    },
+    {
+      "source": "CHEMBL4298037",
+      "target": "PDCD1",
+      "type": "TARGETS",
+      "description": "RETIFANLIMAB targets PDCD1."
+    },
+    {
+      "source": "CHEMBL1773",
+      "target": "TYMS",
+      "type": "TARGETS",
+      "description": "CAPECITABINE targets TYMS."
+    },
+    {
+      "source": "CHEMBL2108738",
+      "target": "PDCD1",
+      "type": "TARGETS",
+      "description": "NIVOLUMAB targets PDCD1."
+    },
+    {
+      "source": "CHEMBL255863",
+      "target": "ABL1",
+      "type": "TARGETS",
+      "description": "NILOTINIB targets ABL1."
+    },
+    {
+      "source": "CHEMBL3545252",
+      "target": "TUBB4B",
+      "type": "TARGETS",
+      "description": "DOCETAXEL targets TUBB4B."
+    },
+    {
+      "source": "CHEMBL3137343",
+      "target": "PDCD1",
+      "type": "TARGETS",
+      "description": "PEMBROLIZUMAB targets PDCD1."
+    },
+    {
+      "source": "CHEMBL428647",
+      "target": "TUBB4B",
+      "type": "TARGETS",
+      "description": "PACLITAXEL targets TUBB4B."
+    },
+    {
+      "source": "CHEMBL1201577",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "CETUXIMAB targets EGFR."
+    },
+    {
+      "source": "CASP8",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP8 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BRCA2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "NRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3R1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3R1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "GSTM1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTM1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "TGFBR2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFBR2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "GSTM1",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTM1 is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRAS",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "EGFR",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRT20",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT20 is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "LIAT1",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIAT1 is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "VEGFA",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIP",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIP is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "BCL2",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "TP53",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "KMT2D",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.44"
+    },
+    {
+      "source": "KMT2C",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.44"
+    },
+    {
+      "source": "FBXW7",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXW7 is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.43"
+    },
+    {
+      "source": "TYMS",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYMS is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.39"
+    },
+    {
+      "source": "TUBA3E",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBA3E is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "TUBB4B",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB4B is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "TUBB1",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB1 is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "TUBB3",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB3 is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "TUBA1C",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBA1C is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "TUBA1A",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBA1A is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "TUBA3C",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBA3C is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "TUBB",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "TUBB4A",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB4A is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "TUBB2A",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB2A is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "TUBA1B",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBA1B is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "TUBB8",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB8 is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "TUBA4A",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBA4A is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "TUBB2B",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB2B is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "TUBB6",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB6 is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "PDCD1",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.37"
+    },
+    {
+      "source": "APC",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.36"
+    },
+    {
+      "source": "FAT1",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT1 is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.34"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.34"
+    },
+    {
+      "source": "FAT4",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT4 is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.32"
+    },
+    {
+      "source": "STK11",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK11 is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.30"
+    },
+    {
+      "source": "ABL1",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABL1 is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.30"
+    },
+    {
+      "source": "BRAF",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.29"
+    },
+    {
+      "source": "CASP8",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP8 is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.28"
+    },
+    {
+      "source": "MTOR",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTEN",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.28"
+    },
+    {
+      "source": "NRAS",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRAS is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.28"
+    },
+    {
+      "source": "ERBB2",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.28"
+    },
+    {
+      "source": "MET",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.28"
+    },
+    {
+      "source": "FGFR3",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.28"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRCA2",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA2 is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.28"
+    },
+    {
+      "source": "NF1",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.28"
+    },
+    {
+      "source": "TGFBR2",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFBR2 is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.28"
+    },
+    {
+      "source": "CRTC1",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRTC1 is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.28"
+    },
+    {
+      "source": "NTRK3",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK3 is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2A",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2A is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.28"
+    },
+    {
+      "source": "FANCG",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCG is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.28"
+    },
+    {
+      "source": "MAPK1",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK1 is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.28"
+    },
+    {
+      "source": "EP300",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EP300 is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.28"
+    },
+    {
+      "source": "KDM6A",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM6A is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.28"
+    },
+    {
+      "source": "ERBB4",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB4 is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.28"
+    },
+    {
+      "source": "USP8",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP8 is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.28"
+    },
+    {
+      "source": "NCOR1",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOR1 is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.28"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.28"
+    },
+    {
+      "source": "PIK3R1",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3R1 is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.28"
+    },
+    {
+      "source": "ARID2",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID2 is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.28"
+    },
+    {
+      "source": "CREBBP",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.28"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.28"
+    },
+    {
+      "source": "TET1",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET1 is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTPRT",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRT is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.28"
+    },
+    {
+      "source": "TP63",
+      "target": "anal carcinoma (ANAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with anal carcinoma (ANAL_CANCER). Open Targets association score 0.28"
+    }
+  ]
+}

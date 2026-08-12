@@ -1,0 +1,33 @@
+{
+  "disease_id": "psa",
+  "disease_name": "Psoriatic Arthritis",
+  "adverse_events": [
+    {
+      "drug": "secukinumab",
+      "common_events": [
+        "Upper respiratory infections",
+        "Nasopharyngitis",
+        "Headache"
+      ],
+      "serious_events": [
+        "Serious infections",
+        "Inflammatory bowel disease exacerbation"
+      ],
+      "black_box_warning": false
+    },
+    {
+      "drug": "adalimumab",
+      "common_events": [
+        "Injection site reactions",
+        "Headache",
+        "Rash"
+      ],
+      "serious_events": [
+        "Tuberculosis reactivation",
+        "Invasive fungal infections",
+        "Malignancy"
+      ],
+      "black_box_warning": true
+    }
+  ]
+}

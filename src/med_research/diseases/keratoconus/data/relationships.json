@@ -1,0 +1,610 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201631",
+      "target": "INSR",
+      "type": "TARGETS",
+      "description": "INSULIN HUMAN targets INSR."
+    },
+    {
+      "source": "WNT1",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT1 is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "CD46",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CD46 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "TP53INP1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53INP1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "COL12A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL12A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL1A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL1A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL5A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL5A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL5A2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL5A2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "LOX",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "LOX is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "PLOD1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLOD1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GRIN2B",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2B is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "NFATC3",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFATC3 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "TSC1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD46",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD46 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "SMAD3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "PTGDS",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGDS is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNFAIP8L3",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFAIP8L3 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LRP1B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP1B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "WNT1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "INSR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INSR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "TUBA3D",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBA3D is associated with keratoconus (KERATOCONUS). Open Targets association score 0.55"
+    },
+    {
+      "source": "COL12A1",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL12A1 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.44"
+    },
+    {
+      "source": "COL5A1",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL5A1 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.41"
+    },
+    {
+      "source": "SMAD3",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD3 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.41"
+    },
+    {
+      "source": "ALDH3A1",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALDH3A1 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.38"
+    },
+    {
+      "source": "FNDC3B",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FNDC3B is associated with keratoconus (KERATOCONUS). Open Targets association score 0.38"
+    },
+    {
+      "source": "PTGDS",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGDS is associated with keratoconus (KERATOCONUS). Open Targets association score 0.37"
+    },
+    {
+      "source": "TMEM212",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM212 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.35"
+    },
+    {
+      "source": "MPDZ",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPDZ is associated with keratoconus (KERATOCONUS). Open Targets association score 0.35"
+    },
+    {
+      "source": "TCF4",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF4 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.35"
+    },
+    {
+      "source": "COL1A1",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL1A1 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.34"
+    },
+    {
+      "source": "KLF5",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF5 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.34"
+    },
+    {
+      "source": "LOX",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LOX is associated with keratoconus (KERATOCONUS). Open Targets association score 0.34"
+    },
+    {
+      "source": "ENTPD2",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENTPD2 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.33"
+    },
+    {
+      "source": "ELF1",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELF1 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.33"
+    },
+    {
+      "source": "MAP3K19",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K19 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.32"
+    },
+    {
+      "source": "CNTN3",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNTN3 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.32"
+    },
+    {
+      "source": "GALNT6",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GALNT6 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.32"
+    },
+    {
+      "source": "AIFM3",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIFM3 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.31"
+    },
+    {
+      "source": "PKHD1",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKHD1 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.30"
+    },
+    {
+      "source": "MRPS14",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRPS14 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "STK35",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK35 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.27"
+    },
+    {
+      "source": "FOXO1",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXO1 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.27"
+    },
+    {
+      "source": "PIDD1",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIDD1 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.27"
+    },
+    {
+      "source": "LRP1B",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP1B is associated with keratoconus (KERATOCONUS). Open Targets association score 0.26"
+    },
+    {
+      "source": "COL4A1",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A1 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.26"
+    },
+    {
+      "source": "TSC1",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC1 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.26"
+    },
+    {
+      "source": "PLOD1",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLOD1 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.26"
+    },
+    {
+      "source": "COL5A2",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL5A2 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.26"
+    },
+    {
+      "source": "ATP1B1",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP1B1 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.25"
+    },
+    {
+      "source": "TFAP2B",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFAP2B is associated with keratoconus (KERATOCONUS). Open Targets association score 0.24"
+    },
+    {
+      "source": "EIF3A",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF3A is associated with keratoconus (KERATOCONUS). Open Targets association score 0.23"
+    },
+    {
+      "source": "FAM76B",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM76B is associated with keratoconus (KERATOCONUS). Open Targets association score 0.22"
+    },
+    {
+      "source": "ZNF469",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF469 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.21"
+    },
+    {
+      "source": "IQCH",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IQCH is associated with keratoconus (KERATOCONUS). Open Targets association score 0.20"
+    },
+    {
+      "source": "TP53INP1",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53INP1 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.20"
+    },
+    {
+      "source": "CD46",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD46 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.19"
+    },
+    {
+      "source": "GRIN2B",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2B is associated with keratoconus (KERATOCONUS). Open Targets association score 0.19"
+    },
+    {
+      "source": "RAB3GAP1",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB3GAP1 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.19"
+    },
+    {
+      "source": "TNFAIP8L3",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFAIP8L3 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.18"
+    },
+    {
+      "source": "AAGAB",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AAGAB is associated with keratoconus (KERATOCONUS). Open Targets association score 0.17"
+    },
+    {
+      "source": "CACYBP",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACYBP is associated with keratoconus (KERATOCONUS). Open Targets association score 0.17"
+    },
+    {
+      "source": "ACTL7B",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTL7B is associated with keratoconus (KERATOCONUS). Open Targets association score 0.17"
+    },
+    {
+      "source": "CRADD",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRADD is associated with keratoconus (KERATOCONUS). Open Targets association score 0.16"
+    },
+    {
+      "source": "RAB11FIP4",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB11FIP4 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.16"
+    },
+    {
+      "source": "MUC5AC",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC5AC is associated with keratoconus (KERATOCONUS). Open Targets association score 0.15"
+    },
+    {
+      "source": "LCN12",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCN12 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.14"
+    },
+    {
+      "source": "HOXB1",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXB1 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.14"
+    },
+    {
+      "source": "KIR3DL1",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIR3DL1 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.14"
+    },
+    {
+      "source": "MOCS2",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MOCS2 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.14"
+    },
+    {
+      "source": "PNPLA2",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PNPLA2 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.13"
+    },
+    {
+      "source": "EML6",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EML6 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.11"
+    },
+    {
+      "source": "NBEAL2",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBEAL2 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.11"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with keratoconus (KERATOCONUS). Open Targets association score 0.11"
+    },
+    {
+      "source": "WNT1",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT1 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.11"
+    },
+    {
+      "source": "NFATC3",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFATC3 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.11"
+    },
+    {
+      "source": "DAB2IP",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DAB2IP is associated with keratoconus (KERATOCONUS). Open Targets association score 0.11"
+    },
+    {
+      "source": "NANOGP8",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NANOGP8 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.11"
+    },
+    {
+      "source": "DOP1B",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOP1B is associated with keratoconus (KERATOCONUS). Open Targets association score 0.11"
+    },
+    {
+      "source": "NBPF19",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBPF19 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.11"
+    },
+    {
+      "source": "VSX1",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VSX1 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.77"
+    },
+    {
+      "source": "PSD3",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSD3 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.30"
+    },
+    {
+      "source": "MCTP1",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCTP1 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.27"
+    },
+    {
+      "source": "INSR",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INSR is associated with keratoconus (KERATOCONUS). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDST3",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDST3 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.24"
+    },
+    {
+      "source": "MRPS35",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRPS35 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.24"
+    },
+    {
+      "source": "SPRY4",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPRY4 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.24"
+    },
+    {
+      "source": "CDYL",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDYL is associated with keratoconus (KERATOCONUS). Open Targets association score 0.24"
+    },
+    {
+      "source": "NGFR",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NGFR is associated with keratoconus (KERATOCONUS). Open Targets association score 0.23"
+    },
+    {
+      "source": "TIPE3",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIPE3 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.23"
+    },
+    {
+      "source": "NCAM1",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCAM1 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.22"
+    },
+    {
+      "source": "CEP57",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEP57 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.22"
+    },
+    {
+      "source": "IRX1",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRX1 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.22"
+    },
+    {
+      "source": "VWC2",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VWC2 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.21"
+    },
+    {
+      "source": "POM121L12",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POM121L12 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.21"
+    },
+    {
+      "source": "ENSG00000293563",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENSG00000293563 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.21"
+    },
+    {
+      "source": "PRR20A",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRR20A is associated with keratoconus (KERATOCONUS). Open Targets association score 0.19"
+    },
+    {
+      "source": "NR4A2",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR4A2 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.19"
+    },
+    {
+      "source": "ACTL7A",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTL7A is associated with keratoconus (KERATOCONUS). Open Targets association score 0.17"
+    }
+  ]
+}

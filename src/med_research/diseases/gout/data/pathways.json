@@ -1,0 +1,31 @@
+{
+  "disease_id": "gout",
+  "disease_name": "Gout",
+  "pathways": [
+    {
+      "id": "urate-transport",
+      "name": "Renal & Intestinal Urate Transport",
+      "description": "Regulation of serum uric acid levels by GLUT9, URAT1, and ABCG2.",
+      "key_components": [
+        "SLC2A9",
+        "ABCG2",
+        "SLC22A12"
+      ],
+      "therapeutic_targets": [
+        "SLC22A12"
+      ]
+    },
+    {
+      "id": "nlrp3-inflammasome",
+      "name": "NLRP3 Inflammasome Activation",
+      "description": "Urate crystal phagocytosis triggering Caspase-1 and IL-1 beta release.",
+      "key_components": [
+        "NLRP3",
+        "IL1B"
+      ],
+      "therapeutic_targets": [
+        "IL1B"
+      ]
+    }
+  ]
+}

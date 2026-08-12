@@ -1,0 +1,54 @@
+{
+  "disease_id": "copd",
+  "disease_name": "Chronic Obstructive Pulmonary Disease",
+  "genes": [
+    {
+      "id": "SERPINA1",
+      "symbol": "SERPINA1",
+      "name": "Serpin Family A Member 1 (Alpha-1 Antitrypsin)",
+      "category": "Fibrosis & Tissue Remodeling",
+      "association_score": 0.98,
+      "odds_ratio": 4.5,
+      "disease_evidence": "Protease inhibitor deficit causing early emphysema.",
+      "gwas_pvalue": 1e-110,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "MMP9",
+      "symbol": "MMP9",
+      "name": "Matrix Metallopeptidase 9",
+      "category": "Fibrosis & Tissue Remodeling",
+      "association_score": 0.88,
+      "odds_ratio": 1.7,
+      "disease_evidence": "Gelatinase degrading alveolar extracellular matrix.",
+      "gwas_pvalue": 1e-40,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "CHRNA3",
+      "symbol": "CHRNA3",
+      "name": "Cholinergic Receptor Nicotinic Alpha 3 Subunit",
+      "category": "Neurotransmission",
+      "association_score": 0.94,
+      "odds_ratio": 2.0,
+      "disease_evidence": "Nicotinic acetylcholine receptor locus associated with COPD susceptibility.",
+      "gwas_pvalue": 1e-75,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "TGFB1",
+      "symbol": "TGFB1",
+      "name": "Transforming Growth Factor Beta 1",
+      "category": "Fibrosis & Tissue Remodeling",
+      "association_score": 0.86,
+      "odds_ratio": 1.5,
+      "disease_evidence": "Drives small airway fibrosis and extracellular matrix deposition.",
+      "gwas_pvalue": 1e-35,
+      "chromosome": "unknown",
+      "function": "unknown"
+    }
+  ]
+}

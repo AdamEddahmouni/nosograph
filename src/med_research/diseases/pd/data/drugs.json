@@ -1,0 +1,46 @@
+{
+  "disease_id": "pd",
+  "disease_name": "Parkinson's Disease",
+  "drugs": [
+    {
+      "id": "levodopa",
+      "name": "Levodopa",
+      "targets": [
+        "SLC6A3"
+      ],
+      "phase": "Approved",
+      "mechanism_of_action": "Dopamine precursor converted by DOPA decarboxylase",
+      "drug_type": "Small molecule"
+    },
+    {
+      "id": "pramipexole",
+      "name": "Pramipexole",
+      "targets": [
+        "DRD2"
+      ],
+      "phase": "Approved",
+      "mechanism_of_action": "Non-ergot dopamine D2/D3 receptor agonist",
+      "drug_type": "Small molecule"
+    },
+    {
+      "id": "rasagiline",
+      "name": "Rasagiline",
+      "targets": [
+        "MAOB"
+      ],
+      "phase": "Approved",
+      "mechanism_of_action": "Irreversible monoamine oxidase-B inhibitor",
+      "drug_type": "Small molecule"
+    },
+    {
+      "id": "entacapone",
+      "name": "Entacapone",
+      "targets": [
+        "COMT"
+      ],
+      "phase": "Approved",
+      "mechanism_of_action": "Reversible catechol-O-methyltransferase inhibitor",
+      "drug_type": "Small molecule"
+    }
+  ]
+}

@@ -1,0 +1,880 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL957",
+      "target": "EDNRA",
+      "type": "TARGETS",
+      "description": "BOSENTAN targets EDNRA."
+    },
+    {
+      "source": "CHEMBL957",
+      "target": "EDNRB",
+      "type": "TARGETS",
+      "description": "BOSENTAN targets EDNRB."
+    },
+    {
+      "source": "CHEMBL779",
+      "target": "PDE5A",
+      "type": "TARGETS",
+      "description": "TADALAFIL targets PDE5A."
+    },
+    {
+      "source": "CHEMBL192",
+      "target": "PDE5A",
+      "type": "TARGETS",
+      "description": "SILDENAFIL targets PDE5A."
+    },
+    {
+      "source": "CHEMBL1743073",
+      "target": "INHBA",
+      "type": "TARGETS",
+      "description": "SOTATERCEPT targets INHBA."
+    },
+    {
+      "source": "CHEMBL2103873",
+      "target": "EDNRB",
+      "type": "TARGETS",
+      "description": "MACITENTAN targets EDNRB."
+    },
+    {
+      "source": "MCL1",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "MCL1 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "SCN5A",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "SCN5A is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "ACKR3",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ACKR3 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "C9orf72",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C9orf72 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IGF2R",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2R is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "PLAT",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "PLAT is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "VWF",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "VWF is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ABCC8",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC8 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "BMPR2",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMPR2 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "THBD",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THBD is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD34",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD34 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PLAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "FBN1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "FBN1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "SMAD1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "SMAD7",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD7 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFBR1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFBR2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFBR3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "PTGER4",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGER4 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTGIR",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGIR is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFBR1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFBR2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFBR3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "ABCC8",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC8 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ADAMTSL2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTSL2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "LOX",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "LOX is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "AGT",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGT is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "PDE5A",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE5A is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.28"
+    },
+    {
+      "source": "EDNRA",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDNRA is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "EDNRB",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDNRB is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NKX2-5",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX2-5 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SOX4",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX4 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "EPHA3",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHA3 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "RXRA",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RXRA is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "VEGFA",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "HEY2",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEY2 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZFPM2",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFPM2 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "FOXP1",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP1 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TBX5",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX5 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "KLF3",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF3 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "NPPA",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPA is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TBX3",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX3 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "NOS3",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS3 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "WDR27",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR27 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SMAD7",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD7 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TLL1",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLL1 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PTPN11",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN11 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ACKR3",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACKR3 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "NPRL3",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPRL3 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SCN5A",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN5A is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "MECOM",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MECOM is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "FNIP1",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FNIP1 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "MYH10",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH10 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "KAT6A",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KAT6A is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PSMA6",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMA6 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "NPPB",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPB is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFB1",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFBR1",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFBR1 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFBR3",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFBR3 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFBR2",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFBR2 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADRA1D",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA1D is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "THBD",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THBD is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTGIR",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGIR is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD34",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD34 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "VWF",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VWF is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "BMPR2",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMPR2 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ABCC8",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC8 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SMAD1",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD1 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERV3-1",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERV3-1 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "SERPINA4",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA4 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "MCL1",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCL1 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "ERVFRD-1",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERVFRD-1 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL10",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "ERVW-1",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERVW-1 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "HMGB1",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGB1 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "PLAT",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAT is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "PROM1",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROM1 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "KDR",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "PCYT2",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCYT2 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "MFSD11",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MFSD11 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "SERPINA1",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA1 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "EDN1",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDN1 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "MTPAP",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTPAP is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "ANTXR2",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANTXR2 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CEACAM3",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM3 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "PDAP1",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDAP1 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "INHBA",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INHBA is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "FBN1",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBN1 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "FBLN1",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBLN1 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "GATA4",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA4 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "LMNA",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMNA is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "ADAMTSL2",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTSL2 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "MRTFB",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRTFB is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "IGF2R",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2R is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PTGER4",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGER4 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "GJA1",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA1 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "MGRN1",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MGRN1 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "EGFR",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "LOX",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LOX is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PTGS2",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TAB1",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAB1 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FAS",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PLVAP",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLVAP is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FOXC1",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC1 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "JUP",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JUP is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SOS1",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOS1 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FOXP3",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FBLN5",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBLN5 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNNC1",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNC1 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "DES",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DES is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "DMD",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMD is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PCNT",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCNT is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "C9orf72",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C9orf72 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ODAD2",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ODAD2 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PDGFB",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFB is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ABCA1",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA1 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "EP300",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EP300 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "NTF3",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTF3 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "LPAR4",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPAR4 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SPP1",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPP1 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "DNM1L",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNM1L is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ATP8B1",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP8B1 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CITED2",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CITED2 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "RBM20",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBM20 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "DNAH5",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAH5 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "RDH10",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RDH10 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SMG9",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMG9 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ESR2",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR2 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "AGT",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGT is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "NPR1",
+      "target": "Eisenmenger syndrome (EISENMENGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPR1 is associated with Eisenmenger syndrome (EISENMENGER_SYNDROME). Open Targets association score 0.04"
+    }
+  ]
+}

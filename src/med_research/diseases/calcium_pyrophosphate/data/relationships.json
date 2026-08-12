@@ -1,0 +1,784 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL897",
+      "target": "SLC22A11",
+      "type": "TARGETS",
+      "description": "PROBENECID targets SLC22A11."
+    },
+    {
+      "source": "CHEMBL897",
+      "target": "SLC22A6",
+      "type": "TARGETS",
+      "description": "PROBENECID targets SLC22A6."
+    },
+    {
+      "source": "CHEMBL897",
+      "target": "SLC22A8",
+      "type": "TARGETS",
+      "description": "PROBENECID targets SLC22A8."
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "TNFRSF10C",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF10C is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ZNF277",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ZNF277 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CSF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CSF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "GLP1R",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GLP1R is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL1A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGAL",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAL is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "APOBEC3C",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOBEC3C is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLRAD3",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLRAD3 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "ALPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ALPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "POMC",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "POMC is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "COMT",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "COMT is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "HTR1A",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "HTR1A is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "PTHLH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTHLH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "ITGAL",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAL is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGM2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGM2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNFRSF10C",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF10C is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF4",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF4 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNA1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP24A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP24A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "KCNH5",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNH5 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "ADAMTS2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ADAMTSL1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTSL1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GRIN2A",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2A is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "CD300E",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD300E is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "KBTBD12",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KBTBD12 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.21"
+    },
+    {
+      "source": "ANKH",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKH is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.19"
+    },
+    {
+      "source": "OTULIN",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OTULIN is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.18"
+    },
+    {
+      "source": "ENPP1",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENPP1 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.02"
+    },
+    {
+      "source": "SLC22A6",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A6 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.02"
+    },
+    {
+      "source": "SLC22A8",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A8 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.02"
+    },
+    {
+      "source": "SLC22A11",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A11 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF11B is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAGEA4",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAGEA4 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.01"
+    },
+    {
+      "source": "POMC",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMC is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.01"
+    },
+    {
+      "source": "NLRP3",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP3 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ICAM1",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL1B",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SPTA1",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTA1 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PPY",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPY is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.00"
+    },
+    {
+      "source": "GH1",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.00"
+    },
+    {
+      "source": "IGF1",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL1A",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1A is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.00"
+    },
+    {
+      "source": "GGH",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGH is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PPA1",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPA1 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGM2",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGM2 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFNA1",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA1 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ITGAL",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGAL is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ZGLP1",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZGLP1 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.00"
+    },
+    {
+      "source": "NOD2",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOD2 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.00"
+    },
+    {
+      "source": "EHMT1",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EHMT1 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.00"
+    },
+    {
+      "source": "GCG",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCG is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.00"
+    },
+    {
+      "source": "GLP1R",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLP1R is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ITGB2",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB2 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACAN",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACAN is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CYP24A1",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP24A1 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ALPL",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALPL is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTHLH",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTHLH is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.00"
+    },
+    {
+      "source": "LYZ",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYZ is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CSF2",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF2 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.00"
+    },
+    {
+      "source": "LTF",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTF is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.00"
+    },
+    {
+      "source": "RBP4",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBP4 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.00"
+    },
+    {
+      "source": "RNF144B",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF144B is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.43"
+    },
+    {
+      "source": "NAALADL2",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAALADL2 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.33"
+    },
+    {
+      "source": "LDLRAD3",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLRAD3 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.32"
+    },
+    {
+      "source": "FSHR",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSHR is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.32"
+    },
+    {
+      "source": "LPP",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPP is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.32"
+    },
+    {
+      "source": "FREM2",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FREM2 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.31"
+    },
+    {
+      "source": "TASP1",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TASP1 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.29"
+    },
+    {
+      "source": "MED27",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MED27 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.29"
+    },
+    {
+      "source": "AOAH",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AOAH is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.29"
+    },
+    {
+      "source": "FUT9",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUT9 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.29"
+    },
+    {
+      "source": "ADAMTSL1",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTSL1 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.29"
+    },
+    {
+      "source": "CDH18",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH18 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.29"
+    },
+    {
+      "source": "SLC9A9",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC9A9 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.28"
+    },
+    {
+      "source": "TNFSF4",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF4 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.28"
+    },
+    {
+      "source": "IRX2",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRX2 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.28"
+    },
+    {
+      "source": "ADAMTS2",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS2 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.27"
+    },
+    {
+      "source": "MGMT",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MGMT is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.26"
+    },
+    {
+      "source": "MYO5A",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO5A is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.26"
+    },
+    {
+      "source": "TTLL11",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTLL11 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.26"
+    },
+    {
+      "source": "PARD6G",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PARD6G is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.25"
+    },
+    {
+      "source": "DHTKD1",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHTKD1 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.25"
+    },
+    {
+      "source": "DOCK4",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOCK4 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.25"
+    },
+    {
+      "source": "NCK2",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCK2 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.25"
+    },
+    {
+      "source": "CHRM3",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHRM3 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.24"
+    },
+    {
+      "source": "NDST4",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDST4 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.24"
+    },
+    {
+      "source": "TPK1",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPK1 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.24"
+    },
+    {
+      "source": "CPEB2",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPEB2 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.24"
+    },
+    {
+      "source": "TEX264",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TEX264 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.24"
+    },
+    {
+      "source": "PRICKLE1",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRICKLE1 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.24"
+    },
+    {
+      "source": "DAP",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DAP is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.23"
+    },
+    {
+      "source": "SGCZ",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGCZ is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.23"
+    },
+    {
+      "source": "GRIK2",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIK2 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.23"
+    },
+    {
+      "source": "SMIM31",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMIM31 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.21"
+    },
+    {
+      "source": "NWD2",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NWD2 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.21"
+    },
+    {
+      "source": "FOXO1",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXO1 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.21"
+    },
+    {
+      "source": "APOBEC3C",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOBEC3C is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.21"
+    },
+    {
+      "source": "AHR",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHR is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.21"
+    },
+    {
+      "source": "CD300E",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD300E is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.20"
+    },
+    {
+      "source": "HAPSTR1",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAPSTR1 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.20"
+    },
+    {
+      "source": "SPACA1",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPACA1 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.20"
+    },
+    {
+      "source": "LINC03051",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LINC03051 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.19"
+    },
+    {
+      "source": "HTR1A",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTR1A is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.19"
+    },
+    {
+      "source": "AIPL1",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIPL1 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.18"
+    },
+    {
+      "source": "GRIN2A",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2A is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.18"
+    },
+    {
+      "source": "KCNH5",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNH5 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.18"
+    },
+    {
+      "source": "TNFRSF10C",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF10C is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.18"
+    },
+    {
+      "source": "DAGLA",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DAGLA is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.17"
+    },
+    {
+      "source": "TENT4A",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TENT4A is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.16"
+    },
+    {
+      "source": "TRMT11",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRMT11 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.15"
+    },
+    {
+      "source": "CENPC",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CENPC is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.14"
+    },
+    {
+      "source": "CDCA7",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDCA7 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.14"
+    },
+    {
+      "source": "SEC61G",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEC61G is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.13"
+    },
+    {
+      "source": "TRIML1",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIML1 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.12"
+    },
+    {
+      "source": "COMT",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COMT is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.11"
+    },
+    {
+      "source": "MACIR",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MACIR is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.11"
+    },
+    {
+      "source": "ZNF277",
+      "target": "chondrocalcinosis (CALCIUM_PYROPHOSPHATE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF277 is associated with chondrocalcinosis (CALCIUM_PYROPHOSPHATE). Open Targets association score 0.10"
+    }
+  ]
+}

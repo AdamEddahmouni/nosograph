@@ -1,0 +1,84 @@
+{
+  "disease_id": "asthma",
+  "disease_name": "Chronic Airway Inflammation (Asthma)",
+  "relationships": [
+    {
+      "source": "IL5",
+      "type": "ASSOCIATED_WITH",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "evidence": "Primary cytokine regulating eosinophil differentiation and survival."
+    },
+    {
+      "source": "TSLP",
+      "type": "ASSOCIATED_WITH",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "evidence": "Upstream epithelial alarmin initiating airway Type 2 cascade."
+    },
+    {
+      "source": "IL4R",
+      "type": "ASSOCIATED_WITH",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "evidence": "Receptor subunit mediating IgE class switching and mucus hypersecretion."
+    },
+    {
+      "source": "ADAM33",
+      "type": "ASSOCIATED_WITH",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "evidence": "Airway smooth muscle hyperresponsiveness and remodeling gene."
+    },
+    {
+      "source": "mepolizumab",
+      "type": "TREATS",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "evidence": "Approved disease treatment"
+    },
+    {
+      "source": "mepolizumab",
+      "type": "TARGETS",
+      "target": "IL5",
+      "evidence": "Humanized anti-IL-5 monoclonal antibody"
+    },
+    {
+      "source": "tezepelumab",
+      "type": "TREATS",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "evidence": "Approved disease treatment"
+    },
+    {
+      "source": "tezepelumab",
+      "type": "TARGETS",
+      "target": "TSLP",
+      "evidence": "Human anti-TSLP monoclonal antibody"
+    },
+    {
+      "source": "fluticasone",
+      "type": "TREATS",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "evidence": "Approved disease treatment"
+    },
+    {
+      "source": "fluticasone",
+      "type": "TARGETS",
+      "target": "NR3C1",
+      "evidence": "Inhaled corticosteroid anti-inflammatory agent"
+    },
+    {
+      "source": "IL5",
+      "type": "PARTICIPATES_IN",
+      "target": "t2-airway-inflammation",
+      "evidence": "Key component of Type 2 High Airway Inflammation"
+    },
+    {
+      "source": "IL4R",
+      "type": "PARTICIPATES_IN",
+      "target": "t2-airway-inflammation",
+      "evidence": "Key component of Type 2 High Airway Inflammation"
+    },
+    {
+      "source": "TSLP",
+      "type": "PARTICIPATES_IN",
+      "target": "alarmin-signaling",
+      "evidence": "Key component of Epithelial Alarmin Signaling"
+    }
+  ]
+}

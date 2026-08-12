@@ -1,0 +1,844 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL3989767",
+      "target": "CALCR",
+      "type": "TARGETS",
+      "description": "CALCITONIN SALMON targets CALCR."
+    },
+    {
+      "source": "CHEMBL870",
+      "target": "FDPS",
+      "type": "TARGETS",
+      "description": "ALENDRONIC ACID targets FDPS."
+    },
+    {
+      "source": "CHEMBL675",
+      "target": "FDPS",
+      "type": "TARGETS",
+      "description": "ALENDRONATE SODIUM targets FDPS."
+    },
+    {
+      "source": "CHEMBL923",
+      "target": "FDPS",
+      "type": "TARGETS",
+      "description": "RISEDRONIC ACID targets FDPS."
+    },
+    {
+      "source": "CHEMBL4303669",
+      "target": "FDPS",
+      "type": "TARGETS",
+      "description": "ZOLEDRONIC ACID targets FDPS."
+    },
+    {
+      "source": "CACNA1S",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1S is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "COL6A5",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL6A5 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL13A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL13A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL6A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL6A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL6A3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL6A3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ITGA7",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA7 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "SELENON",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELENON is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "APOBEC2",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOBEC2 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "ITGA7",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA7 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "SQSTM1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SQSTM1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "IBTK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IBTK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "SIGLEC15",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "SIGLEC15 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TNFRSF11A",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11A is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "TNFRSF11A",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11A is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "VCP",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VCP is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.70"
+    },
+    {
+      "source": "HNRNPA2B1",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNRNPA2B1 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.62"
+    },
+    {
+      "source": "HNRNPA1",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNRNPA1 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.58"
+    },
+    {
+      "source": "DMD",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMD is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.09"
+    },
+    {
+      "source": "RYR1",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RYR1 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.08"
+    },
+    {
+      "source": "DNAJB4",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAJB4 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.08"
+    },
+    {
+      "source": "DYSF",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYSF is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.08"
+    },
+    {
+      "source": "DNM2",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNM2 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.08"
+    },
+    {
+      "source": "CAPN3",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAPN3 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.07"
+    },
+    {
+      "source": "SCN4A",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN4A is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.07"
+    },
+    {
+      "source": "FKRP",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKRP is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.07"
+    },
+    {
+      "source": "LAMA2",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMA2 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.07"
+    },
+    {
+      "source": "LARGE1",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LARGE1 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.07"
+    },
+    {
+      "source": "COL6A3",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL6A3 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.07"
+    },
+    {
+      "source": "MYH4",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH4 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.07"
+    },
+    {
+      "source": "COL6A1",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL6A1 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.07"
+    },
+    {
+      "source": "ITGA7",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA7 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.07"
+    },
+    {
+      "source": "OBSCN",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OBSCN is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.07"
+    },
+    {
+      "source": "COL13A1",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL13A1 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.07"
+    },
+    {
+      "source": "TNNT1",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNT1 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.07"
+    },
+    {
+      "source": "MSTN",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSTN is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.07"
+    },
+    {
+      "source": "PLEC",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLEC is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.07"
+    },
+    {
+      "source": "SRPK3",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRPK3 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.07"
+    },
+    {
+      "source": "SGCA",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGCA is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.06"
+    },
+    {
+      "source": "TRIM32",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM32 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.06"
+    },
+    {
+      "source": "MTM1",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTM1 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.06"
+    },
+    {
+      "source": "LDB3",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDB3 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.06"
+    },
+    {
+      "source": "NEB",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEB is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.06"
+    },
+    {
+      "source": "TLN2",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLN2 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.06"
+    },
+    {
+      "source": "LMOD3",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMOD3 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.06"
+    },
+    {
+      "source": "DES",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DES is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.06"
+    },
+    {
+      "source": "APOBEC2",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOBEC2 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.06"
+    },
+    {
+      "source": "FLNC",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLNC is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.06"
+    },
+    {
+      "source": "SGCG",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGCG is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.06"
+    },
+    {
+      "source": "DMPK",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMPK is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.06"
+    },
+    {
+      "source": "TCAP",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCAP is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.06"
+    },
+    {
+      "source": "APP",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APP is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.06"
+    },
+    {
+      "source": "PABPN1",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PABPN1 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.06"
+    },
+    {
+      "source": "ANK1",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK1 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.06"
+    },
+    {
+      "source": "TRIM72",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM72 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.06"
+    },
+    {
+      "source": "CAV3",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAV3 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.06"
+    },
+    {
+      "source": "GAA",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAA is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.06"
+    },
+    {
+      "source": "KLHL31",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLHL31 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.06"
+    },
+    {
+      "source": "FHL1",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FHL1 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.06"
+    },
+    {
+      "source": "SELENON",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELENON is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.06"
+    },
+    {
+      "source": "ASNSD1",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASNSD1 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.06"
+    },
+    {
+      "source": "CRYAB",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYAB is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.06"
+    },
+    {
+      "source": "ACTMAP",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTMAP is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.05"
+    },
+    {
+      "source": "MYF5",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYF5 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.05"
+    },
+    {
+      "source": "CACNA1S",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1S is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.05"
+    },
+    {
+      "source": "MBNL2",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MBNL2 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.05"
+    },
+    {
+      "source": "SGCB",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGCB is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.05"
+    },
+    {
+      "source": "TRDN",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRDN is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.05"
+    },
+    {
+      "source": "CAMKMT",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAMKMT is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXN1",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXN1 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.05"
+    },
+    {
+      "source": "ANO5",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANO5 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.05"
+    },
+    {
+      "source": "GMPPA",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GMPPA is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.05"
+    },
+    {
+      "source": "LIMCH1",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIMCH1 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.05"
+    },
+    {
+      "source": "ATP7A",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP7A is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.05"
+    },
+    {
+      "source": "HSPB8",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPB8 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.05"
+    },
+    {
+      "source": "SQSTM1",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SQSTM1 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.77"
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF11B is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.70"
+    },
+    {
+      "source": "TNFRSF11A",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF11A is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.61"
+    },
+    {
+      "source": "FDPS",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FDPS is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.60"
+    },
+    {
+      "source": "ZNF687",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF687 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.60"
+    },
+    {
+      "source": "CALCR",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCR is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.48"
+    },
+    {
+      "source": "OPTN",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OPTN is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.44"
+    },
+    {
+      "source": "VRK1",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VRK1 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.40"
+    },
+    {
+      "source": "CDCP1",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDCP1 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.36"
+    },
+    {
+      "source": "PML",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PML is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.34"
+    },
+    {
+      "source": "SIGLEC15",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIGLEC15 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.33"
+    },
+    {
+      "source": "DCSTAMP",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCSTAMP is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.33"
+    },
+    {
+      "source": "PIEZO2",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIEZO2 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.33"
+    },
+    {
+      "source": "EYA4",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EYA4 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.33"
+    },
+    {
+      "source": "ZNF142",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF142 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.32"
+    },
+    {
+      "source": "GFRA1",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFRA1 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.31"
+    },
+    {
+      "source": "AUTS2",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AUTS2 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.31"
+    },
+    {
+      "source": "ARHGAP24",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP24 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.31"
+    },
+    {
+      "source": "RAPH1",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAPH1 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.31"
+    },
+    {
+      "source": "ALDH1B1",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALDH1B1 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.30"
+    },
+    {
+      "source": "PKP4",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKP4 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.30"
+    },
+    {
+      "source": "PLD5",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLD5 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.30"
+    },
+    {
+      "source": "PRMT8",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRMT8 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.30"
+    },
+    {
+      "source": "FOCAD",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOCAD is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.29"
+    },
+    {
+      "source": "OSBPL10",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OSBPL10 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.29"
+    },
+    {
+      "source": "DNAH14",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAH14 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.29"
+    },
+    {
+      "source": "FRMD4A",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FRMD4A is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.29"
+    },
+    {
+      "source": "TRABD2A",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRABD2A is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.29"
+    },
+    {
+      "source": "MCHR2",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCHR2 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.29"
+    },
+    {
+      "source": "UNC5D",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UNC5D is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.29"
+    },
+    {
+      "source": "SEC61A1",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEC61A1 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.29"
+    },
+    {
+      "source": "WNK2",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNK2 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.29"
+    },
+    {
+      "source": "STMP1",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STMP1 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.28"
+    },
+    {
+      "source": "SMARCA2",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA2 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.28"
+    },
+    {
+      "source": "KLHL38",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLHL38 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.28"
+    },
+    {
+      "source": "FAM167A",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM167A is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.28"
+    },
+    {
+      "source": "FZD8",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FZD8 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.28"
+    },
+    {
+      "source": "CLNK",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLNK is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.28"
+    },
+    {
+      "source": "TFCP2L1",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFCP2L1 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.27"
+    },
+    {
+      "source": "PLCE1",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLCE1 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.27"
+    },
+    {
+      "source": "NEXN",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEXN is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.27"
+    },
+    {
+      "source": "ADNP2",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADNP2 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.26"
+    },
+    {
+      "source": "TENM2",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TENM2 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.26"
+    },
+    {
+      "source": "SMC2",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMC2 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.26"
+    },
+    {
+      "source": "EGFLAM",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFLAM is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.26"
+    },
+    {
+      "source": "TCF12",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF12 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.26"
+    },
+    {
+      "source": "HFM1",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HFM1 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.26"
+    },
+    {
+      "source": "COL6A5",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL6A5 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.26"
+    },
+    {
+      "source": "POU2F1",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU2F1 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.26"
+    },
+    {
+      "source": "GTPBP10",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GTPBP10 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.26"
+    },
+    {
+      "source": "DOCK6",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOCK6 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.26"
+    },
+    {
+      "source": "TBC1D4",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBC1D4 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.26"
+    },
+    {
+      "source": "IBTK",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IBTK is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.26"
+    },
+    {
+      "source": "LHFPL3",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHFPL3 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.26"
+    },
+    {
+      "source": "STX8",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STX8 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.26"
+    },
+    {
+      "source": "SORCS2",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORCS2 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.26"
+    },
+    {
+      "source": "TBC1D1",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBC1D1 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.26"
+    },
+    {
+      "source": "FCRL3",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCRL3 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.26"
+    },
+    {
+      "source": "ZNF510",
+      "target": "bone Paget disease (PAGETS_DISEASE_BONE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF510 is associated with bone Paget disease (PAGETS_DISEASE_BONE). Open Targets association score 0.26"
+    }
+  ]
+}

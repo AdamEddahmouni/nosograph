@@ -1,0 +1,940 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201576",
+      "target": "MS4A1",
+      "type": "TARGETS",
+      "description": "RITUXIMAB targets MS4A1."
+    },
+    {
+      "source": "CHEMBL1201570",
+      "target": "IL1R1",
+      "type": "TARGETS",
+      "description": "ANAKINRA targets IL1R1."
+    },
+    {
+      "source": "CHEMBL1175",
+      "target": "SLC6A4",
+      "type": "TARGETS",
+      "description": "DULOXETINE targets SLC6A4."
+    },
+    {
+      "source": "CHEMBL1175",
+      "target": "SLC6A2",
+      "type": "TARGETS",
+      "description": "DULOXETINE targets SLC6A2."
+    },
+    {
+      "source": "CHEMBL2107862",
+      "target": "TLR3",
+      "type": "TARGETS",
+      "description": "RINTATOLIMOD targets TLR3."
+    },
+    {
+      "source": "CHEMBL2107862",
+      "target": "TLR3",
+      "type": "TARGETS",
+      "description": "RINTATOLIMOD targets TLR3."
+    },
+    {
+      "source": "CHEMBL1201576",
+      "target": "MS4A1",
+      "type": "TARGETS",
+      "description": "RITUXIMAB targets MS4A1."
+    },
+    {
+      "source": "CHEMBL1431",
+      "target": "MT-ND6",
+      "type": "TARGETS",
+      "description": "METFORMIN targets MT-ND6."
+    },
+    {
+      "source": "CHEMBL549",
+      "target": "SLC6A4",
+      "type": "TARGETS",
+      "description": "CITALOPRAM targets SLC6A4."
+    },
+    {
+      "source": "CHEMBL1201572",
+      "target": "TNF",
+      "type": "TARGETS",
+      "description": "ETANERCEPT targets TNF."
+    },
+    {
+      "source": "CHEMBL11",
+      "target": "SLC6A2",
+      "type": "TARGETS",
+      "description": "IMIPRAMINE targets SLC6A2."
+    },
+    {
+      "source": "MS4A1",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MS4A1 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "WEE1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "WEE1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "NDUFAF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NDUFAF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "F2R",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "F2R is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "DPP4",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "DPP4 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1R1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1R1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "MAP2K1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "POMC",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "POMC is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "ACE2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "COMT",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "COMT is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "SLC6A4",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC6A4 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR3",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR3 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF13B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF13B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNA1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNA17",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA17 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNA2",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA2 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "TLR3",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR3 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.33"
+    },
+    {
+      "source": "MS4A1",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MS4A1 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.28"
+    },
+    {
+      "source": "TRPM3",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPM3 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.11"
+    },
+    {
+      "source": "TRPM7",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPM7 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "GDF15",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF15 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "PRF1",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRF1 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "ACE2",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE2 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "POMC",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMC is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "CD8A",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "COMT",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COMT is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "IL1R1",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1R1 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "SLC6A4",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A4 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "IFNA1",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA1 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "SLC6A2",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A2 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "TGFB1",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "NPY",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPY is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "IL2",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "DPP4",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPP4 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "TNF",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "KIR3DL1",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIR3DL1 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "CD40LG",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "STAMBP",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAMBP is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "MSX2",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSX2 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "RNASEL",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNASEL is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "CD24",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD24 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "LEP",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "TRPM2",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPM2 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "GEM",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GEM is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "NPPB",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPB is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "IFNG",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRTN3",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRTN3 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL6",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "WEE1",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WEE1 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "MPO",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPO is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CRP",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "NR3C1",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "IGF1",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "MAP2K1",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K1 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "WASF3",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WASF3 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNFSF13B",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF13B is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD79A",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFNA17",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA17 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFNA2",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA2 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FST",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FST is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CXCL8",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRL",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRL is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TLN1",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLN1 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "F2R",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F2R is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "GH1",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "MAPK1",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK1 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC52A2",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC52A2 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "MARK2",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MARK2 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PWAR1",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PWAR1 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "NR1I2",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR1I2 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL10",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "GHRL",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GHRL is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "RNF19A",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF19A is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "POLDIP2",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLDIP2 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "AHSA1",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHSA1 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "AIMP2",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIMP2 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "FBXW7",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXW7 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.30"
+    },
+    {
+      "source": "TLE4",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLE4 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.29"
+    },
+    {
+      "source": "DOC2B",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOC2B is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.29"
+    },
+    {
+      "source": "TENM3",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TENM3 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.29"
+    },
+    {
+      "source": "TCF4",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF4 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.29"
+    },
+    {
+      "source": "ELAPOR2",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELAPOR2 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.27"
+    },
+    {
+      "source": "CCN1",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCN1 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.27"
+    },
+    {
+      "source": "ENOSF1",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENOSF1 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.27"
+    },
+    {
+      "source": "GPATCH2L",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPATCH2L is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.27"
+    },
+    {
+      "source": "CRPPA",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRPPA is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "MT-ND4",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-ND4 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFB8",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFB8 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFAB1",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFAB1 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFA13",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFA13 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFS6",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFS6 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFA11",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFA11 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFB4",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFB4 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFV3",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFV3 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFAF4",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFAF4 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFB10",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFB10 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFB9",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFB9 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFB1",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFB1 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFA3",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFA3 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFC1",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFC1 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "GPD2",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPD2 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFB5",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFB5 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFS7",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFS7 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "MT-ND1",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-ND1 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFA1",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFA1 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFA9",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFA9 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFB11",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFB11 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFB3",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFB3 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFS8",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFS8 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "MT-ND5",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-ND5 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFS2",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFS2 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFS4",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFS4 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFS1",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFS1 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFA12",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFA12 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "COXFA4L2",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COXFA4L2 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFAF3",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFAF3 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFS5",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFS5 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFA10",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFA10 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFC2",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFC2 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFB6",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFB6 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "MT-ND6",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-ND6 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFA6",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFA6 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFA8",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFA8 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "COXFA4",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COXFA4 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFAF2",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFAF2 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFV1",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFV1 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFA5",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFA5 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFAF1",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFAF1 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "MT-ND2",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-ND2 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFS3",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFS3 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "MT-ND3",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-ND3 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFV2",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFV2 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFB2",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFB2 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NDUFB7",
+      "target": "myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFB7 is associated with myalgic encephalomeyelitis/chronic fatigue syndrome (CHRONIC_FATIGUE_SYNDROME). Open Targets association score 0.26"
+    }
+  ]
+}

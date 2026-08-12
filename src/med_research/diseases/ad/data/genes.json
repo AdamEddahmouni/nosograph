@@ -1,0 +1,124 @@
+{
+  "genes": [
+    {
+      "id": "APOE",
+      "name": "Apolipoprotein E",
+      "chromosome": "19q13.32",
+      "function": "Lipid transport protein; APOE epsilon4 allele is the primary genetic risk factor for late-onset Alzheimer's disease.",
+      "disease_evidence": "Strong genetic risk factor (OR ~3.0 for single e4 allele, ~12.0 for homozygotes); impairs amyloid-beta clearance.",
+      "odds_ratio": 3.7,
+      "category": "Lipid Metabolism & Transport",
+      "references": ["PMID:8127022", "PMID:28723891"]
+    },
+    {
+      "id": "APP",
+      "name": "Amyloid Beta Precursor Protein",
+      "chromosome": "21q21.3",
+      "function": "Transmembrane precursor cleaved by beta- and gamma-secretases to yield neurotoxic Abeta peptides.",
+      "disease_evidence": "Autosomal dominant causative mutations in early-onset AD; gene duplication causes AD in Down syndrome.",
+      "odds_ratio": 5.2,
+      "category": "Amyloid Cascade",
+      "references": ["PMID:1901377", "PMID:16333293"]
+    },
+    {
+      "id": "MAPT",
+      "name": "Microtubule Associated Protein Tau",
+      "chromosome": "17q21.31",
+      "function": "Promotes microtubule assembly and stability; hyperphosphorylated Tau forms paired helical filaments.",
+      "disease_evidence": "Primary component of neurofibrillary tangles; correlates directly with cognitive decline severity.",
+      "odds_ratio": 2.1,
+      "category": "Tau Pathology / Microtubules",
+      "references": ["PMID:9634238", "PMID:33677618"]
+    },
+    {
+      "id": "PSEN1",
+      "name": "Presenilin 1",
+      "chromosome": "14q24.2",
+      "function": "Catalytic subunit of gamma-secretase complex responsible for intramembrane cleavage of APP.",
+      "disease_evidence": "Most common cause of autosomal dominant early-onset familial Alzheimer's disease (>200 mutations).",
+      "odds_ratio": 6.0,
+      "category": "Amyloid Cascade",
+      "references": ["PMID:7545936"]
+    },
+    {
+      "id": "PSEN2",
+      "name": "Presenilin 2",
+      "chromosome": "1q42.13",
+      "function": "Catalytic subunit of gamma-secretase complex involved in processing precursor proteins.",
+      "disease_evidence": "Causative mutations identified in early-onset familial AD families (e.g. Volga German AD lineage).",
+      "odds_ratio": 4.5,
+      "category": "Amyloid Cascade",
+      "references": ["PMID:7544491"]
+    },
+    {
+      "id": "TREM2",
+      "name": "Triggering Receptor Expressed On Myeloid Cells 2",
+      "chromosome": "6p21.1",
+      "function": "Microglial cell-surface receptor mediating lipid sensing, microglial survival, and amyloid plaque containment.",
+      "disease_evidence": "R47H and loss-of-function variants confer 2-4x increased risk for late-onset AD.",
+      "odds_ratio": 2.9,
+      "category": "Microglial / Neuroinflammation",
+      "references": ["PMID:23148264", "PMID:23148265"]
+    },
+    {
+      "id": "BACE1",
+      "name": "Beta-Secretase 1",
+      "chromosome": "11q23.3",
+      "function": "Transmembrane aspartyl protease initiating amyloidogenic cleavage of APP at the N-terminus of Abeta.",
+      "disease_evidence": "Primary enzyme generating Abeta peptide; therapeutic inhibition target.",
+      "odds_ratio": 1.8,
+      "category": "Amyloid Cascade",
+      "references": ["PMID:10531056"]
+    },
+    {
+      "id": "CLU",
+      "name": "Clusterin",
+      "chromosome": "8p21.1",
+      "function": "Extracellular chaperone preventing protein aggregation; regulates complement cascade and amyloid transport.",
+      "disease_evidence": "GWAS locus associated with late-onset AD risk; modulates amyloid deposition.",
+      "odds_ratio": 1.16,
+      "category": "Lipid Metabolism & Transport",
+      "references": ["PMID:19734902"]
+    },
+    {
+      "id": "CR1",
+      "name": "Complement C3b/C4b Receptor 1",
+      "chromosome": "1q32.2",
+      "function": "Mediates complement activation, immune complex adherence, and opsonized amyloid clearance.",
+      "disease_evidence": "GWAS confirmed risk locus for late-onset AD.",
+      "odds_ratio": 1.18,
+      "category": "Microglial / Neuroinflammation",
+      "references": ["PMID:19734903"]
+    },
+    {
+      "id": "PICALM",
+      "name": "Phosphatidylinositol Binding Clathrin Assembly Protein",
+      "chromosome": "11q14.2",
+      "function": "Involved in clathrin-mediated endocytosis and APP intracellular trafficking.",
+      "disease_evidence": "Top GWAS candidate modulating endocytic Abeta uptake and clearance.",
+      "odds_ratio": 1.15,
+      "category": "Endocytosis & Synaptic Plasticity",
+      "references": ["PMID:19734902"]
+    },
+    {
+      "id": "BIN1",
+      "name": "Bridging Integrator 1",
+      "chromosome": "2q14.3",
+      "function": "Regulates membrane dynamics, endocytosis, and microglial tau pathology propagation.",
+      "disease_evidence": "Second strongest late-onset AD GWAS locus after APOE.",
+      "odds_ratio": 1.22,
+      "category": "Endocytosis & Synaptic Plasticity",
+      "references": ["PMID:20543847"]
+    },
+    {
+      "id": "CD33",
+      "name": "CD33 Molecule (Siglec-3)",
+      "chromosome": "19q13.41",
+      "function": "Microglial transmembrane receptor inhibiting microglial uptake and phagocytosis of Abeta.",
+      "disease_evidence": "GWAS risk locus; CD33 inhibition promotes microglial plaque clearance.",
+      "odds_ratio": 1.12,
+      "category": "Microglial / Neuroinflammation",
+      "references": ["PMID:21552263"]
+    }
+  ]
+}

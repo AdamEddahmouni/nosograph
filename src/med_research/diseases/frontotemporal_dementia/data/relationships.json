@@ -1,0 +1,946 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201179",
+      "target": "ERBB2",
+      "type": "TARGETS",
+      "description": "LAPATINIB DITOSYLATE targets ERBB2."
+    },
+    {
+      "source": "CHEMBL554",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "LAPATINIB targets EGFR."
+    },
+    {
+      "source": "CHEMBL1201179",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "LAPATINIB DITOSYLATE targets EGFR."
+    },
+    {
+      "source": "CHEMBL3785909",
+      "target": "MET",
+      "type": "TARGETS",
+      "description": "AMG-337 targets MET."
+    },
+    {
+      "source": "CHEMBL554",
+      "target": "ERBB2",
+      "type": "TARGETS",
+      "description": "LAPATINIB targets ERBB2."
+    },
+    {
+      "source": "CHEMBL3990042",
+      "target": "MAPT",
+      "type": "TARGETS",
+      "description": "GOSURANEMAB targets MAPT."
+    },
+    {
+      "source": "CHEMBL659",
+      "target": "ACHE",
+      "type": "TARGETS",
+      "description": "GALANTAMINE targets ACHE."
+    },
+    {
+      "source": "CHEMBL807",
+      "target": "GRIN1",
+      "type": "TARGETS",
+      "description": "MEMANTINE targets GRIN1."
+    },
+    {
+      "source": "CHEMBL1201631",
+      "target": "INSR",
+      "type": "TARGETS",
+      "description": "INSULIN HUMAN targets INSR."
+    },
+    {
+      "source": "BAX",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BAX is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "C9orf72",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C9orf72 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MEF2C",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "MEF2C is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "NF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MLH1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MLH1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH6",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH6 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR4",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR4 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFATC2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFATC2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "JAGN1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "JAGN1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "TGFBR2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFBR2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "MYD88",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MYD88 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "SQSTM1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SQSTM1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CACNA1A",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1A is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "MASP2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "MASP2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "GRIN1",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN1 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN2A",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2A is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN2B",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2B is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN2C",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2C is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN2D",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2D is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN3A",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN3A is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN3B",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN3B is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "INSR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INSR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.37"
+    },
+    {
+      "source": "BCL9",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL9 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.37"
+    },
+    {
+      "source": "RECQL4",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RECQL4 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.37"
+    },
+    {
+      "source": "GATA2",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA2 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.37"
+    },
+    {
+      "source": "RNF43",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF43 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TGFBR2",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFBR2 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ARID1A",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.37"
+    },
+    {
+      "source": "FLCN",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLCN is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.37"
+    },
+    {
+      "source": "KMT2D",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PRDM1",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM1 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.37"
+    },
+    {
+      "source": "WAS",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WAS is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.37"
+    },
+    {
+      "source": "RPL22",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL22 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ACVR2A",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACVR2A is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PER1",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PER1 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.37"
+    },
+    {
+      "source": "BAX",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAX is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MYH9",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH9 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.37"
+    },
+    {
+      "source": "BCL9L",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL9L is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.37"
+    },
+    {
+      "source": "AR",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MALT1",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MALT1 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ERBB2",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.30"
+    },
+    {
+      "source": "EGFR",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.30"
+    },
+    {
+      "source": "MET",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.29"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MLH1",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLH1 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ERBB3",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB3 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MSH2",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH2 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PMS2",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PMS2 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MSH6",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH6 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SALL4",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SALL4 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDH1",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NF2",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF2 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BCL6",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL6 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ZNF521",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF521 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "H3-3B",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3-3B is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FGFR4",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR4 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "POLE",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLE is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PRDM16",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM16 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RARA",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RARA is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ERBB4",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB4 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NCOR1",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOR1 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FBXW7",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXW7 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "HOXC13",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXC13 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KAT6A",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KAT6A is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "GNAQ",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAQ is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CIC",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIC is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CYLD",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYLD is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SFRP4",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFRP4 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MYD88",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYD88 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CBFA2T3",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBFA2T3 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NFATC2",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFATC2 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FANCC",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCC is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ERCC4",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC4 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "DICER1",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DICER1 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FLT4",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT4 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KDM6A",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM6A is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ZRSR2",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZRSR2 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PDGFRB",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FGFR1",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTCH1",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PML",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PML is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "VCP",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VCP is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.83"
+    },
+    {
+      "source": "MAPT",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPT is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.83"
+    },
+    {
+      "source": "CHMP2B",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHMP2B is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.81"
+    },
+    {
+      "source": "PSEN1",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSEN1 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.81"
+    },
+    {
+      "source": "SQSTM1",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SQSTM1 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.80"
+    },
+    {
+      "source": "GRN",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRN is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.79"
+    },
+    {
+      "source": "HNRNPA2B1",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNRNPA2B1 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.66"
+    },
+    {
+      "source": "HNRNPA1",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNRNPA1 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.59"
+    },
+    {
+      "source": "ANXA11",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANXA11 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.56"
+    },
+    {
+      "source": "TMEM106B",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM106B is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.46"
+    },
+    {
+      "source": "APOE",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.46"
+    },
+    {
+      "source": "TARDBP",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TARDBP is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.45"
+    },
+    {
+      "source": "TBK1",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBK1 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.45"
+    },
+    {
+      "source": "TREM2",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TREM2 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.43"
+    },
+    {
+      "source": "SETX",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETX is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.36"
+    },
+    {
+      "source": "MOB3B",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MOB3B is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.33"
+    },
+    {
+      "source": "CHRNB4",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHRNB4 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.33"
+    },
+    {
+      "source": "GRIN1",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN1 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.31"
+    },
+    {
+      "source": "GRIN2B",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2B is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.29"
+    },
+    {
+      "source": "GRIN2A",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2A is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.29"
+    },
+    {
+      "source": "GRIN3B",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN3B is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.29"
+    },
+    {
+      "source": "GRIN2C",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2C is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.29"
+    },
+    {
+      "source": "GRIN3A",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN3A is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.29"
+    },
+    {
+      "source": "GRIN2D",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2D is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.29"
+    },
+    {
+      "source": "SYNE1",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYNE1 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.29"
+    },
+    {
+      "source": "FUS",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUS is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.29"
+    },
+    {
+      "source": "CSF1R",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF1R is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "OPTN",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OPTN is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.27"
+    },
+    {
+      "source": "DCTN1",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCTN1 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.27"
+    },
+    {
+      "source": "MASP2",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MASP2 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.27"
+    },
+    {
+      "source": "MEF2C",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEF2C is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.27"
+    },
+    {
+      "source": "ANG",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANG is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.26"
+    },
+    {
+      "source": "CHRNA4",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHRNA4 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.26"
+    },
+    {
+      "source": "GLT8D1",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLT8D1 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.26"
+    },
+    {
+      "source": "RNASE4",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNASE4 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.26"
+    },
+    {
+      "source": "MOBP",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MOBP is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.22"
+    },
+    {
+      "source": "SCFD1",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCFD1 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.22"
+    },
+    {
+      "source": "UNC13A",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UNC13A is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.19"
+    },
+    {
+      "source": "TIMCC",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMCC is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.17"
+    },
+    {
+      "source": "APOC1",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC1 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.17"
+    },
+    {
+      "source": "ERGIC1",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERGIC1 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.15"
+    },
+    {
+      "source": "C9orf72",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C9orf72 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.15"
+    },
+    {
+      "source": "JAGN1",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAGN1 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.15"
+    },
+    {
+      "source": "TUBB4A",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB4A is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.15"
+    },
+    {
+      "source": "NEFL",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEFL is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.14"
+    },
+    {
+      "source": "GFAP",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFAP is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.13"
+    },
+    {
+      "source": "SCN4A",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN4A is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.12"
+    },
+    {
+      "source": "LRRK2",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRK2 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.12"
+    },
+    {
+      "source": "CHCHD10",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHCHD10 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.12"
+    },
+    {
+      "source": "ACHE",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACHE is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.12"
+    },
+    {
+      "source": "G2E3",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "G2E3 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.11"
+    },
+    {
+      "source": "C9",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C9 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.11"
+    },
+    {
+      "source": "MARCHF4",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MARCHF4 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.11"
+    },
+    {
+      "source": "UBQLN2",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBQLN2 is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.11"
+    },
+    {
+      "source": "SCN8A",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN8A is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.11"
+    },
+    {
+      "source": "INSR",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INSR is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.11"
+    },
+    {
+      "source": "PRNP",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRNP is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.11"
+    },
+    {
+      "source": "CACNA1A",
+      "target": "frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1A is associated with frontotemporal dementia (FRONTOTEMPORAL_DEMENTIA). Open Targets association score 0.10"
+    }
+  ]
+}

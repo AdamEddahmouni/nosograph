@@ -1,0 +1,982 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL484785",
+      "target": "PDE4A",
+      "type": "TARGETS",
+      "description": "CRISABOROLE targets PDE4A."
+    },
+    {
+      "source": "CHEMBL1282",
+      "target": "TLR7",
+      "type": "TARGETS",
+      "description": "IMIQUIMOD targets TLR7."
+    },
+    {
+      "source": "CHEMBL2108675",
+      "target": "IL4R",
+      "type": "TARGETS",
+      "description": "DUPILUMAB targets IL4R."
+    },
+    {
+      "source": "CHEMBL2108730",
+      "target": "IL6R",
+      "type": "TARGETS",
+      "description": "SARILUMAB targets IL6R."
+    },
+    {
+      "source": "LYN",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LYN is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "TCF7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "C1QL3",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QL3 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "COL2A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL2A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL17A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL17A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL6R",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6R is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "JAK3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT4",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT4 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FRAS1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FRAS1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RASGRP1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASGRP1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CHUK",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CHUK is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKBIZ",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKBIZ is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "IKBKB",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "IKBKB is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "IKBKG",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "IKBKG is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "PFAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PFAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF1A",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF1A is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNE",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNE is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "STAT1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "TCF7",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ABCB4",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB4 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GLI3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "SHH",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SHH is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IL4R",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4R is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "FBN1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "FBN1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR7",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR7 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "STAT4",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT4 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.62"
+    },
+    {
+      "source": "PTPRC",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRC is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "JAK3",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK3 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRKDC",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKDC is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ARPC1B",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARPC1B is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SPI1",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPI1 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CSF3",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "RAC2",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAC2 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "RASGRP1",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASGRP1 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "DOCK2",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOCK2 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "BACH2",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BACH2 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "STAT1",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT1 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ATP11C",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP11C is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "COG6",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COG6 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "IKZF1",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "DCLRE1C",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCLRE1C is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "GMDS",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GMDS is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "YOD1",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YOD1 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SAMD9L",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAMD9L is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SERPINB2",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINB2 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TMEM127",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM127 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ARHGAP15",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP15 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "FLT3LG",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3LG is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNK1",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNK1 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "KDELR1",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDELR1 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFNE",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNE is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ATM",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CXCR2",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR2 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "LYN",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYN is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "FLT3",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "IKBKB",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKBKB is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "XRCC5",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XRCC5 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TP53",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ARHGEF1",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGEF1 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "RINT1",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RINT1 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "STK4",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK4 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "IKBKG",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKBKG is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZBTB1",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB1 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "NFKB2",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB2 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "DOCK8",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOCK8 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TCF7",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF7 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "GFI1B",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFI1B is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "FBXL19",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXL19 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL7R",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL7R is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SPINK5",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPINK5 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PKN1",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKN1 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.03"
+    },
+    {
+      "source": "NCKAP1L",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCKAP1L is associated with localized scleroderma (MORPHEA). Open Targets association score 0.03"
+    },
+    {
+      "source": "INPP5D",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INPP5D is associated with localized scleroderma (MORPHEA). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL6",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.03"
+    },
+    {
+      "source": "COL17A1",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL17A1 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SUSD6",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUSD6 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.03"
+    },
+    {
+      "source": "AVP",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AVP is associated with localized scleroderma (MORPHEA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SDC4",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDC4 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNFRSF1A",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF1A is associated with localized scleroderma (MORPHEA). Open Targets association score 0.03"
+    },
+    {
+      "source": "C1QL3",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C1QL3 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ABCB4",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB4 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SNRNP40",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNRNP40 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PNP",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PNP is associated with localized scleroderma (MORPHEA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MORC3",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MORC3 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MACROH2A1",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MACROH2A1 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TLR7",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR7 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.26"
+    },
+    {
+      "source": "IL4R",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4R is associated with localized scleroderma (MORPHEA). Open Targets association score 0.07"
+    },
+    {
+      "source": "PDE4A",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE4A is associated with localized scleroderma (MORPHEA). Open Targets association score 0.07"
+    },
+    {
+      "source": "PDE4B",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE4B is associated with localized scleroderma (MORPHEA). Open Targets association score 0.07"
+    },
+    {
+      "source": "PDE4C",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE4C is associated with localized scleroderma (MORPHEA). Open Targets association score 0.07"
+    },
+    {
+      "source": "PDE4D",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE4D is associated with localized scleroderma (MORPHEA). Open Targets association score 0.07"
+    },
+    {
+      "source": "EDA",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDA is associated with localized scleroderma (MORPHEA). Open Targets association score 0.07"
+    },
+    {
+      "source": "IL6R",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6R is associated with localized scleroderma (MORPHEA). Open Targets association score 0.06"
+    },
+    {
+      "source": "CTSV",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSV is associated with localized scleroderma (MORPHEA). Open Targets association score 0.06"
+    },
+    {
+      "source": "CTSL",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSL is associated with localized scleroderma (MORPHEA). Open Targets association score 0.06"
+    },
+    {
+      "source": "GLI3",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI3 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.06"
+    },
+    {
+      "source": "FGFR2",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.06"
+    },
+    {
+      "source": "AWAT2",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AWAT2 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.06"
+    },
+    {
+      "source": "LMNA",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMNA is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "HR",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HR is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "DSG3",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSG3 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "NFKBIZ",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKBIZ is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SFN",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFN is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SCD",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCD is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CHUK",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHUK is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXC1",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC1 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "MPZL3",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPZL3 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ENPP1",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENPP1 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRICKLE1",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRICKLE1 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PFAS",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PFAS is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "MKS1",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKS1 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "EDAR",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDAR is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "DSG4",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSG4 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "FBLN1",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBLN1 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TP63",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "RSPO2",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO2 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC27A4",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC27A4 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "COL2A1",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL2A1 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ROR2",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROR2 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SHH",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHH is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ZEB1",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "VEGFA",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SH3PXD2B",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH3PXD2B is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "RPGRIP1L",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPGRIP1L is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "FRAS1",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FRAS1 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "HSPG2",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPG2 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "B3GLCT",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B3GLCT is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PDGFRA",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRA is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "FAS",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "IDUA",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDUA is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "KDF1",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDF1 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "DCN",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCN is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "LRIG1",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRIG1 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "COL4A1",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A1 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TGFB1",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PSEN1",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSEN1 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "APAF1",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APAF1 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TOM1L2",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TOM1L2 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "GSDMA",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMA is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "FBN1",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBN1 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TWIST2",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TWIST2 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "FOXC2",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC2 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "FOXP3",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    },
+    {
+      "source": "AIFM1",
+      "target": "localized scleroderma (MORPHEA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIFM1 is associated with localized scleroderma (MORPHEA). Open Targets association score 0.04"
+    }
+  ]
+}

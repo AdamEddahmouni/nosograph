@@ -1,0 +1,32 @@
+{
+  "disease_id": "atopic_dermatitis",
+  "disease_name": "Atopic Dermatitis",
+  "pathways": [
+    {
+      "id": "type2-immune-ad",
+      "name": "Type 2 Immune Signaling (IL-4/IL-13)",
+      "description": "Th2 cytokine inflammation suppressing filaggrin expression and driving itch.",
+      "key_components": [
+        "IL4R",
+        "IL13",
+        "JAK1"
+      ],
+      "therapeutic_targets": [
+        "IL4R",
+        "IL13"
+      ]
+    },
+    {
+      "id": "barrier-dysfunction",
+      "name": "Epidermal Barrier Function",
+      "description": "Loss of filaggrin resulting in transepidermal water loss and allergen entry.",
+      "key_components": [
+        "FLG",
+        "TSLP"
+      ],
+      "therapeutic_targets": [
+        "TSLP"
+      ]
+    }
+  ]
+}

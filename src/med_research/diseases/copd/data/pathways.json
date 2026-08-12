@@ -1,0 +1,29 @@
+{
+  "disease_id": "copd",
+  "disease_name": "Chronic Obstructive Pulmonary Disease",
+  "pathways": [
+    {
+      "id": "protease-imbalance",
+      "name": "Protease-Antiprotease Imbalance",
+      "description": "Unopposed elastase activity leading to alveolar wall destruction.",
+      "key_components": [
+        "SERPINA1",
+        "MMP9"
+      ],
+      "therapeutic_targets": [
+        "MMP9"
+      ]
+    },
+    {
+      "id": "airway-remodeling",
+      "name": "Small Airway Remodeling",
+      "description": "Peribroncholar fibrosis restricting airflow.",
+      "key_components": [
+        "TGFB1"
+      ],
+      "therapeutic_targets": [
+        "TGFB1"
+      ]
+    }
+  ]
+}

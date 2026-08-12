@@ -1,0 +1,496 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201581",
+      "target": "TNF",
+      "type": "TARGETS",
+      "description": "INFLIXIMAB targets TNF."
+    },
+    {
+      "source": "CD19",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD19 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "SIGLEC1",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "SIGLEC1 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "PRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CXCL10",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL10 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "TIPARP",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TIPARP is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "INSR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INSR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "HMGCR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HMGCR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PIK3C2A",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3C2A is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "BTG3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "BTG3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFIH1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFIH1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNA1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "ISG15",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "ISG15 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "MX1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "MX1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.45"
+    },
+    {
+      "source": "MUC5B",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC5B is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.33"
+    },
+    {
+      "source": "TREX1",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TREX1 is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXP3",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ASH1L",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASH1L is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SCARA5",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCARA5 is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "AIRE",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIRE is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CHI3L1",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHI3L1 is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "ACTB",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTB is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "MUC1",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC1 is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNF",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD19",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD19 is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TRIM21",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM21 is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "HARS1",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HARS1 is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "EGFR",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRTN3",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRTN3 is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "NT5C1A",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NT5C1A is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRT7",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT7 is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TAL1",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAL1 is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SCLY",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCLY is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "GARS1",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GARS1 is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SIGLEC1",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIGLEC1 is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRB1",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRB1 is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALB",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRP",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CALR",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALR is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "BTG3",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTG3 is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "MX1",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MX1 is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "INSR",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INSR is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "NCR3",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCR3 is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "LYVE1",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYVE1 is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "NLRP3",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP3 is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TARS1",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TARS1 is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "HMGCR",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGCR is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL17A",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TARS2",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TARS2 is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TARS3",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TARS3 is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "DCPS",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCPS is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLURP1",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLURP1 is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "AR",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFIH1",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFIH1 is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "HARS2",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HARS2 is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD79A",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "MORC3",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MORC3 is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFNA1",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA1 is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "GZMB",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GZMB is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3C2A",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3C2A is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCL10",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL10 is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDH1",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "AARS1",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AARS1 is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "TIPARP",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIPARP is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "ISG15",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ISG15 is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHKA",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHKA is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CMPK1",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CMPK1 is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "LGALS3",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS3 is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "GAL",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAL is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHKB",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHKB is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "SOAT1",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOAT1 is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "GDF15",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF15 is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "GALNS",
+      "target": "Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GALNS is associated with Antisynthetase syndrome (ANTI_SYNTHETASE_SYNDROME). Open Targets association score 0.00"
+    }
+  ]
+}

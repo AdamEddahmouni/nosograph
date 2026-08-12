@@ -1,0 +1,36 @@
+{
+  "disease_id": "atopic_dermatitis",
+  "disease_name": "Atopic Dermatitis",
+  "drugs": [
+    {
+      "id": "dupilumab",
+      "name": "Dupilumab",
+      "targets": [
+        "IL4R"
+      ],
+      "phase": "Approved",
+      "mechanism_of_action": "Monoclonal antibody blocking IL-4R alpha subunit",
+      "drug_type": "Biologic"
+    },
+    {
+      "id": "tralokinumab",
+      "name": "Tralokinumab",
+      "targets": [
+        "IL13"
+      ],
+      "phase": "Approved",
+      "mechanism_of_action": "Human anti-IL-13 monoclonal antibody",
+      "drug_type": "Biologic"
+    },
+    {
+      "id": "abrocitinib",
+      "name": "Abrocitinib",
+      "targets": [
+        "JAK1"
+      ],
+      "phase": "Approved",
+      "mechanism_of_action": "Oral selective Janus kinase 1 inhibitor",
+      "drug_type": "Small molecule"
+    }
+  ]
+}

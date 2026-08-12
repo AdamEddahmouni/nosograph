@@ -1,0 +1,90 @@
+{
+  "disease_id": "psa",
+  "disease_name": "Psoriatic Arthritis",
+  "genes": [
+    {
+      "id": "IL23R",
+      "symbol": "IL23R",
+      "name": "Interleukin 23 Receptor",
+      "category": "IL-23 / Th17 Signaling",
+      "association_score": 0.92,
+      "odds_ratio": 2.1,
+      "disease_evidence": "Key susceptibility gene for entheseal and skin inflammation.",
+      "gwas_pvalue": 1e-45,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "IL17A",
+      "symbol": "IL17A",
+      "name": "Interleukin 17A",
+      "category": "IL-23 / Th17 Signaling",
+      "association_score": 0.95,
+      "odds_ratio": 2.4,
+      "disease_evidence": "Primary effector cytokine driving dactylitis and synovial erosion.",
+      "gwas_pvalue": 1e-50,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "TNF",
+      "symbol": "TNF",
+      "name": "Tumor Necrosis Factor",
+      "category": "TNF Signaling",
+      "association_score": 0.9,
+      "odds_ratio": 2.0,
+      "disease_evidence": "Central pro-inflammatory cytokine in PsA synovitis.",
+      "gwas_pvalue": 1e-40,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "HLA-B",
+      "symbol": "HLA-B",
+      "name": "Major Histocompatibility Complex Class I B (HLA-B27)",
+      "category": "Autoantigen / Autoantibody",
+      "association_score": 0.88,
+      "odds_ratio": 3.2,
+      "disease_evidence": "Strong genetic risk marker for axial involvement in PsA.",
+      "gwas_pvalue": 1e-60,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "TYK2",
+      "symbol": "TYK2",
+      "name": "Tyrosine Kinase 2",
+      "category": "JAK-STAT Signaling",
+      "association_score": 0.85,
+      "odds_ratio": 1.7,
+      "disease_evidence": "Transduces IL-23 and type I IFN signaling in immune cells.",
+      "gwas_pvalue": 1e-30,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "IL12B",
+      "symbol": "IL12B",
+      "name": "Interleukin 12B",
+      "category": "IL-23 / Th17 Signaling",
+      "association_score": 0.87,
+      "odds_ratio": 1.8,
+      "disease_evidence": "Encodes p40 subunit shared by IL-12 and IL-23.",
+      "gwas_pvalue": 1e-35,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "TNFAIP3",
+      "symbol": "TNFAIP3",
+      "name": "TNF Alpha Induced Protein 3",
+      "category": "TNF Signaling",
+      "association_score": 0.8,
+      "odds_ratio": 1.5,
+      "disease_evidence": "Negative regulator of NF-kB signaling.",
+      "gwas_pvalue": 1e-25,
+      "chromosome": "unknown",
+      "function": "unknown"
+    }
+  ]
+}

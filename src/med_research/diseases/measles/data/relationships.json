@@ -1,0 +1,730 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1282",
+      "target": "TLR7",
+      "type": "TARGETS",
+      "description": "IMIQUIMOD targets TLR7."
+    },
+    {
+      "source": "CHEMBL1743029",
+      "target": "CD4",
+      "type": "TARGETS",
+      "description": "IBALIZUMAB targets CD4."
+    },
+    {
+      "source": "CHEMBL1535",
+      "target": "TLR7",
+      "type": "TARGETS",
+      "description": "HYDROXYCHLOROQUINE targets TLR7."
+    },
+    {
+      "source": "CHEMBL163",
+      "target": "measles (MEASLES)",
+      "type": "TREATS",
+      "description": "RITONAVIR is phase 4 / marketed for measles (MEASLES)."
+    },
+    {
+      "source": "CHEMBL1282",
+      "target": "measles (MEASLES)",
+      "type": "TREATS",
+      "description": "IMIQUIMOD is phase 4 / marketed for measles (MEASLES)."
+    },
+    {
+      "source": "CHEMBL1643",
+      "target": "measles (MEASLES)",
+      "type": "TREATS",
+      "description": "RIBAVIRIN is phase 4 / marketed for measles (MEASLES)."
+    },
+    {
+      "source": "CHEMBL163",
+      "target": "measles (MEASLES)",
+      "type": "TREATS",
+      "description": "RITONAVIR is phase 4 / marketed for measles (MEASLES)."
+    },
+    {
+      "source": "CHEMBL163",
+      "target": "measles (MEASLES)",
+      "type": "TREATS",
+      "description": "RITONAVIR is phase 4 / marketed for measles (MEASLES)."
+    },
+    {
+      "source": "CHEMBL4297711",
+      "target": "measles (MEASLES)",
+      "type": "TREATS",
+      "description": "BULEVIRTIDE is phase 4 / marketed for measles (MEASLES)."
+    },
+    {
+      "source": "CHEMBL1201187",
+      "target": "measles (MEASLES)",
+      "type": "TREATS",
+      "description": "MARAVIROC is phase 4 / marketed for measles (MEASLES)."
+    },
+    {
+      "source": "CHEMBL1743029",
+      "target": "measles (MEASLES)",
+      "type": "TREATS",
+      "description": "IBALIZUMAB is phase 4 / marketed for measles (MEASLES)."
+    },
+    {
+      "source": "CHEMBL163",
+      "target": "measles (MEASLES)",
+      "type": "TREATS",
+      "description": "RITONAVIR is phase 4 / marketed for measles (MEASLES)."
+    },
+    {
+      "source": "CD19",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD19 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD209",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD209 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "HLA-DRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "HLA-DRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "C4B",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C4B is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "CD46",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CD46 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL18R1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL18R1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL4R",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4R is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL5",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL5 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "ITGAL",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAL is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "SELE",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELE is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "VCAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "VCAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD46",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD46 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ITGAL",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAL is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "SLC5A5",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC5A5 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR2",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR2 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR7",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR7 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR8",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR8 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "ADAR",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAR is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNA1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNAR1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNAR1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNB1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNB1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "RIGI",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "RIGI is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKBIA",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKBIA is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "TMC3",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMC3 is associated with measles (MEASLES). Open Targets association score 0.18"
+    },
+    {
+      "source": "CD40LG",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with measles (MEASLES). Open Targets association score 0.11"
+    },
+    {
+      "source": "IFNG",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with measles (MEASLES). Open Targets association score 0.05"
+    },
+    {
+      "source": "KIR3DL1",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIR3DL1 is associated with measles (MEASLES). Open Targets association score 0.05"
+    },
+    {
+      "source": "GEM",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GEM is associated with measles (MEASLES). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD46",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD46 is associated with measles (MEASLES). Open Targets association score 0.04"
+    },
+    {
+      "source": "AFP",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFP is associated with measles (MEASLES). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLAMF1",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLAMF1 is associated with measles (MEASLES). Open Targets association score 0.03"
+    },
+    {
+      "source": "TLR2",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR2 is associated with measles (MEASLES). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL1B",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with measles (MEASLES). Open Targets association score 0.03"
+    },
+    {
+      "source": "CRP",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with measles (MEASLES). Open Targets association score 0.03"
+    },
+    {
+      "source": "ADAR",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAR is associated with measles (MEASLES). Open Targets association score 0.02"
+    },
+    {
+      "source": "HLA-DRB1",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DRB1 is associated with measles (MEASLES). Open Targets association score 0.02"
+    },
+    {
+      "source": "CYCS",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYCS is associated with measles (MEASLES). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD8A",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with measles (MEASLES). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNF",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with measles (MEASLES). Open Targets association score 0.02"
+    },
+    {
+      "source": "USO1",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USO1 is associated with measles (MEASLES). Open Targets association score 0.02"
+    },
+    {
+      "source": "NXF1",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NXF1 is associated with measles (MEASLES). Open Targets association score 0.02"
+    },
+    {
+      "source": "FLNB",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLNB is associated with measles (MEASLES). Open Targets association score 0.02"
+    },
+    {
+      "source": "SEC14L2",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEC14L2 is associated with measles (MEASLES). Open Targets association score 0.02"
+    },
+    {
+      "source": "BSG",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BSG is associated with measles (MEASLES). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD4",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with measles (MEASLES). Open Targets association score 0.02"
+    },
+    {
+      "source": "CHMP5",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHMP5 is associated with measles (MEASLES). Open Targets association score 0.02"
+    },
+    {
+      "source": "MUC1",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC1 is associated with measles (MEASLES). Open Targets association score 0.02"
+    },
+    {
+      "source": "MBP",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MBP is associated with measles (MEASLES). Open Targets association score 0.02"
+    },
+    {
+      "source": "C4B",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C4B is associated with measles (MEASLES). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD209",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD209 is associated with measles (MEASLES). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL18R1",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL18R1 is associated with measles (MEASLES). Open Targets association score 0.02"
+    },
+    {
+      "source": "MLC1",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLC1 is associated with measles (MEASLES). Open Targets association score 0.02"
+    },
+    {
+      "source": "HLA-DQA1",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DQA1 is associated with measles (MEASLES). Open Targets association score 0.02"
+    },
+    {
+      "source": "HLA-DQA2",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DQA2 is associated with measles (MEASLES). Open Targets association score 0.02"
+    },
+    {
+      "source": "MRC1",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRC1 is associated with measles (MEASLES). Open Targets association score 0.02"
+    },
+    {
+      "source": "IFNAR1",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNAR1 is associated with measles (MEASLES). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD79A",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with measles (MEASLES). Open Targets association score 0.02"
+    },
+    {
+      "source": "KLK8",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLK8 is associated with measles (MEASLES). Open Targets association score 0.02"
+    },
+    {
+      "source": "ZNF384",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF384 is associated with measles (MEASLES). Open Targets association score 0.02"
+    },
+    {
+      "source": "PNP",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PNP is associated with measles (MEASLES). Open Targets association score 0.02"
+    },
+    {
+      "source": "SAA1",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAA1 is associated with measles (MEASLES). Open Targets association score 0.02"
+    },
+    {
+      "source": "EBI3",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EBI3 is associated with measles (MEASLES). Open Targets association score 0.02"
+    },
+    {
+      "source": "SFTPD",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFTPD is associated with measles (MEASLES). Open Targets association score 0.02"
+    },
+    {
+      "source": "SAA2",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAA2 is associated with measles (MEASLES). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL2",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with measles (MEASLES). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL4R",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4R is associated with measles (MEASLES). Open Targets association score 0.02"
+    },
+    {
+      "source": "IFNA1",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA1 is associated with measles (MEASLES). Open Targets association score 0.01"
+    },
+    {
+      "source": "HSPA1A",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPA1A is associated with measles (MEASLES). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL4",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with measles (MEASLES). Open Targets association score 0.01"
+    },
+    {
+      "source": "CXCL8",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with measles (MEASLES). Open Targets association score 0.01"
+    },
+    {
+      "source": "TLR7",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR7 is associated with measles (MEASLES). Open Targets association score 0.01"
+    },
+    {
+      "source": "TLR8",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR8 is associated with measles (MEASLES). Open Targets association score 0.01"
+    },
+    {
+      "source": "VCAM1",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VCAM1 is associated with measles (MEASLES). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFI44L",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFI44L is associated with measles (MEASLES). Open Targets association score 0.01"
+    },
+    {
+      "source": "SELE",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELE is associated with measles (MEASLES). Open Targets association score 0.01"
+    },
+    {
+      "source": "ITGB2",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB2 is associated with measles (MEASLES). Open Targets association score 0.01"
+    },
+    {
+      "source": "ITGAL",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGAL is associated with measles (MEASLES). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALB",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with measles (MEASLES). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNB1",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNB1 is associated with measles (MEASLES). Open Targets association score 0.01"
+    },
+    {
+      "source": "NECTIN4",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NECTIN4 is associated with measles (MEASLES). Open Targets association score 0.01"
+    },
+    {
+      "source": "TTR",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTR is associated with measles (MEASLES). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL10",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with measles (MEASLES). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC5A5",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC5A5 is associated with measles (MEASLES). Open Targets association score 0.01"
+    },
+    {
+      "source": "STARD5",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STARD5 is associated with measles (MEASLES). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD40",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40 is associated with measles (MEASLES). Open Targets association score 0.02"
+    },
+    {
+      "source": "RIGI",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIGI is associated with measles (MEASLES). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL6",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with measles (MEASLES). Open Targets association score 0.02"
+    },
+    {
+      "source": "DCT",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCT is associated with measles (MEASLES). Open Targets association score 0.02"
+    },
+    {
+      "source": "MYOM2",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYOM2 is associated with measles (MEASLES). Open Targets association score 0.02"
+    },
+    {
+      "source": "UGCG",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UGCG is associated with measles (MEASLES). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFKB1",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with measles (MEASLES). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL5",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL5 is associated with measles (MEASLES). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFKBIA",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKBIA is associated with measles (MEASLES). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD19",
+      "target": "measles (MEASLES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD19 is associated with measles (MEASLES). Open Targets association score 0.01"
+    }
+  ]
+}

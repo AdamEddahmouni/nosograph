@@ -1,0 +1,868 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL565",
+      "target": "PPARA",
+      "type": "TARGETS",
+      "description": "CLOFIBRATE targets PPARA."
+    },
+    {
+      "source": "KCNQ1",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNQ1 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1C",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1C is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "E2F1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "E2F1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "GRB10",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "GRB10 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "FGF10",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF10 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IGF2R",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2R is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "F7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "F7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "RASSF7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "RASSF7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ZNF214",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ZNF214 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ZNF215",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ZNF215 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SLC2A1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "NLRP2",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP2 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFRL1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFRL1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "HRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "NRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RASSF7",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASSF7 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "AGTR2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGTR2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "CYP11B2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP11B2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "CD44",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD44 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ICOS",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ICOS is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "NLRP2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP19A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP19A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP11B1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP11B1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP11B2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP11B2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "COL4A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GLI3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "BMP4",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP4 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "CHUK",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CHUK is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "CDKN1C",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1C is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.84"
+    },
+    {
+      "source": "NSD1",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSD1 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.74"
+    },
+    {
+      "source": "IGF2",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.65"
+    },
+    {
+      "source": "KCNQ1",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNQ1 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.56"
+    },
+    {
+      "source": "PADI6",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PADI6 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.49"
+    },
+    {
+      "source": "ENSG00000284779",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENSG00000284779 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.27"
+    },
+    {
+      "source": "DNMT1",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT1 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.15"
+    },
+    {
+      "source": "IGF2R",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2R is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.12"
+    },
+    {
+      "source": "SPTBN1",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTBN1 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.04"
+    },
+    {
+      "source": "ALMS1",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALMS1 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.03"
+    },
+    {
+      "source": "AGTR2",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGTR2 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.03"
+    },
+    {
+      "source": "TRIM37",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM37 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.03"
+    },
+    {
+      "source": "LEP",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.03"
+    },
+    {
+      "source": "CYP11B1",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP11B1 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.03"
+    },
+    {
+      "source": "CYP11B2",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP11B2 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.03"
+    },
+    {
+      "source": "INVS",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INVS is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.03"
+    },
+    {
+      "source": "PBX1",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PBX1 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.03"
+    },
+    {
+      "source": "LEPR",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEPR is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.03"
+    },
+    {
+      "source": "E2F1",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "E2F1 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.03"
+    },
+    {
+      "source": "RET",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.03"
+    },
+    {
+      "source": "LHCGR",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHCGR is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.03"
+    },
+    {
+      "source": "ICOS",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICOS is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD8A",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.02"
+    },
+    {
+      "source": "NLRP2",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP2 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.02"
+    },
+    {
+      "source": "CORO1A",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CORO1A is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.02"
+    },
+    {
+      "source": "MYOD1",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYOD1 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.02"
+    },
+    {
+      "source": "INS",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.02"
+    },
+    {
+      "source": "CIB2",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIB2 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.02"
+    },
+    {
+      "source": "H3C12",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3C12 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.02"
+    },
+    {
+      "source": "H3C7",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3C7 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.02"
+    },
+    {
+      "source": "H3C4",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3C4 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.02"
+    },
+    {
+      "source": "H3C6",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3C6 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.02"
+    },
+    {
+      "source": "H3C8",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3C8 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.02"
+    },
+    {
+      "source": "H3C2",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3C2 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.02"
+    },
+    {
+      "source": "H3C1",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3C1 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.02"
+    },
+    {
+      "source": "H3C10",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3C10 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.02"
+    },
+    {
+      "source": "H3C3",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3C3 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.02"
+    },
+    {
+      "source": "H3C11",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3C11 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD44",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD44 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.02"
+    },
+    {
+      "source": "GNAS",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAS is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.02"
+    },
+    {
+      "source": "AFP",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFP is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.02"
+    },
+    {
+      "source": "ZNF214",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF214 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.02"
+    },
+    {
+      "source": "TGFB1",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.02"
+    },
+    {
+      "source": "WT1",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WT1 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZFP57",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFP57 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZNF215",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF215 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.01"
+    },
+    {
+      "source": "CTCF",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTCF is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.01"
+    },
+    {
+      "source": "HRAS",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRAS is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.01"
+    },
+    {
+      "source": "PAX6",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX6 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.01"
+    },
+    {
+      "source": "IGF1R",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1R is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.01"
+    },
+    {
+      "source": "GRB10",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRB10 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLXNA2",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLXNA2 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEND1",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEND1 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.01"
+    },
+    {
+      "source": "RASSF7",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASSF7 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.01"
+    },
+    {
+      "source": "NRAS",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRAS is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.01"
+    },
+    {
+      "source": "PPARA",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARA is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.01"
+    },
+    {
+      "source": "SMPD1",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMPD1 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.01"
+    },
+    {
+      "source": "F7",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F7 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLAGL1",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAGL1 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.01"
+    },
+    {
+      "source": "PCNA",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCNA is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC2A1",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A1 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.12"
+    },
+    {
+      "source": "POLR2F",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLR2F is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.12"
+    },
+    {
+      "source": "SOX10",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX10 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.12"
+    },
+    {
+      "source": "FGFR2",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.06"
+    },
+    {
+      "source": "MKS1",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKS1 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.06"
+    },
+    {
+      "source": "FOXC1",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC1 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.06"
+    },
+    {
+      "source": "GPC3",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPC3 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.06"
+    },
+    {
+      "source": "BMP4",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP4 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.05"
+    },
+    {
+      "source": "PTGS2",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.05"
+    },
+    {
+      "source": "DMD",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMD is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.05"
+    },
+    {
+      "source": "MEN1",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEN1 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.05"
+    },
+    {
+      "source": "PKD1",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKD1 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.05"
+    },
+    {
+      "source": "NAA10",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAA10 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.05"
+    },
+    {
+      "source": "DLX5",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLX5 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.05"
+    },
+    {
+      "source": "FGFR3",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.05"
+    },
+    {
+      "source": "DLG1",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLG1 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.05"
+    },
+    {
+      "source": "BCL2",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.05"
+    },
+    {
+      "source": "RPGRIP1L",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPGRIP1L is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.05"
+    },
+    {
+      "source": "SDCCAG8",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDCCAG8 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.05"
+    },
+    {
+      "source": "RDH10",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RDH10 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.05"
+    },
+    {
+      "source": "CHUK",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHUK is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.05"
+    },
+    {
+      "source": "SH3PXD2B",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH3PXD2B is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.05"
+    },
+    {
+      "source": "BRAF",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.05"
+    },
+    {
+      "source": "KL",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KL is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.05"
+    },
+    {
+      "source": "EDNRA",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDNRA is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.05"
+    },
+    {
+      "source": "SIX1",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIX1 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.05"
+    },
+    {
+      "source": "GLI3",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI3 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.05"
+    },
+    {
+      "source": "FGFRL1",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFRL1 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.05"
+    },
+    {
+      "source": "FGF10",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF10 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.05"
+    },
+    {
+      "source": "COL4A1",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A1 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.05"
+    },
+    {
+      "source": "ESR2",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR2 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.05"
+    },
+    {
+      "source": "TBX1",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX1 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.05"
+    },
+    {
+      "source": "NKX3-2",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX3-2 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXP3",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.05"
+    },
+    {
+      "source": "TREX1",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TREX1 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.05"
+    },
+    {
+      "source": "PITX2",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITX2 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.05"
+    },
+    {
+      "source": "NOS3",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS3 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.05"
+    },
+    {
+      "source": "TBC1D32",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBC1D32 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.05"
+    },
+    {
+      "source": "FAH",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAH is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.05"
+    },
+    {
+      "source": "RRM2B",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RRM2B is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.05"
+    },
+    {
+      "source": "PKHD1",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKHD1 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.05"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.05"
+    },
+    {
+      "source": "UBTF",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBTF is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.05"
+    },
+    {
+      "source": "CYP19A1",
+      "target": "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP19A1 is associated with Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN). Open Targets association score 0.05"
+    }
+  ]
+}

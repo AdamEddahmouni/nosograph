@@ -1,0 +1,54 @@
+{
+  "disease_id": "as",
+  "disease_name": "Ankylosing Spondylitis",
+  "genes": [
+    {
+      "id": "HLA-B27",
+      "symbol": "HLA-B27",
+      "name": "Major Histocompatibility Complex Class I B27",
+      "category": "Autoantigen / Autoantibody",
+      "association_score": 0.99,
+      "odds_ratio": 8.0,
+      "disease_evidence": "Dominant genetic marker associated with >85% of AS cases.",
+      "gwas_pvalue": 1e-300,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "ERAP1",
+      "symbol": "ERAP1",
+      "name": "Endoplasmic Reticulum Aminopeptidase 1",
+      "category": "Autoantigen / Autoantibody",
+      "association_score": 0.92,
+      "odds_ratio": 1.8,
+      "disease_evidence": "Peptide trimming enzyme interacting epistatically with HLA-B27.",
+      "gwas_pvalue": 1e-70,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "IL23R",
+      "symbol": "IL23R",
+      "name": "Interleukin 23 Receptor",
+      "category": "IL-23 / Th17 Signaling",
+      "association_score": 0.9,
+      "odds_ratio": 1.6,
+      "disease_evidence": "Drives entheseal inflammatory T cell activation.",
+      "gwas_pvalue": 1e-50,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "IL12B",
+      "symbol": "IL12B",
+      "name": "Interleukin 12B",
+      "category": "IL-23 / Th17 Signaling",
+      "association_score": 0.85,
+      "odds_ratio": 1.5,
+      "disease_evidence": "IL-23 cytokine subunit component.",
+      "gwas_pvalue": 1e-35,
+      "chromosome": "unknown",
+      "function": "unknown"
+    }
+  ]
+}

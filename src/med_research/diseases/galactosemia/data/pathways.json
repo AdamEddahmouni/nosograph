@@ -1,0 +1,220 @@
+{
+  "pathways": [
+    {
+      "id": "apoptosis",
+      "name": "Apoptosis",
+      "description": "Intrinsic and extrinsic programmed cell death; dysregulation contributes to autoimmunity and cancer.",
+      "key_components": [
+        "CASP1",
+        "CASP3"
+      ],
+      "therapeutic_targets": [
+        "CASP1",
+        "CASP3"
+      ],
+      "references": []
+    },
+    {
+      "id": "cell-cycle",
+      "name": "Cell Cycle Regulation",
+      "description": "Cyclin-CDK machinery controlling cell division; a backbone of oncology target discovery.",
+      "key_components": [
+        "MKI67"
+      ],
+      "therapeutic_targets": [
+        "MKI67"
+      ],
+      "references": []
+    },
+    {
+      "id": "coagulation",
+      "name": "Coagulation Cascade",
+      "description": "Plasma coagulation factors and fibrinolysis; a hub for cardiovascular and thrombotic disease.",
+      "key_components": [
+        "FGF9",
+        "SREBF2",
+        "EIF2A",
+        "GDF9"
+      ],
+      "therapeutic_targets": [
+        "FGF9",
+        "SREBF2",
+        "EIF2A",
+        "GDF9"
+      ],
+      "references": []
+    },
+    {
+      "id": "glucose-metabolism",
+      "name": "Glucose Metabolism / Insulin Secretion",
+      "description": "Pancreatic β-cell function, insulin secretion, and glycemic control.",
+      "key_components": [
+        "HNF1A",
+        "HNF4A",
+        "INS",
+        "SLC2A2"
+      ],
+      "therapeutic_targets": [
+        "HNF1A",
+        "HNF4A",
+        "INS",
+        "SLC2A2"
+      ],
+      "references": []
+    },
+    {
+      "id": "hepcidin-iron",
+      "name": "Hepcidin / Iron Homeostasis",
+      "description": "Hepcidin-ferroportin axis regulating systemic iron balance.",
+      "key_components": [
+        "BMP4",
+        "BMP15"
+      ],
+      "therapeutic_targets": [
+        "BMP4",
+        "BMP15"
+      ],
+      "references": []
+    },
+    {
+      "id": "il1-inflammasome",
+      "name": "IL-1 / Inflammasome Pathway",
+      "description": "NLRP3 inflammasome assembly and IL-1β/IL-18 maturation; a driver of sterile inflammation.",
+      "key_components": [
+        "CASP1",
+        "IL11",
+        "IL11RA",
+        "IL1B"
+      ],
+      "therapeutic_targets": [
+        "CASP1",
+        "IL11",
+        "IL11RA",
+        "IL1B"
+      ],
+      "references": []
+    },
+    {
+      "id": "pi3k-akt-mtor",
+      "name": "PI3K / AKT / mTOR Signaling",
+      "description": "Growth and survival signaling through PI3K-AKT-mTOR; a major oncology and immunology target hub.",
+      "key_components": [
+        "MTOR"
+      ],
+      "therapeutic_targets": [
+        "MTOR"
+      ],
+      "references": []
+    },
+    {
+      "id": "thyroid-hormone",
+      "name": "Thyroid Hormone Signaling",
+      "description": "Thyroid hormone synthesis, transport, and nuclear receptor signaling.",
+      "key_components": [
+        "ITGB4",
+        "TSHR"
+      ],
+      "therapeutic_targets": [
+        "ITGB4",
+        "TSHR"
+      ],
+      "references": []
+    },
+    {
+      "id": "vegf-angiogenesis",
+      "name": "VEGF / Angiogenesis",
+      "description": "Vascular endothelial growth factor signaling driving angiogenesis and vascular permeability.",
+      "key_components": [
+        "VEGFA"
+      ],
+      "therapeutic_targets": [
+        "VEGFA"
+      ],
+      "references": []
+    },
+    {
+      "id": "xenobiotic-metabolism",
+      "name": "Xenobiotic Metabolism",
+      "description": "Cytochrome P450 and conjugating enzymes governing drug metabolism and toxicity.",
+      "key_components": [
+        "ABCB4",
+        "ABCC12",
+        "ABCC2",
+        "GSTM1",
+        "UGT8"
+      ],
+      "therapeutic_targets": [
+        "ABCB4",
+        "ABCC12",
+        "ABCC2",
+        "GSTM1",
+        "UGT8"
+      ],
+      "references": []
+    },
+    {
+      "id": "complement",
+      "name": "Complement Cascade",
+      "description": "Classical, lectin, and alternative complement pathways for opsonization, lysis, and immune complex clearance.",
+      "key_components": [
+        "SLC4A11"
+      ],
+      "therapeutic_targets": [
+        "SLC4A11"
+      ],
+      "references": []
+    },
+    {
+      "id": "ecm-remodeling",
+      "name": "ECM Remodeling",
+      "description": "Matrix metalloproteinases and extracellular matrix turnover in tissue remodeling and fibrosis.",
+      "key_components": [
+        "COL4A1",
+        "COL4A2"
+      ],
+      "therapeutic_targets": [
+        "COL4A1",
+        "COL4A2"
+      ],
+      "references": []
+    },
+    {
+      "id": "integrin-adhesion",
+      "name": "Integrin / Cell Adhesion",
+      "description": "Integrin-mediated adhesion and leukocyte trafficking into inflamed tissue.",
+      "key_components": [
+        "ITGB4",
+        "SELENOF"
+      ],
+      "therapeutic_targets": [
+        "ITGB4",
+        "SELENOF"
+      ],
+      "references": []
+    },
+    {
+      "id": "serotonin-dopamine",
+      "name": "Serotonin / Dopamine Signaling",
+      "description": "Monoamine neurotransmission; the pharmacological hub of psychiatry.",
+      "key_components": [
+        "TDRD7"
+      ],
+      "therapeutic_targets": [
+        "TDRD7"
+      ],
+      "references": []
+    },
+    {
+      "id": "type1-ifn",
+      "name": "Type I Interferon Pathway",
+      "description": "IFN-α/β production and signaling through IFNAR; drives the interferon gene signature in autoimmune disease.",
+      "key_components": [
+        "LMX1B"
+      ],
+      "therapeutic_targets": [
+        "LMX1B"
+      ],
+      "references": []
+    }
+  ]
+}

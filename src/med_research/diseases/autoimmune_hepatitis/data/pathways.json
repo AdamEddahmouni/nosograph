@@ -1,0 +1,258 @@
+{
+  "pathways": [
+    {
+      "id": "cell-cycle",
+      "name": "Cell Cycle Regulation",
+      "description": "Cyclin-CDK machinery controlling cell division; a backbone of oncology target discovery.",
+      "key_components": [
+        "CDKN2A",
+        "HLA-DRB1"
+      ],
+      "therapeutic_targets": [
+        "CDKN2A",
+        "HLA-DRB1"
+      ],
+      "references": []
+    },
+    {
+      "id": "complement",
+      "name": "Complement Cascade",
+      "description": "Classical, lectin, and alternative complement pathways for opsonization, lysis, and immune complex clearance.",
+      "key_components": [
+        "CFH",
+        "HAVCR2",
+        "MASP2"
+      ],
+      "therapeutic_targets": [
+        "CFH",
+        "HAVCR2",
+        "MASP2"
+      ],
+      "references": []
+    },
+    {
+      "id": "hepcidin-iron",
+      "name": "Hepcidin / Iron Homeostasis",
+      "description": "Hepcidin-ferroportin axis regulating systemic iron balance.",
+      "key_components": [
+        "HAMP",
+        "TFRC"
+      ],
+      "therapeutic_targets": [
+        "HAMP",
+        "TFRC"
+      ],
+      "references": []
+    },
+    {
+      "id": "il1-inflammasome",
+      "name": "IL-1 / Inflammasome Pathway",
+      "description": "NLRP3 inflammasome assembly and IL-1β/IL-18 maturation; a driver of sterile inflammation.",
+      "key_components": [
+        "IL17A"
+      ],
+      "therapeutic_targets": [
+        "IL17A"
+      ],
+      "references": []
+    },
+    {
+      "id": "il4-il13",
+      "name": "IL-4 / IL-13 (Th2) Pathway",
+      "description": "Type 2 cytokine signaling driving allergic and eosinophilic inflammation.",
+      "key_components": [
+        "IL33"
+      ],
+      "therapeutic_targets": [
+        "IL33"
+      ],
+      "references": []
+    },
+    {
+      "id": "immune-checkpoint",
+      "name": "Immune Checkpoint Signaling",
+      "description": "Co-inhibitory receptor signaling (PD-1/CTLA-4/TIGIT/LAG-3) that restrains T cell responses.",
+      "key_components": [
+        "PDCD1",
+        "TIGIT",
+        "CD274",
+        "CTLA4",
+        "HAVCR2"
+      ],
+      "therapeutic_targets": [
+        "PDCD1",
+        "TIGIT",
+        "CD274",
+        "CTLA4",
+        "HAVCR2"
+      ],
+      "references": []
+    },
+    {
+      "id": "nfkb",
+      "name": "NF-κB Pathway",
+      "description": "Canonical and non-canonical NF-κB activation driving pro-inflammatory gene expression.",
+      "key_components": [
+        "TNFAIP3"
+      ],
+      "therapeutic_targets": [
+        "TNFAIP3"
+      ],
+      "references": []
+    },
+    {
+      "id": "serotonin-dopamine",
+      "name": "Serotonin / Dopamine Signaling",
+      "description": "Monoamine neurotransmission; the pharmacological hub of psychiatry.",
+      "key_components": [
+        "THPO",
+        "YTHDF3",
+        "PTH"
+      ],
+      "therapeutic_targets": [
+        "THPO",
+        "YTHDF3",
+        "PTH"
+      ],
+      "references": []
+    },
+    {
+      "id": "tcr-signaling",
+      "name": "T Cell Receptor Signaling",
+      "description": "TCR signal transduction and T cell activation; a therapeutic hub in autoimmunity.",
+      "key_components": [
+        "CD8A",
+        "CD4",
+        "CTLA4",
+        "ICOS"
+      ],
+      "therapeutic_targets": [
+        "CD8A",
+        "CD4",
+        "CTLA4",
+        "ICOS"
+      ],
+      "references": []
+    },
+    {
+      "id": "th17-il17",
+      "name": "Th17 / IL-17 Pathway",
+      "description": "Th17 differentiation and IL-17 family cytokine signaling driving neutrophil recruitment and autoimmunity.",
+      "key_components": [
+        "IL17A",
+        "IL21"
+      ],
+      "therapeutic_targets": [
+        "IL17A",
+        "IL21"
+      ],
+      "references": []
+    },
+    {
+      "id": "tnf-signaling",
+      "name": "TNF Signaling",
+      "description": "Tumor necrosis factor receptor superfamily signaling; central to many autoimmune and inflammatory diseases.",
+      "key_components": [
+        "TNF",
+        "FAS",
+        "FASLG",
+        "TNFAIP3",
+        "TNFAIP8L2",
+        "TNFRSF13C"
+      ],
+      "therapeutic_targets": [
+        "TNF",
+        "FAS",
+        "FASLG",
+        "TNFAIP3",
+        "TNFAIP8L2",
+        "TNFRSF13C"
+      ],
+      "references": []
+    },
+    {
+      "id": "xenobiotic-metabolism",
+      "name": "Xenobiotic Metabolism",
+      "description": "Cytochrome P450 and conjugating enzymes governing drug metabolism and toxicity.",
+      "key_components": [
+        "ACYP2",
+        "CYP3A4",
+        "CYP3A43",
+        "CYP3A5",
+        "CYP3A7",
+        "CYP2D6"
+      ],
+      "therapeutic_targets": [
+        "ACYP2",
+        "CYP3A4",
+        "CYP3A43",
+        "CYP3A5",
+        "CYP3A7",
+        "CYP2D6"
+      ],
+      "references": []
+    },
+    {
+      "id": "chemokine-signaling",
+      "name": "Chemokine Signaling",
+      "description": "Chemokine-receptor interactions directing leukocyte migration and lymphoid organization.",
+      "key_components": [
+        "CXCL12"
+      ],
+      "therapeutic_targets": [
+        "CXCL12"
+      ],
+      "references": []
+    },
+    {
+      "id": "coagulation",
+      "name": "Coagulation Cascade",
+      "description": "Plasma coagulation factors and fibrinolysis; a hub for cardiovascular and thrombotic disease.",
+      "key_components": [
+        "CELF2"
+      ],
+      "therapeutic_targets": [
+        "CELF2"
+      ],
+      "references": []
+    },
+    {
+      "id": "thyroid-hormone",
+      "name": "Thyroid Hormone Signaling",
+      "description": "Thyroid hormone synthesis, transport, and nuclear receptor signaling.",
+      "key_components": [
+        "PTGS2"
+      ],
+      "therapeutic_targets": [
+        "PTGS2"
+      ],
+      "references": []
+    },
+    {
+      "id": "type1-ifn",
+      "name": "Type I Interferon Pathway",
+      "description": "IFN-α/β production and signaling through IFNAR; drives the interferon gene signature in autoimmune disease.",
+      "key_components": [
+        "IFNAR1",
+        "IFNAR2"
+      ],
+      "therapeutic_targets": [
+        "IFNAR1",
+        "IFNAR2"
+      ],
+      "references": []
+    },
+    {
+      "id": "vegf-angiogenesis",
+      "name": "VEGF / Angiogenesis",
+      "description": "Vascular endothelial growth factor signaling driving angiogenesis and vascular permeability.",
+      "key_components": [
+        "VEGFA"
+      ],
+      "therapeutic_targets": [
+        "VEGFA"
+      ],
+      "references": []
+    }
+  ]
+}
