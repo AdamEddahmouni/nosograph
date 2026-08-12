@@ -32,6 +32,89 @@ The application preloads the default knowledge graph at startup. API-key middlew
 | `CELERY_RESULT_BACKEND` | `redis://localhost:6379/0` | Celery result backend. |
 | `USE_CACHE` | `true` | Enables cache-aware service behavior. |
 | `WORKSPACE_DB_PATH` | project `data/evidence_workspace.sqlite3` path | SQLite store for saved Workspace runs, alert delivery state, and weekly digest delivery state. |
+| `BIOMEDICAL_DB_PATH` | project `data/biomedical.sqlite3` path | Canonical biomedical knowledge store for versioned ontology snapshots, entities, claims, evidence, and research runs. Separate from the Evidence Workspace database. |
+
+Initialize the biomedical store from the CLI:
+
+```bash
+python -m med_research.cli biomed init
+python -m med_research.cli biomed init --db /path/to/biomedical.sqlite3
+make biomed-init
+```
+
+Import pinned ontology artifacts (operator-supplied local files; no live network fetch):
+
+```bash
+python -m med_research.cli biomed import mondo --artifact /path/to/mondo.json
+python -m med_research.cli biomed import hp --artifact /path/to/hp.json
+python -m med_research.cli biomed import hpoa --artifact /path/to/phenotype.hpoa.tsv
+python -m med_research.cli biomed snapshots list
+python -m med_research.cli biomed snapshots list --resource mondo
+make biomed-import-fixtures
+```
+
+Migrate curated legacy disease modules into canonical claims (requires an active Mondo snapshot; legacy JSON loaders remain authoritative for existing modules):
+
+```bash
+python -m med_research.cli biomed migrate legacy
+python -m med_research.cli biomed migrate legacy --disease sle --report /tmp/parity.json
+make biomed-migrate-legacy
+```
+
+Pinned fixture imports and verification:
+
+```bash
+make biomed-import-fixtures
+make biomed-verify
+python scripts/setup_biomed_imports.py --from-fixtures
+python scripts/verify_biomed_imports.py --from-fixtures --check-store
+```
+
+Checksums for the minimal fixture bundle are recorded in `data/biomed/pinned-artifacts.json`. `setup_biomed_imports.py` verifies fixture checksums before import; `verify_biomed_imports.py` can re-check artifact files and active store snapshots.
+
+Set `BIOMED_LEGACY_PROJECTION=1` to enable optional read-only canonical claim diagnostics when a `legacy-curated` snapshot is active. Graph construction continues to use the JSON loaders by default.
+
+Mondo is CC BY 4.0 redistributable. HPO and HPO annotation releases are operator-supplied under their upstream licenses. Imports are checksum-verified, idempotent, and activate the new snapshot on success. HPOA joins disease identifiers to Mondo through exact published mappings only.
+
+The store is research-only public biomedical knowledge. It does not accept patient or case data. Imported snapshots, claims, evidence links, and terminal research runs are immutable; corrections create new records rather than rewriting history.
+
+### Universal biomedical API (`/api/v1`)
+
+Versioned read-only condition endpoints backed by the canonical biomedical store. Every response includes a `disclaimer` field with research-only language. Pagination defaults to `limit=50` (allowed range `1–200`). Hierarchy traversal accepts `depth` `0–3`.
+
+| Method | Path | Purpose |
+|---|---|---|
+| GET | `/api/v1/conditions/search` | Search imported conditions by label or synonym |
+| GET | `/api/v1/conditions/{curie}` | Condition summary, mappings, readiness, active snapshots |
+| GET | `/api/v1/conditions/{curie}/hierarchy` | Parent/child `IS_A` nodes up to `depth` |
+| GET | `/api/v1/conditions/{curie}/claims` | Claims with optional `predicate` and `evidence_direction` filters |
+| GET | `/api/v1/snapshots` | List resource snapshots with active flags |
+| GET | `/api/v1/snapshots/{snapshot_id}/report` | Import report metadata for a snapshot |
+| POST | `/api/v1/comparisons` | Compare two condition CURIEs and persist a research run |
+| GET | `/api/v1/comparisons/{run_id}` | Fetch a persisted comparison research run |
+
+Examples:
+
+```bash
+curl "http://127.0.0.1:8000/api/v1/conditions/search?q=lupus&limit=5"
+curl "http://127.0.0.1:8000/api/v1/conditions/MONDO:0007915"
+curl "http://127.0.0.1:8000/api/v1/conditions/MONDO:0007915/hierarchy?depth=2"
+curl "http://127.0.0.1:8000/api/v1/conditions/MONDO:0007915/claims?predicate=HAS_PHENOTYPE&limit=20"
+curl "http://127.0.0.1:8000/api/v1/snapshots?resource=mondo"
+curl -X POST "http://127.0.0.1:8000/api/v1/comparisons" \
+  -H "Content-Type: application/json" \
+  -d '{"left_curie":"MONDO:0007915","right_curie":"MONDO:0008390"}'
+curl "http://127.0.0.1:8000/api/v1/comparisons/{run_id}"
+```
+
+CLI comparison:
+
+```bash
+python -m med_research.cli biomed compare --left MONDO:0007915 --right MONDO:0008390 --db data/biomedical.sqlite3
+```
+
+Absent imported data is returned as empty lists or `No data imported for this section` placeholders in the dashboard explorer; it is never treated as contradictory evidence. Legacy `/api/*` routes remain unchanged.
+
 | `ALERT_SMTP_HOST` | empty | Enables email delivery when a researcher opts in and configures an email address. |
 | `ALERT_SMTP_PORT` | `587` | SMTP port; port `465` uses implicit TLS. |
 | `ALERT_SMTP_USERNAME` | empty | Optional SMTP username. |

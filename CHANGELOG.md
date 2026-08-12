@@ -1,5 +1,28 @@
 # Changelog
 
+## [Universal Biomedical Schema v1] — 2026-08-12
+
+### Added
+
+- `med_research.biomed` canonical SQLite store with versioned entities, claims, evidence, resource snapshots, and research runs.
+- Ontology import adapters for MONDO, HPO, and HPOA with idempotent, checksum-verified imports and legacy disease migration for all seven core modules.
+- Versioned `/api/v1` condition search, detail, hierarchy, claims, snapshot, and comparison endpoints with research-only disclaimers.
+- Dashboard Condition Explorer, Condition Comparison (searchable CURIE pickers), and Biomedical Import Status operator panel.
+- Pinned fixture manifest (`data/biomed/pinned-artifacts.json`), `scripts/verify_biomed_imports.py`, and `make biomed-verify`.
+
+### Changed
+
+- `BIOMEDICAL_DB_PATH` now resolves to the repository `data/biomedical.sqlite3` instead of `src/data/`.
+- Import bundles skip duplicate snapshot writes when the same resource version and checksum are re-imported.
+
+### Verification
+
+- `python -m pytest tests/biomed tests/web/test_universal_models.py tests/web/test_universal_service.py tests/web/test_universal_api.py tests/web/test_universal_dashboard.py tests/web/test_universal_language.py tests/web/test_universal_comparison_api.py tests/web/test_universal_comparison_dashboard.py -q`
+- `python scripts/verify_biomed_imports.py --from-fixtures --check-store`
+- `python -m med_research.cli biomed init && python scripts/setup_biomed_imports.py --from-fixtures && python -m med_research.cli biomed migrate legacy`
+
+---
+
 ## [Per-disease expression consensus curation] — 2026-08-11
 
 ### Added
