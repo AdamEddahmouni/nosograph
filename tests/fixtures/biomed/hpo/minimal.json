@@ -1,0 +1,65 @@
+{
+  "graphs": [
+    {
+      "meta": {
+        "version": "2024-02-15"
+      },
+      "nodes": [
+        {
+          "id": "http://purl.obolibrary.org/obo/HP_0000118",
+          "lbl": "Phenotypic abnormality",
+          "meta": {
+            "definition": {
+              "val": "A phenotypic abnormality."
+            }
+          }
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/HP_0001945",
+          "lbl": "Fever",
+          "meta": {
+            "definition": {
+              "val": "Body temperature elevated above the normal range."
+            },
+            "synonyms": [
+              {"pred": "hasExactSynonym", "val": "Pyrexia"}
+            ]
+          }
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/HP_0001873",
+          "lbl": "Thrombocytopenia",
+          "meta": {
+            "definition": {
+              "val": "A reduction in platelet count."
+            }
+          }
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/HP_0000001",
+          "lbl": "obsolete fever term",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasObsolescenceReason",
+                "val": "term replaced"
+              }
+            ]
+          }
+        }
+      ],
+      "edges": [
+        {
+          "sub": "http://purl.obolibrary.org/obo/HP_0001945",
+          "pred": "is_a",
+          "obj": "http://purl.obolibrary.org/obo/HP_0000118"
+        },
+        {
+          "sub": "http://purl.obolibrary.org/obo/HP_0001873",
+          "pred": "is_a",
+          "obj": "http://purl.obolibrary.org/obo/HP_0000118"
+        }
+      ]
+    }
+  ]
+}

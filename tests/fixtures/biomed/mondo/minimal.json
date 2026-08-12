@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "version": "2024-01-01"
+  },
+  "graphs": [
+    {
+      "nodes": [
+        {
+          "id": "http://purl.obolibrary.org/obo/MONDO_0007915",
+          "lbl": "systemic lupus erythematosus",
+          "meta": {
+            "definition": {
+              "val": "An autoimmune disease that can affect multiple organs."
+            },
+            "synonyms": [
+              {"pred": "hasExactSynonym", "val": "SLE"},
+              {"pred": "hasExactSynonym", "val": "lupus"}
+            ],
+            "xrefs": [
+              {"val": "OMIM:152700"},
+              {"val": "DOID:9074"}
+            ],
+            "basicPropertyValues": [
+              {"pred": "http://www.geneontology.org/formats/oboInOwl#hasDbXref", "val": "OMIM:152700"},
+              {"pred": "http://www.geneontology.org/formats/oboInOwl#hasDbXref", "val": "DOID:9074"}
+            ]
+          }
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/MONDO_0000001",
+          "lbl": "disease",
+          "meta": {
+            "definition": {
+              "val": "A disposition to undergo pathological processes."
+            }
+          }
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/MONDO_0004992",
+          "lbl": "autoimmune disease",
+          "meta": {
+            "definition": {
+              "val": "An immune system disease that results from an immune response against self-antigens."
+            }
+          }
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/MONDO_0000002",
+          "lbl": "obsolete lupus term",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasObsolescenceReason",
+                "val": "term replaced"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#consider",
+                "val": "MONDO:0007915"
+              }
+            ],
+            "xrefs": [
+              {"val": "OMIM:999999"}
+            ]
+          }
+        }
+      ],
+      "edges": [
+        {
+          "sub": "http://purl.obolibrary.org/obo/MONDO_0007915",
+          "pred": "is_a",
+          "obj": "http://purl.obolibrary.org/obo/MONDO_0004992"
+        },
+        {
+          "sub": "http://purl.obolibrary.org/obo/MONDO_0004992",
+          "pred": "is_a",
+          "obj": "http://purl.obolibrary.org/obo/MONDO_0000001"
+        }
+      ],
+      "meta": {
+        "xrefs": [
+          {
+            "subject": "http://purl.obolibrary.org/obo/MONDO_0007915",
+            "predicate": "skos:exactMatch",
+            "object": "OMIM:152700"
+          },
+          {
+            "subject": "http://purl.obolibrary.org/obo/MONDO_0007915",
+            "predicate": "skos:closeMatch",
+            "object": "DOID:9074"
+          }
+        ]
+      }
+    }
+  ]
+}
