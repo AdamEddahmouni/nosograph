@@ -17,6 +17,7 @@ from typing import Any, Generic, TypeVar
 from typing_extensions import Unpack
 
 from med_research.pipeline.adapter_options import AdapterOptions
+from med_research.pipeline.provenance import ProvenanceMetadata
 
 ResultT = TypeVar("ResultT")
 
@@ -28,7 +29,7 @@ class PipelineRunResult(Generic[ResultT]):
     success: bool
     data: ResultT | None
     report_path: Path | None = None
-    provenance: dict[str, Any] | None = None
+    provenance: ProvenanceMetadata | None = None
     errors: list[str] = field(default_factory=list)
 
 
@@ -54,14 +55,12 @@ class BasePipelineModule(ABC, Generic[ResultT]):
         results: ResultT,
         disease_id: str,
         *,
-        provenance: dict[str, Any] | None = None,
+        provenance: ProvenanceMetadata | None = None,
     ) -> Path:
         """Render an HTML report from ``run()`` output and return its path."""
 
     @abstractmethod
-    def build_provenance(
-        self, disease_id: str, **opts: Unpack[AdapterOptions]
-    ) -> dict[str, Any]:
+    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> ProvenanceMetadata:
         """Build reproducibility metadata for a disease run."""
 
     @property

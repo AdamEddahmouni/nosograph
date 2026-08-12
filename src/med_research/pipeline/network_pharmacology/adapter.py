@@ -9,7 +9,7 @@ from typing_extensions import Unpack
 
 from med_research.pipeline.adapter_options import AdapterOptions
 from med_research.pipeline.base import BasePipelineModule
-from med_research.pipeline.provenance import build_provenance
+from med_research.pipeline.provenance import ProvenanceMetadata, build_provenance
 from med_research.pipeline.registry import register_module
 from med_research.pipeline.results import CentralityEntry, NetworkModuleResult
 
@@ -61,7 +61,9 @@ class NetworkPharmacologyModule(BasePipelineModule[NetworkModuleResult]):
             return {"metric": metric, "nodes": nodes, "total_nodes": graph.number_of_nodes()}
 
         if operation == "communities":
-            return cast(NetworkModuleResult, compute_communities(graph, progress_callback=progress_callback))
+            return cast(
+                NetworkModuleResult, compute_communities(graph, progress_callback=progress_callback)
+            )
 
         return cast(
             NetworkModuleResult,
@@ -89,7 +91,7 @@ class NetworkPharmacologyModule(BasePipelineModule[NetworkModuleResult]):
         )
         return Path(report_path)
 
-    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
+    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> ProvenanceMetadata:
         extra: dict[str, Any] = {
             key: value
             for key, value in opts.items()

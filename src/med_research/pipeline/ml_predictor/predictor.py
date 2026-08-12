@@ -49,6 +49,7 @@ SKLEARN_AVAILABLE = False
 
 try:
     import numpy as np
+
     NP_AVAILABLE = True
 except ImportError:
     NP_AVAILABLE = False
@@ -57,6 +58,7 @@ except ImportError:
 try:
     from sklearn.model_selection import StratifiedKFold, cross_val_score
     from sklearn.preprocessing import StandardScaler
+
     SKLEARN_AVAILABLE = True
 except ImportError:
     SKLEARN_AVAILABLE = False
@@ -64,6 +66,7 @@ except ImportError:
 
 try:
     import xgboost as xgb
+
     XGB_AVAILABLE = True
 except ImportError:
     XGB_AVAILABLE = False
@@ -71,6 +74,7 @@ except ImportError:
 
 try:
     import shap
+
     SHAP_AVAILABLE = True
 except ImportError:
     SHAP_AVAILABLE = False
@@ -155,11 +159,7 @@ def extract_features(
     features = []
     gene_ids = []
     labels = []
-    gene_nodes = [
-        (node, data)
-        for node, data in G.nodes(data=True)
-        if data.get("type") == "gene"
-    ]
+    gene_nodes = [(node, data) for node, data in G.nodes(data=True) if data.get("type") == "gene"]
 
     for i, (node, data) in enumerate(gene_nodes, 1):
         _tick(progress_callback, "extracting gene features", i, len(gene_nodes))
@@ -170,11 +170,7 @@ def extract_features(
         # Which drugs target this gene
         targeting_drugs = []
         for u, v, d in G.edges(data=True):
-            if (
-                d.get("type") == "TARGETS"
-                and v == gene_id
-                and G.nodes[u].get("type") == "drug"
-            ):
+            if d.get("type") == "TARGETS" and v == gene_id and G.nodes[u].get("type") == "drug":
                 targeting_drugs.append(u)
 
         labels.append((is_targeted, targeting_drugs))
@@ -185,15 +181,15 @@ def extract_features(
 
         # Build feature vector
         feat = [
-            G.degree(node),                          # 0: degree
-            betweenness.get(node, 0.0),             # 1: betweenness
-            _count_pathways(G, node),                # 2: pathway count
+            G.degree(node),  # 0: degree
+            betweenness.get(node, 0.0),  # 1: betweenness
+            _count_pathways(G, node),  # 2: pathway count
             float(odds_ratio) if odds_ratio else 0.0,  # 3: odds ratio
-            1 if odds_ratio else 0,                  # 4: has odds ratio
-            1 if data.get("chromosome") else 0,      # 5: has chromosome data
-            _is_type(function_text, _KINASE_KEYWORDS),     # 6: is kinase
-            _is_type(function_text, _RECEPTOR_KEYWORDS),   # 7: is receptor
-            _is_type(function_text, _TF_KEYWORDS),         # 8: is transcription factor
+            1 if odds_ratio else 0,  # 4: has odds ratio
+            1 if data.get("chromosome") else 0,  # 5: has chromosome data
+            _is_type(function_text, _KINASE_KEYWORDS),  # 6: is kinase
+            _is_type(function_text, _RECEPTOR_KEYWORDS),  # 7: is receptor
+            _is_type(function_text, _TF_KEYWORDS),  # 8: is transcription factor
         ]
 
         # One-hot encode category
@@ -222,6 +218,7 @@ def nx_betweenness(G):
     """Compute betweenness centrality, catching errors."""
     try:
         import networkx as nx
+
         return nx.betweenness_centrality(G)
     except ImportError as exc:
         logger.warning("networkx unavailable for betweenness centrality: %s", exc)
@@ -258,19 +255,27 @@ def train_and_predict(
     targeted_count = int(np.sum(y))
     untargeted_count = int(len(y) - targeted_count)
 
-    logger.info(f"   {len(gene_ids)} genes: {targeted_count} targeted, {untargeted_count} untargeted")
+    logger.info(
+        f"   {len(gene_ids)} genes: {targeted_count} targeted, {untargeted_count} untargeted"
+    )
 
     # Scale features
     scaler = StandardScaler()
     X_scaled = scaler.fit_transform(X)
 
     # Feature names
-    feature_names = (
-        ["degree", "betweenness", "pathway_count", "odds_ratio",
-         "has_odds_ratio", "has_chromosome", "is_kinase", "is_receptor", "is_tf"]
-        + [f"cat_{c.replace(' ', '_').replace('/', '_')[:30]}" for c in _CATEGORIES]
-    )
-    feature_names = feature_names[:X.shape[1]]
+    feature_names = [
+        "degree",
+        "betweenness",
+        "pathway_count",
+        "odds_ratio",
+        "has_odds_ratio",
+        "has_chromosome",
+        "is_kinase",
+        "is_receptor",
+        "is_tf",
+    ] + [f"cat_{c.replace(' ', '_').replace('/', '_')[:30]}" for c in _CATEGORIES]
+    feature_names = feature_names[: X.shape[1]]
 
     # Cross-validation
     logger.info("\n🔄 Training XGBoost with stratified 5-fold CV...")
@@ -285,7 +290,9 @@ def train_and_predict(
     )
 
     if targeted_count >= 2 and untargeted_count >= 2 and min(targeted_count, untargeted_count) >= 2:
-        cv = StratifiedKFold(n_splits=min(3, targeted_count, untargeted_count), shuffle=True, random_state=42)
+        cv = StratifiedKFold(
+            n_splits=min(3, targeted_count, untargeted_count), shuffle=True, random_state=42
+        )
         cv_scores = cross_val_score(model, X_scaled, y, cv=cv, scoring="roc_auc")
         logger.info(f"   CV ROC-AUC: {cv_scores.mean():.3f} ± {cv_scores.std():.3f}")
     else:
@@ -308,17 +315,19 @@ def train_and_predict(
         gene_data = G.nodes[gene_id]
         is_targeted = labels[i][0]
         drugs = labels[i][1]
-        predictions.append({
-            "gene_id": gene_id,
-            "gene_name": gene_data.get("label", gene_id),
-            "category": gene_data.get("category", ""),
-            "druggability_score": round(float(probas[i]), 3),
-            "is_targeted": bool(is_targeted),
-            "targeted_by": drugs,
-            "odds_ratio": gene_data.get("odds_ratio"),
-            "degree": G.degree(gene_id),
-            "pathway_count": _count_pathways(G, gene_id),
-        })
+        predictions.append(
+            {
+                "gene_id": gene_id,
+                "gene_name": gene_data.get("label", gene_id),
+                "category": gene_data.get("category", ""),
+                "druggability_score": round(float(probas[i]), 3),
+                "is_targeted": bool(is_targeted),
+                "targeted_by": drugs,
+                "odds_ratio": gene_data.get("odds_ratio"),
+                "degree": G.degree(gene_id),
+                "pathway_count": _count_pathways(G, gene_id),
+            }
+        )
 
     # Sort by druggability score
     predictions.sort(key=lambda x: x["druggability_score"], reverse=True)
@@ -333,10 +342,12 @@ def train_and_predict(
             shap_vals = explainer.shap_values(X_scaled)
             for i, name in enumerate(feature_names):
                 mean_impact = float(np.abs(shap_vals[:, i]).mean())
-                shap_summary.append({
-                    "feature": name,
-                    "mean_abs_shap": round(mean_impact, 4),
-                })
+                shap_summary.append(
+                    {
+                        "feature": name,
+                        "mean_abs_shap": round(mean_impact, 4),
+                    }
+                )
             shap_summary.sort(key=lambda x: x["mean_abs_shap"], reverse=True)
             shap_values = shap_vals
         except (ValueError, RuntimeError, ImportError, TypeError) as exc:
@@ -351,7 +362,9 @@ def train_and_predict(
         "top_untargeted": top_untargeted,
         "feature_importance": importance,
         "shap_summary": shap_summary,
-        "shap_values": shap_values.tolist() if shap_values is not None and hasattr(shap_values, 'tolist') else None,
+        "shap_values": shap_values.tolist()
+        if shap_values is not None and hasattr(shap_values, "tolist")
+        else None,
         "feature_names": feature_names,
         "gene_ids": gene_ids,
         "model_metrics": {
@@ -380,26 +393,36 @@ def print_summary(results: MlPredictionResult) -> None:
     logger.info(f"\n  Genes analyzed:             {metrics.get('n_genes', 0)}")
     logger.info(f"  Targeted (known drugs):     {metrics.get('n_targeted', 0)}")
     logger.info(f"  Untargeted (opportunity):   {metrics.get('n_untargeted', 0)}")
-    logger.info(f"  CV ROC-AUC:                 {metrics.get('cv_roc_auc_mean', 0):.3f} ± {metrics.get('cv_roc_auc_std', 0):.3f}")
-    logger.info(f"  XGBoost:                    {'✅ available' if metrics.get('xgboost_available') else '❌ not available'}")
-    logger.info(f"  SHAP:                       {'✅ available' if metrics.get('shap_available') else '❌ not available'}")
+    logger.info(
+        f"  CV ROC-AUC:                 {metrics.get('cv_roc_auc_mean', 0):.3f} ± {metrics.get('cv_roc_auc_std', 0):.3f}"
+    )
+    logger.info(
+        f"  XGBoost:                    {'✅ available' if metrics.get('xgboost_available') else '❌ not available'}"
+    )
+    logger.info(
+        f"  SHAP:                       {'✅ available' if metrics.get('shap_available') else '❌ not available'}"
+    )
 
     # Feature importance
     importance = results.get("feature_importance", {})
     if importance:
         logger.info("\n  📊 Top features by importance:")
         for i, (feat, imp) in enumerate(list(importance.items())[:8]):
-            logger.info(f"    {i+1}. {feat:<35} {imp:.4f}")
+            logger.info(f"    {i + 1}. {feat:<35} {imp:.4f}")
 
     # Top predictions
     top = results.get("top_untargeted", [])
     if top:
         logger.info("\n  🎯 Top predicted novel druggable targets:")
         for i, p in enumerate(top[:10]):
-            drugs_note = f"  [targeted by: {', '.join(p['targeted_by'])}]" if p.get('targeted_by') else ""
-            logger.info(f"    {i+1:2}. {p['gene_name'][:45]:<47} "
-                  f"Score: {p['druggability_score']:.3f}  "
-                  f"Cat: {p['category']}{drugs_note}")
+            drugs_note = (
+                f"  [targeted by: {', '.join(p['targeted_by'])}]" if p.get("targeted_by") else ""
+            )
+            logger.info(
+                f"    {i + 1:2}. {p['gene_name'][:45]:<47} "
+                f"Score: {p['druggability_score']:.3f}  "
+                f"Cat: {p['category']}{drugs_note}"
+            )
 
     # SHAP
     shap = results.get("shap_summary", [])
@@ -414,19 +437,25 @@ def main():
         description="Lupus ML Target Predictor — XGBoost + SHAP druggability prediction"
     )
     parser.add_argument(
-        "--top", type=int, default=15,
+        "--top",
+        type=int,
+        default=15,
         help="Number of top predicted targets (default: 15)",
     )
     parser.add_argument(
-        "--export-html", action="store_true",
+        "--export-html",
+        action="store_true",
         help="Generate HTML report with SHAP plots",
     )
     parser.add_argument(
-        "--no-shap", action="store_true",
+        "--no-shap",
+        action="store_true",
         help="Skip SHAP analysis (faster)",
     )
     parser.add_argument(
-        "--disease", "-d", default="sle",
+        "--disease",
+        "-d",
+        default="sle",
         help="Disease ID (default: sle)",
     )
     args = parser.parse_args()
@@ -434,9 +463,7 @@ def main():
     from med_research.diseases.coverage import module_coverage
 
     global last_coverage
-    coverage = module_coverage(
-        args.disease, "ml_predictor", ("genes", "relationships")
-    )
+    coverage = module_coverage(args.disease, "ml_predictor", ("genes", "relationships"))
     last_coverage = coverage
     if not coverage.is_runnable:
         logger.error(
@@ -498,4 +525,9 @@ def main():
 
 
 if __name__ == "__main__":
-    results = main()
+    import sys
+
+    from med_research.cli import main as cli_main
+
+    sys.exit(cli_main() or 0)
+

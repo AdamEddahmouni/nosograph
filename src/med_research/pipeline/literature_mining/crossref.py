@@ -23,11 +23,13 @@ DR_DATA_DIR = PROJECT_ROOT / "drug_repurposing" / "data"
 # ── Optional spaCy NER ──────────────────────────────────────────────────
 _biomedical_ner = None
 
+
 def _get_ner():
     """Lazy-load the biomedical NER module."""
     global _biomedical_ner
     if _biomedical_ner is None:
         from med_research.pipeline.literature_mining.ner import BiomedicalNER
+
         _biomedical_ner = BiomedicalNER()
     return _biomedical_ner
 
@@ -75,9 +77,7 @@ def load_kg_entities(disease_id: str = "sle") -> dict[str, Any]:
 
 def load_repurposing_candidates():
     """Load drug repurposing candidates for cross-reference."""
-    candidates_data = json.loads(
-        (DR_DATA_DIR / "candidates.json").read_text(encoding="utf-8")
-    )
+    candidates_data = json.loads((DR_DATA_DIR / "candidates.json").read_text(encoding="utf-8"))
     return candidates_data["repurposing_candidates"]
 
 
@@ -87,8 +87,16 @@ def _generate_gene_synonyms(gene: Mapping[str, Any]) -> list:
     if "function" in gene and gene["function"]:
         # Extract key functional terms
         func = gene["function"].lower()
-        for term in ["transcription factor", "kinase", "receptor", "phosphatase",
-                     "scaffold", "ligand", "integrin", "sensor"]:
+        for term in [
+            "transcription factor",
+            "kinase",
+            "receptor",
+            "phosphatase",
+            "scaffold",
+            "ligand",
+            "integrin",
+            "sensor",
+        ]:
             if term in func:
                 synonyms.append(term)
     if gene.get("id"):
@@ -111,9 +119,7 @@ def _generate_drug_synonyms(drug: Mapping[str, Any]) -> list:
     return list(set(synonyms))
 
 
-def cross_reference_articles(
-    articles: list, entities: dict, candidates: list
-) -> LiteratureResults:
+def cross_reference_articles(articles: list, entities: dict, candidates: list) -> LiteratureResults:
     """
     Cross-reference extracted article entities against the knowledge graph.
 
@@ -150,8 +156,7 @@ def cross_reference_articles(
             if gene_id in matches["genes_found"]:
                 # Check if drug is mentioned
                 drug_found = any(
-                    drug_name in d["name"].lower()
-                    or any(s in drug_name for s in d["synonyms"])
+                    drug_name in d["name"].lower() or any(s in drug_name for s in d["synonyms"])
                     for d in matches["drugs_found"].values()
                     if isinstance(d, dict)
                 )
@@ -201,6 +206,7 @@ def cross_reference_articles(
     ner = _get_ner()
     if ner.spacy_available:
         from med_research.pipeline.literature_mining.ner import _spacy_is_biomedical
+
         if _spacy_is_biomedical:
             spacy_status = "active (biomedical model)"
         else:
@@ -226,9 +232,7 @@ def cross_reference_articles(
         "dosage_entities": dosage_summary,
         "stats": {
             "total_articles": len(article_matches),
-            "articles_with_matches": sum(
-                1 for a in article_matches if a["relevance_score"] > 0
-            ),
+            "articles_with_matches": sum(1 for a in article_matches if a["relevance_score"] > 0),
             "genes_found": len(gene_article_counts),
             "drugs_found": len(drug_article_counts),
             "candidates_supported": len(candidate_support),

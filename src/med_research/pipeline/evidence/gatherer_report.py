@@ -9,7 +9,13 @@ from med_research.pipeline.reporting import disease_context, render_report
 def escape_html(value):
     if value is None:
         return ""
-    return str(value).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
+    return (
+        str(value)
+        .replace("&", "&amp;")
+        .replace("<", "&lt;")
+        .replace(">", "&gt;")
+        .replace('"', "&quot;")
+    )
 
 
 def generate_html_report(
@@ -25,12 +31,18 @@ def generate_html_report(
     results = gathered["all_results"]
 
     source_icons = {
-        "pubmed": "📄", "preprints": "🧪", "patents": "💡",
-        "clinical_trials": "🏥", "fda_labels": "💊",
+        "pubmed": "📄",
+        "preprints": "🧪",
+        "patents": "💡",
+        "clinical_trials": "🏥",
+        "fda_labels": "💊",
     }
     source_colors = {
-        "pubmed": "#60a5fa", "preprints": "#a78bfa", "patents": "#fbbf24",
-        "clinical_trials": "#4ade80", "fda_labels": "#f87171",
+        "pubmed": "#60a5fa",
+        "preprints": "#a78bfa",
+        "patents": "#fbbf24",
+        "clinical_trials": "#4ade80",
+        "fda_labels": "#f87171",
     }
 
     # Stats
@@ -49,9 +61,9 @@ def generate_html_report(
         highlights_rows += f"""
             <div class="highlight-card">
                 <div class="highlight-rank">#{i}</div>
-                <div class="highlight-source" style="color:{color}">{icon} {src.replace('_',' ').title()}</div>
+                <div class="highlight-source" style="color:{color}">{icon} {src.replace("_", " ").title()}</div>
                 <div class="highlight-title">{title}</div>
-                <div class="highlight-year">{r.get('year','?')}</div>
+                <div class="highlight-year">{r.get("year", "?")}</div>
             </div>"""
 
     # Source breakdown cards
@@ -62,7 +74,7 @@ def generate_html_report(
         source_cards += f"""
             <div class="stat-card">
                 <div class="stat-value" style="color:{color};">{count}</div>
-                <div class="stat-label">{icon} {src.replace('_',' ').title()}</div>
+                <div class="stat-label">{icon} {src.replace("_", " ").title()}</div>
             </div>"""
 
     # Results table
@@ -93,7 +105,9 @@ def generate_html_report(
         for p in overlap_pairs:
             a = p["source_a"].replace("_", " ").title()
             b = p["source_b"].replace("_", " ").title()
-            crossref_items += f"<li>{a} ↔ {b}: <strong>{p['overlap_count']}</strong> overlapping results</li>"
+            crossref_items += (
+                f"<li>{a} ↔ {b}: <strong>{p['overlap_count']}</strong> overlapping results</li>"
+            )
         crossref_html = f"""
         <h2 class="section-title">🔗 Cross-Source Overlaps</h2>
         <div class="methodology"><ul>{crossref_items}</ul></div>"""

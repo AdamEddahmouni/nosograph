@@ -12,10 +12,13 @@ Usage:
     python miner.py --export-html         # Generate HTML report
 """
 
+from __future__ import annotations
+
 import argparse
 import os
 import sys
 import urllib.error
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, cast
 
@@ -39,9 +42,29 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-# Set by ``main()`` for ``print_summary``; declared at module level so the
-# function is safe to call standalone and mypy can type the global.
-entities_hack: dict[str, Any] = {}
+
+@dataclass(frozen=True)
+class EntityContext:
+    """Gene metadata lookup for literature summary display."""
+
+    genes: dict[str, Any]
+
+    @classmethod
+    def from_results(
+        cls,
+        entities: dict[str, Any],
+        gene_coverage: dict[str, Any],
+    ) -> EntityContext:
+        source = entities.get("genes", {})
+        return cls(
+            genes={
+                gene_id: source.get(gene_id, {"name": gene_id})
+                for gene_id in gene_coverage
+            }
+        )
+
+    def get(self, gene_id: str) -> dict[str, Any]:
+        return self.genes.get(gene_id, {"name": gene_id})
 
 try:
     from Bio import Entrez, Medline
@@ -49,9 +72,7 @@ try:
     BIOPYTHON_AVAILABLE = True
 except ImportError:
     BIOPYTHON_AVAILABLE = False
-    logger.info(
-        "⚠️  BioPython not installed. Install with: pip install biopython"
-    )
+    logger.info("⚠️  BioPython not installed. Install with: pip install biopython")
 
 # Imports follow the path bootstrap above so the module remains runnable directly.
 # ruff: noqa: E402
@@ -68,15 +89,29 @@ DATA_DIR = Path(__file__).parent / "data"
 
 def _legacy_pubmed_cache_path() -> Path:
     return DATA_DIR / "pubmed_cache.json"
-DEFAULT_EMAIL = os.environ.get("ENTREZ_EMAIL")
-if DEFAULT_EMAIL is None:
-    DEFAULT_EMAIL = "researcher@example.com"
-    logger.warning(
-        "ENTREZ_EMAIL is not set; using placeholder %s. "
-        "Set ENTREZ_EMAIL in the environment for NCBI Entrez compliance.",
-        DEFAULT_EMAIL,
-    )
-    logger.info("⚠️  ENTREZ_EMAIL not set; using placeholder. NCBI requires a real email. Set ENTREZ_EMAIL env var.")
+
+
+ENTREZ_EMAIL = os.environ.get("ENTREZ_EMAIL")
+# Backward-compatible alias for callers/tests that imported DEFAULT_EMAIL.
+DEFAULT_EMAIL = ENTREZ_EMAIL
+_PLACEHOLDER_ENTREZ_EMAIL = "researcher@example.com"
+
+
+def resolve_entrez_email(email: str | None = None, *, live: bool = True) -> str:
+    """Return a contact email for NCBI Entrez.
+
+    Live PubMed requests require ``ENTREZ_EMAIL`` (or an explicit ``email``).
+    Offline/cache-only paths may fall back to a placeholder when unset.
+    """
+    resolved = (email or ENTREZ_EMAIL or "").strip()
+    if resolved:
+        return resolved
+    if live:
+        raise ConfigurationError(
+            "ENTREZ_EMAIL is not set. Set the ENTREZ_EMAIL environment variable "
+            "for live PubMed requests (NCBI Entrez requires a contact email)."
+        )
+    return _PLACEHOLDER_ENTREZ_EMAIL
 
 # ── PubMed queries for SLE/lupus ──────────────────────────────────────────
 
@@ -136,6 +171,7 @@ def _disease_queries(disease_id: str) -> list[str]:
     """
     try:
         from med_research.diseases.base import Disease
+
         disease = Disease(disease_id)
         queries = disease.config.get("PUBMED_QUERIES") or []
     except ValueError:
@@ -223,14 +259,16 @@ def generate_candidate_queries(
             continue
 
         drug_search = " OR ".join(drug_terms)
-        query = f'{disease_term} AND ({drug_search})'
+        query = f"{disease_term} AND ({drug_search})"
         queries.append((c["id"], query, c["drug_name"]))
 
     return queries
 
 
 def search_pubmed(
-    query: str, max_results: int = 50, email: str = DEFAULT_EMAIL
+    query: str,
+    max_results: int = 50,
+    email: str | None = None,
 ) -> list[LiteratureArticle]:
     """
     Search PubMed and return list of articles with abstracts.
@@ -241,14 +279,13 @@ def search_pubmed(
         logger.info("❌ BioPython required. Install: pip install biopython")
         return []
 
-    Entrez.email = email  # type: ignore[assignment]
+    resolved_email = resolve_entrez_email(email, live=True)
+    Entrez.email = resolved_email  # type: ignore[assignment]
 
     try:
         # Step 1: Search for IDs
         def _esearch():
-            handle = Entrez.esearch(
-                db="pubmed", term=query, retmax=max_results, sort="relevance"
-            )
+            handle = Entrez.esearch(db="pubmed", term=query, retmax=max_results, sort="relevance")
             record = Entrez.read(handle)
             handle.close()
             return record
@@ -266,9 +303,7 @@ def search_pubmed(
 
         # Step 2: Fetch article details
         def _efetch():
-            handle = Entrez.efetch(
-                db="pubmed", id=id_list, rettype="medline", retmode="text"
-            )
+            handle = Entrez.efetch(db="pubmed", id=id_list, rettype="medline", retmode="text")
             records = list(Medline.parse(handle))
             handle.close()
             return records
@@ -306,7 +341,7 @@ def search_pubmed(
 def mine_literature(
     queries: list | None = None,
     max_per_query: int = 30,
-    email: str = DEFAULT_EMAIL,
+    email: str | None = None,
     use_cache: bool = True,
     targeted_candidates: bool = False,
     extract_content: bool = False,
@@ -331,27 +366,33 @@ def mine_literature(
         queries = _disease_queries(disease_id)
     if not queries:
         from med_research.diseases.coverage import module_coverage
+
         coverage = module_coverage(
             disease_id, "literature", ("genes", "drugs", "pathways", "pubmed_queries")
         )
         if not coverage.is_runnable:
-            return {
-                "coverage": coverage.to_dict(),
-                "status": "blocked",
-                "article_matches": [],
-                "stats": {
-                    "total_articles": 0,
-                    "articles_with_matches": 0,
-                    "genes_found": 0,
-                    "drugs_found": 0,
-                    "spacy_ner": "not run",
-                    "novel_entities_found": 0,
-                    "candidates_supported": 0,
-                    "queries_run": 0,
+            return (
+                {
+                    "coverage": coverage.to_dict(),
+                    "status": "blocked",
+                    "article_matches": [],
+                    "stats": {
+                        "total_articles": 0,
+                        "articles_with_matches": 0,
+                        "genes_found": 0,
+                        "drugs_found": 0,
+                        "spacy_ner": "not run",
+                        "novel_entities_found": 0,
+                        "candidates_supported": 0,
+                        "queries_run": 0,
+                    },
+                    "candidate_support": {},
+                    "gene_coverage": {},
                 },
-                "candidate_support": {},
-                "gene_coverage": {},
-            }, {}, [], None
+                {},
+                [],
+                None,
+            )
 
     # Load KG entities and candidates
     logger.info("🔄 Loading knowledge graph entities...")
@@ -387,6 +428,7 @@ def mine_literature(
         logger.info(f"   Loaded {len(all_articles)} cached articles")
         _tick(progress_callback, "PubMed query", 1, 1)
     else:
+        resolved_email = resolve_entrez_email(email, live=True)
         all_articles = []
         seen_pmids = set()
 
@@ -394,7 +436,7 @@ def mine_literature(
         for i, query in enumerate(queries, 1):
             _tick(progress_callback, "PubMed query", i, len(queries))
             logger.info(f"\n🔍 Broad query {i}/{len(queries)}: {query[:100]}...")
-            articles = search_pubmed(query, max_results=max_per_query, email=email)
+            articles = search_pubmed(query, max_results=max_per_query, email=resolved_email)
 
             new_count = 0
             for article in articles:
@@ -417,7 +459,7 @@ def mine_literature(
                     i,
                     len(candidate_queries),
                 )
-                articles = search_pubmed(query, max_results=3, email=email)
+                articles = search_pubmed(query, max_results=3, email=resolved_email)
 
                 new_count = 0
                 for article in articles:
@@ -439,10 +481,14 @@ def mine_literature(
                 # Rate limiting — 3 req/sec max without API key
                 rate_limited_sleep(0.4)
 
-            logger.info(f"   ✅ {matches_found}/{len(candidate_queries)} candidates returned articles")
+            logger.info(
+                f"   ✅ {matches_found}/{len(candidate_queries)} candidates returned articles"
+            )
 
         save_literature_articles(disease_id, all_articles, use_cache=use_cache)
-        logger.info(f"\n💾 Cached {len(all_articles)} articles (namespace=%s)", NS_LITERATURE_MINING)
+        logger.info(
+            f"\n💾 Cached {len(all_articles)} articles (namespace=%s)", NS_LITERATURE_MINING
+        )
 
     # Cross-reference
     logger.info("\n🔄 Cross-referencing against knowledge graph...")
@@ -468,6 +514,7 @@ def mine_literature(
         results["extraction_stats"] = extraction_stats
 
     from med_research.diseases.coverage import module_coverage
+
     coverage = module_coverage(
         disease_id, "literature", ("genes", "drugs", "pathways", "pubmed_queries")
     )
@@ -476,11 +523,18 @@ def mine_literature(
     return results, entities, candidates, extraction_stats
 
 
-def print_summary(results: LiteratureResults, candidates: list, entities: dict) -> None:
+def print_summary(
+    results: LiteratureResults,
+    candidates: list,
+    entities: dict,
+    entity_context: EntityContext | None = None,
+) -> None:
     """Print a summary of literature mining results."""
     stats = results["stats"]
     candidate_support = results["candidate_support"]
     gene_coverage = results["gene_coverage"]
+    if entity_context is None:
+        entity_context = EntityContext.from_results(entities, gene_coverage)
 
     logger.info("\n" + "=" * 70)
     logger.info("📚 LITERATURE MINING RESULTS")
@@ -491,7 +545,7 @@ def print_summary(results: LiteratureResults, candidates: list, entities: dict) 
     logger.info(f"  Unique genes found:          {stats['genes_found']}")
     logger.info(f"  Unique drugs found:          {stats['drugs_found']}")
     logger.info(f"  spaCy biomedical NER:        {stats.get('spacy_ner', 'not available')}")
-    if stats.get('novel_entities_found', 0) > 0:
+    if stats.get("novel_entities_found", 0) > 0:
         logger.info(f"  Novel entities (spaCy):      {stats['novel_entities_found']}")
     logger.info(
         f"  Repurposing candidates with\n"
@@ -522,20 +576,16 @@ def print_summary(results: LiteratureResults, candidates: list, entities: dict) 
         for gid, info in sorted(
             gene_coverage.items(), key=lambda x: x[1]["articles"], reverse=True
         ):
-            gene_info = entities_hack.get(gid, {"name": gid})
+            gene_info = entity_context.get(gid)
             bar = "█" * min(info["articles"], 10)
             logger.info(f"    {gene_info['name'][:40]:<42} {bar} {info['articles']}")
 
     # Top articles
-    top_articles = [
-        a for a in results["article_matches"] if a["relevance_score"] > 0
-    ][:5]
+    top_articles = [a for a in results["article_matches"] if a["relevance_score"] > 0][:5]
     if top_articles:
         logger.info("\n  📄 Top articles by relevance:")
         for i, a in enumerate(top_articles, 1):
-            logger.info(
-                f"    {i}. [{a['year']}] {a['title'][:90]}..."
-            )
+            logger.info(f"    {i}. [{a['year']}] {a['title'][:90]}...")
             logger.info(
                 f"       Score: {a['relevance_score']} | "
                 f"Genes: {a['kg_matches']['gene_count']} | "
@@ -547,43 +597,41 @@ def main():
     parser = argparse.ArgumentParser(
         description="Lupus Literature Mining Engine — PubMed search & entity extraction"
     )
+    parser.add_argument("--max", type=int, default=30, help="Max articles per query (default: 30)")
+    parser.add_argument("--query", type=str, help="Custom PubMed query (overrides defaults)")
+    parser.add_argument("--no-cache", action="store_true", help="Skip cache, re-fetch from PubMed")
     parser.add_argument(
-        "--max", type=int, default=30, help="Max articles per query (default: 30)"
+        "--email",
+        type=str,
+        default=None,
+        help="Email for NCBI Entrez (defaults to ENTREZ_EMAIL env var)",
+    )
+    parser.add_argument("--export-html", action="store_true", help="Export HTML report")
+    parser.add_argument(
+        "--targeted",
+        action="store_true",
+        help="Also run per-candidate targeted PubMed queries (39 extra queries)",
     )
     parser.add_argument(
-        "--query", type=str, help="Custom PubMed query (overrides defaults)"
+        "--extract",
+        action="store_true",
+        help="Pre-filter abstracts to only KG-relevant sentences (reduces NER tokens ~60%%)",
     )
     parser.add_argument(
-        "--no-cache", action="store_true", help="Skip cache, re-fetch from PubMed"
+        "--install-scispacy",
+        action="store_true",
+        help="Install scispacy biomedical NER model for enhanced entity extraction",
     )
-    parser.add_argument(
-        "--email", type=str, default=DEFAULT_EMAIL, help="Email for NCBI Entrez"
-    )
-    parser.add_argument(
-        "--export-html", action="store_true", help="Export HTML report"
-    )
-    parser.add_argument(
-        "--targeted", action="store_true",
-        help="Also run per-candidate targeted PubMed queries (39 extra queries)"
-    )
-    parser.add_argument(
-        "--extract", action="store_true",
-        help="Pre-filter abstracts to only KG-relevant sentences (reduces NER tokens ~60%%)"
-    )
-    parser.add_argument(
-        "--install-scispacy", action="store_true",
-        help="Install scispacy biomedical NER model for enhanced entity extraction"
-    )
-    parser.add_argument(
-        "--disease", "-d", default="sle", help="Disease ID (default: sle)"
-    )
+    parser.add_argument("--disease", "-d", default="sle", help="Disease ID (default: sle)")
     args = parser.parse_args()
 
     if args.install_scispacy:
         logger.info("Installing scispacy biomedical NER models...")
         logger.info("Run: pip install spacy scispacy")
-        logger.info("Then: pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/"
-              "releases/v0.5.4/en_ner_bc5cdr_md-0.5.4.tar.gz")
+        logger.info(
+            "Then: pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/"
+            "releases/v0.5.4/en_ner_bc5cdr_md-0.5.4.tar.gz"
+        )
         sys.exit(0)
 
     queries = [args.query] if args.query else None
@@ -599,20 +647,19 @@ def main():
         progress_callback=cli_progress,
     )
 
-    # Store entities globally for print_summary access
-    global entities_hack
-    entities_hack = {
-        gid: entities["genes"].get(gid, {"name": gid})
-        for gid in results.get("gene_coverage", {})
-    }
+    entity_context = EntityContext.from_results(
+        entities, results.get("gene_coverage", {})
+    )
 
     if results.get("status") == "blocked":
         coverage = results.get("coverage", {})
-        logger.error(f"❌ Literature analysis blocked for {args.disease}: "
-              f"{', '.join(coverage.get('missing_inputs', [])) or 'coverage contract not satisfied'}")
+        logger.error(
+            f"❌ Literature analysis blocked for {args.disease}: "
+            f"{', '.join(coverage.get('missing_inputs', [])) or 'coverage contract not satisfied'}"
+        )
         return results
 
-    print_summary(results, candidates, entities)
+    print_summary(results, candidates, entities, entity_context=entity_context)
 
     if args.export_html:
         from med_research.pipeline.literature_mining.report import generate_literature_report
@@ -638,6 +685,8 @@ def main():
 
 
 if __name__ == "__main__":
-    result = main()
-    if isinstance(result, dict) and result.get("status") == "blocked":
-        raise SystemExit(1)
+    import sys
+
+    from med_research.cli import main as cli_main
+
+    sys.exit(cli_main() or 0)

@@ -9,7 +9,7 @@ from typing_extensions import Unpack
 
 from med_research.pipeline.adapter_options import AdapterOptions
 from med_research.pipeline.base import BasePipelineModule
-from med_research.pipeline.provenance import build_provenance
+from med_research.pipeline.provenance import ProvenanceMetadata, build_provenance
 from med_research.pipeline.registry import register_module
 from med_research.pipeline.results import MlPredictionResult
 
@@ -36,9 +36,7 @@ class MlPredictorModule(BasePipelineModule[MlPredictionResult]):
         from med_research.pipeline.knowledge_graph.builder import build_graph
         from med_research.pipeline.ml_predictor.predictor import train_and_predict
 
-        coverage = module_coverage(
-            disease_id, self._COVERAGE_MODULE, self.coverage_inputs()
-        )
+        coverage = module_coverage(disease_id, self._COVERAGE_MODULE, self.coverage_inputs())
         if not coverage.is_runnable:
             return {"error": "blocked", "coverage": coverage.to_dict()}
 
@@ -65,7 +63,7 @@ class MlPredictorModule(BasePipelineModule[MlPredictionResult]):
         )
         return Path(report_path)
 
-    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
+    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> ProvenanceMetadata:
         extra: dict[str, Any] = {
             key: value
             for key, value in opts.items()

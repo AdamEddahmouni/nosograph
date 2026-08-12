@@ -46,6 +46,7 @@ last_coverage = None
 
 _DEFAULT_SIGNATURES: dict[str, dict[str, Any]] = {}
 
+
 def _get_default_signature(disease_id: str = "sle") -> dict[str, Any]:
     """Return the curated fallback expression signature for a disease.
 
@@ -57,6 +58,7 @@ def _get_default_signature(disease_id: str = "sle") -> dict[str, Any]:
     if disease_id not in _DEFAULT_SIGNATURES:
         try:
             from med_research.pipeline.gene_expression.signature import get_signature
+
             sig = get_signature(disease=disease_id, source="curated")
             coverage = sig.get("coverage", "curated")
             up = sig.get("upregulated", {})
@@ -104,7 +106,12 @@ def _normalize_signature(
     """Normalize a signature dict to {upregulated: {gene: fc}, downregulated: {gene: fc}}."""
     if signature is None:
         sig = _get_default_signature(disease_id)
-        return sig["upregulated"], sig["downregulated"], sig.get("source", ""), sig.get("num_studies_used", 0)
+        return (
+            sig["upregulated"],
+            sig["downregulated"],
+            sig.get("source", ""),
+            sig.get("num_studies_used", 0),
+        )
 
     if isinstance(next(iter(signature.get("upregulated", {}).values()), None), dict):
         up = {k: v["fold_change"] for k, v in signature.get("upregulated", {}).items()}
@@ -116,7 +123,6 @@ def _normalize_signature(
     source = signature.get("source", "")
     num_studies = signature.get("num_studies_used", 0)
     return up, down, source, num_studies
-
 
 
 def load_json(path: Path) -> dict:
@@ -135,30 +141,81 @@ def load_drugs(disease_id: str = "sle") -> dict:
 # These are well-replicated differentially expressed genes in SLE
 
 SLE_UPREGULATED = {
-    "IRF5": 2.5, "IRF7": 3.2, "STAT1": 2.8, "STAT2": 2.1,
-    "IFI44L": 4.5, "IFIT1": 3.8, "IFIT3": 3.5, "MX1": 3.0,
-    "MX2": 2.7, "OAS1": 2.9, "OAS2": 2.4, "OAS3": 2.6,
-    "ISG15": 3.3, "RSAD2": 3.1, "IFIH1": 2.2, "DDX58": 2.0,
-    "TLR7": 1.8, "TLR9": 1.6, "MYD88": 1.7, "IRAK4": 1.5,
-    "BAFF": 2.3, "TNFSF13B": 2.3, "CD40L": 1.9, "CD40LG": 1.9,
-    "TNFSF4": 1.6, "ICOS": 1.5, "CD86": 1.7, "CD80": 1.4,
-    "IL6": 2.1, "TNF": 1.8, "IL1B": 1.6, "CCL2": 2.0,
-    "CCL5": 1.9, "CXCL10": 2.8, "CXCR3": 1.7,
-    "PRDM1": 1.8, "IKZF1": 1.5, "IKZF3": 1.4,
-    "UBE2L3": 1.6, "TNFAIP3": 1.7, "TNIP1": 1.5,
-    "CASP1": 1.4, "AIM2": 1.3, "NLRC4": 1.2,
+    "IRF5": 2.5,
+    "IRF7": 3.2,
+    "STAT1": 2.8,
+    "STAT2": 2.1,
+    "IFI44L": 4.5,
+    "IFIT1": 3.8,
+    "IFIT3": 3.5,
+    "MX1": 3.0,
+    "MX2": 2.7,
+    "OAS1": 2.9,
+    "OAS2": 2.4,
+    "OAS3": 2.6,
+    "ISG15": 3.3,
+    "RSAD2": 3.1,
+    "IFIH1": 2.2,
+    "DDX58": 2.0,
+    "TLR7": 1.8,
+    "TLR9": 1.6,
+    "MYD88": 1.7,
+    "IRAK4": 1.5,
+    "BAFF": 2.3,
+    "TNFSF13B": 2.3,
+    "CD40L": 1.9,
+    "CD40LG": 1.9,
+    "TNFSF4": 1.6,
+    "ICOS": 1.5,
+    "CD86": 1.7,
+    "CD80": 1.4,
+    "IL6": 2.1,
+    "TNF": 1.8,
+    "IL1B": 1.6,
+    "CCL2": 2.0,
+    "CCL5": 1.9,
+    "CXCL10": 2.8,
+    "CXCR3": 1.7,
+    "PRDM1": 1.8,
+    "IKZF1": 1.5,
+    "IKZF3": 1.4,
+    "UBE2L3": 1.6,
+    "TNFAIP3": 1.7,
+    "TNIP1": 1.5,
+    "CASP1": 1.4,
+    "AIM2": 1.3,
+    "NLRC4": 1.2,
 }
 
 SLE_DOWNREGULATED = {
-    "C1QA": 3.5, "C1QB": 3.2, "C1QC": 3.0, "C2": 2.8,
-    "C4A": 3.3, "C4B": 2.9, "ITGAM": 2.2, "FCGR2A": 2.0,
-    "FCGR3A": 2.1, "CD32": 2.0, "CD16A": 2.1,
-    "ATG5": 1.8, "ATG7": 1.5, "BECN1": 1.4,
-    "FOXP3": 2.2, "CTLA4": 1.9, "IL2RA": 1.7,
-    "TGFB1": 1.8, "IL10": 1.6, "CD25": 1.7,
-    "DNASE1": 2.5, "DNASE1L3": 2.8, "TREX1": 2.0,
-    "SAMHD1": 1.6, "ACP5": 1.4,
-    "ELMO1": 1.7, "MERTK": 1.5, "GAS6": 1.4,
+    "C1QA": 3.5,
+    "C1QB": 3.2,
+    "C1QC": 3.0,
+    "C2": 2.8,
+    "C4A": 3.3,
+    "C4B": 2.9,
+    "ITGAM": 2.2,
+    "FCGR2A": 2.0,
+    "FCGR3A": 2.1,
+    "CD32": 2.0,
+    "CD16A": 2.1,
+    "ATG5": 1.8,
+    "ATG7": 1.5,
+    "BECN1": 1.4,
+    "FOXP3": 2.2,
+    "CTLA4": 1.9,
+    "IL2RA": 1.7,
+    "TGFB1": 1.8,
+    "IL10": 1.6,
+    "CD25": 1.7,
+    "DNASE1": 2.5,
+    "DNASE1L3": 2.8,
+    "TREX1": 2.0,
+    "SAMHD1": 1.6,
+    "ACP5": 1.4,
+    "ELMO1": 1.7,
+    "MERTK": 1.5,
+    "GAS6": 1.4,
 }
 
 # ── Drug → Target Gene(s) Mapping ─────────────────────────────────────────
@@ -202,8 +259,17 @@ DRUG_PATHWAY_REVERSAL = {
         "effect": "Reduces BAFF, decreasing B cell survival signals",
     },
     "anifrolumab": {
-        "downregulated_genes": ["IRF5", "IRF7", "STAT1", "IFI44L", "IFIT1", "MX1",
-                                "ISG15", "OAS1", "RSAD2"],
+        "downregulated_genes": [
+            "IRF5",
+            "IRF7",
+            "STAT1",
+            "IFI44L",
+            "IFIT1",
+            "MX1",
+            "ISG15",
+            "OAS1",
+            "RSAD2",
+        ],
         "effect": "Blocks type I IFN receptor, suppressing IFN gene signature",
     },
     "baricitinib": {
@@ -292,9 +358,8 @@ DRUG_CELL_TYPES = {
 
 # ── Scoring Functions ────────────────────────────────────────────────────
 
-def score_signature_reversal(
-    drug_id: str, signature: dict[str, Any] | None = None
-) -> float:
+
+def score_signature_reversal(drug_id: str, signature: dict[str, Any] | None = None) -> float:
     """Score how well the drug reverses the SLE expression signature.
 
     Higher score = drug mechanism directly counteracts more dysregulated genes.
@@ -337,9 +402,7 @@ def score_signature_reversal(
     return round(score, 1)
 
 
-def score_target_disease_overlap(
-    drug_id: str, signature: dict[str, Any] | None = None
-) -> float:
+def score_target_disease_overlap(drug_id: str, signature: dict[str, Any] | None = None) -> float:
     """Score based on how many drug target genes overlap with SLE-dysregulated genes.
 
     Args:
@@ -549,26 +612,31 @@ def compute_all_correlations(
         try:
             results.append(correlate_drug(drug_id, drug, drugs, signature))
         except (KeyError, TypeError, AttributeError):
-            results.append({
-                "drug_id": drug_id,
-                "drug_name": drug.get("name", drug_id),
-                "composite_score": 0.0,
-                "tier": "🟢 Tier 4 — Minimal Reversal",
-            })
+            results.append(
+                {
+                    "drug_id": drug_id,
+                    "drug_name": drug.get("name", drug_id),
+                    "composite_score": 0.0,
+                    "tier": "🟢 Tier 4 — Minimal Reversal",
+                }
+            )
 
     results.sort(key=lambda x: x["composite_score"], reverse=True)
 
     if save:
         _tick(progress_callback, "saving results", 0, 1)
         output_path = disease_output_path(DATA_DIR, "expression_correlations", disease_id)
-        write_json_atomic(output_path, {
-            "drugs": results,
-            "total_drugs": len(results),
-            "signature_upregulated": len(signature.get("upregulated", {})),
-            "signature_downregulated": len(signature.get("downregulated", {})),
-            "signature_source": sig_source,
-            "signature_studies": num_studies,
-        })
+        write_json_atomic(
+            output_path,
+            {
+                "drugs": results,
+                "total_drugs": len(results),
+                "signature_upregulated": len(signature.get("upregulated", {})),
+                "signature_downregulated": len(signature.get("downregulated", {})),
+                "signature_source": sig_source,
+                "signature_studies": num_studies,
+            },
+        )
         _tick(progress_callback, "saving results", 1, 1)
     else:
         _tick(progress_callback, "correlation complete", 1, 1)
@@ -584,9 +652,7 @@ def analyze(
     disease_id: str = "sle",
 ) -> None:
     """Print statistical summary."""
-    up_genes, down_genes, sig_source, num_studies = _normalize_signature(
-        signature, disease_id
-    )
+    up_genes, down_genes, sig_source, num_studies = _normalize_signature(signature, disease_id)
     try:
         from med_research.diseases.base import Disease
 
@@ -610,14 +676,18 @@ def analyze(
     scores = [r["composite_score"] for r in results]
     logger.info(f"\n  {len(results)} drugs scored")
     logger.info(f"  Score range: {min(scores):.2f} - {max(scores):.2f}")
-    logger.info(f"  Mean score: {sum(scores)/len(scores):.2f}")
+    logger.info(f"  Mean score: {sum(scores) / len(scores):.2f}")
 
     tier_counts: dict[str, int] = {}
     for r in results:
         tier_counts[r["tier"]] = tier_counts.get(r["tier"], 0) + 1
     logger.info("\n  Distribution by tier:")
-    for tier in ["🔴 Tier 1 — Strong Expression Reversal", "🟠 Tier 2 — Moderate Reversal",
-                  "🟡 Tier 3 — Weak Reversal", "🟢 Tier 4 — Minimal Reversal"]:
+    for tier in [
+        "🔴 Tier 1 — Strong Expression Reversal",
+        "🟠 Tier 2 — Moderate Reversal",
+        "🟡 Tier 3 — Weak Reversal",
+        "🟢 Tier 4 — Minimal Reversal",
+    ]:
         count = tier_counts.get(tier, 0)
         label = tier.split("—")[0].strip()
         logger.info(f"    {label}: {count} drugs")
@@ -649,10 +719,17 @@ def main():
     parser.add_argument("--top", type=int, default=15, help="Number of top drugs to display")
     parser.add_argument("--disease", "-d", default="sle", help="Disease ID (default: sle)")
     parser.add_argument("--export-html", action="store_true", help="Generate HTML report")
-    parser.add_argument("--geo", action="store_true",
-                        help="Use GEO-derived consensus signature (auto-fallback to curated)")
-    parser.add_argument("--tissue", type=str, default=None,
-                        help="Tissue to filter by (broad, pbmc_blood, kidney, skin)")
+    parser.add_argument(
+        "--geo",
+        action="store_true",
+        help="Use GEO-derived consensus signature (auto-fallback to curated)",
+    )
+    parser.add_argument(
+        "--tissue",
+        type=str,
+        default=None,
+        help="Tissue to filter by (broad, pbmc_blood, kidney, skin)",
+    )
     args = parser.parse_args()
 
     signature_source = "geo" if args.geo else "curated"
@@ -669,11 +746,13 @@ def main():
                 exc,
             )
 
-    results = compute_all_correlations(signature=signature,
-                                       signature_source=signature_source,
-                                       tissue=args.tissue,
-                                       disease_id=args.disease,
-                                       progress_callback=cli_progress)
+    results = compute_all_correlations(
+        signature=signature,
+        signature_source=signature_source,
+        tissue=args.tissue,
+        disease_id=args.disease,
+        progress_callback=cli_progress,
+    )
     resolved_signature = signature or _get_default_signature(args.disease)
     analyze(results, resolved_signature, disease_id=args.disease)
     print_top_correlations(results, args.top)
@@ -682,9 +761,7 @@ def main():
         from med_research.pipeline.gene_expression.report import generate_html_report
         from med_research.pipeline.provenance import build_provenance
 
-        _, _, sig_source, num_studies = _normalize_signature(
-            resolved_signature, args.disease
-        )
+        _, _, sig_source, num_studies = _normalize_signature(resolved_signature, args.disease)
         provenance = build_provenance(
             disease_id=args.disease,
             module="gene_expression",
@@ -706,4 +783,9 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+
+    from med_research.cli import main as cli_main
+
+    sys.exit(cli_main() or 0)
+

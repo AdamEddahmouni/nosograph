@@ -43,7 +43,9 @@ def generate_literature_report(
     extraction_stat_card = ""
     extraction_section = ""
     if extraction_stats:
-        token_saved = extraction_stats.get("total_tokens", 0) - extraction_stats.get("kept_tokens", 0)
+        token_saved = extraction_stats.get("total_tokens", 0) - extraction_stats.get(
+            "kept_tokens", 0
+        )
         token_pct = round(token_saved / max(extraction_stats.get("total_tokens", 1), 1) * 100)
         sent_kept = extraction_stats.get("kept_sentences", 0)
         sent_total = extraction_stats.get("total_sentences", 0)
@@ -94,9 +96,7 @@ def generate_literature_report(
 
     # ── Candidate support rows ──────────────────────────────────────────
     candidate_rows = ""
-    sorted_candidates = sorted(
-        candidate_support.items(), key=lambda x: len(x[1]), reverse=True
-    )
+    sorted_candidates = sorted(candidate_support.items(), key=lambda x: len(x[1]), reverse=True)
     for cid, articles in sorted_candidates:
         cand = next((c for c in candidates if c["id"] == cid), None)
         if not cand:
@@ -110,18 +110,16 @@ def generate_literature_report(
                 f'<a class="pmid-link" '
                 f'href="https://pubmed.ncbi.nlm.nih.gov/{a["pmid"]}" '
                 f'target="_blank" title="{escape_html(a["title"])}">'
-                f'PMID:{a["pmid"]} ({a["year"]})</a> '
+                f"PMID:{a['pmid']} ({a['year']})</a> "
             )
 
         gene_name = gene_names.get(cand.get("gene_id", ""), cand.get("gene_id", "?"))
         score = cand.get("composite_score", 0)
-        score_color = (
-            "#4ade80" if score >= 8 else "#fbbf24" if score >= 7 else "#f87171"
-        )
+        score_color = "#4ade80" if score >= 8 else "#fbbf24" if score >= 7 else "#f87171"
 
         candidate_rows += f"""
         <tr>
-            <td><strong>{escape_html(cand['drug_name'][:60])}</strong></td>
+            <td><strong>{escape_html(cand["drug_name"][:60])}</strong></td>
             <td>{gene_name}</td>
             <td><span style="color:{score_color};font-weight:700">{score:.1f}</span></td>
             <td>
@@ -135,55 +133,47 @@ def generate_literature_report(
 
     # ── Gene coverage rows ──────────────────────────────────────────────
     gene_rows = ""
-    sorted_genes = sorted(
-        gene_coverage.items(), key=lambda x: x[1]["articles"], reverse=True
-    )
+    sorted_genes = sorted(gene_coverage.items(), key=lambda x: x[1]["articles"], reverse=True)
     for gid, info in sorted_genes:
         gene_info = entities["genes"].get(gid, {"name": gid, "category": ""})
         bar_width = min(info["articles"] * 12, 120)
 
         gene_rows += f"""
         <tr>
-            <td><strong>{escape_html(gene_info['name'][:50])}</strong></td>
-            <td><span class="muted">{gene_info.get('category', '')}</span></td>
+            <td><strong>{escape_html(gene_info["name"][:50])}</strong></td>
+            <td><span class="muted">{gene_info.get("category", "")}</span></td>
             <td>
                 <div class="bar-container">
                     <div class="bar-fill" style="width:{bar_width}px;background:linear-gradient(90deg,#818cf8,#c084fc)"></div>
-                    <span class="bar-label">{info['articles']}</span>
+                    <span class="bar-label">{info["articles"]}</span>
                 </div>
             </td>
         </tr>"""
 
     # ── Top articles ────────────────────────────────────────────────────
     article_rows = ""
-    top_articles = [
-        a for a in results["article_matches"] if a["relevance_score"] > 0
-    ][:20]
+    top_articles = [a for a in results["article_matches"] if a["relevance_score"] > 0][:20]
     for a in top_articles:
         kg = a["kg_matches"]
-        gene_names_list = ", ".join(
-            g["name"][:25] for g in list(kg["genes_found"].values())[:4]
-        )
-        drug_names_list = ", ".join(
-            d["name"][:30] for d in list(kg["drugs_found"].values())[:4]
-        )
+        gene_names_list = ", ".join(g["name"][:25] for g in list(kg["genes_found"].values())[:4])
+        drug_names_list = ", ".join(d["name"][:30] for d in list(kg["drugs_found"].values())[:4])
 
         article_rows += f"""
         <div class="article-card">
             <div class="article-header">
-                <span class="article-score">{a['relevance_score']}</span>
+                <span class="article-score">{a["relevance_score"]}</span>
                 <span class="article-pmid">
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/{a['pmid']}" target="_blank">
-                        PMID:{a['pmid']}
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/{a["pmid"]}" target="_blank">
+                        PMID:{a["pmid"]}
                     </a>
-                    · {a.get('year', 'N/A')} · {escape_html(a.get('journal', '')[:40])}
+                    · {a.get("year", "N/A")} · {escape_html(a.get("journal", "")[:40])}
                 </span>
             </div>
-            <h4>{escape_html(a['title'])}</h4>
-            <p class="article-abstract">{escape_html(a.get('abstract', '')[:400])}...</p>
+            <h4>{escape_html(a["title"])}</h4>
+            <p class="article-abstract">{escape_html(a.get("abstract", "")[:400])}...</p>
             <div class="article-entities">
-                {f'<span class="entity-tag gene">🧬 {gene_names_list}</span>' if gene_names_list else ''}
-                {f'<span class="entity-tag drug">💊 {drug_names_list}</span>' if drug_names_list else ''}
+                {f'<span class="entity-tag gene">🧬 {gene_names_list}</span>' if gene_names_list else ""}
+                {f'<span class="entity-tag drug">💊 {drug_names_list}</span>' if drug_names_list else ""}
             </div>
         </div>"""
 
@@ -204,15 +194,15 @@ def generate_literature_report(
         if not novel_section:
             novel_section = (
                 '<p class="muted" style="padding:20px;text-align:center;">'
-                'No novel entities found beyond the knowledge graph dictionary. '
-                'Install spaCy + scispacy to enable biomedical NER.</p>'
+                "No novel entities found beyond the knowledge graph dictionary. "
+                "Install spaCy + scispacy to enable biomedical NER.</p>"
             )
     else:
         novel_section = (
             '<p class="muted" style="padding:20px;text-align:center;">'
-            'spaCy biomedical NER is not active. '
-            'Install <code>spacy</code> + <code>scispacy</code> to discover '
-            'novel drugs, genes, and diseases from the literature.</p>'
+            "spaCy biomedical NER is not active. "
+            "Install <code>spacy</code> + <code>scispacy</code> to discover "
+            "novel drugs, genes, and diseases from the literature.</p>"
         )
 
     # ── Additional entity type sections ────────────────────────────────
@@ -237,7 +227,6 @@ def generate_literature_report(
         <h2 class="section-title">🏥 Clinical Trial Outcomes ({clinical_count} mentions)</h2>
         <div class="novel-tags">{tags}</div>
         <br>"""
-
 
     statistics_entities = results.get("statistics_entities", [])
     statistics_count = stats.get("statistics_mentions", len(statistics_entities))
@@ -267,14 +256,14 @@ def generate_literature_report(
     html = render_report(
         "reports/literature_mining.html",
         {
-            "ctx_0": stats['total_articles'],
-            "ctx_1": len(entities['genes']),
-            "ctx_2": len(entities['drugs']),
-            "ctx_3": datetime.now().strftime('%B %d, %Y at %H:%M'),
-            "ctx_4": stats['articles_with_matches'],
-            "ctx_5": stats['genes_found'],
-            "ctx_6": stats['drugs_found'],
-            "ctx_7": stats['candidates_supported'],
+            "ctx_0": stats["total_articles"],
+            "ctx_1": len(entities["genes"]),
+            "ctx_2": len(entities["drugs"]),
+            "ctx_3": datetime.now().strftime("%B %d, %Y at %H:%M"),
+            "ctx_4": stats["articles_with_matches"],
+            "ctx_5": stats["genes_found"],
+            "ctx_6": stats["drugs_found"],
+            "ctx_7": stats["candidates_supported"],
             "ctx_8": novel_count,
             "ctx_9": variant_count,
             "ctx_10": clinical_count,
@@ -308,8 +297,5 @@ def escape_html(text: str) -> str:
     if not text:
         return ""
     return (
-        text.replace("&", "&amp;")
-        .replace("<", "&lt;")
-        .replace(">", "&gt;")
-        .replace('"', "&quot;")
+        text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
     )

@@ -48,6 +48,7 @@ if sys.platform == "win32":
 
 try:
     import requests
+
     REQUESTS_AVAILABLE = True
 except ImportError:
     REQUESTS_AVAILABLE = False
@@ -94,7 +95,12 @@ MOA_KEYWORDS = {
     "Complement": ["complement", "c5", "c5a", "factor b", "factor d"],
     "Cytokine / Chemokine": ["cytokine", "il-", "interleukin", "tnf", "chemokine", "il6", "il17"],
     "Plasma Cell / Proteasome": ["plasma cell", "proteasome", "bcma", "bortezomib"],
-    "Immunomodulator": ["immunomodulator", "immunomodulatory", "hydroxychloroquine", "antimalarial"],
+    "Immunomodulator": [
+        "immunomodulator",
+        "immunomodulatory",
+        "hydroxychloroquine",
+        "antimalarial",
+    ],
     "Anti-inflammatory": ["anti-inflammatory", "corticosteroid", "steroid", "prednisone"],
     "Other Targeted": [],
 }
@@ -214,7 +220,9 @@ def parse_trial(study: dict) -> TrialRecord:
     sponsor_class = lead_sponsor.get("class", "UNKNOWN")
 
     # Dates
-    start_date = proto.get("startDateStruct", {}).get("date", "") if "startDateStruct" in proto else ""
+    start_date = (
+        proto.get("startDateStruct", {}).get("date", "") if "startDateStruct" in proto else ""
+    )
     completion_date = ""
     if "primaryCompletionDateStruct" in proto:
         completion_date = proto["primaryCompletionDateStruct"].get("date", "")
@@ -259,8 +267,7 @@ def _primary_phase(phases: list) -> str:
 
 def categorize_moa(trial: dict) -> str:
     """Categorize a trial's mechanism of action from its interventions and title."""
-    text = (trial.get("title", "") + " " +
-            " ".join(trial.get("interventions", []))).lower()
+    text = (trial.get("title", "") + " " + " ".join(trial.get("interventions", []))).lower()
 
     for category, keywords in MOA_KEYWORDS.items():
         if category == "Other Targeted":
@@ -330,39 +337,44 @@ def cross_reference_trials(trials: list, kg_entities: dict) -> list[TrialRecord]
         matched_genes: list[dict[str, Any]] = []
         matched_drugs: list[dict[str, Any]] = []
 
-        text = (trial.get("title", "") + " " +
-                " ".join(trial.get("interventions", [])) + " " +
-                trial.get("summary", "")).lower()
+        text = (
+            trial.get("title", "")
+            + " "
+            + " ".join(trial.get("interventions", []))
+            + " "
+            + trial.get("summary", "")
+        ).lower()
 
         # Match against KG genes
         for gene_id, gene in kg_entities["genes"].items():
             gene_name = gene["name"].lower()
             # Match by gene ID (e.g. "BTK", "JAK1") or partial name
             if (
-                (gene_id.lower() in text or any(
-                    part.lower() in text for part in gene_name.split() if len(part) > 4
-                ))
-                and gene_id not in [g["gene_id"] for g in matched_genes]
-            ):
-                    matched_genes.append({
+                gene_id.lower() in text
+                or any(part.lower() in text for part in gene_name.split() if len(part) > 4)
+            ) and gene_id not in [g["gene_id"] for g in matched_genes]:
+                matched_genes.append(
+                    {
                         "gene_id": gene_id,
                         "gene_name": gene["name"],
                         "category": gene.get("category", ""),
-                    })
+                    }
+                )
 
         # Match against KG drugs
         for drug_id, drug in kg_entities["drugs"].items():
             drug_name = drug["name"].lower().split("(")[0].strip()
-            if (
-                (drug_name in text or drug_id in text)
-                and drug_id not in [d["drug_id"] for d in matched_drugs]
-            ):
-                    matched_drugs.append({
+            if (drug_name in text or drug_id in text) and drug_id not in [
+                d["drug_id"] for d in matched_drugs
+            ]:
+                matched_drugs.append(
+                    {
                         "drug_id": drug_id,
                         "drug_name": drug["name"],
                         "target": drug.get("target", ""),
                         "category": drug.get("category", ""),
-                    })
+                    }
+                )
 
         trial["kg_matches"] = {
             "genes": matched_genes,
@@ -391,9 +403,7 @@ def track_trials(
     from med_research.diseases.coverage import module_coverage
 
     global last_coverage
-    coverage = module_coverage(
-        disease_id, "clinical_trials", ("genes", "drugs", "trial_query")
-    )
+    coverage = module_coverage(disease_id, "clinical_trials", ("genes", "drugs", "trial_query"))
     last_coverage = coverage
     if not coverage.is_runnable:
         logger.error(
@@ -421,6 +431,7 @@ def track_trials(
 
     # Cache is namespaced by disease and query so results cannot bleed across KGs.
     import hashlib
+
     query_key = hashlib.sha256(f"{disease_id}|{query}".encode()).hexdigest()[:12]
     cache_lookup_key = f"{disease_id}|||{query_key}"
 
@@ -533,17 +544,19 @@ def _build_crossref_summary(trials: list) -> dict:
     for t in trials:
         kg = t.get("kg_matches", {})
         if kg.get("has_match"):
-            trials_with_matches.append({
-                "nct_id": t["nct_id"],
-                "title": t["title"][:100],
-                "phase": t["phase_label"],
-                "status": t["status"],
-                "gene_count": kg["gene_count"],
-                "drug_count": kg["drug_count"],
-                "genes": [g["gene_id"] for g in kg.get("genes", [])],
-                "drugs": [d["drug_id"] for d in kg.get("drugs", [])],
-                "moa": t.get("moa_category", ""),
-            })
+            trials_with_matches.append(
+                {
+                    "nct_id": t["nct_id"],
+                    "title": t["title"][:100],
+                    "phase": t["phase_label"],
+                    "status": t["status"],
+                    "gene_count": kg["gene_count"],
+                    "drug_count": kg["drug_count"],
+                    "genes": [g["gene_id"] for g in kg.get("genes", [])],
+                    "drugs": [d["drug_id"] for d in kg.get("drugs", [])],
+                    "moa": t.get("moa_category", ""),
+                }
+            )
         for g in kg.get("genes", []):
             gene_hits[g["gene_id"]] += 1
         for d in kg.get("drugs", []):
@@ -570,10 +583,10 @@ def print_summary(stats: dict, kg_crossref: dict) -> None:
 
     # Phases
     logger.info("\n  📊 Phase distribution:")
-    for phase, count in sorted(stats["phases"].items(),
-                                key=lambda x: PHASE_ORDER.get(
-                                    {v: k for k, v in PHASE_LABELS.items()}.get(x[0], ""), -1
-                                )):
+    for phase, count in sorted(
+        stats["phases"].items(),
+        key=lambda x: PHASE_ORDER.get({v: k for k, v in PHASE_LABELS.items()}.get(x[0], ""), -1),
+    ):
         bar_width = int(count / max(stats["phases"].values()) * 30) if stats["phases"] else 0
         logger.info(f"    {phase:<16} {'█' * bar_width} {count}")
 
@@ -610,22 +623,26 @@ def main():
         description="Lupus Clinical Trial Tracker — ClinicalTrials.gov analysis"
     )
     parser.add_argument(
-        "--max", type=int, default=100,
+        "--max",
+        type=int,
+        default=100,
         help="Max trials to fetch (default: 100)",
     )
     parser.add_argument(
-        "--query", type=str, default="",
+        "--query",
+        type=str,
+        default="",
         help="Query for ClinicalTrials.gov (default: disease config query)",
     )
+    parser.add_argument("--disease", "-d", default="sle", help="Disease ID (default: sle)")
     parser.add_argument(
-        "--disease", "-d", default="sle", help="Disease ID (default: sle)"
-    )
-    parser.add_argument(
-        "--no-cache", action="store_true",
+        "--no-cache",
+        action="store_true",
         help="Skip cache, re-fetch from ClinicalTrials.gov",
     )
     parser.add_argument(
-        "--export-html", action="store_true",
+        "--export-html",
+        action="store_true",
         help="Generate HTML report",
     )
     args = parser.parse_args()
@@ -671,4 +688,9 @@ def main():
 
 
 if __name__ == "__main__":
-    results = main()
+    import sys
+
+    from med_research.cli import main as cli_main
+
+    sys.exit(cli_main() or 0)
+

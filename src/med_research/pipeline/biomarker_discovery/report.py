@@ -10,7 +10,13 @@ from med_research.pipeline.reporting import disease_context, render_report
 def escape_html(value):
     if value is None:
         return ""
-    return str(value).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
+    return (
+        str(value)
+        .replace("&", "&amp;")
+        .replace("<", "&lt;")
+        .replace(">", "&gt;")
+        .replace('"', "&quot;")
+    )
 
 
 def generate_html_report(
@@ -31,16 +37,18 @@ def generate_html_report(
     # Radar chart top-5
     top5_items = []
     for r in scored[:5]:
-        top5_items.append({
-            "name": r.get("gene_name", "")[:25],
-            "scores": [
-                r.get("cross_module_consistency", 0),
-                r.get("expression_predictiveness", 0),
-                r.get("cart_alignment", 0),
-                r.get("druggability", 0),
-                r.get("biomarker_novelty", 0),
-            ],
-        })
+        top5_items.append(
+            {
+                "name": r.get("gene_name", "")[:25],
+                "scores": [
+                    r.get("cross_module_consistency", 0),
+                    r.get("expression_predictiveness", 0),
+                    r.get("cart_alignment", 0),
+                    r.get("druggability", 0),
+                    r.get("biomarker_novelty", 0),
+                ],
+            }
+        )
     top5_json = json.dumps(top5_items)
 
     # Highlights
@@ -49,9 +57,9 @@ def generate_html_report(
         highlights_rows += f"""
             <div class="highlight-card">
                 <div class="highlight-rank">#{i}</div>
-                <div class="highlight-drug">{escape_html(r.get('gene_name', ''))}</div>
-                <div class="highlight-score" style="color: #a78bfa;">{r['composite_score']:.1f}</div>
-                <div class="highlight-meta">Best: {escape_html(r.get('best_modality', ''))}</div>
+                <div class="highlight-drug">{escape_html(r.get("gene_name", ""))}</div>
+                <div class="highlight-score" style="color: #a78bfa;">{r["composite_score"]:.1f}</div>
+                <div class="highlight-meta">Best: {escape_html(r.get("best_modality", ""))}</div>
             </div>"""
 
     # Table
@@ -59,18 +67,19 @@ def generate_html_report(
     for i, r in enumerate(scored, 1):
         tier_icon = r["tier"].split("—")[0].strip()
         tier_color = {"🔴": "#f87171", "🟠": "#fb923c", "🟡": "#fbbf24", "🟢": "#4ade80"}.get(
-            tier_icon[0] if tier_icon else "", "#9ca3af")
+            tier_icon[0] if tier_icon else "", "#9ca3af"
+        )
         table_rows += f"""
             <tr>
                 <td class="col-rank">{i}</td>
-                <td class="col-drug">{escape_html(r.get('gene_name', ''))}</td>
-                <td class="col-score" style="color:{tier_color}">{r['composite_score']:.2f}</td>
-                <td class="col-sign">{r.get('cross_module_consistency', '-')}</td>
-                <td class="col-overlap">{r.get('expression_predictiveness', '-')}</td>
-                <td class="col-cell">{r.get('cart_alignment', '-')}</td>
-                <td class="col-evid">{r.get('druggability', '-')}</td>
-                <td class="col-dir">{r.get('best_modality', '-')}</td>
-                <td class="col-tier" style="color:{tier_color}">{r['tier']}</td>
+                <td class="col-drug">{escape_html(r.get("gene_name", ""))}</td>
+                <td class="col-score" style="color:{tier_color}">{r["composite_score"]:.2f}</td>
+                <td class="col-sign">{r.get("cross_module_consistency", "-")}</td>
+                <td class="col-overlap">{r.get("expression_predictiveness", "-")}</td>
+                <td class="col-cell">{r.get("cart_alignment", "-")}</td>
+                <td class="col-evid">{r.get("druggability", "-")}</td>
+                <td class="col-dir">{r.get("best_modality", "-")}</td>
+                <td class="col-tier" style="color:{tier_color}">{r["tier"]}</td>
             </tr>"""
 
     html = render_report(

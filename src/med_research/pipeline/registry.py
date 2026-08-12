@@ -70,6 +70,10 @@ MODULE_ALIASES: dict[str, str] = {
     "evidence_monitor": "evidence_monitor",
     "workspace": "evidence_workspace",
     "evidence_workspace": "evidence_workspace",
+    "multi_omics": "multi_omics",
+    "structure_3d": "structure_3d",
+    "admet": "admet",
+    "crispr": "crispr",
 }
 
 
@@ -112,7 +116,16 @@ _REQUEST_OPTION_DEFINITIONS: dict[str, dict[str, Any]] = {
         "body_type": "array",
         "items": {
             "type": "string",
-            "enum": ["pubmed", "clinical_trials", "gwas", "fda_labels"],
+            "enum": [
+                "pubmed",
+                "clinical_trials",
+                "gwas",
+                "fda_labels",
+                "opentargets",
+                "gtex",
+                "biorxiv",
+                "chembl",
+            ],
         },
         "minItems": 1,
         "body_default": ["pubmed", "clinical_trials"],
@@ -170,20 +183,31 @@ _MODULE_REQUEST_OPTION_NAMES: dict[str, tuple[str, ...]] = {
     "drug_repurposing": ("gene_id", "untargeted_only", "save"),
     "drug_synergy": ("top_n", "save"),
     "enrichment": ("untargeted_only", "no_cache", "use_cache"),
-    "evidence_gather": (
-        "query", "sources", "max_per_source", "use_cache", "cross_reference"
-    ),
+    "evidence_gather": ("query", "sources", "max_per_source", "use_cache", "cross_reference"),
     "evidence_monitor": ("sources", "max_per_query", "diff"),
     "evidence_workspace": (
-        "question", "sources", "date_from", "date_to", "candidate_type",
-        "max_evidence", "enable_llm", "model",
+        "question",
+        "sources",
+        "date_from",
+        "date_to",
+        "candidate_type",
+        "max_evidence",
+        "enable_llm",
+        "model",
     ),
     "gene_expression": ("signature", "signature_source", "tissue", "save"),
     "gwas": ("max_studies", "use_cache", "no_cache", "resolve_snps"),
     "knowledge_graph": (),
     "literature_mining": (
-        "query", "sources", "queries", "max_articles", "targeted",
-        "extract_content", "use_cache", "no_cache", "email",
+        "query",
+        "sources",
+        "queries",
+        "max_articles",
+        "targeted",
+        "extract_content",
+        "use_cache",
+        "no_cache",
+        "email",
     ),
     "llm_extractor": ("query", "sources", "max_articles", "model", "use_cache"),
     "ml_predictor": ("top_n", "no_shap"),
@@ -217,6 +241,10 @@ def _ensure_registered() -> None:
     import med_research.pipeline.network_pharmacology.adapter  # noqa: F401
     import med_research.pipeline.semantic_search.adapter  # noqa: F401
     import med_research.pipeline.virtual_screening.adapter  # noqa: F401
+    import med_research.pipeline.multi_omics.adapter  # noqa: F401
+    import med_research.pipeline.structure_3d.adapter  # noqa: F401
+    import med_research.pipeline.admet.adapter  # noqa: F401
+    import med_research.pipeline.crispr.adapter  # noqa: F401
 
     _REGISTRATION_COMPLETE = True
 
@@ -245,9 +273,7 @@ def get_module(module_id: str) -> BasePipelineModule[Any]:
     _ensure_registered()
     if module_id not in MODULE_REGISTRY:
         registered = ", ".join(sorted(MODULE_REGISTRY)) or "none"
-        raise KeyError(
-            f"Unknown pipeline module '{module_id}'. Registered modules: {registered}"
-        )
+        raise KeyError(f"Unknown pipeline module '{module_id}'. Registered modules: {registered}")
     return MODULE_REGISTRY[module_id]()
 
 
@@ -274,9 +300,7 @@ def module_request_schema(module_id: str) -> dict[str, Any]:
 
     # A new adapter gets all public, JSON-compatible options by convention;
     # established modules narrow this to their actual request surface below.
-    names = _MODULE_REQUEST_OPTION_NAMES.get(
-        module_id, tuple(_REQUEST_OPTION_DEFINITIONS)
-    )
+    names = _MODULE_REQUEST_OPTION_NAMES.get(module_id, tuple(_REQUEST_OPTION_DEFINITIONS))
     properties = {
         name: dict(_REQUEST_OPTION_DEFINITIONS[name])
         for name in names
@@ -338,9 +362,7 @@ def module_route_metadata(module_id: str) -> dict[str, Any]:
     return {
         "cli_command": command,
         "cli_help": f"Run the {display_name} pipeline module",
-        "celery_task": _CELERY_TASK_NAME_OVERRIDES.get(
-            module_id, f"run_{module_id}"
-        ),
+        "celery_task": _CELERY_TASK_NAME_OVERRIDES.get(module_id, f"run_{module_id}"),
         "job_aliases": sorted({module_id, *module_aliases(module_id)}),
     }
 

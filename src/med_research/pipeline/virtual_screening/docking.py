@@ -55,6 +55,7 @@ def _detect_rdkit() -> bool:
         try:
             from rdkit import Chem  # noqa: F401
             from rdkit.Chem import AllChem, Descriptors  # noqa: F401
+
             _RDKIT = True
         except ImportError:
             pass
@@ -71,6 +72,7 @@ def _detect_meeko() -> bool:
                 PDBQTReceptor,  # noqa: F401
                 PDBQTWriterLegacy,
             )
+
             _MEEKO = True
         except ImportError:
             pass
@@ -83,6 +85,7 @@ def _detect_biopython() -> bool:
     if not _BIOPYTHON:
         try:
             from Bio.PDB import PDBIO, PDBParser  # noqa: F401
+
             _BIOPYTHON = True
         except ImportError:
             pass
@@ -187,9 +190,26 @@ def _clean_receptor(pdb_path: Path, cleaned_path: Path, chain: str = "A") -> boo
             def __init__(self, chain_id: str):
                 self.chain_id = chain_id
                 self._standard = {
-                    "ALA", "ARG", "ASN", "ASP", "CYS", "GLN", "GLU", "GLY", "HIS",
-                    "ILE", "LEU", "LYS", "MET", "PHE", "PRO", "SER", "THR", "TRP",
-                    "TYR", "VAL",
+                    "ALA",
+                    "ARG",
+                    "ASN",
+                    "ASP",
+                    "CYS",
+                    "GLN",
+                    "GLU",
+                    "GLY",
+                    "HIS",
+                    "ILE",
+                    "LEU",
+                    "LYS",
+                    "MET",
+                    "PHE",
+                    "PRO",
+                    "SER",
+                    "THR",
+                    "TRP",
+                    "TYR",
+                    "VAL",
                 }
 
             def accept_chain(self, chain):
@@ -261,11 +281,7 @@ def prepare_receptor(gene_id: str, config: dict, force: bool = False) -> str | N
             return None
 
     # Step 2: Clean (optional — skip if BioPython unavailable)
-    needs_clean = (
-        not cleaned_path.exists()
-        or cleaned_path.stat().st_size == 0
-        or force
-    )
+    needs_clean = not cleaned_path.exists() or cleaned_path.stat().st_size == 0 or force
     if needs_clean:
         if _detect_biopython():
             if not _clean_receptor(pdb_path, cleaned_path, chain):
@@ -276,11 +292,7 @@ def prepare_receptor(gene_id: str, config: dict, force: bool = False) -> str | N
             shutil.copy(pdb_path, cleaned_path)
 
     # Step 3: Convert to PDBQT
-    needs_conversion = (
-        not pdbqt_path.exists()
-        or pdbqt_path.stat().st_size == 0
-        or force
-    )
+    needs_conversion = not pdbqt_path.exists() or pdbqt_path.stat().st_size == 0 or force
     if needs_conversion and not _convert_receptor_to_pdbqt(cleaned_path, pdbqt_path):
         logger.info(f"   ⚠️  Meeko PDBQT conversion failed for {gene_id}")
         return None
@@ -361,7 +373,8 @@ def _smiles_to_3d_mol(smiles: str) -> Any | None:
         if status != 0:
             # Fallback: basic distance geometry
             status = AllChem.EmbedMolecule(  # type: ignore[attr-defined]
-                mol, AllChem.ETKDG()  # type: ignore[attr-defined]
+                mol,
+                AllChem.ETKDG(),  # type: ignore[attr-defined]
             )
             if status != 0:
                 return None
@@ -483,18 +496,30 @@ def run_vina_docking(
 
     cmd = [
         vina_bin,
-        "--receptor", receptor_pdbqt,
-        "--ligand", ligand_pdbqt,
-        "--out", output_pdbqt,
-        "--center_x", str(grid_center[0]),
-        "--center_y", str(grid_center[1]),
-        "--center_z", str(grid_center[2]),
-        "--size_x", str(grid_size[0]),
-        "--size_y", str(grid_size[1]),
-        "--size_z", str(grid_size[2]),
-        "--exhaustiveness", str(exhaustiveness),
-        "--num_modes", str(num_modes),
-        "--cpu", "1",  # Single-threaded — we parallelize at the Python level
+        "--receptor",
+        receptor_pdbqt,
+        "--ligand",
+        ligand_pdbqt,
+        "--out",
+        output_pdbqt,
+        "--center_x",
+        str(grid_center[0]),
+        "--center_y",
+        str(grid_center[1]),
+        "--center_z",
+        str(grid_center[2]),
+        "--size_x",
+        str(grid_size[0]),
+        "--size_y",
+        str(grid_size[1]),
+        "--size_z",
+        str(grid_size[2]),
+        "--exhaustiveness",
+        str(exhaustiveness),
+        "--num_modes",
+        str(num_modes),
+        "--cpu",
+        "1",  # Single-threaded — we parallelize at the Python level
     ]
 
     try:
@@ -642,11 +667,7 @@ class DockingEngine:
             "biopython_available": _detect_biopython(),
             "vina_binary": vina_bin,
             "vina_available": vina_bin is not None,
-            "docking_possible": (
-                _detect_rdkit()
-                and _detect_meeko()
-                and vina_bin is not None
-            ),
+            "docking_possible": (_detect_rdkit() and _detect_meeko() and vina_bin is not None),
             "config_loaded": self.config_path.exists() if not self._loaded else True,
         }
 
@@ -707,7 +728,9 @@ class DockingEngine:
             else:
                 logger.info(f"   ⚠️  {drug_id} — prep failed")
 
-        logger.info(f"   ✅ {len([v for v in results.values() if v])} prepared, {skipped} skipped (biologics)")
+        logger.info(
+            f"   ✅ {len([v for v in results.values() if v])} prepared, {skipped} skipped (biologics)"
+        )
         return results
 
     # ── Docking ─────────────────────────────────────────────────────
@@ -774,14 +797,23 @@ class DockingEngine:
             return {"error": "No ligand_paths provided"}
 
         eligible = [lid for lid in ligand_ids if ligand_paths.get(lid)]
-        logger.info(f"   🧬 Docking {len(eligible)} ligands against {gene_id} "
-              f"(grid: {grid_center}, size: {grid_size})")
+        logger.info(
+            f"   🧬 Docking {len(eligible)} ligands against {gene_id} "
+            f"(grid: {grid_center}, size: {grid_size})"
+        )
 
         if max_workers > 1 and len(eligible) > 1:
             # Build task args for module-level helper (picklable)
             tasks = [
-                (lid, ligand_paths[lid], str(rec_path), str(output_base / lid),
-                 grid_center, grid_size, exhaustiveness)
+                (
+                    lid,
+                    ligand_paths[lid],
+                    str(rec_path),
+                    str(output_base / lid),
+                    grid_center,
+                    grid_size,
+                    exhaustiveness,
+                )
                 for lid in eligible
             ]
             with ProcessPoolExecutor(max_workers=min(max_workers, len(eligible))) as executor:
@@ -795,8 +827,15 @@ class DockingEngine:
                         results[lid] = {"error": str(e), "best_score": None}
         else:
             for lid in eligible:
-                task = (lid, ligand_paths[lid], str(rec_path), str(output_base / lid),
-                        grid_center, grid_size, exhaustiveness)
+                task = (
+                    lid,
+                    ligand_paths[lid],
+                    str(rec_path),
+                    str(output_base / lid),
+                    grid_center,
+                    grid_size,
+                    exhaustiveness,
+                )
                 drug_id, vina_result = _dock_one_ligand(task)
                 results[drug_id] = vina_result
 
@@ -846,6 +885,7 @@ class DockingEngine:
         # Phase 3: Pre-score with property-based method (filter to top N)
         # Use lazy import to avoid circular dependency at module level
         import importlib
+
         vs_screening = importlib.import_module("virtual_screening.screening")
         compute_binding_estimate = vs_screening.compute_binding_estimate
         load_kg_genes_fn = vs_screening.load_kg_genes
@@ -864,7 +904,9 @@ class DockingEngine:
             scored.sort(key=lambda x: x[1], reverse=True)
             top = [lid for lid, _ in scored[:top_n_per_target]]
             top_ligands_per_target[gene_id] = top if top else ready_ligands[:top_n_per_target]
-            logger.info(f"   📊 {gene_id}: selected top {len(top_ligands_per_target[gene_id])} ligands for docking")
+            logger.info(
+                f"   📊 {gene_id}: selected top {len(top_ligands_per_target[gene_id])} ligands for docking"
+            )
 
         # Phase 4: Dock
         all_results = {}

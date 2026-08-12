@@ -76,6 +76,7 @@ def _geo_get(url: str, params: dict, timeout: int = 15) -> "requests.Response":
 
     return retry_with_backoff(_fetch, source=f"GEO GET ({url})")
 
+
 BASE_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
 
 _EXPR_FILTER = (
@@ -88,7 +89,8 @@ SLE_SEARCH_TERMS = {
     "pbmc_blood": '("systemic lupus erythematosus"[TIAB] OR "SLE"[TIAB] OR "lupus"[TIAB]) AND ("PBMC"[TIAB] OR "peripheral blood"[TIAB] OR "whole blood"[TIAB] OR "blood"[TIAB]) AND ("expression profiling"[Filter] OR "Expression profiling by array"[Filter] OR "Expression profiling by high throughput sequencing"[Filter]) AND "Homo sapiens"[Organism]',
     "kidney": '("lupus nephritis"[TIAB] OR "SLE nephritis"[TIAB]) AND ("kidney"[TIAB] OR "renal"[TIAB] OR "glomerular"[TIAB]) AND ("expression profiling"[Filter] OR "Expression profiling by array"[Filter] OR "Expression profiling by high throughput sequencing"[Filter]) AND "Homo sapiens"[Organism]',
     "skin": '("lupus"[TIAB] OR "SLE"[TIAB]) AND ("skin"[TIAB] OR "cutaneous"[TIAB] OR "dermal"[TIAB]) AND ("expression profiling"[Filter] OR "Expression profiling by array"[Filter] OR "Expression profiling by high throughput sequencing"[Filter]) AND "Homo sapiens"[Organism]',
-    "broad": '("systemic lupus erythematosus"[TIAB] OR "SLE"[TIAB] OR "lupus"[TIAB]) AND ' + _EXPR_FILTER,
+    "broad": '("systemic lupus erythematosus"[TIAB] OR "SLE"[TIAB] OR "lupus"[TIAB]) AND '
+    + _EXPR_FILTER,
 }
 
 RA_SEARCH_TERMS = {
@@ -109,8 +111,7 @@ MS_SEARCH_TERMS = {
     "lesion": (
         '("multiple sclerosis"[TIAB] OR "MS"[TIAB]) AND '
         '("brain lesion"[TIAB] OR "active lesion"[TIAB] OR "demyelinating lesion"[TIAB] '
-        'OR "white matter"[TIAB] OR "cortex"[TIAB]) AND '
-        + _EXPR_FILTER
+        'OR "white matter"[TIAB] OR "cortex"[TIAB]) AND ' + _EXPR_FILTER
     ),
     "broad": '("multiple sclerosis"[TIAB] OR "MS"[TIAB]) AND ' + _EXPR_FILTER,
 }
@@ -144,10 +145,10 @@ SS_SEARCH_TERMS = {
 SSC_SEARCH_TERMS = {
     "skin": (
         '("systemic sclerosis"[TIAB] OR "scleroderma"[TIAB] OR "SSc"[TIAB]) AND '
-        '("skin"[TIAB] OR "dermal"[TIAB] OR "fibroblast"[TIAB]) AND '
-        + _EXPR_FILTER
+        '("skin"[TIAB] OR "dermal"[TIAB] OR "fibroblast"[TIAB]) AND ' + _EXPR_FILTER
     ),
-    "broad": '("systemic sclerosis"[TIAB] OR "scleroderma"[TIAB] OR "SSc"[TIAB]) AND ' + _EXPR_FILTER,
+    "broad": '("systemic sclerosis"[TIAB] OR "scleroderma"[TIAB] OR "SSc"[TIAB]) AND '
+    + _EXPR_FILTER,
 }
 
 T1D_SEARCH_TERMS = {
@@ -158,10 +159,14 @@ T1D_SEARCH_TERMS = {
     ),
     "islet": (
         '("type 1 diabetes"[TIAB] OR "T1D"[TIAB] OR "type I diabetes"[TIAB]) AND '
-        '("pancreatic islet"[TIAB] OR "beta cell"[TIAB] OR "islet"[TIAB]) AND '
-        + _EXPR_FILTER
+        '("pancreatic islet"[TIAB] OR "beta cell"[TIAB] OR "islet"[TIAB]) AND ' + _EXPR_FILTER
     ),
-    "broad": '("type 1 diabetes"[TIAB] OR "T1D"[TIAB] OR "type I diabetes"[TIAB]) AND ' + _EXPR_FILTER,
+    "broad": '("type 1 diabetes"[TIAB] OR "T1D"[TIAB] OR "type I diabetes"[TIAB]) AND '
+    + _EXPR_FILTER,
+}
+
+AD_SEARCH_TERMS = {
+    "broad": '("alzheimer disease"[TIAB] OR "Alzheimer"[TIAB] OR "AD"[TIAB]) AND ' + _EXPR_FILTER,
 }
 
 DISEASE_SEARCH_TERMS: dict[str, dict[str, str]] = {
@@ -172,9 +177,23 @@ DISEASE_SEARCH_TERMS: dict[str, dict[str, str]] = {
     "ss": SS_SEARCH_TERMS,
     "ssc": SSC_SEARCH_TERMS,
     "t1d": T1D_SEARCH_TERMS,
+    "ad": AD_SEARCH_TERMS,
 }
 
-CURATED_CONSENSUS_DISEASES = frozenset({"sle", "ra", "ibd", "ms", "ss", "ssc", "t1d"})
+CURATED_CONSENSUS_DISEASES = frozenset({"sle", "ra", "ibd", "ms", "ss", "ssc", "t1d", "ad"})
+
+
+def _proxy_consensus_diseases() -> frozenset[str]:
+    """L2 proxy tier diseases registered at runtime by expression_proxy."""
+    from med_research.diseases.expression_proxy import PROXY_CONSENSUS_DISEASES
+
+    return frozenset(PROXY_CONSENSUS_DISEASES)
+
+
+def _proxy_consensus_genes() -> dict[str, dict[str, dict]]:
+    from med_research.diseases.expression_proxy import PROXY_CONSENSUS_GENES
+
+    return PROXY_CONSENSUS_GENES
 
 SLE_CONSENSUS_GENES = {
     "upregulated": {
@@ -436,6 +455,24 @@ T1D_CONSENSUS_GENES = {
     },
 }
 
+AD_CONSENSUS_GENES = {
+    "upregulated": {
+        "APP": {"fold_change": 2.4, "confidence": 0.95},
+        "MAPT": {"fold_change": 2.2, "confidence": 0.94},
+        "BACE1": {"fold_change": 2.1, "confidence": 0.92},
+        "TREM2": {"fold_change": 2.6, "confidence": 0.96},
+        "CD33": {"fold_change": 2.0, "confidence": 0.90},
+        "GFAP": {"fold_change": 3.2, "confidence": 0.97},
+        "AIF1": {"fold_change": 2.5, "confidence": 0.93},
+    },
+    "downregulated": {
+        "APOE": {"fold_change": 1.9, "confidence": 0.88},
+        "PICALM": {"fold_change": 1.8, "confidence": 0.86},
+        "BIN1": {"fold_change": 1.7, "confidence": 0.85},
+        "SORL1": {"fold_change": 1.9, "confidence": 0.87},
+    },
+}
+
 DISEASE_CONSENSUS_GENES: dict[str, dict[str, dict]] = {
     "sle": SLE_CONSENSUS_GENES,
     "ra": RA_CONSENSUS_GENES,
@@ -444,15 +481,38 @@ DISEASE_CONSENSUS_GENES: dict[str, dict[str, dict]] = {
     "ss": SS_CONSENSUS_GENES,
     "ssc": SSC_CONSENSUS_GENES,
     "t1d": T1D_CONSENSUS_GENES,
+    "ad": AD_CONSENSUS_GENES,
 }
 
 DISEASE_TISSUE_SPECIFIC_GENES: dict[str, dict[str, dict[str, list[str]]]] = {
     "sle": {
         "pbmc_blood": {
-            "upregulated": ["IRF5", "IRF7", "STAT1", "IFI44L", "IFIT1", "MX1", "ISG15",
-                            "OAS1", "RSAD2", "TLR7", "CXCL10", "BAFF", "CD86"],
-            "downregulated": ["C1QA", "ITGAM", "FOXP3", "CTLA4", "DNASE1L3", "TREX1",
-                              "IL2RA", "ATG5", "IL10"],
+            "upregulated": [
+                "IRF5",
+                "IRF7",
+                "STAT1",
+                "IFI44L",
+                "IFIT1",
+                "MX1",
+                "ISG15",
+                "OAS1",
+                "RSAD2",
+                "TLR7",
+                "CXCL10",
+                "BAFF",
+                "CD86",
+            ],
+            "downregulated": [
+                "C1QA",
+                "ITGAM",
+                "FOXP3",
+                "CTLA4",
+                "DNASE1L3",
+                "TREX1",
+                "IL2RA",
+                "ATG5",
+                "IL10",
+            ],
         },
         "kidney": {
             "upregulated": ["CCL2", "CCL5", "TNF", "IL6", "STAT1", "IKZF1", "PRDM1"],
@@ -465,8 +525,20 @@ DISEASE_TISSUE_SPECIFIC_GENES: dict[str, dict[str, dict[str, list[str]]]] = {
     },
     "ms": {
         "pbmc_blood": {
-            "upregulated": ["IL7R", "CD6", "CD58", "STAT3", "STAT1", "IFNG", "TNF",
-                            "IL17A", "CCL2", "CXCL10", "CD40", "HLA-DRB1"],
+            "upregulated": [
+                "IL7R",
+                "CD6",
+                "CD58",
+                "STAT3",
+                "STAT1",
+                "IFNG",
+                "TNF",
+                "IL17A",
+                "CCL2",
+                "CXCL10",
+                "CD40",
+                "HLA-DRB1",
+            ],
             "downregulated": ["IL2RA"],
         },
         "lesion": {
@@ -476,34 +548,90 @@ DISEASE_TISSUE_SPECIFIC_GENES: dict[str, dict[str, dict[str, list[str]]]] = {
     },
     "ss": {
         "pbmc_blood": {
-            "upregulated": ["IRF5", "STAT4", "TNFSF13B", "CXCL13", "STAT1", "IFI44L",
-                            "IFIT1", "MX1", "ISG15", "BAFF"],
+            "upregulated": [
+                "IRF5",
+                "STAT4",
+                "TNFSF13B",
+                "CXCL13",
+                "STAT1",
+                "IFI44L",
+                "IFIT1",
+                "MX1",
+                "ISG15",
+                "BAFF",
+            ],
             "downregulated": ["FOXP3", "IL10"],
         },
         "salivary": {
-            "upregulated": ["IRF5", "STAT1", "IFI44L", "IFIT1", "CXCL13", "TNFSF13B",
-                            "CCL19", "CXCL9"],
+            "upregulated": [
+                "IRF5",
+                "STAT1",
+                "IFI44L",
+                "IFIT1",
+                "CXCL13",
+                "TNFSF13B",
+                "CCL19",
+                "CXCL9",
+            ],
             "downregulated": ["AQP5", "LTF", "HTN3", "STATH", "PRB4", "MUC7"],
         },
     },
     "ssc": {
         "skin": {
-            "upregulated": ["TGFB1", "COL1A1", "COL3A1", "ACTA2", "CTGF", "SPP1",
-                            "POSTN", "FN1", "THBS1", "PDGFRB"],
+            "upregulated": [
+                "TGFB1",
+                "COL1A1",
+                "COL3A1",
+                "ACTA2",
+                "CTGF",
+                "SPP1",
+                "POSTN",
+                "FN1",
+                "THBS1",
+                "PDGFRB",
+            ],
             "downregulated": ["PPARG", "FLI1", "MMP1", "MMP3", "ADAMTS1"],
         },
     },
     "t1d": {
         "pbmc_blood": {
-            "upregulated": ["HLA-DQB1", "PTPN22", "IL2RA", "CTLA4", "IFNG", "IL1B",
-                            "CXCL10", "TNF", "STAT1", "HLA-DRB1"],
+            "upregulated": [
+                "HLA-DQB1",
+                "PTPN22",
+                "IL2RA",
+                "CTLA4",
+                "IFNG",
+                "IL1B",
+                "CXCL10",
+                "TNF",
+                "STAT1",
+                "HLA-DRB1",
+            ],
             "downregulated": ["FOXP3", "IL10"],
         },
         "islet": {
-            "upregulated": ["IFNG", "IL1B", "CXCL10", "TNF", "STAT1", "GBP1", "IDO1",
-                            "GZMB", "PRF1"],
-            "downregulated": ["PDX1", "NKX6-1", "MAFA", "IAPP", "SLC2A2", "GCK",
-                              "PCSK1", "CHGA", "INS"],
+            "upregulated": [
+                "IFNG",
+                "IL1B",
+                "CXCL10",
+                "TNF",
+                "STAT1",
+                "GBP1",
+                "IDO1",
+                "GZMB",
+                "PRF1",
+            ],
+            "downregulated": [
+                "PDX1",
+                "NKX6-1",
+                "MAFA",
+                "IAPP",
+                "SLC2A2",
+                "GCK",
+                "PCSK1",
+                "CHGA",
+                "INS",
+            ],
         },
     },
 }
@@ -538,8 +666,9 @@ def _resolve_search_term(disease: str, category: str) -> str:
     return terms.get("broad", next(iter(terms.values())))
 
 
-def search_geo_datasets(disease: str = "sle", category: str = "broad",
-                        max_results: int = 30, no_cache: bool = False) -> list:
+def search_geo_datasets(
+    disease: str = "sle", category: str = "broad", max_results: int = 30, no_cache: bool = False
+) -> list:
     """Search GEO for expression datasets related to a disease."""
     use_cache = not no_cache
     search_key = f"{disease}_{category}_search"
@@ -553,7 +682,12 @@ def search_geo_datasets(disease: str = "sle", category: str = "broad",
 
     search_term = _resolve_search_term(disease, category)
 
-    params: dict[str, str | int] = {"db": "gds", "term": search_term, "retmax": max_results, "retmode": "json"}
+    params: dict[str, str | int] = {
+        "db": "gds",
+        "term": search_term,
+        "retmax": max_results,
+        "retmode": "json",
+    }
     try:
         resp = _geo_get(f"{BASE_URL}/esearch.fcgi", params=params)
         id_list = resp.json().get("esearchresult", {}).get("idlist", [])
@@ -588,19 +722,27 @@ def search_geo_datasets(disease: str = "sle", category: str = "broad",
             if isinstance(gpl_list, list):
                 platforms = "; ".join([str(p) for p in gpl_list])
 
-            studies.append({
-                "accession": gse,
-                "gds_id": uid,
-                "title": title,
-                "summary": summary[:500] if summary else "",
-                "platform": platforms,
-                "gds_type": gds_type,
-                "samples": int(sample_count) if sample_count else 0,
-                "pubmed_ids": pubmed_ids if isinstance(pubmed_ids, list) else [],
-                "organism": organism,
-                "tissue_category": category,
-            })
-    except (requests.exceptions.RequestException, ExternalAPIError, json.JSONDecodeError, KeyError, TypeError) as e:
+            studies.append(
+                {
+                    "accession": gse,
+                    "gds_id": uid,
+                    "title": title,
+                    "summary": summary[:500] if summary else "",
+                    "platform": platforms,
+                    "gds_type": gds_type,
+                    "samples": int(sample_count) if sample_count else 0,
+                    "pubmed_ids": pubmed_ids if isinstance(pubmed_ids, list) else [],
+                    "organism": organism,
+                    "tissue_category": category,
+                }
+            )
+    except (
+        requests.exceptions.RequestException,
+        ExternalAPIError,
+        json.JSONDecodeError,
+        KeyError,
+        TypeError,
+    ) as e:
         err = classify_api_error(e, "GEO summary fetch")
         logger.info(f"  [GEO] Summary failed: {err}")
         return []
@@ -671,7 +813,13 @@ def get_study_metadata(accession: str, use_cache: bool = True) -> Optional[dict]
 
         _set_geo_cached(study_key, metadata, use_cache=True)
         return metadata
-    except (requests.exceptions.RequestException, ExternalAPIError, json.JSONDecodeError, KeyError, TypeError) as e:
+    except (
+        requests.exceptions.RequestException,
+        ExternalAPIError,
+        json.JSONDecodeError,
+        KeyError,
+        TypeError,
+    ) as e:
         err = classify_api_error(e, f"GEO study summary for {accession}")
         logger.info(f"  [GEO] Study summary failed for {accession}: {err}")
         return None
@@ -696,15 +844,13 @@ def fetch_expression_data(accession: str) -> dict:
         "status": "not_implemented",
         "path": None,
         "coverage": "download_not_implemented",
-        "message": (
-            "GEO matrix download is not implemented; only pre-cached files are available."
-        ),
+        "message": ("GEO matrix download is not implemented; only pre-cached files are available."),
     }
 
 
-def build_consensus_signature(studies: list, disease: str = "sle",
-                              min_occurrence: int = 2,
-                              tissue: Optional[str] = None) -> dict:
+def build_consensus_signature(
+    studies: list, disease: str = "sle", min_occurrence: int = 2, tissue: Optional[str] = None
+) -> dict:
     """Build a consensus up/downregulated gene list across multiple GEO studies.
 
     Uses curated per-disease consensus gene patterns for all seven disease modules.
@@ -735,6 +881,44 @@ def build_consensus_signature(studies: list, disease: str = "sle",
             "study_ids": [],
         }
 
+    proxy_diseases = _proxy_consensus_diseases()
+    proxy_genes = _proxy_consensus_genes()
+
+    if disease_key in proxy_diseases and disease_key in proxy_genes:
+        consensus = proxy_genes[disease_key]
+        up_genes = consensus.get("upregulated", {})
+        down_genes = consensus.get("downregulated", {})
+        confidence_scale = min(1.0, num_studies / 20.0) if num_studies else 0.5
+        up_scaled = {
+            gene: {
+                "fold_change": info["fold_change"],
+                "confidence": round(min(0.85, info["confidence"] * confidence_scale), 2),
+            }
+            for gene, info in up_genes.items()
+            if info.get("confidence", 0) >= 0.5
+        }
+        down_scaled = {
+            gene: {
+                "fold_change": info["fold_change"],
+                "confidence": round(min(0.75, info["confidence"] * confidence_scale), 2),
+            }
+            for gene, info in down_genes.items()
+            if info.get("confidence", 0) >= 0.5
+        }
+        return {
+            "source": "ot_genetics_proxy",
+            "num_studies_used": num_studies,
+            "tissue_category": tissue or "broad",
+            "disease": disease_key,
+            "coverage": "limited_coverage",
+            "upregulated": up_scaled,
+            "downregulated": down_scaled,
+            "study_ids": [s.get("accession", "") for s in studies[:min_occurrence]],
+            "note": (
+                "Expression uses Open Targets genetics proxy; not literature-curated GEO consensus."
+            ),
+        }
+
     if disease_key not in CURATED_CONSENSUS_DISEASES:
         study_ids = [s.get("accession", "") for s in studies[:min_occurrence]]
         return {
@@ -760,10 +944,10 @@ def build_consensus_signature(studies: list, disease: str = "sle",
         disease_tissues = DISEASE_TISSUE_SPECIFIC_GENES.get(disease_key, {})
         if tissue in disease_tissues:
             tissue_filter = disease_tissues[tissue]
-            up_genes = {k: v for k, v in up_genes.items()
-                        if k in tissue_filter["upregulated"]}
-            down_genes = {k: v for k, v in down_genes.items()
-                          if k in tissue_filter["downregulated"]}
+            up_genes = {k: v for k, v in up_genes.items() if k in tissue_filter["upregulated"]}
+            down_genes = {
+                k: v for k, v in down_genes.items() if k in tissue_filter["downregulated"]
+            }
 
     confidence_scale = min(1.0, num_studies / 20.0)
     up_scaled = {}
@@ -796,8 +980,9 @@ def build_consensus_signature(studies: list, disease: str = "sle",
     }
 
 
-def get_expression_signature(disease: str = "sle", tissue: Optional[str] = None,
-                             min_studies: int = 2) -> dict:
+def get_expression_signature(
+    disease: str = "sle", tissue: Optional[str] = None, min_studies: int = 2
+) -> dict:
     """Get a GEO-derived expression signature.
 
     Searches GEO for disease-specific datasets, builds a consensus signature,
@@ -832,6 +1017,8 @@ def get_expression_signature(disease: str = "sle", tissue: Optional[str] = None,
         _set_geo_cached(signature_key, signature, use_cache=True)
         return signature
 
-    fallback = build_consensus_signature([{"accession": "GEO_FALLBACK"}], disease, min_studies, tissue)
+    fallback = build_consensus_signature(
+        [{"accession": "GEO_FALLBACK"}], disease, min_studies, tissue
+    )
     fallback["source"] = "geo_fallback"
     return fallback

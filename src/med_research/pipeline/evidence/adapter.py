@@ -9,7 +9,7 @@ from typing_extensions import Unpack
 
 from med_research.pipeline.adapter_options import AdapterOptions
 from med_research.pipeline.base import BasePipelineModule
-from med_research.pipeline.provenance import build_provenance
+from med_research.pipeline.provenance import ProvenanceMetadata, build_provenance
 from med_research.pipeline.registry import register_module
 from med_research.pipeline.results import (
     EvidenceExtractionResult,
@@ -84,7 +84,7 @@ class EvidenceGathererModule(BasePipelineModule[EvidenceGatherResult]):
 
         return Path(generate_html_report(cast(dict, results), provenance=provenance))
 
-    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
+    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> ProvenanceMetadata:
         use_cache = opts.get("use_cache", True)
         sources = opts.get("sources") or [
             "pubmed",
@@ -98,9 +98,7 @@ class EvidenceGathererModule(BasePipelineModule[EvidenceGatherResult]):
             module=self.module_id,
             sources=sources,
             query=opts.get("query") or _default_query(disease_id),
-            cache_or_live=opts.get(
-                "cache_or_live", "cache" if use_cache else "live"
-            ),
+            cache_or_live=opts.get("cache_or_live", "cache" if use_cache else "live"),
         )
 
 
@@ -151,7 +149,7 @@ class LLMExtractorModule(BasePipelineModule[EvidenceExtractionResult]):
 
         return Path(generate_html_report(cast(dict, results), provenance=provenance))
 
-    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
+    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> ProvenanceMetadata:
         use_cache = opts.get("use_cache", True)
         sources = opts.get("sources") or ["pubmed", "preprints", "clinical_trials"]
         return build_provenance(
@@ -159,9 +157,7 @@ class LLMExtractorModule(BasePipelineModule[EvidenceExtractionResult]):
             module=self.module_id,
             sources=sources,
             query=opts.get("query") or _default_query(disease_id),
-            cache_or_live=opts.get(
-                "cache_or_live", "cache" if use_cache else "live"
-            ),
+            cache_or_live=opts.get("cache_or_live", "cache" if use_cache else "live"),
             model=opts.get("model"),
         )
 
@@ -255,7 +251,7 @@ class EvidenceMonitorModule(BasePipelineModule[EvidenceMonitorResult]):
             )
         return Path(report_path)
 
-    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
+    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> ProvenanceMetadata:
         sources = opts.get("sources") or ["pubmed", "preprints", "clinical_trials"]
         return build_provenance(
             disease_id=disease_id,

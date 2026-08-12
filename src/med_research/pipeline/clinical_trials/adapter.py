@@ -9,7 +9,7 @@ from typing_extensions import Unpack
 
 from med_research.pipeline.adapter_options import AdapterOptions
 from med_research.pipeline.base import BasePipelineModule
-from med_research.pipeline.provenance import build_provenance
+from med_research.pipeline.provenance import ProvenanceMetadata, build_provenance
 from med_research.pipeline.registry import register_module
 from med_research.pipeline.results import TrialRunResult
 
@@ -58,7 +58,7 @@ class ClinicalTrialsModule(BasePipelineModule[TrialRunResult]):
         )
         return Path(report_path)
 
-    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
+    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> ProvenanceMetadata:
         from med_research.diseases.base import Disease
 
         use_cache = opts.get("use_cache", True)
@@ -73,8 +73,6 @@ class ClinicalTrialsModule(BasePipelineModule[TrialRunResult]):
             module=self.module_id,
             sources=["clinicaltrials_gov"],
             query=query,
-            cache_or_live=opts.get(
-                "cache_or_live", "cache" if use_cache else "live"
-            ),
+            cache_or_live=opts.get("cache_or_live", "cache" if use_cache else "live"),
             **extra,
         )

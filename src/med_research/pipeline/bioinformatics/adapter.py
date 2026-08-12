@@ -9,7 +9,7 @@ from typing_extensions import Unpack
 
 from med_research.pipeline.adapter_options import AdapterOptions
 from med_research.pipeline.base import BasePipelineModule
-from med_research.pipeline.provenance import build_provenance
+from med_research.pipeline.provenance import ProvenanceMetadata, build_provenance
 from med_research.pipeline.registry import register_module
 from med_research.pipeline.results import EnrichmentResult, GwasResult, PpiResult
 
@@ -61,7 +61,7 @@ class GwasModule(BasePipelineModule[GwasResult]):
         )
         return Path(report_path)
 
-    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
+    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> ProvenanceMetadata:
         extra: dict[str, Any] = {
             key: value
             for key, value in opts.items()
@@ -117,9 +117,7 @@ class EnrichmentModule(BasePipelineModule[EnrichmentResult]):
         gene_list = results.get("gene_list")
         kg_matches = results.get("kg_pathway_matches")
         report_path = generate_bioinformatics_report(
-            enrichment_results=(
-                enrichment_results if isinstance(enrichment_results, dict) else {}
-            ),
+            enrichment_results=(enrichment_results if isinstance(enrichment_results, dict) else {}),
             gene_list=gene_list if isinstance(gene_list, list) else [],
             kg_matches=kg_matches if isinstance(kg_matches, dict) else {},
             disease_id=disease_id,
@@ -127,7 +125,7 @@ class EnrichmentModule(BasePipelineModule[EnrichmentResult]):
         )
         return Path(report_path)
 
-    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
+    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> ProvenanceMetadata:
         extra: dict[str, Any] = {
             key: value
             for key, value in opts.items()
@@ -195,7 +193,7 @@ class PpiModule(BasePipelineModule[PpiResult]):
         )
         return Path(report_path)
 
-    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
+    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> ProvenanceMetadata:
         extra: dict[str, Any] = {
             key: value
             for key, value in opts.items()

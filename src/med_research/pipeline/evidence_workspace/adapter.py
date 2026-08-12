@@ -11,7 +11,7 @@ from med_research.pipeline.adapter_options import AdapterOptions
 from med_research.pipeline.base import BasePipelineModule
 from med_research.pipeline.evidence_workspace.schemas import EvidenceDossier, ResearchRequest
 from med_research.pipeline.evidence_workspace.sources import EvidenceSource
-from med_research.pipeline.provenance import build_provenance
+from med_research.pipeline.provenance import ProvenanceMetadata, build_provenance
 from med_research.pipeline.registry import register_module
 
 
@@ -28,9 +28,7 @@ def _research_request(disease_id: str, **opts: Unpack[AdapterOptions]) -> Resear
         return request
 
     request_fields = set(ResearchRequest.model_fields)
-    request_kwargs = {
-        key: value for key, value in opts.items() if key in request_fields
-    }
+    request_kwargs = {key: value for key, value in opts.items() if key in request_fields}
     request_kwargs.setdefault("disease_id", disease_id)
     request_kwargs.setdefault("question", _default_question(disease_id))
     return ResearchRequest.model_validate(request_kwargs)
@@ -86,7 +84,7 @@ class EvidenceWorkspaceModule(BasePipelineModule[EvidenceDossier]):
         output = Path(__file__).parent / f"report_{disease_id}.html"
         return write_html(dossier, output)
 
-    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
+    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> ProvenanceMetadata:
         sources = opts.get("sources") or ("pubmed", "clinical_trials")
         extra: dict[str, Any] = {
             key: value

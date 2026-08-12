@@ -84,6 +84,7 @@ def _entity_query_suffix(disease_id: str = "sle") -> str:
     disease = Disease(disease_id)
     return disease.profile.name.split("(")[0].strip().lower()
 
+
 # Load tracked drugs/genes from repurposing candidates
 def _load_tracked_entities() -> tuple:
     """Load drugs and genes from repurposing candidates and knowledge graph."""
@@ -181,18 +182,22 @@ def take_snapshot(
 
     logger.info(f"\n📸 Taking snapshot: {snapshot_id}")
     logger.info(f"   Disease: {disease_id}")
-    logger.info(f"   Tracking: {len(tracked_queries)} queries, "
-          f"{len(drugs)} drugs, {len(genes)} genes")
+    logger.info(
+        f"   Tracking: {len(tracked_queries)} queries, {len(drugs)} drugs, {len(genes)} genes"
+    )
     logger.info(f"   Sources: {', '.join(sources)}\n")
 
     queries_data = {}
 
     # Snapshot tracked queries
     for i, query in enumerate(tracked_queries, 1):
-        logger.info(f"  [{i}/{len(tracked_queries)}] Query: \"{query}\"")
+        logger.info(f'  [{i}/{len(tracked_queries)}] Query: "{query}"')
         _tick(progress_callback, "snapshotting queries", i, len(tracked_queries))
         evidence = gather_evidence(
-            query, sources=sources, max_per_source=max_per_query, use_cache=True,
+            query,
+            sources=sources,
+            max_per_source=max_per_query,
+            use_cache=True,
         )
         queries_data[query] = {
             "results": evidence["all_results"],
@@ -208,8 +213,10 @@ def take_snapshot(
         logger.info(f"    💊 {drug}")
         _tick(progress_callback, "snapshotting drugs", i, len(drugs[:25]))
         evidence = gather_evidence(
-            query, sources=["pubmed", "clinical_trials"],
-            max_per_source=5, use_cache=True,
+            query,
+            sources=["pubmed", "clinical_trials"],
+            max_per_source=5,
+            use_cache=True,
         )
         drug_data[drug] = {
             "results": evidence["all_results"],
@@ -225,8 +232,10 @@ def take_snapshot(
         logger.info(f"    🧬 {gene}")
         _tick(progress_callback, "snapshotting genes", i, len(genes[:25]))
         evidence = gather_evidence(
-            query, sources=["pubmed", "clinical_trials"],
-            max_per_source=5, use_cache=True,
+            query,
+            sources=["pubmed", "clinical_trials"],
+            max_per_source=5,
+            use_cache=True,
         )
         gene_data[gene] = {
             "results": evidence["all_results"],
@@ -254,7 +263,9 @@ def take_snapshot(
     save_json(path, snapshot)
 
     logger.info(f"\n✅ Snapshot saved: {path.name}")
-    logger.info(f"   Queries: {len(queries_data)} · Drugs: {len(drug_data)} · Genes: {len(gene_data)}")
+    logger.info(
+        f"   Queries: {len(queries_data)} · Drugs: {len(drug_data)} · Genes: {len(gene_data)}"
+    )
 
     _tick(progress_callback, "snapshot complete", 1, 1)
     return snapshot
@@ -274,8 +285,14 @@ def compare_snapshots(prev: dict, curr: dict) -> dict:
         Diff dict with changes and alerts.
     """
     alerts = []
-    changes: dict[str, Any] = {"new_queries": [], "changed_queries": [], "new_drugs": [],
-               "changed_drugs": [], "new_genes": [], "changed_genes": []}
+    changes: dict[str, Any] = {
+        "new_queries": [],
+        "changed_queries": [],
+        "new_drugs": [],
+        "changed_drugs": [],
+        "new_genes": [],
+        "changed_genes": [],
+    }
 
     prev_time = datetime.fromisoformat(prev["timestamp"])
     curr_time = datetime.fromisoformat(curr["timestamp"])
@@ -296,14 +313,16 @@ def compare_snapshots(prev: dict, curr: dict) -> dict:
                 curr_data.get("results", []),
             )
             if new_items:
-                alerts.append({
-                    "type": "new_publication",
-                    "entity": query,
-                    "entity_type": "query",
-                    "new_count": len(new_items),
-                    "new_items": new_items[:5],
-                    "severity": "medium" if len(new_items) > 2 else "low",
-                })
+                alerts.append(
+                    {
+                        "type": "new_publication",
+                        "entity": query,
+                        "entity_type": "query",
+                        "new_count": len(new_items),
+                        "new_items": new_items[:5],
+                        "severity": "medium" if len(new_items) > 2 else "low",
+                    }
+                )
 
     # Compare drugs
     for drug in curr["tracked_drugs"][:25]:
@@ -318,14 +337,16 @@ def compare_snapshots(prev: dict, curr: dict) -> dict:
                 curr_data.get("results", []),
             )
             if new_items:
-                alerts.append({
-                    "type": "new_drug_evidence",
-                    "entity": drug,
-                    "entity_type": "drug",
-                    "new_count": len(new_items),
-                    "new_items": new_items[:3],
-                    "severity": "high" if len(new_items) >= 3 else "medium",
-                })
+                alerts.append(
+                    {
+                        "type": "new_drug_evidence",
+                        "entity": drug,
+                        "entity_type": "drug",
+                        "new_count": len(new_items),
+                        "new_items": new_items[:3],
+                        "severity": "high" if len(new_items) >= 3 else "medium",
+                    }
+                )
 
     # Compare genes
     for gene in curr["tracked_genes"][:25]:
@@ -333,14 +354,16 @@ def compare_snapshots(prev: dict, curr: dict) -> dict:
         curr_data = curr["genes"].get(gene, {})
         if not prev_data:
             changes["new_genes"].append(gene)
-            alerts.append({
-                "type": "new_gene_tracked",
-                "entity": gene,
-                "entity_type": "gene",
-                "new_count": curr_data.get("total", 0),
-                "new_items": curr_data.get("results", [])[:3],
-                "severity": "low",
-            })
+            alerts.append(
+                {
+                    "type": "new_gene_tracked",
+                    "entity": gene,
+                    "entity_type": "gene",
+                    "new_count": curr_data.get("total", 0),
+                    "new_items": curr_data.get("results", [])[:3],
+                    "severity": "low",
+                }
+            )
         elif prev_data.get("hash") != curr_data.get("hash"):
             changes["changed_genes"].append(gene)
             new_items = _find_new_items(
@@ -348,23 +371,28 @@ def compare_snapshots(prev: dict, curr: dict) -> dict:
                 curr_data.get("results", []),
             )
             if new_items:
-                alerts.append({
-                    "type": "new_gene_evidence",
-                    "entity": gene,
-                    "entity_type": "gene",
-                    "new_count": len(new_items),
-                    "new_items": new_items[:3],
-                    "severity": "low",
-                })
+                alerts.append(
+                    {
+                        "type": "new_gene_evidence",
+                        "entity": gene,
+                        "entity_type": "gene",
+                        "new_count": len(new_items),
+                        "new_items": new_items[:3],
+                        "severity": "low",
+                    }
+                )
 
     # Sort alerts by severity
     severity_order = {"high": 0, "medium": 1, "low": 2}
     alerts.sort(key=lambda a: severity_order.get(a["severity"], 3))
 
     total_changes = (
-        len(changes["new_queries"]) + len(changes["changed_queries"]) +
-        len(changes["new_drugs"]) + len(changes["changed_drugs"]) +
-        len(changes["new_genes"]) + len(changes["changed_genes"])
+        len(changes["new_queries"])
+        + len(changes["changed_queries"])
+        + len(changes["new_drugs"])
+        + len(changes["changed_drugs"])
+        + len(changes["new_genes"])
+        + len(changes["changed_genes"])
     )
 
     return {
@@ -387,13 +415,15 @@ def _find_new_items(prev_results: list, curr_results: list) -> list:
     for r in curr_results:
         rid = r.get("id", r.get("title", ""))
         if rid not in prev_ids:
-            new_items.append({
-                "title": r.get("title", "")[:120],
-                "source_type": r.get("source_type", ""),
-                "year": r.get("year", ""),
-                "url": r.get("url", ""),
-                "id": rid,
-            })
+            new_items.append(
+                {
+                    "title": r.get("title", "")[:120],
+                    "source_type": r.get("source_type", ""),
+                    "year": r.get("year", ""),
+                    "url": r.get("url", ""),
+                    "id": rid,
+                }
+            )
     return new_items
 
 
@@ -477,26 +507,27 @@ def print_diff_summary(diff: dict) -> None:
         logger.info("\n  📋 Alert Details:")
         for a in alerts[:10]:
             icon = {"high": "🔴", "medium": "🟡", "low": "🟢"}.get(a["severity"], "⚪")
-            logger.info(f"  {icon} [{a['severity'].upper():7s}] {a['entity']:30s} "
-                  f"({a['new_count']} new {a['type']})")
+            logger.info(
+                f"  {icon} [{a['severity'].upper():7s}] {a['entity']:30s} "
+                f"({a['new_count']} new {a['type']})"
+            )
 
 
 def main():
     parser = argparse.ArgumentParser(
         description="Continuous Evidence Monitor — Track new publications & trial updates"
     )
-    parser.add_argument("--snapshot", action="store_true",
-                        help="Take a new evidence snapshot")
-    parser.add_argument("--diff", action="store_true",
-                        help="Compare latest 2 snapshots")
-    parser.add_argument("--list", action="store_true",
-                        help="List available snapshots")
-    parser.add_argument("--export-html", action="store_true",
-                        help="Generate HTML diff report")
-    parser.add_argument("--sources", type=str, default="pubmed,preprints,clinical_trials",
-                        help="Comma-separated sources for snapshot")
-    parser.add_argument("--max", type=int, default=10,
-                        help="Max results per query (default: 10)")
+    parser.add_argument("--snapshot", action="store_true", help="Take a new evidence snapshot")
+    parser.add_argument("--diff", action="store_true", help="Compare latest 2 snapshots")
+    parser.add_argument("--list", action="store_true", help="List available snapshots")
+    parser.add_argument("--export-html", action="store_true", help="Generate HTML diff report")
+    parser.add_argument(
+        "--sources",
+        type=str,
+        default="pubmed,preprints,clinical_trials",
+        help="Comma-separated sources for snapshot",
+    )
+    parser.add_argument("--max", type=int, default=10, help="Max results per query (default: 10)")
 
     args = parser.parse_args()
 
@@ -514,9 +545,13 @@ def main():
         if len(snapshots) < 2:
             logger.warning("⚠️  Need at least 2 snapshots. Taking baseline + new snapshot.")
             logger.info("   This may take a few minutes...")
-            prev = take_snapshot(sources=sources, max_per_query=args.max, progress_callback=cli_progress)
+            prev = take_snapshot(
+                sources=sources, max_per_query=args.max, progress_callback=cli_progress
+            )
             rate_limited_sleep(2)
-            curr = take_snapshot(sources=sources, max_per_query=args.max, progress_callback=cli_progress)
+            curr = take_snapshot(
+                sources=sources, max_per_query=args.max, progress_callback=cli_progress
+            )
         else:
             prev, curr = snapshots
 
@@ -548,4 +583,9 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+
+    from med_research.cli import main as cli_main
+
+    sys.exit(cli_main() or 0)
+

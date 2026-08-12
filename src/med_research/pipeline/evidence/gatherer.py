@@ -115,7 +115,9 @@ def _set_cached_results(key: str, results: list, use_cache: bool) -> None:
 # ── Europe PMC Search ────────────────────────────────────────────────────
 
 
-def search_europe_pmc(query: str, source: str, max_results: int = 20, use_cache: bool = True) -> list:
+def search_europe_pmc(
+    query: str, source: str, max_results: int = 20, use_cache: bool = True
+) -> list:
     """Search Europe PMC for PubMed articles, preprints, or patents.
 
     Args:
@@ -135,19 +137,21 @@ def search_europe_pmc(query: str, source: str, max_results: int = 20, use_cache:
 
     # Build query with source filter
     if source == "preprints":
-        query_str = f'({query}) AND (SRC:PPR)'
+        query_str = f"({query}) AND (SRC:PPR)"
     elif source == "patents":
-        query_str = f'({query}) AND (SRC:PAT)'
+        query_str = f"({query}) AND (SRC:PAT)"
     else:
-        query_str = f'({query}) AND (SRC:MED)'
+        query_str = f"({query}) AND (SRC:MED)"
 
-    params = urllib.parse.urlencode({
-        "query": query_str,
-        "resultType": "core",
-        "pageSize": min(max_results, 50),
-        "format": "json",
-        "sort": "CITED desc",
-    })
+    params = urllib.parse.urlencode(
+        {
+            "query": query_str,
+            "resultType": "core",
+            "pageSize": min(max_results, 50),
+            "format": "json",
+            "sort": "CITED desc",
+        }
+    )
     url = f"{EUROPE_PMC_URL}?{params}"
 
     logger.info(f"  🔎 Searching {source} via Europe PMC...")
@@ -160,17 +164,19 @@ def search_europe_pmc(query: str, source: str, max_results: int = 20, use_cache:
     results = []
     for item in data.get("resultList", {}).get("result", [])[:max_results]:
         pub_year = item.get("pubYear", "")
-        results.append({
-            "title": item.get("title", "").strip(),
-            "source": item.get("journalTitle", item.get("source", "Europe PMC")),
-            "source_type": source,
-            "year": pub_year,
-            "url": f"https://europepmc.org/article/{item.get('source','MED')}/{item.get('id','')}",
-            "snippet": _clean_snippet(item),
-            "authors": item.get("authorString", "")[:200] if item.get("authorString") else "",
-            "citation_count": item.get("citedByCount", 0),
-            "id": item.get("id", ""),
-        })
+        results.append(
+            {
+                "title": item.get("title", "").strip(),
+                "source": item.get("journalTitle", item.get("source", "Europe PMC")),
+                "source_type": source,
+                "year": pub_year,
+                "url": f"https://europepmc.org/article/{item.get('source', 'MED')}/{item.get('id', '')}",
+                "snippet": _clean_snippet(item),
+                "authors": item.get("authorString", "")[:200] if item.get("authorString") else "",
+                "citation_count": item.get("citedByCount", 0),
+                "id": item.get("id", ""),
+            }
+        )
 
     _set_cached_results(key, results, use_cache)
     return results
@@ -221,22 +227,24 @@ def search_clinical_trials(query: str, max_results: int = 20) -> list:
         relevance = sum(1 for word in query_lower.split() if word in text_to_match)
 
         if relevance > 0:
-            results.append({
-                "title": title[:200],
-                "source": "ClinicalTrials.gov",
-                "source_type": "clinical_trials",
-                "year": status.get("startDateStruct", {}).get("date", "")[:4],
-                "url": f"https://clinicaltrials.gov/study/{nct_id}",
-                "snippet": brief[:400],
-                "authors": "",
-                "citation_count": 0,
-                "id": nct_id,
-                "nct_id": nct_id,
-                "status": status.get("overallStatus", ""),
-                "phase": protocol.get("designModule", {}).get("phases", []),
-                "conditions": conditions[:5],
-                "relevance": relevance,
-            })
+            results.append(
+                {
+                    "title": title[:200],
+                    "source": "ClinicalTrials.gov",
+                    "source_type": "clinical_trials",
+                    "year": status.get("startDateStruct", {}).get("date", "")[:4],
+                    "url": f"https://clinicaltrials.gov/study/{nct_id}",
+                    "snippet": brief[:400],
+                    "authors": "",
+                    "citation_count": 0,
+                    "id": nct_id,
+                    "nct_id": nct_id,
+                    "status": status.get("overallStatus", ""),
+                    "phase": protocol.get("designModule", {}).get("phases", []),
+                    "conditions": conditions[:5],
+                    "relevance": relevance,
+                }
+            )
 
     results.sort(key=lambda x: x["relevance"], reverse=True)
     return results[:max_results]
@@ -254,10 +262,12 @@ def search_fda_labels(query: str, max_results: int = 20, use_cache: bool = True)
         return cached
 
     logger.info("  🔎 Searching FDA labels via DailyMed...")
-    params = urllib.parse.urlencode({
-        "searchterms": query,
-        "pagesize": min(max_results, 50),
-    })
+    params = urllib.parse.urlencode(
+        {
+            "searchterms": query,
+            "pagesize": min(max_results, 50),
+        }
+    )
     url = f"{DAILYMED_URL}?{params}"
 
     try:
@@ -268,19 +278,21 @@ def search_fda_labels(query: str, max_results: int = 20, use_cache: bool = True)
 
     results = []
     for item in data.get("data", [])[:max_results]:
-        results.append({
-            "title": item.get("title", "").strip()[:200],
-            "source": "FDA Label (DailyMed)",
-            "source_type": "fda_labels",
-            "year": item.get("updated_date", "")[:4],
-            "url": f"https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid={item.get('setid','')}",
-            "snippet": _extract_label_snippet(item),
-            "authors": "",
-            "citation_count": 0,
-            "id": item.get("setid", ""),
-            "drug_name": _extract_drug_name(item),
-            "label_id": item.get("setid", ""),
-        })
+        results.append(
+            {
+                "title": item.get("title", "").strip()[:200],
+                "source": "FDA Label (DailyMed)",
+                "source_type": "fda_labels",
+                "year": item.get("updated_date", "")[:4],
+                "url": f"https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid={item.get('setid', '')}",
+                "snippet": _extract_label_snippet(item),
+                "authors": "",
+                "citation_count": 0,
+                "id": item.get("setid", ""),
+                "drug_name": _extract_drug_name(item),
+                "label_id": item.get("setid", ""),
+            }
+        )
 
     _set_cached_results(key, results, use_cache)
     return results
@@ -357,9 +369,7 @@ def gather_evidence(
             module="evidence_gather",
             level="full",
             status="ready",
-            limitations=[
-                "Query-driven gather; results are not scoped to a disease module."
-            ],
+            limitations=["Query-driven gather; results are not scoped to a disease module."],
         )
 
     if sources is None:
@@ -410,9 +420,7 @@ def gather_evidence(
         "all_results": all_results,
         "generated_at": datetime.now().isoformat(),
         "coverage": last_coverage.to_dict(),
-        "status": (
-            "limited_coverage" if last_coverage.level == "partial" else "ready"
-        ),
+        "status": ("limited_coverage" if last_coverage.level == "partial" else "ready"),
     }
 
     # Save results
@@ -435,10 +443,7 @@ def _compute_crossref(results: list, sources: list) -> dict:
     crossref: dict[str, Any] = {"pairs": []}
     source_sets = {}
     for src in sources:
-        source_sets[src] = {
-            r["title"].lower()[:80] for r in results
-            if r.get("source_type") == src
-        }
+        source_sets[src] = {r["title"].lower()[:80] for r in results if r.get("source_type") == src}
 
     # Check for similar titles across sources (fuzzy overlap detection)
     for s1 in sources:
@@ -449,11 +454,13 @@ def _compute_crossref(results: list, sources: list) -> dict:
             set2 = source_sets.get(s2, set())
             # Find titles that appear in both (exact match on first 60 chars)
             common = len(set1 & set2)
-            crossref["pairs"].append({
-                "source_a": s1,
-                "source_b": s2,
-                "overlap_count": common,
-            })
+            crossref["pairs"].append(
+                {
+                    "source_a": s1,
+                    "source_b": s2,
+                    "overlap_count": common,
+                }
+            )
     return crossref
 
 
@@ -466,21 +473,28 @@ def print_summary(gathered: EvidenceGatherResult) -> None:
     logger.info("🌐 WEB-SCALE EVIDENCE GATHERER — Results")
     logger.info("=" * 75)
 
-    logger.info(f"\n  Query: \"{gathered['query']}\"")
+    logger.info(f'\n  Query: "{gathered["query"]}"')
     logger.info(f"  Sources searched: {', '.join(gathered['sources_searched'])}")
     logger.info(f"  Total results: {gathered['total_results']} ({gathered['elapsed_seconds']}s)")
 
     logger.info("\n  📊 Results by source:")
     for src, count in gathered["results_by_source"].items():
-        icon = {"pubmed": "📄", "preprints": "🧪", "patents": "💡",
-                "clinical_trials": "🏥", "fda_labels": "💊"}.get(src, "📌")
+        icon = {
+            "pubmed": "📄",
+            "preprints": "🧪",
+            "patents": "💡",
+            "clinical_trials": "🏥",
+            "fda_labels": "💊",
+        }.get(src, "📌")
         logger.info(f"    {icon} {src}: {count}")
 
     if gathered.get("crossref", {}).get("pairs"):
         logger.info("\n  🔗 Cross-source overlaps:")
         for pair in gathered["crossref"]["pairs"]:
             if pair["overlap_count"] > 0:
-                logger.info(f"    {pair['source_a']} ↔ {pair['source_b']}: {pair['overlap_count']} overlapping")
+                logger.info(
+                    f"    {pair['source_a']} ↔ {pair['source_b']}: {pair['overlap_count']} overlapping"
+                )
 
     logger.info("\n  📋 Top results:")
     for i, r in enumerate(gathered["all_results"][:10], 1):
@@ -494,22 +508,38 @@ def main():
     parser = argparse.ArgumentParser(
         description="Web-Scale Evidence Gatherer — Multi-source biomedical evidence aggregation"
     )
-    parser.add_argument("--query", "-q", type=str, default="B cell depletion therapy lupus",
-                        help="Search query (natural language)")
-    parser.add_argument("--sources", type=str, default="all",
-                        help="Comma-separated sources or 'all' (pubmed,preprints,clinical_trials,fda_labels,patents)")
-    parser.add_argument("--max", type=int, default=20, dest="max_per_source",
-                        help="Max results per source (default: 20)")
+    parser.add_argument(
+        "--query",
+        "-q",
+        type=str,
+        default="B cell depletion therapy lupus",
+        help="Search query (natural language)",
+    )
+    parser.add_argument(
+        "--sources",
+        type=str,
+        default="all",
+        help="Comma-separated sources or 'all' (pubmed,preprints,clinical_trials,fda_labels,patents)",
+    )
+    parser.add_argument(
+        "--max",
+        type=int,
+        default=20,
+        dest="max_per_source",
+        help="Max results per source (default: 20)",
+    )
     parser.add_argument("--no-cache", action="store_true", help="Skip cache, re-fetch from APIs")
     parser.add_argument("--top", type=int, default=15, help="Number of top results to display")
     parser.add_argument("--export-html", action="store_true", help="Generate HTML report")
 
     args = parser.parse_args()
 
-    sources = DEFAULT_SOURCES if args.sources == "all" else [s.strip() for s in args.sources.split(",")]
+    sources = (
+        DEFAULT_SOURCES if args.sources == "all" else [s.strip() for s in args.sources.split(",")]
+    )
 
     logger.info("🌐 Web-Scale Evidence Gatherer")
-    logger.info(f"   Query: \"{args.query}\"")
+    logger.info(f'   Query: "{args.query}"')
     logger.info(f"   Sources: {', '.join(sources)}\n")
 
     results = gather_evidence(
@@ -540,4 +570,9 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+
+    from med_research.cli import main as cli_main
+
+    sys.exit(cli_main() or 0)
+

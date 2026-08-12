@@ -10,6 +10,8 @@ from med_research.diseases.schemas import (
     DiseaseProfile,
     DrugsFileDict,
     GenesFileDict,
+    PathwaysFileDict,
+    RelationshipsFileDict,
     load_validated_json,
 )
 from med_research.exceptions import MissingDataError, SchemaValidationError
@@ -98,9 +100,9 @@ def load_drugs(disease_id: str = "sle") -> DrugsFileDict:
     return cast(DrugsFileDict, load_disease_json(disease_id, "drugs.json"))
 
 
-def load_pathways(disease_id: str = "sle") -> dict:
-    return load_disease_json(disease_id, "pathways.json")
+def load_pathways(disease_id: str = "sle") -> PathwaysFileDict:
+    return cast(PathwaysFileDict, load_disease_json(disease_id, "pathways.json"))
 
 
-def load_relationships(disease_id: str = "sle") -> dict:
-    return load_disease_json(disease_id, "relationships.json")
+def load_relationships(disease_id: str = "sle") -> RelationshipsFileDict:
+    return cast(RelationshipsFileDict, load_disease_json(disease_id, "relationships.json"))

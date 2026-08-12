@@ -157,15 +157,17 @@ def call_llm(
 
     url = f"{API_BASE.rstrip('/')}/chat/completions"
 
-    payload = json.dumps({
-        "model": model,
-        "messages": [
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": user_prompt},
-        ],
-        "temperature": temperature,
-        "max_tokens": max_tokens,
-    }).encode("utf-8")
+    payload = json.dumps(
+        {
+            "model": model,
+            "messages": [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt},
+            ],
+            "temperature": temperature,
+            "max_tokens": max_tokens,
+        }
+    ).encode("utf-8")
 
     headers = {
         "Content-Type": "application/json",
@@ -212,7 +214,7 @@ def _clean_json_response(text: str) -> str:
     start = text.find("{")
     end = text.rfind("}")
     if start != -1 and end != -1:
-        text = text[start:end + 1]
+        text = text[start : end + 1]
     return text
 
 
@@ -365,12 +367,14 @@ def extract_all(
     if not API_KEY:
         _tick(progress_callback, "llm extraction blocked", 1, 1)
         logger.info("\n⚠️  No OPENAI_API_KEY environment variable set.")
-        logger.info("   LLM extraction requires an API key.\n"
-              "   Set it via: export OPENAI_API_KEY=sk-...\n"
-              "   Or for local models (Ollama):\n"
-              "     export OPENAI_API_KEY=ollama\n"
-              "     export OPENAI_API_BASE=http://localhost:11434/v1\n"
-              "     export LLM_EXTRACTOR_MODEL=llama3.1\n")
+        logger.info(
+            "   LLM extraction requires an API key.\n"
+            "   Set it via: export OPENAI_API_KEY=sk-...\n"
+            "   Or for local models (Ollama):\n"
+            "     export OPENAI_API_KEY=ollama\n"
+            "     export OPENAI_API_BASE=http://localhost:11434/v1\n"
+            "     export LLM_EXTRACTOR_MODEL=llama3.1\n"
+        )
         return {
             "query": query,
             "model": model,
@@ -386,7 +390,7 @@ def extract_all(
         }
 
     logger.info(f"\n🤖 LLM Evidence Extractor — Model: {model}")
-    logger.info(f"   Query: \"{query}\"")
+    logger.info(f'   Query: "{query}"')
     logger.info(f"   Sources: {', '.join(sources)}\n")
 
     # Step 1: Gather evidence
@@ -416,25 +420,27 @@ def extract_all(
         extracted = extract_evidence(article, query, model, use_cache)
         if extracted:
             # Merge article metadata with extracted data
-            extractions.append({
-                "title": article.get("title", ""),
-                "source_type": article.get("source_type", ""),
-                "source": article.get("source", ""),
-                "year": article.get("year", ""),
-                "url": article.get("url", ""),
-                "id": article.get("id", ""),
-                "evidence_level": extracted.get("evidence_level", "unknown"),
-                "model_system": extracted.get("model_system", "unknown"),
-                "key_findings": extracted.get("key_findings", ""),
-                "drugs_mentioned": extracted.get("drugs_mentioned", []),
-                "disease": extracted.get("disease", ""),
-                "study_design": extracted.get("study_design", "unknown"),
-                "sample_size": extracted.get("sample_size"),
-                "p_value": extracted.get("p_value"),
-                "effect_size": extracted.get("effect_size"),
-                "relevance_to_query": extracted.get("relevance_to_query", 50),
-                "confidence": extracted.get("confidence", 0),
-            })
+            extractions.append(
+                {
+                    "title": article.get("title", ""),
+                    "source_type": article.get("source_type", ""),
+                    "source": article.get("source", ""),
+                    "year": article.get("year", ""),
+                    "url": article.get("url", ""),
+                    "id": article.get("id", ""),
+                    "evidence_level": extracted.get("evidence_level", "unknown"),
+                    "model_system": extracted.get("model_system", "unknown"),
+                    "key_findings": extracted.get("key_findings", ""),
+                    "drugs_mentioned": extracted.get("drugs_mentioned", []),
+                    "disease": extracted.get("disease", ""),
+                    "study_design": extracted.get("study_design", "unknown"),
+                    "sample_size": extracted.get("sample_size"),
+                    "p_value": extracted.get("p_value"),
+                    "effect_size": extracted.get("effect_size"),
+                    "relevance_to_query": extracted.get("relevance_to_query", 50),
+                    "confidence": extracted.get("confidence", 0),
+                }
+            )
             if extracted.get("confidence", 0) > 0:
                 success_count += 1
 
@@ -530,11 +536,13 @@ def print_summary(results: EvidenceExtractionResult) -> None:
     logger.info("🤖 LLM EVIDENCE EXTRACTION — Results")
     logger.info("=" * 75)
 
-    logger.info(f"\n  Query: \"{results['query']}\"")
+    logger.info(f'\n  Query: "{results["query"]}"')
     logger.info(f"  Model: {results['model']}")
-    logger.info(f"  Extracted: {results['total_extracted']} articles "
-          f"({results['successful_extractions']} successful) "
-          f"in {results['elapsed_seconds']}s")
+    logger.info(
+        f"  Extracted: {results['total_extracted']} articles "
+        f"({results['successful_extractions']} successful) "
+        f"in {results['elapsed_seconds']}s"
+    )
 
     if stats:
         logger.info("\n  📊 Evidence Level Distribution:")
@@ -553,12 +561,18 @@ def print_summary(results: EvidenceExtractionResult) -> None:
         logger.info(f"  📈 Avg Relevance: {avg_rel:.1f}%")
 
         if stats.get("n_unique_drugs", 0) > 0:
-            logger.info(f"\n  💊 Drugs Mentioned ({stats['n_unique_drugs']}): "
-                  f"{', '.join(stats['unique_drugs_mentioned'][:12])}")
+            logger.info(
+                f"\n  💊 Drugs Mentioned ({stats['n_unique_drugs']}): "
+                f"{', '.join(stats['unique_drugs_mentioned'][:12])}"
+            )
 
     logger.info("\n  📋 Top Extractions:")
     # Sort by relevance * confidence
-    scored = sorted(extractions, key=lambda x: x.get("relevance_to_query", 50) * x.get("confidence", 0) / 10000, reverse=True)
+    scored = sorted(
+        extractions,
+        key=lambda x: x.get("relevance_to_query", 50) * x.get("confidence", 0) / 10000,
+        reverse=True,
+    )
     for i, e in enumerate(scored[:10], 1):
         level = e.get("evidence_level", "?").replace("_", " ").title()
         system = e.get("model_system", "?").replace("_", " ").title()
@@ -570,20 +584,36 @@ def main():
     parser = argparse.ArgumentParser(
         description="LLM Evidence Extractor — Structured data extraction from biomedical abstracts"
     )
-    parser.add_argument("--query", "-q", type=str, default="B cell depletion therapy lupus",
-                        help="Search query (natural language)")
-    parser.add_argument("--sources", type=str, default="pubmed,preprints,clinical_trials",
-                        help="Comma-separated evidence sources")
-    parser.add_argument("--model", "-m", type=str, default=DEFAULT_MODEL,
-                        help=f"LLM model name (default: {DEFAULT_MODEL})")
-    parser.add_argument("--max", type=int, default=20, dest="max_articles",
-                        help="Max articles to extract from (default: 20)")
-    parser.add_argument("--no-cache", action="store_true",
-                        help="Skip cache, re-extract everything")
-    parser.add_argument("--top", type=int, default=15,
-                        help="Number of top results to display")
-    parser.add_argument("--export-html", action="store_true",
-                        help="Generate HTML report")
+    parser.add_argument(
+        "--query",
+        "-q",
+        type=str,
+        default="B cell depletion therapy lupus",
+        help="Search query (natural language)",
+    )
+    parser.add_argument(
+        "--sources",
+        type=str,
+        default="pubmed,preprints,clinical_trials",
+        help="Comma-separated evidence sources",
+    )
+    parser.add_argument(
+        "--model",
+        "-m",
+        type=str,
+        default=DEFAULT_MODEL,
+        help=f"LLM model name (default: {DEFAULT_MODEL})",
+    )
+    parser.add_argument(
+        "--max",
+        type=int,
+        default=20,
+        dest="max_articles",
+        help="Max articles to extract from (default: 20)",
+    )
+    parser.add_argument("--no-cache", action="store_true", help="Skip cache, re-extract everything")
+    parser.add_argument("--top", type=int, default=15, help="Number of top results to display")
+    parser.add_argument("--export-html", action="store_true", help="Generate HTML report")
 
     args = parser.parse_args()
 
@@ -620,4 +650,9 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+
+    from med_research.cli import main as cli_main
+
+    sys.exit(cli_main() or 0)
+

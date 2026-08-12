@@ -11,7 +11,13 @@ def escape_html(value):
     """Escape HTML special characters."""
     if value is None:
         return ""
-    return str(value).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
+    return (
+        str(value)
+        .replace("&", "&amp;")
+        .replace("<", "&lt;")
+        .replace(">", "&gt;")
+        .replace('"', "&quot;")
+    )
 
 
 def generate_html_report(
@@ -32,17 +38,19 @@ def generate_html_report(
     # Build top-5 JSON for radar chart
     top5_items = []
     for r in scored[:5]:
-        name = r['gene_name'].split('(')[0].strip()[:25]
-        top5_items.append({
-            "name": name,
-            "scores": [
-                r.get('b_cell_dependency', 0),
-                r.get('autoantibody_association', 0),
-                r.get('plasma_cell_relevance', 0),
-                r.get('cd19_targeting', 0),
-                r.get('clinical_evidence', 0),
-            ],
-        })
+        name = r["gene_name"].split("(")[0].strip()[:25]
+        top5_items.append(
+            {
+                "name": name,
+                "scores": [
+                    r.get("b_cell_dependency", 0),
+                    r.get("autoantibody_association", 0),
+                    r.get("plasma_cell_relevance", 0),
+                    r.get("cd19_targeting", 0),
+                    r.get("clinical_evidence", 0),
+                ],
+            }
+        )
     top5_json = json.dumps(top5_items)
 
     # Build highlights
@@ -51,9 +59,9 @@ def generate_html_report(
         highlights_rows += f"""
             <div class="highlight-card">
                 <div class="highlight-rank">#{i}</div>
-                <div class="highlight-drug">{escape_html(r['gene_name'])}</div>
-                <div class="highlight-score" style="color: #f87171;">{r['composite_score']:.1f}</div>
-                <div class="highlight-meta">{escape_html(r.get('category', ''))}</div>
+                <div class="highlight-drug">{escape_html(r["gene_name"])}</div>
+                <div class="highlight-score" style="color: #f87171;">{r["composite_score"]:.1f}</div>
+                <div class="highlight-meta">{escape_html(r.get("category", ""))}</div>
             </div>"""
 
     # Build ranked table
@@ -61,18 +69,19 @@ def generate_html_report(
     for i, r in enumerate(scored, 1):
         tier_icon = r["tier"].split("—")[0].strip()
         tier_color = {"🔴": "#f87171", "🟠": "#fb923c", "🟡": "#fbbf24", "🟢": "#4ade80"}.get(
-            tier_icon[0] if tier_icon else "", "#9ca3af")
+            tier_icon[0] if tier_icon else "", "#9ca3af"
+        )
         table_rows += f"""
             <tr>
                 <td class="col-rank">{i}</td>
-                <td class="col-drug">{escape_html(r['gene_name'])}</td>
-                <td class="col-score" style="color:{tier_color}">{r['composite_score']:.2f}</td>
-                <td class="col-sign">{r.get('b_cell_dependency', '-')}</td>
-                <td class="col-overlap">{r.get('autoantibody_association', '-')}</td>
-                <td class="col-cell">{r.get('plasma_cell_relevance', '-')}</td>
-                <td class="col-evid">{r.get('cd19_targeting', '-')}</td>
-                <td class="col-dir">{r.get('clinical_evidence', '-')}</td>
-                <td class="col-tier" style="color:{tier_color}">{r['tier']}</td>
+                <td class="col-drug">{escape_html(r["gene_name"])}</td>
+                <td class="col-score" style="color:{tier_color}">{r["composite_score"]:.2f}</td>
+                <td class="col-sign">{r.get("b_cell_dependency", "-")}</td>
+                <td class="col-overlap">{r.get("autoantibody_association", "-")}</td>
+                <td class="col-cell">{r.get("plasma_cell_relevance", "-")}</td>
+                <td class="col-evid">{r.get("cd19_targeting", "-")}</td>
+                <td class="col-dir">{r.get("clinical_evidence", "-")}</td>
+                <td class="col-tier" style="color:{tier_color}">{r["tier"]}</td>
             </tr>"""
 
     html = render_report(

@@ -74,8 +74,13 @@ def generate_bioinformatics_report(
 
     # ── Stats cards ──────────────────────────────────────────────────────
     stats_cards = _build_stats_cards(
-        enrichment_results, gene_list, hub_scores, ppi_crossref,
-        gwas_results, gwas_crossref, disease_id=disease_id,
+        enrichment_results,
+        gene_list,
+        hub_scores,
+        ppi_crossref,
+        gwas_results,
+        gwas_crossref,
+        disease_id=disease_id,
     )
 
     # ── Assemble HTML via shared Jinja2 template ──────────────────────────
@@ -220,8 +225,13 @@ def _generate_enrichment_dotplot(enrichment_results: dict, max_terms: int = 40) 
         label = label.replace("WikiPathway_2023_Human", "WikiPathways 2023")
         legend_handles.append(
             plt.Line2D(
-                [0], [0], marker="o", color="w", markerfacecolor=color,
-                markersize=8, label=label,
+                [0],
+                [0],
+                marker="o",
+                color="w",
+                markerfacecolor=color,
+                markersize=8,
+                label=label,
             )
         )
 
@@ -231,9 +241,14 @@ def _generate_enrichment_dotplot(enrichment_results: dict, max_terms: int = 40) 
         marker_size = math.sqrt(n_genes * 35)
         size_handles.append(
             plt.Line2D(
-                [0], [0], marker="o", color="w",
-                markerfacecolor="#787890", markersize=marker_size,
-                label=f"{n_genes} genes", alpha=0.6,
+                [0],
+                [0],
+                marker="o",
+                color="w",
+                markerfacecolor="#787890",
+                markersize=marker_size,
+                label=f"{n_genes} genes",
+                alpha=0.6,
             )
         )
 
@@ -338,11 +353,11 @@ def _build_stats_cards(
     if gwas_crossref:
         cards += f"""
             <div class="stat-card">
-                <div class="stat-value" style="color:#4ade80;">{gwas_crossref.get('n_validated', 0)}</div>
+                <div class="stat-value" style="color:#4ade80;">{gwas_crossref.get("n_validated", 0)}</div>
                 <div class="stat-label">GWAS-Validated KG Genes</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value" style="color:#fbbf24;">{gwas_crossref.get('n_novel', 0)}</div>
+                <div class="stat-value" style="color:#fbbf24;">{gwas_crossref.get("n_novel", 0)}</div>
                 <div class="stat-label">Novel GWAS Genes</div>
             </div>"""
 
@@ -400,13 +415,13 @@ def _build_enrichment_section(enrichment_results: dict, gene_list: list) -> str:
             terms_html += f"""
             <div class="enrichment-term">
                 <div class="term-name">
-                    <div style="margin-bottom:2px;">{escape_html(t['term'][:80])}</div>
+                    <div style="margin-bottom:2px;">{escape_html(t["term"][:80])}</div>
                     <div class="term-genes">{genes}</div>
                 </div>
                 <div style="text-align:right;">
                     <span class="badge {sig_class}">{sig_label}</span>
                     <div style="font-size:0.72rem;color:#787890;margin-top:2px;">
-                        OR={t.get('odds_ratio', 0):.1f}
+                        OR={t.get("odds_ratio", 0):.1f}
                     </div>
                 </div>
             </div>"""
@@ -437,10 +452,10 @@ def _build_kg_matches_section(kg_matches: dict) -> str:
         best = min(matches_list, key=lambda m: m["adj_p_value"])
         matches_html += f"""
         <div class="match-card">
-            <span style="min-width:120px;font-weight:600;">{best['kg_pathway_name'][:40]}</span>
+            <span style="min-width:120px;font-weight:600;">{best["kg_pathway_name"][:40]}</span>
             <span class="match-arrow">↔</span>
-            <span style="flex:1;">{best['enrichment_term'][:60]} <span class="muted">({best['library']})</span></span>
-            <span class="badge badge-green">P={best['adj_p_value']:.1e}</span>
+            <span style="flex:1;">{best["enrichment_term"][:60]} <span class="muted">({best["library"]})</span></span>
+            <span class="badge badge-green">P={best["adj_p_value"]:.1e}</span>
         </div>"""
 
     return f"""
@@ -482,11 +497,12 @@ def _generate_ppi_hub_chart(
     hub_vals = [h["hub_score"] for h in lupus_hubs]
 
     # Check if hub has candidates
-    matched_ids = {m["gene_id"] for m in ppi_crossref.get("hub_candidate_matches", [])} if ppi_crossref else set()
-    bar_colors = [
-        "#4ade80" if h.get("gene_id") in matched_ids else "#818cf8"
-        for h in lupus_hubs
-    ]
+    matched_ids = (
+        {m["gene_id"] for m in ppi_crossref.get("hub_candidate_matches", [])}
+        if ppi_crossref
+        else set()
+    )
+    bar_colors = ["#4ade80" if h.get("gene_id") in matched_ids else "#818cf8" for h in lupus_hubs]
 
     fig, ax = plt.subplots(figsize=(10, max(5, len(symbols) * 0.35)))
     fig.patch.set_facecolor("#0a0a0f")
@@ -514,11 +530,18 @@ def _generate_ppi_hub_chart(
         plt.Line2D([0], [0], color="#818cf8", linewidth=8, label="No candidate yet"),
     ]
     ax.legend(
-        handles=legend_handles, loc="lower right", fontsize=7,
-        framealpha=0.9, facecolor="#13131a", edgecolor="#252535", labelcolor="#787890",
+        handles=legend_handles,
+        loc="lower right",
+        fontsize=7,
+        framealpha=0.9,
+        facecolor="#13131a",
+        edgecolor="#252535",
+        labelcolor="#787890",
     )
 
-    ax.set_title(f"{disease_label} Gene Hub Scores", fontsize=12, fontweight="700", color="#e0e0e8", pad=10)
+    ax.set_title(
+        f"{disease_label} Gene Hub Scores", fontsize=12, fontweight="700", color="#e0e0e8", pad=10
+    )
     plt.tight_layout()
 
     buf = io.BytesIO()
@@ -537,13 +560,14 @@ def _run_ppi_communities(G: Any) -> dict:
     """
     try:
         import networkx as nx
+
         communities = nx.community.louvain_communities(G, seed=42, weight="score")
         node_community = {}
         for idx, comm in enumerate(communities):
             for node_id in comm:
                 node_community[node_id] = idx
         return node_community
-    except Exception:
+    except (ValueError, RuntimeError, OSError, TypeError):
         return {n: 0 for n in G.nodes()}
 
 
@@ -645,7 +669,9 @@ def _generate_ppi_network_plot(
         edge_alphas.append(min(0.6, max(0.08, score * 0.5)))
 
     nx.draw_networkx_edges(
-        G, pos, ax=ax,
+        G,
+        pos,
+        ax=ax,
         width=edge_widths,
         alpha=edge_alphas,
         edge_color="#a0a0c0",
@@ -660,9 +686,14 @@ def _generate_ppi_network_plot(
                 mx = (pos[src][0] + pos[tgt][0]) / 2
                 my = (pos[src][1] + pos[tgt][1]) / 2
                 ax.text(
-                    mx, my, f"{score:.2f}",
-                    fontsize=4.5, color="#787890", alpha=0.7,
-                    ha="center", va="center",
+                    mx,
+                    my,
+                    f"{score:.2f}",
+                    fontsize=4.5,
+                    color="#787890",
+                    alpha=0.7,
+                    ha="center",
+                    va="center",
                     bbox=dict(boxstyle="round,pad=0.1", fc="#0a0a0f", ec="none", alpha=0.6),
                 )
 
@@ -681,7 +712,9 @@ def _generate_ppi_network_plot(
             for n in other_nodes
         ]
         nx.draw_networkx_nodes(
-            G, pos, ax=ax,
+            G,
+            pos,
+            ax=ax,
             nodelist=other_nodes,
             node_size=[node_size(n) for n in other_nodes],
             node_color=other_colors,
@@ -693,11 +726,12 @@ def _generate_ppi_network_plot(
     # Draw seed nodes on top (brighter, thicker border)
     if seed_nodes:
         seed_colors = [
-            COMMUNITY_PALETTE[node_community.get(n, 0) % len(COMMUNITY_PALETTE)]
-            for n in seed_nodes
+            COMMUNITY_PALETTE[node_community.get(n, 0) % len(COMMUNITY_PALETTE)] for n in seed_nodes
         ]
         nx.draw_networkx_nodes(
-            G, pos, ax=ax,
+            G,
+            pos,
+            ax=ax,
             nodelist=seed_nodes,
             node_size=[node_size(n) for n in seed_nodes],
             node_color=seed_colors,
@@ -715,7 +749,10 @@ def _generate_ppi_network_plot(
 
     labels = {n: G.nodes[n].get("symbol", n)[:12] for n in label_nodes}
     nx.draw_networkx_labels(
-        G, pos, labels, ax=ax,
+        G,
+        pos,
+        labels,
+        ax=ax,
         font_size=7,
         font_color="#e0e0e8",
         font_weight="600",
@@ -723,31 +760,56 @@ def _generate_ppi_network_plot(
 
     # ── Legend ───────────────────────────────────────────────────────
     legend_handles = [
-        plt.Line2D([0], [0], marker="o", color="w", markerfacecolor="#4ade80",
-                   markersize=10, markeredgecolor="#ffffff", markeredgewidth=1.2,
-                   label=f"{disease_label} Gene (seed)"),
-        plt.Line2D([0], [0], marker="o", color="w", markerfacecolor="#818cf8",
-                   markersize=8, markeredgecolor="#1a1a24", markeredgewidth=0.5,
-                   label="Interacting Protein"),
+        plt.Line2D(
+            [0],
+            [0],
+            marker="o",
+            color="w",
+            markerfacecolor="#4ade80",
+            markersize=10,
+            markeredgecolor="#ffffff",
+            markeredgewidth=1.2,
+            label=f"{disease_label} Gene (seed)",
+        ),
+        plt.Line2D(
+            [0],
+            [0],
+            marker="o",
+            color="w",
+            markerfacecolor="#818cf8",
+            markersize=8,
+            markeredgecolor="#1a1a24",
+            markeredgewidth=0.5,
+            label="Interacting Protein",
+        ),
         plt.Line2D([0], [0], color="#a0a0c0", linewidth=1.5, label="PPI (score)"),
     ]
     # Add community count
     if n_communities > 1:
         legend_handles.append(
-            plt.Line2D([0], [0], marker="", linestyle="",
-                       label=f"{n_communities} communities (Louvain)")
+            plt.Line2D(
+                [0], [0], marker="", linestyle="", label=f"{n_communities} communities (Louvain)"
+            )
         )
 
     ax.legend(
-        handles=legend_handles, loc="upper left", fontsize=7,
-        framealpha=0.9, facecolor="#13131a", edgecolor="#252535",
-        labelcolor="#787890", borderpad=0.8,
+        handles=legend_handles,
+        loc="upper left",
+        fontsize=7,
+        framealpha=0.9,
+        facecolor="#13131a",
+        edgecolor="#252535",
+        labelcolor="#787890",
+        borderpad=0.8,
     )
 
     ax.set_title(
         f"PPI Network — {disease_label} Seed Genes & Interactors"
         + (f" ({n_communities} communities)" if n_communities > 1 else ""),
-        fontsize=13, fontweight="700", color="#e0e0e8", pad=12,
+        fontsize=13,
+        fontweight="700",
+        color="#e0e0e8",
+        pad=12,
     )
 
     plt.tight_layout()
@@ -814,9 +876,12 @@ def _generate_ppi_interactive(ppi_graph: dict, hub_scores: list) -> str:
 
     # ── Create pyvis network ─────────────────────────────────────────
     net = Network(
-        height="700px", width="100%",
-        bgcolor="#0a0a0f", font_color="#e0e0e8",
-        directed=False, notebook=False,
+        height="700px",
+        width="100%",
+        bgcolor="#0a0a0f",
+        font_color="#e0e0e8",
+        directed=False,
+        notebook=False,
     )
 
     # Physics for better layout
@@ -872,7 +937,8 @@ def _generate_ppi_interactive(ppi_graph: dict, hub_scores: list) -> str:
         score = data.get("score", 0.5)
         width = max(0.5, score * 3)
         net.add_edge(
-            src, tgt,
+            src,
+            tgt,
             value=score,
             width=width,
             title=f"STRING score: {score:.3f}",
@@ -907,16 +973,16 @@ def _build_ppi_section(
         hub_rows += f"""
         <div class="hub-card {row_class}">
             <div class="hub-header">
-                <span class="hub-symbol">{marker} {escape_html(h['symbol'])}</span>
-                <span class="hub-score" style="color:{'#4ade80' if h['hub_score'] > 0.1 else '#fbbf24' if h['hub_score'] > 0.02 else '#787890'}">
-                    {h['hub_score']:.4f}
+                <span class="hub-symbol">{marker} {escape_html(h["symbol"])}</span>
+                <span class="hub-score" style="color:{"#4ade80" if h["hub_score"] > 0.1 else "#fbbf24" if h["hub_score"] > 0.02 else "#787890"}">
+                    {h["hub_score"]:.4f}
                 </span>
             </div>
             <div class="hub-meta">
-                <span>Degree: {h.get('degree', 0)}</span>
-                <span>Betweenness: {h.get('betweenness_centrality', 0):.4f}</span>
+                <span>Degree: {h.get("degree", 0)}</span>
+                <span>Betweenness: {h.get("betweenness_centrality", 0):.4f}</span>
             </div>
-            {f'<div class="hub-meta"><span>Gene: {escape_html(h.get("gene_id", ""))}</span></div>' if h.get("gene_id") else ''}
+            {f'<div class="hub-meta"><span>Gene: {escape_html(h.get("gene_id", ""))}</span></div>' if h.get("gene_id") else ""}
         </div>"""
 
     # Hub candidate matches
@@ -926,14 +992,13 @@ def _build_ppi_section(
         for m in candidate_matches:
             cands = m.get("candidates", [])
             cand_str = ", ".join(
-                f"{c['drug_name'][:35]} ({c.get('composite_score', '?')})"
-                for c in cands[:3]
+                f"{c['drug_name'][:35]} ({c.get('composite_score', '?')})" for c in cands[:3]
             )
             matches_html += f"""
             <div class="match-card">
-                <span style="min-width:100px;font-weight:600;">🧬 {escape_html(m['symbol'])}</span>
+                <span style="min-width:100px;font-weight:600;">🧬 {escape_html(m["symbol"])}</span>
                 <span style="flex:1;font-size:0.82rem;">{cand_str}</span>
-                <span class="badge badge-purple">{m.get('n_candidates', 0)} candidates</span>
+                <span class="badge badge-purple">{m.get("n_candidates", 0)} candidates</span>
             </div>"""
 
     # Untargeted hubs
@@ -944,11 +1009,11 @@ def _build_ppi_section(
             untargeted_html += f"""
             <div class="hub-card nonlupus">
                 <div class="hub-header">
-                    <span class="hub-symbol">💡 {escape_html(u['symbol'])}</span>
-                    <span class="hub-score">Hub: {u['hub_score']:.4f}</span>
+                    <span class="hub-symbol">💡 {escape_html(u["symbol"])}</span>
+                    <span class="hub-score">Hub: {u["hub_score"]:.4f}</span>
                 </div>
                 <div class="hub-meta">
-                    <span>Degree: {u.get('degree', 0)}</span>
+                    <span>Degree: {u.get("degree", 0)}</span>
                     <span>New opportunity</span>
                 </div>
             </div>"""
@@ -1010,9 +1075,9 @@ def _build_ppi_section(
         <h3 style="font-size:1rem;font-weight:600;margin:16px 0 10px;color:#a0a0b0;">🏆 Top Hub Proteins</h3>
         <div class="hub-grid">{hub_rows}</div>
 
-        {f'<h3 style="font-size:1rem;font-weight:600;margin:24px 0 10px;color:#a0a0b0;">🎯 Hub Genes with Repurposing Candidates</h3>{matches_html}' if matches_html else ''}
+        {f'<h3 style="font-size:1rem;font-weight:600;margin:24px 0 10px;color:#a0a0b0;">🎯 Hub Genes with Repurposing Candidates</h3>{matches_html}' if matches_html else ""}
 
-        {f'<h3 style="font-size:1rem;font-weight:600;margin:24px 0 10px;color:#a0a0b0;">💡 Untargeted Hub Genes (New Opportunities)</h3><div class="hub-grid">{untargeted_html}</div>' if untargeted_html else ''}
+        {f'<h3 style="font-size:1rem;font-weight:600;margin:24px 0 10px;color:#a0a0b0;">💡 Untargeted Hub Genes (New Opportunities)</h3><div class="hub-grid">{untargeted_html}</div>' if untargeted_html else ""}
     """
 
 
@@ -1044,13 +1109,15 @@ def _generate_gwas_manhattan(gwas_results: dict, *, disease_id: str = "sle") -> 
     for s in snp_data:
         ch = s.get("chromosome", "")
         if ch in chr_rank and s.get("p_value", 1.0) > 0:
-            valid_snps.append({
-                "chromosome": ch,
-                "position": int(s.get("position", 0)),
-                "p_value": float(s["p_value"]),
-                "neg_log_p": -math.log10(float(s["p_value"])),
-                "rsid": s.get("rsid", ""),
-            })
+            valid_snps.append(
+                {
+                    "chromosome": ch,
+                    "position": int(s.get("position", 0)),
+                    "p_value": float(s["p_value"]),
+                    "neg_log_p": -math.log10(float(s["p_value"])),
+                    "rsid": s.get("rsid", ""),
+                }
+            )
 
     if not valid_snps:
         return ""
@@ -1101,17 +1168,22 @@ def _generate_gwas_manhattan(gwas_results: dict, *, disease_id: str = "sle") -> 
     # Genome-wide significance line
     gw_sig = -math.log10(5e-8)
     ax.axhline(y=gw_sig, color="#f43f5e", linewidth=1, linestyle="--", alpha=0.6, zorder=1)
-    ax.text(x_positions[-1] * 0.01, gw_sig + 0.3, "p = 5×10⁻⁸", fontsize=7, color="#f43f5e", alpha=0.7)
+    ax.text(
+        x_positions[-1] * 0.01, gw_sig + 0.3, "p = 5×10⁻⁸", fontsize=7, color="#f43f5e", alpha=0.7
+    )
 
     # Suggestive line
     sugg = -math.log10(1e-5)
     ax.axhline(y=sugg, color="#fbbf24", linewidth=0.7, linestyle="--", alpha=0.4, zorder=1)
 
     # Chromosome labels
-    ax.set_xticks([chr_midpoints[c] for c in sorted(chr_midpoints.keys(), key=lambda c: chr_rank.get(c, 99))])
+    ax.set_xticks(
+        [chr_midpoints[c] for c in sorted(chr_midpoints.keys(), key=lambda c: chr_rank.get(c, 99))]
+    )
     ax.set_xticklabels(
         [c for c in sorted(chr_midpoints.keys(), key=lambda c: chr_rank.get(c, 99))],
-        fontsize=8, color="#787890",
+        fontsize=8,
+        color="#787890",
     )
 
     ax.set_ylabel("-log₁₀(p-value)", fontsize=10, color="#787890", fontweight="600")
@@ -1134,7 +1206,9 @@ def _generate_gwas_manhattan(gwas_results: dict, *, disease_id: str = "sle") -> 
     top_indices = sorted(range(len(y_values)), key=lambda i: y_values[i], reverse=True)[:top_n]
     for idx in top_indices:
         rsid = valid_snps[idx]["rsid"]
-        label = rsid if rsid else f"chr{valid_snps[idx]['chromosome']}:{valid_snps[idx]['position']}"
+        label = (
+            rsid if rsid else f"chr{valid_snps[idx]['chromosome']}:{valid_snps[idx]['position']}"
+        )
         ax.annotate(
             label,
             (x_positions[idx], y_values[idx]),
@@ -1147,7 +1221,13 @@ def _generate_gwas_manhattan(gwas_results: dict, *, disease_id: str = "sle") -> 
             fontweight="600",
         )
 
-    ax.set_title(f"GWAS Manhattan Plot — {disease_label} SNPs", fontsize=12, fontweight="700", color="#e0e0e8", pad=10)
+    ax.set_title(
+        f"GWAS Manhattan Plot — {disease_label} SNPs",
+        fontsize=12,
+        fontweight="700",
+        color="#e0e0e8",
+        pad=10,
+    )
     plt.tight_layout()
 
     buf = io.BytesIO()
@@ -1179,16 +1259,14 @@ def _build_gwas_section(
                 <span class="badge badge-green">Validated</span>
             </div>
             <div class="muted" style="font-size:0.75rem;">
-                {info['n_gwas_studies']} GWAS studies | KG OR={info.get('odds_ratio', 'N/A')}
+                {info["n_gwas_studies"]} GWAS studies | KG OR={info.get("odds_ratio", "N/A")}
             </div>
-            <div class="muted" style="font-size:0.72rem;margin-top:4px;">{escape_html(info.get('category', ''))}</div>
+            <div class="muted" style="font-size:0.72rem;margin-top:4px;">{escape_html(info.get("category", ""))}</div>
         </div>"""
 
     # Novel genes (top 8)
     novel = gwas_crossref.get("novel", {})
-    for gene_name, info in sorted(
-        novel.items(), key=lambda x: x[1]["n_studies"], reverse=True
-    )[:8]:
+    for gene_name, info in sorted(novel.items(), key=lambda x: x[1]["n_studies"], reverse=True)[:8]:
         cards_html += f"""
         <div class="gwas-card novel">
             <div style="display:flex;justify-content:space-between;margin-bottom:4px;">
@@ -1196,7 +1274,7 @@ def _build_gwas_section(
                 <span class="badge badge-yellow">Novel</span>
             </div>
             <div class="muted" style="font-size:0.75rem;">
-                {info['n_studies']} GWAS studies | Best P={info['best_p_value']:.1e}
+                {info["n_studies"]} GWAS studies | Best P={info["best_p_value"]:.1e}
             </div>
         </div>"""
 
@@ -1206,10 +1284,10 @@ def _build_gwas_section(
         cards_html += f"""
         <div class="gwas-card missing">
             <div style="display:flex;justify-content:space-between;margin-bottom:4px;">
-                <strong>{escape_html(info['name'][:40])}</strong>
+                <strong>{escape_html(info["name"][:40])}</strong>
                 <span class="badge badge-red">No GWAS hit</span>
             </div>
-            <div class="muted" style="font-size:0.75rem;">{escape_html(info.get('category', ''))}</div>
+            <div class="muted" style="font-size:0.75rem;">{escape_html(info.get("category", ""))}</div>
         </div>"""
 
     # Generate Manhattan plot
@@ -1244,8 +1322,5 @@ def escape_html(text: str) -> str:
     if not text:
         return ""
     return (
-        text.replace("&", "&amp;")
-        .replace("<", "&lt;")
-        .replace(">", "&gt;")
-        .replace('"', "&quot;")
+        text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
     )

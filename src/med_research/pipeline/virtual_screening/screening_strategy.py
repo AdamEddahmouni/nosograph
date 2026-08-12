@@ -109,7 +109,9 @@ def validate_strategy(
     if not strategy.curated_inputs:
         raise ValueError(f"Screening strategy '{strategy.strategy_id}' has no curated inputs")
     if not strategy.inferred_inputs:
-        raise ValueError(f"Screening strategy '{strategy.strategy_id}' has no inferred-input declaration")
+        raise ValueError(
+            f"Screening strategy '{strategy.strategy_id}' has no inferred-input declaration"
+        )
     if not strategy.limitations:
         raise ValueError(f"Screening strategy '{strategy.strategy_id}' has no limitations")
 

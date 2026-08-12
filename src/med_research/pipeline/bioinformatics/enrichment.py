@@ -47,9 +47,7 @@ try:
     GSEAPY_AVAILABLE = True
 except ImportError:
     GSEAPY_AVAILABLE = False
-    logger.info(
-        "⚠️  GSEApy not installed. Install with: pip install gseapy"
-    )
+    logger.info("⚠️  GSEApy not installed. Install with: pip install gseapy")
 
 # Gene set libraries to query
 GENE_SET_LIBRARIES = [
@@ -74,10 +72,11 @@ def load_kg_graph(disease_id: str = "sle") -> nx.MultiDiGraph:
 
 
 def get_lupus_gene_list(
-    genes: dict, G: nx.MultiDiGraph = None, untargeted_only: bool = False,
+    genes: dict,
+    G: nx.MultiDiGraph = None,
+    untargeted_only: bool = False,
     disease_id: str = "sle",
 ) -> list:
-
     """Return the active disease's analyzable gene list.
 
     .. deprecated::
@@ -95,7 +94,9 @@ def get_lupus_gene_list(
 
 
 def get_disease_gene_list(
-    genes: dict, G: nx.MultiDiGraph = None, untargeted_only: bool = False,
+    genes: dict,
+    G: nx.MultiDiGraph = None,
+    untargeted_only: bool = False,
     disease_id: str = "sle",
 ) -> list:
     """Return the active disease's analyzable gene list."""
@@ -235,23 +236,13 @@ def run_enrichment(
                             "term": row.get("Term", ""),
                             "overlap": str(row.get("Overlap", "")),
                             "p_value": float(row.get("P-value", 1.0)),
-                            "adj_p_value": float(
-                                row.get("Adjusted P-value", 1.0)
-                            ),
+                            "adj_p_value": float(row.get("Adjusted P-value", 1.0)),
                             "odds_ratio": float(row.get("Odds Ratio", 1.0)),
-                            "combined_score": float(
-                                row.get("Combined Score", 0)
-                            ),
+                            "combined_score": float(row.get("Combined Score", 0)),
                             "genes": str(row.get("Genes", "")).split(";"),
                         }
                     )
-                sig_count = len(
-                    [
-                        t
-                        for t in results[library]["terms"]
-                        if t["adj_p_value"] < 0.05
-                    ]
-                )
+                sig_count = len([t for t in results[library]["terms"] if t["adj_p_value"] < 0.05])
                 logger.info(
                     f"      {sig_count} significant terms (adj p < 0.05) "
                     f"out of {results[library]['total_significant']} total hits"
@@ -322,7 +313,9 @@ def cross_reference_with_kg_pathways(
                         and any(
                             kw in term_lower
                             for kw in [
-                                *__import__("med_research.diseases.base", fromlist=["Disease"]).Disease(disease_id).get_pathway_keywords(),
+                                *__import__("med_research.diseases.base", fromlist=["Disease"])
+                                .Disease(disease_id)
+                                .get_pathway_keywords(),
                             ]
                         )
                     )
@@ -407,12 +400,8 @@ def run_enrichment_analysis(
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="Lupus Pathway Enrichment Analysis"
-    )
-    parser.add_argument(
-        "--export-html", action="store_true", help="Generate HTML report"
-    )
+    parser = argparse.ArgumentParser(description="Lupus Pathway Enrichment Analysis")
+    parser.add_argument("--export-html", action="store_true", help="Generate HTML report")
     parser.add_argument(
         "--untargeted-only",
         action="store_true",
@@ -423,9 +412,7 @@ def main():
         action="store_true",
         help="Skip cache, re-run enrichment from GSEApy",
     )
-    parser.add_argument(
-        "--disease", "-d", default="sle", help="Disease ID (default: sle)"
-    )
+    parser.add_argument("--disease", "-d", default="sle", help="Disease ID (default: sle)")
     args = parser.parse_args()
 
     result = run_enrichment_analysis(
@@ -478,19 +465,13 @@ def analyze(enrichment_results: dict, gene_list: list, kg_matches: dict) -> None
     for library, result in enrichment_results.items():
         lib_name = result.get("library", library)
         n_terms = len(result.get("terms", []))
-        n_sig = len(
-            [t for t in result.get("terms", []) if t["adj_p_value"] < 0.05]
-        )
+        n_sig = len([t for t in result.get("terms", []) if t["adj_p_value"] < 0.05])
         logger.info(f"\n  📚 {lib_name}")
         logger.info(f"     {n_terms} top terms ({n_sig} significant at adj p < 0.05)")
 
         for i, term in enumerate(result.get("terms", [])[:8], 1):
-            sig_marker = (
-                "✅" if term["adj_p_value"] < 0.05 else "  "
-            )
-            logger.info(
-                f"     {sig_marker} {i}. {term['term'][:70]}"
-            )
+            sig_marker = "✅" if term["adj_p_value"] < 0.05 else "  "
+            logger.info(f"     {sig_marker} {i}. {term['term'][:70]}")
             logger.info(
                 f"         P={term['p_value']:.2e} | "
                 f"adj P={term['adj_p_value']:.2e} | "
@@ -513,6 +494,9 @@ def analyze(enrichment_results: dict, gene_list: list, kg_matches: dict) -> None
 
 
 if __name__ == "__main__":
-    result = main()
-    if isinstance(result, dict) and result.get("status") == "blocked":
-        raise SystemExit(1)
+    import sys
+
+    from med_research.cli import main as cli_main
+
+    sys.exit(cli_main() or 0)
+

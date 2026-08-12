@@ -21,7 +21,7 @@ import re
 
 # ── Sentence splitting ──────────────────────────────────────────────────
 
-_SENTENCE_RE = re.compile(r'(?<=[.!?])\s+(?=[A-Z])')
+_SENTENCE_RE = re.compile(r"(?<=[.!?])\s+(?=[A-Z])")
 
 
 def _split_sentences(text: str) -> list:

@@ -47,6 +47,7 @@ last_coverage = None
 def load_graph(disease_id: str = "sle") -> Any:
     """Load the knowledge graph for the requested disease."""
     from med_research.pipeline.knowledge_graph.builder import build_graph
+
     return build_graph(disease_id)
 
 
@@ -168,6 +169,7 @@ def compute_communities(
     try:
         # NetworkX 3.x Louvain
         from networkx.algorithms.community import louvain_communities
+
         raw_communities = louvain_communities(UG, seed=42)
         communities = [sorted(list(c)) for c in raw_communities]
         modularity = nx.community.modularity(UG, raw_communities)
@@ -175,6 +177,7 @@ def compute_communities(
     except (ImportError, AttributeError):
         # Fallback to greedy modularity (always available)
         from networkx.algorithms.community import greedy_modularity_communities
+
         raw_communities = greedy_modularity_communities(UG)
         communities = [sorted(list(c)) for c in raw_communities]
         modularity = nx.community.modularity(UG, raw_communities)
@@ -191,14 +194,16 @@ def compute_communities(
             type_counts[ntype] += 1
             labels.append(ndata.get("label", node_id))
         dominant_type = max(type_counts, key=lambda t: type_counts.get(t, 0))
-        community_labels.append({
-            "id": i + 1,
-            "size": len(comm),
-            "dominant_type": dominant_type,
-            "node_ids": comm,
-            "node_labels": labels,
-            "type_distribution": dict(type_counts),
-        })
+        community_labels.append(
+            {
+                "id": i + 1,
+                "size": len(comm),
+                "dominant_type": dominant_type,
+                "node_ids": comm,
+                "node_labels": labels,
+                "type_distribution": dict(type_counts),
+            }
+        )
 
     _tick(progress_callback, "community detection", 4, 4)
 
@@ -248,7 +253,7 @@ def compute_graph_metrics(G: Any = None) -> GraphMetrics:
     # Degree assortativity
     try:
         assortativity = nx.degree_assortativity_coefficient(UG)
-    except Exception:
+    except (ValueError, RuntimeError, nx.NetworkXError):
         assortativity = 0.0
 
     return {
@@ -274,9 +279,7 @@ def compute_all_metrics(
     from med_research.diseases.coverage import module_coverage
 
     global last_coverage
-    coverage = module_coverage(
-        disease_id, "network_pharm", ("genes", "relationships")
-    )
+    coverage = module_coverage(disease_id, "network_pharm", ("genes", "relationships"))
     last_coverage = coverage
     if not coverage.is_runnable:
         _tick(progress_callback, "network pharmacology blocked", 1, 1)
@@ -342,7 +345,9 @@ def print_analysis(results: NetworkAnalysis) -> None:
     logger.info(f"   Nodes: {gm['n_nodes']}  |  Edges: {gm['n_edges']}")
     logger.info(f"   Density: {gm['density']}  |  Components: {gm['n_components']}")
     logger.info(f"   Diameter: {gm['diameter']}  |  Avg Path: {gm['avg_shortest_path']}")
-    logger.info(f"   Avg Clustering: {gm['avg_clustering']}  |  Assortativity: {gm['assortativity']}")
+    logger.info(
+        f"   Avg Clustering: {gm['avg_clustering']}  |  Assortativity: {gm['assortativity']}"
+    )
 
     com = results["communities"]
     logger.info(f"\n🔗 Community Detection ({com['algorithm']}, modularity={com['modularity']}):")
@@ -392,9 +397,13 @@ def main():
         communities = compute_communities(
             G=load_graph(args.disease), progress_callback=cli_progress
         )
-        logger.info(f"\n🔗 Communities (modularity={communities['modularity']}, {communities['n_communities']} total):")
+        logger.info(
+            f"\n🔗 Communities (modularity={communities['modularity']}, {communities['n_communities']} total):"
+        )
         for c in communities["communities"]:
-            logger.info(f"\n  Community {c['id']} ({c['size']} nodes, dominant: {c['dominant_type']}):")
+            logger.info(
+                f"\n  Community {c['id']} ({c['size']} nodes, dominant: {c['dominant_type']}):"
+            )
             for label in c["node_labels"][:8]:
                 logger.info(f"    • {label}")
             if len(c["node_labels"]) > 8:
@@ -414,13 +423,16 @@ def main():
             sources=["knowledge_graph"],
             cache_or_live="cache",
         )
-        generate_html_report(
-            cast(dict, results), disease_id=args.disease, provenance=provenance
-        )
+        generate_html_report(cast(dict, results), disease_id=args.disease, provenance=provenance)
         logger.info("\n✅ HTML report generated: network_pharmacology/report.html")
 
     return results
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+
+    from med_research.cli import main as cli_main
+
+    sys.exit(cli_main() or 0)
+

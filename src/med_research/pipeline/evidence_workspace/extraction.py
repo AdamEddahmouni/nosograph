@@ -287,7 +287,7 @@ def enrich_with_llm(
                 claims.append(claim)
         warnings = [f"LLM enrichment discarded {invalid} invalid claim(s)."] if invalid else []
         return ExtractionResult(claims, warnings, "completed")
-    except Exception as exc:  # optional integration must not block deterministic output
+    except (OSError, ValueError, TypeError, KeyError, ImportError, RuntimeError) as exc:
         return ExtractionResult(
             [], [f"LLM enrichment failed: {type(exc).__name__}: {exc}"], "failed"
         )

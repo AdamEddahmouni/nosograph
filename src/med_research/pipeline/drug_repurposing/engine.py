@@ -57,6 +57,7 @@ def load_json(path: Path) -> dict:
 def load_knowledge_graph(disease_id: str = "sle") -> nx.MultiDiGraph:
     """Load the knowledge graph using the existing build_graph module."""
     from med_research.pipeline.knowledge_graph.builder import build_graph
+
     return build_graph(disease_id)
 
 
@@ -93,8 +94,7 @@ def compute_pathway_proximity(G: nx.MultiDiGraph, gene_id: str, candidate: dict[
         n
         for n, d in G.nodes(data=True)
         if d.get("type") == "drug"
-        and candidate["drug_name"].lower().split("(")[0].strip()
-        in d.get("label", "").lower()
+        and candidate["drug_name"].lower().split("(")[0].strip() in d.get("label", "").lower()
     ]
 
     if drug_nodes and gene_id in G:
@@ -139,7 +139,9 @@ def identify_untargeted_genes(G: nx.MultiDiGraph, disease_id: str = "sle") -> li
                     "name": data.get("label", node),
                     "function": data.get("description", ""),
                     "lupus_evidence": data.get("disease_evidence", data.get("lupus_evidence", "")),
-                    "disease_evidence": data.get("disease_evidence", data.get("lupus_evidence", "")),
+                    "disease_evidence": data.get(
+                        "disease_evidence", data.get("lupus_evidence", "")
+                    ),
                     "odds_ratio": data.get("odds_ratio"),
                     "category": data.get("category", ""),
                     "chromosome": data.get("chromosome", ""),
@@ -149,6 +151,7 @@ def identify_untargeted_genes(G: nx.MultiDiGraph, disease_id: str = "sle") -> li
     # Filter out drug-target genes (CD20, IMPDH, Calcineurin, Glucocorticoid Receptor)
     # These aren't lupus risk genes - they're drug targets we added
     from med_research.diseases.base import Disease
+
     excluded = Disease(disease_id).get_drug_target_exclusions()
     untargeted = [g for g in untargeted if g["id"] not in excluded]
 
@@ -222,11 +225,17 @@ def score_candidates(
                 compute_adverse_event_score,
                 load_profiles,
             )
+
             # Match by drug ID from the KG drugs dict (same IDs as profiles)
             for drug_id, drug_data in drugs.items():
-                if drug_data.get("name", "").lower() in candidate["drug_name"].lower() or \
-                   candidate["drug_name"].lower().split("(")[0].strip() in drug_data.get("name", "").lower():
-                    profile_result = compute_adverse_event_score(load_profiles().get(drug_id, {}), disease_id)
+                if (
+                    drug_data.get("name", "").lower() in candidate["drug_name"].lower()
+                    or candidate["drug_name"].lower().split("(")[0].strip()
+                    in drug_data.get("name", "").lower()
+                ):
+                    profile_result = compute_adverse_event_score(
+                        load_profiles().get(drug_id, {}), disease_id
+                    )
                     if profile_result and "composite_safety_score" in profile_result:
                         adverse_score = profile_result["composite_safety_score"]
                     break
@@ -249,8 +258,12 @@ def score_candidates(
                     "gene_name": gene_info.get("name", gene_id),
                     "gene_category": gene_info.get("category", ""),
                     "gene_function": gene_info.get("function", ""),
-                    "gene_lupus_evidence": gene_info.get("disease_evidence", gene_info.get("lupus_evidence", "")),
-                    "gene_disease_evidence": gene_info.get("disease_evidence", gene_info.get("lupus_evidence", "")),
+                    "gene_lupus_evidence": gene_info.get(
+                        "disease_evidence", gene_info.get("lupus_evidence", "")
+                    ),
+                    "gene_disease_evidence": gene_info.get(
+                        "disease_evidence", gene_info.get("lupus_evidence", "")
+                    ),
                     "gene_odds_ratio": gene_info.get("odds_ratio"),
                 },
             )
@@ -285,9 +298,16 @@ def analyze(scored_candidates: list) -> None:
         tier_counts[c["tier"]] += 1
 
     logger.info(f"\n  Total candidates evaluated: {len(scored_candidates)}")
-    logger.info(f"  Score range: {min(c['composite_score'] for c in scored_candidates):.2f} - {max(c['composite_score'] for c in scored_candidates):.2f}")
+    logger.info(
+        f"  Score range: {min(c['composite_score'] for c in scored_candidates):.2f} - {max(c['composite_score'] for c in scored_candidates):.2f}"
+    )
     logger.info("\n  Distribution by priority tier:")
-    for tier in ["🔴 Tier 1 — Highest Priority", "🟠 Tier 2 — High Priority", "🟡 Tier 3 — Medium Priority", "🟢 Tier 4 — Lower Priority"]:
+    for tier in [
+        "🔴 Tier 1 — Highest Priority",
+        "🟠 Tier 2 — High Priority",
+        "🟡 Tier 3 — Medium Priority",
+        "🟢 Tier 4 — Lower Priority",
+    ]:
         count = tier_counts[tier]
         if count > 0:
             logger.info(f"    {tier}: {count} candidates")
@@ -310,14 +330,12 @@ def analyze(scored_candidates: list) -> None:
         drug_scores[c["drug_name"]].append(c["composite_score"])
 
     logger.info("\n  Most promising drugs (across multiple genes):")
-    multi_gene_drugs = [
-        (drug, scores)
-        for drug, scores in drug_scores.items()
-        if len(scores) >= 2
-    ]
+    multi_gene_drugs = [(drug, scores) for drug, scores in drug_scores.items() if len(scores) >= 2]
     multi_gene_drugs.sort(key=lambda x: sum(x[1]) / len(x[1]), reverse=True)
     for drug, scores in multi_gene_drugs[:8]:
-        logger.info(f"    {drug}: targets {len(scores)} genes (avg: {sum(scores)/len(scores):.2f})")
+        logger.info(
+            f"    {drug}: targets {len(scores)} genes (avg: {sum(scores) / len(scores):.2f})"
+        )
 
 
 def print_top_candidates(scored_candidates: list, top_n: int = 10) -> None:
@@ -337,7 +355,9 @@ def print_top_candidates(scored_candidates: list, top_n: int = 10) -> None:
         logger.info(f"     ├─ Pathway Proximity:     {c['final_proximity']:.1f}/10")
         logger.info(f"     ├─ Mechanistic Rationale: {c['mechanistic_rationale_score']}/10")
         logger.info(f"     ├─ Clinical Evidence:     {c['clinical_evidence_score']}/10")
-        logger.info(f"     ├─ Adverse Event Profile:  {c.get('adverse_event_score', c.get('safety_score', 'N/A'))}/10")
+        logger.info(
+            f"     ├─ Adverse Event Profile:  {c.get('adverse_event_score', c.get('safety_score', 'N/A'))}/10"
+        )
         logger.info(f"     └─ Novelty Bonus:         {c['novelty_score']}/5")
         logger.info(f"  📋 Evidence:   {c['evidence_level']}")
         logger.info(f"  🔬 Mechanism:  {c['mechanism'][:150]}...")
@@ -365,7 +385,9 @@ def print_gene_analysis(scored_candidates: list, genes: dict, gene_id: str) -> N
 
     logger.info(f"\n  📋 {len(gene_candidates)} repurposing candidates:")
     for i, c in enumerate(gene_candidates, 1):
-        logger.info(f"\n    {i}. {c['drug_name']} | Score: {c['composite_score']:.2f} | {c['tier']}")
+        logger.info(
+            f"\n    {i}. {c['drug_name']} | Score: {c['composite_score']:.2f} | {c['tier']}"
+        )
         logger.info(f"       Mechanism: {c['mechanism'][:120]}...")
         logger.info(f"       Rationale: {c['rationale'][:150]}...")
         logger.info(f"       Evidence:  {c['evidence_level']}")
@@ -376,8 +398,7 @@ def main():
     parser = argparse.ArgumentParser(
         description="Drug Repurposing Engine — Multi-modal scoring for untargeted genes"
     )
-    parser.add_argument("--disease", type=str, default="sle",
-                        help="Disease ID (default: sle)")
+    parser.add_argument("--disease", type=str, default="sle", help="Disease ID (default: sle)")
     parser.add_argument("--top", type=int, default=15, help="Number of top candidates to display")
     parser.add_argument("--gene", type=str, help="Focus analysis on a specific gene ID")
     parser.add_argument("--export-html", action="store_true", help="Export HTML report")
@@ -386,14 +407,11 @@ def main():
     from med_research.diseases.coverage import module_coverage
 
     global last_coverage
-    coverage = module_coverage(
-        args.disease, "repurposing", ("genes", "drugs", "relationships")
-    )
+    coverage = module_coverage(args.disease, "repurposing", ("genes", "drugs", "relationships"))
     last_coverage = coverage
     if not coverage.is_runnable:
         logger.error(
-            f"❌ Drug repurposing blocked for {args.disease}: "
-            f"{', '.join(coverage.missing_inputs)}"
+            f"❌ Drug repurposing blocked for {args.disease}: {', '.join(coverage.missing_inputs)}"
         )
         return []
 
@@ -421,7 +439,9 @@ def main():
 
     # Filter to only candidates for actually untargeted genes
     scored = [c for c in scored if c["gene_id"] in untargeted_ids]
-    logger.info(f"   Scored {len(scored)} candidates across {len(set(c['gene_id'] for c in scored))} genes")
+    logger.info(
+        f"   Scored {len(scored)} candidates across {len(set(c['gene_id'] for c in scored))} genes"
+    )
 
     analyze(scored)
 
@@ -450,4 +470,9 @@ def main():
 
 
 if __name__ == "__main__":
-    scored = main()
+    import sys
+
+    from med_research.cli import main as cli_main
+
+    sys.exit(cli_main() or 0)
+

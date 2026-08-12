@@ -38,6 +38,7 @@ LIT_DATA_DIR = Path(__file__).parent.parent / "literature_mining" / "data"
 
 try:
     import chromadb
+
     CHROMADB_AVAILABLE = True
 except ImportError:
     chromadb = None  # type: ignore[assignment]
@@ -45,6 +46,7 @@ except ImportError:
 
 try:
     from sentence_transformers import SentenceTransformer
+
     ST_AVAILABLE = True
 except ImportError:
     ST_AVAILABLE = False
@@ -75,9 +77,7 @@ def resolve_semantic_coverage(disease_id: str) -> ModuleCoverage:
     if not ST_AVAILABLE:
         missing_deps.append("sentence-transformers")
     if missing_deps:
-        warnings.append(
-            "Optional dependencies missing: " + ", ".join(missing_deps) + "."
-        )
+        warnings.append("Optional dependencies missing: " + ", ".join(missing_deps) + ".")
         return ModuleCoverage(
             disease_id=disease_id,
             module="semantic",
@@ -103,6 +103,7 @@ def _check_deps():
 
 
 # ---- ChromaDB Indexing ----
+
 
 class SemanticSearchEngine:
     """Embedding-based semantic search over PubMed abstracts."""
@@ -151,7 +152,9 @@ class SemanticSearchEngine:
         if self.model is None:
             logger.info(f"Loading embedding model: {self.model_name} ...")
             self.model = SentenceTransformer(self.model_name)
-            logger.info(f"   Model loaded ({self.model.get_sentence_embedding_dimension()}-dim embeddings)")
+            logger.info(
+                f"   Model loaded ({self.model.get_sentence_embedding_dimension()}-dim embeddings)"
+            )
 
     def _ensure_collection(self):
         if self.collection is None:
@@ -190,12 +193,14 @@ class SemanticSearchEngine:
         total = 0
 
         for i in range(0, len(articles), batch_size):
-            batch = articles[i:i + batch_size]
+            batch = articles[i : i + batch_size]
             batch_num = i // batch_size + 1
             total_batches = (len(articles) + batch_size - 1) // batch_size
             _tick(progress_callback, "indexing articles", batch_num, total_batches)
-            texts = [(a.get("title", "") or "") + " " + (a.get("abstract", "") or "") for a in batch]
-            ids = [a.get("pmid", f"art_{i+j}") for j, a in enumerate(batch)]
+            texts = [
+                (a.get("title", "") or "") + " " + (a.get("abstract", "") or "") for a in batch
+            ]
+            ids = [a.get("pmid", f"art_{i + j}") for j, a in enumerate(batch)]
             metadatas = [
                 {
                     "pmid": a.get("pmid", ""),
@@ -259,14 +264,16 @@ class SemanticSearchEngine:
                 dist = results["distances"][0][i] if results["distances"] else 0
                 # Convert distance to similarity score (cosine distance → 0-10 scale)
                 similarity = round(max(0, (1 - dist) * 10), 2)
-                formatted.append({
-                    "rank": i + 1,
-                    "pmid": meta.get("pmid", doc_id),
-                    "title": meta.get("title", "")[:200],
-                    "year": meta.get("year", ""),
-                    "journal": meta.get("journal", ""),
-                    "similarity": similarity,
-                })
+                formatted.append(
+                    {
+                        "rank": i + 1,
+                        "pmid": meta.get("pmid", doc_id),
+                        "title": meta.get("title", "")[:200],
+                        "year": meta.get("year", ""),
+                        "journal": meta.get("journal", ""),
+                        "similarity": similarity,
+                    }
+                )
 
         return formatted
 
@@ -286,11 +293,14 @@ class SemanticSearchEngine:
 
 # ---- CLI ----
 
+
 def main():
     parser = argparse.ArgumentParser(
         description="Semantic Literature Search — embedding-based PubMed search"
     )
-    parser.add_argument("--index", action="store_true", help="Index cached PubMed articles into vector DB")
+    parser.add_argument(
+        "--index", action="store_true", help="Index cached PubMed articles into vector DB"
+    )
     parser.add_argument("--query", type=str, help="Semantic search query (natural language)")
     parser.add_argument("--top", type=int, default=20, help="Number of results (default: 20)")
     parser.add_argument("--disease", "-d", default="sle", help="Disease ID (default: sle)")
@@ -309,11 +319,13 @@ def main():
         results = engine.search(args.query, top_k=args.top, progress_callback=cli_progress)
         if results:
             logger.info(f"\n{'=' * 70}")
-            logger.info(f"🔍 SEMANTIC SEARCH: \"{args.query}\"")
+            logger.info(f'🔍 SEMANTIC SEARCH: "{args.query}"')
             logger.info(f"{'=' * 70}")
             logger.info(f"\n  Found {len(results)} results:\n")
             for r in results:
-                logger.info(f"  #{r['rank']:<3} [{r['similarity']:.1f}] [{r['year']}] {r['title'][:90]}")
+                logger.info(
+                    f"  #{r['rank']:<3} [{r['similarity']:.1f}] [{r['year']}] {r['title'][:90]}"
+                )
                 logger.info(f"       {r.get('journal', '')}")
         else:
             logger.info("No results found. Try running --index first.")
@@ -345,4 +357,9 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+
+    from med_research.cli import main as cli_main
+
+    sys.exit(cli_main() or 0)
+

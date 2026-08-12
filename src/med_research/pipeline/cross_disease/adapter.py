@@ -9,7 +9,7 @@ from typing_extensions import Unpack
 
 from med_research.pipeline.adapter_options import AdapterOptions
 from med_research.pipeline.base import BasePipelineModule
-from med_research.pipeline.provenance import build_provenance
+from med_research.pipeline.provenance import ProvenanceMetadata, build_provenance
 from med_research.pipeline.registry import register_module
 from med_research.pipeline.results import ComparativeModulesResult, CrossDiseaseResult
 
@@ -70,7 +70,7 @@ class CrossDiseaseModule(BasePipelineModule[CrossDiseaseResult | ComparativeModu
         report_path = generate_html_report(cast(dict, results), provenance=provenance)
         return Path(report_path)
 
-    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
+    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> ProvenanceMetadata:
         extra: dict[str, Any] = {
             key: value
             for key, value in opts.items()

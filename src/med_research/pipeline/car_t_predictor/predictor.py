@@ -58,92 +58,222 @@ def load_genes(disease_id: str = "sle") -> dict:
 
 # How central is this gene to B cell biology? (0-10)
 B_CELL_DEPENDENCY = {
-    "CD20": 10.0, "MS4A1": 10.0, "CD19": 10.0,
-    "BLK": 9.5, "BANK1": 9.0, "BTK": 9.5,
-    "BAFF": 9.0, "TNFSF13B": 9.0, "PRDM1": 9.0,
-    "IKZF1": 8.5, "IKZF3": 8.5,
-    "PTPN22": 8.0, "UBE2L3": 7.5,
-    "CD40L": 7.0, "CD40LG": 7.0, "TNFSF4": 6.5,
-    "HLA-DRB1": 6.0, "IRF5": 5.5, "STAT4": 5.5,
-    "TLR7": 5.0, "TLR9": 5.0, "MYD88": 4.5,
-    "IRAK4": 4.5, "IRF7": 4.0, "TYK2": 4.0,
-    "JAK1": 4.0, "TNFAIP3": 5.5, "TNIP1": 5.0,
-    "FCGR2A": 3.0, "FCGR3A": 3.0, "ITGAM": 3.0,
-    "ELMO1": 2.0, "C1QA": 1.0, "C2": 1.0, "C4A": 1.0,
-    "ATG5": 3.0, "IMPDH": 6.0, "Calcineurin": 4.0,
-    "Glucocorticoid Receptor": 5.0, "IFNAR1": 4.5,
+    "CD20": 10.0,
+    "MS4A1": 10.0,
+    "CD19": 10.0,
+    "BLK": 9.5,
+    "BANK1": 9.0,
+    "BTK": 9.5,
+    "BAFF": 9.0,
+    "TNFSF13B": 9.0,
+    "PRDM1": 9.0,
+    "IKZF1": 8.5,
+    "IKZF3": 8.5,
+    "PTPN22": 8.0,
+    "UBE2L3": 7.5,
+    "CD40L": 7.0,
+    "CD40LG": 7.0,
+    "TNFSF4": 6.5,
+    "HLA-DRB1": 6.0,
+    "IRF5": 5.5,
+    "STAT4": 5.5,
+    "TLR7": 5.0,
+    "TLR9": 5.0,
+    "MYD88": 4.5,
+    "IRAK4": 4.5,
+    "IRF7": 4.0,
+    "TYK2": 4.0,
+    "JAK1": 4.0,
+    "TNFAIP3": 5.5,
+    "TNIP1": 5.0,
+    "FCGR2A": 3.0,
+    "FCGR3A": 3.0,
+    "ITGAM": 3.0,
+    "ELMO1": 2.0,
+    "C1QA": 1.0,
+    "C2": 1.0,
+    "C4A": 1.0,
+    "ATG5": 3.0,
+    "IMPDH": 6.0,
+    "Calcineurin": 4.0,
+    "Glucocorticoid Receptor": 5.0,
+    "IFNAR1": 4.5,
 }
 
 # How strongly associated with pathogenic autoantibodies (anti-dsDNA, ANA)?
 AUTOANTIBODY_ASSOCIATION = {
-    "BAFF": 10.0, "TNFSF13B": 10.0, "PRDM1": 9.5,
-    "CD40L": 9.0, "CD40LG": 9.0, "IKZF3": 9.0,
-    "UBE2L3": 8.5, "TLR7": 8.5, "TLR9": 8.0,
-    "BLK": 8.0, "BANK1": 8.0, "BTK": 8.0,
-    "IKZF1": 8.0, "IRF5": 7.5, "HLA-DRB1": 7.5,
-    "CD20": 7.0, "CD19": 7.0, "MS4A1": 7.0,
-    "MYD88": 7.0, "IRAK4": 6.5, "TNFSF4": 7.0,
-    "PTPN22": 6.5, "STAT4": 6.0, "TNFAIP3": 6.0,
-    "TNIP1": 5.5, "TYK2": 5.5, "JAK1": 5.0,
-    "IRF7": 5.0, "FCGR2A": 4.0, "FCGR3A": 4.0,
-    "ITGAM": 3.5, "C1QA": 3.0, "C2": 3.0, "C4A": 3.0,
-    "ELMO1": 2.0, "ATG5": 3.5, "IMPDH": 5.5,
-    "Calcineurin": 4.0, "Glucocorticoid Receptor": 4.0,
+    "BAFF": 10.0,
+    "TNFSF13B": 10.0,
+    "PRDM1": 9.5,
+    "CD40L": 9.0,
+    "CD40LG": 9.0,
+    "IKZF3": 9.0,
+    "UBE2L3": 8.5,
+    "TLR7": 8.5,
+    "TLR9": 8.0,
+    "BLK": 8.0,
+    "BANK1": 8.0,
+    "BTK": 8.0,
+    "IKZF1": 8.0,
+    "IRF5": 7.5,
+    "HLA-DRB1": 7.5,
+    "CD20": 7.0,
+    "CD19": 7.0,
+    "MS4A1": 7.0,
+    "MYD88": 7.0,
+    "IRAK4": 6.5,
+    "TNFSF4": 7.0,
+    "PTPN22": 6.5,
+    "STAT4": 6.0,
+    "TNFAIP3": 6.0,
+    "TNIP1": 5.5,
+    "TYK2": 5.5,
+    "JAK1": 5.0,
+    "IRF7": 5.0,
+    "FCGR2A": 4.0,
+    "FCGR3A": 4.0,
+    "ITGAM": 3.5,
+    "C1QA": 3.0,
+    "C2": 3.0,
+    "C4A": 3.0,
+    "ELMO1": 2.0,
+    "ATG5": 3.5,
+    "IMPDH": 5.5,
+    "Calcineurin": 4.0,
+    "Glucocorticoid Receptor": 4.0,
     "IFNAR1": 5.0,
 }
 
 # Is this gene critical for long-lived plasma cell survival?
 PLASMA_CELL_RELEVANCE = {
-    "PRDM1": 10.0, "IKZF3": 10.0, "IKZF1": 9.5,
-    "UBE2L3": 9.0, "BAFF": 9.0, "TNFSF13B": 9.0,
-    "CD19": 8.5, "CD20": 8.0, "MS4A1": 8.0,
-    "BTK": 7.5, "BLK": 7.0, "CD40L": 7.0,
-    "CD40LG": 7.0, "BANK1": 6.5, "TNFSF4": 6.0,
-    "HLA-DRB1": 5.5, "TLR7": 5.0, "TLR9": 5.0,
-    "MYD88": 4.5, "IRAK4": 4.0, "PTPN22": 5.5,
-    "IMPDH": 5.0, "STAT4": 4.5, "IRF5": 4.0,
-    "IRF7": 3.5, "TYK2": 3.0, "JAK1": 3.0,
-    "TNFAIP3": 4.5, "TNIP1": 4.0,
-    "FCGR2A": 2.0, "FCGR3A": 2.0, "ITGAM": 2.0,
-    "ELMO1": 1.0, "C1QA": 1.0, "C2": 1.0, "C4A": 1.0,
-    "ATG5": 2.5, "Calcineurin": 3.5,
-    "Glucocorticoid Receptor": 4.0, "IFNAR1": 3.5,
+    "PRDM1": 10.0,
+    "IKZF3": 10.0,
+    "IKZF1": 9.5,
+    "UBE2L3": 9.0,
+    "BAFF": 9.0,
+    "TNFSF13B": 9.0,
+    "CD19": 8.5,
+    "CD20": 8.0,
+    "MS4A1": 8.0,
+    "BTK": 7.5,
+    "BLK": 7.0,
+    "CD40L": 7.0,
+    "CD40LG": 7.0,
+    "BANK1": 6.5,
+    "TNFSF4": 6.0,
+    "HLA-DRB1": 5.5,
+    "TLR7": 5.0,
+    "TLR9": 5.0,
+    "MYD88": 4.5,
+    "IRAK4": 4.0,
+    "PTPN22": 5.5,
+    "IMPDH": 5.0,
+    "STAT4": 4.5,
+    "IRF5": 4.0,
+    "IRF7": 3.5,
+    "TYK2": 3.0,
+    "JAK1": 3.0,
+    "TNFAIP3": 4.5,
+    "TNIP1": 4.0,
+    "FCGR2A": 2.0,
+    "FCGR3A": 2.0,
+    "ITGAM": 2.0,
+    "ELMO1": 1.0,
+    "C1QA": 1.0,
+    "C2": 1.0,
+    "C4A": 1.0,
+    "ATG5": 2.5,
+    "Calcineurin": 3.5,
+    "Glucocorticoid Receptor": 4.0,
+    "IFNAR1": 3.5,
 }
 
 # Does CD19 CAR-T directly affect this pathway?
 CD19_TARGETING = {
-    "CD19": 10.0, "CD20": 9.5, "MS4A1": 9.5,
-    "BLK": 9.0, "BTK": 9.0, "BANK1": 8.5,
-    "BAFF": 8.5, "TNFSF13B": 8.5, "PRDM1": 9.0,
-    "IKZF1": 8.5, "IKZF3": 8.5, "PTPN22": 8.0,
-    "UBE2L3": 8.0, "CD40L": 7.5, "CD40LG": 7.5,
-    "TNFSF4": 6.5, "HLA-DRB1": 6.0, "IMPDH": 6.0,
-    "TLR7": 5.0, "TLR9": 5.0, "MYD88": 4.5,
-    "IRAK4": 4.0, "IRF5": 5.5, "STAT4": 5.0,
-    "IRF7": 4.0, "TYK2": 4.0, "JAK1": 4.0,
-    "TNFAIP3": 5.5, "TNIP1": 5.0,
-    "FCGR2A": 3.0, "FCGR3A": 3.0, "ITGAM": 3.0,
-    "ELMO1": 2.0, "C1QA": 2.0, "C2": 2.0, "C4A": 2.0,
-    "ATG5": 3.5, "Calcineurin": 4.0,
-    "Glucocorticoid Receptor": 5.0, "IFNAR1": 5.5,
+    "CD19": 10.0,
+    "CD20": 9.5,
+    "MS4A1": 9.5,
+    "BLK": 9.0,
+    "BTK": 9.0,
+    "BANK1": 8.5,
+    "BAFF": 8.5,
+    "TNFSF13B": 8.5,
+    "PRDM1": 9.0,
+    "IKZF1": 8.5,
+    "IKZF3": 8.5,
+    "PTPN22": 8.0,
+    "UBE2L3": 8.0,
+    "CD40L": 7.5,
+    "CD40LG": 7.5,
+    "TNFSF4": 6.5,
+    "HLA-DRB1": 6.0,
+    "IMPDH": 6.0,
+    "TLR7": 5.0,
+    "TLR9": 5.0,
+    "MYD88": 4.5,
+    "IRAK4": 4.0,
+    "IRF5": 5.5,
+    "STAT4": 5.0,
+    "IRF7": 4.0,
+    "TYK2": 4.0,
+    "JAK1": 4.0,
+    "TNFAIP3": 5.5,
+    "TNIP1": 5.0,
+    "FCGR2A": 3.0,
+    "FCGR3A": 3.0,
+    "ITGAM": 3.0,
+    "ELMO1": 2.0,
+    "C1QA": 2.0,
+    "C2": 2.0,
+    "C4A": 2.0,
+    "ATG5": 3.5,
+    "Calcineurin": 4.0,
+    "Glucocorticoid Receptor": 5.0,
+    "IFNAR1": 5.5,
 }
 
 # Existing published evidence for CAR-T or deep B cell depletion in this pathway
 CAR_T_EVIDENCE = {
-    "CD19": 10.0, "CD20": 9.5, "MS4A1": 9.5,
-    "PRDM1": 8.0, "BLK": 7.5, "BTK": 7.5,
-    "BAFF": 7.0, "TNFSF13B": 7.0, "IKZF3": 7.0,
-    "IKZF1": 6.5, "BANK1": 6.0, "PTPN22": 6.0,
-    "UBE2L3": 5.5, "CD40L": 5.5, "CD40LG": 5.5,
-    "HLA-DRB1": 5.0, "IMPDH": 5.0, "TNFSF4": 4.5,
-    "TLR7": 4.0, "TLR9": 4.0, "IRF5": 3.5,
-    "STAT4": 3.5, "IRF7": 3.0, "TYK2": 3.0,
-    "JAK1": 3.0, "MYD88": 3.0, "IRAK4": 2.5,
-    "TNFAIP3": 3.5, "TNIP1": 3.0,
-    "FCGR2A": 2.0, "FCGR3A": 2.0, "ITGAM": 2.0,
-    "ELMO1": 1.0, "C1QA": 1.0, "C2": 1.0, "C4A": 1.0,
-    "ATG5": 2.0, "Calcineurin": 3.0,
-    "Glucocorticoid Receptor": 4.0, "IFNAR1": 4.5,
+    "CD19": 10.0,
+    "CD20": 9.5,
+    "MS4A1": 9.5,
+    "PRDM1": 8.0,
+    "BLK": 7.5,
+    "BTK": 7.5,
+    "BAFF": 7.0,
+    "TNFSF13B": 7.0,
+    "IKZF3": 7.0,
+    "IKZF1": 6.5,
+    "BANK1": 6.0,
+    "PTPN22": 6.0,
+    "UBE2L3": 5.5,
+    "CD40L": 5.5,
+    "CD40LG": 5.5,
+    "HLA-DRB1": 5.0,
+    "IMPDH": 5.0,
+    "TNFSF4": 4.5,
+    "TLR7": 4.0,
+    "TLR9": 4.0,
+    "IRF5": 3.5,
+    "STAT4": 3.5,
+    "IRF7": 3.0,
+    "TYK2": 3.0,
+    "JAK1": 3.0,
+    "MYD88": 3.0,
+    "IRAK4": 2.5,
+    "TNFAIP3": 3.5,
+    "TNIP1": 3.0,
+    "FCGR2A": 2.0,
+    "FCGR3A": 2.0,
+    "ITGAM": 2.0,
+    "ELMO1": 1.0,
+    "C1QA": 1.0,
+    "C2": 1.0,
+    "C4A": 1.0,
+    "ATG5": 2.0,
+    "Calcineurin": 3.0,
+    "Glucocorticoid Receptor": 4.0,
+    "IFNAR1": 4.5,
 }
 
 
@@ -167,23 +297,53 @@ def _category_dimension_weights(category: str) -> dict:
     zip safely without positional-order coupling.
     """
     c = (category or "").lower()
-    weights = {"b_cell": 0.4, "auto_ab": 0.4, "plasma": 0.3,
-               "cd19": 0.4, "evidence": 0.4}
+    weights = {"b_cell": 0.4, "auto_ab": 0.4, "plasma": 0.3, "cd19": 0.4, "evidence": 0.4}
 
-    if any(k in c for k in ("b cell", "b-cell", "germinal", "plasma",
-                            "baff", "tfh", "bcr", "b lymphocyte", "antibody")):
+    if any(
+        k in c
+        for k in (
+            "b cell",
+            "b-cell",
+            "germinal",
+            "plasma",
+            "baff",
+            "tfh",
+            "bcr",
+            "b lymphocyte",
+            "antibody",
+        )
+    ):
         weights["b_cell"] = 0.9
         weights["cd19"] = 0.85
         weights["evidence"] = 0.7
-    if any(k in c for k in ("autoantibody", "antibody", "humoral",
-                            "immunoglobulin", "igg", "igm", "dsdna")):
+    if any(
+        k in c
+        for k in ("autoantibody", "antibody", "humoral", "immunoglobulin", "igg", "igm", "dsdna")
+    ):
         weights["auto_ab"] = 0.9
-    if any(k in c for k in ("plasma cell", "plasma-cell", "long-lived",
-                            "germinal center", "survival")):
+    if any(
+        k in c for k in ("plasma cell", "plasma-cell", "long-lived", "germinal center", "survival")
+    ):
         weights["plasma"] = 0.9
-    if any(k in c for k in ("t cell", "t-cell", "cytokine", "th1", "th17",
-                            "innate", "macrophage", "neutrophil", "epithelial",
-                            "barrier", "microbiome")) and weights["b_cell"] < 0.8:
+    if (
+        any(
+            k in c
+            for k in (
+                "t cell",
+                "t-cell",
+                "cytokine",
+                "th1",
+                "th17",
+                "innate",
+                "macrophage",
+                "neutrophil",
+                "epithelial",
+                "barrier",
+                "microbiome",
+            )
+        )
+        and weights["b_cell"] < 0.8
+    ):
         weights["b_cell"] = 0.2
 
     return weights
@@ -388,11 +548,14 @@ def compute_all_scores(
 
     _tick(progress_callback, "saving results", 0, 1)
     output_path = disease_output_path(DATA_DIR, "car_t_scores", disease_id)
-    write_json_atomic(output_path, {
-        "genes": results,
-        "total_genes": len(results),
-        "coverage": coverage.to_dict(),
-    })
+    write_json_atomic(
+        output_path,
+        {
+            "genes": results,
+            "total_genes": len(results),
+            "coverage": coverage.to_dict(),
+        },
+    )
 
     _tick(progress_callback, "saving results", 1, 1)
     return results
@@ -410,14 +573,18 @@ def analyze(results: list) -> None:
     scores = [r["composite_score"] for r in results]
     logger.info(f"\n  {len(results)} genes scored for CD19 CAR-T suitability")
     logger.info(f"  Score range: {min(scores):.2f} - {max(scores):.2f}")
-    logger.info(f"  Mean score: {sum(scores)/len(scores):.2f}")
+    logger.info(f"  Mean score: {sum(scores) / len(scores):.2f}")
 
     tier_counts: dict[str, int] = {}
     for r in results:
         tier_counts[r["tier"]] = tier_counts.get(r["tier"], 0) + 1
     logger.info("\n  Distribution by tier:")
-    for tier in ["🔴 Tier 1 — Strong CAR-T Candidate", "🟠 Tier 2 — Good CAR-T Candidate",
-                  "🟡 Tier 3 — Possible CAR-T Benefit", "🟢 Tier 4 — Limited CAR-T Benefit"]:
+    for tier in [
+        "🔴 Tier 1 — Strong CAR-T Candidate",
+        "🟠 Tier 2 — Good CAR-T Candidate",
+        "🟡 Tier 3 — Possible CAR-T Benefit",
+        "🟢 Tier 4 — Limited CAR-T Benefit",
+    ]:
         count = tier_counts.get(tier, 0)
         label = tier.split("—")[0].strip()
         logger.info(f"    {label}: {count} genes")
@@ -474,4 +641,9 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+
+    from med_research.cli import main as cli_main
+
+    sys.exit(cli_main() or 0)
+

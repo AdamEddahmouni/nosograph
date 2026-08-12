@@ -17,8 +17,7 @@ SIGNATURE_DIR.mkdir(parents=True, exist_ok=True)
 logger = logging.getLogger(__name__)
 
 
-def get_signature(disease: str = "sle", tissue: Optional[str] = None,
-                  source: str = "auto") -> dict:
+def get_signature(disease: str = "sle", tissue: Optional[str] = None, source: str = "auto") -> dict:
     """Get expression signature for a disease.
 
     Args:
@@ -105,6 +104,7 @@ def list_available_signatures() -> list:
             return sigs
 
     from med_research.pipeline.gene_expression.geo import CACHE_DIR as GEO_CACHE_DIR
+
     sigs = []
     for f in sorted(GEO_CACHE_DIR.glob("signature_*.json")):
         sigs.append(f.stem.replace("signature_", ""))

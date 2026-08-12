@@ -21,7 +21,10 @@ def rank_candidates(
     records: list[EvidenceRecord], claims: list[Claim], candidate_type: str
 ) -> list[RankedCandidate]:
     allowed: dict[str, Literal["drug", "target"]] = {
-        "drug": "drug", "drugs": "drug", "target": "target", "targets": "target"
+        "drug": "drug",
+        "drugs": "drug",
+        "target": "target",
+        "targets": "target",
     }
     subject_type = allowed.get(candidate_type)
     if subject_type is None:
@@ -57,9 +60,14 @@ def rank_candidates(
                 if evidence_id in record_index
             )
         support_factor = sum(support_quality) / len(support_quality) if support_quality else 1.0
-        contradiction_factor = sum(contradiction_quality) / len(contradiction_quality) if contradiction_quality else 1.0
+        contradiction_factor = (
+            sum(contradiction_quality) / len(contradiction_quality)
+            if contradiction_quality
+            else 1.0
+        )
         support_score = min(
-            35.0, (len(support) * 18.0 + sum(claim.confidence for claim in support) * 5) * support_factor
+            35.0,
+            (len(support) * 18.0 + sum(claim.confidence for claim in support) * 5) * support_factor,
         )
         contradiction_penalty = min(25.0, len(contradiction) * 15.0 * contradiction_factor)
         recencies = []

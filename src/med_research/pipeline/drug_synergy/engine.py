@@ -259,15 +259,17 @@ def score_safety_non_overlap(drug_a: dict, drug_b: dict) -> float:
     if is_biologic_a and is_biologic_b:
         return 5.0  # Biologics generally well tolerated, some infection risk overlap
 
-    if (is_biologic_a and group_b in {"JAK", "TYK2", "BTK"}) or \
-       (is_biologic_b and group_a in {"JAK", "TYK2", "BTK"}):
+    if (is_biologic_a and group_b in {"JAK", "TYK2", "BTK"}) or (
+        is_biologic_b and group_a in {"JAK", "TYK2", "BTK"}
+    ):
         return 7.0  # Biologic + targeted oral → different safety concerns
 
     # Small molecule + biologic = generally non-overlapping
     type_a = drug_a.get("type", "")
     type_b = drug_b.get("type", "")
-    if ("Small" in type_a and "Monoclonal" in type_b) or \
-       ("Monoclonal" in type_a and "Small" in type_b):
+    if ("Small" in type_a and "Monoclonal" in type_b) or (
+        "Monoclonal" in type_a and "Small" in type_b
+    ):
         return 8.0
 
     return 6.0
@@ -401,7 +403,7 @@ def analyze(scored_pairs: list) -> None:
     logger.info(f"\n  Total drug pairs evaluated: {len(scored_pairs)}")
     scores = [p["composite_score"] for p in scored_pairs]
     logger.info(f"  Score range: {min(scores):.2f} - {max(scores):.2f}")
-    logger.info(f"  Mean score: {sum(scores)/len(scores):.2f}")
+    logger.info(f"  Mean score: {sum(scores) / len(scores):.2f}")
     logger.info("\n  Distribution by tier:")
     for tier in [
         "🔴 Tier 1 — Strong Synergy Potential",
@@ -484,9 +486,7 @@ def compute_synergy(
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="Lupus Drug Combination Synergy Predictor"
-    )
+    parser = argparse.ArgumentParser(description="Lupus Drug Combination Synergy Predictor")
     parser.add_argument("--top", type=int, default=15, help="Number of top pairs to display")
     parser.add_argument("--disease", "-d", default="sle", help="Disease ID (default: sle)")
     parser.add_argument("--export-html", action="store_true", help="Generate HTML report")
@@ -507,13 +507,16 @@ def main():
             cache_or_live="cache",
             scoring={"ranking": "composite_score"},
         )
-        generate_html_report(
-            pairs, disease_id=args.disease, provenance=provenance
-        )
+        generate_html_report(pairs, disease_id=args.disease, provenance=provenance)
         logger.info("\n✅ HTML report generated: drug_synergy/report.html")
 
     return pairs
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+
+    from med_research.cli import main as cli_main
+
+    sys.exit(cli_main() or 0)
+

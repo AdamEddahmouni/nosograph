@@ -17,9 +17,11 @@ from med_research.pipeline.reporting import disease_context, render_report
 
 try:
     import matplotlib
+
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
     import numpy as np
+
     MPL_AVAILABLE = True
 except ImportError:
     MPL_AVAILABLE = False
@@ -61,8 +63,7 @@ def generate_ml_report(
         for p in top
     ]
     feature_importance = [
-        {"name": feat, "importance": imp}
-        for feat, imp in list(importance.items())[:15]
+        {"name": feat, "importance": imp} for feat, imp in list(importance.items())[:15]
     ]
 
     context = disease_context(disease_id)
@@ -103,11 +104,24 @@ def _generate_importance_chart(importance: dict) -> str:
     values = [i[1] for i in items]
     colors = plt.cm.viridis(np.linspace(0.2, 0.9, len(labels))) if np else ["#818cf8"] * len(labels)
 
-    bars = ax.barh(labels[::-1], values[::-1], color=colors[::-1], edgecolor="#252535",
-                   linewidth=0.5, height=0.6)
+    bars = ax.barh(
+        labels[::-1],
+        values[::-1],
+        color=colors[::-1],
+        edgecolor="#252535",
+        linewidth=0.5,
+        height=0.6,
+    )
     for bar, val in zip(bars, values[::-1], strict=True):
-        ax.text(bar.get_width() + 0.002, bar.get_y() + bar.get_height() / 2,
-                f"{val:.4f}", ha="left", va="center", fontsize=8, color="#e0e0e8")
+        ax.text(
+            bar.get_width() + 0.002,
+            bar.get_y() + bar.get_height() / 2,
+            f"{val:.4f}",
+            ha="left",
+            va="center",
+            fontsize=8,
+            color="#e0e0e8",
+        )
 
     ax.set_xlabel("Importance", color="#787890", fontsize=9)
     ax.tick_params(colors="#e0e0e8", labelsize=8)
@@ -137,11 +151,24 @@ def _generate_shap_chart(shap_summary: list) -> str:
     values = [i["mean_abs_shap"] for i in items]
     colors = plt.cm.plasma(np.linspace(0.2, 0.9, len(labels))) if np else ["#f472b6"] * len(labels)
 
-    bars = ax.barh(labels[::-1], values[::-1], color=colors[::-1], edgecolor="#252535",
-                   linewidth=0.5, height=0.6)
+    bars = ax.barh(
+        labels[::-1],
+        values[::-1],
+        color=colors[::-1],
+        edgecolor="#252535",
+        linewidth=0.5,
+        height=0.6,
+    )
     for bar, val in zip(bars, values[::-1], strict=True):
-        ax.text(bar.get_width() + 0.0005, bar.get_y() + bar.get_height() / 2,
-                f"{val:.4f}", ha="left", va="center", fontsize=8, color="#e0e0e8")
+        ax.text(
+            bar.get_width() + 0.0005,
+            bar.get_y() + bar.get_height() / 2,
+            f"{val:.4f}",
+            ha="left",
+            va="center",
+            fontsize=8,
+            color="#e0e0e8",
+        )
 
     ax.set_xlabel("Mean |SHAP|", color="#787890", fontsize=9)
     ax.tick_params(colors="#e0e0e8", labelsize=8)
@@ -167,7 +194,8 @@ def escape_html(text: Any) -> str:
     if not text:
         return ""
     return (
-        str(text).replace("&", "&amp;")
+        str(text)
+        .replace("&", "&amp;")
         .replace("<", "&lt;")
         .replace(">", "&gt;")
         .replace('"', "&quot;")

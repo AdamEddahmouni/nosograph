@@ -21,6 +21,7 @@ from med_research.exceptions import (
     ModuleNotAvailableError,
 )
 from med_research.pipeline.base import PipelineRunResult
+from med_research.pipeline.provenance import ProvenanceMetadata
 from med_research.pipeline.registry import get_module
 from med_research.pipeline.results import validate_result_contract
 
@@ -89,36 +90,36 @@ def _blocked_error_message(module_id: str, coverage: ModuleCoverage) -> str:
     if coverage.limitations:
         detail = coverage.limitations[0]
     elif coverage.missing_inputs:
-        detail = (
-            f"Required curated inputs are missing: {', '.join(coverage.missing_inputs)}."
-        )
+        detail = f"Required curated inputs are missing: {', '.join(coverage.missing_inputs)}."
     else:
         detail = f"Module '{module_id}' is not available for disease '{coverage.disease_id}'."
     return str(ModuleNotAvailableError(detail))
 
 
 # Run-time options that should not be forwarded to ``build_provenance``.
-_RUNTIME_OPTS = frozenset({
-    "use_cache",
-    "progress_callback",
-    "top",
-    "save",
-    "graph",
-    "llm_client",
-    "model",
-    "request",
-    "operation",
-    "untargeted_only",
-    "gene_id",
-    "comparative",
-    "skip_ppi",
-    "max_studies",
-    "max_results",
-    "max_per_query",
-    "signature",
-    "signature_source",
-    "tissue",
-})
+_RUNTIME_OPTS = frozenset(
+    {
+        "use_cache",
+        "progress_callback",
+        "top",
+        "save",
+        "graph",
+        "llm_client",
+        "model",
+        "request",
+        "operation",
+        "untargeted_only",
+        "gene_id",
+        "comparative",
+        "skip_ppi",
+        "max_studies",
+        "max_results",
+        "max_per_query",
+        "signature",
+        "signature_source",
+        "tissue",
+    }
+)
 
 
 def _wire_progress_callback(
@@ -130,10 +131,8 @@ def _wire_progress_callback(
         return
     if _accepts_legacy(progress_callback):
         legacy_cb: LegacyProgress = progress_callback  # type: ignore[assignment]
-        opts["progress_callback"] = (
-            lambda step, current, total: standard_to_legacy(
-                step, current, total, legacy_cb
-            )
+        opts["progress_callback"] = lambda step, current, total: standard_to_legacy(
+            step, current, total, legacy_cb
         )
     else:
         opts["progress_callback"] = progress_callback
@@ -153,7 +152,7 @@ def build_module_provenance(
     module_id: str,
     disease_id: str,
     **provenance_opts: Any,
-) -> dict[str, Any]:
+) -> ProvenanceMetadata:
     """Build provenance for a registered module through the dispatch boundary."""
     module = get_module(module_id)
     return module.build_provenance(disease_id, **provenance_opts)
@@ -221,9 +220,7 @@ def execute_module(
     report_path: Path | None = None
     provenance: dict[str, Any] | None = None
     if export_html:
-        provenance_opts = {
-            key: value for key, value in opts.items() if key not in _RUNTIME_OPTS
-        }
+        provenance_opts = {key: value for key, value in opts.items() if key not in _RUNTIME_OPTS}
         provenance = module.build_provenance(disease_id, **provenance_opts)
         report_path = module.report(data, disease_id, provenance=provenance)
 

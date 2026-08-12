@@ -63,7 +63,9 @@ def build_graph(
     for i, gene in enumerate(gene_list, 1):
         _tick(progress_callback, "loading genes", i, len(gene_list))
         evidence_key = f"{disease_id}_evidence"
-        evidence = gene.get(evidence_key) or gene.get("lupus_evidence") or gene.get("disease_evidence", "")
+        evidence = (
+            gene.get(evidence_key) or gene.get("lupus_evidence") or gene.get("disease_evidence", "")
+        )
         G.add_node(
             gene["id"],
             type="gene",
@@ -215,8 +217,7 @@ def analyze_graph(G: nx.MultiDiGraph) -> None:
     for node, data in G.nodes(data=True):
         if data.get("type") == "drug":
             targets = [
-                t for t in G.successors(node)
-                if G.nodes[t].get("type") in ("gene", "pathway")
+                t for t in G.successors(node) if G.nodes[t].get("type") in ("gene", "pathway")
             ]
             if targets:
                 target_info = []
@@ -275,21 +276,26 @@ def analyze_graph(G: nx.MultiDiGraph) -> None:
             targeted_genes.add(v)
 
     untargeted_genes = [
-        n for n, data in G.nodes(data=True)
+        n
+        for n, data in G.nodes(data=True)
         if data.get("type") == "gene" and n not in targeted_genes
     ]
 
     logger.info(f"\n  {len(untargeted_genes)} associated genes with NO direct therapeutic agent:")
     for gene in untargeted_genes:
         gdata = G.nodes[gene]
-        logger.info(f"     \u2022 {gdata['label']} \u2014 {gdata.get('disease_evidence', '')[:120]}...")
+        logger.info(
+            f"     \u2022 {gdata['label']} \u2014 {gdata.get('disease_evidence', '')[:120]}..."
+        )
 
     logger.info("\n" + "=" * 70)
     logger.info("Analysis complete.")
     logger.info("=" * 70)
 
 
-def export_for_web(G: nx.MultiDiGraph, output_path: str | Path | None = None, disease_id: str = "sle") -> dict:
+def export_for_web(
+    G: nx.MultiDiGraph, output_path: str | Path | None = None, disease_id: str = "sle"
+) -> dict:
     """Export the graph in a format suitable for Cytoscape.js visualization."""
     if output_path is None:
         output_path = Path(__file__).parent / "web" / f"graph_data_{disease_id}.json"
@@ -333,14 +339,14 @@ def export_for_web(G: nx.MultiDiGraph, output_path: str | Path | None = None, di
 
 def main():
     parser = argparse.ArgumentParser(description="Knowledge Graph Builder & Analyzer")
-    parser.add_argument("--disease", type=str, default="sle",
-                        help="Disease ID to build graph for (default: sle)")
-    parser.add_argument("--analyze", action="store_true",
-                        help="Run graph analysis after building")
-    parser.add_argument("--export", action="store_true",
-                        help="Export graph for web visualization")
-    parser.add_argument("--list-diseases", action="store_true",
-                        help="List available diseases and exit")
+    parser.add_argument(
+        "--disease", type=str, default="sle", help="Disease ID to build graph for (default: sle)"
+    )
+    parser.add_argument("--analyze", action="store_true", help="Run graph analysis after building")
+    parser.add_argument("--export", action="store_true", help="Export graph for web visualization")
+    parser.add_argument(
+        "--list-diseases", action="store_true", help="List available diseases and exit"
+    )
     args = parser.parse_args()
 
     if args.list_diseases:
@@ -365,4 +371,9 @@ def main():
 
 
 if __name__ == "__main__":
-    G = main()
+    import sys
+
+    from med_research.cli import main as cli_main
+
+    sys.exit(cli_main() or 0)
+

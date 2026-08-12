@@ -24,12 +24,12 @@ import argparse
 import json
 import os
 import shutil
-import subprocess
 import sys
 from pathlib import Path
 
 try:
     import numpy as np  # noqa: F401
+
     NUMPY_AVAILABLE = True
 except ImportError:
     NUMPY_AVAILABLE = False
@@ -80,6 +80,7 @@ def _check_rdkit():
         try:
             from rdkit import Chem  # noqa: F401
             from rdkit.Chem import Crippen, Descriptors, Lipinski  # noqa: F401
+
             RDKIT_AVAILABLE = True
         except ImportError:
             pass
@@ -92,6 +93,7 @@ def _get_docking_engine():
     if _DOCKING_ENGINE is None:
         try:
             from med_research.pipeline.virtual_screening.docking import DockingEngine
+
             _DOCKING_ENGINE = DockingEngine()
         except ImportError:
             _DOCKING_ENGINE = False
@@ -174,28 +176,35 @@ def _check_vina():
 # compute these from SMILES using RDKit.
 
 _DRUG_PROPERTIES = {
-    "belimumab":        {"mw": 147000, "logp": -10.0, "hbd": 120, "hba": 150, "rotb": 200, "tpsa": 5000},
-    "anifrolumab":      {"mw": 148000, "logp": -9.5,  "hbd": 118, "hba": 148, "rotb": 195, "tpsa": 4900},
-    "voclosporin":      {"mw": 1215,   "logp": 3.8,   "hbd": 5,   "hba": 14,  "rotb": 8,   "tpsa": 200},
-    "hydroxychloroquine":{"mw": 336,    "logp": 3.6,   "hbd": 1,   "hba": 3,   "rotb": 8,   "tpsa": 45},
-    "mycophenolate":    {"mw": 433,    "logp": 1.8,   "hbd": 2,   "hba": 9,   "rotb": 8,   "tpsa": 125},
-    "cyclophosphamide": {"mw": 261,    "logp": 0.6,   "hbd": 1,   "hba": 4,   "rotb": 5,   "tpsa": 42},
-    "rituximab":        {"mw": 145000, "logp": -10.5, "hbd": 115, "hba": 145, "rotb": 198, "tpsa": 4800},
-    "prednisone":       {"mw": 358,    "logp": 1.5,   "hbd": 1,   "hba": 5,   "rotb": 2,   "tpsa": 74},
-    "tacrolimus":       {"mw": 804,    "logp": 4.3,   "hbd": 3,   "hba": 12,  "rotb": 7,   "tpsa": 178},
-    "azathioprine":     {"mw": 277,    "logp": 0.1,   "hbd": 0,   "hba": 7,   "rotb": 3,   "tpsa": 101},
-    "baricitinib":      {"mw": 371,    "logp": 1.7,   "hbd": 2,   "hba": 7,   "rotb": 5,   "tpsa": 112},
-    "obinutuzumab":     {"mw": 149000, "logp": -10.8, "hbd": 122, "hba": 152, "rotb": 202, "tpsa": 5100},
-    "acalabrutinib":    {"mw": 465,    "logp": 2.2,   "hbd": 2,   "hba": 7,   "rotb": 5,   "tpsa": 102},
-    "avacopan":         {"mw": 582,    "logp": 3.9,   "hbd": 2,   "hba": 5,   "rotb": 6,   "tpsa": 78},
-    "cyclosporine":     {"mw": 1202,   "logp": 3.5,   "hbd": 5,   "hba": 14,  "rotb": 7,   "tpsa": 195},
-    "dimethyl_fumarate":{"mw": 144,    "logp": 0.8,   "hbd": 0,   "hba": 4,   "rotb": 4,   "tpsa": 52},
-    "iscalimab":        {"mw": 146000, "logp": -10.2, "hbd": 116, "hba": 146, "rotb": 196, "tpsa": 4950},
-    "ravulizumab":      {"mw": 148000, "logp": -10.3, "hbd": 119, "hba": 149, "rotb": 199, "tpsa": 4970},
-    "rozanolixizumab":  {"mw": 50000,  "logp": -7.0,  "hbd": 70,  "hba": 85,  "rotb": 80,  "tpsa": 3000},
-    "tofacitinib":      {"mw": 312,    "logp": 1.2,   "hbd": 1,   "hba": 6,   "rotb": 4,   "tpsa": 89},
-    "deucravacitinib":  {"mw": 426,    "logp": 2.5,   "hbd": 2,   "hba": 8,   "rotb": 6,   "tpsa": 120},
-    "iberdomide":       {"mw": 462,    "logp": 2.1,   "hbd": 1,   "hba": 7,   "rotb": 6,   "tpsa": 95},
+    "belimumab": {"mw": 147000, "logp": -10.0, "hbd": 120, "hba": 150, "rotb": 200, "tpsa": 5000},
+    "anifrolumab": {"mw": 148000, "logp": -9.5, "hbd": 118, "hba": 148, "rotb": 195, "tpsa": 4900},
+    "voclosporin": {"mw": 1215, "logp": 3.8, "hbd": 5, "hba": 14, "rotb": 8, "tpsa": 200},
+    "hydroxychloroquine": {"mw": 336, "logp": 3.6, "hbd": 1, "hba": 3, "rotb": 8, "tpsa": 45},
+    "mycophenolate": {"mw": 433, "logp": 1.8, "hbd": 2, "hba": 9, "rotb": 8, "tpsa": 125},
+    "cyclophosphamide": {"mw": 261, "logp": 0.6, "hbd": 1, "hba": 4, "rotb": 5, "tpsa": 42},
+    "rituximab": {"mw": 145000, "logp": -10.5, "hbd": 115, "hba": 145, "rotb": 198, "tpsa": 4800},
+    "prednisone": {"mw": 358, "logp": 1.5, "hbd": 1, "hba": 5, "rotb": 2, "tpsa": 74},
+    "tacrolimus": {"mw": 804, "logp": 4.3, "hbd": 3, "hba": 12, "rotb": 7, "tpsa": 178},
+    "azathioprine": {"mw": 277, "logp": 0.1, "hbd": 0, "hba": 7, "rotb": 3, "tpsa": 101},
+    "baricitinib": {"mw": 371, "logp": 1.7, "hbd": 2, "hba": 7, "rotb": 5, "tpsa": 112},
+    "obinutuzumab": {
+        "mw": 149000,
+        "logp": -10.8,
+        "hbd": 122,
+        "hba": 152,
+        "rotb": 202,
+        "tpsa": 5100,
+    },
+    "acalabrutinib": {"mw": 465, "logp": 2.2, "hbd": 2, "hba": 7, "rotb": 5, "tpsa": 102},
+    "avacopan": {"mw": 582, "logp": 3.9, "hbd": 2, "hba": 5, "rotb": 6, "tpsa": 78},
+    "cyclosporine": {"mw": 1202, "logp": 3.5, "hbd": 5, "hba": 14, "rotb": 7, "tpsa": 195},
+    "dimethyl_fumarate": {"mw": 144, "logp": 0.8, "hbd": 0, "hba": 4, "rotb": 4, "tpsa": 52},
+    "iscalimab": {"mw": 146000, "logp": -10.2, "hbd": 116, "hba": 146, "rotb": 196, "tpsa": 4950},
+    "ravulizumab": {"mw": 148000, "logp": -10.3, "hbd": 119, "hba": 149, "rotb": 199, "tpsa": 4970},
+    "rozanolixizumab": {"mw": 50000, "logp": -7.0, "hbd": 70, "hba": 85, "rotb": 80, "tpsa": 3000},
+    "tofacitinib": {"mw": 312, "logp": 1.2, "hbd": 1, "hba": 6, "rotb": 4, "tpsa": 89},
+    "deucravacitinib": {"mw": 426, "logp": 2.5, "hbd": 2, "hba": 8, "rotb": 6, "tpsa": 120},
+    "iberdomide": {"mw": 462, "logp": 2.1, "hbd": 1, "hba": 7, "rotb": 6, "tpsa": 95},
 }
 
 
@@ -256,6 +265,7 @@ def build_compound_library(disease_id: str = "sle") -> list[ScreeningCompound]:
 #  Scoring Functions
 # ═══════════════════════════════════════════════════════════════════════
 
+
 def compute_druglikeness(compound: Mapping[str, Any]) -> float:
     """
     Score drug-likeness based on Lipinski's Rule of 5.
@@ -303,6 +313,7 @@ def compute_target_complementarity(
     """
     if strategy is None:
         from med_research.pipeline.virtual_screening.screening_strategy import strategy_for_disease
+
         strategy = strategy_for_disease(disease_id)
 
     def _text(value: object) -> str:
@@ -313,13 +324,14 @@ def compute_target_complementarity(
     gene_name = _text(gene_info.get("name"))
     gene_text = f"{gene_category} {gene_function} {gene_name}"
     drug_text = " ".join(
-        _text(compound.get(field))
-        for field in ("mechanism", "target", "category")
+        _text(compound.get(field)) for field in ("mechanism", "target", "category")
     )
 
     score = 2.0
     pathway_hits = sum(1 for keyword in strategy.pathway_keywords if _text(keyword) in gene_text)
-    mechanism_hits = sum(1 for keyword in strategy.mechanism_keywords if _text(keyword) in drug_text)
+    mechanism_hits = sum(
+        1 for keyword in strategy.mechanism_keywords if _text(keyword) in drug_text
+    )
     score += min(pathway_hits * 1.0, 3.0)
     score += min(mechanism_hits * 1.0, 4.0)
 
@@ -344,6 +356,7 @@ def compute_similarity_score(
     """
     if strategy is None:
         from med_research.pipeline.virtual_screening.screening_strategy import strategy_for_disease
+
         strategy = strategy_for_disease(disease_id)
 
     # Find known drugs targeting this gene or pathway
@@ -353,8 +366,9 @@ def compute_similarity_score(
         # non-SLE diseases never read this shared SLE-only dataset.
         try:
             candidates_data = json.loads(
-                (PROJECT_ROOT / "drug_repurposing" / "data" / "candidates.json")
-                .read_text(encoding="utf-8")
+                (PROJECT_ROOT / "drug_repurposing" / "data" / "candidates.json").read_text(
+                    encoding="utf-8"
+                )
             )
             existing_candidates = candidates_data.get("repurposing_candidates", [])
         except (FileNotFoundError, json.JSONDecodeError):
@@ -376,10 +390,12 @@ def compute_similarity_score(
         # The shared SLE candidate cache is never read in this branch.
         active_drugs = load_kg_drugs(disease_id)
         same_gene_candidates = [
-            dict(drug) for drug_id, drug in active_drugs.items()
+            dict(drug)
+            for drug_id, drug in active_drugs.items()
             if drug_id in strategy.reference_drug_ids
             and gene_id
-            and gene_id.lower() in " ".join(
+            and gene_id.lower()
+            in " ".join(
                 str(drug.get(field, "")) for field in ("target", "mechanism", "category")
             ).lower()
         ]
@@ -470,12 +486,14 @@ def compute_novelty_score(
     """
     if strategy is None:
         from med_research.pipeline.virtual_screening.screening_strategy import strategy_for_disease
+
         strategy = strategy_for_disease(disease_id)
 
     compound_category = compound.get("category", "").lower()
 
     if "approved" in compound_category or "standard of care" in compound_category:
         from med_research.diseases.base import Disease
+
         disease_name = Disease(disease_id).profile.name.lower()
         disease_terms = {disease_id.lower(), disease_name}
         if any(term in compound_category for term in disease_terms):
@@ -502,6 +520,7 @@ def compute_composite_score(scores: dict, weights: dict | None = None) -> float:
             "novelty_score": 0.10,
         }
     from med_research.pipeline.virtual_screening.screening_strategy import normalized_weights
+
     weights = normalized_weights(weights)
     composite = sum(float(scores[key]) * weights[key] for key in weights)
     return round(max(0.0, min(10.0, composite)), 2)
@@ -511,55 +530,6 @@ def compute_composite_score(scores: dict, weights: dict | None = None) -> float:
 #  AutoDock Vina Integration (delegates to docking.py)
 # ═══════════════════════════════════════════════════════════════════════
 
-def run_autodock_vina(
-    protein_pdb: str,
-    ligand_sdf: str,
-    output_dir: str,
-    exhaustiveness: int = 8,
-) -> dict:
-    """Legacy Vina docking stub — use DockingEngine from docking.py instead."""
-    if not _check_vina():
-        return {}
-
-    os.makedirs(output_dir, exist_ok=True)
-    output_file = os.path.join(output_dir, "docking_output.pdbqt")
-
-    try:
-        cmd = [
-            "vina",
-            "--receptor", protein_pdb,
-            "--ligand", ligand_sdf,
-            "--out", output_file,
-            "--exhaustiveness", str(exhaustiveness),
-            "--num_modes", "5",
-        ]
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
-
-        scores = []
-        for line in result.stdout.split("\n"):
-            if line.strip().startswith(("1", "2", "3", "4", "5")) and len(line.split()) >= 2:
-                from contextlib import suppress
-                with suppress(ValueError):
-                    scores.append(float(line.split()[1]))
-
-        return {
-            "best_score": min(scores) if scores else None,
-            "all_scores": scores,
-            "output_file": output_file,
-            "modes_found": len(scores),
-        }
-
-    except (
-        subprocess.TimeoutExpired,
-        FileNotFoundError,
-        subprocess.CalledProcessError,
-        OSError,
-        ValueError,
-        RuntimeError,
-    ) as e:
-        logger.info(f"   ⚠️  Vina docking error: {e}")
-        return {}
-
 
 def get_vina_status() -> str:
     """Get a human-readable Vina availability status."""
@@ -567,6 +537,7 @@ def get_vina_status() -> str:
     if engine:
         try:
             from med_research.pipeline.virtual_screening.docking import get_vina_status_text
+
             return get_vina_status_text()
         except ImportError:
             pass
@@ -579,6 +550,7 @@ def get_vina_status() -> str:
 # ═══════════════════════════════════════════════════════════════════════
 #  Screening Pipeline
 # ═══════════════════════════════════════════════════════════════════════
+
 
 def screen_compounds(
     target_genes: list | None = None,
@@ -613,6 +585,7 @@ def screen_compounds(
             strategy_fingerprint,
             strategy_for_disease,
         )
+
         strategy = strategy_for_disease(disease_id)
         strategy_id = strategy.strategy_id
         strategy_hash = strategy_fingerprint(strategy)
@@ -630,28 +603,31 @@ def screen_compounds(
         strategy_id = ""
         strategy_hash = ""
     if not coverage.is_runnable:
-        return cast(ScreeningResult, {
-            "results_per_target": {},
-            "all_results": [],
-            "target_genes": [],
-            "compound_library": [],
-            "coverage": coverage.to_dict(),
-            "status": "blocked",
-            "disease_id": disease_id,
-            "strategy_id": strategy_id,
-            "strategy_fingerprint": strategy_hash,
-            "strategy_limitations": list(strategy.limitations) if strategy else [],
-            "stats": {
-                "targets_screened": 0,
-                "compounds_screened": 0,
-                "total_pairings": 0,
-                "tier1_count": 0,
-                "tier2_count": 0,
-                "vina_available": False,
-                "rdkit_available": _check_rdkit(),
-                "vina_status": get_vina_status(),
+        return cast(
+            ScreeningResult,
+            {
+                "results_per_target": {},
+                "all_results": [],
+                "target_genes": [],
+                "compound_library": [],
+                "coverage": coverage.to_dict(),
+                "status": "blocked",
+                "disease_id": disease_id,
+                "strategy_id": strategy_id,
+                "strategy_fingerprint": strategy_hash,
+                "strategy_limitations": list(strategy.limitations) if strategy else [],
+                "stats": {
+                    "targets_screened": 0,
+                    "compounds_screened": 0,
+                    "total_pairings": 0,
+                    "tier1_count": 0,
+                    "tier2_count": 0,
+                    "vina_available": False,
+                    "rdkit_available": _check_rdkit(),
+                    "vina_status": get_vina_status(),
+                },
             },
-        })
+        )
 
     assert strategy is not None  # strategy failures are captured by the coverage gate above
 
@@ -687,9 +663,7 @@ def screen_compounds(
                 "similarity_score": compute_similarity_score(
                     compound, gene_info, disease_id, strategy
                 ),
-                "novelty_score": compute_novelty_score(
-                    compound, gene_info, disease_id, strategy
-                ),
+                "novelty_score": compute_novelty_score(compound, gene_info, disease_id, strategy),
             }
             composite = compute_composite_score(scores, strategy.weights)
 
@@ -729,10 +703,12 @@ def screen_compounds(
 
                 # Pre-filter top candidates by property scores
                 scored_compounds.sort(key=lambda x: x["composite_score"], reverse=True)
-                top_for_docking = scored_compounds[:min(5, len(scored_compounds))]
+                top_for_docking = scored_compounds[: min(5, len(scored_compounds))]
 
-                logger.info(f"   🧬 Running Vina docking for {gene_info.get('name', gene_id)} "
-                      f"({len(top_for_docking)} top compounds)...")
+                logger.info(
+                    f"   🧬 Running Vina docking for {gene_info.get('name', gene_id)} "
+                    f"({len(top_for_docking)} top compounds)..."
+                )
 
                 # Prepare receptor and ligands on-demand
                 rec_paths = engine.prepare_all_targets()
@@ -748,24 +724,23 @@ def screen_compounds(
 
                 # Merge real docking scores into scored compounds
                 for hit in top_for_docking:
-                    real_score = compute_real_binding_score(
-                        hit, gene_id, dock_results
-                    )
+                    real_score = compute_real_binding_score(hit, gene_id, dock_results)
                     if real_score is not None:
                         # Replace property-based binding estimate with real score
                         hit["binding_estimate"] = real_score
                         hit["vina_docked"] = True
-                        hit["vina_best_kcal"] = (
-                            dock_results.get(hit["id"], {}).get("best_score")
-                        )
+                        hit["vina_best_kcal"] = dock_results.get(hit["id"], {}).get("best_score")
                         # Recompute composite with real binding score
-                        hit["composite_score"] = compute_composite_score({
-                            "binding_estimate": real_score,
-                            "druglikeness": hit["druglikeness"],
-                            "target_complementarity": hit["target_complementarity"],
-                            "similarity_score": hit["similarity_score"],
-                            "novelty_score": hit["novelty_score"],
-                        }, strategy.weights)
+                        hit["composite_score"] = compute_composite_score(
+                            {
+                                "binding_estimate": real_score,
+                                "druglikeness": hit["druglikeness"],
+                                "target_complementarity": hit["target_complementarity"],
+                                "similarity_score": hit["similarity_score"],
+                                "novelty_score": hit["novelty_score"],
+                            },
+                            strategy.weights,
+                        )
                         # Reassign tier
                         if hit["composite_score"] >= 7.5:
                             hit["tier"] = "🔴 Tier 1 — Strong Candidate"
@@ -787,7 +762,9 @@ def screen_compounds(
             "total_screened": len(compound_library),
             "mean_score": round(
                 sum(c["composite_score"] for c in scored_compounds) / len(scored_compounds), 2
-            ) if scored_compounds else 0,
+            )
+            if scored_compounds
+            else 0,
         }
 
     all_scored.sort(key=lambda x: x["composite_score"], reverse=True)
@@ -797,35 +774,39 @@ def screen_compounds(
     n_tier2 = sum(1 for c in all_scored if c["tier"].startswith("🟠"))
     n_vina_docked = sum(1 for c in all_scored if c.get("vina_docked"))
 
-    return cast(ScreeningResult, {
-        "results_per_target": results_per_target,
-        "all_results": all_scored,
-        "target_genes": gene_ids,
-        "compound_library": compound_library,
-        "coverage": coverage.to_dict(),
-        "status": "ready" if coverage.level == "full" else "limited_coverage",
-        "disease_id": disease_id,
-        "strategy_id": strategy_id,
-        "strategy_fingerprint": strategy_hash,
-        "strategy_limitations": list(strategy.limitations),
-        "stats": {
-            "targets_screened": len(gene_ids),
-            "compounds_screened": len(compound_library),
-            "total_pairings": len(all_scored),
-            "tier1_count": n_tier1,
-            "tier2_count": n_tier2,
-            "vina_docked_count": n_vina_docked,
-            "vina_available": _check_vina(),
-            "rdkit_available": _check_rdkit(),
-            "vina_status": get_vina_status(),
+    return cast(
+        ScreeningResult,
+        {
+            "results_per_target": results_per_target,
+            "all_results": all_scored,
+            "target_genes": gene_ids,
+            "compound_library": compound_library,
+            "coverage": coverage.to_dict(),
+            "status": "ready" if coverage.level == "full" else "limited_coverage",
+            "disease_id": disease_id,
+            "strategy_id": strategy_id,
+            "strategy_fingerprint": strategy_hash,
+            "strategy_limitations": list(strategy.limitations),
+            "stats": {
+                "targets_screened": len(gene_ids),
+                "compounds_screened": len(compound_library),
+                "total_pairings": len(all_scored),
+                "tier1_count": n_tier1,
+                "tier2_count": n_tier2,
+                "vina_docked_count": n_vina_docked,
+                "vina_available": _check_vina(),
+                "rdkit_available": _check_rdkit(),
+                "vina_status": get_vina_status(),
+            },
         },
-    })
+    )
 
 
 def get_untargeted_genes(disease_id: str = "sle") -> list[ScreeningTarget]:
     """Identify genes with no direct targeted therapy in a disease's KG."""
     try:
         from med_research.pipeline.knowledge_graph.builder import build_graph
+
         G = build_graph(disease_id)
 
         targeted = set()
@@ -837,16 +818,19 @@ def get_untargeted_genes(disease_id: str = "sle") -> list[ScreeningTarget]:
         untargeted = []
         for gene_id, gene_info in all_genes.items():
             if gene_id not in targeted:
-                untargeted.append({
-                    "id": gene_id,
-                    "name": gene_info["name"],
-                    "category": gene_info.get("category", ""),
-                    "function": gene_info.get("function", ""),
-                })
+                untargeted.append(
+                    {
+                        "id": gene_id,
+                        "name": gene_info["name"],
+                        "category": gene_info.get("category", ""),
+                        "function": gene_info.get("function", ""),
+                    }
+                )
 
         # Exclude assay targets only when the active disease explicitly marks
         # them as non-disease genes.
         from med_research.diseases.base import Disease
+
         excluded = Disease(disease_id).get_drug_target_exclusions()
         untargeted = [g for g in untargeted if g["id"] not in excluded]
 
@@ -860,13 +844,16 @@ def get_untargeted_genes(disease_id: str = "sle") -> list[ScreeningTarget]:
 #  Summary & CLI
 # ═══════════════════════════════════════════════════════════════════════
 
+
 def print_summary(results: Mapping[str, Any]) -> None:
     """Print a summary of virtual screening results."""
     stats = results["stats"]
 
     if results.get("status") == "blocked":
         coverage = results.get("coverage", {})
-        logger.error(f"\n❌ Virtual screening blocked: {coverage.get('limitations', ['missing disease-specific strategy'])[0]}")
+        logger.error(
+            f"\n❌ Virtual screening blocked: {coverage.get('limitations', ['missing disease-specific strategy'])[0]}"
+        )
         return
 
     logger.info("\n" + "=" * 70)
@@ -879,9 +866,13 @@ def print_summary(results: Mapping[str, Any]) -> None:
     logger.info(f"  Tier 1 candidates:       {stats['tier1_count']} (≥7.5)")
     logger.info(f"  Tier 2 candidates:       {stats['tier2_count']} (6.5-7.4)")
     logger.info(f"  AutoDock Vina:           {stats['vina_status']}")
-    logger.info(f"  RDKit:                   {'available' if stats['rdkit_available'] else 'not available'}")
+    logger.info(
+        f"  RDKit:                   {'available' if stats['rdkit_available'] else 'not available'}"
+    )
     if results.get("strategy_id"):
-        logger.info(f"  Strategy:                {results['strategy_id']} ({results.get('strategy_fingerprint', '')[:16]}…)")
+        logger.info(
+            f"  Strategy:                {results['strategy_id']} ({results.get('strategy_fingerprint', '')[:16]}…)"
+        )
 
     # Top results per target
     logger.info("\n  📋 Top compound per target:")
@@ -911,29 +902,37 @@ def main():
         description="Lupus Virtual Drug Screening Engine — Compound library screening"
     )
     parser.add_argument(
-        "--gene", type=str,
+        "--gene",
+        type=str,
         help="Screen against a specific gene ID (e.g. BTK, TYK2)",
     )
     parser.add_argument(
-        "--top", type=int, default=15,
+        "--top",
+        type=int,
+        default=15,
         help="Number of top compounds per target (default: 15)",
     )
     parser.add_argument(
-        "--export-html", action="store_true",
+        "--export-html",
+        action="store_true",
         help="Generate HTML report",
     )
     parser.add_argument(
-        "--use-vina", action="store_true",
+        "--use-vina",
+        action="store_true",
         help="Run AutoDock Vina docking (requires Vina binary)",
     )
     parser.add_argument(
-        "--disease", "-d", default="sle",
+        "--disease",
+        "-d",
+        default="sle",
         help="Disease ID (default: sle)",
     )
     args = parser.parse_args()
 
     logger.info(f"🔄 Building compound library ({args.disease})...")
     from med_research.pipeline.virtual_screening.screening_strategy import strategy_for_disease
+
     try:
         strategy_for_disease(args.disease)
     except (ValueError, OSError, KeyError, TypeError) as exc:
@@ -996,5 +995,9 @@ def main():
 
 
 if __name__ == "__main__":
-    result = main()
-    sys.exit(0 if isinstance(result, dict) else result)
+    import sys
+
+    from med_research.cli import main as cli_main
+
+    sys.exit(cli_main() or 0)
+

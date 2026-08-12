@@ -31,35 +31,35 @@ def generate_html_report(
 
     # Graph metrics stats
     metrics_html = f"""        <div class="stat-card">
-            <div class="stat-value" style="color:#4ade80;">{gm['n_nodes']}</div>
+            <div class="stat-value" style="color:#4ade80;">{gm["n_nodes"]}</div>
             <div class="stat-label">Total Nodes</div>
         </div>
         <div class="stat-card">
-            <div class="stat-value" style="color:#818cf8;">{gm['n_edges']}</div>
+            <div class="stat-value" style="color:#818cf8;">{gm["n_edges"]}</div>
             <div class="stat-label">Total Edges</div>
         </div>
         <div class="stat-card">
-            <div class="stat-value" style="color:#fbbf24;">{gm['density']:.3f}</div>
+            <div class="stat-value" style="color:#fbbf24;">{gm["density"]:.3f}</div>
             <div class="stat-label">Graph Density</div>
         </div>
         <div class="stat-card">
-            <div class="stat-value" style="color:#c084fc;">{gm['diameter']}</div>
+            <div class="stat-value" style="color:#c084fc;">{gm["diameter"]}</div>
             <div class="stat-label">Diameter</div>
         </div>
         <div class="stat-card">
-            <div class="stat-value" style="color:#22d3ee;">{gm['avg_shortest_path']:.2f}</div>
+            <div class="stat-value" style="color:#22d3ee;">{gm["avg_shortest_path"]:.2f}</div>
             <div class="stat-label">Avg Shortest Path</div>
         </div>
         <div class="stat-card">
-            <div class="stat-value" style="color:#f472b6;">{gm['avg_clustering']:.3f}</div>
+            <div class="stat-value" style="color:#f472b6;">{gm["avg_clustering"]:.3f}</div>
             <div class="stat-label">Avg Clustering Coef</div>
         </div>
         <div class="stat-card">
-            <div class="stat-value" style="color:#f59e0b;">{gm['n_components']}</div>
+            <div class="stat-value" style="color:#f59e0b;">{gm["n_components"]}</div>
             <div class="stat-label">Components</div>
         </div>
         <div class="stat-card">
-            <div class="stat-value" style="color:#4ade80;">{gm['assortativity']:.3f}</div>
+            <div class="stat-value" style="color:#4ade80;">{gm["assortativity"]:.3f}</div>
             <div class="stat-label">Assortativity</div>
         </div>"""
 
@@ -71,9 +71,9 @@ def generate_html_report(
             if len(c["node_labels"]) > 5:
                 labels += f" +{len(c['node_labels']) - 5} more"
             com_rows += f"""        <tr>
-            <td>{c['id']}</td>
-            <td><strong>{c['dominant_type']}</strong></td>
-            <td>{c['size']}</td>
+            <td>{c["id"]}</td>
+            <td><strong>{c["dominant_type"]}</strong></td>
+            <td>{c["size"]}</td>
             <td class="muted">{labels}</td>
         </tr>"""
 
@@ -82,9 +82,9 @@ def generate_html_report(
     for i, b in enumerate(bridges[:15], 1):
         bridge_rows += f"""        <tr>
             <td class="rank">{i}</td>
-            <td><strong>{escape_html(b['label'])}</strong></td>
-            <td>{b['type']}</td>
-            <td style="color:#fbbf24;font-weight:700;">{b['betweenness']:.4f}</td>
+            <td><strong>{escape_html(b["label"])}</strong></td>
+            <td>{b["type"]}</td>
+            <td style="color:#fbbf24;font-weight:700;">{b["betweenness"]:.4f}</td>
         </tr>"""
 
     # Centrality tabs - top 10 for each
@@ -104,9 +104,9 @@ def generate_html_report(
         for i, n in enumerate(scores[:10], 1):
             rows += f"""        <tr>
             <td class="rank">{i}</td>
-            <td><strong>{escape_html(n['label'])}</strong></td>
-            <td>{n['type']}</td>
-            <td style="color:#818cf8;font-weight:700;">{n['score']:.4f}</td>
+            <td><strong>{escape_html(n["label"])}</strong></td>
+            <td>{n["type"]}</td>
+            <td style="color:#818cf8;font-weight:700;">{n["score"]:.4f}</td>
         </tr>"""
         centrality_sections += f"""        <h3 class="metric-title">{label}</h3>
         <div class="table-container" style="margin-bottom:16px;">
@@ -146,8 +146,5 @@ def escape_html(text: str) -> str:
     if not text:
         return ""
     return (
-        text.replace("&", "&amp;")
-        .replace("<", "&lt;")
-        .replace(">", "&gt;")
-        .replace('"', "&quot;")
+        text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
     )

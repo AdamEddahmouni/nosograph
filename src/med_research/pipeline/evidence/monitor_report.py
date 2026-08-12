@@ -64,20 +64,20 @@ def generate_html_report(
             new_items_html += (
                 f'<div class="new-item">'
                 f'<a href="{item.get("url", "#")}" target="_blank" class="item-link">'
-                f'{item.get("title", "Untitled")[:100]}</a>'
-                f'<span class="item-meta">[{item.get("year","?")}] {item.get("source_type","")}</span>'
-                f'</div>'
+                f"{item.get('title', 'Untitled')[:100]}</a>"
+                f'<span class="item-meta">[{item.get("year", "?")}] {item.get("source_type", "")}</span>'
+                f"</div>"
             )
         alerts_html += f"""
             <div class="alert-card {badge_class}">
                 <div class="alert-header">
                     <span class="alert-icon">{icon}</span>
-                    <span class="alert-entity">{a['entity']}</span>
-                    <span class="alert-type">({a['type'].replace('_',' ').title()})</span>
-                    <span class="alert-severity badge-{a['severity']}">{a['severity'].upper()}</span>
+                    <span class="alert-entity">{a["entity"]}</span>
+                    <span class="alert-type">({a["type"].replace("_", " ").title()})</span>
+                    <span class="alert-severity badge-{a["severity"]}">{a["severity"].upper()}</span>
                 </div>
                 <div class="alert-body">
-                    <div class="alert-count">{a['new_count']} new item{'s' if a['new_count'] != 1 else ''}</div>
+                    <div class="alert-count">{a["new_count"]} new item{"s" if a["new_count"] != 1 else ""}</div>
                     {new_items_html}
                 </div>
             </div>
@@ -85,25 +85,31 @@ def generate_html_report(
 
     # Changed queries
     changed_q = changes.get("changed_queries", [])
-    changed_q_html = "".join(
-        f'<span class="changed-tag">"{q}"</span>' for q in changed_q[:10]
-    ) if changed_q else '<span class="no-changes">No changes detected</span>'
+    changed_q_html = (
+        "".join(f'<span class="changed-tag">"{q}"</span>' for q in changed_q[:10])
+        if changed_q
+        else '<span class="no-changes">No changes detected</span>'
+    )
 
     # Changed drugs
     changed_d = changes.get("changed_drugs", [])
-    changed_d_html = "".join(
-        f'<span class="changed-tag drug">💊 {d}</span>' for d in changed_d[:10]
-    ) if changed_d else '<span class="no-changes">No changes detected</span>'
+    changed_d_html = (
+        "".join(f'<span class="changed-tag drug">💊 {d}</span>' for d in changed_d[:10])
+        if changed_d
+        else '<span class="no-changes">No changes detected</span>'
+    )
 
     # Changed genes
     changed_g = changes.get("changed_genes", [])
-    changed_g_html = "".join(
-        f'<span class="changed-tag gene">🧬 {g}</span>' for g in changed_g[:10]
-    ) if changed_g else '<span class="no-changes">No changes detected</span>'
+    changed_g_html = (
+        "".join(f'<span class="changed-tag gene">🧬 {g}</span>' for g in changed_g[:10])
+        if changed_g
+        else '<span class="no-changes">No changes detected</span>'
+    )
 
     alerts_empty_html = (
         '<div class="no-changes" style="padding:20px;background:var(--bg-card);border-radius:12px;">'
-        '🎉 No new evidence detected — everything up to date!</div>'
+        "🎉 No new evidence detected — everything up to date!</div>"
     )
 
     html = render_report(
@@ -150,7 +156,8 @@ def escape_html(text: Any) -> str:
     if not text:
         return ""
     return (
-        str(text).replace("&", "&amp;")
+        str(text)
+        .replace("&", "&amp;")
         .replace("<", "&lt;")
         .replace(">", "&gt;")
         .replace('"', "&quot;")

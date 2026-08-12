@@ -40,25 +40,30 @@ def generate_html_report(
         gid = gene["id"]
         cands = gene_candidates.get(gid, [])
         best = max(c["composite_score"] for c in cands) if cands else 0
-        gene_rankings.append({"gene": gene, "candidates": cands, "best_score": best, "count": len(cands)})
+        gene_rankings.append(
+            {"gene": gene, "candidates": cands, "best_score": best, "count": len(cands)}
+        )
     gene_rankings.sort(key=lambda x: x["best_score"], reverse=True)
 
     # Build top-5 JSON for radar chart
     import json
+
     top5_items = []
     for c in scored_candidates[:5]:
-        name = c['drug_name'].split('(')[0].strip()[:25]
-        top5_items.append({
-            "name": name,
-            "scores": [
-                c.get('target_similarity_score', 5),
-                c.get('final_proximity', 5),
-                c.get('mechanistic_rationale_score', 5),
-                c.get('clinical_evidence_score', 5),
-                c.get('adverse_event_score', c.get('safety_score', 5)),
-                c.get('novelty_score', 5) * 2,  # Scale 0-5 to 0-10 for chart
-            ],
-        })
+        name = c["drug_name"].split("(")[0].strip()[:25]
+        top5_items.append(
+            {
+                "name": name,
+                "scores": [
+                    c.get("target_similarity_score", 5),
+                    c.get("final_proximity", 5),
+                    c.get("mechanistic_rationale_score", 5),
+                    c.get("clinical_evidence_score", 5),
+                    c.get("adverse_event_score", c.get("safety_score", 5)),
+                    c.get("novelty_score", 5) * 2,  # Scale 0-5 to 0-10 for chart
+                ],
+            }
+        )
     top5_json = json.dumps(top5_items)
 
     n_tier1 = sum(1 for c in scored_candidates if c["composite_score"] >= 8.0)
@@ -126,8 +131,5 @@ def escape_html(text: str) -> str:
     if not text:
         return ""
     return (
-        text.replace("&", "&amp;")
-        .replace("<", "&lt;")
-        .replace(">", "&gt;")
-        .replace('"', "&quot;")
+        text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
     )

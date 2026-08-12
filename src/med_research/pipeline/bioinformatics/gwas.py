@@ -58,9 +58,7 @@ DATA_DIR = Path(__file__).parent / "data"
 GWAS_API = "https://www.ebi.ac.uk/gwas/rest/api"
 
 
-def _gwas_http_get(
-    url: str, params: dict[str, Any], timeout: int = 30
-) -> "requests.Response":
+def _gwas_http_get(url: str, params: dict[str, Any], timeout: int = 30) -> "requests.Response":
     """Perform a GWAS Catalog GET request, raising on HTTP failure."""
     resp = requests.get(url, params=params, timeout=timeout)
     resp.raise_for_status()
@@ -92,6 +90,7 @@ def disease_search_terms(disease_id: str = "sle") -> list:
     """
     try:
         from med_research.diseases.base import Disease
+
         terms = Disease(disease_id).get_gwas_search_terms()
     except ValueError:
         # Unknown diseases are invalid input, never an excuse to query SLE.
@@ -162,7 +161,12 @@ def search_gwas_studies(
 
             studies.extend(page_studies)
             page += 1
-            _tick(progress_callback, "fetching GWAS studies", min(len(studies), max_results), max_results)
+            _tick(
+                progress_callback,
+                "fetching GWAS studies",
+                min(len(studies), max_results),
+                max_results,
+            )
 
             # Rate limiting
             rate_limited_sleep(0.5)
@@ -296,7 +300,7 @@ def _resolve_snp_details(
             snp_cache[rsid] = {"genes": [], "chromosome": "", "position": 0}
 
         if (i + 1) % 20 == 0 or i == len(unresolved) - 1:
-            logger.info(f"      [{i+1}/{len(unresolved)}] {resolved} SNPs mapped")
+            logger.info(f"      [{i + 1}/{len(unresolved)}] {resolved} SNPs mapped")
         _tick(progress_callback, "resolving SNPs", i + 1, len(unresolved))
 
         rate_limited_sleep(0.3)
@@ -326,9 +330,7 @@ def extract_gene_associations(
             "study_details": [...],
         }
     """
-    gene_map: defaultdict[str, dict[str, Any]] = defaultdict(
-        lambda: {"studies": [], "best_p": 1.0}
-    )
+    gene_map: defaultdict[str, dict[str, Any]] = defaultdict(lambda: {"studies": [], "best_p": 1.0})
     study_details = []
     total_associations = 0
     all_rsids = set()
@@ -342,7 +344,7 @@ def extract_gene_associations(
         title = study.get("title", "Unknown")
         pubmed_id = study.get("publicationInfo", {}).get("pubmedId", "")
 
-        logger.info(f"   [{i+1}/{min(len(studies), max_studies)}] {title[:80]}...")
+        logger.info(f"   [{i + 1}/{min(len(studies), max_studies)}] {title[:80]}...")
 
         raw_associations = fetch_study_associations(accession)
         if raw_associations:
@@ -363,7 +365,9 @@ def extract_gene_associations(
                     try:
                         p_val = float(mantissa) * (10 ** int(exponent))
                     except (ValueError, TypeError):
-                        logger.info(f"   ⚠️  Could not parse p-value for association: mantissa={mantissa}, exponent={exponent}")
+                        logger.info(
+                            f"   ⚠️  Could not parse p-value for association: mantissa={mantissa}, exponent={exponent}"
+                        )
 
                 # Collect rsIDs from all loci
                 rsids = []
@@ -372,15 +376,19 @@ def extract_gene_associations(
                     reported = locus.get("authorReportedGenes", [])
                     if isinstance(reported, list):
                         for gene in reported:
-                            gene_name = gene.get("geneName", gene) if isinstance(gene, dict) else gene
+                            gene_name = (
+                                gene.get("geneName", gene) if isinstance(gene, dict) else gene
+                            )
                             if gene_name:
                                 study_detail["genes"].add(str(gene_name))
-                                gene_map[str(gene_name)]["studies"].append({
-                                    "accession": accession,
-                                    "title": title[:120],
-                                    "pubmed_id": pubmed_id,
-                                    "p_value": p_val,
-                                })
+                                gene_map[str(gene_name)]["studies"].append(
+                                    {
+                                        "accession": accession,
+                                        "title": title[:120],
+                                        "pubmed_id": pubmed_id,
+                                        "p_value": p_val,
+                                    }
+                                )
                                 if p_val is not None:
                                     gene_map[str(gene_name)]["best_p"] = min(
                                         gene_map[str(gene_name)]["best_p"], float(p_val)
@@ -394,13 +402,15 @@ def extract_gene_associations(
                             rsids.append(rsid)
                             all_rsids.add(rsid)
 
-                assoc_records.append({
-                    "accession": accession,
-                    "title": title[:120],
-                    "pubmed_id": pubmed_id,
-                    "p_val": p_val,
-                    "rsids": rsids,
-                })
+                assoc_records.append(
+                    {
+                        "accession": accession,
+                        "title": title[:120],
+                        "pubmed_id": pubmed_id,
+                        "p_val": p_val,
+                        "rsids": rsids,
+                    }
+                )
 
             study_details.append(study_detail)
             total_associations += len(raw_associations)
@@ -419,12 +429,14 @@ def extract_gene_associations(
                 genes = details.get("genes", [])
                 for gene in genes:
                     if gene:
-                        gene_map[gene]["studies"].append({
-                            "accession": record["accession"],
-                            "title": record["title"],
-                            "pubmed_id": record["pubmed_id"],
-                            "p_value": record["p_val"],
-                        })
+                        gene_map[gene]["studies"].append(
+                            {
+                                "accession": record["accession"],
+                                "title": record["title"],
+                                "pubmed_id": record["pubmed_id"],
+                                "p_value": record["p_val"],
+                            }
+                        )
                         if record["p_val"] is not None:
                             gene_map[gene]["best_p"] = min(
                                 gene_map[gene]["best_p"], float(record["p_val"])
@@ -444,9 +456,7 @@ def extract_gene_associations(
 
     # Sort genes by study count
     gene_associations = {}
-    for gene, info in sorted(
-        gene_map.items(), key=lambda x: len(x[1]["studies"]), reverse=True
-    ):
+    for gene, info in sorted(gene_map.items(), key=lambda x: len(x[1]["studies"]), reverse=True):
         gene_associations[gene] = {
             "n_studies": len(info["studies"]),
             "best_p_value": info["best_p"],
@@ -460,12 +470,14 @@ def extract_gene_associations(
             for rsid in record["rsids"]:
                 details = snp_details.get(rsid, {})
                 if details.get("chromosome") and details.get("position"):
-                    snp_data.append({
-                        "rsid": rsid,
-                        "chromosome": details["chromosome"],
-                        "position": details["position"],
-                        "p_value": record["p_val"],
-                    })
+                    snp_data.append(
+                        {
+                            "rsid": rsid,
+                            "chromosome": details["chromosome"],
+                            "position": details["position"],
+                            "p_value": record["p_val"],
+                        }
+                    )
 
     return {
         "gene_associations": gene_associations,
@@ -476,9 +488,7 @@ def extract_gene_associations(
     }
 
 
-def cross_reference_with_kg(
-    gwas_results: dict, kg_genes: dict, disease_id: str = "sle"
-) -> dict:
+def cross_reference_with_kg(gwas_results: dict, kg_genes: dict, disease_id: str = "sle") -> dict:
     """
     Cross-reference GWAS gene associations with the knowledge graph genes.
 
@@ -556,16 +566,9 @@ def analyze(gwas_results: dict, crossref: dict, kg_genes: dict) -> None:
     logger.info("🧬 GWAS CATALOG ANNOTATION")
     logger.info("=" * 70)
 
-    logger.info(
-        f"\n  Studies analyzed: {gwas_results['total_studies_analyzed']}"
-    )
-    logger.info(
-        f"  Total SNP associations: {gwas_results['total_associations']}"
-    )
-    logger.info(
-        f"  Unique genes with associations: "
-        f"{len(gwas_results['gene_associations'])}"
-    )
+    logger.info(f"\n  Studies analyzed: {gwas_results['total_studies_analyzed']}")
+    logger.info(f"  Total SNP associations: {gwas_results['total_associations']}")
+    logger.info(f"  Unique genes with associations: {len(gwas_results['gene_associations'])}")
 
     logger.info("\n  📊 Cross-reference with Knowledge Graph:")
     logger.info(f"     ✅ Validated (GWAS + KG): {crossref['n_validated']}")
@@ -605,14 +608,9 @@ def analyze(gwas_results: dict, crossref: dict, kg_genes: dict) -> None:
     # Missing genes
     missing = crossref.get("missing", {})
     if missing:
-        logger.info(
-            "\n  ❓ KG genes with NO GWAS hit (may need more investigation):"
-        )
+        logger.info("\n  ❓ KG genes with NO GWAS hit (may need more investigation):")
         for gene_id, info in sorted(missing.items()):
-            logger.info(
-                f"     • {info['name'][:40]:<42} "
-                f"({gene_id}) — {info.get('category', '')}"
-            )
+            logger.info(f"     • {info['name'][:40]:<42} ({gene_id}) — {info.get('category', '')}")
 
 
 def run_gwas_analysis(
@@ -730,18 +728,14 @@ def run_gwas_analysis(
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="GWAS Catalog Annotation (disease-aware)"
-    )
+    parser = argparse.ArgumentParser(description="GWAS Catalog Annotation (disease-aware)")
     parser.add_argument(
         "--max-studies",
         type=int,
         default=30,
         help="Max GWAS studies to fetch (default: 30)",
     )
-    parser.add_argument(
-        "--export-html", action="store_true", help="Generate HTML report"
-    )
+    parser.add_argument("--export-html", action="store_true", help="Generate HTML report")
     parser.add_argument(
         "--no-cache",
         action="store_true",
@@ -752,9 +746,7 @@ def main():
         action="store_true",
         help="Skip SNP-to-gene resolution (faster but fewer genes)",
     )
-    parser.add_argument(
-        "--disease", "-d", default="sle", help="Disease ID (default: sle)"
-    )
+    parser.add_argument("--disease", "-d", default="sle", help="Disease ID (default: sle)")
     args = parser.parse_args()
 
     result = run_gwas_analysis(
@@ -799,6 +791,9 @@ def main():
 
 
 if __name__ == "__main__":
-    result = main()
-    if isinstance(result, dict) and result.get("status") == "blocked":
-        raise SystemExit(1)
+    import sys
+
+    from med_research.cli import main as cli_main
+
+    sys.exit(cli_main() or 0)
+

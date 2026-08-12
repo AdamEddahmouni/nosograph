@@ -84,9 +84,14 @@ def _load_disease_profile_payload(disease_id: str) -> dict:
     if disease_id != "sle":
         defaults = payload.get("default_profile")
         required_defaults = {
-            "common_ae", "severe_ae", "disease_overlap_ae",
-            "severity_burden", "chronic_use_safety", "disease_specific_risk",
-            "monitoring_required", "evidence_grade",
+            "common_ae",
+            "severe_ae",
+            "disease_overlap_ae",
+            "severity_burden",
+            "chronic_use_safety",
+            "disease_specific_risk",
+            "monitoring_required",
+            "evidence_grade",
         }
         if not isinstance(defaults, dict) or not required_defaults <= set(defaults):
             missing = sorted(required_defaults - set(defaults or {}))
@@ -95,9 +100,7 @@ def _load_disease_profile_payload(disease_id: str) -> dict:
             )
 
     catalog_ids = {
-        str(drug.get("id"))
-        for drug in disease.load_drugs().get("drugs", [])
-        if drug.get("id")
+        str(drug.get("id")) for drug in disease.load_drugs().get("drugs", []) if drug.get("id")
     }
     profile_ids = []
     for profile in profiles:
@@ -117,18 +120,14 @@ def _validate_profile_values(profile: dict, disease_id: str) -> None:
     for field in ("severity_burden", "chronic_use_safety", "disease_specific_risk"):
         value = profile.get(field)
         if not isinstance(value, (int, float)) or isinstance(value, bool) or not 0 <= value <= 10:
-            raise ValueError(
-                f"Safety profile for '{disease_id}' has invalid {field}: {value!r}"
-            )
+            raise ValueError(f"Safety profile for '{disease_id}' has invalid {field}: {value!r}")
     for field in ("common_ae", "severe_ae", "disease_overlap_ae", "black_box_warnings"):
         if not isinstance(profile.get(field, []), list):
             raise ValueError(
                 f"Safety profile for '{disease_id}' has invalid {field}; expected a list"
             )
     if not isinstance(profile.get("monitoring_required", ""), str):
-        raise ValueError(
-            f"Safety profile for '{disease_id}' has invalid monitoring_required"
-        )
+        raise ValueError(f"Safety profile for '{disease_id}' has invalid monitoring_required")
 
 
 def _merge_profile(
@@ -218,13 +217,22 @@ def _get_default_profiles() -> dict:
             "drug_id": "belimumab",
             "drug_name": "Belimumab (Benlysta)",
             "common_ae": [
-                "nausea", "diarrhea", "pyrexia", "nasopharyngitis",
-                "bronchitis", "insomnia", "depression", "migraine",
-                "infusion reactions", "hypersensitivity",
+                "nausea",
+                "diarrhea",
+                "pyrexia",
+                "nasopharyngitis",
+                "bronchitis",
+                "insomnia",
+                "depression",
+                "migraine",
+                "infusion reactions",
+                "hypersensitivity",
             ],
             "severe_ae": [
-                "serious infections", "progressive multifocal leukoencephalopathy (rare)",
-                "hypersensitivity reactions", "infusion reactions",
+                "serious infections",
+                "progressive multifocal leukoencephalopathy (rare)",
+                "hypersensitivity reactions",
+                "infusion reactions",
             ],
             "lupus_overlap_ae": ["depression", "pyrexia"],
             "severity_burden": 3,
@@ -237,12 +245,16 @@ def _get_default_profiles() -> dict:
             "drug_id": "anifrolumab",
             "drug_name": "Anifrolumab (Saphnelo)",
             "common_ae": [
-                "nasopharyngitis", "upper respiratory tract infection",
-                "bronchitis", "infusion reactions", "herpes zoster",
+                "nasopharyngitis",
+                "upper respiratory tract infection",
+                "bronchitis",
+                "infusion reactions",
+                "herpes zoster",
                 "cough",
             ],
             "severe_ae": [
-                "serious infections", "herpes zoster (disseminated)",
+                "serious infections",
+                "herpes zoster (disseminated)",
                 "hypersensitivity reactions",
             ],
             "lupus_overlap_ae": ["cough"],
@@ -256,13 +268,22 @@ def _get_default_profiles() -> dict:
             "drug_id": "voclosporin",
             "drug_name": "Voclosporin (Lupkynis)",
             "common_ae": [
-                "glomerular filtration rate decreased", "hypertension",
-                "diarrhea", "headache", "anemia", "cough",
-                "urinary tract infection", "upper abdominal pain",
+                "glomerular filtration rate decreased",
+                "hypertension",
+                "diarrhea",
+                "headache",
+                "anemia",
+                "cough",
+                "urinary tract infection",
+                "upper abdominal pain",
             ],
             "severe_ae": [
-                "nephrotoxicity", "hypertension", "neurotoxicity",
-                "serious infections", "lymphoma (rare)", "skin cancer (rare)",
+                "nephrotoxicity",
+                "hypertension",
+                "neurotoxicity",
+                "serious infections",
+                "lymphoma (rare)",
+                "skin cancer (rare)",
             ],
             "lupus_overlap_ae": ["anemia", "headache"],
             "severity_burden": 5,
@@ -278,12 +299,18 @@ def _get_default_profiles() -> dict:
             "drug_id": "hydroxychloroquine",
             "drug_name": "Hydroxychloroquine (Plaquenil)",
             "common_ae": [
-                "nausea", "abdominal pain", "diarrhea", "headache",
-                "rash", "pruritus",
+                "nausea",
+                "abdominal pain",
+                "diarrhea",
+                "headache",
+                "rash",
+                "pruritus",
             ],
             "severe_ae": [
-                "retinopathy (with long-term use)", "cardiomyopathy (rare)",
-                "severe hypoglycemia", "neuropsychiatric effects (rare)",
+                "retinopathy (with long-term use)",
+                "cardiomyopathy (rare)",
+                "severe hypoglycemia",
+                "neuropsychiatric effects (rare)",
             ],
             "lupus_overlap_ae": ["rash"],
             "severity_burden": 2,
@@ -296,13 +323,21 @@ def _get_default_profiles() -> dict:
             "drug_id": "mycophenolate",
             "drug_name": "Mycophenolate Mofetil (CellCept)",
             "common_ae": [
-                "diarrhea", "nausea", "vomiting", "abdominal pain",
-                "leukopenia", "anemia", "thrombocytopenia",
+                "diarrhea",
+                "nausea",
+                "vomiting",
+                "abdominal pain",
+                "leukopenia",
+                "anemia",
+                "thrombocytopenia",
             ],
             "severe_ae": [
-                "serious infections", "lymphoma (rare)", "skin cancer (rare)",
+                "serious infections",
+                "lymphoma (rare)",
+                "skin cancer (rare)",
                 "progressive multifocal leukoencephalopathy (rare)",
-                "pure red cell aplasia (rare)", "gastrointestinal bleeding",
+                "pure red cell aplasia (rare)",
+                "gastrointestinal bleeding",
             ],
             "lupus_overlap_ae": ["leukopenia", "anemia", "thrombocytopenia"],
             "severity_burden": 5,
@@ -319,22 +354,33 @@ def _get_default_profiles() -> dict:
             "drug_id": "cyclophosphamide",
             "drug_name": "Cyclophosphamide (Cytoxan)",
             "common_ae": [
-                "nausea", "vomiting", "alopecia", "bone marrow suppression",
-                "leukopenia", "hemorrhagic cystitis", "infertility",
+                "nausea",
+                "vomiting",
+                "alopecia",
+                "bone marrow suppression",
+                "leukopenia",
+                "hemorrhagic cystitis",
+                "infertility",
             ],
             "severe_ae": [
-                "bone marrow failure", "hemorrhagic cystitis", "bladder cancer",
+                "bone marrow failure",
+                "hemorrhagic cystitis",
+                "bladder cancer",
                 "secondary malignancies (leukemia, lymphoma)",
-                "severe infections", "cardiotoxicity (high dose)",
-                "pulmonary fibrosis", "infertility (permanent)",
+                "severe infections",
+                "cardiotoxicity (high dose)",
+                "pulmonary fibrosis",
+                "infertility (permanent)",
             ],
             "lupus_overlap_ae": ["alopecia", "leukopenia"],
             "severity_burden": 9,
             "chronic_use_safety": 1,
             "dil_risk": 1,
             "black_box_warnings": [
-                "Myelosuppression", "Hemorrhagic cystitis",
-                "Secondary malignancies", "Fetal harm",
+                "Myelosuppression",
+                "Hemorrhagic cystitis",
+                "Secondary malignancies",
+                "Fetal harm",
             ],
             "monitoring_required": "CBC, urinalysis, renal/hepatic function, fertility counseling",
         },
@@ -342,13 +388,21 @@ def _get_default_profiles() -> dict:
             "drug_id": "rituximab",
             "drug_name": "Rituximab (Rituxan)",
             "common_ae": [
-                "infusion reactions", "pyrexia", "chills", "asthenia",
-                "nausea", "headache", "pruritus", "rash",
+                "infusion reactions",
+                "pyrexia",
+                "chills",
+                "asthenia",
+                "nausea",
+                "headache",
+                "pruritus",
+                "rash",
             ],
             "severe_ae": [
-                "serious infusion reactions", "hepatitis B reactivation",
+                "serious infusion reactions",
+                "hepatitis B reactivation",
                 "progressive multifocal leukoencephalopathy (rare)",
-                "serious infections", "cardiac arrhythmias",
+                "serious infections",
+                "cardiac arrhythmias",
                 "tumor lysis syndrome",
             ],
             "lupus_overlap_ae": ["pyrexia", "rash", "headache"],
@@ -367,15 +421,27 @@ def _get_default_profiles() -> dict:
             "drug_id": "prednisone",
             "drug_name": "Prednisone (Corticosteroids)",
             "common_ae": [
-                "weight gain", "insomnia", "mood changes", "hyperglycemia",
-                "hypertension", "osteoporosis", "cataracts", "glaucoma",
-                "skin thinning", "increased appetite", "fluid retention",
+                "weight gain",
+                "insomnia",
+                "mood changes",
+                "hyperglycemia",
+                "hypertension",
+                "osteoporosis",
+                "cataracts",
+                "glaucoma",
+                "skin thinning",
+                "increased appetite",
+                "fluid retention",
                 "avascular necrosis",
             ],
             "severe_ae": [
-                "avascular necrosis of femoral head", "osteoporosis with fracture",
-                "adrenal suppression", "severe infections",
-                "Cushing syndrome", "peptic ulcer", "pancreatitis",
+                "avascular necrosis of femoral head",
+                "osteoporosis with fracture",
+                "adrenal suppression",
+                "severe infections",
+                "Cushing syndrome",
+                "peptic ulcer",
+                "pancreatitis",
                 "psychosis (rare)",
             ],
             "lupus_overlap_ae": ["mood changes", "psychosis"],
@@ -389,14 +455,24 @@ def _get_default_profiles() -> dict:
             "drug_id": "tacrolimus",
             "drug_name": "Tacrolimus (Prograf)",
             "common_ae": [
-                "tremor", "headache", "hypertension", "nausea",
-                "diarrhea", "renal dysfunction", "hyperglycemia",
-                "hypomagnesemia", "hyperkalemia",
+                "tremor",
+                "headache",
+                "hypertension",
+                "nausea",
+                "diarrhea",
+                "renal dysfunction",
+                "hyperglycemia",
+                "hypomagnesemia",
+                "hyperkalemia",
             ],
             "severe_ae": [
-                "nephrotoxicity", "neurotoxicity", "hypertension",
-                "hyperglycemia/diabetes", "serious infections",
-                "lymphoma (rare)", "skin cancer (rare)",
+                "nephrotoxicity",
+                "neurotoxicity",
+                "hypertension",
+                "hyperglycemia/diabetes",
+                "serious infections",
+                "lymphoma (rare)",
+                "skin cancer (rare)",
             ],
             "lupus_overlap_ae": ["headache", "renal dysfunction"],
             "severity_burden": 5,
@@ -412,13 +488,20 @@ def _get_default_profiles() -> dict:
             "drug_id": "azathioprine",
             "drug_name": "Azathioprine (Imuran)",
             "common_ae": [
-                "leukopenia", "nausea", "vomiting", "hepatotoxicity",
-                "pancreatitis (rare)", "infection risk",
+                "leukopenia",
+                "nausea",
+                "vomiting",
+                "hepatotoxicity",
+                "pancreatitis (rare)",
+                "infection risk",
             ],
             "severe_ae": [
-                "bone marrow suppression", "hepatotoxicity",
-                "pancreatitis", "severe infections",
-                "lymphoma (rare)", "skin cancer (rare)",
+                "bone marrow suppression",
+                "hepatotoxicity",
+                "pancreatitis",
+                "severe infections",
+                "lymphoma (rare)",
+                "skin cancer (rare)",
             ],
             "lupus_overlap_ae": ["leukopenia"],
             "severity_burden": 5,
@@ -434,14 +517,20 @@ def _get_default_profiles() -> dict:
             "drug_id": "baricitinib",
             "drug_name": "Baricitinib (Olumiant)",
             "common_ae": [
-                "upper respiratory tract infection", "nausea",
-                "herpes zoster", "herpes simplex", "hyperlipidemia",
+                "upper respiratory tract infection",
+                "nausea",
+                "herpes zoster",
+                "herpes simplex",
+                "hyperlipidemia",
                 "increased creatine phosphokinase",
             ],
             "severe_ae": [
-                "serious infections", "herpes zoster (disseminated)",
-                "thrombosis (venous thromboembolism)", "major adverse cardiovascular events",
-                "malignancy", "gastrointestinal perforation (rare)",
+                "serious infections",
+                "herpes zoster (disseminated)",
+                "thrombosis (venous thromboembolism)",
+                "major adverse cardiovascular events",
+                "malignancy",
+                "gastrointestinal perforation (rare)",
             ],
             "lupus_overlap_ae": [],
             "severity_burden": 5,
@@ -457,13 +546,19 @@ def _get_default_profiles() -> dict:
             "drug_id": "obinutuzumab",
             "drug_name": "Obinutuzumab (Gazyva)",
             "common_ae": [
-                "infusion reactions", "neutropenia", "thrombocytopenia",
-                "pyrexia", "cough", "nausea",
+                "infusion reactions",
+                "neutropenia",
+                "thrombocytopenia",
+                "pyrexia",
+                "cough",
+                "nausea",
             ],
             "severe_ae": [
-                "serious infusion reactions", "hepatitis B reactivation",
+                "serious infusion reactions",
+                "hepatitis B reactivation",
                 "progressive multifocal leukoencephalopathy (rare)",
-                "neutropenia (severe)", "thrombocytopenia (severe)",
+                "neutropenia (severe)",
+                "thrombocytopenia (severe)",
                 "serious infections",
             ],
             "lupus_overlap_ae": ["neutropenia", "thrombocytopenia", "pyrexia"],
@@ -480,12 +575,19 @@ def _get_default_profiles() -> dict:
             "drug_id": "acalabrutinib",
             "drug_name": "Acalabrutinib (Calquence)",
             "common_ae": [
-                "headache", "diarrhea", "fatigue", "myalgia",
-                "bruising", "nausea", "rash",
+                "headache",
+                "diarrhea",
+                "fatigue",
+                "myalgia",
+                "bruising",
+                "nausea",
+                "rash",
             ],
             "severe_ae": [
-                "hemorrhage", "atrial fibrillation/flutter",
-                "serious infections", "second primary malignancies",
+                "hemorrhage",
+                "atrial fibrillation/flutter",
+                "serious infections",
+                "second primary malignancies",
                 "cytopenias",
             ],
             "lupus_overlap_ae": ["fatigue", "rash", "headache", "myalgia"],
@@ -499,12 +601,19 @@ def _get_default_profiles() -> dict:
             "drug_id": "avacopan",
             "drug_name": "Avacopan (Tavneos)",
             "common_ae": [
-                "nausea", "headache", "hypertension", "diarrhea",
-                "vomiting", "rash", "paresthesia",
+                "nausea",
+                "headache",
+                "hypertension",
+                "diarrhea",
+                "vomiting",
+                "rash",
+                "paresthesia",
             ],
             "severe_ae": [
-                "hepatotoxicity", "serious infections",
-                "angioedema", "hypersensitivity reactions",
+                "hepatotoxicity",
+                "serious infections",
+                "angioedema",
+                "hypersensitivity reactions",
             ],
             "lupus_overlap_ae": ["headache", "rash"],
             "severity_burden": 4,
@@ -517,13 +626,21 @@ def _get_default_profiles() -> dict:
             "drug_id": "cyclosporine",
             "drug_name": "Cyclosporine (Neoral / Sandimmune)",
             "common_ae": [
-                "renal dysfunction", "hypertension", "tremor",
-                "hirsutism", "gingival hyperplasia", "hyperlipidemia",
+                "renal dysfunction",
+                "hypertension",
+                "tremor",
+                "hirsutism",
+                "gingival hyperplasia",
+                "hyperlipidemia",
                 "nausea",
             ],
             "severe_ae": [
-                "nephrotoxicity", "hypertension", "neurotoxicity",
-                "serious infections", "lymphoma (rare)", "skin cancer (rare)",
+                "nephrotoxicity",
+                "hypertension",
+                "neurotoxicity",
+                "serious infections",
+                "lymphoma (rare)",
+                "skin cancer (rare)",
                 "hepatotoxicity",
             ],
             "lupus_overlap_ae": ["renal dysfunction"],
@@ -531,7 +648,8 @@ def _get_default_profiles() -> dict:
             "chronic_use_safety": 5,
             "dil_risk": 0,
             "black_box_warnings": [
-                "Nephrotoxicity", "Hypertension",
+                "Nephrotoxicity",
+                "Hypertension",
                 "Increased risk of malignancy",
                 "Increased risk of serious infections",
             ],
@@ -541,12 +659,18 @@ def _get_default_profiles() -> dict:
             "drug_id": "dimethyl_fumarate",
             "drug_name": "Dimethyl Fumarate (Tecfidera)",
             "common_ae": [
-                "flushing", "abdominal pain", "diarrhea", "nausea",
-                "vomiting", "pruritus", "rash",
+                "flushing",
+                "abdominal pain",
+                "diarrhea",
+                "nausea",
+                "vomiting",
+                "pruritus",
+                "rash",
             ],
             "severe_ae": [
                 "progressive multifocal leukoencephalopathy (rare)",
-                "lymphopenia (severe)", "hepatic injury",
+                "lymphopenia (severe)",
+                "hepatic injury",
                 "anaphylaxis",
             ],
             "lupus_overlap_ae": ["rash"],
@@ -560,11 +684,14 @@ def _get_default_profiles() -> dict:
             "drug_id": "iscalimab",
             "drug_name": "Iscalimab (CFZ533 / anti-CD40)",
             "common_ae": [
-                "upper respiratory tract infection", "headache",
-                "nasopharyngitis", "nausea",
+                "upper respiratory tract infection",
+                "headache",
+                "nasopharyngitis",
+                "nausea",
             ],
             "severe_ae": [
-                "serious infections", "thromboembolic events (theoretical)",
+                "serious infections",
+                "thromboembolic events (theoretical)",
                 "hypersensitivity reactions",
             ],
             "lupus_overlap_ae": ["headache"],
@@ -578,8 +705,11 @@ def _get_default_profiles() -> dict:
             "drug_id": "ravulizumab",
             "drug_name": "Ravulizumab (Ultomiris)",
             "common_ae": [
-                "upper respiratory tract infection", "headache",
-                "diarrhea", "nausea", "pyrexia",
+                "upper respiratory tract infection",
+                "headache",
+                "diarrhea",
+                "nausea",
+                "pyrexia",
             ],
             "severe_ae": [
                 "meningococcal infection (life-threatening)",
@@ -599,11 +729,15 @@ def _get_default_profiles() -> dict:
             "drug_id": "rozanolixizumab",
             "drug_name": "Rozanolixizumab (Rystiggo)",
             "common_ae": [
-                "headache", "infections", "diarrhea", "pyrexia",
+                "headache",
+                "infections",
+                "diarrhea",
+                "pyrexia",
                 "injection site reactions",
             ],
             "severe_ae": [
-                "serious infections", "hypersensitivity reactions",
+                "serious infections",
+                "hypersensitivity reactions",
                 "immunogenicity",
             ],
             "lupus_overlap_ae": ["headache", "pyrexia"],
@@ -617,14 +751,21 @@ def _get_default_profiles() -> dict:
             "drug_id": "tofacitinib",
             "drug_name": "Tofacitinib (Xeljanz)",
             "common_ae": [
-                "upper respiratory tract infection", "headache",
-                "diarrhea", "nasopharyngitis", "hypertension",
-                "hyperlipidemia", "herpes zoster",
+                "upper respiratory tract infection",
+                "headache",
+                "diarrhea",
+                "nasopharyngitis",
+                "hypertension",
+                "hyperlipidemia",
+                "herpes zoster",
             ],
             "severe_ae": [
-                "serious infections", "herpes zoster (disseminated)",
-                "thrombosis (venous thromboembolism)", "major adverse cardiovascular events",
-                "malignancy", "gastrointestinal perforation (rare)",
+                "serious infections",
+                "herpes zoster (disseminated)",
+                "thrombosis (venous thromboembolism)",
+                "major adverse cardiovascular events",
+                "malignancy",
+                "gastrointestinal perforation (rare)",
                 "hepatic injury",
             ],
             "lupus_overlap_ae": ["headache"],
@@ -641,12 +782,16 @@ def _get_default_profiles() -> dict:
             "drug_id": "deucravacitinib",
             "drug_name": "Deucravacitinib (Sotyktu)",
             "common_ae": [
-                "upper respiratory tract infection", "nasopharyngitis",
-                "headache", "diarrhea", "nausea",
+                "upper respiratory tract infection",
+                "nasopharyngitis",
+                "headache",
+                "diarrhea",
+                "nausea",
                 "herpes simplex",
             ],
             "severe_ae": [
-                "serious infections", "malignancy (potential)",
+                "serious infections",
+                "malignancy (potential)",
                 "herpes simplex (disseminated, rare)",
                 "increased creatine phosphokinase",
             ],
@@ -661,11 +806,14 @@ def _get_default_profiles() -> dict:
             "drug_id": "dapirolizumab_pegol",
             "drug_name": "Dapirolizumab Pegol (Anti-CD40L Fab-PEG)",
             "common_ae": [
-                "injection site reactions", "upper respiratory tract infection",
-                "headache", "nausea",
+                "injection site reactions",
+                "upper respiratory tract infection",
+                "headache",
+                "nausea",
             ],
             "severe_ae": [
-                "serious infections", "thromboembolic events (theoretical risk mitigated by PEGylated Fab design)",
+                "serious infections",
+                "thromboembolic events (theoretical risk mitigated by PEGylated Fab design)",
                 "hypersensitivity reactions",
             ],
             "lupus_overlap_ae": ["headache"],
@@ -679,11 +827,14 @@ def _get_default_profiles() -> dict:
             "drug_id": "litifilimab",
             "drug_name": "Litifilimab (Anti-BDCA2 / BIIB059)",
             "common_ae": [
-                "injection site reactions", "upper respiratory tract infection",
-                "headache", "nasopharyngitis",
+                "injection site reactions",
+                "upper respiratory tract infection",
+                "headache",
+                "nasopharyngitis",
             ],
             "severe_ae": [
-                "serious infections", "hypersensitivity reactions",
+                "serious infections",
+                "hypersensitivity reactions",
             ],
             "lupus_overlap_ae": ["headache"],
             "severity_burden": 2,
@@ -696,12 +847,19 @@ def _get_default_profiles() -> dict:
             "drug_id": "iberdomide",
             "drug_name": "Iberdomide (CC-220 / Cereblon Modulator)",
             "common_ae": [
-                "neutropenia", "thrombocytopenia", "anemia",
-                "infections", "fatigue", "diarrhea", "nausea",
+                "neutropenia",
+                "thrombocytopenia",
+                "anemia",
+                "infections",
+                "fatigue",
+                "diarrhea",
+                "nausea",
             ],
             "severe_ae": [
-                "neutropenia (severe)", "thrombocytopenia (severe)",
-                "serious infections", "thromboembolic events",
+                "neutropenia (severe)",
+                "thrombocytopenia (severe)",
+                "serious infections",
+                "thromboembolic events",
                 "second primary malignancies (potential, class effect)",
             ],
             "lupus_overlap_ae": ["neutropenia", "thrombocytopenia", "anemia", "fatigue"],
@@ -718,13 +876,20 @@ def _get_default_profiles() -> dict:
             "drug_id": "teclistamab",
             "drug_name": "Teclistamab (Tecvayli / BCMAxCD3 Bispecific)",
             "common_ae": [
-                "cytokine release syndrome", "neutropenia", "anemia",
-                "thrombocytopenia", "infections", "fatigue",
-                "injection site reactions", "pyrexia",
+                "cytokine release syndrome",
+                "neutropenia",
+                "anemia",
+                "thrombocytopenia",
+                "infections",
+                "fatigue",
+                "injection site reactions",
+                "pyrexia",
             ],
             "severe_ae": [
-                "cytokine release syndrome (Grade 3-4)", "immune effector cell-associated neurotoxicity syndrome (ICANS)",
-                "severe infections", "cytopenias (prolonged)",
+                "cytokine release syndrome (Grade 3-4)",
+                "immune effector cell-associated neurotoxicity syndrome (ICANS)",
+                "severe infections",
+                "cytopenias (prolonged)",
                 "hypogammaglobulinemia",
             ],
             "lupus_overlap_ae": ["neutropenia", "anemia", "thrombocytopenia", "fatigue", "pyrexia"],
@@ -741,16 +906,23 @@ def _get_default_profiles() -> dict:
             "drug_id": "anti_cd19_cart",
             "drug_name": "Anti-CD19 CAR-T Cell Therapy",
             "common_ae": [
-                "cytokine release syndrome", "neurotoxicity",
-                "B cell aplasia", "hypogammaglobulinemia",
-                "infections", "pyrexia", "fatigue",
+                "cytokine release syndrome",
+                "neurotoxicity",
+                "B cell aplasia",
+                "hypogammaglobulinemia",
+                "infections",
+                "pyrexia",
+                "fatigue",
                 "cytopenias",
             ],
             "severe_ae": [
-                "cytokine release syndrome (Grade 3-4)", "immune effector cell-associated neurotoxicity syndrome (ICANS)",
+                "cytokine release syndrome (Grade 3-4)",
+                "immune effector cell-associated neurotoxicity syndrome (ICANS)",
                 "prolonged B cell aplasia (requiring immunoglobulin replacement)",
-                "serious infections", "secondary malignancies",
-                "cytopenias (prolonged)", "hemophagocytic lymphohistiocytosis (rare)",
+                "serious infections",
+                "secondary malignancies",
+                "cytopenias (prolonged)",
+                "hemophagocytic lymphohistiocytosis (rare)",
             ],
             "lupus_overlap_ae": ["neurotoxicity", "fatigue", "pyrexia"],
             "severity_burden": 9,
@@ -774,7 +946,9 @@ def count_disease_symptom_overlap(profile: dict, disease_id: str = "sle") -> int
     symptoms = Disease(disease_id).get_symptom_overlap_terms()
     overlap_terms = profile.get(
         "disease_overlap_ae",
-        profile.get("lupus_overlap_ae", []) if disease_id == "sle" else profile.get("common_ae", []),
+        profile.get("lupus_overlap_ae", [])
+        if disease_id == "sle"
+        else profile.get("common_ae", []),
     )
     overlap = 0
     for ae in overlap_terms:
@@ -832,7 +1006,7 @@ def _load_disease_specific_risk(disease_id: str = "sle") -> dict:
 
         disease = Disease(disease_id)
         risk = disease.config.get("DRUG_SAFETY_RISK") or disease.get_disease_risk_config()
-    except Exception:
+    except (OSError, ValueError, KeyError, TypeError, ImportError, AttributeError):
         risk = {}
     if not isinstance(risk, dict):
         risk = {}
@@ -891,9 +1065,7 @@ def score_dil_risk(profile: dict, disease_id: str = "sle") -> float:
     return score_disease_specific_risk(profile, disease_id)
 
 
-def compute_adverse_event_score(
-    profile: dict, disease_id: str = "sle"
-) -> AdverseEventScore:
+def compute_adverse_event_score(profile: dict, disease_id: str = "sle") -> AdverseEventScore:
     """Compute the adverse event safety score for a single drug.
 
     Returns dict with individual dimension scores and composite score.
@@ -930,7 +1102,9 @@ def compute_adverse_event_score(
         "dil_risk_score": round(disease_risk, 1),
         "composite_safety_score": round(composite, 2),
         "n_disease_overlap_ae": count_disease_symptom_overlap(profile, disease_id),
-        "disease_overlap_ae": profile.get("disease_overlap_ae", profile.get("lupus_overlap_ae", [])),
+        "disease_overlap_ae": profile.get(
+            "disease_overlap_ae", profile.get("lupus_overlap_ae", [])
+        ),
         "n_lupus_overlap_ae": count_disease_symptom_overlap(profile, disease_id),
         "lupus_overlap_ae": profile.get("disease_overlap_ae", profile.get("lupus_overlap_ae", [])),
         "evidence_grade": profile.get("evidence_grade", "inferred_class_default"),
@@ -997,6 +1171,7 @@ def score_all_drugs(
 def get_drug_profile(drug_id: str, disease_id: str = "sle") -> dict:
     """Get the adverse-event profile and active-disease score for one drug."""
     from med_research.diseases.coverage import module_coverage
+
     coverage = module_coverage(
         disease_id,
         "safety",
@@ -1034,10 +1209,14 @@ def get_safety_summary(disease_id: str = "sle", results: list | None = None) -> 
         "riskiest_drug": results[-1]["drug_name"] if results else "",
         "riskiest_score": results[-1]["composite_safety_score"] if results else 0,
         "drugs_with_bbw": sum(1 for r in results if r.get("black_box_warnings")),
-        "drugs_with_disease_specific_risk": sum(1 for r in results if r["disease_specific_risk_score"] < 10.0),
+        "drugs_with_disease_specific_risk": sum(
+            1 for r in results if r["disease_specific_risk_score"] < 10.0
+        ),
         "drugs_with_dil_risk": sum(1 for r in results if r["disease_specific_risk_score"] < 10.0),
         "coverage": coverage.to_dict(),
-        "status": "limited_coverage" if coverage.level == "partial" else ("ready" if coverage.is_runnable else "blocked"),
+        "status": "limited_coverage"
+        if coverage.level == "partial"
+        else ("ready" if coverage.is_runnable else "blocked"),
         "profile_source": payload.get("profile_source", payload.get("source", "")),
         "profile_curated_inputs": payload.get("curated_inputs", []),
         "profile_inferred_inputs": payload.get("inferred_inputs", []),
@@ -1058,7 +1237,9 @@ def print_analysis(results: list) -> None:
     logger.info(f"  Safest drug: {summary['safest_drug']} ({summary['safest_score']:.1f})")
     logger.info(f"  Riskiest drug: {summary['riskiest_drug']} ({summary['riskiest_score']:.1f})")
     logger.info(f"  Drugs with black box warnings: {summary['drugs_with_bbw']}")
-    logger.info(f"  Drugs with disease-specific risk: {summary['drugs_with_disease_specific_risk']}")
+    logger.info(
+        f"  Drugs with disease-specific risk: {summary['drugs_with_disease_specific_risk']}"
+    )
 
     logger.info("\n  Top 10 safest drugs:")
     for i, r in enumerate(results[:10], 1):
@@ -1084,11 +1265,21 @@ def main():
         profile = get_drug_profile(args.drug, disease_id=args.disease)
         if profile and profile.get("status") != "blocked" and profile.get("drug_name"):
             logger.info(f"\n🛡️  Safety Profile: {profile['drug_name']}")
-            logger.info(f"   Composite Safety Score: {profile.get('composite_safety_score', 'N/A')}")
-            logger.info(f"   Disease Symptom Overlap: {profile.get('disease_symptom_overlap_score', 'N/A')}/10")
-            logger.info(f"   Severity Burden:         {profile.get('severity_burden_score', 'N/A')}/10")
-            logger.info(f"   Chronic Use Safety:      {profile.get('chronic_use_safety_score', 'N/A')}/10")
-            logger.info(f"   Disease-Specific Risk:   {profile.get('disease_specific_risk_score', 'N/A')}/10")
+            logger.info(
+                f"   Composite Safety Score: {profile.get('composite_safety_score', 'N/A')}"
+            )
+            logger.info(
+                f"   Disease Symptom Overlap: {profile.get('disease_symptom_overlap_score', 'N/A')}/10"
+            )
+            logger.info(
+                f"   Severity Burden:         {profile.get('severity_burden_score', 'N/A')}/10"
+            )
+            logger.info(
+                f"   Chronic Use Safety:      {profile.get('chronic_use_safety_score', 'N/A')}/10"
+            )
+            logger.info(
+                f"   Disease-Specific Risk:   {profile.get('disease_specific_risk_score', 'N/A')}/10"
+            )
             logger.info(f"   Black Box Warnings:      {profile.get('black_box_warnings', [])}")
             logger.info(f"   Disease Overlap AEs:      {profile.get('disease_overlap_ae', [])}")
         else:
@@ -1122,4 +1313,9 @@ def main():
 
 
 if __name__ == "__main__":
-    raise SystemExit(main() or 0)
+    import sys
+
+    from med_research.cli import main as cli_main
+
+    sys.exit(cli_main() or 0)
+

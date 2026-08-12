@@ -136,7 +136,9 @@ def print_status():
     # ASCII-safe output: status text may be printed to cp1252 consoles
     print("\nAutoDock Vina Status:")
     print(f"   In PATH:           {vina_path if vina_path else 'not found'}")
-    print(f"   Project bin/:      {', '.join(str(p.name) for p in bin_contents) if bin_contents else 'empty'}")
+    print(
+        f"   Project bin/:      {', '.join(str(p.name) for p in bin_contents) if bin_contents else 'empty'}"
+    )
     print(f"   Platform:          {platform.system()} {platform.machine()}")
 
     if not vina_path:
@@ -150,15 +152,18 @@ def main():
         description="AutoDock Vina binary download helper for the Lupus Research Platform"
     )
     parser.add_argument(
-        "--auto", action="store_true",
+        "--auto",
+        action="store_true",
         help="Non-interactive: download and install without prompting",
     )
     parser.add_argument(
-        "--check", action="store_true",
+        "--check",
+        action="store_true",
         help="Check current Vina installation status only",
     )
     parser.add_argument(
-        "--force", action="store_true",
+        "--force",
+        action="store_true",
         help="Re-download even if already installed",
     )
     args = parser.parse_args()
@@ -173,7 +178,9 @@ def main():
             if vina_path.startswith(str(BIN_DIR)):
                 Path(vina_path).unlink(missing_ok=True)
             else:
-                logger.info(f"⚠️  Vina found at {vina_path} (outside project). Force only removes project-binary.")
+                logger.info(
+                    f"⚠️  Vina found at {vina_path} (outside project). Force only removes project-binary."
+                )
         else:
             logger.info("⚠️  No Vina binary found to remove.")
 
@@ -191,4 +198,9 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+
+    from med_research.cli import main as cli_main
+
+    sys.exit(cli_main() or 0)
+

@@ -18,7 +18,7 @@ def provenance_footer_html(provenance: dict[str, Any] | None) -> str:
     run_id = escape(str(provenance.get("run_id", "not available")))
     return (
         '<div class="meta provenance"><strong>Reproducibility:</strong> '
-        f'run <code>{run_id}</code> · fingerprint <code>{fingerprint}</code> · '
+        f"run <code>{run_id}</code> · fingerprint <code>{fingerprint}</code> · "
         f"generated {generated} · mode {cache_mode}"
         "</div>"
     )

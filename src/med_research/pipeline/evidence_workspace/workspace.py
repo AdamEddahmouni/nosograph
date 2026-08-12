@@ -37,7 +37,9 @@ def build_search_terms(request: ResearchRequest) -> list[str]:
 
 def validate_disease_contract(disease_id: str) -> None:
     """Fail before evidence work when a disease has unusable core configuration."""
-    gaps = {field: status for field, status in Disease(disease_id).validate().items() if status != "ok"}
+    gaps = {
+        field: status for field, status in Disease(disease_id).validate().items() if status != "ok"
+    }
     if gaps:
         details = ", ".join(f"{field}: {status}" for field, status in gaps.items())
         raise ValueError(f"incomplete disease configuration for {disease_id}: {details}")
@@ -113,11 +115,7 @@ def run_workspace(
     retrieval_times: dict[str, str] = {
         status.source: status.retrieved_at.isoformat() for status in statuses
     }
-    retrieval_modes = {
-        status.retrieval_mode
-        for status in statuses
-        if status.status != "skipped"
-    }
+    retrieval_modes = {status.retrieval_mode for status in statuses if status.status != "skipped"}
     known_modes = retrieval_modes - {"unknown"}
     cache_or_live = (
         next(iter(known_modes))

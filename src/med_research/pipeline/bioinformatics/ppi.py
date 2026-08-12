@@ -102,9 +102,7 @@ def _fetch_ppi(symbols: list, confidence: float) -> tuple:
         logger.info("   ❌ No STRING IDs found. Check gene symbols.")
         return {}, []
 
-    logger.info(
-        f"\n🔄 Fetching PPI network (confidence ≥ {confidence})..."
-    )
+    logger.info(f"\n🔄 Fetching PPI network (confidence ≥ {confidence})...")
     interactions = _string_network(string_ids, confidence)
     logger.info(f"   Retrieved {len(interactions)} interactions")
 
@@ -187,9 +185,7 @@ def _string_network(string_ids: list, confidence: float = 0.4) -> list:
                         "stringId_B": parts[1].strip(),
                         "preferredName_A": parts[2].strip(),
                         "preferredName_B": parts[3].strip(),
-                        "score": float(parts[5].strip())
-                        if len(parts) > 5
-                        else 0.0,
+                        "score": float(parts[5].strip()) if len(parts) > 5 else 0.0,
                     }
                 )
 
@@ -245,10 +241,7 @@ def build_ppi_network(
 
     if cached is not None:
         try:
-            if (
-                cached.get("cache_key") == cache_key
-                and cached.get("confidence") == confidence
-            ):
+            if cached.get("cache_key") == cache_key and cached.get("confidence") == confidence:
                 logger.info("📦 Loading PPI network from cache...")
                 id_map = cached["id_map"]
                 interactions = cached["interactions"]
@@ -315,9 +308,7 @@ def build_ppi_network(
         # Add non-seed nodes
         for node_id in [a, b]:
             if node_id not in seen_nodes:
-                name = inter.get(
-                    f"preferredName_{'A' if node_id == a else 'B'}", node_id
-                )
+                name = inter.get(f"preferredName_{'A' if node_id == a else 'B'}", node_id)
                 G.add_node(
                     node_id,
                     symbol=name,
@@ -433,9 +424,7 @@ def cross_reference_with_candidates(
             key=lambda x: x["hub_score"],
             reverse=True,
         ),
-        "hub_untargeted": sorted(
-            hub_untargeted, key=lambda x: x["hub_score"], reverse=True
-        ),
+        "hub_untargeted": sorted(hub_untargeted, key=lambda x: x["hub_score"], reverse=True),
         "top_hubs_overall": hub_scores[:15],
     }
 
@@ -446,8 +435,9 @@ def analyze(hub_scores: list, crossref: dict, G: nx.Graph) -> None:
     logger.info("🔗 PROTEIN-PROTEIN INTERACTION NETWORK ANALYSIS")
     logger.info("=" * 70)
 
-    logger.info(f"\n  Network size: {G.number_of_nodes()} proteins, "
-          f"{G.number_of_edges()} interactions")
+    logger.info(
+        f"\n  Network size: {G.number_of_nodes()} proteins, {G.number_of_edges()} interactions"
+    )
 
     # Top hubs
     logger.info("\n  🏆 Top 10 Hub Proteins:")
@@ -478,20 +468,14 @@ def analyze(hub_scores: list, crossref: dict, G: nx.Graph) -> None:
     if untargeted:
         logger.info("\n  💡 Hub proteins with NO repurposing candidates (new opportunities):")
         for u in untargeted[:8]:
-            logger.info(
-                f"     • {u['symbol']} (hub={u['hub_score']:.3f}, "
-                f"deg={u['degree']})"
-            )
+            logger.info(f"     • {u['symbol']} (hub={u['hub_score']:.3f}, deg={u['degree']})")
 
     # Non-lupus hubs
     non_lupus = crossref.get("non_lupus_hubs", [])[:8]
     if non_lupus:
         logger.info("\n  🔬 Top non-lupus hub proteins (potential indirect targets):")
         for n in non_lupus:
-            logger.info(
-                f"     • {n['symbol']} (hub={n['hub_score']:.3f}, "
-                f"deg={n['degree']})"
-            )
+            logger.info(f"     • {n['symbol']} (hub={n['hub_score']:.3f}, deg={n['degree']})")
 
 
 def run_ppi_analysis(
@@ -521,9 +505,7 @@ def run_ppi_analysis(
     logger.info(f"   Loaded {len(gene_symbols)} disease gene symbols")
 
     logger.info("🔄 Loading repurposing candidates...")
-    candidates_data = json.loads(
-        (DR_DATA_DIR / "candidates.json").read_text(encoding="utf-8")
-    )
+    candidates_data = json.loads((DR_DATA_DIR / "candidates.json").read_text(encoding="utf-8"))
     candidates = candidates_data["repurposing_candidates"]
     logger.info(f"   Loaded {len(candidates)} candidates")
 
@@ -570,8 +552,7 @@ def run_ppi_analysis(
             for n in G.nodes()
         ],
         "edges": [
-            {"source": u, "target": v, "score": d["score"]}
-            for u, v, d in G.edges(data=True)
+            {"source": u, "target": v, "score": d["score"]} for u, v, d in G.edges(data=True)
         ],
     }
 
@@ -599,9 +580,7 @@ def run_ppi_analysis(
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="Lupus PPI Network Analysis via STRING API"
-    )
+    parser = argparse.ArgumentParser(description="Lupus PPI Network Analysis via STRING API")
     parser.add_argument(
         "--confidence",
         type=float,
@@ -614,17 +593,13 @@ def main():
         default=0,
         help="Max first-neighbor proteins to add (default: 0)",
     )
-    parser.add_argument(
-        "--export-html", action="store_true", help="Generate HTML report"
-    )
+    parser.add_argument("--export-html", action="store_true", help="Generate HTML report")
     parser.add_argument(
         "--no-cache",
         action="store_true",
         help="Skip cache, re-fetch PPI network from STRING",
     )
-    parser.add_argument(
-        "--disease", "-d", default="sle", help="Disease ID (default: sle)"
-    )
+    parser.add_argument("--disease", "-d", default="sle", help="Disease ID (default: sle)")
     args = parser.parse_args()
 
     result = run_ppi_analysis(
@@ -669,4 +644,9 @@ def main():
 
 
 if __name__ == "__main__":
-    hub_scores = main()
+    import sys
+
+    from med_research.cli import main as cli_main
+
+    sys.exit(cli_main() or 0)
+

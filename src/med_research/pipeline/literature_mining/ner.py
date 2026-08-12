@@ -43,11 +43,11 @@ def _try_load_spacy():
 
         # Try biomedical models first (scispacy)
         for model_name in [
-            "en_ner_bc5cdr_md",      # BioCreative V CDR model
-            "en_core_sci_sm",          # scispacy small
-            "en_core_sci_md",          # scispacy medium
-            "en_ner_craft_md",         # CRAFT model
-            "en_ner_jnlpba_md",        # JNLPBA model
+            "en_ner_bc5cdr_md",  # BioCreative V CDR model
+            "en_core_sci_sm",  # scispacy small
+            "en_core_sci_md",  # scispacy medium
+            "en_ner_craft_md",  # CRAFT model
+            "en_ner_jnlpba_md",  # JNLPBA model
         ]:
             try:
                 _spacy_nlp = spacy.load(model_name)
@@ -97,106 +97,106 @@ GENERIC_LABELS = {
 # Gene symbol pattern: uppercase letters + optional numbers (BTK, TYK2, STAT4)
 # Also catches CD markers (CD20, CD11b), interleukins (IL-6, IL-12), and IFN types
 _GENE_PATTERN = re.compile(
-    r'\b(?:[A-Z]{2,}[0-9]*[A-Z]*(?:\.[0-9]+)?'          # BTK, TYK2, STAT4, IRF5
-    r'|CD[0-9]+[a-z]?'                                     # CD20, CD11b
-    r'|IL-[0-9]+[A-Za-z]*'                                 # IL-6, IL-12, IL-23
-    r'|IFN-[αβγ][A-Za-z]*'                                 # IFN-α, IFN-β
-    r'|TNF-?[αβ]?'                                         # TNF-α, TNF
-    r'|TLR[0-9]+'                                          # TLR7, TLR9
-    r'|NF-?κB'                                             # NF-κB
-    r'|[A-Z][a-z]{2,}(?:\s+(?:kinase|receptor|factor|ligand|phosphatase|channel|transporter))'  # Bruton tyrosine kinase
-    r')(?!\w)'  # use (?!\w) instead of \b for Greek letter support
+    r"\b(?:[A-Z]{2,}[0-9]*[A-Z]*(?:\.[0-9]+)?"  # BTK, TYK2, STAT4, IRF5
+    r"|CD[0-9]+[a-z]?"  # CD20, CD11b
+    r"|IL-[0-9]+[A-Za-z]*"  # IL-6, IL-12, IL-23
+    r"|IFN-[αβγ][A-Za-z]*"  # IFN-α, IFN-β
+    r"|TNF-?[αβ]?"  # TNF-α, TNF
+    r"|TLR[0-9]+"  # TLR7, TLR9
+    r"|NF-?κB"  # NF-κB
+    r"|[A-Z][a-z]{2,}(?:\s+(?:kinase|receptor|factor|ligand|phosphatase|channel|transporter))"  # Bruton tyrosine kinase
+    r")(?!\w)"  # use (?!\w) instead of \b for Greek letter support
 )
 
 # Drug-like terms: therapeutic suffixes and known drug naming patterns
 _DRUG_PATTERN = re.compile(
-    r'\b(?:[A-Z][a-z]+(?:mab|nib|cept|mide|stat|zole|pril|sartan|oxin|mycin|cycline|floxacin|vir|asone|olone|profen|azosin|dipine|tidine|prazole|gliptin|gliflozin|parib|lisib|sertib|citinib)'
-    r'|[A-Z][a-z]+(?: monoclonal antibody| inhibitor| antagonist| agonist| modulator)'
-    r')\b'
+    r"\b(?:[A-Z][a-z]+(?:mab|nib|cept|mide|stat|zole|pril|sartan|oxin|mycin|cycline|floxacin|vir|asone|olone|profen|azosin|dipine|tidine|prazole|gliptin|gliflozin|parib|lisib|sertib|citinib)"
+    r"|[A-Z][a-z]+(?: monoclonal antibody| inhibitor| antagonist| agonist| modulator)"
+    r")\b"
 )
 
 # Disease mentions: condition suffixes, lupus-specific, autoimmune patterns
 _DISEASE_PATTERN = re.compile(
-    r'\b(?:[A-Z][a-z]+(?:itis|osis|emia|opathy|plasia|penia|cytosis|sclerosis)'
-    r'|lupus(?:\s+nephritis)?'
-    r'|nephritis'
-    r'|vasculitis'
-    r'|arthritis'
-    r'|scleroderma'
-    r'|Sjögren\'s(?:\s+syndrome)?'
-    r'|myositis'
-    r'|(?:autoimmune|chronic|systemic|refractory|severe)\s+[a-z]+'
-    r'|[a-z]+\s+(?:syndrome|disease|disorder|failure)'
-    r')\b',
+    r"\b(?:[A-Z][a-z]+(?:itis|osis|emia|opathy|plasia|penia|cytosis|sclerosis)"
+    r"|lupus(?:\s+nephritis)?"
+    r"|nephritis"
+    r"|vasculitis"
+    r"|arthritis"
+    r"|scleroderma"
+    r"|Sjögren\'s(?:\s+syndrome)?"
+    r"|myositis"
+    r"|(?:autoimmune|chronic|systemic|refractory|severe)\s+[a-z]+"
+    r"|[a-z]+\s+(?:syndrome|disease|disorder|failure)"
+    r")\b",
     re.IGNORECASE,
 )
 
 # Chemical compound patterns
 _CHEMICAL_PATTERN = re.compile(
-    r'\b(?:[A-Z][a-z]+(?:ic acid|ate|ide|one|ol|ine|ium|ase|ogen|phin|phan|mide|zone|zole|tide|zine|mine|dine|pine|phine|done|sone|sterol)'
-    r'|hydroxy[a-z]+'
-    r'|[A-Z][a-z]+ interferon'
-    r')\b'
+    r"\b(?:[A-Z][a-z]+(?:ic acid|ate|ide|one|ol|ine|ium|ase|ogen|phin|phan|mide|zone|zole|tide|zine|mine|dine|pine|phine|done|sone|sterol)"
+    r"|hydroxy[a-z]+"
+    r"|[A-Z][a-z]+ interferon"
+    r")\b"
 )
 
 # ── Genetic variant / mutation patterns ───────────────────────────────────
 
 _VARIANT_PATTERN = re.compile(
-    r'\b(?:'
-    r'rs[0-9]{4,}'
-    r'|[A-Z][a-z]{2,}[0-9]+[A-Za-z]?'
-    r'|[sp]\.[A-Z][a-z]{2,}[0-9]+[A-Za-z]{1,3}'
-    r'|c\.[0-9]+[A-Z]>[A-Z]'
-    r'|[A-Z][a-z]{3,}[0-9]+fs'
-    r'|(?:missense|nonsense|frameshift|splice[-\s]site|in[-\s]frame|copy[-\s]number|loss[-\s]of[-\s]function|gain[-\s]of[-\s]function)\s+(?:variant|mutation|SNP|polymorphism|alteration)'
-    r'|HLA-[A-Z0-9*:]+'
-    r'|CNV|indel|structural\s+variant'
-    r')\b',
+    r"\b(?:"
+    r"rs[0-9]{4,}"
+    r"|[A-Z][a-z]{2,}[0-9]+[A-Za-z]?"
+    r"|[sp]\.[A-Z][a-z]{2,}[0-9]+[A-Za-z]{1,3}"
+    r"|c\.[0-9]+[A-Z]>[A-Z]"
+    r"|[A-Z][a-z]{3,}[0-9]+fs"
+    r"|(?:missense|nonsense|frameshift|splice[-\s]site|in[-\s]frame|copy[-\s]number|loss[-\s]of[-\s]function|gain[-\s]of[-\s]function)\s+(?:variant|mutation|SNP|polymorphism|alteration)"
+    r"|HLA-[A-Z0-9*:]+"
+    r"|CNV|indel|structural\s+variant"
+    r")\b",
     re.IGNORECASE,
 )
 
 # ── Clinical trial / outcome patterns ─────────────────────────────────────
 
 _CLINICAL_PATTERN = re.compile(
-    r'\b(?:'
-    r'Phase\s+(?:I{1,3}[ab]?|[1-4][ab]?)'
-    r'|SRI-?4|BICLA|BILAG|SLEDAI|ESSDAI|ACR[-\s]?[0-9]{2}'
-    r'|primary\s+endpoint|secondary\s+endpoint'
-    r'|response\s+rate|remission\s+rate'
-    r'|placebo[-\s]controlled|randomi[sz]ed|double[-\s]blind'
-    r'|(?:met|missed|achieved)\s+(?:the\s+)?(?:primary|secondary)\s+endpoint'
-    r'|safety\s+profile|adverse\s+event|serious\s+adverse'
-    r'|enrollment|ITT|per[-\s]protocol'
-    r')\b',
+    r"\b(?:"
+    r"Phase\s+(?:I{1,3}[ab]?|[1-4][ab]?)"
+    r"|SRI-?4|BICLA|BILAG|SLEDAI|ESSDAI|ACR[-\s]?[0-9]{2}"
+    r"|primary\s+endpoint|secondary\s+endpoint"
+    r"|response\s+rate|remission\s+rate"
+    r"|placebo[-\s]controlled|randomi[sz]ed|double[-\s]blind"
+    r"|(?:met|missed|achieved)\s+(?:the\s+)?(?:primary|secondary)\s+endpoint"
+    r"|safety\s+profile|adverse\s+event|serious\s+adverse"
+    r"|enrollment|ITT|per[-\s]protocol"
+    r")\b",
     re.IGNORECASE,
 )
 
 # ── Statistical measure patterns ──────────────────────────────────────────
 
 _STATISTICAL_PATTERN = re.compile(
-    r'\b(?:'
-    r'[pP]\s*[<≤=]\s*0?\.\d+'
-    r'|OR\s*[=:]\s*\d+\.?\d*'
-    r'|HR\s*[=:]\s*\d+\.?\d*'
-    r'|RR\s*[=:]\s*\d+\.?\d*'
-    r'|95%\s*CI\s*\d+\.?\d*[–-]\d+\.?\d*'
-    r'|[0-9]+(?:\.\d+)?%\s*(?:reduction|increase|improvement)'
-    r'|effect\s+size|Cohen\'?s\s+d'
-    r'|hazard\s+ratio|odds\s+ratio|relative\s+risk'
-    r'|confidence\s+interval'
-    r')\b',
+    r"\b(?:"
+    r"[pP]\s*[<≤=]\s*0?\.\d+"
+    r"|OR\s*[=:]\s*\d+\.?\d*"
+    r"|HR\s*[=:]\s*\d+\.?\d*"
+    r"|RR\s*[=:]\s*\d+\.?\d*"
+    r"|95%\s*CI\s*\d+\.?\d*[–-]\d+\.?\d*"
+    r"|[0-9]+(?:\.\d+)?%\s*(?:reduction|increase|improvement)"
+    r"|effect\s+size|Cohen\'?s\s+d"
+    r"|hazard\s+ratio|odds\s+ratio|relative\s+risk"
+    r"|confidence\s+interval"
+    r")\b",
     re.IGNORECASE,
 )
 
 # ── Dosage / administration patterns ──────────────────────────────────────
 
 _DOSAGE_PATTERN = re.compile(
-    r'\b(?:'
-    r'\d+(?:\.\d+)?\s*(?:mg|g|μg|mcg|mg/kg|IU)(?:/[a-z]+)?'
-    r'|(?:oral|IV|intravenous|subcutaneous|intramuscular|topical|inhaled)'
-    r'|(?:daily|weekly|monthly|twice[-\s]daily|BID|TID|QD)'
-    r'|dose[-\s]dependent|dose[-\s]response'
-    r')\b',
+    r"\b(?:"
+    r"\d+(?:\.\d+)?\s*(?:mg|g|μg|mcg|mg/kg|IU)(?:/[a-z]+)?"
+    r"|(?:oral|IV|intravenous|subcutaneous|intramuscular|topical|inhaled)"
+    r"|(?:daily|weekly|monthly|twice[-\s]daily|BID|TID|QD)"
+    r"|dose[-\s]dependent|dose[-\s]response"
+    r")\b",
     re.IGNORECASE,
 )
 
@@ -216,9 +216,7 @@ class BiomedicalNER:
     def __init__(self):
         self.spacy_available = _try_load_spacy()
 
-    def extract_novel_entities(
-        self, text: str, known_entities: set[str] | None = None
-    ) -> dict:
+    def extract_novel_entities(self, text: str, known_entities: set[str] | None = None) -> dict:
         """
         Extract biomedical entities from text that are NOT in the known set.
 
@@ -240,9 +238,7 @@ class BiomedicalNER:
 
         return results
 
-    def extract_all_entities(
-        self, text: str, known_entities: set[str] | None = None
-    ) -> dict:
+    def extract_all_entities(self, text: str, known_entities: set[str] | None = None) -> dict:
         """
         Full-featured extraction including variants, clinical outcomes,
         statistics, and dosage alongside biomedical entities.
@@ -271,9 +267,7 @@ class BiomedicalNER:
 
         return results
 
-    def validate_kg_match(
-        self, text: str, entity_name: str, entity_type: str
-    ) -> dict:
+    def validate_kg_match(self, text: str, entity_name: str, entity_type: str) -> dict:
         """
         Validate a dictionary KG match using scispacy when available.
 
@@ -301,7 +295,14 @@ class BiomedicalNER:
                         result["validated"] = True
                         result["spacy_label"] = ent.label_
                         # Higher confidence for exact label match
-                        if entity_type == "gene" and ent.label_ in ("GENE", "PROTEIN", "DNA", "RNA") or entity_type == "drug" and ent.label_ == "CHEMICAL" or entity_type == "disease" and ent.label_ == "DISEASE":
+                        if (
+                            entity_type == "gene"
+                            and ent.label_ in ("GENE", "PROTEIN", "DNA", "RNA")
+                            or entity_type == "drug"
+                            and ent.label_ == "CHEMICAL"
+                            or entity_type == "disease"
+                            and ent.label_ == "DISEASE"
+                        ):
                             result["confidence"] = 0.95
                         elif ent.label_ in ("GENE", "CHEMICAL", "DISEASE", "PROTEIN"):
                             result["confidence"] = 0.7

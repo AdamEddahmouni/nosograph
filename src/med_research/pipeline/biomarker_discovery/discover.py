@@ -203,16 +203,24 @@ def map_gene_to_modules(genes: dict, module_data: dict, disease_id: str = "sle")
             for _drug_id, profile in module_data["safety"].items():
                 if isinstance(profile, dict) and "composite_safety_score" in profile:
                     safety_scores.append(profile["composite_safety_score"])
-        row["safety_avg"] = round(sum(safety_scores) / len(safety_scores), 2) if safety_scores else 5.0
+        row["safety_avg"] = (
+            round(sum(safety_scores) / len(safety_scores), 2) if safety_scores else 5.0
+        )
 
         # Cross-module metrics
-        module_scores = [v for v in [
-            row["expression_max"],
-            row["cart_score"],
-            row["repurpose_max"],
-        ] if v > 0]
+        module_scores = [
+            v
+            for v in [
+                row["expression_max"],
+                row["cart_score"],
+                row["repurpose_max"],
+            ]
+            if v > 0
+        ]
         row["n_modules"] = len(module_scores)
-        row["cross_module_mean"] = round(sum(module_scores) / len(module_scores), 2) if module_scores else 0
+        row["cross_module_mean"] = (
+            round(sum(module_scores) / len(module_scores), 2) if module_scores else 0
+        )
 
         # Consistency score: lower variance = more consistent signal
         if len(module_scores) >= 2:
@@ -236,7 +244,11 @@ def score_biomarker(row: dict) -> BiomarkerRow:
     expression = row.get("expression_max", 0) * 0.8  # Scale to ~0-8
     cart = row.get("cart_score", 0) * 0.9
     druggability = min(10.0, row.get("targeting_drugs", 0) * 2.5)
-    novelty = min(10.0, 10 - (row.get("targeting_drugs", 0) * 0.5)) if row.get("targeting_drugs", 0) < 5 else 2.0
+    novelty = (
+        min(10.0, 10 - (row.get("targeting_drugs", 0) * 0.5))
+        if row.get("targeting_drugs", 0) < 5
+        else 2.0
+    )
 
     weights = {
         "cross_module_consistency": 0.30,
@@ -311,6 +323,7 @@ def compute_biomarker_matrix(
 
     _tick(progress_callback, "loading genes", 1, 5)
     from med_research.pipeline.knowledge_graph.builder import build_graph
+
     G = build_graph(disease_id)
     genes = {}
     for node, data in G.nodes(data=True):
@@ -330,10 +343,13 @@ def compute_biomarker_matrix(
     if save:
         _tick(progress_callback, "saving results", 4, 5)
         output_path = disease_output_path(DATA_DIR, "biomarker_matrix", disease_id)
-        write_json_atomic(output_path, {
-            "biomarkers": results,
-            "total_genes": len(results),
-        })
+        write_json_atomic(
+            output_path,
+            {
+                "biomarkers": results,
+                "total_genes": len(results),
+            },
+        )
         _tick(progress_callback, "saving results", 5, 5)
     else:
         _tick(progress_callback, "biomarker complete", 5, 5)
@@ -352,14 +368,18 @@ def analyze(results: list) -> None:
     scores = [r["composite_score"] for r in results]
     logger.info(f"\n  {len(results)} genes analyzed across 5 platforms")
     logger.info(f"  Score range: {min(scores):.2f} - {max(scores):.2f}")
-    logger.info(f"  Mean score: {sum(scores)/len(scores):.2f}")
+    logger.info(f"  Mean score: {sum(scores) / len(scores):.2f}")
 
     tier_counts: dict[str, int] = {}
     for r in results:
         tier_counts[r["tier"]] = tier_counts.get(r["tier"], 0) + 1
     logger.info("\n  Distribution by tier:")
-    for tier in ["🔴 Tier 1 — Strong Biomarker", "🟠 Tier 2 — Promising Biomarker",
-                  "🟡 Tier 3 — Emergent Biomarker", "🟢 Tier 4 — Investigational"]:
+    for tier in [
+        "🔴 Tier 1 — Strong Biomarker",
+        "🟠 Tier 2 — Promising Biomarker",
+        "🟡 Tier 3 — Emergent Biomarker",
+        "🟢 Tier 4 — Investigational",
+    ]:
         count = tier_counts.get(tier, 0)
         label = tier.split("—")[0].strip()
         logger.info(f"    {label}: {count} biomarkers")
@@ -415,4 +435,9 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+
+    from med_research.cli import main as cli_main
+
+    sys.exit(cli_main() or 0)
+

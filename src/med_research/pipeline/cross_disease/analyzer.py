@@ -128,8 +128,13 @@ def compute_shared_genes(data: dict) -> dict:
             }
 
     shared = [
-        {"gene_id": gid, "diseases": sorted(diseases), "disease_count": len(diseases),
-         "name": gene_details[gid]["name"], "per_disease": gene_details[gid]["per_disease"]}
+        {
+            "gene_id": gid,
+            "diseases": sorted(diseases),
+            "disease_count": len(diseases),
+            "name": gene_details[gid]["name"],
+            "per_disease": gene_details[gid]["per_disease"],
+        }
         for gid, diseases in gene_disease_map.items()
         if len(diseases) >= 2
     ]
@@ -167,8 +172,13 @@ def compute_shared_drugs(data: dict) -> dict:
             }
 
     shared = [
-        {"drug_id": did, "diseases": sorted(diseases), "disease_count": len(diseases),
-         "name": drug_details[did]["name"], "per_disease": drug_details[did]["per_disease"]}
+        {
+            "drug_id": did,
+            "diseases": sorted(diseases),
+            "disease_count": len(diseases),
+            "name": drug_details[did]["name"],
+            "per_disease": drug_details[did]["per_disease"],
+        }
         for did, diseases in drug_disease_map.items()
         if len(diseases) >= 2
     ]
@@ -200,8 +210,13 @@ def compute_shared_pathways(data: dict) -> dict:
             }
 
     shared = [
-        {"pathway_id": pid, "diseases": sorted(diseases), "disease_count": len(diseases),
-         "name": pathway_details[pid]["name"], "per_disease": pathway_details[pid]["per_disease"]}
+        {
+            "pathway_id": pid,
+            "diseases": sorted(diseases),
+            "disease_count": len(diseases),
+            "name": pathway_details[pid]["name"],
+            "per_disease": pathway_details[pid]["per_disease"],
+        }
         for pid, diseases in pathway_disease_map.items()
         if len(diseases) >= 2
     ]
@@ -239,17 +254,10 @@ def compute_disease_similarity(data: dict) -> dict:
     pathway_sets = {}
 
     for did in disease_ids:
-        gene_sets[did] = {
-            _normalize_gene_id(g["id"])
-            for g in data[did]["genes"].get("genes", [])
-        }
-        drug_sets[did] = {
-            _normalize_drug_id(d["id"])
-            for d in data[did]["drugs"].get("drugs", [])
-        }
+        gene_sets[did] = {_normalize_gene_id(g["id"]) for g in data[did]["genes"].get("genes", [])}
+        drug_sets[did] = {_normalize_drug_id(d["id"]) for d in data[did]["drugs"].get("drugs", [])}
         pathway_sets[did] = {
-            p["id"].lower().strip()
-            for p in data[did]["pathways"].get("pathways", [])
+            p["id"].lower().strip() for p in data[did]["pathways"].get("pathways", [])
         }
 
     matrix: dict[str, Any] = {}
@@ -257,14 +265,12 @@ def compute_disease_similarity(data: dict) -> dict:
 
     for i, did_a in enumerate(disease_ids):
         matrix[did_a] = {}
-        for did_b in disease_ids[i + 1:]:
+        for did_b in disease_ids[i + 1 :]:
             gene_sim = _jaccard(gene_sets[did_a], gene_sets[did_b])
             drug_sim = _jaccard(drug_sets[did_a], drug_sets[did_b])
             pathway_sim = _jaccard(pathway_sets[did_a], pathway_sets[did_b])
 
-            overall = round(
-                gene_sim * 0.40 + drug_sim * 0.35 + pathway_sim * 0.25, 4
-            )
+            overall = round(gene_sim * 0.40 + drug_sim * 0.35 + pathway_sim * 0.25, 4)
 
             pair_data = {
                 "disease_a": did_a,
@@ -379,22 +385,24 @@ def score_multi_disease_drugs(data: dict, shared_genes: dict, shared_pathways: d
             + novelty_score * weights["novelty"]
         )
 
-        results.append({
-            "drug_id": did_norm,
-            "drug_name": info["name"],
-            "disease_count": disease_count,
-            "diseases": sorted(info["diseases"]),
-            "targets": sorted(info["targets"]),
-            "categories": sorted(info["categories"]),
-            "per_disease": info["per_disease"],
-            "disease_coverage": round(disease_coverage_score, 1),
-            "target_centrality": round(target_centrality_score, 1),
-            "pathway_breadth": round(pathway_breadth_score, 1),
-            "mechanistic_transferability": round(mechanistic_transferability, 1),
-            "novelty": round(novelty_score, 1),
-            "composite_score": round(composite, 2),
-            "tier": _assign_tier(composite),
-        })
+        results.append(
+            {
+                "drug_id": did_norm,
+                "drug_name": info["name"],
+                "disease_count": disease_count,
+                "diseases": sorted(info["diseases"]),
+                "targets": sorted(info["targets"]),
+                "categories": sorted(info["categories"]),
+                "per_disease": info["per_disease"],
+                "disease_coverage": round(disease_coverage_score, 1),
+                "target_centrality": round(target_centrality_score, 1),
+                "pathway_breadth": round(pathway_breadth_score, 1),
+                "mechanistic_transferability": round(mechanistic_transferability, 1),
+                "novelty": round(novelty_score, 1),
+                "composite_score": round(composite, 2),
+                "tier": _assign_tier(composite),
+            }
+        )
 
     results.sort(key=lambda x: x["composite_score"], reverse=True)
     return results
@@ -429,10 +437,7 @@ def compute_cross_disease_repurposing(data: dict) -> list:
             if src_disease == tgt_disease:
                 continue
 
-            tgt_genes = {
-                _normalize_gene_id(g["id"]): g
-                for g in tgt_data["genes"].get("genes", [])
-            }
+            tgt_genes = {_normalize_gene_id(g["id"]): g for g in tgt_data["genes"].get("genes", [])}
 
             for drug_id, drug in src_drugs.items():
                 target_str = drug.get("target", "")
@@ -440,31 +445,36 @@ def compute_cross_disease_repurposing(data: dict) -> list:
                 # Check if any of the drug's targets are risk genes in the target disease
                 matched_genes = []
                 for tgt_gene_id, tgt_gene in tgt_genes.items():
-                    if tgt_gene_id in target_str or target_str in tgt_gene_id or _normalize_gene_id(tgt_gene.get("name", "")) in target_str:
+                    if (
+                        tgt_gene_id in target_str
+                        or target_str in tgt_gene_id
+                        or _normalize_gene_id(tgt_gene.get("name", "")) in target_str
+                    ):
                         matched_genes.append(tgt_gene_id)
 
                 if matched_genes:
                     # Check if drug is already used in the target disease
                     tgt_drugs = {
-                        _normalize_drug_id(d["id"])
-                        for d in tgt_data["drugs"].get("drugs", [])
+                        _normalize_drug_id(d["id"]) for d in tgt_data["drugs"].get("drugs", [])
                     }
                     already_used = drug_id in tgt_drugs
 
                     confidence = min(10.0, len(matched_genes) * 3.0 + 4.0)
 
-                    recommendations.append({
-                        "source_disease": src_disease,
-                        "source_disease_name": src_data["name"],
-                        "target_disease": tgt_disease,
-                        "target_disease_name": tgt_data["name"],
-                        "drug_id": drug_id,
-                        "drug_name": drug.get("name", drug_id),
-                        "drug_target": target_str,
-                        "matched_genes": matched_genes,
-                        "already_used_in_target": already_used,
-                        "confidence": round(confidence, 1),
-                    })
+                    recommendations.append(
+                        {
+                            "source_disease": src_disease,
+                            "source_disease_name": src_data["name"],
+                            "target_disease": tgt_disease,
+                            "target_disease_name": tgt_data["name"],
+                            "drug_id": drug_id,
+                            "drug_name": drug.get("name", drug_id),
+                            "drug_target": target_str,
+                            "matched_genes": matched_genes,
+                            "already_used_in_target": already_used,
+                            "confidence": round(confidence, 1),
+                        }
+                    )
 
     # Filter out already-used drugs
     novel = [r for r in recommendations if not r["already_used_in_target"]]
@@ -495,9 +505,7 @@ def compute_cross_disease_analysis(
     global last_coverage
     disease_ids = sorted(list_diseases().keys())
     blocked = [
-        disease_id
-        for disease_id in disease_ids
-        if not coverage_for_disease(disease_id).is_runnable
+        disease_id for disease_id in disease_ids if not coverage_for_disease(disease_id).is_runnable
     ]
     if blocked:
         coverage = coverage_for_disease(blocked[0])
@@ -550,9 +558,7 @@ def compute_cross_disease_analysis(
     repurposing = compute_cross_disease_repurposing(data)
 
     _tick(progress_callback, "saving results", 8, 9)
-    last_coverage = module_coverage(
-        disease_ids[0], "cross_disease", ("genes", "drugs", "pathways")
-    )
+    last_coverage = module_coverage(disease_ids[0], "cross_disease", ("genes", "drugs", "pathways"))
     result = {
         "disease_summary": {
             did: {
@@ -588,12 +594,10 @@ def compute_cross_disease_analysis(
 
     # Convert sets to lists for JSON serialization
     safe["shared_genes"]["shared_genes"] = [
-        {**sg, "diseases": list(sg["diseases"])}
-        for sg in result["shared_genes"]["shared_genes"]
+        {**sg, "diseases": list(sg["diseases"])} for sg in result["shared_genes"]["shared_genes"]
     ]
     safe["shared_drugs"]["shared_drugs"] = [
-        {**sd, "diseases": list(sd["diseases"])}
-        for sd in result["shared_drugs"]["shared_drugs"]
+        {**sd, "diseases": list(sd["diseases"])} for sd in result["shared_drugs"]["shared_drugs"]
     ]
     safe["shared_pathways"]["shared_pathways"] = [
         {**sp, "diseases": list(sp["diseases"])}
@@ -647,7 +651,15 @@ def compute_comparative_modules(
             counts["biomarker"][did] = len(bm)
             for r in bm:
                 biomarker_scores.setdefault(r["gene_id"], {})[did] = r["composite_score"]
-        except Exception:  # noqa: BLE001 — keep one disease failure from killing the run
+        except (
+            OSError,
+            ValueError,
+            KeyError,
+            TypeError,
+            ImportError,
+            AttributeError,
+            RuntimeError,
+        ):
             counts["biomarker"][did] = 0
 
         step += 1
@@ -657,7 +669,15 @@ def compute_comparative_modules(
             counts["expression"][did] = len(ex)
             for er in ex:
                 expression_scores.setdefault(er["drug_id"], {})[did] = er["composite_score"]
-        except Exception:  # noqa: BLE001
+        except (
+            OSError,
+            ValueError,
+            KeyError,
+            TypeError,
+            ImportError,
+            AttributeError,
+            RuntimeError,
+        ):
             counts["expression"][did] = 0
 
         step += 1
@@ -672,15 +692,21 @@ def compute_comparative_modules(
                 }
                 for p in sy[:top_synergy]
             ]
-        except Exception:  # noqa: BLE001
+        except (
+            OSError,
+            ValueError,
+            KeyError,
+            TypeError,
+            ImportError,
+            AttributeError,
+            RuntimeError,
+        ):
             counts["synergy"][did] = 0
             synergy_top[did] = []
 
     _tick(progress_callback, "comparative complete", total_steps, total_steps)
     return {
-        "diseases": [
-            {"id": did, "name": all_diseases[did]["name"]} for did in disease_ids
-        ],
+        "diseases": [{"id": did, "name": all_diseases[did]["name"]} for did in disease_ids],
         "modules": {
             "biomarker": {"scores": biomarker_scores, "counts": counts["biomarker"]},
             "expression": {"scores": expression_scores, "counts": counts["expression"]},
@@ -702,19 +728,25 @@ def analyze(results: dict) -> None:
     logger.info("=" * 75)
     logger.info(f"\n  Diseases analyzed: {n}")
     for did, info in sorted(d_summary.items()):
-        logger.info(f"    {did:5s} — {info['name']:35s} "
-              f"({info['gene_count']} genes, {info['drug_count']} drugs, "
-              f"{info['pathway_count']} pathways)")
+        logger.info(
+            f"    {did:5s} — {info['name']:35s} "
+            f"({info['gene_count']} genes, {info['drug_count']} drugs, "
+            f"{info['pathway_count']} pathways)"
+        )
 
     sg = results["shared_genes"]
     logger.info(f"\n  Shared Genes (≥2 diseases): {len(sg['shared_genes'])}")
     for g in sg["shared_genes"][:10]:
-        logger.info(f"    {g['gene_id']:8s} — {g['disease_count']} diseases: {', '.join(g['diseases'])}")
+        logger.info(
+            f"    {g['gene_id']:8s} — {g['disease_count']} diseases: {', '.join(g['diseases'])}"
+        )
 
     sd = results["shared_drugs"]
     logger.info(f"\n  Shared Drugs (≥2 diseases): {len(sd['shared_drugs'])}")
     for d in sd["shared_drugs"][:10]:
-        logger.info(f"    {d['drug_id']:20s} — {d['disease_count']} diseases: {', '.join(d['diseases'])}")
+        logger.info(
+            f"    {d['drug_id']:20s} — {d['disease_count']} diseases: {', '.join(d['diseases'])}"
+        )
 
     sp = results["shared_pathways"]
     logger.info(f"\n  Shared Pathways (≥2 diseases): {len(sp['shared_pathways'])}")
@@ -724,11 +756,13 @@ def analyze(results: dict) -> None:
     ds = results["disease_similarity"]
     logger.info("\n  Most Similar Disease Pairs:")
     for pair in ds[:5]:
-        logger.info(f"    {pair['disease_a']} ↔ {pair['disease_b']}: "
-              f"{pair['overall_similarity']:.4f} "
-              f"(genes:{pair['gene_similarity']:.3f}, "
-              f"drugs:{pair['drug_similarity']:.3f}, "
-              f"pathways:{pair['pathway_similarity']:.3f})")
+        logger.info(
+            f"    {pair['disease_a']} ↔ {pair['disease_b']}: "
+            f"{pair['overall_similarity']:.4f} "
+            f"(genes:{pair['gene_similarity']:.3f}, "
+            f"drugs:{pair['drug_similarity']:.3f}, "
+            f"pathways:{pair['pathway_similarity']:.3f})"
+        )
 
     mdd = results["multi_disease_drugs"]
     logger.info(f"\n  Multi-Disease Drug Candidates: {len(mdd)}")
@@ -791,13 +825,9 @@ def main():
         description="Cross-Disease Drug Repurposing Analyzer — Phase 22"
     )
     parser.add_argument(
-        "--top", type=int, default=20,
-        help="Number of top results to display (default: 20)"
+        "--top", type=int, default=20, help="Number of top results to display (default: 20)"
     )
-    parser.add_argument(
-        "--export-html", action="store_true",
-        help="Generate HTML report"
-    )
+    parser.add_argument("--export-html", action="store_true", help="Generate HTML report")
     args = parser.parse_args()
 
     results = compute_cross_disease_analysis(progress_callback=cli_progress)
@@ -823,4 +853,9 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+
+    from med_research.cli import main as cli_main
+
+    sys.exit(cli_main() or 0)
+

@@ -9,7 +9,13 @@ from med_research.pipeline.reporting import disease_context, render_report
 def escape_html(value):
     if value is None:
         return ""
-    return str(value).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
+    return (
+        str(value)
+        .replace("&", "&amp;")
+        .replace("<", "&lt;")
+        .replace(">", "&gt;")
+        .replace('"', "&quot;")
+    )
 
 
 def generate_semantic_report(

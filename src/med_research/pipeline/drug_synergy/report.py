@@ -29,8 +29,7 @@ def generate_html_report(
     n_tier2 = sum(1 for p in scored_pairs if 7.0 <= p["composite_score"] < 8.0)
     n_tier3 = sum(1 for p in scored_pairs if 6.0 <= p["composite_score"] < 7.0)
     avg_score = (
-        sum(p["composite_score"] for p in scored_pairs) / len(scored_pairs)
-        if scored_pairs else 0
+        sum(p["composite_score"] for p in scored_pairs) / len(scored_pairs) if scored_pairs else 0
     )
 
     # Build rows for top 40 pairs
@@ -38,19 +37,26 @@ def generate_html_report(
 
     # Build top-5 JSON for radar chart
     import json
+
     top5_items = []
     for p in scored_pairs[:5]:
-        name = p['drug_a_name'].split('(')[0].strip()[:15] + ' + ' + p['drug_b_name'].split('(')[0].strip()[:15]
-        top5_items.append({
-            "name": name,
-            "scores": [
-                p['target_complementarity'],
-                p['pathway_diversity'],
-                p['mechanism_orthogonality'],
-                p['safety_non_overlap'],
-                p['combined_evidence'],
-            ],
-        })
+        name = (
+            p["drug_a_name"].split("(")[0].strip()[:15]
+            + " + "
+            + p["drug_b_name"].split("(")[0].strip()[:15]
+        )
+        top5_items.append(
+            {
+                "name": name,
+                "scores": [
+                    p["target_complementarity"],
+                    p["pathway_diversity"],
+                    p["mechanism_orthogonality"],
+                    p["safety_non_overlap"],
+                    p["combined_evidence"],
+                ],
+            }
+        )
     top5_json = json.dumps(top5_items)
 
     # Build rows for top 40 pairs (continued)
@@ -64,10 +70,16 @@ def generate_html_report(
 
         score = p["composite_score"]
         score_color = (
-            "#4ade80" if score >= 8 else "#fbbf24" if score >= 7 else "#f87171" if score < 6 else "#fb923c"
+            "#4ade80"
+            if score >= 8
+            else "#fbbf24"
+            if score >= 7
+            else "#f87171"
+            if score < 6
+            else "#fb923c"
         )
 
-        tier_display = p['tier'].split('\u2014')[0].strip()
+        tier_display = p["tier"].split("\u2014")[0].strip()
 
         rows_html += f"""        <tr>
             <td class="rank">{i}</td>
@@ -76,17 +88,17 @@ def generate_html_report(
                     {tier_display}
                 </span>
             </td>
-            <td><strong>{escape_html(p['drug_a_name'])}</strong></td>
-            <td><strong>{escape_html(p['drug_b_name'])}</strong></td>
+            <td><strong>{escape_html(p["drug_a_name"])}</strong></td>
+            <td><strong>{escape_html(p["drug_b_name"])}</strong></td>
             <td><span class="score" style="color:{score_color};font-weight:700;font-size:1.2em;">{score:.1f}</span></td>
             <td class="score-breakdown">
-                <span title="Target Complementarity">\U0001f3af{p['target_complementarity']}</span>
-                <span title="Pathway Diversity">\U0001f6e4\ufe0f{p['pathway_diversity']}</span>
-                <span title="Mechanism Orthogonality">\u2699\ufe0f{p['mechanism_orthogonality']}</span>
-                <span title="Safety Non-overlap">\U0001f6e1\ufe0f{p['safety_non_overlap']}</span>
-                <span title="Combined Evidence">\U0001f4cb{p['combined_evidence']}</span>
+                <span title="Target Complementarity">\U0001f3af{p["target_complementarity"]}</span>
+                <span title="Pathway Diversity">\U0001f6e4\ufe0f{p["pathway_diversity"]}</span>
+                <span title="Mechanism Orthogonality">\u2699\ufe0f{p["mechanism_orthogonality"]}</span>
+                <span title="Safety Non-overlap">\U0001f6e1\ufe0f{p["safety_non_overlap"]}</span>
+                <span title="Combined Evidence">\U0001f4cb{p["combined_evidence"]}</span>
             </td>
-            <td class="muted">{escape_html(p.get('drug_a_category', ''))} + {escape_html(p.get('drug_b_category', ''))}</td>
+            <td class="muted">{escape_html(p.get("drug_a_category", ""))} + {escape_html(p.get("drug_b_category", ""))}</td>
         </tr>"""
 
     # Top-10 highlight cards
@@ -98,18 +110,18 @@ def generate_html_report(
             <div class="hl-rank">#{i}</div>
             <div class="hl-body">
                 <div class="hl-drugs">
-                    <span class="hl-drug-a">{escape_html(p['drug_a_name'])}</span>
+                    <span class="hl-drug-a">{escape_html(p["drug_a_name"])}</span>
                     <span class="hl-plus">+</span>
-                    <span class="hl-drug-b">{escape_html(p['drug_b_name'])}</span>
+                    <span class="hl-drug-b">{escape_html(p["drug_b_name"])}</span>
                 </div>
-                <div class="hl-score" style="color:{score_color};">{p['composite_score']:.1f}</div>
+                <div class="hl-score" style="color:{score_color};">{p["composite_score"]:.1f}</div>
             </div>
             <div class="hl-dims">
-                <div class="hl-dim"><span>\U0001f3af Target</span><span>{p['target_complementarity']}</span></div>
-                <div class="hl-dim"><span>\U0001f6e4\ufe0f Pathway</span><span>{p['pathway_diversity']}</span></div>
-                <div class="hl-dim"><span>\u2699\ufe0f Mech</span><span>{p['mechanism_orthogonality']}</span></div>
-                <div class="hl-dim"><span>\U0001f6e1\ufe0f Safety</span><span>{p['safety_non_overlap']}</span></div>
-                <div class="hl-dim"><span>\U0001f4cb Evidence</span><span>{p['combined_evidence']}</span></div>
+                <div class="hl-dim"><span>\U0001f3af Target</span><span>{p["target_complementarity"]}</span></div>
+                <div class="hl-dim"><span>\U0001f6e4\ufe0f Pathway</span><span>{p["pathway_diversity"]}</span></div>
+                <div class="hl-dim"><span>\u2699\ufe0f Mech</span><span>{p["mechanism_orthogonality"]}</span></div>
+                <div class="hl-dim"><span>\U0001f6e1\ufe0f Safety</span><span>{p["safety_non_overlap"]}</span></div>
+                <div class="hl-dim"><span>\U0001f4cb Evidence</span><span>{p["combined_evidence"]}</span></div>
             </div>
         </div>"""
 
@@ -118,7 +130,7 @@ def generate_html_report(
         "reports/drug_synergy.html",
         {
             "ctx_0": len(scored_pairs),
-            "ctx_1": datetime.now().strftime('%B %d, %Y at %H:%M'),
+            "ctx_1": datetime.now().strftime("%B %d, %Y at %H:%M"),
             "ctx_2": n_tier1,
             "ctx_3": n_tier2,
             "ctx_4": n_tier3,
@@ -144,8 +156,5 @@ def escape_html(text: str) -> str:
     if not text:
         return ""
     return (
-        text.replace("&", "&amp;")
-        .replace("<", "&lt;")
-        .replace(">", "&gt;")
-        .replace('"', "&quot;")
+        text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
     )

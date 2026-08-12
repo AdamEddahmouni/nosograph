@@ -9,7 +9,7 @@ from typing_extensions import Unpack
 
 from med_research.pipeline.adapter_options import AdapterOptions
 from med_research.pipeline.base import BasePipelineModule
-from med_research.pipeline.provenance import build_provenance
+from med_research.pipeline.provenance import ProvenanceMetadata, build_provenance
 from med_research.pipeline.registry import register_module
 from med_research.pipeline.results import ScreeningResult, UntargetedGenesResult
 
@@ -79,7 +79,7 @@ class VirtualScreeningModule(BasePipelineModule[ScreeningResult | UntargetedGene
         )
         return Path(report_path)
 
-    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
+    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> ProvenanceMetadata:
         scoring = opts.get("scoring")
         if scoring is None:
             from med_research.pipeline.virtual_screening.screening_strategy import (

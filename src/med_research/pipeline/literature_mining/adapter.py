@@ -9,7 +9,7 @@ from typing_extensions import Unpack
 
 from med_research.pipeline.adapter_options import AdapterOptions
 from med_research.pipeline.base import BasePipelineModule
-from med_research.pipeline.provenance import build_provenance
+from med_research.pipeline.provenance import ProvenanceMetadata, build_provenance
 from med_research.pipeline.registry import register_module
 from med_research.pipeline.results import LiteratureMiningResult
 
@@ -33,22 +33,26 @@ class LiteratureMiningModule(BasePipelineModule[LiteratureMiningResult]):
 
     def run(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> LiteratureMiningResult:
         from med_research.diseases.base import Disease
-        from med_research.pipeline.literature_mining.miner import DEFAULT_EMAIL, mine_literature
+        from med_research.pipeline.literature_mining.miner import (
+            mine_literature,
+            resolve_entrez_email,
+        )
 
         use_cache = opts.get("use_cache", True)
         queries = opts.get("queries")
         if not isinstance(queries, list):
             queries = Disease(disease_id).config.get("PUBMED_QUERIES", [])
         email = opts.get("email")
-        resolved_email: str = email if isinstance(email, str) else str(DEFAULT_EMAIL)
+        resolved_email = resolve_entrez_email(
+            email if isinstance(email, str) else None,
+            live=not use_cache,
+        )
         results, entities, candidates, extraction_stats = mine_literature(
             queries=queries,
             max_per_query=opts.get("max_per_query", opts.get("max", 30)),
             email=resolved_email,
             use_cache=use_cache,
-            targeted_candidates=opts.get(
-                "targeted_candidates", opts.get("targeted", False)
-            ),
+            targeted_candidates=opts.get("targeted_candidates", opts.get("targeted", False)),
             extract_content=opts.get("extract_content", opts.get("extract", False)),
             disease_id=disease_id,
             progress_callback=opts.get("progress_callback"),
@@ -78,7 +82,7 @@ class LiteratureMiningModule(BasePipelineModule[LiteratureMiningResult]):
         )
         return Path(report_path)
 
-    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict:
+    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> ProvenanceMetadata:
         use_cache = opts.get("use_cache", True)
         extra: dict[str, Any] = {
             key: value
@@ -90,8 +94,6 @@ class LiteratureMiningModule(BasePipelineModule[LiteratureMiningResult]):
             module=self.module_id,
             sources=["pubmed"],
             query=opts.get("query", ""),
-            cache_or_live=opts.get(
-                "cache_or_live", "cache" if use_cache else "live"
-            ),
+            cache_or_live=opts.get("cache_or_live", "cache" if use_cache else "live"),
             **extra,
         )

@@ -34,7 +34,11 @@ def generate_html_report(
 
     n_bbw = sum(1 for r in safety_results if r.get("black_box_warnings"))
     n_disease_risk = sum(1 for r in safety_results if r["disease_specific_risk_score"] < 10.0)
-    avg = sum(r["composite_safety_score"] for r in safety_results) / len(safety_results) if safety_results else 0
+    avg = (
+        sum(r["composite_safety_score"] for r in safety_results) / len(safety_results)
+        if safety_results
+        else 0
+    )
     metadata = safety_results[0] if safety_results else {}
 
     # Top-10 safety highlights
@@ -44,13 +48,13 @@ def generate_html_report(
         color = "#4ade80" if score >= 7 else "#fbbf24" if score >= 5 else "#f87171"
         highlight_html += f"""        <div class="highlight-card">
             <div class="hl-rank">#{i}</div>
-            <div class="hl-drug">{escape_html(r['drug_name'])}</div>
+            <div class="hl-drug">{escape_html(r["drug_name"])}</div>
             <div class="hl-score" style="color:{color};">{score:.1f}</div>
             <div class="hl-dims">
-                <span class="hl-dim">Disease Overlap: {r['disease_symptom_overlap_score']}</span>
-                <span class="hl-dim">Severity: {r['severity_burden_score']}</span>
-                <span class="hl-dim">Chronic: {r['chronic_use_safety_score']}</span>
-                <span class="hl-dim">Disease Risk: {r['disease_specific_risk_score']}</span>
+                <span class="hl-dim">Disease Overlap: {r["disease_symptom_overlap_score"]}</span>
+                <span class="hl-dim">Severity: {r["severity_burden_score"]}</span>
+                <span class="hl-dim">Chronic: {r["chronic_use_safety_score"]}</span>
+                <span class="hl-dim">Disease Risk: {r["disease_specific_risk_score"]}</span>
             </div>
         </div>"""
 
@@ -63,13 +67,13 @@ def generate_html_report(
         bbw_badge = f"<span class='bbw-badge'>BBW: {len(bbw)}</span>" if bbw else ""
         rows_html += f"""        <tr>
             <td class="rank">{i}</td>
-            <td><strong>{escape_html(r['drug_name'])}</strong></td>
+            <td><strong>{escape_html(r["drug_name"])}</strong></td>
             <td><span style="color:{color};font-weight:700;font-size:1.1em;">{score:.1f}</span></td>
-            <td>{r['disease_symptom_overlap_score']}/10</td>
-            <td>{r['severity_burden_score']}/10</td>
-            <td>{r['chronic_use_safety_score']}/10</td>
-            <td>{r['disease_specific_risk_score']}/10</td>
-            <td>{r['n_disease_overlap_ae']}</td>
+            <td>{r["disease_symptom_overlap_score"]}/10</td>
+            <td>{r["severity_burden_score"]}/10</td>
+            <td>{r["chronic_use_safety_score"]}/10</td>
+            <td>{r["disease_specific_risk_score"]}/10</td>
+            <td>{r["n_disease_overlap_ae"]}</td>
             <td>{bbw_badge}</td>
         </tr>"""
 
@@ -103,8 +107,5 @@ def escape_html(text: str) -> str:
     if not text:
         return ""
     return (
-        text.replace("&", "&amp;")
-        .replace("<", "&lt;")
-        .replace(">", "&gt;")
-        .replace('"', "&quot;")
+        text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
     )

@@ -682,6 +682,169 @@ class KgBuildResult(TypedDict, total=False):
     status: str
 
 
+# ── Web service response envelopes ───────────────────────────────────────
+
+
+class ModuleServiceResponse(TypedDict, total=False):
+    """Common coverage/status envelope for registry-backed web services."""
+
+    coverage: dict[str, Any]
+    status: str
+
+
+class CarTAnalysisResponse(ModuleServiceResponse):
+    """``car_t_service.run_cart_analysis`` payload."""
+
+    genes: list[CarTGeneScore]
+    total_genes: int
+    avg_score: float
+    tier1_count: int
+    tier2_count: int
+    tier3_count: int
+
+
+class RepurposingAnalysisResponse(ModuleServiceResponse):
+    """``repurpose_service.run_repurposing`` payload."""
+
+    candidates: list[RepurposingCandidate]
+    total: int
+    tier1_count: int
+    tier2_count: int
+    avg_score: float
+    top_n: int
+
+
+class GeneRepurposingResponse(TypedDict, total=False):
+    """``repurpose_service.get_gene_repurposing`` payload."""
+
+    gene_id: str
+    gene_name: str
+    gene_category: str
+    gene_function: str
+    disease_evidence: str
+    disease_id: str
+    odds_ratio: float | None
+    candidates: list[RepurposingCandidate]
+    best_score: float
+    count: int
+
+
+class BiomarkerAnalysisResponse(ModuleServiceResponse):
+    """``biomarker_service.run_biomarker_analysis`` payload."""
+
+    biomarkers: list[BiomarkerRow]
+    total_genes: int
+    avg_score: float
+    tier1_count: int
+    tier2_count: int
+
+
+class ExpressionAnalysisResponse(ModuleServiceResponse):
+    """``expression_service.run_correlation_analysis`` payload."""
+
+    drugs: list[ExpressionCorrelation]
+    total_drugs: int
+    avg_score: float
+    tier1_count: int
+    tier2_count: int
+    tier3_count: int
+
+
+class SemanticSearchResponse(ModuleServiceResponse):
+    """``semantic_service.run_semantic_search`` payload."""
+
+    query: str
+    results: list[SemanticHit]
+    total_results: int
+    indexed_articles: int
+
+
+class SynergyAnalysisResponse(ModuleServiceResponse):
+    """``synergy_service.run_synergy`` payload."""
+
+    pairs: list[SynergyPair]
+    total_pairs: int
+    tier1_count: int
+    tier2_count: int
+    tier3_count: int
+    avg_score: float
+    max_score: float
+
+
+class MultiOmicsItem(TypedDict, total=False):
+    gene_id: str
+    gene_name: str
+    dominant_cell_type: str
+    scrna_enrichment: float
+    gwas_risk_weight: float
+    bulk_concordance: float
+    composite_score: float
+    tier: str
+
+
+class MultiOmicsResult(TypedDict, total=False):
+    disease_id: str
+    targets: list[MultiOmicsItem]
+    top_target: str
+    cell_types_analyzed: list[str]
+    total_genes: int
+
+
+class Structure3DItem(TypedDict, total=False):
+    gene_id: str
+    gene_name: str
+    plddt_score: float
+    confidence_category: str
+    active_site_residues: list[str]
+    pocket_volume_A3: float
+    docking_readiness_score: float
+    pdb_id: str
+
+
+class Structure3DResult(TypedDict, total=False):
+    disease_id: str
+    structures: list[Structure3DItem]
+    high_confidence_count: int
+    mean_plddt: float
+    total_structures: int
+
+
+class AdmetItem(TypedDict, total=False):
+    drug_id: str
+    drug_name: str
+    herg_inhibition_risk: str
+    bbb_permeability: str
+    cyp_inhibition_profile: list[str]
+    lipinski_violations: int
+    composite_safety_score: float
+    tier: str
+
+
+class AdmetResult(TypedDict, total=False):
+    disease_id: str
+    profiles: list[AdmetItem]
+    safe_candidate_count: int
+    total_drugs: int
+
+
+class CrisprItem(TypedDict, total=False):
+    gene_id: str
+    gene_name: str
+    loef_score: float
+    pli_score: float
+    grna_specificity_score: float
+    delivery_accessibility: str
+    crispr_priority_score: float
+    feasibility_tier: str
+
+
+class CrisprResult(TypedDict, total=False):
+    disease_id: str
+    candidates: list[CrisprItem]
+    high_priority_count: int
+    total_genes: int
+
+
 # Raw adapter payload contracts. The knowledge graph and Workspace are excluded
 # because they already have concrete NetworkX/Pydantic models at their seams.
 RESULT_CONTRACTS: dict[str, Any] = {
@@ -704,6 +867,10 @@ RESULT_CONTRACTS: dict[str, Any] = {
     "ppi": PpiResult,
     "semantic_search": SemanticSearchResult,
     "virtual_screening": VirtualScreeningResult,
+    "multi_omics": MultiOmicsResult,
+    "structure_3d": Structure3DResult,
+    "admet": AdmetResult,
+    "crispr": CrisprResult,
 }
 
 

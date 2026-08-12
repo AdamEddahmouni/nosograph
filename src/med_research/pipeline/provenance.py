@@ -6,7 +6,29 @@ import hashlib
 import json
 from datetime import datetime, timezone
 from importlib.metadata import PackageNotFoundError, version
-from typing import Any
+from typing import Any, cast
+
+from typing_extensions import TypedDict
+
+
+class ProvenanceMetadata(TypedDict, total=False):
+    """Reproducibility metadata returned by ``build_provenance`` and adapters."""
+
+    schema_version: str
+    run_id: str
+    disease_id: str
+    module: str
+    package_version: str
+    module_version: str
+    sources: list[str]
+    query: str
+    filters: dict[str, Any]
+    cache_or_live: str
+    model: str
+    scoring: dict[str, Any]
+    retrieval_times: dict[str, str]
+    fingerprint: str
+    generated_at: str
 
 SCHEMA_VERSION = "1.0"
 
@@ -60,7 +82,7 @@ def build_provenance(
     inputs: dict[str, Any] | None = None,
     run_id: str | None = None,
     retrieval_times: dict[str, str] | None = None,
-) -> dict[str, Any]:
+) -> ProvenanceMetadata:
     """Build deterministic, secret-free metadata for a computation or report."""
     stable_inputs = {
         "disease_id": disease_id,
@@ -90,4 +112,4 @@ def build_provenance(
         "fingerprint": reproducibility_fingerprint(stable_inputs),
         "generated_at": utc_now_iso(),
     }
-    return {key: value for key, value in payload.items() if value is not None}
+    return cast(ProvenanceMetadata, {key: value for key, value in payload.items() if value is not None})

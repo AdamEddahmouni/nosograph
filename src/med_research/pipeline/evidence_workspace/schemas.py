@@ -8,7 +8,7 @@ from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
 
-SourceName = Literal["pubmed", "clinical_trials", "gwas", "fda_labels"]
+SourceName = Literal["pubmed", "clinical_trials", "gwas", "fda_labels", "opentargets", "gtex", "biorxiv", "chembl"]
 CandidateType = Literal["drugs", "targets", "both"]
 
 # Persisted schema versions are intentionally separate from the runtime model
@@ -360,11 +360,7 @@ def register_workspace_migration(
     """Register one immutable edge in the request/result migration graph."""
     if from_version == to_version:
         raise ValueError("Workspace migration versions must differ")
-    registry = (
-        WORKSPACE_REQUEST_MIGRATIONS
-        if kind == "request"
-        else WORKSPACE_RESULT_MIGRATIONS
-    )
+    registry = WORKSPACE_REQUEST_MIGRATIONS if kind == "request" else WORKSPACE_RESULT_MIGRATIONS
     edge = (from_version, to_version)
     if edge in registry:
         raise ValueError(f"Workspace migration already registered: {kind} {edge}")
@@ -381,11 +377,7 @@ def _apply_workspace_migration_chain(
     """Apply registered migration edges until the target version is reached."""
     if from_version == to_version:
         return dict(payload)
-    registry = (
-        WORKSPACE_REQUEST_MIGRATIONS
-        if kind == "request"
-        else WORKSPACE_RESULT_MIGRATIONS
-    )
+    registry = WORKSPACE_REQUEST_MIGRATIONS if kind == "request" else WORKSPACE_RESULT_MIGRATIONS
     current = from_version
     migrated = dict(payload)
     visited: set[str] = set()
@@ -399,19 +391,13 @@ def _apply_workspace_migration_chain(
             if source == current
         ]
         if not edges:
-            raise ValueError(
-                f"Unsupported Workspace {kind} schema version: {from_version}"
-            )
+            raise ValueError(f"Unsupported Workspace {kind} schema version: {from_version}")
         if len(edges) > 1:
-            raise ValueError(
-                f"Ambiguous Workspace {kind} migrations from version {current}"
-            )
+            raise ValueError(f"Ambiguous Workspace {kind} migrations from version {current}")
         destination, step = edges[0]
         migrated = step(migrated)
         if migrated.get("schema_version") != destination:
-            raise ValueError(
-                f"Workspace {kind} migration did not produce version {destination}"
-            )
+            raise ValueError(f"Workspace {kind} migration did not produce version {destination}")
         current = destination
     return migrated
 
@@ -428,9 +414,9 @@ def serialize_workspace_request(
 ) -> dict[str, Any]:
     """Serialize a request with its migration version marker."""
     normalized = normalize_request(request)
-    return WorkspaceRequestV1.model_validate(
-        normalized.model_dump(mode="json")
-    ).model_dump(mode="json")
+    return WorkspaceRequestV1.model_validate(normalized.model_dump(mode="json")).model_dump(
+        mode="json"
+    )
 
 
 def migrate_workspace_request(payload: ResearchRequest | dict[str, Any]) -> ResearchRequest:
@@ -489,9 +475,7 @@ def migrate_workspace_result(payload: EvidenceDossier | dict[str, Any]) -> Evide
     migrated = EvidenceDossier.model_validate(raw)
     # Result validation classifies evidence quality for newly created records;
     # migration must preserve persisted analyst/source quality values exactly.
-    for record, raw_record in zip(
-        migrated.evidence, raw.get("evidence", []), strict=True
-    ):
+    for record, raw_record in zip(migrated.evidence, raw.get("evidence", []), strict=True):
         if not isinstance(raw_record, dict):
             continue
         for field in ("quality_tier", "quality_score", "quality_rationale"):

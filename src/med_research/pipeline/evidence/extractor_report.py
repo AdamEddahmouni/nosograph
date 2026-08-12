@@ -51,8 +51,6 @@ def generate_html_report(
         reverse=True,
     )
 
-
-
     # Build extractions table rows
     rows_html = ""
     for i, e in enumerate(scored, 1):
@@ -62,11 +60,7 @@ def generate_html_report(
         finding = e.get("key_findings", "—")[:200]
         drugs = ", ".join(e.get("drugs_mentioned", [])[:4]) or "—"
         confidence = e.get("confidence", 0)
-        conf_color = (
-            "#4ade80" if confidence >= 80 else
-            "#fbbf24" if confidence >= 50 else
-            "#f87171"
-        )
+        conf_color = "#4ade80" if confidence >= 80 else "#fbbf24" if confidence >= 50 else "#f87171"
         rel = e.get("relevance_to_query", 50)
         year = e.get("year", "?")
         source = e.get("source_type", "?")
@@ -106,16 +100,31 @@ def generate_html_report(
     drugs_html = ""
     unique_drugs = stats.get("unique_drugs_mentioned", [])
     if unique_drugs:
-        drugs_html = '<div class="drug-list">' + "".join(
-            f'<span class="drug-tag">{d}</span>' for d in unique_drugs[:20]
-        ) + "</div>"
+        drugs_html = (
+            '<div class="drug-list">'
+            + "".join(f'<span class="drug-tag">{d}</span>' for d in unique_drugs[:20])
+            + "</div>"
+        )
 
     _EV_CHART_COLORS = [
-        "#a78bfa", "#c4b5fd", "#4ade80", "#fbbf24", "#fcd34d",
-        "#f87171", "#fca5a5", "#818cf8", "#94a3b8",
+        "#a78bfa",
+        "#c4b5fd",
+        "#4ade80",
+        "#fbbf24",
+        "#fcd34d",
+        "#f87171",
+        "#fca5a5",
+        "#818cf8",
+        "#94a3b8",
     ]
     _MS_CHART_COLORS = [
-        "#818cf8", "#4ade80", "#fbbf24", "#f87171", "#c084fc", "#fb923c", "#34d399",
+        "#818cf8",
+        "#4ade80",
+        "#fbbf24",
+        "#f87171",
+        "#c084fc",
+        "#fb923c",
+        "#34d399",
     ]
 
     def _chart_bars(labels: list[str], values: list[int], colors: list[str]) -> str:
@@ -152,7 +161,8 @@ def generate_html_report(
             "evidence_chart_html": evidence_chart_html,
             "model_system_chart_html": model_system_chart_html,
             "study_designs_html": sd_html or '<p style="color:var(--text-muted);">No data</p>',
-            "drugs_html": drugs_html or '<p style="color:var(--text-muted);">No drug mentions found</p>',
+            "drugs_html": drugs_html
+            or '<p style="color:var(--text-muted);">No drug mentions found</p>',
             "rows_html": rows_html,
             "query": query,
         },
@@ -170,7 +180,8 @@ def escape_html(text: Any) -> str:
     if not text:
         return ""
     return (
-        str(text).replace("&", "&amp;")
+        str(text)
+        .replace("&", "&amp;")
         .replace("<", "&lt;")
         .replace(">", "&gt;")
         .replace('"', "&quot;")

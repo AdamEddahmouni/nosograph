@@ -9,6 +9,7 @@ import logging
 from collections.abc import Callable
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
+from med_research.exceptions import MedResearchError, PipelineExecutionError
 from med_research.pipeline.registry import get_module, list_modules
 
 logger = logging.getLogger(__name__)
@@ -52,9 +53,7 @@ def topological_levels(module_ids: list[str]) -> list[list[str]]:
     scheduled = {module_id for level in levels for module_id in level}
     if scheduled != module_set:
         remaining = sorted(module_set - scheduled)
-        raise ValueError(
-            f"Cycle or unresolved dependencies for pipeline modules: {remaining}"
-        )
+        raise ValueError(f"Cycle or unresolved dependencies for pipeline modules: {remaining}")
 
     return levels
 
@@ -94,14 +93,48 @@ def run_levels(
                     module_id = futures[future]
                     try:
                         future.result()
-                    except Exception as exc:  # noqa: BLE001 — aggregate per-module failures
+                    except (PipelineExecutionError, MedResearchError, RuntimeError, OSError) as exc:
                         errors += 1
                         logger.error("  %s: %s", module_id, exc)
         else:
             for module_id in level:
                 try:
                     runner(module_id)
-                except Exception as exc:  # noqa: BLE001
+                except (PipelineExecutionError, MedResearchError, RuntimeError, OSError) as exc:
                     errors += 1
                     logger.error("  %s: %s", module_id, exc)
     return errors
+
+
+async def run_levels_async(
+    levels: list[list[str]],
+    async_runner: Callable[[str], Any],
+    *,
+    parallel: bool = True,
+) -> int:
+    """Execute DAG levels using native asyncio concurrency.
+
+    Returns the number of module runs that raised exceptions.
+    """
+    import asyncio
+
+    errors = 0
+    for level in levels:
+        if parallel and len(level) > 1:
+            results = await asyncio.gather(
+                *(async_runner(mod_id) for mod_id in level),
+                return_exceptions=True,
+            )
+            for module_id, res in zip(level, results):
+                if isinstance(res, Exception):
+                    errors += 1
+                    logger.error("  %s (async): %s", module_id, res)
+        else:
+            for module_id in level:
+                try:
+                    await async_runner(module_id)
+                except Exception as exc:
+                    errors += 1
+                    logger.error("  %s (async): %s", module_id, exc)
+    return errors
+

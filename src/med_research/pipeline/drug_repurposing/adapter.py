@@ -9,7 +9,7 @@ from typing_extensions import Unpack
 
 from med_research.pipeline.adapter_options import AdapterOptions
 from med_research.pipeline.base import BasePipelineModule
-from med_research.pipeline.provenance import build_provenance
+from med_research.pipeline.provenance import ProvenanceMetadata, build_provenance
 from med_research.pipeline.registry import register_module
 from med_research.pipeline.results import RepurposingResults
 
@@ -62,9 +62,7 @@ class DrugRepurposingModule(BasePipelineModule[RepurposingResults]):
         if gene_id:
             scored = [candidate for candidate in scored if candidate["gene_id"] == gene_id]
         elif untargeted_only:
-            scored = [
-                candidate for candidate in scored if candidate["gene_id"] in untargeted_ids
-            ]
+            scored = [candidate for candidate in scored if candidate["gene_id"] in untargeted_ids]
 
         if opts.get("save", True):
             output_path = disease_output_path(DATA_DIR, "candidates", disease_id)
@@ -100,7 +98,7 @@ class DrugRepurposingModule(BasePipelineModule[RepurposingResults]):
         )
         return Path(report_path)
 
-    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> dict[str, Any]:
+    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> ProvenanceMetadata:
         extra: dict[str, Any] = {
             key: value
             for key, value in opts.items()

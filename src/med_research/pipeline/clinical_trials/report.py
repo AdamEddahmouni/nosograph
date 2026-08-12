@@ -14,9 +14,11 @@ from pathlib import Path
 
 try:
     import matplotlib
+
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
     import matplotlib.ticker as ticker
+
     MPL_AVAILABLE = True
 except ImportError:
     MPL_AVAILABLE = False
@@ -129,9 +131,16 @@ def _generate_phase_chart(phases: dict) -> str:
     bars = ax.bar(labels, values, color=colors, edgecolor="#252535", linewidth=0.5, width=0.6)
     for bar, val in zip(bars, values, strict=True):
         if val > 0:
-            ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 1,
-                    str(val), ha="center", va="bottom", fontsize=11, fontweight="bold",
-                    color="#e0e0e8")
+            ax.text(
+                bar.get_x() + bar.get_width() / 2,
+                bar.get_height() + 1,
+                str(val),
+                ha="center",
+                va="bottom",
+                fontsize=11,
+                fontweight="bold",
+                color="#e0e0e8",
+            )
 
     ax.set_ylabel("Number of Trials", color="#787890", fontsize=9)
     ax.tick_params(colors="#787890", labelsize=9)
@@ -158,17 +167,33 @@ def _generate_moa_chart(moas: dict) -> str:
     labels = [m[0] for m in sorted_moas]
     values = [m[1] for m in sorted_moas]
 
-    colors = ["#60a5fa", "#34d399", "#fbbf24", "#f472b6", "#c084fc",
-              "#22d3ee", "#818cf8", "#f87171"][:len(labels)]
+    colors = [
+        "#60a5fa",
+        "#34d399",
+        "#fbbf24",
+        "#f472b6",
+        "#c084fc",
+        "#22d3ee",
+        "#818cf8",
+        "#f87171",
+    ][: len(labels)]
     colors = colors[::-1] if len(colors) >= len(labels) else colors
 
-    bars = ax.barh(labels, values, color=colors[:len(labels)], edgecolor="#252535",
-                   linewidth=0.5, height=0.6)
+    bars = ax.barh(
+        labels, values, color=colors[: len(labels)], edgecolor="#252535", linewidth=0.5, height=0.6
+    )
     for bar, val in zip(bars, values, strict=True):
         if val > 0:
-            ax.text(bar.get_width() + 0.3, bar.get_y() + bar.get_height() / 2,
-                    str(val), ha="left", va="center", fontsize=10, fontweight="bold",
-                    color="#e0e0e8")
+            ax.text(
+                bar.get_width() + 0.3,
+                bar.get_y() + bar.get_height() / 2,
+                str(val),
+                ha="left",
+                va="center",
+                fontsize=10,
+                fontweight="bold",
+                color="#e0e0e8",
+            )
 
     ax.set_xlabel("Number of Trials", color="#787890", fontsize=9)
     ax.tick_params(colors="#e0e0e8", labelsize=9)
@@ -206,11 +231,14 @@ def _build_trials_table(trials: list) -> str:
     """Build the main trials data table."""
     rows = ""
     for t in trials[:50]:
-        phases_html = " ".join(
-            f'<span class="phase-badge" style="background:rgba({_phase_rgba(t.get("phases", []))});'
-            f'color:{_phase_color(t.get("phases", []))}">{PHASE_LABELS.get(p, p) if p in PHASE_LABELS else p}</span>'
-            for p in t.get("phases", [])[:2]
-        ) or '<span class="phase-badge" style="color:#787890;background:rgba(120,120,144,0.1)">N/A</span>'
+        phases_html = (
+            " ".join(
+                f'<span class="phase-badge" style="background:rgba({_phase_rgba(t.get("phases", []))});'
+                f'color:{_phase_color(t.get("phases", []))}">{PHASE_LABELS.get(p, p) if p in PHASE_LABELS else p}</span>'
+                for p in t.get("phases", [])[:2]
+            )
+            or '<span class="phase-badge" style="color:#787890;background:rgba(120,120,144,0.1)">N/A</span>'
+        )
 
         status = t.get("status", "")
         status_color = STATUS_COLORS.get(status, "#787890")
@@ -230,9 +258,9 @@ def _build_trials_table(trials: list) -> str:
 
         rows += f"""
         <tr>
-            <td style="color:#60a5fa;font-size:0.75rem">{t['nct_id']}</td>
-            <td style="max-width:280px">{_escape_html(t.get('title', '')[:100])}</td>
-            <td><span class="status-badge" style="background:rgba({_hex_to_rgba(status_color)});color:{status_color}">{status.replace('_', ' ').title()}</span></td>
+            <td style="color:#60a5fa;font-size:0.75rem">{t["nct_id"]}</td>
+            <td style="max-width:280px">{_escape_html(t.get("title", "")[:100])}</td>
+            <td><span class="status-badge" style="background:rgba({_hex_to_rgba(status_color)});color:{status_color}">{status.replace("_", " ").title()}</span></td>
             <td>{phases_html}</td>
             <td style="max-width:200px;font-size:0.75rem">{_escape_html(interventions[:120])}</td>
             <td style="font-size:0.72rem"><span class="phase-badge" style="background:rgba(96,165,250,0.1);color:#60a5fa">{moa}</span></td>
@@ -262,12 +290,12 @@ def _build_matched_section(kg_crossref: dict) -> str:
         cards += f"""
         <div class="match-card">
             <div class="match-header">
-                <span class="match-title" style="color:#60a5fa">{t['nct_id']}</span>
-                <span class="status-badge" style="background:rgba({_hex_to_rgba(STATUS_COLORS.get(t.get('status', ''), '#787890'))});color:{STATUS_COLORS.get(t.get('status', ''), '#787890')}">{t.get('status', '').replace('_', ' ').title()}</span>
+                <span class="match-title" style="color:#60a5fa">{t["nct_id"]}</span>
+                <span class="status-badge" style="background:rgba({_hex_to_rgba(STATUS_COLORS.get(t.get("status", ""), "#787890"))});color:{STATUS_COLORS.get(t.get("status", ""), "#787890")}">{t.get("status", "").replace("_", " ").title()}</span>
             </div>
-            <p style="font-size:0.82rem;margin-bottom:6px">{_escape_html(t.get('title', '')[:130])}</p>
+            <p style="font-size:0.82rem;margin-bottom:6px">{_escape_html(t.get("title", "")[:130])}</p>
             <div style="font-size:0.72rem;color:#787890;display:flex;gap:16px;flex-wrap:wrap">
-                <span>Phase: {t.get('phase', 'N/A')}</span>
+                <span>Phase: {t.get("phase", "N/A")}</span>
                 <span>🧬 Genes: {genes}</span>
                 <span>💊 Drugs: {drugs}</span>
             </div>
@@ -319,11 +347,13 @@ def _build_genes_drugs_section(kg_crossref: dict) -> str:
 
 # ── Helpers ──────────────────────────────────────────────────────────
 
+
 def _escape_html(text: str) -> str:
     if not text:
         return ""
-    return (text.replace("&", "&amp;").replace("<", "&lt;")
-            .replace(">", "&gt;").replace('"', "&quot;"))
+    return (
+        text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
+    )
 
 
 def _hex_to_rgba(hex_color: str) -> str:
