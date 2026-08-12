@@ -1,4 +1,4 @@
-.PHONY: help test test-quiet test-fast test-offline test-unit test-integration test-integration-all test-slow test-cov lint lint-fix check-imports typecheck lock lock-check lock-verify venv-sync run-all kg repurpose bio literature docker-build docker-up docker-test clean install
+.PHONY: help test test-quiet test-fast test-offline test-unit test-integration test-integration-all test-slow test-cov lint lint-fix check-imports typecheck lock lock-check lock-verify venv-sync run-all kg repurpose bio literature docker-build docker-up docker-test clean install biomed-init biomed-verify
 
 help:  ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | \
@@ -21,7 +21,7 @@ test-fast:  ## Run fast unit tests without slow or integration markers
 	python -m pytest tests/ -m "not slow and not integration" -q --tb=line
 
 test-offline:  ## Run the complete offline suite; live API tests are marked slow
-	python -m pytest tests/ -m "not slow and not integration" -q --tb=short
+	python -m pytest tests/ -m "unit and not network" -q --tb=short
 
 test-slow:  ## Run live API/integration tests marked slow
 	python -m pytest tests/ -m slow -v --tb=short
@@ -52,6 +52,9 @@ check-imports:  ## Audit for stale/dead internal med_research imports
 typecheck:  ## Run mypy on the expanded type-check scope
 	python -m mypy \
 	src/med_research/pipeline/dispatch.py \
+	src/med_research/pipeline/gateway.py \
+	src/med_research/pipeline/provenance.py \
+	src/med_research/pipeline/progress.py \
 	src/med_research/pipeline/registry.py \
 	src/med_research/pipeline/base.py \
 	src/med_research/pipeline/scheduler.py \
@@ -61,6 +64,7 @@ typecheck:  ## Run mypy on the expanded type-check scope
 	src/med_research/pipeline_errors.py \
 	src/med_research/cache.py \
 	src/med_research/rate_limiter.py \
+	src/med_research/diseases/base.py \
 	src/med_research/diseases/coverage.py \
 	src/med_research/diseases/schemas.py \
 	src/med_research/pipeline/adverse_events/adapter.py \
@@ -84,6 +88,13 @@ typecheck:  ## Run mypy on the expanded type-check scope
 	src/med_research/pipeline/evidence/extractor.py \
 	src/med_research/pipeline/evidence/gatherer.py \
 	src/med_research/pipeline/evidence_workspace/adapter.py \
+	src/med_research/pipeline/evidence_workspace/extraction.py \
+	src/med_research/pipeline/evidence_workspace/graph.py \
+	src/med_research/pipeline/evidence_workspace/ranking.py \
+	src/med_research/pipeline/evidence_workspace/report.py \
+	src/med_research/pipeline/evidence_workspace/schemas.py \
+	src/med_research/pipeline/evidence_workspace/sources.py \
+	src/med_research/pipeline/evidence_workspace/workspace.py \
 	src/med_research/pipeline/gene_expression/adapter.py \
 	src/med_research/pipeline/gene_expression/correlator.py \
 	src/med_research/pipeline/knowledge_graph/adapter.py \
@@ -102,12 +113,105 @@ typecheck:  ## Run mypy on the expanded type-check scope
 	src/med_research/pipeline/virtual_screening/screening.py \
 	src/med_research/pipeline/virtual_screening/screening_strategy.py \
 	src/med_research/pipeline/virtual_screening/vina_setup.py \
+	src/med_research/cli.py \
+	src/med_research/web/dependencies.py \
+	src/med_research/web/main.py \
 	src/med_research/web/error_handlers.py \
 	src/med_research/web/middleware.py \
 	src/med_research/web/rate_limit.py \
-		src/med_research/web/models/jobs.py \
-		src/med_research/web/routers/jobs.py \
-		src/med_research/web/services/registry_service.py
+	src/med_research/web/models/adverse_events.py \
+	src/med_research/web/models/bioinformatics.py \
+	src/med_research/web/models/biomarker.py \
+	src/med_research/web/models/car_t.py \
+	src/med_research/web/models/cross_disease.py \
+	src/med_research/web/models/disease_admin.py \
+	src/med_research/web/models/evidence.py \
+	src/med_research/web/models/expression.py \
+	src/med_research/web/models/extractor.py \
+	src/med_research/web/models/jobs.py \
+	src/med_research/web/models/kg.py \
+	src/med_research/web/models/monitor.py \
+	src/med_research/web/models/repurpose.py \
+	src/med_research/web/models/semantic.py \
+	src/med_research/web/models/shared.py \
+	src/med_research/web/models/synergy.py \
+	src/med_research/web/models/workspace.py \
+	src/med_research/web/routers/adverse_events.py \
+	src/med_research/web/routers/analysis.py \
+	src/med_research/web/routers/auth.py \
+	src/med_research/web/routers/biomarker.py \
+	src/med_research/web/routers/bioinformatics.py \
+	src/med_research/web/routers/car_t.py \
+	src/med_research/web/routers/cross_disease.py \
+	src/med_research/web/routers/disease_admin.py \
+	src/med_research/web/routers/evidence.py \
+	src/med_research/web/routers/expression.py \
+	src/med_research/web/routers/export.py \
+	src/med_research/web/routers/extractor.py \
+	src/med_research/web/routers/jobs.py \
+	src/med_research/web/routers/kg.py \
+	src/med_research/web/routers/monitor.py \
+	src/med_research/web/routers/repurpose.py \
+	src/med_research/web/routers/semantic.py \
+	src/med_research/web/routers/synergy.py \
+	src/med_research/web/routers/system.py \
+	src/med_research/web/routers/workspace.py \
+	src/med_research/web/services/adverse_events_service.py \
+	src/med_research/web/services/auth.py \
+	src/med_research/web/services/bioinformatics_service.py \
+	src/med_research/web/services/biomarker_service.py \
+	src/med_research/web/services/car_t_service.py \
+	src/med_research/web/services/cross_disease_service.py \
+	src/med_research/web/services/disease_admin_service.py \
+	src/med_research/web/services/evidence_service.py \
+	src/med_research/web/services/expression_service.py \
+	src/med_research/web/services/extractor_service.py \
+	src/med_research/web/services/kg_service.py \
+	src/med_research/web/services/monitor_service.py \
+	src/med_research/web/services/notifications.py \
+	src/med_research/web/services/registry_service.py \
+	src/med_research/web/services/repurpose_service.py \
+	src/med_research/web/services/review_export.py \
+	src/med_research/web/services/review_links.py \
+	src/med_research/web/services/semantic_service.py \
+	src/med_research/web/services/shared_services.py \
+	src/med_research/web/services/synergy_service.py \
+	src/med_research/web/services/workspace_graph.py \
+	src/med_research/web/services/workspace_store.py \
+	src/med_research/web/tasks/analysis_tasks.py \
+	src/med_research/biomed/__init__.py \
+	src/med_research/biomed/database.py \
+	src/med_research/biomed/errors.py \
+	src/med_research/biomed/graph.py \
+	src/med_research/biomed/identifiers.py \
+	src/med_research/biomed/models.py \
+	src/med_research/biomed/repository.py \
+	src/med_research/biomed/schema.py \
+	src/med_research/biomed/comparison/__init__.py \
+	src/med_research/biomed/comparison/algorithm.py \
+	src/med_research/biomed/comparison/fingerprint.py \
+	src/med_research/biomed/comparison/hpo.py \
+	src/med_research/biomed/comparison/models.py \
+	src/med_research/biomed/comparison/service.py \
+	src/med_research/biomed/imports/__init__.py \
+	src/med_research/biomed/imports/contracts.py \
+	src/med_research/biomed/imports/hpo.py \
+	src/med_research/biomed/imports/hpoa.py \
+	src/med_research/biomed/imports/models.py \
+	src/med_research/biomed/imports/mondo.py \
+	src/med_research/biomed/imports/service.py \
+	src/med_research/biomed/legacy/__init__.py \
+	src/med_research/biomed/legacy/adapter.py \
+	src/med_research/biomed/legacy/checksums.py \
+	src/med_research/biomed/legacy/compat.py \
+	src/med_research/biomed/legacy/manifest.py \
+	src/med_research/biomed/legacy/projector.py \
+	src/med_research/biomed/legacy/report.py \
+	src/med_research/web/dependencies_biomed.py \
+	src/med_research/web/models/universal.py \
+	src/med_research/web/routers/universal.py \
+	src/med_research/web/services/universal_service.py \
+	src/med_research/web/services/comparison_service.py
 
 # ── Locked dependencies ────────────────────────────────────────────────────
 # The dev lock is compiled against the runtime lock (-c requirements-lock.txt)
@@ -176,6 +280,25 @@ docker-up:  ## Start the web API server in Docker
 
 docker-test:  ## Run tests inside Docker
 	docker compose run --rm pipeline test
+
+# ── Biomedical store ─────────────────────────────────────────────────────
+
+biomed-init:  ## Initialize the local canonical biomedical SQLite store
+	python -m med_research.cli biomed init
+
+biomed-import-fixtures:  ## Import pinned ontology fixtures into the local biomedical store
+	python -m med_research.cli biomed import mondo --artifact tests/fixtures/biomed/mondo/minimal.json
+	python -m med_research.cli biomed import hp --artifact tests/fixtures/biomed/hpo/minimal.json
+	python -m med_research.cli biomed import hpoa --artifact tests/fixtures/biomed/hpoa/minimal.tsv
+
+biomed-import:  ## Download and import full MONDO, HPO, and HPOA into the biomed store
+	python scripts/setup_biomed_imports.py
+
+biomed-migrate-legacy:  ## Project all seven legacy disease modules into the canonical store
+	python -m med_research.cli biomed migrate legacy
+
+biomed-verify:  ## Verify pinned fixture checksums and active ontology snapshots
+	python scripts/verify_biomed_imports.py --from-fixtures --check-store
 
 # ── Cleanup ──────────────────────────────────────────────────────────────
 

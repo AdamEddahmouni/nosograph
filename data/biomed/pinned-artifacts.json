@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "description": "Pinned biomedical ontology artifacts for reproducible imports.",
+  "artifacts": {
+    "mondo": {
+      "fixture_path": "tests/fixtures/biomed/mondo/minimal.json",
+      "download_filename": "mondo.json",
+      "version": "2024-01-01",
+      "checksum": "sha256:53ec9a18d2662b3c0005007d93297503f720246dd680eddf56125ed729a14495"
+    },
+    "hp": {
+      "fixture_path": "tests/fixtures/biomed/hpo/minimal.json",
+      "download_filename": "hp.json",
+      "version": "2024-02-15",
+      "checksum": "sha256:6d561f1c6280c6da93172eb04cfa716e56adf5f89574140174168d8395f64941"
+    },
+    "hpoa": {
+      "fixture_path": "tests/fixtures/biomed/hpoa/minimal.tsv",
+      "download_filename": "phenotype.hpoa.tsv",
+      "version": "fixture-minimal",
+      "checksum": "sha256:c1f9e70b1a8afeabc773146b05464a682c3b20894bffc06f6d9136dfe5e34368"
+    }
+  }
+}

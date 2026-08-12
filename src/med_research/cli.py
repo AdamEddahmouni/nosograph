@@ -10,6 +10,7 @@ Usage:
     med-research diseases                       List available diseases
     med-research modules                        List available pipeline modules
     med-research workspace-migrate --dry-run    Inspect persisted Workspace migrations
+    med-research biomed init                  Initialize the canonical biomedical store
     med-research serve                          Start the web API server
 """
 
@@ -53,8 +54,7 @@ def _exit_from_result(result: Any, *, context: str = "") -> int:
     ctx = prefix.rstrip(": ")
     for err in result.errors:
         if any(
-            token in err.lower()
-            for token in ("not available", "missing", "blocked", "module '")
+            token in err.lower() for token in ("not available", "missing", "blocked", "module '")
         ):
             return handle_pipeline_error(
                 ModuleNotAvailableError(err),
@@ -88,6 +88,7 @@ def _dispatch(
 ) -> PipelineRunResult[Any]:
     """Run a registry module through the unified dispatch path."""
     from med_research.pipeline.gateway import pipeline_gateway
+    from med_research.pipeline.progress import cli_progress
 
     if export_html is None:
         export_html = bool(getattr(args, "export_html", False))
@@ -95,6 +96,7 @@ def _dispatch(
         module_id,
         disease_id,
         export_html=export_html,
+        progress_callback=cli_progress,
         **opts,
     )
 
@@ -204,7 +206,6 @@ def _add_workspace_request_arguments(parser: argparse.ArgumentParser) -> None:
         parser.add_argument(*option_strings, **kwargs)
 
 
-
 def _add_registry_cli_commands(
     subparsers: argparse._SubParsersAction,
 ) -> None:
@@ -219,9 +220,7 @@ def _add_registry_cli_commands(
             continue
         module_parser = subparsers.add_parser(command, help=entry["cli_help"])
         module_parser.set_defaults(registry_module_id=entry["module_id"])
-        module_parser.add_argument(
-            "--disease", "-d", default="sle", help="Disease ID"
-        )
+        module_parser.add_argument("--disease", "-d", default="sle", help="Disease ID")
         module_parser.add_argument(
             "--export-html", action="store_true", help="Generate an HTML report"
         )
@@ -326,6 +325,47 @@ def _build_parser() -> argparse.ArgumentParser:
     )
     dcoverage.add_argument("disease_id", help="Disease ID")
     dcoverage.add_argument("--json", dest="json_path", help="Write the complete report as JSON")
+    dbatch = disease_sub.add_parser(
+        "batch-add", help="Scaffold multiple diseases from the curated registry"
+    )
+    dbatch.add_argument(
+        "--category", help="Only scaffold diseases in this therapeutic category (e.g. oncology)"
+    )
+    dbatch.add_argument(
+        "--limit", type=int, help="Maximum number of diseases to scaffold in this run"
+    )
+    dbatch.add_argument("--max-genes", type=int, default=60, help="Max genes per disease")
+    dbatch.add_argument("--max-drugs", type=int, default=60, help="Max drugs per disease")
+    dbatch.add_argument("--max-pathways", type=int, default=30, help="Max pathways per disease")
+    dbatch.add_argument("--skip-gwas", action="store_true", help="Skip GWAS Catalog fetch")
+    dbatch.add_argument("--skip-opentargets", action="store_true", help="Skip Open Targets fetch")
+    dbatch.add_argument("--skip-reactome", action="store_true", help="Skip Reactome fetch")
+    dbatch.add_argument("--no-cache", action="store_true", help="Bypass the EFO lookup cache")
+    dbatch.add_argument(
+        "--delay", type=float, default=1.0, help="Seconds between scaffolds (default: 1.0)"
+    )
+    dbatch.add_argument(
+        "--dry-run", action="store_true", help="Fetch + plan but do not write files"
+    )
+    dbulk = disease_sub.add_parser(
+        "bulk-harvest", help="Parallel harvest from local Open Targets bulk parquet"
+    )
+    dbulk.add_argument("--all", action="store_true", help="Harvest all registry diseases")
+    dbulk.add_argument("--category", help="Only harvest diseases in this category")
+    dbulk.add_argument("--limit", type=int, help="Maximum diseases to harvest")
+    dbulk.add_argument(
+        "--repair", action="store_true", help="Prioritize zero/low-gene modules first"
+    )
+    dbulk.add_argument(
+        "--only-new", action="store_true", help="Only scaffold diseases without modules"
+    )
+    dbulk.add_argument("--workers", type=int, default=8, help="Parallel workers (default: 8)")
+    dbulk.add_argument("--max-genes", type=int, default=60)
+    dbulk.add_argument("--max-drugs", type=int, default=60)
+    dbulk.add_argument("--max-pathways", type=int, default=30)
+    dbulk.add_argument("--use-gwas", action="store_true", help="Optional GWAS API enrichment")
+    dbulk.add_argument("--skip-reactome", action="store_true", help="Skip Reactome fetch")
+    dbulk.add_argument("--overwrite", action="store_true", help="Regenerate existing modules")
 
     # ── Knowledge Graph ────────────────────────────────────────────────
     kg = sub.add_parser("kg", help="Build and export the knowledge graph")
@@ -443,6 +483,127 @@ def _build_parser() -> argparse.ArgumentParser:
         "--json", action="store_true", help="Print the machine-readable migration report"
     )
 
+    biomed = sub.add_parser(
+        "biomed",
+        help="Initialize and manage the canonical biomedical knowledge store",
+    )
+    biomed_sub = biomed.add_subparsers(dest="biomed_action", required=True)
+    biomed_init = biomed_sub.add_parser("init", help="Create or migrate the biomedical SQLite store")
+    biomed_init.add_argument(
+        "--db",
+        type=Path,
+        help="Biomedical SQLite path (defaults to BIOMEDICAL_DB_PATH)",
+    )
+
+    biomed_import = biomed_sub.add_parser("import", help="Import a pinned ontology artifact")
+    biomed_import.add_argument(
+        "biomed_import_resource",
+        choices=("mondo", "hp", "hpoa"),
+        help="Ontology resource to import",
+    )
+    biomed_import.add_argument("--artifact", type=Path, required=True, help="Local artifact path")
+    biomed_import.add_argument(
+        "--db",
+        type=Path,
+        help="Biomedical SQLite path (defaults to BIOMEDICAL_DB_PATH)",
+    )
+    biomed_import.add_argument(
+        "--activate",
+        dest="activate",
+        action="store_true",
+        default=True,
+        help="Activate the imported snapshot (default)",
+    )
+    biomed_import.add_argument(
+        "--no-activate",
+        dest="activate",
+        action="store_false",
+        help="Import without activating the snapshot",
+    )
+    biomed_import.add_argument(
+        "--slim",
+        action="store_true",
+        help="Pipeline-optimized import (skip hierarchy claims, filter MONDO xrefs)",
+    )
+    biomed_import.add_argument(
+        "--full",
+        dest="slim",
+        action="store_false",
+        help="Full ontology import including hierarchy claims",
+    )
+    biomed_import.set_defaults(slim=True)
+
+    biomed_snapshots = biomed_sub.add_parser("snapshots", help="List imported resource snapshots")
+    biomed_snapshots.add_argument(
+        "biomed_snapshots_action",
+        nargs="?",
+        choices=("list",),
+        default="list",
+        help="Snapshots action (default: list)",
+    )
+    biomed_snapshots.add_argument("--resource", help="Filter by resource name")
+    biomed_snapshots.add_argument(
+        "--db",
+        type=Path,
+        help="Biomedical SQLite path (defaults to BIOMEDICAL_DB_PATH)",
+    )
+
+    biomed_migrate = biomed_sub.add_parser(
+        "migrate",
+        help="Migrate curated legacy disease projections into the canonical store",
+    )
+    biomed_migrate.add_argument(
+        "biomed_migrate_target",
+        choices=("legacy",),
+        help="Migration target",
+    )
+    biomed_migrate.add_argument(
+        "--db",
+        type=Path,
+        help="Biomedical SQLite path (defaults to BIOMEDICAL_DB_PATH)",
+    )
+    biomed_migrate.add_argument(
+        "--disease",
+        action="append",
+        dest="biomed_migrate_diseases",
+        help="Limit migration to a specific legacy disease id (repeatable)",
+    )
+    biomed_migrate.add_argument(
+        "--report",
+        type=Path,
+        help="Write a JSON parity report to this path",
+    )
+    biomed_migrate.add_argument(
+        "--activate",
+        dest="activate",
+        action="store_true",
+        default=True,
+        help="Activate the imported snapshot (default)",
+    )
+    biomed_migrate.add_argument(
+        "--no-activate",
+        dest="activate",
+        action="store_false",
+        help="Import without activating the snapshot",
+    )
+
+    biomed_compare = biomed_sub.add_parser(
+        "compare",
+        help="Compare two condition CURIEs using HPO-aware similarity",
+    )
+    biomed_compare.add_argument("--left", required=True, help="Left condition CURIE")
+    biomed_compare.add_argument("--right", required=True, help="Right condition CURIE")
+    biomed_compare.add_argument(
+        "--db",
+        type=Path,
+        help="Biomedical SQLite path (defaults to BIOMEDICAL_DB_PATH)",
+    )
+    biomed_compare.add_argument("--phenotype-weight", type=float, default=0.55)
+    biomed_compare.add_argument("--gene-weight", type=float, default=0.20)
+    biomed_compare.add_argument("--pathway-weight", type=float, default=0.15)
+    biomed_compare.add_argument("--intervention-weight", type=float, default=0.10)
+    biomed_compare.add_argument("--biomarker-weight", type=float, default=0.0)
+
     semantic = sub.add_parser("semantic", help="Semantic search over biomedical abstracts")
     semantic.add_argument("--disease", "-d", default="sle", help="Disease ID")
     semantic.add_argument("--query", "-q", default=None, help="Search query")
@@ -535,6 +696,17 @@ def _build_parser() -> argparse.ArgumentParser:
         "--dry-run",
         action="store_true",
         help="Report what would be migrated without writing",
+    )
+
+    live = sub.add_parser("live", help="Query live external biological databases")
+    live.add_argument("--target", "-t", default="JAK2", help="Target gene symbol (e.g. JAK2, STAT3, TNF)")
+    live.add_argument("--disease", "-d", default="ra", help="Disease code (e.g. ra, sle, ms, ibd)")
+    live.add_argument(
+        "--source",
+        "-s",
+        default="all",
+        choices=["all", "opentargets", "gtex", "chembl", "uniprot", "biorxiv"],
+        help="External source to query",
     )
 
     _add_registry_cli_commands(sub)
@@ -683,7 +855,7 @@ def cmd_disease(args):
                 try:
                     checks = disease.validate()
                     name = disease.profile.name
-                except Exception as e:  # noqa: BLE001 — report, don't crash the health check
+                except (OSError, ValueError, KeyError, TypeError, AttributeError, RuntimeError) as e:
                     gaps.append(f"{did}: config load failed — {e}")
                     logger.warning(f"  ⚠️  {did:8s} config load failed: {e}")
                     continue
@@ -757,6 +929,54 @@ def cmd_disease(args):
         print_scaffold_summary(summary)
         return 0
 
+    if args.disease_action == "batch-add":
+        from med_research.diseases.scaffold import (
+            batch_scaffold,
+            print_batch_summary,
+        )
+
+        report = batch_scaffold(
+            category=args.category,
+            limit=args.limit,
+            max_genes=args.max_genes,
+            max_drugs=args.max_drugs,
+            max_pathways=args.max_pathways,
+            use_gwas=not args.skip_gwas,
+            use_opentargets=not args.skip_opentargets,
+            use_reactome=not args.skip_reactome,
+            use_cache=not args.no_cache,
+            delay=args.delay,
+            dry_run=args.dry_run,
+        )
+        print_batch_summary(report)
+        return 1 if report["failed"] and not report["succeeded"] else 0
+
+    if args.disease_action == "bulk-harvest":
+        from med_research.diseases.bulk_scaffold import bulk_harvest, print_bulk_harvest_summary
+
+        if not args.all and not args.category and not args.limit and not args.repair:
+            logger.error("❌ bulk-harvest needs --all, --category, --limit, or --repair")
+            return 2
+        try:
+            report = bulk_harvest(
+                category=args.category,
+                limit=args.limit,
+                repair=args.repair,
+                only_new=args.only_new,
+                workers=args.workers,
+                max_genes=args.max_genes,
+                max_drugs=args.max_drugs,
+                max_pathways=args.max_pathways,
+                use_gwas=args.use_gwas,
+                use_reactome=not args.skip_reactome,
+                overwrite=args.overwrite,
+            )
+        except FileNotFoundError as exc:
+            logger.error("❌ %s", exc)
+            return 1
+        print_bulk_harvest_summary(report)
+        return 1 if report["failed"] and not report["succeeded"] else 0
+
     if args.disease_action == "refresh":
         from med_research.diseases.scaffold import (
             print_refresh_summary,
@@ -798,7 +1018,9 @@ def cmd_disease(args):
                 logger.info("\n  Removed entities are backed up to data/backups/ and can be")
                 logger.info("  restored by merging them back into genes.json / drugs.json.")
                 if args.skip_gwas or args.skip_opentargets or args.skip_reactome:
-                    logger.warning("  ⚠️  You skipped sources (--skip-*): entities from those sources")
+                    logger.warning(
+                        "  ⚠️  You skipped sources (--skip-*): entities from those sources"
+                    )
                     logger.info("      may be incorrectly flagged for removal.")
                 if args.max_genes < 60 or args.max_drugs < 60:
                     logger.warning("  ⚠️  --max-genes/--max-drugs are below the defaults: entities")
@@ -978,8 +1200,7 @@ def cmd_bioinformatics(args):
 
 def cmd_literature(args):
     """Run literature mining."""
-    import med_research.pipeline.literature_mining.miner as miner_mod
-    from med_research.pipeline.literature_mining.miner import print_summary
+    from med_research.pipeline.literature_mining.miner import EntityContext, print_summary
 
     result = _dispatch(
         "literature_mining",
@@ -1000,18 +1221,16 @@ def cmd_literature(args):
         logger.error(
             "❌ Literature analysis blocked for %s: %s",
             args.disease,
-            ", ".join(coverage.get("missing_inputs", []))
-            or "coverage contract not satisfied",
+            ", ".join(coverage.get("missing_inputs", [])) or "coverage contract not satisfied",
         )
         return _exit_from_result(result, context="Literature mining") or 1
 
     entities = payload.get("entities", {})
     candidates = payload.get("candidates", [])
-    miner_mod.entities_hack = {
-        gid: entities["genes"].get(gid, {"name": gid})
-        for gid in results.get("gene_coverage", {})
-    }
-    print_summary(results, candidates, entities)
+    entity_context = EntityContext.from_results(
+        entities, results.get("gene_coverage", {})
+    )
+    print_summary(results, candidates, entities, entity_context=entity_context)
     return 0
 
 
@@ -1112,10 +1331,18 @@ def cmd_safety(args):
         logger.info(f"\n🛡️  Safety Profile: {profile['drug_name']}")
         logger.info(f"   Disease:                  {args.disease}")
         logger.info(f"   Composite Safety Score:   {profile.get('composite_safety_score', 'N/A')}")
-        logger.info(f"   Disease Symptom Overlap:  {profile.get('disease_symptom_overlap_score', 'N/A')}/10")
-        logger.info(f"   Severity Burden:           {profile.get('severity_burden_score', 'N/A')}/10")
-        logger.info(f"   Chronic Use Safety:        {profile.get('chronic_use_safety_score', 'N/A')}/10")
-        logger.info(f"   Disease-Specific Risk:     {profile.get('disease_specific_risk_score', 'N/A')}/10")
+        logger.info(
+            f"   Disease Symptom Overlap:  {profile.get('disease_symptom_overlap_score', 'N/A')}/10"
+        )
+        logger.info(
+            f"   Severity Burden:           {profile.get('severity_burden_score', 'N/A')}/10"
+        )
+        logger.info(
+            f"   Chronic Use Safety:        {profile.get('chronic_use_safety_score', 'N/A')}/10"
+        )
+        logger.info(
+            f"   Disease-Specific Risk:     {profile.get('disease_specific_risk_score', 'N/A')}/10"
+        )
         logger.info(f"   Black Box Warnings:        {profile.get('black_box_warnings', [])}")
         logger.info(f"   Disease Overlap AEs:       {profile.get('disease_overlap_ae', [])}")
     else:
@@ -1208,7 +1435,7 @@ def cmd_workspace(args):
     from datetime import date
 
     from med_research.pipeline.evidence_workspace.report import dossier_to_json, render_html
-    from med_research.pipeline.evidence_workspace.schemas import ResearchRequest
+    from med_research.pipeline.evidence_workspace.schemas import EvidenceDossier, ResearchRequest
 
     def parse_date(value):
         return date.fromisoformat(value) if value else None
@@ -1229,6 +1456,9 @@ def cmd_workspace(args):
         return _exit_from_result(result, context="Evidence workspace")
 
     dossier = result.data
+    if not isinstance(dossier, EvidenceDossier):
+        logger.error("Evidence workspace returned unexpected result type")
+        return 1
     if args.json_path:
         Path(args.json_path).write_text(dossier_to_json(dossier), encoding="utf-8")
     if args.html_path:
@@ -1241,6 +1471,251 @@ def cmd_workspace(args):
     )
     for warning in dossier.warnings:
         logger.info(f"Warning: {warning}")
+    return 0
+
+
+def cmd_biomed(args: Any) -> int:
+    """Manage the canonical biomedical knowledge store."""
+    action = getattr(args, "biomed_action", None)
+    if action == "init":
+        return cmd_biomed_init(args)
+    if action == "import":
+        return cmd_biomed_import(args)
+    if action == "snapshots":
+        return cmd_biomed_snapshots(args)
+    if action == "migrate":
+        return cmd_biomed_migrate(args)
+    if action == "compare":
+        return cmd_biomed_compare(args)
+    logger.error("Unknown biomed action: %s", action)
+    return 1
+
+
+def _biomed_repository(args: Any) -> Any:
+    from med_research.biomed.repository import BiomedicalRepository
+    from med_research.web.config import BIOMEDICAL_DB_PATH
+
+    path = getattr(args, "db", None) or BIOMEDICAL_DB_PATH
+    repository = BiomedicalRepository(path)
+    repository.initialize()
+    return repository
+
+
+def cmd_biomed_init(args: Any) -> int:
+    """Create or migrate the biomedical SQLite store."""
+    from med_research.biomed.schema import SCHEMA_VERSION
+    from med_research.web.config import BIOMEDICAL_DB_PATH
+
+    path = args.db or BIOMEDICAL_DB_PATH
+    _biomed_repository(args)
+    resolved = path.resolve()
+    message = f"Biomedical store initialized at {resolved} (schema version {SCHEMA_VERSION})"
+    print(message)
+    logger.info(message)
+    return 0
+
+
+def cmd_biomed_import(args: Any) -> int:
+    """Import a pinned ontology artifact into the biomedical store."""
+    from med_research.biomed.imports.hpo import HpoOntologyAdapter
+    from med_research.biomed.imports.hpoa import HpoAnnotationAdapter
+    from med_research.biomed.imports.mondo import MondoAdapter
+    from med_research.biomed.imports.service import ImportService
+    from med_research.biomed.models import ResourcePolicy
+
+    resource = args.biomed_import_resource
+    policies = {
+        "mondo": ResourcePolicy(
+            resource_name="mondo",
+            license_id="CC-BY-4.0",
+            license_url="https://creativecommons.org/licenses/by/4.0/",
+            redistribution_policy="redistributable",
+        ),
+        "hp": ResourcePolicy(
+            resource_name="hp",
+            license_id="custom",
+            license_url="https://hpo.jax.org/app/license",
+            redistribution_policy="user_supplied",
+        ),
+        "hpoa": ResourcePolicy(
+            resource_name="hpoa",
+            license_id="custom",
+            license_url="https://hpo.jax.org/app/license",
+            redistribution_policy="user_supplied",
+        ),
+    }
+    adapters: dict[str, Any] = {
+        "mondo": MondoAdapter(),
+        "hp": HpoOntologyAdapter(),
+        "hpoa": HpoAnnotationAdapter(),
+    }
+    repository = _biomed_repository(args)
+    adapter = adapters[resource]
+    policy = policies[resource]
+    parse_kwargs: dict[str, Any] = {}
+    if resource == "hpoa":
+        mondo_snapshot = repository.get_active_snapshot("mondo")
+        mondo_mappings: dict[str, str] = {}
+        if mondo_snapshot is not None:
+            with repository.database.connect() as connection:
+                rows = connection.execute(
+                    """
+                    SELECT subject_curie, object_curie FROM entity_mappings
+                    WHERE snapshot_id = ? AND relation = 'exact'
+                    """,
+                    (str(mondo_snapshot.id),),
+                ).fetchall()
+                mondo_mappings = {row["object_curie"]: row["subject_curie"] for row in rows}
+        parse_kwargs["mondo_mappings"] = mondo_mappings
+    if resource in {"mondo", "hp"}:
+        parse_kwargs["slim"] = args.slim
+    bundle = adapter.parse(args.artifact, policy, **parse_kwargs)
+    report = ImportService(repository).import_bundle(bundle, activate=args.activate)
+    counts = report.counts
+    message = (
+        f"Imported {resource} snapshot {report.snapshot_id} "
+        f"(checksum {bundle.snapshot.checksum}, "
+        f"{counts.entity_revisions} revisions, {counts.claims} claims, "
+        f"{counts.mappings} mappings, {len(report.warnings)} warnings)"
+    )
+    print(message)
+    for warning in report.warnings:
+        print(f"  warning [{warning.code}]: {warning.message}")
+    if resource == "mondo":
+        for entity in bundle.entities:
+            if entity.primary_curie == "MONDO:0007915":
+                print(f"  condition: {entity.primary_curie}")
+    logger.info(message)
+    return 0
+
+
+def cmd_biomed_migrate(args: Any) -> int:
+    """Migrate curated legacy disease projections into the canonical store."""
+    import json
+
+    from med_research.biomed.errors import BiomedicalValidationError
+    from med_research.biomed.imports.service import ImportService
+    from med_research.biomed.legacy.adapter import LegacyMigrationAdapter
+    from med_research.biomed.legacy.manifest import legacy_disease_ids
+    from med_research.biomed.legacy.report import build_parity_report
+
+    target = getattr(args, "biomed_migrate_target", None)
+    if target != "legacy":
+        logger.error("Unknown migrate target: %s", target)
+        return 1
+
+    repository = _biomed_repository(args)
+    if repository.get_active_snapshot("mondo") is None:
+        logger.error(
+            "Legacy migration requires an active Mondo snapshot. "
+            "Import Mondo first: python -m med_research.cli biomed import mondo --artifact <path>"
+        )
+        return 1
+
+    disease_ids = args.biomed_migrate_diseases or legacy_disease_ids()
+    try:
+        adapter = LegacyMigrationAdapter()
+        bundle = adapter.build_bundle(disease_ids)
+        report = ImportService(repository).import_bundle(bundle, activate=args.activate)
+    except BiomedicalValidationError as exc:
+        logger.error("Legacy migration failed: %s", exc)
+        return 1
+
+    parity_reports = [build_parity_report(disease_id) for disease_id in disease_ids]
+    summary = {
+        "resource_name": bundle.snapshot.resource_name,
+        "snapshot_id": str(report.snapshot_id),
+        "checksum": bundle.snapshot.checksum,
+        "diseases": [item.to_dict() for item in parity_reports],
+    }
+    message = (
+        f"Migrated legacy-curated snapshot {report.snapshot_id} "
+        f"({len(disease_ids)} diseases, {report.counts.claims} claims, "
+        f"{report.counts.entities} entities, {len(report.warnings)} warnings)"
+    )
+    print(message)
+    for parity in parity_reports:
+        print(
+            f"  {parity.disease_id}: relationships "
+            f"{parity.relationships.imported_count}/{parity.relationships.source_count}, "
+            f"exceptions {len(parity.exceptions)}"
+        )
+    for warning in report.warnings:
+        print(f"  warning [{warning.code}]: {warning.message}")
+
+    if args.report:
+        args.report.parent.mkdir(parents=True, exist_ok=True)
+        args.report.write_text(json.dumps(summary, indent=2), encoding="utf-8")
+        print(f"Parity report written to {args.report.resolve()}")
+
+    logger.info(message)
+    return 0
+
+
+def cmd_biomed_compare(args: Any) -> int:
+    """Compare two conditions and persist a research run."""
+    from med_research.biomed.comparison.models import SimilarityConfig
+    from med_research.biomed.comparison.service import ConditionComparisonService
+    from med_research.biomed.errors import BiomedicalValidationError
+
+    try:
+        config = SimilarityConfig(
+            phenotype_weight=args.phenotype_weight,
+            gene_weight=args.gene_weight,
+            pathway_weight=args.pathway_weight,
+            intervention_weight=args.intervention_weight,
+            biomarker_weight=args.biomarker_weight,
+        )
+    except ValueError as exc:
+        logger.error("%s", exc)
+        return 1
+
+    repository = _biomed_repository(args)
+    try:
+        result = ConditionComparisonService(repository).compare(args.left, args.right, config)
+    except BiomedicalValidationError as exc:
+        logger.error("%s", exc)
+        return 1
+
+    print(f"run_id={result.run_id}")
+    print(f"status={result.status}")
+    if result.overall_score is not None:
+        print(f"overall_score={result.overall_score:.4f}")
+    else:
+        print("overall_score=insufficient_data")
+    print(f"left_curie={result.left_curie}")
+    print(f"right_curie={result.right_curie}")
+    return 0
+
+
+def cmd_biomed_snapshots(args: Any) -> int:
+    """List imported biomedical resource snapshots."""
+    action = getattr(args, "biomed_snapshots_action", None)
+    if action != "list":
+        logger.error("Unknown snapshots action: %s", action)
+        return 1
+    repository = _biomed_repository(args)
+    with repository.database.connect() as connection:
+        params: list[Any] = []
+        where = ""
+        if getattr(args, "resource", None):
+            where = "WHERE resource_name = ?"
+            params.append(args.resource)
+        rows = connection.execute(
+            f"""
+            SELECT s.resource_name, s.version, s.checksum, s.id,
+                   CASE WHEN a.snapshot_id IS NOT NULL THEN 1 ELSE 0 END AS active
+            FROM resource_snapshots s
+            LEFT JOIN active_snapshots a
+              ON a.resource_name = s.resource_name AND a.snapshot_id = s.id
+            {where}
+            ORDER BY s.resource_name, s.version
+            """,
+            params,
+        ).fetchall()
+    for row in rows:
+        active = "active" if row["active"] else "inactive"
+        print(f"{row['resource_name']}\t{row['version']}\t{row['checksum']}\t{active}")
     return 0
 
 
@@ -1415,7 +1890,7 @@ def _warn_config_gaps(disease: Disease) -> bool:
     try:
         gaps = {f: s for f, s in disease.validate().items() if s != "ok"}
         name = disease.profile.name
-    except Exception as e:  # noqa: BLE001 — a corrupt module must not crash startup
+    except (OSError, ValueError, KeyError, TypeError, AttributeError) as e:
         logger = get_logger(__name__)
         logger.warning("⚠️  %s could not be validated: %s", disease.disease_id, e)
         return True
@@ -1424,7 +1899,7 @@ def _warn_config_gaps(disease: Disease) -> bool:
     logger = get_logger(__name__)
     impacts = {
         "CAR_T_SCORES": "CAR-T predictor will silently score every gene 0",
-        "DRUG_INDUCED_LUPUS_RISK": "drug-safety assessment will silently treat all drugs as zero-risk",
+        "DRUG_SAFETY_RISK": "drug-safety assessment will silently treat all drugs as zero-risk",
         "SYMPTOMS": "disease symptom list is empty",
         "PUBMED_QUERIES": "disease-specific literature queries are empty",
     }
@@ -1569,7 +2044,7 @@ def cmd_run_all(args):
                         errors += _run_all_module(sub_id, args)
                 else:
                     errors += _run_all_module(module_id, args)
-            except Exception as e:
+            except (RuntimeError, OSError, ValueError, KeyError, TypeError) as e:
                 errors += 1
                 logger.error("  %s", e)
             rate_limited_sleep(0.3)
@@ -1678,6 +2153,85 @@ def cmd_test(args):
     return subprocess.run(cmd).returncode
 
 
+def cmd_live(args):
+    """Query live external biomedical APIs (Open Targets, GTEx, ChEMBL, UniProt, bioRxiv)."""
+    target = args.target.upper()
+    disease = args.disease.lower()
+    source = args.source.lower()
+
+    msg = f"==================================================\nLive External Database Query: Target={target}, Disease={disease}, Source={source}\n=================================================="
+    logger.info(msg)
+    print(msg)
+
+    if source in ("all", "opentargets"):
+        try:
+            from med_research.pipeline.external import OpenTargetsClient
+            ot_client = OpenTargetsClient()
+            target_info = ot_client.get_target_details(target)
+            print(f"\n[Open Targets] Target Info: {target_info}")
+            if "ensembl_id" in target_info and target_info["ensembl_id"]:
+                from med_research.pipeline.external.opentargets import DISEASE_EFO_MAP
+                efo = DISEASE_EFO_MAP.get(disease, disease)
+                ev = ot_client.get_target_disease_evidence(target_info["ensembl_id"], efo)
+                print(f"[Open Targets] Association Score ({disease.upper()}): {ev.get('overall_score', 0.0):.3f}")
+        except Exception as err:
+            logger.warning("[Open Targets] Failed: %s", err)
+            print(f"[Open Targets] Failed: {err}")
+
+    if source in ("all", "gtex"):
+        try:
+            from med_research.pipeline.external import GTExClient
+            gtex_client = GTExClient()
+            exp = gtex_client.get_median_tissue_expression(target)
+            print("\n[GTEx] Top 3 Median Expression Tissues:")
+            for item in exp[:3]:
+                print(f"  - {item['tissue_name']}: {item['median_tpm']:.2f} TPM")
+        except Exception as err:
+            logger.warning("[GTEx] Failed: %s", err)
+            print(f"[GTEx] Failed: {err}")
+
+    if source in ("all", "chembl"):
+        try:
+            from med_research.pipeline.external import ChEMBLClient
+            chembl = ChEMBLClient()
+            t_res = chembl.search_target(target)
+            if t_res:
+                print(f"\n[ChEMBL] Target ID: {t_res.get('target_chembl_id')} ({t_res.get('pref_name')})")
+                acts = chembl.get_target_bioactivities(t_res.get("target_chembl_id"), limit=3)
+                print("[ChEMBL] Top Bioactivities:")
+                for a in acts:
+                    print(f"  - Molecule {a.get('molecule_chembl_id')}: {a.get('activity_type')} = {a.get('value')} {a.get('units')}")
+        except Exception as err:
+            logger.warning("[ChEMBL] Failed: %s", err)
+            print(f"[ChEMBL] Failed: {err}")
+
+    if source in ("all", "uniprot"):
+        try:
+            from med_research.pipeline.external import UniProtClient
+            uniprot = UniProtClient()
+            prot = uniprot.get_protein_by_gene(target)
+            if prot:
+                print(f"\n[UniProt] Accession: {prot.get('accession')}, Length: {prot.get('sequence_length')} AA")
+                print(f"[UniProt] Domains: {', '.join(prot.get('domains', []))}")
+        except Exception as err:
+            logger.warning("[UniProt] Failed: %s", err)
+            print(f"[UniProt] Failed: {err}")
+
+    if source in ("all", "biorxiv"):
+        try:
+            from med_research.pipeline.external import BioRxivClient
+            biorxiv = BioRxivClient()
+            preprints = biorxiv.search_preprints_by_keyword(target, limit=2)
+            print("\n[bioRxiv/medRxiv] Recent Preprints:")
+            for p in preprints:
+                print(f"  - {p.get('title')} (DOI: {p.get('doi')})")
+        except Exception as err:
+            logger.warning("[bioRxiv] Failed: %s", err)
+            print(f"[bioRxiv] Failed: {err}")
+
+    return 0
+
+
 def main():
     # Emoji/unicode output on Windows consoles (matches gwas.py/builder.py)
     if sys.platform == "win32":
@@ -1720,6 +2274,7 @@ def main():
         "biomarker": cmd_biomarker,
         "workspace": cmd_workspace,
         "workspace-migrate": cmd_workspace_migrate,
+        "biomed": cmd_biomed,
         "semantic": cmd_semantic,
         "evidence": cmd_evidence,
         "extractor": cmd_extractor,
@@ -1729,6 +2284,7 @@ def main():
         "serve": cmd_serve,
         "test": cmd_test,
         "cache": cmd_cache,
+        "live": cmd_live,
     }
 
     handler = handlers.get(args.command)

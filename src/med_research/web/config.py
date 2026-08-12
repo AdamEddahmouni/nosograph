@@ -4,6 +4,7 @@ import os
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).parent.parent
+REPO_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 
 # ── Server ────────────────────────────────────────────────────────────────
 HOST = os.environ.get("HOST", "0.0.0.0")
@@ -138,6 +139,13 @@ API_TAGS = [
             "Submit and track async analysis jobs with real-time WebSocket progress streaming."
         ),
     },
+    {
+        "name": "Universal Biomedical",
+        "description": (
+            "Versioned condition search, hierarchy, claims, and snapshot provenance "
+            "from the canonical biomedical store."
+        ),
+    },
 ]
 
 # ── Celery / Redis ────────────────────────────────────────────────────────
@@ -176,8 +184,13 @@ USE_CACHE = os.environ.get("USE_CACHE", "true").lower() == "true"
 # ── Workspace run history ──────────────────────────────────────────────────
 WORKSPACE_DB_PATH = Path(
     os.environ.get(
-        "WORKSPACE_DB_PATH", str(PROJECT_ROOT.parent / "data" / "evidence_workspace.sqlite3")
+        "WORKSPACE_DB_PATH", str(REPO_ROOT / "data" / "evidence_workspace.sqlite3")
     )
+)
+
+# ── Biomedical canonical store ─────────────────────────────────────────────
+BIOMEDICAL_DB_PATH = Path(
+    os.environ.get("BIOMEDICAL_DB_PATH", str(REPO_ROOT / "data" / "biomedical.sqlite3"))
 )
 
 # ── Module Data Paths ─────────────────────────────────────────────────────
