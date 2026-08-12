@@ -17,8 +17,10 @@ from med_research.web.routers.kg import router as kg_router
 from med_research.web.routers.monitor import router as monitor_router
 from med_research.web.routers.repurpose import router as repurpose_router
 from med_research.web.routers.semantic import router as semantic_router
+from med_research.web.routers.stream import router as stream_router
 from med_research.web.routers.synergy import router as synergy_router
 from med_research.web.routers.system import router as system_router
+from med_research.web.routers.universal import router as universal_router
 from med_research.web.routers.workspace import router as workspace_router
 
 routers = [
@@ -48,4 +50,6 @@ routers = [
     system_router,
     workspace_router,
     jobs_router,
+    stream_router,
+    universal_router,
 ]
