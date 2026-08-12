@@ -8,14 +8,13 @@ version = "2.0.0"
 description = "Multi-disease computational drug discovery and research platform"
 readme = "README.md"
 license = {text = "MIT"}
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 authors = [
     {name = "Medical Research Platform"}
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Science/Research",
-    "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Topic :: Scientific/Engineering :: Bio-Informatics",
@@ -32,6 +31,8 @@ dependencies = [
     "Jinja2>=3.1",
     "redis>=5.0",
     "requests>=2.31",
+    "duckdb>=1.0",
+    "orjson>=3.9",
     "scikit-learn>=1.4",
     "uvicorn>=0.27",
     "websockets>=12.0",
@@ -72,7 +73,7 @@ med_research = [
 ]
 
 [tool.ruff]
-target-version = "py310"
+target-version = "py311"
 line-length = 100
 
 [tool.ruff.lint]
@@ -99,13 +100,13 @@ python_functions = ["test_*"]
 addopts = "-v --tb=short --color=auto"
 markers = [
     "slow: marks tests as slow (deselect with '-m \"not slow\"')",
-    "unit: auto-applied to non-slow, non-integration tests (see tests/conftest.py)",
+    "unit: fast offline tests (explicit on test modules; auto-applied fallback in tests/conftest.py)",
     "integration: auto-applied under tests/integration/ (see tests/integration/conftest.py)",
     "network: requires live external APIs (excluded from the PR docking check)",
 ]
 
 [tool.mypy]
-python_version = "3.10"
+python_version = "3.11"
 warn_return_any = true
 warn_unused_ignores = true
 ignore_missing_imports = true

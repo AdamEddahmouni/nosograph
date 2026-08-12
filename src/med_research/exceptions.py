@@ -161,11 +161,7 @@ def retry_with_backoff(
             err = classify_api_error(exc, source)
 
         if isinstance(err, (APITimeoutError, APIQuotaError)) and attempt < max_attempts - 1:
-            retry_after = (
-                err.retry_after_seconds
-                if isinstance(err, APIQuotaError)
-                else None
-            )
+            retry_after = err.retry_after_seconds if isinstance(err, APIQuotaError) else None
             logger.info(
                 "Retrying %s after %s (attempt %d/%d)",
                 label,

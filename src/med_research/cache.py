@@ -64,6 +64,7 @@ def write_json_atomic(
         with contextlib.suppress(OSError):
             os.unlink(tmp_name)
 
+
 # Namespace convention: one namespace per pipeline module_id
 NS_GWAS = "gwas"
 NS_PPI = "ppi"
@@ -134,9 +135,7 @@ class CacheManager:
             return None
 
         if not isinstance(entry, dict) or "timestamp" not in entry:
-            raise CacheCorruptionError(
-                f"Cache entry {cache_path} missing timestamp field"
-            )
+            raise CacheCorruptionError(f"Cache entry {cache_path} missing timestamp field")
 
         age = time.time() - entry["timestamp"]
         if age > ttl:
@@ -380,15 +379,15 @@ def _migrate_literature(cache: CacheManager, *, dry_run: bool = False) -> dict[s
             continue
         name = path.stem
         disease_id = "sle" if name == "pubmed_cache" else name.removeprefix("pubmed_cache_")
-        status = _migrate_entry(
-            cache, NS_LITERATURE_MINING, disease_id, legacy, dry_run=dry_run
-        )
+        status = _migrate_entry(cache, NS_LITERATURE_MINING, disease_id, legacy, dry_run=dry_run)
         counts["literature_mining"][status] = counts["literature_mining"].get(status, 0) + 1
         _count_result(counts, status)
     return counts
 
 
-def _migrate_clinical_trials(cache: CacheManager, *, dry_run: bool = False) -> dict[str, dict[str, int]]:
+def _migrate_clinical_trials(
+    cache: CacheManager, *, dry_run: bool = False
+) -> dict[str, dict[str, int]]:
     counts: dict[str, dict[str, int]] = {"clinical_trials": {}, "total": {}}
     if not _CLINICAL_TRIALS_DATA.exists():
         return counts
@@ -402,9 +401,7 @@ def _migrate_clinical_trials(cache: CacheManager, *, dry_run: bool = False) -> d
             continue
         disease_id, query_key = parts
         lookup_key = f"{disease_id}|||{query_key}"
-        status = _migrate_entry(
-            cache, NS_CLINICAL_TRIALS, lookup_key, legacy, dry_run=dry_run
-        )
+        status = _migrate_entry(cache, NS_CLINICAL_TRIALS, lookup_key, legacy, dry_run=dry_run)
         counts["clinical_trials"][status] = counts["clinical_trials"].get(status, 0) + 1
         _count_result(counts, status)
     return counts
@@ -445,7 +442,9 @@ def _migrate_geo(cache: CacheManager, *, dry_run: bool = False) -> dict[str, dic
     return counts
 
 
-def _merge_migration_counts(target: dict[str, dict[str, int]], source: dict[str, dict[str, int]]) -> None:
+def _merge_migration_counts(
+    target: dict[str, dict[str, int]], source: dict[str, dict[str, int]]
+) -> None:
     for namespace, statuses in source.items():
         if namespace not in target:
             target[namespace] = {}

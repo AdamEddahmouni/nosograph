@@ -36,6 +36,7 @@ Exit codes::
     1  stale references found (CI fails)
     2  script error (root missing, etc.)
 """
+
 from __future__ import annotations
 
 import argparse
@@ -69,7 +70,7 @@ class ImportAuditor:
         root = self.roots.get(top)
         if root is None:
             return None  # external module — not auditable
-        rel = module[len(top):].lstrip(".")
+        rel = module[len(top) :].lstrip(".")
         base = root / rel.replace(".", "/") if rel else root
         for candidate in (base.with_suffix(".py"), base / "__init__.py"):
             if candidate.is_file():
@@ -159,7 +160,10 @@ class ImportAuditor:
         branches) are traversed so guarded definitions are treated as valid.
         """
         for node in body:
-            if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef, ast.ClassDef)) and node.name == name:
+            if (
+                isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef, ast.ClassDef))
+                and node.name == name
+            ):
                 return ("def", name, node)
             if isinstance(node, (ast.Assign, ast.AnnAssign, ast.AugAssign)):
                 targets = node.targets if isinstance(node, ast.Assign) else [node.target]
@@ -178,7 +182,12 @@ class ImportAuditor:
                 if found:
                     return found
             if isinstance(node, (ast.Try, getattr(ast, "TryStar", ast.Try))):
-                branches = [node.body, node.orelse, node.finalbody, *[h.body for h in node.handlers]]
+                branches = [
+                    node.body,
+                    node.orelse,
+                    node.finalbody,
+                    *[h.body for h in node.handlers],
+                ]
                 for branch in branches:
                     found = cls.find_defining_node(branch, name)
                     if found:
@@ -273,11 +282,15 @@ class ImportAuditor:
         assert node.module is not None
         # For relative imports the leading dots are encoded in node.level, so
         # node.module is already the dot-free suffix.
-        target = self.resolve_relative(package, node.level, node.module) if node.level else node.module
+        target = (
+            self.resolve_relative(package, node.level, node.module) if node.level else node.module
+        )
         file = self.module_file(target)
         if file is None:
             if target.split(".", 1)[0] in self.roots:
-                self.errors.append(f"{self.display_path(path)}:{node.lineno}: stale import: module '{target}' does not exist")
+                self.errors.append(
+                    f"{self.display_path(path)}:{node.lineno}: stale import: module '{target}' does not exist"
+                )
             return  # external module — nothing more to verify
         for alias in node.names:
             if alias.name == "*":
@@ -298,8 +311,10 @@ class ImportAuditor:
             sub = f"{target}.{alias.name}"
             if self.module_file(sub) is not None:
                 continue
-            if target and target.split(".", 1)[0] in self.roots and not self.name_defined(
-                target, alias.name, frozenset()
+            if (
+                target
+                and target.split(".", 1)[0] in self.roots
+                and not self.name_defined(target, alias.name, frozenset())
             ):
                 self.errors.append(
                     f"{self.display_path(path)}:{node.lineno}: stale import: '{alias.name}' is neither a submodule of "
@@ -312,7 +327,9 @@ class ImportAuditor:
                 continue  # external module — exact top-level component match
             self.imports_checked += 1
             if self.module_file(alias.name) is None:
-                self.errors.append(f"{self.display_path(path)}:{node.lineno}: stale import: module '{alias.name}' does not exist")
+                self.errors.append(
+                    f"{self.display_path(path)}:{node.lineno}: stale import: module '{alias.name}' does not exist"
+                )
 
     def _print_report(self) -> None:
         if not self.errors:
@@ -341,7 +358,10 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
 
     if not (args.root / "src" / "med_research").is_dir():
-        print(f"error: '{args.root}' does not look like a repo root (no src/med_research)", file=sys.stderr)
+        print(
+            f"error: '{args.root}' does not look like a repo root (no src/med_research)",
+            file=sys.stderr,
+        )
         return 2
 
     return ImportAuditor(args.root, verbose=args.verbose).run()

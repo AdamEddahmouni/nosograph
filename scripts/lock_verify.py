@@ -82,10 +82,7 @@ def main() -> int:
     if args.compare_locks:
         divergences = compare_locks(args.lock, args.compare_locks)
         if divergences:
-            print(
-                f"lock files disagree on shared packages "
-                f"({args.lock} vs {args.compare_locks}):"
-            )
+            print(f"lock files disagree on shared packages ({args.lock} vs {args.compare_locks}):")
             print("\n".join(f"  {d}" for d in divergences))
             print(f"{len(divergences)} divergence(s)", file=sys.stderr)
             return 1

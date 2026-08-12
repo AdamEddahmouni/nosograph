@@ -4,10 +4,19 @@ The audit script is the safety net for stale v1->v2 imports, so it is itself
 tested: a clean mini-repo must pass, and a mini-repo with the failure modes
 the audit exists to catch (dead module, dead name, archived lazy import, dead
 re-export) must fail with exit code 1 and precise messages.
+
+Subprocess invocation is intentional here: ``check_imports.py`` is exercised as
+an isolated script entrypoint (mirroring CI ``make check-imports``), not via an
+in-process import, so exit codes and stdout/stderr match production usage.
 """
+
+
+
 import subprocess
 import sys
 from pathlib import Path
+
+import pytest
 
 SCRIPT = Path(__file__).resolve().parents[1] / "scripts" / "check_imports.py"
 
@@ -51,6 +60,10 @@ STALE_FILES = {
     ),
     "src/med_research/abs_reexport.py": "from med_research.pkg import missing_name\n",
 }
+
+pytestmark = pytest.mark.unit
+
+
 
 
 def build_repo(root: Path, files: dict[str, str]) -> None:

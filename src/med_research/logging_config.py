@@ -37,9 +37,7 @@ def setup_logging(
     if console:
         handler = logging.StreamHandler(sys.stdout)
         handler.setLevel(level)
-        handler.setFormatter(
-            _EmojiFormatter(_CONSOLE_FORMAT, datefmt=_DATE_FORMAT)
-        )
+        handler.setFormatter(_EmojiFormatter(_CONSOLE_FORMAT, datefmt=_DATE_FORMAT))
         root.addHandler(handler)
 
     if log_file:
@@ -47,9 +45,7 @@ def setup_logging(
         log_file.parent.mkdir(parents=True, exist_ok=True)
         handler = logging.FileHandler(log_file, encoding="utf-8")
         handler.setLevel(logging.DEBUG)
-        handler.setFormatter(
-            logging.Formatter(_FILE_FORMAT, datefmt="%Y-%m-%d %H:%M:%S")
-        )
+        handler.setFormatter(logging.Formatter(_FILE_FORMAT, datefmt="%Y-%m-%d %H:%M:%S"))
         root.addHandler(handler)
 
 

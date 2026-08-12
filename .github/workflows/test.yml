@@ -70,6 +70,12 @@ jobs:
 
 
 
+      - name: Run ruff format check
+
+        run: ruff format --check src tests
+
+
+
       - name: Typecheck expanded modules
 
         run: make typecheck

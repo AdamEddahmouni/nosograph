@@ -37,7 +37,7 @@ def exponential_backoff(
     Returns:
         Seconds to sleep before next retry.
     """
-    delay = min(base_seconds * (backoff_factor ** attempt), max_seconds)
+    delay = min(base_seconds * (backoff_factor**attempt), max_seconds)
     min_sleep = delay * (1 - jitter)
     max_sleep = delay * (1 + jitter)
     return random.uniform(min_sleep, max_sleep)
