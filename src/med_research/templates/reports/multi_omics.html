@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Omics & Single-Cell Resolution Report</title>
+    <style>
+        body { font-family: 'Inter', system-ui, sans-serif; background: #0a0a1a; color: #e2e8f0; padding: 24px; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .hero { text-align: center; padding: 40px; background: linear-gradient(135deg, rgba(147,51,234,0.2), rgba(59,130,246,0.15)); border-radius: 16px; margin-bottom: 32px; }
+        .hero h1 { font-size: 2rem; margin-bottom: 8px; color: #f8fafc; }
+        .hero p { color: #94a3b8; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 32px; }
+        .stat-card { background: rgba(30,30,50,0.8); border: 1px solid rgba(100,100,150,0.2); border-radius: 12px; padding: 20px; text-align: center; }
+        .stat-val { font-size: 1.8rem; font-weight: 800; color: #38bdf8; }
+        .stat-lbl { font-size: 0.85rem; color: #94a3b8; margin-top: 4px; }
+        table { width: 100%; border-collapse: collapse; background: rgba(30,30,50,0.6); border-radius: 12px; overflow: hidden; margin-top: 16px; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid rgba(100,100,150,0.15); }
+        th { background: rgba(50,50,70,0.8); color: #94a3b8; font-size: 0.8rem; text-transform: uppercase; }
+        .tier-high { color: #4ade80; font-weight: 700; }
+        .tier-mod { color: #facc15; }
+        .tier-low { color: #f87171; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>Multi-Omics & Single-Cell Resolution Report</h1>
+            <p>Target Prioritization by scRNA Cell-Type Deconvolution, GWAS Risk, & Bulk Expression</p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-val">{{ results.total_genes }}</div>
+                <div class="stat-lbl">Genes Evaluated</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val">{{ results.top_target }}</div>
+                <div class="stat-lbl">Top Priority Target</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val">{{ results.cell_types_analyzed | length }}</div>
+                <div class="stat-lbl">Cell Subsets Profiled</div>
+            </div>
+        </div>
+
+        <h2>Prioritized Multi-Omics Targets</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Gene</th>
+                    <th>Dominant Cell Type</th>
+                    <th>scRNA Enrichment</th>
+                    <th>GWAS Risk Weight</th>
+                    <th>Bulk Concordance</th>
+                    <th>Composite Score</th>
+                    <th>Priority Tier</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in results.targets %}
+                <tr>
+                    <td><strong>{{ item.gene_id }}</strong> ({{ item.gene_name }})</td>
+                    <td>{{ item.dominant_cell_type }}</td>
+                    <td>{{ item.scrna_enrichment }}</td>
+                    <td>{{ item.gwas_risk_weight }}</td>
+                    <td>{{ item.bulk_concordance }}</td>
+                    <td><strong>{{ item.composite_score }}</strong></td>
+                    <td class="{% if 'Tier 1' in item.tier %}tier-high{% elif 'Tier 2' in item.tier %}tier-mod{% else %}tier-low{% endif %}">{{ item.tier }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMET Radar Safety & Toxicity Report</title>
+    <style>
+        body { font-family: 'Inter', system-ui, sans-serif; background: #0a0a1a; color: #e2e8f0; padding: 24px; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .hero { text-align: center; padding: 40px; background: linear-gradient(135deg, rgba(239,68,68,0.2), rgba(245,158,11,0.15)); border-radius: 16px; margin-bottom: 32px; }
+        .hero h1 { font-size: 2rem; margin-bottom: 8px; color: #f8fafc; }
+        .hero p { color: #94a3b8; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 32px; }
+        .stat-card { background: rgba(30,30,50,0.8); border: 1px solid rgba(100,100,150,0.2); border-radius: 12px; padding: 20px; text-align: center; }
+        .stat-val { font-size: 1.8rem; font-weight: 800; color: #f59e0b; }
+        .stat-lbl { font-size: 0.85rem; color: #94a3b8; margin-top: 4px; }
+        table { width: 100%; border-collapse: collapse; background: rgba(30,30,50,0.6); border-radius: 12px; overflow: hidden; margin-top: 16px; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid rgba(100,100,150,0.15); }
+        th { background: rgba(50,50,70,0.8); color: #94a3b8; font-size: 0.8rem; text-transform: uppercase; }
+        .tier-high { color: #4ade80; font-weight: 700; }
+        .tier-mod { color: #facc15; }
+        .tier-low { color: #f87171; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>ADMET Radar Safety & Toxicity Report</h1>
+            <p>hERG Cardiotoxicity, BBB Penetration, CYP450 Inhibition, & Lipinski Rule Compliance</p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-val">{{ results.total_drugs }}</div>
+                <div class="stat-lbl">Therapeutic Drugs Evaluated</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val">{{ results.safe_candidate_count }}</div>
+                <div class="stat-lbl">Favorable ADMET Profiles</div>
+            </div>
+        </div>
+
+        <h2>Candidate ADMET Profiles</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Drug</th>
+                    <th>hERG Risk</th>
+                    <th>BBB Permeability</th>
+                    <th>CYP Inhibition</th>
+                    <th>Lipinski Violations</th>
+                    <th>Safety Score</th>
+                    <th>Profile Tier</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in results.profiles %}
+                <tr>
+                    <td><strong>{{ item.drug_id }}</strong> ({{ item.drug_name }})</td>
+                    <td>{{ item.herg_inhibition_risk }}</td>
+                    <td>{{ item.bbb_permeability }}</td>
+                    <td>{{ item.cyp_inhibition_profile | join(', ') if item.cyp_inhibition_profile else 'None' }}</td>
+                    <td>{{ item.lipinski_violations }}</td>
+                    <td><strong>{{ item.composite_safety_score }}</strong></td>
+                    <td class="{% if 'Favorable' in item.tier %}tier-high{% elif 'Acceptable' in item.tier %}tier-mod{% else %}tier-low{% endif %}">{{ item.tier }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

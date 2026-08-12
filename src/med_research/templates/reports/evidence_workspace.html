@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Evidence Dossier — {{ question }}</title>
+    <style>
+        body{font-family:system-ui,sans-serif;max-width:1200px;margin:2rem auto;padding:0 1rem;color:#172033;line-height:1.5}
+        h1{margin-bottom:.25rem} h2{margin-top:2rem;border-bottom:2px solid #dbe4f0;padding-bottom:.35rem}
+        .meta,.notice{background:#f4f7fb;border:1px solid #dbe4f0;border-radius:8px;padding:1rem}
+        .notice{background:#fff8e6;border-color:#edc96b} table{width:100%;border-collapse:collapse;font-size:.92rem}
+        th,td{border:1px solid #dbe4f0;padding:.55rem;text-align:left;vertical-align:top} th{background:#edf3fa}
+        code{font-size:.8em;color:#52647a} a{color:#0b5cad} @media print{body{margin:0} .no-print{display:none}}
+    </style>
+</head>
+<body>
+    <h1>Evidence-to-Hypothesis Workspace</h1>
+    <p><strong>Research question:</strong> {{ question }}</p>
+    <div class="meta">
+        <strong>Run:</strong> {{ run_id }}<br>
+        <strong>Disease:</strong> {{ disease_id }}<br>
+        <strong>Sources:</strong> {{ sources }}<br>
+        <strong>Evidence records:</strong> {{ evidence_count }}<br>
+        <strong>Claims:</strong> {{ claim_count }}
+    </div>
+    <div class="notice"><strong>Research-only notice:</strong> {{ disclaimer }}</div>
+    <h2>Drug prioritization</h2>{{ drug_ranking_rows|safe }}
+    <h2>Target prioritization</h2>{{ target_ranking_rows|safe }}
+    <h2>Evidence and citations</h2>
+    <table>
+        <tr><th>Source</th><th>ID</th><th>Title</th><th>Snippet</th><th>Evidence quality</th></tr>
+        {{ evidence_rows|safe }}
+    </table>
+    <h2>Quality methodology</h2>
+    <p>Quality tiers are transparent heuristics, not formal risk-of-bias assessments: Tier 1 prioritizes regulatory labels and randomized or late-phase trials; Tier 2 covers GWAS and observational evidence; Tier 3 covers other peer-reviewed evidence; Tier 4 flags non-peer-reviewed preprints. Inspect the cited study before drawing conclusions.</p>
+    <h2>Claims and confidence</h2>
+    <table>
+        <tr><th>Subject</th><th>Relationship</th><th>Claim</th><th>Confidence</th><th>Evidence IDs</th></tr>
+        {{ claim_rows|safe }}
+    </table>
+    <h2>Knowledge-graph explanations</h2>
+    <table>
+        <tr><th>Candidate</th><th>Status</th><th>Path or reason</th></tr>
+        {{ graph_rows|safe }}
+    </table>
+    <h2>Warnings and limitations</h2>
+    <ul>{{ warning_items|safe }}</ul>
+    <ul>{{ limitation_items|safe }}</ul>
+    <footer><p>{{ disclaimer }}</p></footer>
+</body>
+</html>

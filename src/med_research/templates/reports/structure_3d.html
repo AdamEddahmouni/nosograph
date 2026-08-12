@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Structural Target Docking Report</title>
+    <style>
+        body { font-family: 'Inter', system-ui, sans-serif; background: #0a0a1a; color: #e2e8f0; padding: 24px; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .hero { text-align: center; padding: 40px; background: linear-gradient(135deg, rgba(59,130,246,0.2), rgba(16,185,129,0.15)); border-radius: 16px; margin-bottom: 32px; }
+        .hero h1 { font-size: 2rem; margin-bottom: 8px; color: #f8fafc; }
+        .hero p { color: #94a3b8; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 32px; }
+        .stat-card { background: rgba(30,30,50,0.8); border: 1px solid rgba(100,100,150,0.2); border-radius: 12px; padding: 20px; text-align: center; }
+        .stat-val { font-size: 1.8rem; font-weight: 800; color: #34d399; }
+        .stat-lbl { font-size: 0.85rem; color: #94a3b8; margin-top: 4px; }
+        table { width: 100%; border-collapse: collapse; background: rgba(30,30,50,0.6); border-radius: 12px; overflow: hidden; margin-top: 16px; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid rgba(100,100,150,0.15); }
+        th { background: rgba(50,50,70,0.8); color: #94a3b8; font-size: 0.8rem; text-transform: uppercase; }
+        .plddt-high { color: #4ade80; font-weight: 700; }
+        .plddt-mod { color: #facc15; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>3D Structural Target Docking Report</h1>
+            <p>AlphaFold pLDDT Structural Confidence & Binding Pocket Volume Evaluation</p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-val">{{ results.total_structures }}</div>
+                <div class="stat-lbl">Target Structures Evaluated</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val">{{ results.high_confidence_count }}</div>
+                <div class="stat-lbl">High Confidence (pLDDT >= 80)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val">{{ results.mean_plddt }}</div>
+                <div class="stat-lbl">Mean pLDDT Score</div>
+            </div>
+        </div>
+
+        <h2>Structural Target Metrics</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Gene</th>
+                    <th>AlphaFold ID</th>
+                    <th>pLDDT Score</th>
+                    <th>Category</th>
+                    <th>Active Site Residues</th>
+                    <th>Pocket Volume (Å³)</th>
+                    <th>Docking Readiness</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in results.structures %}
+                <tr>
+                    <td><strong>{{ item.gene_id }}</strong> ({{ item.gene_name }})</td>
+                    <td><code>{{ item.pdb_id }}</code></td>
+                    <td class="{% if item.plddt_score >= 80 %}plddt-high{% else %}plddt-mod{% endif %}"><strong>{{ item.plddt_score }}</strong></td>
+                    <td>{{ item.confidence_category }}</td>
+                    <td>{{ item.active_site_residues | join(', ') }}</td>
+                    <td>{{ item.pocket_volume_A3 }} Å³</td>
+                    <td><strong>{{ item.docking_readiness_score }}</strong></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
