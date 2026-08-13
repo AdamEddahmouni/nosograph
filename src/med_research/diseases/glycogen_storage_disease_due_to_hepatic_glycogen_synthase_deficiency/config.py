@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'metabolic disease (GLYCOGEN_STORAGE_DISEASE_DUE_TO_HEPATIC_GLY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of metabolic disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Seizure",
+    "Increased circulating lactate concentration",
+    "Autosomal recessive inheritance",
+    "Neonatal hypoglycemia",
+    "Postprandial hyperglycemia",
+    "Fasting hypoglycemia",
+    "Ketosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

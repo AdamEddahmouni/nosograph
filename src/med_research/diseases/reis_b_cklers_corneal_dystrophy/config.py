@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'corneal disease (REIS_B_CKLERS_CORNEAL_DYSTROPHY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of corneal disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Opacification of the corneal stroma",
+    "Corneal opacity",
+    "Strabismus",
+    "Corneal dystrophy",
+    "Infantile onset",
+    "Photophobia",
+    "Reduced visual acuity",
+    "Corneal erosion",
+    "Autosomal dominant inheritance",
+    "Palpebral edema",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

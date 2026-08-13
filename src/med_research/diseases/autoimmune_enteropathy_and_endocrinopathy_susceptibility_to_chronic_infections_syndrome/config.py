@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'genetic disorder (AUTOIMMUNE_ENTEROPATHY_AND_ENDOCRINOPATHY_SU
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of genetic disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Protein-losing enteropathy",
+    "Pulmonary nodule",
+    "Short stature",
+    "Autoimmune hemolytic anemia",
+    "Hepatomegaly",
+    "Severe Histoplasma capsulatum infection",
+    "Unusual fungal nail infection",
+    "Recurrent vulvovaginal candidiasis",
+    "Diabetes mellitus",
+    "Gastrointestinal eosinophilia",
+    "Recurrent infections",
+    "Childhood onset",
+    "Osteopenia",
+    "Impaired phytohemagglutinin-induced T lymphocyte transformation",
+    "Immune dysregulation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

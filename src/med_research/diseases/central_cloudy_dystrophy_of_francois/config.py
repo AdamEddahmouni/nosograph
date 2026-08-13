@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'corneal disease (CENTRAL_CLOUDY_DYSTROPHY_OF_FRANCOIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of corneal disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Corneal dystrophy",
+    "Central corneal dystrophy",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

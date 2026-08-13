@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'genetic disorder (CORTICAL_DYSPLASIA_FOCAL_EPILEPSY_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of genetic disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Bilateral tonic-clonic seizure",
+    "Epicanthus",
+    "Poor speech",
+    "Tented upper lip vermilion",
+    "Hearing impairment",
+    "Language impairment",
+    "Strabismus",
+    "Dystonia",
+    "Focal impaired awareness seizure",
+    "Seizure",
+    "Protruding tongue",
+    "Hypotonia",
+    "Short nose",
+    "Ataxia",
+    "Infantile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

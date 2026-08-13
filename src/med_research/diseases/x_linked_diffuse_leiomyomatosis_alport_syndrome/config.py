@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'kidney disease (X_LINKED_DIFFUSE_LEIOMYOMATOSIS_ALPORT_SYNDROM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of kidney disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Stage 5 chronic kidney disease",
+    "Hearing impairment",
+    "Renal insufficiency",
+    "Glomerular basement membrane lamellation",
+    "Abnormal renal physiology",
+    "Cataract",
+    "Failure to thrive",
+    "Late young adult onset",
+    "Constipation",
+    "Diffuse leiomyomatosis",
+    "Dysphagia",
+    "Juvenile onset",
+    "Nephropathy",
+    "Vomiting",
+    "Hematuria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

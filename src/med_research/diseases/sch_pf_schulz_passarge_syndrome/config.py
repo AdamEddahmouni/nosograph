@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'palmoplantar keratosis (SCH_PF_SCHULZ_PASSARGE_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of palmoplantar keratosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Poroma",
+    "Small nail",
+    "Squamous cell carcinoma",
+    "Bird-like facies",
+    "Basal cell carcinoma",
+    "Sparse body hair",
+    "Narrow nail",
+    "Apocrine hidrocystoma",
+    "Sparse hair",
+    "Multiple eyelid margin cysts",
+    "Thin nail",
+    "Dry skin",
+    "Ectodermal dysplasia",
+    "Ridged nail",
+    "Onycholysis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

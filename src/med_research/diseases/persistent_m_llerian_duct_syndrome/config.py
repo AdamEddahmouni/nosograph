@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'reproductive system disease (PERSISTENT_M_LLERIAN_DUCT_SYNDROM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of reproductive system disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital onset",
+    "Inguinal hernia",
+    "Male infertility",
+    "Autosomal recessive inheritance",
+    "Decreased circulating antimullerian hormone circulation",
+    "Bilateral cryptorchidism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

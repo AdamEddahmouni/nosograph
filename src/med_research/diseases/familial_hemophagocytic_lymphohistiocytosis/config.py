@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'lymphatic system disease (FAMILIAL_HEMOPHAGOCYTIC_LYMPHOHISTIO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lymphatic system disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypertriglyceridemia",
+    "Seizure",
+    "Global developmental delay",
+    "Hypotonia",
+    "Hepatomegaly",
+    "Infantile onset",
+    "Hypofibrinogenemia",
+    "Increased circulating ferritin concentration",
+    "Hemophagocytosis",
+    "Edema",
+    "Anemia",
+    "Childhood onset",
+    "Conjunctivitis",
+    "Autosomal recessive inheritance",
+    "Lymphadenopathy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'skeletal system disease (ACROMESOMELIC_DYSPLASIA_HUNTER_THOMSO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of skeletal system disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Fibular hypoplasia",
+    "Short foot",
+    "Hypoplasia of the ulna",
+    "Elbow dislocation",
+    "Acromesomelia",
+    "Distal femoral bowing",
+    "Severe short-limb dwarfism",
+    "Hip dislocation",
+    "Cuboidal metacarpal",
+    "Shortening of all middle phalanges of the fingers",
+    "Single transverse palmar crease",
+    "Shortening of all proximal phalanges of the fingers",
+    "Autosomal recessive inheritance",
+    "Abnormally shaped carpal bones",
+    "Radial bowing",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

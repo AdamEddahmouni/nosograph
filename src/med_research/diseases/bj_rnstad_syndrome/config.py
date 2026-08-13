@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'genetic disorder (BJ_RNSTAD_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of genetic disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Anhidrosis",
+    "Alopecia",
+    "Brittle hair",
+    "Sensorineural hearing impairment",
+    "Infantile onset",
+    "Autosomal recessive inheritance",
+    "Hair shafts flattened at irregular intervals and twisted through 180 degrees about their axes",
+    "Coarse hair",
+    "Hypogonadism",
+    "Intellectual disability",
+    "Dry hair",
+    "Pili torti",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

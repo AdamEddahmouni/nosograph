@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'urogenital neoplasm (AUTOSOMAL_RECESSIVE_FACIO_DIGITO_GENITAL_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of urogenital neoplasm
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short foot",
+    "Hearing impairment",
+    "Narrow palate",
+    "Anteverted nares",
+    "Deep philtrum",
+    "Inguinal hernia",
+    "Short nose",
+    "Microtia",
+    "Hypertelorism",
+    "Abnormal rib cage morphology",
+    "Proportionate short stature",
+    "Long palpebral fissure",
+    "High palate",
+    "Broad palm",
+    "Down-sloping shoulders",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

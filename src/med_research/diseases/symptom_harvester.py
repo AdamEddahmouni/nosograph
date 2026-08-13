@@ -7,7 +7,7 @@ import re
 from pathlib import Path
 from typing import Optional
 
-from med_research.diseases.bulk_store import OpenTargetsBulkStore
+from med_research.diseases.bulk_store import OpenTargetsBulkStore, _hpo_label_map
 from med_research.diseases.id_resolver import DiseaseIdResolver
 from med_research.diseases.scaffold import _diseases_root, load_disease_registry, sanitize_id
 from med_research.logging_config import get_logger
@@ -47,46 +47,31 @@ def _write_config_symptoms(config_path: Path, symptoms: list[str]) -> None:
 
 def _hpo_symptoms_from_biomed(mondo_id: str, limit: int = SYMPTOMS_MAX) -> list[str]:
     try:
-        from med_research.biomed.repository import BiomedicalRepository
         from med_research.web.config import BIOMEDICAL_DB_PATH
 
         if not BIOMEDICAL_DB_PATH.exists():
             return []
-        repo = BiomedicalRepository(BIOMEDICAL_DB_PATH)
-        repo.initialize()
-        hpo_snapshot = repo.get_active_snapshot("hp")
-        hpoa_snapshot = repo.get_active_snapshot("hpoa")
-        if hpoa_snapshot is None:
-            return []
+        import sqlite3
+
         labels: list[str] = []
-        with repo.database.connect() as conn:
+        with sqlite3.connect(BIOMEDICAL_DB_PATH) as conn:
+            conn.row_factory = sqlite3.Row
             rows = conn.execute(
                 """
-                SELECT c.object_curie, c.qualifiers
-                FROM claims c
-                WHERE c.snapshot_id = ? AND c.subject_curie = ?
-                  AND c.predicate = 'HAS_PHENOTYPE'
+                SELECT object_curie
+                FROM claims
+                WHERE subject_curie = ?
+                  AND predicate = 'HAS_PHENOTYPE'
                 LIMIT ?
                 """,
-                (str(hpoa_snapshot.id), mondo_id, limit * 3),
+                (mondo_id, limit * 3),
             ).fetchall()
-            hp_labels: dict[str, str] = {}
-            if hpo_snapshot is not None:
-                hp_rows = conn.execute(
-                    """
-                    SELECT e.primary_curie, er.label
-                    FROM entities e
-                    JOIN entity_revisions er ON er.entity_id = e.id AND er.snapshot_id = ?
-                    """,
-                    (str(hpo_snapshot.id),),
-                ).fetchall()
-                hp_labels = {r["primary_curie"]: r["label"] for r in hp_rows if r["label"]}
-
-            for row in rows:
-                hp_id = row["object_curie"]
-                label = hp_labels.get(hp_id, hp_id)
-                if label and label not in labels:
-                    labels.append(label)
+        hpo_labels = _hpo_label_map()
+        for row in rows:
+            hp_id = str(row["object_curie"]).replace(":", "_")
+            label = hpo_labels.get(hp_id, hp_id)
+            if label not in labels:
+                labels.append(label)
         return labels[:limit]
     except Exception as exc:
         logger.debug("Biomed HPO symptom harvest skipped: %s", exc)

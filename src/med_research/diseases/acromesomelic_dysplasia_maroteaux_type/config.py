@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'musculoskeletal system disease (ACROMESOMELIC_DYSPLASIA_MAROTE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of musculoskeletal system disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Flared metaphysis",
+    "Redundant skin on fingers",
+    "Broad phalanx",
+    "Limited elbow extension",
+    "Short nose",
+    "Broad metacarpals",
+    "Short metacarpal",
+    "Short metatarsal",
+    "Cone-shaped epiphyses of the phalanges of the hand",
+    "Prominent forehead",
+    "Lumbar hyperlordosis",
+    "Disproportionate short-limb short stature",
+    "Long hallux",
+    "Broad finger",
+    "Short phalanx of finger",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

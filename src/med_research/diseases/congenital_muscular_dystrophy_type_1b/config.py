@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'genetic disorder (CONGENITAL_MUSCULAR_DYSTROPHY_TYPE_1B)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of genetic disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Achilles tendon contracture",
+    "Elevated circulating creatine kinase activity",
+    "Generalized muscle hypertrophy",
+    "Facial palsy",
+    "Muscular dystrophy",
+    "Generalized hypotonia",
+    "Motor delay",
+    "Gowers sign",
+    "Pectoralis amyotrophy",
+    "Sternocleidomastoid amyotrophy",
+    "Diaphragmatic weakness",
+    "Autosomal recessive inheritance",
+    "Respiratory failure",
+    "Shoulder girdle muscle weakness",
+    "Spinal rigidity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -1,5 +1,29 @@
 # Changelog
 
+## [Full HPO/HPOA import and registry tooling fixes] — 2026-08-13
+
+### Added
+
+- **Full MONDO/HPO/HPOA import into the biomed store** — `scripts/setup_biomed_imports.py --full` replaced the fixture-only ontology snapshots with real data: 57,000 entities (20,413 HP terms with labels) and 168,754 `HAS_PHENOTYPE` claims. This unblocks the Condition Explorer / comparison / graph-analytics features against real ontologies.
+- **HPO-path symptom harvest** — `_hpo_symptoms_from_biomed` was rewritten against the real `claims` schema (it previously queried a non-existent `snapshot_id` column and silently returned nothing). Symptom labels now resolve through the cached HPO label map; the harvest filled **142 more scaffolded modules**, bringing populated `SYMPTOMS` configs to 3,824.
+
+### Changed
+
+- `disease list` no longer runs full config validation on all 10,405 modules by default — it lists ids in ~1.5s instead of ~98s. The old rich behavior (names, descriptions, gap report) is preserved behind `disease list --validate`.
+- `pip-tools` bumped to `>=7.6.1`; both lock files regenerated with pip-compile 7.6.1 so `make lock` / `make lock-check` work again with pip 26 (7.6.0 crashed on the removed `pip._internal.utils.compat.stdlib_pkgs`).
+
+### Fixed
+
+- `test_restore_legacy_backup_reattaches_pathway_by_keyword` now scaffolds deterministically offline (monkeypatched `_collect_sources`), instead of depending on bulk data for `EFO_0001370` which is absent from the local OT subset. All 61 `test_disease_scaffold.py` tests pass.
+
+### Verification
+
+- `python -m pytest tests/test_disease_scaffold.py -q` — 61 passed
+- `python -m pytest tests/test_bulk_store.py tests/test_symptom_harvester.py tests/test_disease_registry_validation.py -q` — 11 passed
+- Registry scan: 3,824 populated `SYMPTOMS`, 0 corrupted blocks, 0 obsolete HPO terms.
+
+---
+
 ## [Registry-wide symptom curation] — 2026-08-13
 
 ### Added

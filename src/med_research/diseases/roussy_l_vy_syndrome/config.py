@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'genetic disorder (ROUSSY_L_VY_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of genetic disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyporeflexia",
+    "Kyphoscoliosis",
+    "Action tremor",
+    "Juvenile onset",
+    "Decreased motor nerve conduction velocity",
+    "Pes cavus",
+    "Distal amyotrophy",
+    "Gait ataxia",
+    "Onion bulb formation",
+    "Areflexia",
+    "Distal muscle weakness",
+    "Hypertrophic nerve changes",
+    "Segmental peripheral demyelination/remyelination",
+    "Motor delay",
+    "Decreased number of peripheral myelinated nerve fibers",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

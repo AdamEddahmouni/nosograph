@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'nervous system disease (LEUKOENCEPHALOPATHY_WITH_BRAIN_STEM_AN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of nervous system disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Skeletal muscle atrophy",
+    "Hyporeflexia",
+    "Peripheral axonal neuropathy",
+    "Babinski sign",
+    "Flexion contracture",
+    "Dysarthria",
+    "Leukoencephalopathy",
+    "Ataxia",
+    "Motor delay",
+    "Cognitive impairment",
+    "Nystagmus",
+    "Variable expressivity",
+    "Autosomal recessive inheritance",
+    "Muscle weakness",
+    "Spasticity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'phenotype (PLATELET_ACTIVATING_FACTOR_ACETYLHYDROLASE_DEFICIEN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of phenotype
-SYMPTOMS = []
+SYMPTOMS = [
+    "Platelet-activating factor acetylhydrolase deficiency",
+    "Increased level of platelet-activating factor",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

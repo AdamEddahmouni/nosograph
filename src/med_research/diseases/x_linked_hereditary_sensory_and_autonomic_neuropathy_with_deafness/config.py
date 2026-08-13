@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neuromuscular disease (X_LINKED_HEREDITARY_SENSORY_AND_AUTONOM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neuromuscular disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Skeletal muscle atrophy",
+    "Hearing impairment",
+    "Abnormal middle ear reflexes",
+    "Vertigo",
+    "Tinnitus",
+    "Areflexia",
+    "Sensory axonal neuropathy",
+    "X-linked recessive inheritance",
+    "Childhood onset",
+    "Cochlear nerve hypoplasia",
+    "Distal sensory impairment",
+    "Unsteady gait",
+    "Slowly progressive",
+    "Myopia",
+    "Intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

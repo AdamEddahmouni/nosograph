@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'bone disease (AUTOSOMAL_RECESSIVE_SPONDYLOMETAPHYSEAL_DYSPLASI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of bone disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Delayed epiphyseal ossification",
+    "Micromelia",
+    "Congenital onset",
+    "Severe platyspondyly",
+    "Anteverted nares",
+    "Deep philtrum",
+    "Short stature",
+    "Bell-shaped thorax",
+    "Squared iliac bones",
+    "Short nose",
+    "Hypoplastic ischia",
+    "Prominent forehead",
+    "Microtia",
+    "Dysplastic sacrum",
+    "Large fontanelles",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

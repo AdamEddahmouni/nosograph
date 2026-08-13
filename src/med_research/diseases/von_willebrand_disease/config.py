@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Von Willebrand disease (VON_WILLEBRAND_DISEASE)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Von Willebrand disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Reduced factor VIII activity",
+    "Menorrhagia",
+    "Aortic valve stenosis",
+    "Prolonged whole-blood clotting time",
+    "Impaired platelet aggregation",
+    "Gastrointestinal angiodysplasia",
+    "Prolonged bleeding time",
+    "Joint hemorrhage",
+    "Reduced quantity of Von Willebrand factor",
+    "Typified by incomplete penetrance",
+    "Prolonged bleeding after dental extraction",
+    "Bruising susceptibility",
+    "Persistent bleeding after trauma",
+    "Prolonged bleeding after surgery",
+    "Gastrointestinal hemorrhage",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

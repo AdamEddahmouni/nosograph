@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'genetic disorder (FISH_EYE_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of genetic disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Opacification of the corneal stroma",
+    "Hypertriglyceridemia",
+    "Decreased circulating HDL-C concentration",
+    "Elevated circulating LDL-C concentration",
+    "Elevated circulating VLDL-C concentration",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

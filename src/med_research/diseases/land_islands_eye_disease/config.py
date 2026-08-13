@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'genetic disorder (LAND_ISLANDS_EYE_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of genetic disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Astigmatism",
+    "Nystagmus",
+    "Severely reduced visual acuity",
+    "Hypoplasia of the fovea",
+    "Giant melanosomes in melanocytes",
+    "Fundus hypopigmentation",
+    "Protanopia",
+    "X-linked inheritance",
+    "Myopia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

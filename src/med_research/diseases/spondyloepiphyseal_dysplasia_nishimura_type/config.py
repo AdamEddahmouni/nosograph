@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'skeletal system disease (SPONDYLOEPIPHYSEAL_DYSPLASIA_NISHIMUR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of skeletal system disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Delayed epiphyseal ossification",
+    "Short foot",
+    "Hearing impairment",
+    "Delayed proximal femoral epiphyseal ossification",
+    "Brachydactyly",
+    "Short nose",
+    "Short femoral neck",
+    "Cone-shaped epiphyses of the phalanges of the hand",
+    "Disproportionate short-limb short stature",
+    "Reduced visual acuity",
+    "Laryngeal stenosis",
+    "Cone-shaped epiphysis of the proximal phalanx of the 2nd finger",
+    "Phalangeal cone-shaped epiphyses",
+    "Intellectual disability",
+    "Irregular vertebral endplates",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

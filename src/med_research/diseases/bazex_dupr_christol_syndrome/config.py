@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'integumentary system disease (BAZEX_DUPR_CHRISTOL_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of integumentary system disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Milia",
+    "Nevus",
+    "Atopic dermatitis",
+    "Underdeveloped nasal alae",
+    "Furrowed tongue",
+    "Joint hypermobility",
+    "Basal cell carcinoma",
+    "Trichoepithelioma",
+    "Infantile onset",
+    "Sparse hair",
+    "Acne inversa",
+    "Keratosis pilaris",
+    "Narrow nasal ridge",
+    "Hyperpigmentation of the skin",
+    "Eczematoid dermatitis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

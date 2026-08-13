@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'bone disease (FRONTONASAL_DYSPLASIA_SEVERE_MICROPHTHALMIA_SEVE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of bone disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Absent eyebrow",
+    "Cleft palate",
+    "Wide nasal bridge",
+    "Prominent glabella",
+    "Underdeveloped nasal alae",
+    "Hypertelorism",
+    "Autosomal recessive inheritance",
+    "Microphthalmia",
+    "Upper eyelid coloboma",
+    "Sparse eyelashes",
+    "Brachycephaly",
+    "Intellectual disability",
+    "Low-set ears",
+    "Posteriorly rotated ears",
+    "Tessier cleft",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

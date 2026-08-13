@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'genetic disorder (COLOBOMATOUS_MICROPHTHALMIA_OBESITY_HYPOGENI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of genetic disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Borderline intellectual disability",
+    "Gynecomastia",
+    "Cataract",
+    "Retinal coloboma",
+    "Arachnoid cyst",
+    "Hydrocephalus",
+    "Microphthalmia",
+    "Rod-cone dystrophy",
+    "Hypogonadism",
+    "Cryptorchidism",
+    "Obesity",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

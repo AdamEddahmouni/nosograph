@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'brain disease (HYDROCEPHALUS_WITH_STENOSIS_OF_THE_AQUEDUCT_OF_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of brain disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Absent septum pellucidum",
+    "Aqueductal stenosis",
+    "X-linked recessive inheritance",
+    "Agenesis of corpus callosum",
+    "Hydrocephalus",
+    "Adducted thumb",
+    "Thumb contracture",
+    "Corticospinal tract hypoplasia",
+    "Spastic paraplegia",
+    "Macrocephaly",
+    "Spasticity",
+    "Intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

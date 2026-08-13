@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'genetic disorder (HYPERTRICHOTIC_OSTEOCHONDRODYSPLASIA_CANTU_T
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of genetic disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Epicanthus",
+    "Metaphyseal widening",
+    "Long philtrum",
+    "Mild intellectual disability",
+    "Anteverted nares",
+    "Short hallux",
+    "Congenital, generalized hypertrichosis",
+    "Coarse facial features",
+    "Broad first metatarsal",
+    "Osteoporosis",
+    "Broad hallux",
+    "Prominent forehead",
+    "Bicuspid aortic valve",
+    "Curly eyelashes",
+    "Narrow chest",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

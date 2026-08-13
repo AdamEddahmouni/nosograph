@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'metabolic disease (CIRRHOSIS_DYSTONIA_POLYCYTHEMIA_HYPERMANGAN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of metabolic disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Bradykinesia",
+    "Decreased liver function",
+    "Parkinsonism",
+    "Steppage gait",
+    "Dystonia",
+    "Increased total iron binding capacity",
+    "Dysarthria",
+    "Rigidity",
+    "Cirrhosis",
+    "Hepatomegaly",
+    "Postural instability",
+    "Abnormality of extrapyramidal motor function",
+    "Unconjugated hyperbilirubinemia",
+    "Sensorimotor neuropathy",
+    "Hypermanganesemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

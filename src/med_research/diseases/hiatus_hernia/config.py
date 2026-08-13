@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'phenotype (HIATUS_HERNIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of phenotype
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hiatus hernia",
+    "Autosomal dominant inheritance",
+    "Abnormal thorax morphology",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

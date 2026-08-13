@@ -8,8 +8,16 @@ PIPELINE_LABEL = "bone Paget disease (PAGETS_DISEASE_BONE)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of bone Paget disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Bone pain",
+    "Hearing impairment",
+    "Patchy osteosclerosis",
+    "Elevated circulating alkaline phosphatase concentration",
+    "Recurrent long bone fractures",
+    "Osteosarcoma",
+    "Autosomal dominant inheritance",
+    "Osteolysis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

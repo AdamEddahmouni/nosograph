@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'skeletal system disease (OSTEOPATHIA_STRIATA_CRANIAL_SCLEROSIS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of skeletal system disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Epicanthus",
+    "Anal stenosis",
+    "Fibular hypoplasia",
+    "Mild intellectual disability",
+    "Anal atresia",
+    "Short stature",
+    "Seizure",
+    "Hypotonia",
+    "Gastroesophageal reflux",
+    "Generalized hypotonia",
+    "Hypertelorism",
+    "Large fontanelles",
+    "Dental crowding",
+    "Hydrocephalus",
+    "Tracheomalacia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

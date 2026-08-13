@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'genetic disorder (FAMILIAL_PARTIAL_LIPODYSTROPHY_K_BBERLING_TY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of genetic disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Juvenile onset",
+    "Hypertriglyceridemia",
+    "Increased facial adipose tissue",
+    "Xanthomatosis",
+    "Abnormality of the musculature",
+    "Hepatomegaly",
+    "Hyperglycemia",
+    "Increased subcutaneous truncal adipose tissue",
+    "Hypertension",
+    "Acute pancreatitis",
+    "Lipodystrophy",
+    "Acanthosis nigricans",
+    "Loss of gluteal subcutaneous adipose tissue",
+    "Loss of subcutaneous adipose tissue in limbs",
+    "Prominent superficial veins",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

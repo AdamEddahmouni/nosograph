@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'Congenital bile acid synthesis defect (CONGENITAL_BILE_ACID_SY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Congenital bile acid synthesis defect
-SYMPTOMS = []
+SYMPTOMS = [
+    "Diarrhea",
+    "Hepatic failure",
+    "Abnormality of the coagulation cascade",
+    "Elevated circulating alkaline phosphatase concentration",
+    "Hepatomegaly",
+    "Steatorrhea",
+    "Failure to thrive",
+    "Hyperbilirubinemia",
+    "Autosomal recessive inheritance",
+    "Intrahepatic cholestasis",
+    "Elevated circulating hepatic transaminase concentration",
+    "Jaundice",
+    "Splenomegaly",
+    "Neonatal onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

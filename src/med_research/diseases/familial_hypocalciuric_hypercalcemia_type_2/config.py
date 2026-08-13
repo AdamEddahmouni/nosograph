@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'metabolic disease (FAMILIAL_HYPOCALCIURIC_HYPERCALCEMIA_TYPE_2
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of metabolic disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Multiple lipomas",
+    "Peptic ulcer",
+    "Hypermagnesemia",
+    "Primary hyperparathyroidism",
+    "Parathormone-independent increased renal tubular calcium reabsorption",
+    "Chondrocalcinosis",
+    "Hypercalcemia",
+    "Kidney stone",
+    "Pancreatitis",
+    "Hypocalciuria",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

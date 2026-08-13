@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hematologic disease (RADIO_ULNAR_SYNOSTOSIS_AMEGAKARYOCYTIC_TH
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hematologic disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cleft palate",
+    "Mild intellectual disability",
+    "Hydrocele testis",
+    "Overlapping fingers",
+    "Short middle phalanx of the 4th finger",
+    "Sensorineural hearing impairment",
+    "Anemia",
+    "Limited pronation/supination of forearm",
+    "Congenital thrombocytopenia",
+    "Hydrops fetalis",
+    "Thrombocytopenia",
+    "Hepatosplenomegaly",
+    "Autosomal dominant inheritance",
+    "Radioulnar synostosis",
+    "Decreased total neutrophil count",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

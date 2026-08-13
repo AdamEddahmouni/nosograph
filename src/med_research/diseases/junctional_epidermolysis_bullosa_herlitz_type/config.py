@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'epidermolysis bullosa (JUNCTIONAL_EPIDERMOLYSIS_BULLOSA_HERLIT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of epidermolysis bullosa
-SYMPTOMS = []
+SYMPTOMS = [
+    "Milia",
+    "Congenital onset",
+    "Carious teeth",
+    "Lamina lucida cleavage",
+    "Pyloric stenosis",
+    "Nail dysplasia",
+    "Atrophic scars",
+    "Failure to thrive",
+    "Congenital localized absence of skin",
+    "Abnormal blistering of the skin",
+    "Enamel hypoplasia",
+    "Autosomal recessive inheritance",
+    "Syndactyly",
+    "Nail dystrophy",
+    "Death in infancy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

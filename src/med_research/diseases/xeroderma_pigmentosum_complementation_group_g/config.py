@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'skin disease (XERODERMA_PIGMENTOSUM_COMPLEMENTATION_GROUP_G)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of skin disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal hair morphology",
+    "Microcephaly",
+    "Multiple lentigines",
+    "Cutaneous photosensitivity",
+    "Abnormal nail morphology",
+    "Delayed speech and language development",
+    "Mild intellectual disability",
+    "Decreased total leukocyte count",
+    "Delayed ability to walk",
+    "Delayed skeletal maturation",
+    "Short stature",
+    "Deeply set eye",
+    "Infantile onset",
+    "Erythema",
+    "Scarring",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

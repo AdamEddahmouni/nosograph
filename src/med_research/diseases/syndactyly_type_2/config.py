@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'musculoskeletal system disease (SYNDACTYLY_TYPE_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of musculoskeletal system disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "3-4 finger cutaneous syndactyly",
+    "Congenital onset",
+    "Sagittal craniosynostosis",
+    "2-3 toe syndactyly",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

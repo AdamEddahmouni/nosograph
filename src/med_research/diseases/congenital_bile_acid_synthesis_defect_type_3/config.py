@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'genetic disorder (CONGENITAL_BILE_ACID_SYNTHESIS_DEFECT_TYPE_3
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of genetic disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Diarrhea",
+    "Elevated circulating aspartate aminotransferase concentration",
+    "Hepatic failure",
+    "Hematochezia",
+    "Elevated circulating alkaline phosphatase concentration",
+    "Cirrhosis",
+    "Hepatomegaly",
+    "Steatorrhea",
+    "Hepatitis",
+    "Hepatic bridging fibrosis",
+    "Elevated circulating alanine aminotransferase concentration",
+    "Acholic stools",
+    "Ductal bile plugs",
+    "Prolonged prothrombin time",
+    "Failure to thrive",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

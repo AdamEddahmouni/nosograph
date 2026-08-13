@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'genetic disorder (AUTOSOMAL_RECESSIVE_SPASTIC_PARAPLEGIA_TYPE_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of genetic disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Resting tremor",
+    "Peripheral axonal neuropathy",
+    "Bradykinesia",
+    "Cerebral cortical atrophy",
+    "Cerebellar atrophy",
+    "Gait ataxia",
+    "Ataxia",
+    "Nystagmus",
+    "Hallucinations",
+    "Aggressive behavior",
+    "Distal sensory impairment",
+    "Abnormal periventricular white matter morphology",
+    "Mental deterioration",
+    "Exodeviation",
+    "Hyperreflexia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

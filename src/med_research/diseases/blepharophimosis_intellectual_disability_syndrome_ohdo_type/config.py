@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'genetic disorder (BLEPHAROPHIMOSIS_INTELLECTUAL_DISABILITY_SYN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of genetic disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Epicanthus",
+    "Hearing impairment",
+    "Long philtrum",
+    "Small scrotum",
+    "Anteverted nares",
+    "Short stature",
+    "Seizure",
+    "Narrow mouth",
+    "Blepharophimosis",
+    "Hypotonia",
+    "Short nose",
+    "Generalized hypotonia",
+    "Sparse eyebrow",
+    "Smooth philtrum",
+    "Microtia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

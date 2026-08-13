@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'genetic disorder (BENIGN_FAMILIAL_NEONATAL_INFANTILE_SEIZURES)
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of genetic disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Generalized-onset seizure",
+    "Focal impaired awareness seizure",
+    "Normal interictal EEG",
+    "Infantile onset",
+    "Bilateral tonic-clonic seizure with focal onset",
+    "Neurodevelopmental abnormality",
+    "Cyanosis",
+    "Focal-onset seizure",
+    "Autosomal dominant inheritance",
+    "Apnea",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

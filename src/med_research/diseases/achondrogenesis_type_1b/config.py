@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'bone disease (ACHONDROGENESIS_TYPE_1B)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of bone disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Absent or minimally ossified vertebral bodies",
+    "Micromelia",
+    "Polyhydramnios",
+    "Congenital onset",
+    "Inguinal hernia",
+    "Malar flattening",
+    "Abdominal distention",
+    "Respiratory insufficiency",
+    "Flat face",
+    "Edema",
+    "Hypoplastic ilia",
+    "Stillbirth",
+    "Umbilical hernia",
+    "Autosomal recessive inheritance",
+    "Hydrops fetalis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

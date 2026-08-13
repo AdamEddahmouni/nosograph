@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'metabolic disease (HYPERAMMONEMIA_DUE_TO_N_ACETYLGLUTAMATE_SYN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of metabolic disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypertonia",
+    "Lethargy",
+    "Confusion",
+    "Hypothermia",
+    "Vomiting",
+    "Low plasma citrulline",
+    "Respiratory distress",
+    "Seizure",
+    "Cognitive impairment",
+    "Alkalosis",
+    "Failure to thrive",
+    "Aggressive behavior",
+    "Autosomal recessive inheritance",
+    "Clonic seizure",
+    "Hyperammonemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

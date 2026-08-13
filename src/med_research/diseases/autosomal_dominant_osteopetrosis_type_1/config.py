@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'genetic disorder (AUTOSOMAL_DOMINANT_OSTEOPETROSIS_TYPE_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of genetic disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated serum acid phosphatase",
+    "Thickened calvaria",
+    "Calvarial osteosclerosis",
+    "Abnormality of the vertebral column",
+    "Osteopetrosis",
+    "Thickened cortex of long bones",
+    "Torus palatinus",
+    "Mandibular pain",
+    "Recurrent fractures",
+    "Conductive hearing impairment",
+    "Headache",
+    "Autosomal dominant inheritance",
+    "Abnormal pelvic girdle bone morphology",
+    "Generalized osteosclerosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

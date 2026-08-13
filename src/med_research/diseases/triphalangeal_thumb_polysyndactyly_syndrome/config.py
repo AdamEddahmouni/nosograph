@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'skeletal system disease (TRIPHALANGEAL_THUMB_POLYSYNDACTYLY_SY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of skeletal system disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Triphalangeal thumb",
+    "Preaxial hand polydactyly",
+    "Congenital onset",
+    "Postaxial hand polydactyly",
+    "Finger syndactyly",
+    "Autosomal dominant inheritance",
+    "Broad thumb",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'genetic disorder (ACRO_CARDIO_FACIAL_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of genetic disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cleft palate",
+    "Micropenis",
+    "Absent pulmonary artery",
+    "Global developmental delay",
+    "Coarctation of aorta",
+    "Split hand",
+    "Ventricular septal defect",
+    "Death in childhood",
+    "Hypertelorism",
+    "Tetralogy of Fallot",
+    "Autosomal recessive inheritance",
+    "Clubbing",
+    "Hypoplastic helices",
+    "Macrotia",
+    "Patent ductus arteriosus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

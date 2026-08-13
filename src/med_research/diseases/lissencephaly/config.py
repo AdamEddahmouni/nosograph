@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'phenotype (LISSENCEPHALY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of phenotype
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypertonia",
+    "Congenital onset",
+    "Wide nasal bridge",
+    "Short stature",
+    "Colpocephaly",
+    "Cerebellar hypoplasia",
+    "Babinski sign",
+    "Seizure",
+    "Feeding difficulties",
+    "Profound intellectual disability",
+    "Global developmental delay",
+    "Agenesis of corpus callosum",
+    "Primary microcephaly",
+    "Lissencephaly",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

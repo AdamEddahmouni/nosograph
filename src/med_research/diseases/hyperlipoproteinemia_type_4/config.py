@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'metabolic disease (HYPERLIPOPROTEINEMIA_TYPE_4)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of metabolic disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Diabetes mellitus",
+    "Decreased circulating HDL-C concentration",
+    "Decreased circulating LDL-C concentration",
+    "Elevated circulating VLDL-C concentration",
+    "Autosomal dominant inheritance",
+    "Increased circulating chylomicron concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

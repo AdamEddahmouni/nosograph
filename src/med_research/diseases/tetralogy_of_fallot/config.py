@@ -8,8 +8,14 @@ PIPELINE_LABEL = "Tetralogy of Fallot (TETRALOGY_OF_FALLOT)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Tetralogy of Fallot
-SYMPTOMS = []
+SYMPTOMS = [
+    "Preauricular pit",
+    "Tetralogy of Fallot",
+    "Broad forehead",
+    "Clinodactyly of the 5th finger",
+    "Proptosis",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

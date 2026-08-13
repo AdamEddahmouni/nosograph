@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hematologic disease (CH_DIAK_HIGASHI_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hematologic disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cranial nerve paralysis",
+    "Hypopigmentation of hair",
+    "Strabismus",
+    "Seizure",
+    "Hypopigmentation of the skin",
+    "Hepatomegaly",
+    "Infantile onset",
+    "Ataxia",
+    "Giant melanosomes in melanocytes",
+    "Giant neutrophil granules",
+    "Neurodegeneration",
+    "Impaired neutrophil bactericidal activity",
+    "Hemophagocytosis",
+    "Nystagmus",
+    "Recurrent infections",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

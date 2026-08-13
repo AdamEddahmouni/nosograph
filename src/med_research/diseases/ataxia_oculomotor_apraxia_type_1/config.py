@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'genetic disorder (ATAXIA_OCULOMOTOR_APRAXIA_TYPE_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of genetic disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Juvenile onset",
+    "Dystonia",
+    "Hypercholesterolemia",
+    "Cerebellar atrophy",
+    "Impaired vibratory sensation",
+    "Areflexia",
+    "Ataxia",
+    "Hypoalbuminemia",
+    "Cognitive impairment",
+    "Childhood onset",
+    "Elevated circulating alpha-fetoprotein concentration",
+    "Oculomotor apraxia",
+    "Peripheral neuropathy",
+    "Abnormal pyramidal sign",
+    "Atrophy/Degeneration affecting the brainstem",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

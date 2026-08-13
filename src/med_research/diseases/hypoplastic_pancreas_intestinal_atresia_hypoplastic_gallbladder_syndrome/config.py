@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'genetic disorder (HYPOPLASTIC_PANCREAS_INTESTINAL_ATRESIA_HYPO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of genetic disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Diarrhea",
+    "Meckel diverticulum",
+    "Cholestasis",
+    "Congenital onset",
+    "Ascites",
+    "Jejunal atresia",
+    "Malabsorption",
+    "Pancreatic hypoplasia",
+    "Absent gallbladder",
+    "Hyperglycemia",
+    "Acholic stools",
+    "Diabetes mellitus",
+    "Hyperbilirubinemia",
+    "Annular pancreas",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

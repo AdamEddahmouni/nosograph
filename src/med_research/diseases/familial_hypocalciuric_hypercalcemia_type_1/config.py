@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'genetic disorder (FAMILIAL_HYPOCALCIURIC_HYPERCALCEMIA_TYPE_1)
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of genetic disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypermagnesemia",
+    "Hyperparathyroidism",
+    "Hypercalciuria",
+    "Hypercalcemia",
+    "Autosomal dominant inheritance",
+    "Kidney stone",
+    "Pancreatitis",
+    "Hypocalciuria",
+    "Parathyroid adenoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

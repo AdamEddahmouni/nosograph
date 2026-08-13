@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'phenotype (PROTEIN_LOSING_ENTEROPATHY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of phenotype
-SYMPTOMS = []
+SYMPTOMS = [
+    "Iron deficiency anemia",
+    "Intestinal obstruction",
+    "Thrombocytosis",
+    "Malabsorption",
+    "Recurrent lower respiratory tract infections",
+    "Abnormal intestine morphology",
+    "Hypoproteinemia",
+    "Hepatomegaly",
+    "Infantile onset",
+    "Hypoalbuminemia",
+    "Recurrent infections",
+    "Anemia",
+    "Childhood onset",
+    "Budd-Chiari syndrome",
+    "Diarrhea",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

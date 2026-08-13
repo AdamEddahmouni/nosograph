@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'nervous system disease (DENTATORUBRAL_PALLIDOLUYSIAN_ATROPHY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of nervous system disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Juvenile onset",
+    "Parkinsonism",
+    "Middle age onset",
+    "Dystonia",
+    "Choreoathetosis",
+    "Seizure",
+    "Late onset",
+    "Ataxia",
+    "Chorea",
+    "Postural instability",
+    "Dementia",
+    "Young adult onset",
+    "Atrophy of the dentate nucleus",
+    "Autosomal dominant inheritance",
+    "Intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

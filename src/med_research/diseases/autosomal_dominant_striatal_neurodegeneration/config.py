@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'nervous system disease (AUTOSOMAL_DOMINANT_STRIATAL_NEURODEGEN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of nervous system disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Bradykinesia",
+    "Hypokinesia",
+    "Middle age onset",
+    "Gait disturbance",
+    "Lower limb hyperreflexia",
+    "Dysarthria",
+    "Rigidity",
+    "Dysdiadochokinesis",
+    "Slurred speech",
+    "Degeneration of the striatum",
+    "Symmetric T2-signal increase with T1-signal decrease in the putamen",
+    "Autosomal dominant inheritance",
+    "Brisk reflexes",
+    "Slowly progressive",
+    "Tremor",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

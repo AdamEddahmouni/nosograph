@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'nervous system disease (SORSBYS_FUNDUS_DYSTROPHY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of nervous system disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Young adult onset",
+    "Blindness",
+    "Macular dystrophy",
+    "Autosomal dominant inheritance",
+    "Abnormal electroretinogram",
+    "Glaucoma",
+    "Chorioretinal atrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

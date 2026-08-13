@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'genetic disorder (CAPILLARY_MALFORMATION_ARTERIOVENOUS_MALFORM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of genetic disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Arteriovenous malformation",
+    "Capillary malformation",
+    "Arteriovenous fistula",
+    "Capillary hemangioma",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

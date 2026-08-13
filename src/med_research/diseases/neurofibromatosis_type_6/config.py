@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'skin disease (NEUROFIBROMATOSIS_TYPE_6)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of skin disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Mild intellectual disability",
+    "Short stature",
+    "Seizure",
+    "Sphenoid wing dysplasia",
+    "Infantile onset",
+    "Childhood onset",
+    "Lipoma",
+    "Hypertelorism",
+    "Meningioma",
+    "Specific learning disability",
+    "Axillary freckling",
+    "Hydrocephalus",
+    "Rhabdomyosarcoma",
+    "Multiple cafe-au-lait spots",
+    "Genu valgum",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

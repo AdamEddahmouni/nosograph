@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'adrenal gland disease (TRIPLE_A_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of adrenal gland disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Progressive",
+    "Orthostatic hypotension",
+    "Anisocoria",
+    "Short stature",
+    "Ataxia",
+    "Abnormal autonomic nervous system physiology",
+    "Childhood onset",
+    "Young adult onset",
+    "Motor axonal neuropathy",
+    "Hyperpigmentation of the skin",
+    "Adrenocorticotropin receptor defect",
+    "Decreased circulating aldosterone concentration",
+    "Muscle weakness",
+    "Palmoplantar hyperkeratosis",
+    "Intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

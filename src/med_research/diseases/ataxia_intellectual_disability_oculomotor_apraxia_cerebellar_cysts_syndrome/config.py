@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'genetic disorder (ATAXIA_INTELLECTUAL_DISABILITY_OCULOMOTOR_AP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of genetic disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cerebellar vermis hypoplasia",
+    "Strabismus",
+    "Delayed speech and language development",
+    "Dilated fourth ventricle",
+    "Hypotonia",
+    "Cerebellar cyst",
+    "Generalized hypotonia",
+    "Gray matter heterotopia",
+    "Motor delay",
+    "Retinal thinning on OCT",
+    "Nystagmus",
+    "Cerebellar dysplasia",
+    "Variable expressivity",
+    "Amblyopia",
+    "Oculomotor apraxia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

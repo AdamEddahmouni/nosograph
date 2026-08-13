@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'genetic disorder (SEPTO_OPTIC_DYSPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of genetic disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Absent septum pellucidum",
+    "Anterior pituitary hypoplasia",
+    "Short stature",
+    "Agenesis of corpus callosum",
+    "Global developmental delay",
+    "Polydactyly",
+    "Optic nerve hypoplasia",
+    "Short finger",
+    "Autosomal recessive inheritance",
+    "Decreased response to growth hormone stimulation test",
+    "Diabetes insipidus",
+    "Optic disc hypoplasia",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

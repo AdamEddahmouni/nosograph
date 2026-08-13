@@ -8,8 +8,18 @@ PIPELINE_LABEL = "Cryoglobulinemic vasculitis (CRYOGLOBULINEMIC_VASCULITIS)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Cryoglobulinemic vasculitis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal renal physiology",
+    "Abnormality of blood and blood-forming tissues",
+    "Hematuria",
+    "Cryoglobulinemia",
+    "Hypertension",
+    "Proteinuria",
+    "Anasarca",
+    "Autosomal dominant inheritance",
+    "Elevated circulating creatinine concentration",
+    "Chronic kidney disease",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

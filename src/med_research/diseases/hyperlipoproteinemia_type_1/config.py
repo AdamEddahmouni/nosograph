@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'genetic disorder (HYPERLIPOPROTEINEMIA_TYPE_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of genetic disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Lipemia retinalis",
+    "Hypertriglyceridemia",
+    "Decreased circulating HDL-C concentration",
+    "Decreased circulating LDL-C concentration",
+    "Eruptive xanthomas",
+    "Colitis",
+    "Hepatomegaly",
+    "Premature coronary artery atherosclerosis",
+    "Increased circulating chylomicron concentration",
+    "Early young adult onset",
+    "Recurrent pancreatitis",
+    "Failure to thrive",
+    "Hyperlipoproteinemia",
+    "Childhood onset",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

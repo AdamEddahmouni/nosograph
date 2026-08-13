@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'connective tissue disease (FREEMAN_SHELDON_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of connective tissue disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Epicanthus",
+    "Hearing impairment",
+    "Strabismus",
+    "Seizure",
+    "Narrow mouth",
+    "Hip contracture",
+    "Joint dislocation",
+    "Short nose",
+    "Chordee",
+    "Infantile onset",
+    "Flexion contracture of finger",
+    "Cleft ala nasi",
+    "Prominent forehead",
+    "Hypertelorism",
+    "Overlapping toe",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

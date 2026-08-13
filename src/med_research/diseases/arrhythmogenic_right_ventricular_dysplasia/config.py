@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'cardiomyopathy (ARRHYTHMOGENIC_RIGHT_VENTRICULAR_DYSPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cardiomyopathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Fatty replacement of ventricular myocardial tissue",
+    "Juvenile onset",
+    "Myocardial fibrosis",
+    "Atrial arrhythmia",
+    "Right ventricular dilatation",
+    "Young adult onset",
+    "T-wave inversion",
+    "Right ventricular cardiomyopathy",
+    "Right ventricular regional dyskinesia",
+    "Autosomal dominant inheritance",
+    "Sudden cardiac death",
+    "Ventricular tachycardia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

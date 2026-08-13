@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'genetic disorder (VENTRICULAR_EXTRASYSTOLES_WITH_SYNCOPAL_EPIS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of genetic disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Submucous cleft hard palate",
+    "Downslanted palpebral fissures",
+    "Posteriorly placed tongue",
+    "Aplasia/Hypoplasia of the distal phalanges of the toes",
+    "Premature ventricular contraction",
+    "Tachycardia",
+    "Pierre-Robin sequence",
+    "Syncope",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'metabolic disease (CLASSICAL_HOMOCYSTINURIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of metabolic disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypermethioninemia",
+    "Lens subluxation",
+    "Stroke",
+    "Limitation of joint mobility",
+    "Seizure",
+    "Hypopigmentation of the skin",
+    "Ataxia",
+    "Reduced cystathionine beta-synthase activity in cultured fibroblasts",
+    "Depression",
+    "Childhood onset",
+    "Personality disorder",
+    "Dental crowding",
+    "Intellectual disability",
+    "Neonatal onset",
+    "Kyphoscoliosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

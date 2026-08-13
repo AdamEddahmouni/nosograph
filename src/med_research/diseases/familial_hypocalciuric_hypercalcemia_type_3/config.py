@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'lung disease (FAMILIAL_HYPOCALCIURIC_HYPERCALCEMIA_TYPE_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lung disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Multiple lipomas",
+    "Bone pain",
+    "Peptic ulcer",
+    "Renal insufficiency",
+    "Hypercalcemia",
+    "Fatigue",
+    "Depression",
+    "Hypermagnesemia",
+    "Primary hyperparathyroidism",
+    "Parathormone-independent increased renal tubular calcium reabsorption",
+    "Osteomalacia",
+    "Chondrocalcinosis",
+    "Muscle weakness",
+    "Headache",
+    "Kidney stone",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

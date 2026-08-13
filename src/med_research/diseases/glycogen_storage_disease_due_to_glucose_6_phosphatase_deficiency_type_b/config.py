@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hepatobiliary disease (GLYCOGEN_STORAGE_DISEASE_DUE_TO_GLUCOSE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hepatobiliary disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal bleeding",
+    "Lipemia retinalis",
+    "Short stature",
+    "Hyperlipidemia",
+    "Decreased muscle mass",
+    "Hepatomegaly",
+    "Infantile onset",
+    "Osteoporosis",
+    "Childhood onset",
+    "Hypoglycemia",
+    "Elevated circulating hepatic transaminase concentration",
+    "Hepatocellular carcinoma",
+    "Lactic acidosis",
+    "Intermittent diarrhea",
+    "Xanthomatosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

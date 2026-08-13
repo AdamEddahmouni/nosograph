@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'eye disease (GAUCHER_DISEASE_TYPE_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of eye disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Aortic valve stenosis",
+    "Hypersplenism",
+    "Elevated circulating glucosylsphingosine concentration",
+    "Hepatomegaly",
+    "Avascular necrosis",
+    "Anemia",
+    "Abnormal pulmonary interstitial morphology",
+    "Hyperpigmentation of the skin",
+    "Macular atrophy",
+    "Multiple myeloma",
+    "Vertebral compression fracture",
+    "Pathologic fracture",
+    "Splenomegaly",
+    "Abnormality of the eye",
+    "Erlenmeyer flask deformity of the femurs",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

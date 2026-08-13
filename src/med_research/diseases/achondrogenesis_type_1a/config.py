@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'genetic disorder (ACHONDROGENESIS_TYPE_1A)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of genetic disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Micromelia",
+    "Hypoplastic scapulae",
+    "Pulmonary hypoplasia",
+    "Anteverted nares",
+    "Barrel-shaped chest",
+    "Bell-shaped thorax",
+    "Protruding tongue",
+    "Crescent-shaped iliac bone",
+    "Short nose",
+    "Turricephaly",
+    "Hypoplastic ischia",
+    "Abnormal ischium ossification",
+    "Short thorax",
+    "Flat face",
+    "Absence of stomach bubble on fetal sonography",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

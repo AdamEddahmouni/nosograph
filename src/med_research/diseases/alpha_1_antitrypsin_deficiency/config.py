@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'metabolic disease (ALPHA_1_ANTITRYPSIN_DEFICIENCY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of metabolic disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Panacinar emphysema",
+    "Gastric varix",
+    "Increased sputum production",
+    "Bronchiectasis",
+    "Cirrhosis",
+    "Dyspnea",
+    "Cough",
+    "Decreased circulating alpha-1-antitrypsin concentration",
+    "Wheezing",
+    "Intrahepatic inclusion bodies",
+    "Early young adult onset",
+    "Autosomal recessive inheritance",
+    "Chronic pulmonary obstruction",
+    "Elevated circulating hepatic transaminase concentration",
+    "Splenomegaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'genetic disorder (AMELO_CEREBRO_HYPOHIDROTIC_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of genetic disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Bilateral tonic-clonic seizure",
+    "Cerebral atrophy",
+    "Hypsarrhythmia",
+    "Microcephaly",
+    "Delayed speech and language development",
+    "Cerebellar hypoplasia",
+    "Developmental regression",
+    "Delayed ability to walk",
+    "Seizure",
+    "Global developmental delay",
+    "Ataxia",
+    "Myoclonic seizure",
+    "Severe intellectual disability",
+    "Amelogenesis imperfecta",
+    "Dementia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

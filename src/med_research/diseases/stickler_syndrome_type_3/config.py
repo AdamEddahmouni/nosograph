@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'musculoskeletal system disease (STICKLER_SYNDROME_TYPE_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of musculoskeletal system disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Retinal detachment",
+    "Anteverted nares",
+    "Cataract",
+    "Morbus Scheuermann",
+    "Membranous vitreous appearance",
+    "Blindness",
+    "Abnormal femoral epiphysis morphology",
+    "Osteoarthritis",
+    "Spondyloepiphyseal dysplasia",
+    "Arthritis",
+    "Arachnodactyly",
+    "Submucous cleft hard palate",
+    "Cleft palate",
+    "Spondylolisthesis",
+    "Scoliosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

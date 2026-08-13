@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'musculoskeletal system disease (ACROFACIAL_DYSOSTOSIS_RODR_GUE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of musculoskeletal system disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Triphalangeal thumb",
+    "Fibular hypoplasia",
+    "Absent forearm",
+    "Short stature",
+    "Wide anterior fontanel",
+    "Narrow mouth",
+    "Hypertelorism",
+    "Single transverse palmar crease",
+    "Overlapping toe",
+    "11 pairs of ribs",
+    "Clinodactyly",
+    "High palate",
+    "Posteriorly rotated ears",
+    "Wide nasal bridge",
+    "Talipes equinovarus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

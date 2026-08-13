@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'bone development disease (OROFACIODIGITAL_SYNDROME_TYPE_5)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of bone development disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Tibial bowing",
+    "Preaxial hand polydactyly",
+    "Epicanthus",
+    "Toe syndactyly",
+    "Short stature",
+    "Hypotonia",
+    "Generalized hypotonia",
+    "Nystagmus",
+    "Incomplete cleft of the upper lip",
+    "Hypertelorism",
+    "Radial deviation of finger",
+    "Molar tooth sign on MRI",
+    "11 pairs of ribs",
+    "Preaxial foot polydactyly",
+    "Mesoaxial hand polydactyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

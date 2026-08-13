@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'genetic disorder (TYROSINEMIA_TYPE_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of genetic disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nephrocalcinosis",
+    "Hypermethioninemia",
+    "Hepatic failure",
+    "Hypertyrosinemia",
+    "Renal insufficiency",
+    "Episodic peripheral neuropathy",
+    "Elevated urinary succinylacetone level",
+    "Hepatomegaly",
+    "Cirrhosis",
+    "Elevated urinary 4-tyramine level",
+    "Prolonged prothrombin time",
+    "Failure to thrive",
+    "Anemia",
+    "Elevated circulating alpha-fetoprotein concentration",
+    "Hypoglycemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

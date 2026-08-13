@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'metabolic disease (CONGENITAL_DYSERYTHROPOIETIC_ANEMIA_TYPE_II
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of metabolic disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased circulating haptoglobin concentration",
+    "Multinucleated erythroblast",
+    "Anemia of inadequate production",
+    "Increased circulating lactate dehydrogenase concentration",
+    "Hemosiderinuria",
+    "Macrocytic anemia",
+    "Autosomal dominant inheritance",
+    "Jaundice",
+    "Congenital hypoplastic anemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

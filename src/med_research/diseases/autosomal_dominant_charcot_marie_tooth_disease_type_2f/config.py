@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'peripheral nervous system disease (AUTOSOMAL_DOMINANT_CHARCOT_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of peripheral nervous system disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperactive patellar reflex",
+    "Steppage gait",
+    "Gait disturbance",
+    "Pes cavus",
+    "Distal amyotrophy",
+    "Variable expressivity",
+    "Distal muscle weakness",
+    "Peripheral neuropathy",
+    "Distal sensory impairment",
+    "Absent Achilles reflex",
+    "Autosomal dominant inheritance",
+    "Hammertoe",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

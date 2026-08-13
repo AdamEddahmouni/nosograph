@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'genetic disorder (CUTIS_LAXA_MARFANOID_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of genetic disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Arachnodactyly",
+    "Hip dislocation",
+    "Emphysema",
+    "Abnormal cardiovascular system morphology",
+    "Abnormal heart morphology",
+    "Congenital diaphragmatic hernia",
+    "Autosomal dominant inheritance",
+    "Cutis laxa",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

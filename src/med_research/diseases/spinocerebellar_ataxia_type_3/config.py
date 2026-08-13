@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'neurodegenerative disease (SPINOCEREBELLAR_ATAXIA_TYPE_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neurodegenerative disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Gaze-evoked horizontal nystagmus",
+    "Nystagmus",
+    "Cerebellar atrophy",
+    "Dysarthria",
+    "Gait ataxia",
+    "Sensorineural hearing impairment",
+    "Late onset",
+    "Ataxia",
+    "Limb ataxia",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

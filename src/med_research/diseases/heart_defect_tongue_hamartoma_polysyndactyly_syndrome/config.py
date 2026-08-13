@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'genetic disorder (HEART_DEFECT_TONGUE_HAMARTOMA_POLYSYNDACTYLY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of genetic disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Subvalvular aortic stenosis",
+    "Congenital onset",
+    "Complete atrioventricular canal defect",
+    "2-3 finger cutaneous syndactyly",
+    "Postaxial polydactyly type A",
+    "Postaxial hand polydactyly",
+    "Feeding difficulties",
+    "Global developmental delay",
+    "Coarctation of aorta",
+    "2-3 toe syndactyly",
+    "Hamartoma of tongue",
+    "Broad hallux",
+    "Hypertelorism",
+    "Autosomal recessive inheritance",
+    "Orofacial cleft",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

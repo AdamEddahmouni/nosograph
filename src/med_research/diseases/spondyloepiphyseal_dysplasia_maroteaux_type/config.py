@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'skeletal system disease (SPONDYLOEPIPHYSEAL_DYSPLASIA_MAROTEAU
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of skeletal system disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Kyphoscoliosis",
+    "Opacification of the corneal stroma",
+    "Atlantoaxial instability",
+    "Short palm",
+    "Short stature",
+    "Small joint hypermobility",
+    "Short neck",
+    "Generalized osteoporosis",
+    "Short femoral neck",
+    "Shield chest",
+    "Platyspondyly",
+    "Mucopolysacchariduria",
+    "Genu valgum",
+    "Pectus carinatum",
+    "Pes planus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'musculoskeletal system disease (LEUKOCYTE_ADHESION_DEFICIENCY_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of musculoskeletal system disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Echolalia",
+    "Abnormal circulating amino acid concentration",
+    "Prominent fingertip pads",
+    "Short foot",
+    "Abnormality of the integument",
+    "Aminoaciduria",
+    "Brachydactyly",
+    "Organic aciduria",
+    "Short stature",
+    "Cerebral cortical atrophy",
+    "Hypotonia",
+    "Abnormal circulating insulin-like growth factor 1 concentration",
+    "Infantile onset",
+    "Coarse facial features",
+    "Unusual bronchiolitis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'connective tissue disease (LEGG_CALV_PERTHES_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of connective tissue disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Avascular necrosis of the capital femoral epiphysis",
+    "Delayed skeletal maturation",
+    "Short stature",
+    "Non-Mendelian inheritance",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

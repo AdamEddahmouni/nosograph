@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'muscular disease (CONGENITAL_MUSCULAR_DYSTROPHY_WITH_INTEGRIN_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of muscular disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Skeletal muscle atrophy",
+    "Torticollis",
+    "Elevated circulating creatine kinase activity",
+    "Congenital onset",
+    "Scoliosis",
+    "Hypotonia",
+    "Muscular dystrophy",
+    "Infantile onset",
+    "Fatty replacement of skeletal muscle",
+    "Motor delay",
+    "Gowers sign",
+    "Autosomal recessive inheritance",
+    "Muscle weakness",
+    "Intellectual disability",
+    "Increased variability in muscle fiber diameter",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'autosomal recessive disease (CONGENITAL_FACTOR_II_DEFICIENCY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal recessive disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal bleeding",
+    "Menorrhagia",
+    "Intramuscular hematoma",
+    "Childhood onset",
+    "Reduced factor VII activity",
+    "Prolonged bleeding after dental extraction",
+    "Autosomal recessive inheritance",
+    "Joint hemorrhage",
+    "Bruising susceptibility",
+    "Intracranial hemorrhage",
+    "Epistaxis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'urinary system disease (AUTOSOMAL_DOMINANT_FAMILIAL_HEMATURIA_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of urinary system disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated circulating creatine kinase activity",
+    "Supraventricular arrhythmia",
+    "Retinal hemorrhage",
+    "Renal insufficiency",
+    "Hematuria",
+    "Muscle spasm",
+    "Raynaud phenomenon",
+    "Lacunar stroke",
+    "Renal cyst",
+    "Abnormal periventricular white matter morphology",
+    "Dilatation of the cerebral artery",
+    "Retinal arteriolar tortuosity",
+    "Autosomal dominant inheritance",
+    "Intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

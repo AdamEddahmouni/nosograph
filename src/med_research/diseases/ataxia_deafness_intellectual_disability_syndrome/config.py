@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'central nervous system disease (ATAXIA_DEAFNESS_INTELLECTUAL_D
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of central nervous system disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Progressive sensorineural hearing impairment",
+    "Ataxia",
+    "Autosomal recessive inheritance",
+    "Intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

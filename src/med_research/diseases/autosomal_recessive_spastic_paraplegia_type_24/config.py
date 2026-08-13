@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'paraplegia (AUTOSOMAL_RECESSIVE_SPASTIC_PARAPLEGIA_TYPE_24)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of paraplegia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dysmetria",
+    "Cerebellar atrophy",
+    "Gait ataxia",
+    "Urinary incontinence",
+    "Ataxia",
+    "Gait imbalance",
+    "Lower limb spasticity",
+    "Sensory axonal neuropathy",
+    "Nystagmus",
+    "Lower limb muscle weakness",
+    "Young adult onset",
+    "Distal sensory impairment",
+    "Cerebellar vermis atrophy",
+    "Skeletal muscle atrophy",
+    "Juvenile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

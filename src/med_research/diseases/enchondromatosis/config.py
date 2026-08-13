@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'connective tissue disease (ENCHONDROMATOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of connective tissue disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Metaphyseal chondromatosis of humerus",
+    "Metaphyseal chondromatosis of femur",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

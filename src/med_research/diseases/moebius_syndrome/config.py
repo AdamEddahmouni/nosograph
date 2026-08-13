@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'nervous system disease (MOEBIUS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of nervous system disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypogonadotropic hypogonadism",
+    "Epicanthus",
+    "Lower limb undergrowth",
+    "Abnormality of the dentition",
+    "Mild intellectual disability",
+    "Congenital fibrosis of extraocular muscles",
+    "Split hand",
+    "Abnormality of the voice",
+    "Hypertelorism",
+    "Radial deviation of finger",
+    "Sporadic",
+    "Decreased testicular size",
+    "Pes planus",
+    "Hand clenching",
+    "Incoordination",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'musculoskeletal system disease (POLYSYNDACTYLY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of musculoskeletal system disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "3-4 finger cutaneous syndactyly",
+    "Dysplastic distal thumb phalanges with a central hole",
+    "Congenital onset",
+    "Preaxial polydactyly",
+    "Duplication of thumb phalanx",
+    "1-5 toe syndactyly",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

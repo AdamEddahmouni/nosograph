@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'genetic disorder (TRIOSE_PHOSPHATE_ISOMERASE_DEFICIENCY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of genetic disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dystonia",
+    "Myopathy",
+    "Hypotonia",
+    "Generalized hypotonia",
+    "Failure to thrive",
+    "Unsteady gait",
+    "Respiratory failure",
+    "Muscle weakness",
+    "Death in infancy",
+    "Splenomegaly",
+    "Prolonged neonatal jaundice",
+    "Jaundice",
+    "Neonatal onset",
+    "Skeletal muscle atrophy",
+    "Progressive muscle weakness",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'cardiovascular disease (ANEURYSM_OSTEOARTHRITIS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cardiovascular disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dermal translucency",
+    "Eosinophilic infiltration of the esophagus",
+    "Cervical spine instability",
+    "Osteochondritis dissecans",
+    "Cystocele",
+    "Chronic fatigue",
+    "Cataract",
+    "Varicose veins",
+    "Hypertelorism",
+    "Bicuspid aortic valve",
+    "Patent ductus arteriosus",
+    "Retrognathia",
+    "Pulmonic stenosis",
+    "Pes planus",
+    "Subarachnoid hemorrhage",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

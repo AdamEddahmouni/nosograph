@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'genetic disorder (L_RI_WEILL_DYSCHONDROSTEOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of genetic disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Multiple exostoses",
+    "Tibial bowing",
+    "Fibular hypoplasia",
+    "Abnormal carpal morphology",
+    "Abnormal humerus morphology",
+    "Disproportionate short-limb short stature",
+    "High palate",
+    "Limited elbow movement",
+    "Dorsal subluxation of ulna",
+    "Abnormal femoral neck morphology",
+    "Mesomelia",
+    "Scoliosis",
+    "Increased carrying angle",
+    "Coxa valga",
+    "Hypoplasia of the ulna",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'genetic disorder (FOVEAL_HYPOPLASIA_OPTIC_NERVE_DECUSSATION_DE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of genetic disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Optic nerve misrouting",
+    "Astigmatism",
+    "Strabismus",
+    "Axenfeld anomaly",
+    "Infantile onset",
+    "Nystagmus",
+    "Posterior embryotoxon",
+    "Foveal hyperpigmentation",
+    "Hypoplasia of the fovea",
+    "Autosomal recessive inheritance",
+    "Microphthalmia",
+    "Reduced visual acuity",
+    "Alternating esotropia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

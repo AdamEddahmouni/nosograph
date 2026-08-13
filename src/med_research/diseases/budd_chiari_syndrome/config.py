@@ -8,8 +8,13 @@ PIPELINE_LABEL = "Budd-Chiari syndrome (BUDD_CHIARI_SYNDROME)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Budd-Chiari syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Adult onset",
+    "Cirrhosis",
+    "Budd-Chiari syndrome",
+    "Autosomal recessive inheritance",
+    "Hepatocellular carcinoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

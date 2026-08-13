@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA_SIMPLEX_WITH_MOTT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of epidermolysis bullosa
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital onset",
+    "Nail dysplasia",
+    "Hypoplastic fifth toenail",
+    "Infantile onset",
+    "Intra-epidermal blistering",
+    "Onychogryphosis",
+    "Discrete 2 to 5-mm hyper- and hypopigmented macules",
+    "Abnormal blistering of the skin",
+    "Childhood onset",
+    "Punctate palmoplantar hyperkeratosis",
+    "Nail dystrophy",
+    "Autosomal dominant inheritance",
+    "Mottled pigmentation of the trunk and proximal extremities",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

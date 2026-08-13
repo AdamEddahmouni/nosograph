@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'respiratory system disease (LETHAL_CONGENITAL_CONTRACTURE_SYND
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of respiratory system disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Skeletal muscle atrophy",
+    "Pulmonary hypoplasia",
+    "Edema",
+    "Abnormality of the amniotic fluid",
+    "Widening of cervical spinal canal",
+    "Paucity of anterior horn motor neurons",
+    "Autosomal recessive inheritance",
+    "Hypoplasia of the musculature",
+    "Arthrogryposis multiplex congenita",
+    "Neonatal death",
+    "Micrognathia",
+    "Abnormal thorax morphology",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

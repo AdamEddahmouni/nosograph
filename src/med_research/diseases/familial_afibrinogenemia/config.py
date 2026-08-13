@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'hematologic disease (FAMILIAL_AFIBRINOGENEMIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hematologic disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Persistent bleeding after trauma",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
