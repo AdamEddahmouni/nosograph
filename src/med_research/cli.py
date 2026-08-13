@@ -313,7 +313,9 @@ def _build_parser() -> argparse.ArgumentParser:
     dback.add_argument(
         "--dry-run", action="store_true", help="Preview the purge without deleting files"
     )
-    disease_sub.add_parser("list", help="List all available diseases")
+    disease_sub.add_parser("list", help="List all available diseases").add_argument(
+        "--validate", action="store_true", help="Also run config validation on every module"
+    )
     dval = disease_sub.add_parser("validate", help="Validate a disease module's config")
     dval.add_argument("disease_id", nargs="?", help="Disease ID to validate (omit with --all)")
     dval.add_argument("--all", action="store_true", help="Validate every disease module")
@@ -716,26 +718,30 @@ def _build_parser() -> argparse.ArgumentParser:
 # ── Command Handlers ────────────────────────────────────────────────────
 
 
-def cmd_diseases(_args):
-    """List all available diseases with config validation status."""
+def cmd_diseases(args):
+    """List all available diseases (optionally with config validation status)."""
     logger.info("\nAvailable Diseases:")
     logger.info("-" * 60)
-    issues = []
-    for did, disease in Disease.discover().items():
-        p = disease.profile
-        logger.info(f"  {did:6s}  {p.name}")
-        logger.info(f"          {p.description[:80]}...")
-        for field, status in disease.validate().items():
-            if status != "ok":
-                issues.append(f"{did}.{field}: {status}")
-        logger.info("")
-    if issues:
-        logger.warning("[WARN] Config gaps detected:")
-        for issue in issues:
-            logger.info(f"  - {issue}")
-        logger.info("")
-    else:
-        logger.info("[OK] All disease configs complete.")
+    if getattr(args, "validate", False):
+        issues = []
+        for did, disease in Disease.discover().items():
+            p = disease.profile
+            logger.info(f"  {did:6s}  {p.name}")
+            logger.info(f"          {p.description[:80]}...")
+            for field, status in disease.validate().items():
+                if status != "ok":
+                    issues.append(f"{did}.{field}: {status}")
+            logger.info("")
+        if issues:
+            logger.warning("[WARN] Config gaps detected:")
+            for issue in issues:
+                logger.info(f"  - {issue}")
+            logger.info("")
+        else:
+            logger.info("[OK] All disease configs complete.")
+        return 0
+    for did in Disease.list_all():
+        logger.info(f"  {did}")
     return 0
 
 
