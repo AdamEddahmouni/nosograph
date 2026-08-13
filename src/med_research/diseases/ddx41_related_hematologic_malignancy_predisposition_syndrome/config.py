@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'DDX41-related hematologic malignancy predisposition syndrome (
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of DDX41-related hematologic malignancy predisposition syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Myelodysplasia",
+    "Typified by incomplete penetrance",
+    "Acute myeloid leukemia",
+    "Adult onset",
+    "Autosomal dominant inheritance",
+    "Lymphoma",
+    "Systemic lupus erythematosus",
+    "Refractory anemia",
+    "Erythroid dysplasia",
+    "Bone marrow hypocellularity",
+    "Eczematoid dermatitis",
+    "Decreased total leukocyte count",
+    "Increased total monocyte count",
+    "Asthma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

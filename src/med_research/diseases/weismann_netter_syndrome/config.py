@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'Weismann-Netter syndrome (WEISMANN_NETTER_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Weismann-Netter syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Intellectual disability",
+    "Kyphosis",
+    "Scoliosis",
+    "Delayed eruption of permanent teeth",
+    "Small sella turcica",
+    "Anterior tibial bowing",
+    "Horizontal sacrum",
+    "Fibular bowing",
+    "Lateral femoral bowing",
+    "Autosomal dominant inheritance",
+    "Calvarial hyperostosis",
+    "Severe short stature",
+    "Squared iliac bones",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

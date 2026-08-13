@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'spinocerebellar ataxia type 20 (SPINOCEREBELLAR_ATAXIA_TYPE_20
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spinocerebellar ataxia type 20
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypermetric saccades",
+    "Action tremor",
+    "Abnormally high-pitched voice",
+    "Limb ataxia",
+    "Palatal tremor",
+    "Dysphonia",
+    "Abnormal pyramidal sign",
+    "Autosomal dominant inheritance",
+    "Dysarthria",
+    "Adult onset",
+    "Slowly progressive",
+    "Nystagmus",
+    "Postural tremor",
+    "Gait ataxia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

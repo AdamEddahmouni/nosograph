@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Behçet disease (BEHCET_DISEASE)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Behçet disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Oral ulcer",
+    "Arthritis",
+    "Raynaud phenomenon",
+    "Iridocyclitis",
+    "Decreased level of D-mannose in urine",
+    "Superficial thrombophlebitis",
+    "Hypopyon",
+    "Chorioretinitis",
+    "Patchy alopecia",
+    "Irritability",
+    "Epididymitis",
+    "Erythema",
+    "Erythema nodosum",
+    "Iritis",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

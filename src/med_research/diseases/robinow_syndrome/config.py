@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Robinow syndrome (ROBINOW_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Robinow syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "High palate",
+    "Thin upper lip vermilion",
+    "Bilateral ulnar hypoplasia",
+    "Rhizomelia",
+    "Long philtrum",
+    "Flat face",
+    "Delayed skeletal maturation",
+    "Gingival overgrowth",
+    "Short long bone",
+    "Melanocytic nevus",
+    "Pectus excavatum",
+    "Umbilical hernia",
+    "Short distal phalanx of finger",
+    "Vertebral fusion",
+    "Intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

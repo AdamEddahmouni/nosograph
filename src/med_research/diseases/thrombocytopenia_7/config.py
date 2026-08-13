@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'thrombocytopenia 7 (THROMBOCYTOPENIA_7)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of thrombocytopenia 7
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Impaired ADP-induced platelet aggregation",
+    "Reduced platelet alpha granules",
+    "Impaired ristocetin-induced platelet aggregation",
+    "Reduced platelet dense granules",
+    "Thrombocytopenia",
+    "Impaired collagen-induced platelet aggregation",
+    "Impaired arachidonic acid-induced platelet aggregation",
+    "Post-partum hemorrhage",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

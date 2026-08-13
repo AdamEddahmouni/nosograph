@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spinal muscular atrophy-progressive myoclonic epilepsy syndrom
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spinal muscular atrophy-progressive myoclonic epilepsy syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Juvenile onset",
+    "Scoliosis",
+    "Degeneration of anterior horn cells",
+    "Elevated circulating creatine kinase activity",
+    "Tongue fasciculations",
+    "Dementia",
+    "Respiratory insufficiency due to muscle weakness",
+    "Autosomal recessive inheritance",
+    "Recurrent respiratory infections",
+    "Skeletal muscle atrophy",
+    "Gowers sign",
+    "Generalized-onset seizure",
+    "Progressive",
+    "Myoclonus",
+    "Tremor",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

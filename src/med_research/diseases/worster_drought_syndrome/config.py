@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'Worster-Drought syndrome (WORSTER_DROUGHT_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Worster-Drought syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Seizure",
+    "Dysarthria",
+    "Drooling",
+    "Autosomal dominant inheritance",
+    "Muscle weakness",
+    "Intellectual disability",
+    "EEG abnormality",
+    "Microcephaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'immunoglobulin-mediated membranoproliferative glomerulonephrit
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunoglobulin-mediated membranoproliferative glomerulonephritis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Proteinuria",
+    "Progressive",
+    "Infantile onset",
+    "Hemolytic anemia",
+    "Thrombocytopenia",
+    "Hypoalbuminemia",
+    "Juvenile onset",
+    "Thickened glomerular basement membrane",
+    "Acute kidney injury",
+    "Podocyte foot process effacement",
+    "Childhood onset",
+    "Early young adult onset",
+    "Autosomal recessive inheritance",
+    "Nephrotic syndrome",
+    "Stage 5 chronic kidney disease",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

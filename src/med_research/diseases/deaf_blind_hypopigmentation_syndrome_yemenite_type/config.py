@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'deaf blind hypopigmentation syndrome, Yemenite type (DEAF_BLIN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of deaf blind hypopigmentation syndrome, Yemenite type
-SYMPTOMS = []
+SYMPTOMS = [
+    "White forelock",
+    "Chorioretinal coloboma",
+    "Nystagmus",
+    "Autosomal recessive inheritance",
+    "Iris coloboma",
+    "Microcornea",
+    "Numerous pigmented freckles",
+    "Severe sensorineural hearing impairment",
+    "Patchy hypo- and hyperpigmentation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'karyomegalic interstitial nephritis (KARYOMEGALIC_INTERSTITIAL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of karyomegalic interstitial nephritis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Renal interstitial fibrosis",
+    "Proteinuria",
+    "Autosomal recessive inheritance",
+    "Tubulointerstitial nephritis",
+    "Nephronophthisis",
+    "Glycosuria",
+    "Progressive",
+    "Elevated circulating creatinine concentration",
+    "Stage 5 chronic kidney disease",
+    "Elevated circulating hepatic transaminase concentration",
+    "Increased blood urea nitrogen",
+    "Hematuria",
+    "Renal tubular cyst",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

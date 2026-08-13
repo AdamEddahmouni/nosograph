@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'hereditary neutrophilia (HEREDITARY_NEUTROPHILIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hereditary neutrophilia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Splenomegaly",
+    "Autosomal dominant inheritance",
+    "Elevated leukocyte alkaline phosphatase",
+    "Increased total neutrophil count",
+    "Myelodysplasia",
+    "Granulocytic hyperplasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

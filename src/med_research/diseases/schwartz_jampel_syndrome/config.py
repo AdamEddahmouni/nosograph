@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Schwartz-Jampel syndrome (SCHWARTZ_JAMPEL_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Schwartz-Jampel syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Anterior bowing of long bones",
+    "Quadriceps muscle weakness",
+    "Joint contracture of the hand",
+    "Skeletal muscle atrophy",
+    "Narrow palpebral fissure",
+    "Infantile onset",
+    "Concave nasal ridge",
+    "Deep philtrum",
+    "Micrognathia",
+    "Weak voice",
+    "Abnormal femoral epiphysis morphology",
+    "Lumbar hyperlordosis",
+    "Malar flattening",
+    "Umbilical hernia",
+    "Cervical kyphosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

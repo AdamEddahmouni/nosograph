@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'cataracts, hearing impairment, nephrotic syndrome, and enteroc
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cataracts, hearing impairment, nephrotic syndrome, and enterocolitis 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nephrotic syndrome",
+    "Death in childhood",
+    "CNS hypomyelination",
+    "Cataract",
+    "Congenital onset",
+    "Focal segmental glomerulosclerosis",
+    "Cerebellar hypoplasia",
+    "Enterocolitis",
+    "Autosomal recessive inheritance",
+    "Mesangial hypercellularity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

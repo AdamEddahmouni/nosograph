@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'nevoid basal cell carcinoma syndrome (NEVOID_BASAL_CELL_CARCIN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of nevoid basal cell carcinoma syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Supernumerary ribs",
+    "Hamartomatous stomach polyps",
+    "Hemivertebrae",
+    "Brachydactyly",
+    "Plantar pits",
+    "Macrocephaly",
+    "Scoliosis",
+    "Cleft upper lip",
+    "Bifid ribs",
+    "Vertebral fusion",
+    "Short 4th metacarpal",
+    "Intellectual disability",
+    "Rhabdomyoma",
+    "Spina bifida",
+    "Medulloblastoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

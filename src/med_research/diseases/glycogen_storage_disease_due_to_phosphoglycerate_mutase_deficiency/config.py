@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'glycogen storage disease due to phosphoglycerate mutase defici
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of glycogen storage disease due to phosphoglycerate mutase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated circulating creatine kinase activity",
+    "Myopathy",
+    "Exercise intolerance",
+    "Renal insufficiency",
+    "Myoglobinuria",
+    "Exercise-induced muscle cramps",
+    "Autosomal recessive inheritance",
+    "Rhabdomyolysis",
+    "Exercise-induced myalgia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

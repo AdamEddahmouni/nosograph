@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'muscular dystrophy-dystroglycanopathy (congenital with intelle
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of muscular dystrophy-dystroglycanopathy (congenital with intellectual disability), type B1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Microcephaly",
+    "Infantile onset",
+    "Flexion contracture",
+    "Muscular dystrophy",
+    "Cardiomyopathy",
+    "Retinal dystrophy",
+    "Cerebellar vermis hypoplasia",
+    "Facial palsy",
+    "Macroglossia",
+    "Global developmental delay",
+    "Microphthalmia",
+    "Abnormal left ventricular function",
+    "Autosomal recessive inheritance",
+    "Hypoplasia of the corpus callosum",
+    "Cerebellar dysplasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

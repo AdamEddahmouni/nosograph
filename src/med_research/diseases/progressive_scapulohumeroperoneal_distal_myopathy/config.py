@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'progressive scapulohumeroperoneal distal myopathy (PROGRESSIVE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of progressive scapulohumeroperoneal distal myopathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Skeletal muscle atrophy",
+    "Increased connective tissue",
+    "Infantile onset",
+    "Hyperlordosis",
+    "Centrally nucleated skeletal muscle fibers",
+    "Slowly progressive",
+    "Scoliosis",
+    "Nemaline bodies",
+    "Young adult onset",
+    "Increased variability in muscle fiber diameter",
+    "Hand muscle atrophy",
+    "Achilles tendon contracture",
+    "Foot dorsiflexor weakness",
+    "Autosomal dominant inheritance",
+    "Facial palsy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

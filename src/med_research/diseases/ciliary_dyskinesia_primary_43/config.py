@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'ciliary dyskinesia, primary, 43 (CILIARY_DYSKINESIA_PRIMARY_43
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ciliary dyskinesia, primary, 43
-SYMPTOMS = []
+SYMPTOMS = [
+    "Recurrent lower respiratory tract infections",
+    "Chronic rhinitis",
+    "Productive cough",
+    "Chronic sinusitis",
+    "Recurrent upper respiratory tract infections",
+    "Autosomal dominant inheritance",
+    "Bronchiectasis",
+    "Abdominal situs inversus",
+    "Noncommunicating hydrocephalus",
+    "Neonatal respiratory distress",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Glanzmann thrombasthenia 1 (GLANZMANN_THROMBASTHENIA_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Glanzmann thrombasthenia 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Epistaxis",
+    "Impaired clot retraction",
+    "Impaired platelet aggregation",
+    "Gastrointestinal hemorrhage",
+    "Gingival bleeding",
+    "Bruising susceptibility",
+    "Ecchymosis",
+    "Purpura",
+    "Excessive bleeding from superficial cuts",
+    "Autosomal recessive inheritance",
+    "Abnormal platelet count",
+    "Impaired ristocetin-induced platelet aggregation",
+    "Prolonged bleeding time",
+    "Intracranial hemorrhage",
+    "Impaired epinephrine-induced platelet aggregation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

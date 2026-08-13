@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'microcephaly, seizures, and developmental delay (MICROCEPHALY_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of microcephaly, seizures, and developmental delay
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ataxia",
+    "Microcephaly",
+    "Hyperactivity",
+    "Hypoplasia of the corpus callosum",
+    "Severe intellectual disability",
+    "Cerebellar atrophy",
+    "Motor delay",
+    "Progressive microcephaly",
+    "Ventriculomegaly",
+    "Hypotonia",
+    "Seizure",
+    "Hyporeflexia",
+    "Global developmental delay",
+    "Autosomal recessive inheritance",
+    "Simplified gyral pattern",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

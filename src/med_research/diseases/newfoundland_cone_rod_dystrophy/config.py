@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'Newfoundland cone-rod dystrophy (NEWFOUNDLAND_CONE_ROD_DYSTROP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Newfoundland cone-rod dystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Scotoma",
+    "Retinal dystrophy",
+    "Reduced visual acuity",
+    "Nyctalopia",
+    "Infantile onset",
+    "Central scotoma",
+    "Color vision defect",
+    "Spicular pigmentation of the retina",
+    "Ring scotoma",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

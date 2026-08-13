@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'short stature, facial dysmorphism, and skeletal anomalies with
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of short stature, facial dysmorphism, and skeletal anomalies with or without cardiac anomalies 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Microcephaly",
+    "Oral-pharyngeal dysphagia",
+    "Enamel hypoplasia",
+    "Arrhythmia",
+    "Autosomal recessive inheritance",
+    "Patent foramen ovale",
+    "Bicoronal synostosis",
+    "Dental crowding",
+    "Pierre-Robin sequence",
+    "Triangular face",
+    "Short palm",
+    "Tracheobronchomalacia",
+    "11 pairs of ribs",
+    "Pointed chin",
+    "Joint hypermobility",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

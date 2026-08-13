@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'late-onset Parkinson disease (LATE_ONSET_PARKINSON_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of late-onset Parkinson disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hallucinations",
+    "Weak voice",
+    "Adult onset",
+    "Personality changes",
+    "Short stepped shuffling gait",
+    "Sporadic",
+    "Dementia",
+    "Micrographia",
+    "Sleep disturbance",
+    "Tremor",
+    "Lewy bodies",
+    "Dysarthria",
+    "Substantia nigra gliosis",
+    "Bradykinesia",
+    "Postural instability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

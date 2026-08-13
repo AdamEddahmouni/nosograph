@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'neutropenia, severe congenital, 9, autosomal dominant (NEUTROP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neutropenia, severe congenital, 9, autosomal dominant
-SYMPTOMS = []
+SYMPTOMS = [
+    "Infantile onset",
+    "Global developmental delay",
+    "Seizure",
+    "Autosomal dominant inheritance",
+    "Myeloid maturation arrest",
+    "Childhood onset",
+    "Congenital onset",
+    "Splenomegaly",
+    "3-Methylglutaconic aciduria",
+    "Cataract",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

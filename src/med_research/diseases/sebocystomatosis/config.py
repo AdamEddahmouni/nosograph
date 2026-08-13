@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'sebocystomatosis (SEBOCYSTOMATOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of sebocystomatosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Natal tooth",
+    "Steatocystoma multiplex",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

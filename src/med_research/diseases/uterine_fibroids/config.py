@@ -8,8 +8,11 @@ PIPELINE_LABEL = "uterine fibroid measurement (UTERINE_FIBROIDS)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of uterine fibroid measurement
-SYMPTOMS = []
+SYMPTOMS = [
+    "Typified by somatic mosaicism",
+    "Uterine leiomyoma",
+    "Adult onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

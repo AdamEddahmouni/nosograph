@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'classic congenital adrenal hyperplasia due to 21-hydroxylase d
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Adrenal hyperplasia",
+    "Gynecomastia",
+    "Fever",
+    "Elevated circulating 21-deoxycortisol concentration",
+    "Adrenogenital syndrome",
+    "Hypertension",
+    "Hypospadias",
+    "Hypoglycemia",
+    "Abnormal thorax morphology",
+    "Growth abnormality",
+    "Autosomal recessive inheritance",
+    "Recurrent fever",
+    "Renal salt wasting",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

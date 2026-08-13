@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'homocystinuria due to methylene tetrahydrofolate reductase def
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of homocystinuria due to methylene tetrahydrofolate reductase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperhomocystinemia",
+    "Muscle weakness",
+    "Incoordination",
+    "Atypical behavior",
+    "Paresthesia",
+    "Global developmental delay",
+    "Microcephaly",
+    "Homocystinuria",
+    "Autosomal recessive inheritance",
+    "Stroke",
+    "Gait disturbance",
+    "Seizure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

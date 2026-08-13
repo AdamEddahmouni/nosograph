@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of TCF12-related craniosynostosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sagittal craniosynostosis",
+    "Strabismus",
+    "Autism",
+    "Low anterior hairline",
+    "Brachydactyly",
+    "Autosomal dominant inheritance",
+    "Partial agenesis of the corpus callosum",
+    "Ptosis",
+    "Bicoronal synostosis",
+    "Dental malocclusion",
+    "Single transverse palmar crease",
+    "Left unicoronal synostosis",
+    "Right unicoronal synostosis",
+    "Mild global developmental delay",
+    "Hallux valgus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

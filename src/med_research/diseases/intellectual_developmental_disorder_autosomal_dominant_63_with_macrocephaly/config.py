@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'intellectual developmental disorder, autosomal dominant 63, wi
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of intellectual developmental disorder, autosomal dominant 63, with macrocephaly
-SYMPTOMS = []
+SYMPTOMS = [
+    "Tapered finger",
+    "Delayed speech and language development",
+    "Infantile onset",
+    "Highly arched eyebrow",
+    "Frontal bossing",
+    "Downslanted palpebral fissures",
+    "Hypertelorism",
+    "Intellectual disability",
+    "High palate",
+    "Delayed ability to walk",
+    "Delayed eruption of teeth",
+    "Autosomal dominant inheritance",
+    "Chronic constipation",
+    "Delayed ability to sit",
+    "Short chin",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

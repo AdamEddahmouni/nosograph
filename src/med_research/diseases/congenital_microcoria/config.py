@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'congenital microcoria (CONGENITAL_MICROCORIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital microcoria
-SYMPTOMS = []
+SYMPTOMS = [
+    "Myopia",
+    "Hypoplasia of the iris dilator muscle",
+    "Microcoria",
+    "Miosis",
+    "Glaucoma",
+    "Ocular hypertension",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

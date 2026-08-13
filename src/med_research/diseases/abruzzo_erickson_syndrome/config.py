@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'Abruzzo-Erickson syndrome (ABRUZZO_ERICKSON_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Abruzzo-Erickson syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short stature",
+    "Macrotia",
+    "Protruding ear",
+    "Hearing impairment",
+    "Coloboma",
+    "Cleft palate",
+    "Radioulnar synostosis",
+    "Hypospadias",
+    "X-linked inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

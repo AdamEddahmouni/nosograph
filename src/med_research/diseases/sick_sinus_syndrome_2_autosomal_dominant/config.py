@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'sick sinus syndrome 2, autosomal dominant (SICK_SINUS_SYNDROME
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of sick sinus syndrome 2, autosomal dominant
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital onset",
+    "Young adult onset",
+    "Prolonged QTc interval",
+    "Left ventricular noncompaction",
+    "First degree atrioventricular block",
+    "Abnormal QT interval",
+    "Paroxysmal atrial fibrillation",
+    "Early young adult onset",
+    "Left ventricular hypertrophy",
+    "Polymorphic ventricular tachycardia",
+    "Mitral valve prolapse",
+    "Sick sinus syndrome",
+    "Syncope",
+    "T-wave inversion",
+    "Torsade de pointes",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

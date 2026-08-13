@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'Muir-Torre syndrome (MUIR_TORRE_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Muir-Torre syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Breast carcinoma",
+    "Laryngeal carcinoma",
+    "Malignant genitourinary tract tumor",
+    "Autosomal dominant inheritance",
+    "Duodenal adenocarcinoma",
+    "Benign gastrointestinal tract tumors",
+    "Adenoma sebaceum",
+    "Colonic diverticula",
+    "Ovarian neoplasm",
+    "Benign genitourinary tract neoplasm",
+    "Middle age onset",
+    "Colon cancer",
+    "Sebaceous gland carcinoma",
+    "Basal cell carcinoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'telangiectasia, hereditary hemorrhagic, type 1 (TELANGIECTASIA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of telangiectasia, hereditary hemorrhagic, type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Melena",
+    "Intermediate young adult onset",
+    "Miscarriage",
+    "Gastrointestinal hemorrhage",
+    "Brain abscess",
+    "Right-to-left shunt",
+    "Clubbing",
+    "Restrictive ventilatory defect",
+    "Palate telangiectasia",
+    "Cirrhosis",
+    "Hematemesis",
+    "Hemoptysis",
+    "Tongue telangiectasia",
+    "Gastrointestinal arteriovenous malformation",
+    "Transient ischemic attack",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

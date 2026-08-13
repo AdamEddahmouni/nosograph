@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'myopathy due to calsequestrin and SERCA1 protein overload (MYO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of myopathy due to calsequestrin and SERCA1 protein overload
-SYMPTOMS = []
+SYMPTOMS = [
+    "Muscle fiber calsequestrin 1-containing inclusion bodies",
+    "Easy fatigability",
+    "Proximal muscle weakness",
+    "Autosomal dominant inheritance",
+    "Muscle weakness",
+    "Muscle spasm",
+    "Myalgia",
+    "Elevated circulating creatine kinase activity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

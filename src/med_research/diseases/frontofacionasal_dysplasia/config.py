@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'frontofacionasal dysplasia (FRONTOFACIONASAL_DYSPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of frontofacionasal dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Orofacial cleft",
+    "Bifid nose",
+    "S-shaped palpebral fissures",
+    "Iris coloboma",
+    "Brachycephaly",
+    "Midline defect of the nose",
+    "Frontal cutaneous lipoma",
+    "Telecanthus",
+    "Short nose",
+    "Underdeveloped nasal alae",
+    "Blepharophimosis",
+    "Absent inner eyelashes",
+    "Cranium bifidum occultum",
+    "Malar flattening",
+    "Ptosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

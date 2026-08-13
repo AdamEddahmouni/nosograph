@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'developmental malformations-deafness-dystonia syndrome (DEVELO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of developmental malformations-deafness-dystonia syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Loss of ambulation",
+    "Dysarthria",
+    "High forehead",
+    "Small for gestational age",
+    "Hypoplastic scapulae",
+    "Oculogyric crisis",
+    "Achalasia",
+    "Cleft upper lip",
+    "Leg dystonia",
+    "Femoral retroversion",
+    "Mild intellectual disability",
+    "Mild global developmental delay",
+    "Autosomal dominant inheritance",
+    "Motor delay",
+    "Congenital onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

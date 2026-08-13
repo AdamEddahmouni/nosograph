@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'punctate palmoplantar keratoderma type III (PUNCTATE_PALMOPLAN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of punctate palmoplantar keratoderma type III
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Acrokeratosis",
+    "Hyperkeratosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

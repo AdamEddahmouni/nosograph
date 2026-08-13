@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Perrault syndrome 5 (PERRAULT_SYNDROME_5)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Perrault syndrome 5
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Hypergonadotropic hypogonadism",
+    "Seizure",
+    "Nystagmus",
+    "Primary amenorrhea",
+    "Ophthalmoplegia",
+    "Elevated circulating creatine kinase activity",
+    "Gonadal dysgenesis",
+    "Positive Romberg sign",
+    "Increased circulating lactate concentration",
+    "Ataxia",
+    "Pes cavus",
+    "High palate",
+    "Sensory axonal neuropathy",
+    "Hyporeflexia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'retinal dystrophy, optic nerve edema, splenomegaly, anhidrosis
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of retinal dystrophy, optic nerve edema, splenomegaly, anhidrosis, and migraine headache syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Splenomegaly",
+    "Autosomal dominant inheritance",
+    "Pancytopenia",
+    "Urticaria",
+    "Migraine",
+    "Anhidrosis",
+    "Juvenile onset",
+    "Cone/cone-rod dystrophy",
+    "Recurrent fever",
+    "Visual loss",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'arthrogryposis-severe scoliosis syndrome (ARTHROGRYPOSIS_SEVER
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of arthrogryposis-severe scoliosis syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Low posterior hairline",
+    "Low anterior hairline",
+    "Kyphosis",
+    "Camptodactyly",
+    "Single transverse palmar crease",
+    "Depressed nasal bridge",
+    "Autosomal dominant inheritance",
+    "Hypoplastic labia majora",
+    "Lumbar scoliosis",
+    "Nystagmus",
+    "Hypoplastic helices",
+    "Fibular deviation of toes",
+    "Tibial deviation of toes",
+    "Camptodactyly of 2nd-5th fingers",
+    "Equinovarus deformity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'sideroblastic anemia 3 (SIDEROBLASTIC_ANEMIA_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of sideroblastic anemia 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypochromia",
+    "Jaundice",
+    "Autosomal recessive inheritance",
+    "Elevated hepatic iron concentration",
+    "Increased circulating ferritin concentration",
+    "Decreased mean corpuscular volume",
+    "Anemia",
+    "Splenomegaly",
+    "Hepatomegaly",
+    "Type II diabetes mellitus",
+    "Erythroid hyperplasia",
+    "Elevated circulating hepatic transaminase concentration",
+    "Cirrhosis",
+    "Hepatosplenomegaly",
+    "Conjugated hyperbilirubinemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

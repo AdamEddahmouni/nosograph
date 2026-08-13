@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'non-spherocytic hemolytic anemia due to hexokinase deficiency 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of non-spherocytic hemolytic anemia due to hexokinase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Jaundice",
+    "Hyperbilirubinemia",
+    "Splenomegaly",
+    "Autosomal recessive inheritance",
+    "Nonspherocytic hemolytic anemia",
+    "Reticulocytosis",
+    "Normocytic anemia",
+    "Cholelithiasis",
+    "Normochromic anemia",
+    "Congenital onset",
+    "Cholecystitis",
+    "Reduced erythrocyte hexokinase activity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

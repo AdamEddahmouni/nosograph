@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'arhinia, choanal atresia, and microphthalmia (ARHINIA_CHOANAL_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of arhinia, choanal atresia, and microphthalmia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Choanal atresia",
+    "Cleft palate",
+    "Abnormal pinna morphology",
+    "High palate",
+    "Dental malocclusion",
+    "Lacrimal duct atresia",
+    "Cryptorchidism",
+    "Hypoplasia of teeth",
+    "Autosomal dominant inheritance",
+    "Cleft lip",
+    "Paranasal sinus hypoplasia",
+    "Hypospadias",
+    "Conductive hearing impairment",
+    "Hypogonadotropic hypogonadism",
+    "Hypoplastic labia majora",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

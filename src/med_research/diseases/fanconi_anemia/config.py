@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Fanconi anemia (FANCONI_ANEMIA)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Fanconi anemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sacral dimple",
+    "Flexion contracture",
+    "Single umbilical artery",
+    "Vesicoureteral reflux",
+    "Failure to thrive",
+    "Cafe-au-lait spot",
+    "Hypothyroidism",
+    "Short 1st metacarpal",
+    "X-linked recessive inheritance",
+    "Decreased body weight",
+    "Elevated circulating alpha-fetoprotein concentration",
+    "Colpocephaly",
+    "Vitiligo",
+    "Renal cyst",
+    "Hypergonadotropic hypogonadism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Alpha-methylacyl-CoA racemase deficiency (ALPHA_METHYLACYL_COA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Alpha-methylacyl-CoA racemase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Intention tremor",
+    "Spasticity",
+    "Hyperreflexia",
+    "Increased circulating very long-chain fatty acid concentration",
+    "Ataxia",
+    "Status epilepticus",
+    "Increased phytanic acid:pristanic acid ratio",
+    "Seizure",
+    "Depression",
+    "Visual impairment",
+    "Pigmentary retinopathy",
+    "Cataract",
+    "Autosomal recessive inheritance",
+    "Hemiparesis",
+    "Focal-onset seizure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

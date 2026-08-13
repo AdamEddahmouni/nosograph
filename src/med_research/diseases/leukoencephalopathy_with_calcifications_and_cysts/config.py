@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'leukoencephalopathy with calcifications and cysts (LEUKOENCEPH
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of leukoencephalopathy with calcifications and cysts
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hemiplegia",
+    "Cerebral calcification",
+    "Leukodystrophy",
+    "Dystonia",
+    "Childhood onset",
+    "Young adult onset",
+    "Abnormality of extrapyramidal motor function",
+    "Autosomal recessive inheritance",
+    "Leukoencephalopathy",
+    "Mental deterioration",
+    "Gait disturbance",
+    "Abnormal pyramidal sign",
+    "Progressive",
+    "Juvenile onset",
+    "Spasticity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

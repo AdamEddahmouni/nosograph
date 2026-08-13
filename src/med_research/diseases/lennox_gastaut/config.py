@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Lennox-Gastaut syndrome (LENNOX_GASTAUT)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Lennox-Gastaut syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "EEG with generalized spikes",
+    "Generalized non-motor (absence) seizure",
+    "Status epilepticus",
+    "Bilateral tonic-clonic seizure",
+    "Autistic behavior",
+    "EEG with generalized polyspikes",
+    "Autosomal dominant inheritance",
+    "Tonic seizure",
+    "Generalized myoclonic seizure",
+    "Multifocal epileptiform discharges",
+    "Epileptic encephalopathy",
+    "Childhood onset",
+    "Visually-induced seizure",
+    "Infantile onset",
+    "Global developmental delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

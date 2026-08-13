@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of inborn error of immunity
-SYMPTOMS = []
+SYMPTOMS = [
+    "BCGitis",
+    "Recurrent pneumonia",
+    "Recurrent oral herpes",
+    "Kaposi's sarcoma",
+    "Decreased total neutrophil count",
+    "X-linked recessive inheritance",
+    "Decreased circulating IgA concentration",
+    "Reduced total natural killer cell count",
+    "Growth delay",
+    "Intermittent thrombocytopenia",
+    "Decreased total T cell count",
+    "Recurrent oral thrush",
+    "Wheezing",
+    "Eosinophilic granuloma",
+    "Failure to thrive",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

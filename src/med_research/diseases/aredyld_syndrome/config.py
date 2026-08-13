@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'AREDYLD syndrome (AREDYLD_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of AREDYLD syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ectodermal dysplasia",
+    "Generalized hypotrichosis",
+    "Autosomal recessive inheritance",
+    "Abnormality of the ear",
+    "Mandibular prognathia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

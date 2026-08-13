@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'gnb5-related intellectual disability-cardiac arrhythmia syndro
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of gnb5-related intellectual disability-cardiac arrhythmia syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nystagmus",
+    "Sick sinus syndrome",
+    "Global developmental delay",
+    "Bradycardia",
+    "Retinal degeneration",
+    "Autosomal recessive inheritance",
+    "Delayed speech and language development",
+    "Seizure",
+    "Abnormal electroretinogram",
+    "Infantile onset",
+    "Gastroesophageal reflux",
+    "Intellectual disability",
+    "Hypotonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

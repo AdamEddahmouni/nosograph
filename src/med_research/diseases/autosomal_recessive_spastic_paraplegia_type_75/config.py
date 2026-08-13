@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Autosomal recessive spastic paraplegia type 75 (AUTOSOMAL_RECE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Autosomal recessive spastic paraplegia type 75
-SYMPTOMS = []
+SYMPTOMS = [
+    "Distal lower limb amyotrophy",
+    "Slowly progressive",
+    "Reduced visual acuity",
+    "Hypotonia",
+    "Hyporeflexia of lower limbs",
+    "Spastic paraparesis",
+    "Optic atrophy",
+    "Spasticity",
+    "Hypermetropia",
+    "Autosomal recessive inheritance",
+    "Dysmetria",
+    "Spastic dysarthria",
+    "Areflexia of lower limbs",
+    "Cognitive impairment",
+    "Loss of ambulation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

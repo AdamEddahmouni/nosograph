@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'autosomal dominant nonsyndromic hearing loss 1 (AUTOSOMAL_DOMI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal dominant nonsyndromic hearing loss 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Post-partum hemorrhage",
+    "Juvenile onset",
+    "Menorrhagia",
+    "Sensorineural hearing impairment",
+    "Macrothrombocytopenia",
+    "Thrombocytopenia",
+    "Autosomal dominant inheritance",
+    "Childhood onset",
+    "Impaired platelet aggregation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

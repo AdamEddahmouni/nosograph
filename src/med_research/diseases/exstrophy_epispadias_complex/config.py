@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'exstrophy-epispadias complex (EXSTROPHY_EPISPADIAS_COMPLEX)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of exstrophy-epispadias complex
-SYMPTOMS = []
+SYMPTOMS = [
+    "Chiari malformation",
+    "Tethered cord",
+    "Duplicated colon",
+    "Pelvic kidney",
+    "Vesicovaginal fistula",
+    "Anteriorly placed anus",
+    "Rectovaginal fistula",
+    "Duplicated collecting system",
+    "Congenital hip dislocation",
+    "Hydronephrosis",
+    "Labial hypoplasia",
+    "Hydrocephalus",
+    "Talipes equinovarus",
+    "Absence of the sacrum",
+    "Epispadias",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

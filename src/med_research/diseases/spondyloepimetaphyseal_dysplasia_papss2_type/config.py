@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'spondyloepimetaphyseal dysplasia, PAPSS2 type (SPONDYLOEPIMETA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondyloepimetaphyseal dysplasia, PAPSS2 type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Irregular vertebral endplates",
+    "Spondyloepimetaphyseal dysplasia",
+    "Hirsutism",
+    "Lower limb undergrowth",
+    "Secondary amenorrhea",
+    "Platyspondyly",
+    "Lumbar scoliosis",
+    "Brachydactyly",
+    "Autosomal recessive inheritance",
+    "Bowing of the legs",
+    "Kyphoscoliosis",
+    "Acne",
+    "Premature pubarche",
+    "Short stature",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

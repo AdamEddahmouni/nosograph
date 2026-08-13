@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'glomerulopathy with fibronectin deposits 2 (GLOMERULOPATHY_WIT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of glomerulopathy with fibronectin deposits 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Glomerular deposits",
+    "Renal insufficiency",
+    "Glomerulomegaly",
+    "Stage 5 chronic kidney disease",
+    "Slowly progressive",
+    "Proteinuria",
+    "Microscopic hematuria",
+    "Young adult onset",
+    "Nephrotic syndrome",
+    "Juvenile onset",
+    "Glomerular fibronectin deposits",
+    "Hypertension",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

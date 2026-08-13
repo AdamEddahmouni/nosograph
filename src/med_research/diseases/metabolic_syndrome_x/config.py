@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'metabolic syndrome X (METABOLIC_SYNDROME_X)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of metabolic syndrome X
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Hypertension",
+    "Abdominal obesity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

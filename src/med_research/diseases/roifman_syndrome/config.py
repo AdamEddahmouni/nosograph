@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Roifman syndrome (ROIFMAN_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Roifman syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Noncompaction cardiomyopathy",
+    "Prominent eyelashes",
+    "Eczematoid dermatitis",
+    "Splenomegaly",
+    "Short digit",
+    "Underdeveloped nasal alae",
+    "Hypotonia",
+    "Short metacarpal",
+    "Intrauterine growth retardation",
+    "Ventricular septal defect",
+    "Spondyloepiphyseal dysplasia",
+    "Biconvex vertebral bodies",
+    "Microcephaly",
+    "Short toe",
+    "Lymphadenopathy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

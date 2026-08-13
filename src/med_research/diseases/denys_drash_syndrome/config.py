@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Denys-Drash syndrome (DENYS_DRASH_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Denys-Drash syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Septate vagina",
+    "Ambiguous genitalia, female",
+    "Gonadal dysgenesis",
+    "Stage 5 chronic kidney disease",
+    "Gonadal tissue inappropriate for external genitalia or chromosomal sex",
+    "Neonatal respiratory distress",
+    "Nephropathy",
+    "Posterolateral diaphragmatic hernia",
+    "Neonatal death",
+    "Uterus didelphys",
+    "Focal segmental glomerulosclerosis",
+    "Epicanthus",
+    "Wide anterior fontanel",
+    "Typified by somatic mosaicism",
+    "Ovarian gonadoblastoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

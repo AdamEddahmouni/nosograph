@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'Charcot-Marie-Tooth disease-hearing loss-intellectual disabili
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Charcot-Marie-Tooth disease-hearing loss-intellectual disability syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Peripheral neuropathy",
+    "Sensorineural hearing impairment",
+    "Intellectual disability",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

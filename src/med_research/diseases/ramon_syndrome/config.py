@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Ramon syndrome (RAMON_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Ramon syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Angiokeratoma",
+    "Kyphosis",
+    "Axenfeld anomaly",
+    "Delayed eruption of teeth",
+    "Autosomal recessive inheritance",
+    "Short stature",
+    "Pigmentary retinopathy",
+    "Optic disc pallor",
+    "Scoliosis",
+    "Telangiectasia",
+    "Enlarged labia minora",
+    "Juvenile rheumatoid arthritis",
+    "Narrow palate",
+    "Hearing impairment",
+    "Gingival fibromatosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

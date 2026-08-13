@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'aceruloplasminemia (ACERULOPLASMINEMIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of aceruloplasminemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ataxia",
+    "Adult onset",
+    "Autosomal recessive inheritance",
+    "Diabetes mellitus",
+    "Chorea",
+    "Abnormality of extrapyramidal motor function",
+    "Blepharospasm",
+    "Cogwheel rigidity",
+    "Torticollis",
+    "Decreased circulating iron concentration",
+    "Scanning speech",
+    "Increased circulating ferritin concentration",
+    "Anemia",
+    "Aceruloplasminemia",
+    "Dysarthria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'non-alcoholic fatty liver disease (NON_ALCOHOLIC_FATTY_LIVER_D
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of non-alcoholic fatty liver disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Non-Mendelian inheritance",
+    "Hepatic steatosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

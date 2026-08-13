@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'peripheral motor neuropathy, childhood-onset, biotin-responsiv
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of peripheral motor neuropathy, childhood-onset, biotin-responsive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Interosseus muscle atrophy",
+    "Thenar muscle atrophy",
+    "Juvenile onset",
+    "Premature graying of hair",
+    "Dysmetria",
+    "Areflexia of lower limbs",
+    "Autosomal recessive inheritance",
+    "Dilated cardiomyopathy",
+    "Intellectual disability",
+    "Dysdiadochokinesis",
+    "Inguinal hernia",
+    "Distal lower limb muscle weakness",
+    "Fiber type grouping",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

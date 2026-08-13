@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'beta-thalassemia-X-linked thrombocytopenia syndrome (BETA_THAL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of beta-thalassemia-X-linked thrombocytopenia syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "X-linked recessive inheritance",
+    "Increased mean platelet volume",
+    "Bruising susceptibility",
+    "Thrombocytopenia",
+    "Splenomegaly",
+    "Petechiae",
+    "Prolonged bleeding time",
+    "Hemolytic anemia",
+    "Epistaxis",
+    "Reticulocytosis",
+    "Increased RBC distribution width",
+    "Reduced platelet alpha granules",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

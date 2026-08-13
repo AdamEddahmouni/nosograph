@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'hydrocephaly-tall stature-joint laxity syndrome (HYDROCEPHALY_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hydrocephaly-tall stature-joint laxity syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Tall stature",
+    "Kyphoscoliosis",
+    "Joint hypermobility",
+    "Thoracolumbar kyphosis",
+    "Autosomal recessive inheritance",
+    "Hydrocephalus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

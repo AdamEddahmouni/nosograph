@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'tremor-ataxia-central hypomyelination syndrome (TREMOR_ATAXIA_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of tremor-ataxia-central hypomyelination syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dysmetria",
+    "Intention tremor",
+    "Global developmental delay",
+    "Choreoathetosis",
+    "Optic disc pallor",
+    "Pendular nystagmus",
+    "Dystonia",
+    "Abnormal pyramidal sign",
+    "Dysarthria",
+    "Stooped posture",
+    "Delayed speech and language development",
+    "Intellectual disability",
+    "Autosomal dominant inheritance",
+    "Delayed CNS myelination",
+    "Psychosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

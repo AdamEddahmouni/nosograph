@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'cone-rod dystrophy 6 (CONE_ROD_DYSTROPHY_6)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cone-rod dystrophy 6
-SYMPTOMS = []
+SYMPTOMS = [
+    "Childhood onset",
+    "Nyctalopia",
+    "Spicular pigmentation of the retina",
+    "Reduced visual acuity",
+    "Nystagmus",
+    "Peripheral visual field loss",
+    "Attenuation of retinal blood vessels",
+    "Hemeralopia",
+    "Photophobia",
+    "Progressive night blindness",
+    "Macular atrophy",
+    "Autosomal dominant inheritance",
+    "Autosomal recessive inheritance",
+    "Typified by age-related disease onset",
+    "Cone/cone-rod dystrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

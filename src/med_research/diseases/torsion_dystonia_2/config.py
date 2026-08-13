@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'torsion dystonia 2 (TORSION_DYSTONIA_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of torsion dystonia 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dysphonia",
+    "Slowly progressive",
+    "Dysarthria",
+    "Dysphagia",
+    "Torticollis",
+    "Juvenile onset",
+    "Tremor",
+    "Torsion dystonia",
+    "Focal dystonia",
+    "Blepharospasm",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

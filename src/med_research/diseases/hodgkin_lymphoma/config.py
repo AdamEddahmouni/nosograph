@@ -8,8 +8,12 @@ PIPELINE_LABEL = "Hodgkin lymphoma (HODGKIN_LYMPHOMA)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Hodgkin lymphoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Hodgkin lymphoma",
+    "Polyclonal elevation of circulating IgM concentration",
+    "HP_0003347",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

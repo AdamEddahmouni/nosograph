@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'craniofacial microsomia (CRANIOFACIAL_MICROSOMIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of craniofacial microsomia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Chiari malformation",
+    "Occipital encephalocele",
+    "Tetralogy of Fallot",
+    "Maxillozygomatic hypoplasia",
+    "Blepharophimosis",
+    "Agenesis of corpus callosum",
+    "Underdeveloped tragus",
+    "Vesicoureteral reflux",
+    "Branchial anomaly",
+    "Amblyopia",
+    "Pulmonary hypoplasia",
+    "Ventricular septal defect",
+    "Transverse facial cleft",
+    "Renal agenesis",
+    "Cleft palate",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

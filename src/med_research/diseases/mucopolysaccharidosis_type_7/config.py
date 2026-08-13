@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mucopolysaccharidosis type 7 (MUCOPOLYSACCHARIDOSIS_TYPE_7)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mucopolysaccharidosis type 7
-SYMPTOMS = []
+SYMPTOMS = [
+    "Photophobia",
+    "Hearing impairment",
+    "Short stature",
+    "Proximal tapering of metacarpals",
+    "Acetabular dysplasia",
+    "Narrow greater sciatic notch",
+    "Hypoplasia of the odontoid process",
+    "Large iliac wing",
+    "Infantile onset",
+    "Flexion contracture",
+    "Platyspondyly",
+    "Fetal onset",
+    "Motor delay",
+    "Pectus excavatum",
+    "Airway obstruction",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

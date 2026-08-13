@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Subcutaneous Panniculitis-Like T-Cell Lymphoma (SUBCUTANEOUS_P
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Subcutaneous Panniculitis-Like T-Cell Lymphoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autoimmunity",
+    "Panniculitis",
+    "Autosomal recessive inheritance",
+    "Juvenile onset",
+    "Subcutaneous panniculitis-like T-cell lymphoma",
+    "Fever",
+    "Hypofibrinogenemia",
+    "Anemia",
+    "Hypertriglyceridemia",
+    "Young adult onset",
+    "Splenomegaly",
+    "Pancytopenia",
+    "Childhood onset",
+    "Late onset",
+    "Hemophagocytosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

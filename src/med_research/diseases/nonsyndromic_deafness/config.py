@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'nonsyndromic deafness (NONSYNDROMIC_DEAFNESS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of nonsyndromic deafness
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sensorineural hearing impairment",
+    "Y-linked inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

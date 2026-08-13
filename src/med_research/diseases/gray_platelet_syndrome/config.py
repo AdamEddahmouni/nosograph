@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'gray platelet syndrome (GRAY_PLATELET_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of gray platelet syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Myelofibrosis",
+    "Splenomegaly",
+    "Reduced von Willebrand factor activity",
+    "Thrombocytopenia",
+    "Menorrhagia",
+    "Autosomal recessive inheritance",
+    "Progressive",
+    "Reduced quantity of Von Willebrand factor",
+    "Bruising susceptibility",
+    "Abnormal bleeding",
+    "Epistaxis",
+    "Impaired thrombin-induced platelet aggregation",
+    "Impaired collagen-induced platelet aggregation",
+    "Abnormal number of alpha granules",
+    "Prolonged bleeding time",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Chuvash polycythemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Plethora",
+    "Infantile onset",
+    "Fatigue",
+    "Varicose veins",
+    "Failure to thrive",
+    "Autosomal recessive inheritance",
+    "Peripheral thrombosis",
+    "Hemangioma",
+    "Elevated circulating erythropoietin concentration",
+    "Juvenile onset",
+    "Childhood onset",
+    "Cerebral hemorrhage",
+    "Increased red blood cell mass",
+    "Increased circulating hemoglobin concentration",
+    "Stroke",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

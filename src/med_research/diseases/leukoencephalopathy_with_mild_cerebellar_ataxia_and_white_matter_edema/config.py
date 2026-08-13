@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'leukoencephalopathy with mild cerebellar ataxia and white matt
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of leukoencephalopathy with mild cerebellar ataxia and white matter edema
-SYMPTOMS = []
+SYMPTOMS = [
+    "Choroidal neovascularization",
+    "Visual field defect",
+    "Middle age onset",
+    "Action tremor",
+    "Leukoencephalopathy",
+    "Juvenile onset",
+    "Childhood onset",
+    "Gait ataxia",
+    "Chorioretinal atrophy",
+    "Late young adult onset",
+    "Headache",
+    "Optic neuropathy",
+    "Autosomal recessive inheritance",
+    "Retinoschisis",
+    "Limb ataxia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

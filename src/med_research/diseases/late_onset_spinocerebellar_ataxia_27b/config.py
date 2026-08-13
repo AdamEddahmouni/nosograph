@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'late-onset spinocerebellar ataxia 27b (LATE_ONSET_SPINOCEREBEL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of late-onset spinocerebellar ataxia 27b
-SYMPTOMS = []
+SYMPTOMS = [
+    "Gaze-evoked horizontal nystagmus",
+    "Autosomal dominant inheritance",
+    "Limb ataxia",
+    "Downbeat nystagmus",
+    "Vertigo",
+    "Gait ataxia",
+    "Postural tremor",
+    "Dysarthria",
+    "Diplopia",
+    "Adult onset",
+    "Cerebellar atrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

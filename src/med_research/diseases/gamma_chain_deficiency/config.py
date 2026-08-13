@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'gamma chain deficiency (GAMMA_CHAIN_DEFICIENCY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of gamma chain deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Chronic diarrhea",
+    "X-linked recessive inheritance",
+    "Decreased circulating IgE concentration",
+    "Hypoplasia of the thymus",
+    "Agammaglobulinemia",
+    "Decreased total T cell count",
+    "Failure to thrive",
+    "Neonatal onset",
+    "HP_0003347",
+    "Recurrent fungal infections",
+    "Skin rash",
+    "HP_0012178",
+    "Pneumonia",
+    "Recurrent pneumonia",
+    "Recurrent bacterial meningitis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'epiphyseal dysplasia, multiple, 6 (EPIPHYSEAL_DYSPLASIA_MULTIP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of epiphyseal dysplasia, multiple, 6
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormality of the knee",
+    "Small epiphyses",
+    "Flat capital femoral epiphysis",
+    "Flat distal femoral epiphysis",
+    "Intervertebral disk calcification",
+    "Arthralgia",
+    "Arthralgia of the hip",
+    "Osteoarthritis",
+    "Knee pain",
+    "Irregular distal femoral epiphysis",
+    "Irregular epiphyses",
+    "Schmorl's node",
+    "Autosomal dominant inheritance",
+    "Irregular vertebral endplates",
+    "Multiple epiphyseal dysplasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'sudden infant death syndrome (SUDDEN_INFANT_DEATH_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of sudden infant death syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sudden death",
+    "Apneic episodes in infancy",
+    "Autosomal recessive inheritance",
+    "Malignant hyperthermia",
+    "Non-Mendelian inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

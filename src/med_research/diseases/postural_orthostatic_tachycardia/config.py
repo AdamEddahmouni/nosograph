@@ -8,8 +8,12 @@ PIPELINE_LABEL = "Postural orthostatic tachycardia syndrome (POSTURAL_ORTHOSTATI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Postural orthostatic tachycardia syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated urinary norepinephrine level",
+    "Juvenile onset",
+    "Orthostatic tachycardia",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

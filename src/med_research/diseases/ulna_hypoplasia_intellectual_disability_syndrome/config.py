@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'ulna hypoplasia-intellectual disability syndrome (ULNA_HYPOPLA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ulna hypoplasia-intellectual disability syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Talipes equinovarus",
+    "Absent fingernail",
+    "Profound intellectual disability",
+    "Absent toenail",
+    "Limitation of knee mobility",
+    "Limited elbow movement",
+    "Bilateral ulnar hypoplasia",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

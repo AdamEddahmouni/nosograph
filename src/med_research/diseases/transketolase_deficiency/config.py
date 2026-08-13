@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'transketolase deficiency (TRANSKETOLASE_DEFICIENCY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of transketolase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Compulsive behaviors",
+    "Motor stereotypy",
+    "Ventricular septal defect",
+    "Absent speech",
+    "Hypotonia",
+    "Intellectual disability",
+    "Congenital onset",
+    "Global developmental delay",
+    "Attention deficit hyperactivity disorder",
+    "Developmental cataract",
+    "Patent foramen ovale",
+    "Delayed speech and language development",
+    "Strabismus",
+    "Self-injurious behavior",
+    "Proportionate short stature",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

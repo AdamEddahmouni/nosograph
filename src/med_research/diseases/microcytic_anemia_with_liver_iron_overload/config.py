@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'microcytic anemia with liver iron overload (MICROCYTIC_ANEMIA_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of microcytic anemia with liver iron overload
-SYMPTOMS = []
+SYMPTOMS = [
+    "Infantile onset",
+    "Elevated circulating iron concentration",
+    "Decreased mean corpuscular volume",
+    "Hypochromia",
+    "Erythroid hyperplasia",
+    "Anemia",
+    "Elevated hepatic iron concentration",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

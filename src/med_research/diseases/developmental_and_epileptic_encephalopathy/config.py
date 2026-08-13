@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'developmental and epileptic encephalopathy (DEVELOPMENTAL_AND_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of developmental and epileptic encephalopathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Wide mouth",
+    "Chronic constipation",
+    "Ventricular septal defect",
+    "Cerebellar hypoplasia",
+    "Rocker bottom foot",
+    "Widely spaced teeth",
+    "Chorea",
+    "Cerebral calcification",
+    "Delayed CNS myelination",
+    "Lower limb spasticity",
+    "Epicanthus",
+    "Erratic myoclonus",
+    "Dystonia",
+    "Supravalvular aortic stenosis",
+    "Plagiocephaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

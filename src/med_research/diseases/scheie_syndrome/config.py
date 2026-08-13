@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Scheie syndrome (SCHEIE_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Scheie syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Glaucoma",
+    "Intellectual disability",
+    "Cervical cord compression",
+    "Constrictive median neuropathy",
+    "Full cheeks",
+    "Short neck",
+    "Genu valgum",
+    "Mitral stenosis",
+    "Mandibular prognathia",
+    "Aortic valve stenosis",
+    "Corneal opacity",
+    "Wide nose",
+    "Retinal degeneration",
+    "Broad face",
+    "Obstructive sleep apnea",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

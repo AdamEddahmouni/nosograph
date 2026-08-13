@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'Beemer-Ertbruggen syndrome (BEEMER_ERTBRUGGEN_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Beemer-Ertbruggen syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal cardiovascular system morphology",
+    "Wide nasal bridge",
+    "Autosomal recessive inheritance",
+    "Abnormality of the skeletal system",
+    "Thrombocytopenia",
+    "Ambiguous genitalia",
+    "Hydrocephalus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

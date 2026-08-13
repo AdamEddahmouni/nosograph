@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'pigmented nodular adrenocortical disease, primary, 4 (PIGMENTE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pigmented nodular adrenocortical disease, primary, 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Depression",
+    "Osteopenia",
+    "Bruising susceptibility",
+    "Dorsocervical fat pad",
+    "Diabetes mellitus",
+    "Alopecia",
+    "Fragile skin",
+    "Acne",
+    "Autosomal dominant inheritance",
+    "Hypertension",
+    "Adrenal hyperplasia",
+    "Moon facies",
+    "Emotional lability",
+    "Increased circulating cortisol level",
+    "Increased body weight",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

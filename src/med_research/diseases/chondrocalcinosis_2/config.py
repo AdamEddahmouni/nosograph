@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'chondrocalcinosis 2 (CHONDROCALCINOSIS_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of chondrocalcinosis 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Adult onset",
+    "Osteoarthritis",
+    "Arthropathy",
+    "Polyarticular chondrocalcinosis",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

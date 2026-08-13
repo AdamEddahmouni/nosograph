@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'arthrogryposis multiplex congenita-whistling face syndrome (AR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of arthrogryposis multiplex congenita-whistling face syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Pierre-Robin sequence",
+    "Apnea",
+    "Abnormality of the nervous system",
+    "Arthrogryposis multiplex congenita",
+    "Whistling appearance",
+    "Temperature instability",
+    "Calcinosis",
+    "Bradycardia",
+    "Excessive salivation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

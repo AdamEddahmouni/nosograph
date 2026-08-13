@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Luscan-Lumish syndrome (LUSCAN_LUMISH_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Luscan-Lumish syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "High forehead",
+    "Aggressive behavior",
+    "Slurred speech",
+    "Prominent forehead",
+    "Autistic behavior",
+    "Macrocephaly",
+    "Polyphagia",
+    "Irregular menstruation",
+    "Long foot",
+    "Obesity",
+    "High anterior hairline",
+    "Global developmental delay",
+    "Overgrowth",
+    "Intellectual disability",
+    "Pointed chin",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

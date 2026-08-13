@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'intellectual disability, X-linked 58 (INTELLECTUAL_DISABILITY_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of intellectual disability, X-linked 58
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dental malocclusion",
+    "Long face",
+    "Small nail",
+    "Myopia",
+    "Nystagmus",
+    "X-linked recessive inheritance",
+    "Short philtrum",
+    "Narrow face",
+    "Delayed speech and language development",
+    "Intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

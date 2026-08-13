@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'gastroesophageal reflux disease (GASTROESOPHAGEAL_REFLUX_DISEA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of gastroesophageal reflux disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Gastroesophageal reflux",
+    "Esophagitis",
+    "Esophageal neoplasm",
+    "Barrett esophagus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

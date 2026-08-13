@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Autosomal recessive Charcot Marie Tooth disease type 2X (AUTOS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Autosomal recessive Charcot Marie Tooth disease type 2X
-SYMPTOMS = []
+SYMPTOMS = [
+    "Slowly progressive",
+    "Distal lower limb amyotrophy",
+    "Spasticity",
+    "Distal sensory impairment",
+    "Kyphoscoliosis",
+    "Pes cavus",
+    "Areflexia of lower limbs",
+    "Foot dorsiflexor weakness",
+    "Postural tremor",
+    "Gait disturbance",
+    "Hypoplasia of the corpus callosum",
+    "Childhood onset",
+    "Autosomal recessive inheritance",
+    "Young adult onset",
+    "Calf muscle hypertrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'lateral meningocele syndrome (LATERAL_MENINGOCELE_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lateral meningocele syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Umbilical hernia",
+    "Thickened calvaria",
+    "Hypotonia",
+    "Cleft palate",
+    "Downslanted palpebral fissures",
+    "Inguinal hernia",
+    "Neurogenic bladder",
+    "Syringomyelia",
+    "Biconcave vertebral bodies",
+    "Short stature",
+    "Joint hypermobility",
+    "Meningocele",
+    "Kyphosis",
+    "Patent ductus arteriosus",
+    "Smooth philtrum",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'deafness (DEAFNESS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of deafness
-SYMPTOMS = []
+SYMPTOMS = [
+    "Intellectual disability",
+    "Atresia of the external auditory canal",
+    "Thick eyebrow",
+    "Posteriorly rotated ears",
+    "Unilateral microphthalmos",
+    "Global developmental delay",
+    "Hearing impairment",
+    "Stenosis of the external auditory canal",
+    "X-linked recessive inheritance",
+    "Telecanthus",
+    "Wide nasal bridge",
+    "Ptosis",
+    "Congenital onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

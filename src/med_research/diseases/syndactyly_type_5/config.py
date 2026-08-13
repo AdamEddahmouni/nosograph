@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'syndactyly type 5 (SYNDACTYLY_TYPE_5)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of syndactyly type 5
-SYMPTOMS = []
+SYMPTOMS = [
+    "3-4 toe syndactyly",
+    "Enlarged proximal interphalangeal joints",
+    "Brachydactyly",
+    "Autosomal dominant inheritance",
+    "Short distal phalanx of finger",
+    "4-5 metacarpal synostosis",
+    "Joint contracture of the hand",
+    "Absent distal interphalangeal creases",
+    "Camptodactyly of finger",
+    "Cutaneous finger syndactyly",
+    "4-5 toe syndactyly",
+    "Carpal synostosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

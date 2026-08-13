@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Waardenburg syndrome type 4A (WAARDENBURG_SYNDROME_TYPE_4A)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Waardenburg syndrome type 4A
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "White eyelashes",
+    "Sensorineural hearing impairment",
+    "White eyebrow",
+    "Hypopigmented skin patches",
+    "Polyneuropathy",
+    "Blue irides",
+    "Premature graying of hair",
+    "Ataxia",
+    "Nystagmus",
+    "Hypotonia",
+    "Autosomal dominant inheritance",
+    "Aganglionic megacolon",
+    "Heterochromia iridis",
+    "Spastic paraparesis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

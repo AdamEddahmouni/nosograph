@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'combined oxidative phosphorylation deficiency 49 (COMBINED_OXI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of combined oxidative phosphorylation deficiency 49
-SYMPTOMS = []
+SYMPTOMS = [
+    "Juvenile onset",
+    "Exercise intolerance",
+    "Cytochrome C oxidase-negative muscle fibers",
+    "Decreased activity of mitochondrial complex I",
+    "Elevated circulating creatine kinase activity",
+    "Autosomal recessive inheritance",
+    "Difficulty climbing stairs",
+    "Gait disturbance",
+    "Decreased activity of mitochondrial complex II",
+    "Decreased activity of mitochondrial complex IV",
+    "Myalgia",
+    "Ragged-red muscle fibers",
+    "Progressive muscle weakness",
+    "Decreased activity of mitochondrial complex III",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

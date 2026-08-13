@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neurodevelopmental disorder with or without variable movement 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neurodevelopmental disorder with or without variable movement or behavioral abnormalities
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Panic attack",
+    "Dyskinesia",
+    "Myoclonus",
+    "Abnormal periventricular white matter morphology",
+    "Motor delay",
+    "Intention tremor",
+    "Autistic behavior",
+    "Chorea",
+    "Nocturnal seizures",
+    "Childhood onset",
+    "Resting tremor",
+    "Bradykinesia",
+    "Infantile onset",
+    "Microcephaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

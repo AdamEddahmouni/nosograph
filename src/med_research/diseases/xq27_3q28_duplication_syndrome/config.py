@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Xq27.3q28 duplication syndrome (XQ27_3Q28_DUPLICATION_SYNDROME
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Xq27.3q28 duplication syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Mild intellectual disability",
+    "Global developmental delay",
+    "Specific learning disability",
+    "Deeply set eye",
+    "Short foot",
+    "Abnormally high-pitched voice",
+    "X-linked recessive inheritance",
+    "Small for gestational age",
+    "Bulbous nose",
+    "Small hand",
+    "Gynecomastia",
+    "Cryptorchidism",
+    "Hypogonadism",
+    "Decreased serum testosterone concentration",
+    "Thin vermilion border",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

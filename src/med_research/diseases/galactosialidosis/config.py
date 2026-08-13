@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'galactosialidosis (GALACTOSIALIDOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of galactosialidosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nonimmune hydrops fetalis",
+    "Visceromegaly",
+    "Dysostosis multiplex",
+    "Severe short stature",
+    "Intellectual disability",
+    "Hemangioma",
+    "Opacification of the corneal stroma",
+    "Seizure",
+    "Cherry red spot of the macula",
+    "Autosomal recessive inheritance",
+    "Coarse facial features",
+    "Hearing impairment",
+    "Conjunctival telangiectasia",
+    "Decreased beta-galactosidase activity",
+    "Hepatosplenomegaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

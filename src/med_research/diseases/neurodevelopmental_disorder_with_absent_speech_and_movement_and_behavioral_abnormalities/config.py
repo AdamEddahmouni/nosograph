@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neurodevelopmental disorder with absent speech and movement an
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neurodevelopmental disorder with absent speech and movement and behavioral abnormalities
-SYMPTOMS = []
+SYMPTOMS = [
+    "Neonatal onset",
+    "Sleep disturbance",
+    "Intrauterine growth retardation",
+    "Hypertrophic cardiomyopathy",
+    "Limb dystonia",
+    "Bilateral coxa valga",
+    "Thin corpus callosum",
+    "Ataxia",
+    "Accelerated skeletal maturation",
+    "Hearing impairment",
+    "Cerebellar hypoplasia",
+    "Feeding difficulties",
+    "Mutism",
+    "Tremor",
+    "Autistic behavior",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

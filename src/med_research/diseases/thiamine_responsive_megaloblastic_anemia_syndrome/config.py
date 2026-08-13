@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'thiamine-responsive megaloblastic anemia syndrome (THIAMINE_RE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of thiamine-responsive megaloblastic anemia syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Retinal degeneration",
+    "Thrombocytopenia",
+    "Short stature",
+    "Atrial septal defect",
+    "Sensorineural hearing impairment",
+    "Abnormality of the skin",
+    "Young adult onset",
+    "Ventricular septal defect",
+    "Sideroblastic anemia",
+    "Gastroesophageal reflux",
+    "Cone/cone-rod dystrophy",
+    "Optic atrophy",
+    "Aminoaciduria",
+    "Hoarse voice",
+    "Ataxia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

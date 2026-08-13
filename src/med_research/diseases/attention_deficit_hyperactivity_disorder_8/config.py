@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'attention deficit-hyperactivity disorder 8 (ATTENTION_DEFICIT_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of attention deficit-hyperactivity disorder 8
-SYMPTOMS = []
+SYMPTOMS = [
+    "Mild global developmental delay",
+    "Autosomal recessive inheritance",
+    "Childhood onset",
+    "Attention deficit hyperactivity disorder",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

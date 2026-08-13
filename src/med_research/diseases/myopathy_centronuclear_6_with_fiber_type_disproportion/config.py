@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'myopathy, centronuclear, 6, with fiber-type disproportion (MYO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of myopathy, centronuclear, 6, with fiber-type disproportion
-SYMPTOMS = []
+SYMPTOMS = [
+    "Slowly progressive",
+    "Motor delay",
+    "Easy fatigability",
+    "Muscle fiber splitting",
+    "Rimmed vacuoles",
+    "Skeletal muscle atrophy",
+    "Autosomal recessive inheritance",
+    "Reduced vital capacity",
+    "Muscle spasm",
+    "Calf muscle hypertrophy",
+    "Increased variability in muscle fiber diameter",
+    "Hypotonia",
+    "Type 1 muscle fiber predominance",
+    "Ankle flexion contracture",
+    "Hyperlordosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

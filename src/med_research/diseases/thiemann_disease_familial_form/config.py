@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'Thiemann disease, familial form (THIEMANN_DISEASE_FAMILIAL_FOR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Thiemann disease, familial form
-SYMPTOMS = []
+SYMPTOMS = [
+    "Broad phalanx",
+    "Avascular necrosis",
+    "Short phalanx of finger",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

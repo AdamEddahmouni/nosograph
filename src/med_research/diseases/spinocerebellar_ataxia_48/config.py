@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spinocerebellar ataxia 48 (SPINOCEREBELLAR_ATAXIA_48)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spinocerebellar ataxia 48
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ataxia",
+    "Dysarthria",
+    "Urinary incontinence",
+    "Chorea",
+    "Progressive",
+    "Parkinsonism",
+    "Dystonia",
+    "Dysmetria",
+    "Babinski sign",
+    "Gait ataxia",
+    "Tremor",
+    "Mental deterioration",
+    "Cerebellar atrophy",
+    "Irritability",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

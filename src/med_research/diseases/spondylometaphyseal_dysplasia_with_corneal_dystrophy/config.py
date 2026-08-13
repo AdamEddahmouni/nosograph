@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spondylometaphyseal dysplasia with corneal dystrophy (SPONDYLO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondylometaphyseal dysplasia with corneal dystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short ribs",
+    "Autosomal recessive inheritance",
+    "Depressed nasal bridge",
+    "Proptosis",
+    "Limb undergrowth",
+    "Thoracic platyspondyly",
+    "Brachydactyly",
+    "Short long bone",
+    "Severe global developmental delay",
+    "Metaphyseal widening",
+    "Beaking of vertebral bodies",
+    "Neonatal hypotonia",
+    "Death in childhood",
+    "Lumbar platyspondyly",
+    "Hypertelorism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

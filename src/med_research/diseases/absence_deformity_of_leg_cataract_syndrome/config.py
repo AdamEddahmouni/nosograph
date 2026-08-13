@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'absence deformity of leg-cataract syndrome (ABSENCE_DEFORMITY_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of absence deformity of leg-cataract syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Developmental cataract",
+    "Spondyloepiphyseal dysplasia",
+    "Cranial nerve paralysis",
+    "Anal atresia",
+    "Visual impairment",
+    "Abnormality of the lower limb",
+    "Scoliosis",
+    "Optic nerve dysplasia",
+    "Duplication involving bones of the feet",
+    "Progressive cataract",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

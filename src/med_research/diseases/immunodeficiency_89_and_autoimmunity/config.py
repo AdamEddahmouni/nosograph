@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'immunodeficiency 89 and autoimmunity (IMMUNODEFICIENCY_89_AND_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 89 and autoimmunity
-SYMPTOMS = []
+SYMPTOMS = [
+    "Reduced circulating interleukin 23 concentration",
+    "Reduced circulating interleukin 17A concentration",
+    "Increased circulating IgG concentration",
+    "Pleural thickening",
+    "Asthma",
+    "Juvenile onset",
+    "Anti-thyroglobulin antibody positivity",
+    "Increased circulating IgE concentration",
+    "Pulmonary bulla",
+    "Reduced circulating interleukin 27 concentration",
+    "Decreased total eosinophil count",
+    "Reduced circulating interleukin 10 concentration",
+    "Bronchiectasis",
+    "Antinuclear antibody positivity",
+    "Increased circulating IgA concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'distal myopathy with posterior leg and anterior hand involveme
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of distal myopathy with posterior leg and anterior hand involvement
-SYMPTOMS = []
+SYMPTOMS = [
+    "Distal upper limb amyotrophy",
+    "Distal lower limb amyotrophy",
+    "Muscle weakness",
+    "Myopathy",
+    "Cardiomyopathy",
+    "Mildly elevated creatine kinase",
+    "Slowly progressive",
+    "Young adult onset",
+    "Thenar muscle weakness",
+    "Abnormal calf musculature morphology",
+    "Autosomal dominant inheritance",
+    "Skeletal muscle atrophy",
+    "Proximal muscle weakness",
+    "Hyporeflexia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

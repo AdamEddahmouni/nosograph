@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'familial multiple nevi flammei (FAMILIAL_MULTIPLE_NEVI_FLAMMEI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial multiple nevi flammei
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nevus flammeus",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'hyperlipidemia due to hepatic triglyceride lipase deficiency (
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hyperlipidemia due to hepatic triglyceride lipase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Corneal arcus",
+    "Hypertriglyceridemia",
+    "Autosomal recessive inheritance",
+    "Hypercholesterolemia",
+    "Elevated circulating HDL-C concentration",
+    "Angina pectoris",
+    "Eruptive xanthomas",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

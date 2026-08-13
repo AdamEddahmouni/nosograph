@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'cardiac valvular dysplasia, X-linked (CARDIAC_VALVULAR_DYSPLAS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cardiac valvular dysplasia, X-linked
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ptosis",
+    "Mitral valve prolapse",
+    "Aortic regurgitation",
+    "Mitral regurgitation",
+    "Tricuspid regurgitation",
+    "Joint stiffness",
+    "Abnormality of metabolism/homeostasis",
+    "Bicuspid aortic valve",
+    "Short chordae tendineae of the mitral valve",
+    "Prominent supraorbital ridges",
+    "Joint hypermobility",
+    "Cutis laxa",
+    "Congestive heart failure",
+    "Hypertelorism",
+    "Short chordae tendineae of the tricuspid valve",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

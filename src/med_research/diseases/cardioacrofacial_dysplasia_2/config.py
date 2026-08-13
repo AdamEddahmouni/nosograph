@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'cardioacrofacial dysplasia 2 (CARDIOACROFACIAL_DYSPLASIA_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cardioacrofacial dysplasia 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Atrioventricular canal defect",
+    "Broad forehead",
+    "Postaxial foot polydactyly",
+    "Hypodontia",
+    "Clinodactyly of the 5th finger",
+    "Left superior vena cava draining to coronary sinus",
+    "Prominent nasal tip",
+    "Hypertelorism",
+    "Deep philtrum",
+    "Accessory oral frenulum",
+    "Brachydactyly",
+    "Limb undergrowth",
+    "Common atrium",
+    "Nail dysplasia",
+    "Short philtrum",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

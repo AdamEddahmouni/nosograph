@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hereditary sensory and autonomic neuropathy with spastic parap
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hereditary sensory and autonomic neuropathy with spastic paraplegia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased motor nerve conduction velocity",
+    "Hyperreflexia",
+    "Spastic gait",
+    "Decreased circulating apolipoprotein B concentration",
+    "Atrophy of the spinal cord",
+    "Foot osteomyelitis",
+    "Abnormal foot morphology",
+    "Babinski sign",
+    "Distal sensory impairment of all modalities",
+    "Lower limb spasticity",
+    "Decreased amplitude of sensory action potentials",
+    "Distal amyotrophy",
+    "Peripheral axonal neuropathy",
+    "Spastic paraplegia",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'orofaciodigital syndrome VIII (OROFACIODIGITAL_SYNDROME_VIII)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of orofaciodigital syndrome VIII
-SYMPTOMS = []
+SYMPTOMS = [
+    "Telecanthus",
+    "Hamartoma",
+    "Strabismus",
+    "Cleft palate",
+    "Polydactyly",
+    "Median cleft upper lip",
+    "High palate",
+    "Bifid nasal tip",
+    "Milia",
+    "Recurrent aspiration pneumonia",
+    "Short tibia",
+    "X-linked recessive inheritance",
+    "Short stature",
+    "Global developmental delay",
+    "Hypertelorism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

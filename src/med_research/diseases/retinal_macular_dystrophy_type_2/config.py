@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'retinal macular dystrophy type 2 (RETINAL_MACULAR_DYSTROPHY_TY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of retinal macular dystrophy type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Macular dystrophy",
+    "Perifoveal ring of hyperautofluorescence",
+    "Retinal pigment epithelial atrophy",
+    "Granular macular appearance",
+    "Reduced visual acuity",
+    "Central scotoma",
+    "Autosomal dominant inheritance",
+    "Dyschromatopsia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

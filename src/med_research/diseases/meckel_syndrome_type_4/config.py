@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Meckel syndrome, type 4 (MECKEL_SYNDROME_TYPE_4)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Meckel syndrome, type 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Encephalocele",
+    "Autosomal recessive inheritance",
+    "Molar tooth sign on MRI",
+    "Postaxial hand polydactyly",
+    "Hypoplasia of the corpus callosum",
+    "Atrial septal defect",
+    "Bowing of the long bones",
+    "Hydrocephalus",
+    "Ventricular septal defect",
+    "Microcephaly",
+    "Bile duct proliferation",
+    "Intrauterine growth retardation",
+    "Cleft palate",
+    "Microphthalmia",
+    "Anencephaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

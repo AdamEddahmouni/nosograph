@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'epidermolytic hyperkeratosis 2A, autosomal dominant (EPIDERMOL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of epidermolytic hyperkeratosis 2A, autosomal dominant
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Palmoplantar hyperkeratosis",
+    "Abnormal blistering of the skin",
+    "Erythroderma",
+    "Autosomal dominant inheritance",
+    "Congenital onset",
+    "Cobblestone-like hyperkeratosis",
+    "Palmoplantar keratoderma",
+    "Hyperkeratosis",
+    "Congenital nonbullous ichthyosiform erythroderma",
+    "Generalized hyperkeratosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

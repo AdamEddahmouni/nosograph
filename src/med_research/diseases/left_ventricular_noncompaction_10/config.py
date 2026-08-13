@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'left ventricular noncompaction 10 (LEFT_VENTRICULAR_NONCOMPACT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of left ventricular noncompaction 10
-SYMPTOMS = []
+SYMPTOMS = [
+    "Late onset",
+    "Dilated cardiomyopathy",
+    "Syncope",
+    "Left ventricular noncompaction",
+    "Pulmonary arterial hypertension",
+    "Young adult onset",
+    "Congestive heart failure",
+    "Increased left ventricular end-diastolic volume",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

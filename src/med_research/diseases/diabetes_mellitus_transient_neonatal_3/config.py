@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'diabetes mellitus, transient neonatal, 3 (DIABETES_MELLITUS_TR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of diabetes mellitus, transient neonatal, 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperglycemia",
+    "Autosomal dominant inheritance",
+    "Anti-glutamic acid decarboxylase antibody positivity",
+    "Intermediate young adult onset",
+    "Childhood onset",
+    "Decreased circulating C-peptide concentration",
+    "Elevated hemoglobin A1c",
+    "Neonatal onset",
+    "Transient neonatal diabetes mellitus",
+    "Maternal diabetes",
+    "Infantile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

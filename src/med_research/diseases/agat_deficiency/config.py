@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'AGAT deficiency (AGAT_DEFICIENCY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of AGAT deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Failure to thrive",
+    "Organic aciduria",
+    "Global developmental delay",
+    "Reduced tissue arginine:glycine amidinotransferase activity",
+    "Decreased urinary creatine level",
+    "Autosomal recessive inheritance",
+    "Delayed speech and language development",
+    "Gowers sign",
+    "Intellectual disability",
+    "Infantile onset",
+    "Autism",
+    "Reduced brain creatine level by MRS",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

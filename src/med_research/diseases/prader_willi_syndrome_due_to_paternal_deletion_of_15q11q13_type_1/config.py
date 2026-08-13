@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'Prader-Willi syndrome due to paternal deletion of 15q11q13 typ
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Prader-Willi syndrome due to paternal deletion of 15q11q13 type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypotonia",
+    "Feeding difficulties in infancy",
+    "Hypogonadism",
+    "Intellectual disability",
+    "Truncal obesity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

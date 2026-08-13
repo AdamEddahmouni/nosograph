@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Ehlers-Danlos syndrome, dermatosparaxis type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Gingival bleeding",
+    "Motor delay",
+    "Redundant skin",
+    "Delayed closure of the anterior fontanelle",
+    "Joint hypermobility",
+    "Downslanted palpebral fissures",
+    "Postnatal growth retardation",
+    "Gingival overgrowth",
+    "Blepharochalasis",
+    "Atrophic scars",
+    "Premature birth",
+    "Thick vermilion border",
+    "Limb undergrowth",
+    "Fragile skin",
+    "Congenital onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

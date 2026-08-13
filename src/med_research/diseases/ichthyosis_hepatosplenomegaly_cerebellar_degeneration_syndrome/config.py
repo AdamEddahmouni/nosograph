@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'ichthyosis-hepatosplenomegaly-cerebellar degeneration syndrome
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ichthyosis-hepatosplenomegaly-cerebellar degeneration syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Dysarthria",
+    "Hepatosplenomegaly",
+    "Ataxia",
+    "Ichthyosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

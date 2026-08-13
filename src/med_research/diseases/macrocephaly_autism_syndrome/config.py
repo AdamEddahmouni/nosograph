@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'macrocephaly-autism syndrome (MACROCEPHALY_AUTISM_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of macrocephaly-autism syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Speech apraxia",
+    "Autosomal dominant inheritance",
+    "Intellectual disability",
+    "Coarse hair",
+    "Hydrocele testis",
+    "Cutis laxa",
+    "Prominent forehead",
+    "Decreased total lymphocyte count",
+    "Biparietal narrowing",
+    "Decreased circulating immunoglobulin concentration",
+    "Short nose",
+    "Obesity",
+    "Epicanthus",
+    "Frontal bossing",
+    "Global developmental delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

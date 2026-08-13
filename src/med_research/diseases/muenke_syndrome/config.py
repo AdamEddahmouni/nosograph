@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Muenke syndrome (MUENKE_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Muenke syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Clinodactyly",
+    "Plagiocephaly",
+    "Coronal craniosynostosis",
+    "Sensorineural hearing impairment",
+    "Cloverleaf skull",
+    "Autosomal dominant inheritance",
+    "Thimble-shaped middle phalanges of hand",
+    "Recurrent otitis media",
+    "Brachycephaly",
+    "Cone-shaped epiphyses of the phalanges of the hand",
+    "Hearing impairment",
+    "Dental malocclusion",
+    "Low anterior hairline",
+    "Capitate-hamate fusion",
+    "Proptosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

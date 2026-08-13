@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'nephrotic syndrome, type 4 (NEPHROTIC_SYNDROME_TYPE_4)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of nephrotic syndrome, type 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nephrotic syndrome",
+    "Diffuse mesangial sclerosis",
+    "Focal segmental glomerulosclerosis",
+    "Renal insufficiency",
+    "Progressive",
+    "Childhood onset",
+    "Autosomal dominant inheritance",
+    "Nephroblastoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

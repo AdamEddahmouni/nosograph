@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'multiple epiphyseal dysplasia type 4 (MULTIPLE_EPIPHYSEAL_DYSP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of multiple epiphyseal dysplasia type 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypoplasia of the femoral head",
+    "Flat capital femoral epiphysis",
+    "Hip dysplasia",
+    "Autosomal recessive inheritance",
+    "Scoliosis",
+    "Short metacarpal",
+    "Double-layered patella",
+    "Multiple epiphyseal dysplasia",
+    "Talipes equinovarus",
+    "Epiphyseal dysplasia",
+    "Short stature",
+    "Brachydactyly",
+    "Arthralgia",
+    "Limited elbow flexion",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'microcephalic primordial dwarfism due to ZNF335 deficiency (MI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of microcephalic primordial dwarfism due to ZNF335 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Delayed CNS myelination",
+    "Small for gestational age",
+    "Arthrogryposis multiplex congenita",
+    "Cataract",
+    "Intrauterine growth retardation",
+    "Cerebellar hemisphere hypoplasia",
+    "Severe global developmental delay",
+    "Simplified gyral pattern",
+    "Primary microcephaly",
+    "Agenesis of corpus callosum",
+    "Sloping forehead",
+    "Congenital onset",
+    "Cerebellar atrophy",
+    "Reduced cerebral white matter volume",
+    "Prominent nasal bridge",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

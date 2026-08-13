@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'T-B+ severe combined immunodeficiency due to CD3delta/CD3epsil
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of T-B+ severe combined immunodeficiency due to CD3delta/CD3epsilon/CD3zeta
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased circulating IgA concentration",
+    "Abnormal B cell morphology",
+    "Autoimmune hemolytic anemia",
+    "Failure to thrive secondary to recurrent infections",
+    "Otitis media",
+    "Recurrent opportunistic infections",
+    "Recurrent Candida infection",
+    "Pneumonia",
+    "Abnormal natural killer cell morphology",
+    "Erythroderma",
+    "Increased total eosinophil count",
+    "Recurrent otitis media",
+    "Chronic diarrhea",
+    "Oral ulcer",
+    "Hepatomegaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

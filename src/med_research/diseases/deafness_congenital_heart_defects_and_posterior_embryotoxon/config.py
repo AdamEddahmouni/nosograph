@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'deafness, congenital heart defects, and posterior embryotoxon 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of deafness, congenital heart defects, and posterior embryotoxon
-SYMPTOMS = []
+SYMPTOMS = [
+    "Tetralogy of Fallot",
+    "Ventricular septal defect",
+    "Posterior embryotoxon",
+    "Peripheral pulmonary artery stenosis",
+    "Abnormal vestibular function",
+    "Autosomal dominant inheritance",
+    "Sensorineural hearing impairment",
+    "Congenital onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

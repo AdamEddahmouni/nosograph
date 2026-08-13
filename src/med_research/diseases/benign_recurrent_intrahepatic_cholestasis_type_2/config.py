@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'benign recurrent intrahepatic cholestasis type 2 (BENIGN_RECUR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of benign recurrent intrahepatic cholestasis type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cholelithiasis",
+    "Intrahepatic cholestasis",
+    "Jaundice",
+    "Conjugated hyperbilirubinemia",
+    "Pruritus",
+    "Autosomal recessive inheritance",
+    "Elevated circulating alkaline phosphatase concentration",
+    "Hepatomegaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

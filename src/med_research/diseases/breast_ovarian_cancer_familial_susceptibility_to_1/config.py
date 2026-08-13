@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'breast-ovarian cancer, familial, susceptibility to, 1 (BREAST_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of breast-ovarian cancer, familial, susceptibility to, 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ovarian neoplasm",
+    "Non-Mendelian inheritance",
+    "Breast carcinoma",
+    "Middle age onset",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

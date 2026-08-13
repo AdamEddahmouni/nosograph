@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'congenital nephrotic syndrome, Finnish type (CONGENITAL_NEPHRO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital nephrotic syndrome, Finnish type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Recurrent infections",
+    "Congenital nephrotic syndrome",
+    "Stage 5 chronic kidney disease",
+    "Gastroesophageal reflux",
+    "Proteinuria",
+    "Hypoproteinemia",
+    "Hypercholesterolemia",
+    "Diffuse mesangial sclerosis",
+    "Congenital onset",
+    "Autosomal recessive inheritance",
+    "Nephrotic syndrome",
+    "Hypoalbuminemia",
+    "Small for gestational age",
+    "Rapidly progressive",
+    "Glomerular sclerosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

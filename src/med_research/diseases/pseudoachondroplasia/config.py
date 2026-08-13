@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'pseudoachondroplasia (PSEUDOACHONDROPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pseudoachondroplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Genu varum",
+    "Scoliosis",
+    "Hypoplasia of the odontoid process",
+    "Platyspondyly",
+    "Radial metaphyseal irregularity",
+    "Beaking of vertebral bodies",
+    "Metaphyseal widening",
+    "Disproportionate short-limb short stature",
+    "Ulnar deviation of the wrist",
+    "Ulnar metaphyseal irregularity",
+    "Atlantoaxial dislocation",
+    "Flared femoral metaphysis",
+    "Fragmented epiphyses",
+    "Genu valgum",
+    "Intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

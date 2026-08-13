@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'osteogenesis imperfecta type 1 (OSTEOGENESIS_IMPERFECTA_TYPE_1
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of osteogenesis imperfecta type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Finger joint hypermobility",
+    "Thin skin",
+    "Biconcave flattened vertebrae",
+    "Wormian bones",
+    "Growth abnormality",
+    "Increased susceptibility to fractures",
+    "Hearing impairment",
+    "Hip dysplasia",
+    "Recurrent fractures",
+    "Joint hypermobility",
+    "Infantile onset",
+    "Bruising susceptibility",
+    "Dentinogenesis imperfecta",
+    "Blue sclerae",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'intellectual disability, autosomal recessive 59 (INTELLECTUAL_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of intellectual disability, autosomal recessive 59
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Aggressive behavior",
+    "Intellectual disability",
+    "Paranoia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

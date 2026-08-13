@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'isolated sulfite oxidase deficiency (ISOLATED_SULFITE_OXIDASE_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of isolated sulfite oxidase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated circulating creatine kinase activity",
+    "Ectopia lentis",
+    "Narrow forehead",
+    "Dyskinesia",
+    "Cerebral visual impairment",
+    "Deeply set eye",
+    "Multifocal epileptiform discharges",
+    "Death in infancy",
+    "Microcephaly",
+    "Severe intellectual disability",
+    "Axial hypotonia",
+    "Hemiplegia",
+    "Agitation",
+    "Sulfite oxidase deficiency",
+    "Metabolic acidosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

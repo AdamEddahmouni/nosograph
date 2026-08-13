@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'fumaric aciduria (FUMARIC_ACIDURIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of fumaric aciduria
-SYMPTOMS = []
+SYMPTOMS = [
+    "Conjunctival icterus",
+    "Cerebral atrophy",
+    "Cutaneous leiomyoma",
+    "Second trimester onset",
+    "Relative macrocephaly",
+    "Open operculum",
+    "Choroid plexus cyst",
+    "Visual impairment",
+    "Microcephaly",
+    "Ascites",
+    "Abnormal speech pattern",
+    "Perimembranous ventricular septal defect",
+    "Status epilepticus",
+    "Aminoaciduria",
+    "Increased urine succinate level",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

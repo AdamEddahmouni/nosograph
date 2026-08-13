@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'candidiasis, familial, 4 (CANDIDIASIS_FAMILIAL_4)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of candidiasis, familial, 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Unusual fungal nail infection",
+    "Recurrent vulvovaginal candidiasis",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

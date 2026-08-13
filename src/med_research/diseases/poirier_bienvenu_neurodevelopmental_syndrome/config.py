@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'Poirier-Bienvenu neurodevelopmental syndrome (POIRIER_BIENVENU
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Poirier-Bienvenu neurodevelopmental syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Smooth philtrum",
+    "Autosomal dominant inheritance",
+    "Delayed ability to walk",
+    "Intellectual disability",
+    "Mandibular prognathia",
+    "Myoclonic seizure",
+    "Protruding tongue",
+    "Open mouth",
+    "Downturned corners of mouth",
+    "Generalized hypotonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

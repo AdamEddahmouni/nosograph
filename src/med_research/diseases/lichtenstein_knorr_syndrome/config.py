@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Lichtenstein-Knorr syndrome (LICHTENSTEIN_KNORR_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Lichtenstein-Knorr syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Childhood onset",
+    "Areflexia of lower limbs",
+    "Motor delay",
+    "Action tremor",
+    "Progressive",
+    "Dysmetria",
+    "Vestibular hyporeflexia",
+    "Areflexia of upper limbs",
+    "Ataxia",
+    "Gait ataxia",
+    "Autosomal recessive inheritance",
+    "Dysdiadochokinesis",
+    "Delayed ability to walk",
+    "Short stature",
+    "Nystagmus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

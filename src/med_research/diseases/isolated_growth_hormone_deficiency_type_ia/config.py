@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'isolated growth hormone deficiency type IA (ISOLATED_GROWTH_HO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of isolated growth hormone deficiency type IA
-SYMPTOMS = []
+SYMPTOMS = [
+    "Prolonged neonatal jaundice",
+    "Persistent open anterior fontanelle",
+    "Infantile onset",
+    "Reduced circulating growth hormone concentration",
+    "High forehead",
+    "Depressed nasal ridge",
+    "Autosomal recessive inheritance",
+    "Growth delay",
+    "Severe short stature",
+    "Hypoglycemia",
+    "Decreased circulating insulin-like growth factor 1 concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

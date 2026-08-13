@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'hypothyroidism due to TSH receptor mutations (HYPOTHYROIDISM_D
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypothyroidism due to TSH receptor mutations
-SYMPTOMS = []
+SYMPTOMS = [
+    "Goiter",
+    "Elevated circulating thyroid-stimulating hormone concentration",
+    "Autosomal recessive inheritance",
+    "Congenital onset",
+    "Thyroid hypoplasia",
+    "Hypothyroidism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

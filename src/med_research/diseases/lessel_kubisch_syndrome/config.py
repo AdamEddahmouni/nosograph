@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'Lessel-Kubisch syndrome (LESSEL_KUBISCH_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Lessel-Kubisch syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Renal insufficiency",
+    "Premature graying of hair",
+    "Hypertension",
+    "Narrow mouth",
+    "Hypogonadism",
+    "Autosomal recessive inheritance",
+    "Narrow nasal bridge",
+    "Renal hypoplasia",
+    "Sparse pubic hair",
+    "Short stature",
+    "Abnormally high-pitched voice",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

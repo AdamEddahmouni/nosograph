@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'nonpapillary renal cell carcinoma (NONPAPILLARY_RENAL_CELL_CAR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of nonpapillary renal cell carcinoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sporadic",
+    "Renal cell carcinoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'thanatophoric dysplasia type 2 (THANATOPHORIC_DYSPLASIA_TYPE_2
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of thanatophoric dysplasia type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Metaphyseal irregularity",
+    "Decreased fetal movement",
+    "Flared metaphysis",
+    "Respiratory insufficiency",
+    "Brachydactyly",
+    "Neonatal death",
+    "Hypoplastic ilia",
+    "Ventriculomegaly",
+    "Late first trimester onset",
+    "Lethal short-limbed short stature",
+    "Frontal bossing",
+    "Small face",
+    "Autosomal dominant inheritance",
+    "Polyhydramnios",
+    "Cloverleaf skull",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

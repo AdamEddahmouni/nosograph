@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'acroosteolysis-keloid-like lesions-premature aging syndrome (A
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of acroosteolysis-keloid-like lesions-premature aging syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypoplasia of the maxilla",
+    "Short foot",
+    "Thin ribs",
+    "Slender long bone",
+    "Failure to thrive",
+    "Delayed cranial suture closure",
+    "Lipoatrophy",
+    "Aplasia of the nasal bone",
+    "Hypotelorism",
+    "Scoliosis",
+    "Microphthalmia",
+    "Joint contracture",
+    "Recurrent fractures",
+    "Corneal stromal edema",
+    "Shallow orbits",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

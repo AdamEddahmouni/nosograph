@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'familial hypocalciuric hypercalcemia 3 (FAMILIAL_HYPOCALCIURIC
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial hypocalciuric hypercalcemia 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypocalciuria",
+    "Multiple small medullary renal cysts",
+    "Kidney stone",
+    "Osteomalacia",
+    "Depression",
+    "Bone pain",
+    "Autosomal dominant inheritance",
+    "Hypermagnesemia",
+    "Multiple lipomas",
+    "Hypercalcemia",
+    "Pancreatitis",
+    "Renal insufficiency",
+    "Parathormone-independent increased renal tubular calcium reabsorption",
+    "Muscle weakness",
+    "Headache",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

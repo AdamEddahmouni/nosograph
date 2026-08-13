@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Pallister-Hall syndrome (PALLISTER_HALL_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Pallister-Hall syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased testicular size",
+    "Adrenal hypoplasia",
+    "Laryngeal cleft",
+    "Midface retrusion",
+    "Preaxial hand polydactyly",
+    "Typified by incomplete penetrance",
+    "Renal dysplasia",
+    "Midline facial capillary hemangioma",
+    "Oligodactyly",
+    "Intellectual disability",
+    "Micropenis",
+    "Postaxial polydactyly",
+    "Hypogonadism",
+    "Abnormal lung lobation",
+    "Hemivertebrae",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

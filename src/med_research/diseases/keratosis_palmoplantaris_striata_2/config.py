@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'keratosis palmoplantaris striata 2 (KERATOSIS_PALMOPLANTARIS_S
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of keratosis palmoplantaris striata 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormality of the dentition",
+    "Epidermal acanthosis",
+    "Abnormal hair morphology",
+    "Juvenile onset",
+    "Palmoplantar keratoderma",
+    "Abnormal nail morphology",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

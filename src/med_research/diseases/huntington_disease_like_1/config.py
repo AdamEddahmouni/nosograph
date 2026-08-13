@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Huntington disease-like 1 (HUNTINGTON_DISEASE_LIKE_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Huntington disease-like 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Delusion",
+    "Dysarthria",
+    "Aggressive behavior",
+    "Unsteady gait",
+    "Rigidity",
+    "Restlessness",
+    "Personality changes",
+    "Global brain atrophy",
+    "Dementia",
+    "Young adult onset",
+    "Anxiety",
+    "Dysmetria",
+    "Mania",
+    "Incoordination",
+    "Depression",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

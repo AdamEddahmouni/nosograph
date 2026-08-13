@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of asphyxiating thoracic dystrophy 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Scoliosis",
+    "Agenesis of corpus callosum",
+    "Cone-shaped epiphysis",
+    "Fibular hypoplasia",
+    "Renal dysplasia",
+    "Enlarged kidney",
+    "Lateral clavicle hook",
+    "Thoracic hypoplasia",
+    "Micropenis",
+    "Hypoplasia of the ulna",
+    "Absent tibia",
+    "Cleft upper lip",
+    "Polycystic kidney dysplasia",
+    "Short stature",
+    "Talipes equinovarus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

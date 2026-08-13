@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'Malignant Pancreatic Neoplasm (MALIGNANT_PANCREATIC_NEOPLASM)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Malignant Pancreatic Neoplasm
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pancreatic adenocarcinoma",
+    "Melanoma",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

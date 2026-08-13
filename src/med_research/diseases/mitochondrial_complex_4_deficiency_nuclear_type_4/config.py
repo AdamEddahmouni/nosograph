@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mitochondrial complex 4 deficiency, nuclear type 4 (MITOCHONDR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mitochondrial complex 4 deficiency, nuclear type 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hepatomegaly",
+    "Ventricular hypertrophy",
+    "Autosomal recessive inheritance",
+    "Hyperalaninemia",
+    "Bradycardia",
+    "Intrauterine growth retardation",
+    "Decreased plasma free carnitine",
+    "Hepatic steatosis",
+    "Brain atrophy",
+    "Apnea",
+    "Left ventricular hypertrophy",
+    "Failure to thrive",
+    "Axial hypotonia",
+    "Elevated circulating aspartate aminotransferase concentration",
+    "Generalized hypotonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

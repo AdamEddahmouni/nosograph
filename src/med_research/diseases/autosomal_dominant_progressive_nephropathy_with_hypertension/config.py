@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'autosomal dominant progressive nephropathy with hypertension (
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal dominant progressive nephropathy with hypertension
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypertension",
+    "Adult onset",
+    "Stage 5 chronic kidney disease",
+    "Microscopic hematuria",
+    "Elevated circulating creatinine concentration",
+    "Progressive",
+    "Renal insufficiency",
+    "Proteinuria",
+    "Autosomal dominant inheritance",
+    "Nephritis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

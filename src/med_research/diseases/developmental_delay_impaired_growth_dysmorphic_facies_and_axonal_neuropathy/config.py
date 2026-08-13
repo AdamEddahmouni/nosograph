@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'developmental delay, impaired growth, dysmorphic facies, and a
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of developmental delay, impaired growth, dysmorphic facies, and axonal neuropathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Intellectual disability",
+    "Autosomal dominant inheritance",
+    "Areflexia",
+    "Spasticity",
+    "Peripheral axonal neuropathy",
+    "Microcephaly",
+    "Cerebral atrophy",
+    "Proximal muscle weakness",
+    "Abnormal facial shape",
+    "Short stature",
+    "Hypotonia",
+    "Babinski sign",
+    "Delayed speech and language development",
+    "Cerebellar atrophy",
+    "Waddling gait",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

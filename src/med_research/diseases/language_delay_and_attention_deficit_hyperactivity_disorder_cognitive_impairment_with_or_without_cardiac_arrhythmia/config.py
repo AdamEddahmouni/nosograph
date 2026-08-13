@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'language delay and attention deficit-hyperactivity disorder/co
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of language delay and attention deficit-hyperactivity disorder/cognitive impairment with or without cardiac arrhythmia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Delayed speech and language development",
+    "Autosomal recessive inheritance",
+    "Gastroesophageal reflux",
+    "Hyperactivity",
+    "Intellectual disability",
+    "Nystagmus",
+    "Absent speech",
+    "Infantile onset",
+    "Motor delay",
+    "Sick sinus syndrome",
+    "Attention deficit hyperactivity disorder",
+    "Bradycardia",
+    "Microcephaly",
+    "Global developmental delay",
+    "Hypotonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Carpenter syndrome (CARPENTER_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Carpenter syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pulmonic stenosis",
+    "Microcornea",
+    "Atrial septal defect",
+    "Postaxial hand polydactyly",
+    "Preaxial foot polydactyly",
+    "Narrow palate",
+    "Patent ductus arteriosus",
+    "Polysplenia",
+    "Clinodactyly of the 5th finger",
+    "Aplasia/Hypoplasia of the corpus callosum",
+    "Agenesis of permanent teeth",
+    "Joint contracture of the hand",
+    "Coronal craniosynostosis",
+    "Coxa valga",
+    "Low-set ears",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

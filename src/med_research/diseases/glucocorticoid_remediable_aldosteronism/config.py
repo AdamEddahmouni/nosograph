@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'glucocorticoid-remediable aldosteronism (GLUCOCORTICOID_REMEDI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of glucocorticoid-remediable aldosteronism
-SYMPTOMS = []
+SYMPTOMS = [
+    "Juvenile onset",
+    "Abnormality of the urinary system",
+    "Adrenogenital syndrome",
+    "Adrenal hyperplasia",
+    "Childhood onset",
+    "Decreased circulating renin concentration",
+    "Adult onset",
+    "Autosomal dominant inheritance",
+    "Hypertension",
+    "Increased circulating aldosterone concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

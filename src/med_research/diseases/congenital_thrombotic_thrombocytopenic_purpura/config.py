@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'congenital thrombotic thrombocytopenic purpura (CONGENITAL_THR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital thrombotic thrombocytopenic purpura
-SYMPTOMS = []
+SYMPTOMS = [
+    "Transient ischemic attack",
+    "Microscopic hematuria",
+    "Autosomal recessive inheritance",
+    "Jaundice",
+    "Stroke",
+    "Increased circulating lactate concentration",
+    "Abnormal renal physiology",
+    "Reticulocytosis",
+    "Thrombocytopenia",
+    "Confusion",
+    "Tremor",
+    "Hemolytic-uremic syndrome",
+    "Proteinuria",
+    "Microangiopathic hemolytic anemia",
+    "Elevated circulating creatinine concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

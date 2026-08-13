@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'polydactyly, postaxial, A9 (POLYDACTYLY_POSTAXIAL_A9)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of polydactyly, postaxial, A9
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Postaxial foot polydactyly",
+    "Postaxial hand polydactyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

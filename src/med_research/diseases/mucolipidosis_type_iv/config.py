@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mucolipidosis type IV (MUCOLIPIDOSIS_TYPE_IV)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mucolipidosis type IV
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypotonia",
+    "Dysplastic corpus callosum",
+    "Autosomal recessive inheritance",
+    "Ganglioside accumulation",
+    "Hypergastrinemia",
+    "Generalized hypotonia",
+    "Intellectual disability",
+    "Abnormal abdomen morphology",
+    "Babinski sign",
+    "Decreased light- and dark-adapted electroretinogram amplitude",
+    "Cerebellar atrophy",
+    "Photophobia",
+    "Cerebral dysmyelination",
+    "Retinal degeneration",
+    "Optic atrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

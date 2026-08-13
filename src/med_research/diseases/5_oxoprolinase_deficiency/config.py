@@ -8,8 +8,18 @@ PIPELINE_LABEL = '5-oxoprolinase deficiency (5_OXOPROLINASE_DEFICIENCY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of 5-oxoprolinase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Prolinuria",
+    "Calcium oxalate nephrolithiasis",
+    "Increased level of L-pyroglutamic acid in urine",
+    "Autosomal dominant inheritance",
+    "Diarrhea",
+    "Abdominal pain",
+    "Enterocolitis",
+    "Autosomal recessive inheritance",
+    "Vomiting",
+    "Reduced circulating 5-oxoprolinase activity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

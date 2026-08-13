@@ -8,8 +8,22 @@ PIPELINE_LABEL = "Wolff-Parkinson-White syndrome (WOLFF_PARKINSON_WHITE)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Wolff-Parkinson-White syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Palpitations",
+    "Ventricular preexcitation",
+    "Atrial flutter",
+    "Young adult onset",
+    "Prolonged QRS complex",
+    "Wolff-Parkinson-White syndrome",
+    "Juvenile onset",
+    "Autosomal dominant inheritance",
+    "Paroxysmal atrial fibrillation",
+    "Childhood onset",
+    "Sudden cardiac death",
+    "Ventricular preexcitation with multiple accessory pathways",
+    "Shortened PR interval",
+    "Syncope",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

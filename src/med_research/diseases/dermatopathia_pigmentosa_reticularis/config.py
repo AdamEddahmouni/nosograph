@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'dermatopathia pigmentosa reticularis (DERMATOPATHIA_PIGMENTOSA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dermatopathia pigmentosa reticularis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Reticulate pigmentation of oral mucosa",
+    "Nail dystrophy",
+    "Alopecia of scalp",
+    "Adermatoglyphia",
+    "Abnormal conjunctiva morphology",
+    "Reticular hyperpigmentation",
+    "Autosomal dominant inheritance",
+    "Palmoplantar hyperkeratosis",
+    "Hypohidrosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

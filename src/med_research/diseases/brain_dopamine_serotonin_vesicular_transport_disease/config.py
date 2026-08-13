@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'brain dopamine-serotonin vesicular transport disease (BRAIN_DO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of brain dopamine-serotonin vesicular transport disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Stooped posture",
+    "Autosomal recessive inheritance",
+    "Hypernasal speech",
+    "Parkinsonism",
+    "Sleep disturbance",
+    "Abnormal autonomic nervous system physiology",
+    "Fatigue",
+    "Global developmental delay",
+    "Tremor",
+    "Oculogyric crisis",
+    "Elevated urinary 5-hydroxyindoleacetic acid level",
+    "Delayed ability to sit",
+    "Hypotonia",
+    "Infantile onset",
+    "Dystonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

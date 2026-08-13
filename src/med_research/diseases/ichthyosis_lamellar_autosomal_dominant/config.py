@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'ichthyosis, lamellar, autosomal dominant (ICHTHYOSIS_LAMELLAR_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ichthyosis, lamellar, autosomal dominant
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pruritus",
+    "Congenital nonbullous ichthyosiform erythroderma",
+    "Hyperkeratosis",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

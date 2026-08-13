@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'ectodermal dysplasia 10A, hypohidrotic/hair/nail type, autosom
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ectodermal dysplasia 10A, hypohidrotic/hair/nail type, autosomal dominant
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sparse eyelashes",
+    "Ectodermal dysplasia",
+    "Sparse hair",
+    "Sparse eyebrow",
+    "Hypohidrosis",
+    "Fine hair",
+    "Ridged nail",
+    "Dry skin",
+    "Slow-growing hair",
+    "Heat intolerance",
+    "Hypodontia",
+    "Anodontia",
+    "Microdontia",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

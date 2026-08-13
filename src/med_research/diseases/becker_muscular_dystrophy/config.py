@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'Becker muscular dystrophy (BECKER_MUSCULAR_DYSTROPHY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Becker muscular dystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal EKG",
+    "Myalgia",
+    "Cardiomyopathy",
+    "Elevated circulating creatine kinase activity",
+    "Central core regions in muscle fibers",
+    "Muscle weakness",
+    "Calf muscle pseudohypertrophy",
+    "Autosomal dominant inheritance",
+    "Adult onset",
+    "Hyporeflexia",
+    "X-linked recessive inheritance",
+    "Arrhythmia",
+    "Muscular dystrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

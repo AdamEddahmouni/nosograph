@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'inborn glycerol kinase deficiency (INBORN_GLYCEROL_KINASE_DEFI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of inborn glycerol kinase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased circulating lactate concentration",
+    "Hypertriglyceridemia",
+    "Reduced glycerol kinase activity in cultured fibroblasts",
+    "Increased urinary glycerol",
+    "Cryptorchidism",
+    "Metabolic acidosis",
+    "Adrenal insufficiency",
+    "X-linked recessive inheritance",
+    "Elevated circulating glycerol concentration",
+    "Episodic vomiting",
+    "Short stature",
+    "Myopathy",
+    "Intellectual disability",
+    "Childhood onset",
+    "Muscular dystrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

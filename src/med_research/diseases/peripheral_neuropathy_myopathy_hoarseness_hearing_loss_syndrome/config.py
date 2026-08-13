@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'peripheral neuropathy-myopathy-hoarseness-hearing loss syndrom
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of peripheral neuropathy-myopathy-hoarseness-hearing loss syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Distal muscle weakness",
+    "Absent patellar reflexes",
+    "Hearing impairment",
+    "Progressive",
+    "Peripheral neuropathy",
+    "Tremor",
+    "Mildly elevated creatine kinase",
+    "Hoarse voice",
+    "Fiber type grouping",
+    "Distal amyotrophy",
+    "Autosomal dominant inheritance",
+    "Distal sensory impairment",
+    "Juvenile onset",
+    "Decreased patellar reflex",
+    "Abnormal foot morphology",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

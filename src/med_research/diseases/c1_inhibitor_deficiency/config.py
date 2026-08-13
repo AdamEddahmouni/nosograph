@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'C1 inhibitor deficiency (C1_INHIBITOR_DEFICIENCY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of C1 inhibitor deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Systemic lupus erythematosus",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'hypertrophic cardiomyopathy 15 (HYPERTROPHIC_CARDIOMYOPATHY_15
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypertrophic cardiomyopathy 15
-SYMPTOMS = []
+SYMPTOMS = [
+    "Endocardial fibrosis",
+    "Middle age onset",
+    "Hypertrophic cardiomyopathy",
+    "Left ventricular outflow tract obstruction",
+    "Cardiomyocyte hypertrophy",
+    "Apical hypertrophic cardiomyopathy",
+    "Myofiber disarray",
+    "Late onset",
+    "Congestive heart failure",
+    "Exertional dyspnea",
+    "Hyperdynamic left ventricular ejection fraction",
+    "Autosomal dominant inheritance",
+    "Pulmonary arterial hypertension",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

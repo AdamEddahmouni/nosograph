@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'atelosteogenesis type II (ATELOSTEOGENESIS_TYPE_II)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of atelosteogenesis type II
-SYMPTOMS = []
+SYMPTOMS = [
+    "Horizontal sacrum",
+    "Thoracic hypoplasia",
+    "Short middle phalanx of finger",
+    "Autosomal recessive inheritance",
+    "Limb undergrowth",
+    "Short neck",
+    "Sandal gap",
+    "Micromelia",
+    "Bifid humerus",
+    "Pulmonary hypoplasia",
+    "Platyspondyly",
+    "Increased intervertebral space",
+    "Malar flattening",
+    "Scoliosis",
+    "Micrognathia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

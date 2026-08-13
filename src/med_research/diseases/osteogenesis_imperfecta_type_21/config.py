@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'osteogenesis imperfecta, type 21 (OSTEOGENESIS_IMPERFECTA_TYPE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of osteogenesis imperfecta, type 21
-SYMPTOMS = []
+SYMPTOMS = [
+    "Bowing of the legs",
+    "Pes valgus",
+    "Scoliosis",
+    "Hypotonia",
+    "Fetal onset",
+    "Motor delay",
+    "Bowing of the arm",
+    "Barrel-shaped chest",
+    "Autosomal recessive inheritance",
+    "Coxa valga",
+    "Childhood onset",
+    "Pes planus",
+    "Osteoporosis",
+    "Disproportionate short-limb short stature",
+    "Joint hypermobility",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

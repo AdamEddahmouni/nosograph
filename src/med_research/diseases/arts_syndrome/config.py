@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Arts syndrome (ARTS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Arts syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Drooling",
+    "Hyperreflexia",
+    "Areflexia",
+    "Recurrent upper respiratory tract infections",
+    "Death in infancy",
+    "Neonatal hypotonia",
+    "Tetraplegia",
+    "Ataxia",
+    "Immunodeficiency",
+    "Progressive muscle weakness",
+    "Nystagmus",
+    "X-linked recessive inheritance",
+    "Global developmental delay",
+    "Hearing impairment",
+    "Peripheral neuropathy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

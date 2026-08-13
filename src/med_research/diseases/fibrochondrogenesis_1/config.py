@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'fibrochondrogenesis 1 (FIBROCHONDROGENESIS_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of fibrochondrogenesis 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Narrow greater sciatic notch",
+    "Anterior rib cupping",
+    "Short neck",
+    "Narrow mouth",
+    "Hydrops fetalis",
+    "Protuberant abdomen",
+    "Cleft palate",
+    "Hypoplastic scapulae",
+    "Abnormal pinna morphology",
+    "Widely patent sagittal suture",
+    "Long philtrum",
+    "Posterior rib cupping",
+    "Broad long bones",
+    "Hypoplastic fingernail",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

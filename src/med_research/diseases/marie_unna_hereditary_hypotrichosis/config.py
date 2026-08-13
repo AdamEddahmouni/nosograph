@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Marie Unna hereditary hypotrichosis (MARIE_UNNA_HEREDITARY_HYP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Marie Unna hereditary hypotrichosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Uncombable hair",
+    "Alopecia",
+    "Sparse eyebrow",
+    "Abnormality of the dentition",
+    "Congenital onset",
+    "Absent axillary hair",
+    "Sparse body hair",
+    "Thin eyebrow",
+    "Abnormal nail morphology",
+    "Autosomal dominant inheritance",
+    "Abnormal sweat gland morphology",
+    "Absent pubic hair",
+    "Hearing abnormality",
+    "Sparse eyelashes",
+    "Sparse scalp hair",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

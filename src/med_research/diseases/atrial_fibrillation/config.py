@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Atrial fibrillation (ATRIAL_FIBRILLATION)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Atrial fibrillation
-SYMPTOMS = []
+SYMPTOMS = [
+    "Atrioventricular block",
+    "Congenital onset",
+    "Prolonged QT interval",
+    "Permanent atrial fibrillation",
+    "Prolonged P wave",
+    "Juvenile onset",
+    "Left atrial enlargement",
+    "Adult onset",
+    "Middle age onset",
+    "Autosomal dominant inheritance",
+    "Third trimester onset",
+    "Childhood onset",
+    "Atrial flutter",
+    "T-wave alternans",
+    "Atrial fibrillation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'thrombocythemia 2 (THROMBOCYTHEMIA_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of thrombocythemia 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased megakaryocyte count",
+    "Autosomal dominant inheritance",
+    "Typified by somatic mosaicism",
+    "Thrombocytosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

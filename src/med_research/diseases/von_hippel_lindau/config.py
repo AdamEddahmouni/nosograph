@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Von Hippel-Lindau disease (VON_HIPPEL_LINDAU)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Von Hippel-Lindau disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Epididymal cyst",
+    "Papillary cystadenoma of the epididymis",
+    "Autosomal dominant inheritance",
+    "Young adult onset",
+    "Pulmonary capillary hemangiomatosis",
+    "Pancreatic cysts",
+    "Hypertension",
+    "Neoplasm of the pancreas",
+    "Vertigo",
+    "Cerebellar hemangioblastoma",
+    "Paraganglioma",
+    "Retinal capillary hemangioma",
+    "Sensorineural hearing impairment",
+    "Tinnitus",
+    "Polycythemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

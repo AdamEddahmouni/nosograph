@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'retinitis pigmentosa 41 (RETINITIS_PIGMENTOSA_41)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of retinitis pigmentosa 41
-SYMPTOMS = []
+SYMPTOMS = [
+    "Peripheral visual field loss",
+    "Pigmentary retinopathy",
+    "Macular degeneration",
+    "Attenuation of retinal blood vessels",
+    "Spicular pigmentation of the retina",
+    "Rod-cone dystrophy",
+    "Autosomal recessive inheritance",
+    "Nyctalopia",
+    "Severely reduced visual acuity",
+    "Undetectable electroretinogram",
+    "Optic disc pallor",
+    "Childhood onset",
+    "Nystagmus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

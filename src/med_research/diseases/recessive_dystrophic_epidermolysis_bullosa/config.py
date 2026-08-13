@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'recessive dystrophic epidermolysis bullosa (RECESSIVE_DYSTROPH
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of recessive dystrophic epidermolysis bullosa
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sub-lamina densa cleavage",
+    "Mitten deformity",
+    "Squamous cell carcinoma",
+    "Cataract",
+    "Nail dysplasia",
+    "Oral mucosal blisters",
+    "Congenital onset",
+    "Abnormal esophagus morphology",
+    "Enamel hypoplasia",
+    "Anemia",
+    "Spontaneous esophageal perforation",
+    "Conjunctivitis",
+    "Milia",
+    "Nail dystrophy",
+    "Esophageal stricture",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

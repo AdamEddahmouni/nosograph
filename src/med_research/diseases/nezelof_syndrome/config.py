@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Nezelof syndrome (NEZELOF_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Nezelof syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased total T cell count",
+    "Autosomal recessive inheritance",
+    "Bronchiectasis",
+    "Recurrent pneumonia",
+    "Eczematoid dermatitis",
+    "Decreased total lymphocyte count",
+    "Neonatal onset",
+    "Aplasia of the thymus",
+    "Emphysema",
+    "Reduced delayed hypersensitivity",
+    "Hepatosplenomegaly",
+    "Recurrent bronchopulmonary infections",
+    "Abnormally low T cell receptor excision circle level",
+    "Pyoderma",
+    "Recurrent viral infections",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

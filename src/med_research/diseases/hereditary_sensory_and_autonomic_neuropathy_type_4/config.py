@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hereditary sensory and autonomic neuropathy type 4 (HEREDITARY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hereditary sensory and autonomic neuropathy type 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Infantile onset",
+    "Keratitis",
+    "Nail dystrophy",
+    "Corneal scarring",
+    "Intellectual disability",
+    "Sparse scalp hair",
+    "Decreased number of small peripheral myelinated nerve fibers",
+    "Postural hypotension with compensatory tachycardia",
+    "Neuropathic arthropathy",
+    "Osteomyelitis",
+    "Emotional lability",
+    "Pain insensitivity",
+    "Abnormality of the immune system",
+    "Recurrent corneal erosions",
+    "Autoamputation of digits",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

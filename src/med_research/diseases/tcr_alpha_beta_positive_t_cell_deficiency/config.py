@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'TCR-alpha-beta-positive T-cell deficiency (TCR_ALPHA_BETA_POSI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of TCR-alpha-beta-positive T-cell deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Splenomegaly",
+    "Hepatomegaly",
+    "Severe varicella zoster infection",
+    "Recurrent otitis media",
+    "Infantile onset",
+    "Autoimmunity",
+    "Persistent EBV viremia",
+    "Recurrent respiratory infections",
+    "Recurrent oral thrush",
+    "Childhood onset",
+    "Decreased total neutrophil count",
+    "Autoimmune hemolytic anemia",
+    "Severely increased total eosinophil count",
+    "Failure to thrive",
+    "Diarrhea",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

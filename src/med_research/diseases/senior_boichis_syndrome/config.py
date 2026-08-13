@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Senior-Boichis syndrome (SENIOR_BOICHIS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Senior-Boichis syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Global developmental delay",
+    "Polyuria",
+    "Renal corticomedullary cysts",
+    "Strabismus",
+    "Nephronophthisis",
+    "Hepatic fibrosis",
+    "Anisocoria",
+    "Stage 5 chronic kidney disease",
+    "Tubular basement membrane disintegration",
+    "Autosomal recessive inheritance",
+    "Polydipsia",
+    "Renal tubular atrophy",
+    "Nystagmus",
+    "Growth delay",
+    "Anemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

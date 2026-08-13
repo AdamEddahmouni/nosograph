@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spondylocostal dysostosis-anal and genitourinary malformations
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondylocostal dysostosis-anal and genitourinary malformations syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypertelorism",
+    "Aplasia of the uterus",
+    "Aplasia of the vagina",
+    "Urethral atresia",
+    "Rib fusion",
+    "Short neck",
+    "Oligohydramnios",
+    "Anal atresia",
+    "Block vertebrae",
+    "Dolichocephaly",
+    "Scoliosis",
+    "Absent external genitalia",
+    "Abdominal distention",
+    "Thin ribs",
+    "Hydronephrosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

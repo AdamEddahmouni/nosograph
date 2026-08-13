@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'MORM syndrome (MORM_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of MORM syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Reduced visual acuity",
+    "Moderate intellectual disability",
+    "Autosomal recessive inheritance",
+    "Micropenis",
+    "Nyctalopia",
+    "Hypotonia",
+    "Childhood-onset truncal obesity",
+    "Cataract",
+    "Spasticity",
+    "Retinal dystrophy",
+    "Infantile onset",
+    "Truncal obesity",
+    "Delayed speech and language development",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mitochondrial DNA depletion syndrome 7 (hepatocerebral type) (
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mitochondrial DNA depletion syndrome 7 (hepatocerebral type)
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dysphagia",
+    "Vomiting",
+    "Infantile onset",
+    "Sensory axonal neuropathy",
+    "Specific learning disability",
+    "Optic atrophy",
+    "Hypergonadotropic hypogonadism",
+    "Hearing impairment",
+    "Athetosis",
+    "Migraine",
+    "Ataxia",
+    "Fiber type grouping",
+    "Cerebellar atrophy",
+    "Progressive",
+    "Psychosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

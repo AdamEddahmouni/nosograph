@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'polydactyly of a biphalangeal thumb (POLYDACTYLY_OF_A_BIPHALAN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of polydactyly of a biphalangeal thumb
-SYMPTOMS = []
+SYMPTOMS = [
+    "Partial duplication of thumb phalanx",
+    "Autosomal recessive inheritance",
+    "Preaxial hand polydactyly",
+    "Radial deviation of thumb terminal phalanx",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

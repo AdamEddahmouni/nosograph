@@ -8,8 +8,13 @@ PIPELINE_LABEL = "Multiple myeloma (MULTIPLE_MYELOMA)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Multiple myeloma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Typified by somatic mosaicism",
+    "Multiple myeloma",
+    "Paraproteinemia",
+    "Adult onset",
+    "Amyloid deposition",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

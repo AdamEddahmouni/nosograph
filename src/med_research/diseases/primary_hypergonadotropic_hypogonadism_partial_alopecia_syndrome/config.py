@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'primary hypergonadotropic hypogonadism-partial alopecia syndro
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of primary hypergonadotropic hypogonadism-partial alopecia syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Streak ovary",
+    "Hypergonadotropic hypogonadism",
+    "Alopecia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

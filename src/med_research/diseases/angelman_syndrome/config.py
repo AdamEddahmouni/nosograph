@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Angelman syndrome (ANGELMAN_SYNDROME)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Angelman syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Macroglossia",
+    "Hyperactivity",
+    "Motor delay",
+    "Sleep-wake cycle disturbance",
+    "Paroxysmal bursts of laughter",
+    "Exotropia",
+    "Microcephaly",
+    "Ataxia",
+    "Sporadic",
+    "Hypotonia",
+    "Feeding difficulties in infancy",
+    "Clumsiness",
+    "Deeply set eye",
+    "Progressive gait ataxia",
+    "Hyperreflexia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

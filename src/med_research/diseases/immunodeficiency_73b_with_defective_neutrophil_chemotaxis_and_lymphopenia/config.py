@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'immunodeficiency 73b with defective neutrophil chemotaxis and 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 73b with defective neutrophil chemotaxis and lymphopenia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Severe varicella zoster infection",
+    "Lymphadenitis",
+    "Decreased total leukocyte count",
+    "Pulmonary fibrosis",
+    "Chronic pulmonary obstruction",
+    "Pancytopenia",
+    "Recurrent lower respiratory tract infections",
+    "Cellulitis",
+    "Decreased circulating IgG concentration",
+    "Decreased total monocyte count",
+    "Chronic bronchitis",
+    "Recurrent respiratory infections",
+    "Hepatosplenomegaly",
+    "Partial absence of specific antibody response to protein-conjugated Haemophilus influenzae type b vaccine",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

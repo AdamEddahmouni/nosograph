@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'Usher syndrome type 3B (USHER_SYNDROME_TYPE_3B)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Usher syndrome type 3B
-SYMPTOMS = []
+SYMPTOMS = [
+    "Truncal ataxia",
+    "Attenuation of retinal blood vessels",
+    "Horizontal nystagmus",
+    "Hyperactive patellar reflex",
+    "Visual impairment",
+    "Photophobia",
+    "Hearing impairment",
+    "Optic disc pallor",
+    "Delayed gross motor development",
+    "Bull's eye maculopathy",
+    "Autosomal recessive inheritance",
+    "Childhood onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

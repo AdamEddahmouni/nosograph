@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'campomelic dysplasia (CAMPOMELIC_DYSPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of campomelic dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pectus carinatum",
+    "Hallux valgus",
+    "Antenatal onset",
+    "Hypotonia",
+    "Apnea",
+    "Midface retrusion",
+    "Talipes equinovarus",
+    "Depressed nasal ridge",
+    "Scoliosis",
+    "Cervical kyphosis",
+    "Narrow iliac wing",
+    "Frontal bossing",
+    "Patellar hypoplasia",
+    "Fibular hypoplasia",
+    "Hypoplastic cervical vertebrae",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

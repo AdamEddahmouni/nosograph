@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'aniridia-absent patella syndrome (ANIRIDIA_ABSENT_PATELLA_SYND
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of aniridia-absent patella syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Aplasia/Hypoplasia of the patella",
+    "Glaucoma",
+    "Aniridia",
+    "Cataract",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

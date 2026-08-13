@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Cenani-Lenz syndactyly syndrome (CENANI_LENZ_SYNDACTYLY_SYNDRO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Cenani-Lenz syndactyly syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Premature loss of permanent teeth",
+    "Anonychia",
+    "Autosomal recessive inheritance",
+    "Hemivertebrae",
+    "Ectopic kidney",
+    "Hypertelorism",
+    "Prominent forehead",
+    "Hypoplasia of the ulna",
+    "Malar flattening",
+    "Radioulnar synostosis",
+    "Syndactyly",
+    "Renal agenesis",
+    "Hypodontia",
+    "Delayed gross motor development",
+    "Congenital onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

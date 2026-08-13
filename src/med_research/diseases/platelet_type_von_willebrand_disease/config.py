@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'platelet-type von Willebrand disease (PLATELET_TYPE_VON_WILLEB
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of platelet-type von Willebrand disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Intermittent thrombocytopenia",
+    "Prolonged bleeding time",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

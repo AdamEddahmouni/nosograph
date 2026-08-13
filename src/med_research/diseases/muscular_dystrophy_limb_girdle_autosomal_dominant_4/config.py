@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'muscular dystrophy, limb-girdle, autosomal dominant 4 (MUSCULA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of muscular dystrophy, limb-girdle, autosomal dominant 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Myalgia",
+    "Back pain",
+    "Fatty replacement of skeletal muscle",
+    "Muscle fiber splitting",
+    "Proximal amyotrophy",
+    "Juvenile onset",
+    "Middle age onset",
+    "Late onset",
+    "Scapular winging",
+    "Increased variability in muscle fiber diameter",
+    "Gait disturbance",
+    "Childhood onset",
+    "Hyperlordosis",
+    "Young adult onset",
+    "Centrally nucleated skeletal muscle fibers",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'cleidocranial dysplasia 1 (CLEIDOCRANIAL_DYSPLASIA_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cleidocranial dysplasia 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Scoliosis",
+    "Increased bone mineral density",
+    "Delayed pubic bone ossification",
+    "Spondylolisthesis",
+    "Malar flattening",
+    "Short femoral neck",
+    "Increased susceptibility to fractures",
+    "Narrow chest",
+    "Large fontanelles",
+    "Hip dislocation",
+    "Parietal bossing",
+    "Moderately short stature",
+    "Cervical ribs",
+    "Cleft palate",
+    "Short stature",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

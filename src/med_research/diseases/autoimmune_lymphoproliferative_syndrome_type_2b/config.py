@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autoimmune lymphoproliferative syndrome type 2B (AUTOIMMUNE_LY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autoimmune lymphoproliferative syndrome type 2B
-SYMPTOMS = []
+SYMPTOMS = [
+    "Inverted CD4:CD8 ratio",
+    "Short stature",
+    "Decreased T cell activation",
+    "Decreased circulating IgM concentration",
+    "Eczematoid dermatitis",
+    "Lymphadenopathy",
+    "Pneumonia",
+    "Defective B cell activation",
+    "Splenomegaly",
+    "Decreased circulating IgA concentration",
+    "Recurrent sinopulmonary infections",
+    "Complete or near-complete absence of specific antibody response to unconjugated pneumococcus polysaccharide",
+    "Reduced CD95-induced lymphocyte apoptosis",
+    "Autosomal recessive inheritance",
+    "Failure to thrive",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'cone-rod dystrophy and hearing loss (CONE_ROD_DYSTROPHY_AND_HE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cone-rod dystrophy and hearing loss
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dyschromatopsia",
+    "High-frequency sensorineural hearing impairment",
+    "Childhood onset",
+    "Hemeralopia",
+    "Sensorineural hearing impairment",
+    "Retinal atrophy",
+    "Autosomal recessive inheritance",
+    "Macular degeneration",
+    "Reduced visual acuity",
+    "Photophobia",
+    "Young adult onset",
+    "Nystagmus",
+    "Visual impairment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

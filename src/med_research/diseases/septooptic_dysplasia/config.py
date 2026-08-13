@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'septooptic dysplasia (SEPTOOPTIC_DYSPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of septooptic dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased response to growth hormone stimulation test",
+    "Autosomal dominant inheritance",
+    "Short stature",
+    "Autosomal recessive inheritance",
+    "Agenesis of corpus callosum",
+    "Polydactyly",
+    "Global developmental delay",
+    "Optic disc hypoplasia",
+    "Short finger",
+    "Absent septum pellucidum",
+    "Optic nerve hypoplasia",
+    "Diabetes insipidus",
+    "Anterior pituitary hypoplasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

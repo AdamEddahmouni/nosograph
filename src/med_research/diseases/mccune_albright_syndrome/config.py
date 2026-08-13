@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'McCune-Albright syndrome (MCCUNE_ALBRIGHT_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of McCune-Albright syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sclerotic ilium",
+    "Intestinal polyposis",
+    "Increased circulating cortisol level",
+    "Juvenile onset",
+    "Pancreatic intraductal papillary mucinous neoplasm",
+    "Elevated circulating growth hormone concentration",
+    "Craniofacial hyperostosis",
+    "Abnormal circulating renin concentration",
+    "Increased circulating prolactin concentration",
+    "Abnormal circulating aldosterone concentration",
+    "Precocious puberty",
+    "Facial asymmetry",
+    "Blindness",
+    "Pituitary adenoma",
+    "Typified by somatic mosaicism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

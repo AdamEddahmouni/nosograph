@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'acroleukopathy, symmetric (ACROLEUKOPATHY_SYMMETRIC)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of acroleukopathy, symmetric
-SYMPTOMS = []
+SYMPTOMS = [
+    "Symmetric great toe depigmentation",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

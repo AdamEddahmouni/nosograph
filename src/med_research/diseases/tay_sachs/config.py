@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Tay-Sachs disease (TAY_SACHS)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Tay-Sachs disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cherry red spot of the macula",
+    "Infantile onset",
+    "Exaggerated startle response",
+    "Seizure",
+    "Aspiration",
+    "Pallor",
+    "Psychomotor deterioration",
+    "Poor head control",
+    "Hypertonia",
+    "Dementia",
+    "Hypotonia",
+    "Autosomal recessive inheritance",
+    "Apathy",
+    "Generalized hypotonia",
+    "Blindness",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

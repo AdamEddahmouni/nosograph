@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'pseudohypoparathyroidism type 1A (PSEUDOHYPOPARATHYROIDISM_TYP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pseudohypoparathyroidism type 1A
-SYMPTOMS = []
+SYMPTOMS = [
+    "Infantile onset",
+    "Subcutaneous ossification",
+    "Nystagmus",
+    "Hypocalcemic tetany",
+    "Basal ganglia calcification",
+    "Obesity",
+    "Elevated circulating parathyroid hormone level",
+    "Seizure",
+    "Brachydactyly",
+    "Cognitive impairment",
+    "Enamel hypoplasia",
+    "Hypothyroidism",
+    "Delayed eruption of teeth",
+    "Short metacarpal",
+    "Osteoporosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

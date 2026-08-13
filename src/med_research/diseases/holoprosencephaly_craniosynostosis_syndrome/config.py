@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'holoprosencephaly-craniosynostosis syndrome (HOLOPROSENCEPHALY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of holoprosencephaly-craniosynostosis syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Semilobar holoprosencephaly",
+    "Hypoplastic vertebral bodies",
+    "Coronal craniosynostosis",
+    "Short distal phalanx of finger",
+    "Autosomal recessive inheritance",
+    "Lambdoidal craniosynostosis",
+    "Coxa valga",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

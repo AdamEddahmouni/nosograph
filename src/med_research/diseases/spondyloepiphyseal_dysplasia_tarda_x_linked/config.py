@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spondyloepiphyseal dysplasia tarda, X-linked (SPONDYLOEPIPHYSE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondyloepiphyseal dysplasia tarda, X-linked
-SYMPTOMS = []
+SYMPTOMS = [
+    "Spondyloepiphyseal dysplasia",
+    "Lumbar hyperlordosis",
+    "Irregular epiphyses",
+    "Scoliosis",
+    "Coxa vara",
+    "Arthralgia",
+    "Shield chest",
+    "Short femoral neck",
+    "Hypoplastic iliac wing",
+    "Barrel-shaped chest",
+    "Postnatal growth retardation",
+    "Hump-shaped mound of bone in central and posterior portions of vertebral endplate",
+    "Short neck",
+    "Opacification of the corneal stroma",
+    "Juvenile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

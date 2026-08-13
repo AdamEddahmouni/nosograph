@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'recurrent infections associated with rare immunoglobulin isoty
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of recurrent infections associated with rare immunoglobulin isotypes deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Childhood onset",
+    "Chronic diarrhea",
+    "Recurrent respiratory infections",
+    "Autosomal recessive inheritance",
+    "Diarrhea",
+    "Absent circulating kappa chain-bearing immunoglobulin",
+    "Recurrent infections",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

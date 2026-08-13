@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'CHIME syndrome (CHIME_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of CHIME syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Seizure",
+    "Short philtrum",
+    "Nystagmus",
+    "Bilateral talipes equinovarus",
+    "Dry skin",
+    "Double outlet right ventricle",
+    "Cerebral atrophy",
+    "Drooling",
+    "Open mouth",
+    "Ptosis",
+    "Thick lower lip vermilion",
+    "Hypotonia",
+    "Thick vermilion border",
+    "Cleft lip",
+    "Elevated circulating aspartate aminotransferase concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

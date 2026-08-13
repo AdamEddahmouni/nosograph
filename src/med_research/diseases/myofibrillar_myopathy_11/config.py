@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'myofibrillar myopathy 11 (MYOFIBRILLAR_MYOPATHY_11)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of myofibrillar myopathy 11
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased variability in muscle fiber diameter",
+    "Proximal muscle weakness",
+    "Type 1 muscle fiber predominance",
+    "Shoulder girdle muscle atrophy",
+    "Gowers sign",
+    "Autosomal dominant inheritance",
+    "Infantile onset",
+    "Decreased fetal movement",
+    "Dysphagia",
+    "Centrally nucleated skeletal muscle fibers",
+    "Muscle fiber granulofilamentous inclusion bodies",
+    "Feeding difficulties in infancy",
+    "Z-band streaming",
+    "EMG: myopathic abnormalities",
+    "Overweight",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

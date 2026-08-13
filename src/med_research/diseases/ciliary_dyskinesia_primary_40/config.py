@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'ciliary dyskinesia, primary, 40 (CILIARY_DYSKINESIA_PRIMARY_40
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ciliary dyskinesia, primary, 40
-SYMPTOMS = []
+SYMPTOMS = [
+    "Absent outer dynein arms",
+    "Juvenile onset",
+    "Chronic rhinitis",
+    "Childhood onset",
+    "Congenital onset",
+    "Azoospermia",
+    "Reduced respiratory ciliary beating frequency",
+    "Chronic sinusitis",
+    "Autosomal recessive inheritance",
+    "Levotransposition of the great arteries",
+    "Atrioventricular canal defect",
+    "Right aortic arch",
+    "Interrupted inferior vena cava with azygous continuation",
+    "Left Isomerism",
+    "Cough",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

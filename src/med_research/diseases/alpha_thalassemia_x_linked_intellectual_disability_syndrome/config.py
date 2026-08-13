@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'alpha thalassemia-X-linked intellectual disability syndrome (A
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of alpha thalassemia-X-linked intellectual disability syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Renal agenesis",
+    "Anteverted nares",
+    "Clinodactyly",
+    "Microcephaly",
+    "Cryptorchidism",
+    "Micropenis",
+    "Protruding tongue",
+    "Epicanthus",
+    "Short nose",
+    "Scoliosis",
+    "Talipes equinovarus",
+    "Floppy infant",
+    "Postnatal growth retardation",
+    "Hemivertebrae",
+    "Hypochromic microcytic anemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

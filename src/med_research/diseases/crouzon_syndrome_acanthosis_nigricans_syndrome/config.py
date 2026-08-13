@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDRO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Crouzon syndrome-acanthosis nigricans syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Acanthosis nigricans",
+    "Proptosis",
+    "Hypertelorism",
+    "Brachycephaly",
+    "Hydrocephalus",
+    "Choanal atresia",
+    "Melanocytic nevus",
+    "Craniosynostosis",
+    "Midface retrusion",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

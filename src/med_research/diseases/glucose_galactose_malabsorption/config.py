@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'glucose-galactose malabsorption (GLUCOSE_GALACTOSE_MALABSORPTI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of glucose-galactose malabsorption
-SYMPTOMS = []
+SYMPTOMS = [
+    "Chronic diarrhea",
+    "Hypertonic dehydration",
+    "Abnormal oral glucose tolerance",
+    "Abdominal distention",
+    "Malabsorption",
+    "Metabolic acidosis",
+    "Glycosuria",
+    "Hyperactive bowel sounds",
+    "Autosomal recessive inheritance",
+    "Failure to thrive",
+    "Neonatal onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Hurler syndrome (HURLER_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Hurler syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Aortic regurgitation",
+    "Urinary glycosaminoglycan excretion",
+    "Progressive neurologic deterioration",
+    "Coxa valga",
+    "Cardiomyopathy",
+    "Diminished tissue alpha-L-iduronidase activity",
+    "Macroglossia",
+    "Hypertelorism",
+    "Thick vermilion border",
+    "Calvarial hyperostosis",
+    "Hepatosplenomegaly",
+    "Autosomal recessive inheritance",
+    "Dermatan sulfate excretion in urine",
+    "Intellectual disability",
+    "Hirsutism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

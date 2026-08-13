@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'retinitis pigmentosa and erythrocytic microcytosis (RETINITIS_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of retinitis pigmentosa and erythrocytic microcytosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Retinal pigment epithelial atrophy",
+    "Anisocytosis",
+    "Myopia",
+    "Retinal atrophy",
+    "Decreased circulating iron concentration",
+    "Nyctalopia",
+    "Epiretinal membrane",
+    "Photoreceptor layer loss on macular OCT",
+    "Anemia",
+    "Decreased mean corpuscular volume",
+    "Ring scotoma",
+    "Intermediate young adult onset",
+    "Peripheral retinal atrophy",
+    "Decreased total leukocyte count",
+    "Early young adult onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

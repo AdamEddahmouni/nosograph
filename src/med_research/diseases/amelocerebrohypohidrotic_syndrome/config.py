@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'amelocerebrohypohidrotic syndrome (AMELOCEREBROHYPOHIDROTIC_SY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of amelocerebrohypohidrotic syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cerebral atrophy",
+    "Focal-onset seizure",
+    "Epileptic encephalopathy",
+    "Spasticity",
+    "Microcephaly",
+    "Amelogenesis imperfecta",
+    "Hypsarrhythmia",
+    "Enamel hypoplasia",
+    "Delayed ability to walk",
+    "Ataxia",
+    "Developmental regression",
+    "Severe intellectual disability",
+    "Autosomal recessive inheritance",
+    "Intellectual disability",
+    "Cerebellar hypoplasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

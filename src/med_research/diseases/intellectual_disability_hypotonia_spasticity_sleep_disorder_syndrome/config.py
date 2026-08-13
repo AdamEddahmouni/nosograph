@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'intellectual disability-hypotonia-spasticity-sleep disorder sy
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of intellectual disability-hypotonia-spasticity-sleep disorder syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Seizure",
+    "Bruxism",
+    "Moderate intellectual disability",
+    "Aggressive behavior",
+    "Sleep disturbance",
+    "Intellectual disability",
+    "Global developmental delay",
+    "Spasticity",
+    "Delayed speech and language development",
+    "Hypotonia",
+    "Hyperactivity",
+    "Generalized hypotonia",
+    "Microcephaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

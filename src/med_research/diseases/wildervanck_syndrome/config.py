@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'Wildervanck syndrome (WILDERVANCK_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Wildervanck syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hearing impairment",
+    "Webbed neck",
+    "Preauricular skin tag",
+    "Pseudopapilledema",
+    "Abducens palsy",
+    "Facial asymmetry",
+    "Sporadic",
+    "Fused cervical vertebrae",
+    "Abnormality of the outer ear",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

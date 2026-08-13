@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'parietal foramina 1 (PARIETAL_FORAMINA_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of parietal foramina 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Aplasia cutis congenita of scalp",
+    "Cleft palate",
+    "Parietal foramina",
+    "Seizure",
+    "Blue sclerae",
+    "Encephalocele",
+    "Headache",
+    "Cleft upper lip",
+    "Autosomal dominant inheritance",
+    "Macrocephaly",
+    "Wormian bones",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

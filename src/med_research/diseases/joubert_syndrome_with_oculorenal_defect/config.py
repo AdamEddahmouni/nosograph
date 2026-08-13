@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Joubert syndrome with oculorenal defect (JOUBERT_SYNDROME_WITH
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Joubert syndrome with oculorenal defect
-SYMPTOMS = []
+SYMPTOMS = [
+    "Meningocele",
+    "Reduced visual acuity",
+    "Polycystic kidney dysplasia",
+    "Gray matter heterotopia",
+    "Situs inversus totalis",
+    "Oculomotor apraxia",
+    "Dysgenesis of the cerebellar vermis",
+    "Ptosis",
+    "Dolichocephaly",
+    "Autosomal recessive inheritance",
+    "Episodic tachypnea",
+    "Dyspnea",
+    "Intellectual disability",
+    "Low-set ears",
+    "Generalized hypotonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

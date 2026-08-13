@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'retinitis pigmentosa 12 (RETINITIS_PIGMENTOSA_12)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of retinitis pigmentosa 12
-SYMPTOMS = []
+SYMPTOMS = [
+    "Reduced visual acuity",
+    "Autosomal recessive inheritance",
+    "Undetectable electroretinogram",
+    "Childhood onset",
+    "Nyctalopia",
+    "Exotropia",
+    "Attenuation of retinal blood vessels",
+    "Optic disc pallor",
+    "Nystagmus",
+    "High hypermetropia",
+    "Spicular pigmentation of the retina",
+    "Rod-cone dystrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

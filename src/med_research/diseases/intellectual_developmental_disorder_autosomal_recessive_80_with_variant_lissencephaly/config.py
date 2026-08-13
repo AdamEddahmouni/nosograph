@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'intellectual developmental disorder, autosomal recessive 80, w
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of intellectual developmental disorder, autosomal recessive 80, with variant lissencephaly
-SYMPTOMS = []
+SYMPTOMS = [
+    "Seizure",
+    "Intellectual disability",
+    "Thin upper lip vermilion",
+    "Global developmental delay",
+    "Dimple chin",
+    "Thin ear helix",
+    "Autosomal recessive inheritance",
+    "Hypotonia",
+    "Optic atrophy",
+    "Childhood onset",
+    "Prominent nasal tip",
+    "Hyperreflexia",
+    "Spasticity",
+    "Broad lateral eyebrow",
+    "Hydrocephalus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

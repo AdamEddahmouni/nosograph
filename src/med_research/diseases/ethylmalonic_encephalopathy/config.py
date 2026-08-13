@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ethylmalonic encephalopathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cytochrome C oxidase-negative muscle fibers",
+    "Abnormal retinal vascular morphology",
+    "Feeding difficulties",
+    "Lactic acidosis",
+    "Infantile onset",
+    "Autosomal recessive inheritance",
+    "Developmental regression",
+    "Global developmental delay",
+    "Abnormality of extrapyramidal motor function",
+    "Death in infancy",
+    "Focal T2 hyperintense basal ganglia lesion",
+    "Petechiae",
+    "Hypotonia",
+    "Babinski sign",
+    "Elevated circulating butyrylcarnitine concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Troyer syndrome (TROYER_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Troyer syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Drooling",
+    "Motor delay",
+    "Autosomal recessive inheritance",
+    "Babinski sign",
+    "Abnormal cerebellum morphology",
+    "Hyperplasia of midface",
+    "Dysarthria",
+    "Hypertelorism",
+    "Spastic paraparesis",
+    "Nystagmus",
+    "Short foot",
+    "Upper limb spasticity",
+    "Brachydactyly",
+    "Kyphoscoliosis",
+    "Dysphagia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

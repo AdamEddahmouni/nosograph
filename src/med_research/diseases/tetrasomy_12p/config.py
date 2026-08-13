@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'tetrasomy 12p (TETRASOMY_12P)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of tetrasomy 12p
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short palm",
+    "Polyhydramnios",
+    "Ventriculomegaly",
+    "Everted lower lip vermilion",
+    "Absent speech",
+    "Floppy infant",
+    "Small scrotum",
+    "Seizure",
+    "Periorbital fullness",
+    "Hyperventilation",
+    "Micrognathia",
+    "Broad foot",
+    "Hypertonia",
+    "Sparse scalp hair",
+    "Posteriorly rotated ears",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

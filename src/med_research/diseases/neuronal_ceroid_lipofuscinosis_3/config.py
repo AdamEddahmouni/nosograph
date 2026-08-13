@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neuronal ceroid lipofuscinosis 3 (NEURONAL_CEROID_LIPOFUSCINOS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neuronal ceroid lipofuscinosis 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Vacuolated lymphocytes",
+    "Blindness",
+    "Retinal degeneration",
+    "Increased neuronal autofluorescent lipopigment",
+    "Myoclonus",
+    "Anxiety",
+    "Abnormal cerebellum morphology",
+    "Bilateral tonic-clonic seizure",
+    "Curvilinear intracellular accumulation of autofluorescent lipopigment storage material",
+    "Undetectable electroretinogram",
+    "Abnormality of extrapyramidal motor function",
+    "Cerebral atrophy",
+    "Fingerprint intracellular accumulation of autofluorescent lipopigment storage material",
+    "Reduced visual acuity",
+    "Progressive visual loss",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

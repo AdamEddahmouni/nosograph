@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'eosinophil peroxidase deficiency (EOSINOPHIL_PEROXIDASE_DEFICI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of eosinophil peroxidase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Eosinophil nuclear hypersegmentation",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

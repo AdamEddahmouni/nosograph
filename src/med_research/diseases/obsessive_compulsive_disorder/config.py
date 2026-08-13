@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'obsessive-compulsive disorder (OBSESSIVE_COMPULSIVE_DISORDER)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of obsessive-compulsive disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Collectionism",
+    "Skin-picking",
+    "Compulsive behaviors",
+    "Anxiety",
+    "Depression",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

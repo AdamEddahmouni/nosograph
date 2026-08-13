@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'lethal congenital contracture syndrome 1 (LETHAL_CONGENITAL_CO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lethal congenital contracture syndrome 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypoplasia of the musculature",
+    "Micrognathia",
+    "Pulmonary hypoplasia",
+    "Widening of cervical spinal canal",
+    "Abnormal thorax morphology",
+    "Arthrogryposis multiplex congenita",
+    "Autosomal recessive inheritance",
+    "Abnormality of the amniotic fluid",
+    "Paucity of anterior horn motor neurons",
+    "Edema",
+    "Skeletal muscle atrophy",
+    "Neonatal death",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

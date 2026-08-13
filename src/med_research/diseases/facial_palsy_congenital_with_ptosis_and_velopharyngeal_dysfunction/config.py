@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'facial palsy, congenital, with ptosis and velopharyngeal dysfu
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of facial palsy, congenital, with ptosis and velopharyngeal dysfunction
-SYMPTOMS = []
+SYMPTOMS = [
+    "Velopharyngeal insufficiency",
+    "Hypernasal speech",
+    "Infantile onset",
+    "Autosomal dominant inheritance",
+    "Dysphagia",
+    "Nonprogressive",
+    "Nasal regurgitation",
+    "Brain imaging abnormality",
+    "Ptosis",
+    "Facial palsy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

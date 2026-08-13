@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'TARP syndrome (TARP_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of TARP syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cerebellar hypoplasia",
+    "Atrial septal defect",
+    "Hypertelorism",
+    "Hypotonia",
+    "Single transverse palmar crease",
+    "Tongue nodules",
+    "Clinodactyly",
+    "Talipes equinovarus",
+    "Wide nasal bridge",
+    "Pectus excavatum",
+    "Premature rupture of membranes",
+    "Cerebellar vermis hypoplasia",
+    "Prominent antihelix",
+    "Hydronephrosis",
+    "Micrognathia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

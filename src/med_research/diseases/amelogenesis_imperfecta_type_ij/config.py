@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'amelogenesis imperfecta, type ij (AMELOGENESIS_IMPERFECTA_TYPE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of amelogenesis imperfecta, type ij
-SYMPTOMS = []
+SYMPTOMS = [
+    "Widely spaced teeth",
+    "Carious teeth",
+    "Increased overbite",
+    "Enamel hypoplasia",
+    "Autosomal recessive inheritance",
+    "Amelogenesis imperfecta",
+    "Abnormal dentin morphology",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

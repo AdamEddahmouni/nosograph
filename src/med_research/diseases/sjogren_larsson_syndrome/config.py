@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Sjogren-Larsson syndrome (SJOGREN_LARSSON_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Sjogren-Larsson syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Photophobia",
+    "CNS demyelination",
+    "Reduced tissue fatty aldehyde dehydrogenase activity",
+    "Abnormal nail morphology",
+    "Flexion contracture",
+    "Seizure",
+    "Abnormal hair morphology",
+    "Spastic paraparesis",
+    "Retinal pigment epithelial atrophy",
+    "Congenital onset",
+    "Short stature",
+    "Macular crystals",
+    "Enamel hypoplasia",
+    "Reduced visual acuity",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

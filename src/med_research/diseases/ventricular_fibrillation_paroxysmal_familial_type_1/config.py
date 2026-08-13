@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'ventricular fibrillation, paroxysmal familial, type 1 (VENTRIC
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ventricular fibrillation, paroxysmal familial, type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ventricular fibrillation",
+    "Tachycardia",
+    "Syncope",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

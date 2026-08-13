@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'menstrual cycle-dependent periodic fever (MENSTRUAL_CYCLE_DEPE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of menstrual cycle-dependent periodic fever
-SYMPTOMS = []
+SYMPTOMS = [
+    "Recurrent spontaneous abortion",
+    "Increased circulating cortisol level",
+    "Migraine",
+    "Autosomal dominant inheritance",
+    "Fever",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

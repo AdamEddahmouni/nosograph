@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neurofibromatosis type 1 (NEUROFIBROMATOSIS_TYPE_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neurofibromatosis type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Intellectual disability",
+    "Hypertrophic cardiomyopathy",
+    "Sphenoid wing dysplasia",
+    "Childhood onset",
+    "Hypertelorism",
+    "Plexiform neurofibroma",
+    "Spina bifida",
+    "Lipoma",
+    "Cerebellar glioma",
+    "Breast carcinoma",
+    "Glaucoma",
+    "Hypsarrhythmia",
+    "Astrocytoma",
+    "Glioma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

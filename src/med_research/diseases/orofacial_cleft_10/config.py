@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'orofacial cleft 10 (OROFACIAL_CLEFT_10)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of orofacial cleft 10
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sporadic",
+    "Unilateral cleft palate",
+    "Unilateral cleft lip",
+    "Congenital onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'Parathyroid Gland Carcinoma (PARATHYROID_GLAND_CARCINOMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Parathyroid Gland Carcinoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Hypercalcemia",
+    "Parathyroid carcinoma",
+    "Typified by somatic mosaicism",
+    "Hyperparathyroidism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

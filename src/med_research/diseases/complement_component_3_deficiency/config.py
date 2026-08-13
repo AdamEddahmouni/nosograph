@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'complement component 3 deficiency (COMPLEMENT_COMPONENT_3_DEFI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of complement component 3 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Infantile onset",
+    "Renal insufficiency",
+    "Recurrent pneumonia",
+    "Autosomal recessive inheritance",
+    "Membranoproliferative glomerulonephritis",
+    "Nephrotic syndrome",
+    "Decreased circulating complement C3 concentration",
+    "Recurrent bacterial infections",
+    "Recurrent tonsillitis",
+    "Childhood onset",
+    "Recurrent fever",
+    "Systemic lupus erythematosus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

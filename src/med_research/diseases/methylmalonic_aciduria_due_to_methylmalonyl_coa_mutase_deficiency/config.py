@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'methylmalonic aciduria due to methylmalonyl-CoA mutase deficie
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of methylmalonic aciduria due to methylmalonyl-CoA mutase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Neonatal onset",
+    "Episodic metabolic acidosis",
+    "Cerebellar hemorrhage",
+    "Seizure",
+    "Hyperglycinemia",
+    "Global developmental delay",
+    "Abnormal globus pallidus morphology",
+    "Decreased total neutrophil count",
+    "HP_0040126",
+    "Metabolic ketoacidosis",
+    "Dehydration",
+    "Failure to thrive",
+    "Hypoglycemia",
+    "Hepatomegaly",
+    "Methylmalonic aciduria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

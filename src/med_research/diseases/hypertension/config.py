@@ -8,8 +8,12 @@ PIPELINE_LABEL = "Hypertension (HYPERTENSION)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Hypertension
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated systolic blood pressure",
+    "Non-Mendelian inheritance",
+    "Elevated diastolic blood pressure",
+    "Elevated mean arterial pressure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

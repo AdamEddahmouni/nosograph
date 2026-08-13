@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Alzheimer disease (ALZHEIMER_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Alzheimer disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hippocampal atrophy",
+    "Neurofibrillary tangles",
+    "Adult onset",
+    "Disinhibition",
+    "Dementia",
+    "Depression",
+    "Parkinsonism",
+    "Cerebral cortical atrophy",
+    "Memory impairment",
+    "Late onset",
+    "Abnormality of extrapyramidal motor function",
+    "Alzheimer disease",
+    "Senile plaques",
+    "Autosomal dominant inheritance",
+    "Decreased circulating GABA concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

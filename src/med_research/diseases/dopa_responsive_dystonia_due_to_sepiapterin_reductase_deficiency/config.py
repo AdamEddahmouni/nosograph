@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'dopa-responsive dystonia due to sepiapterin reductase deficien
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dopa-responsive dystonia due to sepiapterin reductase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Growth delay",
+    "Oculogyric crisis",
+    "Autosomal recessive inheritance",
+    "Infantile onset",
+    "Tremor",
+    "Transient hyperphenylalaninemia",
+    "Reduced sepiapterin reductase activity in cultured fibroblasts",
+    "Hyperphenylalaninemia",
+    "Abnormal circulating neopterin concentration",
+    "Global developmental delay",
+    "Frequent falls",
+    "Dysarthria",
+    "Depression",
+    "Microcephaly",
+    "Sleep disturbance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

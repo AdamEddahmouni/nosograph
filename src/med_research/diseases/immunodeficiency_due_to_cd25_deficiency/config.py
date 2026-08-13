@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'immunodeficiency due to CD25 deficiency (IMMUNODEFICIENCY_DUE_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency due to CD25 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Alopecia universalis",
+    "Increased circulating IgE concentration",
+    "Scaling skin",
+    "Pulmonary infiltrates",
+    "Psoriasiform dermatitis",
+    "Decreased anti-CD3/28-induced T-cell proliferation",
+    "Immunodeficiency",
+    "Chronic diarrhea",
+    "Decreased specific anti-polysaccharide antibody concentration",
+    "Hypothyroidism",
+    "Hepatosplenomegaly",
+    "Recurrent oral thrush",
+    "Decreased total B cell count",
+    "Severe varicella zoster infection",
+    "Cellulitis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'anemia (phenotype) (HEMOLYTIC_ANEMIA_DUE_TO_RED_CELL_PYRUVATE_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of anemia (phenotype)
-SYMPTOMS = []
+SYMPTOMS = [
+    "Unconjugated hyperbilirubinemia",
+    "Fava bean-induced hemolytic anemia",
+    "Increased total leukocyte count",
+    "Pallor",
+    "Jaundice",
+    "Juvenile onset",
+    "Poikilocytosis",
+    "Hemoglobinuria",
+    "Fever",
+    "Abdominal pain",
+    "Heinz bodies",
+    "Childhood onset",
+    "Prolonged neonatal jaundice",
+    "Anisocytosis",
+    "Decreased circulating glucose-6-phosphate dehydrogenase activity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hereditary spastic paraplegia 18 (HEREDITARY_SPASTIC_PARAPLEGI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hereditary spastic paraplegia 18
-SYMPTOMS = []
+SYMPTOMS = [
+    "Gait disturbance",
+    "Scoliosis",
+    "Intellectual disability",
+    "Autosomal recessive inheritance",
+    "Progressive",
+    "Pes cavus",
+    "Childhood onset",
+    "Slowly progressive",
+    "Delayed ability to walk",
+    "Hypoplasia of the corpus callosum",
+    "Strabismus",
+    "Infantile onset",
+    "Ankle clonus",
+    "Skeletal muscle atrophy",
+    "High palate",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

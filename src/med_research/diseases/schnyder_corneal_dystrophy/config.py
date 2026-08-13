@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'Schnyder corneal dystrophy (SCHNYDER_CORNEAL_DYSTROPHY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Schnyder corneal dystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Corneal dystrophy",
+    "Crystalline corneal dystrophy",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

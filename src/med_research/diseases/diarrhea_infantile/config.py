@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'Diarrhea, Infantile (DIARRHEA_INFANTILE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Diarrhea, Infantile
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Villous atrophy",
+    "Diarrhea",
+    "Failure to thrive",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'myoglobinuria, recurrent (MYOGLOBINURIA_RECURRENT)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of myoglobinuria, recurrent
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ragged-red muscle fibers",
+    "Recurrent myoglobinuria",
+    "Mitochondrial inheritance",
+    "Exercise-induced myoglobinuria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

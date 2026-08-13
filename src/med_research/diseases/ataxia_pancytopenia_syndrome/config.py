@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ataxia-pancytopenia syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Distal sensory impairment",
+    "Impaired vibration sensation in the lower limbs",
+    "Thrombocytopenia",
+    "Dysmetria",
+    "Autosomal dominant inheritance",
+    "Decreased nerve conduction velocity",
+    "Ataxia",
+    "Acute myelomonocytic leukemia",
+    "Pancytopenia",
+    "Babinski sign",
+    "Decreased total neutrophil count",
+    "Hyperactive deep tendon reflexes",
+    "Anemia",
+    "Abnormal cerebral white matter morphology",
+    "Nystagmus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

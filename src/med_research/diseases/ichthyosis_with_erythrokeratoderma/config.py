@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'ichthyosis with erythrokeratoderma (ICHTHYOSIS_WITH_ERYTHROKER
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ichthyosis with erythrokeratoderma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Diffuse palmoplantar hyperkeratosis",
+    "Nail pits",
+    "Autosomal dominant inheritance",
+    "Palmoplantar hyperkeratosis",
+    "Congenital onset",
+    "Erythema",
+    "Palmoplantar keratoderma",
+    "Pruritus",
+    "Scaling skin",
+    "Parakeratosis",
+    "Erythroderma",
+    "Congenital ichthyosiform erythroderma",
+    "Leukonychia",
+    "Hyperkeratosis",
+    "Epidermal acanthosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

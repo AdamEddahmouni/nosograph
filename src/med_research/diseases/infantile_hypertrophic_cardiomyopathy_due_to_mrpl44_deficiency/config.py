@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'infantile hypertrophic cardiomyopathy due to MRPL44 deficiency
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of infantile hypertrophic cardiomyopathy due to MRPL44 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated circulating aspartate aminotransferase concentration",
+    "Hypertrophic cardiomyopathy",
+    "Autosomal recessive inheritance",
+    "Cytochrome C oxidase-negative muscle fibers",
+    "Infantile onset",
+    "Elevated circulating alanine aminotransferase concentration",
+    "Microvesicular hepatic steatosis",
+    "Increased circulating lactate concentration",
+    "Death in infancy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

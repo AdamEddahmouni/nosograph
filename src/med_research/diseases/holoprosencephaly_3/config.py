@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'holoprosencephaly 3 (HOLOPROSENCEPHALY_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of holoprosencephaly 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Proboscis",
+    "Depressed nasal bridge",
+    "Typified by incomplete penetrance",
+    "Hydronephrosis",
+    "Bifid uvula",
+    "Intellectual disability",
+    "Cyclopia",
+    "Proptosis",
+    "Cleft palate",
+    "Global developmental delay",
+    "Midface retrusion",
+    "Microcephaly",
+    "Solitary median maxillary central incisor",
+    "Single naris",
+    "Abnormality of the nose",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

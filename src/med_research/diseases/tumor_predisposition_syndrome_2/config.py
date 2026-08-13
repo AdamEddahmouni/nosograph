@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'tumor predisposition syndrome 2 (TUMOR_PREDISPOSITION_SYNDROME
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of tumor predisposition syndrome 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Adenomatous colonic polyposis",
+    "Uveal melanoma",
+    "Juvenile onset",
+    "Juvenile type ovarian granulosa cell tumor",
+    "Meningioma",
+    "Middle age onset",
+    "Acute myeloid leukemia",
+    "Autosomal dominant inheritance",
+    "Young adult onset",
+    "Ductal carcinoma in situ",
+    "Colon cancer",
+    "Schwannoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

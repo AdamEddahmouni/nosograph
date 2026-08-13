@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'infantile-onset periodic fever-panniculitis-dermatosis syndrom
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of infantile-onset periodic fever-panniculitis-dermatosis syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased circulating IgA concentration",
+    "Increased total neutrophil count",
+    "Failure to thrive in infancy",
+    "Increased total leukocyte count",
+    "Myalgia",
+    "Lymphadenopathy",
+    "Arthralgia",
+    "Increased circulating IgM concentration",
+    "Lipodystrophy",
+    "Skin rash",
+    "Abdominal pain",
+    "Increased total CD4+ T cell proportion",
+    "Recurrent fever",
+    "Autosomal recessive inheritance",
+    "Elevated circulating C-reactive protein concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

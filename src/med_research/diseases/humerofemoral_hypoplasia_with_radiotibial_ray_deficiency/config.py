@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'humerofemoral hypoplasia with radiotibial ray deficiency (HUME
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of humerofemoral hypoplasia with radiotibial ray deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypoplastic pelvis",
+    "Short clavicles",
+    "Bowed humerus",
+    "Elbow flexion contracture",
+    "Antenatal onset",
+    "Retrognathia",
+    "Hypoplastic scapulae",
+    "Autosomal recessive inheritance",
+    "Prominent glabella",
+    "Congenital diaphragmatic hernia",
+    "Bilateral talipes equinovarus",
+    "Absent thumb",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

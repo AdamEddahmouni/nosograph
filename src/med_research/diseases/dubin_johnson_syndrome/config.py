@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'Dubin-Johnson syndrome (DUBIN_JOHNSON_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Dubin-Johnson syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Conjugated hyperbilirubinemia",
+    "Jaundice",
+    "Biliary tract abnormality",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

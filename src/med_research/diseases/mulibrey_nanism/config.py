@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mulibrey nanism (MULIBREY_NANISM)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mulibrey nanism
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypotonia",
+    "Ventriculomegaly",
+    "Intrauterine growth retardation",
+    "Abnormally high-pitched voice",
+    "Corneal dystrophy",
+    "Ascites",
+    "Hydrops fetalis",
+    "Mild intellectual disability",
+    "Astigmatism",
+    "Growth delay",
+    "Triangular face",
+    "Iris coloboma",
+    "Hypertelorism",
+    "Congestive heart failure",
+    "Dental malocclusion",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

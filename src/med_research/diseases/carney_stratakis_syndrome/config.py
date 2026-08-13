@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Carney-Stratakis syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Neoplasm of the gastrointestinal tract",
+    "Paraganglioma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

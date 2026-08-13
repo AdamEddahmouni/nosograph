@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hepatocellular adenoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Polycystic ovaries",
+    "Maturity-onset diabetes of the young",
+    "Subacute progressive viral hepatitis",
+    "Micronodular cirrhosis",
+    "Typified by somatic mosaicism",
+    "Hepatocellular adenoma",
+    "Hepatocellular carcinoma",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

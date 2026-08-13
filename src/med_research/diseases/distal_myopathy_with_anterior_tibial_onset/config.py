@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'distal myopathy with anterior tibial onset (DISTAL_MYOPATHY_WI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of distal myopathy with anterior tibial onset
-SYMPTOMS = []
+SYMPTOMS = [
+    "Proximal muscle weakness",
+    "Rapidly progressive",
+    "Young adult onset",
+    "Loss of ambulation",
+    "Autosomal recessive inheritance",
+    "Myopathy",
+    "Juvenile onset",
+    "Elevated circulating creatine kinase activity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Hermansky-Pudlak syndrome 7 (HERMANSKY_PUDLAK_SYNDROME_7)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Hermansky-Pudlak syndrome 7
-SYMPTOMS = []
+SYMPTOMS = [
+    "Reduced visual acuity",
+    "Autosomal recessive inheritance",
+    "Visual impairment",
+    "Nystagmus",
+    "Persistent bleeding after trauma",
+    "Prolonged bleeding time",
+    "Impaired platelet aggregation",
+    "Bruising susceptibility",
+    "Epistaxis",
+    "Menorrhagia",
+    "Albinism",
+    "Ocular albinism",
+    "Childhood onset",
+    "Post-partum hemorrhage",
+    "Prolonged bleeding after dental extraction",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'dermatitis herpetiformis, familial (DERMATITIS_HERPETIFORMIS_F
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dermatitis herpetiformis, familial
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Pruritus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

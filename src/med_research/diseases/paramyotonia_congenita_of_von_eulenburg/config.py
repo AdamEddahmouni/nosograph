@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENIT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of paramyotonia congenita of Von Eulenburg
-SYMPTOMS = []
+SYMPTOMS = [
+    "Muscle weakness",
+    "Handgrip myotonia",
+    "Neonatal hypotonia",
+    "Paradoxical myotonia",
+    "Muscle stiffness",
+    "Autosomal dominant inheritance",
+    "Myalgia",
+    "Percussion myotonia",
+    "Inspiratory stridor",
+    "Skeletal muscle hypertrophy",
+    "Feeding difficulties",
+    "Infantile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

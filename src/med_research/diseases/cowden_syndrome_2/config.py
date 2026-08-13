@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'Cowden syndrome 2 (COWDEN_SYNDROME_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Cowden syndrome 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Papillary thyroid carcinoma",
+    "Breast carcinoma",
+    "Endometrial carcinoma",
+    "Uterine leiomyoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

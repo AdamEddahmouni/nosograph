@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mitochondrial DNA depletion syndrome 1 (MITOCHONDRIAL_DNA_DEPL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mitochondrial DNA depletion syndrome 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Progressive",
+    "Allodynia",
+    "Abdominal pain",
+    "Elevated circulating deoxyuridine concentration",
+    "Intestinal pseudo-obstruction",
+    "Lactic acidosis",
+    "Constipation",
+    "Diplopia",
+    "Ragged-red muscle fibers",
+    "Distal amyotrophy",
+    "Hypoesthesia",
+    "Intellectual disability",
+    "Areflexia",
+    "Abdominal cramps",
+    "Distal muscle weakness",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

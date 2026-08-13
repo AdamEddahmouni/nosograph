@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neurodevelopmental disorder plus optic atrophy (NEURODEVELOPME
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neurodevelopmental disorder plus optic atrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Tube feeding",
+    "Mild global developmental delay",
+    "Intellectual disability",
+    "Optic atrophy",
+    "Nystagmus",
+    "Microcephaly",
+    "EEG abnormality",
+    "Delayed speech and language development",
+    "Dysphagia",
+    "Juvenile onset",
+    "Cerebellar cortical atrophy",
+    "Childhood onset",
+    "Abnormality of visual evoked potentials",
+    "Global brain atrophy",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

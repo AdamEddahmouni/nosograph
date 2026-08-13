@@ -8,8 +8,23 @@ PIPELINE_LABEL = "sitosterolemia (SITOSTEROLEMIA)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of sitosterolemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Tuberous xanthoma",
+    "Splenomegaly",
+    "Autosomal recessive inheritance",
+    "Decreased circulating haptoglobin concentration",
+    "Hyperapobetalipoproteinemia",
+    "Increased circulating lactate dehydrogenase concentration",
+    "Arthritis",
+    "Stomatocytosis",
+    "Coronary artery atherosclerosis",
+    "Giant platelets",
+    "Hypercholesterolemia",
+    "Impaired platelet aggregation",
+    "Abnormal bleeding",
+    "Anemia",
+    "Episodic hemolytic anemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

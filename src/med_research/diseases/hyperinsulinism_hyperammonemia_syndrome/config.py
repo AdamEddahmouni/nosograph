@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPER
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hyperinsulinism-hyperammonemia syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Intellectual disability",
+    "Failure to thrive",
+    "Infantile onset",
+    "Hypoglycemic seizures",
+    "Autosomal dominant inheritance",
+    "Hypoglycemic coma",
+    "Abnormality of the pancreatic islet cells",
+    "Neonatal onset",
+    "Asymptomatic hyperammonemia",
+    "Hyperinsulinemic hypoglycemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

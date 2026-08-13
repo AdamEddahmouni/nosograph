@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Age-related macular degeneration (MACULAR_DEGENERATION)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Age-related macular degeneration
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pes cavus",
+    "Perifoveal ring of hyperautofluorescence",
+    "Autosomal dominant inheritance",
+    "Hyperextensible skin",
+    "Peripheral axonal neuropathy",
+    "Distal sensory impairment",
+    "Visual impairment",
+    "Macular degeneration",
+    "Middle age onset",
+    "Central scotoma",
+    "Abnormal skeletal morphology",
+    "Foveal hypopigmentation",
+    "Childhood onset",
+    "Reduced visual acuity",
+    "Choroidal neovascularization",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

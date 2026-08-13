@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'gingival fibromatosis-hypertrichosis syndrome (GINGIVAL_FIBROM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of gingival fibromatosis-hypertrichosis syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Thick nasal alae",
+    "Hypertrichosis",
+    "Wide nasal base",
+    "Epicanthus",
+    "Bulbous nose",
+    "Downslanted palpebral fissures",
+    "Gingival fibromatosis",
+    "Hirsutism",
+    "Autosomal recessive inheritance",
+    "Congenital, generalized hypertrichosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

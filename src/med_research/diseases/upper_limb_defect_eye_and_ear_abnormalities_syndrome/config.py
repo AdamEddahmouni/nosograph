@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'upper limb defect-eye and ear abnormalities syndrome (UPPER_LI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of upper limb defect-eye and ear abnormalities syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Short thumb",
+    "Cataract",
+    "Abnormal antihelix morphology",
+    "Global developmental delay",
+    "Hearing impairment",
+    "Chorioretinal coloboma",
+    "Cryptorchidism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

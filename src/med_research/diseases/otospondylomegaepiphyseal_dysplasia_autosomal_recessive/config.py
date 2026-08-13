@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'otospondylomegaepiphyseal dysplasia, autosomal recessive (OTOS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of otospondylomegaepiphyseal dysplasia, autosomal recessive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short stature",
+    "Malar flattening",
+    "Cleft palate",
+    "Prominent supraorbital ridges",
+    "Premature osteoarthritis",
+    "Recurrent pneumonia",
+    "Pierre-Robin sequence",
+    "Coronal cleft vertebrae",
+    "Proptosis",
+    "Micrognathia",
+    "Autosomal recessive inheritance",
+    "Anteverted nares",
+    "Enlarged joints",
+    "Short long bone",
+    "Short 5th metacarpal",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

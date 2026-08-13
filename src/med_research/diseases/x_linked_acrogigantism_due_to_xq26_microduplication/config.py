@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'X-linked acrogigantism due to Xq26 microduplication (X_LINKED_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked acrogigantism due to Xq26 microduplication
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased circulating prolactin concentration",
+    "Pituitary adenoma",
+    "Hypopituitarism",
+    "Ventricular hypertrophy",
+    "Snoring",
+    "Hyperhidrosis",
+    "Coarse facial features",
+    "Overgrowth",
+    "Accelerated skeletal maturation",
+    "Acral overgrowth",
+    "Acanthosis nigricans",
+    "Increased circulating insulin-like growth factor 1 concentration",
+    "Childhood onset",
+    "Arthralgia",
+    "X-linked dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

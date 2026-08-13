@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'chondrodysplasia with joint dislocations, gPAPP type (CHONDROD
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of chondrodysplasia with joint dislocations, gPAPP type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hearing impairment",
+    "Narrow mouth",
+    "Short stature",
+    "Limited elbow extension",
+    "Micrognathia",
+    "Short foot",
+    "Cleft palate",
+    "Recurrent patellar dislocation",
+    "Short metacarpal",
+    "Proptosis",
+    "Congenital onset",
+    "Radial head subluxation",
+    "Capitate-hamate fusion",
+    "Genu valgum",
+    "Limb undergrowth",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

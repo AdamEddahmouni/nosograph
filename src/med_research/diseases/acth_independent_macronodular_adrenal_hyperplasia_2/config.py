@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'acth-independent macronodular adrenal hyperplasia 2 (ACTH_INDE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of acth-independent macronodular adrenal hyperplasia 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased circulating cortisol level",
+    "Hypertension",
+    "Macronodular adrenal hyperplasia",
+    "Round face",
+    "Adult onset",
+    "Increased urinary cortisol level",
+    "Fatigue",
+    "Depression",
+    "Hyperglycemia",
+    "Autosomal dominant inheritance",
+    "Increased body weight",
+    "Typified by somatic mosaicism",
+    "Decreased circulating ACTH concentration",
+    "Osteoporosis",
+    "Abdominal obesity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

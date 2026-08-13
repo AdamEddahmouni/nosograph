@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'polysyndactyly-cardiac malformation syndrome (POLYSYNDACTYLY_C
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of polysyndactyly-cardiac malformation syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Atrial septal defect",
+    "Autosomal recessive inheritance",
+    "Abnormal facial shape",
+    "Renal cyst",
+    "Ventricular septal defect",
+    "Hypertelorism",
+    "Preaxial hand polydactyly",
+    "Stillbirth",
+    "Anteverted nares",
+    "Duplication of phalanx of hallux",
+    "Syndactyly",
+    "Hepatic cysts",
+    "Small nail",
+    "Polyhydramnios",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

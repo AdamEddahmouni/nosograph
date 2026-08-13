@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'craniometaphyseal dysplasia, autosomal recessive (CRANIOMETAPH
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of craniometaphyseal dysplasia, autosomal recessive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal nasopharynx morphology",
+    "Depressed nasal ridge",
+    "Patchy sclerosis of finger phalanx",
+    "Autosomal recessive inheritance",
+    "Intellectual disability",
+    "Mixed hearing impairment",
+    "Broad alveolar ridges",
+    "Telecanthus",
+    "Flared metaphysis",
+    "Hypertelorism",
+    "Nasal congestion",
+    "Macrocephaly",
+    "Wide nasal bridge",
+    "Coarse facial features",
+    "Club-shaped distal femur",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

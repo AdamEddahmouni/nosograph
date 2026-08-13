@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of fibrosis, neurodegeneration, and cerebral angiomatosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Seizure",
+    "Death in childhood",
+    "Hemolytic anemia",
+    "Chronic hemolytic anemia",
+    "Respiratory failure",
+    "Thin corpus callosum",
+    "Dystonia",
+    "Brain atrophy",
+    "Unconjugated hyperbilirubinemia",
+    "Autosomal recessive inheritance",
+    "Poikilocytosis",
+    "Failure to thrive",
+    "Decreased mean corpuscular volume",
+    "Recurrent respiratory infections",
+    "Ventriculomegaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

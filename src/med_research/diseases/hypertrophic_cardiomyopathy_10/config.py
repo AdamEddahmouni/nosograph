@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hypertrophic cardiomyopathy 10 (HYPERTROPHIC_CARDIOMYOPATHY_10
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypertrophic cardiomyopathy 10
-SYMPTOMS = []
+SYMPTOMS = [
+    "Chest pain",
+    "Left bundle branch block",
+    "Asymmetric septal hypertrophy",
+    "Adult onset",
+    "Ventricular fibrillation",
+    "T-wave inversion",
+    "Supraventricular tachycardia",
+    "Dyspnea",
+    "Ventricular septal hypertrophy",
+    "Hypertrophic cardiomyopathy",
+    "Autosomal dominant inheritance",
+    "Sudden cardiac death",
+    "Vertigo",
+    "Left ventricular hypertrophy",
+    "Palpitations",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

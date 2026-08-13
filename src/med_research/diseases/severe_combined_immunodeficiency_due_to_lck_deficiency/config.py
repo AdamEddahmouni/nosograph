@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'severe combined immunodeficiency due to LCK deficiency (SEVERE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of severe combined immunodeficiency due to LCK deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Infantile onset",
+    "Autosomal recessive inheritance",
+    "Diarrhea",
+    "Panniculitis",
+    "Decreased circulating IgM concentration",
+    "Thrombocytopenia",
+    "Anemia",
+    "Fever",
+    "Capillary leak",
+    "Autoimmunity",
+    "Decreased circulating IgE concentration",
+    "Decreased circulating IgA concentration",
+    "Abscess",
+    "Recurrent lower respiratory tract infections",
+    "Decreased circulating IgG concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

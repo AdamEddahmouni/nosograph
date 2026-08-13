@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'hereditary antithrombin deficiency (HEREDITARY_ANTITHROMBIN_DE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hereditary antithrombin deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pulmonary embolism",
+    "Cerebral venous thrombosis",
+    "Reduced antithrombin III activity",
+    "Autosomal recessive inheritance",
+    "Recurrent thrombophlebitis",
+    "Arterial occlusion",
+    "Decreased level of heparin co-factor II",
+    "Autosomal dominant inheritance",
+    "Deep venous thrombosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

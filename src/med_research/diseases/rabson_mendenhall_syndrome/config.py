@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Rabson-Mendenhall syndrome (RABSON_MENDENHALL_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Rabson-Mendenhall syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Diabetic ketoacidosis",
+    "Short stature",
+    "Precocious puberty",
+    "Advanced eruption of teeth",
+    "Coarse facial features",
+    "Hyperinsulinemia",
+    "Small for gestational age",
+    "Hypertrichosis",
+    "Fasting hypoglycemia",
+    "Dry skin",
+    "Mandibular prognathia",
+    "Hyperglycemia",
+    "Autosomal recessive inheritance",
+    "High palate",
+    "Long penis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mandibulofacial dysostosis with alopecia (MANDIBULOFACIAL_DYSO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mandibulofacial dysostosis with alopecia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Protruding ear",
+    "Hypoplasia of the maxilla",
+    "Lower eyelid coloboma",
+    "Congenital onset",
+    "Cleft palate",
+    "Low-set ears",
+    "Everted lower lip vermilion",
+    "Bicuspid aortic valve",
+    "Hydroureter",
+    "Stenosis of the external auditory canal",
+    "Cupped ear",
+    "Micrognathia",
+    "Preauricular skin tag",
+    "Dental crowding",
+    "Conductive hearing impairment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

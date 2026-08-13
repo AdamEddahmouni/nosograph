@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'Verloove Vanhorick-Brubakk syndrome (VERLOOVE_VANHORICK_BRUBAK
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Verloove Vanhorick-Brubakk syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Syndactyly",
+    "Truncus arteriosus",
+    "Autosomal recessive inheritance",
+    "Growth abnormality",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

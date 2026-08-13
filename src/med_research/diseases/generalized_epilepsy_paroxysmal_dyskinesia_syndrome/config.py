@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'generalized epilepsy-paroxysmal dyskinesia syndrome (GENERALIZ
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of generalized epilepsy-paroxysmal dyskinesia syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Brisk reflexes",
+    "Neonatal onset",
+    "Childhood onset",
+    "Bilateral tonic-clonic seizure with generalized onset",
+    "Infantile onset",
+    "Hypotonia",
+    "Paroxysmal dyskinesia",
+    "Seizure",
+    "Generalized non-motor (absence) seizure",
+    "Juvenile onset",
+    "Autosomal dominant inheritance",
+    "Global developmental delay",
+    "EEG with spike-wave complexes (>3.5 Hz)",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

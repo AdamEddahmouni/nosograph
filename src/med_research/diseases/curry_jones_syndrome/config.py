@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Curry-Jones syndrome (CURRY_JONES_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Curry-Jones syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "2-3 finger osseus syndactyly",
+    "Hemimegalencephaly",
+    "Megalencephaly",
+    "Wormian bones",
+    "Chronic constipation",
+    "Polymicrogyria",
+    "Bicoronal synostosis",
+    "Nevus sebaceous",
+    "Preaxial foot polydactyly",
+    "Unicoronal synostosis",
+    "Facial asymmetry",
+    "Global developmental delay",
+    "Duplication of thumb phalanx",
+    "Hirsutism",
+    "Broad thumb",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

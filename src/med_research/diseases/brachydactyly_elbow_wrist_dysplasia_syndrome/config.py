@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'brachydactyly-elbow wrist dysplasia syndrome (BRACHYDACTYLY_EL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of brachydactyly-elbow wrist dysplasia syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "2-3 finger cutaneous syndactyly",
+    "Radially deviated wrists",
+    "Metaphyseal widening",
+    "Autosomal dominant inheritance",
+    "Elbow flexion contracture",
+    "Joint contracture of the 5th finger",
+    "Brachydactyly",
+    "Abnormal carpal morphology",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

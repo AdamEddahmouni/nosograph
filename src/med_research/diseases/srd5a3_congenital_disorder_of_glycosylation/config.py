@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'SRD5A3-congenital disorder of glycosylation (SRD5A3_CONGENITAL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of SRD5A3-congenital disorder of glycosylation
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated circulating hepatic transaminase concentration",
+    "Hypotonia",
+    "Hyperkeratosis",
+    "Coloboma",
+    "Severe intellectual disability",
+    "Microcytic anemia",
+    "Cerebellar vermis hypoplasia",
+    "Seizure",
+    "Elbow contracture",
+    "Autosomal recessive inheritance",
+    "Knee flexion contracture",
+    "Iris coloboma",
+    "Thick vermilion border",
+    "Infantile onset",
+    "Inverted nipples",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

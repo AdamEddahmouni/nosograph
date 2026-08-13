@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'X-linked severe congenital neutropenia (X_LINKED_SEVERE_CONGEN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked severe congenital neutropenia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Eczematoid dermatitis",
+    "Congenital onset",
+    "Decreased total neutrophil count",
+    "Decreased total monocyte count",
+    "Inverted CD4:CD8 ratio",
+    "Bone marrow arrest at the promyelocytic stage",
+    "Recurrent bacterial infections",
+    "X-linked recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

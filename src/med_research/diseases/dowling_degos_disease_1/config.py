@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'Dowling-Degos disease 1 (DOWLING_DEGOS_DISEASE_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Dowling-Degos disease 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Progressive reticulate hyperpigmentation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

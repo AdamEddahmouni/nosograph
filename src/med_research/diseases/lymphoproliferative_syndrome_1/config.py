@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'lymphoproliferative syndrome 1 (LYMPHOPROLIFERATIVE_SYNDROME_1
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lymphoproliferative syndrome 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Stomatitis",
+    "Juvenile onset",
+    "Lymphoproliferative disorder",
+    "Pericardial effusion",
+    "Elevated circulating C-reactive protein concentration",
+    "Recurrent fever",
+    "Anemia",
+    "Thrombocytopenia",
+    "Decreased total leukocyte count",
+    "Decreased circulating IgG concentration",
+    "Autoimmune hemolytic anemia",
+    "Hemophagocytosis",
+    "Pancytopenia",
+    "Hepatomegaly",
+    "HP_0005407",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

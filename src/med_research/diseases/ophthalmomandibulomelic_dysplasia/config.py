@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'ophthalmomandibulomelic dysplasia (OPHTHALMOMANDIBULOMELIC_DYS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ophthalmomandibulomelic dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ulnar deviated club hands",
+    "Megalocornea",
+    "Temporomandibular joint ankylosis",
+    "Blindness",
+    "Radioulnar dislocation",
+    "Mesomelia",
+    "Coxa valga",
+    "Radial bowing",
+    "Abnormal thorax morphology",
+    "Fibular hypoplasia",
+    "Opacification of the corneal stroma",
+    "Elbow dislocation",
+    "Lateral humeral condyle aplasia",
+    "Decreased mobility 3rd-5th fingers",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

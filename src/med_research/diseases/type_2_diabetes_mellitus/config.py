@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'type 2 diabetes mellitus (TYPE_2_DIABETES_MELLITUS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of type 2 diabetes mellitus
-SYMPTOMS = []
+SYMPTOMS = [
+    "Late onset",
+    "Type II diabetes mellitus",
+    "Autosomal dominant inheritance",
+    "Insulin resistance",
+    "Increased waist to hip ratio",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

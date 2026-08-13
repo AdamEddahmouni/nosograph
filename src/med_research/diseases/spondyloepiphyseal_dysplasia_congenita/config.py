@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spondyloepiphyseal dysplasia congenita (SPONDYLOEPIPHYSEAL_DYS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondyloepiphyseal dysplasia congenita
-SYMPTOMS = []
+SYMPTOMS = [
+    "Limitation of knee mobility",
+    "Limited elbow movement",
+    "Hypoplasia of the odontoid process",
+    "Retinal detachment",
+    "Pierre-Robin sequence",
+    "Neonatal short-trunk short stature",
+    "Vitreoretinopathy",
+    "Arthralgia",
+    "Coxa vara",
+    "Autosomal dominant inheritance",
+    "Respiratory distress",
+    "Delayed pubic bone ossification",
+    "Hearing impairment",
+    "Cervical myelopathy",
+    "Flat face",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

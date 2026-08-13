@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Hermansky-Pudlak syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Juvenile onset",
+    "Macular hypoplasia",
+    "Hypoplasia of the fovea",
+    "Myopic astigmatism",
+    "Decreased total neutrophil count",
+    "Hypermetropia",
+    "Focal myoclonic seizure",
+    "Impaired collagen-induced platelet aggregation",
+    "Congenital nystagmus",
+    "Endometriosis",
+    "Strabismus",
+    "Impaired platelet aggregation",
+    "Restrictive ventilatory defect",
+    "Enlarged platelet dense granules",
+    "Carious teeth",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

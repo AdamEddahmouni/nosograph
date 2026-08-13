@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'catecholaminergic polymorphic ventricular tachycardia 1 (CATEC
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of catecholaminergic polymorphic ventricular tachycardia 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ventricular couplet",
+    "Sudden cardiac death",
+    "Ventricular tachycardia",
+    "Syncope",
+    "Paroxysmal atrial fibrillation",
+    "Young adult onset",
+    "Seizure",
+    "Dilated cardiomyopathy",
+    "Autosomal dominant inheritance",
+    "Sick sinus syndrome",
+    "Atrioventricular block",
+    "Juvenile onset",
+    "Atrial standstill",
+    "Childhood onset",
+    "Reduced systolic function",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Fowler syndrome (FOWLER_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Fowler syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypoplasia of the brainstem",
+    "Congenital onset",
+    "Pterygium",
+    "Premature birth",
+    "Polyhydramnios",
+    "Dandy-Walker malformation",
+    "Seizure",
+    "Cerebellar hypoplasia",
+    "Hydranencephaly",
+    "Cleft palate",
+    "Autosomal recessive inheritance",
+    "Polymicrogyria",
+    "Micrognathia",
+    "Talipes",
+    "Agenesis of corpus callosum",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

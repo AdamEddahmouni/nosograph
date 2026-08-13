@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cardiomyopathy, familial restrictive, 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Restrictive cardiomyopathy",
+    "Left ventricular hypertrophy",
+    "Ventriculomegaly",
+    "Left atrial enlargement",
+    "Sudden cardiac death",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

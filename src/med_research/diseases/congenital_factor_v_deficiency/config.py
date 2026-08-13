@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'congenital factor V deficiency (CONGENITAL_FACTOR_V_DEFICIENCY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital factor V deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Prolonged prothrombin time",
+    "Prolonged partial thromboplastin time",
+    "Bruising susceptibility",
+    "Reduced coagulation factor V activity",
+    "Prolonged whole-blood clotting time",
+    "Abnormal bleeding",
+    "Autosomal recessive inheritance",
+    "Prolonged bleeding time",
+    "Menorrhagia",
+    "Epistaxis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

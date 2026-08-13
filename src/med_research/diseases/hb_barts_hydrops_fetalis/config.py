@@ -8,8 +8,14 @@ PIPELINE_LABEL = "Hb Bart's hydrops fetalis (HB_BARTS_HYDROPS_FETALIS)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Hb Bart's hydrops fetalis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nonimmune hydrops fetalis",
+    "Hydrops fetalis",
+    "Congenital onset",
+    "Congestive heart failure",
+    "Polygenic inheritance",
+    "Anemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

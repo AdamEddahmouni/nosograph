@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'anonychia with flexural pigmentation (ANONYCHIA_WITH_FLEXURAL_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of anonychia with flexural pigmentation
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dry skin",
+    "Autosomal dominant inheritance",
+    "Anonychia",
+    "Axillary and groin hyperpigmentation and hypopigmentation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

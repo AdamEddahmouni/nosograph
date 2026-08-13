@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Brody myopathy (BRODY_MYOPATHY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Brody myopathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Neonatal onset",
+    "Childhood onset",
+    "Motor delay",
+    "Abnormal reflex",
+    "Percussion myotonia",
+    "Myalgia",
+    "Muscle weakness",
+    "Myokymia",
+    "Skeletal muscle hypertrophy",
+    "Exercise-induced muscle cramps",
+    "Autosomal recessive inheritance",
+    "Exercise-induced muscle stiffness",
+    "Somatic sensory dysfunction",
+    "EMG: myotonic discharges",
+    "Malignant hyperthermia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'atrial septal defect 5 (ATRIAL_SEPTAL_DEFECT_5)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of atrial septal defect 5
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Secundum atrial septal defect",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

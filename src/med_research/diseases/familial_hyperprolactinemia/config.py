@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'familial hyperprolactinemia (FAMILIAL_HYPERPROLACTINEMIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial hyperprolactinemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Menorrhagia",
+    "Increased circulating prolactin concentration",
+    "Autosomal recessive inheritance",
+    "Agalactia",
+    "Female infertility",
+    "Galactorrhea",
+    "Young adult onset",
+    "Oligomenorrhea",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spondylometaphyseal dysplasia, Sedaghatian type (SPONDYLOMETAP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondylometaphyseal dysplasia, Sedaghatian type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Widened greater sciatic notch",
+    "Large posterior fontanelle",
+    "Platyspondyly",
+    "Delayed epiphyseal ossification",
+    "Posteriorly rotated ears",
+    "Horizontal inferior border of scapula",
+    "Narrow greater sciatic notch",
+    "Talipes equinovarus",
+    "Short metacarpal",
+    "Short long bone",
+    "Irregular tarsal bones",
+    "Myocarditis",
+    "Iliac crest serration",
+    "Turricephaly",
+    "Metaphyseal irregularity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'oculopharyngodistal myopathy 2 (OCULOPHARYNGODISTAL_MYOPATHY_2
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of oculopharyngodistal myopathy 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased endomysial connective tissue",
+    "Young adult onset",
+    "EMG: myopathic abnormalities",
+    "External ophthalmoplegia",
+    "Bulbar palsy",
+    "Rimmed vacuoles",
+    "Ptosis",
+    "Autosomal dominant inheritance",
+    "Fatty replacement of skeletal muscle",
+    "Elevated circulating creatine kinase activity",
+    "Increased variability in muscle fiber diameter",
+    "Distal muscle weakness",
+    "Weakness of facial musculature",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

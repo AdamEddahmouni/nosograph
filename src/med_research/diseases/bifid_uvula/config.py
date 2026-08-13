@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'bifid uvula (BIFID_UVULA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of bifid uvula
-SYMPTOMS = []
+SYMPTOMS = [
+    "Bifid uvula",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'Charcot-Marie-Tooth disease X-linked recessive 3 (CHARCOT_MARI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Charcot-Marie-Tooth disease X-linked recessive 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Areflexia",
+    "EMG: axonal abnormality",
+    "Distal amyotrophy",
+    "X-linked recessive inheritance",
+    "Upper limb muscle weakness",
+    "Hip dysplasia",
+    "Distal sensory impairment",
+    "Steppage gait",
+    "Paraparesis",
+    "Decreased nerve conduction velocity",
+    "Pes cavus",
+    "Distal muscle weakness",
+    "Scoliosis",
+    "Foot dorsiflexor weakness",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

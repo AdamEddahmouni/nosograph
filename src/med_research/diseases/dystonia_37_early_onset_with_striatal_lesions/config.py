@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'dystonia 37, early-onset, with striatal lesions (DYSTONIA_37_E
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dystonia 37, early-onset, with striatal lesions
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dysarthria",
+    "Juvenile onset",
+    "Generalized dystonia",
+    "Choreoathetosis",
+    "Loss of ambulation",
+    "Intellectual disability",
+    "Autosomal recessive inheritance",
+    "Microcephaly",
+    "Childhood onset",
+    "Hypotonia",
+    "Sleep apnea",
+    "Chorea",
+    "Ataxia",
+    "Oculomotor apraxia",
+    "Motor delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

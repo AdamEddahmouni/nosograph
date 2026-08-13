@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'X-linked intellectual disability with marfanoid habitus (X_LIN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked intellectual disability with marfanoid habitus
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pectus carinatum",
+    "Hyperactivity",
+    "Long nose",
+    "Scoliosis",
+    "Agenesis of corpus callosum",
+    "Frontal bossing",
+    "Open mouth",
+    "Narrow nose",
+    "Macrocephaly",
+    "Emotional lability",
+    "Aggressive behavior",
+    "Pectus excavatum",
+    "Disproportionate tall stature",
+    "X-linked inheritance",
+    "Slender build",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

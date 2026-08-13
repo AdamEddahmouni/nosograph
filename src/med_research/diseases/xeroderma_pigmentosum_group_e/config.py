@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'xeroderma pigmentosum group E (XERODERMA_PIGMENTOSUM_GROUP_E)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of xeroderma pigmentosum group E
-SYMPTOMS = []
+SYMPTOMS = [
+    "Defective DNA repair after ultraviolet radiation damage",
+    "Photophobia",
+    "Autosomal recessive inheritance",
+    "Squamous cell carcinoma of the skin",
+    "Dermal atrophy",
+    "Telangiectasia",
+    "Poikiloderma",
+    "Cutaneous photosensitivity",
+    "Melanoma",
+    "Basal cell carcinoma",
+    "Keratitis",
+    "Ectropion",
+    "Conjunctivitis",
+    "Entropion",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

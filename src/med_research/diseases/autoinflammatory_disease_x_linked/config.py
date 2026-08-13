@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autoinflammatory disease, X-linked (AUTOINFLAMMATORY_DISEASE_X
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autoinflammatory disease, X-linked
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased total neutrophil count",
+    "Decreased circulating immunoglobulin concentration",
+    "Cerebral hemorrhage",
+    "Panuveitis",
+    "Decreased circulating IgG concentration",
+    "Decreased circulating IgM concentration",
+    "Conical tooth",
+    "Decreased total B cell count",
+    "Optic neuritis",
+    "Panniculitis",
+    "Complete or near-complete absence of specific antibody response to unconjugated pneumococcus polysaccharide",
+    "Chorioretinitis",
+    "Infantile onset",
+    "X-linked inheritance",
+    "Anterior uveitis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

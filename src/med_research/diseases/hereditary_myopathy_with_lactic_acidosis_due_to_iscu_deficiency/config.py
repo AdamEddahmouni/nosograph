@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hereditary myopathy with lactic acidosis due to ISCU deficienc
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hereditary myopathy with lactic acidosis due to ISCU deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Myopathy",
+    "Lactic acidosis",
+    "Increased variability in muscle fiber diameter",
+    "Dyspnea",
+    "Abnormal iron deposition in mitochondria",
+    "Decreased activity of mitochondrial complex III",
+    "Anemia",
+    "Decreased activity of mitochondrial complex IV",
+    "Ophthalmoparesis",
+    "Palpitations",
+    "Juvenile onset",
+    "Frequent falls",
+    "Subsarcolemmal accumulations of abnormally shaped mitochondria",
+    "Decreased activity of mitochondrial complex II",
+    "Bilateral ptosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

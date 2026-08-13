@@ -1,5 +1,25 @@
 # Changelog
 
+## [Registry-wide symptom curation] — 2026-08-13
+
+### Added
+
+- **3,680 scaffolded disease modules now carry curated `SYMPTOMS`** — HPO-derived clinical phenotype labels harvested from the local Open Targets `disease_phenotype` bulk table and written into `config.py` (via `harvest_all_symptoms`). The 6,709 modules with no phenotype rows in the local subset remain empty and keep their curation TODO. Stale `# TODO: add the clinical symptoms ...` comments are removed once a module is populated.
+
+### Fixed
+
+- `OpenTargetsBulkStore.get_phenotypes()` now returns **human-readable HPO labels** for the real OT parquet schema (`disease`/`phenotype`/`evidence`) instead of raw HP ids (`HP_0003829` → "Neoplasm of the lung"). Labels come from the local HPO artifact (`data/biomed/artifacts/hp.json`), with obsolete terms filtered out and the raw id retained as a fallback.
+- `duckdb` (a declared core dependency in `pyproject.toml`) was missing from `requirements.in` and both lock files, silently breaking every OT bulk-store query ("No module named 'duckdb'"). Added `duckdb` and `orjson` to `requirements.in` and regenerated `requirements-lock.txt` / `requirements-dev-lock.txt`.
+- Per-call `DESCRIBE` and parquet-glob scans in `OpenTargetsBulkStore` are now cached per table, cutting the symptom harvest from ~0.45s to ~0.15s per disease.
+
+### Verification
+
+- `python -m pytest tests/test_bulk_store.py tests/test_symptom_harvester.py tests/test_disease_registry_validation.py tests/test_adverse_events.py -q` — passed
+- `python -m med_research.cli disease validate 12q14_microdeletion_syndrome` — KG files pass
+- Registry scan: 3,682 configs with non-empty `SYMPTOMS`, 0 corrupted `SYMPTOMS` blocks, 0 obsolete HPO terms.
+
+---
+
 ## [Platform expansion: 10k scaffolds, new modules, streaming, graph analytics] — 2026-08-13
 
 ### Added

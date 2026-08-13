@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'LCAT deficiency (LCAT_DEFICIENCY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of LCAT deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased circulating HDL-C concentration",
+    "Hemolytic anemia",
+    "Autosomal recessive inheritance",
+    "Renal insufficiency",
+    "Proteinuria",
+    "Normochromic anemia",
+    "Decreased lecithin cholesterol acyl transferase level",
+    "Hypertriglyceridemia",
+    "Elevated circulating LDL-C concentration",
+    "Opacification of the corneal stroma",
+    "Elevated circulating VLDL-C concentration",
+    "Adult onset",
+    "Foam cells",
+    "Corneal arcus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'exudative vitreoretinopathy 2, X-linked (EXUDATIVE_VITREORETIN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of exudative vitreoretinopathy 2, X-linked
-SYMPTOMS = []
+SYMPTOMS = [
+    "Microphthalmia",
+    "Retinal fold",
+    "Deeply set eye",
+    "Exudative vitreoretinopathy",
+    "X-linked recessive inheritance",
+    "Retinal vascular tortuosity",
+    "Avascular peripheral retina",
+    "Retinal hole",
+    "Subretinal exudate",
+    "Infantile onset",
+    "Peripheral vitreous opacities",
+    "High myopia",
+    "Shallow anterior chamber",
+    "Reduced visual acuity",
+    "Retinal detachment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

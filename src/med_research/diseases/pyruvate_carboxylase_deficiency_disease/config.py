@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pyruvate carboxylase deficiency disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Proximal renal tubular acidosis",
+    "Global developmental delay",
+    "Hepatomegaly",
+    "Autosomal recessive inheritance",
+    "Neuronal loss in the cerebral cortex",
+    "Athetosis",
+    "Hypoglycemia",
+    "Congenital onset",
+    "Seizure",
+    "Intellectual disability",
+    "Leukodystrophy",
+    "Clonus",
+    "Periventricular leukomalacia",
+    "Hyperalaninemia",
+    "Hypotonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

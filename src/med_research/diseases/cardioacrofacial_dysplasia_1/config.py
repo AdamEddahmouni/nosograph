@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'cardioacrofacial dysplasia 1 (CARDIOACROFACIAL_DYSPLASIA_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cardioacrofacial dysplasia 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Conical tooth",
+    "Postaxial polydactyly",
+    "Long face",
+    "Autosomal dominant inheritance",
+    "Overhanging nasal tip",
+    "Atrioventricular canal defect",
+    "Complete atrioventricular canal defect",
+    "Short philtrum",
+    "Long thorax",
+    "Hypoplasia of the maxilla",
+    "Congenital onset",
+    "Accessory oral frenulum",
+    "Midface retrusion",
+    "Limb undergrowth",
+    "Genu valgum",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

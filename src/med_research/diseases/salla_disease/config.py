@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Salla disease (SALLA_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Salla disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ataxia",
+    "Autosomal recessive inheritance",
+    "Nystagmus",
+    "Hypotonia",
+    "Spasticity",
+    "Athetosis",
+    "Seizure",
+    "Thickened calvaria",
+    "Abnormality of metabolism/homeostasis",
+    "Global developmental delay",
+    "Generalized hypotonia",
+    "Dysarthria",
+    "Inability to walk",
+    "Growth delay",
+    "Exotropia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

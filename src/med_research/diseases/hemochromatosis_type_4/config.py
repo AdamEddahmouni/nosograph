@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hemochromatosis type 4 (HEMOCHROMATOSIS_TYPE_4)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hemochromatosis type 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased circulating ferritin concentration",
+    "Hyperpigmentation of the skin",
+    "Impaired glucose tolerance",
+    "Anemia",
+    "Impotence",
+    "Cardiomyopathy",
+    "Diabetes mellitus",
+    "Osteoarthritis",
+    "Autosomal dominant inheritance",
+    "Hepatomegaly",
+    "Arrhythmia",
+    "Cataract",
+    "Hepatic steatosis",
+    "Glucose intolerance",
+    "Elevated transferrin saturation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

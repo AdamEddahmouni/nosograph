@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Wiskott-Aldrich syndrome (WISKOTT_ALDRICH_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Wiskott-Aldrich syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Recurrent sinusitis",
+    "Iron deficiency anemia",
+    "Eczematoid dermatitis",
+    "Prolonged bleeding time",
+    "Gingival bleeding",
+    "Oral bleeding",
+    "HP_0003347",
+    "Increased total eosinophil count",
+    "Recurrent upper respiratory tract infections",
+    "Autoimmune hemolytic anemia",
+    "Recurrent otitis media",
+    "Recurrent pneumonia",
+    "Infantile onset",
+    "Reduced lymphocyte surface expression of CD43",
+    "HP_0030253",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

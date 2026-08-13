@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'craniofrontonasal syndrome (CRANIOFRONTONASAL_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of craniofrontonasal syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Coronal craniosynostosis",
+    "Abnormality of the dentition",
+    "Congenital diaphragmatic hernia",
+    "Fragile nails",
+    "Cryptorchidism",
+    "Breast hypoplasia",
+    "Generalized hypotonia",
+    "Widow's peak",
+    "Down-sloping shoulders",
+    "Global developmental delay",
+    "Cleft palate",
+    "Unilateral breast hypoplasia",
+    "Toe syndactyly",
+    "Umbilical hernia",
+    "Webbed neck",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

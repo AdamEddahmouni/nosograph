@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'cleft lip/palate-ectodermal dysplasia syndrome (CLEFT_LIP_PALA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cleft lip/palate-ectodermal dysplasia syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Protruding ear",
+    "2-4 finger cutaneous syndactyly",
+    "Progressive hypotrichosis",
+    "Hyperhidrosis",
+    "Micrognathia",
+    "Congenital onset",
+    "Cleft upper lip",
+    "Triangular face",
+    "Nail dysplasia",
+    "Anodontia",
+    "Hypodontia",
+    "Cleft palate",
+    "Dry hair",
+    "Microdontia",
+    "Sparse eyelashes",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

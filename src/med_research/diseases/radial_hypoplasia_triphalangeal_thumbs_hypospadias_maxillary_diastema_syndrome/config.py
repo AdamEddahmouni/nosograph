@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'radial hypoplasia-triphalangeal thumbs-hypospadias-maxillary d
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of radial hypoplasia-triphalangeal thumbs-hypospadias-maxillary diastema syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Diastema",
+    "Autosomal dominant inheritance",
+    "Hypoplasia of the radius",
+    "Nonopposable triphalangeal thumb",
+    "Hypospadias",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

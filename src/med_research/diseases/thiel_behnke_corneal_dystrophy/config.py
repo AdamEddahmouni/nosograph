@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'Thiel-Behnke corneal dystrophy (THIEL_BEHNKE_CORNEAL_DYSTROPHY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Thiel-Behnke corneal dystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Corneal dystrophy",
+    "Photophobia",
+    "Juvenile epithelial corneal dystrophy",
+    "Corneal scarring",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

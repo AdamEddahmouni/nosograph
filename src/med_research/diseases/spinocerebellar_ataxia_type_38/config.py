@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Spinocerebellar ataxia type 38 (SPINOCEREBELLAR_ATAXIA_TYPE_38
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Spinocerebellar ataxia type 38
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ataxia",
+    "Middle age onset",
+    "Slowly progressive",
+    "Dysarthria",
+    "Slow saccadic eye movements",
+    "Autosomal dominant inheritance",
+    "Tremor",
+    "Myoclonus",
+    "Nystagmus",
+    "Limb ataxia",
+    "Gait ataxia",
+    "Distal muscle weakness",
+    "Young adult onset",
+    "Peripheral axonal neuropathy",
+    "Atrophy/Degeneration affecting the brainstem",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

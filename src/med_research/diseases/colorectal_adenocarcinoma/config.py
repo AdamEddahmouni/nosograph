@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'colorectal adenocarcinoma (COLORECTAL_ADENOCARCINOMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of colorectal adenocarcinoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Uterine leiomyosarcoma",
+    "Hereditary nonpolyposis colorectal carcinoma",
+    "Renal cell carcinoma",
+    "Neoplasm of the stomach",
+    "Transitional cell carcinoma of the bladder",
+    "Typified by somatic mosaicism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

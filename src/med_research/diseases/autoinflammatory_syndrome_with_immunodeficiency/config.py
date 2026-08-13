@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autoinflammatory syndrome with immunodeficiency (AUTOINFLAMMAT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autoinflammatory syndrome with immunodeficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Lymphadenopathy",
+    "Young adult onset",
+    "Middle age onset",
+    "Splenomegaly",
+    "Hepatomegaly",
+    "Thyroiditis",
+    "Spondylitis",
+    "Hodgkin lymphoma",
+    "Decreased marginal zone B cell proportion",
+    "Anti-U1 ribonucleoprotein antibody positivity",
+    "Celiac disease",
+    "Antinuclear antibody positivity",
+    "Juvenile onset",
+    "Autoimmune thrombocytopenia",
+    "Recurrent respiratory infections",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,12 @@ PIPELINE_LABEL = "Hepatocellular carcinoma (HEPATOCELLULAR_CARCINOMA)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Hepatocellular carcinoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Subacute progressive viral hepatitis",
+    "Micronodular cirrhosis",
+    "Hepatocellular carcinoma",
+    "Typified by somatic mosaicism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

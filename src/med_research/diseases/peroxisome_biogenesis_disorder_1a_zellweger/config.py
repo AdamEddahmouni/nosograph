@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'peroxisome biogenesis disorder 1A (Zellweger) (PEROXISOME_BIOG
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of peroxisome biogenesis disorder 1A (Zellweger)
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypospadias",
+    "Severe intellectual disability",
+    "Sensorineural hearing impairment",
+    "Ventricular septal defect",
+    "Areflexia",
+    "Prolonged neonatal jaundice",
+    "Hypoplastic olfactory lobes",
+    "Low-set ears",
+    "Protruding tongue",
+    "Subependymal cysts",
+    "Hypotonia",
+    "Anteverted nares",
+    "Seizure",
+    "Hepatomegaly",
+    "Failure to thrive",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

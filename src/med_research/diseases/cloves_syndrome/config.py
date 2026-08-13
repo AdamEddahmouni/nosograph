@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'CLOVES syndrome (CLOVES_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of CLOVES syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Venous malformation",
+    "Sporadic",
+    "Tethered cord",
+    "Lipoma",
+    "Nephroblastoma",
+    "Lower limb asymmetry",
+    "Sandal gap",
+    "Capillary malformation",
+    "Scoliosis",
+    "Webbed neck",
+    "Splenomegaly",
+    "Hemihypertrophy",
+    "Renal hypoplasia",
+    "Typified by somatic mosaicism",
+    "Congenital onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

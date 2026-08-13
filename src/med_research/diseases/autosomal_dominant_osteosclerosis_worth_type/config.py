@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'autosomal dominant osteosclerosis, Worth type (AUTOSOMAL_DOMIN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal dominant osteosclerosis, Worth type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Abnormal pelvic girdle bone morphology",
+    "Growth abnormality",
+    "Sclerotic vertebral body",
+    "Metacarpal diaphyseal endosteal sclerosis",
+    "Torus palatinus",
+    "Flat forehead",
+    "Metatarsal diaphyseal endosteal sclerosis",
+    "Abnormality of body height",
+    "Hyperostosis",
+    "Dental malocclusion",
+    "Sensorineural hearing impairment",
+    "Clavicular sclerosis",
+    "Thickened cortex of long bones",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

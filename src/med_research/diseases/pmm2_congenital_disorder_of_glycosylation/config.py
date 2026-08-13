@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'PMM2-congenital disorder of glycosylation (PMM2_CONGENITAL_DIS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of PMM2-congenital disorder of glycosylation
-SYMPTOMS = []
+SYMPTOMS = [
+    "Diarrhea",
+    "Decreased circulating IgG concentration",
+    "Pericarditis",
+    "Failure to thrive",
+    "Cerebellar atrophy",
+    "Rod-cone dystrophy",
+    "Steatorrhea",
+    "Nystagmus",
+    "Enlarged cisterna magna",
+    "Hypothyroidism",
+    "Hypoalbuminemia",
+    "Hypergonadotropic hypogonadism",
+    "Intention tremor",
+    "Ataxia",
+    "Esodeviation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

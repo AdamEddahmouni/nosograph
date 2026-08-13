@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'blue rubber bleb nevus (BLUE_RUBBER_BLEB_NEVUS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of blue rubber bleb nevus
-SYMPTOMS = []
+SYMPTOMS = [
+    "Intussusception",
+    "Thrombocytopenia",
+    "Abnormality of the respiratory system",
+    "Autosomal dominant inheritance",
+    "Iron deficiency anemia",
+    "Pathologic fracture",
+    "Chronic disseminated intravascular coagulation",
+    "Volvulus",
+    "Rectal prolapse",
+    "Intestinal bleeding",
+    "Hemangioma",
+    "Cerebellar medulloblastoma",
+    "Abnormality of the liver",
+    "Hypermelanotic macule",
+    "Abnormality of the mouth",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

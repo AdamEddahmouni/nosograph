@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'spinocerebellar ataxia, autosomal recessive 23 (SPINOCEREBELLA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spinocerebellar ataxia, autosomal recessive 23
-SYMPTOMS = []
+SYMPTOMS = [
+    "Seizure",
+    "Microcephaly",
+    "Arrhythmia",
+    "Ataxia",
+    "Hyponatremia",
+    "Generalized hypotonia",
+    "Autosomal recessive inheritance",
+    "HP_0100786",
+    "Decreased total neutrophil count",
+    "Easy fatigability",
+    "Intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

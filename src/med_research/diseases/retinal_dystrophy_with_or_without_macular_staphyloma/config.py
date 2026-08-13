@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'retinal dystrophy with or without macular staphyloma (RETINAL_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of retinal dystrophy with or without macular staphyloma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Truncal obesity",
+    "Nyctalopia",
+    "Nuclear cataract",
+    "Short stature",
+    "Reduced visual acuity",
+    "Posterior staphyloma",
+    "Posterior subcapsular cataract",
+    "Photophobia",
+    "Retinal dystrophy",
+    "Spicular pigmentation of the retina",
+    "Childhood onset",
+    "Juvenile onset",
+    "Central scotoma",
+    "Attenuation of retinal blood vessels",
+    "Retinal pigment epithelial mottling",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

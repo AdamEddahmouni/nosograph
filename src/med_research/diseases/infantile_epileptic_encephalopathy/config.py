@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'infantile epileptic encephalopathy (INFANTILE_EPILEPTIC_ENCEPH
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of infantile epileptic encephalopathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypotonia",
+    "Delayed CNS myelination",
+    "Tonic seizure",
+    "Unsteady gait",
+    "Congenital onset",
+    "Autosomal dominant inheritance",
+    "Coarse facial features",
+    "Reduced cerebral white matter volume",
+    "Single transverse palmar crease",
+    "Focal motor seizure",
+    "Epileptic encephalopathy",
+    "Status epilepticus",
+    "Hoarse voice",
+    "Myoclonic seizure",
+    "Feeding difficulties",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'dilated cardiomyopathy-hypergonadotropic hypogonadism syndrome
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dilated cardiomyopathy-hypergonadotropic hypogonadism syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Retrognathia",
+    "Telangiectasia of the skin",
+    "Sclerodactyly",
+    "Ptosis",
+    "Down-sloping shoulders",
+    "Lipodystrophy",
+    "Microtia",
+    "Dilated cardiomyopathy",
+    "Narrow nose",
+    "Poor wound healing",
+    "Autosomal dominant inheritance",
+    "Intellectual disability",
+    "Poikiloderma",
+    "Cardiomyopathy",
+    "Short clavicles",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

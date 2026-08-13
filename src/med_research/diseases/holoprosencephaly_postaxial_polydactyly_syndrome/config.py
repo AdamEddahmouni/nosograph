@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'holoprosencephaly-postaxial polydactyly syndrome (HOLOPROSENCE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of holoprosencephaly-postaxial polydactyly syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cleft upper lip",
+    "Microphthalmia",
+    "Hydrocephalus",
+    "Hypotelorism",
+    "Cerebellar hypoplasia",
+    "Anal atresia",
+    "Micropenis",
+    "Hemivertebrae",
+    "Tricuspid atresia",
+    "Complete atrioventricular canal defect",
+    "Atrial septal defect",
+    "Agenesis of corpus callosum",
+    "Ventricular septal defect",
+    "Median cleft upper lip",
+    "Low-set ears",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

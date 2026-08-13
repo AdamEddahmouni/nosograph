@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'Weill-Marchesani syndrome 3 (WEILL_MARCHESANI_SYNDROME_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Weill-Marchesani syndrome 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Brachydactyly",
+    "High myopia",
+    "Microspherophakia",
+    "Ocular hypertension",
+    "Aortic valve stenosis",
+    "Shallow anterior chamber",
+    "Ectopia lentis",
+    "Pulmonic stenosis",
+    "Short stature",
+    "Autosomal recessive inheritance",
+    "Joint stiffness",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

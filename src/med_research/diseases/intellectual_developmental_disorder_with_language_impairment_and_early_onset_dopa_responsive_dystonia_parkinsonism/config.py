@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'intellectual developmental disorder with language impairment a
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of intellectual developmental disorder with language impairment and early-onset DOPA-responsive dystonia-parkinsonism
-SYMPTOMS = []
+SYMPTOMS = [
+    "EMG: positive sharp waves",
+    "Decreased CSF homovanillic acid concentration",
+    "Mild intellectual disability",
+    "Global developmental delay",
+    "Dystonia",
+    "Thinning of the substantia nigra pars compacta",
+    "Rigidity",
+    "Akinesia",
+    "Bilateral tonic-clonic seizure",
+    "Delayed speech and language development",
+    "Autosomal dominant inheritance",
+    "Childhood onset",
+    "Clumsiness",
+    "Parkinsonism",
+    "Postural tremor",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'saccharopinuria (SACCHAROPINURIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of saccharopinuria
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated urinary saccharopine level",
+    "Spastic diplegia",
+    "HP_0034028",
+    "Intellectual disability",
+    "Autosomal recessive inheritance",
+    "Elevated circulating saccharopine concentration",
+    "Hyperlysinuria",
+    "EEG abnormality",
+    "Citrullinuria",
+    "Short stature",
+    "Histidinuria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

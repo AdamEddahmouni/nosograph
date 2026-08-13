@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'C1Q deficiency 1 (C1Q_DEFICIENCY_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of C1Q deficiency 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autoimmunity",
+    "Decreased circulating complement factor I concentration",
+    "Membranoproliferative glomerulonephritis",
+    "Systemic lupus erythematosus",
+    "Recurrent infections",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

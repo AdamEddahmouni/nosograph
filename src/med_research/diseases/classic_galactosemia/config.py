@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'classic galactosemia (CLASSIC_GALACTOSEMIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of classic galactosemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Neonatal onset",
+    "Increased level of galactitol in red blood cells",
+    "Elevated circulating aspartate aminotransferase concentration",
+    "Hepatomegaly",
+    "Elevated circulating alanine aminotransferase concentration",
+    "Vomiting",
+    "Cirrhosis",
+    "Bilateral tonic-clonic seizure",
+    "Intellectual disability",
+    "Hypergonadotropic hypogonadism",
+    "Decreased liver function",
+    "Hemolytic anemia",
+    "Hyperchloremic metabolic acidosis",
+    "Autosomal recessive inheritance",
+    "Hypergalactosemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

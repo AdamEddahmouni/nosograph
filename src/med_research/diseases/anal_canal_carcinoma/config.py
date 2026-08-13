@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'anal canal carcinoma (ANAL_CANAL_CARCINOMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of anal canal carcinoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Anal canal squamous carcinoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

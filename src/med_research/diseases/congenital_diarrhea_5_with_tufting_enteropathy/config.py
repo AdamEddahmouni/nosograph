@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'congenital diarrhea 5 with tufting enteropathy (CONGENITAL_DIA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital diarrhea 5 with tufting enteropathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Crypt hyperplasia",
+    "Neonatal onset",
+    "Infantile onset",
+    "Intractable diarrhea",
+    "Autosomal recessive inheritance",
+    "Villous atrophy",
+    "Arthritis",
+    "Failure to thrive",
+    "Small for gestational age",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

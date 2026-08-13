@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'oocyte maturation defect 14 (OOCYTE_MATURATION_DEFECT_14)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of oocyte maturation defect 14
-SYMPTOMS = []
+SYMPTOMS = [
+    "Female infertility",
+    "Oocyte maturation arrest",
+    "Autosomal recessive inheritance",
+    "Young adult onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

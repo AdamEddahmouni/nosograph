@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'thanatophoric dysplasia type 1 (THANATOPHORIC_DYSPLASIA_TYPE_1
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of thanatophoric dysplasia type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "1-minute APGAR score of 1",
+    "Short greater sciatic notch",
+    "Gray matter heterotopia",
+    "Metaphyseal irregularity",
+    "Frontal bossing",
+    "Hypoplastic pelvis",
+    "Hydrocephalus",
+    "Autosomal dominant inheritance",
+    "Bowing of the long bones",
+    "Temporal lobe dysplasia",
+    "Small abnormally formed scapulae",
+    "Hypoplastic ilia",
+    "Profound intellectual disability",
+    "5-minute APGAR score of 1",
+    "Cloverleaf skull",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

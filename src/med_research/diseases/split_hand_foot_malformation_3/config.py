@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'split hand-foot malformation 3 (SPLIT_HAND_FOOT_MALFORMATION_3
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of split hand-foot malformation 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nail dystrophy",
+    "Autosomal recessive inheritance",
+    "Narrow mouth",
+    "Nail dysplasia",
+    "Ridged nail",
+    "Renal hypoplasia",
+    "Cleft palate",
+    "Microretrognathia",
+    "Myopia",
+    "Intellectual disability",
+    "Autosomal dominant inheritance",
+    "High palate",
+    "Split hand",
+    "Hypoplasia of the maxilla",
+    "Abnormal pinna morphology",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

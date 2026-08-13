@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'activated PI3K-delta syndrome (ACTIVATED_PI3K_DELTA_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of activated PI3K-delta syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased circulating IgA concentration",
+    "Splenomegaly",
+    "Decreased naive CD8+ T cell proportion",
+    "Increased transitional B cell proportion",
+    "Decreased circulating specific pneumococcal antibody concentration",
+    "Decreased class-switched memory B cell proportion",
+    "Short stature",
+    "Autoimmunity",
+    "Bronchiectasis",
+    "Persistent CMV viremia",
+    "Enlarged tonsils",
+    "Childhood onset",
+    "Lymphadenopathy",
+    "Immunodeficiency",
+    "Decreased naive CD4+ T cell proportion",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

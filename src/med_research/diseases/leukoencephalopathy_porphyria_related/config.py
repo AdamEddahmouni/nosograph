@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'leukoencephalopathy, porphyria-related (LEUKOENCEPHALOPATHY_PO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of leukoencephalopathy, porphyria-related
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital onset",
+    "Childhood onset",
+    "Optic atrophy",
+    "Ataxia",
+    "Loss of ambulation",
+    "Cognitive impairment",
+    "Hearing impairment",
+    "Increased CSF lactate",
+    "Sensorimotor neuropathy",
+    "Spastic paraparesis",
+    "Cerebellar atrophy",
+    "Progressive visual loss",
+    "Delayed ability to walk",
+    "Nystagmus",
+    "Unsteady gait",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

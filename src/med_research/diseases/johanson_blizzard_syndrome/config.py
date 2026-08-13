@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Johanson-Blizzard syndrome (JOHANSON_BLIZZARD_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Johanson-Blizzard syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short stature",
+    "Micropenis",
+    "Delayed skeletal maturation",
+    "Hypocalcemia",
+    "Elevated circulating VLDL-C concentration",
+    "Severe intrauterine growth retardation",
+    "Clitoral hypertrophy",
+    "Generalized hypotonia",
+    "Aplasia cutis congenita of scalp",
+    "Elevated gamma-glutamyltransferase level",
+    "Diabetes mellitus",
+    "Elevated circulating alanine aminotransferase concentration",
+    "Generalized edema",
+    "Primary hypothyroidism",
+    "Clinodactyly of the 5th finger",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

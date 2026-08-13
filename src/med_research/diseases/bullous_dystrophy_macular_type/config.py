@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'bullous dystrophy, macular type (BULLOUS_DYSTROPHY_MACULAR_TYP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of bullous dystrophy, macular type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Death in childhood",
+    "Hyperpigmentation of the skin",
+    "Acrocyanosis",
+    "Microcephaly",
+    "X-linked inheritance",
+    "Alopecia totalis",
+    "Intellectual disability",
+    "Abnormal nail morphology",
+    "Severe short stature",
+    "Tapered finger",
+    "Short finger",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

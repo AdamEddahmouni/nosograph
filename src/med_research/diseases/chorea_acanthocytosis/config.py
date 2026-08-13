@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'chorea-acanthocytosis (CHOREA_ACANTHOCYTOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of chorea-acanthocytosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased circulating lactate dehydrogenase concentration",
+    "Middle age onset",
+    "Seizure",
+    "Tics",
+    "Emotional lability",
+    "Elevated circulating creatine kinase activity",
+    "Orofacial dyskinesia",
+    "Hyporeflexia",
+    "Progressive",
+    "Acanthocytosis",
+    "Drooling",
+    "Disinhibition",
+    "Autosomal recessive inheritance",
+    "Dystonia",
+    "Anxiety",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

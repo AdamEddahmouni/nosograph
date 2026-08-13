@@ -8,8 +8,19 @@ PIPELINE_LABEL = "Myelofibrosis (MYELOFIBROSIS)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Myelofibrosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Typified by somatic mosaicism",
+    "Myeloproliferative disorder",
+    "Infantile onset",
+    "Splenomegaly",
+    "Myelofibrosis",
+    "Fever",
+    "Hepatomegaly",
+    "Extramedullary hematopoiesis",
+    "Hemophagocytosis",
+    "Purpura",
+    "Pallor",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

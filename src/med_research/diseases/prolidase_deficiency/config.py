@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'prolidase deficiency (PROLIDASE_DEFICIENCY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of prolidase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Crusting erythematous dermatitis",
+    "Prolonged neonatal jaundice",
+    "Ptosis",
+    "Failure to thrive",
+    "Autosomal recessive inheritance",
+    "High palate",
+    "Depressed nasal bridge",
+    "Febrile seizure (within the age range of 3 months to 6 years)",
+    "Low posterior hairline",
+    "Global developmental delay",
+    "Hepatomegaly",
+    "Increased circulating immunoglobulin concentration",
+    "Hyperimidodipeptiduria",
+    "Childhood onset",
+    "Chronic lung disease",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

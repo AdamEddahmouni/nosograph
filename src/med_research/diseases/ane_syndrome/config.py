@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'ANE syndrome (ANE_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ANE syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Motor deterioration",
+    "Autosomal recessive inheritance",
+    "Hypodontia",
+    "Hypogonadotropic hypogonadism",
+    "Central adrenal insufficiency",
+    "Delayed puberty",
+    "Intellectual disability",
+    "Short stature",
+    "Small pituitary gland",
+    "Microcephaly",
+    "Reduced subcutaneous adipose tissue",
+    "Gynecomastia",
+    "Alopecia",
+    "Flexural reticulate hyperpigmentation",
+    "Kyphoscoliosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

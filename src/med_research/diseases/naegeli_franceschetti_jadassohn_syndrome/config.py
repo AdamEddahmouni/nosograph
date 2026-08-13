@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'Naegeli-Franceschetti-Jadassohn syndrome (NAEGELI_FRANCESCHETT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Naegeli-Franceschetti-Jadassohn syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Premature loss of teeth",
+    "Palmoplantar keratoderma",
+    "Heat intolerance",
+    "Autosomal dominant inheritance",
+    "Reticular hyperpigmentation",
+    "Adermatoglyphia",
+    "Fragile nails",
+    "Carious teeth",
+    "Hypohidrosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

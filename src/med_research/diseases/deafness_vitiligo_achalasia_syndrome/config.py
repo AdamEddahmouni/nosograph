@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'deafness-vitiligo-achalasia syndrome (DEAFNESS_VITILIGO_ACHALA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of deafness-vitiligo-achalasia syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Skeletal muscle atrophy",
+    "Achalasia",
+    "Vitiligo",
+    "Short stature",
+    "Autosomal recessive inheritance",
+    "Hearing impairment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

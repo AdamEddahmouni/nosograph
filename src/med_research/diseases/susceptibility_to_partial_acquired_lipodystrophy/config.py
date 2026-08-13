@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'susceptibility to partial acquired lipodystrophy (SUSCEPTIBILI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of susceptibility to partial acquired lipodystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hirsutism",
+    "Nephrotic syndrome",
+    "Autosomal dominant inheritance",
+    "Proteinuria",
+    "Diabetes mellitus",
+    "Hematuria",
+    "Decreased circulating complement C3 concentration",
+    "Membranoproliferative glomerulonephritis",
+    "Abnormal circulating lipid concentration",
+    "Sporadic",
+    "Recurrent infections",
+    "Polycystic ovaries",
+    "Hepatic steatosis",
+    "Loss of truncal subcutaneous adipose tissue",
+    "Progressive loss of facial adipose tissue",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

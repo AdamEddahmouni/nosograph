@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'achondrogenesis type IB (ACHONDROGENESIS_TYPE_IB)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of achondrogenesis type IB
-SYMPTOMS = []
+SYMPTOMS = [
+    "Polyhydramnios",
+    "Malar flattening",
+    "Umbilical hernia",
+    "Autosomal recessive inheritance",
+    "Short ribs",
+    "Edema",
+    "Hydrops fetalis",
+    "Inguinal hernia",
+    "Abdominal distention",
+    "Narrow chest",
+    "Breech presentation",
+    "Neonatal short-limb short stature",
+    "Respiratory insufficiency",
+    "Flat face",
+    "Micromelia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

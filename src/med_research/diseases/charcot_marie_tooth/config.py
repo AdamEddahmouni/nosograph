@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Charcot-Marie-Tooth disease (CHARCOT_MARIE_TOOTH)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Charcot-Marie-Tooth disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Tongue atrophy",
+    "Hyporeflexia",
+    "Joint hypermobility",
+    "Areflexia of upper limbs",
+    "Decreased patellar reflex",
+    "Distal amyotrophy",
+    "Talipes equinovarus",
+    "Juvenile onset",
+    "Steppage gait",
+    "Young adult onset",
+    "Late onset",
+    "Hyperextensible skin",
+    "Areflexia of lower limbs",
+    "Axonal degeneration",
+    "Foot dorsiflexor weakness",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,9 @@ PIPELINE_LABEL = 'diaphragmatic hernia 3 (DIAPHRAGMATIC_HERNIA_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of diaphragmatic hernia 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital diaphragmatic hernia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

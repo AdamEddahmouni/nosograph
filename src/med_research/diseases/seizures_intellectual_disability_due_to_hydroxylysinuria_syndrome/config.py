@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'seizures-intellectual disability due to hydroxylysinuria syndr
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of seizures-intellectual disability due to hydroxylysinuria syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperlysinuria",
+    "Autosomal recessive inheritance",
+    "Intellectual disability",
+    "Generalized myoclonic seizure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

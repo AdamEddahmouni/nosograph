@@ -8,8 +8,21 @@ PIPELINE_LABEL = "mumps infectious disease (MUMPS)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mumps infectious disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Severe viral infection",
+    "Elevated circulating alanine aminotransferase concentration",
+    "Decreased circulating IgA concentration",
+    "Infantile onset",
+    "Increased circulating lactate concentration",
+    "Decreased total lymphocyte count",
+    "Elevated CSF neopterin level",
+    "Childhood onset",
+    "Encephalopathy",
+    "Autosomal recessive inheritance",
+    "Decreased circulating IgM concentration",
+    "Post-vaccination measles",
+    "Abnormal circulating IgG concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

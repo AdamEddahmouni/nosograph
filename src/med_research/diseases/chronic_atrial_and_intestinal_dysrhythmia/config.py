@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'chronic atrial and intestinal dysrhythmia (CHRONIC_ATRIAL_AND_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of chronic atrial and intestinal dysrhythmia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Atrial flutter",
+    "Bradycardia",
+    "Failure to thrive",
+    "Decreased body weight",
+    "Intestinal pseudo-obstruction",
+    "Ventricular escape rhythm",
+    "Mitral regurgitation",
+    "Sick sinus syndrome",
+    "Left atrial enlargement",
+    "Bicuspid aortic valve",
+    "Juvenile onset",
+    "Autosomal recessive inheritance",
+    "Young adult onset",
+    "Atrial fibrillation",
+    "Pulmonic stenosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

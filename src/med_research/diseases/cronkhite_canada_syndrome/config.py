@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Cronkhite-Canada syndrome (CRONKHITE_CANADA_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Cronkhite-Canada syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypokalemia",
+    "Hypocalcemia",
+    "Cachexia",
+    "Diarrhea",
+    "Hematochezia",
+    "Malabsorption",
+    "Cataract",
+    "Alopecia",
+    "Sporadic",
+    "Xerostomia",
+    "Abdominal pain",
+    "Anorexia",
+    "Gastrointestinal carcinoma",
+    "Paresthesia",
+    "Hypomagnesemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

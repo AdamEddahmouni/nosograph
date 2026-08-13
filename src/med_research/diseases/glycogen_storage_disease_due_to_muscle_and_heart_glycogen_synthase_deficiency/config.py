@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'glycogen storage disease due to muscle and heart glycogen synt
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of glycogen storage disease due to muscle and heart glycogen synthase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cardiomyopathy",
+    "Left ventricular hypertrophy",
+    "Left atrial enlargement",
+    "Decreased muscle glycogen content",
+    "Exercise intolerance",
+    "Stroke",
+    "Autosomal recessive inheritance",
+    "Bilateral tonic-clonic seizure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

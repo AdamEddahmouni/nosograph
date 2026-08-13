@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'TMEM165-congenital disorder of glycosylation (TMEM165_CONGENIT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of TMEM165-congenital disorder of glycosylation
-SYMPTOMS = []
+SYMPTOMS = [
+    "Epiphyseal dysplasia",
+    "Abnormal cerebral white matter morphology",
+    "Hemolytic-uremic syndrome",
+    "Elevated circulating alanine aminotransferase concentration",
+    "Joint hypermobility",
+    "Amelogenesis imperfecta",
+    "Hepatomegaly",
+    "Midface retrusion",
+    "Unexplained fevers",
+    "Posteriorly rotated ears",
+    "Thrombocytopenia",
+    "Seizure",
+    "Low-set ears",
+    "Secondary microcephaly",
+    "Growth delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

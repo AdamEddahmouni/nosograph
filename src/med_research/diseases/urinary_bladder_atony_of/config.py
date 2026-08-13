@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'urinary bladder, atony of (URINARY_BLADDER_ATONY_OF)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of urinary bladder, atony of
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Recurrent urinary tract infections",
+    "Gastroesophageal reflux",
+    "Vesicoureteral reflux",
+    "Orthostatic hypotension",
+    "Neurogenic bladder",
+    "Hypospadias",
+    "Stage 2 chronic kidney disease",
+    "Slow pupillary light response",
+    "Hydronephrosis",
+    "Failure to thrive",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

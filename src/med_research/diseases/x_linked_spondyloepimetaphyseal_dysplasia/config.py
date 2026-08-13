@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'X-linked spondyloepimetaphyseal dysplasia (X_LINKED_SPONDYLOEP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked spondyloepimetaphyseal dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nystagmus",
+    "Long fibula",
+    "Limited elbow extension",
+    "Small epiphyses",
+    "Broad long bone diaphyses",
+    "Thick eyebrow",
+    "Short palm",
+    "Tetraparesis",
+    "Metaphyseal widening",
+    "Cone-shaped distal radial epiphysis",
+    "Abnormality of alkaline phosphatase level",
+    "Flat acetabular roof",
+    "Intellectual disability",
+    "Long ulna",
+    "Kyphoscoliosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

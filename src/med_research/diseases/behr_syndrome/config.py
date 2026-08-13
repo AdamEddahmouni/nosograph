@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Behr syndrome (BEHR_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Behr syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperreflexia",
+    "Peripheral neuropathy",
+    "Dysphagia",
+    "Unsteady gait",
+    "Autosomal recessive inheritance",
+    "Achilles tendon contracture",
+    "Nystagmus",
+    "Chronic constipation",
+    "Dysarthria",
+    "Infantile onset",
+    "Motor delay",
+    "Babinski sign",
+    "Tremor",
+    "Hypoplastic optic chiasm",
+    "Cerebellar vermis atrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

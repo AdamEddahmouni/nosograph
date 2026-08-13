@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'Juvenile nephropathic cystinosis (JUVENILE_NEPHROPATHIC_CYSTIN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Juvenile nephropathic cystinosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Photophobia",
+    "Rickets",
+    "Retinopathy",
+    "Stage 5 chronic kidney disease",
+    "Elevated intracellular cystine",
+    "Juvenile onset",
+    "Corneal crystals",
+    "Growth abnormality",
+    "Proteinuria",
+    "Retinal pigment epithelial mottling",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

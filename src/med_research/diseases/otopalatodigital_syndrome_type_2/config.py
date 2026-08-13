@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'otopalatodigital syndrome type 2 (OTOPALATODIGITAL_SYNDROME_TY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of otopalatodigital syndrome type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hydronephrosis",
+    "Rudimentary fibula",
+    "Irregular metacarpals",
+    "Omphalocele",
+    "Congenital hip dislocation",
+    "Undulate clavicle",
+    "Postaxial hand polydactyly",
+    "Short metacarpal",
+    "Short ribs",
+    "Short neck",
+    "Broad hallux",
+    "Short metatarsal",
+    "Frontal bossing",
+    "Bulbous tips of toes",
+    "Delayed closure of the anterior fontanelle",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

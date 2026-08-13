@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'retinitis pigmentosa 71 (RETINITIS_PIGMENTOSA_71)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of retinitis pigmentosa 71
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Attenuation of retinal blood vessels",
+    "Optic disc drusen",
+    "Rod-cone dystrophy",
+    "Nyctalopia",
+    "Scoliosis",
+    "Optic disc pallor",
+    "Perifoveal ring of hyperautofluorescence",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

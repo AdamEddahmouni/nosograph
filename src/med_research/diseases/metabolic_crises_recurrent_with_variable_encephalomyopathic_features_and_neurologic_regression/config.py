@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'metabolic crises, recurrent, with variable encephalomyopathic 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of metabolic crises, recurrent, with variable encephalomyopathic features and neurologic regression
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ragged-red muscle fibers",
+    "Scoliosis",
+    "Weakness of facial musculature",
+    "Infantile onset",
+    "Exercise-induced myalgia",
+    "Frequent falls",
+    "Developmental regression",
+    "Lactic acidosis",
+    "Dysarthria",
+    "Generalized hypotonia",
+    "Autosomal recessive inheritance",
+    "Dystonia",
+    "Choreoathetosis",
+    "Delayed speech and language development",
+    "Motor delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

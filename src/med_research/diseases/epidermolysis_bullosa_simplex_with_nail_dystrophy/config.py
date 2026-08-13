@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'epidermolysis bullosa simplex with nail dystrophy (EPIDERMOLYS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of epidermolysis bullosa simplex with nail dystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Abnormal blistering of the skin",
+    "Plantar hyperkeratosis",
+    "Childhood onset",
+    "Pruritus",
+    "Nail dystrophy",
+    "Stratum basale cleavage",
+    "Alopecia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

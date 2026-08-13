@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'lower motor neuron syndrome with late-adult onset (LOWER_MOTOR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lower motor neuron syndrome with late-adult onset
-SYMPTOMS = []
+SYMPTOMS = [
+    "Distal sensory impairment",
+    "Skeletal muscle atrophy",
+    "Fasciculations",
+    "Elevated circulating creatine kinase activity",
+    "Gait disturbance",
+    "Tremor",
+    "Spinal muscular atrophy",
+    "Areflexia",
+    "Autosomal dominant inheritance",
+    "Hyporeflexia",
+    "Pes cavus",
+    "Muscle weakness",
+    "Hammertoe",
+    "Muscle spasm",
+    "Middle age onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

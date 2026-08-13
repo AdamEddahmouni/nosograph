@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'arrhythmogenic right ventricular dysplasia, familial, 14 (ARRH
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of arrhythmogenic right ventricular dysplasia, familial, 14
-SYMPTOMS = []
+SYMPTOMS = [
+    "Presyncope",
+    "Left bundle branch block",
+    "Ventricular tachycardia",
+    "Autosomal dominant inheritance",
+    "Palpitations",
+    "Juvenile onset",
+    "Middle age onset",
+    "Right ventricular dilatation",
+    "Chest pain",
+    "Premature ventricular contraction",
+    "Young adult onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

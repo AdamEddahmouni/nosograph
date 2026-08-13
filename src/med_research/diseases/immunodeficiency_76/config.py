@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'immunodeficiency 76 (IMMUNODEFICIENCY_76)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 76
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased total B cell count",
+    "Colitis",
+    "Decreased total T cell count",
+    "Death in childhood",
+    "Growth delay",
+    "Decreased total lymphocyte count",
+    "Autosomal recessive inheritance",
+    "Lymphadenopathy",
+    "Infantile onset",
+    "B-cell lymphoma",
+    "Childhood onset",
+    "Chronic diarrhea",
+    "Recurrent pneumonia",
+    "Recurrent bronchiolitis",
+    "Splenomegaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

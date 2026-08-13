@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'immune deficiency, familial variable (IMMUNE_DEFICIENCY_FAMILI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immune deficiency, familial variable
-SYMPTOMS = []
+SYMPTOMS = [
+    "Immunodeficiency",
+    "Recurrent infections",
+    "Decreased circulating IgG concentration",
+    "Decreased circulating IgA concentration",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

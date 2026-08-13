@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'amniotic band syndrome (AMNIOTIC_BAND_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of amniotic band syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Bladder exstrophy",
+    "Sporadic",
+    "Eyelid coloboma",
+    "Encephalocele",
+    "Cleft palate",
+    "Ectopia cordis",
+    "Omphalocele",
+    "Tessier cleft",
+    "Abnormal lung lobation",
+    "Hand polydactyly",
+    "Cleft upper lip",
+    "Scoliosis",
+    "Abnormal rib cage morphology",
+    "Gastroschisis",
+    "Talipes equinovarus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

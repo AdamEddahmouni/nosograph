@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'van Maldergem syndrome 1 (VAN_MALDERGEM_SYNDROME_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of van Maldergem syndrome 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Gray matter heterotopia",
+    "Intellectual disability",
+    "Skeletal dysplasia",
+    "Osteopenia",
+    "Midface retrusion",
+    "Periventricular nodular heterotopia",
+    "Simplified gyral pattern",
+    "Anal atresia",
+    "Short fourth metatarsal",
+    "Downturned corners of mouth",
+    "Microtia",
+    "Epicanthus",
+    "Talipes equinovarus",
+    "Atresia of the external auditory canal",
+    "Clinodactyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

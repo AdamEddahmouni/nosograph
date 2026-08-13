@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spinocerebellar ataxia type 36 (SPINOCEREBELLAR_ATAXIA_TYPE_36
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spinocerebellar ataxia type 36
-SYMPTOMS = []
+SYMPTOMS = [
+    "Fasciculations",
+    "Vertical supranuclear gaze palsy",
+    "Gait ataxia",
+    "Babinski sign",
+    "Cerebellar atrophy",
+    "Ataxia",
+    "Nystagmus",
+    "Dysarthria",
+    "Limb ataxia",
+    "Muscle weakness",
+    "Hyperreflexia",
+    "Hypotonia",
+    "Impaired smooth pursuit",
+    "Tongue atrophy",
+    "Progressive",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

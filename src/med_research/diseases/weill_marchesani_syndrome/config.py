@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Weill-Marchesani syndrome (WEILL_MARCHESANI_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Weill-Marchesani syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Brachycephaly",
+    "Mitral regurgitation",
+    "Tooth malposition",
+    "Elbow flexion contracture",
+    "Lack of skin elasticity",
+    "Lens luxation",
+    "Depressed nasal bridge",
+    "High palate",
+    "Short stature",
+    "Ventricular septal defect",
+    "Thickened skin",
+    "Flexion contracture of toe",
+    "Broad skull",
+    "Blindness",
+    "Glaucoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

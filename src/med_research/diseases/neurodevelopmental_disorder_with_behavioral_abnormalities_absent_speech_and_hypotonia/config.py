@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neurodevelopmental disorder with behavioral abnormalities, abs
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neurodevelopmental disorder with behavioral abnormalities, absent speech, and hypotonia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autistic behavior",
+    "Brain atrophy",
+    "Paroxysmal bursts of laughter",
+    "Hyperactivity",
+    "Motor delay",
+    "Self-injurious behavior",
+    "Esotropia",
+    "Nystagmus",
+    "Autosomal recessive inheritance",
+    "Intellectual disability",
+    "Absent speech",
+    "Spasticity",
+    "Low-set ears",
+    "Downturned corners of mouth",
+    "Global developmental delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

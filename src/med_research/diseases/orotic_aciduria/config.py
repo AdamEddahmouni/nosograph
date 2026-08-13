@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'orotic aciduria (OROTIC_ACIDURIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of orotic aciduria
-SYMPTOMS = []
+SYMPTOMS = [
+    "Orotic acid crystalluria",
+    "Pyrimidine-responsive megaloblastic anemia",
+    "Global developmental delay",
+    "Failure to thrive",
+    "HP_0005435",
+    "Oroticaciduria",
+    "Hematuria",
+    "Atrial septal defect",
+    "Hypochromia",
+    "Poikilocytosis",
+    "Autosomal recessive inheritance",
+    "Ventricular septal defect",
+    "Anisocytosis",
+    "Folate-unresponsive megaloblastic anemia",
+    "Reduced orotidine 5-prime phosphate decarboxylase level",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

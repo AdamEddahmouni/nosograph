@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'platyspondylic dysplasia, Torrance type (PLATYSPONDYLIC_DYSPLA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of platyspondylic dysplasia, Torrance type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short ribs",
+    "Hypoplastic ilia",
+    "Flat acetabular roof",
+    "Thoracolumbar kyphosis",
+    "Low-set ears",
+    "Midface retrusion",
+    "Macrocephaly",
+    "Hypoplastic pubic bone",
+    "Depressed nasal bridge",
+    "Narrow chest",
+    "Micromelia",
+    "Neonatal short-limb short stature",
+    "Ovoid vertebral bodies",
+    "Flat face",
+    "Severe platyspondyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

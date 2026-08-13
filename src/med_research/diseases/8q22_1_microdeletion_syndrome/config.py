@@ -8,8 +8,23 @@ PIPELINE_LABEL = '8q22.1 microdeletion syndrome (8Q22_1_MICRODELETION_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of 8q22.1 microdeletion syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Low-set ears",
+    "Cryptorchidism",
+    "Long philtrum",
+    "Tapered finger",
+    "Blepharophimosis",
+    "Sandal gap",
+    "Short neck",
+    "Retrognathia",
+    "Telecanthus",
+    "Hypoplastic nipples",
+    "Chin with horizontal crease",
+    "Frontal bossing",
+    "Prominent glabella",
+    "Sparse hair",
+    "Anteverted nares",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

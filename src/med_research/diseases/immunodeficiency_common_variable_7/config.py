@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'immunodeficiency, common variable, 7 (IMMUNODEFICIENCY_COMMON_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency, common variable, 7
-SYMPTOMS = []
+SYMPTOMS = [
+    "Fever",
+    "Pharyngalgia",
+    "Recurrent respiratory infections",
+    "Chronic absent circulating IgG4",
+    "Recurrent urinary tract infections",
+    "Splenomegaly",
+    "Chronic diarrhea",
+    "HP_0041070",
+    "Decreased circulating isohemagglutinin concentration",
+    "Decreased circulating specific pneumococcal antibody concentration",
+    "Recurrent infections",
+    "Autosomal recessive inheritance",
+    "Decreased circulating total IgG concentration",
+    "Decreased circulating IgA concentration",
+    "Myalgia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

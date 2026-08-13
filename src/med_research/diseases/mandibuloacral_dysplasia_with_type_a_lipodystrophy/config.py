@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mandibuloacral dysplasia with type A lipodystrophy (MANDIBULOA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mandibuloacral dysplasia with type A lipodystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Childhood onset",
+    "Postnatal growth retardation",
+    "Alopecia",
+    "Growth delay",
+    "Autosomal recessive inheritance",
+    "Progressive clavicular acroosteolysis",
+    "Osteolytic defects of the distal phalanges of the hand",
+    "Delayed cranial suture closure",
+    "Hypoplasia of teeth",
+    "Juvenile onset",
+    "Sparse scalp hair",
+    "Increased adipose tissue around the neck",
+    "Coxa valga",
+    "Lipodystrophy",
+    "Down-sloping shoulders",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

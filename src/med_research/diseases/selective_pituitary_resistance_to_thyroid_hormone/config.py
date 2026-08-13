@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'selective pituitary resistance to thyroid hormone (SELECTIVE_P
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of selective pituitary resistance to thyroid hormone
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated circulating thyroid-stimulating hormone concentration",
+    "Hyperthyroidism",
+    "Autosomal dominant inheritance",
+    "Impaired sensitivity to thyroid hormone",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

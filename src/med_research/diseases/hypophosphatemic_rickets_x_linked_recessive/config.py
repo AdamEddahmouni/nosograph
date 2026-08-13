@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hypophosphatemic rickets, X-linked recessive (HYPOPHOSPHATEMIC
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypophosphatemic rickets, X-linked recessive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nephrocalcinosis",
+    "Elevated circulating calcitriol concentration",
+    "Tibial bowing",
+    "Kidney stone",
+    "Osteomalacia",
+    "Metaphyseal irregularity",
+    "Proximal tubulopathy",
+    "Renal phosphate wasting",
+    "Rickets",
+    "Thin bony cortex",
+    "Enlargement of the ankles",
+    "X-linked recessive inheritance",
+    "Recurrent fractures",
+    "Hypercalciuria",
+    "Bulging epiphyses",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

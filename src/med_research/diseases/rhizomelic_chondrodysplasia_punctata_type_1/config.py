@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'rhizomelic chondrodysplasia punctata type 1 (RHIZOMELIC_CHONDR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of rhizomelic chondrodysplasia punctata type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Delayed CNS myelination",
+    "Cleft palate",
+    "Severe short stature",
+    "Coronal cleft vertebrae",
+    "Depressed nasal bridge",
+    "Severe failure to thrive",
+    "Rhizomelia",
+    "Epiphyseal stippling",
+    "Spasticity",
+    "Flared metaphysis",
+    "Flat face",
+    "Developmental cataract",
+    "Respiratory insufficiency",
+    "Micrognathia",
+    "Malar flattening",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

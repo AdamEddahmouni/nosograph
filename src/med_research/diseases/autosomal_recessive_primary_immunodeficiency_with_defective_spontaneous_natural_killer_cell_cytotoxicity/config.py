@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'autosomal recessive primary immunodeficiency with defective sp
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal recessive primary immunodeficiency with defective spontaneous natural killer cell cytotoxicity
-SYMPTOMS = []
+SYMPTOMS = [
+    "Recurrent respiratory infections",
+    "Reduced total natural killer cell count",
+    "Immunodeficiency",
+    "Infantile onset",
+    "Wheezing",
+    "Recurrent sinusitis",
+    "Autosomal recessive inheritance",
+    "HP_0012178",
+    "Recurrent otitis media",
+    "Severe varicella zoster infection",
+    "Recurrent oral herpes",
+    "Recurrent viral upper respiratory tract infections",
+    "BCGitis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

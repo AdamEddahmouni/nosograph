@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'skeletal defects, genital hypoplasia, and intellectual disabil
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of skeletal defects, genital hypoplasia, and intellectual disability
-SYMPTOMS = []
+SYMPTOMS = [
+    "Aplasia/Hypoplasia of the radius",
+    "Short tibia",
+    "Short femur",
+    "Short stature",
+    "Absent thumb",
+    "Delayed skeletal maturation",
+    "Micropenis",
+    "Intellectual disability",
+    "Microcephaly",
+    "Thin vermilion border",
+    "Strabismus",
+    "Autosomal recessive inheritance",
+    "Supernumerary ribs",
+    "Hypoplasia of the ulna",
+    "Cryptorchidism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

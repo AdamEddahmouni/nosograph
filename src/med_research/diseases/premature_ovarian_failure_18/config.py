@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'premature ovarian failure 18 (PREMATURE_OVARIAN_FAILURE_18)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of premature ovarian failure 18
-SYMPTOMS = []
+SYMPTOMS = [
+    "Intermediate young adult onset",
+    "Hypoplasia of the uterus",
+    "Secondary amenorrhea",
+    "Premature ovarian insufficiency",
+    "Hypoplasia of the ovary",
+    "Elevated circulating follicle stimulating hormone level",
+    "Autosomal recessive inheritance",
+    "Irregular menstruation",
+    "Elevated circulating luteinizing hormone level",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

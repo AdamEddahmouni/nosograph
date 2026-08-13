@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'X-linked complicated corpus callosum dysgenesis (X_LINKED_COMP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked complicated corpus callosum dysgenesis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pes planus",
+    "Ventriculomegaly",
+    "Global developmental delay",
+    "High palate",
+    "Hypoplasia of the corpus callosum",
+    "Strabismus",
+    "Seizure",
+    "Hydrocephalus",
+    "Inferior cerebellar vermis hypoplasia",
+    "Cerebellar hypoplasia",
+    "Second trimester onset",
+    "Interhemispheric cyst",
+    "Microcephaly",
+    "Dislocated radial head",
+    "Intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

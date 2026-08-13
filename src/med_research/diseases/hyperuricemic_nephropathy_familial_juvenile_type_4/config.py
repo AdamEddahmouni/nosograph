@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hyperuricemic nephropathy, familial juvenile type 4 (HYPERURIC
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hyperuricemic nephropathy, familial juvenile type 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal circulating renin concentration",
+    "Impaired renal concentrating ability",
+    "Autosomal dominant inheritance",
+    "Hyperechogenic kidneys",
+    "Proteinuria",
+    "Progressive",
+    "Chronic constipation",
+    "Recurrent infections",
+    "Infantile onset",
+    "Retrognathia",
+    "Elevated circulating parathyroid hormone level",
+    "Decreased urinary uromodulin level",
+    "Renal sodium wasting",
+    "Anemia",
+    "Hematuria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

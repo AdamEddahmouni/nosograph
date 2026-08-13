@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Alstrom syndrome (ALSTROM_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Alstrom syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Scoliosis",
+    "Blindness",
+    "Hypergonadotropic hypogonadism",
+    "Pigmentary retinopathy",
+    "Elevated circulating hepatic transaminase concentration",
+    "Renal insufficiency",
+    "Hypothyroidism",
+    "Hyperuricemia",
+    "Abnormality of the dentition",
+    "Cone/cone-rod dystrophy",
+    "Hyperostosis frontalis interna",
+    "Kyphosis",
+    "Nephritis",
+    "Hypertriglyceridemia",
+    "Short stature",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

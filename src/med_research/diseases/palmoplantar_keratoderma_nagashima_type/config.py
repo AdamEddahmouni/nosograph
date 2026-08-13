@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'palmoplantar keratoderma, Nagashima type (PALMOPLANTAR_KERATOD
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of palmoplantar keratoderma, Nagashima type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Palmoplantar hyperkeratosis",
+    "Infantile onset",
+    "Congenital onset",
+    "Hypergranulosis",
+    "Childhood onset",
+    "Autosomal recessive inheritance",
+    "Orthokeratotic hyperkeratosis",
+    "Juvenile onset",
+    "Palmoplantar hyperhidrosis",
+    "Maceration",
+    "Neonatal onset",
+    "Epidermal acanthosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

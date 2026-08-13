@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'Usher syndrome type 1C (USHER_SYNDROME_TYPE_1C)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Usher syndrome type 1C
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Rod-cone dystrophy",
+    "Vestibular hyporeflexia",
+    "Congenital sensorineural hearing impairment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

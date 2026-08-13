@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'adamantinoma (ADAMANTINOMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of adamantinoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Neoplasm",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

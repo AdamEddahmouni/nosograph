@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'congenital heart disease (CONGENITALLY_UNCORRECTED_TRANSPOSITI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital heart disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypoplastic left ventricle",
+    "Ventricular septal defect",
+    "Aortic valve stenosis",
+    "Atrioventricular canal defect",
+    "Recurrent respiratory infections",
+    "Autosomal dominant inheritance",
+    "Pulmonary arterial hypertension",
+    "Dextrocardia",
+    "Total anomalous pulmonary venous return",
+    "Tetralogy of Fallot",
+    "Coarctation of aorta",
+    "Congenital onset",
+    "Left ventricular outflow tract obstruction",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'thyroid hormone metabolism, abnormal, 2 (THYROID_HORMONE_METAB
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of thyroid hormone metabolism, abnormal, 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Hypercholesterolemia",
+    "Elevated circulating rT3/T3 ratio",
+    "Elevated circulating reverse T3 concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

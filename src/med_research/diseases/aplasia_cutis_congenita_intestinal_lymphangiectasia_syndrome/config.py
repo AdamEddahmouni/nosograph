@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'aplasia cutis congenita-intestinal lymphangiectasia syndrome (
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of aplasia cutis congenita-intestinal lymphangiectasia syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Aplasia cutis congenita over the scalp vertex",
+    "Generalized edema",
+    "Abnormal paranasal sinus morphology",
+    "Intestinal lymphangiectasia",
+    "Hypoproteinemia",
+    "Abnormal bleeding",
+    "Decreased total lymphocyte count",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

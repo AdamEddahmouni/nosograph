@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'Birt-Hogg-Dube syndrome (BIRT_HOGG_DUBE_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Birt-Hogg-Dube syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Renal cyst",
+    "Large intestinal polyposis",
+    "Spontaneous pneumothorax",
+    "Sebaceous hyperplasia",
+    "Multiple pulmonary cysts",
+    "Cutaneous leiomyoma",
+    "Renal neoplasm",
+    "Fibrofolliculoma",
+    "Colon cancer",
+    "Trichodiscoma",
+    "Cutaneous leiomyosarcoma",
+    "Multiple lipomas",
+    "Autosomal dominant inheritance",
+    "Renal cell carcinoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

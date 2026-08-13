@@ -8,8 +8,23 @@ PIPELINE_LABEL = '17q11.2 microduplication syndrome (17Q11_2_MICRODUPLICATION_SY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of 17q11.2 microduplication syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Microcephaly",
+    "Polymicrogyria",
+    "Macroorchidism",
+    "Broad neck",
+    "Intellectual disability",
+    "Tall stature",
+    "Attention deficit hyperactivity disorder",
+    "Hypospadias",
+    "Enamel hypoplasia",
+    "Childhood onset",
+    "Sparse eyelashes",
+    "Adducted thumb",
+    "Ankyloglossia",
+    "Hypotonia",
+    "Large hands",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

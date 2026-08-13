@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'multiple endocrine neoplasia type 2B (MULTIPLE_ENDOCRINE_NEOPL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of multiple endocrine neoplasia type 2B
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ganglioneuroma",
+    "Global developmental delay",
+    "Joint hypermobility",
+    "Elevated circulating calcitonin concentration",
+    "Autosomal dominant inheritance",
+    "Disproportionate tall stature",
+    "Myopathy",
+    "Elevated urinary epinephrine level",
+    "Parathyroid hyperplasia",
+    "Colonic diverticula",
+    "Scoliosis",
+    "Proximal femoral epiphysiolysis",
+    "Failure to thrive in infancy",
+    "Generalized hypotonia",
+    "Diarrhea",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

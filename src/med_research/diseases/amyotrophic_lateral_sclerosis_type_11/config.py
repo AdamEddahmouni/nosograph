@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'amyotrophic lateral sclerosis type 11 (AMYOTROPHIC_LATERAL_SCL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of amyotrophic lateral sclerosis type 11
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Somatic sensory dysfunction",
+    "Upper motor neuron dysfunction",
+    "Amyotrophic lateral sclerosis",
+    "Bulbar signs",
+    "Adult onset",
+    "Decreased nerve conduction velocity",
+    "Skeletal muscle atrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

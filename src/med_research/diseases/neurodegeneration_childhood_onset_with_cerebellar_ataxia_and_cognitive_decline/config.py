@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neurodegeneration, childhood-onset, with cerebellar ataxia and
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neurodegeneration, childhood-onset, with cerebellar ataxia and cognitive decline
-SYMPTOMS = []
+SYMPTOMS = [
+    "Proximal muscle weakness",
+    "Childhood onset",
+    "Cerebral atrophy",
+    "Dysarthria",
+    "Cognitive regression",
+    "Autosomal dominant inheritance",
+    "Cerebellar atrophy",
+    "Tremor",
+    "Dysphagia",
+    "Juvenile onset",
+    "Peripheral axonal neuropathy",
+    "Gowers sign",
+    "Loss of ambulation",
+    "Unsteady gait",
+    "Ataxia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'lymphedema-atrial septal defects-facial changes syndrome (LYMP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lymphedema-atrial septal defects-facial changes syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Upslanted palpebral fissure",
+    "Atrial flutter",
+    "Delayed speech and language development",
+    "Overriding aorta",
+    "Broad nasal tip",
+    "Telecanthus",
+    "Round face",
+    "Oligohydramnios",
+    "Autosomal recessive inheritance",
+    "Prominent forehead",
+    "Lymphedema",
+    "Atrial septal defect",
+    "Vascular ring",
+    "Hydrops fetalis",
+    "Patent ductus arteriosus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

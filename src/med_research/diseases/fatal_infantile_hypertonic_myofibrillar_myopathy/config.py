@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'fatal infantile hypertonic myofibrillar myopathy (FATAL_INFANT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of fatal infantile hypertonic myofibrillar myopathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Death in infancy",
+    "Rigidity",
+    "Rapidly progressive",
+    "Neonatal onset",
+    "Weak cry",
+    "Hypertonia",
+    "Apnea",
+    "Respiratory insufficiency",
+    "Muscular dystrophy",
+    "Infantile onset",
+    "Respiratory failure",
+    "Autosomal recessive inheritance",
+    "Elevated circulating creatine kinase activity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'phosphoribosylpyrophosphate synthetase superactivity (PHOSPHOR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of phosphoribosylpyrophosphate synthetase superactivity
-SYMPTOMS = []
+SYMPTOMS = [
+    "Myopia",
+    "Hyperuricosuria",
+    "Triangular face",
+    "Ptosis",
+    "Hypotonia",
+    "Prominent forehead",
+    "Short stature",
+    "Renal insufficiency",
+    "Sensorineural hearing impairment",
+    "Depressed nasal bridge",
+    "Global developmental delay",
+    "Wide mouth",
+    "Gout",
+    "Hypospadias",
+    "Sparse hair",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

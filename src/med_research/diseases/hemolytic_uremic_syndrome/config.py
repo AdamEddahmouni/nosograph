@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Hemolytic uremic syndrome (HEMOLYTIC_UREMIC_SYNDROME)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Hemolytic uremic syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ulnar deviation of finger",
+    "Short metacarpal",
+    "Accessory oral frenulum",
+    "Short nose",
+    "Cryptorchidism",
+    "Generalized hypotonia",
+    "Wide nasal bridge",
+    "Short stature",
+    "Hypotonia",
+    "Epicanthus",
+    "Micromelia",
+    "Wide mouth",
+    "Low-set ears",
+    "Postaxial hand polydactyly",
+    "Renal cortical cysts",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

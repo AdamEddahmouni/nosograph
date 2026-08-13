@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'schneckenbecken dysplasia (SCHNECKENBECKEN_DYSPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of schneckenbecken dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Bilateral talipes equinovarus",
+    "Fetal onset",
+    "Stillbirth",
+    "Narrow chest",
+    "Ovoid vertebral bodies",
+    "Advanced ossification of carpal bones",
+    "Macrocephaly",
+    "Anterior rib cupping",
+    "Narrow vertebral interpedicular distance",
+    "Short neck",
+    "Short ribs",
+    "Protuberant abdomen",
+    "Midface retrusion",
+    "Polyhydramnios",
+    "Platyspondyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

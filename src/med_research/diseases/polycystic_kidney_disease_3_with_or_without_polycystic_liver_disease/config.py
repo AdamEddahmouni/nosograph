@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'polycystic kidney disease 3 with or without polycystic liver d
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of polycystic kidney disease 3 with or without polycystic liver disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Juvenile onset",
+    "Hypertension",
+    "Autosomal dominant inheritance",
+    "Dilatation of the cerebral artery",
+    "Decreased liver function",
+    "Hepatic cysts",
+    "Late onset",
+    "Polycystic kidney dysplasia",
+    "Middle age onset",
+    "Young adult onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

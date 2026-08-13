@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'Wernicke-Korsakoff syndrome (WERNICKE_KORSAKOFF_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Wernicke-Korsakoff syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ataxia",
+    "Coma",
+    "Ophthalmoplegia",
+    "Memory impairment",
+    "Psychosis",
+    "Ptosis",
+    "Confusion",
+    "Delirium",
+    "Horizontal nystagmus",
+    "Autosomal recessive inheritance",
+    "Polyneuropathy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

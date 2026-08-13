@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'lipodystrophy-intellectual disability-deafness syndrome (LIPOD
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lipodystrophy-intellectual disability-deafness syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cubitus valgus",
+    "Slender long bones with narrow diaphyses",
+    "Progeroid facial appearance",
+    "Sparse facial hair",
+    "Intrauterine growth retardation",
+    "Sparse axillary hair",
+    "Abnormality of carpal bone ossification",
+    "Abnormality of the skin",
+    "Short femoral neck",
+    "Genu valgum",
+    "Hypoplasia of the maxilla",
+    "Generalized lipodystrophy",
+    "Congenital generalized lipodystrophy",
+    "Deeply set eye",
+    "Short stature",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

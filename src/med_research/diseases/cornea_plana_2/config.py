@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'cornea plana 2 (CORNEA_PLANA_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cornea plana 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased corneal thickness",
+    "Corneal opacity",
+    "Sclerocornea",
+    "Hypermetropia",
+    "Autosomal recessive inheritance",
+    "Childhood onset",
+    "Corneal arcus",
+    "Microphthalmia",
+    "Reduced visual acuity",
+    "Flat cornea",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

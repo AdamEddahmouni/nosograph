@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'oocyte maturation defect 9 (OOCYTE_MATURATION_DEFECT_9)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of oocyte maturation defect 9
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Young adult onset",
+    "Zygotic cleavage failure",
+    "Female infertility",
+    "Abnormality of the menstrual cycle",
+    "Metaphase I oocyte maturation arrest",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

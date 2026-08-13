@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Alexander disease (ALEXANDER_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Alexander disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Progressive macrocephaly",
+    "Death in childhood",
+    "Diffuse demyelination of the cerebral white matter",
+    "Death in adolescence",
+    "Fatigue",
+    "Death in infancy",
+    "Apathy",
+    "Dysarthria",
+    "Childhood onset",
+    "Seizure",
+    "Babinski sign",
+    "Spasticity",
+    "Ataxia",
+    "Developmental regression",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

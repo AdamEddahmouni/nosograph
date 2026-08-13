@@ -8,8 +8,10 @@ PIPELINE_LABEL = '8p23.1 duplication syndrome (8P23_1_DUPLICATION_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of 8p23.1 duplication syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Delayed speech and language development",
+    "Intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

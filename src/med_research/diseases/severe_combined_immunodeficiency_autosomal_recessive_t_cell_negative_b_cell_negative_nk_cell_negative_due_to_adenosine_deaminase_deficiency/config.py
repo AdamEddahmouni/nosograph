@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'severe combined immunodeficiency, autosomal recessive, T cell-
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of severe combined immunodeficiency, autosomal recessive, T cell-negative, B cell-negative, NK cell-negative, due to adenosine deaminase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Recurrent fungal infections",
+    "HP_0005365",
+    "Motor delay",
+    "Infantile onset",
+    "Recurrent mucocutaneous candidiasis",
+    "Recurrent fever",
+    "Hepatomegaly",
+    "B-cell lymphoma",
+    "Adrenal cortical sclerosis",
+    "Autoimmune hemolytic anemia",
+    "Asthma",
+    "Pneumonia",
+    "Absent specific antibody response",
+    "Recurrent bacterial infections",
+    "Aplasia of the thymus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

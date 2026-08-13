@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'brachycephaly, trichomegaly, and developmental delay (BRACHYCE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of brachycephaly, trichomegaly, and developmental delay
-SYMPTOMS = []
+SYMPTOMS = [
+    "Thin vermilion border",
+    "Autosomal dominant inheritance",
+    "Thick lower lip vermilion",
+    "Short stature",
+    "Depressed nasal bridge",
+    "Epicanthus",
+    "Highly arched eyebrow",
+    "Microcephaly",
+    "Periorbital fullness",
+    "Thick eyebrow",
+    "Single transverse palmar crease",
+    "Flat occiput",
+    "Low-set ears",
+    "Generalized hypotonia",
+    "Supernumerary tooth",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

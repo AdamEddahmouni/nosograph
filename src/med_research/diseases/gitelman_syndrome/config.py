@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Gitelman syndrome (GITELMAN_SYNDROME)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Gitelman syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Arthralgia",
+    "Paresthesia",
+    "Rhabdomyolysis",
+    "Polydipsia",
+    "Vertigo",
+    "Seizure",
+    "Polyuria",
+    "Hypomagnesemia",
+    "Hypocalciuria",
+    "Muscle weakness",
+    "Autosomal recessive inheritance",
+    "Salt craving",
+    "Blurred vision",
+    "Abdominal pain",
+    "Increased circulating renin concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

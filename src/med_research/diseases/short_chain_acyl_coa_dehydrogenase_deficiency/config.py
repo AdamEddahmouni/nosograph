@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'short chain acyl-CoA dehydrogenase deficiency (SHORT_CHAIN_ACY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of short chain acyl-CoA dehydrogenase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Flexion contracture",
+    "Cardiomyopathy",
+    "Ataxia",
+    "Delayed speech and language development",
+    "Hypotonia",
+    "Weakness of facial musculature",
+    "Ethylmalonic aciduria",
+    "Lethargy",
+    "Neonatal onset",
+    "Feeding difficulties",
+    "Childhood onset",
+    "Seizure",
+    "Abnormal cerebral white matter morphology",
+    "Psychosis",
+    "Scoliosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

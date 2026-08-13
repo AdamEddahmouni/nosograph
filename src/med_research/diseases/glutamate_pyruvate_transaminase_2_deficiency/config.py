@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'glutamate pyruvate transaminase 2 deficiency (GLUTAMATE_PYRUVA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of glutamate pyruvate transaminase 2 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypotelorism",
+    "Spasticity",
+    "Encephalopathy",
+    "Failure to thrive",
+    "Drooling",
+    "Epicanthus",
+    "Hypotonia",
+    "Posteriorly rotated ears",
+    "Generalized non-motor (absence) seizure",
+    "Intellectual disability",
+    "Narrow forehead",
+    "Progressive",
+    "Flexion contracture",
+    "High palate",
+    "Absent speech",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

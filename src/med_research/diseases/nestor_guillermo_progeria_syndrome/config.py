@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Nestor-Guillermo progeria syndrome (NESTOR_GUILLERMO_PROGERIA_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Nestor-Guillermo progeria syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Atherosclerosis",
+    "Mandibular osteolysis",
+    "Dental crowding",
+    "Pathologic fracture",
+    "Complete right bundle branch block",
+    "Scoliosis",
+    "Nail dystrophy",
+    "Childhood onset",
+    "Autosomal recessive inheritance",
+    "Right atrial enlargement",
+    "Cavum septum pellucidum",
+    "Dry skin",
+    "Midface retrusion",
+    "Delayed closure of the anterior fontanelle",
+    "Left atrial enlargement",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

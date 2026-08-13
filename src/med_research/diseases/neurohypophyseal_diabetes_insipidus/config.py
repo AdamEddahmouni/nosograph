@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'neurohypophyseal diabetes insipidus (NEUROHYPOPHYSEAL_DIABETES
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neurohypophyseal diabetes insipidus
-SYMPTOMS = []
+SYMPTOMS = [
+    "Wide nose",
+    "Decreased circulating osteocalcin level",
+    "Osteopenia",
+    "Hypertelorism",
+    "Central diabetes insipidus",
+    "Long philtrum",
+    "Autosomal dominant inheritance",
+    "Short nose",
+    "Gliosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

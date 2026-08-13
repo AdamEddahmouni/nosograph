@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'ocular cystinosis (OCULAR_CYSTINOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ocular cystinosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated leukocyte cystine",
+    "Abnormal retinal morphology",
+    "Elevated circulating creatinine concentration",
+    "Juvenile onset",
+    "Autosomal recessive inheritance",
+    "Young adult onset",
+    "Photophobia",
+    "Corneal crystals",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

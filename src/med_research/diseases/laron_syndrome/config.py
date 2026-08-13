@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'Laron syndrome (LARON_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Laron syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Severe short stature",
+    "Limb undergrowth",
+    "Decreased circulating insulin-like growth factor 1 concentration",
+    "Delayed menarche",
+    "Blue sclerae",
+    "Delayed skeletal maturation",
+    "Abnormal joint morphology",
+    "Childhood onset",
+    "Small face",
+    "Autosomal recessive inheritance",
+    "Abnormally high-pitched voice",
+    "Short long bone",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spondyloepimetaphyseal dysplasia, sponastrime type (SPONDYLOEP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondyloepimetaphyseal dysplasia, sponastrime type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Limited elbow extension",
+    "Subglottic stenosis",
+    "Metaphyseal widening",
+    "Flat capital femoral epiphysis",
+    "Chiari malformation",
+    "Delayed ossification of carpal bones",
+    "Frontal bossing",
+    "Bulbous nose",
+    "Genu varum",
+    "Rhizomelia",
+    "Metaphyseal irregularity",
+    "Platyspondyly",
+    "Spondyloepimetaphyseal dysplasia",
+    "Mandibular prognathia",
+    "Genu valgum",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

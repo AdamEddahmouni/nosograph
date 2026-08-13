@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'generalised epilepsy (GENERALISED_EPILEPSY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of generalised epilepsy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal cerebral white matter morphology",
+    "Multifocal epileptiform discharges",
+    "Delayed speech and language development",
+    "EEG with spike-wave complexes (>3.5 Hz)",
+    "Myoclonus",
+    "Myoclonic absence seizure",
+    "Aggressive behavior",
+    "Cutaneous photosensitivity",
+    "Childhood onset",
+    "Intellectual disability",
+    "Atypical behavior",
+    "Short stature",
+    "Juvenile onset",
+    "Bilateral tonic-clonic seizure",
+    "Atypical absence seizure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

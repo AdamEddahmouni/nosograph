@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'Miyoshi myopathy (MIYOSHI_MYOPATHY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Miyoshi myopathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Lower limb muscle weakness",
+    "Decreased Achilles reflex",
+    "Autosomal recessive inheritance",
+    "Distal amyotrophy",
+    "Adult onset",
+    "Elevated circulating creatine kinase activity",
+    "Difficulty climbing stairs",
+    "Muscular dystrophy",
+    "Distal muscle weakness",
+    "Tip-toe gait",
+    "Decreased/absent ankle reflexes",
+    "Deposits immunoreactive to beta-amyloid protein",
+    "Muscle fibrillation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

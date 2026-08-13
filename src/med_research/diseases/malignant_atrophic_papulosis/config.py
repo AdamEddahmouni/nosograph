@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'malignant atrophic papulosis (MALIGNANT_ATROPHIC_PAPULOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of malignant atrophic papulosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Stroke",
+    "Gastrointestinal hemorrhage",
+    "Gastrointestinal infarctions",
+    "Autosomal dominant inheritance",
+    "Pleural effusion",
+    "Papule",
+    "Abnormal conjunctiva morphology",
+    "Constrictive pericarditis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

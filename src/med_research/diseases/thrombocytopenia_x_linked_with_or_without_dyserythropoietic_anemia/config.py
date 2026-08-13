@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'thrombocytopenia, X-linked, with or without dyserythropoietic 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of thrombocytopenia, X-linked, with or without dyserythropoietic anemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Acanthocytosis",
+    "Congenital thrombocytopenia",
+    "Infantile onset",
+    "Variable expressivity",
+    "Persistent bleeding after trauma",
+    "X-linked recessive inheritance",
+    "Petechiae",
+    "Epistaxis",
+    "Poikilocytosis",
+    "Anemia of inadequate production",
+    "Bruising susceptibility",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

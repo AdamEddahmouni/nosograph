@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'congenital radioulnar synostosis (CONGENITAL_RADIOULNAR_SYNOST
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital radioulnar synostosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Radioulnar synostosis",
+    "Autosomal dominant inheritance",
+    "Limited pronation/supination of forearm",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

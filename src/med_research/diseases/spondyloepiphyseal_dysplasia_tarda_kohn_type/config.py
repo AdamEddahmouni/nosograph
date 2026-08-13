@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'spondyloepiphyseal dysplasia tarda, Kohn type (SPONDYLOEPIPHYS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondyloepiphyseal dysplasia tarda, Kohn type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Anterior beaking of lumbar vertebrae",
+    "Autosomal recessive inheritance",
+    "Intellectual disability",
+    "Coxa valga",
+    "Spondyloepiphyseal dysplasia",
+    "Short greater sciatic notch",
+    "Platyspondyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

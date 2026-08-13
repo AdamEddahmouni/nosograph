@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Feingold syndrome type 1 (FEINGOLD_SYNDROME_TYPE_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Feingold syndrome type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "High palate",
+    "Duodenal atresia",
+    "Patent ductus arteriosus",
+    "Depressed nasal tip",
+    "Upslanted palpebral fissure",
+    "Interrupted aortic arch",
+    "Anteverted nares",
+    "Jejunal atresia",
+    "Narrow palpebral fissure",
+    "Short middle phalanx of finger",
+    "Esophageal atresia",
+    "Small anterior fontanelle",
+    "Micrognathia",
+    "Asplenia",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

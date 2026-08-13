@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'multiple congenital anomalies-hypotonia-seizures syndrome 3 (M
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of multiple congenital anomalies-hypotonia-seizures syndrome 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Global developmental delay",
+    "Brachycephaly",
+    "Seizure",
+    "Myoclonic seizure",
+    "Autosomal recessive inheritance",
+    "Hypercalciuria",
+    "Deep philtrum",
+    "Intellectual disability",
+    "Anteverted nares",
+    "Nystagmus",
+    "Renal cyst",
+    "Osteoporosis",
+    "Open mouth",
+    "High forehead",
+    "Cerebral visual impairment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

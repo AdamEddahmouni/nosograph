@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'Emery-Dreifuss muscular dystrophy 7, autosomal dominant (EMERY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Emery-Dreifuss muscular dystrophy 7, autosomal dominant
-SYMPTOMS = []
+SYMPTOMS = [
+    "Adult onset",
+    "Neck muscle weakness",
+    "Muscular dystrophy",
+    "Increased variability in muscle fiber diameter",
+    "Bradycardia",
+    "Skeletal muscle atrophy",
+    "Autosomal dominant inheritance",
+    "Proximal amyotrophy",
+    "Atrial fibrillation",
+    "Slowly progressive",
+    "Proximal muscle weakness",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

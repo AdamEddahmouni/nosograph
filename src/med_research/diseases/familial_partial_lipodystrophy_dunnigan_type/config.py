@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'familial partial lipodystrophy, Dunnigan type (FAMILIAL_PARTIA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial partial lipodystrophy, Dunnigan type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Myopathy",
+    "Generalized lipodystrophy",
+    "Hypertriglyceridemia",
+    "Lipodystrophy",
+    "Acute pancreatitis",
+    "Elevated circulating C-reactive protein concentration",
+    "Acanthosis nigricans",
+    "Insulin resistance",
+    "Young adult onset",
+    "Atherosclerosis",
+    "Exercise-induced myalgia",
+    "Hypertension",
+    "Increased facial adipose tissue",
+    "Progeroid facial appearance",
+    "Childhood onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

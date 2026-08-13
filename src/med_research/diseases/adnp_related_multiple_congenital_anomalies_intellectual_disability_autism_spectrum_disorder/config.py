@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'ADNP-related multiple congenital anomalies - intellectual disa
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ADNP-related multiple congenital anomalies - intellectual disability - autism spectrum disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short 4th toe",
+    "Epicanthus",
+    "Autistic behavior",
+    "Decreased response to growth hormone stimulation test",
+    "Pes planus",
+    "Tapered finger",
+    "Motor stereotypy",
+    "Gliosis",
+    "Broad face",
+    "Facial palsy",
+    "Pineal cyst",
+    "Everted lower lip vermilion",
+    "Infantile onset",
+    "Polydactyly",
+    "Anteverted nares",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

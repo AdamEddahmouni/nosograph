@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'cholestasis, progressive familial intrahepatic, 4 (CHOLESTASIS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cholestasis, progressive familial intrahepatic, 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Infantile onset",
+    "Hepatocellular carcinoma",
+    "Autosomal recessive inheritance",
+    "Intrahepatic cholestasis",
+    "Cirrhosis",
+    "Neonatal onset",
+    "Hepatic failure",
+    "Progressive",
+    "Portal hypertension",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

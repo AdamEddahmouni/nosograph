@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'ALG9-congenital disorder of glycosylation (ALG9_CONGENITAL_DIS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ALG9-congenital disorder of glycosylation
-SYMPTOMS = []
+SYMPTOMS = [
+    "Delayed skeletal maturation",
+    "Epileptic encephalopathy",
+    "Depressed nasal bridge",
+    "Brachycephaly",
+    "Splenomegaly",
+    "Abnormal facial shape",
+    "Long philtrum",
+    "Infantile onset",
+    "Hypocholesterolemia",
+    "Short neck",
+    "Delayed CNS myelination",
+    "Hyperreflexia",
+    "Pericardial effusion",
+    "Cerebral atrophy",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

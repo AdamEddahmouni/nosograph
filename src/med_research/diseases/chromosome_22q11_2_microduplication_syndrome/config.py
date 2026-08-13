@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'chromosome 22q11.2 microduplication syndrome (CHROMOSOME_22Q11
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of chromosome 22q11.2 microduplication syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Microcephaly",
+    "Abnormal pinna morphology",
+    "Specific learning disability",
+    "Intellectual disability",
+    "Low-set ears",
+    "Hypotonia",
+    "Sporadic",
+    "Growth delay",
+    "Abnormal cardiovascular system morphology",
+    "Delayed speech and language development",
+    "Generalized hypotonia",
+    "Autosomal dominant inheritance",
+    "Global developmental delay",
+    "Telecanthus",
+    "High palate",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,13 @@ PIPELINE_LABEL = "Ménière disease (MENIERES_DISEASE)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Ménière disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hearing impairment",
+    "Typified by incomplete penetrance",
+    "Autosomal dominant inheritance",
+    "Vertigo",
+    "Tinnitus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

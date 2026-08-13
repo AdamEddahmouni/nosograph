@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'nephrotic syndrome 16 (NEPHROTIC_SYNDROME_16)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of nephrotic syndrome 16
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nephrotic syndrome",
+    "Minimal change glomerulonephritis",
+    "Proteinuria",
+    "Autosomal recessive inheritance",
+    "Childhood onset",
+    "Hematuria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Mayer-Rokitansky-Küster-Hauser syndrome type 2 (MAYER_ROKITAN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Mayer-Rokitansky-Küster-Hauser syndrome type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cleft palate",
+    "Conductive hearing impairment",
+    "Sprengel anomaly",
+    "Facial asymmetry",
+    "Ectopic kidney",
+    "Cerebellar cyst",
+    "Azoospermia",
+    "Micrognathia",
+    "Abnormality of the vertebral column",
+    "Renal agenesis",
+    "Hypoplasia of the uterus",
+    "Bicornuate uterus",
+    "Cleft upper lip",
+    "Short stature",
+    "Unilateral renal agenesis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

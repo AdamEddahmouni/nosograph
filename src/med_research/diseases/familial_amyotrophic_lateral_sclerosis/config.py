@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'familial amyotrophic lateral sclerosis (FAMILIAL_AMYOTROPHIC_L
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial amyotrophic lateral sclerosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "EMG: positive sharp waves",
+    "Depression",
+    "EMG: chronic denervation signs",
+    "Lower limb spasticity",
+    "Sleep apnea",
+    "Young adult onset",
+    "Upper motor neuron dysfunction",
+    "Tip-toe gait",
+    "Proximal upper limb muscle weakness",
+    "Respiratory insufficiency due to muscle weakness",
+    "Middle age onset",
+    "Upper limb spasticity",
+    "Emotional lability",
+    "Spastic tetraparesis",
+    "Distal lower limb amyotrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

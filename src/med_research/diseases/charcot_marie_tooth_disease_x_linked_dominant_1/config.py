@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Charcot-Marie-Tooth disease X-linked dominant 1 (CHARCOT_MARIE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Charcot-Marie-Tooth disease X-linked dominant 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Distal sensory impairment",
+    "Lower limb hyperreflexia",
+    "Onion bulb formation",
+    "Axonal degeneration",
+    "Sensory neuropathy",
+    "Peripheral neuropathy",
+    "Babinski sign",
+    "Frequent falls",
+    "Decreased motor nerve conduction velocity",
+    "Paraparesis",
+    "Nystagmus",
+    "Distal muscle weakness",
+    "Dysarthria",
+    "Distal lower limb amyotrophy",
+    "Dysphagia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

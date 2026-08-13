@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'leukodystrophy, hypomyelinating, 26, with chondrodysplasia (LE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of leukodystrophy, hypomyelinating, 26, with chondrodysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short stature",
+    "Thin corpus callosum",
+    "Advanced ossification of carpal bones",
+    "Knee dislocation",
+    "Scoliosis",
+    "Hypoplasia of the corpus callosum",
+    "Limb dystonia",
+    "Flat face",
+    "Elbow dislocation",
+    "Delayed CNS myelination",
+    "Adducted thumb",
+    "Cleft palate",
+    "Axial hypotonia",
+    "Cerebellar atrophy",
+    "Hypoplastic cervical vertebrae",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

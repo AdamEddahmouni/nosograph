@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'cardiomyopathy, dilated, 2H (CARDIOMYOPATHY_DILATED_2H)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cardiomyopathy, dilated, 2H
-SYMPTOMS = []
+SYMPTOMS = [
+    "Reduced left ventricular ejection fraction",
+    "Feeding difficulties",
+    "Tachypnea",
+    "Neonatal death",
+    "Neonatal onset",
+    "Muscular ventricular septal defect",
+    "Autosomal recessive inheritance",
+    "Secundum atrial septal defect",
+    "Cardiorespiratory arrest",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

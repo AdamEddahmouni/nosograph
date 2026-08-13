@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'open-angle glaucoma (OPEN_ANGLE_GLAUCOMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of open-angle glaucoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Ocular hypertension",
+    "Increased cup-to-disc ratio",
+    "Open angle glaucoma",
+    "Myopia",
+    "Adult onset",
+    "Glaucomatous visual field defect",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

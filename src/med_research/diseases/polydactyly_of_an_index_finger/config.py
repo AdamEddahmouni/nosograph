@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'polydactyly of an index finger (POLYDACTYLY_OF_AN_INDEX_FINGER
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of polydactyly of an index finger
-SYMPTOMS = []
+SYMPTOMS = [
+    "Triphalangeal thumb",
+    "Autosomal dominant inheritance",
+    "Preaxial polydactyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

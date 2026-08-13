@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'seizures-scoliosis-macrocephaly syndrome (SEIZURES_SCOLIOSIS_M
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of seizures-scoliosis-macrocephaly syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Gastroesophageal reflux",
+    "Cryptorchidism",
+    "Loss of ambulation",
+    "Motor stereotypy",
+    "Congenital onset",
+    "Motor delay",
+    "Hypotonia",
+    "Pes planus",
+    "Seizure",
+    "Clinodactyly of the 5th finger",
+    "Hypoplastic philtrum",
+    "Sparse hair",
+    "Infantile onset",
+    "Poor speech",
+    "Feeding difficulties",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

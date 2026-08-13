@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'chronic myeloproliferative disorder (CHRONIC_MYELOPROLIFERATIV
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of chronic myeloproliferative disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Malignant eosinophil proliferation",
+    "Autosomal dominant inheritance",
+    "Myeloproliferative disorder",
+    "Increased total eosinophil count",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

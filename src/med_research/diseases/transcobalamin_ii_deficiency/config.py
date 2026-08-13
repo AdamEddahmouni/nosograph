@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'transcobalamin II deficiency (TRANSCOBALAMIN_II_DEFICIENCY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of transcobalamin II deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Anemia",
+    "Pancytopenia",
+    "Hyperhomocystinemia",
+    "Decreased circulating IgG concentration",
+    "Failure to thrive",
+    "Decreased circulating IgM concentration",
+    "Diarrhea",
+    "Lethargy",
+    "Ataxia",
+    "Macrocytic anemia",
+    "Decreased circulating IgA concentration",
+    "Autosomal recessive inheritance",
+    "Hypotonia",
+    "HP_0040126",
+    "Methylmalonic aciduria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

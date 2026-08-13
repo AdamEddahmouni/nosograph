@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'lung fibrosis-immunodeficiency-46,XX gonadal dysgenesis syndro
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lung fibrosis-immunodeficiency-46,XX gonadal dysgenesis syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Absent tonsils",
+    "Immunodeficiency",
+    "HP_0005407",
+    "Decreased circulating IgA concentration",
+    "Secundum atrial septal defect",
+    "Abnormal thymus morphology",
+    "Decreased circulating IgG concentration",
+    "Autosomal recessive inheritance",
+    "Gonadal dysgenesis",
+    "Decreased circulating IgM concentration",
+    "Abnormality of the tonsils",
+    "Pulmonary fibrosis",
+    "Decreased total CD8+ T cell proportion",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

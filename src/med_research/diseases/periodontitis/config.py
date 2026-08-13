@@ -8,8 +8,13 @@ PIPELINE_LABEL = "Periodontitis (PERIODONTITIS)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Periodontitis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Gingival recession",
+    "Premature loss of teeth",
+    "Palmoplantar hyperkeratosis",
+    "Autosomal recessive inheritance",
+    "Severe periodontitis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

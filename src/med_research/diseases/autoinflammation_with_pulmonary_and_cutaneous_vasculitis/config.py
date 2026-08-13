@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'autoinflammation with pulmonary and cutaneous vasculitis (AUTO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autoinflammation with pulmonary and cutaneous vasculitis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hepatomegaly",
+    "Neonatal onset",
+    "Purpura",
+    "Interstitial pneumonitis",
+    "Recurrent upper respiratory tract infections",
+    "Anemia",
+    "Respiratory failure",
+    "Autosomal dominant inheritance",
+    "Vasculitis in the skin",
+    "Petechiae",
+    "Restrictive ventilatory defect",
+    "Splenomegaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

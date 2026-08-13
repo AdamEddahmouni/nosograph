@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'corneal dystrophy, Fuchs endothelial, 3 (CORNEAL_DYSTROPHY_FUC
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of corneal dystrophy, Fuchs endothelial, 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Visual impairment",
+    "Corneal stromal edema",
+    "Autosomal dominant inheritance",
+    "Adult onset",
+    "Corneal opacity",
+    "Corneal guttata",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

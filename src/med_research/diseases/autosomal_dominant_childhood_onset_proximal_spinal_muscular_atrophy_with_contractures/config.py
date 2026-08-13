@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autosomal dominant childhood-onset proximal spinal muscular at
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal dominant childhood-onset proximal spinal muscular atrophy with contractures
-SYMPTOMS = []
+SYMPTOMS = [
+    "Scapular winging",
+    "Lower limb muscle weakness",
+    "Hyperreflexia",
+    "Intellectual disability",
+    "Broad-based gait",
+    "Obstructive sleep apnea",
+    "Childhood onset",
+    "Elevated circulating creatine kinase activity",
+    "Infantile onset",
+    "Hip dysplasia",
+    "Hyperlordosis",
+    "Steppage gait",
+    "Juvenile onset",
+    "Decreased Achilles reflex",
+    "Hip contracture",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

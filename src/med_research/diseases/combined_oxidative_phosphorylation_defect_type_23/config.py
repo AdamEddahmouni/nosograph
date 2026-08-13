@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Combined oxidative phosphorylation defect type 23 (COMBINED_OX
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Combined oxidative phosphorylation defect type 23
-SYMPTOMS = []
+SYMPTOMS = [
+    "Juvenile onset",
+    "Dilated cardiomyopathy",
+    "Congenital onset",
+    "Failure to thrive",
+    "Congestive heart failure",
+    "Hypertrophic cardiomyopathy",
+    "Global developmental delay",
+    "Neonatal onset",
+    "Childhood onset",
+    "Autosomal recessive inheritance",
+    "Arrhythmia",
+    "Lactic acidosis",
+    "Feeding difficulties",
+    "Visual impairment",
+    "Infantile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

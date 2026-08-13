@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'hypohidrotic ectodermal dysplasia-hypothyroidism-ciliary dyski
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypohidrotic ectodermal dysplasia-hypothyroidism-ciliary dyskinesia syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Recurrent infections",
+    "Nail dysplasia",
+    "Urticaria",
+    "Abnormal skin pigmentation",
+    "Ciliary dyskinesia",
+    "Autosomal recessive inheritance",
+    "Primary hypothyroidism",
+    "Hypohidrotic ectodermal dysplasia",
+    "Sparse eyebrow",
+    "Sparse scalp hair",
+    "Abnormal respiratory motile cilium morphology",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

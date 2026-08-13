@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'cutaneous mastocytosis (CUTANEOUS_MASTOCYTOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cutaneous mastocytosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Telangiectasia macularis eruptiva perstans",
+    "Cutaneous mastocytosis",
+    "Autosomal dominant inheritance",
+    "Urticaria",
+    "Hypermelanotic macule",
+    "Erythema",
+    "Edema",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

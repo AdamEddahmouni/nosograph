@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'prion disease (PRION_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of prion disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Neurofibrillary tangles",
+    "Autosomal dominant inheritance",
+    "Late young adult onset",
+    "Parkinsonism",
+    "Cerebral cortex with spongiform changes",
+    "Personality changes",
+    "Aggressive behavior",
+    "Dementia",
+    "Hyperorality",
+    "Gliosis",
+    "Middle age onset",
+    "Memory impairment",
+    "Encephalopathy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

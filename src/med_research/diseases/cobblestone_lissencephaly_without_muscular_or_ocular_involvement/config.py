@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'cobblestone lissencephaly without muscular or ocular involveme
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cobblestone lissencephaly without muscular or ocular involvement
-SYMPTOMS = []
+SYMPTOMS = [
+    "Optic atrophy",
+    "Cataract",
+    "Gray matter heterotopia",
+    "Motor delay",
+    "Cerebellar hemisphere hypoplasia",
+    "Leukoencephalopathy",
+    "Porencephalic cyst",
+    "Hypoplasia of the corpus callosum",
+    "Hypoplasia of the brainstem",
+    "Cerebellar vermis hypoplasia",
+    "Subcortical band heterotopia",
+    "Seizure",
+    "Intellectual disability",
+    "Hydrocephalus",
+    "Progressive",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

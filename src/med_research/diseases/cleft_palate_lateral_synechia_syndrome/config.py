@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'cleft palate-lateral synechia syndrome (CLEFT_PALATE_LATERAL_S
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cleft palate-lateral synechia syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Cleft palate",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

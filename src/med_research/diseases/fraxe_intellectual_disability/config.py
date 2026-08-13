@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'FRAXE intellectual disability (FRAXE_INTELLECTUAL_DISABILITY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of FRAXE intellectual disability
-SYMPTOMS = []
+SYMPTOMS = [
+    "Aggressive behavior",
+    "Long upper lip",
+    "Short stature",
+    "Stereotypical body rocking",
+    "Hoarse voice",
+    "Hyperactivity",
+    "Recurrent hand flapping",
+    "Intellectual disability",
+    "HP_0002370",
+    "Epicanthus",
+    "Fetal distress",
+    "Intrauterine growth retardation",
+    "Thick vermilion border",
+    "Impulsivity",
+    "Compulsive behaviors",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

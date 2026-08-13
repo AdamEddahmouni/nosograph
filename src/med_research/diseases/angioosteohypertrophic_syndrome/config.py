@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDRO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of angioosteohypertrophic syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sporadic",
+    "Hemihypertrophy",
+    "Seizure",
+    "Hand polydactyly",
+    "Intellectual disability",
+    "Finger aplasia",
+    "Lymphedema",
+    "Hemangioma",
+    "Glaucoma",
+    "Lymphangioma",
+    "Macrodactyly",
+    "Abnormality of blood and blood-forming tissues",
+    "Hyperpigmented nevi and streak",
+    "Arteriovenous fistula",
+    "Syndactyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'juvenile primary lateral sclerosis (JUVENILE_PRIMARY_LATERAL_S
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of juvenile primary lateral sclerosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Childhood onset",
+    "Abnormal upper motor neuron morphology",
+    "Slowly progressive",
+    "Loss of ambulation",
+    "Tongue muscle weakness",
+    "Pseudobulbar affect",
+    "Spasticity of facial muscles",
+    "Babinski sign",
+    "Saccadic smooth pursuit interruptions",
+    "Tongue spasticity",
+    "Pallor",
+    "Cerebral cortical atrophy",
+    "Hyperreflexia",
+    "Spastic gait",
+    "Appendicular spasticity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

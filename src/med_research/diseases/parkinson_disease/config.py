@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Parkinson disease (PARKINSON_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Parkinson disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Neuronal loss in central nervous system",
+    "Tremor",
+    "Urinary urgency",
+    "Resting tremor",
+    "Postural instability",
+    "Personality changes",
+    "Bradykinesia",
+    "Short stepped shuffling gait",
+    "Progressive",
+    "Slowly progressive",
+    "Restless legs",
+    "Sleep disturbance",
+    "Rigidity",
+    "Dystonia",
+    "Mask-like facies",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

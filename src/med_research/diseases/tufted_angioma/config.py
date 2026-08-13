@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'tufted angioma (TUFTED_ANGIOMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of tufted angioma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Tufted angioma",
+    "Vascular skin abnormality",
+    "Typified by incomplete penetrance",
+    "Autosomal dominant inheritance",
+    "Abnormal skin pigmentation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

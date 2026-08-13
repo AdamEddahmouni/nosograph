@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Charcot-Marie-Tooth Disease, axonal, type 2GG (CHARCOT_MARIE_T
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Charcot-Marie-Tooth Disease, axonal, type 2GG
-SYMPTOMS = []
+SYMPTOMS = [
+    "Steppage gait",
+    "Hammertoe",
+    "Gait disturbance",
+    "Muscle spasm",
+    "Middle age onset",
+    "Distal amyotrophy",
+    "Onion bulb formation",
+    "Autosomal dominant inheritance",
+    "Segmental peripheral demyelination",
+    "Motor delay",
+    "Hyporeflexia",
+    "Axonal degeneration/regeneration",
+    "Dysarthria",
+    "Young adult onset",
+    "Distal muscle weakness",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

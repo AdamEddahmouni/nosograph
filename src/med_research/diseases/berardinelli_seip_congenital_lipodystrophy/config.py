@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Berardinelli-Seip congenital lipodystrophy (BERARDINELLI_SEIP_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Berardinelli-Seip congenital lipodystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Diabetes mellitus",
+    "Hypertrophic cardiomyopathy",
+    "Primary amenorrhea",
+    "Cystic angiomatosis of bone",
+    "Accelerated skeletal maturation",
+    "Reduced intrathoracic adipose tissue",
+    "Splenomegaly",
+    "Clitoral hypertrophy",
+    "Insulin resistance",
+    "Congenital onset",
+    "Type II diabetes mellitus",
+    "Polycystic ovaries",
+    "Acute pancreatitis",
+    "Hepatomegaly",
+    "Mild intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

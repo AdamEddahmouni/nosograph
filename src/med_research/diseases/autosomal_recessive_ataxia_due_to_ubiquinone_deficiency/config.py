@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autosomal recessive ataxia due to ubiquinone deficiency (AUTOS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal recessive ataxia due to ubiquinone deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ptosis",
+    "Generalized tonic seizure",
+    "Axial hypotonia",
+    "Strabismus",
+    "Increased CSF lactate",
+    "Epilepsia partialis continua",
+    "Tremor",
+    "Autosomal recessive inheritance",
+    "Elevated lactate:pyruvate ratio",
+    "Increased circulating lactate concentration",
+    "Proximal muscle weakness",
+    "Seizure",
+    "Decreased level of coenzyme Q10 in skeletal muscle",
+    "Pes cavus",
+    "Childhood onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

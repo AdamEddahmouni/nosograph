@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'McLeod neuroacanthocytosis syndrome (MCLEOD_NEUROACANTHOCYTOSI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of McLeod neuroacanthocytosis syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Acanthocytosis",
+    "Cardiomyopathy",
+    "Motor axonal neuropathy",
+    "Anxiety",
+    "Decreased circulating haptoglobin concentration",
+    "Splenomegaly",
+    "Generalized-onset seizure",
+    "Seizure",
+    "Hepatomegaly",
+    "Rhabdomyolysis",
+    "X-linked inheritance",
+    "Impaired vibration sensation at ankles",
+    "Elevated circulating alanine aminotransferase concentration",
+    "Elevated gamma-glutamyltransferase level",
+    "Elevated circulating creatine kinase activity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'brachydactyly type A2 (BRACHYDACTYLY_TYPE_A2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of brachydactyly type A2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Radial deviation of the 2nd finger",
+    "Medially deviated second toe",
+    "Short hallux",
+    "Short middle phalanx of the 5th finger",
+    "Aplasia/Hypoplasia of the middle phalanx of the 5th finger",
+    "Broad hallux",
+    "Short 2nd finger",
+    "Autosomal dominant inheritance",
+    "2-3 toe syndactyly",
+    "Hallux valgus",
+    "Triangular shaped middle phalanx of the 5th finger",
+    "Clinodactyly of the 5th finger",
+    "Triangular shaped middle phalanx of the 2nd finger",
+    "Ulnar deviation of the 2nd finger",
+    "Aplasia/Hypoplasia of the middle phalanx of the 2nd finger",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

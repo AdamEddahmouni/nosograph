@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hyperparathyroidism 2 with jaw tumors (HYPERPARATHYROIDISM_2_W
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hyperparathyroidism 2 with jaw tumors
-SYMPTOMS = []
+SYMPTOMS = [
+    "Parathyroid adenoma",
+    "Renal cortical adenoma",
+    "Hamartoma",
+    "Pancreatic adenocarcinoma",
+    "Autosomal dominant inheritance",
+    "Papillary renal cell carcinoma",
+    "Parathyroid carcinoma",
+    "Hypercalcemia",
+    "Recurrent pancreatitis",
+    "Nephroblastoma",
+    "Hurthle cell thyroid adenoma",
+    "Kidney stone",
+    "Abnormality of the head",
+    "Hyperparathyroidism",
+    "Polycystic kidney dysplasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

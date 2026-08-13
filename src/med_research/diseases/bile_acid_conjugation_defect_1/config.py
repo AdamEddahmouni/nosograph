@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'bile acid conjugation defect 1 (BILE_ACID_CONJUGATION_DEFECT_1
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of bile acid conjugation defect 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated circulating aspartate aminotransferase concentration",
+    "Elevated circulating alanine aminotransferase concentration",
+    "Hepatomegaly",
+    "Conjugated hyperbilirubinemia",
+    "Rickets",
+    "Hepatic failure",
+    "Infantile onset",
+    "Autosomal recessive inheritance",
+    "Jaundice",
+    "Childhood onset",
+    "Juvenile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

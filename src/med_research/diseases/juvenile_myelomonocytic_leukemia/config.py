@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'Juvenile Myelomonocytic Leukemia (JUVENILE_MYELOMONOCYTIC_LEUK
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Juvenile Myelomonocytic Leukemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Typified by somatic mosaicism",
+    "Juvenile myelomonocytic leukemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

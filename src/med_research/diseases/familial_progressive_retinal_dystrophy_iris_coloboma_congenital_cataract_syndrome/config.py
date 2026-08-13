@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'familial progressive retinal dystrophy-iris coloboma-congenita
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial progressive retinal dystrophy-iris coloboma-congenital cataract syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Posterior synechiae of the anterior chamber",
+    "Reduced visual acuity",
+    "Developmental cataract",
+    "Retinal atrophy",
+    "Iris coloboma",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

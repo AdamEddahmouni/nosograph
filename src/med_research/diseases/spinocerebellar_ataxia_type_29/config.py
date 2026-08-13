@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spinocerebellar ataxia type 29 (SPINOCEREBELLAR_ATAXIA_TYPE_29
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spinocerebellar ataxia type 29
-SYMPTOMS = []
+SYMPTOMS = [
+    "High palate",
+    "Neonatal hypotonia",
+    "Progressive",
+    "Broad-based gait",
+    "Abnormal saccadic eye movements",
+    "Prominent calcaneus",
+    "Decreased body weight",
+    "Abnormality of ocular smooth pursuit",
+    "Echolalia",
+    "Prominent nose",
+    "Proximal muscle weakness",
+    "Brisk reflexes",
+    "Nystagmus",
+    "Delayed fine motor development",
+    "Renal hypoplasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

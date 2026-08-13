@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'amyotrophic lateral sclerosis type 5 (AMYOTROPHIC_LATERAL_SCLE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of amyotrophic lateral sclerosis type 5
-SYMPTOMS = []
+SYMPTOMS = [
+    "Young adult onset",
+    "Urinary incontinence",
+    "Dysarthria",
+    "Abnormal pyramidal sign",
+    "Spasticity",
+    "Bulbar signs",
+    "Autosomal recessive inheritance",
+    "Slowly progressive",
+    "Babinski sign",
+    "Fasciculations",
+    "Juvenile onset",
+    "Thin corpus callosum",
+    "Amyotrophic lateral sclerosis",
+    "Abnormal lower motor neuron morphology",
+    "Respiratory insufficiency due to muscle weakness",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

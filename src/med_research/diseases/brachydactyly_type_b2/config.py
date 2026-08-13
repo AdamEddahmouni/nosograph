@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'brachydactyly type B2 (BRACHYDACTYLY_TYPE_B2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of brachydactyly type B2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Aplasia/Hypoplasia of the nails",
+    "Aplasia/Hypoplasia of the middle phalanges of the hand",
+    "Absent phalangeal crease",
+    "Aplasia/Hypoplasia of the distal phalanges of the toes",
+    "Aplasia/Hypoplasia of the distal phalanges of the hand",
+    "Cutaneous finger syndactyly",
+    "Hypermetropia",
+    "Short distal phalanx of finger",
+    "Proximal finger symphalangism",
+    "Cutaneous syndactyly of toes",
+    "Short 1st metacarpal",
+    "Aplasia/Hypoplasia of the middle phalanges of the toes",
+    "Distal finger symphalangism",
+    "Tarsal synostosis",
+    "Sensorineural hearing impairment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mandibular hypoplasia-deafness-progeroid syndrome (MANDIBULAR_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mandibular hypoplasia-deafness-progeroid syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypertriglyceridemia",
+    "Elevated circulating hepatic transaminase concentration",
+    "Lack of skin elasticity",
+    "Kyphosis",
+    "Insulin resistance",
+    "Diabetes mellitus",
+    "Osteoporosis",
+    "Proptosis",
+    "Lipodystrophy",
+    "Loss of subcutaneous adipose tissue in limbs",
+    "Bird-like facies",
+    "Elevated circulating alanine aminotransferase concentration",
+    "Male hypogonadism",
+    "Joint contracture",
+    "Hepatomegaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

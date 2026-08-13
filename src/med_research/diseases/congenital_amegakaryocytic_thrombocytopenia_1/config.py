@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'congenital amegakaryocytic thrombocytopenia 1 (CONGENITAL_AMEG
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital amegakaryocytic thrombocytopenia 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pancytopenia",
+    "Megakaryocytopenia",
+    "Thrombocytopenia",
+    "Cerebellar vermis hypoplasia",
+    "Amegakaryocytic thrombocytopenia",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

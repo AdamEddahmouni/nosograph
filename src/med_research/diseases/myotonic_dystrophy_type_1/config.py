@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'myotonic dystrophy type 1 (MYOTONIC_DYSTROPHY_TYPE_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of myotonic dystrophy type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cataract",
+    "First degree atrioventricular block",
+    "Cholelithiasis",
+    "Severe intellectual disability",
+    "HP_0006887",
+    "Atrial fibrillation",
+    "Facial diplegia",
+    "Cerebral atrophy",
+    "Autosomal dominant inheritance",
+    "Excessive daytime somnolence",
+    "Atrial flutter",
+    "Decreased fetal movement",
+    "Muscle weakness",
+    "Frontal balding",
+    "Polyhydramnios",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

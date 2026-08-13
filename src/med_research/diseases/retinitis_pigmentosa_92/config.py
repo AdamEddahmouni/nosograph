@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'retinitis pigmentosa 92 (RETINITIS_PIGMENTOSA_92)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of retinitis pigmentosa 92
-SYMPTOMS = []
+SYMPTOMS = [
+    "Paracentral scotoma",
+    "Young adult onset",
+    "Middle age onset",
+    "Autosomal recessive inheritance",
+    "Pigmentary retinopathy",
+    "Nyctalopia",
+    "Visual impairment",
+    "Constriction of peripheral visual field",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

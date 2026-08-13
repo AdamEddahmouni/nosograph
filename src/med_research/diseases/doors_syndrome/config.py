@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'DOORS syndrome (DOORS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of DOORS syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypotonia",
+    "Ptosis",
+    "Dandy-Walker malformation",
+    "Low-set ears",
+    "Ventricular septal defect",
+    "Gingival overgrowth",
+    "Increased urine alpha-ketoglutarate concentration",
+    "Long philtrum",
+    "Blindness",
+    "Patent ductus arteriosus",
+    "Downturned corners of mouth",
+    "Thin upper lip vermilion",
+    "Polyneuropathy",
+    "Epicanthus",
+    "Clinodactyly of the 5th finger",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

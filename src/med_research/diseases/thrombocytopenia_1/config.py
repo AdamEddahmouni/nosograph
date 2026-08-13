@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'thrombocytopenia 1 (THROMBOCYTOPENIA_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of thrombocytopenia 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Epistaxis",
+    "X-linked recessive inheritance",
+    "Decreased mean platelet volume",
+    "Abnormality of the musculature",
+    "Increased circulating IgA concentration",
+    "Joint hemorrhage",
+    "Eczematoid dermatitis",
+    "Petechiae",
+    "Increased circulating IgE concentration",
+    "Intermittent thrombocytopenia",
+    "Bruising susceptibility",
+    "Congenital thrombocytopenia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

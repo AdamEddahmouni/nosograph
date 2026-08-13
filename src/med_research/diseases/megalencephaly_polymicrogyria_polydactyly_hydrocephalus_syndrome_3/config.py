@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'megalencephaly-polymicrogyria-polydactyly-hydrocephalus syndro
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of megalencephaly-polymicrogyria-polydactyly-hydrocephalus syndrome 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hydrocephalus",
+    "Ventriculomegaly",
+    "Macrocephaly",
+    "Absent speech",
+    "Severe intellectual disability",
+    "Polymicrogyria",
+    "Postaxial hand polydactyly",
+    "Syndactyly",
+    "Megalencephaly",
+    "Autosomal dominant inheritance",
+    "Global developmental delay",
+    "Prominent forehead",
+    "Thick corpus callosum",
+    "Congenital onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

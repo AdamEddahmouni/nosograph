@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'rhizomelic chondrodysplasia punctata type 2 (RHIZOMELIC_CHONDR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of rhizomelic chondrodysplasia punctata type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Optic nerve hypoplasia",
+    "Stippled calcification proximal humeral epiphyses",
+    "Irregular vertebral endplates",
+    "Tetralogy of Fallot",
+    "Rhizomelia",
+    "Cataract",
+    "Disproportionate short stature",
+    "Anteverted nares",
+    "Knee contracture",
+    "Failure to thrive",
+    "High forehead",
+    "Midface retrusion",
+    "Large fontanelles",
+    "Flexion contracture",
+    "High palate",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

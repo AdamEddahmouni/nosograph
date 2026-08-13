@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'pancreatic agenesis 1 (PANCREATIC_AGENESIS_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pancreatic agenesis 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Neonatal insulin-dependent diabetes mellitus",
+    "Fetal onset",
+    "Failure to thrive",
+    "Oligohydramnios",
+    "Autosomal recessive inheritance",
+    "Intrauterine growth retardation",
+    "Decreased circulating C-peptide concentration",
+    "Congenital onset",
+    "Pancreatic aplasia",
+    "Exocrine pancreatic insufficiency",
+    "Pancreatic hypoplasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

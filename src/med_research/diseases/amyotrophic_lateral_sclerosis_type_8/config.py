@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'amyotrophic lateral sclerosis type 8 (AMYOTROPHIC_LATERAL_SCLE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of amyotrophic lateral sclerosis type 8
-SYMPTOMS = []
+SYMPTOMS = [
+    "Muscle spasm",
+    "Loss of ambulation",
+    "Proximal muscle weakness",
+    "Abnormal pyramidal sign",
+    "Abnormal pyramidal tract morphology",
+    "Skeletal muscle atrophy",
+    "Distal amyotrophy",
+    "Areflexia",
+    "Amyotrophic lateral sclerosis",
+    "Autosomal dominant inheritance",
+    "Dysphagia",
+    "Middle age onset",
+    "Fasciculations",
+    "Young adult onset",
+    "Postural tremor",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'genitopatellar syndrome (GENITOPATELLAR_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of genitopatellar syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cryptorchidism",
+    "Pulmonary hypoplasia",
+    "Autosomal dominant inheritance",
+    "Microcephaly",
+    "Thin corpus callosum",
+    "Generalized hypotonia",
+    "Wide nose",
+    "Feeding difficulties",
+    "Downslanted palpebral fissures",
+    "Coarse facial features",
+    "Radioulnar synostosis",
+    "Periventricular heterotopia",
+    "Dysphagia",
+    "Multicystic kidney dysplasia",
+    "Short phalanx of finger",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

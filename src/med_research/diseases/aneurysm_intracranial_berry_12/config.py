@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'aneurysm, intracranial berry, 12 (ANEURYSM_INTRACRANIAL_BERRY_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of aneurysm, intracranial berry, 12
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Fusiform cerebral aneurysm",
+    "Internal carotid artery dissection",
+    "Late onset",
+    "Cerebral berry aneurysm",
+    "Middle age onset",
+    "Arterial fibromuscular dysplasia",
+    "Subarachnoid hemorrhage",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

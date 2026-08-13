@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'transient familial neonatal hyperbilirubinemia (TRANSIENT_FAMI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of transient familial neonatal hyperbilirubinemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Kernicterus",
+    "Jaundice",
+    "Neonatal onset",
+    "Autosomal recessive inheritance",
+    "Neonatal unconjugated hyperbilirubinemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

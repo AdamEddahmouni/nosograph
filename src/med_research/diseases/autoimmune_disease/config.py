@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autoimmune disease (AUTOIMMUNE_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autoimmune disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Desquamative interstitial pneumonitis",
+    "Decreased circulating immunoglobulin concentration",
+    "Childhood onset",
+    "Interstitial pneumonitis",
+    "Increased CD4:CD8 ratio",
+    "Eczematoid dermatitis",
+    "Recurrent upper respiratory tract infections",
+    "Abnormal intestine morphology",
+    "Autosomal dominant inheritance",
+    "Podocyte foot process effacement",
+    "Nephrotic syndrome",
+    "Hepatosplenomegaly",
+    "Achalasia",
+    "Polyarticular arthritis",
+    "Celiac disease",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

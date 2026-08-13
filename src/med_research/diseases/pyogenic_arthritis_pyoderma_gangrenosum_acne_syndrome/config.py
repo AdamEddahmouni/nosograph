@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'pyogenic arthritis-pyoderma gangrenosum-acne syndrome (PYOGENI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pyogenic arthritis-pyoderma gangrenosum-acne syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cellulitis",
+    "Arthritis",
+    "Elbow flexion contracture",
+    "Knee flexion contracture",
+    "Acne",
+    "Sterile arthritis",
+    "Microcytic anemia",
+    "Cystic acne",
+    "Pancytopenia",
+    "Colitis",
+    "Autosomal dominant inheritance",
+    "Pyoderma gangrenosum",
+    "Allergy",
+    "Elevated circulating C-reactive protein concentration",
+    "Hepatosplenomegaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

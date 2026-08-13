@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'contractures, pterygia, and spondylocarpotarsal fusion syndrom
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of contractures, pterygia, and spondylocarpotarsal fusion syndrome 1A
-SYMPTOMS = []
+SYMPTOMS = [
+    "Spondylolisthesis",
+    "Cutaneous finger syndactyly",
+    "Posteriorly rotated ears",
+    "Cleft palate",
+    "Autosomal dominant inheritance",
+    "Long nasal bridge",
+    "Ptosis",
+    "Carpal synostosis",
+    "Elbow contracture",
+    "Ventricular septal defect",
+    "Popliteal pterygium",
+    "Knee flexion contracture",
+    "Hemivertebrae",
+    "Barrel-shaped chest",
+    "Arthrogryposis multiplex congenita",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

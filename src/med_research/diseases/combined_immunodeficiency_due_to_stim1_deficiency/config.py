@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'combined immunodeficiency due to STIM1 deficiency (COMBINED_IM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of combined immunodeficiency due to STIM1 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Neonatal onset",
+    "Decreased circulating IgA concentration",
+    "Hypotonia",
+    "Recurrent infections",
+    "Myopathy",
+    "Immunodeficiency",
+    "Splenomegaly",
+    "Lymphadenopathy",
+    "Hypohidrosis",
+    "Kaposi's sarcoma",
+    "Recurrent otitis media",
+    "Recurrent pneumonia",
+    "Autosomal recessive inheritance",
+    "Sepsis",
+    "Amelogenesis imperfecta",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

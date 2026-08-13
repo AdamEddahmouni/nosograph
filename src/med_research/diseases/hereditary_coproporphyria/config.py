@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hereditary coproporphyria (HEREDITARY_COPROPORPHYRIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hereditary coproporphyria
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased urinary porphobilinogen",
+    "Confusion",
+    "Insomnia",
+    "Hepatomegaly",
+    "Vomiting",
+    "Hypertension",
+    "Autosomal dominant inheritance",
+    "Peripheral neuropathy",
+    "Cutaneous photosensitivity",
+    "Diarrhea",
+    "Paranoia",
+    "Elevated urinary delta-aminolevulinic acid",
+    "Abdominal pain",
+    "Acute episodes of neuropathic symptoms",
+    "Depression",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

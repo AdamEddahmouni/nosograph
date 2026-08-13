@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Frank-Ter Haar syndrome (FRANK_TER_HAAR_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Frank-Ter Haar syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Depressed nasal bridge",
+    "Patent foramen ovale",
+    "Prominent forehead",
+    "Redundant neck skin",
+    "Kyphoscoliosis",
+    "Downslanted palpebral fissures",
+    "Megalocornea",
+    "Growth delay",
+    "Talipes equinovarus",
+    "Low-set ears",
+    "Anterior concavity of thoracic vertebrae",
+    "Flat occiput",
+    "Short phalanx of finger",
+    "Cortical irregularity",
+    "Full cheeks",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

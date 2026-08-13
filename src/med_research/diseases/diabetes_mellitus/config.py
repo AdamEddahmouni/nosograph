@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'diabetes mellitus (DIABETES_MELLITUS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of diabetes mellitus
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Autoimmunity",
+    "Beta-cell dysfunction",
+    "Ketoacidosis",
+    "Autosomal recessive inheritance",
+    "Insulin resistance",
+    "Diabetes mellitus",
+    "Non-Mendelian inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

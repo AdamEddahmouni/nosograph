@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'obesity due to prohormone convertase I deficiency (OBESITY_DUE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of obesity due to prohormone convertase I deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Obesity",
+    "Hypogonadotropic hypogonadism",
+    "Villous atrophy",
+    "Diarrhea",
+    "Primary amenorrhea",
+    "Autosomal recessive inheritance",
+    "Hypoinsulinemia",
+    "Childhood onset",
+    "Decreased circulating cortisol level",
+    "Elevated circulating proinsulin concentration",
+    "Malabsorption",
+    "Reactive hypoglycemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Nager acrofacial dysostosis (NAGER_ACROFACIAL_DYSOSTOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Nager acrofacial dysostosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormality of the cervical spine",
+    "Atresia of the external auditory canal",
+    "Abnormal thumb morphology",
+    "Aplasia/Hypoplasia of the thumb",
+    "Radioulnar synostosis",
+    "Short stature",
+    "Malar flattening",
+    "Hypoplasia of the epiglottis",
+    "Autosomal dominant inheritance",
+    "Retrognathia",
+    "Limited elbow extension",
+    "Hallux valgus",
+    "Preauricular hair displacement",
+    "Microcephaly",
+    "Velopharyngeal insufficiency",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Silver-Russell syndrome (SILVER_RUSSELL_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Silver-Russell syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Clinodactyly of the 5th finger",
+    "Melanocytic nevus",
+    "Hepatocellular carcinoma",
+    "Blue sclerae",
+    "Frontal bossing",
+    "Prominent forehead",
+    "Testicular seminoma",
+    "Antecubital pterygium",
+    "Craniofacial disproportion",
+    "Small for gestational age",
+    "Fasting hypoglycemia",
+    "Penoscrotal hypospadias",
+    "Patent ductus arteriosus",
+    "Small hand",
+    "Nephroblastoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

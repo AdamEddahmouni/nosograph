@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Cri-du-chat syndrome (CRI_DU_CHAT_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Cri-du-chat syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Syndactyly",
+    "Small for gestational age",
+    "Thick lower lip vermilion",
+    "Neonatal hypotonia",
+    "Pes planus",
+    "Sporadic",
+    "Downslanted palpebral fissures",
+    "Abnormal cardiovascular system morphology",
+    "Gastroesophageal reflux",
+    "High axial triradius",
+    "Short neck",
+    "Anxiety",
+    "Metatarsus adductus",
+    "Echolalia",
+    "Hypospadias",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

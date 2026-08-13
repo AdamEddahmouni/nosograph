@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'esophageal adenocarcinoma (ESOPHAGEAL_ADENOCARCINOMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of esophageal adenocarcinoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Barrett esophagus",
+    "Autosomal dominant inheritance",
+    "Gastroesophageal reflux",
+    "Esophageal neoplasm",
+    "Esophagitis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'Leber-like hereditary optic neuropathy, autosomal recessive 2 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Leber-like hereditary optic neuropathy, autosomal recessive 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Red-green dyschromatopsia",
+    "Optic atrophy",
+    "Juvenile onset",
+    "Centrocecal scotoma",
+    "Autosomal recessive inheritance",
+    "Intermediate young adult onset",
+    "Progressive visual loss",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

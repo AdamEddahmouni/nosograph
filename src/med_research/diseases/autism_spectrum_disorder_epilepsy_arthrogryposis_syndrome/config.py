@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autism spectrum disorder - epilepsy - arthrogryposis syndrome 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autism spectrum disorder - epilepsy - arthrogryposis syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hip dislocation",
+    "Global developmental delay",
+    "Scoliosis",
+    "Autosomal recessive inheritance",
+    "Microretrognathia",
+    "Microcephaly",
+    "Autistic behavior",
+    "Camptodactyly of finger",
+    "Generalized hypotonia",
+    "Acetabular dysplasia",
+    "Congenital onset",
+    "Knee dislocation",
+    "Arthrogryposis multiplex congenita",
+    "Fetal onset",
+    "Focal motor seizure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

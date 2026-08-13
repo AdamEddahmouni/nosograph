@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'nemaline myopathy 7 (NEMALINE_MYOPATHY_7)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of nemaline myopathy 7
-SYMPTOMS = []
+SYMPTOMS = [
+    "Genu recurvatum",
+    "Limb muscle weakness",
+    "Shoulder girdle muscle weakness",
+    "Increased endomysial connective tissue",
+    "Areflexia",
+    "Gowers sign",
+    "Increased variability in muscle fiber diameter",
+    "Elevated circulating creatine kinase activity",
+    "Type 1 muscle fiber predominance",
+    "Abnormally low-pitched voice",
+    "Gait disturbance",
+    "Childhood onset",
+    "Respiratory insufficiency due to muscle weakness",
+    "Minicore myopathy",
+    "Delayed gross motor development",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

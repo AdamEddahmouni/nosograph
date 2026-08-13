@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'alpha-mannosidosis (ALPHA_MANNOSIDOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of alpha-mannosidosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Splenomegaly",
+    "Delayed myelination",
+    "Gingival overgrowth",
+    "Corpus callosum atrophy",
+    "Spondylolisthesis",
+    "Broad forehead",
+    "Retinal degeneration",
+    "Midface retrusion",
+    "Vacuolated lymphocytes",
+    "Autosomal recessive inheritance",
+    "Mandibular prognathia",
+    "Hyperreflexia",
+    "Inguinal hernia",
+    "Low anterior hairline",
+    "Decreased circulating immunoglobulin concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

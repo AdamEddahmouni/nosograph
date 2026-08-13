@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mucolipidosis type II
-SYMPTOMS = []
+SYMPTOMS = [
+    "Wide mouth",
+    "Bullet-shaped phalanges of the hand",
+    "Neonatal hypotonia",
+    "Craniosynostosis",
+    "Inguinal hernia",
+    "Hoarse voice",
+    "Metaphyseal widening",
+    "Delayed ability to walk",
+    "Death in childhood",
+    "Increased iduronate sulfatase level",
+    "Megalocornea",
+    "Pectus excavatum",
+    "Atlantoaxial dislocation",
+    "Flared iliac wing",
+    "Coxa valga",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

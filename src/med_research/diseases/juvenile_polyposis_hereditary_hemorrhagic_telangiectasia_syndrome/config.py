@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'juvenile polyposis/hereditary hemorrhagic telangiectasia syndr
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of juvenile polyposis/hereditary hemorrhagic telangiectasia syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Mitral regurgitation",
+    "Juvenile gastrointestinal polyposis",
+    "Mitral valve prolapse",
+    "Aortic dissection",
+    "Hamartomatous polyposis",
+    "Telangiectasia",
+    "Clubbing",
+    "Anemia",
+    "Gastrointestinal carcinoma",
+    "Stroke",
+    "Epistaxis",
+    "Hematochezia",
+    "Hepatic arteriovenous malformation",
+    "Aortic aneurysm",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

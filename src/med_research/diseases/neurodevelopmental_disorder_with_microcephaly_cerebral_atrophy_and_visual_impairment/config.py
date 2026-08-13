@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neurodevelopmental disorder with microcephaly, cerebral atroph
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neurodevelopmental disorder with microcephaly, cerebral atrophy, and visual impairment
-SYMPTOMS = []
+SYMPTOMS = [
+    "Atonic seizure",
+    "Truncal ataxia",
+    "Thin corpus callosum",
+    "Congestive heart failure",
+    "Bilateral tonic-clonic seizure",
+    "Increased nuchal translucency",
+    "Global developmental delay",
+    "Ventriculomegaly",
+    "Generalized-onset seizure",
+    "Strabismus",
+    "Hypotonia",
+    "Bicuspid aortic valve",
+    "Secundum atrial septal defect",
+    "Nystagmus",
+    "Aortic regurgitation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

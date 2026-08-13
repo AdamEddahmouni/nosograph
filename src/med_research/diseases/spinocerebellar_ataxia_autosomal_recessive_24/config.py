@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'spinocerebellar ataxia, autosomal recessive 24 (SPINOCEREBELLA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spinocerebellar ataxia, autosomal recessive 24
-SYMPTOMS = []
+SYMPTOMS = [
+    "Gait ataxia",
+    "Limb ataxia",
+    "Childhood onset",
+    "Spastic gait",
+    "Cataract",
+    "Horizontal nystagmus",
+    "Dysarthria",
+    "Juvenile onset",
+    "Cerebellar atrophy",
+    "Progressive",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

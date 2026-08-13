@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hemochromatosis type 2B (HEMOCHROMATOSIS_TYPE_2B)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hemochromatosis type 2B
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Hepatic fibrosis",
+    "Elevated circulating iron concentration",
+    "Young adult onset",
+    "Secondary amenorrhea",
+    "Elevated circulating hepatic transaminase concentration",
+    "Hepatomegaly",
+    "Increased circulating ferritin concentration",
+    "Cirrhosis",
+    "Hypogonadism",
+    "Congestive heart failure",
+    "Hyperpigmentation of the skin",
+    "Anemia",
+    "Cardiomyopathy",
+    "Elevated transferrin saturation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

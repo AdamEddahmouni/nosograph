@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'atransferrinemia (ATRANSFERRINEMIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of atransferrinemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypochromic anemia",
+    "Autosomal recessive inheritance",
+    "Atransferrinemia",
+    "Abnormality of the liver",
+    "Congestive heart failure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

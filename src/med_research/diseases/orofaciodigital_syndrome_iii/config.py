@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'orofaciodigital syndrome III (OROFACIODIGITAL_SYNDROME_III)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of orofaciodigital syndrome III
-SYMPTOMS = []
+SYMPTOMS = [
+    "Postaxial hand polydactyly",
+    "Kyphosis",
+    "Tongue nodules",
+    "Pectus excavatum",
+    "Postaxial foot polydactyly",
+    "Bifid tongue",
+    "Microdontia",
+    "Bifid uvula",
+    "Hyperconvex nail",
+    "Myoclonus",
+    "Supernumerary tooth",
+    "Autosomal recessive inheritance",
+    "Intellectual disability",
+    "Low-set ears",
+    "Bulbous nose",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

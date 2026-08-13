@@ -8,8 +8,21 @@ PIPELINE_LABEL = '3-methylglutaconic aciduria type 4 (3_METHYLGLUTACONIC_ACIDURI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of 3-methylglutaconic aciduria type 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Neonatal respiratory distress",
+    "Areflexia",
+    "Cryptorchidism",
+    "Neonatal hypotonia",
+    "Cerebellar dysplasia",
+    "Inguinal hernia",
+    "Autosomal recessive inheritance",
+    "Global developmental delay",
+    "Severe global developmental delay",
+    "Subvalvular aortic stenosis",
+    "Biventricular hypertrophy",
+    "3-Methylglutaric aciduria",
+    "Single transverse palmar crease",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

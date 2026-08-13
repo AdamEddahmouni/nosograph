@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'MIRAGE syndrome (MIRAGE_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of MIRAGE syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypergonadotropic hypogonadism",
+    "Infantile onset",
+    "Short stature",
+    "Decreased testicular size",
+    "Hyponatremia",
+    "Myelodysplasia",
+    "Neonatal onset",
+    "Decreased total leukocyte count",
+    "Aspiration pneumonia",
+    "Seizure",
+    "Talipes equinovarus",
+    "HP_0004059",
+    "Chronic diarrhea",
+    "Shawl scrotum",
+    "Motor delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

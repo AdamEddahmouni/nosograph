@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'glycosylphosphatidylinositol biosynthesis defect 15 (GLYCOSYLP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of glycosylphosphatidylinositol biosynthesis defect 15
-SYMPTOMS = []
+SYMPTOMS = [
+    "Anteverted nares",
+    "Nystagmus",
+    "Optic atrophy",
+    "Autosomal recessive inheritance",
+    "Generalized non-motor (absence) seizure",
+    "Atonic seizure",
+    "Visual impairment",
+    "Gait ataxia",
+    "Spasticity",
+    "Cerebellar atrophy",
+    "Cerebellar hypoplasia",
+    "Dysmetria",
+    "EEG abnormality",
+    "Osteopenia",
+    "Global developmental delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

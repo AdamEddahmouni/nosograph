@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'developmental delay and seizures with or without movement abno
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of developmental delay and seizures with or without movement abnormalities
-SYMPTOMS = []
+SYMPTOMS = [
+    "Epileptic encephalopathy",
+    "Generalized myoclonic seizure",
+    "Autosomal dominant inheritance",
+    "Variable expressivity",
+    "EEG abnormality",
+    "Generalized hypotonia",
+    "Dystonia",
+    "Rigidity",
+    "Global developmental delay",
+    "Chiari type I malformation",
+    "Myoclonic absence seizure",
+    "Short stature",
+    "Bradykinesia",
+    "Delayed speech and language development",
+    "Bilateral tonic-clonic seizure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

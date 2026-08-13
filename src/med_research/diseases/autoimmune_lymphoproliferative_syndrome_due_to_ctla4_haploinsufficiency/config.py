@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autoimmune lymphoproliferative syndrome due to CTLA4 haploinsu
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autoimmune lymphoproliferative syndrome due to CTLA4 haploinsufficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Immunodeficiency",
+    "Diarrhea",
+    "Eczematoid dermatitis",
+    "Lymphadenopathy",
+    "Arthritis",
+    "Splenomegaly",
+    "Autoimmune hemolytic anemia",
+    "Allergy",
+    "Recurrent lower respiratory tract infections",
+    "Hepatomegaly",
+    "Psoriasiform dermatitis",
+    "Typified by incomplete penetrance",
+    "Crohn's disease",
+    "Bronchiectasis",
+    "Decreased circulating IgG concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

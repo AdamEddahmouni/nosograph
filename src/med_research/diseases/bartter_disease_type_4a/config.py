@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Bartter disease type 4A (BARTTER_DISEASE_TYPE_4A)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Bartter disease type 4A
-SYMPTOMS = []
+SYMPTOMS = [
+    "Renal salt wasting",
+    "Congenital onset",
+    "Hyporeflexia",
+    "Sensorineural hearing impairment",
+    "Premature birth",
+    "Intellectual disability",
+    "Failure to thrive",
+    "Decreased glomerular filtration rate",
+    "Hypernatriuria",
+    "Hypokalemia",
+    "Fetal polyuria",
+    "Polyuria",
+    "Polydipsia",
+    "Hypotonia",
+    "Polyhydramnios",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

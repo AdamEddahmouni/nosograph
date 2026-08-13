@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'microphthalmia with limb anomalies (MICROPHTHALMIA_WITH_LIMB_A
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of microphthalmia with limb anomalies
-SYMPTOMS = []
+SYMPTOMS = [
+    "Global developmental delay",
+    "Sandal gap",
+    "Intellectual disability",
+    "Postaxial foot polydactyly",
+    "Posteriorly rotated ears",
+    "Postaxial hand polydactyly",
+    "Microphthalmia",
+    "Cleft palate",
+    "Failure to thrive",
+    "Autosomal recessive inheritance",
+    "Frontal bossing",
+    "Short nose",
+    "Capitate-hamate fusion",
+    "Unilateral cryptorchidism",
+    "Deep philtrum",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

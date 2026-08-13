@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'CCDC115-CDG (CCDC115_CDG)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of CCDC115-CDG
-SYMPTOMS = []
+SYMPTOMS = [
+    "Infantile onset",
+    "Prolonged neonatal jaundice",
+    "Elevated circulating creatine kinase activity",
+    "Downslanted palpebral fissures",
+    "Skeletal muscle atrophy",
+    "Splenomegaly",
+    "Elevated alkaline phosphatase of bone origin",
+    "Elevated circulating LDL-C concentration",
+    "Long face",
+    "Global developmental delay",
+    "Decreased circulating ceruloplasmin concentration",
+    "Hepatic failure",
+    "Ptosis",
+    "Hypercholesterolemia",
+    "Abnormal glycosylation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

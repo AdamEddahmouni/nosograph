@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Cornelia de Lange syndrome (CORNELIA_DE_LANGE)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Cornelia de Lange syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autistic behavior",
+    "Flat face",
+    "Enamel agenesis",
+    "Hypoplasia of the radius",
+    "Hypoplastic radial head",
+    "Thick eyebrow",
+    "Hypospadias",
+    "Long eyelashes",
+    "Hydronephrosis",
+    "Inguinal hernia",
+    "Telecanthus",
+    "Microcornea",
+    "Small hand",
+    "Hirsutism",
+    "Hydroureter",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

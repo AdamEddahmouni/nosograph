@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'lethal congenital glycogen storage disease of heart (LETHAL_CO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lethal congenital glycogen storage disease of heart
-SYMPTOMS = []
+SYMPTOMS = [
+    "Apnea",
+    "Hypotension",
+    "ST segment elevation",
+    "Prolonged QRS complex",
+    "Respiratory distress",
+    "Bradycardia",
+    "Myopathy",
+    "Breech presentation",
+    "Macroglossia",
+    "Cyanosis",
+    "ST segment depression",
+    "Peripheral edema",
+    "Neonatal hypoglycemia",
+    "Congestive heart failure",
+    "Hypertrophic cardiomyopathy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

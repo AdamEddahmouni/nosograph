@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'MYPN-related myopathy (MYPN_RELATED_MYOPATHY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of MYPN-related myopathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Middle age onset",
+    "Abnormal circulating creatine kinase activity",
+    "Slowly progressive",
+    "Talipes equinovarus",
+    "Scapular winging",
+    "Pectus excavatum",
+    "Facial palsy",
+    "Waddling gait",
+    "Autosomal recessive inheritance",
+    "Type 1 muscle fiber predominance",
+    "Nemaline bodies",
+    "Gowers sign",
+    "Childhood onset",
+    "Cardiomyopathy",
+    "Juvenile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

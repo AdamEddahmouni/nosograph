@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'myofibromatosis, infantile, 1 (MYOFIBROMATOSIS_INFANTILE_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of myofibromatosis, infantile, 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Myofibromatosis",
+    "Fibroma",
+    "Infantile onset",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

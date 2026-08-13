@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'PEHO syndrome (PEHO_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of PEHO syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Profound intellectual disability",
+    "Pachygyria",
+    "Edema of the dorsum of feet",
+    "Infantile encephalopathy",
+    "Polymicrogyria",
+    "Developmental stagnation",
+    "Edema of the dorsum of hands",
+    "Myoclonus",
+    "Severe muscular hypotonia",
+    "Global developmental delay",
+    "Retrognathia",
+    "Narrow forehead",
+    "Edema",
+    "Neuronal loss in central nervous system",
+    "Hypoplasia of the corpus callosum",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

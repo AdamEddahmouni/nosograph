@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'rigid spine muscular dystrophy 1 (RIGID_SPINE_MUSCULAR_DYSTROP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of rigid spine muscular dystrophy 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Restrictive ventilatory defect",
+    "Limited neck flexion",
+    "Intellectual disability",
+    "Increased variability in muscle fiber diameter",
+    "Abnormal rib cage morphology",
+    "Abnormally high-pitched voice",
+    "Infantile onset",
+    "Autosomal recessive inheritance",
+    "Generalized hypotonia",
+    "Neonatal onset",
+    "High palate",
+    "Delayed ability to walk",
+    "Type 1 muscle fiber predominance",
+    "Minicore myopathy",
+    "Nocturnal hypoventilation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

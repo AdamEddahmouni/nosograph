@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'seizures, benign familial infantile, 5 (SEIZURES_BENIGN_FAMILI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of seizures, benign familial infantile, 5
-SYMPTOMS = []
+SYMPTOMS = [
+    "Paroxysmal dyskinesia",
+    "Infantile onset",
+    "Autosomal dominant inheritance",
+    "Bilateral tonic-clonic seizure",
+    "Focal impaired awareness seizure",
+    "Childhood onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

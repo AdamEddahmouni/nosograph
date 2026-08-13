@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'orofacial cleft 15 (OROFACIAL_CLEFT_15)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of orofacial cleft 15
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyponasal speech",
+    "Euryblepharon",
+    "Agenesis of lateral incisor",
+    "Bilateral cleft palate",
+    "Sparse eyebrow",
+    "High anterior hairline",
+    "Sparse eyelashes",
+    "Palate fistula",
+    "Low-set ears",
+    "Inguinal hernia",
+    "Protruding ear",
+    "Cryptorchidism",
+    "Bilateral cleft lip",
+    "Midface retrusion",
+    "Hypertelorism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'caudal duplication (CAUDAL_DUPLICATION)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of caudal duplication
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ureteral duplication",
+    "Uterus didelphys",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

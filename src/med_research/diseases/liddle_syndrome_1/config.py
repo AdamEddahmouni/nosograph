@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'Liddle syndrome 1 (LIDDLE_SYNDROME_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Liddle syndrome 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased circulating aldosterone concentration",
+    "Decreased circulating renin concentration",
+    "Childhood onset",
+    "Hypokalemia",
+    "Hypertension",
+    "Renal insufficiency",
+    "Autosomal dominant inheritance",
+    "Juvenile onset",
+    "Hypokalemic alkalosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

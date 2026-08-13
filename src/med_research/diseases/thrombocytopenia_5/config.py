@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'thrombocytopenia 5 (THROMBOCYTOPENIA_5)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of thrombocytopenia 5
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "B Acute Lymphoblastic Leukemia",
+    "Epistaxis",
+    "Petechiae",
+    "Bruising susceptibility",
+    "Thrombocytopenia",
+    "Decreased total neutrophil count",
+    "Anemia",
+    "Increased mean corpuscular volume",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

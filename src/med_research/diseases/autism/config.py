@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Autism spectrum disorder (AUTISM)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Autism spectrum disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Heterotropia",
+    "Pyloric stenosis",
+    "Developmental regression",
+    "Attention deficit hyperactivity disorder",
+    "Anxiety",
+    "Infantile onset",
+    "Long philtrum",
+    "Abnormal nonverbal communicative behavior",
+    "Reduced social responsiveness",
+    "Diarrhea",
+    "Sleep onset insomnia",
+    "Polyhydramnios",
+    "Generalized hypotonia",
+    "Late chronotype",
+    "EEG abnormality",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

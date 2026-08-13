@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Desbuquois dysplasia 2 (DESBUQUOIS_DYSPLASIA_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Desbuquois dysplasia 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Prominent lesser trochanter",
+    "Fetal onset",
+    "Global developmental delay",
+    "Delayed speech and language development",
+    "Short clavicles",
+    "Lumbar hyperlordosis",
+    "Short neck",
+    "Intrauterine growth retardation",
+    "Short phalanx of finger",
+    "Round face",
+    "Metaphyseal widening",
+    "Knee dislocation",
+    "Neonatal respiratory distress",
+    "Radial head subluxation",
+    "Flat face",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

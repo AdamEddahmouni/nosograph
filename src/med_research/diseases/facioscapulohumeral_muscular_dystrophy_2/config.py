@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'facioscapulohumeral muscular dystrophy 2 (FACIOSCAPULOHUMERAL_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of facioscapulohumeral muscular dystrophy 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Digenic inheritance",
+    "Adult onset",
+    "Facial palsy",
+    "Scapular winging",
+    "Hearing impairment",
+    "Pelvic girdle muscle weakness",
+    "Foot dorsiflexor weakness",
+    "Beevor's sign",
+    "Scapulohumeral muscular dystrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

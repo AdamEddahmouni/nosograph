@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'orofaciodigital syndrome V (OROFACIODIGITAL_SYNDROME_V)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of orofaciodigital syndrome V
-SYMPTOMS = []
+SYMPTOMS = [
+    "Crossed fused renal ectopia",
+    "Downslanted palpebral fissures",
+    "Median cleft upper lip",
+    "Global developmental delay",
+    "Bilateral tonic-clonic seizure with generalized onset",
+    "Ankyloglossia",
+    "Feeding difficulties",
+    "Hearing impairment",
+    "Horseshoe kidney",
+    "Aganglionic megacolon",
+    "Dental malocclusion",
+    "Tetralogy of Fallot",
+    "Thick eyebrow",
+    "Thin upper lip vermilion",
+    "Facial asymmetry",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

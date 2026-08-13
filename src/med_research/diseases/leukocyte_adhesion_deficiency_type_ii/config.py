@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'leukocyte adhesion deficiency type II (LEUKOCYTE_ADHESION_DEFI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of leukocyte adhesion deficiency type II
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autism",
+    "Recurrent otitis media",
+    "Aminoaciduria",
+    "Coarse facial features",
+    "Severe intellectual disability",
+    "HP_0006887",
+    "Brachydactyly",
+    "Abnormal circulating insulin-like growth factor 1 concentration",
+    "Bulbous nose",
+    "Short stature",
+    "Febrile seizure (within the age range of 3 months to 6 years)",
+    "Unusual bronchiolitis",
+    "Small hand",
+    "Hypotonia",
+    "Widow's peak",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

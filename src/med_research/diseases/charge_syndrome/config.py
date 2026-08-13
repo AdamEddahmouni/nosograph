@@ -8,8 +8,23 @@ PIPELINE_LABEL = "CHARGE syndrome (CHARGE_SYNDROME)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of CHARGE syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Right aortic arch",
+    "Micropenis",
+    "Polyhydramnios",
+    "Congenital onset",
+    "Fetal onset",
+    "Holoprosencephaly",
+    "Short thumb",
+    "Renal agenesis",
+    "Microtia",
+    "Hypogonadotropic hypogonadism",
+    "Omphalocele",
+    "Feeding difficulties",
+    "Duodenal atresia",
+    "Hypoplasia of the ulna",
+    "Overriding aorta",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

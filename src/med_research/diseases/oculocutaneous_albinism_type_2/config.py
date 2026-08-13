@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'oculocutaneous albinism type 2 (OCULOCUTANEOUS_ALBINISM_TYPE_2
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of oculocutaneous albinism type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Albinism",
+    "Hypopigmentation of the skin",
+    "Myopia",
+    "Red hair",
+    "Freckles in sun-exposed areas",
+    "Exotropia",
+    "Strabismus",
+    "Hypopigmentation of hair",
+    "Fundus hypopigmentation",
+    "Hypoplasia of the fovea",
+    "Autosomal recessive inheritance",
+    "Nystagmus",
+    "Blue irides",
+    "Visual impairment",
+    "Reduced visual acuity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

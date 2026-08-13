@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'carnitine palmitoyl transferase II deficiency, neonatal form (
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of carnitine palmitoyl transferase II deficiency, neonatal form
-SYMPTOMS = []
+SYMPTOMS = [
+    "Prominent forehead",
+    "Posteriorly rotated ears",
+    "Respiratory insufficiency",
+    "High palate",
+    "Sloping forehead",
+    "Ureteral duplication",
+    "Long toe",
+    "Neonatal respiratory distress",
+    "Bulbous nose",
+    "Long-chain dicarboxylic aciduria",
+    "Enlarged kidney",
+    "Increased muscle lipid content",
+    "Cardiomegaly",
+    "Elevated circulating hepatic transaminase concentration",
+    "Ventriculomegaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

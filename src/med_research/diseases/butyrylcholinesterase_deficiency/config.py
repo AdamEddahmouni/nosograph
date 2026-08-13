@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'butyrylcholinesterase deficiency (BUTYRYLCHOLINESTERASE_DEFICI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of butyrylcholinesterase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Apnea",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

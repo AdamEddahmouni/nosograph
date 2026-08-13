@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Bloom syndrome (BLOOM_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Bloom syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Mild intellectual disability",
+    "Small for gestational age",
+    "Protruding ear",
+    "Facial telangiectasia in butterfly midface distribution",
+    "Recurrent upper respiratory tract infections",
+    "Hand polydactyly",
+    "Postnatal growth retardation",
+    "Chromosome breakage",
+    "Agenesis of maxillary lateral incisor",
+    "Decreased fertility in females",
+    "Clinodactyly of the 5th finger",
+    "Spotty hypopigmentation",
+    "Cryptorchidism",
+    "Cutaneous photosensitivity",
+    "Squamous cell carcinoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'progressive familial intrahepatic cholestasis type 2 (PROGRESS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of progressive familial intrahepatic cholestasis type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Diarrhea",
+    "Failure to thrive",
+    "Pruritus",
+    "Elevated circulating alkaline phosphatase concentration",
+    "Fat malabsorption",
+    "Conjugated hyperbilirubinemia",
+    "Short stature",
+    "Intrahepatic cholestasis",
+    "Autosomal recessive inheritance",
+    "Splenomegaly",
+    "Death in childhood",
+    "Cirrhosis",
+    "Infantile onset",
+    "Hepatomegaly",
+    "Intermittent jaundice",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

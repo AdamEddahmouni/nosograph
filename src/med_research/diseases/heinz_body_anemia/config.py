@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'Heinz body anemia (HEINZ_BODY_ANEMIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Heinz body anemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nonspherocytic hemolytic anemia",
+    "Heinz body anemia",
+    "Heinz bodies",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

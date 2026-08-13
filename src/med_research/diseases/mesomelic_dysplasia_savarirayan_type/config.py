@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mesomelic dysplasia, Savarirayan type (MESOMELIC_DYSPLASIA_SAV
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mesomelic dysplasia, Savarirayan type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Fibular hypoplasia",
+    "Hip dislocation",
+    "Short tibia",
+    "Supernumerary nipple",
+    "Abnormal foot morphology",
+    "Abnormality of the hand",
+    "Fibular aplasia",
+    "Mesomelic leg shortening",
+    "Short stature",
+    "Hypoplastic pubic bone",
+    "Absent tibia",
+    "Short forearm",
+    "Anterior tibial bowing",
+    "Autosomal dominant inheritance",
+    "Delayed closure of the anterior fontanelle",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

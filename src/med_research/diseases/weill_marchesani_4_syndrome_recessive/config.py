@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Weill-Marchesani 4 syndrome, recessive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Phakodonesis",
+    "Shallow anterior chamber",
+    "Iridodonesis",
+    "Brachydactyly",
+    "High myopia",
+    "Posterior synechiae of the anterior chamber",
+    "Glaucoma",
+    "Ectopia lentis",
+    "Joint stiffness",
+    "Ocular hypertension",
+    "Autosomal recessive inheritance",
+    "Short stature",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

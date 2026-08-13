@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of oculocerebrocutaneous syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypoplasia of the corpus callosum",
+    "Sporadic",
+    "Dandy-Walker malformation",
+    "Eyelid coloboma",
+    "Intellectual disability",
+    "Focal dermal aplasia/hypoplasia",
+    "Naso-orbital encephalocele",
+    "Orbital cyst",
+    "Gray matter heterotopia",
+    "Cleft ala nasi",
+    "Cryptorchidism",
+    "Abnormal thorax morphology",
+    "Congenital hip dislocation",
+    "Alopecia",
+    "Seizure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

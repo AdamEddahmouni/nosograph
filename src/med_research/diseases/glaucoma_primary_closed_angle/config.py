@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'glaucoma, primary closed-angle (GLAUCOMA_PRIMARY_CLOSED_ANGLE)
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of glaucoma, primary closed-angle
-SYMPTOMS = []
+SYMPTOMS = [
+    "Angle closure glaucoma",
+    "Increased cup-to-disc ratio",
+    "Ocular hypertension",
+    "Anterior synechiae of the anterior chamber",
+    "Visual field defect",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

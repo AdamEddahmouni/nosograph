@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spondyloepimetaphyseal dysplasia, Shohat type (SPONDYLOEPIMETA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondyloepimetaphyseal dysplasia, Shohat type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Narrow greater sciatic notch",
+    "Abdominal distention",
+    "Joint hypermobility",
+    "Coxa vara",
+    "Narrow vertebral interpedicular distance",
+    "Short neck",
+    "Autosomal recessive inheritance",
+    "Micromelia",
+    "Hoarse voice",
+    "Delayed epiphyseal ossification",
+    "Antenatal onset",
+    "Splenomegaly",
+    "Flared metaphysis",
+    "Central vertebral hypoplasia",
+    "Short ribs",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

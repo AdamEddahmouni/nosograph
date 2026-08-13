@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'BAP1-related tumor predisposition syndrome (BAP1_RELATED_TUMOR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of BAP1-related tumor predisposition syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Uveal melanoma",
+    "Cutaneous melanoma",
+    "Lung adenocarcinoma",
+    "Autosomal dominant inheritance",
+    "Renal cell carcinoma",
+    "Young adult onset",
+    "Malignant mesothelioma",
+    "Late onset",
+    "Meningioma",
+    "Middle age onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

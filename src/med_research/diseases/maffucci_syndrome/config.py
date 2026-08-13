@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'Maffucci syndrome (MAFFUCCI_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Maffucci syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pathologic fracture",
+    "Chondrosarcoma",
+    "Hemangioma",
+    "Multiple enchondromatosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

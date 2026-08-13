@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'odonto-onycho-dermal dysplasia (ODONTO_ONYCHO_DERMAL_DYSPLASIA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of odonto-onycho-dermal dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Erythema",
+    "Palmoplantar erythema",
+    "Dry skin",
+    "Smooth tongue",
+    "Abnormal primary tooth morphology",
+    "Sparse eyebrow",
+    "Hypergranulosis",
+    "Ridged nail",
+    "Sparse scalp hair",
+    "Fine hair",
+    "Dystrophic toenail",
+    "Nail dysplasia",
+    "Widely spaced primary teeth",
+    "Thin nail",
+    "Agenesis of permanent teeth",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

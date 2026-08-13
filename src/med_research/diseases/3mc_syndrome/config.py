@@ -8,8 +8,23 @@ PIPELINE_LABEL = '3MC syndrome (3MC_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of 3MC syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Microcephaly",
+    "Underdeveloped supraorbital ridges",
+    "Hip dislocation",
+    "Prominence of the premaxilla",
+    "Postnatal growth retardation",
+    "Growth delay",
+    "Cleft upper lip",
+    "Bifid scrotum",
+    "Wide anterior fontanel",
+    "Periumbilical depression",
+    "Short stature",
+    "Ptosis",
+    "Broad philtrum",
+    "Abnormality of eye movement",
+    "Hypertelorism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

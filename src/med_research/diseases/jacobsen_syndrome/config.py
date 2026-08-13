@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Jacobsen syndrome (JACOBSEN_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Jacobsen syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal eyelash morphology",
+    "Hypertelorism",
+    "Cryptorchidism",
+    "Missing ribs",
+    "Recurrent respiratory infections",
+    "Clitoral hypoplasia",
+    "Hypospadias",
+    "U-Shaped upper lip vermilion",
+    "Ventricular septal defect",
+    "Intrauterine growth retardation",
+    "Floppy infant",
+    "Epicanthus",
+    "Atrial septal defect",
+    "Sporadic",
+    "Annular pancreas",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

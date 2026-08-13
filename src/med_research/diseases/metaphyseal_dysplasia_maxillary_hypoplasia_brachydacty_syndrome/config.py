@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'metaphyseal dysplasia-maxillary hypoplasia-brachydacty syndrom
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of metaphyseal dysplasia-maxillary hypoplasia-brachydacty syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Convex nasal ridge",
+    "Multiple small vertebral fractures",
+    "Short stature",
+    "Short philtrum",
+    "Premature loss of teeth",
+    "Osteoporosis of vertebrae",
+    "Short middle phalanx of the 5th finger",
+    "Short 5th metacarpal",
+    "Hypoplasia of the maxilla",
+    "Autosomal dominant inheritance",
+    "Flared metaphysis",
+    "Metaphyseal dysplasia",
+    "Short middle phalanx of the 2nd finger",
+    "Thin vermilion border",
+    "Platyspondyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

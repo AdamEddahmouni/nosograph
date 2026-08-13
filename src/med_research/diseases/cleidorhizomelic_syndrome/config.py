@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'cleidorhizomelic syndrome (CLEIDORHIZOMELIC_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cleidorhizomelic syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Clinodactyly of the 5th finger",
+    "Abnormal clavicle morphology",
+    "Short middle phalanx of the 5th finger",
+    "Rhizomelia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'pachyonychia congenita 2 (PACHYONYCHIA_CONGENITA_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pachyonychia congenita 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Epidermoid cyst",
+    "Folliculitis",
+    "Palmoplantar hyperhidrosis",
+    "Steatocystoma multiplex",
+    "Nail dystrophy",
+    "Dry hair",
+    "Subungual hyperkeratosis",
+    "Sparse eyebrow",
+    "Autosomal dominant inheritance",
+    "Oral leukoplakia",
+    "Natal tooth",
+    "Nail dysplasia",
+    "Angular cheilitis",
+    "Palmoplantar hyperkeratosis",
+    "Sparse scalp hair",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neurodevelopmental disorder with hyperkinetic movements and dy
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neurodevelopmental disorder with hyperkinetic movements and dyskinesia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Delayed ability to roll over",
+    "Myoclonus",
+    "Failure to thrive",
+    "Agitation",
+    "Axial hypotonia",
+    "Delayed speech and language development",
+    "Dystonia",
+    "Cardiomyopathy",
+    "Global developmental delay",
+    "Moderate intellectual disability",
+    "Poor head control",
+    "Hypoplasia of the brainstem",
+    "Tremor",
+    "Autosomal recessive inheritance",
+    "Anxiety",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

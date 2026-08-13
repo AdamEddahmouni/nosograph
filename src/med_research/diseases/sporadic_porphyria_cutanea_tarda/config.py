@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'sporadic porphyria cutanea tarda (SPORADIC_PORPHYRIA_CUTANEA_T
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of sporadic porphyria cutanea tarda
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypertrichosis",
+    "Eczematoid dermatitis",
+    "Hyperpigmentation of the skin",
+    "Fragile skin",
+    "Addictive alcohol use",
+    "Porphyrinuria",
+    "Hepatic fibrosis",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

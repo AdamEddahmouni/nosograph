@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Noonan syndrome (NOONAN_SYNDROME)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Noonan syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Reduced factor VIII activity",
+    "Male infertility",
+    "Synovitis",
+    "Blue irides",
+    "Depressed nasal bridge",
+    "Telecanthus",
+    "Reduced factor XIII activity",
+    "Strabismus",
+    "Melanocytic nevus",
+    "Abnormal coronary artery origin",
+    "Triangular face",
+    "Nasogastric tube feeding in infancy",
+    "Hypermelanotic macule",
+    "Cognitive impairment",
+    "Palpebral thickening",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

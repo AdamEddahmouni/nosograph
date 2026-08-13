@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'spina bifida (SPINA_BIFIDA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spina bifida
-SYMPTOMS = []
+SYMPTOMS = [
+    "Anencephaly",
+    "Multiple lipomas",
+    "Spina bifida occulta",
+    "Hydrocephalus",
+    "Urinary incontinence",
+    "Autosomal dominant inheritance",
+    "Absence of the sacrum",
+    "Lipoma",
+    "Asymmetry of spinal facet joints",
+    "Myelomeningocele",
+    "Sacral dimple",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

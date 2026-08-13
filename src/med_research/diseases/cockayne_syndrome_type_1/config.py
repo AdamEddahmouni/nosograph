@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Cockayne syndrome type 1 (COCKAYNE_SYNDROME_TYPE_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Cockayne syndrome type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Severe postnatal growth retardation",
+    "Abnormality of visual evoked potentials",
+    "Global developmental delay",
+    "Sparse hair",
+    "Small for gestational age",
+    "Failure to thrive",
+    "Abnormal peripheral myelination",
+    "Irregular menstruation",
+    "Infantile onset",
+    "Microcornea",
+    "Joint contracture",
+    "Abnormal pinna morphology",
+    "Abnormal hair morphology",
+    "Subcortical white matter calcifications",
+    "Hypoplastic iliac wing",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

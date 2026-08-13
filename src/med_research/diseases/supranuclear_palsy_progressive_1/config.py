@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'supranuclear palsy, progressive, 1 (SUPRANUCLEAR_PALSY_PROGRES
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of supranuclear palsy, progressive, 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Memory impairment",
+    "Postural instability",
+    "Supranuclear gaze palsy",
+    "Dysarthria",
+    "Autosomal dominant inheritance",
+    "Neurofibrillary tangles",
+    "Senile plaques",
+    "Axial dystonia",
+    "Astrocytosis",
+    "Retrocollis",
+    "Micrographia",
+    "Photophobia",
+    "Granulovacuolar degeneration",
+    "Irritability",
+    "Rigidity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

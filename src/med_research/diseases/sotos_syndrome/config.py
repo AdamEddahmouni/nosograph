@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Sotos syndrome (SOTOS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Sotos syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Infantile onset",
+    "Motor delay",
+    "Posteriorly rotated ears",
+    "Depressed nasal bridge",
+    "Brachydactyly",
+    "Stuttering",
+    "Overgrowth",
+    "Small nail",
+    "Cavum septum pellucidum",
+    "Otitis media",
+    "Autosomal recessive inheritance",
+    "Cryptorchidism",
+    "Cutis marmorata",
+    "Attention deficit hyperactivity disorder",
+    "High anterior hairline",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

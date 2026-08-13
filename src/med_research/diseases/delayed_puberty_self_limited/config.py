@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'delayed puberty, self-limited (DELAYED_PUBERTY_SELF_LIMITED)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of delayed puberty, self-limited
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased circulating luteinizing hormone level",
+    "Hypogonadotropic hypogonadism",
+    "Decreased circulating follicle stimulating hormone concentration",
+    "Autosomal dominant inheritance",
+    "Delayed skeletal maturation",
+    "Delayed puberty",
+    "Decreased serum testosterone concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

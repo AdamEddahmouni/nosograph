@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'proteasome-associated autoinflammatory syndrome 4 (PROTEASOME_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of proteasome-associated autoinflammatory syndrome 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Edema",
+    "Flexion contracture",
+    "Myositis",
+    "Motor delay",
+    "Acute phase response",
+    "Recurrent fever",
+    "Skeletal muscle atrophy",
+    "Infantile onset",
+    "Generalized lipodystrophy",
+    "Autoimmune hemolytic anemia",
+    "Basal ganglia calcification",
+    "Erythema",
+    "Panniculitis",
+    "Autosomal recessive inheritance",
+    "Delayed speech and language development",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

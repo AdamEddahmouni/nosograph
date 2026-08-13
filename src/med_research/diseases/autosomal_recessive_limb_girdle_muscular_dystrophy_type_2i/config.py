@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autosomal recessive limb-girdle muscular dystrophy type 2I (AU
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal recessive limb-girdle muscular dystrophy type 2I
-SYMPTOMS = []
+SYMPTOMS = [
+    "Proximal muscle weakness",
+    "Nocturnal hypoventilation",
+    "Kyphosis",
+    "Scoliosis",
+    "Macroglossia",
+    "Myalgia",
+    "Variable expressivity",
+    "Exercise-induced myoglobinuria",
+    "Tip-toe gait",
+    "Achilles tendon contracture",
+    "Gait disturbance",
+    "Elevated circulating creatine kinase activity",
+    "Difficulty climbing stairs",
+    "Autosomal recessive inheritance",
+    "Vertebral fusion",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

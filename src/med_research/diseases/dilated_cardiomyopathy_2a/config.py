@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'dilated cardiomyopathy 2A (DILATED_CARDIOMYOPATHY_2A)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dilated cardiomyopathy 2A
-SYMPTOMS = []
+SYMPTOMS = [
+    "Myofiber disarray",
+    "Young adult onset",
+    "Autosomal recessive inheritance",
+    "Dilated cardiomyopathy",
+    "Cardiomyocyte hypertrophy",
+    "Congestive heart failure",
+    "Increased left ventricular end-diastolic volume",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Bardet-Biedl syndrome 12 (BARDET_BIEDL_SYNDROME_12)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Bardet-Biedl syndrome 12
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypogonadism",
+    "Autosomal recessive inheritance",
+    "Postaxial hand polydactyly",
+    "Congenital onset",
+    "Hydroureter",
+    "Postaxial foot polydactyly",
+    "Polydactyly",
+    "Abdominal mass",
+    "Hydronephrosis",
+    "Cognitive impairment",
+    "Vaginal atresia",
+    "Cystic renal dysplasia",
+    "Obesity",
+    "Hydrometrocolpos",
+    "Rod-cone dystrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

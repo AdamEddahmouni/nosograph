@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'early-onset myopathy with fatal cardiomyopathy (EARLY_ONSET_MY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of early-onset myopathy with fatal cardiomyopathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Congestive heart failure",
+    "Minicore myopathy",
+    "Joint contracture",
+    "Elevated circulating creatine kinase activity",
+    "Difficulty climbing stairs",
+    "Myopathy",
+    "Calf muscle hypertrophy",
+    "Arrhythmia",
+    "Motor delay",
+    "Atrioventricular reentrant tachycardia",
+    "Increased endomysial connective tissue",
+    "Mitochondrial depletion",
+    "Atrioventricular block",
+    "Increased variability in muscle fiber diameter",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

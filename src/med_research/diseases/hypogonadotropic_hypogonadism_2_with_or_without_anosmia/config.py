@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hypogonadotropic hypogonadism 2 with or without anosmia (HYPOG
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypogonadotropic hypogonadism 2 with or without anosmia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Clinodactyly",
+    "Short stature",
+    "Ectrodactyly",
+    "Micropenis",
+    "Choanal atresia",
+    "Hypogonadotropic hypogonadism",
+    "Anosmia",
+    "Cryptorchidism",
+    "Hyposmia",
+    "Gynecomastia",
+    "Agenesis of corpus callosum",
+    "Osteopenia",
+    "Bimanual synkinesia",
+    "Typified by incomplete penetrance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

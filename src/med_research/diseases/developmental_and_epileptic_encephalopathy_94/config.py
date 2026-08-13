@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'developmental and epileptic encephalopathy 94 (DEVELOPMENTAL_A
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of developmental and epileptic encephalopathy 94
-SYMPTOMS = []
+SYMPTOMS = [
+    "EEG with generalized polyspikes",
+    "Generalized non-motor (absence) seizure",
+    "Status epilepticus without prominent motor symptoms",
+    "Intellectual disability",
+    "Childhood onset",
+    "Autistic behavior",
+    "Epileptic encephalopathy",
+    "Atonic seizure",
+    "Status epilepticus",
+    "Bilateral tonic-clonic seizure",
+    "Autosomal dominant inheritance",
+    "Developmental regression",
+    "Visually-induced seizure",
+    "Generalized myoclonic seizure",
+    "Multifocal epileptiform discharges",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

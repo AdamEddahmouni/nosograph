@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'posterior amorphous corneal dystrophy (POSTERIOR_AMORPHOUS_COR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of posterior amorphous corneal dystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nonprogressive",
+    "Hypermetropia",
+    "Ectopia pupillae",
+    "Infantile onset",
+    "Corneal dystrophy",
+    "Autosomal dominant inheritance",
+    "Iris coloboma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

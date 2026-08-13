@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'woolly hair-skin fragility syndrome (WOOLLY_HAIR_SKIN_FRAGILIT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of woolly hair-skin fragility syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Congenital onset",
+    "Woolly hair",
+    "Keratosis pilaris",
+    "Fragile skin",
+    "Infantile onset",
+    "Palmoplantar keratoderma",
+    "Acantholysis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

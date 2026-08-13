@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spinocerebellar ataxia type 12 (SPINOCEREBELLAR_ATAXIA_TYPE_12
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spinocerebellar ataxia type 12
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormality of eye movement",
+    "Axial dystonia",
+    "Cerebral cortical atrophy",
+    "Sensorimotor neuropathy",
+    "Anxiety",
+    "Parkinsonism",
+    "Cerebellar atrophy",
+    "Hyperreflexia",
+    "Delusion",
+    "Progressive cerebellar ataxia",
+    "Head tremor",
+    "Depression",
+    "Autosomal dominant inheritance",
+    "Action tremor",
+    "Dementia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

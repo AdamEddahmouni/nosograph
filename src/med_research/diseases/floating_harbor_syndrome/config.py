@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Floating-Harbor syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital posterior urethral valve",
+    "Short clavicles",
+    "Cone-shaped epiphyses of the phalanges of the hand",
+    "Low posterior hairline",
+    "Hip dysplasia",
+    "Short 1st metacarpal",
+    "Bulbous nose",
+    "Prominent metopic ridge",
+    "Low-set ears",
+    "Atopic dermatitis",
+    "Generalized hypertrichosis",
+    "Wide mouth",
+    "Short stature",
+    "Epididymal cyst",
+    "Long eyelashes",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

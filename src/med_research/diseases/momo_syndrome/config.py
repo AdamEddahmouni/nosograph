@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'MOMO syndrome (MOMO_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of MOMO syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dental malocclusion",
+    "Delayed eruption of teeth",
+    "Eyelid coloboma",
+    "Hyperconvex nail",
+    "Macrocephaly",
+    "Thick lower lip vermilion",
+    "Overgrowth",
+    "Nystagmus",
+    "High forehead",
+    "Glaucoma",
+    "Wide nasal bridge",
+    "Downslanted palpebral fissures",
+    "Retinal coloboma",
+    "Intellectual disability",
+    "Large hands",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

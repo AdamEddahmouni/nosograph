@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'non-acquired combined pituitary hormone deficiency with spine 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of non-acquired combined pituitary hormone deficiency with spine abnormalities
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased response to growth hormone stimulation test",
+    "Short neck",
+    "Anterior pituitary hypoplasia",
+    "Short stature",
+    "Pituitary dwarfism",
+    "Sensorineural hearing impairment",
+    "Gonadotropin deficiency",
+    "Anterior hypopituitarism",
+    "Autosomal recessive inheritance",
+    "Intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

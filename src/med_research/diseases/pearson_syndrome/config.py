@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Pearson syndrome (PEARSON_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Pearson syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Type I diabetes mellitus",
+    "Hyperbilirubinemia",
+    "3-Methylglutaric aciduria",
+    "Exocrine pancreatic insufficiency",
+    "Anemia",
+    "Punctate keratitis",
+    "Pancytopenia",
+    "Death in childhood",
+    "Hypoplastic anemia",
+    "Vomiting",
+    "Infantile onset",
+    "Small for gestational age",
+    "Metabolic acidosis",
+    "Dehydration",
+    "Elevated circulating hepatic transaminase concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

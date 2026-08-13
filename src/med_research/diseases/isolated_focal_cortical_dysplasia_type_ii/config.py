@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'isolated focal cortical dysplasia type II (ISOLATED_FOCAL_CORT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of isolated focal cortical dysplasia type II
-SYMPTOMS = []
+SYMPTOMS = [
+    "Astrocytosis",
+    "Intellectual disability",
+    "Sporadic",
+    "Focal cortical dysplasia type II",
+    "Cognitive impairment",
+    "Infantile onset",
+    "Hemimegalencephaly",
+    "Adult onset",
+    "Typified by somatic mosaicism",
+    "Focal impaired awareness seizure",
+    "Cortical dysplasia",
+    "Hemiparesis",
+    "Focal white matter lesions",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

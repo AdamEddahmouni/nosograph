@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Saethre-Chotzen syndrome (SAETHRE_CHOTZEN_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Saethre-Chotzen syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Parietal foramina",
+    "Plagiocephaly",
+    "Skull asymmetry",
+    "Convex nasal ridge",
+    "Hypoplasia of the maxilla",
+    "Absent first metatarsal",
+    "Delayed cranial suture closure",
+    "Pansynostosis",
+    "Buphthalmos",
+    "Toe syndactyly",
+    "Bilateral ptosis",
+    "Variable expressivity",
+    "Radioulnar synostosis",
+    "Abnormal pelvic girdle bone morphology",
+    "Hypertelorism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

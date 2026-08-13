@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spastic paraplegia 85, autosomal recessive (SPASTIC_PARAPLEGIA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spastic paraplegia 85, autosomal recessive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Saccadic smooth pursuit interruptions",
+    "Generalized amyotrophy",
+    "Cerebellar atrophy",
+    "Childhood onset",
+    "Lower limb spasticity",
+    "Urinary incontinence",
+    "Motor delay",
+    "Optic atrophy",
+    "Brisk reflexes",
+    "Torticollis",
+    "Peripheral axonal neuropathy",
+    "Babinski sign",
+    "Lower limb muscle weakness",
+    "Spastic paraplegia",
+    "Impaired proprioception",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

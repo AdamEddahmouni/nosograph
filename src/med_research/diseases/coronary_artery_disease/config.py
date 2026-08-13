@@ -8,8 +8,17 @@ PIPELINE_LABEL = "Coronary artery disease (CORONARY_ARTERY_DISEASE)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Coronary artery disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypertension",
+    "Obesity",
+    "Adult onset",
+    "Diabetes mellitus",
+    "Myocardial infarction",
+    "Chest pain",
+    "Premature coronary artery atherosclerosis",
+    "Hypercholesterolemia",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

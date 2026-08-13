@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'orthostatic hypotension (ORTHOSTATIC_HYPOTENSION)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of orthostatic hypotension
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Anemia",
+    "Infantile onset",
+    "Hypoglycemia",
+    "Decreased glomerular filtration rate",
+    "Orthostatic hypotension",
+    "Childhood onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

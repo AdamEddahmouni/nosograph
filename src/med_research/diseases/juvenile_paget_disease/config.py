@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'juvenile Paget disease (JUVENILE_PAGET_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of juvenile Paget disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Macular scar",
+    "Motor delay",
+    "Increased bone mineral density",
+    "Barrel-shaped chest",
+    "Kyphosis",
+    "Variable expressivity",
+    "Hypotonia",
+    "Delayed gross motor development",
+    "Short humerus",
+    "Thickened calvaria",
+    "Ankylosis",
+    "Sensorineural hearing impairment",
+    "Hypercalciuria",
+    "Muscle weakness",
+    "Lateral femoral bowing",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mismatch repair cancer syndrome 1 (MISMATCH_REPAIR_CANCER_SYND
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mismatch repair cancer syndrome 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Non-Hodgkin lymphoma",
+    "Gray matter heterotopia",
+    "Plexiform neurofibroma",
+    "Oligodendroglioma",
+    "Autosomal recessive inheritance",
+    "Basal cell carcinoma",
+    "Adenomatous colonic polyposis",
+    "Rhabdomyosarcoma",
+    "Lymphoma",
+    "Axillary freckling",
+    "Multiple cafe-au-lait spots",
+    "Astrocytoma",
+    "Neuroblastoma",
+    "Adenocarcinoma of the small intestine",
+    "Ependymoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

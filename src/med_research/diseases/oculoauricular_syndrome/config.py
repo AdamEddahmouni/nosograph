@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'oculoauricular syndrome (OCULOAURICULAR_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of oculoauricular syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Congenital nystagmus",
+    "Developmental cataract",
+    "Macular hypoplasia",
+    "Ultra-low vision with retained light perception",
+    "Retinal detachment",
+    "Retinal coloboma",
+    "Posterior synechiae of the anterior chamber",
+    "Absent earlobe",
+    "Phthisis bulbi",
+    "Low-set ears",
+    "Cataract",
+    "Stenosis of the external auditory canal",
+    "Ocular anterior segment dysgenesis",
+    "Iris coloboma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

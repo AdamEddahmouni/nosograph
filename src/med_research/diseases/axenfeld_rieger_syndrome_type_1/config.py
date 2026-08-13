@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Axenfeld-Rieger syndrome type 1 (AXENFELD_RIEGER_SYNDROME_TYPE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Axenfeld-Rieger syndrome type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Megalocornea",
+    "Thin upper lip vermilion",
+    "Hypoplasia of the iris",
+    "Microcornea",
+    "Ectopia pupillae",
+    "Oligodontia",
+    "Hypoplasia of the maxilla",
+    "Aniridia",
+    "Glaucoma",
+    "Variable expressivity",
+    "Anal atresia",
+    "Abnormally prominent line of Schwalbe",
+    "Rieger anomaly",
+    "Posterior embryotoxon",
+    "Hypodontia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

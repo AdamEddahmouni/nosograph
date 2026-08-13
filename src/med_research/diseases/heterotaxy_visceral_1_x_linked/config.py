@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'heterotaxy, visceral, 1, X-linked (HETEROTAXY_VISCERAL_1_X_LIN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of heterotaxy, visceral, 1, X-linked
-SYMPTOMS = []
+SYMPTOMS = [
+    "Subvalvular aortic stenosis",
+    "Congenital hip dislocation",
+    "Atrial septal defect",
+    "Ventricular septal defect",
+    "Horseshoe kidney",
+    "Renal agenesis",
+    "Failure to thrive",
+    "Hypertelorism",
+    "Common atrium",
+    "Asplenia",
+    "Aqueductal stenosis",
+    "Patent ductus arteriosus",
+    "Bilateral superior vena cava",
+    "Right atrial isomerism",
+    "Abdominal situs inversus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spinocerebellar ataxia type 23 (SPINOCEREBELLAR_ATAXIA_TYPE_23
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spinocerebellar ataxia type 23
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperreflexia",
+    "Slow saccadic eye movements",
+    "Cerebellar atrophy",
+    "Impaired distal proprioception",
+    "Neuronal loss in central nervous system",
+    "Late onset",
+    "CNS demyelination",
+    "Babinski sign",
+    "Impaired vibration sensation in the lower limbs",
+    "Middle age onset",
+    "Polyneuropathy",
+    "Agenesis of corpus callosum",
+    "Limb ataxia",
+    "Tremor",
+    "Dysarthria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

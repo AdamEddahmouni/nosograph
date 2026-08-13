@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'ovarian hyperstimulation syndrome (OVARIAN_HYPERSTIMULATION_SY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ovarian hyperstimulation syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormality of the genitourinary system",
+    "Nausea",
+    "Ascites",
+    "Autosomal dominant inheritance",
+    "Abdominal pain",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

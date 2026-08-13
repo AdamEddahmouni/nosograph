@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Proteus syndrome (PROTEUS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Proteus syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Kyphoscoliosis",
+    "Dolichocephaly",
+    "Hyperkeratosis",
+    "Typified by somatic mosaicism",
+    "Moderate intellectual disability",
+    "Facial hyperostosis",
+    "Deep venous thrombosis",
+    "Long face",
+    "Downslanted palpebral fissures",
+    "Epidermal acanthosis",
+    "Cerebriform connective tissue nevus",
+    "Calvarial hyperostosis",
+    "Spinal cord compression",
+    "Lymphangioma",
+    "Splenomegaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

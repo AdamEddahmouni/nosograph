@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'macular dystrophy with central cone involvement (MACULAR_DYSTR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of macular dystrophy with central cone involvement
-SYMPTOMS = []
+SYMPTOMS = [
+    "Reduced visual acuity",
+    "Red-green dyschromatopsia",
+    "High myopia",
+    "Bull's eye maculopathy",
+    "Central scotoma",
+    "Macular dystrophy",
+    "Late young adult onset",
+    "Optic disc pallor",
+    "Visual impairment",
+    "Autosomal recessive inheritance",
+    "Perifoveal ring of hyperautofluorescence",
+    "Middle age onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

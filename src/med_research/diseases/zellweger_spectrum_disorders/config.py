@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Zellweger spectrum disorders (ZELLWEGER_SPECTRUM_DISORDERS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Zellweger spectrum disorders
-SYMPTOMS = []
+SYMPTOMS = [
+    "Chiari type I malformation",
+    "Developmental cataract",
+    "Hypocholesterolemia",
+    "Decreased nerve conduction velocity",
+    "Optic atrophy",
+    "Ataxia",
+    "Corpus callosum atrophy",
+    "Tip-toe gait",
+    "Pes cavus",
+    "Feeding difficulties",
+    "Motor axonal neuropathy",
+    "Limb tremor",
+    "Hyperoxaluria",
+    "Hyperreflexia",
+    "Leukodystrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

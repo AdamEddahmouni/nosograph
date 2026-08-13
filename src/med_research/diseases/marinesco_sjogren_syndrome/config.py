@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Marinesco-Sjogren syndrome (MARINESCO_SJOGREN_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Marinesco-Sjogren syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Failure to thrive",
+    "Cubitus valgus",
+    "Short metatarsal",
+    "Childhood onset",
+    "Microcephaly",
+    "Kyphosis",
+    "Hypotonia",
+    "Skeletal muscle atrophy",
+    "Short metacarpal",
+    "Pes planus",
+    "Developmental cataract",
+    "Cerebellar atrophy",
+    "Myopathy",
+    "Rimmed vacuoles",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

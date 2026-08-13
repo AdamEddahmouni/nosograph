@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'muscular dystrophy, congenital hearing loss, and ovarian insuf
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of muscular dystrophy, congenital hearing loss, and ovarian insufficiency syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Weak cry",
+    "Rimmed vacuoles",
+    "Decreased fetal movement",
+    "Centrally nucleated skeletal muscle fibers",
+    "Failure to thrive",
+    "Reduced forced vital capacity",
+    "Skeletal muscle autophagosome accumulation",
+    "Respiratory insufficiency",
+    "Congenital onset",
+    "Scoliosis",
+    "Poor suck",
+    "Motor delay",
+    "Autosomal recessive inheritance",
+    "Premature ovarian insufficiency",
+    "Short stature",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

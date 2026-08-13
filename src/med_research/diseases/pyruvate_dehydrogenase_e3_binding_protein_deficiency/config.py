@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'pyruvate dehydrogenase E3-binding protein deficiency (PYRUVATE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pyruvate dehydrogenase E3-binding protein deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Spastic paraplegia",
+    "Microcephaly",
+    "Global developmental delay",
+    "Partial agenesis of the corpus callosum",
+    "Dystonia",
+    "Abnormality of eye movement",
+    "Poor gross motor coordination",
+    "Optic atrophy",
+    "Hyperalaninemia",
+    "Seizure",
+    "Autosomal recessive inheritance",
+    "Pectus excavatum",
+    "Poor fine motor coordination",
+    "Lactic acidosis",
+    "Spastic tetraplegia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

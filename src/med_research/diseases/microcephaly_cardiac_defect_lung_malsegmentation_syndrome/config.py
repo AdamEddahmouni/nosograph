@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'microcephaly-cardiac defect-lung malsegmentation syndrome (MIC
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of microcephaly-cardiac defect-lung malsegmentation syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Unilateral renal agenesis",
+    "Preauricular pit",
+    "Underdeveloped nasal alae",
+    "Cleft palate",
+    "Autosomal recessive inheritance",
+    "Short distal phalanx of finger",
+    "Hydranencephaly",
+    "Webbed neck",
+    "Ventricular septal defect",
+    "Truncus arteriosus",
+    "Microcephaly",
+    "Abnormality of the respiratory system",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

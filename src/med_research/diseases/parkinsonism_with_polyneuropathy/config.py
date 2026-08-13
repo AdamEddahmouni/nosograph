@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'parkinsonism with polyneuropathy (PARKINSONISM_WITH_POLYNEUROP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of parkinsonism with polyneuropathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased motor nerve conduction velocity",
+    "Decreased compound muscle action potential amplitude",
+    "Autosomal dominant inheritance",
+    "Depression",
+    "Middle age onset",
+    "Diffuse cerebral atrophy",
+    "Resting tremor",
+    "Bradykinesia",
+    "Late onset",
+    "Parkinsonism with favorable response to dopaminergic medication",
+    "Polyneuropathy",
+    "Decreased amplitude of sensory action potentials",
+    "Rigidity",
+    "Anxiety",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mandibulofacial dysostosis-microcephaly syndrome (MANDIBULOFAC
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mandibulofacial dysostosis-microcephaly syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Midface retrusion",
+    "Progressive microcephaly",
+    "Autosomal dominant inheritance",
+    "Overfolded helix",
+    "Malar flattening",
+    "Microcephaly",
+    "Telecanthus",
+    "Atrial septal defect",
+    "Downslanted palpebral fissures",
+    "Low-set ears",
+    "Preauricular skin tag",
+    "Short nose",
+    "Ventricular septal defect",
+    "Upslanted palpebral fissure",
+    "Conductive hearing impairment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Adams-Oliver syndrome (ADAMS_OLIVER_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Adams-Oliver syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Global developmental delay",
+    "Microcephaly",
+    "Aplasia cutis congenita on trunk or limbs",
+    "Patent foramen ovale",
+    "Delayed speech and language development",
+    "Protruding ear",
+    "Retrocerebellar cyst",
+    "Single transverse palmar crease",
+    "Decreased fetal movement",
+    "Talipes equinovarus",
+    "Splenomegaly",
+    "Absent toe",
+    "Ventriculomegaly",
+    "Intellectual disability",
+    "Pachygyria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

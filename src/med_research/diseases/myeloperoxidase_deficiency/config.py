@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'myeloperoxidase deficiency (MYELOPEROXIDASE_DEFICIENCY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of myeloperoxidase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Reduced neutrophil myeloperoxidase activity",
+    "Abnormality of blood and blood-forming tissues",
+    "Autosomal recessive inheritance",
+    "Diminished neutrophil myeloperoxidase activity",
+    "Abnormality of the immune system",
+    "Abnormality of metabolism/homeostasis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

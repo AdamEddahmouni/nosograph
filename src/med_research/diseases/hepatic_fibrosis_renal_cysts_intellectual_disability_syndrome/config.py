@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'hepatic fibrosis-renal cysts-intellectual disability syndrome 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hepatic fibrosis-renal cysts-intellectual disability syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Occipital encephalocele",
+    "Postaxial polydactyly",
+    "Autosomal recessive inheritance",
+    "Abnormality of the urinary system",
+    "Agenesis of cerebellar vermis",
+    "Periportal fibrosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

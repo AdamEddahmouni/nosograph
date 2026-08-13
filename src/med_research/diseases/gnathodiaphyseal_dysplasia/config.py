@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'gnathodiaphyseal dysplasia (GNATHODIAPHYSEAL_DYSPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of gnathodiaphyseal dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Osteopenia",
+    "Autosomal dominant inheritance",
+    "Diaphyseal cortical sclerosis",
+    "Osteomyelitis",
+    "Increased susceptibility to fractures",
+    "Juvenile onset",
+    "Bowing of the long bones",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

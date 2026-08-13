@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'brachydactyly-arterial hypertension syndrome (BRACHYDACTYLY_AR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of brachydactyly-arterial hypertension syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short stature",
+    "Hypertension",
+    "Autosomal dominant inheritance",
+    "Short metacarpal",
+    "Type E brachydactyly",
+    "Short phalanx of finger",
+    "Cone-shaped epiphysis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

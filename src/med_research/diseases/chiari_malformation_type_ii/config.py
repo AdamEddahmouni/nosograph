@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Chiari malformation type II (CHIARI_MALFORMATION_TYPE_II)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Chiari malformation type II
-SYMPTOMS = []
+SYMPTOMS = [
+    "Non-Mendelian inheritance",
+    "Syringomyelia",
+    "Spina bifida",
+    "Opisthotonus",
+    "Bulbar signs",
+    "Hypotonia",
+    "Agenesis of corpus callosum",
+    "Cervical myelopathy",
+    "Limb muscle weakness",
+    "Chiari malformation",
+    "Occipital neuralgia",
+    "Nystagmus",
+    "Cyanosis",
+    "Dysphagia",
+    "Myelomeningocele",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

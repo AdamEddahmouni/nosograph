@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Stormorken syndrome (STORMORKEN_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Stormorken syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypotelorism",
+    "Elevated circulating creatine kinase activity",
+    "Epistaxis",
+    "Myopathy",
+    "Miosis",
+    "Increased muscle fatiguability",
+    "Prominent nose",
+    "Subarachnoid hemorrhage",
+    "Asplenia",
+    "Hematuria",
+    "Ichthyosis",
+    "Autosomal dominant inheritance",
+    "Dyslexia",
+    "Abnormal bleeding",
+    "Short stature",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

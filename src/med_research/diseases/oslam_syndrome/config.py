@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'OSLAM syndrome (OSLAM_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of OSLAM syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Radioulnar synostosis",
+    "Neoplasm",
+    "Anemia",
+    "Radial deviation of finger",
+    "Osteosarcoma",
+    "Clinodactyly",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

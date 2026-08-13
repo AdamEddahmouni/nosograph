@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'primary immunodeficiency with natural-killer cell deficiency a
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of primary immunodeficiency with natural-killer cell deficiency and adrenal insufficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperpigmentation of the skin",
+    "Hepatomegaly",
+    "Respiratory insufficiency",
+    "Autosomal recessive inheritance",
+    "Intrauterine growth retardation",
+    "Reduced total natural killer cell count",
+    "Respiratory failure",
+    "Recurrent viral infections",
+    "Lymphadenopathy",
+    "Microcephaly",
+    "Lymphoproliferative disorder",
+    "Mild global developmental delay",
+    "Short stature",
+    "Adrenocorticotropic hormone excess",
+    "Splenomegaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

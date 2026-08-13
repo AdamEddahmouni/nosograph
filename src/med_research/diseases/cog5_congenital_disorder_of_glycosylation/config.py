@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'COG5-congenital disorder of glycosylation (COG5_CONGENITAL_DIS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of COG5-congenital disorder of glycosylation
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypotonia",
+    "Microcephaly",
+    "Short stature",
+    "Autosomal recessive inheritance",
+    "Delayed speech and language development",
+    "Neurogenic bladder",
+    "Cerebellar atrophy",
+    "Motor delay",
+    "Type II transferrin isoform profile",
+    "Intellectual disability",
+    "Cerebral atrophy",
+    "Atrophy/Degeneration affecting the brainstem",
+    "Truncal ataxia",
+    "Hearing impairment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'amyotrophic lateral sclerosis type 4 (AMYOTROPHIC_LATERAL_SCLE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of amyotrophic lateral sclerosis type 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Clonus",
+    "Juvenile onset",
+    "Decreased compound muscle action potential amplitude",
+    "Hyperreflexia",
+    "Diffuse axonal swelling",
+    "Abnormal lower motor neuron morphology",
+    "Muscle fibrillation",
+    "Distal amyotrophy",
+    "Atrophy of the spinal cord",
+    "Young adult onset",
+    "EMG: positive sharp waves",
+    "Autosomal dominant inheritance",
+    "Amyotrophic lateral sclerosis",
+    "Babinski sign",
+    "Pallor of dorsal columns of the spinal cord",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

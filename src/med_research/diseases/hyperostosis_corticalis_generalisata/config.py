@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'hyperostosis corticalis generalisata (HYPEROSTOSIS_CORTICALIS_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hyperostosis corticalis generalisata
-SYMPTOMS = []
+SYMPTOMS = [
+    "Headache",
+    "Cranial nerve paralysis",
+    "Autosomal recessive inheritance",
+    "Increased bone mineral density",
+    "Hearing impairment",
+    "Elevated circulating PINP concentration",
+    "Optic atrophy from cranial nerve compression",
+    "Elevated circulating alkaline phosphatase concentration",
+    "Thickened cortex of long bones",
+    "Cranial hyperostosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

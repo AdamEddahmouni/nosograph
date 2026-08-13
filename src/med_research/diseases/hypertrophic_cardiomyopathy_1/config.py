@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'hypertrophic cardiomyopathy 1 (HYPERTROPHIC_CARDIOMYOPATHY_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypertrophic cardiomyopathy 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congestive heart failure",
+    "Subvalvular aortic stenosis",
+    "Sudden death",
+    "Autosomal dominant inheritance",
+    "Asymmetric septal hypertrophy",
+    "Arrhythmia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

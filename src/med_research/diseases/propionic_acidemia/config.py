@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'propionic acidemia (PROPIONIC_ACIDEMIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of propionic acidemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Coma",
+    "Tachypnea",
+    "Dehydration",
+    "Axial hypotonia",
+    "Osteoporosis",
+    "Metabolic acidosis",
+    "Hyperglycinuria",
+    "Apnea",
+    "Short stature",
+    "Feeding difficulties in infancy",
+    "Constipation",
+    "Global developmental delay",
+    "Hyperammonemia",
+    "Anemia",
+    "Limb hypertonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

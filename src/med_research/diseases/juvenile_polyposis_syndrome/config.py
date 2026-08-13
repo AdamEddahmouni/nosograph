@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'juvenile polyposis syndrome (JUVENILE_POLYPOSIS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of juvenile polyposis syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Rectal prolapse",
+    "Hypoalbuminemia",
+    "Intussusception",
+    "Autosomal dominant inheritance",
+    "Multiple gastric polyps",
+    "Abdominal pain",
+    "Duodenal adenocarcinoma",
+    "Diarrhea",
+    "Failure to thrive",
+    "Neoplasm of the stomach",
+    "Hematochezia",
+    "Hypokalemia",
+    "Colon cancer",
+    "Clubbing",
+    "Anemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

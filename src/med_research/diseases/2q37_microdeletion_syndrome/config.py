@@ -8,8 +8,23 @@ PIPELINE_LABEL = '2q37 microdeletion syndrome (2Q37_MICRODELETION_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of 2q37 microdeletion syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Motor delay",
+    "Sleep disturbance",
+    "Brachydactyly",
+    "Anteverted nares",
+    "Short stature",
+    "Broad face",
+    "Thin upper lip vermilion",
+    "Depressed nasal bridge",
+    "Motor stereotypy",
+    "Round face",
+    "Short metacarpal",
+    "Skin-picking",
+    "Intellectual disability",
+    "Congenital onset",
+    "Type E brachydactyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

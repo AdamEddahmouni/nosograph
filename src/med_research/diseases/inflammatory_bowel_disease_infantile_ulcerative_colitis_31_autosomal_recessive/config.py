@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'inflammatory bowel disease (infantile ulcerative colitis) 31, 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of inflammatory bowel disease (infantile ulcerative colitis) 31, autosomal recessive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Elevated circulating C-reactive protein concentration",
+    "Ulcerative colitis",
+    "Anemia",
+    "Motor delay",
+    "Bloody diarrhea",
+    "Increased total leukocyte count",
+    "Elevated erythrocyte sedimentation rate",
+    "Infantile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

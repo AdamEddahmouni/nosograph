@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'short-limb skeletal dysplasia with severe combined immunodefic
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of short-limb skeletal dysplasia with severe combined immunodeficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal thorax morphology",
+    "Decreased total lymphocyte count",
+    "Hypoplasia of the thymus",
+    "Death in childhood",
+    "Severe combined immunodeficiency",
+    "Metaphyseal chondrodysplasia",
+    "Autosomal recessive inheritance",
+    "Agammaglobulinemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

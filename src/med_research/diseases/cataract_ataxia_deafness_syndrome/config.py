@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cataract-ataxia-deafness syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short stature",
+    "Distal sensory impairment",
+    "Developmental cataract",
+    "Mild intellectual disability",
+    "Ataxia",
+    "Autosomal recessive inheritance",
+    "Adult onset sensorineural hearing impairment",
+    "Polyneuropathy",
+    "Areflexia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

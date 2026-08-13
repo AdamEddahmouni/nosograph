@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'congenital vertical talus (CONGENITAL_VERTICAL_TALUS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital vertical talus
-SYMPTOMS = []
+SYMPTOMS = [
+    "Equinus calcaneus",
+    "Arthritis",
+    "Calcaneovalgus deformity",
+    "Autosomal dominant inheritance",
+    "Rocker bottom foot",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

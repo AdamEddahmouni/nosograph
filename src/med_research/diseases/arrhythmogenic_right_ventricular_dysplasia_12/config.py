@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'arrhythmogenic right ventricular dysplasia 12 (ARRHYTHMOGENIC_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of arrhythmogenic right ventricular dysplasia 12
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Ventricular arrhythmia",
+    "Ventricular tachycardia",
+    "Syncope",
+    "Prolonged QRS complex",
+    "Right ventricular cardiomyopathy",
+    "Adult onset",
+    "T-wave inversion",
+    "Palmoplantar keratoderma",
+    "Woolly hair",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

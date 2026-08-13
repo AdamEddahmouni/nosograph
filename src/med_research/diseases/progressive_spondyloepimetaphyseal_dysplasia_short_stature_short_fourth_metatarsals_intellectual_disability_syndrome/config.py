@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'progressive spondyloepimetaphyseal dysplasia-short stature-sho
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of progressive spondyloepimetaphyseal dysplasia-short stature-short fourth metatarsals-intellectual disability syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Overlapping toe",
+    "Hypertelorism",
+    "Depressed nasal bridge",
+    "Microcephaly",
+    "Scoliosis",
+    "Carpal bone hypoplasia",
+    "Short fourth metatarsal",
+    "Generalized hypotonia",
+    "Frontal bossing",
+    "Tented upper lip vermilion",
+    "Motor delay",
+    "Femoral bowing",
+    "Limited elbow extension",
+    "Infantile onset",
+    "Ptosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

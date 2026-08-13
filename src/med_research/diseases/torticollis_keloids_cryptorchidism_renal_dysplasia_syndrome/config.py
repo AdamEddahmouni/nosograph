@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'torticollis-keloids-cryptorchidism-renal dysplasia syndrome (T
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of torticollis-keloids-cryptorchidism-renal dysplasia syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Unilateral renal atrophy",
+    "Keloids",
+    "Nephritis",
+    "Oligozoospermia",
+    "Pyelonephritis",
+    "Renal dysplasia",
+    "Varicose veins",
+    "Torticollis",
+    "Cryptorchidism",
+    "Melanocytic nevus",
+    "Facial asymmetry",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

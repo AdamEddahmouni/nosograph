@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Smith-Lemli-Opitz syndrome (SMITH_LEMLI_OPITZ_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Smith-Lemli-Opitz syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypoplasia of the frontal lobes",
+    "Pulmonary hypoplasia",
+    "Hypertelorism",
+    "Renal hypoplasia",
+    "2-3 toe syndactyly",
+    "Colpocephaly",
+    "Hearing impairment",
+    "Hepatomegaly",
+    "Hypoalbuminemia",
+    "Intestinal malrotation",
+    "Hammertoe",
+    "Bifid scrotum",
+    "Microretrognathia",
+    "Intellectual disability",
+    "Pyloric stenosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

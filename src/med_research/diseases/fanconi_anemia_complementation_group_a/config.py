@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Fanconi anemia complementation group A (FANCONI_ANEMIA_COMPLEM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Fanconi anemia complementation group A
-SYMPTOMS = []
+SYMPTOMS = [
+    "Anemia",
+    "Complete duplication of thumb phalanx",
+    "Reticulocytopenia",
+    "Chromosomal breakage induced by crosslinking agents",
+    "Prolonged G2 phase of cell cycle",
+    "Short stature",
+    "Ectopic kidney",
+    "Horseshoe kidney",
+    "Bruising susceptibility",
+    "Strabismus",
+    "Cryptorchidism",
+    "Autosomal recessive inheritance",
+    "Absent thumb",
+    "Anemic pallor",
+    "Male infertility",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

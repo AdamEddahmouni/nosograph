@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINAN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal dominant hypophosphatemic rickets
-SYMPTOMS = []
+SYMPTOMS = [
+    "Generalized muscle weakness",
+    "Rickets",
+    "Elevated circulating alkaline phosphatase concentration",
+    "Autosomal dominant inheritance",
+    "Osteomalacia",
+    "Bone pain",
+    "Abnormality of the lower limb",
+    "Hypophosphatemia",
+    "Hypophosphatemic rickets",
+    "Short stature",
+    "Abnormality of the dentition",
+    "Renal phosphate wasting",
+    "Typified by incomplete penetrance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

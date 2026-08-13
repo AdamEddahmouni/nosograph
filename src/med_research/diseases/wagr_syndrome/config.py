@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'WAGR syndrome (WAGR_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of WAGR syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Obesity",
+    "Intellectual disability",
+    "Abnormality of the male genitalia",
+    "Cryptorchidism",
+    "Aniridia",
+    "Contiguous gene syndrome",
+    "Renal insufficiency",
+    "Abnormality of the uterus",
+    "Typified by somatic mosaicism",
+    "Renal neoplasm",
+    "Nephropathy",
+    "Hypospadias",
+    "Autosomal dominant inheritance",
+    "Nephroblastoma",
+    "Streak ovary",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

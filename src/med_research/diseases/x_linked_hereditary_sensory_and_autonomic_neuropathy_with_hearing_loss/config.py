@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'X-linked hereditary sensory and autonomic neuropathy with hear
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked hereditary sensory and autonomic neuropathy with hearing loss
-SYMPTOMS = []
+SYMPTOMS = [
+    "Myopia",
+    "Abnormal speech discrimination",
+    "Vertigo",
+    "Childhood onset",
+    "Intellectual disability",
+    "Slowly progressive",
+    "X-linked recessive inheritance",
+    "Distal sensory impairment",
+    "Areflexia",
+    "Tinnitus",
+    "Unsteady gait",
+    "Cochlear nerve hypoplasia",
+    "Abnormal middle ear reflexes",
+    "Skeletal muscle atrophy",
+    "Sensory axonal neuropathy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

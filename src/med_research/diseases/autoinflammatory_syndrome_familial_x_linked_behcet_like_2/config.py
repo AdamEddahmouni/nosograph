@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autoinflammatory syndrome, familial, X-linked, Behcet-like 2 (
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autoinflammatory syndrome, familial, X-linked, Behcet-like 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Recurrent fever",
+    "Reduced total natural killer cell count",
+    "Elevated circulating C-reactive protein concentration",
+    "Increased total lymphocyte count",
+    "Arthritis",
+    "Thrombocytosis",
+    "Colitis",
+    "Recurrent respiratory infections",
+    "Fever",
+    "Elevated erythrocyte sedimentation rate",
+    "Perianal abscess",
+    "Juvenile onset",
+    "Diarrhea",
+    "Chronic constipation",
+    "Decreased memory B cell proportion",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

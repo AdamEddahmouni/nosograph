@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'vasculitis, lymphocytic, nodular (VASCULITIS_LYMPHOCYTIC_NODUL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of vasculitis, lymphocytic, nodular
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormality of metabolism/homeostasis",
+    "Nodular inflammatory vasculitis",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

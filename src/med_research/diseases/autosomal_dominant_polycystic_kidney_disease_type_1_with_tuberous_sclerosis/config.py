@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'autosomal dominant polycystic kidney disease type 1 with tuber
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal dominant polycystic kidney disease type 1 with tuberous sclerosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Polycystic kidney dysplasia",
+    "Cortical tubers",
+    "Autosomal dominant inheritance",
+    "Renal angiomyolipoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

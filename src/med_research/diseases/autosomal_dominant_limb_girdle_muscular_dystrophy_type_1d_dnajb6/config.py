@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autosomal dominant limb-girdle muscular dystrophy type 1D (DNA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal dominant limb-girdle muscular dystrophy type 1D (DNAJB6)
-SYMPTOMS = []
+SYMPTOMS = [
+    "Bulbar palsy",
+    "Elevated circulating creatine kinase activity",
+    "Flexion contracture",
+    "Loss of ambulation",
+    "Difficulty running",
+    "Rimmed vacuoles",
+    "Dysphagia",
+    "Gowers sign",
+    "Decreased compound muscle action potential amplitude",
+    "Myalgia",
+    "Pelvic girdle muscle weakness",
+    "Muscle fiber splitting",
+    "Slowly progressive",
+    "Muscular dystrophy",
+    "Facial palsy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

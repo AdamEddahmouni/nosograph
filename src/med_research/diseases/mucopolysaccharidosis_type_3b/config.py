@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mucopolysaccharidosis type 3B (MUCOPOLYSACCHARIDOSIS_TYPE_3B)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mucopolysaccharidosis type 3B
-SYMPTOMS = []
+SYMPTOMS = [
+    "Joint stiffness",
+    "Recurrent upper respiratory tract infections",
+    "Progressive neurologic deterioration",
+    "Diarrhea",
+    "Hearing impairment",
+    "Coarse facial features",
+    "Splenomegaly",
+    "Sleep disturbance",
+    "Coarse hair",
+    "Cardiomegaly",
+    "Dense calvaria",
+    "Ovoid thoracolumbar vertebrae",
+    "Juvenile onset",
+    "Hepatomegaly",
+    "Dysostosis multiplex",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

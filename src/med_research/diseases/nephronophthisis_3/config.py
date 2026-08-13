@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'nephronophthisis 3 (NEPHRONOPHTHISIS_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of nephronophthisis 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hematuria",
+    "Stage 5 chronic kidney disease",
+    "Enlarged kidney",
+    "Enuresis",
+    "Polydipsia",
+    "Tubulointerstitial fibrosis",
+    "Infantile onset",
+    "Hepatic fibrosis",
+    "Renal tubular atrophy",
+    "Renal corticomedullary cysts",
+    "Childhood onset",
+    "Failure to thrive",
+    "Renal insufficiency",
+    "Nephronophthisis",
+    "Polyuria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

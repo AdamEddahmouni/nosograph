@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'focal segmental glomerulosclerosis 7 (FOCAL_SEGMENTAL_GLOMERUL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of focal segmental glomerulosclerosis 7
-SYMPTOMS = []
+SYMPTOMS = [
+    "Adult onset",
+    "Focal segmental glomerulosclerosis",
+    "Typified by incomplete penetrance",
+    "Stage 5 chronic kidney disease",
+    "Nephrotic syndrome",
+    "Autosomal dominant inheritance",
+    "Proteinuria",
+    "Renal hypoplasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

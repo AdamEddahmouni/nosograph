@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'nanophthalmos 2 (NANOPHTHALMOS_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of nanophthalmos 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Microphthalmia",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'pelviscapular dysplasia (PELVISCAPULAR_DYSPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pelviscapular dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Wrist flexion contracture",
+    "Microglossia",
+    "Microcornea",
+    "Hydranencephaly",
+    "Blepharophimosis",
+    "Bell-shaped thorax",
+    "Hydronephrosis",
+    "Autosomal recessive inheritance",
+    "Alveolar ridge overgrowth",
+    "Posteriorly rotated ears",
+    "2-3 toe syndactyly",
+    "Hypertelorism",
+    "Dislocated radial head",
+    "Frontal bossing",
+    "Short neck",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

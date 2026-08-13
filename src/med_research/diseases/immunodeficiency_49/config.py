@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'immunodeficiency 49 (IMMUNODEFICIENCY_49)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 49
-SYMPTOMS = []
+SYMPTOMS = [
+    "Seizure",
+    "Short philtrum",
+    "Congenital onset",
+    "Global developmental delay",
+    "Psoriasiform dermatitis",
+    "Pulmonary artery stenosis",
+    "Posteriorly rotated ears",
+    "Wormian bones",
+    "Autosomal dominant inheritance",
+    "Upslanted palpebral fissure",
+    "Spastic tetraplegia",
+    "Decreased total T cell count",
+    "Umbilical hernia",
+    "Decreased total lymphocyte count",
+    "Hypotonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

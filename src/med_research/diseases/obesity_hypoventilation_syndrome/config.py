@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'Obesity Hypoventilation Syndrome (OBESITY_HYPOVENTILATION_SYND
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Obesity Hypoventilation Syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypoventilation",
+    "Obesity",
+    "Autosomal recessive inheritance",
+    "Cyanosis",
+    "Excessive daytime somnolence",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

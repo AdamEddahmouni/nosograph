@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neuroectodermal melanolysosomal disease (NEUROECTODERMAL_MELAN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neuroectodermal melanolysosomal disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Global developmental delay",
+    "Intellectual disability",
+    "Spasticity",
+    "Seizure",
+    "Generalized hypotonia",
+    "Exotropia",
+    "Hypopigmentation of the skin",
+    "Ataxia",
+    "Hypotonia",
+    "Death in childhood",
+    "Accumulation of melanosomes in melanocytes",
+    "Nystagmus",
+    "Infantile onset",
+    "Silver-gray hair",
+    "Melanin pigment aggregation in hair shafts",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

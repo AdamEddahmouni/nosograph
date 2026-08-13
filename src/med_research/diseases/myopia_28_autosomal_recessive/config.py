@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'myopia 28, autosomal recessive (MYOPIA_28_AUTOSOMAL_RECESSIVE)
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of myopia 28, autosomal recessive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Childhood onset",
+    "Retinal detachment",
+    "Autosomal recessive inheritance",
+    "Cataract",
+    "High myopia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

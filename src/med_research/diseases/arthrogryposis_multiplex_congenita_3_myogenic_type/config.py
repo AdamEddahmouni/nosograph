@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'arthrogryposis multiplex congenita 3, myogenic type (ARTHROGRY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of arthrogryposis multiplex congenita 3, myogenic type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyporeflexia",
+    "Hypermetropia",
+    "Bilateral talipes equinovarus",
+    "Kyphoscoliosis",
+    "Scoliosis",
+    "Fetal onset",
+    "Adducted thumb",
+    "Kyphosis",
+    "Arthrogryposis multiplex congenita",
+    "Areflexia",
+    "Increased variability in muscle fiber diameter",
+    "Abnormal circulating creatine kinase activity",
+    "Hypotonia",
+    "Proximal muscle weakness",
+    "Generalized hypotonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

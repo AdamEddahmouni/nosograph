@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autosomal dominant cerebellar ataxia, deafness and narcolepsy 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal dominant cerebellar ataxia, deafness and narcolepsy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Type II diabetes mellitus",
+    "Hyperreflexia",
+    "Abnormal rapid eye movement sleep",
+    "Ataxia",
+    "Primitive reflex",
+    "Cerebellar atrophy",
+    "Sleep paralysis",
+    "Young adult onset",
+    "Memory impairment",
+    "Predominantly lower limb lymphedema",
+    "Depression",
+    "Excessive daytime somnolence",
+    "Dementia",
+    "Optic atrophy",
+    "Sensory neuropathy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

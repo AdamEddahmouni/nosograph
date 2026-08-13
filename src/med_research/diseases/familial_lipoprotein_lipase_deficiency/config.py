@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'familial lipoprotein lipase deficiency (FAMILIAL_LIPOPROTEIN_L
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial lipoprotein lipase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Jaundice",
+    "Splenomegaly",
+    "Hyperlipidemia",
+    "Hepatosplenomegaly",
+    "Episodic abdominal pain",
+    "Lactescent serum",
+    "Increased circulating chylomicron concentration",
+    "Nausea",
+    "Lipemia retinalis",
+    "Autosomal recessive inheritance",
+    "Young adult onset",
+    "Vomiting",
+    "Acute pancreatitis",
+    "Precocious atherosclerosis",
+    "Hypercholesterolemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

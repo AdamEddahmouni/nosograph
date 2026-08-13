@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Ehlers-Danlos syndrome, spondylodysplastic type, 2 (EHLERS_DAN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Ehlers-Danlos syndrome, spondylodysplastic type, 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Long upper lip",
+    "Advanced ossification of carpal bones",
+    "Short metacarpal",
+    "Short stature",
+    "Limited elbow movement",
+    "Hypotonia",
+    "Osteopenia",
+    "Finger joint hypermobility",
+    "Infantile onset",
+    "Beaking of vertebral bodies",
+    "Kyphoscoliosis",
+    "Flat face",
+    "Talipes equinovarus",
+    "Cutis laxa",
+    "Increased susceptibility to fractures",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

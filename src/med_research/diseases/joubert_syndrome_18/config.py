@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Joubert syndrome 18 (JOUBERT_SYNDROME_18)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Joubert syndrome 18
-SYMPTOMS = []
+SYMPTOMS = [
+    "Joint hypermobility",
+    "Cleft palate",
+    "Renal cyst",
+    "Trident pelvis",
+    "Camptodactyly",
+    "Occipital encephalocele",
+    "Second trimester onset",
+    "Kyphoscoliosis",
+    "Arrhinencephaly",
+    "Horseshoe kidney",
+    "Autosomal recessive inheritance",
+    "Intrahepatic biliary atresia",
+    "Agenesis of cerebellar vermis",
+    "Bowing of the long bones",
+    "Agenesis of corpus callosum",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'L-2-hydroxyglutaric aciduria (L_2_HYDROXYGLUTARIC_ACIDURIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of L-2-hydroxyglutaric aciduria
-SYMPTOMS = []
+SYMPTOMS = [
+    "Optic atrophy",
+    "Intellectual disability",
+    "Global brain atrophy",
+    "Abnormal pyramidal tract morphology",
+    "Severe demyelination of the white matter",
+    "Ataxia",
+    "L-2-hydroxyglutaric acidemia",
+    "Aphasia",
+    "Abnormality of extrapyramidal motor function",
+    "Developmental regression",
+    "Hearing impairment",
+    "Abnormal pyramidal sign",
+    "Infantile onset",
+    "Autosomal recessive inheritance",
+    "Leukoencephalopathy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

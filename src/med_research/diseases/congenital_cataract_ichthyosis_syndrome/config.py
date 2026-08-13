@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'congenital cataract-ichthyosis syndrome (CONGENITAL_CATARACT_I
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital cataract-ichthyosis syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital ichthyosiform erythroderma",
+    "Cataract",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Reynolds syndrome (REYNOLDS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Reynolds syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Palmar telangiectasia",
+    "Splenomegaly",
+    "Elevated erythrocyte sedimentation rate",
+    "Jaundice",
+    "Sclerodactyly",
+    "Late young adult onset",
+    "Calcinosis cutis",
+    "Raynaud phenomenon",
+    "Hepatomegaly",
+    "Calcinosis",
+    "Pruritus",
+    "Hyperbilirubinemia",
+    "Biliary cirrhosis",
+    "Arthralgia",
+    "Gastrointestinal hemorrhage",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

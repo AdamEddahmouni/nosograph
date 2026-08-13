@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'familial medullary thyroid carcinoma (FAMILIAL_MEDULLARY_THYRO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial medullary thyroid carcinoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Medullary thyroid carcinoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'PHACE syndrome (PHACE_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of PHACE syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Vascular dilatation",
+    "Seizure",
+    "Horner syndrome",
+    "Dandy-Walker malformation",
+    "Patent ductus arteriosus",
+    "Facial hemangioma",
+    "Arterial stenosis",
+    "Increased retinal vascularity",
+    "Optic atrophy",
+    "Anomalous branches of internal carotid artery",
+    "Subglottic hemangioma",
+    "Coarctation of aorta",
+    "Microphthalmia",
+    "Cerebellar hypoplasia",
+    "Optic nerve hypoplasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

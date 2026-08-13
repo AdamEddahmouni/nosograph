@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'junctional epidermolysis bullosa, non-Herlitz type (JUNCTIONAL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of junctional epidermolysis bullosa, non-Herlitz type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Plantar hyperkeratosis",
+    "Nail dystrophy",
+    "Patchy alopecia",
+    "Autosomal recessive inheritance",
+    "Congenital onset",
+    "Hypodontia",
+    "Carious teeth",
+    "Camptodactyly of finger",
+    "Palmar hyperhidrosis",
+    "Enamel hypoplasia",
+    "Oral mucosal blisters",
+    "Abnormal blistering of the skin",
+    "Fragile nails",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

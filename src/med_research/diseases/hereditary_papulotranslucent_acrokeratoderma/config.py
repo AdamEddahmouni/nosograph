@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'hereditary papulotranslucent acrokeratoderma (HEREDITARY_PAPUL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hereditary papulotranslucent acrokeratoderma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Papule",
+    "Fine hair",
+    "Autosomal dominant inheritance",
+    "Allergy",
+    "Skin plaque",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

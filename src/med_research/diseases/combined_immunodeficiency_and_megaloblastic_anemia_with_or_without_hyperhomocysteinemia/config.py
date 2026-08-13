@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'combined immunodeficiency and megaloblastic anemia with or wit
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of combined immunodeficiency and megaloblastic anemia with or without hyperhomocysteinemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Megaloblastic anemia",
+    "Autosomal recessive inheritance",
+    "Recurrent infections",
+    "Macrocytic anemia",
+    "Recurrent pneumonia",
+    "Autoimmunity",
+    "Hypersegmentation of neutrophil nuclei",
+    "Hyperhomocystinemia",
+    "Septic arthritis",
+    "Decreased circulating methylcobalamin concentration",
+    "Severe combined immunodeficiency",
+    "Decreased circulating immunoglobulin concentration",
+    "Anemia of inadequate production",
+    "Mild intellectual disability",
+    "Hearing impairment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

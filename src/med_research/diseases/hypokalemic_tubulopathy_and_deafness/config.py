@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'hypokalemic tubulopathy and deafness (HYPOKALEMIC_TUBULOPATHY_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypokalemic tubulopathy and deafness
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased circulating aldosterone concentration",
+    "Increased circulating renin concentration",
+    "Autosomal recessive inheritance",
+    "Ataxia",
+    "Renal salt wasting",
+    "Sensorineural hearing impairment",
+    "Acidosis",
+    "Seizure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

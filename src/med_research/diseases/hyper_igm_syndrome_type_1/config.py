@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hyper-IgM syndrome type 1 (HYPER_IGM_SYNDROME_TYPE_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hyper-IgM syndrome type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hepatomegaly",
+    "Cirrhosis",
+    "Hemolytic anemia",
+    "Decreased T cell activation",
+    "Sclerosing cholangitis",
+    "Diarrhea",
+    "Ankle clonus",
+    "Decreased circulating IgA concentration",
+    "Hyperreflexia",
+    "Impaired Ig class switch recombination",
+    "Gingivitis",
+    "Decreased total neutrophil count",
+    "Global developmental delay",
+    "Recurrent bacterial infections",
+    "Thrombocytopenia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

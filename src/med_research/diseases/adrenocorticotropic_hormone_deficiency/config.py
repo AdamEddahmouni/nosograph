@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'Adrenocorticotropic hormone deficiency (ADRENOCORTICOTROPIC_HO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Adrenocorticotropic hormone deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Seizure",
+    "Fasting hypoglycemia",
+    "Autosomal recessive inheritance",
+    "Infantile onset",
+    "Adrenal hypoplasia",
+    "Cholestasis",
+    "Adrenocorticotropic hormone deficiency",
+    "Decreased circulating cortisol level",
+    "Jaundice",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

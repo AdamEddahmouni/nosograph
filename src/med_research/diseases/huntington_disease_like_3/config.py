@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Huntington disease-like 3 (HUNTINGTON_DISEASE_LIKE_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Huntington disease-like 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Unsteady gait",
+    "Mental deterioration",
+    "Spasticity",
+    "Abnormal speech pattern",
+    "Abnormal pyramidal sign",
+    "Dystonia",
+    "Seizure",
+    "Chorea",
+    "Abnormal pyramidal tract morphology",
+    "Abnormality of extrapyramidal motor function",
+    "Mutism",
+    "Ataxia",
+    "Bowel incontinence",
+    "Frontal cortical atrophy",
+    "Caudate atrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

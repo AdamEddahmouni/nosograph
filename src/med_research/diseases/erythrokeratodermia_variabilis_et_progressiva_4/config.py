@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'erythrokeratodermia variabilis et progressiva 4 (ERYTHROKERATO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of erythrokeratodermia variabilis et progressiva 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Palmoplantar hyperkeratosis",
+    "Erythema",
+    "Epidermal acanthosis",
+    "Congenital nonbullous ichthyosiform erythroderma",
+    "Autosomal recessive inheritance",
+    "Congenital onset",
+    "Hyperkeratosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

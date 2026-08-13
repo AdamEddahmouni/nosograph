@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'severe combined immunodeficiency, autosomal recessive, T cell-
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of severe combined immunodeficiency, autosomal recessive, T cell-negative, B cell-negative, NK cell-positive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Purulent rhinitis",
+    "Autosomal recessive inheritance",
+    "Meningitis",
+    "Severe combined immunodeficiency",
+    "Failure to thrive secondary to recurrent infections",
+    "Diarrhea",
+    "Decreased total B cell count",
+    "Recurrent opportunistic infections",
+    "Pneumonia",
+    "Panhypogammaglobulinemia",
+    "Otitis media",
+    "Arthritis",
+    "Decreased total T cell count",
+    "Conjunctivitis",
+    "Mastoiditis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

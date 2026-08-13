@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'Boomerang dysplasia (BOOMERANG_DYSPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Boomerang dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Absent radius",
+    "Fibular aplasia",
+    "Autosomal dominant inheritance",
+    "Neonatal death",
+    "Hypoplastic nasal septum",
+    "Wide nasal bridge",
+    "Severe short stature",
+    "Underdeveloped nasal alae",
+    "Hypoplastic iliac body",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

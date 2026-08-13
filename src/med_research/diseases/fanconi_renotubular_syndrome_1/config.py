@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Fanconi renotubular syndrome 1 (FANCONI_RENOTUBULAR_SYNDROME_1
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Fanconi renotubular syndrome 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Osteomalacia",
+    "Glycosuria",
+    "Hypophosphatemia",
+    "Hyperphosphaturia",
+    "Hypokalemia",
+    "Lacticaciduria",
+    "Renal tubular dysfunction",
+    "Elevated circulating alkaline phosphatase concentration",
+    "Rickets",
+    "Metabolic acidosis",
+    "Muscle weakness",
+    "Impaired renal tubular reabsorption of phosphate",
+    "Low-molecular-weight proteinuria",
+    "Childhood onset",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

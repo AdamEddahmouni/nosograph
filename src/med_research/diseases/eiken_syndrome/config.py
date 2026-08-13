@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Eiken syndrome (EIKEN_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Eiken syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Prominent forehead",
+    "Febrile seizure (within the age range of 3 months to 6 years)",
+    "Delayed ossification of carpal bones",
+    "Thickened calvaria",
+    "Narrow pelvis bone",
+    "Thick lower lip vermilion",
+    "Delayed tarsal ossification",
+    "Midface retrusion",
+    "Fibular hypoplasia",
+    "Flattened epiphysis",
+    "Multiple unerupted teeth",
+    "Pseudoepiphyses",
+    "Short philtrum",
+    "Skeletal dysplasia",
+    "Persistence of primary teeth",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

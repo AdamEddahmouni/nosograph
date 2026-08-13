@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'classic homocystinuria (CLASSIC_HOMOCYSTINURIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of classic homocystinuria
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ectopia lentis",
+    "Personality disorder",
+    "Generalized osteoporosis",
+    "Hypopigmentation of the skin",
+    "Hypermethioninemia",
+    "Biconcave vertebral bodies",
+    "Disproportionate tall stature",
+    "Cutis marmorata",
+    "High palate",
+    "Methioninuria",
+    "Failure to thrive",
+    "Myopia",
+    "Kyphoscoliosis",
+    "Limitation of joint mobility",
+    "Global developmental delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

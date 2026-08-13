@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Usher syndrome type 1 (USHER_SYNDROME_TYPE_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Usher syndrome type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sensorineural hearing impairment",
+    "Prelingual sensorineural hearing impairment",
+    "Optic disc pallor",
+    "Visual loss",
+    "Infantile onset",
+    "Abnormal electroretinogram",
+    "Vestibular hyporeflexia",
+    "Hearing impairment",
+    "Nystagmus",
+    "Undetectable electroretinogram",
+    "Rod-cone dystrophy",
+    "Abnormal vestibular function",
+    "Motor delay",
+    "Left ventricular hypertrophy",
+    "Congenital sensorineural hearing impairment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

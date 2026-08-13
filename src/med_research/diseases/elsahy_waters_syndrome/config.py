@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Elsahy-Waters syndrome (ELSAHY_WATERS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Elsahy-Waters syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Low-set ears",
+    "Global developmental delay",
+    "Abnormality of the anus",
+    "Mild intellectual disability",
+    "Hypertelorism",
+    "Anteverted nares",
+    "Narrow forehead",
+    "Delayed fine motor development",
+    "Thick lower lip vermilion",
+    "Hypoplasia of the maxilla",
+    "Glaucoma",
+    "Bifid uvula",
+    "Thin upper lip vermilion",
+    "Wide nose",
+    "Delayed eruption of teeth",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

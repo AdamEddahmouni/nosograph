@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'familial cold autoinflammatory syndrome 2 (FAMILIAL_COLD_AUTOI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial cold autoinflammatory syndrome 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Arthritis",
+    "Neonatal onset",
+    "Typified by incomplete penetrance",
+    "Headache",
+    "Arthralgia",
+    "Splenomegaly",
+    "Recurrent aphthous stomatitis",
+    "Increased total leukocyte count",
+    "Pharyngalgia",
+    "Autosomal dominant inheritance",
+    "Recurrent fever",
+    "Infantile onset",
+    "Myalgia",
+    "Sensorineural hearing impairment",
+    "Skin rash",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

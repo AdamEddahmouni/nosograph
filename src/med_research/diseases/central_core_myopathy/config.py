@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'central core myopathy (CENTRAL_CORE_MYOPATHY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of central core myopathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Talipes",
+    "Ankle flexion contracture",
+    "Motor delay",
+    "Slowly progressive",
+    "Centrally nucleated skeletal muscle fibers",
+    "Delayed ability to walk",
+    "Weakness of facial musculature",
+    "Muscle weakness",
+    "Autosomal recessive inheritance",
+    "Increased variability in muscle fiber diameter",
+    "Pes planus",
+    "Feeding difficulties",
+    "Scoliosis",
+    "Hyporeflexia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

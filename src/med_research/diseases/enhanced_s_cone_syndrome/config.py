@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'enhanced S-cone syndrome (ENHANCED_S_CONE_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of enhanced S-cone syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cataract",
+    "Vitreoretinopathy",
+    "Pigmentary retinopathy",
+    "Hemeralopia",
+    "Edema",
+    "Undetectable electroretinogram",
+    "Autosomal recessive inheritance",
+    "Macular edema",
+    "Retinoschisis",
+    "Nyctalopia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

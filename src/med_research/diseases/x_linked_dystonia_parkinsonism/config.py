@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'X-linked dystonia-parkinsonism (X_LINKED_DYSTONIA_PARKINSONISM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked dystonia-parkinsonism
-SYMPTOMS = []
+SYMPTOMS = [
+    "Torsion dystonia",
+    "Myoclonus",
+    "Adult onset",
+    "X-linked recessive inheritance",
+    "Tremor",
+    "Parkinsonism with favorable response to dopaminergic medication",
+    "Chorea",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

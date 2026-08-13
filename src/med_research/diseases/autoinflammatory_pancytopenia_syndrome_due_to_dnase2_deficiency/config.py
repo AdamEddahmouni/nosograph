@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autoinflammatory-pancytopenia syndrome due to DNASE2 deficienc
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autoinflammatory-pancytopenia syndrome due to DNASE2 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Granuloma",
+    "Hepatic fibrosis",
+    "Proteinuria",
+    "Intestinal inflammation",
+    "Growth delay",
+    "Delayed gross motor development",
+    "Severe Epstein Barr virus infection",
+    "Hemophagocytosis",
+    "Type I diabetes mellitus",
+    "Congenital onset",
+    "Failure to thrive",
+    "Hepatosplenomegaly",
+    "Motor delay",
+    "Arthropathy",
+    "Neonatal onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

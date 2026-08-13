@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Perrault syndrome 4 (PERRAULT_SYNDROME_4)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Perrault syndrome 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cubitus valgus",
+    "Progressive sensorineural hearing impairment",
+    "Hypoplasia of the ovary",
+    "Strabismus",
+    "Premature ovarian insufficiency",
+    "Obesity",
+    "Cleft palate",
+    "Bicornuate uterus",
+    "Hypoplasia of the uterus",
+    "Increased circulating gonadotropin level",
+    "Motor delay",
+    "Oligomenorrhea",
+    "Osteoporosis",
+    "Tarlov cyst",
+    "Primary amenorrhea",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

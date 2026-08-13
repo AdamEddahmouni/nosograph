@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'rhizomelic syndrome, Urbach type (RHIZOMELIC_SYNDROME_URBACH_T
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of rhizomelic syndrome, Urbach type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Microcephaly",
+    "Pulmonic stenosis",
+    "Bifid distal phalanx of the thumb",
+    "Autosomal recessive inheritance",
+    "Wide anterior fontanel",
+    "Rhizomelia",
+    "Hip dislocation",
+    "Micrognathia",
+    "Complete duplication of thumb phalanx",
+    "Short stature",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

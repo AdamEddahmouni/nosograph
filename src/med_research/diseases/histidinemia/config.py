@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'histidinemia (HISTIDINEMIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of histidinemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Elevated urinary N-tau-ribosylhistidine level",
+    "Hyperhistidinemia",
+    "Autosomal dominant inheritance",
+    "Histidinuria",
+    "Intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'oculocutaneous albinism type 4 (OCULOCUTANEOUS_ALBINISM_TYPE_4
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of oculocutaneous albinism type 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Macular hypoplasia",
+    "Hypopigmentation of hair",
+    "Autosomal recessive inheritance",
+    "Blue irides",
+    "Visual impairment",
+    "Nystagmus",
+    "Fundus hypopigmentation",
+    "Albinism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

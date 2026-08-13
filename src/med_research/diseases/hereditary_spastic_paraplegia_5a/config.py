@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hereditary spastic paraplegia 5A (HEREDITARY_SPASTIC_PARAPLEGI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hereditary spastic paraplegia 5A
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal circulating cholesterol concentration",
+    "Upper limb muscle weakness",
+    "Optic atrophy",
+    "Abnormal cerebellum morphology",
+    "Lower limb spasticity",
+    "Upper limb spasticity",
+    "Scoliosis",
+    "Autosomal recessive inheritance",
+    "Hyperintensity of cerebral white matter on MRI",
+    "Impaired distal proprioception",
+    "Lower limb amyotrophy",
+    "Impaired vibration sensation in the lower limbs",
+    "Young adult onset",
+    "Lower limb muscle weakness",
+    "Urinary incontinence",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'late-onset retinal degeneration (LATE_ONSET_RETINAL_DEGENERATI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of late-onset retinal degeneration
-SYMPTOMS = []
+SYMPTOMS = [
+    "Adult onset",
+    "HP_0200065",
+    "Sub-RPE deposits",
+    "Autosomal dominant inheritance",
+    "Visual loss",
+    "Choroidal neovascularization",
+    "Retinal degeneration",
+    "Retinopathy",
+    "Scotoma",
+    "Adult-onset night blindness",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

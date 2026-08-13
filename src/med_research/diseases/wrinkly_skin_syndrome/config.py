@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'wrinkly skin syndrome (WRINKLY_SKIN_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of wrinkly skin syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pectus excavatum",
+    "Kyphosis",
+    "Osteopenia",
+    "Redundant skin",
+    "Scoliosis",
+    "Hypoplasia of the musculature",
+    "Low-set ears",
+    "Umbilical hernia",
+    "Downslanted palpebral fissures",
+    "Delayed speech and language development",
+    "Hypernasal speech",
+    "Delayed closure of the anterior fontanelle",
+    "Short nail",
+    "Sparse hair",
+    "Epicanthus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Kallmann syndrome (KALLMANN_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Kallmann syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Diabetes mellitus",
+    "Autosomal recessive inheritance",
+    "Testicular atrophy",
+    "Duane anomaly",
+    "Pes cavus",
+    "Short stature",
+    "Leydig cell insensitivity to gonadotropin",
+    "Osteoporosis",
+    "Hearing impairment",
+    "Cryptorchidism",
+    "Absence of pubertal development",
+    "Decreased testicular size",
+    "X-linked recessive inheritance",
+    "Aplasia of the olfactory bulb",
+    "Decreased serum testosterone concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

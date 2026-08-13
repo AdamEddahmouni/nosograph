@@ -8,8 +8,23 @@ PIPELINE_LABEL = '3-methylglutaconic aciduria (3_METHYLGLUTACONIC_ACIDURIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of 3-methylglutaconic aciduria
-SYMPTOMS = []
+SYMPTOMS = [
+    "Microcephaly",
+    "Hypotonia",
+    "Hypsarrhythmia",
+    "Tube feeding",
+    "Congenital onset",
+    "Tremor",
+    "Increased circulating lactate concentration",
+    "Severe intellectual disability",
+    "Apnea",
+    "Cataract",
+    "Bulbous nose",
+    "Persistent head lag",
+    "High palate",
+    "Dysphagia",
+    "Hypopnea",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'multicentric carpo-tarsal osteolysis with or without nephropat
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of multicentric carpo-tarsal osteolysis with or without nephropathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Childhood onset",
+    "Hypertension",
+    "Ankle swelling",
+    "Hypoplasia of the maxilla",
+    "Wrist swelling",
+    "Proteinuria",
+    "Osteolysis involving tarsal bones",
+    "Ulnar deviation of the hand",
+    "Carpal osteolysis",
+    "Inability to walk",
+    "Young adult onset",
+    "Ankle pain",
+    "Arthralgia",
+    "Metatarsal osteolysis",
+    "Metacarpal osteolysis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

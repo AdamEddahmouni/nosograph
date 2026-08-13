@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Jeune syndrome (JEUNE_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Jeune syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Omphalocele",
+    "Encephalocele",
+    "Macrotia",
+    "Mesomelia",
+    "Genu valgum",
+    "Short metacarpal",
+    "Ventriculomegaly",
+    "Delayed speech and language development",
+    "Renal insufficiency",
+    "Agenesis of corpus callosum",
+    "Stillbirth",
+    "Midface retrusion",
+    "Dandy-Walker malformation",
+    "Renal dysplasia",
+    "Short stature",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

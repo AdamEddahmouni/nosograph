@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'epidermolysis bullosa, junctional 4, intermediate (EPIDERMOLYS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of epidermolysis bullosa, junctional 4, intermediate
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal blistering of the skin",
+    "Macular hyperpigmented dermopathy",
+    "Lamina lucida cleavage",
+    "Carious teeth",
+    "Nail dystrophy",
+    "Autosomal recessive inheritance",
+    "Dystrophic fingernails",
+    "Congenital onset",
+    "Scarring alopecia of scalp",
+    "Dental enamel pits",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'hypercholesterolemia, familial, 1 (HYPERCHOLESTEROLEMIA_FAMILI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypercholesterolemia, familial, 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Coronary artery atherosclerosis",
+    "Autosomal dominant inheritance",
+    "Tendon xanthomatosis",
+    "Corneal arcus",
+    "Xanthelasma",
+    "Elevated circulating LDL-C concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

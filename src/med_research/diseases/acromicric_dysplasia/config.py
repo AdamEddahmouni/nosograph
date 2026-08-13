@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Acromicric dysplasia (ACROMICRIC_DYSPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Acromicric dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short long bone",
+    "Thick lower lip vermilion",
+    "Long eyelashes",
+    "Delayed skeletal maturation",
+    "Anteverted nares",
+    "Short phalanx of finger",
+    "Ovoid vertebral bodies",
+    "Severe short stature",
+    "Autosomal dominant inheritance",
+    "Hoarse voice",
+    "Short palm",
+    "Deep philtrum",
+    "Short metacarpal",
+    "Round face",
+    "Fifth metacarpal with ulnar notch",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of inflammatory bowel disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Typified by incomplete penetrance",
+    "Ulcerative colitis",
+    "Crohn's disease",
+    "Autosomal dominant inheritance",
+    "Inflammation of the large intestine",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

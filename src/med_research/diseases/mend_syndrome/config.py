@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'MEND syndrome (MEND_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of MEND syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Macular hypoplasia",
+    "Absent speech",
+    "Hypertonia",
+    "Cryptorchidism",
+    "Dandy-Walker malformation",
+    "Long fingers",
+    "Broad hallux",
+    "Global developmental delay",
+    "Overlapping toe",
+    "Seizure",
+    "Posteriorly rotated ears",
+    "Hydrocephalus",
+    "Low-set ears",
+    "Micrognathia",
+    "Cataract",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

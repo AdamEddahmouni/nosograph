@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'congenital heart defect-round face-developmental delay syndrom
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital heart defect-round face-developmental delay syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short stature",
+    "Narrow mouth",
+    "High axial triradius",
+    "Intellectual disability",
+    "Autosomal recessive inheritance",
+    "Round face",
+    "Ventricular septal defect",
+    "Depressed nasal bridge",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

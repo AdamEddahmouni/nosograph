@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'severe achondroplasia-developmental delay-acanthosis nigricans
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of severe achondroplasia-developmental delay-acanthosis nigricans syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Small foramen magnum",
+    "Disproportionate short stature",
+    "Recurrent otitis media",
+    "Brain abscess",
+    "Neonatal death",
+    "Femoral bowing",
+    "Rhizomelia",
+    "Severe short stature",
+    "Focal impaired awareness seizure",
+    "Acanthosis nigricans",
+    "Platyspondyly",
+    "Hearing impairment",
+    "High myopia",
+    "Seizure",
+    "Palmoplantar cutis laxa",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

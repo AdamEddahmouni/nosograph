@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'primary hyperoxaluria type 3 (PRIMARY_HYPEROXALURIA_TYPE_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of primary hyperoxaluria type 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperoxaluria",
+    "Increased urine 4-hydroxy-2-oxoglutarate level",
+    "Autosomal recessive inheritance",
+    "Calcium oxalate nephrolithiasis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

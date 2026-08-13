@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'Tietz syndrome (TIETZ_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Tietz syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Heterochromia iridis",
+    "Congenital onset",
+    "White eyebrow",
+    "Blue irides",
+    "Generalized hypopigmentation",
+    "Fundus hypopigmentation",
+    "Congenital sensorineural hearing impairment",
+    "Autosomal dominant inheritance",
+    "White eyelashes",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'spondyloepimetaphyseal dysplasia, di rocco type (SPONDYLOEPIME
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondyloepimetaphyseal dysplasia, di rocco type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Delayed skeletal maturation",
+    "Waddling gait",
+    "Bowing of the legs",
+    "Metaphyseal dysplasia",
+    "Infantile onset",
+    "Platyspondyly",
+    "Reduced bone mineral density",
+    "Irregular acetabular roof",
+    "Genu varum",
+    "Arthralgia",
+    "Autosomal dominant inheritance",
+    "Short stature",
+    "Delayed ossification of carpal bones",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

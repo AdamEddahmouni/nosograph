@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'immunodeficiency, common variable, 10 (IMMUNODEFICIENCY_COMMON
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency, common variable, 10
-SYMPTOMS = []
+SYMPTOMS = [
+    "Recurrent sinusitis",
+    "Asthma",
+    "Recurrent oral herpes",
+    "Central adrenal insufficiency",
+    "Alopecia totalis",
+    "Hypoglycemia",
+    "Global developmental delay",
+    "Anti-thyroid peroxidase antibody positivity",
+    "Chiari type I malformation",
+    "Decreased circulating IgA concentration",
+    "Autosomal dominant inheritance",
+    "Decreased circulating IgM concentration",
+    "Abnormal response to ACTH stimulation test",
+    "Combined immunodeficiency",
+    "Anti-thyroglobulin antibody positivity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

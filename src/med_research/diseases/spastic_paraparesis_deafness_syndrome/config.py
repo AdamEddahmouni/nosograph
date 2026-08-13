@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'spastic paraparesis-deafness syndrome (SPASTIC_PARAPARESIS_DEA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spastic paraparesis-deafness syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypogonadism",
+    "Hearing impairment",
+    "Juvenile onset",
+    "Short stature",
+    "Spastic paraparesis",
+    "Cataract",
+    "Tremor",
+    "X-linked inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

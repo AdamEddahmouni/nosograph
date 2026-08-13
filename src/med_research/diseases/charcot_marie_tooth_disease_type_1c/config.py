@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Charcot-Marie-Tooth disease type 1C (CHARCOT_MARIE_TOOTH_DISEA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Charcot-Marie-Tooth disease type 1C
-SYMPTOMS = []
+SYMPTOMS = [
+    "Distal amyotrophy",
+    "Pes cavus",
+    "Onion bulb formation",
+    "Decreased nerve conduction velocity",
+    "Middle age onset",
+    "Hypertrophic nerve changes",
+    "Paresthesia",
+    "Distal sensory impairment",
+    "Hyporeflexia",
+    "Distal muscle weakness",
+    "Autosomal dominant inheritance",
+    "Decreased distal sensory nerve action potential",
+    "Decreased motor nerve conduction velocity",
+    "Segmental peripheral demyelination/remyelination",
+    "Gait ataxia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

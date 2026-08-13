@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spinocerebellar ataxia type 5 (SPINOCEREBELLAR_ATAXIA_TYPE_5)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spinocerebellar ataxia type 5
-SYMPTOMS = []
+SYMPTOMS = [
+    "Facial myokymia",
+    "Autosomal dominant inheritance",
+    "Limb ataxia",
+    "Intention tremor",
+    "Rotary nystagmus",
+    "Cerebellar hypoplasia",
+    "Dysarthria",
+    "Slowly progressive",
+    "Impaired vibratory sensation",
+    "Strabismus",
+    "Hypotonia",
+    "Ankle clonus",
+    "Dysmetria",
+    "Poor head control",
+    "Incoordination",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

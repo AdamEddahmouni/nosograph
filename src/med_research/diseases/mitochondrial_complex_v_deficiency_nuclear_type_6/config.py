@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'mitochondrial complex V deficiency, nuclear type 6 (MITOCHONDR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mitochondrial complex V deficiency, nuclear type 6
-SYMPTOMS = []
+SYMPTOMS = [
+    "Death in childhood",
+    "Autosomal recessive inheritance",
+    "Hyperreflexia",
+    "Hypertrophic cardiomyopathy",
+    "Developmental regression",
+    "Bradykinesia",
+    "Ophthalmoplegia",
+    "Ataxia",
+    "Chorea",
+    "Lethargy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

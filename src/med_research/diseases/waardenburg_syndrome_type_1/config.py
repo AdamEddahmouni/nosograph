@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Waardenburg syndrome type 1 (WAARDENBURG_SYNDROME_TYPE_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Waardenburg syndrome type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Supernumerary ribs",
+    "Supernumerary vertebrae",
+    "Orofacial cleft",
+    "White eyebrow",
+    "Mandibular prognathia",
+    "Smooth philtrum",
+    "White forelock",
+    "Thick eyebrow",
+    "Telecanthus",
+    "Premature graying of hair",
+    "Blue irides",
+    "Congenital sensorineural hearing impairment",
+    "Blepharophimosis",
+    "Myelomeningocele",
+    "Hypertelorism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

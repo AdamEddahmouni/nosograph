@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'immunodeficiency due to ficolin3 deficiency (IMMUNODEFICIENCY_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency due to ficolin3 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Recurrent abscess formation",
+    "Necrotizing enterocolitis",
+    "Recurrent Staphylococcus aureus infection",
+    "Verrucae",
+    "Recurrent lower respiratory tract infections",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

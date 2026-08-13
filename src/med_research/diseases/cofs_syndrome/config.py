@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'COFS syndrome (COFS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of COFS syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Brisk reflexes",
+    "Prominent nasal bridge",
+    "Low-set ears",
+    "Delayed eruption of teeth",
+    "Recurrent pneumonia",
+    "CNS demyelination",
+    "Ataxia",
+    "Deeply set eye",
+    "Neurodegeneration",
+    "Abnormality of the genital system",
+    "Decreased fetal movement",
+    "Steep acetabular roof",
+    "Gliosis",
+    "Flared metaphysis",
+    "Polymicrogyria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

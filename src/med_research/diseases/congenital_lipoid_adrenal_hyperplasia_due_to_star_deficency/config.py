@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'congenital lipoid adrenal hyperplasia due to STAR deficency (C
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital lipoid adrenal hyperplasia due to STAR deficency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital adrenal hyperplasia",
+    "Hypospadias",
+    "Renal salt wasting",
+    "Autosomal recessive inheritance",
+    "Adrenogenital syndrome",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

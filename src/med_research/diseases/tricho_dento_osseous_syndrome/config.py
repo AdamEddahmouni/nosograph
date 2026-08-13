@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'tricho-dento-osseous syndrome (TRICHO_DENTO_OSSEOUS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of tricho-dento-osseous syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal mastoid morphology",
+    "Taurodontia",
+    "Frontal bossing",
+    "Fragile nails",
+    "Abnormal hair morphology",
+    "Increased bone mineral density",
+    "Microdontia",
+    "Dolichocephaly",
+    "Widely spaced teeth",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

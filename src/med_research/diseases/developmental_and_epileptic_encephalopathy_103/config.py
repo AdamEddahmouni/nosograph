@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'developmental and epileptic encephalopathy 103 (DEVELOPMENTAL_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of developmental and epileptic encephalopathy 103
-SYMPTOMS = []
+SYMPTOMS = [
+    "EEG with burst suppression",
+    "Continuous spike and waves during slow sleep",
+    "Trismus",
+    "Absent speech",
+    "Tonic status epilepticus",
+    "Severe intellectual disability",
+    "Delayed CNS myelination",
+    "Opisthotonus",
+    "Spastic tetraplegia",
+    "Atonic seizure",
+    "Ataxia",
+    "Feeding difficulties",
+    "Severe global developmental delay",
+    "Infantile onset",
+    "Focal impaired awareness seizure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

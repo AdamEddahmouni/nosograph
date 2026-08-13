@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'acrodermatitis enteropathica (ACRODERMATITIS_ENTEROPATHICA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of acrodermatitis enteropathica
-SYMPTOMS = []
+SYMPTOMS = [
+    "Emotional lability",
+    "Failure to thrive",
+    "Decreased serum zinc",
+    "Dry skin",
+    "Hypogeusia",
+    "Ataxia",
+    "Perianal erythema",
+    "Irritability",
+    "HP_0005435",
+    "Hepatomegaly",
+    "Tremor",
+    "Diarrhea",
+    "Paronychia",
+    "Alopecia of scalp",
+    "Perioral erythema",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

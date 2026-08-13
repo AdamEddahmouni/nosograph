@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'motor developmental delay due to 14q32.2 paternally expressed 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of motor developmental delay due to 14q32.2 paternally expressed gene defect
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Scoliosis",
+    "Cryptorchidism",
+    "Wide nose",
+    "Precocious puberty",
+    "Hypotonia",
+    "Flexion contracture",
+    "Posteriorly rotated ears",
+    "Prominent forehead",
+    "Maturity-onset diabetes of the young",
+    "Overweight",
+    "Recurrent otitis media",
+    "Intellectual disability",
+    "Intrauterine growth retardation",
+    "Short foot",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

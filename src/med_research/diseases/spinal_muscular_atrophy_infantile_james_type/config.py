@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spinal muscular atrophy, infantile, James type (SPINAL_MUSCULA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spinal muscular atrophy, infantile, James type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Areflexia",
+    "Infantile onset",
+    "Distal muscle weakness",
+    "Respiratory insufficiency",
+    "Generalized hypotonia",
+    "Increased variability in muscle fiber diameter",
+    "Lumbar hyperlordosis",
+    "Short stature",
+    "Motor delay",
+    "Muscle fibrillation",
+    "Weak voice",
+    "Hip contracture",
+    "Type 1 muscle fiber predominance",
+    "Autosomal dominant inheritance",
+    "Muscle weakness",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

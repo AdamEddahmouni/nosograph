@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'congenital contractural arachnodactyly (CONGENITAL_CONTRACTURA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital contractural arachnodactyly
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pectus excavatum",
+    "Mitral valve prolapse",
+    "Aortic root aneurysm",
+    "Adducted thumb",
+    "Bowing of the long bones",
+    "Kyphoscoliosis",
+    "Micrognathia",
+    "Congenital finger flexion contractures",
+    "Increased upper to lower segment ratio",
+    "Atrial septal defect",
+    "Pectus carinatum",
+    "Frontal bossing",
+    "Ulnar deviation of finger",
+    "Bicuspid aortic valve",
+    "Mitral regurgitation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

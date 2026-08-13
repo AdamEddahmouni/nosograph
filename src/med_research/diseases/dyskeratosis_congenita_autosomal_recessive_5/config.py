@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dyskeratosis congenita, autosomal recessive 5
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nail dystrophy",
+    "Decreased total leukocyte count",
+    "Esophageal stenosis",
+    "Decreased circulating immunoglobulin concentration",
+    "Autosomal recessive inheritance",
+    "Variable expressivity",
+    "Immunodeficiency",
+    "Microcephaly",
+    "Intrauterine growth retardation",
+    "Bone marrow hypocellularity",
+    "Postnatal growth retardation",
+    "Colitis",
+    "Cerebellar hypoplasia",
+    "Autosomal dominant inheritance",
+    "Global developmental delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

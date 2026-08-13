@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'erythrokeratodermia variabilis et progressiva 7 (ERYTHROKERATO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of erythrokeratodermia variabilis et progressiva 7
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dystrophic toenail",
+    "Woolly hair",
+    "Palmoplantar hyperkeratosis",
+    "Autosomal recessive inheritance",
+    "Anhidrosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

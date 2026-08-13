@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'early-onset progressive neurodegeneration-blindness-ataxia-spa
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of early-onset progressive neurodegeneration-blindness-ataxia-spasticity syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Impaired proprioception",
+    "Fasciculations",
+    "Reduced visual acuity",
+    "Abnormality of visual evoked potentials",
+    "Tetraparesis",
+    "Gaze-evoked nystagmus",
+    "Postural tremor",
+    "Impaired vibratory sensation",
+    "Spastic paraplegia",
+    "Cerebellar atrophy",
+    "Babinski sign",
+    "Impaired vibration sensation at ankles",
+    "Optic atrophy",
+    "Lower limb spasticity",
+    "Loss of ambulation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'platelet-type bleeding disorder 11 (PLATELET_TYPE_BLEEDING_DIS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of platelet-type bleeding disorder 11
-SYMPTOMS = []
+SYMPTOMS = [
+    "Prolonged bleeding time",
+    "Abnormal platelet count",
+    "Infantile onset",
+    "Bruising susceptibility",
+    "Ecchymosis",
+    "Impaired ristocetin-induced platelet aggregation",
+    "Impaired collagen-induced platelet aggregation",
+    "Epistaxis",
+    "Menorrhagia",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

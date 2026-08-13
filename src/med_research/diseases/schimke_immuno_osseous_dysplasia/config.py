@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Schimke immuno-osseous dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Arteriosclerosis",
+    "Macule",
+    "Motor delay",
+    "Hypermelanotic macule",
+    "Shallow acetabular fossae",
+    "Decreased circulating immunoglobulin concentration",
+    "Astigmatism",
+    "Dyspnea",
+    "Osteopenia",
+    "Renal insufficiency",
+    "Cerebral ischemia",
+    "Triangular face",
+    "Global developmental delay",
+    "Pancytopenia",
+    "Bulbous nose",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

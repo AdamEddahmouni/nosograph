@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'aprosencephaly cerebellar dysgenesis (APROSENCEPHALY_CEREBELLA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of aprosencephaly cerebellar dysgenesis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Aprosencephaly",
+    "Micrognathia",
+    "Absent mesencephalon",
+    "Bifid uvula",
+    "Talipes equinovarus",
+    "Cerebellar dysplasia",
+    "Retinal dysplasia",
+    "Poorly formed metencephalon",
+    "Autosomal recessive inheritance",
+    "Craniosynostosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

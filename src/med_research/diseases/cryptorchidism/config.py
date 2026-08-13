@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'cryptorchidism (CRYPTORCHIDISM)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cryptorchidism
-SYMPTOMS = []
+SYMPTOMS = [
+    "Renal agenesis",
+    "Unilateral cryptorchidism",
+    "Cryptorchidism",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

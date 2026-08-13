@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spastic ataxia 10, autosomal recessive (SPASTIC_ATAXIA_10_AUTO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spastic ataxia 10, autosomal recessive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Lower limb hyperreflexia",
+    "Young adult onset",
+    "Upper limb spasticity",
+    "Dysarthria",
+    "Juvenile onset",
+    "Lower limb spasticity",
+    "Cerebellar vermis hypoplasia",
+    "Cerebellar atrophy",
+    "Seizure",
+    "Postural instability",
+    "Hoffmann sign",
+    "Limb ataxia",
+    "Visual impairment",
+    "Autosomal recessive inheritance",
+    "Knee clonus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

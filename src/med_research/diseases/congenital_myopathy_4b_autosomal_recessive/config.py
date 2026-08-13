@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'congenital myopathy 4B, autosomal recessive (CONGENITAL_MYOPAT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital myopathy 4B, autosomal recessive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Proximal muscle weakness",
+    "Scoliosis",
+    "Narrow face",
+    "Respiratory insufficiency",
+    "High palate",
+    "Neck muscle weakness",
+    "Dysphagia",
+    "Flexion contracture",
+    "Facial diplegia",
+    "Distal lower limb muscle weakness",
+    "Autosomal recessive inheritance",
+    "Shoulder girdle muscle atrophy",
+    "Distal lower limb amyotrophy",
+    "Generalized muscle weakness",
+    "EMG: myopathic abnormalities",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

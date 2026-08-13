@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'acromesomelic dysplasia 2B (ACROMESOMELIC_DYSPLASIA_2B)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of acromesomelic dysplasia 2B
-SYMPTOMS = []
+SYMPTOMS = [
+    "Deviation of finger",
+    "Deformed tarsal bones",
+    "Aplastic/hypoplastic toenail",
+    "Brachydactyly",
+    "Fibular hypoplasia",
+    "Short phalanx of finger",
+    "Autosomal recessive inheritance",
+    "Patellar dislocation",
+    "Talipes equinovalgus",
+    "Small nail",
+    "Fibular aplasia",
+    "Absent toe",
+    "Rhizomelia",
+    "Short metatarsal",
+    "Malaligned carpal bone",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

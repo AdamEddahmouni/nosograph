@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'VACTERL/vater association (VACTERL_VATER_ASSOCIATION)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of VACTERL/vater association
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal rib morphology",
+    "Abnormal vertebral morphology",
+    "Scoliosis",
+    "Ventricular septal defect",
+    "Renal dysplasia",
+    "Patent urachus",
+    "Ectopic kidney",
+    "Large fontanelles",
+    "Transposition of the great arteries",
+    "Hypoplasia of the radius",
+    "Intrauterine growth retardation",
+    "Spina bifida",
+    "Postnatal growth retardation",
+    "Renal agenesis",
+    "Abnormal sternum morphology",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

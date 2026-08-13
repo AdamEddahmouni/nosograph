@@ -8,8 +8,19 @@ PIPELINE_LABEL = '46,XY disorder of sex development due to 5-alpha-reductase 2 d
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of 46,XY disorder of sex development due to 5-alpha-reductase 2 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormality of the endocrine system",
+    "Perineal hypospadias",
+    "Uniparental disomy",
+    "Micropenis",
+    "Ambiguous genitalia, male",
+    "Abnormality of metabolism/homeostasis",
+    "Bifid scrotum",
+    "Abnormal hair morphology",
+    "Abnormality of the voice",
+    "Autosomal recessive inheritance",
+    "Cryptorchidism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

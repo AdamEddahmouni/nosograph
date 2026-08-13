@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'glycogen storage disease VI (GLYCOGEN_STORAGE_DISEASE_VI)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of glycogen storage disease VI
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperlipidemia",
+    "Increased hepatic glycogen content",
+    "Failure to thrive in infancy",
+    "Elevated circulating hepatic transaminase concentration",
+    "Reduced hepatic glycogen phosphorylase activity",
+    "Autosomal recessive inheritance",
+    "Hepatomegaly",
+    "Hypercholesterolemia",
+    "Postnatal growth retardation",
+    "Hypertriglyceridemia",
+    "Hypoglycemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

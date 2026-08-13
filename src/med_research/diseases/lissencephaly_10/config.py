@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'lissencephaly 10 (LISSENCEPHALY_10)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lissencephaly 10
-SYMPTOMS = []
+SYMPTOMS = [
+    "Focal impaired awareness seizure",
+    "Suicidal ideation",
+    "Autistic behavior",
+    "Auditory hallucination",
+    "Aggressive behavior",
+    "Bilateral tonic-clonic seizure with focal onset",
+    "Torticollis",
+    "Febrile seizure (within the age range of 3 months to 6 years)",
+    "Depression",
+    "Tonic seizure",
+    "Hypodontia",
+    "Bipolar affective disorder",
+    "Intellectual disability",
+    "Generalized-onset seizure",
+    "Mild microcephaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'myopathy, distal, 7, adult-onset, X-linked (MYOPATHY_DISTAL_7_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of myopathy, distal, 7, adult-onset, X-linked
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased variability in muscle fiber diameter",
+    "Cataract",
+    "Young adult onset",
+    "X-linked recessive inheritance",
+    "Myofiber disarray",
+    "Cardiomyopathy",
+    "Centrally nucleated skeletal muscle fibers",
+    "Proximal upper limb muscle weakness",
+    "Muscle fiber cytoplasmatic inclusion bodies",
+    "Hearing impairment",
+    "Fatty replacement of skeletal muscle",
+    "Middle age onset",
+    "Proximal lower limb muscle weakness",
+    "Rimmed vacuoles",
+    "Respiratory insufficiency due to muscle weakness",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

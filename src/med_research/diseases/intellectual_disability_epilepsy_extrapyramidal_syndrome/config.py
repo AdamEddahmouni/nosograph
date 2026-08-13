@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'intellectual disability-epilepsy-extrapyramidal syndrome (INTE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of intellectual disability-epilepsy-extrapyramidal syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Emotional lability",
+    "Drooling",
+    "Motor stereotypy",
+    "Dyskinesia",
+    "EEG abnormality",
+    "Involuntary movements",
+    "Absent speech",
+    "Infantile onset",
+    "Hypotonia",
+    "Aggressive behavior",
+    "Status epilepticus",
+    "Sleep disturbance",
+    "Intellectual disability",
+    "Global developmental delay",
+    "Agitation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = '3MC syndrome 1 (3MC_SYNDROME_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of 3MC syndrome 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hydronephrosis",
+    "Autosomal recessive inheritance",
+    "Cleft palate",
+    "Telecanthus",
+    "Atrial septal defect",
+    "Patent ductus arteriosus",
+    "Radioulnar synostosis",
+    "Cleft upper lip",
+    "Short 5th finger",
+    "Growth delay",
+    "Blepharophimosis",
+    "Conjunctival telangiectasia",
+    "Diastasis recti",
+    "Abnormal abdominal wall morphology",
+    "Supernumerary nipple",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

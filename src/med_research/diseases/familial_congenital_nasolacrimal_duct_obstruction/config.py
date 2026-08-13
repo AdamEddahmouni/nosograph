@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'familial congenital nasolacrimal duct obstruction (FAMILIAL_CO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial congenital nasolacrimal duct obstruction
-SYMPTOMS = []
+SYMPTOMS = [
+    "Periorbital edema",
+    "Sinusitis",
+    "Lacrimal duct atresia",
+    "Dacryocystitis",
+    "Epiphora",
+    "Conjunctivitis",
+    "Dacryocystocele",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

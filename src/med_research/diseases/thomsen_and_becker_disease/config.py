@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Thomsen and Becker disease (THOMSEN_AND_BECKER_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Thomsen and Becker disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Muscle hypertrophy of the lower extremities",
+    "Percussion myotonia",
+    "Lid lag on downgaze",
+    "Young adult onset",
+    "Autosomal dominant inheritance",
+    "Dysphagia",
+    "EMG: myotonic runs",
+    "Handgrip myotonia",
+    "Myotonia",
+    "Myotonia with warm-up phenomenon",
+    "Juvenile onset",
+    "Muscle weakness",
+    "Childhood onset",
+    "Autosomal recessive inheritance",
+    "Myalgia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

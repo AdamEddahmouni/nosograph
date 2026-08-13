@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'persistent hyperplastic primary vitreous, autosomal recessive 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of persistent hyperplastic primary vitreous, autosomal recessive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Shallow anterior chamber",
+    "Remnants of the hyaloid vascular system",
+    "Retinal fold",
+    "Uveitis",
+    "Phthisis bulbi",
+    "Iris coloboma",
+    "Esotropia",
+    "Hyphema",
+    "Autosomal recessive inheritance",
+    "Microcornea",
+    "Pendular nystagmus",
+    "Ultra-low vision with no light perception",
+    "Microphthalmia",
+    "Cataract",
+    "Retinal nonattachment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

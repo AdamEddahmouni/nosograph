@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'immunoglobulin A deficiency 2 (IMMUNOGLOBULIN_A_DEFICIENCY_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunoglobulin A deficiency 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased circulating IgA concentration",
+    "Recurrent infection of the gastrointestinal tract",
+    "Autoimmunity",
+    "Recurrent sinopulmonary infections",
+    "Abnormal lymphocyte morphology",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

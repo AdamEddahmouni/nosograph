@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spinocerebellar ataxia type 28 (SPINOCEREBELLAR_ATAXIA_TYPE_28
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spinocerebellar ataxia type 28
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cerebellar atrophy",
+    "Slowly progressive",
+    "Slow saccadic eye movements",
+    "Spasticity",
+    "Ptosis",
+    "Lower limb hypertonia",
+    "Dystonia",
+    "Ragged-red muscle fibers",
+    "Juvenile onset",
+    "Babinski sign",
+    "Limb ataxia",
+    "Young adult onset",
+    "Lower limb hyperreflexia",
+    "Autosomal dominant inheritance",
+    "Gaze-evoked nystagmus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

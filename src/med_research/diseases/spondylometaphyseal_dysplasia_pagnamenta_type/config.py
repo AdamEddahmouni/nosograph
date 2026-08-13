@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spondylometaphyseal dysplasia, pagnamenta type (SPONDYLOMETAPH
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondylometaphyseal dysplasia, pagnamenta type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Infantile onset",
+    "Broad thumb",
+    "Blue sclerae",
+    "Juvenile onset",
+    "Short 4th metacarpal",
+    "Feeding difficulties",
+    "Wormian bones",
+    "Thoracic kyphosis",
+    "Short 5th metacarpal",
+    "Hypotonia",
+    "Autosomal recessive inheritance",
+    "Triangular face",
+    "Femoral bowing",
+    "Childhood onset",
+    "Delayed skeletal maturation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

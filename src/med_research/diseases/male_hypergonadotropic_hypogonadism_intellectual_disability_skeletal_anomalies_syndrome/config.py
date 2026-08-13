@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'male hypergonadotropic hypogonadism-intellectual disability-sk
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of male hypergonadotropic hypogonadism-intellectual disability-skeletal anomalies syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormality of the cervical spine",
+    "Superior rib anomalies",
+    "Glucose intolerance",
+    "Hyperglycemia",
+    "Skeletal dysplasia",
+    "Hypergonadotropic hypogonadism",
+    "Intellectual disability",
+    "Male hypogonadism",
+    "X-linked inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

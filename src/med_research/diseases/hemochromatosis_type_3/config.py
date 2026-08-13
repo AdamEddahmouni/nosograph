@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hemochromatosis type 3 (HEMOCHROMATOSIS_TYPE_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hemochromatosis type 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Hyperpigmentation of the skin",
+    "Elevated transferrin saturation",
+    "Amenorrhea",
+    "Elevated circulating hepatic transaminase concentration",
+    "Hypogonadotropic hypogonadism",
+    "Fatigue",
+    "Impotence",
+    "Cardiomyopathy",
+    "Increased circulating ferritin concentration",
+    "Decreased total lymphocyte count",
+    "Anemia",
+    "Arthritis",
+    "Elevated circulating iron concentration",
+    "Cirrhosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

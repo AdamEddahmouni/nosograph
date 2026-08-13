@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'thyroid hormone metabolism, abnormal, 3 (THYROID_HORMONE_METAB
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of thyroid hormone metabolism, abnormal, 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal circulating thyroid-stimulating hormone concentration",
+    "Increased circulating free T4 concentration",
+    "Decreased circulating selenium concentration",
+    "Abnormal circulating free T4 concentration",
+    "Abdominal pain",
+    "Easy fatigability",
+    "Abnormal circulating free T3 concentration",
+    "Euthyroid hyperthyroxinemia",
+    "Increased circulating free T3",
+    "Juvenile onset",
+    "Muscle weakness",
+    "Autosomal recessive inheritance",
+    "Elevated circulating reverse T3 concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

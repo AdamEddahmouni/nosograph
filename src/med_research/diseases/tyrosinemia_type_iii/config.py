@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'tyrosinemia type III (TYROSINEMIA_TYPE_III)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of tyrosinemia type III
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Neonatal onset",
+    "Infantile onset",
+    "Mild intellectual disability",
+    "4-hydroxyphenylacetic aciduria",
+    "Global developmental delay",
+    "4-Hydroxyphenylpyruvic aciduria",
+    "Seizure",
+    "Severe intellectual disability",
+    "Hypertyrosinemia",
+    "Elevated circulating hepatic transaminase concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

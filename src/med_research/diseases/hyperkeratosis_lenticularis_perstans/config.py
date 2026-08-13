@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'hyperkeratosis lenticularis perstans (HYPERKERATOSIS_LENTICULA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hyperkeratosis lenticularis perstans
-SYMPTOMS = []
+SYMPTOMS = [
+    "Adult onset",
+    "Hyperkeratosis lenticularis perstans",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

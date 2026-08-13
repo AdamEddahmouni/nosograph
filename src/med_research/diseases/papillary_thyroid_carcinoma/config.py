@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'papillary thyroid carcinoma (PAPILLARY_THYROID_CARCINOMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of papillary thyroid carcinoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Papillary thyroid carcinoma",
+    "Autosomal dominant inheritance",
+    "Non-medullary thyroid carcinoma",
+    "Goiter",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

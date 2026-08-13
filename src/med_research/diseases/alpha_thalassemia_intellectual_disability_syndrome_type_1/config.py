@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'alpha thalassemia-intellectual disability syndrome type 1 (ALP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of alpha thalassemia-intellectual disability syndrome type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal erythrocyte morphology",
+    "Intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

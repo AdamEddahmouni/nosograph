@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'infantile-onset ascending hereditary spastic paralysis (INFANT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of infantile-onset ascending hereditary spastic paralysis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Spastic tetraplegia",
+    "Progressive",
+    "Pes cavus",
+    "Motor delay",
+    "Abnormality of the eye",
+    "Hyperreflexia",
+    "Muscle weakness",
+    "Dysarthria",
+    "Spastic paraplegia",
+    "Babinski sign",
+    "Childhood onset",
+    "Impaired mastication",
+    "Anarthria",
+    "Urinary incontinence",
+    "Abnormality of the face",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

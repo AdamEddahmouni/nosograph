@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'long QT syndrome 12 (LONG_QT_SYNDROME_12)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of long QT syndrome 12
-SYMPTOMS = []
+SYMPTOMS = [
+    "Prolonged QTc interval",
+    "Torsade de pointes",
+    "Ventricular fibrillation",
+    "Autosomal dominant inheritance",
+    "Syncope",
+    "Early young adult onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'lysinuric protein intolerance (LYSINURIC_PROTEIN_INTOLERANCE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lysinuric protein intolerance
-SYMPTOMS = []
+SYMPTOMS = [
+    "Respiratory insufficiency",
+    "Psychotic episodes",
+    "Intraalveolar phospholipid accumulation",
+    "Nausea",
+    "Malnutrition",
+    "Osteoporosis",
+    "Vomiting",
+    "Hemophagocytosis",
+    "Hypolysinemia",
+    "Increased circulating ferritin concentration",
+    "Truncal obesity",
+    "Fine hair",
+    "Cutis laxa",
+    "Infantile onset",
+    "Thrombocytopenia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

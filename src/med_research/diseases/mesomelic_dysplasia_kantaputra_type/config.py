@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'mesomelic dysplasia, Kantaputra type (MESOMELIC_DYSPLASIA_KANT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mesomelic dysplasia, Kantaputra type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Radial bowing",
+    "Autosomal dominant inheritance",
+    "Tarsal synostosis",
+    "Mesomelia",
+    "Carpal synostosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

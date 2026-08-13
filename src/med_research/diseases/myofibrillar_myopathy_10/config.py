@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'myofibrillar myopathy 10 (MYOFIBRILLAR_MYOPATHY_10)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of myofibrillar myopathy 10
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elbow flexion contracture",
+    "Percussion myotonia",
+    "Increased QRS voltage",
+    "Mandibular prognathia",
+    "Muscle spasm",
+    "Prolonged QTc interval",
+    "Broad neck",
+    "Ankle flexion contracture",
+    "Kyphosis",
+    "Childhood onset",
+    "Infantile onset",
+    "Increased circulating troponin I concentration",
+    "Left ventricular hypertrophy",
+    "Myalgia",
+    "Juvenile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

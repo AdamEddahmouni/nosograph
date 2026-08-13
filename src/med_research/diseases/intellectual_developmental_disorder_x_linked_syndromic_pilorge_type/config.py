@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'intellectual developmental disorder, X-linked, syndromic, Pilo
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of intellectual developmental disorder, X-linked, syndromic, Pilorge type
-SYMPTOMS = []
+SYMPTOMS = [
+    "X-linked inheritance",
+    "Childhood onset",
+    "High myopia",
+    "Autism",
+    "Recurrent otitis media",
+    "Inflexible adherence to routines",
+    "Mild intellectual disability",
+    "Bilateral tonic-clonic seizure",
+    "Hyperactivity",
+    "Poor suck",
+    "Delayed speech and language development",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

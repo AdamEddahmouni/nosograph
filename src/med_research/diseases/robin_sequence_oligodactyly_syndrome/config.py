@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'Robin sequence-oligodactyly syndrome (ROBIN_SEQUENCE_OLIGODACT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Robin sequence-oligodactyly syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pierre-Robin sequence",
+    "Autosomal dominant inheritance",
+    "Finger aplasia",
+    "Micrognathia",
+    "Cleft palate",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

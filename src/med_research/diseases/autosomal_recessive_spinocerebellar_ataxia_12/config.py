@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autosomal recessive spinocerebellar ataxia 12 (AUTOSOMAL_RECES
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal recessive spinocerebellar ataxia 12
-SYMPTOMS = []
+SYMPTOMS = [
+    "Global developmental delay",
+    "Microcephaly",
+    "Bilateral tonic-clonic seizure",
+    "Ataxia",
+    "Spasticity",
+    "Gait ataxia",
+    "Infantile onset",
+    "Cerebellar vermis atrophy",
+    "Babinski sign",
+    "Hyporeflexia",
+    "Retinal degeneration",
+    "Cerebellar atrophy",
+    "Growth delay",
+    "Autosomal recessive inheritance",
+    "Childhood onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'migraine, familial hemiplegic, 2 (MIGRAINE_FAMILIAL_HEMIPLEGIC
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of migraine, familial hemiplegic, 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Vertigo",
+    "Diplopia",
+    "Aphasia",
+    "Autosomal dominant inheritance",
+    "Episodic ataxia",
+    "Migraine",
+    "Transient unilateral blurring of vision",
+    "Tremor",
+    "Bilateral tonic-clonic seizure",
+    "Juvenile onset",
+    "Dysmetria",
+    "Typified by incomplete penetrance",
+    "Cerebral edema",
+    "Intellectual disability",
+    "Drowsiness",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

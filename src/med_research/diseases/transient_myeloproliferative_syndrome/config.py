@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'transient myeloproliferative syndrome (TRANSIENT_MYELOPROLIFER
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of transient myeloproliferative syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Transient myeloproliferative syndrome",
+    "Increased total leukocyte count",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

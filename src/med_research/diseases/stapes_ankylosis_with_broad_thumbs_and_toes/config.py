@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'stapes ankylosis with broad thumbs and toes (STAPES_ANKYLOSIS_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of stapes ankylosis with broad thumbs and toes
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital stapes ankylosis",
+    "Underdeveloped nasal alae",
+    "Conductive hearing impairment",
+    "Long nose",
+    "Autosomal dominant inheritance",
+    "Low hanging columella",
+    "Toe syndactyly",
+    "Short distal phalanx of finger",
+    "Broad hallux",
+    "Limited neck range of motion",
+    "Fused cervical vertebrae",
+    "Stapes ankylosis",
+    "Broad thumb",
+    "Proximal fifth finger symphalangism",
+    "Hypermetropia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

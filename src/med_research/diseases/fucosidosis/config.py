@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'fucosidosis (FUCOSIDOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of fucosidosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Scoliosis",
+    "Cherry red spot of the macula",
+    "Anterior beaking of lumbar vertebrae",
+    "Prominent forehead",
+    "Spastic gait",
+    "Dysostosis multiplex",
+    "Hemiplegia",
+    "Cerebral atrophy",
+    "Oligosacchariduria",
+    "Beaking of vertebral bodies",
+    "Mental deterioration",
+    "Spastic tetraplegia",
+    "Short stature",
+    "Tortuosity of conjunctival vessels",
+    "Coxa valga",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

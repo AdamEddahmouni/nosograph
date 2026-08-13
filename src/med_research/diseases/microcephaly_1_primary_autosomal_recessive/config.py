@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'microcephaly 1, primary, autosomal recessive (MICROCEPHALY_1_P
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of microcephaly 1, primary, autosomal recessive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Primary microcephaly",
+    "Short stature",
+    "Increased rate of premature chromosome condensation",
+    "Small cerebral cortex",
+    "Intellectual disability",
+    "Seizure",
+    "Congenital onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

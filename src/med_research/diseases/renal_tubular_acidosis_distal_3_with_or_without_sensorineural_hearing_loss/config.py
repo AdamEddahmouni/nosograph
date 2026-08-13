@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'renal tubular acidosis, distal, 3, with or without sensorineur
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of renal tubular acidosis, distal, 3, with or without sensorineural hearing loss
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nephrocalcinosis",
+    "Infantile onset",
+    "Childhood onset",
+    "Growth delay",
+    "Bilateral sensorineural hearing impairment",
+    "Neonatal onset",
+    "Metabolic acidosis",
+    "Hypokalemia",
+    "Dehydration",
+    "Rickets",
+    "Autosomal recessive inheritance",
+    "Failure to thrive",
+    "Hypercalciuria",
+    "Vomiting",
+    "Distal renal tubular acidosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'goiter, multinodular 1, with or without Sertoli-Leydig cell tu
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of goiter, multinodular 1, with or without Sertoli-Leydig cell tumors
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Euthyroid multinodular goiter",
+    "Papillary thyroid carcinoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

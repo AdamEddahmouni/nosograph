@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spondylocarpotarsal synostosis syndrome (SPONDYLOCARPOTARSAL_S
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondylocarpotarsal synostosis syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Clinodactyly of the 5th finger",
+    "Broad nasal tip",
+    "Capitate-hamate fusion",
+    "Autosomal recessive inheritance",
+    "Abnormal retinal pigmentation",
+    "Scoliosis",
+    "Preauricular skin tag",
+    "Disproportionate short-trunk short stature",
+    "Pectus carinatum",
+    "Cleft palate",
+    "Epiphyseal dysplasia",
+    "Mixed hearing impairment",
+    "Brachydactyly",
+    "Vertebral segmentation defect",
+    "Sensorineural hearing impairment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

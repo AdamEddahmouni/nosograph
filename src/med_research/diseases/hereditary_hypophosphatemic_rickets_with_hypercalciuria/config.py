@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hereditary hypophosphatemic rickets with hypercalciuria (HERED
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hereditary hypophosphatemic rickets with hypercalciuria
-SYMPTOMS = []
+SYMPTOMS = [
+    "Bulging epiphyses",
+    "Enlargement of the wrists",
+    "Flat occiput",
+    "Muscle weakness",
+    "Delayed epiphyseal ossification",
+    "Failure to thrive",
+    "Decreased circulating parathyroid hormone level",
+    "Enlargement of the costochondral junction",
+    "Growth delay",
+    "Elevated circulating alkaline phosphatase concentration",
+    "Renal phosphate wasting",
+    "Hypotonia",
+    "Infantile onset",
+    "Fibular bowing",
+    "Bulging of the costochondral junction",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

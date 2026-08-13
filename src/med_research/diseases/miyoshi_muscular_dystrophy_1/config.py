@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'Miyoshi muscular dystrophy 1 (MIYOSHI_MUSCULAR_DYSTROPHY_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Miyoshi muscular dystrophy 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Muscle fibrillation",
+    "Adult onset",
+    "Difficulty climbing stairs",
+    "Muscular dystrophy",
+    "Tip-toe gait",
+    "Distal amyotrophy",
+    "Decreased/absent ankle reflexes",
+    "Decreased Achilles reflex",
+    "Distal muscle weakness",
+    "Deposits immunoreactive to beta-amyloid protein",
+    "Elevated circulating creatine kinase activity",
+    "Lower limb muscle weakness",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

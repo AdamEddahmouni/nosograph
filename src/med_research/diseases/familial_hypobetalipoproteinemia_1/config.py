@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'familial hypobetalipoproteinemia 1 (FAMILIAL_HYPOBETALIPOPROTE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial hypobetalipoproteinemia 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased circulating vitamin E concentration",
+    "Autosomal recessive inheritance",
+    "Decreased circulating LDL-C concentration",
+    "Steatorrhea",
+    "Hypocholesterolemia",
+    "Rod-cone dystrophy",
+    "Acanthocytosis",
+    "Elevated circulating aspartate aminotransferase concentration",
+    "Diminished deep tendon reflex",
+    "Retinal degeneration",
+    "Reduced circulating vitamin A concentration",
+    "Hypertriglyceridemia",
+    "Infantile onset",
+    "Decreased circulating HDL-C concentration",
+    "Ataxia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

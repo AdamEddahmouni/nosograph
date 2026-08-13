@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Singleton-Merten syndrome 1 (SINGLETON_MERTEN_SYNDROME_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Singleton-Merten syndrome 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Mitral valve calcification",
+    "High anterior hairline",
+    "Osteoporosis",
+    "Infantile onset",
+    "Tendon rupture",
+    "Onycholysis",
+    "Genu valgum",
+    "Cutaneous photosensitivity",
+    "Hip dislocation",
+    "Glaucoma",
+    "Osteolytic defects of the phalanges of the hand",
+    "Hypoplasia of the maxilla",
+    "Eruption failure",
+    "Carious teeth",
+    "Juvenile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

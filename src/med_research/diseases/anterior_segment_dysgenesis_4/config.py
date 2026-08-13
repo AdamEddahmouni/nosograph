@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'anterior segment dysgenesis 4 (ANTERIOR_SEGMENT_DYSGENESIS_4)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of anterior segment dysgenesis 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Glaucoma",
+    "Abnormal facial shape",
+    "Hypoplastic iris stroma",
+    "Iris hypopigmentation",
+    "Autosomal dominant inheritance",
+    "Abnormality of the dentition",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

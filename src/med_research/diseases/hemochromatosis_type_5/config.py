@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'hemochromatosis type 5 (HEMOCHROMATOSIS_TYPE_5)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hemochromatosis type 5
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased circulating ferritin concentration",
+    "Elevated transferrin saturation",
+    "Elevated hepatic iron concentration",
+    "Abnormal circulating copper concentration",
+    "Abnormal circulating transferrin concentration",
+    "Elevated circulating iron concentration",
+    "Adult onset",
+    "Abnormal circulating ceruloplasmin concentration",
+    "Autosomal dominant inheritance",
+    "Anemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

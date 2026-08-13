@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'birdshot chorioretinopathy (BIRDSHOT_CHORIORETINOPATHY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of birdshot chorioretinopathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Visual impairment",
+    "Autosomal dominant inheritance",
+    "Abnormal chorioretinal morphology",
+    "Vitritis",
+    "Middle age onset",
+    "Retinal pigment epithelial atrophy",
+    "Posterior uveitis",
+    "Vitreous floaters",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

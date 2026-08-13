@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'combined immunodeficiency due to ZAP70 deficiency (COMBINED_IM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of combined immunodeficiency due to ZAP70 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hepatomegaly",
+    "Failure to thrive",
+    "Recurrent respiratory infections",
+    "Eczematoid dermatitis",
+    "Autosomal recessive inheritance",
+    "Infantile onset",
+    "Absence of CD8+ T cells",
+    "Pneumonia",
+    "Chronic diarrhea",
+    "Panhypogammaglobulinemia",
+    "Splenomegaly",
+    "HP_0003347",
+    "Recurrent Candida infection",
+    "Abnormal total B cell count",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

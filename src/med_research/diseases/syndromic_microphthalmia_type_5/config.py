@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'syndromic microphthalmia type 5 (SYNDROMIC_MICROPHTHALMIA_TYPE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of syndromic microphthalmia type 5
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Joint hypermobility",
+    "Retinal dystrophy",
+    "Short stature",
+    "Microcornea",
+    "Optic nerve hypoplasia",
+    "Coloboma",
+    "Global developmental delay",
+    "Seizure",
+    "Cryptorchidism",
+    "Hypotonia",
+    "Cataract",
+    "Cleft palate",
+    "Micropenis",
+    "Generalized hypotonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

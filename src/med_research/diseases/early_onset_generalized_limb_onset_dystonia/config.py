@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'early-onset generalized limb-onset dystonia (EARLY_ONSET_GENER
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of early-onset generalized limb-onset dystonia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Kyphosis",
+    "Scoliosis",
+    "Multiple joint contractures",
+    "Hypotonia",
+    "Dysphagia",
+    "Blepharospasm",
+    "Generalized dystonia",
+    "Inability to walk",
+    "Neonatal onset",
+    "Absent Achilles reflex",
+    "Motor delay",
+    "Oromandibular dystonia",
+    "Torsion dystonia",
+    "Depression",
+    "Torticollis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

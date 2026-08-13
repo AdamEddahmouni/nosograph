@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'glycogen storage disease due to phosphoglycerate kinase 1 defi
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of glycogen storage disease due to phosphoglycerate kinase 1 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Juvenile onset",
+    "Global developmental delay",
+    "Intellectual disability",
+    "X-linked recessive inheritance",
+    "Myopathy",
+    "Reticulocytosis",
+    "Visual loss",
+    "Muscle weakness",
+    "Erythroid hyperplasia",
+    "Ataxia",
+    "Exercise-induced myoglobinuria",
+    "Migraine",
+    "Emotional lability",
+    "Renal insufficiency",
+    "Rhabdomyolysis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

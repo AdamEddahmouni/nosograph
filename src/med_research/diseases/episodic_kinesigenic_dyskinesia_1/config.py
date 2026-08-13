@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'episodic kinesigenic dyskinesia 1 (EPISODIC_KINESIGENIC_DYSKIN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of episodic kinesigenic dyskinesia 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Orofacial dyskinesia",
+    "Juvenile onset",
+    "Autosomal dominant inheritance",
+    "Typified by incomplete penetrance",
+    "Chorea",
+    "Involuntary movements",
+    "Dystonia",
+    "Paroxysmal choreoathetosis",
+    "Dyskinesia",
+    "Infantile spasms",
+    "Paroxysmal dystonia",
+    "Seizure",
+    "Paroxysmal dyskinesia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

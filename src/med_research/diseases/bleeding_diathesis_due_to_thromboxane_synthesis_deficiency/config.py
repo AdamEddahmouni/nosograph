@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'bleeding diathesis due to thromboxane synthesis deficiency (BL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of bleeding diathesis due to thromboxane synthesis deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal platelet count",
+    "Epistaxis",
+    "Ecchymosis",
+    "Infantile onset",
+    "Impaired thromboxane A2 agonist-induced platelet aggregation",
+    "Autosomal dominant inheritance",
+    "Impaired arachidonic acid-induced platelet aggregation",
+    "Bruising susceptibility",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

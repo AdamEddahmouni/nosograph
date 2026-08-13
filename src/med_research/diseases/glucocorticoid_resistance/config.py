@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'glucocorticoid resistance (GLUCOCORTICOID_RESISTANCE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of glucocorticoid resistance
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased serum testosterone level",
+    "Autosomal dominant inheritance",
+    "Irregular menstruation",
+    "Hirsutism",
+    "Metabolic alkalosis",
+    "Anxiety",
+    "Young adult onset",
+    "Increased circulating ACTH level",
+    "Increased circulating cortisol level",
+    "Hypoglycemia",
+    "Increased circulating androstenedione concentration",
+    "Fatigue",
+    "Infertility",
+    "Hypertension",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spinocerebellar ataxia, autosomal recessive, with axonal neuro
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spinocerebellar ataxia, autosomal recessive, with axonal neuropathy 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Scoliosis",
+    "Impaired proprioception",
+    "Gait ataxia",
+    "Dystonia",
+    "Peripheral axonal neuropathy",
+    "Limb ataxia",
+    "Impaired distal tactile sensation",
+    "Pes cavus",
+    "Tremor",
+    "Chorea",
+    "Cerebellar atrophy",
+    "Progressive gait ataxia",
+    "Oculomotor apraxia",
+    "Variable expressivity",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

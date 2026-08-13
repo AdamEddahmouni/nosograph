@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hypomyelinating leukodystrophy 5 (HYPOMYELINATING_LEUKODYSTROP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypomyelinating leukodystrophy 5
-SYMPTOMS = []
+SYMPTOMS = [
+    "Babinski sign",
+    "Abnormal pyramidal sign",
+    "Hyperreflexia",
+    "Delayed brainstem auditory evoked response conduction time",
+    "Developmental cataract",
+    "Congenital onset",
+    "Abnormal cerebellum morphology",
+    "Global developmental delay",
+    "Axial hypotonia",
+    "Scoliosis",
+    "Seizure",
+    "Intention tremor",
+    "Delayed somatosensory central conduction time",
+    "Lower limb muscle weakness",
+    "Lower limb amyotrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

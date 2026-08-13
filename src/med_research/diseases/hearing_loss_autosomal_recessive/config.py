@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hearing loss, autosomal recessive (HEARING_LOSS_AUTOSOMAL_RECE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hearing loss, autosomal recessive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nystagmus",
+    "Mixed hearing impairment",
+    "Severe sensorineural hearing impairment",
+    "Vestibular hyporeflexia",
+    "Abnormal semicircular canal morphology",
+    "Progressive hearing impairment",
+    "Hearing impairment",
+    "Autosomal recessive inheritance",
+    "Cognitive impairment",
+    "Abnormal ear morphology",
+    "Progressive sensorineural hearing impairment",
+    "Positive Romberg sign",
+    "Prelingual sensorineural hearing impairment",
+    "Goiter",
+    "Incomplete partition of the cochlea type II",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

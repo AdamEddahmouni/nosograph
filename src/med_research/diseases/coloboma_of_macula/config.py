@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'coloboma of macula (COLOBOMA_OF_MACULA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of coloboma of macula
-SYMPTOMS = []
+SYMPTOMS = [
+    "Macular pseudocoloboma",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Jalili syndrome (JALILI_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Jalili syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Monochromacy",
+    "Carious teeth",
+    "Spicular pigmentation of the retina",
+    "Visual impairment",
+    "Attenuation of retinal blood vessels",
+    "Nystagmus",
+    "Photophobia",
+    "Infantile onset",
+    "Nyctalopia",
+    "Enamel agenesis",
+    "Yellow-brown discoloration of the teeth",
+    "Macular atrophy",
+    "High hypermetropia",
+    "Optic disc pallor",
+    "Pendular nystagmus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

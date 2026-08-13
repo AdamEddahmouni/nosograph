@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'hypercholesterolemia, autosomal dominant, type B (HYPERCHOLEST
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypercholesterolemia, autosomal dominant, type B
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Corneal arcus",
+    "Coronary artery atherosclerosis",
+    "Elevated circulating LDL-C concentration",
+    "Xanthelasma",
+    "Hypercholesterolemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,9 @@ PIPELINE_LABEL = 'natal teeth-intestinal pseudoobstruction-patent ductus syndrom
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of natal teeth-intestinal pseudoobstruction-patent ductus syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Natal tooth",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

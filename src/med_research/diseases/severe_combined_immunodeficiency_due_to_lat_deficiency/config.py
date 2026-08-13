@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'severe combined immunodeficiency due to LAT deficiency (SEVERE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of severe combined immunodeficiency due to LAT deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased gamma-delta T cell proportion",
+    "Autoimmune thrombocytopenia",
+    "Persistent EBV viremia",
+    "HP_0030253",
+    "Abnormal total B cell count",
+    "Decreased circulating immunoglobulin concentration",
+    "Autosomal recessive inheritance",
+    "Immunodeficiency",
+    "Lymphadenopathy",
+    "Death in infancy",
+    "Failure to thrive",
+    "Immune dysregulation",
+    "Decreased total T cell count",
+    "Abnormal total natural killer cell count",
+    "Decreased total lymphocyte count",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

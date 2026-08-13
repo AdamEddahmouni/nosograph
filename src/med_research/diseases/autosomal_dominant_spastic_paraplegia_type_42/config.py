@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neuropathy (AUTOSOMAL_DOMINANT_SPASTIC_PARAPLEGIA_TYPE_42)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neuropathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Thick vermilion border",
+    "Autosomal recessive inheritance",
+    "Distal amyotrophy",
+    "Infantile onset",
+    "Hypoplasia of the corpus callosum",
+    "Hypomimic face",
+    "Hyperreflexia",
+    "Polyhydramnios",
+    "Abnormal foot morphology",
+    "Severe muscular hypotonia",
+    "Hearing impairment",
+    "Hyporeflexia",
+    "Limb joint contracture",
+    "Epicanthus",
+    "Reduced eye contact",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

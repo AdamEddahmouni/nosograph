@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hereditary motor and sensory neuropathy, Okinawa type (HEREDIT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hereditary motor and sensory neuropathy, Okinawa type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sensory neuropathy",
+    "Areflexia",
+    "Degeneration of anterior horn cells",
+    "Tetraplegia",
+    "Adult onset",
+    "Proximal muscle weakness",
+    "Gait disturbance",
+    "Distal sensory impairment",
+    "Hyperglycemia",
+    "Axonal degeneration",
+    "Mildly elevated creatine kinase",
+    "Autosomal dominant inheritance",
+    "Decreased number of peripheral myelinated nerve fibers",
+    "Peripheral neuropathy",
+    "Fasciculations",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

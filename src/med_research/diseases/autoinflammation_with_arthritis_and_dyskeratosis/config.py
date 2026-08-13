@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autoinflammation with arthritis and dyskeratosis (AUTOINFLAMMA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autoinflammation with arthritis and dyskeratosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Follicular hyperkeratosis",
+    "Infantile onset",
+    "Laryngeal papilloma",
+    "Recurrent fever",
+    "Severely increased total eosinophil count",
+    "Antinuclear antibody positivity",
+    "Epidermal acanthosis",
+    "Autosomal recessive inheritance",
+    "Punctate keratitis",
+    "Dry skin",
+    "Thyroiditis",
+    "Autoimmune hemolytic anemia",
+    "Increased circulating IgA concentration",
+    "Keratoconjunctivitis sicca",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

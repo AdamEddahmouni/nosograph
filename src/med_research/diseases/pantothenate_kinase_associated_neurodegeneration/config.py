@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'pantothenate kinase-associated neurodegeneration (PANTOTHENATE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pantothenate kinase-associated neurodegeneration
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperactivity",
+    "Abnormal pyramidal sign",
+    "Global brain atrophy",
+    "Eye of the tiger anomaly of globus pallidus",
+    "Dysarthria",
+    "Dysphonia",
+    "Choreoathetosis",
+    "Bradykinesia",
+    "Infantile onset",
+    "Eyelid apraxia",
+    "Cerebral cortical atrophy",
+    "Palilalia",
+    "Elevated circulating alkaline phosphatase concentration",
+    "Akinesia",
+    "Dystonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

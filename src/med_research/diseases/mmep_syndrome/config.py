@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'MMEP syndrome (MMEP_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of MMEP syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Blepharophimosis",
+    "Microcornea",
+    "Autosomal dominant inheritance",
+    "Microcephaly",
+    "Split foot",
+    "Widely-spaced maxillary central incisors",
+    "Short palpebral fissure",
+    "Intellectual disability",
+    "Mandibular prognathia",
+    "Orofacial cleft",
+    "Premature skin wrinkling",
+    "Cryptorchidism",
+    "Microphthalmia",
+    "Cleft upper lip",
+    "Cleft palate",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

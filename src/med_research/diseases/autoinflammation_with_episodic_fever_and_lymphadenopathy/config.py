@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'autoinflammation with episodic fever and lymphadenopathy (AUTO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autoinflammation with episodic fever and lymphadenopathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abdominal pain",
+    "Rheumatoid factor positive",
+    "Microcytic anemia",
+    "Recurrent tonsillitis",
+    "Recurrent fever",
+    "Oral ulcer",
+    "Lymphadenopathy",
+    "Splenomegaly",
+    "Hepatomegaly",
+    "Autosomal dominant inheritance",
+    "Antinuclear antibody positivity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

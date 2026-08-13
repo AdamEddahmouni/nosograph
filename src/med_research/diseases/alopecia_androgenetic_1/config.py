@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'alopecia, androgenetic, 1 (ALOPECIA_ANDROGENETIC_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of alopecia, androgenetic, 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Alopecia",
+    "Sex-limited expression",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

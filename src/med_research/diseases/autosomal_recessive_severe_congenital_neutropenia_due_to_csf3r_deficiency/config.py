@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'autosomal recessive severe congenital neutropenia due to CSF3R
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal recessive severe congenital neutropenia due to CSF3R deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased total neutrophil count",
+    "Bone marrow maturation arrest",
+    "Autosomal recessive inheritance",
+    "Neonatal onset",
+    "Recurrent infections",
+    "Childhood onset",
+    "Infantile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

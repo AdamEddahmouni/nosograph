@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'recessive X-linked ichthyosis (RECESSIVE_X_LINKED_ICHTHYOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of recessive X-linked ichthyosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Infantile onset",
+    "Childhood onset",
+    "Opacification of the corneal stroma",
+    "X-linked recessive inheritance",
+    "Congenital ichthyosiform erythroderma",
+    "Ichthyosis",
+    "Palmar hyperlinearity",
+    "Neonatal onset",
+    "Testicular neoplasm",
+    "Cryptorchidism",
+    "Palmoplantar keratoderma",
+    "Hypohidrosis",
+    "Congenital onset",
+    "Intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

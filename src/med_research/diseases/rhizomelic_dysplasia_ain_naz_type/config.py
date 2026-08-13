@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'rhizomelic dysplasia, Ain-Naz type (RHIZOMELIC_DYSPLASIA_AIN_N
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of rhizomelic dysplasia, Ain-Naz type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Rhizomelia",
+    "Wide nasal bridge",
+    "Intellectual disability",
+    "Overlapping toe",
+    "Autosomal recessive inheritance",
+    "Wide distal femoral metaphysis",
+    "Flaring of rib cage",
+    "Short neck",
+    "Hip dysplasia",
+    "Abnormality of alkaline phosphatase level",
+    "Bowed forearm bones",
+    "Long foot",
+    "Gait disturbance",
+    "Severe short stature",
+    "Pectus excavatum",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hyperlysinemia (HYPERLYSINEMIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hyperlysinemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Infantile onset",
+    "Hyperactivity",
+    "Autosomal recessive inheritance",
+    "Decreased CSF arginine concentration",
+    "Febrile seizure (within the age range of 3 months to 6 years)",
+    "Homocitrullinuria",
+    "Clumsiness",
+    "Delayed speech and language development",
+    "Anemia",
+    "Hyperlysinuria",
+    "Elevated CSF saccharopine concentration",
+    "Hypotonia",
+    "Hypoornithinemia",
+    "Cognitive impairment",
+    "Hyperlysinemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

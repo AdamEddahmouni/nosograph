@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'ventricular septal defect 1 (VENTRICULAR_SEPTAL_DEFECT_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ventricular septal defect 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pulmonic stenosis",
+    "Atrioventricular canal defect",
+    "Autosomal dominant inheritance",
+    "Ventricular septal defect",
+    "Congenital onset",
+    "Tetralogy of Fallot",
+    "Atrial septal defect",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

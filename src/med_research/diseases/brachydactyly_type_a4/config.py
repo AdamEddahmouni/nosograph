@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'brachydactyly type A4 (BRACHYDACTYLY_TYPE_A4)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of brachydactyly type A4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short middle phalanx of the 5th finger",
+    "Aplasia of the middle phalanges of the toes",
+    "Congenital talipes calcaneovalgus",
+    "Short middle phalanx of the 2nd finger",
+    "Autosomal dominant inheritance",
+    "Type A brachydactyly",
+    "Talipes calcaneovalgus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

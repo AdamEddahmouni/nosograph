@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'multiple epiphyseal dysplasia, Al-Gazali type (MULTIPLE_EPIPHY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of multiple epiphyseal dysplasia, Al-Gazali type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypertelorism",
+    "Agenesis of corpus callosum",
+    "Lymphedema",
+    "Motor delay",
+    "Short neck",
+    "Wide nasal bridge",
+    "Genu valgum",
+    "Molar tooth sign on MRI",
+    "Enlarged joints",
+    "Low-set ears",
+    "Abnormal facial shape",
+    "Clinodactyly",
+    "Tapered finger",
+    "Multiple epiphyseal dysplasia",
+    "Depressed nasal bridge",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

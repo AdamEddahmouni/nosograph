@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'syndactyly type 4 (SYNDACTYLY_TYPE_4)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of syndactyly type 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "2-3 toe syndactyly",
+    "Autosomal dominant inheritance",
+    "Triphalangeal thumb",
+    "Polydactyly",
+    "Postaxial polydactyly",
+    "1-5 finger complete cutaneous syndactyly",
+    "1-5 finger cutaneous syndactyly",
+    "Supernumerary metacarpal bones",
+    "6 metacarpals",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'congenital muscular dystrophy-infantile cataract-hypogonadism 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital muscular dystrophy-infantile cataract-hypogonadism syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cataract",
+    "Muscular dystrophy",
+    "Autosomal recessive inheritance",
+    "Hypogonadism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

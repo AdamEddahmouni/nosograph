@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'renal cysts and diabetes syndrome (RENAL_CYSTS_AND_DIABETES_SY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of renal cysts and diabetes syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Renal cyst",
+    "Renal hypoplasia",
+    "Proteinuria",
+    "Unilateral renal agenesis",
+    "Glucose intolerance",
+    "Hypoplasia of the uterus",
+    "Epididymal cyst",
+    "Pancreatic hypoplasia",
+    "Multiple glomerular cysts",
+    "Ureteropelvic junction obstruction",
+    "Pancreatic atrophy",
+    "Biliary tract abnormality",
+    "Gout",
+    "Autosomal dominant inheritance",
+    "Stage 5 chronic kidney disease",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

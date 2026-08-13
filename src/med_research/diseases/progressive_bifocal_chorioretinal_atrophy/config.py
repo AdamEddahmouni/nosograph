@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'progressive bifocal chorioretinal atrophy (PROGRESSIVE_BIFOCAL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of progressive bifocal chorioretinal atrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Myopia",
+    "Retinal detachment",
+    "Nystagmus",
+    "Visual impairment",
+    "Chorioretinal atrophy",
+    "Chorioretinal dystrophy",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

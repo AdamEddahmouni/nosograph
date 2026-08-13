@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'cone-rod synaptic disorder syndrome, congenital nonprogressive
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cone-rod synaptic disorder syndrome, congenital nonprogressive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Reduced visual acuity",
+    "Delayed speech and language development",
+    "Photophobia",
+    "Autosomal recessive inheritance",
+    "Retinal thinning on OCT",
+    "Anxiety",
+    "Ataxia",
+    "Optic disc pallor",
+    "Global developmental delay",
+    "Hyperglycemia",
+    "Nystagmus",
+    "Autistic behavior",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

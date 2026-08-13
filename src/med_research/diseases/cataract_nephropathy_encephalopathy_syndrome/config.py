@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'cataract-nephropathy-encephalopathy syndrome (CATARACT_NEPHROP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cataract-nephropathy-encephalopathy syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Developmental cataract",
+    "Seizure",
+    "Intellectual disability",
+    "Microcephaly",
+    "Cerebellar dysplasia",
+    "Renal tubular epithelial necrosis",
+    "Autosomal recessive inheritance",
+    "Short stature",
+    "Severe global developmental delay",
+    "Nystagmus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

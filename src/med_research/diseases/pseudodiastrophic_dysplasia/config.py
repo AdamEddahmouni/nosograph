@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'pseudodiastrophic dysplasia (PSEUDODIASTROPHIC_DYSPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pseudodiastrophic dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Micrognathia",
+    "Camptodactyly",
+    "Recurrent infections",
+    "Hypoplasia of the odontoid process",
+    "Platyspondyly",
+    "Autosomal recessive inheritance",
+    "Severe short stature",
+    "Brachycephaly",
+    "Smooth philtrum",
+    "Short neck",
+    "Talipes equinovarus",
+    "Phalangeal dislocation",
+    "Rhizomelia",
+    "Anteverted nares",
+    "Malar flattening",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

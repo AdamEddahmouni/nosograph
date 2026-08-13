@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'obstructive sleep apnea (OBSTRUCTIVE_SLEEP_APNEA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of obstructive sleep apnea
-SYMPTOMS = []
+SYMPTOMS = [
+    "Excessive daytime somnolence",
+    "Focal impaired awareness seizure",
+    "Snoring",
+    "Autosomal dominant inheritance",
+    "Obstructive sleep apnea",
+    "Anosmia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

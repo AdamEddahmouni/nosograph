@@ -8,8 +8,14 @@ PIPELINE_LABEL = "Obesity (OBESITY)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Obesity
-SYMPTOMS = []
+SYMPTOMS = [
+    "Polygenic inheritance",
+    "Autosomal recessive inheritance",
+    "Decreased resting energy expenditure",
+    "Autosomal dominant inheritance",
+    "Increased waist to hip ratio",
+    "Obesity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

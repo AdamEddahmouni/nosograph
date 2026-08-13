@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'chromosome 15q26-qter deletion syndrome (CHROMOSOME_15Q26_QTER
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of chromosome 15q26-qter deletion syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Global developmental delay",
+    "Cryptorchidism",
+    "Short middle phalanx of finger",
+    "Abnormal cardiac septum morphology",
+    "Micrognathia",
+    "Small for gestational age",
+    "Intrauterine growth retardation",
+    "Low-set ears",
+    "Sporadic",
+    "Blepharophimosis",
+    "Intellectual disability",
+    "Hypospadias",
+    "Brachydactyly",
+    "Failure to thrive",
+    "Micropenis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

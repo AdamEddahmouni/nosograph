@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'immunodeficiency 98 with autoinflammation, X-linked (IMMUNODEF
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 98 with autoinflammation, X-linked
-SYMPTOMS = []
+SYMPTOMS = [
+    "Bone marrow hypocellularity",
+    "Infantile onset",
+    "Juvenile onset",
+    "Decreased total neutrophil count",
+    "Recurrent aphthous stomatitis",
+    "X-linked inheritance",
+    "Recurrent infections",
+    "Myelofibrosis",
+    "Autoimmune hemolytic anemia",
+    "Decreased total B cell count",
+    "Hepatomegaly",
+    "Hemophagocytosis",
+    "Growth delay",
+    "Splenomegaly",
+    "Absence of circulating granulocytes",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

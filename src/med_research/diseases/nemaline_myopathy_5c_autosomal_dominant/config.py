@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'nemaline myopathy 5C, autosomal dominant (NEMALINE_MYOPATHY_5C
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of nemaline myopathy 5C, autosomal dominant
-SYMPTOMS = []
+SYMPTOMS = [
+    "Poor head control",
+    "Tip-toe gait",
+    "Achilles tendon contracture",
+    "Proximal muscle weakness",
+    "Expressive language delay",
+    "Waddling gait",
+    "Motor delay",
+    "Floppy infant",
+    "Gowers sign",
+    "Weakness of facial musculature",
+    "Autosomal dominant inheritance",
+    "Pes cavus",
+    "Skeletal muscle atrophy",
+    "Difficulty running",
+    "Young adult onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

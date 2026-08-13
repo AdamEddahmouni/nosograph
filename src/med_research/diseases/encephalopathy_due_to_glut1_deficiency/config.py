@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'encephalopathy due to GLUT1 deficiency (ENCEPHALOPATHY_DUE_TO_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of encephalopathy due to GLUT1 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Infantile onset",
+    "Hypoglycorrhachia",
+    "Hyperreflexia",
+    "Dysarthria",
+    "Confusion",
+    "Intellectual disability",
+    "Autosomal dominant inheritance",
+    "Paroxysmal dystonia",
+    "Paroxysmal involuntary eye movements",
+    "Myoclonus",
+    "Seizure",
+    "Autosomal recessive inheritance",
+    "Lethargy",
+    "Babinski sign",
+    "Paroxysmal lethargy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

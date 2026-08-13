@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'hereditary arterial and articular multiple calcification syndr
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hereditary arterial and articular multiple calcification syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Periarticular calcification",
+    "Iliac arterial calcification",
+    "Ectopic ossification",
+    "Autosomal recessive inheritance",
+    "Femoral arterial calcification",
+    "Coronary artery calcification",
+    "Intermittent claudication",
+    "Intervertebral disk calcification",
+    "Tibial arterial calcification",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'Parana hard-skin syndrome (PARANA_HARD_SKIN_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Parana hard-skin syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormality of the skin",
+    "Restricted chest movement",
+    "Respiratory insufficiency",
+    "Autosomal recessive inheritance",
+    "Abnormal abdomen morphology",
+    "Severe postnatal growth retardation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

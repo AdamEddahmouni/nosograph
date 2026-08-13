@@ -8,8 +8,23 @@ PIPELINE_LABEL = '46,XX testicular disorder of sex development (46_XX_TESTICULAR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of 46,XX testicular disorder of sex development
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal female external genitalia morphology",
+    "Upslanted palpebral fissure",
+    "Gonadal dysgenesis",
+    "Penoscrotal hypospadias",
+    "Ambiguous genitalia",
+    "Exaggerated rugosity of the labia majora",
+    "Increased blood urea nitrogen",
+    "Ovotestis",
+    "Bifid scrotum",
+    "Hydronephrosis",
+    "Autosomal dominant inheritance",
+    "Anal atresia",
+    "Hypospadias",
+    "Sex reversal",
+    "Gonadoblastoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

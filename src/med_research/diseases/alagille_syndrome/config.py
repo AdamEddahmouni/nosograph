@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Alagille syndrome (ALAGILLE_SYNDROME)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Alagille syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Areflexia",
+    "Hepatic failure",
+    "Posterior embryotoxon",
+    "Atrial septal defect",
+    "Depressed nasal bridge",
+    "Coarctation of aorta",
+    "Elevated circulating hepatic transaminase concentration",
+    "Renal insufficiency",
+    "Band keratopathy",
+    "Hypertension",
+    "Myopia",
+    "Deeply set eye",
+    "Exocrine pancreatic insufficiency",
+    "Hemivertebrae",
+    "Severe global developmental delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

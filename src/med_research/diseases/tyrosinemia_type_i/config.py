@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'tyrosinemia type I (TYROSINEMIA_TYPE_I)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of tyrosinemia type I
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated urinary 4-tyramine level",
+    "Renal Fanconi syndrome",
+    "Autosomal recessive inheritance",
+    "Fever",
+    "Failure to thrive",
+    "Hypophosphatemic rickets",
+    "Periodic paralysis",
+    "Metabolic acidosis",
+    "Glomerular sclerosis",
+    "Nephrocalcinosis",
+    "Hepatic failure",
+    "Acute hepatic failure",
+    "Hepatomegaly",
+    "Gastrointestinal hemorrhage",
+    "Ascites",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

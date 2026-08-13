@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'retinitis pigmentosa 32 (RETINITIS_PIGMENTOSA_32)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of retinitis pigmentosa 32
-SYMPTOMS = []
+SYMPTOMS = [
+    "Attenuation of retinal blood vessels",
+    "Optic disc pallor",
+    "Nyctalopia",
+    "Reduced visual acuity",
+    "Undetectable electroretinogram",
+    "Photoreceptor layer loss on macular OCT",
+    "Pigmentary retinopathy",
+    "Autosomal recessive inheritance",
+    "Spicular pigmentation of the retina",
+    "Retinal degeneration",
+    "Photophobia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

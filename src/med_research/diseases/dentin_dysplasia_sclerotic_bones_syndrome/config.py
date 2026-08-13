@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'dentin dysplasia-sclerotic bones syndrome (DENTIN_DYSPLASIA_SC
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dentin dysplasia-sclerotic bones syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormality of the dentition",
+    "Dentinogenesis imperfecta limited to primary teeth",
+    "Autosomal dominant inheritance",
+    "Cortical sclerosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

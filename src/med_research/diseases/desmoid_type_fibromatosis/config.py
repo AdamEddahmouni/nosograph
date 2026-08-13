@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'Desmoid-type fibromatosis (DESMOID_TYPE_FIBROMATOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Desmoid-type fibromatosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Breast carcinoma",
+    "Colorectal polyposis",
+    "Autosomal dominant inheritance",
+    "Gastrointestinal desmoid tumor",
+    "Young adult onset",
+    "Colon cancer",
+    "Middle age onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

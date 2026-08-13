@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autosomal dominant intellectual disability-craniofacial anomal
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal dominant intellectual disability-craniofacial anomalies-cardiac defects syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Protuberant abdomen",
+    "Intestinal malrotation",
+    "Lower limb hypertonia",
+    "Esotropia",
+    "Cleft palate",
+    "Autistic behavior",
+    "Short philtrum",
+    "Recurrent otitis media",
+    "Conjunctivitis",
+    "Wide intermamillary distance",
+    "Prominent antitragus",
+    "Lacrimal duct stenosis",
+    "Epicanthus",
+    "Triangular face",
+    "Long thorax",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

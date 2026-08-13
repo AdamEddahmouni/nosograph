@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'diaphanospondylodysostosis (DIAPHANOSPONDYLODYSOSTOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of diaphanospondylodysostosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cleft palate",
+    "Lumbosacral meningocele",
+    "Low-set ears",
+    "Short nose",
+    "Thoracic hypoplasia",
+    "Hammertoe",
+    "Autosomal recessive inheritance",
+    "Polymicrogyria",
+    "Depressed nasal ridge",
+    "Epicanthus",
+    "Short neck",
+    "Disproportionate short-trunk short stature",
+    "Tracheomalacia",
+    "Respiratory distress",
+    "Abnormal liver lobulation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

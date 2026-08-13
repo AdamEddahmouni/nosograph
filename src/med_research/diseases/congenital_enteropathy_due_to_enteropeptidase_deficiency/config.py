@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'congenital enteropathy due to enteropeptidase deficiency (CONG
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital enteropathy due to enteropeptidase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Failure to thrive",
+    "Autosomal recessive inheritance",
+    "Diarrhea",
+    "Hypoproteinemic edema",
+    "Hypoproteinemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Perrault syndrome (PERRAULT_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Perrault syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nystagmus",
+    "Cognitive impairment",
+    "Irregular menstruation",
+    "Bicornuate uterus",
+    "Short stature",
+    "Hypergonadotropic hypogonadism",
+    "Areflexia",
+    "Pes cavus",
+    "Streak ovary",
+    "Sensorimotor neuropathy",
+    "Scoliosis",
+    "Elevated circulating creatine kinase activity",
+    "Limited extraocular movements",
+    "Increased circulating lactate concentration",
+    "Positive Romberg sign",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

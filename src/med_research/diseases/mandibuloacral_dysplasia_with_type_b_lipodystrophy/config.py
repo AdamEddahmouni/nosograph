@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mandibuloacral dysplasia with type B lipodystrophy (MANDIBULOA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mandibuloacral dysplasia with type B lipodystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperglycemia",
+    "Progressive clavicular acroosteolysis",
+    "Brittle hair",
+    "Hyperinsulinemia",
+    "Progeroid facial appearance",
+    "Autosomal recessive inheritance",
+    "Glucose intolerance",
+    "Hyperlipidemia",
+    "Flexion contracture",
+    "Insulin-resistant diabetes mellitus",
+    "Hypoplasia of teeth",
+    "Dermal atrophy",
+    "Short phalanx of finger",
+    "Short clavicles",
+    "Delayed cranial suture closure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

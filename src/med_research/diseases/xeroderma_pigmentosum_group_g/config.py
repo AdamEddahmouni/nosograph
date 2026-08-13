@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'xeroderma pigmentosum group G (XERODERMA_PIGMENTOSUM_GROUP_G)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of xeroderma pigmentosum group G
-SYMPTOMS = []
+SYMPTOMS = [
+    "Tremor",
+    "Pes cavus",
+    "Small for gestational age",
+    "Global developmental delay",
+    "Cataract",
+    "Cutaneous photosensitivity",
+    "Ataxia",
+    "Autosomal recessive inheritance",
+    "Defective DNA repair after ultraviolet radiation damage",
+    "Microphthalmia",
+    "Microcephaly",
+    "Growth delay",
+    "Infantile spasms",
+    "Neonatal onset",
+    "Spasticity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

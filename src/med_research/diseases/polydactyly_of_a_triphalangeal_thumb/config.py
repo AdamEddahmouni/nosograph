@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'polydactyly of a triphalangeal thumb (POLYDACTYLY_OF_A_TRIPHAL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of polydactyly of a triphalangeal thumb
-SYMPTOMS = []
+SYMPTOMS = [
+    "Syndactyly",
+    "Preaxial foot polydactyly",
+    "Preaxial hand polydactyly",
+    "Opposable triphalangeal thumb",
+    "Autosomal dominant inheritance",
+    "Duplication of thumb phalanx",
+    "Postaxial foot polydactyly",
+    "Complete duplication of distal phalanx of the thumb",
+    "Duplication of phalanx of hallux",
+    "Postaxial hand polydactyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

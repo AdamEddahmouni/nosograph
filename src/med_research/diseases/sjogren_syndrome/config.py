@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'Sjogren syndrome (SJOGREN_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Sjogren syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Xerostomia",
+    "Autosomal recessive inheritance",
+    "Rheumatoid arthritis",
+    "Autoimmunity",
+    "Keratoconjunctivitis sicca",
+    "Abnormality of metabolism/homeostasis",
+    "Tubulointerstitial nephritis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

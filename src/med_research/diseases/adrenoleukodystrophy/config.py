@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Adrenoleukodystrophy (ADRENOLEUKODYSTROPHY)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Adrenoleukodystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Bowel incontinence",
+    "Abnormal cerebral white matter morphology",
+    "Hearing impairment",
+    "Neurodegeneration",
+    "Hyperpigmentation of the skin",
+    "Impaired vibration sensation at ankles",
+    "Elevated circulating long chain fatty acid concentration",
+    "Truncal ataxia",
+    "Primary adrenal insufficiency",
+    "Polyneuropathy",
+    "Atypical behavior",
+    "Spastic paraplegia",
+    "Urinary incontinence",
+    "Psychosis",
+    "X-linked recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

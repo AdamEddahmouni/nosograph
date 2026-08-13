@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'Leukomelanoderma-infantilism-intellectual disability-hypodonti
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Leukomelanoderma-infantilism-intellectual disability-hypodontia-hypotrichosis syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Sparse hair",
+    "Intellectual disability",
+    "Growth delay",
+    "Hypodontia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

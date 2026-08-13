@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'steatocystoma multiplex-natal teeth syndrome (STEATOCYSTOMA_MU
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of steatocystoma multiplex-natal teeth syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Steatocystoma multiplex",
+    "Abnormal nail morphology",
+    "Autosomal dominant inheritance",
+    "Natal tooth",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

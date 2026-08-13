@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'aromatase deficiency (AROMATASE_DEFICIENCY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of aromatase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypergonadotropic hypogonadism",
+    "Congenital onset",
+    "Ovarian cyst",
+    "Primary amenorrhea",
+    "Delayed skeletal maturation",
+    "Female pseudohermaphroditism",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Acrodysostosis 1 with or without hormone resistance (ACRODYSOS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Acrodysostosis 1 with or without hormone resistance
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated circulating calcitonin concentration",
+    "Hearing impairment",
+    "Hypodontia",
+    "Neonatal epiphyseal stippling",
+    "Intellectual disability",
+    "Anteverted nares",
+    "Autosomal dominant inheritance",
+    "Unilateral renal agenesis",
+    "Disproportionate short-limb short stature",
+    "Short phalanx of finger",
+    "Hypertelorism",
+    "Congenital hypothyroidism",
+    "Midface retrusion",
+    "Blue irides",
+    "Hydrocephalus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

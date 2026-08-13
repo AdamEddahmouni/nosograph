@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neuronopathy, distal hereditary motor, autosomal dominant 10 (
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neuronopathy, distal hereditary motor, autosomal dominant 10
-SYMPTOMS = []
+SYMPTOMS = [
+    "Fiber type grouping",
+    "Ascending aortic dissection",
+    "Autosomal dominant inheritance",
+    "Intellectual disability",
+    "Childhood onset",
+    "Tendon rupture",
+    "Hyperreflexia",
+    "Distal lower limb muscle weakness",
+    "Bruising susceptibility",
+    "Peripheral neuropathy",
+    "Scapular winging",
+    "Small thenar eminence",
+    "Osteoarthritis",
+    "Clonus",
+    "Descending aortic dissection",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

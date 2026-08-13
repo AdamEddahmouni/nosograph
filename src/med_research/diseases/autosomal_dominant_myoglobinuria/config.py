@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'autosomal dominant myoglobinuria (AUTOSOMAL_DOMINANT_MYOGLOBIN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal dominant myoglobinuria
-SYMPTOMS = []
+SYMPTOMS = [
+    "Muscle weakness",
+    "Elevated circulating creatine kinase activity",
+    "Myoglobinuria",
+    "Acute kidney injury",
+    "Myalgia",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

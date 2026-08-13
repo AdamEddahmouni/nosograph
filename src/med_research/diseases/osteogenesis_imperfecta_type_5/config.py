@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'osteogenesis imperfecta type 5 (OSTEOGENESIS_IMPERFECTA_TYPE_5
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of osteogenesis imperfecta type 5
-SYMPTOMS = []
+SYMPTOMS = [
+    "Joint hypermobility",
+    "Vertebral wedging",
+    "Triangular face",
+    "Hyperextensibility at elbow",
+    "Abnormal pelvic girdle bone morphology",
+    "Pes planus",
+    "Limited pronation/supination of forearm",
+    "Short stature",
+    "Autosomal dominant inheritance",
+    "Platyspondyly",
+    "Osteopenia",
+    "Anterior radial head dislocation",
+    "Recurrent fractures",
+    "Dentinogenesis imperfecta",
+    "Biconcave vertebral bodies",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

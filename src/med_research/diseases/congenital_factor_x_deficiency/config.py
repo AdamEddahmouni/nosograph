@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'congenital factor X deficiency (CONGENITAL_FACTOR_X_DEFICIENCY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital factor X deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Epistaxis",
+    "Autosomal recessive inheritance",
+    "Intracranial hemorrhage",
+    "Menorrhagia",
+    "Prolonged prothrombin time",
+    "Intramuscular hematoma",
+    "Gingival bleeding",
+    "Joint hemorrhage",
+    "Prolonged partial thromboplastin time",
+    "Prolonged bleeding after surgery",
+    "Reduced factor X activity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

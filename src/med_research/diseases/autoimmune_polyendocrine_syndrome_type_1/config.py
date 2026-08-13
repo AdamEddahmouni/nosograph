@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autoimmune polyendocrine syndrome type 1 (AUTOIMMUNE_POLYENDOC
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autoimmune polyendocrine syndrome type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Keratoconjunctivitis",
+    "Chronic sinusitis",
+    "Anti-thyroid-stimulating hormone receptor antibody positivity",
+    "Hypogonadism",
+    "Constriction of peripheral visual field",
+    "Enamel hypoplasia",
+    "Nasal polyposis",
+    "Premature ovarian insufficiency",
+    "Cholelithiasis",
+    "Type I diabetes mellitus",
+    "Juvenile onset",
+    "Neonatal onset",
+    "Autosomal recessive inheritance",
+    "Childhood onset",
+    "Hypoparathyroidism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

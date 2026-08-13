@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'hypersulfaturia (HYPERSULFATURIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypersulfaturia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Young adult onset",
+    "Kidney stone",
+    "Costochondral pain",
+    "Decreased circulating sulfate concentration",
+    "Increased urinary sulfate",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

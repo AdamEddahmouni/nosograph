@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Hallermann-Streiff syndrome (HALLERMANN_STREIFF_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Hallermann-Streiff syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Thin ribs",
+    "Dry skin",
+    "Prominent nasal bridge",
+    "High palate",
+    "Dental malocclusion",
+    "Dolichocephaly",
+    "Wormian bones",
+    "Platybasia",
+    "Intellectual disability",
+    "Everted lower lip vermilion",
+    "Low-set ears",
+    "Strabismus",
+    "Iris coloboma",
+    "Fine hair",
+    "Thin vermilion border",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

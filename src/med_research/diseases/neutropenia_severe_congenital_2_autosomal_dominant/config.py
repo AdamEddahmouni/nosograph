@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'neutropenia, severe congenital, 2, autosomal dominant (NEUTROP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neutropenia, severe congenital, 2, autosomal dominant
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased total neutrophil count",
+    "Decreased total B cell count",
+    "Autosomal dominant inheritance",
+    "Increased total monocyte count",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

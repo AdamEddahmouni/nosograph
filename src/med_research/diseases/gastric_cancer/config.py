@@ -8,8 +8,11 @@ PIPELINE_LABEL = "Gastric cancer (GASTRIC_CANCER)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Gastric cancer
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased level of L-fucose in urine",
+    "Stomach cancer",
+    "Typified by somatic mosaicism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

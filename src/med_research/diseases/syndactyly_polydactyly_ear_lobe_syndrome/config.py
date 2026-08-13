@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'syndactyly-polydactyly-ear lobe syndrome (SYNDACTYLY_POLYDACTY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of syndactyly-polydactyly-ear lobe syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Bifid distal phalanx of toe",
+    "Abnormal earlobe morphology",
+    "Broad toe",
+    "1-2 toe complete cutaneous syndactyly",
+    "Preaxial hand polydactyly",
+    "Autosomal dominant inheritance",
+    "Preaxial foot polydactyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

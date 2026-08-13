@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'periodic fever, immunodeficiency, and thrombocytopenia syndrom
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of periodic fever, immunodeficiency, and thrombocytopenia syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Splenomegaly",
+    "Abnormal CD4:CD8 ratio",
+    "Intermittent thrombocytopenia",
+    "Recurrent pneumonia",
+    "Specific learning disability",
+    "Decreased total B cell count",
+    "Pyoderma gangrenosum",
+    "Recurrent oral thrush",
+    "Recurrent fever",
+    "Recurrent infections",
+    "Recurrent aphthous stomatitis",
+    "Autosomal recessive inheritance",
+    "Diarrhea",
+    "Decreased total neutrophil count",
+    "Lymphadenopathy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

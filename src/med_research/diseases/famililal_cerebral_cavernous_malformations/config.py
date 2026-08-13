@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'famililal cerebral cavernous malformations (FAMILILAL_CEREBRAL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of famililal cerebral cavernous malformations
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hepatic vascular malformations",
+    "Cerebral calcification",
+    "Cerebral hemorrhage",
+    "Abnormality of the skin",
+    "Seizure",
+    "Headache",
+    "Cerebral cavernous malformation",
+    "Intracranial hemorrhage",
+    "Telangiectasia",
+    "Stroke",
+    "Abnormality of the musculature",
+    "Developmental retinal vascular malformation",
+    "Typified by incomplete penetrance",
+    "Autosomal dominant inheritance",
+    "Paralysis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

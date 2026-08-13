@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Membranous nephropathy (MEMBRANOUS_NEPHROPATHY)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Membranous nephropathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nephrotic syndrome",
+    "Short stature",
+    "Childhood onset",
+    "Hematuria",
+    "Progressive",
+    "Podocyte foot process effacement",
+    "Proteinuria",
+    "Stage 5 chronic kidney disease",
+    "Focal segmental glomerulosclerosis",
+    "Diffuse mesangial sclerosis",
+    "Steroid-resistant nephrotic syndrome",
+    "Juvenile onset",
+    "Minimal change glomerulonephritis",
+    "Autosomal recessive inheritance",
+    "Microscopic hematuria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

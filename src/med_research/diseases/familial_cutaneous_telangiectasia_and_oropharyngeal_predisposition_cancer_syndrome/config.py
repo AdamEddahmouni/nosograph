@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'familial cutaneous telangiectasia and oropharyngeal predisposi
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial cutaneous telangiectasia and oropharyngeal predisposition cancer syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Actinic keratosis",
+    "Unusual fungal nail infection",
+    "Sparse lateral eyebrow",
+    "Convex nasal ridge",
+    "Autosomal dominant inheritance",
+    "Breast carcinoma",
+    "Facial telangiectasia",
+    "Nail dystrophy",
+    "Oropharyngeal squamous cell carcinoma",
+    "Carious teeth",
+    "Onycholysis",
+    "Conical incisor",
+    "Yellow nails",
+    "Livedo",
+    "Alopecia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

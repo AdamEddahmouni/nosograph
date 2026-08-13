@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hypoplasminogenemia (HYPOPLASMINOGENEMIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypoplasminogenemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Gingival overgrowth",
+    "Gingivitis",
+    "Ventriculomegaly",
+    "Periodontitis",
+    "Hydrocephalus",
+    "Dandy-Walker malformation",
+    "Cerebellar hypoplasia",
+    "Abnormal thrombosis",
+    "Conjunctivitis",
+    "Kidney stone",
+    "Autosomal recessive inheritance",
+    "Macrocephaly",
+    "Blindness",
+    "Decreased circulating plasminogen concentration",
+    "Generalized hypotonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

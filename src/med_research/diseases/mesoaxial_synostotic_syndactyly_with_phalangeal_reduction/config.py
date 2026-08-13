@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'mesoaxial synostotic syndactyly with phalangeal reduction (MES
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mesoaxial synostotic syndactyly with phalangeal reduction
-SYMPTOMS = []
+SYMPTOMS = [
+    "Proximal fifth finger symphalangism",
+    "Aplasia/Hypoplasia of the middle phalanx of the 2nd finger",
+    "Aplasia/Hypoplasia of the thumb",
+    "3-4 finger osseus syndactyly",
+    "Single transverse palmar crease",
+    "Congenital onset",
+    "HP_0010064",
+    "Autosomal recessive inheritance",
+    "Aplasia/Hypoplasia of the hallux",
+    "Clinodactyly of the 5th finger",
+    "Aplasia/Hypoplasia of the middle phalanx of the 5th finger",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

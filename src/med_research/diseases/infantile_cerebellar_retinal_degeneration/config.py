@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'infantile cerebellar-retinal degeneration (INFANTILE_CEREBELLA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of infantile cerebellar-retinal degeneration
-SYMPTOMS = []
+SYMPTOMS = [
+    "Strabismus",
+    "Hypotonia",
+    "Focal-onset seizure",
+    "Severe global developmental delay",
+    "Autosomal recessive inheritance",
+    "Progressive microcephaly",
+    "Demyelinating peripheral neuropathy",
+    "Athetosis",
+    "Nystagmus",
+    "Hyporeflexia",
+    "Sensorineural hearing impairment",
+    "Infantile onset",
+    "Optic atrophy",
+    "Cerebellar atrophy",
+    "Decreased body weight",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'cerebrotendinous xanthomatosis (CEREBROTENDINOUS_XANTHOMATOSIS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cerebrotendinous xanthomatosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal dentate nucleus morphology",
+    "Myocardial infarction",
+    "Abnormal pyramidal sign",
+    "EMG: axonal abnormality",
+    "Abnormal circulating cholesterol concentration",
+    "Cholelithiasis",
+    "Autosomal recessive inheritance",
+    "Hallucinations",
+    "Pseudobulbar paralysis",
+    "EEG with generalized slow activity",
+    "Xanthomatosis",
+    "Cerebellar atrophy",
+    "Spasticity",
+    "Elevated circulating bile alcohol concentration",
+    "Cerebral atrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

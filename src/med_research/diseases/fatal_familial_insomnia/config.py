@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'fatal familial insomnia (FATAL_FAMILIAL_INSOMNIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of fatal familial insomnia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Dysphagia",
+    "Adult onset",
+    "Constipation",
+    "Apnea",
+    "Weight loss",
+    "Cerebral cortex with spongiform changes",
+    "Diplopia",
+    "Ataxia",
+    "Fever",
+    "Abnormal autonomic nervous system physiology",
+    "Insomnia",
+    "Urinary retention",
+    "Myoclonus",
+    "Dysarthria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

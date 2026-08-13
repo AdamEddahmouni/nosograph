@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hyperphenylalaninemia due to DNAJC12 deficiency (HYPERPHENYLAL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hyperphenylalaninemia due to DNAJC12 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Broad-based gait",
+    "Limb hypertonia",
+    "Bradykinesia",
+    "Global developmental delay",
+    "Oculogyric crisis",
+    "Delayed speech and language development",
+    "Hypertonia",
+    "Parkinsonism",
+    "Axial hypotonia",
+    "Attention deficit hyperactivity disorder",
+    "Autosomal recessive inheritance",
+    "Generalized hypotonia",
+    "Dystonia",
+    "Mild intellectual disability",
+    "Nystagmus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

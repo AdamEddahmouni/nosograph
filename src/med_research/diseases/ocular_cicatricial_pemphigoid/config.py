@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'ocular cicatricial pemphigoid (OCULAR_CICATRICIAL_PEMPHIGOID)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ocular cicatricial pemphigoid
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Abnormality of the eye",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

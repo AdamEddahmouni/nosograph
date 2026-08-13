@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'split-foot malformation-mesoaxial polydactyly syndrome (SPLIT_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of split-foot malformation-mesoaxial polydactyly syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital onset",
+    "1-2 toe syndactyly",
+    "Sensorineural hearing impairment",
+    "Autosomal recessive inheritance",
+    "Split foot",
+    "4-5 toe syndactyly",
+    "Mesoaxial hand polydactyly",
+    "Split hand",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

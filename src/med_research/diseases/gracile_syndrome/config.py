@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'GRACILE syndrome (GRACILE_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of GRACILE syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Aminoaciduria",
+    "Neonatal hypotonia",
+    "Elevated circulating iron concentration",
+    "Cholestasis",
+    "Intrauterine growth retardation",
+    "Autosomal recessive inheritance",
+    "Chronic lactic acidosis",
+    "Increased circulating ferritin concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

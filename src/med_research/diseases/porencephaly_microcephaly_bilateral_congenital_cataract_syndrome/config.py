@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'porencephaly-microcephaly-bilateral congenital cataract syndro
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of porencephaly-microcephaly-bilateral congenital cataract syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital onset",
+    "Secondary microcephaly",
+    "Seizure",
+    "Neonatal death",
+    "Hyperreflexia",
+    "Cerebellar hypoplasia",
+    "Optic disc pallor",
+    "Ventriculomegaly",
+    "Global developmental delay",
+    "Hepatomegaly",
+    "Autosomal recessive inheritance",
+    "Ectopic kidney",
+    "Cryptorchidism",
+    "Cystic renal dysplasia",
+    "Spasticity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

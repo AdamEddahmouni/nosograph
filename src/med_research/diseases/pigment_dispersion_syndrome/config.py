@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'pigment dispersion syndrome (PIGMENT_DISPERSION_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pigment dispersion syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Optic atrophy",
+    "Autosomal dominant inheritance",
+    "Young adult onset",
+    "Myopia",
+    "Open angle glaucoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'genito-palato-cardiac syndrome (GENITO_PALATO_CARDIAC_SYNDROME
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of genito-palato-cardiac syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Double outlet right ventricle",
+    "Micrognathia",
+    "Right aortic arch",
+    "Hypospadias",
+    "Gonadal dysgenesis, male",
+    "Cleft palate",
+    "Transposition of the great arteries",
+    "Ventricular septal defect",
+    "Cleft upper lip",
+    "Renal cyst",
+    "Low-set ears",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hepatorenocardiac degenerative fibrosis (HEPATORENOCARDIAC_DEG
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hepatorenocardiac degenerative fibrosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hepatosplenomegaly",
+    "Cirrhosis",
+    "Renal cyst",
+    "Portal hypertension",
+    "Jaundice",
+    "Hypersplenism",
+    "Infantile onset",
+    "Hepatic encephalopathy",
+    "Reduced renal corticomedullary differentiation",
+    "Young adult onset",
+    "Hyperechogenic kidneys",
+    "Childhood onset",
+    "Juvenile onset",
+    "Hepatocellular carcinoma",
+    "Elevated circulating hepatic transaminase concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

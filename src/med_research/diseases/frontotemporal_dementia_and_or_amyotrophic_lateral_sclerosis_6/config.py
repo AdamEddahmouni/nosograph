@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'frontotemporal dementia and/or amyotrophic lateral sclerosis 6
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of frontotemporal dementia and/or amyotrophic lateral sclerosis 6
-SYMPTOMS = []
+SYMPTOMS = [
+    "Proximal lower limb muscle weakness",
+    "Depression",
+    "Dysphagia",
+    "Increased variability in muscle fiber diameter",
+    "Amyotrophic lateral sclerosis",
+    "Proximal upper limb muscle weakness",
+    "Dysarthria",
+    "Brisk reflexes",
+    "Ankle clonus",
+    "Babinski sign",
+    "Respiratory failure",
+    "Spasticity",
+    "EMG: chronic denervation signs",
+    "Gait disturbance",
+    "Middle age onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

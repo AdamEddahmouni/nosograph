@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'encephalocraniocutaneous lipomatosis (ENCEPHALOCRANIOCUTANEOUS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of encephalocraniocutaneous lipomatosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nevus psiloliparus",
+    "Seizure",
+    "Hypoplasia of the corpus callosum",
+    "Congenital onset",
+    "Porencephalic cyst",
+    "Global developmental delay",
+    "Peripheral pulmonary artery stenosis",
+    "Cryptorchidism",
+    "Subcutaneous lipoma",
+    "Linear hyperpigmentation",
+    "Limbal dermoid",
+    "Lipoma",
+    "Hydronephrosis",
+    "Subvalvular aortic stenosis",
+    "Microphthalmia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Jackson-Weiss syndrome (JACKSON_WEISS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Jackson-Weiss syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short first metatarsal",
+    "Midface retrusion",
+    "Broad distal phalanx of the hallux",
+    "Hallux varus",
+    "Prominent forehead",
+    "Malar flattening",
+    "Calcaneonavicular fusion",
+    "Broad proximal phalanx of the hallux",
+    "Proptosis",
+    "Broad hallux",
+    "Coronal craniosynostosis",
+    "Autosomal dominant inheritance",
+    "Broad first metatarsal",
+    "2-3 toe syndactyly",
+    "Broad metatarsal",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,9 @@ PIPELINE_LABEL = 'isolated anterior cervical hypertrichosis (ISOLATED_ANTERIOR_C
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of isolated anterior cervical hypertrichosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Anterior cervical hypertrichosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'congenital hypothalamic hamartoma syndrome (CONGENITAL_HYPOTHA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital hypothalamic hamartoma syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Anterior hypopituitarism",
+    "Skeletal dysplasia",
+    "Death in infancy",
+    "Short stature",
+    "Microglossia",
+    "Postaxial hand polydactyly",
+    "Micropenis",
+    "Abnormal cardiovascular system morphology",
+    "Hip dislocation",
+    "Micromelia",
+    "Microcephaly",
+    "Focal emotional seizure with crying",
+    "Short nose",
+    "Autosomal recessive inheritance",
+    "Occipital encephalocele",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

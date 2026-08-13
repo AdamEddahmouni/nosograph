@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Teebi hypertelorism syndrome 2 (TEEBI_HYPERTELORISM_SYNDROME_2
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Teebi hypertelorism syndrome 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ptosis",
+    "Clinodactyly of the 5th finger",
+    "Wide anterior fontanel",
+    "Autistic behavior",
+    "Chin with horizontal crease",
+    "Short nose",
+    "Intellectual disability",
+    "Attention deficit hyperactivity disorder",
+    "Hypospadias",
+    "Hypertelorism",
+    "Congenital onset",
+    "Syndactyly",
+    "Broad nasal tip",
+    "Global developmental delay",
+    "Thick eyebrow",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

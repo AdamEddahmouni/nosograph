@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'ciliary dyskinesia, primary, 50 (CILIARY_DYSKINESIA_PRIMARY_50
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ciliary dyskinesia, primary, 50
-SYMPTOMS = []
+SYMPTOMS = [
+    "Male infertility",
+    "Chronic bronchitis",
+    "Short sperm flagella",
+    "Reduced sperm motility",
+    "Absent inner dynein arms",
+    "Chronic sinusitis",
+    "Autosomal recessive inheritance",
+    "Coiled sperm flagella",
+    "Reduced progressive sperm motility",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

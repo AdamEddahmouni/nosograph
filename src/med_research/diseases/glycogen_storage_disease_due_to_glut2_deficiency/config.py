@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'glycogen storage disease due to GLUT2 deficiency (GLYCOGEN_STO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of glycogen storage disease due to GLUT2 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Generalized aminoaciduria",
+    "Renal tubular dysfunction",
+    "Beta 2-microglobulinuria",
+    "Proteinuria",
+    "Hypergalactosemia",
+    "Hepatomegaly",
+    "Hyperphosphaturia",
+    "Abdominal distention",
+    "Postprandial hyperglycemia",
+    "Elevated circulating alkaline phosphatase concentration",
+    "Autosomal recessive inheritance",
+    "Hypophosphatemia",
+    "Elevated gamma-glutamyltransferase level",
+    "Increased serum bile acid concentration",
+    "Ketonuria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Hermansky-Pudlak syndrome 3 (HERMANSKY_PUDLAK_SYNDROME_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Hermansky-Pudlak syndrome 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Horizontal nystagmus",
+    "Congenital nystagmus",
+    "Hypopigmentation of hair",
+    "Juvenile onset",
+    "Bruising susceptibility",
+    "Visual impairment",
+    "Hypopigmentation of the skin",
+    "Albinism",
+    "Reduced visual acuity",
+    "Abnormal number of dense granules",
+    "Autosomal recessive inheritance",
+    "Esotropia",
+    "Spontaneous, recurrent epistaxis",
+    "Impaired platelet aggregation",
+    "Nystagmus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

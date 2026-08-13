@@ -8,8 +8,23 @@ PIPELINE_LABEL = '3-hydroxy-3-methylglutaryl-CoA synthase deficiency (3_HYDROXY_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of 3-hydroxy-3-methylglutaryl-CoA synthase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Childhood onset",
+    "Seizure",
+    "Hypophosphatemia",
+    "Diarrhea",
+    "Hypoglycemic coma",
+    "Increased circulating free fatty acid level",
+    "Vomiting",
+    "Infantile onset",
+    "Elevated circulating alanine aminotransferase concentration",
+    "Coma",
+    "Elevated circulating hepatic transaminase concentration",
+    "Hepatic steatosis",
+    "Encephalopathy",
+    "Elevated circulating aspartate aminotransferase concentration",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

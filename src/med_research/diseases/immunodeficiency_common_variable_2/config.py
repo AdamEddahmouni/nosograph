@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'immunodeficiency, common variable, 2 (IMMUNODEFICIENCY_COMMON_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency, common variable, 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autoimmunity",
+    "Lymphadenopathy",
+    "Partial absence of specific antibody response to unconjugated pneumococcus polysaccharide",
+    "Autosomal recessive inheritance",
+    "Follicular hyperplasia",
+    "HP_0005435",
+    "Abnormal total T cell number",
+    "Recurrent sinusitis",
+    "Neoplasm",
+    "Diarrhea",
+    "Lymphoma",
+    "Bronchiectasis",
+    "Recurrent otitis media",
+    "Recurrent pneumonia",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

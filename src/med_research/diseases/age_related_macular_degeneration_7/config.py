@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'age related macular degeneration 7 (AGE_RELATED_MACULAR_DEGENE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of age related macular degeneration 7
-SYMPTOMS = []
+SYMPTOMS = [
+    "Macular degeneration",
+    "Polygenic inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

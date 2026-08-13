@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'diastrophic dysplasia (DIASTROPHIC_DYSPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of diastrophic dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Irregular epiphyses",
+    "Intellectual disability",
+    "Hypoplastic cervical vertebrae",
+    "Glabellar hemangioma",
+    "Spinal cord compression",
+    "Short long bone",
+    "Cleft palate",
+    "Talipes equinovarus",
+    "Cervical kyphosis",
+    "Autosomal recessive inheritance",
+    "Flattened epiphysis",
+    "Hearing impairment",
+    "Lumbar hyperlordosis",
+    "Ulnar deviation of finger",
+    "Nevus flammeus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

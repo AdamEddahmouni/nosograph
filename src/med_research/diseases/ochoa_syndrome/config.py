@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Ochoa syndrome (OCHOA_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Ochoa syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Urinary urgency",
+    "Hydronephrosis",
+    "Megacystis",
+    "Facial grimacing",
+    "Vesicoureteral reflux",
+    "Abnormal facial expression",
+    "Constipation",
+    "Recurrent urinary tract infections",
+    "Juvenile onset",
+    "Abnormal facial shape",
+    "Autosomal recessive inheritance",
+    "Spastic/hyperactive bladder",
+    "Urethral obstruction",
+    "Hydroureter",
+    "Urethral valve",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

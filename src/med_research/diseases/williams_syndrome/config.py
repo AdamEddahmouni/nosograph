@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Williams syndrome (WILLIAMS_SYNDROME)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Williams syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Premature graying of hair",
+    "Blue irides",
+    "Renal hypoplasia",
+    "Hyperacusis",
+    "Bicuspid aortic valve",
+    "Periorbital fullness",
+    "Depressed nasal bridge",
+    "HP_0002370",
+    "Narrow forehead",
+    "Umbilical hernia",
+    "Incoordination",
+    "Gastroesophageal reflux",
+    "Short stature",
+    "Flexion contracture",
+    "Hypertension",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

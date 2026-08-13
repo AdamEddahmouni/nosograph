@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'Anemia, congenital dyserythropoietic, type IIIb, autosomal rec
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Anemia, congenital dyserythropoietic, type IIIb, autosomal recessive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Childhood onset",
+    "Macrocytic anemia",
+    "Macrocytic dyserythropoietic anemia",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

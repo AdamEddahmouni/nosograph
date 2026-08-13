@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'Karsch-Neugebauer syndrome (KARSCH_NEUGEBAUER_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Karsch-Neugebauer syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Strabismus",
+    "Cataract",
+    "Retinopathy",
+    "Split foot",
+    "Nystagmus",
+    "Split hand",
+    "Hand monodactyly",
+    "Autosomal dominant inheritance",
+    "Congenital nystagmus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

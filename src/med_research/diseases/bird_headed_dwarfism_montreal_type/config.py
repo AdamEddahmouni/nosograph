@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'bird headed-dwarfism, Montreal type (BIRD_HEADED_DWARFISM_MONT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of bird headed-dwarfism, Montreal type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Retrognathia",
+    "Alopecia of scalp",
+    "Narrow face",
+    "Cryptorchidism",
+    "Excessive wrinkling of palmar skin",
+    "Intellectual disability",
+    "Severe short stature",
+    "Ptosis",
+    "Cerebral hypoplasia",
+    "Convex nasal ridge",
+    "Premature graying of hair",
+    "Abnormally large globe",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

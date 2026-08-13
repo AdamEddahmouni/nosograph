@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'cryohydrocytosis (CRYOHYDROCYTOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cryohydrocytosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Reticulocytosis",
+    "Hemolytic anemia",
+    "Splenomegaly",
+    "Pseudohyperkalemia",
+    "Stomatocytosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

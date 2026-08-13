@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Smith-McCort dysplasia 1 (SMITH_MCCORT_DYSPLASIA_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Smith-McCort dysplasia 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short neck",
+    "Deformed sella turcica",
+    "Short metacarpal",
+    "Iliac crest serration",
+    "Genu valgum",
+    "Irregular epiphyses",
+    "Genu varum",
+    "Autosomal recessive inheritance",
+    "Short phalanx of finger",
+    "Hypoplastic facial bones",
+    "Limitation of joint mobility",
+    "Prominent sternum",
+    "Hypoplastic scapulae",
+    "Hypoplastic acetabulae",
+    "Kyphosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

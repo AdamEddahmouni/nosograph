@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'Guttmacher syndrome (GUTTMACHER_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Guttmacher syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short thumb",
+    "Short 5th finger",
+    "Short 2nd toe",
+    "Postaxial hand polydactyly",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

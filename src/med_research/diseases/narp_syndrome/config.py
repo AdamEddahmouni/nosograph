@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'NARP syndrome (NARP_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of NARP syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dementia",
+    "Corticospinal tract atrophy",
+    "Blindness",
+    "Ataxia",
+    "Global developmental delay",
+    "Mitochondrial myopathy",
+    "Nystagmus",
+    "Proximal muscle weakness",
+    "Seizure",
+    "Myopathy",
+    "Retinopathy",
+    "Retinal pigment epithelial mottling",
+    "Mitochondrial inheritance",
+    "Sensory neuropathy",
+    "Rod-cone dystrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

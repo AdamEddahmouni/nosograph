@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'glycogen storage disorder due to hepatic glycogen synthase def
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of glycogen storage disorder due to hepatic glycogen synthase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Fasting hypoglycemia",
+    "Seizure",
+    "Postprandial hyperglycemia",
+    "Neonatal hypoglycemia",
+    "Increased circulating lactate concentration",
+    "Ketosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

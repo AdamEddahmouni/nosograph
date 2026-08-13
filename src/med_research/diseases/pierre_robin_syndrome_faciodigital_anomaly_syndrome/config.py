@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'Pierre Robin syndrome-faciodigital anomaly syndrome (PIERRE_RO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Pierre Robin syndrome-faciodigital anomaly syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperconvex nail",
+    "Glossoptosis",
+    "High forehead",
+    "Easily subluxated first metacarpophalangeal joints",
+    "Short distal phalanx of finger",
+    "Micrognathia",
+    "Pierre-Robin sequence",
+    "Tapered finger",
+    "Cleft palate",
+    "Clinodactyly of the 5th finger",
+    "Frontal bossing",
+    "X-linked inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

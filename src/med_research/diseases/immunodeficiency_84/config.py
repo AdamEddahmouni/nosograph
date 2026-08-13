@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'immunodeficiency 84 (IMMUNODEFICIENCY_84)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 84
-SYMPTOMS = []
+SYMPTOMS = [
+    "Splenomegaly",
+    "Persistent EBV viremia",
+    "B-cell lymphoma",
+    "Autosomal dominant inheritance",
+    "Recurrent bacterial infections",
+    "Perianal abscess",
+    "Decreased total B cell count",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'familial cylindromatosis (FAMILIAL_CYLINDROMATOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial cylindromatosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Adult onset",
+    "Autosomal dominant inheritance",
+    "Neoplasm of the skin",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

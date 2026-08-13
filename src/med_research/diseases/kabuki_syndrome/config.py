@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Kabuki syndrome (KABUKI_SYNDROME)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Kabuki syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased circulating IgA concentration",
+    "Short stature",
+    "Low-set ears",
+    "Dental malocclusion",
+    "Lateral ventricle dilatation",
+    "Mitral stenosis",
+    "Finger clinodactyly",
+    "Hypoparathyroidism",
+    "Hypoglycemia",
+    "Duplicated collecting system",
+    "Micrognathia",
+    "Abnormality of the dentition",
+    "Anal atresia",
+    "Sensorineural hearing impairment",
+    "Pulmonic stenosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

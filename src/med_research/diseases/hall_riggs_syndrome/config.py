@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Hall-Riggs syndrome (HALL_RIGGS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Hall-Riggs syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Seizure",
+    "Kyphosis",
+    "Absent speech",
+    "Feeding difficulties in infancy",
+    "Autosomal recessive inheritance",
+    "Intrauterine growth retardation",
+    "Scoliosis",
+    "Microdontia of primary teeth",
+    "Prominent nose",
+    "Brachydactyly",
+    "HP_0006334",
+    "Depressed nasal bridge",
+    "Platyspondyly",
+    "Intellectual disability",
+    "Thick lower lip vermilion",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

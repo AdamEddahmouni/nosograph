@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'pulmonary fibrosis and/or bone marrow failure syndrome, telome
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pulmonary fibrosis and/or bone marrow failure syndrome, telomere-related, 8
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pulmonary fibrosis",
+    "Young adult onset",
+    "Hepatic failure",
+    "Splenomegaly",
+    "Cholecystitis",
+    "Decreased DLCO",
+    "Increased mean corpuscular volume",
+    "Autosomal dominant inheritance",
+    "Short telomere length",
+    "Esophageal varix",
+    "Inspiratory crackles",
+    "Dyspnea",
+    "Portal hypertension",
+    "Nodular regenerative hyperplasia of liver",
+    "Usual interstitial pneumonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'argininosuccinic aciduria (ARGININOSUCCINIC_ACIDURIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of argininosuccinic aciduria
-SYMPTOMS = []
+SYMPTOMS = [
+    "Neonatal onset",
+    "Trichorrhexis nodosa",
+    "Protein avoidance",
+    "Global developmental delay",
+    "Cerebral edema",
+    "Coma",
+    "Intellectual disability",
+    "Oroticaciduria",
+    "Vomiting",
+    "Increased circulating argininosuccinic acid",
+    "Hepatomegaly",
+    "Failure to thrive",
+    "Irritability",
+    "Elevated CSF argininosuccinic acid concentration",
+    "Seizure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

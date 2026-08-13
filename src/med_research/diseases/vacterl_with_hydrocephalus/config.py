@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'VACTERL with hydrocephalus (VACTERL_WITH_HYDROCEPHALUS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of VACTERL with hydrocephalus
-SYMPTOMS = []
+SYMPTOMS = [
+    "Aqueductal stenosis",
+    "Neonatal death",
+    "Third trimester onset",
+    "Hydronephrosis",
+    "Tracheoesophageal fistula",
+    "Hydrocephalus",
+    "Esophageal atresia",
+    "HP_0004059",
+    "Respiratory insufficiency",
+    "Transposition of the great arteries",
+    "Absent thumb",
+    "Proximal placement of thumb",
+    "Atrioventricular canal defect",
+    "Respiratory failure",
+    "Renal hypoplasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

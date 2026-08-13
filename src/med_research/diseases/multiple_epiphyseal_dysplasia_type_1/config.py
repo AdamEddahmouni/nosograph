@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'multiple epiphyseal dysplasia type 1 (MULTIPLE_EPIPHYSEAL_DYSP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of multiple epiphyseal dysplasia type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Joint stiffness",
+    "Limited hip movement",
+    "Short metacarpal",
+    "Short phalanx of finger",
+    "Irregular vertebral endplates",
+    "Genu valgum",
+    "Hip osteoarthritis",
+    "Severe short stature",
+    "Irregular epiphyses",
+    "Mild short stature",
+    "Disproportionate short-limb short stature",
+    "Ovoid vertebral bodies",
+    "Avascular necrosis of the capital femoral epiphysis",
+    "Pes planus",
+    "Generalized joint hypermobility",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

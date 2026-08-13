@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'IgE responsiveness, atopic (IGE_RESPONSIVENESS_ATOPIC)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of IgE responsiveness, atopic
-SYMPTOMS = []
+SYMPTOMS = [
+    "Allergic rhinitis",
+    "Autosomal dominant inheritance",
+    "Asthma",
+    "Increased circulating IgE concentration",
+    "Eczematoid dermatitis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

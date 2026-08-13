@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Smith-Magenis syndrome (SMITH_MAGENIS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Smith-Magenis syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Areflexia",
+    "Short middle phalanx of the 5th finger",
+    "Ventriculomegaly",
+    "Motor stereotypy",
+    "Broad palm",
+    "Autosomal dominant inheritance",
+    "Deeply set eye",
+    "Retinal detachment",
+    "Scoliosis",
+    "Hyporeflexia",
+    "Abnormality of the eye",
+    "Self hugging",
+    "Hoarse voice",
+    "Abnormality of the thyroid gland",
+    "Mild global developmental delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

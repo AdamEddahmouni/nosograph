@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mitochondrial DNA depletion syndrome 15 (hepatocerebral type) 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mitochondrial DNA depletion syndrome 15 (hepatocerebral type)
-SYMPTOMS = []
+SYMPTOMS = [
+    "Conjugated hyperbilirubinemia",
+    "Abdominal distention",
+    "Cholestasis",
+    "Hypertyrosinemia",
+    "Elevated circulating hepatic transaminase concentration",
+    "Neonatal onset",
+    "4-hydroxyphenylacetic aciduria",
+    "Failure to thrive",
+    "Hyperbilirubinemia",
+    "Progressive",
+    "Jaundice",
+    "Hepatic failure",
+    "Intrauterine growth retardation",
+    "Polyhydramnios",
+    "Hypoglycemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

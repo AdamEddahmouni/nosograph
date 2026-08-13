@@ -8,8 +8,10 @@ PIPELINE_LABEL = "Takayasu arteritis (TAKAYASU_ARTERITIS)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Takayasu arteritis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Arteritis",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

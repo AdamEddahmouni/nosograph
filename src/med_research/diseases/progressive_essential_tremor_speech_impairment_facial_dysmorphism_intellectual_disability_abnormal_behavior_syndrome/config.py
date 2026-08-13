@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'progressive essential tremor-speech impairment-facial dysmorph
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of progressive essential tremor-speech impairment-facial dysmorphism-intellectual disability-abnormal behavior syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Narrow palpebral fissure",
+    "Long philtrum",
+    "Small hand",
+    "Inappropriate laughter",
+    "Self-mutilation",
+    "Global developmental delay",
+    "Severe intellectual disability",
+    "Tremor",
+    "Inability to walk",
+    "Autosomal recessive inheritance",
+    "Aggressive behavior",
+    "Waddling gait",
+    "Emotional lability",
+    "Mandibular prognathia",
+    "Macrotia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

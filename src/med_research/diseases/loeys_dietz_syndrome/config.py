@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Loeys-Dietz syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cervical spine instability",
+    "Atrial septal defect",
+    "Camptodactyly",
+    "Ptosis",
+    "Infantile onset",
+    "Strabismus",
+    "Disproportionate tall stature",
+    "Umbilical hernia",
+    "Spontaneous pneumothorax",
+    "Scoliosis",
+    "Syndactyly",
+    "Descending aortic dissection",
+    "Abnormal sternum morphology",
+    "Bicuspid aortic valve",
+    "Carotid artery dilatation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

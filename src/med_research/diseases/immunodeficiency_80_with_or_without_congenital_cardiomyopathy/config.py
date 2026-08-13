@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'immunodeficiency 80 with or without congenital cardiomyopathy 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 80 with or without congenital cardiomyopathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Fever",
+    "Severe cytomegalovirus infection",
+    "Decreased total T cell count",
+    "Immunodeficiency",
+    "Increased circulating ferritin concentration",
+    "Decreased anti-CD3/28-induced T-cell proliferation",
+    "Endocardial fibroelastosis",
+    "Nonimmune hydrops fetalis",
+    "Diarrhea",
+    "Restrictive cardiomyopathy",
+    "Decreased total B cell count",
+    "Hypofibrinogenemia",
+    "Autosomal recessive inheritance",
+    "Reduced total natural killer cell count",
+    "HP_0003347",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

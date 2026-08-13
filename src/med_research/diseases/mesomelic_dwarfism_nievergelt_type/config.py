@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mesomelic dwarfism, Nievergelt type (MESOMELIC_DWARFISM_NIEVER
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mesomelic dwarfism, Nievergelt type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Metatarsus adductus",
+    "Tarsal synostosis",
+    "Autosomal dominant inheritance",
+    "Mesomelic short stature",
+    "Pes cavus",
+    "Intellectual disability",
+    "Short stature",
+    "Radioulnar synostosis",
+    "Congenital onset",
+    "Abnormality of the face",
+    "Mesomelia",
+    "Talipes equinovarus",
+    "Skin dimple",
+    "Radial head subluxation",
+    "Genu valgum",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mitochondrial DNA depletion syndrome 4a (MITOCHONDRIAL_DNA_DEP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mitochondrial DNA depletion syndrome 4a
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cerebral visual impairment",
+    "Neuronal loss in central nervous system",
+    "Aciduria",
+    "Microvesicular hepatic steatosis",
+    "Dementia",
+    "Vegetative state",
+    "Encephalopathy",
+    "Vomiting",
+    "Anasarca",
+    "Rapidly progressive",
+    "Failure to thrive",
+    "Hypertonia",
+    "Bile duct proliferation",
+    "Ascites",
+    "Hepatomegaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

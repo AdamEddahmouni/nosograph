@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'atrioventricular septal defect 5 (ATRIOVENTRICULAR_SEPTAL_DEFE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of atrioventricular septal defect 5
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypoplastic left ventricle",
+    "Muscular ventricular septal defect",
+    "Congenital onset",
+    "Atrioventricular canal defect",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

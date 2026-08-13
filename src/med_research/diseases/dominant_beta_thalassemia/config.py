@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'dominant beta-thalassemia (DOMINANT_BETA_THALASSEMIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dominant beta-thalassemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Microcytic anemia",
+    "Hepatomegaly",
+    "Splenomegaly",
+    "Increased HbA2 hemoglobin",
+    "Erythrocyte inclusion bodies",
+    "Decreased mean corpuscular hemoglobin concentration",
+    "Autosomal dominant inheritance",
+    "Persistence of hemoglobin F",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

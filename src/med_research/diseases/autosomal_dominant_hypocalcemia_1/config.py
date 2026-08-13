@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autosomal dominant hypocalcemia 1 (AUTOSOMAL_DOMINANT_HYPOCALC
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal dominant hypocalcemia 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Laryngospasm",
+    "Seizure",
+    "Hypocalcemia",
+    "Young adult onset",
+    "Decreased circulating parathyroid hormone level",
+    "Childhood onset",
+    "Muscle spasm",
+    "Hypomagnesemia",
+    "Short stature",
+    "Increased circulating renin concentration",
+    "Autosomal dominant inheritance",
+    "Paresthesia",
+    "Decreased glomerular filtration rate",
+    "Kidney stone",
+    "Juvenile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

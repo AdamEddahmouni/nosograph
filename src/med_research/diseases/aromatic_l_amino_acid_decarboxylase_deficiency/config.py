@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'aromatic L-amino acid decarboxylase deficiency (AROMATIC_L_AMI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of aromatic L-amino acid decarboxylase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nasal congestion",
+    "Sleep disturbance",
+    "Athetosis",
+    "Choreoathetosis",
+    "Oculogyric crisis",
+    "Babinski sign",
+    "Myoclonus",
+    "Limb hypertonia",
+    "Decreased CSF homovanillic acid concentration",
+    "Elevated urinary vanillactic acid level",
+    "Tongue thrusting",
+    "Lethargy",
+    "Temperature instability",
+    "Exaggerated startle response",
+    "Axial hypotonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

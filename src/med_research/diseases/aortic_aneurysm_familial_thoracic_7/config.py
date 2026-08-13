@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'aortic aneurysm, familial thoracic 7 (AORTIC_ANEURYSM_FAMILIAL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of aortic aneurysm, familial thoracic 7
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ascending aortic dissection",
+    "Autosomal dominant inheritance",
+    "Aortic rupture",
+    "Sudden death",
+    "Descending aortic dissection",
+    "Aortic aneurysm",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

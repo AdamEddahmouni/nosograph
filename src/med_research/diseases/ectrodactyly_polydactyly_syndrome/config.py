@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'ectrodactyly-polydactyly syndrome (ECTRODACTYLY_POLYDACTYLY_SY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ectrodactyly-polydactyly syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Postaxial hand polydactyly",
+    "Autosomal recessive inheritance",
+    "Split foot",
+    "Split hand",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

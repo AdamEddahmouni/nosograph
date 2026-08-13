@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'cerebrocostomandibular syndrome (CEREBROCOSTOMANDIBULAR_SYNDRO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cerebrocostomandibular syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Glossoptosis",
+    "Malar flattening",
+    "Long philtrum",
+    "Downslanted palpebral fissures",
+    "Gastroesophageal reflux",
+    "Anomalous tracheal cartilage",
+    "Postnatal growth retardation",
+    "Hypernasal speech",
+    "Cleft soft palate",
+    "Short humerus",
+    "Low-set ears",
+    "10 pairs of ribs",
+    "Carious teeth",
+    "Renal cyst",
+    "Anteriorly placed anus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

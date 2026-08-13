@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mitochondrial DNA depletion syndrome, myopathic form (MITOCHON
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mitochondrial DNA depletion syndrome, myopathic form
-SYMPTOMS = []
+SYMPTOMS = [
+    "Childhood onset",
+    "Delayed gross motor development",
+    "HP_0006887",
+    "Generalized hypotonia",
+    "Death in childhood",
+    "Abnormal basal ganglia morphology",
+    "Ragged-red muscle fibers",
+    "Lactic acidosis",
+    "Facial diplegia",
+    "Respiratory insufficiency due to muscle weakness",
+    "Decreased activity of mitochondrial complex IV",
+    "Gowers sign",
+    "Decreased activity of mitochondrial complex III",
+    "Loss of ability to walk in early childhood",
+    "Hypotonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'immunodeficiency 62 (IMMUNODEFICIENCY_62)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 62
-SYMPTOMS = []
+SYMPTOMS = [
+    "Severe recurrent varicella",
+    "Autoimmune thrombocytopenia",
+    "Decreased memory B cell proportion",
+    "Recurrent upper respiratory tract infections",
+    "Decreased circulating isohemagglutinin concentration",
+    "Increased transitional B cell proportion",
+    "Complete or near-complete absence of specific antibody response to tetanus vaccine",
+    "Recurrent lower respiratory tract infections",
+    "Bronchiectasis",
+    "Decreased circulating IgM concentration",
+    "Recurrent herpes",
+    "Decreased total B cell count",
+    "Autosomal recessive inheritance",
+    "Juvenile onset",
+    "Decreased circulating IgG concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

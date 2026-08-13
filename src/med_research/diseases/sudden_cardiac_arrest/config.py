@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'sudden cardiac arrest (SUDDEN_CARDIAC_ARREST)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of sudden cardiac arrest
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congestive heart failure",
+    "Infantile onset",
+    "Childhood onset",
+    "Syncope",
+    "Sudden cardiac death",
+    "Seizure",
+    "Sudden death",
+    "Myocarditis",
+    "Hypotonia",
+    "Metabolic acidosis",
+    "Chest pain",
+    "Bradycardia",
+    "Autosomal recessive inheritance",
+    "Hypertrophic cardiomyopathy",
+    "Arrhythmia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

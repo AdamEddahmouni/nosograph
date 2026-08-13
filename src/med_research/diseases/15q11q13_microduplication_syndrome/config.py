@@ -8,8 +8,23 @@ PIPELINE_LABEL = '15q11q13 microduplication syndrome (15Q11Q13_MICRODUPLICATION_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of 15q11q13 microduplication syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Seizure",
+    "Infantile onset",
+    "Echolalia",
+    "Severe intellectual disability",
+    "Inflexible adherence to routines",
+    "Lack of spontaneous play",
+    "Hypotonia",
+    "Autosomal dominant inheritance",
+    "Bilateral tonic-clonic seizure",
+    "Increased serum serotonin",
+    "Unsteady gait",
+    "Reduced social responsiveness",
+    "Reduced eye contact",
+    "Truncal ataxia",
+    "Abnormal nonverbal communicative behavior",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

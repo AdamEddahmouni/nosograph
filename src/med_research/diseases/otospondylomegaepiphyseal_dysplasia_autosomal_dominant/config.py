@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'otospondylomegaepiphyseal dysplasia, autosomal dominant (OTOSP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of otospondylomegaepiphyseal dysplasia, autosomal dominant
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Cleft palate",
+    "Malar flattening",
+    "Anteverted nares",
+    "Epiphyseal dysplasia",
+    "Enlarged epiphyses",
+    "Sensorineural hearing impairment",
+    "Midface retrusion",
+    "Premature osteoarthritis",
+    "Platyspondyly",
+    "Depressed nasal bridge",
+    "Pierre-Robin sequence",
+    "Arthralgia",
+    "Abnormality of the eye",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

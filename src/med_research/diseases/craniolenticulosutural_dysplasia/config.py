@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'craniolenticulosutural dysplasia (CRANIOLENTICULOSUTURAL_DYSPL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of craniolenticulosutural dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Narrow chest",
+    "Delayed eruption of teeth",
+    "Smooth philtrum",
+    "Cryptorchidism",
+    "Wide nasal bridge",
+    "Narrow iliac wing",
+    "Anteverted nares",
+    "Brittle hair",
+    "Carious teeth",
+    "Gastroesophageal reflux",
+    "Posterior Y-sutural cataract",
+    "Optic atrophy",
+    "Wide anterior fontanel",
+    "Punctate cataract",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

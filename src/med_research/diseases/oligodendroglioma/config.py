@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'oligodendroglioma (OLIGODENDROGLIOMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of oligodendroglioma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Typified by somatic mosaicism",
+    "Astrocytoma",
+    "Ependymoma",
+    "Glioblastoma multiforme",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

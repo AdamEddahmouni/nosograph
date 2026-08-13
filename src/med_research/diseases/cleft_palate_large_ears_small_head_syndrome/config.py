@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'cleft palate-large ears-small head syndrome (CLEFT_PALATE_LARG
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cleft palate-large ears-small head syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormality of the skin",
+    "Proximal renal tubular acidosis",
+    "Autosomal dominant inheritance",
+    "Tapered finger",
+    "Microcephaly",
+    "Cleft palate",
+    "Micrognathia",
+    "Short stature",
+    "Ulnar deviation of the 3rd finger",
+    "Cystic renal dysplasia",
+    "Macrotia",
+    "Short distal phalanx of finger",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

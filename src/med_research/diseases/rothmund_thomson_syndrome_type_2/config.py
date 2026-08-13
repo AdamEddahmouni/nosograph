@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Rothmund-Thomson syndrome type 2 (ROTHMUND_THOMSON_SYNDROME_TY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Rothmund-Thomson syndrome type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Poikiloderma",
+    "Osteosarcoma",
+    "Mandibular prognathia",
+    "Strabismus",
+    "Short foot",
+    "Short stature",
+    "Micrognathia",
+    "Microphthalmia",
+    "Delayed eruption of teeth",
+    "Forearm reduction defects",
+    "Short nose",
+    "Dermal atrophy",
+    "Glaucoma",
+    "Osteoporosis",
+    "Frontal bossing",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

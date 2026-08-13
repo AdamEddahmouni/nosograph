@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neonatal diabetes mellitus with congenital hypothyroidism (NEO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neonatal diabetes mellitus with congenital hypothyroidism
-SYMPTOMS = []
+SYMPTOMS = [
+    "Mild intellectual disability",
+    "Elevated circulating thyroglobulin concentration",
+    "Pancreatic hypoplasia",
+    "Low-set ears",
+    "Diabetes mellitus",
+    "Splenomegaly",
+    "Hepatic fibrosis",
+    "Thin upper lip vermilion",
+    "Cholestasis",
+    "Epicanthus",
+    "Choanal atresia",
+    "Thoracolumbar scoliosis",
+    "Intrauterine growth retardation",
+    "Umbilical hernia",
+    "Wide anterior fontanel",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

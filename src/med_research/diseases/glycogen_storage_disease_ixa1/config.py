@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of glycogen storage disease IXa1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ketosis",
+    "Hypotonia",
+    "Hypertriglyceridemia",
+    "X-linked recessive inheritance",
+    "Childhood onset",
+    "Infantile onset",
+    "Hypercholesterolemia",
+    "Hyperuricemia",
+    "Juvenile onset",
+    "Motor delay",
+    "Growth delay",
+    "Reduced hepatic phosphorylase kinase activity",
+    "Hepatomegaly",
+    "Splenomegaly",
+    "Hypoglycemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

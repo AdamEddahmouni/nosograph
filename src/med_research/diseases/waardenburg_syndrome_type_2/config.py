@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Waardenburg syndrome type 2 (WAARDENBURG_SYNDROME_TYPE_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Waardenburg syndrome type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Numerous pigmented freckles",
+    "Nystagmus",
+    "Cafe-au-lait spot",
+    "Anosmia",
+    "Axial hypotonia",
+    "Synophrys",
+    "Intellectual disability",
+    "Iris hypopigmentation",
+    "Aplasia of the semicircular canal",
+    "Wide nasal bridge",
+    "Heterochromia iridis",
+    "Autosomal dominant inheritance",
+    "Hypertonia",
+    "Congenital onset",
+    "Partial albinism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'Tessier number 4 facial cleft (TESSIER_NUMBER_4_FACIAL_CLEFT)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Tessier number 4 facial cleft
-SYMPTOMS = []
+SYMPTOMS = [
+    "Tessier number 4 facial cleft",
+    "Coloboma",
+    "Congenital onset",
+    "Sporadic",
+    "Autosomal dominant inheritance",
+    "Cleft palate",
+    "Cleft upper lip",
+    "Deep palmar crease",
+    "Talipes calcaneovalgus",
+    "Microphthalmia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

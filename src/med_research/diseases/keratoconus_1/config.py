@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'keratoconus 1 (KERATOCONUS_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of keratoconus 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Young adult onset",
+    "Autosomal dominant inheritance",
+    "Keratoconus",
+    "Astigmatism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

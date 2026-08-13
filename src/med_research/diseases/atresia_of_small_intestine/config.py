@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'atresia of small intestine (ATRESIA_OF_SMALL_INTESTINE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of atresia of small intestine
-SYMPTOMS = []
+SYMPTOMS = [
+    "Jejunal atresia",
+    "Abnormal abdomen morphology",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'Lipedema (LIPEDEMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Lipedema
-SYMPTOMS = []
+SYMPTOMS = [
+    "Edema",
+    "Lipedema",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

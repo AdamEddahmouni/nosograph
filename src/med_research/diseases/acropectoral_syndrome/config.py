@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'acropectoral syndrome (ACROPECTORAL_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of acropectoral syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Moderate intellectual disability",
+    "Pectus carinatum",
+    "Preaxial polydactyly",
+    "Triphalangeal thumb",
+    "Autosomal dominant inheritance",
+    "Pectus excavatum",
+    "Partial duplication of thumb phalanx",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

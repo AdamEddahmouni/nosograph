@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'osteoporosis-pseudoglioma syndrome (OSTEOPOROSIS_PSEUDOGLIOMA_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of osteoporosis-pseudoglioma syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Retinal calcification",
+    "Vitreoretinopathy",
+    "Focal impaired awareness seizure",
+    "Absent anterior chamber of the eye",
+    "HP_0007898",
+    "Barrel-shaped chest",
+    "Blindness",
+    "Biconcave vertebral bodies",
+    "Microphthalmia",
+    "Phthisis bulbi",
+    "Osteopenia",
+    "Metaphyseal widening",
+    "Increased susceptibility to fractures",
+    "Infantile onset",
+    "Kyphoscoliosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

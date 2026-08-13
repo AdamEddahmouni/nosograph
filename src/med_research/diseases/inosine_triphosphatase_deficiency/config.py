@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'inosine triphosphatase deficiency (INOSINE_TRIPHOSPHATASE_DEFI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of inosine triphosphatase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Reduced erythrocyte inosine triphosphatase activity",
+    "Autosomal recessive inheritance",
+    "Elevated erythrocyte inosine triphosphate concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

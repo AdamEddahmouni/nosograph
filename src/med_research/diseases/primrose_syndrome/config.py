@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Primrose syndrome (PRIMROSE_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Primrose syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Intellectual disability",
+    "Cerebral calcification",
+    "Sparse scalp hair",
+    "Motor stereotypy",
+    "Ataxia",
+    "Basilar impression",
+    "Pectus excavatum",
+    "Osteoporosis",
+    "Hypoplasia of the maxilla",
+    "Hypothyroidism",
+    "Seizure",
+    "Hypergonadotropic hypogonadism",
+    "Ptosis",
+    "Cryptorchidism",
+    "Downslanted palpebral fissures",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

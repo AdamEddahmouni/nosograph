@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'short-rib thoracic dysplasia 6 with or without polydactyly (SH
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of short-rib thoracic dysplasia 6 with or without polydactyly
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short ribs",
+    "Intestinal malrotation",
+    "Atrial septal defect",
+    "Lateral ventricle dilatation",
+    "Median cleft upper lip",
+    "Hypoplasia of the epiglottis",
+    "Disproportionate shortening of the tibia",
+    "Lateral clavicle hook",
+    "Hamartoma of tongue",
+    "Retinal dystrophy",
+    "Brachydactyly",
+    "Tricuspid regurgitation",
+    "Platyspondyly",
+    "Preaxial hand polydactyly",
+    "Cerebellar vermis hypoplasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

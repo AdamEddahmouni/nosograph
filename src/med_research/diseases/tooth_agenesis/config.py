@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'tooth agenesis (TOOTH_AGENESIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of tooth agenesis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Aplasia of the maxilla",
+    "Autosomal dominant inheritance",
+    "Abnormal skin morphology",
+    "Autosomal recessive inheritance",
+    "Agenesis of permanent teeth",
+    "Peg-shaped maxillary lateral incisors",
+    "Oligodontia",
+    "Oligodontia of primary teeth",
+    "Agenesis of premolar",
+    "Palmar hyperkeratosis",
+    "Dry skin",
+    "Agenesis of molar",
+    "Respiratory tract infection",
+    "Abnormal hair morphology",
+    "Childhood onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'isolated optic nerve hypoplasia (ISOLATED_OPTIC_NERVE_HYPOPLAS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of isolated optic nerve hypoplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Optic nerve aplasia",
+    "Visual impairment",
+    "Autosomal dominant inheritance",
+    "Remnants of the hyaloid vascular system",
+    "Optic nerve hypoplasia",
+    "Reduced visual acuity",
+    "Nystagmus",
+    "Morning glory anomaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

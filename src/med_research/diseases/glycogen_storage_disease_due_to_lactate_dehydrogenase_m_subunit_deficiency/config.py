@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'glycogen storage disease due to lactate dehydrogenase M-subuni
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of glycogen storage disease due to lactate dehydrogenase M-subunit deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Rhabdomyolysis",
+    "Autosomal recessive inheritance",
+    "Myalgia",
+    "Juvenile onset",
+    "Increased circulating lactate concentration",
+    "Rigidity",
+    "Exercise intolerance",
+    "Muscle spasm",
+    "Renal insufficiency",
+    "Muscle stiffness",
+    "Elevated circulating creatine kinase activity",
+    "Myoglobinuria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'oculocutaneous albinism type 3 (OCULOCUTANEOUS_ALBINISM_TYPE_3
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of oculocutaneous albinism type 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Albinism",
+    "Red hair",
+    "Strabismus",
+    "Autosomal recessive inheritance",
+    "Nystagmus",
+    "Partial albinism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

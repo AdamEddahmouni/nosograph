@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'fibromuscular dysplasia (FIBROMUSCULAR_DYSPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of fibromuscular dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Myocardial infarction",
+    "Intermittent claudication",
+    "Stroke",
+    "Renovascular hypertension",
+    "Autosomal dominant inheritance",
+    "Aortic dissection",
+    "Arterial fibromuscular dysplasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

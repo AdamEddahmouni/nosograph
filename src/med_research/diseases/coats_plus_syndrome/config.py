@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Coats plus syndrome (COATS_PLUS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Coats plus syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Seizure",
+    "Ataxia",
+    "Increased susceptibility to fractures",
+    "Pathologic fracture",
+    "Short femoral neck",
+    "Motor regression",
+    "Anemia",
+    "Intestinal bleeding",
+    "Hepatic fibrosis",
+    "Dermal translucency",
+    "Abnormal pyramidal sign",
+    "Gastrointestinal hemorrhage",
+    "Progressive",
+    "Tremor",
+    "Cerebral calcification",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

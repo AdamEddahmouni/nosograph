@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'oligodontia-cancer predisposition syndrome (OLIGODONTIA_CANCER
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of oligodontia-cancer predisposition syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Breast carcinoma",
+    "Fundic gland polyposis",
+    "Sparse axillary hair",
+    "Colon cancer",
+    "Adenomatous colonic polyposis",
+    "Autosomal dominant inheritance",
+    "Sparse scalp hair",
+    "Oligodontia",
+    "Sparse body hair",
+    "Absent eyebrow",
+    "Short eyelashes",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

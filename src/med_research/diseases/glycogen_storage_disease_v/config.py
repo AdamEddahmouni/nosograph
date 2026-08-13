@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'glycogen storage disease V (GLYCOGEN_STORAGE_DISEASE_V)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of glycogen storage disease V
-SYMPTOMS = []
+SYMPTOMS = [
+    "Exercise intolerance",
+    "Muscle weakness",
+    "Exercise-induced rhabdomyolysis",
+    "Middle age onset",
+    "Failure to elevate lactate upon ischemic exercise test",
+    "Childhood onset",
+    "Exercise-induced myalgia",
+    "Elevated circulating creatine kinase activity",
+    "Rhabdomyolysis",
+    "Autosomal recessive inheritance",
+    "Dark urine",
+    "Failure to elevate ammonia on ischemic exercise",
+    "Myoglobinuria",
+    "Hyperuricemia",
+    "Exercise-induced muscle cramps",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

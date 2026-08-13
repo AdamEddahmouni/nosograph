@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'tibial hemimelia (TIBIAL_HEMIMELIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of tibial hemimelia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormality of the skeletal system",
+    "Absent tibia",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

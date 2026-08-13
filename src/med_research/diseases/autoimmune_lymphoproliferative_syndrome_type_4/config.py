@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autoimmune lymphoproliferative syndrome type 4 (AUTOIMMUNE_LYM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autoimmune lymphoproliferative syndrome type 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased T cell apoptosis",
+    "Autosomal dominant inheritance",
+    "Lymphoma",
+    "Typified by somatic mosaicism",
+    "Increased total monocyte count",
+    "Decreased total neutrophil count",
+    "Leukemia",
+    "Lymphoproliferative disorder",
+    "Hemolytic anemia",
+    "Pancytopenia",
+    "Recurrent infections",
+    "Increased total lymphocyte count",
+    "Hepatomegaly",
+    "Splenomegaly",
+    "Autoimmune thrombocytopenia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

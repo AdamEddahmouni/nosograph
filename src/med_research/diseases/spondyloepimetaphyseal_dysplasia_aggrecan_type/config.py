@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spondyloepimetaphyseal dysplasia, aggrecan type (SPONDYLOEPIME
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondyloepimetaphyseal dysplasia, aggrecan type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Barrel-shaped chest",
+    "Metaphyseal widening",
+    "Short finger",
+    "Relative macrocephaly",
+    "Short neck",
+    "Brachydactyly",
+    "Posteriorly rotated ears",
+    "Bronchoconstriction",
+    "Rhizomelia",
+    "Mandibular prognathia",
+    "Autosomal recessive inheritance",
+    "Irregular epiphyses",
+    "Spondyloepimetaphyseal dysplasia",
+    "Low-set ears",
+    "Broad thumb",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

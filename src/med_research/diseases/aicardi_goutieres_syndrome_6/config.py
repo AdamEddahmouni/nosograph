@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Aicardi-Goutieres syndrome 6 (AICARDI_GOUTIERES_SYNDROME_6)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Aicardi-Goutieres syndrome 6
-SYMPTOMS = []
+SYMPTOMS = [
+    "Severe global developmental delay",
+    "Leukodystrophy",
+    "Hepatomegaly",
+    "Autosomal recessive inheritance",
+    "Splenomegaly",
+    "Cerebral calcification",
+    "Rigidity",
+    "Increased CSF interferon alpha",
+    "Loss of speech",
+    "Tremor",
+    "Increased circulating Interferon-alpha concentration",
+    "Hemolytic anemia",
+    "Neonatal onset",
+    "Loss of ambulation",
+    "Feeding difficulties",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

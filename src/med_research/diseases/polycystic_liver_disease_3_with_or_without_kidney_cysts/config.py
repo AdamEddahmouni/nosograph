@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'polycystic liver disease 3 with or without kidney cysts (POLYC
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of polycystic liver disease 3 with or without kidney cysts
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hepatic cysts",
+    "Renal cyst",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

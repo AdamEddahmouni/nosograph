@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Spondyloenchondrodysplasia with immune dysregulation (SPONDYLO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Spondyloenchondrodysplasia with immune dysregulation
-SYMPTOMS = []
+SYMPTOMS = [
+    "Metaphyseal irregularity",
+    "Pneumonia",
+    "Low-set ears",
+    "Short iliac bones",
+    "Short stature",
+    "Recurrent sinusitis",
+    "Spondylometaphyseal dysplasia",
+    "Increased intervertebral space",
+    "Sclerosis of skull base",
+    "Juvenile rheumatoid arthritis",
+    "Combined immunodeficiency",
+    "Cerebral calcification",
+    "Autosomal recessive inheritance",
+    "Platyspondyly",
+    "Midface retrusion",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

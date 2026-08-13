@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'thumb deformity-alopecia-pigmentation anomaly syndrome (THUMB_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of thumb deformity-alopecia-pigmentation anomaly syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short stature",
+    "Increased groin pigmentation with raindrop depigmentation",
+    "Short thumb",
+    "Alopecia",
+    "Intellectual disability",
+    "Solitary median maxillary central incisor",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

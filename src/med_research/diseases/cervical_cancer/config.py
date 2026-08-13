@@ -8,8 +8,11 @@ PIPELINE_LABEL = "Cervical cancer (CERVICAL_CANCER)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Cervical cancer
-SYMPTOMS = []
+SYMPTOMS = [
+    "Typified by somatic mosaicism",
+    "Neoplasm",
+    "Cervix cancer",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

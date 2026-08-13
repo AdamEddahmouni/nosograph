@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spinal muscular atrophy, type IV (SPINAL_MUSCULAR_ATROPHY_TYPE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spinal muscular atrophy, type IV
-SYMPTOMS = []
+SYMPTOMS = [
+    "Degeneration of anterior horn cells",
+    "Autosomal recessive inheritance",
+    "Hand tremor",
+    "Areflexia of lower limbs",
+    "Rimmed vacuoles",
+    "Waddling gait",
+    "EMG: neuropathic changes",
+    "Muscle fiber necrosis",
+    "Centrally nucleated skeletal muscle fibers",
+    "Quadriceps muscle atrophy",
+    "Calf muscle hypertrophy",
+    "Proximal muscle weakness",
+    "Angulated muscle fibers",
+    "Increased variability in muscle fiber diameter",
+    "Slowly progressive",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

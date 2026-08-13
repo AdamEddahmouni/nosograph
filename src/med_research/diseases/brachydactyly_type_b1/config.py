@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'brachydactyly type B1 (BRACHYDACTYLY_TYPE_B1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of brachydactyly type B1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ventricular septal defect",
+    "Micropenis",
+    "Short long bone",
+    "Vertebral fusion",
+    "Broad thumb",
+    "Aplasia/Hypoplasia of the distal phalanges of the hand",
+    "Joint contracture of the hand",
+    "Thoracolumbar scoliosis",
+    "Camptodactyly",
+    "Anonychia",
+    "Delayed eruption of permanent teeth",
+    "Aplasia/Hypoplasia of the distal phalanges of the toes",
+    "Syndactyly",
+    "Hypoplastic sacrum",
+    "Hypoplastic fingernail",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

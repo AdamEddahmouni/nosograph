@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'oculogastrointestinal muscular dystrophy (OCULOGASTROINTESTINA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of oculogastrointestinal muscular dystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Malnutrition",
+    "Peripheral neuropathy",
+    "Ophthalmoplegia",
+    "Vascular dilatation",
+    "Spontaneous esophageal perforation",
+    "Autosomal recessive inheritance",
+    "Ptosis",
+    "Abdominal distention",
+    "Gastroparesis",
+    "External ophthalmoplegia",
+    "Abdominal pain",
+    "Abnormality of metabolism/homeostasis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

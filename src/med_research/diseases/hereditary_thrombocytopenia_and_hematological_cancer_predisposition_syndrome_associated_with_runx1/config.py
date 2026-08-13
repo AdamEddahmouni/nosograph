@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hereditary thrombocytopenia and hematological cancer predispos
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hereditary thrombocytopenia and hematological cancer predisposition syndrome associated with RUNX1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Impaired collagen-induced platelet aggregation",
+    "Purpura",
+    "Impaired platelet aggregation",
+    "Childhood onset",
+    "Lymphoma",
+    "Thrombocytopenia",
+    "Impaired ADP-induced platelet aggregation",
+    "Myelodysplasia",
+    "Petechiae",
+    "Bruising susceptibility",
+    "Abnormal platelet shape",
+    "Prolonged bleeding time",
+    "Neuroblastoma",
+    "Acute monocytic leukemia",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

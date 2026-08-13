@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Townes-Brocks syndrome (TOWNES_BROCKS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Townes-Brocks syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Lop ear",
+    "Congenital onset",
+    "Vesicoureteral reflux",
+    "Duane anomaly",
+    "Renal insufficiency",
+    "Multicystic kidney dysplasia",
+    "Anal stenosis",
+    "Umbilical hernia",
+    "Aplasia/Hypoplasia of the 3rd toe",
+    "Global developmental delay",
+    "Small for gestational age",
+    "Intellectual disability",
+    "Atrial septal defect",
+    "Short metatarsal",
+    "Renal dysplasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

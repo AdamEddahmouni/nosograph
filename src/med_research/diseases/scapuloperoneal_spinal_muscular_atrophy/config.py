@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Scapuloperoneal spinal muscular atrophy (SCAPULOPERONEAL_SPINA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Scapuloperoneal spinal muscular atrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Distal sensory impairment",
+    "Stridor",
+    "Diaphragmatic weakness",
+    "Autosomal dominant inheritance",
+    "Hyperlordosis",
+    "Hyporeflexia",
+    "Facial palsy",
+    "Broad-based gait",
+    "Torticollis",
+    "Peroneal muscle weakness",
+    "Areflexia",
+    "Scapular muscle atrophy",
+    "Clinodactyly",
+    "Kyphosis",
+    "Abducens palsy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

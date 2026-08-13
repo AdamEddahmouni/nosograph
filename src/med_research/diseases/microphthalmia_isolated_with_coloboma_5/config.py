@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'microphthalmia, isolated, with coloboma 5 (MICROPHTHALMIA_ISOL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of microphthalmia, isolated, with coloboma 5
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Orofacial cleft",
+    "Typified by incomplete penetrance",
+    "Abnormality of vision",
+    "Variable expressivity",
+    "Microphthalmia",
+    "Anophthalmia",
+    "Chorioretinal coloboma",
+    "Iris coloboma",
+    "Bilateral microphthalmos",
+    "Holoprosencephaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

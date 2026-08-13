@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'ermine phenotype (ERMINE_PHENOTYPE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ermine phenotype
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal iris pigmentation",
+    "White eyelashes",
+    "Sensorineural hearing impairment",
+    "Autosomal recessive inheritance",
+    "White eyebrow",
+    "Vitiligo",
+    "White hair",
+    "Spotty hyperpigmentation",
+    "Mild intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

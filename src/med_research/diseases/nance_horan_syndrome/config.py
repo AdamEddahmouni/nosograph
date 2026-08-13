@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Nance-Horan syndrome (NANCE_HORAN_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Nance-Horan syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Microcornea",
+    "Screwdriver-shaped incisors",
+    "Posterior Y-sutural cataract",
+    "Broad finger",
+    "Microphthalmia",
+    "Nuclear cataract",
+    "Mulberry molar",
+    "Long face",
+    "Congenital onset",
+    "Nystagmus",
+    "Autism",
+    "Narrow face",
+    "Visual loss",
+    "Developmental cataract",
+    "Prominent nasal bridge",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

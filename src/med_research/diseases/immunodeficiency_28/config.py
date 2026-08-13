@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'immunodeficiency 28 (IMMUNODEFICIENCY_28)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 28
-SYMPTOMS = []
+SYMPTOMS = [
+    "Recurrent mycobacterial infections",
+    "Autosomal recessive inheritance",
+    "Immunodeficiency",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

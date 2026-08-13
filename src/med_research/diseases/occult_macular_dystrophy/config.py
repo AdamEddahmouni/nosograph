@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'occult macular dystrophy (OCCULT_MACULAR_DYSTROPHY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of occult macular dystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal full-field electroretinogram",
+    "Macular dystrophy",
+    "Middle age onset",
+    "Slow decrease in visual acuity",
+    "Young adult onset",
+    "Autosomal dominant inheritance",
+    "Abnormal fundus fluorescein angiography",
+    "Abnormal multifocal electroretinogram",
+    "Juvenile onset",
+    "Typified by age-related disease onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

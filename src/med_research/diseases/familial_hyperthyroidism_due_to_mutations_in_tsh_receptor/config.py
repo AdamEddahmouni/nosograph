@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'familial hyperthyroidism due to mutations in TSH receptor (FAM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial hyperthyroidism due to mutations in TSH receptor
-SYMPTOMS = []
+SYMPTOMS = [
+    "Delayed speech and language development",
+    "Anti-thyroglobulin antibody positivity",
+    "Intellectual disability",
+    "Goiter",
+    "Increased circulating T4 concentration",
+    "Neonatal onset",
+    "Pretibial myxedema",
+    "Autosomal dominant inheritance",
+    "Small for gestational age",
+    "Anti-thyroid peroxidase antibody positivity",
+    "Motor delay",
+    "Thyroid hyperplasia",
+    "Proptosis",
+    "Increased circulating free T3",
+    "Elevated circulating thyroglobulin concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

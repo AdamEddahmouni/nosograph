@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'ectodermal dysplasia-blindness syndrome (ECTODERMAL_DYSPLASIA_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ectodermal dysplasia-blindness syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Intellectual disability",
+    "Microphthalmia",
+    "Fine hair",
+    "Protruding ear",
+    "Sclerocornea",
+    "Microcornea",
+    "Ectodermal dysplasia",
+    "Abnormal facial shape",
+    "Narrow nasal bridge",
+    "Sparse hair",
+    "Blindness",
+    "Autosomal recessive inheritance",
+    "Nasal flaring",
+    "Short stature",
+    "Tooth malposition",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'Reis-Bucklers corneal dystrophy (REIS_BUCKLERS_CORNEAL_DYSTROP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Reis-Bucklers corneal dystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Infantile onset",
+    "Corneal opacity",
+    "Palpebral edema",
+    "Reduced visual acuity",
+    "Photophobia",
+    "Autosomal dominant inheritance",
+    "Opacification of the corneal stroma",
+    "Corneal erosion",
+    "Corneal dystrophy",
+    "Strabismus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'piebald trait-neurologic defects syndrome (PIEBALD_TRAIT_NEURO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of piebald trait-neurologic defects syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Absent pigmentation of the ventral chest",
+    "Intellectual disability",
+    "White forelock",
+    "Ataxia",
+    "Autosomal dominant inheritance",
+    "Hearing impairment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

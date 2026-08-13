@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'retinitis pigmentosa 23 (RETINITIS_PIGMENTOSA_23)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of retinitis pigmentosa 23
-SYMPTOMS = []
+SYMPTOMS = [
+    "Photophobia",
+    "Color vision defect",
+    "Rod-cone dystrophy",
+    "X-linked recessive inheritance",
+    "Constriction of peripheral visual field",
+    "Severely reduced visual acuity",
+    "Eccentric visual fixation",
+    "Posterior subcapsular cataract",
+    "Absent foveal reflex",
+    "Mild myopia",
+    "Attenuation of retinal blood vessels",
+    "Juvenile onset",
+    "Retinal pigment epithelial atrophy",
+    "Childhood onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

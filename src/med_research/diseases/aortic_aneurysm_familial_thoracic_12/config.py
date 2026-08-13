@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'aortic aneurysm, familial thoracic 12 (AORTIC_ANEURYSM_FAMILIA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of aortic aneurysm, familial thoracic 12
-SYMPTOMS = []
+SYMPTOMS = [
+    "Bicuspid aortic valve",
+    "Ascending aortic dissection",
+    "Scoliosis",
+    "Hypertelorism",
+    "Middle age onset",
+    "Aortic root aneurysm",
+    "Young adult onset",
+    "Aortic regurgitation",
+    "Pectus excavatum",
+    "High palate",
+    "Disproportionate tall stature",
+    "Autosomal dominant inheritance",
+    "Chronic pulmonary obstruction",
+    "Late onset",
+    "Arthritis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

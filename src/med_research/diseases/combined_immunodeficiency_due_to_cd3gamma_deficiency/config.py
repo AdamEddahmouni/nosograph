@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'combined immunodeficiency due to CD3gamma deficiency (COMBINED
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of combined immunodeficiency due to CD3gamma deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Eczematoid dermatitis",
+    "Immunodeficiency",
+    "Abnormal B cell morphology",
+    "Infantile onset",
+    "Recurrent gastroenteritis",
+    "Recurrent oral thrush",
+    "Chronic diarrhea",
+    "Death in childhood",
+    "Autosomal recessive inheritance",
+    "Autoimmune hemolytic anemia",
+    "Anoperineal fistula",
+    "Chronic decreased circulating IgG2 concentration",
+    "Recurrent respiratory infections",
+    "Failure to thrive",
+    "Decreased total CD8+ T cell proportion",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

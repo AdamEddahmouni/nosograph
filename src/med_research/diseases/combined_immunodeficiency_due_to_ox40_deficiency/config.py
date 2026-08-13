@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'combined immunodeficiency due to OX40 deficiency (COMBINED_IMM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of combined immunodeficiency due to OX40 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Immunodeficiency",
+    "Coombs-positive hemolytic anemia",
+    "Kaposi's sarcoma",
+    "Pancytopenia",
+    "Splenomegaly",
+    "Juvenile onset",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

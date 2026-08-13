@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'aphalangy-syndactyly-microcephaly syndrome (APHALANGY_SYNDACTY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of aphalangy-syndactyly-microcephaly syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Kyphoscoliosis",
+    "Aplasia/Hypoplasia of toe",
+    "Short stature",
+    "Intellectual disability",
+    "Duplication of metatarsal bones",
+    "Cognitive impairment",
+    "Syndactyly",
+    "Microcephaly",
+    "Autosomal dominant inheritance",
+    "Cutaneous finger syndactyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'congenital myopathy 2a, typical, autosomal dominant (CONGENITA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital myopathy 2a, typical, autosomal dominant
-SYMPTOMS = []
+SYMPTOMS = [
+    "High palate",
+    "Myopathic facies",
+    "Decreased fetal movement",
+    "Limb muscle weakness",
+    "Mildly elevated creatine kinase",
+    "Respiratory insufficiency due to muscle weakness",
+    "Autosomal dominant inheritance",
+    "Proximal muscle weakness",
+    "Nemaline bodies",
+    "Mask-like facies",
+    "Neck flexor weakness",
+    "Rigidity",
+    "Polyhydramnios",
+    "Hypertonia",
+    "Frequent falls",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'ankyloblepharon-ectodermal defects-cleft lip/palate syndrome (
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ankyloblepharon-ectodermal defects-cleft lip/palate syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Conical tooth",
+    "2-3 toe syndactyly",
+    "Patchy alopecia",
+    "Nail dystrophy",
+    "Ectodermal dysplasia",
+    "Vaginal dryness",
+    "Nasogastric tube feeding in infancy",
+    "Anonychia",
+    "Ankyloblepharon",
+    "Hypoplasia of the maxilla",
+    "Ventricular septal defect",
+    "Atresia of the external auditory canal",
+    "Blepharitis",
+    "Lacrimal duct atresia",
+    "Conductive hearing impairment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

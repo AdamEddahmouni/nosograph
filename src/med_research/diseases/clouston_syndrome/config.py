@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Clouston syndrome (CLOUSTON_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Clouston syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short stature",
+    "Absent axillary hair",
+    "Sparse eyebrow",
+    "Strabismus",
+    "Small nail",
+    "Nail dysplasia",
+    "Blepharitis",
+    "Sparse eyelashes",
+    "Absent pubic hair",
+    "Cataract",
+    "Brittle hair",
+    "Onycholysis",
+    "Slow-growing hair",
+    "Conjunctivitis",
+    "Variable expressivity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

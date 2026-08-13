@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'neurodevelopmental disorder with hypotonia and gross motor and
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neurodevelopmental disorder with hypotonia and gross motor and speech delay
-SYMPTOMS = []
+SYMPTOMS = [
+    "Severe intellectual disability",
+    "Short stature",
+    "Autistic behavior",
+    "Attention deficit hyperactivity disorder",
+    "Hypotonia",
+    "Lower limb spasticity",
+    "Aggressive behavior",
+    "Inability to walk",
+    "Autosomal recessive inheritance",
+    "Delayed speech and language development",
+    "Bilateral tonic-clonic seizure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

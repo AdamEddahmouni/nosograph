@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Duane-radial ray syndrome (DUANE_RADIAL_RAY_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Duane-radial ray syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Impaired convergence",
+    "Absent radius",
+    "Horseshoe kidney",
+    "Sandal gap",
+    "Anal atresia",
+    "Choanal atresia",
+    "Facial palsy",
+    "Radial deviation of the hand",
+    "Absent thumb",
+    "Hypertelorism",
+    "Crossed fused renal ectopia",
+    "Spina bifida occulta",
+    "Triphalangeal thumb",
+    "Hypoplasia of the radius",
+    "Palpebral fissure narrowing on adduction",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

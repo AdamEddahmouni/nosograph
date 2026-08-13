@@ -8,8 +8,9 @@ PIPELINE_LABEL = 'syndromic X-linked intellectual disability 7 (SYNDROMIC_X_LINK
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of syndromic X-linked intellectual disability 7
-SYMPTOMS = []
+SYMPTOMS = [
+    "Intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

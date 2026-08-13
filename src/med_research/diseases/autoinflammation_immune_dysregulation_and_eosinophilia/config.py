@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autoinflammation, immune dysregulation, and eosinophilia (AUTO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autoinflammation, immune dysregulation, and eosinophilia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hepatosplenomegaly",
+    "Recurrent viral infections",
+    "Asthma",
+    "Short stature",
+    "Failure to thrive",
+    "Food allergy",
+    "Nephrotic syndrome",
+    "Atopic dermatitis",
+    "Autosomal dominant inheritance",
+    "Eosinophilic liver infiltration",
+    "Hypothyroidism",
+    "Colonic eosinophilia",
+    "Hepatic cysts",
+    "Membranous nephropathy",
+    "Increased total eosinophil count",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

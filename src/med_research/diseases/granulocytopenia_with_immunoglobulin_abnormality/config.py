@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'granulocytopenia with immunoglobulin abnormality (GRANULOCYTOP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of granulocytopenia with immunoglobulin abnormality
-SYMPTOMS = []
+SYMPTOMS = [
+    "Slender finger",
+    "Immunodeficiency",
+    "Acne inversa",
+    "Sepsis",
+    "Decreased class-switched memory B cell proportion",
+    "Malabsorption",
+    "Neonatal onset",
+    "Micrognathia",
+    "Hepatomegaly",
+    "High anterior hairline",
+    "High palate",
+    "Decreased circulating immunoglobulin concentration",
+    "Complete or near-complete absence of specific antibody response to unconjugated pneumococcus polysaccharide",
+    "Recurrent skin infections",
+    "Oval face",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

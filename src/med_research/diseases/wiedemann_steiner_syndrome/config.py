@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Wiedemann-Steiner syndrome (WIEDEMANN_STEINER_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Wiedemann-Steiner syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Delayed skeletal maturation",
+    "Pes planus",
+    "Feeding difficulties",
+    "Scoliosis",
+    "2-3 toe syndactyly",
+    "Sacral dimple",
+    "Broad lateral eyebrow",
+    "Childhood onset",
+    "Global developmental delay",
+    "Hypotonia",
+    "Strabismus",
+    "Epicanthus",
+    "Autosomal dominant inheritance",
+    "Thick eyebrow",
+    "Short columella",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

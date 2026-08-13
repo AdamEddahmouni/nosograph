@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'SERKAL syndrome (SERKAL_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of SERKAL syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Oligohydramnios",
+    "Bilateral lung agenesis",
+    "Ovotestis",
+    "Sex reversal",
+    "Congenital diaphragmatic hernia",
+    "Autosomal recessive inheritance",
+    "Cleft lip",
+    "Ventricular septal defect",
+    "Renal agenesis",
+    "Adrenal gland agenesis",
+    "Hypospadias",
+    "Cleft palate",
+    "Hypoplasia of the bladder",
+    "Intrauterine growth retardation",
+    "Pulmonary artery stenosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

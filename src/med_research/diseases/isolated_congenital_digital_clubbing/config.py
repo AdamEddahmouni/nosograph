@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'isolated congenital digital clubbing (ISOLATED_CONGENITAL_DIGI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of isolated congenital digital clubbing
-SYMPTOMS = []
+SYMPTOMS = [
+    "Clubbing",
+    "Autosomal recessive inheritance",
+    "Congenital onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

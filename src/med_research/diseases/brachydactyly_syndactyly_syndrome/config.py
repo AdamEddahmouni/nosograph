@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'brachydactyly-syndactyly syndrome (BRACHYDACTYLY_SYNDACTYLY_SY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of brachydactyly-syndactyly syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Camptodactyly",
+    "Brachydactyly",
+    "Short digit",
+    "Finger syndactyly",
+    "Oligodactyly",
+    "Short phalanx of finger",
+    "Syndactyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

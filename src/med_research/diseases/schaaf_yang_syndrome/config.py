@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Schaaf-Yang syndrome (SCHAAF_YANG_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Schaaf-Yang syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Weak cry",
+    "Neonatal onset",
+    "Sleep apnea",
+    "Thick eyebrow",
+    "Brachydactyly",
+    "Infantile onset",
+    "Narrow palm",
+    "Kyphosis",
+    "Tapered finger",
+    "Gastroesophageal reflux",
+    "Skin-picking",
+    "Flexion contracture",
+    "Impulsivity",
+    "Low-set ears",
+    "Obesity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

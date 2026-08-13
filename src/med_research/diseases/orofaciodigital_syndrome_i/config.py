@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'orofaciodigital syndrome I (OROFACIODIGITAL_SYNDROME_I)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of orofaciodigital syndrome I
-SYMPTOMS = []
+SYMPTOMS = [
+    "Clinodactyly",
+    "Abnormal heart morphology",
+    "Agenesis of corpus callosum",
+    "Polycystic kidney dysplasia",
+    "Arachnoid cyst",
+    "Microcephaly",
+    "Proteinuria",
+    "Cerebellar cyst",
+    "Dolichocephaly",
+    "Alveolar ridge overgrowth",
+    "Porencephalic cyst",
+    "Hydrocephalus",
+    "Radial deviation of finger",
+    "Syndactyly",
+    "Bifid tongue",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

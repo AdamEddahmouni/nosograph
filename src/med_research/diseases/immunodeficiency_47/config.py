@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'immunodeficiency 47 (IMMUNODEFICIENCY_47)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 47
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypermetropia",
+    "Cholestasis",
+    "Hepatic bridging fibrosis",
+    "Seizure",
+    "Normocytic anemia",
+    "Hypotonia",
+    "Cirrhosis",
+    "Joint hypermobility",
+    "Decreased circulating IgM concentration",
+    "Type II transferrin isoform profile",
+    "Elevated circulating hepatic transaminase concentration",
+    "Cutis laxa",
+    "Hepatic fibrosis",
+    "Death in infancy",
+    "Abnormal protein N-linked glycosylation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

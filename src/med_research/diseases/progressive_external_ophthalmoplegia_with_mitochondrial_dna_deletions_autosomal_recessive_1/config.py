@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'progressive external ophthalmoplegia with mitochondrial DNA de
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal recessive 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Impaired distal proprioception",
+    "Cerebellar atrophy",
+    "Mitral valve prolapse",
+    "Bradykinesia",
+    "Positive Romberg sign",
+    "Limb ataxia",
+    "Weakness of facial musculature",
+    "EMG: myopathic abnormalities",
+    "Subsarcolemmal accumulations of abnormally shaped mitochondria",
+    "Sensory axonal neuropathy",
+    "Generalized amyotrophy",
+    "Respiratory insufficiency due to muscle weakness",
+    "Facial palsy",
+    "Dysphonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

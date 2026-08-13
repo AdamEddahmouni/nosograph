@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'polydactyly-myopia syndrome (POLYDACTYLY_MYOPIA_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of polydactyly-myopia syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Postaxial hand polydactyly",
+    "Myopia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

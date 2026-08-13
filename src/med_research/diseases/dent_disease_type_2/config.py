@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Dent disease type 2 (DENT_DISEASE_TYPE_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Dent disease type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated circulating aspartate aminotransferase concentration",
+    "Increased circulating lactate dehydrogenase concentration",
+    "Short stature",
+    "Cognitive impairment",
+    "Proximal tubulopathy",
+    "Childhood onset",
+    "Hypercalciuria",
+    "Elevated circulating alanine aminotransferase concentration",
+    "Umbilical hernia",
+    "Low-molecular-weight proteinuria",
+    "Aminoaciduria",
+    "Hypophosphatemia",
+    "Chronic kidney disease",
+    "Mild global developmental delay",
+    "Elevated circulating creatine kinase activity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'dystonia, childhood-onset, with optic atrophy and basal gangli
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dystonia, childhood-onset, with optic atrophy and basal ganglia abnormalities
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nystagmus",
+    "Hypotonia",
+    "Pigmentary retinopathy",
+    "Dysarthria",
+    "Dysphagia",
+    "Spasticity",
+    "Paroxysmal dyskinesia",
+    "Delayed gross motor development",
+    "Athetosis",
+    "Juvenile onset",
+    "Hyperreflexia",
+    "Feeding difficulties",
+    "Craniofacial dystonia",
+    "Progressive",
+    "Involuntary movements",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

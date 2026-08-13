@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'X-linked myopathy with postural muscle atrophy (X_LINKED_MYOPA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked myopathy with postural muscle atrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "EMG: myopathic abnormalities",
+    "Elevated circulating creatine kinase activity",
+    "Proximal muscle weakness",
+    "Increased variability in muscle fiber diameter",
+    "Hamstring contractures",
+    "Progressive",
+    "Spinal rigidity",
+    "Arrhythmia",
+    "Achilles tendon contracture",
+    "Scoliosis",
+    "Respiratory insufficiency",
+    "Hypertrophic cardiomyopathy",
+    "Short neck",
+    "Young adult onset",
+    "Scapular winging",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'metatropic dysplasia (METATROPIC_DYSPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of metatropic dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal metaphyseal vascular invasion",
+    "Cone-shaped epiphysis",
+    "Decreased fetal movement",
+    "Scoliosis",
+    "Flared iliac wing",
+    "Peripheral axonal neuropathy",
+    "Cupped ribs",
+    "High forehead",
+    "Relatively short spine",
+    "Long coccyx",
+    "Short finger",
+    "Dumbbell-shaped femur",
+    "Hyperplasia of the femoral trochanters",
+    "Crescent-shaped iliac bone",
+    "Disproportionate short-trunk short stature",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

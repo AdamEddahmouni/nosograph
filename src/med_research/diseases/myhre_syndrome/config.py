@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Myhre syndrome (MYHRE_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Myhre syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cleft palate",
+    "Stiff skin",
+    "Enlarged vertebral pedicles",
+    "Malar flattening",
+    "Coarctation of aorta",
+    "Childhood onset",
+    "Hypertonia",
+    "Laryngotracheal stenosis",
+    "2-3 toe syndactyly",
+    "Obesity",
+    "Seizure",
+    "Intellectual disability",
+    "Psychosis",
+    "Sacral dimple",
+    "Generalized muscle hypertrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

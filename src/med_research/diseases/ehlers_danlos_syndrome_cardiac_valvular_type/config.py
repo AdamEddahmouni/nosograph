@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Ehlers-Danlos syndrome, cardiac valvular type (EHLERS_DANLOS_S
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Ehlers-Danlos syndrome, cardiac valvular type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Soft skin",
+    "Inguinal hernia",
+    "Aortic regurgitation",
+    "Bruising susceptibility",
+    "Hyperextensible skin",
+    "Mitral regurgitation",
+    "Thin skin",
+    "Joint hypermobility",
+    "Pectus excavatum",
+    "Genu recurvatum",
+    "Autosomal recessive inheritance",
+    "Calcaneovalgus deformity",
+    "Pes planus",
+    "Atrophic scars",
+    "Mitral valve prolapse",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'atrophoderma vermiculata (ATROPHODERMA_VERMICULATA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of atrophoderma vermiculata
-SYMPTOMS = []
+SYMPTOMS = [
+    "Milia",
+    "Leukonychia",
+    "Abnormality of the face",
+    "Abnormality of the cardiovascular system",
+    "Autosomal dominant inheritance",
+    "Abnormality of the skin",
+    "Autosomal recessive inheritance",
+    "Atrophodermia vermiculata",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

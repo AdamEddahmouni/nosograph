@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'retinitis pigmentosa 76 (RETINITIS_PIGMENTOSA_76)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of retinitis pigmentosa 76
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nyctalopia",
+    "Retinal thinning on OCT",
+    "Autosomal recessive inheritance",
+    "Hyperautofluorescent macular lesion",
+    "Peripapillary atrophy",
+    "Constriction of peripheral visual field",
+    "Reduced visual acuity",
+    "Cystoid macular edema",
+    "Spicular pigmentation of the retina",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

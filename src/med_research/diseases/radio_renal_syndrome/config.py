@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'radio-renal syndrome (RADIO_RENAL_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of radio-renal syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal pinna morphology",
+    "Short stature",
+    "Absent radius",
+    "Autosomal dominant inheritance",
+    "Chromosome breakage",
+    "Ectopic kidney",
+    "Absent thumb",
+    "Unilateral renal agenesis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

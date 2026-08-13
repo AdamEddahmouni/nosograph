@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'congenital myopathy 20 (CONGENITAL_MYOPATHY_20)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital myopathy 20
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short finger",
+    "Chronic diarrhea",
+    "Delayed ability to walk",
+    "Prominent forehead",
+    "Proximal muscle weakness",
+    "Narrow face",
+    "Type 1 muscle fiber predominance",
+    "Echogenic intracardiac focus",
+    "Frequent falls",
+    "Nemaline bodies",
+    "Centrally nucleated skeletal muscle fibers",
+    "Toe joint contracture",
+    "Increased variability in muscle fiber diameter",
+    "Depressed nasal bridge",
+    "Delayed speech and language development",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

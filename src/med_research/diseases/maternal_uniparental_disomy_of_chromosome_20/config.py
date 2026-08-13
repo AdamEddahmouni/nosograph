@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'maternal uniparental disomy of chromosome 20 (MATERNAL_UNIPARE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of maternal uniparental disomy of chromosome 20
-SYMPTOMS = []
+SYMPTOMS = [
+    "Triangular face",
+    "Horseshoe kidney",
+    "Severe short stature",
+    "Cafe-au-lait spot",
+    "Clinodactyly",
+    "Scoliosis",
+    "Feeding difficulties",
+    "Hypermelanotic macule",
+    "Generalized hypotonia",
+    "Retrognathia",
+    "Intrauterine growth retardation",
+    "Epicanthus",
+    "Failure to thrive",
+    "Dolichocephaly",
+    "Hyperlordosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

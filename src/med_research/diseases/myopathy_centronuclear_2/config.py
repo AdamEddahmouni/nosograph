@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'myopathy, centronuclear, 2 (MYOPATHY_CENTRONUCLEAR_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of myopathy, centronuclear, 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Motor delay",
+    "Distal muscle weakness",
+    "Facial palsy",
+    "Mild intellectual disability",
+    "Hyperlordosis",
+    "Scapular winging",
+    "Talipes equinovarus",
+    "Respiratory insufficiency due to muscle weakness",
+    "Pes cavus",
+    "Intrauterine growth retardation",
+    "Feeding difficulties in infancy",
+    "Areflexia",
+    "Dysarthria",
+    "Kyphosis",
+    "Congenital onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

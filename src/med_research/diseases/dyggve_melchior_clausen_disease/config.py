@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Dyggve-Melchior-Clausen disease (DYGGVE_MELCHIOR_CLAUSEN_DISEA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Dyggve-Melchior-Clausen disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Kyphosis",
+    "Metaphyseal widening",
+    "Brachydactyly",
+    "Coarse facial features",
+    "Thoracic kyphosis",
+    "Broad palm",
+    "Scoliosis",
+    "Barrel-shaped chest",
+    "Disproportionate short-trunk short stature",
+    "Iliac crest serration",
+    "Synophrys",
+    "Talipes equinovarus",
+    "Short metatarsal",
+    "Mandibular prognathia",
+    "Absent speech",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

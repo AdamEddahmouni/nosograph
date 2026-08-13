@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'Binder syndrome (BINDER_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Binder syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short nose",
+    "Depressed nasal bridge",
+    "Large earlobe",
+    "Short distal phalanx of finger",
+    "Patchy distortion of vertebrae",
+    "Vertebral clefting",
+    "Dental malocclusion",
+    "Short columella",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'atrial septal defect 1 (ATRIAL_SEPTAL_DEFECT_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of atrial septal defect 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Secundum atrial septal defect",
+    "Ventricular septal defect",
+    "Congenital onset",
+    "Bicuspid aortic valve",
+    "Atrioventricular canal defect",
+    "Aortic valve stenosis",
+    "Patent foramen ovale",
+    "Pulmonary arterial hypertension",
+    "Tetralogy of Fallot with pulmonary atresia",
+    "Persistent left superior vena cava",
+    "Dextrocardia",
+    "Aortic regurgitation",
+    "Atrial septal defect",
+    "Atrial fibrillation",
+    "Subvalvular aortic stenosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

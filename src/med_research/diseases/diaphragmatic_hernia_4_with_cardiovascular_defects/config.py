@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'diaphragmatic hernia 4, with cardiovascular defects (DIAPHRAGM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of diaphragmatic hernia 4, with cardiovascular defects
-SYMPTOMS = []
+SYMPTOMS = [
+    "Talipes equinovarus",
+    "Clinodactyly of the 5th finger",
+    "Aplasia of the left hemidiaphragm",
+    "2-3 toe syndactyly",
+    "Webbed neck",
+    "Macrocephaly",
+    "Neonatal respiratory distress",
+    "Short chin",
+    "Micrognathia",
+    "11 pairs of ribs",
+    "Polyhydramnios",
+    "Pulmonary artery hypoplasia",
+    "Aortopulmonary collateral arteries",
+    "Aortopulmonary window",
+    "Diaphragmatic eventration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

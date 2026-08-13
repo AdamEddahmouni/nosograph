@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autoimmune interstitial lung disease-arthritis syndrome (AUTOI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autoimmune interstitial lung disease-arthritis syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cough",
+    "Elevated circulating C-reactive protein concentration",
+    "Tachypnea",
+    "Abnormal pulmonary interstitial morphology",
+    "Childhood onset",
+    "Elevated erythrocyte sedimentation rate",
+    "Hemosiderin-laden macrophages in bronchoalveolar fluid",
+    "Mesangial hypercellularity",
+    "Arthritis",
+    "Autosomal dominant inheritance",
+    "Crescentic glomerulonephritis",
+    "Antinuclear antibody positivity",
+    "Arthralgia",
+    "Pulmonary hemorrhage",
+    "Dyspnea",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hand-foot-genital syndrome (HAND_FOOT_GENITAL_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hand-foot-genital syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Vesicoureteral reflux",
+    "Short 2nd toe",
+    "Short hallux",
+    "Longitudinal vaginal septum",
+    "Delayed tarsal ossification",
+    "Chordee",
+    "Ulnar deviation of the 2nd finger",
+    "Pseudoepiphyses",
+    "Delayed ossification of carpal bones",
+    "Brachydactyly",
+    "Clinodactyly of the 5th finger",
+    "Ureteropelvic junction obstruction",
+    "Renal insufficiency",
+    "Small nail",
+    "Short first metatarsal",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

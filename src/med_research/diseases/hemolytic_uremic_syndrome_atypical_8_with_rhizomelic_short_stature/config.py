@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hemolytic uremic syndrome, atypical, 8, with rhizomelic short 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hemolytic uremic syndrome, atypical, 8, with rhizomelic short stature
-SYMPTOMS = []
+SYMPTOMS = [
+    "Proteinuria",
+    "Moderate proteinuria",
+    "Disproportionate short stature",
+    "Hemolytic anemia",
+    "High forehead",
+    "Hyperechogenic kidneys",
+    "Decreased total lymphocyte count",
+    "Long eyelashes",
+    "Generalized-onset seizure",
+    "Decreased total leukocyte count",
+    "Wide nasal bridge",
+    "Prominent nasolabial fold",
+    "Thrombocytopenia",
+    "Decreased total neutrophil count",
+    "Elevated circulating creatinine concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

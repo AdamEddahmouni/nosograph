@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'episodic ataxia type 2 (EPISODIC_ATAXIA_TYPE_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of episodic ataxia type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Diplopia",
+    "Episodic ataxia",
+    "Vertigo",
+    "Cerebellar vermis atrophy",
+    "Dystonia",
+    "Abnormal vestibular function",
+    "Saccadic smooth pursuit interruptions",
+    "Tinnitus",
+    "Gaze-evoked nystagmus",
+    "Downbeat nystagmus",
+    "Myotonia",
+    "Typified by incomplete penetrance",
+    "Dysarthria",
+    "Progressive cerebellar ataxia",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

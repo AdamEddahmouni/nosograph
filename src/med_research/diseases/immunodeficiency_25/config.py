@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'immunodeficiency 25 (IMMUNODEFICIENCY_25)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 25
-SYMPTOMS = []
+SYMPTOMS = [
+    "Complete or near-complete absence of specific antibody response to tetanus vaccine",
+    "Protracted diarrhea",
+    "Increased total eosinophil count",
+    "Decreased total T cell count",
+    "Erythroderma",
+    "Increased circulating IgE concentration",
+    "Antimitochondrial antibody positivity",
+    "Recurrent pneumonia",
+    "Anti-smooth muscle antibody positivity",
+    "Increased circulating IgM concentration",
+    "Increased circulating IgG concentration",
+    "Immunodeficiency",
+    "Recurrent Candida infection",
+    "Infantile onset",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

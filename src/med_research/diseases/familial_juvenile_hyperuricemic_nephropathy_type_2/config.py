@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'familial juvenile hyperuricemic nephropathy type 2 (FAMILIAL_J
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial juvenile hyperuricemic nephropathy type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperuricemia",
+    "Renal tubular atrophy",
+    "Autosomal dominant inheritance",
+    "Proteinuria",
+    "Chronic kidney disease",
+    "Focal segmental glomerulosclerosis",
+    "Hyperechogenic kidneys",
+    "Renal hypoplasia",
+    "Anemia",
+    "Tubulointerstitial fibrosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

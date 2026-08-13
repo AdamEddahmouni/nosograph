@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'intellectual developmental disorder with seizures and language
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of intellectual developmental disorder with seizures and language delay
-SYMPTOMS = []
+SYMPTOMS = [
+    "EEG with spike-wave complexes (2.5-3.5 Hz)",
+    "Thick lower lip vermilion",
+    "Square face",
+    "Full cheeks",
+    "Mild intellectual disability",
+    "Global developmental delay",
+    "Profound intellectual disability",
+    "Myoclonic absence seizure",
+    "Increased theta frequency activity in EEG",
+    "Downslanted palpebral fissures",
+    "Anxiety",
+    "EEG with polyspike wave complexes",
+    "Flat occiput",
+    "Bilateral tonic-clonic seizure",
+    "Delayed speech and language development",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

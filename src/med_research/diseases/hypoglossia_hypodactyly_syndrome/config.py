@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'Hypoglossia-hypodactyly syndrome (HYPOGLOSSIA_HYPODACTYLY_SYND
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Hypoglossia-hypodactyly syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Adactyly",
+    "Epicanthus",
+    "Narrow mouth",
+    "Aglossia",
+    "Retrognathia",
+    "Sporadic",
+    "Microglossia",
+    "Split hand",
+    "Micrognathia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

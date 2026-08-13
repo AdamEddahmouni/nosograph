@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'glycogen storage disease III (GLYCOGEN_STORAGE_DISEASE_III)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of glycogen storage disease III
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypoglycemia",
+    "Elevated circulating hepatic transaminase concentration",
+    "Hepatomegaly",
+    "Hepatic fibrosis",
+    "Muscle weakness",
+    "Reduced muscle glycogen debrancher enzyme activity",
+    "Depressed nasal bridge",
+    "Autosomal recessive inheritance",
+    "Malar flattening",
+    "Ventricular hypertrophy",
+    "Myopathy",
+    "Cardiomyopathy",
+    "Short stature",
+    "Thin upper lip vermilion",
+    "Midface retrusion",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

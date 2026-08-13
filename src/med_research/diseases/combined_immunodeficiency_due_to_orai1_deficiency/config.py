@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'combined immunodeficiency due to ORAI1 deficiency (COMBINED_IM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of combined immunodeficiency due to ORAI1 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Amelogenesis imperfecta",
+    "Gait disturbance",
+    "Stomatitis",
+    "Gowers sign",
+    "Recurrent aphthous stomatitis",
+    "Immunodeficiency",
+    "Decreased circulating IgA concentration",
+    "Ectodermal dysplasia",
+    "Autosomal recessive inheritance",
+    "Myopathy",
+    "Recurrent infections",
+    "Death in infancy",
+    "Respiratory insufficiency due to muscle weakness",
+    "Heat intolerance",
+    "Global developmental delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

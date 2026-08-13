@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neurodevelopmental disorder with motor regression, progressive
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neurodevelopmental disorder with motor regression, progressive spastic paraplegia, and oromotor dysfunction
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cerebellar atrophy",
+    "Drooling",
+    "Infantile onset",
+    "Autosomal recessive inheritance",
+    "Microcephaly",
+    "Dystonia",
+    "Spasticity",
+    "Short stature",
+    "Childhood onset",
+    "Gait disturbance",
+    "Spastic tetraparesis",
+    "Motor regression",
+    "Cerebral atrophy",
+    "Cognitive regression",
+    "Hyperreflexia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

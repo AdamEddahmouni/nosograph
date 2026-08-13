@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Char syndrome (CHAR_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Char syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypertelorism",
+    "Mild intellectual disability",
+    "Strabismus",
+    "Parasomnia",
+    "Ptosis",
+    "Thick eyebrow",
+    "Distal fifth finger symphalangism",
+    "Protruding ear",
+    "Broad nasal tip",
+    "Highly arched eyebrow",
+    "Autosomal dominant inheritance",
+    "Global developmental delay",
+    "Low-set ears",
+    "Patent ductus arteriosus",
+    "Short philtrum",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

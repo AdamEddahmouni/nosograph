@@ -8,8 +8,13 @@ PIPELINE_LABEL = "primary systemic amyloidosis (SYSTEMIC_AL_AMYLOIDOSIS)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of primary systemic amyloidosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Amyloid deposition",
+    "Multiple myeloma",
+    "Paraproteinemia",
+    "Typified by somatic mosaicism",
+    "Adult onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

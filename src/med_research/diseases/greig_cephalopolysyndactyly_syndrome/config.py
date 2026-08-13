@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Greig cephalopolysyndactyly syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Preaxial hand polydactyly",
+    "High forehead",
+    "Postaxial hand polydactyly",
+    "Omphalocele",
+    "Hypospadias",
+    "Broad hallux phalanx",
+    "Trigonocephaly",
+    "Atrial septal defect",
+    "Frontal bossing",
+    "Hypertelorism",
+    "Hyperglycemia",
+    "Broad hallux",
+    "Y-shaped metacarpals",
+    "Camptodactyly of toe",
+    "Delayed speech and language development",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

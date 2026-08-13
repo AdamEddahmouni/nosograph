@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'nail-patella syndrome (NAIL_PATELLA_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of nail-patella syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Glenoid fossa hypoplasia",
+    "Lester's sign",
+    "Antecubital pterygium",
+    "Thickening of the lateral border of the scapula",
+    "Back pain",
+    "Absence of pectoralis minor muscle",
+    "Autosomal dominant inheritance",
+    "Elongated radius",
+    "Renal insufficiency",
+    "Spina bifida",
+    "Limited elbow extension",
+    "Keratoconus",
+    "Pes planus",
+    "Anonychia",
+    "Scoliosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

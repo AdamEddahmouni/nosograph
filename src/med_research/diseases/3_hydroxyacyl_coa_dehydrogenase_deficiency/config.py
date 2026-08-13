@@ -8,8 +8,23 @@ PIPELINE_LABEL = '3-hydroxyacyl-CoA dehydrogenase deficiency (3_HYDROXYACYL_COA_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of 3-hydroxyacyl-CoA dehydrogenase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dicarboxylic aciduria",
+    "Fulminant hepatic failure",
+    "Hypotonia",
+    "Hypoglycemic encephalopathy",
+    "Hepatic necrosis",
+    "Autosomal recessive inheritance",
+    "Myoglobinuria",
+    "Decreased 3-hydroxyacyl-CoA dehydrogenase level",
+    "Hypertrophic cardiomyopathy",
+    "Generalized hypotonia",
+    "Hypoketotic hypoglycemia",
+    "Feeding difficulties in infancy",
+    "Hepatic steatosis",
+    "Hypoglycemic seizures",
+    "Growth delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autosomal recessive ataxia, Beauce type (AUTOSOMAL_RECESSIVE_A
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal recessive ataxia, Beauce type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Gait ataxia",
+    "Slowly progressive",
+    "Dysmetria",
+    "Lower limb hyperreflexia",
+    "Pes cavus",
+    "Abnormal autonomic nervous system physiology",
+    "Scoliosis",
+    "Autosomal recessive inheritance",
+    "Peripheral axonal neuropathy",
+    "Nystagmus",
+    "Optic atrophy",
+    "Limb ataxia",
+    "Abnormality of extrapyramidal motor function",
+    "Jerky ocular pursuit movements",
+    "Dysarthria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

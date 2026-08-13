@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'anencephaly 1 (ANENCEPHALY_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of anencephaly 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Anencephaly",
+    "Spina bifida",
+    "Congenital onset",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'atopic eczema (ATOPIC_ECZEMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of atopic eczema
-SYMPTOMS = []
+SYMPTOMS = [
+    "Atopic dermatitis",
+    "Infra-orbital fold",
+    "Conjunctivitis",
+    "Recurrent skin infections",
+    "Abnormality of metabolism/homeostasis",
+    "Pallor",
+    "Autosomal dominant inheritance",
+    "Pruritus",
+    "Food intolerance",
+    "Facial erythema",
+    "Ichthyosis",
+    "Cataract",
+    "Keratosis pilaris",
+    "Eczematoid dermatitis",
+    "Dry skin",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

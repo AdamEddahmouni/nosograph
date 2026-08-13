@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mucopolysaccharidosis type 3C (MUCOPOLYSACCHARIDOSIS_TYPE_3C)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mucopolysaccharidosis type 3C
-SYMPTOMS = []
+SYMPTOMS = [
+    "Motor delay",
+    "Intellectual disability",
+    "Hypertrichosis",
+    "Coarse facial features",
+    "Seizure",
+    "Ovoid thoracolumbar vertebrae",
+    "Hearing impairment",
+    "Growth abnormality",
+    "Dysphagia",
+    "Hernia",
+    "Recurrent upper respiratory tract infections",
+    "Childhood onset",
+    "Loss of speech",
+    "Everted lower lip vermilion",
+    "Kyphoscoliosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

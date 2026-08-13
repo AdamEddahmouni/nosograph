@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Kleefstra syndrome (KLEEFSTRA_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Kleefstra syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Brachydactyly",
+    "Clinodactyly of the 5th finger",
+    "Sporadic",
+    "Hypospadias",
+    "Hallux valgus",
+    "Coronary artery fistula",
+    "Tube feeding",
+    "Autosomal dominant inheritance",
+    "Upslanted palpebral fissure",
+    "Seizure",
+    "Febrile seizure (within the age range of 3 months to 6 years)",
+    "Tall stature",
+    "Ventricular septal defect",
+    "Kyphosis",
+    "Hypertelorism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

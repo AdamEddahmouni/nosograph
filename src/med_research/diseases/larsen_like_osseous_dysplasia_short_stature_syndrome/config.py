@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Larsen-like osseous dysplasia-short stature syndrome (LARSEN_L
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Larsen-like osseous dysplasia-short stature syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Bipartite calcaneus",
+    "Global developmental delay",
+    "Flat face",
+    "Generalized hypotonia",
+    "Conductive hearing impairment",
+    "Dental malocclusion",
+    "Kyphoscoliosis",
+    "Radial deviation of the 4th finger",
+    "Talipes equinovarus",
+    "Low-set ears",
+    "Absent nasal bridge",
+    "Malar flattening",
+    "Wide anterior fontanel",
+    "Clinodactyly of the 5th finger",
+    "Macrocephaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

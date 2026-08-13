@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'opsismodysplasia (OPSISMODYSPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of opsismodysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Scoliosis",
+    "Depressed nasal bridge",
+    "Motor delay",
+    "Metaphyseal cupping",
+    "Hypotonia",
+    "Proptosis",
+    "High forehead",
+    "Generalized hypotonia",
+    "Small foramen magnum",
+    "Short long bone",
+    "Recurrent respiratory infections",
+    "Respiratory insufficiency",
+    "Congenital onset",
+    "Narrow chest",
+    "Rhizomelia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

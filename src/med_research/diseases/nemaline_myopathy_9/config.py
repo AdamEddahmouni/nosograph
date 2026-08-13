@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'nemaline myopathy 9 (NEMALINE_MYOPATHY_9)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of nemaline myopathy 9
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ventricular septal defect",
+    "Arthrogryposis multiplex congenita",
+    "Breech presentation",
+    "Motor delay",
+    "Respiratory insufficiency",
+    "Fetal akinesia sequence",
+    "Scoliosis",
+    "Cleft palate",
+    "Polyhydramnios",
+    "Narrow chest",
+    "Autosomal recessive inheritance",
+    "Muscle weakness",
+    "Nemaline bodies",
+    "High palate",
+    "Micrognathia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

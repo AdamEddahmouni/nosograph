@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'cerebellar atrophy, developmental delay, and seizures (CEREBEL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cerebellar atrophy, developmental delay, and seizures
-SYMPTOMS = []
+SYMPTOMS = [
+    "Delayed speech and language development",
+    "Myoclonic seizure",
+    "Infantile onset",
+    "EEG abnormality",
+    "Cerebellar atrophy",
+    "Generalized hypotonia",
+    "Global developmental delay",
+    "Bilateral tonic-clonic seizure with focal onset",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

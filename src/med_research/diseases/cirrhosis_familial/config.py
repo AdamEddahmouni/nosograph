@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'cirrhosis, familial (CIRRHOSIS_FAMILIAL)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cirrhosis, familial
-SYMPTOMS = []
+SYMPTOMS = [
+    "Jaundice",
+    "Hypertension",
+    "Lethargy",
+    "Fever",
+    "Ascites",
+    "Biliary cirrhosis",
+    "Abdominal distention",
+    "Cirrhosis",
+    "Fulminant hepatitis",
+    "Autosomal recessive inheritance",
+    "Pulmonary arterial hypertension",
+    "Increased level of propylene glycol in blood",
+    "Micronodular cirrhosis",
+    "Late onset",
+    "Increased level of L-fucose in urine",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

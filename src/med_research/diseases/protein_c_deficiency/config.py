@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'protein c deficiency (PROTEIN_C_DEFICIENCY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of protein c deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cerebral venous thrombosis",
+    "Autosomal dominant inheritance",
+    "Warfarin-induced skin necrosis",
+    "Abnormality of the nervous system",
+    "Superficial thrombophlebitis",
+    "Hypercoagulability",
+    "Deep venous thrombosis",
+    "Abnormality of the eye",
+    "Pulmonary embolism",
+    "Reduced protein C activity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'myofibrillar myopathy 7 (MYOFIBRILLAR_MYOPATHY_7)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of myofibrillar myopathy 7
-SYMPTOMS = []
+SYMPTOMS = [
+    "Slowly progressive",
+    "Atypical behavior",
+    "Scoliosis",
+    "Global developmental delay",
+    "Z-band streaming",
+    "Increased Z-disc width",
+    "Achilles tendon contracture",
+    "Congenital onset",
+    "Increased circulating lactate dehydrogenase concentration",
+    "Shoulder flexion contracture",
+    "Elevated circulating creatine kinase activity",
+    "Nemaline bodies",
+    "Increased variability in muscle fiber diameter",
+    "Facial palsy",
+    "Limited hip extension",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

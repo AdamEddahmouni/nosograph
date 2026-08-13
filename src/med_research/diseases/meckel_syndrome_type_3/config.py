@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'Meckel syndrome, type 3 (MECKEL_SYNDROME_TYPE_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Meckel syndrome, type 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hepatic fibrosis",
+    "Malformation of the hepatic ductal plate",
+    "Hydrocephalus",
+    "Bile duct proliferation",
+    "Postaxial foot polydactyly",
+    "Postaxial hand polydactyly",
+    "Multicystic kidney dysplasia",
+    "Autosomal recessive inheritance",
+    "Dandy-Walker malformation",
+    "Polydactyly",
+    "Occipital encephalocele",
+    "Hepatomegaly",
+    "Cleft palate",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

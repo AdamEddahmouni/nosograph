@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'diaphragmatic defect-limb deficiency-skull defect syndrome (DI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of diaphragmatic defect-limb deficiency-skull defect syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Clinodactyly of the 5th finger",
+    "Testicular atrophy",
+    "Anteverted nares",
+    "Low-set ears",
+    "Autosomal recessive inheritance",
+    "Omphalocele",
+    "Congenital diaphragmatic hernia",
+    "Abnormality of the diaphragm",
+    "Toe syndactyly",
+    "Hypertelorism",
+    "Syndactyly",
+    "Pulmonary hypoplasia",
+    "Decreased skull ossification",
+    "Amelia",
+    "Intestinal malrotation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'immunodeficiency 19 (IMMUNODEFICIENCY_19)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 19
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Abnormal natural killer cell morphology",
+    "Failure to thrive",
+    "Severe viral infection",
+    "Abnormal B cell morphology",
+    "Recurrent respiratory infections",
+    "Infantile onset",
+    "Severe combined immunodeficiency",
+    "Decreased total T cell count",
+    "Chronic diarrhea",
+    "Recurrent otitis media",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

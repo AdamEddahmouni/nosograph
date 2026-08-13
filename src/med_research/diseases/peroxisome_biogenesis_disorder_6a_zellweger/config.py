@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'peroxisome biogenesis disorder 6A (Zellweger) (PEROXISOME_BIOG
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of peroxisome biogenesis disorder 6A (Zellweger)
-SYMPTOMS = []
+SYMPTOMS = [
+    "Epiphyseal stippling",
+    "Decreased liver function",
+    "Hypotonia",
+    "Rapidly progressive",
+    "Autosomal recessive inheritance",
+    "Pachygyria",
+    "Severe global developmental delay",
+    "Generalized neonatal hypotonia",
+    "Low-set ears",
+    "Feeding difficulties in infancy",
+    "Wide nasal bridge",
+    "Colpocephaly",
+    "Congenital onset",
+    "Neonatal death",
+    "Hepatomegaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Andersen-Tawil syndrome (ANDERSEN_TAWIL_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Andersen-Tawil syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Broad forehead",
+    "Prolonged QT interval",
+    "Thin upper lip vermilion",
+    "Hypokalemia",
+    "Scoliosis",
+    "Microcephaly",
+    "Facial asymmetry",
+    "Hyperthyroidism",
+    "Scapular winging",
+    "Depression",
+    "Hypoplasia of the maxilla",
+    "Brachydactyly",
+    "Growth abnormality",
+    "Juvenile onset",
+    "Prominent U wave",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

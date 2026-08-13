@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'Griscelli syndrome type 3 (GRISCELLI_SYNDROME_TYPE_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Griscelli syndrome type 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormality of the nervous system",
+    "Silver-gray hair",
+    "Autosomal recessive inheritance",
+    "White eyelashes",
+    "Childhood onset",
+    "Large clumps of pigment irregularly distributed along hair shaft",
+    "Immunodeficiency",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

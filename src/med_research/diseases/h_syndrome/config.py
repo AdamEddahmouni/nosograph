@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'H syndrome (H_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of H syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Proptosis",
+    "Hypertrichotic hyperpigmented patch",
+    "Sensorineural hearing impairment",
+    "Rocker bottom foot",
+    "Anteverted nares",
+    "Left superior vena cava draining to coronary sinus",
+    "Atrial septal defect",
+    "Gynecomastia",
+    "Short stature",
+    "Mitral valve prolapse",
+    "Hepatosplenomegaly",
+    "Flexion contracture of finger",
+    "Camptodactyly",
+    "Joint contracture of the 5th finger",
+    "Episcleritis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

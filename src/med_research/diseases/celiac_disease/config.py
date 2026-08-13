@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Celiac disease (CELIAC_DISEASE)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Celiac disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Prolonged prothrombin time",
+    "Cerebral calcification",
+    "Failure to thrive",
+    "Osteoporosis",
+    "Type I diabetes mellitus",
+    "Macrocytic anemia",
+    "Rickets",
+    "Enamel hypoplasia",
+    "Alopecia",
+    "Autosomal recessive inheritance",
+    "Decreased circulating vitamin D concentration",
+    "Decreased circulating folate concentration",
+    "Diarrhea",
+    "Decreased circulating vitamin B12 concentration",
+    "Infertility",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

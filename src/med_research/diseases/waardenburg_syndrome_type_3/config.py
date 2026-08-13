@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Waardenburg syndrome type 3 (WAARDENBURG_SYNDROME_TYPE_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Waardenburg syndrome type 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital onset",
+    "Carpal synostosis",
+    "Autosomal recessive inheritance",
+    "Prominent nasal bridge",
+    "Blue irides",
+    "Telecanthus",
+    "Partial albinism",
+    "Heterochromia iridis",
+    "Flexion contracture of finger",
+    "Camptodactyly of finger",
+    "White forelock",
+    "Clinodactyly",
+    "Posteriorly rotated ears",
+    "Mandibular prognathia",
+    "Aganglionic megacolon",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

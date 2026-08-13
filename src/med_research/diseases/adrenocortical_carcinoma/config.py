@@ -8,8 +8,11 @@ PIPELINE_LABEL = "adrenal cortex carcinoma (ADRENOCORTICAL_CARCINOMA)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of adrenal cortex carcinoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Adrenocortical carcinoma",
+    "Autosomal dominant inheritance",
+    "Choroid plexus carcinoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

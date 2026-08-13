@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'dystonia 28, childhood-onset (DYSTONIA_28_CHILDHOOD_ONSET)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dystonia 28, childhood-onset
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cognitive impairment",
+    "Motor delay",
+    "Abnormality of eye movement",
+    "Retrocollis",
+    "Childhood onset",
+    "Strabismus",
+    "Microcephaly",
+    "Delayed speech and language development",
+    "Dysphonia",
+    "Global developmental delay",
+    "Laryngeal dystonia",
+    "Tip-toe gait",
+    "Torticollis",
+    "Short stature",
+    "Myoclonus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

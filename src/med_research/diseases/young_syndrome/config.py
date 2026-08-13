@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'Young syndrome (YOUNG_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Young syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Recurrent bronchitis",
+    "Recurrent sinopulmonary infections",
+    "Congenital pulmonary airway malformation",
+    "Azoospermia",
+    "Bronchiectasis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

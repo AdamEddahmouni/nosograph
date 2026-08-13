@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'growth delay due to insulin-like growth factor type 1 deficien
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of growth delay due to insulin-like growth factor type 1 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Postnatal growth retardation",
+    "Intrauterine growth retardation",
+    "Decreased circulating insulin-like growth factor 1 concentration",
+    "Congenital onset",
+    "Hyperactivity",
+    "Short stature",
+    "Ptosis",
+    "Intellectual disability",
+    "Delayed skeletal maturation",
+    "Sensorineural hearing impairment",
+    "Micrognathia",
+    "Short attention span",
+    "Osteopenia",
+    "Microcephaly",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

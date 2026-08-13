@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'Aortic Coarctation (AORTIC_COARCTATION)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Aortic Coarctation
-SYMPTOMS = []
+SYMPTOMS = [
+    "Coarctation of aorta",
+    "Autosomal dominant inheritance",
+    "Hypoplastic left ventricle",
+    "Non-Mendelian inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'amelogenesis imperfecta, type 3A (AMELOGENESIS_IMPERFECTA_TYPE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of amelogenesis imperfecta, type 3A
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Dental malocclusion",
+    "Amelogenesis imperfecta",
+    "Anterior open-bite malocclusion",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

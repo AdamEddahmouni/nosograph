@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'GIST-plus syndrome (GIST_PLUS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of GIST-plus syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Gastrointestinal stroma tumor",
+    "Intussusception",
+    "Intestinal polyposis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

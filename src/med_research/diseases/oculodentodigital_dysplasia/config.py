@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'oculodentodigital dysplasia (OCULODENTODIGITAL_DYSPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of oculodentodigital dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Clinodactyly",
+    "Tetraparesis",
+    "Low hanging columella",
+    "Cataract",
+    "Carious teeth",
+    "Arrhythmia",
+    "Sparse hair",
+    "Vertebral hyperostosis",
+    "Broad alveolar ridges",
+    "Anteverted nares",
+    "Blepharophimosis",
+    "Intellectual disability",
+    "Abnormal pinna morphology",
+    "Spasticity",
+    "Underdeveloped nasal alae",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

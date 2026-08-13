@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'Unverricht-Lundborg syndrome (UNVERRICHT_LUNDBORG_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Unverricht-Lundborg syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Myoclonus",
+    "EEG with spike-wave complexes",
+    "EEG with polyspike wave complexes",
+    "Autosomal recessive inheritance",
+    "Generalized non-motor (absence) seizure",
+    "Mild intellectual disability",
+    "Dementia",
+    "Juvenile onset",
+    "Ataxia",
+    "Bilateral tonic-clonic seizure",
+    "Interictal epileptiform activity",
+    "Dysarthria",
+    "Mental deterioration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

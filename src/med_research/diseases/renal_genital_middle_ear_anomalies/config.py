@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'renal-genital-middle ear anomalies (RENAL_GENITAL_MIDDLE_EAR_A
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of renal-genital-middle ear anomalies
-SYMPTOMS = []
+SYMPTOMS = [
+    "Vaginal atresia",
+    "Hearing impairment",
+    "Autosomal recessive inheritance",
+    "Renal hypoplasia/aplasia",
+    "Abnormality of the middle ear ossicles",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

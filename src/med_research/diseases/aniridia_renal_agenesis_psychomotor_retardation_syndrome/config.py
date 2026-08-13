@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'aniridia-renal agenesis-psychomotor retardation syndrome (ANIR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of aniridia-renal agenesis-psychomotor retardation syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Telecanthus",
+    "Aniridia",
+    "Autosomal recessive inheritance",
+    "Intellectual disability",
+    "Frontal bossing",
+    "Developmental glaucoma",
+    "Unilateral renal agenesis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

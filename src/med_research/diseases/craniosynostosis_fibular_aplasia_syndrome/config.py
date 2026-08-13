@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'craniosynostosis-fibular aplasia syndrome (CRANIOSYNOSTOSIS_FI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of craniosynostosis-fibular aplasia syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Single transverse palmar crease",
+    "Fibular aplasia",
+    "Autosomal recessive inheritance",
+    "Cryptorchidism",
+    "Craniosynostosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

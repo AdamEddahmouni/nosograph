@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'hereditary chronic pancreatitis (HEREDITARY_CHRONIC_PANCREATIT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hereditary chronic pancreatitis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Pancreatic calcification",
+    "Fever",
+    "Pancreatitis",
+    "Diabetes mellitus",
+    "Abnormal thrombosis",
+    "Abdominal pain",
+    "Pleural effusion",
+    "Steatorrhea",
+    "Exocrine pancreatic insufficiency",
+    "Pancreatic pseudocyst",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

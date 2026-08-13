@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'megacystis-microcolon-intestinal hypoperistalsis syndrome 3 (M
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of megacystis-microcolon-intestinal hypoperistalsis syndrome 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Polyhydramnios",
+    "Hydroureter",
+    "Fetal megacystis",
+    "Neonatal death",
+    "Sepsis",
+    "Autosomal recessive inheritance",
+    "Abnormal heart morphology",
+    "Second trimester onset",
+    "Hydronephrosis",
+    "Abdominal distention",
+    "Microcolon",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

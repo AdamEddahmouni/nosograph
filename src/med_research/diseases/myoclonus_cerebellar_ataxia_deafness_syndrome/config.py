@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'myoclonus-cerebellar ataxia-deafness syndrome (MYOCLONUS_CEREB
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of myoclonus-cerebellar ataxia-deafness syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Myoclonus",
+    "Ataxia",
+    "Hearing impairment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'THOC6-related developmental delay-microcephaly-facial dysmorph
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of THOC6-related developmental delay-microcephaly-facial dysmorphism syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "High anterior hairline",
+    "Short palpebral fissure",
+    "Congenital onset",
+    "Myopia",
+    "Microcephaly",
+    "Autosomal recessive inheritance",
+    "Dental malocclusion",
+    "Unilateral renal agenesis",
+    "Velopharyngeal insufficiency",
+    "Low hanging columella",
+    "Horseshoe kidney",
+    "Premature ovarian insufficiency",
+    "Recurrent urinary tract infections",
+    "Global developmental delay",
+    "Intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hypoinsulinemic hypoglycemia and body hemihypertrophy (HYPOINS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypoinsulinemic hypoglycemia and body hemihypertrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Facial asymmetry",
+    "Neonatal hypoglycemia",
+    "Truncal obesity",
+    "Hypoglycemia",
+    "Hemihypertrophy",
+    "Gynecomastia",
+    "Bilateral tonic-clonic seizure",
+    "Obesity",
+    "Congenital onset",
+    "Fasting hypoglycemia",
+    "Hypoinsulinemia",
+    "Large for gestational age",
+    "Polyhydramnios",
+    "Autosomal dominant inheritance",
+    "Infantile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

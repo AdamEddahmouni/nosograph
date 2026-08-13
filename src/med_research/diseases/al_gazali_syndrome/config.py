@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Al-Gazali syndrome (AL_GAZALI_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Al-Gazali syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Wrist flexion contracture",
+    "Bilateral talipes equinovarus",
+    "Osteopenia",
+    "Bowed humerus",
+    "Failure to thrive",
+    "Midface retrusion",
+    "Corneal opacity",
+    "Sclerocornea",
+    "Recurrent fractures",
+    "Autosomal recessive inheritance",
+    "Hydronephrosis",
+    "Gastrojejunal tube feeding in infancy",
+    "Micrognathia",
+    "Broad distal phalanx of finger",
+    "Polyhydramnios",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

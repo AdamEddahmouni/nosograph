@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'epidermolytic palmoplantar keratoderma, 1 (EPIDERMOLYTIC_PALMO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of epidermolytic palmoplantar keratoderma, 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Localized epidermolytic hyperkeratosis",
+    "Palmoplantar hyperkeratosis",
+    "Palmar hyperkeratosis",
+    "Increased circulating IgE concentration",
+    "Autosomal dominant inheritance",
+    "Plantar hyperkeratosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

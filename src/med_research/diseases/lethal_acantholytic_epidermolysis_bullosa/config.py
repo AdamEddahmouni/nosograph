@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'lethal acantholytic epidermolysis bullosa (LETHAL_ACANTHOLYTIC
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lethal acantholytic epidermolysis bullosa
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Alopecia universalis",
+    "Syndactyly",
+    "Abnormal blistering of the skin",
+    "Anonychia",
+    "Neonatal death",
+    "Skin erosion",
+    "Mitten deformity",
+    "Sandal gap",
+    "Clinodactyly of the 5th finger",
+    "Alopecia totalis",
+    "Widely spaced toes",
+    "Absent fingernail",
+    "Acantholysis",
+    "Natal tooth",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

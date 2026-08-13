@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'glycogen storage disease II (GLYCOGEN_STORAGE_DISEASE_II)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of glycogen storage disease II
-SYMPTOMS = []
+SYMPTOMS = [
+    "Difficulty descending stairs",
+    "Increased muscle glycogen content",
+    "Firm muscles",
+    "Difficulty climbing stairs",
+    "Abnormal CNS myelination",
+    "Hearing impairment",
+    "Dilatation of the cerebral artery",
+    "Fever",
+    "Exercise intolerance",
+    "Young adult onset",
+    "Cardiomegaly",
+    "Muscle weakness",
+    "Elevated circulating CK-MB concentration",
+    "Elevated urine glucose tetrasaccharide level",
+    "Urinary incontinence",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

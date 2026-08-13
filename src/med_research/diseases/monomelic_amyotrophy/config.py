@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'Monomelic amyotrophy (MONOMELIC_AMYOTROPHY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Monomelic amyotrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cervical spinal cord atrophy",
+    "Cold paresis",
+    "Insidious onset",
+    "Upper limb muscle weakness",
+    "Fasciculations",
+    "Sporadic",
+    "EMG: neuropathic changes",
+    "Interosseus muscle atrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

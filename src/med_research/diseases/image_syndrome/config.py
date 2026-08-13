@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'IMAGe syndrome (IMAGE_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of IMAGe syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Epiphyseal dysplasia",
+    "Metaphyseal dysplasia",
+    "Hypercalcemia",
+    "Craniosynostosis",
+    "Cryptorchidism",
+    "Osteopenia",
+    "Hypercalciuria",
+    "Low-set ears",
+    "Short nose",
+    "Prominent forehead",
+    "Adrenal hypoplasia",
+    "Delayed skeletal maturation",
+    "Hypospadias",
+    "Autosomal dominant inheritance",
+    "Intrauterine growth retardation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

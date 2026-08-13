@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'inclusion body myopathy with Paget disease of bone and frontot
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of inclusion body myopathy with Paget disease of bone and frontotemporal dementia type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Generalized amyotrophy",
+    "Pelvic girdle muscle atrophy",
+    "Gait disturbance",
+    "Distal amyotrophy",
+    "Late young adult onset",
+    "Abnormal pelvic girdle bone morphology",
+    "Brain atrophy",
+    "Dementia",
+    "Scapular winging",
+    "Proximal muscle weakness",
+    "Lumbar hyperlordosis",
+    "Dystonia",
+    "Progressive proximal muscle weakness",
+    "Limb muscle weakness",
+    "Hip pain",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

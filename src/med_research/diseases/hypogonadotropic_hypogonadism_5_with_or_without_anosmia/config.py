@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'hypogonadotropic hypogonadism 5 with or without anosmia (HYPOG
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypogonadotropic hypogonadism 5 with or without anosmia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cleft palate",
+    "Cryptorchidism",
+    "Autosomal dominant inheritance",
+    "Hypogonadotropic hypogonadism",
+    "Cleft lip",
+    "Sensorineural hearing impairment",
+    "Anosmia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

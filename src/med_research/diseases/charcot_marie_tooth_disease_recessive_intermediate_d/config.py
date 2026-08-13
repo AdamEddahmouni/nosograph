@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'Charcot-Marie-Tooth disease recessive intermediate D (CHARCOT_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Charcot-Marie-Tooth disease recessive intermediate D
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyporeflexia",
+    "Autosomal recessive inheritance",
+    "Peripheral neuropathy",
+    "Onion bulb formation",
+    "Pes cavus",
+    "Childhood onset",
+    "Slowly progressive",
+    "Distal sensory impairment",
+    "Areflexia",
+    "Steppage gait",
+    "Foot dorsiflexor weakness",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

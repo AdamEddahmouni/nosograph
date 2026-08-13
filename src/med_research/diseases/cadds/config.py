@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'CADDS (CADDS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of CADDS
-SYMPTOMS = []
+SYMPTOMS = [
+    "Strabismus",
+    "Microcephaly",
+    "Global developmental delay",
+    "X-linked recessive inheritance",
+    "Intrauterine growth retardation",
+    "Cerebral atrophy",
+    "Infantile onset",
+    "Dystonia",
+    "Abnormal facial shape",
+    "Cerebral hypomyelination",
+    "Seizure",
+    "Sensorineural hearing impairment",
+    "Severe intellectual disability",
+    "Optic atrophy",
+    "Congenital onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

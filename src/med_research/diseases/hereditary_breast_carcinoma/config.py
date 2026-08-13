@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'hereditary breast carcinoma (HEREDITARY_BREAST_CARCINOMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hereditary breast carcinoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Typified by somatic mosaicism",
+    "Breast carcinoma",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

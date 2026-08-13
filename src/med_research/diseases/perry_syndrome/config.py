@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Perry syndrome (PERRY_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Perry syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Rigidity",
+    "Tremor",
+    "Anxiety",
+    "Insomnia",
+    "Inappropriate behavior",
+    "Weight loss",
+    "Adult onset",
+    "Weak voice",
+    "Rapidly progressive",
+    "Respiratory arrest",
+    "Hypoventilation",
+    "Primitive reflex",
+    "Hyperorality",
+    "Vertical supranuclear gaze palsy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

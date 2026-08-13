@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'congenital unilateral hypoplasia of depressor anguli oris (CON
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital unilateral hypoplasia of depressor anguli oris
-SYMPTOMS = []
+SYMPTOMS = [
+    "Patent ductus arteriosus",
+    "Asymmetric crying face",
+    "Autosomal dominant inheritance",
+    "Congenital onset",
+    "Tetralogy of Fallot",
+    "Ventricular septal defect",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

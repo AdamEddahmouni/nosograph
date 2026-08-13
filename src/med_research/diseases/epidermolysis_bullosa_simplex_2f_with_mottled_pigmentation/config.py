@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'epidermolysis bullosa simplex 2F, with mottled pigmentation (E
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of epidermolysis bullosa simplex 2F, with mottled pigmentation
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nail dystrophy",
+    "Nail dysplasia",
+    "Punctate palmoplantar hyperkeratosis",
+    "Abnormal blistering of the skin",
+    "Discrete 2 to 5-mm hyper- and hypopigmented macules",
+    "Congenital onset",
+    "Hypoplastic fifth toenail",
+    "Infantile onset",
+    "Mottled pigmentation of the trunk and proximal extremities",
+    "Childhood onset",
+    "Autosomal dominant inheritance",
+    "Intra-epidermal blistering",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

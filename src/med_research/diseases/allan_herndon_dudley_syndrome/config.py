@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Allan-Herndon-Dudley syndrome (ALLAN_HERNDON_DUDLEY_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Allan-Herndon-Dudley syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Neonatal hypotonia",
+    "Clonus",
+    "Pectus excavatum",
+    "Delayed CNS myelination",
+    "Leukodystrophy",
+    "Stahl ear",
+    "X-linked recessive inheritance",
+    "Abnormal conjugate eye movement",
+    "Pes planus",
+    "Irritability",
+    "Babinski sign",
+    "Microcephaly",
+    "Athetosis",
+    "Severe global developmental delay",
+    "Ataxia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

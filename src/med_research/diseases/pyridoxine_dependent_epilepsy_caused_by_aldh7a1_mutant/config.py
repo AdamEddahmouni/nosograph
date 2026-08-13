@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'pyridoxine-dependent epilepsy caused by ALDH7A1 mutant (PYRIDO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pyridoxine-dependent epilepsy caused by ALDH7A1 mutant
-SYMPTOMS = []
+SYMPTOMS = [
+    "Status epilepticus",
+    "Global developmental delay",
+    "Hypotonia",
+    "Intellectual disability",
+    "Delayed speech and language development",
+    "Fetal distress",
+    "Autosomal recessive inheritance",
+    "Strabismus",
+    "Elevated circulating pipecolic acid concentration",
+    "Prenatal movement abnormality",
+    "Hydrocephalus",
+    "Bilateral tonic-clonic seizure",
+    "Clonic seizure",
+    "Elevated circulating alpha-aminoadipic semialdehyde concentration",
+    "Generalized myoclonic seizure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

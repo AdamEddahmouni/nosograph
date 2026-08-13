@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'atypical hemolytic-uremic syndrome with MCP/CD46 anomaly (ATYP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of atypical hemolytic-uremic syndrome with MCP/CD46 anomaly
-SYMPTOMS = []
+SYMPTOMS = [
+    "Thrombocytopenia",
+    "Hematuria",
+    "Autosomal recessive inheritance",
+    "Anemia",
+    "Hypertension",
+    "Decreased circulating complement C3 concentration",
+    "Acute kidney injury",
+    "Increased blood urea nitrogen",
+    "Proteinuria",
+    "Microangiopathic hemolytic anemia",
+    "Juvenile onset",
+    "Autosomal dominant inheritance",
+    "Childhood onset",
+    "Anuria",
+    "Hemolytic-uremic syndrome",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

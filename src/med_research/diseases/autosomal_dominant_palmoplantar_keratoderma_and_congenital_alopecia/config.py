@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'autosomal dominant palmoplantar keratoderma and congenital alo
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal dominant palmoplantar keratoderma and congenital alopecia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nail dysplasia",
+    "Brittle hair",
+    "Plantar hyperkeratosis",
+    "Hyperpigmentation of the skin",
+    "Sparse hair",
+    "Congenital onset",
+    "Autosomal dominant inheritance",
+    "Keratosis pilaris",
+    "Hyperkeratosis",
+    "Palmoplantar erythema",
+    "Alopecia",
+    "Palmoplantar keratoderma",
+    "Leukonychia",
+    "Sparse eyebrow",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

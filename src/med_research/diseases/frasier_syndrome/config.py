@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'Frasier syndrome (FRASIER_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Frasier syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ovarian gonadoblastoma",
+    "Proteinuria",
+    "Nephrotic syndrome",
+    "Focal segmental glomerulosclerosis",
+    "Autosomal dominant inheritance",
+    "Male pseudohermaphroditism",
+    "Stage 5 chronic kidney disease",
+    "Gonadal dysgenesis",
+    "Primary amenorrhea",
+    "Typified by somatic mosaicism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

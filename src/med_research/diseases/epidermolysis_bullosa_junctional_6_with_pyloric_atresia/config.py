@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'epidermolysis bullosa, junctional 6, with pyloric atresia (EPI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of epidermolysis bullosa, junctional 6, with pyloric atresia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal blistering of the skin",
+    "Congenital onset",
+    "Aplasia cutis congenita on trunk or limbs",
+    "Oral mucosal blisters",
+    "Microtia",
+    "Aplasia cutis congenita of scalp",
+    "Autosomal recessive inheritance",
+    "Hypoplastic dermoepidermal hemidesmosomes",
+    "Lamina lucida cleavage",
+    "Neonatal death",
+    "Esophageal stenosis",
+    "Congenital pyloric atresia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

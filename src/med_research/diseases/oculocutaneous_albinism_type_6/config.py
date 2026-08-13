@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'oculocutaneous albinism type 6 (OCULOCUTANEOUS_ALBINISM_TYPE_6
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of oculocutaneous albinism type 6
-SYMPTOMS = []
+SYMPTOMS = [
+    "Visual impairment",
+    "Reduced visual acuity",
+    "Generalized hypopigmentation",
+    "Autosomal recessive inheritance",
+    "Nystagmus",
+    "Photophobia",
+    "Fair hair",
+    "Hypoplasia of the fovea",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

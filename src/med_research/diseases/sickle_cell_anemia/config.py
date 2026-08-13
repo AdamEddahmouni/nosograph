@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'sickle cell anemia (SICKLE_CELL_ANEMIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of sickle cell anemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypoxemia",
+    "Jaundice",
+    "Stroke",
+    "Increased total leukocyte count",
+    "Target cells",
+    "Hematuria",
+    "Hepatomegaly",
+    "Recurrent bacterial infections",
+    "Priapism",
+    "Retinopathy",
+    "Splenomegaly",
+    "Hemolytic anemia",
+    "Hypertension",
+    "Splenic infarction",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spondyloepimetaphyseal dysplasia with joint laxity, type 1, wi
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondyloepimetaphyseal dysplasia with joint laxity, type 1, with or without fractures
-SYMPTOMS = []
+SYMPTOMS = [
+    "Myopia",
+    "Flared iliac wing",
+    "Malar flattening",
+    "Short neck",
+    "Paraplegia",
+    "Dislocated radial head",
+    "Broad distal phalanx of finger",
+    "Ovoid vertebral bodies",
+    "Hypotonia",
+    "Joint hypermobility",
+    "Short femoral neck",
+    "Ectopia lentis",
+    "Soft, doughy skin",
+    "Hypoplastic iliac body",
+    "Beaking of vertebral bodies",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

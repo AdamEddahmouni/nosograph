@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autoinflammatory disease, systemic, with vasculitis (AUTOINFLA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autoinflammatory disease, systemic, with vasculitis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased total B cell count",
+    "Epididymitis",
+    "Elevated circulating aspartate aminotransferase concentration",
+    "Rheumatoid factor positive",
+    "Intrauterine growth retardation",
+    "Elevated gamma-glutamyltransferase level",
+    "Cardiomegaly",
+    "Arthralgia",
+    "Erythema",
+    "Increased total leukocyte count",
+    "Conjunctivitis",
+    "Lupus anticoagulant",
+    "Increased total T cell count",
+    "Ascending tubular aorta aneurysm",
+    "Abnormal circulating IgG concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

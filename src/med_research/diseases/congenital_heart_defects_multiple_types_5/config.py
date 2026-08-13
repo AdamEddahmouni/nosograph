@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'congenital heart defects, multiple types, 5 (CONGENITAL_HEART_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital heart defects, multiple types, 5
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dilated cardiomyopathy",
+    "Autosomal dominant inheritance",
+    "Typified by incomplete penetrance",
+    "Tetralogy of Fallot",
+    "Atrial septal defect",
+    "Autosomal recessive inheritance",
+    "Double outlet right ventricle",
+    "Ventricular septal defect",
+    "Aortic valve stenosis",
+    "Congenital onset",
+    "Atrial fibrillation",
+    "Bicuspid aortic valve",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'nephrolithiasis, calcium oxalate, 2, with or without nephrocal
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of nephrolithiasis, calcium oxalate, 2, with or without nephrocalcinosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypocitraturia",
+    "Autosomal dominant inheritance",
+    "Young adult onset",
+    "Juvenile onset",
+    "Hyperoxaluria",
+    "Kidney stone",
+    "Late onset",
+    "Middle age onset",
+    "Nephrocalcinosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

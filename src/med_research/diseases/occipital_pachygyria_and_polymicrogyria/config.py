@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'occipital pachygyria and polymicrogyria (OCCIPITAL_PACHYGYRIA_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of occipital pachygyria and polymicrogyria
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pachygyria",
+    "Bilateral tonic-clonic seizure",
+    "Juvenile onset",
+    "Polymicrogyria",
+    "EEG abnormality",
+    "Global developmental delay",
+    "Autosomal recessive inheritance",
+    "Focal impaired awareness automatism seizure",
+    "Visual loss",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

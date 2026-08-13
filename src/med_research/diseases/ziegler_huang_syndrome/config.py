@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Ziegler-Huang syndrome (ZIEGLER_HUANG_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Ziegler-Huang syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Macrocytic anemia",
+    "Antenatal onset",
+    "Delayed skeletal maturation",
+    "Growth delay",
+    "Intrauterine growth retardation",
+    "Hypogonadism",
+    "Micropenis",
+    "Decreased total neutrophil count",
+    "Elevated circulating follicle stimulating hormone level",
+    "Anterior pituitary hypoplasia",
+    "Cryptorchidism",
+    "Autosomal recessive inheritance",
+    "Bone marrow hypocellularity",
+    "Chiari type I malformation",
+    "Erythroid dysplasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

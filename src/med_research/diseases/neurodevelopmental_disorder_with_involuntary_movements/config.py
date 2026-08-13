@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neurodevelopmental disorder with involuntary movements (NEUROD
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neurodevelopmental disorder with involuntary movements
-SYMPTOMS = []
+SYMPTOMS = [
+    "Self-injurious behavior",
+    "Dystonia",
+    "Involuntary movements",
+    "Bilateral tonic-clonic seizure",
+    "Chorea",
+    "Infantile onset",
+    "Absent speech",
+    "Atrophy/Degeneration affecting the brainstem",
+    "Delayed CNS myelination",
+    "Microcephaly",
+    "Autosomal dominant inheritance",
+    "Ventriculomegaly",
+    "Severe intellectual disability",
+    "Cerebral atrophy",
+    "Spasticity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

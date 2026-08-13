@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'thyroid cancer, nonmedullary, 1 (THYROID_CANCER_NONMEDULLARY_1
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of thyroid cancer, nonmedullary, 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Goiter",
+    "Papillary thyroid carcinoma",
+    "Non-medullary thyroid carcinoma",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

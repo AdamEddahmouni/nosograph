@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'macular corneal dystrophy (MACULAR_CORNEAL_DYSTROPHY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of macular corneal dystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Photophobia",
+    "Abnormality of metabolism/homeostasis",
+    "Autosomal recessive inheritance",
+    "Punctate opacification of the cornea",
+    "Juvenile onset",
+    "Recurrent corneal erosions",
+    "Macular dystrophy",
+    "Corneal dystrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

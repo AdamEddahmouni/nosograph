@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'adenylosuccinate lyase deficiency (ADENYLOSUCCINATE_LYASE_DEFI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of adenylosuccinate lyase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nystagmus",
+    "Long philtrum",
+    "Severe global developmental delay",
+    "Low-set ears",
+    "Aggressive behavior",
+    "Self-mutilation",
+    "CNS hypomyelination",
+    "Wide mouth",
+    "Microcephaly",
+    "Autism",
+    "Anteverted nares",
+    "Global developmental delay",
+    "Intellectual disability",
+    "Opisthotonus",
+    "Hyperactivity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

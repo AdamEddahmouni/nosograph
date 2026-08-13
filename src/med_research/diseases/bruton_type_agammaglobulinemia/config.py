@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Bruton-type agammaglobulinemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Lymph node hypoplasia",
+    "Septic arthritis",
+    "Recurrent sinusitis",
+    "Hepatocellular carcinoma",
+    "Recurrent urinary tract infections",
+    "Decreased circulating IgE concentration",
+    "Prostatitis",
+    "Recurrent infections",
+    "Childhood onset",
+    "Decreased total T cell count",
+    "Recurrent lower respiratory tract infections",
+    "Decreased circulating IgM concentration",
+    "Decreased total B cell count",
+    "Enteroviral hepatitis",
+    "Juvenile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

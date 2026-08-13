@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'mannose-binding lectin deficiency (MANNOSE_BINDING_LECTIN_DEFI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mannose-binding lectin deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Recurrent Klebsiella infection",
+    "Failure to thrive",
+    "Recurrent skin infections",
+    "Recurrent Neisseria meningitidis infection",
+    "Disseminated cryptosporidium infection",
+    "Recurrent herpes",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'cataract 43 (CATARACT_43)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cataract 43
-SYMPTOMS = []
+SYMPTOMS = [
+    "Posterior subcapsular cataract",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

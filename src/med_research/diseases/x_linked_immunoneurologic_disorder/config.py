@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'X-linked immunoneurologic disorder (X_LINKED_IMMUNONEUROLOGIC_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked immunoneurologic disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Progressive proximal muscle weakness",
+    "Decreased circulating IgG2 concentration",
+    "Functional abnormality of the bladder",
+    "Neonatal death",
+    "X-linked dominant inheritance",
+    "Neonatal hypotonia",
+    "Spastic paraplegia",
+    "Brisk reflexes",
+    "Small for gestational age",
+    "Nyctalopia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

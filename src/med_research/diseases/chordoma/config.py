@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'chordoma (CHORDOMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of chordoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Chordoma",
+    "Astrocytoma",
+    "Late onset",
+    "Autosomal dominant inheritance",
+    "Middle age onset",
+    "Young adult onset",
+    "Juvenile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

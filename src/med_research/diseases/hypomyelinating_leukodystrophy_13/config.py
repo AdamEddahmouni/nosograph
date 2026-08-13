@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hypomyelinating leukodystrophy 13 (HYPOMYELINATING_LEUKODYSTRO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypomyelinating leukodystrophy 13
-SYMPTOMS = []
+SYMPTOMS = [
+    "Axial hypotonia",
+    "Infantile onset",
+    "Feeding difficulties",
+    "Joint contracture",
+    "Failure to thrive",
+    "Delayed CNS myelination",
+    "Ataxia",
+    "Abnormal periventricular white matter morphology",
+    "Secondary microcephaly",
+    "Absent speech",
+    "Hyperreflexia",
+    "Lower limb spasticity",
+    "Irritability",
+    "Leukodystrophy",
+    "Exaggerated startle response",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

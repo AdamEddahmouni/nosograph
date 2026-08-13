@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'X-linked intellectual disability-retinitis pigmentosa syndrome
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked intellectual disability-retinitis pigmentosa syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Progeroid facial appearance",
+    "Horizontal nystagmus",
+    "Cryptorchidism",
+    "Attenuation of retinal blood vessels",
+    "X-linked recessive inheritance",
+    "Pigmentary retinopathy",
+    "Moderate myopia",
+    "Visual impairment",
+    "Childhood onset",
+    "Intellectual disability",
+    "Posterior subcapsular cataract",
+    "Global developmental delay",
+    "Asthma",
+    "Rotary nystagmus",
+    "Bilateral tonic-clonic seizure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

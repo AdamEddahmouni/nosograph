@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'grange syndrome (GRANGE_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of grange syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Renovascular hypertension",
+    "Autosomal recessive inheritance",
+    "Intellectual disability",
+    "Finger clinodactyly",
+    "Recurrent fractures",
+    "Increased susceptibility to fractures",
+    "Brachydactyly",
+    "Renal artery stenosis",
+    "Syndactyly",
+    "Bicuspid aortic valve",
+    "Decreased body weight",
+    "Coronary artery stenosis",
+    "Carotid artery stenosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

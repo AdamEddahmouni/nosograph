@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'microcephalic osteodysplastic primordial dwarfism type I (MICR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of microcephalic osteodysplastic primordial dwarfism type I
-SYMPTOMS = []
+SYMPTOMS = [
+    "Brachydactyly",
+    "Disproportionate short stature",
+    "Microcephaly",
+    "Sparse eyebrow",
+    "Renal hypoplasia",
+    "Preaxial polydactyly",
+    "Lateral ventricle dilatation",
+    "Abnormal cortical gyration",
+    "Oligohydramnios",
+    "Round face",
+    "Sparse eyelashes",
+    "Flexion contracture",
+    "Elbow dislocation",
+    "Muscular ventricular septal defect",
+    "Short humerus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

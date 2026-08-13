@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'pancytopenia-developmental delay syndrome (PANCYTOPENIA_DEVELO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pancytopenia-developmental delay syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Juvenile onset",
+    "Neonatal hypotonia",
+    "Early young adult onset",
+    "Anemia",
+    "Cutaneous photosensitivity",
+    "Decreased total leukocyte count",
+    "Bone marrow hypocellularity",
+    "Thrombocytopenia",
+    "Microcephaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

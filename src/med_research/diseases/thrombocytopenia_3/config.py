@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'thrombocytopenia 3 (THROMBOCYTOPENIA_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of thrombocytopenia 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Childhood onset",
+    "Gingival bleeding",
+    "Spontaneous hematomas",
+    "Infantile onset",
+    "Menorrhagia",
+    "Abnormal bleeding",
+    "Megakaryocytopenia",
+    "Prolonged bleeding time",
+    "Juvenile onset",
+    "Petechiae",
+    "Autosomal recessive inheritance",
+    "Abnormal megakaryocyte morphology",
+    "Thrombocytopenia",
+    "Epistaxis",
+    "Purpura",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

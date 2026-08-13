@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'agammaglobulinemia 7, autosomal recessive (AGAMMAGLOBULINEMIA_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of agammaglobulinemia 7, autosomal recessive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Panhypogammaglobulinemia",
+    "Abnormal T cell morphology",
+    "Infantile onset",
+    "Decreased total neutrophil count",
+    "Reduced total natural killer cell count",
+    "Recurrent infections",
+    "Agammaglobulinemia",
+    "Recurrent respiratory infections",
+    "Erythema nodosum",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

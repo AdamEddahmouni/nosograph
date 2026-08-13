@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'Richieri Costa-da Silva syndrome (RICHIERI_COSTA_DA_SILVA_SYND
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Richieri Costa-da Silva syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Kyphoscoliosis",
+    "Autosomal recessive inheritance",
+    "Bell-shaped thorax",
+    "Myotonia",
+    "Short stature",
+    "Vertebral wedging",
+    "Irregular femoral epiphysis",
+    "Genu valgum",
+    "Skeletal muscle hypertrophy",
+    "Pectus carinatum",
+    "Firm muscles",
+    "Mild intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

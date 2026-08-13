@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'isolated hyperchlorhidrosis (ISOLATED_HYPERCHLORHIDROSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of isolated hyperchlorhidrosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Infantile onset",
+    "Feeding difficulties",
+    "Autosomal recessive inheritance",
+    "Hyponatremia",
+    "Hyperkalemia",
+    "Failure to thrive",
+    "Hypernatremic dehydration",
+    "Elevated sweat chloride",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

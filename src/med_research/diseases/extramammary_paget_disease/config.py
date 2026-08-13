@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'Extramammary Paget Disease (EXTRAMAMMARY_PAGET_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Extramammary Paget Disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Neoplasm",
+    "Eczematoid dermatitis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

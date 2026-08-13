@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Charcot-Marie-Tooth disease type 3 (CHARCOT_MARIE_TOOTH_DISEAS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Charcot-Marie-Tooth disease type 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ulnar claw",
+    "Distal lower limb muscle weakness",
+    "Scoliosis",
+    "Distal muscle weakness",
+    "Foot dorsiflexor weakness",
+    "Broad-based gait",
+    "Increased CSF protein concentration",
+    "Motor delay",
+    "Decreased number of peripheral myelinated nerve fibers",
+    "Hypotonia",
+    "Hypertrophic nerve changes",
+    "Sensory ataxia",
+    "Pes cavus",
+    "Autosomal recessive inheritance",
+    "Nystagmus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'pili torti (PILI_TORTI)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pili torti
-SYMPTOMS = []
+SYMPTOMS = [
+    "Enamel hypoplasia",
+    "Dry hair",
+    "Brittle hair",
+    "Autosomal dominant inheritance",
+    "Hair shafts flattened at irregular intervals and twisted through 180 degrees about their axes",
+    "Coarse hair",
+    "Sporadic",
+    "Pili torti",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

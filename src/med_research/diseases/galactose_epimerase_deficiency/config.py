@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'galactose epimerase deficiency (GALACTOSE_EPIMERASE_DEFICIENCY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of galactose epimerase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Vomiting",
+    "Global developmental delay",
+    "Decreased beta-galactosidase activity",
+    "Sensorineural hearing impairment",
+    "Failure to thrive",
+    "Splenomegaly",
+    "Hepatomegaly",
+    "Jaundice",
+    "Delayed gross motor development",
+    "Generalized hypotonia",
+    "Hypergalactosemia",
+    "Aminoaciduria",
+    "Intellectual disability",
+    "Hypotonia",
+    "Galactosuria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

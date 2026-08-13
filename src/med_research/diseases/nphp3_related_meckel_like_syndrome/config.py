@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'NPHP3-related Meckel-like syndrome (NPHP3_RELATED_MECKEL_LIKE_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of NPHP3-related Meckel-like syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Atrial septal defect",
+    "Aortic valve stenosis",
+    "Right ventricular hypertrophy",
+    "Multicystic kidney dysplasia",
+    "Multiple glomerular cysts",
+    "Hypertonia",
+    "Stage 5 chronic kidney disease",
+    "Oligohydramnios",
+    "Large fontanelles",
+    "Portal hypertension",
+    "Pancreatic cysts",
+    "Autosomal recessive inheritance",
+    "Cholestasis",
+    "High forehead",
+    "Patent ductus arteriosus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

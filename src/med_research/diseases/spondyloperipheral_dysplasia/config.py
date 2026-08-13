@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spondyloperipheral dysplasia (SPONDYLOPERIPHERAL_DYSPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondyloperipheral dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short distal phalanx of the 2nd finger",
+    "Midface retrusion",
+    "Autosomal dominant inheritance",
+    "Ovoid vertebral bodies",
+    "Kyphosis",
+    "Short foot",
+    "Short distal phalanx of finger",
+    "Limited elbow extension",
+    "Short thumb",
+    "Irregular vertebral endplates",
+    "Short neck",
+    "Sensorineural hearing impairment",
+    "Platyspondyly",
+    "Barrel-shaped chest",
+    "Flat acetabular roof",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

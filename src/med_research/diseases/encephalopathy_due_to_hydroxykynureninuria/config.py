@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'encephalopathy due to hydroxykynureninuria (ENCEPHALOPATHY_DUE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of encephalopathy due to hydroxykynureninuria
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Elevated urinary 3-hydroxykynurenine level",
+    "Vomiting",
+    "Neonatal onset",
+    "Jaundice",
+    "Elevated urinary xanthurenic acid level",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

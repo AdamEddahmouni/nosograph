@@ -8,8 +8,19 @@ PIPELINE_LABEL = "Morphea (MORPHEA)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Morphea
-SYMPTOMS = []
+SYMPTOMS = [
+    "Childhood onset",
+    "Decreased total neutrophil count",
+    "Squamous cell carcinoma of the skin",
+    "Decreased total lymphocyte count",
+    "Autosomal dominant inheritance",
+    "Oral ulcer",
+    "Morphea",
+    "Joint contracture",
+    "Recurrent infections",
+    "Skin ulcer",
+    "Elevated circulating C-reactive protein concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

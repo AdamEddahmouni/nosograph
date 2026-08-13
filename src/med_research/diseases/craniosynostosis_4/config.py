@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'craniosynostosis 4 (CRANIOSYNOSTOSIS_4)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of craniosynostosis 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Metopic synostosis",
+    "Chiari type I malformation",
+    "Lambdoidal craniosynostosis",
+    "Infantile onset",
+    "Increased intracranial pressure",
+    "Ectopic posterior pituitary",
+    "Diminished ability to concentrate",
+    "Prominent forehead",
+    "Macrocephaly",
+    "Optic nerve hypoplasia",
+    "Retrognathia",
+    "Bicoronal synostosis",
+    "Midface retrusion",
+    "Coronal craniosynostosis",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

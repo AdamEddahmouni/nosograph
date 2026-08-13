@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Fontaine progeroid syndrome (FONTAINE_PROGEROID_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Fontaine progeroid syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Prominent superficial veins",
+    "Anonychia",
+    "Deep palmar crease",
+    "Hypoplasia of the corpus callosum",
+    "Underdeveloped supraorbital ridges",
+    "Low posterior hairline",
+    "Low anterior hairline",
+    "Thin upper lip vermilion",
+    "Protruding tongue",
+    "Microdontia",
+    "Sparse scalp hair",
+    "Microphthalmia",
+    "Autosomal dominant inheritance",
+    "Retrognathia",
+    "Micrognathia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

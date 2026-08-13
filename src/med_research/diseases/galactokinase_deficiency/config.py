@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'galactokinase deficiency (GALACTOKINASE_DEFICIENCY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of galactokinase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Prolonged neonatal jaundice",
+    "Reduced erythrocyte galactokinase activity",
+    "Autosomal recessive inheritance",
+    "Galactosuria",
+    "Cataract",
+    "Hypergalactosemia",
+    "Increased intracranial pressure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

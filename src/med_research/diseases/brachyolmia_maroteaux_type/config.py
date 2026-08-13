@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'brachyolmia, Maroteaux type (BRACHYOLMIA_MAROTEAUX_TYPE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of brachyolmia, Maroteaux type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Platyspondyly",
+    "Short stature",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'tetramelic monodactyly (TETRAMELIC_MONODACTYLY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of tetramelic monodactyly
-SYMPTOMS = []
+SYMPTOMS = [
+    "Split hand",
+    "Split foot",
+    "Autosomal dominant inheritance",
+    "Foot monodactyly",
+    "Hand monodactyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

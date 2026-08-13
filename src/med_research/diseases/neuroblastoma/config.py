@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Neuroblastoma (NEUROBLASTOMA)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Neuroblastoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Typified by somatic mosaicism",
+    "Failure to thrive",
+    "Abnormality of urine catecholamine level",
+    "Hypertension",
+    "Fever",
+    "Elevated urinary dopamine level",
+    "Aganglionic megacolon",
+    "Autosomal dominant inheritance",
+    "Mediastinal mass",
+    "Diarrhea",
+    "Ganglioneuroblastoma",
+    "Ganglioneuroma",
+    "Skin nodule",
+    "Abdominal pain",
+    "Elevated urinary vanillylmandelic acid",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

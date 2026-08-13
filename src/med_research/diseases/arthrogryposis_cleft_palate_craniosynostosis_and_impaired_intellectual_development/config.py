@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'arthrogryposis, cleft palate, craniosynostosis, and impaired i
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of arthrogryposis, cleft palate, craniosynostosis, and impaired intellectual development
-SYMPTOMS = []
+SYMPTOMS = [
+    "Craniosynostosis",
+    "Vesicoureteral reflux",
+    "Autosomal dominant inheritance",
+    "Intellectual disability",
+    "Micrognathia",
+    "Retrognathia",
+    "Short stature",
+    "Congenital onset",
+    "Nonimmune hydrops fetalis",
+    "Slender long bone",
+    "Hydronephrosis",
+    "Decreased body weight",
+    "Decreased calvarial ossification",
+    "Third trimester onset",
+    "Plagiocephaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

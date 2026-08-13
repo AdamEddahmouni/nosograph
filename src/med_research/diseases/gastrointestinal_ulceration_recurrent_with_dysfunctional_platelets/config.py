@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'gastrointestinal ulceration, recurrent, with dysfunctional pla
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of gastrointestinal ulceration, recurrent, with dysfunctional platelets
-SYMPTOMS = []
+SYMPTOMS = [
+    "Impaired platelet aggregation",
+    "Decreased serum thromboxane B2",
+    "Decreased circulating 12-HETE",
+    "Iron deficiency anemia",
+    "Abnormal circulating eicosanoid concentration",
+    "Gastric ulcer",
+    "Esophageal ulceration",
+    "Autosomal recessive inheritance",
+    "Duodenal ulcer",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

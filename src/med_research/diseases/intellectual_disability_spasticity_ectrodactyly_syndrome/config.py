@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'intellectual disability-spasticity-ectrodactyly syndrome (INTE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of intellectual disability-spasticity-ectrodactyly syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Split hand",
+    "Autosomal recessive inheritance",
+    "Spastic paraplegia",
+    "Intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

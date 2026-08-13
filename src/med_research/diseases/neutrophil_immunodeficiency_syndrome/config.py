@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'neutrophil immunodeficiency syndrome (NEUTROPHIL_IMMUNODEFICIE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neutrophil immunodeficiency syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased total leukocyte count",
+    "Macrocytic anemia",
+    "Neonatal omphalitis",
+    "Increased total neutrophil count",
+    "Poor wound healing",
+    "Delayed umbilical cord separation",
+    "Decreased neutrophil oxidative burst",
+    "Autosomal dominant inheritance",
+    "Reduction of neutrophil motility",
+    "Abnormally low T cell receptor excision circle level",
+    "Urachal cyst",
+    "Rectal abscess",
+    "Impaired neutrophil chemotaxis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

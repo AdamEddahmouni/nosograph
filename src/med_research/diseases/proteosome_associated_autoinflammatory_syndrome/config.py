@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'proteosome-associated autoinflammatory syndrome (PROTEOSOME_AS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of proteosome-associated autoinflammatory syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Failure to thrive",
+    "Growth delay",
+    "Erythema",
+    "Arthralgia",
+    "Infantile onset",
+    "Adipose tissue loss",
+    "Autosomal recessive inheritance",
+    "Splenomegaly",
+    "Lipodystrophy",
+    "Long fingers",
+    "Progeroid facial appearance",
+    "Protuberant abdomen",
+    "Proptosis",
+    "Impaired glucose tolerance",
+    "Hallux valgus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'osteopenia-intellectual disability-sparse hair syndrome (OSTEO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of osteopenia-intellectual disability-sparse hair syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sparse hair",
+    "Osteopenia",
+    "Joint hypermobility",
+    "Abnormality of the face",
+    "Intellectual disability",
+    "Hypotonia",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Griscelli syndrome type 2 (GRISCELLI_SYNDROME_TYPE_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Griscelli syndrome type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Spasticity",
+    "Accumulation of melanosomes in melanocytes",
+    "Reduced delayed hypersensitivity",
+    "Infantile onset",
+    "Autosomal recessive inheritance",
+    "Progressive neurologic deterioration",
+    "Melanin pigment aggregation in hair shafts",
+    "Recurrent bacterial infections",
+    "Hepatosplenomegaly",
+    "Hemophagocytosis",
+    "Hypopigmentation of the skin",
+    "Fever",
+    "Seizure",
+    "Death in childhood",
+    "Silver-gray hair",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

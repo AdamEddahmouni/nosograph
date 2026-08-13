@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Yao syndrome (YAO_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Yao syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Oral ulcer",
+    "Keratoconjunctivitis sicca",
+    "Skin rash",
+    "Non-Mendelian inheritance",
+    "Inflammatory abnormality of the skin",
+    "Myalgia",
+    "Uveitis",
+    "Arthritis",
+    "Elevated erythrocyte sedimentation rate",
+    "Abdominal pain",
+    "Xerostomia",
+    "Weight loss",
+    "Chest pain",
+    "Ventricular hypertrophy",
+    "Kidney stone",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

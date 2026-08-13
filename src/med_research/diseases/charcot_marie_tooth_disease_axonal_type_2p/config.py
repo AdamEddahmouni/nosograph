@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Charcot-Marie-Tooth disease axonal type 2P (CHARCOT_MARIE_TOOT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Charcot-Marie-Tooth disease axonal type 2P
-SYMPTOMS = []
+SYMPTOMS = [
+    "Distal amyotrophy",
+    "Autosomal recessive inheritance",
+    "Autosomal dominant inheritance",
+    "Impaired distal vibration sensation",
+    "Decreased motor nerve conduction velocity",
+    "Distal muscle weakness",
+    "Hyporeflexia",
+    "Fasciculations",
+    "Hammertoe",
+    "Typified by incomplete penetrance",
+    "Areflexia",
+    "Foot dorsiflexor weakness",
+    "Tip-toe gait",
+    "Axonal degeneration",
+    "Slowly progressive",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'syndactyly type 1 (SYNDACTYLY_TYPE_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of syndactyly type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "3-4 finger cutaneous syndactyly",
+    "2-3 toe syndactyly",
+    "Congenital onset",
+    "Autosomal dominant inheritance",
+    "Sagittal craniosynostosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

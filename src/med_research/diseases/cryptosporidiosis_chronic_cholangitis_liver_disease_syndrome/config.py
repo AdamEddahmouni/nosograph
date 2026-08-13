@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'cryptosporidiosis-chronic cholangitis-liver disease syndrome (
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cryptosporidiosis-chronic cholangitis-liver disease syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Chronic diarrhea",
+    "Childhood onset",
+    "Cholangitis",
+    "Chronic hepatitis due to cryptosporidium infection",
+    "Recurrent infection of the gastrointestinal tract",
+    "Panhypogammaglobulinemia",
+    "Cirrhosis",
+    "Immunodeficiency",
+    "Autosomal recessive inheritance",
+    "Bronchiectasis",
+    "Failure to thrive",
+    "Recurrent infections",
+    "Recurrent pneumonia",
+    "Pneumocystis jirovecii pneumonia",
+    "Hepatic failure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

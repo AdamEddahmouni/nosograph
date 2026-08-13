@@ -8,8 +8,17 @@ PIPELINE_LABEL = "cystinuria (CYSTINURIA)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cystinuria
-SYMPTOMS = []
+SYMPTOMS = [
+    "Argininuria",
+    "Renal insufficiency",
+    "Ornithinuria",
+    "Hyperlysinuria",
+    "Autosomal recessive inheritance",
+    "Cystinuria",
+    "Kidney stone",
+    "Autosomal dominant inheritance",
+    "Recurrent urinary tract infections",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

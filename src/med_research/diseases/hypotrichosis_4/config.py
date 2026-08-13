@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'hypotrichosis 4 (HYPOTRICHOSIS_4)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypotrichosis 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sparse body hair",
+    "Autosomal dominant inheritance",
+    "Sparse eyebrow",
+    "Uncombable hair",
+    "Congenital onset",
+    "Sparse scalp hair",
+    "Sparse eyelashes",
+    "Alopecia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

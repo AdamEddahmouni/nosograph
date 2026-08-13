@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'familial infantile bilateral striatal necrosis (FAMILIAL_INFAN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial infantile bilateral striatal necrosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pendular nystagmus",
+    "Autosomal recessive inheritance",
+    "Infantile onset",
+    "Developmental stagnation",
+    "Developmental regression",
+    "Intellectual disability",
+    "Optic atrophy",
+    "Choreoathetosis",
+    "Spasticity",
+    "Dystonia",
+    "Childhood onset",
+    "Dysphagia",
+    "Failure to thrive",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

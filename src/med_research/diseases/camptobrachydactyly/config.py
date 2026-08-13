@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'camptobrachydactyly (CAMPTOBRACHYDACTYLY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of camptobrachydactyly
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital finger flexion contractures",
+    "Autosomal dominant inheritance",
+    "Urinary incontinence",
+    "Syndactyly",
+    "Short toe",
+    "Brachydactyly",
+    "Hand polydactyly",
+    "Septate vagina",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'pituitary hormone deficiency, combined or isolated, 8 (PITUITA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pituitary hormone deficiency, combined or isolated, 8
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased circulating insulin-like growth factor 1 concentration",
+    "Autosomal dominant inheritance",
+    "Decreased circulating luteinizing hormone level",
+    "Interrupted pituitary stalk",
+    "Decreased circulating ACTH concentration",
+    "Decreased circulating follicle stimulating hormone concentration",
+    "Ptosis",
+    "Strabismus",
+    "Reduced circulating growth hormone concentration",
+    "Absent pituitary stalk",
+    "Decreased thyroid-stimulating hormone level",
+    "Ectopic posterior pituitary",
+    "Anterior pituitary agenesis",
+    "Anterior pituitary hypoplasia",
+    "Hypermetropia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

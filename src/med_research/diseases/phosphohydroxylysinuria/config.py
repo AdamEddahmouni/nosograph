@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'phosphohydroxylysinuria (PHOSPHOHYDROXYLYSINURIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of phosphohydroxylysinuria
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated urinary phosphohydroxylysine level",
+    "Phosphohydroxylysinuria",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

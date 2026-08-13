@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'coloboma, ocular, autosomal dominant (COLOBOMA_OCULAR_AUTOSOMA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of coloboma, ocular, autosomal dominant
-SYMPTOMS = []
+SYMPTOMS = [
+    "Reduced visual acuity",
+    "Microphthalmia",
+    "Growth delay",
+    "Vesicoureteral reflux",
+    "Chorioretinal coloboma",
+    "Ventriculomegaly",
+    "Morning glory anomaly",
+    "Remnants of the hyaloid vascular system",
+    "Corneal opacity",
+    "Autosomal dominant inheritance",
+    "Optic disc coloboma",
+    "Nystagmus",
+    "Optic nerve aplasia",
+    "Peters anomaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

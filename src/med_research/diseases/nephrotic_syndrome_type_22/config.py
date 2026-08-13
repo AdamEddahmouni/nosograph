@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'nephrotic syndrome, type 22 (NEPHROTIC_SYNDROME_TYPE_22)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of nephrotic syndrome, type 22
-SYMPTOMS = []
+SYMPTOMS = [
+    "Stage 5 chronic kidney disease",
+    "Infantile onset",
+    "Podocyte foot process effacement",
+    "Glomerular sclerosis",
+    "Generalized edema",
+    "Nephrotic syndrome",
+    "Microscopic hematuria",
+    "Hypoproteinemia",
+    "Autosomal recessive inheritance",
+    "Neonatal onset",
+    "Nephrotic range proteinuria",
+    "Thickened glomerular basement membrane",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

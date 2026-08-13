@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'congenital muscular dystrophy-respiratory failure-skin abnorma
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital muscular dystrophy-respiratory failure-skin abnormalities-joint hyperlaxity syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "High palate",
+    "Neonatal onset",
+    "Feeding difficulties",
+    "Neck muscle weakness",
+    "Follicular hyperkeratosis",
+    "Angulated muscle fibers",
+    "Hypotonia",
+    "Congenital onset",
+    "Increased variability in muscle fiber diameter",
+    "Pectus excavatum",
+    "Muscular dystrophy",
+    "Increased endomysial connective tissue",
+    "Inability to walk",
+    "Motor delay",
+    "Joint hypermobility",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

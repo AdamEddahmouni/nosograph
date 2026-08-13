@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'congenital macroglossia (CONGENITAL_MACROGLOSSIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital macroglossia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Macroglossia",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

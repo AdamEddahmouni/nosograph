@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'polydactyly, postaxial, type A1 (POLYDACTYLY_POSTAXIAL_TYPE_A1
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of polydactyly, postaxial, type A1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Global developmental delay",
+    "Intellectual disability",
+    "Cutaneous syndactyly of toes",
+    "Growth delay",
+    "Preaxial hand polydactyly",
+    "Nail dysplasia",
+    "Triphalangeal thumb",
+    "Cutaneous finger syndactyly",
+    "Broad hallux",
+    "Postaxial foot polydactyly",
+    "Syndactyly",
+    "Congenital onset",
+    "Broad thumb",
+    "Preaxial polydactyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

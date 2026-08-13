@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'ceroid lipofuscinosis, neuronal, 6A (CEROID_LIPOFUSCINOSIS_NEU
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ceroid lipofuscinosis, neuronal, 6A
-SYMPTOMS = []
+SYMPTOMS = [
+    "Retinal degeneration",
+    "Seizure",
+    "Increased neuronal autofluorescent lipopigment",
+    "Fingerprint intracellular accumulation of autofluorescent lipopigment storage material",
+    "Progressive visual loss",
+    "Motor deterioration",
+    "Autosomal recessive inheritance",
+    "Abnormal nervous system electrophysiology",
+    "Curvilinear intracellular accumulation of autofluorescent lipopigment storage material",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

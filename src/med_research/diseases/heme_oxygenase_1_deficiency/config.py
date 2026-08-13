@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'heme oxygenase 1 deficiency (HEME_OXYGENASE_1_DEFICIENCY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of heme oxygenase 1 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased circulating lactate dehydrogenase concentration",
+    "Global developmental delay",
+    "Lymphadenopathy",
+    "Chemosis",
+    "Thrombocytosis",
+    "Proteinuria",
+    "Coombs-positive hemolytic anemia",
+    "Diffuse alveolar hemorrhage",
+    "Epistaxis",
+    "Sepsis",
+    "Elevated circulating aspartate aminotransferase concentration",
+    "Hemolytic anemia",
+    "Increased circulating interleukin 6 concentration",
+    "Elevated circulating alanine aminotransferase concentration",
+    "Hepatomegaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'ichthyosis histrix, Lambert type (ICHTHYOSIS_HISTRIX_LAMBERT_T
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ichthyosis histrix, Lambert type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperkeratosis",
+    "Abnormal blistering of the skin",
+    "Orthokeratotic hyperkeratosis",
+    "Autosomal dominant inheritance",
+    "Infantile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

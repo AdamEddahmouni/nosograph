@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'isovaleric acidemia (ISOVALERIC_ACIDEMIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of isovaleric acidemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ketoacidosis",
+    "Vomiting",
+    "Lethargy",
+    "Pancytopenia",
+    "Elevated urinary isovalerylglycine level",
+    "Autosomal recessive inheritance",
+    "Decreased total leukocyte count",
+    "Seizure",
+    "Metabolic acidosis",
+    "Hyperglycinuria",
+    "Sweaty foot-like odor",
+    "Dehydration",
+    "Cerebellar hemorrhage",
+    "Coma",
+    "Global developmental delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

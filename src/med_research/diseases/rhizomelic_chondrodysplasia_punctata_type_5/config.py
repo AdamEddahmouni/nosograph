@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'rhizomelic chondrodysplasia punctata type 5 (RHIZOMELIC_CHONDR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of rhizomelic chondrodysplasia punctata type 5
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital onset",
+    "Skeletal muscle atrophy",
+    "Growth delay",
+    "Sinus tachycardia",
+    "Pes cavus",
+    "Convulsive status epilepticus",
+    "Vertical nystagmus",
+    "Metaphyseal cupping",
+    "Coxa vara",
+    "Short femoral neck",
+    "Narrow iliac wing",
+    "Broad-based gait",
+    "Severe intellectual disability",
+    "Hyporeflexia",
+    "Contractures of the large joints",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

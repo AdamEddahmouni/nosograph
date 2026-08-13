@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'amelogenesis imperfecta type 3B (AMELOGENESIS_IMPERFECTA_TYPE_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of amelogenesis imperfecta type 3B
-SYMPTOMS = []
+SYMPTOMS = [
+    "Enamel hypomineralization",
+    "Infantile onset",
+    "Amelogenesis imperfecta",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

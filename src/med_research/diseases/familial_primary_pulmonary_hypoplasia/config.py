@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'familial primary pulmonary hypoplasia (FAMILIAL_PRIMARY_PULMON
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial primary pulmonary hypoplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Pulmonary hypoplasia",
+    "Neonatal death",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'cardiac malformation, cleft lip/palate, microcephaly, and digi
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cardiac malformation, cleft lip/palate, microcephaly, and digital anomalies
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autistic behavior",
+    "Perimembranous ventricular septal defect",
+    "Deeply set eye",
+    "Upslanted palpebral fissure",
+    "High anterior hairline",
+    "Feeding difficulties",
+    "Atrial septal defect",
+    "Congenital onset",
+    "Laterally extended eyebrow",
+    "Broad hallux",
+    "Highly arched eyebrow",
+    "Narrow forehead",
+    "Low-set ears",
+    "Thin upper lip vermilion",
+    "Short stature",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'facioscapulohumeral muscular dystrophy 4, digenic (FACIOSCAPUL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of facioscapulohumeral muscular dystrophy 4, digenic
-SYMPTOMS = []
+SYMPTOMS = [
+    "Weakness of facial musculature",
+    "Adult onset",
+    "Upper limb muscle weakness",
+    "Digenic inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autosomal recessive faciodigitogenital syndrome (AUTOSOMAL_REC
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal recessive faciodigitogenital syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Posteriorly rotated ears",
+    "Abnormal rib cage morphology",
+    "Metatarsus adductus",
+    "Narrow palate",
+    "Proportionate short stature",
+    "Down-sloping shoulders",
+    "Syndactyly",
+    "Long neck",
+    "Short nose",
+    "Shawl scrotum",
+    "Anteverted nares",
+    "Prominent nasal bridge",
+    "Intellectual disability",
+    "Broad palm",
+    "Short foot",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

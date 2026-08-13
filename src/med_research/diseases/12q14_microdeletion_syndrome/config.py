@@ -8,8 +8,11 @@ PIPELINE_LABEL = '12q14 microdeletion syndrome (12Q14_MICRODELETION_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of 12q14 microdeletion syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Osteopoikilosis",
+    "Intellectual disability",
+    "Proportionate short stature",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

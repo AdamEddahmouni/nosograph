@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of acromesomelic dysplasia 1, Maroteaux type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Broad finger",
+    "Disproportionate short-limb short stature",
+    "Cone-shaped epiphyses of the phalanges of the hand",
+    "Intellectual disability",
+    "Thoracolumbar kyphosis",
+    "Beaking of vertebral bodies",
+    "Long hallux",
+    "Thoracolumbar interpediculate narrowness",
+    "Lumbar hyperlordosis",
+    "Frontal bossing",
+    "Ovoid vertebral bodies",
+    "Lower thoracic kyphosis",
+    "Short metatarsal",
+    "Limited elbow extension",
+    "Short toe",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

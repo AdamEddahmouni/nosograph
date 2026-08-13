@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'congenital laryngomalacia (CONGENITAL_LARYNGOMALACIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital laryngomalacia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Laryngomalacia",
+    "Respiratory distress",
+    "Abnormal tracheal morphology",
+    "Autosomal dominant inheritance",
+    "Congenital laryngeal stridor",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

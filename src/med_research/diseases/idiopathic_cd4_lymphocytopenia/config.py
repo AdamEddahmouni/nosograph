@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'idiopathic CD4 lymphocytopenia (IDIOPATHIC_CD4_LYMPHOCYTOPENIA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of idiopathic CD4 lymphocytopenia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased total lymphocyte count",
+    "HP_0005407",
+    "Recurrent otitis media",
+    "Recurrent sinusitis",
+    "Recurrent upper respiratory tract infections",
+    "Bronchiectasis",
+    "Decreased total T cell count",
+    "Nasal polyposis",
+    "Immunodeficiency",
+    "Recurrent shingles",
+    "Recurrent pneumonia",
+    "Inverted CD4:CD8 ratio",
+    "Decreased total B cell count",
+    "Autosomal dominant inheritance",
+    "Bronchiolitis obliterans organizing pneumonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'muscular dystrophy-dystroglycanopathy type B5 (MUSCULAR_DYSTRO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of muscular dystrophy-dystroglycanopathy type B5
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital onset",
+    "Macroglossia",
+    "Shoulder girdle muscle weakness",
+    "EMG: myopathic abnormalities",
+    "Calf muscle hypertrophy",
+    "Cerebellar cyst",
+    "Elbow contracture",
+    "Dysphagia",
+    "Achilles tendon contracture",
+    "Generalized muscle weakness",
+    "Autosomal recessive inheritance",
+    "Proximal amyotrophy",
+    "Difficulty climbing stairs",
+    "Muscular dystrophy",
+    "Proximal muscle weakness",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

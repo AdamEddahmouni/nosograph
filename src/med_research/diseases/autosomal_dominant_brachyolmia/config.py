@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'autosomal dominant brachyolmia (AUTOSOMAL_DOMINANT_BRACHYOLMIA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal dominant brachyolmia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Spinal cord compression",
+    "Barrel-shaped chest",
+    "Scoliosis",
+    "Clinodactyly",
+    "Short femoral neck",
+    "Childhood-onset short-trunk short stature",
+    "Radial deviation of finger",
+    "Hypermetropia",
+    "Short neck",
+    "Intellectual disability",
+    "Platyspondyly",
+    "Proximal femoral metaphyseal irregularity",
+    "Kyphosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

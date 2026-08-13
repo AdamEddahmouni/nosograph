@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'congenital lobar emphysema (CONGENITAL_LOBAR_EMPHYSEMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital lobar emphysema
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Bronchial cartilage hypoplasia",
+    "Respiratory distress",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

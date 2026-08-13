@@ -8,8 +8,12 @@ PIPELINE_LABEL = "pseudotumor cerebri (IDIOPATHIC_INTRACRANIAL_HYPERTENSION)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pseudotumor cerebri
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypertension",
+    "Autosomal recessive inheritance",
+    "Increased intracranial pressure",
+    "Papilledema",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

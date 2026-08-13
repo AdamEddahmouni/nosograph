@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'pyruvate dehydrogenase E3 deficiency (PYRUVATE_DEHYDROGENASE_E
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pyruvate dehydrogenase E3 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Global developmental delay",
+    "Microcephaly",
+    "Encephalopathy",
+    "Lethargy",
+    "Lactic acidosis",
+    "Increased CSF isoleucine concentration",
+    "Hypoglycemia",
+    "Seizure",
+    "Hepatomegaly",
+    "Infantile onset",
+    "Autosomal recessive inheritance",
+    "Hypotonia",
+    "Feeding difficulties",
+    "Hypertrophic cardiomyopathy",
+    "Ataxia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

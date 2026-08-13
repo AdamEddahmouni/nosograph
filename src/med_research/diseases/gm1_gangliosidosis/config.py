@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'GM1 gangliosidosis (GM1_GANGLIOSIDOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of GM1 gangliosidosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cherry red spot of the macula",
+    "Angiokeratoma corporis diffusum",
+    "Diffuse cerebral atrophy",
+    "Slurred speech",
+    "Sea-blue histiocytosis",
+    "Short stature",
+    "Platyspondyly",
+    "Thoracolumbar kyphosis",
+    "Narrow mouth",
+    "Intellectual disability",
+    "Dysarthria",
+    "Global developmental delay",
+    "Myoclonus",
+    "Anterior beaking of lumbar vertebrae",
+    "Kyphosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

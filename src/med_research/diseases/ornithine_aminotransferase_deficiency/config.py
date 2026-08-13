@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'ornithine aminotransferase deficiency (ORNITHINE_AMINOTRANSFER
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ornithine aminotransferase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Myopia",
+    "Proximal muscle weakness",
+    "Macular thickening",
+    "Autosomal recessive inheritance",
+    "Visual impairment",
+    "Foveoschisis",
+    "Posterior subcapsular cataract",
+    "EMG abnormality",
+    "Chorioretinal atrophy",
+    "Nyctalopia",
+    "Blindness",
+    "Hyperornithinemia",
+    "Childhood onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

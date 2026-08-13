@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'paraplegia-intellectual disability-hyperkeratosis syndrome (PA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of paraplegia-intellectual disability-hyperkeratosis syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Tremor",
+    "High palate",
+    "Mild intellectual disability",
+    "Spastic paraplegia",
+    "Intellectual disability",
+    "X-linked recessive inheritance",
+    "Palmoplantar hyperkeratosis",
+    "Brisk reflexes",
+    "Pes cavus",
+    "X-linked inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

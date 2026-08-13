@@ -8,8 +8,16 @@ PIPELINE_LABEL = '2q33.1 microdeletion syndrome (2Q33_1_MICRODELETION_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of 2q33.1 microdeletion syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Seizure",
+    "Intellectual disability",
+    "Atypical behavior",
+    "Cleft palate",
+    "High palate",
+    "Inguinal hernia",
+    "Short stature",
+    "Feeding difficulties in infancy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'bilateral frontoparietal polymicrogyria (BILATERAL_FRONTOPARIE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of bilateral frontoparietal polymicrogyria
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cerebellar hypoplasia",
+    "Broad-based gait",
+    "Truncal ataxia",
+    "Hypoplasia of the brainstem",
+    "Global developmental delay",
+    "Abnormal facial shape",
+    "Autosomal recessive inheritance",
+    "Hypoplasia of the pons",
+    "Cerebral dysmyelination",
+    "Seizure",
+    "Babinski sign",
+    "Ventriculomegaly",
+    "Hyperreflexia",
+    "Ankle clonus",
+    "Perisylvian polymicrogyria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

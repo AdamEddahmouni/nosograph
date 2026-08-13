@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Machado-Joseph disease (MACHADO_JOSEPH_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Machado-Joseph disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ataxia",
+    "Dementia",
+    "Limb ataxia",
+    "Dysmetric saccades",
+    "Dystonia",
+    "Abnormal electrooculogram",
+    "Gliosis",
+    "Autosomal dominant inheritance",
+    "Chronic pain",
+    "Genetic anticipation",
+    "Truncal ataxia",
+    "Ptosis",
+    "Dilated fourth ventricle",
+    "Impaired horizontal smooth pursuit",
+    "Babinski sign",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

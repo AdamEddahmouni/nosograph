@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'bone osteosarcoma (BONE_OSTEOSARCOMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of bone osteosarcoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Typified by somatic mosaicism",
+    "Retinoblastoma",
+    "Osteosarcoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

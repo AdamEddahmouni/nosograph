@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'erythrocytosis, familial, 4 (ERYTHROCYTOSIS_FAMILIAL_4)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of erythrocytosis, familial, 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Deep venous thrombosis",
+    "Increased circulating hemoglobin concentration",
+    "Young adult onset",
+    "Elevated circulating erythropoietin concentration",
+    "Autosomal dominant inheritance",
+    "Increased hematocrit",
+    "Polycythemia",
+    "Mesenteric venous thrombosis",
+    "Pruritus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'transposition of the great arteries, dextro-looped (TRANSPOSIT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of transposition of the great arteries, dextro-looped
-SYMPTOMS = []
+SYMPTOMS = [
+    "Transposition of the great arteries",
+    "Typified by incomplete penetrance",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,13 @@ PIPELINE_LABEL = "Kaposi's sarcoma (KAPOSIS_SARCOMA)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Kaposi's sarcoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Edema",
+    "Neoplasm",
+    "Kaposi's sarcoma",
+    "Hypermelanotic macule",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

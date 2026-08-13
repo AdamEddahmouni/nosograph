@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'hyper-IgM syndrome type 4 (HYPER_IGM_SYNDROME_TYPE_4)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hyper-IgM syndrome type 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Recurrent upper respiratory tract infections",
+    "Osteomyelitis",
+    "Autoimmune hemolytic anemia",
+    "Absence of lymph node germinal center",
+    "Immunodeficiency",
+    "Impaired Ig class switch recombination",
+    "Myelodysplasia",
+    "Recurrent bacterial infections",
+    "Autoimmune thrombocytopenia",
+    "Recurrent infection of the gastrointestinal tract",
+    "Bronchiectasis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

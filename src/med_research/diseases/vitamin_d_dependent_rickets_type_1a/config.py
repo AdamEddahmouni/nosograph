@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'vitamin D-dependent rickets, type 1A (VITAMIN_D_DEPENDENT_RICK
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of vitamin D-dependent rickets, type 1A
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ketonuria",
+    "Secondary hyperparathyroidism",
+    "Gait disturbance",
+    "Delayed eruption of teeth",
+    "Metaphyseal cupping",
+    "Rachitic rosary",
+    "Widely patent fontanelles and sutures",
+    "Thin bony cortex",
+    "Deformed rib cage",
+    "Renal phosphate wasting",
+    "Subperiosteal bone resorption",
+    "Postnatal growth retardation",
+    "Fibular bowing",
+    "Femoral bowing",
+    "Decreased circulating calcitriol concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

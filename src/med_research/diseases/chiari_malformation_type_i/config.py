@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Chiari malformation type I (CHIARI_MALFORMATION_TYPE_I)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Chiari malformation type I
-SYMPTOMS = []
+SYMPTOMS = [
+    "Unsteady gait",
+    "Babinski sign",
+    "Headache",
+    "Tinnitus",
+    "Basilar impression",
+    "Vertigo",
+    "Limb muscle weakness",
+    "Photophobia",
+    "Diplopia",
+    "Areflexia of upper limbs",
+    "Lower limb hyperreflexia",
+    "Dysarthria",
+    "Autosomal dominant inheritance",
+    "Urinary incontinence",
+    "Syringomyelia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

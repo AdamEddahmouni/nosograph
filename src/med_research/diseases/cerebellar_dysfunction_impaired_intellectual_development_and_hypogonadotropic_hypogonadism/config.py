@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'cerebellar dysfunction, impaired intellectual development, and
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cerebellar dysfunction, impaired intellectual development, and hypogonadotropic hypogonadism
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypertonia",
+    "Hypogonadotropic hypogonadism",
+    "Broad-based gait",
+    "Polyhydramnios",
+    "Scoliosis",
+    "Hyperreflexia",
+    "Decreased circulating luteinizing hormone level",
+    "Cerebellar hypoplasia",
+    "Seizure",
+    "Dysmetria",
+    "Intellectual disability",
+    "Infantile onset",
+    "Generalized hypotonia",
+    "Epicanthus",
+    "Global developmental delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

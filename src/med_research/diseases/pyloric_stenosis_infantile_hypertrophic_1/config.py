@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'pyloric stenosis, infantile hypertrophic, 1 (PYLORIC_STENOSIS_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pyloric stenosis, infantile hypertrophic, 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Failure to thrive",
+    "Autosomal dominant inheritance",
+    "Non-Mendelian inheritance",
+    "Projectile vomiting",
+    "Pyloric stenosis",
+    "Hypochloremic metabolic alkalosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

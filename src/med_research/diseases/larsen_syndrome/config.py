@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Larsen syndrome (LARSEN_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Larsen syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dislocated wrist",
+    "Short nail",
+    "Autosomal dominant inheritance",
+    "Joint hypermobility",
+    "Atrial septal defect",
+    "Scoliosis",
+    "Short stature",
+    "Cryptorchidism",
+    "Beaking of vertebral bodies",
+    "Intrauterine growth retardation",
+    "Malar flattening",
+    "Bronchomalacia",
+    "Corneal opacity",
+    "Spina bifida occulta",
+    "Short metatarsal",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

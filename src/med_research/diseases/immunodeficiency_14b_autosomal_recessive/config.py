@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'immunodeficiency 14b, autosomal recessive (IMMUNODEFICIENCY_14
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 14b, autosomal recessive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Candida esophagitis",
+    "Recurrent sinusitis",
+    "Recurrent pneumonia",
+    "HP_0012178",
+    "Infantile onset",
+    "Decreased total B cell count",
+    "Inflammation of the large intestine",
+    "Increased total neutrophil count",
+    "Chronic diarrhea",
+    "Autosomal recessive inheritance",
+    "Thrombocytosis",
+    "Childhood onset",
+    "Polyarticular arthritis",
+    "Decreased circulating IgG concentration",
+    "Colitis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Holt-Oram syndrome (HOLT_ORAM_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Holt-Oram syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypoplastic left ventricle",
+    "Atrial septal dilatation",
+    "Right atrial enlargement",
+    "Short digit",
+    "Aplasia of the 2nd finger",
+    "1-2 finger cutaneous syndactyly",
+    "Sinus venosus atrial septal defect",
+    "Dolichocephaly",
+    "High palate",
+    "Hand monodactyly",
+    "Short humerus",
+    "Syndactyly",
+    "Radial bowing",
+    "HP_0031297",
+    "Upper limb undergrowth",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

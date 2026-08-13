@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'progressive familial intrahepatic cholestasis type 3 (PROGRESS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of progressive familial intrahepatic cholestasis type 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Jaundice",
+    "Increased serum bile acid concentration",
+    "Autosomal recessive inheritance",
+    "Portal inflammation",
+    "Hepatomegaly",
+    "Intrahepatic cholestasis",
+    "Elevated circulating hepatic transaminase concentration",
+    "Malabsorption",
+    "Cirrhosis",
+    "Splenomegaly",
+    "Pruritus",
+    "Portal fibrosis",
+    "Infantile onset",
+    "Diarrhea",
+    "Ascites",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

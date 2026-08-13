@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Filippi syndrome (FILIPPI_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Filippi syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cryptorchidism",
+    "2-4 toe syndactyly",
+    "Short philtrum",
+    "Underdeveloped nasal alae",
+    "Hypodontia",
+    "Proptosis",
+    "Optic atrophy",
+    "Abnormal dental morphology",
+    "Postnatal growth retardation",
+    "Broad forehead",
+    "Ventricular septal defect",
+    "Finger clinodactyly",
+    "Single transverse palmar crease",
+    "Visual impairment",
+    "Intrauterine growth retardation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

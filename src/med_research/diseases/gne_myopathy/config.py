@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'GNE myopathy (GNE_MYOPATHY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of GNE myopathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "EMG: myopathic abnormalities",
+    "Distal lower limb muscle weakness",
+    "Adult onset",
+    "Distal muscle weakness",
+    "Deposits immunoreactive to beta-amyloid protein",
+    "Autosomal recessive inheritance",
+    "Gait disturbance",
+    "Rimmed vacuoles",
+    "Distal amyotrophy",
+    "Elevated circulating creatine kinase activity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'severe early-onset pulmonary alveolar proteinosis due to MARS 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of severe early-onset pulmonary alveolar proteinosis due to MARS deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Lactic acidosis",
+    "Intraalveolar phospholipid accumulation",
+    "Childhood onset",
+    "Progressive",
+    "Pulmonary fibrosis",
+    "Hepatic fibrosis",
+    "Clubbing",
+    "Infantile onset",
+    "Hepatic steatosis",
+    "Vomiting",
+    "Motor delay",
+    "Cirrhosis",
+    "Failure to thrive",
+    "Elevated circulating alanine aminotransferase concentration",
+    "Cholestasis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

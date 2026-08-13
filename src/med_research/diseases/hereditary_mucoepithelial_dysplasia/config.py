@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hereditary mucoepithelial dysplasia (HEREDITARY_MUCOEPITHELIAL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hereditary mucoepithelial dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Coarse hair",
+    "Opacification of the corneal stroma",
+    "Sparse hair",
+    "Recurrent pneumonia",
+    "Furrowed tongue",
+    "Erythematous oral mucosa",
+    "Keratosis pilaris",
+    "Keratoconjunctivitis",
+    "Corneal neovascularization",
+    "Rhinorrhea",
+    "Cataract",
+    "Nystagmus",
+    "Follicular hyperkeratosis",
+    "Blindness",
+    "Epiphora",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

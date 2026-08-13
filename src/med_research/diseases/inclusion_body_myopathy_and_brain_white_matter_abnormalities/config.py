@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'inclusion body myopathy and brain white matter abnormalities (
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of inclusion body myopathy and brain white matter abnormalities
-SYMPTOMS = []
+SYMPTOMS = [
+    "Middle age onset",
+    "Scapular winging",
+    "Dysarthria",
+    "Autosomal dominant inheritance",
+    "Increased variability in muscle fiber diameter",
+    "Cognitive impairment",
+    "Rimmed vacuoles",
+    "Low back pain",
+    "Proximal lower limb muscle weakness",
+    "Areflexia",
+    "Proximal upper limb muscle weakness",
+    "Babinski sign",
+    "Weakness of facial musculature",
+    "Late young adult onset",
+    "Centrally nucleated skeletal muscle fibers",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

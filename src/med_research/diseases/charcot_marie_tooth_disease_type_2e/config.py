@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Charcot-Marie-Tooth disease type 2E (CHARCOT_MARIE_TOOTH_DISEA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Charcot-Marie-Tooth disease type 2E
-SYMPTOMS = []
+SYMPTOMS = [
+    "Distal lower limb muscle weakness",
+    "Facial palsy",
+    "Impaired distal vibration sensation",
+    "Gait disturbance",
+    "Onion bulb formation",
+    "Increased connective tissue",
+    "Childhood onset",
+    "Autosomal dominant inheritance",
+    "Lower limb muscle weakness",
+    "Distal upper limb muscle weakness",
+    "Nemaline bodies",
+    "Steppage gait",
+    "Ulnar claw",
+    "Juvenile onset",
+    "Impaired pain sensation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

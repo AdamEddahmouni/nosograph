@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autosomal recessive complex spastic paraplegia type 9B (AUTOSO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal recessive complex spastic paraplegia type 9B
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperreflexia",
+    "Short stature",
+    "Growth delay",
+    "Progressive",
+    "Intellectual disability",
+    "Infantile onset",
+    "Cataract",
+    "Pseudobulbar paralysis",
+    "Absent speech",
+    "Abnormal facial shape",
+    "Gait disturbance",
+    "Juvenile onset",
+    "Urinary incontinence",
+    "Dysarthria",
+    "Tetraplegia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

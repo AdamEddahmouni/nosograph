@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'vasculitis (VASCULITIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of vasculitis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Recurrent otitis media",
+    "Elevated circulating C-reactive protein concentration",
+    "Livedo racemosa",
+    "Bone marrow hypocellularity",
+    "Recurrent infections",
+    "Eczematoid dermatitis",
+    "Increased total leukocyte count",
+    "Headache",
+    "Anemia",
+    "Lupus anticoagulant",
+    "Decreased total lymphocyte count",
+    "Arthritis",
+    "Elevated circulating hepatic transaminase concentration",
+    "Dilated cardiomyopathy",
+    "Fever",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

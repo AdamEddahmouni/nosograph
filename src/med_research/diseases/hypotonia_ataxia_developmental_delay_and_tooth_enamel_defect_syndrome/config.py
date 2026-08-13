@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hypotonia, ataxia, developmental delay, and tooth enamel defec
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypotonia, ataxia, developmental delay, and tooth enamel defect syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Inability to walk",
+    "Cerebellar atrophy",
+    "Enamel hypoplasia",
+    "Retrognathia",
+    "Frontal bossing",
+    "Global developmental delay",
+    "Delayed ability to sit",
+    "Infantile onset",
+    "High palate",
+    "Increased variability in muscle fiber diameter",
+    "Intellectual disability",
+    "Ataxia",
+    "Feeding difficulties",
+    "Deeply set eye",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'primary failure of tooth eruption (PRIMARY_FAILURE_OF_TOOTH_ER
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of primary failure of tooth eruption
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypodontia",
+    "Persistence of primary teeth",
+    "Failure of eruption of permanent teeth",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

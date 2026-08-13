@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'primary familial polycythemia due to EPO receptor mutation (PR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of primary familial polycythemia due to EPO receptor mutation
-SYMPTOMS = []
+SYMPTOMS = [
+    "Plethora",
+    "Elevated circulating erythropoietin concentration",
+    "Polycythemia",
+    "Cerebral hemorrhage",
+    "Autosomal dominant inheritance",
+    "Increased hematocrit",
+    "Fatigue",
+    "Increased circulating hemoglobin concentration",
+    "Vertigo",
+    "Headache",
+    "Increased red blood cell mass",
+    "Hypertension",
+    "Splenomegaly",
+    "Exertional dyspnea",
+    "Myocardial infarction",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

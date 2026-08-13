@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Lhermitte-Duclos disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Kyphosis",
+    "Decreased total lymphocyte count",
+    "Global developmental delay",
+    "Transitional cell carcinoma of the bladder",
+    "Hyperthyroidism",
+    "Hamartomatous polyposis",
+    "Skin tags",
+    "Thyroid adenoma",
+    "Narrow mouth",
+    "Ovarian carcinoma",
+    "Hydrocele testis",
+    "Breast carcinoma",
+    "Hearing impairment",
+    "Intention tremor",
+    "Fibroadenoma of the breast",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

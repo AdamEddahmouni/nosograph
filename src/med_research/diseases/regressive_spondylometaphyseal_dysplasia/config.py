@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'regressive spondylometaphyseal dysplasia (REGRESSIVE_SPONDYLOM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of regressive spondylometaphyseal dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nevus flammeus of the forehead",
+    "Short 5th metacarpal",
+    "Brachydactyly",
+    "Kyphosis",
+    "Camptodactyly",
+    "Autosomal recessive inheritance",
+    "Depressed nasal bridge",
+    "Bowed humerus",
+    "Hyposegmentation of neutrophil nuclei",
+    "Ovoid vertebral bodies",
+    "Thoracolumbar scoliosis",
+    "Congenital onset",
+    "Platybasia",
+    "Metaphyseal irregularity",
+    "Wide intermamillary distance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

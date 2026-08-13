@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mucopolysaccharidosis type 3A (MUCOPOLYSACCHARIDOSIS_TYPE_3A)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mucopolysaccharidosis type 3A
-SYMPTOMS = []
+SYMPTOMS = [
+    "Childhood onset",
+    "Hearing impairment",
+    "Coarse facial features",
+    "Heparan sulfate excretion in urine",
+    "Umbilical hernia",
+    "Dense calvaria",
+    "Global developmental delay",
+    "Scoliosis",
+    "Sleep disturbance",
+    "Hepatomegaly",
+    "Growth abnormality",
+    "Ovoid thoracolumbar vertebrae",
+    "Reduced leukocyte N-sulfoglucosamine sulfohydrolase activity",
+    "Asymmetric septal hypertrophy",
+    "Recurrent upper respiratory tract infections",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

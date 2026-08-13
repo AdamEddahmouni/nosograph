@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'combined low LDL and fibrinogen (COMBINED_LOW_LDL_AND_FIBRINOG
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of combined low LDL and fibrinogen
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypofibrinogenemia",
+    "Decreased circulating LDL-C concentration",
+    "Autosomal recessive inheritance",
+    "Elevated circulating aspartate aminotransferase concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mitochondrial complex 4 deficiency, nuclear type 11 (MITOCHOND
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mitochondrial complex 4 deficiency, nuclear type 11
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dysarthria",
+    "Torticollis",
+    "Sensory axonal neuropathy",
+    "Foot dorsiflexor weakness",
+    "Increased CSF lactate",
+    "Elevated circulating creatine kinase activity",
+    "Small for gestational age",
+    "Choreoathetosis",
+    "Hypotonia",
+    "Dilated fourth ventricle",
+    "Decreased activity of mitochondrial complex IV",
+    "Cerebellar vermis atrophy",
+    "Ataxia",
+    "Delayed speech and language development",
+    "Frequent falls",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

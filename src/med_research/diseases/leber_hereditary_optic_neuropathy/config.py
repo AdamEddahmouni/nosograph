@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Leber hereditary optic neuropathy (LEBER_HEREDITARY_OPTIC_NEUR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Leber hereditary optic neuropathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ataxia",
+    "Optic neuropathy",
+    "Leber optic atrophy",
+    "Optic atrophy",
+    "Dystonia",
+    "X-linked inheritance",
+    "Typified by incomplete penetrance",
+    "Polyneuropathy",
+    "Mitochondrial inheritance",
+    "Arrhythmia",
+    "Central retinal vessel vascular tortuosity",
+    "Centrocecal scotoma",
+    "Myopathy",
+    "Visual loss",
+    "Postural tremor",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

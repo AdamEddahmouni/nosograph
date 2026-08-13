@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'oculoauriculovertebral spectrum with radial defects (OCULOAURI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of oculoauriculovertebral spectrum with radial defects
-SYMPTOMS = []
+SYMPTOMS = [
+    "Microtia",
+    "Complete duplication of thumb phalanx",
+    "Atresia of the external auditory canal",
+    "Autosomal dominant inheritance",
+    "Cleft palate",
+    "Triphalangeal thumb",
+    "Preauricular skin tag",
+    "Hemifacial hypoplasia",
+    "Facial asymmetry",
+    "Non-midline cleft of the upper lip",
+    "Conductive hearing impairment",
+    "Orofacial cleft",
+    "Preauricular pit",
+    "Short mandibular rami",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

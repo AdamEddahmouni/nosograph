@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'myoclonic dystonia 26 (MYOCLONIC_DYSTONIA_26)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of myoclonic dystonia 26
-SYMPTOMS = []
+SYMPTOMS = [
+    "Myoclonus",
+    "Blepharospasm",
+    "Early young adult onset",
+    "Dysphonia",
+    "Torticollis",
+    "Childhood onset",
+    "Dystonia",
+    "Anxiety",
+    "Juvenile onset",
+    "Dysarthria",
+    "Laryngeal dystonia",
+    "Depression",
+    "Autosomal dominant inheritance",
+    "Progressive",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

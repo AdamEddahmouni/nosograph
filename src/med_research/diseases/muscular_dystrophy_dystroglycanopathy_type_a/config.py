@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTRO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of muscular dystrophy-dystroglycanopathy, type A
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased light- and dark-adapted electroretinogram amplitude",
+    "Remnants of the hyaloid vascular system",
+    "Cryptorchidism",
+    "Uncontrolled eye movements",
+    "Cortical dysplasia",
+    "Pulmonic stenosis",
+    "Macrocephaly",
+    "Third trimester onset",
+    "Myocardial fibrosis",
+    "Myopia",
+    "Leukodystrophy",
+    "Gonadal dysgenesis",
+    "Subcortical heterotopia",
+    "Cerebellar dysplasia",
+    "Agyria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

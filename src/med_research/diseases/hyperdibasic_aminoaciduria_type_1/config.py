@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'hyperdibasic aminoaciduria type 1 (HYPERDIBASIC_AMINOACIDURIA_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hyperdibasic aminoaciduria type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Malabsorption",
+    "Hyperlysinuria",
+    "Dibasicaminoaciduria",
+    "Intellectual disability",
+    "Autosomal recessive inheritance",
+    "Argininuria",
+    "Ornithinuria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

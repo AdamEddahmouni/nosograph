@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'von Willebrand disease 2 (VON_WILLEBRAND_DISEASE_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of von Willebrand disease 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Menorrhagia",
+    "Epistaxis",
+    "Thrombocytopenia",
+    "Variable expressivity",
+    "Bruising susceptibility",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'cerebral amyloid angiopathy, APP-related (CEREBRAL_AMYLOID_ANG
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cerebral amyloid angiopathy, APP-related
-SYMPTOMS = []
+SYMPTOMS = [
+    "Recurrent cerebral hemorrhage",
+    "Cerebellar hemorrhage",
+    "Late onset",
+    "Cerebral ischemia",
+    "Autosomal dominant inheritance",
+    "Dementia",
+    "Stroke",
+    "Middle age onset",
+    "Tortuous cerebral arteries",
+    "Subarachnoid hemorrhage",
+    "Cerebral amyloid angiopathy",
+    "Paresthesia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

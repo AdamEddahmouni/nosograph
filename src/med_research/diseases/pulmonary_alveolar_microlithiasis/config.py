@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'pulmonary alveolar microlithiasis (PULMONARY_ALVEOLAR_MICROLIT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pulmonary alveolar microlithiasis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Young adult onset",
+    "Intraalveolar nodular calcifications",
+    "Childhood onset",
+    "Progressive pulmonary function impairment",
+    "Restrictive ventilatory defect",
+    "Juvenile onset",
+    "Slowly progressive",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

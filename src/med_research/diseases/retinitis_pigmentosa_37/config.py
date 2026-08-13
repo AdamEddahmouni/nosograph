@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'retinitis pigmentosa 37 (RETINITIS_PIGMENTOSA_37)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of retinitis pigmentosa 37
-SYMPTOMS = []
+SYMPTOMS = [
+    "Tritanomaly",
+    "Red-green dyschromatopsia",
+    "Pigmentary retinopathy",
+    "Undetectable light- and dark-adapted electroretinogram",
+    "Reduced visual acuity",
+    "Juvenile onset",
+    "Young adult onset",
+    "Autosomal dominant inheritance",
+    "Autosomal recessive inheritance",
+    "Rod-cone dystrophy",
+    "Nyctalopia",
+    "Constriction of peripheral visual field",
+    "Cystoid macular degeneration",
+    "Nuclear cataract",
+    "Posterior subcapsular cataract",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'Camptosynpolydactyly, complex (CAMPTOSYNPOLYDACTYLY_COMPLEX)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Camptosynpolydactyly, complex
-SYMPTOMS = []
+SYMPTOMS = [
+    "Small nail",
+    "Congenital onset",
+    "Toenail dysplasia",
+    "Nail dysplasia",
+    "Autosomal recessive inheritance",
+    "Syndactyly",
+    "Polydactyly",
+    "Camptodactyly",
+    "Cutaneous syndactyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'lethal multiple pterygium syndrome (LETHAL_MULTIPLE_PTERYGIUM_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lethal multiple pterygium syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Depressed nasal ridge",
+    "Low-set ears",
+    "Polyhydramnios",
+    "Cleft palate",
+    "Abnormal cervical curvature",
+    "Abnormal facial shape",
+    "Micrognathia",
+    "Increased susceptibility to fractures",
+    "Malignant hyperthermia",
+    "Hypoplastic ventricle",
+    "Short finger",
+    "Vertebral fusion",
+    "Autosomal recessive inheritance",
+    "Akinesia",
+    "Intrauterine growth retardation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

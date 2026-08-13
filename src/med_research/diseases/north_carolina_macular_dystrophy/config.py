@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'North Carolina macular dystrophy (NORTH_CAROLINA_MACULAR_DYSTR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of North Carolina macular dystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal macular pigmentation",
+    "Reduced visual acuity",
+    "Infantile onset",
+    "Central scotoma",
+    "Autosomal dominant inheritance",
+    "Macular dystrophy",
+    "Peripheral retinal atrophy",
+    "Drusen",
+    "Dyschromatopsia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

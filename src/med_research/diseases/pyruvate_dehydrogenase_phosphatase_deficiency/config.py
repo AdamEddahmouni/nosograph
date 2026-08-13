@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'pyruvate dehydrogenase phosphatase deficiency (PYRUVATE_DEHYDR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pyruvate dehydrogenase phosphatase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypotonia",
+    "Generalized hypotonia",
+    "Gait ataxia",
+    "Global developmental delay",
+    "Feeding difficulties",
+    "Nystagmus",
+    "Lactic acidosis",
+    "Decreased activity of the pyruvate dehydrogenase complex",
+    "Seizure",
+    "Neonatal onset",
+    "Dysphagia",
+    "Autosomal recessive inheritance",
+    "Intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

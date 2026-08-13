@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Mullegama-Klein-Martinez syndrome (MULLEGAMA_KLEIN_MARTINEZ_SY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Mullegama-Klein-Martinez syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Attention deficit hyperactivity disorder",
+    "Sensorineural hearing impairment",
+    "Delayed ability to walk",
+    "Triangular face",
+    "Preauricular skin tag",
+    "Micrognathia",
+    "Microtia",
+    "Unsteady gait",
+    "Clinodactyly of the 5th finger",
+    "Hypoplastic left ventricle",
+    "Bifid uvula",
+    "Facial palsy",
+    "Full cheeks",
+    "Low anterior hairline",
+    "Thin upper lip vermilion",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

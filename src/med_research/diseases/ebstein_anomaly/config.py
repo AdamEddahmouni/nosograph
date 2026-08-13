@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'Ebstein anomaly (EBSTEIN_ANOMALY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Ebstein anomaly
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sudden cardiac death",
+    "Atrial standstill",
+    "Autosomal recessive inheritance",
+    "Complete right bundle branch block",
+    "Ebstein anomaly of the tricuspid valve",
+    "Atrial fibrillation",
+    "Atrial septal defect",
+    "Ventricular preexcitation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

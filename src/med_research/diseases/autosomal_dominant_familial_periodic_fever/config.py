@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autosomal dominant familial periodic fever (AUTOSOMAL_DOMINANT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal dominant familial periodic fever
-SYMPTOMS = []
+SYMPTOMS = [
+    "Conjunctivitis",
+    "Myalgia",
+    "Polyarticular arthritis",
+    "Headache",
+    "Conjunctival hyperemia",
+    "Chronic constipation",
+    "Gastrointestinal hemorrhage",
+    "Elevated erythrocyte sedimentation rate",
+    "Vomiting",
+    "Skin rash",
+    "Periorbital edema",
+    "Maculopapular exanthema",
+    "AA amyloidosis",
+    "Bone pain",
+    "Hepatic amyloidosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

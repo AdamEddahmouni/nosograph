@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'adult-onset autosomal dominant demyelinating leukodystrophy (A
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of adult-onset autosomal dominant demyelinating leukodystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ataxia",
+    "Symmetric peripheral demyelination",
+    "Gliosis",
+    "Personality changes",
+    "Diffuse leukoencephalopathy",
+    "Babinski sign",
+    "Spasticity",
+    "Pseudobulbar paralysis",
+    "Adult onset",
+    "Autosomal dominant inheritance",
+    "Autonomic erectile dysfunction",
+    "Decreased sweating due to autonomic dysfunction",
+    "Progressive neurologic deterioration",
+    "Constipation",
+    "Progressive",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

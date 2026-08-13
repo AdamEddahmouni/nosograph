@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Charcot-Marie-Tooth disease type 4F (CHARCOT_MARIE_TOOTH_DISEA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Charcot-Marie-Tooth disease type 4F
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased motor nerve conduction velocity",
+    "Motor delay",
+    "Childhood onset",
+    "Decreased number of peripheral myelinated nerve fibers",
+    "Loss of ambulation",
+    "Vocal cord paresis",
+    "Distal sensory impairment",
+    "Steppage gait",
+    "Enlarged cisterna magna",
+    "Pes cavus",
+    "Scoliosis",
+    "Skeletal muscle atrophy",
+    "Areflexia",
+    "Limb muscle weakness",
+    "Basal lamina onion bulb formation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

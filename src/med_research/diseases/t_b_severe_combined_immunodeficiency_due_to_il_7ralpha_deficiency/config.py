@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'T-B+ severe combined immunodeficiency due to IL-7Ralpha defici
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of T-B+ severe combined immunodeficiency due to IL-7Ralpha deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Oral ulcer",
+    "Hepatomegaly",
+    "Splenomegaly",
+    "Gastroesophageal reflux",
+    "Recurrent opportunistic infections",
+    "Recurrent mucocutaneous candidiasis",
+    "Otitis media",
+    "Failure to thrive secondary to recurrent infections",
+    "Decreased total T cell count",
+    "Autosomal recessive inheritance",
+    "Diarrhea",
+    "Eczematoid dermatitis",
+    "Pneumonia",
+    "Infantile onset",
+    "Lymphadenopathy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

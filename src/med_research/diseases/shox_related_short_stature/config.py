@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'SHOX-related short stature (SHOX_RELATED_SHORT_STATURE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of SHOX-related short stature
-SYMPTOMS = []
+SYMPTOMS = [
+    "X-linked inheritance",
+    "Short stature",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

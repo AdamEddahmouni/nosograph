@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'ATTRV122I amyloidosis (ATTRV122I_AMYLOIDOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ATTRV122I amyloidosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Paraplegia",
+    "Urinary incontinence",
+    "Hyporeflexia",
+    "Cardiomyopathy",
+    "Intention tremor",
+    "Adult onset",
+    "Headache",
+    "Nystagmus",
+    "Orthostatic hypotension due to autonomic dysfunction",
+    "Visual impairment",
+    "Peripheral axonal neuropathy",
+    "Tremor",
+    "Confusion",
+    "Polyneuropathy",
+    "Increased CSF protein concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -4,7 +4,13 @@ PIPELINE_LABEL = "ASTHMA"
 DEFAULT_SAMPLE_SIZE = 50
 
 # Minimal symptom list
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Airway hyperresponsiveness",
+    "Asthma",
+    "Non-Mendelian inheritance",
+    "Bronchoconstriction",
+]
 
 PUBMED_QUERIES = []
 TRIAL_QUERY = "ASTHMA"

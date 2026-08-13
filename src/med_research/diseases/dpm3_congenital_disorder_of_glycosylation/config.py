@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'DPM3-congenital disorder of glycosylation (DPM3_CONGENITAL_DIS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of DPM3-congenital disorder of glycosylation
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Rimmed vacuoles",
+    "Gowers sign",
+    "Adult onset",
+    "Proximal muscle weakness",
+    "Increased variability in muscle fiber diameter",
+    "Myopathy",
+    "Muscle weakness",
+    "Dilated cardiomyopathy",
+    "Unsteady gait",
+    "Waddling gait",
+    "Elevated circulating creatine kinase activity",
+    "Type I transferrin isoform profile",
+    "Elevated circulating hepatic transaminase concentration",
+    "Juvenile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

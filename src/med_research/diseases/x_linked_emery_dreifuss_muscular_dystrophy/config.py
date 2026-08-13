@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'X-linked Emery-Dreifuss muscular dystrophy (X_LINKED_EMERY_DRE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked Emery-Dreifuss muscular dystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elbow flexion contracture",
+    "Myopathy",
+    "Proximal muscle weakness",
+    "Elevated circulating creatine kinase activity",
+    "Short neck",
+    "Waddling gait",
+    "Back pain",
+    "Scapuloperoneal weakness",
+    "Achilles tendon contracture",
+    "Rimmed vacuoles",
+    "Atrial arrhythmia",
+    "Scapular winging",
+    "Decreased cervical spine flexion due to contractures of posterior cervical muscles",
+    "Sudden cardiac death",
+    "Knee flexion contracture",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

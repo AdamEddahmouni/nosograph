@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'ectodermal dysplasia 7, hair/nail type (ECTODERMAL_DYSPLASIA_7
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ectodermal dysplasia 7, hair/nail type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dystrophic fingernails",
+    "Sparse eyebrow",
+    "Autosomal recessive inheritance",
+    "Onycholysis",
+    "Alopecia",
+    "Brittle hair",
+    "Abnormality of the dentition",
+    "Dystrophic toenail",
+    "Sparse scalp hair",
+    "Abnormality of the skin",
+    "Abnormal sweat gland morphology",
+    "Sparse eyelashes",
+    "Congenital onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

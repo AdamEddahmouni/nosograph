@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'mal de Meleda (MAL_DE_MELEDA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mal de Meleda
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Brachydactyly",
+    "Congenital symmetrical palmoplantar keratosis",
+    "Ichthyosis",
+    "Perioral erythema",
+    "Fragile nails",
+    "Infantile onset",
+    "Hyperhidrosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

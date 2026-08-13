@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'Bardet-Biedl syndrome 10 (BARDET_BIEDL_SYNDROME_10)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Bardet-Biedl syndrome 10
-SYMPTOMS = []
+SYMPTOMS = [
+    "Obesity",
+    "Retinal dystrophy",
+    "Renal insufficiency",
+    "Renal cyst",
+    "Polydactyly",
+    "Rod-cone dystrophy",
+    "Global developmental delay",
+    "Hypogonadism",
+    "Autosomal recessive inheritance",
+    "Mild intellectual disability",
+    "Seizure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

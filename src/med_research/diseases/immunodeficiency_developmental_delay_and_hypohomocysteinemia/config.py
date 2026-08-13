@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'immunodeficiency, developmental delay, and hypohomocysteinemia
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency, developmental delay, and hypohomocysteinemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypohomocysteinemia",
+    "Bicuspid aortic valve",
+    "Atrial septal defect",
+    "Feeding difficulties",
+    "Hypocystinemia",
+    "Recurrent skin infections",
+    "Short stature",
+    "Growth delay",
+    "Intrauterine growth retardation",
+    "Autosomal dominant inheritance",
+    "Infantile onset",
+    "Decreased serum creatinine",
+    "Recurrent lower respiratory tract infections",
+    "Leukoencephalopathy",
+    "Mild intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

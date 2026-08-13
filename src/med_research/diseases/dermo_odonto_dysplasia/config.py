@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'dermo-odonto dysplasia (DERMO_ODONTO_DYSPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dermo-odonto dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ectodermal dysplasia",
+    "Hypodontia",
+    "Autosomal dominant inheritance",
+    "Nail dysplasia",
+    "Trichodysplasia",
+    "Dry skin",
+    "Thin skin",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

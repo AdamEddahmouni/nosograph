@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Miller-Dieker lissencephaly syndrome (MILLER_DIEKER_LISSENCEPH
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Miller-Dieker lissencephaly syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormality of metabolism/homeostasis",
+    "Upslanted palpebral fissure",
+    "Epicanthus",
+    "Midface retrusion",
+    "Agyria",
+    "Joint contracture of the hand",
+    "Polydactyly",
+    "Midline brain calcifications",
+    "Progressive spastic paraplegia",
+    "Inguinal hernia",
+    "Cryptorchidism",
+    "Duodenal atresia",
+    "Autosomal dominant inheritance",
+    "Recurrent aspiration pneumonia",
+    "Pelvic kidney",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

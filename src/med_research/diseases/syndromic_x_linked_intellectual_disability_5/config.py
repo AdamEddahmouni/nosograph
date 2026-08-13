@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'syndromic X-linked intellectual disability 5 (SYNDROMIC_X_LINK
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of syndromic X-linked intellectual disability 5
-SYMPTOMS = []
+SYMPTOMS = [
+    "Stereotypical hand wringing",
+    "Long face",
+    "Hyperreflexia",
+    "Hydrocephalus",
+    "Spasticity",
+    "Wide mouth",
+    "Moderate intellectual disability",
+    "High-frequency hearing impairment",
+    "Profound intellectual disability",
+    "Microcephaly",
+    "Prominent nose",
+    "X-linked recessive inheritance",
+    "Fetal distress",
+    "Sensorineural hearing impairment",
+    "Basal ganglia calcification",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

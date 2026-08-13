@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hyperammonemic encephalopathy due to carbonic anhydrase VA def
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hyperammonemic encephalopathy due to carbonic anhydrase VA deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Childhood onset",
+    "Global developmental delay",
+    "Elevated urine suberic acid level",
+    "Lactic acidosis",
+    "Lacticaciduria",
+    "Hypoargininemia",
+    "Abnormal urine sebacic acid concentration",
+    "Hyperalaninemia",
+    "Elevated urine acetoacetic acid level",
+    "Increased circulating lactate concentration",
+    "Ketoacidosis",
+    "Episodic vomiting",
+    "Elevated urinary 3-hydroxybutyric acid",
+    "Tachypnea",
+    "Hyperammonemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'Charcot-Marie-Tooth disease, demyelinating, IIA 1H (CHARCOT_MA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Charcot-Marie-Tooth disease, demyelinating, IIA 1H
-SYMPTOMS = []
+SYMPTOMS = [
+    "Adult onset",
+    "Macular degeneration",
+    "Distal lower limb amyotrophy",
+    "Distal upper limb muscle weakness",
+    "Hyperextensible skin",
+    "Autosomal dominant inheritance",
+    "Childhood onset",
+    "Absent patellar reflexes",
+    "Distal lower limb muscle weakness",
+    "Distal upper limb amyotrophy",
+    "Distal sensory impairment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

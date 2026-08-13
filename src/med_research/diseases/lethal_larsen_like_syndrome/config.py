@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'lethal Larsen-like syndrome (LETHAL_LARSEN_LIKE_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lethal Larsen-like syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Multiple joint dislocation",
+    "Laryngomalacia",
+    "Abnormality of metabolism/homeostasis",
+    "Pulmonary hypoplasia",
+    "Tracheomalacia",
+    "Autosomal recessive inheritance",
+    "Neonatal death",
+    "Pulmonic regurgitation",
+    "Abnormal cartilage matrix",
+    "Joint dislocation",
+    "Respiratory insufficiency",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

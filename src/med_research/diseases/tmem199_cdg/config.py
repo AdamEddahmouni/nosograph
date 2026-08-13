@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'TMEM199-CDG (TMEM199_CDG)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of TMEM199-CDG
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased liver function",
+    "Elevated circulating creatine kinase activity",
+    "Childhood onset",
+    "Global developmental delay",
+    "Infantile onset",
+    "Elevated circulating alanine aminotransferase concentration",
+    "Autosomal recessive inheritance",
+    "Hypotonia",
+    "Abnormal protein N-linked glycosylation",
+    "Elevated circulating aspartate aminotransferase concentration",
+    "Abnormal protein O-linked glycosylation",
+    "Type II transferrin isoform profile",
+    "Elevated circulating alkaline phosphatase concentration",
+    "Copper accumulation in liver",
+    "Decreased circulating copper concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Sneddon syndrome (SNEDDON_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Sneddon syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Livedo reticularis",
+    "Livedo",
+    "Ischemic stroke",
+    "Hemiplegia",
+    "Cerebral hemorrhage",
+    "Hypertension",
+    "Sporadic",
+    "Stroke",
+    "Cutis marmorata",
+    "Decreased total lymphocyte count",
+    "Mental deterioration",
+    "Dysarthria",
+    "Decreased circulating IgM concentration",
+    "Bicuspid aortic valve",
+    "Progressive",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

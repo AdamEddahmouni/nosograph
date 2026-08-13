@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Norrie disease (NORRIE_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Norrie disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Retinal fold",
+    "Opacification of the corneal stroma",
+    "Leukocoria",
+    "Blindness",
+    "Buphthalmos",
+    "Psychosis",
+    "Optic atrophy",
+    "Sensorineural hearing impairment",
+    "X-linked recessive inheritance",
+    "Hypoplasia of the iris",
+    "Hallucinations",
+    "Retinal dysplasia",
+    "Seizure",
+    "Cataract",
+    "Infantile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

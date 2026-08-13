@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'ectodermal dysplasia-sensorineural deafness syndrome (ECTODERM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ectodermal dysplasia-sensorineural deafness syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sensorineural hearing impairment",
+    "Thoracic scoliosis",
+    "Hidrotic ectodermal dysplasia",
+    "Autosomal recessive inheritance",
+    "Joint contracture of the hand",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

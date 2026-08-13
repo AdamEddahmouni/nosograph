@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'X-linked myotubular myopathy (X_LINKED_MYOTUBULAR_MYOPATHY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked myotubular myopathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Narrow face",
+    "Severe muscular hypotonia",
+    "High palate",
+    "Polyhydramnios",
+    "External ophthalmoplegia",
+    "Dandy-Walker malformation",
+    "Neonatal hypotonia",
+    "Diaphragmatic eventration",
+    "Hypokinesia",
+    "Premature birth",
+    "Neonatal respiratory distress",
+    "Pyloric stenosis",
+    "Tube feeding",
+    "Motor delay",
+    "Macrocephaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

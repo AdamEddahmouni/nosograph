@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'factor XIII, A subunit, deficiency of (FACTOR_XIII_A_SUBUNIT_D
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of factor XIII, A subunit, deficiency of
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal bleeding",
+    "Joint hemorrhage",
+    "Neonatal onset",
+    "Reduced factor XIII activity",
+    "Factor XIII subunit A deficiency",
+    "Ecchymosis",
+    "Autosomal recessive inheritance",
+    "Gingival bleeding",
+    "Bruising susceptibility",
+    "Epistaxis",
+    "Spontaneous hematomas",
+    "Persistent bleeding after trauma",
+    "Congenital onset",
+    "Intracranial hemorrhage",
+    "Abnormal umbilical stump bleeding",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

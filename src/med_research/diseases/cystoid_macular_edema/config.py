@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'cystoid macular edema (CYSTOID_MACULAR_EDEMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cystoid macular edema
-SYMPTOMS = []
+SYMPTOMS = [
+    "Strabismus",
+    "Macular dystrophy",
+    "Autosomal dominant inheritance",
+    "Hypermetropia",
+    "Pericentral retinitis pigmentosa",
+    "Cystoid macular edema",
+    "Edema",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

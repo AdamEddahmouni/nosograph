@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'congenital reticular ichthyosiform erythroderma (CONGENITAL_RE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital reticular ichthyosiform erythroderma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Hypoplastic nipples",
+    "Scaling skin",
+    "Nystagmus",
+    "Pruritus",
+    "Clubbing",
+    "Ectropion",
+    "Hypertrichosis",
+    "Short stature",
+    "Ichthyosis",
+    "Strabismus",
+    "Erythroderma",
+    "Congenital nonbullous ichthyosiform erythroderma",
+    "Palmoplantar hyperkeratosis",
+    "Decreased body weight",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

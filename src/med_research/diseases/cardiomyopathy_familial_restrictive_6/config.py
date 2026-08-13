@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'cardiomyopathy, familial restrictive, 6 (CARDIOMYOPATHY_FAMILI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cardiomyopathy, familial restrictive, 6
-SYMPTOMS = []
+SYMPTOMS = [
+    "Fetal onset",
+    "Pulmonic regurgitation",
+    "Tricuspid regurgitation",
+    "Hepatic artery hyperplasia",
+    "Autosomal recessive inheritance",
+    "Restrictive cardiomyopathy",
+    "Hepatomegaly",
+    "Ascites",
+    "Pulmonic stenosis",
+    "Death in infancy",
+    "Hydrops fetalis",
+    "Portal vein hypoplasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

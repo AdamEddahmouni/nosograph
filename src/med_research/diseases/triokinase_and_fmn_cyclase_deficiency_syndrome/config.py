@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'triokinase and FMN cyclase deficiency syndrome (TRIOKINASE_AND
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of triokinase and FMN cyclase deficiency syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Reduced systolic function",
+    "Pancreatitis",
+    "Elevated circulating alanine aminotransferase concentration",
+    "Hepatomegaly",
+    "Failure to thrive in infancy",
+    "Global developmental delay",
+    "Delayed CNS myelination",
+    "Hypoalbuminemia",
+    "Chronic diarrhea",
+    "Motor delay",
+    "Broad-based gait",
+    "Cataract",
+    "Hepatic steatosis",
+    "Lactic acidosis",
+    "Delayed speech and language development",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

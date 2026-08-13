@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Joubert syndrome (JOUBERT_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Joubert syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Macroglossia",
+    "Agenesis of corpus callosum",
+    "Ptosis",
+    "Cleft palate",
+    "Cone/cone-rod dystrophy",
+    "Intellectual disability",
+    "Anteverted nares",
+    "Oculomotor apraxia",
+    "Congenital onset",
+    "Pigmentary retinopathy",
+    "Fetal onset",
+    "Abnormal retinal morphology",
+    "Truncal ataxia",
+    "Occipital encephalocele",
+    "Tented upper lip vermilion",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

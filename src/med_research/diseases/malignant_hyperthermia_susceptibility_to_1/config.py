@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'malignant hyperthermia, susceptibility to, 1 (MALIGNANT_HYPERT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of malignant hyperthermia, susceptibility to, 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperkalemia",
+    "Rhabdomyolysis",
+    "Myoglobinuria",
+    "Abnormality of the coagulation cascade",
+    "Rigidity",
+    "Autosomal dominant inheritance",
+    "Mixed respiratory and metabolic acidosis",
+    "Tachycardia",
+    "Hypotension",
+    "Hyperphosphatemia",
+    "Elevated circulating creatine kinase activity",
+    "Malignant hyperthermia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

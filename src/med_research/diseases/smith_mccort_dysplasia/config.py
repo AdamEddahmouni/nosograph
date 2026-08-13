@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Smith-McCort dysplasia (SMITH_MCCORT_DYSPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Smith-McCort dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Flattened femoral head",
+    "Mandibular prognathia",
+    "Short metatarsal",
+    "Atlantoaxial instability",
+    "Hypoplastic scapulae",
+    "Genu varum",
+    "Enlarged interphalangeal joints",
+    "Waddling gait",
+    "Hypoplasia of the odontoid process",
+    "Pes planus",
+    "Childhood onset",
+    "Delayed femoral head ossification",
+    "Disproportionate short-trunk short stature",
+    "Microcephaly",
+    "Prominent calcaneus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

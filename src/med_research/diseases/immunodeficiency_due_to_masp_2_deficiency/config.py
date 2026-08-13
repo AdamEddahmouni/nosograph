@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'immunodeficiency due to MASP-2 deficiency (IMMUNODEFICIENCY_DU
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency due to MASP-2 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ulcerative colitis",
+    "Systemic lupus erythematosus",
+    "Recurrent pneumonia",
+    "Reduced circulating complement concentration",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

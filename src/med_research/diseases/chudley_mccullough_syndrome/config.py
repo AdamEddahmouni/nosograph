@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Chudley-McCullough syndrome (CHUDLEY_MCCULLOUGH_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Chudley-McCullough syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Arachnoid cyst",
+    "Partial agenesis of the corpus callosum",
+    "Cerebellar hypoplasia",
+    "Mild intellectual disability",
+    "Hydrocephalus",
+    "Cerebellar dysplasia",
+    "Gray matter heterotopia",
+    "Seizure",
+    "Autosomal recessive inheritance",
+    "Severe sensorineural hearing impairment",
+    "Large foramen magnum",
+    "Dysplastic corpus callosum",
+    "Polymicrogyria",
+    "Hypoplasia of the corpus callosum",
+    "Ventriculomegaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

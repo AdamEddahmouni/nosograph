@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spinocerebellar ataxia type 18 (SPINOCEREBELLAR_ATAXIA_TYPE_18
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spinocerebellar ataxia type 18
-SYMPTOMS = []
+SYMPTOMS = [
+    "Limb muscle weakness",
+    "Nystagmus",
+    "Pes cavus",
+    "Skeletal muscle atrophy",
+    "Dysmetria",
+    "Autosomal dominant inheritance",
+    "Progressive gait ataxia",
+    "Sensory axonal neuropathy",
+    "Young adult onset",
+    "Areflexia",
+    "Hyporeflexia",
+    "Tremor",
+    "Babinski sign",
+    "Cerebellar atrophy",
+    "Dysdiadochokinesis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

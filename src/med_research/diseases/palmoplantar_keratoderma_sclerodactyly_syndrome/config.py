@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'palmoplantar keratoderma-sclerodactyly syndrome (PALMOPLANTAR_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of palmoplantar keratoderma-sclerodactyly syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Adermatoglyphia",
+    "Small nail",
+    "Tapered finger",
+    "Autosomal dominant inheritance",
+    "Nail dystrophy",
+    "Squamous cell carcinoma of the skin",
+    "Congenital palmoplantar hyperkeratosis",
+    "Epidermal acanthosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

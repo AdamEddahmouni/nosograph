@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'neurodevelopmental disorder with microcephaly, ataxia, and sei
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neurodevelopmental disorder with microcephaly, ataxia, and seizures
-SYMPTOMS = []
+SYMPTOMS = [
+    "Global developmental delay",
+    "Ataxia",
+    "Moderate intellectual disability",
+    "Microcephaly",
+    "Autosomal recessive inheritance",
+    "Bilateral tonic-clonic seizure",
+    "Aggressive behavior",
+    "Slender build",
+    "Muscle weakness",
+    "Infantile onset",
+    "Pes planus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

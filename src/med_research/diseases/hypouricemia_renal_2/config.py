@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'hypouricemia, renal, 2 (HYPOURICEMIA_RENAL_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypouricemia, renal, 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Kidney stone",
+    "Autosomal dominant inheritance",
+    "Hypouricemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'pulmonary hypertension, primary, autosomal recessive (PULMONAR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pulmonary hypertension, primary, autosomal recessive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Right ventricular hypertrophy",
+    "Exertional dyspnea",
+    "Angina pectoris",
+    "Muscle weakness",
+    "Neonatal onset",
+    "Infantile onset",
+    "Right ventricular failure",
+    "Easy fatigability",
+    "Syncope",
+    "Pulmonary arterial hypertension",
+    "Childhood onset",
+    "Autosomal recessive inheritance",
+    "Fatigue",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

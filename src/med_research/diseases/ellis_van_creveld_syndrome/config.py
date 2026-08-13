@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Ellis-van Creveld syndrome (ELLIS_VAN_CREVELD_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Ellis-van Creveld syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Atrial septal defect",
+    "Common atrium",
+    "Ectodermal dysplasia",
+    "Intellectual disability",
+    "Short ribs",
+    "Neonatal short-limb short stature",
+    "Postaxial foot polydactyly",
+    "Pectus carinatum",
+    "Short long bone",
+    "Narrow chest",
+    "Delayed eruption of teeth",
+    "Hypodontia",
+    "Horizontal ribs",
+    "Postaxial hand polydactyly",
+    "Cleft upper lip",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

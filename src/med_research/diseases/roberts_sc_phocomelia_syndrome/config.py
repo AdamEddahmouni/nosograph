@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Roberts-SC phocomelia syndrome (ROBERTS_SC_PHOCOMELIA_SYNDROME
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Roberts-SC phocomelia syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Biliary tract abnormality",
+    "Microcephaly",
+    "Opacification of the corneal stroma",
+    "Cataract",
+    "Absent thumb",
+    "Hypertelorism",
+    "Low-set ears",
+    "Abnormal metacarpal morphology",
+    "Cleft upper lip",
+    "Atrial septal defect",
+    "Premature separation of centromeric heterochromatin",
+    "Hypoplasia of the ulna",
+    "Absent radius",
+    "Short neck",
+    "Elbow flexion contracture",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

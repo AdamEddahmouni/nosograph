@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'atrial septal defect 2 (ATRIAL_SEPTAL_DEFECT_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of atrial septal defect 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital onset",
+    "Atrioventricular canal defect",
+    "Ventricular septal defect",
+    "Atrial septal defect",
+    "Mitral regurgitation",
+    "Aortic regurgitation",
+    "Dextrocardia",
+    "Patent ductus arteriosus",
+    "Autosomal dominant inheritance",
+    "Pulmonic stenosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

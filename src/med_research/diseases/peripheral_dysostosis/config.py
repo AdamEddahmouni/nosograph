@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'peripheral dysostosis (PERIPHERAL_DYSOSTOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of peripheral dysostosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short phalanx of finger",
+    "Cone-shaped epiphyses of the phalanges of the hand",
+    "Autosomal dominant inheritance",
+    "Hip osteoarthritis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

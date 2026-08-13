@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'X-linked non progressive cerebellar ataxia (X_LINKED_NON_PROGR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked non progressive cerebellar ataxia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Intellectual disability",
+    "Neonatal hypotonia",
+    "Motor delay",
+    "Dysarthria",
+    "Nystagmus",
+    "Action tremor",
+    "X-linked recessive inheritance",
+    "Nonprogressive",
+    "Ataxia",
+    "Neonatal onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

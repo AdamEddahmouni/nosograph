@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'chromosome 13q14 deletion syndrome (CHROMOSOME_13Q14_DELETION_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of chromosome 13q14 deletion syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Everted lower lip vermilion",
+    "Overlapping toe",
+    "Supernumerary nipple",
+    "Hip dislocation",
+    "Congenital onset",
+    "Bulbous nose",
+    "Axial hypotonia",
+    "Single transverse palmar crease",
+    "Chorioretinal coloboma",
+    "Iris coloboma",
+    "Ventricular septal defect",
+    "Thin upper lip vermilion",
+    "Hypoplasia of the corpus callosum",
+    "Dolichocephaly",
+    "High palate",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

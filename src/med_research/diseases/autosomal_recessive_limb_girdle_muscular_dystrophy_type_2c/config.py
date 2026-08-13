@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autosomal recessive limb-girdle muscular dystrophy type 2C (AU
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal recessive limb-girdle muscular dystrophy type 2C
-SYMPTOMS = []
+SYMPTOMS = [
+    "Gowers sign",
+    "Autosomal recessive inheritance",
+    "Calf muscle pseudohypertrophy",
+    "Increased endomysial connective tissue",
+    "Childhood onset",
+    "Hyperlordosis",
+    "Scoliosis",
+    "Muscle fiber splitting",
+    "Muscular dystrophy",
+    "Right ventricular dilatation",
+    "Increased variability in muscle fiber diameter",
+    "Skeletal muscle atrophy",
+    "Loss of ambulation",
+    "Elevated circulating creatine kinase activity",
+    "Pneumonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neonatal intrahepatic cholestasis due to citrin deficiency (NE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neonatal intrahepatic cholestasis due to citrin deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypercholesterolemia",
+    "Elevated circulating aspartate aminotransferase concentration",
+    "Failure to thrive",
+    "Elevated circulating alkaline phosphatase concentration",
+    "Macrovesicular hepatic steatosis",
+    "Hyperthreoninemia",
+    "Hyperlysinemia",
+    "Autosomal recessive inheritance",
+    "Hypertriglyceridemia",
+    "Microvesicular hepatic steatosis",
+    "Hypermethioninemia",
+    "Conjugated hyperbilirubinemia",
+    "Elevated gamma-glutamyltransferase level",
+    "Neonatal onset",
+    "Portal fibrosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

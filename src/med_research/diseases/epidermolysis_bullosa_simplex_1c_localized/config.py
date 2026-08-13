@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'epidermolysis bullosa simplex 1C, localized (EPIDERMOLYSIS_BUL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of epidermolysis bullosa simplex 1C, localized
-SYMPTOMS = []
+SYMPTOMS = [
+    "Stratum basale cleavage",
+    "Milia",
+    "Hyperkeratosis",
+    "Childhood onset",
+    "Palmoplantar blistering",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'chorea, childhood-onset, with psychomotor retardation (CHOREA_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of chorea, childhood-onset, with psychomotor retardation
-SYMPTOMS = []
+SYMPTOMS = [
+    "Intellectual disability",
+    "Autosomal recessive inheritance",
+    "Global developmental delay",
+    "Abnormal head movements",
+    "Involuntary movements",
+    "Poor speech",
+    "Chorea",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

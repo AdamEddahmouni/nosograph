@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'familial encephalopathy with neuroserpin inclusion bodies (FAM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial encephalopathy with neuroserpin inclusion bodies
-SYMPTOMS = []
+SYMPTOMS = [
+    "Distal sensory impairment",
+    "Eosinophilic neuronal inclusion bodies",
+    "Diplopia",
+    "Abnormality of extrapyramidal motor function",
+    "Seizure",
+    "Cerebral atrophy",
+    "Neuronal loss in central nervous system",
+    "Encephalopathy",
+    "Nystagmus",
+    "Gliosis",
+    "Dysarthria",
+    "Myoclonus",
+    "Autosomal dominant inheritance",
+    "Dementia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

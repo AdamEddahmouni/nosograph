@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'leucine-induced hypoglycemia (LEUCINE_INDUCED_HYPOGLYCEMIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of leucine-induced hypoglycemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Strabismus",
+    "Seizure",
+    "Autosomal dominant inheritance",
+    "Hypoglycemia",
+    "Spasticity",
+    "Irritability",
+    "Ataxia",
+    "Neonatal onset",
+    "Intellectual disability",
+    "Hyperinsulinemic hypoglycemia",
+    "Drowsiness",
+    "Hyperreflexia",
+    "Coma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

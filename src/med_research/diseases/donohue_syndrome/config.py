@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Donohue syndrome (DONOHUE_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Donohue syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Precocious puberty",
+    "Hepatomegaly",
+    "Intrauterine growth retardation",
+    "Acanthosis nigricans",
+    "Hirsutism",
+    "Clitoral hypertrophy",
+    "Hypertrophic cardiomyopathy",
+    "Thick lower lip vermilion",
+    "Large hands",
+    "Polyhydramnios",
+    "Delayed skeletal maturation",
+    "Low-set ears",
+    "Pancreatic islet-cell hyperplasia",
+    "Gingival overgrowth",
+    "Congenital onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

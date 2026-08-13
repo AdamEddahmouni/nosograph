@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'cherubism (CHERUBISM)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cherubism
-SYMPTOMS = []
+SYMPTOMS = [
+    "Narrow palate",
+    "Young adult onset",
+    "Round face",
+    "Dental malocclusion",
+    "Childhood onset",
+    "Jaw swelling",
+    "Macular scar",
+    "Multiple impacted teeth",
+    "Autosomal dominant inheritance",
+    "Visual impairment",
+    "Marcus Gunn pupil",
+    "Juvenile onset",
+    "Lower eyelid retraction",
+    "Optic neuropathy",
+    "Central giant cell lesion of the jaw",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

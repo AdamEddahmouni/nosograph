@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'lissencephaly due to TUBA1A mutation (LISSENCEPHALY_DUE_TO_TUB
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lissencephaly due to TUBA1A mutation
-SYMPTOMS = []
+SYMPTOMS = [
+    "Lissencephaly",
+    "Hypoplasia of the corpus callosum",
+    "Generalized hypotonia",
+    "Periventricular laminar heterotopia",
+    "Hypoplasia of the brainstem",
+    "Congenital onset",
+    "Spastic tetraplegia",
+    "Agyria",
+    "Hypotonia",
+    "Global developmental delay",
+    "Agenesis of corpus callosum",
+    "Autosomal dominant inheritance",
+    "Cerebellar vermis hypoplasia",
+    "Generalized tonic seizure",
+    "Motor delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spondyloepiphyseal dysplasia with metatarsal shortening (SPOND
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondyloepiphyseal dysplasia with metatarsal shortening
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Flexion contracture",
+    "Platyspondyly",
+    "Scoliosis",
+    "Osteochondroma",
+    "Irregular vertebral endplates",
+    "Arthralgia",
+    "Short femoral neck",
+    "Coxa vara",
+    "Narrow femoral neck",
+    "Intervertebral space narrowing",
+    "Short metacarpal",
+    "Growth abnormality",
+    "Narrow iliac wing",
+    "Waddling gait",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

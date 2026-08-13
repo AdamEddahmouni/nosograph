@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'immunodeficiency 107, susceptibility to invasive staphylococcu
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 107, susceptibility to invasive staphylococcus aureus infection
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pyoderma gangrenosum",
+    "Juvenile onset",
+    "Immunodeficiency",
+    "Chronic furunculosis",
+    "Autosomal dominant inheritance",
+    "Typified by incomplete penetrance",
+    "Cutaneous abscess",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

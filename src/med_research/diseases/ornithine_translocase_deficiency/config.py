@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'ornithine translocase deficiency (ORNITHINE_TRANSLOCASE_DEFICI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ornithine translocase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperreflexia",
+    "Acute encephalopathy",
+    "Truncal ataxia",
+    "Homocitrullinuria",
+    "Spasticity",
+    "Infantile onset",
+    "Spastic paraparesis",
+    "Episodic vomiting",
+    "Clonus",
+    "Juvenile onset",
+    "Fundus hypopigmentation",
+    "Hyperornithinemia",
+    "Autosomal recessive inheritance",
+    "Lethargy",
+    "Specific learning disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

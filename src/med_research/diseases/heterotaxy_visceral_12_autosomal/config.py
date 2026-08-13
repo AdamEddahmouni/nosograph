@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'heterotaxy, visceral, 12, autosomal (HETEROTAXY_VISCERAL_12_AU
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of heterotaxy, visceral, 12, autosomal
-SYMPTOMS = []
+SYMPTOMS = [
+    "Common atrium",
+    "Congenital onset",
+    "Hypoplastic aortic arch",
+    "Single ventricle",
+    "Patent ductus arteriosus",
+    "Situs inversus totalis",
+    "Abdominal situs ambiguus",
+    "Patent foramen ovale",
+    "Autosomal recessive inheritance",
+    "Pulmonic stenosis",
+    "Levotransposition of the great arteries",
+    "Right aortic arch",
+    "Dextrocardia",
+    "Ventricular septal defect",
+    "Partial anomalous pulmonary venous return",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'supravalvular aortic stenosis (SUPRAVALVULAR_AORTIC_STENOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of supravalvular aortic stenosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pulmonic stenosis",
+    "Autosomal dominant inheritance",
+    "Supravalvular aortic stenosis",
+    "Pulmonary artery stenosis",
+    "Peripheral arterial stenosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

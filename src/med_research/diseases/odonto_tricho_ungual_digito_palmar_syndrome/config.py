@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'odonto-tricho-ungual-digito-palmar syndrome (ODONTO_TRICHO_UNG
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of odonto-tricho-ungual-digito-palmar syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dental malocclusion",
+    "Single transverse palmar crease",
+    "Nail dysplasia",
+    "Prominent interdigital folds",
+    "Autosomal dominant inheritance",
+    "Short distal phalanx of finger",
+    "Short distal phalanx of toe",
+    "Natal tooth",
+    "Nail dystrophy",
+    "Mandibular prognathia",
+    "Short first metatarsal",
+    "Thick vermilion border",
+    "Short 1st metacarpal",
+    "Hypopigmentation of the skin",
+    "Abnormality of hair texture",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

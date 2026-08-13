@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'poikiloderma with neutropenia (POIKILODERMA_WITH_NEUTROPENIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of poikiloderma with neutropenia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Depressed nasal bridge",
+    "Decreased total leukocyte count",
+    "Splenomegaly",
+    "Underdeveloped nasal alae",
+    "Micrognathia",
+    "Nail dystrophy",
+    "Long philtrum",
+    "Recurrent otitis media",
+    "Sparse lateral eyebrow",
+    "Autosomal recessive inheritance",
+    "Short nose",
+    "Telangiectasia",
+    "Midface retrusion",
+    "Skin rash",
+    "Dermal atrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

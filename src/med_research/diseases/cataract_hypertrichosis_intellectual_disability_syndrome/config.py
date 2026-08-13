@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'cataract-hypertrichosis-intellectual disability syndrome (CATA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cataract-hypertrichosis-intellectual disability syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Generalized hypertrichosis",
+    "Lamellar cataract",
+    "Autosomal recessive inheritance",
+    "Intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

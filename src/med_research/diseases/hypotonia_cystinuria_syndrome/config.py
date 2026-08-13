@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hypotonia-cystinuria syndrome (HYPOTONIA_CYSTINURIA_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypotonia-cystinuria syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital onset",
+    "Decreased response to growth hormone stimulation test",
+    "Severe intellectual disability",
+    "Hypergonadotropic hypogonadism",
+    "Delayed ability to walk",
+    "Kidney stone",
+    "Increased circulating lactate concentration",
+    "Generalized hypotonia",
+    "Hypocalcemia",
+    "Macrotia",
+    "Muscle weakness",
+    "Autosomal recessive inheritance",
+    "Global developmental delay",
+    "Ragged-red muscle fibers",
+    "Frontal bossing",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

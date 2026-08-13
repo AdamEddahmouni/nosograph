@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERAN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hereditary fructose intolerance
-SYMPTOMS = []
+SYMPTOMS = [
+    "Coma",
+    "Nausea",
+    "Hyperphosphaturia",
+    "Failure to thrive",
+    "Intellectual disability",
+    "Lethargy",
+    "Vomiting",
+    "Gastrointestinal hemorrhage",
+    "Transient aminoaciduria",
+    "Hypoglycemia",
+    "Abdominal pain",
+    "Hyperbilirubinemia",
+    "Proximal renal tubular acidosis",
+    "Hepatomegaly",
+    "Jaundice",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

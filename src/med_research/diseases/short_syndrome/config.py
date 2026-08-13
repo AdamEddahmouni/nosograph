@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'SHORT syndrome (SHORT_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of SHORT syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Triangular face",
+    "Frontal bossing",
+    "Dental malocclusion",
+    "Sensorineural hearing impairment",
+    "Macrotia",
+    "Premature skin wrinkling",
+    "Joint hypermobility",
+    "Reduced subcutaneous adipose tissue",
+    "Underdeveloped nasal alae",
+    "Delayed skeletal maturation",
+    "Cataract",
+    "Radial deviation of finger",
+    "Myopia",
+    "Hyperglycemia",
+    "Megalocornea",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

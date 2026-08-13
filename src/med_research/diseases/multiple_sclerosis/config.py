@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'multiple sclerosis (MULTIPLE_SCLEROSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of multiple sclerosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "CNS demyelination",
+    "Incoordination",
+    "Diplopia",
+    "Non-Mendelian inheritance",
+    "Paresthesia",
+    "Adult onset",
+    "Urinary hesitancy",
+    "Spasticity",
+    "Depression",
+    "Emotional lability",
+    "Urinary incontinence",
+    "Muscle weakness",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

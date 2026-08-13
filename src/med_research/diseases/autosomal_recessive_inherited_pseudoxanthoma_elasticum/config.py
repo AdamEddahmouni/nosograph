@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autosomal recessive inherited pseudoxanthoma elasticum (AUTOSO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal recessive inherited pseudoxanthoma elasticum
-SYMPTOMS = []
+SYMPTOMS = [
+    "Mitral valve prolapse",
+    "Renovascular hypertension",
+    "Retinal hemorrhage",
+    "Reduced visual acuity",
+    "Cutis laxa",
+    "Restrictive cardiomyopathy",
+    "Angina pectoris",
+    "Macular degeneration",
+    "Angioid streaks",
+    "White oral mucosal macule",
+    "Retinal peau d'orange",
+    "Intermittent claudication",
+    "Decreased DLCO",
+    "Gastrointestinal hemorrhage",
+    "Congestive heart failure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lymphatic malformation 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Juvenile onset",
+    "Infantile onset",
+    "Recurrent skin infections",
+    "Childhood onset",
+    "Autosomal dominant inheritance",
+    "Cellulitis",
+    "Typified by incomplete penetrance",
+    "Lymphedema",
+    "Young adult onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

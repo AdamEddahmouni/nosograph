@@ -8,8 +8,11 @@ PIPELINE_LABEL = "Raynaud disease (RAYNAUDS_DISEASE)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Raynaud disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Raynaud phenomenon",
+    "Autosomal dominant inheritance",
+    "Abnormality of the skeletal system",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

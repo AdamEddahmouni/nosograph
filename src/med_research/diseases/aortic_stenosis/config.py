@@ -8,8 +8,17 @@ PIPELINE_LABEL = "Aortic stenosis (AORTIC_STENOSIS)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Aortic stenosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Mitral stenosis",
+    "Aortic valve calcification",
+    "Tetralogy of Fallot",
+    "Aortic valve stenosis",
+    "Bicuspid aortic valve",
+    "Mitral atresia",
+    "Ventricular septal defect",
+    "Autosomal dominant inheritance",
+    "Double outlet right ventricle",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

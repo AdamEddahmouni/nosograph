@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'spondyloepimetaphyseal dysplasia, Isidor-Toutain type (SPONDYL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondyloepimetaphyseal dysplasia, Isidor-Toutain type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Severe short stature",
+    "Scoliosis",
+    "Short long bone",
+    "Autosomal dominant inheritance",
+    "Genu varum",
+    "Postnatal growth retardation",
+    "Anemia",
+    "Coxa vara",
+    "Irregular femoral epiphysis",
+    "Lower-limb metaphyseal irregularity",
+    "Platyspondyly",
+    "Upper-limb metaphyseal irregularity",
+    "Enlarged metaphyses",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

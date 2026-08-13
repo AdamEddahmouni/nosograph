@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'tyrosinemia type II (TYROSINEMIA_TYPE_II)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of tyrosinemia type II
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypertyrosinemia",
+    "Abnormality of the skin",
+    "Intellectual disability",
+    "Growth delay",
+    "Elevated urine N-acetyltyrosine level",
+    "Autosomal recessive inheritance",
+    "Herpetiform corneal ulceration",
+    "4-Hydroxyphenylpyruvic aciduria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'corneal-cerebellar syndrome (CORNEAL_CEREBELLAR_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of corneal-cerebellar syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Corneal dystrophy",
+    "Intellectual disability",
+    "Spinocerebellar tract degeneration",
+    "Severely reduced visual acuity",
+    "Ataxia",
+    "Corneal stromal edema",
+    "Autosomal recessive inheritance",
+    "Opacification of the corneal stroma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

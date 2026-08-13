@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'peeling skin-leukonuchia-acral punctate keratoses-cheilitis-kn
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of peeling skin-leukonuchia-acral punctate keratoses-cheilitis-knuckle pads syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Angular cheilitis",
+    "Acantholysis",
+    "Oral leukoplakia",
+    "Autosomal recessive inheritance",
+    "Fragile skin",
+    "Hyperkeratosis",
+    "Cheilitis",
+    "Follicular hyperkeratosis",
+    "Onycholysis",
+    "Scaling skin",
+    "Epidermal acanthosis",
+    "Leukonychia",
+    "Abnormal blistering of the skin",
+    "Telangiectases of the cheeks",
+    "Punctate palmoplantar hyperkeratosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

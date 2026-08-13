@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spinocerebellar ataxia type 14 (SPINOCEREBELLAR_ATAXIA_TYPE_14
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spinocerebellar ataxia type 14
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dysarthria",
+    "Dysphagia",
+    "Gait ataxia",
+    "Progressive cerebellar ataxia",
+    "Mental deterioration",
+    "Focal dystonia",
+    "Dysmetria",
+    "Facial myokymia",
+    "Typified by incomplete penetrance",
+    "Impaired vibration sensation at ankles",
+    "Hyperreflexia",
+    "Memory impairment",
+    "Attention deficit hyperactivity disorder",
+    "Slowly progressive",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

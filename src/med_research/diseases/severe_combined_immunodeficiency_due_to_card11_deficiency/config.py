@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'severe combined immunodeficiency due to CARD11 deficiency (SEV
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of severe combined immunodeficiency due to CARD11 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Agammaglobulinemia",
+    "Decreased antigen-specific T cell proliferation",
+    "Decreased circulating immunoglobulin concentration",
+    "Decreased total monocyte count",
+    "Infantile onset",
+    "Immunodeficiency",
+    "Pneumocystis jirovecii pneumonia",
+    "Recurrent respiratory infections",
+    "Autosomal recessive inheritance",
+    "Decreased regulatory T cell proportion",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'familial benign copper deficiency (FAMILIAL_BENIGN_COPPER_DEFI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial benign copper deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased circulating copper concentration",
+    "Autosomal dominant inheritance",
+    "Anemia",
+    "Curly hair",
+    "X-linked inheritance",
+    "Seizure",
+    "Failure to thrive",
+    "Early balding",
+    "Seborrheic dermatitis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

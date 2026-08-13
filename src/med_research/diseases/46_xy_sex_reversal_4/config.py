@@ -8,8 +8,23 @@ PIPELINE_LABEL = '46,XY sex reversal 4 (46_XY_SEX_REVERSAL_4)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of 46,XY sex reversal 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypergonadotropic hypogonadism",
+    "Trigonocephaly",
+    "Upslanted palpebral fissure",
+    "Hydronephrosis",
+    "Hypoplasia of the uterus",
+    "Recurrent otitis media",
+    "Anal atresia",
+    "Gonadal dysgenesis",
+    "Autosomal dominant inheritance",
+    "Elevated circulating creatinine concentration",
+    "Prominent nose",
+    "Increased blood urea nitrogen",
+    "High palate",
+    "Distal symphalangism",
+    "Agonadism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

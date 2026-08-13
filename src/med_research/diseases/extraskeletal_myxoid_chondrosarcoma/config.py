@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'extraskeletal myxoid chondrosarcoma (EXTRASKELETAL_MYXOID_CHON
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of extraskeletal myxoid chondrosarcoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Typified by somatic mosaicism",
+    "Chondrosarcoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

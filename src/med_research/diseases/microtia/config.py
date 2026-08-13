@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'microtia (MICROTIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of microtia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Holoprosencephaly",
+    "Autosomal dominant inheritance",
+    "Anotia",
+    "Microtia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

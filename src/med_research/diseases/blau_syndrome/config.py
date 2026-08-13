@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Blau syndrome (BLAU_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Blau syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Tendonitis",
+    "Synovitis",
+    "Arthritis",
+    "Eczematoid dermatitis",
+    "Intermittent generalized erythematous papular rash",
+    "Abnormal cranial nerve morphology",
+    "Glaucoma",
+    "Pericarditis",
+    "Band keratopathy",
+    "Camptodactyly of finger",
+    "Erythema nodosum",
+    "Iritis",
+    "Cataract",
+    "Joint swelling",
+    "Cystoid macular edema",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

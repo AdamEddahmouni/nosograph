@@ -8,8 +8,12 @@ PIPELINE_LABEL = "Chronic myeloid leukemia (CHRONIC_MYELOID_LEUKEMIA)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Chronic myeloid leukemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Chronic myelogenous leukemia",
+    "Typified by somatic mosaicism",
+    "Ph-positive acute lymphoblastic leukemia",
+    "Reduced leukocyte alkaline phosphatase",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

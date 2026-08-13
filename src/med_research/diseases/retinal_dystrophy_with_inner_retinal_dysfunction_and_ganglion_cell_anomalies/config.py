@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'retinal dystrophy with inner retinal dysfunction and ganglion 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of retinal dystrophy with inner retinal dysfunction and ganglion cell anomalies
-SYMPTOMS = []
+SYMPTOMS = [
+    "Retinal dystrophy",
+    "Nyctalopia",
+    "Central scotoma",
+    "Reduced visual acuity",
+    "Optic disc pallor",
+    "Middle age onset",
+    "Autosomal dominant inheritance",
+    "Young adult onset",
+    "Photophobia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

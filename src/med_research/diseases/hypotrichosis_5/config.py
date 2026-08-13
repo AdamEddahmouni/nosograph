@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'hypotrichosis 5 (HYPOTRICHOSIS_5)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypotrichosis 5
-SYMPTOMS = []
+SYMPTOMS = [
+    "Absent axillary hair",
+    "Congenital onset",
+    "Thin eyebrow",
+    "Sparse eyelashes",
+    "Abnormality of the dentition",
+    "Abnormal nail morphology",
+    "Alopecia",
+    "Autosomal dominant inheritance",
+    "Abnormal sweat gland morphology",
+    "Hearing abnormality",
+    "Absent pubic hair",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

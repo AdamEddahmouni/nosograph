@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autosomal dominant Kenny-Caffey syndrome (AUTOSOMAL_DOMINANT_K
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal dominant Kenny-Caffey syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Intellectual disability",
+    "Microphthalmia",
+    "Congenital onset",
+    "Basal ganglia calcification",
+    "Abnormally high-pitched voice",
+    "Hypermetropia",
+    "Retinal calcification",
+    "Developmental cataract",
+    "Autosomal dominant inheritance",
+    "Anemia",
+    "Papilledema",
+    "Thickened cortex of long bones",
+    "Abnormality of the medullary cavity of the long bones",
+    "Small for gestational age",
+    "Hypoparathyroidism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

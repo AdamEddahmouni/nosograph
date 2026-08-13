@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'multiple congenital anomalies-neurodevelopmental syndrome, X-l
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of multiple congenital anomalies-neurodevelopmental syndrome, X-linked
-SYMPTOMS = []
+SYMPTOMS = [
+    "Macrocephaly",
+    "Craniosynostosis",
+    "Microcephaly",
+    "Optic nerve hypoplasia",
+    "Hypotonia",
+    "Telecanthus",
+    "Posteriorly rotated ears",
+    "Hypospadias",
+    "Congenital onset",
+    "Hypermetropia",
+    "Decreased total leukocyte count",
+    "X-linked recessive inheritance",
+    "Strabismus",
+    "Decreased circulating folate concentration",
+    "Arachnoid cyst",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

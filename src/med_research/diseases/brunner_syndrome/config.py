@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'Brunner syndrome (BRUNNER_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Brunner syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Kinetic tremor",
+    "Low frustration tolerance",
+    "Diarrhea",
+    "Flushing",
+    "Headache",
+    "Aggressive behavior",
+    "Motor delay",
+    "Intellectual disability",
+    "Impulsivity",
+    "X-linked recessive inheritance",
+    "Autism",
+    "Self-injurious behavior",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

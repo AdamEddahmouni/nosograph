@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'acrokeratosis verruciformis (ACROKERATOSIS_VERRUCIFORMIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of acrokeratosis verruciformis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperkeratosis",
+    "Acrokeratosis",
+    "Acantholysis",
+    "Congenital onset",
+    "Punctate palmoplantar hyperkeratosis",
+    "Ridged nail",
+    "Autosomal dominant inheritance",
+    "Epidermal acanthosis",
+    "Verrucous papule",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

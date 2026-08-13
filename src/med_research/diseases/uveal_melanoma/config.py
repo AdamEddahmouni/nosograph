@@ -8,8 +8,10 @@ PIPELINE_LABEL = "Uveal melanoma (UVEAL_MELANOMA)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Uveal melanoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Uveal melanoma",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

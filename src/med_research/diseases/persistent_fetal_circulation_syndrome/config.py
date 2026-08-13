@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'persistent fetal circulation syndrome (PERSISTENT_FETAL_CIRCUL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of persistent fetal circulation syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Patent ductus arteriosus",
+    "Clinodactyly of the 5th finger",
+    "Congenital onset",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

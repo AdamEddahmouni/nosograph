@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'GRN-related frontotemporal lobar degeneration with Tdp43 inclu
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of GRN-related frontotemporal lobar degeneration with Tdp43 inclusions
-SYMPTOMS = []
+SYMPTOMS = [
+    "Neurofibrillary tangles",
+    "Polyphagia",
+    "Frontotemporal dementia",
+    "Progressive language deterioration",
+    "Personality changes",
+    "Autosomal dominant inheritance",
+    "Neuronal loss in central nervous system",
+    "Memory impairment",
+    "Cerebral cortical atrophy",
+    "Disinhibition",
+    "Perseverative thought",
+    "Parkinsonism",
+    "Aphasia",
+    "Amplification of sexual behavior",
+    "Apraxia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

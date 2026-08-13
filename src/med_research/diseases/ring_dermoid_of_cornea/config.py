@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'ring dermoid of cornea (RING_DERMOID_OF_CORNEA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ring dermoid of cornea
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal cornea morphology",
+    "Amblyopia",
+    "Conjunctival dermolipoma",
+    "Corneal astigmatism",
+    "Abnormal corneal limbus morphology",
+    "Abnormal conjunctiva morphology",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

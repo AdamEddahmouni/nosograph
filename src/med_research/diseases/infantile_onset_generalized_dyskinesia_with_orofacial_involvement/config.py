@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'infantile-onset generalized dyskinesia with orofacial involvem
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of infantile-onset generalized dyskinesia with orofacial involvement
-SYMPTOMS = []
+SYMPTOMS = [
+    "Infantile onset",
+    "Hyperkinetic movements",
+    "Orofacial dyskinesia",
+    "Unsteady gait",
+    "Chorea",
+    "Hemiballismus",
+    "Seizure",
+    "Tremor",
+    "Autosomal recessive inheritance",
+    "Feeding difficulties",
+    "Axial hypotonia",
+    "Motor delay",
+    "Drooling",
+    "Dyskinesia",
+    "Dysarthria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

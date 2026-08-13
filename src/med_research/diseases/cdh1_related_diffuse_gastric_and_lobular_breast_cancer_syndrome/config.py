@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'CDH1-related diffuse gastric and lobular breast cancer syndrom
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of CDH1-related diffuse gastric and lobular breast cancer syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Stomach cancer",
+    "Atrophic gastritis",
+    "Cleft palate",
+    "Autosomal dominant inheritance",
+    "Cleft upper lip",
+    "Adult onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

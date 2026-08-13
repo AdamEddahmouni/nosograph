@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'amelogenesis imperfecta type 1G (AMELOGENESIS_IMPERFECTA_TYPE_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of amelogenesis imperfecta type 1G
-SYMPTOMS = []
+SYMPTOMS = [
+    "Overgrowth",
+    "Nephrocalcinosis",
+    "Dagger-shaped pulp calcifications",
+    "Autosomal recessive inheritance",
+    "Gingival overgrowth",
+    "Polyuria",
+    "Renal insufficiency",
+    "Delayed eruption of permanent teeth",
+    "Enuresis",
+    "Impaired renal concentrating ability",
+    "Amelogenesis imperfecta",
+    "Gingival fibromatosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

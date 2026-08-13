@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'zinc deficiency, transient neonatal (ZINC_DEFICIENCY_TRANSIENT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of zinc deficiency, transient neonatal
-SYMPTOMS = []
+SYMPTOMS = [
+    "Alopecia",
+    "Eczematoid dermatitis",
+    "Decreased serum zinc",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

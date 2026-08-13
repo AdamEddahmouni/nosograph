@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'myofibrillar myopathy 4 (MYOFIBRILLAR_MYOPATHY_4)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of myofibrillar myopathy 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Progressive proximal muscle weakness",
+    "Autophagic vacuoles",
+    "Late onset",
+    "Cardiomyopathy",
+    "Progressive distal muscle weakness",
+    "Myofibrillar myopathy",
+    "Autosomal dominant inheritance",
+    "Progressive muscle weakness",
+    "EMG: myopathic abnormalities",
+    "Elevated circulating creatine kinase activity",
+    "Muscle fiber splitting",
+    "Polyneuropathy",
+    "Hyporeflexia of lower limbs",
+    "EMG: neuropathic changes",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'immunodeficiency 72 with autoinflammation (IMMUNODEFICIENCY_72
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 72 with autoinflammation
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased circulating IgE concentration",
+    "Increased memory T cell proportion",
+    "Increased circulating IgG concentration",
+    "Recurrent otitis media",
+    "Autosomal recessive inheritance",
+    "HSV encephalitis",
+    "Recurrent infections",
+    "Clubbing of fingers",
+    "Infantile onset",
+    "Lymphadenopathy",
+    "Unusual molluscum contagiosum",
+    "Bronchiectasis",
+    "Hepatosplenomegaly",
+    "Increased total B cell count",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

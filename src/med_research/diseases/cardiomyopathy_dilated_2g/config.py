@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cardiomyopathy, dilated, 2G
-SYMPTOMS = []
+SYMPTOMS = [
+    "Aortic regurgitation",
+    "Monomorphic ventricular tachycardia",
+    "Cardiogenic shock",
+    "Dilated cardiomyopathy",
+    "Multifocal atrial tachycardia",
+    "Congenital onset",
+    "Mitral regurgitation",
+    "Paroxysmal ventricular tachycardia",
+    "Left atrial enlargement",
+    "Autosomal recessive inheritance",
+    "Severely reduced left ventricular ejection fraction",
+    "Cerebral hemorrhage",
+    "Neonatal death",
+    "Tachycardia",
+    "Myofiber disarray",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'progressive familial intrahepatic cholestasis type 1 (PROGRESS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of progressive familial intrahepatic cholestasis type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Splenomegaly",
+    "Juvenile onset",
+    "Autosomal recessive inheritance",
+    "Osteopenia",
+    "Diarrhea",
+    "Fat malabsorption",
+    "Jaundice",
+    "Wheezing",
+    "Epistaxis",
+    "Hepatomegaly",
+    "Pruritus",
+    "Infantile onset",
+    "Cholelithiasis",
+    "Cirrhosis",
+    "Intrahepatic cholestasis with episodic jaundice",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

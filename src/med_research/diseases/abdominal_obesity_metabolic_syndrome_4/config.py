@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_META
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of abdominal obesity-metabolic syndrome 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Accelerated atherosclerosis",
+    "Obesity",
+    "Myocardial infarction",
+    "Elevated circulating LDL-C concentration",
+    "Hypertension",
+    "Type II diabetes mellitus",
+    "Decreased circulating HDL-C concentration",
+    "Autosomal dominant inheritance",
+    "Coronary artery atherosclerosis",
+    "Hypertriglyceridemia",
+    "Elevated hemoglobin A1c",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

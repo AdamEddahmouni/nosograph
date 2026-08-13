@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'arthrogryposis multiplex congenita 2, neurogenic type (ARTHROG
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of arthrogryposis multiplex congenita 2, neurogenic type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital onset",
+    "Abnormal cardiovascular system morphology",
+    "Myopathy",
+    "Skeletal muscle atrophy",
+    "Congenital contracture",
+    "Talipes equinovarus",
+    "Autosomal recessive inheritance",
+    "Arthrogryposis multiplex congenita",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

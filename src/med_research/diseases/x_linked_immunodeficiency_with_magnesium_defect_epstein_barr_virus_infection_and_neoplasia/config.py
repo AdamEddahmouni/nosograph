@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'X-linked immunodeficiency with magnesium defect, Epstein-Barr 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked immunodeficiency with magnesium defect, Epstein-Barr virus infection and neoplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hodgkin lymphoma",
+    "Persistent EBV viremia",
+    "Bronchiectasis",
+    "Decreased total CD4+ T cell proportion",
+    "Persistent CMV viremia",
+    "Recurrent sinusitis",
+    "Recurrent bronchitis",
+    "Young adult onset",
+    "Lymphadenopathy",
+    "Chronic active EBV infection",
+    "Decreased T cell activation",
+    "Recurrent respiratory infections",
+    "Recurrent otitis media",
+    "Juvenile onset",
+    "Mediastinal lymphadenopathy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

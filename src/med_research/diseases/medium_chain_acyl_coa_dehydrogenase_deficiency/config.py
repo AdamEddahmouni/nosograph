@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'medium chain acyl-CoA dehydrogenase deficiency (MEDIUM_CHAIN_A
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of medium chain acyl-CoA dehydrogenase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Vomiting",
+    "Lethargy",
+    "Hepatic steatosis",
+    "Reduced tissue medium-chain acyl-CoA dehydrogenase activity",
+    "Hypotonia",
+    "Cerebral edema",
+    "Decreased circulating carnitine concentration",
+    "Hepatomegaly",
+    "Seizure",
+    "Hyperglycinuria",
+    "Autosomal recessive inheritance",
+    "Medium chain dicarboxylic aciduria",
+    "Coma",
+    "Global developmental delay",
+    "Hypoglycemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

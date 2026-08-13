@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'combined immunodeficiency due to GINS1 deficiency (COMBINED_IM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of combined immunodeficiency due to GINS1 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Third trimester onset",
+    "Recurrent skin infections",
+    "Abnormal facial shape",
+    "Myelodysplasia",
+    "Recurrent infections",
+    "Absent natural killer cells",
+    "Eczematoid dermatitis",
+    "Diarrhea",
+    "Microcephaly",
+    "Short stature",
+    "Intrauterine growth retardation",
+    "Lymphadenopathy",
+    "Ichthyosis",
+    "Dry skin",
+    "Decreased total neutrophil count",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

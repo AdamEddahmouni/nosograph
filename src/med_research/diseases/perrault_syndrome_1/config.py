@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Perrault syndrome 1 (PERRAULT_SYNDROME_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Perrault syndrome 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Gonadal dysgenesis",
+    "Cerebellar atrophy",
+    "Dysarthria",
+    "Motor delay",
+    "Pes cavus",
+    "Talipes equinovarus",
+    "Limited extraocular movements",
+    "Increased circulating gonadotropin level",
+    "Spastic diplegia",
+    "Hyporeflexia",
+    "Intention tremor",
+    "Sensorimotor neuropathy",
+    "Short stature",
+    "Autosomal recessive inheritance",
+    "Areflexia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

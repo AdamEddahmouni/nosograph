@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'congenital hereditary endothelial dystrophy of cornea (CONGENI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital hereditary endothelial dystrophy of cornea
-SYMPTOMS = []
+SYMPTOMS = [
+    "Opacification of the corneal stroma",
+    "Increased corneal thickness",
+    "Corneal dystrophy",
+    "Autosomal recessive inheritance",
+    "Abnormal Descemet membrane morphology",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

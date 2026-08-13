@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Pyle disease (PYLE_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Pyle disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Platyspondyly",
+    "Thickened calvaria",
+    "Absent paranasal sinuses",
+    "Metaphyseal dysplasia",
+    "Arthralgia",
+    "Carious teeth",
+    "Autosomal recessive inheritance",
+    "Hypoplastic frontal sinuses",
+    "Juvenile onset",
+    "Childhood onset",
+    "Limited elbow extension",
+    "Thin bony cortex",
+    "Muscle weakness",
+    "Mandibular prognathia",
+    "Scoliosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

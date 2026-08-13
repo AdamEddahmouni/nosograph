@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'visceral neuropathy, familial, 1, autosomal recessive (VISCERA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of visceral neuropathy, familial, 1, autosomal recessive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal autonomic nervous system physiology",
+    "Arthrogryposis multiplex congenita",
+    "Colonic diverticula",
+    "Intestinal malrotation",
+    "Vomiting",
+    "Episodic abdominal pain",
+    "Impaired proprioception",
+    "Gait ataxia",
+    "Hearing impairment",
+    "Impaired vibratory sensation",
+    "Atresia of the external auditory canal",
+    "Intestinal pseudo-obstruction",
+    "Ptosis",
+    "Aplasia of the olfactory bulb",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

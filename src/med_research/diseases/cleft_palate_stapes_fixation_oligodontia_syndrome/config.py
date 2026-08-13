@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'cleft palate-stapes fixation-oligodontia syndrome (CLEFT_PALAT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cleft palate-stapes fixation-oligodontia syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short hallux",
+    "Oligodontia of primary teeth",
+    "Agenesis of permanent teeth",
+    "Bilateral conductive hearing impairment",
+    "Sandal gap",
+    "Autosomal recessive inheritance",
+    "Cleft soft palate",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondyloepimetaphyseal dysplasia, Guo-Campeau type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Brachydactyly",
+    "Asthma",
+    "Microtia",
+    "Antenatal onset",
+    "High palate",
+    "Ventricular septal defect",
+    "Velopharyngeal insufficiency",
+    "Short foot",
+    "Osteopenia",
+    "Tricuspid regurgitation",
+    "Congenital onset",
+    "Vesicoureteral reflux",
+    "Hydronephrosis",
+    "Trigonocephaly",
+    "Generalized hypotonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

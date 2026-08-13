@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'immunodeficiency 78 with autoimmunity and developmental delay 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 78 with autoimmunity and developmental delay
-SYMPTOMS = []
+SYMPTOMS = [
+    "Fluctuating splenomegaly",
+    "Autoimmune thrombocytopenia",
+    "Childhood onset",
+    "Mild global developmental delay",
+    "Global developmental delay",
+    "Autoimmune neutropenia",
+    "Increased circulating IgG concentration",
+    "Increased circulating IgM concentration",
+    "Recurrent lower respiratory tract infections",
+    "Recurrent otitis media",
+    "Facial papilloma",
+    "Autoimmune hemolytic anemia",
+    "Persistent CMV viremia",
+    "Autosomal recessive inheritance",
+    "Bronchiectasis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

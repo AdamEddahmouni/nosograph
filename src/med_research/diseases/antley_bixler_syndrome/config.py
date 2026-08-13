@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Antley-Bixler syndrome (ANTLEY_BIXLER_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Antley-Bixler syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hydrocephalus",
+    "Rocker bottom foot",
+    "Malar flattening",
+    "Intellectual disability",
+    "Camptodactyly",
+    "Narrow chest",
+    "Humeroradial synostosis",
+    "Autosomal dominant inheritance",
+    "Choanal atresia",
+    "Vaginal atresia",
+    "Depressed nasal bridge",
+    "Coronal craniosynostosis",
+    "Choanal stenosis",
+    "Brachycephaly",
+    "Ulnar bowing",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

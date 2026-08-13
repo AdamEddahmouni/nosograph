@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'optic atrophy 2 (OPTIC_ATROPHY_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of optic atrophy 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dysdiadochokinesis",
+    "Babinski sign",
+    "Intellectual disability",
+    "Absent Achilles reflex",
+    "X-linked inheritance",
+    "Dysarthria",
+    "Tremor",
+    "Hyperactive patellar reflex",
+    "Optic atrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

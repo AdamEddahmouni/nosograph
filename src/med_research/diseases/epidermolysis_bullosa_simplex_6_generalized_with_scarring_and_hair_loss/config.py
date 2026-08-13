@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'epidermolysis bullosa simplex 6, generalized, with scarring an
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of epidermolysis bullosa simplex 6, generalized, with scarring and hair loss
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Dermal atrophy",
+    "Diffuse palmoplantar hyperkeratosis",
+    "Hypopigmentation of the skin",
+    "Alopecia of scalp",
+    "Congenital onset",
+    "Abnormal blistering of the skin",
+    "Alopecia",
+    "Dystrophic toenail",
+    "Sparse body hair",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

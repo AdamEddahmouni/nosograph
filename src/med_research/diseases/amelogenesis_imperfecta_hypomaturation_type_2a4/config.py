@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'amelogenesis imperfecta hypomaturation type 2A4 (AMELOGENESIS_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of amelogenesis imperfecta hypomaturation type 2A4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Enamel hypoplasia",
+    "Enamel hypomineralization",
+    "Amelogenesis imperfecta",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

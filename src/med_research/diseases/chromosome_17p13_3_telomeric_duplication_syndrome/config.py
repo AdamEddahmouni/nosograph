@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'chromosome 17P13.3, telomeric, duplication syndrome (CHROMOSOM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of chromosome 17P13.3, telomeric, duplication syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital onset",
+    "Autosomal dominant inheritance",
+    "Absent hallux",
+    "Split hand",
+    "Camptodactyly",
+    "Talipes equinovarus",
+    "Short toe",
+    "Contracture of the proximal interphalangeal joint of the 3rd finger",
+    "Absent tibia",
+    "Contracture of the proximal interphalangeal joint of the 4th finger",
+    "3-4 finger cutaneous syndactyly",
+    "Short tibia",
+    "Finger symphalangism",
+    "Absent toe",
+    "Short metacarpal",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

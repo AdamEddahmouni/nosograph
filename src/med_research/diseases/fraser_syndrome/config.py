@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Fraser syndrome (FRASER_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Fraser syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal cortical gyration",
+    "Anal atresia",
+    "Abnormal heart morphology",
+    "Respiratory failure",
+    "Short toe",
+    "Calvarial skull defect",
+    "Blindness",
+    "Unilateral renal agenesis",
+    "Seizure",
+    "Aplasia/Hypoplasia of the phalanges of the hand",
+    "Underdeveloped nasal alae",
+    "Cleft palate",
+    "Wide nose",
+    "Encephalocele",
+    "Oligohydramnios",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

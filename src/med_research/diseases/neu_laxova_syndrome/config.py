@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Neu-Laxova syndrome (NEU_LAXOVA_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Neu-Laxova syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cerebellar hypoplasia",
+    "Small placenta",
+    "Calcaneovalgus deformity",
+    "Congenital onset",
+    "Autosomal recessive inheritance",
+    "Broad neck",
+    "Lissencephaly",
+    "Toe syndactyly",
+    "Macrotia",
+    "Cataract",
+    "Clinodactyly",
+    "Scoliosis",
+    "Pterygium",
+    "Stillbirth",
+    "Polyhydramnios",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'autosomal dominant limb-girdle muscular dystrophy type 1H (AUT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal dominant limb-girdle muscular dystrophy type 1H
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated circulating creatine kinase activity",
+    "Muscle weakness",
+    "Centrally nucleated skeletal muscle fibers",
+    "Calf muscle hypertrophy",
+    "Autosomal dominant inheritance",
+    "Hyporeflexia",
+    "Variable expressivity",
+    "Typified by incomplete penetrance",
+    "Increased connective tissue",
+    "Shoulder girdle muscle atrophy",
+    "Muscular dystrophy",
+    "Slowly progressive",
+    "Proximal muscle weakness",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

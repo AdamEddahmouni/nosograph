@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'sterile multifocal osteomyelitis with periostitis and pustulos
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of sterile multifocal osteomyelitis with periostitis and pustulosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pulmonary fibrosis",
+    "Pustule",
+    "Increased total neutrophil count",
+    "Autosomal recessive inheritance",
+    "Elevated erythrocyte sedimentation rate",
+    "Arthralgia",
+    "Joint swelling",
+    "Osteomyelitis",
+    "Osteolysis",
+    "Fused cervical vertebrae",
+    "Osteopenia",
+    "Periostitis",
+    "Abscess",
+    "Stomatitis",
+    "Motor delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

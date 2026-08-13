@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'MALT lymphoma (MALT_LYMPHOMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of MALT lymphoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Gastric lymphoma",
+    "Adult onset",
+    "Typified by somatic mosaicism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

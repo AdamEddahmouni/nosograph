@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'pseudohypoparathyroidism type 2 (PSEUDOHYPOPARATHYROIDISM_TYPE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pseudohypoparathyroidism type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypocalcemia",
+    "Elevated circulating parathyroid hormone level",
+    "Hyperphosphatemia",
+    "Sporadic",
+    "Pseudohypoparathyroidism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

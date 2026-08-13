@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'congenital disorder of glycosylation type I (CONGENITAL_DISORD
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital disorder of glycosylation type I
-SYMPTOMS = []
+SYMPTOMS = [
+    "Global developmental delay",
+    "Abnormal glycosylation",
+    "Death in childhood",
+    "Global brain atrophy",
+    "Pseudobulbar paralysis",
+    "Epileptic encephalopathy",
+    "Intellectual disability",
+    "Axial hypotonia",
+    "Hypotonia",
+    "Renal tubular acidosis",
+    "Progressive",
+    "Hearing impairment",
+    "Anisopoikilocytosis",
+    "Generalized hypotonia",
+    "Bilateral tonic-clonic seizure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

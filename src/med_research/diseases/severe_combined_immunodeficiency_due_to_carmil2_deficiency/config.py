@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'severe combined immunodeficiency due to CARMIL2 deficiency (SE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of severe combined immunodeficiency due to CARMIL2 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Recurrent upper respiratory tract infections",
+    "Recurrent cutaneous abscess formation",
+    "Nasal congestion",
+    "Neonatal onset",
+    "Recurrent respiratory infections",
+    "Recurrent aphthous stomatitis",
+    "Seborrheic dermatitis",
+    "Dysphagia",
+    "Eczematoid dermatitis",
+    "Psoriasiform lesion",
+    "Chronic otitis media",
+    "Ichthyosis",
+    "Atrophic scars",
+    "Colitis",
+    "Recurrent pneumonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

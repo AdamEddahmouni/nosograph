@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'primary immunodeficiency syndrome due to p14 deficiency (PRIMA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of primary immunodeficiency syndrome due to p14 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short stature",
+    "Autosomal recessive inheritance",
+    "Hypopigmentation of the skin",
+    "Recurrent bronchopulmonary infections",
+    "Decreased total neutrophil count",
+    "Coarse facial features",
+    "Decreased circulating IgM concentration",
+    "Immunodeficiency",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

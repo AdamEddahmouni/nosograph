@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial hyperaldosteronism
-SYMPTOMS = []
+SYMPTOMS = [
+    "Juvenile onset",
+    "Increased circulating aldosterone concentration",
+    "Childhood onset",
+    "Hypertension",
+    "Elevated aldosterone:renin ratio",
+    "Autosomal dominant inheritance",
+    "Infantile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

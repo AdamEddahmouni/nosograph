@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'axial spondylometaphyseal dysplasia (AXIAL_SPONDYLOMETAPHYSEAL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of axial spondylometaphyseal dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Retinal degeneration",
+    "Rod-cone dystrophy",
+    "Splenomegaly",
+    "Reduced sperm motility",
+    "Thoracic hypoplasia",
+    "Coxa vara",
+    "Juvenile onset",
+    "Anterior rib cupping",
+    "Autosomal recessive inheritance",
+    "Restrictive ventilatory defect",
+    "Short femoral neck",
+    "Scoliosis",
+    "Proximal femoral metaphyseal irregularity",
+    "Optic atrophy",
+    "Childhood onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

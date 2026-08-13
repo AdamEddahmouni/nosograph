@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'congenital dyserythropoietic anemia type 2 (CONGENITAL_DYSERYT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital dyserythropoietic anemia type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Jaundice",
+    "Juvenile onset",
+    "Childhood onset",
+    "Young adult onset",
+    "Reticulocytosis",
+    "Middle age onset",
+    "Reduced level of N-acetylglucosaminyltransferase II",
+    "Anemia of inadequate production",
+    "Splenomegaly",
+    "Autosomal recessive inheritance",
+    "Infantile onset",
+    "Late onset",
+    "Endopolyploidy on chromosome studies of bone marrow",
+    "Cholelithiasis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

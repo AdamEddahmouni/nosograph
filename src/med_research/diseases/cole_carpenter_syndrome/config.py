@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Cole-Carpenter syndrome (COLE_CARPENTER_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Cole-Carpenter syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Downslanted palpebral fissures",
+    "Midface retrusion",
+    "Autosomal recessive inheritance",
+    "Proptosis",
+    "Narrow iliac wing",
+    "Delayed fine motor development",
+    "High palate",
+    "Hydrocephalus",
+    "Hypotonia",
+    "Popcorn calcification",
+    "Wide cranial sutures",
+    "Infantile onset",
+    "Orbital craniosynostosis",
+    "Blue sclerae",
+    "Vertebral compression fracture",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'growth retardation, intellectual developmental disorder, hypot
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of growth retardation, intellectual developmental disorder, hypotonia, and hepatopathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Seizure",
+    "Elevated circulating aspartate aminotransferase concentration",
+    "Small for gestational age",
+    "Round face",
+    "Sensorineural hearing impairment",
+    "Intrahepatic cholestasis",
+    "Spasticity",
+    "Elevated gamma-glutamyltransferase level",
+    "Hypoglycemia",
+    "Autosomal recessive inheritance",
+    "Failure to thrive",
+    "Absent speech",
+    "Hepatic steatosis",
+    "Hyperammonemia",
+    "Primary microcephaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

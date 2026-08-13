@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'partial androgen insensitivity syndrome (PARTIAL_ANDROGEN_INSE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of partial androgen insensitivity syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Gynecomastia",
+    "Perineal hypospadias",
+    "Cryptorchidism",
+    "Azoospermia",
+    "X-linked recessive inheritance",
+    "Absent vas deferens",
+    "Micropenis",
+    "Infertility",
+    "Hypogonadism",
+    "Abnormal rib cage morphology",
+    "Male pseudohermaphroditism",
+    "Bifid scrotum",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

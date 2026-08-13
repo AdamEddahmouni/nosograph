@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'X-linked retinal dysplasia (X_LINKED_RETINAL_DYSPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked retinal dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Retinal dysplasia",
+    "Falciform retinal fold",
+    "X-linked inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

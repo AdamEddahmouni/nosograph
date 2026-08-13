@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'hemolytic anemia due to diphosphoglycerate mutase deficiency (
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hemolytic anemia due to diphosphoglycerate mutase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Reduced erythrocyte bisphosphoglycerate mutase activity",
+    "Increased hematocrit",
+    "Adult onset",
+    "Increased circulating hemoglobin concentration",
+    "Autosomal recessive inheritance",
+    "Polycythemia",
+    "Splenomegaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

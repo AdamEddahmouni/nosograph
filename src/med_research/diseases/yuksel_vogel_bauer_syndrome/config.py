@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Yuksel-Vogel-Bauer syndrome (YUKSEL_VOGEL_BAUER_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Yuksel-Vogel-Bauer syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital onset",
+    "Broad foot",
+    "Joint contracture of the hand",
+    "Communicating hydrocephalus",
+    "Hydronephrosis",
+    "Atrial septal defect",
+    "Cleft lip",
+    "Autosomal recessive inheritance",
+    "Renal cortical hyperechogenicity",
+    "Ventricular septal defect",
+    "Global developmental delay",
+    "Dystonia",
+    "Cleft palate",
+    "Renal salt wasting",
+    "Noncommunicating hydrocephalus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

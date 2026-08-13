@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'polyglucosan body myopathy 1 with or without immunodeficiency 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of polyglucosan body myopathy 1 with or without immunodeficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Inflammation of the large intestine",
+    "Neonatal onset",
+    "Cholestasis",
+    "Growth delay",
+    "Cardiomyopathy",
+    "Autosomal recessive inheritance",
+    "Splenomegaly",
+    "Recurrent fever",
+    "Seizure",
+    "Infantile onset",
+    "Elevated circulating creatine kinase activity",
+    "Metabolic acidosis",
+    "Immunodeficiency",
+    "Vesicoureteral reflux",
+    "Abdominal pain",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'chronic pancreatitis (CHRONIC_PANCREATITIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of chronic pancreatitis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pleural effusion",
+    "Abnormal thrombosis",
+    "Chronic pancreatitis",
+    "Autosomal recessive inheritance",
+    "Exocrine pancreatic insufficiency",
+    "Neoplasm of the pancreas",
+    "Pancreatic pseudocyst",
+    "Abdominal pain",
+    "Insulin-dependent but ketosis-resistant diabetes",
+    "Steatorrhea",
+    "Fever",
+    "Autosomal dominant inheritance",
+    "Pancreatic calcification",
+    "Pancreatitis",
+    "Diabetes mellitus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

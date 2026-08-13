@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'chromosome 22q11.2 deletion syndrome, distal (CHROMOSOME_22Q11
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of chromosome 22q11.2 deletion syndrome, distal
-SYMPTOMS = []
+SYMPTOMS = [
+    "Intrauterine growth retardation",
+    "Smooth philtrum",
+    "Malar flattening",
+    "Cleft palate",
+    "Short stature",
+    "Truncus arteriosus",
+    "Deeply set eye",
+    "Pointed chin",
+    "Highly arched eyebrow",
+    "Underdeveloped nasal alae",
+    "Atypical behavior",
+    "Thin upper lip vermilion",
+    "Small for gestational age",
+    "Abnormality of the face",
+    "Abnormal cardiovascular system morphology",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

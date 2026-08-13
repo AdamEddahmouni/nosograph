@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Niemann-Pick disease type C (NIEMANN_PICK_DISEASE_TYPE_C)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Niemann-Pick disease type C
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dementia",
+    "Ataxia",
+    "Dysphagia",
+    "Intellectual disability",
+    "Juvenile onset",
+    "Gait ataxia",
+    "Death in infancy",
+    "Hypotonia",
+    "Unesterified cholesterol accumulation in cultured fibroblasts",
+    "Neonatal onset",
+    "Jaundice",
+    "Motor stereotypy",
+    "Fetal ascites",
+    "Autosomal recessive inheritance",
+    "Splenomegaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

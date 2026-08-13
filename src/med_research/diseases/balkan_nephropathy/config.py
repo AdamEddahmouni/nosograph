@@ -8,8 +8,9 @@ PIPELINE_LABEL = 'Balkan nephropathy (BALKAN_NEPHROPATHY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Balkan nephropathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nephropathy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

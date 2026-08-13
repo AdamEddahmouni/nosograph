@@ -8,8 +8,17 @@ PIPELINE_LABEL = '2-aminoadipic 2-oxoadipic aciduria (2_AMINOADIPIC_2_OXOADIPIC_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of 2-aminoadipic 2-oxoadipic aciduria
-SYMPTOMS = []
+SYMPTOMS = [
+    "Global developmental delay",
+    "Microcephaly",
+    "Hypotonia",
+    "Attention deficit hyperactivity disorder",
+    "2-hydroxyadipic aciduria",
+    "Autosomal recessive inheritance",
+    "Alpha-aminoadipic aciduria",
+    "Mild global developmental delay",
+    "Delayed speech and language development",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

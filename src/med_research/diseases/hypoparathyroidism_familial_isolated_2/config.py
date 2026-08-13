@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'hypoparathyroidism, familial isolated, 2 (HYPOPARATHYROIDISM_F
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypoparathyroidism, familial isolated, 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperphosphatemia",
+    "Hypocalcemia",
+    "Hypocalcemic seizures",
+    "Decreased circulating parathyroid hormone level",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

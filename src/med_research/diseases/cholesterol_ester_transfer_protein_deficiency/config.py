@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'cholesterol-ester transfer protein deficiency (CHOLESTEROL_EST
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cholesterol-ester transfer protein deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Elevated circulating HDL-C concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

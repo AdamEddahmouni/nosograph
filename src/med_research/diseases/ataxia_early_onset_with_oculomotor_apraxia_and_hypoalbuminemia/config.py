@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'ataxia, early-onset, with oculomotor apraxia and hypoalbuminem
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ataxia, early-onset, with oculomotor apraxia and hypoalbuminemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypoalbuminemia",
+    "Tremor",
+    "Truncal ataxia",
+    "Limb ataxia",
+    "Chorea",
+    "Gaze-evoked nystagmus",
+    "Oculomotor apraxia",
+    "Dementia",
+    "Peripheral axonal degeneration",
+    "Autosomal recessive inheritance",
+    "Hyporeflexia",
+    "Distal sensory impairment",
+    "Cognitive impairment",
+    "Pes cavus",
+    "Dysarthria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

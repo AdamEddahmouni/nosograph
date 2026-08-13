@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'hypogonadotropic hypogonadism 24 without anosmia (HYPOGONADOTR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypogonadotropic hypogonadism 24 without anosmia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypogonadism",
+    "Decreased circulating follicle stimulating hormone concentration",
+    "Autosomal recessive inheritance",
+    "Infertility",
+    "Decreased testicular size",
+    "Primary amenorrhea",
+    "Delayed skeletal maturation",
+    "Elevated circulating luteinizing hormone level",
+    "Abnormality of the sense of smell",
+    "Decreased muscle mass",
+    "Azoospermia",
+    "Young adult onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

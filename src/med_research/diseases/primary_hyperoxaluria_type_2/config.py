@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'primary hyperoxaluria type 2 (PRIMARY_HYPEROXALURIA_TYPE_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of primary hyperoxaluria type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Infantile onset",
+    "Hematuria",
+    "Elevated urinary L-glycerate level",
+    "Abnormal circulating creatinine concentration",
+    "Abnormality of urine calcium concentration",
+    "Reduced hepatic glyoxylate reductase activity",
+    "Hyperoxaluria",
+    "Renal insufficiency",
+    "Metabolic acidosis",
+    "Calcium oxalate nephrolithiasis",
+    "Nephrocalcinosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

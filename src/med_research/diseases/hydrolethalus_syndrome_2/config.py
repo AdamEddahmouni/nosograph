@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'hydrolethalus syndrome 2 (HYDROLETHALUS_SYNDROME_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hydrolethalus syndrome 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Preaxial foot polydactyly",
+    "Micrognathia",
+    "Autosomal recessive inheritance",
+    "Molar tooth sign on MRI",
+    "Postaxial foot polydactyly",
+    "Cleft palate",
+    "Ventriculomegaly",
+    "Fetal onset",
+    "Hydrocephalus",
+    "Postaxial hand polydactyly",
+    "Agenesis of corpus callosum",
+    "Anencephaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

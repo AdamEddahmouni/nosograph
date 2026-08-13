@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'blepharoptosis-myopia-ectopia lentis syndrome (BLEPHAROPTOSIS_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of blepharoptosis-myopia-ectopia lentis syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ectopia lentis",
+    "Autosomal dominant inheritance",
+    "Increased axial length of the globe",
+    "Congenital ptosis",
+    "Myopia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

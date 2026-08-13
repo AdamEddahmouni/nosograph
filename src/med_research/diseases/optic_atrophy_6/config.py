@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'optic atrophy 6 (OPTIC_ATROPHY_6)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of optic atrophy 6
-SYMPTOMS = []
+SYMPTOMS = [
+    "Optic atrophy",
+    "Red-green dyschromatopsia",
+    "Photophobia",
+    "Slowly progressive",
+    "Nystagmus",
+    "Autosomal recessive inheritance",
+    "Childhood onset",
+    "Retinal degeneration",
+    "Visual impairment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

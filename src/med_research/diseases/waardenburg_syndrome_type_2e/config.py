@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Waardenburg syndrome type 2E (WAARDENBURG_SYNDROME_TYPE_2E)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Waardenburg syndrome type 2E
-SYMPTOMS = []
+SYMPTOMS = [
+    "Fundus hypopigmentation",
+    "Congenital onset",
+    "Hypoplasia of the semicircular canal",
+    "Nystagmus",
+    "Anosmia",
+    "White forelock",
+    "Sensorineural hearing impairment",
+    "Premature graying of hair",
+    "Autosomal dominant inheritance",
+    "Abnormal morphology of the vestibule of the inner ear",
+    "Iris hypopigmentation",
+    "White eyebrow",
+    "Blue irides",
+    "Global developmental delay",
+    "Dilated vestibule of the inner ear",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'pelvic dysplasia-arthrogryposis of lower limbs syndrome (PELVI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pelvic dysplasia-arthrogryposis of lower limbs syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Scoliosis",
+    "Congenital foot contractures",
+    "Hip contracture",
+    "Lumbar hyperlordosis",
+    "Narrow chest",
+    "Scapular winging",
+    "Narrow pelvis bone",
+    "Arthrogryposis multiplex congenita",
+    "Short stature",
+    "Knee flexion contracture",
+    "Paraspinal muscle hypertrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

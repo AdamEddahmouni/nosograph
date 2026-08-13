@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'cataract (CATARACT)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cataract
-SYMPTOMS = []
+SYMPTOMS = [
+    "Exotropia",
+    "Cortical cataract",
+    "Pendular nystagmus",
+    "Developmental cataract",
+    "Cataract",
+    "Juvenile onset",
+    "Nuclear cataract",
+    "Autosomal dominant inheritance",
+    "Miosis",
+    "Amblyopia",
+    "Posterior subcapsular cataract",
+    "Autosomal recessive inheritance",
+    "Young adult onset",
+    "Lamellar cataract",
+    "Myopia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

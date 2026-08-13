@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'intellectual developmental disorder with paroxysmal dyskinesia
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of intellectual developmental disorder with paroxysmal dyskinesia or seizures
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ataxia",
+    "Chorea",
+    "Delayed speech and language development",
+    "Autosomal recessive inheritance",
+    "Developmental regression",
+    "Ventriculomegaly",
+    "Facial grimacing",
+    "Motor stereotypy",
+    "EEG abnormality",
+    "Aggressive behavior",
+    "Inappropriate laughter",
+    "Infantile onset",
+    "Global developmental delay",
+    "Focal motor status epilepticus",
+    "Insomnia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

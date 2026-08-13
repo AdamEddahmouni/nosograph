@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'intellectual developmental disorder with epilepsy, behavioral 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of intellectual developmental disorder with epilepsy, behavioral abnormalities, and coarse facies
-SYMPTOMS = []
+SYMPTOMS = [
+    "Absent speech",
+    "Autism",
+    "Infantile onset",
+    "Infantile spasms",
+    "Seizure",
+    "Global developmental delay",
+    "Hyperactivity",
+    "Autosomal recessive inheritance",
+    "Coarse facial features",
+    "Severe intellectual disability",
+    "Delayed CNS myelination",
+    "Aggressive behavior",
+    "Anxiety",
+    "Self-injurious behavior",
+    "Mandibular prognathia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

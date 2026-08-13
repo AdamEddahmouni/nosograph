@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal recessive omodysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Narrow palpebral fissure",
+    "Limited knee extension",
+    "Short nose",
+    "Malar flattening",
+    "Axillary pterygium",
+    "Blepharophimosis",
+    "Short tibia",
+    "Wide nasal bridge",
+    "Limited knee flexion",
+    "Limited hip movement",
+    "Autosomal recessive inheritance",
+    "Limited elbow flexion/extension",
+    "Limited elbow extension",
+    "Popliteal pterygium",
+    "Limited knee flexion/extension",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

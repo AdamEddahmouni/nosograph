@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'cardiospondylocarpofacial syndrome (CARDIOSPONDYLOCARPOFACIAL_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cardiospondylocarpofacial syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypertelorism",
+    "Recurrent otitis media",
+    "Horseshoe kidney",
+    "Telecanthus",
+    "Periorbital fullness",
+    "Ptosis",
+    "Wide nasal bridge",
+    "Joint hypermobility",
+    "Congenital diaphragmatic hernia",
+    "Autosomal dominant inheritance",
+    "Fusion of middle ear ossicles",
+    "Ventricular septal defect",
+    "Hypoplastic aortic arch",
+    "Long philtrum",
+    "Upslanted palpebral fissure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

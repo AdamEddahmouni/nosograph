@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'varicose disease (VARICOSE_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of varicose disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "X-linked dominant inheritance",
+    "Varicose veins",
+    "Non-Mendelian inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

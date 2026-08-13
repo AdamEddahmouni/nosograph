@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'agammaglobulinemia 10, autosomal dominant (AGAMMAGLOBULINEMIA_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of agammaglobulinemia 10, autosomal dominant
-SYMPTOMS = []
+SYMPTOMS = [
+    "Agammaglobulinemia",
+    "Type I diabetes mellitus",
+    "Decreased circulating IgG concentration",
+    "Recurrent sinusitis",
+    "Autosomal dominant inheritance",
+    "Recurrent respiratory infections",
+    "Transiently decreased total neutrophil count",
+    "Decreased circulating IgM concentration",
+    "Decreased circulating IgA concentration",
+    "Congenital onset",
+    "Meningitis",
+    "Absent circulating B cells",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

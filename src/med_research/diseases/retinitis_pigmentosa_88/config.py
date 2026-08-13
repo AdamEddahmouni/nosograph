@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'retinitis pigmentosa 88 (RETINITIS_PIGMENTOSA_88)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of retinitis pigmentosa 88
-SYMPTOMS = []
+SYMPTOMS = [
+    "Macular degeneration",
+    "Autosomal recessive inheritance",
+    "Nyctalopia",
+    "Optic disc pallor",
+    "Cystoid macular edema",
+    "Exotropia",
+    "Attenuation of retinal blood vessels",
+    "Neonatal onset",
+    "Spicular pigmentation of the retina",
+    "Reduced visual acuity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

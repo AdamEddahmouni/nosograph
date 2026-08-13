@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'familial isolated deficiency of vitamin E (FAMILIAL_ISOLATED_D
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial isolated deficiency of vitamin E
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dysmetria",
+    "Cerebellar atrophy",
+    "Juvenile onset",
+    "Short term memory impairment",
+    "Xanthelasma",
+    "Areflexia",
+    "Autosomal recessive inheritance",
+    "Clumsiness",
+    "Dysarthria",
+    "Tendon xanthomatosis",
+    "Hypertriglyceridemia",
+    "Dystonia",
+    "Delayed somatosensory central conduction time",
+    "Impaired proprioception",
+    "Gait disturbance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

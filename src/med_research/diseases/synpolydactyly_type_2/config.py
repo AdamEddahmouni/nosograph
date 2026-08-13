@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'synpolydactyly type 2 (SYNPOLYDACTYLY_TYPE_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of synpolydactyly type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Polydactyly",
+    "Metacarpal synostosis",
+    "Carpal synostosis",
+    "Tarsal synostosis",
+    "Toe syndactyly",
+    "Metatarsal synostosis",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'azoospermia (AZOOSPERMIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of azoospermia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Coiled sperm flagella",
+    "Abnormal sperm morphology",
+    "Non-obstructive azoospermia",
+    "Absent sperm axoneme central pair complex",
+    "Irregularly shaped sperm tail",
+    "Abnormal sperm head morphology",
+    "Autosomal recessive inheritance",
+    "Autosomal dominant inheritance",
+    "Tapered sperm head",
+    "Short sperm flagella",
+    "Cryptozoospermia",
+    "Decreased testicular size",
+    "Elevated circulating luteinizing hormone level",
+    "Decreased serum testosterone concentration",
+    "Reduced sperm motility",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

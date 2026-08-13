@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'dicarboxylic aminoaciduria (DICARBOXYLIC_AMINOACIDURIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dicarboxylic aminoaciduria
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Kidney stone",
+    "Aspartic aciduria",
+    "Aminoaciduria",
+    "Fasting hypoglycemia",
+    "Intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'congenital adrenal hyperplasia due to 3-beta-hydroxysteroid de
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital adrenal hyperplasia due to 3-beta-hydroxysteroid dehydrogenase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyponatremia",
+    "Hypospadias",
+    "Hyperkalemia",
+    "Perineal hypospadias",
+    "Impaired cortisol response to corticotropin releasing hormone stimulation test",
+    "Increased circulating 17 hydroxypregnenolone concentration",
+    "Increased circulating dehydroepiandrosterone-sulfate concentration",
+    "Bifid scrotum",
+    "Adrenal hyperplasia",
+    "Absent scrotum",
+    "Male pseudohermaphroditism",
+    "Adrenal insufficiency",
+    "Ambiguous genitalia",
+    "Elevated circulating 17-hydroxyprogesterone concentration",
+    "Cryptorchidism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

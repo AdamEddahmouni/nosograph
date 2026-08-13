@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'oculopharyngodistal myopathy (OCULOPHARYNGODISTAL_MYOPATHY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of oculopharyngodistal myopathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Restrictive ventilatory defect",
+    "Autophagic vacuoles",
+    "Sensorineural hearing impairment",
+    "EMG: myotonic discharges",
+    "Slowly progressive",
+    "Muscle weakness",
+    "Paroxysmal atrial fibrillation",
+    "Respiratory distress",
+    "Respiratory insufficiency due to muscle weakness",
+    "High palate",
+    "Foot dorsiflexor weakness",
+    "Young adult onset",
+    "External ophthalmoplegia",
+    "Muscle spasm",
+    "Dysphagia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

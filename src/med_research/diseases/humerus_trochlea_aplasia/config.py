@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'humerus trochlea aplasia (HUMERUS_TROCHLEA_APLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of humerus trochlea aplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Cleft palate",
+    "Short humerus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

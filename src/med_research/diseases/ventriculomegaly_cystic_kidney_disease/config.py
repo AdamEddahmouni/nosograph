@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'ventriculomegaly-cystic kidney disease (VENTRICULOMEGALY_CYSTI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ventriculomegaly-cystic kidney disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ventricular septal defect",
+    "Gray matter heterotopia",
+    "Renal corticomedullary cysts",
+    "Elevated maternal circulating alpha-fetoprotein concentration",
+    "Tubular luminal dilatation",
+    "Vascular dilatation",
+    "Fetal pericardial effusion",
+    "Hydrocephalus",
+    "Hyperechogenic kidneys",
+    "Polyhydramnios",
+    "Renal insufficiency",
+    "Seizure",
+    "Premature birth",
+    "Postaxial polydactyly",
+    "Ventriculomegaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

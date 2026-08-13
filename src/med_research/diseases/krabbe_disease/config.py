@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Krabbe disease (KRABBE_DISEASE)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Krabbe disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Progressive neurologic deterioration",
+    "Peripheral axonal neuropathy",
+    "Abnormal flash visual evoked potentials",
+    "Axial hypotonia",
+    "Ventriculomegaly",
+    "Reduced tissue galactocerebrosidase activity",
+    "Respiratory failure",
+    "Diffuse cerebral atrophy",
+    "Nystagmus",
+    "Hypertonia",
+    "Optic atrophy",
+    "Hydrocephalus",
+    "Motor deterioration",
+    "Progressive spasticity",
+    "Autoimmune thrombocytopenia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

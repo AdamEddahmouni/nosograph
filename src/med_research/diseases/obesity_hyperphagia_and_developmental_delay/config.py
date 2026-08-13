@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'obesity, hyperphagia, and developmental delay (OBESITY_HYPERPH
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of obesity, hyperphagia, and developmental delay
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autistic behavior",
+    "Seizure",
+    "Polyphagia",
+    "Hypotonia",
+    "Infantile onset",
+    "Intellectual disability",
+    "Facial asymmetry",
+    "Autosomal dominant inheritance",
+    "Motor stereotypy",
+    "Reduced eye contact",
+    "Severe global developmental delay",
+    "Obesity",
+    "Delayed myelination",
+    "Generalized non-motor (absence) seizure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

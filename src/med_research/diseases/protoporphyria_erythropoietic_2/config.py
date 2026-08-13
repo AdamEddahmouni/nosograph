@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'protoporphyria, erythropoietic, 2 (PROTOPORPHYRIA_ERYTHROPOIET
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of protoporphyria, erythropoietic, 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cutaneous photosensitivity",
+    "Iron deficiency anemia",
+    "Increased erythrocyte protoporphyrin concentration",
+    "Autosomal dominant inheritance",
+    "Infantile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

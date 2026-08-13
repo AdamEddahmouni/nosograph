@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'familial reactive perforating collagenosis (FAMILIAL_REACTIVE_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial reactive perforating collagenosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormality of metabolism/homeostasis",
+    "Autosomal recessive inheritance",
+    "Abnormality of the skin",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

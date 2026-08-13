@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'Moyamoya disease (MOYAMOYA_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Moyamoya disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Moyamoya phenomenon",
+    "Ascending tubular aorta aneurysm",
+    "Autosomal dominant inheritance",
+    "Inflammatory arteriopathy",
+    "Telangiectasia",
+    "Carotid artery occlusion",
+    "Transient ischemic attack",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

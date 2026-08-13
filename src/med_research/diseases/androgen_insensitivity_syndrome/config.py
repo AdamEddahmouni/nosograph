@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'androgen insensitivity syndrome (ANDROGEN_INSENSITIVITY_SYNDRO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of androgen insensitivity syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "X-linked recessive inheritance",
+    "Inguinal hernia",
+    "Primary amenorrhea",
+    "Labial hypoplasia",
+    "Elevated circulating luteinizing hormone level",
+    "Gynecomastia",
+    "Growth abnormality",
+    "Female external genitalia in individual with 46,XY karyotype",
+    "Absent facial hair",
+    "Sparse pubic hair",
+    "Neoplasm",
+    "Sparse axillary hair",
+    "Blind vagina",
+    "Elevated circulating follicle stimulating hormone level",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

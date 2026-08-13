@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'Sorsby fundus dystrophy (SORSBY_FUNDUS_DYSTROPHY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Sorsby fundus dystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal electroretinogram",
+    "Young adult onset",
+    "Autosomal dominant inheritance",
+    "Macular dystrophy",
+    "Chorioretinal atrophy",
+    "Glaucoma",
+    "Blindness",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'carnitine palmitoyl transferase II deficiency, myopathic form 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of carnitine palmitoyl transferase II deficiency, myopathic form
-SYMPTOMS = []
+SYMPTOMS = [
+    "Childhood onset",
+    "Muscle weakness",
+    "Myoglobinuria",
+    "Young adult onset",
+    "Muscle stiffness",
+    "Autosomal dominant inheritance",
+    "Renal insufficiency",
+    "Autosomal recessive inheritance",
+    "Rhabdomyolysis",
+    "Muscle spasm",
+    "Myalgia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

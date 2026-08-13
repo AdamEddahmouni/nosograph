@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mast syndrome (MAST_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mast syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Jaw hyperreflexia",
+    "Periventricular white matter hyperintensities",
+    "Dysphagia",
+    "Spastic paraplegia",
+    "Spastic paraparesis",
+    "Autosomal recessive inheritance",
+    "Dementia",
+    "Lower limb muscle weakness",
+    "Thin corpus callosum",
+    "Dysdiadochokinesis",
+    "Cerebellar atrophy",
+    "Peripheral neuropathy",
+    "Cerebral atrophy",
+    "Hyperreflexia",
+    "Primitive reflex",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

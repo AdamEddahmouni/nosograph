@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Seckel syndrome 1 (SECKEL_SYNDROME_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Seckel syndrome 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cleft palate",
+    "Cerebellar vermis hypoplasia",
+    "Dental malocclusion",
+    "Cone-shaped epiphyses of the phalanges of the hand",
+    "Delayed skeletal maturation",
+    "Pes planus",
+    "Abnormal pinna morphology",
+    "Hypospadias",
+    "Sloping forehead",
+    "Small anterior fontanelle",
+    "Elbow flexion contracture",
+    "Hypoplasia of proximal fibula",
+    "Pancytopenia",
+    "Strabismus",
+    "Convex nasal ridge",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

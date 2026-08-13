@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'long chain 3-hydroxyacyl-CoA dehydrogenase deficiency (LONG_CH
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Hepatomegaly",
+    "Decreased 3-hydroxyacyl-CoA dehydrogenase level",
+    "Hypoglycemia",
+    "Cardiomyopathy",
+    "Sudden death",
+    "Pigmentary retinopathy",
+    "Hypotonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

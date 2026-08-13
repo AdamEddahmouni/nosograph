@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'X-linked recessive ocular albinism (X_LINKED_RECESSIVE_OCULAR_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked recessive ocular albinism
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ocular albinism",
+    "Nystagmus-induced head nodding",
+    "HP_0007680",
+    "Hypoplasia of the fovea",
+    "Reduced visual acuity",
+    "X-linked inheritance",
+    "Giant melanosomes in melanocytes",
+    "Photophobia",
+    "Nystagmus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

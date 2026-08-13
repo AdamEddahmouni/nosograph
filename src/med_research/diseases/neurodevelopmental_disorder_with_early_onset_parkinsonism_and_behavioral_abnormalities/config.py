@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neurodevelopmental disorder with early-onset parkinsonism and 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neurodevelopmental disorder with early-onset parkinsonism and behavioral abnormalities
-SYMPTOMS = []
+SYMPTOMS = [
+    "Postural instability",
+    "Autosomal recessive inheritance",
+    "Short attention span",
+    "Spasticity",
+    "Seizure",
+    "Childhood onset",
+    "Bradykinesia",
+    "Babinski sign",
+    "Hyperreflexia",
+    "Intellectual disability",
+    "Distal lower limb amyotrophy",
+    "Cogwheel rigidity",
+    "Parkinsonism",
+    "Bruxism",
+    "Mask-like facies",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

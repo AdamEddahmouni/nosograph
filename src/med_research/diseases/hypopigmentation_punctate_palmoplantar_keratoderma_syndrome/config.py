@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hypopigmentation-punctate palmoplantar keratoderma syndrome (H
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypopigmentation-punctate palmoplantar keratoderma syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital onset",
+    "Abnormal hair morphology",
+    "Hyperkeratosis",
+    "Abnormal nail morphology",
+    "Hyperglycemia",
+    "Abnormality of the dentition",
+    "Abnormal circulating phosphate ion concentration",
+    "Ectopic calcification",
+    "Autosomal dominant inheritance",
+    "Calcinosis cutis",
+    "Palmoplantar keratoderma",
+    "Hyperkeratotic papule",
+    "Epidermal acanthosis",
+    "Hypopigmented macule",
+    "Infantile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Olmsted syndrome 1 (OLMSTED_SYNDROME_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Olmsted syndrome 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Periorificial hyperkeratosis",
+    "Nail dysplasia",
+    "Autosomal dominant inheritance",
+    "Hyperhidrosis",
+    "Subungual hyperkeratosis",
+    "Orthokeratosis",
+    "Corneal opacity",
+    "Opacification of the corneal stroma",
+    "Flexion contracture",
+    "Sparse hair",
+    "Posterior blepharitis",
+    "X-linked recessive inheritance",
+    "Autoamputation of digits",
+    "Amniotic constriction ring",
+    "Infantile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

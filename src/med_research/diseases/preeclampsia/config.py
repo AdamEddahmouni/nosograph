@@ -8,8 +8,22 @@ PIPELINE_LABEL = "Preeclampsia (PREECLAMPSIA)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Preeclampsia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Thrombocytopenia",
+    "Maternal hypertension",
+    "Polygenic inheritance",
+    "Young adult onset",
+    "Hypertension",
+    "Seizure",
+    "Adult onset",
+    "Autosomal dominant inheritance",
+    "Preeclampsia",
+    "Edema",
+    "Eclampsia",
+    "Proteinuria",
+    "Intrauterine growth retardation",
+    "Elevated circulating hepatic transaminase concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Li-Fraumeni syndrome (LI_FRAUMENI_SYNDROME)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Li-Fraumeni syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sarcoma",
+    "Meningioma",
+    "Acute leukemia",
+    "Choriocarcinoma",
+    "Lung adenocarcinoma",
+    "Adrenocortical carcinoma",
+    "Glioma",
+    "Osteosarcoma",
+    "Prostate cancer",
+    "Colon cancer",
+    "Stomach cancer",
+    "Nephroblastoma",
+    "Prostate neoplasm",
+    "Breast carcinoma",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

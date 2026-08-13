@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Bethlem myopathy 1B (BETHLEM_MYOPATHY_1B)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Bethlem myopathy 1B
-SYMPTOMS = []
+SYMPTOMS = [
+    "Proximal muscle weakness",
+    "Autosomal dominant inheritance",
+    "Spinal rigidity",
+    "Muscle fiber splitting",
+    "Infantile onset",
+    "Elbow contracture",
+    "Knee contracture",
+    "Increased endomysial connective tissue",
+    "Interphalangeal joint contracture of finger",
+    "Childhood onset",
+    "Elevated circulating creatine kinase activity",
+    "Abnormality of skeletal muscle fiber size",
+    "Adult onset",
+    "Distal muscle weakness",
+    "Ankle contracture",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

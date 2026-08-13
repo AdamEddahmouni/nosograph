@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neurodevelopmental disorder with or without hyperkinetic movem
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neurodevelopmental disorder with or without hyperkinetic movements and seizures, autosomal dominant
-SYMPTOMS = []
+SYMPTOMS = [
+    "Self-injurious behavior",
+    "Global developmental delay",
+    "Stereotypical hand wringing",
+    "Delayed ability to sit",
+    "Reduced social responsiveness",
+    "Involuntary movements",
+    "Obstructive sleep apnea",
+    "Hypotonia",
+    "Cerebellar atrophy",
+    "Epileptic encephalopathy",
+    "Autosomal recessive inheritance",
+    "Scoliosis",
+    "Reduced eye contact",
+    "Strabismus",
+    "Dystonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

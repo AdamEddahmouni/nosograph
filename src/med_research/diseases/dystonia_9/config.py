@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'dystonia 9 (DYSTONIA_9)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dystonia 9
-SYMPTOMS = []
+SYMPTOMS = [
+    "Spastic paraplegia",
+    "Cognitive impairment",
+    "Abnormal pyramidal tract morphology",
+    "Migraine",
+    "Abnormal pyramidal sign",
+    "Headache",
+    "Diplopia",
+    "Autosomal dominant inheritance",
+    "Paresthesia",
+    "Episodic ataxia",
+    "Dystonia",
+    "Hyperreflexia",
+    "Choreoathetosis",
+    "Dysarthria",
+    "Dyskinesia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

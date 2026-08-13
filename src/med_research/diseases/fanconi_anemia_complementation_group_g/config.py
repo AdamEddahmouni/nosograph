@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'Fanconi anemia complementation group G (FANCONI_ANEMIA_COMPLEM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Fanconi anemia complementation group G
-SYMPTOMS = []
+SYMPTOMS = [
+    "Anemia",
+    "Abnormal thumb morphology",
+    "Multiple cafe-au-lait spots",
+    "Growth delay",
+    "Thrombocytopenia",
+    "Microphthalmia",
+    "Myelodysplasia",
+    "Decreased total neutrophil count",
+    "Leukemia",
+    "Microcephaly",
+    "Abnormality of chromosome stability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

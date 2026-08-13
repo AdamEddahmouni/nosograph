@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'MERRF syndrome (MERRF_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of MERRF syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Mitochondrial inheritance",
+    "Myoclonus",
+    "Muscle weakness",
+    "Sensorineural hearing impairment",
+    "Ragged-red muscle fibers",
+    "Ataxia",
+    "Generalized myoclonic seizure",
+    "Spasticity",
+    "Seizure",
+    "Myopathy",
+    "Increased circulating lactate concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

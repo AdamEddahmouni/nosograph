@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'multiple mitochondrial dysfunctions syndrome 6 (MULTIPLE_MITOC
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of multiple mitochondrial dysfunctions syndrome 6
-SYMPTOMS = []
+SYMPTOMS = [
+    "Feeding difficulties",
+    "Atrophy/Degeneration affecting the brainstem",
+    "Intellectual disability",
+    "Increased circulating lactate concentration",
+    "Global developmental delay",
+    "Visual loss",
+    "Autosomal recessive inheritance",
+    "Hypotonia",
+    "Inability to walk",
+    "Hearing impairment",
+    "Childhood onset",
+    "Ataxia",
+    "Poor head control",
+    "Secondary microcephaly",
+    "Seizure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,16 @@ PIPELINE_LABEL = '46,xx sex reversal 5 (46_XX_SEX_REVERSAL_5)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of 46,xx sex reversal 5
-SYMPTOMS = []
+SYMPTOMS = [
+    "Urogenital sinus anomaly",
+    "Ambiguous genitalia",
+    "Hypoplastic left ventricle",
+    "Increased serum testosterone level",
+    "Ventricular septal defect",
+    "Secundum atrial septal defect",
+    "Autosomal dominant inheritance",
+    "Aplasia of the left hemidiaphragm",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

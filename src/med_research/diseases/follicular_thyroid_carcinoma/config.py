@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'follicular thyroid carcinoma (FOLLICULAR_THYROID_CARCINOMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of follicular thyroid carcinoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Typified by somatic mosaicism",
+    "Follicular thyroid carcinoma",
+    "Autosomal dominant inheritance",
+    "Non-medullary thyroid carcinoma",
+    "Papillary thyroid carcinoma",
+    "Ovarian neoplasm",
+    "Basal cell carcinoma",
+    "Prostate cancer",
+    "Goiter",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

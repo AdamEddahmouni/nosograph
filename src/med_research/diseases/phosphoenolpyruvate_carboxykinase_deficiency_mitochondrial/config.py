@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'phosphoenolpyruvate carboxykinase deficiency, mitochondrial (P
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of phosphoenolpyruvate carboxykinase deficiency, mitochondrial
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypoglycemia",
+    "Impaired gluconeogenesis",
+    "Renal steatosis",
+    "Autosomal recessive inheritance",
+    "Hepatic steatosis",
+    "Hepatic failure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

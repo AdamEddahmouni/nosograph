@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'ciliary dyskinesia, primary, 47, and lissencephaly (CILIARY_DY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ciliary dyskinesia, primary, 47, and lissencephaly
-SYMPTOMS = []
+SYMPTOMS = [
+    "Lissencephaly",
+    "Autosomal recessive inheritance",
+    "Respiratory distress",
+    "Abnormal mucociliary clearance",
+    "Chronic otitis media",
+    "Recurrent respiratory infections",
+    "Atelectasis",
+    "Hypoplasia of the corpus callosum",
+    "Neonatal onset",
+    "Agenesis of corpus callosum",
+    "Bronchiectasis",
+    "Seizure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

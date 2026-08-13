@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'Paraganglioma (PARAGANGLIOMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Paraganglioma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pheochromocytoma",
+    "Paraganglioma",
+    "Autosomal dominant inheritance",
+    "Elevated circulating catecholamine level",
+    "Hypertension",
+    "Adult onset",
+    "Typified by incomplete penetrance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

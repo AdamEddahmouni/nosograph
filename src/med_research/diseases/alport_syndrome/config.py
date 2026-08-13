@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Alport syndrome (ALPORT_SYNDROME)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Alport syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Anterior lenticonus",
+    "Diffuse leiomyomatosis",
+    "X-linked inheritance",
+    "Lenticonus",
+    "Glomerulonephritis",
+    "Hearing impairment",
+    "Nephritis",
+    "Hypoparathyroidism",
+    "Hypertension",
+    "Developmental cataract",
+    "Thickened glomerular basement membrane",
+    "Nephrocalcinosis",
+    "Cataract",
+    "Nephrotic syndrome",
+    "Glomerular basement membrane lamellation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

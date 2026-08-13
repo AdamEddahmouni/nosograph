@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Kearns-Sayre syndrome (KEARNS_SAYRE_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Kearns-Sayre syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dementia",
+    "Hypoparathyroidism",
+    "Pigmentary retinopathy",
+    "Cardiomyopathy",
+    "Basal ganglia calcification",
+    "Primary adrenal insufficiency",
+    "Sensory neuropathy",
+    "Ptosis",
+    "Increased CSF protein concentration",
+    "Microcephaly",
+    "Mitochondrial inheritance",
+    "Ataxia",
+    "Renal tubular acidosis",
+    "Muscle weakness",
+    "Renal Fanconi syndrome",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

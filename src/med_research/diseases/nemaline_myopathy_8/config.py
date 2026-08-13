@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'nemaline myopathy 8 (NEMALINE_MYOPATHY_8)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of nemaline myopathy 8
-SYMPTOMS = []
+SYMPTOMS = [
+    "Facial palsy",
+    "Autosomal recessive inheritance",
+    "Nemaline bodies",
+    "Decreased fetal movement",
+    "Fetal akinesia sequence",
+    "Respiratory failure",
+    "Myofibrillar myopathy",
+    "Gastrostomy tube feeding in infancy",
+    "Flexion contracture",
+    "Ophthalmoparesis",
+    "Muscle weakness",
+    "Dysphagia",
+    "Death in infancy",
+    "Polyhydramnios",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

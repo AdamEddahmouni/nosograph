@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'Sturge-Weber syndrome (STURGE_WEBER_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Sturge-Weber syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Macrocephaly",
+    "Facial hemangioma",
+    "Sporadic",
+    "Seizure",
+    "Buphthalmos",
+    "Arachnoid hemangiomatosis",
+    "Intellectual disability",
+    "Cerebral cortical atrophy",
+    "Choroidal hemangioma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

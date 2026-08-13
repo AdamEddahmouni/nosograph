@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spastic ataxia 3 (SPASTIC_ATAXIA_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spastic ataxia 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Middle age onset",
+    "Gait ataxia",
+    "Cerebellar atrophy",
+    "Spastic ataxia",
+    "Young adult onset",
+    "Dysmetria",
+    "Childhood onset",
+    "Autosomal recessive inheritance",
+    "Cognitive impairment",
+    "Dystonia",
+    "Neurogenic bladder",
+    "Hyperreflexia",
+    "Cerebral cortical atrophy",
+    "Urinary urgency",
+    "Leukoencephalopathy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

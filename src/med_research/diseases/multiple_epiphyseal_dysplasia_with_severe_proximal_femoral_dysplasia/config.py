@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'multiple epiphyseal dysplasia, with severe proximal femoral dy
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of multiple epiphyseal dysplasia, with severe proximal femoral dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Irregularity of vertebral bodies",
+    "Coxa vara",
+    "Short stature",
+    "Autosomal dominant inheritance",
+    "Arthralgia",
+    "Broad femoral neck",
+    "Proximal femoral metaphyseal irregularity",
+    "Flared femoral metaphysis",
+    "Flat distal femoral epiphysis",
+    "Arthralgia of the hip",
+    "Platyspondyly",
+    "Genu valgum",
+    "Short femoral neck",
+    "Epiphyseal dysplasia",
+    "Abnormality of the hand",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

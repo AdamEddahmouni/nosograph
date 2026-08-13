@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'urocanic aciduria (UROCANIC_ACIDURIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of urocanic aciduria
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nystagmus",
+    "Action tremor",
+    "Aggressive behavior",
+    "Urocanic aciduria",
+    "Short stature",
+    "Dysmetria",
+    "Gait ataxia",
+    "Truncal ataxia",
+    "Ataxia",
+    "Childhood onset",
+    "Broad-based gait",
+    "Moderate intellectual disability",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'familial adenomatous polyposis 4 (FAMILIAL_ADENOMATOUS_POLYPOS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial adenomatous polyposis 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Breast intraductal papilloma",
+    "Young adult onset",
+    "Astrocytoma",
+    "Ovarian cyst",
+    "Thyroid adenoma",
+    "Middle age onset",
+    "Duodenal polyposis",
+    "Renal cyst",
+    "Adenomatous colonic polyposis",
+    "Uterine leiomyoma",
+    "Gastric adenocarcinoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

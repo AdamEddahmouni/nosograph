@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Omenn syndrome (OMENN_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Omenn syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Thickened skin",
+    "Hypoplasia of the thymus",
+    "Recurrent fungal infections",
+    "Erythroderma",
+    "Thrombocytopenia",
+    "Decreased total B cell count",
+    "Splenomegaly",
+    "Recurrent viral infections",
+    "Diarrhea",
+    "Increased total eosinophil count",
+    "Autosomal recessive inheritance",
+    "HP_0005365",
+    "Alopecia",
+    "Hepatomegaly",
+    "Pneumonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

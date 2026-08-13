@@ -8,8 +8,17 @@ PIPELINE_LABEL = "Tourette syndrome (TOURETTE_SYNDROME)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Tourette syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Aggressive behavior",
+    "Motor tics",
+    "Self-mutilation",
+    "Echolalia",
+    "Autosomal dominant inheritance",
+    "Sleep disturbance",
+    "Compulsive behaviors",
+    "Attention deficit hyperactivity disorder",
+    "Phonic tics",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

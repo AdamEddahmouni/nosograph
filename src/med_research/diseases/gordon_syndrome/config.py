@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Gordon syndrome (GORDON_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Gordon syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Submucous cleft hard palate",
+    "Short stature",
+    "Epicanthus",
+    "Talipes equinovarus",
+    "Short phalanx of finger",
+    "Cutaneous finger syndactyly",
+    "Kyphoscoliosis",
+    "Thoracolumbar scoliosis",
+    "Congenital hip dislocation",
+    "Single transverse palmar crease",
+    "Ophthalmoplegia",
+    "Chiari type I malformation",
+    "Bifid uvula",
+    "Short neck",
+    "Cleft palate",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

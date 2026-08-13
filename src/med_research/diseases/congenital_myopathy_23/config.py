@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'congenital myopathy 23 (CONGENITAL_MYOPATHY_23)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital myopathy 23
-SYMPTOMS = []
+SYMPTOMS = [
+    "Seizure",
+    "Pes planus",
+    "Juvenile onset",
+    "Motor delay",
+    "Reduced vital capacity",
+    "Elevated circulating creatine kinase activity",
+    "Delayed ability to walk",
+    "Tip-toe gait",
+    "Pectus carinatum",
+    "Angulated muscle fibers",
+    "Central core regions in muscle fibers",
+    "Kyphoscoliosis",
+    "Infantile onset",
+    "Schizophrenia",
+    "Exercise-induced myalgia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

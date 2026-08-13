@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neurodevelopmental disorder with motor and speech delay and be
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neurodevelopmental disorder with motor and speech delay and behavioral abnormalities
-SYMPTOMS = []
+SYMPTOMS = [
+    "Delayed speech and language development",
+    "Autosomal recessive inheritance",
+    "Tremor",
+    "Simplified gyral pattern",
+    "Spastic tetraparesis",
+    "Motor delay",
+    "Small nail",
+    "Elbow flexion contracture",
+    "Optic atrophy",
+    "Motor stereotypy",
+    "Microcephaly",
+    "Hypotonia",
+    "Aggressive behavior",
+    "Broad-based gait",
+    "Esodeviation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

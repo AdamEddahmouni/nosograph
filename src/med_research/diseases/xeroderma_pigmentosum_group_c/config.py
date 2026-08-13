@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'xeroderma pigmentosum group C (XERODERMA_PIGMENTOSUM_GROUP_C)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of xeroderma pigmentosum group C
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dermal atrophy",
+    "Squamous cell carcinoma of the skin",
+    "Actinic keratosis",
+    "Entropion",
+    "Poikiloderma",
+    "Cutaneous melanoma",
+    "Basal cell carcinoma",
+    "Hypopigmentation of the skin",
+    "Freckling",
+    "Ectropion",
+    "Photophobia",
+    "Autosomal recessive inheritance",
+    "Childhood onset",
+    "Telangiectasia",
+    "Defective DNA repair after ultraviolet radiation damage",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

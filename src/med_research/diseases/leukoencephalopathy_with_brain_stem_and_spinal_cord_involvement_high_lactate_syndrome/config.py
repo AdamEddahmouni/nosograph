@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'leukoencephalopathy with brain stem and spinal cord involvemen
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of leukoencephalopathy with brain stem and spinal cord involvement-high lactate syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Motor delay",
+    "Peripheral axonal neuropathy",
+    "Leukoencephalopathy",
+    "Variable expressivity",
+    "Babinski sign",
+    "Slowly progressive",
+    "Dysarthria",
+    "Hyporeflexia",
+    "Hyperreflexia",
+    "Muscle weakness",
+    "Flexion contracture",
+    "Ataxia",
+    "Tremor",
+    "Spasticity",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

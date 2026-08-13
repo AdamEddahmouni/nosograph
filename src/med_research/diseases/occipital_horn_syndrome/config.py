@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'occipital horn syndrome (OCCIPITAL_HORN_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of occipital horn syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Narrow chest",
+    "Osteoporosis",
+    "Ureteral obstruction",
+    "Pectus carinatum",
+    "X-linked recessive inheritance",
+    "High forehead",
+    "High palate",
+    "Bladder carcinoma",
+    "Carotid artery tortuosity",
+    "Redundant skin",
+    "Orthostatic hypotension",
+    "Bladder diverticulum",
+    "Broad ribs",
+    "Global developmental delay",
+    "Genu valgum",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

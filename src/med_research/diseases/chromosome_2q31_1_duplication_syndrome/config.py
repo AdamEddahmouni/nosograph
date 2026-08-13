@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'chromosome 2q31.1 duplication syndrome (CHROMOSOME_2Q31_1_DUPL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of chromosome 2q31.1 duplication syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "3-4 finger cutaneous syndactyly",
+    "Childhood onset",
+    "Congenital onset",
+    "Triphalangeal thumb",
+    "Pendular nystagmus",
+    "Short stature",
+    "Absent thumb",
+    "Short thumb",
+    "Autosomal dominant inheritance",
+    "Talipes equinovarus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

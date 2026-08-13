@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'transaldolase deficiency (TRANSALDOLASE_DEFICIENCY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of transaldolase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Wide anterior fontanel",
+    "Pancytopenia",
+    "Atrial septal defect",
+    "Synophrys",
+    "Low-set ears",
+    "Anemia",
+    "Thin vermilion border",
+    "Cirrhosis",
+    "Micronodular cirrhosis",
+    "Asthma",
+    "Patent foramen ovale",
+    "Hepatic fibrosis",
+    "Telangiectasia",
+    "Intrauterine growth retardation",
+    "Ventricular septal defect",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'tubulointerstitial kidney disease, autosomal dominant, 2 (TUBU
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of tubulointerstitial kidney disease, autosomal dominant, 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Tubular basement membrane disintegration",
+    "Glomerular sclerosis",
+    "Hypotension",
+    "Renal corticomedullary cysts",
+    "Renal cortical atrophy",
+    "Gout",
+    "Renal hypoplasia",
+    "Hyperuricemia",
+    "Decreased glomerular filtration rate",
+    "Renal salt wasting",
+    "Elevated circulating creatinine concentration",
+    "Hypertension",
+    "Tubulointerstitial nephritis",
+    "Impaired renal uric acid clearance",
+    "Stage 5 chronic kidney disease",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

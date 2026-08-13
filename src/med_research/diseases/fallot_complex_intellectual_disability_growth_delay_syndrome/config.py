@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'fallot complex-intellectual disability-growth delay syndrome (
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of fallot complex-intellectual disability-growth delay syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormality of the face",
+    "Tetralogy of Fallot",
+    "Intellectual disability",
+    "Ventricular septal defect",
+    "Pulmonic stenosis",
+    "Autosomal recessive inheritance",
+    "Failure to thrive",
+    "Double outlet right ventricle",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

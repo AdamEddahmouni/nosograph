@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'Partington syndrome (PARTINGTON_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Partington syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Atypical behavior",
+    "Delayed speech and language development",
+    "Lower limb spasticity",
+    "Dysarthria",
+    "Focal dystonia",
+    "Intellectual disability",
+    "Flexion contracture",
+    "Limb dystonia",
+    "Infantile spasms",
+    "EEG abnormality",
+    "Seizure",
+    "Triangular face",
+    "X-linked recessive inheritance",
+    "Camptodactyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

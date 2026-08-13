@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'immunodeficiency 114, folate-responsive (IMMUNODEFICIENCY_114_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 114, folate-responsive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased circulating IgE concentration",
+    "Megaloblastic bone marrow",
+    "Chronic diarrhea",
+    "Food allergy",
+    "Postnatal growth retardation",
+    "Global developmental delay",
+    "Megaloblastic anemia",
+    "Cerebral calcification",
+    "Increased circulating ferritin concentration",
+    "Decreased total lymphocyte count",
+    "Infantile onset",
+    "Hepatomegaly",
+    "Delayed CNS myelination",
+    "Hypertriglyceridemia",
+    "Atopic dermatitis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

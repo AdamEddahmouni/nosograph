@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'galactosemia 4 (GALACTOSEMIA_4)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of galactosemia 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cataract",
+    "Neonatal onset",
+    "Hepatomegaly",
+    "Global developmental delay",
+    "Autosomal recessive inheritance",
+    "Hypergalactosemia",
+    "Prolonged neonatal jaundice",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

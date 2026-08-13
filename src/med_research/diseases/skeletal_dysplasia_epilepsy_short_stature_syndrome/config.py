@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'skeletal dysplasia-epilepsy-short stature syndrome (SKELETAL_D
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of skeletal dysplasia-epilepsy-short stature syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Skeletal dysplasia",
+    "Intellectual disability",
+    "Decreased anterioposterior diameter of lumbar vertebral bodies",
+    "Hypoplastic acetabulae",
+    "Seizure",
+    "Hypoplastic iliac wing",
+    "Autosomal recessive inheritance",
+    "Delayed skeletal maturation",
+    "Short stature",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'Cooks syndrome (COOKS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Cooks syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Prominent nasal bridge",
+    "Nail dysplasia",
+    "High palate",
+    "Underdeveloped nasal alae",
+    "Short philtrum",
+    "Prominent nose",
+    "Complete duplication of thumb phalanx",
+    "Anonychia",
+    "Nail dystrophy",
+    "Shortening of all distal phalanges of the toes",
+    "Short 5th finger",
+    "Shortening of all distal phalanges of the fingers",
+    "Downslanted palpebral fissures",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

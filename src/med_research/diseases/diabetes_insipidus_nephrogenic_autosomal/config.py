@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'diabetes insipidus, nephrogenic, autosomal (DIABETES_INSIPIDUS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of diabetes insipidus, nephrogenic, autosomal
-SYMPTOMS = []
+SYMPTOMS = [
+    "Polyuria",
+    "Feeding difficulties in infancy",
+    "Constipation",
+    "Unexplained fevers",
+    "Vomiting",
+    "Neonatal onset",
+    "Autosomal dominant inheritance",
+    "Failure to thrive",
+    "Megacystis",
+    "Irritability",
+    "Polydipsia",
+    "Hypertonic dehydration",
+    "Nephrogenic diabetes insipidus",
+    "Autosomal recessive inheritance",
+    "Short stature",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

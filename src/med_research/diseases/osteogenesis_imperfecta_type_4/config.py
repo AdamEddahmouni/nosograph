@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'osteogenesis imperfecta type 4 (OSTEOGENESIS_IMPERFECTA_TYPE_4
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of osteogenesis imperfecta type 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Bowing of limbs due to multiple fractures",
+    "Recurrent fractures",
+    "Popcorn calcification",
+    "Kyphosis",
+    "Dentinogenesis imperfecta",
+    "Otosclerosis",
+    "Short stature",
+    "Hearing impairment",
+    "Reduced bone mineral density",
+    "Blue sclerae",
+    "Femoral bowing present at birth, straightening with time",
+    "Scoliosis",
+    "Increased susceptibility to fractures",
+    "Wormian bones",
+    "Biconcave flattened vertebrae",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

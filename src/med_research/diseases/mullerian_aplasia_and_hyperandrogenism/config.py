@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'mullerian aplasia and hyperandrogenism (MULLERIAN_APLASIA_AND_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mullerian aplasia and hyperandrogenism
-SYMPTOMS = []
+SYMPTOMS = [
+    "Unilateral renal agenesis",
+    "Early young adult onset",
+    "Primary amenorrhea",
+    "Acne",
+    "Autosomal dominant inheritance",
+    "Increased circulating dehydroepiandrosterone-sulfate concentration",
+    "Hirsutism",
+    "Aplasia of the vagina",
+    "Aplasia of the uterus",
+    "Increased circulating androstenedione concentration",
+    "Aplasia of the fallopian tube",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

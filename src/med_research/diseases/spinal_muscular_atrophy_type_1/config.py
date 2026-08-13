@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spinal muscular atrophy, type 1 (SPINAL_MUSCULAR_ATROPHY_TYPE_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spinal muscular atrophy, type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Respiratory insufficiency",
+    "Neonatal onset",
+    "Ventricular septal defect",
+    "Death in childhood",
+    "Proximal lower limb muscle weakness",
+    "EMG: neuropathic changes",
+    "Poor head control",
+    "Autosomal recessive inheritance",
+    "Recurrent respiratory infections",
+    "Generalized hypotonia",
+    "Proximal amyotrophy",
+    "Areflexia",
+    "Infantile onset",
+    "Decreased fetal movement",
+    "Spinal muscular atrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

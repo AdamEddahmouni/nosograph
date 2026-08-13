@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'infantile-onset autosomal recessive nonprogressive cerebellar 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of infantile-onset autosomal recessive nonprogressive cerebellar ataxia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Delayed speech and language development",
+    "Gait ataxia",
+    "Nonprogressive",
+    "Ataxia",
+    "Intention tremor",
+    "Dysmetria",
+    "Motor delay",
+    "Short stature",
+    "Pes planus",
+    "Hypotonia",
+    "Hyperreflexia",
+    "Congenital onset",
+    "Spasticity",
+    "Cerebellar atrophy",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

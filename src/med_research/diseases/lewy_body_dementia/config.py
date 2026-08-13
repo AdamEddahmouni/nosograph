@@ -8,8 +8,15 @@ PIPELINE_LABEL = "Lewy body dementia (LEWY_BODY_DEMENTIA)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Lewy body dementia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Delusion",
+    "Autosomal dominant inheritance",
+    "Visual hallucination",
+    "Dementia",
+    "Fluctuations in consciousness",
+    "Lewy bodies",
+    "Parkinsonism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

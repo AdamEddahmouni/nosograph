@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'atherosclerosis-deafness-diabetes-epilepsy-nephropathy syndrom
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of atherosclerosis-deafness-diabetes-epilepsy-nephropathy syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Diabetes mellitus",
+    "Coronary artery atherosclerosis",
+    "Renal artery stenosis",
+    "Proteinuria",
+    "Sensorineural hearing impairment",
+    "Cerebral artery atherosclerosis",
+    "Photosensitive myoclonic seizure",
+    "Nephropathy",
+    "Autosomal recessive inheritance",
+    "Abnormal cerebellum morphology",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

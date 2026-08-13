@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'sick sinus syndrome 1 (SICK_SINUS_SYNDROME_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of sick sinus syndrome 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Absent P wave",
+    "Sick sinus syndrome",
+    "Childhood onset",
+    "Congenital onset",
+    "Sinus bradycardia",
+    "Atrioventricular block",
+    "Autosomal recessive inheritance",
+    "Ventricular escape rhythm",
+    "Juvenile onset",
+    "Prolonged QT interval",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

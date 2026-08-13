@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'familial partial lipodystrophy, Kobberling type (FAMILIAL_PART
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial partial lipodystrophy, Kobberling type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased subcutaneous truncal adipose tissue",
+    "Hyperglycemia",
+    "Xanthomatosis",
+    "Hepatomegaly",
+    "Autosomal dominant inheritance",
+    "Acanthosis nigricans",
+    "Loss of gluteal subcutaneous adipose tissue",
+    "Acute pancreatitis",
+    "Increased facial adipose tissue",
+    "Insulin-resistant diabetes mellitus",
+    "Hypertriglyceridemia",
+    "Hypertension",
+    "Lipodystrophy",
+    "Prominent superficial veins",
+    "Increased adipose tissue around the neck",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

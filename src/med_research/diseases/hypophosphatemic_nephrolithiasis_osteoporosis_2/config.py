@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'hypophosphatemic nephrolithiasis/osteoporosis 2 (HYPOPHOSPHATE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypophosphatemic nephrolithiasis/osteoporosis 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Osteoporosis",
+    "Renal phosphate wasting",
+    "Hypophosphatemia",
+    "Hyperphosphaturia",
+    "Osteopenia",
+    "Kidney stone",
+    "Autosomal dominant inheritance",
+    "Increased susceptibility to fractures",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

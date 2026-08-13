@@ -8,8 +8,15 @@ PIPELINE_LABEL = '46,XX disorder of sex development-skeletal anomalies syndrome 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of 46,XX disorder of sex development-skeletal anomalies syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ambiguous genitalia",
+    "Ulnar radial head dislocation",
+    "Clitoral hypertrophy",
+    "Short mandibular condyles",
+    "Autosomal recessive inheritance",
+    "Hypoplasia of the maxilla",
+    "Primary amenorrhea",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

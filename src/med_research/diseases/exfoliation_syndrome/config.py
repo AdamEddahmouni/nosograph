@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'exfoliation syndrome (EXFOLIATION_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of exfoliation syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal lens morphology",
+    "Phakodonesis",
+    "Retinal venous occlusion",
+    "Anisocoria",
+    "Mydriasis",
+    "Iris hypoperfusion",
+    "Autosomal dominant inheritance",
+    "Cataract",
+    "Glaucoma",
+    "Asymmetry of intraocular pressure",
+    "Lens subluxation",
+    "Pigment deposition in the trabecular meshwork",
+    "Pseudoexfoliation",
+    "Rigidity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

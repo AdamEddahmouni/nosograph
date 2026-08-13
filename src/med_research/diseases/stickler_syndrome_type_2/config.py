@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Stickler syndrome type 2 (STICKLER_SYNDROME_TYPE_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Stickler syndrome type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Arthropathy",
+    "Retinal dysplasia",
+    "Spondyloepiphyseal dysplasia",
+    "Lumbar hypolordosis",
+    "Joint hypermobility",
+    "Bifid uvula",
+    "High, narrow palate",
+    "Degenerative vitreoretinopathy",
+    "Glaucoma",
+    "Depressed nasal bridge",
+    "Myopia",
+    "Long fingers",
+    "Recurrent fractures",
+    "Remnants of the hyaloid vascular system",
+    "Shallow orbits",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

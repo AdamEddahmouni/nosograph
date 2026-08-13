@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'dystonia 5 (DYSTONIA_5)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dystonia 5
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dysdiadochokinesis",
+    "Gait ataxia",
+    "Bradykinesia",
+    "Resting tremor",
+    "Torticollis",
+    "Writer's cramp",
+    "Pes cavus",
+    "Hyperreflexia",
+    "Spasticity",
+    "Scoliosis",
+    "Childhood onset",
+    "Dysarthria",
+    "Dystonia",
+    "Babinski sign",
+    "Parkinsonism with favorable response to dopaminergic medication",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

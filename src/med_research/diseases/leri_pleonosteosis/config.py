@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Leri pleonosteosis (LERI_PLEONOSTEOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Leri pleonosteosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Broad metacarpals",
+    "Short stepped shuffling gait",
+    "Narrow palpebral fissure",
+    "Blepharophimosis",
+    "Short metatarsal",
+    "Laryngeal stenosis",
+    "Gastroesophageal reflux",
+    "Cervical C2/C3 vertebral fusion",
+    "Cubitus valgus",
+    "Interphalangeal joint contracture of finger",
+    "Genu recurvatum",
+    "Short stature",
+    "Microcornea",
+    "Brachydactyly",
+    "Short palpebral fissure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

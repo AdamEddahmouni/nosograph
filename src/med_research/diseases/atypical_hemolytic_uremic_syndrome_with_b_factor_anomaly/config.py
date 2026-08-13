@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'atypical hemolytic-uremic syndrome with B factor anomaly (ATYP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of atypical hemolytic-uremic syndrome with B factor anomaly
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased blood urea nitrogen",
+    "Proteinuria",
+    "Hypertension",
+    "Thrombocytopenia",
+    "Acute kidney injury",
+    "Hemolytic-uremic syndrome",
+    "Anemia",
+    "Elevated circulating creatinine concentration",
+    "Microangiopathic hemolytic anemia",
+    "Hematuria",
+    "Autosomal dominant inheritance",
+    "Anuria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

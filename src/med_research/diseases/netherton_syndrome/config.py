@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Netherton syndrome (NETHERTON_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Netherton syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Asthma",
+    "Allergic rhinitis",
+    "Intestinal atresia",
+    "Sepsis",
+    "Increased circulating IgE concentration",
+    "Brittle hair",
+    "Autosomal recessive inheritance",
+    "Hypernatremic dehydration",
+    "Failure to thrive",
+    "Sparse scalp hair",
+    "Decreased circulating IgG concentration",
+    "Recurrent respiratory infections",
+    "Recurrent infection of the gastrointestinal tract",
+    "Sparse eyebrow",
+    "Villous atrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

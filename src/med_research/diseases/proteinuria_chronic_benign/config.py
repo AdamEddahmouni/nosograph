@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'proteinuria, chronic benign (PROTEINURIA_CHRONIC_BENIGN)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of proteinuria, chronic benign
-SYMPTOMS = []
+SYMPTOMS = [
+    "Renal insufficiency",
+    "Proteinuria",
+    "Albuminuria",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'Jervell and Lange-Nielsen syndrome 1 (JERVELL_AND_LANGE_NIELSE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Jervell and Lange-Nielsen syndrome 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Prolonged QT interval",
+    "Congenital sensorineural hearing impairment",
+    "Torsade de pointes",
+    "Congenital onset",
+    "Prolonged QTc interval",
+    "Syncope",
+    "Sudden cardiac death",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

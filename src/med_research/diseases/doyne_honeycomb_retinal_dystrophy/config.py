@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'Doyne honeycomb retinal dystrophy (DOYNE_HONEYCOMB_RETINAL_DYS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Doyne honeycomb retinal dystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Reticular pigmentary degeneration",
+    "Visual impairment",
+    "Retinal dystrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

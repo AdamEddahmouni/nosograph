@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'ankyloblepharon filiforme adnatum-cleft palate syndrome (ANKYL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ankyloblepharon filiforme adnatum-cleft palate syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cleft palate",
+    "Cleft upper lip",
+    "Ankyloblepharon",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

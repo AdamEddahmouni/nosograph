@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'formiminoglutamic aciduria (FORMIMINOGLUTAMIC_ACIDURIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of formiminoglutamic aciduria
-SYMPTOMS = []
+SYMPTOMS = [
+    "Megaloblastic anemia",
+    "Autosomal recessive inheritance",
+    "Intellectual disability",
+    "Aminoaciduria",
+    "Positive ferric chloride test",
+    "Hypersegmentation of neutrophil nuclei",
+    "Elevated urinary formiminoglutamic acid level",
+    "Growth delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'immunodeficiency 70 (IMMUNODEFICIENCY_70)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 70
-SYMPTOMS = []
+SYMPTOMS = [
+    "Chronic fatigue",
+    "Furuncle",
+    "Palmar warts",
+    "Recurrent sinusitis",
+    "Chronic decreased circulating IgA concentration",
+    "Plantar warts",
+    "Decreased total B cell count",
+    "Celiac disease",
+    "Autosomal dominant inheritance",
+    "HP_0005407",
+    "Decreased circulating IgM concentration",
+    "Immunodeficiency",
+    "Retinal vasculitis",
+    "Decreased circulating total IgG concentration",
+    "Verrucae",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

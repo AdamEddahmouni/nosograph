@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'vasculitis due to ADA2 deficiency (VASCULITIS_DUE_TO_ADA2_DEFI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of vasculitis due to ADA2 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Immunodeficiency",
+    "Hypertension",
+    "Stiff skin",
+    "Myalgia",
+    "Headache",
+    "Ophthalmoplegia",
+    "Infantile onset",
+    "Livedo racemosa",
+    "Aphasia",
+    "Skin rash",
+    "Peripheral neuropathy",
+    "Vasculitis",
+    "Elevated circulating C-reactive protein concentration",
+    "Raynaud phenomenon",
+    "Esophageal varix",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Wolfram-like syndrome (WOLFRAM_LIKE_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Wolfram-like syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Diabetes mellitus",
+    "Type II diabetes mellitus",
+    "Psychosis",
+    "Optic disc pallor",
+    "Severely reduced visual acuity",
+    "Juvenile onset",
+    "Anxiety",
+    "Autosomal dominant inheritance",
+    "Impaired glucose tolerance",
+    "Glaucoma",
+    "Schizophrenia",
+    "Childhood onset",
+    "Reduced visual acuity",
+    "Hearing impairment",
+    "Depression",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

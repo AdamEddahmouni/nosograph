@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'dystonia 16 (DYSTONIA_16)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dystonia 16
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dyskinesia",
+    "Generalized dystonia",
+    "Abnormal pyramidal tract morphology",
+    "Gait disturbance",
+    "Postural tremor",
+    "Parkinsonism",
+    "Dysphagia",
+    "Delayed speech and language development",
+    "Limb dystonia",
+    "Retrocollis",
+    "Motor delay",
+    "Dysarthria",
+    "Juvenile onset",
+    "Autosomal recessive inheritance",
+    "Limb pain",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

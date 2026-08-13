@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Hutchinson-Gilford progeria syndrome (PROGERIA)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Hutchinson-Gilford progeria syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Alopecia",
+    "Congestive heart failure",
+    "Absence of subcutaneous fat",
+    "Autosomal dominant inheritance",
+    "Malar flattening",
+    "Precocious atherosclerosis",
+    "Premature coronary artery atherosclerosis",
+    "Micrognathia",
+    "Generalized osteoporosis",
+    "Osteolysis",
+    "Growth delay",
+    "Myocardial infarction",
+    "Autosomal recessive inheritance",
+    "Angina pectoris",
+    "Midface retrusion",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

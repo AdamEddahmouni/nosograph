@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neurodegeneration with ataxia, dystonia, and gaze palsy, child
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neurodegeneration with ataxia, dystonia, and gaze palsy, childhood-onset
-SYMPTOMS = []
+SYMPTOMS = [
+    "Limb ataxia",
+    "Dysmetria",
+    "Cerebellar atrophy",
+    "Ataxia",
+    "Mental deterioration",
+    "Dyskinesia",
+    "Progressive",
+    "Dysdiadochokinesis",
+    "Urinary incontinence",
+    "Vertical supranuclear gaze palsy",
+    "Dysarthria",
+    "Tremor",
+    "Hypergonadotropic hypogonadism",
+    "Nystagmus",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

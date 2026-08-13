@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'dilated cardiomyopathy 1II (DILATED_CARDIOMYOPATHY_1II)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dilated cardiomyopathy 1II
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ventricular tachycardia",
+    "Increased left ventricular end-diastolic volume",
+    "Autosomal dominant inheritance",
+    "Dilated cardiomyopathy",
+    "Elevated circulating creatine kinase activity",
+    "Moderately reduced left ventricular ejection fraction",
+    "Mitral regurgitation",
+    "Middle age onset",
+    "Cataract",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

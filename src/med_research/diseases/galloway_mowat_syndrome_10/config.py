@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Galloway-Mowat syndrome 10 (GALLOWAY_MOWAT_SYNDROME_10)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Galloway-Mowat syndrome 10
-SYMPTOMS = []
+SYMPTOMS = [
+    "Stage 5 chronic kidney disease",
+    "Infantile onset",
+    "Simplified gyral pattern",
+    "Autosomal recessive inheritance",
+    "Diffuse mesangial sclerosis",
+    "Proteinuria",
+    "Primary microcephaly",
+    "Arachnodactyly",
+    "Podocyte foot process effacement",
+    "Microcephaly",
+    "Congenital hypothyroidism",
+    "Secondary microcephaly",
+    "Hypotonia",
+    "Myoclonus",
+    "Cerebellar atrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

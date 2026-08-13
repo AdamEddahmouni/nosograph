@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'arthrogryposis, distal, type 1C (ARTHROGRYPOSIS_DISTAL_TYPE_1C
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of arthrogryposis, distal, type 1C
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short stature",
+    "Hip contracture",
+    "Elbow flexion contracture",
+    "Retrognathia",
+    "Rocker bottom foot",
+    "Increased nuchal translucency",
+    "Decreased body weight",
+    "Knee flexion contracture",
+    "Limited neck range of motion",
+    "Talipes equinovarus",
+    "Blepharophimosis",
+    "Cryptorchidism",
+    "Clinodactyly of the 5th finger",
+    "Thin vermilion border",
+    "Camptodactyly of toe",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'glycine N-methyltransferase deficiency (GLYCINE_N_METHYLTRANSF
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of glycine N-methyltransferase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated circulating hepatic transaminase concentration",
+    "Autosomal recessive inheritance",
+    "Hepatomegaly",
+    "Hypermethioninemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

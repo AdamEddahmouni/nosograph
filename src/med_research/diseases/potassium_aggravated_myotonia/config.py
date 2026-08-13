@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'potassium-aggravated myotonia (POTASSIUM_AGGRAVATED_MYOTONIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of potassium-aggravated myotonia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Apneic episodes in infancy",
+    "Elevated circulating creatine kinase activity",
+    "Muscle weakness",
+    "Skeletal muscle atrophy",
+    "Neonatal onset",
+    "Young adult onset",
+    "Myotonia",
+    "Autosomal dominant inheritance",
+    "Skeletal muscle hypertrophy",
+    "Handgrip myotonia",
+    "Laryngospasm",
+    "Muscle stiffness",
+    "Myalgia",
+    "Stridor",
+    "Percussion myotonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

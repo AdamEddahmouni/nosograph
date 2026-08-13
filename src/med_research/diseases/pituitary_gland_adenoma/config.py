@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'Pituitary Gland Adenoma (PITUITARY_GLAND_ADENOMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Pituitary Gland Adenoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased circulating prolactin concentration",
+    "Autosomal dominant inheritance",
+    "Pituitary growth hormone cell adenoma",
+    "Typified by somatic mosaicism",
+    "Hyperpigmentation of the skin",
+    "Pituitary adenoma",
+    "Adult onset",
+    "Typified by incomplete penetrance",
+    "Pituitary corticotropic cell adenoma",
+    "Acral overgrowth",
+    "Increased circulating ACTH level",
+    "Increased circulating cortisol level",
+    "Elevated circulating growth hormone concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

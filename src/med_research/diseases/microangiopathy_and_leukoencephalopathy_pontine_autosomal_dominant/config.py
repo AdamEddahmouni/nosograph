@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'microangiopathy and leukoencephalopathy, pontine, autosomal do
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of microangiopathy and leukoencephalopathy, pontine, autosomal dominant
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dementia",
+    "Autosomal dominant inheritance",
+    "Cognitive impairment",
+    "Postural instability",
+    "Middle age onset",
+    "Young adult onset",
+    "Hyperintensity of cerebral white matter on MRI",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

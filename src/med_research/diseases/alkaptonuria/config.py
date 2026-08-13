@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'alkaptonuria (ALKAPTONURIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of alkaptonuria
-SYMPTOMS = []
+SYMPTOMS = [
+    "Low back pain",
+    "Adult onset",
+    "Decreased glomerular filtration rate",
+    "Arthritis",
+    "Dark cerumen",
+    "Limited hip movement",
+    "Autosomal recessive inheritance",
+    "Arthralgia",
+    "Vertebral fusion",
+    "Limited shoulder movement",
+    "Limitation of knee mobility",
+    "Coronary artery calcification",
+    "Ochronosis",
+    "Arthropathy",
+    "Brown pigmentation of the conjunctiva",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

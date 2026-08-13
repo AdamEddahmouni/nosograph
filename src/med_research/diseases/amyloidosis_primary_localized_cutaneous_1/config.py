@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'amyloidosis, primary localized cutaneous, 1 (AMYLOIDOSIS_PRIMA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of amyloidosis, primary localized cutaneous, 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cutaneous amyloidosis",
+    "Childhood onset",
+    "Autosomal dominant inheritance",
+    "Pruritus",
+    "Scaling skin",
+    "Lichenification",
+    "Dry skin",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

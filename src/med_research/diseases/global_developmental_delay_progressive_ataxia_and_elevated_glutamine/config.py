@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'global developmental delay, progressive ataxia, and elevated g
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of global developmental delay, progressive ataxia, and elevated glutamine
-SYMPTOMS = []
+SYMPTOMS = [
+    "Progressive cerebellar ataxia",
+    "Delayed gross motor development",
+    "Childhood onset",
+    "Hyperglutaminemia",
+    "Cerebellar atrophy",
+    "Delayed speech and language development",
+    "Autosomal recessive inheritance",
+    "Febrile seizure (within the age range of 3 months to 6 years)",
+    "Global developmental delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

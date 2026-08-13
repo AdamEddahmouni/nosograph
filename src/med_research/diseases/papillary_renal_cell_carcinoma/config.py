@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'papillary renal cell carcinoma (PAPILLARY_RENAL_CELL_CARCINOMA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of papillary renal cell carcinoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Papillary renal cell carcinoma",
+    "Typified by somatic mosaicism",
+    "Typified by incomplete penetrance",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

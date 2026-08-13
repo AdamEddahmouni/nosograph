@@ -8,8 +8,21 @@ PIPELINE_LABEL = "Idiopathic pulmonary fibrosis (PULMONARY_FIBROSIS)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Idiopathic pulmonary fibrosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased circulating immunoglobulin concentration",
+    "Pulmonary fibrosis",
+    "Elevated bronchoalveolar lavage fluid neutrophil proportion",
+    "Pulmonary arterial hypertension",
+    "Cough",
+    "Usual interstitial pneumonia",
+    "Decreased DLCO",
+    "Clubbing of fingers",
+    "Dyspnea",
+    "Alveolar cell carcinoma",
+    "Autosomal dominant inheritance",
+    "Exertional dyspnea",
+    "Cirrhosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'choroidal dystrophy, central areolar, 1 (CHOROIDAL_DYSTROPHY_C
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of choroidal dystrophy, central areolar, 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Chorioretinal atrophy",
+    "Autosomal dominant inheritance",
+    "Pigmentary retinopathy",
+    "Choriocapillaris atrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

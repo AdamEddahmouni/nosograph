@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'Dowling-Degos disease (DOWLING_DEGOS_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Dowling-Degos disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Follicular hyperkeratosis",
+    "Reticulated skin pigmentation",
+    "Hypergranulosis",
+    "Pruritus",
+    "Palmar pits",
+    "Hypomelanotic macule",
+    "Hyperpigmented/hypopigmented macules",
+    "Reticular hyperpigmentation",
+    "Autosomal dominant inheritance",
+    "Adult onset",
+    "Hyperkeratotic papule",
+    "Papule",
+    "Progressive reticulate hyperpigmentation",
+    "Epidermal acanthosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

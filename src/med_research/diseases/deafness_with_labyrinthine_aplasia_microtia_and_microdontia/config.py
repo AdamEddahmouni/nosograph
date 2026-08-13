@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'deafness with labyrinthine aplasia, microtia, and microdontia 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of deafness with labyrinthine aplasia, microtia, and microdontia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Downslanted palpebral fissures",
+    "Conical tooth",
+    "Jugular foramen stenosis",
+    "Autosomal recessive inheritance",
+    "Micrognathia",
+    "Prominent nose",
+    "Delayed gross motor development",
+    "Skin tags",
+    "Profound sensorineural hearing impairment",
+    "Aplasia of the inner ear",
+    "Long face",
+    "Microdontia",
+    "Anteverted ears",
+    "Widely spaced teeth",
+    "Peg-shaped maxillary lateral incisors",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'trichotillomania (TRICHOTILLOMANIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of trichotillomania
-SYMPTOMS = []
+SYMPTOMS = [
+    "Non-Mendelian inheritance",
+    "Alopecia",
+    "Autosomal dominant inheritance",
+    "Compulsive behaviors",
+    "Hair-pulling",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

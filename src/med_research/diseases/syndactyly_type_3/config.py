@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'syndactyly type 3 (SYNDACTYLY_TYPE_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of syndactyly type 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short 5th finger",
+    "3-4 finger cutaneous syndactyly",
+    "4-5 finger cutaneous syndactyly",
+    "Autosomal dominant inheritance",
+    "Absent middle phalanx of 5th finger",
+    "Toe syndactyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

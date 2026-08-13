@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'UV-sensitive syndrome (UV_SENSITIVE_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of UV-sensitive syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Neoplasm",
+    "Freckling",
+    "Infantile onset",
+    "Increased cellular sensitivity to UV light",
+    "Abnormality of the nervous system",
+    "Pigmentation anomalies of sun-exposed skin",
+    "Dry skin",
+    "Autosomal recessive inheritance",
+    "Abnormal circulating porphyrin concentration",
+    "Cutaneous photosensitivity",
+    "Telangiectasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

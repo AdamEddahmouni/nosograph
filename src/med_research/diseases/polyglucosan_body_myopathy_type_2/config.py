@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'polyglucosan body myopathy type 2 (POLYGLUCOSAN_BODY_MYOPATHY_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of polyglucosan body myopathy type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Limb-girdle muscle weakness",
+    "Muscle fibrillation",
+    "Hand muscle weakness",
+    "Slowly progressive",
+    "Young adult onset",
+    "Middle age onset",
+    "Autosomal recessive inheritance",
+    "Pelvic girdle muscle weakness",
+    "Childhood onset",
+    "Muscle fiber polyglucosan inclusion bodies",
+    "Muscle fiber inclusion bodies",
+    "Late onset",
+    "Elevated circulating creatine kinase activity",
+    "Pelvic girdle amyotrophy",
+    "Gait disturbance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

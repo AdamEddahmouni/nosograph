@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autosomal recessive multiple pterygium syndrome (AUTOSOMAL_REC
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal recessive multiple pterygium syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Neck pterygia",
+    "Patellar aplasia",
+    "Downslanted palpebral fissures",
+    "Intercrural pterygium",
+    "Long clavicle",
+    "Cleft palate",
+    "Hypertelorism",
+    "Camptodactyly",
+    "Intellectual disability",
+    "Hip dislocation",
+    "Hydrops fetalis",
+    "Rib fusion",
+    "Exostosis of the external auditory canal",
+    "Congenital diaphragmatic hernia",
+    "Multiple joint contractures",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

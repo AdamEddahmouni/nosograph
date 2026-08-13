@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Simpson-Golabi-Behmel syndrome (SIMPSON_GOLABI_BEHMEL_SYNDROME
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Simpson-Golabi-Behmel syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Preauricular pit",
+    "Posterior helix pit",
+    "Enlarged kidney",
+    "Hearing impairment",
+    "Splenomegaly",
+    "Short nail",
+    "Wide mouth",
+    "Dental malocclusion",
+    "Broad forehead",
+    "Gingival overgrowth",
+    "Narrow greater sciatic notch",
+    "Postauricular pit",
+    "Short nose",
+    "Hydronephrosis",
+    "Motor delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

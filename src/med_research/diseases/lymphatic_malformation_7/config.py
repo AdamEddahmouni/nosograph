@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'lymphatic malformation 7 (LYMPHATIC_MALFORMATION_7)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lymphatic malformation 7
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pericardial effusion",
+    "Respiratory distress",
+    "Abdominal distention",
+    "Pleural effusion",
+    "Atrial septal defect",
+    "Lymphedema",
+    "Edema",
+    "Nonimmune hydrops fetalis",
+    "Autosomal dominant inheritance",
+    "Varicose veins",
+    "Increased nuchal translucency",
+    "Anemia",
+    "Chylothorax",
+    "Pulmonary edema",
+    "Ascites",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

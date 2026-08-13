@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'juvenile-onset diabetes mellitus-central and peripheral neurod
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of juvenile-onset diabetes mellitus-central and peripheral neurodegeneration syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Peripheral neuropathy",
+    "Decreased motor nerve conduction velocity",
+    "Cognitive impairment",
+    "Gait ataxia",
+    "Areflexia of lower limbs",
+    "Atrophy/Degeneration affecting the brainstem",
+    "Sensorineural hearing impairment",
+    "Childhood onset",
+    "Short stature",
+    "Anti-islet antigen-2 antibody positivity",
+    "Elevated hemoglobin A1c",
+    "Early young adult onset",
+    "Decreased sensory nerve conduction velocity",
+    "Juvenile onset",
+    "Babinski sign",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

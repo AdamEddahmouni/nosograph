@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Wolman disease (WOLMAN_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Wolman disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cirrhosis",
+    "Abdominal distention",
+    "Periportal fibrosis",
+    "Failure to thrive",
+    "Diarrhea",
+    "Hepatic foam cells",
+    "Bone-marrow foam cells",
+    "Splenomegaly",
+    "Acute hepatic failure",
+    "Autosomal recessive inheritance",
+    "Adrenal calcification",
+    "Adrenal insufficiency",
+    "Portal hypertension",
+    "Hepatomegaly",
+    "Elevated circulating aspartate aminotransferase concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

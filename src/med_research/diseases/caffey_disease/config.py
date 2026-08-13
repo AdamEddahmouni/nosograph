@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'Caffey disease (CAFFEY_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Caffey disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Fever",
+    "Tibial bowing",
+    "Thickened tibial cortex",
+    "Periosteal thickening of long tubular bones",
+    "Joint hypermobility",
+    "Subperiosteal bone formation",
+    "Calvarial hyperostosis",
+    "Bowing of the legs",
+    "Thickened cortex of the mandible",
+    "Thickened cortex of the radius",
+    "Autosomal dominant inheritance",
+    "Thickened cortex of the ulna",
+    "Cortical irregularity",
+    "Thickened cortex of the clavicle",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

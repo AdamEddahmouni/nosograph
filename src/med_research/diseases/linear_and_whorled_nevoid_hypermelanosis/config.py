@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'linear and whorled nevoid hypermelanosis (LINEAR_AND_WHORLED_N
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of linear and whorled nevoid hypermelanosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sporadic",
+    "Infantile onset",
+    "Autosomal dominant inheritance",
+    "Hyperpigmented streaks",
+    "Increased total eosinophil count",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

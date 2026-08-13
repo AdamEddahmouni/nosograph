@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'holoprosencephaly 5 (HOLOPROSENCEPHALY_5)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of holoprosencephaly 5
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ventriculomegaly",
+    "Proptosis",
+    "Congenital onset",
+    "Lobar holoprosencephaly",
+    "Autosomal dominant inheritance",
+    "Microcephaly",
+    "Global developmental delay",
+    "Hyperreflexia",
+    "Broad forehead",
+    "Depressed nasal bridge",
+    "Trigonocephaly",
+    "Fetal onset",
+    "Central diabetes insipidus",
+    "Orofacial cleft",
+    "Syntelencephaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

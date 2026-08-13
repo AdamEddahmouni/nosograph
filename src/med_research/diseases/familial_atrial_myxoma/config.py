@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'familial atrial myxoma (FAMILIAL_ATRIAL_MYXOMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial atrial myxoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cardiac myxoma",
+    "Autosomal dominant inheritance",
+    "Bacterial endocarditis",
+    "Pulmonic valve myxoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

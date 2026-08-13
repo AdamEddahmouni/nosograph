@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'KBG syndrome (KBG_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of KBG syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Radial deviation of finger",
+    "Anteverted nares",
+    "Triangular face",
+    "Cutaneous syndactyly",
+    "Downslanted palpebral fissures",
+    "Brachycephaly",
+    "Cryptorchidism",
+    "Pointed chin",
+    "Epispadias",
+    "Intellectual disability",
+    "Vertebral fusion",
+    "Synophrys",
+    "Vertebral arch anomaly",
+    "Low posterior hairline",
+    "Low anterior hairline",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

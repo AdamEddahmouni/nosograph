@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'renal coloboma syndrome (RENAL_COLOBOMA_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of renal coloboma syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Macular degeneration",
+    "Seizure",
+    "Morning glory anomaly",
+    "Elevated circulating creatinine concentration",
+    "Lens luxation",
+    "Scleral staphyloma",
+    "Retinal coloboma",
+    "Chronic kidney disease",
+    "Intellectual disability",
+    "Soft skin",
+    "Hyperextensible skin",
+    "Hypertension",
+    "Gliosis",
+    "Chiari type I malformation",
+    "Renal cyst",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

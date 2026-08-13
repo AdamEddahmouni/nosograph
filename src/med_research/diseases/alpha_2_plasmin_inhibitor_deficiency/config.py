@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'alpha-2-plasmin inhibitor deficiency (ALPHA_2_PLASMIN_INHIBITO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of alpha-2-plasmin inhibitor deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Bruising susceptibility",
+    "Hemothorax",
+    "Joint hemorrhage",
+    "Autosomal recessive inheritance",
+    "Persistent bleeding after trauma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

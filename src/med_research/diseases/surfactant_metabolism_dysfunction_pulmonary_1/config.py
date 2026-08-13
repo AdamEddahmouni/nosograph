@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_ME
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of surfactant metabolism dysfunction, pulmonary, 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dyspnea",
+    "Cyanosis",
+    "Intraalveolar phospholipid accumulation",
+    "Apnea",
+    "Autosomal recessive inheritance",
+    "Respiratory failure",
+    "Tachypnea",
+    "Pulmonary arterial hypertension",
+    "Failure to thrive",
+    "Neonatal onset",
+    "Neonatal death",
+    "Absent bronchoalveolar dimeric surfactant-protein B",
+    "Neonatal respiratory distress",
+    "Ground-glass opacification",
+    "Desquamative interstitial pneumonitis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'syndromic X-linked intellectual disability Hedera type (SYNDRO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of syndromic X-linked intellectual disability Hedera type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Intellectual disability",
+    "Cerebellar atrophy",
+    "Cerebral atrophy",
+    "X-linked recessive inheritance",
+    "Action tremor",
+    "Hypomimic face",
+    "Motor delay",
+    "Drooling",
+    "Astereognosis",
+    "Delayed CNS myelination",
+    "Hypoplasia of the corpus callosum",
+    "Falls",
+    "Babinski sign",
+    "Infantile onset",
+    "Spasticity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

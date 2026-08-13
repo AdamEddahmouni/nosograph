@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'hyper-IgM syndrome type 5 (HYPER_IGM_SYNDROME_TYPE_5)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hyper-IgM syndrome type 5
-SYMPTOMS = []
+SYMPTOMS = [
+    "Epididymitis",
+    "Autosomal recessive inheritance",
+    "Decreased circulating IgG concentration",
+    "Recurrent bacterial infections",
+    "Immunodeficiency",
+    "Impaired Ig class switch recombination",
+    "Increased circulating IgM concentration",
+    "Lymphadenopathy",
+    "Decreased circulating IgA concentration",
+    "Childhood onset",
+    "Recurrent upper and lower respiratory tract infections",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

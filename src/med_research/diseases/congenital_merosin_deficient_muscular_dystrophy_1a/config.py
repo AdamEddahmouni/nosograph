@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'congenital merosin-deficient muscular dystrophy 1A (CONGENITAL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital merosin-deficient muscular dystrophy 1A
-SYMPTOMS = []
+SYMPTOMS = [
+    "Muscular dystrophy",
+    "Kyphoscoliosis",
+    "Motor delay",
+    "Hypotonia",
+    "Respiratory insufficiency due to muscle weakness",
+    "Hypointensity of cerebral white matter on MRI",
+    "Autosomal recessive inheritance",
+    "Increased endomysial connective tissue",
+    "Muscle weakness",
+    "Areflexia",
+    "Ophthalmoplegia",
+    "Intellectual disability",
+    "Feeding difficulties in infancy",
+    "Elevated circulating creatine kinase activity",
+    "Seizure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

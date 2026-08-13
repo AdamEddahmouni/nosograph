@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Acropectorovertebral dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Spina bifida occulta at S1",
+    "Skeletal dysplasia",
+    "Synostosis of carpal bones",
+    "Bifid distal phalanx of the thumb",
+    "Abnormal thorax morphology",
+    "Finger syndactyly",
+    "Spina bifida occulta at L5",
+    "Autosomal dominant inheritance",
+    "Broad thumb",
+    "Radial deviation of the 2nd finger",
+    "Abnormal vertebral morphology",
+    "Toe syndactyly",
+    "Capitate-hamate fusion",
+    "Short thumb",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'acromesomelic dysplasia 3 (ACROMESOMELIC_DYSPLASIA_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of acromesomelic dysplasia 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Aplasia of the proximal phalanx of the 2nd finger",
+    "Elevated circulating follicle stimulating hormone level",
+    "Autosomal recessive inheritance",
+    "Primary amenorrhea",
+    "Short phalanx of finger",
+    "Short toe",
+    "Delayed skeletal maturation",
+    "Radial deviation of finger",
+    "Hypergonadotropic hypogonadism",
+    "Widened proximal tibial metaphyses",
+    "Tarsal synostosis",
+    "Carpal synostosis",
+    "Bilateral talipes equinovarus",
+    "Short femoral neck",
+    "Disproportionate short-limb short stature",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

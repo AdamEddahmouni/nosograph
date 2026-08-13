@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'white forelock with malformations (WHITE_FORELOCK_WITH_MALFORM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of white forelock with malformations
-SYMPTOMS = []
+SYMPTOMS = [
+    "Bronchomalacia",
+    "Hypertelorism",
+    "Autosomal recessive inheritance",
+    "White forelock",
+    "Prominent veins on trunk",
+    "Poliosis",
+    "Aplasia/Hypoplasia of the distal phalanges of the toes",
+    "Atrial septal defect",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

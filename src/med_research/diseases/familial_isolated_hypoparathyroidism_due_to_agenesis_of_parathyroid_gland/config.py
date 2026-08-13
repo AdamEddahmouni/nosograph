@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'familial isolated hypoparathyroidism due to agenesis of parath
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial isolated hypoparathyroidism due to agenesis of parathyroid gland
-SYMPTOMS = []
+SYMPTOMS = [
+    "Tetany",
+    "Abnormality of the neck",
+    "Seizure",
+    "X-linked inheritance",
+    "Congenital hypoparathyroidism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

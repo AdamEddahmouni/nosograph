@@ -8,8 +8,10 @@ PIPELINE_LABEL = "Osteoporosis (OSTEOPOROSIS)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Osteoporosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Osteoporosis",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

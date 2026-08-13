@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'congenital myopathy with internal nuclei and atypical cores (C
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital myopathy with internal nuclei and atypical cores
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Frequent falls",
+    "Seizure",
+    "Abnormal circulating creatine kinase activity",
+    "Hypotonia",
+    "Neonatal onset",
+    "Childhood onset",
+    "Type 1 muscle fiber predominance",
+    "Centrally nucleated skeletal muscle fibers",
+    "Intellectual disability",
+    "Exercise intolerance",
+    "Motor delay",
+    "Myalgia",
+    "Muscle weakness",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'corneal dystrophy-perceptive deafness syndrome (CORNEAL_DYSTRO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of corneal dystrophy-perceptive deafness syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pediatric onset",
+    "Sensorineural hearing impairment",
+    "Autosomal recessive inheritance",
+    "Corneal dystrophy",
+    "Young adult onset",
+    "Reduced visual acuity",
+    "Opacification of the corneal stroma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

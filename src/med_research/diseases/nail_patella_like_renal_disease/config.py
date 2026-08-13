@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'nail-patella-like renal disease (NAIL_PATELLA_LIKE_RENAL_DISEA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of nail-patella-like renal disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Renal insufficiency",
+    "Minimal change glomerulonephritis",
+    "Late onset",
+    "Middle age onset",
+    "Stage 5 chronic kidney disease",
+    "Focal segmental glomerulosclerosis",
+    "Juvenile onset",
+    "Proteinuria",
+    "Young adult onset",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

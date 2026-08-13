@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'Alzheimer disease type 1 (ALZHEIMER_DISEASE_TYPE_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Alzheimer disease type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Adult onset",
+    "Neurofibrillary tangles",
+    "Decreased circulating GABA concentration",
+    "Dementia",
+    "Autosomal dominant inheritance",
+    "Alzheimer disease",
+    "Senile plaques",
+    "Parkinsonism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

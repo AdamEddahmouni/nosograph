@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Short stature, Dauber-Argente type (SHORT_STATURE_DAUBER_ARGEN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Short stature, Dauber-Argente type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Long fingers",
+    "Osteopenia",
+    "Decreased fibular diameter",
+    "Postnatal growth retardation",
+    "Autosomal recessive inheritance",
+    "Long toe",
+    "Specific learning disability",
+    "Microcephaly",
+    "Short stature",
+    "Fasting hyperinsulinemia",
+    "Juvenile onset",
+    "Delayed eruption of teeth",
+    "Short chin",
+    "Triangular face",
+    "Elevated circulating insulin-like growth factor-binding protein acid labile subunit concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

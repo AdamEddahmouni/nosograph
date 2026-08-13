@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'orofaciodigital syndrome type II (OROFACIODIGITAL_SYNDROME_TYP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of orofaciodigital syndrome type II
-SYMPTOMS = []
+SYMPTOMS = [
+    "Porencephalic cyst",
+    "Conductive hearing impairment",
+    "Cleft palate",
+    "Bilateral postaxial polydactyly",
+    "Bifid tongue",
+    "Metaphyseal irregularity",
+    "Micrognathia",
+    "Preaxial foot polydactyly",
+    "Hypertelorism",
+    "Flared metaphysis",
+    "Agenesis of central incisor",
+    "Tongue nodules",
+    "Brachydactyly",
+    "Bifid nasal tip",
+    "Short palm",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

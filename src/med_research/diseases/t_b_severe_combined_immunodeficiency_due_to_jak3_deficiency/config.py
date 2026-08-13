@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'T-B+ severe combined immunodeficiency due to JAK3 deficiency (
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of T-B+ severe combined immunodeficiency due to JAK3 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cutaneous anergy",
+    "Abnormal B cell physiology",
+    "Recurrent upper respiratory tract infections",
+    "Panhypogammaglobulinemia",
+    "Absent peripheral lymph nodes in presence of infection",
+    "Absent natural killer cells",
+    "Decreased total T cell count",
+    "Infantile onset",
+    "Pneumonia",
+    "Decreased total lymphocyte count",
+    "Failure to thrive",
+    "Meningitis",
+    "HP_0003347",
+    "Chronic diarrhea",
+    "Severe combined immunodeficiency",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

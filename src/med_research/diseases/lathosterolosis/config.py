@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'lathosterolosis (LATHOSTEROLOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lathosterolosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated gamma-glutamyltransferase level",
+    "Anteverted nares",
+    "Postaxial hand polydactyly",
+    "Epicanthus",
+    "Anisopoikilocytosis",
+    "Long philtrum",
+    "Cataract",
+    "Short nose",
+    "Postaxial foot polydactyly",
+    "Talipes equinovarus",
+    "2-3 toe cutaneous syndactyly",
+    "Intrahepatic cholestasis",
+    "Hyperbilirubinemia",
+    "Elevated circulating alkaline phosphatase concentration",
+    "Horseshoe kidney",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'acrocallosal syndrome (ACROCALLOSAL_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of acrocallosal syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Aplasia/Hypoplasia of the corpus callosum",
+    "Open mouth",
+    "Duplication of phalanx of hallux",
+    "Narrow mouth",
+    "Optic atrophy",
+    "Alveolar process hypoplasia",
+    "Short nose",
+    "Postaxial hand polydactyly",
+    "Short philtrum",
+    "Bifid uvula",
+    "Clinodactyly of the 5th finger",
+    "Mandibular prognathia",
+    "Prominent forehead",
+    "Hypertelorism",
+    "Severe intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'lacrimoauriculodentodigital syndrome 3 (LACRIMOAURICULODENTODI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lacrimoauriculodentodigital syndrome 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Enamel hypoplasia",
+    "Widely spaced teeth",
+    "Carious teeth",
+    "Autosomal dominant inheritance",
+    "Microtia",
+    "Congenital onset",
+    "Lacrimal duct aplasia",
+    "Partial duplication of thumb phalanx",
+    "Xerostomia",
+    "Hearing impairment",
+    "Absent lacrimal punctum",
+    "Cupped ear",
+    "Feeding difficulties",
+    "Absent eyelashes",
+    "Esotropia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

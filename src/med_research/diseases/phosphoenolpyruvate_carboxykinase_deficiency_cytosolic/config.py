@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'phosphoenolpyruvate carboxykinase deficiency, cytosolic (PHOSP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of phosphoenolpyruvate carboxykinase deficiency, cytosolic
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cerebral atrophy",
+    "Low plasma citrulline",
+    "Autosomal recessive inheritance",
+    "Fasting hypoglycemia",
+    "Apnea",
+    "Hypoglycemia",
+    "Ketonuria",
+    "Lactic acidosis",
+    "Elevated circulating alanine aminotransferase concentration",
+    "Hepatic steatosis",
+    "Hepatic encephalopathy",
+    "Hepatic failure",
+    "Renal steatosis",
+    "Global developmental delay",
+    "Impaired gluconeogenesis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

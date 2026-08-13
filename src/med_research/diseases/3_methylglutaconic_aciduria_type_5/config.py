@@ -8,8 +8,23 @@ PIPELINE_LABEL = '3-methylglutaconic aciduria type 5 (3_METHYLGLUTACONIC_ACIDURI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of 3-methylglutaconic aciduria type 5
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Noncompaction cardiomyopathy",
+    "Diaphragmatic eventration",
+    "Atrial septal defect",
+    "3-Methylglutaconic aciduria",
+    "Microvesicular hepatic steatosis",
+    "Cryptorchidism",
+    "Intrauterine growth retardation",
+    "Dilated cardiomyopathy",
+    "Optic atrophy",
+    "Sudden cardiac death",
+    "Ataxia",
+    "Prolonged QT interval",
+    "Seizure",
+    "Nonprogressive cerebellar ataxia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

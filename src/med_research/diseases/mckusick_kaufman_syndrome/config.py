@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'McKusick-Kaufman syndrome (MCKUSICK_KAUFMAN_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of McKusick-Kaufman syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hydrometrocolpos",
+    "Congenital hip dislocation",
+    "Edema",
+    "Polycystic kidney dysplasia",
+    "Mesoaxial hand polydactyly",
+    "Transverse vaginal septum",
+    "Vesicovaginal fistula",
+    "Pulmonary hypoplasia",
+    "Anal atresia",
+    "Aganglionic megacolon",
+    "Postaxial hand polydactyly",
+    "Abnormal cardiovascular system morphology",
+    "Syndactyly",
+    "Hydronephrosis",
+    "Rectovaginal fistula",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'mycosis fungoides (MYCOSIS_FUNGOIDES)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mycosis fungoides
-SYMPTOMS = []
+SYMPTOMS = [
+    "Psoriasiform dermatitis",
+    "Pruritus",
+    "Skin plaque",
+    "Lymphadenopathy",
+    "Lymphoma",
+    "Neoplasm of the skin",
+    "Eczematoid dermatitis",
+    "Erythema",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

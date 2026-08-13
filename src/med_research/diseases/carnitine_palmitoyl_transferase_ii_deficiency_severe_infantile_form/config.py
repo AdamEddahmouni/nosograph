@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'carnitine palmitoyl transferase II deficiency, severe infantil
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of carnitine palmitoyl transferase II deficiency, severe infantile form
-SYMPTOMS = []
+SYMPTOMS = [
+    "Respiratory arrest",
+    "Elevated circulating creatine kinase activity",
+    "Macrovesicular hepatic steatosis",
+    "Infantile onset",
+    "Elevated circulating hepatic transaminase concentration",
+    "Cardiomegaly",
+    "Hypoketotic hypoglycemia",
+    "Autosomal recessive inheritance",
+    "Lethargy",
+    "Increased circulating lactate dehydrogenase concentration",
+    "Hepatomegaly",
+    "Hyperammonemia",
+    "Vomiting",
+    "Seizure",
+    "Ventricular tachycardia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

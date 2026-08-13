@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'Aase-Smith syndrome (AASE_SMITH_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Aase-Smith syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital neuroblastoma",
+    "Abnormal pinna morphology",
+    "Open mouth",
+    "Ventricular septal defect",
+    "Hydrocephalus",
+    "Death in infancy",
+    "Ptosis",
+    "Talipes equinovarus",
+    "Slender finger",
+    "Autosomal dominant inheritance",
+    "Cleft palate",
+    "Dandy-Walker malformation",
+    "Flexion contracture",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

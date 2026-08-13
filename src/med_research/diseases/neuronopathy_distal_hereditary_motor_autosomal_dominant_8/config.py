@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neuronopathy, distal hereditary motor, autosomal dominant 8 (N
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neuronopathy, distal hereditary motor, autosomal dominant 8
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nonprogressive",
+    "Scoliosis",
+    "Pes planus",
+    "Proximal lower limb amyotrophy",
+    "Distal lower limb muscle weakness",
+    "Distal amyotrophy",
+    "Talipes equinovarus",
+    "Knee flexion contracture",
+    "Distal muscle weakness",
+    "Spinal muscular atrophy",
+    "Distal lower limb amyotrophy",
+    "Typified by incomplete penetrance",
+    "Decreased fetal movement",
+    "Nonprogressive muscular atrophy",
+    "Kyphosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mucolipidosis type III, alpha/beta (MUCOLIPIDOSIS_TYPE_III_ALP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mucolipidosis type III, alpha/beta
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cardiomyopathy",
+    "Shallow acetabular fossae",
+    "Carpal bone hypoplasia",
+    "Retinopathy",
+    "Young adult onset",
+    "Retinal degeneration",
+    "Juvenile onset",
+    "Short long bone",
+    "C1-C2 subluxation",
+    "Splenomegaly",
+    "Short ribs",
+    "Constrictive median neuropathy",
+    "Knee flexion contracture",
+    "Infantile onset",
+    "Coarse facial features",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

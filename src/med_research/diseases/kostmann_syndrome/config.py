@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Kostmann syndrome (KOSTMANN_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Kostmann syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Seizure",
+    "Dyspnea",
+    "Young adult onset",
+    "Intellectual disability",
+    "Complete right bundle branch block",
+    "Recurrent bacterial infections",
+    "Decreased total neutrophil count",
+    "Global developmental delay",
+    "Reduced left ventricular ejection fraction",
+    "Sensorineural hearing impairment",
+    "Ventricular septal hypertrophy",
+    "Middle age onset",
+    "Infantile onset",
+    "Hypertrophic cardiomyopathy",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

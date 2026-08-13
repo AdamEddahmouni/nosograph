@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Landau-Kleffner syndrome (LANDAU_KLEFFNER_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Landau-Kleffner syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypotonia",
+    "Continuous spike and waves during slow sleep",
+    "Aphasia",
+    "Primary microcephaly",
+    "Short stature",
+    "Atonic seizure",
+    "Typified by incomplete penetrance",
+    "Attention deficit hyperactivity disorder",
+    "Small for gestational age",
+    "Focal impaired awareness seizure",
+    "Short nose",
+    "Developmental regression",
+    "Bilateral tonic-clonic seizure with focal onset",
+    "Focal-onset seizure",
+    "Delayed speech and language development",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

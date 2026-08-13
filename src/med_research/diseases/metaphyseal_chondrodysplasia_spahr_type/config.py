@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'metaphyseal chondrodysplasia, Spahr type (METAPHYSEAL_CHONDROD
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of metaphyseal chondrodysplasia, Spahr type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Osteochondritis dissecans",
+    "Metaphyseal sclerosis",
+    "Metaphyseal chondrodysplasia",
+    "Short stature",
+    "Infantile onset",
+    "Motor delay",
+    "Autosomal recessive inheritance",
+    "Genu valgum",
+    "Bowing of the legs",
+    "Progressive leg bowing",
+    "Metaphyseal dysplasia",
+    "Waddling gait",
+    "Metaphyseal widening",
+    "Juvenile onset",
+    "Disproportionate short stature",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

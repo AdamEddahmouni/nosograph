@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'immunodeficiency 73c with defective neutrophil chemotaxis and 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 73c with defective neutrophil chemotaxis and hypogammaglobulinemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormally low T cell receptor excision circle level",
+    "Cervical lymphadenopathy",
+    "Failure to thrive in infancy",
+    "Decreased total B cell count",
+    "Urticaria",
+    "Decreased circulating IgG concentration",
+    "Recurrent respiratory infections",
+    "Decreased circulating IgM concentration",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

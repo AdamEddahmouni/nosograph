@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'chorea (CHOREA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of chorea
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dementia",
+    "Frequent falls",
+    "Autosomal dominant inheritance",
+    "Motor delay",
+    "Childhood onset",
+    "Gait disturbance",
+    "Infantile onset",
+    "Dysarthria",
+    "Chorea",
+    "Anxiety",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

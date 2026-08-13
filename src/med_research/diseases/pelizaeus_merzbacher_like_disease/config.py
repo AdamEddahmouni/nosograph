@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Pelizaeus-Merzbacher-like disease (PELIZAEUS_MERZBACHER_LIKE_D
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Pelizaeus-Merzbacher-like disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Premature birth",
+    "Generalized amyotrophy",
+    "Spastic paraparesis",
+    "Pes planus",
+    "Elevated circulating thyroid-stimulating hormone concentration",
+    "Delayed CNS myelination",
+    "Stahl ear",
+    "Rotary nystagmus",
+    "Hypothyroidism",
+    "Infantile onset",
+    "Rigidity",
+    "Apnea",
+    "Underfolded superior helices",
+    "Neonatal onset",
+    "HP_0006887",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

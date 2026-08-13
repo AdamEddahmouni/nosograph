@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'X-linked sideroblastic anemia 1 (X_LINKED_SIDEROBLASTIC_ANEMIA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked sideroblastic anemia 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Macrocytic anemia",
+    "X-linked recessive inheritance",
+    "Sideroblastic anemia",
+    "Anemia of inadequate production",
+    "Anemic pallor",
+    "Asthenia",
+    "Childhood onset",
+    "Hypochromic microcytic anemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

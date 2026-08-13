@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'tumoral calcinosis, hyperphosphatemic, familial, 3 (TUMORAL_CA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of tumoral calcinosis, hyperphosphatemic, familial, 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Calvarial osteosclerosis",
+    "Metacarpal periosteal thickening",
+    "Elevated circulating parathyroid hormone level",
+    "Osteopenia",
+    "Parathyroid hyperplasia",
+    "Hypercalcemia",
+    "Cerebral calcification",
+    "Polydipsia",
+    "Polyuria",
+    "Kidney stone",
+    "Headache",
+    "Hyperphosphatemia",
+    "Achilles tendon calcification",
+    "Elevated circulating calcitriol concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spondyloepiphyseal dysplasia with congenital joint dislocation
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondyloepiphyseal dysplasia with congenital joint dislocations
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital onset",
+    "Hypertelorism",
+    "Limited hip extension",
+    "Genu valgum",
+    "Ventricular hypertrophy",
+    "Lumbar hyperlordosis",
+    "Cubitus valgus",
+    "Small epiphyses",
+    "Waddling gait",
+    "High palate",
+    "Long philtrum",
+    "Tricuspid regurgitation",
+    "Microtia",
+    "Delayed eruption of teeth",
+    "Aortic valve stenosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

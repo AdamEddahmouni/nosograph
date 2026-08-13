@@ -8,8 +8,9 @@ PIPELINE_LABEL = 'glycogen storage disease due to lactate dehydrogenase H-subuni
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of glycogen storage disease due to lactate dehydrogenase H-subunit deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Reduced circulating lactate dehydrogenase concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

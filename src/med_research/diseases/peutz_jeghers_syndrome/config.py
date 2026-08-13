@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Peutz-Jeghers syndrome (PEUTZ_JEGHERS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Peutz-Jeghers syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abdominal pain",
+    "Neoplasm of the pancreas",
+    "Clubbing of fingers",
+    "Oral melanotic macule",
+    "Precocious puberty with Sertoli cell tumor",
+    "Gynecomastia",
+    "Multiple gastric polyps",
+    "Intussusception",
+    "Bladder polyp",
+    "Intestinal bleeding",
+    "Bloody diarrhea",
+    "Uterine neoplasm",
+    "Ovarian cyst",
+    "Breast carcinoma",
+    "Rectal prolapse",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

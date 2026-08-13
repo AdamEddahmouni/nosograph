@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'choanal atresia-hearing loss-cardiac defects-craniofacial dysm
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of choanal atresia-hearing loss-cardiac defects-craniofacial dysmorphism syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Choanal atresia",
+    "Thin vermilion border",
+    "Narrow mouth",
+    "Cleft upper lip",
+    "Bilateral choanal atresia",
+    "Congenital onset",
+    "Ventricular septal defect",
+    "Renal hypoplasia",
+    "Autosomal recessive inheritance",
+    "Unilateral renal agenesis",
+    "Lower eyelid coloboma",
+    "Atrial septal defect",
+    "Short philtrum",
+    "Bilateral choanal atresia/stenosis",
+    "Inguinal hernia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

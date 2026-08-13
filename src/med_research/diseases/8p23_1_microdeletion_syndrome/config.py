@@ -8,8 +8,15 @@ PIPELINE_LABEL = '8p23.1 microdeletion syndrome (8P23_1_MICRODELETION_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of 8p23.1 microdeletion syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperactivity",
+    "Abnormal heart morphology",
+    "Atrioventricular canal defect",
+    "Atrial septal defect",
+    "Intellectual disability",
+    "Cryptorchidism",
+    "Congenital diaphragmatic hernia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

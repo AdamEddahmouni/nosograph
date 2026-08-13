@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'brain-lung-thyroid syndrome (BRAIN_LUNG_THYROID_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of brain-lung-thyroid syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pulmonary infiltrates",
+    "Oxygen desaturation on exertion",
+    "Dystonia",
+    "Recurrent respiratory infections",
+    "Cough",
+    "Ventricular septal defect",
+    "Elevated circulating thyroid-stimulating hormone concentration",
+    "Sleep disturbance",
+    "Ground-glass opacification",
+    "Elevated bronchoalveolar lavage fluid neutrophil proportion",
+    "Crackles",
+    "Decreased response to growth hormone stimulation test",
+    "Cystic pattern on pulmonary HRCT",
+    "Global developmental delay",
+    "Wheezing",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Spinocerebellar ataxia type 42 (SPINOCEREBELLAR_ATAXIA_TYPE_42
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Spinocerebellar ataxia type 42
-SYMPTOMS = []
+SYMPTOMS = [
+    "Diplopia",
+    "Abnormal pyramidal sign",
+    "Autosomal dominant inheritance",
+    "Tremor",
+    "Spastic ataxia",
+    "Eyelid myokymia",
+    "Loss of Purkinje cells in the cerebellar vermis",
+    "Impaired vibration sensation at ankles",
+    "Unsteady gait",
+    "Dysarthria",
+    "Dysphagia",
+    "Slowly progressive",
+    "Spastic gait",
+    "Cerebellar atrophy",
+    "Hyperreflexia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

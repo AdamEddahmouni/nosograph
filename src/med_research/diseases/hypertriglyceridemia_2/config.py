@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'hypertriglyceridemia 2 (HYPERTRIGLYCERIDEMIA_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypertriglyceridemia 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypertriglyceridemia",
+    "Autosomal dominant inheritance",
+    "Hypercholesterolemia",
+    "Decreased circulating HDL-C concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

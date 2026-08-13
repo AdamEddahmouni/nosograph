@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'epidermolysis bullosa, junctional 5A, intermediate (EPIDERMOLY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of epidermolysis bullosa, junctional 5A, intermediate
-SYMPTOMS = []
+SYMPTOMS = [
+    "Urethral stenosis",
+    "Premature loss of permanent teeth",
+    "Congenital onset",
+    "Stratum basale cleavage",
+    "Abnormal blistering of the skin",
+    "Nail dystrophy",
+    "Hypoplastic dermoepidermal hemidesmosomes",
+    "Autosomal recessive inheritance",
+    "Absent pubic hair",
+    "Absent axillary hair",
+    "Alopecia of scalp",
+    "Lamina lucida cleavage",
+    "Onycholysis of distal fingernails",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

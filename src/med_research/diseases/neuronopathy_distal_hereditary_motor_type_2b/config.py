@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'neuronopathy, distal hereditary motor, type 2B (NEURONOPATHY_D
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neuronopathy, distal hereditary motor, type 2B
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Distal lower limb muscle weakness",
+    "Slowly progressive",
+    "Hyporeflexia of lower limbs",
+    "Gait disturbance",
+    "Adult onset",
+    "EMG: neuropathic changes",
+    "Areflexia of lower limbs",
+    "Peripheral neuropathy",
+    "Paresis of extensor muscles of the big toe",
+    "Paralysis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

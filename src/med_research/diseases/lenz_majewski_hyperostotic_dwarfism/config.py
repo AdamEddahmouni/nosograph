@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Lenz-Majewski hyperostotic dwarfism (LENZ_MAJEWSKI_HYPEROSTOTI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Lenz-Majewski hyperostotic dwarfism
-SYMPTOMS = []
+SYMPTOMS = [
+    "Spina bifida occulta",
+    "Macrotia",
+    "Micrognathia",
+    "Moderate intellectual disability",
+    "Choanal stenosis",
+    "Sporadic",
+    "Agenesis of corpus callosum",
+    "Elbow flexion contracture",
+    "Ventriculomegaly",
+    "Intrauterine growth retardation",
+    "Broad clavicle",
+    "Relative macrocephaly",
+    "Short stature",
+    "Mandibular prognathia",
+    "Humeroradial synostosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

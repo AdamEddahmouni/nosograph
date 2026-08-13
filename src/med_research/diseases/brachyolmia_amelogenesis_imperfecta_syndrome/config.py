@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'brachyolmia-amelogenesis imperfecta syndrome (BRACHYOLMIA_AMEL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of brachyolmia-amelogenesis imperfecta syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Narrow vertebral interpedicular distance",
+    "Autosomal recessive inheritance",
+    "Widely spaced teeth",
+    "Oligodontia",
+    "Platyspondyly",
+    "Mandibular prognathia",
+    "Mitral valve prolapse",
+    "Hypertrichosis",
+    "Herniation of intervertebral nuclei",
+    "Short stature",
+    "Microdontia",
+    "Hypoplasia of the maxilla",
+    "Intervertebral space narrowing",
+    "Scoliosis",
+    "Amelogenesis imperfecta",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'metaphyseal dysplasia without hypotrichosis (METAPHYSEAL_DYSPL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of metaphyseal dysplasia without hypotrichosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Metaphyseal dysplasia",
+    "Metaphyseal irregularity",
+    "Cone-shaped epiphyses of the phalanges of the hand",
+    "Genu varum",
+    "Short metacarpal",
+    "Metaphyseal cupping of metacarpals",
+    "Short stature",
+    "Short long bone",
+    "Autosomal recessive inheritance",
+    "Joint hypermobility",
+    "Immunodeficiency",
+    "Abnormal hair morphology",
+    "Abnormal pelvic girdle bone morphology",
+    "Abnormality of the vertebral column",
+    "Abnormal facial shape",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

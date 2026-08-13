@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'isolated Pierre-Robin syndrome (ISOLATED_PIERRE_ROBIN_SYNDROME
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of isolated Pierre-Robin syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Feeding difficulties in infancy",
+    "Glossoptosis",
+    "Upper airway obstruction",
+    "Cleft palate",
+    "Autosomal recessive inheritance",
+    "Micrognathia",
+    "Neonatal respiratory distress",
+    "Pierre-Robin sequence",
+    "Cor pulmonale",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'anauxetic dysplasia 3 (ANAUXETIC_DYSPLASIA_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of anauxetic dysplasia 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Generalized hypotonia",
+    "Femoral bowing",
+    "Oligodontia",
+    "Sparse scalp hair",
+    "Severe short stature",
+    "High anterior hairline",
+    "Midface retrusion",
+    "Broad middle phalanx of finger",
+    "Feeding difficulties",
+    "Retrognathia",
+    "Platyspondyly",
+    "Cutis laxa",
+    "Pectus excavatum",
+    "Squared iliac bones",
+    "Genu valgum",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

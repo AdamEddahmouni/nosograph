@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'essential fructosuria (ESSENTIAL_FRUCTOSURIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of essential fructosuria
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated urine fructose level",
+    "Autosomal recessive inheritance",
+    "Impairment of fructose metabolism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

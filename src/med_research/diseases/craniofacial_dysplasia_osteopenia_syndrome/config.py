@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'craniofacial dysplasia - osteopenia syndrome (CRANIOFACIAL_DYS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of craniofacial dysplasia - osteopenia syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Tapered finger",
+    "Long fingers",
+    "Sparse lateral eyebrow",
+    "Global developmental delay",
+    "Cryptorchidism",
+    "Congenital onset",
+    "High myopia",
+    "Mitral regurgitation",
+    "Inguinal hernia",
+    "Sparse eyelashes",
+    "Smooth philtrum",
+    "Hypoparathyroidism",
+    "Preauricular skin tag",
+    "Intellectual disability",
+    "Hyperplasia of midface",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

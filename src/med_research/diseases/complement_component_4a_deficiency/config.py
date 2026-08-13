@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'complement component 4a deficiency (COMPLEMENT_COMPONENT_4A_DE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of complement component 4a deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cutaneous photosensitivity",
+    "Systemic lupus erythematosus",
+    "Reduced circulating CH50 activity",
+    "Purpura",
+    "Autosomal recessive inheritance",
+    "Decreased circulating complement C4 concentration",
+    "Vasculitis",
+    "Glomerulonephritis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

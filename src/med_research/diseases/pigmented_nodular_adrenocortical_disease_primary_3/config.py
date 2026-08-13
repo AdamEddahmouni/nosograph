@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'pigmented nodular adrenocortical disease, primary, 3 (PIGMENTE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pigmented nodular adrenocortical disease, primary, 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased circulating cortisol level",
+    "Autosomal dominant inheritance",
+    "Adrenal hyperplasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'mesomelic dwarfism-cleft palate-camptodactyly syndrome (MESOME
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mesomelic dwarfism-cleft palate-camptodactyly syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Camptodactyly of finger",
+    "Autosomal recessive inheritance",
+    "Cleft palate",
+    "Mesomelic arm shortening",
+    "Retrognathia",
+    "Bowing of the arm",
+    "Bowing of the legs",
+    "Mesomelic leg shortening",
+    "Micrognathia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

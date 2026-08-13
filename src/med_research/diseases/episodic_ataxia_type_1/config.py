@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'episodic ataxia type 1 (EPISODIC_ATAXIA_TYPE_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of episodic ataxia type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Tremor",
+    "Elevated circulating creatine kinase activity",
+    "Variable expressivity",
+    "Spastic gait",
+    "Myokymia",
+    "Autosomal dominant inheritance",
+    "Abnormality of the hand",
+    "Episodic ataxia",
+    "Blurred vision",
+    "Babinski sign",
+    "Incoordination",
+    "Headache",
+    "Slurred speech",
+    "Juvenile onset",
+    "Dysarthria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

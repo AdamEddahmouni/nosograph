@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'X-linked intellectual disability with isolated growth hormone 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked intellectual disability with isolated growth hormone deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short stature",
+    "Decreased response to growth hormone stimulation test",
+    "Mild intellectual disability",
+    "Panhypopituitarism",
+    "Hypothyroidism",
+    "X-linked inheritance",
+    "Global developmental delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

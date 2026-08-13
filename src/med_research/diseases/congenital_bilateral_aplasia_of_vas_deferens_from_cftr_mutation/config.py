@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'congenital bilateral aplasia of vas deferens from CFTR mutatio
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital bilateral aplasia of vas deferens from CFTR mutation
-SYMPTOMS = []
+SYMPTOMS = [
+    "Azoospermia",
+    "Autosomal recessive inheritance",
+    "Male infertility",
+    "Absent vas deferens",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

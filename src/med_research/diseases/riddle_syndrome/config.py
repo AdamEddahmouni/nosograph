@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'RIDDLE syndrome (RIDDLE_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of RIDDLE syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Microcephaly",
+    "Dry skin",
+    "Ataxia",
+    "Increased sensitivity to ionizing radiation",
+    "Decreased circulating IgG concentration",
+    "Pulmonary fibrosis",
+    "Immunodeficiency",
+    "Short stature",
+    "Mild global developmental delay",
+    "Abnormal facial shape",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

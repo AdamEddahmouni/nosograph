@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'anophthalmia plus syndrome (ANOPHTHALMIA_PLUS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of anophthalmia plus syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Anophthalmia",
+    "Microphthalmia",
+    "Bilateral cleft lip",
+    "Bilateral cleft palate",
+    "Unicornuate uterus",
+    "Macrotia",
+    "Tessier cleft",
+    "Autosomal recessive inheritance",
+    "Neural tube defect",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Prader-Willi syndrome (PRADER_WILLI)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Prader-Willi syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Flexion contracture",
+    "Intrauterine growth retardation",
+    "Hip dysplasia",
+    "Frontal bossing",
+    "Kyphosis",
+    "Specific learning disability",
+    "Delayed speech and language development",
+    "Thin upper lip vermilion",
+    "Intellectual disability",
+    "Tube feeding",
+    "Seizure",
+    "Short palpebral fissure",
+    "Skin-picking",
+    "Esotropia",
+    "Tapered finger",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

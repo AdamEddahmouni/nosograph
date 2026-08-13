@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'microcephaly-cervical spine fusion anomalies syndrome (MICROCE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of microcephaly-cervical spine fusion anomalies syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Microcephaly",
+    "Spinal instability",
+    "Short stature",
+    "Vertebral fusion",
+    "Spinal cord compression",
+    "Intellectual disability",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

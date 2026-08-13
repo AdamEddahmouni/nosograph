@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'premature ovarian failure 11 (PREMATURE_OVARIAN_FAILURE_11)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of premature ovarian failure 11
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Secondary amenorrhea",
+    "Elevated circulating follicle stimulating hormone level",
+    "Young adult onset",
+    "Oligomenorrhea",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

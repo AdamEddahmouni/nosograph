@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'combined immunodeficiency due to DOCK8 deficiency (COMBINED_IM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of combined immunodeficiency due to DOCK8 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Recurrent viral infections",
+    "Sepsis",
+    "Reduced total natural killer cell count",
+    "Anaphylactic shock",
+    "Food allergy",
+    "Unusual molluscum contagiosum",
+    "Increased circulating IgE concentration",
+    "Recurrent bacterial infections",
+    "Recurrent sinusitis",
+    "Drug allergy",
+    "Squamous cell carcinoma",
+    "Hemiplegia",
+    "Increased total eosinophil count",
+    "Infantile onset",
+    "Severe viral infection",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'triphalangeal thumbs-brachyectrodactyly syndrome (TRIPHALANGEA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of triphalangeal thumbs-brachyectrodactyly syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Split foot",
+    "Brachydactyly",
+    "Short 2nd finger",
+    "Triphalangeal thumb",
+    "Split hand",
+    "Autosomal dominant inheritance",
+    "Short 3rd toe",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

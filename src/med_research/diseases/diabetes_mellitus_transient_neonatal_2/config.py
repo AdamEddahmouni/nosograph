@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'diabetes mellitus, transient neonatal, 2 (DIABETES_MELLITUS_TR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of diabetes mellitus, transient neonatal, 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Transient neonatal diabetes mellitus",
+    "Type II diabetes mellitus",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

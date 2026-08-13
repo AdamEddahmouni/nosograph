@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spondylometaphyseal dysplasia-cone-rod dystrophy syndrome (SPO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondylometaphyseal dysplasia-cone-rod dystrophy syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Infantile onset",
+    "Strabismus",
+    "Short finger",
+    "Short metacarpal",
+    "Short stature",
+    "Cone/cone-rod dystrophy",
+    "Undetectable electroretinogram",
+    "Dental malocclusion",
+    "Joint stiffness",
+    "Coxa vara",
+    "Tibial bowing",
+    "Metaphyseal irregularity",
+    "Retinal thinning on OCT",
+    "Ovoid vertebral bodies",
+    "Myopia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'hypomaturation-hypoplastic amelogenesis imperfecta with taurod
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypomaturation-hypoplastic amelogenesis imperfecta with taurodontism
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Enamel hypoplasia",
+    "Taurodontia",
+    "Yellow-brown discoloration of the teeth",
+    "Amelogenesis imperfecta",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

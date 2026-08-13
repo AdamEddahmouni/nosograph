@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'glycogen storage disease due to glycogen branching enzyme defi
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of glycogen storage disease due to glycogen branching enzyme deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Skeletal muscle atrophy",
+    "Hypotonia",
+    "Talipes equinovarus",
+    "Esophageal varix",
+    "Failure to thrive",
+    "Ascites",
+    "Decreased fetal movement",
+    "Portal hypertension",
+    "Cardiomyopathy",
+    "Arthrogryposis multiplex congenita",
+    "Abnormal circulating creatine kinase activity",
+    "Flexion contracture",
+    "Edema",
+    "Polyhydramnios",
+    "Third trimester onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'synpolydactyly type 1 (SYNPOLYDACTYLY_TYPE_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of synpolydactyly type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Postaxial foot polydactyly",
+    "Finger syndactyly",
+    "Contracture of the proximal interphalangeal joint of the 5th finger",
+    "2nd-5th toe middle phalangeal hypoplasia",
+    "Congenital onset",
+    "Y-shaped metacarpals",
+    "Preaxial foot polydactyly",
+    "Mesoaxial hand polydactyly",
+    "Short middle phalanx of the 5th finger",
+    "Clinodactyly of the 5th finger",
+    "Autosomal dominant inheritance",
+    "Broad hallux",
+    "4-5 toe syndactyly",
+    "3-4 finger cutaneous syndactyly",
+    "6 metacarpals",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

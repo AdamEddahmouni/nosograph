@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'pseudo-TORCH syndrome 3 (PSEUDO_TORCH_SYNDROME_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pseudo-TORCH syndrome 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated circulating D-dimer concentration",
+    "Increased total leukocyte count",
+    "Death in infancy",
+    "Respiratory insufficiency",
+    "Cardiomegaly",
+    "Cerebral hemorrhage",
+    "Cerebral calcification",
+    "Anemia",
+    "Cerebellar hypoplasia",
+    "Abnormal cerebral white matter morphology",
+    "Congenital thrombocytopenia",
+    "Proteinuria",
+    "Lymphadenitis",
+    "Autosomal recessive inheritance",
+    "Seizure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

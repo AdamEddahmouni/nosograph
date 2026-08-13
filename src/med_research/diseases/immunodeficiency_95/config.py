@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'immunodeficiency 95 (IMMUNODEFICIENCY_95)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 95
-SYMPTOMS = []
+SYMPTOMS = [
+    "Recurrent respiratory infections",
+    "Infantile onset",
+    "Recurrent fever",
+    "Decreased circulating IgG3 concentration",
+    "Recurrent viral pneumonia",
+    "Recurrent viral upper respiratory tract infections",
+    "Decreased total lymphocyte count",
+    "Respiratory distress",
+    "Increased circulating IgG3 concentration",
+    "Ground-glass opacification",
+    "Autosomal recessive inheritance",
+    "Respiratory failure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

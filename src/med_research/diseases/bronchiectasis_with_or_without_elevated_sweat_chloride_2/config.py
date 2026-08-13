@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'bronchiectasis with or without elevated sweat chloride 2 (BRON
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of bronchiectasis with or without elevated sweat chloride 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Recurrent bronchiolitis",
+    "Elevated sweat chloride",
+    "Hyperpolarized transepithelial nasal potential difference",
+    "Abnormality of exocrine pancreas physiology",
+    "Chronic bronchitis",
+    "Autosomal dominant inheritance",
+    "Bronchiectasis",
+    "Juvenile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

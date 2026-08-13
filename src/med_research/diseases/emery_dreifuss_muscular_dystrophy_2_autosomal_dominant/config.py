@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Emery-Dreifuss muscular dystrophy 2, autosomal dominant (EMERY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Emery-Dreifuss muscular dystrophy 2, autosomal dominant
-SYMPTOMS = []
+SYMPTOMS = [
+    "Peroneal muscle atrophy",
+    "Pes cavus",
+    "Distal amyotrophy",
+    "Distal lower limb amyotrophy",
+    "Elbow contracture",
+    "Left anterior fascicular block",
+    "Proximal amyotrophy",
+    "Wrist flexion contracture",
+    "Hyperlordosis",
+    "Gowers sign",
+    "Spinal rigidity",
+    "Early young adult onset",
+    "Lower limb amyotrophy",
+    "Scapular winging",
+    "Neonatal onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

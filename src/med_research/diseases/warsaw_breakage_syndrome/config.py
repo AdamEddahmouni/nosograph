@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Warsaw breakage syndrome (WARSAW_BREAKAGE_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Warsaw breakage syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cutis marmorata",
+    "Global developmental delay",
+    "Clinodactyly of the 5th finger",
+    "Hearing impairment",
+    "Narrow forehead",
+    "Intellectual disability",
+    "Postnatal growth retardation",
+    "Epicanthus",
+    "Cupped ear",
+    "Small face",
+    "Hypotonia",
+    "Wide mouth",
+    "Ventricular septal defect",
+    "Congenital onset",
+    "High palate",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

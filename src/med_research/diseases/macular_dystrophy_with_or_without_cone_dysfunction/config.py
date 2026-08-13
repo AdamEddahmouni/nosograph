@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'macular dystrophy with or without cone dysfunction (MACULAR_DY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of macular dystrophy with or without cone dysfunction
-SYMPTOMS = []
+SYMPTOMS = [
+    "Macular dystrophy",
+    "Hypoautofluorescent retinal lesion",
+    "Middle age onset",
+    "Autosomal recessive inheritance",
+    "Macular atrophy",
+    "Central scotoma",
+    "Temporal optic disc pallor",
+    "Young adult onset",
+    "Juvenile onset",
+    "Reduced visual acuity",
+    "Retinal pigment epithelial atrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

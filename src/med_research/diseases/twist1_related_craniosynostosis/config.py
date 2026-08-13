@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'TWIST1-related craniosynostosis (TWIST1_RELATED_CRANIOSYNOSTOS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of TWIST1-related craniosynostosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Right unicoronal synostosis",
+    "Prominent occiput",
+    "Prominent forehead",
+    "Congenital onset",
+    "Sagittal craniosynostosis",
+    "Frontal bossing",
+    "Biparietal narrowing",
+    "Oxycephaly",
+    "Intellectual disability",
+    "Autosomal dominant inheritance",
+    "Dolichocephaly",
+    "Aortic valve stenosis",
+    "Turricephaly",
+    "Craniosynostosis",
+    "Systolic heart murmur",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

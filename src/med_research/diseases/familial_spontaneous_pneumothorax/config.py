@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'familial spontaneous pneumothorax (FAMILIAL_SPONTANEOUS_PNEUMO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial spontaneous pneumothorax
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Spontaneous pneumothorax",
+    "Typified by incomplete penetrance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

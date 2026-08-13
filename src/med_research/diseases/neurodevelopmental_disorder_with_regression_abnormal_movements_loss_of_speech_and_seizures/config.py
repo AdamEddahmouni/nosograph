@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neurodevelopmental disorder with regression, abnormal movement
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neurodevelopmental disorder with regression, abnormal movements, loss of speech, and seizures
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cerebral atrophy",
+    "Intellectual disability",
+    "Dysmetria",
+    "Loss of speech",
+    "Global developmental delay",
+    "Cerebellar atrophy",
+    "Ataxia",
+    "Choreoathetosis",
+    "Childhood onset",
+    "Infantile onset",
+    "Seizure",
+    "Dysphagia",
+    "Nystagmus",
+    "Developmental regression",
+    "Loss of ambulation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

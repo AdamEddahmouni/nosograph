@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'immunodeficiency 105 (IMMUNODEFICIENCY_105)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 105
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased circulating IgM concentration",
+    "Decreased circulating IgA concentration",
+    "Increased total B cell count",
+    "Decreased circulating IgG concentration",
+    "Decreased circulating immunoglobulin concentration",
+    "Infantile onset",
+    "Skin rash",
+    "Death in childhood",
+    "Hepatosplenomegaly",
+    "Decreased total lymphocyte count",
+    "Pancytopenia",
+    "Decreased total T cell count",
+    "B-cell lymphoma",
+    "Reduced total natural killer cell count",
+    "Absence of lymph node germinal center",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

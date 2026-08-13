@@ -8,8 +8,10 @@ PIPELINE_LABEL = "Allergic bronchopulmonary aspergillosis (ALLERGIC_BRONCHOPULMO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Allergic bronchopulmonary aspergillosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormality of the immune system",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

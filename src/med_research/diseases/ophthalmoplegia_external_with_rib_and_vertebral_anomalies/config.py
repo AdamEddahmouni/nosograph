@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'ophthalmoplegia, external, with rib and vertebral anomalies (O
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ophthalmoplegia, external, with rib and vertebral anomalies
-SYMPTOMS = []
+SYMPTOMS = [
+    "Torticollis",
+    "Scoliosis",
+    "Pseudoarthrosis",
+    "Exotropia",
+    "Ptosis",
+    "Short ribs",
+    "Pectus carinatum",
+    "Autosomal recessive inheritance",
+    "Basilar invagination",
+    "Congenital onset",
+    "External ophthalmoplegia",
+    "Missing ribs",
+    "Pectus excavatum",
+    "Hypotropia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

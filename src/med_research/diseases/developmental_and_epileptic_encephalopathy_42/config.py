@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'developmental and epileptic encephalopathy, 42 (DEVELOPMENTAL_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of developmental and epileptic encephalopathy, 42
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypertonia",
+    "Focal impaired awareness seizure",
+    "Athetosis",
+    "Strabismus",
+    "Nystagmus",
+    "Esotropia",
+    "Tonic seizure",
+    "Congenital onset",
+    "Hyperreflexia",
+    "Epileptic encephalopathy",
+    "Intellectual disability",
+    "Myoclonic seizure",
+    "Global developmental delay",
+    "Tremor",
+    "Focal tonic seizure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

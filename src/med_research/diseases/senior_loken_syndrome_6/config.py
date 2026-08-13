@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'Senior-Loken syndrome 6 (SENIOR_LOKEN_SYNDROME_6)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Senior-Loken syndrome 6
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Aplasia/Hypoplasia of the cerebellar vermis",
+    "Stage 5 chronic kidney disease",
+    "Visual impairment",
+    "Reduced visual acuity",
+    "Rod-cone dystrophy",
+    "Childhood onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

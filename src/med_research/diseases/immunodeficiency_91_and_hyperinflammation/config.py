@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'immunodeficiency 91 and hyperinflammation (IMMUNODEFICIENCY_91
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 91 and hyperinflammation
-SYMPTOMS = []
+SYMPTOMS = [
+    "Death in infancy",
+    "Recurrent fever",
+    "Infantile onset",
+    "Pleural effusion",
+    "Hepatic encephalopathy",
+    "Arachnoid cyst",
+    "Renal insufficiency",
+    "Increased total monocyte count",
+    "Elevated circulating C-reactive protein concentration",
+    "Acute hepatic failure",
+    "Autosomal recessive inheritance",
+    "Lymphadenopathy",
+    "Global developmental delay",
+    "Megakaryocytopenia",
+    "Focal impaired awareness seizure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

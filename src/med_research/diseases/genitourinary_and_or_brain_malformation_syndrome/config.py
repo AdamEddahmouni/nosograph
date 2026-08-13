@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'genitourinary and/or brain malformation syndrome (GENITOURINAR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of genitourinary and/or brain malformation syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Macrocephaly",
+    "Low-set ears",
+    "Global developmental delay",
+    "Cryptorchidism",
+    "Short nose",
+    "Absent septum pellucidum",
+    "Omphalocele",
+    "Abnormality of the outer ear",
+    "Syndactyly",
+    "Micrognathia",
+    "Upslanted palpebral fissure",
+    "Clitoral hypertrophy",
+    "Flat face",
+    "Colpocephaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

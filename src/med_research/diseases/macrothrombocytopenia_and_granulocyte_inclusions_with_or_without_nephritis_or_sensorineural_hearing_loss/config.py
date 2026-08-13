@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'macrothrombocytopenia and granulocyte inclusions with or witho
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of macrothrombocytopenia and granulocyte inclusions with or without nephritis or sensorineural hearing loss
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal bleeding",
+    "Impaired ADP-induced platelet aggregation",
+    "Bruising susceptibility",
+    "Autosomal dominant inheritance",
+    "Abnormality of the kidney",
+    "Thrombocytopenia",
+    "Menorrhagia",
+    "Prolonged bleeding time",
+    "Congenital onset",
+    "Sensorineural hearing impairment",
+    "Megakaryocyte dysplasia",
+    "Myocardial infarction",
+    "Abnormal thrombosis",
+    "Epistaxis",
+    "Impaired epinephrine-induced platelet aggregation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

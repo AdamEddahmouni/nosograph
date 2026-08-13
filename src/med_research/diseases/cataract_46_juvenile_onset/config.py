@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'cataract 46 juvenile-onset (CATARACT_46_JUVENILE_ONSET)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cataract 46 juvenile-onset
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sudden cardiac death",
+    "Juvenile cataract",
+    "Arrhythmia",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

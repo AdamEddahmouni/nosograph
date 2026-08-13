@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hereditary folate malabsorption
-SYMPTOMS = []
+SYMPTOMS = [
+    "Malabsorption",
+    "Generalized hypotonia",
+    "Hypotonia",
+    "Irritability",
+    "Ataxia",
+    "Diarrhea",
+    "Decreased total leukocyte count",
+    "Oral ulcer",
+    "Basal ganglia calcification",
+    "Feeding difficulties in infancy",
+    "Decreased total neutrophil count",
+    "Thrombocytopenia",
+    "Dyskinesia",
+    "Peripheral neuropathy",
+    "Infantile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

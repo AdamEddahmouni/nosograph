@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'glutathione synthetase deficiency without 5-oxoprolinuria (GLU
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of glutathione synthetase deficiency without 5-oxoprolinuria
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hemolytic anemia",
+    "Glyoxalase deficiency",
+    "Reduced glutathione synthetase level",
+    "Metabolic acidosis",
+    "Intellectual disability",
+    "Autosomal recessive inheritance",
+    "Increased level of L-pyroglutamic acid in urine",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

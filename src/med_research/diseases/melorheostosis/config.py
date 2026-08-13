@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'melorheostosis (MELORHEOSTOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of melorheostosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperostosis",
+    "Sporadic",
+    "Progressive",
+    "Melorheostosis",
+    "Increased bone mineral density",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'myostatin-related muscle hypertrophy (MYOSTATIN_RELATED_MUSCLE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of myostatin-related muscle hypertrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Skeletal muscle hypertrophy",
+    "Brisk reflexes",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

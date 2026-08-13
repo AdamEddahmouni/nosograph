@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'immunodeficiency 77 (IMMUNODEFICIENCY_77)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 77
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Cutaneous abscess",
+    "Cellulitis",
+    "Recurrent tonsillitis",
+    "Adult onset",
+    "Bronchiectasis",
+    "Gastroparesis",
+    "Bilateral sensorineural hearing impairment",
+    "Nontuberculous mycobacterial pulmonary infection",
+    "Chronic pulmonary obstruction",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

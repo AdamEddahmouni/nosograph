@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'isolated congenital hypoglossia/aglossia (ISOLATED_CONGENITAL_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of isolated congenital hypoglossia/aglossia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Feeding difficulties in infancy",
+    "Sporadic",
+    "Narrow mouth",
+    "Delayed speech and language development",
+    "Congenital onset",
+    "Microglossia",
+    "Situs inversus totalis",
+    "Upper airway obstruction",
+    "Asplenia",
+    "Polysplenia",
+    "Low-set ears",
+    "Micrognathia",
+    "Respiratory distress",
+    "Malnutrition",
+    "Hypodontia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

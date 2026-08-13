@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'postaxial polydactyly-anterior pituitary anomalies-facial dysm
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of postaxial polydactyly-anterior pituitary anomalies-facial dysmorphism syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Cleft palate",
+    "Hypopituitarism",
+    "Variable expressivity",
+    "Short stature",
+    "Midface retrusion",
+    "Postaxial polydactyly",
+    "Global developmental delay",
+    "Typified by incomplete penetrance",
+    "Micropenis",
+    "Hypotelorism",
+    "Diabetes insipidus",
+    "Cleft upper lip",
+    "Ectopic posterior pituitary",
+    "Anterior pituitary hypoplasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

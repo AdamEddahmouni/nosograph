@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'familial hyperaldosteronism type III (FAMILIAL_HYPERALDOSTERON
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial hyperaldosteronism type III
-SYMPTOMS = []
+SYMPTOMS = [
+    "Adrenal hyperplasia",
+    "Decreased circulating renin concentration",
+    "Autosomal dominant inheritance",
+    "Metabolic acidosis",
+    "Polydipsia",
+    "Increased circulating aldosterone concentration",
+    "Hypokalemia",
+    "Polyuria",
+    "Hypertension",
+    "Hypercalciuria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

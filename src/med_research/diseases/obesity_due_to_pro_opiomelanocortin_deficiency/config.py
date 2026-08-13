@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'obesity due to pro-opiomelanocortin deficiency (OBESITY_DUE_TO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of obesity due to pro-opiomelanocortin deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Neonatal onset",
+    "Polyphagia",
+    "Decreased circulating cortisol level",
+    "Adrenocorticotropic hormone deficiency",
+    "Red hair",
+    "Decreased response to growth hormone stimulation test",
+    "Decreased growth hormone responses to growth hormone-releasing hormone challenge",
+    "Infantile onset",
+    "Hyperbilirubinemia",
+    "Gonadotropin deficiency",
+    "Autosomal recessive inheritance",
+    "Obesity",
+    "Adrenal insufficiency",
+    "Cholestasis",
+    "Hypoglycemic seizures",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

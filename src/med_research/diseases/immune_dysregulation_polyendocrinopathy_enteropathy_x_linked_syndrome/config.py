@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'immune dysregulation-polyendocrinopathy-enteropathy-X-linked s
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immune dysregulation-polyendocrinopathy-enteropathy-X-linked syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Seizure",
+    "Arthritis",
+    "Severe infection",
+    "Food allergy",
+    "Coombs-positive hemolytic anemia",
+    "Decreased total neutrophil count",
+    "X-linked recessive inheritance",
+    "Increased circulating IgE concentration",
+    "Anti-glutamic acid decarboxylase antibody positivity",
+    "Hepatitis",
+    "Glomerulonephritis",
+    "Infantile onset",
+    "Erythroderma",
+    "Villous atrophy",
+    "Failure to thrive",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

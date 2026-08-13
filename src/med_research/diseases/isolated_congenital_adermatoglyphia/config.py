@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of isolated congenital adermatoglyphia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Clubbing",
+    "Palmar hyperkeratosis",
+    "Adermatoglyphia",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'familial cutaneous collagenoma (FAMILIAL_CUTANEOUS_COLLAGENOMA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial cutaneous collagenoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Right ventricular cardiomyopathy",
+    "Congenital posterior occipital alopecia",
+    "Primary testicular failure",
+    "Atrial fibrillation",
+    "Tricuspid regurgitation",
+    "Collagenoma",
+    "Congestive heart failure",
+    "Vasculitis",
+    "Iris atrophy",
+    "Autosomal dominant inheritance",
+    "Sensorineural hearing impairment",
+    "Cardiomyopathy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

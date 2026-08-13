@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Jawad syndrome (JAWAD_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Jawad syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital onset",
+    "Absent fourth finger distal interphalangeal crease",
+    "Retrognathia",
+    "Intellectual disability",
+    "Postaxial polydactyly",
+    "Global developmental delay",
+    "4-5 toe syndactyly",
+    "Aggressive behavior",
+    "Sloping forehead",
+    "Thoracic scoliosis",
+    "Primary microcephaly",
+    "Short middle phalanx of the 5th finger",
+    "Single interphalangeal crease of fifth finger",
+    "Hallux valgus",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'acrodysostosis 2 with or without hormone resistance (ACRODYSOS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of acrodysostosis 2 with or without hormone resistance
-SYMPTOMS = []
+SYMPTOMS = [
+    "Global developmental delay",
+    "Cone-shaped epiphysis",
+    "Intellectual disability",
+    "Delayed speech and language development",
+    "Short phalanx of finger",
+    "Congenital onset",
+    "Advanced ossification of carpal bones",
+    "Round face",
+    "Fair hair",
+    "Short nose",
+    "Short metacarpal",
+    "Diabetes mellitus",
+    "Hyperactivity",
+    "Mild short stature",
+    "Cryptorchidism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

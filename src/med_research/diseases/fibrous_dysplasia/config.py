@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'fibrous dysplasia (FIBROUS_DYSPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of fibrous dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pseudoarthrosis",
+    "Autosomal dominant inheritance",
+    "Pectus excavatum",
+    "Pathologic fracture",
+    "Congenital onset",
+    "Fibular hypoplasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

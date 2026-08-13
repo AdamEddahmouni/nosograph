@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'CINCA syndrome (CINCA_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of CINCA syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Lymphadenopathy",
+    "Recurrent fever",
+    "Hepatosplenomegaly",
+    "Increased total leukocyte count",
+    "Proptosis",
+    "Autosomal dominant inheritance",
+    "Patellar overgrowth",
+    "Increased total eosinophil count",
+    "Meningitis",
+    "Uveitis",
+    "Seizure",
+    "Infantile onset",
+    "Hearing impairment",
+    "Elevated erythrocyte sedimentation rate",
+    "Childhood onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

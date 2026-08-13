@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'polycystic kidney disease 2 (POLYCYSTIC_KIDNEY_DISEASE_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of polycystic kidney disease 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Multiple renal cysts",
+    "Elevated gamma-glutamyltransferase level",
+    "Hepatic cysts",
+    "Elevated circulating creatinine concentration",
+    "Recurrent urinary tract infections",
+    "Facial asymmetry",
+    "Middle age onset",
+    "Situs inversus totalis",
+    "Young adult onset",
+    "Elevated circulating alkaline phosphatase concentration",
+    "Hypokalemia",
+    "Dextrocardia",
+    "Juvenile onset",
+    "Hepatomegaly",
+    "Renal insufficiency",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

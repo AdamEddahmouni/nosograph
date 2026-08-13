@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'pseudopseudohypoparathyroidism (PSEUDOPSEUDOHYPOPARATHYROIDISM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pseudopseudohypoparathyroidism
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short neck",
+    "Obesity",
+    "Short metacarpal",
+    "Full cheeks",
+    "Delayed eruption of teeth",
+    "Cognitive impairment",
+    "Depressed nasal bridge",
+    "Enamel hypoplasia",
+    "Osteoporosis",
+    "Autosomal dominant inheritance",
+    "Intellectual disability",
+    "Cataract",
+    "Short metatarsal",
+    "Nystagmus",
+    "Pseudohypoparathyroidism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

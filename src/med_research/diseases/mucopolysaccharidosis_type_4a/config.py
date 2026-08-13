@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mucopolysaccharidosis type 4A (MUCOPOLYSACCHARIDOSIS_TYPE_4A)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mucopolysaccharidosis type 4A
-SYMPTOMS = []
+SYMPTOMS = [
+    "Recurrent upper respiratory tract infections",
+    "Platyspondyly",
+    "Juvenile onset",
+    "Cervical myelopathy",
+    "Large elbow",
+    "Keratan sulfate excretion in urine",
+    "Hypoplasia of the odontoid process",
+    "Joint hypermobility",
+    "Abnormal heart valve morphology",
+    "Hyperlordosis",
+    "Ulnar deviation of the wrist",
+    "Opacification of the corneal stroma",
+    "Genu valgum",
+    "Short neck",
+    "Mandibular prognathia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

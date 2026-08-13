@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'focal dermal hypoplasia (FOCAL_DERMAL_HYPOPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of focal dermal hypoplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Patchy alopecia",
+    "Intellectual disability",
+    "Nystagmus",
+    "Strabismus",
+    "Ureteral duplication",
+    "Telangiectasia",
+    "Reticular hyperpigmentation",
+    "Midclavicular aplasia",
+    "Microcephaly",
+    "Nail dystrophy",
+    "Hydronephrosis",
+    "Broad nasal tip",
+    "Microphthalmia",
+    "Bifid ureter",
+    "Linear hyperpigmentation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'lactose intolerance adult type (LACTOSE_INTOLERANCE_ADULT_TYPE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lactose intolerance adult type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Childhood onset",
+    "Lactose intolerance",
+    "Juvenile onset",
+    "Flatulence",
+    "Diarrhea",
+    "Decreased small intestinal mucosa lactase level",
+    "Young adult onset",
+    "Abdominal pain",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

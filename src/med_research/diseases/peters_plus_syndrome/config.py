@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Peters plus syndrome (PETERS_PLUS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Peters plus syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Seizure",
+    "Thin upper lip vermilion",
+    "Short lingual frenulum",
+    "Long philtrum",
+    "Rhizomelia",
+    "Widely spaced teeth",
+    "Diastasis recti",
+    "Protruding ear",
+    "Hypoplasia of the maxilla",
+    "Anteriorly placed anus",
+    "Hydrocephalus",
+    "Facial hypertrichosis",
+    "Bilateral cleft lip",
+    "Craniosynostosis",
+    "Cryptorchidism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'hyperlipoproteinemia type V (HYPERLIPOPROTEINEMIA_TYPE_V)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hyperlipoproteinemia type V
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased circulating HDL-C concentration",
+    "Increased circulating chylomicron concentration",
+    "Autosomal dominant inheritance",
+    "Diabetes mellitus",
+    "Decreased circulating LDL-C concentration",
+    "Elevated circulating VLDL-C concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

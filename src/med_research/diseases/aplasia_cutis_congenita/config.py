@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'aplasia cutis congenita (APLASIA_CUTIS_CONGENITA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of aplasia cutis congenita
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Aplasia cutis congenita over the scalp vertex",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

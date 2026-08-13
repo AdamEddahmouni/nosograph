@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'acheiropody (ACHEIROPODY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of acheiropody
-SYMPTOMS = []
+SYMPTOMS = [
+    "Absent forearm",
+    "Absent toe",
+    "Aplasia of the ulna",
+    "Aplasia of the phalanges of the hand",
+    "Fibular aplasia",
+    "Autosomal recessive inheritance",
+    "Peromelia",
+    "Aplasia of the tarsal bones",
+    "Absent hand",
+    "Absent radius",
+    "Lower limb peromelia",
+    "Aplasia of metacarpal bones",
+    "Absent metatarsal bone",
+    "Short tibia",
+    "Carpal bone aplasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

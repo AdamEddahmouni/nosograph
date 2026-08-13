@@ -8,8 +8,13 @@ PIPELINE_LABEL = "Non-small cell lung cancer (NSCLC)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Non-small cell lung cancer
-SYMPTOMS = []
+SYMPTOMS = [
+    "Non-small cell lung carcinoma",
+    "Typified by somatic mosaicism",
+    "Lung adenocarcinoma",
+    "Autosomal dominant inheritance",
+    "Alveolar cell carcinoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

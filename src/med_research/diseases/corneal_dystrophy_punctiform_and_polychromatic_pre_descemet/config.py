@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'corneal dystrophy, punctiform and polychromatic pre-descemet (
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of corneal dystrophy, punctiform and polychromatic pre-descemet
-SYMPTOMS = []
+SYMPTOMS = [
+    "Juvenile onset",
+    "Autosomal dominant inheritance",
+    "Posterior corneal stroma punctiform multicolored opacities",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

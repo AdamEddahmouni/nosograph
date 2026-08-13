@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Farber lipogranulomatosis (FARBER_LIPOGRANULOMATOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Farber lipogranulomatosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Splenomegaly",
+    "Limitation of knee mobility",
+    "Hyperextensibility of the finger joints",
+    "Hoarse cry",
+    "Lipogranulomatosis",
+    "Intellectual disability",
+    "Joint swelling",
+    "Ulnar deviation of the wrist",
+    "Osteolysis involving bones of the feet",
+    "Arthritis",
+    "Hepatomegaly",
+    "Osteolytic defects of the phalanges of the hand",
+    "Recurrent fever",
+    "Respiratory insufficiency",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

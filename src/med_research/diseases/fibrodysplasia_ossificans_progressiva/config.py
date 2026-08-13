@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'fibrodysplasia ossificans progressiva (FIBRODYSPLASIA_OSSIFICA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of fibrodysplasia ossificans progressiva
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ectopic ossification in muscle tissue",
+    "Limitation of neck motion",
+    "Respiratory insufficiency",
+    "Metaphyseal widening",
+    "Elevated circulating alkaline phosphatase concentration",
+    "Hallux valgus",
+    "Autosomal dominant inheritance",
+    "Alopecia",
+    "Clinodactyly of the 5th finger",
+    "Congenital onset",
+    "Respiratory failure",
+    "Scoliosis",
+    "Broad femoral neck",
+    "Small cervical vertebral bodies",
+    "Progressive cervical vertebral spine fusion",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

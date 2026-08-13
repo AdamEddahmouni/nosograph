@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'congenital afibrinogenemia (CONGENITAL_AFIBRINOGENEMIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital afibrinogenemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Epidural hemorrhage",
+    "Prolonged bleeding following circumcision",
+    "Prolonged bleeding after dental extraction",
+    "Epistaxis",
+    "Infantile onset",
+    "Death in adolescence",
+    "Childhood onset",
+    "Hematemesis",
+    "Abnormal umbilical stump bleeding",
+    "Neonatal death",
+    "Autosomal recessive inheritance",
+    "Splenic rupture",
+    "Hypofibrinogenemia",
+    "Persistent bleeding after trauma",
+    "Bruising susceptibility",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'isobutyryl-CoA dehydrogenase deficiency (ISOBUTYRYL_COA_DEHYDR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of isobutyryl-CoA dehydrogenase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased circulating carnitine concentration",
+    "Autosomal recessive inheritance",
+    "Anemia",
+    "Dilated cardiomyopathy",
+    "Hypotonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

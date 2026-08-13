@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'atypical teratoid rhabdoid tumor (ATYPICAL_TERATOID_RHABDOID_T
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of atypical teratoid rhabdoid tumor
-SYMPTOMS = []
+SYMPTOMS = [
+    "Medulloblastoma",
+    "Choroid plexus carcinoma",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

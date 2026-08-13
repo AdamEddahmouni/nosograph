@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'congenital plasminogen activator inhibitor type 1 deficiency (
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital plasminogen activator inhibitor type 1 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Menorrhagia",
+    "Abnormal bleeding",
+    "Congenital onset",
+    "Autosomal dominant inheritance",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

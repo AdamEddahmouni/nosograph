@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mesomelia-synostoses syndrome (MESOMELIA_SYNOSTOSES_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mesomelia-synostoses syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Microretrognathia",
+    "Autosomal dominant inheritance",
+    "Ulnar deviation of the hand or of fingers of the hand",
+    "Ptosis",
+    "Hearing impairment",
+    "Telecanthus",
+    "Short metatarsal",
+    "Short phalanx of finger",
+    "Partial fusion of proximal row of carpal bones",
+    "Absent uvula",
+    "Mesomelic short stature",
+    "Myopia",
+    "Short umbilical cord",
+    "Polyhydramnios",
+    "Ulnar deviation of the hand",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

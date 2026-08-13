@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spondyloepiphyseal dysplasia tarda, autosomal dominant (SPONDY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondyloepiphyseal dysplasia tarda, autosomal dominant
-SYMPTOMS = []
+SYMPTOMS = [
+    "Avascular necrosis of the capital femoral epiphysis",
+    "Kyphoscoliosis",
+    "Lumbar hyperlordosis",
+    "Irregular vertebral endplates",
+    "Malar flattening",
+    "Cervical subluxation",
+    "Barrel-shaped chest",
+    "Spondyloepiphyseal dysplasia",
+    "Autosomal dominant inheritance",
+    "Pectus carinatum",
+    "Short neck",
+    "Arthritis",
+    "Hypoplasia of the odontoid process",
+    "Childhood-onset short-trunk short stature",
+    "Knee pain",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

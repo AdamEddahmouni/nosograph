@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'osteosclerotic metaphyseal dysplasia (OSTEOSCLEROTIC_METAPHYSE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of osteosclerotic metaphyseal dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Global developmental delay",
+    "Autosomal recessive inheritance",
+    "Clavicular sclerosis",
+    "Increased bone mineral density",
+    "Intellectual disability",
+    "Hypotonia",
+    "Metaphyseal dysplasia",
+    "Dense metaphyseal bands",
+    "Sclerotic vertebral endplates",
+    "Seizure",
+    "Failure to thrive",
+    "Infantile onset",
+    "Hyporeflexia",
+    "Elevated circulating alkaline phosphatase concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

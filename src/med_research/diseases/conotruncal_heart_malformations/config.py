@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'conotruncal heart malformations (CONOTRUNCAL_HEART_MALFORMATIO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of conotruncal heart malformations
-SYMPTOMS = []
+SYMPTOMS = [
+    "Complete atrioventricular canal defect",
+    "Broad hallux",
+    "Truncus arteriosus",
+    "Transposition of the great arteries",
+    "Autosomal recessive inheritance",
+    "Double outlet right ventricle",
+    "Coarctation of aorta",
+    "Hypertelorism",
+    "Postaxial polydactyly",
+    "Abnormality of metabolism/homeostasis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Hartnup disease (HARTNUP_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Hartnup disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypertonia",
+    "Glossitis",
+    "Elevated urinary indoleacetic acid level",
+    "Hyperreflexia",
+    "Childhood onset",
+    "Neutral hyperaminoaciduria",
+    "Psychosis",
+    "Episodic ataxia",
+    "Delayed speech and language development",
+    "Short stature",
+    "Hyperactivity",
+    "Cutaneous photosensitivity",
+    "Global developmental delay",
+    "Seizure",
+    "Attention deficit hyperactivity disorder",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

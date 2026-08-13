@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'megabladder, congenital (MEGABLADDER_CONGENITAL)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of megabladder, congenital
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperechogenic kidneys",
+    "Left ventricular noncompaction cardiomyopathy",
+    "Fetal megacystis",
+    "Bicuspid aortic valve",
+    "Multiple glomerular cysts",
+    "Stage 5 chronic kidney disease",
+    "Ventricular septal defect",
+    "Patent ductus arteriosus",
+    "Atrial septal defect",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

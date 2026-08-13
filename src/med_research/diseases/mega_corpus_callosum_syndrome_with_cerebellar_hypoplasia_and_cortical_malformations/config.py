@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mega-corpus-callosum syndrome with cerebellar hypoplasia and c
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mega-corpus-callosum syndrome with cerebellar hypoplasia and cortical malformations
-SYMPTOMS = []
+SYMPTOMS = [
+    "Intellectual disability",
+    "Hypoplasia of the brainstem",
+    "Short stature",
+    "Cerebellar hypoplasia",
+    "Absent speech",
+    "Simplified gyral pattern",
+    "Autosomal dominant inheritance",
+    "Cerebellar vermis hypoplasia",
+    "Ventriculomegaly",
+    "Periventricular heterotopia",
+    "Generalized hypotonia",
+    "Infantile onset",
+    "Seizure",
+    "Unsteady gait",
+    "Thick corpus callosum",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

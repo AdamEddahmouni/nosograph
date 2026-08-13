@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Usher syndrome (USHER_SYNDROME)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Usher syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Visual loss",
+    "Constriction of peripheral visual field",
+    "Vestibular hyporeflexia",
+    "Autosomal recessive inheritance",
+    "Retinal degeneration",
+    "Impaired tandem gait",
+    "Bull's eye maculopathy",
+    "Hypoplasia of the nasal bone",
+    "Absent vestibular function",
+    "Hyperautofluorescent macular lesion",
+    "Delayed gross motor development",
+    "Ring scotoma",
+    "Spicular pigmentation of the retina",
+    "Nystagmus",
+    "Abnormal electroretinogram",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

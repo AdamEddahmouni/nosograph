@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'macrothrombocytopenia-lymphedema-developmental delay-facial dy
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of macrothrombocytopenia-lymphedema-developmental delay-facial dysmorphism-camptodactyly syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Synophrys",
+    "Unilateral renal agenesis",
+    "Narrow forehead",
+    "Abnormal cardiac septum morphology",
+    "Ataxia",
+    "Cryptorchidism",
+    "Seizure",
+    "Absent speech",
+    "Inguinal hernia",
+    "Proximal placement of thumb",
+    "Short philtrum",
+    "Wide nasal bridge",
+    "Camptodactyly",
+    "Pulmonic stenosis",
+    "Prominent forehead",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

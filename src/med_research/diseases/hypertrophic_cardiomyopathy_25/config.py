@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'hypertrophic cardiomyopathy 25 (HYPERTROPHIC_CARDIOMYOPATHY_25
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypertrophic cardiomyopathy 25
-SYMPTOMS = []
+SYMPTOMS = [
+    "Adult onset",
+    "Wolff-Parkinson-White syndrome",
+    "Left ventricular hypertrophy",
+    "Hypertrophic cardiomyopathy",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

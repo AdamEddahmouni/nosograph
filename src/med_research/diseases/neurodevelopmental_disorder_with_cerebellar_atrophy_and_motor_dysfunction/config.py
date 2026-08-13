@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neurodevelopmental disorder with cerebellar atrophy and motor 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neurodevelopmental disorder with cerebellar atrophy and motor dysfunction
-SYMPTOMS = []
+SYMPTOMS = [
+    "Brisk reflexes",
+    "Hypotonia",
+    "Delayed speech and language development",
+    "Congenital onset",
+    "Areflexia",
+    "Cerebellar atrophy",
+    "Progressive",
+    "Infantile onset",
+    "Inability to walk",
+    "Motor delay",
+    "Appendicular hypotonia",
+    "Global developmental delay",
+    "Childhood onset",
+    "Autosomal recessive inheritance",
+    "Ataxia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

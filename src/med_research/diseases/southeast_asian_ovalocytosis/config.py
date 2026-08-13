@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'southeast Asian ovalocytosis (SOUTHEAST_ASIAN_OVALOCYTOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of southeast Asian ovalocytosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hemolytic anemia",
+    "Elliptocytosis",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

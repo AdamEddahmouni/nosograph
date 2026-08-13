@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'ADan amyloidosis (ADAN_AMYLOIDOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ADan amyloidosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dementia",
+    "Intention tremor",
+    "Spasticity",
+    "Hearing impairment",
+    "Psychosis",
+    "Posterior polar cataract",
+    "Autosomal dominant inheritance",
+    "Neurofibrillary tangles",
+    "Cerebral amyloid angiopathy",
+    "Ataxia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

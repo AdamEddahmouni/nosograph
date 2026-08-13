@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'pacman dysplasia (PACMAN_DYSPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pacman dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Epiphyseal stippling",
+    "Autosomal dominant inheritance",
+    "Lethal skeletal dysplasia",
+    "Bowing of the long bones",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

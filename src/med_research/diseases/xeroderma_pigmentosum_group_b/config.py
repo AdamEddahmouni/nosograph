@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'xeroderma pigmentosum group B (XERODERMA_PIGMENTOSUM_GROUP_B)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of xeroderma pigmentosum group B
-SYMPTOMS = []
+SYMPTOMS = [
+    "Intellectual disability",
+    "Hyperreflexia",
+    "Dermal atrophy",
+    "Hypogonadism",
+    "Basal ganglia calcification",
+    "Microphthalmia",
+    "Short stature",
+    "Abnormal CNS myelination",
+    "Cerebellar atrophy",
+    "Freckling",
+    "Cataract",
+    "Ventriculomegaly",
+    "Sensorineural hearing impairment",
+    "Neoplasm",
+    "Decreased nerve conduction velocity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'acne inversa, familial, 1 (ACNE_INVERSA_FAMILIAL_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of acne inversa, familial, 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Acne inversa",
+    "Autosomal dominant inheritance",
+    "Atypical scarring of skin",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

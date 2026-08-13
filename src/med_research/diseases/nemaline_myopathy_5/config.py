@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'nemaline myopathy 5 (NEMALINE_MYOPATHY_5)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of nemaline myopathy 5
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hip contracture",
+    "Delayed gross motor development",
+    "Autosomal recessive inheritance",
+    "Respiratory insufficiency",
+    "Tremor",
+    "Shoulder flexion contracture",
+    "Progressive muscle weakness",
+    "Z-band streaming",
+    "Proximal amyotrophy",
+    "Myopathy",
+    "Intellectual disability",
+    "Decreased hip abduction",
+    "Neonatal onset",
+    "Type 1 muscle fiber predominance",
+    "Pectus carinatum",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

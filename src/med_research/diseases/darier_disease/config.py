@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Darier disease (DARIER_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Darier disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Schizophrenia",
+    "Seizure",
+    "Pruritus",
+    "Hypermelanotic macule",
+    "Plantar pits",
+    "Longitudinal erythronychia",
+    "Congenital onset",
+    "Hyperkeratosis",
+    "Enlargement of parotid gland",
+    "Punctate palmoplantar hyperkeratosis",
+    "Verrucous papule",
+    "Acantholysis",
+    "Subungual hyperkeratotic fragments",
+    "Bipolar affective disorder",
+    "Ridged nail",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

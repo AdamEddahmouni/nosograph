@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Osebold-Remondini syndrome (OSEBOLD_REMONDINI_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Osebold-Remondini syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypoplasia of the ulna",
+    "Short stature",
+    "Tarsal synostosis",
+    "Fibular hypoplasia",
+    "Carpal synostosis",
+    "Decreased finger mobility",
+    "Short phalanx of finger",
+    "Mesomelia",
+    "Type A brachydactyly",
+    "Dysplastic distal radial epiphyses",
+    "Bipartite calcaneus",
+    "Autosomal dominant inheritance",
+    "Abnormality of the vertebral column",
+    "Radial deviation of finger",
+    "Broad toe",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

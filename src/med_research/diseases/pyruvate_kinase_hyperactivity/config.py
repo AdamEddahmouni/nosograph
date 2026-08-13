@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'Pyruvate kinase hyperactivity (PYRUVATE_KINASE_HYPERACTIVITY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Pyruvate kinase hyperactivity
-SYMPTOMS = []
+SYMPTOMS = [
+    "Reduced erythrocyte 2,3-diphosphoglycerate concentration",
+    "Autosomal dominant inheritance",
+    "Polycythemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

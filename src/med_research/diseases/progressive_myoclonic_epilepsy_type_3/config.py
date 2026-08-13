@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'progressive myoclonic epilepsy type 3 (PROGRESSIVE_MYOCLONIC_E
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of progressive myoclonic epilepsy type 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Optic atrophy",
+    "Microcephaly",
+    "Generalized myoclonic seizure",
+    "Visual loss",
+    "Fingerprint intracellular accumulation of autofluorescent lipopigment storage material",
+    "Absent speech",
+    "Cerebellar atrophy",
+    "Truncal ataxia",
+    "Intellectual disability",
+    "Developmental regression",
+    "Cerebral atrophy",
+    "Bilateral tonic-clonic seizure with focal onset",
+    "Hypoplasia of the corpus callosum",
+    "Infantile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

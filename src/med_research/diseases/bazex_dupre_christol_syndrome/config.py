@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Bazex-Dupre-Christol syndrome (BAZEX_DUPRE_CHRISTOL_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Bazex-Dupre-Christol syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sparse hair",
+    "Keratosis pilaris",
+    "Narrow nasal ridge",
+    "Nevus",
+    "X-linked dominant inheritance",
+    "Trichorrhexis nodosa",
+    "Furrowed tongue",
+    "Coarse hair",
+    "Basal cell carcinoma",
+    "Milia",
+    "Hyperpigmentation of the skin",
+    "Eczematoid dermatitis",
+    "Infantile onset",
+    "Atopic dermatitis",
+    "Underdeveloped nasal alae",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

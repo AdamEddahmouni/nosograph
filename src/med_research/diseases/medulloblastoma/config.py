@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'medulloblastoma (MEDULLOBLASTOMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of medulloblastoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Typified by somatic mosaicism",
+    "Autosomal dominant inheritance",
+    "Autosomal recessive inheritance",
+    "Medulloblastoma",
+    "Typified by incomplete penetrance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

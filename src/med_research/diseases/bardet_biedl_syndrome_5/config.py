@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Bardet-Biedl syndrome 5 (BARDET_BIEDL_SYNDROME_5)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Bardet-Biedl syndrome 5
-SYMPTOMS = []
+SYMPTOMS = [
+    "Attenuation of retinal blood vessels",
+    "Optic disc pallor",
+    "Posterior subcapsular cataract",
+    "Spicular pigmentation of the retina",
+    "Hypodontia",
+    "Micropenis",
+    "Macular dystrophy",
+    "Rod-cone dystrophy",
+    "Hypogonadism",
+    "Postaxial polydactyly",
+    "Mild intellectual disability",
+    "External genital hypoplasia",
+    "Delayed speech and language development",
+    "Macular atrophy",
+    "Brachydactyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

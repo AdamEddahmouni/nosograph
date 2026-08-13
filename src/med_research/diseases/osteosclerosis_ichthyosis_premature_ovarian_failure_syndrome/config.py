@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'osteosclerosis-ichthyosis-premature ovarian failure syndrome (
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of osteosclerosis-ichthyosis-premature ovarian failure syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Lower limb pain",
+    "Osteosclerosis of the base of the skull",
+    "Ichthyosis",
+    "Premature ovarian insufficiency",
+    "Subperiosteal bone formation",
+    "Hypoplasia of the ovary",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

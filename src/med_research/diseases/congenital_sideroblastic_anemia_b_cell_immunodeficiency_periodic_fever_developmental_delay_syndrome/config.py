@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'congenital sideroblastic anemia-B-cell immunodeficiency-period
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital sideroblastic anemia-B-cell immunodeficiency-periodic fever-developmental delay syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Seizure",
+    "Sideroblastic anemia",
+    "Rod-cone dystrophy",
+    "Communicating hydrocephalus",
+    "Nephrocalcinosis",
+    "Hypotonia",
+    "Sensorineural hearing impairment",
+    "Brittle hair",
+    "Delayed CNS myelination",
+    "Infantile onset",
+    "Growth delay",
+    "Autosomal recessive inheritance",
+    "Neonatal onset",
+    "Childhood onset",
+    "Cardiomyopathy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'cutaneous porphyria (CUTANEOUS_PORPHYRIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cutaneous porphyria
-SYMPTOMS = []
+SYMPTOMS = [
+    "Jaundice",
+    "Cutaneous photosensitivity",
+    "Alopecia",
+    "Hepatomegaly",
+    "Thickened skin",
+    "Elevated circulating uroporphyrin concentration",
+    "Hypopigmentation of the skin",
+    "Atypical scarring of skin",
+    "Osteopenia",
+    "Osteolysis",
+    "Congenital onset",
+    "Thrombocytopenia",
+    "Pink urine",
+    "Pathologic fracture",
+    "Conjunctivitis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

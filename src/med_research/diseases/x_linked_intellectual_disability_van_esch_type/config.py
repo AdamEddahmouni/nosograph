@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'X-linked intellectual disability, van Esch type (X_LINKED_INTE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked intellectual disability, van Esch type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Esotropia",
+    "Ventricular septal defect",
+    "Long face",
+    "Short middle phalanx of finger",
+    "Pulmonary artery stenosis",
+    "Attention deficit hyperactivity disorder",
+    "Protruding ear",
+    "Intellectual disability",
+    "Spina bifida occulta",
+    "Cerebral atrophy",
+    "Bifid uvula",
+    "Scoliosis",
+    "Intrauterine growth retardation",
+    "Upslanted palpebral fissure",
+    "Sacral dimple",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

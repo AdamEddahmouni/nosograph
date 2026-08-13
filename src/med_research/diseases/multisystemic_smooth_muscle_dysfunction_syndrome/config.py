@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'multisystemic smooth muscle dysfunction syndrome (MULTISYSTEMI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of multisystemic smooth muscle dysfunction syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pulmonary artery dilatation",
+    "Dilatation of the cerebral artery",
+    "Brachiocephalic artery aneurysm",
+    "Hypoperistalsis",
+    "Dilated left subclavian artery",
+    "Patent ductus arteriosus",
+    "Vascular dilatation",
+    "Autosomal dominant inheritance",
+    "Congenital onset",
+    "Pulmonary arterial hypertension",
+    "Cryptorchidism",
+    "Hypertension",
+    "Mydriasis",
+    "Aortic arch aneurysm",
+    "Intestinal malrotation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

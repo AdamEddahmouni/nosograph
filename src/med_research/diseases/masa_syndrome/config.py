@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'MASA syndrome (MASA_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of MASA syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Shuffling gait",
+    "Lower limb spasticity",
+    "Paraplegia",
+    "Pes cavus",
+    "Macrocephaly",
+    "X-linked recessive inheritance",
+    "Ventriculomegaly",
+    "Adducted thumb",
+    "Short stature",
+    "Agenesis of corpus callosum",
+    "Intellectual disability",
+    "Hyperlordosis",
+    "Aphasia",
+    "Spastic paraplegia",
+    "Talipes equinovarus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

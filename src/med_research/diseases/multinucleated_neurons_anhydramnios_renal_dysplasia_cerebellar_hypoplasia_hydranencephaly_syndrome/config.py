@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'multinucleated neurons-anhydramnios-renal dysplasia-cerebellar
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of multinucleated neurons-anhydramnios-renal dysplasia-cerebellar hypoplasia-hydranencephaly syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Narrow palpebral fissure",
+    "Bulbous nose",
+    "Hypoplasia of the brainstem",
+    "Short neck",
+    "Choanal stenosis",
+    "Arthrogryposis multiplex congenita",
+    "Stillbirth",
+    "Narrow nasal ridge",
+    "Brachydactyly",
+    "Hydranencephaly",
+    "Pulmonary hypoplasia",
+    "Microretrognathia",
+    "Low-set ears",
+    "Autosomal recessive inheritance",
+    "Ureteral agenesis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

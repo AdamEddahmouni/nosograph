@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'tibia, hypoplasia or aplasia of, with polydactyly (TIBIA_HYPOP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of tibia, hypoplasia or aplasia of, with polydactyly
-SYMPTOMS = []
+SYMPTOMS = [
+    "Preaxial polydactyly",
+    "Short tibia",
+    "Absent tibia",
+    "Autosomal dominant inheritance",
+    "Congenital onset",
+    "Fibular duplication",
+    "Triphalangeal thumb",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

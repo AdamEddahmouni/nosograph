@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'cat-eye syndrome (CAT_EYE_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cat-eye syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Horseshoe kidney",
+    "Low-set ears",
+    "Intestinal malrotation",
+    "Cleft palate",
+    "Vesicoureteral reflux",
+    "Rectal fistula",
+    "Umbilical hernia",
+    "Microphthalmia",
+    "Tricuspid atresia",
+    "Total anomalous pulmonary venous return",
+    "Absent radius",
+    "Hydronephrosis",
+    "Biliary atresia",
+    "Autosomal dominant inheritance",
+    "Atrial septal defect",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

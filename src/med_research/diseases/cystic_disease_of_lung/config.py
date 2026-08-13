@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'cystic disease of lung (CYSTIC_DISEASE_OF_LUNG)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cystic disease of lung
-SYMPTOMS = []
+SYMPTOMS = [
+    "Recurrent infections",
+    "Autosomal recessive inheritance",
+    "Multiple pulmonary cysts",
+    "Spontaneous neonatal pneumothorax",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

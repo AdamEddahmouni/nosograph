@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'short stature, amelogenesis imperfecta, and skeletal dysplasia
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of short stature, amelogenesis imperfecta, and skeletal dysplasia with scoliosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Knee dislocation",
+    "Short femoral neck",
+    "Hearing impairment",
+    "Advanced ossification of carpal bones",
+    "Autosomal recessive inheritance",
+    "Hyperlordosis",
+    "High palate",
+    "Carious teeth",
+    "Mandibular prognathia",
+    "Truncal obesity",
+    "Micrognathia",
+    "Short long bone",
+    "Disproportionate short stature",
+    "Enamel hypoplasia",
+    "Microretrognathia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

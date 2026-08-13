@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'congenital primary aphakia (CONGENITAL_PRIMARY_APHAKIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital primary aphakia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nystagmus",
+    "Corneal opacity",
+    "Congenital aphakia",
+    "Posterior synechiae of the anterior chamber",
+    "Congenital onset",
+    "Peters anomaly",
+    "Microphthalmia",
+    "Microcornea",
+    "Reduced visual acuity",
+    "Childhood onset",
+    "Ocular hypertension",
+    "Anterior segment of eye aplasia",
+    "Sclerocornea",
+    "Autosomal recessive inheritance",
+    "Cataract",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

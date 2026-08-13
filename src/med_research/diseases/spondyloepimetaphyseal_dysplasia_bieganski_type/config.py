@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spondyloepimetaphyseal dysplasia, Bieganski type (SPONDYLOEPIM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondyloepimetaphyseal dysplasia, Bieganski type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Metaphyseal cupping of metacarpals",
+    "Coarse facial features",
+    "Seizure",
+    "Anterior rib cupping",
+    "Peg-like central prominence of distal tibial metaphyses",
+    "Broad palm",
+    "Platyspondyly",
+    "Delayed CNS myelination",
+    "High palate",
+    "Midface retrusion",
+    "Thin ribs",
+    "Malar flattening",
+    "Babinski sign",
+    "Delayed skeletal maturation",
+    "Short neck",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

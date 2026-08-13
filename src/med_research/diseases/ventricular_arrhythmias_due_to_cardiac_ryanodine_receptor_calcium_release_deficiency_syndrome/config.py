@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'ventricular arrhythmias due to cardiac ryanodine receptor calc
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ventricular arrhythmias due to cardiac ryanodine receptor calcium release deficiency syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Torsade de pointes",
+    "Ventricular fibrillation",
+    "Aborted sudden cardiac death",
+    "Sudden cardiac death",
+    "Polymorphic and polytopic ventricular extrasystoles",
+    "Autosomal dominant inheritance",
+    "Left ventricular noncompaction cardiomyopathy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

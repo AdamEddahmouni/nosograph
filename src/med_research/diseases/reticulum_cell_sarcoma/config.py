@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'reticulum cell sarcoma (RETICULUM_CELL_SARCOMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of reticulum cell sarcoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sarcoma",
+    "Autosomal recessive inheritance",
+    "Neoplasm",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

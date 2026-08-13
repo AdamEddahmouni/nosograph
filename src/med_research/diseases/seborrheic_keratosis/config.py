@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'seborrheic keratosis (SEBORRHEIC_KERATOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of seborrheic keratosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Typified by somatic mosaicism",
+    "Epidermal nevus",
+    "Seborrheic keratosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

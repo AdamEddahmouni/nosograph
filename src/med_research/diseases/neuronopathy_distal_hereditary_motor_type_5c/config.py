@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'neuronopathy, distal hereditary motor, type 5C (NEURONOPATHY_D
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neuronopathy, distal hereditary motor, type 5C
-SYMPTOMS = []
+SYMPTOMS = [
+    "Distal lower limb amyotrophy",
+    "Pes cavus",
+    "Decreased compound muscle action potential amplitude",
+    "Juvenile onset",
+    "Chaddock reflex",
+    "Autosomal dominant inheritance",
+    "Thenar muscle atrophy",
+    "Distal lower limb muscle weakness",
+    "Frequent falls",
+    "Adult onset",
+    "Gait disturbance",
+    "Babinski sign",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'lethal congenital contracture syndrome 3 (LETHAL_CONGENITAL_CO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lethal congenital contracture syndrome 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Skeletal muscle atrophy",
+    "Multiple joint contractures",
+    "Arthrogryposis multiplex congenita",
+    "Neonatal death",
+    "Respiratory insufficiency",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

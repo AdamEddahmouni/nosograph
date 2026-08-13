@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'dilated cardiomyopathy 3B (DILATED_CARDIOMYOPATHY_3B)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dilated cardiomyopathy 3B
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased left ventricular end-diastolic volume",
+    "Elevated circulating CK-MB concentration",
+    "X-linked inheritance",
+    "Dilated cardiomyopathy",
+    "Increased variability in muscle fiber diameter",
+    "Juvenile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

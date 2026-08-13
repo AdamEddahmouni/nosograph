@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'pancreatic agenesis 2 (PANCREATIC_AGENESIS_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pancreatic agenesis 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Juvenile onset",
+    "Mild global developmental delay",
+    "Infantile onset",
+    "Pancreatic aplasia",
+    "Small for gestational age",
+    "Neonatal onset",
+    "Autosomal recessive inheritance",
+    "Steatorrhea",
+    "Exocrine pancreatic insufficiency",
+    "Young adult onset",
+    "Diabetes mellitus",
+    "Pancreatic hypoplasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

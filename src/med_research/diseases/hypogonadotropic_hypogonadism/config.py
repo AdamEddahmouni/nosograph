@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hypogonadotropic hypogonadism (HYPOGONADOTROPIC_HYPOGONADISM)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypogonadotropic hypogonadism
-SYMPTOMS = []
+SYMPTOMS = [
+    "Androgen insufficiency",
+    "Ectrodactyly",
+    "Azoospermia",
+    "Agenesis of corpus callosum",
+    "Elevated circulating follicle stimulating hormone level",
+    "Infertility",
+    "Primary amenorrhea",
+    "Sparse pubic hair",
+    "Absent pubic hair",
+    "Testicular atrophy",
+    "Typified by incomplete penetrance",
+    "Seizure",
+    "Ataxia",
+    "Bifid nose",
+    "Cleft palate",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

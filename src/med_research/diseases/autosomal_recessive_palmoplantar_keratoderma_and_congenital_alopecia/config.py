@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'autosomal recessive palmoplantar keratoderma and congenital al
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal recessive palmoplantar keratoderma and congenital alopecia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Developmental cataract",
+    "Camptodactyly of finger",
+    "Alopecia totalis",
+    "Palmoplantar hyperkeratosis",
+    "Hyperkeratosis",
+    "Keratosis pilaris",
+    "Nail dysplasia",
+    "Nail dystrophy",
+    "Autosomal recessive inheritance",
+    "Sclerodactyly",
+    "Amniotic constriction ring",
+    "Facial erythema",
+    "Dry skin",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

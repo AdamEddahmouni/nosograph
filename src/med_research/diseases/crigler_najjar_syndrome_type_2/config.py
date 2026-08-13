@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'Crigler-Najjar syndrome type 2 (CRIGLER_NAJJAR_SYNDROME_TYPE_2
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Crigler-Najjar syndrome type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Jaundice",
+    "Autosomal recessive inheritance",
+    "Unconjugated hyperbilirubinemia",
+    "Elevated circulating hepatic transaminase concentration",
+    "Reduced tissue UDP-glucuronyl-transferase activity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

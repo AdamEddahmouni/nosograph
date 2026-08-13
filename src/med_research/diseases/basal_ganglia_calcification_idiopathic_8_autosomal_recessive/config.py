@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'basal ganglia calcification, idiopathic, 8, autosomal recessiv
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of basal ganglia calcification, idiopathic, 8, autosomal recessive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Seizure",
+    "Limb dystonia",
+    "Autosomal recessive inheritance",
+    "Generalized dystonia",
+    "Parkinsonism",
+    "Nystagmus",
+    "Hypomimic face",
+    "Orofacial dyskinesia",
+    "Mental deterioration",
+    "Brisk reflexes",
+    "Babinski sign",
+    "Autistic behavior",
+    "Rigidity",
+    "Bradykinesia",
+    "Dysarthria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

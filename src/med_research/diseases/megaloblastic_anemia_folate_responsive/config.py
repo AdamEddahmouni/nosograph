@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'megaloblastic anemia, folate-responsive (MEGALOBLASTIC_ANEMIA_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of megaloblastic anemia, folate-responsive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperhomocystinemia",
+    "Increased circulating ferritin concentration",
+    "Schistocytosis",
+    "Increased circulating lactate dehydrogenase concentration",
+    "Erythroid dysplasia",
+    "Hyperbilirubinemia",
+    "Autosomal recessive inheritance",
+    "Decreased circulating vitamin B12 concentration",
+    "Episodic hemolytic anemia",
+    "Juvenile onset",
+    "Hypersegmentation of neutrophil nuclei",
+    "Folate-responsive megaloblastic anemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

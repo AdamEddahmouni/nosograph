@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'cataract 49 (CATARACT_49)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cataract 49
-SYMPTOMS = []
+SYMPTOMS = [
+    "Childhood onset",
+    "Nystagmus",
+    "Posterior cortical cataract",
+    "Autosomal dominant inheritance",
+    "Juvenile onset",
+    "Reduced visual acuity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

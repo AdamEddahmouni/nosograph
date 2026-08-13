@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'central hypoventilation syndrome, congenital, 1, with or witho
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of central hypoventilation syndrome, congenital, 1, with or without Hirschsprung disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Infantile onset",
+    "Hypercapnia",
+    "Autosomal dominant inheritance",
+    "Chronic constipation",
+    "Ineffective esophageal peristalsis",
+    "Neonatal onset",
+    "Central hypoventilation",
+    "Aganglionic megacolon",
+    "Hypoxemia",
+    "Abnormality of temperature regulation",
+    "Hypoventilation",
+    "Feeding difficulties",
+    "Abnormal autonomic nervous system physiology",
+    "Posteriorly rotated ears",
+    "Ganglioneuroma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

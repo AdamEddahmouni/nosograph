@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'tropical spastic paraparesis (TROPICAL_SPASTIC_PARAPARESIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of tropical spastic paraparesis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Myelopathy",
+    "Spastic paraparesis",
+    "Abnormal pyramidal sign",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

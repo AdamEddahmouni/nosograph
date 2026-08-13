@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hypopigmentation, organomegaly, and delayed myelination and de
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypopigmentation, organomegaly, and delayed myelination and development
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypertelorism",
+    "Polyhydramnios",
+    "Delayed CNS myelination",
+    "Epicanthus",
+    "Hepatomegaly",
+    "Reduced renal corticomedullary differentiation",
+    "Premature birth",
+    "Generalized hypotonia",
+    "Osteopetrosis",
+    "Delayed gross motor development",
+    "Autosomal dominant inheritance",
+    "Congenital onset",
+    "Cafe-au-lait spot",
+    "Intrauterine growth retardation",
+    "Delayed fine motor development",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

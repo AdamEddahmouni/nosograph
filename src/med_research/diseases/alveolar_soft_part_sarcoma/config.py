@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'alveolar soft part sarcoma (ALVEOLAR_SOFT_PART_SARCOMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of alveolar soft part sarcoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Alveolar soft part sarcoma",
+    "Typified by somatic mosaicism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

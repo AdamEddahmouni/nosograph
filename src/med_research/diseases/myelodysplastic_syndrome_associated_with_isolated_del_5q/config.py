@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'myelodysplastic syndrome associated with isolated del(5q) (MYE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of myelodysplastic syndrome associated with isolated del(5q)
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sporadic",
+    "Megakaryocyte nucleus hypolobulation",
+    "Erythroid hypoplasia",
+    "Myelodysplasia",
+    "Typified by somatic mosaicism",
+    "Refractory macrocytic anemia",
+    "Contiguous gene syndrome",
+    "Anemia of inadequate production",
+    "Late onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

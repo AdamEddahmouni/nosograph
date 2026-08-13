@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hereditary cryohydrocytosis with reduced stomatin (HEREDITARY_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hereditary cryohydrocytosis with reduced stomatin
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated gamma-glutamyltransferase level",
+    "Autosomal dominant inheritance",
+    "Hepatomegaly",
+    "Hemolytic anemia",
+    "Growth delay",
+    "Global developmental delay",
+    "Splenomegaly",
+    "Short stature",
+    "Microcephaly",
+    "Conjugated hyperbilirubinemia",
+    "Intellectual disability",
+    "Ataxia",
+    "Infantile onset",
+    "Polyhydramnios",
+    "Hypertonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

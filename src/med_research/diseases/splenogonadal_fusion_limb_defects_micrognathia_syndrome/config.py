@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'splenogonadal fusion-limb defects-micrognathia syndrome (SPLEN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of splenogonadal fusion-limb defects-micrognathia syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Multiple unerupted teeth",
+    "Stillbirth",
+    "Crowded maxillary incisors",
+    "Abnormality of the genitourinary system",
+    "Micrognathia",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'contractures, pterygia, and variable skeletal fusions syndrome
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of contractures, pterygia, and variable skeletal fusions syndrome 1B
-SYMPTOMS = []
+SYMPTOMS = [
+    "Scoliosis",
+    "Autosomal recessive inheritance",
+    "Absent phalangeal crease",
+    "Fused cervical vertebrae",
+    "Flexion contracture",
+    "Tarsal synostosis",
+    "Antecubital pterygium",
+    "Talipes equinovarus",
+    "Short neck",
+    "Cleft palate",
+    "Fused thoracic vertebrae",
+    "Webbed neck",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

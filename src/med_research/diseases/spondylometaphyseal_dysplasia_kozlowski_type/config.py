@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spondylometaphyseal dysplasia, Kozlowski type (SPONDYLOMETAPHY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondylometaphyseal dysplasia, Kozlowski type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Kyphoscoliosis",
+    "Abnormal rib cage morphology",
+    "Juvenile onset",
+    "Cone-shaped epiphyses of the phalanges of the hand",
+    "Delayed ossification of carpal bones",
+    "Enlarged joints",
+    "Depressed nasal bridge",
+    "Autosomal dominant inheritance",
+    "Irregular, rachitic-like metaphyses",
+    "Infantile onset",
+    "Flared iliac wing",
+    "Hypoplasia of the odontoid process",
+    "Elbow flexion contracture",
+    "Short neck",
+    "Coxa vara",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

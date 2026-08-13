@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'agenesis of the corpus callosum with peripheral neuropathy (AG
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of agenesis of the corpus callosum with peripheral neuropathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "2-3 toe syndactyly",
+    "Axonal degeneration/regeneration",
+    "Increased CSF protein concentration",
+    "Onion bulb formation",
+    "Agenesis of corpus callosum",
+    "Feeding difficulties",
+    "EMG: chronic denervation signs",
+    "Scoliosis",
+    "Ventriculomegaly",
+    "Progressive",
+    "Facial diplegia",
+    "Long face",
+    "Global developmental delay",
+    "Peripheral axonal neuropathy",
+    "Limb tremor",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

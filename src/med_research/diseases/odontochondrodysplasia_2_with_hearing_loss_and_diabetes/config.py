@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'odontochondrodysplasia 2 with hearing loss and diabetes (ODONT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of odontochondrodysplasia 2 with hearing loss and diabetes
-SYMPTOMS = []
+SYMPTOMS = [
+    "Retrognathia",
+    "Short toe",
+    "Scoliosis",
+    "Prominent nasal bridge",
+    "Periodontitis",
+    "Pruritus",
+    "Cone-shaped epiphyses of the phalanges of the hand",
+    "Moderate albuminuria",
+    "Type I diabetes mellitus",
+    "Autosomal recessive inheritance",
+    "Premature loss of teeth",
+    "Mild intellectual disability",
+    "Hydronephrosis",
+    "Dentinogenesis imperfecta",
+    "Short phalanx of finger",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

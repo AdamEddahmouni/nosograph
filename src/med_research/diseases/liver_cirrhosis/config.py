@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Liver cirrhosis (LIVER_CIRRHOSIS)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Liver cirrhosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Pulmonary arterial hypertension",
+    "Hypertension",
+    "Esophageal varix",
+    "Lethargy",
+    "Fever",
+    "Late onset",
+    "Biliary cirrhosis",
+    "Cirrhosis",
+    "Micronodular cirrhosis",
+    "Increased level of L-fucose in urine",
+    "Fulminant hepatitis",
+    "Ascites",
+    "Increased level of propylene glycol in blood",
+    "Jaundice",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

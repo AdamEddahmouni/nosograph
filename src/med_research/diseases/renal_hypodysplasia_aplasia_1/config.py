@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'renal hypodysplasia/aplasia 1 (RENAL_HYPODYSPLASIA_APLASIA_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of renal hypodysplasia/aplasia 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Oligohydramnios",
+    "Hypertelorism",
+    "Retrognathia",
+    "Pulmonary hypoplasia",
+    "Low-set ears",
+    "Bilateral renal agenesis",
+    "Bicornuate uterus",
+    "Talipes equinovarus",
+    "Anhydramnios",
+    "Proteinuria",
+    "Renal dysplasia",
+    "Congenital onset",
+    "Hypertension",
+    "Vaginal atresia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'overhydrated hereditary stomatocytosis (OVERHYDRATED_HEREDITAR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of overhydrated hereditary stomatocytosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased red cell osmotic fragility",
+    "Reticulocytosis",
+    "Splenomegaly",
+    "Prolonged neonatal jaundice",
+    "Stomatocytosis",
+    "Neonatal onset",
+    "Hepatomegaly",
+    "Increased intracellular sodium",
+    "Jaundice",
+    "Fatigue",
+    "Increased mean corpuscular volume",
+    "Hemolytic anemia",
+    "Hyperbilirubinemia",
+    "Autosomal dominant inheritance",
+    "Pulmonary embolism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

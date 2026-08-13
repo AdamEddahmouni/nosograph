@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'frontometaphyseal dysplasia 1 (FRONTOMETAPHYSEAL_DYSPLASIA_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of frontometaphyseal dysplasia 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pointed chin",
+    "Bowing of the long bones",
+    "Hypertelorism",
+    "Cleft palate",
+    "Wide nasal bridge",
+    "Scapular winging",
+    "Hirsutism",
+    "Absent frontal sinuses",
+    "Intellectual disability",
+    "Mitral valve prolapse",
+    "Large foramen magnum",
+    "Dental malocclusion",
+    "High palate",
+    "Wrist flexion contracture",
+    "Broad phalanges of the hand",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

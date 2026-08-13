@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'tremor, hereditary essential, 6 (TREMOR_HEREDITARY_ESSENTIAL_6
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of tremor, hereditary essential, 6
-SYMPTOMS = []
+SYMPTOMS = [
+    "Postural tremor",
+    "Leukodystrophy",
+    "Autosomal dominant inheritance",
+    "Head tremor",
+    "Adult onset",
+    "Kinetic tremor",
+    "Vocal tremor",
+    "Cerebellar atrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

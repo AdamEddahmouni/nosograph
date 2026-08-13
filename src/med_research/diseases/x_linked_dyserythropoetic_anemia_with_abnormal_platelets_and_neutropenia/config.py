@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'X-linked dyserythropoetic anemia with abnormal platelets and n
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked dyserythropoetic anemia with abnormal platelets and neutropenia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Thrombocytopenia",
+    "Bone marrow hypocellularity",
+    "Decreased total neutrophil count",
+    "Abnormal granulocytopoietic cell morphology",
+    "X-linked recessive inheritance",
+    "Poikilocytosis",
+    "Macrocytic anemia",
+    "Elliptocytosis",
+    "Abnormal reticulocyte morphology",
+    "Anisocytosis",
+    "Impaired platelet aggregation",
+    "Infantile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'microcephaly-thin corpus callosum-intellectual disability synd
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of microcephaly-thin corpus callosum-intellectual disability syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypoplasia of the corpus callosum",
+    "Fetal onset",
+    "Spasticity",
+    "Delayed CNS myelination",
+    "Global developmental delay",
+    "Delayed speech and language development",
+    "Aortic valve stenosis",
+    "Abnormal foot morphology",
+    "Babinski sign",
+    "Hydrocephalus",
+    "Infantile onset",
+    "Bicuspid aortic valve",
+    "Microcephaly",
+    "Nystagmus",
+    "Abnormal pyramidal sign",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

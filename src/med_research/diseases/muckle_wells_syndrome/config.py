@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Muckle-Wells syndrome (MUCKLE_WELLS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Muckle-Wells syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Childhood onset",
+    "Renal insufficiency",
+    "Renal amyloidosis",
+    "Hearing impairment",
+    "Recurrent aphthous stomatitis",
+    "Infantile onset",
+    "Autosomal dominant inheritance",
+    "Elevated circulating C-reactive protein concentration",
+    "Arthralgia",
+    "Chronic fatigue",
+    "Myalgia",
+    "Papilledema",
+    "Recurrent fever",
+    "Conjunctival hyperemia",
+    "Polyarticular arthritis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'spinocerebellar ataxia type 11 (SPINOCEREBELLAR_ATAXIA_TYPE_11
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spinocerebellar ataxia type 11
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cerebellar atrophy",
+    "Gait imbalance",
+    "Autosomal dominant inheritance",
+    "Jerky ocular pursuit movements",
+    "Young adult onset",
+    "Hyperreflexia",
+    "Nystagmus",
+    "Limb ataxia",
+    "Dysarthria",
+    "Truncal ataxia",
+    "Gait ataxia",
+    "Late onset",
+    "Juvenile onset",
+    "Progressive cerebellar ataxia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

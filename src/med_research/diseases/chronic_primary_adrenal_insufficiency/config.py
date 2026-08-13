@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'chronic primary adrenal insufficiency (CHRONIC_PRIMARY_ADRENAL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of chronic primary adrenal insufficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Apnea",
+    "Feeding difficulties in infancy",
+    "Seizure",
+    "Hyponatremia",
+    "Adrenal hypoplasia",
+    "Hypoglycemia",
+    "Cyanosis",
+    "Abnormality of the cardiovascular system",
+    "Vomiting",
+    "Hyperkalemia",
+    "Adrenal insufficiency",
+    "Abnormal skin pigmentation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

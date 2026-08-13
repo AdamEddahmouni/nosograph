@@ -8,8 +8,17 @@ PIPELINE_LABEL = "inclusion body myositis (INCLUSION_BODY_MYOSITIS)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of inclusion body myositis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Proximal muscle weakness",
+    "Distal muscle weakness",
+    "Inflammatory myopathy",
+    "Autosomal dominant inheritance",
+    "Slowly progressive",
+    "Sporadic",
+    "Rimmed vacuoles",
+    "Hyporeflexia",
+    "Dysphagia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

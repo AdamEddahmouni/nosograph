@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autosomal dominant omodysplasia (AUTOSOMAL_DOMINANT_OMODYSPLAS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal dominant omodysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cryptorchidism",
+    "Anterior wedging of T11",
+    "Dyspareunia",
+    "Hypospadias",
+    "Hypoplastic distal humeri",
+    "Short humerus",
+    "Glabellar hemangioma",
+    "Congenital onset",
+    "Broad femoral neck",
+    "Gastroesophageal reflux",
+    "Frontal bossing",
+    "Hypertelorism",
+    "Rhizomelic arm shortening",
+    "Labial hypoplasia",
+    "Depressed nasal bridge",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

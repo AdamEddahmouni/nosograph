@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Charcot-Marie-Tooth disease axonal type 2Z (CHARCOT_MARIE_TOOT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Charcot-Marie-Tooth disease axonal type 2Z
-SYMPTOMS = []
+SYMPTOMS = [
+    "Gait disturbance",
+    "Decreased amplitude of sensory action potentials",
+    "Babinski sign",
+    "Hypertonia",
+    "Hyporeflexia",
+    "Young adult onset",
+    "Hearing impairment",
+    "Fasciculations",
+    "Impaired distal proprioception",
+    "Gait ataxia",
+    "Absent Achilles reflex",
+    "Autosomal dominant inheritance",
+    "Distal sensory impairment",
+    "Pes cavus",
+    "Incoordination",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

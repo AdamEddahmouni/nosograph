@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'auditory neuropathy, autosomal dominant 3 (AUDITORY_NEUROPATHY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of auditory neuropathy, autosomal dominant 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Late onset",
+    "Abnormal speech discrimination",
+    "Autosomal dominant inheritance",
+    "Hearing impairment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

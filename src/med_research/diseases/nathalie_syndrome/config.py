@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'Nathalie syndrome (NATHALIE_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Nathalie syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Growth delay",
+    "Abnormality of the genitourinary system",
+    "Hearing impairment",
+    "Cataract",
+    "Skeletal muscle atrophy",
+    "Autosomal recessive inheritance",
+    "Abnormal EKG",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'aldosterone-producing adenoma with seizures and neurological a
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of aldosterone-producing adenoma with seizures and neurological abnormalities
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypertension",
+    "Cerebral visual impairment",
+    "Athetosis",
+    "Spastic tetraplegia",
+    "Myoclonic seizure",
+    "Cerebral palsy",
+    "Hypokalemia",
+    "Bilateral tonic-clonic seizure",
+    "Second degree atrioventricular block",
+    "Metabolic alkalosis",
+    "Kidney stone",
+    "Ventricular septal defect",
+    "Pulmonary arterial hypertension",
+    "Decreased circulating renin concentration",
+    "Primary hyperaldosteronism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

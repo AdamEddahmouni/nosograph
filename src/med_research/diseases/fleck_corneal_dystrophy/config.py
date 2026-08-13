@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'fleck corneal dystrophy (FLECK_CORNEAL_DYSTROPHY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of fleck corneal dystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Photophobia",
+    "Autosomal dominant inheritance",
+    "Speckled corneal dystrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

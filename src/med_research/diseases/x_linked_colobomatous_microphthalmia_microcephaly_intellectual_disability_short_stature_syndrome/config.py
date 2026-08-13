@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'X-linked colobomatous microphthalmia-microcephaly-intellectual
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked colobomatous microphthalmia-microcephaly-intellectual disability-short stature syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "X-linked inheritance",
+    "Microcephaly",
+    "Microcornea",
+    "Short stature",
+    "Intellectual disability",
+    "Iris coloboma",
+    "Global developmental delay",
+    "Congenital onset",
+    "Pendular nystagmus",
+    "Esotropia",
+    "Anteverted ears",
+    "Kyphoscoliosis",
+    "Ptosis",
+    "Widely-spaced incisors",
+    "Chorioretinal coloboma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

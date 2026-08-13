@@ -8,8 +8,11 @@ PIPELINE_LABEL = "Pernicious anemia (PERNICIOUS_ANEMIA)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Pernicious anemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Megaloblastic anemia",
+    "Autosomal dominant inheritance",
+    "Malabsorption of Vitamin B12",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'Miyoshi muscular dystrophy 3 (MIYOSHI_MUSCULAR_DYSTROPHY_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Miyoshi muscular dystrophy 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Distal upper limb muscle weakness",
+    "Autosomal recessive inheritance",
+    "Elevated circulating creatine kinase activity",
+    "Calf muscle hypertrophy",
+    "Young adult onset",
+    "Quadriceps muscle atrophy",
+    "Difficulty climbing stairs",
+    "Distal lower limb muscle weakness",
+    "Middle age onset",
+    "Quadriceps muscle weakness",
+    "Muscular dystrophy",
+    "Difficulty running",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

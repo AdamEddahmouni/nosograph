@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'pseudohypoaldosteronism type 2E (PSEUDOHYPOALDOSTERONISM_TYPE_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pseudohypoaldosteronism type 2E
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Hyperkalemia",
+    "Hyperchloremia",
+    "Metabolic acidosis",
+    "Hyperchloremic metabolic acidosis",
+    "Pseudohypoaldosteronism",
+    "Hypertension",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

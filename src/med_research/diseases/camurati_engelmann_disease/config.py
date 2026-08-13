@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Camurati-Engelmann disease (CAMURATI_ENGELMANN_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Camurati-Engelmann disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Slender build",
+    "Lower limb pain",
+    "Easy fatigability",
+    "Cortical thickening of long bone diaphyses",
+    "Optic nerve compression",
+    "Delayed puberty",
+    "Juvenile onset",
+    "Muscle weakness",
+    "Limb pain",
+    "Proptosis",
+    "Mandibular prognathia",
+    "Bone marrow hypocellularity",
+    "Autosomal dominant inheritance",
+    "Headache",
+    "Genu valgum",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

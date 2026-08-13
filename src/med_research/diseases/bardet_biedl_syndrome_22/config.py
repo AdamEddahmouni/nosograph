@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'Bardet-Biedl syndrome 22 (BARDET_BIEDL_SYNDROME_22)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Bardet-Biedl syndrome 22
-SYMPTOMS = []
+SYMPTOMS = [
+    "Obesity",
+    "Postaxial foot polydactyly",
+    "Intellectual disability",
+    "Delayed speech and language development",
+    "Macrocephaly",
+    "Autosomal recessive inheritance",
+    "Polydactyly",
+    "Visual impairment",
+    "Hypogonadism",
+    "Large for gestational age",
+    "Macular hypopigmentation",
+    "Microcephaly",
+    "Rod-cone dystrophy",
+    "Polyphagia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autosomal recessive cerebellar ataxia-saccadic intrusion syndr
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal recessive cerebellar ataxia-saccadic intrusion syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Spasticity",
+    "Peripheral axonal neuropathy",
+    "Gaze-evoked nystagmus",
+    "Impaired executive functioning",
+    "Young adult onset",
+    "Pes cavus",
+    "Seizure",
+    "Torticollis",
+    "Dystonia",
+    "Lower limb muscle weakness",
+    "Motor delay",
+    "Frequent falls",
+    "Ataxia",
+    "Distal amyotrophy",
+    "Myoclonus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

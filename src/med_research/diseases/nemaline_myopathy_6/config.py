@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'nemaline myopathy 6 (NEMALINE_MYOPATHY_6)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of nemaline myopathy 6
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Difficulty climbing stairs",
+    "Nemaline bodies",
+    "Neck flexor weakness",
+    "Muscle stiffness",
+    "Skeletal muscle atrophy",
+    "Difficulty running",
+    "Slowly progressive",
+    "Limb muscle weakness",
+    "Facial palsy",
+    "Childhood onset",
+    "Elevated circulating creatine kinase activity",
+    "Myopathy",
+    "Exercise intolerance",
+    "Gait disturbance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

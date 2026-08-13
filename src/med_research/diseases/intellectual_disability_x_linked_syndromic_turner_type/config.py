@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'intellectual disability, X-linked syndromic, Turner type (INTE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of intellectual disability, X-linked syndromic, Turner type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Long philtrum",
+    "HP_0002370",
+    "Micropenis",
+    "Low posterior hairline",
+    "Hypospadias",
+    "High palate",
+    "Oligodontia",
+    "Short philtrum",
+    "Blepharophimosis",
+    "Absent speech",
+    "Delayed ability to walk",
+    "Short foot",
+    "X-linked inheritance",
+    "Short nose",
+    "Nystagmus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

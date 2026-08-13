@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spondyloepimetaphyseal dysplasia, matrilin-3 type (SPONDYLOEPI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondyloepimetaphyseal dysplasia, matrilin-3 type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Spondyloepimetaphyseal dysplasia",
+    "Irregular epiphyses",
+    "Metaphyseal widening",
+    "Limited elbow extension",
+    "Waddling gait",
+    "Dysplastic iliac wing",
+    "Pectus excavatum",
+    "Ovoid vertebral bodies",
+    "Metaphyseal spurs",
+    "Lumbar hyperlordosis",
+    "Squared iliac bones",
+    "Flat face",
+    "Flat acetabular roof",
+    "Thoracic hypoplasia",
+    "Small epiphyses",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

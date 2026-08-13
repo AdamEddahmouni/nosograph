@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hyperuricemia-pulmonary hypertension-renal failure-alkalosis s
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hyperuricemia-pulmonary hypertension-renal failure-alkalosis syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Type 2 muscle fiber atrophy",
+    "Autosomal recessive inheritance",
+    "Hyponatremia",
+    "Hyperechogenic kidneys",
+    "Thrombocytopenia",
+    "Polyuria",
+    "Pancytopenia",
+    "Infantile onset",
+    "Increased circulating lactate concentration",
+    "Hypochloremic metabolic alkalosis",
+    "Renal salt wasting",
+    "Global developmental delay",
+    "Feeding difficulties",
+    "Failure to thrive",
+    "Respiratory failure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

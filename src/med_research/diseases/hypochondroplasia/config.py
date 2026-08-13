@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hypochondroplasia (HYPOCHONDROPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypochondroplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Macrocephaly",
+    "Trident hand",
+    "Depressed nasal bridge",
+    "Autosomal dominant inheritance",
+    "Frontal bossing",
+    "Short femoral neck",
+    "Genu varum",
+    "Lumbar hyperlordosis",
+    "Disproportionate short-limb short stature",
+    "Limited elbow extension",
+    "Intellectual disability",
+    "Widened interpedicular distance",
+    "Craniosynostosis",
+    "Acanthosis nigricans",
+    "Brachydactyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

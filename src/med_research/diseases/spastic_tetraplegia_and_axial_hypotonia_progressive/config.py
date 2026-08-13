@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spastic tetraplegia and axial hypotonia, progressive (SPASTIC_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spastic tetraplegia and axial hypotonia, progressive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypertonia",
+    "Cerebellar atrophy",
+    "Overlapping toe",
+    "Lower limb spasticity",
+    "Ataxia",
+    "Low-set ears",
+    "Babinski sign",
+    "Posteriorly rotated ears",
+    "Fasciculations",
+    "Ankle clonus",
+    "Hyperreflexia",
+    "Absent speech",
+    "Exaggerated startle response",
+    "Spastic tetraparesis",
+    "Infantile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

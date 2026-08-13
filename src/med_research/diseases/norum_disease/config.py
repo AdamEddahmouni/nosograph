@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'Norum disease (NORUM_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Norum disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypertriglyceridemia",
+    "Autosomal recessive inheritance",
+    "Decreased lecithin cholesterol acyl transferase level",
+    "Decreased circulating HDL-C concentration",
+    "Adult onset",
+    "Foam cells",
+    "Normochromic anemia",
+    "Proteinuria",
+    "Renal insufficiency",
+    "Hemolytic anemia",
+    "Corneal arcus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

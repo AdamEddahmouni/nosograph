@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'hypohidrosis-enamel hypoplasia-palmoplantar keratoderma-intell
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypohidrosis-enamel hypoplasia-palmoplantar keratoderma-intellectual disability syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Carious teeth",
+    "Intellectual disability",
+    "Autosomal recessive inheritance",
+    "Congenital onset",
+    "Microcephaly",
+    "Enamel hypoplasia",
+    "Hypohidrosis",
+    "Palmoplantar hyperkeratosis",
+    "Delayed speech and language development",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

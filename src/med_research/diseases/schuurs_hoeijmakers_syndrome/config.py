@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Schuurs-Hoeijmakers syndrome (SCHUURS_HOEIJMAKERS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Schuurs-Hoeijmakers syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Wide intermamillary distance",
+    "Single umbilical artery",
+    "Diastema",
+    "Patent foramen ovale",
+    "Feeding difficulties",
+    "Downturned corners of mouth",
+    "Aggressive behavior",
+    "Smooth philtrum",
+    "Macrotia",
+    "Highly arched eyebrow",
+    "Low anterior hairline",
+    "Pes planus",
+    "Global developmental delay",
+    "Delayed speech and language development",
+    "Seizure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

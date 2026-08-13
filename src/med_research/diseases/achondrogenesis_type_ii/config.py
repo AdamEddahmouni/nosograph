@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'achondrogenesis type II (ACHONDROGENESIS_TYPE_II)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of achondrogenesis type II
-SYMPTOMS = []
+SYMPTOMS = [
+    "Microretrognathia",
+    "Autosomal dominant inheritance",
+    "Abnormally large globe",
+    "Delayed distal femoral epiphyseal ossification",
+    "Hypoplastic iliac wing",
+    "Disproportionate short-trunk short stature",
+    "Brachycephaly",
+    "Second trimester onset",
+    "Polyhydramnios",
+    "Horizontal ribs",
+    "Edema",
+    "Protuberant abdomen",
+    "Cystic hygroma",
+    "Short tubular bones of the hand",
+    "Long philtrum",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

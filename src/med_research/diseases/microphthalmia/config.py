@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'microphthalmia (MICROPHTHALMIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of microphthalmia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Agenesis of corpus callosum",
+    "Hippocampal malrotation",
+    "Congenital onset",
+    "Cleft upper lip",
+    "Cleft palate",
+    "Reduced visual acuity",
+    "Optic disc drusen",
+    "Autosomal recessive inheritance",
+    "Global developmental delay",
+    "Angle closure glaucoma",
+    "Microphthalmia",
+    "Hypermetropia",
+    "Autosomal dominant inheritance",
+    "Agenesis of pineal gland",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

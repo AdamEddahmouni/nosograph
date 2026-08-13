@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'tooth agenesis, selective, X-linked, 1 (TOOTH_AGENESIS_SELECTI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of tooth agenesis, selective, X-linked, 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Agenesis of premolar",
+    "Oligodontia",
+    "Aplasia of the maxilla",
+    "Anodontia",
+    "Tooth agenesis",
+    "Respiratory tract infection",
+    "Heat intolerance",
+    "Agenesis of molar",
+    "X-linked dominant inheritance",
+    "Selective tooth agenesis",
+    "Agenesis of lateral incisor",
+    "Hypodontia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

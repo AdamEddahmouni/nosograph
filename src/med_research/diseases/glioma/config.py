@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'glioma (GLIOMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of glioma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Late young adult onset",
+    "B Acute Lymphoblastic Leukemia",
+    "Medulloblastoma",
+    "Oligodendroglioma",
+    "Glioblastoma multiforme",
+    "Meningioma",
+    "Autosomal dominant inheritance",
+    "Acute myeloid leukemia",
+    "Astrocytoma",
+    "T-cell acute lymphoblastic leukemias",
+    "Nephroblastoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

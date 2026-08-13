@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'combined immunodeficiency with skin granulomas (COMBINED_IMMUN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of combined immunodeficiency with skin granulomas
-SYMPTOMS = []
+SYMPTOMS = [
+    "Combined immunodeficiency",
+    "Decreased total B cell count",
+    "Recurrent respiratory infections",
+    "Autosomal recessive inheritance",
+    "Infantile onset",
+    "Decreased total T cell count",
+    "Decreased circulating IgG concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

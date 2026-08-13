@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'acrofacial dysostosis, Weyers type (ACROFACIAL_DYSOSTOSIS_WEYE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of acrofacial dysostosis, Weyers type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Clinodactyly of the 5th finger",
+    "Brachydactyly",
+    "Solitary median maxillary central incisor",
+    "Prominent antihelix",
+    "Conical tooth",
+    "Postaxial foot polydactyly",
+    "Small nail",
+    "Short palm",
+    "Postaxial hand polydactyly",
+    "Hypotelorism",
+    "Autosomal dominant inheritance",
+    "Nail dysplasia",
+    "Mild short stature",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

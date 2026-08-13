@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'cholestasis, progressive familial intrahepatic, 8 (CHOLESTASIS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cholestasis, progressive familial intrahepatic, 8
-SYMPTOMS = []
+SYMPTOMS = [
+    "Infantile onset",
+    "Pruritus",
+    "Portal hypertension",
+    "Increased serum bile acid concentration",
+    "Elevated circulating alkaline phosphatase concentration",
+    "Childhood onset",
+    "Elevated gamma-glutamyltransferase level",
+    "Neonatal onset",
+    "Esophageal varix",
+    "Juvenile onset",
+    "Bile duct proliferation",
+    "Sclerosing cholangitis",
+    "Hypercholesterolemia",
+    "Cholestasis",
+    "Elevated circulating aspartate aminotransferase concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

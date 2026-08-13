@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'congenital anomalies of kidney and urinary tract 1 (CONGENITAL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital anomalies of kidney and urinary tract 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Unilateral renal agenesis",
+    "Vesicoureteral reflux",
+    "Autosomal dominant inheritance",
+    "Congenital onset",
+    "Ureteropelvic junction obstruction",
+    "Renal hypoplasia",
+    "Stage 5 chronic kidney disease",
+    "Typified by incomplete penetrance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

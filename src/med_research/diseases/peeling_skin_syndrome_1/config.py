@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of peeling skin syndrome 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Brittle hair",
+    "Nail dystrophy",
+    "Increased circulating IgE concentration",
+    "Cleavage at junction of stratum corneum and stratum granulosum",
+    "Neonatal onset",
+    "Onycholysis",
+    "Erythroderma",
+    "Palmoplantar hyperhidrosis",
+    "Increased total eosinophil count",
+    "Autosomal recessive inheritance",
+    "Scaling skin",
+    "Asthma",
+    "Pruritus",
+    "Short stature",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'Imerslund-Grasbeck syndrome type 2 (IMERSLUND_GRASBECK_SYNDROM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Imerslund-Grasbeck syndrome type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased circulating vitamin B12 concentration",
+    "Renal insufficiency",
+    "Growth delay",
+    "Moderate albuminuria",
+    "Childhood onset",
+    "Megaloblastic anemia",
+    "Lumbar kyphosis",
+    "Autosomal recessive inheritance",
+    "Anemia",
+    "Proteinuria",
+    "Recurrent urinary tract infections",
+    "Diarrhea",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

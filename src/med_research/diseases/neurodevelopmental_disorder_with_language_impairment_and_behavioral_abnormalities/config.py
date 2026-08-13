@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neurodevelopmental disorder with language impairment and behav
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neurodevelopmental disorder with language impairment and behavioral abnormalities
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cerebral atrophy",
+    "Motor stereotypy",
+    "Febrile seizure (within the age range of 3 months to 6 years)",
+    "Spasticity",
+    "Cryptorchidism",
+    "Autosomal dominant inheritance",
+    "Delayed speech and language development",
+    "Tonic seizure",
+    "Stereotypical hand wringing",
+    "Gait ataxia",
+    "Progressive microcephaly",
+    "Talipes equinovarus",
+    "Absent speech",
+    "Dystonia",
+    "Global developmental delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

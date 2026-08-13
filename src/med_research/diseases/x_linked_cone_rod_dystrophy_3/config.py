@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'X-linked cone-rod dystrophy 3 (X_LINKED_CONE_ROD_DYSTROPHY_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked cone-rod dystrophy 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Central scotoma",
+    "Cone/cone-rod dystrophy",
+    "Astigmatism",
+    "Visual impairment",
+    "X-linked recessive inheritance",
+    "Photophobia",
+    "Optic disc pallor",
+    "Color vision defect",
+    "Retinal detachment",
+    "Abnormal macular pigmentation",
+    "Myopia",
+    "Absent foveal reflex",
+    "Abnormal light- and dark-adapted electroretinogram",
+    "Reduced visual acuity",
+    "Nystagmus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

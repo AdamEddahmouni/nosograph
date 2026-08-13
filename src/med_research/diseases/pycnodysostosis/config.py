@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'pycnodysostosis (PYCNODYSOSTOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pycnodysostosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Prominent occiput",
+    "Short stature",
+    "Wormian bones",
+    "Osteolytic defects of the distal phalanges of the hand",
+    "Increased bone mineral density",
+    "Persistence of primary teeth",
+    "Spondylolysis",
+    "Persistent open anterior fontanelle",
+    "Narrow iliac wing",
+    "Narrow palate",
+    "Aplastic clavicle",
+    "Brachydactyly",
+    "Delayed eruption of primary teeth",
+    "Delayed eruption of permanent teeth",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

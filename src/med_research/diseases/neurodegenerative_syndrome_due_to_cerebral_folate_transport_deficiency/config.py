@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'neurodegenerative syndrome due to cerebral folate transport de
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neurodegenerative syndrome due to cerebral folate transport deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Neurodegeneration",
+    "Seizure",
+    "Developmental regression",
+    "Intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

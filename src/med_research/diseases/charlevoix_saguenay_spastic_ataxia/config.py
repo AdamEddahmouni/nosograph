@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Charlevoix-Saguenay spastic ataxia (CHARLEVOIX_SAGUENAY_SPASTI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Charlevoix-Saguenay spastic ataxia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Spastic gait",
+    "Absent Achilles reflex",
+    "Hyperactive patellar reflex",
+    "Hammertoe",
+    "Pontine T2 hypointensity",
+    "Hyperreflexia",
+    "Distal sensory impairment",
+    "Hypermyelinated retinal nerve fibers",
+    "Intellectual disability",
+    "Ataxia",
+    "Loss of Purkinje cells in the cerebellar vermis",
+    "Autosomal recessive inheritance",
+    "Upper motor neuron dysfunction",
+    "Decreased number of large peripheral myelinated nerve fibers",
+    "Dysarthria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

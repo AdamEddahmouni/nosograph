@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mucopolysaccharidosis type 4B (MUCOPOLYSACCHARIDOSIS_TYPE_4B)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mucopolysaccharidosis type 4B
-SYMPTOMS = []
+SYMPTOMS = [
+    "Aortic valve stenosis",
+    "Grayish enamel",
+    "Thin corpus callosum",
+    "Bilateral talipes equinovarus",
+    "Opacification of the corneal stroma",
+    "Wide mouth",
+    "Restrictive ventilatory defect",
+    "Dysostosis multiplex",
+    "Hypoplasia of the capital femoral epiphysis",
+    "Cervical subluxation",
+    "Kyphosis",
+    "Juvenile onset",
+    "Epiphyseal deformities of tubular bones",
+    "Mandibular prognathia",
+    "Recurrent upper respiratory tract infections",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

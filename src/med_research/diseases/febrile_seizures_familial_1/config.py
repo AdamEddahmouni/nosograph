@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'febrile seizures, familial, 1 (FEBRILE_SEIZURES_FAMILIAL_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of febrile seizures, familial, 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Atonic seizure",
+    "Childhood onset",
+    "Generalized tonic seizure",
+    "Febrile seizure (within the age range of 3 months to 6 years)",
+    "Autosomal dominant inheritance",
+    "Bilateral tonic-clonic seizure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'microcephaly, epilepsy, and diabetes syndrome 1 (MICROCEPHALY_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of microcephaly, epilepsy, and diabetes syndrome 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cerebellar hypoplasia",
+    "Diabetes mellitus",
+    "Anteverted nares",
+    "Seizure",
+    "Gingival overgrowth",
+    "Generalized-onset seizure",
+    "Global developmental delay",
+    "Brisk reflexes",
+    "Delayed CNS myelination",
+    "Narrow forehead",
+    "Hypoplasia of the corpus callosum",
+    "Bilateral tonic-clonic seizure with focal onset",
+    "Bilateral tonic-clonic seizure",
+    "Axial hypotonia",
+    "Neonatal hypotonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

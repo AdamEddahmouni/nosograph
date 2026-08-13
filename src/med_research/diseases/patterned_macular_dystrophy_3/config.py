@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'patterned macular dystrophy 3 (PATTERNED_MACULAR_DYSTROPHY_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of patterned macular dystrophy 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Young adult onset",
+    "Macular atrophy",
+    "Rod-cone dystrophy",
+    "Reduced visual acuity",
+    "Choroidal neovascularization",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

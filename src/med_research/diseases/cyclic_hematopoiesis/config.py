@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'cyclic hematopoiesis (CYCLIC_HEMATOPOIESIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cyclic hematopoiesis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Malaise",
+    "Fever",
+    "Oral ulcer",
+    "Autosomal dominant inheritance",
+    "Cyclically decreased total neutrophil count",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

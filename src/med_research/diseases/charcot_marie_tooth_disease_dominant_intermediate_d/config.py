@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'Charcot-Marie-Tooth disease dominant intermediate D (CHARCOT_M
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Charcot-Marie-Tooth disease dominant intermediate D
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Areflexia",
+    "Distal sensory impairment",
+    "Axonal degeneration/regeneration",
+    "Distal amyotrophy",
+    "Distal muscle weakness",
+    "Upper limb muscle weakness",
+    "Segmental peripheral demyelination/remyelination",
+    "Hyporeflexia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

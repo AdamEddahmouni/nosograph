@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'hyper-IgM syndrome type 3 (HYPER_IGM_SYNDROME_TYPE_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hyper-IgM syndrome type 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased circulating IgM concentration",
+    "Autosomal recessive inheritance",
+    "Immunodeficiency",
+    "Decreased circulating IgA concentration",
+    "Impaired memory B cell generation",
+    "Impaired Ig class switch recombination",
+    "Recurrent bacterial infections",
+    "Absence of lymph node germinal center",
+    "Decreased circulating IgG concentration",
+    "Decreased total neutrophil count",
+    "Decreased circulating IgE concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'auriculoosteodysplasia (AURICULOOSTEODYSPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of auriculoosteodysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Attached earlobe",
+    "Hip dysplasia",
+    "Short stature",
+    "Dislocated radial head",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

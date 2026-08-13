@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spinal muscular atrophy, type III (SPINAL_MUSCULAR_ATROPHY_TYP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spinal muscular atrophy, type III
-SYMPTOMS = []
+SYMPTOMS = [
+    "Juvenile onset",
+    "Pelvic girdle muscle weakness",
+    "Spinal muscular atrophy",
+    "Distal amyotrophy",
+    "Muscle spasm",
+    "Progressive",
+    "Tongue fasciculations",
+    "Shoulder girdle muscle atrophy",
+    "EMG: chronic denervation signs",
+    "Autosomal recessive inheritance",
+    "Hand tremor",
+    "Early young adult onset",
+    "Absent Achilles reflex",
+    "Degeneration of anterior horn cells",
+    "Absent patellar reflexes",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

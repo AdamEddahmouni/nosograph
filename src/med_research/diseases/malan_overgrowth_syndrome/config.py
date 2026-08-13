@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Malan overgrowth syndrome (MALAN_OVERGROWTH_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Malan overgrowth syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Scoliosis",
+    "Gingival overgrowth",
+    "Childhood onset",
+    "Motor delay",
+    "Autosomal dominant inheritance",
+    "Ventriculomegaly",
+    "Astigmatism",
+    "Pectus excavatum",
+    "Short nose",
+    "Accelerated skeletal maturation",
+    "Advanced eruption of teeth",
+    "Long fingers",
+    "Mandibular prognathia",
+    "Midface retrusion",
+    "Nystagmus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'spinal muscular atrophy, type II (SPINAL_MUSCULAR_ATROPHY_TYPE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spinal muscular atrophy, type II
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hand tremor",
+    "Spinal muscular atrophy",
+    "Tongue fasciculations",
+    "Degeneration of anterior horn cells",
+    "Autosomal recessive inheritance",
+    "Skeletal muscle atrophy",
+    "Recurrent respiratory infections",
+    "Muscle weakness",
+    "EMG abnormality",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

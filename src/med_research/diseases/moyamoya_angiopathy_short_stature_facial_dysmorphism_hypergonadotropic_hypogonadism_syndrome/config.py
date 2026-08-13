@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'moyamoya angiopathy-short stature-facial dysmorphism-hypergona
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of moyamoya angiopathy-short stature-facial dysmorphism-hypergonadotropic hypogonadism syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Wide nose",
+    "Global developmental delay",
+    "Retrognathia",
+    "Premature coronary artery atherosclerosis",
+    "Dilated cardiomyopathy",
+    "Elevated circulating luteinizing hormone level",
+    "Hypertelorism",
+    "Abnormal hand morphology",
+    "Ptosis",
+    "Reduced circulating growth hormone concentration",
+    "Postnatal growth retardation",
+    "Seizure",
+    "Elevated circulating follicle stimulating hormone level",
+    "X-linked recessive inheritance",
+    "Hypergonadotropic hypogonadism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

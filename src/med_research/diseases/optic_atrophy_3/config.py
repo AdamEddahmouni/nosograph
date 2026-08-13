@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'optic atrophy 3 (OPTIC_ATROPHY_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of optic atrophy 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Optic disc pallor",
+    "Optic atrophy",
+    "Reduced visual acuity",
+    "Abnormality of extrapyramidal motor function",
+    "Hearing impairment",
+    "Autosomal dominant inheritance",
+    "Tremor",
+    "Cataract",
+    "Scotoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

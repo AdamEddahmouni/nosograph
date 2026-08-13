@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'van den Ende-Gupta syndrome (VAN_DEN_ENDE_GUPTA_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of van den Ende-Gupta syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short clavicles",
+    "Dental crowding",
+    "Thin ribs",
+    "Elbow flexion contracture",
+    "Intellectual disability",
+    "Cleft palate",
+    "Talipes equinovarus",
+    "Slender metacarpals",
+    "Protruding ear",
+    "Single umbilical artery",
+    "Convex nasal ridge",
+    "Knee flexion contracture",
+    "Ulnar bowing",
+    "Femoral bowing",
+    "Stridor",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

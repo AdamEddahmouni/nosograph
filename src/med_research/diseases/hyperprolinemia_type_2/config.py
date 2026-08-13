@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'hyperprolinemia type 2 (HYPERPROLINEMIA_TYPE_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hyperprolinemia type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Seizure",
+    "Intellectual disability",
+    "Hyperglycinuria",
+    "Autosomal recessive inheritance",
+    "Hydroxyprolinuria",
+    "Elevated urinary pyrroline hydroxycarboxylic acid level",
+    "Reduced tissue delta-1-pyrroline-5-carboxylate dehydrogenase activity",
+    "Elevated circulating 1-pyrroline-5-carboxylic acid concentration",
+    "Prolinuria",
+    "Hyperprolinemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'Paris-Trousseau thrombocytopenia (PARIS_TROUSSEAU_THROMBOCYTOP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Paris-Trousseau thrombocytopenia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Trigonocephaly",
+    "Radial deviation of finger",
+    "Sporadic",
+    "Ptosis",
+    "Micrognathia",
+    "Abnormal bleeding",
+    "Intellectual disability",
+    "Prolonged bleeding time",
+    "Clinodactyly",
+    "Thrombocytopenia",
+    "Pyloric stenosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

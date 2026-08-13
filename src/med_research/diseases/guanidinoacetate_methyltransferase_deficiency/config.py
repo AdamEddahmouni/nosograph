@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'guanidinoacetate methyltransferase deficiency (GUANIDINOACETAT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of guanidinoacetate methyltransferase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Atonic seizure",
+    "Infantile onset",
+    "Severe intellectual disability",
+    "Episodic vomiting",
+    "Floppy infant",
+    "Elevated brain guanidinoacetate level by MRS",
+    "Lower limb spasticity",
+    "Febrile seizure (within the age range of 3 months to 6 years)",
+    "Delayed speech and language development",
+    "Seizure",
+    "Hypotonia",
+    "Developmental regression",
+    "Hypertonia",
+    "Ataxia",
+    "Progressive extrapyramidal movement disorder",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

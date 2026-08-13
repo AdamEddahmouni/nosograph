@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'familial temporal lobe epilepsy 2 (FAMILIAL_TEMPORAL_LOBE_EPIL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial temporal lobe epilepsy 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Focal aware seizure",
+    "Bilateral tonic-clonic seizure",
+    "Febrile status epilepticus",
+    "Febrile seizure (within the age range of 3 months to 6 years)",
+    "Typified by incomplete penetrance",
+    "Focal sensory seizure with visual features",
+    "Auditory hallucination",
+    "Focal impaired awareness seizure",
+    "Migraine with aura",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

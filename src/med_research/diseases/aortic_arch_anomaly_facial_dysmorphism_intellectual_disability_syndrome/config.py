@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'aortic arch anomaly-facial dysmorphism-intellectual disability
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of aortic arch anomaly-facial dysmorphism-intellectual disability syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Right aortic arch with mirror image branching",
+    "Autosomal dominant inheritance",
+    "Microcephaly",
+    "Intellectual disability",
+    "Abnormal facial shape",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

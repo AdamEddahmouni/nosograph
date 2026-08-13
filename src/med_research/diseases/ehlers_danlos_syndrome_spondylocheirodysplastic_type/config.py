@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Ehlers-Danlos syndrome, spondylocheirodysplastic type (EHLERS_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Ehlers-Danlos syndrome, spondylocheirodysplastic type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Joint contracture of the hand",
+    "Flat capital femoral epiphysis",
+    "Pes planus",
+    "Moderately short stature",
+    "Blue sclerae",
+    "Depressed nasal bridge",
+    "Irregular vertebral endplates",
+    "Platyspondyly",
+    "Motor delay",
+    "Bruising susceptibility",
+    "Short femoral neck",
+    "Hypertelorism",
+    "Osteopenia",
+    "Prominent superficial veins",
+    "Flattened epiphysis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

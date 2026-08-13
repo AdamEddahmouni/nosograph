@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Chediak-Higashi syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Seizure",
+    "Gingivitis",
+    "Lymphadenopathy",
+    "Gait disturbance",
+    "Thrombocytopenia",
+    "Hemophagocytosis",
+    "Muscle weakness",
+    "Decreased nerve conduction velocity",
+    "Ocular albinism",
+    "Decreased total neutrophil count",
+    "Decreased total leukocyte count",
+    "Anemia",
+    "Cranial nerve paralysis",
+    "Macular hypoplasia",
+    "Intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

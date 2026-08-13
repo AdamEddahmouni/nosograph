@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'action myoclonus-renal failure syndrome (ACTION_MYOCLONUS_RENA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of action myoclonus-renal failure syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Action tremor",
+    "Cerebellar atrophy",
+    "Focal segmental glomerulosclerosis",
+    "Renal insufficiency",
+    "Dysphagia",
+    "Early young adult onset",
+    "Nephrotic syndrome",
+    "Hypoalbuminemia",
+    "Intention tremor",
+    "Myoclonus",
+    "Pleural effusion",
+    "Generalized-onset seizure",
+    "Autosomal recessive inheritance",
+    "Proteinuria",
+    "Postural tremor",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

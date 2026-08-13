@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'multiple endocrine neoplasia type 1 (MULTIPLE_ENDOCRINE_NEOPLA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of multiple endocrine neoplasia type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased circulating cortisol level",
+    "Subcutaneous lipoma",
+    "Increased circulating prolactin concentration",
+    "Adrenocortical adenoma",
+    "Autosomal dominant inheritance",
+    "Thyroid adenoma",
+    "Parathyroid adenoma",
+    "Hypercalcemia",
+    "Peptic ulcer",
+    "Diarrhea",
+    "Esophagitis",
+    "Pancreatic islet cell adenoma",
+    "Zollinger-Ellison syndrome",
+    "Cafe-au-lait spot",
+    "Carcinoid tumor",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

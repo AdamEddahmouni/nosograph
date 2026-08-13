@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'osteitis deformans (OSTEITIS_DEFORMANS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of osteitis deformans
-SYMPTOMS = []
+SYMPTOMS = [
+    "Progressive",
+    "Autosomal dominant inheritance",
+    "Recurrent fractures",
+    "Osteosarcoma",
+    "Third trimester onset",
+    "Short femur",
+    "Premature loss of teeth",
+    "Osteolysis",
+    "Sandwich appearance of vertebral bodies",
+    "Headache",
+    "Hydroxyprolinuria",
+    "Osteoarthritis",
+    "Vertebral compression fracture",
+    "Recurrent long bone fractures",
+    "Left ventricular hypertrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

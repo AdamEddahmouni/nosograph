@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'choroideremia-deafness-obesity syndrome (CHOROIDEREMIA_DEAFNES
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of choroideremia-deafness-obesity syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Progressive visual loss",
+    "X-linked recessive inheritance",
+    "Mild intellectual disability",
+    "Contiguous gene syndrome",
+    "Global developmental delay",
+    "Intellectual disability",
+    "Conductive hearing impairment",
+    "Progressive sensorineural hearing impairment",
+    "Constriction of peripheral visual field",
+    "Chorioretinal atrophy",
+    "Hearing impairment",
+    "Obesity",
+    "HP_0200065",
+    "Incomplete partition of the cochlea",
+    "Nyctalopia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

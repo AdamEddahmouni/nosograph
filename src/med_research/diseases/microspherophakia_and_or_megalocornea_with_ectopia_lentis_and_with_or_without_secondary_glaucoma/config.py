@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'microspherophakia and/or megalocornea, with ectopia lentis and
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of microspherophakia and/or megalocornea, with ectopia lentis and with or without secondary glaucoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Deep anterior chamber",
+    "Buphthalmos",
+    "Glaucoma",
+    "Abnormality of the skin",
+    "Hypermetropia",
+    "Autosomal recessive inheritance",
+    "Microspherophakia",
+    "Myopia",
+    "Juvenile onset",
+    "Megalocornea",
+    "Pectus excavatum",
+    "Ectopia lentis",
+    "High palate",
+    "Iridodonesis",
+    "Abnormality of the dentition",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

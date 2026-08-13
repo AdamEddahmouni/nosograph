@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'atrichia with papular lesions (ATRICHIA_WITH_PAPULAR_LESIONS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of atrichia with papular lesions
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sparse hair",
+    "Autosomal recessive inheritance",
+    "Generalized papillary lesions",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

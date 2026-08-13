@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'IgAD1 (IGAD1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of IgAD1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Decreased circulating IgA concentration",
+    "Sporadic",
+    "Malabsorption",
+    "Recurrent infections",
+    "Autosomal recessive inheritance",
+    "Recurrent respiratory infections",
+    "Recurrent infection of the gastrointestinal tract",
+    "Autoimmunity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autosomal recessive spastic paraplegia type 78 (AUTOSOMAL_RECE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal recessive spastic paraplegia type 78
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hallucinations",
+    "Aggressive behavior",
+    "Hyperreflexia",
+    "Supranuclear gaze palsy",
+    "Dysarthria",
+    "Spastic paraplegia",
+    "Adult onset",
+    "Cerebellar atrophy",
+    "Spastic tetraplegia",
+    "Urinary urgency",
+    "Exodeviation",
+    "Distal sensory impairment",
+    "Dementia",
+    "Parkinsonism",
+    "Peripheral axonal neuropathy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

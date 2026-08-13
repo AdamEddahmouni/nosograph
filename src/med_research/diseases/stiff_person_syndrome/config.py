@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Stiff-person syndrome (STIFF_PERSON_SYNDROME)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Stiff-person syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperreflexia",
+    "Vitiligo",
+    "Diabetes mellitus",
+    "Autoimmunity",
+    "Anemia",
+    "Tachycardia",
+    "Lumbar hyperlordosis",
+    "Depression",
+    "Anxiety",
+    "Agoraphobia",
+    "Hyperhidrosis",
+    "Sporadic",
+    "Axial muscle stiffness",
+    "Opisthotonus",
+    "Exaggerated startle response",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

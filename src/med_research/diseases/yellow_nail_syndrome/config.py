@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'Yellow Nail Syndrome (YELLOW_NAIL_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Yellow Nail Syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Predominantly lower limb lymphedema",
+    "Lymphedema",
+    "Yellow nails",
+    "Slow-growing nails",
+    "Hypoplasia of lymphatic vessels",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'severe combined immunodeficiency due to IKK2 deficiency (SEVER
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of severe combined immunodeficiency due to IKK2 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Death in infancy",
+    "Agammaglobulinemia",
+    "Reduced total natural killer cell count",
+    "Increased total monocyte count",
+    "Decreased circulating immunoglobulin concentration",
+    "Chronic diarrhea",
+    "Infantile onset",
+    "Failure to thrive",
+    "Recurrent infections",
+    "Immunodeficiency",
+    "Autosomal recessive inheritance",
+    "Decreased mitogen-induced T-cell proliferation",
+    "Recurrent oral thrush",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

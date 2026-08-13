@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'permanent neonatal diabetes mellitus (PERMANENT_NEONATAL_DIABE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of permanent neonatal diabetes mellitus
-SYMPTOMS = []
+SYMPTOMS = [
+    "Type I diabetes mellitus",
+    "Autosomal recessive inheritance",
+    "Diabetes mellitus",
+    "Decreased circulating C-peptide concentration",
+    "Hyperglycemia",
+    "Small for gestational age",
+    "Elevated hemoglobin A1c",
+    "Intrauterine growth retardation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

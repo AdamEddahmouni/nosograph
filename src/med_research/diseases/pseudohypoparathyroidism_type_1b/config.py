@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'pseudohypoparathyroidism type 1B (PSEUDOHYPOPARATHYROIDISM_TYP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pseudohypoparathyroidism type 1B
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated circulating parathyroid hormone level",
+    "Brachydactyly",
+    "Sporadic",
+    "Hypocalcemia",
+    "Pseudohypoparathyroidism",
+    "Autosomal dominant inheritance",
+    "Low urinary cyclic AMP response to PTH administration",
+    "Obesity",
+    "Hyperphosphatemia",
+    "Short metacarpal",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

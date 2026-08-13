@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'episodic ataxia type 8 (EPISODIC_ATAXIA_TYPE_8)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of episodic ataxia type 8
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dysarthria",
+    "Ataxia",
+    "Myokymia",
+    "Slurred speech",
+    "Intention tremor",
+    "Episodic ataxia",
+    "Nonprogressive",
+    "Nystagmus",
+    "Muscle weakness",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Kufor-Rakeb syndrome (KUFOR_RAKEB_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Kufor-Rakeb syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Slow saccadic eye movements",
+    "Young adult onset",
+    "Hyposmia",
+    "Babinski sign",
+    "Akinesia",
+    "Hyperreflexia",
+    "Spasticity",
+    "Mask-like facies",
+    "Leg muscle stiffness",
+    "Spastic paraplegia",
+    "Psychotic episodes",
+    "Supranuclear gaze palsy",
+    "Hypertonia",
+    "Rapidly progressive",
+    "Juvenile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

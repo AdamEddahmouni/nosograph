@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'hip dysplasia, Beukes type (HIP_DYSPLASIA_BEUKES_TYPE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hip dysplasia, Beukes type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Wide proximal femoral metaphysis",
+    "Hip dysplasia",
+    "Irregular capital femoral epiphysis",
+    "Childhood onset",
+    "Broad femoral neck",
+    "Flat capital femoral epiphysis",
+    "Avascular necrosis of the capital femoral epiphysis",
+    "Autosomal dominant inheritance",
+    "Shallow acetabular fossae",
+    "Osteoarthritis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

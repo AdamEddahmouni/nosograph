@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'hyperbiliverdinemia (HYPERBILIVERDINEMIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hyperbiliverdinemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Green urine",
+    "Cholelithiasis",
+    "Late onset",
+    "Elevated circulating biliverdin concentration",
+    "Decreased liver function",
+    "Autosomal dominant inheritance",
+    "Autosomal recessive inheritance",
+    "Cholestasis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

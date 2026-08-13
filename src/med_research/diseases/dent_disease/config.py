@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Dent disease (DENT_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Dent disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Microscopic hematuria",
+    "Elevated circulating alanine aminotransferase concentration",
+    "X-linked recessive inheritance",
+    "Glycosuria",
+    "Osteomalacia",
+    "Tubulointerstitial fibrosis",
+    "Bowing of the legs",
+    "Delayed epiphyseal ossification",
+    "Chronic kidney disease",
+    "Proximal tubulopathy",
+    "Slowly progressive",
+    "Childhood onset",
+    "Focal segmental glomerulosclerosis",
+    "Thin bony cortex",
+    "Enlargement of the wrists",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

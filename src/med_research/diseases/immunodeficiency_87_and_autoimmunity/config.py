@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'immunodeficiency 87 and autoimmunity (IMMUNODEFICIENCY_87_AND_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 87 and autoimmunity
-SYMPTOMS = []
+SYMPTOMS = [
+    "Secretory diarrhea",
+    "Infantile onset",
+    "Small for gestational age",
+    "Juvenile onset",
+    "Elevated circulating C-reactive protein concentration",
+    "Inverted nipples",
+    "Anasarca",
+    "Persistent EBV viremia",
+    "Recurrent viral infections",
+    "Inverted CD4:CD8 ratio",
+    "Villous atrophy",
+    "Thrombocytopenia",
+    "Oligohydramnios",
+    "Feeding difficulties",
+    "Necrotizing enterocolitis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

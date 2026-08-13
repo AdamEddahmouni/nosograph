@@ -8,8 +8,11 @@ PIPELINE_LABEL = "Benign prostatic hyperplasia (BENIGN_PROSTATIC_HYPERPLASIA)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Benign prostatic hyperplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Benign prostatic hyperplasia",
+    "Infantile onset",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

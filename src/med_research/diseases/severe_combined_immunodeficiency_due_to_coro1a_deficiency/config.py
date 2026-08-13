@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'severe combined immunodeficiency due to CORO1A deficiency (SEV
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of severe combined immunodeficiency due to CORO1A deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Post-vaccination varicella zoster virus infection",
+    "Recurrent upper respiratory tract infections",
+    "Attention deficit hyperactivity disorder",
+    "Decreased total lymphocyte count",
+    "Autosomal recessive inheritance",
+    "Immunodeficiency",
+    "Recurrent oral thrush",
+    "Recurrent lower respiratory tract infections",
+    "Gastroesophageal reflux",
+    "Global developmental delay",
+    "Complete or near-complete absence of specific antibody response to tetanus vaccine",
+    "Infantile onset",
+    "Complete or near-complete absence of specific antibody response to unconjugated pneumococcus polysaccharide",
+    "Recurrent otitis media",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

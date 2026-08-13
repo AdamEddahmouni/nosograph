@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'renal hypomagnesemia 5 with ocular involvement (RENAL_HYPOMAGN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of renal hypomagnesemia 5 with ocular involvement
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypercalciuria",
+    "Amelogenesis imperfecta",
+    "Abnormal circulating calcium concentration",
+    "Stage 5 chronic kidney disease",
+    "Recurrent urinary tract infections",
+    "Juvenile onset",
+    "Rod-cone dystrophy",
+    "Renal calcium wasting",
+    "Chronic kidney disease",
+    "Nephrocalcinosis",
+    "Myopia",
+    "Autosomal recessive inheritance",
+    "Nystagmus",
+    "Macular pseudocoloboma",
+    "Astigmatism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

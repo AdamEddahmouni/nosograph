@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'MEDNIK syndrome (MEDNIK_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of MEDNIK syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "High forehead",
+    "Death in childhood",
+    "Hepatic fibrosis",
+    "Diarrhea",
+    "Death in infancy",
+    "Growth delay",
+    "Intellectual disability",
+    "Microcolon",
+    "Neonatal death",
+    "Congenital onset",
+    "Erythema",
+    "Volvulus",
+    "Global developmental delay",
+    "Hypotonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

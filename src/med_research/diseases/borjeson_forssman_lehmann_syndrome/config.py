@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Borjeson-Forssman-Lehmann syndrome (BORJESON_FORSSMAN_LEHMANN_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Borjeson-Forssman-Lehmann syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Scheuermann-like vertebral changes",
+    "Short stature",
+    "Prominent supraorbital ridges",
+    "Widely spaced toes",
+    "Shortening of all middle phalanges of the fingers",
+    "Nystagmus",
+    "Visual impairment",
+    "Gynecomastia",
+    "Short toe",
+    "Shortening of all distal phalanges of the fingers",
+    "Ptosis",
+    "X-linked recessive inheritance",
+    "Microcephaly",
+    "Macrotia",
+    "Severe intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

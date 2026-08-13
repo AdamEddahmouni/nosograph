@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'congenital sucrase-isomaltase deficiency (CONGENITAL_SUCRASE_I
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital sucrase-isomaltase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abdominal pain",
+    "Infantile onset",
+    "Autosomal recessive inheritance",
+    "Malabsorption",
+    "Decreased mucosal sucrase-isomaltase activity",
+    "Kidney stone",
+    "Diarrhea",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

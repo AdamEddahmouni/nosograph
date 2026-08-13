@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'chylomicron retention disease (CHYLOMICRON_RETENTION_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of chylomicron retention disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased circulating LDL-C concentration",
+    "Vomiting",
+    "Hypocholesterolemia",
+    "Hypoalbuminemia",
+    "Diminished deep tendon reflex",
+    "Intellectual disability",
+    "Autosomal recessive inheritance",
+    "Impaired vibratory sensation",
+    "Hypotriglyceridemia",
+    "Diarrhea",
+    "Steatorrhea",
+    "Accumulation of lipid droplets in small-bowel enterocytes",
+    "Failure to thrive",
+    "Infantile onset",
+    "Malnutrition",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

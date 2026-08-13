@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Rubinstein-Taybi syndrome due to CREBBP mutations (RUBINSTEIN_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Rubinstein-Taybi syndrome due to CREBBP mutations
-SYMPTOMS = []
+SYMPTOMS = [
+    "Failure to thrive",
+    "Hyperactivity",
+    "Hypoplasia of the maxilla",
+    "Capillary hemangioma",
+    "Papillary cystadenoma of the epididymis",
+    "Smooth philtrum",
+    "Large foramen magnum",
+    "Single transverse palmar crease",
+    "Polyhydramnios",
+    "Bilateral cryptorchidism",
+    "Obstructive sleep apnea",
+    "Duplication of phalanx of hallux",
+    "Dental malocclusion",
+    "Broad distal phalanx of finger",
+    "Facial hypertrichosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'granular corneal dystrophy type I (GRANULAR_CORNEAL_DYSTROPHY_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of granular corneal dystrophy type I
-SYMPTOMS = []
+SYMPTOMS = [
+    "Strabismus",
+    "Nodular corneal dystrophy",
+    "Punctate corneal dystrophy",
+    "Granular corneal dystrophy",
+    "Cataract",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

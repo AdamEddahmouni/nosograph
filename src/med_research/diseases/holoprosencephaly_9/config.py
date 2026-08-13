@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'holoprosencephaly 9 (HOLOPROSENCEPHALY_9)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of holoprosencephaly 9
-SYMPTOMS = []
+SYMPTOMS = [
+    "Typified by incomplete penetrance",
+    "Hypoplasia of the premaxilla",
+    "Thin corpus callosum",
+    "Hydrocephalus",
+    "Partial agenesis of the corpus callosum",
+    "Facial asymmetry",
+    "Dental malocclusion",
+    "Lateral ventricular asymmetry",
+    "Short nose",
+    "Broad nasal tip",
+    "Panhypopituitarism",
+    "Abnormal cortical gyration",
+    "Microcephaly",
+    "Occipital meningocele",
+    "Postaxial hand polydactyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

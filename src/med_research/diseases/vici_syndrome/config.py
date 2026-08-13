@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Vici syndrome (VICI_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Vici syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Recurrent bacterial infections",
+    "Ocular albinism",
+    "Hypotonia",
+    "Wide nose",
+    "Decreased total T cell count",
+    "Hypotelorism",
+    "Decreased total leukocyte count",
+    "Thick vermilion border",
+    "Decreased circulating IgG concentration",
+    "Acidosis",
+    "Cardiomyopathy",
+    "Left ventricular hypertrophy",
+    "Developmental cataract",
+    "Decreased T cell activation",
+    "Nystagmus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

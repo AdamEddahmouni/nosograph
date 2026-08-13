@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mucopolysaccharidosis type 3D (MUCOPOLYSACCHARIDOSIS_TYPE_3D)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mucopolysaccharidosis type 3D
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cellular metachromasia",
+    "Seizure",
+    "Mitral regurgitation",
+    "Sleep disturbance",
+    "Coarse facial features",
+    "Hirsutism",
+    "Restlessness",
+    "Visual impairment",
+    "Anteverted nares",
+    "Short stature",
+    "Brisk reflexes",
+    "Hypoplastic vertebral bodies",
+    "Pilonidal sinus",
+    "Delayed speech and language development",
+    "Epiphyseal dysplasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

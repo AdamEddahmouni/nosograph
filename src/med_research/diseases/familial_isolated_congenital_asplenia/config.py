@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'familial isolated congenital asplenia (FAMILIAL_ISOLATED_CONGE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial isolated congenital asplenia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Thrombocytosis",
+    "Infantile onset",
+    "Howell-Jolly bodies",
+    "Asplenia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

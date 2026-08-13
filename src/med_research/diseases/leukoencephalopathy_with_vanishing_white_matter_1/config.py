@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'leukoencephalopathy with vanishing white matter 1 (LEUKOENCEPH
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of leukoencephalopathy with vanishing white matter 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Leukoencephalopathy",
+    "Lethargy",
+    "Cessation of head growth",
+    "Autosomal recessive inheritance",
+    "Spasticity",
+    "Optic atrophy",
+    "Decreased circulating progesterone",
+    "Memory impairment",
+    "Dysarthria",
+    "Primary gonadal insufficiency",
+    "Fever",
+    "Gliosis",
+    "Unsteady gait",
+    "Gait disturbance",
+    "Juvenile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

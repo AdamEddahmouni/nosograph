@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'foveal hypoplasia 1 (FOVEAL_HYPOPLASIA_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of foveal hypoplasia 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Presenile cataracts",
+    "Visual impairment",
+    "Hypoplasia of the fovea",
+    "Congenital nystagmus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

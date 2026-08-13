@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'atrial fibrillation, familial, 8 (ATRIAL_FIBRILLATION_FAMILIAL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of atrial fibrillation, familial, 8
-SYMPTOMS = []
+SYMPTOMS = [
+    "Adult onset",
+    "Atrial fibrillation",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'dystonia 31 (DYSTONIA_31)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dystonia 31
-SYMPTOMS = []
+SYMPTOMS = [
+    "Weak voice",
+    "Craniofacial dystonia",
+    "Leg dystonia",
+    "Juvenile onset",
+    "Generalized dystonia",
+    "Arm dystonia",
+    "Gait disturbance",
+    "Writer's cramp",
+    "Autosomal recessive inheritance",
+    "Parkinsonism",
+    "Dysphagia",
+    "Muscle stiffness",
+    "Abnormal posturing",
+    "Young adult onset",
+    "Depression",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'familial visceral amyloidosis (FAMILIAL_VISCERAL_AMYLOIDOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial visceral amyloidosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Edema",
+    "Adult onset",
+    "Peripheral neuropathy",
+    "Hepatomegaly",
+    "Generalized amyloid deposition",
+    "Nephrotic syndrome",
+    "Nephropathy",
+    "Skin rash",
+    "Autosomal dominant inheritance",
+    "Proteinuria",
+    "Renal amyloidosis",
+    "Hematuria",
+    "Splenomegaly",
+    "Hypertension",
+    "Cholestasis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

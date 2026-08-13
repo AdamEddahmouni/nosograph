@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'oocyte/zygote/embryo maturation arrest 20 (OOCYTE_ZYGOTE_EMBRY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of oocyte/zygote/embryo maturation arrest 20
-SYMPTOMS = []
+SYMPTOMS = [
+    "Female infertility",
+    "Autosomal recessive inheritance",
+    "Amenorrhea",
+    "Young adult onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

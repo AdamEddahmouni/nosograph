@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Sengers syndrome (SENGERS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Sengers syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Neonatal onset",
+    "Generalized muscle weakness",
+    "Mitochondrial myopathy",
+    "Osteopenia",
+    "Fatigue",
+    "Motor delay",
+    "Sudden cardiac death",
+    "Decreased activity of mitochondrial complex I",
+    "Exercise-induced lactic acidemia",
+    "Nystagmus",
+    "Growth delay",
+    "Exercise intolerance",
+    "Strabismus",
+    "Muscle weakness",
+    "Developmental cataract",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'CODAS syndrome (CODAS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of CODAS syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital hip dislocation",
+    "Enamel hypoplasia",
+    "Umbilical hernia",
+    "Atrial septal defect",
+    "Lumbar scoliosis",
+    "Metaphyseal chevron deformity",
+    "Anteverted nares",
+    "Delayed epiphyseal ossification",
+    "Dysphagia",
+    "Depressed nasal bridge",
+    "Hypoplasia of the odontoid process",
+    "Short stature",
+    "Short phalanx of finger",
+    "Cerebellar cortical atrophy",
+    "Anal atresia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

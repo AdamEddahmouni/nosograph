@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'GM3 synthase deficiency (GM3_SYNTHASE_DEFICIENCY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of GM3 synthase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Feeding difficulties in infancy",
+    "Hypotonia",
+    "Hearing impairment",
+    "Cerebral visual impairment",
+    "Global developmental delay",
+    "Multifocal epileptiform discharges",
+    "Optic atrophy",
+    "Microcephaly",
+    "Status epilepticus",
+    "Myoclonus",
+    "Visual loss",
+    "Absent speech",
+    "Autosomal recessive inheritance",
+    "Infantile onset",
+    "Developmental regression",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

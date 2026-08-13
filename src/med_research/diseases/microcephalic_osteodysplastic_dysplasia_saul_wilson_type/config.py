@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'microcephalic osteodysplastic dysplasia, Saul-Wilson type (MIC
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of microcephalic osteodysplastic dysplasia, Saul-Wilson type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Short distal phalanx of finger",
+    "Progeroid facial appearance",
+    "Delayed speech and language development",
+    "Nyctalopia",
+    "Ventriculomegaly",
+    "Madelung deformity",
+    "Prominent superficial veins",
+    "Short stature",
+    "Sensorineural hearing impairment",
+    "Decreased total neutrophil count",
+    "Narrow nasal bridge",
+    "Overtubulated long bones",
+    "Irregular vertebral endplates",
+    "Global developmental delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

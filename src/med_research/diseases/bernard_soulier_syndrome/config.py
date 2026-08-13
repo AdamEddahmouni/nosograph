@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Bernard-Soulier syndrome (BERNARD_SOULIER_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Bernard-Soulier syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Gingival bleeding",
+    "Autosomal dominant inheritance",
+    "Impaired ADP-induced platelet aggregation",
+    "Congenital onset",
+    "Purpura",
+    "Stomatocytosis",
+    "Prolonged bleeding after surgery",
+    "Impaired ristocetin-induced platelet aggregation",
+    "Impaired collagen-related peptide-induced platelet aggregation",
+    "Increased mean platelet volume",
+    "Gastrointestinal hemorrhage",
+    "Autosomal recessive inheritance",
+    "Abnormal bleeding",
+    "Splenomegaly",
+    "Ecchymosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

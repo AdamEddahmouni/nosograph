@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'X-linked erythropoietic protoporphyria (X_LINKED_ERYTHROPOIETI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked erythropoietic protoporphyria
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cholelithiasis",
+    "Increased erythrocyte protoporphyrin concentration",
+    "X-linked dominant inheritance",
+    "Iron deficiency anemia",
+    "Elevated circulating hepatic transaminase concentration",
+    "Cutaneous photosensitivity",
+    "Childhood onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

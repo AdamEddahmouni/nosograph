@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of TFRC-related combined immunodeficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased circulating immunoglobulin concentration",
+    "Intermittent thrombocytopenia",
+    "Autosomal recessive inheritance",
+    "Immunodeficiency",
+    "Decreased total neutrophil count",
+    "Sepsis",
+    "Anemia",
+    "Recurrent sinopulmonary infections",
+    "Failure to thrive",
+    "Recurrent oral thrush",
+    "Meningitis",
+    "Conjunctivitis",
+    "Chronic diarrhea",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

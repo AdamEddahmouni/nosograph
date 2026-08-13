@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'orofaciodigital syndrome type 6 (OROFACIODIGITAL_SYNDROME_TYPE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of orofaciodigital syndrome type 6
-SYMPTOMS = []
+SYMPTOMS = [
+    "Occipital meningocele",
+    "11 pairs of ribs",
+    "Incomplete cleft of the upper lip",
+    "Tongue nodules",
+    "Generalized hypotonia",
+    "Short stature",
+    "Cerebellar vermis hypoplasia",
+    "Hypothalamic hamartoma",
+    "Conductive hearing impairment",
+    "Epicanthus",
+    "Periventricular nodular heterotopia",
+    "Brachydactyly",
+    "Posteriorly rotated ears",
+    "Arrhinencephaly",
+    "Lobulated tongue",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

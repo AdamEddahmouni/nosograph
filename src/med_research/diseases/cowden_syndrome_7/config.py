@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'Cowden syndrome 7 (COWDEN_SYNDROME_7)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Cowden syndrome 7
-SYMPTOMS = []
+SYMPTOMS = [
+    "Papillary thyroid carcinoma",
+    "Trichilemmoma",
+    "Papilloma",
+    "Macrocephaly",
+    "Hemangioma",
+    "Breast carcinoma",
+    "Ductal carcinoma in situ",
+    "Autosomal dominant inheritance",
+    "Hashimoto thyroiditis",
+    "Intestinal polyposis",
+    "Goiter",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

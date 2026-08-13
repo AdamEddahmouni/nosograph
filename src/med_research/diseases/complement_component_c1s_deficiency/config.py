@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'complement component C1s deficiency (COMPLEMENT_COMPONENT_C1S_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of complement component C1s deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Systemic lupus erythematosus",
+    "Abnormality of complement system",
+    "Hashimoto thyroiditis",
+    "Hepatitis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

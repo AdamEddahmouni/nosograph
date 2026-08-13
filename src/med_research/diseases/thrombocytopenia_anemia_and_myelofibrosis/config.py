@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'thrombocytopenia, anemia, and myelofibrosis (THROMBOCYTOPENIA_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of thrombocytopenia, anemia, and myelofibrosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Myelofibrosis",
+    "Anemia",
+    "Autosomal recessive inheritance",
+    "Childhood onset",
+    "Splenomegaly",
+    "Anisopoikilocytosis",
+    "Thrombocytopenia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

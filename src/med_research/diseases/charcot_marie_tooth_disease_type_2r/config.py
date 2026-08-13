@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Charcot-Marie-Tooth disease type 2R (CHARCOT_MARIE_TOOTH_DISEA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Charcot-Marie-Tooth disease type 2R
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pes cavus",
+    "Autosomal recessive inheritance",
+    "Infantile onset",
+    "Decreased muscle mass",
+    "Respiratory insufficiency",
+    "Delayed ability to walk",
+    "Inability to walk",
+    "Hypotonia",
+    "Intrinsic hand muscle atrophy",
+    "Peripheral axonal neuropathy",
+    "Broad-based gait",
+    "Tracheomalacia",
+    "Decreased number of peripheral myelinated nerve fibers",
+    "Vocal cord paralysis",
+    "Decreased motor nerve conduction velocity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

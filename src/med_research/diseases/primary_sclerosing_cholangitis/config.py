@@ -8,8 +8,23 @@ PIPELINE_LABEL = "sclerosing cholangitis (PRIMARY_SCLEROSING_CHOLANGITIS)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of sclerosing cholangitis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Biliary cirrhosis",
+    "Pruritus",
+    "Portal fibrosis",
+    "Hepatic bridging fibrosis",
+    "Bile duct proliferation",
+    "Splenomegaly",
+    "Mild intellectual disability",
+    "Cirrhosis",
+    "Jaundice",
+    "Hearing impairment",
+    "Hepatomegaly",
+    "Sclerosing cholangitis",
+    "Ductal bile plugs",
+    "Acholic stools",
+    "Cholestasis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

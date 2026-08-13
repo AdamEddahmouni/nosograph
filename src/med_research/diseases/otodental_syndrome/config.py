@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'otodental syndrome (OTODENTAL_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of otodental syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Long face",
+    "Autosomal dominant inheritance",
+    "Agenesis of premolar",
+    "Taurodontia",
+    "Long philtrum",
+    "Tooth ankylosis",
+    "Sensorineural hearing impairment",
+    "Anteverted nares",
+    "Pulp calcification",
+    "Enamel hypoplasia",
+    "Delayed eruption of teeth",
+    "Coloboma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

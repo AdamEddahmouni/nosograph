@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'myopathy with myalgia, increased serum creatine kinase, and wi
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of myopathy with myalgia, increased serum creatine kinase, and with or without episodic rhabdomyolysis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Exercise-induced muscle stiffness",
+    "Elevated circulating creatine kinase activity",
+    "Distal upper limb muscle weakness",
+    "Rhabdomyolysis",
+    "Progressive proximal muscle weakness",
+    "Increased endomysial connective tissue",
+    "Proximal lower limb muscle weakness",
+    "Exercise intolerance",
+    "Elevated circulating creatinine concentration",
+    "Childhood onset",
+    "Motor delay",
+    "Increased circulating lactate dehydrogenase concentration",
+    "Skeletal muscle atrophy",
+    "Proximal muscle weakness",
+    "Muscle fiber necrosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

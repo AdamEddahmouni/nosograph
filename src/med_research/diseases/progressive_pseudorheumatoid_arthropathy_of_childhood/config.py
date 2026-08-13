@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'progressive pseudorheumatoid arthropathy of childhood (PROGRES
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of progressive pseudorheumatoid arthropathy of childhood
-SYMPTOMS = []
+SYMPTOMS = [
+    "Metaphyseal widening",
+    "Kyphoscoliosis",
+    "Joint stiffness",
+    "Autosomal recessive inheritance",
+    "Osteoarthritis",
+    "Platyspondyly",
+    "Sclerotic vertebral endplates",
+    "Enlarged interphalangeal joints",
+    "Muscle weakness",
+    "Gait disturbance",
+    "Enlarged metacarpophalangeal joints",
+    "Genu varum",
+    "Flattened epiphysis",
+    "Waddling gait",
+    "Coxa vara",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

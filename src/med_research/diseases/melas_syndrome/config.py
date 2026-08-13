@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'MELAS syndrome (MELAS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of MELAS syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Developmental cataract",
+    "Cerebral visual impairment",
+    "Mitochondrial inheritance",
+    "Left ventricular hypertrophy",
+    "Congestive heart failure",
+    "Myopathy",
+    "Encephalopathy",
+    "Hemiparesis",
+    "Progressive sensorineural hearing impairment",
+    "Episodic vomiting",
+    "Mitochondrial myopathy",
+    "Bilateral tonic-clonic seizure",
+    "Growth abnormality",
+    "Dementia",
+    "Migraine",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

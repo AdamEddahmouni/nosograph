@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'self-limited childhood occipital epilepsy (SELF_LIMITED_CHILDH
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of self-limited childhood occipital epilepsy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Seizure",
+    "Autosomal dominant inheritance",
+    "EEG abnormality",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'atypical hemolytic-uremic syndrome with C3 anomaly (ATYPICAL_H
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of atypical hemolytic-uremic syndrome with C3 anomaly
-SYMPTOMS = []
+SYMPTOMS = [
+    "Acute kidney injury",
+    "Increased blood urea nitrogen",
+    "Autosomal dominant inheritance",
+    "Childhood onset",
+    "Infantile onset",
+    "Proteinuria",
+    "Anuria",
+    "Decreased circulating complement C3 concentration",
+    "Juvenile onset",
+    "Thrombocytopenia",
+    "Hemolytic-uremic syndrome",
+    "Anemia",
+    "Elevated circulating creatinine concentration",
+    "Hematuria",
+    "Microangiopathic hemolytic anemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

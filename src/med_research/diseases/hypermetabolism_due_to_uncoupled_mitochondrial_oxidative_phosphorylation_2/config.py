@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'hypermetabolism due to uncoupled mitochondrial oxidative phosp
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypermetabolism due to uncoupled mitochondrial oxidative phosphorylation 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Failure to thrive",
+    "Infantile onset",
+    "Mild global developmental delay",
+    "Decreased body weight",
+    "Tachypnea",
+    "Hyperleucinemia",
+    "Increased blood urea nitrogen",
+    "Hyperisoleucinemia",
+    "Autosomal dominant inheritance",
+    "Recurrent fever",
+    "Polyphagia",
+    "Hypervalinemia",
+    "Hyperammonemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

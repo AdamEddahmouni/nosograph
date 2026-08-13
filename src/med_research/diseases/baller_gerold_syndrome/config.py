@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Baller-Gerold syndrome (BALLER_GEROLD_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Baller-Gerold syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Poikiloderma",
+    "Anomalous splenoportal venous system",
+    "Scoliosis",
+    "Abnormal vertebral morphology",
+    "Rectovaginal fistula",
+    "Abnormal cardiovascular system morphology",
+    "Lambdoidal craniosynostosis",
+    "Flat forehead",
+    "Craniosynostosis",
+    "Hydrocephalus",
+    "Carpal synostosis",
+    "Radial deviation of the hand",
+    "Feeding difficulties",
+    "Abnormal heart morphology",
+    "Anal atresia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

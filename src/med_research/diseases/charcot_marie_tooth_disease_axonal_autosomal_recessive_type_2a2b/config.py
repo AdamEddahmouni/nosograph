@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Charcot-Marie-Tooth disease, axonal, autosomal recessive, type
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Charcot-Marie-Tooth disease, axonal, autosomal recessive, type 2a2b;
-SYMPTOMS = []
+SYMPTOMS = [
+    "Kyphosis",
+    "Peripheral axonal neuropathy",
+    "Foot dorsiflexor weakness",
+    "Scoliosis",
+    "Proximal muscle weakness",
+    "Abnormally high-pitched voice",
+    "Hearing impairment",
+    "Hyporeflexia",
+    "Pes cavus",
+    "Gait disturbance",
+    "Childhood onset",
+    "Optic disc pallor",
+    "Optic atrophy",
+    "Upper limb amyotrophy",
+    "Lower limb amyotrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

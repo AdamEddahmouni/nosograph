@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'BENTA disease (BENTA_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of BENTA disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased circulating IgM concentration",
+    "Lymphoid hyperplasia",
+    "Decreased circulating IgA concentration",
+    "Recurrent infections",
+    "Autosomal dominant inheritance",
+    "Splenomegaly",
+    "Increased total B cell count",
+    "Decreased specific antibody response to unconjugated polysaccharide vaccine",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

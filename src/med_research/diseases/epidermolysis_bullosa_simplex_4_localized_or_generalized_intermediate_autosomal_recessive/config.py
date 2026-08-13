@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'epidermolysis bullosa simplex 4, localized or generalized inte
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of epidermolysis bullosa simplex 4, localized or generalized intermediate, autosomal recessive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperkeratosis",
+    "Autosomal recessive inheritance",
+    "Childhood onset",
+    "Abnormal blistering of the skin",
+    "Epidermal acanthosis",
+    "Fragile skin",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'bent bone dysplasia syndrome 1 (BENT_BONE_DYSPLASIA_SYNDROME_1
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of bent bone dysplasia syndrome 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased calvarial ossification",
+    "Natal tooth",
+    "Gingival overgrowth",
+    "Micrognathia",
+    "Midface retrusion",
+    "Short clavicles",
+    "Bell-shaped thorax",
+    "Malar flattening",
+    "Bent long bone",
+    "Low-set ears",
+    "Brachydactyly",
+    "Congenital onset",
+    "Hepatosplenomegaly",
+    "Clitoral hypertrophy",
+    "Hirsutism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

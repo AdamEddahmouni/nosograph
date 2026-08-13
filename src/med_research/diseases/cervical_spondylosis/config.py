@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'cervical spondylosis (CERVICAL_SPONDYLOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cervical spondylosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Spondylolysis",
+    "Spondylolisthesis",
+    "Osteoarthritis",
+    "Autosomal dominant inheritance",
+    "Spina bifida occulta",
+    "Cervical spondylosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Potocki-Lupski syndrome (POTOCKI_LUPSKI_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Potocki-Lupski syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "High palate",
+    "Scoliosis",
+    "Trigonocephaly",
+    "Triangular face",
+    "Sleep disturbance",
+    "Hypertelorism",
+    "Global developmental delay",
+    "Failure to thrive",
+    "Reduced eye contact",
+    "Patent foramen ovale",
+    "Prominent nasal tip",
+    "Smooth philtrum",
+    "Dental malocclusion",
+    "Sporadic",
+    "EEG abnormality",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

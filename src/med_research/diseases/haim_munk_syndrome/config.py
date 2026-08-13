@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'Haim-Munk syndrome (HAIM_MUNK_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Haim-Munk syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital palmoplantar hyperkeratosis",
+    "Osteolytic defects of the phalanges of the hand",
+    "Tapering pointed ends of distal finger phalanges",
+    "Autosomal recessive inheritance",
+    "Recurrent bacterial skin infections",
+    "Severe periodontitis",
+    "Pes planus",
+    "Arachnodactyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

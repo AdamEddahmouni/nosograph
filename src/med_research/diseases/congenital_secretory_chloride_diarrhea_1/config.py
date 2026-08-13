@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'congenital secretory chloride diarrhea 1 (CONGENITAL_SECRETORY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital secretory chloride diarrhea 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Elevated serum bicarbonate concentration",
+    "Growth delay",
+    "Juvenile onset",
+    "Hyponatremia",
+    "Infantile onset",
+    "Secretory diarrhea",
+    "Premature birth",
+    "Metabolic alkalosis",
+    "Failure to thrive",
+    "Increased circulating renin concentration",
+    "Alkalosis",
+    "Elevated stool chloride content",
+    "Polyhydramnios",
+    "Dehydration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

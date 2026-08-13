@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autosomal dominant cerebellar ataxia type II (AUTOSOMAL_DOMINA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal dominant cerebellar ataxia type II
-SYMPTOMS = []
+SYMPTOMS = [
+    "Slow saccadic eye movements",
+    "Optic atrophy",
+    "Spasticity",
+    "Hyperreflexia",
+    "Orofacial dyskinesia",
+    "Dysarthria",
+    "Supranuclear ophthalmoplegia",
+    "Pigmentary retinopathy",
+    "Macular degeneration",
+    "Dysphagia",
+    "Tremor",
+    "Genetic anticipation with paternal anticipation bias",
+    "Dysmetria",
+    "Mental deterioration",
+    "Olivopontocerebellar atrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

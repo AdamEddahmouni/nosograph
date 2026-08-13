@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of primary intestinal lymphangiectasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Edema",
+    "Abnormal hair morphology",
+    "Pedal edema",
+    "Prominent floating ribs",
+    "Neonatal hypoproteinemia",
+    "Autosomal dominant inheritance",
+    "Malabsorption",
+    "Decreased circulating IgG concentration",
+    "Decreased total lymphocyte count",
+    "Stillbirth",
+    "Intestinal lymphangiectasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

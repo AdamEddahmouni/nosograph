@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'classic dopamine transporter deficiency syndrome (CLASSIC_DOPA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of classic dopamine transporter deficiency syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Feeding difficulties",
+    "Abnormal pyramidal tract morphology",
+    "Hypertonia",
+    "Bradykinesia",
+    "Global developmental delay",
+    "Autosomal recessive inheritance",
+    "Parkinsonism",
+    "Abnormal pyramidal sign",
+    "Delayed gross motor development",
+    "Dystonia",
+    "Tremor",
+    "Oculogyric crisis",
+    "Oromandibular dystonia",
+    "Rigidity",
+    "Hypomimic face",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

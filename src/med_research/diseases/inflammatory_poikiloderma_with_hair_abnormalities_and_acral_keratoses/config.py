@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'inflammatory poikiloderma with hair abnormalities and acral ke
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of inflammatory poikiloderma with hair abnormalities and acral keratoses
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sparse eyelashes",
+    "Childhood onset",
+    "Sparse scalp hair",
+    "Mottled pigmentation",
+    "Autosomal recessive inheritance",
+    "Absent eyebrow",
+    "Sparse eyebrow",
+    "Pigment incontinence",
+    "Acrokeratosis",
+    "Poikiloderma",
+    "Infantile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

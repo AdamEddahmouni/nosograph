@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'hemoglobin M disease (HEMOGLOBIN_M_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hemoglobin M disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Methemoglobinemia",
+    "Autosomal dominant inheritance",
+    "Cyanosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

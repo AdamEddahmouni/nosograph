@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neonatal hemochromatosis (NEONATAL_HEMOCHROMATOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neonatal hemochromatosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypoglycemia",
+    "Cirrhosis",
+    "Rapidly progressive",
+    "Increased circulating ferritin concentration",
+    "Autosomal recessive inheritance",
+    "Cholestasis",
+    "Abnormality of iron homeostasis",
+    "Hepatocellular necrosis",
+    "Oligohydramnios",
+    "Prolonged neonatal jaundice",
+    "Congenital onset",
+    "Nonimmune hydrops fetalis",
+    "Hepatic fibrosis",
+    "Hepatic failure",
+    "Intrauterine growth retardation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

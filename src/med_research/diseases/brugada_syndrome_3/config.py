@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'Brugada syndrome 3 (BRUGADA_SYNDROME_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Brugada syndrome 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Syncope",
+    "J wave",
+    "Shortened QT interval",
+    "Ventricular arrhythmia",
+    "Atrial fibrillation",
+    "Sudden cardiac death",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

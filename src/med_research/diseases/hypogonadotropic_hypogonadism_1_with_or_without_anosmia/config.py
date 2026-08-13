@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hypogonadotropic hypogonadism 1 with or without anosmia (HYPOG
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypogonadotropic hypogonadism 1 with or without anosmia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Infantile onset",
+    "Decreased serum testosterone concentration",
+    "Cryptorchidism",
+    "Leydig cell insensitivity to gonadotropin",
+    "Testicular atrophy",
+    "Hypogonadotropic hypogonadism",
+    "Bimanual synkinesia",
+    "Anosmia",
+    "Unilateral renal agenesis",
+    "X-linked recessive inheritance",
+    "Decreased circulating luteinizing hormone level",
+    "Micropenis",
+    "High palate",
+    "Small scrotum",
+    "Congenital onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autosomal recessive severe congenital neutropenia due to G6PC3
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal recessive severe congenital neutropenia due to G6PC3 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "High palate",
+    "Anemia",
+    "Secundum atrial septal defect",
+    "Intermittent thrombocytopenia",
+    "Panniculitis",
+    "Global developmental delay",
+    "Thrombocytopenia",
+    "Prominent superficial veins",
+    "Inguinal hernia",
+    "Failure to thrive",
+    "Varicose veins",
+    "Patent ductus arteriosus",
+    "Perianal abscess",
+    "Autosomal recessive inheritance",
+    "Neonatal onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Moyamoya disease with early-onset achalasia (MOYAMOYA_DISEASE_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Moyamoya disease with early-onset achalasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Raynaud phenomenon",
+    "Autosomal recessive inheritance",
+    "Impotence",
+    "Dysphagia",
+    "Infantile onset",
+    "Thrombocytopenia",
+    "Childhood onset",
+    "Moyamoya phenomenon",
+    "Hypertension",
+    "Livedo reticularis",
+    "Achalasia",
+    "Cutis marmorata",
+    "Generalized-onset seizure",
+    "Hemiparesis",
+    "Neonatal onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

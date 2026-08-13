@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'muscular dystrophy, congenital, with rapid progression (MUSCUL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of muscular dystrophy, congenital, with rapid progression
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Rapidly progressive",
+    "Muscular dystrophy",
+    "Muscle weakness",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'mullerian duct anomalies-limb anomalies syndrome (MULLERIAN_DU
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mullerian duct anomalies-limb anomalies syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Split hand",
+    "Uterus didelphys",
+    "Postaxial hand polydactyly",
+    "Longitudinal vaginal septum",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

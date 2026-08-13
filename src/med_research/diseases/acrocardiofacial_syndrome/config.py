@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'acrocardiofacial syndrome (ACROCARDIOFACIAL_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of acrocardiofacial syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Shawl scrotum",
+    "Absent pulmonary artery",
+    "Cryptorchidism",
+    "Intellectual disability",
+    "Cleft upper lip",
+    "Coarctation of aorta",
+    "Clubbing",
+    "Macrotia",
+    "Growth delay",
+    "Global developmental delay",
+    "Patent ductus arteriosus",
+    "Hypertelorism",
+    "Micropenis",
+    "Low-set ears",
+    "Death in childhood",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

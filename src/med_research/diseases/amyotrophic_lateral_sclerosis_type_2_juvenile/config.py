@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'amyotrophic lateral sclerosis type 2, juvenile (AMYOTROPHIC_LA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of amyotrophic lateral sclerosis type 2, juvenile
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nystagmus",
+    "Proximal muscle weakness",
+    "Drooling",
+    "Childhood onset",
+    "Distal lower limb amyotrophy",
+    "Spastic dysarthria",
+    "Babinski sign",
+    "Arm dystonia",
+    "Tip-toe gait",
+    "Dysphagia",
+    "Hypertonia",
+    "Clonus",
+    "Lower limb spasticity",
+    "Gait disturbance",
+    "Muscle weakness",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

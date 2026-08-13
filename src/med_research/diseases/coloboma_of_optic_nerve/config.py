@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'coloboma of optic nerve (COLOBOMA_OF_OPTIC_NERVE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of coloboma of optic nerve
-SYMPTOMS = []
+SYMPTOMS = [
+    "Retinal detachment",
+    "Autosomal dominant inheritance",
+    "Optic disc coloboma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

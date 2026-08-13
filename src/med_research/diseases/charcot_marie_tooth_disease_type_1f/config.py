@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Charcot-Marie-Tooth disease type 1F (CHARCOT_MARIE_TOOTH_DISEA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Charcot-Marie-Tooth disease type 1F
-SYMPTOMS = []
+SYMPTOMS = [
+    "Clusters of axonal regeneration",
+    "Autosomal dominant inheritance",
+    "Areflexia",
+    "Decreased number of peripheral myelinated nerve fibers",
+    "Distal sensory impairment",
+    "Hyporeflexia",
+    "Autosomal recessive inheritance",
+    "Global developmental delay",
+    "Motor delay",
+    "Infantile onset",
+    "Childhood onset",
+    "Segmental peripheral demyelination/remyelination",
+    "Juvenile onset",
+    "Myelin outfoldings",
+    "Distal amyotrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

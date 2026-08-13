@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of amelogenesis imperfecta type 1A
-SYMPTOMS = []
+SYMPTOMS = [
+    "Taurodontia",
+    "Autosomal dominant inheritance",
+    "Abnormality of the skin",
+    "Enamel hypoplasia",
+    "Amelogenesis imperfecta",
+    "Generalized microdontia",
+    "Dental enamel pits",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

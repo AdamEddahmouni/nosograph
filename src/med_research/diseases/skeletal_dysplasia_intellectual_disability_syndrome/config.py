@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'skeletal dysplasia-intellectual disability syndrome (SKELETAL_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of skeletal dysplasia-intellectual disability syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Skeletal dysplasia",
+    "Wide nasal bridge",
+    "X-linked inheritance",
+    "Short middle phalanx of finger",
+    "Scoliosis",
+    "Prominent metopic ridge",
+    "Glucose intolerance",
+    "Fused cervical vertebrae",
+    "Abducens palsy",
+    "Intellectual disability",
+    "Thoracic hemivertebrae",
+    "Anal atresia",
+    "Short stature",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

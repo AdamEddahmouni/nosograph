@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'immunodeficiency 96 (IMMUNODEFICIENCY_96)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 96
-SYMPTOMS = []
+SYMPTOMS = [
+    "Growth delay",
+    "Increased mean corpuscular volume",
+    "Recurrent otitis media",
+    "Intellectual disability",
+    "Decreased circulating IgA concentration",
+    "Multicystic kidney dysplasia",
+    "Infantile onset",
+    "Decreased circulating IgM concentration",
+    "Recurrent infections",
+    "Childhood onset",
+    "Eczematoid dermatitis",
+    "Autosomal recessive inheritance",
+    "Increased gamma-delta T cell proportion",
+    "Decreased circulating IgG concentration",
+    "HP_0030253",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

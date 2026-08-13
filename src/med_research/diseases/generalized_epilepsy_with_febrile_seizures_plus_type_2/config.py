@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'generalized epilepsy with febrile seizures plus, type 2 (GENER
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of generalized epilepsy with febrile seizures plus, type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Generalized tonic seizure",
+    "Atonic seizure",
+    "Febrile seizure (within the age range of 3 months to 6 years)",
+    "Generalized non-motor (absence) seizure",
+    "Autosomal dominant inheritance",
+    "Bilateral tonic-clonic seizure",
+    "Childhood onset",
+    "Variable expressivity",
+    "Generalized myoclonic seizure",
+    "Focal hemiclonic seizure",
+    "Focal-onset seizure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

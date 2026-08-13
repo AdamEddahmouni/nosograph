@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'choroideremia (CHOROIDEREMIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of choroideremia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Visual impairment",
+    "Juvenile onset",
+    "Attenuation of retinal blood vessels",
+    "Pigmentary retinopathy",
+    "Granular macular appearance",
+    "Progressive visual loss",
+    "Nummular pigmentation of the retina",
+    "X-linked inheritance",
+    "Constriction of peripheral visual field",
+    "Spicular pigmentation of the retina",
+    "Chorioretinal atrophy",
+    "Fundus hypopigmentation",
+    "Childhood onset",
+    "HP_0200065",
+    "Chorioretinal scalloped atrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

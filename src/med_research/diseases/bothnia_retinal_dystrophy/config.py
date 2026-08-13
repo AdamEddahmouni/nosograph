@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'Bothnia retinal dystrophy (BOTHNIA_RETINAL_DYSTROPHY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Bothnia retinal dystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Macular degeneration",
+    "Abnormal electroretinogram",
+    "Retinal dystrophy",
+    "Nyctalopia",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

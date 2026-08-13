@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'acute erythroleukemia (ACUTE_ERYTHROLEUKEMIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of acute erythroleukemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Splenomegaly",
+    "Refractory anemia with ringed sideroblasts",
+    "Hepatomegaly",
+    "Autosomal dominant inheritance",
+    "Erythroid hyperplasia",
+    "Leukemia",
+    "Acute myeloid leukemia",
+    "Thrombocytopenia",
+    "Anemia",
+    "Typified by incomplete penetrance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

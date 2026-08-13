@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'sensory ataxic neuropathy, dysarthria, and ophthalmoparesis (S
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of sensory ataxic neuropathy, dysarthria, and ophthalmoparesis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Mitral regurgitation",
+    "Scapular winging",
+    "Impaired distal vibration sensation",
+    "External ophthalmoplegia",
+    "Babinski sign",
+    "Progressive external ophthalmoplegia",
+    "Frequent falls",
+    "Hypernasal speech",
+    "Gait ataxia",
+    "Hyporeflexia",
+    "Dilated cardiomyopathy",
+    "Early young adult onset",
+    "Impaired distal tactile sensation",
+    "Diminished ability to concentrate",
+    "Emotional lability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

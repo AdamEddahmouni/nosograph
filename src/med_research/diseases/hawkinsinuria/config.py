@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'hawkinsinuria (HAWKINSINURIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hawkinsinuria
-SYMPTOMS = []
+SYMPTOMS = [
+    "Metabolic acidosis",
+    "Restlessness",
+    "4-hydroxyphenylacetic aciduria",
+    "4-Hydroxyphenylpyruvic aciduria",
+    "Mild intellectual disability",
+    "Autosomal dominant inheritance",
+    "Failure to thrive",
+    "Sparse hair",
+    "Hypertyrosinemia",
+    "Infantile onset",
+    "Hawkinsinuria",
+    "Microcephaly",
+    "Elevated urine hydroxyphenyllactic acid level",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

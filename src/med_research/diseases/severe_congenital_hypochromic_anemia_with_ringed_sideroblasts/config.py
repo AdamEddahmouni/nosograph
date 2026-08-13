@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'severe congenital hypochromic anemia with ringed sideroblasts 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of severe congenital hypochromic anemia with ringed sideroblasts
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hepatomegaly",
+    "Hypochromia",
+    "Growth delay",
+    "Poikilocytosis",
+    "Cafe-au-lait spot",
+    "Decreased mean corpuscular volume",
+    "Anemia",
+    "Azoospermia",
+    "Sideroblastic anemia",
+    "Elevated hepatic iron concentration",
+    "Hypogonadism",
+    "Increased circulating ferritin concentration",
+    "Infantile onset",
+    "Splenomegaly",
+    "Childhood onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

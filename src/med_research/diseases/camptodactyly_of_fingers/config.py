@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'camptodactyly of fingers (CAMPTODACTYLY_OF_FINGERS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of camptodactyly of fingers
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Increased urinary taurine",
+    "Knee dislocation",
+    "Joint subluxation",
+    "Camptodactyly of finger",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

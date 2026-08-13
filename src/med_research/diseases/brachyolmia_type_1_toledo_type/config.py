@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'brachyolmia type 1, toledo type (BRACHYOLMIA_TYPE_1_TOLEDO_TYP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of brachyolmia type 1, toledo type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Irregular vertebral endplates",
+    "Increased urinary disaccharide excretion",
+    "Intervertebral space narrowing",
+    "Disproportionate short-trunk short stature",
+    "Lumbar hyperlordosis",
+    "Kyphoscoliosis",
+    "Precocious costochondral ossification",
+    "Squared-off platyspondyly",
+    "Abnormal odontoid process morphology",
+    "Gait disturbance",
+    "Broad tibial metaphyses",
+    "Short neck",
+    "Back pain",
+    "Opacification of the corneal stroma",
+    "Childhood-onset short-trunk short stature",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

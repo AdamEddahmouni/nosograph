@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'hypertrophic cardiomyopathy 17 (HYPERTROPHIC_CARDIOMYOPATHY_17
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypertrophic cardiomyopathy 17
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Ventricular tachycardia",
+    "Dyspnea",
+    "Atrial fibrillation",
+    "Young adult onset",
+    "Angina pectoris",
+    "Hypertrophic cardiomyopathy",
+    "Myocardial fibrosis",
+    "Palpitations",
+    "Left ventricular hypertrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

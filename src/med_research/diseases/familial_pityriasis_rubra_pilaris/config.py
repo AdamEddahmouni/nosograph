@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'familial pityriasis rubra pilaris (FAMILIAL_PITYRIASIS_RUBRA_P
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial pityriasis rubra pilaris
-SYMPTOMS = []
+SYMPTOMS = [
+    "Erythematous plaque",
+    "Orthokeratosis",
+    "Parakeratosis",
+    "Infantile onset",
+    "Subungual hyperkeratosis",
+    "Keratosis pilaris",
+    "Palmoplantar keratoderma",
+    "Ectropion",
+    "Autosomal dominant inheritance",
+    "Hypergranulosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

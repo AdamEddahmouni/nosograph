@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'oculocerebrofacial syndrome, Kaufman type (OCULOCEREBROFACIAL_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of oculocerebrofacial syndrome, Kaufman type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Smooth philtrum",
+    "Motor delay",
+    "Failure to thrive",
+    "Intestinal malrotation",
+    "Optic disc pallor",
+    "Telecanthus",
+    "Clinodactyly of the 5th finger",
+    "Epicanthus",
+    "Narrow face",
+    "High palate",
+    "Narrow palm",
+    "Congenital hip dislocation",
+    "Laryngomalacia",
+    "Absent speech",
+    "Long palm",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

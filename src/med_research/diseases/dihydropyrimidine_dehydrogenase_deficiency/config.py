@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'dihydropyrimidine dehydrogenase deficiency (DIHYDROPYRIMIDINE_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dihydropyrimidine dehydrogenase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Motor delay",
+    "Congenital onset",
+    "Hypertonia",
+    "Microcephaly",
+    "Optic atrophy",
+    "Hypotonia",
+    "Hyperactivity",
+    "Autosomal recessive inheritance",
+    "Intellectual disability",
+    "Growth delay",
+    "Autism",
+    "Reduced dihydropyrimidine dehydrogenase level",
+    "Uraciluria",
+    "Coloboma",
+    "Tetraplegia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

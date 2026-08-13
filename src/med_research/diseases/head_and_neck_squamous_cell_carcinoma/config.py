@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'head and neck squamous cell carcinoma (HEAD_AND_NECK_SQUAMOUS_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of head and neck squamous cell carcinoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Squamous cell carcinoma",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'intellectual disability, FRA12A type (INTELLECTUAL_DISABILITY_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of intellectual disability, FRA12A type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Recurrent lower respiratory tract infections",
+    "Seizure",
+    "Global developmental delay",
+    "Infantile onset",
+    "Intellectual disability",
+    "Atypical behavior",
+    "Hyperkeratosis",
+    "Autosomal dominant inheritance",
+    "Erythroderma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

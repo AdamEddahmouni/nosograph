@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Meacham syndrome (MEACHAM_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Meacham syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Persistent left superior vena cava",
+    "Autosomal dominant inheritance",
+    "Male pseudohermaphroditism",
+    "Bicornuate uterus",
+    "Enlarged kidney",
+    "Aplasia of the right hemidiaphragm",
+    "Congenital alveolar dysplasia",
+    "Common atrium",
+    "Accessory spleen",
+    "Partial anomalous pulmonary venous return",
+    "Hypoplastic left ventricle",
+    "Transposition of the great arteries",
+    "Patent ductus arteriosus",
+    "Death in infancy",
+    "Dextrocardia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

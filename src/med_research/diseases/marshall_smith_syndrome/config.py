@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Marshall-Smith syndrome (MARSHALL_SMITH_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Marshall-Smith syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Wormian bones",
+    "Atlantoaxial dislocation",
+    "Thoracic kyphosis",
+    "Kyphoscoliosis",
+    "Decreased hip abduction",
+    "Microdontia",
+    "Cholesteatoma",
+    "Sporadic",
+    "Slender finger",
+    "Hallux valgus",
+    "Dysplastic aortic valve",
+    "Cerebellar hypoplasia",
+    "High palate",
+    "Premature ventricular contraction",
+    "Short nose",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

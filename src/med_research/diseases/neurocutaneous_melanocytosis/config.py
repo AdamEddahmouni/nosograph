@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neurocutaneous melanocytosis (NEUROCUTANEOUS_MELANOCYTOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neurocutaneous melanocytosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Mental deterioration",
+    "Syringomyelia",
+    "Seizure",
+    "Meningioma",
+    "Arachnoid cyst",
+    "Choroid plexus papilloma",
+    "Numerous congenital melanocytic nevi",
+    "Melanoma",
+    "Sporadic",
+    "Cranial nerve paralysis",
+    "Typified by somatic mosaicism",
+    "Dandy-Walker malformation",
+    "Death in infancy",
+    "Hydrocephalus",
+    "Global developmental delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

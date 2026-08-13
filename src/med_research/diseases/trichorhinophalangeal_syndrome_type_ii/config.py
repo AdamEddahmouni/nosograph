@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'trichorhinophalangeal syndrome type II (TRICHORHINOPHALANGEAL_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of trichorhinophalangeal syndrome type II
-SYMPTOMS = []
+SYMPTOMS = [
+    "Partial anomalous pulmonary venous return",
+    "Delayed speech and language development",
+    "Sparse hair",
+    "Hypotonia",
+    "Hyperhidrosis",
+    "Nevus",
+    "Recurrent respiratory infections",
+    "Single transverse palmar crease",
+    "Recurrent upper respiratory tract infections",
+    "Infantile onset",
+    "Protruding ear",
+    "Intellectual disability",
+    "Thin upper lip vermilion",
+    "2-4 toe syndactyly",
+    "Plagiocephaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

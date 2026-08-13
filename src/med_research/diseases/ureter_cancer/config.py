@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'ureter cancer (URETER_CANCER)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ureter cancer
-SYMPTOMS = []
+SYMPTOMS = [
+    "Neoplasm of the ureter",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

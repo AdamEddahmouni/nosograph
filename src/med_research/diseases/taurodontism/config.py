@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'taurodontism (TAURODONTISM)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of taurodontism
-SYMPTOMS = []
+SYMPTOMS = [
+    "Taurodontia",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

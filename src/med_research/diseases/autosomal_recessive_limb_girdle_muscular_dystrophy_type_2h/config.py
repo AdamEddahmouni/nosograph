@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autosomal recessive limb-girdle muscular dystrophy type 2H (AU
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal recessive limb-girdle muscular dystrophy type 2H
-SYMPTOMS = []
+SYMPTOMS = [
+    "Neck flexor weakness",
+    "Areflexia",
+    "Paresthesia",
+    "Pelvic girdle muscle atrophy",
+    "Centrally nucleated skeletal muscle fibers",
+    "Proximal muscle weakness",
+    "Hyporeflexia",
+    "Proximal amyotrophy",
+    "Quadriceps muscle weakness",
+    "Facial palsy",
+    "Loss of ambulation",
+    "Waddling gait",
+    "Pelvic girdle muscle weakness",
+    "Shoulder girdle muscle atrophy",
+    "Muscular dystrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

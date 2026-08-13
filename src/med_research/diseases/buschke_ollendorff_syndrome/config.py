@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'Buschke-Ollendorff syndrome (BUSCHKE_OLLENDORFF_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Buschke-Ollendorff syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Scoliosis",
+    "Nevus",
+    "Autosomal dominant inheritance",
+    "Joint stiffness",
+    "Lower limb asymmetry",
+    "Hoarse voice",
+    "Melorheostosis",
+    "Osteopoikilosis",
+    "Femoral osteopoikilosis",
+    "Congenital onset",
+    "Flexion contracture",
+    "Epidermal nevus",
+    "Connective tissue nevi",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

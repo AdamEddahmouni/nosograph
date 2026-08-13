@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'ectodermal dysplasia with facial dysmorphism and acral, ocular
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ectodermal dysplasia with facial dysmorphism and acral, ocular, and brain anomalies
-SYMPTOMS = []
+SYMPTOMS = [
+    "Thick nasal alae",
+    "Facial asymmetry",
+    "Nystagmus",
+    "Unilateral narrow palpebral fissure",
+    "Global developmental delay",
+    "Intellectual disability",
+    "Reduced visual acuity",
+    "3-4 toe syndactyly",
+    "Broad hallux",
+    "Persistence of primary teeth",
+    "Microdontia",
+    "Malar flattening",
+    "Strabismus",
+    "Clinodactyly",
+    "Optic atrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'Holzgreve-Wagner-Rehder syndrome (HOLZGREVE_WAGNER_REHDER_SYND
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Holzgreve-Wagner-Rehder syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cleft palate",
+    "Renal hypoplasia",
+    "Cleft upper lip",
+    "Hypoplastic left ventricle",
+    "Autosomal recessive inheritance",
+    "Renal agenesis",
+    "Hand polydactyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

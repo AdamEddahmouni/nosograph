@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'ventricular extrasystoles with syncopal episodes-perodactyly-r
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ventricular extrasystoles with syncopal episodes-perodactyly-robin sequence syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Syncope",
+    "Pierre-Robin sequence",
+    "Submucous cleft hard palate",
+    "Autosomal dominant inheritance",
+    "Downslanted palpebral fissures",
+    "Posteriorly placed tongue",
+    "Premature ventricular contraction",
+    "Aplasia/Hypoplasia of the distal phalanges of the toes",
+    "Tachycardia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

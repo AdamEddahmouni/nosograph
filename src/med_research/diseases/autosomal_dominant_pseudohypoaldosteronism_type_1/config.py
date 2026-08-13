@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autosomal dominant pseudohypoaldosteronism type 1 (AUTOSOMAL_D
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal dominant pseudohypoaldosteronism type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Metabolic acidosis",
+    "Feeding difficulties",
+    "Vomiting",
+    "Diarrhea",
+    "Neonatal onset",
+    "Autosomal dominant inheritance",
+    "Hyperkalemia",
+    "Increased circulating renin concentration",
+    "Dehydration",
+    "Hypotension",
+    "Increased circulating aldosterone concentration",
+    "Failure to thrive",
+    "Pseudohypoaldosteronism",
+    "Hyponatremia",
+    "Hyperactive renin-angiotensin system",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

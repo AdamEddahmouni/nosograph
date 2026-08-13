@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of progressive osseous heteroplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ectopic ossification in muscle tissue",
+    "Juvenile onset",
+    "Ankylosis",
+    "Progressive",
+    "Infantile onset",
+    "Osteoma cutis",
+    "Limb undergrowth",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

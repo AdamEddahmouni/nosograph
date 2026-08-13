@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'lymphatic malformation 8 (LYMPHATIC_MALFORMATION_8)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lymphatic malformation 8
-SYMPTOMS = []
+SYMPTOMS = [
+    "Polyhydramnios",
+    "Stillbirth",
+    "Generalized edema",
+    "Nonimmune hydrops fetalis",
+    "Autosomal recessive inheritance",
+    "Pleural effusion",
+    "Pericardial effusion",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autosomal dominant vitreoretinochoroidopathy (AUTOSOMAL_DOMINA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal dominant vitreoretinochoroidopathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Color vision defect",
+    "Pigmentary retinopathy",
+    "Pulverulent cataract",
+    "Vitreous hemorrhage",
+    "Retinal detachment",
+    "Focal retinal arteriolar constriction",
+    "Retinal arteriolar occlusion",
+    "Abnormality of chorioretinal pigmentation",
+    "Nyctalopia",
+    "Glaucoma",
+    "Developmental cataract",
+    "Nystagmus",
+    "Posterior staphyloma",
+    "Strabismus",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

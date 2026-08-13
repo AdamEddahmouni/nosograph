@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'isolated hyperferritinemia (ISOLATED_HYPERFERRITINEMIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of isolated hyperferritinemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal circulating iron concentration",
+    "Abnormal circulating ferritin concentration",
+    "Elevated circulating hepcidin concentration",
+    "Autosomal recessive inheritance",
+    "Elevated circulating hepatic transaminase concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

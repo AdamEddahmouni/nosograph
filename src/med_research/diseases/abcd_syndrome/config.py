@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'ABCD syndrome (ABCD_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ABCD syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "White eyebrow",
+    "Hearing impairment",
+    "White eyelashes",
+    "Neonatal death",
+    "Aganglionic megacolon",
+    "Polycythemia",
+    "Fundus hypopigmentation",
+    "Total intestinal aganglionosis",
+    "Autosomal recessive inheritance",
+    "Abnormal auditory evoked potentials",
+    "Congenital onset",
+    "Albinism",
+    "Large for gestational age",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

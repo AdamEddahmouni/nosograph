@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'T-cell lymphopenia, infantile, with or without nail dystrophy,
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of T-cell lymphopenia, infantile, with or without nail dystrophy, autosomal dominant
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormally low T cell receptor excision circle level",
+    "Nail dystrophy",
+    "Pneumonia",
+    "Recurrent upper respiratory tract infections",
+    "Decreased total T cell count",
+    "Autosomal dominant inheritance",
+    "Atopic dermatitis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

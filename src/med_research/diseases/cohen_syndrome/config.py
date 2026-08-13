@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Cohen syndrome (COHEN_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Cohen syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Delayed puberty",
+    "Prominent nasal bridge",
+    "Pes planus",
+    "Short philtrum",
+    "Single transverse palmar crease",
+    "Genu valgum",
+    "Small for gestational age",
+    "Delayed speech and language development",
+    "High, narrow palate",
+    "Decreased total leukocyte count",
+    "Microcephaly",
+    "Narrow foot",
+    "Optic atrophy",
+    "Lumbar hyperlordosis",
+    "Short metatarsal",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

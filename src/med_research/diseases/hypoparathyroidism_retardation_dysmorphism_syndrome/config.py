@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hypoparathyroidism-retardation-dysmorphism syndrome (HYPOPARAT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypoparathyroidism-retardation-dysmorphism syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Delayed skeletal maturation",
+    "Small hand",
+    "Frontal bossing",
+    "Long philtrum",
+    "Thin vermilion border",
+    "Congenital hypoparathyroidism",
+    "Depressed nasal bridge",
+    "Microcephaly",
+    "Hyperphosphatemia",
+    "Posteriorly rotated ears",
+    "Hypocalcemia",
+    "Short foot",
+    "Intellectual disability",
+    "Deeply set eye",
+    "Delayed myelination",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

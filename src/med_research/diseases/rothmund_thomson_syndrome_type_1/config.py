@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Rothmund-Thomson syndrome type 1 (ROTHMUND_THOMSON_SYNDROME_TY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Rothmund-Thomson syndrome type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Male hypogonadism",
+    "Thin nail",
+    "Sparse hair",
+    "Short stature",
+    "Recurrent otitis media",
+    "Global developmental delay",
+    "Conical tooth",
+    "Hyperkeratosis",
+    "Osteoporosis",
+    "Premature ovarian insufficiency",
+    "Absent eyelashes",
+    "Delayed skeletal maturation",
+    "Abnormal blistering of the skin",
+    "Absent eyebrow",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

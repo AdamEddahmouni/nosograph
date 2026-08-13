@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'Upington disease (UPINGTON_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Upington disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Broad femoral neck",
+    "Arthralgia",
+    "Autosomal dominant inheritance",
+    "Multiple enchondromatosis",
+    "Arthralgia of the hip",
+    "Flattened femoral head",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'lethal polymalformative syndrome, Boissel type (LETHAL_POLYMAL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lethal polymalformative syndrome, Boissel type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cutis marmorata",
+    "Failure to thrive",
+    "Dandy-Walker malformation",
+    "Intrauterine growth retardation",
+    "Bifid uvula",
+    "Brain atrophy",
+    "Cleft palate",
+    "Secondary microcephaly",
+    "Hypertrophic cardiomyopathy",
+    "Severe global developmental delay",
+    "Congenital onset",
+    "Hydrocephalus",
+    "Coarse facial features",
+    "Short neck",
+    "Hypertonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

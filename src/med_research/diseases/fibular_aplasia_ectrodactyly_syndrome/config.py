@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'fibular aplasia-ectrodactyly syndrome (FIBULAR_APLASIA_ECTRODA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of fibular aplasia-ectrodactyly syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Aplasia/Hypoplasia of the fibula",
+    "Typified by incomplete penetrance",
+    "Short phalanx of finger",
+    "Fibular aplasia",
+    "Autosomal dominant inheritance",
+    "Split foot",
+    "Brachydactyly",
+    "Variable expressivity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

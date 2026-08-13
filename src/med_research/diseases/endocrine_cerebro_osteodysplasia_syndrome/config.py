@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'endocrine-cerebro-osteodysplasia syndrome (ENDOCRINE_CEREBRO_O
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of endocrine-cerebro-osteodysplasia syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Talipes equinovarus",
+    "Aplasia/Hypoplasia of the cerebellum",
+    "Antenatal onset",
+    "Natal tooth",
+    "Hyperechogenic kidneys",
+    "Sandal gap",
+    "Aplasia of the olfactory bulb",
+    "Syndactyly",
+    "Tibial bowing",
+    "Single transverse palmar crease",
+    "Sex reversal",
+    "Micrognathia",
+    "Wide intermamillary distance",
+    "Dolichocephaly",
+    "Polyhydramnios",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

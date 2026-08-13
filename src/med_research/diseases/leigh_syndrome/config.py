@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Leigh syndrome (LEIGH_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Leigh syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Strabismus",
+    "Increased circulating lactate concentration",
+    "Coarctation of aorta",
+    "Respiratory failure",
+    "Vertical nystagmus",
+    "Severe lactic acidosis",
+    "Encephalopathy",
+    "Mitochondrial inheritance",
+    "Highly arched eyebrow",
+    "Atrophy/Degeneration affecting the brainstem",
+    "Clubbing",
+    "Esodeviation",
+    "Thickened nuchal skin fold",
+    "Infantile onset",
+    "Motor regression",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

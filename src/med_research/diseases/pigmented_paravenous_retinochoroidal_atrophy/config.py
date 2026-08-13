@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'pigmented paravenous retinochoroidal atrophy (PIGMENTED_PARAVE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pigmented paravenous retinochoroidal atrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Spicular pigmentation of the retina",
+    "Esotropia",
+    "Hypermetropia",
+    "Autosomal dominant inheritance",
+    "Vitreoretinopathy",
+    "X-linked inheritance",
+    "Paravenous chorioretinal atrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

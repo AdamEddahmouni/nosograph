@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'imperforate anus (IMPERFORATE_ANUS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of imperforate anus
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ectopic anus",
+    "Autosomal recessive inheritance",
+    "Hearing impairment",
+    "Anal atresia",
+    "Hypospadias",
+    "Non-Mendelian inheritance",
+    "X-linked inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

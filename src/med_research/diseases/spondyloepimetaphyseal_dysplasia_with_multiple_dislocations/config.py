@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spondyloepimetaphyseal dysplasia with multiple dislocations (S
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondyloepimetaphyseal dysplasia with multiple dislocations
-SYMPTOMS = []
+SYMPTOMS = [
+    "Spondyloepimetaphyseal dysplasia",
+    "Slender proximal phalanx of finger",
+    "Laryngotracheomalacia",
+    "Caudal interpedicular narrowing",
+    "Soft skin",
+    "Malar flattening",
+    "Large joint dislocations",
+    "Delayed phalangeal epiphyseal ossification",
+    "Congenital hip dislocation",
+    "Irregular epiphyses",
+    "Flattened epiphysis",
+    "Hip dislocation",
+    "Broad distal phalanx of finger",
+    "Irregular vertebral endplates",
+    "Midface retrusion",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

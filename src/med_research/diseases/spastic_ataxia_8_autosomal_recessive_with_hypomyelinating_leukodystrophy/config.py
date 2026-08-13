@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spastic ataxia 8, autosomal recessive, with hypomyelinating le
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spastic ataxia 8, autosomal recessive, with hypomyelinating leukodystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "High palate",
+    "Infantile onset",
+    "Neonatal onset",
+    "Bulbous nose",
+    "Long face",
+    "Limb dystonia",
+    "Leukodystrophy",
+    "Brain atrophy",
+    "Dental crowding",
+    "Spasticity",
+    "Gingival overgrowth",
+    "Hyperreflexia",
+    "Abnormal exteroceptive sensation",
+    "Truncal ataxia",
+    "Cerebellar atrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'short-rib thoracic dysplasia 9 with or without polydactyly (SH
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of short-rib thoracic dysplasia 9 with or without polydactyly
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital hepatic fibrosis",
+    "Short middle phalanx of finger",
+    "Frontal upsweep of hair",
+    "Upslanted palpebral fissure",
+    "Accessory oral frenulum",
+    "Impaired glucose tolerance",
+    "Cutis laxa",
+    "Renal cyst",
+    "Wide nasal bridge",
+    "Ventricular septal defect",
+    "Hypoplasia of the corpus callosum",
+    "Obesity",
+    "Glucose intolerance",
+    "Cholestasis",
+    "Clinodactyly of the 2nd finger",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'distal arthrogryposis type 2B1 (DISTAL_ARTHROGRYPOSIS_TYPE_2B1
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of distal arthrogryposis type 2B1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Narrow mouth",
+    "Abnormality of the ear",
+    "Rocker bottom foot",
+    "Triangular face",
+    "Ulnar deviation of the hand or of fingers of the hand",
+    "Arthrogryposis multiplex congenita",
+    "Downslanted palpebral fissures",
+    "Long philtrum",
+    "Absent phalangeal crease",
+    "Micrognathia",
+    "Prominent nasolabial fold",
+    "Camptodactyly of finger",
+    "Short stature",
+    "Distal arthrogryposis",
+    "Wide nasal bridge",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

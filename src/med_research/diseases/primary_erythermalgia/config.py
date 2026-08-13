@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'primary erythermalgia (PRIMARY_ERYTHERMALGIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of primary erythermalgia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Myalgia",
+    "Abnormal autonomic nervous system physiology",
+    "Blurred vision",
+    "Pain",
+    "Autosomal dominant inheritance",
+    "Palpitations",
+    "Keratoconjunctivitis sicca",
+    "Constipation",
+    "Jaw pain",
+    "Diarrhea",
+    "Xerostomia",
+    "Erythromelalgia",
+    "Pruritus",
+    "Hyperhidrosis",
+    "Juvenile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

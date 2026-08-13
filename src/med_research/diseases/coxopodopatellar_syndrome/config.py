@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'coxopodopatellar syndrome (COXOPODOPATELLAR_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of coxopodopatellar syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Tarsal synostosis",
+    "Micrognathia",
+    "Short femur",
+    "Talocalcaneal synostosis",
+    "Wide capital femoral epiphyses",
+    "Coxa vara",
+    "Pes planus",
+    "High palate",
+    "Patellar dislocation",
+    "Patellar aplasia",
+    "Sandal gap",
+    "Patellar hypoplasia",
+    "Flat capital femoral epiphysis",
+    "Hypoplasia of the lesser trochanter",
+    "Abnormal nail morphology",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

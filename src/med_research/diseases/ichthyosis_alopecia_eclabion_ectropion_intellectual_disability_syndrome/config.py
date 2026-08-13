@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'ichthyosis-alopecia-eclabion-ectropion-intellectual disability
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Ichthyosis",
+    "Alopecia",
+    "Everted lower lip vermilion",
+    "Intellectual disability",
+    "Ectropion",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

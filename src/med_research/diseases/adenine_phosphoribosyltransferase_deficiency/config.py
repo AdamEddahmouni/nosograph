@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'adenine phosphoribosyltransferase deficiency (ADENINE_PHOSPHOR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of adenine phosphoribosyltransferase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Urolithiasis",
+    "2,8-dihydroxyadenine crystalluria",
+    "Renal insufficiency",
+    "Autosomal recessive inheritance",
+    "Childhood onset",
+    "Oliguria",
+    "Elevated urinary 2,8-dihydroxyadenine level",
+    "Abdominal pain",
+    "Juvenile onset",
+    "Elevated circulating creatinine concentration",
+    "Metabolic acidosis",
+    "Kidney stone",
+    "Hematuria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

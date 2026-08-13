@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'X-linked endothelial corneal dystrophy (X_LINKED_ENDOTHELIAL_C
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked endothelial corneal dystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Corneal opacity",
+    "Corneal dystrophy",
+    "X-linked dominant inheritance",
+    "Band keratopathy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

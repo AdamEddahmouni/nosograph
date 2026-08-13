@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'hypercholesterolemia, autosomal dominant, 3 (HYPERCHOLESTEROLE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypercholesterolemia, autosomal dominant, 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypercholesterolemia",
+    "Corneal arcus",
+    "Abnormal LDL cholesterol concentration",
+    "Autosomal dominant inheritance",
+    "Xanthelasma",
+    "Tendon xanthomatosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

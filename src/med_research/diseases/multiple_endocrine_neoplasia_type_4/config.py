@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of multiple endocrine neoplasia type 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Carcinoma",
+    "Hashimoto thyroiditis",
+    "Autosomal dominant inheritance",
+    "Hypothyroidism",
+    "Parathyroid adenoma",
+    "Renal angiomyolipoma",
+    "Carcinoid tumor",
+    "Primary hyperparathyroidism",
+    "Pancreatic endocrine tumor",
+    "Pituitary adenoma",
+    "Hyperparathyroidism",
+    "Elevated circulating growth hormone concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

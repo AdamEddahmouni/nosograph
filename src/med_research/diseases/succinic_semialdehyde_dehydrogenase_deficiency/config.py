@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'succinic semialdehyde dehydrogenase deficiency (SUCCINIC_SEMIA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of succinic semialdehyde dehydrogenase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Global developmental delay",
+    "Increased level of gamma-aminobutyric acid in urine",
+    "EEG abnormality",
+    "Intellectual disability",
+    "Generalized non-motor (absence) seizure",
+    "Cerebellar atrophy",
+    "Autosomal recessive inheritance",
+    "Hyperactivity",
+    "Motor delay",
+    "Hyperkinetic movements",
+    "Elevated CSF 4-hydroxybutyric acid concentration",
+    "Hallucinations",
+    "Psychosis",
+    "Infantile onset",
+    "Self-injurious behavior",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

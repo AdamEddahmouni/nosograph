@@ -8,8 +8,23 @@ PIPELINE_LABEL = '46,XY complete gonadal dysgenesis (46_XY_COMPLETE_GONADAL_DYSG
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of 46,XY complete gonadal dysgenesis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Upslanted palpebral fissure",
+    "Abnormality of the menstrual cycle",
+    "Depressed nasal ridge",
+    "Agonadism",
+    "Gonadal dysgenesis",
+    "Absence of secondary sex characteristics",
+    "Elevated circulating luteinizing hormone level",
+    "Hypoplasia of the uterus",
+    "Sensorineural hearing impairment",
+    "Decreased testicular size",
+    "Tall stature",
+    "Anal atresia",
+    "Sex-limited expression",
+    "Penoscrotal hypospadias",
+    "Abnormality of circulating cortisol level",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'carbamoyl phosphate synthetase I deficiency disease (CARBAMOYL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of carbamoyl phosphate synthetase I deficiency disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Vomiting",
+    "Stroke",
+    "Hypoargininemia",
+    "Irritability",
+    "Seizure",
+    "Hyperammonemia",
+    "Lethargy",
+    "Ataxia",
+    "Episodic ammonia intoxication",
+    "Protein avoidance",
+    "Respiratory alkalosis",
+    "Intellectual disability",
+    "Low plasma citrulline",
+    "Global developmental delay",
+    "Failure to thrive",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

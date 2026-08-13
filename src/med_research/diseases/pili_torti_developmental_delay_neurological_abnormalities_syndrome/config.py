@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'pili torti-developmental delay-neurological abnormalities synd
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pili torti-developmental delay-neurological abnormalities syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dysarthria",
+    "Snoring",
+    "Poor speech",
+    "Keratosis pilaris",
+    "Small nail",
+    "Recurrent fever",
+    "Fragile nails",
+    "Autosomal recessive inheritance",
+    "Developmental regression",
+    "Microdontia",
+    "Lower limb pain",
+    "Short fourth metatarsal",
+    "Sinus bradycardia",
+    "Recurrent otitis media",
+    "Plagiocephaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

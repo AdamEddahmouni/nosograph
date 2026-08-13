@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Pitt-Hopkins syndrome (PITT_HOPKINS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Pitt-Hopkins syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Clinodactyly",
+    "Deeply set eye",
+    "Absent speech",
+    "Coarse facial features",
+    "Prominent fingertip pads",
+    "Hyperconvex nail",
+    "Fetal nuchal edema",
+    "Narrow forehead",
+    "Broad fingertip",
+    "Short fourth metatarsal",
+    "Gastroesophageal reflux",
+    "Incoordination",
+    "Short philtrum",
+    "Ventriculomegaly",
+    "Astigmatism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

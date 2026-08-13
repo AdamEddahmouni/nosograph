@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'growth hormone-secreting pituitary adenoma (GROWTH_HORMONE_SEC
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of growth hormone-secreting pituitary adenoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypertension",
+    "Autosomal dominant inheritance",
+    "Cardiomyopathy",
+    "Galactorrhea",
+    "Typified by somatic mosaicism",
+    "Elevated circulating growth hormone concentration",
+    "Left ventricular hypertrophy",
+    "Pituitary growth hormone cell adenoma",
+    "Irregular menstruation",
+    "Coarse facial features",
+    "Young adult onset",
+    "Increased circulating prolactin concentration",
+    "X-linked inheritance",
+    "Increased circulating insulin-like growth factor 1 concentration",
+    "Acral overgrowth",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

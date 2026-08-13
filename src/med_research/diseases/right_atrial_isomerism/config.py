@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'right atrial isomerism (RIGHT_ATRIAL_ISOMERISM)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of right atrial isomerism
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ventricular septal defect",
+    "Total anomalous pulmonary venous return",
+    "Asplenia",
+    "Transposition of the great arteries",
+    "Agenesis of corpus callosum",
+    "Dextrocardia",
+    "Pulmonary artery atresia",
+    "Aortopulmonary collateral arteries",
+    "Single ventricle",
+    "Abnormal lung lobation",
+    "Common atrium",
+    "Pulmonic stenosis",
+    "Polysplenia",
+    "Tetralogy of Fallot",
+    "Abdominal situs ambiguus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

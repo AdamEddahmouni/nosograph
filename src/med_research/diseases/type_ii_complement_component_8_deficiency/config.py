@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'type II complement component 8 deficiency (TYPE_II_COMPLEMENT_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of type II complement component 8 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Meningitis",
+    "Decreased circulating complement C8 concentration",
+    "Autosomal recessive inheritance",
+    "Recurrent Neisserial infections",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'adult-onset proximal spinal muscular atrophy, autosomal domina
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of adult-onset proximal spinal muscular atrophy, autosomal dominant
-SYMPTOMS = []
+SYMPTOMS = [
+    "EMG: neuropathic changes",
+    "Distal muscle weakness",
+    "Proximal amyotrophy",
+    "Middle age onset",
+    "Loss of ambulation",
+    "Proximal muscle weakness",
+    "Tremor",
+    "Autosomal dominant inheritance",
+    "Spinal muscular atrophy",
+    "Distal amyotrophy",
+    "Fasciculations",
+    "Late young adult onset",
+    "Muscle spasm",
+    "Hyporeflexia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

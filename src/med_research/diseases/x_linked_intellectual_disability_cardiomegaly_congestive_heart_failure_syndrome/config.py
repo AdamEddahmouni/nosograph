@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'X-linked intellectual disability-cardiomegaly-congestive heart
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked intellectual disability-cardiomegaly-congestive heart failure syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Seizure",
+    "Global developmental delay",
+    "Macrocephaly",
+    "Macrotia",
+    "Absent speech",
+    "Cardiomegaly",
+    "Kyphoscoliosis",
+    "Spastic tetraplegia",
+    "X-linked recessive inheritance",
+    "Macroorchidism",
+    "Congestive heart failure",
+    "Hydrocephalus",
+    "Profound intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

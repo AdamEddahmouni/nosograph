@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'familial expansile osteolysis (FAMILIAL_EXPANSILE_OSTEOLYSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial expansile osteolysis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Premature loss of teeth",
+    "Hydroxyprolinuria",
+    "Pathologic fracture",
+    "Thin bony cortex",
+    "Autosomal dominant inheritance",
+    "Osteolysis",
+    "Bowing of the long bones",
+    "Progressive",
+    "Fragile teeth",
+    "Bone pain",
+    "Elevated circulating alkaline phosphatase concentration",
+    "Conductive hearing impairment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

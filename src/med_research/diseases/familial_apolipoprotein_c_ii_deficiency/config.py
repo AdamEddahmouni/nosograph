@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'familial apolipoprotein C-II deficiency (FAMILIAL_APOLIPOPROTE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial apolipoprotein C-II deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Splenomegaly",
+    "Hypertriglyceridemia",
+    "Decreased circulating apolipoprotein C-II concentration",
+    "Autosomal recessive inheritance",
+    "Lipemia retinalis",
+    "Increased circulating chylomicron concentration",
+    "Pancreatitis",
+    "Eruptive xanthomas",
+    "Hepatomegaly",
+    "Hypercholesterolemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

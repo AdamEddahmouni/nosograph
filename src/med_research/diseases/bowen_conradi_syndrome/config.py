@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'Bowen-Conradi syndrome (BOWEN_CONRADI_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Bowen-Conradi syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Clinodactyly of the 5th finger",
+    "Small for gestational age",
+    "Microcephaly",
+    "Rocker bottom foot",
+    "Micrognathia",
+    "Prominent nose",
+    "Abnormal joint morphology",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

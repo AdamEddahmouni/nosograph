@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'Gorham-Stout disease (GORHAM_STOUT_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Gorham-Stout disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cystic angiomatosis of bone",
+    "Autosomal dominant inheritance",
+    "Abnormality of the skeletal system",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

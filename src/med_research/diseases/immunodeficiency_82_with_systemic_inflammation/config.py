@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'immunodeficiency 82 with systemic inflammation (IMMUNODEFICIEN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 82 with systemic inflammation
-SYMPTOMS = []
+SYMPTOMS = [
+    "Weight loss",
+    "Elevated circulating C-reactive protein concentration",
+    "Intractable diarrhea",
+    "Recurrent skin infections",
+    "Villous atrophy",
+    "Recurrent fever",
+    "Infantile onset",
+    "Hypoalbuminemia",
+    "Anoperineal fistula",
+    "Bronchiectasis",
+    "Anemia",
+    "Decreased circulating IgM concentration",
+    "Bronchitis",
+    "Recurrent abscess formation",
+    "Follicular hyperplasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

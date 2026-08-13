@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'hearing loss, autosomal dominant 76 (HEARING_LOSS_AUTOSOMAL_DO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hearing loss, autosomal dominant 76
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Positive Romberg sign",
+    "Motor delay",
+    "Infantile onset",
+    "Abnormal vestibular function",
+    "Sensorineural hearing impairment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

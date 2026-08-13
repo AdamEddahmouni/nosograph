@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'seborrhea-like dermatitis with psoriasiform elements (SEBORRHE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of seborrhea-like dermatitis with psoriasiform elements
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperkeratosis",
+    "Seborrheic dermatitis",
+    "Epidermal acanthosis",
+    "Autosomal dominant inheritance",
+    "Keratosis pilaris",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

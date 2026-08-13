@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mucopolysaccharidosis type 6 (MUCOPOLYSACCHARIDOSIS_TYPE_6)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mucopolysaccharidosis type 6
-SYMPTOMS = []
+SYMPTOMS = [
+    "Tricuspid regurgitation",
+    "Mitral stenosis",
+    "Thickened skin",
+    "Avascular necrosis",
+    "Restrictive ventilatory defect",
+    "Carious teeth",
+    "Sinus tachycardia",
+    "Intellectual disability",
+    "Dermatan sulfate excretion in urine",
+    "Reduced leukocyte arylsulfatase B activity",
+    "Splenomegaly",
+    "Hearing impairment",
+    "Epiphyseal dysplasia",
+    "Glaucoma",
+    "Hepatomegaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

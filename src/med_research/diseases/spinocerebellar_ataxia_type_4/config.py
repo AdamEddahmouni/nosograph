@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'spinocerebellar ataxia type 4 (SPINOCEREBELLAR_ATAXIA_TYPE_4)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spinocerebellar ataxia type 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Progressive cerebellar ataxia",
+    "Areflexia",
+    "Hyporeflexia",
+    "Impaired smooth pursuit",
+    "Dysarthria",
+    "Distal sensory impairment",
+    "Autosomal dominant inheritance",
+    "Sensory neuropathy",
+    "Limb dysmetria",
+    "Babinski sign",
+    "Cerebellar atrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

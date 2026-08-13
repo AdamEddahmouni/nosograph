@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'short stature due to primary acid-labile subunit deficiency (S
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of short stature due to primary acid-labile subunit deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased circulating insulin-like growth factor 1 concentration",
+    "Delayed puberty",
+    "Mild postnatal growth retardation",
+    "Insulin insensitivity",
+    "Decreased circulating insulin-like growth factor-binding protein acid labile subunit concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Phelan-McDermid syndrome (PHELAN_MCDERMID_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Phelan-McDermid syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pointed chin",
+    "Atypical behavior",
+    "Malar flattening",
+    "Palpebral edema",
+    "Feeding difficulties",
+    "Macrocephaly",
+    "Cerebral visual impairment",
+    "Abnormality of the kidney",
+    "Large hands",
+    "Vesicoureteral reflux",
+    "Neonatal hypotonia",
+    "Hyporeflexia",
+    "Reduced social responsiveness",
+    "Recurrent infections",
+    "Dental malocclusion",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

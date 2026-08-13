@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'nephrogenic syndrome of inappropriate antidiuresis (NEPHROGENI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of nephrogenic syndrome of inappropriate antidiuresis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased serum creatinine",
+    "Hyposthenuria",
+    "Infantile onset",
+    "X-linked recessive inheritance",
+    "Hypernatriuria",
+    "Irritability",
+    "Reduced blood urea nitrogen",
+    "Generalized-onset seizure",
+    "Elevated systolic blood pressure",
+    "Abnormal circulating aldosterone concentration",
+    "Decreased circulating renin concentration",
+    "Hyponatremia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

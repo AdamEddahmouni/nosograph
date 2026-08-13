@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'severe neurodegenerative syndrome with lipodystrophy (SEVERE_N
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of severe neurodegenerative syndrome with lipodystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dystonia",
+    "Myoclonus",
+    "Hypertriglyceridemia",
+    "Abnormal pyramidal sign",
+    "Mental deterioration",
+    "Tetraparesis",
+    "Ataxia",
+    "Seizure",
+    "Delayed speech and language development",
+    "Hepatomegaly",
+    "Developmental regression",
+    "Hyperactivity",
+    "Autosomal recessive inheritance",
+    "Neuronal loss in central nervous system",
+    "Progressive",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

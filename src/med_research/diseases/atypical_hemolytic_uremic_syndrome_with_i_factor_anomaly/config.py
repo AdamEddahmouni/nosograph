@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'atypical hemolytic-uremic syndrome with I factor anomaly (ATYP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of atypical hemolytic-uremic syndrome with I factor anomaly
-SYMPTOMS = []
+SYMPTOMS = [
+    "Proteinuria",
+    "Decreased circulating complement C3 concentration",
+    "Young adult onset",
+    "Hypertension",
+    "Microangiopathic hemolytic anemia",
+    "Hemolytic-uremic syndrome",
+    "Autosomal dominant inheritance",
+    "Anuria",
+    "Increased blood urea nitrogen",
+    "Thrombocytopenia",
+    "Anemia",
+    "Childhood onset",
+    "Acute kidney injury",
+    "Hematuria",
+    "Elevated circulating creatinine concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

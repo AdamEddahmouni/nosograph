@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'megalencephaly-capillary malformation-polymicrogyria syndrome 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of megalencephaly-capillary malformation-polymicrogyria syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Downslanted palpebral fissures",
+    "Hydrocephalus",
+    "Large earlobe",
+    "Broad forehead",
+    "Cavum septum pellucidum",
+    "Microphthalmia",
+    "Epicanthus",
+    "Ventricular septal defect",
+    "Smooth philtrum",
+    "Ventriculomegaly",
+    "Syndactyly",
+    "Sporadic",
+    "Polydactyly",
+    "Polymicrogyria",
+    "Depressed nasal bridge",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

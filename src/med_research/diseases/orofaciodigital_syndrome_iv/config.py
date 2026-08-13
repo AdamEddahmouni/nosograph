@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'orofaciodigital syndrome IV (OROFACIODIGITAL_SYNDROME_IV)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of orofaciodigital syndrome IV
-SYMPTOMS = []
+SYMPTOMS = [
+    "Accessory oral frenulum",
+    "Pectus excavatum",
+    "Hand polydactyly",
+    "Brachydactyly",
+    "Postaxial polydactyly",
+    "Autosomal recessive inheritance",
+    "Low-set ears",
+    "Short tibia",
+    "Hypertelorism",
+    "Porencephalic cyst",
+    "Short stature",
+    "Lobulated tongue",
+    "High palate",
+    "Tongue nodules",
+    "Toe syndactyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

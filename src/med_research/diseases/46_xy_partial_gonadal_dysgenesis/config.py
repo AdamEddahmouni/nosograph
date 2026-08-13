@@ -8,8 +8,23 @@ PIPELINE_LABEL = '46,XY partial gonadal dysgenesis (46_XY_PARTIAL_GONADAL_DYSGEN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of 46,XY partial gonadal dysgenesis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased blood urea nitrogen",
+    "Elevated circulating follicle stimulating hormone level",
+    "Distal symphalangism",
+    "Perineal hypospadias",
+    "Hirsutism",
+    "Sparse axillary hair",
+    "Cleft palate",
+    "Global developmental delay",
+    "Micrognathia",
+    "Sex reversal",
+    "Hypospadias",
+    "Anal atresia",
+    "Gonadoblastoma",
+    "Corpus cavernosum hypoplasia",
+    "Congenital onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

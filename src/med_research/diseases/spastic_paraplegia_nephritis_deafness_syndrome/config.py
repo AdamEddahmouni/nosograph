@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'spastic paraplegia-nephritis-deafness syndrome (SPASTIC_PARAPL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spastic paraplegia-nephritis-deafness syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Intellectual disability",
+    "Autosomal dominant inheritance",
+    "Spastic paraplegia",
+    "Nephropathy",
+    "IgA deposition in the glomerulus",
+    "Focal segmental glomerulosclerosis",
+    "Bilateral sensorineural hearing impairment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

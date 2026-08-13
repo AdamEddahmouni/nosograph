@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'X-linked intellectual disability-psychosis-macroorchidism synd
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked intellectual disability-psychosis-macroorchidism syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ataxia",
+    "Resting tremor",
+    "Short neck",
+    "Apnea",
+    "Scoliosis",
+    "Micrognathia",
+    "Delayed speech and language development",
+    "Tremor",
+    "Emotional lability",
+    "Spastic tetraplegia",
+    "Facial hypotonia",
+    "Male hypogonadism",
+    "Dystonia",
+    "Kyphoscoliosis",
+    "Psychosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

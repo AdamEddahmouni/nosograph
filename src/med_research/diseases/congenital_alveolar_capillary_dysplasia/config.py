@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'interstitial lung disease (CONGENITAL_ALVEOLAR_CAPILLARY_DYSPL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of interstitial lung disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased DLCO",
+    "Elevated erythrocyte sedimentation rate",
+    "Childhood onset",
+    "Mesangial hypercellularity",
+    "Restrictive ventilatory defect",
+    "Elevated circulating C-reactive protein concentration",
+    "Hemosiderin-laden macrophages in bronchoalveolar fluid",
+    "Antinuclear antibody positivity",
+    "Arthritis",
+    "Cough",
+    "Pulmonary hemorrhage",
+    "Tachypnea",
+    "Abnormal pulmonary interstitial morphology",
+    "Dyspnea",
+    "Arthralgia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

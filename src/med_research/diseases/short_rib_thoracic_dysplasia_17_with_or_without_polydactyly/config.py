@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'short-rib thoracic dysplasia 17 with or without polydactyly (S
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of short-rib thoracic dysplasia 17 with or without polydactyly
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short ribs",
+    "Short stature",
+    "Postaxial hand polydactyly",
+    "Postaxial foot polydactyly",
+    "Congenital onset",
+    "Death in infancy",
+    "Acetabular spurs",
+    "Narrow chest",
+    "Trident acetabulum",
+    "Autosomal recessive inheritance",
+    "Lateral clavicle hook",
+    "Brachydactyly",
+    "Horizontal ribs",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

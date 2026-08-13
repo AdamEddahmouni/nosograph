@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'renal tubular acidosis, distal, 4, with hemolytic anemia (RENA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of renal tubular acidosis, distal, 4, with hemolytic anemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pallor",
+    "Short stature",
+    "Rickets",
+    "Distal renal tubular acidosis",
+    "Isothenuria",
+    "Autosomal recessive inheritance",
+    "Metabolic acidosis",
+    "Anorexia",
+    "Hepatosplenomegaly",
+    "Reticulocytosis",
+    "Failure to thrive",
+    "Lethargy",
+    "Hypokalemia",
+    "Hemolytic anemia",
+    "Nephrocalcinosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

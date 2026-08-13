@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'acro-renal-mandibular syndrome (ACRO_RENAL_MANDIBULAR_SYNDROME
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of acro-renal-mandibular syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Micrognathia",
+    "Absent nipple",
+    "Downslanted palpebral fissures",
+    "Narrow palate",
+    "Thin ribs",
+    "Abnormality of the breast",
+    "Epicanthus",
+    "Rudimentary to absent tibiae",
+    "Pulmonary hypoplasia",
+    "Hypoplasia of the radius",
+    "Hand polydactyly",
+    "Hypoplasia of the ulna",
+    "Posteriorly rotated ears",
+    "Abnormality of the ureter",
+    "Foot polydactyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

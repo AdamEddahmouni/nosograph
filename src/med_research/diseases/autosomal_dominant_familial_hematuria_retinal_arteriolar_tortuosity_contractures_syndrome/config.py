@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'autosomal dominant familial hematuria-retinal arteriolar tortu
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal dominant familial hematuria-retinal arteriolar tortuosity-contractures syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Hematuria",
+    "Muscle spasm",
+    "Retinal arteriolar tortuosity",
+    "Supraventricular arrhythmia",
+    "Retinal hemorrhage",
+    "Intellectual disability",
+    "Lacunar stroke",
+    "Dilatation of the cerebral artery",
+    "Raynaud phenomenon",
+    "Elevated circulating creatine kinase activity",
+    "Renal insufficiency",
+    "Renal cyst",
+    "Abnormal periventricular white matter morphology",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

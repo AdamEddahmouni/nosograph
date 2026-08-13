@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Barth syndrome (BARTH_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Barth syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Myopathic facies",
+    "Intermittent lactic acidemia",
+    "Failure to thrive",
+    "Deeply set eye",
+    "Fair hair",
+    "Decreased total neutrophil count",
+    "Talipes equinovarus",
+    "Dilated cardiomyopathy",
+    "Motor delay",
+    "Elevated monolysocardiolipin/cardiolipin ratio",
+    "Mandibular prognathia",
+    "High forehead",
+    "Infantile onset",
+    "Fatigue",
+    "Congestive heart failure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

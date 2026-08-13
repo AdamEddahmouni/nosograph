@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Ullrich congenital muscular dystrophy 1C (ULLRICH_CONGENITAL_M
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Ullrich congenital muscular dystrophy 1C
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypotonia",
+    "Pelvic girdle muscle weakness",
+    "Delayed ability to walk",
+    "Autosomal recessive inheritance",
+    "Hip contracture",
+    "Hip subluxation",
+    "Congenital hip dislocation",
+    "Elevated circulating creatine kinase activity",
+    "Ankle contracture",
+    "Kyphoscoliosis",
+    "Congenital onset",
+    "Knee contracture",
+    "Neck flexor weakness",
+    "Neonatal onset",
+    "Shoulder girdle muscle weakness",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

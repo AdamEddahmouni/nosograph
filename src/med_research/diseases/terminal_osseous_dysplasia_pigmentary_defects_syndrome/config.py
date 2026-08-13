@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'terminal osseous dysplasia-pigmentary defects syndrome (TERMIN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of terminal osseous dysplasia-pigmentary defects syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormality of the lower limb",
+    "Toe clinodactyly",
+    "Low-set ears",
+    "Epicanthus",
+    "Depressed nasal tip",
+    "Abnormal foot bone ossification",
+    "Thick vermilion border",
+    "Short toe",
+    "Telecanthus",
+    "Clinodactyly",
+    "Camptodactyly of finger",
+    "Hypertelorism",
+    "Iris coloboma",
+    "Syndactyly",
+    "Abnormal bone structure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

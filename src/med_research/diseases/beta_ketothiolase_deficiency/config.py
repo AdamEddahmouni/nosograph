@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'beta-ketothiolase deficiency (BETA_KETOTHIOLASE_DEFICIENCY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of beta-ketothiolase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Intellectual disability",
+    "Dehydration",
+    "Autosomal recessive inheritance",
+    "Elevated urinary 2-methyl-3-hydroxybutyric acid level",
+    "Reduced mitochondrial acetyl-CoA acetyltransferase activity in cultured fibroblasts",
+    "Episodic ketoacidosis",
+    "Vomiting",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

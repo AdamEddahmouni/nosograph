@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'DK1-congenital disorder of glycosylation (DK1_CONGENITAL_DISOR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of DK1-congenital disorder of glycosylation
-SYMPTOMS = []
+SYMPTOMS = [
+    "Death in infancy",
+    "Nystagmus",
+    "Autosomal recessive inheritance",
+    "Type I transferrin isoform profile",
+    "Alopecia",
+    "Infantile onset",
+    "Tetraplegia",
+    "Diarrhea",
+    "Hypotonia",
+    "Secondary microcephaly",
+    "Hypoketotic hypoglycemia",
+    "Congenital onset",
+    "Vomiting",
+    "Failure to thrive",
+    "Sparse eyebrow",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

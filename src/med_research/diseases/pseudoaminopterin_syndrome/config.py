@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'pseudoaminopterin syndrome (PSEUDOAMINOPTERIN_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pseudoaminopterin syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Arachnodactyly",
+    "Microcephaly",
+    "Hypertelorism",
+    "Macrocephaly",
+    "Abnormal facial shape",
+    "Underdeveloped supraorbital ridges",
+    "Brachycephaly",
+    "Micrognathia",
+    "Brachydactyly",
+    "Oligodontia",
+    "Narrow forehead",
+    "High palate",
+    "Decreased body weight",
+    "Short thumb",
+    "Frontal upsweep of hair",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

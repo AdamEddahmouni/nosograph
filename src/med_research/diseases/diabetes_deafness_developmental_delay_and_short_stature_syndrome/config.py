@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'diabetes, deafness, developmental delay, and short stature syn
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of diabetes, deafness, developmental delay, and short stature syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Reduced circulating growth hormone concentration",
+    "Decreased thyroid-stimulating hormone level",
+    "Decreased circulating follicle stimulating hormone concentration",
+    "Microcephaly",
+    "High myopia",
+    "Sensorineural hearing impairment",
+    "Scoliosis",
+    "Global developmental delay",
+    "Hypopituitarism",
+    "Type II diabetes mellitus",
+    "Young adult onset",
+    "Short stature",
+    "Juvenile onset",
+    "Alopecia",
+    "Decreased circulating luteinizing hormone level",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

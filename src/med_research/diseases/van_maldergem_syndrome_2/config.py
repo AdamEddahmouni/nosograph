@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'van Maldergem syndrome 2 (VAN_MALDERGEM_SYNDROME_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of van Maldergem syndrome 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Micropenis",
+    "Microtia",
+    "Osteopenia",
+    "Hip subluxation",
+    "Autosomal recessive inheritance",
+    "Talipes equinovarus",
+    "Single umbilical artery",
+    "Conductive hearing impairment",
+    "Cutaneous finger syndactyly",
+    "Sensorineural hearing impairment",
+    "Narrow chest",
+    "Hypoplasia of the maxilla",
+    "Cutaneous syndactyly of toes",
+    "Hypoplastic nipples",
+    "Growth delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

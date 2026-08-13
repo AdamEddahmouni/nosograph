@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'X-linked corneal dermoid (X_LINKED_CORNEAL_DERMOID)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked corneal dermoid
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormality of the eye",
+    "Corneal opacity",
+    "X-linked inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

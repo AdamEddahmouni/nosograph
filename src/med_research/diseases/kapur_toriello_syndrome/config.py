@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Kapur-Toriello syndrome (KAPUR_TORIELLO_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Kapur-Toriello syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Cleft upper lip",
+    "Cryptorchidism",
+    "Camptodactyly of finger",
+    "Pachygyria",
+    "Abnormality of the urinary system",
+    "Severe intellectual disability",
+    "Single transverse palmar crease",
+    "Short thumb",
+    "Hypoplastic labia majora",
+    "Micropenis",
+    "Overlapping fingers",
+    "Joint contracture of the hand",
+    "Intrauterine growth retardation",
+    "Ventricular septal defect",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

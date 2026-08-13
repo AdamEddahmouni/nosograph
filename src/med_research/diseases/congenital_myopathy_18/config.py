@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'congenital myopathy 18 (CONGENITAL_MYOPATHY_18)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital myopathy 18
-SYMPTOMS = []
+SYMPTOMS = [
+    "Motor delay",
+    "Feeding difficulties",
+    "Ophthalmoplegia",
+    "Centrally nucleated skeletal muscle fibers",
+    "Childhood onset",
+    "Infantile onset",
+    "Elevated circulating creatine kinase activity",
+    "Increased variability in muscle fiber diameter",
+    "Scoliosis",
+    "Antenatal onset",
+    "High palate",
+    "Axial muscle weakness",
+    "Increased endomysial connective tissue",
+    "Fatty replacement of skeletal muscle",
+    "Neonatal onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

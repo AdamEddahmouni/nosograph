@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Christianson syndrome (CHRISTIANSON_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Christianson syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased body weight",
+    "Long nose",
+    "Cerebellar atrophy",
+    "Photosensitive tonic-clonic seizure",
+    "Hypotonia",
+    "Mandibular prognathia",
+    "Drooling",
+    "Seizure",
+    "Narrow chest",
+    "Urinary incontinence",
+    "Sleep disturbance",
+    "Microcephaly",
+    "X-linked recessive inheritance",
+    "Narrow face",
+    "Slender finger",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'cerebral arteriopathy, autosomal dominant, with subcortical in
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cerebral arteriopathy, autosomal dominant, with subcortical infarcts and leukoencephalopathy, type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Subcortical dementia",
+    "Abnormal electroretinogram",
+    "Young adult onset",
+    "Seizure",
+    "Leukoencephalopathy",
+    "Vascular granular osmiophilic material deposition",
+    "Urinary incontinence",
+    "Psychosis",
+    "Abulia",
+    "Dementia",
+    "Atypical behavior",
+    "Stroke",
+    "Lacunar stroke",
+    "Hemiparesis",
+    "Visual loss",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

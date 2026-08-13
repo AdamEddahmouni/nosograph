@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'sporadic amyotrophic lateral sclerosis (SPORADIC_AMYOTROPHIC_L
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of sporadic amyotrophic lateral sclerosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Skeletal muscle atrophy",
+    "Adult onset",
+    "Neuronal loss in central nervous system",
+    "Hyperreflexia",
+    "Degeneration of the lateral corticospinal tracts",
+    "Autosomal dominant inheritance",
+    "Dysarthria",
+    "Sleep apnea",
+    "Muscle spasm",
+    "Proximal amyotrophy",
+    "Fasciculations",
+    "Degeneration of anterior horn cells",
+    "Pseudobulbar paralysis",
+    "Muscle weakness",
+    "Amyotrophic lateral sclerosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

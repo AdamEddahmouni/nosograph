@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'progressive myoclonic epilepsy type 6 (PROGRESSIVE_MYOCLONIC_E
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of progressive myoclonic epilepsy type 6
-SYMPTOMS = []
+SYMPTOMS = [
+    "Childhood onset",
+    "Gait disturbance",
+    "Loss of ambulation",
+    "Ataxia",
+    "Memory impairment",
+    "EEG with spike-wave complexes",
+    "Myoclonus",
+    "Bilateral tonic-clonic seizure",
+    "Dysarthria",
+    "Myoclonic status epilepticus",
+    "Scoliosis",
+    "Generalized non-motor (absence) seizure",
+    "Atonic seizure",
+    "Elevated circulating creatine kinase activity",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spondyloepimetaphyseal dysplasia, Irapa type (SPONDYLOEPIMETAP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondyloepimetaphyseal dysplasia, Irapa type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Platyspondyly",
+    "Arthralgia",
+    "Spondyloepimetaphyseal dysplasia",
+    "Short metatarsal",
+    "Autosomal recessive inheritance",
+    "Enlargement of the costochondral junction",
+    "Upper limb undergrowth",
+    "Broad palm",
+    "Short palm",
+    "Coxa vara",
+    "Broad foot",
+    "Limited elbow extension",
+    "Lumbar hyperlordosis",
+    "Osteoarthritis",
+    "Genu valgum",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

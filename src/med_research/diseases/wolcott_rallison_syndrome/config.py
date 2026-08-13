@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Wolcott-Rallison syndrome (WOLCOTT_RALLISON_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Wolcott-Rallison syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Infantile onset",
+    "Small epiphyses",
+    "Autosomal recessive inheritance",
+    "Coxa valga",
+    "Osteoporosis",
+    "Upslanted palpebral fissure",
+    "Platyspondyly",
+    "Short stature",
+    "Type I diabetes mellitus",
+    "Reduced pancreatic beta cells",
+    "Hip subluxation",
+    "Carpal bone hypoplasia",
+    "Global developmental delay",
+    "Shortening of all middle phalanges of the fingers",
+    "Irregular tarsal ossification",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

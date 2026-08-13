@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Cockayne syndrome type 2 (COCKAYNE_SYNDROME_TYPE_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Cockayne syndrome type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cerebral atrophy",
+    "Infantile onset",
+    "Hypoplastic iliac wing",
+    "Thickened calvaria",
+    "Hepatomegaly",
+    "Muscle weakness",
+    "Cryptorchidism",
+    "Kyphosis",
+    "Triangular face",
+    "Decreased nerve conduction velocity",
+    "Splenomegaly",
+    "Strabismus",
+    "Sensorineural hearing impairment",
+    "Sparse hair",
+    "Cerebellar calcifications",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

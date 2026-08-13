@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Temple-Baraitser syndrome (TEMPLE_BARAITSER_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Temple-Baraitser syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Atrial septal defect",
+    "Absent thumbnail",
+    "Constipation",
+    "Depressed nasal bridge",
+    "Hypotonia",
+    "Long philtrum",
+    "Global developmental delay",
+    "Hypertelorism",
+    "Thick vermilion border",
+    "Hypoplastic thumbnail",
+    "Severe intellectual disability",
+    "Long hallux",
+    "Downturned corners of mouth",
+    "Pulmonic stenosis",
+    "Absent nail of hallux",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'Hydatidiform Mole (HYDATIDIFORM_MOLE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Hydatidiform Mole
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hydatidiform mole",
+    "History of stillbirth",
+    "Young adult onset",
+    "Miscarriage",
+    "Autosomal recessive inheritance",
+    "Female infertility",
+    "Recurrent spontaneous abortion",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'distal tetrasomy 15q (DISTAL_TETRASOMY_15Q)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of distal tetrasomy 15q
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hydrocephalus",
+    "Cupped ear",
+    "Kyphoscoliosis",
+    "Downslanted palpebral fissures",
+    "Hypertelorism",
+    "Syringomyelia",
+    "Arachnodactyly",
+    "Intrauterine growth retardation",
+    "Global developmental delay",
+    "Patent ductus arteriosus",
+    "High palate",
+    "Camptodactyly",
+    "Atrial septal defect",
+    "Hydronephrosis",
+    "Dandy-Walker malformation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'hypercoagulability syndrome due to glycosylphosphatidylinosito
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypercoagulability syndrome due to glycosylphosphatidylinositol deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Portal vein thrombosis",
+    "Portal hypertension",
+    "Autosomal recessive inheritance",
+    "Splenomegaly",
+    "Infantile onset",
+    "Childhood onset",
+    "Abnormal bone marrow cell morphology",
+    "Hepatic vein thrombosis",
+    "Delayed speech and language development",
+    "Atonic seizure",
+    "Generalized non-motor (absence) seizure",
+    "Reduced granulocyte CD59 level",
+    "Venous thrombosis",
+    "Hepatomegaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

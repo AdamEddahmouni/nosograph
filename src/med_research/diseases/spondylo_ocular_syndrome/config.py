@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spondylo-ocular syndrome (SPONDYLO_OCULAR_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondylo-ocular syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pectus carinatum",
+    "Sensorineural hearing impairment",
+    "Duodenal ulcer",
+    "Lymphedema",
+    "Overlapping toe",
+    "Mitral valve prolapse",
+    "Abnormal sclera morphology",
+    "Osteopenia",
+    "Thin bony cortex",
+    "Webbed neck",
+    "Unilateral cryptorchidism",
+    "Decreased body weight",
+    "Pes planus",
+    "Short stature",
+    "Long toe",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYND
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of epilepsy-telangiectasia syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormality of metabolism/homeostasis",
+    "Synophrys",
+    "Conjunctival telangiectasia",
+    "Autosomal recessive inheritance",
+    "Abnormal facial shape",
+    "Intellectual disability",
+    "Seizure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spinocerebellar ataxia type 2 (SPINOCEREBELLAR_ATAXIA_TYPE_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spinocerebellar ataxia type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ophthalmoplegia",
+    "Impaired vibratory sensation",
+    "Distal amyotrophy",
+    "Hyporeflexia",
+    "Bradykinesia",
+    "Dysphagia",
+    "Rigidity",
+    "Dementia",
+    "Spasticity",
+    "Urinary bladder sphincter dysfunction",
+    "Unsteady gait",
+    "Postural instability",
+    "Genetic anticipation",
+    "Gaze-evoked nystagmus",
+    "Ataxia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

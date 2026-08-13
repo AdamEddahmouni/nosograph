@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'Lisch epithelial corneal dystrophy (LISCH_EPITHELIAL_CORNEAL_D
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Lisch epithelial corneal dystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Band-shaped corneal dystrophy",
+    "Childhood onset",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

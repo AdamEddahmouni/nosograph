@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'calvarial doughnut lesions-bone fragility syndrome (CALVARIAL_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of calvarial doughnut lesions-bone fragility syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Recurrent fractures",
+    "Osteopenia",
+    "Mixed hearing impairment",
+    "Autosomal dominant inheritance",
+    "Motor delay",
+    "Elevated circulating alkaline phosphatase concentration",
+    "Scoliosis",
+    "Carious teeth",
+    "Platyspondyly",
+    "Severe short stature",
+    "Thickened calvaria",
+    "Osteoporosis",
+    "Femoral bowing",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

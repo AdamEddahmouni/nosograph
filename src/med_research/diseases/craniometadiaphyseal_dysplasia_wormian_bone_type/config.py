@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'craniometadiaphyseal dysplasia, wormian bone type (CRANIOMETAD
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of craniometadiaphyseal dysplasia, wormian bone type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Megalencephaly",
+    "Genu varum",
+    "High palate",
+    "Low-set ears",
+    "Broad ribs",
+    "Absent paranasal sinuses",
+    "Coxa valga",
+    "Cubitus valgus",
+    "Wormian bones",
+    "Macrocephaly",
+    "Dental crowding",
+    "Abnormally large globe",
+    "Sclerosis of skull base",
+    "Genu valgum",
+    "Mandibular prognathia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

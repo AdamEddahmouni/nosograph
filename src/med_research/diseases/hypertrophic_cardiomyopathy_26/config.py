@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hypertrophic cardiomyopathy 26 (HYPERTROPHIC_CARDIOMYOPATHY_26
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypertrophic cardiomyopathy 26
-SYMPTOMS = []
+SYMPTOMS = [
+    "Atrioventricular block",
+    "Childhood onset",
+    "Mitral regurgitation",
+    "Juvenile onset",
+    "Autosomal dominant inheritance",
+    "Congestive heart failure",
+    "Left atrial enlargement",
+    "Late onset",
+    "Left bundle branch block",
+    "Atrial fibrillation",
+    "Middle age onset",
+    "Permanent atrial fibrillation",
+    "Stroke",
+    "Left anterior fascicular block",
+    "Hypertrophic cardiomyopathy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

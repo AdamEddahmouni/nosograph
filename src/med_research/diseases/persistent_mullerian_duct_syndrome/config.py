@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'persistent Mullerian duct syndrome (PERSISTENT_MULLERIAN_DUCT_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of persistent Mullerian duct syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Male infertility",
+    "Congenital onset",
+    "Bilateral cryptorchidism",
+    "Inguinal hernia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'BDV syndrome (BDV_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of BDV syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Gynecomastia",
+    "Micrognathia",
+    "Motor delay",
+    "Micropenis",
+    "Decreased circulating follicle stimulating hormone concentration",
+    "Primary amenorrhea",
+    "Macrotia",
+    "Delayed puberty",
+    "Round face",
+    "Obesity",
+    "Decreased circulating free T4 concentration",
+    "Cryptorchidism",
+    "Atrial septal defect",
+    "Hypogonadotropic hypogonadism",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

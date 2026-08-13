@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'dilated cardiomyopathy (FAMILIAL_DILATED_CARDIOMYOPATHY_WITH_C
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dilated cardiomyopathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sudden cardiac death",
+    "Reduced left ventricular ejection fraction",
+    "Autosomal recessive inheritance",
+    "Increased left ventricular end-diastolic volume",
+    "Congestive heart failure",
+    "Young adult onset",
+    "Dilated cardiomyopathy",
+    "Abnormal ST segment",
+    "Autosomal dominant inheritance",
+    "Death in infancy",
+    "Middle age onset",
+    "First degree atrioventricular block",
+    "Increased circulating lactate concentration",
+    "Atrial flutter",
+    "Childhood onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

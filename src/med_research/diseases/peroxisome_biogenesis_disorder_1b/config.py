@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'peroxisome biogenesis disorder 1B (PEROXISOME_BIOGENESIS_DISOR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of peroxisome biogenesis disorder 1B
-SYMPTOMS = []
+SYMPTOMS = [
+    "Leukodystrophy",
+    "Renal cyst",
+    "Sensorineural hearing impairment",
+    "Seizure",
+    "Midface retrusion",
+    "Epicanthus",
+    "Neonatal hypotonia",
+    "Wide nasal bridge",
+    "Hepatic fibrosis",
+    "Optic atrophy",
+    "Rod-cone dystrophy",
+    "Global developmental delay",
+    "Delayed speech and language development",
+    "Convex nasal ridge",
+    "Hepatomegaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

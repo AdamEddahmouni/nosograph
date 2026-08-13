@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autoinflammatory disease, multisystem, with immune dysregulati
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autoinflammatory disease, multisystem, with immune dysregulation, X-linked
-SYMPTOMS = []
+SYMPTOMS = [
+    "Juvenile onset",
+    "Increased circulating IgE concentration",
+    "Acute respiratory distress syndrome",
+    "Oral ulcer",
+    "Anti-thyroglobulin antibody positivity",
+    "Systemic lupus erythematosus",
+    "Nephrotic syndrome",
+    "Diarrhea",
+    "Increased total leukocyte count",
+    "Mastoiditis",
+    "Autoimmune thrombocytopenia",
+    "Pericarditis",
+    "Congenital onset",
+    "Restrictive ventilatory defect",
+    "Anisocytosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

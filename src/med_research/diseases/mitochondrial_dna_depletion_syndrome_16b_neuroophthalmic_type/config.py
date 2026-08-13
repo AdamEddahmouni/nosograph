@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'mitochondrial dna depletion syndrome 16B (neuroophthalmic type
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mitochondrial dna depletion syndrome 16B (neuroophthalmic type)
-SYMPTOMS = []
+SYMPTOMS = [
+    "Depression",
+    "Cerebellar atrophy",
+    "Optic atrophy",
+    "Visual loss",
+    "Premature ovarian insufficiency",
+    "Peripheral axonal neuropathy",
+    "Cerebral cortical atrophy",
+    "Amenorrhea",
+    "Ataxia",
+    "Open angle glaucoma",
+    "Gait disturbance",
+    "Autosomal recessive inheritance",
+    "Anxiety",
+    "Headache",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

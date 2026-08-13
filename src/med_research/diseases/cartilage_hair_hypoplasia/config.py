@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'cartilage-hair hypoplasia (CARTILAGE_HAIR_HYPOPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cartilage-hair hypoplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Childhood onset",
+    "Sparse facial hair",
+    "Metaphyseal dysplasia",
+    "Breech presentation",
+    "Esophageal atresia",
+    "Prominent sternum",
+    "Basal cell carcinoma",
+    "Hypoplasia of the odontoid process",
+    "Metaphyseal cupping",
+    "Infantile onset",
+    "Abnormal pelvic girdle bone morphology",
+    "Anemia",
+    "Lymphoma",
+    "Lumbar hyperlordosis",
+    "Fine hair",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

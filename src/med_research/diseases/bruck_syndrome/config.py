@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Bruck syndrome (BRUCK_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Bruck syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Platyspondyly",
+    "Coxa vara",
+    "Congenital onset",
+    "Scoliosis",
+    "Knee flexion contracture",
+    "Vertebral wedging",
+    "Cervical C6/C7 vertebrae fusion",
+    "Protrusio acetabuli",
+    "Pterygium",
+    "Talipes equinovarus",
+    "Joint hypermobility",
+    "Short stature",
+    "Femoral bowing",
+    "Abnormal sclera morphology",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

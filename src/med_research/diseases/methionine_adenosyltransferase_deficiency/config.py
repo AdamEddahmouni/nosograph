@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'methionine adenosyltransferase deficiency (METHIONINE_ADENOSYL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of methionine adenosyltransferase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperreflexia",
+    "Autosomal dominant inheritance",
+    "Halitosis",
+    "CNS demyelination",
+    "Dystonia",
+    "Intellectual disability",
+    "Hypermethioninemia",
+    "Peripheral demyelination",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

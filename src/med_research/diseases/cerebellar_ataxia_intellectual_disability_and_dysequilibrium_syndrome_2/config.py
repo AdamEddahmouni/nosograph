@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'cerebellar ataxia, intellectual disability, and dysequilibrium
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cerebellar ataxia, intellectual disability, and dysequilibrium syndrome 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Tremor",
+    "Delayed speech and language development",
+    "Hirsutism",
+    "Short stature",
+    "Truncal ataxia",
+    "Cerebellar hypoplasia",
+    "Thoracic scoliosis",
+    "Broad-based gait",
+    "Cerebellar atrophy",
+    "HP_0006887",
+    "Short palm",
+    "Delayed ability to walk",
+    "Dysdiadochokinesis",
+    "Atrophy of the dentate nucleus",
+    "Severe intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

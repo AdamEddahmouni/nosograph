@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Granulomatosis with polyangiitis (GRANULOMATOSIS_POLYANGIITIS)
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Granulomatosis with polyangiitis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Chronic otitis media",
+    "Fatigue",
+    "Nasal mucosa vasculitis",
+    "Fever",
+    "Pediatric onset",
+    "Cough",
+    "Skin ulcer",
+    "Retinal hemorrhage",
+    "Elevated bronchoalveolar lavage fluid neutrophil proportion",
+    "Uveitis",
+    "Subglottic stenosis",
+    "Weight loss",
+    "Oral ulcer",
+    "Tracheal stenosis",
+    "Localized pulmonary hemorrhage",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

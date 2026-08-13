@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Zechi-Ceide syndrome (ZECHI_CEIDE_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Zechi-Ceide syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Wide nasal bridge",
+    "Cephalocele",
+    "Cleft upper lip",
+    "Short metatarsal",
+    "Cerebellar vermis hypoplasia",
+    "Small nail",
+    "Autosomal recessive inheritance",
+    "Short palpebral fissure",
+    "Abnormal facial shape",
+    "Underdeveloped nasal alae",
+    "Blepharophimosis",
+    "Prominent forehead",
+    "Sandal gap",
+    "Short distal phalanx of finger",
+    "Wide nose",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

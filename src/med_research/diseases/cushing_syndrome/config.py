@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Cushing syndrome (CUSHING_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Cushing syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ecchymosis",
+    "Abnormal fear-induced behavior",
+    "Glucose intolerance",
+    "Obesity",
+    "Thin skin",
+    "Vertebral compression fracture",
+    "Pituitary adenoma",
+    "Autosomal recessive inheritance",
+    "Hirsutism",
+    "Biconcave vertebral bodies",
+    "Alkalosis",
+    "Edema",
+    "Increased circulating ACTH level",
+    "Emotional lability",
+    "Striae distensae",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

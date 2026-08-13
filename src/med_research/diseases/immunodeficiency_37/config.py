@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'immunodeficiency 37 (IMMUNODEFICIENCY_37)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 37
-SYMPTOMS = []
+SYMPTOMS = [
+    "Status epilepticus",
+    "Seizure",
+    "Decreased central memory CD4+ T cell proportion",
+    "Autosomal recessive inheritance",
+    "Decreased circulating immunoglobulin concentration",
+    "Immunodeficiency",
+    "Colitis",
+    "Infantile onset",
+    "Recurrent infections",
+    "Infectious encephalitis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

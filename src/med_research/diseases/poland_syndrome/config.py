@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Poland syndrome (POLAND_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Poland syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Absence of pectoralis minor muscle",
+    "Hypoplasia of serratus anterior muscle",
+    "Rib fusion",
+    "Unilateral absence of pectoralis major muscle",
+    "Unilateral hypoplasia of pectoralis major muscle",
+    "Dextrocardia",
+    "Hypoplasia of latissimus dorsi muscle",
+    "Hemivertebrae",
+    "Short ribs",
+    "Sprengel anomaly",
+    "Hypoplasia of deltoid muscle",
+    "Unilateral brachydactyly",
+    "Syndactyly",
+    "Unilateral oligodactyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

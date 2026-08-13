@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'femoral-facial syndrome (FEMORAL_FACIAL_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of femoral-facial syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Epicanthus",
+    "Truncus arteriosus",
+    "Short femur",
+    "Esotropia",
+    "Micropenis",
+    "Short third metatarsal",
+    "Aplasia/hypoplasia of the femur",
+    "Rib fusion",
+    "Encephalocele",
+    "Intellectual disability",
+    "Preaxial foot polydactyly",
+    "Short nose",
+    "Thin upper lip vermilion",
+    "Congenital onset",
+    "Gastroesophageal reflux",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

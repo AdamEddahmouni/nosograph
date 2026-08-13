@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'GAPO syndrome (GAPO_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of GAPO syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Frontal bossing",
+    "Intellectual disability",
+    "Redundant skin",
+    "Strabismus",
+    "Plagiocephaly",
+    "Alopecia",
+    "Palpebral thickening",
+    "Autosomal recessive inheritance",
+    "Hypertelorism",
+    "Retinal arteriolar tortuosity",
+    "Bell-shaped thorax",
+    "Megalocornea",
+    "Thick lower lip vermilion",
+    "Protruding ear",
+    "Delayed closure of the anterior fontanelle",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

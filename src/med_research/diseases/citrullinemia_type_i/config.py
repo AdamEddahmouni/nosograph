@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'citrullinemia type I (CITRULLINEMIA_TYPE_I)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of citrullinemia type I
-SYMPTOMS = []
+SYMPTOMS = [
+    "Reduced tissue argininosuccinate synthetase activity",
+    "Intellectual disability",
+    "Global developmental delay",
+    "Cirrhosis",
+    "Episodic ammonia intoxication",
+    "Vomiting",
+    "Respiratory alkalosis",
+    "Autosomal recessive inheritance",
+    "Protein avoidance",
+    "Neonatal onset",
+    "Cerebral edema",
+    "Stroke",
+    "Hepatomegaly",
+    "Seizure",
+    "Hyperglutaminemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

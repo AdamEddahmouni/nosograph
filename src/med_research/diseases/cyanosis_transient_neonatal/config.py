@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'cyanosis, transient neonatal (CYANOSIS_TRANSIENT_NEONATAL)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cyanosis, transient neonatal
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital onset",
+    "Jaundice",
+    "Methemoglobinemia",
+    "Reticulocytosis",
+    "Autosomal dominant inheritance",
+    "Cyanosis",
+    "Hepatomegaly",
+    "Anemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

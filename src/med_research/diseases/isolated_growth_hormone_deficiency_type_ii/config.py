@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'isolated growth hormone deficiency type II (ISOLATED_GROWTH_HO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of isolated growth hormone deficiency type II
-SYMPTOMS = []
+SYMPTOMS = [
+    "Scoliosis",
+    "Pituitary dwarfism",
+    "Childhood onset",
+    "Autosomal dominant inheritance",
+    "Decreased response to growth hormone stimulation test",
+    "Severe short stature",
+    "Anterior pituitary hypoplasia",
+    "Decreased circulating insulin-like growth factor 1 concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

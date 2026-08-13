@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'Laurence-Moon syndrome (LAURENCE_MOON_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Laurence-Moon syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Spastic paraplegia",
+    "Autosomal recessive inheritance",
+    "Ataxia",
+    "Intellectual disability",
+    "Micropenis",
+    "Peripheral neuropathy",
+    "Nystagmus",
+    "Small scrotum",
+    "Pigmentary retinopathy",
+    "Short stature",
+    "Abnormality of the hand",
+    "Obesity",
+    "Chorioretinal atrophy",
+    "Polydactyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'X-linked Alport syndrome (X_LINKED_ALPORT_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked Alport syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ichthyosis",
+    "Myopia",
+    "Sensorineural hearing impairment",
+    "Hypoparathyroidism",
+    "Nephritis",
+    "Diffuse leiomyomatosis",
+    "Anterior lenticonus",
+    "Thrombocytopenia",
+    "Stage 5 chronic kidney disease",
+    "Reduced epidermal collagen IV alpha 5 chain staining",
+    "Hypertension",
+    "Lenticonus",
+    "Glomerular basement membrane lamellation",
+    "X-linked inheritance",
+    "Proteinuria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

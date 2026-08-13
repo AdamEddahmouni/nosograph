@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'short stature-auditory canal atresia-mandibular hypoplasia-ske
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of short stature-auditory canal atresia-mandibular hypoplasia-skeletal anomalies syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Atresia of the external auditory canal",
+    "Micrognathia",
+    "Narrow mouth",
+    "Short stature",
+    "Neonatal respiratory distress",
+    "Hypoplastic scapulae",
+    "Scapulohumeral synostosis",
+    "Narrow greater sciatic notch",
+    "Rhizomelia",
+    "Microcephaly",
+    "Delayed ossification of pubic rami",
+    "Cryptorchidism",
+    "Short humerus",
+    "Simple ear",
+    "Talipes equinovarus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

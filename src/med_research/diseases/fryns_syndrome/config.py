@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Fryns syndrome (FRYNS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Fryns syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Renal agenesis",
+    "Proximal placement of thumb",
+    "Small nail",
+    "Esophageal atresia",
+    "Seizure",
+    "Intellectual disability",
+    "Coarse facial features",
+    "Ureteral duplication",
+    "Atrial septal defect",
+    "Intestinal malrotation",
+    "Autosomal recessive inheritance",
+    "Narrow palpebral fissure",
+    "Low-set ears",
+    "Aganglionic megacolon",
+    "Agenesis of corpus callosum",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

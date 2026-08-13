@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'microcephaly-congenital cataract-psoriasiform dermatitis syndr
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of microcephaly-congenital cataract-psoriasiform dermatitis syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Global developmental delay",
+    "Elevated circulating monomethyl sterol concentration",
+    "Short stature",
+    "Autosomal recessive inheritance",
+    "Failure to thrive",
+    "Microcephaly",
+    "Decreased circulating HDL-C concentration",
+    "Childhood onset",
+    "Elevated circulating dimethyl sterol concentration",
+    "Psoriasiform dermatitis",
+    "Developmental cataract",
+    "Hypocholesterolemia",
+    "Delayed puberty",
+    "Ichthyosis",
+    "Decreased circulating LDL-C concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

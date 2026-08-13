@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'precocious puberty, central, 2 (PRECOCIOUS_PUBERTY_CENTRAL_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of precocious puberty, central, 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Premature thelarche",
+    "Accelerated skeletal maturation",
+    "Premature pubarche",
+    "Autosomal dominant inheritance with maternal imprinting",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

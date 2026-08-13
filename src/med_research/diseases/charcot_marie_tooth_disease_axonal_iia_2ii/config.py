@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Charcot-Marie-Tooth disease, axonal, IIa 2II (CHARCOT_MARIE_TO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Charcot-Marie-Tooth disease, axonal, IIa 2II
-SYMPTOMS = []
+SYMPTOMS = [
+    "Childhood onset",
+    "Seizure",
+    "Motor delay",
+    "Intellectual disability",
+    "Muscle weakness",
+    "Infantile onset",
+    "Intrinsic hand muscle atrophy",
+    "Progressive",
+    "Distal upper limb amyotrophy",
+    "Distal lower limb amyotrophy",
+    "Scoliosis",
+    "Foot dorsiflexor weakness",
+    "Decreased motor nerve conduction velocity",
+    "Abolished vibration sense",
+    "Frequent falls",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

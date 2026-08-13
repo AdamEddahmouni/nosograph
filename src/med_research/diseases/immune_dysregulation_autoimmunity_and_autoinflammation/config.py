@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'immune dysregulation, autoimmunity, and autoinflammation (IMMU
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immune dysregulation, autoimmunity, and autoinflammation
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Epistaxis",
+    "Petechiae",
+    "Cervical lymphadenopathy",
+    "Ecchymosis",
+    "Increased circulating interleukin 8 concentration",
+    "Decreased circulating complement C3 concentration",
+    "Childhood onset",
+    "Increased circulating interleukin 6 concentration",
+    "Decreased circulating complement C4 concentration",
+    "Gingival bleeding",
+    "Abnormal circulating C-reactive protein concentration",
+    "Elevated erythrocyte sedimentation rate",
+    "Antinuclear antibody positivity",
+    "Inguinal lymphadenopathy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

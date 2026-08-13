@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'nail and teeth abnormalities-marginal palmoplantar keratoderma
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of nail and teeth abnormalities-marginal palmoplantar keratoderma-oral hyperpigmentation syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Palmoplantar keratoderma",
+    "Esophageal stricture",
+    "Dysphagia",
+    "Enamel hypoplasia",
+    "Short stature",
+    "Nail dystrophy",
+    "Hypodontia",
+    "Delayed eruption of teeth",
+    "Hyperkeratosis",
+    "Autosomal recessive inheritance",
+    "Asthma",
+    "Epidermal acanthosis",
+    "Sensorineural hearing impairment",
+    "Anonychia",
+    "Infantile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

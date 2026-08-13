@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'congenital stromal corneal dystrophy (CONGENITAL_STROMAL_CORNE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital stromal corneal dystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased corneal thickness",
+    "Neonatal onset",
+    "Photophobia",
+    "Corneal erosion",
+    "Strabismus",
+    "Progressive visual loss",
+    "Band-shaped corneal dystrophy",
+    "Autosomal dominant inheritance",
+    "Glaucoma",
+    "Corneal dystrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

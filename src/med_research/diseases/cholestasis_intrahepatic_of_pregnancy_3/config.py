@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'cholestasis, intrahepatic, of pregnancy 3 (CHOLESTASIS_INTRAHE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cholestasis, intrahepatic, of pregnancy 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Jaundice",
+    "Intrahepatic cholestasis",
+    "Fetal distress",
+    "Autosomal recessive inheritance",
+    "Pruritus",
+    "Autosomal dominant inheritance",
+    "Abnormal liver function tests during pregnancy",
+    "Premature birth",
+    "Increased serum bile acid concentration during pregnancy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

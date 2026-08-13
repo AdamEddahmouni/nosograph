@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'acute infantile liver failure-cerebellar ataxia-peripheral sen
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of acute infantile liver failure-cerebellar ataxia-peripheral sensory motor neuropathy syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Mild intellectual disability",
+    "Motor delay",
+    "Spasticity",
+    "Hyporeflexia",
+    "Hepatic bridging fibrosis",
+    "Distal sensory impairment",
+    "Hepatic failure",
+    "Stuttering",
+    "Paresthesia",
+    "Cerebellar vermis atrophy",
+    "Distal muscle weakness",
+    "Skeletal muscle atrophy",
+    "Hepatomegaly",
+    "Hepatic fibrosis",
+    "Sensorimotor neuropathy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

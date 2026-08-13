@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'hearing loss, X-linked 4 (HEARING_LOSS_X_LINKED_4)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hearing loss, X-linked 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Childhood onset",
+    "High-frequency hearing impairment",
+    "X-linked dominant inheritance",
+    "Sensorineural hearing impairment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

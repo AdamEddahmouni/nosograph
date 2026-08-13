@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'very long chain acyl-CoA dehydrogenase deficiency (VERY_LONG_C
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of very long chain acyl-CoA dehydrogenase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Reduced left ventricular ejection fraction",
+    "Infantile onset",
+    "Exercise-induced rhabdomyolysis",
+    "Hepatocellular necrosis",
+    "Nonketotic hypoglycemia",
+    "Sudden cardiac death",
+    "Autosomal recessive inheritance",
+    "Hepatic steatosis",
+    "Cardiomegaly",
+    "Bilateral tonic-clonic seizure",
+    "Neonatal onset",
+    "Dicarboxylic aciduria",
+    "Hyperammonemia",
+    "Microcephaly",
+    "Exercise-induced myoglobinuria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

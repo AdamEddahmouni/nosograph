@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'ventricular tachycardia, familial (VENTRICULAR_TACHYCARDIA_FAM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ventricular tachycardia, familial
-SYMPTOMS = []
+SYMPTOMS = [
+    "Paroxysmal ventricular tachycardia",
+    "Autosomal dominant inheritance",
+    "Adult onset",
+    "Complete right bundle branch block",
+    "Typified by somatic mosaicism",
+    "Cardiomyopathy",
+    "Sudden cardiac death",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

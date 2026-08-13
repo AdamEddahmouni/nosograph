@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mitochondrial DNA depletion syndrome 12B (cardiomyopathic type
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mitochondrial DNA depletion syndrome 12B (cardiomyopathic type), autosomal recessive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dyspnea",
+    "Slowly progressive",
+    "Mild intellectual disability",
+    "Multiple mitochondrial DNA deletions",
+    "Cytochrome C oxidase-negative muscle fibers",
+    "Autosomal recessive inheritance",
+    "Obesity",
+    "Increased CSF lactate",
+    "Left ventricular hypertrophy",
+    "Decreased activity of mitochondrial complex IV",
+    "Ragged-red muscle fibers",
+    "Myalgia",
+    "Skeletal muscle atrophy",
+    "Headache",
+    "Nausea and vomiting",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

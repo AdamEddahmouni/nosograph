@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'cerebellar ataxia-areflexia-pes cavus-optic atrophy-sensorineu
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cerebellar ataxia-areflexia-pes cavus-optic atrophy-sensorineural hearing loss syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Visual impairment",
+    "Dysmetria",
+    "Juvenile onset",
+    "Muscle weakness",
+    "Visual loss",
+    "Hearing impairment",
+    "Childhood onset",
+    "Gait ataxia",
+    "Pes cavus",
+    "Dystonia",
+    "Hemiparesis",
+    "Hypotonia",
+    "Blindness",
+    "Progressive sensorineural hearing impairment",
+    "Peripheral axonal neuropathy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

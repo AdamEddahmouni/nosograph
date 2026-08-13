@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'long QT syndrome 15 (LONG_QT_SYNDROME_15)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of long QT syndrome 15
-SYMPTOMS = []
+SYMPTOMS = [
+    "Premature ventricular contraction",
+    "Sinus bradycardia",
+    "Cardiac arrest",
+    "2:1 atrioventricular block",
+    "Ventricular fibrillation",
+    "Syncope",
+    "Childhood onset",
+    "Neonatal onset",
+    "Bradycardia",
+    "Ventricular bigeminy",
+    "Fetal onset",
+    "Polymorphic ventricular tachycardia",
+    "Seizure",
+    "Juvenile onset",
+    "Prolonged QTc interval",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

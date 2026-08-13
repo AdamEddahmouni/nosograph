@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'visceral myopathy 1 (VISCERAL_MYOPATHY_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of visceral myopathy 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Gastroparesis",
+    "Intestinal pseudo-obstruction",
+    "Pancreatitis",
+    "Abdominal pain",
+    "Malnutrition",
+    "Urinary retention",
+    "Aganglionic megacolon",
+    "Dysphagia",
+    "Thinning of outer muscular layer of small bowel",
+    "Megaduodenum",
+    "Abdominal distention",
+    "Diarrhea",
+    "Vesicoureteral reflux",
+    "Microcolon",
+    "Constipation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

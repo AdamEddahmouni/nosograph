@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'oculocutaneous albinism type 5 (OCULOCUTANEOUS_ALBINISM_TYPE_5
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of oculocutaneous albinism type 5
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypoplasia of the fovea",
+    "Albinism",
+    "Photophobia",
+    "Nystagmus",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

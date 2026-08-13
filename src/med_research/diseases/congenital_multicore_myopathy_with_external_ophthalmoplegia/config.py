@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'congenital multicore myopathy with external ophthalmoplegia (C
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital multicore myopathy with external ophthalmoplegia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Muscular dystrophy",
+    "Feeding difficulties in infancy",
+    "Hydrops fetalis",
+    "Difficulty running",
+    "Axial muscle weakness",
+    "Motor delay",
+    "Proximal muscle weakness",
+    "Abnormal circulating creatine kinase activity",
+    "Childhood onset",
+    "Recurrent respiratory infections",
+    "Increased connective tissue",
+    "Joint hypermobility",
+    "Areflexia",
+    "External ophthalmoplegia",
+    "Decreased fetal movement",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'congenital lethal erythroderma (CONGENITAL_LETHAL_ERYTHRODERMA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital lethal erythroderma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypoalbuminemia",
+    "Congenital exfoliative erythroderma",
+    "Death in infancy",
+    "Failure to thrive",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

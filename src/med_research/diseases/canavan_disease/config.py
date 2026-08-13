@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Canavan disease (CANAVAN_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Canavan disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Multifocal epileptiform discharges",
+    "Global developmental delay",
+    "Elevated urine N-acetylaspartic acid level",
+    "Macrocephaly",
+    "Nystagmus",
+    "Opisthotonus",
+    "Elevated brain N-acetyl aspartate level by MRS",
+    "Reduced aspartoacylase activity in cultured fibroblasts",
+    "Hearing impairment",
+    "Visual impairment",
+    "Increased circulating N-acetylaspartic acid concentration",
+    "Bilateral tonic-clonic seizure",
+    "Abnormal pyramidal sign",
+    "Hypsarrhythmia",
+    "Developmental regression",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

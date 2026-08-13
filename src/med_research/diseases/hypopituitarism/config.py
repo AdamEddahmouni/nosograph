@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hypopituitarism (HYPOPITUITARISM)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypopituitarism
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypothyroidism",
+    "Adrenal insufficiency",
+    "Reduced circulating prolactin concentration",
+    "Decreased circulating luteinizing hormone level",
+    "Neonatal hypoglycemia",
+    "Reduced circulating growth hormone concentration",
+    "Hypogonadism",
+    "Decreased circulating follicle stimulating hormone concentration",
+    "Decreased thyroid-stimulating hormone level",
+    "Abnormal circulating adrenocorticotropin concentration",
+    "Seizure",
+    "Short stature",
+    "Hypoglycemic seizures",
+    "Autosomal recessive inheritance",
+    "Panhypopituitarism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'X-linked dominant chondrodysplasia, Chassaing-Lacombe type (X_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked dominant chondrodysplasia, Chassaing-Lacombe type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Metaphyseal cupping of proximal phalanges",
+    "Low-set ears",
+    "Hydrocephalus",
+    "11 pairs of ribs",
+    "Depressed nasal ridge",
+    "Short stature",
+    "Metaphyseal cupping",
+    "Mild intellectual disability",
+    "Hypoplasia of the calcaneus",
+    "Intrauterine growth retardation",
+    "Rhizomelia",
+    "Distal shortening of limbs",
+    "Intellectual disability",
+    "Macrocephaly",
+    "Microphthalmia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'brachydactyly type A1 (BRACHYDACTYLY_TYPE_A1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of brachydactyly type A1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Aplasia/Hypoplasia of the middle phalanges of the toes",
+    "Aplasia/Hypoplasia of the middle phalanges of the hand",
+    "Short proximal phalanx of thumb",
+    "Broad palm",
+    "Brachydactyly",
+    "Short palm",
+    "Radial deviation of the 2nd finger",
+    "Short proximal phalanx of hallux",
+    "Thin proximal phalanges with broad epiphyses of the hand",
+    "Autosomal dominant inheritance",
+    "Slender metacarpals",
+    "Distal finger symphalangism",
+    "Short distal phalanx of finger",
+    "Clinodactyly of the 5th finger",
+    "Radial deviation of the 4th finger",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

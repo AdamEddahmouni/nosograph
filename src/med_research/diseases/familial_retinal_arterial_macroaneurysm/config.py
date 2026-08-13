@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'familial retinal arterial macroaneurysm (FAMILIAL_RETINAL_ARTE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial retinal arterial macroaneurysm
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Retinal arteriolar macroaneurysms",
+    "Pulmonic stenosis",
+    "Serous retinal detachment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

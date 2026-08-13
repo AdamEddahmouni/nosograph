@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'myofibrillar myopathy 6 (MYOFIBRILLAR_MYOPATHY_6)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of myofibrillar myopathy 6
-SYMPTOMS = []
+SYMPTOMS = [
+    "Diaphragmatic paralysis",
+    "Lower limb muscle weakness",
+    "Autosomal dominant inheritance",
+    "Generalized amyotrophy",
+    "Hypertrophic cardiomyopathy",
+    "Muscular dystrophy",
+    "Tip-toe gait",
+    "Knee flexion contracture",
+    "Axonal loss",
+    "Hyporeflexia",
+    "Juvenile onset",
+    "Rapidly progressive",
+    "Distal muscle weakness",
+    "Reduced forced vital capacity",
+    "Scoliosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

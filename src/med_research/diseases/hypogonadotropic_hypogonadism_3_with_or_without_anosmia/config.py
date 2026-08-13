@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hypogonadotropic hypogonadism 3 with or without anosmia (HYPOG
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypogonadotropic hypogonadism 3 with or without anosmia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pes planus",
+    "Typified by incomplete penetrance",
+    "Autosomal dominant inheritance",
+    "Primary amenorrhea",
+    "Pectus excavatum",
+    "Cleft palate",
+    "Hypotelorism",
+    "Bimanual synkinesia",
+    "Cryptorchidism",
+    "Hypogonadotropic hypogonadism",
+    "Finger joint hypermobility",
+    "Unilateral renal agenesis",
+    "Seizure",
+    "Hearing impairment",
+    "Cleft upper lip",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

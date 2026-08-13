@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'PARC syndrome (PARC_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of PARC syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Alopecia",
+    "Cleft palate",
+    "Autosomal dominant inheritance",
+    "Absent eyebrow",
+    "Poikiloderma",
+    "Absent eyelashes",
+    "Microretrognathia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

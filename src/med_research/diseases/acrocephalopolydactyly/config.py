@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'acrocephalopolydactyly (ACROCEPHALOPOLYDACTYLY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of acrocephalopolydactyly
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypoplastic colon",
+    "Cystic renal dysplasia",
+    "Polysplenia",
+    "Oxycephaly",
+    "Hepatic fibrosis",
+    "Enlarged kidney",
+    "Hypoplasia of the small intestine",
+    "Short nose",
+    "Extrapulmonary lobar sequestration",
+    "Abnormal pinna morphology",
+    "Thickened skin",
+    "Upslanted palpebral fissure",
+    "Low-set ears",
+    "Hepatomegaly",
+    "Craniosynostosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

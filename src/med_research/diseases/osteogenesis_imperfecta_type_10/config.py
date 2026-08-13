@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'osteogenesis imperfecta type 10 (OSTEOGENESIS_IMPERFECTA_TYPE_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of osteogenesis imperfecta type 10
-SYMPTOMS = []
+SYMPTOMS = [
+    "Narrow forehead",
+    "Multiple rib fractures",
+    "Inguinal hernia",
+    "Persistent head lag",
+    "Broad ribs",
+    "Death in childhood",
+    "Autosomal recessive inheritance",
+    "Kidney stone",
+    "Chronic lung disease",
+    "Thin bony cortex",
+    "Rhizomelia",
+    "Short femur",
+    "Third trimester onset",
+    "High forehead",
+    "Generalized hypotonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

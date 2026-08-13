@@ -8,8 +8,20 @@ PIPELINE_LABEL = "IgA nephropathy (IGA_NEPHROPATHY)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of IgA nephropathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Mesangial hypercellularity",
+    "Stage 5 chronic kidney disease",
+    "IgA deposition in the glomerulus",
+    "Purpura",
+    "Proteinuria",
+    "Progressive",
+    "Autosomal dominant inheritance",
+    "Hematuria",
+    "Nephritis",
+    "Young adult onset",
+    "Hypertension",
+    "Arthralgia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

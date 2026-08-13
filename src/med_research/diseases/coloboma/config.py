@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'coloboma (COLOBOMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of coloboma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nystagmus",
+    "Iris coloboma",
+    "Peters anomaly",
+    "Corneal opacity",
+    "Remnants of the hyaloid vascular system",
+    "Esotropia",
+    "Hypertropia",
+    "Optic nerve aplasia",
+    "Morning glory anomaly",
+    "Lens subluxation",
+    "Growth delay",
+    "Autosomal dominant inheritance",
+    "Chorioretinal coloboma",
+    "Optic disc coloboma",
+    "Vesicoureteral reflux",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

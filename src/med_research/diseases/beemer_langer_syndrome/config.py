@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Beemer-Langer syndrome (BEEMER_LANGER_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Beemer-Langer syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Low-set ears",
+    "Protuberant abdomen",
+    "Epicanthus",
+    "Hypoplastic nipples",
+    "Horizontal ribs",
+    "Cystic renal dysplasia",
+    "Median cleft palate",
+    "Anencephaly",
+    "Patent foramen ovale",
+    "Intestinal malrotation",
+    "Periportal fibrosis",
+    "Renal hypoplasia",
+    "Ventricular septal defect",
+    "Natal tooth",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

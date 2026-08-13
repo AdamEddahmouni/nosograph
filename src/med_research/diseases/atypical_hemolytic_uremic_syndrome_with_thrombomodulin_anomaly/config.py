@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'atypical hemolytic-uremic syndrome with thrombomodulin anomaly
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of atypical hemolytic-uremic syndrome with thrombomodulin anomaly
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hematuria",
+    "Decreased circulating complement C3 concentration",
+    "Anemia",
+    "Acute kidney injury",
+    "Thrombocytopenia",
+    "Elevated circulating creatinine concentration",
+    "Microangiopathic hemolytic anemia",
+    "Proteinuria",
+    "Autosomal dominant inheritance",
+    "Hemolytic-uremic syndrome",
+    "Increased blood urea nitrogen",
+    "Hypertension",
+    "Anuria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

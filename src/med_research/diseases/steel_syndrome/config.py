@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Steel syndrome (STEEL_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Steel syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Scoliosis",
+    "Lumbar hyperlordosis",
+    "Carpal synostosis",
+    "Hip dislocation",
+    "Sensorineural hearing impairment",
+    "Coxa vara",
+    "Childhood onset",
+    "Short stature",
+    "Wide nasal bridge",
+    "Autosomal recessive inheritance",
+    "Prominent forehead",
+    "Infantile onset",
+    "Anteverted nares",
+    "Pes planus",
+    "Clinodactyly of the 5th finger",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

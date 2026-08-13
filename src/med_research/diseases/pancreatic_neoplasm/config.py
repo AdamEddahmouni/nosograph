@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'pancreatic neoplasm (PANCREATIC_NEOPLASM)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pancreatic neoplasm
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased level of L-fucose in urine",
+    "Neoplasm of the pancreas",
+    "Autosomal dominant inheritance",
+    "Typified by somatic mosaicism",
+    "Adult onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

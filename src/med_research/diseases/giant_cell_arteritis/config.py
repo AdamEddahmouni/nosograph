@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Giant cell arteritis (GIANT_CELL_ARTERITIS)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Giant cell arteritis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Juvenile onset",
+    "Young adult onset",
+    "Autosomal recessive inheritance",
+    "Nephrotic syndrome",
+    "Progressive",
+    "Microscopic hematuria",
+    "Hypoalbuminemia",
+    "Proteinuria",
+    "Late onset",
+    "Adult onset",
+    "Stage 5 chronic kidney disease",
+    "Renal insufficiency",
+    "Chronic kidney disease",
+    "Renal tubular atrophy",
+    "Focal segmental glomerulosclerosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

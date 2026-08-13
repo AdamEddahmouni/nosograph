@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'renal hypomagnesemia 2 (RENAL_HYPOMAGNESEMIA_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of renal hypomagnesemia 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypokalemia",
+    "Renal magnesium wasting",
+    "Renal insufficiency",
+    "Hypocalciuria",
+    "Hypomagnesemia",
+    "Generalized muscle weakness",
+    "Chondrocalcinosis",
+    "Autosomal dominant inheritance",
+    "Seizure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

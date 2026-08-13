@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'isolated growth hormone deficiency type IB (ISOLATED_GROWTH_HO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of isolated growth hormone deficiency type IB
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Decreased response to growth hormone stimulation test",
+    "Delayed skeletal maturation",
+    "Acromicria",
+    "Reduced circulating growth hormone concentration",
+    "Micropenis",
+    "Short stature",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

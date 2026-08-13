@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'thrombocytopenia 2 (THROMBOCYTOPENIA_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of thrombocytopenia 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal platelet volume",
+    "Thrombocytopenia",
+    "Bruising susceptibility",
+    "Autosomal dominant inheritance",
+    "Abnormal platelet shape",
+    "Increased megakaryocyte colony forming unit count",
+    "Increased total leukocyte count",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

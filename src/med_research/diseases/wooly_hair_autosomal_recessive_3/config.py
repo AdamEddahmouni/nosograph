@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'wooly hair, autosomal recessive 3 (WOOLY_HAIR_AUTOSOMAL_RECESS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of wooly hair, autosomal recessive 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sparse hair",
+    "Sparse scalp hair",
+    "Sparse eyelashes",
+    "Fine hair",
+    "Curly hair",
+    "Autosomal recessive inheritance",
+    "Trichorrhexis nodosa",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,13 @@ PIPELINE_LABEL = "Barrett esophagus (BARRETTS_ESOPHAGUS)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Barrett esophagus
-SYMPTOMS = []
+SYMPTOMS = [
+    "Typified by somatic mosaicism",
+    "Gastroesophageal reflux",
+    "Esophageal ulceration",
+    "Barrett esophagus",
+    "Esophageal carcinoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

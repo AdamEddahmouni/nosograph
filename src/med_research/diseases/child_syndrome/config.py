@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'CHILD syndrome (CHILD_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of CHILD syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital ichthyosiform erythroderma",
+    "Unilateral renal agenesis",
+    "Epidermal acanthosis",
+    "Umbilical hernia",
+    "X-linked dominant inheritance",
+    "Mild intrauterine growth retardation",
+    "Absent middle phalanx of 3rd finger",
+    "Alopecia",
+    "Elevated 8-dehydrocholesterol",
+    "Absent toe",
+    "Vertebral hypoplasia",
+    "Hypoplastic pelvis",
+    "Scoliosis",
+    "Thyroid hypoplasia",
+    "Erythema",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

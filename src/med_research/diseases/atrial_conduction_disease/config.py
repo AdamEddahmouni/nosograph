@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'atrial conduction disease (ATRIAL_CONDUCTION_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of atrial conduction disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cardiac arrest",
+    "Atrial flutter",
+    "Prolonged QTc interval",
+    "Sinus bradycardia",
+    "Autosomal dominant inheritance",
+    "Left anterior fascicular block",
+    "Dilated cardiomyopathy",
+    "Atrial arrhythmia",
+    "Atrial fibrillation",
+    "Paroxysmal supraventricular tachycardia",
+    "Complete right bundle branch block",
+    "Congestive heart failure",
+    "Premature ventricular contraction",
+    "Tachycardia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

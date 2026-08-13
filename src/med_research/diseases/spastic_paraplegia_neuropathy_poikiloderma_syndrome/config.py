@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'spastic paraplegia-neuropathy-poikiloderma syndrome (SPASTIC_P
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spastic paraplegia-neuropathy-poikiloderma syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Onion bulb formation",
+    "Spastic paraplegia",
+    "Demyelinating sensory neuropathy",
+    "Poikiloderma",
+    "Absent eyebrow",
+    "Distal amyotrophy",
+    "Demyelinating motor neuropathy",
+    "Autosomal dominant inheritance",
+    "Absent eyelashes",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

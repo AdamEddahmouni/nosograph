@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spondyloepiphyseal dysplasia, Cantu type (SPONDYLOEPIPHYSEAL_D
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondyloepiphyseal dysplasia, Cantu type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Restrictive ventilatory defect",
+    "Spondyloepiphyseal dysplasia",
+    "Platyspondyly",
+    "Malar flattening",
+    "Brachydactyly",
+    "Short phalanx of finger",
+    "Wide mouth",
+    "Autosomal dominant inheritance",
+    "Round face",
+    "Hoarse voice",
+    "Abnormally high-pitched voice",
+    "Depressed nasal bridge",
+    "Midface retrusion",
+    "Short palm",
+    "Small epiphyses",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

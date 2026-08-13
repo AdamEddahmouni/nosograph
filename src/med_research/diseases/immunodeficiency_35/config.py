@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'immunodeficiency 35 (IMMUNODEFICIENCY_35)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 35
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Recurrent viral infections",
+    "Recurrent respiratory infections",
+    "Recurrent mycobacterial infections",
+    "Increased circulating IgE concentration",
+    "Recurrent fungal infections",
+    "Immunodeficiency",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

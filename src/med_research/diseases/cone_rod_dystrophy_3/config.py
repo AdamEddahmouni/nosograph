@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'cone-rod dystrophy 3 (CONE_ROD_DYSTROPHY_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cone-rod dystrophy 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Young adult onset",
+    "Pigmentary retinopathy",
+    "Attenuation of retinal blood vessels",
+    "Juvenile onset",
+    "Autosomal recessive inheritance",
+    "Central scotoma",
+    "Color vision defect",
+    "Peripheral visual field loss",
+    "Cone/cone-rod dystrophy",
+    "Childhood onset",
+    "Optic disc pallor",
+    "ERG: Reduced dark-adapted b-wave amplitude",
+    "Bull's eye maculopathy",
+    "Visual loss",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'human HOXA1 syndromes (HUMAN_HOXA1_SYNDROMES)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of human HOXA1 syndromes
-SYMPTOMS = []
+SYMPTOMS = [
+    "Delayed gross motor development",
+    "Horizontal supranuclear gaze palsy",
+    "Internal carotid artery hypoplasia",
+    "Duane anomaly",
+    "Seizure",
+    "Central hypoventilation",
+    "Autosomal recessive inheritance",
+    "Sensorineural hearing impairment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

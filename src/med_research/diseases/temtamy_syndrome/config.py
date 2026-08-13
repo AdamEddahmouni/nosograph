@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'temtamy syndrome (TEMTAMY_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of temtamy syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Convex nasal ridge",
+    "Seizure",
+    "Agenesis of corpus callosum",
+    "Lens luxation",
+    "Chorioretinal coloboma",
+    "Hypotonia",
+    "Aortic regurgitation",
+    "Talipes equinovarus",
+    "Low-set ears",
+    "Frontal bossing",
+    "Thick corpus callosum",
+    "Hypertelorism",
+    "Pes planus",
+    "Dental crowding",
+    "Hypertonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

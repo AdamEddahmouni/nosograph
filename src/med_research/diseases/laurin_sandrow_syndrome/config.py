@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'laurin-Sandrow syndrome (LAURIN_SANDROW_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of laurin-Sandrow syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Absent radius",
+    "Autosomal dominant inheritance",
+    "Hand polydactyly",
+    "Syndactyly",
+    "Patellar aplasia",
+    "Triphalangeal thumb",
+    "Underdeveloped nasal alae",
+    "Absent tibia",
+    "Abnormality of the face",
+    "Short foot",
+    "Broad foot",
+    "Fibular duplication",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

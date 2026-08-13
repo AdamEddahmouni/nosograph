@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'leukoencephalopathy, progressive, with ovarian failure (LEUKOE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of leukoencephalopathy, progressive, with ovarian failure
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cytochrome C oxidase-negative muscle fibers",
+    "Spasticity",
+    "Depression",
+    "Dysarthria",
+    "Nystagmus",
+    "Young adult onset",
+    "Middle age onset",
+    "Babinski sign",
+    "Premature ovarian insufficiency",
+    "Muscle weakness",
+    "Cerebellar atrophy",
+    "Lateral ventricle dilatation",
+    "Ataxia",
+    "Progressive leukoencephalopathy",
+    "Loss of speech",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'Bangstad syndrome (BANGSTAD_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Bangstad syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Convex nasal ridge",
+    "Small for gestational age",
+    "Insulin-resistant diabetes mellitus",
+    "Cerebral hypoplasia",
+    "Autosomal recessive inheritance",
+    "Goiter",
+    "Retrognathia",
+    "Progressive cerebellar ataxia",
+    "Primary gonadal insufficiency",
+    "Intellectual disability",
+    "Severe short stature",
+    "Abnormally large globe",
+    "Pancytopenia",
+    "Narrow face",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

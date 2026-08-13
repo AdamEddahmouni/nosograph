@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'PLIN1-related familial partial lipodystrophy (PLIN1_RELATED_FA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of PLIN1-related familial partial lipodystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Skeletal muscle hypertrophy",
+    "Hypertriglyceridemia",
+    "Young adult onset",
+    "Insulin resistance",
+    "Miscarriage",
+    "Hypertension",
+    "Oligomenorrhea",
+    "Lipodystrophy",
+    "Stroke",
+    "Autosomal dominant inheritance",
+    "Acanthosis nigricans",
+    "Insulin-resistant diabetes mellitus",
+    "Hepatic steatosis",
+    "Lipoatrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

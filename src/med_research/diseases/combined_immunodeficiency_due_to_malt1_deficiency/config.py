@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'combined immunodeficiency due to MALT1 deficiency (COMBINED_IM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of combined immunodeficiency due to MALT1 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Immunodeficiency",
+    "Infantile onset",
+    "Recurrent viral infections",
+    "Complete or near-complete absence of specific antibody response to tetanus vaccine",
+    "Death in adolescence",
+    "Cheilitis",
+    "Skin rash",
+    "Abnormal lymphocyte count",
+    "Bronchiectasis",
+    "Decreased anti-CD3/28-induced T-cell proliferation",
+    "Mastoiditis",
+    "Decreased body weight",
+    "Growth delay",
+    "Clubbing",
+    "Recurrent lower respiratory tract infections",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'dentinogenesis imperfecta type 3 (DENTINOGENESIS_IMPERFECTA_TY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dentinogenesis imperfecta type 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Odontodysplasia",
+    "Dental enamel pits",
+    "Anterior open-bite malocclusion",
+    "Autosomal dominant inheritance",
+    "Dentinogenesis imperfecta",
+    "Periapical bone loss",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

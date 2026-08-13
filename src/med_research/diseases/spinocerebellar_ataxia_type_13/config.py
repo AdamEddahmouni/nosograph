@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spinocerebellar ataxia type 13 (SPINOCEREBELLAR_ATAXIA_TYPE_13
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spinocerebellar ataxia type 13
-SYMPTOMS = []
+SYMPTOMS = [
+    "Young adult onset",
+    "Gait ataxia",
+    "Impaired distal vibration sensation",
+    "Jerky ocular pursuit movements",
+    "Hypotonia",
+    "Intellectual disability",
+    "Autosomal dominant inheritance",
+    "Nystagmus",
+    "Abnormal pyramidal tract morphology",
+    "Abnormal pyramidal sign",
+    "Progressive cerebellar ataxia",
+    "Cerebellar atrophy",
+    "Slowly progressive",
+    "Cognitive impairment",
+    "Limb dysmetria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

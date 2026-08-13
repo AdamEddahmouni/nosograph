@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'tarsal-carpal coalition syndrome (TARSAL_CARPAL_COALITION_SYND
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of tarsal-carpal coalition syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Humeroradial synostosis",
+    "Short 1st metacarpal",
+    "Progressive fusion 2nd-5th proximal interphalangeal joints",
+    "Clinodactyly",
+    "Cubitus valgus",
+    "Distal finger symphalangism",
+    "Hearing abnormality",
+    "Radial deviation of finger",
+    "Abnormality of body height",
+    "Tarsal synostosis",
+    "Congenital onset",
+    "Carpal synostosis",
+    "Brachydactyly",
+    "Proximal finger symphalangism",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'cataract 8 multiple types (CATARACT_8_MULTIPLE_TYPES)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cataract 8 multiple types
-SYMPTOMS = []
+SYMPTOMS = [
+    "Developmental cataract",
+    "Autosomal dominant inheritance",
+    "Nuclear cataract",
+    "Progressive visual loss",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

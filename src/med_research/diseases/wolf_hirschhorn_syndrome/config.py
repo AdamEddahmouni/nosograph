@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Wolf-Hirschhorn syndrome (WOLF_HIRSCHHORN_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Wolf-Hirschhorn syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Absent septum pellucidum",
+    "Ectopia pupillae",
+    "Sacral dimple",
+    "Rieger anomaly",
+    "Webbed neck",
+    "Scoliosis",
+    "Biliary tract abnormality",
+    "Talipes equinovarus",
+    "Split hand",
+    "Accessory spleen",
+    "Generalized hypotonia",
+    "Hydrocephalus",
+    "Short thumb",
+    "Short stature",
+    "Metatarsus adductus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

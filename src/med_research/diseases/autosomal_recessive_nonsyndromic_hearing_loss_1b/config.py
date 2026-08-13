@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'autosomal recessive nonsyndromic hearing loss 1B (AUTOSOMAL_RE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal recessive nonsyndromic hearing loss 1B
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hearing impairment",
+    "Abnormal vestibular function",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

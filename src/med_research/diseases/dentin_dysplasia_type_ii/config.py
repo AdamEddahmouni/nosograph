@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'dentin dysplasia type II (DENTIN_DYSPLASIA_TYPE_II)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dentin dysplasia type II
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pulp calcification",
+    "Dentinogenesis imperfecta limited to primary teeth",
+    "Thistle tube shaped pulp",
+    "Autosomal dominant inheritance",
+    "Infantile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

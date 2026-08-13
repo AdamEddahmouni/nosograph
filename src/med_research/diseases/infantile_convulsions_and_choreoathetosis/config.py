@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'infantile convulsions and choreoathetosis (INFANTILE_CONVULSIO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of infantile convulsions and choreoathetosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Focal-onset seizure",
+    "Generalized-onset seizure",
+    "Neurodevelopmental abnormality",
+    "Juvenile onset",
+    "Infantile spasms",
+    "Normal interictal EEG",
+    "Focal sensory seizure",
+    "Early young adult onset",
+    "Paroxysmal choreoathetosis",
+    "Paroxysmal dystonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

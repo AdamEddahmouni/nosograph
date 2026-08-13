@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Bardet-Biedl syndrome (BARDET_BIEDL_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Bardet-Biedl syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Micropenis",
+    "Decreased testicular size",
+    "Short foot",
+    "Recurrent otitis media",
+    "Abdominal obesity",
+    "Visual impairment",
+    "Foot polydactyly",
+    "Postaxial foot polydactyly",
+    "Short palpebral fissure",
+    "Childhood onset",
+    "Round face",
+    "Short stature",
+    "Abnormal speech pattern",
+    "Bulbous nose",
+    "Nephrogenic diabetes insipidus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

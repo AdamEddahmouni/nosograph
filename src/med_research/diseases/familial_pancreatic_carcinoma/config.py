@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'familial pancreatic carcinoma (FAMILIAL_PANCREATIC_CARCINOMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial pancreatic carcinoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Adult onset",
+    "Increased level of L-fucose in urine",
+    "Neoplasm of the pancreas",
+    "Typified by somatic mosaicism",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

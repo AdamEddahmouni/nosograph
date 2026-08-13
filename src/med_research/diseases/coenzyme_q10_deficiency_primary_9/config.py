@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'coenzyme q10 deficiency, primary, 9 (COENZYME_Q10_DEFICIENCY_P
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of coenzyme q10 deficiency, primary, 9
-SYMPTOMS = []
+SYMPTOMS = [
+    "Type 2 muscle fiber predominance",
+    "Hypometric saccades",
+    "Brisk reflexes",
+    "Lower limb spasticity",
+    "Slow saccadic eye movements",
+    "Autosomal recessive inheritance",
+    "Horizontal nystagmus",
+    "Myoclonus",
+    "Impaired tandem gait",
+    "Ataxia",
+    "Global developmental delay",
+    "Bilateral tonic-clonic seizure with generalized onset",
+    "Short attention span",
+    "Tremor",
+    "Cerebellar atrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

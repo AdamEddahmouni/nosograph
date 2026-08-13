@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'dilated cardiomyopathy 1J (DILATED_CARDIOMYOPATHY_1J)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dilated cardiomyopathy 1J
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dilated cardiomyopathy",
+    "Autosomal dominant inheritance",
+    "Sensorineural hearing impairment",
+    "Sudden death",
+    "Abnormal left ventricular function",
+    "Congestive heart failure",
+    "Sudden cardiac death",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

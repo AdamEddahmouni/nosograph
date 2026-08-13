@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'erythrocytosis, familial, 3 (ERYTHROCYTOSIS_FAMILIAL_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of erythrocytosis, familial, 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased hematocrit",
+    "Autosomal dominant inheritance",
+    "Increased circulating hemoglobin concentration",
+    "Increased red blood cell mass",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

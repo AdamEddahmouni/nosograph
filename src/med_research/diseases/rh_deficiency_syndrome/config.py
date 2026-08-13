@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Rh deficiency syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperbilirubinemia",
+    "Reticulocytosis",
+    "Unconjugated hyperbilirubinemia",
+    "Autosomal dominant inheritance",
+    "Jaundice",
+    "Stomatocytosis",
+    "Hemolytic anemia",
+    "Increased red cell osmotic fragility",
+    "Autosomal recessive inheritance",
+    "Anisocytosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

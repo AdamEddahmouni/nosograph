@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'deafness, autosomal dominant 39, with dentinogenesis imperfect
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of deafness, autosomal dominant 39, with dentinogenesis imperfecta 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dentinogenesis imperfecta",
+    "Autosomal dominant inheritance",
+    "High-frequency hearing impairment",
+    "Tinnitus",
+    "Bilateral sensorineural hearing impairment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'microvillus inclusion disease (MICROVILLUS_INCLUSION_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of microvillus inclusion disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Growth delay",
+    "Villous atrophy",
+    "Autosomal recessive inheritance",
+    "Neonatal onset",
+    "Protracted diarrhea",
+    "Abnormal intestine morphology",
+    "Malnutrition",
+    "Death in infancy",
+    "Dehydration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

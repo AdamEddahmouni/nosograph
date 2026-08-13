@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'alopecia universalis congenita (ALOPECIA_UNIVERSALIS_CONGENITA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of alopecia universalis congenita
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Absent eyelashes",
+    "Absent eyebrow",
+    "Absent axillary hair",
+    "Neonatal onset",
+    "Alopecia universalis",
+    "Absent pubic hair",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Keutel syndrome (KEUTEL_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Keutel syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sinusitis",
+    "Costal cartilage calcification",
+    "Short distal phalanx of finger",
+    "Hypertension",
+    "Midface retrusion",
+    "Shortening of all distal phalanges of the fingers",
+    "Airway obstruction",
+    "Mild intellectual disability",
+    "Recurrent bronchitis",
+    "Epiphyseal stippling",
+    "Short hallux",
+    "Pulmonary artery hypoplasia",
+    "Growth abnormality",
+    "Autosomal recessive inheritance",
+    "Pulmonic stenosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

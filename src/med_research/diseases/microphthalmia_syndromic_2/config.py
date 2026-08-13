@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'microphthalmia, syndromic 2 (MICROPHTHALMIA_SYNDROMIC_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of microphthalmia, syndromic 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Septate vagina",
+    "Scoliosis",
+    "Short stature",
+    "Persistence of primary teeth",
+    "Hypoplasia of the corpus callosum",
+    "Cryptorchidism",
+    "Hammertoe",
+    "Broad nasal tip",
+    "Ventricular septal defect",
+    "Narrow face",
+    "Retinal detachment",
+    "Supernumerary tooth",
+    "X-linked dominant inheritance",
+    "Motor delay",
+    "Anteverted ears",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

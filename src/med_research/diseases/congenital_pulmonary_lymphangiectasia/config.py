@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital pulmonary lymphangiectasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Edema",
+    "Wide nasal bridge",
+    "Pedal edema",
+    "Pleural effusion",
+    "Pulmonary lymphangiectasia",
+    "Flat face",
+    "Recurrent respiratory infections",
+    "Malar flattening",
+    "Chylothorax",
+    "Antenatal onset",
+    "Palpebral edema",
+    "Intellectual disability",
+    "Nonimmune hydrops fetalis",
+    "Depressed nasal bridge",
+    "Bronchodysplasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

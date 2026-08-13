@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'short stature due to GHSR deficiency (SHORT_STATURE_DUE_TO_GHS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of short stature due to GHSR deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased response to growth hormone stimulation test",
+    "Autosomal recessive inheritance",
+    "Delayed skeletal maturation",
+    "Small pituitary gland",
+    "Autosomal dominant inheritance",
+    "Postnatal growth retardation",
+    "Short stature",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

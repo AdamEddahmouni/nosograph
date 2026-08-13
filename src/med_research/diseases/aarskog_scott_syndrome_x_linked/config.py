@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LIN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Aarskog-Scott syndrome, X-linked
-SYMPTOMS = []
+SYMPTOMS = [
+    "Bilateral cryptorchidism",
+    "Single transverse palmar crease",
+    "Inguinal hernia",
+    "Frontal bossing",
+    "Broad philtrum",
+    "Short stature",
+    "Childhood onset",
+    "Elevated circulating follicle stimulating hormone level",
+    "Short 5th finger",
+    "Radial deviation of finger",
+    "Hypermetropia",
+    "Obesity",
+    "Mild intellectual disability",
+    "Mild short stature",
+    "Attention deficit hyperactivity disorder",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

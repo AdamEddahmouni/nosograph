@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'macrocephaly-developmental delay syndrome (MACROCEPHALY_DEVELO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of macrocephaly-developmental delay syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hepatomegaly",
+    "Ventriculomegaly",
+    "Frontal bossing",
+    "Downslanted palpebral fissures",
+    "Motor delay",
+    "Delayed speech and language development",
+    "Recurrent pneumonia",
+    "Macrocephaly",
+    "Bilateral tonic-clonic seizure",
+    "High palate",
+    "Anxiety",
+    "Dolichocephaly",
+    "Generalized-onset seizure",
+    "Generalized non-motor (absence) seizure",
+    "Hypertelorism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

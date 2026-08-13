@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'Peyronie disease (PEYRONIE_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Peyronie disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Male-limited expression",
+    "Abnormality of the genitourinary system",
+    "Autosomal dominant inheritance",
+    "Dupuytren contracture",
+    "Abnormality of the skeletal system",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

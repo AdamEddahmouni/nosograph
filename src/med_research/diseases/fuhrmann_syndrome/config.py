@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Fuhrmann syndrome (FUHRMANN_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Fuhrmann syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ulnar deviation of finger",
+    "Aplasia/Hypoplasia of the 5th finger",
+    "Hypoplasia of the radius",
+    "Radial bowing",
+    "Clinodactyly",
+    "Autosomal recessive inheritance",
+    "Aplasia/Hypoplasia of the phalanges of the hand",
+    "Finger syndactyly",
+    "Postaxial hand polydactyly",
+    "Finger aplasia",
+    "Aplasia/Hypoplasia of metatarsal bones",
+    "Fibular aplasia",
+    "Talipes equinovarus",
+    "Absent toenail",
+    "Amenorrhea",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'atelosteogenesis type III (ATELOSTEOGENESIS_TYPE_III)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of atelosteogenesis type III
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypoplasia of the maxilla",
+    "Depressed nasal bridge",
+    "Sandal gap",
+    "Short neck",
+    "Tombstone-shaped proximal phalanges",
+    "Micrognathia",
+    "Prominent occiput",
+    "Cervical segmentation defect",
+    "Scoliosis",
+    "Frontal bossing",
+    "Radial bowing",
+    "Cervical kyphosis",
+    "Rhizomelia",
+    "Flat acetabular roof",
+    "Malar flattening",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

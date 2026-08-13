@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'progressive microcephaly-seizures-cortical blindness-developme
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of progressive microcephaly-seizures-cortical blindness-developmental delay syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Microcephaly",
+    "Neonatal onset",
+    "Growth delay",
+    "Short stature",
+    "Seizure",
+    "Global developmental delay",
+    "Poor speech",
+    "Hypotonia",
+    "Bronchiectasis",
+    "Cerebral visual impairment",
+    "Optic atrophy",
+    "Infantile onset",
+    "Hypoplasia of the corpus callosum",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

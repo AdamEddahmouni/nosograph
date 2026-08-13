@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Werner syndrome (WERNER_SYNDROME)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Werner syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Achilles tendon calcification",
+    "Alopecia of scalp",
+    "Abnormally high-pitched voice",
+    "Young adult onset",
+    "Retinal degeneration",
+    "Autosomal recessive inheritance",
+    "Elevated circulating alanine aminotransferase concentration",
+    "Elevated hemoglobin A1c",
+    "Bird-like facies",
+    "Low back pain",
+    "Cataract",
+    "Progeroid facial appearance",
+    "Nail dystrophy",
+    "Hyperglycemia",
+    "Osteoporosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

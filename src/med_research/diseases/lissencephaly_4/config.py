@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'lissencephaly 4 (LISSENCEPHALY_4)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lissencephaly 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Lissencephaly",
+    "Short stature",
+    "Seizure",
+    "Agenesis of corpus callosum",
+    "Feeding difficulties",
+    "Hyperreflexia",
+    "Hypertonia",
+    "Profound intellectual disability",
+    "Simplified gyral pattern",
+    "Cerebellar hypoplasia",
+    "Congenital onset",
+    "Autosomal recessive inheritance",
+    "Wide nasal bridge",
+    "Colpocephaly",
+    "Growth delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

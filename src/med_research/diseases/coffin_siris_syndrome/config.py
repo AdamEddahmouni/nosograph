@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Coffin-Siris syndrome (COFFIN_SIRIS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Coffin-Siris syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Myopia",
+    "Everted upper lip vermilion",
+    "Frontal bossing",
+    "Convex nasal ridge",
+    "Short phalanx of the 5th toe",
+    "Abnormally high-pitched voice",
+    "Sparse scalp hair",
+    "Aggressive behavior",
+    "Long philtrum",
+    "Microcephaly",
+    "Intellectual disability",
+    "Broad philtrum",
+    "Depressed nasal bridge",
+    "Autistic behavior",
+    "Abnormal pinna morphology",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

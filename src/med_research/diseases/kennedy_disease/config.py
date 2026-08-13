@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Kennedy disease (KENNEDY_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Kennedy disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dysphagia",
+    "Hyporeflexia",
+    "Bulbar palsy",
+    "Testicular atrophy",
+    "Slowly progressive",
+    "Adult onset",
+    "Dysarthria",
+    "Calf muscle hypertrophy",
+    "Decreased fertility",
+    "X-linked recessive inheritance",
+    "Abnormality of the mouth",
+    "Peripheral neuropathy",
+    "Gynecomastia",
+    "Elevated circulating creatine kinase activity",
+    "Fasciculations",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

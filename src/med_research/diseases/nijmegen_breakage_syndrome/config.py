@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Nijmegen breakage syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Epicanthus",
+    "Decreased total B cell count",
+    "Diarrhea",
+    "2-3 toe syndactyly",
+    "Recurrent otitis media",
+    "Thrombocytopenia",
+    "Recurrent infection of the gastrointestinal tract",
+    "Recurrent urinary tract infections",
+    "Delayed speech and language development",
+    "Mastoiditis",
+    "Choanal atresia",
+    "Hyperactivity",
+    "Recurrent pneumonia",
+    "Premature ovarian insufficiency",
+    "Intrauterine growth retardation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

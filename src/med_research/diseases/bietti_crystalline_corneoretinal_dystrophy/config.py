@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'Bietti crystalline corneoretinal dystrophy (BIETTI_CRYSTALLINE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Bietti crystalline corneoretinal dystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "High myopia",
+    "Chorioretinal atrophy",
+    "Marginal corneal dystrophy",
+    "Constriction of peripheral visual field",
+    "Autosomal recessive inheritance",
+    "Progressive night blindness",
+    "Reduced visual acuity",
+    "Paracentral scotoma",
+    "Corneal crystals",
+    "Progressive visual loss",
+    "Retinal degeneration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

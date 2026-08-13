@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'familial progressive hyperpigmentation (FAMILIAL_PROGRESSIVE_H
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial progressive hyperpigmentation
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperpigmentation of the skin",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

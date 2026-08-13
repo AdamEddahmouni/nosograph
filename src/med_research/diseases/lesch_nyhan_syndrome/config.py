@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Lesch-Nyhan syndrome (LESCH_NYHAN_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Lesch-Nyhan syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Self-mutilation",
+    "Short stature",
+    "Young adult onset",
+    "Abnormality of extrapyramidal motor function",
+    "Self-injurious behavior",
+    "Kidney stone",
+    "X-linked recessive inheritance",
+    "Opisthotonus",
+    "Nephrocalcinosis",
+    "Motor delay",
+    "Childhood onset",
+    "Vomiting",
+    "Podagra",
+    "Poor head control",
+    "Seizure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

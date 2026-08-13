@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'episodic ataxia, type 9 (EPISODIC_ATAXIA_TYPE_9)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of episodic ataxia, type 9
-SYMPTOMS = []
+SYMPTOMS = [
+    "Tonic seizure",
+    "Encephalopathy",
+    "Autosomal dominant inheritance",
+    "Vertigo",
+    "Clonic seizure",
+    "Episodic ataxia",
+    "Nystagmus",
+    "Bilateral tonic-clonic seizure",
+    "Status epilepticus",
+    "Vomiting",
+    "Seizure",
+    "Paroxysmal vertigo",
+    "Dystonia",
+    "Delayed ability to stand",
+    "Arachnoid cyst",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

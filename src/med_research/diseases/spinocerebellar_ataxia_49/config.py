@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spinocerebellar ataxia 49 (SPINOCEREBELLAR_ATAXIA_49)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spinocerebellar ataxia 49
-SYMPTOMS = []
+SYMPTOMS = [
+    "Gaze-evoked nystagmus",
+    "Loss of ambulation",
+    "Strabismus",
+    "Abnormality of extrapyramidal motor function",
+    "Middle age onset",
+    "Cerebellar atrophy",
+    "Diplopia",
+    "Unsteady gait",
+    "Ataxia",
+    "Dysmetria",
+    "Juvenile onset",
+    "Late young adult onset",
+    "Sensory axonal neuropathy",
+    "Pes cavus",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

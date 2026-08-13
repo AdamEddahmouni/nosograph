@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Peters anomaly (PETERS_ANOMALY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Peters anomaly
-SYMPTOMS = []
+SYMPTOMS = [
+    "Glaucoma",
+    "Reduced visual acuity",
+    "Microphthalmia",
+    "Corneal opacity",
+    "Hypoplasia of the fovea",
+    "Abnormal Descemet membrane morphology",
+    "Developmental cataract",
+    "Posterior synechiae of the anterior chamber",
+    "Peters anomaly",
+    "Posterior embryotoxon",
+    "Anterior synechiae of the anterior chamber",
+    "Strabismus",
+    "Microcornea",
+    "Corneal neovascularization",
+    "Developmental glaucoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

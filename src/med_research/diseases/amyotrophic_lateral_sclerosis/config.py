@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'amyotrophic lateral sclerosis (AMYOTROPHIC_LATERAL_SCLEROSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of amyotrophic lateral sclerosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Parkinsonism",
+    "Tetraparesis",
+    "Dysphagia",
+    "Middle age onset",
+    "Young adult onset",
+    "Fasciculations",
+    "Typified by incomplete penetrance",
+    "Paralysis",
+    "Bulbar signs",
+    "Adult onset",
+    "Autosomal dominant inheritance",
+    "Autosomal recessive inheritance",
+    "Caudate atrophy",
+    "Degeneration of the lateral corticospinal tracts",
+    "Abnormal lower motor neuron morphology",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

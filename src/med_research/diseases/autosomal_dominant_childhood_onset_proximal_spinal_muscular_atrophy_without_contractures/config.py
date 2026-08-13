@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autosomal dominant childhood-onset proximal spinal muscular at
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal dominant childhood-onset proximal spinal muscular atrophy without contractures
-SYMPTOMS = []
+SYMPTOMS = [
+    "Spinal muscular atrophy",
+    "Decreased patellar reflex",
+    "Autosomal dominant inheritance",
+    "Proximal lower limb amyotrophy",
+    "Slowly progressive",
+    "Somatic sensory dysfunction",
+    "Difficulty running",
+    "Global developmental delay",
+    "Childhood onset",
+    "Proximal lower limb muscle weakness",
+    "Abnormal foot morphology",
+    "Delayed ability to walk",
+    "Type 2 muscle fiber predominance",
+    "Waddling gait",
+    "EMG: neuropathic changes",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

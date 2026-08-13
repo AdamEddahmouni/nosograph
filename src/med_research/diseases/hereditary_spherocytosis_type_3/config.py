@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'hereditary spherocytosis type 3 (HEREDITARY_SPHEROCYTOSIS_TYPE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hereditary spherocytosis type 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Spherocytosis",
+    "Autosomal recessive inheritance",
+    "Hemolytic anemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

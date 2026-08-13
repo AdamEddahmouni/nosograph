@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'muscular dystrophy-dystroglycanopathy (congenital with impaire
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of muscular dystrophy-dystroglycanopathy (congenital with impaired intellectual development), type B, 15
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased variability in muscle fiber diameter",
+    "Delayed ability to stand",
+    "Autosomal recessive inheritance",
+    "Highly elevated creatine kinase",
+    "Myopathy",
+    "Motor delay",
+    "Generalized non-motor (absence) seizure",
+    "Centrally nucleated skeletal muscle fibers",
+    "Delayed ability to walk",
+    "Abnormal periventricular white matter morphology",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

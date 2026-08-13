@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'West syndrome (WEST_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of West syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Epileptic encephalopathy",
+    "Global brain atrophy",
+    "Tonic seizure",
+    "Hypertonia",
+    "Generalized hypotonia",
+    "Spasticity",
+    "X-linked recessive inheritance",
+    "Axial hypotonia",
+    "Generalized-onset seizure",
+    "Inability to walk",
+    "Small for gestational age",
+    "EEG with burst suppression",
+    "Hypsarrhythmia",
+    "Bilateral tonic-clonic seizure",
+    "Broad forehead",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'vitelliform macular dystrophy 2 (VITELLIFORM_MACULAR_DYSTROPHY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of vitelliform macular dystrophy 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cystoid macular degeneration",
+    "Reduced visual acuity",
+    "Subretinal fluid",
+    "Visual impairment",
+    "Macular dystrophy",
+    "Autosomal dominant inheritance",
+    "Abnormal electroretinogram",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,13 @@ PIPELINE_LABEL = "Thromboangiitis obliterans (THROMBOANGIITIS_OBLITERANS)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Thromboangiitis obliterans
-SYMPTOMS = []
+SYMPTOMS = [
+    "Raynaud phenomenon",
+    "Pain",
+    "Autosomal recessive inheritance",
+    "Limb pain",
+    "Hyperhidrosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

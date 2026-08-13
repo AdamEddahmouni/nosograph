@@ -8,8 +8,11 @@ PIPELINE_LABEL = "Autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Autoimmune hemolytic anemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormality of metabolism/homeostasis",
+    "Autosomal recessive inheritance",
+    "Autoimmune hemolytic anemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Fragile X syndrome (FRAGILE_X)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Fragile X syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pes planus",
+    "Long face",
+    "Macrocephaly",
+    "Periventricular heterotopia",
+    "Abnormal head movements",
+    "Hyperactivity",
+    "Macrotia",
+    "Seizure",
+    "Recurrent hand flapping",
+    "Self-biting",
+    "Joint hypermobility",
+    "Congenital macroorchidism",
+    "Moderate intellectual disability",
+    "Mandibular prognathia",
+    "Typified by incomplete penetrance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'hallux varus-preaxial polysyndactyly syndrome (HALLUX_VARUS_PR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hallux varus-preaxial polysyndactyly syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Preaxial hand polydactyly",
+    "Broad hallux",
+    "Hallux varus",
+    "Autosomal recessive inheritance",
+    "Syndactyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

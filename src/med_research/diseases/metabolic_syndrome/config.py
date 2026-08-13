@@ -8,8 +8,22 @@ PIPELINE_LABEL = "metabolic syndrome (METABOLIC_SYNDROME)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of metabolic syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abdominal obesity",
+    "Young adult onset",
+    "Myocardial infarction",
+    "Autosomal dominant inheritance",
+    "Type II diabetes mellitus",
+    "Middle age onset",
+    "Hypertension",
+    "Stroke",
+    "Truncal obesity",
+    "Hypertriglyceridemia",
+    "Coronary artery stenosis",
+    "Elevated circulating LDL-C concentration",
+    "Hyperglycemia",
+    "Hypercholesterolemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

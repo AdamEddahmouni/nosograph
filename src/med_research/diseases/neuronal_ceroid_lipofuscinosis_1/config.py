@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neuronal ceroid lipofuscinosis 1 (NEURONAL_CEROID_LIPOFUSCINOS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neuronal ceroid lipofuscinosis 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormality of the spleen",
+    "Hypotonia",
+    "Hepatic failure",
+    "Spasticity",
+    "Reduced tissue palmitoyl-protein thioesterase activity",
+    "Vacuolated lymphocytes",
+    "Juvenile onset",
+    "Flexion contracture",
+    "Hallucinations",
+    "Psychomotor deterioration",
+    "Retinal degeneration",
+    "Seizure",
+    "Autosomal recessive inheritance",
+    "Secondary microcephaly",
+    "Intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neurodegeneration, childhood-onset, with cerebellar atrophy (N
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neurodegeneration, childhood-onset, with cerebellar atrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Motor axonal neuropathy",
+    "Congenital onset",
+    "Failure to thrive",
+    "Developmental regression",
+    "Microcephaly",
+    "Motor delay",
+    "Dystonia",
+    "Skeletal muscle atrophy",
+    "Inability to walk",
+    "Nystagmus",
+    "Upgaze palsy",
+    "Tetraparesis",
+    "Global developmental delay",
+    "Cerebellar atrophy",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

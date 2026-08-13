@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'X-linked hypohidrotic ectodermal dysplasia (X_LINKED_HYPOHIDRO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked hypohidrotic ectodermal dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Conical tooth",
+    "Fever",
+    "Thick vermilion border",
+    "Depressed nasal bridge",
+    "Infantile onset",
+    "Everted upper lip vermilion",
+    "Absent eyebrow",
+    "Hypohidrosis",
+    "Prominent supraorbital ridges",
+    "Thin skin",
+    "Periorbital wrinkles",
+    "Dysphonia",
+    "Hypodontia",
+    "Taurodontia",
+    "Abnormal oral mucosa morphology",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

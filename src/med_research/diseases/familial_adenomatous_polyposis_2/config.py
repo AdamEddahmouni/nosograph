@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'familial adenomatous polyposis 2 (FAMILIAL_ADENOMATOUS_POLYPOS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial adenomatous polyposis 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Adenomatous colonic polyposis",
+    "Colon cancer",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

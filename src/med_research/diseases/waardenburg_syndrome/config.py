@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Waardenburg syndrome (WAARDENBURG_SYNDROME)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Waardenburg syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Aganglionic megacolon",
+    "Mandibular prognathia",
+    "Axillary pterygium",
+    "Brachydactyly",
+    "Hypoplastic iris stroma",
+    "Ocular albinism",
+    "Synophrys",
+    "Heterochromia iridis",
+    "Supernumerary ribs",
+    "Aplasia of the semicircular canal",
+    "Bilateral wrist flexion contracture",
+    "Cerebral hypomyelination",
+    "Carpal synostosis",
+    "Hypopigmented skin patches",
+    "Intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

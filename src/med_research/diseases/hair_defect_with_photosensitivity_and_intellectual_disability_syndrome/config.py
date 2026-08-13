@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'hair defect with photosensitivity and intellectual disability 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hair defect with photosensitivity and intellectual disability syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Intellectual disability",
+    "Coarse hair",
+    "Autosomal recessive inheritance",
+    "Cutaneous photosensitivity",
+    "Sparse eyelashes",
+    "Sparse eyebrow",
+    "Sparse hair",
+    "Brittle hair",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

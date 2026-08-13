@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'upper limb mesomelic dysplasia (UPPER_LIMB_MESOMELIC_DYSPLASIA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of upper limb mesomelic dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Distal ulnar hypoplasia",
+    "Hypoplasia of the radius",
+    "Ulnar deviation of the hand",
+    "Hypoplasia of the ulna",
+    "Radial bowing",
+    "Mesomelic arm shortening",
+    "Autosomal dominant inheritance",
+    "Radial ray deficiency",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

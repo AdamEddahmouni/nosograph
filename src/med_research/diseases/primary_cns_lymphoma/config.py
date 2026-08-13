@@ -8,8 +8,9 @@ PIPELINE_LABEL = "Primary CNS lymphoma (PRIMARY_CNS_LYMPHOMA)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Primary CNS lymphoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Lymphoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

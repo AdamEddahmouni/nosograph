@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'otopalatodigital syndrome type 1 (OTOPALATODIGITAL_SYNDROME_TY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of otopalatodigital syndrome type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nail dystrophy",
+    "Omphalocele",
+    "Toe syndactyly",
+    "Cleft palate",
+    "Malar flattening",
+    "Hypertelorism",
+    "Broad distal phalanx of the thumb",
+    "Short 5th metacarpal",
+    "Thick skull base",
+    "Short stature",
+    "Short distal phalanx of finger",
+    "Narrow mouth",
+    "Limited elbow extension",
+    "Selective tooth agenesis",
+    "Broad hallux",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

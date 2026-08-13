@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mitochondrial DNA depletion syndrome 18 (MITOCHONDRIAL_DNA_DEP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mitochondrial DNA depletion syndrome 18
-SYMPTOMS = []
+SYMPTOMS = [
+    "Axonal degeneration",
+    "Distal muscle weakness",
+    "Foot dorsiflexor weakness",
+    "Elevated urinary quinolinic acid level",
+    "Weakness of facial musculature",
+    "Tongue fasciculations",
+    "Autosomal recessive inheritance",
+    "Falls",
+    "Scoliosis",
+    "Areflexia",
+    "Distal amyotrophy",
+    "Reduced forced vital capacity",
+    "Failure to thrive",
+    "Clonus",
+    "Proximal muscle weakness",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

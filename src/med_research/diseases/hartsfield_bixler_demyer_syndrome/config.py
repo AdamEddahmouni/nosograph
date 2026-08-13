@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Hartsfield-Bixler-Demyer syndrome (HARTSFIELD_BIXLER_DEMYER_SY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Hartsfield-Bixler-Demyer syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Hypertelorism",
+    "Epicanthus",
+    "Global developmental delay",
+    "Gonadotropin deficiency",
+    "Microcephaly",
+    "Wide nose",
+    "Diabetes insipidus",
+    "Alobar holoprosencephaly",
+    "Hypoplasia of the frontal bone",
+    "Ectrodactyly",
+    "Growth delay",
+    "Median cleft upper lip",
+    "Neonatal hypotonia",
+    "Agenesis of corpus callosum",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'palmoplantar keratoderma i, striate, focal, or diffuse (PALMOP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of palmoplantar keratoderma i, striate, focal, or diffuse
-SYMPTOMS = []
+SYMPTOMS = [
+    "Streaks of hyperkeratosis along each finger onto the palm",
+    "Orthokeratotic hyperkeratosis",
+    "Epidermal acanthosis",
+    "Onycholysis",
+    "Hypergranulosis",
+    "Palmoplantar hyperkeratosis",
+    "Yellow nails",
+    "Palmoplantar keratoderma",
+    "Hyperhidrosis",
+    "Autosomal dominant inheritance",
+    "Palmoplantar blistering",
+    "Nail dystrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

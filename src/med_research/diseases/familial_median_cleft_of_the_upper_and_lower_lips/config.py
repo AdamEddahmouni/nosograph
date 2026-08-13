@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'familial median cleft of the upper and lower lips (FAMILIAL_ME
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial median cleft of the upper and lower lips
-SYMPTOMS = []
+SYMPTOMS = [
+    "Median cleft upper lip",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

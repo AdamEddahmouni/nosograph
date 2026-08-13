@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Duchenne muscular dystrophy (DUCHENNE_MUSCULAR_DYSTROPHY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Duchenne muscular dystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Restrictive ventilatory defect",
+    "Obstructive sleep apnea",
+    "Mild intellectual disability",
+    "Loss of ambulation",
+    "Delayed gross motor development",
+    "Respiratory insufficiency due to muscle weakness",
+    "Calf muscle pseudohypertrophy",
+    "Childhood onset",
+    "Difficulty climbing stairs",
+    "Knee flexion contracture",
+    "Hypoventilation",
+    "Congestive heart failure",
+    "Calf muscle hypertrophy",
+    "Respiratory failure",
+    "Dilated cardiomyopathy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

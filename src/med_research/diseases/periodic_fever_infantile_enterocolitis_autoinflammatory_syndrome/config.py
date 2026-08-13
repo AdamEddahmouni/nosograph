@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'periodic fever-infantile enterocolitis-autoinflammatory syndro
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of periodic fever-infantile enterocolitis-autoinflammatory syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Splenomegaly",
+    "Fatigue",
+    "Arthralgia",
+    "Reduced total natural killer cell count",
+    "Diffuse alveolar hemorrhage",
+    "Failure to thrive",
+    "Feeding difficulties in infancy",
+    "Fever",
+    "Myalgia",
+    "Secretory diarrhea",
+    "Pancytopenia",
+    "Hypoalbuminemia",
+    "Thrombocytopenia",
+    "Recurrent fever",
+    "Urticaria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

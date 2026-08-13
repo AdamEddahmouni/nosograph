@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'spermatogenic failure 22 (SPERMATOGENIC_FAILURE_22)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spermatogenic failure 22
-SYMPTOMS = []
+SYMPTOMS = [
+    "Young adult onset",
+    "Male infertility",
+    "Cryptozoospermia",
+    "Non-obstructive azoospermia",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

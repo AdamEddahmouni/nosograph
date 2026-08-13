@@ -8,8 +8,22 @@ PIPELINE_LABEL = "spondylometaphyseal dysplasia, 'corner fracture' type (SPONDYL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondylometaphyseal dysplasia, 'corner fracture' type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperconvex vertebral body endplates",
+    "Ovoid vertebral bodies",
+    "Coxa vara",
+    "Corner fracture of metaphysis",
+    "Pectus carinatum",
+    "Short stature",
+    "Scoliosis",
+    "Short femoral neck",
+    "Genu varum",
+    "Autosomal dominant inheritance",
+    "Spondylometaphyseal dysplasia",
+    "Hypoplasia of the odontoid process",
+    "Waddling gait",
+    "Metaphyseal irregularity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

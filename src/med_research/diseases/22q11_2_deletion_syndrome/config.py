@@ -8,8 +8,23 @@ PIPELINE_LABEL = '22q11.2 deletion syndrome (22Q11_2_DELETION_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of 22q11.2 deletion syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Posterior embryotoxon",
+    "Parathyroid hypoplasia",
+    "Microcephaly",
+    "Renal dysplasia",
+    "Hydronephrosis",
+    "Acne",
+    "Emotional lability",
+    "HP_0005435",
+    "Accommodative esotropia",
+    "Seizure",
+    "Abnormal heart morphology",
+    "Right aortic arch with mirror image branching",
+    "Specific learning disability",
+    "Recurrent otitis media",
+    "Esophoria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

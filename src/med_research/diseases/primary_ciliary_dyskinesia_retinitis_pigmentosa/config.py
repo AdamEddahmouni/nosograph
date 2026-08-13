@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'ciliopathy (PRIMARY_CILIARY_DYSKINESIA_RETINITIS_PIGMENTOSA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ciliopathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal cornea morphology",
+    "Chronic otitis media",
+    "Anosmia",
+    "Conductive hearing impairment",
+    "Atelectasis",
+    "Situs inversus totalis",
+    "Communicating hydrocephalus",
+    "Pneumonia",
+    "Asplenia",
+    "Absent frontal sinuses",
+    "Headache",
+    "Male infertility",
+    "Ciliary dyskinesia",
+    "Chronic rhinitis",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

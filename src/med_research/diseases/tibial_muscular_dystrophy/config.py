@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'tibial muscular dystrophy (TIBIAL_MUSCULAR_DYSTROPHY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of tibial muscular dystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cardiomyopathy",
+    "Slowly progressive",
+    "Typified by incomplete penetrance",
+    "Autosomal dominant inheritance",
+    "Steppage gait",
+    "Adult onset",
+    "Muscular dystrophy",
+    "Tibialis anterior muscle atrophy",
+    "Rimmed vacuoles",
+    "Tibialis muscle weakness",
+    "EMG: myopathic abnormalities",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

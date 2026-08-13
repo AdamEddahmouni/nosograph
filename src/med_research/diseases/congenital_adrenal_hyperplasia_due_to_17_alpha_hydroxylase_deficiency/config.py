@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'congenital adrenal hyperplasia due to 17-alpha-hydroxylase def
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital adrenal hyperplasia due to 17-alpha-hydroxylase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypokalemic alkalosis",
+    "Adrenal hyperplasia",
+    "Male pseudohermaphroditism",
+    "Hypertension",
+    "Ambiguous genitalia",
+    "Autosomal recessive inheritance",
+    "Primary amenorrhea",
+    "Adrenogenital syndrome",
+    "Gynecomastia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

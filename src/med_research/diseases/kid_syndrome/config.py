@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'KID syndrome (KID_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of KID syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Myopia",
+    "Elevated circulating hepatic transaminase concentration",
+    "Cobblestone-like hyperkeratosis",
+    "Conjunctivitis",
+    "Sparse scalp hair",
+    "Microdontia",
+    "Oral leukoplakia",
+    "Nail dysplasia",
+    "Pes cavus",
+    "Failure to thrive",
+    "Ichthyosis",
+    "Sensorineural hearing impairment",
+    "Sparse eyelashes",
+    "Corneal ulceration",
+    "Alopecia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

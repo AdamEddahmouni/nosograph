@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'leukoencephalopathy, diffuse hereditary, with spheroids 1 (LEU
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of leukoencephalopathy, diffuse hereditary, with spheroids 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Middle age onset",
+    "Auditory hallucination",
+    "Leukoencephalopathy",
+    "Late young adult onset",
+    "Memory impairment",
+    "Corpus callosum atrophy",
+    "Hyperreflexia",
+    "Shuffling gait",
+    "Mutism",
+    "Seizure",
+    "Global brain atrophy",
+    "Bradykinesia",
+    "Gliosis",
+    "Neuronal loss in central nervous system",
+    "Gait disturbance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

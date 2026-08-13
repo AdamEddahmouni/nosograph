@@ -8,8 +8,11 @@ PIPELINE_LABEL = "Stroke (STROKE)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Stroke
-SYMPTOMS = []
+SYMPTOMS = [
+    "Stroke",
+    "Non-Mendelian inheritance",
+    "Adult onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

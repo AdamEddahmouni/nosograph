@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Majeed syndrome (MAJEED_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Majeed syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hepatosplenomegaly",
+    "Failure to thrive",
+    "Delayed puberty",
+    "Autosomal recessive inheritance",
+    "Delayed skeletal maturation",
+    "Elevated erythrocyte sedimentation rate",
+    "Erythroid hyperplasia",
+    "Microcytic anemia",
+    "Anemia of inadequate production",
+    "Bone pain",
+    "Joint swelling",
+    "Flexion contracture",
+    "Recurrent fever",
+    "Arthralgia",
+    "Growth delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

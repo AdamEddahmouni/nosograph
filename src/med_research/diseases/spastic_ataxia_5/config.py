@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spastic ataxia 5 (SPASTIC_ATAXIA_5)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spastic ataxia 5
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dysphagia",
+    "Lower limb muscle weakness",
+    "Bilateral tonic-clonic seizure",
+    "Progressive",
+    "Dysdiadochokinesis",
+    "Sensorimotor neuropathy",
+    "Onion bulb formation",
+    "Spasticity",
+    "Increased intramyocellular lipid droplets",
+    "Generalized myoclonic seizure",
+    "Spastic ataxia",
+    "Spastic paraparesis",
+    "Autosomal recessive inheritance",
+    "Dysarthria",
+    "Distal amyotrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

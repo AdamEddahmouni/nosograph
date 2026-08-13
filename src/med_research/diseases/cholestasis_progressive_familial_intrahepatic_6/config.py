@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'cholestasis, progressive familial intrahepatic, 6 (CHOLESTASIS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cholestasis, progressive familial intrahepatic, 6
-SYMPTOMS = []
+SYMPTOMS = [
+    "Chronic diarrhea",
+    "Elevated gamma-glutamyltransferase level",
+    "Bleeding requiring red cell transfusion",
+    "Periportal fibrosis",
+    "Intrahepatic cholestasis",
+    "Elevated circulating alkaline phosphatase concentration",
+    "Elevated circulating hepatic transaminase concentration",
+    "Autosomal recessive inheritance",
+    "Bruising susceptibility",
+    "Infantile onset",
+    "Failure to thrive",
+    "Conjugated hyperbilirubinemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

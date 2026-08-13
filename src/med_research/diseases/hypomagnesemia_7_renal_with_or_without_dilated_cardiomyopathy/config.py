@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hypomagnesemia 7, renal, with or without dilated cardiomyopath
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypomagnesemia 7, renal, with or without dilated cardiomyopathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Tetany",
+    "Juvenile onset",
+    "Dilated cardiomyopathy",
+    "Early young adult onset",
+    "Polyuria",
+    "Infantile onset",
+    "Nephrocalcinosis",
+    "Reduced left ventricular ejection fraction",
+    "Metabolic acidosis",
+    "Autosomal dominant inheritance",
+    "Hypocalcemia",
+    "Seizure",
+    "Hypokalemia",
+    "Hypomagnesemia",
+    "Hyponatremia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

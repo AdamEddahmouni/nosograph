@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'episodic ataxia type 5 (EPISODIC_ATAXIA_TYPE_5)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of episodic ataxia type 5
-SYMPTOMS = []
+SYMPTOMS = [
+    "Episodic ataxia",
+    "Truncal ataxia",
+    "EEG with spike-wave complexes",
+    "EEG with generalized spikes",
+    "Atypical absence seizure",
+    "Young adult onset",
+    "Gaze-evoked nystagmus",
+    "Ataxia",
+    "Postural instability",
+    "Typified by incomplete penetrance",
+    "Juvenile onset",
+    "Dysarthria",
+    "Vertigo",
+    "Bilateral tonic-clonic seizure",
+    "Myoclonus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

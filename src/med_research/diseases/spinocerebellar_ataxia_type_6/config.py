@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spinocerebellar ataxia type 6 (SPINOCEREBELLAR_ATAXIA_TYPE_6)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spinocerebellar ataxia type 6
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ataxia",
+    "Gaze-evoked horizontal nystagmus",
+    "Truncal ataxia",
+    "Autosomal dominant inheritance",
+    "Insidious onset",
+    "Incoordination",
+    "Sensory neuropathy",
+    "Nausea and vomiting",
+    "Dysphagia",
+    "Loss of ambulation",
+    "Vertigo",
+    "Dysarthria",
+    "Genetic anticipation",
+    "Progressive cerebellar ataxia",
+    "Nystagmus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

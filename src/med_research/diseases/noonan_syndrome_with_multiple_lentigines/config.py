@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Noonan syndrome with multiple lentigines (NOONAN_SYNDROME_WITH
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Noonan syndrome with multiple lentigines
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal aortic valve morphology",
+    "Short neck",
+    "Aplasia of the ovary",
+    "Delayed skeletal maturation",
+    "Low posterior hairline",
+    "Thick lower lip vermilion",
+    "Triangular face",
+    "Delayed menarche",
+    "Hyperkeratosis",
+    "Neonatal hypotonia",
+    "Palpebral thickening",
+    "Tetralogy of Fallot",
+    "Depressed nasal ridge",
+    "Third degree atrioventricular block",
+    "Dry skin",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

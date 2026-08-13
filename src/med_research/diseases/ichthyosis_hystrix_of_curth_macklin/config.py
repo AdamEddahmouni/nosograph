@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'ichthyosis hystrix of Curth-Macklin (ICHTHYOSIS_HYSTRIX_OF_CUR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ichthyosis hystrix of Curth-Macklin
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital onset",
+    "Autosomal dominant inheritance",
+    "Hyperkeratotic papule",
+    "Abnormal blistering of the skin",
+    "Scaling skin",
+    "Amniotic constriction ring",
+    "Knuckle pad",
+    "Palmoplantar keratoderma",
+    "Fragile skin",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'paternal uniparental disomy of chromosome 14 (PATERNAL_UNIPARE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of paternal uniparental disomy of chromosome 14
-SYMPTOMS = []
+SYMPTOMS = [
+    "Long clavicle",
+    "Polyhydramnios",
+    "Pulmonic stenosis",
+    "Diastasis recti",
+    "Patent ductus arteriosus",
+    "Micrognathia",
+    "Pulmonary hypoplasia",
+    "Global developmental delay",
+    "Depressed nasal bridge",
+    "Kyphoscoliosis",
+    "Sporadic",
+    "Limb undergrowth",
+    "Anteverted nares",
+    "Atrial septal defect",
+    "Hepatomegaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

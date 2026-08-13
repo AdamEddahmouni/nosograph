@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'deafness-small bowel diverticulosis-neuropathy syndrome (DEAFN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of deafness-small bowel diverticulosis-neuropathy syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sensorineural hearing impairment",
+    "Tachycardia",
+    "Autosomal recessive inheritance",
+    "Small bowel diverticula",
+    "Peripheral neuropathy",
+    "Jejunoileal ulceration",
+    "Fat malabsorption",
+    "Hypoproteinemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

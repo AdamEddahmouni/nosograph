@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'hereditary spherocytosis type 4 (HEREDITARY_SPHEROCYTOSIS_TYPE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hereditary spherocytosis type 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Jaundice",
+    "Young adult onset",
+    "Spherocytosis",
+    "Reticulocytosis",
+    "Hemolytic anemia",
+    "Hyperbilirubinemia",
+    "Increased red cell osmotic fragility",
+    "Autosomal dominant inheritance",
+    "Splenomegaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,12 @@ PIPELINE_LABEL = "Hashimoto thyroiditis (HASHIMOTO_THYROIDITIS)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Hashimoto thyroiditis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Thyroiditis",
+    "Autosomal dominant inheritance",
+    "Autoimmune antibody positivity",
+    "Hashimoto thyroiditis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

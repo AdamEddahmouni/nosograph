@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'obesity due to congenital leptin deficiency (OBESITY_DUE_TO_CO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of obesity due to congenital leptin deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypogonadism",
+    "Recurrent pneumonia",
+    "Childhood onset",
+    "Decreased serum leptin",
+    "Decreased testicular size",
+    "Gynecomastia",
+    "Autosomal recessive inheritance",
+    "Primary amenorrhea",
+    "Obesity",
+    "Recurrent ear infections",
+    "Micropenis",
+    "Polyphagia",
+    "Recurrent upper respiratory tract infections",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

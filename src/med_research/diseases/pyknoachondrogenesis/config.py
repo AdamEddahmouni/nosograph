@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'pyknoachondrogenesis (PYKNOACHONDROGENESIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pyknoachondrogenesis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Stillbirth",
+    "Increased bone mineral density",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

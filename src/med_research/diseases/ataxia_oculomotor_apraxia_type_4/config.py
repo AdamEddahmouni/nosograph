@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Ataxia-oculomotor apraxia type 4 (ATAXIA_OCULOMOTOR_APRAXIA_TY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Ataxia-oculomotor apraxia type 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ataxia",
+    "Juvenile onset",
+    "Autosomal recessive inheritance",
+    "Tetraplegia",
+    "Impaired vibratory sensation",
+    "Atrophy/Degeneration affecting the brainstem",
+    "Rapidly progressive",
+    "Oculomotor apraxia",
+    "Cerebellar atrophy",
+    "Areflexia",
+    "Hypoalbuminemia",
+    "Abnormal pyramidal sign",
+    "Cognitive impairment",
+    "Obesity",
+    "Dystonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'congenital disorder of glycosylation type II (CONGENITAL_DISOR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital disorder of glycosylation type II
-SYMPTOMS = []
+SYMPTOMS = [
+    "Skeletal muscle atrophy",
+    "Craniosynostosis",
+    "Hyperreflexia",
+    "Hypospadias",
+    "Ascites",
+    "Generalized tonic seizure",
+    "X-linked recessive inheritance",
+    "Congenital onset",
+    "Hepatosplenomegaly",
+    "Decreased circulating immunoglobulin concentration",
+    "Micrognathia",
+    "Downslanted palpebral fissures",
+    "Abnormal protein N-linked glycosylation",
+    "Jaundice",
+    "Strabismus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

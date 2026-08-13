@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'distal arthrogryposis type 5D (DISTAL_ARTHROGRYPOSIS_TYPE_5D)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of distal arthrogryposis type 5D
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypoplastic labia majora",
+    "Calcaneovalgus deformity",
+    "Congenital hip dislocation",
+    "Talipes equinovarus",
+    "Scoliosis",
+    "Narrow mouth",
+    "Hypermobility of distal interphalangeal joints",
+    "Limited elbow movement",
+    "Decreased muscle mass",
+    "Elbow flexion contracture",
+    "Furrowed tongue",
+    "Round face",
+    "Open mouth",
+    "Micrognathia",
+    "Congenital onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

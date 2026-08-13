@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'ulnar-mammary syndrome (ULNAR_MAMMARY_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ulnar-mammary syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Bicornuate uterus",
+    "Sparse lateral eyebrow",
+    "Breast hypoplasia",
+    "Small scrotum",
+    "Anterior pituitary hypoplasia",
+    "Inverted nipples",
+    "Arrhythmia",
+    "Aplasia of the 3rd finger",
+    "Short 5th finger",
+    "Short 4th toe",
+    "Deformed radius",
+    "Aplasia of the ulna",
+    "Aplasia of the 4th finger",
+    "Hypoplasia of the radius",
+    "Anal stenosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

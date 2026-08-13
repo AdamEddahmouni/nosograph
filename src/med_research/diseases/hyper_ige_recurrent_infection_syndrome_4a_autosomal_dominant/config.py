@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hyper-IgE recurrent infection syndrome 4A, autosomal dominant 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hyper-IgE recurrent infection syndrome 4A, autosomal dominant
-SYMPTOMS = []
+SYMPTOMS = [
+    "Supernumerary tooth",
+    "Persistence of primary teeth",
+    "Recurrent skin infections",
+    "Decreased circulating IgA concentration",
+    "Recurrent mucocutaneous candidiasis",
+    "Increased susceptibility to fractures",
+    "High palate",
+    "Juvenile onset",
+    "Reduced total natural killer cell count",
+    "Bronchomalacia",
+    "Decreased total neutrophil count",
+    "Increased circulating IgE concentration",
+    "Atopic dermatitis",
+    "Scoliosis",
+    "Delayed umbilical cord separation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

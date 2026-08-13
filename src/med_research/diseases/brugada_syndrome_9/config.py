@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'Brugada syndrome 9 (BRUGADA_SYNDROME_9)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Brugada syndrome 9
-SYMPTOMS = []
+SYMPTOMS = [
+    "Palpitations",
+    "Autosomal dominant inheritance",
+    "Prolonged QT interval",
+    "Presyncope",
+    "ST segment elevation",
+    "Middle age onset",
+    "Young adult onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

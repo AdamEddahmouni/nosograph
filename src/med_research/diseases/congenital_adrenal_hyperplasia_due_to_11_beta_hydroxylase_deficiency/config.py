@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'congenital adrenal hyperplasia due to 11-beta-hydroxylase defi
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital adrenal hyperplasia due to 11-beta-hydroxylase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypoplasia of the vagina",
+    "Precocious puberty in males",
+    "Elevated serum 11-deoxycortisol",
+    "Hypoplasia of the uterus",
+    "Increased serum testosterone level",
+    "Long penis",
+    "Neonatal onset",
+    "Hypokalemia",
+    "Adrenogenital syndrome",
+    "Increased circulating androstenedione concentration",
+    "Decreased testicular size",
+    "Decreased circulating renin concentration",
+    "Autosomal recessive inheritance",
+    "Hypertension",
+    "Short stature",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'spondyloepiphyseal dysplasia, Kimberley type (SPONDYLOEPIPHYSE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondyloepiphyseal dysplasia, Kimberley type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Spondyloepiphyseal dysplasia",
+    "Proportionate short stature",
+    "Genu varum",
+    "Delayed skeletal maturation",
+    "Flat capital femoral epiphysis",
+    "Genu valgum",
+    "Platyspondyly",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'schizophrenia 15 (SCHIZOPHRENIA_15)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of schizophrenia 15
-SYMPTOMS = []
+SYMPTOMS = [
+    "Young adult onset",
+    "Autosomal dominant inheritance",
+    "Intellectual disability",
+    "Juvenile onset",
+    "Hyperactivity",
+    "Schizophrenia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

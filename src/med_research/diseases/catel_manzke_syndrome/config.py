@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Catel-Manzke syndrome (CATEL_MANZKE_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Catel-Manzke syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital onset",
+    "Talipes equinovarus",
+    "Narrow nose",
+    "Hypertelorism",
+    "Pectus excavatum",
+    "Intrauterine growth retardation",
+    "Pectus carinatum",
+    "Narrow mouth",
+    "Cleft upper lip",
+    "Ventricular septal defect",
+    "Global developmental delay",
+    "Adducted thumb",
+    "Joint hypermobility",
+    "Short humerus",
+    "Short neck",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

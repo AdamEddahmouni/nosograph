@@ -8,8 +8,23 @@ PIPELINE_LABEL = '46,XX ovotesticular disorder of sex development (46_XX_OVOTEST
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of 46,XX ovotesticular disorder of sex development
-SYMPTOMS = []
+SYMPTOMS = [
+    "Bicornuate uterus",
+    "Fused labia majora",
+    "Gonadal dysgenesis",
+    "Elevated circulating luteinizing hormone level",
+    "Hypospadias",
+    "X-linked dominant inheritance",
+    "Penoscrotal hypospadias",
+    "Sex reversal",
+    "Typified by incomplete penetrance",
+    "Clitoral hypertrophy",
+    "Tall stature",
+    "Azoospermia",
+    "Retractile testis",
+    "Gynecomastia",
+    "True hermaphroditism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

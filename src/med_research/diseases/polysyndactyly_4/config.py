@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'polysyndactyly 4 (POLYSYNDACTYLY_4)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of polysyndactyly 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "3-4 finger cutaneous syndactyly",
+    "Duplication of thumb phalanx",
+    "1-5 toe syndactyly",
+    "Autosomal dominant inheritance",
+    "Preaxial polydactyly",
+    "Dysplastic distal thumb phalanges with a central hole",
+    "Congenital onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

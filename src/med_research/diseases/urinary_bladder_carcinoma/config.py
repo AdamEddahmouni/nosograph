@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'urinary bladder carcinoma (URINARY_BLADDER_CARCINOMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of urinary bladder carcinoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Typified by somatic mosaicism",
+    "Bladder neoplasm",
+    "Autosomal dominant inheritance",
+    "Transitional cell carcinoma of the bladder",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

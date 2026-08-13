@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'pachygyria-intellectual disability-epilepsy syndrome (PACHYGYR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pachygyria-intellectual disability-epilepsy syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormality of the skeletal system",
+    "Pachygyria",
+    "Arachnoid cyst",
+    "Bilateral tonic-clonic seizure",
+    "Intellectual disability",
+    "Atypical absence seizure",
+    "Autosomal recessive inheritance",
+    "Global developmental delay",
+    "Profound static encephalopathy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'congenital adrenal hyperplasia due to cytochrome P450 oxidored
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital adrenal hyperplasia due to cytochrome P450 oxidoreductase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased circulating ACTH level",
+    "Ambiguous genitalia",
+    "Autosomal recessive inheritance",
+    "Congenital adrenal hyperplasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

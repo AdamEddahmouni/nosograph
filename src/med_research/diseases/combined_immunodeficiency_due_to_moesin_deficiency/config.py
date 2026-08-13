@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'combined immunodeficiency due to moesin deficiency (COMBINED_I
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of combined immunodeficiency due to moesin deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased circulating immunoglobulin concentration",
+    "Decreased total neutrophil count",
+    "Eczematoid dermatitis",
+    "X-linked recessive inheritance",
+    "Decreased total lymphocyte count",
+    "Recurrent urinary tract infections",
+    "Recurrent respiratory infections",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

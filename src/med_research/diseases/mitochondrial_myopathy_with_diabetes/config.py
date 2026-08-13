@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mitochondrial myopathy with diabetes (MITOCHONDRIAL_MYOPATHY_W
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mitochondrial myopathy with diabetes
-SYMPTOMS = []
+SYMPTOMS = [
+    "Facial palsy",
+    "Hypotonia",
+    "Proximal amyotrophy",
+    "Motor delay",
+    "Mitochondrial myopathy",
+    "Decreased activity of mitochondrial complex IV",
+    "Babinski sign",
+    "Elevated circulating creatine kinase activity",
+    "Exercise intolerance",
+    "Late young adult onset",
+    "Ataxia",
+    "Hyporeflexia",
+    "Type II diabetes mellitus",
+    "Generalized hypotonia",
+    "Neck muscle weakness",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

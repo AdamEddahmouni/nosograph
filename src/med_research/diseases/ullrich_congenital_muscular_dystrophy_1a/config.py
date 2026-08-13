@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Ullrich congenital muscular dystrophy 1A (ULLRICH_CONGENITAL_M
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Ullrich congenital muscular dystrophy 1A
-SYMPTOMS = []
+SYMPTOMS = [
+    "Intellectual disability",
+    "Autosomal recessive inheritance",
+    "High palate",
+    "Variable expressivity",
+    "Flexion contracture",
+    "Mildly elevated creatine kinase",
+    "Slender build",
+    "Failure to thrive",
+    "Wrist hypermobility",
+    "Feeding difficulties in infancy",
+    "Hyperhidrosis",
+    "Respiratory insufficiency due to muscle weakness",
+    "Respiratory insufficiency",
+    "Follicular hyperkeratosis",
+    "Talipes equinovarus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

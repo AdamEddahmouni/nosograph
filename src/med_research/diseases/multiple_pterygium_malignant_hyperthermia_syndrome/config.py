@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'multiple pterygium-malignant hyperthermia syndrome (MULTIPLE_P
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of multiple pterygium-malignant hyperthermia syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Arthrogryposis multiplex congenita",
+    "Autosomal recessive inheritance",
+    "Abnormal mandible morphology",
+    "Cleft palate",
+    "Natal tooth",
+    "Malignant hyperthermia",
+    "Torticollis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

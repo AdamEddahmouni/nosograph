@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Bamforth-Lazarus syndrome (BAMFORTH_LAZARUS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Bamforth-Lazarus syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypertelorism",
+    "Elevated circulating thyroid-stimulating hormone concentration",
+    "Thyroid agenesis",
+    "Decreased circulating T4 concentration",
+    "Congenital hypothyroidism",
+    "Global developmental delay",
+    "Feeding difficulties",
+    "Anti-thyroid antibody positivity",
+    "Polyhydramnios",
+    "Bifid epiglottis",
+    "Posteriorly rotated ears",
+    "Decreased circulating thyroglobulin concentration",
+    "Autosomal recessive inheritance",
+    "Cleft palate",
+    "Delayed skeletal maturation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

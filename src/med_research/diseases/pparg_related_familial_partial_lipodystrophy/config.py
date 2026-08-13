@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'PPARG-related familial partial lipodystrophy (PPARG_RELATED_FA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of PPARG-related familial partial lipodystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Primary amenorrhea",
+    "Hyperglycemia",
+    "Insulin-resistant diabetes mellitus",
+    "Oligomenorrhea",
+    "Decreased circulating HDL-C concentration",
+    "Cirrhosis",
+    "Loss of subcutaneous adipose tissue in limbs",
+    "Hyperinsulinemia",
+    "Prominent superficial veins",
+    "Hyperuricemia",
+    "Hepatic steatosis",
+    "Preeclampsia",
+    "Autosomal dominant inheritance",
+    "Reduced subcutaneous adipose tissue",
+    "Polycystic ovaries",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

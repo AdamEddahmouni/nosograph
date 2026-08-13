@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'palmoplantar keratoderma-deafness syndrome (PALMOPLANTAR_KERAT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of palmoplantar keratoderma-deafness syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Palmoplantar hyperkeratosis",
+    "Hearing impairment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

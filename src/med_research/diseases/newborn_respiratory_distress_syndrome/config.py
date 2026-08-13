@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'newborn respiratory distress syndrome (NEWBORN_RESPIRATORY_DIS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of newborn respiratory distress syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Disseminated intravascular coagulation",
+    "Pulmonary edema",
+    "Sporadic",
+    "Neonatal respiratory distress",
+    "Congenital onset",
+    "Dyspnea",
+    "Atelectasis",
+    "Respiratory distress",
+    "Premature birth",
+    "Edema",
+    "Tachypnea",
+    "Non-Mendelian inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'severe combined immunodeficiency due to CD70 deficiency (SEVER
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of severe combined immunodeficiency due to CD70 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Reduced total natural killer cell count",
+    "Lymphadenopathy",
+    "Partial absence of specific antibody response to tetanus vaccine",
+    "Recurrent fever",
+    "Hodgkin lymphoma",
+    "Recurrent infections",
+    "Hepatosplenomegaly",
+    "Lymphoproliferative disorder",
+    "Severe varicella zoster infection",
+    "Autosomal recessive inheritance",
+    "Decreased circulating immunoglobulin concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

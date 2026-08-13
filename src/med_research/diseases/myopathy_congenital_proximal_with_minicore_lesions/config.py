@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'myopathy, congenital proximal, with minicore lesions (MYOPATHY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of myopathy, congenital proximal, with minicore lesions
-SYMPTOMS = []
+SYMPTOMS = [
+    "Tongue fasciculations",
+    "Oligohydramnios",
+    "Minicore myopathy",
+    "Type 1 muscle fiber predominance",
+    "Areflexia",
+    "Obstructive sleep apnea",
+    "Z-band streaming",
+    "Autosomal recessive inheritance",
+    "Fatty replacement of skeletal muscle",
+    "Decreased fetal movement",
+    "Cryptorchidism",
+    "Proximal muscle weakness",
+    "Neonatal hypotonia",
+    "Motor delay",
+    "Centrally nucleated skeletal muscle fibers",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

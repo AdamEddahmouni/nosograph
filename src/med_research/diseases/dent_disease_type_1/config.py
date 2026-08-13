@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Dent disease type 1 (DENT_DISEASE_TYPE_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Dent disease type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Low-molecular-weight proteinuria",
+    "Stage 5 chronic kidney disease",
+    "Renal insufficiency",
+    "Enlargement of the ankles",
+    "Fibular bowing",
+    "Renal tubular atrophy",
+    "Short stature",
+    "Hypercalciuria",
+    "Enlargement of the wrists",
+    "Beta 2-microglobulinuria",
+    "Focal segmental glomerulosclerosis",
+    "Hyposthenuria",
+    "Glycosuria",
+    "Metaphyseal irregularity",
+    "Osteomalacia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

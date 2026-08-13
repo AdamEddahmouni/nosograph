@@ -8,8 +8,18 @@ PIPELINE_LABEL = '46,XY sex reversal 6 (46_XY_SEX_REVERSAL_6)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of 46,XY sex reversal 6
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypospadias",
+    "Chordee",
+    "Gonadal dysgenesis",
+    "Sex reversal",
+    "Clitoral hypertrophy",
+    "Gonadoblastoma",
+    "Sparse axillary hair",
+    "Hirsutism",
+    "Autosomal dominant inheritance",
+    "Dysgerminoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

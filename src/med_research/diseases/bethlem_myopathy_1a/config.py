@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Bethlem myopathy 1A (BETHLEM_MYOPATHY_1A)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Bethlem myopathy 1A
-SYMPTOMS = []
+SYMPTOMS = [
+    "Mildly elevated creatine kinase",
+    "Camptodactyly of finger",
+    "Arthrogryposis multiplex congenita",
+    "Congenital muscular torticollis",
+    "Skeletal muscle atrophy",
+    "Macroscopic hematuria",
+    "Finger joint contracture",
+    "Tip-toe gait",
+    "Proteinuria",
+    "Intellectual disability",
+    "Arthralgia",
+    "Knee contracture",
+    "Kyphosis",
+    "Skin rash",
+    "Shoulder girdle muscle atrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'myopathy, tubular aggregate, 1 (MYOPATHY_TUBULAR_AGGREGATE_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of myopathy, tubular aggregate, 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Easy fatigability",
+    "Abnormal pupil morphology",
+    "Childhood onset",
+    "Autosomal dominant inheritance",
+    "Joint contracture",
+    "Muscle stiffness",
+    "Frequent falls",
+    "Exercise-induced myalgia",
+    "Slowly progressive",
+    "Respiratory insufficiency",
+    "Muscle spasm",
+    "Adult onset",
+    "Areflexia of lower limbs",
+    "Proximal muscle weakness",
+    "External ophthalmoplegia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

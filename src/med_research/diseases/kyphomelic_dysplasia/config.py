@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'kyphomelic dysplasia (KYPHOMELIC_DYSPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of kyphomelic dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Lateral clavicle hook",
+    "Cleft palate",
+    "Radial bowing",
+    "Disproportionate short stature",
+    "Thoracic hypoplasia",
+    "Cleft upper lip",
+    "Limitation of joint mobility",
+    "Low-set ears",
+    "Tibial bowing",
+    "Platyspondyly",
+    "Pterygium",
+    "Short femur",
+    "Short metacarpal",
+    "Femoral bowing",
+    "High forehead",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Down syndrome (DOWN_SYNDROME)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Down syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Flat face",
+    "Acute megakaryocytic leukemia",
+    "Shallow acetabular fossae",
+    "Redundant neck skin",
+    "Thickened nuchal skin fold",
+    "Brachydactyly",
+    "Upslanted palpebral fissure",
+    "Congenital onset",
+    "Ventricular septal defect",
+    "Double outlet right ventricle",
+    "Prenatal double bubble sign",
+    "Microtia",
+    "Hypothyroidism",
+    "Short middle phalanx of the 5th finger",
+    "Abnormal fetal nasal bone visualization",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

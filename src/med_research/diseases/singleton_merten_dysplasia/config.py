@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Singleton-Merten dysplasia (SINGLETON_MERTEN_DYSPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Singleton-Merten dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Scoliosis",
+    "Thin upper lip vermilion",
+    "Expanded metacarpals with widened medullary cavities",
+    "Decreased body weight",
+    "Glaucoma",
+    "Hip subluxation",
+    "Infantile onset",
+    "Muscle fiber atrophy",
+    "Broad forehead",
+    "Eruption failure",
+    "Hypoplastic distal radial epiphyses",
+    "Hypotonia",
+    "Osteolytic defects of the phalanges of the hand",
+    "Waddling gait",
+    "Coxa valga",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

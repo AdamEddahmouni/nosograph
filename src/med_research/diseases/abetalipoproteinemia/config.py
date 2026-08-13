@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'abetalipoproteinemia (ABETALIPOPROTEINEMIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of abetalipoproteinemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ataxia",
+    "Abetalipoproteinemia",
+    "Peripheral demyelination",
+    "Fat malabsorption",
+    "CNS demyelination",
+    "Retinal degeneration",
+    "Autosomal recessive inheritance",
+    "Retinopathy",
+    "Acanthocytosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'congenital generalized lipodystrophy type 2 (CONGENITAL_GENERA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital generalized lipodystrophy type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Splenomegaly",
+    "Congenital onset",
+    "Reduced subcutaneous adipose tissue",
+    "Polycystic ovaries",
+    "Hepatic steatosis",
+    "Reduced intraabdominal adipose tissue",
+    "Tall stature",
+    "Lipodystrophy",
+    "Cystic angiomatosis of bone",
+    "Elevated circulating hepatic transaminase concentration",
+    "Mild intellectual disability",
+    "Accelerated skeletal maturation",
+    "Hypertriglyceridemia",
+    "Hepatomegaly",
+    "Elevated hemoglobin A1c",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

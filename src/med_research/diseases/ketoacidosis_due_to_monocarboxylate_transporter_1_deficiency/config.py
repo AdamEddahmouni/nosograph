@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'ketoacidosis due to monocarboxylate transporter-1 deficiency (
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ketoacidosis due to monocarboxylate transporter-1 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Intellectual disability",
+    "Ketonuria",
+    "Ketotic hypoglycemia",
+    "Childhood onset",
+    "Autosomal dominant inheritance",
+    "Autosomal recessive inheritance",
+    "Juvenile onset",
+    "Feeding difficulties",
+    "Global developmental delay",
+    "Infantile onset",
+    "Ketoacidosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'oculocerebrodental syndrome (OCULOCEREBRODENTAL_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of oculocerebrodental syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Epicanthus",
+    "Global developmental delay",
+    "Thoracic kyphosis",
+    "Autosomal recessive inheritance",
+    "Elbow flexion contracture",
+    "Hypocalcemia",
+    "Wide nasal bridge",
+    "Scoliosis",
+    "Hepatomegaly",
+    "Coarse facial features",
+    "Hypercalciuria",
+    "Protein-losing enteropathy",
+    "Short femoral neck",
+    "Developmental cataract",
+    "Hypercalcemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

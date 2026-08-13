@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'oculocerebrorenal syndrome (OCULOCEREBRORENAL_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of oculocerebrorenal syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Subcutaneous nodule",
+    "Seizure",
+    "Postnatal growth retardation",
+    "Elevated serum acid phosphatase",
+    "Reduced visual acuity",
+    "Rickets",
+    "Visual impairment",
+    "Scoliosis",
+    "Motor stereotypy",
+    "Hip dislocation",
+    "Finger swelling",
+    "Elevated amniotic fluid alpha-fetoprotein concentration",
+    "Enamel hypoplasia",
+    "Genu valgum",
+    "Renal Fanconi syndrome",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

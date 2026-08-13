@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'carpal tunnel syndrome (CARPAL_TUNNEL_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of carpal tunnel syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Peripheral axonal neuropathy",
+    "Adult onset",
+    "Constrictive median neuropathy",
+    "Mononeuropathy",
+    "Peripheral neuropathy",
+    "Digital flexor tenosynovitis",
+    "Reduced circulating vitamin B6 circulating",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

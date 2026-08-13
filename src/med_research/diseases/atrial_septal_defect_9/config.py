@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'atrial septal defect 9 (ATRIAL_SEPTAL_DEFECT_9)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of atrial septal defect 9
-SYMPTOMS = []
+SYMPTOMS = [
+    "Secundum atrial septal defect",
+    "Pulmonary arterial hypertension",
+    "Bicuspid aortic valve",
+    "Congenital onset",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

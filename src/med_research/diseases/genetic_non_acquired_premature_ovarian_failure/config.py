@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'genetic non-acquired premature ovarian failure (GENETIC_NON_AC
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of genetic non-acquired premature ovarian failure
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Elevated circulating follicle stimulating hormone level",
+    "Decreased serum estradiol",
+    "Reduced antral follicle count",
+    "Premature ovarian insufficiency",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

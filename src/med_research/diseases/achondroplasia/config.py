@@ -8,8 +8,23 @@ PIPELINE_LABEL = "achondroplasia (ACHONDROPLASIA)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of achondroplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Small foramen magnum",
+    "Rhizomelia",
+    "Polyhydramnios",
+    "Thoracic hypoplasia",
+    "Feeding difficulties",
+    "Trident hand",
+    "Choanal stenosis",
+    "Genu varum",
+    "Midface retrusion",
+    "Short femoral neck",
+    "Short ribs",
+    "Macrocephaly",
+    "Craniocervical junction constriction",
+    "Neonatal short-limb short stature",
+    "Brain stem compression",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

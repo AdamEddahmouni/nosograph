@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Gerstmann-Straussler-Scheinker syndrome (GERSTMANN_STRAUSSLER_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Gerstmann-Straussler-Scheinker syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Limb ataxia",
+    "Dementia",
+    "Bradykinesia",
+    "Psychosis",
+    "Adult onset",
+    "Cerebellar atrophy",
+    "Memory impairment",
+    "Depression",
+    "Areflexia",
+    "Gait ataxia",
+    "Autosomal dominant inheritance",
+    "Rigidity",
+    "Emotional lability",
+    "Tremor",
+    "Lower limb muscle weakness",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

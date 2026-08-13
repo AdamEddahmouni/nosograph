@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'PHGDH deficiency (PHGDH_DEFICIENCY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of PHGDH deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Thrombocytopenia",
+    "Reduced 3-phosphoglycerate dehydrogenase activity",
+    "Nystagmus",
+    "Growth delay",
+    "Megaloblastic anemia",
+    "Seizure",
+    "Autosomal recessive inheritance",
+    "Decreased testicular size",
+    "Intellectual disability",
+    "Hypsarrhythmia",
+    "Developmental cataract",
+    "Primary microcephaly",
+    "Spastic tetraplegia",
+    "Adducted thumb",
+    "Cerebral dysmyelination",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'hydrocephalus, congenital, 3, with brain anomalies (HYDROCEPHA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hydrocephalus, congenital, 3, with brain anomalies
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Abnormal facial shape",
+    "Hydrocephalus",
+    "Brain atrophy",
+    "Polyhydramnios",
+    "Dandy-Walker malformation",
+    "Ventriculomegaly",
+    "Holoprosencephaly",
+    "Cerebellar hypoplasia",
+    "Hydranencephaly",
+    "Cerebellar agenesis",
+    "Congenital onset",
+    "Redundant neck skin",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

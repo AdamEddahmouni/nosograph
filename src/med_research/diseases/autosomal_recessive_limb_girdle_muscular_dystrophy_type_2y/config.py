@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autosomal recessive limb-girdle muscular dystrophy type 2Y (AU
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal recessive limb-girdle muscular dystrophy type 2Y
-SYMPTOMS = []
+SYMPTOMS = [
+    "Premature ventricular contraction",
+    "Slowly progressive",
+    "Camptodactyly of finger",
+    "Early young adult onset",
+    "Joint contracture",
+    "Ankle flexion contracture",
+    "Centrally nucleated skeletal muscle fibers",
+    "Spinal rigidity",
+    "Muscle weakness",
+    "Elevated circulating creatine kinase activity",
+    "Interosseus muscle atrophy",
+    "Autosomal recessive inheritance",
+    "Muscular dystrophy",
+    "Decreased forced expiratory flow 25-75%",
+    "Increased variability in muscle fiber diameter",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

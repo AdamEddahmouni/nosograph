@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'rheumatoid arthritis (RHEUMATOID_ARTHRITIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of rheumatoid arthritis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Weight loss",
+    "Elevated erythrocyte sedimentation rate",
+    "Digital flexor tenosynovitis",
+    "Rheumatoid arthritis",
+    "Fever",
+    "Swan neck-like deformities of the fingers",
+    "Elevated circulating C-reactive protein concentration",
+    "Rheumatoid factor positive",
+    "Polyarticular arthritis",
+    "Anti-citrullinated protein antibody positivity",
+    "Interphalangeal joint erosions",
+    "Joint swelling",
+    "Fatigue",
+    "Arthralgia",
+    "Vasculitis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

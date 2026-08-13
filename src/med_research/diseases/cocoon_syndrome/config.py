@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'cocoon syndrome (COCOON_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cocoon syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital diaphragmatic hernia",
+    "Lower limb undergrowth",
+    "Increased urinary 8-oxo-7,8-dihydroguanosine level",
+    "Thin skin",
+    "Bilateral trilobed lung",
+    "Horseshoe kidney",
+    "Decreased fetal movement",
+    "Tetralogy of Fallot",
+    "Omphalocele",
+    "Upper limb undergrowth",
+    "Fetal onset",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

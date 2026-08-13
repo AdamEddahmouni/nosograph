@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'proteasome-associated autoinflammatory syndrome 5 (PROTEASOME_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of proteasome-associated autoinflammatory syndrome 5
-SYMPTOMS = []
+SYMPTOMS = [
+    "Skin rash",
+    "Acute phase response",
+    "Hypertriglyceridemia",
+    "Failure to thrive in infancy",
+    "Neonatal onset",
+    "Hepatomegaly",
+    "Autosomal recessive inheritance",
+    "Fever",
+    "Splenomegaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

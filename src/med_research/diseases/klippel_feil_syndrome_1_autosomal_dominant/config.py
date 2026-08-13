@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Klippel-Feil syndrome 1, autosomal dominant (KLIPPEL_FEIL_SYND
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Klippel-Feil syndrome 1, autosomal dominant
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal limb bone morphology",
+    "Scoliosis",
+    "Sprengel anomaly",
+    "Sensorineural hearing impairment",
+    "Webbed neck",
+    "Limited neck range of motion",
+    "Mixed hearing impairment",
+    "Cervical C2/C3 vertebral fusion",
+    "Abnormal rib morphology",
+    "Cervicomedullary schisis",
+    "Abnormality of the nervous system",
+    "Cleft palate",
+    "Short neck",
+    "Abnormality of the kidney",
+    "Congenital muscular torticollis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spinocerebellar ataxia 27A (SPINOCEREBELLAR_ATAXIA_27A)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spinocerebellar ataxia 27A
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal vestibulo-ocular reflex",
+    "Pes cavus",
+    "Upbeat nystagmus",
+    "Impaired smooth pursuit",
+    "Impaired vibratory sensation",
+    "Childhood onset",
+    "Absent smooth pursuit",
+    "Dysarthria",
+    "Gaze-evoked nystagmus",
+    "Gait ataxia",
+    "Orofacial dyskinesia",
+    "Autosomal dominant inheritance",
+    "Postural tremor",
+    "Cerebellar atrophy",
+    "Strabismus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

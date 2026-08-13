@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'metaphyseal dysostosis-intellectual disability-conductive deaf
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of metaphyseal dysostosis-intellectual disability-conductive deafness syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Strabismus",
+    "Short palm",
+    "Irregular chondrocostal junctions",
+    "Flat glenoid fossa",
+    "Scoliosis",
+    "Short foot",
+    "Broad foot",
+    "Metaphyseal widening",
+    "Joint hypermobility",
+    "Metaphyseal dysplasia",
+    "Coxa vara",
+    "Conductive hearing impairment",
+    "Cupped ribs",
+    "Short ribs",
+    "Lumbar hyperlordosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

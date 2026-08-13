@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'MPI-congenital disorder of glycosylation (MPI_CONGENITAL_DISOR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of MPI-congenital disorder of glycosylation
-SYMPTOMS = []
+SYMPTOMS = [
+    "Edema",
+    "Steatorrhea",
+    "Lymphangiectasis",
+    "Failure to thrive",
+    "Abnormal thrombosis",
+    "Generalized hypotonia",
+    "Hepatic fibrosis",
+    "Type I transferrin isoform profile",
+    "Proximal tubulopathy",
+    "Infantile onset",
+    "Hyperinsulinemic hypoglycemia",
+    "Death in childhood",
+    "Reduced antithrombin III activity",
+    "Cirrhosis",
+    "Protein-losing enteropathy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

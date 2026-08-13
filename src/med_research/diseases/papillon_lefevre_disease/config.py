@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'Papillon-Lefevre disease (PAPILLON_LEFEVRE_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Papillon-Lefevre disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Atrophy of alveolar ridges",
+    "Palmoplantar hyperkeratosis",
+    "Autosomal recessive inheritance",
+    "Premature loss of teeth",
+    "Choroid plexus calcification",
+    "Severe periodontitis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'aortic aneurysm, familial abdominal, 1 (AORTIC_ANEURYSM_FAMILI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of aortic aneurysm, familial abdominal, 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Non-Mendelian inheritance",
+    "Abdominal aortic aneurysm",
+    "Autosomal recessive inheritance",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'cerebellar ataxia-hypogonadism syndrome (CEREBELLAR_ATAXIA_HYP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cerebellar ataxia-hypogonadism syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cerebral atrophy",
+    "Absence of pubertal development",
+    "Ataxia",
+    "Nystagmus",
+    "Secondary amenorrhea",
+    "Dysarthria",
+    "Cerebellar atrophy",
+    "Dementia",
+    "Chorea",
+    "Oligomenorrhea",
+    "Hypogonadotropic hypogonadism",
+    "Childhood onset",
+    "Juvenile onset",
+    "Early young adult onset",
+    "Primary amenorrhea",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

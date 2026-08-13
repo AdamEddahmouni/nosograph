@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'congenital lactase deficiency (CONGENITAL_LACTASE_DEFICIENCY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital lactase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Metabolic acidosis",
+    "Decreased small intestinal mucosa lactase level",
+    "Lactose intolerance",
+    "Dehydration",
+    "Neonatal onset",
+    "Autosomal recessive inheritance",
+    "Diarrhea",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

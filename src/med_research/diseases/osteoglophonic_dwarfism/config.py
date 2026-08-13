@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'osteoglophonic dwarfism (OSTEOGLOPHONIC_DWARFISM)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of osteoglophonic dwarfism
-SYMPTOMS = []
+SYMPTOMS = [
+    "Eruption failure",
+    "Hypoplastic scapulae",
+    "Frontal bossing",
+    "Inguinal hernia",
+    "Broad thumb",
+    "Childhood onset",
+    "Pectus excavatum",
+    "Autosomal dominant inheritance",
+    "Limb undergrowth",
+    "Proptosis",
+    "Midface retrusion",
+    "Hypoplasia of the maxilla",
+    "Brachydactyly",
+    "Long philtrum",
+    "High palate",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'epilepsy, early-onset, with or without developmental delay (EP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of epilepsy, early-onset, with or without developmental delay
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Patent foramen ovale",
+    "Global developmental delay",
+    "Delayed CNS myelination",
+    "Bilateral tonic-clonic seizure",
+    "Hydrocele testis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

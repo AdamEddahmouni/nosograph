@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hereditary spastic paraplegia 2 (HEREDITARY_SPASTIC_PARAPLEGIA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hereditary spastic paraplegia 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Degeneration of the lateral corticospinal tracts",
+    "Optic atrophy",
+    "Lower limb muscle weakness",
+    "Loss of ambulation",
+    "Intellectual disability",
+    "Abnormal cerebellum morphology",
+    "Mild intellectual disability",
+    "X-linked recessive inheritance",
+    "Lower limb spasticity",
+    "Pes cavus",
+    "Babinski sign",
+    "Juvenile onset",
+    "Spastic paraplegia",
+    "Infantile onset",
+    "Flexion contracture",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

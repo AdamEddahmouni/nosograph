@@ -8,8 +8,9 @@ PIPELINE_LABEL = "Angioedema (ANGIOEDEMA)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Angioedema
-SYMPTOMS = []
+SYMPTOMS = [
+    "Angioedema",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

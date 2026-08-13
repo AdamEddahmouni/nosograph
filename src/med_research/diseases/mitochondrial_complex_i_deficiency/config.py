@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mitochondrial complex I deficiency (MITOCHONDRIAL_COMPLEX_I_DE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mitochondrial complex I deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Central hypoventilation",
+    "Aphasia",
+    "Decreased total neutrophil count",
+    "Premature birth",
+    "Generalized dystonia",
+    "Poor head control",
+    "Dyskinesia",
+    "Muscle weakness",
+    "Ophthalmoplegia",
+    "Progressive macrocephaly",
+    "Hydronephrosis",
+    "Mitochondrial swelling",
+    "Gait imbalance",
+    "Left ventricular hypertrophy",
+    "Pes planus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

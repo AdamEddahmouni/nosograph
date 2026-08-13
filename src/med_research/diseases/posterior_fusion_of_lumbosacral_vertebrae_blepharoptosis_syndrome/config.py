@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'posterior fusion of lumbosacral vertebrae-blepharoptosis syndr
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of posterior fusion of lumbosacral vertebrae-blepharoptosis syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Posterior fusion of lumbosacral vertebrae",
+    "Congenital ptosis",
+    "Abnormality of metabolism/homeostasis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

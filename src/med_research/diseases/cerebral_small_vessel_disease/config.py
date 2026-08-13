@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'cerebral small vessel disease (CEREBRAL_SMALL_VESSEL_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cerebral small vessel disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Spastic tetraplegia",
+    "Global developmental delay",
+    "Infantile onset",
+    "Lacunar stroke",
+    "Severe intellectual disability",
+    "Seizure",
+    "Cerebral atrophy",
+    "Cerebral calcification",
+    "Leukoencephalopathy",
+    "Porencephalic cyst",
+    "Autosomal recessive inheritance",
+    "Hypotonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

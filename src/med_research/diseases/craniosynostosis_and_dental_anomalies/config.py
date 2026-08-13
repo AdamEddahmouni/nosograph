@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'craniosynostosis and dental anomalies (CRANIOSYNOSTOSIS_AND_DE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of craniosynostosis and dental anomalies
-SYMPTOMS = []
+SYMPTOMS = [
+    "Syringomyelia",
+    "Depressed nasal bridge",
+    "Short stature",
+    "Turricephaly",
+    "Flat occiput",
+    "Delayed eruption of teeth",
+    "Hypertelorism",
+    "Sagittal craniosynostosis",
+    "Chronic otitis media",
+    "Hallux valgus",
+    "Wide nose",
+    "Seizure",
+    "Craniofacial dysostosis",
+    "Hypoplasia of the maxilla",
+    "Narrow palate",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

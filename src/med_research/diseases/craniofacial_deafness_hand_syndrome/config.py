@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'craniofacial-deafness-hand syndrome (CRANIOFACIAL_DEAFNESS_HAN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of craniofacial-deafness-hand syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypertelorism",
+    "Narrow naris",
+    "Depressed nasal bridge",
+    "Flat face",
+    "Ulnar deviation of the hand",
+    "Malar flattening",
+    "Telecanthus",
+    "Hypoplasia of the maxilla",
+    "Autosomal dominant inheritance",
+    "Short nose",
+    "Downslanted palpebral fissures",
+    "Sensorineural hearing impairment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

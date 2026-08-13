@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Hemophilia B (HEMOPHILIA_B)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Hemophilia B
-SYMPTOMS = []
+SYMPTOMS = [
+    "Prolonged prothrombin time",
+    "Joint hemorrhage",
+    "Gastrointestinal hemorrhage",
+    "Hematemesis",
+    "X-linked recessive inheritance",
+    "Persistent bleeding after trauma",
+    "Petechiae",
+    "Reduced factor IX activity",
+    "Prolonged whole-blood clotting time",
+    "Osteoarthritis",
+    "Bruising susceptibility",
+    "Prolonged partial thromboplastin time",
+    "Epistaxis",
+    "Melena",
+    "Hematuria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

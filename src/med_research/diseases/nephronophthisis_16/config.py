@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'nephronophthisis 16 (NEPHRONOPHTHISIS_16)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of nephronophthisis 16
-SYMPTOMS = []
+SYMPTOMS = [
+    "Periportal fibrosis",
+    "Infantile onset",
+    "Nephronophthisis",
+    "Cholestasis",
+    "Autosomal recessive inheritance",
+    "Congenital onset",
+    "Stage 5 chronic kidney disease",
+    "Hypertrophic cardiomyopathy",
+    "Patent ductus arteriosus",
+    "Polycystic kidney dysplasia",
+    "Renal insufficiency",
+    "Childhood onset",
+    "Enlarged kidney",
+    "Pulmonic stenosis",
+    "Aortic valve stenosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

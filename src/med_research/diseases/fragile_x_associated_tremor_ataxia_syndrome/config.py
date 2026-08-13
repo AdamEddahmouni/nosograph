@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'fragile X-associated tremor/ataxia syndrome (FRAGILE_X_ASSOCIA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of fragile X-associated tremor/ataxia syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Anxiety",
+    "Late onset",
+    "Postural tremor",
+    "Resting tremor",
+    "Dementia",
+    "Dysdiadochokinesis",
+    "Bradykinesia",
+    "Impotence",
+    "Intention tremor",
+    "Diffuse cerebral atrophy",
+    "Impaired tandem gait",
+    "Premature ovarian insufficiency",
+    "Mask-like facies",
+    "Hyporeflexia",
+    "Hypothyroidism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

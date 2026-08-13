@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'alternating hemiplegia of childhood 1 (ALTERNATING_HEMIPLEGIA_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of alternating hemiplegia of childhood 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Bilateral tonic-clonic seizure",
+    "Headache",
+    "Episodic hemiplegia",
+    "Episodic quadriplegia",
+    "Autosomal dominant inheritance",
+    "Developmental regression",
+    "Choreoathetosis",
+    "Intellectual disability",
+    "Nystagmus",
+    "Dystonia",
+    "Childhood onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

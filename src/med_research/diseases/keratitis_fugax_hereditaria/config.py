@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'keratitis fugax hereditaria (KERATITIS_FUGAX_HEREDITARIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of keratitis fugax hereditaria
-SYMPTOMS = []
+SYMPTOMS = [
+    "Epiphora",
+    "Blurred vision",
+    "Epiretinal membrane",
+    "Juvenile onset",
+    "Young adult onset",
+    "Photophobia",
+    "Autosomal dominant inheritance",
+    "Conjunctival hyperemia",
+    "Opacification of the corneal stroma",
+    "Keratitis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

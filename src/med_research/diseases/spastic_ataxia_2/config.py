@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spastic ataxia 2 (SPASTIC_ATAXIA_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spastic ataxia 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Mental deterioration",
+    "Head titubation",
+    "Torticollis",
+    "Spastic ataxia",
+    "Juvenile onset",
+    "Horizontal nystagmus",
+    "Ankle clonus",
+    "Cerebral atrophy",
+    "Babinski sign",
+    "Progressive",
+    "Spasticity",
+    "Gait ataxia",
+    "Dysarthria",
+    "Childhood onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

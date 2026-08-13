@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'ALDH18A1-related de Barsy syndrome (ALDH18A1_RELATED_DE_BARSY_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ALDH18A1-related de Barsy syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Episodic vomiting",
+    "Hypoornithinemia",
+    "Narrow nasal ridge",
+    "Joint hypermobility",
+    "Cryptorchidism",
+    "Hyperammonemia",
+    "Sparse hair",
+    "Pectus excavatum",
+    "Hypoprolinemia",
+    "Moderate intellectual disability",
+    "Lower limb hyperreflexia",
+    "Cutis laxa",
+    "Umbilical hernia",
+    "Corneal arcus",
+    "Intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

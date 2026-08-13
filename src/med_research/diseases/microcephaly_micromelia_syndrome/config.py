@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYND
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of microcephaly-micromelia syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Convex nasal ridge",
+    "Short neck",
+    "Microphthalmia",
+    "Congenital onset",
+    "Narrow mouth",
+    "Cystic hygroma",
+    "Short tibia",
+    "Absent radius",
+    "Aplasia/Hypoplasia of the corpus callosum",
+    "Talipes equinovarus",
+    "Narrow chest",
+    "Oligodactyly",
+    "Humeroradial synostosis",
+    "Wide nose",
+    "Intrauterine growth retardation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

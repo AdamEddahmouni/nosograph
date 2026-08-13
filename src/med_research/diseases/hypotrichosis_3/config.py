@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'hypotrichosis 3 (HYPOTRICHOSIS_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypotrichosis 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Abnormality of the dentition",
+    "Abnormal sweat gland morphology",
+    "Sparse scalp hair",
+    "Abnormal nail morphology",
+    "Abnormal eyelash morphology",
+    "Childhood onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

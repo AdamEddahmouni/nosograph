@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'chondrodysplasia Blomstrand type (CHONDRODYSPLASIA_BLOMSTRAND_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of chondrodysplasia Blomstrand type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Micromelia",
+    "Micrognathia",
+    "Short ribs",
+    "Abnormal vertebral morphology",
+    "Accelerated skeletal maturation",
+    "Hydrops fetalis",
+    "Fetal ascites",
+    "Flared metaphysis",
+    "Advanced ossification of carpal bones",
+    "Depressed nasal bridge",
+    "Polyhydramnios",
+    "Antenatal onset",
+    "Narrow chest",
+    "Advanced tarsal ossification",
+    "Generalized osteosclerosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

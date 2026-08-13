@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Fanconi anemia complementation group F (FANCONI_ANEMIA_COMPLEM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Fanconi anemia complementation group F
-SYMPTOMS = []
+SYMPTOMS = [
+    "Microcephaly",
+    "Single umbilical artery",
+    "Short thumb",
+    "2-3 finger cutaneous syndactyly",
+    "Thrombocytopenia",
+    "Microphthalmia",
+    "Intrauterine growth retardation",
+    "Placental abruption",
+    "Atrial septal defect",
+    "Patent ductus arteriosus",
+    "Hyperpigmentation of the skin",
+    "Cafe-au-lait spot",
+    "Anemia",
+    "Short stature",
+    "Microtia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

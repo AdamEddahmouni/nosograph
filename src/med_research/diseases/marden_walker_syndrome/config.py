@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Marden-Walker syndrome (MARDEN_WALKER_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Marden-Walker syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Low-set ears",
+    "Wide anterior fontanel",
+    "Congenital contracture",
+    "Narrow mouth",
+    "Micrognathia",
+    "Inferior cerebellar vermis hypoplasia",
+    "Kyphosis",
+    "Zollinger-Ellison syndrome",
+    "Scoliosis",
+    "Talipes equinovarus",
+    "Intellectual disability",
+    "Cleft palate",
+    "High palate",
+    "Intrauterine growth retardation",
+    "Epicanthus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

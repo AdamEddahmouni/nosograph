@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'IVIC syndrome (IVIC_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of IVIC syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Small thenar eminence",
+    "Short clavicles",
+    "Autosomal dominant inheritance",
+    "Intestinal malrotation",
+    "Patent ductus arteriosus",
+    "Hypoplasia of the radius",
+    "Paroxysmal tonic upgaze",
+    "Carpal bone hypoplasia",
+    "Upper limb undergrowth",
+    "Scoliosis",
+    "Short femur",
+    "Short thumb",
+    "Limited elbow movement",
+    "Rectovaginal fistula",
+    "Short 1st metacarpal",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

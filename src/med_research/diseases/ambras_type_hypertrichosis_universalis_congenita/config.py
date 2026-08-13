@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'Ambras type hypertrichosis universalis congenita (AMBRAS_TYPE_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Ambras type hypertrichosis universalis congenita
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital, generalized hypertrichosis",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

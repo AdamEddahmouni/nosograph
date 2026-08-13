@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Stüve-Wiedemann syndrome 1 (ST_VE_WIEDEMANN_SYNDROME_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Stüve-Wiedemann syndrome 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal metaphyseal trabeculation",
+    "Autosomal recessive inheritance",
+    "Metaphyseal rarefaction",
+    "Femoral bowing",
+    "Fever",
+    "Short long bone",
+    "Opacification of the corneal stroma",
+    "Midface retrusion",
+    "Absent corneal reflex",
+    "Bowing of the long bones",
+    "Osteoporosis",
+    "Milia",
+    "Smooth tongue",
+    "Thin ribs",
+    "Adducted thumb",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'autosomal dominant mitochondrial myopathy with exercise intole
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal dominant mitochondrial myopathy with exercise intolerance
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased activity of mitochondrial complex II",
+    "Slowly progressive",
+    "Elevated circulating creatine kinase activity",
+    "Exercise intolerance",
+    "Childhood onset",
+    "Neck flexor weakness",
+    "Increased circulating lactate concentration",
+    "Proximal lower limb muscle weakness",
+    "Facial palsy",
+    "Decreased activity of mitochondrial complex IV",
+    "Short stature",
+    "Decreased activity of mitochondrial complex III",
+    "Ragged-red muscle fibers",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

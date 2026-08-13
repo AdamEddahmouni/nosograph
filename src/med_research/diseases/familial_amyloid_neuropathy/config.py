@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'familial amyloid neuropathy (FAMILIAL_AMYLOID_NEUROPATHY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial amyloid neuropathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Diplopia",
+    "Sensorineural hearing impairment",
+    "Confusion",
+    "Episodic vomiting",
+    "Hyporeflexia",
+    "Horizontal nystagmus",
+    "Impotence",
+    "Ptosis",
+    "Tremor",
+    "Paraplegia",
+    "Positive Romberg sign",
+    "Intention tremor",
+    "Amyloid deposition in the vitreous humor",
+    "Progressive",
+    "Diarrhea",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

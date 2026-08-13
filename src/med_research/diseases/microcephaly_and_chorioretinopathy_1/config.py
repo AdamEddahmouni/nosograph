@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'microcephaly and chorioretinopathy 1 (MICROCEPHALY_AND_CHORIOR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of microcephaly and chorioretinopathy 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Simplified gyral pattern",
+    "Intellectual disability",
+    "Retinal detachment",
+    "Seizure",
+    "Cerebellar hypoplasia",
+    "Pachygyria",
+    "Abnormal skin pigmentation",
+    "Microphthalmia",
+    "Chorioretinal dysplasia",
+    "Abnormal facial shape",
+    "Congenital onset",
+    "Visual impairment",
+    "Sloping forehead",
+    "Autosomal recessive inheritance",
+    "Cataract",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

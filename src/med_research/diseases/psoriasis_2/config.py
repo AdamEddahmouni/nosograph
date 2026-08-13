@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'psoriasis 2 (PSORIASIS_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of psoriasis 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperkeratosis",
+    "Epidermal acanthosis",
+    "Parakeratosis",
+    "Psoriasiform dermatitis",
+    "Autosomal dominant inheritance",
+    "Scaling skin",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

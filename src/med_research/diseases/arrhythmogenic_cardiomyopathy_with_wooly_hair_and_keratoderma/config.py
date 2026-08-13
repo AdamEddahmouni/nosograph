@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'arrhythmogenic cardiomyopathy with wooly hair and keratoderma 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of arrhythmogenic cardiomyopathy with wooly hair and keratoderma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Fragile skin",
+    "Gingival recession",
+    "Death in adolescence",
+    "Palmoplantar scaling skin",
+    "Edema",
+    "Autosomal recessive inheritance",
+    "Palmoplantar hyperkeratosis",
+    "Fragile nails",
+    "Nail dystrophy",
+    "Congenital onset",
+    "Abnormality of the cardiovascular system",
+    "Tooth agenesis",
+    "Acantholysis",
+    "Syncope",
+    "Palmoplantar keratoderma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

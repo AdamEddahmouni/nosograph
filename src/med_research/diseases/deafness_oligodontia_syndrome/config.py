@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'deafness-oligodontia syndrome (DEAFNESS_OLIGODONTIA_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of deafness-oligodontia syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital sensorineural hearing impairment",
+    "Diastema",
+    "Autosomal recessive inheritance",
+    "Oligodontia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

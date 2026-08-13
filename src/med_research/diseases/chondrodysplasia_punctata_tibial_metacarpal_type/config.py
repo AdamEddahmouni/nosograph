@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'chondrodysplasia punctata, tibial-metacarpal type (CHONDRODYSP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of chondrodysplasia punctata, tibial-metacarpal type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Midface retrusion",
+    "Autosomal dominant inheritance",
+    "Epiphyseal stippling",
+    "Micromelia",
+    "Short 3rd metacarpal",
+    "Calcific stippling",
+    "Short tibia",
+    "Short 2nd metacarpal",
+    "Short 4th metacarpal",
+    "Coronal cleft vertebrae",
+    "Short long bone",
+    "Malar flattening",
+    "Depressed nasal ridge",
+    "Limb undergrowth",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

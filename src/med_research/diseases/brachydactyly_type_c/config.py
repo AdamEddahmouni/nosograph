@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'brachydactyly type C (BRACHYDACTYLY_TYPE_C)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of brachydactyly type C
-SYMPTOMS = []
+SYMPTOMS = [
+    "Talipes equinovalgus",
+    "Short middle phalanx of the 3rd finger",
+    "Autosomal dominant inheritance",
+    "Hypersegmentation of proximal phalanx of second finger",
+    "Short 2nd finger",
+    "Ulnar deviation of the 3rd finger",
+    "Angel-shaped phalanx",
+    "Pseudoepiphyses of the 3rd finger",
+    "Cone-shaped epiphyses of the middle phalanges of the hand",
+    "Enlarged epiphysis of the middle phalanx of the 3rd finger",
+    "Ulnar deviation of the 2nd finger",
+    "Short middle phalanx of the 2nd finger",
+    "Pseudoepiphysis of the 2nd finger",
+    "Triangular epiphysis of the proximal phalanx of the 2nd finger",
+    "Madelung deformity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

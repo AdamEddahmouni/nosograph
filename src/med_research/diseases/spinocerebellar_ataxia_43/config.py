@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spinocerebellar ataxia 43 (SPINOCEREBELLAR_ATAXIA_43)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spinocerebellar ataxia 43
-SYMPTOMS = []
+SYMPTOMS = [
+    "Distal amyotrophy",
+    "Lower limb pain",
+    "Limb ataxia",
+    "Palmomental reflex",
+    "Pes cavus",
+    "Gait ataxia",
+    "Ataxia",
+    "Tremor",
+    "Nystagmus",
+    "Dysarthria",
+    "Cerebellar vermis atrophy",
+    "Distal sensory impairment",
+    "Sensorimotor neuropathy",
+    "Postural instability",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

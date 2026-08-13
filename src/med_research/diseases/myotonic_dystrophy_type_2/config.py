@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'myotonic dystrophy type 2 (MYOTONIC_DYSTROPHY_TYPE_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of myotonic dystrophy type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Premature ventricular contraction",
+    "Tachycardia",
+    "Sternocleidomastoid amyotrophy",
+    "Elevated circulating follicle stimulating hormone level",
+    "Myalgia",
+    "Proximal muscle weakness",
+    "Periventricular white matter hyperintensities",
+    "Posterior subcapsular cataract",
+    "Generalized amyotrophy",
+    "Insulin insensitivity",
+    "Handgrip myotonia",
+    "Palpitations",
+    "Neck flexor weakness",
+    "Decreased circulating IgM concentration",
+    "Middle age onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

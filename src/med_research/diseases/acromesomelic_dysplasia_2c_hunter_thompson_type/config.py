@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'acromesomelic dysplasia 2C, Hunter-Thompson type (ACROMESOMELI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of acromesomelic dysplasia 2C, Hunter-Thompson type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Severe short-limb dwarfism",
+    "Distal femoral bowing",
+    "Cuboidal metacarpal",
+    "Shortening of all proximal phalanges of the fingers",
+    "Shortening of all middle phalanges of the fingers",
+    "Single transverse palmar crease",
+    "Radial bowing",
+    "Hip dislocation",
+    "Fibular hypoplasia",
+    "Autosomal recessive inheritance",
+    "Short foot",
+    "Elbow dislocation",
+    "Short tibia",
+    "Hypoplasia of the ulna",
+    "Acromesomelia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

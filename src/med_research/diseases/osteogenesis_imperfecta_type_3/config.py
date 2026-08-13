@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'osteogenesis imperfecta type 3 (OSTEOGENESIS_IMPERFECTA_TYPE_3
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of osteogenesis imperfecta type 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Slender long bone",
+    "Protrusio acetabuli",
+    "Micrognathia",
+    "Hearing impairment",
+    "Kyphosis",
+    "Autosomal dominant inheritance",
+    "Neonatal short-limb short stature",
+    "Basilar impression",
+    "Triangular face",
+    "Wormian bones",
+    "Disproportionate short-limb short stature",
+    "Blue sclerae",
+    "Pulmonary arterial hypertension",
+    "Thin ribs",
+    "Decreased calvarial ossification",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

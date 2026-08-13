@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mitochondrial myopathy with reversible cytochrome C oxidase de
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mitochondrial myopathy with reversible cytochrome C oxidase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased muscle lipid content",
+    "Hepatomegaly",
+    "Increased circulating lactate concentration",
+    "Areflexia",
+    "Macroglossia",
+    "Mitochondrial inheritance",
+    "Hyporeflexia",
+    "Feeding difficulties",
+    "Increased muscle glycogen content",
+    "Muscle weakness",
+    "Mitochondrial myopathy",
+    "Neonatal onset",
+    "Lactic acidosis",
+    "Neck muscle weakness",
+    "Failure to thrive",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

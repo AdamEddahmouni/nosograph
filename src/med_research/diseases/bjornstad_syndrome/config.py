@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'Bjornstad syndrome (BJORNSTAD_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Bjornstad syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sensorineural hearing impairment",
+    "Dry hair",
+    "Infantile onset",
+    "Autosomal recessive inheritance",
+    "Coarse hair",
+    "Hypogonadism",
+    "Pili torti",
+    "Alopecia",
+    "Anhidrosis",
+    "Brittle hair",
+    "Hair shafts flattened at irregular intervals and twisted through 180 degrees about their axes",
+    "Intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

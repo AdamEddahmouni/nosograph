@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'Congenital adrenal insufficiency with 46, XY sex reversal OR 4
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Congenital adrenal insufficiency with 46, XY sex reversal OR 46,XY disorder of sex development-adrenal insufficiency due to CYP11A1 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Adrenal insufficiency",
+    "Hyperpigmentation of the skin",
+    "Adrenocorticotropic hormone excess",
+    "Sex reversal",
+    "Renal salt wasting",
+    "Increased circulating aldosterone concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

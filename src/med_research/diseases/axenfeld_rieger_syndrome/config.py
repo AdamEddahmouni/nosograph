@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Axenfeld-Rieger syndrome (AXENFELD_RIEGER_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Axenfeld-Rieger syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Rieger anomaly",
+    "Hydrocephalus",
+    "Umbilical hernia",
+    "Midface retrusion",
+    "Abnormal cardiovascular system morphology",
+    "Hypodontia",
+    "Patent ductus arteriosus",
+    "Abnormal heart morphology",
+    "Anterior chamber synechiae",
+    "Decreased response to growth hormone stimulation test",
+    "Thin upper lip vermilion",
+    "Sensorineural hearing impairment",
+    "Blindness",
+    "Inguinal hernia",
+    "Wide nasal bridge",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

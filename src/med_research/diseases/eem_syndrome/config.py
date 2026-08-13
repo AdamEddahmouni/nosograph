@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'EEM syndrome (EEM_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of EEM syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Ectodermal dysplasia",
+    "Sparse scalp hair",
+    "Selective tooth agenesis",
+    "3-4 toe syndactyly",
+    "1-4 finger cutaneous syndactyly",
+    "Congenital onset",
+    "2-3 finger cutaneous syndactyly",
+    "Camptodactyly",
+    "Sparse eyebrow",
+    "3-4 finger cutaneous syndactyly",
+    "Microdontia",
+    "Joint contracture of the hand",
+    "Macular dystrophy",
+    "Hyperhidrosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

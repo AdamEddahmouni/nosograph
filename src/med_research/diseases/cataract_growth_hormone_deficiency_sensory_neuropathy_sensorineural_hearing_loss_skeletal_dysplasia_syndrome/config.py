@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'cataract-growth hormone deficiency-sensory neuropathy-sensorin
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cataract-growth hormone deficiency-sensory neuropathy-sensorineural hearing loss-skeletal dysplasia syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Long philtrum",
+    "Tapered finger",
+    "Hyperlordosis",
+    "Hydrocephalus",
+    "Osteopenia",
+    "Hypotonia",
+    "Peripheral neuropathy",
+    "Flared metaphysis",
+    "Short thorax",
+    "Mandibular prognathia",
+    "Infantile onset",
+    "Short nose",
+    "Scoliosis",
+    "Micrognathia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

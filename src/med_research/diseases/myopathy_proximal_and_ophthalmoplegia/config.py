@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'myopathy, proximal, and ophthalmoplegia (MYOPATHY_PROXIMAL_AND
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of myopathy, proximal, and ophthalmoplegia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Proximal muscle weakness",
+    "Distal muscle weakness",
+    "Ophthalmoplegia",
+    "Increased variability in muscle fiber diameter",
+    "Myopathic facies",
+    "High palate",
+    "Myopathy",
+    "Generalized hypotonia",
+    "Autosomal dominant inheritance",
+    "Type 1 muscle fiber predominance",
+    "Ptosis",
+    "Congenital onset",
+    "Scoliosis",
+    "Congenital contracture",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

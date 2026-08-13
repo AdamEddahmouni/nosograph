@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'language impairment (LANGUAGE_IMPAIRMENT)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of language impairment
-SYMPTOMS = []
+SYMPTOMS = [
+    "Delayed speech and language development",
+    "Global developmental delay",
+    "Hyperintensity of cerebral white matter on MRI",
+    "Typified by incomplete penetrance",
+    "Autistic behavior",
+    "Language impairment",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

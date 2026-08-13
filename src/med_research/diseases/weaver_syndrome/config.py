@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Weaver syndrome (WEAVER_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Weaver syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Epicanthus",
+    "Atypical behavior",
+    "Poor fine motor coordination",
+    "Diastasis recti",
+    "Postural instability",
+    "Hydrocele testis",
+    "Intellectual disability",
+    "Inguinal hernia",
+    "Limited elbow extension",
+    "Limited knee extension",
+    "Absent septum pellucidum",
+    "Clinodactyly",
+    "Generalized hypotonia",
+    "Hoarse cry",
+    "Calcaneovalgus deformity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

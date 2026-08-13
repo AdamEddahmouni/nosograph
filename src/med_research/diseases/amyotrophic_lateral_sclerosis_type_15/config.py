@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'amyotrophic lateral sclerosis type 15 (AMYOTROPHIC_LATERAL_SCL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of amyotrophic lateral sclerosis type 15
-SYMPTOMS = []
+SYMPTOMS = [
+    "Adult onset",
+    "Paralysis",
+    "Gliosis",
+    "Athetosis",
+    "Dystonia",
+    "Juvenile onset",
+    "X-linked dominant inheritance",
+    "Young adult onset",
+    "Frontotemporal dementia",
+    "Late onset",
+    "Dysphagia",
+    "Progressive",
+    "Amyotrophic lateral sclerosis",
+    "Middle age onset",
+    "Dysarthria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

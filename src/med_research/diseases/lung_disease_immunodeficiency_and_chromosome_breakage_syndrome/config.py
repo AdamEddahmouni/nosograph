@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'lung disease, immunodeficiency, and chromosome breakage syndro
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lung disease, immunodeficiency, and chromosome breakage syndrome;
-SYMPTOMS = []
+SYMPTOMS = [
+    "Mild global developmental delay",
+    "Increased sensitivity to ionizing radiation",
+    "Decreased total CD8+ T cell proportion",
+    "Bronchiolitis obliterans",
+    "Increased circulating IgE concentration",
+    "Cerebral calcification",
+    "Failure to thrive in infancy",
+    "Small for gestational age",
+    "Decreased antigen-specific T cell proliferation",
+    "Wide anterior fontanel",
+    "HP_0005407",
+    "Midface retrusion",
+    "Autosomal recessive inheritance",
+    "Eczematoid dermatitis",
+    "Reduced delayed hypersensitivity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

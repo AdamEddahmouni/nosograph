@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'habitual abortion (HABITUAL_ABORTION)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of habitual abortion
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Azoospermia",
+    "Young adult onset",
+    "Male infertility",
+    "Recurrent spontaneous abortion",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

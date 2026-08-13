@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'transient bullous dermolysis of the newborn (TRANSIENT_BULLOUS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of transient bullous dermolysis of the newborn
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal blistering of the skin",
+    "Autosomal dominant inheritance",
+    "Nail dystrophy",
+    "Atrophic scars",
+    "Fragile skin",
+    "Neonatal onset",
+    "Milia",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

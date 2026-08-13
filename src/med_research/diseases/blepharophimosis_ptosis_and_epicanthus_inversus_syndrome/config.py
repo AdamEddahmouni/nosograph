@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'blepharophimosis, ptosis, and epicanthus inversus syndrome (BL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of blepharophimosis, ptosis, and epicanthus inversus syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Epicanthus inversus",
+    "Increased circulating gonadotropin level",
+    "Strabismus",
+    "Premature ovarian insufficiency",
+    "Blepharophimosis",
+    "Hypermetropia",
+    "Microcephaly",
+    "Narrow palpebral fissure",
+    "Autosomal dominant inheritance",
+    "Sparse pubic hair",
+    "Nystagmus",
+    "Amenorrhea",
+    "Highly arched eyebrow",
+    "Hypoplasia of the uterus",
+    "Ptosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

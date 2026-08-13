@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'retinitis pigmentosa 90 (RETINITIS_PIGMENTOSA_90)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of retinitis pigmentosa 90
-SYMPTOMS = []
+SYMPTOMS = [
+    "Retinal pigment epithelial atrophy",
+    "Childhood onset",
+    "Attenuation of retinal blood vessels",
+    "Autosomal recessive inheritance",
+    "Constriction of peripheral visual field",
+    "Hyperautofluorescent retinal lesion",
+    "Spicular pigmentation of the retina",
+    "Infantile onset",
+    "Reduced visual acuity",
+    "Juvenile onset",
+    "Strabismus",
+    "Cystoid macular edema",
+    "Nyctalopia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

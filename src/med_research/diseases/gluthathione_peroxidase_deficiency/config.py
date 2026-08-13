@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of gluthathione peroxidase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Heinz bodies",
+    "Neonatal hyperbilirubinemia",
+    "Compensated hemolytic anemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

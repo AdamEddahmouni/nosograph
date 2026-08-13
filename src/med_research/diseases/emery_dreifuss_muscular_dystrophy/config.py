@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Emery-Dreifuss muscular dystrophy (EMERY_DREIFUSS_MUSCULAR_DYS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Emery-Dreifuss muscular dystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Neck joint contracture",
+    "Elbow contracture",
+    "Neonatal onset",
+    "Knee flexion contracture",
+    "Scapuloperoneal amyotrophy",
+    "Childhood onset",
+    "Spinal rigidity",
+    "Distal amyotrophy",
+    "Loss of ambulation",
+    "Young adult onset",
+    "Knee contracture",
+    "Autosomal dominant inheritance",
+    "Fatigue",
+    "Respiratory insufficiency",
+    "Scoliosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

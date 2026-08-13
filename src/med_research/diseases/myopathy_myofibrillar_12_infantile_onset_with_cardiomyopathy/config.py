@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'myopathy, myofibrillar, 12, infantile-onset, with cardiomyopat
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of myopathy, myofibrillar, 12, infantile-onset, with cardiomyopathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Myocardial fibrosis",
+    "Hypertrophic cardiomyopathy",
+    "Type 1 fibers relatively smaller than type 2 fibers",
+    "Myofiber disarray",
+    "Elevated circulating creatine kinase activity",
+    "Tented upper lip vermilion",
+    "Tremor",
+    "Ptosis",
+    "Generalized muscle weakness",
+    "Restrictive cardiomyopathy",
+    "Dilated cardiomyopathy",
+    "Cardiogenic shock",
+    "Neonatal onset",
+    "Biventricular hypertrophy",
+    "Left atrial enlargement",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Ehlers-Danlos syndrome, musculocontractural type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Astigmatism",
+    "Intellectual disability",
+    "Nephrotic syndrome",
+    "Long philtrum",
+    "Umbilical hernia",
+    "High palate",
+    "Cleft palate",
+    "Ventriculomegaly",
+    "Global developmental delay",
+    "Hiatus hernia",
+    "Myalgia",
+    "Mitral regurgitation",
+    "Facial asymmetry",
+    "Inguinal hernia",
+    "Telecanthus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

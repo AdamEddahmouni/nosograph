@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'ossification of the posterior longitudinal ligament of the spi
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ossification of the posterior longitudinal ligament of the spine
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Spinal cord compression",
+    "Hyperreflexia",
+    "Abnormality of the vertebral column",
+    "Myelopathy",
+    "Ectopic ossification",
+    "Increased bone mineral density",
+    "Diabetes mellitus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'osteogenesis imperfecta, IIA 22 (OSTEOGENESIS_IMPERFECTA_IIA_2
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of osteogenesis imperfecta, IIA 22
-SYMPTOMS = []
+SYMPTOMS = [
+    "Childhood onset",
+    "Recurrent fractures",
+    "Abnormal circulating phosphate ion concentration",
+    "Thin bony cortex",
+    "Wormian bones",
+    "Delayed ability to walk",
+    "Dentinogenesis imperfecta",
+    "Multiple small vertebral fractures",
+    "Short stature",
+    "Fetal onset",
+    "Multiple prenatal fractures",
+    "Bowing of the long bones",
+    "Slender long bone",
+    "Intrauterine growth retardation",
+    "Pseudoarthrosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

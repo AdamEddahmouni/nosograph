@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Hennekam syndrome (HENNEKAM_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Hennekam syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Migraine",
+    "Hydronephrosis",
+    "Seizure",
+    "Hirsutism",
+    "Intellectual disability",
+    "Vesicoureteral reflux",
+    "Growth delay",
+    "Short palm",
+    "Pericardial lymphangiectasia",
+    "Camptodactyly",
+    "Abnormal tracheal morphology",
+    "Hyperactivity",
+    "Cutaneous finger syndactyly",
+    "Spontaneous pneumothorax",
+    "Nonimmune hydrops fetalis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

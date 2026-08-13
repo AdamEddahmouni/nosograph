@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'hypomandibular faciocranial dysostosis (HYPOMANDIBULAR_FACIOCR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypomandibular faciocranial dysostosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Patent ductus arteriosus",
+    "Aglossia",
+    "Optic disc coloboma",
+    "Coronal craniosynostosis",
+    "Malar flattening",
+    "Atrial septal defect",
+    "Choanal stenosis",
+    "Pursed lips",
+    "Hypoplasia of the maxilla",
+    "Autosomal recessive inheritance",
+    "Micrognathia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

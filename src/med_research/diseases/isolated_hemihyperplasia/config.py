@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'isolated hemihyperplasia (ISOLATED_HEMIHYPERPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of isolated hemihyperplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Myelomeningocele",
+    "Hemihypertrophy",
+    "Mild intellectual disability",
+    "Typified by incomplete penetrance",
+    "Embryonal neoplasm",
+    "Nephroblastoma",
+    "Scoliosis",
+    "Skeletal muscle hypertrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

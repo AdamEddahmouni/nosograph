@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'spondyloepiphyseal dysplasia tarda, autosomal recessive (SPOND
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondyloepiphyseal dysplasia tarda, autosomal recessive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Flattened metacarpal heads",
+    "Flattened metatarsal heads",
+    "Osteoarthritis",
+    "Autosomal recessive inheritance",
+    "Hip osteoarthritis",
+    "Platyspondyly",
+    "Spondyloepiphyseal dysplasia",
+    "Short stature",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'CHAND syndrome (CHAND_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of CHAND syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Commissural lip pit",
+    "Curly hair",
+    "Ankyloblepharon",
+    "Nail dysplasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

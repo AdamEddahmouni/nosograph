@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Riley-Day syndrome (RILEY_DAY_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Riley-Day syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Episodic hyperhidrosis",
+    "Decreased corneal reflex",
+    "Hyporeflexia",
+    "Abnormal renal physiology",
+    "Orthostatic hypotension",
+    "Acrocyanosis",
+    "Scoliosis",
+    "Decreased number of large peripheral myelinated nerve fibers",
+    "Hypertension",
+    "Recurrent fever",
+    "Tachycardia",
+    "Feeding difficulties in infancy",
+    "Emotional lability",
+    "Neuropathic arthropathy",
+    "Vomiting",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

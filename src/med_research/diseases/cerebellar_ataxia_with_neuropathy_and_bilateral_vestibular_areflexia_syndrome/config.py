@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'cerebellar ataxia with neuropathy and bilateral vestibular are
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cerebellar ataxia with neuropathy and bilateral vestibular areflexia syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Impaired vibratory sensation",
+    "Dysarthria",
+    "Hearing abnormality",
+    "Limb ataxia",
+    "Downbeat nystagmus",
+    "Nystagmus",
+    "Impaired pain sensation",
+    "Positive Romberg sign",
+    "Cerebellar vermis atrophy",
+    "Hyporeflexia",
+    "Decreased distal sensory nerve action potential",
+    "Cerebellar atrophy",
+    "Gait ataxia",
+    "Absent Achilles reflex",
+    "Impaired horizontal smooth pursuit",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

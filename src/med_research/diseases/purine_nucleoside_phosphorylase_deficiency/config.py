@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'purine nucleoside phosphorylase deficiency (PURINE_NUCLEOSIDE_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of purine nucleoside phosphorylase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Atypical behavior",
+    "Elevated urinary inosine level",
+    "Infantile onset",
+    "Failure to thrive",
+    "Tetraparesis",
+    "Intellectual disability",
+    "Hypotonia",
+    "Lymph node hypoplasia",
+    "Decreased urinary urate",
+    "Splenomegaly",
+    "Autoimmune hemolytic anemia",
+    "Recurrent lower respiratory tract infections",
+    "Otitis media",
+    "Recurrent bacterial infections",
+    "Decreased mitogen-induced T-cell proliferation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

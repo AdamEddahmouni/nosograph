@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spondyloepiphyseal dysplasia, Kondo-Fu type (SPONDYLOEPIPHYSEA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondyloepiphyseal dysplasia, Kondo-Fu type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Spondyloepiphyseal dysplasia",
+    "Delayed ossification of carpal bones",
+    "Pectus carinatum",
+    "Cataract",
+    "Posteriorly rotated ears",
+    "Infantile onset",
+    "Small for gestational age",
+    "Short femoral neck",
+    "Prominent forehead",
+    "Macrotia",
+    "Brachydactyly",
+    "Inguinal hernia",
+    "Short stature",
+    "Reduced bone mineral density",
+    "Elevated circulating beta-glucuronidase activity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

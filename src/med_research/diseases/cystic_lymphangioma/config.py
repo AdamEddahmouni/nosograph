@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'cystic lymphangioma (CYSTIC_LYMPHANGIOMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cystic lymphangioma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Cystic hygroma",
+    "Hydrops fetalis",
+    "Fetal cystic hygroma",
+    "Stillbirth",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

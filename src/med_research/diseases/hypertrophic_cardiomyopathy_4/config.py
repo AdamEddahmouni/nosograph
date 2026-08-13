@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hypertrophic cardiomyopathy 4 (HYPERTROPHIC_CARDIOMYOPATHY_4)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypertrophic cardiomyopathy 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Myofiber disarray",
+    "Syncope",
+    "Ventricular septal hypertrophy",
+    "Complete right bundle branch block",
+    "Autosomal recessive inheritance",
+    "Hypertrophic cardiomyopathy",
+    "Ascites",
+    "Chest pain",
+    "Cardiomegaly",
+    "Dyspnea",
+    "Adult onset",
+    "Right atrial enlargement",
+    "Stroke",
+    "Juvenile onset",
+    "Reduced left ventricular ejection fraction",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

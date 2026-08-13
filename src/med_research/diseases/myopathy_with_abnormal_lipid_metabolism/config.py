@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'myopathy with abnormal lipid metabolism (MYOPATHY_WITH_ABNORMA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of myopathy with abnormal lipid metabolism
-SYMPTOMS = []
+SYMPTOMS = [
+    "Respiratory insufficiency",
+    "Feeding difficulties",
+    "Decreased activity of mitochondrial complex I",
+    "Cardiomyopathy",
+    "Infantile onset",
+    "Elevated circulating creatine kinase activity",
+    "Dysphagia",
+    "Proximal muscle weakness",
+    "Autosomal recessive inheritance",
+    "Myopathy",
+    "Fatty replacement of skeletal muscle",
+    "Scoliosis",
+    "Exercise intolerance",
+    "Supraventricular tachycardia",
+    "Decreased activity of mitochondrial complex IV",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

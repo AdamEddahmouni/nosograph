@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'Gilbert syndrome (GILBERT_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Gilbert syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Jaundice",
+    "Elevated circulating hepatic transaminase concentration",
+    "Autosomal recessive inheritance",
+    "Hepatic failure",
+    "Unconjugated hyperbilirubinemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

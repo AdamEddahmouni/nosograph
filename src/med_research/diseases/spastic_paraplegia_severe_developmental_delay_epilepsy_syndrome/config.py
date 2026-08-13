@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spastic paraplegia-severe developmental delay-epilepsy syndrom
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spastic paraplegia-severe developmental delay-epilepsy syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Broad-based gait",
+    "Autosomal recessive inheritance",
+    "Global developmental delay",
+    "Lower limb spasticity",
+    "Kyphosis",
+    "Waddling gait",
+    "Lumbar hyperlordosis",
+    "Delayed myelination",
+    "Ataxia",
+    "Cerebral atrophy",
+    "Generalized myoclonic seizure",
+    "Hypoplasia of the corpus callosum",
+    "Scoliosis",
+    "Myopia",
+    "Talipes equinovarus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

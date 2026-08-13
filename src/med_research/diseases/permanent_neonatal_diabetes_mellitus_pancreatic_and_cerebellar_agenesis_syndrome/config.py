@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'permanent neonatal diabetes mellitus-pancreatic and cerebellar
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of permanent neonatal diabetes mellitus-pancreatic and cerebellar agenesis syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Optic nerve hypoplasia",
+    "Hyporeflexia",
+    "Secundum atrial septal defect",
+    "Pancreatic aplasia",
+    "Short chin",
+    "Low-set ears",
+    "Autosomal recessive inheritance",
+    "Abnormal pinna morphology",
+    "Microcephaly",
+    "Convex nasal ridge",
+    "Joint stiffness",
+    "Apnea",
+    "Diabetes mellitus",
+    "Anemia",
+    "Pancreatic hypoplasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

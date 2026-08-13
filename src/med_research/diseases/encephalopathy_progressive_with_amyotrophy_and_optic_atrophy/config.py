@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'encephalopathy, progressive, with amyotrophy and optic atrophy
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of encephalopathy, progressive, with amyotrophy and optic atrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Spinal muscular atrophy",
+    "Optic atrophy",
+    "Infantile onset",
+    "Intellectual disability",
+    "Spastic tetraplegia",
+    "Hypoplasia of the corpus callosum",
+    "Autosomal recessive inheritance",
+    "Spasticity",
+    "Congenital onset",
+    "Scoliosis",
+    "Progressive",
+    "Foot dorsiflexor weakness",
+    "Generalized hypotonia",
+    "Absent speech",
+    "Childhood onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

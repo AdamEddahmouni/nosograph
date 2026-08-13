@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neutral lipid storage myopathy (NEUTRAL_LIPID_STORAGE_MYOPATHY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neutral lipid storage myopathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated circulating creatine kinase activity",
+    "Adult onset",
+    "Hearing impairment",
+    "Hepatic steatosis",
+    "Increased muscle lipid content",
+    "Hypertriglyceridemia",
+    "Hepatomegaly",
+    "Cardiomyopathy",
+    "Difficulty running",
+    "Mild intellectual disability",
+    "Ichthyosis",
+    "Elevated circulating hepatic transaminase concentration",
+    "Microcephaly",
+    "Hypotonia",
+    "Areflexia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

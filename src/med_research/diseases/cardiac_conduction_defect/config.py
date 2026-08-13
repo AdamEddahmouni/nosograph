@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'cardiac conduction defect (CARDIAC_CONDUCTION_DEFECT)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cardiac conduction defect
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sudden death",
+    "Arrhythmia",
+    "Autosomal dominant inheritance",
+    "Syncope",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Tangier disease (TANGIER_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Tangier disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated circulating apolipoprotein A-II concentration",
+    "Facial diplegia",
+    "Hypertriglyceridemia",
+    "Cicatricial ectropion",
+    "Peripheral axonal neuropathy",
+    "Splenomegaly",
+    "Nail dystrophy",
+    "Impaired pain sensation",
+    "Myocardial infarction",
+    "Ectropion",
+    "Visual impairment",
+    "Peripheral demyelination",
+    "Hyporeflexia",
+    "Impaired temperature sensation",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

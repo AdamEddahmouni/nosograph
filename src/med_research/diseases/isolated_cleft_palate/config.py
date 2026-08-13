@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'isolated cleft palate (ISOLATED_CLEFT_PALATE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of isolated cleft palate
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Increased overbite",
+    "Cleft palate",
+    "Gingival overgrowth",
+    "Anterior open-bite malocclusion",
+    "Micrognathia",
+    "Seizure",
+    "Profound intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

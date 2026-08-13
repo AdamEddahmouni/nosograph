@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'acrofacial dysostosis, Catania type (ACROFACIAL_DYSOSTOSIS_CAT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of acrofacial dysostosis, Catania type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Single transverse palmar crease",
+    "Cleft palate",
+    "Downslanted palpebral fissures",
+    "Cryptorchidism",
+    "Enlarged cisterna magna",
+    "Malar flattening",
+    "Microcephaly",
+    "Carious teeth",
+    "Intrauterine growth retardation",
+    "Short stature",
+    "Micrognathia",
+    "Mandibulofacial dysostosis",
+    "Short palm",
+    "Widow's peak",
+    "Cerebral cortical atrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'synovial sarcoma (SYNOVIAL_SARCOMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of synovial sarcoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Synovial sarcoma",
+    "Typified by somatic mosaicism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

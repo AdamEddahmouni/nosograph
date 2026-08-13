@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'Melkersson-Rosenthal syndrome (MELKERSSON_ROSENTHAL_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Melkersson-Rosenthal syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Facial palsy",
+    "Abnormality of the eye",
+    "Furrowed tongue",
+    "Autosomal dominant inheritance",
+    "Facial edema",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

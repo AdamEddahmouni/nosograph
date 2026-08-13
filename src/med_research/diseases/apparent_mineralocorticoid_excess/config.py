@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'apparent mineralocorticoid excess (APPARENT_MINERALOCORTICOID_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of apparent mineralocorticoid excess
-SYMPTOMS = []
+SYMPTOMS = [
+    "Failure to thrive",
+    "Metabolic alkalosis",
+    "Small for gestational age",
+    "Hypertension",
+    "Decreased circulating aldosterone concentration",
+    "Hypertensive retinopathy",
+    "Short stature",
+    "Hypokalemia",
+    "Growth delay",
+    "Decreased circulating renin concentration",
+    "Autosomal recessive inheritance",
+    "Childhood onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'Scheuermann disease (SCHEUERMANN_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Scheuermann disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Morbus Scheuermann",
+    "Autosomal dominant inheritance",
+    "Osteochondrosis",
+    "Kyphosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

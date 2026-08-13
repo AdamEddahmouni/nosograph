@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'brachydactyly-preaxial hallux varus syndrome (BRACHYDACTYLY_PR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of brachydactyly-preaxial hallux varus syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hitchhiker thumb",
+    "Autosomal dominant inheritance",
+    "Short metatarsal",
+    "Short metacarpal",
+    "Hallux varus",
+    "Short thumb",
+    "Short hallux",
+    "Short distal phalanx of finger",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

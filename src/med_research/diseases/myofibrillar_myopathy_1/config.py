@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'myofibrillar myopathy 1 (MYOFIBRILLAR_MYOPATHY_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of myofibrillar myopathy 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypertrophic cardiomyopathy",
+    "Late-onset proximal muscle weakness",
+    "Bradycardia",
+    "Adult onset",
+    "Bulbar palsy",
+    "Hyporeflexia of lower limbs",
+    "Third degree atrioventricular block",
+    "Autosomal recessive inheritance",
+    "Neck muscle weakness",
+    "Facial palsy",
+    "Respiratory insufficiency due to muscle weakness",
+    "Dilated cardiomyopathy",
+    "Autosomal dominant inheritance",
+    "Constipation",
+    "Restrictive cardiomyopathy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

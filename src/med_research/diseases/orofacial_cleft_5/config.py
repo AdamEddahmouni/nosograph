@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'orofacial cleft 5 (OROFACIAL_CLEFT_5)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of orofacial cleft 5
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Cleft palate",
+    "Cleft upper lip",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

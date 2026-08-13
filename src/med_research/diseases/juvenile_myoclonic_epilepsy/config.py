@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'juvenile myoclonic epilepsy (JUVENILE_MYOCLONIC_EPILEPSY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of juvenile myoclonic epilepsy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Status epilepticus",
+    "Bilateral tonic-clonic seizure",
+    "Generalized non-motor (absence) seizure",
+    "Myoclonic seizure",
+    "EEG with generalized polyspikes",
+    "Autosomal dominant inheritance",
+    "Morning myoclonic jerks",
+    "Intellectual disability",
+    "Juvenile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spondyloepimetaphyseal dysplasia, Missouri type (SPONDYLOEPIME
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondyloepimetaphyseal dysplasia, Missouri type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Waddling gait",
+    "Flared, irregular rib ends",
+    "Flared iliac wing",
+    "Osteoarthritis",
+    "Platyspondyly",
+    "Flared metaphysis",
+    "Metaphyseal cupping",
+    "Ulnar bowing",
+    "Autosomal dominant inheritance",
+    "Small epiphyses",
+    "Femoral bowing",
+    "Flattened epiphysis",
+    "Delayed skeletal maturation",
+    "Tibial bowing",
+    "Limited elbow extension",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

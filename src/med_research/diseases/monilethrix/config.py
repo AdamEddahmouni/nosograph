@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'monilethrix (MONILETHRIX)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of monilethrix
-SYMPTOMS = []
+SYMPTOMS = [
+    "Keratosis pilaris",
+    "Nail dysplasia",
+    "Variable expressivity",
+    "Alopecia",
+    "Abnormality of hair texture",
+    "Sparse hair",
+    "Brittle hair",
+    "Autosomal dominant inheritance",
+    "Infantile onset",
+    "Perifollicular hyperkeratosis",
+    "Nail dystrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

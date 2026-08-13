@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hereditary multiple exostoses (HEREDITARY_MULTIPLE_EXOSTOSES)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hereditary multiple exostoses
-SYMPTOMS = []
+SYMPTOMS = [
+    "Coxa vara",
+    "Juvenile onset",
+    "Short metacarpal",
+    "Protuberances at ends of long bones",
+    "Genu valgum",
+    "Rib exostoses",
+    "Madelung-like forearm deformities",
+    "Chondrosarcoma",
+    "Pelvic bone exostoses",
+    "Cervical myelopathy",
+    "Infantile onset",
+    "Peripheral nerve compression",
+    "Multiple exostoses",
+    "Short stature",
+    "Childhood onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

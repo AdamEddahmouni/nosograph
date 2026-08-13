@@ -8,8 +8,23 @@ PIPELINE_LABEL = "essential tremor (ESSENTIAL_TREMOR)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of essential tremor
-SYMPTOMS = []
+SYMPTOMS = [
+    "Typified by age-related disease onset",
+    "Typified by incomplete penetrance",
+    "Slowly progressive",
+    "Childhood onset",
+    "Intention tremor",
+    "Progressive",
+    "Young adult onset",
+    "Postural tremor",
+    "Kinetic tremor",
+    "Hand tremor",
+    "Autosomal dominant inheritance",
+    "Bradykinesia",
+    "Dysarthria",
+    "Late onset",
+    "Juvenile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

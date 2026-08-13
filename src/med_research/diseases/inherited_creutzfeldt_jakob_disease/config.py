@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'inherited Creutzfeldt-Jakob disease (INHERITED_CREUTZFELDT_JAK
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of inherited Creutzfeldt-Jakob disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Gait ataxia",
+    "Visual impairment",
+    "Autosomal dominant inheritance",
+    "Supranuclear gaze palsy",
+    "Abnormal cerebellum morphology",
+    "Irritability",
+    "Rapidly progressive",
+    "Myoclonus",
+    "Loss of facial expression",
+    "Dementia",
+    "Personality changes",
+    "Delusion",
+    "Hemiparesis",
+    "Extrapyramidal muscular rigidity",
+    "Aphasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

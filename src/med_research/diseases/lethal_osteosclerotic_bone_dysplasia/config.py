@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'lethal osteosclerotic bone dysplasia (LETHAL_OSTEOSCLEROTIC_BO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lethal osteosclerotic bone dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Protruding ear",
+    "Downslanted palpebral fissures",
+    "Pectus excavatum",
+    "Brachydactyly",
+    "Large fontanelles",
+    "Depressed nasal bridge",
+    "Proptosis",
+    "Short stature",
+    "Low-set ears",
+    "Highly arched eyebrow",
+    "Malar flattening",
+    "Choanal atresia",
+    "Elevated circulating alkaline phosphatase concentration",
+    "Thoracic hypoplasia",
+    "Abnormal pinna morphology",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

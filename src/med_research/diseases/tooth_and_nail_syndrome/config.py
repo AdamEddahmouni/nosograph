@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'tooth and nail syndrome (TOOTH_AND_NAIL_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of tooth and nail syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Fine hair",
+    "Microdontia of primary teeth",
+    "Concave nail",
+    "Nail pits",
+    "Ridged nail",
+    "Hypoplastic fifth toenail",
+    "Autosomal dominant inheritance",
+    "Sparse hair",
+    "Agenesis of permanent teeth",
+    "Abnormal sweat gland morphology",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

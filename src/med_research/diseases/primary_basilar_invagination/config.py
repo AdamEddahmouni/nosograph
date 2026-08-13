@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'primary basilar invagination (PRIMARY_BASILAR_INVAGINATION)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of primary basilar invagination
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Typified by incomplete penetrance",
+    "Kyphoscoliosis",
+    "Horner syndrome",
+    "HP_0005788",
+    "Basilar impression",
+    "Craniofacial asymmetry",
+    "Syringomyelia",
+    "Variable expressivity",
+    "Limb muscle weakness",
+    "Short neck",
+    "Platybasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mevalonic aciduria (MEVALONIC_ACIDURIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mevalonic aciduria
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cerebral atrophy",
+    "Fluctuating hepatomegaly",
+    "Underdeveloped nasal alae",
+    "Attenuation of retinal blood vessels",
+    "Increased total leukocyte count",
+    "Elevated erythrocyte sedimentation rate",
+    "Normocytic hypoplastic anemia",
+    "Morbilliform rash",
+    "Progressive cerebellar ataxia",
+    "Microcephaly",
+    "Recurrent infections",
+    "Increased circulating lactate dehydrogenase concentration",
+    "Nuclear cataract",
+    "Elevated circulating C-reactive protein concentration",
+    "Blue sclerae",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

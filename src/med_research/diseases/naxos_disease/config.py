@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Naxos disease (NAXOS_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Naxos disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Arrhythmia",
+    "Subungual hyperkeratosis",
+    "Abnormal morphology of right ventricular trabeculae",
+    "Congenital onset",
+    "Acantholysis",
+    "Epidermal acanthosis",
+    "Ventricular arrhythmia",
+    "Hyperkeratosis",
+    "Nail dystrophy",
+    "Dilated cardiomyopathy",
+    "Sudden death",
+    "Palpitations",
+    "Curly hair",
+    "Abnormal blistering of the skin",
+    "Prolonged QRS complex",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

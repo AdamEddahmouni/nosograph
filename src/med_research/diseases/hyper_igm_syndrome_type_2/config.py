@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'hyper-IgM syndrome type 2 (HYPER_IGM_SYNDROME_TYPE_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hyper-IgM syndrome type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased circulating IgM concentration",
+    "Recurrent infection of the gastrointestinal tract",
+    "Impaired Ig class switch recombination",
+    "Complete or near-complete absence of specific antibody response to tetanus vaccine",
+    "Immunodeficiency",
+    "Lymphadenopathy",
+    "Recurrent bacterial infections",
+    "Autosomal recessive inheritance",
+    "Decreased circulating IgA concentration",
+    "Recurrent respiratory infections",
+    "Recurrent upper and lower respiratory tract infections",
+    "Childhood onset",
+    "Decreased circulating IgG concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

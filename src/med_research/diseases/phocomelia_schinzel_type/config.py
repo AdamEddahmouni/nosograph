@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of phocomelia, Schinzel type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Humeroradial synostosis",
+    "Autosomal recessive inheritance",
+    "Aplasia/Hypoplasia of the phalanges of the toes",
+    "Finger aplasia",
+    "Wide nasal bridge",
+    "Hemivertebrae",
+    "Elbow flexion contracture",
+    "Pilonidal sinus",
+    "Aplasia/Hypoplasia of the phalanges of the hand",
+    "Narrow palate",
+    "Split hand",
+    "Aplasia/Hypoplasia of the pubic bone",
+    "Pectus carinatum",
+    "Low-set ears",
+    "Decreased calvarial ossification",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

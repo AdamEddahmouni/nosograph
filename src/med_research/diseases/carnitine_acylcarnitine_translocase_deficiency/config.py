@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'carnitine-acylcarnitine translocase deficiency (CARNITINE_ACYL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of carnitine-acylcarnitine translocase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated circulating hepatic transaminase concentration",
+    "Reduced tissue carnitine-acylcarnitine translocase activity",
+    "Cardiorespiratory arrest",
+    "Hypoglycemia",
+    "Dicarboxylic aciduria",
+    "Coma",
+    "Bradycardia",
+    "Neonatal hypoglycemia",
+    "Rhabdomyolysis",
+    "Atrioventricular block",
+    "Elevated circulating creatine kinase activity",
+    "Hepatomegaly",
+    "Hypotension",
+    "Ventricular tachycardia",
+    "Cardiomyopathy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

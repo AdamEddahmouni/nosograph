@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'multiple epiphyseal dysplasia, Beighton type (MULTIPLE_EPIPHYS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of multiple epiphyseal dysplasia, Beighton type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Myopia",
+    "Short phalanx of finger",
+    "Conductive hearing impairment",
+    "Coxa valga",
+    "Short stature",
+    "Round face",
+    "Cataract",
+    "Flat face",
+    "Narrow mouth",
+    "Genu valgum",
+    "Asteroid hyalosis",
+    "Epiphyseal dysplasia",
+    "Retinal thinning on OCT",
+    "Brachydactyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

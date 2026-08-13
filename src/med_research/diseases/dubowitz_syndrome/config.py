@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Dubowitz syndrome (DUBOWITZ_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Dubowitz syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Hypoplasia of the iris",
+    "Neuroblastoma",
+    "Delayed speech and language development",
+    "Low-set ears",
+    "Short palpebral fissure",
+    "Intellectual disability",
+    "Rod-cone dystrophy",
+    "Sparse scalp hair",
+    "Hypospadias",
+    "Protruding ear",
+    "Sloping forehead",
+    "Gastroesophageal reflux",
+    "Triangular face",
+    "Thick vermilion border",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

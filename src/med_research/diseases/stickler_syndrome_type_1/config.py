@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Stickler syndrome type 1 (STICKLER_SYNDROME_TYPE_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Stickler syndrome type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Joint stiffness",
+    "Anteverted nares",
+    "Micrognathia",
+    "Arthralgia",
+    "Bifid uvula",
+    "Pierre-Robin sequence",
+    "Beaking of vertebral bodies",
+    "Retinal detachment",
+    "Depressed nasal bridge",
+    "Glaucoma",
+    "Hearing impairment",
+    "Midface retrusion",
+    "Membranous vitreous appearance",
+    "Cataract",
+    "Rhegmatogenous retinal detachment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'congenital heart block (CONGENITAL_HEART_BLOCK)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital heart block
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cardiomyopathy",
+    "Autosomal recessive inheritance",
+    "Myocardial calcification",
+    "Myocardial fibrosis",
+    "Mitral regurgitation",
+    "Absent atrioventricular node",
+    "Atrioventricular block",
+    "Atrial arrhythmia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

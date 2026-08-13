@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'alveolar rhabdomyosarcoma (ALVEOLAR_RHABDOMYOSARCOMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of alveolar rhabdomyosarcoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Typified by somatic mosaicism",
+    "Alveolar rhabdomyosarcoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

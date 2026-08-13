@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'intellectual developmental disorder with poor growth and with 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of intellectual developmental disorder with poor growth and with or without seizures or ataxia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Developmental cataract",
+    "Elevated circulating LDL-C concentration",
+    "Gait ataxia",
+    "Muscle weakness",
+    "Incoordination",
+    "Mild global developmental delay",
+    "Delayed ability to walk",
+    "Seizure",
+    "Dysarthria",
+    "Aggressive behavior",
+    "Fair hair",
+    "Mild intellectual disability",
+    "Intellectual disability",
+    "Autosomal recessive inheritance",
+    "Microcephaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

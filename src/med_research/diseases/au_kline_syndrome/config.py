@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Au-Kline syndrome (AU_KLINE_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Au-Kline syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Intellectual disability",
+    "Deep palmar crease",
+    "Absent speech",
+    "Clinodactyly of the 5th finger",
+    "Autosomal dominant inheritance",
+    "Open mouth",
+    "Retrognathia",
+    "Abnormal four chamber view of the fetal heart",
+    "Thoracolumbar scoliosis",
+    "Bifid uvula",
+    "Fetal pericardial effusion",
+    "Coxa valga",
+    "Gastroesophageal reflux",
+    "Aortic root aneurysm",
+    "Attention deficit hyperactivity disorder",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'cardiomyopathy, dilated, 2F (CARDIOMYOPATHY_DILATED_2F)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cardiomyopathy, dilated, 2F
-SYMPTOMS = []
+SYMPTOMS = [
+    "Young adult onset",
+    "Ventricular tachycardia",
+    "Congestive heart failure",
+    "Dilated cardiomyopathy",
+    "Increased left ventricular end-diastolic volume",
+    "Juvenile onset",
+    "Severely reduced left ventricular ejection fraction",
+    "Autosomal recessive inheritance",
+    "Ventricular fibrillation",
+    "Increased circulating brain natriuretic peptide concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

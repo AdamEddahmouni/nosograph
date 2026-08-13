@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Heyn-Sproul-Jackson syndrome (HEYN_SPROUL_JACKSON_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Heyn-Sproul-Jackson syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Strabismus",
+    "Global developmental delay",
+    "Decreased body weight",
+    "Epicanthus",
+    "Broad forehead",
+    "Short metacarpal",
+    "Intrauterine growth retardation",
+    "Microcephaly",
+    "Short phalanx of finger",
+    "11 pairs of ribs",
+    "Sparse hair",
+    "Broad metacarpals",
+    "Delayed speech and language development",
+    "Autosomal dominant inheritance",
+    "Broad phalanx",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

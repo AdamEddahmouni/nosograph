@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Cowden syndrome 1 (COWDEN_SYNDROME_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Cowden syndrome 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Fibroadenoma of the breast",
+    "Hydrocele testis",
+    "Palmoplantar hyperkeratosis",
+    "Transitional cell carcinoma of the bladder",
+    "Hyperthyroidism",
+    "Progressive macrocephaly",
+    "Hearing impairment",
+    "Hypoplasia of the maxilla",
+    "Mild intellectual disability",
+    "Goiter",
+    "Narrow mouth",
+    "Dysplastic gangliocytoma of the cerebellum",
+    "Acrokeratosis",
+    "Adult onset",
+    "Hypothyroidism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'epithelial basement membrane dystrophy (EPITHELIAL_BASEMENT_ME
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of epithelial basement membrane dystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Reduced visual acuity",
+    "Juvenile onset",
+    "Autosomal dominant inheritance",
+    "Corneal dystrophy",
+    "Recurrent corneal erosions",
+    "Map-dot-fingerprint corneal dystrophy",
+    "Middle age onset",
+    "Young adult onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'microcephalic osteodysplastic primordial dwarfism type II (MIC
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of microcephalic osteodysplastic primordial dwarfism type II
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cone-shaped epiphysis",
+    "Ulnar bowing",
+    "Hypoplastic scapulae",
+    "Intellectual disability",
+    "Long clavicle",
+    "Straight clavicle",
+    "Large sella turcica",
+    "Sloping forehead",
+    "Short 1st metacarpal",
+    "Retrognathia",
+    "Upslanted palpebral fissure",
+    "Truncal obesity",
+    "Global developmental delay",
+    "Microcephaly",
+    "Thin clavicle",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

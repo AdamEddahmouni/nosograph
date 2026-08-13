@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autosomal dominant limb-girdle muscular dystrophy type 1G (AUT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal dominant limb-girdle muscular dystrophy type 1G
-SYMPTOMS = []
+SYMPTOMS = [
+    "Flexion limitation of toes",
+    "Myopathy",
+    "Cataract",
+    "Typified by incomplete penetrance",
+    "Autosomal dominant inheritance",
+    "Rimmed vacuoles",
+    "Proximal lower limb amyotrophy",
+    "Elevated circulating creatine kinase activity",
+    "Limb-girdle muscular dystrophy",
+    "Adult onset",
+    "Proximal upper limb amyotrophy",
+    "Decreased movement range in interphalangeal joints",
+    "Pelvic girdle muscle weakness",
+    "Hyporeflexia",
+    "Slowly progressive",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

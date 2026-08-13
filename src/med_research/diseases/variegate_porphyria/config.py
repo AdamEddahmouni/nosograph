@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'variegate porphyria (VARIEGATE_PORPHYRIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of variegate porphyria
-SYMPTOMS = []
+SYMPTOMS = [
+    "Porphyrinuria",
+    "Tachycardia",
+    "Peripheral neuropathy",
+    "Increased fecal protoporphyrin concentration",
+    "Vomiting",
+    "Young adult onset",
+    "Psychosis",
+    "Elevated urinary delta-aminolevulinic acid",
+    "Abdominal pain",
+    "Autosomal dominant inheritance",
+    "Paralysis",
+    "Increased urinary porphobilinogen",
+    "Constipation",
+    "Cutaneous photosensitivity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

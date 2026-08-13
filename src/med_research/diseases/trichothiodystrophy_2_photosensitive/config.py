@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'trichothiodystrophy 2, photosensitive (TRICHOTHIODYSTROPHY_2_P
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of trichothiodystrophy 2, photosensitive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Intellectual disability",
+    "Ichthyosis",
+    "Cutaneous photosensitivity",
+    "Congenital nonbullous ichthyosiform erythroderma",
+    "Short stature",
+    "Autosomal recessive inheritance",
+    "Tiger tail banding",
+    "Coarse hair",
+    "Congenital onset",
+    "Agenesis of maxillary lateral incisor",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'agammaglobulinemia 8b, autosomal recessive (AGAMMAGLOBULINEMIA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of agammaglobulinemia 8b, autosomal recessive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Overfolded helix",
+    "Failure to thrive",
+    "Decreased CD8+ TEMRA T cell proportion",
+    "Recurrent infections",
+    "Depressed nasal bridge",
+    "Decreased circulating IgM concentration",
+    "Autosomal recessive inheritance",
+    "Anemia",
+    "Chronic diarrhea",
+    "Prominent stem of antihelix",
+    "Splenomegaly",
+    "Infantile onset",
+    "Recurrent pneumonia",
+    "Hypertelorism",
+    "Partial absence of specific antibody response to tetanus vaccine",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

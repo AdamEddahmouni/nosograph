@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Mowat-Wilson syndrome (MOWAT_WILSON_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Mowat-Wilson syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Seizure",
+    "Motor delay",
+    "Hypertelorism",
+    "Esotropia",
+    "Absent speech",
+    "Aplasia/Hypoplasia of the cerebral white matter",
+    "Abnormal enteric ganglion morphology",
+    "Pulmonary artery sling",
+    "Delayed speech and language development",
+    "Abnormality of the kidney",
+    "Pulmonary artery stenosis",
+    "Ptosis",
+    "Pectus excavatum",
+    "Large basal ganglia",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

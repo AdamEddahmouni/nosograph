@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'early-onset parkinsonism-intellectual disability syndrome (EAR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of early-onset parkinsonism-intellectual disability syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Shuffling gait",
+    "Bradykinesia",
+    "Mild intellectual disability",
+    "Dyskinesia",
+    "Postural instability",
+    "Young adult onset",
+    "Dementia",
+    "Macrocephaly",
+    "Dysarthria",
+    "Cogwheel rigidity",
+    "Poor speech",
+    "X-linked recessive inheritance",
+    "Middle age onset",
+    "Rigidity",
+    "Seizure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

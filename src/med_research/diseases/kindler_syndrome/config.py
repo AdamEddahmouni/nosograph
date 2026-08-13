@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Kindler syndrome (KINDLER_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Kindler syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Carious teeth",
+    "Ridged nail",
+    "Palmoplantar hyperkeratosis",
+    "Telangiectasia of the skin",
+    "Amniotic constriction ring",
+    "Spotty hyperpigmentation",
+    "Autosomal recessive inheritance",
+    "Poikiloderma",
+    "Acral blistering",
+    "Dysphagia",
+    "Urethral stenosis",
+    "Corneal erosion",
+    "Anal stenosis",
+    "Periodontitis",
+    "Fragile skin",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'autoimmune thrombocytopenic purpura (AUTOIMMUNE_THROMBOCYTOPEN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autoimmune thrombocytopenic purpura
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Platelet antibody positive",
+    "Abnormal bleeding",
+    "Thrombocytopenia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

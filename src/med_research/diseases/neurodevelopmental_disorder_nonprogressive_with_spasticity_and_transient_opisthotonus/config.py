@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neurodevelopmental disorder, nonprogressive, with spasticity a
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neurodevelopmental disorder, nonprogressive, with spasticity and transient opisthotonus
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Spastic tetraparesis",
+    "Partial agenesis of the corpus callosum",
+    "Motor delay",
+    "Delayed CNS myelination",
+    "Distal upper limb muscle weakness",
+    "Dystonia",
+    "Apraxia",
+    "Opisthotonus",
+    "Lower limb hyperreflexia",
+    "Hyperreflexia",
+    "Delayed speech and language development",
+    "CNS demyelination",
+    "Infantile onset",
+    "Choreoathetosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

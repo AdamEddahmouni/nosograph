@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Leri-Weill dyschondrosteosis (LERI_WEILL_DYSCHONDROSTEOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Leri-Weill dyschondrosteosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased carrying angle",
+    "Skeletal muscle hypertrophy",
+    "Hypoplasia of the ulna",
+    "Radial bowing",
+    "Abnormal femoral neck morphology",
+    "Abnormal metatarsal morphology",
+    "Abnormal carpal morphology",
+    "High palate",
+    "Scoliosis",
+    "Abnormal metacarpal morphology",
+    "Fibular hypoplasia",
+    "Short toe",
+    "Limited elbow movement",
+    "Hypoplasia of the radius",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

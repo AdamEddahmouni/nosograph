@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'ectodermal dysplasia and immunodeficiency 1 (ECTODERMAL_DYSPLA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ectodermal dysplasia and immunodeficiency 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal circulating IgG concentration",
+    "Unusual molluscum contagiosum",
+    "HP_0002961",
+    "Severe cytomegalovirus infection",
+    "Increased circulating IgM concentration",
+    "Aplasia of the eccrine sweat glands",
+    "X-linked recessive inheritance",
+    "Conical incisor",
+    "Sparse hair",
+    "Increased circulating IgA concentration",
+    "Ectodermal dysplasia",
+    "Recurrent bacterial infections",
+    "Lymphedema",
+    "Immunodeficiency",
+    "HP_0012178",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

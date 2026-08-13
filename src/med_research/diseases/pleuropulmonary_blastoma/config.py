@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'Pleuropulmonary blastoma (PLEUROPULMONARY_BLASTOMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Pleuropulmonary blastoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Medulloblastoma",
+    "Autosomal dominant inheritance",
+    "Pleuropulmonary blastoma",
+    "Rhabdomyosarcoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

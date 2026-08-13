@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'atrial septal defect 7 (ATRIAL_SEPTAL_DEFECT_7)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of atrial septal defect 7
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Atrial fibrillation",
+    "Ventricular septal defect",
+    "Pulmonary artery atresia",
+    "Tetralogy of Fallot",
+    "Subvalvular aortic stenosis",
+    "Secundum atrial septal defect",
+    "Prolonged PR interval",
+    "Left ventricular hypertrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

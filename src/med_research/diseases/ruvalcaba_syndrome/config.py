@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Ruvalcaba syndrome (RUVALCABA_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Ruvalcaba syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Limited elbow extension",
+    "Short metacarpal",
+    "Underdeveloped nasal alae",
+    "Short palm",
+    "Retinal dystrophy",
+    "Small hand",
+    "Short metatarsal",
+    "Micromelia",
+    "Dental crowding",
+    "Narrow chest",
+    "Short foot",
+    "Short phalanx of finger",
+    "Abnormality of the breast",
+    "Narrow nose",
+    "Inguinal hernia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

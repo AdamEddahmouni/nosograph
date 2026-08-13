@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'agammaglobulinemia 8, autosomal dominant (AGAMMAGLOBULINEMIA_8
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of agammaglobulinemia 8, autosomal dominant
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Recurrent otitis media",
+    "Infantile onset",
+    "Recurrent infections",
+    "Agammaglobulinemia",
+    "Decreased total B cell count",
+    "Post-vaccination polio",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

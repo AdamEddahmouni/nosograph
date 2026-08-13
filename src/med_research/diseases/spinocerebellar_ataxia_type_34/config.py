@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spinocerebellar ataxia type 34 (SPINOCEREBELLAR_ATAXIA_TYPE_34
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spinocerebellar ataxia type 34
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cerebral cortical atrophy",
+    "Dysarthria",
+    "Intention tremor",
+    "Young adult onset",
+    "Hyporeflexia",
+    "Hyperreflexia",
+    "Limb ataxia",
+    "Spasticity",
+    "Autosomal dominant inheritance",
+    "Late onset",
+    "Ataxia",
+    "Fasciculations",
+    "Cerebellar atrophy",
+    "Middle age onset",
+    "Erythroderma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

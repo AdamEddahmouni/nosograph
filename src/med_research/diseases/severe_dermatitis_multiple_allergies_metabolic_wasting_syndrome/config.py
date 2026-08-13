@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'severe dermatitis-multiple allergies-metabolic wasting syndrom
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of severe dermatitis-multiple allergies-metabolic wasting syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital onset",
+    "Hypernatremia",
+    "Food allergy",
+    "Psoriasiform dermatitis",
+    "Palmoplantar keratoderma",
+    "Increased circulating IgE concentration",
+    "Recurrent respiratory infections",
+    "Recurrent skin infections",
+    "Autosomal recessive inheritance",
+    "Malabsorption",
+    "Global developmental delay",
+    "Reduced circulating growth hormone concentration",
+    "Eosinophilic infiltration of the esophagus",
+    "Microcephaly",
+    "Multiple muscular ventricular septal defects",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

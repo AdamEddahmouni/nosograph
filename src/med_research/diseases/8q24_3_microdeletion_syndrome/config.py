@@ -8,8 +8,23 @@ PIPELINE_LABEL = '8q24.3 microdeletion syndrome (8Q24_3_MICRODELETION_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of 8q24.3 microdeletion syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Feeding difficulties",
+    "Thin upper lip vermilion",
+    "Coloboma",
+    "Seizure",
+    "Square face",
+    "Renal agenesis",
+    "Prominent forehead",
+    "Retrognathia",
+    "Vertebral fusion",
+    "Full cheeks",
+    "Global developmental delay",
+    "Short stature",
+    "Autosomal dominant inheritance",
+    "Cerebral atrophy",
+    "Long philtrum",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

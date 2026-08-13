@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypergonadotropic hypogonadism-cataract syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Infertility",
+    "Cataract",
+    "Hypogonadism",
+    "Male hypogonadism",
+    "Elevated circulating follicle stimulating hormone level",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

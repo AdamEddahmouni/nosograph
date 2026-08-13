@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hemochromatosis type 2A (HEMOCHROMATOSIS_TYPE_2A)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hemochromatosis type 2A
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congestive heart failure",
+    "Azoospermia",
+    "Amenorrhea",
+    "Increased circulating ferritin concentration",
+    "Arrhythmia",
+    "Elevated circulating iron concentration",
+    "Hypogonadotropic hypogonadism",
+    "Lethargy",
+    "Autosomal recessive inheritance",
+    "Cirrhosis",
+    "Infertility",
+    "Dilated cardiomyopathy",
+    "Cardiomyopathy",
+    "Splenomegaly",
+    "Young adult onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

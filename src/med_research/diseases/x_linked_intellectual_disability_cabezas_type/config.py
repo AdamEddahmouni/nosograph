@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'X-linked intellectual disability, Cabezas type (X_LINKED_INTEL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked intellectual disability, Cabezas type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased testicular size",
+    "Intellectual disability",
+    "Kyphosis",
+    "Thick lower lip vermilion",
+    "Wide mouth",
+    "Short foot",
+    "Depressed nasal bridge",
+    "High forehead",
+    "Tremor",
+    "Emotional lability",
+    "Hypogonadism",
+    "Generalized hypotonia",
+    "Short stature",
+    "Seizure",
+    "Macroglossia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

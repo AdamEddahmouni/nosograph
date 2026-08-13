@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'bilateral parasagittal parieto-occipital polymicrogyria (BILAT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of bilateral parasagittal parieto-occipital polymicrogyria
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sudden unexpected death in epilepsy",
+    "Polymicrogyria",
+    "Intermediate young adult onset",
+    "Congenital onset",
+    "Infantile onset",
+    "Status epilepticus",
+    "Visual hallucination",
+    "Juvenile onset",
+    "Focal impaired awareness seizure",
+    "Aggressive behavior",
+    "Delirium",
+    "Ventriculomegaly",
+    "Bilateral tonic-clonic seizure with focal onset",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

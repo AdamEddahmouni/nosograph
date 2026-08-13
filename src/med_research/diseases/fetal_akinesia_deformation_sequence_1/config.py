@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'fetal akinesia deformation sequence 1 (FETAL_AKINESIA_DEFORMAT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of fetal akinesia deformation sequence 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Telecanthus",
+    "High, narrow palate",
+    "Ulnar deviation of the hand",
+    "Thoracic hypoplasia",
+    "Proptosis",
+    "Absent septum pellucidum",
+    "Posteriorly rotated ears",
+    "Short neck",
+    "Cerebellar hypoplasia",
+    "Autosomal recessive inheritance",
+    "Cystic hygroma",
+    "Micrognathia",
+    "Congenital contracture",
+    "High palate",
+    "Hip contracture",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

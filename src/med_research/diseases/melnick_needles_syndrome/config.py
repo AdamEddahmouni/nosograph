@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Melnick-Needles syndrome (MELNICK_NEEDLES_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Melnick-Needles syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Gait disturbance",
+    "Micrognathia",
+    "Delayed cranial suture closure",
+    "Short distal phalanx of finger",
+    "Stillbirth",
+    "Coxa valga",
+    "Pectus excavatum",
+    "Mitral valve prolapse",
+    "Obtuse angle of mandible",
+    "Tibial bowing",
+    "Recurrent otitis media",
+    "Macrotia",
+    "Prominent supraorbital ridges",
+    "Anterior concavity of thoracic vertebrae",
+    "Talipes equinovarus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

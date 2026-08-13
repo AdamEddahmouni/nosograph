@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'atrioventricular dissociation (ATRIOVENTRICULAR_DISSOCIATION)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of atrioventricular dissociation
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Congenital atrioventricular dissociation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

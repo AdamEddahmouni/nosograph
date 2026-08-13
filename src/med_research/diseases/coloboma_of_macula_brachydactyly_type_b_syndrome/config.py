@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'coloboma of macula-brachydactyly type B syndrome (COLOBOMA_OF_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of coloboma of macula-brachydactyly type B syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "HP_0005807",
+    "Type B brachydactyly",
+    "Broad distal phalanx of the thumb",
+    "Autosomal dominant inheritance",
+    "Renal agenesis",
+    "Coloboma",
+    "Bifid distal phalanx of the thumb",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

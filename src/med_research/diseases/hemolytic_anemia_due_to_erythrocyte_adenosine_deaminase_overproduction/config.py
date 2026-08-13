@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'hemolytic anemia due to erythrocyte adenosine deaminase overpr
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hemolytic anemia due to erythrocyte adenosine deaminase overproduction
-SYMPTOMS = []
+SYMPTOMS = [
+    "Stomatocytosis",
+    "Reticulocytosis",
+    "Hyperbilirubinemia",
+    "Hemolytic anemia",
+    "Erythroid hyperplasia",
+    "Reduced erythrocyte adenosine triphosphate concentration",
+    "X-linked recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

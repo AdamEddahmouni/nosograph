@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'red color blindness (RED_COLOR_BLINDNESS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of red color blindness
-SYMPTOMS = []
+SYMPTOMS = [
+    "X-linked recessive inheritance",
+    "Protanomaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

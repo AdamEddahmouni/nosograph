@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'ornithine carbamoyltransferase deficiency (ORNITHINE_CARBAMOYL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ornithine carbamoyltransferase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Juvenile onset",
+    "Elevated circulating alanine aminotransferase concentration",
+    "Irritability",
+    "Infantile onset",
+    "Neonatal onset",
+    "Reduced hepatic ornithine transcarbamylase activity",
+    "Lethargy",
+    "Elevated circulating aspartate aminotransferase concentration",
+    "Protein avoidance",
+    "Seizure",
+    "Prolonged prothrombin time",
+    "Oroticaciduria",
+    "Intellectual disability",
+    "X-linked recessive inheritance",
+    "Adult onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

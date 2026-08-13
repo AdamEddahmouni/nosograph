@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'proximal symphalangism 1A (PROXIMAL_SYMPHALANGISM_1A)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of proximal symphalangism 1A
-SYMPTOMS = []
+SYMPTOMS = [
+    "Conductive hearing impairment",
+    "Tarsal synostosis",
+    "Distal finger symphalangism",
+    "Carpal synostosis",
+    "Aplasia/Hypoplasia of the middle phalanges of the toes",
+    "Proximal finger symphalangism",
+    "Stapes ankylosis",
+    "Metacarpophalangeal synostosis",
+    "Short 5th metacarpal",
+    "Autosomal dominant inheritance",
+    "Aplasia/Hypoplasia of the middle phalanges of the hand",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

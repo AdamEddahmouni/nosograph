@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'spastic ataxia-corneal dystrophy syndrome (SPASTIC_ATAXIA_CORN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spastic ataxia-corneal dystrophy syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Developmental cataract",
+    "Myopia",
+    "Spinocerebellar tract degeneration",
+    "Autosomal recessive inheritance",
+    "Spastic ataxia",
+    "Corneal dystrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'lysosomal acid lipase deficiency (LYSOSOMAL_ACID_LIPASE_DEFICI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lysosomal acid lipase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypercholesterolemia",
+    "Hypertriglyceridemia",
+    "Vomiting",
+    "Hepatic bridging fibrosis",
+    "Autosomal recessive inheritance",
+    "Infantile onset",
+    "Disseminated intravascular coagulation",
+    "Reduced lysosomal acid lipase activity",
+    "Hepatic failure",
+    "Decreased total leukocyte count",
+    "Increased hepatic echogenicity",
+    "Increased circulating lactate dehydrogenase concentration",
+    "Juvenile onset",
+    "Death in infancy",
+    "Protuberant abdomen",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

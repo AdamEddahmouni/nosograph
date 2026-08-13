@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'primary hyperparathyroidism (PRIMARY_HYPERPARATHYROIDISM)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of primary hyperparathyroidism
-SYMPTOMS = []
+SYMPTOMS = [
+    "Kidney stone",
+    "Hypermagnesemia",
+    "Autosomal dominant inheritance",
+    "Primary hyperparathyroidism",
+    "Hyperparathyroidism",
+    "Hypercalciuria",
+    "Hypercalcemia",
+    "Pancreatitis",
+    "Hypocalciuria",
+    "Parathyroid adenoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

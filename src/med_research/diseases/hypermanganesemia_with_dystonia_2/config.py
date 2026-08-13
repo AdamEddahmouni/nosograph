@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hypermanganesemia with dystonia 2 (HYPERMANGANESEMIA_WITH_DYST
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypermanganesemia with dystonia 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Ankle clonus",
+    "Spasticity",
+    "Irritability",
+    "Progressive neurologic deterioration",
+    "Brisk reflexes",
+    "Progressive",
+    "Secondary microcephaly",
+    "Microcephaly",
+    "Tip-toe gait",
+    "Babinski sign",
+    "Hypotonia",
+    "Axial hypotonia",
+    "Parkinsonism",
+    "Limb dystonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

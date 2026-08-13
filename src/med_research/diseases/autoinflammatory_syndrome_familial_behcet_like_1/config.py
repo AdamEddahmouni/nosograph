@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autoinflammatory syndrome, familial, Behcet-like 1 (AUTOINFLAM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autoinflammatory syndrome, familial, Behcet-like 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Childhood onset",
+    "Oral ulcer",
+    "Anterior uveitis",
+    "Young adult onset",
+    "Hemolytic anemia",
+    "Antinuclear antibody positivity",
+    "Colitis",
+    "Autosomal dominant inheritance",
+    "Infantile onset",
+    "Chorea",
+    "Thrombocytopenia",
+    "Decreased total lymphocyte count",
+    "Ileal ulcer",
+    "Skin rash",
+    "Juvenile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

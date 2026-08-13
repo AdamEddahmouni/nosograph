@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'familial male-limited precocious puberty (FAMILIAL_MALE_LIMITE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial male-limited precocious puberty
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased testicular size",
+    "Precocious puberty in males",
+    "Sex-limited expression",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

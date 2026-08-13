@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'fibrochondrogenesis 2 (FIBROCHONDROGENESIS_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of fibrochondrogenesis 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short ribs",
+    "Short long bone",
+    "Hypoplastic ilia",
+    "Metaphyseal widening",
+    "Hypoplastic ischia",
+    "Protuberant abdomen",
+    "Bell-shaped thorax",
+    "Metaphyseal cupping",
+    "Autosomal dominant inheritance",
+    "Congenital onset",
+    "Frontal bossing",
+    "Anteverted nares",
+    "Thoracic hypoplasia",
+    "Platyspondyly",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

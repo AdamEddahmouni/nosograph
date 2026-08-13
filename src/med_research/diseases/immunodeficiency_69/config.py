@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'immunodeficiency 69 (IMMUNODEFICIENCY_69)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 69
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hepatosplenomegaly",
+    "Anemia",
+    "BCGitis",
+    "Hemophagocytosis",
+    "Increased total leukocyte count",
+    "Skin rash",
+    "Thrombocytosis",
+    "Increased circulating ferritin concentration",
+    "Autosomal recessive inheritance",
+    "Infantile onset",
+    "BCGosis",
+    "Pancytopenia",
+    "Diarrhea",
+    "Fever",
+    "Failure to thrive",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

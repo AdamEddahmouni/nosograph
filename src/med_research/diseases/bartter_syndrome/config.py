@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Bartter syndrome (BARTTER_SYNDROME)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Bartter syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperphosphatemia",
+    "Failure to thrive",
+    "Short stature",
+    "Hypotonia",
+    "Basal ganglia calcification",
+    "Autosomal recessive inheritance",
+    "Abnormal retinal vascular morphology",
+    "Hyperchloriduria",
+    "Abnormal choroid morphology",
+    "Hypochloremia",
+    "Hypotension",
+    "Abnormal sclera morphology",
+    "Vomiting",
+    "Generalized hypotonia",
+    "Impaired platelet aggregation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

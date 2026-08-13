@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'narcolepsy-cataplexy syndrome (NARCOLEPSY_CATAPLEXY_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of narcolepsy-cataplexy syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "HP_0030050",
+    "Excessive daytime somnolence",
+    "Young adult onset",
+    "Sleep attack",
+    "Sleep paralysis",
+    "Hypnopompic hallucination",
+    "Type II diabetes mellitus",
+    "Infantile onset",
+    "Autosomal dominant inheritance",
+    "Obstructive sleep apnea",
+    "Cataplexy",
+    "Hypnagogic hallucination",
+    "Abnormal rapid eye movement sleep",
+    "Obesity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

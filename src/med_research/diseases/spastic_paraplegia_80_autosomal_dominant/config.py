@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spastic paraplegia 80, autosomal dominant (SPASTIC_PARAPLEGIA_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spastic paraplegia 80, autosomal dominant
-SYMPTOMS = []
+SYMPTOMS = [
+    "Limb ataxia",
+    "Upper limb spasticity",
+    "Dystonia",
+    "Dysmetric saccades",
+    "Gait disturbance",
+    "Dysarthria",
+    "Mental deterioration",
+    "Babinski sign",
+    "Spastic paraplegia",
+    "Lower limb hyperreflexia",
+    "Childhood onset",
+    "Bradykinesia",
+    "Lower limb spasticity",
+    "Autosomal dominant inheritance",
+    "Juvenile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'nystagmus 6, congenital, X-linked (NYSTAGMUS_6_CONGENITAL_X_LI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of nystagmus 6, congenital, X-linked
-SYMPTOMS = []
+SYMPTOMS = [
+    "Astigmatism",
+    "Amblyopia",
+    "Horizontal nystagmus",
+    "Fundus hypopigmentation",
+    "Retinal pigment epithelial mottling",
+    "X-linked recessive inheritance",
+    "Reduced visual acuity",
+    "Infantile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

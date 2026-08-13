@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'thoracomelic dysplasia (THORACOMELIC_DYSPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of thoracomelic dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Short ribs",
+    "Disproportionate short-limb short stature",
+    "Bell-shaped thorax",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

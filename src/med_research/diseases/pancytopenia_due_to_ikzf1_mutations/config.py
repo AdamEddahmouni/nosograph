@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'pancytopenia due to IKZF1 mutations (PANCYTOPENIA_DUE_TO_IKZF1
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pancytopenia due to IKZF1 mutations
-SYMPTOMS = []
+SYMPTOMS = [
+    "Combined immunodeficiency",
+    "Decreased total B cell count",
+    "Decreased circulating immunoglobulin concentration",
+    "Recurrent fungal infections",
+    "Fetal distress",
+    "Recurrent viral infections",
+    "Childhood onset",
+    "Typified by incomplete penetrance",
+    "Autosomal dominant inheritance",
+    "Young adult onset",
+    "Recurrent bacterial infections",
+    "Juvenile onset",
+    "Middle age onset",
+    "Acute lymphoblastic leukemia",
+    "Polyhydramnios",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

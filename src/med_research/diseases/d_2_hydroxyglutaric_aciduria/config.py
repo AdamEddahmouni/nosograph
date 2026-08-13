@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'D-2-hydroxyglutaric aciduria (D_2_HYDROXYGLUTARIC_ACIDURIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of D-2-hydroxyglutaric aciduria
-SYMPTOMS = []
+SYMPTOMS = [
+    "Glutaric aciduria",
+    "Aortic regurgitation",
+    "Bilateral tonic-clonic seizure",
+    "Inspiratory stridor",
+    "Macrocephaly",
+    "Autosomal recessive inheritance",
+    "Frontal bossing",
+    "Delayed CNS myelination",
+    "Cerebral visual impairment",
+    "Infantile spasms",
+    "Prominent forehead",
+    "Multifocal cerebral white matter abnormalities",
+    "Muscle weakness",
+    "D-2-hydroxyglutaric aciduria",
+    "Elevated CSF D-2-hydroxyglutaric acid concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

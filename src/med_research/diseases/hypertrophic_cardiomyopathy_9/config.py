@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'hypertrophic cardiomyopathy 9 (HYPERTROPHIC_CARDIOMYOPATHY_9)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypertrophic cardiomyopathy 9
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypertrophic cardiomyopathy",
+    "Adult onset",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'dihydropteridine reductase deficiency (DIHYDROPTERIDINE_REDUCT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dihydropteridine reductase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Tremor",
+    "Autosomal recessive inheritance",
+    "Choreoathetosis",
+    "Infantile onset",
+    "Diminished tissue dihydropteridine reductase activity",
+    "Intellectual disability",
+    "Dystonia",
+    "Hypertonia",
+    "Variable expressivity",
+    "Hyperphenylalaninemia",
+    "Irritability",
+    "Seizure",
+    "Recurrent fever",
+    "Hypotonia",
+    "Global developmental delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

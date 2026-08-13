@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'dyskeratosis congenita, X-linked (DYSKERATOSIS_CONGENITA_X_LIN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dyskeratosis congenita, X-linked
-SYMPTOMS = []
+SYMPTOMS = [
+    "Strabismus",
+    "Oropharyngeal squamous cell carcinoma",
+    "Phimosis",
+    "Pterygium",
+    "Cryptorchidism",
+    "Acute myeloid leukemia",
+    "Premature graying of hair",
+    "Alopecia",
+    "Hodgkin lymphoma",
+    "Hyperhidrosis",
+    "Dermal atrophy",
+    "Myelodysplasia",
+    "Bone marrow hypocellularity",
+    "Pancytopenia",
+    "Decreased testicular size",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

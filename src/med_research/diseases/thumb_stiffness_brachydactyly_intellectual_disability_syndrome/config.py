@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'thumb stiffness-brachydactyly-intellectual disability syndrome
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of thumb stiffness-brachydactyly-intellectual disability syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Type A1 brachydactyly",
+    "Intellectual disability",
+    "Global developmental delay",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

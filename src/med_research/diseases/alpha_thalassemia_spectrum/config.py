@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'alpha thalassemia spectrum (ALPHA_THALASSEMIA_SPECTRUM)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of alpha thalassemia spectrum
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypochromic microcytic anemia",
+    "Reduced alpha/beta synthesis ratio",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

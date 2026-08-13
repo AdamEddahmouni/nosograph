@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'torsion dystonia 7 (TORSION_DYSTONIA_7)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of torsion dystonia 7
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hand tremor",
+    "Blepharospasm",
+    "Clumsiness",
+    "Autosomal dominant inheritance",
+    "Oromandibular dystonia",
+    "Torsion dystonia",
+    "Dysphonia",
+    "Skeletal muscle hypertrophy",
+    "Writer's cramp",
+    "Torticollis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

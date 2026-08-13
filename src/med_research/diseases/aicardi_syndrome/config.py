@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Aicardi syndrome (AICARDI_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Aicardi syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Supernumerary ribs",
+    "Hemangioma",
+    "Polymicrogyria",
+    "Cavum septum pellucidum",
+    "Facial asymmetry",
+    "Butterfly vertebrae",
+    "Hemivertebrae",
+    "Choroid plexus cyst",
+    "X-linked dominant inheritance",
+    "Missing ribs",
+    "Dandy-Walker malformation",
+    "Nystagmus",
+    "Dilated third ventricle",
+    "Teratoma",
+    "Lipoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

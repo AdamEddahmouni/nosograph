@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'dermochondrocorneal dystrophy (DERMOCHONDROCORNEAL_DYSTROPHY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dermochondrocorneal dystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Gingival overgrowth",
+    "Skin nodule",
+    "Irregular tarsal ossification",
+    "Joint subluxation",
+    "Autosomal recessive inheritance",
+    "Anterior cortical cataract",
+    "Subepithelial corneal opacities",
+    "Abnormality of the hand",
+    "Corneal dystrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

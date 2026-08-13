@@ -8,8 +8,12 @@ PIPELINE_LABEL = "Felty's syndrome (FELTYS_SYNDROME)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Felty's syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Rheumatoid arthritis",
+    "Autosomal dominant inheritance",
+    "Splenomegaly",
+    "Decreased total neutrophil count",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

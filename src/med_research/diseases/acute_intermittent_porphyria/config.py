@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'acute intermittent porphyria (ACUTE_INTERMITTENT_PORPHYRIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of acute intermittent porphyria
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated urinary delta-aminolevulinic acid",
+    "Paralysis",
+    "Seizure",
+    "Dysuria",
+    "Autosomal dominant inheritance",
+    "Respiratory paralysis",
+    "Vomiting",
+    "Muscle weakness",
+    "Constipation",
+    "Nausea",
+    "Depression",
+    "Anxiety",
+    "Reduced erythrocyte porphobilinogen deaminase activity",
+    "Psychotic episodes",
+    "Tachycardia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

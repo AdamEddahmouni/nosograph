@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'pentalogy of Cantrell (PENTALOGY_OF_CANTRELL)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pentalogy of Cantrell
-SYMPTOMS = []
+SYMPTOMS = [
+    "Anencephaly",
+    "Cleft upper lip",
+    "Transposition of the great arteries",
+    "Cleft palate",
+    "Pulmonary hypoplasia",
+    "Hydrocephalus",
+    "Ventral hernia",
+    "Cystic hygroma",
+    "X-linked inheritance",
+    "Hypospadias",
+    "Omphalocele",
+    "Renal agenesis",
+    "Congenital diaphragmatic hernia",
+    "Ectopia cordis",
+    "Patent ductus arteriosus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

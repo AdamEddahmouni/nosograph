@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'bundle branch block (BUNDLE_BRANCH_BLOCK)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of bundle branch block
-SYMPTOMS = []
+SYMPTOMS = [
+    "Complete right bundle branch block",
+    "Prolonged PR interval",
+    "Complete heart block with broad QRS complexes",
+    "Sudden cardiac death",
+    "Autosomal dominant inheritance",
+    "Left posterior fascicular block",
+    "Sudden death",
+    "Dyspnea",
+    "Left anterior fascicular block",
+    "Syncope",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'Hermansky-Pudlak syndrome 9 (HERMANSKY_PUDLAK_SYNDROME_9)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Hermansky-Pudlak syndrome 9
-SYMPTOMS = []
+SYMPTOMS = [
+    "Global developmental delay",
+    "Decreased total leukocyte count",
+    "Nystagmus",
+    "Hypopigmentation of the skin",
+    "Recurrent skin infections",
+    "Ocular albinism",
+    "Thrombocytopenia",
+    "Autosomal recessive inheritance",
+    "Abnormal platelet aggregation",
+    "Fundus hypopigmentation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

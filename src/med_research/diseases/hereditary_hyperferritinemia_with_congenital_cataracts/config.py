@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'hereditary hyperferritinemia with congenital cataracts (HEREDI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hereditary hyperferritinemia with congenital cataracts
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nuclear cataract",
+    "Cataract",
+    "Increased circulating ferritin concentration",
+    "Abnormal transferrin saturation",
+    "Autosomal dominant inheritance",
+    "Adult onset",
+    "Abnormal circulating iron concentration",
+    "Pulverulent cataract",
+    "Decreased transferrin saturation",
+    "Anterior subcapsular cataract",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'CIDEC-related familial partial lipodystrophy (CIDEC_RELATED_FA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of CIDEC-related familial partial lipodystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Juvenile onset",
+    "Acanthosis nigricans",
+    "Decreased serum leptin",
+    "Hypertension",
+    "Diabetic ketoacidosis",
+    "Hepatomegaly",
+    "Decreased adiponectin level",
+    "Hypertriglyceridemia",
+    "Irregular menstruation",
+    "Hepatic steatosis",
+    "Autosomal recessive inheritance",
+    "Lipodystrophy",
+    "Elevated circulating C-peptide concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

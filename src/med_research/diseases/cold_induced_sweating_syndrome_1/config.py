@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Cold-induced sweating syndrome 1 (COLD_INDUCED_SWEATING_SYNDRO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Cold-induced sweating syndrome 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypernasal speech",
+    "Limited elbow extension",
+    "Camptodactyly",
+    "Feeding difficulties in infancy",
+    "Elbow flexion contracture",
+    "Kyphoscoliosis",
+    "Narrow mouth",
+    "Depressed nasal bridge",
+    "Recurrent fever",
+    "Keratitis",
+    "Retrognathia",
+    "Autosomal recessive inheritance",
+    "Radial deviation of finger",
+    "Carious teeth",
+    "Short neck",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

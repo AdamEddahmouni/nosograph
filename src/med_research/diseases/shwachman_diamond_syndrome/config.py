@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Shwachman-Diamond syndrome (SHWACHMAN_DIAMOND_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Shwachman-Diamond syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Mild intellectual disability",
+    "Coxa vara",
+    "Metaphyseal sclerosis",
+    "Global developmental delay",
+    "Subglottic stenosis",
+    "Normocytic anemia",
+    "Infantile onset",
+    "Failure to thrive",
+    "Death in childhood",
+    "High palate",
+    "Specific learning disability",
+    "Hypotonia",
+    "Acute myeloid leukemia",
+    "Hepatomegaly",
+    "Metaphyseal irregularity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

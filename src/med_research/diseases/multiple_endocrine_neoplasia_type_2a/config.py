@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'multiple endocrine neoplasia type 2A (MULTIPLE_ENDOCRINE_NEOPL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of multiple endocrine neoplasia type 2A
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Thyroid nodule",
+    "Cutaneous lichen amyloidosis",
+    "Parathyroid adenoma",
+    "Thyroid C cell hyperplasia",
+    "Young adult onset",
+    "Hypertension",
+    "Aganglionic megacolon",
+    "Palpitations",
+    "Increased circulating cortisol level",
+    "Adult onset",
+    "Chest pain",
+    "Medullary thyroid carcinoma",
+    "Hyperparathyroidism",
+    "Hypertensive crisis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

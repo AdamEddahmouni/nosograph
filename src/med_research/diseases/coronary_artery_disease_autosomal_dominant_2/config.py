@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of coronary artery disease, autosomal dominant 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypertension",
+    "Type II diabetes mellitus",
+    "Gout",
+    "Hypertriglyceridemia",
+    "Osteoporosis",
+    "Elevated circulating LDL-C concentration",
+    "Adult onset",
+    "Myocardial infarction",
+    "Glucose intolerance",
+    "Premature coronary artery atherosclerosis",
+    "Autosomal dominant inheritance",
+    "Impaired glucose tolerance",
+    "Sudden cardiac death",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

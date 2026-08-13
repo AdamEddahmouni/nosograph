@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of GCGR-related hyperglucagonemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Vertigo",
+    "Increased glucagon level",
+    "Adult onset",
+    "Autosomal recessive inheritance",
+    "Recurrent pancreatitis",
+    "Pancreatic alpha-cell hyperplasia",
+    "Palpitations",
+    "Abdominal pain",
+    "Type II diabetes mellitus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

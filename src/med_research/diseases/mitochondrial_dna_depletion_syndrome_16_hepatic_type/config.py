@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mitochondrial DNA depletion syndrome 16 (hepatic type) (MITOCH
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mitochondrial DNA depletion syndrome 16 (hepatic type)
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abdominal distention",
+    "Anteverted nares",
+    "Hypoplasia of the corpus callosum",
+    "Increased circulating lactate concentration",
+    "Depletion of mitochondrial DNA in liver",
+    "Hyperkalemia",
+    "Hepatomegaly",
+    "Increased total bilirubin",
+    "Elevated circulating aspartate aminotransferase concentration",
+    "Metabolic acidosis",
+    "Cholestasis",
+    "Autosomal recessive inheritance",
+    "Conjugated hyperbilirubinemia",
+    "Depletion of mitochondrial DNA in muscle tissue",
+    "Jaundice",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

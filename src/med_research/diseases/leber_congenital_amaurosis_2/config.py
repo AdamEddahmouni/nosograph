@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Leber congenital amaurosis 2 (LEBER_CONGENITAL_AMAUROSIS_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Leber congenital amaurosis 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cataract",
+    "Absent foveal reflex",
+    "Autosomal recessive inheritance",
+    "Pigmentary retinopathy",
+    "Undetectable light- and dark-adapted electroretinogram",
+    "Eye poking",
+    "Infantile onset",
+    "Nystagmus",
+    "Keratoconus",
+    "Attenuation of retinal blood vessels",
+    "Blindness",
+    "Optic disc pallor",
+    "Photophobia",
+    "Reduced visual acuity",
+    "Nyctalopia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

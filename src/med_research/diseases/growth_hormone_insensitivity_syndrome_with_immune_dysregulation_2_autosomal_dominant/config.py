@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'growth hormone insensitivity syndrome with immune dysregulatio
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant
-SYMPTOMS = []
+SYMPTOMS = [
+    "Eczematoid dermatitis",
+    "Thyroiditis",
+    "Autosomal dominant inheritance",
+    "Delayed puberty",
+    "Postnatal growth retardation",
+    "Short stature",
+    "Decreased circulating insulin-like growth factor 1 concentration",
+    "Delayed skeletal maturation",
+    "Recurrent infections",
+    "Celiac disease",
+    "Microcephaly",
+    "Increased circulating IgE concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

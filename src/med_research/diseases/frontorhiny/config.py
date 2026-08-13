@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'frontorhiny (FRONTORHINY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of frontorhiny
-SYMPTOMS = []
+SYMPTOMS = [
+    "Camptodactyly",
+    "Bifid nasal tip",
+    "Widely-spaced maxillary central incisors",
+    "Intellectual disability",
+    "Hypoplastic frontal sinuses",
+    "Joint contracture of the hand",
+    "Frontal cutaneous lipoma",
+    "Agenesis of corpus callosum",
+    "Low-set ears",
+    "Brachydactyly",
+    "Sporadic",
+    "Median cleft upper lip",
+    "Cranium bifidum occultum",
+    "Wide nasal bridge",
+    "Clinodactyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

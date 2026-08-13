@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'cone dystrophy 3 (CONE_DYSTROPHY_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cone dystrophy 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cone/cone-rod dystrophy",
+    "Photophobia",
+    "Macular atrophy",
+    "Reduced visual acuity",
+    "Autosomal dominant inheritance",
+    "Progressive visual loss",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

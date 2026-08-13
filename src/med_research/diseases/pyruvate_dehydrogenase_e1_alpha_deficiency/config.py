@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'pyruvate dehydrogenase E1-alpha deficiency (PYRUVATE_DEHYDROGE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pyruvate dehydrogenase E1-alpha deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "X-linked dominant inheritance",
+    "Infantile onset",
+    "Intellectual disability",
+    "Small for gestational age",
+    "Dystonia",
+    "Ptosis",
+    "Hypotonia",
+    "Increased CSF lactate",
+    "Tremor",
+    "Increased circulating lactate concentration",
+    "Chronic lactic acidosis",
+    "Cerebral atrophy",
+    "Metabolic acidosis",
+    "Global developmental delay",
+    "Episodic ataxia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

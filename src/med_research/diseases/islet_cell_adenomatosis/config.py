@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'islet cell adenomatosis (ISLET_CELL_ADENOMATOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of islet cell adenomatosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Multiple pancreatic beta-cell adenomas",
+    "Developmental glaucoma",
+    "Autosomal dominant inheritance",
+    "Insulinoma",
+    "Hyperinsulinemic hypoglycemia",
+    "Impaired glucose tolerance",
+    "Young adult onset",
+    "Middle age onset",
+    "Juvenile onset",
+    "Developmental cataract",
+    "Type II diabetes mellitus",
+    "Late onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

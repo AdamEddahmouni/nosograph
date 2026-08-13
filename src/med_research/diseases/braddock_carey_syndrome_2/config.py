@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'braddock-carey syndrome 2 (BRADDOCK_CAREY_SYNDROME_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of braddock-carey syndrome 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Wide mouth",
+    "Pierre-Robin sequence",
+    "Cleft palate",
+    "Megakaryocytopenia",
+    "Microphthalmia",
+    "Downslanted palpebral fissures",
+    "Clinodactyly",
+    "Hearing impairment",
+    "Bulbous nose",
+    "Thrombocytopenia",
+    "Autosomal recessive inheritance",
+    "Atresia of the external auditory canal",
+    "Microcephaly",
+    "Congenital onset",
+    "Retrognathia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

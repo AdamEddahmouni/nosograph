@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'campomelia, Cumming type (CAMPOMELIA_CUMMING_TYPE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of campomelia, Cumming type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Bowing of the long bones",
+    "Lymphedema",
+    "Polycystic liver disease",
+    "Pancreatic cysts",
+    "Polysplenia",
+    "Cystic hygroma",
+    "Autosomal recessive inheritance",
+    "Polycystic kidney dysplasia",
+    "Short stature",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

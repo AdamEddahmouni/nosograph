@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'trichodental syndrome (TRICHODENTAL_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of trichodental syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Brittle hair",
+    "Conical tooth",
+    "Slow-growing hair",
+    "Odontodysplasia",
+    "Microcephaly",
+    "Autosomal dominant inheritance",
+    "Fine hair",
+    "Sparse hair",
+    "Hypodontia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

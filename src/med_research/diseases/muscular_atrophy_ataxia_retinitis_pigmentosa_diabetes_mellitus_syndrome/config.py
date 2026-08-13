@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'muscular atrophy-ataxia-retinitis pigmentosa-diabetes mellitus
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of muscular atrophy-ataxia-retinitis pigmentosa-diabetes mellitus syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Skeletal muscle atrophy",
+    "Ataxia",
+    "Autosomal dominant inheritance",
+    "Rod-cone dystrophy",
+    "Diabetes mellitus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

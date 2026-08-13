@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'Leydig cell hypoplasia (LEYDIG_CELL_HYPOPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Leydig cell hypoplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased circulating gonadotropin level",
+    "Hypergonadotropic hypogonadism",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

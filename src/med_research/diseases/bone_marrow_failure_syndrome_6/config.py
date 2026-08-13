@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'bone marrow failure syndrome 6 (BONE_MARROW_FAILURE_SYNDROME_6
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of bone marrow failure syndrome 6
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased total lymphocyte count",
+    "Myalgia",
+    "Increased mean corpuscular volume",
+    "Autosomal dominant inheritance",
+    "Short telomere length",
+    "Squamous cell carcinoma of the tongue",
+    "Osteopenia",
+    "Bone marrow hypocellularity",
+    "Chronic fatigue",
+    "Anemia",
+    "Recurrent sinusitis",
+    "Hypothyroidism",
+    "Persistence of hemoglobin F",
+    "Decreased total neutrophil count",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

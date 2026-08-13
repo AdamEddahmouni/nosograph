@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Acroosteolysis dominant type (ACROOSTEOLYSIS_DOMINANT_TYPE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Acroosteolysis dominant type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Fibular bowing",
+    "Cryptorchidism",
+    "Osteopenia",
+    "Foot acroosteolysis",
+    "Basilar impression",
+    "Polycystic kidney dysplasia",
+    "Micrognathia",
+    "Patent ductus arteriosus",
+    "Umbilical hernia",
+    "Epicanthus",
+    "Global developmental delay",
+    "Wormian bones",
+    "Narrow mouth",
+    "Full cheeks",
+    "Large earlobe",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

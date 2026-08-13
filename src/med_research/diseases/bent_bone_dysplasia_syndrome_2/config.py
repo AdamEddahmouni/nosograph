@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'bent bone dysplasia syndrome 2 (BENT_BONE_DYSPLASIA_SYNDROME_2
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of bent bone dysplasia syndrome 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short neck",
+    "Atrial septal defect",
+    "Thin ribs",
+    "Short ribs",
+    "Autosomal recessive inheritance",
+    "Hypoplastic acetabulae",
+    "Short 1st metacarpal",
+    "Webbed neck",
+    "Short sternum",
+    "Arthrogryposis multiplex congenita",
+    "Osteopenia",
+    "Femoral bowing",
+    "Platyspondyly",
+    "Relative macrocephaly",
+    "Micropenis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'hyperinsulinism due to glucokinase deficiency (HYPERINSULINISM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hyperinsulinism due to glucokinase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Juvenile onset",
+    "Autosomal dominant inheritance",
+    "Hyperinsulinemic hypoglycemia",
+    "Young adult onset",
+    "Hypoglycemic coma",
+    "Hypoglycemic seizures",
+    "Intellectual disability",
+    "Diabetes mellitus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

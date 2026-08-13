@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of childhood epilepsy with centrotemporal spikes
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sporadic",
+    "Nocturnal seizures",
+    "EEG with centrotemporal focal spike waves",
+    "Focal-onset seizure",
+    "Bilateral tonic-clonic seizure with focal onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

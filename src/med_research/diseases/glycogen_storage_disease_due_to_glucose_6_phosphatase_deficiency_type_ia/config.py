@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'glycogen storage disease due to glucose-6-phosphatase deficien
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of glycogen storage disease due to glucose-6-phosphatase deficiency type IA
-SYMPTOMS = []
+SYMPTOMS = [
+    "Protuberant abdomen",
+    "Lipemia retinalis",
+    "Gout",
+    "Intermittent diarrhea",
+    "Delayed puberty",
+    "Xanthomatosis",
+    "Decreased muscle mass",
+    "Infantile onset",
+    "Decreased glomerular filtration rate",
+    "Osteoporosis",
+    "Elevated circulating hepatic transaminase concentration",
+    "Hepatocellular carcinoma",
+    "Doll-like facies",
+    "Abnormal bleeding",
+    "Growth delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

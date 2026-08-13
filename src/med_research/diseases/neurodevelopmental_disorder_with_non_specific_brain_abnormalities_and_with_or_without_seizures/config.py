@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neurodevelopmental disorder with non-specific brain abnormalit
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neurodevelopmental disorder with non-specific brain abnormalities and with or without seizures
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal corpus callosum morphology",
+    "Ventriculomegaly",
+    "Intellectual disability",
+    "Autosomal dominant inheritance",
+    "Abnormal vertebral morphology",
+    "Ataxia",
+    "Macrocephaly",
+    "Cortical dysplasia",
+    "Hydrocephalus",
+    "Abnormal brain morphology",
+    "Hypotonia",
+    "Attention deficit hyperactivity disorder",
+    "Abnormality of neuronal migration",
+    "Abnormal facial shape",
+    "Global developmental delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

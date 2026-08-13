@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'wooly hair-hypotrichosis-everted lower lip-outstanding ears sy
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of wooly hair-hypotrichosis-everted lower lip-outstanding ears syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Everted lower lip vermilion",
+    "Sparse hair",
+    "Woolly hair",
+    "Autosomal recessive inheritance",
+    "Protruding ear",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

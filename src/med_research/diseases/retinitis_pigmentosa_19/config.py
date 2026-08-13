@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'retinitis pigmentosa 19 (RETINITIS_PIGMENTOSA_19)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of retinitis pigmentosa 19
-SYMPTOMS = []
+SYMPTOMS = [
+    "Rod-cone dystrophy",
+    "Retinal pigment epithelial atrophy",
+    "Reduced visual acuity",
+    "Spicular pigmentation of the retina",
+    "Visual impairment",
+    "Optic disc pallor",
+    "Autosomal recessive inheritance",
+    "Attenuation of retinal blood vessels",
+    "Constriction of peripheral visual field",
+    "Abnormal electroretinogram",
+    "Nyctalopia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

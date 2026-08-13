@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Rothmund-Thomson syndrome (ROTHMUND_THOMSON_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Rothmund-Thomson syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypoplasia of teeth",
+    "Microphthalmia",
+    "Frontal bossing",
+    "Sparse eyelashes",
+    "Sparse scalp hair",
+    "Small hand",
+    "Premature graying of hair",
+    "Anteriorly placed anus",
+    "Intellectual disability",
+    "Mandibular prognathia",
+    "Sparse hair",
+    "Osteoporosis",
+    "Forearm reduction defects",
+    "Small for gestational age",
+    "Supernumerary tooth",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

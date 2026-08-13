@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'chromosome 1p36 deletion syndrome, proximal (CHROMOSOME_1P36_D
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of chromosome 1p36 deletion syndrome, proximal
-SYMPTOMS = []
+SYMPTOMS = [
+    "Camptodactyly",
+    "Hirsutism",
+    "Pulmonic stenosis",
+    "Cleft lip",
+    "Clinodactyly",
+    "Anteverted nares",
+    "Bifid nasal tip",
+    "Contiguous gene syndrome",
+    "Delayed speech and language development",
+    "Autosomal dominant inheritance",
+    "High palate",
+    "Neonatal onset",
+    "Midface retrusion",
+    "Complete atrioventricular canal defect",
+    "Micrognathia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

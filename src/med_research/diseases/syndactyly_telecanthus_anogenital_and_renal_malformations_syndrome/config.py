@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'syndactyly-telecanthus-anogenital and renal malformations synd
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of syndactyly-telecanthus-anogenital and renal malformations syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Clitoral hypertrophy",
+    "Small for gestational age",
+    "Hydroureter",
+    "Septate vagina",
+    "Valvular pulmonary stenosis",
+    "Anal atresia",
+    "Wide nose",
+    "Congenital onset",
+    "Crossed fused renal ectopia",
+    "Bicuspid aortic valve",
+    "Clinodactyly of the 5th finger",
+    "Craniosynostosis",
+    "3-5 toe syndactyly",
+    "Labial hypoplasia",
+    "Hypoplasia of the bladder",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

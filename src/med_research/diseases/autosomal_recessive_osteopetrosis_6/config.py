@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'autosomal recessive osteopetrosis 6 (AUTOSOMAL_RECESSIVE_OSTEO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal recessive osteopetrosis 6
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Cortical sclerosis of the iliac wing",
+    "Osteopetrosis",
+    "Erlenmeyer flask deformity of the femurs",
+    "Dense metaphyseal bands",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

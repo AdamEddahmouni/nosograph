@@ -8,8 +8,9 @@ PIPELINE_LABEL = 'Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Okt4 epitope deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal T cell morphology",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

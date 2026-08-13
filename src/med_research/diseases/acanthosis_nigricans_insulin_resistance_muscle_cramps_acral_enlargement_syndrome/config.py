@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'acanthosis nigricans-insulin resistance-muscle cramps-acral en
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of acanthosis nigricans-insulin resistance-muscle cramps-acral enlargement syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Muscle spasm",
+    "Insulin resistance",
+    "Autosomal recessive inheritance",
+    "Acanthosis nigricans",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

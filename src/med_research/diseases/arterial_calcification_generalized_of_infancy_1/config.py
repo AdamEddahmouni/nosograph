@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'arterial calcification, generalized, of infancy, 1 (ARTERIAL_C
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of arterial calcification, generalized, of infancy, 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Arterial stenosis",
+    "Neonatal respiratory distress",
+    "Neonatal onset",
+    "Growth abnormality",
+    "Periarticular calcification",
+    "Abdominal aortic calcification",
+    "Congenital onset",
+    "Autosomal recessive inheritance",
+    "Carotid artery calcification",
+    "Generalized arterial calcification",
+    "Dilated cardiomyopathy",
+    "Cardiomegaly",
+    "Renal artery stenosis",
+    "Coronary artery calcification",
+    "Short stature",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'familial steroid-resistant nephrotic syndrome with sensorineur
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial steroid-resistant nephrotic syndrome with sensorineural deafness
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Proteinuria",
+    "Rapidly progressive",
+    "Steroid-resistant nephrotic syndrome",
+    "Juvenile onset",
+    "Stage 5 chronic kidney disease",
+    "Childhood onset",
+    "Focal segmental glomerulosclerosis",
+    "Seizure",
+    "Infantile onset",
+    "Sensorineural hearing impairment",
+    "Diffuse mesangial sclerosis",
+    "Kidney stone",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

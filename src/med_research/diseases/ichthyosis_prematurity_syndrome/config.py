@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'ichthyosis prematurity syndrome (ICHTHYOSIS_PREMATURITY_SYNDRO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ichthyosis prematurity syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperpigmentation of the skin",
+    "Neonatal asphyxia",
+    "Dermatographic urticaria",
+    "Autosomal recessive inheritance",
+    "Allergic rhinitis",
+    "Epidermal acanthosis",
+    "Pruritus",
+    "Alopecia of scalp",
+    "Polyhydramnios",
+    "Erythroderma",
+    "Generalized ichthyosis",
+    "Food allergy",
+    "Premature birth",
+    "Follicular hyperkeratosis",
+    "Caseous vernix-like desquamation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

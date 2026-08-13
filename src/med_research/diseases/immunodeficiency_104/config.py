@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'immunodeficiency 104 (IMMUNODEFICIENCY_104)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 104
-SYMPTOMS = []
+SYMPTOMS = [
+    "Eczematoid dermatitis",
+    "Pneumonia",
+    "Infantile onset",
+    "Failure to thrive secondary to recurrent infections",
+    "Oral ulcer",
+    "Recurrent otitis media",
+    "Diarrhea",
+    "Splenomegaly",
+    "Severe combined immunodeficiency",
+    "Recurrent opportunistic infections",
+    "Autosomal recessive inheritance",
+    "Gastroesophageal reflux",
+    "Lymphadenopathy",
+    "Otitis media",
+    "Decreased total T cell count",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

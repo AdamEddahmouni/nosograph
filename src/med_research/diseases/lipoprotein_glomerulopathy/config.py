@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'lipoprotein glomerulopathy (LIPOPROTEIN_GLOMERULOPATHY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lipoprotein glomerulopathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Renal insufficiency",
+    "Proteinuria",
+    "Mesangial hypercellularity",
+    "Glomerulopathy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

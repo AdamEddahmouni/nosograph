@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Costello syndrome (COSTELLO_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Costello syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Global developmental delay",
+    "Redundant neck skin",
+    "Micrognathia",
+    "Talipes equinovarus",
+    "Strabismus",
+    "Concave nail",
+    "Hydrocephalus",
+    "Respiratory failure",
+    "Full cheeks",
+    "Atrial septal defect",
+    "Posteriorly rotated ears",
+    "Rhabdomyosarcoma",
+    "Pulmonic stenosis",
+    "Short stature",
+    "Cerebral atrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

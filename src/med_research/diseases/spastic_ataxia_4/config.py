@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spastic ataxia 4 (SPASTIC_ATAXIA_4)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spastic ataxia 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperactive patellar reflex",
+    "Delayed speech and language development",
+    "Delayed ability to walk",
+    "Dysarthria",
+    "Decreased Achilles reflex",
+    "Emotional lability",
+    "Infantile onset",
+    "Slowly progressive",
+    "Gait ataxia",
+    "Upper limb hypertonia",
+    "Spastic ataxia",
+    "Nystagmus",
+    "Optic atrophy",
+    "Spastic paraparesis",
+    "Limb ataxia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

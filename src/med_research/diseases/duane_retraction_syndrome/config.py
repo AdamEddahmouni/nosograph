@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'Duane retraction syndrome (DUANE_RETRACTION_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Duane retraction syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Amblyopia",
+    "Impaired ocular abduction",
+    "Palpebral fissure narrowing on adduction",
+    "Impaired ocular adduction",
+    "Impaired convergence",
+    "Hearing impairment",
+    "Autosomal dominant inheritance",
+    "Strabismus",
+    "Esotropia",
+    "Duane anomaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

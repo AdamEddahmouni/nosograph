@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hyperprolinemia type 1 (HYPERPROLINEMIA_TYPE_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hyperprolinemia type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Delayed speech and language development",
+    "Hyperactivity",
+    "Hyperglycinuria",
+    "Ataxia",
+    "Hydroxyprolinuria",
+    "Generalized hypotonia",
+    "Autistic behavior",
+    "Seizure",
+    "Prolinuria",
+    "Motor stereotypy",
+    "EEG abnormality",
+    "Hyperprolinemia",
+    "Aggressive behavior",
+    "Intellectual disability",
+    "Hypotonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

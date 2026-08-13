@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'myofibrillar myopathy 5 (MYOFIBRILLAR_MYOPATHY_5)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of myofibrillar myopathy 5
-SYMPTOMS = []
+SYMPTOMS = [
+    "Proximal muscle weakness",
+    "Difficulty climbing stairs",
+    "Muscle fiber splitting",
+    "Myofibrillar myopathy",
+    "Respiratory insufficiency",
+    "Elevated circulating creatine kinase activity",
+    "Autosomal dominant inheritance",
+    "Waddling gait",
+    "Adult onset",
+    "Slowly progressive",
+    "Muscle fiber cytoplasmatic inclusion bodies",
+    "Abnormal peripheral nervous system morphology",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'coenzyme Q10 deficiency, primary, 3 (COENZYME_Q10_DEFICIENCY_P
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of coenzyme Q10 deficiency, primary, 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Edema",
+    "Neonatal hypotonia",
+    "Feeding difficulties",
+    "Bilateral tonic-clonic seizure with focal onset",
+    "Neonatal onset",
+    "Nephrotic syndrome",
+    "Cerebral visual impairment",
+    "Increased circulating lactate concentration",
+    "Focal T2 hyperintense basal ganglia lesion",
+    "Focal motor status epilepticus",
+    "Decreased level of coenzyme Q10 in skeletal muscle",
+    "Autosomal recessive inheritance",
+    "Proteinuria",
+    "Hypoalbuminemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

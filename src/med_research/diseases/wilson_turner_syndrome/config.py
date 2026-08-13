@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Wilson-Turner syndrome (WILSON_TURNER_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Wilson-Turner syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Stuttering",
+    "Tapered finger",
+    "Cryptorchidism",
+    "Delayed speech and language development",
+    "Thick eyebrow",
+    "Obesity",
+    "Gynecomastia",
+    "Short foot",
+    "Pes cavus",
+    "Global developmental delay",
+    "Emotional lability",
+    "Intellectual disability",
+    "X-linked recessive inheritance",
+    "Pes planus",
+    "Microcephaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

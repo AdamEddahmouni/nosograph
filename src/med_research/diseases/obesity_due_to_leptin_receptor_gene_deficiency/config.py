@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of obesity due to leptin receptor gene deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal hypothalamus morphology",
+    "Diabetes mellitus",
+    "Obesity",
+    "Pituitary hypothyroidism",
+    "Recurrent upper respiratory tract infections",
+    "Immune dysregulation",
+    "Intellectual disability",
+    "Infantile onset",
+    "Polyphagia",
+    "Abnormal eating behavior",
+    "Hypergonadotropic hypogonadism",
+    "Decreased response to growth hormone stimulation test",
+    "Aggressive behavior",
+    "Delayed puberty",
+    "Emotional lability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

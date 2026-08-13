@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'lethal faciocardiomelic dysplasia (LETHAL_FACIOCARDIOMELIC_DYS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lethal faciocardiomelic dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short thumb",
+    "Abnormal cardiovascular system morphology",
+    "Hypoplasia of the radius",
+    "Fibular hypoplasia",
+    "Microglossia",
+    "Neonatal death",
+    "Single transverse palmar crease",
+    "Retrognathia",
+    "Short 5th finger",
+    "Talipes",
+    "Radial deviation of the hand",
+    "Narrow mouth",
+    "Hypoplasia of the ulna",
+    "Micrognathia",
+    "Small for gestational age",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Opitz G/BBB syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dysphagia",
+    "Cryptorchidism",
+    "Congenital onset",
+    "Vesicoureteral reflux",
+    "Frontal bossing",
+    "Widow's peak",
+    "Wide nasal bridge",
+    "High palate",
+    "Congenital posterior urethral valve",
+    "Global developmental delay",
+    "Prominent forehead",
+    "Wide anterior fontanel",
+    "Anteverted nares",
+    "Anal atresia",
+    "Abnormal nasopharynx morphology",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

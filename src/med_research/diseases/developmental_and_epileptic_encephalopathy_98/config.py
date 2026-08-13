@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'developmental and epileptic encephalopathy 98 (DEVELOPMENTAL_A
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of developmental and epileptic encephalopathy 98
-SYMPTOMS = []
+SYMPTOMS = [
+    "Attention deficit hyperactivity disorder",
+    "Perisylvian polymicrogyria",
+    "Death in childhood",
+    "Focal-onset seizure",
+    "Secondary microcephaly",
+    "Neonatal onset",
+    "Bilateral tonic-clonic seizure",
+    "Autosomal dominant inheritance",
+    "Cerebellar atrophy",
+    "Sleep apnea",
+    "Infantile onset",
+    "Childhood onset",
+    "Thin corpus callosum",
+    "Hypotonia",
+    "Refractory status epilepticus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

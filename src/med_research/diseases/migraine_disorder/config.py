@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'migraine disorder (MIGRAINE_DISORDER)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of migraine disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Phonophobia",
+    "Migraine without aura",
+    "Vomiting",
+    "Photophobia",
+    "Migraine with aura",
+    "Nausea",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

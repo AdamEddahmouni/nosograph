@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Meesmann corneal dystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Reduced visual acuity",
+    "Punctate opacification of the cornea",
+    "Corneal dystrophy",
+    "Autosomal dominant inheritance",
+    "Photophobia",
+    "Epiphora",
+    "Nonprogressive",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

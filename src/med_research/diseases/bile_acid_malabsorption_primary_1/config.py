@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'bile acid malabsorption, primary, 1 (BILE_ACID_MALABSORPTION_P
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of bile acid malabsorption, primary, 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Fat malabsorption",
+    "Autosomal recessive inheritance",
+    "Chronic diarrhea",
+    "Failure to thrive",
+    "Increased fecal bile acid",
+    "Neonatal onset",
+    "Steatorrhea",
+    "Growth delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

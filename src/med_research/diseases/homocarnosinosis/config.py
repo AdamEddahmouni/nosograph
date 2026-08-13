@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'homocarnosinosis (HOMOCARNOSINOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of homocarnosinosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Intellectual disability",
+    "Spastic paraplegia",
+    "Abnormal skin pigmentation",
+    "Carnosinuria",
+    "Abnormal retinal pigmentation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

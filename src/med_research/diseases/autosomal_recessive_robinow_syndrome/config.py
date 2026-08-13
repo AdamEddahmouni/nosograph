@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autosomal recessive Robinow syndrome (AUTOSOMAL_RECESSIVE_ROBI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal recessive Robinow syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nephrocalcinosis",
+    "Single transverse palmar crease",
+    "Narrow palate",
+    "Hypoplastic labia majora",
+    "Missing ribs",
+    "Upslanted palpebral fissure",
+    "Clinodactyly",
+    "Tented upper lip vermilion",
+    "Bifid distal phalanx of toe",
+    "Depressed nasal bridge",
+    "Micropenis",
+    "Short nose",
+    "Delayed cranial suture closure",
+    "Proximal fifth finger symphalangism",
+    "Hypoplasia of the radius",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

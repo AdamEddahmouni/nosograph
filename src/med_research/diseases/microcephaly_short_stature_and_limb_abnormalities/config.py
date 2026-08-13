@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'microcephaly, short stature, and limb abnormalities (MICROCEPH
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of microcephaly, short stature, and limb abnormalities
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short stature",
+    "Brachydactyly",
+    "Mesomelia",
+    "Intrauterine growth retardation",
+    "Global developmental delay",
+    "Autosomal recessive inheritance",
+    "Hypoplasia of the radius",
+    "Patellar hypoplasia",
+    "Convex nasal ridge",
+    "Upslanted palpebral fissure",
+    "Clinodactyly of the 5th finger",
+    "Short metacarpal",
+    "Radioulnar synostosis",
+    "Microcephaly",
+    "Dislocated radial head",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'ovarian dysgenesis 9 (OVARIAN_DYSGENESIS_9)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ovarian dysgenesis 9
-SYMPTOMS = []
+SYMPTOMS = [
+    "Delayed puberty",
+    "Delayed skeletal maturation",
+    "Decreased serum estradiol",
+    "Hypoplasia of the uterus",
+    "Elevated circulating luteinizing hormone level",
+    "Elevated circulating follicle stimulating hormone level",
+    "Juvenile onset",
+    "Primary amenorrhea",
+    "Autosomal recessive inheritance",
+    "Hypoplasia of the ovary",
+    "Decreased circulating antimullerian hormone circulation",
+    "Premature ovarian insufficiency",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

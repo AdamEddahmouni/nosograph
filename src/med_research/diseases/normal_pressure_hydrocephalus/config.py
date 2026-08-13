@@ -8,8 +8,15 @@ PIPELINE_LABEL = "normal pressure hydrocephalus (NORMAL_PRESSURE_HYDROCEPHALUS)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of normal pressure hydrocephalus
-SYMPTOMS = []
+SYMPTOMS = [
+    "Global developmental delay",
+    "Autosomal dominant inheritance",
+    "Dementia",
+    "Normal pressure hydrocephalus",
+    "Gait disturbance",
+    "Bowel incontinence",
+    "Urinary incontinence",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

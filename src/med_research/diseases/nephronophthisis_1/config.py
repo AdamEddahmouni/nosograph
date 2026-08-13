@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'nephronophthisis 1 (NEPHRONOPHTHISIS_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of nephronophthisis 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Tubular basement membrane disintegration",
+    "Tubulointerstitial fibrosis",
+    "Anemia",
+    "Hypertension",
+    "Autosomal recessive inheritance",
+    "Hyposthenuria",
+    "Polydipsia",
+    "Stage 5 chronic kidney disease",
+    "Growth delay",
+    "Polyuria",
+    "Nephronophthisis",
+    "Renal tubular atrophy",
+    "Renal corticomedullary cysts",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

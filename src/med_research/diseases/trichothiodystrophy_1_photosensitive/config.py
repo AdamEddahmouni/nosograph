@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'trichothiodystrophy 1, photosensitive (TRICHOTHIODYSTROPHY_1_P
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of trichothiodystrophy 1, photosensitive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital nonbullous ichthyosiform erythroderma",
+    "Malabsorption",
+    "Squamous cell carcinoma",
+    "Trichorrhexis nodosa",
+    "Asthma",
+    "Hyperkeratosis",
+    "Short stature",
+    "Retrognathia",
+    "Hypogonadism",
+    "Macrotia",
+    "Dry skin",
+    "Microcornea",
+    "Trichoschisis",
+    "Freckling",
+    "Fine hair",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

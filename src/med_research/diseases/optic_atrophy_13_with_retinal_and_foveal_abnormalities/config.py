@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'optic atrophy 13 with retinal and foveal abnormalities (OPTIC_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of optic atrophy 13 with retinal and foveal abnormalities
-SYMPTOMS = []
+SYMPTOMS = [
+    "Attenuation of retinal blood vessels",
+    "Young adult onset",
+    "Abnormal electroretinogram",
+    "Reduced visual acuity",
+    "Optic atrophy",
+    "Childhood onset",
+    "Autosomal dominant inheritance",
+    "Juvenile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

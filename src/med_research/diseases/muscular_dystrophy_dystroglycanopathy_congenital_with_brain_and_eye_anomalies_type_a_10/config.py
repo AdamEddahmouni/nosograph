@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'muscular dystrophy-dystroglycanopathy (congenital with brain a
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of muscular dystrophy-dystroglycanopathy (congenital with brain and eye anomalies), type a, 10
-SYMPTOMS = []
+SYMPTOMS = [
+    "Retinal dysplasia",
+    "Cerebellar dysplasia",
+    "Congenital onset",
+    "Gonadal dysgenesis",
+    "Type II lissencephaly",
+    "Autosomal recessive inheritance",
+    "Neural tube defect",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

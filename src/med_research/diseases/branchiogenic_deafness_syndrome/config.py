@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'branchiogenic deafness syndrome (BRANCHIOGENIC_DEAFNESS_SYNDRO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of branchiogenic deafness syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short stature",
+    "Preauricular skin tag",
+    "Atresia of the external auditory canal",
+    "Abnormal foot morphology",
+    "Short distal phalanx of finger",
+    "Preauricular pit",
+    "Branchial fistula",
+    "Sensorineural hearing impairment",
+    "Trismus",
+    "Branchial cyst",
+    "Abnormality of the middle ear ossicles",
+    "Autosomal dominant inheritance",
+    "Submucous cleft hard palate",
+    "Mixed hearing impairment",
+    "Strabismus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

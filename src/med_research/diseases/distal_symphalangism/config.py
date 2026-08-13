@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'distal symphalangism (DISTAL_SYMPHALANGISM)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of distal symphalangism
-SYMPTOMS = []
+SYMPTOMS = [
+    "Small nail",
+    "Distal toe symphalangism",
+    "Autosomal dominant inheritance",
+    "Brachydactyly",
+    "Craniosynostosis",
+    "Variable expressivity",
+    "Absent dorsal skin creases over affected joints",
+    "Anonychia",
+    "Distal finger symphalangism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

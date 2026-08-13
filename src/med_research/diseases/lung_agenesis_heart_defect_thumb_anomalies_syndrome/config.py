@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'lung agenesis-heart defect-thumb anomalies syndrome (LUNG_AGEN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lung agenesis-heart defect-thumb anomalies syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Tracheal atresia",
+    "Abnormal cardiac septum morphology",
+    "Patent ductus arteriosus",
+    "Congenital onset",
+    "Neonatal death",
+    "Respiratory insufficiency",
+    "Bilateral lung agenesis",
+    "Autosomal recessive inheritance",
+    "Abnormal cardiovascular system morphology",
+    "Coarctation of aorta",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

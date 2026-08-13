@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'deafness-infertility syndrome (DEAFNESS_INFERTILITY_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of deafness-infertility syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal sperm tail morphology",
+    "Male infertility",
+    "Autosomal recessive inheritance",
+    "Abnormal spermatogenesis",
+    "Bilateral sensorineural hearing impairment",
+    "Congenital onset",
+    "Reduced sperm motility",
+    "Abnormal sperm head morphology",
+    "Abnormal vestibular function",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

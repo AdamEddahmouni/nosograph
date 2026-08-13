@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'cardiomyopathy, familial hypertrophic, 29, with polyglucosan b
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cardiomyopathy, familial hypertrophic, 29, with polyglucosan bodies
-SYMPTOMS = []
+SYMPTOMS = [
+    "Systolic anterior motion of the mitral valve",
+    "Reduced left ventricular endsystolic diameter",
+    "Palpitations",
+    "Left ventricular outflow tract obstruction",
+    "Young adult onset",
+    "Increased myocardial glycogen content",
+    "Autosomal recessive inheritance",
+    "Mitral regurgitation",
+    "Cardiomyocyte hypertrophy",
+    "Sudden cardiac death",
+    "Asymmetric septal hypertrophy",
+    "Muscle weakness",
+    "Dyspnea",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

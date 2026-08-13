@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'sacral agenesis-abnormal ossification of the vertebral bodies-
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of sacral agenesis-abnormal ossification of the vertebral bodies-persistent notochordal canal syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Vertebral clefting",
+    "Absence of the sacrum",
+    "Anal atresia",
+    "Persistent cloaca",
+    "Abnormal vertebral morphology",
+    "Unilateral renal agenesis",
+    "Second trimester onset",
+    "Autosomal recessive inheritance",
+    "Neonatal death",
+    "Late first trimester onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

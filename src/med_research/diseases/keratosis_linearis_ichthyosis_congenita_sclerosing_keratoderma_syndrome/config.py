@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'keratosis linearis-ichthyosis congenita-sclerosing keratoderma
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of keratosis linearis-ichthyosis congenita-sclerosing keratoderma syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ichthyosis",
+    "Nail dystrophy",
+    "Amniotic constriction ring",
+    "Parakeratosis",
+    "Hyperconvex nail",
+    "Honeycomb palmoplantar hyperkeratosis",
+    "Linear arrays of macular hyperkeratoses in flexural areas",
+    "Autosomal recessive inheritance",
+    "Congenital nonbullous ichthyosiform erythroderma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

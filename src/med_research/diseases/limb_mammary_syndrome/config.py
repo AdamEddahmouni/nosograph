@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'limb-mammary syndrome (LIMB_MAMMARY_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of limb-mammary syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Split foot",
+    "Lacrimal duct atresia",
+    "Camptodactyly",
+    "Hypohidrosis",
+    "Hallux valgus",
+    "Hypoplastic nipples",
+    "Syndactyly",
+    "Bifid uvula",
+    "Hypodontia",
+    "Joint contracture of the hand",
+    "Autosomal dominant inheritance",
+    "Cleft palate",
+    "Split hand",
+    "Nail dysplasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

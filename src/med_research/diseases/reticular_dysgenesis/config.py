@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'reticular dysgenesis (RETICULAR_DYSGENESIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of reticular dysgenesis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Combined immunodeficiency",
+    "HP_0005435",
+    "Hypoplasia of the thymus",
+    "HP_0005354",
+    "Decreased total leukocyte count",
+    "Sepsis",
+    "Autosomal recessive inheritance",
+    "Congenital agranulocytosis",
+    "Decreased total lymphocyte count",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

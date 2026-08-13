@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hypertelorism, microtia, facial clefting syndrome (HYPERTELORI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypertelorism, microtia, facial clefting syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Bifid nose",
+    "Global developmental delay",
+    "Cleft palate",
+    "2-3 toe syndactyly",
+    "Abnormality of the vertebral column",
+    "Ectopic kidney",
+    "Abnormal vertebral morphology",
+    "Hypertelorism",
+    "Tessier cleft",
+    "Microcephaly",
+    "Abnormal heart morphology",
+    "Narrow mouth",
+    "Autosomal recessive inheritance",
+    "Microtia",
+    "Abnormal cardiovascular system morphology",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

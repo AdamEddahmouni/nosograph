@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Sandhoff disease (SANDHOFF_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Sandhoff disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Myoclonic seizure",
+    "Dysarthria",
+    "Developmental regression",
+    "Hyperhidrosis",
+    "Coarse facial features",
+    "Cardiomegaly",
+    "Impotence",
+    "Spasticity",
+    "Ataxia",
+    "Autosomal recessive inheritance",
+    "Reduced beta-hexosaminidase B activity",
+    "Muscle weakness",
+    "Macrocephaly",
+    "Hypotonia",
+    "Progressive psychomotor deterioration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

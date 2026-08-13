@@ -8,8 +8,9 @@ PIPELINE_LABEL = 'microcephaly-albinism-digital anomalies syndrome (MICROCEPHALY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of microcephaly-albinism-digital anomalies syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Albinism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

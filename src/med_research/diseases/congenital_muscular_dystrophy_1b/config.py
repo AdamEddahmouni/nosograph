@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'congenital muscular dystrophy 1B (CONGENITAL_MUSCULAR_DYSTROPH
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital muscular dystrophy 1B
-SYMPTOMS = []
+SYMPTOMS = [
+    "Achilles tendon contracture",
+    "Elevated circulating creatine kinase activity",
+    "Pectoralis amyotrophy",
+    "Muscular dystrophy",
+    "Diaphragmatic weakness",
+    "Spinal rigidity",
+    "Facial palsy",
+    "Generalized muscle hypertrophy",
+    "Generalized hypotonia",
+    "Motor delay",
+    "Respiratory failure",
+    "Sternocleidomastoid amyotrophy",
+    "Autosomal recessive inheritance",
+    "Gowers sign",
+    "Shoulder girdle muscle weakness",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'megalencephaly, autosomal dominant (MEGALENCEPHALY_AUTOSOMAL_D
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of megalencephaly, autosomal dominant
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hydrocephalus",
+    "Autosomal dominant inheritance",
+    "Intellectual disability",
+    "Macrocephaly",
+    "Megalencephaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

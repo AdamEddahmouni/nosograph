@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'primary CD59 deficiency (PRIMARY_CD59_DEFICIENCY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of primary CD59 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased CSF protein concentration",
+    "Paroxysmal nocturnal hemoglobinuria",
+    "Areflexia",
+    "Infantile onset",
+    "Limb muscle weakness",
+    "Autosomal recessive inheritance",
+    "Skeletal muscle atrophy",
+    "Paralysis",
+    "Hypotonia",
+    "Generalized hypotonia",
+    "Hemolytic anemia",
+    "Polyneuropathy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

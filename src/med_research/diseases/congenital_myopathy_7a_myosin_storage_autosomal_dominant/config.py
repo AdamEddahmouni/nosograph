@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'congenital myopathy 7A, myosin storage, autosomal dominant (CO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital myopathy 7A, myosin storage, autosomal dominant
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pelvic girdle muscle weakness",
+    "Falls",
+    "Difficulty climbing stairs",
+    "Myopathy",
+    "Neck flexor weakness",
+    "Childhood onset",
+    "Scapular winging",
+    "Shoulder girdle muscle atrophy",
+    "Generalized muscle weakness",
+    "Difficulty running",
+    "Waddling gait",
+    "Calf muscle pseudohypertrophy",
+    "Slowly progressive",
+    "Centrally nucleated skeletal muscle fibers",
+    "Shoulder girdle muscle weakness",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

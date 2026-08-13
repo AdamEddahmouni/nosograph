@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'paroxysmal nocturnal hemoglobinuria 2 (PAROXYSMAL_NOCTURNAL_HE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of paroxysmal nocturnal hemoglobinuria 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abdominal pain",
+    "Middle age onset",
+    "Headache",
+    "Paroxysmal nocturnal hemoglobinuria",
+    "Arthralgia",
+    "Diarrhea",
+    "Fatigue",
+    "Autosomal dominant inheritance",
+    "Dyspnea",
+    "Hemolytic anemia",
+    "Typified by somatic mosaicism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

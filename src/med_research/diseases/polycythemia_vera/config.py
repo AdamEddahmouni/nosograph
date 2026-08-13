@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Polycythemia vera (POLYCYTHEMIA_VERA)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Polycythemia vera
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased red blood cell mass",
+    "Splenomegaly",
+    "Budd-Chiari syndrome",
+    "Cerebral ischemia",
+    "Intermediate young adult onset",
+    "Increased megakaryocyte count",
+    "Autosomal dominant inheritance",
+    "Abnormal thrombosis",
+    "Increased hematocrit",
+    "Cerebral hemorrhage",
+    "Middle age onset",
+    "Thromboembolism",
+    "Sporadic",
+    "Gastrointestinal hemorrhage",
+    "Thrombocytosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

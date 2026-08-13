@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'parkinsonism-dystonia 3, childhood-onset (PARKINSONISM_DYSTONI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of parkinsonism-dystonia 3, childhood-onset
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pneumothorax",
+    "Hyperkinetic movements",
+    "Action tremor",
+    "Dysphagia",
+    "Cerebellar atrophy",
+    "Intellectual disability",
+    "Growth delay",
+    "Dystonia",
+    "Childhood onset",
+    "Anxiety",
+    "Neonatal onset",
+    "Autosomal recessive inheritance",
+    "Juvenile onset",
+    "Premature birth",
+    "Stooped posture",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

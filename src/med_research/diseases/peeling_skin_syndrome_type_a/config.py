@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'peeling skin syndrome type A (PEELING_SKIN_SYNDROME_TYPE_A)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of peeling skin syndrome type A
-SYMPTOMS = []
+SYMPTOMS = [
+    "Juvenile onset",
+    "White scaling skin",
+    "Autosomal recessive inheritance",
+    "Erythema",
+    "Pruritus",
+    "Abnormal hair morphology",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

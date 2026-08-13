@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'spinocerebellar ataxia type 30 (SPINOCEREBELLAR_ATAXIA_TYPE_30
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spinocerebellar ataxia type 30
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Adult onset",
+    "Dysarthria",
+    "Insidious onset",
+    "Slowly progressive",
+    "Hypermetric saccades",
+    "Cerebellar atrophy",
+    "Gaze-evoked nystagmus",
+    "Ataxia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

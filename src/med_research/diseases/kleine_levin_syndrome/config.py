@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'Kleine-Levin Syndrome (KLEINE_LEVIN_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Kleine-Levin Syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Vivid hallucination",
+    "Confusion",
+    "Episodic hypersomnia",
+    "Autosomal dominant inheritance",
+    "Polyphagia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

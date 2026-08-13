@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'blue diaper syndrome (BLUE_DIAPER_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of blue diaper syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypercalcemia",
+    "Autosomal recessive inheritance",
+    "Abnormal circulating tryptophan concentration",
+    "X-linked inheritance",
+    "Nephrocalcinosis",
+    "Abnormal abdomen morphology",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

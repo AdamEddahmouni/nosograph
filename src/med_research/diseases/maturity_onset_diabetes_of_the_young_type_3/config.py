@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'maturity-onset diabetes of the young type 3 (MATURITY_ONSET_DI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of maturity-onset diabetes of the young type 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Maturity-onset diabetes of the young",
+    "Hyperglycemia",
+    "Type II diabetes mellitus",
+    "Infantile onset",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

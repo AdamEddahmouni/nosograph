@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of palmoplantar keratoderma-esophageal carcinoma syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Oral leukoplakia",
+    "Follicular hyperkeratosis",
+    "Diffuse palmoplantar hyperkeratosis",
+    "Parakeratosis",
+    "Autosomal dominant inheritance",
+    "Juvenile onset",
+    "Esophageal carcinoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

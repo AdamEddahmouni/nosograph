@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Friedreich ataxia (FRIEDREICH_ATAXIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Friedreich ataxia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Diabetic ketoacidosis",
+    "Gait ataxia",
+    "Visual field defect",
+    "Dysarthria",
+    "Optic atrophy",
+    "Hypertrophic cardiomyopathy",
+    "Concentric hypertrophic cardiomyopathy",
+    "Impaired proprioception",
+    "Autosomal recessive inheritance",
+    "Mitochondrial malic enzyme reduced",
+    "Abnormal medulla oblongata morphology",
+    "Congestive heart failure",
+    "Sensory neuropathy",
+    "Decreased amplitude of sensory action potentials",
+    "Babinski sign",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

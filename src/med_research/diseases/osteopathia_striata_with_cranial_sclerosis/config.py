@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'osteopathia striata with cranial sclerosis (OSTEOPATHIA_STRIAT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of osteopathia striata with cranial sclerosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Tracheomalacia",
+    "Sclerosis of skull base",
+    "Laryngeal web",
+    "Generalized hypotonia",
+    "Micrognathia",
+    "Gastroesophageal reflux",
+    "Joint contracture of the hand",
+    "Omphalocele",
+    "Arachnodactyly",
+    "Seizure",
+    "Hypotonia",
+    "Conductive hearing impairment",
+    "Cleft upper lip",
+    "Craniofacial osteosclerosis",
+    "Frontal bossing",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

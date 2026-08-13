@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'clear cell renal carcinoma (CLEAR_CELL_RENAL_CARCINOMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of clear cell renal carcinoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sporadic",
+    "Renal cell carcinoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'cleft palate with or without ankyloglossia, X-linked (CLEFT_PA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cleft palate with or without ankyloglossia, X-linked
-SYMPTOMS = []
+SYMPTOMS = [
+    "Bifid uvula",
+    "X-linked inheritance",
+    "Cleft palate",
+    "Ankyloglossia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'asthma, nasal polyps, and aspirin intolerance (ASTHMA_NASAL_PO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of asthma, nasal polyps, and aspirin intolerance
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nasal polyposis",
+    "Autosomal recessive inheritance",
+    "Asthma",
+    "Aspirin-induced asthma",
+    "Bronchoconstriction",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

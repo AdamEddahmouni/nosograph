@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Koolen-de Vries syndrome (KOOLEN_DE_VRIES_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Koolen-de Vries syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short stature",
+    "Pear-shaped nose",
+    "Slender finger",
+    "Generalized hypotonia",
+    "Conspicuously happy disposition",
+    "Morphological central nervous system abnormality",
+    "Pyloric stenosis",
+    "Cleft palate",
+    "Upslanted palpebral fissure",
+    "Joint hypermobility",
+    "Everted lower lip vermilion",
+    "Hypermetropia",
+    "High palate",
+    "Atrial septal defect",
+    "Spondylolisthesis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

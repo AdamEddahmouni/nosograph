@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Feingold syndrome (FEINGOLD_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Feingold syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Asplenia",
+    "2-3 toe syndactyly",
+    "Mild intellectual disability",
+    "Secondary microcephaly",
+    "Intellectual disability",
+    "Short middle phalanx of the 2nd finger",
+    "Short middle phalanx of the 5th finger",
+    "Annular pancreas",
+    "Decreased fetal movement",
+    "Polysplenia",
+    "Short toe",
+    "Duodenal atresia",
+    "Polyhydramnios",
+    "Thick vermilion border",
+    "Specific learning disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

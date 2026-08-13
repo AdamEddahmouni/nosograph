@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'familial infantile myoclonic epilepsy (FAMILIAL_INFANTILE_MYOC
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial infantile myoclonic epilepsy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Generalized myoclonic seizure",
+    "Dysarthria",
+    "Seizure",
+    "Global developmental delay",
+    "Infantile onset",
+    "Intellectual disability",
+    "Muscle fibrillation",
+    "Focal-onset seizure",
+    "Febrile seizure (within the age range of 3 months to 6 years)",
+    "Autosomal recessive inheritance",
+    "Ataxia",
+    "Bilateral tonic-clonic seizure",
+    "Gait ataxia",
+    "Limb ataxia",
+    "Impaired tandem gait",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

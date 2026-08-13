@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'Lung Lymphangioleiomyomatosis (LUNG_LYMPHANGIOLEIOMYOMATOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Lung Lymphangioleiomyomatosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pulmonary lymphangiomyomatosis",
+    "Typified by somatic mosaicism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

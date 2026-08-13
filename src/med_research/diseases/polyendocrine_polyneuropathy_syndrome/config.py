@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'polyendocrine-polyneuropathy syndrome (POLYENDOCRINE_POLYNEURO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of polyendocrine-polyneuropathy syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypoglycemia",
+    "Childhood onset",
+    "Decreased testicular size",
+    "Autosomal recessive inheritance",
+    "Progressive hearing impairment",
+    "Abnormal circulating thyroid-stimulating hormone concentration",
+    "Ataxia",
+    "Central hypothyroidism",
+    "Moderate intellectual disability",
+    "Dysarthria",
+    "Hypogonadotropic hypogonadism",
+    "Elevated hemoglobin A1c",
+    "Short stature",
+    "Anterior pituitary hypoplasia",
+    "Dystonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

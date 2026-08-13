@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'fused mandibular incisors (FUSED_MANDIBULAR_INCISORS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of fused mandibular incisors
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormality of the dentition",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'porokeratosis plantaris palmaris et disseminata (POROKERATOSIS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of porokeratosis plantaris palmaris et disseminata
-SYMPTOMS = []
+SYMPTOMS = [
+    "Palmar telangiectasia",
+    "Autosomal dominant inheritance",
+    "Porokeratosis",
+    "Plantar telangiectasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

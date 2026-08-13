@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'dystonia 23 (DYSTONIA_23)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dystonia 23
-SYMPTOMS = []
+SYMPTOMS = [
+    "Writer's cramp",
+    "Head tremor",
+    "Torticollis",
+    "Limb dystonia",
+    "Cerebral cortical atrophy",
+    "Axial dystonia",
+    "Progressive",
+    "Gait disturbance",
+    "Adult onset",
+    "Arrhythmia",
+    "Myoclonus",
+    "Dysphonia",
+    "Autosomal dominant inheritance",
+    "Cerebellar atrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

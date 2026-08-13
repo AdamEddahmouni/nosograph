@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'Usher syndrome type 2 (USHER_SYNDROME_TYPE_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Usher syndrome type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Rod-cone dystrophy",
+    "Nyctalopia",
+    "Congenital sensorineural hearing impairment",
+    "Congenital onset",
+    "Autosomal recessive inheritance",
+    "Abnormal vestibular function",
+    "Hearing impairment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

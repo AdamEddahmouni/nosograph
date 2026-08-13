@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Langer mesomelic dysplasia (LANGER_MESOMELIC_DYSPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Langer mesomelic dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Fibular hypoplasia",
+    "High palate",
+    "Short tibia",
+    "Lumbar hyperlordosis",
+    "Radial bowing",
+    "Hypoplasia of the ulna",
+    "Micrognathia",
+    "Mesomelic arm shortening",
+    "Autosomal recessive inheritance",
+    "Short femoral neck",
+    "Mesomelic short stature",
+    "Rhizomelic arm shortening",
+    "Increased carrying angle",
+    "Madelung deformity",
+    "Mesomelia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

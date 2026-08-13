@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'focal palmoplantar and gingival keratoderma (FOCAL_PALMOPLANTA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of focal palmoplantar and gingival keratoderma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Focal friction-related palmoplantar hyperkeratosis",
+    "Gingival hyperkeratosis",
+    "Circumungual hyperkeratosis",
+    "Subungual hyperkeratosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Pick disease (PICK_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Pick disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Language impairment",
+    "Motor stereotypy",
+    "Apathy",
+    "Disinhibition",
+    "Gliosis",
+    "Sporadic",
+    "Polyphagia",
+    "Echolalia",
+    "Frontotemporal dementia",
+    "Irritability",
+    "Autosomal dominant inheritance",
+    "Hyperorality",
+    "Inappropriate laughter",
+    "Neuronal loss in central nervous system",
+    "Perseverative thought",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

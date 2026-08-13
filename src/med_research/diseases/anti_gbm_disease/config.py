@@ -8,8 +8,23 @@ PIPELINE_LABEL = "anti-glomerular basement membrane disease (ANTI_GBM_DISEASE)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of anti-glomerular basement membrane disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Exertional dyspnea",
+    "Pallor",
+    "Proteinuria",
+    "Anti-myeloperoxidase antibody positivity",
+    "Increased blood urea nitrogen",
+    "Bloody bronchoalveolar lavage fluid",
+    "Restrictive ventilatory defect",
+    "Polygenic inheritance",
+    "Increased DLCO",
+    "Weight loss",
+    "Renal insufficiency",
+    "Cylindruria",
+    "Chills",
+    "Crackles",
+    "Hemoptysis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

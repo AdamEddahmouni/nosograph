@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'ferro-cerebro-cutaneous syndrome (FERRO_CEREBRO_CUTANEOUS_SYND
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ferro-cerebro-cutaneous syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Postural tremor",
+    "Ichthyosis",
+    "Spasticity",
+    "Overgrowth",
+    "Tapered finger",
+    "Gingival overgrowth",
+    "Elevated circulating alkaline phosphatase concentration",
+    "Decreased circulating hepcidin concentration",
+    "Increased circulating ferritin concentration",
+    "Absent speech",
+    "Babinski sign",
+    "Hypotonia",
+    "Myoclonus",
+    "Generalized amyotrophy",
+    "Thrombocytopenia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

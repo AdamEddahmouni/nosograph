@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'Rotor syndrome (ROTOR_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Rotor syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Jaundice",
+    "Abnormal skin pigmentation",
+    "Conjugated hyperbilirubinemia",
+    "Abnormality of the skeletal system",
+    "Digenic inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

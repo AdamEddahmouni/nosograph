@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Hirschsprung disease (HIRSCHSPRUNG_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Hirschsprung disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Micropenis",
+    "Flexion contracture",
+    "Abdominal distention",
+    "Tapered finger",
+    "Ventricular septal defect",
+    "Bulbous nose",
+    "Interphalangeal thumb joint contracture",
+    "Cupped ear",
+    "Congenital onset",
+    "Abnormal enteric ganglion morphology",
+    "Prominent nasal bridge",
+    "Posteriorly rotated ears",
+    "Status epilepticus",
+    "Total colonic aganglionosis",
+    "Tachycardia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'intellectual developmental disorder and retinitis pigmentosa; 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of intellectual developmental disorder and retinitis pigmentosa; IDDRP
-SYMPTOMS = []
+SYMPTOMS = [
+    "Optic disc pallor",
+    "Macular degeneration",
+    "Nyctalopia",
+    "Abnormal flash visual evoked potentials",
+    "Posterior subcapsular cataract",
+    "Reduced visual acuity",
+    "Peripapillary atrophy",
+    "Intellectual disability",
+    "Autosomal recessive inheritance",
+    "Attenuation of retinal blood vessels",
+    "Spicular pigmentation of the retina",
+    "Childhood onset",
+    "Attention deficit hyperactivity disorder",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

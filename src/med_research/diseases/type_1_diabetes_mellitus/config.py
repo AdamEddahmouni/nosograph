@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'type 1 diabetes mellitus (TYPE_1_DIABETES_MELLITUS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of type 1 diabetes mellitus
-SYMPTOMS = []
+SYMPTOMS = [
+    "Polyphagia",
+    "Distal muscle weakness",
+    "Type I diabetes mellitus",
+    "Decreased circulating 1,5 anhydroglucitol concentration",
+    "Spasticity",
+    "Early young adult onset",
+    "Distal amyotrophy",
+    "Amyotrophic lateral sclerosis",
+    "Autosomal dominant inheritance",
+    "Ketoacidosis",
+    "Polyuria",
+    "Autoimmunity",
+    "Polydipsia",
+    "Diabetes mellitus",
+    "Hyperglycemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

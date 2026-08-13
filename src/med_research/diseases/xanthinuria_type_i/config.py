@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'xanthinuria type I (XANTHINURIA_TYPE_I)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of xanthinuria type I
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hydronephrosis",
+    "Reduced circulating xanthine oxidase activity",
+    "Pyelonephritis",
+    "Myopathy",
+    "Reduced xanthine dehydrogenase level",
+    "Autosomal recessive inheritance",
+    "Xanthinuria",
+    "Impaired renal uric acid clearance",
+    "Hypouricemia",
+    "Xanthine nephrolithiasis",
+    "Hyperxanthinemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

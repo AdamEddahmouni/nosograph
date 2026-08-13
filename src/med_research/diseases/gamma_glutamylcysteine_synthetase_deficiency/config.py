@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'gamma-glutamylcysteine synthetase deficiency (GAMMA_GLUTAMYLCY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of gamma-glutamylcysteine synthetase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Polyneuropathy",
+    "Hemolytic anemia",
+    "Autosomal recessive inheritance",
+    "Reduced erythrocyte gamma-glutamyl cysteine synthetase activity",
+    "Reticulocytosis",
+    "Elevated urinary gamma-glutamylcysteine level",
+    "Late-onset spinocerebellar degeneration",
+    "Myopathy",
+    "Increased circulating lactate dehydrogenase concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

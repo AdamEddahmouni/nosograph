@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'FG syndrome 1 (FG_SYNDROME_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of FG syndrome 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Camptodactyly",
+    "Hypospadias",
+    "Neonatal hypotonia",
+    "Thick lower lip vermilion",
+    "Clinodactyly",
+    "Broad hallux",
+    "Hypertelorism",
+    "Short stature",
+    "Hydrocephalus",
+    "Strabismus",
+    "Cleft palate",
+    "Multiple joint contractures",
+    "Intellectual disability",
+    "Abnormal heart morphology",
+    "Delayed closure of the anterior fontanelle",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

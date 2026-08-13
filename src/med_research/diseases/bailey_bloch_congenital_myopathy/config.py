@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Bailey-Bloch congenital myopathy (BAILEY_BLOCH_CONGENITAL_MYOP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Bailey-Bloch congenital myopathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Gowers sign",
+    "Skeletal muscle atrophy",
+    "Myopathic facies",
+    "Conductive hearing impairment",
+    "Microcephaly",
+    "Ptosis",
+    "Muscle weakness",
+    "Bilateral talipes equinovarus",
+    "Low-set ears",
+    "Downslanted palpebral fissures",
+    "Brachycephaly",
+    "Flexion contracture",
+    "Intellectual disability",
+    "Hyporeflexia",
+    "Telecanthus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'osteochondrodysplasia, brachydactyly, and overlapping malforme
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of osteochondrodysplasia, brachydactyly, and overlapping malformed digits
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sandal gap",
+    "Broad hallux",
+    "Overlapping fingers",
+    "Adducted thumb",
+    "Hallux varus",
+    "Short distal phalanx of finger",
+    "Scoliosis",
+    "Overlapping toe",
+    "Postaxial polydactyly",
+    "Triangular shaped phalanges of the hand",
+    "Absent dorsal skin creases over affected joints",
+    "Short hallux",
+    "Autosomal recessive inheritance",
+    "Easy fatigability",
+    "Mild short stature",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'leukoencephalopathy, developmental delay, and episodic neurolo
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of leukoencephalopathy, developmental delay, and episodic neurologic regression syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Tremor",
+    "Dysarthria",
+    "Infantile onset",
+    "Hypoplasia of the corpus callosum",
+    "Gastroparesis",
+    "Autosomal dominant inheritance",
+    "Seizure",
+    "Head titubation",
+    "Mask-like facies",
+    "Parkinsonism",
+    "Absent speech",
+    "Hypotonia",
+    "Delayed CNS myelination",
+    "Hypertonia",
+    "Spasticity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

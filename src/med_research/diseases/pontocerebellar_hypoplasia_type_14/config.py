@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'pontocerebellar hypoplasia, type 14 (PONTOCEREBELLAR_HYPOPLASI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pontocerebellar hypoplasia, type 14
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Hypotonia",
+    "Hypertonia",
+    "Absent speech",
+    "Spastic tetraplegia",
+    "Thrombocytopenia",
+    "Death in infancy",
+    "Myoclonic seizure",
+    "Hypoplasia of the pons",
+    "Simplified gyral pattern",
+    "Severe intellectual disability",
+    "Focal-onset seizure",
+    "Brisk reflexes",
+    "Infantile spasms",
+    "Motor delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

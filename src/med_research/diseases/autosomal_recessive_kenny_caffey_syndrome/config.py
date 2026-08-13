@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autosomal recessive Kenny-Caffey syndrome (AUTOSOMAL_RECESSIVE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal recessive Kenny-Caffey syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypertelorism",
+    "Delayed closure of the anterior fontanelle",
+    "Proportionate short stature",
+    "Thin clavicle",
+    "Recurrent bacterial infections",
+    "Anemia",
+    "Seizure",
+    "Small hand",
+    "Long clavicle",
+    "Hypocalcemia",
+    "Delayed skeletal maturation",
+    "Short palm",
+    "Tetany",
+    "Calvarial osteosclerosis",
+    "Congenital hypoparathyroidism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

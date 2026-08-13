@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'myofibrillar myopathy 2 (MYOFIBRILLAR_MYOPATHY_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of myofibrillar myopathy 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Fasciculations",
+    "Autosomal dominant inheritance",
+    "Limb-girdle muscle weakness",
+    "Slowly progressive",
+    "Decreased Achilles reflex",
+    "Middle age onset",
+    "Paradoxical respiration",
+    "Pelvic girdle muscle weakness",
+    "Absent Achilles reflex",
+    "Late-onset proximal muscle weakness",
+    "EMG: myopathic abnormalities",
+    "Dysphagia",
+    "Muscular dystrophy",
+    "Neck muscle weakness",
+    "Respiratory insufficiency due to muscle weakness",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

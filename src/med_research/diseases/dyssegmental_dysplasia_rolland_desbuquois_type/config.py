@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'dyssegmental dysplasia, Rolland-Desbuquois type (DYSSEGMENTAL_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dyssegmental dysplasia, Rolland-Desbuquois type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Equinovarus deformity",
+    "Narrow chest",
+    "Short ribs",
+    "Advanced ossification of carpal bones",
+    "Metaphyseal widening",
+    "Bowing of the long bones",
+    "Micrognathia",
+    "Flat face",
+    "Round face",
+    "Encephalocele",
+    "Lens luxation",
+    "Ectopia lentis",
+    "Adducted thumb",
+    "Cleft palate",
+    "Hirsutism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

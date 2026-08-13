@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'acrocapitofemoral dysplasia (ACROCAPITOFEMORAL_DYSPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of acrocapitofemoral dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short metacarpal",
+    "Ovoid vertebral bodies",
+    "Short proximal phalanx of finger",
+    "Short stature",
+    "Cone-shaped epiphysis of the 1st metacarpal",
+    "Cone-shaped epiphyses of the phalanges of the hand",
+    "Fibular overgrowth",
+    "Cupped ribs",
+    "Cone-shaped epiphysis",
+    "Single interphalangeal crease of fifth finger",
+    "Limb undergrowth",
+    "Pectus carinatum",
+    "Lumbar hyperlordosis",
+    "Intellectual disability",
+    "Hypoplasia of the radius",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

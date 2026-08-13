@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'C3 glomerulonephritis (C3_GLOMERULONEPHRITIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of C3 glomerulonephritis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Glomerular C3 deposition",
+    "Thickening of glomerular capillary wall",
+    "Mesangial matrix expansion",
+    "Microscopic hematuria",
+    "Glomerulonephritis",
+    "Progressive",
+    "Glomerular subendothelial electron-dense deposits",
+    "Stage 5 chronic kidney disease",
+    "Mesangial hypercellularity",
+    "Renal insufficiency",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

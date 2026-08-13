@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'female infertility due to zona pellucida defect (FEMALE_INFERT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of female infertility due to zona pellucida defect
-SYMPTOMS = []
+SYMPTOMS = [
+    "Young adult onset",
+    "Absent zona pellucida",
+    "Female infertility",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

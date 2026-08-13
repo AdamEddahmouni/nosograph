@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'immunoskeletal dysplasia with neurodevelopmental abnormalities
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunoskeletal dysplasia with neurodevelopmental abnormalities
-SYMPTOMS = []
+SYMPTOMS = [
+    "Failure to thrive",
+    "Limb undergrowth",
+    "Pear-shaped vertebrae",
+    "Intellectual disability",
+    "Thoracic scoliosis",
+    "Decreased circulating immunoglobulin concentration",
+    "Decreased circulating IgG concentration",
+    "Delayed ossification of carpal bones",
+    "Multiple renal cysts",
+    "Scaphocephaly",
+    "Hip dysplasia",
+    "Increased intervertebral space",
+    "Blepharitis",
+    "Short nose",
+    "Platyspondyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

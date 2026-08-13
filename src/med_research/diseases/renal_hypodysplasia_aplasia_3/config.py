@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'renal hypodysplasia/aplasia 3 (RENAL_HYPODYSPLASIA_APLASIA_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of renal hypodysplasia/aplasia 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Typified by incomplete penetrance",
+    "Renal agenesis",
+    "Hydronephrosis",
+    "Congenital onset",
+    "Horseshoe kidney",
+    "Multicystic kidney dysplasia",
+    "Renal dysplasia",
+    "Abnormality of the uterus",
+    "Autosomal dominant inheritance",
+    "Vesicoureteral reflux",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

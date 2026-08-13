@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'familial pseudohyperkalemia (FAMILIAL_PSEUDOHYPERKALEMIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial pseudohyperkalemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Periodic paralysis",
+    "Hand tremor",
+    "Hemolytic anemia",
+    "Autosomal dominant inheritance",
+    "Hyperkalemia",
+    "Muscle spasm",
+    "Generalized muscle weakness",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

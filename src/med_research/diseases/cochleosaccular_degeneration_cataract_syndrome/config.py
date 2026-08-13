@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'cochleosaccular degeneration-cataract syndrome (COCHLEOSACCULA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cochleosaccular degeneration-cataract syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Progressive cataract",
+    "Hearing impairment",
+    "Autosomal dominant inheritance",
+    "Abnormality of the nervous system",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

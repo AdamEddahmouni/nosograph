@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDER
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ichthyosis, annular epidermolytic 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Scaling skin",
+    "Abnormal hair morphology",
+    "Skin erosion",
+    "Hyperparakeratosis",
+    "Erythema",
+    "Orthokeratosis",
+    "Abnormal nail morphology",
+    "Palmoplantar hyperkeratosis",
+    "Neonatal onset",
+    "Congenital onset",
+    "Abnormal blistering of the skin",
+    "Ichthyosis",
+    "Congenital bullous ichthyosiform erythroderma",
+    "Erythematous plaque",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

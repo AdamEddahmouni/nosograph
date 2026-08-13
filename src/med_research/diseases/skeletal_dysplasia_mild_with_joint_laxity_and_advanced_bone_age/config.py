@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'skeletal dysplasia, mild, with joint laxity and advanced bone 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of skeletal dysplasia, mild, with joint laxity and advanced bone age
-SYMPTOMS = []
+SYMPTOMS = [
+    "Prominent nasal tip",
+    "Periventricular heterotopia",
+    "Microretrognathia",
+    "Scapular winging",
+    "Ventriculomegaly",
+    "Clinodactyly of the 2nd finger",
+    "Macrocephaly",
+    "Long philtrum",
+    "Butterfly vertebrae",
+    "Motor delay",
+    "Short stature",
+    "Hyperlordosis",
+    "Pes planus",
+    "Absent septum pellucidum",
+    "Anteverted nares",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

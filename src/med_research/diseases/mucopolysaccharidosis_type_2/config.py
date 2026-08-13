@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mucopolysaccharidosis type 2 (MUCOPOLYSACCHARIDOSIS_TYPE_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mucopolysaccharidosis type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Papilledema",
+    "Macrocephaly",
+    "Decreased iduronate sulfatase level",
+    "Ptosis",
+    "Dolichocephaly",
+    "Inguinal hernia",
+    "Young adult onset",
+    "Widely spaced teeth",
+    "Asthma",
+    "Hoarse voice",
+    "Flexion contracture",
+    "Hepatomegaly",
+    "Abnormal heart valve morphology",
+    "Juvenile onset",
+    "Hepatosplenomegaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

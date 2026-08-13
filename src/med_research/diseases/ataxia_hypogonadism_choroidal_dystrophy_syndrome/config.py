@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'ataxia-hypogonadism-choroidal dystrophy syndrome (ATAXIA_HYPOG
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ataxia-hypogonadism-choroidal dystrophy syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased patellar reflex",
+    "Progressive",
+    "Areflexia",
+    "Hyperactive Achilles reflex",
+    "Decreased Achilles reflex",
+    "Photophobia",
+    "Juvenile onset",
+    "Lower limb spasticity",
+    "Autosomal recessive inheritance",
+    "Decreased circulating follicle stimulating hormone concentration",
+    "Hypogonadotropic hypogonadism",
+    "Chorioretinal atrophy",
+    "Scanning speech",
+    "Cerebellar atrophy",
+    "Abnormal upper motor neuron morphology",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

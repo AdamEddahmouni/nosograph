@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'uveal coloboma-cleft lip and palate-intellectual disability (U
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of uveal coloboma-cleft lip and palate-intellectual disability
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Congenital onset",
+    "Chorioretinal coloboma",
+    "Cleft upper lip",
+    "Intellectual disability",
+    "Cataract",
+    "Microphthalmia",
+    "Iris coloboma",
+    "Hearing impairment",
+    "Hematuria",
+    "Cleft palate",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

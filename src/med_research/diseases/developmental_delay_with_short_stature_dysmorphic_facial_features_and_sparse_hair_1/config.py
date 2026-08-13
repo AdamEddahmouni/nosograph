@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'developmental delay with short stature, dysmorphic facial feat
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of developmental delay with short stature, dysmorphic facial features, and sparse hair 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Death in childhood",
+    "Natal tooth",
+    "Intellectual disability",
+    "Congenital onset",
+    "Sagittal craniosynostosis",
+    "Epicanthus",
+    "Sparse eyelashes",
+    "Tubulointerstitial nephritis",
+    "Global developmental delay",
+    "Pes planus",
+    "Cerebellar vermis hypoplasia",
+    "Depressed nasal bridge",
+    "Hypertelorism",
+    "Hematuria",
+    "Sparse scalp hair",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

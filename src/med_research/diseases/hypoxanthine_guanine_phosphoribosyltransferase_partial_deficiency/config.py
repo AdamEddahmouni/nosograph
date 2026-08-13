@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'hypoxanthine guanine phosphoribosyltransferase partial deficie
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypoxanthine guanine phosphoribosyltransferase partial deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Kidney stone",
+    "X-linked recessive inheritance",
+    "Hyperuricosuria",
+    "Renal insufficiency",
+    "Podagra",
+    "Hyperuricemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

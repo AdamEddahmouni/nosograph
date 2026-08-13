@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Pierson syndrome (PIERSON_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Pierson syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Persistent head lag",
+    "Remnants of the hyaloid vascular system",
+    "Edema",
+    "Hypoproteinemia",
+    "Congenital onset",
+    "Diffuse mesangial sclerosis",
+    "Uveal ectropion",
+    "Blindness",
+    "Hyperechogenic kidneys",
+    "Progressive microcephaly",
+    "Neonatal onset",
+    "Feeding difficulties",
+    "Motor delay",
+    "Microphthalmia",
+    "Posterior lenticonus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

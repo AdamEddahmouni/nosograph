@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'pulmonary alveolar proteinosis with hypogammaglobulinemia (PUL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pulmonary alveolar proteinosis with hypogammaglobulinemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Intraalveolar phospholipid accumulation",
+    "Recurrent respiratory infections",
+    "Death in infancy",
+    "Death in adolescence",
+    "Increased total leukocyte count",
+    "Splenomegaly",
+    "Respiratory insufficiency",
+    "Death in childhood",
+    "Decreased circulating immunoglobulin concentration",
+    "Infantile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

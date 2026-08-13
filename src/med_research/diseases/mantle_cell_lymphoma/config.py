@@ -8,8 +8,9 @@ PIPELINE_LABEL = "Mantle cell lymphoma (MANTLE_CELL_LYMPHOMA)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Mantle cell lymphoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Lymphoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

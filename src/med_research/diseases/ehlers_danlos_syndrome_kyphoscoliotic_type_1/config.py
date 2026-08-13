@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Ehlers-Danlos syndrome, kyphoscoliotic type 1 (EHLERS_DANLOS_S
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Ehlers-Danlos syndrome, kyphoscoliotic type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypotonia",
+    "Pes planus",
+    "Delayed gross motor development",
+    "Depressed nasal bridge",
+    "Excessive wrinkled skin",
+    "Dental crowding",
+    "Soft skin",
+    "Keratoconus",
+    "Reduced procollagen-lysine,2-oxoglutarate 5-dioxygenase 1 activity in cultured fibroblasts",
+    "Downslanted palpebral fissures",
+    "Bladder diverticulum",
+    "Osteopenia",
+    "Thin ribs",
+    "Decreased urinary lysyl-pyridinoline-hydroxylysyl-pyridinoline ratio",
+    "Recurrent pneumonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Lopes-Maciel-Rodan syndrome (LOPES_MACIEL_RODAN_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Lopes-Maciel-Rodan syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Caudate atrophy",
+    "Autosomal recessive inheritance",
+    "Infantile onset",
+    "Bradykinesia",
+    "Focal impaired awareness seizure",
+    "Dysphagia",
+    "Developmental regression",
+    "Axial hypotonia",
+    "Cerebellar vermis atrophy",
+    "Abnormal pyramidal sign",
+    "Hypertonia",
+    "Seizure",
+    "Severe intellectual disability",
+    "Ankle clonus",
+    "Bruxism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

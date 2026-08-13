@@ -8,8 +8,12 @@ PIPELINE_LABEL = "Burkitt lymphoma (BURKITT_LYMPHOMA)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Burkitt lymphoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Immunodeficiency",
+    "Sporadic",
+    "Burkitt lymphoma",
+    "Typified by somatic mosaicism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

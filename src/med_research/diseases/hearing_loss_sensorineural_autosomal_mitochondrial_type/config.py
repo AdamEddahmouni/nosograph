@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'hearing loss, sensorineural, autosomal-mitochondrial type (HEA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hearing loss, sensorineural, autosomal-mitochondrial type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Progressive sensorineural hearing impairment",
+    "Sensorineural hearing impairment",
+    "Juvenile onset",
+    "Mitochondrial inheritance",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

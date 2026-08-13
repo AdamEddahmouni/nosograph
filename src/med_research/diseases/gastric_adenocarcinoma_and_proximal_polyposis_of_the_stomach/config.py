@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'gastric adenocarcinoma and proximal polyposis of the stomach (
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of gastric adenocarcinoma and proximal polyposis of the stomach
-SYMPTOMS = []
+SYMPTOMS = [
+    "Gastric adenocarcinoma",
+    "Melena",
+    "Autosomal dominant inheritance",
+    "Abdominal pain",
+    "Fundic gland polyposis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

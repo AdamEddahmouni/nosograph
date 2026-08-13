@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'hereditary leiomyomatosis and renal cell cancer (HEREDITARY_LE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hereditary leiomyomatosis and renal cell cancer
-SYMPTOMS = []
+SYMPTOMS = [
+    "Multiple cutaneous leiomyomas",
+    "Uterine leiomyoma",
+    "Cutaneous leiomyoma",
+    "Renal cell carcinoma",
+    "Uterine leiomyosarcoma",
+    "Cutaneous leiomyosarcoma",
+    "Typified by incomplete penetrance",
+    "Decreased fumarate hydratase activity",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

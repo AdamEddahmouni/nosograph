@@ -8,8 +8,14 @@ PIPELINE_LABEL = "Lupus nephritis (LUPUS_NEPHRITIS)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Lupus nephritis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperoxaluria",
+    "Ureteropelvic junction obstruction",
+    "Acute kidney injury",
+    "Calcium oxalate nephrolithiasis",
+    "Autosomal recessive inheritance",
+    "Childhood onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

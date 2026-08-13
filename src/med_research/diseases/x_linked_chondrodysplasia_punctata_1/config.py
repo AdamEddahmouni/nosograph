@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'X-linked chondrodysplasia punctata 1 (X_LINKED_CHONDRODYSPLASI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked chondrodysplasia punctata 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormality of the vertebral column",
+    "Epiphyseal stippling",
+    "Microcephaly",
+    "Short stature",
+    "Short distal phalanx of finger",
+    "Anosmia",
+    "Depressed nasal bridge",
+    "Cataract",
+    "X-linked recessive inheritance",
+    "Short nasal septum",
+    "Hypogonadism",
+    "Global developmental delay",
+    "Short nose",
+    "Ichthyosis",
+    "Hearing impairment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

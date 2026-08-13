@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'volvulus of midgut (VOLVULUS_OF_MIDGUT)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of volvulus of midgut
-SYMPTOMS = []
+SYMPTOMS = [
+    "Telecanthus",
+    "Frontal bossing",
+    "Abdominal distention",
+    "Constipation",
+    "Long palpebral fissure",
+    "High forehead",
+    "Intestinal malrotation",
+    "Autosomal dominant inheritance",
+    "Neonatal intestinal obstruction",
+    "Volvulus",
+    "Abnormality of the genitourinary system",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

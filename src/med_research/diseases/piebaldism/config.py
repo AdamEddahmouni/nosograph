@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'piebaldism (PIEBALDISM)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of piebaldism
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormality of the ear",
+    "White forelock",
+    "Autosomal dominant inheritance",
+    "Piebald skin depigmentation",
+    "Heterochromia iridis",
+    "Neoplasm",
+    "Absent pigmentation of the ventral chest",
+    "Partial albinism",
+    "Aganglionic megacolon",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

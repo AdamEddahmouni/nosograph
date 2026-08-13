@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'diffuse nonepidermolytic palmoplantar keratoderma (DIFFUSE_NON
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of diffuse nonepidermolytic palmoplantar keratoderma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Nonepidermolytic palmoplantar hyperkeratosis",
+    "Congenital onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

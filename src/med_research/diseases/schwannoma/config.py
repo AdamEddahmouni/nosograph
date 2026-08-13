@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'schwannoma (SCHWANNOMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of schwannoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Spinal cord tumor",
+    "Peripheral schwannoma",
+    "Adult onset",
+    "Typified by somatic mosaicism",
+    "Typified by incomplete penetrance",
+    "Vestibular schwannoma",
+    "Autosomal dominant inheritance",
+    "Meningioma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

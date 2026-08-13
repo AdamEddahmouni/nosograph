@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'dysosteosclerosis (DYSOSTEOSCLEROSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dysosteosclerosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Prominent forehead",
+    "Irregular vertebral endplates",
+    "Increased intervertebral space",
+    "Hypoplastic vertebral bodies",
+    "Sclerosis of hand bone",
+    "Broad femoral neck",
+    "Disproportionate short stature",
+    "Premature loss of teeth",
+    "Developmental regression",
+    "Frontal bossing",
+    "Flared metaphysis",
+    "Short diaphyses",
+    "Dermal atrophy",
+    "Narrow iliac wing",
+    "Optic atrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

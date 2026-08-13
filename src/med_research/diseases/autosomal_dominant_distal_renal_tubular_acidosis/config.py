@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'autosomal dominant distal renal tubular acidosis (AUTOSOMAL_DO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal dominant distal renal tubular acidosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated circulating creatinine concentration",
+    "Hypocalcemia",
+    "Muscle weakness",
+    "Juvenile onset",
+    "Pathologic fracture",
+    "Distal renal tubular acidosis",
+    "Autosomal dominant inheritance",
+    "Kidney stone",
+    "Nephrocalcinosis",
+    "Hypokalemia",
+    "Impaired urinary acidification",
+    "Osteomalacia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

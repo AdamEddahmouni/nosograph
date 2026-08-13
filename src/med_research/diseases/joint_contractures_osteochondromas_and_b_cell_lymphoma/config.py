@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'joint contractures, osteochondromas, and B-cell lymphoma (JOIN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of joint contractures, osteochondromas, and B-cell lymphoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Knee flexion contracture",
+    "Reduced bone mineral density",
+    "Cervical spinal canal stenosis",
+    "Burkitt lymphoma",
+    "Generalized lymphadenopathy",
+    "Osteochondroma",
+    "B-cell lymphoma",
+    "Ankle flexion contracture",
+    "Hip contracture",
+    "Childhood onset",
+    "Autosomal recessive inheritance",
+    "Vertebral compression fracture",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'EDICT syndrome (EDICT_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of EDICT syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Reduced visual acuity",
+    "Keratoconus",
+    "Astigmatism",
+    "Microcornea",
+    "Autosomal dominant inheritance",
+    "Hypoplasia of the iris",
+    "Visual impairment",
+    "Anterior polar cataract",
+    "Childhood onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

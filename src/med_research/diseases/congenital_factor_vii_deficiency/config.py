@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'congenital factor VII deficiency (CONGENITAL_FACTOR_VII_DEFICI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital factor VII deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Childhood onset",
+    "Intracranial hemorrhage",
+    "Reduced factor VII activity",
+    "Menorrhagia",
+    "Bruising susceptibility",
+    "Autosomal recessive inheritance",
+    "Prolonged bleeding after dental extraction",
+    "Abnormal bleeding",
+    "Epistaxis",
+    "Joint hemorrhage",
+    "Intramuscular hematoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

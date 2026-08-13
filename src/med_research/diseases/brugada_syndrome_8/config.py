@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'Brugada syndrome 8 (BRUGADA_SYNDROME_8)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Brugada syndrome 8
-SYMPTOMS = []
+SYMPTOMS = [
+    "Complete right bundle branch block",
+    "ST segment elevation",
+    "Ventricular tachycardia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

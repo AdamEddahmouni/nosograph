@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spondyloepiphyseal dysplasia, Stanescu type (SPONDYLOEPIPHYSEA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondyloepiphyseal dysplasia, Stanescu type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Juvenile onset",
+    "Vertebral wedging",
+    "Short stature",
+    "Internal tibial torsion",
+    "Beaking of vertebral bodies",
+    "Waddling gait",
+    "Kyphoscoliosis",
+    "Hypoplastic ilia",
+    "Coxa valga",
+    "Platyspondyly",
+    "Joint stiffness",
+    "Autosomal dominant inheritance",
+    "Stiff neck",
+    "Childhood onset",
+    "Spondyloepiphyseal dysplasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

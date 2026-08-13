@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'alcohol sensitivity, acute (ALCOHOL_SENSITIVITY_ACUTE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of alcohol sensitivity, acute
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Facial flushing after alcohol intake",
+    "Reduced acetaldehyde dehydrogenase level",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

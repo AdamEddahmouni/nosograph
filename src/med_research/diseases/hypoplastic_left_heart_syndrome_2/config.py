@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'hypoplastic left heart syndrome 2 (HYPOPLASTIC_LEFT_HEART_SYND
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypoplastic left heart syndrome 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypoplastic left ventricle",
+    "Ventricular septal defect",
+    "Autosomal dominant inheritance",
+    "Aortic valve atresia",
+    "Congenital onset",
+    "Mitral atresia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

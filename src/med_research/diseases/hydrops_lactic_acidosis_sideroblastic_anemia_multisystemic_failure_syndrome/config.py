@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hydrops-lactic acidosis-sideroblastic anemia-multisystemic fai
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hydrops-lactic acidosis-sideroblastic anemia-multisystemic failure syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased mean corpuscular volume",
+    "Ventricular septal defect",
+    "Metabolic acidosis",
+    "Oligohydramnios",
+    "Erythroid hyperplasia",
+    "Nonimmune hydrops fetalis",
+    "Sideroblastic anemia",
+    "Intrauterine growth retardation",
+    "Patent ductus arteriosus",
+    "Hypoalbuminemia",
+    "EEG abnormality",
+    "Decreased liver function",
+    "Overriding aorta",
+    "Pulmonary arterial hypertension",
+    "Hematuria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

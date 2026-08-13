@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'macrothrombocytopenia, isolated, 2, autosomal dominant (MACROT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of macrothrombocytopenia, isolated, 2, autosomal dominant
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Macrothrombocytopenia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

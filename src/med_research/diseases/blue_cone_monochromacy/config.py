@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'blue cone monochromacy (BLUE_CONE_MONOCHROMACY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of blue cone monochromacy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pendular nystagmus",
+    "X-linked recessive inheritance",
+    "Reduced visual acuity",
+    "Photophobia",
+    "Blue cone monochromacy",
+    "Visual impairment",
+    "Myopia",
+    "Nystagmus",
+    "Abnormal macular pigmentation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

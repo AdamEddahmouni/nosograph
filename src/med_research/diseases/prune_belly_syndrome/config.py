@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'prune belly syndrome (PRUNE_BELLY_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of prune belly syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Slow pupillary light response",
+    "Hydroureter",
+    "Hydronephrosis",
+    "Congenital posterior urethral valve",
+    "Pectus excavatum",
+    "Pectus carinatum",
+    "Talipes equinovarus",
+    "Anal atresia",
+    "Oligohydramnios",
+    "Xerostomia",
+    "Aplasia of the abdominal wall musculature",
+    "Prune belly",
+    "Cryptorchidism",
+    "Patent ductus arteriosus",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

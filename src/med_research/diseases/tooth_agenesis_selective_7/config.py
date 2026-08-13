@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'tooth agenesis, selective, 7 (TOOTH_AGENESIS_SELECTIVE_7)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of tooth agenesis, selective, 7
-SYMPTOMS = []
+SYMPTOMS = [
+    "Taurodontia",
+    "Autosomal dominant inheritance",
+    "Agenesis of permanent teeth",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

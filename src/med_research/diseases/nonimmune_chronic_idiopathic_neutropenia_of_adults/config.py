@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'nonimmune chronic idiopathic neutropenia of adults (NONIMMUNE_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of nonimmune chronic idiopathic neutropenia of adults
-SYMPTOMS = []
+SYMPTOMS = [
+    "Acute myeloid leukemia",
+    "Decreased total neutrophil count",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

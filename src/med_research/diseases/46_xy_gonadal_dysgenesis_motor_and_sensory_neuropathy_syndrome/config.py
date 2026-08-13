@@ -8,8 +8,18 @@ PIPELINE_LABEL = '46,XY gonadal dysgenesis-motor and sensory neuropathy syndrome
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of 46,XY gonadal dysgenesis-motor and sensory neuropathy syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Primary amenorrhea",
+    "Polyneuropathy",
+    "Autosomal recessive inheritance",
+    "Congenital onset",
+    "Hyporeflexia",
+    "Impaired distal vibration sensation",
+    "Hypergonadotropic hypogonadism",
+    "Decreased number of peripheral myelinated nerve fibers",
+    "Gonadal dysgenesis",
+    "Impaired distal tactile sensation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

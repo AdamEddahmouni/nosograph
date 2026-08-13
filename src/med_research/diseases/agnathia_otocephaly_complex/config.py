@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'agnathia-otocephaly complex (AGNATHIA_OTOCEPHALY_COMPLEX)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of agnathia-otocephaly complex
-SYMPTOMS = []
+SYMPTOMS = [
+    "Situs inversus totalis",
+    "Autosomal recessive inheritance",
+    "Fetal onset",
+    "Holoprosencephaly",
+    "Pulmonary hypoplasia",
+    "Agenesis of corpus callosum",
+    "Narrow mouth",
+    "Wide nose",
+    "Hypoplasia of the epiglottis",
+    "Secundum atrial septal defect",
+    "Microglossia",
+    "Micrognathia",
+    "Respiratory distress",
+    "Synotia",
+    "Abnormality of the eye",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

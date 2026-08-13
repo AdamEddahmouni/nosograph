@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'idiopathic aplastic anemia (IDIOPATHIC_APLASTIC_ANEMIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of idiopathic aplastic anemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Aplastic anemia",
+    "Bone marrow hypocellularity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'developmental and epileptic encephalopathy 97 (DEVELOPMENTAL_A
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of developmental and epileptic encephalopathy 97
-SYMPTOMS = []
+SYMPTOMS = [
+    "Stereotypical hand wringing",
+    "Delayed ability to walk",
+    "Delayed speech and language development",
+    "Delayed ability to sit",
+    "Intellectual disability",
+    "Ventriculomegaly",
+    "Seizure",
+    "Delayed ability to roll over",
+    "Neonatal onset",
+    "Tremor",
+    "Poor head control",
+    "Autistic behavior",
+    "Delayed ability to crawl",
+    "Inability to walk",
+    "Epileptic encephalopathy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

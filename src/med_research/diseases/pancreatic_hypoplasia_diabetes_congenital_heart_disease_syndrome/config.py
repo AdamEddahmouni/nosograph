@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'pancreatic hypoplasia-diabetes-congenital heart disease syndro
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pancreatic hypoplasia-diabetes-congenital heart disease syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Total absence of the pericardium",
+    "Microcephaly",
+    "Microcolon",
+    "Absent gallbladder",
+    "Biliary atresia",
+    "Cervical ribs",
+    "Pulmonic stenosis",
+    "Intrauterine growth retardation",
+    "Tetralogy of Fallot",
+    "Pancreatic hypoplasia",
+    "Congenital diaphragmatic hernia",
+    "Pulmonary artery stenosis",
+    "Truncus arteriosus",
+    "Hyperglycemia",
+    "Seizure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

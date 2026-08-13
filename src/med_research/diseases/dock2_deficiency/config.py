@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'DOCK2 deficiency (DOCK2_DEFICIENCY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of DOCK2 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Recurrent oral thrush",
+    "Chronic diarrhea",
+    "Neonatal onset",
+    "Decreased antigen-specific T cell proliferation",
+    "Decreased total T cell count",
+    "Macrovesicular hepatic steatosis",
+    "Intermittent diarrhea",
+    "Recurrent pneumonia",
+    "Growth delay",
+    "Pulmonary infiltrates",
+    "Interstitial pneumonitis",
+    "Elevated circulating aspartate aminotransferase concentration",
+    "Eosinophilic granuloma",
+    "Elevated circulating alanine aminotransferase concentration",
+    "Infantile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

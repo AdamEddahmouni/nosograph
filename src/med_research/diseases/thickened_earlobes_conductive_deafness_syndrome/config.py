@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'thickened earlobes-conductive deafness syndrome (THICKENED_EAR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of thickened earlobes-conductive deafness syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormality of the middle ear ossicles",
+    "Abnormal pinna morphology",
+    "Bilateral conductive hearing impairment",
+    "Absent stapes head",
+    "Abnormal malleus morphology",
+    "Micrognathia",
+    "Autosomal dominant inheritance",
+    "Congenital conductive hearing impairment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

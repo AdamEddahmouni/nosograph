@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'primary ovarian insufficiency (PRIMARY_OVARIAN_INSUFFICIENCY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of primary ovarian insufficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Gonadal dysgenesis",
+    "Autosomal recessive inheritance",
+    "Reduced antral follicle count",
+    "Female-limited expression",
+    "Decreased serum estradiol",
+    "Hypothyroidism",
+    "Azoospermia",
+    "Macular dystrophy",
+    "Amenorrhea",
+    "Chronic diarrhea",
+    "X-linked recessive inheritance",
+    "Secondary amenorrhea",
+    "Neonatal onset",
+    "Hypoplasia of the uterus",
+    "Absent pubic hair",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'Spinocerebellar ataxia type 41 (SPINOCEREBELLAR_ATAXIA_TYPE_41
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Spinocerebellar ataxia type 41
-SYMPTOMS = []
+SYMPTOMS = [
+    "Progressive",
+    "Postural instability",
+    "Adult onset",
+    "Unsteady gait",
+    "Cerebellar atrophy",
+    "Cerebellar vermis atrophy",
+    "Ataxia",
+    "Gait ataxia",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

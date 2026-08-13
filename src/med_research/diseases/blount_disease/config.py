@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'Blount disease (BLOUNT_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Blount disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Genu varum",
+    "Bowing of the legs",
+    "Abnormality of the proximal tibial epiphysis",
+    "Autosomal recessive inheritance",
+    "Osteochondritis dissecans",
+    "Autosomal dominant inheritance",
+    "Non-Mendelian inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

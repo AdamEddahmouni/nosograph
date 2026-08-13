@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'acrorenal syndrome (ACRORENAL_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of acrorenal syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal renal morphology",
+    "Autosomal dominant inheritance",
+    "Finger aplasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

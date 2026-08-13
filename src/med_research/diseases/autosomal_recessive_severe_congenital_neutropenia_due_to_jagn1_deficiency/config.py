@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'autosomal recessive severe congenital neutropenia due to JAGN1
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal recessive severe congenital neutropenia due to JAGN1 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short stature",
+    "Failure to thrive",
+    "Decreased total neutrophil count",
+    "Infantile onset",
+    "Recurrent otitis media",
+    "Recurrent respiratory infections",
+    "Autosomal recessive inheritance",
+    "Recurrent bacterial infections",
+    "Bone marrow maturation arrest",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

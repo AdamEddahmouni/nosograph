@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'congenital heart malformation (CONGENITAL_HEART_MALFORMATION)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital heart malformation
-SYMPTOMS = []
+SYMPTOMS = [
+    "Respiratory distress",
+    "Pulmonic stenosis",
+    "Hypoplastic aortic arch",
+    "Single ventricle",
+    "Bilateral superior vena cava",
+    "Atrial septal defect",
+    "Aortic aneurysm",
+    "Hydrocephalus",
+    "Aqueductal stenosis",
+    "Mitral atresia",
+    "Omphalocele",
+    "Coarctation of aorta",
+    "Enlarged kidney",
+    "Hypoplastic left ventricle",
+    "Congenital hip dislocation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,19 @@ PIPELINE_LABEL = "Melanoma (MELANOMA)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Melanoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Melanoma",
+    "Uveal melanoma",
+    "Autosomal dominant inheritance",
+    "Gastrointestinal desmoid tumor",
+    "Cutaneous melanoma",
+    "Abnormality of the eye",
+    "Atypical nevus",
+    "Typified by incomplete penetrance",
+    "Adult onset",
+    "Numerous nevi",
+    "Atypical nevi in non-sun exposed areas",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

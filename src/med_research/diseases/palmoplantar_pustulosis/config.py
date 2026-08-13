@@ -8,8 +8,19 @@ PIPELINE_LABEL = "Palmoplantar pustulosis (PALMOPLANTAR_PUSTULOSIS)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Palmoplantar pustulosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Psoriasiform dermatitis",
+    "Parakeratosis",
+    "Onycholysis",
+    "Hyperkeratosis",
+    "Arthritis",
+    "Non-Mendelian inheritance",
+    "Autosomal dominant inheritance",
+    "Scaling skin",
+    "Onychomadesis",
+    "Epidermal acanthosis",
+    "Nail pits",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'renal tubular dysgenesis of genetic origin (RENAL_TUBULAR_DYSG
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of renal tubular dysgenesis of genetic origin
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypotension",
+    "Microcephaly",
+    "Abnormality of the urinary system",
+    "Respiratory insufficiency",
+    "Potter facies",
+    "Pulmonary hypoplasia",
+    "Autosomal recessive inheritance",
+    "Anuria",
+    "Oligohydramnios",
+    "Widely patent fontanelles and sutures",
+    "Renotubular dysgenesis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

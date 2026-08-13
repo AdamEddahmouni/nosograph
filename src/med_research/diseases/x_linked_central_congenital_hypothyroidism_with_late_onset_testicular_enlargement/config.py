@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'X-linked central congenital hypothyroidism with late-onset tes
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked central congenital hypothyroidism with late-onset testicular enlargement
-SYMPTOMS = []
+SYMPTOMS = [
+    "Overweight",
+    "Reduced circulating prolactin concentration",
+    "Hypothyroidism",
+    "X-linked recessive inheritance",
+    "Reduced TSH response to thyrotrophin-releasing hormone stimulation test",
+    "Inappropriately normal thyroid-stimulating hormone level",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

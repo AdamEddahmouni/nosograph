@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'Gollop-Wolfgang complex (GOLLOP_WOLFGANG_COMPLEX)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Gollop-Wolfgang complex
-SYMPTOMS = []
+SYMPTOMS = [
+    "Bifid femur",
+    "Aplasia of the ulna",
+    "Autosomal recessive inheritance",
+    "Foot monodactyly",
+    "Hand monodactyly",
+    "Split hand",
+    "Absent tibia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

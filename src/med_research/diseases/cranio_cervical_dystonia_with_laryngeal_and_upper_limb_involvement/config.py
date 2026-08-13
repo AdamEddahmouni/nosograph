@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Cranio-cervical dystonia with laryngeal and upper-limb involve
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Cranio-cervical dystonia with laryngeal and upper-limb involvement
-SYMPTOMS = []
+SYMPTOMS = [
+    "Babinski sign",
+    "Tibialis anterior muscle atrophy",
+    "Impaired distal tactile sensation",
+    "Lower limb amyotrophy",
+    "Global developmental delay",
+    "Hypoplasia of the corpus callosum",
+    "Reduced visual acuity",
+    "Strabismus",
+    "Steppage gait",
+    "Autosomal recessive inheritance",
+    "Lower limb spasticity",
+    "Hyperreflexia",
+    "Impaired distal vibration sensation",
+    "Juvenile onset",
+    "Cognitive impairment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

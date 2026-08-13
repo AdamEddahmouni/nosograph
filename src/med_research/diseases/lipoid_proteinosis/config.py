@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'lipoid proteinosis (LIPOID_PROTEINOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lipoid proteinosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hoarse voice",
+    "Autosomal recessive inheritance",
+    "Hallucinations",
+    "Paranoia",
+    "Congenital onset",
+    "Seizure",
+    "Papule",
+    "Aggressive behavior",
+    "Papillary dermis eosinophilic hyaline material",
+    "Reduced epidermal extracellular matrix protein 1 protein expression",
+    "Childhood onset",
+    "Scarring",
+    "Memory impairment",
+    "Skin plaque",
+    "Bilateral intracerebral calcifications",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'autosomal dominant wooly hair (AUTOSOMAL_DOMINANT_WOOLY_HAIR)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal dominant wooly hair
-SYMPTOMS = []
+SYMPTOMS = [
+    "Coarse hair",
+    "Congenital onset",
+    "Autosomal dominant inheritance",
+    "Abnormal eyebrow morphology",
+    "Dry hair",
+    "Abnormal eyelash morphology",
+    "Palmoplantar hyperkeratosis",
+    "Woolly hair",
+    "Slow-growing hair",
+    "Keratosis pilaris",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

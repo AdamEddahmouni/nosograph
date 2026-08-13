@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'spinal muscular atrophy, facioscapulohumeral type (SPINAL_MUSC
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spinal muscular atrophy, facioscapulohumeral type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Spinal muscular atrophy",
+    "Skeletal muscle atrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

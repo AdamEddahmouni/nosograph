@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Glycogen Storage Disease Type 2b (GLYCOGEN_STORAGE_DISEASE_TYP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Glycogen Storage Disease Type 2b
-SYMPTOMS = []
+SYMPTOMS = [
+    "Distal muscle weakness",
+    "Muscle weakness",
+    "Severely reduced left ventricular ejection fraction",
+    "Cognitive impairment",
+    "Elevated circulating creatine kinase activity",
+    "Limb muscle weakness",
+    "Increased QRS voltage",
+    "Myocardial necrosis",
+    "Exercise intolerance",
+    "Syncope",
+    "Cardiomegaly",
+    "Hypokinesia",
+    "Congestive heart failure",
+    "Visual impairment",
+    "Exercise-induced muscle cramps",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

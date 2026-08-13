@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of complement factor I deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Recurrent otitis media",
+    "Recurrent meningitis",
+    "Recurrent Haemophilus influenzae infection",
+    "Recurrent skin infections",
+    "Recurrent sinusitis",
+    "Decreased circulating complement C3 concentration",
+    "Pyelonephritis",
+    "Septic arthritis",
+    "Glomerulonephritis",
+    "Autosomal recessive inheritance",
+    "Juvenile onset",
+    "Decreased circulating complement factor H concentration",
+    "Childhood onset",
+    "Recurrent streptococcus pneumoniae infections",
+    "Vasculitis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

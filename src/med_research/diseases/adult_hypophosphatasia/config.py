@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'adult hypophosphatasia (ADULT_HYPOPHOSPHATASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of adult hypophosphatasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Osteomalacia",
+    "Abnormal foot morphology",
+    "Carious teeth",
+    "Arthropathy",
+    "Recurrent fractures",
+    "Pathologic fracture",
+    "Premature loss of primary teeth",
+    "Autosomal dominant inheritance",
+    "Rickets",
+    "Chondrocalcinosis",
+    "Phosphoethanolaminuria",
+    "Premature loss of permanent teeth",
+    "Increased susceptibility to fractures",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,18 @@ PIPELINE_LABEL = '46,XY sex reversal 3 (46_XY_SEX_REVERSAL_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of 46,XY sex reversal 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Clitoral hypertrophy",
+    "Gonadal dysgenesis",
+    "Exaggerated rugosity of the labia majora",
+    "Sex reversal",
+    "Penoscrotal hypospadias",
+    "Sex-limited expression",
+    "Elevated circulating luteinizing hormone level",
+    "Hypoplasia of the uterus",
+    "Ambiguous genitalia",
+    "Elevated circulating follicle stimulating hormone level",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

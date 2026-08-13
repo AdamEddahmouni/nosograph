@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Treacher-Collins syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Smooth philtrum",
+    "Hyperkeratosis",
+    "Abnormal pinna morphology",
+    "Protruding ear",
+    "Strabismus",
+    "Sparse lateral eyebrow",
+    "Arthralgia",
+    "Sparse lower eyelashes",
+    "Fusion of middle ear ossicles",
+    "Recurrent respiratory infections",
+    "Dental malocclusion",
+    "Carious teeth",
+    "Narrow mouth",
+    "Thin nail",
+    "Upper eyelid coloboma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

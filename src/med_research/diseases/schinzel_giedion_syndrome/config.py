@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Schinzel-Giedion syndrome (SCHINZEL_GIEDION_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Schinzel-Giedion syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperconvex nail",
+    "Facial hemangioma",
+    "Malar flattening",
+    "Atrial septal defect",
+    "Hypsarrhythmia",
+    "Micropenis",
+    "Hypoplastic labia minora",
+    "Opisthotonus",
+    "Low-set ears",
+    "Hypospadias",
+    "Hepatoblastoma",
+    "Long clavicle",
+    "Choanal stenosis",
+    "Short neck",
+    "Coarse facial features",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

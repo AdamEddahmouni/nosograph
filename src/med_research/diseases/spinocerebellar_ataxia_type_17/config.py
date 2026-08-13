@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spinocerebellar ataxia type 17 (SPINOCEREBELLAR_ATAXIA_TYPE_17
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spinocerebellar ataxia type 17
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Intention tremor",
+    "Lack of insight",
+    "Chorea",
+    "Broad-based gait",
+    "Myoclonus",
+    "Late onset",
+    "Depression",
+    "Adult onset",
+    "Dystonia",
+    "Middle age onset",
+    "Hallucinations",
+    "Urinary incontinence",
+    "Cerebellar atrophy",
+    "Dysphagia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'hemifacial hypertrophy (HEMIFACIAL_HYPERTROPHY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hemifacial hypertrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dental malocclusion",
+    "Hypoplasia of the maxilla",
+    "Facial asymmetry",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'hyperinsulinism due to INSR deficiency (HYPERINSULINISM_DUE_TO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hyperinsulinism due to INSR deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Childhood onset",
+    "Elevated circulating insulin:C-peptide ratio",
+    "Hypoglycemic coma",
+    "Young adult onset",
+    "Juvenile onset",
+    "Hyperinsulinemic hypoglycemia",
+    "Autosomal dominant inheritance",
+    "Fasting hyperinsulinemia",
+    "Hypoglycemic seizures",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

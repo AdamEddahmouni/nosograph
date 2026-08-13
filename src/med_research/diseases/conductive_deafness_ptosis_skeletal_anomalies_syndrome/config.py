@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'conductive deafness-ptosis-skeletal anomalies syndrome (CONDUC
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of conductive deafness-ptosis-skeletal anomalies syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Ectodermal dysplasia",
+    "Chronic otitis media",
+    "Conductive hearing impairment",
+    "Ptosis",
+    "Abnormality of the dentition",
+    "Clinodactyly of the 5th finger",
+    "Atresia of the external auditory canal",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

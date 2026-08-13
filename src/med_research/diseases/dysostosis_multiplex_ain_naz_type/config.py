@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'dysostosis multiplex, Ain-Naz type (DYSOSTOSIS_MULTIPLEX_AIN_N
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dysostosis multiplex, Ain-Naz type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Coarse facial features",
+    "Glenoid fossa hypoplasia",
+    "Hypoplastic iliac wing",
+    "Severe short stature",
+    "Infantile onset",
+    "Dysostosis multiplex",
+    "Hip dislocation",
+    "Wide humerus",
+    "Flat acetabular roof",
+    "Autosomal recessive inheritance",
+    "Abdominal distention",
+    "Thin corpus callosum",
+    "Gait disturbance",
+    "Hemivertebrae",
+    "Scoliosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hereditary spastic paraplegia 17 (HEREDITARY_SPASTIC_PARAPLEGI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hereditary spastic paraplegia 17
-SYMPTOMS = []
+SYMPTOMS = [
+    "Postural tremor",
+    "Hyperreflexia",
+    "Thenar muscle atrophy",
+    "Impaired distal tactile sensation",
+    "Slowly progressive",
+    "Distal amyotrophy",
+    "Autosomal dominant inheritance",
+    "Spastic paraplegia",
+    "Split hand",
+    "Lower limb spasticity",
+    "Juvenile onset",
+    "Impaired distal proprioception",
+    "Spastic gait",
+    "Pes cavus",
+    "Babinski sign",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

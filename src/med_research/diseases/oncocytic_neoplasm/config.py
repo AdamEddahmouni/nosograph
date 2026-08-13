@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'oncocytic neoplasm (ONCOCYTIC_NEOPLASM)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of oncocytic neoplasm
-SYMPTOMS = []
+SYMPTOMS = [
+    "Mitochondrial inheritance",
+    "Renal oncocytoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

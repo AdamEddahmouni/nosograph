@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'branchiooculofacial syndrome (BRANCHIOOCULOFACIAL_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of branchiooculofacial syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Low posterior hairline",
+    "Supraauricular pit",
+    "Microcephaly",
+    "Renal agenesis",
+    "Single transverse palmar crease",
+    "Kyphosis",
+    "Malrotation of colon",
+    "Gastroesophageal reflux",
+    "Atypical scarring of skin",
+    "Branchial anomaly",
+    "Nystagmus",
+    "Upslanted palpebral fissure",
+    "Malar flattening",
+    "Agenesis of cerebellar vermis",
+    "Iris coloboma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

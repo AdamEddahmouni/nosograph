@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'systemic lupus erythematosus (SYSTEMIC_LUPUS_ERYTHEMATOSUS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of systemic lupus erythematosus
-SYMPTOMS = []
+SYMPTOMS = [
+    "Arthritis",
+    "Abnormal renal physiology",
+    "Autosomal dominant inheritance",
+    "Malar rash",
+    "Abnormality of the immune system",
+    "Seizure",
+    "Antiphospholipid antibody positivity",
+    "Thrombocytopenia",
+    "Lupus nephritis",
+    "Abnormality of the skin",
+    "Abnormality of the kidney",
+    "Abnormality of the nervous system",
+    "Psychosis",
+    "Hemolytic anemia",
+    "Pericarditis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

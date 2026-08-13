@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hereditary sclerosing poikiloderma with tendon and pulmonary i
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hereditary sclerosing poikiloderma with tendon and pulmonary involvement
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypohidrosis",
+    "Hepatomegaly",
+    "Scoliosis",
+    "Areflexia of lower limbs",
+    "Autosomal dominant inheritance",
+    "Skeletal muscle atrophy",
+    "Elevated circulating creatine kinase activity",
+    "Erysipelas",
+    "Cataract",
+    "Delayed puberty",
+    "Congenital onset",
+    "Sparse eyelashes",
+    "Nail dysplasia",
+    "Alopecia",
+    "Pulmonary fibrosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

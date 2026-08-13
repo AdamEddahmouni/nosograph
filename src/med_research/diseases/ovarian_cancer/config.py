@@ -8,8 +8,13 @@ PIPELINE_LABEL = "Ovarian cancer (OVARIAN_CANCER)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Ovarian cancer
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ovarian papillary adenocarcinoma",
+    "Breast carcinoma",
+    "Autosomal dominant inheritance",
+    "Dysgerminoma",
+    "Typified by somatic mosaicism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

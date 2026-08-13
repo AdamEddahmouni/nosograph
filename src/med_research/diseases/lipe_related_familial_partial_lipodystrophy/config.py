@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'LIPE-related familial partial lipodystrophy (LIPE_RELATED_FAMI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of LIPE-related familial partial lipodystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Young adult onset",
+    "Hepatic steatosis",
+    "Hypertension",
+    "Acanthosis nigricans",
+    "Autosomal recessive inheritance",
+    "Lower limb muscle weakness",
+    "Muscular dystrophy",
+    "Difficulty climbing stairs",
+    "Muscle weakness",
+    "Lipodystrophy",
+    "Elevated circulating creatine kinase activity",
+    "Hypopigmentation of the skin",
+    "Skeletal muscle atrophy",
+    "Proximal muscle weakness",
+    "Abdominal obesity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

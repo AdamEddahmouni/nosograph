@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autosomal dominant sensory ataxia 1 (AUTOSOMAL_DOMINANT_SENSOR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal dominant sensory ataxia 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Frequent falls",
+    "Sensory ataxia",
+    "Hyporeflexia",
+    "Middle age onset",
+    "Abnormal vestibulo-ocular reflex",
+    "Distal sensory impairment of all modalities",
+    "Dysesthesia",
+    "Gait instability, worse in the dark",
+    "Gait ataxia",
+    "Impaired distal vibration sensation",
+    "Abnormal cerebellum morphology",
+    "Gait disturbance",
+    "Positive Romberg sign",
+    "Babinski sign",
+    "Areflexia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

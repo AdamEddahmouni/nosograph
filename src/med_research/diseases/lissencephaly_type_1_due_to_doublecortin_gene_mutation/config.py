@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'lissencephaly type 1 due to doublecortin gene mutation (LISSEN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lissencephaly type 1 due to doublecortin gene mutation
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ataxia",
+    "Typified by incomplete penetrance",
+    "Agenesis of corpus callosum",
+    "Micropenis",
+    "Agyria",
+    "Seizure",
+    "Intellectual disability",
+    "Lissencephaly",
+    "Spasticity",
+    "Postnatal growth retardation",
+    "Infantile onset",
+    "X-linked inheritance",
+    "Dysarthria",
+    "Nystagmus",
+    "Motor delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

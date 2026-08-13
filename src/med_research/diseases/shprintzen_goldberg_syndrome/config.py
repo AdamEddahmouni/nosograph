@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Shprintzen-Goldberg syndrome (SHPRINTZEN_GOLDBERG_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Shprintzen-Goldberg syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Microcephaly",
+    "Frontal bossing",
+    "Autosomal dominant inheritance",
+    "Hypertelorism",
+    "Abnormal pinna morphology",
+    "Brachyturricephaly",
+    "Wide anterior fontanel",
+    "Narrow palate",
+    "Mitral valve prolapse",
+    "Conductive hearing impairment",
+    "Osteopenia",
+    "Genu valgum",
+    "Dislocated radial head",
+    "Micrognathia",
+    "Anteverted nares",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

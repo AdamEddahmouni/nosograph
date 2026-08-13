@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of snowflake vitreoretinal degeneration
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cataract",
+    "Retinal detachment",
+    "Autosomal dominant inheritance",
+    "Optically empty vitreous",
+    "Snowflake vitreoretinal degeneration",
+    "Corneal guttata",
+    "Retinal dots",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

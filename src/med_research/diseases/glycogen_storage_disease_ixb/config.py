@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'glycogen storage disease IXb (GLYCOGEN_STORAGE_DISEASE_IXB)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of glycogen storage disease IXb
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hepatomegaly",
+    "Increased muscle glycogen content",
+    "Short stature",
+    "Reduced hepatic phosphorylase kinase activity",
+    "Hypoglycemia",
+    "Hypotonia",
+    "Infantile onset",
+    "Diarrhea",
+    "Hyperuricemia",
+    "Growth delay",
+    "Autosomal recessive inheritance",
+    "Splenomegaly",
+    "Increased hepatic glycogen content",
+    "Childhood onset",
+    "Muscle weakness",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

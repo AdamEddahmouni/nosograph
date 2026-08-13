@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'tooth agenesis, selective, 4 (TOOTH_AGENESIS_SELECTIVE_4)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of tooth agenesis, selective, 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Palmoplantar hyperhidrosis",
+    "Tooth agenesis",
+    "Peg-shaped maxillary lateral incisors",
+    "Hypohidrosis",
+    "Sparse eyebrow",
+    "Autosomal dominant inheritance",
+    "Photophobia",
+    "Dystrophic fingernails",
+    "Dry skin",
+    "Abnormal primary tooth morphology",
+    "Short eyelashes",
+    "Sparse scalp hair",
+    "Dystrophic toenail",
+    "Agenesis of permanent teeth",
+    "Palmar hyperkeratosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

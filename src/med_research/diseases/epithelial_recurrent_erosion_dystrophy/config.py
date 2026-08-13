@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'epithelial recurrent erosion dystrophy (EPITHELIAL_RECURRENT_E
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of epithelial recurrent erosion dystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Juvenile onset",
+    "Visual impairment",
+    "Ocular pain",
+    "Childhood onset",
+    "Corneal erosion",
+    "Epiphora",
+    "Autosomal dominant inheritance",
+    "Photophobia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

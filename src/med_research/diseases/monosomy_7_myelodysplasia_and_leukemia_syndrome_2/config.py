@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'monosomy 7 myelodysplasia and leukemia syndrome 2 (MONOSOMY_7_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of monosomy 7 myelodysplasia and leukemia syndrome 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Myelodysplasia",
+    "Megakaryocyte dysplasia",
+    "Increased mean corpuscular volume",
+    "Childhood onset",
+    "Decreased total neutrophil count",
+    "Bone marrow hypocellularity",
+    "Pancytopenia",
+    "Thrombocytopenia",
+    "Autosomal dominant inheritance",
+    "Acute myeloid leukemia",
+    "Anemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

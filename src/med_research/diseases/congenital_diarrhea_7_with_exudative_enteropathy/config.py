@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'congenital diarrhea 7 with exudative enteropathy (CONGENITAL_D
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital diarrhea 7 with exudative enteropathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abdominal colic",
+    "Hyperlipidemia",
+    "Hypoalbuminemia",
+    "Diarrhea",
+    "Villous atrophy",
+    "Neonatal onset",
+    "Protein-losing enteropathy",
+    "Autosomal recessive inheritance",
+    "Hypercholesterolemia",
+    "Failure to thrive",
+    "Vomiting",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

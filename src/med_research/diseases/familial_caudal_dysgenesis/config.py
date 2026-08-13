@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'familial caudal dysgenesis (FAMILIAL_CAUDAL_DYSGENESIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial caudal dysgenesis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Bilateral talipes equinovarus",
+    "Dermal sinus tract",
+    "Absence of the sacrum",
+    "Urinary retention",
+    "Autosomal dominant inheritance",
+    "Myeloschisis",
+    "Sacral lipoma",
+    "Meningocele",
+    "Congenital onset",
+    "Constipation",
+    "Headache",
+    "Hydromyelia",
+    "Myelomeningocele",
+    "Tethered cord",
+    "Dermoid cyst",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

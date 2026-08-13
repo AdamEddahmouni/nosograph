@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hyaline fibromatosis syndrome (HYALINE_FIBROMATOSIS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hyaline fibromatosis syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Diarrhea",
+    "Subcutaneous nodule",
+    "Infantile onset",
+    "Flexion contracture",
+    "Intellectual disability",
+    "Narrow face",
+    "Coarse facial features",
+    "Failure to thrive",
+    "Osteolysis",
+    "Osteopenia",
+    "Low-set ears",
+    "Thickened skin",
+    "Childhood onset",
+    "Gingival overgrowth",
+    "Arthralgia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

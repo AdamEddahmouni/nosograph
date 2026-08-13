@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'combined oxidative phosphorylation defect type 9 (COMBINED_OXI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of combined oxidative phosphorylation defect type 9
-SYMPTOMS = []
+SYMPTOMS = [
+    "Tubulointerstitial nephritis",
+    "Feeding difficulties",
+    "Elevated serum anion gap",
+    "Autosomal recessive inheritance",
+    "Global developmental delay",
+    "Increased circulating lactate concentration",
+    "Elevated lactate:pyruvate ratio",
+    "Hyperalaninemia",
+    "Patent foramen ovale",
+    "Metabolic acidosis",
+    "Ketoacidosis",
+    "Dyspnea",
+    "Hepatomegaly",
+    "Death in childhood",
+    "Elevated circulating aspartate aminotransferase concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

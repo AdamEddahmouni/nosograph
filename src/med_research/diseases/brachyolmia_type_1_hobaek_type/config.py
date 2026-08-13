@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'brachyolmia type 1, Hobaek type (BRACHYOLMIA_TYPE_1_HOBAEK_TYP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of brachyolmia type 1, Hobaek type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Lumbar hypolordosis",
+    "Sclerotic foci of metaphyses of the elbow",
+    "Opacification of the corneal stroma",
+    "Intervertebral space narrowing",
+    "Autosomal recessive inheritance",
+    "Disproportionate short-trunk short stature",
+    "Intellectual disability",
+    "Short femoral neck",
+    "Back pain",
+    "Flat acetabular roof",
+    "Corneal opacity",
+    "Platyspondyly",
+    "Short iliac bones",
+    "Squared-off platyspondyly",
+    "Osteopenia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

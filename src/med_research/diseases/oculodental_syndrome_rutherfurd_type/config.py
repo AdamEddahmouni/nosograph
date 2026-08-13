@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'oculodental syndrome, Rutherfurd type (OCULODENTAL_SYNDROME_RU
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of oculodental syndrome, Rutherfurd type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Opacification of the corneal stroma",
+    "Autosomal dominant inheritance",
+    "Delayed eruption of primary teeth",
+    "Failure of eruption of permanent teeth",
+    "Corneal dystrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

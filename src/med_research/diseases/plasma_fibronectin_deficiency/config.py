@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'plasma fibronectin deficiency (PLASMA_FIBRONECTIN_DEFICIENCY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of plasma fibronectin deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Reduced circulating fibronectin level",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of alpha-thalassemia-myelodysplastic syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "HbH hemoglobin",
+    "Reduced alpha/beta synthesis ratio",
+    "Myelodysplasia",
+    "Hypochromic microcytic anemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

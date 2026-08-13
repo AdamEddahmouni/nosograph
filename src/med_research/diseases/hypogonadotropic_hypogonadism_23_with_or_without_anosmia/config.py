@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hypogonadotropic hypogonadism 23 with or without anosmia (HYPO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypogonadotropic hypogonadism 23 with or without anosmia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sparse axillary hair",
+    "Decreased serum testosterone concentration",
+    "Androgen insufficiency",
+    "Sparse pubic hair",
+    "Testicular microlithiasis",
+    "Male hypogonadism",
+    "Autosomal recessive inheritance",
+    "Abnormality of the Leydig cells",
+    "Secondary amenorrhea",
+    "Abnormality of the sense of smell",
+    "Micropenis",
+    "Azoospermia",
+    "Early young adult onset",
+    "Gynecomastia",
+    "Oligomenorrhea",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

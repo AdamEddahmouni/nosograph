@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'pulmonary atresia with ventricular septal defect (PULMONARY_AT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pulmonary atresia with ventricular septal defect
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pulmonary artery atresia",
+    "Ventricular septal defect",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

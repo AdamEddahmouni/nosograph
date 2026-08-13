@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'short stature due to partial GHR deficiency (SHORT_STATURE_DUE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of short stature due to partial GHR deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased circulating insulin-like growth factor 1 concentration",
+    "Short stature",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

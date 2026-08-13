@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'complex cortical dysplasia with other brain malformations 7 (C
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of complex cortical dysplasia with other brain malformations 7
-SYMPTOMS = []
+SYMPTOMS = [
+    "Polymicrogyria",
+    "Drooling",
+    "Autosomal dominant inheritance",
+    "Intellectual disability",
+    "Cerebellar vermis hypoplasia",
+    "Infantile spasms",
+    "Unilateral polymicrogyria",
+    "Motor delay",
+    "Hemiparesis",
+    "Microcephaly",
+    "Specific learning disability",
+    "Congenital fibrosis of extraocular muscles",
+    "Agenesis of corpus callosum",
+    "Limited extraocular movements",
+    "Hypoplasia of the corpus callosum",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

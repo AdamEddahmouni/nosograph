@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Clark-Baraitser syndrome (CLARK_BARAITSER_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Clark-Baraitser syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sandal gap",
+    "Widely-spaced maxillary central incisors",
+    "Global developmental delay",
+    "Low-set ears",
+    "X-linked inheritance",
+    "Hypotonia",
+    "Heavy supraorbital ridges",
+    "Delayed speech and language development",
+    "Macrocephaly",
+    "Frontal bossing",
+    "Pointed chin",
+    "Tall stature",
+    "Thick lower lip vermilion",
+    "Hyperactivity",
+    "Sloping forehead",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

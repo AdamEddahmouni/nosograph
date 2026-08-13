@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'erythroleukemia, familial, susceptibility to (ERYTHROLEUKEMIA_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of erythroleukemia, familial, susceptibility to
-SYMPTOMS = []
+SYMPTOMS = [
+    "Typified by incomplete penetrance",
+    "Anemia",
+    "Splenomegaly",
+    "Leukemia",
+    "Thrombocytopenia",
+    "Autosomal dominant inheritance",
+    "Erythroid hyperplasia",
+    "Acute myeloid leukemia",
+    "Hepatomegaly",
+    "Refractory anemia with ringed sideroblasts",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hypoplastic pancreas-intestinal atresia-hypoplastic gallbalder
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypoplastic pancreas-intestinal atresia-hypoplastic gallbalder syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperbilirubinemia",
+    "Diabetes mellitus",
+    "Hyperglycemia",
+    "Meckel diverticulum",
+    "Diarrhea",
+    "Anteriorly placed anus",
+    "Pancreatic hypoplasia",
+    "Biliary atresia",
+    "Autosomal recessive inheritance",
+    "Duodenal atresia",
+    "Intestinal malrotation",
+    "Malabsorption",
+    "Absent gallbladder",
+    "Ascites",
+    "Acholic stools",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'methylmalonic acidemia due to methylmalonyl-CoA epimerase defi
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of methylmalonic acidemia due to methylmalonyl-CoA epimerase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Infantile onset",
+    "Hyperhomocystinemia",
+    "Elevated circulating palmitoleylcarnitine concentration",
+    "Autosomal recessive inheritance",
+    "Dehydration",
+    "Spasticity",
+    "Failure to thrive",
+    "Gastroesophageal reflux",
+    "Metabolic acidosis",
+    "Ketonuria",
+    "Motor delay",
+    "Methylmalonic aciduria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

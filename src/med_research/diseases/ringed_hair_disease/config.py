@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'ringed hair disease (RINGED_HAIR_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ringed hair disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal hair morphology",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neonatal severe primary hyperparathyroidism (NEONATAL_SEVERE_P
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neonatal severe primary hyperparathyroidism
-SYMPTOMS = []
+SYMPTOMS = [
+    "Polyuria",
+    "Aminoaciduria",
+    "Tachypnea",
+    "Autosomal dominant inheritance",
+    "Polydipsia",
+    "Metaphyseal irregularity",
+    "Constipation",
+    "Hypophosphatemia",
+    "Dyspnea",
+    "Feeding difficulties in infancy",
+    "Hyperphosphaturia",
+    "Anemia",
+    "Hepatomegaly",
+    "Hypercalciuria",
+    "Generalized hypotonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

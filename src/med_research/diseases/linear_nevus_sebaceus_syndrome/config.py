@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'nevus (LINEAR_NEVUS_SEBACEUS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of nevus
-SYMPTOMS = []
+SYMPTOMS = [
+    "Melanocytic nevus",
+    "Typified by somatic mosaicism",
+    "Numerous nevi",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

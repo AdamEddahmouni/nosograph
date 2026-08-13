@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'Grant syndrome (GRANT_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Grant syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Micrognathia",
+    "Wormian bones",
+    "Down-sloping shoulders",
+    "Tibial bowing",
+    "Autosomal dominant inheritance",
+    "Blue sclerae",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

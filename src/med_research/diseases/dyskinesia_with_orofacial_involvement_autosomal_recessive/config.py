@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'dyskinesia with orofacial involvement, autosomal recessive (DY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dyskinesia with orofacial involvement, autosomal recessive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dystonia",
+    "Autosomal recessive inheritance",
+    "Frequent falls",
+    "Cardiomyopathy",
+    "Tremor",
+    "Delayed speech and language development",
+    "Axial hypotonia",
+    "Motor delay",
+    "Hypothyroidism",
+    "Dysarthria",
+    "Myoclonus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Juberg-Hayward syndrome (JUBERG_HAYWARD_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Juberg-Hayward syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased response to growth hormone stimulation test",
+    "Anteriorly placed anus",
+    "Horseshoe kidney",
+    "Limited elbow extension",
+    "Highly arched eyebrow",
+    "Short stature",
+    "Abnormal toe morphology",
+    "Autosomal recessive inheritance",
+    "Hypertelorism",
+    "Abnormality of the radial head",
+    "Ptosis",
+    "Abnormal carpal morphology",
+    "Intellectual disability",
+    "Microcephaly",
+    "Aplasia/Hypoplasia of the thumb",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

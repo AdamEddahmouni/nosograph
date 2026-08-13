@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'palmoplantar keratoderma-XX sex reversal-predisposition to squ
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of palmoplantar keratoderma-XX sex reversal-predisposition to squamous cell carcinoma syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ambiguous genitalia",
+    "Sclerodactyly",
+    "Hypertriglyceridemia",
+    "Premature loss of permanent teeth",
+    "Palmoplantar keratoderma",
+    "Palmoplantar hyperhidrosis",
+    "Autosomal recessive inheritance",
+    "Hypercholesterolemia",
+    "Clitoral hypertrophy",
+    "Decreased testicular size",
+    "Hypospadias",
+    "Laryngeal carcinoma",
+    "Small nail",
+    "Gynecomastia",
+    "Ovotestis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

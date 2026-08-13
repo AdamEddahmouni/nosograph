@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Waardenburg-Shah syndrome (WAARDENBURG_SHAH_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Waardenburg-Shah syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Spastic paraparesis",
+    "Congenital onset",
+    "Albinism",
+    "Leukodystrophy",
+    "Cryptorchidism",
+    "Hypogonadism",
+    "Heterochromia iridis",
+    "Abnormal auditory evoked potentials",
+    "Hypotonia",
+    "Total intestinal aganglionosis",
+    "Hearing impairment",
+    "Neonatal death",
+    "Lacrimal gland hypoplasia",
+    "Sensorineural hearing impairment",
+    "Aganglionic megacolon",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

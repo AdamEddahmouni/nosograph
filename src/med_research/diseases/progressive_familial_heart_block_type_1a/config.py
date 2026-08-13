@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'progressive familial heart block, type 1A (PROGRESSIVE_FAMILIA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of progressive familial heart block, type 1A
-SYMPTOMS = []
+SYMPTOMS = [
+    "Complete heart block with broad QRS complexes",
+    "Autosomal dominant inheritance",
+    "Prolonged PR interval",
+    "Sudden cardiac death",
+    "Complete right bundle branch block",
+    "Syncope",
+    "Left anterior fascicular block",
+    "Sudden death",
+    "Left posterior fascicular block",
+    "Dyspnea",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

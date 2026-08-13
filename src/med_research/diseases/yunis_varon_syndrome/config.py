@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Yunis-Varon syndrome (YUNIS_VARON_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Yunis-Varon syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Absent nipple",
+    "Short clavicles",
+    "Sparse scalp hair",
+    "Thin upper lip vermilion",
+    "Large fontanelles",
+    "Small earlobe",
+    "Hypoplastic nipples",
+    "Craniofacial disproportion",
+    "Absent sternal ossification",
+    "Anteverted nares",
+    "Abnormal calvaria morphology",
+    "Hypoplasia of the frontal lobes",
+    "Parietal bossing",
+    "Aplastic clavicle",
+    "Patent foramen ovale",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

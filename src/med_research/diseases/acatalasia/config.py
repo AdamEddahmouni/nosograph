@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'acatalasia (ACATALASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of acatalasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Oral ulcer",
+    "Autosomal recessive inheritance",
+    "Reduced circulating catalase activity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

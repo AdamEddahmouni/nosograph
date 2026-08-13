@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Bartsocas-Papas syndrome 1 (BARTSOCAS_PAPAS_SYNDROME_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Bartsocas-Papas syndrome 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Patent foramen ovale",
+    "Small nail",
+    "Short metacarpal",
+    "Syndactyly",
+    "Inferiorly positioned umbilicus",
+    "Tessier cleft",
+    "Blepharophimosis",
+    "Cleft upper lip",
+    "Hypoplastic male external genitalia",
+    "Corneal ulceration",
+    "Inguinal hernia",
+    "Ablepharon",
+    "Lower eyelid coloboma",
+    "Absent external genitalia",
+    "Bilateral cryptorchidism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

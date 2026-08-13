@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'orofaciodigital syndrome X (OROFACIODIGITAL_SYNDROME_X)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of orofaciodigital syndrome X
-SYMPTOMS = []
+SYMPTOMS = [
+    "Coalescence of tarsal bones",
+    "Depressed nasal bridge",
+    "Retrognathia",
+    "Finger aplasia",
+    "Telecanthus",
+    "Cleft palate",
+    "Preaxial hand polydactyly",
+    "Fibular aplasia",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

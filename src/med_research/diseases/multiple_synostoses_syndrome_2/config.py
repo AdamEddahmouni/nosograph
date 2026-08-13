@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'multiple synostoses syndrome 2 (MULTIPLE_SYNOSTOSES_SYNDROME_2
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of multiple synostoses syndrome 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Tarsal synostosis",
+    "Brachydactyly",
+    "Autosomal dominant inheritance",
+    "Wide nose",
+    "Carpal synostosis",
+    "Vertebral fusion",
+    "Proximal symphalangism",
+    "Talipes equinovarus",
+    "Finger symphalangism",
+    "Humeroradial synostosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

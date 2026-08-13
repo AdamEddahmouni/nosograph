@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'peeling skin syndrome 6 (PEELING_SKIN_SYNDROME_6)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of peeling skin syndrome 6
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dry skin",
+    "Atopic dermatitis",
+    "Scaling skin",
+    "Autosomal recessive inheritance",
+    "Orthokeratosis",
+    "Congenital onset",
+    "Pruritus",
+    "Parakeratosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

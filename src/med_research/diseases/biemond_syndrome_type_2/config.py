@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'Biemond syndrome type 2 (BIEMOND_SYNDROME_TYPE_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Biemond syndrome type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short stature",
+    "Autosomal recessive inheritance",
+    "Hydrocephalus",
+    "Iris coloboma",
+    "Abnormality of the endocrine system",
+    "Intellectual disability",
+    "Preaxial hand polydactyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

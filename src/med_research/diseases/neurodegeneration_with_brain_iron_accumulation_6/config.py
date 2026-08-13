@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neurodegeneration with brain iron accumulation 6 (NEURODEGENER
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neurodegeneration with brain iron accumulation 6
-SYMPTOMS = []
+SYMPTOMS = [
+    "Spastic tetraplegia",
+    "Oromandibular dystonia",
+    "Autosomal recessive inheritance",
+    "Hyporeflexia",
+    "Motor tics",
+    "Childhood onset",
+    "Compulsive behaviors",
+    "Dystonia",
+    "Hypoplasia of the corpus callosum",
+    "Progressive",
+    "Dysarthria",
+    "Depression",
+    "Rigidity",
+    "Delayed ability to walk",
+    "Spastic paraparesis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

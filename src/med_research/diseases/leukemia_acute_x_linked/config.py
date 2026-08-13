@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'leukemia, acute, X-linked (LEUKEMIA_ACUTE_X_LINKED)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of leukemia, acute, X-linked
-SYMPTOMS = []
+SYMPTOMS = [
+    "X-linked inheritance",
+    "Acute leukemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

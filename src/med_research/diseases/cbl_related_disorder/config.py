@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'CBL-related disorder (CBL_RELATED_DISORDER)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of CBL-related disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Fine hair",
+    "Epicanthus",
+    "Low posterior hairline",
+    "Deep philtrum",
+    "Mitral regurgitation",
+    "Ptosis",
+    "Low-set ears",
+    "Microcephaly",
+    "Juvenile myelomonocytic leukemia",
+    "Delayed speech and language development",
+    "Retrognathia",
+    "Finger joint hypermobility",
+    "Short neck",
+    "Anteverted nares",
+    "Aortic valve stenosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

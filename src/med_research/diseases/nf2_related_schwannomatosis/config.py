@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'NF2-related schwannomatosis (NF2_RELATED_SCHWANNOMATOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of NF2-related schwannomatosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Visual loss",
+    "Vertigo",
+    "Cortical cataract",
+    "Inguinal freckling",
+    "Axillary freckling",
+    "Astrocytoma",
+    "Ependymoma",
+    "Personality changes",
+    "Young adult onset",
+    "Juvenile posterior subcapsular lenticular opacities",
+    "Peripheral schwannoma",
+    "Neurofibroma",
+    "Seizure",
+    "Autosomal dominant inheritance",
+    "Lisch nodules",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

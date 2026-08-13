@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spinocerebellar ataxia type 21 (SPINOCEREBELLAR_ATAXIA_TYPE_21
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spinocerebellar ataxia type 21
-SYMPTOMS = []
+SYMPTOMS = [
+    "Middle age onset",
+    "Slow saccadic eye movements",
+    "Delayed CNS myelination",
+    "Hyporeflexia",
+    "Nystagmus",
+    "Childhood onset",
+    "Autosomal dominant inheritance",
+    "Cogwheel rigidity",
+    "Aggressive behavior",
+    "Limb ataxia",
+    "Microsaccadic pursuit",
+    "Progressive cerebellar ataxia",
+    "Hypermetric saccades",
+    "Gait ataxia",
+    "Ataxia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

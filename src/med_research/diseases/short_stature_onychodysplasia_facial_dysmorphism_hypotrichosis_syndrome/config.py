@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'short stature-onychodysplasia-facial dysmorphism-hypotrichosis
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of short stature-onychodysplasia-facial dysmorphism-hypotrichosis syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypoplastic sacrum",
+    "Small for gestational age",
+    "Low hanging columella",
+    "Waddling gait",
+    "Abnormality of the dentition",
+    "Oligozoospermia",
+    "Sparse hair",
+    "Rhizomelia",
+    "Short foot",
+    "Triangular face",
+    "Growth delay",
+    "Diabetes mellitus",
+    "Microcephaly",
+    "Autosomal recessive inheritance",
+    "Prominent nose",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

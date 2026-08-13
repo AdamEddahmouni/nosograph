@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'dystrophic epidermolysis bullosa pruriginosa (DYSTROPHIC_EPIDE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dystrophic epidermolysis bullosa pruriginosa
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Nail dystrophy",
+    "Fragile skin",
+    "Milia",
+    "Nail dysplasia",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

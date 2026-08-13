@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'postaxial tetramelic oligodactyly (POSTAXIAL_TETRAMELIC_OLIGOD
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of postaxial tetramelic oligodactyly
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Postaxial oligodactyly",
+    "Absent fifth metatarsal",
+    "Radial bowing",
+    "Postaxial foot polydactyly",
+    "Aplasia of the 5th metacarpal",
+    "Lunate-triquetral fusion",
+    "Partial-complete absence of 5th phalanges",
+    "Single transverse palmar crease",
+    "Cone-shaped epiphysis",
+    "Postaxial hand polydactyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

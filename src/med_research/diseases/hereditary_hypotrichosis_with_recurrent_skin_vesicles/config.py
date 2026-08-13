@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hereditary hypotrichosis with recurrent skin vesicles (HEREDIT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hereditary hypotrichosis with recurrent skin vesicles
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal EKG",
+    "Sparse eyelashes",
+    "Sparse hair",
+    "Autosomal recessive inheritance",
+    "Skin vesicle",
+    "Follicular hyperkeratosis",
+    "Sparse eyebrow",
+    "Infantile onset",
+    "Leukonychia",
+    "Abnormality of the dentition",
+    "Sparse body hair",
+    "Sparse scalp hair",
+    "Abnormal blistering of the skin",
+    "Angular cheilitis",
+    "Sparse axillary hair",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

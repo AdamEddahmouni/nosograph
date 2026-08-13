@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'vertebral, cardiac, renal, and limb defects syndrome 2 (VERTEB
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of vertebral, cardiac, renal, and limb defects syndrome 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short stature",
+    "Rhizomelia",
+    "Anteriorly placed anus",
+    "Hemivertebrae",
+    "Frontal bossing",
+    "Patent ductus arteriosus",
+    "Delayed speech and language development",
+    "11 pairs of ribs",
+    "Low-set ears",
+    "Depressed nasal bridge",
+    "Narrow chest",
+    "Congenital onset",
+    "Renal hypoplasia",
+    "Vertebral segmentation defect",
+    "Microcephaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

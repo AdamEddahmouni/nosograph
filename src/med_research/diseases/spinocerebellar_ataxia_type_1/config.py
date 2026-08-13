@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spinocerebellar ataxia type 1 (SPINOCEREBELLAR_ATAXIA_TYPE_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spinocerebellar ataxia type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperreflexia",
+    "Dysmetria",
+    "Dysphagia",
+    "Muscle spasm",
+    "Distal amyotrophy",
+    "Decreased motor nerve conduction velocity",
+    "Impaired pain sensation",
+    "Spinocerebellar atrophy",
+    "Gaze-evoked nystagmus",
+    "Olivopontocerebellar atrophy",
+    "Babinski sign",
+    "Spinocerebellar tract degeneration",
+    "Skeletal muscle atrophy",
+    "Optic disc pallor",
+    "Areflexia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

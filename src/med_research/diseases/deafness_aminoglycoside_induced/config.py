@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'deafness, aminoglycoside-induced (DEAFNESS_AMINOGLYCOSIDE_INDU
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of deafness, aminoglycoside-induced
-SYMPTOMS = []
+SYMPTOMS = [
+    "Mitochondrial inheritance",
+    "Aminoglycoside-induced hearing loss",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

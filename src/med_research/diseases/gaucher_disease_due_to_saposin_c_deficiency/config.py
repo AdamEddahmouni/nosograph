@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Gaucher disease due to saposin C deficiency (GAUCHER_DISEASE_D
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Gaucher disease due to saposin C deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Supranuclear gaze palsy",
+    "Seizure",
+    "Status epilepticus",
+    "Horizontal nystagmus",
+    "Bone pain",
+    "Clonic seizure",
+    "Increased cerebral lipofuscin",
+    "Bilateral tonic-clonic seizure with focal onset",
+    "Erlenmeyer flask deformity of the femurs",
+    "Hypocholesterolemia",
+    "Thrombocytopenia",
+    "Myoclonus",
+    "Intention tremor",
+    "Hypersplenism",
+    "Splenomegaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

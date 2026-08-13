@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'RAB23-related Carpenter syndrome (RAB23_RELATED_CARPENTER_SYND
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of RAB23-related Carpenter syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Transposition of the great arteries",
+    "Deviation of finger",
+    "Sensorineural hearing impairment",
+    "Coronal craniosynostosis",
+    "Malar flattening",
+    "Large foramen magnum",
+    "Polysplenia",
+    "Omphalocele",
+    "Cryptorchidism",
+    "Intellectual disability",
+    "Optic atrophy",
+    "Clinodactyly of the 5th finger",
+    "Pseudoepiphyses of the proximal phalanges of the hand",
+    "Low-set ears",
+    "Hydroureter",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

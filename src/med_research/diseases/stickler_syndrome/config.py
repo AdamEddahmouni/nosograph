@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Stickler syndrome (STICKLER_SYNDROME)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Stickler syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Epicanthus",
+    "Short stature",
+    "Childhood onset",
+    "Long fingers",
+    "Myopia",
+    "Hypoplastic iliac wing",
+    "Arthropathy",
+    "Depressed nasal bridge",
+    "Retinal hole",
+    "Glaucoma",
+    "HP_0200065",
+    "Proportionate short stature",
+    "High myopia",
+    "Short femoral neck",
+    "Pes planus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

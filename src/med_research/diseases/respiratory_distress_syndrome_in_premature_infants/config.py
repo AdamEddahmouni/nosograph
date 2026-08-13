@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'respiratory distress syndrome in premature infants (RESPIRATOR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of respiratory distress syndrome in premature infants
-SYMPTOMS = []
+SYMPTOMS = [
+    "Atelectasis",
+    "Disseminated intravascular coagulation",
+    "Dyspnea",
+    "Congenital onset",
+    "Pulmonary edema",
+    "Sporadic",
+    "Non-Mendelian inheritance",
+    "Tachypnea",
+    "Neonatal respiratory distress",
+    "Edema",
+    "Premature birth",
+    "Respiratory distress",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

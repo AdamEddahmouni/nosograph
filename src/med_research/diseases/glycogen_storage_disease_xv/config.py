@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'glycogen storage disease XV (GLYCOGEN_STORAGE_DISEASE_XV)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of glycogen storage disease XV
-SYMPTOMS = []
+SYMPTOMS = [
+    "ST segment elevation",
+    "T-wave inversion",
+    "Muscle weakness",
+    "Paroxysmal ventricular tachycardia",
+    "Autosomal recessive inheritance",
+    "Complete right bundle branch block",
+    "Early young adult onset",
+    "Ventricular fibrillation",
+    "Type 1 muscle fiber predominance",
+    "Cardiomyocyte hypertrophy",
+    "Scapular winging",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

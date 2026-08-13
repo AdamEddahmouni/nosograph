@@ -8,8 +8,10 @@ PIPELINE_LABEL = "Anxiety disorder (ANXIETY_DISORDER)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Anxiety disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Neoplasia of the nasopharynx",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

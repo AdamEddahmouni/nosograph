@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'parkinson disease 25, autosomal recessive early-onset, with im
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of parkinson disease 25, autosomal recessive early-onset, with impaired intellectual development
-SYMPTOMS = []
+SYMPTOMS = [
+    "Disinhibition",
+    "Intellectual disability",
+    "Rigidity",
+    "Bradykinesia",
+    "Autosomal recessive inheritance",
+    "Resting tremor",
+    "Depression",
+    "Restless legs",
+    "Juvenile onset",
+    "Drooling",
+    "Parkinsonism with favorable response to dopaminergic medication",
+    "Anxiety",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

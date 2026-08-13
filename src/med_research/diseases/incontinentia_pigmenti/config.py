@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'incontinentia pigmenti (INCONTINENTIA_PIGMENTI)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of incontinentia pigmenti
-SYMPTOMS = []
+SYMPTOMS = [
+    "Delayed eruption of teeth",
+    "Hypoplasia of the fovea",
+    "Increased total eosinophil count",
+    "Spasticity",
+    "Scarring",
+    "Erythema",
+    "Increased total leukocyte count",
+    "Strabismus",
+    "Optic atrophy",
+    "Hypoplastic nipples",
+    "Alopecia",
+    "Ridged nail",
+    "Hypodontia",
+    "Cataract",
+    "HP_0007850",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

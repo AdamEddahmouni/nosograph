@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Lafora disease (LAFORA_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Lafora disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Visual hallucination",
+    "Autosomal recessive inheritance",
+    "Lafora bodies",
+    "Gait disturbance",
+    "Generalized myoclonic seizure",
+    "Cutaneous photosensitivity",
+    "Dementia",
+    "Rapidly progressive",
+    "Psychosis",
+    "Myoclonus",
+    "Generalized non-motor (absence) seizure",
+    "Focal sensory seizure with visual features",
+    "Bilateral tonic-clonic seizure with focal onset",
+    "Apraxia",
+    "Visual loss",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

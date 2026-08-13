@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'inflammatory bowel disease 1 (INFLAMMATORY_BOWEL_DISEASE_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of inflammatory bowel disease 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Crohn's disease",
+    "Ulcerative colitis",
+    "Abdominal pain",
+    "Growth delay",
+    "Weight loss",
+    "Aphthous ulcer",
+    "Intestinal obstruction",
+    "Diarrhea",
+    "Recurrent aphthous stomatitis",
+    "Inflammation of the large intestine",
+    "Non-Mendelian inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

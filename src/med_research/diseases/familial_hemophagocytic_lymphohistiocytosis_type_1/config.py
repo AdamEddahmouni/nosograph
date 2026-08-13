@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'familial hemophagocytic lymphohistiocytosis type 1 (FAMILIAL_H
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial hemophagocytic lymphohistiocytosis type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated circulating VLDL-C concentration",
+    "Hypoproteinemia",
+    "Hemophagocytosis",
+    "Thrombocytopenia",
+    "Decreased circulating HDL-C concentration",
+    "Anemia",
+    "Ataxia",
+    "Lymphadenopathy",
+    "Generalized edema",
+    "Global developmental delay",
+    "Increased total bilirubin",
+    "Infectious encephalitis",
+    "Elevated circulating LDL-C concentration",
+    "Hypoalbuminemia",
+    "Hepatomegaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

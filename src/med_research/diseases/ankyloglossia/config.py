@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'ankyloglossia (ANKYLOGLOSSIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ankyloglossia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Supernumerary tooth",
+    "Ankyloglossia",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

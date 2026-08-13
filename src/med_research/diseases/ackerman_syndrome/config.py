@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'Ackerman syndrome (ACKERMAN_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Ackerman syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Glaucoma",
+    "Taurodontia",
+    "Autosomal recessive inheritance",
+    "Broad philtrum",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

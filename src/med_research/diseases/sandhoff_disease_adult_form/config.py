@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Sandhoff disease, adult form (SANDHOFF_DISEASE_ADULT_FORM)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Sandhoff disease, adult form
-SYMPTOMS = []
+SYMPTOMS = [
+    "Orthostatic hypotension",
+    "Cardiomegaly",
+    "Impotence",
+    "Exaggerated startle response",
+    "Chronic diarrhea",
+    "Fasciculations",
+    "Hepatomegaly",
+    "Macroglossia",
+    "Coarse facial features",
+    "Skeletal muscle atrophy",
+    "Reduced beta-hexosaminidase B activity",
+    "Abnormal glycosphingolipid metabolism",
+    "Bilateral tonic-clonic seizure",
+    "Ataxia",
+    "Upper motor neuron dysfunction",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

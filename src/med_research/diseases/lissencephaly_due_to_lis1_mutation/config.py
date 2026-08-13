@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'lissencephaly due to LIS1 mutation (LISSENCEPHALY_DUE_TO_LIS1_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lissencephaly due to LIS1 mutation
-SYMPTOMS = []
+SYMPTOMS = [
+    "Secondary microcephaly",
+    "Lissencephaly",
+    "Agyria",
+    "Gray matter heterotopia",
+    "Pachygyria",
+    "Subcortical band heterotopia",
+    "Seizure",
+    "Intellectual disability",
+    "Dilation of Virchow-Robin spaces",
+    "Sporadic",
+    "Global developmental delay",
+    "Abnormal cerebral white matter morphology",
+    "Axial hypotonia",
+    "Hypoplasia of the brainstem",
+    "Ventriculomegaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

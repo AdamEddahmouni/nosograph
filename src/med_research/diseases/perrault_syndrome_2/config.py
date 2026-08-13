@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'Perrault syndrome 2 (PERRAULT_SYNDROME_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Perrault syndrome 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sensorineural hearing impairment",
+    "Autosomal recessive inheritance",
+    "Streak ovary",
+    "Amenorrhea",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

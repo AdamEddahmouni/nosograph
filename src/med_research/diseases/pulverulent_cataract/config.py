@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'pulverulent cataract (PULVERULENT_CATARACT)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pulverulent cataract
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nuclear cataract",
+    "Photophobia",
+    "Zonular cataract",
+    "Nystagmus",
+    "Amblyopia",
+    "Cerulean cataract",
+    "Developmental cataract",
+    "Sutural cataract",
+    "Microcornea",
+    "Autosomal dominant inheritance",
+    "Aculeiform cataract",
+    "Visual impairment",
+    "Nuclear pulverulent cataract",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

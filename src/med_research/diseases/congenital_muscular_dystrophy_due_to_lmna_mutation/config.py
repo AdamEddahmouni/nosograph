@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'congenital muscular dystrophy due to LMNA mutation (CONGENITAL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital muscular dystrophy due to LMNA mutation
-SYMPTOMS = []
+SYMPTOMS = [
+    "Neck muscle weakness",
+    "Axial muscle weakness",
+    "Poor head control",
+    "Proximal upper limb amyotrophy",
+    "Hypotonia",
+    "Paroxysmal atrial fibrillation",
+    "Delayed ability to roll over",
+    "Congenital onset",
+    "Infantile onset",
+    "Talipes",
+    "Feeding difficulties",
+    "Generalized amyotrophy",
+    "Autosomal dominant inheritance",
+    "Paroxysmal atrial tachycardia",
+    "Respiratory insufficiency due to muscle weakness",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

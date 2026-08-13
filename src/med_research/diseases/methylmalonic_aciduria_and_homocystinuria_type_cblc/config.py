@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'methylmalonic aciduria and homocystinuria type cblC (METHYLMAL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of methylmalonic aciduria and homocystinuria type cblC
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperhomocystinemia",
+    "Axial hypotonia",
+    "Cystathioninemia",
+    "Low-set ears",
+    "Failure to thrive",
+    "Small for gestational age",
+    "Confusion",
+    "Juvenile onset",
+    "Hepatomegaly",
+    "Hematuria",
+    "Methylmalonic aciduria",
+    "High forehead",
+    "Renal insufficiency",
+    "Global developmental delay",
+    "Decreased circulating adenosylcobalamin concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

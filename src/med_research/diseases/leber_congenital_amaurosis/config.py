@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Leber congenital amaurosis (LEBER_CONGENITAL_AMAUROSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Leber congenital amaurosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hepatomegaly",
+    "Decreased light- and dark-adapted electroretinogram amplitude",
+    "Strabismus",
+    "Visual field defect",
+    "Severely reduced visual acuity",
+    "Abnormal macular pigmentation",
+    "Growth delay",
+    "Macular atrophy",
+    "Hyperthreoninuria",
+    "Photophobia",
+    "Horizontal nystagmus",
+    "Macular hypopigmentation",
+    "Peripheral retinal atrophy",
+    "Constriction of peripheral visual field",
+    "Falls",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'postaxial acrofacial dysostosis (POSTAXIAL_ACROFACIAL_DYSOSTOS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of postaxial acrofacial dysostosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Midgut malrotation",
+    "Cupped ear",
+    "Low-set ears",
+    "Radioulnar synostosis",
+    "Choanal atresia",
+    "Syndactyly",
+    "Abnormal foot morphology",
+    "Conductive hearing impairment",
+    "Supernumerary nipple",
+    "Short thumb",
+    "Postnatal growth retardation",
+    "Supernumerary vertebrae",
+    "Congenital hip dislocation",
+    "Pectus excavatum",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

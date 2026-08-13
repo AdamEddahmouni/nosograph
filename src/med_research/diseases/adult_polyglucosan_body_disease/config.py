@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'adult polyglucosan body disease (ADULT_POLYGLUCOSAN_BODY_DISEA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of adult polyglucosan body disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Tetraparesis",
+    "Urinary incontinence",
+    "Increased CSF protein concentration",
+    "Slowly progressive",
+    "Abnormal cerebral white matter morphology",
+    "Orthostatic hypotension",
+    "Peripheral axonal neuropathy",
+    "Middle age onset",
+    "Abnormal upper motor neuron morphology",
+    "Spastic paraplegia",
+    "Gait disturbance",
+    "Muscle spasm",
+    "Paresthesia",
+    "Autosomal recessive inheritance",
+    "Absent Achilles reflex",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

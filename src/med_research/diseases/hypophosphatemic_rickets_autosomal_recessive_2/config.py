@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hypophosphatemic rickets, autosomal recessive, 2 (HYPOPHOSPHAT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypophosphatemic rickets, autosomal recessive, 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Carious teeth",
+    "Elevated circulating alkaline phosphatase concentration",
+    "Delayed skeletal maturation",
+    "Autosomal recessive inheritance",
+    "Coxa valga",
+    "Juvenile onset",
+    "Medullary nephrocalcinosis",
+    "Childhood onset",
+    "Genu varum",
+    "Genu valgum",
+    "Hypoplasia of teeth",
+    "Hyperphosphaturia",
+    "Pulmonic stenosis",
+    "Hypophosphatemic rickets",
+    "Short stature",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

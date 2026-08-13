@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'ovarian dysgenesis 10 (OVARIAN_DYSGENESIS_10)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ovarian dysgenesis 10
-SYMPTOMS = []
+SYMPTOMS = [
+    "Premature ovarian insufficiency",
+    "Hypoplasia of the ovary",
+    "Elevated circulating follicle stimulating hormone level",
+    "Decreased serum estradiol",
+    "Autosomal recessive inheritance",
+    "Elevated circulating luteinizing hormone level",
+    "Delayed puberty",
+    "Streak ovary",
+    "Primary amenorrhea",
+    "Juvenile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

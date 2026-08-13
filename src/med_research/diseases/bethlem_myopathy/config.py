@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Bethlem myopathy (BETHLEM_MYOPATHY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Bethlem myopathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Respiratory insufficiency due to muscle weakness",
+    "Limb-girdle muscle weakness",
+    "Axial muscle weakness",
+    "Scoliosis",
+    "Childhood onset",
+    "Arthralgia",
+    "Centrally nucleated skeletal muscle fibers",
+    "Tip-toe gait",
+    "Ankle contracture",
+    "Distal joint hypermobility",
+    "Slowly progressive",
+    "Skin rash",
+    "EMG: myopathic abnormalities",
+    "Areflexia",
+    "Hip dislocation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

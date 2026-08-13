@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'immunodeficiency 18 (IMMUNODEFICIENCY_18)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 18
-SYMPTOMS = []
+SYMPTOMS = [
+    "HP_0045080",
+    "Abnormal lymphocyte count",
+    "Reduced total natural killer cell count",
+    "Decreased total CD4+ T cell proportion",
+    "Decreased total lymphocyte count",
+    "Autosomal recessive inheritance",
+    "Infantile onset",
+    "HP_0030253",
+    "Childhood onset",
+    "Abnormal circulating IgG concentration",
+    "Decreased circulating IgM concentration",
+    "Chronic decreased circulating IgA concentration",
+    "Recurrent gastroenteritis",
+    "Immunodeficiency",
+    "Recurrent respiratory infections",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

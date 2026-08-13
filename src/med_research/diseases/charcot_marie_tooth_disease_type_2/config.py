@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Charcot-Marie-Tooth disease type 2 (CHARCOT_MARIE_TOOTH_DISEAS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Charcot-Marie-Tooth disease type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormally high-pitched voice",
+    "Waddling gait",
+    "Pes planus",
+    "Decreased amplitude of sensory action potentials",
+    "Fasciculations",
+    "Babinski sign",
+    "Impaired distal vibration sensation",
+    "Somatic sensory dysfunction",
+    "Global developmental delay",
+    "Myokymia",
+    "Sensorimotor neuropathy",
+    "Pyloric stenosis",
+    "Steppage gait",
+    "Childhood onset",
+    "Peripheral neuropathy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

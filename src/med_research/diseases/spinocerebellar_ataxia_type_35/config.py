@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spinocerebellar ataxia type 35 (SPINOCEREBELLAR_ATAXIA_TYPE_35
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spinocerebellar ataxia type 35
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pseudobulbar paralysis",
+    "Hyperreflexia",
+    "Incoordination",
+    "Dysarthria",
+    "Middle age onset",
+    "Babinski sign",
+    "Autosomal dominant inheritance",
+    "Intention tremor",
+    "Neck muscle weakness",
+    "Gait disturbance",
+    "Torticollis",
+    "Slow saccadic eye movements",
+    "Loss of ambulation",
+    "Slowly progressive",
+    "Impaired proprioception",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

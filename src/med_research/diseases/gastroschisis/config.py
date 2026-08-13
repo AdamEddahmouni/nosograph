@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'gastroschisis (GASTROSCHISIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of gastroschisis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Non-Mendelian inheritance",
+    "Abdominal wall defect",
+    "Autosomal recessive inheritance",
+    "Gastroschisis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

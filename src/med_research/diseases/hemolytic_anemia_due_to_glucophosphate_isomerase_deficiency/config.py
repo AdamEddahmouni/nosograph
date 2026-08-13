@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'hemolytic anemia due to glucophosphate isomerase deficiency (H
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hemolytic anemia due to glucophosphate isomerase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Intellectual disability",
+    "Jaundice",
+    "Autosomal recessive inheritance",
+    "Cholecystitis",
+    "Splenomegaly",
+    "Muscle weakness",
+    "Ataxia",
+    "Decreased glucosephosphate isomerase level",
+    "Pigment gallstones",
+    "Spontaneous hemolytic crises",
+    "Cholelithiasis",
+    "Sensory ataxia",
+    "Impaired neutrophil bactericidal activity",
+    "Nonspherocytic hemolytic anemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'early-onset Lafora body disease (EARLY_ONSET_LAFORA_BODY_DISEA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of early-onset Lafora body disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Psychosis",
+    "Paranoia",
+    "Lafora bodies",
+    "Mutism",
+    "Ataxia",
+    "Autosomal recessive inheritance",
+    "Hallucinations",
+    "Spastic tetraplegia",
+    "Myoclonus",
+    "Spasticity",
+    "Urinary incontinence",
+    "Variable expressivity",
+    "Seizure",
+    "Cognitive impairment",
+    "Progressive",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

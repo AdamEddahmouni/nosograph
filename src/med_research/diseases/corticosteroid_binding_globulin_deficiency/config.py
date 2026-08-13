@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'corticosteroid-binding globulin deficiency (CORTICOSTEROID_BIN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of corticosteroid-binding globulin deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Fatigue",
+    "Adult onset",
+    "Decreased urinary potassium",
+    "Hypertension",
+    "Autosomal recessive inheritance",
+    "Anemia",
+    "Autosomal dominant inheritance",
+    "Hypokalemia",
+    "Asthenia",
+    "Hypotension",
+    "Decreased circulating cortisol level",
+    "Decreased circulating corticosteroid-binding globulin concentration",
+    "Increased muscle fatiguability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

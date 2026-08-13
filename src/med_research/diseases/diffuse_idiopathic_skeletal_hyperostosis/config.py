@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'diffuse idiopathic skeletal hyperostosis (DIFFUSE_IDIOPATHIC_S
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of diffuse idiopathic skeletal hyperostosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Punctate palmar hyperkeratosis",
+    "Vertebral hyperostosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

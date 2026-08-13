@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Pelger-Huet anomaly (PELGER_HUET_ANOMALY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Pelger-Huet anomaly
-SYMPTOMS = []
+SYMPTOMS = [
+    "Kyphosis",
+    "Median cleft palate",
+    "Pes cavus",
+    "Thrombocytopenia",
+    "Prominent forehead",
+    "Upper limb undergrowth",
+    "Hyposegmentation of neutrophil nuclei",
+    "Recurrent otitis media",
+    "Eczematoid dermatitis",
+    "Gingival overgrowth",
+    "Autosomal dominant inheritance",
+    "Abnormality of neutrophils",
+    "Foot dorsiflexor weakness",
+    "Polydactyly",
+    "Short 4th metacarpal",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

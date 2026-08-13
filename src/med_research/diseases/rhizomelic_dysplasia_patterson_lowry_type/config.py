@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'rhizomelic dysplasia, Patterson-Lowry type (RHIZOMELIC_DYSPLAS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of rhizomelic dysplasia, Patterson-Lowry type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short humerus",
+    "Coxa vara",
+    "Deformed humeral heads",
+    "Short metacarpal",
+    "Short metatarsal",
+    "Brachydactyly",
+    "Autosomal recessive inheritance",
+    "Platyspondyly",
+    "Rhizomelia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

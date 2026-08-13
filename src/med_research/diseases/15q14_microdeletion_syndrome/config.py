@@ -8,8 +8,23 @@ PIPELINE_LABEL = '15q14 microdeletion syndrome (15Q14_MICRODELETION_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of 15q14 microdeletion syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Highly arched eyebrow",
+    "Everted lower lip vermilion",
+    "Congenital onset",
+    "Pointed chin",
+    "High forehead",
+    "Low-set ears",
+    "Cleft lip",
+    "Global developmental delay",
+    "Intellectual disability",
+    "Autosomal dominant inheritance",
+    "Short philtrum",
+    "Ventricular septal defect",
+    "Moderate intellectual disability",
+    "Posteriorly rotated ears",
+    "Hypotonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

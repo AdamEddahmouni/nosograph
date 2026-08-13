@@ -8,8 +8,13 @@ PIPELINE_LABEL = "AL amyloidosis (LIGHT_CHAIN_DEPOSITION)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of AL amyloidosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Amyloid deposition",
+    "Multiple myeloma",
+    "Paraproteinemia",
+    "Typified by somatic mosaicism",
+    "Adult onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

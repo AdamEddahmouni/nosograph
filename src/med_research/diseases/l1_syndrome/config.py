@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'L1 syndrome (L1_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of L1 syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Adducted thumb",
+    "Macrocephaly",
+    "Pes planus",
+    "Inferior cerebellar vermis hypoplasia",
+    "Second trimester onset",
+    "Interhemispheric cyst",
+    "Spasticity",
+    "Spastic paraplegia",
+    "Shuffling gait",
+    "Lower limb spasticity",
+    "Pes cavus",
+    "Kyphosis",
+    "Aphasia",
+    "Agenesis of corpus callosum",
+    "Hydrocephalus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

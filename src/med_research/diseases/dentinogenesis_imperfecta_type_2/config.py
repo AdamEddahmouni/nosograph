@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'dentinogenesis imperfecta type 2 (DENTINOGENESIS_IMPERFECTA_TY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dentinogenesis imperfecta type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Yellow-brown discoloration of the teeth",
+    "Dentinogenesis imperfecta",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

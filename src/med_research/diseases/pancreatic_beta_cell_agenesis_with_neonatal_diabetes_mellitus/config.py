@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'pancreatic beta cell agenesis with neonatal diabetes mellitus 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pancreatic beta cell agenesis with neonatal diabetes mellitus
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal abdomen morphology",
+    "Autosomal recessive inheritance",
+    "Neonatal insulin-dependent diabetes mellitus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

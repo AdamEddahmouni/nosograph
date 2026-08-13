@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'myopathy (ALPHA_B_CRYSTALLIN_RELATED_LATE_ONSET_DISTAL_MYOPATH
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of myopathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Young adult onset",
+    "Waddling gait",
+    "X-linked dominant inheritance",
+    "Skeletal muscle atrophy",
+    "Forearm supination contracture",
+    "Achilles tendon contracture",
+    "Elevated circulating creatine kinase activity",
+    "Complete right bundle branch block",
+    "Scapuloperoneal myopathy",
+    "Proximal muscle weakness",
+    "Steppage gait",
+    "Middle age onset",
+    "Hyporeflexia",
+    "Lower limb muscle weakness",
+    "Knee flexion contracture",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

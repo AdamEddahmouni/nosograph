@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'metachondromatosis (METACHONDROMATOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of metachondromatosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal joint morphology",
+    "Posteriorly rotated ears",
+    "Webbed neck",
+    "Multiple exostoses",
+    "Pulmonic stenosis",
+    "Multiple digital exostoses",
+    "Downslanted palpebral fissures",
+    "Autosomal dominant inheritance",
+    "Hypertelorism",
+    "Bowing of the long bones",
+    "Intellectual disability",
+    "Multiple enchondromatosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

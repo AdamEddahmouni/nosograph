@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'giant axonal neuropathy 2 (GIANT_AXONAL_NEUROPATHY_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of giant axonal neuropathy 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Steppage gait",
+    "Areflexia",
+    "EMG: chronic denervation signs",
+    "Impaired distal tactile sensation",
+    "Autosomal dominant inheritance",
+    "Decreased motor nerve conduction velocity",
+    "Hammertoe",
+    "Hyporeflexia",
+    "Pes cavus",
+    "Distal amyotrophy",
+    "Onion bulb formation",
+    "Peripheral axonal neuropathy",
+    "Distal muscle weakness",
+    "Impaired distal vibration sensation",
+    "Cardiomyopathy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked syndromic intellectual disability
-SYMPTOMS = []
+SYMPTOMS = [
+    "Failure to thrive",
+    "Feeding difficulties in infancy",
+    "Open mouth",
+    "Bruxism",
+    "Sleep-wake cycle disturbance",
+    "Patent ductus arteriosus",
+    "Microretrognathia",
+    "Hypertrichosis",
+    "Long philtrum",
+    "Severe infection",
+    "Rod-cone dystrophy",
+    "Clinodactyly of the 5th finger",
+    "Lower limb asymmetry",
+    "Depression",
+    "Synophrys",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

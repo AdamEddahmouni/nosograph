@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'dystonia 12 (DYSTONIA_12)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dystonia 12
-SYMPTOMS = []
+SYMPTOMS = [
+    "Torticollis",
+    "Bradykinesia",
+    "Anxiety",
+    "Autosomal dominant inheritance",
+    "Drooling",
+    "Unsteady gait",
+    "Hypomimic face",
+    "Parkinsonism",
+    "Childhood onset",
+    "Bulbar signs",
+    "Dysphagia",
+    "Emotional lability",
+    "Mutism",
+    "Typified by incomplete penetrance",
+    "Depression",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

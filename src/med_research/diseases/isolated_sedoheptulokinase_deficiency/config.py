@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'isolated sedoheptulokinase deficiency (ISOLATED_SEDOHEPTULOKIN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of isolated sedoheptulokinase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Increased urinary sedoheptulose",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

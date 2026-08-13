@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'temporal lobe epilepsy (TEMPORAL_LOBE_EPILEPSY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of temporal lobe epilepsy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Juvenile onset",
+    "Focal aware sensory seizure with auditory features",
+    "Autosomal dominant inheritance",
+    "Bilateral tonic-clonic seizure with focal onset",
+    "Focal aware autonomic seizure with epigastric sensation/nausea/vomiting/other gastrointestinal phenomena",
+    "Typified by incomplete penetrance",
+    "Focal aware cognitive seizure with forced thinking",
+    "Focal impaired awareness seizure",
+    "Deja vu aura",
+    "Focal sensory seizure with auditory features",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'schizencephaly (SCHIZENCEPHALY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of schizencephaly
-SYMPTOMS = []
+SYMPTOMS = [
+    "Agenesis of corpus callosum",
+    "Schizencephaly",
+    "Cerebral cortical atrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

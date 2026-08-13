@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'van der Woude syndrome 1 (VAN_DER_WOUDE_SYNDROME_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of van der Woude syndrome 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Congenital onset",
+    "Lower lip pit",
+    "Cleft palate",
+    "Hypodontia",
+    "Bifid uvula",
+    "Cleft upper lip",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

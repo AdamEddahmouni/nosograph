@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spinocerebellar ataxia type 10 (SPINOCEREBELLAR_ATAXIA_TYPE_10
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spinocerebellar ataxia type 10
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dysarthria",
+    "Urinary incontinence",
+    "Typified by incomplete penetrance",
+    "Depression",
+    "Limb fasciculations",
+    "Abnormal pyramidal tract morphology",
+    "Seizure",
+    "Autosomal dominant inheritance",
+    "Abnormal pyramidal sign",
+    "Impaired smooth pursuit",
+    "Dysdiadochokinesis",
+    "Polyneuropathy",
+    "Urinary urgency",
+    "Dysmetria",
+    "Genetic anticipation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

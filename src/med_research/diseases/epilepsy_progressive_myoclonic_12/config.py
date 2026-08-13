@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'epilepsy, progressive myoclonic, 12 (EPILEPSY_PROGRESSIVE_MYOC
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of epilepsy, progressive myoclonic, 12
-SYMPTOMS = []
+SYMPTOMS = [
+    "Bilateral tonic-clonic seizure",
+    "Juvenile onset",
+    "Ataxia",
+    "Depression",
+    "Gait disturbance",
+    "Myoclonus",
+    "Dysarthria",
+    "Young adult onset",
+    "Attention deficit hyperactivity disorder",
+    "Autosomal recessive inheritance",
+    "Anxiety",
+    "Mental deterioration",
+    "Dysmetria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

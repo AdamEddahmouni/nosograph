@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'MRCS syndrome (MRCS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of MRCS syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormality of chorioretinal pigmentation",
+    "Nystagmus",
+    "Pigmentary retinopathy",
+    "Dyschromatopsia",
+    "Vitreous hemorrhage",
+    "Glaucoma",
+    "Blindness",
+    "Developmental cataract",
+    "Pulverulent cataract",
+    "Posterior staphyloma",
+    "Retinal detachment",
+    "Focal retinal arteriolar constriction",
+    "Microphthalmia",
+    "Color vision defect",
+    "Retinal arteriolar occlusion",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

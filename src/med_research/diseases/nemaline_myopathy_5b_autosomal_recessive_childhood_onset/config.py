@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'nemaline myopathy 5B, autosomal recessive, childhood-onset (NE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of nemaline myopathy 5B, autosomal recessive, childhood-onset
-SYMPTOMS = []
+SYMPTOMS = [
+    "Scoliosis",
+    "Wrist flexion contracture",
+    "Increased variability in muscle fiber diameter",
+    "Gowers sign",
+    "Congenital onset",
+    "Rhabdomyolysis",
+    "Difficulty climbing stairs",
+    "Elevated circulating creatine kinase activity",
+    "Reduced forced vital capacity",
+    "Delayed gross motor development",
+    "Autosomal recessive inheritance",
+    "Ankle contracture",
+    "Minicore myopathy",
+    "Neck flexor weakness",
+    "Limb-girdle muscle weakness",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

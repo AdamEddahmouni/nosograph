@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'preterm premature rupture of the membranes (PRETERM_PREMATURE_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of preterm premature rupture of the membranes
-SYMPTOMS = []
+SYMPTOMS = [
+    "Polygenic inheritance",
+    "Young adult onset",
+    "Premature rupture of membranes",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

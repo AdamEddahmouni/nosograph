@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'EAST syndrome (EAST_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of EAST syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Renal potassium wasting",
+    "Intention tremor",
+    "Increased circulating aldosterone concentration",
+    "Intellectual disability",
+    "Dysdiadochokinesis",
+    "Seizure",
+    "Delayed speech and language development",
+    "Short stature",
+    "Autosomal recessive inheritance",
+    "Polydipsia",
+    "Generalized hypotonia",
+    "Elevated serum bicarbonate concentration",
+    "Cerebellar atrophy",
+    "Chronic axonal neuropathy",
+    "Increased circulating renin concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

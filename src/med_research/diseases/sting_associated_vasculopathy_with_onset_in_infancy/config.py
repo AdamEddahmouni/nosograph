@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'STING-associated vasculopathy with onset in infancy (STING_ASS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of STING-associated vasculopathy with onset in infancy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Skin rash",
+    "Increased circulating IgG concentration",
+    "Tachypnea",
+    "Cutis marmorata",
+    "Nail dystrophy",
+    "Nailfold capillary tortuosity",
+    "Joint stiffness",
+    "Failure to thrive",
+    "Thrombocytosis",
+    "Anemia",
+    "Infantile onset",
+    "Autosomal dominant inheritance",
+    "Neonatal onset",
+    "Malar rash",
+    "Rheumatoid factor positive",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

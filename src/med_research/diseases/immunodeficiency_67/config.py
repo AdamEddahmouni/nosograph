@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'immunodeficiency 67 (IMMUNODEFICIENCY_67)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 67
-SYMPTOMS = []
+SYMPTOMS = [
+    "Infantile onset",
+    "Abnormal total B cell count",
+    "Autosomal recessive inheritance",
+    "Childhood onset",
+    "Recurrent streptococcal infections",
+    "Abnormal total T cell number",
+    "Transiently decreased total neutrophil count",
+    "Increased circulating IgE concentration",
+    "Immunodeficiency",
+    "Abnormal total natural killer cell count",
+    "Meningitis",
+    "Complete or near-complete absence of specific antibody response to unconjugated pneumococcus polysaccharide",
+    "Liver abscess",
+    "Septic arthritis",
+    "Recurrent staphylococcal infections",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Coffin-Siris syndrome 1 (COFFIN_SIRIS_SYNDROME_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Coffin-Siris syndrome 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ventricular septal defect",
+    "Hypertrichosis",
+    "Hypospadias",
+    "Gait ataxia",
+    "Joint hypermobility",
+    "Renal hypoplasia",
+    "Single transverse palmar crease",
+    "Sparse scalp hair",
+    "Prominent interphalangeal joints",
+    "Partial agenesis of the corpus callosum",
+    "Myopia",
+    "Patent ductus arteriosus",
+    "Preauricular skin tag",
+    "Delayed CNS myelination",
+    "Microcephaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

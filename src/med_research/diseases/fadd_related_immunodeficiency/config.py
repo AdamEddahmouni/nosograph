@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'FADD-related immunodeficiency (FADD_RELATED_IMMUNODEFICIENCY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of FADD-related immunodeficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Encephalopathy",
+    "Increased circulating interleukin 10 concentration",
+    "Death in childhood",
+    "Portal inflammation",
+    "Seizure",
+    "Elevated circulating alanine aminotransferase concentration",
+    "Cerebral atrophy",
+    "Hepatic bridging fibrosis",
+    "Pulmonary artery atresia",
+    "Autosomal recessive inheritance",
+    "Howell-Jolly bodies",
+    "Recurrent infections",
+    "Left superior vena cava draining directly to the left atrium",
+    "Ventricular septal defect",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

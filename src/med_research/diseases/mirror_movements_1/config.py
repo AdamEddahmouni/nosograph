@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'mirror movements 1 (MIRROR_MOVEMENTS_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mirror movements 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Typified by incomplete penetrance",
+    "Bimanual synkinesia",
+    "Infantile onset",
+    "Agenesis of corpus callosum",
+    "Mild intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

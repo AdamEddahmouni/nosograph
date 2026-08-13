@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autosomal dominant Alport syndrome (AUTOSOMAL_DOMINANT_ALPORT_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal dominant Alport syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sensorineural hearing impairment",
+    "Autosomal dominant inheritance",
+    "Anterior polar cataract",
+    "Glomerulonephritis",
+    "Nephrocalcinosis",
+    "Hypophosphatemia",
+    "Azotemia",
+    "Microscopic hematuria",
+    "Nephrotic syndrome",
+    "Myopia",
+    "Hypertension",
+    "Stage 5 chronic kidney disease",
+    "Nephritis",
+    "Renal insufficiency",
+    "Glomerular basement membrane lamellation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

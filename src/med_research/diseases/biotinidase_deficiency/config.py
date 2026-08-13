@@ -8,8 +8,23 @@ PIPELINE_LABEL = "biotinidase deficiency (BIOTINIDASE_DEFICIENCY)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of biotinidase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Global developmental delay",
+    "Feeding difficulties in infancy",
+    "Diarrhea",
+    "Diffuse cerebellar atrophy",
+    "Apnea",
+    "Splenomegaly",
+    "Diffuse cerebral atrophy",
+    "Optic atrophy",
+    "Conjunctivitis",
+    "Infantile onset",
+    "Tachypnea",
+    "Lethargy",
+    "Metabolic ketoacidosis",
+    "Hyperammonemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

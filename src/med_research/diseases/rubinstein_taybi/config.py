@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Rubinstein-Taybi syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Postnatal growth retardation",
+    "Short attention span",
+    "Hypertelorism",
+    "Deeply set eye",
+    "Hyperactivity",
+    "Neoplasm",
+    "Micrognathia",
+    "Facial grimacing",
+    "Broad eyebrow",
+    "Delayed speech and language development",
+    "Broad thumb",
+    "Growth delay",
+    "Clinodactyly of the 5th finger",
+    "Deviated nasal septum",
+    "Intestinal malrotation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

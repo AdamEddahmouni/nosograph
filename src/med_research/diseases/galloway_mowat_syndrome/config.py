@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Galloway-Mowat syndrome (GALLOWAY_MOWAT_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Galloway-Mowat syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Periventricular leukomalacia",
+    "Arachnodactyly",
+    "Plagiocephaly",
+    "Cerebellar vermis atrophy",
+    "Visual impairment",
+    "Abnormal facial shape",
+    "Hand clenching",
+    "Prominent glabella",
+    "Ptosis",
+    "Large face",
+    "Epicanthus",
+    "Hypoplasia of the corpus callosum",
+    "Cerebral atrophy",
+    "Macrotia",
+    "Micrognathia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

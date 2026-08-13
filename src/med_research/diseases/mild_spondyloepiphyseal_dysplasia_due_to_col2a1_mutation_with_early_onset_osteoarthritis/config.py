@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'mild spondyloepiphyseal dysplasia due to COL2A1 mutation with 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mild spondyloepiphyseal dysplasia due to COL2A1 mutation with early-onset osteoarthritis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Platyspondyly",
+    "Joint stiffness",
+    "Schmorl's node",
+    "Beaking of vertebral bodies",
+    "Autosomal dominant inheritance",
+    "Irregular vertebral endplates",
+    "Hip osteoarthritis",
+    "Arthralgia",
+    "Juvenile onset",
+    "Young adult onset",
+    "Knee osteoarthritis",
+    "Short stature",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

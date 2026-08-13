@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'cataract 40 (CATARACT_40)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cataract 40
-SYMPTOMS = []
+SYMPTOMS = [
+    "Severely reduced visual acuity",
+    "Sutural cataract",
+    "X-linked inheritance",
+    "Nuclear cataract",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

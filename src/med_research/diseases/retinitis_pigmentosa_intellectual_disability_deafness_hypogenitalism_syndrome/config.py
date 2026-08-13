@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'retinitis pigmentosa-intellectual disability-deafness-hypogeni
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of retinitis pigmentosa-intellectual disability-deafness-hypogenitalism syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormality of the ear",
+    "Pigmentary retinopathy",
+    "Insulin-resistant diabetes mellitus",
+    "Elevated circulating hepatic transaminase concentration",
+    "Secondary amenorrhea",
+    "Broad palm",
+    "Dry skin",
+    "Intellectual disability",
+    "Gynecomastia",
+    "Cerebellar atrophy",
+    "Rod-cone dystrophy",
+    "Autosomal recessive inheritance",
+    "Acanthosis nigricans",
+    "Cerebral atrophy",
+    "Nystagmus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

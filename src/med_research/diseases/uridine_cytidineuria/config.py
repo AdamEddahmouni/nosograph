@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'uridine-cytidineuria (URIDINE_CYTIDINEURIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of uridine-cytidineuria
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Elevated urinary uridine level",
+    "Elevated urinary cytidine",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'endometrial neoplasm (ENDOMETRIAL_NEOPLASM)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of endometrial neoplasm
-SYMPTOMS = []
+SYMPTOMS = [
+    "Typified by somatic mosaicism",
+    "Autosomal dominant inheritance",
+    "Endometrial carcinoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

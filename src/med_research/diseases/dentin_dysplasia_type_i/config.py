@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'dentin dysplasia type I (DENTIN_DYSPLASIA_TYPE_I)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dentin dysplasia type I
-SYMPTOMS = []
+SYMPTOMS = [
+    "Microdontia",
+    "Periapical bone loss",
+    "Pulp obliteration",
+    "Oligodontia",
+    "Taurodontia",
+    "Enamel hypoplasia",
+    "Autosomal recessive inheritance",
+    "Short dental root",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

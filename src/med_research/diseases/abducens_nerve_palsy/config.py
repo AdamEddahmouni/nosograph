@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'abducens nerve palsy (ABDUCENS_NERVE_PALSY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of abducens nerve palsy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Strabismus",
+    "Autosomal dominant inheritance",
+    "Abducens palsy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

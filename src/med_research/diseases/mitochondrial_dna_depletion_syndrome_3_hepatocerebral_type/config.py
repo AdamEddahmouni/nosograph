@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mitochondrial DNA depletion syndrome 3 (hepatocerebral type) (
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mitochondrial DNA depletion syndrome 3 (hepatocerebral type)
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nystagmus",
+    "Failure to thrive",
+    "Decreased activity of mitochondrial complex I",
+    "Polyneuropathy",
+    "Generalized aminoaciduria",
+    "Periportal fibrosis",
+    "Micronodular cirrhosis",
+    "Encephalopathy",
+    "Decreased activity of mitochondrial complex IV",
+    "Elevated circulating hepatic transaminase concentration",
+    "Jaundice",
+    "Splenomegaly",
+    "Seizure",
+    "Hypoalbuminemia",
+    "Hyperbilirubinemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

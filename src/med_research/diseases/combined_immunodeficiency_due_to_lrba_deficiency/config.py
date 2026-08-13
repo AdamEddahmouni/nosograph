@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'combined immunodeficiency due to LRBA deficiency (COMBINED_IMM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of combined immunodeficiency due to LRBA deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased circulating IgM concentration",
+    "Vitiligo",
+    "Recurrent sinusitis",
+    "Splenomegaly",
+    "Autosomal recessive inheritance",
+    "Lymphoproliferative disorder",
+    "Villous atrophy",
+    "Colitis",
+    "Uveitis",
+    "Atrophic gastritis",
+    "Autoimmune hemolytic anemia",
+    "Chronic diarrhea",
+    "Generalized lymphadenopathy",
+    "Pneumonia",
+    "Decreased circulating IgA concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

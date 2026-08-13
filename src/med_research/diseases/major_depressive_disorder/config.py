@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'major depressive disorder (MAJOR_DEPRESSIVE_DISORDER)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of major depressive disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Polygenic inheritance",
+    "Depression",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

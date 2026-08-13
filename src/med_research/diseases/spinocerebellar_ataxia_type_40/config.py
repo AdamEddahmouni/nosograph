@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Spinocerebellar ataxia type 40 (SPINOCEREBELLAR_ATAXIA_TYPE_40
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Spinocerebellar ataxia type 40
-SYMPTOMS = []
+SYMPTOMS = [
+    "Unsteady gait",
+    "Intention tremor",
+    "Dysdiadochokinesis",
+    "Scanning speech",
+    "Dysmetria",
+    "Pontocerebellar atrophy",
+    "Middle age onset",
+    "Spastic paraparesis",
+    "Slowly progressive",
+    "Tremor",
+    "Gait ataxia",
+    "Dysarthria",
+    "Broad-based gait",
+    "Ankle clonus",
+    "Hyperreflexia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

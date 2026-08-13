@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'primary hyperoxaluria type 1 (PRIMARY_HYPEROXALURIA_TYPE_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of primary hyperoxaluria type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Arterial occlusion",
+    "Atrioventricular block",
+    "Infantile onset",
+    "Autosomal recessive inheritance",
+    "Increased bone mineral density",
+    "Reduced hepatic alanine-glyoxylate aminotransferase activity",
+    "Choroidal neovascularization",
+    "Intermittent claudication",
+    "Renal insufficiency",
+    "Hyperoxaluria",
+    "Optic atrophy",
+    "Retinopathy",
+    "Bone pain",
+    "Pathologic fracture",
+    "Gangrene",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

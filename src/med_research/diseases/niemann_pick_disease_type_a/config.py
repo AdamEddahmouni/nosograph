@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Niemann-Pick disease type A (NIEMANN_PICK_DISEASE_TYPE_A)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Niemann-Pick disease type A
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated circulating alanine aminotransferase concentration",
+    "Osteoporosis",
+    "Protuberant abdomen",
+    "Cherry red spot of the macula",
+    "Developmental regression",
+    "Elevated circulating aspartate aminotransferase concentration",
+    "Inability to walk",
+    "Bone-marrow foam cells",
+    "Xanthomatosis",
+    "Splenomegaly",
+    "Macrocephaly",
+    "Muscle weakness",
+    "Hepatomegaly",
+    "Failure to thrive",
+    "Microcytic anemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

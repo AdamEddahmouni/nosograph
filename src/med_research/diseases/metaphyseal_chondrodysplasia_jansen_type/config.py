@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'metaphyseal chondrodysplasia, Jansen type (METAPHYSEAL_CHONDRO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of metaphyseal chondrodysplasia, Jansen type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Knee flexion contracture",
+    "Hyperphosphaturia",
+    "Short ribs",
+    "Hypercalciuria",
+    "Micrognathia",
+    "Autosomal dominant inheritance",
+    "Hypercalcemia",
+    "Waddling gait",
+    "Severe short stature",
+    "Short long bone",
+    "Hypoparathyroidism",
+    "Thick skull base",
+    "Nephrocalcinosis",
+    "Osteopenia",
+    "Proptosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

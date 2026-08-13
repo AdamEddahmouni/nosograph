@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'ulna metaphyseal dysplasia syndrome (ULNA_METAPHYSEAL_DYSPLASI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ulna metaphyseal dysplasia syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Coxa valga",
+    "Delayed skeletal maturation",
+    "Hypercalcemia",
+    "Wrist pain",
+    "Abnormality of the vertebral column",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

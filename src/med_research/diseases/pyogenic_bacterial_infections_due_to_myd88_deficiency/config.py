@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'pyogenic bacterial infections due to MyD88 deficiency (PYOGENI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pyogenic bacterial infections due to MyD88 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sepsis",
+    "Lymphadenitis",
+    "Abnormal total natural killer cell count",
+    "Delayed umbilical cord separation",
+    "Decreased total T cell count",
+    "Septic arthritis",
+    "Abscess",
+    "Recurrent skin infections",
+    "Autosomal recessive inheritance",
+    "Decreased total B cell count",
+    "Recurrent meningitis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

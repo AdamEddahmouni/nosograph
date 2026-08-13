@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Roussy-Levy syndrome (ROUSSY_LEVY_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Roussy-Levy syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Segmental peripheral demyelination/remyelination",
+    "Motor delay",
+    "Hyporeflexia",
+    "Kyphoscoliosis",
+    "Distal amyotrophy",
+    "Action tremor",
+    "Abnormality of the immune system",
+    "Slowly progressive",
+    "Onion bulb formation",
+    "Decreased motor nerve conduction velocity",
+    "Areflexia",
+    "Distal muscle weakness",
+    "Hypertrophic nerve changes",
+    "Pes cavus",
+    "Gait ataxia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

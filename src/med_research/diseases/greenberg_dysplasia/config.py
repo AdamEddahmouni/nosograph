@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Greenberg dysplasia (GREENBERG_DYSPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Greenberg dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short ribs",
+    "Toxemia of pregnancy",
+    "Ulnar deviation of the hand",
+    "Antenatal onset",
+    "Epiphyseal stippling",
+    "Metaphyseal cupping",
+    "Horizontal sacrum",
+    "Barrel-shaped chest",
+    "Long clavicle",
+    "Protuberant abdomen",
+    "Narrow chest",
+    "Hypoplasia of the maxilla",
+    "Postaxial foot polydactyly",
+    "Talipes",
+    "Hepatomegaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

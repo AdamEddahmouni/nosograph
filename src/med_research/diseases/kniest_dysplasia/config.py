@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Kniest dysplasia (KNIEST_DYSPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Kniest dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Flared metaphysis",
+    "Pectus excavatum",
+    "Malar flattening",
+    "Abnormal cartilage collagen",
+    "Platyspondyly",
+    "Umbilical hernia",
+    "Gait disturbance",
+    "Inguinal hernia",
+    "Enlarged joints",
+    "Delayed epiphyseal ossification",
+    "Conductive hearing impairment",
+    "Rhizomelia",
+    "Cataract",
+    "Depressed nasal bridge",
+    "Retinal detachment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

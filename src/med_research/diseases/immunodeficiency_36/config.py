@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'immunodeficiency 36 (IMMUNODEFICIENCY_36)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 36
-SYMPTOMS = []
+SYMPTOMS = [
+    "Growth delay",
+    "Decreased circulating IgA concentration",
+    "Decreased circulating IgG concentration",
+    "Bronchiectasis",
+    "Recurrent bacterial infections",
+    "Childhood onset",
+    "Decreased total lymphocyte count",
+    "Short stature",
+    "Chronic diarrhea",
+    "Autoimmunity",
+    "Recurrent upper respiratory tract infections",
+    "Increased transitional B cell proportion",
+    "B-cell lymphoma",
+    "Decreased naive CD8+ T cell proportion",
+    "Chronic lymphatic leukemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

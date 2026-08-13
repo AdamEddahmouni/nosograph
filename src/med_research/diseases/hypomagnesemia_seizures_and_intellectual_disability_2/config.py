@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hypomagnesemia, seizures, and intellectual disability 2 (HYPOM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypomagnesemia, seizures, and intellectual disability 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Self-biting",
+    "Nephrocalcinosis",
+    "Hypomagnesemia",
+    "Hyperactivity",
+    "Renal potassium wasting",
+    "Generalized-onset seizure",
+    "Status epilepticus",
+    "Autosomal dominant inheritance",
+    "Seizure",
+    "Ventriculomegaly",
+    "Polyuria",
+    "Neonatal onset",
+    "Infantile onset",
+    "Renal magnesium wasting",
+    "Global developmental delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

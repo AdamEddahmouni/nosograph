@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'pretibial dystrophic epidermolysis bullosa (PRETIBIAL_DYSTROPH
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pretibial dystrophic epidermolysis bullosa
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pretibial blistering",
+    "Pruritus",
+    "Autosomal dominant inheritance",
+    "Nail dystrophy",
+    "Atrophic scars",
+    "Hyperkeratosis",
+    "Juvenile onset",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

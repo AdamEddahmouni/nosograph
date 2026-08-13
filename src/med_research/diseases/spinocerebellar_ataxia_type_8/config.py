@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spinocerebellar ataxia type 8 (SPINOCEREBELLAR_ATAXIA_TYPE_8)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spinocerebellar ataxia type 8
-SYMPTOMS = []
+SYMPTOMS = [
+    "Progressive cerebellar ataxia",
+    "Dysphagia",
+    "Dysmetric saccades",
+    "Slow saccadic eye movements",
+    "Peripheral neuropathy",
+    "Tremor",
+    "Sensory neuropathy",
+    "Autosomal dominant inheritance",
+    "Incoordination",
+    "Cerebellar atrophy",
+    "Nystagmus",
+    "Spasticity",
+    "Dysarthria",
+    "Impaired smooth pursuit",
+    "Abnormal pyramidal tract morphology",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

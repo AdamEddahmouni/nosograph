@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'X-linked hydrocephalus with stenosis of the aqueduct of Sylviu
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked hydrocephalus with stenosis of the aqueduct of Sylvius
-SYMPTOMS = []
+SYMPTOMS = [
+    "Spasticity",
+    "Macrocephaly",
+    "Adducted thumb",
+    "Spastic paraplegia",
+    "Intellectual disability",
+    "Agenesis of corpus callosum",
+    "Aqueductal stenosis",
+    "Corticospinal tract hypoplasia",
+    "Thumb contracture",
+    "Hydrocephalus",
+    "X-linked recessive inheritance",
+    "Absent septum pellucidum",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

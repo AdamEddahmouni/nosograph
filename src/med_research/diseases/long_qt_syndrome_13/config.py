@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'long QT syndrome 13 (LONG_QT_SYNDROME_13)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of long QT syndrome 13
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Reduced left ventricular ejection fraction",
+    "Prolonged QTc interval",
+    "Congestive heart failure",
+    "Syncope",
+    "Palpitations",
+    "Torsade de pointes",
+    "Pulmonary embolism",
+    "Permanent atrial fibrillation",
+    "Cardiac arrest",
+    "Atrioventricular block",
+    "Neonatal onset",
+    "Early young adult onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

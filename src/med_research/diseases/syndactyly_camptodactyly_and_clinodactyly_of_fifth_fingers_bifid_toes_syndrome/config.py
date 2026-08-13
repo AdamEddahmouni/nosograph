@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'syndactyly-camptodactyly and clinodactyly of fifth fingers-bif
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of syndactyly-camptodactyly and clinodactyly of fifth fingers-bifid toes syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Adducted thumb",
+    "Camptodactyly",
+    "Ankylosis",
+    "Short thumb",
+    "Short foot",
+    "Short palm",
+    "Short metacarpal",
+    "Autosomal dominant inheritance",
+    "Clinodactyly",
+    "Syndactyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

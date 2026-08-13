@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Catifa syndrome (CATIFA_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Catifa syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Developmental cataract",
+    "Intellectual disability",
+    "Attention deficit hyperactivity disorder",
+    "Anteverted nares",
+    "Cleft palate",
+    "Long philtrum",
+    "Global developmental delay",
+    "Inguinal hernia",
+    "Strabismus",
+    "Cleft lip",
+    "Sleep disturbance",
+    "Epicanthus",
+    "Long face",
+    "Camptodactyly",
+    "Amblyopia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

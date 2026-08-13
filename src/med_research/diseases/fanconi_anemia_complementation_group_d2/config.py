@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Fanconi anemia complementation group D2 (FANCONI_ANEMIA_COMPLE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Fanconi anemia complementation group D2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Duplicated collecting system",
+    "Tracheoesophageal fistula",
+    "Low-set ears",
+    "Aplasia of the 1st metacarpal",
+    "Bruising susceptibility",
+    "Hypergonadotropic hypogonadism",
+    "Hypertelorism",
+    "Reticulocytopenia",
+    "Renal agenesis",
+    "Pancytopenia",
+    "Hypoplasia of the corpus callosum",
+    "Attention deficit hyperactivity disorder",
+    "Hearing impairment",
+    "Microphthalmia",
+    "Cryptorchidism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

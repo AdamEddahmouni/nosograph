@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'subacute sclerosing panencephalitis (SUBACUTE_SCLEROSING_PANEN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of subacute sclerosing panencephalitis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Infectious encephalitis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

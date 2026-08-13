@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'LAMB2-related infantile-onset nephrotic syndrome (LAMB2_RELATE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of LAMB2-related infantile-onset nephrotic syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pigmentary retinopathy",
+    "Stage 5 chronic kidney disease",
+    "Nystagmus",
+    "Microphthalmia",
+    "Nephrotic syndrome",
+    "Diffuse mesangial sclerosis",
+    "Intellectual disability",
+    "Glomerulonephritis",
+    "Myopia",
+    "Rod-cone dystrophy",
+    "Renal interstitial foam cells",
+    "Optic atrophy",
+    "Focal segmental glomerulosclerosis",
+    "Congenital onset",
+    "Retinal detachment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

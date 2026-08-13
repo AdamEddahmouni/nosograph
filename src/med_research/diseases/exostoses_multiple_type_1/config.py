@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of exostoses, multiple, type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pelvic bone exostoses",
+    "Juvenile onset",
+    "Madelung-like forearm deformities",
+    "Peripheral nerve compression",
+    "Short stature",
+    "Autosomal dominant inheritance",
+    "Protuberances at ends of long bones",
+    "Coxa vara",
+    "Chondrosarcoma",
+    "Cervical myelopathy",
+    "Scapular exostoses",
+    "Multiple exostoses",
+    "Genu valgum",
+    "Childhood onset",
+    "Short metacarpal",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

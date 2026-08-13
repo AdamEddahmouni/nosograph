@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'X-linked myopathy with excessive autophagy (X_LINKED_MYOPATHY_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked myopathy with excessive autophagy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated circulating creatine kinase activity",
+    "Muscle fiber necrosis",
+    "Intellectual disability",
+    "Myopathy",
+    "Typified by incomplete penetrance",
+    "Proximal lower limb muscle weakness",
+    "Skeletal muscle atrophy",
+    "Skeletal muscle autophagosome accumulation",
+    "Neonatal hypotonia",
+    "Proximal lower limb amyotrophy",
+    "Myotonia",
+    "Abnormality of the cardiovascular system",
+    "Motor delay",
+    "Childhood onset",
+    "Difficulty running",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

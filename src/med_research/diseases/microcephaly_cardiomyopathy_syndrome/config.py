@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'microcephaly-cardiomyopathy syndrome (MICROCEPHALY_CARDIOMYOPA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of microcephaly-cardiomyopathy syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Microcephaly",
+    "Sandal gap",
+    "Intellectual disability",
+    "Dilated cardiomyopathy",
+    "Clinodactyly of the 5th finger",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

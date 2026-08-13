@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'BH4-deficient hyperphenylalaninemia A (BH4_DEFICIENT_HYPERPHEN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of BH4-deficient hyperphenylalaninemia A
-SYMPTOMS = []
+SYMPTOMS = [
+    "Feeding difficulties",
+    "Global developmental delay",
+    "Bradykinesia",
+    "Tremor",
+    "Rigidity",
+    "Small for gestational age",
+    "Limb hypertonia",
+    "Excessive daytime somnolence",
+    "Seizure",
+    "Neonatal onset",
+    "Progressive neurologic deterioration",
+    "Excessive salivation",
+    "Microcephaly",
+    "Parkinsonism",
+    "Axial hypotonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

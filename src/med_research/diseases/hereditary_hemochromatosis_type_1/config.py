@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hereditary hemochromatosis type 1 (HEREDITARY_HEMOCHROMATOSIS_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hereditary hemochromatosis type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cirrhosis",
+    "Amenorrhea",
+    "Impotence",
+    "Autosomal recessive inheritance",
+    "Glucose intolerance",
+    "Azoospermia",
+    "Splenomegaly",
+    "Cardiomyopathy",
+    "Testicular atrophy",
+    "Osteoporosis",
+    "Abdominal pain",
+    "Hepatomegaly",
+    "Hepatocellular carcinoma",
+    "Elevated circulating hepatic transaminase concentration",
+    "Increased circulating ferritin concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

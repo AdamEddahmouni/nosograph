@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'immune system disease (SEA_BLUE_HISTIOCYTOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immune system disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autoimmune antibody positivity",
+    "Autosomal dominant inheritance",
+    "Autoimmunity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

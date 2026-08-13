@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Rett syndrome (RETT_SYNDROME)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Rett syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Secondary microcephaly",
+    "Seizure",
+    "Bruxism",
+    "Skeletal muscle atrophy",
+    "Truncal ataxia",
+    "Spasticity",
+    "Kyphosis",
+    "Abnormal T-wave",
+    "Dystonia",
+    "Scoliosis",
+    "Autistic behavior",
+    "Gait apraxia",
+    "Developmental regression",
+    "Abnormality of the dentition",
+    "Constipation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

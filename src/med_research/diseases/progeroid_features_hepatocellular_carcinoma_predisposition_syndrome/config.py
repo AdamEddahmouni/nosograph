@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'progeroid features-hepatocellular carcinoma predisposition syn
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of progeroid features-hepatocellular carcinoma predisposition syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Bulbous nose",
+    "Short stature",
+    "Posterior subcapsular cataract",
+    "Delayed skeletal maturation",
+    "Skeletal muscle atrophy",
+    "Down-sloping shoulders",
+    "Premature graying of hair",
+    "Clinodactyly",
+    "Decreased body weight",
+    "Sparse hair",
+    "Micrognathia",
+    "Autosomal recessive inheritance",
+    "Lipodystrophy",
+    "Pectus excavatum",
+    "Single transverse palmar crease",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

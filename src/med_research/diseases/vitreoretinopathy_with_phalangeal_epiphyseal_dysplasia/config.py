@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'vitreoretinopathy with phalangeal epiphyseal dysplasia (VITREO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of vitreoretinopathy with phalangeal epiphyseal dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Hip osteoarthritis",
+    "Rhegmatogenous retinal detachment",
+    "Abnormal epiphysis morphology of the phalanges of the hand",
+    "Brachydactyly",
+    "Short stature",
+    "Lattice retinal degeneration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

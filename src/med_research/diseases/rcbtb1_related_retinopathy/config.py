@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'RCBTB1-related retinopathy (RCBTB1_RELATED_RETINOPATHY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of RCBTB1-related retinopathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Secondary amenorrhea",
+    "Juvenile onset",
+    "Reduced visual acuity",
+    "Adult onset",
+    "Premature ovarian insufficiency",
+    "Mild intellectual disability",
+    "Goiter",
+    "Autosomal recessive inheritance",
+    "Pulmonary fibrosis",
+    "Retinal dystrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

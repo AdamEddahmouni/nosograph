@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mucopolysaccharidosis-plus syndrome (MUCOPOLYSACCHARIDOSIS_PLU
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mucopolysaccharidosis-plus syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Delayed CNS myelination",
+    "Prominent forehead",
+    "Respiratory distress",
+    "Macrovesicular hepatic steatosis",
+    "Hypoalbuminemia",
+    "Flared iliac wing",
+    "Hypertrophic cardiomyopathy",
+    "Atrial septal defect",
+    "Short neck",
+    "Sepsis",
+    "Large forehead",
+    "Coarse facial features",
+    "Decreased total neutrophil count",
+    "Low anterior hairline",
+    "Hirsutism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

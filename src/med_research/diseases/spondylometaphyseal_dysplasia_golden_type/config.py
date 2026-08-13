@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spondylometaphyseal dysplasia, Golden type (SPONDYLOMETAPHYSEA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondylometaphyseal dysplasia, Golden type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Mild intellectual disability",
+    "Abnormal speech pattern",
+    "Enlarged joints",
+    "Platyspondyly",
+    "X-linked inheritance",
+    "Knee flexion contracture",
+    "Respiratory insufficiency",
+    "Wide nasal bridge",
+    "Spondylometaphyseal dysplasia",
+    "Nystagmus",
+    "Thoracolumbar scoliosis",
+    "Mild global developmental delay",
+    "Abnormal nail morphology",
+    "Hypertelorism",
+    "Sclerosis of skull base",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

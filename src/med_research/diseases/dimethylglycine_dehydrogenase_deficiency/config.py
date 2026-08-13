@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'dimethylglycine dehydrogenase deficiency (DIMETHYLGLYCINE_DEHY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dimethylglycine dehydrogenase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Elevated urinary N,N-dimethylglycine level",
+    "Elevated circulating creatine kinase activity",
+    "Increased muscle fatiguability",
+    "Elevated circulating N,N-dimethylglycine concentration",
+    "Fish odor",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

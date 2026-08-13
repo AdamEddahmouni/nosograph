@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'lethal short-limb skeletal dysplasia, Al Gazali type (LETHAL_S
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lethal short-limb skeletal dysplasia, Al Gazali type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Wide anterior fontanel",
+    "Bilateral talipes equinovarus",
+    "Lethal skeletal dysplasia",
+    "Atresia of the external auditory canal",
+    "Platyspondyly",
+    "Limb undergrowth",
+    "Macrocephaly",
+    "Shortening of all phalanges of fingers",
+    "Shortening of all metacarpals",
+    "Autosomal recessive inheritance",
+    "Mesomelia",
+    "Wormian bones",
+    "Opacification of the corneal stroma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'isotretinoin-like syndrome (ISOTRETINOIN_LIKE_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of isotretinoin-like syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Conotruncal defect",
+    "Hydrocephalus",
+    "Anotia",
+    "Microtia",
+    "Autosomal recessive inheritance",
+    "Cleft palate",
+    "Micrognathia",
+    "Abnormal posterior cranial fossa morphology",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

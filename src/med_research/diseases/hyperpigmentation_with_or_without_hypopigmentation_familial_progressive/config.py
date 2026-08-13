@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'hyperpigmentation with or without hypopigmentation, familial p
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hyperpigmentation with or without hypopigmentation, familial progressive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Multiple lentigines",
+    "Infantile onset",
+    "Hypopigmented skin patches",
+    "Vitiligo",
+    "Autosomal dominant inheritance",
+    "Progressive hyperpigmentation",
+    "Hyperkeratosis",
+    "Cafe-au-lait spot",
+    "Hypermelanotic macule",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

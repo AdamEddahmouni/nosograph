@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'prostate adenocarcinoma (PROSTATE_ADENOCARCINOMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of prostate adenocarcinoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Prostate cancer",
+    "Autosomal dominant inheritance",
+    "Typified by somatic mosaicism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

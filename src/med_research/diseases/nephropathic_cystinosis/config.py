@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of nephropathic cystinosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Metabolic acidosis",
+    "Bone marrow cystine accumulation",
+    "Exocrine pancreatic insufficiency",
+    "Metaphyseal widening",
+    "Short stature",
+    "Reduced visual acuity",
+    "Failure to thrive in infancy",
+    "Reduced blood urea nitrogen",
+    "Oral motor hypotonia",
+    "Myopathy",
+    "Delayed puberty",
+    "Decreased circulating carnitine concentration",
+    "Retinopathy",
+    "Blindness",
+    "Hepatomegaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

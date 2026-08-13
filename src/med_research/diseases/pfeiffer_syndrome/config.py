@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Pfeiffer syndrome (PFEIFFER_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Pfeiffer syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hydrocephalus",
+    "Shortening of all middle phalanges of the fingers",
+    "Broad thumb",
+    "Syndactyly",
+    "Broad hallux",
+    "Finger syndactyly",
+    "Downslanted palpebral fissures",
+    "Humeroradial synostosis",
+    "Intellectual disability",
+    "Choanal atresia",
+    "Hypertelorism",
+    "Autosomal dominant inheritance",
+    "Tracheal cartilaginous sleeve",
+    "Cloverleaf skull",
+    "Shallow orbits",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

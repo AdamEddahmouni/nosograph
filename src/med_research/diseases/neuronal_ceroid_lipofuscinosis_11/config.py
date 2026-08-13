@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'neuronal ceroid lipofuscinosis 11 (NEURONAL_CEROID_LIPOFUSCINO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neuronal ceroid lipofuscinosis 11
-SYMPTOMS = []
+SYMPTOMS = [
+    "EEG with generalized polyspikes",
+    "Rapidly progressive",
+    "Ataxia",
+    "Intermediate young adult onset",
+    "Cerebellar atrophy",
+    "Autosomal recessive inheritance",
+    "Visual impairment",
+    "Generalized myoclonic seizure",
+    "Mental deterioration",
+    "Retinal dystrophy",
+    "Seizure",
+    "Optic atrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

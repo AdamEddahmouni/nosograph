@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'cardiomyopathy, dilated, 2I (CARDIOMYOPATHY_DILATED_2I)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cardiomyopathy, dilated, 2I
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Juvenile onset",
+    "Supraventricular tachycardia",
+    "Childhood onset",
+    "Dilated cardiomyopathy",
+    "Severely reduced left ventricular ejection fraction",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neurodevelopmental disorder with epilepsy and hypoplasia of th
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neurodevelopmental disorder with epilepsy and hypoplasia of the corpus callosum
-SYMPTOMS = []
+SYMPTOMS = [
+    "Delayed gross motor development",
+    "Hyperactivity",
+    "Inability to walk",
+    "Developmental regression",
+    "Delayed speech and language development",
+    "Global developmental delay",
+    "Hypotonia",
+    "Tremor",
+    "Cerebellar vermis hypoplasia",
+    "Autosomal recessive inheritance",
+    "Tonic seizure",
+    "Absent speech",
+    "Delayed fine motor development",
+    "Vegetative state",
+    "Gait disturbance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

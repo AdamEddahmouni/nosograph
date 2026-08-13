@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'parastremmatic dwarfism (PARASTREMMATIC_DWARFISM)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of parastremmatic dwarfism
-SYMPTOMS = []
+SYMPTOMS = [
+    "Scoliosis",
+    "Intellectual disability",
+    "Genu valgum",
+    "Short neck",
+    "Severe short stature",
+    "Autosomal dominant inheritance",
+    "Infantile onset",
+    "Bowing of the long bones",
+    "Flexion contracture",
+    "Kyphosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

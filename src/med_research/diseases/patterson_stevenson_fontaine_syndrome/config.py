@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'Patterson-Stevenson-Fontaine syndrome (PATTERSON_STEVENSON_FON
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Patterson-Stevenson-Fontaine syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormality of the ear",
+    "Cleft palate",
+    "Split foot",
+    "Toe syndactyly",
+    "Micrognathia",
+    "Autosomal dominant inheritance",
+    "Split hand",
+    "Mandibulofacial dysostosis",
+    "Malar flattening",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'maternally-inherited diabetes and deafness (MATERNALLY_INHERIT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of maternally-inherited diabetes and deafness
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal vestibular function",
+    "Sensorineural hearing impairment",
+    "Retinal degeneration",
+    "Vertigo",
+    "Unsteady gait",
+    "Ptosis",
+    "Cardiomyopathy",
+    "Constriction of peripheral visual field",
+    "External ophthalmoplegia",
+    "Dysarthria",
+    "Type II diabetes mellitus",
+    "Pigmentary retinopathy",
+    "Mitochondrial inheritance",
+    "Hyperglycemia",
+    "Seizure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

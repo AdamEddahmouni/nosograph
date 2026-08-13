@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'Becker nevus syndrome (BECKER_NEVUS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Becker nevus syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nevus",
+    "Cervical ribs",
+    "Unilateral breast hypoplasia",
+    "Hemivertebrae",
+    "Scoliosis",
+    "Pectus excavatum",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

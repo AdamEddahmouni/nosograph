@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'Camptodactyly-arthropathy-coxa-vara-pericarditis syndrome (CAM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Camptodactyly-arthropathy-coxa-vara-pericarditis syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Flattened metacarpal heads",
+    "Generalized morning stiffness",
+    "Wrist flexion contracture",
+    "Arthropathy",
+    "Congenital finger flexion contractures",
+    "Constrictive pericarditis",
+    "Arthritis",
+    "Autosomal recessive inheritance",
+    "Coxa vara",
+    "Flattened metatarsal heads",
+    "Synovial lining hyperplasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

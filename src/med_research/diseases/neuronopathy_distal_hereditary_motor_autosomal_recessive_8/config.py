@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'neuronopathy, distal hereditary motor, autosomal recessive 8 (
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neuronopathy, distal hereditary motor, autosomal recessive 8
-SYMPTOMS = []
+SYMPTOMS = [
+    "Distal lower limb muscle weakness",
+    "Decreased amplitude of sensory action potentials",
+    "Autosomal recessive inheritance",
+    "Impaired pain sensation",
+    "Scoliosis",
+    "Proximal lower limb muscle weakness",
+    "Elevated circulating sorbitol concentration",
+    "Pes cavus",
+    "Distal upper limb muscle weakness",
+    "Impaired vibratory sensation",
+    "Gait disturbance",
+    "Decreased motor nerve conduction velocity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

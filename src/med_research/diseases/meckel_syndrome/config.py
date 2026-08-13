@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Meckel syndrome (MECKEL_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Meckel syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ventriculomegaly",
+    "Hypertelorism",
+    "Atrial septal defect",
+    "Single umbilical artery",
+    "Ambiguous genitalia, female",
+    "Asplenia",
+    "Epicanthus",
+    "Iris coloboma",
+    "Seizure",
+    "Bifid uvula",
+    "Cystic hygroma",
+    "Foot polydactyly",
+    "Micrognathia",
+    "Rocker bottom foot",
+    "Short neck",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

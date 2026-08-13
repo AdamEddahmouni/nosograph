@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'alveolar capillary dysplasia with misalignment of pulmonary ve
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of alveolar capillary dysplasia with misalignment of pulmonary veins
-SYMPTOMS = []
+SYMPTOMS = [
+    "Patent foramen ovale",
+    "Dilatation of the renal pelvis",
+    "Dilatation of the bladder",
+    "Ventricular septal defect",
+    "Cleft palate",
+    "Micrognathia",
+    "Global developmental delay",
+    "Syringomyelia",
+    "Tracheoesophageal fistula",
+    "Neonatal death",
+    "Nonimmune hydrops fetalis",
+    "Atrioventricular canal defect",
+    "Coarctation of aorta",
+    "Cleft lip",
+    "Pulmonary lymphangiectasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

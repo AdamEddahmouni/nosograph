@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Zimmermann-Laband syndrome (ZIMMERMANN_LABAND_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Zimmermann-Laband syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Long eyelashes",
+    "Widow's peak",
+    "Short stature",
+    "HP_0005807",
+    "Short distal phalanx of toe",
+    "Wide nasal bridge",
+    "Long hallux",
+    "Low anterior hairline",
+    "Seizure",
+    "Thick vermilion border",
+    "Prominent nasal septum",
+    "Thick eyebrow",
+    "Generalized hypotonia",
+    "Gastroesophageal reflux",
+    "Clinodactyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

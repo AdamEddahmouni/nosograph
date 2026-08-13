@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'amyotrophic lateral sclerosis-parkinsonism-dementia complex (A
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of amyotrophic lateral sclerosis-parkinsonism-dementia complex
-SYMPTOMS = []
+SYMPTOMS = [
+    "Parkinsonism",
+    "Middle age onset",
+    "Amyotrophic lateral sclerosis",
+    "Muscle spasm",
+    "Bulbar palsy",
+    "Paralysis",
+    "Autosomal dominant inheritance",
+    "Dementia",
+    "Muscle weakness",
+    "Cerebral atrophy",
+    "Abnormal lower motor neuron morphology",
+    "Late onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'familial renal glucosuria (FAMILIAL_RENAL_GLUCOSURIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial renal glucosuria
-SYMPTOMS = []
+SYMPTOMS = [
+    "Polydipsia",
+    "Autosomal dominant inheritance",
+    "Polyphagia",
+    "Enuresis nocturna",
+    "Glycosuria",
+    "Variable expressivity",
+    "Autosomal recessive inheritance",
+    "Polyuria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

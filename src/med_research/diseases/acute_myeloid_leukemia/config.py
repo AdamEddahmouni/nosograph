@@ -8,8 +8,11 @@ PIPELINE_LABEL = "Acute myeloid leukemia (ACUTE_MYELOID_LEUKEMIA)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Acute myeloid leukemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Acute myeloid leukemia",
+    "Typified by somatic mosaicism",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

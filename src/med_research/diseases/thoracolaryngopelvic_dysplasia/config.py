@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'thoracolaryngopelvic dysplasia (THORACOLARYNGOPELVIC_DYSPLASIA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of thoracolaryngopelvic dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Laryngeal stenosis",
+    "Bell-shaped thorax",
+    "Slender build",
+    "Metaphyseal widening",
+    "Hypoplastic pelvis",
+    "Short stature",
+    "Narrow pelvis bone",
+    "Scoliosis",
+    "Horizontal ribs",
+    "Pregnancy history",
+    "Short ribs",
+    "Irregular chondrocostal junctions",
+    "Hypoplastic iliac wing",
+    "Neonatal respiratory distress",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Charcot-Marie-Tooth disease, axonal, mitochondrial form, 1 (CH
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Charcot-Marie-Tooth disease, axonal, mitochondrial form, 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased activity of mitochondrial complex I",
+    "Mitochondrial hypertrophy",
+    "Equinovarus deformity",
+    "Sensory ataxia",
+    "Impaired vibratory sensation",
+    "Gait disturbance",
+    "Distal lower limb muscle weakness",
+    "Mitochondrial inheritance",
+    "Thenar muscle atrophy",
+    "Distal lower limb amyotrophy",
+    "Hyperreflexia",
+    "Distal upper limb muscle weakness",
+    "Pes cavus",
+    "Sensorimotor neuropathy",
+    "Decreased activity of mitochondrial complex IV",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'proteasome-associated autoinflammatory syndrome 2 (PROTEASOME_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of proteasome-associated autoinflammatory syndrome 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Failure to thrive",
+    "Neutrophilic infiltration of the skin",
+    "Annular cutaneous lesion",
+    "Recurrent bacterial infections",
+    "Increased circulating IgG concentration",
+    "Thrombocytopenia",
+    "Elevated erythrocyte sedimentation rate",
+    "Subcutaneous nodule",
+    "Lymphadenopathy",
+    "Anti-thyroglobulin antibody positivity",
+    "Autosomal dominant inheritance",
+    "Lipodystrophy",
+    "Neonatal onset",
+    "Elevated circulating C-reactive protein concentration",
+    "Skin rash",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

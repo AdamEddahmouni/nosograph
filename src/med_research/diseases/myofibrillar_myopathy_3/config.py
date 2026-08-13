@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'myofibrillar myopathy 3 (MYOFIBRILLAR_MYOPATHY_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of myofibrillar myopathy 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated circulating creatine kinase activity",
+    "Muscle stiffness",
+    "Hyporeflexia of lower limbs",
+    "Achilles tendon contracture",
+    "Autosomal dominant inheritance",
+    "Proximal muscle weakness",
+    "Distal amyotrophy",
+    "Muscle fiber cytoplasmatic inclusion bodies",
+    "Myofibrillar myopathy",
+    "Progressive distal muscle weakness",
+    "Increased variability in muscle fiber diameter",
+    "Polyneuropathy",
+    "Adult onset",
+    "Myalgia",
+    "Slowly progressive",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

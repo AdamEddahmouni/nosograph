@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'immunodeficiency-centromeric instability-facial anomalies synd
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency-centromeric instability-facial anomalies syndrome 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short nose",
+    "Pneumonia",
+    "Failure to thrive",
+    "Anteverted nares",
+    "Increased circulating IgM concentration",
+    "Malabsorption",
+    "Sinusitis",
+    "Flat face",
+    "Malar flattening",
+    "Hypertelorism",
+    "Autosomal recessive inheritance",
+    "Reduced total natural killer cell count",
+    "Micrognathia",
+    "Epicanthus",
+    "Protruding tongue",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'Finnish upper limb-onset distal myopathy (FINNISH_UPPER_LIMB_O
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Finnish upper limb-onset distal myopathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Distal muscle weakness",
+    "EMG: myopathic abnormalities",
+    "Late-onset proximal muscle weakness",
+    "Mildly elevated creatine kinase",
+    "Clumsiness",
+    "Rimmed vacuoles",
+    "Split hand",
+    "Autosomal dominant inheritance",
+    "Muscular dystrophy",
+    "Steppage gait",
+    "Abnormal foot morphology",
+    "Joint contracture of the hand",
+    "Distal amyotrophy",
+    "Slowly progressive",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

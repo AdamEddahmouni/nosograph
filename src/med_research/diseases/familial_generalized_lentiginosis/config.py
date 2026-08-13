@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'familial generalized lentiginosis (FAMILIAL_GENERALIZED_LENTIG
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial generalized lentiginosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypermelanotic macule",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

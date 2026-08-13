@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Rieger anomaly (RIEGER_ANOMALY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Rieger anomaly
-SYMPTOMS = []
+SYMPTOMS = [
+    "Rieger anomaly",
+    "Autosomal dominant inheritance",
+    "Enlarged cisterna magna",
+    "Posterior synechiae of the anterior chamber",
+    "Young adult onset",
+    "Hypodontia",
+    "Malar flattening",
+    "Ectopia pupillae",
+    "Infantile onset",
+    "Abnormal iris vasculature",
+    "Abnormality of the dentition",
+    "Congenital onset",
+    "Patent ductus arteriosus",
+    "Abnormal facial shape",
+    "Hypoplastic iris stroma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

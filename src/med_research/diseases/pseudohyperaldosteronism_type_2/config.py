@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'pseudohyperaldosteronism type 2 (PSEUDOHYPERALDOSTERONISM_TYPE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pseudohyperaldosteronism type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Decreased circulating aldosterone concentration",
+    "Maternal hypertension",
+    "Decreased circulating renin concentration",
+    "Hypertension",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

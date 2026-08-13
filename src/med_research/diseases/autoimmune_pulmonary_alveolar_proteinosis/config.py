@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autoimmune pulmonary alveolar proteinosis (AUTOIMMUNE_PULMONAR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autoimmune pulmonary alveolar proteinosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Inspiratory crackles",
+    "Sporadic",
+    "Recurrent respiratory infections",
+    "Lung abscess",
+    "Pneumonia",
+    "Chest pain",
+    "Decreased DLCO",
+    "Restrictive ventilatory defect",
+    "Intraalveolar phospholipid accumulation",
+    "Insidious onset",
+    "Brain abscess",
+    "Cough",
+    "Hemoptysis",
+    "Dyspnea",
+    "Clubbing",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

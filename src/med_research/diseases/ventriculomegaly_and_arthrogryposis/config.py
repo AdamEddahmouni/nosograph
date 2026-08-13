@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'ventriculomegaly and arthrogryposis (VENTRICULOMEGALY_AND_ARTH
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ventriculomegaly and arthrogryposis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ulnar deviation of the wrist",
+    "Ventriculomegaly",
+    "Agenesis of corpus callosum",
+    "Autosomal recessive inheritance",
+    "Fetal onset",
+    "Cerebellar hypoplasia",
+    "Micrognathia",
+    "Talipes equinovarus",
+    "Hand clenching",
+    "Arthrogryposis multiplex congenita",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

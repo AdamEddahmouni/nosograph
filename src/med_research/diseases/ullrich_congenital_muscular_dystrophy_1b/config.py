@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Ullrich congenital muscular dystrophy 1B (ULLRICH_CONGENITAL_M
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Ullrich congenital muscular dystrophy 1B
-SYMPTOMS = []
+SYMPTOMS = [
+    "Skeletal muscle atrophy",
+    "Adducted thumb",
+    "Motor delay",
+    "Muscle weakness",
+    "Increased variability in muscle fiber diameter",
+    "Finger joint hypermobility",
+    "Muscle fiber necrosis",
+    "Infantile onset",
+    "Knee contracture",
+    "Shoulder contracture",
+    "Antenatal onset",
+    "Long fingers",
+    "Torticollis",
+    "Reduced muscle collagen VI",
+    "Proximal muscle weakness",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'distal myopathy, Welander type (DISTAL_MYOPATHY_WELANDER_TYPE)
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of distal myopathy, Welander type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Steppage gait",
+    "Autosomal dominant inheritance",
+    "Autosomal recessive inheritance",
+    "Distal amyotrophy",
+    "Adult onset",
+    "Mildly elevated creatine kinase",
+    "Rimmed vacuoles",
+    "Distal muscle weakness",
+    "Slowly progressive",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'intellectual disability-brachydactyly-Pierre Robin syndrome (I
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of intellectual disability-brachydactyly-Pierre Robin syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Aplasia of the distal phalanx of the 5th toe",
+    "Telecanthus",
+    "Autosomal recessive inheritance",
+    "Long philtrum",
+    "Thin eyebrow",
+    "Cleft palate",
+    "Intrauterine growth retardation",
+    "Hypotonia",
+    "Sensorineural hearing impairment",
+    "Exaggerated cupid's bow",
+    "Cleft mandible",
+    "Ventricular septal defect",
+    "Bulbous nose",
+    "Underdeveloped nasal alae",
+    "High palate",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Gaucher disease type I (GAUCHER_DISEASE_TYPE_I)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Gaucher disease type I
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal pulmonary interstitial morphology",
+    "Aortic valve stenosis",
+    "Hyperpigmentation of the skin",
+    "Abnormality of the eye",
+    "Autosomal recessive inheritance",
+    "Pulmonary arterial hypertension",
+    "Anemia",
+    "Bone pain",
+    "Dyspnea",
+    "Mitral regurgitation",
+    "Hepatomegaly",
+    "Erlenmeyer flask deformity of the femurs",
+    "Vertebral compression fracture",
+    "Macular atrophy",
+    "Hypertension",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

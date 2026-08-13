@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'pelvis-shoulder dysplasia (PELVIS_SHOULDER_DYSPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pelvis-shoulder dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Back pain",
+    "Iris coloboma",
+    "Microphthalmia",
+    "Spina bifida occulta",
+    "Short stature",
+    "Clinodactyly of the 5th finger",
+    "Hypoplastic ilia",
+    "Autosomal dominant inheritance",
+    "Hypoplastic acetabulae",
+    "Opacification of the corneal stroma",
+    "Congenital hip dislocation",
+    "Short clavicles",
+    "Hypoplastic scapulae",
+    "Optic disc coloboma",
+    "Lumbar hyperlordosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

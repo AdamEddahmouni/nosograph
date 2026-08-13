@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Hypertrophic cardiomyopathy (HYPERTROPHIC_CARDIOMYOPATHY)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Hypertrophic cardiomyopathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Adult onset",
+    "Ventricular tachycardia",
+    "Late onset",
+    "Ventricular septal hypertrophy",
+    "Prolonged QRS complex",
+    "Left ventricular diastolic dysfunction",
+    "Orthopnea",
+    "Sinus bradycardia",
+    "Impaired myocardial contractility",
+    "Left ventricular outflow tract obstruction",
+    "Autosomal recessive inheritance",
+    "Severely reduced left ventricular ejection fraction",
+    "Nonimmune hydrops fetalis",
+    "Prolonged QT interval",
+    "Dilated cardiomyopathy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

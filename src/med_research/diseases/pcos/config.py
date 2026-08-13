@@ -8,8 +8,15 @@ PIPELINE_LABEL = "Polycystic ovary syndrome (PCOS)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Polycystic ovary syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Obesity",
+    "Autosomal dominant inheritance",
+    "Enlarged polycystic ovaries",
+    "Abnormality of metabolism/homeostasis",
+    "Amenorrhea",
+    "Hirsutism",
+    "Oligomenorrhea",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

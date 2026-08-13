@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'patella aplasia/hypoplasia (PATELLA_APLASIA_HYPOPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of patella aplasia/hypoplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Abnormality of the skin",
+    "Patellar hypoplasia",
+    "Patellar aplasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

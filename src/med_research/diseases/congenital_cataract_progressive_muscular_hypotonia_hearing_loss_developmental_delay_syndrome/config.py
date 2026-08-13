@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'congenital cataract-progressive muscular hypotonia-hearing los
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital cataract-progressive muscular hypotonia-hearing loss-developmental delay syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sensorineural hearing impairment",
+    "Cataract",
+    "Autosomal recessive inheritance",
+    "Myopathy",
+    "Developmental cataract",
+    "Decreased activity of mitochondrial respiratory chain",
+    "Global developmental delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

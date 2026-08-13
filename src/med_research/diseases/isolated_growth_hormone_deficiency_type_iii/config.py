@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'isolated growth hormone deficiency type III (ISOLATED_GROWTH_H
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of isolated growth hormone deficiency type III
-SYMPTOMS = []
+SYMPTOMS = [
+    "X-linked recessive inheritance",
+    "Enteroviral dermatomyositis syndrome",
+    "Conjunctivitis",
+    "Infectious encephalitis",
+    "Abnormal total T cell number",
+    "Delayed skeletal maturation",
+    "Pyoderma",
+    "Recurrent otitis media",
+    "Prostatitis",
+    "Septic arthritis",
+    "Delayed puberty",
+    "Short stature",
+    "Diarrhea",
+    "Enteroviral hepatitis",
+    "Pneumonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

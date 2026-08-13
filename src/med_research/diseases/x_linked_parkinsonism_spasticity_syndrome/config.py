@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'X-linked parkinsonism-spasticity syndrome (X_LINKED_PARKINSONI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked parkinsonism-spasticity syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Slowly progressive",
+    "Intermediate young adult onset",
+    "Middle age onset",
+    "Bradykinesia",
+    "Spasticity",
+    "Juvenile onset",
+    "Babinski sign",
+    "Resting tremor",
+    "X-linked recessive inheritance",
+    "Cogwheel rigidity",
+    "Parkinsonism",
+    "Hypomimic face",
+    "Hyperreflexia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

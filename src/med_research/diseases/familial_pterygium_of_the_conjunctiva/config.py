@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'familial pterygium of the conjunctiva (FAMILIAL_PTERYGIUM_OF_T
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial pterygium of the conjunctiva
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Abnormal conjunctiva morphology",
+    "Pterygium",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

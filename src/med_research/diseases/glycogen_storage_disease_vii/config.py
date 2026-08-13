@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'glycogen storage disease VII (GLYCOGEN_STORAGE_DISEASE_VII)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of glycogen storage disease VII
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased total bilirubin",
+    "Autosomal recessive inheritance",
+    "Reduced muscle 6-phosphofructokinase activity",
+    "Exercise-induced myoglobinuria",
+    "Muscle weakness",
+    "Childhood onset",
+    "Elevated circulating creatine kinase activity",
+    "Exercise-induced muscle cramps",
+    "Juvenile onset",
+    "Cholelithiasis",
+    "Hyperuricemia",
+    "Reticulocytosis",
+    "Myalgia",
+    "Gout",
+    "Hematuria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

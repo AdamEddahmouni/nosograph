@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Autosomal recessive spastic paraplegia type 76 (AUTOSOMAL_RECE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Autosomal recessive spastic paraplegia type 76
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dysmetria",
+    "Gait imbalance",
+    "Upper limb spasticity",
+    "Autosomal recessive inheritance",
+    "Sensory axonal neuropathy",
+    "Scoliosis",
+    "Urinary incontinence",
+    "Pes cavus",
+    "Ankle clonus",
+    "Gait disturbance",
+    "Cerebellar vermis atrophy",
+    "Gait ataxia",
+    "Limb ataxia",
+    "Spastic ataxia",
+    "Young adult onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

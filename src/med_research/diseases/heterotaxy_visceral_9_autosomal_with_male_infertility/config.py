@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'heterotaxy, visceral, 9, autosomal, with male infertility (HET
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of heterotaxy, visceral, 9, autosomal, with male infertility
-SYMPTOMS = []
+SYMPTOMS = [
+    "Male infertility",
+    "Recurrent otitis media",
+    "Autosomal recessive inheritance",
+    "Asplenia",
+    "Situs inversus totalis",
+    "Dextrocardia",
+    "Antenatal onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

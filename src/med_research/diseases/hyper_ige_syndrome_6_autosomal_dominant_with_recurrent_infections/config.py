@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hyper-IgE syndrome 6, autosomal dominant, with recurrent infec
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hyper-IgE syndrome 6, autosomal dominant, with recurrent infections
-SYMPTOMS = []
+SYMPTOMS = [
+    "Gastrointestinal eosinophilia",
+    "Short stature",
+    "Recurrent skin infections",
+    "Food allergy",
+    "Osteoporosis",
+    "Gastroesophageal reflux",
+    "Atopic dermatitis",
+    "Autosomal dominant inheritance",
+    "Recurrent respiratory infections",
+    "Infantile onset",
+    "Increased circulating IgE concentration",
+    "Asthma",
+    "Eosinophilic infiltration of the esophagus",
+    "B-cell lymphoma",
+    "Increased total eosinophil count",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

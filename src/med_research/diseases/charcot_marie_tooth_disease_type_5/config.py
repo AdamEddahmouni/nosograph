@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Charcot-Marie-Tooth disease type 5 (CHARCOT_MARIE_TOOTH_DISEAS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Charcot-Marie-Tooth disease type 5
-SYMPTOMS = []
+SYMPTOMS = [
+    "Slowly progressive",
+    "Babinski sign",
+    "Distal muscle weakness",
+    "Sensory neuropathy",
+    "Peripheral axonal neuropathy",
+    "Distal sensory impairment",
+    "Limb muscle weakness",
+    "Hypertonia",
+    "Adult onset",
+    "Distal amyotrophy",
+    "Lower limb pain",
+    "Pes cavus",
+    "Childhood onset",
+    "Abnormal pyramidal sign",
+    "Hammertoe",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

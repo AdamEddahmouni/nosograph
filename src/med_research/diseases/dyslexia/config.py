@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'dyslexia (DYSLEXIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dyslexia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal speech pattern",
+    "Autosomal dominant inheritance",
+    "Dyslexia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

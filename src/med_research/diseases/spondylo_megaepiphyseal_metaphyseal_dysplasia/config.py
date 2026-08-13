@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spondylo-megaepiphyseal-metaphyseal dysplasia (SPONDYLO_MEGAEP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondylo-megaepiphyseal-metaphyseal dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Talipes equinovarus",
+    "Genu valgum",
+    "Scoliosis",
+    "Microcephaly",
+    "Hydrocephalus",
+    "Coxa vara",
+    "Hypertelorism",
+    "Small for gestational age",
+    "Genu varum",
+    "Back pain",
+    "Delayed pubic bone ossification",
+    "Motor delay",
+    "Proximal placement of thumb",
+    "Thoracic kyphoscoliosis",
+    "Protuberant abdomen",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

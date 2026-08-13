@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'hepatic veno-occlusive disease-immunodeficiency syndrome (HEPA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hepatic veno-occlusive disease-immunodeficiency syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased circulating IgG concentration",
+    "Endocardial fibrosis",
+    "Autosomal recessive inheritance",
+    "Immunodeficiency",
+    "Microcephaly",
+    "Absence of lymph node germinal center",
+    "Abnormality of the liver",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

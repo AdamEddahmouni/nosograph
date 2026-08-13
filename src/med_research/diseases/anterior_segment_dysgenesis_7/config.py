@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'anterior segment dysgenesis 7 (ANTERIOR_SEGMENT_DYSGENESIS_7)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of anterior segment dysgenesis 7
-SYMPTOMS = []
+SYMPTOMS = [
+    "Iris coloboma",
+    "Autosomal recessive inheritance",
+    "Microphthalmia",
+    "Congenital onset",
+    "Sclerocornea",
+    "Anterior synechiae of the anterior chamber",
+    "Reduced visual acuity",
+    "Microcornea",
+    "Corneal opacity",
+    "Buphthalmos",
+    "Ocular hypertension",
+    "Cataract",
+    "Ocular anterior segment dysgenesis",
+    "Neonatal onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'pituitary hormone deficiency, combined, 6 (PITUITARY_HORMONE_D
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pituitary hormone deficiency, combined, 6
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased circulating ACTH concentration",
+    "Ectopic posterior pituitary",
+    "Feeding difficulties",
+    "Reduced circulating growth hormone concentration",
+    "Hyperbilirubinemia",
+    "Decreased thyroid-stimulating hormone level",
+    "Hypoglycemia",
+    "Decreased circulating luteinizing hormone level",
+    "Neonatal hypoglycemia",
+    "Neonatal onset",
+    "Short stature",
+    "Autosomal dominant inheritance",
+    "Decreased circulating follicle stimulating hormone concentration",
+    "Seizure",
+    "Posterior pituitary hypoplasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

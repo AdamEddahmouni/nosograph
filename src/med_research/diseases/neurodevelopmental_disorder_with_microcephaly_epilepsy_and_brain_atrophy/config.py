@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neurodevelopmental disorder with microcephaly, epilepsy, and b
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neurodevelopmental disorder with microcephaly, epilepsy, and brain atrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Delayed fine motor development",
+    "Motor regression",
+    "Hypoplasia of the corpus callosum",
+    "Dysphagia",
+    "Childhood onset",
+    "Gait ataxia",
+    "Recurrent hand flapping",
+    "Motor stereotypy",
+    "Short stature",
+    "Atrophy/Degeneration affecting the brainstem",
+    "Severe intellectual disability",
+    "Ventriculomegaly",
+    "Cerebellar atrophy",
+    "Muscle weakness",
+    "Absent speech",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

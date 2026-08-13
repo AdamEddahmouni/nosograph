@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autoinflammation-PLCG2-associated antibody deficiency-immune d
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autoinflammation-PLCG2-associated antibody deficiency-immune dysregulation
-SYMPTOMS = []
+SYMPTOMS = [
+    "Unusual bronchiolitis",
+    "Decreased class-switched memory B cell proportion",
+    "Ulcerative colitis",
+    "Decreased circulating IgM concentration",
+    "Immune dysregulation",
+    "Cataract",
+    "Corneal erosion",
+    "Cellulitis",
+    "Arthralgia",
+    "Erythema",
+    "Decreased circulating IgA concentration",
+    "Enterocolitis",
+    "Infantile onset",
+    "Recurrent sinopulmonary infections",
+    "Interstitial pneumonitis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

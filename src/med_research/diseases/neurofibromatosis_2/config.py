@@ -8,8 +8,15 @@ PIPELINE_LABEL = "Neurofibromatosis type 2 (NEUROFIBROMATOSIS_2)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Neurofibromatosis type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Young adult onset",
+    "Colon cancer",
+    "Middle age onset",
+    "Autosomal dominant inheritance",
+    "Gastrointestinal desmoid tumor",
+    "Colorectal polyposis",
+    "Breast carcinoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of multiple acyl-CoA dehydrogenase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Vomiting",
+    "Ethylmalonic aciduria",
+    "Renal cortical cysts",
+    "Respiratory distress",
+    "Electron transfer flavoprotein-ubiquinone oxidoreductase defect",
+    "Hepatic steatosis",
+    "Nausea",
+    "Polycystic kidney dysplasia",
+    "Pulmonary hypoplasia",
+    "Hepatomegaly",
+    "Hepatic periportal necrosis",
+    "Hypoglycemia",
+    "Macrocephaly",
+    "Abnormality of the genital system",
+    "High forehead",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

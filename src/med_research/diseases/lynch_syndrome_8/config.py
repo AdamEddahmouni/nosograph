@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'Lynch syndrome 8 (LYNCH_SYNDROME_8)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Lynch syndrome 8
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Middle age onset",
+    "Adenomatous colonic polyposis",
+    "Colon cancer",
+    "Late young adult onset",
+    "Endometrial carcinoma",
+    "Hereditary nonpolyposis colorectal carcinoma",
+    "Late onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Alagille syndrome due to a NOTCH2 point mutation (ALAGILLE_SYN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Alagille syndrome due to a NOTCH2 point mutation
-SYMPTOMS = []
+SYMPTOMS = [
+    "Renal tubular acidosis",
+    "Tetralogy of Fallot",
+    "Hypertension",
+    "Posterior embryotoxon",
+    "Long nose",
+    "Renal insufficiency",
+    "Renal cyst",
+    "Pulmonic stenosis",
+    "Peripheral pulmonary artery stenosis",
+    "Proteinuria",
+    "Cholestatic liver disease",
+    "Broad forehead",
+    "Pointed chin",
+    "Renal hypoplasia",
+    "Cholestasis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

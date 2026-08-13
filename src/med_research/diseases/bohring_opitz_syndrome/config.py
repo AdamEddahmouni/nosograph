@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Bohring-Opitz syndrome (BOHRING_OPITZ_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Bohring-Opitz syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Narrow forehead",
+    "Autosomal dominant inheritance",
+    "Feeding difficulties",
+    "Microcephaly",
+    "Tapered finger",
+    "Depressed nasal bridge",
+    "Deep palmar crease",
+    "Hirsutism",
+    "Intestinal malrotation",
+    "Recurrent infections",
+    "Congenital onset",
+    "Narrow palate",
+    "Thick hair",
+    "Hypoplasia of the corpus callosum",
+    "Strabismus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

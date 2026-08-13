@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'congenital left-sided heart lesions (CONGENITAL_LEFT_SIDED_HEA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital left-sided heart lesions
-SYMPTOMS = []
+SYMPTOMS = [
+    "Mitral atresia",
+    "Non-Mendelian inheritance",
+    "Aortic valve stenosis",
+    "Ventricular septal defect",
+    "Oligogenic inheritance",
+    "Aortic valve atresia",
+    "Autosomal dominant inheritance",
+    "Congenital onset",
+    "Coarctation of aorta",
+    "Autosomal recessive inheritance",
+    "Hypoplastic left ventricle",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

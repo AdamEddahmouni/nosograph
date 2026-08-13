@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'hyperkalemic periodic paralysis (HYPERKALEMIC_PERIODIC_PARALYS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hyperkalemic periodic paralysis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Episodic flaccid weakness",
+    "Myotonia",
+    "Autosomal dominant inheritance",
+    "Hyperkalemia while symptomatic",
+    "Infantile onset",
+    "Periodic hyperkalemic paralysis",
+    "Hyperkalemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

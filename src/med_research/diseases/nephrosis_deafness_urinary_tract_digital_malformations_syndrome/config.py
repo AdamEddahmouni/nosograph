@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'nephrosis-deafness-urinary tract-digital malformations syndrom
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of nephrosis-deafness-urinary tract-digital malformations syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nephrotic syndrome",
+    "Short distal phalanx of the thumb",
+    "Bifid distal phalanx of the thumb",
+    "Autosomal recessive inheritance",
+    "Partial duplication of the distal phalanx of the hallux",
+    "Hearing impairment",
+    "Bifid uvula",
+    "Short distal phalanx of hallux",
+    "X-linked dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'heart-hand syndrome type 3 (HEART_HAND_SYNDROME_TYPE_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of heart-hand syndrome type 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Brachydactyly",
+    "Abnormality of the cardiovascular system",
+    "Short middle phalanx of finger",
+    "Sick sinus syndrome",
+    "Ulnar deviation of the 2nd finger",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

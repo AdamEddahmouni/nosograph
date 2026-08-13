@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'von Voss-Cherstvoy syndrome (VON_VOSS_CHERSTVOY_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of von Voss-Cherstvoy syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Phocomelia",
+    "Abnormality of the genitourinary system",
+    "Encephalocele",
+    "Autosomal recessive inheritance",
+    "Thrombocytopenia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

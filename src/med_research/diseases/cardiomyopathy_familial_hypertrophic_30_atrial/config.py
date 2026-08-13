@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'cardiomyopathy, familial hypertrophic, 30, atrial (CARDIOMYOPA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cardiomyopathy, familial hypertrophic, 30, atrial
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased circulating brain natriuretic peptide concentration",
+    "Left atrial fibrosis",
+    "Left atrial enlargement",
+    "Autosomal recessive inheritance",
+    "Decreased circulating NT-proANP concentration",
+    "Hypertension",
+    "Atrial fibrillation",
+    "Middle age onset",
+    "Atrial flutter",
+    "Reduced left ventricular ejection fraction",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

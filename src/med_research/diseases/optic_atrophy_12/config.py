@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'optic atrophy 12 (OPTIC_ATROPHY_12)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of optic atrophy 12
-SYMPTOMS = []
+SYMPTOMS = [
+    "Optic atrophy",
+    "Abnormal Ishihara plate test",
+    "Reduced visual acuity",
+    "Photophobia",
+    "Optic disc pallor",
+    "Dyschromatopsia",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

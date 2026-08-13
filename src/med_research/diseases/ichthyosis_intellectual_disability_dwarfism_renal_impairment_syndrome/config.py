@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'ichthyosis-intellectual disability-dwarfism-renal impairment s
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ichthyosis-intellectual disability-dwarfism-renal impairment syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nephropathy",
+    "Severe short stature",
+    "Decreased glomerular filtration rate",
+    "Elevated circulating creatinine concentration",
+    "Congenital nonbullous ichthyosiform erythroderma",
+    "Autosomal recessive inheritance",
+    "Intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

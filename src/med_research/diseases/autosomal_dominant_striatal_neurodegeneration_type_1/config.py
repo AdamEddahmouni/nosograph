@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autosomal dominant striatal neurodegeneration type 1 (AUTOSOMA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal dominant striatal neurodegeneration type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Slurred speech",
+    "Bradykinesia",
+    "Tremor",
+    "Brisk reflexes",
+    "Slowly progressive",
+    "Lower limb hyperreflexia",
+    "Symmetric T2-signal increase with T1-signal decrease in the putamen",
+    "Rigidity",
+    "Autosomal dominant inheritance",
+    "Middle age onset",
+    "Gait disturbance",
+    "Degeneration of the striatum",
+    "Dysdiadochokinesis",
+    "Dysarthria",
+    "Hypokinesia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

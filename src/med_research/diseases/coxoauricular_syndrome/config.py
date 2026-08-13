@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'coxoauricular syndrome (COXOAURICULAR_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of coxoauricular syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "X-linked dominant inheritance",
+    "Autosomal dominant inheritance",
+    "Microtia",
+    "Short stature",
+    "Hip dislocation",
+    "Hearing impairment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

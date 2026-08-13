@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Aymé-Gripp syndrome (AYM_GRIPP_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Aymé-Gripp syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sparse scalp hair",
+    "Chiari type I malformation",
+    "Flat face",
+    "Broad philtrum",
+    "Ptosis",
+    "High forehead",
+    "Cerebral atrophy",
+    "Tapered finger",
+    "Short nose",
+    "Pericarditis",
+    "Posteriorly rotated ears",
+    "Pectus excavatum",
+    "Smooth philtrum",
+    "Wide nasal bridge",
+    "Malar flattening",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

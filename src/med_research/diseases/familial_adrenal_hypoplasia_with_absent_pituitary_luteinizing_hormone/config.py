@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'familial adrenal hypoplasia with absent pituitary luteinizing 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial adrenal hypoplasia with absent pituitary luteinizing hormone
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cryptorchidism",
+    "Decreased circulating luteinizing hormone level",
+    "Autosomal recessive inheritance",
+    "Congenital adrenal hypoplasia",
+    "Neonatal onset",
+    "Micropenis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'cholesteryl ester storage disease (CHOLESTERYL_ESTER_STORAGE_D
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cholesteryl ester storage disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Protuberant abdomen",
+    "Failure to thrive",
+    "Increased hepatic echogenicity",
+    "Adrenal insufficiency",
+    "Reduced lysosomal acid lipase activity",
+    "Elevated circulating aspartate aminotransferase concentration",
+    "Cirrhosis",
+    "Elevated circulating alanine aminotransferase concentration",
+    "Elevated gamma-glutamyltransferase level",
+    "Elevated circulating LDL-C concentration",
+    "Diarrhea",
+    "Thrombocytopenia",
+    "Hepatic fibrosis",
+    "Esophageal varix",
+    "Death in infancy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

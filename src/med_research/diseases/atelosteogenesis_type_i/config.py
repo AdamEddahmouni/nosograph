@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'atelosteogenesis type I (ATELOSTEOGENESIS_TYPE_I)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of atelosteogenesis type I
-SYMPTOMS = []
+SYMPTOMS = [
+    "Neonatal death",
+    "Disproportionate short-limb short stature",
+    "Clubbing",
+    "Malar flattening",
+    "Distal tapering femur",
+    "Vertebral hypoplasia",
+    "Thoracic platyspondyly",
+    "Fused cervical vertebrae",
+    "Aplasia/Hypoplasia of the ulna",
+    "Narrow chest",
+    "Short femur",
+    "Proptosis",
+    "Brachydactyly",
+    "Laryngeal stenosis",
+    "Long clavicle",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

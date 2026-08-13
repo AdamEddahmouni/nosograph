@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'epidermolysis bullosa simplex due to plakophilin deficiency (E
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of epidermolysis bullosa simplex due to plakophilin deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ectodermal dysplasia",
+    "Anhidrosis",
+    "Palmoplantar blistering",
+    "Nail dystrophy",
+    "Absent eyebrow",
+    "Dystrophic fingernails",
+    "Absent eyelashes",
+    "Congenital onset",
+    "Sparse hair",
+    "Alopecia of scalp",
+    "Fragile skin",
+    "Scaling skin",
+    "Palmoplantar hyperkeratosis",
+    "Abnormal blistering of the skin",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

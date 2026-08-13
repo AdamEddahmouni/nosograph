@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'geroderma osteodysplastica (GERODERMA_OSTEODYSPLASTICA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of geroderma osteodysplastica
-SYMPTOMS = []
+SYMPTOMS = [
+    "Malar flattening",
+    "Platyspondyly",
+    "Intellectual disability",
+    "Biconcave vertebral bodies",
+    "Premature skin wrinkling",
+    "Mandibular prognathia",
+    "Recurrent lower respiratory tract infections",
+    "Vertebral compression fracture",
+    "Cutis laxa",
+    "Femoral bowing",
+    "Hypertelorism",
+    "Hyperextensibility of the finger joints",
+    "Progeroid facial appearance",
+    "Osteoporosis",
+    "Congenital onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

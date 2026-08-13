@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'acrofacial dysostosis Rodriguez type (ACROFACIAL_DYSOSTOSIS_RO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of acrofacial dysostosis Rodriguez type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Clinodactyly",
+    "Prominent nose",
+    "Micrognathia",
+    "Low-set ears",
+    "Triphalangeal thumb",
+    "Absent forearm",
+    "Autosomal recessive inheritance",
+    "Short stature",
+    "Deeply set eye",
+    "Hypertelorism",
+    "High palate",
+    "Oligodactyly",
+    "Narrow mouth",
+    "Wide anterior fontanel",
+    "Deep-set nails",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

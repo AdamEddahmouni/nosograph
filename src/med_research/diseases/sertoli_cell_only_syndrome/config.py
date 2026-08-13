@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'Sertoli Cell-Only Syndrome (SERTOLI_CELL_ONLY_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Sertoli Cell-Only Syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Male-limited expression",
+    "Autosomal dominant inheritance",
+    "Obesity",
+    "X-linked inheritance",
+    "Sertoli cell-only phenotype",
+    "Gynecomastia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

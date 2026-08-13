@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'familial clubfoot due to 17q23.1q23.2 microduplication (FAMILI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial clubfoot due to 17q23.1q23.2 microduplication
-SYMPTOMS = []
+SYMPTOMS = [
+    "Coxa valga",
+    "Talipes equinovarus",
+    "Hip dysplasia",
+    "Genu valgum",
+    "Acetabular dysplasia",
+    "Autosomal dominant inheritance",
+    "Small nail",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'amelogenesis imperfecta, IIa 1K (AMELOGENESIS_IMPERFECTA_IIA_1
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of amelogenesis imperfecta, IIa 1K
-SYMPTOMS = []
+SYMPTOMS = [
+    "Enamel hypoplasia",
+    "Autosomal dominant inheritance",
+    "Amelogenesis imperfecta",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

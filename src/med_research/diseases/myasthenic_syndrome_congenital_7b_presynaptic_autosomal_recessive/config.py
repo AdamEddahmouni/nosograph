@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'myasthenic syndrome, congenital, 7B, presynaptic, autosomal re
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of myasthenic syndrome, congenital, 7B, presynaptic, autosomal recessive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Respiratory insufficiency due to muscle weakness",
+    "Ankle flexion contracture",
+    "Weakness of facial musculature",
+    "Dysphagia",
+    "Slow saccadic eye movements",
+    "Cerebral atrophy",
+    "EMG: decremental response of compound muscle action potential to repetitive nerve stimulation",
+    "Elbow flexion contracture",
+    "Dysarthria",
+    "Autosomal recessive inheritance",
+    "Increased variability in muscle fiber diameter",
+    "Reduced forced vital capacity",
+    "Limited extraocular movements",
+    "Decreased fetal movement",
+    "Hypernasal speech",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

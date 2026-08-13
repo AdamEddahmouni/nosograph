@@ -8,8 +8,23 @@ PIPELINE_LABEL = "systemic primary carnitine deficiency disease (CARNITINE_DEFIC
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of systemic primary carnitine deficiency disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Coma",
+    "Endocardial fibroelastosis",
+    "Hypertrophic cardiomyopathy",
+    "Elevated circulating alanine aminotransferase concentration",
+    "Encephalopathy",
+    "Childhood onset",
+    "Cardiomyopathy",
+    "Mitral regurgitation",
+    "Dehydration",
+    "Excessive daytime somnolence",
+    "Elevated circulating creatine kinase activity",
+    "Decreased circulating carnitine concentration",
+    "Proximal muscle weakness",
+    "Cardiomegaly",
+    "Microvesicular hepatic steatosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

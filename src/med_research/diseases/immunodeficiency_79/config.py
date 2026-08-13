@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'immunodeficiency 79 (IMMUNODEFICIENCY_79)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 79
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Recurrent upper respiratory tract infections",
+    "Palmar warts",
+    "Plantar warts",
+    "Disseminated cutaneous warts",
+    "Juvenile onset",
+    "Decreased total CD4+ T cell proportion",
+    "Recurrent otitis media",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

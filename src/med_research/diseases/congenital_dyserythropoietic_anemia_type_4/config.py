@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'congenital dyserythropoietic anemia type 4 (CONGENITAL_DYSERYT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital dyserythropoietic anemia type 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Circulating nucleated red blood cells",
+    "Hepatosplenomegaly",
+    "Hyperbilirubinemia",
+    "Increased RBC distribution width",
+    "Decreased circulating haptoglobin concentration",
+    "Increased circulating lactate dehydrogenase concentration",
+    "Hepatomegaly",
+    "Hypospadias",
+    "Short stature",
+    "Poikilocytosis",
+    "Splenomegaly",
+    "Decreased hemoglobin concentration",
+    "Hypothyroidism",
+    "Unconjugated hyperbilirubinemia",
+    "Anemia of inadequate production",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

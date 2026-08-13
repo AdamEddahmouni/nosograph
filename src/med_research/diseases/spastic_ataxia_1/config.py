@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spastic ataxia 1 (SPASTIC_ATAXIA_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spastic ataxia 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Supranuclear gaze palsy",
+    "Spastic paraplegia",
+    "Autosomal dominant inheritance",
+    "Pes cavus",
+    "Ptosis",
+    "Young adult onset",
+    "Abnormality of eye movement",
+    "Leg muscle stiffness",
+    "Juvenile onset",
+    "Spastic ataxia",
+    "Hyperreflexia",
+    "Gait disturbance",
+    "Dystonia",
+    "Dysarthria",
+    "Dysphagia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

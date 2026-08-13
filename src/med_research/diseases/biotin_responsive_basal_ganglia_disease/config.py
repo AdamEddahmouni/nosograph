@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'biotin-responsive basal ganglia disease (BIOTIN_RESPONSIVE_BAS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of biotin-responsive basal ganglia disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dystonia",
+    "Truncal titubation",
+    "Paraparesis",
+    "Axial hypotonia",
+    "Craniofacial dystonia",
+    "Abnormal pyramidal sign",
+    "External ophthalmoplegia",
+    "Dysphagia",
+    "Babinski sign",
+    "Abnormal basal ganglia morphology",
+    "Childhood onset",
+    "Inability to walk",
+    "Action tremor",
+    "Dysarthria",
+    "Mutism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

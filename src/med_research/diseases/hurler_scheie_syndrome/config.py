@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Hurler-Scheie syndrome (HURLER_SCHEIE_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Hurler-Scheie syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Childhood onset",
+    "Hirsutism",
+    "Scoliosis",
+    "Mitral regurgitation",
+    "Umbilical hernia",
+    "Aortic regurgitation",
+    "Thick vermilion border",
+    "Heparan sulfate excretion in urine",
+    "Joint stiffness",
+    "Pulmonary arterial hypertension",
+    "Micrognathia",
+    "Kyphosis",
+    "Splenomegaly",
+    "Dysostosis multiplex",
+    "Thenar muscle atrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

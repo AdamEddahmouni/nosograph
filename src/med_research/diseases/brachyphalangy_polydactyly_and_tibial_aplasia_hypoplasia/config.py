@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of brachyphalangy, polydactyly, and tibial aplasia/hypoplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Wide nasal bridge",
+    "Proximal placement of thumb",
+    "Fibular hypoplasia",
+    "Skin dimple",
+    "Toe syndactyly",
+    "Short toe",
+    "Atrial septal defect",
+    "Short nose",
+    "Clitoral hypoplasia",
+    "Short neck",
+    "Epicanthus",
+    "Knee flexion contracture",
+    "Global developmental delay",
+    "Broad thumb",
+    "Craniosynostosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

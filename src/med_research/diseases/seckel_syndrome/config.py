@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Seckel syndrome (SECKEL_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Seckel syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Scaphocephaly",
+    "Strabismus",
+    "Clinodactyly of the 5th finger",
+    "Low-set ears",
+    "Facial asymmetry",
+    "Insulin resistance",
+    "Clitoral hypertrophy",
+    "Abnormality of chromosome stability",
+    "Ivory epiphyses",
+    "Single transverse palmar crease",
+    "Simplified gyral pattern",
+    "Retinopathy",
+    "Pes planus",
+    "Cerebellar hypoplasia",
+    "Agonadism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

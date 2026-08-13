@@ -8,8 +8,17 @@ PIPELINE_LABEL = "Pendred syndrome (PENDRED_SYNDROME)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Pendred syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal vestibular function",
+    "Intellectual disability",
+    "Cochlear malformation",
+    "Autosomal recessive inheritance",
+    "Elevated circulating thyroglobulin concentration",
+    "Thyroid carcinoma",
+    "Compensated hypothyroidism",
+    "Congenital sensorineural hearing impairment",
+    "Goiter",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

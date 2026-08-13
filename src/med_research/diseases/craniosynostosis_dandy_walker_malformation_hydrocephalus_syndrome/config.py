@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'craniosynostosis-Dandy-Walker malformation-hydrocephalus syndr
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of craniosynostosis-Dandy-Walker malformation-hydrocephalus syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Hydrocephalus",
+    "Sagittal craniosynostosis",
+    "Cerebellar vermis hypoplasia",
+    "Dandy-Walker malformation",
+    "Posterior fossa cyst",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'porphyria due to ALA dehydratase deficiency (PORPHYRIA_DUE_TO_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of porphyria due to ALA dehydratase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abdominal colic",
+    "Paresthesia",
+    "Respiratory paralysis",
+    "Autosomal recessive inheritance",
+    "Vomiting",
+    "Hemolytic anemia",
+    "Hypotonia",
+    "Elevated urinary delta-aminolevulinic acid",
+    "Paralysis",
+    "Failure to thrive",
+    "Congenital onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = '7q11.23 microduplication syndrome (7Q11_23_MICRODUPLICATION_SY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of 7q11.23 microduplication syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short philtrum",
+    "High palate",
+    "Micrognathia",
+    "Autosomal dominant inheritance",
+    "High forehead",
+    "Ventriculomegaly",
+    "Anxiety",
+    "Broad nasal tip",
+    "Broad forehead",
+    "Hypoplasia of the corpus callosum",
+    "Feeding difficulties",
+    "Horizontal eyebrow",
+    "Short attention span",
+    "Gait disturbance",
+    "Chronic otitis media",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

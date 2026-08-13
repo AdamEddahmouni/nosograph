@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Toriello-Carey syndrome (TORIELLO_CAREY_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Toriello-Carey syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypotonia",
+    "Cryptorchidism",
+    "Full cheeks",
+    "Agenesis of corpus callosum",
+    "Laryngeal hypoplasia",
+    "Redundant neck skin",
+    "Tracheomalacia",
+    "Abnormal pinna morphology",
+    "Syndactyly",
+    "Cardiomyopathy",
+    "Narrow chest",
+    "Patent ductus arteriosus",
+    "Short neck",
+    "Hypertelorism",
+    "Intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

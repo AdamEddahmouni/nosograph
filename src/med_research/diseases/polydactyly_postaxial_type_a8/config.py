@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'polydactyly, postaxial, type A8 (POLYDACTYLY_POSTAXIAL_TYPE_A8
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of polydactyly, postaxial, type A8
-SYMPTOMS = []
+SYMPTOMS = [
+    "Genu valgum",
+    "Short stature",
+    "Congenital onset",
+    "Autosomal recessive inheritance",
+    "Nail dysplasia",
+    "Postaxial polydactyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

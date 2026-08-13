@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autosomal dominant epilepsy with auditory features (AUTOSOMAL_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal dominant epilepsy with auditory features
-SYMPTOMS = []
+SYMPTOMS = [
+    "Focal aware sensory seizure with auditory features",
+    "Bilateral tonic-clonic seizure",
+    "Focal sensory seizure with auditory features",
+    "Focal sensory seizure with cephalic sensation",
+    "Focal automatism seizure",
+    "Autosomal dominant inheritance",
+    "Focal sensory seizure with visual features",
+    "Middle age onset",
+    "Focal aware seizure",
+    "Focal sensory seizure with vestibular features",
+    "Deja vu aura",
+    "Focal sensory seizure with olfactory features",
+    "Focal clonic seizure",
+    "Focal autonomic seizure with epigastric sensation/nausea/vomiting/other gastrointestinal phenomena",
+    "Focal impaired awareness seizure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

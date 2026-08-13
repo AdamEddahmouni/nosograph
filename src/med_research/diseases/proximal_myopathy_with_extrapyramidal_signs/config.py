@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'proximal myopathy with extrapyramidal signs (PROXIMAL_MYOPATHY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of proximal myopathy with extrapyramidal signs
-SYMPTOMS = []
+SYMPTOMS = [
+    "Epicanthus",
+    "Extremely elevated creatine kinase",
+    "Hypoplastic anterior limbs of the internal capsule",
+    "Growth delay",
+    "Orofacial dyskinesia",
+    "Difficulty running",
+    "Hypervalinemia",
+    "Ptosis",
+    "Narrow face",
+    "Splenomegaly",
+    "Hyperactivity",
+    "Clonus",
+    "Optic atrophy",
+    "Frequent falls",
+    "Specific learning disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

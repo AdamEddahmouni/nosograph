@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'odontochondrodysplasia 1 (ODONTOCHONDRODYSPLASIA_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of odontochondrodysplasia 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Flared iliac wing",
+    "Long philtrum",
+    "Motor delay",
+    "Death in infancy",
+    "Relative macrocephaly",
+    "Macrocephaly",
+    "Pulmonary hypoplasia",
+    "Irregular epiphyses",
+    "Joint hypermobility",
+    "Prominent forehead",
+    "Mesomelic short stature",
+    "Short metacarpal",
+    "Genu varum",
+    "Delayed eruption of teeth",
+    "Delayed ossification of carpal bones",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

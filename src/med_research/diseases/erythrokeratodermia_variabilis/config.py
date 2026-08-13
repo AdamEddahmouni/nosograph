@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'erythrokeratodermia variabilis (ERYTHROKERATODERMIA_VARIABILIS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of erythrokeratodermia variabilis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypergranulosis",
+    "Infantile onset",
+    "Autosomal dominant inheritance",
+    "Epidermal acanthosis",
+    "Autosomal recessive inheritance",
+    "Patchy palmoplantar hyperkeratosis",
+    "Generalized hyperkeratosis",
+    "Erythroderma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'glycogen storage disease Ib (GLYCOGEN_STORAGE_DISEASE_IB)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of glycogen storage disease Ib
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated circulating hepatic transaminase concentration",
+    "Hyperketonemia",
+    "Metabolic acidosis",
+    "Hepatomegaly",
+    "Ketosis",
+    "Delayed puberty",
+    "Reduced hepatic glucose-6-phosphate translocase activity",
+    "Decreased total neutrophil count",
+    "Gout",
+    "Absence of bactericidal oxidative respiratory burst in phagocytes",
+    "Renal insufficiency",
+    "Recurrent upper respiratory tract infections",
+    "Hepatoblastoma",
+    "Spider hemangioma",
+    "Infantile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

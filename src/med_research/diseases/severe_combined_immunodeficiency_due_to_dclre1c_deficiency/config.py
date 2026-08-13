@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'severe combined immunodeficiency due to DCLRE1C deficiency (SE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of severe combined immunodeficiency due to DCLRE1C deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased total eosinophil count",
+    "Pneumonia",
+    "BCGitis",
+    "Sepsis",
+    "Infantile onset",
+    "Genital ulcers",
+    "Lymph node hypoplasia",
+    "Oral ulcer",
+    "Aplasia of the thymus",
+    "Increased circulating IgE concentration",
+    "Autosomal recessive inheritance",
+    "Decreased total lymphocyte count",
+    "Decreased total B cell count",
+    "Absent tonsils",
+    "Otitis media",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

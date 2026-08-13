@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'neuronopathy, distal hereditary motor, type 7B (NEURONOPATHY_D
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neuronopathy, distal hereditary motor, type 7B
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal lower motor neuron morphology",
+    "Lower limb muscle weakness",
+    "Autosomal dominant inheritance",
+    "Adult onset",
+    "Slowly progressive",
+    "Distal amyotrophy",
+    "Distal muscle weakness",
+    "Weakness of facial musculature",
+    "Hand muscle weakness",
+    "Vocal cord paralysis",
+    "Hand muscle atrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

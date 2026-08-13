@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'Ascher syndrome (ASCHER_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Ascher syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Duplication of the upper lip",
+    "Blepharochalasis",
+    "Goiter",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

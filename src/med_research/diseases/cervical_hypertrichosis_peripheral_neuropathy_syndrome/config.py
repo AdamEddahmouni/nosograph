@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'cervical hypertrichosis-peripheral neuropathy syndrome (CERVIC
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cervical hypertrichosis-peripheral neuropathy syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Motor polyneuropathy",
+    "Anterior cervical hypertrichosis",
+    "Sensory neuropathy",
+    "Osteomyelitis",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

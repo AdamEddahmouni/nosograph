@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'neuronal ceroid lipofuscinosis 8 northern epilepsy variant (NE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neuronal ceroid lipofuscinosis 8 northern epilepsy variant
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased neuronal autofluorescent lipopigment",
+    "EEG abnormality",
+    "Intellectual disability",
+    "Mental deterioration",
+    "Irritability",
+    "Slowly progressive",
+    "Curvilinear intracellular accumulation of autofluorescent lipopigment storage material",
+    "Cerebral atrophy",
+    "Autosomal recessive inheritance",
+    "Restlessness",
+    "Focal impaired awareness seizure",
+    "Clumsiness",
+    "Cerebellar atrophy",
+    "Bilateral tonic-clonic seizure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

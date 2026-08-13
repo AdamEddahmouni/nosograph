@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Stuve-Wiedemann syndrome 2 (STUVE_WIEDEMANN_SYNDROME_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Stuve-Wiedemann syndrome 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Short long bone",
+    "Enlarged cisterna magna",
+    "Intrauterine growth retardation",
+    "Thoracic hypoplasia",
+    "Pulmonary arterial hypertension",
+    "Motor delay",
+    "Eczematoid dermatitis",
+    "Death in adolescence",
+    "Neonatal death",
+    "Dysphagia",
+    "Bowing of the long bones",
+    "Disseminated intravascular coagulation",
+    "Congestive heart failure",
+    "Camptodactyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

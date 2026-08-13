@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'combined oxidative phosphorylation deficiency 34 (COMBINED_OXI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of combined oxidative phosphorylation deficiency 34
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypoglycemia",
+    "Infantile onset",
+    "Failure to thrive",
+    "Congenital sensorineural hearing impairment",
+    "Vomiting",
+    "Increased circulating lactate concentration",
+    "Autosomal recessive inheritance",
+    "Increased blood urea nitrogen",
+    "Primary adrenal insufficiency",
+    "Pancytopenia",
+    "Lactic acidosis",
+    "Hepatomegaly",
+    "Elevated circulating thyroid-stimulating hormone concentration",
+    "Elevated circulating creatinine concentration",
+    "Hepatic steatosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

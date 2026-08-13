@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Hermansky-Pudlak syndrome 2 (HERMANSKY_PUDLAK_SYNDROME_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Hermansky-Pudlak syndrome 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nystagmus",
+    "Recurrent bacterial infections",
+    "Recurrent otitis media",
+    "Absent platelet dense granules",
+    "Thrombocytopenia",
+    "Long philtrum",
+    "Ocular albinism",
+    "Prolonged bleeding time",
+    "Reduced visual acuity",
+    "Aberrant melanosome maturation",
+    "Hepatomegaly",
+    "Inverted CD4:CD8 ratio",
+    "Decreased total neutrophil count",
+    "Photophobia",
+    "Wide nasal bridge",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

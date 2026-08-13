@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of essential hypertension, genetic
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated systolic blood pressure",
+    "Elevated diastolic blood pressure",
+    "Non-Mendelian inheritance",
+    "Elevated mean arterial pressure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

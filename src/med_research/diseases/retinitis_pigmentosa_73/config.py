@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'retinitis pigmentosa 73 (RETINITIS_PIGMENTOSA_73)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of retinitis pigmentosa 73
-SYMPTOMS = []
+SYMPTOMS = [
+    "Peripapillary atrophy",
+    "Optic disc pallor",
+    "Middle age onset",
+    "Early young adult onset",
+    "Visual field defect",
+    "Color vision defect",
+    "Reduced visual acuity",
+    "Blurred vision",
+    "Spicular pigmentation of the retina",
+    "Central scotoma",
+    "Nyctalopia",
+    "Macular crystals",
+    "Macular geographic atrophy",
+    "Ring scotoma",
+    "Photopsia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

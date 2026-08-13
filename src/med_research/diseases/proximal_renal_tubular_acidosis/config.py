@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'proximal renal tubular acidosis (PROXIMAL_RENAL_TUBULAR_ACIDOS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of proximal renal tubular acidosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Proximal renal tubular acidosis",
+    "Short stature",
+    "Elevated circulating creatinine concentration",
+    "Hypercalciuria",
+    "Rickets",
+    "Osteomalacia",
+    "Hyperchloremic acidosis",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'duodenal atresia (DUODENAL_ATRESIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of duodenal atresia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Duodenal atresia",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

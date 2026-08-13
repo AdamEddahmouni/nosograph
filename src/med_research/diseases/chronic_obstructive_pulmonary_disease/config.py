@@ -8,8 +8,9 @@ PIPELINE_LABEL = 'chronic obstructive pulmonary disease (CHRONIC_OBSTRUCTIVE_PUL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of chronic obstructive pulmonary disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Chronic pulmonary obstruction",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

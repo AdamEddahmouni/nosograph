@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'Mungan syndrome (MUNGAN_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Mungan syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Gastroparesis",
+    "Barrett esophagus",
+    "Abnormality of the autonomic nervous system",
+    "Vesicoureteral reflux",
+    "Bilateral ptosis",
+    "Perimembranous ventricular septal defect",
+    "Autosomal recessive inheritance",
+    "Intestinal pseudo-obstruction",
+    "Abdominal pain",
+    "Pulmonic stenosis",
+    "Tricuspid regurgitation",
+    "Megaduodenum",
+    "Hypoperistalsis",
+    "Renal hypoplasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

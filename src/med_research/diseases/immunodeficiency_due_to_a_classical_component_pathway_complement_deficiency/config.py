@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'immunodeficiency due to a classical component pathway compleme
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency due to a classical component pathway complement deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Systemic lupus erythematosus",
+    "Discoid lupus rash",
+    "Recurrent pneumonia",
+    "Decreased circulating complement C4b concentration",
+    "Meningitis",
+    "Abnormality of complement system",
+    "Glomerulonephritis",
+    "Chronic diarrhea",
+    "Nephritis",
+    "Decreased circulating complement factor I concentration",
+    "Recurrent otitis media",
+    "Recurrent bronchitis",
+    "Autoimmunity",
+    "Cutaneous photosensitivity",
+    "Hepatitis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

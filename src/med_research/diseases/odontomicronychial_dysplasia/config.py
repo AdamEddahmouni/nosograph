@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'odontomicronychial dysplasia (ODONTOMICRONYCHIAL_DYSPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of odontomicronychial dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Premature eruption of permanent teeth",
+    "Short nail",
+    "Slow-growing nails",
+    "Autosomal recessive inheritance",
+    "Thin nail",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

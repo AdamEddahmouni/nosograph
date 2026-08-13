@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'Fanconi anemia complementation group V (FANCONI_ANEMIA_COMPLEM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Fanconi anemia complementation group V
-SYMPTOMS = []
+SYMPTOMS = [
+    "Childhood onset",
+    "Microcephaly",
+    "Autosomal recessive inheritance",
+    "Decreased total neutrophil count",
+    "Elevated circulating alpha-fetoprotein concentration",
+    "Thrombocytopenia",
+    "Anemia",
+    "Chromosomal breakage induced by crosslinking agents",
+    "Bone marrow hypocellularity",
+    "Short stature",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neuronal intranuclear inclusion disease (NEURONAL_INTRANUCLEAR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neuronal intranuclear inclusion disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ataxia",
+    "Miosis",
+    "Gait disturbance",
+    "Rigidity",
+    "Urinary incontinence",
+    "Syncope",
+    "Seizure",
+    "Ventriculomegaly",
+    "Autosomal dominant inheritance",
+    "Hyporeflexia",
+    "Increased CSF protein concentration",
+    "Dysarthria",
+    "Muscle weakness",
+    "EMG: decremental response of compound muscle action potential to repetitive nerve stimulation",
+    "Tremor",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

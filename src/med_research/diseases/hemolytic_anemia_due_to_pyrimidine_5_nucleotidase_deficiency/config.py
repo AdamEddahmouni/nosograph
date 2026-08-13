@@ -8,8 +8,18 @@ PIPELINE_LABEL = "hemolytic anemia due to pyrimidine 5' nucleotidase deficiency 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hemolytic anemia due to pyrimidine 5' nucleotidase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Neonatal onset",
+    "Juvenile onset",
+    "Hyperbilirubinemia",
+    "Hemoglobinuria",
+    "Reticulocytosis",
+    "Autosomal recessive inheritance",
+    "Childhood onset",
+    "Middle age onset",
+    "Hemolytic anemia",
+    "Reduced circulating pyrimidine 5-prime-nucleotidase activity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

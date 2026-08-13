@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'sweet syndrome (SWEET_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of sweet syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cystic acne",
+    "Childhood onset",
+    "Dilated cardiomyopathy",
+    "Acne inversa",
+    "Erythema",
+    "Recurrent fever",
+    "Arthralgia",
+    "Autosomal dominant inheritance",
+    "Panniculitis",
+    "Elevated circulating C-reactive protein concentration",
+    "Increased circulating interleukin 6 concentration",
+    "Pyoderma gangrenosum",
+    "Elevated erythrocyte sedimentation rate",
+    "Myalgia",
+    "Small vessel vasculitis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

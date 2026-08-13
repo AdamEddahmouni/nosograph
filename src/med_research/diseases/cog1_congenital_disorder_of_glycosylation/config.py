@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'COG1-congenital disorder of glycosylation (COG1_CONGENITAL_DIS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of COG1-congenital disorder of glycosylation
-SYMPTOMS = []
+SYMPTOMS = [
+    "Small face",
+    "Conductive hearing impairment",
+    "Feeding difficulties in infancy",
+    "Congenital onset",
+    "Recurrent infections",
+    "Short stature",
+    "Microcephaly",
+    "Talipes equinovarus",
+    "Mild global developmental delay",
+    "Global developmental delay",
+    "Intrauterine growth retardation",
+    "Renal insufficiency",
+    "Cerebral atrophy",
+    "Type II transferrin isoform profile",
+    "Shallow acetabular fossae",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

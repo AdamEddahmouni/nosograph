@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'proteasome-associated autoinflammatory syndrome 3 (PROTEASOME_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of proteasome-associated autoinflammatory syndrome 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Arthralgia",
+    "Arthritis",
+    "Flexion contracture",
+    "Recurrent infections",
+    "Hepatomegaly",
+    "Myositis",
+    "Finger swelling",
+    "Thrombocytopenia",
+    "Decreased total lymphocyte count",
+    "Failure to thrive",
+    "Hypertriglyceridemia",
+    "Increased circulating immunoglobulin concentration",
+    "Acanthosis nigricans",
+    "Anemia",
+    "Periorbital edema",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

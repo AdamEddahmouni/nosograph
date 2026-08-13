@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'hyperproinsulinemia (HYPERPROINSULINEMIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hyperproinsulinemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperglycemia",
+    "Autosomal dominant inheritance",
+    "Hyperinsulinemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

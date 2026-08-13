@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'osteochondrodysplasia (OSTEOCHONDRODYSPLASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of osteochondrodysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Flat face",
+    "Hypertelorism",
+    "Unilateral cleft lip",
+    "Pulmonary hypoplasia",
+    "Hydronephrosis",
+    "Large fleshy ears",
+    "Short femur",
+    "Webbed neck",
+    "Decreased fibular diameter",
+    "Ventricular septal defect",
+    "Thoracic hypoplasia",
+    "Hydrops fetalis",
+    "Cerebellar hypoplasia",
+    "Micrognathia",
+    "Intrauterine growth retardation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

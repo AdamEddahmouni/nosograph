@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'chronic inflammatory demyelinating polyneuropathy (CHRONIC_INF
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of chronic inflammatory demyelinating polyneuropathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Acute demyelinating polyneuropathy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

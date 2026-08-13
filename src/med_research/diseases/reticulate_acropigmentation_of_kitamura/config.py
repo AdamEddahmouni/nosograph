@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'reticulate acropigmentation of Kitamura (RETICULATE_ACROPIGMEN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of reticulate acropigmentation of Kitamura
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperkeratosis",
+    "Macule",
+    "Autosomal dominant inheritance",
+    "Juvenile onset",
+    "Childhood onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

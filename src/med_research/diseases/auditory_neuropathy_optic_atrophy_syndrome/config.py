@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'auditory neuropathy-optic atrophy syndrome (AUDITORY_NEUROPATH
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of auditory neuropathy-optic atrophy syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Visual impairment",
+    "Rod-cone dystrophy",
+    "Nystagmus",
+    "Childhood onset",
+    "Optic atrophy",
+    "Hearing impairment",
+    "Juvenile onset",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

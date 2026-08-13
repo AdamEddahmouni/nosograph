@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'clubfoot (CLUBFOOT)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of clubfoot
-SYMPTOMS = []
+SYMPTOMS = [
+    "Downslanted palpebral fissures",
+    "Hypoplasia of the corpus callosum",
+    "Median cleft palate",
+    "Popliteal pterygium",
+    "Talipes equinovarus",
+    "Enlarged cisterna magna",
+    "Low-set ears",
+    "Mirror image foot polydactyly",
+    "Preaxial foot polydactyly",
+    "Typified by incomplete penetrance",
+    "Patellar hypoplasia",
+    "Congenital onset",
+    "Absent tibia",
+    "Short stature",
+    "Bilateral talipes equinovarus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

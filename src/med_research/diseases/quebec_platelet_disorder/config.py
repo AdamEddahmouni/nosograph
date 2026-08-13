@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'Quebec platelet disorder (QUEBEC_PLATELET_DISORDER)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Quebec platelet disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Epistaxis",
+    "Joint hemorrhage",
+    "Autosomal dominant inheritance",
+    "Impaired epinephrine-induced platelet aggregation",
+    "Bruising susceptibility",
+    "Menorrhagia",
+    "Thrombocytopenia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Niemann-Pick disease type B (NIEMANN_PICK_DISEASE_TYPE_B)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Niemann-Pick disease type B
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated circulating LDL-C concentration",
+    "Decreased circulating HDL-C concentration",
+    "Dyspnea",
+    "Decreased acid sphingomyelinase activity",
+    "Arthralgia",
+    "Bone-marrow foam cells",
+    "Middle age onset",
+    "Autosomal recessive inheritance",
+    "Recurrent respiratory infections",
+    "Sea-blue histiocytosis",
+    "Diffuse reticular or finely nodular infiltrations",
+    "Hepatomegaly",
+    "Hypertriglyceridemia",
+    "Splenomegaly",
+    "Abnormal macular morphology",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'Emery-Dreifuss muscular dystrophy 4, autosomal dominant (EMERY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Emery-Dreifuss muscular dystrophy 4, autosomal dominant
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated circulating creatine kinase activity",
+    "Proximal amyotrophy",
+    "Muscular dystrophy",
+    "Proximal muscle weakness",
+    "Ventricular septal hypertrophy",
+    "Autosomal dominant inheritance",
+    "Neck muscle weakness",
+    "Childhood onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

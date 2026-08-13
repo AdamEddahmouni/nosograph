@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'pulmonary hypertension, primary, 4 (PULMONARY_HYPERTENSION_PRI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pulmonary hypertension, primary, 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Young adult onset",
+    "Increased pulmonary vascular resistance",
+    "First degree atrioventricular block",
+    "Thromboembolism",
+    "Juvenile onset",
+    "Complete right bundle branch block",
+    "Pulmonary arterial hypertension",
+    "Atrial flutter",
+    "Elevated pulmonary artery pressure",
+    "Autosomal dominant inheritance",
+    "Pulmonary arterial hypertension with lack of acute response to NO challenge",
+    "Progressive",
+    "Middle age onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

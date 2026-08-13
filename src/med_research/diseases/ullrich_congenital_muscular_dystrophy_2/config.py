@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Ullrich congenital muscular dystrophy 2 (ULLRICH_CONGENITAL_MU
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Ullrich congenital muscular dystrophy 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Motor delay",
+    "Neonatal onset",
+    "Facial palsy",
+    "Increased variability in muscle fiber diameter",
+    "Autosomal dominant inheritance",
+    "Infantile onset",
+    "Nocturnal hypoventilation",
+    "Joint hypermobility",
+    "High palate",
+    "Autosomal recessive inheritance",
+    "Areflexia",
+    "Muscular dystrophy",
+    "Kyphoscoliosis",
+    "Flexion contracture",
+    "Neonatal hypotonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

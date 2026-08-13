@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'lethal occipital encephalocele-skeletal dysplasia syndrome (LE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lethal occipital encephalocele-skeletal dysplasia syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Oligodactyly",
+    "Autosomal recessive inheritance",
+    "Brachycephaly",
+    "Arachnodactyly",
+    "Occipital encephalocele",
+    "Humeroradial synostosis",
+    "Craniosynostosis",
+    "Antenatal onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'immunodeficiency 99 with hypogammaglobulinemia and autoimmune 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 99 with hypogammaglobulinemia and autoimmune cytopenias
-SYMPTOMS = []
+SYMPTOMS = [
+    "Follicular hyperplasia",
+    "Vitiligo",
+    "Childhood onset",
+    "Growth delay",
+    "Decreased total lymphocyte count",
+    "Decreased circulating immunoglobulin concentration",
+    "Recurrent sinopulmonary infections",
+    "Decreased regulatory T cell proportion",
+    "Lymphadenopathy",
+    "Autosomal recessive inheritance",
+    "Autoimmune thrombocytopenia",
+    "Decreased class-switched memory B cell proportion",
+    "Absent specific antibody response",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

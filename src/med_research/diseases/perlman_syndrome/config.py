@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Perlman syndrome (PERLMAN_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Perlman syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Growth abnormality",
+    "Autosomal recessive inheritance",
+    "Open mouth",
+    "Wide nasal bridge",
+    "Nephroblastoma",
+    "Cryptorchidism",
+    "Tented upper lip vermilion",
+    "Nephrogenic rest",
+    "Everted upper lip vermilion",
+    "Polyhydramnios",
+    "Large for gestational age",
+    "Pancreatic islet-cell hyperplasia",
+    "Renal hamartoma",
+    "Micrognathia",
+    "Low-set ears",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'X-linked cone dysfunction syndrome with myopia (X_LINKED_CONE_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked cone dysfunction syndrome with myopia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Deuteranopia",
+    "Protanopia",
+    "X-linked recessive inheritance",
+    "Astigmatism",
+    "Optic nerve hypoplasia",
+    "Decreased light- and dark-adapted electroretinogram amplitude",
+    "Abnormal retinal pigmentation",
+    "High myopia",
+    "Amblyopia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'oculo-palato-cerebral syndrome (OCULO_PALATO_CEREBRAL_SYNDROME
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of oculo-palato-cerebral syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Cleft palate",
+    "Microcephaly",
+    "Spasticity",
+    "Short stature",
+    "Remnants of the hyaloid vascular system",
+    "Leukocoria",
+    "Intellectual disability",
+    "Microphthalmia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

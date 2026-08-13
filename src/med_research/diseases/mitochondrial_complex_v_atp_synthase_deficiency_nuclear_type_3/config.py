@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'mitochondrial complex V (ATP synthase) deficiency nuclear type
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mitochondrial complex V (ATP synthase) deficiency nuclear type 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "3-Methylglutaconic aciduria",
+    "Lactic acidosis",
+    "Decreased activity of mitochondrial ATP synthase complex",
+    "Hypertrophic cardiomyopathy",
+    "Intellectual disability",
+    "Autosomal recessive inheritance",
+    "Peripheral neuropathy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

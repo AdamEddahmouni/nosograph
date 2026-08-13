@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'adrenal gland pheochromocytoma (ADRENAL_GLAND_PHEOCHROMOCYTOMA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of adrenal gland pheochromocytoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Renal artery stenosis",
+    "Episodic hypertension",
+    "Tachycardia",
+    "Hypertensive retinopathy",
+    "Hypercalcemia",
+    "Elevated urinary norepinephrine level",
+    "Hyperhidrosis",
+    "Developmental cataract",
+    "Autosomal dominant inheritance",
+    "Positive regitine blocking test",
+    "Hemangioma",
+    "Neoplasm",
+    "Cerebral hemorrhage",
+    "Proteinuria",
+    "Pheochromocytoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

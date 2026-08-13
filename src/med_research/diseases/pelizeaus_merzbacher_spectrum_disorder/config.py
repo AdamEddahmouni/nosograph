@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Pelizeaus-Merzbacher spectrum disorder (PELIZEAUS_MERZBACHER_S
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Pelizeaus-Merzbacher spectrum disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyporeflexia",
+    "Dystonia",
+    "Abnormality of the nervous system",
+    "Cerebellar vermis atrophy",
+    "Intellectual disability",
+    "Global developmental delay",
+    "Urinary urgency",
+    "Infantile onset",
+    "Progressive spastic quadriplegia",
+    "Scoliosis",
+    "Seizure",
+    "Slowly progressive",
+    "Delayed speech and language development",
+    "Congenital laryngeal stridor",
+    "Microcephaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

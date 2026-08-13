@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'immunodeficiency 33 (IMMUNODEFICIENCY_33)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 33
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pneumocystis jirovecii pneumonia",
+    "Increased circulating IgA concentration",
+    "Decreased circulating IgM concentration",
+    "Disseminated non-tuberculous mycobacterial infection",
+    "Delayed eruption of teeth",
+    "Conical tooth",
+    "Infantile onset",
+    "Immunodeficiency",
+    "Hypodontia",
+    "X-linked recessive inheritance",
+    "Recurrent bacterial infections",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

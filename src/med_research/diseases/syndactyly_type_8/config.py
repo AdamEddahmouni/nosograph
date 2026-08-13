@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'syndactyly type 8 (SYNDACTYLY_TYPE_8)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of syndactyly type 8
-SYMPTOMS = []
+SYMPTOMS = [
+    "2-3 toe cutaneous syndactyly",
+    "Congenital onset",
+    "Short 5th metacarpal",
+    "X-linked recessive inheritance",
+    "4-5 metacarpal synostosis",
+    "Clinodactyly of the 5th finger",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

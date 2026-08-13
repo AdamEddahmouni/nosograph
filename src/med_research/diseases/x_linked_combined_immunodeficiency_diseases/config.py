@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'X-Linked Combined Immunodeficiency Diseases (X_LINKED_COMBINED
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-Linked Combined Immunodeficiency Diseases
-SYMPTOMS = []
+SYMPTOMS = [
+    "X-linked recessive inheritance",
+    "Abnormal total B cell count",
+    "Infantile onset",
+    "Recurrent bronchitis",
+    "HP_0005407",
+    "Combined immunodeficiency",
+    "Otitis media",
+    "Sinusitis",
+    "Pneumonia",
+    "Decreased total CD8+ T cell proportion",
+    "Abnormal total T cell number",
+    "Abnormal total natural killer cell count",
+    "Decreased circulating IgG concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'oculodentodigital dysplasia, autosomal recessive (OCULODENTODI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of oculodentodigital dysplasia, autosomal recessive
-SYMPTOMS = []
+SYMPTOMS = [
+    "2-4 toe cutaneous syndactyly",
+    "Microcornea",
+    "Myopia",
+    "Downslanted palpebral fissures",
+    "Short foot",
+    "Large earlobe",
+    "Long nose",
+    "Persistent pupillary membrane",
+    "Congenital onset",
+    "Broad long bones",
+    "Macrodontia of permanent maxillary central incisor",
+    "Microphthalmia",
+    "Delayed gross motor development",
+    "Frontal bossing",
+    "Telecanthus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

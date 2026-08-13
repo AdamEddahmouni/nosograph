@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'nephrotic syndrome, IIa 26 (NEPHROTIC_SYNDROME_IIA_26)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of nephrotic syndrome, IIa 26
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Focal segmental glomerulosclerosis",
+    "Stage 5 chronic kidney disease",
+    "Steroid-resistant nephrotic syndrome",
+    "Childhood onset",
+    "Nephrotic syndrome",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

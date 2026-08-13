@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autoimmune lymphoproliferative syndrome type 2A (AUTOIMMUNE_LY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autoimmune lymphoproliferative syndrome type 2A
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autoimmune hemolytic anemia",
+    "Decreased T cell apoptosis",
+    "Antinuclear antibody positivity",
+    "Hepatomegaly",
+    "Malar rash",
+    "Platelet antibody positive",
+    "Increased HLA-DR+ CD4+ T cell proportion",
+    "Anti-smooth muscle antibody positivity",
+    "Reduced delayed hypersensitivity",
+    "Increased total B cell count",
+    "Lymphadenopathy",
+    "Nephrotic syndrome",
+    "Increased circulating IgM concentration",
+    "Autosomal dominant inheritance",
+    "Iron deficiency anemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

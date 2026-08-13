@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Toriello-Lacassie-Droste syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Chorioretinal atrophy",
+    "Atrial septal defect",
+    "Bladder exstrophy",
+    "Astigmatism",
+    "Epicanthus",
+    "Preauricular skin tag",
+    "Lymphedema",
+    "Depressed nasal bridge",
+    "Microcornea",
+    "Global developmental delay",
+    "Strabismus",
+    "Seizure",
+    "Aplasia cutis congenita",
+    "Hyperpigmented streaks",
+    "Hyperpigmentation of the skin",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

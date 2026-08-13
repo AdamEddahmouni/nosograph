@@ -8,8 +8,13 @@ PIPELINE_LABEL = "Bladder cancer (BLADDER_CANCER)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Bladder cancer
-SYMPTOMS = []
+SYMPTOMS = [
+    "Non-small cell lung carcinoma",
+    "Typified by somatic mosaicism",
+    "Lung adenocarcinoma",
+    "Autosomal dominant inheritance",
+    "Alveolar cell carcinoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'orthostatic hypotension 1 (ORTHOSTATIC_HYPOTENSION_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of orthostatic hypotension 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Brachydactyly",
+    "High palate",
+    "Neonatal hypoglycemia",
+    "Increased blood urea nitrogen",
+    "Intermittent hypothermia",
+    "Reduced circulating prolactin concentration",
+    "Nocturia",
+    "Hypomagnesemia",
+    "Nasal congestion",
+    "Autosomal recessive inheritance",
+    "Joint hypermobility",
+    "Weakness of facial musculature",
+    "Hyporeflexia",
+    "Elevated circulating dihydroxyphenylacetic acid concentration",
+    "Ptosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

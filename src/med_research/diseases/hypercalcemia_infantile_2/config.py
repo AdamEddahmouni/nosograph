@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'hypercalcemia, infantile, 2 (HYPERCALCEMIA_INFANTILE_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypercalcemia, infantile, 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypercalcemia",
+    "Hypophosphatemia",
+    "Medullary nephrocalcinosis",
+    "Failure to thrive",
+    "Polyuria",
+    "Renal phosphate wasting",
+    "Hypercalciuria",
+    "Autosomal recessive inheritance",
+    "Nephrocalcinosis",
+    "Hypotonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

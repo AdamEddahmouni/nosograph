@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'X-linked lethal multiple pterygium syndrome (X_LINKED_LETHAL_M
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked lethal multiple pterygium syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Epicanthus",
+    "Hypertelorism",
+    "X-linked inheritance",
+    "Low-set ears",
+    "Increased susceptibility to fractures",
+    "Hypoplastic ventricle",
+    "Cleft upper lip",
+    "Abnormal facial shape",
+    "Abnormal cervical curvature",
+    "Polyhydramnios",
+    "Fetal akinesia sequence",
+    "Amyoplasia",
+    "Multiple pterygia",
+    "Thin ribs",
+    "Cleft palate",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

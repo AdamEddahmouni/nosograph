@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Ehlers-Danlos syndrome, vascular type (EHLERS_DANLOS_SYNDROME_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Ehlers-Danlos syndrome, vascular type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Spontaneous pneumothorax",
+    "Cigarette-paper scars",
+    "Autosomal dominant inheritance",
+    "Metacarpophalangeal joint hyperextensibility",
+    "Molluscoid pseudotumors",
+    "Hypermobility of interphalangeal joints",
+    "Repeated pneumothoraces",
+    "Ecchymosis",
+    "Combined cystic and ground-glass pattern on pulmonary HRCT",
+    "Chest pain",
+    "Pulmonary bulla",
+    "Cryptorchidism",
+    "Dermal translucency",
+    "Periodontitis",
+    "Arterial rupture",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

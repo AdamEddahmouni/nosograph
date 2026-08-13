@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'immunodeficiency 102 (IMMUNODEFICIENCY_102)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 102
-SYMPTOMS = []
+SYMPTOMS = [
+    "Partial absence of specific antibody response to protein-conjugated Haemophilus influenzae type b vaccine",
+    "Partial absence of specific antibody response to unconjugated pneumococcus polysaccharide",
+    "Anemia",
+    "Decreased circulating IgG concentration",
+    "Severe influenza infection",
+    "Verrucae",
+    "Increased circulating interleukin 6 concentration",
+    "Chronic rhinitis",
+    "Increased CD8+ TEMRA T cell proportion",
+    "Decreased circulating IgA concentration",
+    "Reduced total natural killer cell count",
+    "Hepatomegaly",
+    "Aphthous ulcer",
+    "Decreased naive CD4+ T cell proportion",
+    "HP_0005407",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'methylmalonic acidemia due to transcobalamin receptor defect (
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of methylmalonic acidemia due to transcobalamin receptor defect
-SYMPTOMS = []
+SYMPTOMS = [
+    "Neonatal onset",
+    "Reduced cellular cobalamin uptake",
+    "Infantile onset",
+    "Congenital onset",
+    "Methylmalonic aciduria",
+    "Hyperhomocystinemia",
+    "Autosomal recessive inheritance",
+    "Methylmalonic acidemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

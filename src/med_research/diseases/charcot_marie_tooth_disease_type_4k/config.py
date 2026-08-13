@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Charcot-Marie-Tooth disease type 4K (CHARCOT_MARIE_TOOTH_DISEA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Charcot-Marie-Tooth disease type 4K
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased circulating lactate concentration",
+    "Kyphoscoliosis",
+    "Autosomal recessive inheritance",
+    "Sensorineural hearing impairment",
+    "Hearing impairment",
+    "Dystonia",
+    "Peripheral neuropathy",
+    "Easy fatigability",
+    "Skeletal muscle atrophy",
+    "Horizontal nystagmus",
+    "Axonal loss",
+    "Ataxia",
+    "Variable expressivity",
+    "Areflexia",
+    "Peripheral demyelination",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

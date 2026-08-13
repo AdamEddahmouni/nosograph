@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hypertrophic cardiomyopathy 6 (HYPERTROPHIC_CARDIOMYOPATHY_6)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypertrophic cardiomyopathy 6
-SYMPTOMS = []
+SYMPTOMS = [
+    "Asymmetric septal hypertrophy",
+    "Sinus bradycardia",
+    "Congestive heart failure",
+    "Atrial fibrillation",
+    "Syncope",
+    "Aborted sudden cardiac death",
+    "Autosomal dominant inheritance",
+    "Ventricular preexcitation",
+    "Wolff-Parkinson-White syndrome",
+    "Palpitations",
+    "Shortened PR interval",
+    "Atrioventricular block",
+    "Myofiber disarray",
+    "Chest pain",
+    "Hypertrophic cardiomyopathy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Marshall syndrome (MARSHALL_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Marshall syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pierre-Robin sequence",
+    "Irregular femoral epiphysis",
+    "Short stature",
+    "Radial bowing",
+    "Absent frontal sinuses",
+    "Clinodactyly of the 5th finger",
+    "Irregular proximal tibial epiphyses",
+    "Thick lower lip vermilion",
+    "Lens luxation",
+    "Depressed nasal bridge",
+    "Epicanthus",
+    "Macrodontia of permanent maxillary central incisor",
+    "Malar flattening",
+    "Thickened calvaria",
+    "Clinodactyly of the 4th finger",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

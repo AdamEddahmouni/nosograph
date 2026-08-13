@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Rubinstein-Taybi syndrome due to EP300 haploinsufficiency (RUB
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Rubinstein-Taybi syndrome due to EP300 haploinsufficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Low hanging columella",
+    "Thick eyebrow",
+    "Posteriorly rotated ears",
+    "Scoliosis",
+    "Prominent nose",
+    "High palate",
+    "Microcephaly",
+    "Retrognathia",
+    "Highly arched eyebrow",
+    "Delayed gross motor development",
+    "Narrow mouth",
+    "Micrognathia",
+    "Hirsutism",
+    "Sporadic",
+    "Feeding difficulties",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

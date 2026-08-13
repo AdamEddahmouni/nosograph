@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypoalphalipoproteinemia, primary, 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased circulating HDL-C concentration",
+    "Hypertriglyceridemia",
+    "Premature coronary artery atherosclerosis",
+    "Autosomal dominant inheritance",
+    "Myocardial infarction",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

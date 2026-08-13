@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'severe early-childhood-onset retinal dystrophy (SEVERE_EARLY_C
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of severe early-childhood-onset retinal dystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Macular degeneration",
+    "Bull's eye maculopathy",
+    "HP_0008035",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

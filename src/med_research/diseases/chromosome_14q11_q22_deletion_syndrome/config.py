@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'chromosome 14q11-q22 deletion syndrome (CHROMOSOME_14Q11_Q22_D
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of chromosome 14q11-q22 deletion syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Severe global developmental delay",
+    "Growth delay",
+    "Delayed skeletal maturation",
+    "Infantile onset",
+    "Seizure",
+    "Hypermetropia",
+    "Deeply set eye",
+    "Poor head control",
+    "Depressed nasal bridge",
+    "Gastroesophageal reflux",
+    "Lateral ventricular asymmetry",
+    "Neonatal onset",
+    "Prominent metopic ridge",
+    "Macroglossia",
+    "Neonatal hypotonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

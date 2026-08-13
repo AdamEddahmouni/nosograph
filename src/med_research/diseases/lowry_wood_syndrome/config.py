@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Lowry-Wood syndrome (LOWRY_WOOD_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Lowry-Wood syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Peripheral visual field loss",
+    "Autosomal recessive inheritance",
+    "Prominent nose",
+    "Clinodactyly of the 5th finger",
+    "Nystagmus",
+    "Pigmentary retinopathy",
+    "Elbow flexion contracture",
+    "Multiple joint dislocation",
+    "Intrauterine growth retardation",
+    "Nyctalopia",
+    "Mild intellectual disability",
+    "Multiple epiphyseal dysplasia",
+    "Irregular epiphyses",
+    "Squared iliac bones",
+    "Small epiphyses",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

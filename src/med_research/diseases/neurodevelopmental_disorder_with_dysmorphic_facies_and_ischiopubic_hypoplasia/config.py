@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neurodevelopmental disorder with dysmorphic facies and ischiop
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neurodevelopmental disorder with dysmorphic facies and ischiopubic hypoplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ventricular septal defect",
+    "Postnatal growth retardation",
+    "Neurodegeneration",
+    "Decreased circulating IgG concentration",
+    "Recurrent urinary tract infections",
+    "Hypoplasia of the corpus callosum",
+    "Joint stiffness",
+    "Recurrent skin infections",
+    "Joint dislocation",
+    "Short stature",
+    "Splenomegaly",
+    "Reduced bone mineral density",
+    "Decreased total lymphocyte count",
+    "Hypotonia",
+    "Global developmental delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'congenital analbuminemia (CONGENITAL_ANALBUMINEMIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital analbuminemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Recurrent lower respiratory tract infections",
+    "Hypotension",
+    "Edema",
+    "Osteoporosis",
+    "Patent ductus arteriosus",
+    "Hypercholesterolemia",
+    "Fatigue",
+    "Global developmental delay",
+    "Elevated circulating LDL-C concentration",
+    "Lipodystrophy",
+    "Hypoalbuminemia",
+    "Oligohydramnios",
+    "Autosomal recessive inheritance",
+    "Elevated circulating transferrin concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

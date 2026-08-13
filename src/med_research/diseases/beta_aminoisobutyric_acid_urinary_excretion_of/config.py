@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'beta-aminoisobutyric acid, urinary excretion of (BETA_AMINOISO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of beta-aminoisobutyric acid, urinary excretion of
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Beta-aminoisobutyric aciduria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

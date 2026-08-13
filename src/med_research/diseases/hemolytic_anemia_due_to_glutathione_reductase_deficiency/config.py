@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'hemolytic anemia due to glutathione reductase deficiency (HEMO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hemolytic anemia due to glutathione reductase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Reduced erythrocyte glutathione reductase activity",
+    "Fava bean-induced hemolytic anemia",
+    "Cataract",
+    "Hyperbilirubinemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

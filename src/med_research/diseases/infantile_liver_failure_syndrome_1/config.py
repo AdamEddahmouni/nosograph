@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'infantile liver failure syndrome 1 (INFANTILE_LIVER_FAILURE_SY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of infantile liver failure syndrome 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hepatic steatosis",
+    "Microcephaly",
+    "Autosomal recessive inheritance",
+    "Seizure",
+    "Failure to thrive",
+    "Long fingers",
+    "Long toe",
+    "Frontal bossing",
+    "Full cheeks",
+    "Macrocytic anemia",
+    "Anemia",
+    "Elevated circulating hepatic transaminase concentration",
+    "Generalized hypotonia",
+    "Acute hepatic failure",
+    "Delayed gross motor development",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

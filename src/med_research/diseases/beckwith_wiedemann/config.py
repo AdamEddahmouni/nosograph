@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Beckwith-Wiedemann syndrome (BECKWITH_WIEDEMANN)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Beckwith-Wiedemann syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Gonadoblastoma",
+    "Autosomal dominant inheritance",
+    "Adrenocortical carcinoma",
+    "Hemihypertrophy",
+    "Placental mesenchymal dysplasia",
+    "Omphalocele",
+    "Large fontanelles",
+    "Prominent occiput",
+    "Cryptorchidism",
+    "Overgrowth of external genitalia",
+    "Overgrowth",
+    "Diastasis recti",
+    "Hepatomegaly",
+    "Adrenocortical cytomegaly",
+    "Midface retrusion",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

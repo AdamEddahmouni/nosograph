@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'corticosterone methyloxidase type 2 deficiency (CORTICOSTERONE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of corticosterone methyloxidase type 2 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyponatremia",
+    "Dehydration",
+    "Growth delay",
+    "Hyperkalemia",
+    "Increased circulating corticosterone level",
+    "Orthostatic hypotension",
+    "Increased circulating renin concentration",
+    "Increased circulating 18-hydroxycortisone level",
+    "Renal salt wasting",
+    "Autosomal recessive inheritance",
+    "Neonatal onset",
+    "Failure to thrive",
+    "Decreased circulating aldosterone concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

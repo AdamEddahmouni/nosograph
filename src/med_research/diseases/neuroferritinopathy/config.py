@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neuroferritinopathy (NEUROFERRITINOPATHY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neuroferritinopathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cavitation of the basal ganglia",
+    "Babinski sign",
+    "Hyperreflexia",
+    "Choreoathetosis",
+    "Middle age onset",
+    "Disinhibition",
+    "Progressive",
+    "Ataxia",
+    "Bradykinesia",
+    "Neurodegeneration",
+    "Anarthria",
+    "Decreased circulating ferritin concentration",
+    "Chorea",
+    "Writer's cramp",
+    "Laryngeal dystonia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

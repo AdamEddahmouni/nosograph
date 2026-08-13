@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'sialidosis type 2 (SIALIDOSIS_TYPE_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of sialidosis type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Renal insufficiency",
+    "Cataract",
+    "Increased urinary O-linked sialopeptides",
+    "Sensorineural hearing impairment",
+    "Myoclonus",
+    "Pericardial effusion",
+    "Cherry red spot of the macula",
+    "Autosomal recessive inheritance",
+    "Hepatomegaly",
+    "Hypotonia",
+    "Coarse facial features",
+    "Hydrops fetalis",
+    "Abnormal facial shape",
+    "Muscle weakness",
+    "Intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

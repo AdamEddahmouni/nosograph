@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'intellectual developmental disorder 60 with seizures (INTELLEC
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of intellectual developmental disorder 60 with seizures
-SYMPTOMS = []
+SYMPTOMS = [
+    "Atypical absence seizure",
+    "Generalized myoclonic-atonic seizure",
+    "Gait ataxia",
+    "Generalized hypotonia",
+    "Chorea",
+    "Thin upper lip vermilion",
+    "EEG with spike-wave complexes",
+    "EEG with polyspike wave complexes",
+    "Absence seizure with eyelid myoclonia",
+    "Tremor",
+    "Focal impaired awareness seizure",
+    "Atonic seizure",
+    "Truncal ataxia",
+    "Abnormal cerebral white matter morphology",
+    "Autistic behavior",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

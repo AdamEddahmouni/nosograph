@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'hematuria, benign familial, 1 (HEMATURIA_BENIGN_FAMILIAL_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hematuria, benign familial, 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Thin glomerular basement membrane",
+    "Nonprogressive",
+    "Autosomal dominant inheritance",
+    "Hematuria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

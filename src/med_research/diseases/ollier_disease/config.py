@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'Ollier disease (OLLIER_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Ollier disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Multiple enchondromatosis",
+    "Autosomal dominant inheritance",
+    "Hemangioma",
+    "Chondrosarcoma",
+    "Abnormal long bone morphology",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'pyruvate kinase deficiency of red cells (PYRUVATE_KINASE_DEFIC
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pyruvate kinase deficiency of red cells
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cholelithiasis",
+    "Intrauterine growth retardation",
+    "Pallor",
+    "Nonimmune hydrops fetalis",
+    "Childhood onset",
+    "Increased red cell osmotic fragility",
+    "Decreased circulating haptoglobin concentration",
+    "Decreased hemoglobin concentration",
+    "Congenital onset",
+    "Autosomal recessive inheritance",
+    "Chronic hemolytic anemia",
+    "Unconjugated hyperbilirubinemia",
+    "Erythroid hyperplasia",
+    "Jaundice",
+    "Splenomegaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

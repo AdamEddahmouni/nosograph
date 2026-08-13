@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'trichomegaly-retina pigmentary degeneration-dwarfism syndrome 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of trichomegaly-retina pigmentary degeneration-dwarfism syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "High myopia",
+    "Short stature",
+    "Polydactyly",
+    "Gait ataxia",
+    "Central heterochromia",
+    "Delayed puberty",
+    "Small for gestational age",
+    "Unsteady gait",
+    "Hypoplasia of penis",
+    "Micropenis",
+    "Alopecia",
+    "Severe short stature",
+    "Distal muscle weakness",
+    "Obesity",
+    "Hypogonadism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

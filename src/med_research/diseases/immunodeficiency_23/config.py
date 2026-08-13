@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'immunodeficiency 23 (IMMUNODEFICIENCY_23)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 23
-SYMPTOMS = []
+SYMPTOMS = [
+    "Persistent EBV viremia",
+    "Increased circulating IgM concentration",
+    "Abscess",
+    "Unusual molluscum contagiosum",
+    "Allergic rhinitis",
+    "Somatic sensory dysfunction",
+    "Hyporeflexia",
+    "Hodgkin lymphoma",
+    "Asthma",
+    "Severe varicella zoster infection",
+    "Membranoproliferative glomerulonephritis",
+    "Increased total eosinophil count",
+    "Abnormal CNS myelination",
+    "Scoliosis",
+    "Vasculitis in the skin",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

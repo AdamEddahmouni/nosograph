@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'congenital myopathy 2b, severe infantile, autosomal recessive 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital myopathy 2b, severe infantile, autosomal recessive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypotonia",
+    "Poor head control",
+    "Increased variability in muscle fiber diameter",
+    "Respiratory insufficiency",
+    "Delayed ability to sit",
+    "Feeding difficulties",
+    "Congenital onset",
+    "Autosomal recessive inheritance",
+    "Increased endomysial connective tissue",
+    "Death in infancy",
+    "Nemaline bodies",
+    "Mildly elevated creatine kinase",
+    "Death in childhood",
+    "Generalized muscle weakness",
+    "Neonatal death",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mitochondrial DNA depletion syndrome, encephalomyopathic form 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mitochondrial DNA depletion syndrome, encephalomyopathic form with methylmalonic aciduria
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sensorineural hearing impairment",
+    "Ptosis",
+    "Generalized-onset seizure",
+    "Short stature",
+    "Severe global developmental delay",
+    "Motor delay",
+    "Facial diplegia",
+    "Microcytic anemia",
+    "Infantile onset",
+    "Infantile spasms",
+    "Small for gestational age",
+    "Respiratory insufficiency due to muscle weakness",
+    "Inability to walk",
+    "Dystonia",
+    "Loss of ability to walk in early childhood",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

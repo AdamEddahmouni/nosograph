@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'paroxysmal extreme pain disorder (PAROXYSMAL_EXTREME_PAIN_DISO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of paroxysmal extreme pain disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Lacrimation abnormality",
+    "Mandibular pain",
+    "Tachycardia",
+    "Ocular pain",
+    "Impaired pain sensation",
+    "Bradycardia",
+    "Rhinorrhea",
+    "Autosomal dominant inheritance",
+    "Neonatal onset",
+    "Flushing",
+    "Anal pain",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

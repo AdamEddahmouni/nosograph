@@ -8,8 +8,19 @@ PIPELINE_LABEL = "Stargardt disease (STARGARDT_DISEASE)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Stargardt disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Macular dystrophy",
+    "Macular degeneration",
+    "Retinal flecks",
+    "Autosomal dominant inheritance",
+    "Macular flecks",
+    "Macular atrophy",
+    "Bull's eye maculopathy",
+    "Visual impairment",
+    "Autosomal recessive inheritance",
+    "HP_0008035",
+    "Reduced visual acuity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autosomal recessive osteopetrosis 3 (AUTOSOMAL_RECESSIVE_OSTEO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal recessive osteopetrosis 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Intellectual disability",
+    "Visual loss",
+    "Anemia",
+    "Basal ganglia calcification",
+    "Hepatosplenomegaly",
+    "Elevated serum acid phosphatase",
+    "Osteopetrosis",
+    "Distal renal tubular acidosis",
+    "Periodic hypokalemic paresis",
+    "Cerebral calcification",
+    "Optic nerve compression",
+    "Cranial hyperostosis",
+    "Diaphyseal sclerosis",
+    "Visual impairment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

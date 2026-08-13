@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'Pelger-Huet-like anomaly and episodic fever with abdominal pai
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Pelger-Huet-like anomaly and episodic fever with abdominal pain
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyposegmentation of neutrophil nuclei",
+    "Juvenile onset",
+    "Recurrent fever",
+    "Impaired neutrophil chemotaxis",
+    "Abdominal pain",
+    "Recurrent abscess formation",
+    "Paronychia",
+    "Early young adult onset",
+    "Epistaxis",
+    "Autosomal recessive inheritance",
+    "Recurrent aphthous stomatitis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

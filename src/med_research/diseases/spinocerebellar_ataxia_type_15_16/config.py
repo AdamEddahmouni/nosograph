@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spinocerebellar ataxia type 15/16 (SPINOCEREBELLAR_ATAXIA_TYPE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spinocerebellar ataxia type 15/16
-SYMPTOMS = []
+SYMPTOMS = [
+    "Tremor",
+    "Postural tremor",
+    "Dysarthria",
+    "Impaired tandem gait",
+    "Young adult onset",
+    "Late onset",
+    "Neurodevelopmental delay",
+    "Limb dysmetria",
+    "Dyskinesia",
+    "Intellectual disability",
+    "Cerebral palsy",
+    "Autosomal dominant inheritance",
+    "Limb ataxia",
+    "Dysphagia",
+    "Impaired smooth pursuit",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

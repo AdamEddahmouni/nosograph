@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'infantile-onset X-linked spinal muscular atrophy (INFANTILE_ON
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of infantile-onset X-linked spinal muscular atrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Respiratory insufficiency due to muscle weakness",
+    "Abnormality of metabolism/homeostasis",
+    "Weak cry",
+    "Inguinal hernia",
+    "Micrognathia",
+    "X-linked recessive inheritance",
+    "Flexion contracture",
+    "Areflexia",
+    "Degeneration of anterior horn cells",
+    "Myopathic facies",
+    "Cryptorchidism",
+    "Tongue fasciculations",
+    "Severe muscular hypotonia",
+    "Myopathy",
+    "Neonatal onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

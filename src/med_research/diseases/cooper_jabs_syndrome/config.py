@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'Cooper-Jabs syndrome (COOPER_JABS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Cooper-Jabs syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ventricular septal defect",
+    "Atresia of the external auditory canal",
+    "Intellectual disability",
+    "Autosomal recessive inheritance",
+    "Talipes equinovarus",
+    "Abnormal abdomen morphology",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

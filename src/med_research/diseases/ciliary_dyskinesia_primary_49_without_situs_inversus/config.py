@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'ciliary dyskinesia, primary, 49, without situs inversus (CILIA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ciliary dyskinesia, primary, 49, without situs inversus
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased nasal nitric oxide",
+    "Ciliary dyskinesia",
+    "Nasal polyposis",
+    "Chronic cough",
+    "Male infertility",
+    "Bronchiectasis",
+    "Childhood onset",
+    "Recurrent sinusitis",
+    "Autosomal recessive inheritance",
+    "Situs inversus totalis",
+    "Coiled sperm flagella",
+    "Recurrent respiratory infections",
+    "Short sperm flagella",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

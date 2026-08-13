@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'X-linked retinoschisis (X_LINKED_RETINOSCHISIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked retinoschisis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Retinoschisis",
+    "ERG: Reduced dark-adapted b-wave amplitude",
+    "X-linked recessive inheritance",
+    "Mizuo phenomenon",
+    "Progressive visual loss",
+    "Vitreous hemorrhage",
+    "Retinal pigment epithelial atrophy",
+    "Peripheral cystoid retinal degeneration",
+    "Retinal detachment",
+    "Macular atrophy",
+    "Hypermetropia",
+    "Retinal atrophy",
+    "Retinal degeneration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

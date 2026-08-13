@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'Leber congenital amaurosis with early-onset deafness (LEBER_CO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Leber congenital amaurosis with early-onset deafness
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sensorineural hearing impairment",
+    "High hypermetropia",
+    "Congenital onset",
+    "Retinal degeneration",
+    "Photophobia",
+    "Childhood onset",
+    "Reduced visual acuity",
+    "Nystagmus",
+    "Retinal pigment epithelial mottling",
+    "Peripapillary atrophy",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

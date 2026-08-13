@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Woodhouse-Sakati syndrome (WOODHOUSE_SAKATI_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Woodhouse-Sakati syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal T-wave",
+    "Anodontia",
+    "Prominent nasal bridge",
+    "Decreased circulating insulin-like growth factor 1 concentration",
+    "Elevated circulating thyroid-stimulating hormone concentration",
+    "Hearing impairment",
+    "Triangular face",
+    "Abnormality of extrapyramidal motor function",
+    "Fine hair",
+    "Hypoplasia of the fallopian tube",
+    "Diabetes mellitus",
+    "Alopecia",
+    "Psychosis",
+    "Hallucinations",
+    "Hypergonadotropic hypogonadism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

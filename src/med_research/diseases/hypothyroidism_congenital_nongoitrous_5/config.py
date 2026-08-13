@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'hypothyroidism, congenital, nongoitrous, 5 (HYPOTHYROIDISM_CON
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypothyroidism, congenital, nongoitrous, 5
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital hypothyroidism",
+    "Thyroid agenesis",
+    "Hypothyroidism",
+    "Patent foramen ovale",
+    "Elevated circulating thyroid-stimulating hormone concentration",
+    "Growth delay",
+    "Severe intellectual disability",
+    "Decreased circulating free T4 concentration",
+    "Decreased circulating free T3",
+    "Ectopic thyroid",
+    "Autosomal dominant inheritance",
+    "Mitral regurgitation",
+    "Thyroid hypoplasia",
+    "HP_0006887",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

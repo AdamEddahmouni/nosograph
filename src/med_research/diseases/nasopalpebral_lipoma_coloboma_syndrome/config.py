@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'nasopalpebral lipoma-coloboma syndrome (NASOPALPEBRAL_LIPOMA_C
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of nasopalpebral lipoma-coloboma syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Broad forehead",
+    "Wide nasal bridge",
+    "Microphthalmia",
+    "Depressed nasal bridge",
+    "Hypertelorism",
+    "Clinodactyly of the 5th finger",
+    "Ectopic lacrimal punctum",
+    "Epiphora",
+    "Dolichocephaly",
+    "Congenital onset",
+    "Upper eyelid coloboma",
+    "Lower eyelid coloboma",
+    "Low-set ears",
+    "Conjunctival hyperemia",
+    "Absent lacrimal punctum",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

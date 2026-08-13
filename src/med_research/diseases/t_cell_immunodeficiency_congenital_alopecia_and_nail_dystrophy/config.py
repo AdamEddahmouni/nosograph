@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'T-cell immunodeficiency, congenital alopecia, and nail dystrop
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of T-cell immunodeficiency, congenital alopecia, and nail dystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "HP_0008165",
+    "Autosomal recessive inheritance",
+    "Ridged nail",
+    "Alopecia",
+    "Decreased total T cell count",
+    "Nail pits",
+    "Nail dystrophy",
+    "Severe T-cell immunodeficiency",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

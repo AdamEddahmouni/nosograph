@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'autosomal dominant keratitis (AUTOSOMAL_DOMINANT_KERATITIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal dominant keratitis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Opacification of the corneal stroma",
+    "Keratitis",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

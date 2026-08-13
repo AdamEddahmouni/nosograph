@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'osteogenesis imperfecta type 2 (OSTEOGENESIS_IMPERFECTA_TYPE_2
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of osteogenesis imperfecta type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Multiple prenatal fractures",
+    "Small for gestational age",
+    "Bell-shaped thorax",
+    "Abnormal pelvic girdle bone morphology",
+    "Platyspondyly",
+    "Thoracic hypoplasia",
+    "Nonimmune hydrops fetalis",
+    "Crumpled long bones",
+    "Multiple rib fractures",
+    "Large fontanelles",
+    "Absent ossification of calvaria",
+    "Disproportionate short-limb short stature",
+    "Recurrent fractures",
+    "Thin skin",
+    "Wormian bones",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

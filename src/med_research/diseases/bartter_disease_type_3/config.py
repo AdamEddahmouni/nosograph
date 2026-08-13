@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Bartter disease type 3 (BARTTER_DISEASE_TYPE_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Bartter disease type 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Generalized muscle weakness",
+    "Hypokalemia",
+    "Hyperactive renin-angiotensin system",
+    "Juvenile onset",
+    "Increased urinary potassium",
+    "Abnormal sclera morphology",
+    "Dehydration",
+    "Impaired renal tubular reabsorption of chloride",
+    "Hypotension",
+    "Hypocalciuria",
+    "Nephrocalcinosis",
+    "Hyperchloriduria",
+    "Congenital onset",
+    "Infantile onset",
+    "Abnormal choroid morphology",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

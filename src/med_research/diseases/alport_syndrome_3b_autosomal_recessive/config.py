@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'Alport syndrome 3b, autosomal recessive (ALPORT_SYNDROME_3B_AU
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Alport syndrome 3b, autosomal recessive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Thin glomerular basement membrane",
+    "Childhood onset",
+    "Bilateral sensorineural hearing impairment",
+    "Stage 5 chronic kidney disease",
+    "Renal insufficiency",
+    "Sensorineural hearing impairment",
+    "Albuminuria",
+    "Microscopic hematuria",
+    "Autosomal recessive inheritance",
+    "Juvenile onset",
+    "Proteinuria",
+    "Nephrotic syndrome",
+    "Hearing impairment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

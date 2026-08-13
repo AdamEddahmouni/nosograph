@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'VACTERL association, X-linked, with or without hydrocephalus (
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of VACTERL association, X-linked, with or without hydrocephalus
-SYMPTOMS = []
+SYMPTOMS = [
+    "Persistent left superior vena cava",
+    "Absent radius",
+    "Enlarged kidney",
+    "Hydrocephalus",
+    "Hand polydactyly",
+    "Hydronephrosis",
+    "Tracheoesophageal fistula",
+    "Abnormal cardiovascular system morphology",
+    "Abnormality of the vertebral column",
+    "Sacral dimple",
+    "Absence of stomach bubble on fetal sonography",
+    "Abnormal vertebral morphology",
+    "Esophageal atresia",
+    "Anal atresia",
+    "Isomerism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'congenital dyserythropoietic anemia type 3 (CONGENITAL_DYSERYT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital dyserythropoietic anemia type 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased circulating lactate dehydrogenase concentration",
+    "Hemosiderinuria",
+    "Anemia of inadequate production",
+    "Macrocytic anemia",
+    "Decreased circulating haptoglobin concentration",
+    "Jaundice",
+    "Congenital hypoplastic anemia",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

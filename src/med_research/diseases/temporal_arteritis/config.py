@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'temporal arteritis (TEMPORAL_ARTERITIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of temporal arteritis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Retinal arteritis",
+    "Blindness",
+    "Elevated erythrocyte sedimentation rate",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

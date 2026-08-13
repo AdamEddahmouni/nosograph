@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'arteriovenous malformations of the brain (ARTERIOVENOUS_MALFOR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of arteriovenous malformations of the brain
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cerebral arteriovenous malformation",
+    "Typified by somatic mosaicism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

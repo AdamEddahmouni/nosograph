@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'multiple synostoses syndrome 1 (MULTIPLE_SYNOSTOSES_SYNDROME_1
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of multiple synostoses syndrome 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Bilateral conductive hearing impairment",
+    "Clinodactyly of the 4th toe",
+    "Hypoplastic spinal processes",
+    "Absent proximal finger flexion creases",
+    "Progressive conductive hearing impairment",
+    "Dislocated radial head",
+    "Lower limb undergrowth",
+    "Ptosis",
+    "Waddling gait",
+    "Short middle phalanx of the 4th finger",
+    "Asymmetry of the mouth",
+    "HP_0009773",
+    "Proximal fifth finger symphalangism",
+    "HP_0005807",
+    "Aplastic/hypoplastic toenail",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

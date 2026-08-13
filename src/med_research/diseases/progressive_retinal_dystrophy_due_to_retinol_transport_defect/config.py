@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'progressive retinal dystrophy due to retinol transport defect 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of progressive retinal dystrophy due to retinol transport defect
-SYMPTOMS = []
+SYMPTOMS = [
+    "Retinal dystrophy",
+    "Iris coloboma",
+    "Peripheral retinal atrophy",
+    "Microcornea",
+    "Visual impairment",
+    "Patent ductus arteriosus",
+    "Absent foveal reflex",
+    "Nyctalopia",
+    "Decreased circulating retinol-binding protein concentration",
+    "Follicular hyperkeratosis",
+    "Comedonal acne",
+    "Tritanomaly",
+    "Childhood onset",
+    "Reduced visual acuity",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

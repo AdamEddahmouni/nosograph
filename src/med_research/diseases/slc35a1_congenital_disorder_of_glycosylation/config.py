@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'SLC35A1-congenital disorder of glycosylation (SLC35A1_CONGENIT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of SLC35A1-congenital disorder of glycosylation
-SYMPTOMS = []
+SYMPTOMS = [
+    "Proteinuria",
+    "Infantile onset",
+    "Encephalopathy",
+    "Flat occiput",
+    "Short philtrum",
+    "Microcephaly",
+    "Pulmonary hemorrhage",
+    "Subcutaneous hemorrhage",
+    "Webbed neck",
+    "Decreased total neutrophil count",
+    "Hypotelorism",
+    "Ataxia",
+    "Clinodactyly",
+    "Seizure",
+    "Hyporeflexia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

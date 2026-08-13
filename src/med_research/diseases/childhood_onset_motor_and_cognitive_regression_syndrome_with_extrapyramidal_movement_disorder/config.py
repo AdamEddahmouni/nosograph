@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'childhood-onset motor and cognitive regression syndrome with e
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of childhood-onset motor and cognitive regression syndrome with extrapyramidal movement disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cerebellar atrophy",
+    "Spasticity",
+    "Global developmental delay",
+    "Hyperintensity of cerebral white matter on MRI",
+    "Secondary microcephaly",
+    "Cerebral atrophy",
+    "Abnormal pyramidal sign",
+    "Axonal loss",
+    "Rigidity",
+    "Ataxia",
+    "Decreased body weight",
+    "Hypoplasia of the corpus callosum",
+    "Parkinsonism",
+    "Autosomal dominant inheritance",
+    "Mental deterioration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

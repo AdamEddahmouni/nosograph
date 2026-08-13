@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'hyperinsulinemic hypoglycemia, familial, 4 (HYPERINSULINEMIC_H
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hyperinsulinemic hypoglycemia, familial, 4
-SYMPTOMS = []
+SYMPTOMS = [
+    "Feeding difficulties",
+    "Neonatal onset",
+    "Intellectual disability",
+    "Hypoglycemic coma",
+    "Hypotonia",
+    "Autosomal recessive inheritance",
+    "Hyperinsulinemic hypoglycemia",
+    "Hypoglycemic seizures",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

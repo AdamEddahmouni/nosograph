@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'rhizomelic chondrodysplasia punctata type 3 (RHIZOMELIC_CHONDR
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of rhizomelic chondrodysplasia punctata type 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Reduced alkyl-dihydroxyacetonephosphate synthase activity in cultured fibroblasts",
+    "Rhizomelia",
+    "Autosomal recessive inheritance",
+    "Short femur",
+    "Disproportionate short-limb short stature",
+    "Epiphyseal stippling",
+    "Short humerus",
+    "Failure to thrive",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

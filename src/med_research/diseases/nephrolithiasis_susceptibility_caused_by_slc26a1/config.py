@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'nephrolithiasis susceptibility caused by SLC26A1 (NEPHROLITHIA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of nephrolithiasis susceptibility caused by SLC26A1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Childhood onset",
+    "Calcium oxalate nephrolithiasis",
+    "Acute kidney injury",
+    "Autosomal recessive inheritance",
+    "Hyperoxaluria",
+    "Ureteropelvic junction obstruction",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'cardiac valvular defect, developmental (CARDIAC_VALVULAR_DEFEC
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cardiac valvular defect, developmental
-SYMPTOMS = []
+SYMPTOMS = [
+    "Double inlet left ventricle",
+    "Tricuspid stenosis",
+    "Subpulmonary stenosis",
+    "Cyanosis",
+    "Hydroureter",
+    "Pulmonary artery atresia",
+    "Left atrial enlargement",
+    "Atrial septal defect",
+    "Mitral valve prolapse",
+    "Tricuspid regurgitation",
+    "Mitral regurgitation",
+    "Congenital onset",
+    "Tricuspid atresia",
+    "Hydrops fetalis",
+    "Tricuspid valve prolapse",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

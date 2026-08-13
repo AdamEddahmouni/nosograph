@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'renal-hepatic-pancreatic dysplasia 1 (RENAL_HEPATIC_PANCREATIC
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of renal-hepatic-pancreatic dysplasia 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ureteral atresia",
+    "Renal dysplasia",
+    "Biliary cirrhosis",
+    "Splenomegaly",
+    "Preauricular pit",
+    "Portal hypertension",
+    "Hepatic fibrosis",
+    "Asplenia",
+    "Malformation of the hepatic ductal plate",
+    "Potter facies",
+    "Dandy-Walker malformation",
+    "Cirrhosis",
+    "Polycystic kidney dysplasia",
+    "Pancreatic cysts",
+    "Infantile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

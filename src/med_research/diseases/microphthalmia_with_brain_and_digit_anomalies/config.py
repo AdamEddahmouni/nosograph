@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'microphthalmia with brain and digit anomalies (MICROPHTHALMIA_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of microphthalmia with brain and digit anomalies
-SYMPTOMS = []
+SYMPTOMS = [
+    "Delayed CNS myelination",
+    "Cerebral cortical atrophy",
+    "Blindness",
+    "Short middle phalanx of finger",
+    "Cerebellar hypoplasia",
+    "Myopia",
+    "Coloboma",
+    "High forehead",
+    "Cleft palate",
+    "Female hypogonadism",
+    "Microphthalmia",
+    "Adrenal hypoplasia",
+    "Orbital cyst",
+    "Brachycephaly",
+    "Global developmental delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

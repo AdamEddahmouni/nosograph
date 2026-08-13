@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'autosomal recessive cerebellar ataxia-blindness-deafness syndr
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal recessive cerebellar ataxia-blindness-deafness syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cochlear degeneration",
+    "Autosomal recessive inheritance",
+    "Blindness",
+    "Ataxia",
+    "Hearing impairment",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

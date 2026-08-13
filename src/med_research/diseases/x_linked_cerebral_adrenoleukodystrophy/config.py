@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'X-linked cerebral adrenoleukodystrophy (X_LINKED_CEREBRAL_ADRE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked cerebral adrenoleukodystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Bowel incontinence",
+    "Blindness",
+    "Lower limb muscle weakness",
+    "X-linked recessive inheritance",
+    "Incoordination",
+    "Bulbar palsy",
+    "Visual loss",
+    "Mental deterioration",
+    "Progressive",
+    "Polyneuropathy",
+    "Dementia",
+    "Primary adrenal insufficiency",
+    "Hearing impairment",
+    "Truncal ataxia",
+    "Urinary bladder sphincter dysfunction",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

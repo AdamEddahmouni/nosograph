@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'glutaryl-CoA dehydrogenase deficiency (GLUTARYL_COA_DEHYDROGEN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of glutaryl-CoA dehydrogenase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Neonatal onset",
+    "Symmetrical progressive peripheral demyelination",
+    "Infantile onset",
+    "Ketosis",
+    "Childhood onset",
+    "Failure to thrive",
+    "Encephalopathy",
+    "Glutaric aciduria",
+    "Hydrocephalus",
+    "Seizure",
+    "Subdural hemorrhage",
+    "Absent speech",
+    "Hepatomegaly",
+    "Global developmental delay",
+    "Elevated urine 3-hydroxyglutaric level",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

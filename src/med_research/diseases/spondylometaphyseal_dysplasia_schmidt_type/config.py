@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spondylometaphyseal dysplasia, Schmidt type (SPONDYLOMETAPHYSE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondylometaphyseal dysplasia, Schmidt type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Lumbar hyperlordosis",
+    "Kyphoscoliosis",
+    "Severe short stature",
+    "Autosomal dominant inheritance",
+    "Short greater sciatic notch",
+    "Genu valgum",
+    "Carpal bone hypoplasia",
+    "Hypoplastic pelvis",
+    "Hypoplasia of proximal radius",
+    "Bowed humerus",
+    "Anterior rib cupping",
+    "Short long bone",
+    "Tibial metaphyseal irregularity",
+    "Myopia",
+    "Metaphyseal dysplasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

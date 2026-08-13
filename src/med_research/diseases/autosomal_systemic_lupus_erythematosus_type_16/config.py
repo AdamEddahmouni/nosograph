@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'autosomal systemic lupus erythematosus type 16 (AUTOSOMAL_SYST
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal systemic lupus erythematosus type 16
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased circulating complement C4 concentration",
+    "Perinuclear antineutrophil antibody positivity",
+    "Anti-dsDNA antibody positivity",
+    "Juvenile onset",
+    "Childhood onset",
+    "Lupus nephritis",
+    "Systemic lupus erythematosus",
+    "Decreased circulating complement C3 concentration",
+    "Antinuclear antibody positivity",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

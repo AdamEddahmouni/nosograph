@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'retinal degeneration-nanophthalmos-glaucoma syndrome (RETINAL_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of retinal degeneration-nanophthalmos-glaucoma syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Macular atrophy",
+    "Retinal degeneration",
+    "Constriction of peripheral visual field",
+    "Cystoid macular degeneration",
+    "Microphthalmia",
+    "Hypermetropia",
+    "Nyctalopia",
+    "Shallow anterior chamber",
+    "Glaucoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

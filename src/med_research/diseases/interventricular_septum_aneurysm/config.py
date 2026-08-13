@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'interventricular septum aneurysm (INTERVENTRICULAR_SEPTUM_ANEU
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of interventricular septum aneurysm
-SYMPTOMS = []
+SYMPTOMS = [
+    "Vascular dilatation",
+    "Abnormal ventricular septum morphology",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'hypercholanemia, familial 1 (HYPERCHOLANEMIA_FAMILIAL_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypercholanemia, familial 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Rickets",
+    "Pruritus",
+    "Fat malabsorption",
+    "Decreased circulating vitamin K concentration",
+    "Autosomal recessive inheritance",
+    "Failure to thrive",
+    "Increased serum bile acid concentration",
+    "Steatorrhea",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

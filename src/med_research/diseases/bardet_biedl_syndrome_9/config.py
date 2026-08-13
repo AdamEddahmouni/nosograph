@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Bardet-Biedl syndrome 9 (BARDET_BIEDL_SYNDROME_9)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Bardet-Biedl syndrome 9
-SYMPTOMS = []
+SYMPTOMS = [
+    "Rod-cone dystrophy",
+    "Polyphagia",
+    "Hyperglycemia",
+    "Autosomal recessive inheritance",
+    "Renal insufficiency",
+    "Delayed speech and language development",
+    "Retinal degeneration",
+    "Postaxial hand polydactyly",
+    "Irregular menstruation",
+    "Polydactyly",
+    "Spicular pigmentation of the retina",
+    "Strabismus",
+    "Global developmental delay",
+    "Cataract",
+    "Congenital onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

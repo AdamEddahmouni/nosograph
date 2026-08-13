@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'xeroderma pigmentosum group D (XERODERMA_PIGMENTOSUM_GROUP_D)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of xeroderma pigmentosum group D
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cataract",
+    "Microcephaly",
+    "Ectropion",
+    "Defective DNA repair after ultraviolet radiation damage",
+    "Corneal neovascularization",
+    "Ataxia",
+    "Hyporeflexia",
+    "Intellectual disability",
+    "Conjunctivitis",
+    "Telangiectasia",
+    "Melanoma",
+    "Cutaneous photosensitivity",
+    "Photophobia",
+    "Autosomal recessive inheritance",
+    "Microphthalmia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

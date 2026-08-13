@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'holoprosencephaly-radial heart renal anomalies syndrome (HOLOP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of holoprosencephaly-radial heart renal anomalies syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal vertebral morphology",
+    "Retinal coloboma",
+    "Median cleft palate",
+    "Absent gallbladder",
+    "Hypoplasia of the radius",
+    "Hearing impairment",
+    "Bifid uvula",
+    "Median cleft upper lip",
+    "Phocomelia",
+    "Abnormal pinna morphology",
+    "Abnormal heart morphology",
+    "Holoprosencephaly",
+    "Autosomal dominant inheritance",
+    "Unilateral renal dysplasia",
+    "Iris coloboma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

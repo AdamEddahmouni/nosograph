@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'brachydactyly type E1 (BRACHYDACTYLY_TYPE_E1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of brachydactyly type E1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Multiple impacted teeth",
+    "Short metatarsal",
+    "Autosomal dominant inheritance",
+    "Straight clavicle",
+    "Type E brachydactyly",
+    "Brachydactyly",
+    "Moderately short stature",
+    "Short clavicles",
+    "Round face",
+    "Short metacarpal",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

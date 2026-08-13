@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'aplasia of lacrimal and salivary glands (APLASIA_OF_LACRIMAL_A
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of aplasia of lacrimal and salivary glands
-SYMPTOMS = []
+SYMPTOMS = [
+    "Carious teeth",
+    "Lacrimal gland aplasia",
+    "Absent lacrimal punctum",
+    "Lacrimal gland hypoplasia",
+    "Xerostomia",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'craniosynostosis 2 (CRANIOSYNOSTOSIS_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of craniosynostosis 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Headache",
+    "Autosomal dominant inheritance",
+    "Infantile onset",
+    "Hypermetropia",
+    "Bicoronal synostosis",
+    "Unicoronal synostosis",
+    "Craniosynostosis",
+    "Turricephaly",
+    "Hypotelorism",
+    "Trigonocephaly",
+    "Myopia",
+    "Triphalangeal thumb",
+    "Wormian bones",
+    "Intellectual disability",
+    "Metopic synostosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

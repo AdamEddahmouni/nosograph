@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Mobius syndrome (MOBIUS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Mobius syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Facial diplegia",
+    "Lower limb undergrowth",
+    "Mask-like facies",
+    "Hypogonadotropic hypogonadism",
+    "Dysphagia",
+    "Abnormal nasopharynx morphology",
+    "Respiratory distress",
+    "Autosomal dominant inheritance",
+    "Sporadic",
+    "Arthrogryposis multiplex congenita",
+    "Brachydactyly",
+    "Dysdiadochokinesis",
+    "Abducens palsy",
+    "Micrognathia",
+    "Dysarthria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'cavernous hemangiomas of face-supraumbilical midline raphe syn
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cavernous hemangiomas of face-supraumbilical midline raphe syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cavernous hemangioma of the face",
+    "Bifid sternum",
+    "Coarctation of aorta",
+    "Autosomal dominant inheritance",
+    "Right aortic arch",
+    "Supraumbilical raphe",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

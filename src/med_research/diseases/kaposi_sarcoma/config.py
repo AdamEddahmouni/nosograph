@@ -8,8 +8,10 @@ PIPELINE_LABEL = "Kaposi sarcoma (KAPOSI_SARCOMA)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Kaposi sarcoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Myxoid liposarcoma",
+    "Typified by somatic mosaicism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

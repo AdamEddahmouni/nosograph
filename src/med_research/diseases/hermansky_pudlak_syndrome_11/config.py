@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Hermansky-Pudlak syndrome 11 (HERMANSKY_PUDLAK_SYNDROME_11)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Hermansky-Pudlak syndrome 11
-SYMPTOMS = []
+SYMPTOMS = [
+    "Melanocytic nevus",
+    "Bruising susceptibility",
+    "Gingival bleeding",
+    "Fair hair",
+    "Albinism",
+    "Menorrhagia",
+    "Autosomal recessive inheritance",
+    "Epistaxis",
+    "Ocular albinism",
+    "Hypoplasia of the fovea",
+    "Impaired collagen-induced platelet aggregation",
+    "Reduced platelet dense granules",
+    "Strabismus",
+    "Photophobia",
+    "Nystagmus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

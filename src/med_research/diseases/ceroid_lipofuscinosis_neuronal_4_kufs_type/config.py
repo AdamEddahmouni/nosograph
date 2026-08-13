@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'ceroid lipofuscinosis, neuronal, 4 (Kufs type) (CEROID_LIPOFUS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ceroid lipofuscinosis, neuronal, 4 (Kufs type)
-SYMPTOMS = []
+SYMPTOMS = [
+    "Young adult onset",
+    "Abnormality of extrapyramidal motor function",
+    "Increased neuronal autofluorescent lipopigment",
+    "Abnormal cerebellum morphology",
+    "Auditory hallucination",
+    "Myoclonus",
+    "Dementia",
+    "Ataxia",
+    "Bilateral tonic-clonic seizure",
+    "Visual hallucination",
+    "Curvilinear intracellular accumulation of autofluorescent lipopigment storage material",
+    "Seizure",
+    "Myoclonic seizure",
+    "Rectilinear intracellular accumulation of autofluorescent lipopigment storage material",
+    "Fingerprint intracellular accumulation of autofluorescent lipopigment storage material",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'extensor tendons of finger anomalies (EXTENSOR_TENDONS_OF_FING
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of extensor tendons of finger anomalies
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Abnormal finger morphology",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

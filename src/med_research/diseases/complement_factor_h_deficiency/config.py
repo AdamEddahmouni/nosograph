@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'complement factor H deficiency (COMPLEMENT_FACTOR_H_DEFICIENCY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of complement factor H deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Juvenile onset",
+    "Decreased circulating complement factor H concentration",
+    "Hematuria",
+    "Glomerular subendothelial electron-dense deposits",
+    "Autosomal recessive inheritance",
+    "Chronic kidney disease",
+    "Recurrent bacterial infections",
+    "Depletion of components of the alternative complement pathway",
+    "Thickened glomerular basement membrane",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

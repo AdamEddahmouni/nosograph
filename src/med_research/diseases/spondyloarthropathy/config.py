@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'spondyloarthropathy (SPONDYLOARTHROPATHY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondyloarthropathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Oligoarthritis",
+    "Aortic regurgitation",
+    "Hip osteoarthritis",
+    "Back pain",
+    "Non-Mendelian inheritance",
+    "Inflammation of the large intestine",
+    "Psoriasiform dermatitis",
+    "Sacroiliac arthritis",
+    "Kyphosis",
+    "Enthesitis",
+    "Arrhythmia",
+    "Rheumatoid factor positive",
+    "Anterior uveitis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

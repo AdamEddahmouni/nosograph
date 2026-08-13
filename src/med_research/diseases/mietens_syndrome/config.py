@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'Mietens syndrome (MIETENS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Mietens syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Pes planus",
+    "Nystagmus",
+    "Strabismus",
+    "Forearm undergrowth",
+    "Absent proximal radial epiphyses",
+    "Elbow flexion contracture",
+    "Intellectual disability",
+    "Severe postnatal growth retardation",
+    "Mild intellectual disability",
+    "Narrow nose",
+    "Dislocated radial head",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

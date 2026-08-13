@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'punctate palmoplantar keratoderma type 2 (PUNCTATE_PALMOPLANTA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of punctate palmoplantar keratoderma type 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Spinous keratoses of palms and soles",
+    "Autosomal dominant inheritance",
+    "Porokeratosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

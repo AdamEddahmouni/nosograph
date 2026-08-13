@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'craniosynostosis-anal anomalies-porokeratosis syndrome (CRANIO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of craniosynostosis-anal anomalies-porokeratosis syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypospadias",
+    "Kyphosis",
+    "Parietal foramina",
+    "Delayed cranial suture closure",
+    "Coronal craniosynostosis",
+    "Rectourethral fistula",
+    "Large fontanelles",
+    "Cleft palate",
+    "Anal atresia",
+    "Short clavicles",
+    "Brachycephaly",
+    "Sparse eyebrow",
+    "Frontal bossing",
+    "Rectovaginal fistula",
+    "Ptosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

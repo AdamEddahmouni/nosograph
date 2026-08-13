@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLAS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked sideroblastic anemia with ataxia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dementia",
+    "Language impairment",
+    "Hypochromic microcytic anemia",
+    "Poikilocytosis",
+    "Dysdiadochokinesis",
+    "Target cells",
+    "Autism",
+    "Short stature",
+    "Positive Romberg sign",
+    "Bone marrow hypercellularity",
+    "Dysmetria",
+    "Strabismus",
+    "Howell-Jolly bodies",
+    "Hypotonia",
+    "Schizophrenia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

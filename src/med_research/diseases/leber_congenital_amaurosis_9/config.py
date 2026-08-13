@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Leber congenital amaurosis 9 (LEBER_CONGENITAL_AMAUROSIS_9)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Leber congenital amaurosis 9
-SYMPTOMS = []
+SYMPTOMS = [
+    "Undetectable electroretinogram",
+    "Macular hypopigmentation",
+    "Eye poking",
+    "Color vision defect",
+    "Optic disc pallor",
+    "Attenuation of retinal blood vessels",
+    "Spicular pigmentation of the retina",
+    "Keratoconus",
+    "Macular atrophy",
+    "Nyctalopia",
+    "Reduced visual acuity",
+    "Macular scar",
+    "Hypermetropia",
+    "Retinal pigment epithelial mottling",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

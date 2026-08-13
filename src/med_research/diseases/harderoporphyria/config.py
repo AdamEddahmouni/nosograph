@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'harderoporphyria (HARDEROPORPHYRIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of harderoporphyria
-SYMPTOMS = []
+SYMPTOMS = [
+    "Vomiting",
+    "Neonatal hyperbilirubinemia",
+    "Hemolytic anemia",
+    "Prolonged neonatal jaundice",
+    "Autosomal recessive inheritance",
+    "Increased circulating ferritin concentration",
+    "Hepatomegaly",
+    "Splenomegaly",
+    "Reticulocytosis",
+    "Hyperpigmentation of the skin",
+    "Red urine",
+    "Increased urine harderoporphyrin level",
+    "Increased fecal harderoporphyrin",
+    "Cutaneous photosensitivity",
+    "Increased urinary porphobilinogen",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

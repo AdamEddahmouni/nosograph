@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'familial adenomatous polyposis 1 (FAMILIAL_ADENOMATOUS_POLYPOS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial adenomatous polyposis 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hepatoblastoma",
+    "Duodenal polyposis",
+    "Epidermoid cyst",
+    "Medulloblastoma",
+    "Multiple gastric polyps",
+    "Astrocytoma",
+    "Keloids",
+    "Multiple lipomas",
+    "Adrenocortical adenoma",
+    "Hyperpigmentation of the skin",
+    "Papillary thyroid carcinoma",
+    "Carcinoma",
+    "Eruption failure",
+    "Fibroma",
+    "Duodenal adenocarcinoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

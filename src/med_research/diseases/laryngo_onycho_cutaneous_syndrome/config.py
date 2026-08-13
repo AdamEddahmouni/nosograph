@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'laryngo-onycho-cutaneous syndrome (LARYNGO_ONYCHO_CUTANEOUS_SY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of laryngo-onycho-cutaneous syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Enamel hypoplasia",
+    "Amelogenesis imperfecta",
+    "Weak cry",
+    "Hoarse cry",
+    "Autosomal recessive inheritance",
+    "Nail dystrophy",
+    "Recurrent loss of toenails and fingernails",
+    "Neonatal onset",
+    "Symblepharon",
+    "Corneal pterygium",
+    "Skin ulcer",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

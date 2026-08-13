@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hereditary neuropathy with liability to pressure palsies (HERE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hereditary neuropathy with liability to pressure palsies
-SYMPTOMS = []
+SYMPTOMS = [
+    "Froment sign",
+    "Hand muscle weakness",
+    "Peripheral neuropathy",
+    "Abnormal motor neuron morphology",
+    "Hypoesthesia",
+    "Decreased motor nerve conduction velocity",
+    "Segmental peripheral demyelination/remyelination",
+    "Young adult onset",
+    "Muscle weakness",
+    "Vocal cord paralysis",
+    "Hyporeflexia",
+    "Autosomal dominant inheritance",
+    "Motor conduction block",
+    "Hand paresthesia",
+    "Juvenile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

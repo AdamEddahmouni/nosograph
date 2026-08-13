@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'polycystic liver disease 1 (POLYCYSTIC_LIVER_DISEASE_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of polycystic liver disease 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ascites",
+    "Polycystic liver disease",
+    "Autosomal dominant inheritance",
+    "Dyspnea",
+    "Increased total bilirubin",
+    "Elevated circulating alkaline phosphatase concentration",
+    "Back pain",
+    "Abdominal distention",
+    "Renal cyst",
+    "Dilatation of the cerebral artery",
+    "Adult onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

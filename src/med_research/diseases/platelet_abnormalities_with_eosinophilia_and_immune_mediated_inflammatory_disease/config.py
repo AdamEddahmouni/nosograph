@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'platelet abnormalities with eosinophilia and immune-mediated i
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of platelet abnormalities with eosinophilia and immune-mediated inflammatory disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Decreased mean platelet volume",
+    "Infantile onset",
+    "Hematochezia",
+    "Antinuclear antibody positivity",
+    "Meningitis",
+    "Colonic eosinophilia",
+    "Bloody diarrhea",
+    "Elevated erythrocyte sedimentation rate",
+    "Perinuclear antineutrophil antibody positivity",
+    "Blepharitis",
+    "Recurrent infections",
+    "Recurrent pneumonia",
+    "Subconjunctival hemorrhage",
+    "Increased total lymphocyte count",
+    "Elevated circulating C-reactive protein concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

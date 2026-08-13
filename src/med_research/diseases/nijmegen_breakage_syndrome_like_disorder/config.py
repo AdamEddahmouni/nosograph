@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'Nijmegen breakage syndrome-like disorder (NIJMEGEN_BREAKAGE_SY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Nijmegen breakage syndrome-like disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Spasticity",
+    "Chromosomal breakage induced by ionizing radiation",
+    "Intellectual disability",
+    "Ataxia",
+    "Short stature",
+    "Bird-like facies",
+    "Growth delay",
+    "Decreased circulating immunoglobulin concentration",
+    "Hypermetropia",
+    "Autosomal recessive inheritance",
+    "Microcephaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

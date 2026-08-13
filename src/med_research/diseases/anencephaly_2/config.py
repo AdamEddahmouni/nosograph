@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'anencephaly 2 (ANENCEPHALY_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of anencephaly 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Anophthalmia",
+    "Bifid nose",
+    "Anencephaly",
+    "Cleft maxillary alveolar ridge",
+    "Autosomal recessive inheritance",
+    "Median cleft palate",
+    "Congenital onset",
+    "Short palpebral fissure",
+    "Median cleft upper lip",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

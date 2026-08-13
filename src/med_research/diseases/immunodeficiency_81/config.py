@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'immunodeficiency 81 (IMMUNODEFICIENCY_81)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 81
-SYMPTOMS = []
+SYMPTOMS = [
+    "Immunodeficiency",
+    "Abscess",
+    "Impaired collagen-induced platelet aggregation",
+    "Decreased class-switched memory B cell proportion",
+    "Impaired neutrophil chemotaxis",
+    "Abnormally low T cell receptor excision circle level",
+    "Autosomal recessive inheritance",
+    "Petechiae",
+    "Decreased total CD4+ T cell proportion",
+    "Skin rash",
+    "Decreased antigen-specific T cell proliferation",
+    "HP_0025632",
+    "Recurrent infections",
+    "HP_0012178",
+    "Recurrent cutaneous abscess formation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

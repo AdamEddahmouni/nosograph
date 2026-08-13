@@ -8,8 +8,9 @@ PIPELINE_LABEL = "Basal cell carcinoma (BASAL_CELL_CARCINOMA)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Basal cell carcinoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Basal cell carcinoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'ectodermal dysplasia with natal teeth, Turnpenny type (ECTODER
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ectodermal dysplasia with natal teeth, Turnpenny type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Acanthosis nigricans",
+    "Sparse eyebrow",
+    "Autosomal dominant inheritance",
+    "Ectodermal dysplasia",
+    "Sparse eyelashes",
+    "Cranial hyperostosis",
+    "Slow-growing scalp hair",
+    "Oligodontia",
+    "Abnormal nail morphology",
+    "Short stature",
+    "Hypoplastic pilosebaceous units",
+    "Hypodontia",
+    "Hypoplastic sweat glands",
+    "Natal tooth",
+    "Relative macrocephaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

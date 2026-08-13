@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'gelatinous drop-like corneal dystrophy (GELATINOUS_DROP_LIKE_C
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of gelatinous drop-like corneal dystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Blurred vision",
+    "Visual impairment",
+    "Corneal dystrophy",
+    "Autosomal recessive inheritance",
+    "Childhood onset",
+    "Corneal foreign body sensation",
+    "Photophobia",
+    "Reduced visual acuity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

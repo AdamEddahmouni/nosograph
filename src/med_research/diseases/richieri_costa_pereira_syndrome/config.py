@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Richieri Costa-Pereira syndrome (RICHIERI_COSTA_PEREIRA_SYNDRO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Richieri Costa-Pereira syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Proximal placement of thumb",
+    "Microretrognathia",
+    "Cleft lower alveolar ridge",
+    "Hip subluxation",
+    "Short metacarpal",
+    "Tibial deviation of toes",
+    "Global developmental delay",
+    "Hypoplasia of the radius",
+    "Low-set ears",
+    "Clinodactyly of the 5th finger",
+    "Talipes equinovarus",
+    "Cleft mandible",
+    "Short stature",
+    "Bifid uvula",
+    "4-5 metacarpal synostosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

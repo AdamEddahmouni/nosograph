@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Bartter disease type 1 (BARTTER_DISEASE_TYPE_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Bartter disease type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Low-to-normal blood pressure",
+    "Hypokalemia",
+    "Short stature",
+    "Polyuria",
+    "Increased circulating aldosterone concentration",
+    "Hypercalcemia",
+    "Tetany",
+    "Dehydration",
+    "Renal juxtaglomerular cell hypertrophy/hyperplasia",
+    "Chondrocalcinosis",
+    "Hyperparathyroidism",
+    "Premature birth",
+    "Constipation",
+    "Small for gestational age",
+    "Fetal polyuria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

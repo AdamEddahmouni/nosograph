@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'severe combined immunodeficiency due to CTPS1 deficiency (SEVE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of severe combined immunodeficiency due to CTPS1 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Respiratory tract infection",
+    "Decreased memory B cell proportion",
+    "Partial absence of specific antibody response to tetanus vaccine",
+    "Inverted CD4:CD8 ratio",
+    "Persistent viremia",
+    "Severe varicella zoster infection",
+    "HP_0030253",
+    "Decreased antigen-specific T cell proliferation",
+    "Decreased circulating specific pneumococcal antibody concentration",
+    "Decreased mucosal-associated invariant T cell proportion",
+    "Autosomal recessive inheritance",
+    "Decreased circulating IgG2 concentration",
+    "Recurrent viral infections",
+    "Lymphoproliferative disorder",
+    "Decreased circulating IgG concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

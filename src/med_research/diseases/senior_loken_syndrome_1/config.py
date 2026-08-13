@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Senior-Loken syndrome 1 (SENIOR_LOKEN_SYNDROME_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Senior-Loken syndrome 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Young adult onset",
+    "Stage 5 chronic kidney disease",
+    "Tubulointerstitial fibrosis",
+    "Anemia",
+    "Renal insufficiency",
+    "Autosomal recessive inheritance",
+    "Elevated circulating creatinine concentration",
+    "Intellectual disability",
+    "Juvenile onset",
+    "Polyuria",
+    "Impaired renal concentrating ability",
+    "Nephronophthisis",
+    "Retinal dystrophy",
+    "Thickening of the tubular basement membrane",
+    "Polydipsia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

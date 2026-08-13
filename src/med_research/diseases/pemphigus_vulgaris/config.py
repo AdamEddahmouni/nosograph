@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'pemphigus vulgaris (PEMPHIGUS_VULGARIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pemphigus vulgaris
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Autoimmune antibody positivity",
+    "Oral mucosal blisters",
+    "Abnormal blistering of the skin",
+    "Autoimmunity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

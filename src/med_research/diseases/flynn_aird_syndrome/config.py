@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Flynn-Aird syndrome (FLYNN_AIRD_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Flynn-Aird syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cataract",
+    "Kyphoscoliosis",
+    "Osteoporosis",
+    "Peripheral neuropathy",
+    "Hyperkeratosis",
+    "Rod-cone dystrophy",
+    "Myopia",
+    "Dementia",
+    "Seizure",
+    "Ataxia",
+    "Alopecia",
+    "Carious teeth",
+    "Autosomal dominant inheritance",
+    "Increased CSF protein concentration",
+    "Increased bone mineral density",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'lymphatic malformation 12 (LYMPHATIC_MALFORMATION_12)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lymphatic malformation 12
-SYMPTOMS = []
+SYMPTOMS = [
+    "Neonatal death",
+    "Fetal pericardial effusion",
+    "Second trimester onset",
+    "Neonatal respiratory distress",
+    "Inguinal hernia",
+    "Polyhydramnios",
+    "Nonimmune hydrops fetalis",
+    "Fetal ascites",
+    "Autosomal recessive inheritance",
+    "Fetal pleural effusion",
+    "Pleural thickening",
+    "Third trimester onset",
+    "Hyperkeratosis",
+    "Congenital onset",
+    "Lymphedema",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

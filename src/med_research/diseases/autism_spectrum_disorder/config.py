@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autism spectrum disorder (AUTISM_SPECTRUM_DISORDER)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autism spectrum disorder
-SYMPTOMS = []
+SYMPTOMS = [
+    "Restrictive behavior",
+    "Severe intellectual disability",
+    "Abnormal nonverbal communicative behavior",
+    "Inflexible adherence to routines",
+    "Inability to walk",
+    "Delayed ability to walk",
+    "Autosomal dominant inheritance",
+    "Reduced social responsiveness",
+    "Infantile onset",
+    "Motor stereotypy",
+    "Joint hypermobility",
+    "Non-Mendelian inheritance",
+    "Sporadic",
+    "Global developmental delay",
+    "Childhood onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

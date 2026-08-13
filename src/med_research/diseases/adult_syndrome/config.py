@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'ADULT syndrome (ADULT_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ADULT syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Toe syndactyly",
+    "Autosomal dominant inheritance",
+    "Nasolacrimal duct obstruction",
+    "Orofacial cleft",
+    "Hypoplastic nipples",
+    "Eczematoid dermatitis",
+    "Ectodermal dysplasia",
+    "Hypodontia",
+    "Sparse axillary hair",
+    "Fair hair",
+    "Oligodontia",
+    "Thin skin",
+    "Absent nipple",
+    "Conjunctivitis",
+    "Dermal atrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

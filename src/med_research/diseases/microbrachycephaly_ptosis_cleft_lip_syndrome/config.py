@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'microbrachycephaly-ptosis-cleft lip syndrome (MICROBRACHYCEPHA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of microbrachycephaly-ptosis-cleft lip syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cleft palate",
+    "Short stature",
+    "Long face",
+    "Generalized hypotonia",
+    "Downslanted palpebral fissures",
+    "Nystagmus",
+    "Cleft upper lip",
+    "Hypotonia",
+    "Autosomal recessive inheritance",
+    "Palmoplantar cutis laxa",
+    "Mandibular prognathia",
+    "Prominent supraorbital ridges",
+    "Strabismus",
+    "Narrow face",
+    "Pectus excavatum",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

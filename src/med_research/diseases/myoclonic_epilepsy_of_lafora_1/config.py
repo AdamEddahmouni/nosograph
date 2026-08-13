@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'myoclonic epilepsy of Lafora 1 (MYOCLONIC_EPILEPSY_OF_LAFORA_1
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of myoclonic epilepsy of Lafora 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cutaneous photosensitivity",
+    "Focal sensory seizure with visual features",
+    "Autosomal recessive inheritance",
+    "Generalized non-motor (absence) seizure",
+    "Bilateral tonic-clonic seizure",
+    "Myoclonus",
+    "Progressive neurologic deterioration",
+    "Generalized myoclonic seizure",
+    "Dementia",
+    "Visual loss",
+    "Apraxia",
+    "Hepatic failure",
+    "Lafora bodies",
+    "Rapidly progressive",
+    "Psychosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

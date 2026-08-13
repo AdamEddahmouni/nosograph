@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Crouzon syndrome (CROUZON_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Crouzon syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Deviated nasal septum",
+    "Sleep apnea",
+    "Sagittal craniosynostosis",
+    "Proptosis",
+    "High palate",
+    "Frontal bossing",
+    "Visual impairment",
+    "Abnormality of the cervical spine",
+    "Dysgerminoma",
+    "Keratitis",
+    "Convex nasal ridge",
+    "Intellectual disability",
+    "Shallow orbits",
+    "Lambdoidal craniosynostosis",
+    "Optic atrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

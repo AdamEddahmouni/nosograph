@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spondyloepimetaphyseal dysplasia, Strudwick type (SPONDYLOEPIM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondyloepimetaphyseal dysplasia, Strudwick type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Metaphyseal dappling",
+    "Pes planus",
+    "Spondyloepimetaphyseal dysplasia",
+    "Inguinal hernia",
+    "Platyspondyly",
+    "Clinodactyly",
+    "Cleft palate",
+    "Hypoplastic pubic bone",
+    "Intellectual disability",
+    "Genu valgum",
+    "Protuberant abdomen",
+    "Myopia",
+    "Metaphyseal irregularity",
+    "Club-shaped proximal femur",
+    "Narrow greater sciatic notch",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

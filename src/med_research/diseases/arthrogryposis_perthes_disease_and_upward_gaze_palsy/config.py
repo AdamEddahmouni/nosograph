@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'arthrogryposis, Perthes disease, and upward gaze palsy (ARTHRO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of arthrogryposis, Perthes disease, and upward gaze palsy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ventricular septal defect",
+    "Atopic dermatitis",
+    "Asthma",
+    "Full cheeks",
+    "Congenital onset",
+    "Upgaze palsy",
+    "Avascular necrosis of the capital femoral epiphysis",
+    "Atrial septal defect",
+    "Overlapping toe",
+    "Pulmonic stenosis",
+    "Pyloric stenosis",
+    "Autosomal recessive inheritance",
+    "Camptodactyly",
+    "Arthrogryposis multiplex congenita",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

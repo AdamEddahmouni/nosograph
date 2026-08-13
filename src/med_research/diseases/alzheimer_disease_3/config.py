@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Alzheimer disease 3 (ALZHEIMER_DISEASE_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Alzheimer disease 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Spastic tetraparesis",
+    "Alzheimer disease",
+    "Myoclonus",
+    "Adult onset",
+    "Apraxia",
+    "Personality changes",
+    "Disturbed sensory perception",
+    "Dysarthria",
+    "Dysphagia",
+    "Neurofibrillary tangles",
+    "Babinski sign",
+    "Rapidly progressive",
+    "Lower limb hyperreflexia",
+    "Dementia",
+    "Seizure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

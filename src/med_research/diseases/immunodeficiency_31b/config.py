@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'immunodeficiency 31B (IMMUNODEFICIENCY_31B)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 31B
-SYMPTOMS = []
+SYMPTOMS = [
+    "Recurrent viral infections",
+    "Autosomal recessive inheritance",
+    "Recurrent mycobacterial infections",
+    "HSV encephalitis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

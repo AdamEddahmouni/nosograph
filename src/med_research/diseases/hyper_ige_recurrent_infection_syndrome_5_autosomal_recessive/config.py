@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hyper-IgE recurrent infection syndrome 5, autosomal recessive 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hyper-IgE recurrent infection syndrome 5, autosomal recessive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Increased circulating interleukin 6 concentration",
+    "Decreased circulating IgG concentration",
+    "Recurrent otitis media",
+    "Atopic dermatitis",
+    "Cellulitis",
+    "Decreased class-switched memory B cell proportion",
+    "Decreased circulating IgM concentration",
+    "Inappropriate absence of fever",
+    "Autosomal recessive inheritance",
+    "Decreased circulating C-reactive protein concentration",
+    "Infantile onset",
+    "Recurrent skin infections",
+    "Increased circulating IgE concentration",
+    "Cutaneous abscess",
+    "Recurrent upper respiratory tract infections",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

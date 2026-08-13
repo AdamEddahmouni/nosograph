@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Joubert syndrome with renal defect (JOUBERT_SYNDROME_WITH_RENA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Joubert syndrome with renal defect
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital onset",
+    "Postural instability",
+    "Growth delay",
+    "Posteriorly rotated ears",
+    "Postaxial hand polydactyly",
+    "Nystagmus",
+    "Ventricular septal defect",
+    "Malar flattening",
+    "Intracranial hemorrhage",
+    "Brainstem dysplasia",
+    "Tented upper lip vermilion",
+    "Cerebral visual impairment",
+    "Optic atrophy",
+    "Low-set ears",
+    "Hypertelorism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

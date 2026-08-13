@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neonatal ichthyosis-sclerosing cholangitis syndrome (NEONATAL_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neonatal ichthyosis-sclerosing cholangitis syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pruritus",
+    "Sparse eyelashes",
+    "Alopecia",
+    "Intellectual disability",
+    "Jaundice",
+    "Dry skin",
+    "Hypodontia",
+    "Oligodontia",
+    "Thick hair",
+    "Autosomal recessive inheritance",
+    "Bile duct proliferation",
+    "Neonatal onset",
+    "Enamel hypoplasia",
+    "Splenomegaly",
+    "Sparse eyebrow",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'cataract 50 with or without glaucoma (CATARACT_50_WITH_OR_WITH
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cataract 50 with or without glaucoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Persistent pupillary membrane",
+    "Glaucoma",
+    "Congenital onset",
+    "Juvenile onset",
+    "Retinal detachment",
+    "Autosomal dominant inheritance",
+    "Cataract",
+    "Young adult onset",
+    "Childhood onset",
+    "Middle age onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

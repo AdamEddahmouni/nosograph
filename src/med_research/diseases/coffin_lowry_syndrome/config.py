@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Coffin-Lowry syndrome (COFFIN_LOWRY_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Coffin-Lowry syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pectus excavatum",
+    "Protruding ear",
+    "Thick eyebrow",
+    "Widely spaced teeth",
+    "Dental malocclusion",
+    "Intellectual disability",
+    "Mandibular prognathia",
+    "Ventriculomegaly",
+    "Coarse hair",
+    "Scoliosis",
+    "Rectal prolapse",
+    "Acrocyanosis",
+    "Seizure",
+    "Bifid sternum",
+    "Microcephaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

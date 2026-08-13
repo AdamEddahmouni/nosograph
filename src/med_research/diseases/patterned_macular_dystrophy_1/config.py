@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'patterned macular dystrophy 1 (PATTERNED_MACULAR_DYSTROPHY_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of patterned macular dystrophy 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Photophobia",
+    "Reduced visual acuity",
+    "Metamorphopsia",
+    "Absent foveal reflex",
+    "Macular dystrophy",
+    "Nyctalopia",
+    "Autosomal dominant inheritance",
+    "Choroidal neovascularization",
+    "Yellow/white retinal lesion",
+    "Dark choroid",
+    "Reticular retinal dystrophy",
+    "Pattern dystrophy of the retina",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

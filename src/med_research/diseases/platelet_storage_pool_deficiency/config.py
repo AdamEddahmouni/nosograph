@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'platelet storage pool deficiency (PLATELET_STORAGE_POOL_DEFICI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of platelet storage pool deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Prolonged bleeding time",
+    "Abnormal bleeding",
+    "Myelodysplasia",
+    "Decreased mean platelet volume",
+    "Autosomal dominant inheritance",
+    "Acute leukemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

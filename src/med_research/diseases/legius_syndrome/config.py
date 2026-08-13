@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Legius syndrome (LEGIUS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Legius syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Inguinal freckling",
+    "Posteriorly rotated ears",
+    "Specific learning disability",
+    "Neurofibroma",
+    "Downslanted palpebral fissures",
+    "Low posterior hairline",
+    "Pectus excavatum",
+    "Macrocephaly",
+    "Hypotonia",
+    "Cafe-au-lait spot",
+    "Multiple lipomas",
+    "Attention deficit hyperactivity disorder",
+    "Micrognathia",
+    "Epicanthus",
+    "High, narrow palate",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'IRIDA syndrome (IRIDA_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of IRIDA syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Anisocytosis",
+    "Hypochromic microcytic anemia",
+    "Poikilocytosis",
+    "Autosomal recessive inheritance",
+    "Elevated circulating hepcidin concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

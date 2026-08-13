@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'vitelliform macular dystrophy 3 (VITELLIFORM_MACULAR_DYSTROPHY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of vitelliform macular dystrophy 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Choroidal neovascularization",
+    "Late young adult onset",
+    "Color vision defect",
+    "Drusen",
+    "Visual impairment",
+    "Macular atrophy",
+    "Metamorphopsia",
+    "Macular dystrophy",
+    "Photophobia",
+    "Reduced visual acuity",
+    "Autosomal dominant inheritance",
+    "Vitelliform macular lesion",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

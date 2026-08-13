@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'inflammatory bowel disease, immunodeficiency, and encephalopat
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of inflammatory bowel disease, immunodeficiency, and encephalopathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Bloody diarrhea",
+    "Cerebral atrophy",
+    "Recurrent respiratory infections",
+    "Increased circulating IgG concentration",
+    "Decreased T cell activation",
+    "Severe varicella zoster infection",
+    "Anoperineal fistula",
+    "Perianal abscess",
+    "Increased total leukocyte count",
+    "Hypoplasia of the corpus callosum",
+    "Hypochromic anemia",
+    "HP_0030253",
+    "Thrombocytosis",
+    "Eosinophilic infiltration of the esophagus",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

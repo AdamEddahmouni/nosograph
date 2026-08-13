@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'neurodevelopmental disorder with hypotonia and autistic featur
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of neurodevelopmental disorder with hypotonia and autistic features with or without hyperkinetic movements
-SYMPTOMS = []
+SYMPTOMS = [
+    "Chorea",
+    "Stereotypical hand wringing",
+    "Infantile onset",
+    "Autistic behavior",
+    "Atypical behavior",
+    "Global developmental delay",
+    "Intellectual disability",
+    "Dystonia",
+    "Hypoplasia of the corpus callosum",
+    "Self-injurious behavior",
+    "EEG abnormality",
+    "Convulsive status epilepticus",
+    "Axial hypotonia",
+    "Focal-onset seizure",
+    "Inability to walk",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

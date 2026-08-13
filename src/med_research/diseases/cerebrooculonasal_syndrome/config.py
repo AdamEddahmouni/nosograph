@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'cerebrooculonasal syndrome (CEREBROOCULONASAL_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cerebrooculonasal syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Conductive hearing impairment",
+    "Hypoplasia of the corpus callosum",
+    "Broad philtrum",
+    "Iris coloboma",
+    "Postaxial hand polydactyly",
+    "Broad forehead",
+    "Downturned corners of mouth",
+    "Encephalocele",
+    "Brachycephaly",
+    "Low-set ears",
+    "Cerebellar vermis hypoplasia",
+    "Ventriculomegaly",
+    "Interhemispheric cyst",
+    "Dandy-Walker malformation",
+    "Postnatal growth retardation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

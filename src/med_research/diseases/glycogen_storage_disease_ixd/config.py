@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'glycogen storage disease IXd (GLYCOGEN_STORAGE_DISEASE_IXD)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of glycogen storage disease IXd
-SYMPTOMS = []
+SYMPTOMS = [
+    "Muscle weakness",
+    "Middle age onset",
+    "X-linked recessive inheritance",
+    "Reduced muscle phosphorylase kinase activity",
+    "Pelvic girdle muscle weakness",
+    "Muscle fiber necrosis",
+    "Distal muscle weakness",
+    "Distal amyotrophy",
+    "Increased muscle glycogen content",
+    "Elevated circulating creatine kinase activity",
+    "Skeletal muscle atrophy",
+    "Glycogen accumulation in muscle fiber lysosomes",
+    "Exercise intolerance",
+    "Hypoglycemia",
+    "Exercise-induced muscle stiffness",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'lethal omphalocele-cleft palate syndrome (LETHAL_OMPHALOCELE_C
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lethal omphalocele-cleft palate syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cleft palate",
+    "Bifid uvula",
+    "Omphalocele",
+    "Bicornuate uterus",
+    "Autosomal recessive inheritance",
+    "Death in infancy",
+    "Hydrocephalus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

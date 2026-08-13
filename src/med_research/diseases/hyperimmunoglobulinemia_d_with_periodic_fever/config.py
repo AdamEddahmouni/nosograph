@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOB
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hyperimmunoglobulinemia D with periodic fever
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated erythrocyte sedimentation rate",
+    "Hepatosplenomegaly",
+    "Vomiting",
+    "Increased total neutrophil count",
+    "Nyctalopia",
+    "Febrile seizure (within the age range of 3 months to 6 years)",
+    "Unusual molluscum contagiosum",
+    "Elevated urine mevalonic acid level",
+    "Increased circulating IgA concentration",
+    "Autosomal recessive inheritance",
+    "Recurrent infections",
+    "Oral ulcer",
+    "Skin rash",
+    "Arthralgia",
+    "Abdominal pain",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

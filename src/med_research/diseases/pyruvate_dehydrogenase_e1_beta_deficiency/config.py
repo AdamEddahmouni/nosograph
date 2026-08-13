@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'pyruvate dehydrogenase E1-beta deficiency (PYRUVATE_DEHYDROGEN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pyruvate dehydrogenase E1-beta deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Agenesis of corpus callosum",
+    "Global developmental delay",
+    "Generalized hypotonia",
+    "Lactic acidosis",
+    "Hyporeflexia",
+    "Hyperammonemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

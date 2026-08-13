@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'temtamy preaxial brachydactyly syndrome (TEMTAMY_PREAXIAL_BRAC
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of temtamy preaxial brachydactyly syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Syndactyly",
+    "Talon cusp",
+    "Optic atrophy",
+    "Diastema",
+    "Microdontia",
+    "Cleft palate",
+    "Hypertelorism",
+    "Synophrys",
+    "Deep philtrum",
+    "Radioulnar synostosis",
+    "Blue sclerae",
+    "Tarsal synostosis",
+    "Brachydactyly",
+    "Clinodactyly",
+    "Global developmental delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

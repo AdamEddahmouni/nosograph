@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'oculocerebral hypopigmentation syndrome, Cross type (OCULOCERE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of oculocerebral hypopigmentation syndrome, Cross type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormality of the eye",
+    "Hypopigmentation of the skin",
+    "Growth delay",
+    "Spasticity",
+    "Dandy-Walker malformation",
+    "Silver-gray hair",
+    "Athetosis",
+    "Autosomal recessive inheritance",
+    "Intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

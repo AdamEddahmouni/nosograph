@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'familial cardiomyopathy (FAMILIAL_CARDIOMYOPATHY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial cardiomyopathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ventricular arrhythmia",
+    "Third degree atrioventricular block",
+    "Sudden cardiac death",
+    "Autosomal dominant inheritance",
+    "Atrial flutter",
+    "Dilated cardiomyopathy",
+    "First degree atrioventricular block",
+    "Second degree atrioventricular block",
+    "Young adult onset",
+    "Atrial fibrillation",
+    "Pericardial effusion",
+    "Congestive heart failure",
+    "Middle age onset",
+    "Sinus bradycardia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'NEK9-related lethal skeletal dysplasia (NEK9_RELATED_LETHAL_SK
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of NEK9-related lethal skeletal dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short neck",
+    "Stiff neck",
+    "Hydrops fetalis",
+    "Antenatal onset",
+    "Convex nasal ridge",
+    "Broad ribs",
+    "Overriding aorta",
+    "Low-set ears",
+    "Narrow chest",
+    "Narrow palate",
+    "Increased variability in muscle fiber diameter",
+    "Torticollis",
+    "Autosomal recessive inheritance",
+    "Short long bone",
+    "Oligohydramnios",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

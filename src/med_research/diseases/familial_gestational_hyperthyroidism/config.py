@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'familial gestational hyperthyroidism (FAMILIAL_GESTATIONAL_HYP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial gestational hyperthyroidism
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperthyroidism",
+    "Hyperemesis gravidarum",
+    "Increased circulating T4 concentration",
+    "Tachycardia",
+    "Autosomal dominant inheritance",
+    "Decreased thyroid-stimulating hormone level",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

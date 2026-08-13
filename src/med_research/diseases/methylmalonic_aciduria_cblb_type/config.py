@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'methylmalonic aciduria, cblB type (METHYLMALONIC_ACIDURIA_CBLB
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of methylmalonic aciduria, cblB type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Neonatal onset",
+    "Ketosis",
+    "Thrombocytopenia",
+    "Feeding difficulties in infancy",
+    "Dilated cardiomyopathy",
+    "Respiratory distress",
+    "Vomiting",
+    "Methylmalonic acidemia",
+    "Elevated circulating methylmalonylcarnitine concentration",
+    "Hypoglycemia",
+    "Anemia",
+    "Methylmalonic aciduria",
+    "Delayed gross motor development",
+    "Childhood onset",
+    "Metabolic acidosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'immunodeficiency 75 (IMMUNODEFICIENCY_75)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 75
-SYMPTOMS = []
+SYMPTOMS = [
+    "Lymphadenopathy",
+    "Decreased class-switched memory B cell proportion",
+    "Bronchiectasis",
+    "Moderate global developmental delay",
+    "Recurrent respiratory infections",
+    "Hepatosplenomegaly",
+    "Persistent EBV viremia",
+    "Lymphoma",
+    "Decreased FasL-mediated apoptosis",
+    "Follicular hyperplasia",
+    "Infantile onset",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

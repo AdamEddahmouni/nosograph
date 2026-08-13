@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Wolfram syndrome (WOLFRAM_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Wolfram syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sensorineural hearing impairment",
+    "Diabetes mellitus",
+    "Ptosis",
+    "Pigmentary retinopathy",
+    "Thrombocytopenia",
+    "Blindness",
+    "Depression",
+    "Growth delay",
+    "Progressive hearing impairment",
+    "Dysphagia",
+    "Abnormal autonomic nervous system physiology",
+    "Optic neuropathy",
+    "Optic atrophy",
+    "Neurogenic bladder",
+    "Peptic ulcer",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'intellectual disability, autosomal dominant 50 (INTELLECTUAL_D
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of intellectual disability, autosomal dominant 50
-SYMPTOMS = []
+SYMPTOMS = [
+    "Delayed speech and language development",
+    "Feeding difficulties",
+    "Intellectual disability",
+    "Attention deficit hyperactivity disorder",
+    "Autosomal dominant inheritance",
+    "Seizure",
+    "Motor stereotypy",
+    "Global developmental delay",
+    "Autistic behavior",
+    "Motor delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

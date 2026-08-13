@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'ectodermal dysplasia-cutaneous syndactyly syndrome (ECTODERMAL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ectodermal dysplasia-cutaneous syndactyly syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperhidrosis",
+    "Syndactyly",
+    "Follicular hyperkeratosis",
+    "Sparse hair",
+    "Palmoplantar keratoderma",
+    "Congenital bullous ichthyosiform erythroderma",
+    "Thin upper lip vermilion",
+    "Autosomal recessive inheritance",
+    "Macrotia",
+    "Enamel hypoplasia",
+    "Ectodermal dysplasia",
+    "Cardiomegaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

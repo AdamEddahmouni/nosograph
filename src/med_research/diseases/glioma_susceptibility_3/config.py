@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'glioma susceptibility 3 (GLIOMA_SUSCEPTIBILITY_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of glioma susceptibility 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Medulloblastoma",
+    "Acute myeloid leukemia",
+    "Autosomal recessive inheritance",
+    "Astrocytoma",
+    "Nephroblastoma",
+    "Glioblastoma multiforme",
+    "B Acute Lymphoblastic Leukemia",
+    "T-cell acute lymphoblastic leukemias",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

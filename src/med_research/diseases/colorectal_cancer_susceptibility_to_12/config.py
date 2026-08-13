@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'colorectal cancer, susceptibility to, 12 (COLORECTAL_CANCER_SU
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of colorectal cancer, susceptibility to, 12
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Carcinoma",
+    "Adult onset",
+    "Colorectal polyposis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

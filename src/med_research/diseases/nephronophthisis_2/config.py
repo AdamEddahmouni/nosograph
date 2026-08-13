@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'nephronophthisis 2 (NEPHRONOPHTHISIS_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of nephronophthisis 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Enlarged kidney",
+    "Chronic tubulointerstitial nephritis",
+    "Stage 5 chronic kidney disease",
+    "Respiratory failure",
+    "Absence of renal corticomedullary differentiation",
+    "Hypertension",
+    "Pulmonic regurgitation",
+    "Hyperkalemic metabolic acidosis",
+    "Oligohydramnios",
+    "Situs inversus totalis",
+    "Hyperkalemia",
+    "Renal cortical microcysts",
+    "Respiratory insufficiency",
+    "Nephronophthisis",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

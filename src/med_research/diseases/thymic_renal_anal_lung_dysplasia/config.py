@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'thymic-renal-anal-lung dysplasia (THYMIC_RENAL_ANAL_LUNG_DYSPL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of thymic-renal-anal-lung dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormality of the respiratory system",
+    "Intrauterine growth retardation",
+    "Abnormality of metabolism/homeostasis",
+    "Oligohydramnios",
+    "Ureteral dysgenesis",
+    "Abnormality of the endocrine system",
+    "Renal agenesis",
+    "Anal atresia",
+    "Autosomal recessive inheritance",
+    "Ureteral agenesis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

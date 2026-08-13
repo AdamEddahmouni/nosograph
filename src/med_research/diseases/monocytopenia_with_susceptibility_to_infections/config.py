@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'monocytopenia with susceptibility to infections (MONOCYTOPENIA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of monocytopenia with susceptibility to infections
-SYMPTOMS = []
+SYMPTOMS = [
+    "Osteomyelitis",
+    "Recurrent viral infections",
+    "Autosomal dominant inheritance",
+    "Immunodeficiency",
+    "Reduced total natural killer cell count",
+    "Decreased total monocyte count",
+    "Cervical intraepithelial neoplasia",
+    "Megakaryocyte nucleus hypolobulation",
+    "Decreased total lymphocyte count",
+    "Decreased total neutrophil count",
+    "Recurrent fungal infections",
+    "Decreased total B cell count",
+    "Anemia",
+    "Aplastic anemia",
+    "Myelodysplasia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

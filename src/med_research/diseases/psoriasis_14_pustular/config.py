@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'psoriasis 14, pustular (PSORIASIS_14_PUSTULAR)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of psoriasis 14, pustular
-SYMPTOMS = []
+SYMPTOMS = [
+    "Young adult onset",
+    "Fever",
+    "Psoriasiform dermatitis",
+    "Elevated circulating C-reactive protein concentration",
+    "Increased total leukocyte count",
+    "Neonatal onset",
+    "Autosomal recessive inheritance",
+    "Pustule",
+    "Parakeratosis",
+    "Infantile onset",
+    "Autosomal dominant inheritance",
+    "Polyarticular arthritis",
+    "Erythema",
+    "Increased total neutrophil count",
+    "Childhood onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'combined oxidative phosphorylation deficiency 41 (COMBINED_OXI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of combined oxidative phosphorylation deficiency 41
-SYMPTOMS = []
+SYMPTOMS = [
+    "Lactic acidosis",
+    "Decreased circulating cortisol level",
+    "Intrauterine growth retardation",
+    "Elevated circulating creatine kinase activity",
+    "Anemia",
+    "Hypoglycemia",
+    "Nonimmune hydrops fetalis",
+    "Hearing impairment",
+    "Premature birth",
+    "Cardiomegaly",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

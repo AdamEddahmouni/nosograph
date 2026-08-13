@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'combined immunodeficiency due to STK4 deficiency (COMBINED_IMM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of combined immunodeficiency due to STK4 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autoimmune hemolytic anemia",
+    "Autosomal recessive inheritance",
+    "Decreased total neutrophil count",
+    "Sepsis",
+    "Recurrent skin infections",
+    "Patent foramen ovale",
+    "Unusual molluscum contagiosum",
+    "Recurrent lower respiratory tract infections",
+    "Recurrent aphthous stomatitis",
+    "Recurrent upper respiratory tract infections",
+    "Recurrent fungal infections",
+    "Recurrent bacterial infections",
+    "Secundum atrial septal defect",
+    "Disseminated molluscum contagiosum",
+    "Juvenile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

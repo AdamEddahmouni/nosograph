@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'Wagner disease (WAGNER_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Wagner disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Chorioretinal atrophy",
+    "Optically empty vitreous",
+    "Vitreoretinopathy",
+    "Peripheral tractional retinal detachment",
+    "Visual loss",
+    "Retinal pigment epithelial atrophy",
+    "Cataract",
+    "Optic atrophy",
+    "Myopia",
+    "Exudative vitreoretinopathy",
+    "Glaucoma",
+    "Visual field defect",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

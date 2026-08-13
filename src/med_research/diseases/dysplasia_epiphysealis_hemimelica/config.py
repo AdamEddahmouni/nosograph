@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'dysplasia epiphysealis hemimelica (DYSPLASIA_EPIPHYSEALIS_HEMI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dysplasia epiphysealis hemimelica
-SYMPTOMS = []
+SYMPTOMS = [
+    "Overgrowth",
+    "Abnormality of the skeletal system",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

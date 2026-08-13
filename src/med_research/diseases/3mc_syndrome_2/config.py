@@ -8,8 +8,23 @@ PIPELINE_LABEL = '3MC syndrome 2 (3MC_SYNDROME_2)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of 3MC syndrome 2
-SYMPTOMS = []
+SYMPTOMS = [
+    "Broad philtrum",
+    "Epicanthus inversus",
+    "Strabismus",
+    "Autosomal recessive inheritance",
+    "Torticollis",
+    "Broad forehead",
+    "Global developmental delay",
+    "Highly arched eyebrow",
+    "Abnormal vertebral morphology",
+    "High palate",
+    "Postnatal growth retardation",
+    "Partial abdominal muscle agenesis",
+    "Hypospadias",
+    "Caudal appendage",
+    "Blepharophimosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

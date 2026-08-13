@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Ritscher-Schinzel syndrome 1 (RITSCHER_SCHINZEL_SYNDROME_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Ritscher-Schinzel syndrome 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Prominent occiput",
+    "Low-set ears",
+    "Depressed nasal bridge",
+    "Syndactyly",
+    "Hydrocephalus",
+    "Hypospadias",
+    "Single umbilical artery",
+    "Ventricular septal defect",
+    "Missing ribs",
+    "Aortic valve stenosis",
+    "Dandy-Walker malformation",
+    "Generalized hypotonia",
+    "Tetralogy of Fallot",
+    "Autosomal recessive inheritance",
+    "Double outlet right ventricle",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

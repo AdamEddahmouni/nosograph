@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Matthew-Wood syndrome (MATTHEW_WOOD_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Matthew-Wood syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pulmonic stenosis",
+    "Short stature",
+    "Generalized hypotonia",
+    "Intestinal malrotation",
+    "Retrognathia",
+    "Intrauterine growth retardation",
+    "Atrial septal defect",
+    "Single ventricle",
+    "Microphthalmia",
+    "Multilobulated spleen",
+    "Horseshoe kidney",
+    "Neonatal death",
+    "Hypoplastic left atrium",
+    "Congenital diaphragmatic hernia",
+    "Tetralogy of Fallot",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

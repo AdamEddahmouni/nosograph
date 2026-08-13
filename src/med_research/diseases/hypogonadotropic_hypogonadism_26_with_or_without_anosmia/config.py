@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hypogonadotropic hypogonadism 26 with or without anosmia (HYPO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypogonadotropic hypogonadism 26 with or without anosmia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Bicoronal synostosis",
+    "Hypogonadotropic hypogonadism",
+    "Anosmia",
+    "Delayed puberty",
+    "Anterior plagiocephaly",
+    "Diastema",
+    "Congenital onset",
+    "Osteoporosis",
+    "Kyphosis",
+    "Micropenis",
+    "Dyslexia",
+    "Scoliosis",
+    "Autosomal dominant inheritance",
+    "Hypospadias",
+    "Agenesis of molar",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

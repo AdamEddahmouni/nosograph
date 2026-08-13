@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'heart-hand syndrome, Slovenian type (HEART_HAND_SYNDROME_SLOVE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of heart-hand syndrome, Slovenian type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dilated cardiomyopathy",
+    "Autosomal dominant inheritance",
+    "Myopathy",
+    "Brachydactyly",
+    "Aplasia of the middle phalanx of the hand",
+    "Syndactyly",
+    "Clinodactyly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

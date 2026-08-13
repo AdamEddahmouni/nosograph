@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'X-linked congenital generalized hypertrichosis (X_LINKED_CONGE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked congenital generalized hypertrichosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "X-linked dominant inheritance",
+    "Scoliosis",
+    "Hirsutism",
+    "Congenital, generalized hypertrichosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

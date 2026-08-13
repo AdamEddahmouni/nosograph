@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Bartter syndrome with hypocalcemia (BARTTER_SYNDROME_WITH_HYPO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Bartter syndrome with hypocalcemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Juvenile onset",
+    "Laryngospasm",
+    "Hypocalcemia",
+    "Childhood onset",
+    "Seizure",
+    "Nephrocalcinosis",
+    "Basal ganglia calcification",
+    "Decreased glomerular filtration rate",
+    "Autosomal dominant inheritance",
+    "Hypokalemia",
+    "Tetany",
+    "Young adult onset",
+    "Decreased circulating parathyroid hormone level",
+    "Hyperphosphatemia",
+    "Hypomagnesemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

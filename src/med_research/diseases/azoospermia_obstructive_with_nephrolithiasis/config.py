@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'azoospermia, obstructive, with nephrolithiasis (AZOOSPERMIA_OB
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of azoospermia, obstructive, with nephrolithiasis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Spermatocele",
+    "X-linked recessive inheritance",
+    "Male infertility",
+    "Kidney stone",
+    "Obstructive azoospermia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

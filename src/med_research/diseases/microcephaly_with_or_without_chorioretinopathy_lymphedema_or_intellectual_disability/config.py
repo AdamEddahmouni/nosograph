@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'microcephaly with or without chorioretinopathy, lymphedema, or
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of microcephaly with or without chorioretinopathy, lymphedema, or intellectual disability
-SYMPTOMS = []
+SYMPTOMS = [
+    "Anteverted nares",
+    "Retinal detachment",
+    "Typified by incomplete penetrance",
+    "Nystagmus",
+    "Mandibular prognathia",
+    "Reduced visual acuity",
+    "Chorioretinal lacunae",
+    "Lymphedema",
+    "Corneal opacity",
+    "Sloping forehead",
+    "Retinal fold",
+    "Attention deficit hyperactivity disorder",
+    "Hypermetropia",
+    "Optic atrophy",
+    "Thin upper lip vermilion",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'lung adenocarcinoma (LUNG_ADENOCARCINOMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lung adenocarcinoma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Lung adenocarcinoma",
+    "Typified by somatic mosaicism",
+    "Autosomal dominant inheritance",
+    "Non-small cell lung carcinoma",
+    "Alveolar cell carcinoma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

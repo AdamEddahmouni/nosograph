@@ -8,8 +8,13 @@ PIPELINE_LABEL = 'acral peeling skin syndrome (ACRAL_PEELING_SKIN_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of acral peeling skin syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cleavage at junction of stratum corneum and stratum granulosum",
+    "Abnormal nail morphology",
+    "Scaling skin",
+    "Autosomal recessive inheritance",
+    "Erythema",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

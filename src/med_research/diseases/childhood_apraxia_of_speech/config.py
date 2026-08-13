@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'childhood apraxia of speech (CHILDHOOD_APRAXIA_OF_SPEECH)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of childhood apraxia of speech
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal basal ganglia morphology",
+    "Incomprehensible speech",
+    "Childhood onset",
+    "Delayed speech and language development",
+    "Deficit in grammar",
+    "Autosomal dominant inheritance",
+    "Oromotor apraxia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

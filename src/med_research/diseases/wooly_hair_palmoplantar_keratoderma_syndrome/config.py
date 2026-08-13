@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'wooly hair-palmoplantar keratoderma syndrome (WOOLY_HAIR_PALMO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of wooly hair-palmoplantar keratoderma syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Palmoplantar keratoderma",
+    "Leukonychia",
+    "Sparse scalp hair",
+    "Autosomal recessive inheritance",
+    "Woolly hair",
+    "Sparse eyebrow",
+    "Amniotic constriction ring",
+    "Sparse body hair",
+    "Sparse eyelashes",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

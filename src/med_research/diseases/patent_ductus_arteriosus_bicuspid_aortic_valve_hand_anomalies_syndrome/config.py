@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'patent ductus arteriosus-bicuspid aortic valve-hand anomalies 
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of patent ductus arteriosus-bicuspid aortic valve-hand anomalies syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short finger",
+    "Patent ductus arteriosus",
+    "Clinodactyly of the 5th finger",
+    "Bicuspid aortic valve",
+    "Short 5th metacarpal",
+    "Short toe",
+    "Pseudocoarctation of the aorta",
+    "Brachydactyly",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

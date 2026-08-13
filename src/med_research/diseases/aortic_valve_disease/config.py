@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'aortic valve disease (AORTIC_VALVE_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of aortic valve disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Atrial septal defect",
+    "Autosomal dominant inheritance",
+    "Bicuspid aortic valve",
+    "Ascending aortic dissection",
+    "Aortic valve stenosis",
+    "Aortic root aneurysm",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'familial digital arthropathy-brachydactyly (FAMILIAL_DIGITAL_A
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of familial digital arthropathy-brachydactyly
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal dominant inheritance",
+    "Short middle phalanx of finger",
+    "Brachytelomesophalangy",
+    "Arthropathy",
+    "Delayed skeletal maturation",
+    "Radial deviation of finger",
+    "Short distal phalanx of toe",
+    "Short distal phalanx of finger",
+    "Short middle phalanx of toe",
+    "Juvenile onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

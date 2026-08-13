@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'muscular dystrophy, limb-girdle, autosomal recessive 23 (MUSCU
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of muscular dystrophy, limb-girdle, autosomal recessive 23
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elbow flexion contracture",
+    "Difficulty climbing stairs",
+    "Kyphosis",
+    "Abnormal cerebral white matter morphology",
+    "Autosomal recessive inheritance",
+    "Gowers sign",
+    "Elevated circulating creatine kinase activity",
+    "Increased variability in muscle fiber diameter",
+    "Internally nucleated skeletal muscle fibers",
+    "Difficulty running",
+    "Areflexia",
+    "Sensorimotor neuropathy",
+    "Neck flexor weakness",
+    "Axonal degeneration",
+    "Slowly progressive",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

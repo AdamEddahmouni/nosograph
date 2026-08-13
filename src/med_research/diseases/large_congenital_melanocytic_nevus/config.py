@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYT
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of large congenital melanocytic nevus
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short nose",
+    "Congenital giant melanocytic nevus",
+    "Hypertelorism",
+    "Broad forehead",
+    "Open mouth",
+    "Deep philtrum",
+    "Long philtrum",
+    "Cutaneous melanoma",
+    "Round face",
+    "Everted lower lip vermilion",
+    "Anteverted nares",
+    "Prominence of the premaxilla",
+    "Typified by somatic mosaicism",
+    "Periorbital fullness",
+    "Prominent forehead",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

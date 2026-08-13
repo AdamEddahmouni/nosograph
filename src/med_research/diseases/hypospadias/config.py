@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'hypospadias (HYPOSPADIAS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypospadias
-SYMPTOMS = []
+SYMPTOMS = [
+    "Perineal hypospadias",
+    "Autosomal dominant inheritance",
+    "X-linked recessive inheritance",
+    "Hypospadias",
+    "Penoscrotal hypospadias",
+    "Congenital onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

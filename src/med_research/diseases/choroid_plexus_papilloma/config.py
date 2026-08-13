@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'Choroid Plexus Papilloma (CHOROID_PLEXUS_PAPILLOMA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Choroid Plexus Papilloma
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hydrocephalus",
+    "Headache",
+    "Nausea",
+    "Autosomal dominant inheritance",
+    "Osteosarcoma",
+    "Choroid plexus papilloma",
+    "Seizure",
+    "Vomiting",
+    "Intermediate young adult onset",
+    "Papilledema",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'platelet-type bleeding disorder 8 (PLATELET_TYPE_BLEEDING_DISO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of platelet-type bleeding disorder 8
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal bleeding",
+    "Ecchymosis",
+    "Prolonged bleeding after surgery",
+    "Impaired ADP-induced platelet aggregation",
+    "Epistaxis",
+    "Persistent bleeding after trauma",
+    "Bruising susceptibility",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

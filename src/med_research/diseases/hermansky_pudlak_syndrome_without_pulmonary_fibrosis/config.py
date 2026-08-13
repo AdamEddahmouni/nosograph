@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Hermansky-Pudlak syndrome without pulmonary fibrosis (HERMANSK
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Hermansky-Pudlak syndrome without pulmonary fibrosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Neonatal onset",
+    "Pulmonary fibrosis",
+    "Macular hypoplasia",
+    "Partial albinism",
+    "Strabismus",
+    "Nystagmus",
+    "Congenital nystagmus",
+    "Impaired arachidonic acid-induced platelet aggregation",
+    "Albinism",
+    "Single umbilical artery",
+    "Urinary incontinence",
+    "Spontaneous, recurrent epistaxis",
+    "Epistaxis",
+    "Prolonged bleeding time",
+    "Autosomal recessive inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

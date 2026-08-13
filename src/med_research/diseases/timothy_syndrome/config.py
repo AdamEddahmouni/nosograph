@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Timothy syndrome (TIMOTHY_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Timothy syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Ventricular tachycardia",
+    "Single umbilical artery",
+    "Intellectual disability",
+    "Depressed nasal bridge",
+    "Bronchitis",
+    "Cardiomegaly",
+    "Bradycardia",
+    "Hypocalcemia",
+    "Seizure",
+    "Pneumonia",
+    "Patent foramen ovale",
+    "Ventricular septal defect",
+    "Prolonged QT interval",
+    "Hypothyroidism",
+    "Microdontia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

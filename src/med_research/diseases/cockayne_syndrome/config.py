@@ -8,8 +8,23 @@ PIPELINE_LABEL = "Cockayne syndrome (COCKAYNE_SYNDROME)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Cockayne syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Recurrent pneumonia",
+    "Loss of facial adipose tissue",
+    "Developmental cataract",
+    "Microphthalmia",
+    "Posteriorly rotated ears",
+    "Failure to thrive in infancy",
+    "Progeroid facial appearance",
+    "Hip dislocation",
+    "Delayed eruption of teeth",
+    "Dementia",
+    "Micropenis",
+    "Enamel hypoplasia",
+    "Brain atrophy",
+    "Short stature",
+    "Hypertension",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

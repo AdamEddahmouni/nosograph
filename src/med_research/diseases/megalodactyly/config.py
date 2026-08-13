@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'megalodactyly (MEGALODACTYLY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of megalodactyly
-SYMPTOMS = []
+SYMPTOMS = [
+    "Congenital onset",
+    "Macrodactyly",
+    "Typified by somatic mosaicism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'VEXAS syndrome (VEXAS_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of VEXAS syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Nasal chondritis",
+    "Arthralgia",
+    "Arthritis",
+    "Deep venous thrombosis",
+    "Arteritis",
+    "Macrocytic anemia",
+    "Night sweats",
+    "Pulmonary infiltrates",
+    "Sensorineural hearing impairment",
+    "Recurrent fever",
+    "Myelodysplasia",
+    "Erythroid dysplasia",
+    "Neutrophilic infiltration of the skin",
+    "Middle age onset",
+    "Elevated circulating C-reactive protein concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

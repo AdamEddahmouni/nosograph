@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'recombinant 8 syndrome (RECOMBINANT_8_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of recombinant 8 syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Global developmental delay",
+    "Growth delay",
+    "Strabismus",
+    "Generalized hypotonia",
+    "Cerebral atrophy",
+    "Abnormality of the dentition",
+    "Low-set ears",
+    "Thin upper lip vermilion",
+    "Pulmonic stenosis",
+    "Posteriorly rotated ears",
+    "Downturned corners of mouth",
+    "Infra-orbital crease",
+    "Atrial septal defect",
+    "Gingival overgrowth",
+    "Delayed CNS myelination",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

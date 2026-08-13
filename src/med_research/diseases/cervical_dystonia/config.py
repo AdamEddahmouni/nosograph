@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'cervical dystonia (CERVICAL_DYSTONIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cervical dystonia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Limb tremor",
+    "Limb dystonia",
+    "Autosomal dominant inheritance",
+    "Juvenile onset",
+    "Adult onset",
+    "Young adult onset",
+    "Axial dystonia",
+    "Hand tremor",
+    "Torticollis",
+    "Cerebral cortical atrophy",
+    "Writer's cramp",
+    "Blepharospasm",
+    "Gait disturbance",
+    "Typified by incomplete penetrance",
+    "Skeletal muscle hypertrophy",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

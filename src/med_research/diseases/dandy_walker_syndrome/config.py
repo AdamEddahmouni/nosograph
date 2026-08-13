@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'Dandy-Walker syndrome (DANDY_WALKER_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Dandy-Walker syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Truncal ataxia",
+    "Sporadic",
+    "Agenesis of cerebellar vermis",
+    "Partial absence of cerebellar vermis",
+    "Elevated imprint of the transverse sinuses",
+    "Cranial nerve paralysis",
+    "Hydrocephalus",
+    "Dilated fourth ventricle",
+    "Thinning and bulging of the posterior fossa bones",
+    "Posterior fossa cyst at the fourth ventricle",
+    "Nystagmus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

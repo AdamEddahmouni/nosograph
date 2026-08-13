@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'idiopathic hypereosinophilic syndrome (IDIOPATHIC_HYPEREOSINOP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of idiopathic hypereosinophilic syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Restrictive cardiomyopathy",
+    "Pruritus",
+    "Myalgia",
+    "Venous thrombosis",
+    "Sporadic",
+    "Pulmonary infiltrates",
+    "Endocardial fibrosis",
+    "Typified by somatic mosaicism",
+    "Splenomegaly",
+    "Hepatomegaly",
+    "Abnormality of the nervous system",
+    "Myeloproliferative disorder",
+    "Increased total eosinophil count",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

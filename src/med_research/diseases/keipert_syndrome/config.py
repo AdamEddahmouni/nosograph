@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Keipert syndrome (KEIPERT_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Keipert syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Exaggerated cupid's bow",
+    "Macrocephaly",
+    "Downturned corners of mouth",
+    "Broad hallux",
+    "Intellectual disability",
+    "Broad distal phalanx of finger",
+    "Clinodactyly",
+    "Broad thumb",
+    "Low-set ears",
+    "Camptodactyly",
+    "Prominent forehead",
+    "Midface retrusion",
+    "Unilateral ptosis",
+    "Thick upper lip vermilion",
+    "Prominent nose",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

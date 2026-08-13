@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'pseudohypoaldosteronism, type IB2, autosomal recessive (PSEUDO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pseudohypoaldosteronism, type IB2, autosomal recessive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Dehydration",
+    "Metabolic acidosis",
+    "Hypotension",
+    "Neonatal onset",
+    "Hyponatremia",
+    "Autosomal recessive inheritance",
+    "Increased circulating renin concentration",
+    "Increased circulating aldosterone concentration",
+    "Hyperkalemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

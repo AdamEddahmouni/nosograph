@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'colobomatous microphthalmia-rhizomelic dysplasia syndrome (COL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of colobomatous microphthalmia-rhizomelic dysplasia syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Microcornea",
+    "Macrocephaly",
+    "Autosomal recessive inheritance",
+    "Periorbital fullness",
+    "Autosomal dominant inheritance",
+    "Hypospadias",
+    "Recurrent patellar dislocation",
+    "Epicanthus",
+    "Coloboma",
+    "Long philtrum",
+    "Pes planus",
+    "Long eyelashes",
+    "Nystagmus",
+    "Rhizomelia",
+    "Cataract",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Fanconi anemia complementation group C (FANCONI_ANEMIA_COMPLEM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Fanconi anemia complementation group C
-SYMPTOMS = []
+SYMPTOMS = [
+    "Microcephaly",
+    "Intellectual disability",
+    "Cafe-au-lait spot",
+    "Flexion contracture",
+    "Triangular face",
+    "Complete duplication of thumb phalanx",
+    "Childhood onset",
+    "Decreased total neutrophil count",
+    "Autosomal recessive inheritance",
+    "Renal agenesis",
+    "Leukemia",
+    "Reticulocytopenia",
+    "Duplicated collecting system",
+    "Anterior wedging of T12",
+    "Intrauterine growth retardation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

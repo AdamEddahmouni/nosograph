@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'autosomal recessive bestrophinopathy (AUTOSOMAL_RECESSIVE_BEST
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal recessive bestrophinopathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Retinal flecks",
+    "Hypermetropia",
+    "Retinal pigment epithelial atrophy",
+    "Reduced visual acuity",
+    "Autosomal recessive inheritance",
+    "Decreased light- and dark-adapted electroretinogram amplitude",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

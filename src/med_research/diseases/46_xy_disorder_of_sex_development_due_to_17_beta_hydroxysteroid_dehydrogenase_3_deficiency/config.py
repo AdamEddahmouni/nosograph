@@ -8,8 +8,15 @@ PIPELINE_LABEL = '46,XY disorder of sex development due to 17-beta-hydroxysteroi
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Female external genitalia in individual with 46,XY karyotype",
+    "Autosomal recessive inheritance",
+    "Gynecomastia",
+    "Infertility",
+    "Hypothyroidism",
+    "Male pseudohermaphroditism",
+    "Abnormality of metabolism/homeostasis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

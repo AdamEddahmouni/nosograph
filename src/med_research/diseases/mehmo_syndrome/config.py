@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'MEHMO syndrome (MEHMO_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of MEHMO syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Microcephaly",
+    "X-linked recessive inheritance",
+    "Myopia",
+    "Strabismus",
+    "Tall chin",
+    "Global developmental delay",
+    "Long face",
+    "Hypoglycemia",
+    "Male hypogonadism",
+    "Spasticity",
+    "Depressed nasal tip",
+    "Spastic tetraparesis",
+    "Macrotia",
+    "Cleft palate",
+    "Open mouth",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

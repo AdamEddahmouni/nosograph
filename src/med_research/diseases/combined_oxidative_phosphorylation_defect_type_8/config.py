@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'combined oxidative phosphorylation defect type 8 (COMBINED_OXI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of combined oxidative phosphorylation defect type 8
-SYMPTOMS = []
+SYMPTOMS = [
+    "Death in infancy",
+    "Failure to thrive",
+    "Hyporeflexia",
+    "Hypertrophic cardiomyopathy",
+    "Increased variability in muscle fiber diameter",
+    "Cardiomegaly",
+    "Reduced left ventricular ejection fraction",
+    "Motor delay",
+    "Decreased activity of mitochondrial complex IV",
+    "Pulmonary hypoplasia",
+    "Lactic acidosis",
+    "Congenital onset",
+    "Death in childhood",
+    "Generalized muscle weakness",
+    "EEG abnormality",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'diabetes mellitus, permanent neonatal 3 (DIABETES_MELLITUS_PER
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of diabetes mellitus, permanent neonatal 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Small for gestational age",
+    "Hyperglycemia",
+    "Type I diabetes mellitus",
+    "Muscle weakness",
+    "Generalized hypotonia",
+    "Glycosuria",
+    "Motor delay",
+    "Athetosis",
+    "Autosomal dominant inheritance",
+    "Interictal epileptiform activity",
+    "Difficulty standing",
+    "Delayed early-childhood social milestone development",
+    "Autosomal recessive inheritance",
+    "Ketonuria",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

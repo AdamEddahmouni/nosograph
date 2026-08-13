@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'multiple epiphyseal dysplasia type 5 (MULTIPLE_EPIPHYSEAL_DYSP
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of multiple epiphyseal dysplasia type 5
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypoplasia of the capital femoral epiphysis",
+    "Delayed ossification of carpal bones",
+    "Small epiphyses",
+    "Short stature",
+    "Multiple epiphyseal dysplasia",
+    "Genu valgum",
+    "Delayed tarsal ossification",
+    "Arthralgia of the hip",
+    "Epiphyseal dysplasia",
+    "Short femoral neck",
+    "Hip pain",
+    "Premature osteoarthritis",
+    "Coxa vara",
+    "Irregular epiphyses",
+    "Metaphyseal irregularity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

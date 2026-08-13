@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'ghosal hematodiaphyseal dysplasia (GHOSAL_HEMATODIAPHYSEAL_DYS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ghosal hematodiaphyseal dysplasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Refractory anemia",
+    "Diaphyseal dysplasia",
+    "Decreased total leukocyte count",
+    "Autosomal recessive inheritance",
+    "Myelofibrosis",
+    "Hyperostosis cranialis interna",
+    "Increased bone mineral density",
+    "Thrombocytopenia",
+    "Bone marrow hypocellularity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

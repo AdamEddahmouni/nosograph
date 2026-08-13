@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'recurrent Neisseria infections due to factor D deficiency (REC
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of recurrent Neisseria infections due to factor D deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Partial functional complement factor D deficiency",
+    "Autosomal recessive inheritance",
+    "Recurrent bacterial infections",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

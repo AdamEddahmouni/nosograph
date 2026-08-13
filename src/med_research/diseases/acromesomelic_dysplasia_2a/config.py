@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'acromesomelic dysplasia 2A (ACROMESOMELIC_DYSPLASIA_2A)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of acromesomelic dysplasia 2A
-SYMPTOMS = []
+SYMPTOMS = [
+    "Valgus hand deformity",
+    "Fibular torsion",
+    "Short tibia",
+    "Disproportionate short-limb short stature",
+    "Stillbirth",
+    "Autosomal recessive inheritance",
+    "Death in infancy",
+    "Flexion contracture",
+    "Intellectual disability",
+    "Postaxial hand polydactyly",
+    "Short digit",
+    "Short phalanx of finger",
+    "Aplasia/Hypoplasia involving the metacarpal bones",
+    "Acromesomelia",
+    "Hypoplasia of the radius",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

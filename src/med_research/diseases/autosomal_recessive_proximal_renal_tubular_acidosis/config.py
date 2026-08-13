@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autosomal recessive proximal renal tubular acidosis (AUTOSOMAL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal recessive proximal renal tubular acidosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Growth delay",
+    "Cerebral calcification",
+    "Childhood onset",
+    "Short stature",
+    "Hypokalemia",
+    "Hyperchloremic acidosis",
+    "Cataract",
+    "Decreased serum bicarbonate concentration",
+    "Impaired renal tubular reabsorption of bicarbonate",
+    "Bicarbonate-wasting renal tubular acidosis",
+    "Metabolic acidosis",
+    "Increased red cell osmotic resistance",
+    "Intellectual disability",
+    "Band keratopathy",
+    "Early young adult onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

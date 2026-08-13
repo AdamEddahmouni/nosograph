@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'Lowry-MacLean syndrome (LOWRY_MACLEAN_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Lowry-MacLean syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Microcephaly",
+    "Intrauterine growth retardation",
+    "Glaucoma",
+    "Preauricular pit",
+    "Diaphragmatic eventration",
+    "Abnormal heart morphology",
+    "Delayed eruption of teeth",
+    "Convex nasal ridge",
+    "Autosomal dominant inheritance",
+    "Global developmental delay",
+    "Craniosynostosis",
+    "Cleft palate",
+    "Intellectual disability",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

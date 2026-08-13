@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'multiple symmetric lipomatosis (MULTIPLE_SYMMETRIC_LIPOMATOSIS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of multiple symmetric lipomatosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Peripheral axonal neuropathy",
+    "Hearing impairment",
+    "Distal sensory impairment",
+    "Kyphosis",
+    "Areflexia",
+    "Elevated circulating creatine kinase activity",
+    "Young adult onset",
+    "Talipes equinovarus",
+    "Increased variability in muscle fiber diameter",
+    "Lipodystrophy",
+    "Progressive muscle weakness",
+    "Peripheral neuropathy",
+    "Macroglossia",
+    "Skeletal muscle atrophy",
+    "Childhood onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

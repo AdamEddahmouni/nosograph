@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'carnitine palmitoyl transferase 1A deficiency (CARNITINE_PALMI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of carnitine palmitoyl transferase 1A deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Generalized hypotonia",
+    "Elevated circulating hepatic transaminase concentration",
+    "Elevated circulating aspartate aminotransferase concentration",
+    "Arrhythmia",
+    "Feeding difficulties",
+    "Ketonuria",
+    "Hypoketotic hypoglycemia",
+    "Muscle weakness",
+    "Transient hyperlipidemia",
+    "Cardiomegaly",
+    "Recurrent encephalopathy",
+    "Hepatic steatosis",
+    "Seizure",
+    "Motor delay",
+    "Hyporeflexia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

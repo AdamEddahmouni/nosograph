@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'low phospholipid associated cholelithiasis (LOW_PHOSPHOLIPID_A
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of low phospholipid associated cholelithiasis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cholesterol gallstones",
+    "Autosomal dominant inheritance",
+    "Hepatic fibrosis",
+    "Cholangitis",
+    "Elevated circulating alkaline phosphatase concentration",
+    "Cholecystitis",
+    "Bile duct proliferation",
+    "Pancreatitis",
+    "Cholelithiasis",
+    "Cholestasis",
+    "Jaundice",
+    "Elevated circulating hepatic transaminase concentration",
+    "Autosomal recessive inheritance",
+    "Portal inflammation",
+    "Adult onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

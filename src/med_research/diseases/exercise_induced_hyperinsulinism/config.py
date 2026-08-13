@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'exercise-induced hyperinsulinism (EXERCISE_INDUCED_HYPERINSULI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of exercise-induced hyperinsulinism
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypoglycemia",
+    "Autosomal dominant inheritance",
+    "Pancreatic islet-cell hyperplasia",
+    "Hyperinsulinemia",
+    "Hypoglycemic seizures",
+    "Hyperinsulinemic hypoglycemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

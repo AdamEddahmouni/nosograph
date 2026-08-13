@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'aplasia cutis-myopia syndrome (APLASIA_CUTIS_MYOPIA_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of aplasia cutis-myopia syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Aplasia cutis congenita of midline scalp vertex",
+    "High myopia",
+    "Congenital nystagmus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'lymphedema-cerebral arteriovenous anomaly syndrome (LYMPHEDEMA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lymphedema-cerebral arteriovenous anomaly syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Abnormal cerebral vascular morphology",
+    "Autosomal dominant inheritance",
+    "Pulmonary arterial hypertension",
+    "Lymphedema",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,12 @@ PIPELINE_LABEL = 'lattice corneal dystrophy type I (LATTICE_CORNEAL_DYSTROPHY_TY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of lattice corneal dystrophy type I
-SYMPTOMS = []
+SYMPTOMS = [
+    "Recurrent corneal erosions",
+    "Lattice corneal dystrophy",
+    "Progressive visual loss",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

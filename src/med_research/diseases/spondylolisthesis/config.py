@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'spondylolisthesis (SPONDYLOLISTHESIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondylolisthesis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Spondylolisthesis at L5-S1",
+    "Spondylolysis",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

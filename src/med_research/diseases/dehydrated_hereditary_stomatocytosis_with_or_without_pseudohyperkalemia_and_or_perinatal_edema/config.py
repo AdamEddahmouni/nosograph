@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'dehydrated hereditary stomatocytosis with or without pseudohyp
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dehydrated hereditary stomatocytosis with or without pseudohyperkalemia and/or perinatal edema
-SYMPTOMS = []
+SYMPTOMS = [
+    "Jaundice",
+    "Pallor",
+    "Exercise-induced hemolysis",
+    "Hemoglobinuria",
+    "Cholelithiasis",
+    "Increased mean corpuscular hemoglobin concentration",
+    "Hepatitis",
+    "Increased circulating ferritin concentration",
+    "Increased red cell hemolysis by shear stress",
+    "Hepatomegaly",
+    "Reticulocytosis",
+    "Conjunctival icterus",
+    "Autosomal dominant inheritance",
+    "Splenomegaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'chromosome 2q32-q33 deletion syndrome (CHROMOSOME_2Q32_Q33_DEL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of chromosome 2q32-q33 deletion syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Happy demeanor",
+    "Broad forehead",
+    "Thin skin",
+    "High palate",
+    "Talipes equinovarus",
+    "Long eyelashes",
+    "Conical tooth",
+    "Short stature",
+    "Downslanted palpebral fissures",
+    "Smooth philtrum",
+    "Restlessness",
+    "Pierre-Robin sequence",
+    "Seizure",
+    "Frequent temper tantrums",
+    "Long face",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

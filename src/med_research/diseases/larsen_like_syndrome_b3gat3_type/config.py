@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Larsen-like syndrome, B3GAT3 type (LARSEN_LIKE_SYNDROME_B3GAT3
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Larsen-like syndrome, B3GAT3 type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Microretrognathia",
+    "Depressed nasal bridge",
+    "Osteoporosis",
+    "Broad forehead",
+    "Cleft palate",
+    "Micrognathia",
+    "Dislocated radial head",
+    "Short neck",
+    "Hyperextensible skin",
+    "Aortic root aneurysm",
+    "Generalized hypotonia",
+    "Talipes equinovarus",
+    "Inguinal hernia",
+    "Cardiomegaly",
+    "Low posterior hairline",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

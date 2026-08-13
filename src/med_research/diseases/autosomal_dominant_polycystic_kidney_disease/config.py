@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Autosomal dominant polycystic kidney disease (AUTOSOMAL_DOMINA
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Autosomal dominant polycystic kidney disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Polycystic kidney dysplasia",
+    "Progressive",
+    "Middle age onset",
+    "Hypertension",
+    "Gout",
+    "Hepatic cysts",
+    "Juvenile onset",
+    "Autosomal dominant inheritance",
+    "Adult onset",
+    "Stage 5 chronic kidney disease",
+    "Late onset",
+    "Decreased glomerular filtration rate",
+    "Dilatation of the cerebral artery",
+    "Renal insufficiency",
+    "Decreased liver function",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

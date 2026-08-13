@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'hyperthyroxinemia (HYPERTHYROXINEMIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hyperthyroxinemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Increased circulating free T4 concentration",
+    "Euthyroid hyperthyroxinemia",
+    "Autosomal dominant inheritance",
+    "Abnormal circulating thyroid-stimulating hormone concentration",
+    "Abnormal circulating free T4 concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

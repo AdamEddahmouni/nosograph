@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'Klippel-Feil syndrome 2, autosomal recessive (KLIPPEL_FEIL_SYN
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Klippel-Feil syndrome 2, autosomal recessive
-SYMPTOMS = []
+SYMPTOMS = [
+    "Short neck",
+    "Ventricular septal defect",
+    "Scoliosis",
+    "Sensorineural hearing impairment",
+    "Cleft palate",
+    "Autosomal recessive inheritance",
+    "Abnormal pinna morphology",
+    "Sprengel anomaly",
+    "Low posterior hairline",
+    "Limited neck range of motion",
+    "Cleft upper lip",
+    "Conductive hearing impairment",
+    "Fused cervical vertebrae",
+    "Cervical C2/C3 vertebral fusion",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'pancreatic triacylglycerol lipase deficiency (PANCREATIC_TRIAC
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of pancreatic triacylglycerol lipase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Neonatal onset",
+    "Steatorrhea",
+    "Elevated sweat chloride",
+    "Hypocholesterolemia",
+    "Autosomal recessive inheritance",
+    "Fat malabsorption",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,19 @@ PIPELINE_LABEL = "Ulcerative colitis (ULCERATIVE_COLITIS)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Ulcerative colitis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Non-Mendelian inheritance",
+    "Aphthous ulcer",
+    "Abdominal pain",
+    "Recurrent aphthous stomatitis",
+    "Ulcerative colitis",
+    "Weight loss",
+    "Growth delay",
+    "Intestinal obstruction",
+    "Crohn's disease",
+    "Inflammation of the large intestine",
+    "Diarrhea",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

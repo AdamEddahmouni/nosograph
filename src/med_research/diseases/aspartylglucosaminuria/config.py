@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'aspartylglucosaminuria (ASPARTYLGLUCOSAMINURIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of aspartylglucosaminuria
-SYMPTOMS = []
+SYMPTOMS = [
+    "Depressed nasal bridge",
+    "Generalized hypotonia",
+    "Beaking of vertebral bodies",
+    "Spasticity",
+    "Platyspondyly",
+    "Cerebral atrophy",
+    "Developmental regression",
+    "Spondylolysis",
+    "Delayed skeletal maturation",
+    "Acne",
+    "Aspartylglucosaminuria",
+    "Coarse facial features",
+    "Cataract",
+    "Intellectual disability",
+    "Microcephaly",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

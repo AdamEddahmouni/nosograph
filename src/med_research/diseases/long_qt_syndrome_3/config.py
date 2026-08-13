@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'long QT syndrome 3 (LONG_QT_SYNDROME_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of long QT syndrome 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Adult onset",
+    "Second trimester onset",
+    "Childhood onset",
+    "Juvenile onset",
+    "Autosomal dominant inheritance",
+    "Hydrops fetalis",
+    "Ventricular tachycardia",
+    "Sudden cardiac death",
+    "Ventricular flutter",
+    "Ventricular fibrillation",
+    "Torsade de pointes",
+    "Prolonged QTc interval",
+    "Nonimmune hydrops fetalis",
+    "Syncope",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

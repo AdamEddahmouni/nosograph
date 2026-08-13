@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'EEC syndrome (EEC_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of EEC syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypoplastic sacrum",
+    "Conductive hearing impairment",
+    "Cryptorchidism",
+    "Intellectual disability",
+    "Hand polydactyly",
+    "Transverse vaginal septum",
+    "Short digit",
+    "Hypoplasia of the maxilla",
+    "Broad nasal tip",
+    "Sparse hair",
+    "Microtia",
+    "Absence of Stensen duct",
+    "Ureterovesical stenosis",
+    "Toe syndactyly",
+    "Childhood onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

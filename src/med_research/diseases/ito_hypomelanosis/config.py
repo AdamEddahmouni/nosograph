@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Ito hypomelanosis (ITO_HYPOMELANOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Ito hypomelanosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Macrocephaly",
+    "Iris coloboma",
+    "Intellectual disability",
+    "Hand polydactyly",
+    "Coarse facial features",
+    "Radial deviation of finger",
+    "Hypertelorism",
+    "Strabismus",
+    "Microcephaly",
+    "Typified by somatic mosaicism",
+    "Thick lower lip vermilion",
+    "Syndactyly",
+    "Clinodactyly",
+    "Scoliosis",
+    "Epicanthus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

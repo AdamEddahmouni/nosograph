@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'congenital fibrosis of the extraocular muscles (CONGENITAL_FIB
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital fibrosis of the extraocular muscles
-SYMPTOMS = []
+SYMPTOMS = [
+    "Exotropia",
+    "Intellectual disability",
+    "Congenital bilateral ptosis",
+    "Bilateral ptosis",
+    "Ptosis",
+    "Syndactyly",
+    "Visual impairment",
+    "Restrictive external ophthalmoplegia",
+    "Peripheral axonal neuropathy",
+    "Highly arched eyebrow",
+    "Sensory exotropia",
+    "Joint contracture of the hand",
+    "Levator palpebrae superioris atrophy",
+    "Carpal bone aplasia",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

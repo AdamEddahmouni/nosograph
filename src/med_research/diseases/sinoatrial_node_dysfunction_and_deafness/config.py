@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'sinoatrial node dysfunction and deafness (SINOATRIAL_NODE_DYSF
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of sinoatrial node dysfunction and deafness
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hearing impairment",
+    "Syncope",
+    "Increased heart rate variability",
+    "Autosomal recessive inheritance",
+    "Bradycardia",
+    "Congenital onset",
+    "Abnormal QRS complex",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

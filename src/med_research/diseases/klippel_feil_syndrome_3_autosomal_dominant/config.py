@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'Klippel-Feil syndrome 3, autosomal dominant (KLIPPEL_FEIL_SYND
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Klippel-Feil syndrome 3, autosomal dominant
-SYMPTOMS = []
+SYMPTOMS = [
+    "Cervical C3/C4 vertebral fusion",
+    "Cervical C5/C6 vertebrae fusion",
+    "Cervical C6/C7 vertebrae fusion",
+    "Iris coloboma",
+    "Chorioretinal coloboma",
+    "Thoracic scoliosis",
+    "Autosomal dominant inheritance",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

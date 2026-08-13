@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'mitochondrial complex IV deficiency, nuclear type 22 (MITOCHON
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of mitochondrial complex IV deficiency, nuclear type 22
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hyperglutaminemia",
+    "Autosomal recessive inheritance",
+    "Setting-sun eye phenomenon",
+    "Abnormality of the coagulation cascade",
+    "Decreased activity of mitochondrial complex IV",
+    "Left ventricular hypertrophy",
+    "Elevated circulating creatine kinase activity",
+    "Neonatal onset",
+    "Ketonuria",
+    "Elevated circulating tetradecanoylcarnitine concentration",
+    "Dicarboxylic aciduria",
+    "Widened subarachnoid space",
+    "Elevated brain lactate level by MRS",
+    "Hypoglycemia",
+    "Hyperprolinemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

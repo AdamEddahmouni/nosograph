@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'congenital hypotrichosis with juvenile macular dystrophy (CONG
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of congenital hypotrichosis with juvenile macular dystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Sparse hair",
+    "Abnormal nail morphology",
+    "Macular hyperpigmentation",
+    "Macular dystrophy",
+    "Sparse scalp hair",
+    "Follicular hyperkeratosis",
+    "Abnormal foot morphology",
+    "Reduced terminal:vellus ratio",
+    "Pili torti",
+    "Macular atrophy",
+    "Epidermoid cyst",
+    "Infantile onset",
+    "Subretinal deposits",
+    "Pallor",
+    "Macular degeneration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

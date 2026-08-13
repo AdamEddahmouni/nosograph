@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'immunodeficiency 66 (IMMUNODEFICIENCY_66)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of immunodeficiency 66
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pustule",
+    "HP_0030253",
+    "Recurrent skin infections",
+    "Meningitis",
+    "Sepsis",
+    "Autosomal recessive inheritance",
+    "Otitis externa",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

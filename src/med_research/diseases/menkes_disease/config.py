@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Menkes disease (MENKES_DISEASE)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Menkes disease
-SYMPTOMS = []
+SYMPTOMS = [
+    "Developmental regression",
+    "Death in childhood",
+    "Sparse hair",
+    "Infantile onset",
+    "Osteoporosis",
+    "Hypertonia",
+    "Alopecia",
+    "Hypotonia",
+    "Cutis laxa",
+    "Decreased circulating ceruloplasmin concentration",
+    "Metaphyseal widening",
+    "Brachycephaly",
+    "Wormian bones",
+    "Hypsarrhythmia",
+    "Joint hypermobility",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

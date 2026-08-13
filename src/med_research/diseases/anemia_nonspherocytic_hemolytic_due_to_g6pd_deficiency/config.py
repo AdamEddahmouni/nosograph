@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'anemia, nonspherocytic hemolytic, due to G6PD deficiency (ANEM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of anemia, nonspherocytic hemolytic, due to G6PD deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hemoglobinuria",
+    "Childhood onset",
+    "Abdominal pain",
+    "Juvenile onset",
+    "Pallor",
+    "Fever",
+    "Poikilocytosis",
+    "Prolonged neonatal jaundice",
+    "Anisocytosis",
+    "Young adult onset",
+    "Decreased circulating glucose-6-phosphate dehydrogenase activity",
+    "Splenomegaly",
+    "Middle age onset",
+    "Heinz bodies",
+    "Jaundice",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

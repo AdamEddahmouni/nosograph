@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'hypoparathyroidism-deafness-renal disease syndrome (HYPOPARATH
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hypoparathyroidism-deafness-renal disease syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Unilateral renal dysplasia",
+    "Aplasia of the vagina",
+    "Hypoparathyroidism",
+    "Hematuria",
+    "Autosomal dominant inheritance",
+    "Chronic kidney disease",
+    "Congenital onset",
+    "Uterus didelphys",
+    "Proximal renal tubular acidosis",
+    "Distal renal tubular acidosis",
+    "Nephrocalcinosis",
+    "Proteinuria",
+    "Horizontal nystagmus",
+    "Tetany",
+    "Aplasia of the uterus",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

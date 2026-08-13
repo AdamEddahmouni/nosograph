@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'Griscelli syndrome type 1 (GRISCELLI_SYNDROME_TYPE_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Griscelli syndrome type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Global developmental delay",
+    "Infantile onset",
+    "Autosomal recessive inheritance",
+    "Hypopigmentation of the skin",
+    "Intellectual disability",
+    "White eyelashes",
+    "Recurrent tonsillitis",
+    "Silver-gray hair",
+    "Large clumps of pigment irregularly distributed along hair shaft",
+    "Hypotonia",
+    "Accumulation of melanosomes in melanocytes",
+    "White eyebrow",
+    "Seizure",
+    "Melanin pigment aggregation in hair shafts",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

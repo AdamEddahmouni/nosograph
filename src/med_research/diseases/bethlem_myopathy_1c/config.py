@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'Bethlem myopathy 1C (BETHLEM_MYOPATHY_1C)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Bethlem myopathy 1C
-SYMPTOMS = []
+SYMPTOMS = [
+    "Muscle weakness",
+    "Kyphosis",
+    "Joint contracture",
+    "Autosomal dominant inheritance",
+    "Proximal muscle weakness",
+    "Motor delay",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'myopathy, myofibrillar, 9, with early respiratory failure (MYO
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of myopathy, myofibrillar, 9, with early respiratory failure
-SYMPTOMS = []
+SYMPTOMS = [
+    "Scapular winging",
+    "Elevated circulating creatine kinase activity",
+    "Calf muscle hypertrophy",
+    "Achilles tendon contracture",
+    "Diaphragmatic weakness",
+    "Rimmed vacuoles",
+    "Reduced vital capacity",
+    "Slowly progressive",
+    "Adult onset",
+    "Increased variability in muscle fiber diameter",
+    "Neck flexor weakness",
+    "Autosomal dominant inheritance",
+    "Proximal muscle weakness",
+    "Respiratory failure",
+    "Frequent falls",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

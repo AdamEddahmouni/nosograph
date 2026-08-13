@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of thrombocytopenia-absent radius syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Vesicoureteral reflux",
+    "Coxa valga",
+    "Broad thumb",
+    "Hypoplasia of the radius",
+    "Tibial torsion",
+    "Genu varum",
+    "Thrombocytopenia",
+    "Ventricular septal defect",
+    "Clinodactyly of the 5th finger",
+    "Cleft palate",
+    "Adducted thumb",
+    "Talipes equinovarus",
+    "Cavum septum pellucidum",
+    "Fibular aplasia",
+    "Absent thumb",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

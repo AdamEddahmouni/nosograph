@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'early-onset non-syndromic cataract (EARLY_ONSET_NON_SYNDROMIC_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of early-onset non-syndromic cataract
-SYMPTOMS = []
+SYMPTOMS = [
+    "Photophobia",
+    "Microcornea",
+    "Posterior subcapsular cataract",
+    "Diffuse nuclear cataract",
+    "Hypertonia",
+    "Myopia",
+    "Cortical pulverulent cataract",
+    "Diminished deep tendon reflex",
+    "Posterior polar cataract",
+    "Cerulean cataract",
+    "Anterior subcapsular cataract",
+    "Juvenile cataract",
+    "Chorioretinal scalloped atrophy",
+    "Visual impairment",
+    "Young adult onset",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

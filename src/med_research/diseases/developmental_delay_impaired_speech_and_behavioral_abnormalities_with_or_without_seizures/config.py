@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'developmental delay, impaired speech, and behavioral abnormali
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of developmental delay, impaired speech, and behavioral abnormalities, with or without seizures
-SYMPTOMS = []
+SYMPTOMS = [
+    "Infantile onset",
+    "Hypsarrhythmia",
+    "Global developmental delay",
+    "Autosomal dominant inheritance",
+    "Myoclonic seizure",
+    "Infantile spasms",
+    "Absent speech",
+    "Axial hypotonia",
+    "Atonic seizure",
+    "Tonic seizure",
+    "Bilateral tonic-clonic seizure",
+    "Multifocal epileptiform discharges",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

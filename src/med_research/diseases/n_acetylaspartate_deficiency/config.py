@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'N-acetylaspartate deficiency (N_ACETYLASPARTATE_DEFICIENCY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of N-acetylaspartate deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Reduced brain N-acetyl aspartate level by MRS",
+    "Inguinal hernia",
+    "Microcephaly",
+    "Broad-based gait",
+    "Childhood onset",
+    "Delayed ability to sit",
+    "Decreased body weight",
+    "Short attention span",
+    "Secondary microcephaly",
+    "Motor stereotypy",
+    "Generalized hypotonia",
+    "Truncal ataxia",
+    "Seizure",
+    "Short stature",
+    "Self-mutilation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

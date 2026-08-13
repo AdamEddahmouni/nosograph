@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'ACys amyloidosis (ACYS_AMYLOIDOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ACys amyloidosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Intracranial hemorrhage",
+    "Autosomal dominant inheritance",
+    "Cerebral hemorrhage",
+    "Dementia",
+    "Generalized amyloid deposition",
+    "Stroke",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

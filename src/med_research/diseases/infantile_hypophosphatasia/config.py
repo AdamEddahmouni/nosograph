@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'infantile hypophosphatasia (INFANTILE_HYPOPHOSPHATASIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of infantile hypophosphatasia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Bowing of the legs",
+    "Polyhydramnios",
+    "Vertebral clefting",
+    "Short lower limbs",
+    "Platyspondyly",
+    "Seizure",
+    "Elevated plasma pyrophosphate",
+    "Hypercalciuria",
+    "Metaphyseal cupping",
+    "Bowdler spurs",
+    "Stillbirth",
+    "Phosphoethanolaminuria",
+    "Decreased calvarial ossification",
+    "Intracranial hemorrhage",
+    "Widely patent fontanelles and sutures",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

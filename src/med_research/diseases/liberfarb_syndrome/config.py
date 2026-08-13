@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'Liberfarb syndrome (LIBERFARB_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Liberfarb syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Metaphyseal striations",
+    "Scoliosis",
+    "Sensorineural hearing impairment",
+    "Intellectual disability",
+    "Optic disc pallor",
+    "Global developmental delay",
+    "Autosomal recessive inheritance",
+    "Microcephaly",
+    "Delayed epiphyseal ossification",
+    "Short stature",
+    "Retinal pigment epithelial mottling",
+    "Retinal degeneration",
+    "Spicular pigmentation of the retina",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

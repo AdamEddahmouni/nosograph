@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'cholestasis, progressive familial intrahepatic, 7, with or wit
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cholestasis, progressive familial intrahepatic, 7, with or without hearing loss
-SYMPTOMS = []
+SYMPTOMS = [
+    "Elevated circulating alkaline phosphatase concentration",
+    "Elevated circulating aspartate aminotransferase concentration",
+    "Hepatic fibrosis",
+    "Splenomegaly",
+    "Elevated circulating gamma-aminobutyric acid concentration",
+    "Pruritus",
+    "Hepatic bridging fibrosis",
+    "Juvenile onset",
+    "Jaundice",
+    "Hearing impairment",
+    "Cholestasis",
+    "Autosomal recessive inheritance",
+    "Neonatal onset",
+    "Infantile onset",
+    "Hypocalcemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

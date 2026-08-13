@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'scalp-ear-nipple syndrome (SCALP_EAR_NIPPLE_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of scalp-ear-nipple syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Telecanthus",
+    "Posteriorly rotated ears",
+    "Cutaneous photosensitivity",
+    "Clinodactyly of the 5th finger",
+    "Mandibular prognathia",
+    "Lateral ventricle dilatation",
+    "Sparse pubic hair",
+    "Developmental cataract",
+    "3-4 finger cutaneous syndactyly",
+    "Frontal bossing",
+    "Narrow palpebral fissure",
+    "Underdeveloped tragus",
+    "Palpebral edema",
+    "Dry skin",
+    "Thickened skin",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

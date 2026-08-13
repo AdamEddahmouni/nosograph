@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'leukocyte adhesion deficiency 1 (LEUKOCYTE_ADHESION_DEFICIENCY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of leukocyte adhesion deficiency 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Poor wound healing",
+    "Periodontitis",
+    "Autosomal recessive inheritance",
+    "Rectal abscess",
+    "Hyperfibrinogenemia",
+    "Skin ulcer",
+    "Neonatal onset",
+    "Gingivitis",
+    "Delayed umbilical cord separation",
+    "Chronic diarrhea",
+    "Recurrent mucocutaneous candidiasis",
+    "Osteomyelitis",
+    "Recurrent bacterial infections",
+    "Recurrent gram-negative bacterial infections",
+    "Elevated circulating C-reactive protein concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

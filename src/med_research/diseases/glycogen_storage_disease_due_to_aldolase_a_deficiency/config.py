@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'glycogen storage disease due to aldolase A deficiency (GLYCOGE
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of glycogen storage disease due to aldolase A deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Muscle fiber splitting",
+    "Hypotonia",
+    "Elevated circulating alanine aminotransferase concentration",
+    "Ptosis",
+    "Anemia",
+    "Delayed puberty",
+    "Short neck",
+    "Jaundice",
+    "Autosomal recessive inheritance",
+    "Low posterior hairline",
+    "Elevated circulating creatine kinase activity",
+    "Hepatomegaly",
+    "Muscle weakness",
+    "Epicanthus",
+    "Increased circulating lactate dehydrogenase concentration",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

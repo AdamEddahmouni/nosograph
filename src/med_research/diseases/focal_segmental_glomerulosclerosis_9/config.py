@@ -8,8 +8,14 @@ PIPELINE_LABEL = 'focal segmental glomerulosclerosis 9 (FOCAL_SEGMENTAL_GLOMERUL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of focal segmental glomerulosclerosis 9
-SYMPTOMS = []
+SYMPTOMS = [
+    "Steroid-resistant nephrotic syndrome",
+    "Autosomal recessive inheritance",
+    "Infantile onset",
+    "Juvenile onset",
+    "Childhood onset",
+    "Focal segmental glomerulosclerosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,15 @@ PIPELINE_LABEL = 'keratoderma hereditarium mutilans (KERATODERMA_HEREDITARIUM_MU
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of keratoderma hereditarium mutilans
-SYMPTOMS = []
+SYMPTOMS = [
+    "Amniotic constriction ring",
+    "Knuckle pad",
+    "Autosomal dominant inheritance",
+    "Autoamputation of digits",
+    "Hearing impairment",
+    "Childhood onset",
+    "Honeycomb palmoplantar hyperkeratosis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Seckel syndrome 7 (SECKEL_SYNDROME_7)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Seckel syndrome 7
-SYMPTOMS = []
+SYMPTOMS = [
+    "Severe global developmental delay",
+    "Severe intellectual disability",
+    "Lumbar scoliosis",
+    "Madelung deformity",
+    "Short middle phalanx of the 5th finger",
+    "Abnormal carpal morphology",
+    "Clinodactyly of the 5th finger",
+    "Congenital onset",
+    "Microtia",
+    "Microcephaly",
+    "Prominent nose",
+    "Central hypothyroidism",
+    "Autosomal recessive inheritance",
+    "Severe short stature",
+    "Delayed skeletal maturation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

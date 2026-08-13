@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Joubert syndrome with ocular defect (JOUBERT_SYNDROME_WITH_OCU
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Joubert syndrome with ocular defect
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypoplasia of the brainstem",
+    "Neonatal breathing dysregulation",
+    "Cleft palate",
+    "Motor delay",
+    "Global developmental delay",
+    "Epicanthus",
+    "Absent speech",
+    "Dandy-Walker malformation",
+    "Occipital encephalocele",
+    "Oculomotor apraxia",
+    "Cerebral visual impairment",
+    "Central apnea",
+    "Hypoplasia of the corpus callosum",
+    "Low-set ears",
+    "Broad forehead",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

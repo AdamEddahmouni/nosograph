@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spondyloepimetaphyseal dysplasia, Genevieve type (SPONDYLOEPIM
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondyloepimetaphyseal dysplasia, Genevieve type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Small epiphyses",
+    "Short femoral neck",
+    "Flared metaphysis",
+    "Strabismus",
+    "Low anterior hairline",
+    "Carpal bone hypoplasia",
+    "Depressed nasal bridge",
+    "Hypotonia",
+    "Metaphyseal striations",
+    "Coarse facial features",
+    "Generalized hypotonia",
+    "Bulbous nose",
+    "Thick lower lip vermilion",
+    "Platyspondyly",
+    "Low posterior hairline",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

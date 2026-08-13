@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'progressive bulbar palsy (PROGRESSIVE_BULBAR_PALSY)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of progressive bulbar palsy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Diaphragmatic weakness",
+    "Progressive inspiratory stridor",
+    "Ptosis",
+    "Bulbar palsy",
+    "Autosomal recessive inheritance",
+    "Generalized hyperreflexia",
+    "Facial diplegia",
+    "Dysphagia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

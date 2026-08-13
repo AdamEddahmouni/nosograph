@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'epidermolysis bullosa simplex 5B, with muscular dystrophy (EPI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of epidermolysis bullosa simplex 5B, with muscular dystrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Anemia",
+    "Palmoplantar hyperkeratosis",
+    "Increased connective tissue",
+    "Muscular dystrophy",
+    "Intra-epidermal blistering",
+    "Carious teeth",
+    "Short stature",
+    "Scarring alopecia of scalp",
+    "Congenital onset",
+    "Urethral stricture",
+    "Punctate keratitis",
+    "Increased variability in muscle fiber diameter",
+    "Nail dystrophy",
+    "Abnormal blistering of the skin",
+    "Motheaten muscle fibers",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

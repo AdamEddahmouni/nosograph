@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'spondylometaphyseal dysplasia, A4 type (SPONDYLOMETAPHYSEAL_DY
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of spondylometaphyseal dysplasia, A4 type
-SYMPTOMS = []
+SYMPTOMS = [
+    "Platyspondyly",
+    "Osteoporotic tarsals",
+    "Ovoid vertebral bodies",
+    "Autosomal recessive inheritance",
+    "Flat acetabular roof",
+    "Broad ischia",
+    "Sclerotic humeral metaphysis",
+    "Pectus carinatum",
+    "Brachydactyly",
+    "Disproportionate short-limb short stature",
+    "Irregular patellae",
+    "Spondylometaphyseal dysplasia",
+    "Metaphyseal sclerosis",
+    "Hypoplasia of the capital femoral epiphysis",
+    "Irregular capital femoral epiphysis",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

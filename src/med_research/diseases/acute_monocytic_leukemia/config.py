@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'acute monocytic leukemia (ACUTE_MONOCYTIC_LEUKEMIA)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of acute monocytic leukemia
-SYMPTOMS = []
+SYMPTOMS = [
+    "Acute monocytic leukemia",
+    "Typified by somatic mosaicism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

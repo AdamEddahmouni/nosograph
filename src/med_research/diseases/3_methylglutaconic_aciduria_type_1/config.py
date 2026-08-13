@@ -8,8 +8,23 @@ PIPELINE_LABEL = '3-methylglutaconic aciduria type 1 (3_METHYLGLUTACONIC_ACIDURI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of 3-methylglutaconic aciduria type 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Optic atrophy",
+    "Abnormal cerebral white matter morphology",
+    "Adult onset",
+    "Leukoencephalopathy",
+    "Autosomal recessive inheritance",
+    "Cognitive impairment",
+    "Delayed speech and language development",
+    "Metabolic acidosis",
+    "Athetosis",
+    "Cerebral atrophy",
+    "Spastic tetraplegia",
+    "Dysarthria",
+    "Failure to thrive",
+    "Motor delay",
+    "Ataxia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'cardiomyopathy, familial hypertrophic, 28 (CARDIOMYOPATHY_FAMI
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cardiomyopathy, familial hypertrophic, 28
-SYMPTOMS = []
+SYMPTOMS = [
+    "Systolic anterior motion of the mitral valve",
+    "Left atrial enlargement",
+    "Left ventricular outflow tract obstruction",
+    "Concentric hypertrophic cardiomyopathy",
+    "Atrial fibrillation",
+    "Reduced left ventricular ejection fraction",
+    "Asymmetric septal hypertrophy",
+    "Autosomal dominant inheritance",
+    "Apical hypertrophic cardiomyopathy",
+    "Adult onset",
+    "Myocardial late gadolinium enhancement",
+    "Stroke",
+    "Sudden cardiac death",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

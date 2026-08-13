@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'dyskinesia with orofacial involvement, autosomal dominant (DYS
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dyskinesia with orofacial involvement, autosomal dominant
-SYMPTOMS = []
+SYMPTOMS = [
+    "Involuntary movements",
+    "Autosomal dominant inheritance",
+    "Juvenile onset",
+    "Generalized muscle weakness",
+    "Chorea",
+    "Limb hypertonia",
+    "Dyskinesia",
+    "Anxiety",
+    "Facial myokymia",
+    "Delayed ability to sit",
+    "Resting tremor",
+    "Hypotonia",
+    "Dilated cardiomyopathy",
+    "Infantile onset",
+    "Neck muscle weakness",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

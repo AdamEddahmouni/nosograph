@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'AMED syndrome, digenic (AMED_SYNDROME_DIGENIC)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of AMED syndrome, digenic
-SYMPTOMS = []
+SYMPTOMS = [
+    "Bone marrow hypocellularity",
+    "Thrombocytopenia",
+    "Persistent left superior vena cava",
+    "Long thumb",
+    "Hypoplasia of the uterus",
+    "Microcephaly",
+    "Dolichocephaly",
+    "Short stature",
+    "Telecanthus",
+    "Digenic inheritance",
+    "Intellectual disability",
+    "Attention deficit hyperactivity disorder",
+    "Decreased total leukocyte count",
+    "Myelodysplasia",
+    "Hyperpigmentation of the skin",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

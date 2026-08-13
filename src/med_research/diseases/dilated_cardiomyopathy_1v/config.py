@@ -8,8 +8,22 @@ PIPELINE_LABEL = 'dilated cardiomyopathy 1V (DILATED_CARDIOMYOPATHY_1V)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of dilated cardiomyopathy 1V
-SYMPTOMS = []
+SYMPTOMS = [
+    "First degree atrioventricular block",
+    "Late young adult onset",
+    "Left bundle branch block",
+    "Reduced left ventricular ejection fraction",
+    "Syncope",
+    "Increased left ventricular end-diastolic volume",
+    "Autosomal dominant inheritance",
+    "Atrial fibrillation",
+    "Middle age onset",
+    "Dilated cardiomyopathy",
+    "Dementia",
+    "Late onset",
+    "Left ventricular hypertrophy",
+    "Congestive heart failure",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

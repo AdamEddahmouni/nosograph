@@ -8,8 +8,16 @@ PIPELINE_LABEL = 'ABri amyloidosis (ABRI_AMYLOIDOSIS)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of ABri amyloidosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Tremor",
+    "Cerebral amyloid angiopathy",
+    "Spasticity",
+    "Progressive neurologic deterioration",
+    "Autosomal dominant inheritance",
+    "Dementia",
+    "Hypertonia",
+    "Rigidity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

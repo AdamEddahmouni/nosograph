@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'von Willebrand disease 3 (VON_WILLEBRAND_DISEASE_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of von Willebrand disease 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Palmoplantar keratoderma",
+    "Thrombocytopenia",
+    "Prolonged bleeding time",
+    "Joint hemorrhage",
+    "Persistent bleeding after trauma",
+    "Prolonged bleeding after surgery",
+    "Abnormal nail morphology",
+    "Abnormal hair morphology",
+    "Epistaxis",
+    "Childhood onset",
+    "Menorrhagia",
+    "Reduced factor VIII activity",
+    "Impaired platelet aggregation",
+    "Autosomal dominant inheritance",
+    "Abnormal bleeding",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

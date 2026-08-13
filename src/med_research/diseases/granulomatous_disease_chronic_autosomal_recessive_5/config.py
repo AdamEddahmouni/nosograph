@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'granulomatous disease, chronic, autosomal recessive, 5 (GRANUL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of granulomatous disease, chronic, autosomal recessive, 5
-SYMPTOMS = []
+SYMPTOMS = [
+    "Pulmonary fibrosis",
+    "Pleural effusion",
+    "Unusual fungal nail infection",
+    "Acute pancreatitis",
+    "Perianal abscess",
+    "Eczematoid dermatitis",
+    "Rheumatoid factor positive",
+    "Lymphadenopathy",
+    "Short stature",
+    "Nephrotic syndrome",
+    "Decreased total lymphocyte count",
+    "Oral ulcer",
+    "Recurrent tonsillitis",
+    "Abscess",
+    "Granuloma",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

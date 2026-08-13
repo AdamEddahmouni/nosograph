@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'Birk-Barel syndrome (BIRK_BAREL_SYNDROME)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Birk-Barel syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Long face",
+    "Narrow forehead",
+    "Single transverse palmar crease",
+    "Hypotonia",
+    "Long eyelashes",
+    "Bifid uvula",
+    "Sacral dimple",
+    "Tented upper lip vermilion",
+    "High palate",
+    "Highly arched eyebrow",
+    "Short philtrum",
+    "Intellectual disability",
+    "Microretrognathia",
+    "Submucous cleft soft palate",
+    "Dysphagia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

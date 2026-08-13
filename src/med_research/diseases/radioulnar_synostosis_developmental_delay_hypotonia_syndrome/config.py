@@ -8,8 +8,18 @@ PIPELINE_LABEL = 'radioulnar synostosis-developmental delay-hypotonia syndrome (
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of radioulnar synostosis-developmental delay-hypotonia syndrome
-SYMPTOMS = []
+SYMPTOMS = [
+    "Narrow face",
+    "Prominent nose",
+    "Generalized hypotonia",
+    "Global developmental delay",
+    "Radioulnar synostosis",
+    "Dolichocephaly",
+    "Autosomal recessive inheritance",
+    "Macrocephaly",
+    "Long face",
+    "Dislocated radial head",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

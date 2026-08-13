@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'X-linked dominant hypophosphatemic rickets (X_LINKED_DOMINANT_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of X-linked dominant hypophosphatemic rickets
-SYMPTOMS = []
+SYMPTOMS = [
+    "Trapezoidal distal femoral condyles",
+    "Bone pain",
+    "Short stature",
+    "Renal phosphate wasting",
+    "Rachitic rosary",
+    "Rickets",
+    "Arthralgia",
+    "Delayed ability to walk",
+    "Delayed gross motor development",
+    "Metaphyseal irregularity",
+    "Waddling gait",
+    "Genu valgum",
+    "Cupped metaphyses of hand bones",
+    "Tibial bowing",
+    "Spinal cord compression",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

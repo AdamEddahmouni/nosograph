@@ -8,8 +8,21 @@ PIPELINE_LABEL = 'Waardenburg syndrome, IIa 2F (WAARDENBURG_SYNDROME_IIA_2F)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Waardenburg syndrome, IIa 2F
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hypopigmentation of the skin",
+    "Hypermelanotic macule",
+    "Premature graying of hair",
+    "Sensorineural hearing impairment",
+    "White forelock",
+    "Blue irides",
+    "Autosomal recessive inheritance",
+    "Congenital sensorineural hearing impairment",
+    "Telecanthus",
+    "Cafe-au-lait spot",
+    "Heterochromia iridis",
+    "Congenital onset",
+    "White hair",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

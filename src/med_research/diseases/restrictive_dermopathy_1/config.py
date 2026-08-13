@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'restrictive dermopathy 1 (RESTRICTIVE_DERMOPATHY_1)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of restrictive dermopathy 1
-SYMPTOMS = []
+SYMPTOMS = [
+    "Overtubulated long bones",
+    "Adrenal hypoplasia",
+    "Low-set ears",
+    "Absent eyelashes",
+    "Submucous cleft hard palate",
+    "Decreased calvarial ossification",
+    "Decreased fetal movement",
+    "Stillbirth",
+    "Sparse eyelashes",
+    "Wide anterior fontanel",
+    "Intrauterine growth retardation",
+    "Skin erosion",
+    "Scaling skin",
+    "Aplasia/Hypoplasia of the eyebrow",
+    "Prominent superficial blood vessels",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

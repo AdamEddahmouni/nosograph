@@ -8,8 +8,17 @@ PIPELINE_LABEL = 'glutaric acidemia type 3 (GLUTARIC_ACIDEMIA_TYPE_3)'
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of glutaric acidemia type 3
-SYMPTOMS = []
+SYMPTOMS = [
+    "Glutaric aciduria",
+    "Autosomal recessive inheritance",
+    "Vomiting",
+    "Hypertension",
+    "Reduced peroxisomal glutaryl-CoA oxidase activity",
+    "Goiter",
+    "Diarrhea",
+    "Failure to thrive",
+    "Hyperthyroidism",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

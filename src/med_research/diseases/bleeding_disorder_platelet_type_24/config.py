@@ -8,8 +8,19 @@ PIPELINE_LABEL = 'bleeding disorder, platelet-type, 24 (BLEEDING_DISORDER_PLATEL
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of bleeding disorder, platelet-type, 24
-SYMPTOMS = []
+SYMPTOMS = [
+    "Thrombocytopenia",
+    "Autosomal dominant inheritance",
+    "Impaired ristocetin-induced platelet aggregation",
+    "Menorrhagia",
+    "Increased mean platelet volume",
+    "Platelet anisocytosis",
+    "Impaired epinephrine-induced platelet aggregation",
+    "Impaired ADP-induced platelet aggregation",
+    "Abnormal bleeding",
+    "Impaired collagen-induced platelet aggregation",
+    "Impaired arachidonic acid-induced platelet aggregation",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

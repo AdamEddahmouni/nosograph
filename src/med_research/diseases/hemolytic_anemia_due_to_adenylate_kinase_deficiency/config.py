@@ -8,8 +8,11 @@ PIPELINE_LABEL = 'hemolytic anemia due to adenylate kinase deficiency (HEMOLYTIC
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of hemolytic anemia due to adenylate kinase deficiency
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hemolytic anemia",
+    "Autosomal recessive inheritance",
+    "Reduced erythrocyte adenylate kinase activity",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

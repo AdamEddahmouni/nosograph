@@ -8,8 +8,20 @@ PIPELINE_LABEL = 'transient infantile hypertriglyceridemia and hepatosteatosis (
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of transient infantile hypertriglyceridemia and hepatosteatosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "Hepatic steatosis",
+    "Hepatic fibrosis",
+    "Splenomegaly",
+    "Short stature",
+    "Elevated circulating hepatic transaminase concentration",
+    "Infantile onset",
+    "Autosomal recessive inheritance",
+    "Hepatomegaly",
+    "Vomiting",
+    "Failure to thrive",
+    "Elevated gamma-glutamyltransferase level",
+    "Hypertriglyceridemia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

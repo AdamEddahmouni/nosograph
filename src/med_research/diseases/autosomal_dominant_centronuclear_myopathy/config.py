@@ -8,8 +8,23 @@ PIPELINE_LABEL = 'autosomal dominant centronuclear myopathy (AUTOSOMAL_DOMINANT_
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of autosomal dominant centronuclear myopathy
-SYMPTOMS = []
+SYMPTOMS = [
+    "Proximal amyotrophy",
+    "Weakness of facial musculature",
+    "Congenital onset",
+    "Facial palsy",
+    "Proximal upper limb amyotrophy",
+    "Proximal muscle weakness",
+    "Lumbar hyperlordosis",
+    "Autosomal dominant inheritance",
+    "Flexion contracture",
+    "Slowly progressive",
+    "Childhood onset",
+    "Achilles tendon contracture",
+    "Type 1 muscle fiber predominance",
+    "Ophthalmoparesis",
+    "External ophthalmoplegia",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [

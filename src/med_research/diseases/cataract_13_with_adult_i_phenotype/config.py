@@ -8,8 +8,10 @@ PIPELINE_LABEL = 'cataract 13 with adult I phenotype (CATARACT_13_WITH_ADULT_I_P
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of cataract 13 with adult I phenotype
-SYMPTOMS = []
+SYMPTOMS = [
+    "Autosomal recessive inheritance",
+    "Developmental cataract",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
