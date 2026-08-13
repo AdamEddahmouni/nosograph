@@ -10,6 +10,7 @@ from __future__ import annotations
 import json
 import re
 from dataclasses import dataclass, field
+from functools import lru_cache
 from pathlib import Path
 from typing import Any, Optional
 
@@ -53,6 +54,8 @@ class OpenTargetsBulkStore:
         self.version = version or self._manifest.get("version", DEFAULT_VERSION)
         self._data_dir = self.bulk_root / self.version
         self._conn: Any = None
+        self._glob_cache: dict[str, Optional[str]] = {}
+        self._cols_cache: dict[str, set[str]] = {}
 
     def _load_manifest(self) -> dict:
         path = manifest_path(self.bulk_root)
@@ -75,14 +78,21 @@ class OpenTargetsBulkStore:
         return True
 
     def _parquet_glob(self, table: str) -> Optional[str]:
+        if table in self._glob_cache:
+            return self._glob_cache[table]
         table_dir = self._data_dir / table
         if table_dir.is_dir():
             files = list(table_dir.glob("*.parquet"))
             if files:
-                return str(table_dir / "*.parquet").replace("\\", "/")
+                glob = str(table_dir / "*.parquet").replace("\\", "/")
+                self._glob_cache[table] = glob
+                return glob
         single = self._data_dir / f"{table}.parquet"
         if single.is_file():
-            return str(single).replace("\\", "/")
+            glob = str(single).replace("\\", "/")
+            self._glob_cache[table] = glob
+            return glob
+        self._glob_cache[table] = None
         return None
 
     def _connect(self) -> Any:
@@ -214,8 +224,12 @@ class OpenTargetsBulkStore:
     def _glob_column_names(self, glob: Optional[str]) -> set[str]:
         if not glob:
             return set()
+        if glob in self._cols_cache:
+            return self._cols_cache[glob]
         rows = self._query(f"DESCRIBE SELECT * FROM read_parquet('{glob}') LIMIT 1")
-        return {str(row.get("column_name", "")) for row in rows}
+        cols = {str(row.get("column_name", "")) for row in rows}
+        self._cols_cache[glob] = cols
+        return cols
 
     def _disease_row_by_id(self, disease_id: str) -> dict[str, Any]:
         normalized = normalize_disease_id(disease_id)
@@ -342,15 +356,17 @@ class OpenTargetsBulkStore:
         if not glob:
             return []
         cols = self._glob_column_names(glob)
+        id_param = normalize_disease_id(disease_id)
         if "phenotypeLabel" in cols:
             sql = f"""
-                SELECT phenotypeLabel, frequency
+                SELECT phenotypeLabel AS label
                 FROM read_parquet('{glob}')
                 WHERE diseaseId = ?
                 ORDER BY frequency DESC
                 LIMIT ?
             """
-            id_param = normalize_disease_id(disease_id)
+            rows = self._query(sql, [id_param, limit])
+            labels = [str(r["label"]) for r in rows if r.get("label")]
         else:
             sql = f"""
                 SELECT phenotype
@@ -358,13 +374,15 @@ class OpenTargetsBulkStore:
                 WHERE disease = ?
                 LIMIT ?
             """
-            id_param = normalize_disease_id(disease_id)
-        rows = self._query(sql, [id_param, limit])
-        labels: list[str] = []
-        for row in rows:
-            label = row.get("phenotypeLabel") or row.get("phenotype") or ""
-            if label and label not in labels:
-                labels.append(str(label))
+            rows = self._query(sql, [id_param, limit])
+            hpo_labels = _hpo_label_map()
+            labels = []
+            for row in rows:
+                hp_id = str(row.get("phenotype") or "")
+                if hp_id:
+                    label = hpo_labels.get(hp_id, hp_id)
+                    if label not in labels:
+                        labels.append(label)
         return labels
 
     def count_targets(self, efo_id: str) -> int:
@@ -457,6 +475,28 @@ def mondo_curie_to_ot_id(curie: str) -> str:
     if curie.startswith("MONDO_"):
         return curie
     return ""
+
+
+@lru_cache(maxsize=1)
+def _hpo_label_map() -> dict[str, str]:
+    """Load HP id -> label mapping from the local HPO ontology artifact."""
+    path = repo_root() / "data" / "biomed" / "artifacts" / "hp.json"
+    if not path.is_file():
+        return {}
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        logger.warning("Could not load HPO label map from %s", path)
+        return {}
+    mapping: dict[str, str] = {}
+    for graph in data.get("graphs", []):
+        for node in graph.get("nodes", []):
+            match = re.search(r"(HP_\d+)$", node.get("id", ""))
+            if match:
+                label = node.get("lbl") or ""
+                if label and not label.lower().startswith("obsolete"):
+                    mapping[match.group(1)] = label
+    return mapping
 
 
 def normalize_disease_id(value: str) -> str:

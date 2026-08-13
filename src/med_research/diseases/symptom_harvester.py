@@ -36,6 +36,12 @@ def _write_config_symptoms(config_path: Path, symptoms: list[str]) -> None:
     if n == 0:
         logger.warning("Could not find SYMPTOMS block in %s", config_path)
         return
+    new_text = re.sub(
+        r"^[ \t]*#[^\n]*TODO: add the clinical symptoms[^\n]*\n(?=[ \t]*SYMPTOMS\s*=)",
+        "",
+        new_text,
+        flags=re.MULTILINE,
+    )
     config_path.write_text(new_text, encoding="utf-8")
 
 
