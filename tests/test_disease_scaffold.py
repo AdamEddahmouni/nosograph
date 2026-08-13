@@ -1170,8 +1170,49 @@ def test_restore_auto_selects_newest_backup(tmp_path):
     assert Path(summary["backup"]).name.startswith("pruned_auto_restore_20260102")
 
 
-def test_restore_legacy_backup_reattaches_pathway_by_keyword(tmp_path):
+def test_restore_legacy_backup_reattaches_pathway_by_keyword(tmp_path, monkeypatch):
     """Backups without a membership map fall back to keyword matching."""
+    # Deterministic offline scaffold: IL6R keyword-matches the il6-signaling
+    # template (so the pathway exists) while IL6 itself is absent (so restore
+    # re-attaches it via the keyword fallback instead of skipping it).
+    def _fake_sources(**kwargs):
+        return {
+            "efo_id": "EFO_0001370",
+            "name": "Legacy",
+            "description": "",
+            "genes": {
+                "genes": [
+                    {
+                        "id": "IL6R",
+                        "name": "IL6R",
+                        "chromosome": "",
+                        "function": "",
+                        "disease_evidence": "scaffold",
+                        "odds_ratio": None,
+                        "references": [],
+                        "category": "",
+                    }
+                ]
+            },
+            "drugs": {"drugs": []},
+            "pathways": {
+                "pathways": [
+                    {
+                        "id": "il6-signaling",
+                        "name": "IL6 Signaling",
+                        "description": "IL6 family cytokine signaling.",
+                        "key_components": ["IL6R"],
+                        "therapeutic_targets": ["IL6R"],
+                        "references": [],
+                    }
+                ]
+            },
+            "reactome_hits": [],
+            "ot_targets": [],
+            "gwas_genes": [],
+        }
+
+    monkeypatch.setattr(scaffold, "_collect_sources", _fake_sources)
     scaffold.scaffold_disease(
         "legacy",
         name="Legacy",
