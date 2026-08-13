@@ -26,7 +26,7 @@ The canonical version lives in [pyproject.toml](pyproject.toml) (`project.versio
    make lint
    make test-offline
    make lock-check
-   python -m med_research.cli disease validate --all --strict
+   python -m med_research.cli disease validate sle --strict
    ```
 
 4. **Commit** the version and changelog updates on `main`.

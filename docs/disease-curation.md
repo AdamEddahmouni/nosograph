@@ -2,9 +2,11 @@
 
 This guide documents the repeatable workflow for keeping disease modules research-ready before adding new diseases or shipping major pipeline changes.
 
+The registry contains **10,405 disease modules**: 18 hand-curated modules and 10,387 auto-generated OpenTargets knowledge-graph scaffolds. This playbook applies to the curated set; scaffolds must be curated (below) before they are treated as research-ready.
+
 ## Validate → coverage → refresh cycle
 
-Run these commands for each disease (`sle`, `ra`, `ms`, `ss`, `ssc`, `t1d`, `ibd`):
+Run these commands for each curated disease (`sle`, `ra`, `ms`, `ss`, `ssc`, `t1d`, `ibd`):
 
 ```bash
 # Preview external merges before applying
@@ -21,14 +23,32 @@ python -m med_research.cli disease validate <id> --strict
 python -m med_research.cli disease coverage <id>
 ```
 
-For all seven diseases at once:
+For all curated diseases at once:
 
 ```bash
 python scripts/populate_disease_configs.py --all --check --strict
-python -m med_research.cli disease validate --all --strict
+python -m med_research.cli disease validate sle --strict
 ```
 
 Use `scaffold.py` audit/backups (or the web admin prune/restore endpoints) before destructive refreshes.
+
+## Scaffolding and bulk harvest
+
+New diseases are added as scaffolds, either individually from public knowledge bases or in bulk from the local Open Targets bulk parquet download:
+
+```bash
+# Single disease from public knowledge bases
+python -m med_research.cli disease add <id> --name "<Name>" --efo EFO:xxxxxxx --dry-run
+
+# Batch add from the curated candidate registry
+python -m med_research.cli disease batch-add --category <category> --limit N --dry-run
+
+# Bulk harvest from Open Targets bulk parquet files
+python scripts/setup_opentargets_bulk.py --version 25.03
+python -m med_research.cli disease bulk-harvest --all --workers 8 --dry-run
+```
+
+Scaffolds carry OpenTargets-derived genes/drugs/pathways/relationships plus generated config (PubMed queries, trial query, GWAS terms, placeholder CAR-T/safety/screening blocks). They are **starting points, not research-ready modules**: `disease validate <id> --strict` typically reports empty `SYMPTOMS` and `DRUG_SAFETY_RISK` until curated. The batch pipeline (`scripts/disease_batch_pipeline.py`) orchestrates setup → resolve → harvest → repair → symptoms → populate → validate and writes `data/reports/disease_batch_status.json` with per-module tiering.
 
 ## `populate_disease_configs.py` rubric
 

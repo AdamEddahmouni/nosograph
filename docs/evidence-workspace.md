@@ -72,7 +72,7 @@ The request body is the `ResearchRequest` model:
 
 | Field | Type | Default | Description |
 |---|---|---:|---|
-| `disease_id` | string | `sle` | Must be a discovered disease module, such as `sle`, `ra`, `ms`, `ss`, `ssc`, `t1d`, or `ibd`. |
+| `disease_id` | string | `sle` | Must be a discovered disease module (any of the 10,405 registry IDs), such as `sle`, `ra`, `ms`, `ss`, `ssc`, `t1d`, or `ibd`. |
 | `question` | string | required | Trimmed natural-language question, 2–500 characters. |
 | `sources` | array/string | `pubmed`, `clinical_trials` | Non-empty supported source names. CLI accepts comma-separated text; API accepts a JSON array or compatible comma-separated string. |
 | `date_from` | ISO date | `null` | Inclusive earliest source date. |
@@ -81,7 +81,7 @@ The request body is the `ResearchRequest` model:
 | `max_evidence` | integer 1–200 | `50` | Maximum normalized evidence records retained. |
 | `enable_llm` | boolean | `true` | Optional enrichment. Deterministic extraction still runs when LLM enrichment is unavailable. |
 
-Current supported Workspace sources are `pubmed`, `clinical_trials`, `gwas`, and `fda_labels`; the dashboard defaults to PubMed and ClinicalTrials.gov. Source adapters are isolated: one source may fail while other source results and warnings remain in the dossier.
+Current supported Workspace sources are `pubmed`, `clinical_trials`, `gwas`, `fda_labels`, `opentargets`, `gtex`, `biorxiv`, and `chembl`; the dashboard defaults to PubMed and ClinicalTrials.gov. Source adapters are isolated: one source may fail while other source results and warnings remain in the dossier.
 
 ## Dossier contents
 

@@ -38,6 +38,7 @@ This guide covers running `med-research` locally or on a private server with Doc
 | `CORS_ORIGINS` | localhost origins | Your front-end origin(s) only |
 | `CELERY_BROKER_URL` | `redis://localhost:6379/0` | Internal Redis URL |
 | `OPENAPI_ENABLED` | follows `DEBUG` | `false` to hide `/api/docs` |
+| `BIOMEDICAL_DB_PATH` | `<repo>/data/biomedical.sqlite3` | Persistent volume path for the universal biomedical store |
 
 See [.env.example](../.env.example) for the full list.
 
@@ -60,16 +61,16 @@ Docker Compose configures a healthcheck on the `web` service using `/api/health`
 
 ## Faster Docker builds
 
-Full disease validation at image build time can take several minutes with 500+ registry modules. For iterative dev builds:
+The Dockerfile runs `disease validate --all --strict` at image build time. With the full 10,000+ module registry this is slow and, because scaffolded modules report config gaps, strict mode exits non-zero. For iterative dev builds, skip validation:
 
 ```bash
 docker compose build --build-arg DOCKER_SKIP_DISEASE_VALIDATE=1 web
 ```
 
-Run validation before release:
+Gate release builds on an individual curated module instead:
 
 ```bash
-python -m med_research.cli disease validate --all --strict
+python -m med_research.cli disease validate sle --strict
 ```
 
 ## Data persistence
@@ -81,6 +82,17 @@ Runtime data lives under `./data` (mounted to `/app/data` in containers):
 - Pipeline caches and report outputs
 
 Back up this directory before upgrades. It is listed in `.gitignore` and is not version-controlled.
+
+Initialize and populate the universal biomedical store on first boot if `/api/v1` condition features are needed:
+
+```bash
+python -m med_research.cli biomed init
+python -m med_research.cli biomed import mondo --artifact /path/to/mondo.json
+python -m med_research.cli biomed import hp --artifact /path/to/hp.json
+python -m med_research.cli biomed import hpoa --artifact /path/to/phenotype.hpoa.tsv
+```
+
+For test/demo data, `make biomed-import-fixtures` loads the minimal checked-in fixture bundle; `make biomed-verify` validates checksums and active store snapshots.
 
 ## Research-only policy
 

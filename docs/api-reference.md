@@ -13,10 +13,11 @@ The CLI parser defaults are `--host 0.0.0.0` and `--port 8000`; explicit CLI val
 Useful URLs:
 
 - Dashboard: `http://127.0.0.1:8000/`
-- Swagger UI: `http://127.0.0.1:8000/api/docs`
+- Swagger UI: `http://127.0.0.1:8000/api/docs` (only when `OPENAPI_ENABLED` is truthy — enabled by default only when `DEBUG=true`)
 - ReDoc: `http://127.0.0.1:8000/api/redoc`
 - OpenAPI JSON: `http://127.0.0.1:8000/api/openapi.json`
 - Health: `GET /api/health`
+- Readiness: `GET /api/ready`
 
 The application preloads the default knowledge graph at startup. API-key middleware protects deployment-level mutation endpoints when `API_KEY` is set. Researcher ownership uses a separate server-derived principal: local deployments issue signed HttpOnly sessions, while production deployments can use a trusted identity-aware reverse proxy. Do not treat development compatibility behavior as production security.
 
@@ -27,6 +28,7 @@ The application preloads the default knowledge graph at startup. API-key middlew
 | `HOST` | `0.0.0.0` | Bind address used by the app entry point. |
 | `PORT` | `8000` | Bind port used by the app entry point. |
 | `DEBUG` | `false` | Enables debug behavior, including guarded Uvicorn reload. |
+| `OPENAPI_ENABLED` | `true` when `DEBUG=true`, else `false` | Serves `/api/docs`, `/api/redoc`, and `/api/openapi.json`. |
 | `CORS_ORIGINS` | `http://localhost:3000` | Comma-separated allowed origins. |
 | `CELERY_BROKER_URL` | `redis://localhost:6379/0` | Celery broker. |
 | `CELERY_RESULT_BACKEND` | `redis://localhost:6379/0` | Celery result backend. |
@@ -92,6 +94,8 @@ Versioned read-only condition endpoints backed by the canonical biomedical store
 | GET | `/api/v1/snapshots/{snapshot_id}/report` | Import report metadata for a snapshot |
 | POST | `/api/v1/comparisons` | Compare two condition CURIEs and persist a research run |
 | GET | `/api/v1/comparisons/{run_id}` | Fetch a persisted comparison research run |
+| GET | `/api/v1/biomed/pathways` | Find claim paths between a `start_curie` and `target_curie` (`max_depth` 1–5, `limit` 1–50) |
+| GET | `/api/v1/biomed/target-prioritization/{disease_curie}` | Rank targets for a disease by supporting/contradictory evidence and normalized centrality (`top_k` 1–50) |
 
 Examples:
 
@@ -113,8 +117,20 @@ CLI comparison:
 python -m med_research.cli biomed compare --left MONDO:0007915 --right MONDO:0008390 --db data/biomedical.sqlite3
 ```
 
+Live condition/gene lookups against external providers use the `live` command:
+
+```bash
+python -m med_research.cli live --target JAK2 --disease ra --source all
+```
+
+`live` supports `opentargets`, `gtex`, `chembl`, `uniprot`, and `biorxiv` sources through the `pipeline.external` connectors. The biomedical store also ships import adapters for ClinVar (`imports/clinvar_adapter.py`) and openFDA (`imports/openfda_adapter.py`) plus experimental ChEMBL/PubChem adapters; these are not yet exposed through the `biomed import` CLI (which accepts `mondo`, `hp`, and `hpoa`).
+
 Absent imported data is returned as empty lists or `No data imported for this section` placeholders in the dashboard explorer; it is never treated as contradictory evidence. Legacy `/api/*` routes remain unchanged.
 
+Additional environment settings:
+
+| Variable | Default | Purpose |
+|---|---|---|
 | `ALERT_SMTP_HOST` | empty | Enables email delivery when a researcher opts in and configures an email address. |
 | `ALERT_SMTP_PORT` | `587` | SMTP port; port `465` uses implicit TLS. |
 | `ALERT_SMTP_USERNAME` | empty | Optional SMTP username. |
@@ -126,8 +142,9 @@ Absent imported data is returned as empty lists or `No data imported for this se
 | `API_KEY` | empty | When set, requires `X-API-Key` for POST/PUT/PATCH/DELETE and protected evidence/job/cache endpoints; empty disables API-key authentication. |
 | `RATE_LIMIT_REQUESTS` | `60` | Requests per client IP per window. Distributed via Redis when reachable, with an in-memory per-process fallback. Set to `0` to disable. |
 | `RATE_LIMIT_WINDOW` | `60` | Rate-limit window in seconds. |
+| `RATE_LIMIT_FAIL_CLOSED` | `false` | When the Redis rate-limit store is unreachable, deny requests instead of failing open. |
 | `REDIS_RATE_LIMIT_URL` | `CELERY_BROKER_URL`, else `redis://localhost:6379/0` | Redis URL for the distributed sliding-window rate-limit store. When unreachable, the limiter falls back to per-process in-memory limiting. |
-| `MAX_REQUEST_BODY_BYTES` | `1048576` | Maximum accepted request body size (1 MiB) for POST/PUT/PATCH. |
+| `MAX_REQUEST_BODY_BYTES` | `10485760` | Maximum accepted request body size (10 MiB) for POST/PUT/PATCH. |
 | `AUTH_MODE` | `local` | Researcher authentication mode: `local` signed sessions or `proxy` trusted reverse-proxy identity. |
 | `LOCAL_AUTH_USERS` | empty | Development-only JSON map such as `{"alice":"password"}` or comma-separated `alice=password` accounts. Store it as a deployment secret. |
 | `AUTH_SESSION_SECRET` | empty | HMAC secret for local researcher session cookies; required outside `DEBUG` unless `API_KEY` is used as a fallback. |
@@ -171,6 +188,8 @@ Workspace is submitted with a JSON `ResearchRequest` at `POST /api/jobs/workspac
 Only fields relevant to the state are populated. A successful Workspace result contains `{ "dossier": {...}, "html": "..." }`.
 
 The WebSocket `WS /api/jobs/{job_id}/ws` accepts the connection and emits state changes at approximately 500 ms intervals. It stops on `SUCCESS` or `FAILURE`, emits `ERROR` for orphaned/stream errors, and emits `TIMEOUT` after 1,200 polls (10 minutes). Clients must treat `SUCCESS`, `FAILURE`, `ERROR`, and `TIMEOUT` as terminal states. The HTTP `JobStatus` model documents ordinary Celery states; WebSocket clients should handle the additional `ERROR` and `TIMEOUT` messages.
+
+Server-Sent Events `GET /api/stream/jobs/{job_id}` is an alternative to the WebSocket: it polls Celery every 500 ms and emits `event: job_status` JSON messages, terminating on `SUCCESS`, `FAILURE`, or `REVOKED`.
 
 ## Evidence Workspace endpoints
 
@@ -238,11 +257,13 @@ All routes below are `GET` unless stated otherwise. Disease-query support is lis
 | `/api/monitor/diff` | monitor query parameters | Evidence-monitor comparison. |
 | `/api/monitor/status` | monitor query parameters | Monitor status. |
 | `/api/monitor/snapshot` | no body | Trigger a monitor snapshot immediately. |
-| `/api/cross-disease/overlap` | — | Shared biology and similarity across seven diseases. |
+| `/api/cross-disease/overlap` | — | Shared biology and similarity across the curated disease set. |
 | `/api/cross-disease/similarity` | — | Disease similarity matrix. |
 | `/api/cross-disease/drugs` | `top` | Multi-disease drug rankings. |
 | `/api/cross-disease/modules` | `top_synergy` | Comparative module results. |
-| `/api/system/diseases` | — | Discovered disease registry and counts. |
+| `/api/system/diseases` | — | Discovered disease registry and counts (10,405 modules). |
+| `/api/system/modules` | `disease` (default `sle`) | Pipeline module catalog (registry module IDs, aliases, request schemas, contracts). |
+| `/api/ready` | — | Readiness check across Redis, Celery, workspace DB, and KG preload. |
 | `/api/stats` | `disease_id` where supported | Platform summary statistics. |
 
 The exact parameter constraints and response schemas are authoritative in `/api/openapi.json`. Workspace review, alert, notification, digest, graph, history, and export routes use the authenticated session/proxy principal; they no longer accept a researcher identity from dashboard request headers.
@@ -251,7 +272,7 @@ The exact parameter constraints and response schemas are authoritative in `/api/
 
 All registry-backed modules can be queued via the unified endpoint:
 
-`POST /api/jobs/{module_id}` — query parameters validated by `GenericModuleJobRequest` (`disease_id`, module-specific opts). Dispatches through `task_run_module` → `registry_service.run_module_job()` → `execute_module()`.
+`POST /api/jobs/{module_id}` — query parameters validated by `GenericModuleJobRequest` (`disease_id`, module-specific opts). Dispatches through `task_run_module` → `registry_service.run_module_job()` → `execute_module()`. Registered modules include `admet`, `crispr`, `multi_omics`, and `structure_3d` alongside the classic modules; the exact request options are generated from the registry catalog and surfaced in `/api/openapi.json`.
 
 Legacy aliases remain for dashboard compatibility: `/api/jobs/gwas`, `/api/jobs/enrichment`, `/api/jobs/ppi`, `/api/jobs/literature`, `/api/jobs/screening`, `/api/jobs/trials`, `/api/jobs/ml`, `/api/jobs/synergy`, and `/api/jobs/safety`. These thin wrappers delegate to the same `run_module` Celery task.
 

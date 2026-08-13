@@ -1,5 +1,31 @@
 # Changelog
 
+## [Platform expansion: 10k scaffolds, new modules, streaming, graph analytics] — 2026-08-13
+
+### Added
+
+- **Disease registry expansion to 10,405 modules** — 10,387 auto-generated OpenTargets knowledge-graph scaffolds (genes/drugs/pathways/relationships + generated configs) on top of 18 hand-curated modules. Bulk harvest tooling: `scripts/setup_opentargets_bulk.py`, `scripts/disease_batch_pipeline.py`, `scripts/expand_all_diseases.py`, `scripts/batch_refresh_diseases.py`, and the `disease bulk-harvest` / `disease batch-add` CLI commands.
+- **New pipeline modules** — `admet` (ADMET radar safety & toxicity), `crispr`, `multi_omics`, and `structure_3d`, registered in the module registry with typed result contracts, generic CLI commands, web job endpoints, and report templates.
+- **Live external connectors** — Open Targets, GTEx, ChEMBL, UniProt, and bioRxiv clients under `pipeline/external/`, exposed through the `live` CLI command and additional Evidence Workspace sources (`opentargets`, `gtex`, `biorxiv`, `chembl`).
+- **Graph Analytics and Target Vulnerability UI tab** — claim-path explorer and target-prioritization ranking via `/api/v1/biomed/pathways` and `/api/v1/biomed/target-prioritization/{disease_curie}`, backed by `biomed/graph_analytics.py`.
+- **ClinVar and openFDA live API adapters** for `BiomedicalRepository` (`biomed/imports/clinvar_adapter.py`, `openfda_adapter.py`), alongside existing MONDO/HPO/HPOA import adapters.
+- **SSE job streaming** — `GET /api/stream/jobs/{job_id}` server-sent events as an alternative to the job WebSocket.
+- **Registry-wide schema and relationship consistency validation tests** (`tests/test_disease_registry_validation.py`).
+- `GET /api/ready` readiness endpoint and `GET /api/system/modules` pipeline-catalog endpoint.
+
+### Changed
+
+- `disease validate --all --strict` now walks the full 10,405-module registry and reports config gaps (e.g. empty `SYMPTOMS`) on scaffolded modules, exiting non-zero in strict mode. Gate individual curated modules with `disease validate <id> --strict`.
+- Web dashboard gained the Biomedical Import Status panel and 10k-module-aware platform stats.
+
+### Verification
+
+- `python -m pytest --collect-only -q` — 22,897 tests collected
+- `python -m med_research.cli disease validate sle --strict` — passed
+- `python -m med_research.cli modules` — registered module catalog includes admet, crispr, multi_omics, structure_3d
+
+---
+
 ## [Universal Biomedical Schema v1] — 2026-08-12
 
 ### Added
@@ -271,24 +297,28 @@
 
 ---
 
-## [Current capabilities] — last verified 2026-08-07
+## [Current capabilities] — last verified 2026-08-13
 
 This section is the maintained snapshot of the live repository. Historical phase entries below are preserved for project history and describe the codebase at the time of each change; their test counts, paths, and implementation wording are not the current runtime specification.
 
 ### Platform status
 
-- **Package:** `med-research` 2.0.0, Python 3.10–3.12 support, unified `med-research` / `python -m med_research.cli` entry points.
-- **Disease modules:** seven discovered modules — `sle`, `ra`, `ms`, `ss`, `ssc`, `t1d`, and `ibd` — with `python -m med_research.cli disease validate --all --strict` passing for all seven.
-- **Analysis capabilities:** disease-specific knowledge graphs, repurposing, bioinformatics, literature mining, virtual screening/docking, trials, ML prediction, synergy, safety, network pharmacology, expression, CAR-T, biomarkers, semantic search, evidence gathering/extraction, monitoring, and cross-disease analysis.
-- **Web application:** FastAPI API and vanilla JavaScript dashboard, with Celery/Redis-backed asynchronous jobs, WebSocket progress, HTTP polling fallback, saved Workspace history, comparison, trends, JSON/HTML exports, API-key middleware, and in-memory rate limiting.
-- **Evidence Workspace:** PubMed and ClinicalTrials.gov are the dashboard defaults; additional GWAS and FDA-label adapters are available in the workspace source boundary. Dossiers include source-level status, native citations, supporting/contradictory claims, explainable drug/target rankings, graph path/no-path explanations, warnings, limitations, and reproducibility fingerprints.
+- **Package:** `med-research` 2.0.0, Python 3.11–3.12 support, unified `med-research` / `python -m med_research.cli` entry points.
+- **Disease modules:** 10,405 discovered modules — 18 hand-curated (`sle`, `ra`, `ms`, `ss`, `ssc`, `t1d`, `ibd`, `ad`, `als`, `as`, `asthma`, `atopic_dermatitis`, `copd`, `gout`, `pd`, `psa`, `pso`, `t2d`) plus 10,387 auto-generated OpenTargets knowledge-graph scaffolds. `disease validate --all` walks the full registry and reports config gaps on scaffolded modules (e.g. empty `SYMPTOMS`); `disease validate <id> --strict` passes for the curated set.
+- **Universal Biomedical Schema v1:** canonical `med_research.biomed` SQLite store with versioned MONDO/HPO/HPOA snapshots, entities, claims, evidence, research runs, legacy-disease migration, HPO-aware condition comparison, graph analytics, and read-only `/api/v1` endpoints with research-only disclaimers.
+- **Analysis capabilities:** disease-specific knowledge graphs, repurposing, bioinformatics, literature mining, virtual screening/docking, trials, ML prediction, synergy, safety, ADMET, CRISPR, multi-omics, structure 3D, network pharmacology, expression, CAR-T, biomarkers, semantic search, evidence gathering/extraction, monitoring, cross-disease analysis, and live external connectors (Open Targets, GTEx, ChEMBL, UniProt, bioRxiv).
+- **Web application:** FastAPI API and vanilla JavaScript dashboard, with Celery/Redis-backed asynchronous jobs, WebSocket **and SSE** progress, HTTP polling fallback, saved Workspace history, comparison, trends, alerts, weekly digests, JSON/HTML exports, API-key middleware, distributed rate limiting, researcher sessions (local + trusted proxy), and the Condition Explorer / Condition Comparison / Biomedical Import Status / Graph Analytics & Target Vulnerability tabs.
+- **Evidence Workspace:** PubMed and ClinicalTrials.gov are the dashboard defaults; GWAS, FDA-label, Open Targets, GTEx, bioRxiv, and ChEMBL adapters are also available. Dossiers include source-level status, native citations, supporting/contradictory claims, explainable drug/target rankings, graph path/no-path explanations, warnings, limitations, and reproducibility fingerprints.
 - **Research-safety posture:** Workspace rankings are computational prioritization heuristics only. Outputs require source review and experimental/clinical validation and are not medical advice.
 
 ### Maintained documentation
 
 - `README.md` — installation, CLI, disease validation, dashboard, Docker, and testing quick start.
 - `docs/evidence-workspace.md` — Workspace tutorial and dossier/API behavior.
-- `docs/api-reference.md` — live server routes, job lifecycle, environment variables, exports, and deployment caveats.
+- `docs/api-reference.md` — live server routes, job lifecycle, environment variables, exports, universal `/api/v1` endpoints, and deployment caveats.
+- `docs/disease-curation.md` — validate/coverage/refresh curation playbook and scaffold workflow.
+- `docs/deployment.md` — self-hosted Docker Compose setup and production env guidance.
+- `docs/licensing.md` — MIT license and third-party data attribution.
 - `TECHNICAL_DEBT_ISSUES.md` — historical audit with current-state qualification.
 
 ### Verification snapshot
@@ -297,9 +327,10 @@ The following checks were run in the current checkout:
 
 | Check | Result |
 |---|---|
-| `python -m pytest --collect-only -q` | **969 tests collected** |
-| `python -m pytest tests/test_evidence_workspace*.py -q --tb=short` | **56 passed** |
-| `python -m med_research.cli disease validate --all --strict` | **Passed: 7/7 disease modules** |
+| `python -m pytest --collect-only -q` | **22,897 tests collected** |
+| `python -m pytest tests/test_evidence_workspace*.py -q --tb=short` | **86 collected** |
+| `python -m med_research.cli disease validate sle --strict` | **Passed** |
+| `python -m med_research.cli disease validate --all --strict` | Reports scaffold config gaps (expected; exit 1) |
 | `python -m med_research.cli --help` | **Passed** |
 | Documentation link/content checks and `git diff --check` | **Passed** |
 
