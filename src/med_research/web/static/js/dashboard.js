@@ -2693,6 +2693,150 @@ function initConditionComparison() {
     });
 }
 
+async function fetchGraphPathways() {
+    const startInput = document.getElementById('path-start-curie');
+    const targetInput = document.getElementById('path-target-curie');
+    const depthSelect = document.getElementById('path-max-depth');
+    const container = document.getElementById('pathways-result');
+    if (!startInput || !targetInput || !container) return;
+
+    const start = startInput.value.trim();
+    const target = targetInput.value.trim();
+    const depth = parseInt(depthSelect?.value || '3', 10);
+
+    if (!start || !target) {
+        container.innerHTML = '<p class="condition-comparison-placeholder">Please enter both start and target CURIEs.</p>';
+        return;
+    }
+
+    container.innerHTML = '<p class="condition-comparison-placeholder"><span class="spinner"></span> Finding shortest claim pathways…</p>';
+    try {
+        const query = new URLSearchParams({ start_curie: start, target_curie: target, max_depth: String(depth), limit: '10' });
+        const res = await apiFetch(`/api/v1/biomed/pathways?${query.toString()}`);
+        renderGraphPathways(res);
+    } catch (err) {
+        container.innerHTML = `<p class="condition-comparison-placeholder">Error loading pathways: ${escapeHtml(err.message)}</p>`;
+    }
+}
+
+function renderGraphPathways(res) {
+    const container = document.getElementById('pathways-result');
+    if (!container) return;
+
+    if (!res || !res.paths || !res.paths.length) {
+        container.innerHTML = `<p class="condition-comparison-placeholder">No claim pathways found between ${escapeHtml(res.start_curie || '')} and ${escapeHtml(res.target_curie || '')} within depth ${res.max_depth || 3}.</p>`;
+        return;
+    }
+
+    const html = res.paths.map((p, idx) => {
+        const nodeChips = (p.nodes || []).map((n, i) => {
+            const pred = p.predicates && p.predicates[i] ? `<span class="condition-chip" style="background:rgba(99,102,241,0.15);color:#818cf8;margin:0 4px;">${escapeHtml(p.predicates[i])}</span>` : '';
+            return `<span class="condition-chip" style="background:rgba(255,255,255,0.06);color:#fff;">${escapeHtml(n)}</span>${pred}`;
+        }).join('');
+        return `
+            <div style="margin-bottom:12px;padding:12px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:8px;">
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                    <span style="font-weight:600;font-size:0.85rem;color:var(--text-muted,#787890);">Path #${idx + 1} (${p.nodes ? p.nodes.length - 1 : 0} hops)</span>
+                    <span class="hero-badge research" style="font-size:0.75rem;">Score: ${typeof p.score === 'number' ? p.score.toFixed(2) : '1.0'}</span>
+                </div>
+                <div style="display:flex;align-items:center;flex-wrap:wrap;gap:4px;">${nodeChips}</div>
+            </div>
+        `;
+    }).join('');
+
+    container.innerHTML = `
+        <div style="margin-bottom:8px;font-size:0.85rem;color:var(--text-muted,#787890);">Found ${res.total_paths} canonical path(s) from <strong>${escapeHtml(res.start_curie)}</strong> to <strong>${escapeHtml(res.target_curie)}</strong></div>
+        ${html}
+    `;
+}
+
+async function fetchTargetPrioritization() {
+    const diseaseInput = document.getElementById('target-rank-disease');
+    const topKSelect = document.getElementById('target-rank-top-k');
+    const container = document.getElementById('target-rank-result');
+    if (!diseaseInput || !container) return;
+
+    const disease = diseaseInput.value.trim();
+    const topK = parseInt(topKSelect?.value || '10', 10);
+
+    if (!disease) {
+        container.innerHTML = '<p class="condition-comparison-placeholder">Please enter a disease CURIE.</p>';
+        return;
+    }
+
+    container.innerHTML = '<p class="condition-comparison-placeholder"><span class="spinner"></span> Ranking disease targets…</p>';
+    try {
+        const query = new URLSearchParams({ top_k: String(topK) });
+        const res = await apiFetch(`/api/v1/biomed/target-prioritization/${encodeURIComponent(disease)}?${query.toString()}`);
+        renderTargetPrioritization(res);
+    } catch (err) {
+        container.innerHTML = `<p class="condition-comparison-placeholder">Error ranking targets: ${escapeHtml(err.message)}</p>`;
+    }
+}
+
+function renderTargetPrioritization(res) {
+    const container = document.getElementById('target-rank-result');
+    if (!container) return;
+
+    if (!res || !res.rankings || !res.rankings.length) {
+        container.innerHTML = `<p class="condition-comparison-placeholder">No target rankings found for ${escapeHtml(res.disease_curie || '')}. Ensure claims exist in the canonical store.</p>`;
+        return;
+    }
+
+    const rows = res.rankings.map((r, idx) => {
+        const vulnPct = Math.max(0, Math.min(100, Math.round((r.vulnerability_score || 0) * 100)));
+        return `
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
+                <td style="padding:8px 12px;font-weight:600;">#${idx + 1}</td>
+                <td style="padding:8px 12px;">
+                    <div><strong>${escapeHtml(r.target_label || r.target_curie)}</strong></div>
+                    <small style="color:var(--text-muted,#787890);">${escapeHtml(r.target_curie)}</small>
+                </td>
+                <td style="padding:8px 12px;color:#4ade80;">+${r.supporting_evidence || 0}</td>
+                <td style="padding:8px 12px;color:#f87171;">-${r.contradictory_evidence || 0}</td>
+                <td style="padding:8px 12px;">${typeof r.centrality_score === 'number' ? r.centrality_score.toFixed(3) : '0.000'}</td>
+                <td style="padding:8px 12px;">
+                    <div style="display:flex;align-items:center;gap:8px;">
+                        <div class="condition-comparison-bar" style="flex:1;max-width:120px;"><span style="width:${vulnPct}%"></span></div>
+                        <span style="font-weight:600;font-size:0.85rem;">${vulnPct}%</span>
+                    </div>
+                </td>
+            </tr>
+        `;
+    }).join('');
+
+    container.innerHTML = `
+        <div style="margin-bottom:8px;font-size:0.85rem;color:var(--text-muted,#787890);">Target rankings for <strong>${escapeHtml(res.disease_curie)}</strong> (${res.total_targets} total ranked)</div>
+        <div style="overflow-x:auto;">
+            <table style="width:100%;border-collapse:collapse;text-align:left;font-size:0.9rem;">
+                <thead>
+                    <tr style="border-bottom:1px solid rgba(255,255,255,0.1);color:var(--text-muted,#787890);">
+                        <th style="padding:8px 12px;">Rank</th>
+                        <th style="padding:8px 12px;">Target</th>
+                        <th style="padding:8px 12px;">Supp. Evidence</th>
+                        <th style="padding:8px 12px;">Contra. Evidence</th>
+                        <th style="padding:8px 12px;">Centrality</th>
+                        <th style="padding:8px 12px;">Vulnerability Score</th>
+                    </tr>
+                </thead>
+                <tbody>${rows}</tbody>
+            </table>
+        </div>
+    `;
+}
+
+function initGraphAnalytics() {
+    const pathwaysBtn = document.getElementById('pathways-run-btn');
+    const targetRankBtn = document.getElementById('target-rank-run-btn');
+
+    if (pathwaysBtn) {
+        pathwaysBtn.addEventListener('click', () => { void fetchGraphPathways(); });
+    }
+    if (targetRankBtn) {
+        targetRankBtn.addEventListener('click', () => { void fetchTargetPrioritization(); });
+    }
+}
+
 async function showKGNodeDetail(nodeId) {
     const panel = document.getElementById('kg-detail');
     if (!panel) return;
@@ -3586,6 +3730,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     initKGExplorer();
     initConditionExplorer();
     initConditionComparison();
+    initGraphAnalytics();
     void loadBiomedImportStatus();
     handleUniversalDeepLinks();
     loadExportGrid();

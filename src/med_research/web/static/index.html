@@ -31,6 +31,7 @@
                     <a href="#kg-explorer" class="nav-link" data-nav="kg-explorer">KG</a>
                     <a href="#condition-explorer" class="nav-link" data-nav="condition-explorer">Conditions</a>
                     <a href="#condition-comparison" class="nav-link" data-nav="condition-comparison">Compare</a>
+                    <a href="#graph-analytics" class="nav-link" data-nav="graph-analytics">Analytics</a>
                     <a href="#export" class="nav-link" data-nav="export">Export</a>
                     <a href="#jobs" class="nav-link" id="jobs-tab" data-nav="jobs">Jobs <span id="job-count" class="job-badge hidden">0</span></a>
                     <a href="/api/docs" class="nav-link" target="_blank" rel="noopener">API Docs</a>
@@ -63,6 +64,7 @@
                     <div class="hero-actions" aria-label="Quick actions">
                         <a href="#evidence-workspace" class="btn btn-primary">🚀 Run Workspace</a>
                         <a href="#kg-explorer" class="btn btn-secondary">🕸️ Explore KG</a>
+                        <a href="#graph-analytics" class="btn btn-secondary">📊 Graph Analytics</a>
                         <a href="#condition-comparison" class="btn btn-secondary">⚖️ Compare Conditions</a>
                         <a href="/api/docs" class="btn btn-secondary" target="_blank" rel="noopener">📖 API Docs</a>
                     </div>
@@ -775,6 +777,61 @@
                     </div>
                     <div class="multi-disease-body" id="multi-disease-result" aria-live="polite">
                         <p class="condition-comparison-placeholder">Click 'Generate Comparison Matrix' to calculate pairwise similarity and shared target networks.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ── Biomedical Graph Analytics & Target Vulnerability ───── -->
+            <section class="condition-comparison-shell" id="graph-analytics" aria-labelledby="graph-analytics-title">
+                <div class="condition-comparison-intro">
+                    <div>
+                        <span class="workspace-kicker">BIOMEDICAL GRAPH ANALYTICS · PATHFINDING & TARGET RANKING</span>
+                        <h2 id="graph-analytics-title">Graph Analytics & Target Vulnerability</h2>
+                        <p>Explore canonical claim paths between conditions and targets, and rank disease targets by evidence strength and degree centrality.</p>
+                    </div>
+                    <div class="condition-comparison-disclaimer">⚠️ Network pathfinding &amp; target vulnerability hypotheses</div>
+                </div>
+
+                <!-- Card 1: Pathfinding -->
+                <div class="condition-comparison-panel" style="margin-bottom:24px;">
+                    <h3 style="margin-top:0;font-size:1.1rem;margin-bottom:12px;">🕸️ Claim Pathway Explorer</h3>
+                    <div class="condition-comparison-toolbar" style="flex-wrap:wrap;gap:12px;">
+                        <label class="condition-comparison-label" for="path-start-curie">Start CURIE</label>
+                        <input type="text" id="path-start-curie" class="condition-explorer-search" style="max-width:200px;" value="MONDO:0007915" placeholder="e.g. MONDO:0007915">
+                        <label class="condition-comparison-label" for="path-target-curie">Target CURIE</label>
+                        <input type="text" id="path-target-curie" class="condition-explorer-search" style="max-width:200px;" value="UNIPROT:P01375" placeholder="e.g. UNIPROT:P01375">
+                        <label class="condition-comparison-label" for="path-max-depth">Max Depth</label>
+                        <select id="path-max-depth" class="condition-explorer-depth">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3" selected>3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <button type="button" class="btn btn-primary" id="pathways-run-btn">Find Pathways</button>
+                    </div>
+                    <div class="condition-comparison-result" id="pathways-result" aria-live="polite" style="margin-top:12px;">
+                        <p class="condition-comparison-placeholder">Enter start and target CURIEs to discover canonical claim paths.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Target Vulnerability Ranking -->
+                <div class="condition-comparison-panel">
+                    <h3 style="margin-top:0;font-size:1.1rem;margin-bottom:12px;">🎯 Target Vulnerability Ranking</h3>
+                    <div class="condition-comparison-toolbar" style="flex-wrap:wrap;gap:12px;">
+                        <label class="condition-comparison-label" for="target-rank-disease">Disease CURIE</label>
+                        <input type="text" id="target-rank-disease" class="condition-explorer-search" style="max-width:240px;" value="MONDO:0007915" placeholder="e.g. MONDO:0007915">
+                        <label class="condition-comparison-label" for="target-rank-top-k">Top K</label>
+                        <select id="target-rank-top-k" class="condition-explorer-depth">
+                            <option value="5">5</option>
+                            <option value="10" selected>10</option>
+                            <option value="20">20</option>
+                            <option value="50">50</option>
+                        </select>
+                        <button type="button" class="btn btn-primary" id="target-rank-run-btn">Rank Targets</button>
+                    </div>
+                    <div class="condition-comparison-result" id="target-rank-result" aria-live="polite" style="margin-top:12px;">
+                        <p class="condition-comparison-placeholder">Enter a disease CURIE to calculate target vulnerability rankings.</p>
                     </div>
                 </div>
             </section>
